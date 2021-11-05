@@ -62,7 +62,10 @@ onEvent('item.registry', (event) => {
         'craft_robit',
         'craft_feeding_upgrade',
         'craft_advanced_feeding_upgrade',
-        'craft_auto_smelting_upgrade'
+        'craft_auto_smelting_upgrade',
+        'craft_pump_upgrade',
+        'craft_advanced_pump_upgrade',
+        'craft_xp_pump_upgrade'
     ];
 
     const reusableItemTextures = [

@@ -1068,6 +1068,58 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'sophisticatedbackpacks:auto_smelting_upgrade' },
             id: `${id_prefix}auto_smelting_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_pump_upgrade' },
+            ingredients: [
+                { item: 'create:mechanical_pump' },
+                { item: 'create:fluid_pipe' },
+                { item: 'sophisticatedbackpacks:upgrade_base' },
+                { item: 'create:fluid_pipe' },
+                { item: 'create:cogwheel' },
+                { item: 'create:hand_crank' }
+            ],
+            result: { item: 'sophisticatedbackpacks:pump_upgrade' },
+            id: `${id_prefix}pump_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_pump_upgrade' },
+            ingredients: [
+                { item: 'create:smart_fluid_pipe' },
+                { item: 'create:fluid_pipe' },
+                { item: 'sophisticatedbackpacks:pump_upgrade' },
+                { item: 'create:fluid_pipe' },
+                { item: 'create:filter' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_pump_upgrade' },
+            id: `${id_prefix}advanced_pump_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_xp_pump_upgrade' },
+            ingredients: [
+                { item: 'create:smart_fluid_pipe' },
+                { item: 'create:fluid_pipe' },
+                { item: 'sophisticatedbackpacks:pump_upgrade' },
+                { item: 'create:fluid_pipe' },
+                { item: 'create:filter' },
+                { item: 'ars_nouveau:greater_experience_gem' },
+                { item: 'ars_nouveau:greater_experience_gem' },
+                { item: 'ars_nouveau:greater_experience_gem' }
+            ],
+            result: { item: 'sophisticatedbackpacks:xp_pump_upgrade' },
+            id: `${id_prefix}xp_pump_upgrade`
         }
     ];
 

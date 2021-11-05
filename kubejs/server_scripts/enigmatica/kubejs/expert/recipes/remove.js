@@ -106,6 +106,9 @@ onEvent('recipes', (event) => {
         'sophisticatedbackpacks:feeding_upgrade',
         'sophisticatedbackpacks:advanced_feeding_upgrade',
         'sophisticatedbackpacks:auto_smelting_upgrade',
+        'sophisticatedbackpacks:pump_upgrade',
+        'sophisticatedbackpacks:advanced_pump_upgrade',
+        'sophisticatedbackpacks:xp_pump_upgrade',
 
         'tconstruct:smeltery/scorched/scorched_brick',
         'tconstruct:smeltery/scorched/scorched_brick_kiln',
