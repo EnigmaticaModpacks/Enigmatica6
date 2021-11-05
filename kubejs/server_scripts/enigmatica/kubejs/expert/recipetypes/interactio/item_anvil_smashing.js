@@ -47,6 +47,19 @@ onEvent('recipes', (event) => {
             },
             damage: 4,
             id: 'sophisticatedbackpacks:smelting_upgrade'
+        },
+        {
+            inputs: [
+                Ingredient.of('#forge:storage_blocks/tin'),
+                Item.of('sophisticatedbackpacks:upgrade_base'),
+                Item.of('trashcans:item_trash_can')
+            ],
+            output: {
+                entries: [{ result: { item: 'sophisticatedbackpacks:void_upgrade' }, weight: 1 }],
+                rolls: 1
+            },
+            damage: 4,
+            id: 'sophisticatedbackpacks:void_upgrade'
         }
     ];
 

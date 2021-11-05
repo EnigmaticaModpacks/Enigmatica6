@@ -1120,6 +1120,93 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'sophisticatedbackpacks:xp_pump_upgrade' },
             id: `${id_prefix}xp_pump_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_compacting_upgrade' },
+            ingredients: [
+                { item: 'create:mechanical_press' },
+                { item: 'create:hand_crank' },
+                { item: 'create:basin' },
+                { item: 'sophisticatedbackpacks:crafting_upgrade' },
+                { item: 'create:large_cogwheel' },
+                { item: 'create:cogwheel' }
+            ],
+            result: { item: 'sophisticatedbackpacks:compacting_upgrade' },
+            id: `${id_prefix}compacting_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_compacting_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:compacting_upgrade' },
+                { item: 'create:precision_mechanism' },
+                { item: 'create:attribute_filter' },
+                { item: 'create:precision_mechanism' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_compacting_upgrade' },
+            id: `${id_prefix}advanced_compacting_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_tool_swapper_upgrade' },
+            ingredients: [
+                { item: 'create:deployer' },
+                { item: 'create:hand_crank' },
+                { item: 'meetyourfight:spectres_eye' },
+                { item: 'sophisticatedbackpacks:upgrade_base' },
+                { item: 'create:large_cogwheel' },
+                { item: 'create:cogwheel' }
+            ],
+            result: { item: 'sophisticatedbackpacks:tool_swapper_upgrade' },
+            id: `${id_prefix}tool_swapper_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_tool_swapper_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:tool_swapper_upgrade' },
+                { item: 'create:precision_mechanism' },
+                { item: 'create:attribute_filter' },
+                { item: 'create:precision_mechanism' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_tool_swapper_upgrade' },
+            id: `${id_prefix}advanced_tool_swapper_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_refill_upgrade' },
+            ingredients: [
+                { item: 'create:chute' },
+                { item: 'rsgauges:oldfancy_bistableswitch1' },
+                { item: 'meetyourfight:spectres_eye' },
+                { item: 'sophisticatedbackpacks:upgrade_base' }
+            ],
+            result: { item: 'sophisticatedbackpacks:refill_upgrade' },
+            id: `${id_prefix}refill_upgrade`
         }
     ];
 

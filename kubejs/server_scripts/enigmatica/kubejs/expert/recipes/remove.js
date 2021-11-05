@@ -105,6 +105,11 @@ onEvent('recipes', (event) => {
         'sophisticatedbackpacks:pump_upgrade',
         'sophisticatedbackpacks:advanced_pump_upgrade',
         'sophisticatedbackpacks:xp_pump_upgrade',
+        'sophisticatedbackpacks:compacting_upgrade',
+        'sophisticatedbackpacks:advanced_compacting_upgrade',
+        'sophisticatedbackpacks:tool_swapper_upgrade',
+        'sophisticatedbackpacks:advanced_tool_swapper_upgrade',
+        'sophisticatedbackpacks:refill_upgrade',
 
         'tanknull:dock',
 

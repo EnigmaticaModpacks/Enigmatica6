@@ -124,7 +124,7 @@ onEvent('recipes', (event) => {
                 A: 'naturesaura:hopper_upgrade',
                 B: '#forge:gears/lumium',
                 C: 'sophisticatedbackpacks:magnet_upgrade',
-                D: 'create:polished_rose_quartz'
+                D: 'create:electron_tube'
             },
             id: 'sophisticatedbackpacks:advanced_magnet_upgrade_from_basic'
         },
@@ -135,9 +135,21 @@ onEvent('recipes', (event) => {
                 A: 'naturesaura:hopper_upgrade',
                 B: '#forge:gears/lumium',
                 C: 'sophisticatedbackpacks:pickup_upgrade',
-                D: 'create:polished_rose_quartz'
+                D: 'create:electron_tube'
             },
             id: 'sophisticatedbackpacks:advanced_pickup_upgrade'
+        },
+        {
+            output: 'sophisticatedbackpacks:advanced_void_upgrade',
+            pattern: ['EAE', 'BCB', 'DDD'],
+            key: {
+                A: 'create:attribute_filter',
+                B: '#forge:gears/lumium',
+                C: 'sophisticatedbackpacks:void_upgrade',
+                D: 'create:electron_tube',
+                E: 'create:precision_mechanism'
+            },
+            id: 'sophisticatedbackpacks:advanced_void_upgrade'
         }
     ];
 
