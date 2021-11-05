@@ -220,6 +220,25 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}logic_cable`
+        },
+        {
+            input: 'immersiveengineering:insulating_glass',
+            outputs: ['immersiveengineering:circuit_board'],
+            transitionalItem: 'immersiveengineering:insulating_glass',
+            loops: 1,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['immersiveengineering:insulating_glass', '#forge:plates/copper'],
+                    output: 'immersiveengineering:insulating_glass'
+                },
+                {
+                    type: 'deploying',
+                    input: ['immersiveengineering:insulating_glass', 'powah:dielectric_paste'],
+                    output: 'immersiveengineering:insulating_glass'
+                }
+            ],
+            id: `${id_prefix}backplane_alternate`
         }
     ];
 

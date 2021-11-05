@@ -70,6 +70,18 @@ onEvent('recipes', (event) => {
                 D: 'thermal:redstone_servo'
             },
             id: 'immersiveengineering:crafting/conveyor_basic'
+        },
+        {
+            output: 'immersiveengineering:circuit_table',
+            pattern: [' AB', 'CCC', 'D E'],
+            key: {
+                A: 'thermal:diving_fabric',
+                B: 'immersiveengineering:screwdriver',
+                C: '#forge:treated_wood_slab',
+                D: 'immersiveengineering:craftingtable',
+                E: 'thermal:energy_cell'
+            },
+            id: 'immersiveengineering:crafting/circuit_table'
         }
     ];
 
