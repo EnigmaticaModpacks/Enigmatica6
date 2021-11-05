@@ -34,6 +34,19 @@ onEvent('recipes', (event) => {
             },
             damage: 2,
             id: 'darkutils:crafting/ender_hopper'
+        },
+        {
+            inputs: [
+                Ingredient.of('#forge:storage_blocks/tin'),
+                Item.of('sophisticatedbackpacks:upgrade_base'),
+                Item.of('minecraft:blast_furnace')
+            ],
+            output: {
+                entries: [{ result: { item: 'sophisticatedbackpacks:smelting_upgrade' }, weight: 1 }],
+                rolls: 1
+            },
+            damage: 4,
+            id: 'sophisticatedbackpacks:smelting_upgrade'
         }
     ];
 

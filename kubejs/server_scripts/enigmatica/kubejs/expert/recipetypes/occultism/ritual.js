@@ -1053,6 +1053,21 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'sophisticatedbackpacks:advanced_feeding_upgrade' },
             id: `${id_prefix}advanced_feeding_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_auto_smelting_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:smelting_upgrade' },
+                { item: 'create:brass_funnel' },
+                { item: 'create:mechanical_arm' },
+                { item: 'create:brass_funnel' }
+            ],
+            result: { item: 'sophisticatedbackpacks:auto_smelting_upgrade' },
+            id: `${id_prefix}auto_smelting_upgrade`
         }
     ];
 

@@ -61,7 +61,8 @@ onEvent('item.registry', (event) => {
         'craft_logic_director',
         'craft_robit',
         'craft_feeding_upgrade',
-        'craft_advanced_feeding_upgrade'
+        'craft_advanced_feeding_upgrade',
+        'craft_auto_smelting_upgrade'
     ];
 
     const reusableItemTextures = [
