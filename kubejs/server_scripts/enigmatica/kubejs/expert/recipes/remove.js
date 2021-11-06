@@ -207,6 +207,8 @@ onEvent('recipes', (event) => {
         { output: 'naturesaura:gold_fiber', id: 'naturesaura:gold_fiber' },
         { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
         { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
+        { output: 'naturesaura:shockwave_creator', id: 'naturesaura:shockwave_creator' },
+        { output: 'naturesaura:death_ring', id: 'naturesaura:death_ring' },
 
         { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
         { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },

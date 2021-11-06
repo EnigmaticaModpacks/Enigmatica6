@@ -470,6 +470,8 @@ const recipesToHide = [
             'naturesaura:gold_fiber',
             'naturesaura:gold_brick',
             'naturesaura:generator_limit_remover',
+            'naturesaura:shockwave_creator',
+            'naturesaura:death_ring',
 
             'pneumaticcraft:air_compressor',
             'pneumaticcraft:advanced_air_compressor',
