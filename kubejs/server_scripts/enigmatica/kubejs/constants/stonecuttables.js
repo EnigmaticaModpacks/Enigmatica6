@@ -2457,8 +2457,9 @@ chiselPlankVariants = [
     'braid',
     'log_cabin'
 ];
+
+const numberChippedVariants = 18;
 plankTypes.forEach((plankType) => {
-	const numberChippedVariants = 18;
     let stones = [`minecraft:${plankType}_planks`];
 	if(! chippedOnlyPlankTypes.includes(plankType) ) {
 		chiselPlankVariants.forEach((chiselPlankVariant) => {
