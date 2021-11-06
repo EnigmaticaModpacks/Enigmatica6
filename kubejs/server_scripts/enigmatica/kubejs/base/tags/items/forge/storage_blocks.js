@@ -59,4 +59,5 @@ onEvent('item.tags', (event) => {
     event.add(storageBlocks + '/glowstone', ['#chisel:glowstone']);
     event.add(storageBlocks + '/redstone', ['#chisel:redstone']);
     event.add(storageBlocks + '/coal', ['#chisel:coal']);
+	event.add(storageBlocks + '/glowstone', ['#chipped:glowstone']);
 });
