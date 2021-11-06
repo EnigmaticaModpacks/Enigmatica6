@@ -2438,6 +2438,8 @@ colors.forEach((color) => {
 
 // @Chisel Planks
 chiselPlankTypes = ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak'];
+chippedOnlyPlankTypes = ['warped','crimson'];
+plankTypes = chiselPlankTypes.concat(chippedOnlyPlankTypes);
 chiselPlankVariants = [
     'large_planks',
     'crude_horizontal_planks',
@@ -2455,13 +2457,20 @@ chiselPlankVariants = [
     'braid',
     'log_cabin'
 ];
-chiselPlankTypes.forEach((chiselPlankType) => {
-    let stones = [`minecraft:${chiselPlankType}_planks`];
-    chiselPlankVariants.forEach((chiselPlankVariant) => {
-        stones.push(`chisel:planks/${chiselPlankType}/${chiselPlankVariant}`);
-    });
+
+const numberChippedVariants = 18;
+plankTypes.forEach((plankType) => {
+    let stones = [`minecraft:${plankType}_planks`];
+	if(! chippedOnlyPlankTypes.includes(plankType) ) {
+		chiselPlankVariants.forEach((chiselPlankVariant) => {
+			stones.push(`chisel:planks/${plankType}/${chiselPlankVariant}`);
+		});
+	}
+	for (i = 1; i <= numberChippedVariants; i++) {
+        stones.push(`chipped:${plankType}_planks_${i}`);
+    }
     stonecuttables.push({
-        name: `${chiselPlankType}`,
+        name: `${plankType}`,
         stones: stones,
         onlyAsOutput: [],
         onlyAsInput: []
