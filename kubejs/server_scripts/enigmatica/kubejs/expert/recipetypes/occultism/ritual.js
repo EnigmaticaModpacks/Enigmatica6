@@ -1022,7 +1022,191 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:gears/osmium' }
             ],
             result: { item: 'mekanism:robit' },
-            id: 'mekanism:robit'
+            id: `${id_prefix}robit`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_feeding_upgrade' },
+            ingredients: [
+                { item: 'create:mechanical_arm' },
+                { item: 'farmersdelight:netherite_knife' },
+                { item: 'sophisticatedbackpacks:upgrade_base' },
+                { item: 'tconstruct:silky_cloth' }
+            ],
+            result: { item: 'sophisticatedbackpacks:feeding_upgrade' },
+            id: `${id_prefix}feeding_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_marid' },
+            pentacle_id: 'occultism:craft_marid',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_feeding_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:feeding_upgrade' },
+                { tag: 'botania:runes/gluttony' },
+                { item: 'botania:pixie_dust' },
+                { tag: 'botania:runes/gluttony' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_feeding_upgrade' },
+            id: `${id_prefix}advanced_feeding_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_auto_smelting_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:smelting_upgrade' },
+                { item: 'create:brass_funnel' },
+                { item: 'create:mechanical_arm' },
+                { item: 'create:brass_funnel' }
+            ],
+            result: { item: 'sophisticatedbackpacks:auto_smelting_upgrade' },
+            id: `${id_prefix}auto_smelting_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_pump_upgrade' },
+            ingredients: [
+                { item: 'create:mechanical_pump' },
+                { item: 'create:fluid_pipe' },
+                { item: 'sophisticatedbackpacks:upgrade_base' },
+                { item: 'create:fluid_pipe' },
+                { item: 'create:cogwheel' },
+                { item: 'create:hand_crank' }
+            ],
+            result: { item: 'sophisticatedbackpacks:pump_upgrade' },
+            id: `${id_prefix}pump_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_pump_upgrade' },
+            ingredients: [
+                { item: 'create:smart_fluid_pipe' },
+                { item: 'create:fluid_pipe' },
+                { item: 'sophisticatedbackpacks:pump_upgrade' },
+                { item: 'create:fluid_pipe' },
+                { item: 'create:filter' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_pump_upgrade' },
+            id: `${id_prefix}advanced_pump_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_xp_pump_upgrade' },
+            ingredients: [
+                { item: 'create:smart_fluid_pipe' },
+                { item: 'create:fluid_pipe' },
+                { item: 'sophisticatedbackpacks:pump_upgrade' },
+                { item: 'create:fluid_pipe' },
+                { item: 'create:filter' },
+                { item: 'ars_nouveau:greater_experience_gem' },
+                { item: 'ars_nouveau:greater_experience_gem' },
+                { item: 'ars_nouveau:greater_experience_gem' }
+            ],
+            result: { item: 'sophisticatedbackpacks:xp_pump_upgrade' },
+            id: `${id_prefix}xp_pump_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_compacting_upgrade' },
+            ingredients: [
+                { item: 'create:mechanical_press' },
+                { item: 'create:hand_crank' },
+                { item: 'create:basin' },
+                { item: 'sophisticatedbackpacks:crafting_upgrade' },
+                { item: 'create:large_cogwheel' },
+                { item: 'create:cogwheel' }
+            ],
+            result: { item: 'sophisticatedbackpacks:compacting_upgrade' },
+            id: `${id_prefix}compacting_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_compacting_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:compacting_upgrade' },
+                { item: 'create:precision_mechanism' },
+                { item: 'create:attribute_filter' },
+                { item: 'create:precision_mechanism' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_compacting_upgrade' },
+            id: `${id_prefix}advanced_compacting_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_tool_swapper_upgrade' },
+            ingredients: [
+                { item: 'create:deployer' },
+                { item: 'create:hand_crank' },
+                { item: 'meetyourfight:spectres_eye' },
+                { item: 'sophisticatedbackpacks:upgrade_base' },
+                { item: 'create:large_cogwheel' },
+                { item: 'create:cogwheel' }
+            ],
+            result: { item: 'sophisticatedbackpacks:tool_swapper_upgrade' },
+            id: `${id_prefix}tool_swapper_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_tool_swapper_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:tool_swapper_upgrade' },
+                { item: 'create:precision_mechanism' },
+                { item: 'create:attribute_filter' },
+                { item: 'create:precision_mechanism' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_tool_swapper_upgrade' },
+            id: `${id_prefix}advanced_tool_swapper_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_refill_upgrade' },
+            ingredients: [
+                { item: 'create:chute' },
+                { item: 'rsgauges:oldfancy_bistableswitch1' },
+                { item: 'meetyourfight:spectres_eye' },
+                { item: 'sophisticatedbackpacks:upgrade_base' }
+            ],
+            result: { item: 'sophisticatedbackpacks:refill_upgrade' },
+            id: `${id_prefix}refill_upgrade`
         }
     ];
 

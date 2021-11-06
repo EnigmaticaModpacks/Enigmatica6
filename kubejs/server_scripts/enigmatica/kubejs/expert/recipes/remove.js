@@ -28,6 +28,9 @@ onEvent('recipes', (event) => {
 
         /create:pressing\/\w*_ingot/,
 
+        /dankstorage:\w_to_\w/,
+        'dankstorage:dock',
+
         'darkutils:crafting/rune_damage_player',
         'darkutils:crafting/blank_plate',
         /darkutils:crafting\/export_plate/,
@@ -65,6 +68,7 @@ onEvent('recipes', (event) => {
         'mekanism:processing/refined_obsidian/dust/from_ingot',
         'mekanism:osmium_compressor',
         /mekanism:factory/,
+        'mekanism:robit',
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
@@ -94,6 +98,20 @@ onEvent('recipes', (event) => {
         'quark:building/crafting/red_nether_bricks_util',
 
         'refinedstorage:quartz_enriched_iron',
+
+        'sophisticatedbackpacks:feeding_upgrade',
+        'sophisticatedbackpacks:advanced_feeding_upgrade',
+        'sophisticatedbackpacks:auto_smelting_upgrade',
+        'sophisticatedbackpacks:pump_upgrade',
+        'sophisticatedbackpacks:advanced_pump_upgrade',
+        'sophisticatedbackpacks:xp_pump_upgrade',
+        'sophisticatedbackpacks:compacting_upgrade',
+        'sophisticatedbackpacks:advanced_compacting_upgrade',
+        'sophisticatedbackpacks:tool_swapper_upgrade',
+        'sophisticatedbackpacks:advanced_tool_swapper_upgrade',
+        'sophisticatedbackpacks:refill_upgrade',
+
+        'tanknull:dock',
 
         'tconstruct:smeltery/scorched/scorched_brick',
         'tconstruct:smeltery/scorched/scorched_brick_kiln',
