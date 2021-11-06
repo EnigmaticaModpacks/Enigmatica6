@@ -175,6 +175,7 @@
 			icon: "sophisticatedbackpacks:backpack"
 			x: -2.0d
 			y: 0.0d
+			description: ["Tinkers Construct adds some areas to explore, as well as tools to aid the tinkerer in their explorations. These chapters will describe for the tinkerer the gadgets they can create and the areas and materials they can find among the dimensions. "]
 			dependencies: ["47169AB8212BD508"]
 			id: "4588297F41674524"
 			tasks: [{
@@ -200,7 +201,9 @@
 			rewards: [{
 				id: "16C58C7C9C601B77"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -222,7 +225,9 @@
 			rewards: [{
 				id: "33A455096D43FDA9"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -240,7 +245,9 @@
 			rewards: [{
 				id: "193895CBB3D7B7AF"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
@@ -249,6 +256,7 @@
 			icon: "tconstruct:sky_slime_sapling"
 			x: -1.5d
 			y: -1.5d
+			description: ["In the overworld, tinkers adds a couple of islands for the tinkerer to find. Sky slime islands can be found floating in the sky. Earth slime islands are found off of coast lines. There are even clay islands which look like slime islands but are plain vanilla islands."]
 			dependencies: ["4588297F41674524"]
 			dependency_requirement: "all_started"
 			id: "535EDB063EEB4A69"
@@ -267,6 +275,7 @@
 			icon: "tconstruct:blood_slime_sapling"
 			x: 0.0d
 			y: -2.0d
+			description: ["The nether is a next stop for the tinkerer in terms of finding materials to upgrade their tools. Cobalt ore can be found in the terrain, magma slime islands are found at lava levels and wither skeletons can drop some extra goodies."]
 			dependencies: ["535EDB063EEB4A69"]
 			id: "48DD79D9708932B9"
 			tasks: [{
@@ -284,6 +293,7 @@
 			icon: "tconstruct:ender_slime_sapling"
 			x: 1.5d
 			y: -1.5d
+			description: ["Traveling to the end unlocks additional resources for the tinkerer. From blasting scales off the dragon to finding islands with the most unusual of slimes, there are great ingredients for the tinkerer to find."]
 			dependencies: ["48DD79D9708932B9"]
 			id: "3DB4D65F8A5ECA0B"
 			tasks: [{
@@ -346,7 +356,9 @@
 			rewards: [{
 				id: "6E0B79AF590A85C8"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -376,7 +388,9 @@
 			rewards: [{
 				id: "48AAC24DE364756A"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -394,7 +408,9 @@
 			rewards: [{
 				id: "7B852A7C57B1D2A9"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -412,7 +428,9 @@
 			rewards: [{
 				id: "0A14FCF62978D6ED"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -439,7 +457,9 @@
 				{
 					id: "25EAF2E7866A5BC8"
 					type: "command"
-					command: "/say Hi, @p!"
+					title: "Rare Tinkers Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 					player_command: false
 				}
 			]
@@ -486,7 +506,9 @@
 			rewards: [{
 				id: "767CD1B19307EC7E"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 				player_command: false
 			}]
 		}
@@ -600,7 +622,9 @@
 			rewards: [{
 				id: "49CC339E8B83FF16"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 				player_command: false
 			}]
 		}
@@ -631,7 +655,9 @@
 				{
 					id: "2872C6E42017722A"
 					type: "command"
-					command: "/say Hi, @p!"
+					title: "Rare Tinkers Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 					player_command: false
 				}
 			]
@@ -650,7 +676,9 @@
 			rewards: [{
 				id: "234C52AF09D0B5F7"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 				player_command: false
 			}]
 		}
@@ -735,7 +763,9 @@
 			rewards: [{
 				id: "741689DFA0B4E6A4"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -905,7 +935,9 @@
 			rewards: [{
 				id: "4CC70CD149953DE0"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -1061,7 +1093,9 @@
 			rewards: [{
 				id: "5980002F94B77766"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -1225,7 +1259,9 @@
 			rewards: [{
 				id: "7A45DEF9D00CAE1F"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -1336,11 +1372,68 @@
 						}
 					}
 				}
+				{
+					id: "4B2C30AA3E3C8680"
+					type: "item"
+					item: {
+						id: "tconstruct:vein_hammer"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.3f
+								"tconstruct:attack_damage": 1.25f
+								"tconstruct:durability": 5.0f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 1.1f
+								"tconstruct:mining_speed": 2.1000001f
+								"tconstruct:attack_damage": 5.0f
+								"tconstruct:harvest_level": 3.0f
+								"tconstruct:durability": 3600.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 1s
+								}
+								{
+									name: "tconstruct:maintained"
+									level: 3s
+								}
+								{
+									name: "tconstruct:piercing"
+									level: 2s
+								}
+								{
+									name: "tconstruct:two_handed"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:tinkers_bronze"
+								"tconstruct:wood"
+								"tconstruct:tinkers_bronze"
+								"tconstruct:tinkers_bronze"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:durability": 3600
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+				}
 			]
 			rewards: [{
 				id: "2A78F695A00CAAC1"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -1506,7 +1599,9 @@
 			rewards: [{
 				id: "24378B74017AE217"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -1660,7 +1755,9 @@
 			rewards: [{
 				id: "2E9D3BDDA1C917DB"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -1808,7 +1905,9 @@
 			rewards: [{
 				id: "7B6CD460C9115C68"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -1945,7 +2044,9 @@
 			rewards: [{
 				id: "1EA77611F0AC1E99"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -2076,7 +2177,9 @@
 			rewards: [{
 				id: "621BBB412302C46E"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -2208,7 +2311,9 @@
 			rewards: [{
 				id: "47C2863E17519633"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -2347,7 +2452,9 @@
 			rewards: [{
 				id: "2948AA63DF7E591E"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -2498,7 +2605,9 @@
 			rewards: [{
 				id: "064C84E7962377DE"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -2531,7 +2640,9 @@
 			rewards: [{
 				id: "27D0A07F410FABC6"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
 				player_command: false
 			}]
 		}
@@ -2665,7 +2776,9 @@
 			rewards: [{
 				id: "38E9F61A1FE02FAC"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -2674,6 +2787,7 @@
 			icon: "tconstruct:sky_congealed_slime"
 			x: -3.0d
 			y: -2.5d
+			description: ["Climbing up to these islands is a task for the tinkerer that is rewarded with sky slime, which is great for crafting items that give extra sky bounding abilities."]
 			dependencies: ["535EDB063EEB4A69"]
 			id: "56C19E78027E3478"
 			tasks: [{
@@ -2685,7 +2799,9 @@
 			rewards: [{
 				id: "401E5383DA0E156C"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 				player_command: false
 			}]
 		}
@@ -2694,6 +2810,7 @@
 			icon: "tconstruct:earth_congealed_slime"
 			x: -2.0d
 			y: -3.5d
+			description: ["These coastal islands are a great source for green slime and collecting earth slime. This slime has extra springiness for launching the tinkerer far distances."]
 			dependencies: ["535EDB063EEB4A69"]
 			id: "0109D4318847D233"
 			tasks: [{
@@ -2705,7 +2822,9 @@
 			rewards: [{
 				id: "35F2AA26A4D5D8D2"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 				player_command: false
 			}]
 		}
@@ -2714,6 +2833,7 @@
 			icon: "tconstruct:blood_congealed_slime"
 			x: -0.5d
 			y: -3.5d
+			description: ["These blood and ichor covered islands are a great source for magma crème, and the blood slime is a great resource for helping the tinkerer recover from the harsh mobs of the world."]
 			dependencies: ["48DD79D9708932B9"]
 			id: "1B3921C6457D614E"
 			tasks: [{
@@ -2725,7 +2845,9 @@
 			rewards: [{
 				id: "3695278114E43DE3"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -2734,6 +2856,7 @@
 			icon: "tconstruct:ender_congealed_slime"
 			x: 2.0d
 			y: -3.5d
+			description: ["These purple islands are home to ender slime, corrupted by the void and possessing some of the spatial attributes that the ender men possess. "]
 			dependencies: ["3DB4D65F8A5ECA0B"]
 			id: "4FF8B7FECDC15915"
 			tasks: [{
@@ -2745,7 +2868,9 @@
 			rewards: [{
 				id: "14B1C5BAFCC29C7F"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -2753,6 +2878,7 @@
 			title: "Tinkers Gadgetry"
 			x: -4.5d
 			y: 0.0d
+			description: ["To assist the tinkerer in making gadgets, the tinkerer can craft the Tinkers Gadgetry guide. This Guide helps to the explain the recipes and uses of the various gadgets."]
 			dependencies: ["4588297F41674524"]
 			id: "107AE2C18410AAF4"
 			tasks: [{
@@ -2763,7 +2889,9 @@
 			rewards: [{
 				id: "59AAD91F145CFF75"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 				player_command: false
 			}]
 		}
@@ -2771,6 +2899,11 @@
 			title: "Tinkers Travel Program"
 			x: -4.5d
 			y: -1.5d
+			description: [
+				"The go to gadget for tinkerers to travel long distances, don’t forgot to craft a matching pair of boots to ensure the landing can be survived. "
+				""
+				"Depending on the slime used, the slings have different properties: Earth slime sends you far, skyslime can be used mid-air, Ichor slings deal great knockback while ender slime teleports you."
+			]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "7DC5FED1332CEA9A"
 			tasks: [
@@ -2797,7 +2930,18 @@
 					}
 				}
 				{
-					id: "1D3B3C359EE29666"
+					id: "7D03B74F851E2872"
+					type: "item"
+					item: {
+						id: "tconstruct:ichor_slime_sling"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6F6DD91B4A1C5906"
 					type: "item"
 					item: {
 						id: "tconstruct:ender_slime_sling"
@@ -2811,7 +2955,9 @@
 			rewards: [{
 				id: "0D399ECD900A5194"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
@@ -2819,6 +2965,7 @@
 			title: "Tinkers Shoes"
 			x: -5.5d
 			y: -1.5d
+			description: ["These boots will allow the tinkerer to bounce safely from great heights instead of hitting the ground hard. Unlike the slings, the different boots are purely aesthetic. "]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "12B4F7ED5AD83DBC"
 			tasks: [
@@ -2841,7 +2988,9 @@
 			rewards: [{
 				id: "7DE85E011FF0A2CC"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
@@ -2849,6 +2998,7 @@
 			title: "Tinkers Cakes"
 			x: -6.0d
 			y: -0.5d
+			description: ["The tinkerer can take the elements of the slimes and make various cakes, each with a different effect: earth slime grants luck, sky slime grants jump boost, blood slime grants regeneration, ichor slime grants fire resistance and ender slime grants levitation."]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "372290D6D62EA1DF"
 			tasks: [
@@ -2881,7 +3031,9 @@
 			rewards: [{
 				id: "3A2C7744EA23580D"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
@@ -2889,6 +3041,7 @@
 			title: "Tinkers Shuriken"
 			x: -6.0d
 			y: 0.5d
+			description: ["These Shuriken provide the tinkerer with some ranged damage options with the flint providing good knockback, while the quartz tended to do more damage."]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "14B4D5EECBE75C1D"
 			tasks: [
@@ -2906,7 +3059,9 @@
 			rewards: [{
 				id: "4DBE23D96A29B760"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -2914,6 +3069,7 @@
 			title: "Tinkers Piggyback Rides"
 			x: -5.5d
 			y: 1.5d
+			description: ["Until the tinkerer crafts more suitable tools for moving mobs, the piggybackpack is great for picking up mobs to toss in farms (or the smeltery). Up to 3 can be worn at the same time, albeit with some weight penalties."]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "5CB5295AA44608C3"
 			tasks: [{
@@ -2924,7 +3080,9 @@
 			rewards: [{
 				id: "453BCD8A3851B3D5"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -2932,6 +3090,7 @@
 			title: "Tinkers Glowballs"
 			x: -3.5d
 			y: -1.0d
+			description: ["This gadget is great for lighting up far areas and the various nooks and crannies that Mobs like to spawn in."]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "75B59BCBF7F652B5"
 			tasks: [{
@@ -2942,7 +3101,9 @@
 			rewards: [{
 				id: "02884B430B3BF339"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -2951,6 +3112,7 @@
 			icon: "tconstruct:gold_item_frame"
 			x: -4.5d
 			y: 1.5d
+			description: ["For displaying the more interesting tools the tinkerer has made, the tinkerer has also made a series of different frames to display them in. The different frames have different behaviors."]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "688D7FD0E9FFE3A8"
 			tasks: [
@@ -2988,7 +3150,9 @@
 			rewards: [{
 				id: "7E5386B6B02AB842"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
@@ -2996,6 +3160,7 @@
 			title: "Withering Bones"
 			x: 0.5d
 			y: -3.5d
+			description: ["These drops from wither skeletons remember and impart upon the tinkerer’s tools severing when applied as an upgrade. When used as a base part, it applies a necrotic touch. "]
 			dependencies: ["48DD79D9708932B9"]
 			id: "1490641AFE8E77AB"
 			tasks: [{
@@ -3007,7 +3172,9 @@
 			rewards: [{
 				id: "64293FDBCA193636"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
@@ -3015,6 +3182,7 @@
 			title: "Blast the Dragon"
 			x: 3.0d
 			y: -2.5d
+			description: ["These drops, when blasted off the ender dragon, can be combined with the tinkerer’s tools to grant an additional ability slot. "]
 			dependencies: ["3DB4D65F8A5ECA0B"]
 			id: "0C1B8EB37B96FCF8"
 			tasks: [{
@@ -3026,7 +3194,9 @@
 			rewards: [{
 				id: "08D2DAC0A6FB6AA8"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
@@ -3074,7 +3244,9 @@
 			rewards: [{
 				id: "3C720973EBA7E4F7"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -3101,7 +3273,9 @@
 			rewards: [{
 				id: "036E87473B7C85A8"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
 				player_command: false
 			}]
 		}
@@ -3139,7 +3313,9 @@
 			rewards: [{
 				id: "0D18F8A84FD9D693"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
@@ -3220,7 +3396,9 @@
 			rewards: [{
 				id: "1B8ABABF76B47D58"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
@@ -3244,7 +3422,9 @@
 			rewards: [{
 				id: "1BDD19DE0C12C98D"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
@@ -3296,7 +3476,9 @@
 			rewards: [{
 				id: "1F552B03FA0AA138"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 				player_command: false
 			}]
 		}
@@ -3388,7 +3570,9 @@
 			rewards: [{
 				id: "12A49D4465A41A74"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 				player_command: false
 			}]
 		}
@@ -3397,6 +3581,7 @@
 			icon: "tconstruct:efln_ball"
 			x: -3.5d
 			y: 1.0d
+			description: ["When you need a hole in the ground quickly, the EFLN is the tool to make. Explosive mining with no destruction of drops."]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "50396EA0CF9414DC"
 			tasks: [{
@@ -3407,7 +3592,9 @@
 			rewards: [{
 				id: "6CA368A371E00A05"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
 				player_command: false
 			}]
 		}
@@ -3427,7 +3614,9 @@
 			rewards: [{
 				id: "587FF35C8CD308E1"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
 			}]
 		}
