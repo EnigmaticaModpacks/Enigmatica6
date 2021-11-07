@@ -134,6 +134,90 @@ onEvent('recipes', (event) => {
                 G: 'engineersdecor:metal_crafting_table'
             },
             id: 'thermal:tinker_bench'
+        },
+        {
+            output: 'thermal:device_collector',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:sheetmetals/lead',
+                B: 'minecraft:lodestone',
+                C: '#thermal:glass/hardened',
+                D: 'pneumaticcraft:omnidirectional_hopper',
+                E: 'thermal:redstone_servo'
+            },
+            id: 'thermal:device_collector'
+        },
+        {
+            output: 'thermal:device_tree_extractor',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'create:andesite_casing',
+                B: 'supplementaries:faucet',
+                C: 'create:fluid_pipe',
+                D: 'create:fluid_tank',
+                E: 'create:tree_fertilizer'
+            },
+            id: 'thermal:device_tree_extractor'
+        },
+        {
+            output: 'thermal:device_rock_gen',
+            pattern: ['ABA', 'CDC', 'ECE'],
+            key: {
+                A: 'immersiveengineering:toolupgrade_drill_lube',
+                B: 'immersiveengineering:rockcutter',
+                C: 'minecraft:observer',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'powah:thermoelectric_plate'
+            },
+            id: 'thermal:device_rock_gen'
+        },
+        {
+            output: 'thermal:device_water_gen',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'create:brass_casing',
+                B: 'bloodmagic:reagentwater',
+                C: 'create:fluid_pipe',
+                D: 'create:fluid_tank',
+                E: 'create:mechanical_pump'
+            },
+            id: 'thermal:device_water_gen'
+        },
+        {
+            output: 'thermal:device_nullifier',
+            pattern: [' A ', 'ABA', 'ACA'],
+            key: {
+                A: 'engineersdecor:halfslab_sheetmetal_aluminum',
+                B: 'quark:cactus_block',
+                C: 'create:item_drain'
+            },
+            id: 'thermal:device_nullifier'
+        },
+        {
+            output: 'thermal:machine_sawmill',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'create:shaft',
+                B: 'thermal:saw_blade',
+                C: 'create:metal_bracket',
+                D: 'thermal:machine_frame',
+                E: '#forge:gears/invar',
+                F: 'thermal:rf_coil'
+            },
+            id: 'thermal:machine_sawmill'
+        },
+        {
+            output: 'thermal:machine_smelter',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plates/aluminum',
+                B: 'environmental:kiln',
+                C: 'immersiveengineering:coil_lv',
+                D: 'thermal:machine_frame',
+                E: '#forge:gears/invar',
+                F: 'thermal:rf_coil'
+            },
+            id: 'thermal:machine_smelter'
         }
     ];
 

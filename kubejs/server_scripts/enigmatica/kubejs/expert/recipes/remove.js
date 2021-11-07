@@ -119,6 +119,7 @@ onEvent('recipes', (event) => {
         'tconstruct:smeltery/seared/seared_brick',
         'tconstruct:smeltery/seared/seared_brick_kiln',
         'tconstruct:tables/book_substitute',
+        'tconstruct:smeltery/melting/metal/netherite/lodestone',
 
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
 

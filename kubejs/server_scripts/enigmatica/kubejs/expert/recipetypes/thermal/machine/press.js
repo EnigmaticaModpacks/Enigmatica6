@@ -45,6 +45,15 @@ onEvent('recipes', (event) => {
             output: 'powah:thermoelectric_plate',
             energy: 1000,
             id: `${id_prefix}thermoelectric_plate`
+        },
+        {
+            inputs: [
+                Item.of('tconstruct:large_plate', '{Material:"materialis:invar"}'),
+                'immersiveengineering:mold_gear'
+            ],
+            output: 'thermal:saw_blade',
+            energy: 9000,
+            id: 'thermal:saw_blade'
         }
     ];
 
