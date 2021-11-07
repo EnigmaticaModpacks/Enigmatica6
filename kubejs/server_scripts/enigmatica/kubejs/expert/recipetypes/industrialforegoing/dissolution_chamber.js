@@ -426,6 +426,44 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'sophisticatedbackpacks:inception_upgrade'
+        },
+        {
+            inputs: [
+                'refinedstorage:range_upgrade',
+                'refinedstorage:range_upgrade',
+                'refinedstorage:range_upgrade',
+                'xnet:antenna_dish',
+                'xnet:antenna_dish',
+                '#forge:ingots/aeternium',
+                '#forge:ingots/aeternium',
+                '#forge:ingots/aeternium'
+            ],
+            inputFluid: 'tconstruct:molten_slimesteel',
+            inputFluidAmount: 1296,
+            processingTime: 400,
+            outputItem: { item: 'rsinfinitybooster:infinity_card', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rsinfinitybooster:infinity_card'
+        },
+        {
+            inputs: [
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 1296,
+            processingTime: 400,
+            outputItem: { item: 'rsinfinitybooster:dimension_card', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rsinfinitybooster:dimension_card'
         }
         /*
         {

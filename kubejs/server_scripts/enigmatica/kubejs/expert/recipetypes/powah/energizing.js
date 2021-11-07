@@ -16,7 +16,7 @@ onEvent('recipes', (event) => {
                 item: 'xnet:antenna_dish',
                 count: 1
             },
-            id: `${id_prefix}antenna_dish`
+            id: 'xnet:antenna_dish'
         },
         {
             ingredients: [{ item: 'thermal:energy_cell_frame' }, { tag: 'forge:storage_blocks/redstone' }],
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                 item: 'xnet:redstone_proxy',
                 count: 1
             },
-            id: `${id_prefix}redstone_proxy_from_energy_cell_frame`
+            id: 'xnet:redstone_proxy'
         },
         {
             ingredients: [{ item: 'xnet:redstone_proxy_upd' }],
@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
                 item: 'xnet:redstone_proxy',
                 count: 1
             },
-            id: `${id_prefix}redstone_proxy_from_redstone_proxy_upd`
+            id: `${id_prefix}redstone_proxy_upd`
         },
         {
             ingredients: [{ item: 'xnet:redstone_proxy' }],
@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
                 item: 'xnet:redstone_proxy_upd',
                 count: 1
             },
-            id: `${id_prefix}redstone_proxy_upd`
+            id: 'xnet:redstoneproxy_update'
         },
         {
             ingredients: [
