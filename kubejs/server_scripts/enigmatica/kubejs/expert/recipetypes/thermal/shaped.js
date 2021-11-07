@@ -120,6 +120,20 @@ onEvent('recipes', (event) => {
                 E: 'powah:capacitor_niotic'
             },
             id: 'thermal:augments/upgrade_augment_3'
+        },
+        {
+            output: 'thermal:tinker_bench',
+            pattern: ['ABC', 'DED', 'FGF'],
+            key: {
+                A: 'immersiveengineering:screwdriver',
+                B: 'immersiveengineering:wirecutter',
+                C: 'immersiveengineering:hammer',
+                D: '#forge:plates/lead',
+                E: '#create:toolboxes',
+                F: 'thermal:rf_coil',
+                G: 'engineersdecor:metal_crafting_table'
+            },
+            id: 'thermal:tinker_bench'
         }
     ];
 
