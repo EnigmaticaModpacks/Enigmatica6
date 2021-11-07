@@ -417,6 +417,22 @@ onEvent('recipes', (event) => {
                 G: 'mekanism:hdpe_stick'
             },
             id: 'thermal:flux_drill'
+        },
+        {
+            output: 'fluxnetworks:flux_controller',
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CHIHC', 'ABBBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: 'fluxnetworks:flux_block',
+                C: 'botania:bifrost_perm',
+                D: '#botania:runes/air',
+                E: '#botania:runes/asgard',
+                F: 'thermal:lightning_charge',
+                G: 'powah:player_transmitter_nitro',
+                H: '#botania:runes/earth',
+                I: '#forge:circuits/ultimate'
+            },
+            id: `${id_prefix}flux_controller`
         }
     ];
 
@@ -456,11 +472,33 @@ onEvent('recipes', (event) => {
         });
     });
 
+    const compactmachines = [
+        { tier: 'tiny', comb: 'forest' },
+        { tier: 'small', comb: 'aluminum' },
+        { tier: 'normal', comb: 'zinc' },
+        { tier: 'large', comb: 'uranium' },
+        { tier: 'giant', comb: 'cobalt' },
+        { tier: 'maximum', comb: 'industrious' }
+    ];
+
+    compactmachines.forEach((compactmachine) => {
+        recipes.push({
+            output: `compactmachines:machine_${compactmachine.tier}`,
+            pattern: ['AABAA', 'ACCCA', 'DCECF', 'ACCCA', 'AAGAA'],
+            key: {
+                A: 'compactmachines:wall',
+                B: 'portality:module_energy',
+                C: `resourcefulbees:${compactmachine.comb}_honeycomb_block`,
+                D: 'portality:module_items',
+                E: 'portality:controller',
+                F: 'portality:module_fluids',
+                G: 'portality:module_interdimensional'
+            },
+            id: `${id_prefix}compact_machine_${compactmachine.tier}`
+        });
+    });
+
     recipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key);
-        }
+        event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

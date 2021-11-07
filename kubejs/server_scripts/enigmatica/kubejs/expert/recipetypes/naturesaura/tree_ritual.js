@@ -470,6 +470,19 @@ onEvent('recipes', (event) => {
             },
             time: 400,
             id: 'naturesstarlight:tree_ritual/starlight_increase_powder'
+        },
+        {
+            inputs: [
+                { item: 'eidolon:basic_amulet' },
+                { tag: 'forge:ingots/tainted_gold' },
+                { item: 'tconstruct:efln_ball' },
+                { item: 'kubejs:firmament' },
+                { item: 'naturesaura:token_anger' }
+            ],
+            sapling: 'architects_palette:twisted_sapling',
+            output: { item: 'naturesaura:shockwave_creator' },
+            time: 400,
+            id: 'naturesaura:shockwave_creator'
         }
 
         /*

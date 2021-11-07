@@ -135,7 +135,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:heat_sink',
                 B: 'pneumaticcraft:heat_pipe',
-                C: 'mekanism:steel_casing',
+                C: 'immersiveengineering:alloybrick',
                 D: 'immersiveengineering:coil_mv'
             },
             id: 'mekanism:superheating_element'
