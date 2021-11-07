@@ -389,6 +389,22 @@ onEvent('recipes', (event) => {
                 H: 'immersiveengineering:wooden_grip'
             },
             id: 'mininggadgets:mininggadget'
+        },
+        {
+            output: 'fluxnetworks:flux_controller',
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CHIHC', 'ABBBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: 'fluxnetworks:flux_block',
+                C: 'botania:bifrost_perm',
+                D: '#botania:runes/air',
+                E: '#botania:runes/asgard',
+                F: 'thermal:lightning_charge',
+                G: 'powah:player_transmitter_nitro',
+                H: '#botania:runes/earth',
+                I: '#forge:circuits/ultimate'
+            },
+            id: `${id_prefix}flux_controller`
         }
     ];
 
