@@ -1,6 +1,5 @@
 onEvent('recipes', (event) => {
     const recipes = [
-        ,
         {
             output: Item.of('fluxnetworks:flux_core', 8),
             pattern: ['ABA', 'BCB', 'ABA'],
