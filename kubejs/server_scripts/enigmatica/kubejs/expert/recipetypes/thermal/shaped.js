@@ -308,6 +308,19 @@ onEvent('recipes', (event) => {
                 F: '#immersiveengineering:scaffoldings/steel'
             },
             id: 'thermal:machine_refinery'
+        },
+        {
+            output: 'thermal:machine_press',
+            pattern: ['ABC', 'ADC', 'EFC'],
+            key: {
+                A: '#forge:ingots/bronze',
+                B: 'create:mechanical_press',
+                C: '#forge:gears/constantan',
+                D: 'thermal:machine_frame',
+                E: 'thermal:rf_coil',
+                F: '#forge:storage_blocks/steel'
+            },
+            id: 'thermal:machine_press'
         }
     ];
 
