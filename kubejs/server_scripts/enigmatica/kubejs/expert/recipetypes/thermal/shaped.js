@@ -218,6 +218,58 @@ onEvent('recipes', (event) => {
                 F: 'thermal:rf_coil'
             },
             id: 'thermal:machine_smelter'
+        },
+        {
+            output: 'thermal:machine_pulverizer',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:ingots/andesite_alloy',
+                B: 'minecraft:hopper',
+                C: 'create:filter',
+                D: 'thermal:machine_frame',
+                E: '#forge:gears/iron',
+                F: 'thermal:rf_coil'
+            },
+            id: 'thermal:machine_pulverizer'
+        },
+        {
+            output: 'thermal:machine_crucible',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'tconstruct:seared_bricks',
+                B: 'create:basin',
+                C: 'immersiveengineering:coil_lv',
+                D: 'thermal:fluid_cell_frame',
+                E: '#forge:gears/uranium',
+                F: 'thermal:rf_coil'
+            },
+            id: 'thermal:machine_crucible'
+        },
+        {
+            output: 'thermal:machine_bottler',
+            pattern: ['ABC', 'ADC', 'EFC'],
+            key: {
+                A: '#thermal:glass/hardened',
+                B: 'create:spout',
+                C: 'create:fluid_pipe',
+                D: 'create:depot',
+                E: 'thermal:fluid_cell_frame',
+                F: 'mekanism:electric_pump'
+            },
+            id: 'thermal:machine_bottler'
+        },
+        {
+            output: 'thermal:machine_chiller',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'cookingforblockheads:ice_unit',
+                B: 'engineersdecor:small_freezer',
+                C: 'create:propeller',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'mekanismgenerators:saturating_condenser',
+                F: '#forge:circuits/basic'
+            },
+            id: 'thermal:machine_chiller'
         }
     ];
 
