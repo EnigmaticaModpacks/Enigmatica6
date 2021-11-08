@@ -270,6 +270,44 @@ onEvent('recipes', (event) => {
                 F: '#forge:circuits/basic'
             },
             id: 'thermal:machine_chiller'
+        },
+        {
+            output: 'thermal:machine_pyrolyzer',
+            pattern: ['ABA', 'BCB', 'BDB'],
+            key: {
+                A: '#forge:sheetmetals/steel',
+                B: 'immersiveengineering:blastbrick',
+                C: 'thermal:fluid_cell',
+                D: 'thermal:machine_furnace'
+            },
+            id: 'thermal:machine_pyrolyzer'
+        },
+        {
+            output: 'thermal:machine_centrifuge',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: 'immersiveengineering:alu_wallmount',
+                B: '#forge:fences/aluminum',
+                C: 'thermal:fluid_cell',
+                D: 'immersiveengineering:turntable',
+                E: '#forge:storage_blocks/lead',
+                F: '#forge:gears/constantan',
+                G: 'thermal:rf_coil'
+            },
+            id: 'thermal:machine_centrifuge'
+        },
+        {
+            output: 'thermal:machine_refinery',
+            pattern: ['ABC', 'CBC', 'DEF'],
+            key: {
+                A: 'immersivepetroleum:flarestack',
+                B: 'create:fluid_pipe',
+                C: 'thermal:fluid_cell',
+                D: 'create:blaze_burner',
+                E: 'thermal:rf_coil',
+                F: '#immersiveengineering:scaffoldings/steel'
+            },
+            id: 'thermal:machine_refinery'
         }
     ];
 
