@@ -1805,8 +1805,18 @@ const stonecuttables = [
     {
         name: 'scoria',
         stones: [
-            'byg:scoria_pillar',
+            'byg:cracked_scoria_stone_bricks',
+            'byg:scoria_stonebrick_wall',
+            'byg:scoria_stonebrick_slab',
+            'byg:scoria_stonebrick_stairs',
             'byg:scoria_stonebricks',
+            'byg:scoria_pillar',
+            'byg:scoria_stone_wall',
+            'byg:scoria_stone_slab',
+            'byg:scoria_stone_stairs',
+            'byg:scoria_cobblestone_wall',
+            'byg:scoria_cobblestone_slab',
+            'byg:scoria_cobblestone_stairs',
             'create:scoria',
             'create:scoria_bricks',
             'create:scoria_pillar',
@@ -1816,10 +1826,26 @@ const stonecuttables = [
             'create:layered_scoria',
             'create:polished_scoria',
             'create:mossy_scoria',
-            'create:overgrown_scoria'
+            'create:overgrown_scoria',
+            'create:scoria_cobblestone_wall',
+            'create:scoria_cobblestone_slab',
+            'create:scoria_cobblestone_stairs'
         ],
         onlyAsOutput: ['byg:scoria_cobblestone', 'create:scoria_cobblestone'],
-        onlyAsInput: []
+        onlyAsInput: ['byg:scoria_stone']
+    },
+    {
+        name: 'scoria_cobblestone',
+        stones: [
+            'byg:scoria_cobblestone_wall',
+            'byg:scoria_cobblestone_slab',
+            'byg:scoria_cobblestone_stairs',
+            'create:scoria_cobblestone_wall',
+            'create:scoria_cobblestone_slab',
+            'create:scoria_cobblestone_stairs'
+        ],
+        onlyAsOutput: [],
+        onlyAsInput: ['byg:scoria_cobblestone', 'create:scoria_cobblestone']
     },
     {
         name: 'sea_lantern',
@@ -2438,7 +2464,7 @@ colors.forEach((color) => {
 
 // @Chisel Planks
 chiselPlankTypes = ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak'];
-chippedOnlyPlankTypes = ['warped','crimson'];
+chippedOnlyPlankTypes = ['warped', 'crimson'];
 plankTypes = chiselPlankTypes.concat(chippedOnlyPlankTypes);
 chiselPlankVariants = [
     'large_planks',
@@ -2461,12 +2487,12 @@ chiselPlankVariants = [
 const numberChippedVariants = 18;
 plankTypes.forEach((plankType) => {
     let stones = [`minecraft:${plankType}_planks`];
-	if(! chippedOnlyPlankTypes.includes(plankType) ) {
-		chiselPlankVariants.forEach((chiselPlankVariant) => {
-			stones.push(`chisel:planks/${plankType}/${chiselPlankVariant}`);
-		});
-	}
-	for (i = 1; i <= numberChippedVariants; i++) {
+    if (!chippedOnlyPlankTypes.includes(plankType)) {
+        chiselPlankVariants.forEach((chiselPlankVariant) => {
+            stones.push(`chisel:planks/${plankType}/${chiselPlankVariant}`);
+        });
+    }
+    for (i = 1; i <= numberChippedVariants; i++) {
         stones.push(`chipped:${plankType}_planks_${i}`);
     }
     stonecuttables.push({
