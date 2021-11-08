@@ -3,18 +3,7 @@ onEvent('recipes', (event) => {
         return;
     }
 
-    const recipes = [
-        {
-            replaceTarget: { id: /thermal:machine_(refinery|pyrolyzer|centrifuge)/ },
-            toReplace: 'thermal:machine_frame',
-            replaceWith: 'thermal:fluid_cell'
-        },
-        {
-            replaceTarget: { id: /thermal:machine_(crucible|bottler)/ },
-            toReplace: 'thermal:machine_frame',
-            replaceWith: 'thermal:fluid_cell_frame'
-        }
-    ];
+    const recipes = [];
 
     recipes.forEach((recipe) => {
         event.replaceInput(recipe.replaceTarget, recipe.toReplace, recipe.replaceWith);

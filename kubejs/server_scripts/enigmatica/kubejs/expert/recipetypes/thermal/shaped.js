@@ -321,6 +321,30 @@ onEvent('recipes', (event) => {
                 F: '#forge:storage_blocks/steel'
             },
             id: 'thermal:machine_press'
+        },
+        {
+            output: 'thermal:machine_insolator',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: 'architects_palette:abyssaline_lamp',
+                B: '#botania:runes/earth',
+                C: 'industrialforegoing:hydroponic_bed',
+                D: '#forge:gears/lumium',
+                E: '#forge:circuits/advanced'
+            },
+            id: 'thermal:machine_insolator'
+        },
+        {
+            output: 'thermal:machine_crafter',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:gears/brass',
+                B: 'rftoolscontrol:craftingstation',
+                C: 'thermal:redstone_servo',
+                D: 'thermal:machine_frame',
+                E: 'thermal:rf_coil'
+            },
+            id: 'thermal:machine_crafter'
         }
     ];
 
