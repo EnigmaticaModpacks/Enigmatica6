@@ -162,7 +162,7 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"valhelsia_core-client.toml"
 )
 
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "config/configswapper/Launch Backup")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt")
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
