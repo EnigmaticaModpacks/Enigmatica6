@@ -405,6 +405,18 @@ onEvent('recipes', (event) => {
                 E: 'ars_nouveau:arcane_core'
             },
             id: 'thermal:dynamo_lapidary'
+        },
+        {
+            output: 'thermal:machine_furnace',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'environmental:kiln',
+                B: 'immersiveengineering:wirecoil_redstone',
+                C: 'thermal:machine_frame',
+                D: '#forge:gears/invar',
+                E: 'thermal:rf_coil'
+            },
+            id: 'thermal:machine_furnace'
         }
     ];
 
