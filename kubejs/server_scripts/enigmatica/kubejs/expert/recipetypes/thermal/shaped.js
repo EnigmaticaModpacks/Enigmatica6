@@ -345,6 +345,66 @@ onEvent('recipes', (event) => {
                 E: 'thermal:rf_coil'
             },
             id: 'thermal:machine_crafter'
+        },
+        {
+            output: 'thermal:dynamo_stirling',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: '#forge:ingots/andesite_alloy',
+                C: 'create:piston_extension_pole',
+                D: 'create:copper_valve_handle',
+                E: 'create:mechanical_piston'
+            },
+            id: 'thermal:dynamo_stirling'
+        },
+        {
+            output: 'thermal:dynamo_compression',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: 'pneumaticcraft:pressure_tube',
+                C: 'pneumaticcraft:pneumatic_cylinder',
+                D: '#forge:gears/compressed_iron',
+                E: 'thermal:fluid_cell'
+            },
+            id: 'thermal:dynamo_compression'
+        },
+        {
+            output: 'thermal:dynamo_magmatic',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: 'pneumaticcraft:reinforced_brick_tile',
+                C: 'powah:thermoelectric_plate',
+                D: '#forge:gears/compressed_iron',
+                E: 'thermal:fluid_cell'
+            },
+            id: 'thermal:dynamo_magmatic'
+        },
+        {
+            output: 'thermal:dynamo_numismatic',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: 'ars_nouveau:warding_stone',
+                C: 'eidolon:wooden_brewing_stand',
+                D: 'atum:coin_gold',
+                E: 'eidolon:crucible'
+            },
+            id: 'thermal:dynamo_numismatic'
+        },
+        {
+            output: 'thermal:dynamo_lapidary',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: 'astralsorcery:rock_crystal',
+                C: 'ars_nouveau:enchanting_apparatus',
+                D: '#forge:gears/cobalt',
+                E: 'ars_nouveau:arcane_core'
+            },
+            id: 'thermal:dynamo_lapidary'
         }
     ];
 
