@@ -391,6 +391,34 @@ onEvent('recipes', (event) => {
             id: 'mininggadgets:mininggadget'
         },
         {
+            output: 'thermal:flux_saw',
+            pattern: [' A  ', 'BACD', 'AEFD', ' GCC'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'thermal:saw_blade',
+                C: 'mekanism:hdpe_sheet',
+                D: 'betterendforge:leather_stripe',
+                E: 'create:precision_mechanism',
+                F: 'thermal:flux_capacitor',
+                G: 'mekanism:hdpe_stick'
+            },
+            id: 'thermal:flux_saw'
+        },
+        {
+            output: 'thermal:flux_drill',
+            pattern: ['B   ', ' AC ', ' EFD', ' GCD'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'thermal:drill_head',
+                C: 'mekanism:hdpe_sheet',
+                D: 'betterendforge:leather_stripe',
+                E: 'create:precision_mechanism',
+                F: 'thermal:flux_capacitor',
+                G: 'mekanism:hdpe_stick'
+            },
+            id: 'thermal:flux_drill'
+        },
+        {
             output: 'fluxnetworks:flux_controller',
             pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CHIHC', 'ABBBA'],
             key: {
