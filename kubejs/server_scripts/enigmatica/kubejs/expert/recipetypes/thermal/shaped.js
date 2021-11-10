@@ -348,13 +348,14 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'thermal:dynamo_stirling',
-            pattern: [' A ', 'BCB', 'DED'],
+            pattern: [' A ', 'BCD', 'EFE'],
             key: {
                 A: 'thermal:rf_coil',
-                B: '#forge:ingots/andesite_alloy',
-                C: 'create:piston_extension_pole',
-                D: 'create:copper_valve_handle',
-                E: 'create:mechanical_piston'
+                B: 'minecraft:glass_bottle',
+                C: '#forge:rods/copper',
+                D: '#forge:gears/copper',
+                E: 'minecraft:smooth_stone',
+                F: 'minecraft:piston'
             },
             id: 'thermal:dynamo_stirling'
         },
