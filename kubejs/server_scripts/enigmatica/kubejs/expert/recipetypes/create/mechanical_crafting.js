@@ -405,6 +405,121 @@ onEvent('recipes', (event) => {
                 I: '#forge:circuits/ultimate'
             },
             id: `${id_prefix}flux_controller`
+        },
+        {
+            output: 'gunswithoutroses:iron_gun',
+            pattern: ['  A ', 'BCDE', ' FGH'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'immersiveengineering:gunpart_barrel',
+                C: 'immersiveengineering:gunpart_drum',
+                D: 'create:precision_mechanism',
+                E: 'immersiveengineering:gunpart_hammer',
+                F: '#forge:treated_wood_slab',
+                G: '#forge:nuggets/steel',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'gunswithoutroses:iron_gun'
+        },
+        {
+            output: 'gunswithoutroses:gold_gun',
+            pattern: ['  A ', 'BCDE', ' FGH'],
+            key: {
+                A: '#forge:plates/gold',
+                B: 'immersiveengineering:gunpart_barrel',
+                C: 'immersiveengineering:gunpart_drum',
+                D: 'create:precision_mechanism',
+                E: 'immersiveengineering:gunpart_hammer',
+                F: '#forge:treated_wood_slab',
+                G: '#forge:nuggets/steel',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'gunswithoutroses:gold_gun'
+        },
+        {
+            output: 'gunswithoutroses:diamond_shotgun',
+            pattern: ['  ABA ', 'CCCDEF', 'CCCDEF', ' I GH '],
+            key: {
+                A: '#forge:plates/steel',
+                B: '#forge:plates/diamond',
+                C: 'pneumaticcraft:cannon_barrel',
+                D: 'immersiveengineering:gunpart_hammer',
+                E: 'create:precision_mechanism',
+                F: '#forge:treated_wood',
+                G: '#forge:nuggets/steel',
+                H: 'immersiveengineering:wooden_grip',
+                I: '#forge:wires/steel'
+            },
+            id: 'gunswithoutroses:diamond_shotgun'
+        },
+        {
+            output: 'gunswithoutroses:diamond_sniper',
+            pattern: ['   ABA ', 'CCCCDEF', ' IIIGHF'],
+            key: {
+                A: '#forge:plates/diamond',
+                B: 'immersiveengineering:toolupgrade_railgun_scope',
+                C: 'immersiveengineering:gunpart_barrel',
+                D: 'immersiveengineering:gunpart_hammer',
+                E: 'create:precision_mechanism',
+                F: '#forge:treated_wood',
+                G: '#forge:nuggets/steel',
+                H: 'immersiveengineering:wooden_grip',
+                I: '#forge:plates/steel'
+            },
+            id: 'gunswithoutroses:diamond_sniper'
+        },
+        {
+            output: 'gunswithoutroses:diamond_gatling',
+            pattern: ['   AAA ', 'BBBCDCE', 'BBBFGHE', 'III JK '],
+            key: {
+                A: '#forge:inlays/pewter',
+                B: 'immersiveengineering:gunpart_barrel',
+                C: 'create:encased_chain_drive',
+                D: 'create:adjustable_chain_gearshift',
+                E: '#forge:treated_wood',
+                F: 'immersiveengineering:gunpart_drum',
+                G: 'create:precision_mechanism',
+                H: '#forge:gears/steel',
+                I: '#forge:wires/steel',
+                J: '#forge:nuggets/steel',
+                K: 'immersiveengineering:wooden_grip'
+            },
+            id: 'gunswithoutroses:diamond_gatling'
+        },
+        {
+            output: 'meetyourfight:phantasmal_rifle',
+            pattern: ['   ABA ', 'CCCCDEF', ' IIIGHF'],
+            key: {
+                A: '#forge:inlays/arcane_gold',
+                B: 'meetyourfight:phantoplasm',
+                C: 'immersiveengineering:gunpart_barrel',
+                D: 'immersiveengineering:gunpart_hammer',
+                E: 'create:precision_mechanism',
+                F: '#forge:treated_wood',
+                G: '#forge:nuggets/steel',
+                H: 'immersiveengineering:wooden_grip',
+                I: '#forge:plates/electrum'
+            },
+            id: 'meetyourfight:phantasmal_rifle'
+        },
+        {
+            output: 'meetyourfight:cocktail_shotgun',
+            pattern: ['   AAA ', 'BBBCDCE', 'BBBFGHE', 'ILI JK '],
+            key: {
+                A: '#forge:inlays/pewter',
+                B: 'immersiveengineering:gunpart_barrel',
+                C: 'create:encased_chain_drive',
+                D: 'create:adjustable_chain_gearshift',
+                E: '#forge:treated_wood',
+                F: 'immersiveengineering:gunpart_drum',
+                G: 'create:precision_mechanism',
+                H: '#forge:gears/enderium',
+                I: '#forge:wires/steel',
+                J: '#forge:nuggets/steel',
+                K: 'immersiveengineering:wooden_grip',
+                L: 'meetyourfight:fortunes_favor'
+            },
+            id: 'meetyourfight:cocktail_shotgun'
         }
     ];
 
