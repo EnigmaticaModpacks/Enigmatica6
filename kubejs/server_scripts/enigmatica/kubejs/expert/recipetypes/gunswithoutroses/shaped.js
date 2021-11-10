@@ -26,7 +26,7 @@ onEvent('recipes', (event) => {
                 D: '#botania:runes/gluttony',
                 E: '#forge:ingots/forgotten_metal'
             },
-            id: 'create:crafting/kinetics/millstone'
+            id: 'gunswithoutroses:hunger_bullet'
         }
     ];
 
