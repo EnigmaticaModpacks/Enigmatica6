@@ -1,23 +1,6 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
-            group: 'ie_concrete',
-            pattern: ['scs', 'gbg', 'scs'],
-            key: {
-                s: { tag: 'forge:slag' },
-                c: { tag: 'forge:clay' },
-                g: { tag: 'forge:gravel' },
-                b: {
-                    tag: 'minecraft:water',
-                    amount: 1000,
-                    type: 'immersiveengineering:fluid'
-                }
-            },
-            result: { item: 'immersiveengineering:concrete', count: 12 },
-            quarter_turn: true,
-            id: 'immersiveengineering:crafting/concrete2'
-        },
-        {
             pattern: [' g ', 'idi', ' g '],
             key: {
                 g: { tag: 'forge:glass' },
