@@ -133,36 +133,49 @@ onEvent('recipes', (event) => {
             }
         );
 
-        let previousTier;
+        let previousTierRod, previousTierTransmitter;
         if (index > 1) {
-            previousTier = `powah:energizing_rod_${powahTiers[index - 1]}`;
-        } else {
-            previousTier = 'immersiveengineering:tesla_coil';
-        }
-        recipes.push(
-            {
-                output: `powah:energizing_rod_${tier}`,
-                pattern: [' A ', 'BCB', 'BDB'],
+            previousTierRod = `powah:energizing_rod_${powahTiers[index - 1]}`;
+            previousTierTransmitter = `powah:player_transmitter_${powahTiers[index - 1]}`;
+
+            recipes.push({
+                output: `powah:player_transmitter_${tier}`,
+                pattern: ['BCB', 'BDB'],
                 key: {
-                    A: 'refinedstorage:quartz_enriched_iron_block',
                     B: capacitor,
-                    C: previousTier,
-                    D: wire_coil
+                    C: previousTierTransmitter,
+                    D: 'powah:dielectric_casing'
                 },
-                id: `powah:crafting/energizing_rod_${tier}`
-            },
-            {
+                id: `powah:crafting/player_tranmitter_${tier}`
+            });
+        } else {
+            previousTierRod = 'immersiveengineering:tesla_coil';
+            previousTierTransmitter = 'immersiveengineering:tesla_coil';
+
+            recipes.push({
                 output: `powah:player_transmitter_${tier}`,
                 pattern: [' A ', 'BCB', 'BDB'],
                 key: {
                     A: 'powah:player_aerial_pearl',
                     B: capacitor,
-                    C: previousTier,
+                    C: previousTierTransmitter,
                     D: 'powah:dielectric_casing'
                 },
                 id: `powah:crafting/player_tranmitter_${tier}`
-            }
-        );
+            });
+        }
+
+        recipes.push({
+            output: `powah:energizing_rod_${tier}`,
+            pattern: [' A ', 'BCB', 'BDB'],
+            key: {
+                A: 'refinedstorage:quartz_enriched_iron_block',
+                B: capacitor,
+                C: previousTierRod,
+                D: wire_coil
+            },
+            id: `powah:crafting/energizing_rod_${tier}`
+        });
     });
 
     recipes.forEach((recipe) => {

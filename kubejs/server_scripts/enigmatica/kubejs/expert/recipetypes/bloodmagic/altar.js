@@ -192,7 +192,16 @@ onEvent('recipes', (event) => {
             altarLevel: 0,
             consumptionRate: 5,
             drainRate: 5,
-            id: 'botania:fel_pumpkin'
+            id: `${id_prefix}fel_pumpkin`
+        },
+        {
+            input: 'eidolon:void_amulet',
+            output: 'botania:blood_pendant',
+            syphon: 7000,
+            altarLevel: 1,
+            consumptionRate: 5,
+            drainRate: 5,
+            id: `${id_prefix}blood_pendant`
         }
     ];
 

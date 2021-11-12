@@ -4,27 +4,6 @@ onEvent('recipes', (event) => {
     }
     const id_prefix = 'enigmatica:expert/industrialforegoing/dissolution_chamber/';
     const recipes = [
-        /*
-        {
-            inputs: [
-                '', // top left
-                '', // top 
-                '', // top right
-                '', // left
-                '', // right
-                '', // bottom left
-                '', // bottom
-                ''  // bottom right
-            ],
-            inputFluid: '', // optional
-            inputFluidAmount: 0, // leave at 0 for no fluid
-            processingTime: 50,
-            outputItem: { item: '', count: 1 },
-            outputFluid: '', // optional
-            outputFluidAmount: 0, // leave at 0 for no fluid
-            id: ''
-        }
-        */
         {
             inputs: [
                 'immersiveengineering:tesla_coil',
@@ -437,7 +416,76 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:tier_installer/ultimate'
+        },
+        {
+            inputs: ['sophisticatedbackpacks:upgrade_base', 'occultism:satchel'],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'sophisticatedbackpacks:inception_upgrade', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'sophisticatedbackpacks:inception_upgrade'
+        },
+        {
+            inputs: [
+                'refinedstorage:range_upgrade',
+                'refinedstorage:range_upgrade',
+                'refinedstorage:range_upgrade',
+                'xnet:antenna_dish',
+                'xnet:antenna_dish',
+                '#forge:ingots/aeternium',
+                '#forge:ingots/aeternium',
+                '#forge:ingots/aeternium'
+            ],
+            inputFluid: 'tconstruct:molten_slimesteel',
+            inputFluidAmount: 1296,
+            processingTime: 400,
+            outputItem: { item: 'rsinfinitybooster:infinity_card', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rsinfinitybooster:infinity_card'
+        },
+        {
+            inputs: [
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 1296,
+            processingTime: 400,
+            outputItem: { item: 'rsinfinitybooster:dimension_card', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rsinfinitybooster:dimension_card'
         }
+        /*
+        {
+            inputs: [
+                '', // top left
+                '', // top 
+                '', // top right
+                '', // left
+                '', // right
+                '', // bottom left
+                '', // bottom
+                ''  // bottom right
+            ],
+            inputFluid: '', // optional
+            inputFluidAmount: 0, // leave at 0 for no fluid
+            processingTime: 50,
+            outputItem: { item: '', count: 1 },
+            outputFluid: '', // optional
+            outputFluidAmount: 0, // leave at 0 for no fluid
+            id: ''
+        }
+        */
     ];
 
     colors.forEach((color) => {

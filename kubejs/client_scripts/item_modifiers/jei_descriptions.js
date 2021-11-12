@@ -359,6 +359,17 @@ onEvent('jei.information', (event) => {
         {
             items: ['upgrade_aquatic:flare_spawn_egg'],
             text: [`Splash a Phantom with a Potion of Insomnia to convert it to a Flare.`]
+        },
+        {
+            items: [
+                'dankstorage:1_to_2',
+                'dankstorage:2_to_3',
+                'dankstorage:3_to_4',
+                'dankstorage:4_to_5',
+                'dankstorage:5_to_6',
+                'dankstorage:6_to_7'
+            ],
+            text: [`Sneak Right Click to upgrade a Dank installed in a Dock.`]
         }
     ];
 

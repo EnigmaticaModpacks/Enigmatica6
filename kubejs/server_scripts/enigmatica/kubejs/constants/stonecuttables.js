@@ -1807,6 +1807,12 @@ const stonecuttables = [
         stones: [
             'byg:scoria_pillar',
             'byg:scoria_stonebricks',
+            'byg:scoria_stonebrick_wall',
+            'byg:scoria_stonebrick_stairs',
+            'byg:scoria_cobblestone_wall',
+            'byg:scoria_cobblestone_stairs',
+            'byg:scoria_stone_wall',
+            'byg:scoria_stone_stairs',
             'create:scoria',
             'create:scoria_bricks',
             'create:scoria_pillar',
@@ -1819,7 +1825,7 @@ const stonecuttables = [
             'create:overgrown_scoria'
         ],
         onlyAsOutput: ['byg:scoria_cobblestone', 'create:scoria_cobblestone'],
-        onlyAsInput: []
+        onlyAsInput: ['byg:scoria_stone']
     },
     {
         name: 'sea_lantern',
@@ -2438,6 +2444,8 @@ colors.forEach((color) => {
 
 // @Chisel Planks
 chiselPlankTypes = ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak'];
+chippedOnlyPlankTypes = ['warped', 'crimson'];
+plankTypes = chiselPlankTypes.concat(chippedOnlyPlankTypes);
 chiselPlankVariants = [
     'large_planks',
     'crude_horizontal_planks',
@@ -2455,13 +2463,20 @@ chiselPlankVariants = [
     'braid',
     'log_cabin'
 ];
-chiselPlankTypes.forEach((chiselPlankType) => {
-    let stones = [`minecraft:${chiselPlankType}_planks`];
-    chiselPlankVariants.forEach((chiselPlankVariant) => {
-        stones.push(`chisel:planks/${chiselPlankType}/${chiselPlankVariant}`);
-    });
+
+const numberChippedVariants = 18;
+plankTypes.forEach((plankType) => {
+    let stones = [`minecraft:${plankType}_planks`];
+    if (!chippedOnlyPlankTypes.includes(plankType)) {
+        chiselPlankVariants.forEach((chiselPlankVariant) => {
+            stones.push(`chisel:planks/${plankType}/${chiselPlankVariant}`);
+        });
+    }
+    for (i = 1; i <= numberChippedVariants; i++) {
+        stones.push(`chipped:${plankType}_planks_${i}`);
+    }
     stonecuttables.push({
-        name: `${chiselPlankType}`,
+        name: `${plankType}`,
         stones: stones,
         onlyAsOutput: [],
         onlyAsInput: []

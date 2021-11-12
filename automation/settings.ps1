@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.19"
+$MODPACK_VERSION = "0.5.21"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.5.18"
+$LAST_MODPACK_VERSION = "0.5.20"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -162,7 +162,7 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"valhelsia_core-client.toml"
 )
 
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "config/configswapper/Launch Backup")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt")
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
