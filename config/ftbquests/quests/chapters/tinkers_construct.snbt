@@ -152,9 +152,9 @@
 			x: 2.0d
 			y: 0.0d
 			description: [
-				"The first step in TiC is to make patterns. These will be required to create the crafting blocks for tinkers, as well as be combined with materials to make the various tool parts. "
+				"The first step in TiC is to make patterns. These patterns will be required to create the crafting blocks needed to progress. They can also be combined with materials to make the various tool parts. "
 				""
-				"The “Materials and You” book provides information on the first tools the tinkerer make and the tier 1 materials available to the tinkerer."
+				"The “Materials and You” book provides information on the first tools the tinkerer can make as well as the tier 1 materials available to the tinkerer."
 			]
 			dependencies: ["47169AB8212BD508"]
 			dependency_requirement: "one_started"
@@ -211,7 +211,7 @@
 			x: 0.0d
 			y: 2.0d
 			description: [
-				"Eventually the tinkerer will want to smelt more than 9 ingots worth of metals, or to create alloys. Towards that end the knowledge of Mighty Smelting will be required."
+				"Eventually the tinkerer will want to smelt more than 9 ingots worth of metals. They may also wish to create various alloys. Towards that end the knowledge of Mighty Smelting will be required."
 				""
 				"This tome begins to explain the Tier 3 materials the tinkerer can use as well as the various abilities that can be added to tools. "
 			]
@@ -339,7 +339,7 @@
 		{
 			x: 5.0d
 			y: 0.0d
-			description: ["Before building tools, the tinkerer needs to build the parts that make up those tools, and the part builder is the block to do that. With the newer version of TiC comes a streamlined set of parts."]
+			description: ["Before building tools, the tinkerer needs to build the parts that make up those tools. The part builder is the block to do that. With the newer version of TiC comes a streamlined set of parts."]
 			dependencies: ["153D64CF717673FD"]
 			id: "2328B550CF3B401C"
 			tasks: [{
@@ -665,7 +665,7 @@
 		{
 			x: 6.5d
 			y: 5.0d
-			description: ["Once the Tinkerer creates a few casts, they quickly realize there should be a place to store all of them, and the Tinkers Cast Chest is there to provide that place."]
+			description: ["Once the Tinkerer creates a few casts, they quickly realize there should be a place to store all of them. The Tinkers Cast Chest is there to provide that place."]
 			dependencies: ["3097BA4EEC6A0FD6"]
 			id: "2D09D3CF2D3C41BC"
 			tasks: [{
@@ -1818,7 +1818,7 @@
 			}
 			x: 6.0d
 			y: -1.5d
-			description: ["The dagger is a fast weapon with lower damage than the sword. It’s specialty however is it can be held in the off hand and used with the right click"]
+			description: ["The dagger is a fast weapon with lower damage than the sword. Its specialty, however, is it can be held in the off hand and used with the right click."]
 			dependencies: ["43EDC38B89D1611F"]
 			id: "0A1F2503E161F0D5"
 			tasks: [
@@ -3041,7 +3041,7 @@
 			title: "Tinkers Shuriken"
 			x: -6.0d
 			y: 0.5d
-			description: ["These Shuriken provide the tinkerer with some ranged damage options with the flint providing good knockback, while the quartz tended to do more damage."]
+			description: ["These Shuriken provide the tinkerer with some ranged damage options with the flint providing good knockback, while the quartz tends to do more damage."]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "14B4D5EECBE75C1D"
 			tasks: [
@@ -3112,7 +3112,7 @@
 			icon: "tconstruct:gold_item_frame"
 			x: -4.5d
 			y: 1.5d
-			description: ["For displaying the more interesting tools the tinkerer has made, the tinkerer has also made a series of different frames to display them in. The different frames have different behaviors."]
+			description: ["The tinkerer has access to various frames where they can put the interesting and unique tools they have created on display! The different frames have different behaviors."]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "688D7FD0E9FFE3A8"
 			tasks: [
@@ -3323,7 +3323,7 @@
 			title: "Nether Grout"
 			x: -2.5d
 			y: 3.0d
-			description: ["As regular grout was to the melter and smeltery, will the tinkerer find nether grout is to the Foundry and Alloyer."]
+			description: ["As regular grout was to the Melter and Smeltery, the tinkerer will find that nether grout is the same to the Foundry and Alloyer."]
 			dependencies: ["6BDF1FD62E49EEBF"]
 			dependency_requirement: "one_completed"
 			id: "76BAE86D90953DD4"
@@ -3362,7 +3362,7 @@
 				""
 				"Secondly, the foundry unlocks material byproducts, meaning chunks of one ore may provide materials of another kind (see JEI recipes involving the foundry controller)."
 				""
-				"Finally, it’s internal buffer is much larger for the same size as the regular smeltery. Combined with the lack of alloying, it allows the tinkerer to store their metals in liquid form."
+				"Finally, its internal buffer is much larger for the same size compared to the regular smeltery. Combined with the lack of alloying, it allows the tinkerer to store their metals in liquid form."
 			]
 			dependencies: ["76BAE86D90953DD4"]
 			id: "2D5128C9C5BB2841"
@@ -3603,7 +3603,7 @@
 			icon: "tconstruct:encyclopedia"
 			x: -3.5d
 			y: 2.5d
-			description: ["given all four tiers of materials spread across all four books. Luckily, with a bit of ingenuity, the tinkerer can combine all four books into a single volume will. Four volumes of information at the tinkerer’s finger tips. "]
+			description: ["Having all four tiers of materials spread across all four books can seem like a bit of a mess. Luckily, with a bit of ingenuity, the tinkerer can combine all four books into a single volume. Four volumes of information at the tinkerer’s finger tips. "]
 			dependencies: ["6BDF1FD62E49EEBF"]
 			id: "1C5427ED9F095712"
 			tasks: [{
