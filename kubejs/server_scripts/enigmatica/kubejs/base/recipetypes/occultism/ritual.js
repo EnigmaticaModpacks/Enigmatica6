@@ -397,10 +397,7 @@ onEvent('recipes', (event) => {
             pentacle_id: 'occultism:possess_foliot',
             item_to_use: { item: 'occultism:datura' },
             entity_to_summon: 'resourcefulbees:otherworldly_bee',
-            ritual_dummy: Item.of(
-                'resourcefulbees:bee_jar',
-                '{Entity:"resourcefulbees:otherworldly_bee",display:{Name:\'{"italic":false,"extra":[{"text":" - "},{"translate":"entity.resourcefulbees.otherworldly_bee"}],"translate":"item.resourcefulbees.bee_jar_filled"}\'},Color:"#002184"}'
-            ).toJson(),
+            ritual_dummy: Item.of('resourcefulbees:bee_jar', '{Entity:"resourcefulbees:otherworldly_bee"').toJson(),
             ingredients: [
                 { item: 'resourcefulbees:silver_honeycomb' },
                 { item: 'resourcefulbees:silver_honeycomb' },
