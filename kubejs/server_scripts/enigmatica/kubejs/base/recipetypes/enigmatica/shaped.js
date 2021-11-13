@@ -493,8 +493,6 @@ onEvent('recipes', (event) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 
-    // Unification type scripts. Consider moving out?
-
     buildWoodVariants.forEach((wood) => {
         if (wood.modId == 'minecraft') {
             return;
@@ -542,31 +540,6 @@ onEvent('recipes', (event) => {
 
         event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
             A: wood.plankBlock
-        });
-
-        event.shaped(Item.of('storagedrawers:oak_full_drawers_1'), ['AAA', ' C ', 'AAA'], {
-            A: wood.plankBlock,
-            C: '#forge:chests'
-        });
-        event.shaped(Item.of('storagedrawers:oak_full_drawers_2', 2), ['ACA', 'AAA', 'ACA'], {
-            A: wood.plankBlock,
-            C: '#forge:chests'
-        });
-        event.shaped(Item.of('storagedrawers:oak_full_drawers_4', 4), ['CAC', 'AAA', 'CAC'], {
-            A: wood.plankBlock,
-            C: '#forge:chests'
-        });
-        event.shaped(Item.of('storagedrawers:oak_half_drawers_1'), ['AAA', ' C ', 'AAA'], {
-            A: wood.slabBlock,
-            C: '#forge:chests'
-        });
-        event.shaped(Item.of('storagedrawers:oak_half_drawers_2', 2), ['ACA', 'AAA', 'ACA'], {
-            A: wood.slabBlock,
-            C: '#forge:chests'
-        });
-        event.shaped(Item.of('storagedrawers:oak_half_drawers_4', 4), ['CAC', 'AAA', 'CAC'], {
-            A: wood.slabBlock,
-            C: '#forge:chests'
         });
     });
 
