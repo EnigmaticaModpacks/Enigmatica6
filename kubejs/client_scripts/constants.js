@@ -453,6 +453,8 @@ const recipesToHide = [
             'botania:mana_spreader',
             'botania:elven_spreader',
             'botania:gaia_spreader',
+            'botania:fel_pumpkin',
+            'botania:blood_pendant',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
@@ -468,6 +470,8 @@ const recipesToHide = [
             'naturesaura:gold_fiber',
             'naturesaura:gold_brick',
             'naturesaura:generator_limit_remover',
+            'naturesaura:shockwave_creator',
+            'naturesaura:death_ring',
 
             'pneumaticcraft:air_compressor',
             'pneumaticcraft:advanced_air_compressor',

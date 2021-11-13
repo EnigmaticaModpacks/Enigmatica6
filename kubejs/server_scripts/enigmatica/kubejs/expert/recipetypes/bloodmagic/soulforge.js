@@ -108,10 +108,10 @@ onEvent('recipes', (event) => {
                 id: 'occultism:crafting/iesnium_pickaxe'
             },
             {
-                inputs: ['occultism:dimensional_matrix', '#botania:runes/helheim', 'occultism:storage_controller_base'],
+                inputs: ['occultism:dimensional_matrix', 'occultism:storage_controller_base'],
                 output: 'occultism:storage_controller',
-                minimumDrain: 1000.0,
-                drain: 200.0,
+                minimumDrain: 32.0,
+                drain: 16.0,
                 id: 'occultism:crafting/storage_controller'
             },
             {
@@ -120,6 +120,13 @@ onEvent('recipes', (event) => {
                 minimumDrain: 1200.0,
                 drain: 200.0,
                 id: 'bloodmagic:soulforge/primitive_crystalline_resonator'
+            },
+            {
+                inputs: ['occultism:otherstone_frame', 'atum:nebu_chain'],
+                output: 'occultism:wormhole_frame',
+                minimumDrain: 16.0,
+                drain: 2.0,
+                id: 'occultism:crafting/wormhole_frame'
             },
 
             /// Patchouli Removals

@@ -8,17 +8,17 @@ onEvent('recipes', (event) => {
             input: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 100 },
             temperature: { min_temp: 373 },
             results: [
-                { fluid: 'mekanism:brine', amount: 8 },
-                { fluid: 'mekanism:brine', amount: 2 }
+                { fluid: 'mekanism:brine', amount: 10 },
+                { fluid: 'mekanism:steam', amount: 90 }
             ],
             id: `${id_prefix}brine`
         },
         {
-            input: { type: 'pneumaticcraft:fluid', fluid: 'mekanism:brine', amount: 100 },
+            input: { type: 'pneumaticcraft:fluid', fluid: 'mekanism:brine', amount: 10 },
             temperature: { min_temp: 373 },
             results: [
-                { fluid: 'mekanism:lithium', amount: 8 },
-                { fluid: 'mekanism:lithium', amount: 2 }
+                { fluid: 'mekanism:lithium', amount: 1 },
+                { fluid: 'mekanism:steam', amount: 9 }
             ],
             id: `${id_prefix}lithium`
         }

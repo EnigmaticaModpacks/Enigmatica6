@@ -91,6 +91,8 @@
 				"Place your sapling last to prevent it from growing before the rest of the ritual is prepared."
 				""
 				"Refer to the Book of Natural Aura for specific instructions on building the ritual."
+				""
+				"Note: Enigmatica 6 has replaced the default saplings used in the Ritual of the Forest as a result of interactions with other mods preventing their growth being detected. The Quark saplings used in their place are always detected and may be found uncommonly in the world with a bit of exploration. They may also be purchased from the Market."
 			]
 			dependencies: ["00000000000000A4"]
 			id: "00000000000000A2"
@@ -100,14 +102,21 @@
 				item: "naturesaura:wood_stand"
 				count: 8L
 			}]
-			rewards: [{
-				id: "000000000000035A"
-				type: "command"
-				title: "Rare Nature's Aura Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "000000000000035A"
+					type: "command"
+					title: "Rare Nature's Aura Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare"
+					player_command: false
+				}
+				{
+					id: "14A7BCABC52C6E6D"
+					type: "item"
+					item: "farmingforblockheads:market"
+				}
+			]
 		}
 		{
 			x: -0.5d

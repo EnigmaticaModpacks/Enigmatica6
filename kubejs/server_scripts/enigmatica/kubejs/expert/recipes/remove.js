@@ -26,13 +26,19 @@ onEvent('recipes', (event) => {
         'botania:mana_infusion/mana_diamond_block',
         'byg:compat/create/black_sand_from_crushing',
 
+        /compactmachines:machine_/,
         /create:pressing\/\w*_ingot/,
+
+        /dankstorage:\w_to_\w/,
+        'dankstorage:dock',
 
         'darkutils:crafting/rune_damage_player',
         'darkutils:crafting/blank_plate',
         /darkutils:crafting\/export_plate/,
 
         'farmersdelight:book_from_canvas',
+
+        'fluxnetworks:fluxcontroller',
 
         'immersiveengineering:crafting/component_iron',
         'immersiveengineering:crafting/component_steel',
@@ -65,6 +71,7 @@ onEvent('recipes', (event) => {
         'mekanism:processing/refined_obsidian/dust/from_ingot',
         'mekanism:osmium_compressor',
         /mekanism:factory/,
+        'mekanism:robit',
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
@@ -95,12 +102,27 @@ onEvent('recipes', (event) => {
 
         'refinedstorage:quartz_enriched_iron',
 
+        'sophisticatedbackpacks:feeding_upgrade',
+        'sophisticatedbackpacks:advanced_feeding_upgrade',
+        'sophisticatedbackpacks:auto_smelting_upgrade',
+        'sophisticatedbackpacks:pump_upgrade',
+        'sophisticatedbackpacks:advanced_pump_upgrade',
+        'sophisticatedbackpacks:xp_pump_upgrade',
+        'sophisticatedbackpacks:compacting_upgrade',
+        'sophisticatedbackpacks:advanced_compacting_upgrade',
+        'sophisticatedbackpacks:tool_swapper_upgrade',
+        'sophisticatedbackpacks:advanced_tool_swapper_upgrade',
+        'sophisticatedbackpacks:refill_upgrade',
+
+        'tanknull:dock',
+
         'tconstruct:smeltery/scorched/scorched_brick',
         'tconstruct:smeltery/scorched/scorched_brick_kiln',
         'tconstruct:smeltery/seared/melter',
         'tconstruct:smeltery/seared/seared_brick',
         'tconstruct:smeltery/seared/seared_brick_kiln',
         'tconstruct:tables/book_substitute',
+        'tconstruct:smeltery/melting/metal/netherite/lodestone',
 
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
 
@@ -174,6 +196,8 @@ onEvent('recipes', (event) => {
         { output: 'botania:mana_spreader', id: 'botania:mana_spreader' },
         { output: 'botania:elven_spreader', id: 'botania:elven_spreader' },
         { output: 'botania:gaia_spreader', id: 'botania:gaia_spreader' },
+        { output: 'botania:fel_pumpkin', id: 'botania:fel_pumpkin' },
+        { output: 'botania:blood_pendant', id: 'botania:blood_pendant' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
@@ -187,6 +211,8 @@ onEvent('recipes', (event) => {
         { output: 'naturesaura:gold_fiber', id: 'naturesaura:gold_fiber' },
         { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
         { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
+        { output: 'naturesaura:shockwave_creator', id: 'naturesaura:shockwave_creator' },
+        { output: 'naturesaura:death_ring', id: 'naturesaura:death_ring' },
 
         { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
         { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },

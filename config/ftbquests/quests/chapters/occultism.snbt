@@ -835,7 +835,7 @@
 			]
 		}
 		{
-			x: 6.0d
+			x: 7.0d
 			y: 1.0d
 			shape: "hexagon"
 			subtitle: "It's Bigger on the Inside!!"
@@ -925,13 +925,10 @@
 		}
 		{
 			icon: "minecraft:end_stone"
-			x: 5.0d
-			y: -1.0d
+			x: 6.0d
+			y: 1.0d
 			shape: "hexagon"
-			dependencies: [
-				"0000000000000DC6"
-				"0000000000000D9E"
-			]
+			dependencies: ["0000000000000D9C"]
 			id: "0000000000000DC4"
 			tasks: [
 				{
@@ -1016,10 +1013,10 @@
 		}
 		{
 			icon: "minecraft:ender_pearl"
-			x: 6.0d
-			y: -1.0d
+			x: 5.0d
+			y: 0.0d
 			shape: "hexagon"
-			dependencies: ["0000000000000DC4"]
+			dependencies: ["0000000000000D9E"]
 			id: "0000000000000DC8"
 			tasks: [
 				{
@@ -1834,7 +1831,7 @@
 		{
 			icon: "cfm:oak_kitchen_sink_light"
 			x: 8.0d
-			y: 1.0d
+			y: 0.5d
 			shape: "hexagon"
 			subtitle: "My job. Toilets 'n boilers, boilers 'n toilets. Plus that one boilin' toilet. Fire me if'n you dare."
 			description: [
@@ -1862,8 +1859,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 1.0d
+			x: 8.0d
+			y: 1.5d
 			shape: "hexagon"
 			description: [
 				"The Greedy Familiar is a great friend to have on your adventures!"
