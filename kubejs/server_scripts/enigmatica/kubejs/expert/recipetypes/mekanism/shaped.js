@@ -732,6 +732,27 @@ onEvent('recipes', (event) => {
                 D: 'rftoolsbase:tablet'
             },
             id: 'mekanism:portable_teleporter'
+        },
+        {
+            output: 'mekanism:formulaic_assemblicator',
+            pattern: ['ABA', 'BCB', 'DED'],
+            key: {
+                A: 'create:electron_tube',
+                B: '#forge:gears/brass',
+                C: 'create:mechanical_crafter',
+                D: '#forge:plates/lead',
+                E: 'thermal:rf_coil'
+            },
+            id: 'mekanism:formulaic_assemblicator'
+        },
+        {
+            output: Item.of('8x mekanism:crafting_formula'),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:paper',
+                B: 'create:electron_tube'
+            },
+            id: 'mekanism:crafting_formula'
         }
     ];
 
