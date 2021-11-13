@@ -23,6 +23,7 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations": [
             {
                 "type": "BLOCK",
@@ -51,7 +52,7 @@
     "SpawnData": {
         "canSpawnInWorld": true,
         "spawnWeight": 12,
-        "biomeWhitelist": "tag:SWAMP",
+        "biomeWhitelist": "tag:SWAMP,UNDERGARDEN",
         "biomeBlacklist": "tag:NETHER,END",
         "minGroupSize": 2,
         "maxGroupSize": 3,

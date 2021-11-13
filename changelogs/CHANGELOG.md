@@ -8,6 +8,12 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Changes/Improvements**
 
+- Bees QOL [\#3703](https://github.com/NillerMedDild/Enigmatica6/pull/3703) ([TemperedFool](https://github.com/TemperedFool))
+    - Adds recipes for Resourceful Bees world-gen Bee Nests
+    - Expands Spawning Biomes for Beeper, Slimey Bee, Zombee, Sandy Bee, Skeleton Bee
+    - Emerald Comb Secondary Product changed to Prismarine Shards
+    - Most bee mutation counts reduced from 10 to 4.
+    - Mutation targets for most bees adjusted - they now target various cobblestones (vanilla, diorite, andesite, granite) or polished basalt. Products produced are generally the appropriate stone ore. Should reduce unintentional mutations.
 - 
 
 ---

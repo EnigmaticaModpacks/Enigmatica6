@@ -24,6 +24,8 @@
         "attackDamage": 2
     },
     "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
         "mutations" : [
           {
             "type": "BLOCK",
@@ -53,9 +55,9 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:MESA,WASTELAND",
+        "biomeWhitelist": "tag:MESA,WASTELAND,UNDERGARDEN",
         "biomeBlacklist": "tag:OCEAN",
-        "lightLevel": "NIGHT",
+        "lightLevel": "ALL",
         "minGroupSize": 2,
         "maxGroupSize": 4,
         "minYLevel": 12,
