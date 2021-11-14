@@ -93,6 +93,11 @@ onEvent('recipes', (event) => {
             filter: { mod: 'framedcompactdrawers' },
             toReplace: '#forge:rods/wooden',
             replaceWith: 'framedblocks:framed_cube'
+        },
+        {
+            filter: { id: 'resourcefulbees:ender_beecon' },
+            toReplace: 'minecraft:ender_pearl',
+            replaceWith: 'naturesaura:token_joy'
         }
     ];
 
