@@ -176,6 +176,8 @@ const itemsToHide = [
     'emendatusenigmatica:molten_utherium_bucket',
     'emendatusenigmatica:molten_regalium_bucket',
     'emendatusenigmatica:molten_iesnium_bucket',
+    /iridium/,
+    /cast_iron/,
 
     'environmental:cherry_pie',
     'environmental:apple_pie',
