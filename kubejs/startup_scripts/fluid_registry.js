@@ -131,6 +131,30 @@ onEvent('fluid.registry', (event) => {
             id: 'pink_ender_slime',
             texture: '0xa504d1',
             display: 'Molten Pink Enderslime'
+        },
+        {
+            type: 'thick',
+            id: 'molten_hardened_glass',
+            texture: '0x535054',
+            display: 'Molten Hardened Glass'
+        },
+        {
+            type: 'thick',
+            id: 'molten_signalum_glass',
+            texture: '0x968274',
+            display: 'Molten Signalum Glass'
+        },
+        {
+            type: 'thick',
+            id: 'molten_lumium_glass',
+            texture: '0x959674',
+            display: 'Molten Lumium Glass'
+        },
+        {
+            type: 'thick',
+            id: 'molten_enderium_glass',
+            texture: '0x356e5b',
+            display: 'Molten Enderium Glass'
         }
     ];
 
