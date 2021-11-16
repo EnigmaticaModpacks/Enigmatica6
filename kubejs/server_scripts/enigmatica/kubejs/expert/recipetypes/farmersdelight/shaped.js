@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'farmersdelight:straw',
-                B: 'minecraft:honeycomb'
+                B: 'resourcefulbees:wax'
             },
             id: 'farmersdelight:canvas'
         },
