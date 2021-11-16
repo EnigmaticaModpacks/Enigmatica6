@@ -191,6 +191,11 @@
 		{
 			x: 1.5d
 			y: 1.5d
+			description: [
+				"While stone tools are easy to repair, moving on to metal and higher tiers of parts are required to harvest deeper materials and deal more damage."
+				""
+				"The Puny Smelting guide instructs the tinkerer as to the higher stats and innate abilities of the tier 2 materials, as well as how to construct the melter in order to cast the tier 2 parts."
+			]
 			dependencies: ["29743F1C8CF559A2"]
 			id: "760FD80EF963D952"
 			tasks: [{
@@ -3112,7 +3117,7 @@
 			icon: "tconstruct:gold_item_frame"
 			x: -4.5d
 			y: 1.5d
-			description: ["The tinkerer has access to various frames where they can put the interesting and unique tools they have created on display! The different frames have different behaviors."]
+			description: ["The tinkerer has access to various frames where they can put the interesting and unique tools they have created on display! The different frames have different behaviors. Check the gadgetry guide for more information."]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "688D7FD0E9FFE3A8"
 			tasks: [
@@ -3501,13 +3506,26 @@
 			dependencies: ["1BECFB61E2216217"]
 			id: "447AF11477C88460"
 			tasks: [{
-				id: "66FE332D06529592"
-				type: "checkmark"
+				id: "7A189C6BAE8AAB90"
+				type: "advancement"
+				title: "Apply a modification to a tinker tool"
+				icon: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+				advancement: "tconstruct:tools/modified"
+				criterion: ""
 			}]
 			rewards: [{
-				id: "3DC6EF5BFA26DC6C"
-				type: "xp"
-				xp: 100
+				id: "53E6B568FDDCCB88"
+				type: "command"
+				title: "Rare Tinkers Loot Chest"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
 			}]
 		}
 		{
@@ -3529,13 +3547,18 @@
 			dependencies: ["155CE535A506F2D4"]
 			id: "713CA45FD351DDDC"
 			tasks: [{
-				id: "2C6F74457338A774"
-				type: "checkmark"
+				id: "5CE846491E77EC1D"
+				type: "item"
+				item: "tconstruct:silky_cloth"
+				count: 5L
 			}]
 			rewards: [{
-				id: "2E4EEEA1B73DEE58"
-				type: "xp"
-				xp: 100
+				id: "104FB75E9793E8FE"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
 			}]
 		}
 		{
