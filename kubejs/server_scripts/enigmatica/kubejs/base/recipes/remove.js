@@ -107,6 +107,7 @@ onEvent('recipes', (event) => {
 
         'industrialforegoing:laser_drill_ore/niter',
         'industrialforegoing:laser_drill_ore/iridium',
+        'industrialforegoing:laser_drill_ore/peridot',
         'industrialforegoing:laser_drill_ore/sapphire',
         'industrialforegoing:laser_drill_ore/ruby',
         'industrialforegoing:laser_drill_ore/ancient_debris',

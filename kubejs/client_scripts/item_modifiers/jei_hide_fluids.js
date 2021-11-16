@@ -35,7 +35,8 @@ onEvent('jei.hide.fluids', (event) => {
         'emendatusenigmatica:molten_regalium',
         'emendatusenigmatica:molten_iesnium',
         'emendatusenigmatica:molten_cast_iron',
-        'emendatusenigmatica:molten_iridium'
+        'emendatusenigmatica:molten_iridium',
+        'emendatusenigmatica:molten_peridot'
     ].forEach((disabledFluid) => {
         if (!Fluid.of(disabledFluid).isEmpty()) {
             event.hide(disabledFluid);
