@@ -209,6 +209,8 @@ onEvent('recipes', (event) => {
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
 
+        'quark:building/crafting/compressed/gunpowder_sack',
+
         'simplefarming:candy',
         'simplefarming:raw_chicken_wings',
 

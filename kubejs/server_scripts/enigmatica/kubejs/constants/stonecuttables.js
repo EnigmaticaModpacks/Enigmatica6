@@ -2363,6 +2363,12 @@ const stonecuttables = [
         ],
         onlyAsOutput: [],
         onlyAsInput: []
+    },
+    {
+        name: 'gunpowder',
+        stones: ['quark:gunpowder_sack', 'thermal:gunpowder_block'],
+        onlyAsOutput: [],
+        onlyAsInput: []
     }
 ];
 
