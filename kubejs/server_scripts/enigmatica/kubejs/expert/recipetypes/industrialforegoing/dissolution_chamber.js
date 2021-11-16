@@ -473,7 +473,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/refined_obsidian',
                 '#forge:ingots/refined_obsidian',
                 '#forge:gears/osmium',
-                '#forge:circuits/advanced',
+                '#forge:circuits/basic',
                 '#forge:gears/osmium'
             ],
             inputFluid: 'industrialforegoing:latex',
@@ -492,7 +492,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/pink_slime',
                 '#forge:ingots/pink_slime',
                 '#forge:gears/compressed_iron',
-                '#forge:circuits/elite',
+                '#forge:circuits/advanced',
                 '#forge:gears/compressed_iron'
             ],
             inputFluid: 'kubejs:pink_ender_slime',
@@ -511,7 +511,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/iesnium',
                 '#forge:ingots/iesnium',
                 '#forge:gears/enderium',
-                '#forge:circuits/ultimate',
+                '#forge:circuits/elite',
                 '#forge:gears/enderium'
             ],
             inputFluid: 'industrialforegoing:ether_gas',
