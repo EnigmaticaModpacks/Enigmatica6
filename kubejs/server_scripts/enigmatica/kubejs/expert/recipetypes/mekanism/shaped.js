@@ -612,12 +612,12 @@ onEvent('recipes', (event) => {
             output: 'mekanism:chemical_washer',
             pattern: ['ABB', 'CDA', 'EFE'],
             key: {
-                A: 'mekanism:ultimate_chemical_tank',
-                B: 'mekanism:ultimate_pressurized_tube',
-                C: 'mekanism:ultimate_fluid_tank',
+                A: 'mekanism:elite_chemical_tank',
+                B: 'mekanism:elite_pressurized_tube',
+                C: 'mekanism:elite_fluid_tank',
                 D: '#industrialforegoing:machine_frame/supreme',
-                E: '#forge:circuits/ultimate',
-                F: 'mekanism:ultimate_induction_provider'
+                E: '#forge:circuits/elite',
+                F: 'mekanism:elite_induction_provider'
             },
             id: 'mekanism:chemical_washer'
         },
