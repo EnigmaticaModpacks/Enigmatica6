@@ -22,9 +22,9 @@
 			dependencies: ["0000000000000A94"]
 			id: "000000000000070E"
 			tasks: [{
-				id: "000000000000070F"
+				id: "77E4B4652B2EF7F1"
 				type: "item"
-				title: "Any forge:beehives/tier_0"
+				title: "Any Bee Nest"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -32,8 +32,6 @@
 						value: "minecraft:beehives"
 					}
 				}
-				consume_items: false
-				only_from_crafting: false
 			}]
 			rewards: [
 				{
@@ -934,7 +932,7 @@
 			icon: "resourcefulbees:mana_honeycomb"
 			x: -10.0d
 			y: -14.0d
-			description: ["Some combs are NOT processed in the centrufge - or are best used elsewhere. When in doubt, check JEI."]
+			description: ["Some combs are NOT processed in the Centrifuge - or are best used elsewhere. When in doubt, check JEI."]
 			dependencies: ["0000000000000A97"]
 			id: "1DFA48325FD10EE9"
 			tasks: [{
@@ -961,6 +959,7 @@
 				""
 				"Nests you have upgraded in-world can be used instead of Tiered Hive Upgrades in recipes that require them; additionally, Tiered Beehives you alread have can be turned into Tiered Hive Upgrades of the same tier."
 			]
+			optional: true
 			id: "46B0BAD934FFB2A9"
 			tasks: [{
 				id: "4DBF1905A99D474C"

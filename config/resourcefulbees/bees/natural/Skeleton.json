@@ -22,6 +22,7 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations": [
             {
                 "type": "BLOCK",
@@ -49,7 +50,7 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:SPOOKY,DEAD,RARE",
+        "biomeWhitelist": "tag:SPOOKY,DEAD,RARE,NETHER",
         "biomeBlacklist": "tag:END,OCEAN",
         "lightLevel": "ANY",
         "minGroupSize": 2,

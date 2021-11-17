@@ -14,6 +14,7 @@
 			y: -6.0d
 			shape: "gear"
 			description: ["Immersive Engineering is a versatile tech mod with a focus on large multiblock structures. You can find more information about anything in the mod in the Engineer's Handbook."]
+			optional: true
 			id: "0000000000000004"
 			tasks: [{
 				id: "0000000000000005"
@@ -76,7 +77,7 @@
 		}
 		{
 			title: "Coke Oven"
-			icon: "immersiveengineering:cokebrick"
+			icon: "immersiveengineering:coke_oven"
 			x: -3.5d
 			y: -3.0d
 			description: ["The Coke Oven is the first important multiblock in IE, made with a 3x3x3 cube of Coke Bricks. This structure can turn coal into coke and wood into charcoal; either operation produces creosote, an important byproduct used for Treated Wood."]
@@ -168,6 +169,7 @@
 		}
 		{
 			title: "Blast Furnace"
+			icon: "immersiveengineering:blast_furnace"
 			x: -3.5d
 			y: -1.5d
 			description: ["The Blast Furnace is used to process iron into steel, using coke or charcoal. This is a critically important structure... unless you get steel another way, anyway."]
@@ -313,7 +315,7 @@
 		}
 		{
 			title: "Crusher"
-			icon: "immersiveengineering:light_engineering"
+			icon: "immersiveengineering:crusher"
 			x: -5.5d
 			y: -0.5d
 			description: [
@@ -365,7 +367,7 @@
 		}
 		{
 			title: "Metal Press"
-			icon: "immersiveengineering:mold_plate"
+			icon: "immersiveengineering:metal_press"
 			x: -1.5d
 			y: -0.5d
 			description: [
@@ -423,7 +425,7 @@
 		}
 		{
 			title: "Improved Blast Furnace"
-			icon: "immersiveengineering:blastbrick_reinforced"
+			icon: "immersiveengineering:advanced_blast_furnace"
 			x: -5.5d
 			y: -1.5d
 			description: [
@@ -457,6 +459,7 @@
 		}
 		{
 			title: "Alloy Kiln"
+			icon: "immersiveengineering:alloy_smelter"
 			x: 0.0d
 			y: -3.0d
 			description: ["The Alloy Kiln is a simple 2x2x2 structure that can smelt different types of metal together to form alloys."]
@@ -478,7 +481,7 @@
 		}
 		{
 			title: "Arc Furnace"
-			icon: "immersiveengineering:storage_steel"
+			icon: "immersiveengineering:arc_furnace"
 			x: -6.5d
 			y: 0.0d
 			description: [
@@ -621,13 +624,7 @@
 		}
 		{
 			title: "Sawmill"
-			icon: {
-				id: "immersiveengineering:sawblade"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "immersiveengineering:sawmill"
 			x: -1.5d
 			y: 0.5d
 			description: [
@@ -696,7 +693,7 @@
 		}
 		{
 			title: "Industrial Squeezer and Fermenter"
-			icon: "immersiveengineering:plantoil_bucket"
+			icon: "immersiveengineering:fermenter"
 			x: -2.5d
 			y: 0.5d
 			description: [
@@ -791,7 +788,7 @@
 		}
 		{
 			title: "Diesel Generator"
-			icon: "immersiveengineering:biodiesel_bucket"
+			icon: "immersiveengineering:diesel_generator"
 			x: -3.5d
 			y: 2.5d
 			description: [
@@ -853,7 +850,7 @@
 		}
 		{
 			title: "Excavator"
-			icon: "minecraft:gold_ore"
+			icon: "immersiveengineering:bucket_wheel"
 			x: -6.5d
 			y: 1.0d
 			description: [
@@ -1017,7 +1014,7 @@
 		}
 		{
 			title: "Workbench Automation"
-			icon: "immersiveengineering:electron_tube"
+			icon: "immersiveengineering:auto_workbench"
 			x: -8.5d
 			y: -1.5d
 			description: [
@@ -1075,7 +1072,7 @@
 		}
 		{
 			title: "Pumpjack"
-			icon: "immersivepetroleum:oil_bucket"
+			icon: "immersivepetroleum:pumpjack"
 			x: -4.5d
 			y: 0.5d
 			description: [
@@ -1155,7 +1152,7 @@
 		}
 		{
 			title: "Distillation Tower"
-			icon: "immersivepetroleum:diesel_bucket"
+			icon: "immersivepetroleum:distillationtower"
 			x: -4.5d
 			y: 1.5d
 			description: [
@@ -1220,7 +1217,7 @@
 		}
 		{
 			title: "Refinery"
-			icon: "immersiveengineering:biodiesel_bucket"
+			icon: "immersiveengineering:refinery"
 			x: -2.5d
 			y: 1.5d
 			description: [
@@ -1307,7 +1304,7 @@
 		}
 		{
 			title: "Sulfur Recovery Unit"
-			icon: "immersivepetroleum:diesel_bucket"
+			icon: "immersivepetroleum:hydrotreater"
 			x: -3.5d
 			y: 1.0d
 			description: [

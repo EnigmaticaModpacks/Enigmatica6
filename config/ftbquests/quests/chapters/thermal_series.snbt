@@ -19,6 +19,7 @@
 				""
 				"~MuteTiefling"
 			]
+			optional: true
 			id: "00000000000003A2"
 			tasks: [{
 				id: "00000000000003A3"
@@ -56,7 +57,7 @@
 				{
 					id: "00000000000004B8"
 					type: "item"
-					title: "Any minecraft:coals"
+					title: "Any Coal"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -526,7 +527,7 @@
 			title: "Exotic Elements"
 			x: 2.0d
 			y: -1.0d
-			subtitle: "Our Powers Combined"
+			subtitle: "Everything changed when the Fire Elementals attacked"
 			description: ["Simple metallurgy can only go so far. At a certain point, more exotic materials are required. Seek out the elemental creatures that make their homes in the world's most extreme environments."]
 			dependencies: ["00000000000003A3"]
 			id: "00000000000004DD"
@@ -565,7 +566,11 @@
 			title: "RF Capacity and Transfer Augments"
 			x: 3.0d
 			y: 2.5d
-			description: ["Better storage or faster discharge? Consider the application carefully when choosing between these augments. "]
+			description: [
+				"Better storage or faster discharge? "
+				""
+				"Consider the application carefully when choosing between these augments. "
+			]
 			dependencies: ["00000000000003A3"]
 			id: "00000000000004E2"
 			tasks: [{
@@ -609,12 +614,11 @@
 			description: [
 				"Integral Components generally upgrade all stats of the machine or tool they are installed in. "
 				""
+				"Only the highest tier counts, so only install one at a time. "
+				""
 				"More advanced versions will require more exotic materials."
 			]
-			dependencies: [
-				"00000000000004B0"
-				"00000000000003A3"
-			]
+			dependencies: ["00000000000003A3"]
 			id: "00000000000004E6"
 			tasks: [{
 				id: "0000000000000F8D"
@@ -873,7 +877,11 @@
 		{
 			x: 4.0d
 			y: 2.0d
-			description: ["Sometimes a job just needs to get done now and damn the costs. Flux Linkage Amplifiers greatly enhance the speed of machines though they reduce energy efficiency in turn. "]
+			description: [
+				"Sometimes a job just needs to get done now and damn the costs. "
+				""
+				"Flux Linkage Amplifiers greatly enhance the speed of machines though they reduce energy efficiency in turn."
+			]
 			dependencies: ["00000000000003A3"]
 			id: "0000000000000F9D"
 			tasks: [{

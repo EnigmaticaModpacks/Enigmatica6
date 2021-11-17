@@ -57,6 +57,12 @@ onEvent('recipes', (event) => {
             fluid: Fluid.of('pneumaticcraft:memory_essence', 72000),
             output: 'kubejs:memory_ultimate_filled',
             id: `${id_prefix}memory_ultimate_filled`
+        },
+        {
+            input: 'gunswithoutroses:iron_bullet',
+            fluid: Fluid.of('tconstruct:blazing_blood', 5),
+            output: 'gunswithoutroses:blaze_bullet',
+            id: `${id_prefix}blaze_bullet`
         }
     ];
     recipes.forEach((recipe) => {

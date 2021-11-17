@@ -264,7 +264,7 @@ onEvent('recipes', (event) => {
                 B: 'immersiveengineering:coil_lv',
                 C: 'immersiveengineering:electron_tube',
                 D: 'immersiveengineering:wirecoil_redstone',
-                E: ['immersiveengineering:logic_circuit', 'pneumaticcraft:printed_circuit_board'],
+                E: 'pneumaticcraft:advanced_pcb',
                 F: 'immersiveengineering:current_transformer',
                 G: 'xnet:controller'
             },
@@ -298,6 +298,256 @@ onEvent('recipes', (event) => {
                 G: 'engineersdecor:thick_steel_pole_head'
             },
             id: 'mekanismgenerators:generator/wind'
+        },
+        {
+            output: 'mekanismgenerators:rotational_complex',
+            pattern: ['ABCCC', 'BDBFC', 'CBGBC', 'CEBDB', 'CCCBA'],
+            key: {
+                A: '#forge:circuits/elite',
+                B: '#forge:gears/compressed_iron',
+                C: '#xnet:cables',
+                D: '#mekanism:alloys/reinforced',
+                E: 'rftoolscontrol:node',
+                F: 'rftoolsbase:tablet',
+                G: '#industrialforegoing:machine_frame/advanced'
+            },
+            id: 'mekanismgenerators:rotational_complex'
+        },
+        {
+            output: 'mekanismgenerators:fusion_reactor_controller',
+            pattern: ['  ABA  ', ' ACDCA ', 'ACEFECA', 'BDGHGDB', 'ACEIECA', ' ACDCA ', '  ABA  '],
+            key: {
+                A: 'mekanismgenerators:reactor_glass',
+                B: '#xnet:cables',
+                C: 'mekanismgenerators:fusion_reactor_frame',
+                D: '#xnet:advanced_connectors',
+                E: 'mekanism:ultimate_chemical_tank',
+                F: 'rftoolsutility:environmental_controller',
+                G: '#forge:circuits/ultimate',
+                H: 'mekanism:ultimate_fluid_tank',
+                I: 'rftoolsbase:tablet'
+            },
+            id: 'mekanismgenerators:reactor/controller'
+        },
+        {
+            output: 'mekanism:digital_miner',
+            pattern: ['AAAAA', 'BCDCB', 'EFGHE', 'AAAAA', 'II II'],
+            key: {
+                A: '#forge:sheetmetals/steel',
+                B: 'pneumaticcraft:smart_chest',
+                C: 'integrateddynamics:part_display_panel',
+                D: 'rftoolsbase:tablet',
+                E: 'integratedtunnels:part_importer_energy',
+                F: 'rftoolsutility:matter_transmitter',
+                G: 'mekanism:robit',
+                H: 'rftoolsutility:matter_receiver',
+                I: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanism:digital_miner'
+        },
+        {
+            output: 'mininggadgets:mininggadget_simple',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: 'industrialforegoing:laser_lens2',
+                G: 'thermal:upgrade_augment_2',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'mininggadgets:mininggadget_simple'
+        },
+        {
+            output: 'mininggadgets:mininggadget_fancy',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: 'industrialforegoing:laser_lens6',
+                G: 'thermal:upgrade_augment_2',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'mininggadgets:mininggadget_fancy'
+        },
+        {
+            output: 'mininggadgets:mininggadget',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: 'industrialforegoing:laser_lens3',
+                G: 'thermal:upgrade_augment_2',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'mininggadgets:mininggadget'
+        },
+        {
+            output: 'thermal:flux_saw',
+            pattern: [' A  ', 'BACD', 'AEFD', ' GCC'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'thermal:saw_blade',
+                C: 'mekanism:hdpe_sheet',
+                D: 'betterendforge:leather_stripe',
+                E: 'create:precision_mechanism',
+                F: 'thermal:flux_capacitor',
+                G: 'mekanism:hdpe_stick'
+            },
+            id: 'thermal:flux_saw'
+        },
+        {
+            output: 'thermal:flux_drill',
+            pattern: ['B   ', ' AC ', ' EFD', ' GCD'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'thermal:drill_head',
+                C: 'mekanism:hdpe_sheet',
+                D: 'betterendforge:leather_stripe',
+                E: 'create:precision_mechanism',
+                F: 'thermal:flux_capacitor',
+                G: 'mekanism:hdpe_stick'
+            },
+            id: 'thermal:flux_drill'
+        },
+        {
+            output: 'fluxnetworks:flux_controller',
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CHIHC', 'ABBBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: 'fluxnetworks:flux_block',
+                C: 'botania:bifrost_perm',
+                D: '#botania:runes/air',
+                E: '#botania:runes/asgard',
+                F: 'thermal:lightning_charge',
+                G: 'powah:player_transmitter_nitro',
+                H: '#botania:runes/earth',
+                I: '#forge:circuits/ultimate'
+            },
+            id: `${id_prefix}flux_controller`
+        },
+        {
+            output: 'gunswithoutroses:iron_gun',
+            pattern: ['  A ', 'BCDE', ' FGH'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'immersiveengineering:gunpart_barrel',
+                C: 'immersiveengineering:gunpart_drum',
+                D: 'create:precision_mechanism',
+                E: 'immersiveengineering:gunpart_hammer',
+                F: '#forge:treated_wood_slab',
+                G: '#forge:nuggets/steel',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'gunswithoutroses:iron_gun'
+        },
+        {
+            output: 'gunswithoutroses:gold_gun',
+            pattern: ['  A ', 'BCDE', ' FGH'],
+            key: {
+                A: '#forge:plates/gold',
+                B: 'immersiveengineering:gunpart_barrel',
+                C: 'immersiveengineering:gunpart_drum',
+                D: 'create:precision_mechanism',
+                E: 'immersiveengineering:gunpart_hammer',
+                F: '#forge:treated_wood_slab',
+                G: '#forge:nuggets/steel',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'gunswithoutroses:gold_gun'
+        },
+        {
+            output: 'gunswithoutroses:diamond_shotgun',
+            pattern: ['  ABA ', 'CCCDEF', 'CCCDEF', ' I GH '],
+            key: {
+                A: '#forge:plates/steel',
+                B: '#forge:plates/diamond',
+                C: 'pneumaticcraft:cannon_barrel',
+                D: 'immersiveengineering:gunpart_hammer',
+                E: 'create:precision_mechanism',
+                F: '#forge:treated_wood',
+                G: '#forge:nuggets/steel',
+                H: 'immersiveengineering:wooden_grip',
+                I: '#forge:wires/steel'
+            },
+            id: 'gunswithoutroses:diamond_shotgun'
+        },
+        {
+            output: 'gunswithoutroses:diamond_sniper',
+            pattern: ['   ABA ', 'CCCCDEF', ' IIIGHF'],
+            key: {
+                A: '#forge:plates/diamond',
+                B: 'immersiveengineering:toolupgrade_railgun_scope',
+                C: 'immersiveengineering:gunpart_barrel',
+                D: 'immersiveengineering:gunpart_hammer',
+                E: 'create:precision_mechanism',
+                F: '#forge:treated_wood',
+                G: '#forge:nuggets/steel',
+                H: 'immersiveengineering:wooden_grip',
+                I: '#forge:plates/steel'
+            },
+            id: 'gunswithoutroses:diamond_sniper'
+        },
+        {
+            output: 'gunswithoutroses:diamond_gatling',
+            pattern: ['   AAA ', 'BBBCDCE', 'BBBFGHE', 'III JK '],
+            key: {
+                A: '#forge:inlays/pewter',
+                B: 'immersiveengineering:gunpart_barrel',
+                C: 'create:encased_chain_drive',
+                D: 'create:adjustable_chain_gearshift',
+                E: '#forge:treated_wood',
+                F: 'immersiveengineering:gunpart_drum',
+                G: 'create:precision_mechanism',
+                H: '#forge:gears/steel',
+                I: '#forge:wires/steel',
+                J: '#forge:nuggets/steel',
+                K: 'immersiveengineering:wooden_grip'
+            },
+            id: 'gunswithoutroses:diamond_gatling'
+        },
+        {
+            output: 'meetyourfight:phantasmal_rifle',
+            pattern: ['   ABA ', 'CCCCDEF', ' IIIGHF'],
+            key: {
+                A: '#forge:inlays/arcane_gold',
+                B: 'meetyourfight:phantoplasm',
+                C: 'immersiveengineering:gunpart_barrel',
+                D: 'immersiveengineering:gunpart_hammer',
+                E: 'create:precision_mechanism',
+                F: '#forge:treated_wood',
+                G: '#forge:nuggets/steel',
+                H: 'immersiveengineering:wooden_grip',
+                I: '#forge:plates/electrum'
+            },
+            id: 'meetyourfight:phantasmal_rifle'
+        },
+        {
+            output: 'meetyourfight:cocktail_shotgun',
+            pattern: ['   AAA ', 'BBBCDCE', 'BBBFGHE', 'ILI JK '],
+            key: {
+                A: '#forge:inlays/pewter',
+                B: 'immersiveengineering:gunpart_barrel',
+                C: 'create:encased_chain_drive',
+                D: 'create:adjustable_chain_gearshift',
+                E: '#forge:treated_wood',
+                F: 'immersiveengineering:gunpart_drum',
+                G: 'create:precision_mechanism',
+                H: '#forge:gears/enderium',
+                I: '#forge:wires/steel',
+                J: '#forge:nuggets/steel',
+                K: 'immersiveengineering:wooden_grip',
+                L: 'meetyourfight:fortunes_favor'
+            },
+            id: 'meetyourfight:cocktail_shotgun'
         }
     ];
 
@@ -337,11 +587,33 @@ onEvent('recipes', (event) => {
         });
     });
 
+    const compactmachines = [
+        { tier: 'tiny', comb: 'forest' },
+        { tier: 'small', comb: 'aluminum' },
+        { tier: 'normal', comb: 'zinc' },
+        { tier: 'large', comb: 'uranium' },
+        { tier: 'giant', comb: 'cobalt' },
+        { tier: 'maximum', comb: 'industrious' }
+    ];
+
+    compactmachines.forEach((compactmachine) => {
+        recipes.push({
+            output: `compactmachines:machine_${compactmachine.tier}`,
+            pattern: ['AABAA', 'ACCCA', 'DCECF', 'ACCCA', 'AAGAA'],
+            key: {
+                A: 'compactmachines:wall',
+                B: 'portality:module_energy',
+                C: `resourcefulbees:${compactmachine.comb}_honeycomb_block`,
+                D: 'portality:module_items',
+                E: 'portality:controller',
+                F: 'portality:module_fluids',
+                G: 'portality:module_interdimensional'
+            },
+            id: `${id_prefix}compact_machine_${compactmachine.tier}`
+        });
+    });
+
     recipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key);
-        }
+        event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

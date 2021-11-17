@@ -3,9 +3,6 @@
 [blocks]
 
 	[blocks.globe]
-		#chanche of finding a globe in a shipwreck treasure chest.
-		#Range: 0.0 ~ 1.0
-		shipwreck_treasure_chance = 0.25
 		#how many globe trades to give to the wandering trader. This will effectively increase the chance of him having a globe trader. Increase this if you have other mods that add stuff to that trader
 		#Range: 0 ~ 50
 		chance = 2
@@ -309,6 +306,8 @@
 		enchanted_book_power = 1.334
 		#Allow all books to be placed both vertically and horizontally
 		mixed_books = false
+		#Allows written books to be placeable (will need shift clicking)
+		written_books = false
 
 [items]
 

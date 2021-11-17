@@ -41,7 +41,8 @@ onEvent('item.registry', (event) => {
         'memory_elite_empty',
         'memory_elite_filled',
         'memory_ultimate_empty',
-        'memory_ultimate_filled'
+        'memory_ultimate_filled',
+        'scented_stick'
     ];
 
     const ritualDummies = [
@@ -57,7 +58,19 @@ onEvent('item.registry', (event) => {
         'craft_soulscythe',
         'craft_attunement_altar',
         'craft_mana_collector',
-        'craft_logic_director'
+        'craft_logic_director',
+        'craft_robit',
+        'craft_feeding_upgrade',
+        'craft_advanced_feeding_upgrade',
+        'craft_auto_smelting_upgrade',
+        'craft_pump_upgrade',
+        'craft_advanced_pump_upgrade',
+        'craft_xp_pump_upgrade',
+        'craft_compacting_upgrade',
+        'craft_advanced_compacting_upgrade',
+        'craft_tool_swapper_upgrade',
+        'craft_advanced_tool_swapper_upgrade',
+        'craft_refill_upgrade'
     ];
 
     const reusableItemTextures = [

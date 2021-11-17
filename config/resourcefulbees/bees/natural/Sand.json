@@ -22,6 +22,7 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations": [
             {
                 "type": "BLOCK",
@@ -50,7 +51,7 @@
     "SpawnData": {
         "canSpawnInWorld": true,
         "spawnWeight": 12,
-        "biomeWhitelist": "tag:BEACH,SANDY",
+        "biomeWhitelist": "tag:BEACH,SANDY,ATUM",
         "biomeBlacklist": "tag:NETHER,END,OCEAN",
         "minGroupSize": 2,
         "maxGroupSize": 3,

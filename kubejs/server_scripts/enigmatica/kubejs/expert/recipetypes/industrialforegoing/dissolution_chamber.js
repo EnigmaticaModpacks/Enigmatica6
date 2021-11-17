@@ -4,27 +4,6 @@ onEvent('recipes', (event) => {
     }
     const id_prefix = 'enigmatica:expert/industrialforegoing/dissolution_chamber/';
     const recipes = [
-        /*
-        {
-            inputs: [
-                '', // top left
-                '', // top 
-                '', // top right
-                '', // left
-                '', // right
-                '', // bottom left
-                '', // bottom
-                ''  // bottom right
-            ],
-            inputFluid: '', // optional
-            inputFluidAmount: 0, // leave at 0 for no fluid
-            processingTime: 50,
-            outputItem: { item: '', count: 1 },
-            outputFluid: '', // optional
-            outputFluidAmount: 0, // leave at 0 for no fluid
-            id: ''
-        }
-        */
         {
             inputs: [
                 'immersiveengineering:tesla_coil',
@@ -266,8 +245,282 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:upgrade/anchor'
+        },
+        {
+            inputs: [
+                '#forge:pellets/polonium',
+                '#industrialforegoing:machine_frame/supreme',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/ultimate',
+                'mekanism:hdpe_sheet'
+            ],
+            inputFluid: 'immersiveengineering:concrete',
+            inputFluidAmount: 1000,
+            processingTime: 6000,
+            outputItem: { item: 'mekanism:sps_casing', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:sps_casing'
+        },
+        {
+            inputs: [
+                'mekanism:ultimate_induction_cell',
+                'immersiveengineering:coil_mv',
+                'mekanism:ultimate_induction_cell',
+                '#forge:circuits/ultimate',
+                '#forge:circuits/ultimate',
+                '#forge:pellets/polonium',
+                'mekanism:laser',
+                '#forge:pellets/polonium'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 1000,
+            processingTime: 6000,
+            outputItem: { item: 'mekanism:supercharged_coil', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:supercharged_coil'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                '#industrialforegoing:machine_frame/simple',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet'
+            ],
+            inputFluid: 'immersiveengineering:concrete',
+            inputFluidAmount: 4000,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:induction_casing', count: 4 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:induction/casing'
+        },
+        {
+            inputs: [
+                'mekanismgenerators:electromagnetic_coil',
+                '#forge:pellets/polonium',
+                '#mekanism:alloys/atomic',
+                'powah:dielectric_casing',
+                'rftoolscontrol:node',
+                '#xnet:cables',
+                '#xnet:cables',
+                '#xnet:cables'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 100,
+            processingTime: 600,
+            outputItem: { item: 'mekanismgenerators:fusion_reactor_frame', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanismgenerators:reactor/frame'
+        },
+        {
+            inputs: [
+                'mekanism:steel_casing',
+                'immersiveengineering:wire_steel',
+                'immersiveengineering:wire_steel',
+                'immersiveengineering:wire_steel',
+                'immersiveengineering:wire_steel'
+            ],
+            inputFluid: 'immersiveengineering:concrete',
+            inputFluidAmount: 1000,
+            processingTime: 600,
+            outputItem: { item: 'mekanismgenerators:fission_reactor_casing', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanismgenerators:fission_reactor/casing'
+        },
+        {
+            inputs: ['#forge:ingots/lumium'],
+            inputFluid: 'thermal:glowstone',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:ingot_refined_glowstone', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:processing/refined_glowstone/ingot/from_dust'
+        },
+        {
+            inputs: [
+                '#forge:circuits/basic',
+                'mekanism:module_base',
+                '#forge:circuits/basic',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_glowstone',
+                '#forge:ingots/refined_glowstone'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:basic_tier_installer', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:tier_installer/basic'
+        },
+        {
+            inputs: [
+                '#forge:circuits/advanced',
+                'mekanism:module_base',
+                '#forge:circuits/advanced',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_glowstone',
+                '#forge:ingots/refined_glowstone'
+            ],
+            inputFluid: 'mekanism:lithium',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:advanced_tier_installer', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:tier_installer/advanced'
+        },
+        {
+            inputs: [
+                '#forge:circuits/elite',
+                'mekanism:module_base',
+                '#forge:circuits/elite',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_glowstone',
+                '#forge:ingots/refined_glowstone'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:elite_tier_installer', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:tier_installer/elite'
+        },
+        {
+            inputs: [
+                '#forge:circuits/ultimate',
+                'mekanism:module_base',
+                '#forge:circuits/ultimate',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_glowstone',
+                '#forge:ingots/refined_glowstone'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:ultimate_tier_installer', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:tier_installer/ultimate'
+        },
+        {
+            inputs: ['sophisticatedbackpacks:upgrade_base', 'occultism:satchel'],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'sophisticatedbackpacks:inception_upgrade', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'sophisticatedbackpacks:inception_upgrade'
+        },
+        {
+            inputs: [
+                'refinedstorage:range_upgrade',
+                'refinedstorage:range_upgrade',
+                'refinedstorage:range_upgrade',
+                'xnet:antenna_dish',
+                'xnet:antenna_dish',
+                '#forge:ingots/aeternium',
+                '#forge:ingots/aeternium',
+                '#forge:ingots/aeternium'
+            ],
+            inputFluid: 'tconstruct:molten_slimesteel',
+            inputFluidAmount: 1296,
+            processingTime: 400,
+            outputItem: { item: 'rsinfinitybooster:infinity_card', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rsinfinitybooster:infinity_card'
+        },
+        {
+            inputs: [
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 1296,
+            processingTime: 400,
+            outputItem: { item: 'rsinfinitybooster:dimension_card', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rsinfinitybooster:dimension_card'
         }
+        /*
+        {
+            inputs: [
+                '', // top left
+                '', // top 
+                '', // top right
+                '', // left
+                '', // right
+                '', // bottom left
+                '', // bottom
+                ''  // bottom right
+            ],
+            inputFluid: '', // optional
+            inputFluidAmount: 0, // leave at 0 for no fluid
+            processingTime: 50,
+            outputItem: { item: '', count: 1 },
+            outputFluid: '', // optional
+            outputFluidAmount: 0, // leave at 0 for no fluid
+            id: ''
+        }
+        */
     ];
+
+    colors.forEach((color) => {
+        recipes.push(
+            {
+                inputs: [
+                    'atum:fertile_soil',
+                    'mythicbotany:aquapanthus',
+                    'atum:fertile_soil',
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`
+                ],
+                inputFluid: 'industrialforegoing:sewage',
+                inputFluidAmount: 8000,
+                processingTime: 600,
+                outputItem: { item: `botanypots:${color}_botany_pot`, count: 1 },
+                outputFluid: '',
+                outputFluidAmount: 0,
+                id: `botanypots:crafting/${color}_botany_pot`
+            },
+            {
+                inputs: [`botanypots:${color}_botany_pot`, 'ars_nouveau:sylph_charm', 'naturesaura:grated_chute'],
+                inputFluid: 'materialis:molten_fairy',
+                inputFluidAmount: 1296,
+                processingTime: 600,
+                outputItem: { item: `botanypots:hopper_${color}_botany_pot`, count: 1 },
+                outputFluid: '',
+                outputFluidAmount: 0,
+                id: `botanypots:crafting/hopper_${color}_botany_pot`
+            }
+        );
+    });
 
     recipes.forEach((recipe) => {
         let ingredients = [];

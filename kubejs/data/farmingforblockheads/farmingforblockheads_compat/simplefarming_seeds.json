@@ -1,0 +1,23 @@
+{
+    "modId": "supplementaries",
+    "group": {
+        "name": "Simple Farming Seeds",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "minecraft:emerald"
+        },
+        "defaultCategory": "farmingforblockheads:seeds"
+    },
+    "customEntries": [
+        {
+            "output": {
+                "item": "simplefarming:cumin_seeds"
+            }
+        },
+        {
+            "output": {
+                "item": "simplefarming:quinoa_seeds"
+            }
+        }
+    ]
+}

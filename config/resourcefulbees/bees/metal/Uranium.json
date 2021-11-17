@@ -23,11 +23,12 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations": [
             {
                 "type": "BLOCK",
-                "inputID": "tag:forge:stone",
-                "outputs": [{ "outputID": "emendatusenigmatica:uranium_ore", "weight": 10 }]
+                "inputID": "create:diorite_cobblestone",
+                "outputs": [{ "outputID": "emendatusenigmatica:uranium_diorite_ore", "weight": 10 }]
             }
         ]
     },

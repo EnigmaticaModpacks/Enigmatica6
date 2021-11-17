@@ -116,10 +116,10 @@ onEvent('recipes', (event) => {
         entity: 'minecraft:empty',
         type: 'industrialforegoing:laser_drill_fluid'
     });
-    
+
     event.recipes.industrialforegoing.laser_drill_fluid({
         type: 'industrialforegoing.laser_drill_fluid',
-        output: '{FluidName:"industrialforegoing:pink_slime",Amount:10}',
+        output: '{FluidName:"industrialforegoing:pink_slime",Amount:50}',
         rarity: [
             {
                 whitelist: {},

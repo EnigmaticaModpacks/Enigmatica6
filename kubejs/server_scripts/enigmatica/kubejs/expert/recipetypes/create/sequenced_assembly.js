@@ -220,6 +220,25 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}logic_cable`
+        },
+        {
+            input: 'immersiveengineering:insulating_glass',
+            outputs: ['immersiveengineering:circuit_board'],
+            transitionalItem: 'immersiveengineering:insulating_glass',
+            loops: 1,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['immersiveengineering:insulating_glass', '#forge:plates/copper'],
+                    output: 'immersiveengineering:insulating_glass'
+                },
+                {
+                    type: 'deploying',
+                    input: ['immersiveengineering:insulating_glass', 'powah:dielectric_paste'],
+                    output: 'immersiveengineering:insulating_glass'
+                }
+            ],
+            id: `${id_prefix}backplane_alternate`
         }
     ];
 
@@ -795,30 +814,30 @@ onEvent('recipes', (event) => {
     armorTypes.forEach((armorType) => {
         armorType.armors.forEach((armor) => {
             recipes.push({
-                input: armor.base,
+                input: Item.of(armor.base, '{Damage:0}').weakNBT(),
                 outputs: [armor.result],
-                transitionalItem: armor.base,
+                transitionalItem: armor.material,
                 loops: armorType.loops,
                 sequence: [
                     {
                         type: 'deploying',
-                        input: [armor.base, armor.material],
-                        output: armor.base
+                        input: [armor.material, armor.material],
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     }
                 ],
                 id: armor.id

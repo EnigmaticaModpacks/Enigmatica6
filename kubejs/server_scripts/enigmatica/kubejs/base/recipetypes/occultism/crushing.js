@@ -346,14 +346,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}red_sand_from_red_rock`
         },
         {
-            input: { item: 'minecraft:basalt' },
-            output: 'byg:black_sand',
-            count: 1,
-            time: 200,
-            ignore_crushing_multiplier: true,
-            id: `${id_prefix}black_sand_from_basalt`
-        },
-        {
             input: { item: 'minecraft:terracotta' },
             output: 'minecraft:red_sand',
             count: 1,

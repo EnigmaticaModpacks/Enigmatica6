@@ -17,6 +17,27 @@ onEvent('recipes', (event) => {
             infusionInput: 'mekanism:redstone',
             infusionAmount: 80,
             id: 'refinedstorage:stack_upgrade'
+        },
+        {
+            output: 'mekanismgenerators:reactor_glass',
+            input: 'mekanism:structural_glass',
+            infusionInput: 'mekanism:refined_obsidian',
+            infusionAmount: 320,
+            id: 'mekanismgenerators:reactor/glass'
+        },
+        {
+            output: 'immersiveengineering:rockcutter',
+            input: 'immersiveengineering:sawblade',
+            infusionInput: 'mekanism:diamond',
+            infusionAmount: 80,
+            id: 'immersiveengineering:crafting/rockcutter'
+        },
+        {
+            output: 'mekanism:ingot_refined_obsidian',
+            input: '#forge:ingots/osmium',
+            infusionInput: 'mekanism:refined_obsidian',
+            infusionAmount: 160,
+            id: 'mekanism:processing/refined_obsidian/ingot/from_dust'
         }
     ];
 

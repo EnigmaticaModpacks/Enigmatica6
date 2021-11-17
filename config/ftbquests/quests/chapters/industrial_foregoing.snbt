@@ -15,6 +15,7 @@
 			y: -9.5d
 			description: ["This mod provides a wide range of machines to automate various tasks. This questline introduces some key machines (but not ALL the machines, as there are quite a few)."]
 			size: 1.5d
+			optional: true
 			id: "000000000000004A"
 			tasks: [{
 				id: "0000000000000058"
@@ -35,7 +36,23 @@
 			tasks: [{
 				id: "000000000000004C"
 				type: "item"
-				item: "industrialforegoing:fluid_extractor"
+				title: "Fluid Extractor"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:fluid_extractor"
+								Count: 1b
+							}
+							{
+								id: "thermal:device_tree_extractor"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -83,7 +100,23 @@
 			tasks: [{
 				id: "0000000000000050"
 				type: "item"
-				item: "industrialforegoing:latex_processing_unit"
+				title: "Latex Processing Unit"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:latex_processing_unit"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_refinery"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0000000000000629"

@@ -68,6 +68,22 @@ onEvent('recipes', (event) => {
                 catalyst: { item: 'naturesaura:conversion_catalyst' },
                 aura: 30000,
                 time: 250
+            },
+            {
+                input: 'minecraft:flint',
+                output: 'minecraft:gunpowder',
+                aura_type: 'naturesaura:nether',
+                catalyst: { item: 'naturesaura:conversion_catalyst' },
+                aura: 10000,
+                time: 60
+            },
+            {
+                input: 'supplementaries:flint_block',
+                output: 'thermal:gunpowder_block',
+                aura_type: 'naturesaura:nether',
+                catalyst: { item: 'naturesaura:conversion_catalyst' },
+                aura: 80000,
+                time: 480
             }
         ]
     };
