@@ -271,13 +271,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'mekanism:laser',
-            pattern: [' A ', 'BCB', 'DED'],
+            pattern: [' A ', 'BAB', 'CDC'],
             key: {
-                A: 'industrialforegoing:laser_lens14',
+                A: '#forge:gems/nitro',
                 B: '#mekanism:alloys/infused',
-                C: '#forge:gems/nitro',
-                D: 'mekanism:advanced_induction_cell',
-                E: '#industrialforegoing:machine_frame/supreme'
+                C: 'mekanism:advanced_induction_cell',
+                D: '#industrialforegoing:machine_frame/simple'
             },
             id: 'mekanism:laser'
         },
