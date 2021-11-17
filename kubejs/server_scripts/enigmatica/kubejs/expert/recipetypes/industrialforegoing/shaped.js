@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'industrialforegoing:machine_frame_pity',
             pattern: ['CDC', 'ABA', 'CDC'],
@@ -26,14 +26,45 @@ onEvent('recipes', (event) => {
                 D: 'immersiveengineering:component_iron'
             },
             id: 'industrialforegoing:machine_frame_pity'
+        },
+        {
+            output: 'industrialforegoing:laser_drill',
+            pattern: ['ABA', 'CDC', 'ACA'],
+            key: {
+                A: '#forge:plastic',
+                B: 'mekanismgenerators:laser_focus_matrix',
+                C: '#forge:gears/enderium',
+                D: 'mekanism:laser'
+            },
+            id: 'industrialforegoing:laser_drill'
+        },
+        {
+            output: 'industrialforegoing:ore_laser_base',
+            pattern: ['ABA', 'CDC', 'BEB'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:gears/lumium',
+                C: 'thermal:enderium_glass',
+                D: '#industrialforegoing:machine_frame/supreme',
+                E: 'pneumaticcraft:smart_chest'
+            },
+            id: 'industrialforegoing:ore_laser_base'
+        },
+        {
+            output: 'industrialforegoing:fluid_laser_base',
+            pattern: ['ABA', 'CDC', 'BEB'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:gears/lumium',
+                C: 'thermal:enderium_glass',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: 'pneumaticcraft:large_tank'
+            },
+            id: 'industrialforegoing:fluid_laser_base'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

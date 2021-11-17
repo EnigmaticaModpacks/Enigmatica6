@@ -464,6 +464,63 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'rsinfinitybooster:dimension_card'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#industrialforegoing:machine_frame/pity',
+                '#forge:plastic',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_obsidian',
+                '#forge:gears/osmium',
+                '#forge:circuits/basic',
+                '#forge:gears/osmium'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 250,
+            processingTime: 300,
+            outputItem: { item: 'industrialforegoing:machine_frame_simple', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/simple_machine_frame'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#industrialforegoing:machine_frame/simple',
+                '#forge:plastic',
+                '#forge:ingots/pink_slime',
+                '#forge:ingots/pink_slime',
+                '#forge:gears/compressed_iron',
+                '#forge:circuits/advanced',
+                '#forge:gears/compressed_iron'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 1000,
+            processingTime: 300,
+            outputItem: { item: 'industrialforegoing:machine_frame_advanced', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/advanced_machine_frame'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#industrialforegoing:machine_frame/advanced',
+                '#forge:plastic',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:gears/enderium',
+                '#forge:circuits/elite',
+                '#forge:gears/enderium'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 135,
+            processingTime: 300,
+            outputItem: { item: 'industrialforegoing:machine_frame_supreme', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/supreme_machine_frame'
         }
         /*
         {
