@@ -548,6 +548,19 @@ onEvent('recipes', (event) => {
                 L: 'meetyourfight:fortunes_favor'
             },
             id: 'meetyourfight:cocktail_shotgun'
+        },
+        {
+            output: 'kubejs:fluid_drill_package',
+            pattern: ['CDC', 'ABA', 'BEB', 'ABA', 'CFC'],
+            key: {
+                A: 'industrialforegoing:efficiency_addon_2',
+                B: 'industrialforegoing:laser_drill',
+                C: 'industrialforegoing:speed_addon_2',
+                D: 'industrialforegoing:laser_lens10',
+                E: 'industrialforegoing:fluid_laser_base',
+                F: 'mekanism:cardboard_box'
+            },
+            id: `${id_prefix}fluid_drill_package`
         }
     ];
 

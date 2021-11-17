@@ -89,12 +89,16 @@ onEvent('item.registry', (event) => {
         { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
 
-        { name: 'engineers_school_project', texture: 'assembly_package_filled' },
-        { name: 'foundation_materials', texture: 'assembly_package_filled' },
-        { name: 'construction_tools', texture: 'assembly_package_filled' },
-        { name: 'landscaping_materials', texture: 'assembly_package_filled' },
-        { name: 'engineering_student_supplies', texture: 'assembly_package_filled' },
-        { name: 'building_materials', texture: 'assembly_package_filled' },
+        { name: 'engineers_school_project', texture: 'packing_crate_gray' },
+        { name: 'foundation_materials', texture: 'packing_crate_red' },
+        { name: 'construction_tools', texture: 'packing_crate_yellow' },
+        { name: 'landscaping_materials', texture: 'packing_crate_lime' },
+        { name: 'engineering_student_supplies', texture: 'packing_crate_blue' },
+        { name: 'building_materials', texture: 'packing_crate_orange' },
+
+        { name: 'engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
+        { name: 'computer_package', texture: 'advanced_packing_crate_green' },
+        { name: 'fluid_drill_package', texture: 'advanced_packing_crate_purple' },
 
         { name: 'basic_memory_package', texture: 'assembly_package_filled' },
         { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },

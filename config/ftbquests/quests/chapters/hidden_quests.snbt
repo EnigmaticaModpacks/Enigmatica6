@@ -145,8 +145,24 @@
 			rewards: [{
 				id: "12961819A6E04E7F"
 				type: "gamestage"
-				auto: "enabled"
+				auto: "invisible"
 				stage: "medium_machinery_schematics"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -3.5d
+			id: "73317AB5A4FE3FDE"
+			tasks: [{
+				id: "6A0EACB8797C11D0"
+				type: "item"
+				item: "kubejs:heavy_machinery_schematics"
+			}]
+			rewards: [{
+				id: "11884A83C06080A0"
+				type: "gamestage"
+				auto: "invisible"
+				stage: "heavy_machinery_schematics"
 			}]
 		}
 	]

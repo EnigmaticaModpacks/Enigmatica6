@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/kubejs/';
+    const id_prefix = 'enigmatica:expert/kubejs/shaped';
     /*
         ,
         {
@@ -62,18 +62,6 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:stick',
                 B: '#resourcefulbees:resourceful_honeycomb'
-            },
-            id: `${id_prefix}scented_stick`
-        },
-        {
-            output: 'kubejs:engineers_school_project',
-            pattern: ['ABC', 'DEE', 'EEE'],
-            key: {
-                A: 'kubejs:construction_tools',
-                B: 'kubejs:engineering_student_supplies',
-                C: 'kubejs:landscaping_materials',
-                D: 'kubejs:foundation_materials',
-                E: 'kubejs:building_materials'
             },
             id: `${id_prefix}scented_stick`
         },

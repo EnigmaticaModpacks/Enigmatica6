@@ -434,6 +434,35 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}foundation_materials`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:computer_package'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 5,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}computer_package`
         }
     ];
 

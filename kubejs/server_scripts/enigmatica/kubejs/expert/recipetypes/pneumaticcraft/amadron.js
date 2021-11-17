@@ -13,7 +13,15 @@ onEvent('recipes', (event) => {
             output: { type: 'ITEM', id: 'kubejs:medium_machinery_schematics', amount: 1 },
             level: 0,
             maxStock: 5,
-            id: `${id_prefix}engineers_school_project`
+            id: `${id_prefix}medium_machinery_schematics`
+        },
+        {
+            static: true,
+            input: { type: 'ITEM', id: 'kubejs:fluid_drill_package', amount: 1 },
+            output: { type: 'ITEM', id: 'kubejs:heavy_machinery_schematics', amount: 1 },
+            level: 0,
+            maxStock: 5,
+            id: `${id_prefix}heavy_machinery_schematics`
         }
     ];
 
