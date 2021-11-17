@@ -362,7 +362,7 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['quark:dragon_scale'],
-            text: [`Only drops from dragons after the first one has been killed.`]
+            text: [`Only drops from Ender Dragons after the first one has been killed.`]
         }
     ];
 
