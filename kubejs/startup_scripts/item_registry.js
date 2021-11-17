@@ -74,6 +74,9 @@ onEvent('item.registry', (event) => {
     ];
 
     const reusableItemTextures = [
+        { name: 'medium_machinery_schematics', texture: 'blueprint' },
+        { name: 'heavy_machinery_schematics', texture: 'blueprint' },
+
         { name: 'machine_speed_augment_mk2', texture: 'machine_speed_augment' },
         { name: 'machine_speed_augment_mk3', texture: 'machine_speed_augment' },
         { name: 'machine_speed_augment_mk4', texture: 'machine_speed_augment' },
