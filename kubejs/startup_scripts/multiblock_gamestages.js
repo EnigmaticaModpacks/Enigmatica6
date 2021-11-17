@@ -18,7 +18,7 @@ let requiredGameStage = new Map([
     ['immersiveengineering:multiblocks/fermenter', 'heavy_machinery_schematics'],
     ['immersivepetroleum:multiblocks/cokerunit', 'heavy_machinery_schematics'],
     ['immersivepetroleum:multiblocks/distillationtower', 'heavy_machinery_schematics'],
-    ['immersivepetroleum:multiblocks/hydrotreater', 'medium_machinery_schematics']
+    ['immersivepetroleum:multiblocks/hydrotreater', 'heavy_machinery_schematics']
 ]);
 
 onForgeEvent('blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler$MultiblockFormEvent', (event) => {
