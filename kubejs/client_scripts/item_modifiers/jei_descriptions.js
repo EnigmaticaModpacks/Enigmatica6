@@ -361,6 +361,10 @@ onEvent('jei.information', (event) => {
             text: [`Splash a Phantom with a Potion of Insomnia to convert it to a Flare.`]
         },
         {
+            items: ['quark:dragon_scale'],
+            text: [`Only drops from Ender Dragons after the first one has been killed.`]
+        },
+        {
             items: [
                 'dankstorage:1_to_2',
                 'dankstorage:2_to_3',
