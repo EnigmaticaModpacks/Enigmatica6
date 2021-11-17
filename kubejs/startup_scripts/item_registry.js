@@ -89,6 +89,13 @@ onEvent('item.registry', (event) => {
         { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
 
+        { name: 'engineers_school_project', texture: 'assembly_package_filled' },
+        { name: 'foundation_materials', texture: 'assembly_package_filled' },
+        { name: 'construction_tools', texture: 'assembly_package_filled' },
+        { name: 'landscaping_materials', texture: 'assembly_package_filled' },
+        { name: 'engineering_student_supplies', texture: 'assembly_package_filled' },
+        { name: 'building_materials', texture: 'assembly_package_filled' },
+
         { name: 'basic_memory_package', texture: 'assembly_package_filled' },
         { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
 

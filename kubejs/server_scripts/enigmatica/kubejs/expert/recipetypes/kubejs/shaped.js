@@ -65,6 +65,18 @@ onEvent('recipes', (event) => {
             },
             id: `${id_prefix}scented_stick`
         },
+        {
+            output: 'kubejs:engineers_school_project',
+            pattern: ['ABC', 'DEE', 'EEE'],
+            key: {
+                A: 'kubejs:construction_tools',
+                B: 'kubejs:engineering_student_supplies',
+                C: 'kubejs:landscaping_materials',
+                D: 'kubejs:foundation_materials',
+                E: 'kubejs:building_materials'
+            },
+            id: `${id_prefix}scented_stick`
+        },
 
         // Storage Parts
         {
