@@ -14,6 +14,7 @@ onEvent('recipes', (event) => {
                 'kubejs:building_materials',
                 'kubejs:building_materials',
                 'kubejs:building_materials',
+                'kubejs:building_materials',
                 'kubejs:building_materials'
             ],
             id: `${id_prefix}engineers_school_project`
