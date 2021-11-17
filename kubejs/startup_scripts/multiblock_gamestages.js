@@ -3,8 +3,9 @@ let requiredGameStage = new Map([
     ['immersiveengineering:multiblocks/excavator', 'medium_machinery_schematics'],
     ['immersiveengineering:multiblocks/bucket_wheel', 'medium_machinery_schematics'],
     ['immersiveengineering:multiblocks/excavator_full', 'medium_machinery_schematics'],
+
     ['immersiveengineering:multiblocks/mixer', 'medium_machinery_schematics'],
-    ['immersiveengineering:multiblocks/refinery', 'medium_machinery_schematics'],
+
     ['immersiveengineering:multiblocks/sawmill', 'medium_machinery_schematics'],
     ['immersiveengineering:multiblocks/squeezer', 'medium_machinery_schematics'],
     ['immersiveengineering:multiblocks/lightning_rod', 'medium_machinery_schematics'],
@@ -16,6 +17,7 @@ let requiredGameStage = new Map([
     ['immersiveengineering:multiblocks/assembler', 'heavy_machinery_schematics'],
     ['immersiveengineering:multiblocks/crusher', 'heavy_machinery_schematics'],
     ['immersiveengineering:multiblocks/diesel_generator', 'heavy_machinery_schematics'],
+    ['immersiveengineering:multiblocks/refinery', 'heavy_machinery_schematics'],
     ['immersiveengineering:multiblocks/fermenter', 'heavy_machinery_schematics'],
     ['immersivepetroleum:multiblocks/cokerunit', 'heavy_machinery_schematics'],
     ['immersivepetroleum:multiblocks/distillationtower', 'heavy_machinery_schematics']
