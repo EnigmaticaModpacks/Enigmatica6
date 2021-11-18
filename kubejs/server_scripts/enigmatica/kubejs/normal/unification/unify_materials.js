@@ -12,10 +12,15 @@ onEvent('recipes', (event) => {
         var rod = getPreferredItemInTag(Ingredient.of('#forge:rods/' + material)).id;
         var wire = getPreferredItemInTag(Ingredient.of('#forge:wires/' + material)).id;
 
+        let ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
+        let dust = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${material}`)).id;
+
         gear_unification(event, material, ingot, gem, gear);
         rod_unification(event, material, ingot, gem, rod);
         plate_unification(event, material, ingot, gem, plate);
         wire_unification(event, material, ingot, gem, wire, plate);
+
+        immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust, ingot);
     });
 
     function gear_unification(event, material, ingot, gem, gear) {
@@ -152,5 +157,32 @@ onEvent('recipes', (event) => {
             .id(`kubejs:immersiveengineering_metal_press_${material}_wire`);
 
         event.shapeless(output, [plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
+    }
+
+    function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust, ingot) {
+        if (ore == air || dust == air || ingot == air) {
+            return;
+        }
+
+        var primaryOutput = Item.of(dust, 2),
+            secondaryChance = 0.1,
+            input = `#forge:ores/${material}`,
+            materialProperties;
+
+        try {
+            materialProperties = oreProcessingSecondaries[material];
+        } catch (err) {
+            return;
+        }
+
+        try {
+            secondaryOutput = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${materialProperties.secondary}`)).id;
+        } catch (err) {
+            secondaryOutput = dust;
+        }
+
+        event.recipes.immersiveengineering
+            .crusher(primaryOutput, input, [Item.of(secondaryOutput).chance(secondaryChance)])
+            .id(`immersiveengineering:crusher/ore_${material}`);
     }
 });
