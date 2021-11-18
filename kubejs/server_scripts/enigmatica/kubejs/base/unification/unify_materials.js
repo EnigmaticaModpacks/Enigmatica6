@@ -66,6 +66,7 @@ onEvent('recipes', (event) => {
         minecraft_dust_smelting(event, material, dust, ingot);
 
         occultism_gem_ore_crushing(event, material, ore, dust, gem, shard);
+        occultism_metal_ore_crushing(event, material, ore, dust, ingot);
         occultism_ingot_gem_crushing(event, material, ingot, dust, gem);
 
         pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem);
@@ -861,6 +862,26 @@ onEvent('recipes', (event) => {
             crushing_time: 100,
             ignore_crushing_multiplier: false
         });
+    }
+
+    function occultism_metal_ore_crushing(event, material, ore, dust, ingot) {
+        if (ore == air || ingot == air || dust == air) {
+            return;
+        }
+        var output,
+            input = `forge:ores/${material}`,
+            output = dust,
+            count = 2;
+
+        event
+            .custom({
+                type: 'occultism:crushing',
+                ingredient: { tag: input },
+                result: { item: output, count: count },
+                crushing_time: 100,
+                ignore_crushing_multiplier: false
+            })
+            .id(`occultism:crushing/${material}_dust`);
     }
 
     function occultism_ingot_gem_crushing(event, material, ingot, dust, gem) {
