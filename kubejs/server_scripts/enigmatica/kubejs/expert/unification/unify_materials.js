@@ -12,6 +12,7 @@ onEvent('recipes', (event) => {
         var rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
         var wire = getPreferredItemInTag(Ingredient.of(`#forge:wires/${material}`)).id;
 
+        let crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
         var ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
         var mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
         var fulminated_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)).id;
@@ -22,6 +23,8 @@ onEvent('recipes', (event) => {
         rod_unification(event, material, ingot, gem, rod, plate);
         plate_unification(event, material, ingot, gem, plate);
         wire_unification(event, material, ingot, gem, wire, plate);
+
+        immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot);
 
         magical_ore_processing(
             event,
@@ -166,6 +169,39 @@ onEvent('recipes', (event) => {
             .id(`kubejs:immersiveengineering_metal_press_${material}_wire`);
 
         event.shapeless(Item.of(output, 2), [plate, plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
+    }
+
+    function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot) {
+        if (ore == air || crushed_ore == air || ingot == air) {
+            return;
+        }
+
+        var primaryOutput = crushed_ore,
+            input = `#forge:ores/${material}`,
+            materialProperties;
+
+        try {
+            materialProperties = oreProcessingSecondaries[material];
+        } catch (err) {
+            return;
+        }
+
+        try {
+            secondaryOutput = getPreferredItemInTag(
+                Ingredient.of(`#create:crushed_ores/${materialProperties.secondary}`)
+            ).id;
+        } catch (err) {
+            secondaryOutput = crushed_ore;
+        }
+
+        event.recipes.immersiveengineering
+            .crusher(primaryOutput, input, [
+                Item.of(primaryOutput, 2).chance(0.6),
+                Item.of(primaryOutput).chance(0.5),
+                Item.of(secondaryOutput, 2).chance(0.35),
+                Item.of('minecraft:gravel').chance(0.18)
+            ])
+            .id(`immersiveengineering:crusher/ore_${material}`);
     }
 
     function magical_ore_processing(
