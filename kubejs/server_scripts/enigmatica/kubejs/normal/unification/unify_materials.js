@@ -21,6 +21,7 @@ onEvent('recipes', (event) => {
         wire_unification(event, material, ingot, gem, wire, plate);
 
         immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust, ingot);
+        occultism_metal_ore_crushing(event, material, ore, dust, ingot);
     });
 
     function gear_unification(event, material, ingot, gem, gear) {
@@ -184,5 +185,25 @@ onEvent('recipes', (event) => {
         event.recipes.immersiveengineering
             .crusher(primaryOutput, input, [Item.of(secondaryOutput).chance(secondaryChance)])
             .id(`immersiveengineering:crusher/ore_${material}`);
+    }
+
+    function occultism_metal_ore_crushing(event, material, ore, dust, ingot) {
+        if (ore == air || ingot == air || dust == air) {
+            return;
+        }
+        var output,
+            input = `forge:ores/${material}`,
+            output = dust,
+            count = 2;
+
+        event
+            .custom({
+                type: 'occultism:crushing',
+                ingredient: { tag: input },
+                result: { item: output, count: count },
+                crushing_time: 100,
+                ignore_crushing_multiplier: false
+            })
+            .id(`occultism:crushing/${material}_dust`);
     }
 });

@@ -25,6 +25,7 @@ onEvent('recipes', (event) => {
         wire_unification(event, material, ingot, gem, wire, plate);
 
         immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot);
+        occultism_metal_ore_crushing(event, material, ore, crushed_ore, ingot);
 
         magical_ore_processing(
             event,
@@ -202,6 +203,26 @@ onEvent('recipes', (event) => {
                 Item.of('minecraft:gravel').chance(0.18)
             ])
             .id(`immersiveengineering:crusher/ore_${material}`);
+    }
+
+    function occultism_metal_ore_crushing(event, material, ore, crushed_ore, ingot) {
+        if (ore == air || ingot == air || crushed_ore == air) {
+            return;
+        }
+        var output,
+            input = `forge:ores/${material}`,
+            output = crushed_ore,
+            count = 2;
+
+        event
+            .custom({
+                type: 'occultism:crushing',
+                ingredient: { tag: input },
+                result: { item: output, count: count },
+                crushing_time: 75,
+                ignore_crushing_multiplier: false
+            })
+            .id(`occultism:crushing/${material}_dust`);
     }
 
     function magical_ore_processing(
