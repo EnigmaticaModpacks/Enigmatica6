@@ -635,6 +635,21 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'industrialforegoing:dissolution_chamber/processing_addon_2'
+        },
+        {
+            inputs: [
+                '#forge:ingots/queens_slime',
+                '#forge:ingots/slimesteel',
+                '#forge:ingots/slimesteel',
+                '#forge:ingots/slimesteel'
+            ],
+            inputFluid: 'industrialforegoing:pink_slime',
+            inputFluidAmount: 2000,
+            processingTime: 300,
+            outputItem: { item: 'industrialforegoing:pink_slime_ingot', count: 4 },
+            outputFluid: 'industrialforegoing:sludge',
+            outputFluidAmount: 500,
+            id: 'industrialforegoing:dissolution_chamber/pink_slime_ingot'
         }
         /*
         {
