@@ -170,6 +170,44 @@ onEvent('recipes', (event) => {
                 F: 'thermal:rf_coil'
             },
             id: 'industrialforegoing:enchantment_extractor'
+        },
+        {
+            output: 'industrialforegoing:washing_factory',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:ingots/pink_slime',
+                C: 'create:fluid_tank',
+                D: 'rftoolspower:blazing_agitator',
+                E: '#forge:gears/compressed_iron',
+                F: '#industrialforegoing:machine_frame/advanced'
+            },
+            id: 'industrialforegoing:washing_factory'
+        },
+        {
+            output: 'industrialforegoing:fermentation_station',
+            pattern: ['ABA', 'CDC', 'CEC'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:ingots/pink_slime',
+                C: 'pneumaticcraft:reinforced_bricks',
+                D: 'sushigocrafting:fermentation_barrel',
+                E: '#industrialforegoing:machine_frame/simple'
+            },
+            id: 'industrialforegoing:fermentation_station'
+        },
+        {
+            output: 'industrialforegoing:fluid_sieving_machine',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:ingots/pink_slime',
+                C: 'pneumaticcraft:reinforced_bricks',
+                D: 'mekanism:upgrade_filter',
+                E: '#forge:gears/compressed_iron',
+                F: '#industrialforegoing:machine_frame/advanced'
+            },
+            id: 'industrialforegoing:fluid_sieving_machine'
         }
     ];
 
