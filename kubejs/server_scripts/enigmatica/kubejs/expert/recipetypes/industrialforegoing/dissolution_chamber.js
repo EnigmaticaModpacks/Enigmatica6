@@ -521,6 +521,120 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'industrialforegoing:dissolution_chamber/supreme_machine_frame'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#forge:circuits/advanced',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/signalum',
+                '#forge:gears/signalum',
+                '#forge:gems/blazing',
+                '#forge:gems/blazing'
+            ],
+            inputFluid: 'mekanism:lithium',
+            inputFluidAmount: 500,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:efficiency_addon_1', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/efficiency_addon_1'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#forge:circuits/advanced',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/signalum',
+                '#forge:gears/signalum',
+                'pneumaticcraft:glycerol',
+                'pneumaticcraft:glycerol'
+            ],
+            inputFluid: 'pneumaticcraft:lubricant',
+            inputFluidAmount: 500,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:speed_addon_1', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/speed_addon_1'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#forge:circuits/advanced',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/signalum',
+                '#forge:gears/signalum',
+                'refinedstorage:construction_core',
+                'refinedstorage:construction_core'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:processing_addon_1', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/processing_addon_1'
+        },
+        {
+            inputs: [
+                'industrialforegoing:efficiency_addon_1',
+                '#forge:circuits/elite',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/signalum',
+                '#forge:gears/signalum',
+                'rftoolspower:blazing_rod',
+                'rftoolspower:blazing_rod'
+            ],
+            inputFluid: 'mekanism:lithium',
+            inputFluidAmount: 500,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:efficiency_addon_2', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/efficiency_addon_2'
+        },
+        {
+            inputs: [
+                'industrialforegoing:speed_addon_1',
+                '#forge:circuits/elite',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/signalum',
+                '#forge:gears/signalum',
+                'pneumaticcraft:glycerol',
+                'pneumaticcraft:glycerol'
+            ],
+            inputFluid: 'pneumaticcraft:lubricant',
+            inputFluidAmount: 500,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:speed_addon_2', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/speed_addon_2'
+        },
+        {
+            inputs: [
+                'industrialforegoing:processing_addon_1',
+                '#forge:circuits/elite',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/signalum',
+                '#forge:gears/signalum',
+                'extrastorage:neural_processor',
+                'extrastorage:neural_processor'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:processing_addon_2', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/processing_addon_2'
         }
         /*
         {
