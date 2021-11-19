@@ -298,19 +298,6 @@ onEvent('recipes', (event) => {
             id: 'industrialforegoing:mob_crusher'
         },
         {
-            output: 'industrialforegoing:mob_slaughter_factory',
-            pattern: ['PDP', 'SMS', 'ARA'],
-            key: {
-                P: '#forge:plastic',
-                D: '#forge:gears/gold_bronze',
-                S: 'minecraft:iron_sword',
-                A: 'minecraft:iron_axe',
-                M: '#industrialforegoing:machine_frame/pity',
-                R: 'minecraft:redstone'
-            },
-            id: 'industrialforegoing:mob_slaughter_factory'
-        },
-        {
             output: 'industrialforegoing:plant_fertilizer',
             pattern: ['PBP', 'LML', 'GRG'],
             key: {

@@ -5,6 +5,17 @@ onEvent('player.logged_in', (event) => {
         return waystones[Math.floor(Math.random() * waystones.length + 1)];
     };
 
+    setMode = (player) => {
+        console.log('setting mode for player: ' + player);
+        if (global.packmode == 'expert') {
+            player.data.ftbquests.complete('0000000000000FEB');
+        } else {
+            player.data.ftbquests.reset('0000000000000FEB');
+        }
+    };
+
+    setMode(event.player);
+
     if (!event.hasGameStage(startingItemsGameStage)) {
         event.player.give(Item.of('ftbquests:book'));
         event.player.give(Item.of(randomWaystone()));

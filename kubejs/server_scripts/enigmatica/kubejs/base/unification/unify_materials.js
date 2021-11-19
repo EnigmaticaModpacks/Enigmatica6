@@ -44,7 +44,6 @@ onEvent('recipes', (event) => {
 
         immersiveengineering_ingot_crushing(event, material, dust, ingot);
         immersiveengineering_gem_ore_processing(event, material, ore, dust, gem, shard);
-        immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust, ingot);
         immersiveengineering_hammer_crushing(event, material, ore, dust);
         immersiveengineering_gem_crushing(event, material, dust, gem);
 
@@ -611,33 +610,6 @@ onEvent('recipes', (event) => {
                 .energy(2000)
                 .id(`immersiveengineering:crusher/ore_${material}`);
         }
-    }
-
-    function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust, ingot) {
-        if (ore == air || dust == air || ingot == air) {
-            return;
-        }
-
-        var primaryOutput = Item.of(dust, 2),
-            secondaryChance = 0.1,
-            input = `#forge:ores/${material}`,
-            materialProperties;
-
-        try {
-            materialProperties = oreProcessingSecondaries[material];
-        } catch (err) {
-            return;
-        }
-
-        try {
-            secondaryOutput = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${materialProperties.secondary}`)).id;
-        } catch (err) {
-            secondaryOutput = dust;
-        }
-
-        event.recipes.immersiveengineering
-            .crusher(primaryOutput, input, [Item.of(secondaryOutput).chance(secondaryChance)])
-            .id(`immersiveengineering:crusher/ore_${material}`);
     }
 
     function mekanism_ingot_gem_crushing(event, material, ingot, dust, gem) {
