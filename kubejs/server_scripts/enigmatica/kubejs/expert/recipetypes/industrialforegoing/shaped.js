@@ -176,11 +176,11 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
                 A: '#forge:plastic',
-                B: '#forge:ingots/pink_slime',
+                B: '#forge:ingots/slimesteel',
                 C: 'create:fluid_tank',
-                D: 'rftoolspower:blazing_agitator',
+                D: 'thermal:machine_frame',
                 E: '#forge:gears/compressed_iron',
-                F: '#industrialforegoing:machine_frame/advanced'
+                F: 'thermal:rf_coil'
             },
             id: 'industrialforegoing:washing_factory'
         },
@@ -189,23 +189,24 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'CEC'],
             key: {
                 A: '#forge:plastic',
-                B: '#forge:ingots/pink_slime',
+                B: '#forge:ingots/slimesteel',
                 C: 'pneumaticcraft:reinforced_bricks',
                 D: 'sushigocrafting:fermentation_barrel',
-                E: '#industrialforegoing:machine_frame/simple'
+                E: 'thermal:rf_coil'
             },
             id: 'industrialforegoing:fermentation_station'
         },
         {
             output: 'industrialforegoing:fluid_sieving_machine',
-            pattern: ['ABA', 'CDC', 'EFE'],
+            pattern: ['ABA', 'CDE', 'FGF'],
             key: {
                 A: '#forge:plastic',
-                B: '#forge:ingots/pink_slime',
-                C: 'pneumaticcraft:reinforced_bricks',
-                D: 'mekanism:upgrade_filter',
-                E: '#forge:gears/compressed_iron',
-                F: '#industrialforegoing:machine_frame/advanced'
+                B: '#forge:ingots/slimesteel',
+                C: 'create:fluid_tank',
+                D: 'thermal:machine_frame',
+                E: 'create:smart_fluid_pipe',
+                F: '#forge:gears/compressed_iron',
+                G: 'thermal:rf_coil'
             },
             id: 'industrialforegoing:fluid_sieving_machine'
         }
