@@ -585,8 +585,8 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/elite',
                 'atum:crystal_glass_pane',
                 'atum:crystal_glass_pane',
-                '#forge:gears/signalum',
-                '#forge:gears/signalum',
+                '#forge:gears/enderium',
+                '#forge:gears/enderium',
                 'rftoolspower:blazing_rod',
                 'rftoolspower:blazing_rod'
             ],
@@ -604,8 +604,8 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/elite',
                 'atum:crystal_glass_pane',
                 'atum:crystal_glass_pane',
-                '#forge:gears/signalum',
-                '#forge:gears/signalum',
+                '#forge:gears/enderium',
+                '#forge:gears/enderium',
                 'pneumaticcraft:glycerol',
                 'pneumaticcraft:glycerol'
             ],
@@ -623,8 +623,8 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/elite',
                 'atum:crystal_glass_pane',
                 'atum:crystal_glass_pane',
-                '#forge:gears/signalum',
-                '#forge:gears/signalum',
+                '#forge:gears/enderium',
+                '#forge:gears/enderium',
                 'extrastorage:neural_processor',
                 'extrastorage:neural_processor'
             ],
