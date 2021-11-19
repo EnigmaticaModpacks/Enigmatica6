@@ -143,6 +143,33 @@ onEvent('recipes', (event) => {
                 B: 'thermal:machine_frame'
             },
             id: 'industrialforegoing:common_black_hole_unit'
+        },
+        {
+            output: 'industrialforegoing:marine_fisher',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: '#forge:plastic',
+                B: 'aquaculture:neptunium_fishing_rod',
+                C: 'aquaculture:nether_star_hook',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: 'aquaculture:worm',
+                F: '#forge:gears/bronze',
+                G: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:marine_fisher'
+        },
+        {
+            output: 'industrialforegoing:enchantment_extractor',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: '#botania:runes/mana',
+                C: 'botania:pump',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:gears/osmium',
+                F: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:enchantment_extractor'
         }
     ];
 
