@@ -61,6 +61,70 @@ onEvent('recipes', (event) => {
                 E: 'pneumaticcraft:large_tank'
             },
             id: 'industrialforegoing:fluid_laser_base'
+        },
+        {
+            output: 'industrialforegoing:plant_fertilizer',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: ['#forge:plastic', 'mekanism:hdpe_sheet'],
+                B: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
+                C: 'create:mechanical_pump',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'create:nozzle',
+                F: '#forge:gears/lumium',
+                G: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:plant_fertilizer'
+        },
+        {
+            output: 'industrialforegoing:hydroponic_bed',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: ['#forge:plastic', 'mekanism:hdpe_sheet'],
+                B: 'industrialforegoing:fertilizer',
+                C: 'mekanism:dynamic_tank',
+                D: 'supplementaries:planter_rich',
+                E: '#industrialforegoing:machine_frame/pity',
+                F: '#forge:gears/lumium'
+            },
+            id: 'industrialforegoing:hydroponic_bed'
+        },
+        {
+            output: 'industrialforegoing:mob_detector',
+            pattern: ['ABA', 'CDE', 'ABA'],
+            key: {
+                A: '#forge:plastic',
+                B: 'minecraft:comparator',
+                C: 'pneumaticcraft:advanced_pcb',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'botania:ender_eye_block'
+            },
+            id: 'industrialforegoing:mob_detector'
+        },
+        {
+            output: 'industrialforegoing:enchantment_sorter',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: 'pneumaticcraft:advanced_pcb',
+                C: '#forge:storage_blocks/mana',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: '#forge:gears/osmium',
+                F: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:enchantment_sorter'
+        },
+        {
+            output: 'industrialforegoing:potion_brewer',
+            pattern: [' B ', 'ACA', 'DED'],
+            key: {
+                A: '#forge:plastic',
+                B: 'minecraft:brewing_stand',
+                C: '#industrialforegoing:machine_frame/pity',
+                D: '#forge:gears/constantan',
+                E: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:potion_brewer'
         }
     ];
 
