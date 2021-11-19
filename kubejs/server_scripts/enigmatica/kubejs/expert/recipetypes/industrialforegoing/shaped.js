@@ -209,6 +209,98 @@ onEvent('recipes', (event) => {
                 G: 'thermal:rf_coil'
             },
             id: 'industrialforegoing:fluid_sieving_machine'
+        },
+        {
+            output: 'industrialforegoing:material_stonework_factory',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: '#forge:plastic',
+                B: 'rftoolsutility:crafter1',
+                C: 'immersiveengineering:drillhead_steel',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: 'mekanism:energized_smelter',
+                F: '#forge:gears/compressed_iron',
+                G: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:material_stonework_factory'
+        },
+        {
+            output: 'industrialforegoing:stasis_chamber',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: '#forge:plastic',
+                B: 'rftoolsutility:regenerationplus_module',
+                C: 'rftoolsutility:noteleport_module',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: 'rftoolsutility:slowness_module',
+                F: '#forge:gears/uranium',
+                G: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:stasis_chamber'
+        },
+        {
+            output: 'industrialforegoing:mob_crusher',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: '#forge:plastic',
+                B: 'thermal:device_collector',
+                C: 'create:mechanical_arm',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: 'industrialforegoing:infinity_hammer',
+                F: '#forge:gears/uranium',
+                G: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:mob_crusher'
+        },
+        {
+            output: 'industrialforegoing:black_hole_controller',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:plastic',
+                B: 'portality:module_items',
+                C: 'portality:frame',
+                D: 'enderstorage:ender_chest',
+                E: 'portality:controller'
+            },
+            id: 'industrialforegoing:black_hole_controller'
+        },
+        {
+            output: 'industrialforegoing:infinity_charger',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: '#forge:plastic',
+                B: 'mekanism:ultimate_universal_cable',
+                C: 'mekanism:ultimate_induction_cell',
+                D: '#forge:gears/signalum',
+                E: '#industrialforegoing:machine_frame/advanced'
+            },
+            id: 'industrialforegoing:infinity_charger'
+        },
+        {
+            output: 'industrialforegoing:enchantment_factory',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: 'botania:rosa_arcana',
+                C: 'kubejs:memory_ultimate_filled',
+                D: 'botania:enchanted_soil',
+                E: 'botania:mana_pylon',
+                F: '#industrialforegoing:machine_frame/advanced'
+            },
+            id: 'industrialforegoing:enchantment_factory'
+        },
+        {
+            output: 'industrialforegoing:enchantment_applicator',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: 'betterendforge:aeternium_anvil',
+                C: 'kubejs:memory_ultimate_filled',
+                D: 'pneumaticcraft:small_tank',
+                E: '#forge:gears/osmium',
+                F: '#industrialforegoing:machine_frame/simple'
+            },
+            id: 'industrialforegoing:enchantment_applicator'
         }
     ];
 
