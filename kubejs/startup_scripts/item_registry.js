@@ -1,5 +1,6 @@
 onEvent('item.registry', (event) => {
     const generalItems = [
+        'common_lootbox',
         'rare_lootbox',
         'epic_lootbox',
         'legendary_lootbox',
