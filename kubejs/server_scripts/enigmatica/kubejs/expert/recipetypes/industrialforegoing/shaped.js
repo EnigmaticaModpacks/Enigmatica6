@@ -301,6 +301,27 @@ onEvent('recipes', (event) => {
                 F: '#industrialforegoing:machine_frame/simple'
             },
             id: 'industrialforegoing:enchantment_applicator'
+        },
+        {
+            output: 'industrialforegoing:mob_imprisonment_tool',
+            pattern: [' A ', 'ABA', ' A '],
+            key: {
+                A: '#forge:plastic',
+                B: 'pneumaticcraft:spawner_core'
+            },
+            id: 'industrialforegoing:mob_imprisonment_tool'
+        },
+        {
+            output: 'industrialforegoing:wither_builder',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: 'ars_nouveau:glyph_wither',
+                B: 'rftoolsutility:matter_beamer',
+                C: 'rftoolsutility:spawner',
+                D: Item.of('rftoolsutility:syringe', '{mobName:"minecraft:wither",mobId:"minecraft:wither",level:10}'),
+                E: '#industrialforegoing:machine_frame/supreme'
+            },
+            id: 'industrialforegoing:wither_builder'
         }
     ];
 

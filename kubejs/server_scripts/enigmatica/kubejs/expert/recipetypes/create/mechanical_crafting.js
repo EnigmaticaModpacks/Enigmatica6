@@ -561,6 +561,21 @@ onEvent('recipes', (event) => {
                 F: 'mekanism:cardboard_box'
             },
             id: `${id_prefix}fluid_drill_package`
+        },
+        {
+            output: 'industrialforegoing:mob_duplicator',
+            pattern: ['ABCBA', 'BDEFB', 'CGHGC', 'BFEDB', 'ABCBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: '#forge:plastic',
+                C: 'powah:capacitor_nitro',
+                D: '#forge:circuits/elite',
+                E: 'rftoolsutility:spawner',
+                F: 'ars_nouveau:greater_experience_gem',
+                G: 'pneumaticcraft:huge_tank',
+                H: 'botania:spawner_mover'
+            },
+            id: 'industrialforegoing:mob_duplicator'
         }
     ];
 
