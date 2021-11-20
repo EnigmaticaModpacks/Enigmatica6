@@ -564,7 +564,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'industrialforegoing:mob_duplicator',
-            pattern: ['ABCBA', 'BDEFB', 'CGHGC', 'BFEDB', 'ABCBA'],
+            pattern: ['ABCBA', 'BDEFB', 'CGHGC', 'BFIDB', 'ABCBA'],
             key: {
                 A: 'powah:dielectric_casing',
                 B: '#forge:plastic',
@@ -573,7 +573,8 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsutility:spawner',
                 F: 'ars_nouveau:greater_experience_gem',
                 G: 'pneumaticcraft:huge_tank',
-                H: 'botania:spawner_mover'
+                H: 'botania:spawner_mover',
+                I: '#industrialforegoing:machine_frame/supreme'
             },
             id: 'industrialforegoing:mob_duplicator'
         }
