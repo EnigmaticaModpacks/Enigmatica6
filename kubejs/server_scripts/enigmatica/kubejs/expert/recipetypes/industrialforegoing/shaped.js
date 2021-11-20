@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/industrialforegoing/shaped/';
 
     /*
         ,
@@ -347,6 +348,64 @@ onEvent('recipes', (event) => {
                 F: 'thermal:rf_coil'
             },
             id: 'industrialforegoing:sewage_composter'
+        },
+        {
+            output: 'industrialforegoing:animal_baby_separator',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_white',
+                B: 'minecraft:golden_carrot',
+                C: 'minecraft:tripwire_hook',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'create:weighted_ejector',
+                F: '#forge:gears/invar',
+                G: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:animal_baby_separator'
+        },
+        {
+            output: 'industrialforegoing:animal_rancher',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_white',
+                B: 'minecraft:milk_bucket',
+                C: 'minecraft:shears',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'create:deployer',
+                F: '#forge:gears/invar',
+                G: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:animal_rancher'
+        },
+        {
+            output: Item.of('industrialforegoing:range_addon0', '{TitaniumAugment:{Range:0.0f}}'),
+            pattern: [' A ', 'BCB', ' A '],
+            key: {
+                A: '#forge:dyes/gray',
+                B: '#forge:dusts/redstone',
+                C: 'rftoolscontrol:ram_chip'
+            },
+            id: `${id_prefix}range_addon0`
+        },
+        {
+            output: Item.of('industrialforegoing:range_addon1', '{TitaniumAugment:{Range:1.0f}}'),
+            pattern: [' A ', 'BCB', ' A '],
+            key: {
+                A: '#forge:dyes/blue',
+                B: '#forge:dusts/redstone',
+                C: 'rftoolscontrol:ram_chip'
+            },
+            id: `${id_prefix}range_addon1`
+        },
+        {
+            output: Item.of('industrialforegoing:range_addon2', '{TitaniumAugment:{Range:2.0f}}'),
+            pattern: [' A ', 'BCB', ' A '],
+            key: {
+                A: '#forge:dyes/light_gray',
+                B: '#forge:dusts/redstone',
+                C: 'rftoolscontrol:ram_chip'
+            },
+            id: `${id_prefix}range_addon2`
         }
     ];
 
