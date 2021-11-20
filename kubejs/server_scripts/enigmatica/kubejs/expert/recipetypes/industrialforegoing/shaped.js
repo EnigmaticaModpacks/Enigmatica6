@@ -322,6 +322,31 @@ onEvent('recipes', (event) => {
                 E: '#industrialforegoing:machine_frame/supreme'
             },
             id: 'industrialforegoing:wither_builder'
+        },
+        {
+            output: 'industrialforegoing:sewer',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: 'quark:grate',
+                B: 'create:fluid_pipe',
+                C: 'industrialforegoing:common_black_hole_tank',
+                D: 'environmental:mud_bricks',
+                E: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:sewer'
+        },
+        {
+            output: 'industrialforegoing:sewage_composter',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'quark:grate',
+                B: 'minecraft:composter',
+                C: '#minecraft:sand',
+                D: 'environmental:kiln',
+                E: 'environmental:mud_bricks',
+                F: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:sewage_composter'
         }
     ];
 
