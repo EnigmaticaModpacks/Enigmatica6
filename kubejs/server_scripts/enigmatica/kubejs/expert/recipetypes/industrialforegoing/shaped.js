@@ -339,7 +339,7 @@ onEvent('recipes', (event) => {
             output: 'industrialforegoing:sewage_composter',
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
-                A: 'quark:grate',
+                A: 'aquaculture:worm',
                 B: 'minecraft:composter',
                 C: '#minecraft:sand',
                 D: 'environmental:kiln',
