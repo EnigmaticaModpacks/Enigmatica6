@@ -650,6 +650,25 @@ onEvent('recipes', (event) => {
             outputFluid: 'industrialforegoing:sludge',
             outputFluidAmount: 500,
             id: 'industrialforegoing:dissolution_chamber/pink_slime_ingot'
+        },
+        {
+            inputs: [
+                'nethers_delight:rich_soul_soil',
+                'nethers_delight:rich_soul_soil',
+                'nethers_delight:rich_soul_soil',
+                'tconstruct:blood_slime',
+                'tconstruct:blood_slime',
+                'architects_palette:withered_bone_block',
+                '#industrialforegoing:machine_frame/simple',
+                'architects_palette:withered_bone_block'
+            ],
+            inputFluid: 'bloodmagic:life_essence_fluid',
+            inputFluidAmount: 1000,
+            processingTime: 100,
+            outputItem: { item: 'industrialforegoing:mechanical_dirt', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/mechanical_dirt'
         }
         /*
         {
