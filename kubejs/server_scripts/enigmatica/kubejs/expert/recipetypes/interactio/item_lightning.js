@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'minecraft:snowball', count: 16 },
                 { item: 'quark:bottled_cloud', count: 1 },
-                { tag: 'forge:dusts/fluorite', count: 1 }
+                { tag: 'forge:gems/fluorite', count: 1 }
             ],
             output: {
                 entries: [{ result: { item: 'powah:charged_snowball', count: 1 }, weight: 7 }],
@@ -20,8 +20,8 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { tag: 'forge:storage_blocks/clay', count: 4 },
-                { tag: 'forge:dusts/mana', count: 1 },
-                { tag: 'forge:dusts/apatite', count: 1 }
+                { tag: 'forge:gems/mana', count: 1 },
+                { tag: 'forge:gems/apatite', count: 1 }
             ],
             output: {
                 entries: [{ result: { item: 'ars_nouveau:arcane_stone', count: 1 }, weight: 9 }],
@@ -34,9 +34,9 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'minecraft:heart_of_the_sea', count: 1 },
                 { item: 'minecraft:nautilus_shell', count: 4 },
-                { tag: 'forge:dusts/lapis', count: 2 },
-                { tag: 'forge:dusts/fluorite', count: 2 },
-                { tag: 'forge:dusts/mana', count: 1 }
+                { tag: 'forge:gems/lapis', count: 2 },
+                { tag: 'forge:gems/fluorite', count: 2 },
+                { tag: 'forge:gems/mana', count: 1 }
             ],
             output: {
                 entries: [{ result: { item: 'minecraft:conduit', count: 1 }, weight: 1 }],
@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
                 { item: 'eidolon:gold_inlay', count: 1 },
                 { item: 'botania:livingwood_wall', count: 1 },
                 { item: 'naturesaura:gold_leaf', count: 1 },
-                { tag: 'forge:dusts/apatite', count: 1 }
+                { tag: 'forge:gems/apatite', count: 1 }
             ],
             output: {
                 entries: [{ result: { item: 'naturesaura:wood_stand', count: 1 }, weight: 1 }],
@@ -63,7 +63,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'undergarden:music_disc_relict', count: 1 },
                 { item: 'aquaculture:fish_bones', count: 1 },
-                { tag: 'forge:dusts/lapis', count: 2 },
+                { tag: 'forge:gems/lapis', count: 2 },
                 { item: 'minecraft:fermented_spider_eye', count: 2 },
                 { item: 'undergarden:raw_dweller_meat', count: 4 }
             ],
@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'supplementaries:jar', count: 1 },
-                { tag: 'forge:dusts/fluorite', count: 3 }
+                { tag: 'forge:gems/fluorite', count: 3 }
             ],
             output: {
                 entries: [{ result: { item: 'ars_nouveau:jar_of_light', count: 1 }, weight: 1 }],
@@ -130,7 +130,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { tag: 'forge:storage_blocks/iron', count: 1 },
                 { tag: 'forge:dusts/iron', count: 1 },
-                { tag: 'forge:dusts/fluorite', count: 1 },
+                { tag: 'forge:gems/fluorite', count: 1 },
                 { tag: 'forge:dusts/copper', count: 1 }
             ],
             output: {
@@ -171,7 +171,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'minecraft:bell', count: 1 },
                 { item: 'atum:ectoplasm', count: 3 },
-                { tag: 'forge:dusts/fluorite', count: 1 },
+                { tag: 'forge:gems/fluorite', count: 1 },
                 { tag: 'atum:relic_non_dirty', count: 1 }
             ],
             output: {
@@ -196,7 +196,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:dusts/fluorite', count: 1 },
+                { tag: 'forge:gems/fluorite', count: 1 },
                 { item: 'minecraft:prismarine', count: 6 },
                 { item: 'undergarden:shiverstone', count: 6 }
             ],

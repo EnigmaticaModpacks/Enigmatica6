@@ -148,6 +148,13 @@ onEvent('recipes', (event) => {
             aura: 150000,
             time: 120,
             id: `${id_prefix}mungus`
+        },
+        {
+            inputs: ['#aquaculture:turtle', 'minecraft:seagrass'],
+            entity: 'minecraft:turtle',
+            aura: 50000,
+            time: 60,
+            id: 'naturesaura:animal_spawner/turtle'
         }
     ];
     recipes.forEach((recipe) => {
