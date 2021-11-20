@@ -6,6 +6,7 @@ onEvent('recipes', (event) => {
             replaceWith: '#forge:chests/wooden'
         }
     ];
+    event.replaceInput({}, '#minecraft:stone_tool_materials', '#quark:stone_tool_materials');
     event.replaceInput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');
     event.replaceInput({}, 'architects_palette:withered_bone', '#forge:bones/wither');
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
