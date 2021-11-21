@@ -6,14 +6,14 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: [
-                { item: 'minecraft:snowball', count: 16 },
+                { item: 'minecraft:snowball', count: 4 },
                 { item: 'quark:bottled_cloud', count: 1 },
                 { tag: 'forge:gems/fluorite', count: 1 }
             ],
             output: {
                 entries: [{ result: { item: 'powah:charged_snowball', count: 1 }, weight: 7 }],
                 empty_weight: 3,
-                rolls: 16
+                rolls: 4
             },
             id: `${id_prefix}charged_snowball`
         },
