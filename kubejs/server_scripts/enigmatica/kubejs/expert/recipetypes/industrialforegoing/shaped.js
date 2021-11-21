@@ -494,6 +494,43 @@ onEvent('recipes', (event) => {
                 G: 'thermal:rf_coil'
             },
             id: 'industrialforegoing:plant_gatherer'
+        },
+        {
+            output: 'industrialforegoing:sludge_refiner',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:plates/brass',
+                C: 'immersiveengineering:alloybrick',
+                D: 'create:basin',
+                E: '#forge:gears/uranium',
+                F: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:sludge_refiner'
+        },
+        {
+            output: 'industrialforegoing:fluid_extractor',
+            pattern: ['AAA', 'BCD', 'AEA'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_white',
+                B: 'industrialforegoing:common_black_hole_tank',
+                C: 'tconstruct:seared_channel',
+                D: 'create:mechanical_drill',
+                E: '#industrialforegoing:machine_frame/pity'
+            },
+            id: 'industrialforegoing:fluid_extractor'
+        },
+        {
+            output: 'industrialforegoing:latex_processing_unit',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: 'immersiveengineering:fluid_pipe',
+                B: 'industrialforegoing:common_black_hole_tank',
+                C: '#industrialforegoing:machine_frame/pity',
+                D: '#forge:gears/uranium',
+                E: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:latex_processing_unit'
         }
     ];
 
