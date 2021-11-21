@@ -406,6 +406,18 @@ onEvent('recipes', (event) => {
                 C: 'rftoolscontrol:ram_chip'
             },
             id: `${id_prefix}range_addon2`
+        },
+        {
+            output: 'industrialforegoing:fluid_placer',
+            pattern: ['AAA', 'ABC', 'DED'],
+            key: {
+                A: 'immersiveengineering:fluid_pipe',
+                B: 'create:propeller',
+                C: 'industrialforegoing:common_black_hole_tank',
+                D: 'minecraft:smooth_stone',
+                E: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:fluid_placer'
         }
     ];
 
