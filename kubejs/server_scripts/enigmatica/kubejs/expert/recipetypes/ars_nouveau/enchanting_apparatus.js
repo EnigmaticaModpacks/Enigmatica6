@@ -1446,6 +1446,13 @@ onEvent('recipes', (event) => {
                 count: 1,
                 id: `ars_nouveau:sylph_charm`
             },
+            {
+                inputs: ['atum:anput_godshard', 'naturesaura:token_fear'],
+                reagent: '#atum:relic_non_dirty/ring',
+                output: 'naturesaura:death_ring',
+                count: 1,
+                id: `${id_prefix}death_ring`
+            },
 
             /// Patchouli Removals
             {
@@ -1461,13 +1468,6 @@ onEvent('recipes', (event) => {
                 output: 'ars_nouveau:void_jar',
                 count: 1,
                 id: 'ars_nouveau:void_jar'
-            },
-            {
-                inputs: ['atum:anput_godshard', 'naturesaura:token_fear'],
-                reagent: '#atum:relic_non_dirty/ring',
-                output: 'naturesaura:death_ring',
-                count: 1,
-                id: `${id_prefix}death_ring`
             }
         ]
     };
