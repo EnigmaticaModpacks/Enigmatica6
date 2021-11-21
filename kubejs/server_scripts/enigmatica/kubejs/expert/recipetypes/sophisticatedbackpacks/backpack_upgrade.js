@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             pattern: ['FMF', 'RBR', 'FFF'],
             key: {
                 F: { item: 'immersiveengineering:hemp_fabric' },
-                M: { item: 'refinedstorage:quartz_enriched_iron_block' },
+                M: { tag: 'forge:storage_blocks/pig_iron' },
                 R: { tag: 'forge:rods/aluminum' },
                 B: { item: 'sophisticatedbackpacks:backpack' }
             },
