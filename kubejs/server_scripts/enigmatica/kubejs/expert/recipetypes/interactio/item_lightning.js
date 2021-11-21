@@ -11,8 +11,8 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:gems/fluorite', count: 1 }
             ],
             output: {
-                entries: [{ result: { item: 'powah:charged_snowball', count: 1 }, weight: 7 }],
-                empty_weight: 3,
+                entries: [{ result: { item: 'powah:charged_snowball', count: 1 }, weight: 75 }],
+                empty_weight: 25,
                 rolls: 4
             },
             id: `${id_prefix}charged_snowball`
