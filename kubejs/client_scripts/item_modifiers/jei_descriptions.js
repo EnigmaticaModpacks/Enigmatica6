@@ -374,6 +374,10 @@ onEvent('jei.information', (event) => {
                 'dankstorage:6_to_7'
             ],
             text: [`Sneak Right Click to upgrade a Dank installed in a Dock.`]
+        },
+        {
+            items: ['quark:slime_in_a_bucket'],
+            text: [`Scoop up a small slime in an empty bucket.`]
         }
     ];
 
