@@ -71,7 +71,8 @@ onEvent('item.registry', (event) => {
         'craft_advanced_compacting_upgrade',
         'craft_tool_swapper_upgrade',
         'craft_advanced_tool_swapper_upgrade',
-        'craft_refill_upgrade'
+        'craft_refill_upgrade',
+        'craft_otherworldly_honey_bottle'
     ];
 
     const reusableItemTextures = [
