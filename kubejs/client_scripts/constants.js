@@ -747,5 +747,8 @@ const craftedBees = [
     'skyslime',
     'cobalt',
     'industrious',
-    'pcbee'
+    'pcbee',
+    'otherworldly',
+    'carbee',
+    'dusty_mummbee'
 ];
