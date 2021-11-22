@@ -15,5 +15,5 @@ onEvent('item.tags', (event) => {
         'byg:pine_leaves'
     ]);
 
-    event.add('minecraft:leaves', ['sushigocrafting:avocado_leaves']);
+    event.add('minecraft:leaves', ['sushigocrafting:avocado_leaves', /ars_nouveau:\w+_leaves/]);
 });

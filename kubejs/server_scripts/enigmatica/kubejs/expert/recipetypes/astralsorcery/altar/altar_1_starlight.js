@@ -187,6 +187,30 @@ onEvent('recipes', (event) => {
             ],
             id: 'cookingforblockheads:sink'
         },
+        {
+            output: Item.of('industrialforegoing:fluid_laser_base', 1),
+            pattern: ['A___A', '_BCB_', '_DED_', '_FGF_', 'A___A'],
+            key: {
+                A: { item: 'astralsorcery:glass_lens' },
+                B: { tag: 'forge:plastic' },
+                C: { tag: 'industrialforegoing:machine_frame/simple' },
+                D: { tag: 'forge:gears/lumium' },
+                E: { item: 'mekanism:basic_induction_cell' },
+                F: { tag: 'botania:runes/fire' },
+                G: { item: 'bloodmagic:soulgemlesser' }
+            },
+            altar_type: 1,
+            duration: 200,
+            starlight: 1200,
+            effects: [
+                'astralsorcery:pillar_sparkle',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_lightbeams',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: `${id_prefix}fluid_laser_base`
+        },
 
         /// Guidebook safe removals
 

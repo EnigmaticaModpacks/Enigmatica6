@@ -253,6 +253,168 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:bucket'
             },
             id: 'enigmatica:base/minecraft/water_bucket_combs'
+        },
+        {   // Native Bee Nest Recipes - gated behind resourceful combs
+            output: 'resourcefulbees:bee_nest',
+            pattern: ['AAA', 'BBB', 'ABA'],
+            key: {
+                A: 'minecraft:oak_planks',
+                B: 'resourcefulbees:forest_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/bee_next'
+        },
+        {
+            output: 'resourcefulbees:acacia_bee_nest',
+            pattern: ['AAA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:acacia_planks',
+                C: 'resourcefulbees:forest_honeycomb',
+                B: 'resourcefulbees:rgbee_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/acacia_bee_next'
+        },
+        {
+            output: 'resourcefulbees:grass_bee_nest',
+            pattern: ['AAA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:birch_planks',
+                C: 'resourcefulbees:forest_honeycomb',
+                B: 'resourcefulbees:rgbee_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/grass_bee_next'
+        },
+        {
+            output: 'resourcefulbees:jungle_bee_nest',
+            pattern: ['AAA', 'BBB', 'ABA'],
+            key: {
+                A: 'minecraft:jungle_planks',
+                B: 'resourcefulbees:forest_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/jungle_bee_next'
+        },
+        {
+            output: 'resourcefulbees:nether_bee_nest',
+            pattern: ['AAA', 'BCB', 'ABA'],
+            key: {
+                A: ['minecraft:crimson_planks', 'minecraft:warped_planks'],
+                B: 'resourcefulbees:glowstone_honeycomb',
+                C: 'resourcefulbees:pigman_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/nether_bee_next'
+        },
+        {
+            output: 'resourcefulbees:prismarine_bee_nest',
+            pattern: ['AAA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:prismarine',
+                B: 'resourcefulbees:water_honeycomb',
+                C: 'resourcefulbees:rocky_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/prismarine_bee_next'
+        },
+        {
+            output: 'resourcefulbees:purpur_bee_nest',
+            pattern: ['AAA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:purpur_block',
+                B: 'resourcefulbees:ender_honeycomb',
+                C: 'resourcefulbees:obsidian_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/purpur_bee_next'
+        },
+        {
+            output: 'resourcefulbees:birch_bee_nest',
+            pattern: ['AAA', 'BBB', 'ABA'],
+            key: {
+                A: 'minecraft:birch_planks',
+                B: 'resourcefulbees:forest_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/birch_bee_next'
+        },
+        {
+            output: 'resourcefulbees:wither_bee_nest',
+            pattern: ['AAA', 'BBB', 'ABA'],
+            key: {
+                A: 'architects_palette:withered_bone_block',
+                B: 'resourcefulbees:wither_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/wither_bee_next'
+        },
+        {
+            output: 'resourcefulbees:brown_mushroom_bee_nest',
+            pattern: ['AAA', 'BBB', 'ABA'],
+            key: {
+                A: 'minecraft:brown_mushroom_block',
+                B: 'resourcefulbees:soup_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/brown_mushroom_bee_nest'
+        },
+        {
+            output: 'resourcefulbees:crimson_bee_nest',
+            pattern: ['AAA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:crimson_stem',
+                B: 'resourcefulbees:glowstone_honeycomb',
+                C: 'resourcefulbees:pigman_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/crimson_bee_nest'
+        },
+        {
+            output: 'resourcefulbees:crimson_nylium_bee_nest',
+            pattern: ['AAA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:crimson_nylium',
+                B: 'resourcefulbees:glowstone_honeycomb',
+                C: 'resourcefulbees:pigman_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/crimson_nylium_bee_nest'
+        },
+        {
+            output: 'resourcefulbees:dark_oak_bee_nest',
+            pattern: ['AAA', 'BBB', 'ABA'],
+            key: {
+                A: 'minecraft:dark_oak_planks',
+                B: 'resourcefulbees:forest_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/dark_oak_bee_nest'
+        },
+        {
+            output: 'resourcefulbees:red_mushroom_bee_nest',
+            pattern: ['AAA', 'BBB', 'ABA'],
+            key: {
+                A: 'minecraft:red_mushroom_block',
+                B: 'resourcefulbees:soup_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/red_mushroom_bee_nest'
+        },
+        {
+            output: 'resourcefulbees:spruce_bee_nest',
+            pattern: ['AAA', 'BBB', 'ABA'],
+            key: {
+                A: 'minecraft:spruce_planks',
+                B: 'resourcefulbees:forest_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/spruce_bee_nest'
+        },
+        {
+            output: 'resourcefulbees:warped_bee_nest',
+            pattern: ['AAA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:warped_stem',
+                B: 'resourcefulbees:glowstone_honeycomb',
+                C: 'resourcefulbees:pigman_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/warped_bee_nest'
+        },
+        {
+            output: 'resourcefulbees:warped_nylium_bee_nest',
+            pattern: ['AAA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:warped_nylium',
+                B: 'resourcefulbees:glowstone_honeycomb',
+                C: 'resourcefulbees:pigman_honeycomb'
+            },
+            id: 'enigmatica:base/resourcefulbees/warped_nylium_bee_nest'
         }
     ];
 

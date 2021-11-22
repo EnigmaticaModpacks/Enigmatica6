@@ -11,6 +11,16 @@ onEvent('recipes', (event) => {
                 E: 'ars_nouveau:mana_bloom'
             },
             id: 'ars_nouveau:source_berry_pie'
+        },
+        {
+            output: 'ars_nouveau:novice_spell_book',
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: '#forge:nuggets/gold',
+                B: 'minecraft:purple_carpet',
+                C: 'minecraft:book'
+            },
+            id: 'ars_nouveau:novice_spell_book'
         }
     ];
 

@@ -106,6 +106,8 @@ onEvent('recipes', (event) => {
         'farmersdelight:milk_bucket_from_bottles',
 
         'industrialforegoing:laser_drill_ore/niter',
+        'industrialforegoing:laser_drill_ore/iridium',
+        'industrialforegoing:laser_drill_ore/peridot',
         'industrialforegoing:laser_drill_ore/sapphire',
         'industrialforegoing:laser_drill_ore/ruby',
         'industrialforegoing:laser_drill_ore/ancient_debris',
@@ -207,6 +209,8 @@ onEvent('recipes', (event) => {
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
+
+        'quark:building/crafting/compressed/gunpowder_sack',
 
         'simplefarming:candy',
         'simplefarming:raw_chicken_wings',

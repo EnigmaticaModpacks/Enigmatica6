@@ -548,6 +548,35 @@ onEvent('recipes', (event) => {
                 L: 'meetyourfight:fortunes_favor'
             },
             id: 'meetyourfight:cocktail_shotgun'
+        },
+        {
+            output: 'kubejs:fluid_drill_package',
+            pattern: ['CDC', 'ABA', 'BEB', 'ABA', 'CFC'],
+            key: {
+                A: 'industrialforegoing:efficiency_addon_2',
+                B: 'industrialforegoing:laser_drill',
+                C: 'industrialforegoing:speed_addon_2',
+                D: 'industrialforegoing:laser_lens10',
+                E: 'industrialforegoing:fluid_laser_base',
+                F: 'mekanism:cardboard_box'
+            },
+            id: `${id_prefix}fluid_drill_package`
+        },
+        {
+            output: 'industrialforegoing:mob_duplicator',
+            pattern: ['ABCBA', 'BDEFB', 'CGHGC', 'BFIDB', 'ABCBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: '#forge:plastic',
+                C: 'powah:capacitor_nitro',
+                D: '#forge:circuits/elite',
+                E: 'rftoolsutility:spawner',
+                F: 'ars_nouveau:greater_experience_gem',
+                G: 'pneumaticcraft:huge_tank',
+                H: 'botania:spawner_mover',
+                I: '#industrialforegoing:machine_frame/supreme'
+            },
+            id: 'industrialforegoing:mob_duplicator'
         }
     ];
 

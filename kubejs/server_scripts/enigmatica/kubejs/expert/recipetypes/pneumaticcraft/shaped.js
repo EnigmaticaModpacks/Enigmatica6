@@ -382,6 +382,16 @@ onEvent('recipes', (event) => {
                 C: 'naturesaura:calling_spirit'
             },
             id: 'pneumaticcraft:spawner_core_shell'
+        },
+        {
+            output: Item.of('6x pneumaticcraft:heat_pipe'),
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'pneumaticcraft:thermal_lagging',
+                B: '#forge:storage_blocks/compressed_iron',
+                C: '#forge:storage_blocks/copper'
+            },
+            id: 'pneumaticcraft:heat_pipe'
         }
     ];
 

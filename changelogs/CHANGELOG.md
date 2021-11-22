@@ -1,18 +1,22 @@
 ### Enigmatica 6 v0.5.21
 
-_Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.21.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.21.md)_
+_Using Forge-1.16.5-36.2.9_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.21.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.21.md)_
 
 **Bug Fixes**
 
-- 
+-
 
 **Changes/Improvements**
 
-- 
+-   Bees QOL [\#3703](https://github.com/NillerMedDild/Enigmatica6/pull/3703) ([TemperedFool](https://github.com/TemperedFool))
+    -   Adds recipes for Resourceful Bees world-gen Bee Nests
+    -   Expands Spawning Biomes for Beeper, Slimey Bee, Zombee, Sandy Bee, Skeleton Bee
+    -   Emerald Comb Secondary Product changed to Prismarine Shards
+    -   Most bee mutation counts reduced from 10 to 4.
+    -   Mutation targets for most bees adjusted - they now target various cobblestones (vanilla, diorite, andesite, granite) or polished basalt. Products produced are generally the appropriate stone ore. Should reduce unintentional mutations.
+-
 
 ---
-
-
 
 ### Enigmatica 6 v0.5.20
 
@@ -20,20 +24,16 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Bug Fixes**
 
-- Restore Mekanism factory recipes as well as refined obsidian/glowstone [\#3635](https://github.com/NillerMedDild/Enigmatica6/pull/3635) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Restore Mekanism factory recipes as well as refined obsidian/glowstone [\#3635](https://github.com/NillerMedDild/Enigmatica6/pull/3635) ([MuteTiefling](https://github.com/MuteTiefling))
 
 **Changes/Improvements**
 
--   Enabled the Enigmatica Resource Pack by default 
+-   Enabled the Enigmatica Resource Pack by default
     -   Only applies to new instances
 -   Made the chapter-start checkbox quests semi-optional [\#3641](https://github.com/NillerMedDild/Enigmatica6/issues/3641)
 -   Rename the `Any minecraft:coals` quest objective [\#3640](https://github.com/NillerMedDild/Enigmatica6/issues/3640)
 
-
-
 ---
-
-
 
 ### Enigmatica 6 v0.5.19
 
@@ -98,11 +98,7 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   Updates occultism quest chapter [\#3532](https://github.com/NillerMedDild/Enigmatica6/pull/3532) ([theboo](https://github.com/theboo))
 -   Use `pnc:compressed_iron_gear` texture from ERP [\#3591](https://github.com/NillerMedDild/Enigmatica6/pull/3591) ([Quezler](https://github.com/Quezler))
 
-
-
 ---
-
-
 
 ### Enigmatica 6 v0.5.18
 
@@ -110,11 +106,7 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 An important bug fix was made just after 0.5.18 was released, please disregard this version :smile:
 
-
-
 ---
-
-
 
 ### Enigmatica 6 v0.5.17
 
@@ -162,11 +154,7 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   Remove the Botania book from the loot table. [\#3463](https://github.com/NillerMedDild/Enigmatica6/issues/3463)
 -   Resourceful Bees: Tiered Beehive Removal [\#3421](https://github.com/NillerMedDild/Enigmatica6/pull/3421) ([TemperedFool](https://github.com/TemperedFool))
 
-
-
 ---
-
-
 
 ### Enigmatica 6 v0.5.16
 
@@ -179,11 +167,7 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   Work-in-progress Expert Quest Line showing in normal E6! [\#3419](https://github.com/NillerMedDild/Enigmatica6/issues/3419)
 -   Fix missing NBT on SushiGo Wasabee tobiko craft [\#3418](https://github.com/NillerMedDild/Enigmatica6/pull/3418) ([Thelm76](https://github.com/Thelm76))
 
-
-
 ---
-
-
 
 ### Enigmatica 6 v0.5.15
 

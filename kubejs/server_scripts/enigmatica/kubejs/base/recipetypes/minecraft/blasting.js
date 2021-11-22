@@ -2,8 +2,8 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/minecraft/blasting/';
     const recipes = [
         {
-            input: 'minecraft:rotten_flesh',
-            output: 'occultism:tallow',
+            input: 'architects_palette:rotten_flesh_block',
+            output: Item.of('9x occultism:tallow'),
             xp: 0.5,
             id: `${id_prefix}tallow_from_flesh`
         },

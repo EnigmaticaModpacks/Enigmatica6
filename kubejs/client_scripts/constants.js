@@ -176,6 +176,9 @@ const itemsToHide = [
     'emendatusenigmatica:molten_utherium_bucket',
     'emendatusenigmatica:molten_regalium_bucket',
     'emendatusenigmatica:molten_iesnium_bucket',
+    /iridium/,
+    /cast_iron/,
+    /peridot/,
 
     'environmental:cherry_pie',
     'environmental:apple_pie',
@@ -375,7 +378,8 @@ ee_types.forEach((type) => {
         `emendatusenigmatica:coal_${type}`,
         `emendatusenigmatica:sapphire_${type}`,
         `emendatusenigmatica:ruby_${type}`,
-        `emendatusenigmatica:iridium_${type}`
+        `emendatusenigmatica:iridium_${type}`,
+        `emendatusenigmatica:peridot_${type}`
     );
 });
 

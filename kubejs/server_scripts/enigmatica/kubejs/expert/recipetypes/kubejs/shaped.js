@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/kubejs/';
+    const id_prefix = 'enigmatica:expert/kubejs/shaped';
     /*
         ,
         {

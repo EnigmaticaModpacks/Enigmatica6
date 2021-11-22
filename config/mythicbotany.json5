@@ -110,5 +110,38 @@
     // This value is multiplied with the damage to the main target.
     // Range: 0.0 - 1.0
     "secondary_target_multiplier": 0.2
+  },
+  
+  "spawns": {
+  
+    // Spawn configuration for the illusioner in alfheim.
+    "illusioner": {
+    
+      "max": 1,
+      
+      "min": 1,
+      
+      "weight": 5
+    },
+    
+    // Spawn configuration for the alf pixie.
+    "pixies": {
+    
+      "max": 10,
+      
+      "min": 4,
+      
+      "weight": 50
+    },
+    
+    // Spawn configuration for the withes in alfheim.
+    "witch": {
+    
+      "max": 2,
+      
+      "min": 1,
+      
+      "weight": 10
+    }
   }
 }
