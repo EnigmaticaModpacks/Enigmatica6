@@ -1,0 +1,62 @@
+{
+    "flower": "undergarden:gloomgourd",
+    "lore": "Tier 2:\nMating the Clogged Bee with the I-C-Bee\nyields chilled out, Frosty children.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/frosty",
+    "ColorData": {
+        "honeycombColor": "#2f4e32",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+    	"hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:stone",
+            "outputs": [
+              {"outputID": "undergarden:depthrock", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:UNDERGARDEN",
+        "biomeBlacklist": "tag:OCEAN,NETHER,END",
+        "lightLevel": "ANY",
+        "spawnWeight": 10,
+        "minYLevel": 12,
+        "maxYLevel": 250,
+        "minGroupSize": 2,
+        "maxGroupSize": 4
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "clogged",
+        "parent2": "icy",
+        "feedItem": "undergarden:froststeel_ingot",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}
