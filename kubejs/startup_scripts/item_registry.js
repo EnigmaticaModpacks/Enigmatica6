@@ -43,7 +43,8 @@ onEvent('item.registry', (event) => {
         'memory_elite_filled',
         'memory_ultimate_empty',
         'memory_ultimate_filled',
-        'scented_stick'
+        'scented_stick',
+        'celestial_mycelium_filaments'
     ];
 
     const ritualDummies = [
@@ -71,7 +72,23 @@ onEvent('item.registry', (event) => {
         'craft_advanced_compacting_upgrade',
         'craft_tool_swapper_upgrade',
         'craft_advanced_tool_swapper_upgrade',
-        'craft_refill_upgrade'
+        'craft_refill_upgrade',
+        'craft_mycelial_netherstar',
+        'craft_mycelial_halitosis',
+        'craft_mycelial_meatallurgic',
+        'craft_mycelial_potion',
+        'craft_mycelial_magma',
+        'craft_mycelial_slimey',
+        'craft_mycelial_crimed',
+        'craft_mycelial_ender',
+        'craft_mycelial_explosive',
+        'craft_mycelial_disenchantment',
+        'craft_mycelial_rocket',
+        'craft_mycelial_death',
+        'craft_mycelial_frosty',
+        'craft_mycelial_culinary',
+        'craft_mycelial_pink',
+        'craft_mycelial_furnace'
     ];
 
     const reusableItemTextures = [
