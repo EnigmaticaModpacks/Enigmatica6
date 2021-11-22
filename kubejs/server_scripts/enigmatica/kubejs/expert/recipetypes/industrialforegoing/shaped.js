@@ -406,6 +406,131 @@ onEvent('recipes', (event) => {
                 C: 'rftoolscontrol:ram_chip'
             },
             id: `${id_prefix}range_addon2`
+        },
+        {
+            output: 'industrialforegoing:fluid_placer',
+            pattern: ['AAA', 'ABC', 'DED'],
+            key: {
+                A: 'immersiveengineering:fluid_pipe',
+                B: 'create:propeller',
+                C: 'industrialforegoing:common_black_hole_tank',
+                D: 'minecraft:smooth_stone',
+                E: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:fluid_placer'
+        },
+        {
+            output: 'industrialforegoing:water_condensator',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:sheetmetals/aluminum',
+                B: 'industrialforegoing:common_black_hole_tank',
+                C: 'create:fluid_pipe',
+                D: 'create:mechanical_pump',
+                E: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:water_condensator'
+        },
+        {
+            output: 'industrialforegoing:block_placer',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:plastic',
+                B: 'minecraft:dispenser',
+                C: 'industrialforegoing:dryrubber',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:block_placer'
+        },
+        {
+            output: 'industrialforegoing:block_breaker',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:plastic',
+                B: 'immersiveengineering:drillhead_steel',
+                C: '#forge:gears/steel',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:block_breaker'
+        },
+        {
+            output: 'industrialforegoing:spores_recreator',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: 'astralsorcery:nocturnal_powder',
+                C: '#forge:mushrooms',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'minecraft:mycelium',
+                F: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:spores_recreator'
+        },
+        {
+            output: 'industrialforegoing:plant_sower',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: 'create:weighted_ejector',
+                C: '#forge:slimeballs',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: '#forge:gears/lumium',
+                F: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:plant_sower'
+        },
+        {
+            output: 'industrialforegoing:plant_gatherer',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: '#forge:plastic',
+                B: 'create:mechanical_arm',
+                C: 'naturesaura:infused_iron_axe',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'naturesaura:infused_iron_hoe',
+                F: '#forge:gears/lumium',
+                G: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:plant_gatherer'
+        },
+        {
+            output: 'industrialforegoing:sludge_refiner',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:plates/brass',
+                C: 'immersiveengineering:alloybrick',
+                D: 'create:basin',
+                E: '#forge:gears/uranium',
+                F: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:sludge_refiner'
+        },
+        {
+            output: 'industrialforegoing:fluid_extractor',
+            pattern: ['AAA', 'BCD', 'AEA'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_white',
+                B: 'industrialforegoing:common_black_hole_tank',
+                C: 'tconstruct:seared_channel',
+                D: 'create:mechanical_drill',
+                E: '#industrialforegoing:machine_frame/pity'
+            },
+            id: 'industrialforegoing:fluid_extractor'
+        },
+        {
+            output: 'industrialforegoing:latex_processing_unit',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: 'immersiveengineering:fluid_pipe',
+                B: 'industrialforegoing:common_black_hole_tank',
+                C: '#industrialforegoing:machine_frame/pity',
+                D: '#forge:gears/uranium',
+                E: 'thermal:rf_coil'
+            },
+            id: 'industrialforegoing:latex_processing_unit'
         }
     ];
 
