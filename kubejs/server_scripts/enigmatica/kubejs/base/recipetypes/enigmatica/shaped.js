@@ -297,54 +297,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}minecraft/horn_coral_block`
         },
         {
-            output: Item.of('valhelsia_structures:oak_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:oak_log'
-            },
-            id: `${id_prefix}valhelsia_structures/oak_post`
-        },
-        {
-            output: Item.of('valhelsia_structures:spruce_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:spruce_log'
-            },
-            id: `${id_prefix}valhelsia_structures/spruce_post`
-        },
-        {
-            output: Item.of('valhelsia_structures:birch_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:birch_log'
-            },
-            id: `${id_prefix}valhelsia_structures/birch_post`
-        },
-        {
-            output: Item.of('valhelsia_structures:jungle_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:jungle_log'
-            },
-            id: `${id_prefix}valhelsia_structures/jungle_post`
-        },
-        {
-            output: Item.of('valhelsia_structures:dark_oak_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:dark_oak_log'
-            },
-            id: `${id_prefix}valhelsia_structures/dark_oak_post`
-        },
-        {
-            output: Item.of('valhelsia_structures:acacia_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:acacia_log'
-            },
-            id: `${id_prefix}valhelsia_structures/acacia_post`
-        },
-        {
             output: Item.of('minecraft:ladder', 4),
             pattern: ['A A', 'ABA', 'A A'],
             key: {
