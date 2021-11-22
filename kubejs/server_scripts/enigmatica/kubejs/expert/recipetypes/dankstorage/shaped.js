@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'resourcefulbees:coal_honeycomb_block',
                 B: 'framedcompactdrawers:framed_full_two',
-                C: 'framedcompactdrawers:framed_drawer_controller'
+                C: 'industrialforegoing:common_black_hole_unit'
             },
             id: 'dankstorage:1'
         }
