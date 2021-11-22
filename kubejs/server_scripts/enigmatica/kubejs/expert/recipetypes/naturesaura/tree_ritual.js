@@ -103,7 +103,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'naturesaura:infused_iron' }, //top
                 { item: 'architects_palette:sunstone' }, //bottom
-                { item: 'ars_nouveau:glyph_grow' }, //left
+                { item: 'ars_nouveau:sylph_shards' }, //left
                 { item: 'naturesaura:token_joy' }, //right
                 { item: 'thermal:phytogro' }, //topleft
                 { item: 'botania:livingwood' }, //bottomright

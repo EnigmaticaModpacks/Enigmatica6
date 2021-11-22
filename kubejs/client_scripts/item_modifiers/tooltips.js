@@ -176,6 +176,10 @@ onEvent('item.tooltip', (event) => {
                 Text.of(`- Refinery`).aqua(),
                 Text.of(`- Sulfur Recovery Unit`).aqua()
             ]
+        },
+        {
+            items: [/natures\w+:\w+_generator/],
+            text: [Text.of(`Aura Generator`).green()]
         }
     ];
 
