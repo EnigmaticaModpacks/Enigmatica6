@@ -130,7 +130,7 @@ onEvent('jei.information', (event) => {
         {
             items: ['minecraft:nautilus_shell'],
             text: [
-                'Obtained by killing Nautilus, found in Oceans.',
+                'Obtained by killing Nautilus, found in Warm Oceans.',
                 ' ',
                 'Also obtained from Embedded Ammonite, found at any Y level in Oceans and Beaches.'
             ]
