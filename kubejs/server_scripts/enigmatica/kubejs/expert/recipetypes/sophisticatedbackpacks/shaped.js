@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
             output: 'sophisticatedbackpacks:stack_upgrade_tier_1',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
-                A: 'refinedstorage:quartz_enriched_iron_block',
+                A: '#forge:ingots/pig_iron',
                 B: 'immersiveengineering:hemp_fabric',
                 C: 'sophisticatedbackpacks:upgrade_base'
             },

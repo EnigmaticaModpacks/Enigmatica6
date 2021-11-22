@@ -51,6 +51,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/alloybrick',
 
         'industrialforegoing:mob_slaughter_factory',
+        /industrialforegoing:mycelial/,
+        'industrialforegoing:dissolution_chamber/mycelial_reactor',
 
         'integrateddynamics:crafting/cable',
         'integrateddynamics:crafting/cable_rotated',
@@ -125,6 +127,8 @@ onEvent('recipes', (event) => {
         'tconstruct:smeltery/melting/metal/netherite/lodestone',
 
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
+
+        'waystones:warp_dust',
 
         /create:crafting\/materials\/andesite_alloy/,
         /emendatusenigmatica:alloy_dust/
