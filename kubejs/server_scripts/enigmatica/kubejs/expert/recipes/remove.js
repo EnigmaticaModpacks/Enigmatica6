@@ -51,6 +51,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/alloybrick',
 
         'industrialforegoing:mob_slaughter_factory',
+        /industrialforegoing:mycelial/,
+        'industrialforegoing:dissolution_chamber/mycelial_reactor',
 
         'integrateddynamics:crafting/cable',
         'integrateddynamics:crafting/cable_rotated',
