@@ -73,6 +73,7 @@ onEvent('item.registry', (event) => {
         'craft_tool_swapper_upgrade',
         'craft_advanced_tool_swapper_upgrade',
         'craft_refill_upgrade',
+        'craft_otherworldly_honey_bottle',
         'craft_mycelial_netherstar',
         'craft_mycelial_halitosis',
         'craft_mycelial_meatallurgic',
