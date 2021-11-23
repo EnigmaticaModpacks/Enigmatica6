@@ -798,6 +798,39 @@ onEvent('server.datapack.high_priority', (event) => {
                 }
             ],
             valid_gear_sets: ['#standard']
+        },
+        {
+            name: 'brutish_zombee',
+            entity: 'resourcefulbees:brutish_zombee_bee',
+            weight: 3,
+            size: { width: 2, height: 2 },
+            enchant_chance: 0.35,
+            rarity_offset: 800,
+            enchantment_levels: [40, 30, 60, 30],
+            effects: [{ effect: 'minecraft:regeneration', chance: 1.0 }],
+            attribute_modifiers: [
+                {
+                    attribute: 'minecraft:generic.max_health',
+                    operation: 'MULTIPLY_BASE',
+                    value: { min: 4, max: 12 }
+                },
+                {
+                    attribute: 'minecraft:generic.movement_speed',
+                    operation: 'MULTIPLY_BASE',
+                    value: { min: 0.08, max: 0.17 }
+                },
+                {
+                    attribute: 'minecraft:generic.attack_damage',
+                    operation: 'MULTIPLY_BASE',
+                    value: { min: 2, max: 8 }
+                },
+                {
+                    attribute: 'minecraft:generic.knockback_resistance',
+                    operation: 'ADDITION',
+                    value: { min: 1, max: 1 }
+                }
+            ],
+            valid_gear_sets: ['#standard', '#flying_bugs']
         }
     ];
 
