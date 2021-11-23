@@ -1229,6 +1229,55 @@ onEvent('recipes', (event) => {
                 { item: '10 o'clock' }
             ],
     */
+    let mycelial_generators = [
+        { name: 'netherstar', ingredients: ['ars_nouveau:glyph_wither', 'minecraft:nether_star'] },
+        { name: 'halitosis', ingredients: ['botania:dragonstone', 'minecraft:dragon_breath'] },
+        { name: 'meatallurgic', ingredients: ['kubejs:meat_ingot', 'artifacts:eternal_steak'] },
+        { name: 'potion', ingredients: ['atum:anputs_fingers_spores', 'botania:brewery'] },
+        { name: 'magma', ingredients: ['tconstruct:magma_cake', 'minecraft:magma_block'] },
+        { name: 'slimey', ingredients: ['tconstruct:earth_cake', 'botania:slime_bottle'] },
+        { name: 'crimed', ingredients: ['minecraft:warped_wart_block', 'minecraft:shroomlight'] },
+        { name: 'ender', ingredients: ['tconstruct:ender_cake', 'powah:ender_core'] },
+        { name: 'explosive', ingredients: ['thermal:fire_tnt', 'industrialforegoing:infinity_nuke'] },
+        { name: 'disenchantment', ingredients: ['apotheosis:draconic_endshelf', 'botania:rosa_arcana'] },
+        { name: 'rocket', ingredients: ['minecraft:firework_rocket', 'alexsmobs:frontier_cap'] },
+        { name: 'death', ingredients: ['eidolon:reaper_scythe', 'naturesaura:chorus_generator'] },
+        { name: 'frosty', ingredients: ['thermal:ice_tnt', 'betterendforge:ancient_emerald_ice'] },
+        { name: 'culinary', ingredients: ['create:builders_tea', 'nethers_delight:stuffed_hoglin_item'] },
+        { name: 'pink', ingredients: ['industrialforegoing:pink_slime_ingot', 'botania:pinkinator'] },
+        { name: 'furnace', ingredients: ['create:encased_fan', 'industrialforegoing:resourceful_furnace'] }
+    ];
+    mycelial_generators.forEach((mycelial_generator) => {
+        recipes.push({
+            ritual_type: 'occultism:craft',
+            activation_item: { item: 'occultism:dimensional_matrix' },
+            pentacle_id: 'occultism:craft_marid',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:mungus',
+                display_name: 'ritual.occultism.sacrifice.mungus'
+            },
+            ritual_dummy: { item: `industrialforegoing:mycelial_${mycelial_generator.name}` },
+            ingredients: [
+                { item: mycelial_generator.ingredients[1] },
+                { item: 'mekanismgenerators:fusion_reactor_frame' },
+                { tag: 'industrialforegoing:machine_frame/supreme' },
+                { item: 'mekanismgenerators:fusion_reactor_frame' },
+
+                { item: mycelial_generator.ingredients[0] },
+                { item: 'kubejs:celestial_mycelium_filaments' },
+                { tag: 'forge:circuits/ultimate' },
+                { item: 'kubejs:celestial_mycelium_filaments' },
+
+                { item: mycelial_generator.ingredients[0] },
+                { item: 'kubejs:celestial_mycelium_filaments' },
+                { tag: 'forge:circuits/ultimate' },
+                { item: 'kubejs:celestial_mycelium_filaments' }
+            ],
+            result: { item: `industrialforegoing:mycelial_${mycelial_generator.name}` },
+            id: `${id_prefix}mycelial_${mycelial_generator.name}`
+        });
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';

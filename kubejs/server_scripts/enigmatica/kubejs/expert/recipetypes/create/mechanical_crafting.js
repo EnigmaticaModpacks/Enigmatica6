@@ -577,6 +577,24 @@ onEvent('recipes', (event) => {
                 I: '#industrialforegoing:machine_frame/supreme'
             },
             id: 'industrialforegoing:mob_duplicator'
+        },
+        {
+            output: 'industrialforegoing:mycelial_reactor',
+            pattern: ['ABCCCBA', 'BDEFEDB', 'CEDGDEC', 'CFHIJFC', 'CEDKDEC', 'BDEFEDB', 'ABCCCBA'],
+            key: {
+                A: 'minecraft:shroomlight',
+                B: 'thermal:enderium_glass',
+                C: '#forge:plastic',
+                D: 'kubejs:celestial_mycelium_filaments',
+                E: 'mekanismgenerators:fusion_reactor_frame',
+                F: '#forge:circuits/ultimate',
+                G: 'undergarden:ink_mushroom_cap',
+                H: 'betterendforge:mossy_glowshroom_cap',
+                I: 'astralsorcery:shifting_star',
+                J: 'minecraft:red_mushroom_block',
+                K: 'byg:soul_shroom_block'
+            },
+            id: 'industrialforegoing:mycelial_reactor'
         }
     ];
 
