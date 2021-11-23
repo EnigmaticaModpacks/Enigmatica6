@@ -380,6 +380,26 @@ onEvent('jei.information', (event) => {
                 Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:dusty_mummbee_bee' })
             ],
             text: [`The Dusty Mummbee can be found inside the Pharaoh's Sarcophagus.`]
+        },
+        {
+            items: ['quark:slime_in_a_bucket'],
+            text: [`Scoop up a small slime in an empty bucket.`]
+        },
+        {
+            items: ['alexsmobs:mysterious_worm'],
+            text: [
+                `Summons a Void Worm when tossed into the void in The End.`,
+                ` `,
+                `Place a Crimson Mosquito Larva inside a Capsid to obtain.`
+            ]
+        },
+        {
+            items: ['alexsmobs:capsid'],
+            text: [
+                `Dropped by Enderiophage.`,
+                ` `,
+                `Enderiophage may be found in the wild in the End Midlands biome. They may also be called forth by consuming Otherworldly Honey.`
+            ]
         }
     ];
 
