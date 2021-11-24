@@ -376,6 +376,12 @@ onEvent('jei.information', (event) => {
             text: [`Sneak Right Click to upgrade a Dank installed in a Dock.`]
         },
         {
+            items: [
+                Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:dusty_mummbee_bee' })
+            ],
+            text: [`The Dusty Mummbee can be found inside the Pharaoh's Sarcophagus.`]
+        },
+        {
             items: ['quark:slime_in_a_bucket'],
             text: [`Scoop up a small slime in an empty bucket.`]
         },

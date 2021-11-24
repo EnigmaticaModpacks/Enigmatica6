@@ -1,0 +1,17 @@
+{
+    "name" : "mana",
+    "hunger": 2,
+    "honeyColor": "#741CFF",
+    "saturation": 1,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : false,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "ars_nouveau:mana_regen",
+        "duration": 9600,
+        "strength":2,
+        "chance": 1
+      }
+    ]
+  }

@@ -14,7 +14,19 @@ _Using Forge-1.16.5-36.2.9_ | _[Mod Updates](https://github.com/NillerMedDild/En
     -   Emerald Comb Secondary Product changed to Prismarine Shards
     -   Most bee mutation counts reduced from 10 to 4.
     -   Mutation targets for most bees adjusted - they now target various cobblestones (vanilla, diorite, andesite, granite) or polished basalt. Products produced are generally the appropriate stone ore. Should reduce unintentional mutations.
--
+-   Many More Bees [\#3765](https://github.com/NillerMedDild/Enigmatica6/pull/3765) ([TemperedFool](https://github.com/TemperedFool))
+    - Adds new bees:
+        - Brutish Zombee
+        - Carbee
+        - Otherworldly Bee
+        - Shepherd Bee
+        - Dusty Mummbee
+        - Clogged Bee
+        - Frosty Bee
+        - Regal Bee
+    - Adds related crafting recipes
+    - Adds Mana and Otherworldly Honey
+    - Adds Plastic Brick immunity to PCBee and Sedementary Bees
 
 ---
 
