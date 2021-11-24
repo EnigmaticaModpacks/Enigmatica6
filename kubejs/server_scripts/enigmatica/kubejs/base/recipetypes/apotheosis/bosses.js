@@ -807,7 +807,11 @@ onEvent('server.datapack.high_priority', (event) => {
             enchant_chance: 0.35,
             rarity_offset: 800,
             enchantment_levels: [40, 30, 60, 30],
-            effects: [{ effect: 'minecraft:regeneration', chance: 1.0 }],
+            effects: [
+                          { effect: 'minecraft:regeneration', chance: 1.0 },
+                          { effect: 'environmental:panic', chance: 1.0 },
+                          { effect: 'tetra:howling', chance: 1.0 }
+                     ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
