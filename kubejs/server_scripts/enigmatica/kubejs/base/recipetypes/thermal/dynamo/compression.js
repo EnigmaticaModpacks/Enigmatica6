@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
             { input: 'pneumaticcraft:ethanol', energy: 400000 },
             { input: 'mekanismgenerators:bioethanol', energy: 400000 },
             { input: 'immersiveengineering:ethanol', energy: 400000 },
-            { input: 'industrialforegoing:biofuel', energy: 100000 },
+            { input: 'industrialforegoing:biofuel', energy: 1000000 },
             { input: 'thermal:tree_oil', energy: 100000 },
             { input: 'thermal:creosote', energy: 20000 },
             { input: 'immersiveengineering:creosote', energy: 20000 },
