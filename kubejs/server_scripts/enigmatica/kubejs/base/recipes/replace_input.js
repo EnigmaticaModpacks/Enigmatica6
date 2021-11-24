@@ -4,9 +4,13 @@ onEvent('recipes', (event) => {
             replaceTarget: { id: 'entangled:block' },
             toReplace: 'minecraft:chest',
             replaceWith: '#forge:chests/wooden'
+        },
+        {
+            replaceTarget: { id: 'constructionwand:stone_wand' },
+            toReplace: '#minecraft:stone_tool_materials',
+            replaceWith: '#quark:stone_tool_materials'
         }
     ];
-    event.replaceInput({}, '#minecraft:stone_tool_materials', '#quark:stone_tool_materials');
     event.replaceInput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');
     event.replaceInput({}, 'architects_palette:withered_bone', '#forge:bones/wither');
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
