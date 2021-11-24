@@ -38,6 +38,17 @@ onEvent('recipes', (event) => {
             },
             id: 'immersiveengineering:crafting/workbench'
         },
+        {
+            output: 'immersiveengineering:turntable',
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: '#forge:plates/iron',
+                B: 'create:brass_casing',
+                C: '#forge:dusts/redstone',
+                D: 'immersiveengineering:coil_lv'
+            },
+            id: 'immersiveengineering:crafting/turntable'
+        },
 
         /*{
             output: Item.of('immersiveengineering:alloybrick', 4),
