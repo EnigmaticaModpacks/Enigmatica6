@@ -24,9 +24,9 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:gems/apatite', count: 1 }
             ],
             output: {
-                entries: [{ result: { item: 'ars_nouveau:arcane_stone', count: 1 }, weight: 9 }],
-                empty_weight: 1,
-                rolls: 4
+                entries: [{ result: { item: 'ars_nouveau:arcane_stone', count: 4 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
             },
             id: `${id_prefix}arcane_stone`
         },
@@ -188,9 +188,9 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:dusts/nickel', count: 1 }
             ],
             output: {
-                entries: [{ result: { item: 'emendatusenigmatica:invar_dust', count: 1 }, weight: 7 }],
-                empty_weight: 3,
-                rolls: 3
+                entries: [{ result: { item: 'emendatusenigmatica:invar_dust', count: 3 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
             },
             id: `${id_prefix}invar_dust`
         },
@@ -201,9 +201,9 @@ onEvent('recipes', (event) => {
                 { item: 'undergarden:shiverstone', count: 6 }
             ],
             output: {
-                entries: [{ result: { item: 'kubejs:firmament', count: 1 }, weight: 7 }],
-                empty_weight: 3,
-                rolls: 3
+                entries: [{ result: { item: 'kubejs:firmament', count: 3 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
             },
             id: `${id_prefix}firmament`
         }
