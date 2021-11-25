@@ -115,9 +115,9 @@
 		#Max Stored Power [FE] - Default: [10000 FE]
 		maxStoredPower = 500000000
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
-		maxProgress = 50
+		maxProgress = 200
 		#Amount of Power Consumed per Tick - Default: [1000FE]
-		powerPerOperation = 1000000
+		powerPerOperation = 500000
 
 	[MachineResourceProductionConfig.FluidLaserBaseConfig]
 		#Max progress of the machine
@@ -125,13 +125,13 @@
 
 	[MachineResourceProductionConfig.FermentationStationConfig]
 		#Amount of Power Consumed per Tick - Default: [40FE]
-		powerPerTick = 20000
+		powerPerTick = 200
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 2000000
+		maxStoredPower = 20000
 		#Amount of ticks for 2x production - Default: [20 * 5 FE]
-		ticksFor2XProduction = 600
+		ticksFor2XProduction = 300
 		#Amount of ticks for 3x production - Default: [20 * 45 FE]
-		ticksFor3XProduction = 1200
+		ticksFor3XProduction = 600
 		#Amount of ticks for 4x production - Default: [20 * 60 * 2 FE]
 		ticksFor4XProduction = 3600
 		#Amount of ticks for 5x production - Default: [20 * 60 * 5 FE]
@@ -141,9 +141,9 @@
 		#Progress bar size [20 Ticks per Second] - Default: [100 (5s)]
 		maxProgress = 90
 		#Amount of Power Consumed per Tick - Default: [40FE]
-		powerPerTick = 20000
+		powerPerTick = 200
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 2000000
+		maxStoredPower = 20000
 		#Max Amount of Stored Fluid - Default: [8000mB]
 		maxTankSize = 16000
 
@@ -151,9 +151,9 @@
 		#Progress bar size [20 Ticks per Second] - Default: [100 (5s)]
 		maxProgress = 90
 		#Amount of Power Consumed per Tick - Default: [60FE]
-		powerPerTick = 20000
+		powerPerTick = 200
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 2000000
+		maxStoredPower = 20000
 		#Max Amount of Stored Fluid [Meat] - Default: [8000mB]
 		maxTankSize = 8000
 		#Max Amount of Output Fluid  - Default: [8000mB]
