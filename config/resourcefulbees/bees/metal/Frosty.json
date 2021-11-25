@@ -31,7 +31,21 @@
         ]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": false
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "undergarden:froststeel_ore",
+        "mainOutputWeight": 0.4,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "emendatusenigmatica:cobalt_chunk",
+        "secondaryOutputWeight": 0.3,
+        "secondaryOutputCount": 2,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
     },
     "SpawnData": {
         "canSpawnInWorld": true,
