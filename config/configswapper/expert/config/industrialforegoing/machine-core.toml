@@ -29,13 +29,13 @@
 
 	[MachineCoreConfig.DissolutionChamberConfig]
 		#Amount of Power Consumed per Tick - Default: [60FE]
-		powerPerTick = 60
+		powerPerTick = 25000
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 2500000
 		#Max Amount of Stored Fluid [Output] - Default: [8000mB]
 		maxOutputTankSize = 16000
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
 		maxProgress = 100
 		#Max Amount of Stored Fluid [Input] - Default: [8000mB]
-		maxInputTankSize = 8000
+		maxInputTankSize = 16000
 

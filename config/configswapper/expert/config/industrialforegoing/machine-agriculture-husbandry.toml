@@ -73,11 +73,11 @@
 
 	[MachineAgricultureHusbandryConfig.MobCrusherConfig]
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 5000000
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
 		maxProgress = 100
 		#Amount of Power Consumed per Tick - Default: [40FE]
-		powerPerOperation = 50
+		powerPerOperation = 50000
 		#Max Essence [mb] - Default: [32000 mb]
 		tankSize = 32000
 		#Attack Damage for blacklisted entities - Default: [75]
@@ -103,11 +103,11 @@
 
 	[MachineAgricultureHusbandryConfig.MobDuplicatorConfig]
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
-		maxProgress = 62
+		maxProgress = 50
 		#Amount of Power Consumed per Operation - Default: [400FE]
-		powerPerOperation = 5000
+		powerPerOperation = 2500000
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 50000
+		maxStoredPower = 250000000
 		#Max Essence [mb] - Default: [8000 mb]
 		tankSize = 8000
 		#Exact Copy to spawn - Default: [false]
@@ -117,9 +117,9 @@
 
 	[MachineAgricultureHusbandryConfig.WitherBuilderConfig]
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [40 (5s)]
-		maxProgress = 40
+		maxProgress = 100
 		#Amount of Power Consumed per Operation - Default: [500FE]
-		powerPerOperation = 20000
+		powerPerOperation = 500000
 		#Max Stored Power [FE] - Default: [70000 FE]
-		maxStoredPower = 70000
+		maxStoredPower = 50000000
 
