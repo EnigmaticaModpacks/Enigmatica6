@@ -83,12 +83,6 @@
 		#Max Stored Power [FE] - Default: [10000 FE]
 		maxStoredPower = 10000
 
-	[MachineResourceProductionConfig.OreLaserBaseConfig]
-		#How much weight of an item the catalyst will increase
-		catalystModifier = 8
-		#Max progress of the machine
-		maxProgress = 100
-
 	[MachineResourceProductionConfig.MaterialStoneWorkFactoryConfig]
 		#Amount of Power Consumed per Tick - Default: [60FE]
 		powerPerTick = 2000
@@ -113,15 +107,21 @@
 
 	[MachineResourceProductionConfig.LaserDrillConfig]
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 500000000
+		maxStoredPower = 50000000
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
-		maxProgress = 200
+		maxProgress = 100
 		#Amount of Power Consumed per Tick - Default: [1000FE]
 		powerPerOperation = 500000
 
 	[MachineResourceProductionConfig.FluidLaserBaseConfig]
 		#Max progress of the machine
 		maxProgress = 20
+		
+	[MachineResourceProductionConfig.OreLaserBaseConfig]
+		#How much weight of an item the catalyst will increase
+		catalystModifier = 8
+		#Max progress of the machine
+		maxProgress = 200
 
 	[MachineResourceProductionConfig.FermentationStationConfig]
 		#Amount of Power Consumed per Tick - Default: [40FE]
