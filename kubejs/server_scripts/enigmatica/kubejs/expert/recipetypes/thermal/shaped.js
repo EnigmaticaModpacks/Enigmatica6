@@ -210,8 +210,8 @@ onEvent('recipes', (event) => {
             output: 'thermal:machine_smelter',
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
-                A: '#forge:plates/aluminum',
-                B: 'environmental:kiln',
+                A: '#forge:plates/iron_aluminum',
+                B: 'minecraft:blast_furnace',
                 C: 'immersiveengineering:coil_lv',
                 D: 'thermal:machine_frame',
                 E: '#forge:gears/invar',
