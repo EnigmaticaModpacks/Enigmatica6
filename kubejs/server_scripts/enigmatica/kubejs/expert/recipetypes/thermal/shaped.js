@@ -315,7 +315,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: '#forge:gears/brass',
-                B: '#forge:workbenches',
+                B: 'rftoolscontrol:craftingstation',
                 C: 'thermal:redstone_servo',
                 D: 'thermal:machine_frame',
                 E: 'thermal:rf_coil'
