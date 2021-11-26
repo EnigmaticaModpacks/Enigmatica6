@@ -165,6 +165,60 @@ onEvent('generic.loot_tables', (event) => {
                         'ars_nouveau:caster_tome',
                         '{flavor:"Creates a fire that quickly freezes to ice.",color:"255,25,180",spell_0:"[projectile, ignite, delay, conjure_water, freeze]",display:{item:\'{"italic":true,"color":"dark_purple","text":"Farfalla\\\'s Frosty Flames"}\'},current_slot:0,max_slot:1}'
                     )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"Creates a temporary tunnel of blocks.",color:"255,25,180",spell_0:"[touch, intangible, aoe, aoe, pierce, pierce, pierce, pierce, pierce, extend_time]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"The Shadow\\\'s Temporary Tunnel"}\'},current_slot:0,max_slot:1}'
+                    )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"Builds a small hut around the user.",color:"255,25,180",spell_0:"[underfoot, phantom_block, aoe, aoe, aoe, pierce, pierce, pierce]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Xacris\\\' Tiny Hut"}\'},current_slot:0,max_slot:1}'
+                    )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"The squid\'s Lovecraftian roots appear to make it immune.",color:"255,25,180",spell_0:"[projectile, launch, amplify, amplify, delay, pull, amplify, amplify]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Gootastic\\\'s Telekinetic Fishing Rod"}\'},current_slot:0,max_slot:1}'
+                    )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"Cures status effects and grants regeneration.",color:"255,25,180",spell_0:"[touch, rune, dispel, heal, extend_time]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Rune of Renewing"}\'},current_slot:0,max_slot:1}'
+                    )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"Sometimes you just need to get over that wall.",color:"255,25,180",spell_0:"[self, launch, delay, leap, slowfall]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Vault"}\'},current_slot:0,max_slot:1}'
+                    )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"Creates three snaring projectiles.",color:"255,25,180",spell_0:"[projectile, split, split, snare, extend_time, extend_time]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Arachne\\\'s Weaving"}\'},current_slot:0,max_slot:1}'
+                    )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"A classic.",color:"255,25,180",spell_0:"[projectile, ignite, explosion, amplify, amplify, aoe, aoe]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Fireball!"}\'},current_slot:0,max_slot:1}'
+                    )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"Teleportation, with style!",color:"255,25,180",spell_0:"[projectile, blink, explosion, aoe]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Warp Impact"}\'},current_slot:0,max_slot:1}'
+                    )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"",color:"255,25,180",spell_0:"[projectile, launch, amplify, amplify, delay, explosion, amplify]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Bailey\\\'s Bovine Rocket"}\'},current_slot:0,max_slot:1}'
+                    )
                 }
             ]
         },
