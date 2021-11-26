@@ -23,7 +23,7 @@
 	[Peripherals.NBT_Storage]
 		#Enable the nbt storage block or not
 		enableNBTStorage = true
-		#Defines max nbt string that can be stored in nbt storage
+		#Defines max nbt string length that can be stored in nbt storage
 		#Range: > 0
 		nbtStorageMaxSize = 1048576
 
@@ -43,10 +43,16 @@
 	[Peripherals.ME_Bridge]
 		#Enable the Me Bridge or not.
 		enableMeBridge = false
+		#Power consumption per tick.
+		#Range: > 0
+		mePowerConsumption = 500
 
 	[Peripherals.RS_Bridge]
 		#Enable the Rs Bridge or not.
 		enableRsBridge = true
+		#Power consumption per tick.
+		#Range: > 0
+		rsPowerConsumption = 500
 
 	[Peripherals.Environment_Detector]
 		#Enable the Environment Detector or not.

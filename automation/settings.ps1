@@ -160,7 +160,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"oauth-client.toml",
 	"jeed-client.toml",
 	"valhelsia_core-client.toml",
-	"forge-client.toml"
+	"forge-client.toml",
+	"configured-client.toml"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt")
