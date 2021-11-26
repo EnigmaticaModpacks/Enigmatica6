@@ -587,9 +587,9 @@ onEvent('recipes', (event) => {
 
     newRecipes.forEach((recipe) => {
         if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
+            event.shaped(recipe.output, recipe.pattern, recipe.key).noMirror().id(recipe.id);
         } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
+            event.shaped(recipe.output, recipe.pattern, recipe.key).noMirror();
         }
     });
 });
