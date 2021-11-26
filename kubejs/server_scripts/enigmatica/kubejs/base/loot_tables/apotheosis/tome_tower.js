@@ -264,6 +264,12 @@ onEvent('server.datapack.high_priority', (event) => {
                     },
                     {
                         type: 'item',
+                        weight: 100,
+                        name: 'alexsmobs:guster_eye',
+                        functions: [{ function: 'set_count', count: 1 }]
+                    },
+                    {
+                        type: 'item',
                         weight: 50,
                         name: 'ars_nouveau:potion_flask',
                         functions: [
