@@ -246,19 +246,6 @@ onEvent('recipes', (event) => {
             id: 'thermal:machine_crucible'
         },
         {
-            output: 'thermal:machine_bottler',
-            pattern: ['ABC', 'ADC', 'EFC'],
-            key: {
-                A: '#thermal:glass/hardened',
-                B: 'create:spout',
-                C: 'create:fluid_pipe',
-                D: 'create:depot',
-                E: 'thermal:fluid_cell_frame',
-                F: 'mekanism:electric_pump'
-            },
-            id: 'thermal:machine_bottler'
-        },
-        {
             output: 'thermal:machine_chiller',
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
@@ -270,17 +257,6 @@ onEvent('recipes', (event) => {
                 F: '#forge:circuits/basic'
             },
             id: 'thermal:machine_chiller'
-        },
-        {
-            output: 'thermal:machine_pyrolyzer',
-            pattern: ['ABA', 'BCB', 'BDB'],
-            key: {
-                A: '#forge:sheetmetals/steel',
-                B: 'immersiveengineering:blastbrick',
-                C: 'thermal:fluid_cell',
-                D: 'thermal:machine_furnace'
-            },
-            id: 'thermal:machine_pyrolyzer'
         },
         {
             output: 'thermal:machine_centrifuge',
@@ -339,7 +315,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: '#forge:gears/brass',
-                B: 'rftoolscontrol:craftingstation',
+                B: '#forge:workbenches',
                 C: 'thermal:redstone_servo',
                 D: 'thermal:machine_frame',
                 E: 'thermal:rf_coil'
