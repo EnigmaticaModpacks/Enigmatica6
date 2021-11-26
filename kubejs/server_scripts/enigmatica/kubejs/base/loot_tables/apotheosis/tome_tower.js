@@ -2,7 +2,7 @@ onEvent('server.datapack.high_priority', (event) => {
     let loot_table = {
         pools: [
             {
-                name: 'placebo_code_pool_15',
+                item: 'placebo_code_pool_15',
                 rolls: {
                     min: 6.0,
                     max: 9.0,
@@ -135,193 +135,173 @@ onEvent('server.datapack.high_priority', (event) => {
                         quality: 35
                     }
                 ]
-            },
-            {
-                rolls: {
-                    min: 6.0,
-                    max: 9.0
-                },
-                entries: [
-                    {
-                        type: 'item',
-                        weight: 100,
-                        name: 'eidolon:arcane_gold_ingot',
-                        functions: [{ function: 'set_count', count: { min: 5, max: 7 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 100,
-                        name: 'thermal:lightning_charge',
-                        functions: [{ function: 'set_count', count: { min: 5, max: 7 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 100,
-                        name: 'alexsmobs:kangaroo_hide',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 2 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 100,
-                        name: 'alexsmobs:komodo_spit',
-                        functions: [{ function: 'set_count', count: { min: 5, max: 7 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 100,
-                        name: 'alexsmobs:rattlesnake_rattle',
-                        functions: [{ function: 'set_count', count: { min: 5, max: 7 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'eidolon:death_essence',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 2 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'eidolon:ender_calx',
-                        functions: [{ function: 'set_count', count: { min: 5, max: 7 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'astralsorcery:nocturnal_powder',
-                        functions: [{ function: 'set_count', count: { min: 5, max: 7 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'astralsorcery:illumination_powder',
-                        functions: [{ function: 'set_count', count: { min: 5, max: 7 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'botania:blacker_lotus',
-                        functions: [{ function: 'set_count', count: 1 }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'occultism:soul_gem',
-                        functions: [{ function: 'set_count', count: 1 }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 100,
-                        name: 'ars_nouveau:mana_gem',
-                        functions: [{ function: 'set_count', count: { min: 5, max: 7 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'ars_nouveau:wilden_wing',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 2 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'ars_nouveau:wilden_spike',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 2 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'ars_nouveau:wilden_horn',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 2 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'ars_nouveau:drygmy_shard',
-                        functions: [{ function: 'set_count', count: 1 }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'ars_nouveau:wixie_shards',
-                        functions: [{ function: 'set_count', count: 1 }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'ars_nouveau:carbuncle_shards',
-                        functions: [{ function: 'set_count', count: 1 }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 100,
-                        name: 'ars_nouveau:warp_scroll',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 5 } }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 100,
-                        name: 'bloodmagic:intermediatecuttingfluid',
-                        functions: [{ function: 'set_count', count: 1 }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 100,
-                        name: 'alexsmobs:guster_eye',
-                        functions: [{ function: 'set_count', count: 1 }]
-                    },
-                    {
-                        type: 'item',
-                        weight: 50,
-                        name: 'ars_nouveau:potion_flask',
-                        functions: [
-                            { function: 'set_count', count: { min: 1, max: 2 } },
-                            {
-                                function: 'set_nbt',
-                                tag: `{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:\"minecraft:milk_bucket\",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:90b,Amplifier:0b}],Potion:\"ars_nouveau:spell_damage_long\"}`
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                rolls: { min: 0, max: 1 },
-                entries: [
-                    {
-                        type: 'item',
-                        weight: 1,
-                        name: 'ars_nouveau:caster_tome',
-                        functions: [
-                            {
-                                function: 'set_nbt',
-                                tag: `{flavor:\"Gusts of wind, sharp as blades.\",color:\"1,1,1\",spell_0:\"[projectile, split, split, pierce, pierce, gust, amplify, amplify, cut, amplify]\",display:{Name:'{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Wind Blades\"}'},current_slot:0,max_slot:1}`
-                            }
-                        ]
-                    },
-                    {
-                        type: 'item',
-                        weight: 1,
-                        name: 'ars_nouveau:caster_tome',
-                        functions: [
-                            {
-                                function: 'set_nbt',
-                                tag: `{flavor:\"Creates a fire that quickly freezes to ice.\",color:\"255,25,180\",spell_0:\"[projectile, ignite, delay, conjure_water, freeze]\",display:{Name:'{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Farfalla\\'s Frosty Flames\"}'},current_slot:0,max_slot:1}`
-                            }
-                        ]
-                    },
-                    {
-                        type: 'item',
-                        weight: 1,
-                        name: 'ars_nouveau:caster_tome',
-                        functions: [
-                            {
-                                function: 'set_nbt',
-                                tag: `{flavor:\"Believe it!\",color:\"1,1,1\",spell_0:\"[underfoot, linger, accelerate, accelerate, accelerate, aoe, aoe, aoe, summon_decoy]\",display:{Name:'{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Multi Shadow Clone\"}'},current_slot:0,max_slot:1}`
-                            }
-                        ]
-                    }
-                ]
             }
         ]
     };
 
     event.addJson(`apotheosis:loot_tables/tome_tower.json`, loot_table);
+});
+
+onEvent('generic.loot_tables', (event) => {
+    const pools = [
+        {
+            // Caster Tomes: 50:50 chance of one.
+            rolls: { min: 0, max: 1 },
+            entries: [
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"Gusts of wind, sharp as blades.",color:"1,1,1",spell_0:"[projectile, split, split, pierce, pierce, gust, amplify, amplify, cut, amplify]",display:{item:\'{"italic":true,"color":"dark_purple","text":"Wind Blades"}\'},current_slot:0,max_slot:1}'
+                    )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"Believe it!",color:"1,1,1",spell_0:"[underfoot, linger, accelerate, accelerate, accelerate, aoe, aoe, aoe, summon_decoy]",display:{item:\'{"italic":true,"color":"dark_purple","text":"Multi Shadow Clone"}\'},current_slot:0,max_slot:1}'
+                    )
+                },
+                {
+                    item: Item.of(
+                        'ars_nouveau:caster_tome',
+                        '{flavor:"Creates a fire that quickly freezes to ice.",color:"255,25,180",spell_0:"[projectile, ignite, delay, conjure_water, freeze]",display:{item:\'{"italic":true,"color":"dark_purple","text":"Farfalla\\\'s Frosty Flames"}\'},current_slot:0,max_slot:1}'
+                    )
+                }
+            ]
+        },
+        {
+            // Magic Reagents and oddities.
+            rolls: { min: 6, max: 9 },
+            entries: [
+                {
+                    item: Item.of(
+                        'ars_nouveau:potion_flask',
+                        '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:90b,Amplifier:0b}],Potion:"ars_nouveau:spell_damage_long"}'
+                    ),
+                    weight: 50,
+                    count: [1, 2]
+                },
+                {
+                    item: 'ars_nouveau:wilden_spike',
+                    weight: 50,
+                    count: [1, 2]
+                },
+                {
+                    item: 'ars_nouveau:wilden_horn',
+                    weight: 50,
+                    count: [1, 2]
+                },
+                {
+                    item: 'ars_nouveau:wilden_wing',
+                    weight: 50,
+                    count: [1, 2]
+                },
+                {
+                    item: 'eidolon:death_essence',
+                    weight: 50,
+                    count: [1, 2]
+                },
+                {
+                    item: 'alexsmobs:guster_eye',
+                    weight: 50,
+                    count: [1, 2]
+                },
+                {
+                    item: 'alexsmobs:kangaroo_hide',
+                    weight: 50,
+                    count: [1, 2]
+                },
+                {
+                    item: 'botania:blacker_lotus',
+                    weight: 50
+                },
+                {
+                    item: 'occultism:soul_gem',
+                    weight: 50
+                },
+                {
+                    item: 'ars_nouveau:drygmy_shard',
+                    weight: 50
+                },
+                {
+                    item: 'ars_nouveau:wixie_shards',
+                    weight: 50
+                },
+                {
+                    item: 'ars_nouveau:carbuncle_shards',
+                    weight: 50
+                },
+                {
+                    item: 'bloodmagic:intermediatecuttingfluid',
+                    weight: 50
+                },
+                {
+                    item: 'ars_nouveau:warp_scroll',
+                    weight: 100,
+                    count: [1, 5]
+                },
+                {
+                    item: 'eidolon:arcane_gold_ingot',
+                    weight: 100,
+                    count: [2, 7]
+                },
+                {
+                    item: 'thermal:lightning_charge',
+                    weight: 100,
+                    count: [2, 7]
+                },
+                {
+                    item: 'alexsmobs:komodo_spit',
+                    weight: 50,
+                    count: [1, 2]
+                },
+                {
+                    item: 'alexsmobs:rattlesnake_rattle',
+                    weight: 50,
+                    count: [1, 2]
+                },
+                {
+                    item: 'eidolon:ender_calx',
+                    weight: 50,
+                    count: [2, 7]
+                },
+                {
+                    item: 'astralsorcery:nocturnal_powder',
+                    weight: 50,
+                    count: [2, 7]
+                },
+                {
+                    item: 'astralsorcery:illumination_powder',
+                    weight: 50,
+                    count: [2, 7]
+                },
+                {
+                    item: 'ars_nouveau:mana_gem',
+                    weight: 100,
+                    count: [5, 9]
+                }
+            ]
+        }
+    ];
+
+    event.modify('apotheosis:tome_tower', (table) => {
+        pools.forEach((pool) => {
+            table.addPool((newPool) => {
+                newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);
+                pool.entries.forEach((entry) => {
+                    let count = 1,
+                        weight = 1;
+
+                    if (entry.count) {
+                        count = entry.count;
+                    }
+
+                    if (entry.weight) {
+                        weight = entry.weight;
+                    }
+
+                    newPool.addItem(entry.item, weight, count);
+                });
+            });
+        });
+    });
 });
