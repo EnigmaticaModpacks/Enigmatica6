@@ -21,6 +21,8 @@ onEvent('recipes', (event) => {
     event.remove({ mod: 'ironjetpacks' });
     event.remove({ mod: 'theoneprobe' });
 
+    event.remove({ type: 'thermal:compression_fuel' });
+
     var outputRemovals = [
         'aiotbotania:livingwood_shears',
         'aiotbotania:livingrock_shears',
