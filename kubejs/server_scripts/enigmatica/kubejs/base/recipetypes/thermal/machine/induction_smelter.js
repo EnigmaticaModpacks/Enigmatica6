@@ -4,8 +4,8 @@ onEvent('recipes', (event) => {
         {
             inputs: ['#forge:ores/nickel'],
             outputs: [
-                Item.of('emendatusenigmatica:nickel_ingot'),
-                Item.of('minecraft:iron_ingot').chance(0.1),
+                Item.of('emendatusenigmatica:nickel_ingot').chance(1.0),
+                Item.of('minecraft:iron_ingot').chance(0.2),
                 Item.of('thermal:rich_slag').chance(0.2)
             ],
             id: `${id_prefix}ores/nickel`
@@ -13,8 +13,8 @@ onEvent('recipes', (event) => {
         {
             inputs: ['#forge:ores/aluminum'],
             outputs: [
-                Item.of('emendatusenigmatica:aluminum_ingot'),
-                Item.of('minecraft:iron_ingot').chance(0.1),
+                Item.of('emendatusenigmatica:aluminum_ingot').chance(1.0),
+                Item.of('minecraft:iron_ingot').chance(0.2),
                 Item.of('thermal:rich_slag').chance(0.2)
             ],
             id: `${id_prefix}ores/aluminum`
@@ -22,8 +22,8 @@ onEvent('recipes', (event) => {
         {
             inputs: ['#forge:ores/uranium'],
             outputs: [
-                Item.of('emendatusenigmatica:uranium_ingot'),
-                Item.of('emendatusenigmatica:lead_ingot').chance(0.1),
+                Item.of('emendatusenigmatica:uranium_ingot').chance(1.0),
+                Item.of('emendatusenigmatica:lead_ingot').chance(0.2),
                 Item.of('thermal:rich_slag').chance(0.2)
             ],
             id: `${id_prefix}ores/uranium`
@@ -31,8 +31,8 @@ onEvent('recipes', (event) => {
         {
             inputs: ['#forge:ores/osmium'],
             outputs: [
-                Item.of('emendatusenigmatica:osmium_ingot'),
-                Item.of('emendatusenigmatica:tin_ingot').chance(0.1),
+                Item.of('emendatusenigmatica:osmium_ingot').chance(1.0),
+                Item.of('emendatusenigmatica:tin_ingot').chance(0.2),
                 Item.of('thermal:rich_slag').chance(0.2)
             ],
             id: `${id_prefix}ores/osmium`
@@ -40,8 +40,8 @@ onEvent('recipes', (event) => {
         {
             inputs: ['#forge:ores/zinc'],
             outputs: [
-                Item.of('emendatusenigmatica:zinc_ingot'),
-                Item.of('minecraft:gold_ingot').chance(0.1),
+                Item.of('emendatusenigmatica:zinc_ingot').chance(1.0),
+                Item.of('minecraft:gold_ingot').chance(0.2),
                 Item.of('thermal:rich_slag').chance(0.2)
             ],
             id: `${id_prefix}ores/zinc`
@@ -83,7 +83,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [Item.of('industrialforegoing:dryrubber', 2), '#forge:dusts/sulfur'],
-            outputs: [Item.of('thermal:cured_rubber', 2)],
+            outputs: [Item.of('thermal:cured_rubber', 2).chance(1.0)],
             id: 'thermal:machine/smelter/smelter_cured_rubber'
         },
         {
