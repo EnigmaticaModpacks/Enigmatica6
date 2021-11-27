@@ -82,12 +82,12 @@ onEvent('recipes', (event) => {
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
 
     powahTiers.forEach(function (tier) {
-        var capacitor = 'powah:capacitor_' + tier;
-        event.replaceInput({ id: 'powah:crafting/energy_cell_' + tier }, '#powah:energy_cell', capacitor);
+        var capacitor = `powah:capacitor_${tier}`;
+        event.replaceInput({ id: `powah:crafting/energy_cell_${tier}` }, '#powah:energy_cell', capacitor);
         if (tier == 'basic') {
-            capacitor = 'powah:capacitor_' + tier + '_large';
+            capacitor = `powah:capacitor_${tier}_large`;
         }
-        event.replaceInput({ id: 'powah:crafting/battery_' + tier }, '#powah:battery', capacitor);
+        event.replaceInput({ id: `powah:crafting/battery_${tier}` }, '#powah:battery', capacitor);
     });
 
     event.replaceInput({ mod: 'powah' }, '#powah:magmator', 'mekanism:dynamic_tank');
