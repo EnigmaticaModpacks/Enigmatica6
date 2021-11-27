@@ -298,7 +298,7 @@ onEvent('jei.information', (event) => {
             text: [
                 `Used in a Logic Unit to create advanced Redstone Logic.`,
                 ` `,
-                `Programmed on an Engineer's Circuit Table. Requires Circuit Backplanes, Lead or Copper Wire, and Vacuum Tubes.`
+                `Crafted in an Engineer's Circuit Table. Requires Circuit Backplanes, Lead or Copper Wire, and Vacuum Tubes.`
             ]
         },
         {
@@ -376,9 +376,7 @@ onEvent('jei.information', (event) => {
             text: [`Sneak Right Click to upgrade a Dank installed in a Dock.`]
         },
         {
-            items: [
-                Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:dusty_mummbee_bee' })
-            ],
+            items: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:dusty_mummbee_bee' })],
             text: [`The Dusty Mummbee can be found inside the Pharaoh's Sarcophagus.`]
         },
         {
