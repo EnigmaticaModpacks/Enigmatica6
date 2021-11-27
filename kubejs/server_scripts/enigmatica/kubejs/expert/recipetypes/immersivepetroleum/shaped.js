@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: '#forge:plates/steel',
-                B: 'tconstruct:flint_and_bronze',
+                B: '#forge:dusts/blaze',
                 C: 'thermal:redstone_servo',
                 D: 'immersiveengineering:fluid_placer',
                 E: 'immersiveengineering:fluid_pipe'
