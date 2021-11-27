@@ -100,6 +100,21 @@ onEvent('recipes', (event) => {
             fromColor: parseInt('0xFF9900'),
             toColor: parseInt('0x00FF1A'),
             id: `${id_prefix}generator_limit_remover`
+        },
+        {
+            inputs: [
+                { item: 'betterendforge:silk_fiber' },
+                { item: 'botania:mana_pearl' },
+                { tag: 'forge:ingots/sky' },
+                { item: 'betterendforge:mossy_glowshroom_hymenophore' },
+                { tag: 'forge:gems/mana_diamond' },
+                { tag: 'forge:ingots/starmetal' }
+            ],
+            output: { item: 'kubejs:celestial_mycelium_filaments' },
+            mana: 6000000,
+            fromColor: parseInt('0xE6E9ED'),
+            toColor: parseInt('0x7CB3FC'),
+            id: `${id_prefix}celestial_mycelial_filaments`
         }
     ];
 

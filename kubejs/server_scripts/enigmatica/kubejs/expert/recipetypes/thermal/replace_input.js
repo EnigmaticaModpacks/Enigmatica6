@@ -5,12 +5,12 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            replaceTarget: { id: /thermal:machine_(refinery|pyrolyzer|centrifuge)/ },
+            replaceTarget: { id: 'thermal:machine_pyrolyzer' },
             toReplace: 'thermal:machine_frame',
             replaceWith: 'thermal:fluid_cell'
         },
         {
-            replaceTarget: { id: /thermal:machine_(crucible|bottler)/ },
+            replaceTarget: { id: 'thermal:machine_bottler' },
             toReplace: 'thermal:machine_frame',
             replaceWith: 'thermal:fluid_cell_frame'
         }

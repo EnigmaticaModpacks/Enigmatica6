@@ -38,6 +38,17 @@ onEvent('recipes', (event) => {
             },
             id: 'immersiveengineering:crafting/workbench'
         },
+        {
+            output: 'immersiveengineering:turntable',
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: '#forge:plates/iron',
+                B: 'create:brass_casing',
+                C: '#forge:dusts/redstone',
+                D: 'immersiveengineering:coil_lv'
+            },
+            id: 'immersiveengineering:crafting/turntable'
+        },
 
         /*{
             output: Item.of('immersiveengineering:alloybrick', 4),
@@ -70,6 +81,18 @@ onEvent('recipes', (event) => {
                 D: 'thermal:redstone_servo'
             },
             id: 'immersiveengineering:crafting/conveyor_basic'
+        },
+        {
+            output: 'immersiveengineering:circuit_table',
+            pattern: [' AB', 'CCC', 'D E'],
+            key: {
+                A: 'thermal:diving_fabric',
+                B: 'immersiveengineering:screwdriver',
+                C: '#forge:treated_wood_slab',
+                D: 'immersiveengineering:craftingtable',
+                E: 'thermal:energy_cell'
+            },
+            id: 'immersiveengineering:crafting/circuit_table'
         }
     ];
 

@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
             id: 'otherstone'
         },
         {
-            input: 'eidolon:shadow_gem',
+            input: '#forge:gems/mana',
             output: 'occultism:spirit_attuned_gem',
             id: 'spirit_attuned_gem'
         }

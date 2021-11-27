@@ -176,6 +176,9 @@ const itemsToHide = [
     'emendatusenigmatica:molten_utherium_bucket',
     'emendatusenigmatica:molten_regalium_bucket',
     'emendatusenigmatica:molten_iesnium_bucket',
+    /iridium/,
+    /cast_iron/,
+    /peridot/,
 
     'environmental:cherry_pie',
     'environmental:apple_pie',
@@ -375,7 +378,8 @@ ee_types.forEach((type) => {
         `emendatusenigmatica:coal_${type}`,
         `emendatusenigmatica:sapphire_${type}`,
         `emendatusenigmatica:ruby_${type}`,
-        `emendatusenigmatica:iridium_${type}`
+        `emendatusenigmatica:iridium_${type}`,
+        `emendatusenigmatica:peridot_${type}`
     );
 });
 
@@ -453,6 +457,8 @@ const recipesToHide = [
             'botania:mana_spreader',
             'botania:elven_spreader',
             'botania:gaia_spreader',
+            'botania:fel_pumpkin',
+            'botania:blood_pendant',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
@@ -468,6 +474,8 @@ const recipesToHide = [
             'naturesaura:gold_fiber',
             'naturesaura:gold_brick',
             'naturesaura:generator_limit_remover',
+            'naturesaura:shockwave_creator',
+            'naturesaura:death_ring',
 
             'pneumaticcraft:air_compressor',
             'pneumaticcraft:advanced_air_compressor',
@@ -739,5 +747,8 @@ const craftedBees = [
     'skyslime',
     'cobalt',
     'industrious',
-    'pcbee'
+    'pcbee',
+    'otherworldly',
+    'carbee',
+    'dusty_mummbee'
 ];

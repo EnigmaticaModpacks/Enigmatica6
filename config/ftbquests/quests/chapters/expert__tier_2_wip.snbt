@@ -1043,8 +1043,8 @@
 		}
 		{
 			x: -2.0d
-			y: 10.0d
-			dependencies: ["269C18852281A11E"]
+			y: 9.0d
+			dependencies: ["46221D2561D076D1"]
 			id: "590D4ABAC13B92E0"
 			tasks: [{
 				id: "0B13FA7CE1ABD0C9"
@@ -1053,8 +1053,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 11.0d
+			x: -2.0d
+			y: 10.0d
 			dependencies: ["590D4ABAC13B92E0"]
 			id: "31CB7C1723DE957B"
 			tasks: [{
@@ -1155,6 +1155,10 @@
 			dependencies: ["0000000000000FEB"]
 			hide: true
 			id: "48BA066E1B977D32"
+			tasks: [{
+				id: "254F767D474E7B72"
+				type: "checkmark"
+			}]
 		}
 		{
 			x: -5.5d

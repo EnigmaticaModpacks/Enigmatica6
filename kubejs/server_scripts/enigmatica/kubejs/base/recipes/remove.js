@@ -21,6 +21,8 @@ onEvent('recipes', (event) => {
     event.remove({ mod: 'ironjetpacks' });
     event.remove({ mod: 'theoneprobe' });
 
+    event.remove({ type: 'thermal:compression_fuel' });
+
     var outputRemovals = [
         'aiotbotania:livingwood_shears',
         'aiotbotania:livingrock_shears',
@@ -70,6 +72,8 @@ onEvent('recipes', (event) => {
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 
+        'atum:pumpkin_pie',
+
         'betterendforge:gunpowder_from_sulphur',
 
         'bloodmagic:smelting/ingot_netherite_scrap',
@@ -104,6 +108,8 @@ onEvent('recipes', (event) => {
         'farmersdelight:milk_bucket_from_bottles',
 
         'industrialforegoing:laser_drill_ore/niter',
+        'industrialforegoing:laser_drill_ore/iridium',
+        'industrialforegoing:laser_drill_ore/peridot',
         'industrialforegoing:laser_drill_ore/sapphire',
         'industrialforegoing:laser_drill_ore/ruby',
         'industrialforegoing:laser_drill_ore/ancient_debris',
@@ -205,6 +211,8 @@ onEvent('recipes', (event) => {
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
+
+        'quark:building/crafting/compressed/gunpowder_sack',
 
         'simplefarming:candy',
         'simplefarming:raw_chicken_wings',

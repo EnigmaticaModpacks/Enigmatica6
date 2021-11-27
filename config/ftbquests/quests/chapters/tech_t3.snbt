@@ -21,7 +21,7 @@
 		}
 		{
 			title: "RFTools"
-			x: 5.0d
+			x: 4.5d
 			y: 0.0d
 			dependencies: ["0000000000000FD7"]
 			id: "1E4DC3A7546EC894"
@@ -46,7 +46,7 @@
 		}
 		{
 			x: -0.5d
-			y: 1.5d
+			y: 2.0d
 			dependencies: ["3CBABF225201DBED"]
 			id: "6079CBE9ECE6EB1D"
 			tasks: [{
@@ -76,7 +76,7 @@
 		{
 			title: "Enrich Pink Slime"
 			x: 0.0d
-			y: 3.0d
+			y: 5.0d
 			dependencies: ["35EE2BA3A988F416"]
 			id: "206F4AA9A9278D8D"
 			tasks: [{
@@ -87,8 +87,11 @@
 		}
 		{
 			x: 0.0d
-			y: 2.0d
-			dependencies: ["6079CBE9ECE6EB1D"]
+			y: 3.0d
+			dependencies: [
+				"6079CBE9ECE6EB1D"
+				"26D8327770B81C08"
+			]
 			id: "412F3A311A7CFCB3"
 			tasks: [
 				{
@@ -107,8 +110,9 @@
 		{
 			icon: "minecraft:wither_skeleton_skull"
 			x: -0.5d
-			y: 2.5d
+			y: 4.0d
 			subtitle: "Milk a Pink Wither."
+			description: ["Summon a Pink Wither with Occultism, or convert a Wither with a Pinkinator from The Guardian of Gaia."]
 			dependencies: [
 				"412F3A311A7CFCB3"
 				"0F16543E9DE08714"
@@ -121,8 +125,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 4.0d
+			x: 4.0d
+			y: 3.0d
 			dependencies: [
 				"72945D9390F479E7"
 				"52FEE141AD87B819"
@@ -135,8 +139,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 1.5d
+			x: 4.0d
+			y: 1.0d
 			dependencies: ["1E4DC3A7546EC894"]
 			id: "20C024EA7A79FBB4"
 			tasks: [{
@@ -146,8 +150,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 2.5d
+			x: 4.0d
+			y: 2.0d
 			dependencies: ["20C024EA7A79FBB4"]
 			id: "72945D9390F479E7"
 			tasks: [{
@@ -157,7 +161,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 5.0d
 			y: 1.0d
 			dependencies: ["1E4DC3A7546EC894"]
 			id: "2182BC78D342D1AA"
@@ -169,7 +173,7 @@
 		}
 		{
 			x: 5.5d
-			y: 2.0d
+			y: 1.5d
 			dependencies: ["2182BC78D342D1AA"]
 			id: "51AFB0E11AB83CFC"
 			tasks: [{
@@ -179,8 +183,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 3.0d
+			x: 5.0d
+			y: 2.0d
 			description: ["High Technology requires smarter machines, and what better to make them more intelligent than one’s own distilled experience? "]
 			dependencies: ["51AFB0E11AB83CFC"]
 			id: "52FEE141AD87B819"
@@ -192,7 +196,7 @@
 		}
 		{
 			x: -1.0d
-			y: 2.0d
+			y: 3.0d
 			shape: "diamond"
 			dependencies: ["6079CBE9ECE6EB1D"]
 			optional: true
@@ -201,6 +205,17 @@
 				id: "6C1CEE8121C1BEA9"
 				type: "item"
 				item: "industrialforegoing:stasis_chamber"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["3B9B0EB73BF19CBD"]
+			id: "26D8327770B81C08"
+			tasks: [{
+				id: "469EF5B5F3B3A6C7"
+				type: "item"
+				item: "mekanismgenerators:laser_focus_matrix"
 			}]
 		}
 	]

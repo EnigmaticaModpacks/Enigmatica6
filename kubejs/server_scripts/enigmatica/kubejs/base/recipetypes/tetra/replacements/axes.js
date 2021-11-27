@@ -79,7 +79,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 handle: 'neptunium'
             },
             {
-                item: 'aquaculture:alfsteel_axe',
+                item: 'mythicbotany:alfsteel_axe',
                 material: 'alfsteel',
                 handle: 'alfsteel'
             }

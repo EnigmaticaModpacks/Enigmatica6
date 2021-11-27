@@ -1,5 +1,5 @@
 onEvent('recipes', (event) => {
-    const id_prefix = 'enigmatica:base/resourcefulbees/';
+    const id_prefix = 'enigmatica:base/resourcefulbees/hive_upgrade/';
     const recipes = [
         {
             pattern: ['ABA', 'BCB', 'ABA'],

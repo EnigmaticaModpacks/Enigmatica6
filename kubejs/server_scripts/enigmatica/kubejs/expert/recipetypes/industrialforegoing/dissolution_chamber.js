@@ -4,27 +4,6 @@ onEvent('recipes', (event) => {
     }
     const id_prefix = 'enigmatica:expert/industrialforegoing/dissolution_chamber/';
     const recipes = [
-        /*
-        {
-            inputs: [
-                '', // top left
-                '', // top 
-                '', // top right
-                '', // left
-                '', // right
-                '', // bottom left
-                '', // bottom
-                ''  // bottom right
-            ],
-            inputFluid: '', // optional
-            inputFluidAmount: 0, // leave at 0 for no fluid
-            processingTime: 50,
-            outputItem: { item: '', count: 1 },
-            outputFluid: '', // optional
-            outputFluidAmount: 0, // leave at 0 for no fluid
-            id: ''
-        }
-        */
         {
             inputs: [
                 'immersiveengineering:tesla_coil',
@@ -437,7 +416,281 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:tier_installer/ultimate'
+        },
+        {
+            inputs: ['sophisticatedbackpacks:upgrade_base', 'occultism:satchel'],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'sophisticatedbackpacks:inception_upgrade', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'sophisticatedbackpacks:inception_upgrade'
+        },
+        {
+            inputs: [
+                'refinedstorage:range_upgrade',
+                'refinedstorage:range_upgrade',
+                'refinedstorage:range_upgrade',
+                'xnet:antenna_dish',
+                'xnet:antenna_dish',
+                '#forge:ingots/aeternium',
+                '#forge:ingots/aeternium',
+                '#forge:ingots/aeternium'
+            ],
+            inputFluid: 'tconstruct:molten_slimesteel',
+            inputFluidAmount: 1296,
+            processingTime: 400,
+            outputItem: { item: 'rsinfinitybooster:infinity_card', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rsinfinitybooster:infinity_card'
+        },
+        {
+            inputs: [
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card',
+                'powah:ender_gate_nitro',
+                'rsinfinitybooster:infinity_card'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 1296,
+            processingTime: 400,
+            outputItem: { item: 'rsinfinitybooster:dimension_card', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rsinfinitybooster:dimension_card'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#industrialforegoing:machine_frame/pity',
+                '#forge:plastic',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_obsidian',
+                '#forge:gears/osmium',
+                '#forge:circuits/basic',
+                '#forge:gears/osmium'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 250,
+            processingTime: 300,
+            outputItem: { item: 'industrialforegoing:machine_frame_simple', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/simple_machine_frame'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#industrialforegoing:machine_frame/simple',
+                '#forge:plastic',
+                '#forge:ingots/pink_slime',
+                '#forge:ingots/pink_slime',
+                '#forge:gears/compressed_iron',
+                '#forge:circuits/advanced',
+                '#forge:gears/compressed_iron'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 1000,
+            processingTime: 300,
+            outputItem: { item: 'industrialforegoing:machine_frame_advanced', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/advanced_machine_frame'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#industrialforegoing:machine_frame/advanced',
+                '#forge:plastic',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:gears/enderium',
+                '#forge:circuits/elite',
+                '#forge:gears/enderium'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 135,
+            processingTime: 300,
+            outputItem: { item: 'industrialforegoing:machine_frame_supreme', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/supreme_machine_frame'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#forge:circuits/advanced',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/signalum',
+                '#forge:gears/signalum',
+                '#forge:gems/blazing',
+                '#forge:gems/blazing'
+            ],
+            inputFluid: 'mekanism:lithium',
+            inputFluidAmount: 500,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:efficiency_addon_1', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/efficiency_addon_1'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#forge:circuits/advanced',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/signalum',
+                '#forge:gears/signalum',
+                'pneumaticcraft:glycerol',
+                'pneumaticcraft:glycerol'
+            ],
+            inputFluid: 'pneumaticcraft:lubricant',
+            inputFluidAmount: 500,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:speed_addon_1', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/speed_addon_1'
+        },
+        {
+            inputs: [
+                '#forge:plastic',
+                '#forge:circuits/advanced',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/signalum',
+                '#forge:gears/signalum',
+                'refinedstorage:construction_core',
+                'refinedstorage:construction_core'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:processing_addon_1', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/processing_addon_1'
+        },
+        {
+            inputs: [
+                'industrialforegoing:efficiency_addon_1',
+                '#forge:circuits/elite',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/enderium',
+                '#forge:gears/enderium',
+                'rftoolspower:blazing_rod',
+                'rftoolspower:blazing_rod'
+            ],
+            inputFluid: 'mekanism:lithium',
+            inputFluidAmount: 500,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:efficiency_addon_2', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/efficiency_addon_2'
+        },
+        {
+            inputs: [
+                'industrialforegoing:speed_addon_1',
+                '#forge:circuits/elite',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/enderium',
+                '#forge:gears/enderium',
+                'pneumaticcraft:glycerol',
+                'pneumaticcraft:glycerol'
+            ],
+            inputFluid: 'pneumaticcraft:lubricant',
+            inputFluidAmount: 500,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:speed_addon_2', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/speed_addon_2'
+        },
+        {
+            inputs: [
+                'industrialforegoing:processing_addon_1',
+                '#forge:circuits/elite',
+                'atum:crystal_glass_pane',
+                'atum:crystal_glass_pane',
+                '#forge:gears/enderium',
+                '#forge:gears/enderium',
+                'extrastorage:neural_processor',
+                'extrastorage:neural_processor'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'industrialforegoing:processing_addon_2', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/processing_addon_2'
+        },
+        {
+            inputs: [
+                '#forge:ingots/queens_slime',
+                '#forge:ingots/slimesteel',
+                '#forge:ingots/slimesteel',
+                '#forge:ingots/slimesteel'
+            ],
+            inputFluid: 'industrialforegoing:pink_slime',
+            inputFluidAmount: 2000,
+            processingTime: 300,
+            outputItem: { item: 'industrialforegoing:pink_slime_ingot', count: 4 },
+            outputFluid: 'industrialforegoing:sludge',
+            outputFluidAmount: 500,
+            id: 'industrialforegoing:dissolution_chamber/pink_slime_ingot'
+        },
+        {
+            inputs: [
+                'nethers_delight:rich_soul_soil',
+                'nethers_delight:rich_soul_soil',
+                'nethers_delight:rich_soul_soil',
+                'tconstruct:blood_slime',
+                'tconstruct:blood_slime',
+                'architects_palette:withered_bone_block',
+                '#industrialforegoing:machine_frame/simple',
+                'architects_palette:withered_bone_block'
+            ],
+            inputFluid: 'bloodmagic:life_essence_fluid',
+            inputFluidAmount: 1000,
+            processingTime: 100,
+            outputItem: { item: 'industrialforegoing:mechanical_dirt', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'industrialforegoing:dissolution_chamber/mechanical_dirt'
         }
+        /*
+        {
+            inputs: [
+                '', // top left
+                '', // top 
+                '', // top right
+                '', // left
+                '', // right
+                '', // bottom left
+                '', // bottom
+                ''  // bottom right
+            ],
+            inputFluid: '', // optional
+            inputFluidAmount: 0, // leave at 0 for no fluid
+            processingTime: 50,
+            outputItem: { item: '', count: 1 },
+            outputFluid: '', // optional
+            outputFluidAmount: 0, // leave at 0 for no fluid
+            id: ''
+        }
+        */
     ];
 
     colors.forEach((color) => {

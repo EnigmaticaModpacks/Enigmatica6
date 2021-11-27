@@ -1,3 +1,3 @@
 onEvent('entity_type.tags', (event) => {
-    event.get('enigmatica:caninies').add('minecraft:wolf').add('atum:desert_wolf');
+    event.get('enigmatica:canines').add('minecraft:wolf').add('atum:desert_wolf');
 });

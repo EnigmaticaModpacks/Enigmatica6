@@ -17,6 +17,7 @@ onEvent('item.tags', (event) => {
             'alexsmobs:kangaroo_meat',
             'minecraft:beef',
             'minecraft:mutton',
+            'minecraft:porkchop',
             'alexsmobs:moose_ribs'
         ];
 

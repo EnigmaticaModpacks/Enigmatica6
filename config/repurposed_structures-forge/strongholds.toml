@@ -1,7 +1,7 @@
 
 [Nether]
 	#
-	# How rare are Nether-styled Strongholds in Nether-category biomes.
+	# Average distance between spawn attempts for Nether-styled Strongholds in Nether-category biomes.
 	# 1 for spawning in most chunks and 1001 for no spawn.
 	#Range: 1 ~ 1001
 	netherStrongholdMaxChunkDistance = 85
@@ -24,8 +24,8 @@
 
 [End]
 	#
-	#How rare are End Strongholds in End biome's islands.
-	# 1 for spawning in most chunks and 10001 for none.
+	# Average distance between spawn attempts for End-styped Strongholds in End biome's islands.
+	# 1 for spawning in most chunks and 1001 for none.
 	#Range: 1 ~ 1001
 	strongholdEndAverageChunkDistance = 130
 	#

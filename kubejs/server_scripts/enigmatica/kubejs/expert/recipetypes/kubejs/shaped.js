@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/kubejs/';
+    const id_prefix = 'enigmatica:expert/kubejs/shaped';
     /*
         ,
         {
@@ -55,6 +55,15 @@ onEvent('recipes', (event) => {
                 C: 'pneumaticcraft:unassembled_pcb'
             },
             id: `${id_prefix}basic_memory_package`
+        },
+        {
+            output: Item.of('8x kubejs:scented_stick'),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:stick',
+                B: '#resourcefulbees:resourceful_honeycomb'
+            },
+            id: `${id_prefix}scented_stick`
         },
 
         // Storage Parts
