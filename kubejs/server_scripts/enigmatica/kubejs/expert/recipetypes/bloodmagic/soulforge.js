@@ -121,13 +121,6 @@ onEvent('recipes', (event) => {
                 drain: 200.0,
                 id: 'bloodmagic:soulforge/primitive_crystalline_resonator'
             },
-            {
-                inputs: ['occultism:otherstone_frame', 'atum:nebu_chain'],
-                output: 'occultism:wormhole_frame',
-                minimumDrain: 16.0,
-                drain: 2.0,
-                id: 'occultism:crafting/wormhole_frame'
-            },
 
             /// Patchouli Removals
             {

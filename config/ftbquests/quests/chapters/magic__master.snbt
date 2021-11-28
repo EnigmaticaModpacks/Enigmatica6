@@ -4,12 +4,14 @@
 	order_index: 6
 	filename: "magic__master"
 	title: "Magic - Master"
+	icon: "botania:mana_diamond"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -0.5d
-			y: -0.5d
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["3ECB259F269FF80A"]
 			id: "54D0E568361DC267"
 			tasks: [{
 				id: "06EFC0926D9228EB"
@@ -18,24 +20,23 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -0.5d
-			id: "3E0D107A0B67238C"
-			tasks: [{
-				id: "7BB935EA320F85BF"
-				type: "item"
-				item: "bloodmagic:demoncrystallizer"
-			}]
-		}
-		{
-			x: 3.5d
-			y: -0.5d
+			x: 4.5d
+			y: 2.0d
+			shape: "diamond"
+			dependencies: ["690063418D6815D2"]
 			id: "5E1A0B48076CD5F6"
-			tasks: [{
-				id: "4B0D2FA22A7EDF1D"
-				type: "item"
-				item: "bloodmagic:demoncrucible"
-			}]
+			tasks: [
+				{
+					id: "4B0D2FA22A7EDF1D"
+					type: "item"
+					item: "bloodmagic:demoncrucible"
+				}
+				{
+					id: "5D01EE5258D5D499"
+					type: "item"
+					item: "bloodmagic:demoncrystallizer"
+				}
+			]
 		}
 		{
 			icon: {
@@ -53,6 +54,453 @@
 				id: "42A1FF1D7D0F156F"
 				type: "checkmark"
 				title: "Spirit Magic - Master"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			dependencies: ["1C5802ADD3834FE9"]
+			id: "2C2B68DDB928580A"
+			tasks: [{
+				id: "778C253B25C1ABEF"
+				type: "item"
+				item: "botania:rune_mana"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			dependencies: ["2C2B68DDB928580A"]
+			id: "07B58D349276A834"
+			tasks: [{
+				id: "519108703756B960"
+				type: "item"
+				item: {
+					id: "botania:mana_tablet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			dependencies: [
+				"07B58D349276A834"
+				"6B01AD9330600377"
+			]
+			id: "06E76BE2A422E8AC"
+			tasks: [{
+				id: "512B339FA8AB4383"
+				type: "item"
+				item: "bloodmagic:magicianbloodorb"
+			}]
+		}
+		{
+			icon: "bloodmagic:altar"
+			x: 3.0d
+			y: -1.5d
+			dependencies: [
+				"188A31F2F6629892"
+				"06A6BE8C4A3B0C1D"
+			]
+			id: "6B01AD9330600377"
+			tasks: [{
+				id: "68D1349D99C0227F"
+				type: "checkmark"
+				title: "Blood Altar - Tier 3"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			dependencies: [
+				"0BEFCA7CB5EE447D"
+				"06E76BE2A422E8AC"
+			]
+			id: "152B45DD8C1899C2"
+			tasks: [{
+				id: "665FEB1890A1E866"
+				type: "item"
+				item: {
+					id: "occultism:chalk_purple"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			shape: "diamond"
+			dependencies: ["4AA238B9E42083DE"]
+			id: "0CFE47372EC49DC8"
+			tasks: [{
+				id: "5F5822FEF6F28BB7"
+				type: "item"
+				item: "betterendforge:crystal_shards"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			shape: "diamond"
+			description: ["Found commonly in the Sulfur Springs of the End."]
+			dependencies: ["4AA238B9E42083DE"]
+			id: "69201BA9E47F94EE"
+			tasks: [{
+				id: "124E2656A866D979"
+				type: "item"
+				item: "betterendforge:hydralux_petal"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			shape: "diamond"
+			dependencies: [
+				"69201BA9E47F94EE"
+				"0CFE47372EC49DC8"
+			]
+			id: "0BEFCA7CB5EE447D"
+			tasks: [{
+				id: "6A2F524DD66901A3"
+				type: "item"
+				item: "betterendforge:enchanted_petal"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			shape: "diamond"
+			dependencies: ["42A1FF1D7D0F156F"]
+			id: "4AA238B9E42083DE"
+			tasks: [
+				{
+					id: "1E9D1176A9F497F6"
+					type: "item"
+					item: "betterendforge:infusion_pedestal"
+				}
+				{
+					id: "78BC6512C2E1FF47"
+					type: "item"
+					title: "Any Better End Pedestals"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "betterendforge:quartz_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:purpur_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:andesite_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:diorite_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:sulphuric_rock_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:violecite_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:flavolite_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:granite_pedestal"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			shape: "diamond"
+			dependencies: ["152B45DD8C1899C2"]
+			id: "07786879C8859B12"
+			tasks: [{
+				id: "0E36F674D2F3A549"
+				type: "item"
+				item: {
+					id: "occultism:infused_pickaxe"
+					Count: 1b
+					tag: {
+						spiritName: "Krarcmur"
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.0d
+			shape: "diamond"
+			dependencies: ["07786879C8859B12"]
+			id: "690063418D6815D2"
+			tasks: [{
+				id: "1AD42494E69B8715"
+				type: "item"
+				item: "occultism:iesnium_ore"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			shape: "diamond"
+			dependencies: ["690063418D6815D2"]
+			id: "051F9C054B9CDE96"
+			tasks: [
+				{
+					id: "6841E8793EE2C2E0"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulpickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0B1582FDA55A0D17"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulsword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			shape: "diamond"
+			description: ["Summon and slay an Unbound Afrit to obtain Afrit Essence. "]
+			dependencies: ["152B45DD8C1899C2"]
+			id: "44ADBADBF2774DF4"
+			tasks: [{
+				id: "673AC1CB014F917C"
+				type: "item"
+				item: "occultism:afrit_essence"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			dependencies: ["44ADBADBF2774DF4"]
+			id: "15799BB5752AECB9"
+			tasks: [{
+				id: "7F2F8873597EE837"
+				type: "item"
+				item: {
+					id: "occultism:chalk_red"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			dependencies: ["29223C27E6E95ADC"]
+			id: "3103AD6157F2D6AC"
+			tasks: [{
+				id: "6C327DA3D328E507"
+				type: "item"
+				item: "bloodmagic:masterbloodorb"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			shape: "diamond"
+			dependencies: ["44ADBADBF2774DF4"]
+			id: "65BFA7184C041242"
+			tasks: [{
+				id: "302F6E8CD76FA37B"
+				type: "item"
+				item: "bloodmagic:weakbloodshard"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			shape: "diamond"
+			dependencies: ["65BFA7184C041242"]
+			id: "4DE005315CFBB3AE"
+			tasks: [{
+				id: "7D3D33D0DC05CF54"
+				type: "item"
+				item: "bloodmagic:largebloodstonebrick"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			dependencies: ["4DE005315CFBB3AE"]
+			id: "29223C27E6E95ADC"
+			tasks: [{
+				id: "02E607C53A37177E"
+				type: "checkmark"
+				title: "Blood Altar - Tier 4"
+				icon: "bloodmagic:altar"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			id: "1C5802ADD3834FE9"
+			tasks: [{
+				id: "497BC10E75173350"
+				type: "checkmark"
+				title: "Natural Magic - Master"
+				icon: "botania:spawner_mover"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			dependencies: ["2C2B68DDB928580A"]
+			id: "64ADD8495D9F55AF"
+			tasks: [{
+				id: "39561F7588C72B98"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			dependencies: ["64ADD8495D9F55AF"]
+			id: "3ECB259F269FF80A"
+			tasks: [
+				{
+					id: "48AA30BC0F5A4969"
+					type: "item"
+					item: "botania:terra_plate"
+				}
+				{
+					id: "7147695020152097"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			shape: "diamond"
+			dependencies: [
+				"406D79A760B81E27"
+				"54D0E568361DC267"
+			]
+			id: "457523FA165A5A0B"
+			tasks: [{
+				id: "1807A32A1B2AAEE8"
+				type: "item"
+				item: "botania:gaia_pylon"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"4C5258E268EE4A7A"
+				"3ECB259F269FF80A"
+			]
+			id: "406D79A760B81E27"
+			tasks: [{
+				id: "5CDE322490107C96"
+				type: "item"
+				item: "botania:natura_pylon"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			shape: "diamond"
+			dependencies: ["4AA238B9E42083DE"]
+			id: "4C5258E268EE4A7A"
+			tasks: [{
+				id: "161203BFE07872F7"
+				type: "item"
+				item: "botania:mana_pylon"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			dependencies: ["54D0E568361DC267"]
+			id: "706AC0678CD303BA"
+			tasks: [{
+				id: "0A3D5347A4034BF1"
+				type: "item"
+				item: "astralsorcery:altar_constellation"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.5d
+			dependencies: ["42EC202E93A7E5A3"]
+			id: "2D6DDD000FC99514"
+			tasks: [{
+				id: "5494E63BE36C5962"
+				type: "item"
+				item: "astralsorcery:altar_radiance"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			dependencies: ["706AC0678CD303BA"]
+			id: "42EC202E93A7E5A3"
+			tasks: [
+				{
+					id: "32A341D25D3AD1B9"
+					type: "item"
+					item: "mythicbotany:mana_infuser"
+				}
+				{
+					id: "27FE801DA5AB6863"
+					type: "item"
+					item: "mythicbotany:alfsteel_ingot"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: ["457523FA165A5A0B"]
+			id: "0E083E5951149AB5"
+			tasks: [{
+				id: "04E0027B30C34B89"
+				type: "item"
+				item: "astralsorcery:attunement_altar"
 			}]
 		}
 	]

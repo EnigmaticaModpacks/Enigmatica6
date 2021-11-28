@@ -1397,6 +1397,22 @@ onEvent('recipes', (event) => {
             output: 'immersiveengineering:electron_tube',
             id: `${id_prefix}electron_tube_alt`
         },
+        {
+            inputs: [
+                '#forge:nuggets/nebu',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                '#forge:nuggets/nebu',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                '#forge:nuggets/nebu',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                '#forge:nuggets/nebu'
+            ],
+            reagent: 'occultism:otherstone_frame',
+            sourceCost: 100,
+            output: 'occultism:wormhole_frame',
+            id: 'occultism:crafting/wormhole_frame'
+        },
 
         /// Patchouli Removals
         {

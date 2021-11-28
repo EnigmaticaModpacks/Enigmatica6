@@ -32,9 +32,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 3.0d
-			shape: "diamond"
+			x: 2.5d
+			y: 2.0d
 			dependencies: ["2B6914734BC1B9EA"]
 			id: "76E780FECC4F3BA8"
 			tasks: [{
@@ -44,9 +43,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 2.5d
-			shape: "diamond"
+			x: 3.0d
+			y: 1.0d
 			dependencies: ["7BA120BEA495D354"]
 			id: "2B6914734BC1B9EA"
 			tasks: [{
@@ -54,38 +52,6 @@
 				type: "item"
 				item: {
 					id: "occultism:chalk_gold"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
-			x: 10.0d
-			y: -0.5d
-			id: "5A6E0703E6D8F28E"
-			tasks: [{
-				id: "03730747D66C3306"
-				type: "item"
-				item: {
-					id: "occultism:chalk_purple"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
-			x: 10.0d
-			y: 1.0d
-			id: "5FE22AAAC53D3B15"
-			tasks: [{
-				id: "0BE85AEAAFEAA709"
-				type: "item"
-				item: {
-					id: "occultism:chalk_red"
 					Count: 1b
 					tag: {
 						Damage: 0
@@ -209,16 +175,23 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -0.5d
+			x: -2.0d
+			y: 0.5d
 			description: ["The neophyte believes runes are simply carved symbols; decorative and nothing more. But magical practitioners know the truth; they are carved purposely to channel magical energies to specific purposes. Doing so requires great effort of will. "]
 			dependencies: ["433832B8435B07CB"]
 			id: "46993F7BA43BE3AB"
-			tasks: [{
-				id: "645C3EA5C8B170D1"
-				type: "item"
-				item: "botania:runic_altar"
-			}]
+			tasks: [
+				{
+					id: "645C3EA5C8B170D1"
+					type: "item"
+					item: "botania:runic_altar"
+				}
+				{
+					id: "54F41577B733E652"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+			]
 		}
 		{
 			x: -2.0d
@@ -232,19 +205,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 0.0d
-			dependencies: ["433832B8435B07CB"]
-			id: "795E0AF7FC970CD6"
-			tasks: [{
-				id: "09031815BF45D38C"
-				type: "item"
-				item: "botania:mana_pool"
-			}]
-		}
-		{
 			x: 2.0d
-			y: -0.5d
+			y: -1.5d
 			dependencies: [
 				"46993F7BA43BE3AB"
 				"0D8649291801C76C"
@@ -258,7 +220,7 @@
 		}
 		{
 			x: 3.0d
-			y: 0.0d
+			y: -1.0d
 			shape: "diamond"
 			description: [
 				""
@@ -299,7 +261,7 @@
 		{
 			title: "Blood Altar - Tier 2"
 			x: 2.0d
-			y: 0.5d
+			y: -0.5d
 			dependencies: ["43D3D565E295FA5D"]
 			id: "188A31F2F6629892"
 			tasks: [{
@@ -356,7 +318,7 @@
 		}
 		{
 			x: 2.0d
-			y: -2.0d
+			y: -2.5d
 			dependencies: ["32D9D96C23106285"]
 			id: "0D8649291801C76C"
 			tasks: [{
@@ -367,7 +329,7 @@
 		}
 		{
 			x: 3.0d
-			y: 1.0d
+			y: 0.0d
 			shape: "diamond"
 			description: ["Music acquired, use it to make bait to summon Swamp Jaw. Defeat it to claim your prize. "]
 			dependencies: ["4C82E47AABA7447B"]
@@ -380,7 +342,7 @@
 		}
 		{
 			x: 2.0d
-			y: 1.5d
+			y: 0.5d
 			description: ["A stronger receptacle will be required to delve deeper into the secrets of the spirit realm. "]
 			dependencies: [
 				"5602E77D09C84F56"
@@ -401,9 +363,8 @@
 			]
 		}
 		{
-			x: 1.5d
-			y: 2.5d
-			shape: "diamond"
+			x: 1.0d
+			y: 1.0d
 			dependencies: ["7BA120BEA495D354"]
 			id: "358D438E941E3FFE"
 			tasks: [{
@@ -414,7 +375,7 @@
 		}
 		{
 			x: -4.0d
-			y: 1.0d
+			y: 0.5d
 			dependencies: ["54BD6A448EC80453"]
 			id: "39F1798BD7FDA0EC"
 			tasks: [{
@@ -527,6 +488,61 @@
 				id: "011B34FD3685CBB4"
 				type: "item"
 				item: "ars_nouveau:ritual_wilden_summon"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			dependencies: [
+				"39F1798BD7FDA0EC"
+				"46993F7BA43BE3AB"
+			]
+			id: "4780541D7D03AFE9"
+			tasks: [
+				{
+					id: "5121A366F884AFEE"
+					type: "item"
+					item: "naturesaura:calling_spirit"
+				}
+				{
+					id: "077B02D5F661785F"
+					type: "item"
+					item: "naturesaura:sky_ingot"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["358D438E941E3FFE"]
+			id: "4E25D127FFBA7553"
+			tasks: [{
+				id: "5A45A95D9017FB1D"
+				type: "item"
+				item: {
+					id: "bloodmagic:basemonstersoul"
+					Count: 1b
+					tag: {
+						souls: 5.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			dependencies: ["2B6914734BC1B9EA"]
+			id: "1EF3485CE70E529D"
+			tasks: [{
+				id: "588927AD981F5FDB"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_goggles"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 		}
 	]
