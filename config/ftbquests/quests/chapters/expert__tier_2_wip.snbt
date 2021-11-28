@@ -16,8 +16,8 @@
 	quests: [
 		{
 			title: "Lightning in a Bottle"
-			x: -3.0d
-			y: -5.5d
+			x: -2.5d
+			y: -12.0d
 			description: [
 				"In the ancient texts, lightning is often called down to impart the required energy for a reaction. Many a young mageling met their end in the effort…"
 				""
@@ -52,8 +52,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -4.5d
+			x: -3.0d
+			y: -11.0d
 			description: [
 				"Great power lurks in the depths, though its source remained mysterious even to the Ancients. These Hearts of the Sea allowed them to tap into these energies. "
 				""
@@ -68,8 +68,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -3.5d
+			x: -2.5d
+			y: -10.0d
 			description: [
 				"And so it begins, this pathway to the arcane arts…"
 				""
@@ -87,8 +87,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -2.5d
+			x: -1.5d
+			y: -9.0d
 			description: [
 				"Trust ghosts. Their knowledge, both of this plane and beyond the veil, is invaluable. "
 				""
@@ -110,9 +110,10 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: 0.0d
+			x: -3.5d
+			y: -4.5d
 			description: ["The beings that once roamed the lands of Atum held power over life and death, creation and destruction. Those energies remain infused in the land. Use it to transmute a nest of bees into a nest of Silk Moths. "]
+			dependencies: ["719AFD0C38BE19A2"]
 			id: "5AA38E6753FF4210"
 			tasks: [{
 				id: "638694418DEBB47D"
@@ -121,13 +122,9 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: -2.5d
-			description: [
-				"Like light through a lens, the magical energies of this land may be focused or scattered by physical apparatus. Just as glass is often used to bend light, proper materials are required to begin manipulating these energies directly. "
-				""
-				"The Enchanting Apparatus does not require Source to work for crafting, only for enchanting. "
-			]
+			x: -3.5d
+			y: -9.0d
+			description: ["Like light through a lens, the magical energies of this land may be focused or scattered by physical apparatus. Just as glass is often used to bend light, proper materials are required to begin manipulating these energies directly. "]
 			dependencies: ["2A5E2A21BFECF76C"]
 			id: "4642C99F4B51005B"
 			tasks: [
@@ -144,9 +141,13 @@
 			]
 		}
 		{
-			x: 0.0d
-			y: 1.5d
-			description: ["Like runes drawn upon the firmament itself, the constellations channel great energies and bring with them knowledge of secrets long thought lost. "]
+			x: -0.5d
+			y: -4.5d
+			description: [
+				"Like runes drawn upon the firmament itself, the constellations channel great energies and bring with them knowledge of secrets long thought lost. "
+				""
+				"Many of their secrets remain out of reach, however even an apprentice knows enough to channel some starlight for basic tasks. "
+			]
 			dependencies: ["4C5CCC780A4B07A7"]
 			id: "102775CD7F9CD338"
 			tasks: [{
@@ -156,8 +157,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 1.5d
+			x: -1.5d
+			y: -4.5d
 			description: [
 				"If something hungers, feed it. Great power flows through all things, both the living and the dead. "
 				""
@@ -190,10 +191,10 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 4.5d
+			x: -1.5d
+			y: -1.5d
 			description: [""]
-			dependencies: ["7E371FBDE82532D9"]
+			dependencies: ["5A53DAE0FAC0A38F"]
 			id: "4280183EE48A8F1E"
 			tasks: [{
 				id: "50CA5DE83B5986DC"
@@ -226,7 +227,6 @@
 		{
 			x: -4.0d
 			y: 4.5d
-			dependencies: ["7E371FBDE82532D9"]
 			id: "5BC50DE75421CAAA"
 			tasks: [{
 				id: "3832859FD741B2D0"
@@ -255,8 +255,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 2.5d
+			x: -3.5d
+			y: -1.5d
 			dependencies: ["598A3BD34A7DD40B"]
 			id: "2422557696EB83F3"
 			tasks: [{
@@ -266,8 +266,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 1.0d
+			x: -4.5d
+			y: -2.5d
 			dependencies: [
 				"566824DF05761A43"
 				"62F3B5013BAB47AB"
@@ -280,9 +280,9 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: -2.0d
-			dependencies: ["4642C99F4B51005B"]
+			x: -4.0d
+			y: -6.0d
+			dependencies: ["719AFD0C38BE19A2"]
 			id: "295B7A0FB81D44DB"
 			tasks: [{
 				id: "3281C71438B7C50A"
@@ -291,8 +291,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: -0.5d
+			x: -4.5d
+			y: -4.5d
 			dependencies: ["295B7A0FB81D44DB"]
 			id: "566824DF05761A43"
 			tasks: [{
@@ -503,7 +503,6 @@
 				""
 				"Summoning the Masticator requires the Altar of Birthing as well as several other items. Look up uses for the Altar of Birthing in JEI to find the summoning recipe. Be warned, its hunger is deep and summoning it will consume the Aura in the area. "
 			]
-			dependencies: ["598A3BD34A7DD40B"]
 			id: "1B149A20BDD0E282"
 			tasks: [{
 				id: "2A2244AC80666A1E"
@@ -548,8 +547,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 3.0d
+			x: -1.5d
+			y: -3.0d
 			description: [
 				"Something powerful has been listening. Waiting. Gain its approval to begin channeling the energies of sanguimancy. "
 				""
@@ -557,16 +556,22 @@
 			]
 			dependencies: ["06A20E7EA36392CB"]
 			id: "7E371FBDE82532D9"
-			tasks: [{
-				id: "093DCD4B762371E2"
-				type: "item"
-				item: "bloodmagic:weakbloodorb"
-			}]
+			tasks: [
+				{
+					id: "093DCD4B762371E2"
+					type: "item"
+					item: "bloodmagic:weakbloodorb"
+				}
+				{
+					id: "6DB611075387D462"
+					type: "item"
+					item: "eidolon:unholy_symbol"
+				}
+			]
 		}
 		{
 			x: 0.0d
 			y: 4.5d
-			dependencies: ["7E371FBDE82532D9"]
 			id: "6191E6C529A75F79"
 			tasks: [{
 				id: "53483281538ADEC3"
@@ -609,8 +614,8 @@
 		}
 		{
 			title: "Offworld Adventure"
-			x: -3.0d
-			y: 0.0d
+			x: -2.5d
+			y: -6.5d
 			description: [
 				"The Ancients were no strangers to dimensional travel, and some of the bridges they formed are still very much operational. Setting up a small base of operations in those that remain may prove invaluable indeed. "
 				""
@@ -635,20 +640,31 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: 1.0d
+			x: -3.5d
+			y: -3.0d
+			description: [
+				"There is subtle magic to be found throughout the natural world, and silk moths are no exception. Their silk prized for its arcane properties. "
+				""
+				"Convert some Silk Fiber to Brilliant Fiber and place it in the leaves of trees. Once it has been allowed to spread and mature, it may be harvested to obtain Gold Leaf."
+			]
 			dependencies: ["5AA38E6753FF4210"]
 			id: "62F3B5013BAB47AB"
-			tasks: [{
-				id: "7FA190A131C27BC6"
-				type: "item"
-				item: "naturesaura:gold_fiber"
-			}]
+			tasks: [
+				{
+					id: "7FA190A131C27BC6"
+					type: "item"
+					item: "naturesaura:gold_fiber"
+				}
+				{
+					id: "5AA8561505815247"
+					type: "item"
+					item: "naturesaura:gold_leaf"
+				}
+			]
 		}
 		{
 			x: -6.5d
 			y: 4.0d
-			dependencies: ["2422557696EB83F3"]
 			id: "0BE325624337E5B5"
 			tasks: [{
 				id: "56148070C3CA6CC7"
@@ -787,17 +803,6 @@
 				id: "633E93F709F16AAE"
 				type: "item"
 				item: "mythicbotany:alfsteel_ingot"
-			}]
-		}
-		{
-			x: -4.0d
-			y: 2.0d
-			dependencies: ["62F3B5013BAB47AB"]
-			id: "747D136264F6055B"
-			tasks: [{
-				id: "74D329104B803290"
-				type: "item"
-				item: "resourcefulbees:t1_beehive"
 			}]
 		}
 		{
@@ -1147,8 +1152,8 @@
 		{
 			title: "Magic Progression - Apprentice"
 			icon: "ars_nouveau:spell_parchment"
-			x: -3.5d
-			y: -6.5d
+			x: -2.5d
+			y: -13.0d
 			description: [
 				"“They came from above… With their power, they raised the land sundering the seas… In a blink they had wiped themselves out.”"
 				""
@@ -1175,7 +1180,7 @@
 		}
 		{
 			x: -1.0d
-			y: 0.5d
+			y: -6.0d
 			dependencies: ["719AFD0C38BE19A2"]
 			id: "4C5CCC780A4B07A7"
 			tasks: [{
@@ -1185,19 +1190,36 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: -1.0d
+			x: -3.5d
+			y: -7.5d
+			description: [
+				"A delicate blend of Silver, Sulfur, and Source; Sunmetal is renowned for its mystical properties. "
+				""
+				"Silver and Sulfur, of course, are both readily available. Gathering Source, on the other hand, will require the creation of a Sourcelink. The Agronomic Sourcelink will serve admirably for now for the manufacture of Sunmetal. "
+			]
 			dependencies: ["4642C99F4B51005B"]
 			id: "1FB260E6CB51800E"
-			tasks: [{
-				id: "2EBFF286F1E2C428"
-				type: "item"
-				item: "architects_palette:sunmetal_blend"
-			}]
+			tasks: [
+				{
+					id: "2B8585C3F93E9864"
+					type: "item"
+					item: "ars_nouveau:mana_condenser"
+				}
+				{
+					id: "652E7031800BC423"
+					type: "item"
+					item: "architects_palette:sunmetal_blend"
+				}
+			]
 		}
 		{
-			x: -2.0d
-			y: -1.0d
+			x: -1.5d
+			y: -7.5d
+			description: [
+				"Infused with the crystallized soul fragments that animate the dead, Arcane Gold is found throughout the arcane arts. "
+				""
+				"These may be gathered from the undead by way of the Crystallization Ritual detailed in the Ars Ecclesia, or later simply by harvesting the undead with a Reaper’s Scythe."
+			]
 			dependencies: ["1C17C09DD9AB58BD"]
 			id: "7A61BA54CFCA2973"
 			tasks: [{
@@ -1207,8 +1229,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -4.5d
+			x: -2.0d
+			y: -11.0d
 			description: [
 				"Natives of the deep, distant cousins to what powers came before; the spiral of the nautilus’ shell has been found to be a near perfect amplifier for arcane energies. "
 				""
@@ -1220,6 +1242,18 @@
 				id: "35E1F20C18B5A6B7"
 				type: "item"
 				item: "minecraft:nautilus_shell"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			description: ["The link though tenuous, grows stronger. Channeling the spirits and their energies pave the way to Alchemy and from there, the deeper magics. "]
+			dependencies: ["7E371FBDE82532D9"]
+			id: "5A53DAE0FAC0A38F"
+			tasks: [{
+				id: "370511870EE62EBD"
+				type: "item"
+				item: "bloodmagic:alchemytable"
 			}]
 		}
 	]

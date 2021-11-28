@@ -23,8 +23,25 @@ onEvent('recipes', (event) => {
                 'aquaculture:worm'
             ],
             reagent: '#forge:beehives/tier_0',
+            sourceCost: 5000,
             output: 'betterendforge:silk_moth_nest',
             id: `${id_prefix}silk_moth_nest`
+        },
+        {
+            inputs: [
+                'aquaculture:worm',
+                'naturesaura:gold_fiber',
+                'aquaculture:worm',
+                'thermal:phytogro',
+                'thermal:phytogro',
+                'aquaculture:worm',
+                'naturesaura:gold_fiber',
+                'aquaculture:worm'
+            ],
+            reagent: '#forge:beehives/tier_0',
+            sourceCost: 5000,
+            output: Item.of('2x betterendforge:silk_moth_nest'),
+            id: `${id_prefix}silk_moth_nest_alt`
         },
         {
             inputs: [
