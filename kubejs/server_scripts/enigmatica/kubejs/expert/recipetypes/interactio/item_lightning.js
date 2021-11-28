@@ -61,7 +61,12 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'undergarden:music_disc_relict', count: 1 },
+                [
+                    { item: 'undergarden:music_disc_relict', count: 1 },
+                    { item: 'undergarden:music_disc_mammoth', count: 1 },
+                    { item: 'undergarden:music_disc_limax_maximus', count: 1 },
+                    { item: 'undergarden:music_disc_gloomper_anthem', count: 1 }
+                ],
                 { item: 'aquaculture:fish_bones', count: 1 },
                 { tag: 'forge:gems/lapis', count: 2 },
                 { item: 'minecraft:fermented_spider_eye', count: 2 },
