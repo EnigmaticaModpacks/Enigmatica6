@@ -22,7 +22,7 @@ install:
     # supports variables: {{@loaderversion@}} and {{@mcversion@}}
     # For forge: "http://files.minecraftforge.net/maven/net/minecraftforge/forge/{{@mcversion@}}-{{@loaderversion@}}/forge-{{@mcversion@}}-{{@loaderversion@}}-installer.jar"
     # For Fabric: "https://maven.fabricmc.net/net/fabricmc/fabric-installer/{{@loaderversion@}}/fabric-installer-{{@loaderversion@}}.jar"
-    installerUrl: https://maven.minecraftforge.net/net/minecraftforge/forge/{{@mcversion@}}-{{@loaderversion@}}/forge-{{@mcversion@}}-{{@loaderversion@}}-installer.jar
+    installerUrl: 'https://files.minecraftforge.net/maven/net/minecraftforge/forge/{{@mcversion@}}-{{@loaderversion@}}/forge-{{@mcversion@}}-{{@loaderversion@}}-installer.jar'
 
     # Installer Arguments
     # These Arguments have to be passed to the installer
@@ -46,7 +46,8 @@ install:
 
     # Link to where the file where the modpack can be distributed
     # This supports loading from local files as well for most pack types if there is file://{PathToFile} in the beginning
-    modpackUrl: https://media.forgecdn.net/files/3513/107/Enigmatica6-0.5.20.zip
+    modpackUrl: https://media.forgecdn.net/files/3539/71/Enigmatica6-0.5.21.zip
+
     # This is used to specify in which format the modpack is distributed, the server launcher has to handle each individually if their format differs
     # current supported formats:
     # - curseforge or curse
@@ -83,6 +84,26 @@ install:
         - defaultconfigs/*-client.toml
         - local/**
 
+    # often a server needs more files, which are nearly useless on the client, such as tickprofiler
+    # This is a list of files, each ' - ' is a new file:
+    # url is the directlink to the file, destination is the path to where the file should be copied to
+    additionalFiles:
+        ~
+        #- url: https://media.forgecdn.net/files/2844/278/restrictedportals-1.15-1.0.jar
+        #  destination: mods/restrictedportals-1.15-1.0.jar
+        #- url: https://media.forgecdn.net/files/2874/966/Morpheus-1.15.2-4.2.46.jar
+        #  destination: mods/Morpheus-1.15.2-4.2.46.jar
+        #- url: https://media.forgecdn.net/files/2876/89/spark-forge.jar
+        #  destination: mods/spark-forge.jar
+
+    # For often there are config which the user wants to change, here is the place to put the local path to configs, jars or whatever
+    # You can copy files or folders
+    localFiles:
+        - from: setup/modpack-download.zip
+          to: setup/test/modpack-download-copied.zip
+        - from: setup/AOF 2/.minecraft
+          to: setup/.
+
     # This makes the program check the folder for whether it is supposed to use the
     checkFolder: yes
 
@@ -92,6 +113,14 @@ install:
     # Sponge bootstrapper jar URL
     # Only needed if you have spongefix enabled
     spongeBootstrapper: https://github.com/simon816/SpongeBootstrap/releases/download/v0.7.1/SpongeBootstrap-0.7.1.jar
+
+    # Time in seconds before the connection attempt to any webservice like forge/curseforge times out
+    # Only increase this timer if you have problems
+    connectTimeout: 30
+
+    # Time in seconds before the read attempt to any webservice like forge/curseforge times out
+    # Only increase this timer if you have problems
+    readTimeout: 30
 
 # settings regarding the launching of the pack
 launch:
@@ -108,6 +137,9 @@ launch:
 
     # specifies the max amount of ram the server is supposed to launch with
     maxRam: 5G
+
+    # specifies the min amount of ram the server is supposed to launch with
+    minRam: 2G
 
     # specifies whether the server is supposed to auto restart after crash
     autoRestart: yes
@@ -128,7 +160,20 @@ launch:
     # For Forge 1.12-: "forge-{{@mcversion@}}-{{@loaderversion@}}-universal.jar"
     # For Forge 1.13+: "forge-{{@mcversion@}}-{{@loaderversion@}}.jar"
     # For Fabric: "fabric-server-launch.jar"
-    startFile: forge-{{@mcversion@}}-{{@loaderversion@}}.jar
+    startFile: 'forge-{{@mcversion@}}-{{@loaderversion@}}.jar'
+
+    # This is the command how the server is supposed to be started
+    # For <1.16 it should be
+    #  - "-jar"
+    #  - "{{@startFile@}}"
+    #  - "nogui"
+    # For >=1.17 it should be
+    # - "@libraries/net/minecraftforge/forge/{{@mcversion@}}-{{@loaderversion@}}/{{@os@}}_args.txt"
+    # - "nogui"
+    startCommand:
+        - '-jar'
+        - '{{@startFile@}}'
+        - 'nogui'
 
     # In case you have multiple javas installed you can add a absolute path to it here
     # if the value is "", null, or ~ then 'java' from PATH is going to be used
