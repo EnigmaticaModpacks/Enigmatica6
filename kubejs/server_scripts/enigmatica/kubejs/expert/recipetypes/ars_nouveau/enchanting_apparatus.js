@@ -7,6 +7,7 @@ onEvent('recipes', (event) => {
         {
             inputs: ['#forge:dusts/silver', '#forge:dusts/silver', '#forge:dusts/silver', '#forge:dusts/silver'],
             reagent: '#forge:dusts/sulfur',
+            sourceCost: 1000,
             output: Item.of('4x architects_palette:sunmetal_blend'),
             id: 'architects_palette:sunmetal_blend'
         },
@@ -38,12 +39,17 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
+                'atum:papyrus_plant',
+                '#forge:dusts/lapis',
+                'atum:papyrus_plant',
                 'eidolon:pewter_inlay',
+                'eidolon:pewter_inlay',
+                'thermal:phytogro',
                 'betterendforge:andesite_pedestal',
-                'eidolon:pewter_inlay',
                 'thermal:phytogro'
             ],
             reagent: 'eidolon:crucible',
+            sourceCost: 1000,
             output: 'botania:apothecary_default',
             id: `${id_prefix}crucible`
         },
@@ -1374,6 +1380,13 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.ars_nouveau.enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs).id(recipe.id);
+        recipe.sourceCost
+            ? event.recipes.ars_nouveau
+                  .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
+                  .merge({ sourceCost: recipe.sourceCost })
+                  .id(recipe.id)
+            : event.recipes.ars_nouveau
+                  .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
+                  .id(recipe.id);
     });
 });

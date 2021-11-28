@@ -2328,13 +2328,19 @@
 				id: "tconstruct:mattock"
 				Count: 1b
 				tag: {
-					tic_multipliers: { }
+					tic_multipliers: {
+						"tconstruct:secondary_mining": 0.65f
+						"tconstruct:mining_speed": 1.1f
+						"tconstruct:attack_damage": 1.1f
+						"tconstruct:durability": 1.25f
+					}
 					tic_stats: {
-						"tconstruct:attack_speed": 1.0f
-						"tconstruct:mining_speed": 4.0f
-						"tconstruct:attack_damage": 2.5f
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:secondary_mining": 0.65f
+						"tconstruct:attack_damage": 2.75f
 						"tconstruct:harvest_level": 1.0f
-						"tconstruct:durability": 130.0f
+						"tconstruct:durability": 162.5f
+						"tconstruct:mining_speed": 4.4f
 					}
 					tic_broken: 0b
 					tic_modifiers: [
@@ -2413,13 +2419,19 @@
 						id: "tconstruct:mattock"
 						Count: 1b
 						tag: {
-							tic_multipliers: { }
+							tic_multipliers: {
+								"tconstruct:secondary_mining": 0.65f
+								"tconstruct:mining_speed": 1.1f
+								"tconstruct:attack_damage": 1.1f
+								"tconstruct:durability": 1.25f
+							}
 							tic_stats: {
-								"tconstruct:attack_speed": 1.0f
-								"tconstruct:mining_speed": 4.0f
-								"tconstruct:attack_damage": 2.5f
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:secondary_mining": 0.65f
+								"tconstruct:attack_damage": 2.75f
 								"tconstruct:harvest_level": 1.0f
-								"tconstruct:durability": 130.0f
+								"tconstruct:durability": 162.5f
+								"tconstruct:mining_speed": 4.4f
 							}
 							tic_broken: 0b
 							tic_modifiers: [
