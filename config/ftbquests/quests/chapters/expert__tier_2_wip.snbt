@@ -157,6 +157,7 @@
 			}]
 		}
 		{
+			title: "Blood Altar - Tier 1"
 			x: -1.5d
 			y: -4.5d
 			description: [
@@ -434,7 +435,6 @@
 		{
 			x: -9.0d
 			y: 4.0d
-			dependencies: ["1980E9BF6A705EC6"]
 			id: "181E9A83AED8515E"
 			tasks: [
 				{
@@ -475,39 +475,6 @@
 						Damage: 0
 					}
 				}
-			}]
-		}
-		{
-			x: -9.0d
-			y: 2.5d
-			description: [
-				"Source and Aura, both facets of the same whole: Mana. With access to Generating Flora pure Mana may be extracted and used in a variety of new ways. "
-				""
-				"The Gourmaryllis is the first Generating Flower available since mana costs are increased for many crafts. Strong Mana generation is recommended going forward."
-			]
-			dependencies: ["1B149A20BDD0E282"]
-			id: "1980E9BF6A705EC6"
-			tasks: [{
-				id: "6FA6A1DD5CF87D02"
-				type: "item"
-				item: "botania:gourmaryllis"
-			}]
-		}
-		{
-			x: -8.0d
-			y: 1.5d
-			description: [
-				"Capable of grinding stone to dust in its mighty jaws, the Masticator’s scales were found to have great alchemical powers, specifically in creating magical flora to digest various objects and extract the latent energies within. "
-				""
-				"Bait the trap and be prepared for a nasty fight. "
-				""
-				"Summoning the Masticator requires the Altar of Birthing as well as several other items. Look up uses for the Altar of Birthing in JEI to find the summoning recipe. Be warned, its hunger is deep and summoning it will consume the Aura in the area. "
-			]
-			id: "1B149A20BDD0E282"
-			tasks: [{
-				id: "2A2244AC80666A1E"
-				type: "item"
-				item: "naturesaura:animal_spawner"
 			}]
 		}
 		{

@@ -37,5 +37,23 @@
 				item: "bloodmagic:demoncrucible"
 			}]
 		}
+		{
+			icon: {
+				id: "bloodmagic:basemonstersoul"
+				Count: 1b
+				tag: {
+					souls: 5.0d
+				}
+			}
+			x: 3.0d
+			y: -2.5d
+			shape: "rsquare"
+			id: "06A6BE8C4A3B0C1D"
+			tasks: [{
+				id: "42A1FF1D7D0F156F"
+				type: "checkmark"
+				title: "Spirit Magic - Master"
+			}]
+		}
 	]
 }
