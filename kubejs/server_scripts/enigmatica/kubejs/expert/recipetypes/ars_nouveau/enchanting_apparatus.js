@@ -1381,6 +1381,22 @@ onEvent('recipes', (event) => {
             output: 'naturesaura:death_ring',
             id: `${id_prefix}death_ring`
         },
+        {
+            inputs: [
+                '#forge:gems/fluorite',
+                '#forge:nuggets/regalium',
+                '#forge:gems/fluorite',
+                '#forge:wires/copper',
+                '#forge:wires/copper',
+                'ars_nouveau:magic_clay',
+                'immersiveengineering:connector_lv',
+                'ars_nouveau:magic_clay'
+            ],
+            reagent: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+            sourceCost: 9001,
+            output: 'immersiveengineering:electron_tube',
+            id: `${id_prefix}electron_tube_alt`
+        },
 
         /// Patchouli Removals
         {
