@@ -50,6 +50,31 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}terracotta`
         },
         {
+            outputs: ['atum:ceramic_white'],
+            input: '#enigmatica:washables/ceramic',
+            id: `${id_prefix}ceramic`
+        },
+        {
+            outputs: ['atum:ceramic_slab_white'],
+            input: '#enigmatica:washables/ceramic_slab',
+            id: `${id_prefix}ceramic_slab`
+        },
+        {
+            outputs: ['atum:ceramic_tile_white'],
+            input: '#enigmatica:washables/ceramic_tile',
+            id: `${id_prefix}ceramic_tile`
+        },
+        {
+            outputs: ['atum:ceramic_stairs_white'],
+            input: '#enigmatica:washables/ceramic_stairs',
+            id: `${id_prefix}ceramic_stairs`
+        },
+        {
+            outputs: ['atum:ceramic_wall_white'],
+            input: '#enigmatica:washables/ceramic_wall',
+            id: `${id_prefix}ceramic_wall`
+        },
+        {
             outputs: ['betterendforge:dense_snow'],
             input: 'minecraft:snow_block',
             id: `${id_prefix}dense_snow`

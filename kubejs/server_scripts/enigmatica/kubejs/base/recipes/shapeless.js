@@ -509,6 +509,26 @@ onEvent('recipes', (event) => {
             inputs: ['#enigmatica:washables/terracotta', 'minecraft:water_bucket']
         },
         {
+            output: Item.of('atum:ceramic_white'),
+            inputs: ['#enigmatica:washables/ceramic', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('atum:ceramic_slab_white'),
+            inputs: ['#enigmatica:washables/ceramic_slab', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('atum:ceramic_tile_white'),
+            inputs: ['#enigmatica:washables/ceramic_tile', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('atum:ceramic_stairs_white'),
+            inputs: ['#enigmatica:washables/ceramic_stairs', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('atum:ceramic_wall_white'),
+            inputs: ['#enigmatica:washables/ceramic_wall', 'minecraft:water_bucket']
+        },
+        {
             output: 'mythicbotany:raindeletia_floating',
             inputs: ['kubejs:disabled_recipe_indicator'],
             id: 'mythicbotany:raindeletia_floating'
@@ -593,6 +613,30 @@ onEvent('recipes', (event) => {
             Ingredient.of(otherHopperPots),
             `#forge:dyes/${color}`
         ]);
+
+        if (color != 'white') {
+            event.shapeless(Item.of(`2x atum:ceramic_slab_${color}`), [
+                'atum:ceramic_slab_white',
+                'atum:ceramic_slab_white',
+                `#forge:dyes/${color}`
+            ]);
+            event.shapeless(Item.of(`6x atum:ceramic_tile_${color}`), [
+                'atum:ceramic_tile_white',
+                'atum:ceramic_tile_white',
+                'atum:ceramic_tile_white',
+                'atum:ceramic_tile_white',
+                'atum:ceramic_tile_white',
+                'atum:ceramic_tile_white',
+                `#forge:dyes/${color}`
+            ]);
+            event.shapeless(Item.of(`3x atum:ceramic_stairs_${color}`), [
+                'atum:ceramic_stairs_white',
+                'atum:ceramic_stairs_white',
+                'atum:ceramic_stairs_white',
+                `#forge:dyes/${color}`
+            ]);
+            event.shapeless(`atum:ceramic_wall_${color}`, ['atum:ceramic_wall_white', `#forge:dyes/${color}`]);
+        }
     });
 
     materialsToUnify.forEach((material) => {
