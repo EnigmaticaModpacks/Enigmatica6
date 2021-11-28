@@ -6,5 +6,36 @@
 	title: "Magic - Master"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: -0.5d
+			y: -0.5d
+			id: "54D0E568361DC267"
+			tasks: [{
+				id: "06EFC0926D9228EB"
+				type: "item"
+				item: "botania:alfheim_portal"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			id: "3E0D107A0B67238C"
+			tasks: [{
+				id: "7BB935EA320F85BF"
+				type: "item"
+				item: "bloodmagic:demoncrystallizer"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			id: "5E1A0B48076CD5F6"
+			tasks: [{
+				id: "4B0D2FA22A7EDF1D"
+				type: "item"
+				item: "bloodmagic:demoncrucible"
+			}]
+		}
+	]
 }

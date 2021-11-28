@@ -7,5 +7,74 @@
 	icon: "botania:runic_altar"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: -2.0d
+			y: -3.5d
+			id: "61AA75CF5577A737"
+			tasks: [{
+				id: "5A05847FBAD84A7B"
+				type: "item"
+				item: "naturesaura:animal_spawner"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			id: "76E780FECC4F3BA8"
+			tasks: [{
+				id: "00EC065C41CF5882"
+				type: "item"
+				item: "bloodmagic:soulforge"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			id: "2B6914734BC1B9EA"
+			tasks: [{
+				id: "5DBA1CA341658512"
+				type: "item"
+				item: {
+					id: "occultism:chalk_gold"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.5d
+			id: "5A6E0703E6D8F28E"
+			tasks: [{
+				id: "03730747D66C3306"
+				type: "item"
+				item: {
+					id: "occultism:chalk_purple"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -3.5d
+			id: "5FE22AAAC53D3B15"
+			tasks: [{
+				id: "0BE85AEAAFEAA709"
+				type: "item"
+				item: {
+					id: "occultism:chalk_red"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
 }
