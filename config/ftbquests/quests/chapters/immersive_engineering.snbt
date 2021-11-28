@@ -17,15 +17,8 @@
 			optional: true
 			id: "0000000000000004"
 			tasks: [{
-				id: "0000000000000005"
-				type: "checkmark"
-				title: "Immersive Engineering"
-				icon: "immersiveengineering:manual"
-			}]
-			rewards: [{
-				id: "3D55700B5A77131D"
+				id: "4C4EC117244A21C7"
 				type: "item"
-				title: "Engineer's Hammer"
 				item: {
 					id: "immersiveengineering:hammer"
 					Count: 1b
@@ -33,6 +26,14 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "7B54B7BEEA99667F"
+				type: "item"
+				title: "Copper Chunk"
+				item: "emendatusenigmatica:copper_chunk"
+				count: 3
+				random_bonus: 5
 			}]
 		}
 		{
