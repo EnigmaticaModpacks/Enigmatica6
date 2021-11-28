@@ -21,17 +21,23 @@
 			]
 			optional: true
 			id: "00000000000003A2"
-			tasks: [{
-				id: "00000000000003A3"
-				type: "checkmark"
-				title: "The Thermal Series"
-				icon: "thermal:wrench"
-			}]
+			tasks: [
+				{
+					id: "00000000000003A3"
+					type: "checkmark"
+					title: "The Thermal Series"
+					icon: "thermal:wrench"
+				}
+				{
+					id: "6F8140DE19FABFDA"
+					type: "item"
+					item: "thermal:wrench"
+				}
+			]
 			rewards: [{
-				id: "00000000000004B9"
+				id: "4623F41B74F1829E"
 				type: "item"
-				title: "Crescent Hammer"
-				item: "thermal:wrench"
+				item: "emendatusenigmatica:iron_chunk"
 			}]
 		}
 		{

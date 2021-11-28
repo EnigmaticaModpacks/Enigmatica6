@@ -12,7 +12,7 @@
 			title: "Industrial Foregoing"
 			icon: "industrialforegoing:plastic"
 			x: 1.5d
-			y: -9.5d
+			y: -9.0d
 			description: [
 				"This mod provides a wide range of machines to automate various tasks. This questline introduces some key machines (but not ALL the machines, as there are quite a few)."
 				""
@@ -46,6 +46,7 @@
 			x: 1.5d
 			y: -6.5d
 			description: ["The Fluid Extractor, shockingly, extracts fluid. Place one facing a log block, and it will slowly break down the log while producing Latex. Power is optional, but speeds up the process by a factor of 2.5. Acacia logs give the best yield."]
+			dependencies: ["000000000000004A"]
 			id: "000000000000004B"
 			tasks: [{
 				id: "000000000000004C"
