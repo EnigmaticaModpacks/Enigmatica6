@@ -147,14 +147,23 @@
 				"Like runes drawn upon the firmament itself, the constellations channel great energies and bring with them knowledge of secrets long thought lost. "
 				""
 				"Many of their secrets remain out of reach, however even an apprentice knows enough to channel some starlight for basic tasks. "
+				""
+				"Note: The Floating Crystal will not link to the Magic Workbench automatically. Therefore, a Linking Tool must first be crafted to manually link them. "
 			]
 			dependencies: ["4C5CCC780A4B07A7"]
 			id: "102775CD7F9CD338"
-			tasks: [{
-				id: "0F780C3F50CF951D"
-				type: "item"
-				item: "astralsorcery:altar_discovery"
-			}]
+			tasks: [
+				{
+					id: "0F780C3F50CF951D"
+					type: "item"
+					item: "astralsorcery:altar_discovery"
+				}
+				{
+					id: "0EA40EE2C1484EEE"
+					type: "item"
+					item: "astralsorcery:linking_tool"
+				}
+			]
 		}
 		{
 			title: "Blood Altar - Tier 1"
