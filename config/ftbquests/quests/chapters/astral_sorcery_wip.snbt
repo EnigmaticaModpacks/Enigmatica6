@@ -24,14 +24,18 @@
 			optional: true
 			id: "0000000000000AF4"
 			tasks: [{
-				id: "0000000000000AF5"
-				type: "checkmark"
+				id: "68C3AD7DEDCF8C8B"
+				type: "item"
+				item: "astralsorcery:aquamarine"
+				count: 4L
 			}]
 			rewards: [{
-				id: "0000000000000AF6"
+				id: "00B5497F8AA28D93"
 				type: "item"
-				title: "Resonating Wand"
-				item: "astralsorcery:wand"
+				title: "Marble"
+				item: "astralsorcery:marble_raw"
+				count: 16
+				random_bonus: 16
 			}]
 		}
 		{
@@ -789,17 +793,24 @@
 			]
 			dependencies: ["0000000000000B6E"]
 			id: "0000000000000BA3"
-			tasks: [{
-				id: "0000000000000BA4"
-				type: "item"
-				item: {
-					id: "astralsorcery:rock_crystal"
-					Count: 1b
-					tag: {
-						astralsorcery: { }
+			tasks: [
+				{
+					id: "0000000000000BA4"
+					type: "item"
+					item: {
+						id: "astralsorcery:rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
 					}
 				}
-			}]
+				{
+					id: "543F8C616957EB53"
+					type: "item"
+					item: "astralsorcery:wand"
+				}
+			]
 			rewards: [
 				{
 					id: "0000000000000BBC"
