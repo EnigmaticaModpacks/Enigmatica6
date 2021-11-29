@@ -752,6 +752,46 @@ onEvent('recipes', (event) => {
                 B: 'create:electron_tube'
             },
             id: 'mekanism:crafting_formula'
+        },
+        {
+            output: `mekanism:basic_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:lime_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/copper'
+            },
+            id: `mekanism:bin/basic`
+        },
+        {
+            output: `mekanism:advanced_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:red_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/bronze'
+            },
+            id: `mekanism:bin/advanced`
+        },
+        {
+            output: `mekanism:elite_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:light_blue_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/brass'
+            },
+            id: `mekanism:bin/elite`
+        },
+        {
+            output: `mekanism:ultimate_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:blue_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/hepatizon'
+            },
+            id: `mekanism:bin/ultimate`
         }
     ];
 
