@@ -128,6 +128,8 @@ onEvent('recipes', (event) => {
 
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
 
+        'tomeofblood:glyph_sentientharm',
+
         'waystones:warp_dust',
 
         /create:crafting\/materials\/andesite_alloy/,

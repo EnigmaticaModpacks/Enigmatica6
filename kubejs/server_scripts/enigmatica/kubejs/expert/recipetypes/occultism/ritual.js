@@ -1220,7 +1220,7 @@ onEvent('recipes', (event) => {
                 { item: 'tomeofblood:blood_gem' },
                 { item: 'ars_nouveau:blank_parchment' }
             ],
-            result: { item: 'sophisticatedbackpacks:glyph_sentientharm' },
+            result: { item: 'ars_nouveau:glyph_sentientharm' },
             id: `${id_prefix}glyph_sentientharm`
         }
     ];
