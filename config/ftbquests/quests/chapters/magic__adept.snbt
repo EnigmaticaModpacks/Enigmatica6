@@ -118,28 +118,63 @@
 			}]
 		}
 		{
+			title: "Natural Magic - Adept"
 			icon: "naturesaura:gold_leaf"
 			x: -3.0d
 			y: -5.0d
 			shape: "rsquare"
+			description: [""]
 			id: "6A88DD23AB4B2551"
 			tasks: [{
-				id: "61AF32765AD8AF12"
-				type: "checkmark"
-				title: "Natural Magic - Adept"
+				id: "75818E00A64B7C28"
+				type: "item"
+				item: "naturesaura:infused_iron"
 			}]
 		}
 		{
-			icon: "occultism:lens_frame"
+			title: "Spirit Magic - Adept"
+			icon: "occultism:golden_sacrificial_bowl"
 			x: 2.0d
 			y: -5.0d
 			shape: "rsquare"
 			id: "4CEB33C94A160D68"
-			tasks: [{
-				id: "5592E6317E431429"
-				type: "checkmark"
-				title: "Spirit Magic - Adept"
-			}]
+			tasks: [
+				{
+					id: "5A0243D5E0EB0586"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "494D1F8ABF9632B2"
+					type: "item"
+					item: "occultism:golden_sacrificial_bowl"
+				}
+				{
+					id: "0B7F689031988967"
+					type: "item"
+					item: "occultism:sacrificial_bowl"
+					count: 4L
+				}
+				{
+					id: "3D10E2B67F80993F"
+					type: "item"
+					title: "Any Candles"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:candles"
+						}
+					}
+					count: 4L
+				}
+			]
 		}
 		{
 			x: -1.0d
@@ -150,7 +185,6 @@
 				""
 				"The dragons themselves produce little enough, thankfully it is exceptionally potent. A healthy adult will produce enough to collect daily. Be warned, Komodo dragons are violent when caged, often even attacking their own young. Keepers will know to separate them accordingly. "
 			]
-			dependencies: ["61AF32765AD8AF12"]
 			id: "2A45214DF4B8A3A0"
 			tasks: [{
 				id: "4D8482E47412A89D"
@@ -259,19 +293,6 @@
 			}]
 		}
 		{
-			title: "Blood Altar - Tier 2"
-			x: 2.0d
-			y: -0.5d
-			dependencies: ["43D3D565E295FA5D"]
-			id: "188A31F2F6629892"
-			tasks: [{
-				id: "3B228E00996326B2"
-				type: "checkmark"
-				title: "Blood Altar - Tier 2"
-				icon: "bloodmagic:altar"
-			}]
-		}
-		{
 			title: "Otherstone Trader"
 			x: 2.5d
 			y: -4.0d
@@ -341,12 +362,15 @@
 			}]
 		}
 		{
+			title: "Blood Altar - Tier 2"
+			icon: "bloodmagic:altar"
 			x: 2.0d
 			y: 0.5d
 			description: ["A stronger receptacle will be required to delve deeper into the secrets of the spirit realm. "]
 			dependencies: [
 				"5602E77D09C84F56"
-				"188A31F2F6629892"
+				"43D3D565E295FA5D"
+				"57FFFBB68F2655C1"
 			]
 			id: "7BA120BEA495D354"
 			tasks: [
@@ -498,18 +522,11 @@
 				"46993F7BA43BE3AB"
 			]
 			id: "4780541D7D03AFE9"
-			tasks: [
-				{
-					id: "5121A366F884AFEE"
-					type: "item"
-					item: "naturesaura:calling_spirit"
-				}
-				{
-					id: "077B02D5F661785F"
-					type: "item"
-					item: "naturesaura:sky_ingot"
-				}
-			]
+			tasks: [{
+				id: "5121A366F884AFEE"
+				type: "item"
+				item: "naturesaura:calling_spirit"
+			}]
 		}
 		{
 			x: 1.0d
@@ -541,6 +558,23 @@
 					Count: 1b
 					tag: {
 						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			shape: "diamond"
+			id: "57FFFBB68F2655C1"
+			tasks: [{
+				id: "19014A262532EB8F"
+				type: "item"
+				item: {
+					id: "bloodmagic:sacrificialdagger"
+					Count: 1b
+					tag: {
+						sacrifice: 0b
 					}
 				}
 			}]

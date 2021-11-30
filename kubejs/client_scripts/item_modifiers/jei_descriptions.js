@@ -398,6 +398,10 @@ onEvent('jei.information', (event) => {
                 ` `,
                 `Enderiophage may be found in the wild in the End Midlands biome. They may also be called forth by consuming Otherworldly Honey.`
             ]
+        },
+        {
+            items: ['eidolon:sanguine_amulet', 'eidolon:sapping_sword'],
+            text: [`For crafting steps, refer to the Sanguine Items section under Rituals in the Ars Ecclesia.`]
         }
     ];
 

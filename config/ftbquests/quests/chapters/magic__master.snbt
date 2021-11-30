@@ -39,38 +39,27 @@
 			]
 		}
 		{
-			icon: {
-				id: "bloodmagic:basemonstersoul"
-				Count: 1b
-				tag: {
-					souls: 5.0d
-				}
-			}
+			title: "Spirit Magic - Master"
 			x: 3.0d
-			y: -2.5d
+			y: -1.5d
 			shape: "rsquare"
 			id: "06A6BE8C4A3B0C1D"
 			tasks: [{
-				id: "42A1FF1D7D0F156F"
-				type: "checkmark"
-				title: "Spirit Magic - Master"
-			}]
-		}
-		{
-			x: -2.0d
-			y: -1.5d
-			dependencies: ["1C5802ADD3834FE9"]
-			id: "2C2B68DDB928580A"
-			tasks: [{
-				id: "778C253B25C1ABEF"
+				id: "3200842BF652DCB5"
 				type: "item"
-				item: "botania:rune_mana"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: {
+						souls: 64.0d
+					}
+				}
 			}]
 		}
 		{
 			x: -1.5d
 			y: -0.5d
-			dependencies: ["2C2B68DDB928580A"]
+			dependencies: ["1C5802ADD3834FE9"]
 			id: "07B58D349276A834"
 			tasks: [{
 				id: "519108703756B960"
@@ -83,32 +72,19 @@
 			}]
 		}
 		{
+			title: "Blood Altar - Tier 3"
+			icon: "bloodmagic:altar"
 			x: 3.0d
 			y: -0.5d
 			dependencies: [
 				"07B58D349276A834"
-				"6B01AD9330600377"
+				"06A6BE8C4A3B0C1D"
 			]
 			id: "06E76BE2A422E8AC"
 			tasks: [{
 				id: "512B339FA8AB4383"
 				type: "item"
 				item: "bloodmagic:magicianbloodorb"
-			}]
-		}
-		{
-			icon: "bloodmagic:altar"
-			x: 3.0d
-			y: -1.5d
-			dependencies: [
-				"188A31F2F6629892"
-				"06A6BE8C4A3B0C1D"
-			]
-			id: "6B01AD9330600377"
-			tasks: [{
-				id: "68D1349D99C0227F"
-				type: "checkmark"
-				title: "Blood Altar - Tier 3"
 			}]
 		}
 		{
@@ -175,7 +151,11 @@
 			x: 0.5d
 			y: 0.5d
 			shape: "diamond"
-			dependencies: ["42A1FF1D7D0F156F"]
+			dependencies: [
+				"7660DCCE5DF6B3E1"
+				"3200842BF652DCB5"
+			]
+			dependency_requirement: "one_completed"
 			id: "4AA238B9E42083DE"
 			tasks: [
 				{
@@ -295,7 +275,7 @@
 		}
 		{
 			x: 3.0d
-			y: 1.5d
+			y: 2.0d
 			shape: "diamond"
 			description: ["Summon and slay an Unbound Afrit to obtain Afrit Essence. "]
 			dependencies: ["152B45DD8C1899C2"]
@@ -324,9 +304,11 @@
 			}]
 		}
 		{
+			title: "Blood Altar - Tier 4"
+			icon: "bloodmagic:altar"
 			x: 3.0d
 			y: 4.5d
-			dependencies: ["29223C27E6E95ADC"]
+			dependencies: ["4DE005315CFBB3AE"]
 			id: "3103AD6157F2D6AC"
 			tasks: [{
 				id: "6C327DA3D328E507"
@@ -336,7 +318,7 @@
 		}
 		{
 			x: 2.5d
-			y: 2.0d
+			y: 2.5d
 			shape: "diamond"
 			dependencies: ["44ADBADBF2774DF4"]
 			id: "65BFA7184C041242"
@@ -348,7 +330,7 @@
 		}
 		{
 			x: 3.0d
-			y: 2.5d
+			y: 3.0d
 			shape: "diamond"
 			dependencies: ["65BFA7184C041242"]
 			id: "4DE005315CFBB3AE"
@@ -359,32 +341,21 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 3.5d
-			dependencies: ["4DE005315CFBB3AE"]
-			id: "29223C27E6E95ADC"
-			tasks: [{
-				id: "02E607C53A37177E"
-				type: "checkmark"
-				title: "Blood Altar - Tier 4"
-				icon: "bloodmagic:altar"
-			}]
-		}
-		{
+			title: "Natural Magic - Master"
 			x: -2.0d
-			y: -2.5d
+			y: -1.5d
+			shape: "rsquare"
 			id: "1C5802ADD3834FE9"
 			tasks: [{
-				id: "497BC10E75173350"
-				type: "checkmark"
-				title: "Natural Magic - Master"
-				icon: "botania:spawner_mover"
+				id: "7660DCCE5DF6B3E1"
+				type: "item"
+				item: "naturesaura:sky_ingot"
 			}]
 		}
 		{
 			x: -2.5d
 			y: -0.5d
-			dependencies: ["2C2B68DDB928580A"]
+			dependencies: ["1C5802ADD3834FE9"]
 			id: "64ADD8495D9F55AF"
 			tasks: [{
 				id: "39561F7588C72B98"
@@ -501,6 +472,18 @@
 				id: "04E0027B30C34B89"
 				type: "item"
 				item: "astralsorcery:attunement_altar"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			shape: "diamond"
+			dependencies: ["06A6BE8C4A3B0C1D"]
+			id: "2182A1B04F9C2C84"
+			tasks: [{
+				id: "6064EF838E958365"
+				type: "item"
+				item: "ars_nouveau:glyph_sentientharm"
 			}]
 		}
 	]
