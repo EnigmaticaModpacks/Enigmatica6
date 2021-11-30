@@ -7,6 +7,7 @@ onEvent('recipes', (event) => {
         {
             inputs: ['#forge:dusts/silver', '#forge:dusts/silver', '#forge:dusts/silver', '#forge:dusts/silver'],
             reagent: '#forge:dusts/sulfur',
+            sourceCost: 1000,
             output: Item.of('4x architects_palette:sunmetal_blend'),
             id: 'architects_palette:sunmetal_blend'
         },
@@ -22,8 +23,25 @@ onEvent('recipes', (event) => {
                 'aquaculture:worm'
             ],
             reagent: '#forge:beehives/tier_0',
+            sourceCost: 5000,
             output: 'betterendforge:silk_moth_nest',
             id: `${id_prefix}silk_moth_nest`
+        },
+        {
+            inputs: [
+                'aquaculture:worm',
+                'naturesaura:gold_fiber',
+                'aquaculture:worm',
+                'thermal:phytogro',
+                'thermal:phytogro',
+                'aquaculture:worm',
+                'naturesaura:gold_fiber',
+                'aquaculture:worm'
+            ],
+            reagent: '#forge:beehives/tier_0',
+            sourceCost: 5000,
+            output: Item.of('2x betterendforge:silk_moth_nest'),
+            id: `${id_prefix}silk_moth_nest_alt`
         },
         {
             inputs: [
@@ -33,17 +51,23 @@ onEvent('recipes', (event) => {
                 'architects_palette:sunmetal_blend'
             ],
             reagent: 'betterendforge:silk_fiber',
+            sourceCost: 1000,
             output: Item.of('4x naturesaura:gold_fiber'),
             id: `${id_prefix}gold_fiber`
         },
         {
             inputs: [
+                'atum:papyrus_plant',
+                '#forge:dusts/lapis',
+                'atum:papyrus_plant',
                 'eidolon:pewter_inlay',
+                'eidolon:pewter_inlay',
+                'thermal:phytogro',
                 'betterendforge:andesite_pedestal',
-                'eidolon:pewter_inlay',
                 'thermal:phytogro'
             ],
             reagent: 'eidolon:crucible',
+            sourceCost: 1000,
             output: 'botania:apothecary_default',
             id: `${id_prefix}crucible`
         },
@@ -59,6 +83,7 @@ onEvent('recipes', (event) => {
                 'bloodmagic:reinforcedslate'
             ],
             reagent: 'minecraft:bowl',
+            sourceCost: 1000,
             output: 'occultism:sacrificial_bowl',
             id: 'occultism:crafting/sacrificial_bowl'
         },
@@ -71,6 +96,7 @@ onEvent('recipes', (event) => {
                 'eidolon:gold_inlay'
             ],
             reagent: 'occultism:sacrificial_bowl',
+            sourceCost: 5000,
             output: 'occultism:golden_sacrificial_bowl',
             id: 'occultism:crafting/golden_sacrificial_bowl'
         },
@@ -86,6 +112,7 @@ onEvent('recipes', (event) => {
                 'eidolon:pewter_inlay'
             ],
             reagent: 'eidolon:crucible',
+            sourceCost: 5000,
             output: 'bloodmagic:soulforge',
             id: `${id_prefix}soulforge`
         },
@@ -101,6 +128,7 @@ onEvent('recipes', (event) => {
                 'eidolon:gold_inlay'
             ],
             reagent: 'astralsorcery:aquamarine',
+            sourceCost: 5000,
             output: 'undergarden:catalyst',
             id: 'undergarden:catalyst'
         },
@@ -221,6 +249,7 @@ onEvent('recipes', (event) => {
                 'astralsorcery:illumination_powder'
             ],
             reagent: 'ars_nouveau:potion_jar',
+            sourceCost: 100,
             output: 'ars_nouveau:potion_melder',
             id: 'ars_nouveau:potion_melder'
         },
@@ -236,6 +265,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/gold_brass'
             ],
             reagent: 'botania:livingwood',
+            sourceCost: 6000,
             output: 'ars_nouveau:wand',
             id: 'ars_nouveau:wand'
         },
@@ -248,6 +278,7 @@ onEvent('recipes', (event) => {
                 '#forge:storage_blocks/mana'
             ],
             reagent: 'undergarden:utheric_sword',
+            sourceCost: 6000,
             output: 'ars_nouveau:enchanters_sword',
             id: 'ars_nouveau:enchanters_sword'
         },
@@ -263,6 +294,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/terminite'
             ],
             reagent: '#atum:relic_non_dirty/ring',
+            sourceCost: 6000,
             output: 'ars_nouveau:ring_of_lesser_discount',
             id: 'ars_nouveau:ring_of_lesser_discount'
         },
@@ -278,6 +310,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/thallasium'
             ],
             reagent: 'ars_nouveau:ring_of_lesser_discount',
+            sourceCost: 6000,
             output: 'ars_nouveau:ring_of_greater_discount',
             id: 'ars_nouveau:ring_of_greater_discount'
         },
@@ -293,6 +326,7 @@ onEvent('recipes', (event) => {
                 '#forge:gems/mana'
             ],
             reagent: '#atum:relic_non_dirty/necklace',
+            sourceCost: 6000,
             output: 'ars_nouveau:amulet_of_mana_regen',
             id: 'ars_nouveau:amulet_of_mana_regen'
         },
@@ -308,6 +342,7 @@ onEvent('recipes', (event) => {
                 '#forge:gems/mana'
             ],
             reagent: '#atum:relic_non_dirty/necklace',
+            sourceCost: 6000,
             output: 'ars_nouveau:amulet_of_mana_boost',
             id: 'ars_nouveau:amulet_of_mana_boost'
         },
@@ -323,6 +358,7 @@ onEvent('recipes', (event) => {
                 'quark:bottled_cloud'
             ],
             reagent: 'eidolon:basic_belt',
+            sourceCost: 6000,
             output: 'ars_nouveau:belt_of_levitation',
             id: 'ars_nouveau:belt_of_levitation'
         },
@@ -338,6 +374,7 @@ onEvent('recipes', (event) => {
                 '#forge:feathers'
             ],
             reagent: 'eidolon:basic_belt',
+            sourceCost: 6000,
             output: 'ars_nouveau:belt_of_unstable_gifts',
             id: 'ars_nouveau:belt_of_unstable_gifts'
         },
@@ -353,6 +390,7 @@ onEvent('recipes', (event) => {
                 'botania:livingrock'
             ],
             reagent: '#botania:runes/mana',
+            sourceCost: 6000,
             output: 'botania:mana_tablet',
             id: 'botania:mana_tablet'
         },
@@ -368,6 +406,7 @@ onEvent('recipes', (event) => {
                 '#resourcefulbees:resourceful_honeycomb_block'
             ],
             reagent: 'resourcefulbees:t1_apiary',
+            sourceCost: 5000,
             output: 'resourcefulbees:t2_apiary',
             id: 'resourcefulbees:t2_apiary'
         },
@@ -383,6 +422,7 @@ onEvent('recipes', (event) => {
                 '#forge:gems/mana_diamond'
             ],
             reagent: 'botania:livingwood_twig',
+            sourceCost: 5000,
             output: 'bloodmagic:ritualdiviner',
             id: `${id_prefix}ritualdiviner`
         },
@@ -398,6 +438,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/attack',
             id: 'pedestals:upgrades/attack'
         },
@@ -413,6 +454,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/turret',
             id: 'pedestals:upgrades/turret'
         },
@@ -428,6 +470,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/sawmill',
             id: 'pedestals:upgrades/sawmill'
         },
@@ -443,6 +486,7 @@ onEvent('recipes', (event) => {
                 'powah:capacitor_spirited'
             ],
             reagent: 'pedestals:coin/sawmill',
+            sourceCost: 2000,
             output: 'pedestals:coin/rfsawmill',
             id: 'pedestals:upgrades/rfsawmill'
         },
@@ -458,6 +502,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/chopper',
             id: 'pedestals:upgrades/chopper'
         },
@@ -473,6 +518,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/breaker',
             id: 'pedestals:upgrades/breaker'
         },
@@ -488,6 +534,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/cobble',
             id: 'pedestals:upgrades/cobblegen'
         },
@@ -503,6 +550,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/compactor2',
             id: 'pedestals:upgrades/compactor2'
         },
@@ -518,6 +566,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/crafter1',
             id: 'pedestals:upgrades/crafter1'
         },
@@ -533,6 +582,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/placer',
             id: 'pedestals:upgrades/placer'
         },
@@ -548,6 +598,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/smelter',
             id: 'pedestals:upgrades/smelter'
         },
@@ -563,6 +614,7 @@ onEvent('recipes', (event) => {
                 'powah:capacitor_spirited'
             ],
             reagent: 'pedestals:coin/smelter',
+            sourceCost: 2000,
             output: 'pedestals:coin/rfsmelter',
             id: 'pedestals:upgrades/rfsmelter'
         },
@@ -578,6 +630,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/import',
             id: 'pedestals:upgrades/import'
         },
@@ -593,6 +646,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             // Not a typo, items are misnamed.
             output: 'pedestals:coin/enderexport',
             id: 'pedestals:upgrades/enderimport'
@@ -609,6 +663,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/harvester',
             id: 'pedestals:upgrades/harvester'
         },
@@ -624,6 +679,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/breaker',
+            sourceCost: 2000,
             output: 'pedestals:coin/quarry',
             id: 'pedestals:upgrades/quarry'
         },
@@ -639,6 +695,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/grower',
             id: 'pedestals:upgrades/grower'
         },
@@ -654,6 +711,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/planter',
             id: 'pedestals:upgrades/planter'
         },
@@ -669,6 +727,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/harvesterhives',
             id: 'pedestals:upgrades/harvesterhives'
         },
@@ -684,6 +743,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/babymaker',
             id: 'pedestals:upgrades/babymaker'
         },
@@ -699,6 +759,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/crusher',
             id: 'pedestals:upgrades/crusher'
         },
@@ -714,6 +775,7 @@ onEvent('recipes', (event) => {
                 'powah:capacitor_spirited'
             ],
             reagent: 'pedestals:coin/crusher',
+            sourceCost: 2000,
             output: 'pedestals:coin/rfcrusher',
             id: 'pedestals:upgrades/rfcrusher'
         },
@@ -729,6 +791,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/dropper',
             id: 'pedestals:upgrades/dropper'
         },
@@ -744,6 +807,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/fan',
             id: 'pedestals:upgrades/fan'
         },
@@ -759,6 +823,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/effect',
             id: 'pedestals:upgrades/effect'
         },
@@ -774,6 +839,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/itemtank',
             id: 'pedestals:upgrades/itemtank'
         },
@@ -789,6 +855,7 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/milker',
             id: 'pedestals:upgrades/milker'
         },
@@ -804,6 +871,7 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/fluidtank',
             id: 'pedestals:upgrades/fluidtank'
         },
@@ -819,6 +887,7 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/fluidrelay',
             id: 'pedestals:upgrades/fluidrelay'
         },
@@ -834,6 +903,7 @@ onEvent('recipes', (event) => {
                 'powah:capacitor_spirited'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/rfrelay',
             id: 'pedestals:upgrades/rfrelay'
         },
@@ -849,6 +919,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:greater_experience_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/xprelay',
             id: 'pedestals:upgrades/xprelay'
         },
@@ -864,6 +935,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/teleporter',
             id: 'pedestals:upgrades/teleporter'
         },
@@ -879,6 +951,7 @@ onEvent('recipes', (event) => {
                 'quark:basalt'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/void',
             id: 'pedestals:upgrades/void'
         },
@@ -894,6 +967,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/magnet',
             id: 'pedestals:upgrades/magnet'
         },
@@ -909,6 +983,7 @@ onEvent('recipes', (event) => {
                 'botania:pixie_dust'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/shearer',
             id: 'pedestals:upgrades/shearer'
         },
@@ -924,6 +999,7 @@ onEvent('recipes', (event) => {
                 'powah:capacitor_spirited'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/rfimport',
             id: 'pedestals:upgrades/rfimport'
         },
@@ -939,6 +1015,7 @@ onEvent('recipes', (event) => {
                 'powah:capacitor_nitro'
             ],
             reagent: 'pedestals:coin/rfexport',
+            sourceCost: 2000,
             output: 'pedestals:coin/rffield',
             id: 'pedestals:upgrades/rffield'
         },
@@ -954,6 +1031,7 @@ onEvent('recipes', (event) => {
                 'powah:capacitor_spirited'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/rftank',
             id: 'pedestals:upgrades/rftank'
         },
@@ -969,6 +1047,7 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/fluidcrafter1',
             id: 'pedestals:upgrades/fluidcrafter1'
         },
@@ -984,6 +1063,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:greater_experience_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/xpgrindstone',
             id: 'pedestals:upgrades/xpgrindstone'
         },
@@ -999,6 +1079,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:greater_experience_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/xpbottler',
             id: 'pedestals:upgrades/xpbottler'
         },
@@ -1014,6 +1095,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:greater_experience_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/xpmagnet',
             id: 'pedestals:upgrades/xpmagnet'
         },
@@ -1029,6 +1111,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:greater_experience_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/fluidxpconverter',
             id: 'pedestals:upgrades/fluidxpconverter'
         },
@@ -1044,6 +1127,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:greater_experience_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/xptank',
             id: 'pedestals:upgrades/xptank'
         },
@@ -1059,6 +1143,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:greater_experience_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/xpdropper',
             id: 'pedestals:upgrades/xpdropper'
         },
@@ -1074,6 +1159,7 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/fluidimport',
             id: 'pedestals:upgrades/fluidimport'
         },
@@ -1089,6 +1175,7 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem'
             ],
             reagent: 'pedestals:coin/default',
+            sourceCost: 2000,
             output: 'pedestals:coin/fluidpump',
             id: 'pedestals:upgrades/fluidpump'
         },
@@ -1101,6 +1188,7 @@ onEvent('recipes', (event) => {
                 '#botania:runes/air'
             ],
             reagent: 'botania:livingwood_bow',
+            sourceCost: 10000,
             output: 'ars_nouveau:spell_bow',
             id: 'ars_nouveau:spell_bow'
         },
@@ -1113,6 +1201,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:mana_fiber'
             ],
             reagent: 'atum:wanderer_helmet',
+            sourceCost: 100,
             output: 'ars_nouveau:novice_hood',
             id: `${id_prefix}novice_hood`
         },
@@ -1128,6 +1217,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:mana_fiber'
             ],
             reagent: 'atum:wanderer_chest',
+            sourceCost: 100,
             output: 'ars_nouveau:novice_robes',
             id: `${id_prefix}novice_robes`
         },
@@ -1142,6 +1232,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:mana_fiber'
             ],
             reagent: 'atum:wanderer_legs',
+            sourceCost: 100,
             output: 'ars_nouveau:novice_leggings',
             id: `${id_prefix}novice_leggings`
         },
@@ -1153,6 +1244,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:mana_fiber'
             ],
             reagent: 'atum:wanderer_boots',
+            sourceCost: 100,
             output: 'ars_nouveau:novice_boots',
             id: `${id_prefix}novice_boots`
         },
@@ -1166,6 +1258,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: 'atum:wanderer_helmet',
+            sourceCost: 3000,
             output: 'ars_nouveau:apprentice_hood',
             id: `${id_prefix}apprentice_hood`
         },
@@ -1181,6 +1274,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: 'atum:wanderer_chest',
+            sourceCost: 3000,
             output: 'ars_nouveau:apprentice_robes',
             id: `${id_prefix}apprentice_robes`
         },
@@ -1195,6 +1289,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: 'atum:wanderer_legs',
+            sourceCost: 3000,
             output: 'ars_nouveau:apprentice_leggings',
             id: `${id_prefix}apprentice_leggings`
         },
@@ -1206,6 +1301,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: 'atum:wanderer_boots',
+            sourceCost: 3000,
             output: 'ars_nouveau:apprentice_boots',
             id: `${id_prefix}apprentice_boots`
         },
@@ -1219,6 +1315,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: 'botania:manaweave_helmet',
+            sourceCost: 5000,
             output: 'ars_nouveau:archmage_hood',
             id: `${id_prefix}archmage_hood`
         },
@@ -1234,6 +1331,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: 'botania:manaweave_chestplate',
+            sourceCost: 5000,
             output: 'ars_nouveau:archmage_robes',
             id: `${id_prefix}archmage_robes`
         },
@@ -1248,6 +1346,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: 'botania:manaweave_leggings',
+            sourceCost: 5000,
             output: 'ars_nouveau:archmage_leggings',
             id: `${id_prefix}archmage_leggings`
         },
@@ -1259,6 +1358,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: 'botania:manaweave_boots',
+            sourceCost: 5000,
             output: 'ars_nouveau:archmage_boots',
             id: `${id_prefix}archmage_boots`
         },
@@ -1274,6 +1374,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: 'botania:manasteel_helmet',
+            sourceCost: 5000,
             output: 'botania:terrasteel_helmet',
             id: `${id_prefix}terrasteel_helmet`
         },
@@ -1289,6 +1390,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: 'botania:manasteel_chestplate',
+            sourceCost: 5000,
             output: 'botania:terrasteel_chestplate',
             id: `${id_prefix}terrasteel_chestplate`
         },
@@ -1304,6 +1406,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: 'botania:manasteel_leggings',
+            sourceCost: 5000,
             output: 'botania:terrasteel_leggings',
             id: `${id_prefix}terrasteel_leggings`
         },
@@ -1319,6 +1422,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: 'botania:manasteel_boots',
+            sourceCost: 5000,
             output: 'botania:terrasteel_boots',
             id: `${id_prefix}terrasteel_boots`
         },
@@ -1334,6 +1438,7 @@ onEvent('recipes', (event) => {
                 '#forge:storage_blocks/mana'
             ],
             reagent: 'ars_nouveau:drygmy_shard',
+            sourceCost: 1000,
             output: 'ars_nouveau:drygmy_charm',
             id: `ars_nouveau:drygmy_charm`
         },
@@ -1349,14 +1454,48 @@ onEvent('recipes', (event) => {
                 '#forge:gems/mana'
             ],
             reagent: 'ars_nouveau:sylph_shards',
+            sourceCost: 1000,
             output: 'ars_nouveau:sylph_charm',
             id: `ars_nouveau:sylph_charm`
         },
         {
             inputs: ['atum:anput_godshard', 'naturesaura:token_fear'],
             reagent: '#atum:relic_non_dirty/ring',
+            sourceCost: 5000,
             output: 'naturesaura:death_ring',
             id: `${id_prefix}death_ring`
+        },
+        {
+            inputs: [
+                '#forge:gems/fluorite',
+                '#forge:nuggets/regalium',
+                '#forge:gems/fluorite',
+                '#forge:wires/copper',
+                '#forge:wires/copper',
+                'ars_nouveau:magic_clay',
+                'immersiveengineering:connector_lv',
+                'ars_nouveau:magic_clay'
+            ],
+            reagent: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+            sourceCost: 9001,
+            output: 'immersiveengineering:electron_tube',
+            id: `${id_prefix}electron_tube_alt`
+        },
+        {
+            inputs: [
+                '#forge:nuggets/nebu',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                '#forge:nuggets/nebu',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                '#forge:nuggets/nebu',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                '#forge:nuggets/nebu'
+            ],
+            reagent: 'occultism:otherstone_frame',
+            sourceCost: 100,
+            output: 'occultism:wormhole_frame',
+            id: 'occultism:crafting/wormhole_frame'
         },
 
         /// Patchouli Removals
@@ -1374,6 +1513,13 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.ars_nouveau.enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs).id(recipe.id);
+        recipe.sourceCost
+            ? event.recipes.ars_nouveau
+                  .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
+                  .merge({ sourceCost: recipe.sourceCost })
+                  .id(recipe.id)
+            : event.recipes.ars_nouveau
+                  .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
+                  .id(recipe.id);
     });
 });

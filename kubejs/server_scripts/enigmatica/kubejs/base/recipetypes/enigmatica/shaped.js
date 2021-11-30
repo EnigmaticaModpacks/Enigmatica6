@@ -534,18 +534,4 @@ onEvent('recipes', (event) => {
             B: 'resourcefulbees:wax'
         });
     });
-
-    [
-        { ingredient: '#forge:ingots/copper', tier: 'basic' },
-        { ingredient: '#forge:dusts/redstone', tier: 'advanced' },
-        { ingredient: '#forge:ingots/osmium', tier: 'elite' },
-        { ingredient: '#forge:obsidian', tier: 'ultimate' }
-    ].forEach((recipe) => {
-        event
-            .shaped(`mekanism:${recipe.tier}_bin`, ['ABA', 'A A', 'AAA'], {
-                A: 'minecraft:smooth_stone',
-                B: recipe.ingredient
-            })
-            .id(`mekanism:bin/${recipe.tier}`);
-    });
 });

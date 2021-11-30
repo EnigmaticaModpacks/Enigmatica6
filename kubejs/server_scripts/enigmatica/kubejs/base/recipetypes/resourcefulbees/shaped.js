@@ -10,9 +10,10 @@ onEvent('recipes', (event) => {
             id: ''
         }
     */
-    const id_prefix = 'enigmatica:base/resourcefulbees/'
+    const id_prefix = 'enigmatica:base/resourcefulbees/';
     const newRecipes = [
-        {   //Override In-world Upgrades for tiering   
+        {
+            //Override In-world Upgrades for tiering
             output: 'resourcefulbees:t2_hive_upgrade',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
@@ -22,7 +23,7 @@ onEvent('recipes', (event) => {
             },
             id: 'resourcefulbees:t2_hive_upgrade'
         },
-        {   
+        {
             output: 'resourcefulbees:t3_hive_upgrade',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
@@ -30,17 +31,17 @@ onEvent('recipes', (event) => {
                 B: 'resourcefulbees:wax_block',
                 C: 'resourcefulbees:t2_hive_upgrade'
             },
-            id: 'resourcefulbees:t3_hive_upgrade',
+            id: 'resourcefulbees:t3_hive_upgrade'
         },
-        {   
+        {
             output: 'resourcefulbees:t4_hive_upgrade',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#resourcefulbees:resourceful_honeycomb_block',
                 B: ['minecraft:honey_block', '#resourcefulbees:resourceful_honey_block'],
-                C: "resourcefulbees:t3_hive_upgrade"
+                C: 'resourcefulbees:t3_hive_upgrade'
             },
-            id: 'resourcefulbees:t4_hive_upgrade',
+            id: 'resourcefulbees:t4_hive_upgrade'
         },
         {
             output: 'resourcefulbees:t1_apiary',
@@ -254,7 +255,8 @@ onEvent('recipes', (event) => {
             },
             id: `${id_prefix}water_bucket_combs`
         },
-        {   // Native Bee Nest Recipes - gated behind resourceful combs
+        {
+            // Native Bee Nest Recipes - gated behind resourceful combs
             output: 'resourcefulbees:bee_nest',
             pattern: ['AAA', 'BBB', 'ABA'],
             key: {
@@ -536,7 +538,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('minecraft:egg', 3),
-            pattern: ['A ', ' BA'],
+            pattern: ['A  ', ' BA'],
             key: {
                 A: 'resourcefulbees:shepherd_honeycomb',
                 B: 'resourcefulbees:wax'
@@ -565,7 +567,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('atum:godforge', 1),
-            pattern: ['ACA','CBC','ACA'],
+            pattern: ['ACA', 'CBC', 'ACA'],
             key: {
                 A: 'resourcefulbees:dusty_mummbee_honeycomb_block',
                 B: '#forge:furnace',
@@ -575,11 +577,11 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('atum:godforged_block', 1),
-            pattern: ['BAB','CAC','BAB'],
+            pattern: ['BAB', 'CAC', 'BAB'],
             key: {
                 A: 'resourcefulbees:dusty_mummbee_honeycomb',
                 B: '#forge:ingots/nebu',
-                C: '#atum:godshards',
+                C: '#atum:godshards'
             },
             id: `${id_prefix}raw_gloomper_meat`
         }

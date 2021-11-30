@@ -55,7 +55,7 @@ onEvent('recipes', (event) => {
             output: 'bloodmagic:daggerofsacrifice',
             pattern: ['  A', 'BA ', 'CB '],
             key: {
-                A: '#forge:ingots/gold_bronze',
+                A: '#forge:ingots/silicon_bronze',
                 B: 'eidolon:pewter_inlay',
                 C: '#forge:rods/wooden'
             },

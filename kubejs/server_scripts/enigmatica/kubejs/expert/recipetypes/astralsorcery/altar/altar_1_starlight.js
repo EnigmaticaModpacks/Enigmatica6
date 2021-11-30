@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                     canBeAttuned: true,
                     canBeCelestialCrystal: true
                 },
-                B: { tag: 'forge:storage_blocks/bronze' },
+                B: { tag: 'forge:storage_blocks/silicon_bronze' },
                 C: { tag: 'forge:dusts/starmetal' },
                 D: { tag: 'botania:runes/vanaheim' },
                 E: { item: 'create:refined_radiance' },
