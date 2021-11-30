@@ -151,7 +151,11 @@
 			x: 0.5d
 			y: 0.5d
 			shape: "diamond"
-			dependencies: ["7660DCCE5DF6B3E1"]
+			dependencies: [
+				"7660DCCE5DF6B3E1"
+				"3200842BF652DCB5"
+			]
+			dependency_requirement: "one_completed"
 			id: "4AA238B9E42083DE"
 			tasks: [
 				{
