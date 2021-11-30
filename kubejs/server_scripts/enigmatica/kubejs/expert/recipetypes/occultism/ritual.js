@@ -1207,6 +1207,21 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'sophisticatedbackpacks:refill_upgrade' },
             id: `${id_prefix}refill_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_glyph_sentientharm' },
+            ingredients: [
+                { item: 'ars_nouveau:marvelous_clay' },
+                { item: 'bloodmagic:soulgempetty' },
+                { item: 'tomeofblood:blood_gem' },
+                { item: 'ars_nouveau:blank_parchment' }
+            ],
+            result: { item: 'sophisticatedbackpacks:glyph_sentientharm' },
+            id: `${id_prefix}glyph_sentientharm`
         }
     ];
 

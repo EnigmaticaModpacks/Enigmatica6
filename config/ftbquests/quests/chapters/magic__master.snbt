@@ -39,21 +39,21 @@
 			]
 		}
 		{
-			icon: {
-				id: "bloodmagic:basemonstersoul"
-				Count: 1b
-				tag: {
-					souls: 5.0d
-				}
-			}
+			title: "Spirit Magic - Master"
 			x: 3.0d
 			y: -2.5d
 			shape: "rsquare"
 			id: "06A6BE8C4A3B0C1D"
 			tasks: [{
-				id: "42A1FF1D7D0F156F"
-				type: "checkmark"
-				title: "Spirit Magic - Master"
+				id: "3200842BF652DCB5"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: {
+						souls: 64.0d
+					}
+				}
 			}]
 		}
 		{
@@ -175,7 +175,7 @@
 			x: 0.5d
 			y: 0.5d
 			shape: "diamond"
-			dependencies: ["42A1FF1D7D0F156F"]
+			dependencies: ["7660DCCE5DF6B3E1"]
 			id: "4AA238B9E42083DE"
 			tasks: [
 				{
@@ -371,14 +371,15 @@
 			}]
 		}
 		{
+			title: "Natural Magic - Master"
 			x: -2.0d
 			y: -2.5d
+			shape: "rsquare"
 			id: "1C5802ADD3834FE9"
 			tasks: [{
-				id: "497BC10E75173350"
-				type: "checkmark"
-				title: "Natural Magic - Master"
-				icon: "botania:spawner_mover"
+				id: "7660DCCE5DF6B3E1"
+				type: "item"
+				item: "naturesaura:sky_ingot"
 			}]
 		}
 		{
@@ -501,6 +502,18 @@
 				id: "04E0027B30C34B89"
 				type: "item"
 				item: "astralsorcery:attunement_altar"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			shape: "diamond"
+			dependencies: ["06A6BE8C4A3B0C1D"]
+			id: "2182A1B04F9C2C84"
+			tasks: [{
+				id: "6064EF838E958365"
+				type: "item"
+				item: "ars_nouveau:glyph_sentientharm"
 			}]
 		}
 	]
