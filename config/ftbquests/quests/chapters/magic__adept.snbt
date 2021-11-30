@@ -133,7 +133,7 @@
 		}
 		{
 			title: "Spirit Magic - Adept"
-			icon: "occultism:lens_frame"
+			icon: "occultism:golden_sacrificial_bowl"
 			x: 2.0d
 			y: -5.0d
 			shape: "rsquare"
@@ -293,19 +293,6 @@
 			}]
 		}
 		{
-			title: "Blood Altar - Tier 2"
-			x: 2.0d
-			y: -0.5d
-			dependencies: ["43D3D565E295FA5D"]
-			id: "188A31F2F6629892"
-			tasks: [{
-				id: "3B228E00996326B2"
-				type: "checkmark"
-				title: "Blood Altar - Tier 2"
-				icon: "bloodmagic:altar"
-			}]
-		}
-		{
 			title: "Otherstone Trader"
 			x: 2.5d
 			y: -4.0d
@@ -375,12 +362,15 @@
 			}]
 		}
 		{
+			title: "Blood Altar - Tier 2"
+			icon: "bloodmagic:altar"
 			x: 2.0d
 			y: 0.5d
 			description: ["A stronger receptacle will be required to delve deeper into the secrets of the spirit realm. "]
 			dependencies: [
 				"5602E77D09C84F56"
-				"188A31F2F6629892"
+				"43D3D565E295FA5D"
+				"57FFFBB68F2655C1"
 			]
 			id: "7BA120BEA495D354"
 			tasks: [
@@ -568,6 +558,23 @@
 					Count: 1b
 					tag: {
 						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			shape: "diamond"
+			id: "57FFFBB68F2655C1"
+			tasks: [{
+				id: "19014A262532EB8F"
+				type: "item"
+				item: {
+					id: "bloodmagic:sacrificialdagger"
+					Count: 1b
+					tag: {
+						sacrifice: 0b
 					}
 				}
 			}]
