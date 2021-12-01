@@ -750,5 +750,14 @@ const craftedBees = [
     'pcbee',
     'otherworldly',
     'carbee',
-    'dusty_mummbee'
+    'dusty_mummbee',
+    'brass',
+    'bronze',
+    'constantan',
+    'invar',
+    'steel',
+    'lumium',
+    'signalum',
+    'electrum',
+    'enderium'
 ];
