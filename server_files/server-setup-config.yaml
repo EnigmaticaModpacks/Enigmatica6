@@ -98,16 +98,16 @@ install:
     # For often there are config which the user wants to change, here is the place to put the local path to configs, jars or whatever
     # You can copy files or folders
     localFiles:
-        - from: setup/modpack-download.zip
-          to: setup/test/modpack-download-copied.zip
-        - from: setup/AOF 2/.minecraft
-          to: setup/.
+        #- from: setup/modpack-download.zip
+        #  to: setup/test/modpack-download-copied.zip
+        #- from: setup/AOF 2/.minecraft
+        #  to: setup/.
 
     # This makes the program check the folder for whether it is supposed to use the
-    checkFolder: yes
+    checkFolder: true
 
-    # Whether to install the Loader (Forge or Fabric) or not, should always be yes/true unless you only want to install the pack
-    installLoader: yes
+    # Whether to install the Loader (Forge or Fabric) or not, should always be true/true unless you only want to install the pack
+    installLoader: true
 
     # Sponge bootstrapper jar URL
     # Only needed if you have spongefix enabled
@@ -124,15 +124,15 @@ install:
 # settings regarding the launching of the pack
 launch:
     # applies the launch wrapper to fix sponge for a few mods
-    spongefix: no
+    spongefix: false
 
     # Use a RAMDisk for the world folder
-    # case-sensitive; use only lowercase `yes` or `no`
-    # NOTE: The server must have run once fully before switching to `yes`!
-    ramDisk: no
+    # case-sensitive; use only lowercase `true` or `false`
+    # NOTE: The server must have run once fully before switching to `true`!
+    ramDisk: false
 
     # checks with the help of a few unrelated server whether the server is online
-    checkOffline: no
+    checkOffline: false
 
     # specifies the max amount of ram the server is supposed to launch with
     maxRam: 5G
@@ -141,7 +141,7 @@ launch:
     minRam: 2G
 
     # specifies whether the server is supposed to auto restart after crash
-    autoRestart: yes
+    autoRestart: true
 
     # after a given amount of crashes in a given time the server will stop auto restarting
     crashLimit: 10

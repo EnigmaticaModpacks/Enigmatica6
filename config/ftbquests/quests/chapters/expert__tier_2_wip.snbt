@@ -147,14 +147,23 @@
 				"Like runes drawn upon the firmament itself, the constellations channel great energies and bring with them knowledge of secrets long thought lost. "
 				""
 				"Many of their secrets remain out of reach, however even an apprentice knows enough to channel some starlight for basic tasks. "
+				""
+				"Note: The Floating Crystal will not link to the Magic Workbench automatically. Therefore, a Linking Tool must first be crafted to manually link them. "
 			]
 			dependencies: ["4C5CCC780A4B07A7"]
 			id: "102775CD7F9CD338"
-			tasks: [{
-				id: "0F780C3F50CF951D"
-				type: "item"
-				item: "astralsorcery:altar_discovery"
-			}]
+			tasks: [
+				{
+					id: "0F780C3F50CF951D"
+					type: "item"
+					item: "astralsorcery:altar_discovery"
+				}
+				{
+					id: "0EA40EE2C1484EEE"
+					type: "item"
+					item: "astralsorcery:linking_tool"
+				}
+			]
 		}
 		{
 			title: "Blood Altar - Tier 1"
@@ -183,7 +192,11 @@
 		{
 			x: -1.5d
 			y: -1.5d
-			description: [""]
+			description: [
+				"“The spirits beckon. Will you answer their call? “"
+				""
+				"– Dagan The Attentive"
+			]
 			dependencies: ["5A53DAE0FAC0A38F"]
 			id: "4280183EE48A8F1E"
 			tasks: [{
@@ -195,6 +208,11 @@
 		{
 			x: -3.5d
 			y: -1.5d
+			description: [
+				"“Life is balance, give and take. Be wary not to draw more Aura than you return. “"
+				""
+				"– Ulmaern of the Wild Grove"
+			]
 			dependencies: ["598A3BD34A7DD40B"]
 			id: "2422557696EB83F3"
 			tasks: [{
@@ -204,8 +222,14 @@
 			}]
 		}
 		{
+			title: "Ritual of the Forest"
 			x: -4.5d
 			y: -2.5d
+			description: [
+				"“Do you feel it? The pulse of the Earth thrums through the ritual center. Focus, let it flow through you and the magic will grow like weeds in the sun.”"
+				""
+				"– Cisu The Patient"
+			]
 			dependencies: [
 				"566824DF05761A43"
 				"62F3B5013BAB47AB"
@@ -215,11 +239,13 @@
 				id: "64DA833E05EAACEC"
 				type: "item"
 				item: "naturesaura:wood_stand"
+				count: 8L
 			}]
 		}
 		{
 			x: -4.0d
 			y: -6.0d
+			description: ["The gateway to floral magics, and advanced medicinal brewing. "]
 			dependencies: ["719AFD0C38BE19A2"]
 			id: "295B7A0FB81D44DB"
 			tasks: [{
@@ -231,6 +257,7 @@
 		{
 			x: -4.5d
 			y: -4.5d
+			description: ["A potent apparatus designed by the ancients that works off natural background mana. Originally designed for the purpose of training young apprentices, the contraption soon caught on as a more efficient means of creating some materials. Sadly, those original methods are now lost to the ages. "]
 			dependencies: ["295B7A0FB81D44DB"]
 			id: "566824DF05761A43"
 			tasks: [{
@@ -243,7 +270,11 @@
 			x: -1.5d
 			y: -3.0d
 			description: [
-				"Something powerful has been listening. Waiting. Gain its approval to begin channeling the energies of sanguimancy. "
+				"Something powerful has been listening. "
+				""
+				"Waiting."
+				""
+				"Gain its approval to begin channeling the energies of sanguimancy."
 				""
 				"The Weak Blood Orb is crafted from an Unholy Symbol. Refer to the Ars Ecclesia and Eidolon quest chapters to learn how these are made."
 			]
@@ -293,7 +324,7 @@
 			x: -3.5d
 			y: -3.0d
 			description: [
-				"There is subtle magic to be found throughout the natural world, and silk moths are no exception. Their silk prized for its arcane properties. "
+				"There is subtle magic to be found throughout the natural world, and silk moths are no exception. Their silk is prized for its arcane properties. "
 				""
 				"Convert some Silk Fiber to Brilliant Fiber and place it in the leaves of trees. Once it has been allowed to spread and mature, it may be harvested to obtain Gold Leaf."
 			]
@@ -320,7 +351,7 @@
 			description: [
 				"“They came from above… With their power, they raised the land sundering the seas… In a blink they had wiped themselves out.”"
 				""
-				"– V'uithlos, The Elder"
+				"– V'uithlos The Elder"
 			]
 			dependencies: ["0000000000000FEB"]
 			hide: true
@@ -333,6 +364,11 @@
 		{
 			x: -1.0d
 			y: -6.0d
+			description: [
+				"A workbench suitable for practitioners at all levels, made from the finest magical materials. "
+				""
+				"While somewhat rare in the overworld, the flax needed to make linen is very commonly found in Atum by breaking Oasis Grass."
+			]
 			dependencies: ["719AFD0C38BE19A2"]
 			id: "4C5CCC780A4B07A7"
 			tasks: [{
@@ -399,7 +435,7 @@
 		{
 			x: -0.5d
 			y: -2.5d
-			description: ["The link though tenuous, grows stronger. Channeling the spirits and their energies pave the way to Alchemy and from there, the deeper magics. "]
+			description: ["The link though tenuous, grows stronger. Channeling the spirits and their energies paves the way to Alchemy and from there, the deeper magics. "]
 			dependencies: ["7E371FBDE82532D9"]
 			id: "5A53DAE0FAC0A38F"
 			tasks: [{
