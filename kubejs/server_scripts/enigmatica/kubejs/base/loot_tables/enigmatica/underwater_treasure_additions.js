@@ -5,11 +5,13 @@ onEvent('chest.loot_tables', (event) => {
             entries: [
                 {
                     item: Item.of('minecraft:potion', '{Potion:"minecraft:water_breathing"}'),
-                    weight: 100
+                    weight: 100,
+                    count: [1, 3]
                 },
                 {
                     item: Item.of('minecraft:potion', '{Potion:"minecraft:long_water_breathing"}'),
-                    weight: 75
+                    weight: 75,
+                    count: [0, 2]
                 },
                 {
                     item: 'create:diving_helmet',
