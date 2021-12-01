@@ -70,6 +70,8 @@ onEvent('chest.loot_tables', (event) => {
 
     const underwater_chests = [
         'minecraft:shipwreck_supply',
+        'minecraft:underwater_ruin_big',
+        'minecraft:underwater_ruin_small',
         'repurposed_structures:dungeon/ocean',
         'repurposed_structures:mineshaft/ocean',
         'dungeons_plus:warped_garden/common'
