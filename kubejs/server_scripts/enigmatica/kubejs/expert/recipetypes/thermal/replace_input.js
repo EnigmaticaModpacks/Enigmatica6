@@ -10,6 +10,11 @@ onEvent('recipes', (event) => {
             replaceWith: 'thermal:fluid_cell'
         },
         {
+            replaceTarget: { id: 'thermal:machine_pyrolyzer' },
+            toReplace: '#forge:netherbricks',
+            replaceWith: 'immersiveengineering:blastbrick'
+        },
+        {
             replaceTarget: { id: 'thermal:machine_bottler' },
             toReplace: 'thermal:machine_frame',
             replaceWith: 'thermal:fluid_cell_frame'
