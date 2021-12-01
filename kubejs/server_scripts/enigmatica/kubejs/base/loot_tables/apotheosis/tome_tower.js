@@ -332,6 +332,11 @@ onEvent('generic.loot_tables', (event) => {
                     item: 'ars_nouveau:mana_gem',
                     weight: 100,
                     count: [5, 9]
+                },
+                {
+                    item: 'bloodmagic:experiencebook',
+                    weight: 15,
+                    count: 1
                 }
             ]
         }
