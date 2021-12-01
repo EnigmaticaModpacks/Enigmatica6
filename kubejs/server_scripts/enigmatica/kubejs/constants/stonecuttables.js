@@ -2369,6 +2369,25 @@ const stonecuttables = [
         stones: ['quark:gunpowder_sack', 'thermal:gunpowder_block'],
         onlyAsOutput: [],
         onlyAsInput: []
+    },
+    {
+        name: 'mud',
+        stones: ['byg:mud_block', 'environmental:mud'],
+        onlyAsOutput: [],
+        onlyAsInput: []
+    },
+    {
+        name: 'mud_bricks',
+        stones: [
+            'environmental:mud_brick_wall',
+            'environmental:chiseled_mud_bricks',
+            'environmental:mud_brick_stairs',
+            'environmental:mud_bricks',
+            'tconstruct:mud_bricks',
+            'byg:mud_bricks'
+        ],
+        onlyAsOutput: [],
+        onlyAsInput: []
     }
 ];
 

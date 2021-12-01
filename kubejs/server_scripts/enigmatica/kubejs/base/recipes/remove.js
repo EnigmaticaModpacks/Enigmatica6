@@ -29,6 +29,8 @@ onEvent('recipes', (event) => {
 
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
+        'byg:mud_block',
+        'byg:mud_ball',
 
         'create:crushing/obsidian',
 
