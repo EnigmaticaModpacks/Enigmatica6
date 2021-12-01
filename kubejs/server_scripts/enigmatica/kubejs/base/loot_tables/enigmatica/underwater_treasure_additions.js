@@ -1,0 +1,100 @@
+onEvent('chest.loot_tables', (event) => {
+    const pools = [
+        {
+            rolls: { min: 1, max: 5 },
+            entries: [
+                {
+                    item: Item.of('minecraft:potion', '{Potion:"minecraft:water_breathing"}'),
+                    weight: 100
+                },
+                {
+                    item: Item.of('minecraft:potion', '{Potion:"minecraft:long_water_breathing"}'),
+                    weight: 75
+                },
+                {
+                    item: 'create:diving_helmet',
+                    count: 1,
+                    weight: 25,
+                    enchantLevel: 15
+                },
+                {
+                    item: 'create:diving_boots',
+                    count: 1,
+                    weight: 25,
+                    enchantLevel: 15
+                },
+                {
+                    item: 'create:copper_backtank',
+                    count: 1,
+                    weight: 25,
+                    enchantLevel: 15
+                },
+                {
+                    item: 'thermal:diving_helmet',
+                    count: 1,
+                    weight: 50,
+                    enchantLevel: 10
+                },
+                {
+                    item: 'thermal:diving_chestplate',
+                    count: 1,
+                    weight: 50,
+                    enchantLevel: 10
+                },
+                {
+                    item: 'thermal:diving_boots',
+                    count: 1,
+                    weight: 50,
+                    enchantLevel: 10
+                },
+                {
+                    item: 'thermal:diving_leggings',
+                    count: 1,
+                    weight: 50,
+                    enchantLevel: 10
+                },
+                {
+                    item: 'artifacts:charm_of_sinking'
+                },
+                {
+                    item: 'artifacts:flippers'
+                },
+                {
+                    item: 'artifacts:snorkel'
+                }
+            ]
+        }
+    ];
+
+    const underwater_chests = [
+        'minecraft:shipwreck_supply',
+        'repurposed_structures:chests/dungeon/ocean',
+        'repurposed_structures:chests/mineshaft/ocean'
+    ];
+    underwater_chests.forEach((underwater_chest) => {
+        event.modify(underwater_chest, (table) => {
+            pools.forEach((pool) => {
+                table.addPool((newPool) => {
+                    newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);
+                    pool.entries.forEach((entry) => {
+                        let count = 1,
+                            weight = 1;
+
+                        if (entry.count) {
+                            count = entry.count;
+                        }
+
+                        if (entry.weight) {
+                            weight = entry.weight;
+                        }
+
+                        const re = newPool.addItem(entry.item, weight, count);
+                        if (entry.enchantLevel) {
+                            re.enchantWithLevels(entry.enchantLevel, false);
+                        }
+                    });
+                });
+            });
+        });
+    });
+});

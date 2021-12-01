@@ -68,6 +68,21 @@ onEvent('generic.loot_tables', (event) => {
                     item: Item.of('shrink:mob_bottle', '{entity:"minecraft:ocelot"}'),
                     count: 2,
                     weight: 20
+                },
+                {
+                    item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:moose"}'),
+                    count: 2,
+                    weight: 20
+                },
+                {
+                    item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:rattlesnake"}'),
+                    count: 2,
+                    weight: 20
+                },
+                {
+                    item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:komodo_dragon"}'),
+                    count: 2,
+                    weight: 20
                 }
             ]
         }
