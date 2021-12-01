@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
                 B: 'occultism:spirit_attuned_gem',
                 C: '#forge:plates/aluminum',
                 D: '#forge:glass_panes/cyan',
-                E: 'quark:slime_in_a_bucket'
+                E: 'tconstruct:sky_slime_crystal'
             },
             id: 'scannable:scanner'
         },
