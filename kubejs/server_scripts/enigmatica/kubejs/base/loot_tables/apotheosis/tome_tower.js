@@ -347,16 +347,8 @@ onEvent('generic.loot_tables', (event) => {
             table.addPool((newPool) => {
                 newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);
                 pool.entries.forEach((entry) => {
-                    let count = 1,
-                        weight = 1;
-
-                    if (entry.count) {
-                        count = entry.count;
-                    }
-
-                    if (entry.weight) {
-                        weight = entry.weight;
-                    }
+                    let count = entry.count ? entry.count : 1,
+                        weight = entry.weight ? entry.weight : 1;
 
                     newPool.addItem(entry.item, weight, count);
                 });
