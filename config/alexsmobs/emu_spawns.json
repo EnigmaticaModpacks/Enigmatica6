@@ -1,28 +1,40 @@
 {
-  "biomes": [
-    [
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "mesa"
-      }
-    ],
-    [
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "savanna"
-      }
+    "biomes": [
+        [
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "overworld"
+            },
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "mesa"
+            }
+        ],
+        [
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "overworld"
+            },
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "savanna"
+            }
+        ],
+        [
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "atum"
+            },
+            {
+                "type": "BIOME_CATEGORY",
+                "negate": false,
+                "value": "lush"
+            }
+        ]
     ]
-  ]
 }

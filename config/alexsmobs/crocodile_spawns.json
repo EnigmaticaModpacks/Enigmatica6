@@ -1,33 +1,50 @@
 {
-  "biomes": [
-    [
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "swamp"
-      }
-    ],
-    [
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "river"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "cold"
-      }
+    "biomes": [
+        [
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "overworld"
+            },
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "swamp"
+            }
+        ],
+        [
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "overworld"
+            },
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "river"
+            },
+            {
+                "type": "BIOME_DICT",
+                "negate": true,
+                "value": "cold"
+            }
+        ],
+        [
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "atum"
+            },
+            {
+                "type": "BIOME_CATEGORY",
+                "negate": false,
+                "value": "lush"
+            },
+            {
+                "type": "BIOME_CATEGORY",
+                "negate": false,
+                "value": "river"
+            }
+        ]
     ]
-  ]
 }
