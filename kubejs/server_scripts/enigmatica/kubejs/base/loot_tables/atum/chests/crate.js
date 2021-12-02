@@ -187,57 +187,57 @@ onEvent('chest.loot_tables', (event) => {
             rolls: { min: 1, max: 3 },
             entries: [
                 {
-                    name: 'alexsmobs:centipede_leg',
+                    item: 'alexsmobs:centipede_leg',
                     weight: 10,
                     count: [1, 2]
                 },
                 {
-                    name: 'alexsmobs:rattlesnake_rattle',
+                    item: 'alexsmobs:rattlesnake_rattle',
                     weight: 20,
                     count: [1, 3]
                 },
                 {
-                    name: 'alexsmobs:emu_feather',
+                    item: 'alexsmobs:emu_feather',
                     weight: 20,
                     count: [1, 5]
                 },
                 {
-                    name: 'alexsmobs:maggot',
+                    item: 'alexsmobs:maggot',
                     weight: 10,
                     count: [5, 10]
                 },
                 {
-                    name: 'alexsmobs:komodo_spit',
+                    item: 'alexsmobs:komodo_spit',
                     weight: 20,
                     count: [1, 2]
                 },
                 {
-                    name: 'alexsmobs:crocodile_scute',
+                    item: 'alexsmobs:crocodile_scute',
                     weight: 10,
                     count: [1, 2]
                 },
                 {
-                    name: 'atum:wolf_pelt',
+                    item: 'atum:wolf_pelt',
                     weight: 100,
                     count: [1, 3]
                 },
                 {
-                    name: 'minecraft:rabbit_hide',
+                    item: 'minecraft:rabbit_hide',
                     weight: 100,
                     count: [3, 6]
                 },
                 {
-                    name: 'minecraft:rabbit_foot',
+                    item: 'minecraft:rabbit_foot',
                     weight: 50,
                     count: [1, 2]
                 },
                 {
-                    name: 'minecraft:leather',
+                    item: 'minecraft:leather',
                     weight: 10,
                     count: [1, 2]
                 },
                 {
-                    name: 'minecraft:feather',
+                    item: 'minecraft:feather',
                     weight: 20,
                     count: [1, 5]
                 }
@@ -247,52 +247,52 @@ onEvent('chest.loot_tables', (event) => {
             rolls: { min: 2, max: 4 },
             entries: [
                 {
-                    name: 'minecraft:egg',
+                    item: 'minecraft:egg',
                     weight: 20,
                     count: [6, 12]
                 },
                 {
-                    name: 'alexsmobs:crocodile_egg',
+                    item: 'alexsmobs:crocodile_egg',
                     weight: 20,
                     count: [1, 2]
                 },
                 {
-                    name: 'alexsmobs:emu_egg',
+                    item: 'alexsmobs:emu_egg',
                     weight: 20,
                     count: [1, 6]
                 },
                 {
-                    name: 'atum:quail_egg',
+                    item: 'atum:quail_egg',
                     weight: 50,
                     count: [6, 12]
                 },
                 {
-                    name: 'atum:emmer_bread',
+                    item: 'atum:emmer_bread',
                     weight: 100,
                     count: [1, 6]
                 },
                 {
-                    name: 'simplefarming:jaffa_cake',
+                    item: 'simplefarming:jaffa_cake',
                     weight: 100,
                     count: [1, 6]
                 },
                 {
-                    name: 'simplefarming:cheese_block',
+                    item: 'simplefarming:cheese_block',
                     weight: 100,
                     count: 1
                 },
                 {
-                    name: 'simplefarming:curry_powder',
+                    item: 'simplefarming:curry_powder',
                     weight: 100,
                     count: [6, 12]
                 },
                 {
-                    name: 'farmersdelight:cooked_bacon',
+                    item: 'farmersdelight:cooked_bacon',
                     weight: 100,
                     count: [6, 12]
                 },
                 {
-                    name: 'farmersdelight:smoked_ham',
+                    item: 'farmersdelight:smoked_ham',
                     weight: 100,
                     count: [1, 2]
                 }
@@ -302,77 +302,77 @@ onEvent('chest.loot_tables', (event) => {
             rolls: { min: 2, max: 3 },
             entries: [
                 {
-                    name: 'atum:emmer_block',
+                    item: 'atum:emmer_block',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'farmersdelight:potato_crate',
+                    item: 'farmersdelight:potato_crate',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'farmersdelight:carrot_crate',
+                    item: 'farmersdelight:carrot_crate',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'farmersdelight:straw_bale',
+                    item: 'farmersdelight:straw_bale',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'farmersdelight:onion_crate',
+                    item: 'farmersdelight:onion_crate',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'farmersdelight:rice_bag',
+                    item: 'farmersdelight:rice_bag',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'farmersdelight:cabbage_crate',
+                    item: 'farmersdelight:cabbage_crate',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'quark:cocoa_beans_sack',
+                    item: 'quark:cocoa_beans_sack',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'farmersdelight:canvas',
+                    item: 'farmersdelight:canvas',
                     weight: 100,
                     count: [8, 16]
                 },
                 {
-                    name: 'simplefarming:wine',
+                    item: 'simplefarming:wine',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'simplefarming:beer',
+                    item: 'simplefarming:beer',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'simplefarming:cauim',
+                    item: 'simplefarming:cauim',
                     weight: 100,
                     count: [1, 4]
                 },
                 {
-                    name: 'atum:date',
+                    item: 'atum:date',
                     weight: 100,
                     count: [1, 2]
                 },
                 {
-                    name: 'atum:golden_date',
+                    item: 'atum:golden_date',
                     weight: 50,
                     count: 1
                 },
                 {
-                    name: 'atum:golden_date_enchanted',
+                    item: 'atum:golden_date_enchanted',
                     weight: 20,
                     count: 1
                 }
@@ -382,37 +382,37 @@ onEvent('chest.loot_tables', (event) => {
             rolls: { min: 1, max: 2 },
             entries: [
                 {
-                    name: 'supplementaries:bomb_blue',
+                    item: 'supplementaries:bomb_blue',
                     weight: 20,
                     count: [1, 2]
                 },
                 {
-                    name: 'supplementaries:bomb',
+                    item: 'supplementaries:bomb',
                     weight: 50,
                     count: [1, 4]
                 },
                 {
-                    name: 'atum:linen_bandage',
+                    item: 'atum:linen_bandage',
                     weight: 100,
                     count: [4, 8]
                 },
                 {
-                    name: 'supplementaries:slingshot',
+                    item: 'supplementaries:slingshot',
                     weight: 10,
                     count: 1
                 },
                 {
-                    name: 'quark:gunpowder_sack',
+                    item: 'quark:gunpowder_sack',
                     weight: 100,
                     count: [1, 2]
                 },
                 {
-                    name: 'emendatusenigmatica:potassium_nitrate_dust',
+                    item: 'emendatusenigmatica:potassium_nitrate_dust',
                     weight: 100,
                     count: [4, 8]
                 },
                 {
-                    name: 'emendatusenigmatica:sulfur_dust',
+                    item: 'emendatusenigmatica:sulfur_dust',
                     weight: 100,
                     count: [4, 8]
                 }
@@ -422,82 +422,82 @@ onEvent('chest.loot_tables', (event) => {
             rolls: { min: 0, max: 4 },
             entries: [
                 {
-                    name: 'minecraft:gold_nugget',
+                    item: 'minecraft:gold_nugget',
                     weight: 100,
                     count: [1, 16]
                 },
                 {
-                    name: 'minecraft:iron_nugget',
+                    item: 'minecraft:iron_nugget',
                     weight: 100,
                     count: [1, 16]
                 },
                 {
-                    name: 'emendatusenigmatica:tin_nugget',
+                    item: 'emendatusenigmatica:tin_nugget',
                     weight: 100,
                     count: [1, 32]
                 },
                 {
-                    name: 'emendatusenigmatica:copper_nugget',
+                    item: 'emendatusenigmatica:copper_nugget',
                     weight: 100,
                     count: [1, 32]
                 },
                 {
-                    name: 'emendatusenigmatica:silver_nugget',
+                    item: 'emendatusenigmatica:silver_nugget',
                     weight: 100,
                     count: [1, 16]
                 },
                 {
-                    name: 'emendatusenigmatica:lead_nugget',
+                    item: 'emendatusenigmatica:lead_nugget',
                     weight: 100,
                     count: [1, 16]
                 },
                 {
-                    name: 'emendatusenigmatica:nickel_nugget',
+                    item: 'emendatusenigmatica:nickel_nugget',
                     weight: 100,
                     count: [1, 16]
                 },
                 {
-                    name: 'emendatusenigmatica:electrum_nugget',
+                    item: 'emendatusenigmatica:electrum_nugget',
                     weight: 100,
                     count: [1, 16]
                 },
                 {
-                    name: 'emendatusenigmatica:aluminum_nugget',
+                    item: 'emendatusenigmatica:aluminum_nugget',
                     weight: 100,
                     count: [1, 16]
                 },
                 {
-                    name: 'atum:nebu_drop',
+                    item: 'atum:nebu_drop',
                     weight: 20,
                     count: [1, 4]
                 },
                 {
-                    name: 'minecraft:diamond',
+                    item: 'minecraft:diamond',
                     weight: 20,
                     count: [1, 4]
                 },
                 {
-                    name: 'minecraft:emerald',
+                    item: 'minecraft:emerald',
                     weight: 30,
                     count: [1, 8]
                 },
                 {
-                    name: 'minecraft:lapis_lazuli',
+                    item: 'minecraft:lapis_lazuli',
                     weight: 50,
                     count: [1, 16]
                 },
                 {
-                    name: 'minecraft:coal',
+                    item: 'minecraft:coal',
                     weight: 50,
                     count: [1, 16]
                 },
                 {
-                    name: 'minecraft:redstone',
+                    item: 'minecraft:redstone',
                     weight: 50,
                     count: [1, 16]
                 },
                 {
-                    name: 'quark:white_crystal',
+                    item: 'quark:white_crystal',
                     weight: 30,
                     count: [1, 8]
                 }
@@ -510,7 +510,7 @@ onEvent('chest.loot_tables', (event) => {
             table.addPool((newPool) => {
                 newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);
                 pool.entries.forEach((entry) => {
-                    newPool.addItem(entry.name, entry.weight, entry.count);
+                    newPool.addItem(entry.item, entry.weight, entry.count);
                 });
             });
         });

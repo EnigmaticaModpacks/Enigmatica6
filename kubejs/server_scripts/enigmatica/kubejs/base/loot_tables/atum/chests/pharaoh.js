@@ -1,27 +1,50 @@
 onEvent('chest.loot_tables', (event) => {
-
     const pools = [
         {
-            rolls: {min: 1, max: 1},
+            rolls: { min: 1, max: 1 },
             entries: [
                 {
-                    name: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:dusty_mummbee_bee"}),
+                    item: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:dusty_mummbee_bee' }),
                     weight: 25,
                     count: 1
                 }
             ]
+        },
+        {
+            rolls: { min: 1, max: 3 },
+            entries: [
+                {
+                    item: 'eidolon:fungus_sprouts',
+                    weight: 100,
+                    count: [1, 6]
+                },
+                {
+                    item: 'eidolon:death_essence',
+                    weight: 30,
+                    count: [1, 6]
+                },
+                {
+                    item: 'eidolon:lesser_soul_gem',
+                    weight: 20,
+                    count: 1
+                },
+                {
+                    item: 'eidolon:shadow_gem',
+                    weight: 10,
+                    count: 1
+                }
+            ]
         }
-    ]
+    ];
 
-    
     event.modify('atum:pharaoh', (table) => {
         pools.forEach((pool) => {
             table.addPool((newPool) => {
-                newPool.setUniformRolls(pool.rolls.min, pool.rolls.max)
+                newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);
                 pool.entries.forEach((entry) => {
-                    newPool.addItem(entry.name, entry.weight, entry.count);
-                })
-            })
-        })
-    })
-})
+                    newPool.addItem(entry.item, entry.weight, entry.count);
+                });
+            });
+        });
+    });
+});
