@@ -295,6 +295,26 @@ onEvent('chest.loot_tables', (event) => {
                     item: 'farmersdelight:smoked_ham',
                     weight: 100,
                     count: [1, 2]
+                },
+                {
+                    item: 'atum:crunchy_scarab',
+                    weight: 100,
+                    count: [5, 10]
+                },
+                {
+                    item: 'atum:date',
+                    weight: 100,
+                    count: [1, 2]
+                },
+                {
+                    item: 'atum:golden_date',
+                    weight: 50,
+                    count: 1
+                },
+                {
+                    item: 'atum:golden_date_enchanted',
+                    weight: 20,
+                    count: 1
                 }
             ]
         },
@@ -360,21 +380,6 @@ onEvent('chest.loot_tables', (event) => {
                     item: 'simplefarming:cauim',
                     weight: 100,
                     count: [1, 4]
-                },
-                {
-                    item: 'atum:date',
-                    weight: 100,
-                    count: [1, 2]
-                },
-                {
-                    item: 'atum:golden_date',
-                    weight: 50,
-                    count: 1
-                },
-                {
-                    item: 'atum:golden_date_enchanted',
-                    weight: 20,
-                    count: 1
                 }
             ]
         },
@@ -510,7 +515,13 @@ onEvent('chest.loot_tables', (event) => {
             table.addPool((newPool) => {
                 newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);
                 pool.entries.forEach((entry) => {
-                    newPool.addItem(entry.item, entry.weight, entry.count);
+                    let count = entry.count ? entry.count : 1,
+                        weight = entry.weight ? entry.weight : 1;
+
+                    const re = newPool.addItem(entry.item, weight, count);
+                    if (entry.enchantLevel) {
+                        re.enchantWithLevels(entry.enchantLevel, false);
+                    }
                 });
             });
         });

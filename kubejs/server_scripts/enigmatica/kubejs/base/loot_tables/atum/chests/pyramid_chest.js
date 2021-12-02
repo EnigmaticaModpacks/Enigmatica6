@@ -7,163 +7,103 @@ onEvent('server.datapack.high_priority', (event) => {
                 entries: [
                     {
                         type: 'item',
-                        name: 'minecraft:string',
-                        entryName: 'string',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
-                        weight: 75
-                    },
-                    {
-                        type: 'item',
-                        name: 'minecraft:feather',
-                        entryName: 'feather',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
-                        weight: 75
-                    },
-                    {
-                        type: 'item',
                         name: 'minecraft:leather',
-                        entryName: 'leather',
                         functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
                         weight: 75
                     },
                     {
                         type: 'item',
                         name: 'atum:cloth_scrap',
-                        entryName: 'cloth_scrap',
                         functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
                         weight: 75
                     },
                     {
                         type: 'item',
-                        name: 'minecraft:gunpowder',
-                        entryName: 'gunpowder',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
-                        weight: 50
-                    },
-                    {
-                        type: 'item',
                         name: 'atum:fertile_soil_pile',
-                        entryName: 'fertile_soil_pile',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
+                        functions: [{ function: 'set_count', count: { min: 6, max: 9 } }],
                         weight: 40
                     },
-                    {
-                        type: 'item',
-                        name: 'minecraft:rotten_flesh',
-                        entryName: 'rotten_flesh',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
-                        weight: 100
-                    },
-                    {
-                        type: 'item',
-                        name: 'atum:dusty_bone',
-                        entryName: 'dusty_bone',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
-                        weight: 100
-                    },
-                    {
-                        type: 'item',
-                        name: 'minecraft:redstone',
-                        entryName: 'redstone',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
-                        weight: 50
-                    },
-                    {
-                        type: 'item',
-                        name: 'minecraft:coal',
-                        entryName: 'coal',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
-                        weight: 45
-                    },
-                    {
-                        type: 'item',
-                        name: 'atum:date',
-                        entryName: 'date',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 2 } }],
-                        weight: 45
-                    },
-                    {
-                        type: 'item',
-                        name: 'atum:emmer_seeds',
-                        entryName: 'emmer_seeds',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
-                        weight: 40
-                    },
-                    {
-                        type: 'item',
-                        name: 'melon_seeds',
-                        entryName: 'melon_seeds',
-                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
-                        weight: 20
-                    },
-                    { type: 'item', name: 'atum:golden_date', entryName: 'golden_date', weight: 1 },
-                    { type: 'item', name: 'atum:golden_date_enchanted', entryName: 'golden_date_enchanted', weight: 1 },
-                    { type: 'loot_table', name: 'atum:chests/subloot/iron_weapons_0', weight: 75, quality: 2 },
-                    { type: 'loot_table', name: 'atum:chests/subloot/iron_weapons_25', weight: 10, quality: 2 },
-                    { type: 'loot_table', name: 'atum:chests/subloot/iron_armor_0', weight: 75, quality: 2 },
-                    { type: 'loot_table', name: 'atum:chests/subloot/iron_armor_25', weight: 10, quality: 2 },
-                    { type: 'loot_table', name: 'atum:chests/subloot/diamond_weapons_35', weight: 2, quality: 2 },
-                    { type: 'loot_table', name: 'atum:chests/subloot/diamond_armor_35', weight: 2, quality: 2 },
+                    { type: 'loot_table', name: 'atum:chests/subloot/iron_weapons_25', weight: 15, quality: 2 },
+                    { type: 'loot_table', name: 'atum:chests/subloot/iron_armor_25', weight: 15, quality: 2 },
+                    { type: 'loot_table', name: 'atum:chests/subloot/diamond_weapons_35', weight: 10, quality: 2 },
+                    { type: 'loot_table', name: 'atum:chests/subloot/diamond_armor_35', weight: 10, quality: 2 },
                     {
                         type: 'item',
                         name: 'minecraft:iron_ingot',
-                        entryName: 'iron_ingot',
                         functions: [{ function: 'set_count', count: { min: 1, max: 2 } }],
                         weight: 20
                     },
                     {
                         type: 'item',
                         name: 'minecraft:gold_ingot',
-                        entryName: 'gold_ingot',
                         functions: [{ function: 'set_count', count: { min: 1, max: 2 } }],
                         weight: 20
                     },
                     {
                         type: 'item',
                         name: 'atum:nebu_torch',
-                        entryName: 'nebu_torch',
                         functions: [{ function: 'set_count', count: { min: 1, max: 1 } }],
                         weight: 40
                     },
                     {
                         type: 'item',
                         name: 'atum:coin_dirty',
-                        entryName: 'coin_dirty',
                         functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
                         weight: 45
                     },
-                    { type: 'item', name: 'atum:relic_dirty_ring', entryName: 'loot_dirty_ring', weight: 20 },
-                    { type: 'item', name: 'atum:relic_dirty_necklace', entryName: 'loot_dirty_necklace', weight: 15 },
-                    { type: 'item', name: 'atum:relic_dirty_brooch', entryName: 'loot_dirty_brooch', weight: 10 },
-                    { type: 'item', name: 'atum:relic_dirty_bracelet', entryName: 'loot_dirty_bracelet', weight: 5 },
-                    { type: 'item', name: 'atum:relic_dirty_idol', entryName: 'loot_dirty_idol', weight: 1 },
-                    { type: 'item', name: 'minecraft:name_tag', entryName: 'name_tag', weight: 10 },
+                    {
+                        type: 'item',
+                        name: 'atum:relic_dirty_ring',
+                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
+                        weight: 20
+                    },
+                    {
+                        type: 'item',
+                        name: 'atum:relic_dirty_necklace',
+                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
+                        weight: 15
+                    },
+                    {
+                        type: 'item',
+                        name: 'atum:relic_dirty_brooch',
+                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
+                        weight: 10
+                    },
+                    {
+                        type: 'item',
+                        name: 'atum:relic_dirty_bracelet',
+                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
+                        weight: 5
+                    },
+                    {
+                        type: 'item',
+                        name: 'atum:relic_dirty_idol',
+                        functions: [{ function: 'set_count', count: { min: 1, max: 3 } }],
+                        weight: 1
+                    },
+                    { type: 'item', name: 'minecraft:name_tag', weight: 10 },
                     {
                         type: 'item',
                         name: 'atum:desert_wolf_iron_armor',
-                        entryName: 'desert_wolf_iron_armor',
                         weight: 10
                     },
                     {
                         type: 'item',
                         name: 'atum:desert_wolf_gold_armor',
-                        entryName: 'desert_wolf_gold_armor',
                         weight: 5
                     },
                     {
                         type: 'item',
                         name: 'atum:desert_wolf_diamond_armor',
-                        entryName: 'desert_wolf_diamond_armor',
                         weight: 3
                     },
-                    { type: 'item', name: 'atum:camel_iron_armor', entryName: 'camel_iron_armor', weight: 10 },
-                    { type: 'item', name: 'atum:camel_gold_armor', entryName: 'camel_gold_armor', weight: 5 },
-                    { type: 'item', name: 'atum:camel_diamond_armor', entryName: 'camel_diamond_armor', weight: 3 },
-                    { type: 'item', name: 'minecraft:totem_of_undying', entryName: 'totem_of_undying', weight: 5 },
+                    { type: 'item', name: 'atum:camel_iron_armor', weight: 10 },
+                    { type: 'item', name: 'atum:camel_gold_armor', weight: 5 },
+                    { type: 'item', name: 'atum:camel_diamond_armor', weight: 3 },
+                    { type: 'item', name: 'minecraft:totem_of_undying', weight: 5 },
                     {
                         type: 'item',
                         name: 'minecraft:book',
-                        entryName: 'enchanted_book',
                         functions: [{ function: 'enchant_randomly' }],
                         weight: 20
                     }
@@ -176,7 +116,6 @@ onEvent('server.datapack.high_priority', (event) => {
                     {
                         type: 'item',
                         name: 'atum:sand',
-                        entryName: 'sand',
                         functions: [{ function: 'set_count', count: { min: 1, max: 8 } }],
                         weight: 1
                     }
@@ -226,19 +165,19 @@ onEvent('chest.loot_tables', (event) => {
                     count: [1, 2]
                 },
                 {
-                    item: 'ars_nouveau:carbuncle_shard',
+                    item: 'ars_nouveau:carbuncle_shards',
                     weight: 10,
-                    count: [1, 2]
+                    count: 1
                 },
                 {
-                    item: 'ars_nouveau:sylph_shard',
+                    item: 'ars_nouveau:sylph_shards',
                     weight: 10,
-                    count: [1, 2]
+                    count: 1
                 },
                 {
                     item: 'ars_nouveau:drygmy_shard',
                     weight: 10,
-                    count: [1, 2]
+                    count: 1
                 }
             ]
         },
@@ -268,22 +207,22 @@ onEvent('chest.loot_tables', (event) => {
                 {
                     item: 'ars_nouveau:apprentice_boots',
                     weight: 20,
-                    enchantLevel: 15
+                    enchantLevel: 20
                 },
                 {
                     item: 'ars_nouveau:apprentice_leggings',
                     weight: 20,
-                    enchantLevel: 15
+                    enchantLevel: 20
                 },
                 {
                     item: 'ars_nouveau:apprentice_robes',
                     weight: 20,
-                    enchantLevel: 15
+                    enchantLevel: 20
                 },
                 {
                     item: 'ars_nouveau:apprentice_hood',
                     weight: 20,
-                    enchantLevel: 15
+                    enchantLevel: 20
                 },
                 {
                     item: 'botania:manaweave_cloth',
@@ -299,6 +238,206 @@ onEvent('chest.loot_tables', (event) => {
                     item: Item.of('naturesaura:aura_cache', '{aura:200000}'),
                     count: [0, 1],
                     weight: 20
+                },
+                {
+                    item: 'botania:corporea_spark',
+                    count: [2, 5],
+                    weight: 50
+                },
+                {
+                    item: 'betterendforge:silk_fiber',
+                    count: [2, 5],
+                    weight: 30
+                },
+                {
+                    item: 'immersiveengineering:hemp_fabric',
+                    count: [2, 5],
+                    weight: 30
+                },
+                {
+                    item: 'eidolon:tattered_cloth',
+                    count: [2, 5],
+                    weight: 30
+                },
+                {
+                    item: 'atum:linen_cloth',
+                    count: [2, 5],
+                    weight: 30
+                },
+                {
+                    item: 'minecraft:leather',
+                    count: [2, 5],
+                    weight: 30
+                },
+                {
+                    item: 'farmersdelight:canvas',
+                    count: [8, 16],
+                    weight: 30
+                }
+            ]
+        },
+        {
+            rolls: { min: 2, max: 3 },
+            entries: [
+                {
+                    item: 'atum:emmer_block',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'farmersdelight:potato_crate',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'farmersdelight:carrot_crate',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'farmersdelight:straw_bale',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'farmersdelight:onion_crate',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'farmersdelight:rice_bag',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'farmersdelight:cabbage_crate',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'quark:cocoa_beans_sack',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'simplefarming:wine',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'simplefarming:beer',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'simplefarming:cauim',
+                    weight: 100,
+                    count: [1, 4]
+                },
+                {
+                    item: 'atum:crunchy_scarab',
+                    weight: 100,
+                    count: [5, 10]
+                },
+                {
+                    item: 'atum:date',
+                    weight: 100,
+                    count: [1, 2]
+                },
+                {
+                    item: 'atum:golden_date',
+                    weight: 50,
+                    count: 1
+                },
+                {
+                    item: 'atum:golden_date_enchanted',
+                    weight: 20,
+                    count: 1
+                }
+            ]
+        },
+        {
+            rolls: { min: 1, max: 4 },
+            entries: [
+                {
+                    item: 'minecraft:gold_ingot',
+                    weight: 100,
+                    count: [1, 8]
+                },
+                {
+                    item: 'minecraft:iron_ingot',
+                    weight: 100,
+                    count: [1, 8]
+                },
+                {
+                    item: 'emendatusenigmatica:tin_ingot',
+                    weight: 100,
+                    count: [1, 16]
+                },
+                {
+                    item: 'emendatusenigmatica:copper_ingot',
+                    weight: 100,
+                    count: [1, 16]
+                },
+                {
+                    item: 'emendatusenigmatica:silver_ingot',
+                    weight: 100,
+                    count: [1, 8]
+                },
+                {
+                    item: 'emendatusenigmatica:lead_ingot',
+                    weight: 100,
+                    count: [1, 8]
+                },
+                {
+                    item: 'emendatusenigmatica:nickel_ingot',
+                    weight: 100,
+                    count: [1, 8]
+                },
+                {
+                    item: 'emendatusenigmatica:electrum_ingot',
+                    weight: 100,
+                    count: [1, 8]
+                },
+                {
+                    item: 'emendatusenigmatica:aluminum_ingot',
+                    weight: 100,
+                    count: [1, 8]
+                },
+                {
+                    item: 'atum:nebu_drop',
+                    weight: 20,
+                    count: [1, 4]
+                },
+                {
+                    item: 'minecraft:diamond',
+                    weight: 20,
+                    count: [1, 4]
+                },
+                {
+                    item: 'minecraft:emerald',
+                    weight: 30,
+                    count: [1, 8]
+                },
+                {
+                    item: 'minecraft:lapis_lazuli',
+                    weight: 50,
+                    count: [1, 16]
+                },
+                {
+                    item: 'minecraft:coal',
+                    weight: 50,
+                    count: [1, 16]
+                },
+                {
+                    item: 'minecraft:redstone',
+                    weight: 50,
+                    count: [1, 16]
+                },
+                {
+                    item: 'quark:white_crystal',
+                    weight: 30,
+                    count: [1, 8]
                 }
             ]
         }
@@ -308,16 +447,8 @@ onEvent('chest.loot_tables', (event) => {
         pools.forEach((pool) => {
             table.addPool((newPool) => {
                 pool.entries.forEach((entry) => {
-                    let count = 1,
-                        weight = 1;
-
-                    if (entry.count) {
-                        count = entry.count;
-                    }
-
-                    if (entry.weight) {
-                        weight = entry.weight;
-                    }
+                    let count = entry.count ? entry.count : 1,
+                        weight = entry.weight ? entry.weight : 1;
 
                     const re = newPool.addItem(entry.item, weight, count);
                     if (entry.enchantLevel) {
