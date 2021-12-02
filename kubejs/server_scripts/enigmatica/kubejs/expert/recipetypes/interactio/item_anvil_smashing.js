@@ -60,6 +60,30 @@ onEvent('recipes', (event) => {
             },
             damage: 4,
             id: 'sophisticatedbackpacks:void_upgrade'
+        },
+        {
+            inputs: [
+                Item.of('computercraft:computer_normal'),
+                Item.of('computercraft:disk')
+            ],
+            output: {
+                entries: [{ result: { item: 'computercraft:pocket_computer_normal' }, weight: 1 }],
+                rolls: 1
+            },
+            damage: 2,
+            id: `${id_prefix}pocket_computer_normal`
+        },
+        {
+            inputs: [
+                Item.of('computercraft:computer_advanced'),
+                Item.of('computercraft:disk')
+            ],
+            output: {
+                entries: [{ result: { item: 'computercraft:pocket_computer_advanced' }, weight: 1 }],
+                rolls: 1
+            },
+            damage: 2,
+            id: `${id_prefix}pocket_computer_advanced`
         }
     ];
 
