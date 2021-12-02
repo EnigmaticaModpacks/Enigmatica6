@@ -1,4 +1,4 @@
-onEvent('generic.loot_tables', (event) => {
+onEvent('chest.loot_tables', (event) => {
     const pools = [
         {
             rolls: { min: 1, max: 3 },
@@ -226,7 +226,7 @@ onEvent('generic.loot_tables', (event) => {
         }
     ];
 
-    event.modify('atum:chests/crate', (table) => {
+    event.modify('atum:crate', (table) => {
         pools.forEach((pool) => {
             table.addPool((newPool) => {
                 newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);
