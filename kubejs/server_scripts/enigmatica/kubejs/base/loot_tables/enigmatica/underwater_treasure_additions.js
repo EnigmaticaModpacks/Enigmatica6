@@ -80,18 +80,9 @@ onEvent('chest.loot_tables', (event) => {
         event.modify(underwater_chest, (table) => {
             pools.forEach((pool) => {
                 table.addPool((newPool) => {
-                    newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);
                     pool.entries.forEach((entry) => {
-                        let count = 1,
-                            weight = 1;
-
-                        if (entry.count) {
-                            count = entry.count;
-                        }
-
-                        if (entry.weight) {
-                            weight = entry.weight;
-                        }
+                        let count = entry.count ? entry.count : 1,
+                            weight = entry.weight ? entry.weight : 1;
 
                         const re = newPool.addItem(entry.item, weight, count);
                         if (entry.enchantLevel) {
