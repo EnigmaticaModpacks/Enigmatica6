@@ -1,6 +1,6 @@
+
 # RandomPatches configuration.
 # All configuration options not under [client] are server-sided unless otherwise stated.
-
 # Client-sided options.
 [client]
 	# Optimizes bamboo rendering.
@@ -103,7 +103,7 @@
 		#  - ${username}: The username.
 		# '$' can be escaped by using an extra '$'.
 		# Default: "Minecraft ${mcversion}"
-		simple_title = "Enigmatica 6 - Minecraft ${mcversion}"
+		simple_title = "Enigmatica 6 Expert - Minecraft ${mcversion}"
 		# The Minecraft window title.
 		# The current activity is not available.
 		# Variables:
@@ -113,7 +113,7 @@
 		#  - ${modversion:modid}: The version of the mod with the specified ID.
 		# '$' can be escaped by using an extra '$'.
 		# Default: "Minecraft ${mcversion}"
-		title = "Enigmatica 6 - Minecraft ${mcversion}"
+		title = "Enigmatica 6 Expert - Minecraft ${mcversion}"
 		# The Minecraft window title that also takes into account the current activity.
 		# Variables:
 		#  - ${mcversion}: The Minecraft version
@@ -123,7 +123,7 @@
 		#  - ${modversion:modid}: The version of the mod with the specified ID.
 		# '$' can be escaped by using an extra '$'.
 		# Default: "Minecraft ${mcversion} - ${activity}"
-		title_with_activity = "Enigmatica 6 - Minecraft ${mcversion} - ${activity}"
+		title_with_activity = "Enigmatica 6 Expert - Minecraft ${mcversion} - ${activity}"
 		# Enables custom Minecraft window icons.
 		# Default: true
 		custom_icon = true
@@ -329,3 +329,4 @@
 		# Fixes MC-149777, which can cause crashes when loading worlds on Java 11 or newer: https://bugs.mojang.com/browse/MC-149777
 		# Default: true
 		fix_mc-149777 = true
+
