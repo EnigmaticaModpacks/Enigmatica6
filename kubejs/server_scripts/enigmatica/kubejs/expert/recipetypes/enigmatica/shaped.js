@@ -14,10 +14,10 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:jetpack',
                 D: 'ironjetpacks:hardened_thruster',
                 E: 'powah:energy_hopper_hardened',
-                F: Item.of('minecraft:water_bucket', '{display:{Name:\'{"text":"#MLG-YOLO"}\'}}').enchant(
-                    'minecraft:infinity',
-                    1
-                )
+                F: Item.of(
+                    'minecraft:water_bucket',
+                    '{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:\'{"text":"#MLG-YOLO"}\'}}'
+                ).weakNBT()
             },
             id: `${id_prefix}ironjetpacks/hardened_jetpack`
         },
