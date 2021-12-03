@@ -277,7 +277,7 @@ onEvent('recipes', (event) => {
                 '#forge:storage_blocks/mana',
                 '#forge:storage_blocks/mana'
             ],
-            reagent: 'undergarden:utheric_sword',
+            reagent: Item.of('undergarden:utheric_sword', '{Damage:0}').weakNBT(),
             sourceCost: 6000,
             output: 'ars_nouveau:enchanters_sword',
             id: 'ars_nouveau:enchanters_sword'
@@ -1187,7 +1187,7 @@ onEvent('recipes', (event) => {
                 '#botania:runes/air',
                 '#botania:runes/air'
             ],
-            reagent: 'botania:livingwood_bow',
+            reagent: Item.of('botania:livingwood_bow', '{Damage:0}').weakNBT(),
             sourceCost: 10000,
             output: 'ars_nouveau:spell_bow',
             id: 'ars_nouveau:spell_bow'
@@ -1200,7 +1200,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:mana_fiber',
                 'ars_nouveau:mana_fiber'
             ],
-            reagent: 'atum:wanderer_helmet',
+            reagent: Item.of('atum:wanderer_helmet', '{Damage:0}').weakNBT(),
             sourceCost: 100,
             output: 'ars_nouveau:novice_hood',
             id: `${id_prefix}novice_hood`
@@ -1216,7 +1216,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:mana_fiber',
                 'ars_nouveau:mana_fiber'
             ],
-            reagent: 'atum:wanderer_chest',
+            reagent: Item.of('atum:wanderer_chest', '{Damage:0}').weakNBT(),
             sourceCost: 100,
             output: 'ars_nouveau:novice_robes',
             id: `${id_prefix}novice_robes`
@@ -1231,7 +1231,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:mana_fiber',
                 'ars_nouveau:mana_fiber'
             ],
-            reagent: 'atum:wanderer_legs',
+            reagent: Item.of('atum:wanderer_legs', '{Damage:0}').weakNBT(),
             sourceCost: 100,
             output: 'ars_nouveau:novice_leggings',
             id: `${id_prefix}novice_leggings`
@@ -1243,7 +1243,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:mana_fiber',
                 'ars_nouveau:mana_fiber'
             ],
-            reagent: 'atum:wanderer_boots',
+            reagent: Item.of('atum:wanderer_boots', '{Damage:0}').weakNBT(),
             sourceCost: 100,
             output: 'ars_nouveau:novice_boots',
             id: `${id_prefix}novice_boots`
@@ -1257,7 +1257,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:blaze_fiber',
                 'ars_nouveau:blaze_fiber'
             ],
-            reagent: 'atum:wanderer_helmet',
+            reagent: Item.of('atum:wanderer_helmet', '{Damage:0}').weakNBT(),
             sourceCost: 3000,
             output: 'ars_nouveau:apprentice_hood',
             id: `${id_prefix}apprentice_hood`
@@ -1273,7 +1273,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:blaze_fiber',
                 'ars_nouveau:blaze_fiber'
             ],
-            reagent: 'atum:wanderer_chest',
+            reagent: Item.of('atum:wanderer_chest', '{Damage:0}').weakNBT(),
             sourceCost: 3000,
             output: 'ars_nouveau:apprentice_robes',
             id: `${id_prefix}apprentice_robes`
@@ -1288,7 +1288,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:blaze_fiber',
                 'ars_nouveau:blaze_fiber'
             ],
-            reagent: 'atum:wanderer_legs',
+            reagent: Item.of('atum:wanderer_legs', '{Damage:0}').weakNBT(),
             sourceCost: 3000,
             output: 'ars_nouveau:apprentice_leggings',
             id: `${id_prefix}apprentice_leggings`
@@ -1300,7 +1300,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:blaze_fiber',
                 'ars_nouveau:blaze_fiber'
             ],
-            reagent: 'atum:wanderer_boots',
+            reagent: Item.of('atum:wanderer_boots', '{Damage:0}').weakNBT(),
             sourceCost: 3000,
             output: 'ars_nouveau:apprentice_boots',
             id: `${id_prefix}apprentice_boots`
@@ -1314,8 +1314,8 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber',
                 'ars_nouveau:end_fiber'
             ],
-            reagent: 'botania:manaweave_helmet',
-            sourceCost: 5000,
+            reagent: Item.of('botania:manaweave_helmet', '{Damage:0}').weakNBT(),
+            sourceCost: 10000,
             output: 'ars_nouveau:archmage_hood',
             id: `${id_prefix}archmage_hood`
         },
@@ -1330,8 +1330,8 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber',
                 'ars_nouveau:end_fiber'
             ],
-            reagent: 'botania:manaweave_chestplate',
-            sourceCost: 5000,
+            reagent: Item.of('botania:manaweave_chestplate', '{Damage:0}').weakNBT(),
+            sourceCost: 10000,
             output: 'ars_nouveau:archmage_robes',
             id: `${id_prefix}archmage_robes`
         },
@@ -1345,8 +1345,8 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber',
                 'ars_nouveau:end_fiber'
             ],
-            reagent: 'botania:manaweave_leggings',
-            sourceCost: 5000,
+            reagent: Item.of('botania:manaweave_leggings', '{Damage:0}').weakNBT(),
+            sourceCost: 10000,
             output: 'ars_nouveau:archmage_leggings',
             id: `${id_prefix}archmage_leggings`
         },
@@ -1357,8 +1357,8 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber',
                 'ars_nouveau:end_fiber'
             ],
-            reagent: 'botania:manaweave_boots',
-            sourceCost: 5000,
+            reagent: Item.of('botania:manaweave_boots', '{Damage:0}').weakNBT(),
+            sourceCost: 10000,
             output: 'ars_nouveau:archmage_boots',
             id: `${id_prefix}archmage_boots`
         },
@@ -1373,8 +1373,8 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/terrasteel',
                 'ars_nouveau:end_fiber'
             ],
-            reagent: 'botania:manasteel_helmet',
-            sourceCost: 5000,
+            reagent: Item.of('botania:manasteel_helmet', '{Damage:0}').weakNBT(),
+            sourceCost: 40000,
             output: 'botania:terrasteel_helmet',
             id: `${id_prefix}terrasteel_helmet`
         },
@@ -1389,8 +1389,8 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/terrasteel',
                 'ars_nouveau:end_fiber'
             ],
-            reagent: 'botania:manasteel_chestplate',
-            sourceCost: 5000,
+            reagent: Item.of('botania:manasteel_chestplate', '{Damage:0}').weakNBT(),
+            sourceCost: 40000,
             output: 'botania:terrasteel_chestplate',
             id: `${id_prefix}terrasteel_chestplate`
         },
@@ -1405,8 +1405,8 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/terrasteel',
                 'ars_nouveau:end_fiber'
             ],
-            reagent: 'botania:manasteel_leggings',
-            sourceCost: 5000,
+            reagent: Item.of('botania:manasteel_leggings', '{Damage:0}').weakNBT(),
+            sourceCost: 40000,
             output: 'botania:terrasteel_leggings',
             id: `${id_prefix}terrasteel_leggings`
         },
@@ -1421,8 +1421,8 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/terrasteel',
                 'ars_nouveau:end_fiber'
             ],
-            reagent: 'botania:manasteel_boots',
-            sourceCost: 5000,
+            reagent: Item.of('botania:manasteel_boots', '{Damage:0}').weakNBT(),
+            sourceCost: 40000,
             output: 'botania:terrasteel_boots',
             id: `${id_prefix}terrasteel_boots`
         },
