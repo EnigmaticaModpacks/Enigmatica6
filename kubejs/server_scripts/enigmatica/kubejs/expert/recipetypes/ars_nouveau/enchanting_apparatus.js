@@ -1374,7 +1374,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manasteel_helmet', '{Damage:0}').weakNBT(),
-            sourceCost: 40000,
+            sourceCost: 10000,
             output: 'botania:terrasteel_helmet',
             id: `${id_prefix}terrasteel_helmet`
         },
@@ -1390,7 +1390,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manasteel_chestplate', '{Damage:0}').weakNBT(),
-            sourceCost: 40000,
+            sourceCost: 10000,
             output: 'botania:terrasteel_chestplate',
             id: `${id_prefix}terrasteel_chestplate`
         },
@@ -1406,7 +1406,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manasteel_leggings', '{Damage:0}').weakNBT(),
-            sourceCost: 40000,
+            sourceCost: 10000,
             output: 'botania:terrasteel_leggings',
             id: `${id_prefix}terrasteel_leggings`
         },
@@ -1422,7 +1422,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manasteel_boots', '{Damage:0}').weakNBT(),
-            sourceCost: 40000,
+            sourceCost: 10000,
             output: 'botania:terrasteel_boots',
             id: `${id_prefix}terrasteel_boots`
         },
