@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: ['#forge:storage_blocks/mana', '#forge:storage_blocks/gold_brass', 'ars_nouveau:glyph_projectile'],
-            reagent: 'minecraft:bow',
+            reagent: Item.of('minecraft:bow', '{Damage:0}').weakNBT(),
             output: 'ars_nouveau:spell_bow',
             id: 'ars_nouveau:spell_bow'
         },
@@ -195,7 +195,7 @@ onEvent('recipes', (event) => {
                 '#forge:storage_blocks/mana',
                 '#forge:storage_blocks/mana'
             ],
-            reagent: 'minecraft:diamond_sword',
+            reagent: Item.of('minecraft:diamond_sword', '{Damage:0}').weakNBT(),
             output: 'ars_nouveau:enchanters_sword',
             id: 'ars_nouveau:enchanters_sword'
         },
@@ -289,19 +289,37 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}mana_honey_bottle`
         },
         {
-            inputs: ['#forge:storage_blocks/mana', '#forge:storage_blocks/mana', 'ars_nouveau:glyph_split','resourcefulbees:carbee_honeycomb_block','resourcefulbees:carbee_honeycomb_block'],
+            inputs: [
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/mana',
+                'ars_nouveau:glyph_split',
+                'resourcefulbees:carbee_honeycomb_block',
+                'resourcefulbees:carbee_honeycomb_block'
+            ],
             reagent: 'minecraft:arrow',
             output: Item.of('48x ars_nouveau:split_arrow'),
             id: `${id_prefix}split_arrow`
         },
         {
-            inputs: ['#forge:storage_blocks/mana', '#forge:storage_blocks/mana', 'ars_nouveau:glyph_amplify','resourcefulbees:carbee_honeycomb_block','resourcefulbees:carbee_honeycomb_block'],
+            inputs: [
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/mana',
+                'ars_nouveau:glyph_amplify',
+                'resourcefulbees:carbee_honeycomb_block',
+                'resourcefulbees:carbee_honeycomb_block'
+            ],
             reagent: 'minecraft:arrow',
             output: Item.of('48x ars_nouveau:amplify_arrow'),
             id: `${id_prefix}amplify_arrow`
         },
         {
-            inputs: ['#forge:storage_blocks/mana', '#forge:storage_blocks/mana', 'ars_nouveau:glyph_pierce','resourcefulbees:carbee_honeycomb_block','resourcefulbees:carbee_honeycomb_block'],
+            inputs: [
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/mana',
+                'ars_nouveau:glyph_pierce',
+                'resourcefulbees:carbee_honeycomb_block',
+                'resourcefulbees:carbee_honeycomb_block'
+            ],
             reagent: 'minecraft:arrow',
             output: Item.of('48x ars_nouveau:pierce_arrow'),
             id: `${id_prefix}pierce_arrow`
