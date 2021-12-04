@@ -121,6 +121,17 @@ onEvent('recipes', (event) => {
                 C: 'naturesaura:token_euphoria'
             },
             id: 'naturesaura:spring'
+        },
+        {
+            output: 'naturesaura:netherite_finder',
+            pattern: [' BA', ' DC', 'D  '],
+            key: {
+                A: 'occultism:spirit_attuned_gem',
+                B: 'minecraft:warped_roots',
+                C: 'minecraft:crimson_roots',
+                D: 'betterendforge:leather_wrapped_stick'
+            },
+            id: 'naturesaura:netherite_finder'
         }
     ];
 

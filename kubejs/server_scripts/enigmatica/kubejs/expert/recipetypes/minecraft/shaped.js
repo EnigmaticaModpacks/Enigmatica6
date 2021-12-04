@@ -100,6 +100,18 @@ onEvent('recipes', (event) => {
                 A: 'kubejs:red_nether_brick'
             },
             id: 'minecraft:red_nether_bricks'
+        },
+        {
+            output: 'minecraft:enchanting_table',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'ars_nouveau:novice_spell_book',
+                B: 'quark:diamond_heart',
+                C: 'eidolon:worktable',
+                D: 'minecraft:crying_obsidian',
+                E: 'minecraft:conduit'
+            },
+            id: 'minecraft:enchanting_table'
         }
     ];
 
