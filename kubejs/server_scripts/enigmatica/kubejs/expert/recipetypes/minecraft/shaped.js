@@ -106,10 +106,10 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: 'ars_nouveau:novice_spell_book',
-                B: 'quark:diamond_heart',
+                B: '#forge:gems/mana',
                 C: 'eidolon:worktable',
                 D: 'minecraft:crying_obsidian',
-                E: 'minecraft:conduit'
+                E: 'quark:diamond_heart'
             },
             id: 'minecraft:enchanting_table'
         }
