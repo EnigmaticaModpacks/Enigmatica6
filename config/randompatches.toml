@@ -1,0 +1,33 @@
+	# Options related to the Minecraft window.
+	[client.window]
+		# Enables custom Minecraft window titles.
+		# Default: true
+		custom_title = true
+		# The simple Minecraft window title.
+		# The current activity, the number of mods loaded and mod versions are not available.
+		# Variables:
+		#  - ${mcversion}: The Minecraft version
+		#  - ${username}: The username.
+		# '$' can be escaped by using an extra '$'.
+		# Default: "Minecraft ${mcversion}"
+		simple_title = "Enigmatica 6 - Minecraft ${mcversion}"
+		# The Minecraft window title.
+		# The current activity is not available.
+		# Variables:
+		#  - ${mcversion}: The Minecraft version
+		#  - ${username}: The username.
+		#  - ${modsloaded}: The number of mods loaded.
+		#  - ${modversion:modid}: The version of the mod with the specified ID.
+		# '$' can be escaped by using an extra '$'.
+		# Default: "Minecraft ${mcversion}"
+		title = "Enigmatica 6 - Minecraft ${mcversion}"
+		# The Minecraft window title that also takes into account the current activity.
+		# Variables:
+		#  - ${mcversion}: The Minecraft version
+		#  - ${activity}: The current activity.
+		#  - ${username}: The username.
+		#  - ${modsloaded}: The number of mods loaded.
+		#  - ${modversion:modid}: The version of the mod with the specified ID.
+		# '$' can be escaped by using an extra '$'.
+		# Default: "Minecraft ${mcversion} - ${activity}"
+		title_with_activity = "Enigmatica 6 - Minecraft ${mcversion} - ${activity}"

@@ -158,16 +158,19 @@ config.json
 .DS_Store
 .DS_Store?
 
-config/rftoolsdim-client.toml
-config/clienttweaks-client.toml
 automation/ModListCreator-1.2.0.jar
 biomeidfixer.temp
-config/findme-client.toml
-config/PregenConfig.toml
 NewWorldBiomeIdFixer.json
-
 automation/ModListCreator-1.2.1.jar
 .github_changelog_generator
+local/ftbultimine-client.snbt
+hidden-players.json
+tconplanner/bookmark.dat
+
+config/findme-client.toml
+config/PregenConfig.toml
+config/rftoolsdim-client.toml
+config/clienttweaks-client.toml
 config/sounddeviceoptions-client.toml
 config/personality-client.toml
 config/framedblocks-client.toml
@@ -188,13 +191,11 @@ config/InventoryHUD/curios.json
 config/bloodmagic-client.toml
 config/jmi-client.toml
 config/tconplanner-client.toml
-tconplanner/bookmark.dat
 config/roadrunner/common.toml
 config/roadrunner/client.toml
 config/oauth-client.toml
 config/jeed-client.toml
 config/valhelsia_core-client.toml
-local/ftbultimine-client.snbt
 config/forge-client.toml
 config/configured-client.toml
 config/industrialforegoing/machine-resource-production.toml
@@ -210,5 +211,3 @@ config/powah/energy/generators/magmator.toml
 config/powah/energy/generators/reactor.toml
 config/powah/energy/generators/solar_panel.toml
 config/powah/energy/generators/thermo_gen.toml
-hidden-players.json
-config/randompatches.toml
