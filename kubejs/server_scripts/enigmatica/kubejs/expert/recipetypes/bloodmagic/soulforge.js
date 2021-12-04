@@ -90,11 +90,7 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}shadow_gem`
             },
             {
-                inputs: [
-                    ['#forge:ingots/regalium', '#forge:ingots/nebu'],
-                    'eidolon:soul_shard',
-                    'eidolon:crimson_essence'
-                ],
+                inputs: ['#forge:ingots/gold', 'eidolon:crimson_essence'],
                 output: Item.of('eidolon:arcane_gold_ingot'),
                 minimumDrain: 32.0,
                 drain: 16.0,
