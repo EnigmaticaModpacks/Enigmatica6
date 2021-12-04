@@ -114,9 +114,10 @@ onEvent('recipes', (event) => {
             pattern: ['ACA', 'ABA', 'AAA'],
             key: {
                 A: '#upgrade_aquatic:coralstone/infused',
-                B: Item.of('minecraft:water_bucket', { display: { Name: '{"text":"#MLG-YOLO"}' } })
-                    .enchant('minecraft:infinity', 1)
-                    .weakNBT(),
+                B: Item.of(
+                    'minecraft:water_bucket',
+                    '{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:\'{"text":"#MLG-YOLO"}\'}}'
+                ).weakNBT(),
                 C: 'naturesaura:token_euphoria'
             },
             id: 'naturesaura:spring'
