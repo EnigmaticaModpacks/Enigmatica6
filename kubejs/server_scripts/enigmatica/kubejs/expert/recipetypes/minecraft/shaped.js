@@ -106,7 +106,7 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: 'ars_nouveau:novice_spell_book',
-                B: '#forge:gems/mana',
+                B: 'atum:isis_godshard',
                 C: 'eidolon:worktable',
                 D: 'minecraft:crying_obsidian',
                 E: 'quark:diamond_heart'
