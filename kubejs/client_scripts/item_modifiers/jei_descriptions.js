@@ -298,7 +298,7 @@ onEvent('jei.information', (event) => {
             text: [
                 `Used in a Logic Unit to create advanced Redstone Logic.`,
                 ` `,
-                `Crafted in an Engineer's Circuit Table. Requires Circuit Backplanes, Lead or Copper Wire, and Vacuum Tubes.`
+                `Crafted in an Engineer's Circuit Table. Requires Circuit Backplanes and Lead or Copper Wire. Vacuum Tubes are required for all operators except SET.`
             ]
         },
         {
@@ -402,6 +402,12 @@ onEvent('jei.information', (event) => {
         {
             items: ['eidolon:sanguine_amulet', 'eidolon:sapping_sword'],
             text: [`For crafting steps, refer to the Sanguine Items section under Rituals in the Ars Ecclesia.`]
+        },
+        {
+            items: ['atum:papyrus_plant'],
+            text: [
+                `Commonly found growing in Oasis Biomes in Atum. Grows like Sugar Cane on Strange Sand or Fertile Soil.`
+            ]
         }
     ];
 
