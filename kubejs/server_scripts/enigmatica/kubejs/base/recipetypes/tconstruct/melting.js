@@ -72,6 +72,26 @@ onEvent('recipes', (event) => {
             temperature: 1450,
             time: 316,
             id: `${id_prefix}molten_diamond_from_gear`
+        },
+        {
+            ingredient: { item: 'dustrial_decor:barbed_iron_bars' },
+            result: {
+                fluid: 'tconstruct:molten_iron',
+                amount: 48
+            },
+            temperature: 800,
+            time: 160,
+            id: `${id_prefix}molten_iron_from_barbed_iron_bars`
+        },
+        {
+            ingredient: { item: 'quark:gold_bars' },
+            result: {
+                fluid: 'tconstruct:molten_gold',
+                amount: 48
+            },
+            temperature: 700,
+            time: 160,
+            id: `${id_prefix}molten_gold`
         }
     ];
 
