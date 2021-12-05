@@ -184,7 +184,7 @@ onEvent('server.datapack.high_priority', (event) => {
 onEvent('chest.loot_tables', (event) => {
     const pools = [
         {
-            rolls: { min: 1, max: 3 },
+            rolls: { min: 0, max: 2 },
             entries: [
                 {
                     item: 'alexsmobs:centipede_leg',
@@ -244,7 +244,7 @@ onEvent('chest.loot_tables', (event) => {
             ]
         },
         {
-            rolls: { min: 2, max: 4 },
+            rolls: { min: 0, max: 2 },
             entries: [
                 {
                     item: 'minecraft:egg',
@@ -319,7 +319,7 @@ onEvent('chest.loot_tables', (event) => {
             ]
         },
         {
-            rolls: { min: 2, max: 3 },
+            rolls: { min: 0, max: 3 },
             entries: [
                 {
                     item: 'atum:emmer_block',
@@ -384,7 +384,7 @@ onEvent('chest.loot_tables', (event) => {
             ]
         },
         {
-            rolls: { min: 1, max: 2 },
+            rolls: { min: 0, max: 2 },
             entries: [
                 {
                     item: 'supplementaries:bomb_blue',
@@ -424,7 +424,7 @@ onEvent('chest.loot_tables', (event) => {
             ]
         },
         {
-            rolls: { min: 0, max: 4 },
+            rolls: { min: 0, max: 1 },
             entries: [
                 {
                     item: 'minecraft:gold_nugget',

@@ -180,6 +180,10 @@ onEvent('item.tooltip', (event) => {
         {
             items: [/natures\w+:\w+_generator/],
             text: [Text.of(`Aura Generator`).green()]
+        },
+        {
+            items: ['clockout:clockout_block'],
+            text: [Text.of(`Outputs redstone when the player is online.`).aqua()]
         }
     ];
 
