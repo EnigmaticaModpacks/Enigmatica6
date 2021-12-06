@@ -331,7 +331,7 @@ onEvent('recipes', (event) => {
             ],
             output: { item: 'naturesaura:crushing_catalyst' },
             time: 600,
-            sapling: 'undergarden:wigglewood_sapling',
+            sapling: 'architects_palette:twisted_sapling',
             id: 'naturesaura:tree_ritual/crushing_catalyst'
         },
         {
