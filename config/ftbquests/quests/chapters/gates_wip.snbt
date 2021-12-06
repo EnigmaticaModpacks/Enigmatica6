@@ -27,6 +27,10 @@
 			dependencies: ["0000000000000FEB"]
 			hide: true
 			id: "0000000000000B6C"
+			tasks: [{
+				id: "7DE46EF832E29D7C"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "Create"
@@ -203,7 +207,7 @@
 			title: "RFTools"
 			x: -1.5d
 			y: 4.5d
-			dependencies: ["0000000000000FBF"]
+			dependencies: ["0000000000000FDB"]
 			id: "0000000000000FD7"
 			tasks: [{
 				id: "0000000000000FD8"
@@ -229,7 +233,7 @@
 			icon: "pneumaticcraft:pressure_gauge_module"
 			x: -1.5d
 			y: 3.0d
-			dependencies: ["0000000000000FD7"]
+			dependencies: ["0000000000000FBF"]
 			id: "0000000000000FDB"
 			tasks: [{
 				id: "0000000000000FDC"
@@ -298,7 +302,7 @@
 			icon: "mekanism:alloy_atomic"
 			x: -1.5d
 			y: 6.0d
-			dependencies: ["0000000000000FDB"]
+			dependencies: ["0000000000000FD7"]
 			id: "0000000000000FE5"
 			tasks: [{
 				id: "0EBD46ADF246F17F"

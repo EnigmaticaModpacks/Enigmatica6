@@ -90,11 +90,7 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}shadow_gem`
             },
             {
-                inputs: [
-                    ['#forge:ingots/regalium', '#forge:ingots/nebu'],
-                    'eidolon:soul_shard',
-                    'eidolon:crimson_essence'
-                ],
+                inputs: ['#forge:ingots/gold', 'eidolon:crimson_essence'],
                 output: Item.of('eidolon:arcane_gold_ingot'),
                 minimumDrain: 32.0,
                 drain: 16.0,
@@ -108,10 +104,10 @@ onEvent('recipes', (event) => {
                 id: 'occultism:crafting/iesnium_pickaxe'
             },
             {
-                inputs: ['occultism:dimensional_matrix', '#botania:runes/helheim', 'occultism:storage_controller_base'],
+                inputs: ['occultism:dimensional_matrix', 'occultism:storage_controller_base'],
                 output: 'occultism:storage_controller',
-                minimumDrain: 1000.0,
-                drain: 200.0,
+                minimumDrain: 32.0,
+                drain: 16.0,
                 id: 'occultism:crafting/storage_controller'
             },
             {

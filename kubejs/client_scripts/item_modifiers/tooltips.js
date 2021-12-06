@@ -134,6 +134,56 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['#enigmatica:burning_hot'],
             text: [Text.of('Extremely hot!').darkRed()]
+        },
+        {
+            items: [
+                'resourcefulbees:t1_beehive',
+                'resourcefulbees:t2_beehive',
+                'resourcefulbees:t3_beehive',
+                'resourcefulbees:t4_beehive'
+            ],
+            text: [
+                Text.of(`Tiered Beehives have been depreciated.`).red(),
+                Text.of(`Use the Hive Upgrade items on nests found in the world instead.`).red(),
+                Text.of(`Tiered Beehives can be converted to Hive Upgrades in a crafting grid.`).red()
+            ]
+        },
+        {
+            items: ['kubejs:medium_machinery_schematics'],
+            text: [
+                Text.of(`Unlocks the ability to form the following strutures:`).blue(),
+                Text.of(`- Excavator`).aqua(),
+                Text.of(`- Lightning Rod`).aqua(),
+                Text.of(`- Metal Press`).aqua(),
+                Text.of(`- Mixer`).aqua(),
+                Text.of(`- Pumpjack`).aqua(),
+                Text.of(`- Sawmill`).aqua(),
+                Text.of(`- Squeezer`).aqua()
+            ]
+        },
+        {
+            items: ['kubejs:heavy_machinery_schematics'],
+            text: [
+                Text.of(`Unlocks the ability to form the following strutures:`).blue(),
+                Text.of(`- Arc Furnace`).aqua(),
+                Text.of(`- Assembler`).aqua(),
+                Text.of(`- Automated Engineer's Workbench`).aqua(),
+                Text.of(`- Coker Unit`).aqua(),
+                Text.of(`- Crusher`).aqua(),
+                Text.of(`- Diesel Generator`).aqua(),
+                Text.of(`- Distillation Tower`).aqua(),
+                Text.of(`- Fermenter`).aqua(),
+                Text.of(`- Refinery`).aqua(),
+                Text.of(`- Sulfur Recovery Unit`).aqua()
+            ]
+        },
+        {
+            items: [/natures\w+:\w+_generator/],
+            text: [Text.of(`Aura Generator`).green()]
+        },
+        {
+            items: ['clockout:clockout_block'],
+            text: [Text.of(`Outputs redstone when the player is online.`).aqua()]
         }
     ];
 

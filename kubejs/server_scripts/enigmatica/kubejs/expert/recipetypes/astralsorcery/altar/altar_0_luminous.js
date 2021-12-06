@@ -6,13 +6,13 @@ onEvent('recipes', (event) => {
     altar_type: 0
     max_starlight: 1000 
     */
-
     if (global.isExpertMode == false) {
         return;
     }
+
     const id_prefix = 'enigmatica:expert/astralsorcery/altar/';
     const recipes = [
-        /// Luminous Crafting Table REcipes
+        /// Luminous Crafting Table Recipes
         {
             output: Item.of('astralsorcery:well'),
             pattern: ['_____', '_B_B_', '_CDC_', '_ABA_', '_____'],
@@ -126,7 +126,7 @@ onEvent('recipes', (event) => {
                 B: { item: 'botania:glimmering_livingwood' },
                 C: { tag: 'forge:ingots/infused_iron' },
                 D: { item: 'botania:spark' },
-                E: { item: 'astralsorcery:glass_lens' }
+                E: { item: 'atum:crystal_glass_pane' }
             },
             altar_type: 0,
             duration: 100,

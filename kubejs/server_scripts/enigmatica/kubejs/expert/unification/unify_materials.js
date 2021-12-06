@@ -12,6 +12,7 @@ onEvent('recipes', (event) => {
         var rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
         var wire = getPreferredItemInTag(Ingredient.of(`#forge:wires/${material}`)).id;
 
+        let crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
         var ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
         var mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
         var fulminated_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)).id;
@@ -22,6 +23,8 @@ onEvent('recipes', (event) => {
         rod_unification(event, material, ingot, gem, rod, plate);
         plate_unification(event, material, ingot, gem, plate);
         wire_unification(event, material, ingot, gem, wire, plate);
+
+        immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot);
 
         magical_ore_processing(
             event,
@@ -44,7 +47,7 @@ onEvent('recipes', (event) => {
 
         var output = gear,
             input,
-            mold = '#thermal:crafting/dies/gear';
+            mold = 'immersiveengineering:mold_gear';
 
         if (ingot != air) {
             input = `#forge:ingots/${material}`;
@@ -167,7 +170,40 @@ onEvent('recipes', (event) => {
 
         event.shapeless(Item.of(output, 2), [plate, plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
     }
-    //Mock-up. Real process would use new assets to avoid mix ups with Mek processing.
+
+    function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot) {
+        if (ore == air || crushed_ore == air || ingot == air) {
+            return;
+        }
+
+        var primaryOutput = crushed_ore,
+            input = `#forge:ores/${material}`,
+            materialProperties;
+
+        try {
+            materialProperties = oreProcessingSecondaries[material];
+        } catch (err) {
+            return;
+        }
+
+        try {
+            secondaryOutput = getPreferredItemInTag(
+                Ingredient.of(`#create:crushed_ores/${materialProperties.secondary}`)
+            ).id;
+        } catch (err) {
+            secondaryOutput = crushed_ore;
+        }
+
+        event.recipes.immersiveengineering
+            .crusher(primaryOutput, input, [
+                Item.of(primaryOutput, 2).chance(0.6),
+                Item.of(primaryOutput).chance(0.5),
+                Item.of(secondaryOutput, 2).chance(0.35),
+                Item.of('minecraft:gravel').chance(0.18)
+            ])
+            .id(`immersiveengineering:crusher/ore_${material}`);
+    }
+
     function magical_ore_processing(
         event,
         material,
@@ -212,23 +248,20 @@ onEvent('recipes', (event) => {
             input: Ingredient.of(infusing_input).toJson(),
             output: { item: mana_cluster, count: 1 },
             catalyst: { type: 'block', block: 'naturesaura:generator_limit_remover' },
-            mana: 25000
+            mana: 10000
         });
 
         // Step Two: Zap!
         event.custom({
             type: 'interactio:item_lightning',
-            inputs: [
-                Ingredient.of(zapping_input).toJson(),
-                { tag: 'botania:runes/asgard', count: 1, return_chance: 0.5 }
-            ],
+            inputs: [Ingredient.of(zapping_input).toJson()],
             output: {
                 entries: [
                     { result: { item: fulminated_cluster, count: 1 }, weight: 10 },
                     { result: { item: secondary_fulminated_cluster, count: 1 }, weight: 5 },
-                    { result: { item: 'thermal:slag', count: 1 }, weight: 85 } // would prefer something like tiny slag here
+                    { result: { item: 'thermal:slag', count: 1 }, weight: 35 }
                 ],
-                empty_weight: 0,
+                empty_weight: 50,
                 rolls: 20
             }
         });
@@ -249,18 +282,18 @@ onEvent('recipes', (event) => {
             type: 'interactio:item_fluid_transform',
             inputs: [
                 Ingredient.of(freezing_input).toJson(),
-                { tag: 'botania:runes/winter', count: 1, return_chance: 0.95 }
+                { tag: 'botania:runes/winter', count: 1, return_chance: 1.0 }
             ],
             output: {
                 entries: [
                     { result: Ingredient.of(crystalline_sliver).toJson(), weight: 75 },
-                    { result: Ingredient.of('bloodmagic:corrupted_tinydust').toJson(), weight: 25 } //placeholder item. Could be a handy place to put a byproduct required for high tier crafts
+                    { result: Ingredient.of('bloodmagic:corrupted_tinydust').toJson(), weight: 25 }
                 ],
                 empty_weight: 0,
                 rolls: 20
             },
             fluid: { fluid: 'astralsorcery:liquid_starlight' },
-            consume_fluid: 0.75
+            consume_fluid: 0.15
         });
 
         // Step Five: Fuse!
@@ -278,8 +311,8 @@ onEvent('recipes', (event) => {
                 Ingredient.of(fusing_input).toJson(),
                 Ingredient.of(fusing_input).toJson(),
                 Ingredient.of(fusing_input).toJson(),
-                Ingredient.of('eidolon:ender_calx').toJson(),
-                Ingredient.of(`#botania:runes/muspelheim`).toJson()
+                Ingredient.of('#forge:dusts/mana').toJson(),
+                Ingredient.of(`#botania:runes/nidavellir`).toJson()
             ]
         });
     }

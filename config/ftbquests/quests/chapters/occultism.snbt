@@ -30,6 +30,7 @@
 				""
 				"~The_Boo"
 			]
+			optional: true
 			id: "0000000000000CB1"
 			tasks: [{
 				id: "0000000000000CB2"
@@ -241,7 +242,7 @@
 						spiritName: "Reiirtron"
 					}
 				}
-				advancement: "occultism:summon_foliot_crusher"
+				advancement: "occultism:occultism/summon_foliot_crusher"
 				criterion: ""
 			}]
 			rewards: [
@@ -548,22 +549,14 @@
 				type: "item"
 				item: "occultism:storage_controller"
 			}]
-			rewards: [
-				{
-					id: "0000000000000E6B"
-					type: "item"
-					title: "Tier 1 Dimensional Storage Stabilizer"
-					item: "occultism:storage_stabilizer_tier1"
-				}
-				{
-					id: "0000000000000E6C"
-					type: "command"
-					title: "Occultism Epic Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "0000000000000E6C"
+				type: "command"
+				title: "Occultism Epic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				player_command: false
+			}]
 		}
 		{
 			x: 5.0d
@@ -591,7 +584,6 @@
 					type: "item"
 					title: "Tier 1 Dimensional Storage Stabilizer"
 					item: "occultism:storage_stabilizer_tier1"
-					count: 2
 				}
 				{
 					id: "0000000000000E5A"
@@ -843,7 +835,7 @@
 			]
 		}
 		{
-			x: 6.0d
+			x: 7.0d
 			y: 1.0d
 			shape: "hexagon"
 			subtitle: "It's Bigger on the Inside!!"
@@ -933,13 +925,10 @@
 		}
 		{
 			icon: "minecraft:end_stone"
-			x: 5.0d
-			y: -1.0d
+			x: 6.0d
+			y: 1.0d
 			shape: "hexagon"
-			dependencies: [
-				"0000000000000DC6"
-				"0000000000000D9E"
-			]
+			dependencies: ["0000000000000D9C"]
 			id: "0000000000000DC4"
 			tasks: [
 				{
@@ -947,7 +936,7 @@
 					type: "advancement"
 					title: "Summon Possessed Endermite"
 					icon: "occultism:book_of_binding_foliot"
-					advancement: "occultism:possess_endermite"
+					advancement: "occultism:occultism/possess_endermite"
 					criterion: ""
 				}
 				{
@@ -994,7 +983,7 @@
 					type: "advancement"
 					title: "Summon Possessed Skeleton"
 					icon: "occultism:book_of_binding_foliot"
-					advancement: "occultism:possess_skeleton"
+					advancement: "occultism:occultism/possess_skeleton"
 					criterion: ""
 				}
 				{
@@ -1024,10 +1013,10 @@
 		}
 		{
 			icon: "minecraft:ender_pearl"
-			x: 4.0d
-			y: -1.0d
+			x: 5.0d
+			y: 0.0d
 			shape: "hexagon"
-			dependencies: ["0000000000000DC4"]
+			dependencies: ["0000000000000D9E"]
 			id: "0000000000000DC8"
 			tasks: [
 				{
@@ -1035,7 +1024,7 @@
 					type: "advancement"
 					title: "Summon Possessed Enderman"
 					icon: "occultism:book_of_binding_foliot"
-					advancement: "occultism:possess_enderman"
+					advancement: "occultism:occultism/possess_enderman"
 					criterion: ""
 				}
 				{
@@ -1301,7 +1290,7 @@
 		{
 			title: "Control the Weather!"
 			icon: "minecraft:sunflower"
-			x: -1.0d
+			x: 0.5d
 			y: 1.5d
 			shape: "hexagon"
 			description: [
@@ -1317,7 +1306,7 @@
 					type: "advancement"
 					title: "Summon a Djinni to Clear the Skies!"
 					icon: "minecraft:sunflower"
-					advancement: "occultism:summon_djinni_clear_weather"
+					advancement: "occultism:occultism/summon_djinni_clear_weather"
 					criterion: ""
 				}
 				{
@@ -1358,7 +1347,7 @@
 		}
 		{
 			icon: "minecraft:clock"
-			x: -1.0d
+			x: 0.5d
 			y: 2.5d
 			shape: "hexagon"
 			subtitle: "What Time is It?!?!"
@@ -1375,7 +1364,7 @@
 					type: "advancement"
 					title: "Summon Djinni to Make it Nighttime"
 					icon: "minecraft:clock"
-					advancement: "occultism:summon_djinni_night_time"
+					advancement: "occultism:occultism/summon_djinni_night_time"
 					criterion: ""
 				}
 				{
@@ -1469,7 +1458,7 @@
 				type: "advancement"
 				title: "Summon The Wild Hunt"
 				icon: "minecraft:wither_skeleton_skull"
-				advancement: "occultism:summon_wild_hunt"
+				advancement: "occultism:occultism/summon_wild_hunt"
 				criterion: ""
 			}]
 			rewards: [
@@ -1537,7 +1526,7 @@
 				type: "advancement"
 				title: "Summon Otherworld Sapling Trader"
 				icon: "occultism:otherworld_sapling"
-				advancement: "occultism:summon_foliot_sapling_trader"
+				advancement: "occultism:occultism/summon_foliot_sapling_trader"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1568,27 +1557,20 @@
 			]
 			dependencies: ["0000000000000CF7"]
 			id: "0000000000000E04"
-			tasks: [
-				{
-					id: "0000000000000E05"
-					type: "advancement"
-					title: "Summon Foliot Lumberjack"
-					icon: {
-						id: "occultism:book_of_calling_foliot_lumberjack"
-						Count: 1b
-						tag: {
-							spiritName: "Azurmiriarc"
-						}
+			tasks: [{
+				id: "0000000000000E05"
+				type: "advancement"
+				title: "Summon Foliot Lumberjack"
+				icon: {
+					id: "occultism:book_of_calling_foliot_lumberjack"
+					Count: 1b
+					tag: {
+						spiritName: "Azurmiriarc"
 					}
-					advancement: "occultism:summon_foliot_lumberjack"
-					criterion: ""
 				}
-				{
-					id: "0000000000000E0D"
-					type: "item"
-					item: "occultism:book_of_binding_foliot"
-				}
-			]
+				advancement: "occultism:occultism/summon_foliot_lumberjack"
+				criterion: ""
+			}]
 			rewards: [{
 				id: "0000000000000E06"
 				type: "command"
@@ -1621,7 +1603,7 @@
 				type: "advancement"
 				title: "Summon Foliot Transporter"
 				icon: "minecraft:chest_minecart"
-				advancement: "occultism:summon_foliot_transport_items"
+				advancement: "occultism:occultism/summon_foliot_transport_items"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1653,7 +1635,7 @@
 					id: "0000000000000E72"
 					type: "advancement"
 					title: "Summon Djinni Machine Operator"
-					advancement: "occultism:summon_djinni_manage_machine"
+					advancement: "occultism:occultism/summon_djinni_manage_machine"
 					criterion: ""
 				}
 				{
@@ -1681,8 +1663,8 @@
 		{
 			title: "Summon Drikwing Familiar"
 			icon: "minecraft:feather"
-			x: 0.0d
-			y: -0.5d
+			x: 2.0d
+			y: 0.0d
 			shape: "hexagon"
 			description: [
 				"The occultist is also able to summon familiars to assist them on their journey."
@@ -1700,7 +1682,7 @@
 				type: "advancement"
 				title: "Summon Drikwing Familiar"
 				icon: "minecraft:feather"
-				advancement: "occultism:familiar_otherworld_bird"
+				advancement: "occultism:occultism/familiar_otherworld_bird"
 				criterion: ""
 			}]
 			rewards: [
@@ -1773,7 +1755,7 @@
 				type: "advancement"
 				title: "Summon Djinni Crusher"
 				icon: "minecraft:gold_ore"
-				advancement: "occultism:summon_djinni_crusher"
+				advancement: "occultism:occultism/summon_djinni_crusher"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1798,7 +1780,7 @@
 				type: "advancement"
 				title: "Summon Afrit Crusher"
 				icon: "minecraft:diamond_ore"
-				advancement: "occultism:summon_afrit_crusher"
+				advancement: "occultism:occultism/summon_afrit_crusher"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1824,7 +1806,7 @@
 				type: "advancement"
 				title: "Summon Marid Crusher"
 				icon: "occultism:iesnium_ore"
-				advancement: "occultism:summon_marid_crusher"
+				advancement: "occultism:occultism/summon_marid_crusher"
 				criterion: ""
 			}]
 			rewards: [
@@ -1849,7 +1831,7 @@
 		{
 			icon: "cfm:oak_kitchen_sink_light"
 			x: 8.0d
-			y: 1.0d
+			y: 0.5d
 			shape: "hexagon"
 			subtitle: "My job. Toilets 'n boilers, boilers 'n toilets. Plus that one boilin' toilet. Fire me if'n you dare."
 			description: [
@@ -1864,7 +1846,7 @@
 				type: "advancement"
 				title: "Summon Foliiot Janitor"
 				icon: "occultism:brush"
-				advancement: "occultism:summon_foliot_cleaner"
+				advancement: "occultism:occultism/summon_foliot_cleaner"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1877,8 +1859,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 1.0d
+			x: 8.0d
+			y: 1.5d
 			shape: "hexagon"
 			description: [
 				"The Greedy Familiar is a great friend to have on your adventures!"
@@ -1894,7 +1876,7 @@
 				type: "advancement"
 				title: "Summon Greedy Familiar"
 				icon: "artifacts:universal_attractor"
-				advancement: "occultism:familiar_greedy"
+				advancement: "occultism:occultism/familiar_greedy"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1907,7 +1889,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 1.0d
 			y: 0.5d
 			shape: "hexagon"
 			subtitle: "I wear my sun glasses at night! :catjam:"
@@ -1919,7 +1901,7 @@
 				type: "advancement"
 				title: "Summon Bat Familiar"
 				icon: "artifacts:night_vision_goggles"
-				advancement: "occultism:familiar_bat"
+				advancement: "occultism:occultism/familiar_bat"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1949,7 +1931,7 @@
 						Damage: 0
 					}
 				}
-				advancement: "occultism:familiar_deer"
+				advancement: "occultism:occultism/familiar_deer"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1963,10 +1945,11 @@
 		}
 		{
 			icon: "losttrinkets:octopus_leg"
-			x: 1.0d
-			y: -1.0d
+			x: 3.0d
+			y: 0.0d
 			shape: "hexagon"
 			subtitle: "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn."
+			description: ["The Cthulu familiar provides the player with water breathing, and when upgraded by the blacksmith familiar he provides a mobile light source!"]
 			dependencies: ["0000000000000D9E"]
 			id: "37BA1FD75B5F474F"
 			tasks: [{
@@ -1974,7 +1957,7 @@
 				type: "advancement"
 				title: "Summon Cthulu Familiar"
 				icon: "losttrinkets:octopus_leg"
-				advancement: "occultism:familiar_cthulhu"
+				advancement: "occultism:occultism/familiar_cthulhu"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1984,6 +1967,65 @@
 				icon: "kubejs:epic_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
 				player_command: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"The Blacksmith familiar is one of the most useful familiars in the occultist's arsenal."
+				""
+				"While following the player or in the familiar ring, he will eat up all the stones you mine and give a chance to repair your tools/armor!"
+				""
+				"He is also able to upgrade many of your favorite familiars! Add some iron blocks or ingots to his anvil and he will go to work on familiars in the area."
+			]
+			dependencies: ["0000000000000D9E"]
+			id: "5C7B9EA6F5861807"
+			tasks: [{
+				id: "3AE8D0B894D9FAC1"
+				type: "advancement"
+				title: "Summon Blacksmith Familiar"
+				icon: "minecraft:anvil"
+				advancement: "occultism:occultism/familiar/blacksmith_upgrade"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "6DB0BF49C13038F7"
+				type: "command"
+				title: "Occultism Epic Loot Box Reward"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "occultism:ritual_dummy/custom_ritual"
+			x: 1.5d
+			y: -1.5d
+			description: [
+				"These are just a few of the great familiars the occultist can summon."
+				""
+				"Check the dictionary of spirits for many more helpful friends!"
+			]
+			dependencies: [
+				"0000000000000F3C"
+				"37BA1FD75B5F474F"
+				"5C7B9EA6F5861807"
+				"7FC9B2436C688AAC"
+			]
+			dependency_requirement: "one_completed"
+			id: "6267BAB65DB567DA"
+			tasks: [{
+				id: "6BEA5559EF14E691"
+				type: "checkmark"
+				title: "MOAR Familiars!"
+			}]
+			rewards: [{
+				id: "751C76DF5C4D8BA3"
+				type: "item"
+				item: "occultism:book_of_binding_djinni"
+				count: 3
 			}]
 		}
 	]

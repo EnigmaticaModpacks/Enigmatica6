@@ -15,8 +15,8 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
-        {
+    const recipes = [
+        /*{
             output: Item.of('immersiveengineering:cokebrick', 3),
             pattern: ['CAC', 'ABA', 'CAC'],
             key: {
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                 C: '#forge:clay'
             },
             id: 'immersiveengineering:crafting/cokebrick'
-        },
+        },*/
         {
             output: 'immersiveengineering:workbench',
             pattern: ['A  ', 'BCC', 'E D'],
@@ -39,6 +39,18 @@ onEvent('recipes', (event) => {
             id: 'immersiveengineering:crafting/workbench'
         },
         {
+            output: 'immersiveengineering:turntable',
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: '#forge:plates/iron',
+                B: 'create:brass_casing',
+                C: '#forge:dusts/redstone',
+                D: 'immersiveengineering:coil_lv'
+            },
+            id: 'immersiveengineering:crafting/turntable'
+        },
+
+        /*{
             output: Item.of('immersiveengineering:alloybrick', 4),
             pattern: ['CAC', 'ABA', 'CAC'],
             key: {
@@ -47,7 +59,7 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:blastbrick'
             },
             id: 'immersiveengineering:crafting/alloybrick'
-        },
+        },*/
         {
             output: 'immersiveengineering:furnace_heater',
             pattern: ['ABA', 'ACD', 'ABA'],
@@ -58,10 +70,33 @@ onEvent('recipes', (event) => {
                 D: 'thermal:rf_coil'
             },
             id: 'immersiveengineering:crafting/furnace_heater'
+        },
+        {
+            output: Item.of('12x immersiveengineering:conveyor_basic'),
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: 'create:shaft',
+                B: 'create:belt_connector',
+                C: '#forge:gears/iron_aluminum',
+                D: 'thermal:redstone_servo'
+            },
+            id: 'immersiveengineering:crafting/conveyor_basic'
+        },
+        {
+            output: 'immersiveengineering:circuit_table',
+            pattern: [' AB', 'CCC', 'D E'],
+            key: {
+                A: 'thermal:diving_fabric',
+                B: 'immersiveengineering:screwdriver',
+                C: '#forge:treated_wood_slab',
+                D: 'immersiveengineering:craftingtable',
+                E: 'thermal:energy_cell'
+            },
+            id: 'immersiveengineering:crafting/circuit_table'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

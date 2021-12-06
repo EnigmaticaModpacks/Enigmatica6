@@ -23,6 +23,7 @@
 				""
 				"-OneLemonyBoi"
 			]
+			optional: true
 			id: "7E516ACCF6DA5588"
 			tasks: [{
 				id: "581379EDC8E0E1B8"
@@ -68,8 +69,13 @@
 			x: -1.5d
 			y: 4.0d
 			subtitle: "Keep JUMPING!"
-			description: ["This should be the first block that you make from ID, along with the Drying Basin. This block creates Menril Resin from Menril Logs. However, someone or something needs to jump on the top of it numerous times in order to work the machine. Apply a redstone signal to reset the Squeezer for the next item."]
+			description: [
+				"This should be the first block that you make from ID, along with the Drying Basin. This block creates Menril Resin from Menril Logs. However, someone or something needs to jump on the top of it numerous times in order to work the machine. Apply a redstone signal to reset the Squeezer for the next item."
+				""
+				"Known issue: You cannot use the Squeezer if you have a Dank in your inventory."
+			]
 			dependencies: ["42D9F6E36CF8F06E"]
+			optional: true
 			id: "4666E2A199FC676E"
 			tasks: [{
 				id: "53097394003302F7"
@@ -98,6 +104,7 @@
 			subtitle: "Dryer than my Jokes"
 			description: ["This, along with the Squeezer, will make getting Menril a lot easier. Place this block right next to the Squeezer, with the spout of the squeezer facing it. Every time a Menril Log is squeezed, the Menril Resin enters the drying basin, and dries into a Menril Block."]
 			dependencies: ["42D9F6E36CF8F06E"]
+			optional: true
 			id: "510121D501040EA5"
 			tasks: [{
 				id: "6DFFC1D94075DA22"
@@ -122,6 +129,7 @@
 				"4666E2A199FC676E"
 				"510121D501040EA5"
 			]
+			optional: true
 			id: "16EAF5653A205232"
 			tasks: [
 				{
@@ -155,6 +163,7 @@
 			subtitle: "Drying, but FASTER"
 			description: ["The same as the regular Drying Basin, but is faster and uses RF."]
 			dependencies: ["16EAF5653A205232"]
+			optional: true
 			id: "05C24B4CAB4AC124"
 			tasks: [{
 				id: "4884D5DED8B35CFD"
@@ -176,6 +185,7 @@
 			subtitle: "No more Jumping"
 			description: ["The same as the Squeezer, but is faster, requires RF, and doesn't require the player to be jumping on it."]
 			dependencies: ["16EAF5653A205232"]
+			optional: true
 			id: "5183909586CBC38F"
 			tasks: [{
 				id: "256E9E07904E5A4A"

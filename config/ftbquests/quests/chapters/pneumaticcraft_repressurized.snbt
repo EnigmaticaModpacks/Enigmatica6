@@ -20,11 +20,12 @@
 				""
 				"~MuteTiefling"
 			]
+			optional: true
 			id: "00000000000000AF"
 			tasks: [{
-				id: "00000000000000B0"
-				type: "checkmark"
-				title: "PneumaticCraft: Repressurized"
+				id: "7B56DD5D9F4BBB68"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
 			}]
 			rewards: [{
 				id: "00000000000000B1"
@@ -1258,7 +1259,11 @@
 			title: "Prime Delivery"
 			x: 0.0d
 			y: -13.0d
-			description: ["The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it. "]
+			description: [
+				"The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it. "
+				""
+				"A number of special trades have been added to Enigmatica 6 which allow trading a set of survey tools for different materials from various dimensions. Try them out to obtain rare and unusual items!"
+			]
 			dependencies: ["0000000000000145"]
 			id: "0000000000000148"
 			tasks: [{

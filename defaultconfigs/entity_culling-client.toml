@@ -18,7 +18,7 @@ skipHiddenTileEntityRendering = true
 #Range: 0.0 ~ 128.0
 skipHiddenTileEntityRenderingSize = 128.0
 #Tile entities which will always be rendered. (Format: 'modid:tile_entity_name')
-skipHiddenTileEntityRenderingBlacklist = ["travel_anchors:travel_anchor"]
+skipHiddenTileEntityRenderingBlacklist = ["travel_anchors:travel_anchor", "create:belt"]
 
 #No comment
 [optifineShaderOptions]

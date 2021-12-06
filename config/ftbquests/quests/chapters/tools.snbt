@@ -1128,10 +1128,35 @@
 				{
 					id: "0000000000000460"
 					type: "item"
+					title: "Mining Gadget"
 					item: {
-						id: "mininggadgets:mininggadget"
+						id: "itemfilters:or"
 						Count: 1b
-						tag: { }
+						tag: {
+							items: [
+								{
+									id: "mininggadgets:mininggadget_simple"
+									Count: 1b
+									tag: {
+										energy: 1000000
+									}
+								}
+								{
+									id: "mininggadgets:mininggadget_fancy"
+									Count: 1b
+									tag: {
+										energy: 1000000
+									}
+								}
+								{
+									id: "mininggadgets:mininggadget"
+									Count: 1b
+									tag: {
+										energy: 1000000
+									}
+								}
+							]
+						}
 					}
 				}
 				{
@@ -3076,6 +3101,31 @@
 					item: "ars_nouveau:wand"
 				}
 			]
+		}
+		{
+			x: -10.0d
+			y: -14.0d
+			subtitle: "The lights are on, but nobody's home"
+			description: [
+				"Playing on a server? Consider making some Clockout Blocks to disable machines while logged out. "
+				""
+				"The Clockout Block emits a redstone signal when the player who placed it is online. So simply toss one down and set up your automations to run only with redstone. "
+			]
+			dependencies: ["000000000000046F"]
+			id: "03CE9A1AE5E2538D"
+			tasks: [{
+				id: "21050326FB2FBF70"
+				type: "item"
+				item: "clockout:clockout_block"
+			}]
+			rewards: [{
+				id: "1A05BF41EEF353BA"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 	]
 }

@@ -1,0 +1,65 @@
+{
+    "flower": "undergarden:gloomgourd",
+    "lore": "Tier 2:\nWith the bling brought by the Gold Bee,\nthe Frosty Bee can yield underground royalty.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/regal",
+    "ColorData": {
+        "honeycombColor": "#ebbe76",
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+    	"hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "undergarden:depthrock",
+            "outputs": [
+              {"outputID": "undergarden:shiverstone", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "undergarden:regalium_ore",
+        "mainOutputWeight": 0.4,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "undergarden:utherium_ore",
+        "secondaryOutputWeight": 0.3,
+        "secondaryOutputCount": 2,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.4,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "frosty",
+        "parent2": "gold",
+        "feedItem": "undergarden:regalium_ingot",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

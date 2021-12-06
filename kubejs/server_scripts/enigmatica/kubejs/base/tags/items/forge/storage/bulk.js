@@ -8,7 +8,7 @@ onEvent('item.tags', (event) => {
             .get(tag)
             .add(items)
             .add(/black_hole_unit/)
-            .add(/_drawer/)
+            .add(/storagedrawers:\w+drawers/)
             .add(/qio_drive/)
             .add(/mekanism:\w+_bin/)
             .add(/framedcompactdrawers:framed/)

@@ -121,6 +121,115 @@ onEvent('recipes', (event) => {
             pressure: 1.0,
             results: [{ item: 'pneumaticcraft:turbine_blade', count: 1 }],
             id: 'pneumaticcraft:pressure_chamber/turbine_blade'
+        },
+        {
+            inputs: [
+                { item: 'tconstruct:ichor_slime_crystal', count: 1 },
+                { item: 'refinedstorage:basic_processor', count: 1 },
+                { item: 'botania:corporea_spark', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'refinedstorage:destruction_core', count: 1 }],
+            id: 'refinedstorage:destruction_core'
+        },
+        {
+            inputs: [
+                { item: 'tconstruct:sky_slime_crystal', count: 1 },
+                { item: 'refinedstorage:basic_processor', count: 1 },
+                { item: 'botania:corporea_spark', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'refinedstorage:construction_core', count: 1 }],
+            id: 'refinedstorage:construction_core'
+        },
+        {
+            inputs: [
+                { tag: 'forge:coins/tin', count: 1 },
+                { tag: 'forge:gems/silicon', count: 1 },
+                { item: 'refinedstorage:processor_binding', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'refinedstorage:raw_basic_processor', count: 1 }],
+            id: 'refinedstorage:raw_basic_processor'
+        },
+        {
+            inputs: [
+                { tag: 'forge:coins/lumium', count: 1 },
+                { tag: 'forge:gems/silicon', count: 1 },
+                { item: 'refinedstorage:processor_binding', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'refinedstorage:raw_improved_processor', count: 1 }],
+            id: 'refinedstorage:raw_improved_processor'
+        },
+        {
+            inputs: [
+                { tag: 'forge:coins/enderium', count: 1 },
+                { tag: 'forge:gems/silicon', count: 1 },
+                { item: 'refinedstorage:processor_binding', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'refinedstorage:raw_advanced_processor', count: 1 }],
+            id: 'refinedstorage:raw_advanced_processor'
+        },
+        {
+            inputs: [
+                { item: 'integrateddynamics:variable', count: 1 },
+                { item: 'refinedstorage:construction_core', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'integrateddynamics:variable_transformer_output', count: 1 }],
+            id: `${id_prefix}variable_transformer_output`
+        },
+        {
+            inputs: [
+                { item: 'integrateddynamics:variable', count: 1 },
+                { item: 'refinedstorage:destruction_core', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'integrateddynamics:variable_transformer_input', count: 1 }],
+            id: `${id_prefix}variable_transformer_input`
+        },
+        {
+            inputs: [
+                { item: 'kubejs:memory_basic_empty', count: 2 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'kubejs:memory_advanced_empty', count: 1 }],
+            id: `${id_prefix}memory_advanced_empty`
+        },
+        {
+            inputs: [
+                { item: 'kubejs:memory_advanced_empty', count: 2 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'kubejs:memory_elite_empty', count: 1 }],
+            id: `${id_prefix}memory_elite_empty`
+        },
+        {
+            inputs: [
+                { item: 'kubejs:memory_elite_empty', count: 2 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'kubejs:memory_ultimate_empty', count: 1 }],
+            id: `${id_prefix}memory_ultimate_empty`
+        },
+        {
+            inputs: [
+                { tag: 'mekanism:alloys/reinforced', count: 3 },
+                { item: 'pneumaticcraft:turbine_rotor', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'mekanismgenerators:turbine_blade', count: 1 }],
+            id: 'mekanismgenerators:turbine/blade'
         }
     ];
 

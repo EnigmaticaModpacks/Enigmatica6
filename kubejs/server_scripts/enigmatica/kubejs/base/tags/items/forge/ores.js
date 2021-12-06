@@ -16,9 +16,14 @@ onEvent('item.tags', (event) => {
         'rftoolsbase:dimensionalshard_nether',
         'rftoolsbase:dimensionalshard_end'
     ]);
+    event.add('forge:ores/quartz', ['byg:blue_nether_quartz_ore', 'byg:brimstone_nether_quartz_ore']);
 
-    event.get('forge:ores/nether/gold').add('minecraft:nether_gold_ore');
-    //event.get('forge:ores/netherite_scrap').remove('minecraft:ancient_debris');
+    event.add('forge:ores/gold', ['byg:blue_nether_gold_ore', 'byg:brimstone_nether_gold_ore']);
+    event.add('forge:ores/nether/gold', [
+        'minecraft:nether_gold_ore',
+        'byg:blue_nether_gold_ore',
+        'byg:brimstone_nether_gold_ore'
+    ]);
     event.get('forge:ores/netherite').add('minecraft:ancient_debris');
 
     event.add('forge:ores/ender', 'betterendforge:ender_ore');

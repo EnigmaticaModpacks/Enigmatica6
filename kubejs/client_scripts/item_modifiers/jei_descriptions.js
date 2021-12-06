@@ -2,71 +2,71 @@ onEvent('jei.information', (event) => {
     const recipes = [
         {
             items: ['simplefarming:cheese_slice'],
-            description: ['Obtained by right-clicking a Wheel of Cheese.']
+            text: ['Obtained by right-clicking a Wheel of Cheese.']
         },
         {
             items: ['farmersdelight:ham'],
-            description: ['Obtained by killing Pigs or Hoglins with a knife.']
+            text: ['Obtained by killing Pigs or Hoglins with a knife.']
         },
         {
             items: ['astralsorcery:stardust'],
-            description: [
+            text: [
                 'Obtained by left-clicking a Starmetal Ingot in-world with a Starmetal Cutting Tool. See the Astral Tome for more information.'
             ]
         },
         {
             items: ['buildinggadgets:construction_paste'],
-            description: ['Obtained by breaking a Dense Construction Block with a Pickaxe.']
+            text: ['Obtained by breaking a Dense Construction Block with a Pickaxe.']
         },
         {
             items: ['powah:uraninite', 'powah:uraninite_block'],
-            description: [
+            text: [
                 'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
             ]
         },
         {
             items: ['thermal:blizz_rod', 'thermal:blizz_spawn_egg'],
-            description: [
+            text: [
                 'The Blizz spawns naturally in cold biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
         },
         {
             items: ['thermal:blitz_rod', 'thermal:blitz_spawn_egg'],
-            description: [
+            text: [
                 'The Blitz spawns naturally in warm, dry biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
         },
         {
             items: ['thermal:basalz_rod', 'thermal:basalz_spawn_egg'],
-            description: [
+            text: [
                 'The Basalz spawns naturally in barren biomes, such as Badlands. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
         },
         {
             items: ['betterendforge:emerald_ice'],
-            description: [
+            text: [
                 'Found naturally in Ice Starfields in the End, it can also be created from water placed next to Ancient Emerald Ice.'
             ]
         },
         {
             items: ['betterendforge:dense_emerald_ice'],
-            description: [
+            text: [
                 'Found naturally in Ice Starfields in the End, it can also be created from Emerald Ice placed next to Ancient Emerald Ice.'
             ]
         },
         {
             items: ['betterendforge:ancient_emerald_ice'],
-            description: [
+            text: [
                 'Found naturally in Ice Starfields in the End, it can convert adjacent water blocks to Emerald Ice and those to Dense Emerald Ice.'
             ]
         },
         {
             items: ['simplefarming:habanero'],
-            description: ['A very rare drop from farming Peppers.']
+            text: ['A very rare drop from farming Peppers.']
         },
         {
             items: ['mekanismgenerators:fusion_reactor_controller'],
-            description: [
+            text: [
                 'The Fusion Reactor has been nerfed quite heavily.',
                 'It produces 60k-250k rf/t passively, but has potential for far higher output when paired with one or multiple Steam Turbines.'
             ]
@@ -81,7 +81,7 @@ onEvent('jei.information', (event) => {
                 'industrialforegoing:infinity_nuke',
                 'industrialforegoing:infinity_launcher'
             ],
-            description: [
+            text: [
                 "Nine Quintillion is big. Really big. You just won't believe how vastly hugely mind-bogglingly big it is."
             ]
         },
@@ -95,19 +95,19 @@ onEvent('jei.information', (event) => {
                 'industrialforegoing:infinity_nuke',
                 'industrialforegoing:infinity_launcher'
             ],
-            description: [
+            text: [
                 "Unless you plan on sitting here for a few centuries, filling this tool isn't possible through conventional means. Some say the answer lies in Nucleosynthesis instead."
             ]
         },
         {
             items: ['farmersdelight:brown_mushroom_colony', 'minecraft:brown_mushroom'],
-            description: [
+            text: [
                 'Plant a Brown Mushroom on Rich Soil in darkness to grow mushroom colonies, which may be broken for a nice yield.'
             ]
         },
         {
             items: ['farmersdelight:red_mushroom_colony', 'minecraft:red_mushroom'],
-            description: [
+            text: [
                 'Plant a Red Mushroom on Rich Soil in darkness to grow mushroom colonies, which may be broken for a nice yield.'
             ]
         },
@@ -117,7 +117,7 @@ onEvent('jei.information', (event) => {
                 'integratedtunnels:part_importer_energy',
                 'integratedtunnels:part_exporter_energy'
             ],
-            description: ['Max Energy Transfer Rate has been limited to 65,536 FE per tick.']
+            text: ['Max Energy Transfer Rate has been limited to 65,536 FE per tick.']
         },
         {
             items: [
@@ -125,35 +125,35 @@ onEvent('jei.information', (event) => {
                 'integratedtunnels:part_importer_fluid',
                 'integratedtunnels:part_exporter_fluid'
             ],
-            description: ['Max Fluid Transfer Rate has been limited to 65,536 mb per tick.']
+            text: ['Max Fluid Transfer Rate has been limited to 65,536 mb per tick.']
         },
         {
             items: ['minecraft:nautilus_shell'],
-            description: [
-                'Obtained by killing Nautilus, found in Oceans.',
+            text: [
+                'Obtained by killing Nautilus, found in Warm Oceans.',
                 ' ',
                 'Also obtained from Embedded Ammonite, found at any Y level in Oceans and Beaches.'
             ]
         },
         {
             items: ['architects_palette:twisted_sapling'],
-            description: ['Obtained by tossing Saplings through a Nether Portal from the Overworld']
+            text: ['Obtained by tossing Saplings through a Nether Portal from the Overworld']
         },
         {
             items: ['architects_palette:warpstone'],
-            description: ['Obtained by tossing Clay Blocks through a Nether Portal from the Overworld']
+            text: ['Obtained by tossing Clay Blocks through a Nether Portal from the Overworld']
         },
         {
             items: ['byg:warped_cactus'],
-            description: ['Obtained by tossing Cactus through a Nether Portal from the Overworld']
+            text: ['Obtained by tossing Cactus through a Nether Portal from the Overworld']
         },
         {
             items: ['byg:warped_coral', 'byg:warped_coral_fan', 'byg:warped_coral'],
-            description: ['Obtained by tossing any coral through a Nether Portal from the Overworld']
+            text: ['Obtained by tossing any coral through a Nether Portal from the Overworld']
         },
         {
             items: ['architects_palette:chiseled_abyssaline_bricks'],
-            description: ['May be Charged by Right-Clicking with a Heart of the Sea. Used to power Abyssaline blocks.']
+            text: ['May be Charged by Right-Clicking with a Heart of the Sea. Used to power Abyssaline blocks.']
         },
         {
             items: [
@@ -165,7 +165,7 @@ onEvent('jei.information', (event) => {
                 'architects_palette:abyssaline_bricks',
                 'architects_palette:abyssaline'
             ],
-            description: [
+            text: [
                 'Powered by placing next to a Charged Chiseled Abyssaline Bricks. Power is transmitted through to other Abyssaline blocks.'
             ]
         },
@@ -176,86 +176,90 @@ onEvent('jei.information', (event) => {
                 'architects_palette:placid_acacia_totem',
                 'architects_palette:grinning_acacia_totem'
             ],
-            description: ['Right-Click with an Axe to change the face.']
+            text: ['Right-Click with an Axe to change the face.']
         },
         {
             items: ['betterendforge:silk_fiber'],
-            description: ['Obtained by killing Silk Moths which are spawned by Silk Moth Nests.']
+            text: ['Obtained by killing Silk Moths which are spawned by Silk Moth Nests.']
         },
         {
             items: [/upgrade_aquatic:\w+_coralstone$/],
-            description: ['Obtained by placing Coralstone next to living coral.']
+            text: ['Obtained by placing Coralstone next to living coral.']
         },
         {
             items: ['upgrade_aquatic:coralstone'],
-            description: ['Place next to living coral to infuse.']
+            text: ['Place next to living coral to infuse.']
         },
         {
             items: [/quark:\w+_crystal$/],
-            description: [
-                'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.'
-            ]
+            text: ['Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.']
         },
         {
             items: ['quark:bottled_cloud'],
-            description: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 126 and 132.']
+            text: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 126 and 132.']
         },
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],
-            description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld or Atum. This action removes Aura from the area.'
+            text: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld or Atum. This action removes Aura from the area.',
+                ' ',
+                `Can be automated using a Dispenser.`
             ]
         },
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:end' })],
-            description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Undergarden. This action removes Aura from the area.'
+            text: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Undergarden. This action removes Aura from the area.',
+                ' ',
+                `Can be automated using a Dispenser.`
             ]
         },
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })],
-            description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.'
+            text: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.',
+                ' ',
+                `Can be automated using a Dispenser.`
             ]
         },
         {
             items: ['quark:root_item'],
-            description: ['Drops occasionally when breaking Cave Roots.']
+            text: ['Drops occasionally when breaking Cave Roots.']
         },
         {
             items: ['meetyourfight:phantoplasm'],
-            description: ['Drops from the Bellringer. Craft a Haunted Bell to summon.']
+            text: ['Drops from the Bellringer. Craft a Haunted Bell to summon.']
         },
         {
             items: ['meetyourfight:mossy_tooth'],
-            description: ['Drops from Swampjaw. Craft a Fossil Bait to summon.']
+            text: ['Drops from Swampjaw. Craft a Fossil Bait to summon.']
         },
         {
             items: ['meetyourfight:fortunes_favor'],
-            description: [`Drops from Dame Fortuna. Craft a Devil's Ante to summon.`]
+            text: [`Drops from Dame Fortuna. Craft a Devil's Ante to summon.`]
         },
         {
             items: ['atum:ectoplasm'],
-            description: [`Drops from Wraiths in the sandy wastes of Atum.`]
+            text: [`Drops from Wraiths in the sandy wastes of Atum.`]
         },
         {
-            items: ['minecraft:firework_star'],
-            description: [`Shapeless Crafting: One paper and at least one gunpowder.`]
+            items: ['minecraft:firework_rocket'],
+            text: [`Shapeless Crafting: One paper and at least one gunpowder.`]
         },
         {
-            items: ['minecraft:firework_star'],
-            description: [
+            items: ['minecraft:firework_rocket'],
+            text: [
                 `Adding more gunpowder increases the duration of the rocket.`,
                 `Up to three gunpowder or up to seven firework stars can be added.`
             ]
         },
         {
-            items: ['minecraft:firework_rocket'],
-            description: [`Shapeless Crafting: One gunpowder and at least one dye.`]
+            items: ['minecraft:firework_star'],
+            text: [`Shapeless Crafting: One gunpowder and at least one dye.`]
         },
         {
-            items: ['minecraft:firework_rocket'],
-            description: [
+            items: ['minecraft:firework_star'],
+            text: [
                 `Up to eight dyes can be added.`,
                 `One head, gold nugget, feather, or fire charge can be added to set a shape.`,
                 `A diamond and/or a glowstone dust can be added with any of the other ingredients.`
@@ -263,7 +267,7 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['minecraft:dragon_egg'],
-            description: [
+            text: [
                 `More eggs may be obtained by summoning the End Dragon again.`,
                 ` `,
                 `To summon, place an End Crystal on each of the cardinal directions of the End Portal in the End.`
@@ -271,11 +275,11 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['byg:leaf_pile'],
-            description: [`Gathered with Shears.`]
+            text: [`Gathered with Shears.`]
         },
         {
             items: ['eidolon:soul_shard'],
-            description: [
+            text: [
                 `Obtained by performing a Crystallization Ritual near undead mobs. The ritual can be found in the Ars Ecclesia.`,
                 ` `,
                 `Alternatively obtained by killing undead mobs with a Reaper's Scythe.`
@@ -283,23 +287,23 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['atum:anputs_fingers_spores'],
-            description: [`Found occasionally growing beneath Deadwood Trees. Requires darkness to grow.`]
+            text: [`Found occasionally growing beneath Deadwood Trees. Requires darkness to grow.`]
         },
         {
             items: ['immersiveengineering:furnace_heater', 'mekanism:fuelwood_heater', 'mekanism:resistive_heater'],
-            description: [`May be used to provide Heat for PneumaticCraft machines.`]
+            text: [`May be used to provide Heat for PneumaticCraft machines.`]
         },
         {
             items: ['immersiveengineering:logic_circuit'],
-            description: [
+            text: [
                 `Used in a Logic Unit to create advanced Redstone Logic.`,
                 ` `,
-                `Programmed on an Engineer's Circuit Table. Requires Circuit Backplanes, Lead or Copper Wire, and Vacuum Tubes.`
+                `Crafted in an Engineer's Circuit Table. Requires Circuit Backplanes and Lead or Copper Wire. Vacuum Tubes are required for all operators except SET.`
             ]
         },
         {
             items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
-            description: [
+            text: [
                 `Obtained by defeating the Warped Mosco.`,
                 ` `,
                 `Warped Mosco are creatures of nightmare created when a Crimson Mosquito sucks the blood of a Mungus covered in Warped Fungus.`
@@ -307,13 +311,13 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
-            description: [
+            text: [
                 `Mungus may be summoned through the Altar of Birthing, while Crimson Mosquitos may be created by bringing a Fly into the Nether.`
             ]
         },
         {
             items: ['astralsorcery:gem_crystal_cluster'],
-            description: [
+            text: [
                 `Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with an Illumination Powder.`,
                 ` `,
                 `Different varieties form at different times of the day.`
@@ -321,31 +325,95 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['astralsorcery:celestial_crystal_cluster'],
-            description: [`Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with a Stardust.`]
+            text: [`Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with a Stardust.`]
         },
         {
             items: ['astralsorcery:celestial_crystal_cluster'],
-            description: [
+            text: [
                 `If grown on Starmetal Ore, the growth rate is increased. The ore may revert during this process, so linking a Collector Crystal to it is important to convert it back.`
             ]
         },
         {
             items: ['bloodmagic:weak_tau'],
-            description: [`Found in chests within the Demon Realm.`]
+            text: [`Found in chests within the Demon Realm.`]
         },
         {
             items: ['bloodmagic:strong_tau'],
-            description: [`Produced by growing Tau near mobs.`]
+            text: [`Produced by growing Tau near mobs.`]
         },
         {
             items: ['eidolon:unholy_symbol'],
-            description: [`Produced by chanting the Touch of Darkness at Pewter Inlay dropped on the ground.`]
+            text: [`Produced by chanting the Touch of Darkness at Pewter Inlay dropped on the ground.`]
+        },
+        {
+            items: [
+                'resourcefulbees:t1_beehive',
+                'resourcefulbees:t2_beehive',
+                'resourcefulbees:t3_beehive',
+                'resourcefulbees:t4_beehive'
+            ],
+            text: [
+                `Tiered Beehives have been depreciated. Use the Hive Upgrade items on nests found in the world instead. Tiered Beehives can be converted to Hive Upgrades in a crafting grid.`
+            ]
+        },
+        {
+            items: ['upgrade_aquatic:flare_spawn_egg'],
+            text: [`Splash a Phantom with a Potion of Insomnia to convert it to a Flare.`]
+        },
+        {
+            items: ['quark:dragon_scale'],
+            text: [`Only drops from Ender Dragons after the first one has been killed.`]
+        },
+        {
+            items: [
+                'dankstorage:1_to_2',
+                'dankstorage:2_to_3',
+                'dankstorage:3_to_4',
+                'dankstorage:4_to_5',
+                'dankstorage:5_to_6',
+                'dankstorage:6_to_7'
+            ],
+            text: [`Sneak Right Click to upgrade a Dank installed in a Dock.`]
+        },
+        {
+            items: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:dusty_mummbee_bee' })],
+            text: [`The Dusty Mummbee can be found inside the Pharaoh's Sarcophagus.`]
+        },
+        {
+            items: ['quark:slime_in_a_bucket'],
+            text: [`Scoop up a small slime in an empty bucket.`]
+        },
+        {
+            items: ['alexsmobs:mysterious_worm'],
+            text: [
+                `Summons a Void Worm when tossed into the void in The End.`,
+                ` `,
+                `Place a Crimson Mosquito Larva inside a Capsid to obtain.`
+            ]
+        },
+        {
+            items: ['alexsmobs:capsid'],
+            text: [
+                `Dropped by Enderiophage.`,
+                ` `,
+                `Enderiophage may be found in the wild in the End Midlands biome. They may also be called forth by consuming Otherworldly Honey.`
+            ]
+        },
+        {
+            items: ['eidolon:sanguine_amulet', 'eidolon:sapping_sword'],
+            text: [`For crafting steps, refer to the Sanguine Items section under Rituals in the Ars Ecclesia.`]
+        },
+        {
+            items: ['atum:papyrus_plant'],
+            text: [
+                `Commonly found growing in Oasis Biomes in Atum. Grows like Sugar Cane on Strange Sand or Fertile Soil.`
+            ]
         }
     ];
 
     recipes.forEach((recipe) => {
         recipe.items.forEach((item) => {
-            event.add(item, recipe.description);
+            event.add(item, recipe.text);
         });
     });
 

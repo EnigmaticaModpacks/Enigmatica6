@@ -23,11 +23,12 @@
 				""
 				"~Merlo"
 			]
+			optional: true
 			id: "000000000000016F"
 			tasks: [{
-				id: "0000000000000170"
-				type: "checkmark"
-				title: "Welcome to Powah!"
+				id: "4C763494FAB6F8A2"
+				type: "item"
+				item: "powah:dielectric_paste"
 			}]
 			rewards: [{
 				id: "413EB9C7629D2B60"
@@ -123,10 +124,35 @@
 				type: "item"
 				title: "Furnator (Any Tier)"
 				item: {
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						value: "powah:furnator"
+						items: [
+							{
+								id: "powah:furnator_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:furnator_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:furnator_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:furnator_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:furnator_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:furnator_nitro"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
@@ -167,10 +193,35 @@
 				type: "item"
 				title: "Energy Cable (Any Tier)"
 				item: {
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						value: "powah:energy_cable"
+						items: [
+							{
+								id: "powah:energy_cable_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cable_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cable_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cable_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cable_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cable_nitro"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
@@ -198,10 +249,35 @@
 				type: "item"
 				title: "Magmator (Any Tier)"
 				item: {
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						value: "powah:magmator"
+						items: [
+							{
+								id: "powah:magmator_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:magmator_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:magmator_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:magmator_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:magmator_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:magmator_nitro"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
@@ -233,10 +309,35 @@
 				type: "item"
 				title: "Thermo Generator (Any Tier)"
 				item: {
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						value: "powah:thermo_generator"
+						items: [
+							{
+								id: "powah:thermo_generator_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:thermo_generator_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:thermo_generator_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:thermo_generator_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:thermo_generator_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:thermo_generator_nitro"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
@@ -244,8 +345,7 @@
 				{
 					id: "00000000000001B6"
 					type: "item"
-					title: "Sink"
-					item: "cookingforblockheads:sink"
+					item: "industrialforegoing:water_condensator"
 				}
 				{
 					id: "000000000000064D"
@@ -274,10 +374,35 @@
 				type: "item"
 				title: "Solar Panel (Any Tier)"
 				item: {
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						value: "powah:solar_panel"
+						items: [
+							{
+								id: "powah:solar_panel_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_nitro"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
@@ -364,10 +489,35 @@
 				type: "item"
 				title: "Reactor (Any Tier)"
 				item: {
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						value: "powah:reactor"
+						items: [
+							{
+								id: "powah:reactor_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_nitro"
+								Count: 1b
+							}
+						]
 					}
 				}
 				count: 36L
@@ -441,10 +591,35 @@
 					type: "item"
 					title: "Energizing Rod (Any Tier)"
 					item: {
-						id: "itemfilters:tag"
+						id: "itemfilters:or"
 						Count: 1b
 						tag: {
-							value: "powah:energizing_rod"
+							items: [
+								{
+									id: "powah:energizing_rod_basic"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_hardened"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_blazing"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_niotic"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_spirited"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_nitro"
+									Count: 1b
+								}
+							]
 						}
 					}
 					count: 2L
@@ -477,10 +652,35 @@
 				type: "item"
 				title: "Energy Cell (Any Tier)"
 				item: {
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						value: "powah:energy_cell"
+						items: [
+							{
+								id: "powah:energy_cell_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_nitro"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
@@ -517,10 +717,35 @@
 				type: "item"
 				title: "Ender Cell (Any Tier)"
 				item: {
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						value: "powah:ender_cell"
+						items: [
+							{
+								id: "powah:ender_cell_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:ender_cell_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:ender_cell_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:ender_cell_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:ender_cell_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:ender_cell_nitro"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
@@ -550,12 +775,36 @@
 				{
 					id: "0000000000000193"
 					type: "item"
-					title: "Player Transmitter (Any Tier)"
 					item: {
-						id: "itemfilters:tag"
+						id: "itemfilters:or"
 						Count: 1b
 						tag: {
-							value: "powah:player_transmitter"
+							items: [
+								{
+									id: "powah:player_transmitter_basic"
+									Count: 1b
+								}
+								{
+									id: "powah:player_transmitter_hardened"
+									Count: 1b
+								}
+								{
+									id: "powah:player_transmitter_blazing"
+									Count: 1b
+								}
+								{
+									id: "powah:player_transmitter_niotic"
+									Count: 1b
+								}
+								{
+									id: "powah:player_transmitter_spirited"
+									Count: 1b
+								}
+								{
+									id: "powah:player_transmitter_nitro"
+									Count: 1b
+								}
+							]
 						}
 					}
 				}
@@ -593,10 +842,35 @@
 				type: "item"
 				title: "Ender Gate (Any Tier)"
 				item: {
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						value: "powah:ender_gate"
+						items: [
+							{
+								id: "powah:ender_gate_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:ender_gate_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:ender_gate_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:ender_gate_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:ender_gate_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:ender_gate_nitro"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]

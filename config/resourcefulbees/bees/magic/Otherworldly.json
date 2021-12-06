@@ -1,0 +1,58 @@
+{
+    "flower": "occultism:spirit_fire",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "Through the ritual sacrifice of the Rocky Bee,\nthe Otherworldly Bee may be bound to this plane.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 6000,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/otherworldly",
+    "ColorData": {
+        "honeycombColor": "#1d1d24",
+        "modelType": "DRAGON"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "ITEM",
+                "chance": 0.5,
+                "inputID": "tag:forge:bookshelves",
+                "outputs": [
+                  {"outputID": "occultism:book_of_binding_foliot", "weight": 512},
+                  {"outputID": "occultism:book_of_binding_djinni", "weight": 256},
+                  {"outputID": "occultism:book_of_binding_afrit", "weight": 128},
+                  {"outputID": "occultism:book_of_binding_marid", "weight": 64}
+                  
+                ]
+            },
+            {
+                "type": "BLOCK",
+                "chance": 0.5,
+                "inputID": "minecraft:andesite",
+                "outputs": [
+                  {"outputID": "occultism:otherstone", "weight": 512}
+                ]
+            },
+            {
+                "type": "BLOCK",
+                "chance": 0.5,
+                "inputID": "minecraft:oak_log",
+                "outputs": [
+                  {"outputID": "occultism:otherworld_log", "weight": 512}
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {"hasCentrifugeOutput": false},
+    "SpawnData": {"canSpawnInWorld": false},
+    "BreedData": {"isBreedable": false},
+    "TraitData": {"hasTraits": true}
+}

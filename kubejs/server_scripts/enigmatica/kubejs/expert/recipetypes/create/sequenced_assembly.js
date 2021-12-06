@@ -109,8 +109,364 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: 'powah:crafting/capacitor_basic_large'
+        },
+        {
+            input: 'minecraft:paper',
+            outputs: [Item.of('immersiveengineering:cokebrick', 3)],
+            transitionalItem: 'kubejs:coke_brick',
+            loops: 4,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['kubejs:coke_brick', 'kubejs:coke_brick'],
+                    output: 'kubejs:coke_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:coke_brick', 'kubejs:coke_brick'],
+                    output: 'kubejs:coke_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:coke_brick', 'kubejs:coke_brick'],
+                    output: 'kubejs:coke_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:coke_brick', 'buildinggadgets:construction_paste'],
+                    output: 'kubejs:coke_brick'
+                }
+            ],
+            id: `${id_prefix}cokebricks`
+        },
+        {
+            input: 'minecraft:paper',
+            outputs: [Item.of('immersiveengineering:blastbrick', 3)],
+            transitionalItem: 'kubejs:blast_brick',
+            loops: 4,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:red_nether_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:coke_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'buildinggadgets:construction_paste'],
+                    output: 'kubejs:blast_brick'
+                }
+            ],
+            id: `${id_prefix}blastbricks`
+        },
+        {
+            input: 'kubejs:smoldering_lapis_lazuli_compound',
+            outputs: [Item.of('immersiveengineering:alloybrick', 4)],
+            transitionalItem: 'kubejs:blast_brick',
+            loops: 4,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'environmental:mud_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'buildinggadgets:construction_paste'],
+                    output: 'kubejs:blast_brick'
+                }
+            ],
+            id: `${id_prefix}alloybricks`
+        },
+        {
+            input: 'ppfluids:fluid_pipe',
+            outputs: ['integrateddynamics:cable'],
+            transitionalItem: 'ppfluids:fluid_pipe',
+            loops: 1,
+            sequence: [
+                {
+                    type: 'filling',
+                    input: ['ppfluids:fluid_pipe', Fluid.of('integrateddynamics:menril_resin', 200)],
+                    output: 'ppfluids:fluid_pipe'
+                },
+                {
+                    type: 'filling',
+                    input: ['ppfluids:fluid_pipe', Fluid.of('thermal:redstone', 100)],
+                    output: 'ppfluids:fluid_pipe'
+                }
+            ],
+            id: `${id_prefix}logic_cable`
+        },
+        {
+            input: 'immersiveengineering:insulating_glass',
+            outputs: ['immersiveengineering:circuit_board'],
+            transitionalItem: 'immersiveengineering:insulating_glass',
+            loops: 1,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['immersiveengineering:insulating_glass', '#forge:plates/copper'],
+                    output: 'immersiveengineering:insulating_glass'
+                },
+                {
+                    type: 'deploying',
+                    input: ['immersiveengineering:insulating_glass', 'powah:dielectric_paste'],
+                    output: 'immersiveengineering:insulating_glass'
+                }
+            ],
+            id: `${id_prefix}backplane_alternate`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:engineering_student_supplies'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 20,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:craftingtable'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:screwdriver'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:hammer'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:wirecutter'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:manual'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#create:seats'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}engineering_student_supplies`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:building_materials'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 500,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'create:copper_shingles'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'quark:framed_glass'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}building_materials`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:landscaping_materials'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 250,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'quark:turf'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'quark:turf'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'quark:turf'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'quark:turf'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#minecraft:small_flowers'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#minecraft:leaves'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}landscaping_materials`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:construction_tools'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 5,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:jackhammer'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:drill_bit_compressed_iron'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}construction_tools`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:foundation_materials'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 500,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:concrete'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:concrete'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:concrete'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#immersiveengineering:scaffoldings/steel'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'engineersdecor:clinker_brick_block'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'engineersdecor:clinker_brick_block'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}foundation_materials`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:computer_package'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 5,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}computer_package`
         }
     ];
+
+    /// Armor Crafting Loops
 
     let armorTypes = [
         {
@@ -684,30 +1040,30 @@ onEvent('recipes', (event) => {
     armorTypes.forEach((armorType) => {
         armorType.armors.forEach((armor) => {
             recipes.push({
-                input: armor.base,
+                input: Item.of(armor.base, '{Damage:0}').weakNBT(),
                 outputs: [armor.result],
-                transitionalItem: armor.base,
+                transitionalItem: armor.material,
                 loops: armorType.loops,
                 sequence: [
                     {
                         type: 'deploying',
-                        input: [armor.base, armor.material],
-                        output: armor.base
+                        input: [armor.material, armor.material],
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     }
                 ],
                 id: armor.id
@@ -732,13 +1088,10 @@ onEvent('recipes', (event) => {
             }
         });
 
-        const re = event.recipes.create
+        event.recipes.create
             .sequenced_assembly(recipe.outputs, recipe.input, sequence)
             .loops(recipe.loops)
-            .transitionalItem(recipe.transitionalItem);
-
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+            .transitionalItem(recipe.transitionalItem)
+            .id(recipe.id);
     });
 });

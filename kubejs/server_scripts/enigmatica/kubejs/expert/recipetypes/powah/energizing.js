@@ -16,7 +16,7 @@ onEvent('recipes', (event) => {
                 item: 'xnet:antenna_dish',
                 count: 1
             },
-            id: `${id_prefix}antenna_dish`
+            id: 'xnet:antenna_dish'
         },
         {
             ingredients: [{ item: 'thermal:energy_cell_frame' }, { tag: 'forge:storage_blocks/redstone' }],
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                 item: 'xnet:redstone_proxy',
                 count: 1
             },
-            id: `${id_prefix}redstone_proxy_from_energy_cell_frame`
+            id: 'xnet:redstone_proxy'
         },
         {
             ingredients: [{ item: 'xnet:redstone_proxy_upd' }],
@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
                 item: 'xnet:redstone_proxy',
                 count: 1
             },
-            id: `${id_prefix}redstone_proxy_from_redstone_proxy_upd`
+            id: `${id_prefix}redstone_proxy_upd`
         },
         {
             ingredients: [{ item: 'xnet:redstone_proxy' }],
@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
                 item: 'xnet:redstone_proxy_upd',
                 count: 1
             },
-            id: `${id_prefix}redstone_proxy_upd`
+            id: 'xnet:redstoneproxy_update'
         },
         {
             ingredients: [
@@ -148,7 +148,11 @@ onEvent('recipes', (event) => {
             ingredients: [
                 { item: 'botania:ender_eye_block' },
                 { item: 'powah:dielectric_casing' },
-                { tag: 'mekanism:crystals/uranium' }
+                {
+                    type: 'forge:nbt',
+                    item: 'pneumaticcraft:spawner_core',
+                    nbt: '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}'
+                }
             ],
             energy: '20000000',
             result: {
@@ -170,6 +174,62 @@ onEvent('recipes', (event) => {
                 count: 2
             },
             id: `${id_prefix}uraninite`
+        },
+        {
+            ingredients: [{ item: 'minecraft:blaze_rod' }],
+            energy: '10000000',
+            result: {
+                type: 'forge:nbt',
+                item: 'rftoolspower:blazing_rod',
+                count: 1,
+                nbt: '{duration:5000.0f,time:0.0f,quality:200000.0f}'
+            },
+            id: `${id_prefix}blazing_rod`
+        },
+        {
+            ingredients: [
+                { item: 'rftoolsbase:machine_base' },
+                { item: 'powah:capacitor_blazing' },
+                { item: 'powah:capacitor_blazing' },
+                { item: 'powah:capacitor_blazing' },
+                { item: 'powah:capacitor_blazing' }
+            ],
+            energy: '500000',
+            result: {
+                item: 'rftoolspower:power_core2',
+                count: 1
+            },
+            id: 'rftoolspower:power_core2'
+        },
+        {
+            ingredients: [
+                { item: 'rftoolsbase:machine_base' },
+                { item: 'powah:capacitor_nitro' },
+                { item: 'powah:capacitor_nitro' },
+                { item: 'powah:capacitor_nitro' },
+                { item: 'powah:capacitor_nitro' }
+            ],
+            energy: '10000000',
+            result: {
+                item: 'rftoolspower:power_core3',
+                count: 1
+            },
+            id: 'rftoolspower:power_core3'
+        },
+        {
+            ingredients: [
+                { tag: 'mekanism:alloys/atomic' },
+                { item: 'rftoolsbase:infused_diamond' },
+                { item: 'fluxnetworks:flux_core' },
+                { item: 'rftoolsbase:infused_diamond' },
+                { tag: 'mekanism:alloys/atomic' }
+            ],
+            energy: '1000000000',
+            result: {
+                item: 'mekanism:teleportation_core',
+                count: 2
+            },
+            id: 'mekanism:teleportation_core'
         }
     ];
 

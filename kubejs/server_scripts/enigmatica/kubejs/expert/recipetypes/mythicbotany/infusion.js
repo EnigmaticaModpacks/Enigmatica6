@@ -2,15 +2,26 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/mythicbotany/infusion/';
     const recipes = [
         {
             inputs: [
-                Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee", BeeType: "mana", Color: "#4c97ff"}).weakNBT().toJson(),
+                Item.of('resourcefulbees:bee_jar', {
+                    Entity: 'resourcefulbees:mana_bee',
+                    BeeType: 'mana',
+                    Color: '#4c97ff'
+                })
+                    .weakNBT()
+                    .toJson(),
                 { item: 'botania:mana_pearl' },
                 { item: 'botania:mana_diamond' },
                 { item: 'botania:quartz_mana' }
             ],
-            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:terrestrial_bee", BeeType: "terrestrial", Color: "#5bf23d"}).toJson(),
+            output: Item.of('resourcefulbees:bee_jar', {
+                Entity: 'resourcefulbees:terrestrial_bee',
+                BeeType: 'terrestrial',
+                Color: '#5bf23d'
+            }).toJson(),
             mana: 2000000,
             fromColor: parseInt('0xFFFFFF'),
             toColor: parseInt('0x00FF00'),
@@ -77,17 +88,33 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'naturesaura:infused_stone' },
+                { item: 'botania:forest_eye' },
                 { item: 'naturesaura:token_euphoria' },
                 { item: 'naturesaura:token_rage' },
-                { tag: 'forge:ingots/infused_iron' },
+                { item: 'atum:ptah_godshard' },
                 { item: 'naturesaura:token_grief' },
                 { item: 'naturesaura:token_terror' }
             ],
             output: { item: 'naturesaura:generator_limit_remover' },
             mana: 2000000,
             fromColor: parseInt('0xFF9900'),
-            toColor: parseInt('0x00FF1A')
+            toColor: parseInt('0x00FF1A'),
+            id: `${id_prefix}generator_limit_remover`
+        },
+        {
+            inputs: [
+                { item: 'betterendforge:silk_fiber' },
+                { item: 'botania:mana_pearl' },
+                { tag: 'forge:ingots/sky' },
+                { item: 'betterendforge:mossy_glowshroom_hymenophore' },
+                { tag: 'forge:gems/mana_diamond' },
+                { tag: 'forge:ingots/starmetal' }
+            ],
+            output: { item: 'kubejs:celestial_mycelium_filaments' },
+            mana: 6000000,
+            fromColor: parseInt('0xE6E9ED'),
+            toColor: parseInt('0x7CB3FC'),
+            id: `${id_prefix}celestial_mycelial_filaments`
         }
     ];
 

@@ -420,7 +420,7 @@ onEvent('ponder.registry', (event) => {
                 scene.world().modifyTileNBT(
                     tank1,
                     {
-                        tank: { FluidName: 'minecraft:lava', Amount: 100 }
+                        tank: { FluidName: 'minecraft:lava', Amount: 1000 }
                     },
                     true
                 );

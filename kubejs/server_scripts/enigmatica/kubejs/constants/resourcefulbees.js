@@ -3,22 +3,11 @@
 // Items added here will get the 'valid_apiary' tag, and be usable as Apiary multiblock walls.
 // This is in addition to all blocks that have collision.
 const validApiaryBlocks = [
-    'botania:bifrost_pane',
-    'botania:bifrost_perm',
-    'botania:elf_glass_pane',
-    'botania:mana_glass_pane',
-    'botania:elf_glass',
-    'botania:mana_glass',
-
     'glassential:glass_dark',
     'glassential:glass_dark_ethereal',
     'glassential:glass_ethereal',
     'glassential:glass_light',
-    'glassential:glass_redstone',
-
-    /mcwwindows:/,
-
-    /elevatorid/
+    'glassential:glass_redstone'
 ];
 
 const honeyVarieties = [
@@ -51,7 +40,9 @@ const honeyVarieties = [
     'resourcefulbees:illuminating_honey',
     'resourcefulbees:rocky_honey',
     'resourcefulbees:meaty_honey',
-    'resourcefulbees:rocket_honey'
+    'resourcefulbees:rocket_honey',
+    'resourcefulbees:mana_honey',
+    'resourcefulbees:otherworldly_honey'
 ];
 
 const combVariants = [
@@ -124,5 +115,13 @@ const combVariants = [
     'blitz',
     'blizz',
     'direbee20',
-    'generikbee'
+    'generikbee',
+    'otherworldly',
+    'carbee',
+    'dusty_mummbee',
+    'brutish_zombee',
+    'shepherd',
+    'clogged',
+    'regal',
+    'frosty'
 ];

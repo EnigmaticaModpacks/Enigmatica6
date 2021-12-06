@@ -22,6 +22,7 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations": [
             {
                 "type": "BLOCK",
@@ -42,7 +43,7 @@
         "secondaryOutputCount": 1,
 
         "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
+        "bottleOutputWeight": 0.4,
         "bottleOutputCount": 1,
 
         "mainInputCount": 1
@@ -50,7 +51,7 @@
     "SpawnData": {
         "canSpawnInWorld": true,
         "spawnWeight": 12,
-        "biomeWhitelist": "tag:BEACH,SANDY",
+        "biomeWhitelist": "tag:BEACH,SANDY,ATUM",
         "biomeBlacklist": "tag:NETHER,END,OCEAN",
         "minGroupSize": 2,
         "maxGroupSize": 3,

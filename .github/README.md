@@ -6,10 +6,9 @@ This is the official repository and issue-tracker for the modpack Enigmatica 6, 
 
 -   [Testing](#testing)
 -   [Setup](#setup)
-    -   [MultiMC (Windows/Mac/Linux)](#multimc-linux--windows--mac)
     -   [CurseForge App (Windows/Mac)](#curseforge-app-windows--mac)
+    -   [MultiMC (Windows/Mac/Linux)](#multimc-linux--windows--mac)
 -   [Server Automation](#server-automation)
--   [Server Automation with Docker](#server-automation-with-docker)
 -   [Links](#links)
 
 <hr></hr>
@@ -86,6 +85,7 @@ _Note: `.bat` files are for Windows, `.sh` are for Mac / Linux._
 2. Open the `automation` folder.
 3. Run the script `InstanceSyncSetup`.
 4. Run the script `update-server`.
+5. The script `start-automated-server` is now available in the root folder - Run it to start the server.
 
 Re-run the script `update-server` whenever you want to update to a new modpack version.
 

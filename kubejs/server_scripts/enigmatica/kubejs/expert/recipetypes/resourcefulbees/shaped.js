@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'resourcefulbees:apiary_breeder',
             pattern: ['ACA', 'DBD', 'ACA'],
@@ -93,14 +93,33 @@ onEvent('recipes', (event) => {
                 C: 'naturesaura:gold_powder'
             },
             id: 'resourcefulbees:t1_hive_upgrade'
+        },
+        {
+            output: 'resourcefulbees:honey_generator',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: 'ars_nouveau:magic_clay',
+                C: 'naturesaura:token_joy',
+                D: '#resourcefulbees:resourceful_honeycomb',
+                E: 'resourcefulbees:wooden_honey_tank'
+            },
+            id: 'resourcefulbees:honey_generator'
+        },
+        {
+            output: 'resourcefulbees:honey_congealer',
+            pattern: ['AAA', 'ABA', 'CDC'],
+            key: {
+                A: '#forge:glass_panes/colorless',
+                B: 'resourcefulbees:wax',
+                C: 'minecraft:smooth_stone',
+                D: 'minecraft:packed_ice'
+            },
+            id: 'resourcefulbees:honey_congealer'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

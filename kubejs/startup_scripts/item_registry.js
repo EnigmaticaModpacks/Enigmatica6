@@ -1,5 +1,6 @@
 onEvent('item.registry', (event) => {
     const generalItems = [
+        'common_lootbox',
         'rare_lootbox',
         'epic_lootbox',
         'legendary_lootbox',
@@ -25,13 +26,31 @@ onEvent('item.registry', (event) => {
         'superheated_steel_ingot',
         'hot_compressed_iron_ingot',
         'dimensional_storage_crystal',
-        'spirit_heat_exchanger',
-        'amadron_survey_tools'
+        'spirit_entropic_gateway',
+        'amadron_survey_tools',
+        'basalt_powder',
+        'coke_brick_blend',
+        'coke_brick',
+        'blast_brick_blend',
+        'blast_brick',
+        'red_nether_brick',
+        'ground_meat',
+        'memory_basic_empty',
+        'memory_basic_filled',
+        'memory_advanced_empty',
+        'memory_advanced_filled',
+        'memory_elite_empty',
+        'memory_elite_filled',
+        'memory_ultimate_empty',
+        'memory_ultimate_filled',
+        'scented_stick',
+        'celestial_mycelium_filaments'
     ];
 
     const ritualDummies = [
-        'craft_spirit_heat_exchanger',
+        'summon_pink_wither',
         'summon_pharaoh',
+        'craft_spirit_entropic_gateway',
         'craft_magical_feathers',
         'craft_magicfeather',
         'craft_soulsword',
@@ -40,10 +59,70 @@ onEvent('item.registry', (event) => {
         'craft_soulshovel',
         'craft_soulscythe',
         'craft_attunement_altar',
-        'craft_mana_collector'
+        'craft_mana_collector',
+        'craft_logic_director',
+        'craft_robit',
+        'craft_feeding_upgrade',
+        'craft_advanced_feeding_upgrade',
+        'craft_auto_smelting_upgrade',
+        'craft_pump_upgrade',
+        'craft_advanced_pump_upgrade',
+        'craft_xp_pump_upgrade',
+        'craft_compacting_upgrade',
+        'craft_advanced_compacting_upgrade',
+        'craft_tool_swapper_upgrade',
+        'craft_advanced_tool_swapper_upgrade',
+        'craft_refill_upgrade',
+        'craft_otherworldly_honey_bottle',
+        'craft_mycelial_netherstar',
+        'craft_mycelial_halitosis',
+        'craft_mycelial_meatallurgic',
+        'craft_mycelial_potion',
+        'craft_mycelial_magma',
+        'craft_mycelial_slimey',
+        'craft_mycelial_crimed',
+        'craft_mycelial_ender',
+        'craft_mycelial_explosive',
+        'craft_mycelial_disenchantment',
+        'craft_mycelial_rocket',
+        'craft_mycelial_death',
+        'craft_mycelial_frosty',
+        'craft_mycelial_culinary',
+        'craft_mycelial_pink',
+        'craft_mycelial_furnace',
+        'craft_glyph_sentientharm'
     ];
 
-    const assemblyTableItems = [
+    const reusableItemTextures = [
+        { name: 'medium_machinery_schematics', texture: 'blueprint' },
+        { name: 'heavy_machinery_schematics', texture: 'blueprint' },
+
+        { name: 'machine_speed_augment_mk2', texture: 'machine_speed_augment' },
+        { name: 'machine_speed_augment_mk3', texture: 'machine_speed_augment' },
+        { name: 'machine_speed_augment_mk4', texture: 'machine_speed_augment' },
+
+        { name: 'dynamo_output_augment_mk2', texture: 'dynamo_output_augment' },
+        { name: 'dynamo_output_augment_mk3', texture: 'dynamo_output_augment' },
+        { name: 'dynamo_output_augment_mk4', texture: 'dynamo_output_augment' },
+
+        { name: 'dynamo_fuel_augment_mk2', texture: 'dynamo_fuel_augment' },
+        { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
+        { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
+
+        { name: 'engineers_school_project', texture: 'packing_crate_gray' },
+        { name: 'foundation_materials', texture: 'packing_crate_red' },
+        { name: 'construction_tools', texture: 'packing_crate_yellow' },
+        { name: 'landscaping_materials', texture: 'packing_crate_lime' },
+        { name: 'engineering_student_supplies', texture: 'packing_crate_blue' },
+        { name: 'building_materials', texture: 'packing_crate_orange' },
+
+        { name: 'engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
+        { name: 'computer_package', texture: 'advanced_packing_crate_green' },
+        { name: 'fluid_drill_package', texture: 'advanced_packing_crate_purple' },
+
+        { name: 'basic_memory_package', texture: 'assembly_package_filled' },
+        { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
+
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
@@ -129,7 +208,17 @@ onEvent('item.registry', (event) => {
         event.create(item).type('occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/pentacle');
     });
 
-    assemblyTableItems.forEach((item) => {
+    reusableItemTextures.forEach((item) => {
         event.create(item.name).group('KubeJS').texture(`kubejs:item/${item.texture}`);
     });
+
+    // Custom Foods
+    event
+        .create('meat_ingot')
+        .group('KubeJS')
+        .texture('kubejs:item/meat_ingot')
+        .food((food) => {
+            food.hunger(8).saturation(0.5).effect('upgrade_aquatic:vibing', 2400, 1, 1.0);
+        })
+        .displayName('Meat Ingot');
 });

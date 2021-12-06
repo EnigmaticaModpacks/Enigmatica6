@@ -176,9 +176,14 @@ const itemsToHide = [
     'emendatusenigmatica:molten_utherium_bucket',
     'emendatusenigmatica:molten_regalium_bucket',
     'emendatusenigmatica:molten_iesnium_bucket',
+    /iridium/,
+    /cast_iron/,
+    /peridot/,
 
     'environmental:cherry_pie',
     'environmental:apple_pie',
+
+    'farmersdelight:fried_egg',
 
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
@@ -264,10 +269,7 @@ const itemsToHide = [
 
     'supplementaries:pedestal',
     'supplementaries:crank',
-    'supplementaries:cog_block',
-    'supplementaries:redstone_illuminator',
     'supplementaries:turn_table',
-    'supplementaries:firefly_jar',
     'supplementaries:stone_lamp',
     'supplementaries:sack',
     'supplementaries:blackboard',
@@ -373,7 +375,11 @@ ee_types.forEach((type) => {
         `emendatusenigmatica:lapis_${type}`,
         `emendatusenigmatica:emerald_${type}`,
         `emendatusenigmatica:diamond_${type}`,
-        `emendatusenigmatica:coal_${type}`
+        `emendatusenigmatica:coal_${type}`,
+        `emendatusenigmatica:sapphire_${type}`,
+        `emendatusenigmatica:ruby_${type}`,
+        `emendatusenigmatica:iridium_${type}`,
+        `emendatusenigmatica:peridot_${type}`
     );
 });
 
@@ -451,6 +457,8 @@ const recipesToHide = [
             'botania:mana_spreader',
             'botania:elven_spreader',
             'botania:gaia_spreader',
+            'botania:fel_pumpkin',
+            'botania:blood_pendant',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
@@ -466,6 +474,8 @@ const recipesToHide = [
             'naturesaura:gold_fiber',
             'naturesaura:gold_brick',
             'naturesaura:generator_limit_remover',
+            'naturesaura:shockwave_creator',
+            'naturesaura:death_ring',
 
             'pneumaticcraft:air_compressor',
             'pneumaticcraft:advanced_air_compressor',
@@ -496,7 +506,7 @@ const recipesToHide = [
         recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
     },
     {
-        category: 'botania:mana_pools',
+        category: 'botania:mana_pool',
         recipes_by_id: ['botania:mana_infusion/mana_powder_dust', 'botania:mana_infusion/mana_powder_dye']
     },
     {
@@ -635,11 +645,14 @@ const disabledItems = [
     'thermal:potato_block',
     'thermal:sugar_cane_block',
     'thermal:apple_block',
+
     'simplefarming:raw_bacon',
     'simplefarming:cooked_bacon',
     'simplefarming:cooked_egg',
     'simplefarming:noodles',
-    'simplefarming:chocolate'
+    'simplefarming:chocolate',
+
+    'storagedrawers:conversion_upgrade'
 ];
 
 const materialsToUnify = [
@@ -721,4 +734,30 @@ const materialsToUnify = [
     'niotic',
     'spirited',
     'nitro'
+];
+
+const craftedBees = [
+    'bloody',
+    'elven',
+    'mana',
+    'starry',
+    'terrestrial',
+    'enderslime',
+    'ichor',
+    'skyslime',
+    'cobalt',
+    'industrious',
+    'pcbee',
+    'otherworldly',
+    'carbee',
+    'dusty_mummbee',
+    'brass',
+    'bronze',
+    'constantan',
+    'invar',
+    'steel',
+    'lumium',
+    'signalum',
+    'electrum',
+    'enderium'
 ];

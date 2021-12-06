@@ -133,5 +133,37 @@
 				stage: "red_chalk"
 			}]
 		}
+		{
+			x: -10.0d
+			y: -3.5d
+			id: "57A0CCE04931D4C4"
+			tasks: [{
+				id: "419C023D60CDB890"
+				type: "item"
+				item: "kubejs:medium_machinery_schematics"
+			}]
+			rewards: [{
+				id: "12961819A6E04E7F"
+				type: "gamestage"
+				auto: "invisible"
+				stage: "medium_machinery_schematics"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -3.5d
+			id: "73317AB5A4FE3FDE"
+			tasks: [{
+				id: "6A0EACB8797C11D0"
+				type: "item"
+				item: "kubejs:heavy_machinery_schematics"
+			}]
+			rewards: [{
+				id: "11884A83C06080A0"
+				type: "gamestage"
+				auto: "invisible"
+				stage: "heavy_machinery_schematics"
+			}]
+		}
 	]
 }

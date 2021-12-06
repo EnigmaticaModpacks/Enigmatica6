@@ -638,7 +638,7 @@ const treeRegistry = [
                 trunk: 'betterendforge:pythadendron_log',
                 leaf: 'betterendforge:pythadendron_leaves',
                 substrate: 'chorus_nylium',
-                sap: 'integrateddynamics:liquid_chorus',
+                sap: 'tconstruct:ender_slime',
                 rate: { living: 25, dead: 4 }
             },
             {
@@ -839,7 +839,7 @@ const treeRegistry = [
                 leaf: 'tconstruct:ender_slime_leaves',
                 fruit: 'tconstruct:ender_slime_ball',
                 substrate: 'slimy_dirt',
-                sap: 'tconstruct:ender_slime',
+                sap: 'tconstruct:earth_slime',
                 rate: { living: 25, dead: 4 }
             },
             {
@@ -1076,6 +1076,7 @@ const treeRegistry = [
                 sapling: 'minecraft:crimson_fungus',
                 trunk: 'minecraft:crimson_stem',
                 leaf: 'minecraft:nether_wart_block',
+                extraDecoration: 'minecraft:shroomlight',
                 substrate: 'crimson_nylium'
             },
             {
@@ -1088,6 +1089,7 @@ const treeRegistry = [
                 sapling: 'minecraft:warped_fungus',
                 trunk: 'minecraft:warped_stem',
                 leaf: 'minecraft:warped_wart_block',
+                extraDecoration: 'minecraft:shroomlight',
                 substrate: 'warped_nylium'
             },
             {

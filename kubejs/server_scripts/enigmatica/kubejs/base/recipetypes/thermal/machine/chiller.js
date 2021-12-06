@@ -3,18 +3,6 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            inputs: [Fluid.of('integrateddynamics:menril_resin', 1000)],
-            output: Item.of('integrateddynamics:crystalized_menril_block', 1),
-            energy: 4000,
-            id: `${id_prefix}crystalized_menril_block`
-        },
-        {
-            inputs: [Fluid.of('integrateddynamics:liquid_chorus', 1000)],
-            output: Item.of('integrateddynamics:crystalized_chorus_block', 1),
-            energy: 4000,
-            id: `${id_prefix}crystalized_chorus_block`
-        },
-        {
             inputs: [Fluid.of('tconstruct:molten_clay', 144), 'tconstruct:ingot_cast'],
             output: Item.of('minecraft:brick', 1),
             energy: 5000,

@@ -3,9 +3,6 @@
 [blocks]
 
 	[blocks.globe]
-		#chanche of finding a globe in a shipwreck treasure chest.
-		#Range: 0.0 ~ 1.0
-		shipwreck_treasure_chance = 0.25
 		#how many globe trades to give to the wandering trader. This will effectively increase the chance of him having a globe trader. Increase this if you have other mods that add stuff to that trader
 		#Range: 0 ~ 50
 		chance = 2
@@ -14,6 +11,8 @@
 		#Maximum block range
 		#Range: 0 ~ 100000000
 		range = 64
+		#Enable/disable speaker block narrator mode
+		narrator_enabled = true
 
 	[blocks.bellows]
 		#bellows pushes air following this equation: 
@@ -307,6 +306,10 @@
 		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
 		#Range: 0.0 ~ 5.0
 		enchanted_book_power = 1.334
+		#Allow all books to be placed both vertically and horizontally
+		mixed_books = false
+		#Allows written books to be placeable (will need shift clicking)
+		written_books = false
 
 [items]
 
@@ -353,4 +356,9 @@
 		#Do bombs break blocks like tnt?
 		#Allowed Values: ALL, WEAK, NONE
 		break_blocks = "WEAK"
+
+#General settings
+[general]
+	#Turn this on to disable any interaction on blocks placed by other players. This affects item shelves, signs, flower pots, and boards. Useful for protected servers. Note that it will affect only blocks placed after this is turned on and such blocks will keep being protected after this option is disabled
+	server_protection = false
 

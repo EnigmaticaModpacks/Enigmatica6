@@ -21,7 +21,6 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.id;
-        event.shapeless(recipe.output, recipe.inputs);
+        event.shapeless(recipe.output, recipe.inputs).id(recipe.id);
     });
 });

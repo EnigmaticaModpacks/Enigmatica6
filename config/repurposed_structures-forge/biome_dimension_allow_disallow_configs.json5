@@ -26,7 +26,7 @@
 // RS's dungeons and wells identifiers can be found here on GitHub:
 //  https://github.com/TelepathicGrunt/RepurposedStructures/blob/27c8c23d5b6ee1ba1f894df874d62e5982d39fd5/src/main/java/com/telepathicgrunt/repurposedstructures/modinit/RSConfiguredFeatures.java#L251-L273
   "disallowedDimensions": {
-    "all": "the_bumblezone:the_bumblezone, twilightforest:twilightforest, undergarden:undergarden, the_midnight:the_midnight, advancedrocketry:space, theabyss:.+, lotr:middle_earth",
+    "all": "the_bumblezone:the_bumblezone, twilightforest:twilightforest, undergarden:undergarden, the_midnight:the_midnight, advancedrocketry:space, theabyss:.+, lotr:middle_earth, thebeginning:.+",
     "repurposed_structures:village_badlands": "aoa3:barathos",
     "repurposed_structures:outpost_badlands": "aoa3:barathos",
     "repurposed_structures:well_badlands": "aoa3:barathos",
@@ -106,7 +106,12 @@
 // All of RS's structure identifiers can be found by doing "/locate" command in game.
 // RS's dungeons and wells identifiers can be found here on GitHub:
 //  https://github.com/TelepathicGrunt/RepurposedStructures/blob/27c8c23d5b6ee1ba1f894df874d62e5982d39fd5/src/main/java/com/telepathicgrunt/repurposedstructures/modinit/RSConfiguredFeatures.java#L251-L273
-  "disallowedBiomes": {},
+  "disallowedBiomes": {
+    "repurposed_structures:village_oak": "vampirism:vampire_forest",
+    "repurposed_structures:witch_hut_oak": "vampirism:vampire_forest",
+    "repurposed_structures:outpost_oak": "vampirism:vampire_forest",
+    "repurposed_structures:well_forest": "vampirism:vampire_forest"
+  },
   //
 
 
@@ -148,5 +153,5 @@
 
 
 // for internal use only. Do not change this.
-  "configVersion": 4
+  "configVersion": 6
 }

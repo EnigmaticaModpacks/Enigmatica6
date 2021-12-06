@@ -22,6 +22,7 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations": [
             {
                 "type": "BLOCK",
@@ -42,14 +43,14 @@
         "secondaryOutputCount": 2,
 
         "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
+        "bottleOutputWeight": 0.8,
         "bottleOutputCount": 1,
 
         "mainInputCount": 1
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:SPOOKY,DEAD,RARE",
+        "biomeWhitelist": "tag:SPOOKY,DEAD,RARE,NETHER",
         "biomeBlacklist": "tag:END,OCEAN",
         "lightLevel": "ANY",
         "minGroupSize": 2,

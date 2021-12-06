@@ -38,3 +38,65 @@
 		#Remove the squid's random movement pathfinder. This will cause squid to swim around randomly.
 		remove_random_move = false
 
+	#Cow
+	[entity.cow]
+		#Remove the cow's float AI task. This causes cows to no longer swim in water.
+		remove_float = false
+		#Remove the cow's panic AI task. This causes cows to no longer run around after being hit, or search water to extinguish themselves.
+		remove_panic = false
+		#Remove the cow's breed AI task. This causes cows to be unable to breed to create offspring.
+		remove_breed = false
+		#Remove the cow's tempt AI task. This causes cows to no longer follow the player if they're holding an item they like.
+		remove_tempt = false
+		#Remove the cow's follow parent AI task. This causes baby cows to no longer follow their parents.
+		remove_follow_parent = false
+		#Remove the cow's random stroll AI task. This causes cows to no longer walk around randomly.
+		remove_stroll = false
+
+	#Chicken
+	[entity.chicken]
+		#Remove the chicken's float AI task. This causes chickens to no longer swim in water.
+		remove_float = false
+		#Remove the chicken's panic AI task. This causes chickens to no longer run around after being hit, or search water to extinguish themselves.
+		remove_panic = false
+		#Remove the chicken's breed AI task. This causes chickens to be unable to breed to create offspring.
+		remove_breed = false
+		#Remove the chicken's tempt AI task. This causes chickens to no longer follow the player if they're holding an item they like.
+		remove_tempt = false
+		#Remove the chicken's follow parent AI task. This causes baby chickens to no longer follow their parents.
+		remove_follow_parent = false
+		#Remove the chicken's random stroll AI task. This causes chickens to no longer walk around randomly.
+		remove_stroll = false
+
+	#Pig
+	[entity.pig]
+		#Remove the pig's float AI task. This causes pigs to no longer swim in water.
+		remove_float = false
+		#Remove the pig's panic AI task. This causes pigs to no longer run around after being hit, or search water to extinguish themselves.
+		remove_panic = false
+		#Remove the pig's breed AI task. This causes pigs to be unable to breed to create offspring.
+		remove_breed = false
+		#Remove the pig's tempt AI task. This causes pigs to no longer follow the player if they're holding an item they like.
+		remove_tempt = false
+		#Remove the pig's follow parent AI task. This causes baby pigs to no longer follow their parents.
+		remove_follow_parent = false
+		#Remove the pig's random stroll AI task. This causes pigs to no longer walk around randomly.
+		remove_stroll = false
+
+	#Sheep
+	[entity.sheep]
+		#Remove the sheep's float AI task. This causes sheep to no longer swim in water.
+		remove_float = false
+		#Remove the sheep's panic AI task. This causes sheep to no longer run around after being hit, or search water to extinguish themselves.
+		remove_panic = false
+		#Remove the sheep's breed AI task. This causes sheep to be unable to breed to create offspring.
+		remove_breed = false
+		#Remove the sheep's tempt AI task. This causes sheep to no longer follow the player if they're holding an item they like.
+		remove_tempt = false
+		#Remove the sheep's follow parent AI task. This causes baby sheep to no longer follow their parents.
+		remove_follow_parent = false
+		#Remove the sheep's random stroll AI task. This causes sheep to no longer walk around randomly.
+		remove_stroll = false
+		#Remove the sheep's eat block AI task. This causes sheep to no longer eat grass, and thus be unable to regenerate their wool.
+		remove_eat_block = false
+

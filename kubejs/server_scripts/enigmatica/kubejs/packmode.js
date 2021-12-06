@@ -1,5 +1,6 @@
 //priority: 1004
 setMode = (player) => {
+    console.log('setting mode for player: ' + player);
     if (global.packmode == 'expert') {
         player.data.ftbquests.complete('0000000000000FEB');
     } else {
@@ -10,7 +11,6 @@ setMode = (player) => {
 onEvent('server.datapack.high_priority', (event) => {
     if (event.server) {
         event.server.players.forEach((player) => {
-            console.log('setting mode for player: ' + player);
             setMode(player);
         });
     }
@@ -25,6 +25,7 @@ let config = JsonIO.read(configName);
 if (!config || !config.mode) {
     JsonIO.write(configName, defaultConfig);
     console.log(`Created new ${configName}`);
+    config = defaultConfig;
 }
 if (config.mode == 'none') {
     JsonIO.write(configName, defaultConfig);

@@ -7,14 +7,14 @@
 	"Use Fast Worldgen" = false
 	"Enable 'q' Button" = false
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableGui", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsRequester", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsStorage", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsProvider", "me.desht.modularrouters.client.gui.filter.GuiFilterScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.MechanicalCentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeMultiblockScreen", "com.refinedmods.refinedstorage.screen.FilterScreen", "slimeknights.tconstruct.tables.client.inventory.table.CraftingStationScreen", "slimeknights.tconstruct.tables.client.inventory.TinkerChestScreen", "slimeknights.tconstruct.smeltery.client.inventory.HeatingStructureScreen", "team.chisel.client.gui.GuiChisel", "team.chisel.client.gui.GuiHitechChisel", "me.desht.modularrouters.client.gui.filter.GuiBulkItemFilter"]
+	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableGui", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsRequester", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsStorage", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsProvider", "me.desht.modularrouters.client.gui.filter.GuiFilterScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.MechanicalCentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeMultiblockScreen", "com.refinedmods.refinedstorage.screen.FilterScreen", "slimeknights.tconstruct.tables.client.inventory.table.CraftingStationScreen", "slimeknights.tconstruct.tables.client.inventory.TinkerChestScreen", "slimeknights.tconstruct.smeltery.client.inventory.HeatingStructureScreen", "team.chisel.client.gui.GuiChisel", "team.chisel.client.gui.GuiHitechChisel", "me.desht.modularrouters.client.gui.filter.GuiBulkItemFilter", "link.infra.demagnetize.blocks.DemagnetizerContainer", "com.simibubi.create.content.logistics.block.inventories.AdjustableCrateScreen"]
 	"Use Anti Overlap" = true
 	#Enables quark network profiling features. Do not enable this unless requested to.
 	"Enable Network Profiling" = false
 	#Quark replaces the Piston logic to allow for its piston features to work. If you're having troubles, try turning this off.
 	"Use Piston Logic Replacement" = true
 	#Set to true if you need to find the class name for a screen that's causing problems
-	"Print Screen Classnames" = true
+	"Print Screen Classnames" = false
 	#Blocks that Quark should treat as Shulker Boxes.
 	"Shulker Boxes" = ["minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
 	#Set to true to enable a system that debugs quark's worldgen features. This should ONLY be used if you're asked to by a dev.
@@ -224,6 +224,9 @@
 	[building.item_frames]
 		"Glass Item Frames Update Maps" = true
 
+	[building.gold_bars]
+		"Generate In Nether Fortress" = true
+
 [management]
 	"Chests In Boats" = true
 	"Inventory Sorting" = false
@@ -258,6 +261,7 @@
 	Trowel = true
 	Abacus = true
 	"Ambient Discs" = true
+	"Endermosh Music Disc" = true
 
 	[tools.trowel]
 		#Amount of blocks placed is this value + 1.
@@ -343,6 +347,12 @@
 
 	[tools.ambient_discs]
 		"Drop On Spider Kill" = true
+
+	[tools.endermosh_music_disc]
+		"Play Endermosh During Enderdragon Fight" = false
+		"Add To End City Loot" = true
+		"Loot Weight" = 5
+		"Loot Quality" = 1
 
 [tweaks]
 	"Armed Armor Stands" = true
@@ -860,6 +870,7 @@
 				"Is Blacklist" = false
 
 	[world.blossom_trees]
+		"Drop Leaf Particles" = true
 
 		[world.blossom_trees.orange]
 			Rarity = 200
@@ -1696,6 +1707,12 @@
 
 	[mobs.toretoise]
 		"Max Y Level" = 32
+		#The number of ticks from mining a tortoise until feeding it could cause it to regrow.
+		"Cooldown Ticks" = 1200
+		#The items that can be fed to toretoises to make them regrow ores.
+		Foods = ["quark:root_item", "minecraft:cactus"]
+		#Feeding a toretoise after cooldown will regrow them with a one-in-this-number chance. Set to 1 to always regrow, or 0 to disable.
+		"Regrow Chance" = 3
 
 		[mobs.toretoise.spawn_config]
 			#Allowed values: (0,)
@@ -1893,6 +1910,7 @@
 		"Enable Shiny Rabbit" = true
 		"Enable L G B T Bees" = true
 		"Enable Cow" = true
+		"Enable Shiny Dolphin" = true
 
 	[client.improved_tooltips]
 		"Shulker Box Require Shift" = false
@@ -1932,6 +1950,8 @@
 	"Narrator Readout" = false
 	"Overlay Shader" = false
 	Shiba = false
+	Pallet = false
+	"Microcrafting Helper" = false
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
@@ -1999,6 +2019,7 @@
 	[oddities.totem_of_holding]
 		#Set this to false to remove the behaviour where totems destroy themselves if the player dies again.
 		"Dark Souls Mode" = false
+		#Totem will always spawn if the player killer is himself.
 		"Spawn Totem on PVP Kill" = true
 		#Set this to true to make it so that if a totem is destroyed, the items it holds are destroyed alongside it rather than dropped
 		"Destroy Lost Items" = false
@@ -2064,6 +2085,7 @@
 		"Extra Chance Per Looting" = 0.5
 		#Set this to true to allow the backpacks to be unequipped even with items in them
 		"Super Op Mode" = false
+		"Items In Backpack Tick" = true
 
 	[oddities.pipes]
 		#Set to 0 if you don't want pipes to have a max amount of items

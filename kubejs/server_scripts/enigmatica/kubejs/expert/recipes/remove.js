@@ -24,8 +24,13 @@ onEvent('recipes', (event) => {
         /bloodmagic:alchemytable\/melee_damage_anointment/,
 
         'botania:mana_infusion/mana_diamond_block',
+        'byg:compat/create/black_sand_from_crushing',
 
+        /compactmachines:machine_/,
         /create:pressing\/\w*_ingot/,
+
+        /dankstorage:\w_to_\w/,
+        'dankstorage:dock',
 
         'darkutils:crafting/rune_damage_player',
         'darkutils:crafting/blank_plate',
@@ -33,16 +38,48 @@ onEvent('recipes', (event) => {
 
         'farmersdelight:book_from_canvas',
 
+        'fluxnetworks:fluxcontroller',
+
         'immersiveengineering:crafting/component_iron',
         'immersiveengineering:crafting/component_steel',
         'immersiveengineering:crafting/concrete',
         'immersiveengineering:crafting/concrete2',
         'immersiveengineering:mixer/concrete',
         /immersiveengineering:crafting\/plate_/,
+        'immersiveengineering:crafting/cokebrick',
+        'immersiveengineering:crafting/blastbrick',
+        'immersiveengineering:crafting/alloybrick',
+
+        'industrialforegoing:mob_slaughter_factory',
+        /industrialforegoing:mycelial/,
+        'industrialforegoing:dissolution_chamber/mycelial_reactor',
+
+        'integrateddynamics:crafting/cable',
+        'integrateddynamics:crafting/cable_rotated',
+        'integrateddynamics:crafting/energy_battery',
+        'integrateddynamics:crafting/mechanical_drying_basin',
+        'integrateddynamics:crafting/mechanical_squeezer',
+        'integrateddynamics:crafting/drying_basin',
+        'integrateddynamics:crafting/squeezer',
+        'integrateddynamics:crafting/coal_generator',
+        'integrateddynamics:crafting/logic_director',
+        'integrateddynamics:crafting/variable_transformer_output',
+        'integrateddynamics:crafting/variable_transformer_input',
+
+        'mekanism:metallurgic_infusing/alloy/reinforced',
+        'mekanism:metallurgic_infusing/alloy/atomic',
+        'mekanism:enriching/conversion/basalt_to_polished_basalt',
+        'mekanism:processing/refined_glowstone/ingot_to_dust',
+        'mekanism:processing/refined_obsidian/dust/from_ingot',
+        'mekanism:osmium_compressor',
+        /mekanism:factory/,
+        'mekanism:robit',
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
         'minecraft:stick',
+
+        'mininggadgets:upgrade_empty',
 
         'pedestals:ingot_gold_from_upgrades',
         'pedestals:upgrades/breaker2',
@@ -53,6 +90,7 @@ onEvent('recipes', (event) => {
 
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
+        'pneumaticcraft:speed_upgrade',
 
         'powah:crafting/dielectric_paste_2',
         'powah:energizing/blazing_crystal_2',
@@ -62,8 +100,23 @@ onEvent('recipes', (event) => {
         /powah:crafting\/cable_/,
 
         'quark:building/crafting/candles/candle_basic',
+        'quark:building/crafting/red_nether_bricks_util',
 
         'refinedstorage:quartz_enriched_iron',
+
+        'sophisticatedbackpacks:feeding_upgrade',
+        'sophisticatedbackpacks:advanced_feeding_upgrade',
+        'sophisticatedbackpacks:auto_smelting_upgrade',
+        'sophisticatedbackpacks:pump_upgrade',
+        'sophisticatedbackpacks:advanced_pump_upgrade',
+        'sophisticatedbackpacks:xp_pump_upgrade',
+        'sophisticatedbackpacks:compacting_upgrade',
+        'sophisticatedbackpacks:advanced_compacting_upgrade',
+        'sophisticatedbackpacks:tool_swapper_upgrade',
+        'sophisticatedbackpacks:advanced_tool_swapper_upgrade',
+        'sophisticatedbackpacks:refill_upgrade',
+
+        'tanknull:dock',
 
         'tconstruct:smeltery/scorched/scorched_brick',
         'tconstruct:smeltery/scorched/scorched_brick_kiln',
@@ -71,8 +124,13 @@ onEvent('recipes', (event) => {
         'tconstruct:smeltery/seared/seared_brick',
         'tconstruct:smeltery/seared/seared_brick_kiln',
         'tconstruct:tables/book_substitute',
+        'tconstruct:smeltery/melting/metal/netherite/lodestone',
 
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
+
+        'tomeofblood:glyph_sentientharm',
+
+        'waystones:warp_dust',
 
         /create:crafting\/materials\/andesite_alloy/,
         /emendatusenigmatica:alloy_dust/
@@ -144,8 +202,8 @@ onEvent('recipes', (event) => {
         { output: 'botania:mana_spreader', id: 'botania:mana_spreader' },
         { output: 'botania:elven_spreader', id: 'botania:elven_spreader' },
         { output: 'botania:gaia_spreader', id: 'botania:gaia_spreader' },
-        { output: 'botania:mana_powder', id: 'botania:mana_infusion/mana_powder_dust' },
-        { output: 'botania:mana_powder', id: 'botania:mana_infusion/mana_powder_dye' },
+        { output: 'botania:fel_pumpkin', id: 'botania:fel_pumpkin' },
+        { output: 'botania:blood_pendant', id: 'botania:blood_pendant' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
@@ -159,6 +217,8 @@ onEvent('recipes', (event) => {
         { output: 'naturesaura:gold_fiber', id: 'naturesaura:gold_fiber' },
         { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
         { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
+        { output: 'naturesaura:shockwave_creator', id: 'naturesaura:shockwave_creator' },
+        { output: 'naturesaura:death_ring', id: 'naturesaura:death_ring' },
 
         { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
         { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },
@@ -186,6 +246,10 @@ onEvent('recipes', (event) => {
 
     event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' });
     event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'immersiveengineering' });
+    event.remove({ type: 'integrateddynamics:drying_basin' });
+    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
+    event.remove({ type: 'integrateddynamics:squeezer' });
+    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
 
     patchouli_safe_removals.forEach((recipe) => {
         event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);

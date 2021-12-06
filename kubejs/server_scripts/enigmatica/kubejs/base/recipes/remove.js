@@ -21,12 +21,16 @@ onEvent('recipes', (event) => {
     event.remove({ mod: 'ironjetpacks' });
     event.remove({ mod: 'theoneprobe' });
 
+    event.remove({ type: 'thermal:compression_fuel' });
+
     var outputRemovals = [
         'aiotbotania:livingwood_shears',
         'aiotbotania:livingrock_shears',
 
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
+        'byg:mud_block',
+        'byg:mud_ball',
 
         'create:crushing/obsidian',
 
@@ -44,8 +48,11 @@ onEvent('recipes', (event) => {
 
         'morevanillalib:obsidian_shard',
 
-        'simplefarming:raw_bacon',
         'powah:uraninite',
+
+        'simplefarming:raw_bacon',
+
+        'storagedrawers:conversion_upgrade',
 
         'thermal:bamboo_block'
     ];
@@ -62,8 +69,12 @@ onEvent('recipes', (event) => {
         'aquaculture:planks_from_driftwood',
         'aquaculture:red_mushroom_from_red_shrooma',
 
+        'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking',
+
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
+
+        'atum:pumpkin_pie',
 
         'betterendforge:gunpowder_from_sulphur',
 
@@ -72,7 +83,7 @@ onEvent('recipes', (event) => {
 
         'botania:fertilizer_dye',
 
-        'botanypots:crafting/compact_hopper_botany_pot',
+        /botanypots:crafting\/compact_hopper/,
 
         'byg:vermilion_sculk',
         '/byg:\\w+_glass_from_sand/',
@@ -99,6 +110,8 @@ onEvent('recipes', (event) => {
         'farmersdelight:milk_bucket_from_bottles',
 
         'industrialforegoing:laser_drill_ore/niter',
+        'industrialforegoing:laser_drill_ore/iridium',
+        'industrialforegoing:laser_drill_ore/peridot',
         'industrialforegoing:laser_drill_ore/sapphire',
         'industrialforegoing:laser_drill_ore/ruby',
         'industrialforegoing:laser_drill_ore/ancient_debris',
@@ -155,10 +168,22 @@ onEvent('recipes', (event) => {
 
         'quark:building/crafting/tallow_from_block',
 
+        'resourcefulbees:t1_beehive',
+        'resourcefulbees:t2_beehive',
+        'resourcefulbees:t3_beehive',
+        'resourcefulbees:t4_beehive',
+        'resourcefulbees:t1_beehive_nests',
+        'resourcefulbees:t2_beehive_nests',
+        'resourcefulbees:t3_beehive_nests',
+        'resourcefulbees:t4_beehive_nests',
+        'resourcefulbees:t1_apiary_beehive',
+
         'simplefarming:apple_pie',
         'simplefarming:blueberry_pie',
 
         'tconstruct:tools/modifiers/wither_bone_conversion',
+        'tconstruct:tables/tinkers_anvil',
+        'tconstruct:tables/scorched_anvil',
 
         'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
@@ -189,6 +214,8 @@ onEvent('recipes', (event) => {
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
 
+        'quark:building/crafting/compressed/gunpowder_sack',
+
         'simplefarming:candy',
         'simplefarming:raw_chicken_wings',
 
@@ -217,7 +244,9 @@ onEvent('recipes', (event) => {
         /masonry:\w+wall_from_\w+_stonecutting/,
         /masonry:\w+slab_from_\w+_stonecutting/,
         /atum:.*dye$/,
-        /thermal:compat\/\w+\/\w+_ore/
+        /thermal:compat\/\w+\/\w+_ore/,
+        /decorative_blocks:\w+_beam/,
+        /decorative_blocks_abnormals:\w+_beam/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -279,10 +308,6 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'immersiveengineering:cloche' });
 
     event.remove({ type: 'valhelsia_structures:axe_crafting' });
-
-    beamRecipes.forEach((recipe) => {
-        event.remove({ output: recipe.output });
-    });
 
     stonecuttables.forEach((stoneType) => {
         stoneType.stones.forEach((stone) => {
