@@ -1241,7 +1241,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'emendatusenigmatica:molten_enderium',
+                        name: 'tconstruct:molten_enderium',
                         amount: 144
                     },
                     temperature: 1450,
@@ -1371,7 +1371,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'emendatusenigmatica:molten_lumium',
+                        name: 'tconstruct:molten_lumium',
                         amount: 144
                     },
                     temperature: 1354,
@@ -1580,7 +1580,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'emendatusenigmatica:molten_signalum',
+                        name: 'tconstruct:molten_signalum',
                         amount: 144
                     },
                     temperature: 1272,
