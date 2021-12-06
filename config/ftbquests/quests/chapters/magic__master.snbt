@@ -4,7 +4,13 @@
 	order_index: 6
 	filename: "magic__master"
 	title: "Magic - Master"
-	icon: "botania:mana_diamond"
+	icon: {
+		id: "astralsorcery:celestial_crystal"
+		Count: 1b
+		tag: {
+			astralsorcery: { }
+		}
+	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
