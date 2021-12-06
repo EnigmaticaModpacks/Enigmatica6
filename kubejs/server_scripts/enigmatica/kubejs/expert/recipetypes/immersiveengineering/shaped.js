@@ -93,6 +93,79 @@ onEvent('recipes', (event) => {
                 E: 'thermal:energy_cell'
             },
             id: 'immersiveengineering:crafting/circuit_table'
+        },
+        {
+            output: Item.of('2x immersiveengineering:rs_engineering'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'thermal:signalum_glass',
+                B: 'rftoolscontrol:ram_chip',
+                C: 'immersiveengineering:wirecoil_redstone',
+                D: '#forge:sheetmetals/aluminum'
+            },
+            id: 'immersiveengineering:crafting/rs_engineering'
+        },
+        {
+            output: Item.of('2x immersiveengineering:heavy_engineering'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/steel',
+                B: 'immersiveengineering:component_steel',
+                C: 'immersiveengineering:wirecoil_electrum',
+                D: '#forge:sheetmetals/steel'
+            },
+            id: 'immersiveengineering:crafting/heavy_engineering'
+        },
+        {
+            output: Item.of('2x immersiveengineering:light_engineering'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/invar',
+                B: 'immersiveengineering:component_iron',
+                C: 'immersiveengineering:wirecoil_copper',
+                D: '#forge:sheetmetals/aluminum'
+            },
+            id: 'immersiveengineering:crafting/light_engineering'
+        },
+        {
+            output: 'immersiveengineering:capacitor_lv',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'immersiveengineering:connector_lv',
+                C: '#forge:plates/lead',
+                D: 'thermal:fluid_cell',
+                E: {
+                    type: 'pneumaticcraft:fluid',
+                    tag: 'pneumaticcraft:etching_acid',
+                    amount: 1000
+                }
+            },
+            id: 'immersiveengineering:crafting/capacitor_lv'
+        },
+        {
+            output: 'immersiveengineering:capacitor_mv',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'immersiveengineering:connector_mv',
+                C: 'immersiveengineering:capacitor_lv',
+                D: '#forge:plates/lead',
+                E: '#forge:storage_blocks/electrum'
+            },
+            id: 'immersiveengineering:crafting/capacitor_mv'
+        },
+        {
+            output: 'immersiveengineering:capacitor_hv',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'immersiveengineering:connector_hv',
+                C: 'immersiveengineering:capacitor_mv',
+                D: '#forge:plates/lead',
+                E: '#forge:storage_blocks/steel'
+            },
+            id: 'immersiveengineering:crafting/capacitor_hv'
         }
     ];
 
