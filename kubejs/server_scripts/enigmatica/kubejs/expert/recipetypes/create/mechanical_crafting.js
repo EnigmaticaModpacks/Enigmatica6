@@ -595,6 +595,19 @@ onEvent('recipes', (event) => {
                 K: 'byg:soul_shroom_block'
             },
             id: 'industrialforegoing:mycelial_reactor'
+        },
+        {
+            output: 'immersiveengineering:cloche',
+            pattern: [' AAA ', ' ABA ', ' A A ', ' CDC ', 'CEFEC'],
+            key: {
+                A: 'thermal:lumium_glass',
+                B: 'immersiveengineering:electron_tube',
+                C: '#forge:treated_wood',
+                D: '#botanypots:simple_botany_pots',
+                E: 'immersiveengineering:component_steel',
+                F: 'pneumaticcraft:fluid_mixer'
+            },
+            id: 'immersiveengineering:crafting/cloche'
         }
     ];
 

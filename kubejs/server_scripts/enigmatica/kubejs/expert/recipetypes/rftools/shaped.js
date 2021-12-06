@@ -443,6 +443,17 @@ onEvent('recipes', (event) => {
                 E: 'mekanismtools:refined_obsidian_paxel'
             },
             id: 'rftoolsbuilder:shape_card_quarry'
+        },
+        {
+            output: 'rftoolsstorage:storage_scanner',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'fluxnetworks:flux_dust',
+                B: '#xnet:cables',
+                C: 'botania:forest_eye',
+                D: 'xnet:wireless_router'
+            },
+            id: 'rftoolsstorage:storage_scanner'
         }
     ];
 

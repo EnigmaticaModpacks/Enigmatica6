@@ -166,6 +166,77 @@ onEvent('recipes', (event) => {
                 E: '#forge:storage_blocks/steel'
             },
             id: 'immersiveengineering:crafting/capacitor_hv'
+        },
+        {
+            output: 'immersiveengineering:windmill_blade',
+            pattern: ['AA ', 'BBA', 'BB '],
+            key: {
+                A: 'eidolon:polished_planks',
+                B: 'create:sail_frame'
+            },
+            id: 'immersiveengineering:crafting/windmill_blade'
+        },
+        {
+            output: 'immersiveengineering:windmill',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'immersiveengineering:windmill_blade',
+                B: 'create:mechanical_bearing'
+            },
+            id: 'immersiveengineering:crafting/windmill'
+        },
+        {
+            output: 'immersiveengineering:watermill',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'immersiveengineering:waterwheel_segment',
+                B: 'create:mechanical_bearing'
+            },
+            id: 'immersiveengineering:crafting/watermill'
+        },
+        {
+            output: 'immersiveengineering:waterwheel_segment',
+            pattern: [' A ', 'ABA', 'BAB'],
+            key: {
+                A: '#forge:rods/brass',
+                B: 'eidolon:polished_planks'
+            },
+            id: 'immersiveengineering:crafting/waterwheel_segment'
+        },
+        {
+            output: 'immersiveengineering:dynamo',
+            pattern: [' A ', 'BCD', ' A '],
+            key: {
+                A: '#forge:gears/brass',
+                B: 'immersiveengineering:coil_lv',
+                C: 'thermal:machine_frame',
+                D: '#forge:ingots/andesite_alloy'
+            },
+            id: 'immersiveengineering:crafting/dynamo'
+        },
+        {
+            output: 'immersiveengineering:radiator',
+            pattern: ['BBB', 'BAB', 'BCB'],
+            key: {
+                A: '#forge:sheetmetals/steel',
+                B: 'create:fluid_pipe',
+                C: {
+                    type: 'pneumaticcraft:fluid',
+                    fluid: 'minecraft:water',
+                    amount: 1000
+                }
+            },
+            id: 'immersiveengineering:crafting/radiator'
+        },
+        {
+            output: 'immersiveengineering:generator',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: '#forge:sheetmetals/steel',
+                B: 'immersiveengineering:coil_mv',
+                C: 'immersiveengineering:dynamo'
+            },
+            id: 'immersiveengineering:crafting/generator'
         }
     ];
 
