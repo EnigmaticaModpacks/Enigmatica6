@@ -1481,6 +1481,22 @@ onEvent('recipes', (event) => {
             output: 'occultism:wormhole_frame',
             id: 'occultism:crafting/wormhole_frame'
         },
+        {
+            inputs: [
+                'fluxnetworks:flux_dust',
+                'occultism:otherstone_slab',
+                'fluxnetworks:flux_dust',
+                'occultism:otherstone_slab',
+                'occultism:otherstone_slab',
+                'fluxnetworks:flux_dust',
+                'occultism:otherstone_slab',
+                'fluxnetworks:flux_dust'
+            ],
+            reagent: '#forge:gems/mana',
+            sourceCost: 500,
+            output: Item.of('2x occultism:otherstone_tablet'),
+            id: 'occultism:crafting/otherstone_tablet'
+        },
 
         /// Patchouli Removals
         {
