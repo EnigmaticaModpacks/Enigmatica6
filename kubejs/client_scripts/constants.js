@@ -179,8 +179,8 @@ const itemsToHide = [
     /iridium/,
     /cast_iron/,
     /peridot/,
-    /emendatusenigmatica:sapphire/,
-    /emendatusenigmatica:ruby/,
+    /emendatusenigmatica.*sapphire/,
+    /emendatusenigmatica.*ruby/,
 
     'environmental:cherry_pie',
     'environmental:apple_pie',
