@@ -27,6 +27,19 @@ onEvent('recipes', (event) => {
                 E: 'immersiveengineering:fluid_pipe'
             },
             id: 'immersivepetroleum:flarestack'
+        },
+        {
+            output: 'immersivepetroleum:gas_generator',
+            pattern: ['ABA', 'CDE', 'F F'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_red',
+                B: 'thermal:fluid_cell',
+                C: 'immersiveengineering:generator',
+                D: 'immersiveengineering:radiator',
+                E: 'create:propeller',
+                F: '#forge:rods/aluminum'
+            },
+            id: 'immersivepetroleum:gas_generator'
         }
     ];
 

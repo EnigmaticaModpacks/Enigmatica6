@@ -93,6 +93,150 @@ onEvent('recipes', (event) => {
                 E: 'thermal:energy_cell'
             },
             id: 'immersiveengineering:crafting/circuit_table'
+        },
+        {
+            output: Item.of('2x immersiveengineering:rs_engineering'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'thermal:signalum_glass',
+                B: 'rftoolscontrol:ram_chip',
+                C: 'immersiveengineering:wirecoil_redstone',
+                D: '#forge:sheetmetals/aluminum'
+            },
+            id: 'immersiveengineering:crafting/rs_engineering'
+        },
+        {
+            output: Item.of('2x immersiveengineering:heavy_engineering'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/steel',
+                B: 'immersiveengineering:component_steel',
+                C: 'immersiveengineering:wirecoil_electrum',
+                D: '#forge:sheetmetals/steel'
+            },
+            id: 'immersiveengineering:crafting/heavy_engineering'
+        },
+        {
+            output: Item.of('2x immersiveengineering:light_engineering'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/invar',
+                B: 'immersiveengineering:component_iron',
+                C: 'immersiveengineering:wirecoil_copper',
+                D: '#forge:sheetmetals/aluminum'
+            },
+            id: 'immersiveengineering:crafting/light_engineering'
+        },
+        {
+            output: 'immersiveengineering:capacitor_lv',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'immersiveengineering:connector_lv',
+                C: '#forge:plates/lead',
+                D: 'thermal:fluid_cell',
+                E: {
+                    type: 'pneumaticcraft:fluid',
+                    tag: 'pneumaticcraft:etching_acid',
+                    amount: 1000
+                }
+            },
+            id: 'immersiveengineering:crafting/capacitor_lv'
+        },
+        {
+            output: 'immersiveengineering:capacitor_mv',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'immersiveengineering:connector_mv',
+                C: 'immersiveengineering:capacitor_lv',
+                D: '#forge:plates/lead',
+                E: '#forge:storage_blocks/electrum'
+            },
+            id: 'immersiveengineering:crafting/capacitor_mv'
+        },
+        {
+            output: 'immersiveengineering:capacitor_hv',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'immersiveengineering:connector_hv',
+                C: 'immersiveengineering:capacitor_mv',
+                D: '#forge:plates/lead',
+                E: '#forge:storage_blocks/steel'
+            },
+            id: 'immersiveengineering:crafting/capacitor_hv'
+        },
+        {
+            output: 'immersiveengineering:windmill_blade',
+            pattern: ['AA ', 'BBA', 'BB '],
+            key: {
+                A: 'eidolon:polished_planks',
+                B: 'create:sail_frame'
+            },
+            id: 'immersiveengineering:crafting/windmill_blade'
+        },
+        {
+            output: 'immersiveengineering:windmill',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'immersiveengineering:windmill_blade',
+                B: 'create:mechanical_bearing'
+            },
+            id: 'immersiveengineering:crafting/windmill'
+        },
+        {
+            output: 'immersiveengineering:watermill',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'immersiveengineering:waterwheel_segment',
+                B: 'create:mechanical_bearing'
+            },
+            id: 'immersiveengineering:crafting/watermill'
+        },
+        {
+            output: 'immersiveengineering:waterwheel_segment',
+            pattern: [' A ', 'ABA', 'BAB'],
+            key: {
+                A: '#forge:rods/brass',
+                B: 'eidolon:polished_planks'
+            },
+            id: 'immersiveengineering:crafting/waterwheel_segment'
+        },
+        {
+            output: 'immersiveengineering:dynamo',
+            pattern: [' A ', 'BCD', ' A '],
+            key: {
+                A: '#forge:gears/brass',
+                B: 'immersiveengineering:coil_lv',
+                C: 'thermal:machine_frame',
+                D: '#forge:ingots/andesite_alloy'
+            },
+            id: 'immersiveengineering:crafting/dynamo'
+        },
+        {
+            output: 'immersiveengineering:radiator',
+            pattern: ['BBB', 'BAB', 'BCB'],
+            key: {
+                A: '#forge:sheetmetals/steel',
+                B: 'create:fluid_pipe',
+                C: {
+                    type: 'pneumaticcraft:fluid',
+                    fluid: 'minecraft:water',
+                    amount: 1000
+                }
+            },
+            id: 'immersiveengineering:crafting/radiator'
+        },
+        {
+            output: 'immersiveengineering:generator',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: '#forge:sheetmetals/steel',
+                B: 'immersiveengineering:coil_mv',
+                C: 'immersiveengineering:dynamo'
+            },
+            id: 'immersiveengineering:crafting/generator'
         }
     ];
 
