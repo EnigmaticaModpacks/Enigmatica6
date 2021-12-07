@@ -74,6 +74,6 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'dankstorage:upgrade';
-        event.shaped(recipe).id(recipe.id);
+        event.custom(recipe).id(recipe.id);
     });
 });
