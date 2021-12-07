@@ -64,7 +64,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 Item.of('computercraft:computer_normal'),
-                Item.of('computercraft:disk')
+                Item.of('computercraft:disk', '{Color:1118481}')
             ],
             output: {
                 entries: [{ result: { item: 'computercraft:pocket_computer_normal' }, weight: 1 }],
@@ -76,7 +76,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 Item.of('computercraft:computer_advanced'),
-                Item.of('computercraft:disk')
+                Item.of('computercraft:disk', '{Color:1118481}')
             ],
             output: {
                 entries: [{ result: { item: 'computercraft:pocket_computer_advanced' }, weight: 1 }],
