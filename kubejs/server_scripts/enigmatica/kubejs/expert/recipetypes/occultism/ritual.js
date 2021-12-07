@@ -1222,6 +1222,40 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'ars_nouveau:glyph_sentientharm' },
             id: `${id_prefix}glyph_sentientharm`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_turtle_normal' },
+            ingredients: [
+                { item: 'aquaculture:box_turtle' },
+                { item: 'computercraft:computer_normal' },
+                { item: 'create:deployer' },
+                { item: 'minecraft:furnace' },
+                { item: 'mekanism:jetpack' },
+                { item: 'pneumaticcraft:reinforced_chest' }
+            ],
+            result: { item: 'computercraft:turtle_normal' },
+            id: `${id_prefix}turtle_normal`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_turtle_advanced' },
+            ingredients: [
+                { item: 'aquaculture:box_turtle' },
+                { item: 'computercraft:computer_advanced' },
+                { item: 'create:deployer' },
+                { item: 'minecraft:blast_furnace' },
+                { item: 'mekanism:jetpack' },
+                { item: 'pneumaticcraft:reinforced_chest' }
+            ],
+            result: { item: 'computercraft:turtle_advanced' },
+            id: `${id_prefix}turtle_advanced`
         }
     ];
 

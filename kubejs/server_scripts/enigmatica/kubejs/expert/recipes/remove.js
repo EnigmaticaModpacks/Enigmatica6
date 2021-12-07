@@ -26,6 +26,14 @@ onEvent('recipes', (event) => {
         'botania:mana_infusion/mana_diamond_block',
         'byg:compat/create/black_sand_from_crushing',
 
+        'computercraft:computer_advanced_upgrade',
+        'computercraft:turtle_advanced_upgrade',
+        'computercraft:turtle_normal',
+        'computercraft:turtle_advanced',
+        'computercraft:pocket_computer_normal',
+        'computercraft:pocket_computer_advanced',
+        'computercraft:pocket_computer_advanced_upgrade',
+
         /compactmachines:machine_/,
         /create:pressing\/\w*_ingot/,
 
