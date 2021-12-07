@@ -3,6 +3,8 @@ onEvent('jei.hide.items', (event) => {
         return;
     }
     let items = [
+        'advancedperipherals:me_bridge',
+        'advancedperipherals:colony_integrator',
         'darkutils:rune_damage_player',
         /darkutils:export_plate/,
         /integrateddynamics:energy_battery/,
