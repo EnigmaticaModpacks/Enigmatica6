@@ -123,6 +123,13 @@ onEvent('item.registry', (event) => {
         { name: 'basic_memory_package', texture: 'assembly_package_filled' },
         { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
 
+        { name: 'cpu_core_500_package', texture: 'assembly_package_filled' },
+        { name: 'cpu_core_500_assembly', texture: 'assembly_package_processing' },
+        { name: 'cpu_core_1000_package', texture: 'assembly_package_filled' },
+        { name: 'cpu_core_1000_assembly', texture: 'assembly_package_processing' },
+        { name: 'cpu_core_2000_package', texture: 'assembly_package_filled' },
+        { name: 'cpu_core_2000_assembly', texture: 'assembly_package_processing' },
+
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' },

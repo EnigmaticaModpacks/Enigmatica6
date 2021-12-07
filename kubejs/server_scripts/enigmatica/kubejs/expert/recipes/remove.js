@@ -103,6 +103,9 @@ onEvent('recipes', (event) => {
         'quark:building/crafting/red_nether_bricks_util',
 
         'refinedstorage:quartz_enriched_iron',
+        'rftoolscontrol:cpu_core_500',
+        'rftoolscontrol:cpu_core_1000',
+        'rftoolscontrol:cpu_core_2000',
 
         'sophisticatedbackpacks:feeding_upgrade',
         'sophisticatedbackpacks:advanced_feeding_upgrade',
