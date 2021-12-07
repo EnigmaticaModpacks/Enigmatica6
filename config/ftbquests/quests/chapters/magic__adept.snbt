@@ -33,7 +33,8 @@
 		}
 		{
 			x: 2.5d
-			y: 2.0d
+			y: 1.5d
+			description: ["Exceptionally transformative and exceedingly dangerous, Hellfire has been used in the arcane arts since time immemorable. There is no safe way for mere humans to work with it directly, however, though the Spirits of the Otherworld seem to have no difficulties channeling it through a specially prepared forge. "]
 			dependencies: ["2B6914734BC1B9EA"]
 			id: "76E780FECC4F3BA8"
 			tasks: [{
@@ -44,7 +45,12 @@
 		}
 		{
 			x: 3.0d
-			y: 1.0d
+			y: 0.5d
+			description: [
+				"“Not all spirits come willingly. Some find this plane… distasteful. They may still be of use, however, bound into items of power that limit their contact with this place.”"
+				""
+				"– Eziveus The Diligent"
+			]
 			dependencies: ["7BA120BEA495D354"]
 			id: "2B6914734BC1B9EA"
 			tasks: [{
@@ -93,6 +99,11 @@
 			x: -2.5d
 			y: -4.0d
 			shape: "diamond"
+			description: [
+				"“It is wise to direct your anger towards problems, not people; to focus your energies on answers, not excuses.”"
+				""
+				"– Master Gyatso the Serene"
+			]
 			dependencies: [
 				"6A88DD23AB4B2551"
 				"2A45214DF4B8A3A0"
@@ -211,9 +222,9 @@
 		}
 		{
 			x: -2.0d
-			y: 0.5d
+			y: -0.5d
 			description: ["The neophyte believes runes are simply carved symbols; decorative and nothing more. But magical practitioners know the truth; they are carved purposely to channel magical energies to specific purposes. Doing so requires great effort of will. "]
-			dependencies: ["433832B8435B07CB"]
+			dependencies: ["0E6B41A9E8802F67"]
 			id: "46993F7BA43BE3AB"
 			tasks: [
 				{
@@ -226,22 +237,17 @@
 					type: "item"
 					item: "botania:mana_pool"
 				}
+				{
+					id: "34CD855E65A6875F"
+					type: "item"
+					item: "botania:mana_spreader"
+				}
 			]
-		}
-		{
-			x: -2.0d
-			y: -0.5d
-			dependencies: ["0E6B41A9E8802F67"]
-			id: "433832B8435B07CB"
-			tasks: [{
-				id: "0FF95DDF57C92276"
-				type: "item"
-				item: "botania:mana_spreader"
-			}]
 		}
 		{
 			x: 2.0d
 			y: -1.5d
+			description: ["Begin manufacturing rune stones to build the foundations for a stronger Blood Altar. "]
 			dependencies: [
 				"46993F7BA43BE3AB"
 				"0D8649291801C76C"
@@ -255,11 +261,13 @@
 		}
 		{
 			x: 3.0d
-			y: -1.0d
+			y: -1.5d
 			shape: "diamond"
 			description: [
 				""
 				"Knowledge once though lost has turned up in the most unexpected of places: the music of the denizens of the Undergarden. "
+				""
+				"Locate a Stoneborn and trade with them to obtain a sample of their traditional music. "
 			]
 			dependencies: ["4370B0FB1FFF0BBF"]
 			id: "4C82E47AABA7447B"
@@ -311,6 +319,7 @@
 			x: 1.5d
 			y: -4.0d
 			shape: "diamond"
+			description: ["Need a hand? Summon a few assistants to help out around the place. "]
 			dependencies: ["4CEB33C94A160D68"]
 			id: "1B5E9BB425088A6B"
 			tasks: [{
@@ -326,6 +335,7 @@
 			x: 2.0d
 			y: -3.5d
 			shape: "diamond"
+			description: ["Forming a proper slate for advanced inscriptions is a delicate process that adepts spend many hours perfecting.  Even the slightest imperfection can cause a batch to be ruined. "]
 			dependencies: [
 				"2DD9ABCD4AC03D03"
 				"1B5E9BB425088A6B"
@@ -351,9 +361,13 @@
 		}
 		{
 			x: 3.0d
-			y: 0.0d
+			y: -0.5d
 			shape: "diamond"
-			description: ["Music acquired, use it to make bait to summon Swamp Jaw. Defeat it to claim your prize. "]
+			description: [
+				"Music acquired, use it to make bait to summon Swamp Jaw. "
+				""
+				"Defeat the beast to claim a Mossy Tooth. "
+			]
 			dependencies: ["4C82E47AABA7447B"]
 			id: "5602E77D09C84F56"
 			tasks: [{
@@ -366,12 +380,15 @@
 			title: "Blood Altar - Tier 2"
 			icon: "bloodmagic:altar"
 			x: 2.0d
-			y: 0.5d
-			description: ["A stronger receptacle will be required to delve deeper into the secrets of the spirit realm. "]
+			y: 0.0d
+			description: [
+				"A stronger receptacle will be required to delve deeper into the secrets of the spirit realm. "
+				""
+				"What better than the still beating heart of a Zombie Brute bound in bone?"
+			]
 			dependencies: [
 				"5602E77D09C84F56"
 				"43D3D565E295FA5D"
-				"57FFFBB68F2655C1"
 			]
 			id: "7BA120BEA495D354"
 			tasks: [
@@ -389,7 +406,8 @@
 		}
 		{
 			x: 1.0d
-			y: 1.0d
+			y: 0.5d
+			description: ["With little more than Snares in hand, the Adept is set out on the hunt. They either come back mor knowledgeable, or they do not come back at all. "]
 			dependencies: ["7BA120BEA495D354"]
 			id: "358D438E941E3FFE"
 			tasks: [{
@@ -399,8 +417,15 @@
 			}]
 		}
 		{
-			x: -4.0d
+			x: -3.0d
 			y: 0.5d
+			description: [
+				"This world is filled with invisible beings. Watching. Waiting."
+				""
+				"Judging."
+				""
+				"Your actions appear to have pleased one such being. Construct an Offering Table and see what wisdom it will impart upon you. "
+			]
 			dependencies: ["54BD6A448EC80453"]
 			id: "39F1798BD7FDA0EC"
 			tasks: [{
@@ -412,6 +437,7 @@
 		{
 			x: -3.5d
 			y: -1.5d
+			description: ["To properly summon the Wilden Chimera, one must offer tributes claimed from the bodies of each of the lesser Wilden that roam the lands. "]
 			dependencies: ["37E5C854B3C997E6"]
 			id: "638E2FA97CF961F7"
 			tasks: [
@@ -435,6 +461,7 @@
 		{
 			x: -4.0d
 			y: -0.5d
+			description: ["Place down the tablet and let it burn. Toss the remaining tributes atop the pyre and activate the ritual when ready. "]
 			dependencies: ["638E2FA97CF961F7"]
 			id: "54BD6A448EC80453"
 			tasks: [{
@@ -446,6 +473,11 @@
 		{
 			x: -4.0d
 			y: -2.5d
+			description: [
+				"Flip a coin. "
+				""
+				"Will she grant you favor? Or flay you for your insolence?"
+			]
 			dependencies: [
 				"14B74BACBD651D14"
 				"0140C94C9E0BE11B"
@@ -469,6 +501,7 @@
 			x: -3.5d
 			y: -4.0d
 			shape: "diamond"
+			description: ["Though they themselves quite unaware of it, the coins traded by the denizens of Atum hold great arcane potential. Some have theorized that it may be due to a special alloying of nebu within the coins. "]
 			dependencies: ["6A88DD23AB4B2551"]
 			id: "0140C94C9E0BE11B"
 			tasks: [{
@@ -481,6 +514,7 @@
 			x: -4.5d
 			y: -4.0d
 			shape: "diamond"
+			description: ["Oft named Lucky Bees, Quartz bees were kept around the lab for one simple reason: Their crystalline growth tended to change colors when exposed to trace amounts of toxins in the air, allowing observant Alchemists to avoid disaster.  "]
 			dependencies: ["6A88DD23AB4B2551"]
 			id: "749514BCD02A1A51"
 			tasks: [{
@@ -493,6 +527,7 @@
 			x: -4.0d
 			y: -3.5d
 			shape: "diamond"
+			description: ["Many an early Alchemist met their end through a slip of the hand or a slight imperfection in their glassware. It’s no wonder, then, that they quickly developed tinctures to help improve their luck when dealing with dangerous substances. "]
 			dependencies: ["6A88DD23AB4B2551"]
 			id: "14B74BACBD651D14"
 			tasks: [{
@@ -504,6 +539,11 @@
 		{
 			x: -4.5d
 			y: -1.5d
+			description: [
+				"Magic takes its toll, both mentally and physically. Many have succumbed to lesser trials, never even reaching this far. Will the Wilden Chimera prove too great a challenge?"
+				""
+				"Prepare a tablet to summon it. And prepare yourself for the fight to come. "
+			]
 			dependencies: [
 				"54BD6A448EC80453"
 				"37E5C854B3C997E6"
@@ -516,8 +556,9 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -2.0d
 			y: 1.5d
+			description: ["Of course, all knowledge comes at a cost…"]
 			dependencies: [
 				"39F1798BD7FDA0EC"
 				"46993F7BA43BE3AB"
@@ -531,7 +572,12 @@
 		}
 		{
 			x: 1.0d
-			y: 2.0d
+			y: 1.5d
+			description: [
+				"“Your Will shall decide your destiny.”"
+				""
+				"– Charlotte of the Radiant Order"
+			]
 			dependencies: ["358D438E941E3FFE"]
 			id: "4E25D127FFBA7553"
 			tasks: [{
@@ -548,7 +594,12 @@
 		}
 		{
 			x: 3.5d
-			y: 2.0d
+			y: 1.5d
+			description: [
+				"“Open your eyes and then open your eyes again.”"
+				""
+				"– Mistress Weatherwax"
+			]
 			dependencies: ["2B6914734BC1B9EA"]
 			id: "1EF3485CE70E529D"
 			tasks: [{
@@ -565,9 +616,10 @@
 		}
 		{
 			x: 1.0d
-			y: 0.0d
+			y: -0.5d
 			shape: "diamond"
-			dependencies: ["494D1F8ABF9632B2"]
+			description: ["Effective as it may be some practitioners find the practice of sacrificing other beings distasteful. The Adept learns early on to give of their own blood as sacrifice, and to draw upon the earth for healing. "]
+			dependencies: ["7BA120BEA495D354"]
 			id: "57FFFBB68F2655C1"
 			tasks: [{
 				id: "19014A262532EB8F"
