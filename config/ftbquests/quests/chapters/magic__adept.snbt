@@ -34,6 +34,7 @@
 		{
 			x: 2.5d
 			y: 2.0d
+			description: ["Exceptionally transformative and exceedingly dangerous, Hellfire has been used in the arcane arts since time immemorable. There is no safe way for mere humans to work with it directly, however, though the Spirits of the Otherworld seem to have no difficulties channeling it through a specially prepared forge. "]
 			dependencies: ["2B6914734BC1B9EA"]
 			id: "76E780FECC4F3BA8"
 			tasks: [{
@@ -45,6 +46,11 @@
 		{
 			x: 3.0d
 			y: 1.0d
+			description: [
+				"“Not all spirits come willingly. Some find this plane… distasteful. They may still be of use, however, bound into items of power that limit their contact with this place.”"
+				""
+				"– Eziveus The Diligent"
+			]
 			dependencies: ["7BA120BEA495D354"]
 			id: "2B6914734BC1B9EA"
 			tasks: [{
@@ -260,6 +266,8 @@
 			description: [
 				""
 				"Knowledge once though lost has turned up in the most unexpected of places: the music of the denizens of the Undergarden. "
+				""
+				"Locate a Stoneborn and trade with them to obtain a sample of their traditional music. "
 			]
 			dependencies: ["4370B0FB1FFF0BBF"]
 			id: "4C82E47AABA7447B"
@@ -355,7 +363,11 @@
 			x: 3.0d
 			y: 0.0d
 			shape: "diamond"
-			description: ["Music acquired, use it to make bait to summon Swamp Jaw. Defeat it to claim your prize. "]
+			description: [
+				"Music acquired, use it to make bait to summon Swamp Jaw. "
+				""
+				"Defeat the beast to claim a Mossy Tooth. "
+			]
 			dependencies: ["4C82E47AABA7447B"]
 			id: "5602E77D09C84F56"
 			tasks: [{
@@ -369,7 +381,11 @@
 			icon: "bloodmagic:altar"
 			x: 2.0d
 			y: 0.5d
-			description: ["A stronger receptacle will be required to delve deeper into the secrets of the spirit realm. "]
+			description: [
+				"A stronger receptacle will be required to delve deeper into the secrets of the spirit realm. "
+				""
+				"What better than the still beating heart of a Zombie Brute bound in bone?"
+			]
 			dependencies: [
 				"5602E77D09C84F56"
 				"43D3D565E295FA5D"
@@ -551,6 +567,11 @@
 		{
 			x: 3.5d
 			y: 2.0d
+			description: [
+				"“Open your eyes and then open your eyes again.”"
+				""
+				"– Mistress Weatherwax"
+			]
 			dependencies: ["2B6914734BC1B9EA"]
 			id: "1EF3485CE70E529D"
 			tasks: [{
