@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'rftoolsbase:machine_frame',
                 B: 'create:redstone_link',
-                C: 'immersiveengineering:sheetmetal_iron',
+                C: '#forge:sheetmetals/iron',
                 D: 'integrateddynamics:part_world_reader',
                 E: 'integratedtunnels:part_player_simulator'
             },
@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'advancedperipherals:peripheral_casing',
                 B: 'dustrial_decor:anchor',
-                C: 'minecraft:redstone_block',
+                C: '#forge:storage_blocks/redstone',
                 D: 'minecraft:respawn_anchor',
                 E: 'mekanism:upgrade_anchor'
             },
@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
             output: 'advancedperipherals:weak_automata_core',
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
-                A: 'emendatusenigmatica:gold_gear',
+                A: '#forge:gears/gold',
                 B: 'advancedperipherals:peripheral_casing',
                 C: 'tconstruct:soul_glass',
                 D: 'quark:soul_bead',

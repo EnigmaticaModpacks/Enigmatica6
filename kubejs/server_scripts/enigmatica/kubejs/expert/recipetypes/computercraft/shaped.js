@@ -42,7 +42,7 @@ onEvent('recipes', (event) => {
             output: 'computercraft:wired_modem',
             pattern: [' A ', ' B ', ' C '],
             key: {
-                A: 'immersiveengineering:sheetmetal_aluminum',
+                A: '#forge:sheetmetals/aluminum',
                 B: 'rftoolscontrol:network_card',
                 C: 'rftoolsbase:machine_base'
             },
@@ -72,7 +72,7 @@ onEvent('recipes', (event) => {
             pattern: [' B ', 'BAB', ' B '],
             key: {
                 A: 'immersiveengineering:wirecoil_redstone',
-                B: 'pneumaticcraft:plastic'
+                B: '#forge:plastic'
             },
             id: 'computercraft:cable'
         },
