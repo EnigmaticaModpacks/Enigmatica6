@@ -249,22 +249,29 @@
 			description: ["The Engineer's Workbench is needed to craft certain parts with the use of blueprints. You can also use it to modify certain tools later on."]
 			dependencies: ["0000000000000009"]
 			id: "0000000000000019"
-			tasks: [{
-				id: "000000000000001A"
-				type: "item"
-				item: "immersiveengineering:workbench"
-			}]
-			rewards: [{
-				id: "000000000000060F"
-				type: "item"
-				title: "Engineer's Blueprint"
-				item: {
-					id: "immersiveengineering:blueprint"
-					Count: 1b
-					tag: {
-						blueprint: "components"
+			tasks: [
+				{
+					id: "000000000000001A"
+					type: "item"
+					item: "immersiveengineering:workbench"
+				}
+				{
+					id: "16E5DF7E27BAB713"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blueprint"
+						Count: 1b
+						tag: {
+							blueprint: "components"
+						}
 					}
 				}
+			]
+			rewards: [{
+				id: "0911E6C5BB0AF5E5"
+				type: "item"
+				item: "immersiveengineering:component_iron"
+				count: 8
 			}]
 		}
 		{
