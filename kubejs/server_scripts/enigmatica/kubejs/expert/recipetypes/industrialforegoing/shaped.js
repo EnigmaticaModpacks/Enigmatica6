@@ -531,6 +531,18 @@ onEvent('recipes', (event) => {
                 E: 'thermal:rf_coil'
             },
             id: 'industrialforegoing:latex_processing_unit'
+        },
+        {
+            output: 'industrialforegoing:infinity_backpack',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'thermal:fluid_cell',
+                C: 'tconstruct:piggy_backpack',
+                D: 'dankstorage:dank_3',
+                E: 'thermal:energy_cell'
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_backpack'
         }
     ];
 

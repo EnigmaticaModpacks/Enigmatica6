@@ -117,7 +117,7 @@
 			x: 1.5d
 			y: 0.0d
 			shape: "diamond"
-			dependencies: ["4AA238B9E42083DE"]
+			dependencies: ["3200842BF652DCB5"]
 			id: "0CFE47372EC49DC8"
 			tasks: [{
 				id: "5F5822FEF6F28BB7"
@@ -130,7 +130,7 @@
 			y: 1.0d
 			shape: "diamond"
 			description: ["Found commonly in the Sulfur Springs of the End."]
-			dependencies: ["4AA238B9E42083DE"]
+			dependencies: ["3200842BF652DCB5"]
 			id: "69201BA9E47F94EE"
 			tasks: [{
 				id: "124E2656A866D979"
@@ -152,70 +152,6 @@
 				type: "item"
 				item: "betterendforge:enchanted_petal"
 			}]
-		}
-		{
-			x: 0.5d
-			y: 0.5d
-			shape: "diamond"
-			dependencies: [
-				"7660DCCE5DF6B3E1"
-				"3200842BF652DCB5"
-			]
-			dependency_requirement: "one_completed"
-			id: "4AA238B9E42083DE"
-			tasks: [
-				{
-					id: "1E9D1176A9F497F6"
-					type: "item"
-					item: "betterendforge:infusion_pedestal"
-				}
-				{
-					id: "78BC6512C2E1FF47"
-					type: "item"
-					title: "Any Better End Pedestals"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "betterendforge:quartz_pedestal"
-									Count: 1b
-								}
-								{
-									id: "betterendforge:purpur_pedestal"
-									Count: 1b
-								}
-								{
-									id: "betterendforge:andesite_pedestal"
-									Count: 1b
-								}
-								{
-									id: "betterendforge:diorite_pedestal"
-									Count: 1b
-								}
-								{
-									id: "betterendforge:sulphuric_rock_pedestal"
-									Count: 1b
-								}
-								{
-									id: "betterendforge:violecite_pedestal"
-									Count: 1b
-								}
-								{
-									id: "betterendforge:flavolite_pedestal"
-									Count: 1b
-								}
-								{
-									id: "betterendforge:granite_pedestal"
-									Count: 1b
-								}
-							]
-						}
-					}
-					count: 4L
-				}
-			]
 		}
 		{
 			x: 4.0d
@@ -421,7 +357,7 @@
 			x: -0.5d
 			y: 0.5d
 			shape: "diamond"
-			dependencies: ["4AA238B9E42083DE"]
+			dependencies: ["7660DCCE5DF6B3E1"]
 			id: "4C5258E268EE4A7A"
 			tasks: [{
 				id: "161203BFE07872F7"
