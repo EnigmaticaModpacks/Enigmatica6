@@ -1497,6 +1497,70 @@ onEvent('recipes', (event) => {
             output: Item.of('2x occultism:otherstone_tablet'),
             id: 'occultism:crafting/otherstone_tablet'
         },
+        {
+            inputs: [
+                '#forge:plates/electrum',
+                '#forge:gems/mana_diamond',
+                '#forge:plates/electrum',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                '#forge:plates/electrum',
+                '#forge:gems/mana_diamond',
+                '#forge:plates/electrum'
+            ],
+            reagent: 'betterendforge:eternal_crystal',
+            sourceCost: 2000,
+            output: 'botania:mana_pylon',
+            id: `${id_prefix}mana_pylon`
+        },
+        {
+            inputs: [
+                'botania:glimmering_livingwood',
+                'powah:crystal_spirited',
+                'botania:glimmering_livingwood',
+                '#forge:ingots/terrasteel',
+                '#forge:ingots/terrasteel',
+                'botania:glimmering_livingwood',
+                'powah:crystal_spirited',
+                'botania:glimmering_livingwood'
+            ],
+            reagent: 'botania:mana_pylon',
+            sourceCost: 4000,
+            output: 'botania:natura_pylon',
+            id: `${id_prefix}natura_pylon`
+        },
+        {
+            inputs: [
+                '#forge:ingots/elementium',
+                'powah:crystal_nitro',
+                '#forge:ingots/elementium',
+                'botania:pixie_dust',
+                'botania:pixie_dust',
+                '#forge:ingots/elementium',
+                'powah:crystal_nitro',
+                '#forge:ingots/elementium'
+            ],
+            reagent: 'botania:natura_pylon',
+            sourceCost: 8000,
+            output: 'botania:gaia_pylon',
+            id: `${id_prefix}gaia_pylon`
+        },
+        {
+            inputs: [
+                '#chipped:crying_obsidian',
+                'atum:ra_godshard',
+                '#chipped:crying_obsidian',
+                '#forge:ingots/alfsteel',
+                '#forge:ingots/alfsteel',
+                '#chipped:crying_obsidian',
+                'atum:ra_godshard',
+                '#chipped:crying_obsidian'
+            ],
+            reagent: 'botania:gaia_pylon',
+            sourceCost: 10000,
+            output: 'mythicbotany:alfsteel_pylon',
+            id: `${id_prefix}alfsteel_pylon`
+        },
 
         /// Patchouli Removals
         {
