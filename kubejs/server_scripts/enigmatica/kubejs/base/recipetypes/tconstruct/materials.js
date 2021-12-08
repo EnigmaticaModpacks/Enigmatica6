@@ -194,11 +194,11 @@ onEvent('server.datapack.low_priority', (event) => {
                     input: 'tconstruct:stone',
                     fluid: [
                         {
-                            tag: 'tconstruct:molten_iron',
+                            tag: 'forge:molten_iron',
                             amount: 16
                         },
                         {
-                            tag: 'tconstruct:molten_zinc',
+                            tag: 'forge:molten_zinc',
                             amount: 16
                         }
                     ],
@@ -460,7 +460,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'emendatusenigmatica:molten_thallasium',
+                        tag: 'forge:molten_thallasium',
                         amount: 144
                     },
                     temperature: 825,
@@ -535,7 +535,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        tag: 'tconstruct:molten_tin',
+                        tag: 'forge:molten_tin',
                         amount: 144
                     },
                     temperature: 225,
@@ -610,7 +610,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        tag: 'tconstruct:molten_zinc',
+                        tag: 'forge:molten_zinc',
                         amount: 144
                     },
                     temperature: 420,
@@ -1241,7 +1241,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'tconstruct:molten_enderium',
+                        tag: 'forge:molten_enderium',
                         amount: 144
                     },
                     temperature: 1450,
@@ -1371,7 +1371,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'tconstruct:molten_lumium',
+                        tag: 'forge:molten_lumium',
                         amount: 144
                     },
                     temperature: 1354,
@@ -1580,7 +1580,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'tconstruct:molten_signalum',
+                        tag: 'forge:molten_signalum',
                         amount: 144
                     },
                     temperature: 1272,
