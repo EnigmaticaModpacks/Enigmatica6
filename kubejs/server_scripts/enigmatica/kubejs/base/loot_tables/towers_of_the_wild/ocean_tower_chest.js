@@ -154,7 +154,7 @@ onEvent('server.datapack.high_priority', (event) => {
                     {
                         type: 'minecraft:item',
                         weight: 1,
-                        name: 'tconstruct:sky_slime_boots'
+                        name: 'tconstruct:slime_boots'
                     },
                     {
                         type: 'item',
