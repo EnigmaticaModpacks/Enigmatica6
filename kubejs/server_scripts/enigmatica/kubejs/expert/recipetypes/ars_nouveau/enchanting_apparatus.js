@@ -1704,6 +1704,103 @@ onEvent('recipes', (event) => {
             sourceCost: 500,
             id: `${id_prefix}ice_ring`
         },
+        {
+            reagent: 'atum:atem_godshard',
+            output: 'betterendforge:eternal_crystal',
+            inputs: [
+                '#forge:shards/ender',
+                '#forge:shards/aurora',
+                '#forge:shards/ender',
+                '#forge:shards/aurora',
+                '#forge:shards/aurora',
+                '#forge:shards/ender',
+                '#forge:shards/aurora',
+                '#forge:shards/ender'
+            ],
+            sourceCost: 5000,
+            id: 'betterendforge:eternal_crystal'
+        },
+        {
+            reagent: 'betterendforge:hydralux_petal',
+            output: 'betterendforge:enchanted_petal',
+            inputs: [
+                '#forge:dusts/starmetal',
+                '#forge:shards/aurora',
+                '#forge:dusts/starmetal',
+                '#forge:shards/aurora',
+                '#forge:shards/aurora',
+                '#forge:dusts/starmetal',
+                '#forge:shards/aurora',
+                '#forge:dusts/starmetal'
+            ],
+            sourceCost: 500,
+            id: 'betterendforge:enchanted_petal'
+        },
+
+        {
+            inputs: [
+                '#forge:shards/aurora',
+                '#forge:gems/amber',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora'
+            ],
+            reagent: Item.of('betterendforge:terminite_helmet', '{Damage:0}').weakNBT(),
+            sourceCost: 9001,
+            output: 'betterendforge:crystalite_helmet',
+            id: 'betterendforge:crystalite_helmet'
+        },
+        {
+            inputs: [
+                '#forge:shards/aurora',
+                '#forge:gems/amber',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora'
+            ],
+            reagent: Item.of('betterendforge:terminite_chestplate', '{Damage:0}').weakNBT(),
+            sourceCost: 9001,
+            output: 'betterendforge:crystalite_chestplate',
+            id: 'betterendforge:crystalite_chestplate'
+        },
+        {
+            inputs: [
+                '#forge:shards/aurora',
+                '#forge:gems/amber',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora'
+            ],
+            reagent: Item.of('betterendforge:terminite_leggings', '{Damage:0}').weakNBT(),
+            sourceCost: 9001,
+            output: 'betterendforge:crystalite_leggings',
+            id: 'betterendforge:crystalite_leggings'
+        },
+        {
+            inputs: [
+                '#forge:shards/aurora',
+                '#forge:gems/amber',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora'
+            ],
+            reagent: Item.of('betterendforge:terminite_boots', '{Damage:0}').weakNBT(),
+            sourceCost: 9001,
+            output: 'betterendforge:crystalite_boots',
+            id: 'betterendforge:crystalite_boots'
+        },
 
         /// Patchouli Removals
         {
