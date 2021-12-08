@@ -253,7 +253,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_compressed_iron',
+                        tag: 'forge:molten_compressed_iron',
                         amount: 144
                     },
                     temperature: 900,
@@ -319,7 +319,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_infused_iron',
+                        tag: 'forge:molten_infused_iron',
                         amount: 144
                     },
                     temperature: 850,
@@ -385,7 +385,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_manasteel',
+                        tag: 'forge:molten_manasteel',
                         amount: 144
                     },
                     temperature: 900,
@@ -687,7 +687,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     type: 'tconstruct:material_fluid',
                     input: 'enigmatica:energized_steel',
                     fluid: {
-                        name: 'kubejs:molten_blazing',
+                        tag: 'forge:molten_blazing',
                         amount: 144
                     },
                     temperature: 950,
@@ -753,7 +753,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_elementium',
+                        tag: 'forge:molten_elementium',
                         amount: 144
                     },
                     temperature: 875,
@@ -828,7 +828,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_energized_steel',
+                        tag: 'forge:molten_energized_steel',
                         amount: 144
                     },
                     temperature: 875,
@@ -894,7 +894,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_sky',
+                        tag: 'forge:molten_sky',
                         amount: 144
                     },
                     temperature: 950,
@@ -948,7 +948,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_terminite',
+                        tag: 'forge:molten_terminite',
                         amount: 144
                     },
                     temperature: 840,
@@ -1023,7 +1023,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_terrasteel',
+                        tag: 'forge:molten_terrasteel',
                         amount: 144
                     },
                     temperature: 975,
@@ -1099,7 +1099,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_aeternium',
+                        tag: 'forge:molten_aeternium',
                         amount: 144
                     },
                     temperature: 1250,
@@ -1166,7 +1166,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     type: 'tconstruct:material_fluid',
                     input: 'enigmatica:terrasteel',
                     fluid: {
-                        name: 'kubejs:molten_alfsteel',
+                        tag: 'forge:molten_alfsteel',
                         amount: 144
                     },
                     temperature: 1450,
@@ -1317,7 +1317,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     type: 'tconstruct:material_fluid',
                     input: 'enigmatica:terrasteel',
                     fluid: {
-                        name: 'kubejs:molten_gaia_spirit',
+                        tag: 'forge:molten_gaia_spirit',
                         amount: 144
                     },
                     temperature: 1350,
@@ -1447,7 +1447,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     type: 'tconstruct:material_fluid',
                     input: 'enigmatica:energized_steel',
                     fluid: {
-                        name: 'kubejs:molten_niotic',
+                        tag: 'forge:molten_niotic',
                         amount: 144
                     },
                     temperature: 1250,
@@ -1514,7 +1514,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     type: 'tconstruct:material_fluid',
                     input: 'enigmatica:energized_steel',
                     fluid: {
-                        name: 'kubejs:molten_nitro',
+                        tag: 'forge:molten_nitro',
                         amount: 144
                     },
                     temperature: 1450,
@@ -1656,7 +1656,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     type: 'tconstruct:material_fluid',
                     input: 'enigmatica:energized_steel',
                     fluid: {
-                        name: 'kubejs:molten_spirited',
+                        tag: 'forge:molten_spirited',
                         amount: 144
                     },
                     temperature: 1350,
