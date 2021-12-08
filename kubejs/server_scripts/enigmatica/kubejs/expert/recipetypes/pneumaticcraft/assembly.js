@@ -57,6 +57,43 @@ onEvent('recipes', (event) => {
             output: { item: 'kubejs:memory_basic_empty', count: 2 },
             program: 'laser',
             id: `${id_prefix}memory_basic_empty`
+        },
+
+        {
+            input: { item: 'kubejs:cpu_core_500_package', count: 1 },
+            output: { item: 'kubejs:cpu_core_500_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}cpu_core_500_assembly`
+        },
+        {
+            input: { item: 'kubejs:cpu_core_500_assembly', count: 1 },
+            output: { item: 'rftoolscontrol:cpu_core_500', count: 1 },
+            program: 'laser',
+            id: `${id_prefix}cpu_core_500`
+        },
+        {
+            input: { item: 'kubejs:cpu_core_1000_package', count: 1 },
+            output: { item: 'kubejs:cpu_core_1000_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}cpu_core_1000_assembly`
+        },
+        {
+            input: { item: 'kubejs:cpu_core_1000_assembly', count: 1 },
+            output: { item: 'rftoolscontrol:cpu_core_1000', count: 1 },
+            program: 'laser',
+            id: `${id_prefix}cpu_core_1000`
+        },
+        {
+            input: { item: 'kubejs:cpu_core_2000_package', count: 1 },
+            output: { item: 'kubejs:cpu_core_2000_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}cpu_core_2000_assembly`
+        },
+        {
+            input: { item: 'kubejs:cpu_core_2000_assembly', count: 1 },
+            output: { item: 'rftoolscontrol:cpu_core_2000', count: 1 },
+            program: 'laser',
+            id: `${id_prefix}cpu_core_2000`
         }
     ];
 

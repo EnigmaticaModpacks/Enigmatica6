@@ -65,6 +65,39 @@ onEvent('recipes', (event) => {
             },
             id: `${id_prefix}scented_stick`
         },
+        {
+            output: 'kubejs:cpu_core_500_package',
+            pattern: ['BCB', 'BAB', 'D  '],
+            key: {
+                A: '#forge:wires/lead',
+                B: 'refinedstorage:basic_processor',
+                C: 'pneumaticcraft:unassembled_pcb',
+                D: 'mekanism:cardboard_box'
+            },
+            id: `${id_prefix}cpu_core_500`
+        },
+        {
+            output: 'kubejs:cpu_core_1000_package',
+            pattern: ['BCB', 'BAB', 'D  '],
+            key: {
+                A: '#forge:wires/copper',
+                B: 'refinedstorage:improved_processor',
+                C: 'rftoolscontrol:cpu_core_500',
+                D: 'mekanism:cardboard_box'
+            },
+            id: `${id_prefix}cpu_core_1000`
+        },
+        {
+            output: 'kubejs:cpu_core_2000_package',
+            pattern: ['BCB', 'BAB', 'D  '],
+            key: {
+                A: '#forge:wires/electrum',
+                B: 'refinedstorage:advanced_processor',
+                C: 'rftoolscontrol:cpu_core_1000',
+                D: 'mekanism:cardboard_box'
+            },
+            id: `${id_prefix}cpu_core_2000`
+        },
 
         // Storage Parts
         {

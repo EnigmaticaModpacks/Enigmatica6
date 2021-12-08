@@ -26,6 +26,14 @@ onEvent('recipes', (event) => {
         'botania:mana_infusion/mana_diamond_block',
         'byg:compat/create/black_sand_from_crushing',
 
+        'computercraft:computer_advanced_upgrade',
+        'computercraft:turtle_advanced_upgrade',
+        'computercraft:turtle_normal',
+        'computercraft:turtle_advanced',
+        'computercraft:pocket_computer_normal',
+        'computercraft:pocket_computer_advanced',
+        'computercraft:pocket_computer_advanced_upgrade',
+
         /compactmachines:machine_/,
         /create:pressing\/\w*_ingot/,
 
@@ -103,6 +111,9 @@ onEvent('recipes', (event) => {
         'quark:building/crafting/red_nether_bricks_util',
 
         'refinedstorage:quartz_enriched_iron',
+        'rftoolscontrol:cpu_core_500',
+        'rftoolscontrol:cpu_core_1000',
+        'rftoolscontrol:cpu_core_2000',
 
         'sophisticatedbackpacks:feeding_upgrade',
         'sophisticatedbackpacks:advanced_feeding_upgrade',

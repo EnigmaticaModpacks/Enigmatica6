@@ -73,6 +73,8 @@ onEvent('item.registry', (event) => {
         'craft_tool_swapper_upgrade',
         'craft_advanced_tool_swapper_upgrade',
         'craft_refill_upgrade',
+        'craft_turtle_normal',
+        'craft_turtle_advanced',
         'craft_otherworldly_honey_bottle',
         'craft_mycelial_netherstar',
         'craft_mycelial_halitosis',
@@ -122,6 +124,13 @@ onEvent('item.registry', (event) => {
 
         { name: 'basic_memory_package', texture: 'assembly_package_filled' },
         { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
+
+        { name: 'cpu_core_500_package', texture: 'assembly_package_filled' },
+        { name: 'cpu_core_500_assembly', texture: 'assembly_package_processing' },
+        { name: 'cpu_core_1000_package', texture: 'assembly_package_filled' },
+        { name: 'cpu_core_1000_assembly', texture: 'assembly_package_processing' },
+        { name: 'cpu_core_2000_package', texture: 'assembly_package_filled' },
+        { name: 'cpu_core_2000_assembly', texture: 'assembly_package_processing' },
 
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },

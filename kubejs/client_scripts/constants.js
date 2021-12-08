@@ -100,6 +100,9 @@ const colors = [
 ];
 
 const itemsToHide = [
+    'advancedperipherals:me_bridge',
+    'advancedperipherals:colony_integrator',
+
     'aiotbotania:livingwood_shears',
     'aiotbotania:livingrock_shears',
 
