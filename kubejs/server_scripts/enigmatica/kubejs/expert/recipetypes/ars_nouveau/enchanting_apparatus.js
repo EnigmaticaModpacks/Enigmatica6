@@ -1459,7 +1459,12 @@ onEvent('recipes', (event) => {
             id: `ars_nouveau:sylph_charm`
         },
         {
-            inputs: ['atum:anput_godshard', 'naturesaura:token_fear'],
+            inputs: [
+                'atum:anput_godshard',
+                '#forge:ingots/arcane_gold',
+                '#forge:ingots/arcane_gold',
+                'naturesaura:token_fear'
+            ],
             reagent: '#atum:relic_non_dirty/ring',
             sourceCost: 5000,
             output: 'naturesaura:death_ring',
@@ -1560,6 +1565,144 @@ onEvent('recipes', (event) => {
             sourceCost: 10000,
             output: 'mythicbotany:alfsteel_pylon',
             id: `${id_prefix}alfsteel_pylon`
+        },
+        {
+            inputs: [
+                'botania:mana_tablet',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                '#forge:gems/mana_diamond'
+            ],
+            reagent: 'ars_nouveau:ring_of_greater_discount',
+            sourceCost: 500,
+            output: 'botania:mana_ring',
+            id: `${id_prefix}mana_ring`
+        },
+        {
+            reagent: '#forge:ingots/terrasteel',
+            output: 'botania:gaia_ingot',
+            inputs: [
+                'botania:life_essence',
+                'atum:seth_godshard',
+                'botania:life_essence',
+                'atum:seth_godshard',
+                'atum:seth_godshard',
+                'botania:life_essence',
+                'atum:seth_godshard',
+                'botania:life_essence'
+            ],
+            sourceCost: 9000,
+            id: `${id_prefix}gaia_ingot`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:mining_ring',
+            inputs: [
+                '#botania:runes/earth',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                'bloodmagic:reagentfastminer'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}mining_ring`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:dodge_ring',
+            inputs: [
+                '#botania:runes/air',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                'alexsmobs:roadrunner_feather'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}dodge_ring`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:swap_ring',
+            inputs: ['ars_nouveau:magic_clay', '#forge:ingots/manasteel', '#forge:ingots/manasteel'],
+            sourceCost: 500,
+            id: `${id_prefix}swap_ring`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:water_ring',
+            inputs: [
+                '#botania:runes/water',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                'minecraft:heart_of_the_sea'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}water_ring`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:magnet_ring',
+            inputs: ['botania:lens_magnet', '#forge:ingots/manasteel', '#forge:ingots/manasteel'],
+            sourceCost: 500,
+            id: `${id_prefix}magnet_ring`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:aura_ring',
+            inputs: [
+                '#botania:runes/mana',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                'naturesaura:aura_cache'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}aura_ring`
+        },
+        {
+            reagent: 'botania:aura_ring',
+            output: 'botania:pixie_ring',
+            inputs: [
+                'botania:pixie_dust',
+                '#forge:ingots/elementium',
+                '#forge:ingots/elementium',
+                'naturesaura:calling_spirit'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}pixie_ring`
+        },
+        {
+            reagent: 'botania:aura_ring',
+            output: 'botania:reach_ring',
+            inputs: [
+                '#botania:runes/pride',
+                '#forge:ingots/elementium',
+                '#forge:ingots/elementium',
+                '#forge:ingots/sky'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}reach_ring`
+        },
+        {
+            reagent: 'botania:aura_ring',
+            output: 'mythicbotany:fire_ring',
+            inputs: [
+                '#botania:runes/muspelheim',
+                '#forge:ingots/elementium',
+                '#forge:ingots/elementium',
+                'ars_nouveau:glyph_shield'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}fire_ring`
+        },
+        {
+            reagent: 'botania:aura_ring',
+            output: 'mythicbotany:ice_ring',
+            inputs: [
+                '#botania:runes/niflheim',
+                '#forge:ingots/elementium',
+                '#forge:ingots/elementium',
+                'ars_nouveau:glyph_shield'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}ice_ring`
         },
 
         /// Patchouli Removals
