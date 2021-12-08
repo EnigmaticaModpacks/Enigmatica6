@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             id: 'ars_nouveau:glyph_fortune'
         },
         {
-            input: 'thermal:earth_charge',
+            input: 'powah:charged_snowball',
             output: 'ars_nouveau:glyph_amplify',
             tier: 'ONE',
             id: 'ars_nouveau:glyph_amplify'
@@ -134,6 +134,12 @@ onEvent('recipes', (event) => {
             output: 'ars_nouveau:glyph_glide',
             tier: 'THREE',
             id: 'ars_nouveau:glyph_glide'
+        },
+        {
+            input: 'botania:glass_pickaxe',
+            output: 'ars_nouveau:glyph_extract',
+            tier: 'TWO',
+            id: 'ars_nouveau:glyph_extract'
         }
     ];
 
