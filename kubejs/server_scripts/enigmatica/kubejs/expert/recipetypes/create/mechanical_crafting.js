@@ -608,6 +608,90 @@ onEvent('recipes', (event) => {
                 F: 'pneumaticcraft:fluid_mixer'
             },
             id: 'immersiveengineering:crafting/cloche'
+        },
+        {
+            output: 'industrialforegoing:infinity_drill',
+            pattern: ['  AAA', '  BBA', ' CDBA', 'CECF ', 'GCF  '],
+            key: {
+                A: 'rftoolsbase:infused_diamond',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: 'mekanism:elite_induction_cell',
+                E: 'thermal:upgrade_augment_3',
+                F: 'immersiveengineering:wooden_grip',
+                G: 'pneumaticcraft:huge_tank'
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_drill'
+        },
+        {
+            output: 'industrialforegoing:infinity_trident',
+            pattern: ['   AA', '  BBA', ' CDB ', 'CEC  ', 'GC   '],
+            key: {
+                A: 'rftoolsbase:infused_diamond',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: 'mekanism:elite_induction_cell',
+                E: 'thermal:upgrade_augment_3',
+                G: 'pneumaticcraft:huge_tank'
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_trident'
+        },
+        {
+            output: 'industrialforegoing:infinity_saw',
+            pattern: ['   AB', '  ABA', ' CDA ', 'CECF ', 'GCF  '],
+            key: {
+                A: 'rftoolsbase:infused_diamond',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: 'mekanism:elite_induction_cell',
+                E: 'thermal:upgrade_augment_3',
+                F: 'immersiveengineering:wooden_grip',
+                G: 'pneumaticcraft:huge_tank'
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_saw'
+        },
+        {
+            output: 'industrialforegoing:infinity_hammer',
+            pattern: ['  BA ', '  ABA', ' CDAB', 'CEC  ', 'GC   '],
+            key: {
+                A: 'rftoolsbase:infused_diamond',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: 'mekanism:elite_induction_cell',
+                E: 'thermal:upgrade_augment_3',
+                G: 'pneumaticcraft:huge_tank'
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_hammer'
+        },
+        {
+            output: 'industrialforegoing:infinity_launcher',
+            pattern: ['   A ', '  BAA', ' CDB ', 'CEC  ', 'GCF  '],
+            key: {
+                A: 'thermal:cured_rubber_block',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: 'mekanism:elite_induction_cell',
+                E: 'thermal:upgrade_augment_3',
+                F: 'immersiveengineering:wooden_grip',
+                G: 'pneumaticcraft:huge_tank'
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_launcher'
+        },
+        {
+            output: 'industrialforegoing:infinity_nuke',
+            pattern: [' CCC ', 'CAEAC', 'BFGFB', 'CAEAC', 'HDIDH'],
+            key: {
+                A: 'thermal:earth_tnt',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: 'mekanism:elite_induction_cell',
+                E: Item.of('tconstruct:copper_can', '{fluid:"industrialforegoing:ether_gas"}'),
+                F: '#forge:alloys/ultimate',
+                G: '#forge:pellets/plutonium',
+                H: 'mekanism:hdpe_rod',
+                I: 'pneumaticcraft:huge_tank'
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_nuke'
         }
     ];
 

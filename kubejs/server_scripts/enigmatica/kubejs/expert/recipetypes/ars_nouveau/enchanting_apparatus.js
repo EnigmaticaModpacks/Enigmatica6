@@ -1459,7 +1459,12 @@ onEvent('recipes', (event) => {
             id: `ars_nouveau:sylph_charm`
         },
         {
-            inputs: ['atum:anput_godshard', 'naturesaura:token_fear'],
+            inputs: [
+                'atum:anput_godshard',
+                '#forge:ingots/arcane_gold',
+                '#forge:ingots/arcane_gold',
+                'naturesaura:token_fear'
+            ],
             reagent: '#atum:relic_non_dirty/ring',
             sourceCost: 5000,
             output: 'naturesaura:death_ring',
@@ -1496,6 +1501,305 @@ onEvent('recipes', (event) => {
             sourceCost: 500,
             output: Item.of('2x occultism:otherstone_tablet'),
             id: 'occultism:crafting/otherstone_tablet'
+        },
+        {
+            inputs: [
+                '#forge:plates/electrum',
+                '#forge:gems/mana_diamond',
+                '#forge:plates/electrum',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                '#forge:plates/electrum',
+                '#forge:gems/mana_diamond',
+                '#forge:plates/electrum'
+            ],
+            reagent: 'betterendforge:eternal_crystal',
+            sourceCost: 2000,
+            output: 'botania:mana_pylon',
+            id: `${id_prefix}mana_pylon`
+        },
+        {
+            inputs: [
+                'botania:glimmering_livingwood',
+                'powah:crystal_spirited',
+                'botania:glimmering_livingwood',
+                '#forge:ingots/terrasteel',
+                '#forge:ingots/terrasteel',
+                'botania:glimmering_livingwood',
+                'powah:crystal_spirited',
+                'botania:glimmering_livingwood'
+            ],
+            reagent: 'botania:mana_pylon',
+            sourceCost: 4000,
+            output: 'botania:natura_pylon',
+            id: `${id_prefix}natura_pylon`
+        },
+        {
+            inputs: [
+                '#forge:ingots/elementium',
+                'powah:crystal_nitro',
+                '#forge:ingots/elementium',
+                'botania:pixie_dust',
+                'botania:pixie_dust',
+                '#forge:ingots/elementium',
+                'powah:crystal_nitro',
+                '#forge:ingots/elementium'
+            ],
+            reagent: 'botania:natura_pylon',
+            sourceCost: 8000,
+            output: 'botania:gaia_pylon',
+            id: `${id_prefix}gaia_pylon`
+        },
+        {
+            inputs: [
+                '#chipped:crying_obsidian',
+                'atum:ra_godshard',
+                '#chipped:crying_obsidian',
+                '#forge:ingots/alfsteel',
+                '#forge:ingots/alfsteel',
+                '#chipped:crying_obsidian',
+                'atum:ra_godshard',
+                '#chipped:crying_obsidian'
+            ],
+            reagent: 'botania:gaia_pylon',
+            sourceCost: 10000,
+            output: 'mythicbotany:alfsteel_pylon',
+            id: `${id_prefix}alfsteel_pylon`
+        },
+        {
+            inputs: [
+                'botania:mana_tablet',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                '#forge:gems/mana_diamond'
+            ],
+            reagent: 'ars_nouveau:ring_of_greater_discount',
+            sourceCost: 500,
+            output: 'botania:mana_ring',
+            id: `${id_prefix}mana_ring`
+        },
+        {
+            reagent: '#forge:ingots/terrasteel',
+            output: 'botania:gaia_ingot',
+            inputs: [
+                'botania:life_essence',
+                'atum:seth_godshard',
+                'botania:life_essence',
+                'atum:seth_godshard',
+                'atum:seth_godshard',
+                'botania:life_essence',
+                'atum:seth_godshard',
+                'botania:life_essence'
+            ],
+            sourceCost: 9000,
+            id: `${id_prefix}gaia_ingot`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:mining_ring',
+            inputs: [
+                '#botania:runes/earth',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                'bloodmagic:reagentfastminer'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}mining_ring`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:dodge_ring',
+            inputs: [
+                '#botania:runes/air',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                'alexsmobs:roadrunner_feather'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}dodge_ring`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:swap_ring',
+            inputs: ['ars_nouveau:magic_clay', '#forge:ingots/manasteel', '#forge:ingots/manasteel'],
+            sourceCost: 500,
+            id: `${id_prefix}swap_ring`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:water_ring',
+            inputs: [
+                '#botania:runes/water',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                'minecraft:heart_of_the_sea'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}water_ring`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:magnet_ring',
+            inputs: ['botania:lens_magnet', '#forge:ingots/manasteel', '#forge:ingots/manasteel'],
+            sourceCost: 500,
+            id: `${id_prefix}magnet_ring`
+        },
+        {
+            reagent: '#atum:relic_non_dirty/ring',
+            output: 'botania:aura_ring',
+            inputs: [
+                '#botania:runes/mana',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                'naturesaura:aura_cache'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}aura_ring`
+        },
+        {
+            reagent: 'botania:aura_ring',
+            output: 'botania:pixie_ring',
+            inputs: [
+                'botania:pixie_dust',
+                '#forge:ingots/elementium',
+                '#forge:ingots/elementium',
+                'naturesaura:calling_spirit'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}pixie_ring`
+        },
+        {
+            reagent: 'botania:aura_ring',
+            output: 'botania:reach_ring',
+            inputs: [
+                '#botania:runes/pride',
+                '#forge:ingots/elementium',
+                '#forge:ingots/elementium',
+                '#forge:ingots/sky'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}reach_ring`
+        },
+        {
+            reagent: 'botania:aura_ring',
+            output: 'mythicbotany:fire_ring',
+            inputs: [
+                '#botania:runes/muspelheim',
+                '#forge:ingots/elementium',
+                '#forge:ingots/elementium',
+                'ars_nouveau:glyph_shield'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}fire_ring`
+        },
+        {
+            reagent: 'botania:aura_ring',
+            output: 'mythicbotany:ice_ring',
+            inputs: [
+                '#botania:runes/niflheim',
+                '#forge:ingots/elementium',
+                '#forge:ingots/elementium',
+                'ars_nouveau:glyph_shield'
+            ],
+            sourceCost: 500,
+            id: `${id_prefix}ice_ring`
+        },
+        {
+            reagent: 'atum:atem_godshard',
+            output: 'betterendforge:eternal_crystal',
+            inputs: [
+                '#forge:shards/ender',
+                '#forge:shards/aurora',
+                '#forge:shards/ender',
+                '#forge:shards/aurora',
+                '#forge:shards/aurora',
+                '#forge:shards/ender',
+                '#forge:shards/aurora',
+                '#forge:shards/ender'
+            ],
+            sourceCost: 5000,
+            id: 'betterendforge:eternal_crystal'
+        },
+        {
+            reagent: 'betterendforge:hydralux_petal',
+            output: 'betterendforge:enchanted_petal',
+            inputs: [
+                '#forge:dusts/starmetal',
+                '#forge:shards/aurora',
+                '#forge:dusts/starmetal',
+                '#forge:shards/aurora',
+                '#forge:shards/aurora',
+                '#forge:dusts/starmetal',
+                '#forge:shards/aurora',
+                '#forge:dusts/starmetal'
+            ],
+            sourceCost: 500,
+            id: 'betterendforge:enchanted_petal'
+        },
+
+        {
+            inputs: [
+                '#forge:shards/aurora',
+                '#forge:gems/amber',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora'
+            ],
+            reagent: Item.of('betterendforge:terminite_helmet', '{Damage:0}').weakNBT(),
+            sourceCost: 9001,
+            output: 'betterendforge:crystalite_helmet',
+            id: 'betterendforge:crystalite_helmet'
+        },
+        {
+            inputs: [
+                '#forge:shards/aurora',
+                '#forge:gems/amber',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora'
+            ],
+            reagent: Item.of('betterendforge:terminite_chestplate', '{Damage:0}').weakNBT(),
+            sourceCost: 9001,
+            output: 'betterendforge:crystalite_chestplate',
+            id: 'betterendforge:crystalite_chestplate'
+        },
+        {
+            inputs: [
+                '#forge:shards/aurora',
+                '#forge:gems/amber',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora'
+            ],
+            reagent: Item.of('betterendforge:terminite_leggings', '{Damage:0}').weakNBT(),
+            sourceCost: 9001,
+            output: 'betterendforge:crystalite_leggings',
+            id: 'betterendforge:crystalite_leggings'
+        },
+        {
+            inputs: [
+                '#forge:shards/aurora',
+                '#forge:gems/amber',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora',
+                '#forge:ingots/iesnium',
+                '#forge:shards/aurora'
+            ],
+            reagent: Item.of('betterendforge:terminite_boots', '{Damage:0}').weakNBT(),
+            sourceCost: 9001,
+            output: 'betterendforge:crystalite_boots',
+            id: 'betterendforge:crystalite_boots'
         },
 
         /// Patchouli Removals
