@@ -82,6 +82,7 @@ onEvent('recipes', (event) => {
         'mekanism:osmium_compressor',
         /mekanism:factory/,
         'mekanism:robit',
+        /mekanism:mekasuit/,
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
