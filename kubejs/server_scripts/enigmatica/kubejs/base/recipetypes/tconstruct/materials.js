@@ -960,7 +960,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     type: 'tconstruct:material_fluid',
-                    input: 'enigmatica:terrasteel',
+                    input: 'materialis:terrasteel',
                     fluid: {
                         tag: 'forge:molten_gaia_spirit',
                         amount: 144
