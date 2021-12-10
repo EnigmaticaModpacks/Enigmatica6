@@ -669,6 +669,139 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'industrialforegoing:dissolution_chamber/mechanical_dirt'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:ingots/shadow_steel',
+                'powah:solar_panel_nitro',
+                '#forge:ingots/shadow_steel'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_solar_recharging_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_solar_recharging_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:alloys/elite',
+                'mekanism:electrolytic_core',
+                '#forge:alloys/elite'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_electrolytic_breathing_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_electrolytic_breathing_unit'
+        },
+        {
+            inputs: [
+                'thermal:cured_rubber',
+                'mekanism:module_base',
+                'thermal:cured_rubber',
+                'thermal:hazmat_fabric',
+                'thermal:hazmat_fabric',
+                '#forge:alloys/ultimate',
+                'mekanism:scuba_mask',
+                '#forge:alloys/ultimate'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 500,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_inhalation_purification_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_inhalation_purification_unit'
+        },
+        {
+            inputs: [
+                'industrialforegoing:straw',
+                'mekanism:module_base',
+                'industrialforegoing:straw',
+                'industrialforegoing:straw',
+                'industrialforegoing:straw',
+                'industrialforegoing:straw',
+                'mekanism:canteen',
+                'industrialforegoing:straw'
+            ],
+            inputFluid: 'industrialforegoing:meat',
+            inputFluidAmount: 16000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_nutritional_injection_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_nutritional_injection_unit'
+        },
+        {
+            inputs: [
+                'mekanism:ultimate_induction_cell',
+                'mekanism:module_base',
+                'rftoolsbuilder:shield_block1',
+                '#forge:alloys/ultimate',
+                '#forge:alloys/ultimate',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 2000,
+            processingTime: 500,
+            outputItem: { item: 'mekanism:module_energy_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_energy_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:ingots/netherite',
+                '#forge:ingots/netherite',
+                '#forge:ingots/netherite'
+            ],
+            inputFluid: 'tconstruct:molten_lead',
+            inputFluidAmount: 1296,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_radiation_shielding_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_radiation_shielding_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:alloys/advanced',
+                'advancedperipherals:ar_goggles',
+                '#forge:alloys/advanced'
+            ],
+            inputFluid: 'kubejs:molten_enderium_glass',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_vision_enhancement_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_vision_enhancement_unit'
         }
         /*
         {
