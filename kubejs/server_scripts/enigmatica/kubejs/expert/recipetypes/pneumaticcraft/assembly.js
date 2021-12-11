@@ -97,22 +97,33 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    let armorPieces = ['helmet', 'chestplate', 'leggings', 'boots'];
-    armorPieces.forEach((armorPiece) => {
-        recipes.push(
-            {
-                input: { item: `kubejs:pneumatic_${armorPiece}_package`, count: 1 },
-                output: { item: `kubejs:pneumatic_${armorPiece}_assembly`, count: 1 },
-                program: 'drill',
-                id: `${id_prefix}pneumatic_${armorPiece}_assembly`
-            },
-            {
-                input: { item: `kubejs:pneumatic_${armorPiece}_assembly`, count: 1 },
-                output: { item: `pneumaticcraft:pneumatic_${armorPiece}`, count: 1 },
-                program: 'laser',
-                id: `${id_prefix}pneumatic_${armorPiece}`
-            }
-        );
+    let armorSets = [
+        {
+            modID: 'pneumaticcraft',
+            armorPieces: ['pneumatic_helmet', 'pneumatic_chestplate', 'pneumatic_leggings', 'pneumatic_boots']
+        },
+        {
+            modID: 'mekanism',
+            armorPieces: ['mekasuit_helmet', 'mekasuit_bodyarmor', 'mekasuit_pants', 'mekasuit_boots']
+        }
+    ];
+    armorSets.forEach((armorSet) => {
+        armorSet.armorPieces.forEach((armorPiece) => {
+            recipes.push(
+                {
+                    input: { item: `kubejs:${armorPiece}_package`, count: 1 },
+                    output: { item: `kubejs:${armorPiece}_assembly`, count: 1 },
+                    program: 'drill',
+                    id: `${id_prefix}${armorPiece}_assembly`
+                },
+                {
+                    input: { item: `kubejs:${armorPiece}_assembly`, count: 1 },
+                    output: { item: `${armorSet.modID}:${armorPiece}`, count: 1 },
+                    program: 'laser',
+                    id: `${id_prefix}${armorPiece}`
+                }
+            );
+        });
     });
 
     let storageParts = [
