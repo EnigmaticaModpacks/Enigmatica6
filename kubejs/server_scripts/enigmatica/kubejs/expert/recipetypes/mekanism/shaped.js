@@ -792,6 +792,18 @@ onEvent('recipes', (event) => {
                 C: '#forge:ingots/hepatizon'
             },
             id: `mekanism:bin/ultimate`
+        },
+        {
+            output: `mekanism:logistical_sorter`,
+            pattern: ['ABA', 'ACA', 'EDE'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_black',
+                B: 'prettypipes:medium_extraction_module',
+                C: 'prettypipes:medium_filter_module',
+                D: 'prettypipes:round_robin_sorting_modifier',
+                E: '#forge:plates/iron_osmium'
+            },
+            id: `mekanism:logistical_sorter`
         }
     ];
 
