@@ -135,6 +135,7 @@ onEvent('item.registry', (event) => {
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
+
         { name: 'pneumatic_helmet_package', texture: 'assembly_package_filled' },
         { name: 'pneumatic_helmet_assembly', texture: 'assembly_package_processing' },
         { name: 'pneumatic_chestplate_package', texture: 'assembly_package_filled' },
@@ -143,6 +144,15 @@ onEvent('item.registry', (event) => {
         { name: 'pneumatic_leggings_assembly', texture: 'assembly_package_processing' },
         { name: 'pneumatic_boots_package', texture: 'assembly_package_filled' },
         { name: 'pneumatic_boots_assembly', texture: 'assembly_package_processing' },
+
+        { name: 'mekasuit_helmet_package', texture: 'assembly_package_filled' },
+        { name: 'mekasuit_helmet_assembly', texture: 'assembly_package_processing' },
+        { name: 'mekasuit_bodyarmor_package', texture: 'assembly_package_filled' },
+        { name: 'mekasuit_bodyarmor_assembly', texture: 'assembly_package_processing' },
+        { name: 'mekasuit_pants_package', texture: 'assembly_package_filled' },
+        { name: 'mekasuit_pants_assembly', texture: 'assembly_package_processing' },
+        { name: 'mekasuit_boots_package', texture: 'assembly_package_filled' },
+        { name: 'mekasuit_boots_assembly', texture: 'assembly_package_processing' },
 
         { name: '1k_storage_part_package', texture: 'assembly_package_filled' },
         { name: '1k_storage_part_assembly', texture: 'assembly_package_processing' },

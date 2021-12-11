@@ -165,7 +165,7 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        const re = event.smelting(recipe.output, recipe.input).id(recipe.id);
+        const re = event.blasting(recipe.output, recipe.input).id(recipe.id);
 
         if (recipe.xp) {
             re.xp(recipe.xp);
