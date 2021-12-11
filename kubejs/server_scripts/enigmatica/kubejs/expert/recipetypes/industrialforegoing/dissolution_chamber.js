@@ -696,9 +696,9 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 'mekanism:hdpe_sheet',
                 'mekanism:hdpe_sheet',
-                '#forge:alloys/elite',
+                '#forge:circuits/basic',
                 'mekanism:electrolytic_core',
-                '#forge:alloys/elite'
+                '#forge:circuits/basic'
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,
@@ -715,9 +715,9 @@ onEvent('recipes', (event) => {
                 'thermal:cured_rubber',
                 'thermal:hazmat_fabric',
                 'thermal:hazmat_fabric',
-                '#forge:alloys/ultimate',
+                '#forge:circuits/ultimate',
                 'mekanism:scuba_mask',
-                '#forge:alloys/ultimate'
+                '#forge:circuits/ultimate'
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 500,
@@ -751,8 +751,8 @@ onEvent('recipes', (event) => {
                 'mekanism:ultimate_induction_cell',
                 'mekanism:module_base',
                 'rftoolsbuilder:shield_block1',
-                '#forge:alloys/ultimate',
-                '#forge:alloys/ultimate',
+                '#forge:circuits/ultimate',
+                '#forge:circuits/ultimate',
                 '#forge:pellets/polonium',
                 '#forge:pellets/polonium',
                 '#forge:pellets/polonium'
@@ -791,9 +791,9 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 'mekanism:hdpe_sheet',
                 'mekanism:hdpe_sheet',
-                '#forge:alloys/advanced',
+                '#forge:circuits/advanced',
                 'advancedperipherals:ar_goggles',
-                '#forge:alloys/advanced'
+                '#forge:circuits/advanced'
             ],
             inputFluid: 'kubejs:molten_enderium_glass',
             inputFluidAmount: 1000,
@@ -802,6 +802,139 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:module_vision_enhancement_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'immersiveengineering:coil_hv',
+                'immersiveengineering:coil_hv',
+                'immersiveengineering:coil_hv'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_charge_distribution_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_charge_distribution_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'fluxnetworks:flux_dust',
+                'mekanism:dosimeter',
+                'fluxnetworks:flux_dust'
+            ],
+            inputFluid: 'tconstruct:molten_slimesteel',
+            inputFluidAmount: 1296,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_dosimeter_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_dosimeter_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/elite',
+                'mekanism:jetpack',
+                '#forge:circuits/elite'
+            ],
+            inputFluid: 'tconstruct:sky_slime',
+            inputFluidAmount: 4000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_jetpack_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_jetpack_unit'
+        },
+        {
+            inputs: [
+                'mekanism:ultimate_induction_provider',
+                'mekanism:module_base',
+                'mekanism:ultimate_induction_provider',
+                '#forge:circuits/ultimate',
+                '#forge:circuits/ultimate',
+                'ironjetpacks:nitro_thruster',
+                '#forge:pellets/antimatter',
+                'ironjetpacks:nitro_thruster'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 16000,
+            processingTime: 800,
+            outputItem: { item: 'mekanism:module_gravitational_modulating_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_gravitational_modulating_unit'
+        },
+        {
+            inputs: [
+                '#forge:alloys/elite',
+                'mekanism:module_base',
+                '#forge:alloys/elite',
+                'alexsmobs:warped_muscle',
+                'alexsmobs:warped_muscle',
+                '#forge:circuits/elite',
+                'immersiveengineering:toolupgrade_drill_lube',
+                '#forge:circuits/elite'
+            ],
+            inputFluid: 'pneumaticcraft:lubricant',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_locomotive_boosting_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_locomotive_boosting_unit'
+        },
+        {
+            inputs: [
+                '#forge:alloys/elite',
+                'mekanism:module_base',
+                '#forge:alloys/elite',
+                'alexsmobs:warped_muscle',
+                'alexsmobs:warped_muscle',
+                '#forge:circuits/elite',
+                'pneumaticcraft:pneumatic_cylinder',
+                '#forge:circuits/elite'
+            ],
+            inputFluid: 'pneumaticcraft:lubricant',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_hydraulic_propulsion_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_hydraulic_propulsion_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/basic',
+                'thermal:flux_magnet',
+                '#forge:circuits/basic'
+            ],
+            inputFluid: 'tconstruct:molten_iron',
+            inputFluidAmount: 1296,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_magnetic_attraction_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_magnetic_attraction_unit'
         }
         /*
         {
