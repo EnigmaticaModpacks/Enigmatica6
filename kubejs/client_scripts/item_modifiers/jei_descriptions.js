@@ -408,6 +408,10 @@ onEvent('jei.information', (event) => {
             text: [
                 `Commonly found growing in Oasis Biomes in Atum. Grows like Sugar Cane on Strange Sand or Fertile Soil.`
             ]
+        },
+        {
+            items: ['astralsorcery:infused_wood'],
+            text: [`Made by dropping any Log into Liquid Starlight.`]
         }
     ];
 
