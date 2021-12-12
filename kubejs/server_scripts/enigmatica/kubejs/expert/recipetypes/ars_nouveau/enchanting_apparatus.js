@@ -1801,6 +1801,270 @@ onEvent('recipes', (event) => {
             output: 'betterendforge:crystalite_boots',
             id: 'betterendforge:crystalite_boots'
         },
+        {
+            inputs: ['#forge:storage_blocks/mana', 'ars_nouveau:glyph_split'],
+            sourceCost: 100,
+            reagent: 'kubejs:scented_stick',
+            output: Item.of('32x ars_nouveau:split_arrow'),
+            id: 'ars_nouveau:split_arrow'
+        },
+        {
+            inputs: ['#forge:storage_blocks/mana', 'ars_nouveau:glyph_amplify'],
+            sourceCost: 100,
+            reagent: 'kubejs:scented_stick',
+            output: Item.of('32x ars_nouveau:amplify_arrow'),
+            id: 'ars_nouveau:amplify_arrow'
+        },
+        {
+            inputs: ['#forge:storage_blocks/mana', 'ars_nouveau:glyph_pierce'],
+            sourceCost: 100,
+            reagent: 'kubejs:scented_stick',
+            output: Item.of('32x ars_nouveau:pierce_arrow'),
+            id: 'ars_nouveau:pierce_arrow'
+        },
+        {
+            inputs: [
+                'eidolon:soul_shard',
+                'occultism:spirit_attuned_gem',
+                'eidolon:soul_shard',
+                '#forge:ingots/silicon_bronze',
+                '#forge:ingots/silicon_bronze',
+                'ars_nouveau:arcane_stone',
+                'ars_nouveau:arcane_stone',
+                'ars_nouveau:arcane_stone'
+            ],
+            sourceCost: 500,
+            reagent: '#forge:storage_blocks/mana',
+            output: 'ars_nouveau:summoning_crystal',
+            id: 'ars_nouveau:summoning_crystal'
+        },
+        {
+            inputs: [
+                '#forge:gems/mana',
+                '#forge:gems/mana',
+                '#forge:gems/mana',
+                '#forge:nuggets/gold',
+                '#forge:nuggets/gold',
+                '#forge:nuggets/gold',
+                '#forge:nuggets/gold',
+                '#forge:nuggets/gold'
+            ],
+            sourceCost: 1000,
+            reagent: 'ars_nouveau:carbuncle_shards',
+            output: 'ars_nouveau:carbuncle_charm',
+            id: 'ars_nouveau:carbuncle_charm'
+        },
+        {
+            inputs: [
+                '#forge:gems/mana',
+                '#forge:gems/mana',
+                '#forge:gems/mana',
+                '#forge:ingots/tinkers_bronze',
+                '#forge:ingots/tinkers_bronze'
+            ],
+            sourceCost: 1000,
+            reagent: 'kubejs:scented_stick',
+            output: 'ars_nouveau:dominion_wand',
+            id: 'ars_nouveau:dominion_wand'
+        },
+        {
+            inputs: [
+                'botania:quartz_lavender',
+                '#forge:gems/fluorite',
+                'botania:quartz_lavender',
+                '#forge:ingots/tinkers_bronze',
+                '#forge:ingots/tinkers_bronze',
+                'botania:quartz_lavender',
+                '#forge:gems/fluorite',
+                'botania:quartz_lavender'
+            ],
+            sourceCost: 1000,
+            reagent: 'ars_nouveau:arcane_relay',
+            output: 'ars_nouveau:arcane_relay_splitter',
+            id: 'ars_nouveau:arcane_relay_splitter'
+        },
+        {
+            inputs: [
+                'botania:quartz_lavender',
+                '#forge:gems/apatite',
+                'botania:quartz_lavender',
+                '#forge:ingots/tinkers_bronze',
+                '#forge:ingots/tinkers_bronze',
+                'botania:quartz_lavender',
+                '#forge:gems/apatite',
+                'botania:quartz_lavender'
+            ],
+            sourceCost: 1000,
+            reagent: 'ars_nouveau:arcane_relay',
+            output: 'ars_nouveau:relay_deposit',
+            id: 'ars_nouveau:relay_deposit'
+        },
+        {
+            inputs: [
+                '#forge:gems/prismarine',
+                '#forge:gems/mana',
+                '#forge:gems/prismarine',
+                '#forge:ingots/gold',
+                '#forge:ingots/gold',
+                '#forge:gems/prismarine',
+                '#forge:gems/mana',
+                '#forge:gems/prismarine'
+            ],
+            sourceCost: 1000,
+            reagent: 'ars_nouveau:mana_jar',
+            output: 'ars_nouveau:arcane_relay',
+            id: 'ars_nouveau:arcane_relay'
+        },
+        {
+            inputs: [
+                'waystones:warp_dust',
+                '#forge:gems/ender',
+                'waystones:warp_dust',
+                '#forge:ingots/tinkers_bronze',
+                '#forge:ingots/tinkers_bronze',
+                'waystones:warp_dust',
+                '#forge:gems/ender',
+                'waystones:warp_dust'
+            ],
+            sourceCost: 5000,
+            reagent: 'ars_nouveau:arcane_relay',
+            output: 'ars_nouveau:relay_warp',
+            id: 'ars_nouveau:relay_warp'
+        },
+        {
+            inputs: [
+                'eidolon:soul_shard',
+                Item.of('minecraft:potion', '{Potion:"apotheosis:knowledge"}'),
+                'eidolon:soul_shard',
+                '#forge:ingots/osmium',
+                '#forge:ingots/osmium',
+                '#forge:ingots/osmium',
+                'ars_nouveau:novice_spell_book',
+                '#forge:ingots/osmium'
+            ],
+            sourceCost: 5000,
+            reagent: '#forge:eggs',
+            output: 'ars_nouveau:whelp_charm',
+            id: 'ars_nouveau:whelp_charm'
+        },
+        {
+            inputs: [
+                '#forge:ingots/gold_brass',
+                'create:polished_rose_quartz',
+                '#forge:ingots/gold_brass',
+                'ars_nouveau:spell_parchment',
+                'ars_nouveau:glyph_redstone_signal',
+                '#forge:ingots/gold_brass',
+                'create:polished_rose_quartz',
+                '#forge:ingots/gold_brass'
+            ],
+            sourceCost: 500,
+            reagent: 'minecraft:dispenser',
+            output: 'ars_nouveau:spell_turret',
+            id: 'ars_nouveau:spell_turret'
+        },
+        {
+            inputs: [
+                'create:polished_rose_quartz',
+                'minecraft:clock',
+                'create:polished_rose_quartz',
+                '#forge:ingots/tinkers_bronze',
+                '#forge:ingots/tinkers_bronze',
+                'create:polished_rose_quartz',
+                'create:polished_rose_quartz',
+                'create:polished_rose_quartz'
+            ],
+            sourceCost: 500,
+            reagent: 'ars_nouveau:spell_turret',
+            output: 'ars_nouveau:timer_spell_turret',
+            id: 'ars_nouveau:timer_spell_turret'
+        },
+        {
+            inputs: [
+                '#forge:inlays/arcane_gold',
+                '#forge:storage_blocks/mana',
+                '#forge:inlays/arcane_gold',
+                '#forge:storage_blocks/tinkers_bronze',
+                '#forge:storage_blocks/tinkers_bronze',
+                '#forge:inlays/arcane_gold',
+                '#forge:storage_blocks/mana',
+                '#forge:inlays/arcane_gold'
+            ],
+            sourceCost: 5000,
+            reagent: 'mekanismtools:osmium_shield',
+            output: Item.of('ars_nouveau:enchanters_shield', '{Damage:0}').weakNBT(),
+            id: 'ars_nouveau:enchanters_shield'
+        },
+        {
+            inputs: [
+                'ars_nouveau:glyph_self',
+                'atum:crystal_glass',
+                'ars_nouveau:glyph_self',
+                '#forge:ingots/tinkers_bronze',
+                '#forge:ingots/tinkers_bronze',
+                '#forge:gems/mana',
+                'ars_nouveau:purple_archwood_log',
+                '#forge:gems/mana'
+            ],
+            sourceCost: 5000,
+            reagent: '#forge:plates/silver',
+            output: 'ars_nouveau:enchanters_mirror',
+            id: 'ars_nouveau:enchanters_mirror'
+        },
+        {
+            inputs: [
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/mana',
+                'ars_nouveau:glyph_split',
+                'resourcefulbees:carbee_honeycomb_block',
+                'resourcefulbees:carbee_honeycomb_block'
+            ],
+            sourceCost: 75,
+            reagent: 'kubejs:scented_stick',
+            output: Item.of('48x ars_nouveau:split_arrow'),
+            id: `${id_prefix}split_arrow`
+        },
+        {
+            inputs: [
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/mana',
+                'ars_nouveau:glyph_amplify',
+                'resourcefulbees:carbee_honeycomb_block',
+                'resourcefulbees:carbee_honeycomb_block'
+            ],
+            sourceCost: 75,
+            reagent: 'kubejs:scented_stick',
+            output: Item.of('48x ars_nouveau:amplify_arrow'),
+            id: `${id_prefix}amplify_arrow`
+        },
+        {
+            inputs: [
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/mana',
+                'ars_nouveau:glyph_pierce',
+                'resourcefulbees:carbee_honeycomb_block',
+                'resourcefulbees:carbee_honeycomb_block'
+            ],
+            sourceCost: 75,
+            reagent: 'kubejs:scented_stick',
+            output: Item.of('48x ars_nouveau:pierce_arrow'),
+            id: `${id_prefix}pierce_arrow`
+        },
+        {
+            inputs: [
+                '#forge:ingots/tinkers_bronze',
+                'ars_nouveau:wilden_tribute',
+                '#forge:ingots/tinkers_bronze',
+                'ars_nouveau:wilden_spike',
+                'ars_nouveau:wilden_wing',
+                '#forge:ingots/tinkers_bronze',
+                'ars_nouveau:wilden_horn',
+                '#forge:ingots/tinkers_bronze'
+            ],
+            reagent: 'ars_nouveau:summoning_crystal',
+            output: 'ars_nouveau:summon_focus',
+            id: 'ars_nouveau:summon_focus'
+        },
 
         /// Patchouli Removals
         {
