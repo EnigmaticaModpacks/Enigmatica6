@@ -2014,7 +2014,6 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:storage_blocks/mana',
-                '#forge:storage_blocks/mana',
                 'ars_nouveau:glyph_split',
                 'resourcefulbees:carbee_honeycomb_block',
                 'resourcefulbees:carbee_honeycomb_block'
@@ -2027,7 +2026,6 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:storage_blocks/mana',
-                '#forge:storage_blocks/mana',
                 'ars_nouveau:glyph_amplify',
                 'resourcefulbees:carbee_honeycomb_block',
                 'resourcefulbees:carbee_honeycomb_block'
@@ -2039,7 +2037,6 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:storage_blocks/mana',
                 '#forge:storage_blocks/mana',
                 'ars_nouveau:glyph_pierce',
                 'resourcefulbees:carbee_honeycomb_block',
@@ -2061,9 +2058,26 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:wilden_horn',
                 '#forge:ingots/tinkers_bronze'
             ],
+            sourceCost: 10000,
             reagent: 'ars_nouveau:summoning_crystal',
             output: 'ars_nouveau:summon_focus',
             id: 'ars_nouveau:summon_focus'
+        },
+        {
+            inputs: [
+                '#forge:nuggets/arcane_gold',
+                'ars_nouveau:glyph_craft',
+                '#forge:nuggets/arcane_gold',
+                'architects_palette:twisted_sapling',
+                'eidolon:wooden_brewing_stand',
+                '#forge:nuggets/arcane_gold',
+                '#forge:coins/electrum',
+                '#forge:nuggets/arcane_gold'
+            ],
+            sourceCost: 100,
+            reagent: 'ars_nouveau:wixie_shards',
+            output: 'ars_nouveau:wixie_charm',
+            id: 'ars_nouveau:wixie_charm'
         },
 
         /// Patchouli Removals
