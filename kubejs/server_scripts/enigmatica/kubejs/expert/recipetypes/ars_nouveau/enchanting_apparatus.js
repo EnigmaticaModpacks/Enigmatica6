@@ -2079,6 +2079,71 @@ onEvent('recipes', (event) => {
             output: 'ars_nouveau:wixie_charm',
             id: 'ars_nouveau:wixie_charm'
         },
+        {
+            inputs: [
+                'ars_nouveau:mana_fiber',
+                '#forge:gems/mana',
+                'ars_nouveau:mana_fiber',
+                '#forge:ingots/tinkers_bronze',
+                '#forge:ingots/tinkers_bronze',
+                'ars_nouveau:mana_fiber',
+                '#forge:ingots/tinkers_bronze',
+                'ars_nouveau:mana_fiber'
+            ],
+            sourceCost: 200,
+            reagent: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+            output: 'ars_nouveau:potion_flask',
+            id: 'ars_nouveau:potion_flask'
+        },
+
+        {
+            inputs: [
+                'ars_nouveau:glyph_extend_time',
+                '#forge:gems/mana',
+                'ars_nouveau:glyph_extend_time',
+                '#forge:ingots/arcane_gold',
+                '#forge:ingots/arcane_gold',
+                'ars_nouveau:glyph_extend_time',
+                '#forge:gems/mana',
+                'ars_nouveau:glyph_extend_time'
+            ],
+            sourceCost: 500,
+            reagent: 'ars_nouveau:potion_flask',
+            output: 'ars_nouveau:potion_flask_extend_time',
+            id: 'ars_nouveau:potion_flask_extend_time'
+        },
+        {
+            inputs: [
+                'ars_nouveau:glyph_amplify',
+                '#forge:gems/mana',
+                'ars_nouveau:glyph_amplify',
+                '#forge:ingots/arcane_gold',
+                '#forge:ingots/arcane_gold',
+                'ars_nouveau:glyph_amplify',
+                '#forge:gems/mana',
+                'ars_nouveau:glyph_amplify'
+            ],
+            sourceCost: 500,
+            reagent: 'ars_nouveau:potion_flask',
+            output: 'ars_nouveau:potion_flask_amplify',
+            id: 'ars_nouveau:potion_flask_amplify'
+        },
+        {
+            inputs: [
+                '#forge:storage_blocks/mana',
+                'ars_nouveau:carbuncle_charm',
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/gold',
+                '#forge:storage_blocks/gold',
+                '#forge:storage_blocks/gold',
+                'ars_nouveau:wilden_tribute',
+                '#forge:storage_blocks/gold'
+            ],
+            sourceCost: 10000,
+            reagent: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:gold_bee' }).weakNBT(),
+            output: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:carbee_bee' }),
+            id: `${id_prefix}carbee_jar`
+        },
 
         /// Patchouli Removals
         {
