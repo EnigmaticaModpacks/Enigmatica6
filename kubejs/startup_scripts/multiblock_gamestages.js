@@ -31,11 +31,18 @@ onForgeEvent('blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler$
         if (!event.player.stages.has(requiredGameStage.get(name))) {
             event.setCanceled(true);
             if (!event.player.field_70170_p.field_72995_K) {
-                event.player.field_70170_p
-                    .asKJS()
-                    .getPlayer(event.player)
-                    .tell(`Requires Gamestage "${requiredGameStage.get(name).toString()}"`);
+                let gamestage_item = titleCase(requiredGameStage.get(name).toString().replace(/_/g, ' ')),
+                    error_message = `Obtain a ${gamestage_item} to be able to form this multiblock.`;
+                event.player.field_70170_p.asKJS().getPlayer(event.player).tell(error_message);
             }
         }
     }
 });
+
+function titleCase(str) {
+    var splitStr = str.toLowerCase().split(' ');
+    for (var i = 0; i < splitStr.length; i++) {
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+    }
+    return splitStr.join(' ');
+}

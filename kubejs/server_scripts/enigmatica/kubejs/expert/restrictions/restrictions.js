@@ -2,7 +2,7 @@ onEvent('server.datapack.high_priority', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const errorKey_prefix = 'enigmatica.restrictions.stage.';
+    const errorKey_prefix = 'gamestage.enigmatica.restrictions.';
 
     let restrictions = [
         // Soul Enchanter only usable in the nether after crafting a Hellfire Forge
