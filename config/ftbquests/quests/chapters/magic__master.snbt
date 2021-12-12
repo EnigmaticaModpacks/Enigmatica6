@@ -29,6 +29,7 @@
 			x: 4.5d
 			y: 2.0d
 			shape: "diamond"
+			description: ["Through careful handling, Demonic Will may be purified and crystallized. Though they resemble candies of a sort, those who attempted to consume it experimentally quickly devolved into gibbering wretches. It is uncertain if this merely accelerated their madness, or caused it, but no sane arcanist has attempted it since. "]
 			dependencies: ["690063418D6815D2"]
 			id: "5E1A0B48076CD5F6"
 			tasks: [
@@ -82,6 +83,7 @@
 			icon: "bloodmagic:altar"
 			x: 3.0d
 			y: -0.5d
+			description: ["A better receptacle is needed once more to delve deeper into the knowledge of the spirit worlds. A Mana Tablet, deeply rooted in the natural arts of this plane, will serve as a safe anchor. "]
 			dependencies: [
 				"07B58D349276A834"
 				"06A6BE8C4A3B0C1D"
@@ -96,6 +98,11 @@
 		{
 			x: 3.0d
 			y: 0.5d
+			description: [
+				"“Few problems cannot be solved with a bit of magic and a decent blade. Doubly so for a magical blade.”"
+				""
+				"– Strigeor the Soulsmith"
+			]
 			dependencies: [
 				"0BEFCA7CB5EE447D"
 				"06E76BE2A422E8AC"
@@ -115,8 +122,9 @@
 		}
 		{
 			x: 1.5d
-			y: 0.0d
+			y: 0.5d
 			shape: "diamond"
+			description: ["Seek out the Crystalline Mountains in the End where these crystals grow naturally in great abundance. "]
 			dependencies: ["3200842BF652DCB5"]
 			id: "0CFE47372EC49DC8"
 			tasks: [{
@@ -127,9 +135,9 @@
 		}
 		{
 			x: 1.5d
-			y: 1.0d
+			y: 1.5d
 			shape: "diamond"
-			description: ["Found commonly in the Sulfur Springs of the End."]
+			description: ["Found commonly in the Sulfur Springs of the End. Be prepared to go for a swim!"]
 			dependencies: ["3200842BF652DCB5"]
 			id: "69201BA9E47F94EE"
 			tasks: [{
@@ -140,8 +148,9 @@
 		}
 		{
 			x: 2.0d
-			y: 0.5d
+			y: 1.0d
 			shape: "diamond"
+			description: ["Enchanted Petals have long been used as a test of sorts for those seeking the title of Master. Requiring extensive travel through the inhospitable lands of the End, these petals hold the key to advanced spell casting and summoning.  "]
 			dependencies: [
 				"69201BA9E47F94EE"
 				"0CFE47372EC49DC8"
@@ -155,8 +164,13 @@
 		}
 		{
 			x: 4.0d
-			y: 1.5d
+			y: 1.0d
 			shape: "diamond"
+			description: [
+				"Before we run, we walk; before we walk, we crawl. "
+				""
+				"Harvesting Iesnium simply is not possible with the materials and magics of this plane. The first to discover and make use of it did so only with the aid of spirits bound into their tools. "
+			]
 			dependencies: ["152B45DD8C1899C2"]
 			id: "07786879C8859B12"
 			tasks: [{
@@ -174,8 +188,15 @@
 		}
 		{
 			x: 4.5d
-			y: 1.0d
+			y: 0.5d
 			shape: "diamond"
+			description: [
+				"A mysterious ore found seeping into the depths of this world, seemingly from the Otherworld. Little is known of its origins, though the lack of any naturally occurring sources in this plane suggest its source is not entirely natural. "
+				""
+				"Prized for both it’s magical capacity and ability to hold a keen edge, it has been sought after, and fought over, by arcanists and artificers throughout the ages. "
+				""
+				"Seek some in the nether with the assistance of Otherworld Goggles and a Divination Rod."
+			]
 			dependencies: ["07786879C8859B12"]
 			id: "690063418D6815D2"
 			tasks: [{
@@ -186,8 +207,9 @@
 		}
 		{
 			x: 5.0d
-			y: 1.5d
+			y: 1.0d
 			shape: "diamond"
+			description: ["Potent tools made from materials from across the realms and multi-disciplinary magics, the invention of Sentient Tools was a landmark moment in the arcane world, opening doors unimagined at the time. "]
 			dependencies: ["690063418D6815D2"]
 			id: "051F9C054B9CDE96"
 			tasks: [
@@ -219,7 +241,13 @@
 			x: 3.0d
 			y: 2.0d
 			shape: "diamond"
-			description: ["Summon and slay an Unbound Afrit to obtain Afrit Essence. "]
+			description: [
+				"It is said that the spirits of the Otherworld exist in an incorporeal state in their homes; the magic invoked in bringing them to this world assists them in building a form to inhabit to protect them during their stay. "
+				""
+				"Ordinarily these shells disintegrate entirely once the spirit leaves this realm, however some of the more powerful spirits seem to leave behind some small amount of Essence which has been found useful for the most advanced spirit magics. "
+				""
+				"Summon and slay an Unbound Afrit to obtain Afrit Essence. "
+			]
 			dependencies: ["152B45DD8C1899C2"]
 			id: "44ADBADBF2774DF4"
 			tasks: [{
@@ -229,8 +257,13 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 4.0d
 			y: 3.0d
+			description: [
+				"When her apprentice finally broke through the barred door and entered the chamber, Uphyxes was nowhere to be seen. To this day, the cause of her disappearance is a mystery. Some say she ascended to the Otherworld herself, shedding the chains of her mortal self and becoming a timeless being such as those she studied. "
+				""
+				"The only remnant of her final studies is the pentacle she had chalked in the chamber. Though a number of uses have been found for it since, no further arcanists have disappeared while using the Inverted Tower pentacle that she discovered."
+			]
 			dependencies: ["44ADBADBF2774DF4"]
 			id: "15799BB5752AECB9"
 			tasks: [{
@@ -250,6 +283,7 @@
 			icon: "bloodmagic:altar"
 			x: 3.0d
 			y: 4.5d
+			description: ["Mastery over the spiritual arts means the arcanist has reached a level of power where they may practice their magic outside of the Undergarden and away from the watchful eyes of dead who find their final rest there. "]
 			dependencies: ["4DE005315CFBB3AE"]
 			id: "3103AD6157F2D6AC"
 			tasks: [{
@@ -262,6 +296,7 @@
 			x: 2.5d
 			y: 2.5d
 			shape: "diamond"
+			description: ["Through a combination of both the natural and spiritual arts, a Weak Blood Shard may be created from the remnants of an Afrit’s shell. Craft some and prepare for one final expansion of your Blood Altar."]
 			dependencies: ["44ADBADBF2774DF4"]
 			id: "65BFA7184C041242"
 			tasks: [{
@@ -274,6 +309,7 @@
 			x: 3.0d
 			y: 3.0d
 			shape: "diamond"
+			description: ["With the Essence of an Afrit guiding the Altar it becomes possible to make use of many more runes, and therefore reach levels of power previously unattainable. "]
 			dependencies: ["65BFA7184C041242"]
 			id: "4DE005315CFBB3AE"
 			tasks: [{
@@ -408,6 +444,11 @@
 		{
 			x: -0.5d
 			y: 3.5d
+			description: [
+				"“Patience, Connor. You have done well. But it will take time. You're at one with all living things. Each man's thoughts and dreams are yours to know. You have power beyond imagination. Use it well, my friend.”"
+				""
+				"– Elder Ramirez to his apprentice upon successful celestial attunement"
+			]
 			dependencies: ["457523FA165A5A0B"]
 			id: "0E083E5951149AB5"
 			tasks: [{
@@ -417,7 +458,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 4.0d
 			y: -0.5d
 			shape: "diamond"
 			dependencies: ["06A6BE8C4A3B0C1D"]
