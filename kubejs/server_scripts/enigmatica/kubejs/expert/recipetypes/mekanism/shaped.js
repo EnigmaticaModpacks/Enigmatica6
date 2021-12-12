@@ -87,10 +87,9 @@ onEvent('recipes', (event) => {
             id: 'mekanism:thermal_evaporation/valve'
         },
         {
-            output: Item.of('3x mekanism:structural_glass'),
-            pattern: ['ABC', 'BCB', 'CBA'],
+            output: Item.of('5x mekanism:structural_glass'),
+            pattern: ['CBC', 'BCB', 'CBC'],
             key: {
-                A: '#mekanism:alloys/reinforced',
                 B: '#forge:plates/aluminum',
                 C: '#thermal:glass/hardened'
             },
