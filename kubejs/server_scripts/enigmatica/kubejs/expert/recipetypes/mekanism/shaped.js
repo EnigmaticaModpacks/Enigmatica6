@@ -803,6 +803,15 @@ onEvent('recipes', (event) => {
                 E: '#forge:plates/iron_osmium'
             },
             id: `mekanism:logistical_sorter`
+        },
+        {
+            output: Item.of(`8x mekanism:basic_logistical_transporter`),
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:ingots/steel',
+                B: 'pneumaticcraft:logistics_core'
+            },
+            id: `mekanism:transmitter/logistical_transporter/basic`
         }
     ];
 

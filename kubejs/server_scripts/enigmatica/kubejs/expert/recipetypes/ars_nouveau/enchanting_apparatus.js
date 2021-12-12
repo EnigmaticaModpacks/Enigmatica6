@@ -2144,6 +2144,13 @@ onEvent('recipes', (event) => {
             output: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:carbee_bee' }),
             id: `${id_prefix}carbee_jar`
         },
+        {
+            inputs: ['#forge:ingots/gold', '#forge:ingots/gold', '#forge:dusts/redstone', '#forge:dusts/redstone'],
+            sourceCost: 500,
+            reagent: 'eidolon:soul_shard',
+            output: Item.of('2x eidolon:arcane_gold_ingot'),
+            id: `${id_prefix}carbee_jar`
+        },
 
         /// Patchouli Removals
         {
