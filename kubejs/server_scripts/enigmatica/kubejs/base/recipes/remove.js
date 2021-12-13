@@ -139,6 +139,7 @@ onEvent('recipes', (event) => {
         'industrialforegoing:laser_drill_ore/copper',
         'industrialforegoing:laser_drill_ore/aluminum',
         'industrialforegoing:laser_drill_ore/coal',
+        'industrialforegoing:laser_drill_ore/certus_quartz',
         'industrialforegoing:stonework_generate/andesite',
         'industrialforegoing:stonework_generate/diorite',
         'industrialforegoing:stonework_generate/granite',
