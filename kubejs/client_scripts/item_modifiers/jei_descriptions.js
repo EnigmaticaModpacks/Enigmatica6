@@ -412,6 +412,10 @@ onEvent('jei.information', (event) => {
         {
             items: ['astralsorcery:infused_wood'],
             text: [`Made by dropping any Log into Liquid Starlight.`]
+        },
+        {
+            items: ['environmental:thief_hood'],
+            text: [`May be repaired with Rabbit Hide.`]
         }
     ];
 

@@ -1429,7 +1429,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'alexsmobs:moose_antler',
-                'environmental:thief_hood',
+                Item.of('environmental:thief_hood', '{Damage:0}').weakNBT(),
                 'alexsmobs:moose_antler',
                 'atum:wolf_pelt',
                 'atum:wolf_pelt',
