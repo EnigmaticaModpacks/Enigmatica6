@@ -425,14 +425,26 @@
 				"Judging."
 				""
 				"Your actions appear to have pleased one such being. Construct an Offering Table and see what wisdom it will impart upon you. "
+				""
+				"Of course, all knowledge comes at a cost…"
 			]
-			dependencies: ["54BD6A448EC80453"]
+			dependencies: [
+				"54BD6A448EC80453"
+				"46993F7BA43BE3AB"
+			]
 			id: "39F1798BD7FDA0EC"
-			tasks: [{
-				id: "289310ED8AE0AA8E"
-				type: "item"
-				item: "naturesaura:offering_table"
-			}]
+			tasks: [
+				{
+					id: "289310ED8AE0AA8E"
+					type: "item"
+					item: "naturesaura:offering_table"
+				}
+				{
+					id: "38201997FD403259"
+					type: "item"
+					item: "naturesaura:calling_spirit"
+				}
+			]
 		}
 		{
 			x: -3.5d
@@ -556,21 +568,6 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 1.5d
-			description: ["Of course, all knowledge comes at a cost…"]
-			dependencies: [
-				"39F1798BD7FDA0EC"
-				"46993F7BA43BE3AB"
-			]
-			id: "4780541D7D03AFE9"
-			tasks: [{
-				id: "5121A366F884AFEE"
-				type: "item"
-				item: "naturesaura:calling_spirit"
-			}]
-		}
-		{
 			x: 1.0d
 			y: 1.5d
 			description: [
@@ -631,6 +628,22 @@
 						sacrifice: 0b
 					}
 				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			description: [
+				"“There was always something new to be seen in the unchanging night sky…”"
+				""
+				"– Elder Leiber"
+			]
+			dependencies: ["39F1798BD7FDA0EC"]
+			id: "7154DB9C4506F05B"
+			tasks: [{
+				id: "652DE77D344E1B5F"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
 			}]
 		}
 	]

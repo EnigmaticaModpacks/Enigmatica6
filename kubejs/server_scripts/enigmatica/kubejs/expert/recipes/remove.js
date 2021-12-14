@@ -216,6 +216,7 @@ onEvent('recipes', (event) => {
         { output: 'botania:gaia_spreader', id: 'botania:gaia_spreader' },
         { output: 'botania:fel_pumpkin', id: 'botania:fel_pumpkin' },
         { output: 'botania:blood_pendant', id: 'botania:blood_pendant' },
+        { output: 'botania:ender_dagger', id: 'botania:ender_dagger' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
