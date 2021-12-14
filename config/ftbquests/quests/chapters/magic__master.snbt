@@ -384,6 +384,7 @@
 		{
 			x: -0.5d
 			y: 2.5d
+			description: ["Though quite potent in its raw form, some advanced practitioners have found that it may be further enhanced through special optics; filtering, focusing, and otherwise manipulating the starlight by way of special apparatuses."]
 			dependencies: ["54D0E568361DC267"]
 			id: "706AC0678CD303BA"
 			tasks: [{
@@ -395,6 +396,11 @@
 		{
 			x: 1.5d
 			y: 4.0d
+			description: [
+				"“Beautiful dreamer, wake unto me, Starlight and dewdrops are waiting for thee; Sounds of the rude world heard in the day, Lull'd by the moonlight have all pass'd away.”"
+				""
+				"– Aes-Danai Foster of the Celestial Order"
+			]
 			dependencies: ["42EC202E93A7E5A3"]
 			id: "2D6DDD000FC99514"
 			tasks: [{
@@ -406,6 +412,11 @@
 		{
 			x: 0.0d
 			y: 3.5d
+			description: [
+				"The skies of Alfheim have been described as a blanket of stars so dense hardly any sky may be seen. If true, it is no wonder that they’ve developed a special affinity for the celestial magics; their Mana-Infuser being several orders of magnitude more powerful than the Terrestrial Agglomeration Plates used and developed in our realms. "
+				""
+				"Over the ages, some of their secrets have been divulged and the knowledge guarded with care to ensure it is never lost. The ancient texts describe in great detail how to create and harness this wonderous tool. "
+			]
 			dependencies: ["706AC0678CD303BA"]
 			id: "42EC202E93A7E5A3"
 			tasks: [
@@ -428,6 +439,11 @@
 				"“Patience, Connor. You have done well. But it will take time. You're at one with all living things. Each man's thoughts and dreams are yours to know. You have power beyond imagination. Use it well, my friend.”"
 				""
 				"– Elder Ramirez to his apprentice upon successful celestial attunement"
+				"_________________________________"
+				""
+				"A special trapped ritual is described in the Journal of Ephraim the Incanter whereby a pentacle is chalked up and primed a few blocks below the floor of an arena suitable for battling the Guardian of Gaia. The entry shows the sorcerer drawing the Guardian into the center of the arena before striking the final blow."
+				""
+				"Patience and timing are of the utmost importance."
 			]
 			dependencies: [
 				"457523FA165A5A0B"
@@ -444,6 +460,7 @@
 			x: 1.5d
 			y: -1.0d
 			shape: "diamond"
+			description: ["Snares are a cruel joke invented to test the initiate. Most practitioners prefer the use of the Sentient Harm glyph to obtain Demon Will. "]
 			dependencies: ["06A6BE8C4A3B0C1D"]
 			id: "2182A1B04F9C2C84"
 			tasks: [{
