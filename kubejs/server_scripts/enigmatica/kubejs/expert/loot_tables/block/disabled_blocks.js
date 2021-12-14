@@ -32,7 +32,7 @@ onEvent('block.loot_tables', (event) => {
         { real: 'botania:apothecary_desert', fake: 'mekanism:salt' },
         { real: 'botania:apothecary_taiga', fake: 'mekanism:salt' },
         { real: 'botania:apothecary_mesa', fake: 'mekanism:salt' },
-        { real: 'botania:bifrost_perm', fake: 'byg:black_sand' },
+        { real: 'botania:bifrost_perm', fake: 'dustrial_decor:cardboard' },
         { real: 'botania:diluted_pool', fake: 'dustrial_decor:cardboard' }
     ];
     illusory_blocks.forEach((illusory_block) => {
