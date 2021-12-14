@@ -18,7 +18,7 @@
 				"tconstruct:mining_speed": 2.5125f
 				"tconstruct:attack_damage": 5.9375f
 				"tconstruct:harvest_level": 4.0f
-				"tconstruct:durability": 7562.5f
+				"tconstruct:durability": 7906.25f
 			}
 			tic_broken: 0b
 			tic_modifiers: [
@@ -82,7 +82,7 @@
 						"tconstruct:mining_speed": 2.5125f
 						"tconstruct:attack_damage": 5.9375f
 						"tconstruct:harvest_level": 4.0f
-						"tconstruct:durability": 7562.5f
+						"tconstruct:durability": 7906.25f
 					}
 					tic_broken: 0b
 					tic_modifiers: [
@@ -755,13 +755,23 @@
 			dependencies: ["155CE535A506F2D4"]
 			id: "23F5852361B79CC5"
 			tasks: [{
-				id: "4F528D63F9B53280"
+				id: "3187F82B6F7F3E2A"
 				type: "item"
+				title: "Tinker's Anvil"
 				item: {
-					id: "tconstruct:scorched_anvil"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						texture: "tconstruct:slimesteel_block"
+						items: [
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
@@ -2994,12 +3004,12 @@
 				{
 					id: "71C0FF1C37666BB9"
 					type: "item"
-					item: "tconstruct:sky_slime_boots"
+					item: "tconstruct:sky_slime"
 				}
 				{
 					id: "2542091A64F64F8C"
 					type: "item"
-					item: "tconstruct:ender_slime_boots"
+					item: "tconstruct:ender_slime"
 				}
 			]
 			rewards: [{
