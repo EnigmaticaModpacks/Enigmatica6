@@ -24,13 +24,13 @@ onEvent('recipes', (event) => {
                     canBeAttuned: true,
                     canBeCelestialCrystal: true
                 },
-                B: { tag: 'forge:storage_blocks/hepatizon' },
-                C: { item: 'create:shadow_steel' },
+                B: { item: 'create:shadow_steel_casing' },
+                C: { item: 'eidolon:shadow_gem' },
                 D: { item: 'astralsorcery:resonating_gem' },
                 E: { item: 'astralsorcery:colored_lens_spectral' },
                 F: { tag: 'botania:runes/asgard' },
-                G: { item: 'astralsorcery:marble_runed' },
-                H: { tag: 'forge:storage_blocks/alfsteel' },
+                G: { item: 'bloodmagic:etherealslate' },
+                H: { tag: 'botania:runes/niflheim' },
                 J: { tag: 'botania:runes/alfheim' },
                 K: { tag: 'botania:runes/midgard' }
             },

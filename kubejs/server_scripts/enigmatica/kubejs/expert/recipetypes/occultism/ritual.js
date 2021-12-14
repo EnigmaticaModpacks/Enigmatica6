@@ -893,10 +893,10 @@ onEvent('recipes', (event) => {
             },
             ritual_dummy: { item: 'kubejs:craft_attunement_altar' },
             ingredients: [
+                { item: 'mythicbotany:kvasir_blood' },
                 { tag: 'botania:runes/asgard' },
                 { tag: 'botania:runes/mana' },
                 { tag: 'botania:runes/midgard' },
-                { tag: 'botania:runes/mana' },
                 { tag: 'forge:ingots/gaia_spirit' },
                 { item: 'bloodmagic:corrosivecrystal' },
                 { tag: 'forge:ingots/gaia_spirit' },
@@ -1256,6 +1256,25 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'computercraft:turtle_advanced' },
             id: `${id_prefix}turtle_advanced`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 10,
+            ritual_dummy: { item: 'kubejs:craft_ender_dagger' },
+            ingredients: [
+                { item: 'bloodmagic:daggerofsacrifice' },
+                { item: 'eidolon:shadow_gem' },
+                { tag: 'botania:runes/nidavellir' },
+                { item: 'powah:ender_core' },
+                { tag: 'forge:inlays/arcane_gold' },
+                { tag: 'forge:inlays/arcane_gold' },
+                { item: 'botania:mana_pearl' },
+                { item: 'botania:mana_pearl' }
+            ],
+            result: Item.of('botania:ender_dagger', '{Damage:0,Unbreakable:1}').toJson(),
+            id: `${id_prefix}ender_dagger`
         }
     ];
 

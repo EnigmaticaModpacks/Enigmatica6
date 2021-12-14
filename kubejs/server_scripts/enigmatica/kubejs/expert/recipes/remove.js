@@ -216,6 +216,7 @@ onEvent('recipes', (event) => {
         { output: 'botania:gaia_spreader', id: 'botania:gaia_spreader' },
         { output: 'botania:fel_pumpkin', id: 'botania:fel_pumpkin' },
         { output: 'botania:blood_pendant', id: 'botania:blood_pendant' },
+        { output: 'botania:ender_dagger', id: 'botania:ender_dagger' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
@@ -223,6 +224,7 @@ onEvent('recipes', (event) => {
         { output: 'mythicbotany:fire_ring', id: 'mythicbotany:fire_ring' },
         { output: 'mythicbotany:ice_ring', id: 'mythicbotany:ice_ring' },
         { output: 'mythicbotany:mana_collector', id: 'mythicbotany:mana_collector' },
+        { output: 'mythicbotany:kvasir_mead', id: 'mythicbotany:kvasir_mead' },
 
         { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
         { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },
