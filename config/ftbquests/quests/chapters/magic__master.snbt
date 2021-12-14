@@ -34,7 +34,7 @@
 		}
 		{
 			x: 4.5d
-			y: 2.0d
+			y: 1.5d
 			shape: "diamond"
 			description: ["Through careful handling, Demonic Will may be purified and crystallized. Though they resemble candies of a sort, those who attempted to consume it experimentally quickly devolved into gibbering wretches. It is uncertain if this merely accelerated their madness, or caused it, but no sane arcanist has attempted it since. "]
 			dependencies: ["690063418D6815D2"]
@@ -167,7 +167,7 @@
 		}
 		{
 			x: 4.0d
-			y: 1.0d
+			y: 0.5d
 			shape: "diamond"
 			description: [
 				"Before we run, we walk; before we walk, we crawl. "
@@ -191,7 +191,7 @@
 		}
 		{
 			x: 4.5d
-			y: 0.5d
+			y: 0.0d
 			shape: "diamond"
 			description: [
 				"A mysterious ore found seeping into the depths of this world, seemingly from the Otherworld. Little is known of its origins, though the lack of any naturally occurring sources in this plane suggest its source is not entirely natural. "
@@ -210,7 +210,7 @@
 		}
 		{
 			x: 5.0d
-			y: 1.0d
+			y: 0.5d
 			shape: "diamond"
 			description: ["Potent tools made from materials from across the realms and multi-disciplinary magics, the invention of Sentient Tools was a landmark moment in the arcane world, opening doors unimagined at the time. "]
 			dependencies: ["690063418D6815D2"]
@@ -361,7 +361,13 @@
 			x: 0.5d
 			y: 2.0d
 			shape: "diamond"
-			description: ["Another trial is placed before those who would be called Master. Some believe it to be a mere shade, our inner demons made manifest while others see the very avatar of the Earth herself. One thing is certain, however; those who approached this challenge un-prepared were lucky if they escaped with their lives. "]
+			description: [
+				"Another trial is placed before those who would be called Master. "
+				""
+				"Some believe it to be a mere shade, our inner demons made manifest while others see the very avatar of the Earth herself."
+				""
+				"One thing is certain, however; those who approached this challenge un-prepared were lucky if they escaped with their lives."
+			]
 			dependencies: ["54D0E568361DC267"]
 			id: "457523FA165A5A0B"
 			tasks: [{

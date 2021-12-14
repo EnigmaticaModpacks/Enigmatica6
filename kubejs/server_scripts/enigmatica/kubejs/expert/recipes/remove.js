@@ -224,6 +224,7 @@ onEvent('recipes', (event) => {
         { output: 'mythicbotany:fire_ring', id: 'mythicbotany:fire_ring' },
         { output: 'mythicbotany:ice_ring', id: 'mythicbotany:ice_ring' },
         { output: 'mythicbotany:mana_collector', id: 'mythicbotany:mana_collector' },
+        { output: 'mythicbotany:kvasir_mead', id: 'mythicbotany:kvasir_mead' },
 
         { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
         { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },

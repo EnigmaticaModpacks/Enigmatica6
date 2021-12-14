@@ -25,12 +25,12 @@ onEvent('recipes', (event) => {
             mana: 4000000,
             ticks: 200,
             inputs: [
-                { item: 'botania:ender_dagger' },
-                { item: 'bloodmagic:looting_anointment_l' },
-                { item: 'botania:flask' },
-                { tag: 'forge:storage_blocks/iesnium' }
+                'botania:ender_dagger',
+                'bloodmagic:looting_anointment_l',
+                'botania:flask',
+                'naturesaura:token_rage'
             ],
-            outputs: [{ item: 'mythicbotany:kvasir_blood' }],
+            outputs: ['mythicbotany:kvasir_blood'],
             special_input: 'mythicbotany:wandering_trader',
             id: 'mythicbotany:mythicbotany_rune_rituals/kvasir_blood'
         }
@@ -50,6 +50,8 @@ onEvent('recipes', (event) => {
 
         recipe.type = 'mythicbotany:rune_ritual';
         recipe.runes = rune_inputs;
+        recipe.inputs = recipe.inputs.map((input) => Item.of(input).toJson());
+        recipe.outputs = recipe.outputs.map((output) => Item.of(output).toJson());
         event.custom(recipe).id(recipe.id);
     });
 });
