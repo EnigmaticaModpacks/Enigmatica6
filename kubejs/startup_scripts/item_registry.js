@@ -93,7 +93,7 @@ onEvent('item.registry', (event) => {
         'craft_mycelial_pink',
         'craft_mycelial_furnace',
         'craft_glyph_sentientharm',
-        'craft_glyph_ender_dagger'
+        'craft_ender_dagger'
     ];
 
     const reusableItemTextures = [
