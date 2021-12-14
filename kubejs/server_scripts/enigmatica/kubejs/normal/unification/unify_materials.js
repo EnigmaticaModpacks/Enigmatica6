@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:normal/unification/';
 
     materialsToUnify.forEach((material) => {
         var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
@@ -48,14 +49,14 @@ onEvent('recipes', (event) => {
 
         event.recipes.immersiveengineering
             .metal_press(output, Ingredient.of(input, 4), mold)
-            .id(`kubejs:immersiveengineering_metal_press_${material}_gear`);
+            .id(`${id_prefix}immersiveengineering_metal_press_${material}_gear`);
 
         event
             .shaped(output, [' B ', 'BAB', ' B '], {
                 A: '#forge:nuggets/iron',
                 B: input
             })
-            .id(`kubejs:crafting_shaped_${material}_gear`);
+            .id(`${id_prefix}crafting_shaped_${material}_gear`);
     }
 
     function rod_unification(event, material, ingot, gem, rod) {
@@ -78,19 +79,19 @@ onEvent('recipes', (event) => {
         }
 
         event.recipes.thermal
-            .press(Item.of(rod, 2), [input, mold])
+            .press(Item.of(rod, 1), [input, mold])
             .energy(2400)
-            .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
+            .id(`${id_prefix}immersiveengineering_metal_press_${material}_rod`);
 
         event.recipes.immersiveengineering
-            .metal_press(Item.of(rod, 2), input, mold)
-            .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
+            .metal_press(Item.of(rod, 1), input, mold)
+            .id(`${id_prefix}immersiveengineering_metal_press_${material}_rod`);
 
         event
             .shaped(output, ['A', 'A'], {
                 A: input
             })
-            .id(`kubejs:shaped_crafting_${material}_rod`);
+            .id(`${id_prefix}shaped_crafting_${material}_rod`);
     }
 
     function plate_unification(event, material, ingot, gem, plate) {
@@ -113,13 +114,13 @@ onEvent('recipes', (event) => {
         } else {
             return;
         }
-        event.shapeless(output, [input, hammer]).id(`kubejs:shapeless_crafting_${material}_plate`);
+        event.shapeless(output, [input, hammer]).id(`${id_prefix}shapeless_crafting_${material}_plate`);
 
         event.recipes.immersiveengineering
             .metal_press(output, input, mold)
-            .id(`kubejs:immersiveengineering_metal_press_${material}_plate`);
+            .id(`${id_prefix}immersiveengineering_metal_press_${material}_plate`);
 
-        event.recipes.create.pressing(output, input).id(`kubejs:create_pressing_${material}_plate`);
+        event.recipes.create.pressing(output, input).id(`${id_prefix}create_pressing_${material}_plate`);
 
         event.recipes.thermal
             .press(Item.of(output), input)
@@ -150,13 +151,13 @@ onEvent('recipes', (event) => {
         event.recipes.thermal
             .press(Item.of(output, 2), [input, mold])
             .energy(2400)
-            .id(`kubejs:immersiveengineering_metal_press_${material}_wire`);
+            .id(`${id_prefix}immersiveengineering_metal_press_${material}_wire`);
 
         event.recipes.immersiveengineering
             .metal_press(Item.of(output, 2), input, mold)
-            .id(`kubejs:immersiveengineering_metal_press_${material}_wire`);
+            .id(`${id_prefix}immersiveengineering_metal_press_${material}_wire`);
 
-        event.shapeless(output, [plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
+        event.shapeless(output, [plate, wireCutters]).id(`${id_prefix}shaped_crafting_${material}_wire`);
     }
 
     function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust, ingot) {
