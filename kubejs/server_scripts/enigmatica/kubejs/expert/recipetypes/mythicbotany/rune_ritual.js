@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
 
         recipe.type = 'mythicbotany:rune_ritual';
         recipe.runes = rune_inputs;
-        recipe.inputs = recipe.inputs.map((input) => Item.of(input).toJson());
+        recipe.inputs = recipe.inputs.map((input) => Ingredient.of(input).toJson());
         recipe.outputs = recipe.outputs.map((output) => Item.of(output).toJson());
         event.custom(recipe).id(recipe.id);
     });
