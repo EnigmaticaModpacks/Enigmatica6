@@ -19,6 +19,14 @@ onEvent('recipes', (event) => {
             pressure: 4.0,
             time: 300,
             id: `${id_prefix}crystalized_chorus_block`
+        },
+        {
+            input1: { type: 'pneumaticcraft:fluid', fluid: 'tconstruct:venom', amount: 25 },
+            input2: { type: 'pneumaticcraft:fluid', fluid: 'pneumaticcraft:etching_acid', amount: 25 },
+            fluid_output: { fluid: 'undergarden:virulent_mix_source', amount: 50 },
+            pressure: 2.0,
+            time: 300,
+            id: `${id_prefix}virulent_mix`
         }
     ];
 
