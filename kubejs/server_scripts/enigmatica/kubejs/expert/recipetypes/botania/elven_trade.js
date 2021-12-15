@@ -16,17 +16,28 @@ onEvent('recipes', (event) => {
                 item: 'botania:elementium_block'
             },
             id: 'botania:elven_trade/elementium_block'
+        },
+        {
+            inputs: [
+                { item: 'eidolon:polished_planks' },
+                { item: 'eidolon:polished_planks' },
+                { item: 'eidolon:polished_planks' },
+                { item: 'eidolon:polished_planks' }
+            ],
+            output: {
+                item: 'botania:dreamwood'
+            },
+            id: 'botania:elven_trade/dreamwood'
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
-            type: 'botania:elven_trade',
-            ingredients: recipe.inputs,
-            output: recipe.output
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event
+            .custom({
+                type: 'botania:elven_trade',
+                ingredients: recipe.inputs,
+                output: recipe.output
+            })
+            .id(recipe.id);
     });
 });

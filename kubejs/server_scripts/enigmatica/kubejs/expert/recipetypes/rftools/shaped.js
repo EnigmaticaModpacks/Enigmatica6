@@ -242,36 +242,6 @@ onEvent('recipes', (event) => {
             id: 'rftoolscontrol:processor'
         },
         {
-            output: 'rftoolscontrol:cpu_core_500',
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: '#forge:wires/lead',
-                B: 'refinedstorage:basic_processor',
-                C: 'pneumaticcraft:unassembled_pcb'
-            },
-            id: 'rftoolscontrol:cpu_core_500'
-        },
-        {
-            output: 'rftoolscontrol:cpu_core_1000',
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: '#forge:wires/copper',
-                B: 'refinedstorage:improved_processor',
-                C: 'rftoolscontrol:cpu_core_500'
-            },
-            id: 'rftoolscontrol:cpu_core_1000'
-        },
-        {
-            output: 'rftoolscontrol:cpu_core_2000',
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: '#forge:wires/electrum',
-                B: 'refinedstorage:advanced_processor',
-                C: 'rftoolscontrol:cpu_core_1000'
-            },
-            id: 'rftoolscontrol:cpu_core_2000'
-        },
-        {
             output: 'rftoolscontrol:graphics_card',
             pattern: ['ABA', 'CDA', 'EEE'],
             key: {
@@ -443,6 +413,17 @@ onEvent('recipes', (event) => {
                 E: 'mekanismtools:refined_obsidian_paxel'
             },
             id: 'rftoolsbuilder:shape_card_quarry'
+        },
+        {
+            output: 'rftoolsstorage:storage_scanner',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'fluxnetworks:flux_dust',
+                B: '#xnet:cables',
+                C: 'botania:forest_eye',
+                D: 'xnet:wireless_router'
+            },
+            id: 'rftoolsstorage:storage_scanner'
         }
     ];
 

@@ -26,7 +26,7 @@
 	#Base energy storage (Joules).
 	crusher = "20000"
 	#Base energy storage (Joules).
-	pressurizedReactionBase = "2000"
+	pressurizedReactionBase = "20000"
 	#Base energy storage (Joules).
 	chemicalInfuser = "80000"
 	#Base energy storage (Joules).
@@ -37,8 +37,6 @@
 	precisionSawmill = "20000"
 	#Base energy storage (Joules). Also defines max process rate.
 	antiprotonicNucleosynthesizer = "1000000000"
-	#Base energy storage (Joules).
-	combiner = "40000"
 	#Base energy storage (Joules).
 	metallurgicInfuser = "20000"
 	#Base energy storage (Joules).
@@ -61,4 +59,6 @@
 	chemicalDissolutionChamber = "160000"
 	#Base energy storage (Joules).
 	chemicalWasher = "80000"
+	#Base energy storage (Joules).
+	combiner = "40000"
 

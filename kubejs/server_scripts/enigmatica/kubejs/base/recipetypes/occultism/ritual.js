@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/occultism/ritual/'
     const recipes = [
         {
             ritual_type: 'occultism:summon_with_chance_of_chicken_tamed',
@@ -80,6 +81,32 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/possess_skeleton'
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:possess_djinni',
+            duration: 6,
+            entity_to_sacrifice: {
+                tag: 'forge:cows',
+                display_name: 'ritual.occultism.sacrifice.cows'
+            },
+            entity_to_summon: 'occultism:possessed_ghast',
+            ritual_dummy: { item: 'occultism:ritual_dummy/possess_ghast' },
+            ingredients: [
+                { tag: 'forge:netherrack' },
+                { tag: 'forge:netherrack' },
+                { tag: 'forge:netherrack' },
+                { tag: 'forge:magma' },
+                { tag: 'forge:magma' },
+                { tag: 'forge:magma' },
+                { item: 'minecraft:lava_bucket' },
+                { item: 'minecraft:lava_bucket' },
+                { item: 'minecraft:lava_bucket' },
+                { tag: 'forge:gems/diamond' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/possess_ghast'
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -356,6 +383,62 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/summon_wild_parrot'
+        },
+        /// Custom Rituals
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            duration: 12,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:bees/rocky',
+                display_name: 'ritual.occultism.sacrifice.rocky_bees'
+            },
+            pentacle_id: 'occultism:possess_foliot',
+            item_to_use: { item: 'occultism:datura' },
+            entity_to_summon: 'resourcefulbees:otherworldly_bee',
+            ritual_dummy: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:otherworldly_bee' }).toJson(),
+            ingredients: [
+                { item: 'resourcefulbees:silver_honeycomb' },
+                { item: 'resourcefulbees:silver_honeycomb' },
+                { item: 'resourcefulbees:silver_honeycomb' },
+                { item: 'resourcefulbees:silver_honeycomb' },
+                { item: 'occultism:burnt_otherstone' },
+                { item: 'occultism:burnt_otherstone' },
+                { item: 'occultism:burnt_otherstone' },
+                { item: 'occultism:burnt_otherstone' },
+                { tag: 'forge:dusts/silver' },
+                { tag: 'forge:dusts/silver' },
+                { tag: 'forge:dusts/silver' },
+                { tag: 'forge:dusts/silver' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: `${id_prefix}summon_otherwordly_bee`
+        },
+
+        // Item.of('resourcefulbees:bee_jar', '{Entity:"resourcefulbees:otherworldly_bee",display:{Name:\'{"italic":false,"extra":[{"text":" - "},{"translate":"entity.resourcefulbees.otherworldly_bee"}],"translate":"item.resourcefulbees.bee_jar_filled"}\'},Color:"#80251f"}')
+
+        {
+            ritual_type: 'occultism:craft',
+            activation_item: { item: 'resourcefulbees:illuminating_honey_bottle' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 3,
+            ritual_dummy: { item: 'kubejs:craft_otherworldly_honey_bottle' },
+            ingredients: [
+                { item: 'resourcefulbees:otherworldly_honeycomb' },
+                { item: 'resourcefulbees:otherworldly_honeycomb' },
+                { item: 'resourcefulbees:otherworldly_honeycomb' },
+                { item: 'resourcefulbees:otherworldly_honeycomb' },
+                { item: 'resourcefulbees:otherworldly_honeycomb' },
+                { item: 'resourcefulbees:otherworldly_honeycomb' },
+                { item: 'resourcefulbees:otherworldly_honeycomb' },
+                { item: 'resourcefulbees:otherworldly_honeycomb' },
+                { item: 'resourcefulbees:blaze_honeycomb' },,
+                { item: 'resourcefulbees:blaze_honeycomb' },,
+                { item: 'resourcefulbees:blaze_honeycomb' },,
+                { item: 'resourcefulbees:blaze_honeycomb' },
+            ],
+            result: { item: 'resourcefulbees:otherworldly_honey_bottle' },
+            id: `${id_prefix}craft_otherworldly_honey_bottle`
         }
     ];
     recipes.forEach((recipe) => {

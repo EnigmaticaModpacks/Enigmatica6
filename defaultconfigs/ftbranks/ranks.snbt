@@ -2,9 +2,10 @@
 	member: {
 		name: "Member"
 		power: 1
+		condition: "always_active"
 		ftbranks.name_format: "<{name}>"
 		ftbchunks.max_claimed: 1000,
-        ftbchunks.max_force_loaded: 10,
+        ftbchunks.max_force_loaded: 25,
         command.back: false,
         command.warp: false,
         command.setwarp: false,
@@ -18,6 +19,7 @@
 	admin: {
 		name: "Admin"
 		power: 1000
+		condition: "op"
 		ftbranks.name_format: "<&2{name}&r>"
 	}
 }

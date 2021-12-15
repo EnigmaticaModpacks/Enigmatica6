@@ -1,111 +1,76 @@
 
-[client]
+#Gameplay settings
+[settings]
 
-	#Configuration entries related to the settings of gameplay aspects.
-	[client.settings]
-		#When enabled allows cycling through the tool modes of the chisel using (sneak) right clicks.
-		enable-right-click-mode-change = false
-		#When enabled changes the "damage"-bar indicator to be completely full when the bag is completely empty.
-		invert-bit-bag-fullness = false
-		#When enabled this gives each chisel its own chisel mode, instead of having a chisel mode globally.
-		per-chisel-mode = true
-		#When enabled notifies you of changes to for example tool modes in the chat.
-		chat-mode-notification = true
-		#When enabled shows the newly selected tool-mode in the item name.
-		item-name-mode-display = true
+	#Bit-Bag settings
+	[settings.bit-bag]
+		#Should the durability bar display the emptiness of the bag instead of the fullness?
+		invert-durability-bar-indication = false
 
-		[client.settings.enable]
+	#Configures the tool mode icons used to render the selected tool modes of tools in the hot bar.
+	[settings.selected-tool-mode-icons]
+		#Sets which tool mode icon renderer is in use. Currently C&B provides: `chiselsandbits:group` (Render the group icon in the top right corner) and `chiselsandbits:noop` (No icon) as options.
+		renderer = "chiselsandbits:group"
 
-			[client.settings.enable.toolbar]
-				#When enabled shows the tool mode of tools in the toolbar.
-				icons = true
+	#Configures the chiseling and placement previews.
+	[settings.chiseling-previews]
+		#Sets which preview renderer is in use. Currently C&B provides: `chiselsandbits:default` (Simple outline rendering) and `chiselsandbits:noop` (No preview) as options.
+		renderer = "chiselsandbits:default"
 
-		[client.settings.clipboard]
-			#When enabled stores the data of broken chiseled blocks in your clipboard
-			add-broken-blocks = false
+		#Configures the default chiseling and placement preview.
+		[settings.chiseling-previews.default]
 
-		[client.settings.undo]
-			#The maximum amount of undo operations that are kept in memory. If more operations are added to the undo list, the oldest operations are removed from the list.
-			#Range: > -2147483648
-			max-count = 10
+			#Configures the colors of the outlines that the chiseling and placement preview have.
+			[settings.chiseling-previews.default.colors]
+				#The color for the chiseling preview outline.
+				chiseling = [0.85, 0.0, 0.0, 0.65]
+				#The color for the placement preview outline.
+				placement = [0.0, 0.85, 0.0, 0.65]
 
-		[client.settings.tape-measure]
-			#The maximum amount measurements stored before the oldest ones are removed.
-			#Range: > -2147483648
-			max-count = 10
-			#When enabled notifies you of measured sizes, measured with the tape measured, in the chat.
-			display-in-chat = true
+#Performance related options.
+[performance]
 
-		[client.settings.radial]
+	#Configures caches
+	[performance.caches]
 
-			[client.settings.radial.menu]
-				#The volume of the radial menu. Higher volume, makes the radial menu bigger.
-				#Range: 4.9E-324 ~ 1.7976931348623157E308
-				volume = 0.10000000149011612
+		#Cache size related options.
+		[performance.caches.sizes]
+			#Size of the bit storage inner models cache.
+			#Range: 0 ~ 9223372036854775807
+			bit-storage-content-models = 100
+			#Size of the block model cache.
+			#Range: 3500 ~ 20000
+			block-models = 10000
+			#Size of the model face cache.
+			#Range: 3500 ~ 20000
+			block-faces = 10000
 
-	[client.client]
+	#Options related to the building of the chiseled block models.
+	[performance.model-building]
+		#How many CPU threads should be used to build models?
+		#Range: 1 ~ 4
+		thead-count = 2
 
-		#Performance related client configuration.
-		[client.client.performance]
+	#Lighting related options.
+	[performance.lighting]
+		#Should C&B pull lighting values from model faces.
+		extract-lighting-values-from-faces = true
+		#Should C&B pull lighting values from blockstates.
+		extract-lighting-values-from-blockstates = true
 
-			[client.client.performance.bit-storage]
+#Options for the GUI
+[gui]
 
-				[client.client.performance.bit-storage.contents]
+	#Options for the radial menu.
+	[gui.radial-menu]
+		#Should the mouse indicator be rendered?
+		display-mouse-indicator = false
 
-					[client.client.performance.bit-storage.contents.cache]
-						#Determines the amount of models for the bit storage content, higher means more performance but also more memory usage.
-						#Range: 0 ~ 9223372036854775807
-						size = 100
+#Configures options related to different compatibility modules.
+[compat]
 
-			[client.client.performance.max-drawn-region]
-				#The max hit box size of a chiselable region. Bigger requires more performance and more memory.
-				#Range: 4.9E-324 ~ 1.7976931348623157E308
-				size = 4.0
-
-			[client.client.performance.lighting]
-				#When enabled dynamic model generation extracts light map data from the models face data.
-				face-lightmap-extraction = true
-				#When enabled extracts the light emittance data from the block-state during dynamic model generation.
-				use-value = true
-
-			[client.client.performance.vertexformats]
-
-				[client.client.performance.vertexformats.custom]
-					#When enabled this prevents custom vertex formats from working.
-					disabled = true
-
-			[client.client.performance.models]
-
-				[client.client.performance.models.cache]
-					#The size of the model cache.
-					#Range: 3500 ~ 20000
-					size = 3500
-
-				[client.client.performance.models.builder]
-					#mod.chiselsandbits.config.client.performance.models.builder.threadcount.comment
-					#Range: 2 ~ 4
-					threadcount = 4
-
-			[client.client.performance.faces]
-
-				[client.client.performance.faces.cache]
-					#mod.chiselsandbits.config.client.performance.faces.cache.size.comment
-					#Range: 3500 ~ 20000
-					size = 10000
-
-		[client.client.client]
-
-			#client.gui
-			[client.client.client.gui]
-
-				[client.client.client.gui.radial-menu]
-					#radial-menu.mouse-indicator
-					mouse-indicator = false
-
-			[client.client.client.compat]
-
-				#mod.chiselsandbits.config.compat.jei.comment
-				[client.client.client.compat.jei]
-					#mod.chiselsandbits.config.compat.jei.inject-bits.comment
-					inject-bits = false
+	#Compatibility options for JEI.
+	[compat.jei]
+		#Should C&B inject its bits into JEI?
+		inject-bits = false
 

@@ -5,6 +5,16 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/thermal/reaction';
     const recipes = [
         {
+            itemInput: { amount: 2, ingredient: { tag: 'forge:fuels/bio' } },
+            fluidInput: { amount: 10, tag: 'minecraft:water' },
+            gasInput: { amount: 100, gas: 'mekanism:hydrogen' },
+            energyRequired: 100,
+            duration: 2000,
+            itemOutput: { item: 'mekanism:substrate' },
+            gasOutput: { gas: 'mekanism:ethene', amount: 100 },
+            id: 'mekanism:reaction/substrate/water_hydrogen'
+        },
+        {
             itemInput: { ingredient: { tag: 'forge:ingots/manyullyn', count: 2 } },
             fluidInput: { amount: 144, fluid: 'materialis:molten_shadow_steel' },
             gasInput: { amount: 1000, gas: 'mekanism:plutonium' },

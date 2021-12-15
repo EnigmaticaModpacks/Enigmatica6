@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.17"
+$MODPACK_VERSION = "0.5.22"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.5.16"
+$LAST_MODPACK_VERSION = "0.5.21"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -159,10 +159,12 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"roadrunner/common.toml",
 	"oauth-client.toml",
 	"jeed-client.toml",
-	"valhelsia_core-client.toml"
+	"valhelsia_core-client.toml",
+	"forge-client.toml",
+	"configured-client.toml"
 )
 
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "config/configswapper/Launch Backup")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt")
 
 #=====================================================================//
 #  SERVER FILE SETTINGS

@@ -220,8 +220,253 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}logic_cable`
+        },
+        {
+            input: 'immersiveengineering:insulating_glass',
+            outputs: ['immersiveengineering:circuit_board'],
+            transitionalItem: 'immersiveengineering:insulating_glass',
+            loops: 1,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['immersiveengineering:insulating_glass', '#forge:plates/copper'],
+                    output: 'immersiveengineering:insulating_glass'
+                },
+                {
+                    type: 'deploying',
+                    input: ['immersiveengineering:insulating_glass', 'powah:dielectric_paste'],
+                    output: 'immersiveengineering:insulating_glass'
+                }
+            ],
+            id: `${id_prefix}backplane_alternate`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:engineering_student_supplies'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 20,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:craftingtable'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:screwdriver'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:hammer'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:wirecutter'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:manual'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#create:seats'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}engineering_student_supplies`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:building_materials'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 500,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'create:copper_shingles'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'quark:framed_glass'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}building_materials`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:landscaping_materials'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 250,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'quark:turf'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'quark:turf'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'quark:turf'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'quark:turf'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#minecraft:small_flowers'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#minecraft:leaves'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}landscaping_materials`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:construction_tools'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 5,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:jackhammer'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:drill_bit_compressed_iron'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}construction_tools`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:foundation_materials'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 500,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:concrete'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:concrete'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:concrete'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', '#immersiveengineering:scaffoldings/steel'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'engineersdecor:clinker_brick_block'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'engineersdecor:clinker_brick_block'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}foundation_materials`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:computer_package'],
+            transitionalItem: 'mekanism:cardboard_box',
+            loops: 5,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
+                    output: 'mekanism:cardboard_box'
+                }
+            ],
+            id: `${id_prefix}computer_package`
         }
     ];
+
+    /// Armor Crafting Loops
 
     let armorTypes = [
         {
@@ -358,6 +603,12 @@ onEvent('recipes', (event) => {
                     material: '#forge:ingots/neptunium',
                     result: 'aquaculture:neptunium_helmet',
                     id: 'aquaculture:neptunium_helmet'
+                },
+                {
+                    base: 'minecraft:chainmail_helmet',
+                    material: '#forge:ingots/manyullyn',
+                    result: 'tconstruct:plate_helmet',
+                    id: 'tconstruct:armor/building/plate_helmet'
                 }
             ]
         },
@@ -507,6 +758,12 @@ onEvent('recipes', (event) => {
                     material: '#forge:ingots/neptunium',
                     result: 'aquaculture:neptunium_chestplate',
                     id: 'aquaculture:neptunium_chestplate'
+                },
+                {
+                    base: 'minecraft:chainmail_chestplate',
+                    material: '#forge:ingots/manyullyn',
+                    result: 'tconstruct:plate_chestplate',
+                    id: 'tconstruct:armor/building/plate_chestplate'
                 }
             ]
         },
@@ -650,6 +907,12 @@ onEvent('recipes', (event) => {
                     material: '#forge:ingots/neptunium',
                     result: 'aquaculture:neptunium_leggings',
                     id: 'aquaculture:neptunium_leggings'
+                },
+                {
+                    base: 'minecraft:chainmail_leggings',
+                    material: '#forge:ingots/manyullyn',
+                    result: 'tconstruct:plate_leggings',
+                    id: 'tconstruct:armor/building/plate_leggings'
                 }
             ]
         },
@@ -787,6 +1050,12 @@ onEvent('recipes', (event) => {
                     material: '#forge:ingots/neptunium',
                     result: 'aquaculture:neptunium_boots',
                     id: 'aquaculture:neptunium_boots'
+                },
+                {
+                    base: 'minecraft:chainmail_boots',
+                    material: '#forge:ingots/manyullyn',
+                    result: 'tconstruct:plate_boots',
+                    id: 'tconstruct:armor/building/plate_boots'
                 }
             ]
         }
@@ -795,30 +1064,30 @@ onEvent('recipes', (event) => {
     armorTypes.forEach((armorType) => {
         armorType.armors.forEach((armor) => {
             recipes.push({
-                input: armor.base,
+                input: Item.of(armor.base, '{Damage:0}').weakNBT(),
                 outputs: [armor.result],
-                transitionalItem: armor.base,
+                transitionalItem: armor.material,
                 loops: armorType.loops,
                 sequence: [
                     {
                         type: 'deploying',
-                        input: [armor.base, armor.material],
-                        output: armor.base
+                        input: [armor.material, armor.material],
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     }
                 ],
                 id: armor.id

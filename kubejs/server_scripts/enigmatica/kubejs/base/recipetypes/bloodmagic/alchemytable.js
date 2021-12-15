@@ -63,7 +63,7 @@ onEvent('recipes', (event) => {
             syphon: 150,
             ticks: 100,
             orbLevel: 2,
-            id: `${id_prefix}clay_from_sand_sigil`
+            id: 'bloodmagic:alchemytable/clay_from_sand_sigil'
         },
         {
             inputs: ['#forge:rods/blaze'],

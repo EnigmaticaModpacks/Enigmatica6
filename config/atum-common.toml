@@ -189,6 +189,8 @@
 	#How long time is required for an Assassin to spawn. The higher the number, the less frequent Assassin will spawn
 	#Range: 1 ~ 10000
 	markedForDeathFrequency = 1000
+	#Whether a message should be broadcast to everybody, when a Pharaoh have been killed
+	displayPharaohSlainMessage = true
 
 	[mobs.desert_rabbit]
 		#Range: -1 ~ 63

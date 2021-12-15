@@ -130,7 +130,7 @@ onEvent('jei.information', (event) => {
         {
             items: ['minecraft:nautilus_shell'],
             text: [
-                'Obtained by killing Nautilus, found in Oceans.',
+                'Obtained by killing Nautilus, found in Warm Oceans.',
                 ' ',
                 'Also obtained from Embedded Ammonite, found at any Y level in Oceans and Beaches.'
             ]
@@ -298,7 +298,7 @@ onEvent('jei.information', (event) => {
             text: [
                 `Used in a Logic Unit to create advanced Redstone Logic.`,
                 ` `,
-                `Programmed on an Engineer's Circuit Table. Requires Circuit Backplanes, Lead or Copper Wire, and Vacuum Tubes.`
+                `Crafted in an Engineer's Circuit Table. Requires Circuit Backplanes and Lead or Copper Wire. Vacuum Tubes are required for all operators except SET.`
             ]
         },
         {
@@ -372,6 +372,63 @@ onEvent('jei.information', (event) => {
                 `Red Fertilizer: 2.0x`,
                 `Phyto-Gro: 3.0x`
             ]
+        },
+        {
+            items: ['quark:dragon_scale'],
+            text: [`Only drops from Ender Dragons after the first one has been killed.`]
+        },
+        {
+            items: [
+                'dankstorage:1_to_2',
+                'dankstorage:2_to_3',
+                'dankstorage:3_to_4',
+                'dankstorage:4_to_5',
+                'dankstorage:5_to_6',
+                'dankstorage:6_to_7'
+            ],
+            text: [`Sneak Right Click to upgrade a Dank installed in a Dock.`]
+        },
+        {
+            items: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:dusty_mummbee_bee' })],
+            text: [`The Dusty Mummbee can be found inside the Pharaoh's Sarcophagus.`]
+        },
+        {
+            items: ['quark:slime_in_a_bucket'],
+            text: [`Scoop up a small slime in an empty bucket.`]
+        },
+        {
+            items: ['alexsmobs:mysterious_worm'],
+            text: [
+                `Summons a Void Worm when tossed into the void in The End.`,
+                ` `,
+                `Place a Crimson Mosquito Larva inside a Capsid to obtain.`
+            ]
+        },
+        {
+            items: ['alexsmobs:capsid'],
+            text: [
+                `Dropped by Enderiophage.`,
+                ` `,
+                `Enderiophage may be found in the wild in the End Midlands biome. They may also be called forth by consuming Otherworldly Honey.`
+            ]
+        },
+        {
+            items: ['eidolon:sanguine_amulet', 'eidolon:sapping_sword'],
+            text: [`For crafting steps, refer to the Sanguine Items section under Rituals in the Ars Ecclesia.`]
+        },
+        {
+            items: ['atum:papyrus_plant'],
+            text: [
+                `Commonly found growing in Oasis Biomes in Atum. Grows like Sugar Cane on Strange Sand or Fertile Soil.`
+            ]
+        },
+        {
+            items: ['astralsorcery:infused_wood'],
+            text: [`Made by dropping any Log into Liquid Starlight.`]
+        },
+        {
+            items: ['environmental:thief_hood'],
+            text: [`May be repaired with Rabbit Hide.`]
         }
     ];
 

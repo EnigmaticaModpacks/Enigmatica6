@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             input: 'architects_palette:sunmetal_brick',
-            output: 'naturesaura:infused_iron',
+            output: { item: 'naturesaura:infused_iron' },
             aura_type: 'naturesaura:overworld',
             aura: 15000,
             time: 80,
@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'architects_palette:sunmetal_block',
-            output: 'naturesaura:infused_iron_block',
+            output: { item: 'naturesaura:infused_iron_block' },
             aura_type: 'naturesaura:overworld',
             aura: 135000,
             time: 700,
@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: '#forge:ingots/arcane_gold',
-            output: 'naturesaura:tainted_gold',
+            output: { item: 'naturesaura:tainted_gold' },
             aura_type: 'naturesaura:nether',
             aura: 15000,
             time: 80,
@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: '#forge:storage_blocks/arcane_gold',
-            output: 'naturesaura:tainted_gold_block',
+            output: { item: 'naturesaura:tainted_gold_block' },
             aura_type: 'naturesaura:nether',
             aura: 135000,
             time: 700,
@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'eidolon:candle',
-            output: 'occultism:candle_white',
+            output: { item: 'occultism:candle_white' },
             aura_type: 'naturesaura:nether',
             aura: 50000,
             time: 60,
@@ -46,7 +46,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'kubejs:firmament',
-            output: 'architects_palette:sunstone',
+            output: { item: 'architects_palette:sunstone' },
             aura_type: 'naturesaura:overworld',
             aura: 15000,
             time: 80,
@@ -54,7 +54,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'minecraft:vine',
-            output: 'quark:root',
+            output: { item: 'quark:root' },
             aura_type: 'naturesaura:nether',
             aura: 30000,
             time: 250,
@@ -62,7 +62,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'ars_nouveau:arcane_stone',
-            output: 'naturesaura:infused_stone',
+            output: { item: 'naturesaura:infused_stone' },
             aura_type: 'naturesaura:nether',
             aura: 15000,
             time: 40,
@@ -70,7 +70,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'minecraft:glass',
-            output: 'glassential:glass_ghostly',
+            output: { item: 'glassential:glass_ghostly' },
             aura_type: 'naturesaura:nether',
             aura: 100,
             time: 20,
@@ -78,25 +78,27 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'minecraft:ender_pearl',
-            output: 'integrateddynamics:proto_chorus',
+            output: { item: 'integrateddynamics:proto_chorus' },
             aura_type: 'naturesaura:nether',
             aura: 135000,
             time: 700,
             id: 'integrateddynamics:crafting/proto_chorus'
+        },
+        {
+            input: '#minecraft:fishes',
+            output: { item: 'aquaculture:fish_bones' },
+            aura_type: 'naturesaura:nether',
+            catalyst: { item: 'naturesaura:crushing_catalyst' },
+            aura: 1000,
+            time: 60,
+            id: `${id_prefix}fish_bones`
         }
     ];
+
     recipes.forEach((recipe) => {
-        let constructed_recipe = {
-            type: 'naturesaura:altar',
-            input: Ingredient.of(recipe.input).toJson(),
-            output: Ingredient.of(recipe.output).toJson(),
-            aura_type: recipe.aura_type,
-            aura: recipe.aura,
-            time: recipe.time
-        };
-        if (recipe.catalyst) {
-            constructed_recipe.catalyst = Ingredient.of(recipe.catalyst).toJson();
-        }
-        event.custom(constructed_recipe).id(recipe.id);
+        recipe.type = 'naturesaura:altar';
+        recipe.input = Ingredient.of(recipe.input).toJson();
+
+        event.custom(recipe).id(recipe.id);
     });
 });

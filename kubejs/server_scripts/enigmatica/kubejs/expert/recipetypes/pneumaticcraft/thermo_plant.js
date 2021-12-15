@@ -128,6 +128,19 @@ onEvent('recipes', (event) => {
             exothermic: true,
             temperature: { max_temp: 453 },
             id: `${id_prefix}lithium_dust`
+        },
+        {
+            fluid_input: {
+                type: 'pneumaticcraft:fluid',
+                fluid: 'resourcefulbees:otherworldly_honey',
+                amount: 250
+            },
+            item_input: { item: 'mythicbotany:kvasir_blood' },
+            item_output: { item: 'mythicbotany:kvasir_mead', count: 1 },
+            pressure: 4.0,
+            exothermic: false,
+            temperature: { max_temp: 1973 },
+            id: `${id_prefix}kvasir_mead`
         }
     ];
 

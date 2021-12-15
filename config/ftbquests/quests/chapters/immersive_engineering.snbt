@@ -14,17 +14,11 @@
 			y: -6.0d
 			shape: "gear"
 			description: ["Immersive Engineering is a versatile tech mod with a focus on large multiblock structures. You can find more information about anything in the mod in the Engineer's Handbook."]
+			optional: true
 			id: "0000000000000004"
 			tasks: [{
-				id: "0000000000000005"
-				type: "checkmark"
-				title: "Immersive Engineering"
-				icon: "immersiveengineering:manual"
-			}]
-			rewards: [{
-				id: "3D55700B5A77131D"
+				id: "4C4EC117244A21C7"
 				type: "item"
-				title: "Engineer's Hammer"
 				item: {
 					id: "immersiveengineering:hammer"
 					Count: 1b
@@ -32,6 +26,14 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "7B54B7BEEA99667F"
+				type: "item"
+				title: "Copper Chunk"
+				item: "emendatusenigmatica:copper_chunk"
+				count: 3
+				random_bonus: 5
 			}]
 		}
 		{
@@ -247,22 +249,29 @@
 			description: ["The Engineer's Workbench is needed to craft certain parts with the use of blueprints. You can also use it to modify certain tools later on."]
 			dependencies: ["0000000000000009"]
 			id: "0000000000000019"
-			tasks: [{
-				id: "000000000000001A"
-				type: "item"
-				item: "immersiveengineering:workbench"
-			}]
-			rewards: [{
-				id: "000000000000060F"
-				type: "item"
-				title: "Engineer's Blueprint"
-				item: {
-					id: "immersiveengineering:blueprint"
-					Count: 1b
-					tag: {
-						blueprint: "components"
+			tasks: [
+				{
+					id: "000000000000001A"
+					type: "item"
+					item: "immersiveengineering:workbench"
+				}
+				{
+					id: "16E5DF7E27BAB713"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blueprint"
+						Count: 1b
+						tag: {
+							blueprint: "components"
+						}
 					}
 				}
+			]
+			rewards: [{
+				id: "0911E6C5BB0AF5E5"
+				type: "item"
+				item: "immersiveengineering:component_iron"
+				count: 8
 			}]
 		}
 		{

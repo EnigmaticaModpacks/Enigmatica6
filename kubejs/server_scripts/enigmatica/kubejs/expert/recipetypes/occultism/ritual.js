@@ -350,9 +350,7 @@ onEvent('recipes', (event) => {
                 { tag: 'botania:runes/water' },
                 { tag: 'botania:runes/water' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/summon_foliot_crusher'
         },
 
@@ -399,9 +397,7 @@ onEvent('recipes', (event) => {
                 { tag: 'botania:runes/water' },
                 { tag: 'botania:runes/water' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/summon_afrit_crusher'
         },
 
@@ -449,9 +445,7 @@ onEvent('recipes', (event) => {
                 { item: 'minecraft:lodestone' },
                 { item: 'meetyourfight:spectres_grasp' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_greedy'
         },
         {
@@ -471,13 +465,11 @@ onEvent('recipes', (event) => {
                 { item: 'quark:gold_bars' },
                 { item: 'quark:gold_bars' },
                 { item: 'tconstruct:sky_cake' },
-                { item: 'create:white_sail' },
+                { item: 'simplefarming:raw_chicken_wings' },
                 { item: 'naturesaura:token_anger' },
-                { item: 'create:white_sail' }
+                { item: 'simplefarming:raw_chicken_wings' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_otherworld_bird'
         },
         {
@@ -501,9 +493,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:fruits/banana' },
                 { item: 'ars_nouveau:wilden_wing' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_bat'
         },
         {
@@ -527,9 +517,7 @@ onEvent('recipes', (event) => {
                 { item: 'minecraft:golden_apple' },
                 { item: 'minecraft:golden_apple' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_deer'
         },
         {
@@ -553,9 +541,7 @@ onEvent('recipes', (event) => {
                 { item: 'sushigocrafting:shrimp_nigiri' },
                 { item: 'sushigocrafting:shrimp_nigiri' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_cthulhu'
         },
         {
@@ -583,9 +569,7 @@ onEvent('recipes', (event) => {
                 { item: 'atum:anputs_fingers_spores' },
                 { item: 'byg:hanging_bones' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_devil'
         },
         {
@@ -613,10 +597,121 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:clusters/arcane' },
                 { item: 'alexsmobs:lava_bottle' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_dragon'
+        },
+        {
+            ritual_type: 'occultism:familiar',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:possess_djinni',
+            duration: 3,
+            entity_to_sacrifice: {
+                tag: 'forge:golems/snow',
+                display_name: 'ritual.occultism.sacrifice.snow_golem'
+            },
+            entity_to_summon: 'occultism:headless_familiar',
+            ritual_dummy: { item: 'occultism:ritual_dummy/familiar_headless' },
+            ingredients: [
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'simplefarming:scarecrow' },
+                { item: 'sushigocrafting:cleaver_knife' },
+                { item: 'simplefarming:cheese_block' },
+                { item: 'simplefarming:cheese_block' },
+                { item: 'minecraft:rotten_flesh' },
+                { item: 'minecraft:rotten_flesh' },
+                { item: 'minecraft:rotten_flesh' },
+                { item: 'minecraft:rotten_flesh' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/familiar_headless'
+        },
+        {
+            ritual_type: 'occultism:familiar',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:possess_djinni',
+            duration: 3,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:canines',
+                display_name: 'ritual.occultism.sacrifice.canines'
+            },
+            entity_to_summon: 'occultism:chimera_familiar',
+            ritual_dummy: { item: 'occultism:ritual_dummy/familiar_chimera' },
+            ingredients: [
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'alexsmobs:gazelle_horn' },
+                { item: 'alexsmobs:gazelle_horn' },
+                { item: 'alexsmobs:rattlesnake_rattle' },
+                { item: 'alexsmobs:bear_fur' },
+                { item: 'farmersdelight:horse_feed' },
+                { item: 'farmersdelight:dog_food' },
+                { item: 'farmersdelight:dog_food' },
+                { item: 'farmersdelight:horse_feed' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/familiar_chimera'
+        },
+        {
+            type: 'occultism:ritual',
+            ritual_type: 'occultism:familiar',
+            activation_item: { item: 'occultism:book_of_binding_bound_afrit' },
+            pentacle_id: 'occultism:possess_afrit',
+            duration: 3,
+            entity_to_sacrifice: {
+                tag: 'occultism:humans',
+                display_name: 'ritual.occultism.sacrifice.humans'
+            },
+            entity_to_summon: 'occultism:guardian_familiar',
+            ritual_dummy: { item: 'occultism:ritual_dummy/familiar_guardian' },
+            ingredients: [
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { tag: 'forge:gems/mana' },
+                { tag: 'forge:gems/mana' },
+                { item: 'ars_nouveau:warding_stone' },
+                { item: 'ars_nouveau:warding_stone' },
+                { item: 'ars_nouveau:warding_stone' },
+                { item: 'ars_nouveau:mythical_clay' },
+                { item: 'ars_nouveau:mythical_clay' },
+                { item: 'ars_nouveau:warding_stone' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/familiar_guardian'
+        },
+        {
+            ritual_type: 'occultism:familiar',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:possess_foliot',
+            duration: 3,
+            entity_to_sacrifice: {
+                tag: 'forge:zombies',
+                display_name: 'ritual.occultism.sacrifice.zombies'
+            },
+            entity_to_summon: 'occultism:blacksmith_familiar',
+            ritual_dummy: { item: 'occultism:ritual_dummy/familiar_blacksmith' },
+            ingredients: [
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'betterendforge:terminite_anvil' },
+                { item: 'betterendforge:terminite_hammer' },
+                { item: 'minecraft:blast_furnace' },
+                { item: 'supplementaries:bellows' },
+                { tag: 'forge:storage_blocks/coal' },
+                { tag: 'forge:storage_blocks/coal' },
+                { tag: 'forge:storage_blocks/coal' },
+                { tag: 'forge:storage_blocks/coal' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/familiar_blacksmith'
         },
 
         /// Custom Rituals
@@ -798,10 +893,10 @@ onEvent('recipes', (event) => {
             },
             ritual_dummy: { item: 'kubejs:craft_attunement_altar' },
             ingredients: [
+                { item: 'mythicbotany:kvasir_blood' },
                 { tag: 'botania:runes/asgard' },
                 { tag: 'botania:runes/mana' },
                 { tag: 'botania:runes/midgard' },
-                { tag: 'botania:runes/mana' },
                 { tag: 'forge:ingots/gaia_spirit' },
                 { item: 'bloodmagic:corrosivecrystal' },
                 { tag: 'forge:ingots/gaia_spirit' },
@@ -927,7 +1022,259 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:gears/osmium' }
             ],
             result: { item: 'mekanism:robit' },
-            id: 'mekanism:robit'
+            id: `${id_prefix}robit`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_feeding_upgrade' },
+            ingredients: [
+                { item: 'create:mechanical_arm' },
+                { item: 'farmersdelight:netherite_knife' },
+                { item: 'sophisticatedbackpacks:upgrade_base' },
+                { item: 'tconstruct:silky_cloth' }
+            ],
+            result: { item: 'sophisticatedbackpacks:feeding_upgrade' },
+            id: `${id_prefix}feeding_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_marid' },
+            pentacle_id: 'occultism:craft_marid',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_feeding_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:feeding_upgrade' },
+                { tag: 'botania:runes/gluttony' },
+                { item: 'botania:pixie_dust' },
+                { tag: 'botania:runes/gluttony' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_feeding_upgrade' },
+            id: `${id_prefix}advanced_feeding_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_auto_smelting_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:smelting_upgrade' },
+                { item: 'create:brass_funnel' },
+                { item: 'create:mechanical_arm' },
+                { item: 'create:brass_funnel' }
+            ],
+            result: { item: 'sophisticatedbackpacks:auto_smelting_upgrade' },
+            id: `${id_prefix}auto_smelting_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_pump_upgrade' },
+            ingredients: [
+                { item: 'create:mechanical_pump' },
+                { item: 'create:fluid_pipe' },
+                { item: 'sophisticatedbackpacks:upgrade_base' },
+                { item: 'create:fluid_pipe' },
+                { item: 'create:cogwheel' },
+                { item: 'create:hand_crank' }
+            ],
+            result: { item: 'sophisticatedbackpacks:pump_upgrade' },
+            id: `${id_prefix}pump_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_pump_upgrade' },
+            ingredients: [
+                { item: 'create:smart_fluid_pipe' },
+                { item: 'create:fluid_pipe' },
+                { item: 'sophisticatedbackpacks:pump_upgrade' },
+                { item: 'create:fluid_pipe' },
+                { item: 'create:filter' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_pump_upgrade' },
+            id: `${id_prefix}advanced_pump_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_xp_pump_upgrade' },
+            ingredients: [
+                { item: 'create:smart_fluid_pipe' },
+                { item: 'create:fluid_pipe' },
+                { item: 'sophisticatedbackpacks:pump_upgrade' },
+                { item: 'create:fluid_pipe' },
+                { item: 'create:filter' },
+                { item: 'ars_nouveau:greater_experience_gem' },
+                { item: 'ars_nouveau:greater_experience_gem' },
+                { item: 'ars_nouveau:greater_experience_gem' }
+            ],
+            result: { item: 'sophisticatedbackpacks:xp_pump_upgrade' },
+            id: `${id_prefix}xp_pump_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_compacting_upgrade' },
+            ingredients: [
+                { item: 'create:mechanical_press' },
+                { item: 'create:hand_crank' },
+                { item: 'create:basin' },
+                { item: 'sophisticatedbackpacks:crafting_upgrade' },
+                { item: 'create:large_cogwheel' },
+                { item: 'create:cogwheel' }
+            ],
+            result: { item: 'sophisticatedbackpacks:compacting_upgrade' },
+            id: `${id_prefix}compacting_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_compacting_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:compacting_upgrade' },
+                { item: 'create:precision_mechanism' },
+                { item: 'create:attribute_filter' },
+                { item: 'create:precision_mechanism' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_compacting_upgrade' },
+            id: `${id_prefix}advanced_compacting_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_tool_swapper_upgrade' },
+            ingredients: [
+                { item: 'create:deployer' },
+                { item: 'create:hand_crank' },
+                { item: 'meetyourfight:spectres_eye' },
+                { item: 'sophisticatedbackpacks:upgrade_base' },
+                { item: 'create:large_cogwheel' },
+                { item: 'create:cogwheel' }
+            ],
+            result: { item: 'sophisticatedbackpacks:tool_swapper_upgrade' },
+            id: `${id_prefix}tool_swapper_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_tool_swapper_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:tool_swapper_upgrade' },
+                { item: 'create:precision_mechanism' },
+                { item: 'create:attribute_filter' },
+                { item: 'create:precision_mechanism' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' },
+                { tag: 'forge:gears/lumium' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_tool_swapper_upgrade' },
+            id: `${id_prefix}advanced_tool_swapper_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_refill_upgrade' },
+            ingredients: [
+                { item: 'create:chute' },
+                { item: 'rsgauges:oldfancy_bistableswitch1' },
+                { item: 'meetyourfight:spectres_eye' },
+                { item: 'sophisticatedbackpacks:upgrade_base' }
+            ],
+            result: { item: 'sophisticatedbackpacks:refill_upgrade' },
+            id: `${id_prefix}refill_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_glyph_sentientharm' },
+            ingredients: [
+                { item: 'ars_nouveau:marvelous_clay' },
+                { item: 'bloodmagic:soulgempetty' },
+                { item: 'tomeofblood:blood_gem' },
+                { item: 'ars_nouveau:blank_parchment' }
+            ],
+            result: { item: 'ars_nouveau:glyph_sentientharm' },
+            id: `${id_prefix}glyph_sentientharm`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_turtle_normal' },
+            ingredients: [
+                { item: 'aquaculture:box_turtle' },
+                { item: 'computercraft:computer_normal' },
+                { item: 'create:deployer' },
+                { item: 'minecraft:furnace' },
+                { item: 'mekanism:jetpack' },
+                { item: 'pneumaticcraft:reinforced_chest' }
+            ],
+            result: { item: 'computercraft:turtle_normal' },
+            id: `${id_prefix}turtle_normal`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_turtle_advanced' },
+            ingredients: [
+                { item: 'aquaculture:box_turtle' },
+                { item: 'computercraft:computer_advanced' },
+                { item: 'create:deployer' },
+                { item: 'minecraft:blast_furnace' },
+                { item: 'mekanism:jetpack' },
+                { item: 'pneumaticcraft:reinforced_chest' }
+            ],
+            result: { item: 'computercraft:turtle_advanced' },
+            id: `${id_prefix}turtle_advanced`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 10,
+            ritual_dummy: { item: 'kubejs:craft_ender_dagger' },
+            ingredients: [
+                { item: 'bloodmagic:daggerofsacrifice' },
+                { item: 'eidolon:shadow_gem' },
+                { tag: 'botania:runes/nidavellir' },
+                { item: 'powah:ender_core' },
+                { tag: 'forge:inlays/arcane_gold' },
+                { tag: 'forge:inlays/arcane_gold' },
+                { item: 'botania:mana_pearl' },
+                { item: 'botania:mana_pearl' }
+            ],
+            result: Item.of('botania:ender_dagger', '{Damage:0,Unbreakable:1}').toJson(),
+            id: `${id_prefix}ender_dagger`
         }
     ];
 
@@ -950,6 +1297,55 @@ onEvent('recipes', (event) => {
                 { item: '10 o'clock' }
             ],
     */
+    let mycelial_generators = [
+        { name: 'netherstar', ingredients: ['ars_nouveau:glyph_wither', 'minecraft:nether_star'] },
+        { name: 'halitosis', ingredients: ['botania:dragonstone', 'minecraft:dragon_breath'] },
+        { name: 'meatallurgic', ingredients: ['kubejs:meat_ingot', 'artifacts:eternal_steak'] },
+        { name: 'potion', ingredients: ['atum:anputs_fingers_spores', 'botania:brewery'] },
+        { name: 'magma', ingredients: ['tconstruct:magma_cake', 'minecraft:magma_block'] },
+        { name: 'slimey', ingredients: ['tconstruct:earth_cake', 'botania:slime_bottle'] },
+        { name: 'crimed', ingredients: ['minecraft:warped_wart_block', 'minecraft:shroomlight'] },
+        { name: 'ender', ingredients: ['tconstruct:ender_cake', 'powah:ender_core'] },
+        { name: 'explosive', ingredients: ['thermal:fire_tnt', 'industrialforegoing:infinity_nuke'] },
+        { name: 'disenchantment', ingredients: ['apotheosis:draconic_endshelf', 'botania:rosa_arcana'] },
+        { name: 'rocket', ingredients: ['minecraft:firework_rocket', 'alexsmobs:frontier_cap'] },
+        { name: 'death', ingredients: ['eidolon:reaper_scythe', 'naturesaura:chorus_generator'] },
+        { name: 'frosty', ingredients: ['thermal:ice_tnt', 'betterendforge:ancient_emerald_ice'] },
+        { name: 'culinary', ingredients: ['create:builders_tea', 'nethers_delight:stuffed_hoglin_item'] },
+        { name: 'pink', ingredients: ['industrialforegoing:pink_slime_ingot', 'botania:pinkinator'] },
+        { name: 'furnace', ingredients: ['create:encased_fan', 'industrialforegoing:resourceful_furnace'] }
+    ];
+    mycelial_generators.forEach((mycelial_generator) => {
+        recipes.push({
+            ritual_type: 'occultism:craft',
+            activation_item: { item: 'occultism:dimensional_matrix' },
+            pentacle_id: 'occultism:craft_marid',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:mungus',
+                display_name: 'ritual.occultism.sacrifice.mungus'
+            },
+            ritual_dummy: { item: `industrialforegoing:mycelial_${mycelial_generator.name}` },
+            ingredients: [
+                { item: mycelial_generator.ingredients[1] },
+                { item: 'mekanismgenerators:fusion_reactor_frame' },
+                { tag: 'industrialforegoing:machine_frame/supreme' },
+                { item: 'mekanismgenerators:fusion_reactor_frame' },
+
+                { item: mycelial_generator.ingredients[0] },
+                { item: 'kubejs:celestial_mycelium_filaments' },
+                { tag: 'forge:circuits/ultimate' },
+                { item: 'kubejs:celestial_mycelium_filaments' },
+
+                { item: mycelial_generator.ingredients[0] },
+                { item: 'kubejs:celestial_mycelium_filaments' },
+                { tag: 'forge:circuits/ultimate' },
+                { item: 'kubejs:celestial_mycelium_filaments' }
+            ],
+            result: { item: `industrialforegoing:mycelial_${mycelial_generator.name}` },
+            id: `${id_prefix}mycelial_${mycelial_generator.name}`
+        });
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';

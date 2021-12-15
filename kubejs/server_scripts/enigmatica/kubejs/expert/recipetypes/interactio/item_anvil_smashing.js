@@ -34,6 +34,56 @@ onEvent('recipes', (event) => {
             },
             damage: 2,
             id: 'darkutils:crafting/ender_hopper'
+        },
+        {
+            inputs: [
+                Ingredient.of('#forge:storage_blocks/tin'),
+                Item.of('sophisticatedbackpacks:upgrade_base'),
+                Item.of('minecraft:blast_furnace')
+            ],
+            output: {
+                entries: [{ result: { item: 'sophisticatedbackpacks:smelting_upgrade' }, weight: 1 }],
+                rolls: 1
+            },
+            damage: 4,
+            id: 'sophisticatedbackpacks:smelting_upgrade'
+        },
+        {
+            inputs: [
+                Ingredient.of('#forge:storage_blocks/tin'),
+                Item.of('sophisticatedbackpacks:upgrade_base'),
+                Item.of('trashcans:item_trash_can')
+            ],
+            output: {
+                entries: [{ result: { item: 'sophisticatedbackpacks:void_upgrade' }, weight: 1 }],
+                rolls: 1
+            },
+            damage: 4,
+            id: 'sophisticatedbackpacks:void_upgrade'
+        },
+        {
+            inputs: [
+                Item.of('computercraft:computer_normal'),
+                Item.of('computercraft:disk', '{Color:1118481}')
+            ],
+            output: {
+                entries: [{ result: { item: 'computercraft:pocket_computer_normal' }, weight: 1 }],
+                rolls: 1
+            },
+            damage: 2,
+            id: `${id_prefix}pocket_computer_normal`
+        },
+        {
+            inputs: [
+                Item.of('computercraft:computer_advanced'),
+                Item.of('computercraft:disk', '{Color:1118481}')
+            ],
+            output: {
+                entries: [{ result: { item: 'computercraft:pocket_computer_advanced' }, weight: 1 }],
+                rolls: 1
+            },
+            damage: 2,
+            id: `${id_prefix}pocket_computer_advanced`
         }
     ];
 

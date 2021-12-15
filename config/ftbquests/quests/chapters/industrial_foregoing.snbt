@@ -12,49 +12,63 @@
 			title: "Industrial Foregoing"
 			icon: "industrialforegoing:plastic"
 			x: 1.5d
-			y: -9.5d
-			description: ["This mod provides a wide range of machines to automate various tasks. This questline introduces some key machines (but not ALL the machines, as there are quite a few)."]
+			y: -9.0d
+			description: [
+				"This mod provides a wide range of machines to automate various tasks. This questline introduces some key machines (but not ALL the machines, as there are quite a few)."
+				""
+				"There are currently three (craftable) tiers of IF machine frame. Right now, you can only make the lowest-tier version."
+			]
 			size: 1.5d
+			optional: true
 			id: "000000000000004A"
 			tasks: [{
-				id: "0000000000000058"
-				type: "checkmark"
+				id: "452B662F54BEAD8D"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
 			}]
-			rewards: [{
-				id: "234EA77258AE837C"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "234EA77258AE837C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "63727AE711541D73"
+					type: "item"
+					title: "Iron Ingot"
+					item: "minecraft:iron_ingot"
+					count: 6
+					random_bonus: 4
+				}
+			]
 		}
 		{
 			x: 1.5d
 			y: -6.5d
 			description: ["The Fluid Extractor, shockingly, extracts fluid. Place one facing a log block, and it will slowly break down the log while producing Latex. Power is optional, but speeds up the process by a factor of 2.5. Acacia logs give the best yield."]
-			dependencies: ["000000000000004D"]
+			dependencies: ["000000000000004A"]
 			id: "000000000000004B"
-			tasks: [
-				{
-					id: "000000000000004C"
-					type: "item"
-					title: "Fluid Extractor"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "industrialforegoing:fluid_extractor"
-									Count: 1b
-								}
-								{
-									id: "thermal:device_tree_extractor"
-									Count: 1b
-								}
-							]
-						}
+			tasks: [{
+				id: "000000000000004C"
+				type: "item"
+				title: "Fluid Extractor"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:fluid_extractor"
+								Count: 1b
+							}
+							{
+								id: "thermal:device_tree_extractor"
+								Count: 1b
+							}
+						]
 					}
 				}
-			]
+			}]
 			rewards: [
 				{
 					id: "0000000000000628"
@@ -71,26 +85,6 @@
 					count: 8
 				}
 			]
-		}
-		{
-			x: 1.5d
-			y: -8.0d
-			shape: "diamond"
-			description: ["There are currently three (craftable) tiers of IF machine frame. Right now, you can only make the lowest-tier version."]
-			dependencies: ["000000000000004A"]
-			id: "000000000000004D"
-			tasks: [{
-				id: "000000000000004E"
-				type: "item"
-				item: "industrialforegoing:machine_frame_pity"
-			}]
-			rewards: [{
-				id: "0000000000000625"
-				type: "item"
-				title: "Iron Ingot"
-				item: "minecraft:iron_ingot"
-				count: 8
-			}]
 		}
 		{
 			x: 1.5d
@@ -153,7 +147,7 @@
 			x: 6.0d
 			y: -4.5d
 			description: ["The Mob Slaughter Factory kills mobs and animals in its area of effect. Entities slain in this way do not drop anything, but are converted to Liquid Meat and Pink Slime, liquids that can be piped out of the block."]
-			dependencies: ["000000000000004D"]
+			dependencies: ["000000000000004A"]
 			id: "0000000000000053"
 			tasks: [{
 				id: "0000000000000054"
@@ -236,7 +230,6 @@
 			shape: "hexagon"
 			description: ["The third and currently final tier of machine frame. Used in a variety of powerful automation machines."]
 			dependencies: [
-				"000000000000004E"
 				"0000000000000050"
 				"0000000000000051"
 				"0000000000000053"
@@ -458,10 +451,7 @@
 			x: 0.0d
 			y: -0.5d
 			description: ["The Plant Fertilizer automatically fertilizes plants (believe it or not) with Bonemeal or Industrial Fertilizer."]
-			dependencies: [
-				"000000000000004E"
-				"0000000000000051"
-			]
+			dependencies: ["0000000000000051"]
 			id: "0000000000000086"
 			tasks: [{
 				id: "0000000000000087"
@@ -992,7 +982,6 @@
 			y: -8.0d
 			description: ["A block capable of storing big amounts of an item, you can insert or extract items by interacting with the front."]
 			hide_dependency_lines: true
-			dependencies: ["000000000000004D"]
 			id: "0000000000000F12"
 			tasks: [{
 				id: "0000000000000F13"
@@ -1082,7 +1071,6 @@
 			y: -8.0d
 			description: ["A block capable of storing big amounts of a fluid."]
 			hide_dependency_lines: true
-			dependencies: ["000000000000004D"]
 			id: "0000000000000F1C"
 			tasks: [{
 				id: "0000000000000F1D"

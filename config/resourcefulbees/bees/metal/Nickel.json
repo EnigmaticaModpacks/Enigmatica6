@@ -23,18 +23,12 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations": [
             {
                 "type": "BLOCK",
-                "inputID": "tag:forge:stone",
-                "outputs": [{ "outputID": "emendatusenigmatica:nickel_ore", "weight": 10 }]
-            },
-            {
-              "type": "ITEM",
-              "inputID": "tag:forge:storage_blocks/copper",
-              "outputs": [
-                {"outputID": "resourcefulbees:constantan_bee_spawn_egg", "weight": 10}
-              ]
+                "inputID": "create:granite_cobblestone",
+                "outputs": [{ "outputID": "emendatusenigmatica:nickel_granite_ore", "weight": 10 }]
             }
         ]
     },

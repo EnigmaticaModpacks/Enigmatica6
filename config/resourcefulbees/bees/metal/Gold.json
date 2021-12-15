@@ -23,26 +23,13 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations" : [
           {
             "type": "BLOCK",
-            "inputID": "tag:forge:stone",
+            "inputID": "create:granite_cobblestone",
             "outputs": [
-              {"outputID": "emendatusenigmatica:gold_ore", "weight": 10}
-            ]
-          },
-          {
-            "type": "ITEM",
-            "inputID": "tag:forge:storage_blocks/silver",
-            "outputs": [
-              {"outputID": "resourcefulbees:electrum_bee_spawn_egg", "weight": 10}
-            ]
-          },
-          {
-            "type": "ITEM",
-            "inputID": "tag:forge:storage_blocks/gold",
-            "outputs": [
-              {"outputID": "resourcefulbees:gold_bee_spawn_egg", "weight": 10}
+              {"outputID": "emendatusenigmatica:gold_granite_ore", "weight": 10}
             ]
           }
         ]

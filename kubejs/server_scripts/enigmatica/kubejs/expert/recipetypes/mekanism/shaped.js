@@ -87,10 +87,9 @@ onEvent('recipes', (event) => {
             id: 'mekanism:thermal_evaporation/valve'
         },
         {
-            output: Item.of('3x mekanism:structural_glass'),
-            pattern: ['ABC', 'BCB', 'CBA'],
+            output: Item.of('5x mekanism:structural_glass'),
+            pattern: ['CBC', 'BCB', 'CBC'],
             key: {
-                A: '#mekanism:alloys/reinforced',
                 B: '#forge:plates/aluminum',
                 C: '#thermal:glass/hardened'
             },
@@ -135,7 +134,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:heat_sink',
                 B: 'pneumaticcraft:heat_pipe',
-                C: 'mekanism:steel_casing',
+                C: 'immersiveengineering:alloybrick',
                 D: 'immersiveengineering:coil_mv'
             },
             id: 'mekanism:superheating_element'
@@ -157,7 +156,7 @@ onEvent('recipes', (event) => {
                 B: 'create:copper_valve_handle',
                 C: 'create:fluid_pipe',
                 D: 'create:fluid_valve',
-                E: ['immersiveengineering:logic_circuit', 'pneumaticcraft:printed_circuit_board']
+                E: 'pneumaticcraft:advanced_pcb'
             },
             id: 'mekanism:dynamic_valve'
         },
@@ -271,13 +270,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'mekanism:laser',
-            pattern: [' A ', 'BCB', 'DED'],
+            pattern: [' A ', 'BAB', 'CDC'],
             key: {
-                A: 'industrialforegoing:laser_lens14',
+                A: '#forge:gems/nitro',
                 B: '#mekanism:alloys/infused',
-                C: '#forge:gems/nitro',
-                D: 'mekanism:advanced_induction_cell',
-                E: '#industrialforegoing:machine_frame/supreme'
+                C: 'mekanism:advanced_induction_cell',
+                D: '#industrialforegoing:machine_frame/simple'
             },
             id: 'mekanism:laser'
         },
@@ -318,7 +316,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'E E'],
             key: {
                 A: '#forge:plates/bronze',
-                B: 'immersiveengineering:logic_circuit',
+                B: 'pneumaticcraft:advanced_pcb',
                 C: 'create:copper_backtank',
                 D: 'thermal:hazmat_chestplate',
                 E: 'immersiveengineering:toolupgrade_chemthrower_focus'
@@ -350,7 +348,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'ACA', ' D '],
             key: {
                 A: 'mekanismgenerators:solar_panel',
-                B: 'immersiveengineering:logic_circuit',
+                B: 'pneumaticcraft:advanced_pcb',
                 C: 'thermal:redstone_servo',
                 D: 'engineersdecor:thick_steel_pole_head'
             },
@@ -404,11 +402,11 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersiveengineering:steel_wallmount',
                 B: 'immersiveengineering:turntable',
-                C: 'mekanism:advanced_chemical_tank',
-                D: '#industrialforegoing:machine_frame/simple',
-                E: 'mekanism:advanced_fluid_tank',
-                F: '#forge:circuits/basic',
-                G: 'rftoolspower:cell1'
+                C: 'mekanism:basic_chemical_tank',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'mekanism:basic_fluid_tank',
+                F: 'pneumaticcraft:advanced_pcb',
+                G: 'thermal:rf_coil'
             },
             id: 'mekanism:rotary_condensentrator'
         },
@@ -429,12 +427,12 @@ onEvent('recipes', (event) => {
             output: 'mekanism:crusher',
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
-                A: '#forge:gears/compressed_iron',
+                A: '#forge:gears/osmium',
                 B: 'engineersdecor:factory_hopper',
                 C: 'create:filter',
-                D: '#industrialforegoing:machine_frame/simple',
-                E: '#forge:circuits/basic',
-                F: 'rftoolspower:cell1'
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'pneumaticcraft:advanced_pcb',
+                F: 'thermal:rf_coil'
             },
             id: 'mekanism:crusher'
         },
@@ -518,12 +516,12 @@ onEvent('recipes', (event) => {
             output: 'mekanism:pressurized_reaction_chamber',
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
-                A: 'pneumaticcraft:pressure_chamber_glass',
-                B: 'mekanism:advanced_fluid_tank',
-                C: 'mekanism:advanced_chemical_tank',
-                D: '#industrialforegoing:machine_frame/advanced',
-                E: '#forge:circuits/advanced',
-                F: 'rftoolspower:cell2'
+                A: '#thermal:glass/hardened',
+                B: 'mekanism:basic_fluid_tank',
+                C: 'mekanism:basic_chemical_tank',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'pneumaticcraft:advanced_pcb',
+                F: 'thermal:rf_coil'
             },
             id: 'mekanism:pressurized_reaction_chamber'
         },
@@ -612,12 +610,12 @@ onEvent('recipes', (event) => {
             output: 'mekanism:chemical_washer',
             pattern: ['ABB', 'CDA', 'EFE'],
             key: {
-                A: 'mekanism:ultimate_chemical_tank',
-                B: 'mekanism:ultimate_pressurized_tube',
-                C: 'mekanism:ultimate_fluid_tank',
+                A: 'mekanism:elite_chemical_tank',
+                B: 'mekanism:elite_pressurized_tube',
+                C: 'mekanism:elite_fluid_tank',
                 D: '#industrialforegoing:machine_frame/supreme',
-                E: '#forge:circuits/ultimate',
-                F: 'mekanism:ultimate_induction_provider'
+                E: '#forge:circuits/elite',
+                F: 'mekanism:elite_induction_provider'
             },
             id: 'mekanism:chemical_washer'
         },
@@ -650,9 +648,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/compressed_iron',
                 B: 'mekanism:basic_chemical_tank',
                 C: 'pneumaticcraft:turbine_rotor',
-                D: '#industrialforegoing:machine_frame/simple',
-                E: '#forge:circuits/basic',
-                F: 'immersiveengineering:coil_hv'
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'immersiveengineering:coil_lv',
+                F: 'thermal:rf_coil'
             },
             id: 'mekanismgenerators:generator/gas_burning'
         },
@@ -660,14 +658,160 @@ onEvent('recipes', (event) => {
             output: 'mekanismgenerators:bio_generator',
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
-                A: '#forge:gears/compressed_iron',
+                A: '#forge:gears/invar',
                 B: 'mekanism:basic_fluid_tank',
-                C: 'pneumaticcraft:turbine_rotor',
-                D: '#industrialforegoing:machine_frame/simple',
-                E: '#forge:circuits/basic',
-                F: 'immersiveengineering:coil_hv'
+                C: 'create:propeller',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: 'immersiveengineering:coil_lv',
+                F: 'thermal:rf_coil'
             },
             id: 'mekanismgenerators:generator/bio'
+        },
+        {
+            output: 'mekanism:free_runners',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'create:precision_mechanism',
+                B: 'immersiveengineering:capacitor_lv',
+                C: '#forge:gears/bronze',
+                D: 'immersiveengineering:toolupgrade_drill_lube',
+                E: 'immersiveengineering:component_steel',
+                F: 'immersiveengineering:armor_faraday_feet'
+            },
+            id: 'mekanism:free_runners'
+        },
+        {
+            output: 'mekanism:electric_bow',
+            pattern: [' BC', 'A C', ' BC'],
+            key: {
+                A: 'powah:dielectric_rod',
+                B: 'powah:capacitor_hardened',
+                C: '#forge:wires/aluminum'
+            },
+            id: 'mekanism:electric_bow'
+        },
+        {
+            output: 'mekanism:configurator',
+            pattern: ['  A', ' B ', 'C  '],
+            key: {
+                A: '#forge:rods/lapis',
+                B: 'thermal:rf_coil',
+                C: '#forge:rods/steel'
+            },
+            id: 'mekanism:configurator'
+        },
+        {
+            output: 'mekanism:chargepad',
+            pattern: ['AAA', 'BCB'],
+            key: {
+                A: 'minecraft:polished_blackstone_pressure_plate',
+                B: '#forge:ingots/steel',
+                C: 'thermal:rf_coil'
+            },
+            id: 'mekanism:chargepad'
+        },
+        {
+            output: 'mekanism:network_reader',
+            pattern: [' B ', 'ACA', ' B '],
+            key: {
+                A: '#forge:alloys/advanced',
+                B: '#forge:ingots/steel',
+                C: 'thermal:rf_coil'
+            },
+            id: 'mekanism:network_reader'
+        },
+        {
+            output: 'mekanism:portable_teleporter',
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: 'mekanism:teleportation_core',
+                C: '#forge:plates/steel',
+                D: 'rftoolsbase:tablet'
+            },
+            id: 'mekanism:portable_teleporter'
+        },
+        {
+            output: 'mekanism:formulaic_assemblicator',
+            pattern: ['ABA', 'BCB', 'DED'],
+            key: {
+                A: 'create:electron_tube',
+                B: '#forge:gears/brass',
+                C: 'create:mechanical_crafter',
+                D: '#forge:plates/lead',
+                E: 'thermal:rf_coil'
+            },
+            id: 'mekanism:formulaic_assemblicator'
+        },
+        {
+            output: Item.of('8x mekanism:crafting_formula'),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:paper',
+                B: 'create:electron_tube'
+            },
+            id: 'mekanism:crafting_formula'
+        },
+        {
+            output: `mekanism:basic_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:lime_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/copper'
+            },
+            id: `mekanism:bin/basic`
+        },
+        {
+            output: `mekanism:advanced_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:red_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/bronze'
+            },
+            id: `mekanism:bin/advanced`
+        },
+        {
+            output: `mekanism:elite_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:light_blue_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/brass'
+            },
+            id: `mekanism:bin/elite`
+        },
+        {
+            output: `mekanism:ultimate_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:blue_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/hepatizon'
+            },
+            id: `mekanism:bin/ultimate`
+        },
+        {
+            output: `mekanism:logistical_sorter`,
+            pattern: ['ABA', 'ACA', 'EDE'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_black',
+                B: 'prettypipes:medium_extraction_module',
+                C: 'prettypipes:medium_filter_module',
+                D: 'prettypipes:round_robin_sorting_modifier',
+                E: '#forge:plates/iron_osmium'
+            },
+            id: `mekanism:logistical_sorter`
+        },
+        {
+            output: Item.of(`8x mekanism:basic_logistical_transporter`),
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:ingots/steel',
+                B: 'pneumaticcraft:logistics_core'
+            },
+            id: `mekanism:transmitter/logistical_transporter/basic`
         }
     ];
 

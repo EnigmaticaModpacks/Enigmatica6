@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 0,
             duration: 100,
-            starlight: 700,
+            starlight: 500,
             recipe_class: 'astralsorcery:attunement_upgrade',
             effects: ['astralsorcery:built_in_effect_discovery_central_beam', 'astralsorcery:upgrade_altar'],
             id: 'astralsorcery:altar/altar_attunement'

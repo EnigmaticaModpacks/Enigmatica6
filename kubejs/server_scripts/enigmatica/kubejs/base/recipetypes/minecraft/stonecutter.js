@@ -14,10 +14,6 @@ onEvent('recipes', (event) => {
         });
     });
 
-    beamRecipes.forEach((recipe) => {
-        event.stonecutting(recipe.output, recipe.input);
-    });
-
     stonecuttables.forEach((stoneType) => {
         var tag = `#enigmatica:stonecuttables/${stoneType.name}`;
         stoneType.stones.forEach((stone) => {

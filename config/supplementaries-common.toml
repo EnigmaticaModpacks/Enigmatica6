@@ -11,6 +11,8 @@
 		#Maximum block range
 		#Range: 0 ~ 100000000
 		range = 64
+		#Enable/disable speaker block narrator mode
+		narrator_enabled = true
 
 	[blocks.bellows]
 		#bellows pushes air following this equation: 
@@ -306,6 +308,8 @@
 		enchanted_book_power = 1.334
 		#Allow all books to be placed both vertically and horizontally
 		mixed_books = false
+		#Allows written books to be placeable (will need shift clicking)
+		written_books = false
 
 [items]
 

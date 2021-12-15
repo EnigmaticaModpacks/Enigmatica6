@@ -40,7 +40,9 @@ const honeyVarieties = [
     'resourcefulbees:illuminating_honey',
     'resourcefulbees:rocky_honey',
     'resourcefulbees:meaty_honey',
-    'resourcefulbees:rocket_honey'
+    'resourcefulbees:rocket_honey',
+    'resourcefulbees:mana_honey',
+    'resourcefulbees:otherworldly_honey'
 ];
 
 const combVariants = [
@@ -113,5 +115,13 @@ const combVariants = [
     'blitz',
     'blizz',
     'direbee20',
-    'generikbee'
+    'generikbee',
+    'otherworldly',
+    'carbee',
+    'dusty_mummbee',
+    'brutish_zombee',
+    'shepherd',
+    'clogged',
+    'regal',
+    'frosty'
 ];

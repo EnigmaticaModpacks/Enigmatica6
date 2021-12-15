@@ -297,54 +297,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}minecraft/horn_coral_block`
         },
         {
-            output: Item.of('valhelsia_structures:oak_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:oak_log'
-            },
-            id: `${id_prefix}valhelsia_structures/oak_post`
-        },
-        {
-            output: Item.of('valhelsia_structures:spruce_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:spruce_log'
-            },
-            id: `${id_prefix}valhelsia_structures/spruce_post`
-        },
-        {
-            output: Item.of('valhelsia_structures:birch_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:birch_log'
-            },
-            id: `${id_prefix}valhelsia_structures/birch_post`
-        },
-        {
-            output: Item.of('valhelsia_structures:jungle_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:jungle_log'
-            },
-            id: `${id_prefix}valhelsia_structures/jungle_post`
-        },
-        {
-            output: Item.of('valhelsia_structures:dark_oak_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:dark_oak_log'
-            },
-            id: `${id_prefix}valhelsia_structures/dark_oak_post`
-        },
-        {
-            output: Item.of('valhelsia_structures:acacia_post', 6),
-            pattern: ['A', 'A', 'A'],
-            key: {
-                A: 'minecraft:acacia_log'
-            },
-            id: `${id_prefix}valhelsia_structures/acacia_post`
-        },
-        {
             output: Item.of('minecraft:ladder', 4),
             pattern: ['A A', 'ABA', 'A A'],
             key: {
@@ -493,8 +445,6 @@ onEvent('recipes', (event) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 
-    // Unification type scripts. Consider moving out?
-
     buildWoodVariants.forEach((wood) => {
         if (wood.modId == 'minecraft') {
             return;
@@ -543,31 +493,6 @@ onEvent('recipes', (event) => {
         event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
             A: wood.plankBlock
         });
-
-        event.shaped(Item.of('storagedrawers:oak_full_drawers_1'), ['AAA', ' C ', 'AAA'], {
-            A: wood.plankBlock,
-            C: '#forge:chests'
-        });
-        event.shaped(Item.of('storagedrawers:oak_full_drawers_2', 2), ['ACA', 'AAA', 'ACA'], {
-            A: wood.plankBlock,
-            C: '#forge:chests'
-        });
-        event.shaped(Item.of('storagedrawers:oak_full_drawers_4', 4), ['CAC', 'AAA', 'CAC'], {
-            A: wood.plankBlock,
-            C: '#forge:chests'
-        });
-        event.shaped(Item.of('storagedrawers:oak_half_drawers_1'), ['AAA', ' C ', 'AAA'], {
-            A: wood.slabBlock,
-            C: '#forge:chests'
-        });
-        event.shaped(Item.of('storagedrawers:oak_half_drawers_2', 2), ['ACA', 'AAA', 'ACA'], {
-            A: wood.slabBlock,
-            C: '#forge:chests'
-        });
-        event.shaped(Item.of('storagedrawers:oak_half_drawers_4', 4), ['CAC', 'AAA', 'CAC'], {
-            A: wood.slabBlock,
-            C: '#forge:chests'
-        });
     });
 
     //Generate Forest Comb recipes for each tree type other than Oak (those are handled under newRecipes)
@@ -608,19 +533,5 @@ onEvent('recipes', (event) => {
             C: 'resourcefulbees:rgbee_honeycomb',
             B: 'resourcefulbees:wax'
         });
-    });
-
-    [
-        { ingredient: '#forge:ingots/copper', tier: 'basic' },
-        { ingredient: '#forge:dusts/redstone', tier: 'advanced' },
-        { ingredient: '#forge:ingots/osmium', tier: 'elite' },
-        { ingredient: '#forge:obsidian', tier: 'ultimate' }
-    ].forEach((recipe) => {
-        event
-            .shaped(`mekanism:${recipe.tier}_bin`, ['ABA', 'A A', 'AAA'], {
-                A: 'minecraft:smooth_stone',
-                B: recipe.ingredient
-            })
-            .id(`mekanism:bin/${recipe.tier}`);
     });
 });

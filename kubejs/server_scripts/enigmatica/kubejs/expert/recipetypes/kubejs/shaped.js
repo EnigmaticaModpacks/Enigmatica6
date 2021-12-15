@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/kubejs/';
+    const id_prefix = 'enigmatica:expert/kubejs/shaped';
     /*
         ,
         {
@@ -55,6 +55,100 @@ onEvent('recipes', (event) => {
                 C: 'pneumaticcraft:unassembled_pcb'
             },
             id: `${id_prefix}basic_memory_package`
+        },
+        {
+            output: Item.of('8x kubejs:scented_stick'),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:stick',
+                B: '#resourcefulbees:resourceful_honeycomb'
+            },
+            id: `${id_prefix}scented_stick`
+        },
+        {
+            output: 'kubejs:cpu_core_500_package',
+            pattern: ['BCB', 'BAB', 'D  '],
+            key: {
+                A: '#forge:wires/lead',
+                B: 'refinedstorage:basic_processor',
+                C: 'pneumaticcraft:unassembled_pcb',
+                D: 'mekanism:cardboard_box'
+            },
+            id: `${id_prefix}cpu_core_500`
+        },
+        {
+            output: 'kubejs:cpu_core_1000_package',
+            pattern: ['BCB', 'BAB', 'D  '],
+            key: {
+                A: '#forge:wires/copper',
+                B: 'refinedstorage:improved_processor',
+                C: 'rftoolscontrol:cpu_core_500',
+                D: 'mekanism:cardboard_box'
+            },
+            id: `${id_prefix}cpu_core_1000`
+        },
+        {
+            output: 'kubejs:cpu_core_2000_package',
+            pattern: ['BCB', 'BAB', 'D  '],
+            key: {
+                A: '#forge:wires/electrum',
+                B: 'refinedstorage:advanced_processor',
+                C: 'rftoolscontrol:cpu_core_1000',
+                D: 'mekanism:cardboard_box'
+            },
+            id: `${id_prefix}cpu_core_2000`
+        },
+        {
+            output: 'kubejs:mekasuit_helmet_package',
+            pattern: ['AAA', 'BCD', 'EFF'],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'rftoolsbuilder:shield_block1',
+                C: 'betterendforge:crystalite_helmet',
+                D: 'mekanism:basic_induction_cell',
+                E: 'mekanism:cardboard_box',
+                F: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}mekasuit_helmet`
+        },
+        {
+            output: 'kubejs:mekasuit_bodyarmor_package',
+            pattern: ['AAA', 'BCD', 'EFF'],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'rftoolsbuilder:shield_block1',
+                C: 'betterendforge:crystalite_chestplate',
+                D: 'mekanism:basic_induction_cell',
+                E: 'mekanism:cardboard_box',
+                F: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}mekasuit_bodyarmor`
+        },
+        {
+            output: 'kubejs:mekasuit_pants_package',
+            pattern: ['AAA', 'BCD', 'EFF'],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'rftoolsbuilder:shield_block1',
+                C: 'betterendforge:crystalite_leggings',
+                D: 'mekanism:basic_induction_cell',
+                E: 'mekanism:cardboard_box',
+                F: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}mekasuit_pants`
+        },
+        {
+            output: 'kubejs:mekasuit_boots_package',
+            pattern: ['AAA', 'BCD', 'EFF'],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'rftoolsbuilder:shield_block1',
+                C: 'betterendforge:crystalite_boots',
+                D: 'mekanism:basic_induction_cell',
+                E: 'mekanism:cardboard_box',
+                F: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}mekasuit_boots`
         },
 
         // Storage Parts

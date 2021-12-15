@@ -64,6 +64,38 @@ onEvent('recipes', (event) => {
                 C: 'create:andesite_casing'
             },
             id: 'create:crafting/kinetics/encased_chain_drive'
+        },
+        {
+            output: 'create:copper_backtank',
+            pattern: ['ABA', 'CDC', 'ECE'],
+            key: {
+                A: 'betterendforge:leather_stripe',
+                B: 'create:shaft',
+                C: '#forge:plates/copper',
+                D: 'mekanism:basic_chemical_tank',
+                E: '#forge:ingots/andesite_alloy'
+            },
+            id: 'create:crafting/appliances/copper_backtank'
+        },
+        {
+            output: 'create:diving_helmet',
+            pattern: ['ABA', 'BCB'],
+            key: {
+                A: 'thermal:diving_fabric',
+                B: '#forge:ingots/silicon_bronze',
+                C: '#forge:glass_panes/cyan'
+            },
+            id: 'create:crafting/appliances/diving_helmet'
+        },
+        {
+            output: 'create:diving_boots',
+            pattern: ['A A', 'B B', 'C C'],
+            key: {
+                A: 'thermal:diving_fabric',
+                B: '#forge:ingots/silicon_bronze',
+                C: '#forge:plates/lead'
+            },
+            id: 'create:crafting/appliances/diving_boots'
         }
     ];
 

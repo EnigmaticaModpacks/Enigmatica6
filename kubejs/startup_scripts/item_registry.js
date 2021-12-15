@@ -1,5 +1,6 @@
 onEvent('item.registry', (event) => {
     const generalItems = [
+        'common_lootbox',
         'rare_lootbox',
         'epic_lootbox',
         'legendary_lootbox',
@@ -41,7 +42,9 @@ onEvent('item.registry', (event) => {
         'memory_elite_empty',
         'memory_elite_filled',
         'memory_ultimate_empty',
-        'memory_ultimate_filled'
+        'memory_ultimate_filled',
+        'scented_stick',
+        'celestial_mycelium_filaments'
     ];
 
     const ritualDummies = [
@@ -58,10 +61,45 @@ onEvent('item.registry', (event) => {
         'craft_attunement_altar',
         'craft_mana_collector',
         'craft_logic_director',
-        'craft_robit'
+        'craft_robit',
+        'craft_feeding_upgrade',
+        'craft_advanced_feeding_upgrade',
+        'craft_auto_smelting_upgrade',
+        'craft_pump_upgrade',
+        'craft_advanced_pump_upgrade',
+        'craft_xp_pump_upgrade',
+        'craft_compacting_upgrade',
+        'craft_advanced_compacting_upgrade',
+        'craft_tool_swapper_upgrade',
+        'craft_advanced_tool_swapper_upgrade',
+        'craft_refill_upgrade',
+        'craft_turtle_normal',
+        'craft_turtle_advanced',
+        'craft_otherworldly_honey_bottle',
+        'craft_mycelial_netherstar',
+        'craft_mycelial_halitosis',
+        'craft_mycelial_meatallurgic',
+        'craft_mycelial_potion',
+        'craft_mycelial_magma',
+        'craft_mycelial_slimey',
+        'craft_mycelial_crimed',
+        'craft_mycelial_ender',
+        'craft_mycelial_explosive',
+        'craft_mycelial_disenchantment',
+        'craft_mycelial_rocket',
+        'craft_mycelial_death',
+        'craft_mycelial_frosty',
+        'craft_mycelial_culinary',
+        'craft_mycelial_pink',
+        'craft_mycelial_furnace',
+        'craft_glyph_sentientharm',
+        'craft_ender_dagger'
     ];
 
     const reusableItemTextures = [
+        { name: 'medium_machinery_schematics', texture: 'blueprint' },
+        { name: 'heavy_machinery_schematics', texture: 'blueprint' },
+
         { name: 'machine_speed_augment_mk2', texture: 'machine_speed_augment' },
         { name: 'machine_speed_augment_mk3', texture: 'machine_speed_augment' },
         { name: 'machine_speed_augment_mk4', texture: 'machine_speed_augment' },
@@ -74,12 +112,31 @@ onEvent('item.registry', (event) => {
         { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
 
+        { name: 'engineers_school_project', texture: 'packing_crate_gray' },
+        { name: 'foundation_materials', texture: 'packing_crate_red' },
+        { name: 'construction_tools', texture: 'packing_crate_yellow' },
+        { name: 'landscaping_materials', texture: 'packing_crate_lime' },
+        { name: 'engineering_student_supplies', texture: 'packing_crate_blue' },
+        { name: 'building_materials', texture: 'packing_crate_orange' },
+
+        { name: 'engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
+        { name: 'computer_package', texture: 'advanced_packing_crate_green' },
+        { name: 'fluid_drill_package', texture: 'advanced_packing_crate_purple' },
+
         { name: 'basic_memory_package', texture: 'assembly_package_filled' },
         { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
+
+        { name: 'cpu_core_500_package', texture: 'assembly_package_filled' },
+        { name: 'cpu_core_500_assembly', texture: 'assembly_package_processing' },
+        { name: 'cpu_core_1000_package', texture: 'assembly_package_filled' },
+        { name: 'cpu_core_1000_assembly', texture: 'assembly_package_processing' },
+        { name: 'cpu_core_2000_package', texture: 'assembly_package_filled' },
+        { name: 'cpu_core_2000_assembly', texture: 'assembly_package_processing' },
 
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
+
         { name: 'pneumatic_helmet_package', texture: 'assembly_package_filled' },
         { name: 'pneumatic_helmet_assembly', texture: 'assembly_package_processing' },
         { name: 'pneumatic_chestplate_package', texture: 'assembly_package_filled' },
@@ -88,6 +145,15 @@ onEvent('item.registry', (event) => {
         { name: 'pneumatic_leggings_assembly', texture: 'assembly_package_processing' },
         { name: 'pneumatic_boots_package', texture: 'assembly_package_filled' },
         { name: 'pneumatic_boots_assembly', texture: 'assembly_package_processing' },
+
+        { name: 'mekasuit_helmet_package', texture: 'assembly_package_filled' },
+        { name: 'mekasuit_helmet_assembly', texture: 'assembly_package_processing' },
+        { name: 'mekasuit_bodyarmor_package', texture: 'assembly_package_filled' },
+        { name: 'mekasuit_bodyarmor_assembly', texture: 'assembly_package_processing' },
+        { name: 'mekasuit_pants_package', texture: 'assembly_package_filled' },
+        { name: 'mekasuit_pants_assembly', texture: 'assembly_package_processing' },
+        { name: 'mekasuit_boots_package', texture: 'assembly_package_filled' },
+        { name: 'mekasuit_boots_assembly', texture: 'assembly_package_processing' },
 
         { name: '1k_storage_part_package', texture: 'assembly_package_filled' },
         { name: '1k_storage_part_assembly', texture: 'assembly_package_processing' },

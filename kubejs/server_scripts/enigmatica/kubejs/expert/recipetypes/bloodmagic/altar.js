@@ -105,7 +105,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}moonstone`
         },
         {
-            input: 'eidolon:sapping_sword',
+            input: Item.of('eidolon:sapping_sword', '{Damage:0}').weakNBT(),
             output: 'bloodmagic:sacrificialdagger',
             syphon: 7000,
             altarLevel: 1,
@@ -179,10 +179,10 @@ onEvent('recipes', (event) => {
         {
             input: 'ars_nouveau:ritual_warping',
             output: 'waystones:warp_stone',
-            syphon: 50000,
+            syphon: 25000,
             altarLevel: 2,
-            consumptionRate: 1000,
-            drainRate: 100,
+            consumptionRate: 20,
+            drainRate: 20,
             id: 'waystones:warp_stone'
         },
         {
@@ -192,7 +192,25 @@ onEvent('recipes', (event) => {
             altarLevel: 0,
             consumptionRate: 5,
             drainRate: 5,
-            id: 'botania:fel_pumpkin'
+            id: `${id_prefix}fel_pumpkin`
+        },
+        {
+            input: 'eidolon:void_amulet',
+            output: 'botania:blood_pendant',
+            syphon: 7000,
+            altarLevel: 1,
+            consumptionRate: 5,
+            drainRate: 5,
+            id: `${id_prefix}blood_pendant`
+        },
+        {
+            input: 'bloodmagic:demonslate',
+            output: 'bloodmagic:etherealslate',
+            syphon: 200000,
+            altarLevel: 4,
+            consumptionRate: 1000,
+            drainRate: 1000,
+            id: `${id_prefix}etherealslate`
         }
     ];
 

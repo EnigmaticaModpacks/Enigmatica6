@@ -24,6 +24,16 @@ onEvent('recipes', (event) => {
                 B: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 1000 }
             },
             id: 'environmental:building/mud_balls_from_dirt'
+        },
+        {
+            output: 'environmental:kiln',
+            pattern: ['AAA', 'ABA', 'CCC'],
+            key: {
+                A: 'environmental:mud_bricks',
+                B: 'minecraft:blast_furnace',
+                C: 'minecraft:smooth_stone'
+            },
+            id: 'environmental:crafting/kiln'
         }
     ];
 

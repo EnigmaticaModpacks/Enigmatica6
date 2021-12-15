@@ -116,6 +116,8 @@
 			x: -0.5d
 			y: 3.0d
 			dependencies: ["10890B170755A6D5"]
+			dependency_requirement: "one_started"
+			optional: true
 			id: "4399B01214307E59"
 			tasks: [
 				{
@@ -705,6 +707,10 @@
 			dependencies: ["0000000000000FEB"]
 			hide: true
 			id: "1D574D041D9164AD"
+			tasks: [{
+				id: "1AFB699186CA1AAC"
+				type: "checkmark"
+			}]
 		}
 	]
 }

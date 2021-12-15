@@ -57,25 +57,73 @@ onEvent('recipes', (event) => {
             output: { item: 'kubejs:memory_basic_empty', count: 2 },
             program: 'laser',
             id: `${id_prefix}memory_basic_empty`
+        },
+
+        {
+            input: { item: 'kubejs:cpu_core_500_package', count: 1 },
+            output: { item: 'kubejs:cpu_core_500_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}cpu_core_500_assembly`
+        },
+        {
+            input: { item: 'kubejs:cpu_core_500_assembly', count: 1 },
+            output: { item: 'rftoolscontrol:cpu_core_500', count: 1 },
+            program: 'laser',
+            id: `${id_prefix}cpu_core_500`
+        },
+        {
+            input: { item: 'kubejs:cpu_core_1000_package', count: 1 },
+            output: { item: 'kubejs:cpu_core_1000_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}cpu_core_1000_assembly`
+        },
+        {
+            input: { item: 'kubejs:cpu_core_1000_assembly', count: 1 },
+            output: { item: 'rftoolscontrol:cpu_core_1000', count: 1 },
+            program: 'laser',
+            id: `${id_prefix}cpu_core_1000`
+        },
+        {
+            input: { item: 'kubejs:cpu_core_2000_package', count: 1 },
+            output: { item: 'kubejs:cpu_core_2000_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}cpu_core_2000_assembly`
+        },
+        {
+            input: { item: 'kubejs:cpu_core_2000_assembly', count: 1 },
+            output: { item: 'rftoolscontrol:cpu_core_2000', count: 1 },
+            program: 'laser',
+            id: `${id_prefix}cpu_core_2000`
         }
     ];
 
-    let armorPieces = ['helmet', 'chestplate', 'leggings', 'boots'];
-    armorPieces.forEach((armorPiece) => {
-        recipes.push(
-            {
-                input: { item: `kubejs:pneumatic_${armorPiece}_package`, count: 1 },
-                output: { item: `kubejs:pneumatic_${armorPiece}_assembly`, count: 1 },
-                program: 'drill',
-                id: `${id_prefix}pneumatic_${armorPiece}_assembly`
-            },
-            {
-                input: { item: `kubejs:pneumatic_${armorPiece}_assembly`, count: 1 },
-                output: { item: `pneumaticcraft:pneumatic_${armorPiece}`, count: 1 },
-                program: 'laser',
-                id: `${id_prefix}pneumatic_${armorPiece}`
-            }
-        );
+    let armorSets = [
+        {
+            modID: 'pneumaticcraft',
+            armorPieces: ['pneumatic_helmet', 'pneumatic_chestplate', 'pneumatic_leggings', 'pneumatic_boots']
+        },
+        {
+            modID: 'mekanism',
+            armorPieces: ['mekasuit_helmet', 'mekasuit_bodyarmor', 'mekasuit_pants', 'mekasuit_boots']
+        }
+    ];
+    armorSets.forEach((armorSet) => {
+        armorSet.armorPieces.forEach((armorPiece) => {
+            recipes.push(
+                {
+                    input: { item: `kubejs:${armorPiece}_package`, count: 1 },
+                    output: { item: `kubejs:${armorPiece}_assembly`, count: 1 },
+                    program: 'drill',
+                    id: `${id_prefix}${armorPiece}_assembly`
+                },
+                {
+                    input: { item: `kubejs:${armorPiece}_assembly`, count: 1 },
+                    output: { item: `${armorSet.modID}:${armorPiece}`, count: 1 },
+                    program: 'laser',
+                    id: `${id_prefix}${armorPiece}`
+                }
+            );
+        });
     });
 
     let storageParts = [

@@ -3,7 +3,6 @@
 $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"Ding", 
 	"EntityCulling",
-	"jeed",
 	"moreoverlays",
 	"Neat",
 	"oauth",

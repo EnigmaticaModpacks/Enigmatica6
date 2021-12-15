@@ -23,12 +23,13 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations" : [
           {
             "type": "BLOCK",
-            "inputID": "tag:forge:stone",
+            "inputID": "create:andesite_cobblestone",
             "outputs": [
-              {"outputID": "emendatusenigmatica:redstone_ore", "weight": 10}
+              {"outputID": "emendatusenigmatica:redstone_andesite_ore", "weight": 10}
             ]
           }
         ]
