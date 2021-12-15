@@ -353,22 +353,6 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'bloodmagic:blankslate',
-                'eidolon:ender_calx',
-                'bloodmagic:blankslate',
-                'bloodmagic:blankslate',
-                'bloodmagic:blankslate',
-                'eidolon:ender_calx',
-                'bloodmagic:blankslate',
-                'bloodmagic:blankslate'
-            ],
-            mana: 16000,
-            output: 'bloodmagic:blankrune',
-            count: 2,
-            id: `${id_prefix}blood_rune_blank`
-        },
-        {
-            inputs: [
                 'bloodmagic:blankrune',
                 'quark:white_rune',
                 'bloodmagic:blankslate',
@@ -384,6 +368,24 @@ onEvent('recipes', (event) => {
             output: 'bloodmagic:speedrune',
             count: 1,
             id: `${id_prefix}blood_rune_speed`
+        },
+        {
+            inputs: [
+                'bloodmagic:blankrune',
+                'quark:green_rune',
+                'architects_palette:moonstone',
+                'ars_nouveau:glyph_delay',
+                'bloodmagic:reinforcedslate',
+                'kubejs:cutting_essence',
+                'quark:green_rune',
+                'architects_palette:moonstone',
+                'ars_nouveau:glyph_delay',
+                'bloodmagic:reinforcedslate'
+            ],
+            mana: 32000,
+            output: 'bloodmagic:chargingrune',
+            count: 1,
+            id: `${id_prefix}blood_rune_charging`
         },
         {
             inputs: [
@@ -510,24 +512,6 @@ onEvent('recipes', (event) => {
             output: 'bloodmagic:accelerationrune',
             count: 1,
             id: `${id_prefix}blood_rune_acceleration`
-        },
-        {
-            inputs: [
-                'bloodmagic:blankrune',
-                'quark:green_rune',
-                'architects_palette:moonstone',
-                'ars_nouveau:glyph_delay',
-                'bloodmagic:demonslate',
-                'bloodmagic:masterbloodorb',
-                'quark:green_rune',
-                'architects_palette:moonstone',
-                'ars_nouveau:glyph_delay',
-                'bloodmagic:demonslate'
-            ],
-            mana: 96000,
-            output: 'bloodmagic:chargingrune',
-            count: 1,
-            id: `${id_prefix}blood_rune_charging`
         },
         {
             inputs: [
