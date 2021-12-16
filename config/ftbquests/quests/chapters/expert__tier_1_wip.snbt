@@ -9,60 +9,61 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
-			y: 1.0d
-			shape: "diamond"
-			dependencies: [
-				"19A178AE2895632F"
-				"0044F922097279B5"
+			x: 3.0d
+			y: 0.0d
+			description: [
+				"Let’s kick this off with a bang, shall we?"
+				""
+				"All around, there are ruins. Monsters roam the lands and simple village folk hide in their huts at night, afraid to step out of their dim lights. But there was more here once upon a time. "
+				""
+				"Explore the lands to locate any form of explosive using all resources available. Once found, drop some Zinc and Andesite on the ground and blow it up. The resulting explosion will fuse the materials into Andesite Alloy."
+				""
+				"Note: A single explosion has enough energy to transform large batches of materials. "
 			]
+			dependencies: ["1D574D041D9164AD"]
 			id: "6AADF6A0814C29D4"
-			tasks: [{
-				id: "17152C3290B7D560"
-				type: "item"
-				item: "create:andesite_alloy"
-			}]
+			tasks: [
+				{
+					id: "17152C3290B7D560"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+				{
+					id: "7D6B5C1ED8564A15"
+					type: "item"
+					item: "emendatusenigmatica:invar_dust"
+				}
+			]
 		}
 		{
-			x: 4.5d
-			y: 0.5d
-			dependencies: ["37CEBEAC34D036B6"]
+			x: 6.0d
+			y: 0.0d
+			description: ["It’s crude, but it works. Bang out some sheets and gears to begin building up a basic energy infrastructure and machinery. "]
+			dependencies: ["1D574D041D9164AD"]
 			id: "2357CCF3A0758B0C"
-			tasks: [{
-				id: "7D965AA1C1E47646"
-				type: "item"
-				item: "thermal:machine_frame"
-			}]
-		}
-		{
-			x: -0.5d
-			y: 0.5d
-			shape: "diamond"
-			dependencies: ["1D574D041D9164AD"]
-			id: "0044F922097279B5"
-			tasks: [{
-				id: "761CE516771F68FC"
-				type: "item"
-				item: "emendatusenigmatica:zinc_ingot"
-			}]
-		}
-		{
-			x: 0.5d
-			y: 0.5d
-			shape: "diamond"
-			dependencies: ["1D574D041D9164AD"]
-			id: "19A178AE2895632F"
-			tasks: [{
-				id: "52211E602B78DB92"
-				type: "item"
-				item: "minecraft:andesite"
-				count: 2L
-			}]
+			tasks: [
+				{
+					id: "10768509F8F36CE9"
+					type: "item"
+					item: "thermal:dynamo_stirling"
+				}
+				{
+					id: "1A9617FC53ED59BE"
+					type: "item"
+					item: {
+						id: "emendatusenigmatica:enigmatic_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 		{
 			icon: "create:mechanical_mixer"
-			x: -0.5d
-			y: 3.0d
+			x: 1.0d
+			y: 2.5d
 			shape: "diamond"
 			dependencies: ["10890B170755A6D5"]
 			dependency_requirement: "one_started"
@@ -88,8 +89,8 @@
 		}
 		{
 			title: "Pressing Efficiency"
-			x: 0.5d
-			y: 3.0d
+			x: 2.0d
+			y: 2.5d
 			shape: "diamond"
 			dependencies: ["10890B170755A6D5"]
 			optional: true
@@ -102,8 +103,9 @@
 		}
 		{
 			title: "Basic Rotation Acquired!"
-			x: 0.0d
-			y: 2.0d
+			x: 1.5d
+			y: 1.5d
+			description: ["A little renewable power goes a long way with so few resources at hand. Harness the wind, the water, anything it takes to get some basic machinery stood up. We crawl before we walk. "]
 			dependencies: ["6AADF6A0814C29D4"]
 			id: "10890B170755A6D5"
 			tasks: [{
@@ -133,8 +135,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 3.5d
+			x: 1.5d
+			y: 3.0d
 			shape: "diamond"
 			dependencies: ["4399B01214307E59"]
 			id: "6F3E31687E06AA19"
@@ -145,8 +147,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 5.0d
+			x: 1.5d
+			y: 4.0d
 			dependencies: ["6F3E31687E06AA19"]
 			id: "1FF1E4E11F6A5745"
 			tasks: [{
@@ -157,8 +159,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 6.0d
+			x: 1.5d
+			y: 5.0d
 			dependencies: ["1FF1E4E11F6A5745"]
 			id: "7EF2979430F203C0"
 			tasks: [{
@@ -169,8 +171,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 7.0d
+			x: 1.5d
+			y: 6.0d
 			dependencies: ["7EF2979430F203C0"]
 			id: "1AA1AAE2DA37A44F"
 			tasks: [{
@@ -180,8 +182,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 8.25d
+			x: 1.5d
+			y: 8.0d
 			shape: "octagon"
 			description: [
 				"You have unlocked Immersive Engineering: Part One!"
@@ -189,7 +191,6 @@
 				"You can find quests for it in the Tech T2 chapter."
 			]
 			dependencies: ["1AA1AAE2DA37A44F"]
-			size: 1.5d
 			id: "737FEF84207E1AD5"
 			tasks: [{
 				id: "45F596F7AFA8BFFF"
@@ -309,7 +310,6 @@
 				"You can find quests for it in the Tech T2 chapter."
 			]
 			dependencies: ["00EF0CAB3FB28938"]
-			size: 1.5d
 			id: "60DF22034242502E"
 			tasks: [{
 				id: "58F6F9B04F87F83E"
@@ -321,20 +321,16 @@
 		{
 			x: 4.5d
 			y: 1.5d
-			dependencies: ["2357CCF3A0758B0C"]
-			id: "508E396542F84E94"
-			tasks: [
-				{
-					id: "50954C6469DABD31"
-					type: "item"
-					item: "emendatusenigmatica:invar_dust"
-				}
-				{
-					id: "48D3578471D55A69"
-					type: "item"
-					item: "thermal:machine_smelter"
-				}
+			dependencies: [
+				"2357CCF3A0758B0C"
+				"6AADF6A0814C29D4"
 			]
+			id: "508E396542F84E94"
+			tasks: [{
+				id: "48D3578471D55A69"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
 		}
 		{
 			x: 6.0d
@@ -456,8 +452,7 @@
 		}
 		{
 			x: 7.5d
-			y: 2.5d
-			shape: "diamond"
+			y: 1.5d
 			dependencies: [
 				"2803A0750EE32FBC"
 				"5FD0550A79C3F850"
@@ -510,8 +505,7 @@
 		}
 		{
 			x: 7.5d
-			y: 1.5d
-			shape: "diamond"
+			y: 2.5d
 			dependencies: ["232F8ABE6BC55D47"]
 			optional: true
 			id: "5FD0550A79C3F850"
@@ -522,8 +516,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 2.0d
+			x: 3.0d
+			y: 1.5d
 			dependencies: ["6AADF6A0814C29D4"]
 			optional: true
 			id: "514A0FC52ADBE1DD"
@@ -547,8 +541,8 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: 3.5d
+			x: 3.0d
+			y: 4.0d
 			shape: "hexagon"
 			dependencies: ["514A0FC52ADBE1DD"]
 			optional: true
@@ -604,8 +598,8 @@
 		{
 			title: "Tech Progression Tier 1"
 			icon: "create:large_cogwheel"
-			x: 0.0d
-			y: -1.0d
+			x: 4.5d
+			y: -1.5d
 			shape: "rsquare"
 			dependencies: ["0000000000000FEB"]
 			hide: true
@@ -616,31 +610,14 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 0.5d
-			dependencies: ["37CEBEAC34D036B6"]
+			x: 6.0d
+			y: 2.5d
+			dependencies: ["508E396542F84E94"]
 			id: "232F8ABE6BC55D47"
 			tasks: [{
 				id: "385D0F3F15947D3C"
 				type: "item"
 				item: "thermal:energy_cell_frame"
-			}]
-		}
-		{
-			x: 6.0d
-			y: -1.0d
-			shape: "rsquare"
-			id: "37CEBEAC34D036B6"
-			tasks: [{
-				id: "44C8517458097119"
-				type: "item"
-				item: {
-					id: "emendatusenigmatica:enigmatic_hammer"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
 			}]
 		}
 		{
@@ -657,6 +634,29 @@
 					Count: 1b
 					tag: {
 						value: "thermal:rockwool"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: [
+				"Travel by land can be dangerous with all these beasts roaming around. "
+				""
+				"A good boat is invaluable when out exploring for useful tools. Consider crafting one for fast travel across oceans and travelling deep inland on the many rivers that cross the land. "
+			]
+			dependencies: ["1D574D041D9164AD"]
+			id: "1348985516A60B72"
+			tasks: [{
+				id: "31BE7B445BC9FC71"
+				type: "item"
+				title: "Small Ships"
+				item: {
+					id: "itemfilters:id_regex"
+					Count: 1b
+					tag: {
+						value: "smallships:(?!\\w*(?:sail_item))"
 					}
 				}
 			}]
