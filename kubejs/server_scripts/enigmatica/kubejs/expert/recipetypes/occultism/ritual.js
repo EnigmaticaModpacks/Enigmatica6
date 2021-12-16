@@ -1275,6 +1275,29 @@ onEvent('recipes', (event) => {
             ],
             result: Item.of('botania:ender_dagger', '{Damage:0,Unbreakable:1}'),
             id: `${id_prefix}ender_dagger`
+        },
+        {
+            ritual_type: 'occultism:craft',
+            activation_item: 'occultism:satchel',
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 10,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:apes',
+                display_name: 'ritual.occultism.sacrifice.apes'
+            },
+            ritual_dummy: 'kubejs:craft_enchantment_library',
+            ingredients: [
+                'minecraft:enchanting_table',
+                '#tconstruct:scorched_blocks',
+                '#tconstruct:scorched_blocks',
+                '#tconstruct:scorched_blocks',
+                'botania:mana_pylon',
+                'botania:mana_pylon',
+                'botania:mana_pylon',
+                'botania:mana_pylon'
+            ],
+            result: 'apotheosis:enchantment_library',
+            id: `${id_prefix}enchantment_library`
         }
     ];
 
@@ -1353,8 +1376,8 @@ onEvent('recipes', (event) => {
         recipe.activation_item = Ingredient.of(recipe.activation_item).toJson();
         recipe.ritual_dummy = Ingredient.of(recipe.ritual_dummy).toJson();
         recipe.ingredients = recipe.ingredients.map((input) => Ingredient.of(input).toJson());
-
         recipe.result = Item.of(recipe.result).toJson();
+
         event.custom(recipe).id(recipe.id);
     });
 });

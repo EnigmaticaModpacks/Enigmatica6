@@ -4,6 +4,8 @@ onEvent('recipes', (event) => {
     }
 
     const idRemovals = [
+        'apotheosis:enchantment_library',
+
         'ars_nouveau:dull_trinket',
         'ars_nouveau:moonfall_2',
         'ars_nouveau:mundane_belt',
