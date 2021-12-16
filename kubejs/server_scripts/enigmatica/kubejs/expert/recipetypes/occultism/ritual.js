@@ -198,17 +198,13 @@ onEvent('recipes', (event) => {
         },
         {
             ritual_type: 'occultism:craft_miner_spirit',
-            activation_item: {
-                item: 'occultism:book_of_binding_bound_djinni'
-            },
+            activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
             duration: 60,
-            ritual_dummy: {
-                item: 'occultism:ritual_dummy/craft_miner_djinni_ores'
-            },
+            ritual_dummy: 'occultism:ritual_dummy/craft_miner_djinni_ores',
             ingredients: [
                 'occultism:magic_lamp_empty',
-                'occultism:iesnium_pickaxe',
+                Item.of('occultism:iesnium_pickaxe', '{Damage:0]}').weakNBT(),
                 'atum:ptah_godforged_block',
                 '#forge:storage_blocks/iesnium',
                 'occultism:spirit_attuned_crystal'
@@ -224,7 +220,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/craft_miner_foliot_unspecialized',
             ingredients: [
                 'occultism:magic_lamp_empty',
-                'occultism:iesnium_pickaxe',
+                Item.of('occultism:iesnium_pickaxe', '{Damage:0]}').weakNBT(),
                 '#atum:relic_non_dirty/brooch',
                 'atum:limestone_gravel'
             ],
@@ -313,9 +309,7 @@ onEvent('recipes', (event) => {
         },
         {
             ritual_type: 'occultism:craft_with_spirit_name',
-            activation_item: {
-                item: 'occultism:book_of_binding_bound_foliot'
-            },
+            activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
             duration: 240,
             ritual_dummy: 'occultism:ritual_dummy/craft_satchel',
@@ -367,7 +361,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'naturesaura:crushing_catalyst',
                 '#forge:ingots/sky',
-                'naturesaura:sky_pickaxe',
+                Item.of('naturesaura:sky_pickaxe', '{Damage:0]}').weakNBT(),
                 '#forge:ingots/sky',
                 '#botania:runes/earth',
                 '#botania:runes/earth',
@@ -390,7 +384,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'naturesaura:crushing_catalyst',
                 '#botania:runes/joetunheim',
-                'botania:terra_pick',
+                Item.of('botania:terra_pick', '{Damage:0]}').weakNBT(),
                 '#botania:runes/joetunheim',
                 '#botania:runes/earth',
                 '#botania:runes/earth',
@@ -414,7 +408,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'naturesaura:crushing_catalyst',
                 '#botania:runes/vanaheim',
-                'mythicbotany:alfsteel_pick',
+                Item.of('mythicbotany:alfsteel_pick', '{Damage:0]}').weakNBT(),
                 '#botania:runes/vanaheim',
                 '#botania:runes/earth',
                 '#botania:runes/earth',
@@ -536,7 +530,7 @@ onEvent('recipes', (event) => {
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
-                'aquaculture:neptunium_helmet',
+                Item.of('aquaculture:neptunium_helmet', '{Damage:0]}').weakNBT(),
                 '#forge:heads',
                 'sushigocrafting:shrimp_nigiri',
                 'sushigocrafting:shrimp_nigiri'
@@ -811,7 +805,7 @@ onEvent('recipes', (event) => {
             duration: 100,
             ritual_dummy: 'kubejs:craft_soulsword',
             ingredients: [
-                'undergarden:forgotten_sword',
+                Item.of('undergarden:forgotten_sword', '{Damage:0]}').weakNBT(),
                 'bloodmagic:soulgempetty',
                 '#botania:runes/helheim',
                 '#forge:ingots/iesnium'
@@ -826,7 +820,7 @@ onEvent('recipes', (event) => {
             duration: 100,
             ritual_dummy: 'kubejs:craft_soulaxe',
             ingredients: [
-                'undergarden:forgotten_axe',
+                Item.of('undergarden:forgotten_axe', '{Damage:0]}').weakNBT(),
                 'bloodmagic:soulgempetty',
                 '#botania:runes/helheim',
                 '#forge:ingots/iesnium'
@@ -841,7 +835,7 @@ onEvent('recipes', (event) => {
             duration: 100,
             ritual_dummy: 'kubejs:craft_soulpickaxe',
             ingredients: [
-                'undergarden:forgotten_pickaxe',
+                Item.of('undergarden:forgotten_pickaxe', '{Damage:0]}').weakNBT(),
                 'bloodmagic:soulgempetty',
                 '#botania:runes/helheim',
                 '#forge:ingots/iesnium'
@@ -859,7 +853,7 @@ onEvent('recipes', (event) => {
             duration: 100,
             ritual_dummy: 'kubejs:craft_soulshovel',
             ingredients: [
-                'undergarden:forgotten_shovel',
+                Item.of('undergarden:forgotten_shovel', '{Damage:0]}').weakNBT(),
                 'bloodmagic:soulgempetty',
                 '#botania:runes/helheim',
                 '#forge:ingots/iesnium'
@@ -874,7 +868,7 @@ onEvent('recipes', (event) => {
             duration: 100,
             ritual_dummy: 'kubejs:craft_soulscythe',
             ingredients: [
-                'undergarden:forgotten_hoe',
+                Item.of('undergarden:forgotten_hoe', '{Damage:0]}').weakNBT(),
                 'bloodmagic:soulgempetty',
                 '#botania:runes/helheim',
                 '#forge:ingots/iesnium'
@@ -924,12 +918,10 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/gaia_spirit',
                 '#botania:runes/niflheim',
                 'botania:gaia_spreader',
-
                 '#botania:runes/muspelheim',
                 '#botania:runes/nidavellir',
                 '#forge:storage_blocks/iesnium',
                 '#botania:runes/joetunheim',
-
                 '#botania:runes/alfheim',
                 '#botania:runes/helheim',
                 '#forge:storage_blocks/iesnium',
@@ -977,23 +969,13 @@ onEvent('recipes', (event) => {
                 '#forge:storage_blocks/fairy',
                 'tconstruct:silky_cloth',
                 '#forge:storage_blocks/fairy',
-
                 'minecraft:brain_coral_block',
                 'atum:anubis_godshard',
-                {
-                    type: 'forge:nbt',
-                    item: 'minecraft:potion',
-                    nbt: '{Potion:"upgrade_aquatic:vibing"}'
-                },
+                Item.of('minecraft:potion', '{Potion:"upgrade_aquatic:vibing"}'),
                 'quark:pink_rune',
-
                 'minecraft:brain_coral_block',
                 'quark:pink_rune',
-                {
-                    type: 'forge:nbt',
-                    item: 'minecraft:potion',
-                    nbt: '{Potion:"upgrade_aquatic:vibing"}'
-                },
+                Item.of('minecraft:potion', '{Potion:"upgrade_aquatic:vibing"}'),
                 'atum:anubis_godshard'
             ],
             result: 'occultism:jei_dummy/none',
@@ -1010,12 +992,10 @@ onEvent('recipes', (event) => {
                 'create:belt_connector',
                 '#forge:dusts/salt',
                 'create:belt_connector',
-
                 '#forge:circuits/basic',
                 '#forge:gears/osmium',
                 'create:encased_chain_drive',
                 '#forge:gears/osmium',
-
                 '#forge:circuits/basic',
                 '#forge:gears/osmium',
                 'create:encased_chain_drive',
@@ -1032,7 +1012,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'kubejs:craft_feeding_upgrade',
             ingredients: [
                 'create:mechanical_arm',
-                'farmersdelight:netherite_knife',
+                Item.of('farmersdelight:netherite_knife', '{Damage:0]}').weakNBT(),
                 'sophisticatedbackpacks:upgrade_base',
                 'tconstruct:silky_cloth'
             ],
@@ -1252,6 +1232,7 @@ onEvent('recipes', (event) => {
                 'create:deployer',
                 'minecraft:blast_furnace',
                 'mekanism:jetpack',
+                Item.of('mekanism:jetpack', '{HideFlags:2}').weakNBT(),
                 'pneumaticcraft:reinforced_chest'
             ],
             result: 'computercraft:turtle_advanced',
