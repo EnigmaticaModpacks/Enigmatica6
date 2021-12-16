@@ -1276,10 +1276,10 @@ onEvent('recipes', (event) => {
                 'botania:mana_pylon',
                 'botania:mana_pylon',
                 'botania:mana_pylon',
-                'alexsmobs:banana',
-                'alexsmobs:banana',
-                'alexsmobs:banana',
-                'alexsmobs:banana'
+                '#forge:fruits/banana',
+                '#forge:fruits/banana',
+                '#forge:fruits/banana',
+                '#forge:fruits/banana'
             ],
             result: 'apotheosis:enchantment_library',
             id: `${id_prefix}enchantment_library`
