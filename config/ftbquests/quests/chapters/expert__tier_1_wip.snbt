@@ -3,28 +3,16 @@
 	group: "34B7FB260B6AEB81"
 	order_index: 1
 	filename: "expert__tier_1_wip"
-	title: "Tech - Basic Machinery"
+	title: "Tech - Mechanical Mayhem"
 	icon: "create:large_cogwheel"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			x: 0.0d
-			y: 0.5d
-			shape: "rsquare"
-			dependencies: ["1D574D041D9164AD"]
-			id: "1DB20906EC9FFAB9"
-			tasks: [{
-				id: "6C30E3FB62A38AAB"
-				type: "item"
-				item: "minecraft:tnt"
-			}]
-		}
-		{
-			x: 0.0d
-			y: 1.5d
+			y: 1.0d
+			shape: "diamond"
 			dependencies: [
-				"1DB20906EC9FFAB9"
 				"19A178AE2895632F"
 				"0044F922097279B5"
 			]
@@ -47,9 +35,9 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -0.5d
 			y: 0.5d
-			shape: "rsquare"
+			shape: "diamond"
 			dependencies: ["1D574D041D9164AD"]
 			id: "0044F922097279B5"
 			tasks: [{
@@ -59,9 +47,9 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 0.5d
 			y: 0.5d
-			shape: "rsquare"
+			shape: "diamond"
 			dependencies: ["1D574D041D9164AD"]
 			id: "19A178AE2895632F"
 			tasks: [{
@@ -74,7 +62,7 @@
 		{
 			icon: "create:mechanical_mixer"
 			x: -0.5d
-			y: 3.5d
+			y: 3.0d
 			shape: "diamond"
 			dependencies: ["10890B170755A6D5"]
 			dependency_requirement: "one_started"
@@ -101,7 +89,7 @@
 		{
 			title: "Pressing Efficiency"
 			x: 0.5d
-			y: 3.5d
+			y: 3.0d
 			shape: "diamond"
 			dependencies: ["10890B170755A6D5"]
 			optional: true
@@ -115,7 +103,7 @@
 		{
 			title: "Basic Rotation Acquired!"
 			x: 0.0d
-			y: 2.5d
+			y: 2.0d
 			dependencies: ["6AADF6A0814C29D4"]
 			id: "10890B170755A6D5"
 			tasks: [{
@@ -146,7 +134,7 @@
 		}
 		{
 			x: 0.0d
-			y: 4.0d
+			y: 3.5d
 			shape: "diamond"
 			dependencies: ["4399B01214307E59"]
 			id: "6F3E31687E06AA19"
@@ -212,7 +200,7 @@
 		}
 		{
 			x: 4.5d
-			y: 5.5d
+			y: 5.0d
 			dependencies: ["155D0B93052756E8"]
 			id: "0E16BA23BA46FCB1"
 			tasks: [
@@ -259,7 +247,7 @@
 		}
 		{
 			x: 4.5d
-			y: 4.5d
+			y: 4.0d
 			dependencies: ["15C239A8575142B1"]
 			id: "155D0B93052756E8"
 			tasks: [{
@@ -290,7 +278,7 @@
 		}
 		{
 			x: 6.0d
-			y: 6.0d
+			y: 5.5d
 			description: ["Explosiion Crafting Explanation"]
 			dependencies: ["0E16BA23BA46FCB1"]
 			id: "3DD1F984ED880148"
@@ -302,7 +290,7 @@
 		}
 		{
 			x: 5.0d
-			y: 7.0d
+			y: 6.5d
 			dependencies: ["3DD1F984ED880148"]
 			id: "00EF0CAB3FB28938"
 			tasks: [{
@@ -313,7 +301,7 @@
 		}
 		{
 			x: 6.0d
-			y: 8.25d
+			y: 7.75d
 			shape: "octagon"
 			description: [
 				"You have unlocked PneumaticCraft: Repressurized!"
@@ -350,7 +338,7 @@
 		}
 		{
 			x: 6.0d
-			y: 4.0d
+			y: 3.5d
 			dependencies: ["0616453B4BBEFB11"]
 			id: "15C239A8575142B1"
 			tasks: [{
@@ -375,6 +363,7 @@
 		{
 			x: 5.0d
 			y: 2.5d
+			shape: "diamond"
 			dependencies: ["508E396542F84E94"]
 			id: "4082766981B24A44"
 			tasks: [
@@ -441,6 +430,7 @@
 		{
 			x: 4.0d
 			y: 2.5d
+			shape: "diamond"
 			dependencies: ["508E396542F84E94"]
 			id: "63B1F7BACD7CCD5D"
 			tasks: [{
@@ -451,7 +441,8 @@
 		}
 		{
 			x: 4.5d
-			y: 3.5d
+			y: 3.0d
+			shape: "diamond"
 			dependencies: [
 				"63B1F7BACD7CCD5D"
 				"4082766981B24A44"
@@ -532,7 +523,7 @@
 		}
 		{
 			x: -2.0d
-			y: 1.5d
+			y: 2.0d
 			dependencies: ["6AADF6A0814C29D4"]
 			optional: true
 			id: "514A0FC52ADBE1DD"
@@ -556,8 +547,8 @@
 			]
 		}
 		{
-			x: -3.5d
-			y: 1.5d
+			x: -2.0d
+			y: 3.5d
 			shape: "hexagon"
 			dependencies: ["514A0FC52ADBE1DD"]
 			optional: true
@@ -570,7 +561,7 @@
 		}
 		{
 			x: 7.0d
-			y: 7.0d
+			y: 6.5d
 			shape: "hexagon"
 			dependencies: ["3DD1F984ED880148"]
 			id: "720C5EDF3E3B37A6"
@@ -582,7 +573,7 @@
 		}
 		{
 			x: 7.5d
-			y: 5.5d
+			y: 5.0d
 			shape: "hexagon"
 			dependencies: ["1F777AA9D474D17C"]
 			id: "37DED885C90A4D36"
@@ -594,7 +585,7 @@
 		}
 		{
 			x: 7.5d
-			y: 4.5d
+			y: 4.0d
 			dependencies: ["15C239A8575142B1"]
 			id: "1F777AA9D474D17C"
 			tasks: [

@@ -22,7 +22,7 @@
 		}
 		{
 			title: "RFTools"
-			x: 4.5d
+			x: 4.0d
 			y: 0.0d
 			dependencies: ["0000000000000FD7"]
 			id: "1E4DC3A7546EC894"
@@ -46,7 +46,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: 2.0d
 			dependencies: ["3CBABF225201DBED"]
 			id: "6079CBE9ECE6EB1D"
@@ -76,8 +76,8 @@
 		}
 		{
 			title: "Enrich Pink Slime"
-			x: 0.0d
-			y: 5.0d
+			x: 0.5d
+			y: 6.0d
 			dependencies: ["35EE2BA3A988F416"]
 			id: "206F4AA9A9278D8D"
 			tasks: [{
@@ -87,7 +87,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 0.5d
 			y: 3.0d
 			dependencies: [
 				"6079CBE9ECE6EB1D"
@@ -110,14 +110,11 @@
 		}
 		{
 			icon: "minecraft:wither_skeleton_skull"
-			x: -0.5d
-			y: 4.0d
+			x: 0.0d
+			y: 4.5d
 			subtitle: "Milk a Pink Wither."
 			description: ["Summon a Pink Wither with Occultism, or convert a Wither with a Pinkinator from The Guardian of Gaia."]
-			dependencies: [
-				"412F3A311A7CFCB3"
-				"0F16543E9DE08714"
-			]
+			dependencies: ["412F3A311A7CFCB3"]
 			id: "35EE2BA3A988F416"
 			tasks: [{
 				id: "046A0A8AB86FF128"
@@ -126,11 +123,11 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 3.5d
 			y: 3.0d
 			dependencies: [
 				"72945D9390F479E7"
-				"52FEE141AD87B819"
+				"242AEF5D6C2318D3"
 			]
 			id: "3B9B0EB73BF19CBD"
 			tasks: [{
@@ -162,10 +159,10 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 1.0d
+			x: 1.5d
+			y: 0.5d
 			shape: "diamond"
-			dependencies: ["1E4DC3A7546EC894"]
+			dependencies: ["3E03729D4E825E26"]
 			id: "2182BC78D342D1AA"
 			tasks: [{
 				id: "6B231E1F097FC1DC"
@@ -174,8 +171,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 1.5d
+			x: 2.5d
+			y: 0.5d
 			shape: "diamond"
 			dependencies: ["2182BC78D342D1AA"]
 			id: "51AFB0E11AB83CFC"
@@ -186,8 +183,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 2.0d
+			x: 2.0d
+			y: 1.0d
 			shape: "diamond"
 			description: ["High Technology requires smarter machines, and what better to make them more intelligent than one’s own distilled experience? "]
 			dependencies: ["51AFB0E11AB83CFC"]
@@ -200,7 +197,7 @@
 		}
 		{
 			x: -1.0d
-			y: 3.0d
+			y: 2.5d
 			shape: "diamond"
 			dependencies: ["6079CBE9ECE6EB1D"]
 			optional: true
@@ -220,6 +217,117 @@
 				id: "469EF5B5F3B3A6C7"
 				type: "item"
 				item: "mekanismgenerators:laser_focus_matrix"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.0d
+			dependencies: ["71D581C742D17CA4"]
+			id: "7E3DDF2413EA9433"
+			tasks: [{
+				id: "45C0FD125FCC0EC5"
+				type: "item"
+				item: "mekanismgenerators:control_rod_assembly"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.5d
+			dependencies: ["71D581C742D17CA4"]
+			id: "5AB7BDCE735F200A"
+			tasks: [{
+				id: "2DC0607EC0F51335"
+				type: "item"
+				item: "mekanismgenerators:turbine_blade"
+			}]
+		}
+		{
+			title: "Ether Gas"
+			icon: "minecraft:wither_skeleton_skull"
+			x: 1.0d
+			y: 4.0d
+			description: ["Ether Gas"]
+			dependencies: ["412F3A311A7CFCB3"]
+			id: "4A453667AB7D1197"
+			tasks: [{
+				id: "6842B6803B8B613F"
+				type: "item"
+				item: "industrialforegoing:ether_gas_bucket"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			dependencies: [
+				"4A453667AB7D1197"
+				"3B9B0EB73BF19CBD"
+			]
+			id: "71D581C742D17CA4"
+			tasks: [{
+				id: "249303BB1931E8BF"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["52FEE141AD87B819"]
+			id: "242AEF5D6C2318D3"
+			tasks: [{
+				id: "586BD5184CB0DAF7"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.0d
+			dependencies: [
+				"206F4AA9A9278D8D"
+				"5AD982728B95438C"
+			]
+			id: "40204EBF03AD725E"
+			tasks: [{
+				id: "497E05EC7D5541E0"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 6.0d
+			dependencies: [
+				"7E3DDF2413EA9433"
+				"5AB7BDCE735F200A"
+			]
+			id: "5AD982728B95438C"
+			tasks: [{
+				id: "06305D4712AFDD6A"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 8.5d
+			dependencies: ["40204EBF03AD725E"]
+			id: "16DE48989A21D643"
+			tasks: [{
+				id: "56BA92C0A36137C1"
+				type: "item"
+				item: "mekanismgenerators:fusion_reactor_controller"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 8.5d
+			dependencies: ["40204EBF03AD725E"]
+			id: "2A9B2999EFB358D6"
+			tasks: [{
+				id: "5919D1C305DF769B"
+				type: "item"
+				item: "industrialforegoing:mycelial_reactor"
 			}]
 		}
 	]
