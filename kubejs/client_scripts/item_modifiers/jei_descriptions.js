@@ -361,6 +361,19 @@ onEvent('jei.information', (event) => {
             text: [`Splash a Phantom with a Potion of Insomnia to convert it to a Flare.`]
         },
         {
+            items: ['immersiveengineering:cloche'],
+            text: [
+                `Available Fertilizers:`,
+                ` `,
+                `Bone Meal: 1.25x`,
+                `Floral Fertilizer: 1.5x`,
+                `Green Fertilizer: 1.5x`,
+                `Fertilizer: 1.7x`,
+                `Red Fertilizer: 2.0x`,
+                `Phyto-Gro: 3.0x`
+            ]
+        },
+        {
             items: ['quark:dragon_scale'],
             text: [`Only drops from Ender Dragons after the first one has been killed.`]
         },
