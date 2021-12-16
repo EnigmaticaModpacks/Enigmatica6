@@ -192,7 +192,15 @@ onEvent('jei.information', (event) => {
         },
         {
             items: [/quark:\w+_crystal$/],
-            text: ['Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.']
+            text: [
+                'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.',
+                ' ',
+                'May sprout Corundum Clusters as well.'
+            ]
+        },
+        {
+            items: [/quark:\w+_crystal_cluster/],
+            text: ['Grows occasionally on Corundum Blocks when grown underground.']
         },
         {
             items: ['quark:bottled_cloud'],

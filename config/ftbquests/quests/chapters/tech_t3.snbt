@@ -3,7 +3,7 @@
 	group: "34B7FB260B6AEB81"
 	order_index: 3
 	filename: "tech_t3"
-	title: "Tech T3"
+	title: "Tech - Nuclear Physics"
 	icon: "kubejs:memory_basic_filled"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -126,7 +126,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 4.5d
 			y: 3.0d
 			dependencies: [
 				"72945D9390F479E7"
@@ -164,6 +164,7 @@
 		{
 			x: 5.0d
 			y: 1.0d
+			shape: "diamond"
 			dependencies: ["1E4DC3A7546EC894"]
 			id: "2182BC78D342D1AA"
 			tasks: [{
@@ -175,6 +176,7 @@
 		{
 			x: 5.5d
 			y: 1.5d
+			shape: "diamond"
 			dependencies: ["2182BC78D342D1AA"]
 			id: "51AFB0E11AB83CFC"
 			tasks: [{
@@ -186,6 +188,7 @@
 		{
 			x: 5.0d
 			y: 2.0d
+			shape: "diamond"
 			description: ["High Technology requires smarter machines, and what better to make them more intelligent than one’s own distilled experience? "]
 			dependencies: ["51AFB0E11AB83CFC"]
 			id: "52FEE141AD87B819"
