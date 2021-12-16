@@ -187,8 +187,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 8.0d
+			x: 3.0d
+			y: 7.0d
 			shape: "octagon"
 			description: [
 				"You have unlocked Immersive Engineering: Part One!"
@@ -206,54 +206,7 @@
 		}
 		{
 			x: 4.5d
-			y: 5.0d
-			dependencies: ["155D0B93052756E8"]
-			id: "0E16BA23BA46FCB1"
-			tasks: [
-				{
-					id: "3A5D83300A377FFA"
-					type: "item"
-					title: "Any #forge:tar"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:tar"
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "620201D82E6955AC"
-					type: "item"
-					title: "Any #forge:ingots/steel"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:ingots/steel"
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "28DE5B8E42B2F849"
-					type: "item"
-					title: "Any #forge:obsidian"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:obsidian"
-						}
-					}
-					count: 2L
-				}
-			]
-		}
-		{
-			x: 4.5d
-			y: 4.0d
+			y: 5.5d
 			dependencies: ["15C239A8575142B1"]
 			id: "155D0B93052756E8"
 			tasks: [{
@@ -283,10 +236,15 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 5.5d
+			x: 4.5d
+			y: 7.5d
+			shape: "diamond"
 			description: ["Explosiion Crafting Explanation"]
-			dependencies: ["0E16BA23BA46FCB1"]
+			dependencies: [
+				"62895312DA739FBF"
+				"1A3727BA37EA4F6D"
+				"354FE8210390E793"
+			]
 			id: "3DD1F984ED880148"
 			tasks: [{
 				id: "0CDA65B3EB419AE4"
@@ -295,8 +253,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 6.5d
+			x: 4.5d
+			y: 8.5d
 			dependencies: ["3DD1F984ED880148"]
 			id: "00EF0CAB3FB28938"
 			tasks: [{
@@ -306,8 +264,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 7.75d
+			x: 4.5d
+			y: 9.5d
 			shape: "octagon"
 			description: [
 				"You have unlocked PneumaticCraft: Repressurized!"
@@ -338,8 +296,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 3.5d
+			x: 4.5d
+			y: 4.0d
 			dependencies: ["0616453B4BBEFB11"]
 			id: "15C239A8575142B1"
 			tasks: [{
@@ -456,8 +414,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 1.5d
+			x: 7.0d
+			y: 2.5d
 			dependencies: [
 				"2803A0750EE32FBC"
 				"5FD0550A79C3F850"
@@ -509,8 +467,8 @@
 			]
 		}
 		{
-			x: 7.5d
-			y: 2.5d
+			x: 7.0d
+			y: 3.5d
 			dependencies: ["232F8ABE6BC55D47"]
 			optional: true
 			id: "5FD0550A79C3F850"
@@ -559,8 +517,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 6.5d
+			x: 6.5d
+			y: 7.5d
 			shape: "hexagon"
 			dependencies: ["3DD1F984ED880148"]
 			id: "720C5EDF3E3B37A6"
@@ -571,7 +529,7 @@
 			}]
 		}
 		{
-			x: 7.5d
+			x: 7.0d
 			y: 5.0d
 			shape: "hexagon"
 			dependencies: ["1F777AA9D474D17C"]
@@ -583,7 +541,7 @@
 			}]
 		}
 		{
-			x: 7.5d
+			x: 6.0d
 			y: 4.0d
 			dependencies: ["15C239A8575142B1"]
 			id: "1F777AA9D474D17C"
@@ -664,6 +622,42 @@
 						value: "smallships:(?!\\w*(?:sail_item))"
 					}
 				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.5d
+			shape: "diamond"
+			dependencies: ["155D0B93052756E8"]
+			id: "1A3727BA37EA4F6D"
+			tasks: [{
+				id: "56E32EE158B78F90"
+				type: "item"
+				item: "thermal:tar"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 7.0d
+			shape: "diamond"
+			dependencies: ["737FEF84207E1AD5"]
+			id: "62895312DA739FBF"
+			tasks: [{
+				id: "01569489009ABEDD"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 7.0d
+			shape: "diamond"
+			dependencies: ["1A3727BA37EA4F6D"]
+			id: "354FE8210390E793"
+			tasks: [{
+				id: "7913A39A566A6943"
+				type: "item"
+				item: "minecraft:obsidian"
 			}]
 		}
 	]
