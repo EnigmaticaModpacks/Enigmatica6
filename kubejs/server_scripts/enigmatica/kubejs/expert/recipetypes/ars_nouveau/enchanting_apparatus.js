@@ -73,14 +73,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'bloodmagic:reinforcedslate',
+                'occultism:otherstone',
                 '#forge:dusts/mana',
-                'bloodmagic:reinforcedslate',
+                'occultism:otherstone',
                 'eidolon:pewter_inlay',
                 'eidolon:pewter_inlay',
-                'bloodmagic:reinforcedslate',
-                'bloodmagic:reinforcedslate',
-                'bloodmagic:reinforcedslate'
+                'occultism:otherstone',
+                'occultism:otherstone',
+                'occultism:otherstone'
             ],
             reagent: 'minecraft:bowl',
             sourceCost: 1000,
@@ -2150,6 +2150,22 @@ onEvent('recipes', (event) => {
             reagent: 'eidolon:soul_shard',
             output: Item.of('2x eidolon:arcane_gold_ingot'),
             id: `${id_prefix}carbee_jar`
+        },
+        {
+            inputs: [
+                'bloodmagic:blankslate',
+                'eidolon:ender_calx',
+                'bloodmagic:blankslate',
+                'bloodmagic:blankslate',
+                'bloodmagic:blankslate',
+                'bloodmagic:blankslate',
+                'eidolon:ender_calx',
+                'bloodmagic:blankslate'
+            ],
+            sourceCost: 1000,
+            reagent: 'botania:livingwood',
+            output: Item.of('2x bloodmagic:blankrune'),
+            id: `${id_prefix}blood_rune_blank`
         },
 
         /// Patchouli Removals

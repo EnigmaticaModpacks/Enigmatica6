@@ -404,6 +404,7 @@ const recipesToHide = [
             'apotheosis:hellshelf',
             'apotheosis:seashelf',
             'apotheosis:endshelf',
+            'apotheosis:enchantment_library',
 
             'ars_nouveau:arcane_stone',
             'ars_nouveau:crystallizer',
@@ -476,6 +477,7 @@ const recipesToHide = [
             'mythicbotany:fire_ring',
             'mythicbotany:ice_ring',
             'mythicbotany:mana_collector',
+            'mythicbotany:kvasir_mead',
 
             'naturesaura:calling_spirit',
             'naturesaura:animal_spawner',
