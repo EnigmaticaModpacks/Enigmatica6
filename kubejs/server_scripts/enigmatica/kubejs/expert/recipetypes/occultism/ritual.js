@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 6,
+            duration: 60,
             ritual_dummy: 'occultism:ritual_dummy/craft_infused_lenses',
             ingredients: [
                 'occultism:lenses',
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 6,
+            duration: 60,
             ritual_dummy: 'occultism:ritual_dummy/craft_infused_pickaxe',
             ingredients: [
                 'occultism:spirit_attuned_pickaxe_head',
@@ -42,7 +42,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 6,
+            duration: 60,
             ritual_dummy: 'occultism:ritual_dummy/craft_soul_gem',
             ingredients: [
                 'eidolon:lesser_soul_gem',
@@ -61,7 +61,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:summon',
             activation_item: 'occultism:book_of_binding_bound_afrit',
             pentacle_id: 'occultism:summon_wild_afrit',
-            duration: 6,
+            duration: 60,
             entity_to_sacrifice: {
                 tag: 'enigmatica:camels',
                 display_name: 'ritual.occultism.sacrifice.camels'
@@ -85,7 +85,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'occultism:ritual_dummy/craft_dimensional_matrix',
             ingredients: [
                 '#quark:crystal_clusters',
@@ -108,7 +108,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 12,
+            duration: 120,
             ritual_dummy: 'occultism:ritual_dummy/craft_stabilizer_tier1',
             ingredients: [
                 'occultism:otherstone_pedestal',
@@ -131,7 +131,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'occultism:ritual_dummy/craft_stabilizer_tier2',
             ingredients: [
                 'occultism:storage_stabilizer_tier1',
@@ -154,7 +154,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_afrit',
             pentacle_id: 'occultism:craft_afrit',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'occultism:ritual_dummy/craft_stabilizer_tier3',
             ingredients: [
                 'occultism:storage_stabilizer_tier2',
@@ -177,7 +177,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_marid',
             pentacle_id: 'occultism:craft_marid',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'occultism:ritual_dummy/craft_stabilizer_tier4',
             ingredients: [
                 'occultism:storage_stabilizer_tier3',
@@ -202,7 +202,7 @@ onEvent('recipes', (event) => {
                 item: 'occultism:book_of_binding_bound_djinni'
             },
             pentacle_id: 'occultism:craft_djinni',
-            duration: 6,
+            duration: 60,
             ritual_dummy: {
                 item: 'occultism:ritual_dummy/craft_miner_djinni_ores'
             },
@@ -220,7 +220,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_miner_spirit',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 6,
+            duration: 60,
             ritual_dummy: 'occultism:ritual_dummy/craft_miner_foliot_unspecialized',
             ingredients: [
                 'occultism:magic_lamp_empty',
@@ -235,7 +235,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'occultism:ritual_dummy/craft_dimensional_mineshaft',
             ingredients: [
                 'bloodmagic:infusedslate',
@@ -254,7 +254,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 9,
+            duration: 90,
             ritual_dummy: 'occultism:ritual_dummy/craft_familiar_ring',
             ingredients: [
                 'occultism:soul_gem',
@@ -269,7 +269,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 6,
+            duration: 60,
             ritual_dummy: 'occultism:ritual_dummy/craft_storage_controller_base',
             ingredients: [
                 'occultism:otherstone_pedestal',
@@ -285,7 +285,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 12,
+            duration: 120,
             ritual_dummy: 'occultism:ritual_dummy/craft_stable_wormhole',
             ingredients: [
                 'occultism:wormhole_frame',
@@ -300,7 +300,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 12,
+            duration: 120,
             ritual_dummy: 'occultism:ritual_dummy/craft_storage_remote',
             ingredients: [
                 'occultism:storage_remote_inert',
@@ -317,7 +317,7 @@ onEvent('recipes', (event) => {
                 item: 'occultism:book_of_binding_bound_foliot'
             },
             pentacle_id: 'occultism:craft_foliot',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'occultism:ritual_dummy/craft_satchel',
             ingredients: [
                 'ironchest:silver_chest',
@@ -335,7 +335,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:summon_spirit_with_job',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:summon_foliot',
-            duration: 6,
+            duration: 60,
             spirit_max_age: -1,
             spirit_job_type: 'occultism:crush_tier1',
             entity_to_summon: 'occultism:foliot',
@@ -359,7 +359,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:summon_spirit_with_job',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:summon_djinni',
-            duration: 9,
+            duration: 90,
             spirit_max_age: -1,
             spirit_job_type: 'occultism:crush_tier2',
             entity_to_summon: 'occultism:djinni',
@@ -382,7 +382,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:summon_spirit_with_job',
             activation_item: 'occultism:book_of_binding_bound_afrit',
             pentacle_id: 'occultism:summon_afrit',
-            duration: 12,
+            duration: 120,
             spirit_max_age: -1,
             spirit_job_type: 'occultism:crush_tier3',
             entity_to_summon: 'occultism:afrit',
@@ -406,7 +406,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:summon_spirit_with_job',
             activation_item: 'occultism:book_of_binding_bound_marid',
             pentacle_id: 'occultism:summon_marid',
-            duration: 3,
+            duration: 30,
             spirit_max_age: -1,
             spirit_job_type: 'occultism:crush_tier4',
             entity_to_summon: 'occultism:marid',
@@ -428,7 +428,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:familiar',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:possess_foliot',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'occultism:humans',
                 display_name: 'ritual.occultism.sacrifice.humans'
@@ -452,7 +452,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:summon_tamed',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:possess_djinni',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'forge:parrots',
                 display_name: 'ritual.occultism.sacrifice.parrots'
@@ -476,7 +476,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:familiar',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:possess_djinni',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'forge:bats',
                 display_name: 'ritual.occultism.sacrifice.bats'
@@ -500,7 +500,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:familiar',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:possess_foliot',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'enigmatica:deer',
                 display_name: 'ritual.occultism.sacrifice.deer'
@@ -524,7 +524,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:familiar',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:possess_djinni',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'enigmatica:thrashers',
                 display_name: 'ritual.occultism.sacrifice.thrashers'
@@ -548,7 +548,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:familiar',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:possess_djinni',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'enigmatica:dropbears',
                 display_name: 'ritual.occultism.sacrifice.dropbears'
@@ -576,7 +576,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:familiar',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:possess_djinni',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'enigmatica:rattlesnakes',
                 display_name: 'ritual.occultism.sacrifice.rattlesnakes'
@@ -604,7 +604,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:familiar',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:possess_djinni',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'forge:golems/snow',
                 display_name: 'ritual.occultism.sacrifice.snow_golem'
@@ -632,7 +632,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:familiar',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:possess_djinni',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'enigmatica:canines',
                 display_name: 'ritual.occultism.sacrifice.canines'
@@ -661,7 +661,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:familiar',
             activation_item: 'occultism:book_of_binding_bound_afrit',
             pentacle_id: 'occultism:possess_afrit',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'occultism:humans',
                 display_name: 'ritual.occultism.sacrifice.humans'
@@ -689,7 +689,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:familiar',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:possess_foliot',
-            duration: 3,
+            duration: 30,
             entity_to_sacrifice: {
                 tag: 'forge:zombies',
                 display_name: 'ritual.occultism.sacrifice.zombies'
@@ -719,7 +719,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 6,
+            duration: 60,
             ritual_dummy: 'kubejs:craft_magicfeather',
             ingredients: [
                 'alexsmobs:roadrunner_feather',
@@ -738,7 +738,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'materialis:fairy_block',
             pentacle_id: 'occultism:craft_marid',
-            duration: 6,
+            duration: 60,
             entity_to_sacrifice: {
                 tag: 'enigmatica:dragons',
                 display_name: 'ritual.occultism.sacrifice.dragons'
@@ -765,7 +765,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:summon',
             activation_item: 'occultism:book_of_binding_bound_afrit',
             pentacle_id: 'occultism:summon_wild_afrit',
-            duration: 6,
+            duration: 60,
             entity_to_sacrifice: {
                 tag: 'occultism:humans',
                 display_name: 'ritual.occultism.sacrifice.humans'
@@ -789,7 +789,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 10,
+            duration: 100,
             ritual_dummy: 'kubejs:craft_spirit_entropic_gateway',
             ingredients: [
                 'ars_nouveau:void_jar',
@@ -808,7 +808,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 10,
+            duration: 100,
             ritual_dummy: 'kubejs:craft_soulsword',
             ingredients: [
                 'undergarden:forgotten_sword',
@@ -823,7 +823,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 10,
+            duration: 100,
             ritual_dummy: 'kubejs:craft_soulaxe',
             ingredients: [
                 'undergarden:forgotten_axe',
@@ -838,7 +838,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 10,
+            duration: 100,
             ritual_dummy: 'kubejs:craft_soulpickaxe',
             ingredients: [
                 'undergarden:forgotten_pickaxe',
@@ -856,7 +856,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 10,
+            duration: 100,
             ritual_dummy: 'kubejs:craft_soulshovel',
             ingredients: [
                 'undergarden:forgotten_shovel',
@@ -871,7 +871,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 10,
+            duration: 100,
             ritual_dummy: 'kubejs:craft_soulscythe',
             ingredients: [
                 'undergarden:forgotten_hoe',
@@ -886,7 +886,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'botania:runic_altar',
             pentacle_id: 'occultism:craft_marid',
-            duration: 24,
+            duration: 240,
             entity_to_sacrifice: {
                 tag: 'enigmatica:gaia_guardian',
                 display_name: 'ritual.occultism.sacrifice.gaia_guardian'
@@ -913,7 +913,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: '#botania:runes/midgard',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             entity_to_sacrifice: {
                 tag: 'enigmatica:pharaohs',
                 display_name: 'ritual.occultism.sacrifice.pharaohs'
@@ -942,7 +942,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 10,
+            duration: 100,
             ritual_dummy: 'kubejs:craft_logic_director',
             ingredients: [
                 '#forge:gems/mana_diamond',
@@ -965,7 +965,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:summon',
             activation_item: 'botania:goddess_charm',
             pentacle_id: 'occultism:summon_wild_afrit',
-            duration: 6,
+            duration: 60,
             entity_to_sacrifice: {
                 tag: 'enigmatica:wither',
                 display_name: 'ritual.occultism.sacrifice.wither'
@@ -1003,7 +1003,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 12,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_robit',
             ingredients: [
                 '#industrialforegoing:machine_frame/pity',
@@ -1028,7 +1028,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_feeding_upgrade',
             ingredients: [
                 'create:mechanical_arm',
@@ -1043,7 +1043,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_marid',
             pentacle_id: 'occultism:craft_marid',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_advanced_feeding_upgrade',
             ingredients: [
                 'sophisticatedbackpacks:feeding_upgrade',
@@ -1058,7 +1058,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_auto_smelting_upgrade',
             ingredients: [
                 'sophisticatedbackpacks:smelting_upgrade',
@@ -1073,7 +1073,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_pump_upgrade',
             ingredients: [
                 'create:mechanical_pump',
@@ -1090,7 +1090,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_advanced_pump_upgrade',
             ingredients: [
                 'create:smart_fluid_pipe',
@@ -1106,7 +1106,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_xp_pump_upgrade',
             ingredients: [
                 'create:smart_fluid_pipe',
@@ -1125,7 +1125,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_compacting_upgrade',
             ingredients: [
                 'create:mechanical_press',
@@ -1142,7 +1142,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_advanced_compacting_upgrade',
             ingredients: [
                 'sophisticatedbackpacks:compacting_upgrade',
@@ -1161,7 +1161,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_tool_swapper_upgrade',
             ingredients: [
                 'create:deployer',
@@ -1178,7 +1178,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_advanced_tool_swapper_upgrade',
             ingredients: [
                 'sophisticatedbackpacks:tool_swapper_upgrade',
@@ -1197,7 +1197,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_refill_upgrade',
             ingredients: [
                 'create:chute',
@@ -1212,7 +1212,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_glyph_sentientharm',
             ingredients: [
                 'ars_nouveau:marvelous_clay',
@@ -1227,7 +1227,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_turtle_normal',
             ingredients: [
                 'aquaculture:box_turtle',
@@ -1244,7 +1244,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 24,
+            duration: 240,
             ritual_dummy: 'kubejs:craft_turtle_advanced',
             ingredients: [
                 'aquaculture:box_turtle',
@@ -1261,7 +1261,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 10,
+            duration: 100,
             ritual_dummy: 'kubejs:craft_ender_dagger',
             ingredients: [
                 'bloodmagic:daggerofsacrifice',
@@ -1280,7 +1280,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:satchel',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 10,
+            duration: 100,
             entity_to_sacrifice: {
                 tag: 'enigmatica:apes',
                 display_name: 'ritual.occultism.sacrifice.apes'
@@ -1343,7 +1343,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:dimensional_matrix',
             pentacle_id: 'occultism:craft_marid',
-            duration: 60,
+            duration: 600,
             entity_to_sacrifice: {
                 tag: 'enigmatica:mungus',
                 display_name: 'ritual.occultism.sacrifice.mungus'
@@ -1374,6 +1374,7 @@ onEvent('recipes', (event) => {
         recipe.type = 'occultism:ritual';
 
         recipe.activation_item = Ingredient.of(recipe.activation_item).toJson();
+        recipe.item_to_use = Ingredient.of(recipe.item_to_use).toJson();
         recipe.ritual_dummy = Ingredient.of(recipe.ritual_dummy).toJson();
         recipe.ingredients = recipe.ingredients.map((input) => Ingredient.of(input).toJson());
         recipe.result = Item.of(recipe.result).toJson();
