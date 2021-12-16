@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
             pentacle_id: 'occultism:possess_foliot',
             item_to_use: 'occultism:datura',
             entity_to_summon: 'resourcefulbees:otherworldly_bee',
-            ritual_dummy: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:otherworldly_bee' }),
+            ritual_dummy: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:otherworldly_bee' }).weakNBT(),
             ingredients: [
                 'resourcefulbees:silver_honeycomb',
                 'resourcefulbees:silver_honeycomb',
