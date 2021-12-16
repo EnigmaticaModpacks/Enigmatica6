@@ -4,8 +4,6 @@ onEvent('recipes', (event) => {
     }
 
     const idRemovals = [
-        'apotheosis:enchantment_library',
-
         'ars_nouveau:dull_trinket',
         'ars_nouveau:moonfall_2',
         'ars_nouveau:mundane_belt',
@@ -156,6 +154,7 @@ onEvent('recipes', (event) => {
         { output: 'apotheosis:hellshelf', id: 'apotheosis:hellshelf' },
         { output: 'apotheosis:seashelf', id: 'apotheosis:seashelf' },
         { output: 'apotheosis:endshelf', id: 'apotheosis:endshelf' },
+        { output: 'apotheosis:enchantment_library', id: 'apotheosis:enchantment_library' },
 
         { output: 'ars_nouveau:arcane_stone', id: 'ars_nouveau:arcane_stone' },
         { output: 'ars_nouveau:crystallizer', id: 'ars_nouveau:crystallizer' },

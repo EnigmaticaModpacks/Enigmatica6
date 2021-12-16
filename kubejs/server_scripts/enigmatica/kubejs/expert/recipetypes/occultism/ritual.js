@@ -1289,12 +1289,16 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'minecraft:enchanting_table',
                 '#tconstruct:scorched_blocks',
+                ['byg:green_enchanted_bookshelf', 'byg:blue_enchanted_bookshelf'],
                 '#tconstruct:scorched_blocks',
-                '#tconstruct:scorched_blocks',
                 'botania:mana_pylon',
                 'botania:mana_pylon',
                 'botania:mana_pylon',
-                'botania:mana_pylon'
+                'botania:mana_pylon',
+                'alexsmobs:banana',
+                'alexsmobs:banana',
+                'alexsmobs:banana',
+                'alexsmobs:banana'
             ],
             result: 'apotheosis:enchantment_library',
             id: `${id_prefix}enchantment_library`
