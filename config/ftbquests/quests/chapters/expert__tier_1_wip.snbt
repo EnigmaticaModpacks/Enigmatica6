@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Crude Alloy \"Furnace\""
 			x: 3.0d
 			y: 0.0d
 			description: [
@@ -16,7 +17,7 @@
 				""
 				"All around, there are ruins. Monsters roam the lands and simple village folk hide in their huts at night, afraid to step out of their dim lights. But there was more here once upon a time. "
 				""
-				"Explore the lands to locate any form of explosive using all resources available. Once found, drop some Zinc and Andesite on the ground and blow it up. The resulting explosion will fuse the materials into Andesite Alloy."
+				"Explore the lands to locate any form of explosive using all resources available. Once found, drop some materials on the ground and blow them up. The resulting explosion will fuse them into new compounds."
 				""
 				"Note: A single explosion has enough energy to transform large batches of materials. "
 			]
@@ -38,7 +39,11 @@
 		{
 			x: 6.0d
 			y: 0.0d
-			description: ["It’s crude, but it works. Bang out some sheets and gears to begin building up a basic energy infrastructure and machinery. "]
+			description: [
+				"It’s crude, but it works."
+				""
+				"Bang out some sheets and gears to begin building up a basic energy infrastructure and machinery. "
+			]
 			dependencies: ["1D574D041D9164AD"]
 			id: "2357CCF3A0758B0C"
 			tasks: [
