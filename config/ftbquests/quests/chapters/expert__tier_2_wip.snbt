@@ -110,8 +110,8 @@
 			]
 		}
 		{
-			x: -3.5d
-			y: -4.5d
+			x: -4.0d
+			y: -5.0d
 			description: ["The beings that once roamed the lands of Atum held power over life and death, creation and destruction. Those energies remain infused in the land. Use it to transmute a nest of bees into a nest of Silk Moths. "]
 			dependencies: ["719AFD0C38BE19A2"]
 			id: "5AA38E6753FF4210"
@@ -141,8 +141,8 @@
 			]
 		}
 		{
-			x: -0.5d
-			y: -4.5d
+			x: -2.5d
+			y: -2.0d
 			description: [
 				"Like runes drawn upon the firmament itself, the constellations channel great energies and bring with them knowledge of secrets long thought lost. "
 				""
@@ -150,7 +150,10 @@
 				""
 				"Note: The Floating Crystal will not link to the Magic Workbench automatically. Therefore, a Linking Tool must first be crafted to manually link them. "
 			]
-			dependencies: ["4C5CCC780A4B07A7"]
+			dependencies: [
+				"598A3BD34A7DD40B"
+				"269CB5E2F7130224"
+			]
 			id: "102775CD7F9CD338"
 			tasks: [
 				{
@@ -167,8 +170,8 @@
 		}
 		{
 			title: "Blood Altar - Tier 1"
-			x: -1.5d
-			y: -4.5d
+			x: -0.5d
+			y: -6.0d
 			description: [
 				"If something hungers, feed it. Great power flows through all things, both the living and the dead. "
 				""
@@ -190,7 +193,7 @@
 			]
 		}
 		{
-			x: -1.5d
+			x: -1.0d
 			y: -1.5d
 			description: [
 				"“The spirits beckon. Will you answer their call? “"
@@ -206,7 +209,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -4.0d
 			y: -1.5d
 			description: [
 				"“Life is balance, give and take. Be wary not to draw more Aura than you return. “"
@@ -223,7 +226,7 @@
 		}
 		{
 			title: "Ritual of the Forest"
-			x: -4.5d
+			x: -3.5d
 			y: -2.5d
 			description: [
 				"“Do you feel it? The pulse of the Earth thrums through the ritual center. Focus, let it flow through you and the magic will grow like weeds in the sun.”"
@@ -243,7 +246,7 @@
 			}]
 		}
 		{
-			x: -4.0d
+			x: -4.5d
 			y: -6.0d
 			description: ["The gateway to floral magics, and advanced medicinal brewing. "]
 			dependencies: ["719AFD0C38BE19A2"]
@@ -255,8 +258,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -4.5d
+			x: -5.0d
+			y: -4.0d
 			description: ["A potent apparatus designed by the ancients that works off natural background mana. Originally designed for the purpose of training young apprentices, the contraption soon caught on as a more efficient means of creating some materials. Sadly, those original methods are now lost to the ages. "]
 			dependencies: ["295B7A0FB81D44DB"]
 			id: "566824DF05761A43"
@@ -267,8 +270,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -3.0d
+			x: 0.0d
+			y: -4.0d
 			description: [
 				"Something powerful has been listening. "
 				""
@@ -278,7 +281,10 @@
 				""
 				"The Weak Blood Orb is crafted from an Unholy Symbol. Refer to the Ars Ecclesia and Eidolon quest chapters to learn how these are made."
 			]
-			dependencies: ["06A20E7EA36392CB"]
+			dependencies: [
+				"06A20E7EA36392CB"
+				"4C5CCC780A4B07A7"
+			]
 			id: "7E371FBDE82532D9"
 			tasks: [
 				{
@@ -322,7 +328,7 @@
 		}
 		{
 			x: -3.5d
-			y: -3.0d
+			y: -3.5d
 			description: [
 				"There is subtle magic to be found throughout the natural world, and silk moths are no exception. Their silk is prized for its arcane properties. "
 				""
@@ -363,7 +369,7 @@
 		}
 		{
 			x: -1.0d
-			y: -6.0d
+			y: -5.0d
 			description: [
 				"A workbench suitable for practitioners at all levels, made from the finest magical materials. "
 				""
@@ -433,7 +439,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -1.5d
 			y: -2.5d
 			description: ["The link though tenuous, grows stronger. Channeling the spirits and their energies paves the way to Alchemy and from there, the deeper magics. "]
 			dependencies: ["7E371FBDE82532D9"]
@@ -442,6 +448,33 @@
 				id: "370511870EE62EBD"
 				type: "item"
 				item: "bloodmagic:alchemytable"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			dependencies: ["719AFD0C38BE19A2"]
+			id: "63835E28AFE16A89"
+			tasks: [{
+				id: "260844590347A921"
+				type: "item"
+				item: "botania:corporea_spark_master"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			description: [
+				"A time-honored tradition, dowsing has its origins deep in the hazy past of early magic, predating even written history. Though it’s more commonly known in terms of water dowsing, it was once used to find all manner of things, from plants, to minerals, or even strong magical field lines. "
+				""
+				"The Resonating Wand is particularly suited to finding Rock Crystals deep in the earth. "
+			]
+			dependencies: ["4C5CCC780A4B07A7"]
+			id: "269CB5E2F7130224"
+			tasks: [{
+				id: "43C84D76D2C9FB48"
+				type: "item"
+				item: "astralsorcery:wand"
 			}]
 		}
 	]
