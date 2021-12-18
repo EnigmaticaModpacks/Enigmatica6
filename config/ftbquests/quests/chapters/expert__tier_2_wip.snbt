@@ -453,13 +453,26 @@
 		{
 			x: -2.5d
 			y: -5.0d
+			description: ["Once freed from their torturous bonds, the wraiths of Atum are surprisingly accommodating, retrieving and sorting items for the apprentice magician."]
 			dependencies: ["719AFD0C38BE19A2"]
 			id: "63835E28AFE16A89"
-			tasks: [{
-				id: "260844590347A921"
-				type: "item"
-				item: "botania:corporea_spark_master"
-			}]
+			tasks: [
+				{
+					id: "260844590347A921"
+					type: "item"
+					item: "botania:corporea_spark_master"
+				}
+				{
+					id: "58727FA94D304EAC"
+					type: "item"
+					item: "botania:corporea_index"
+				}
+				{
+					id: "5F1BA591103283DA"
+					type: "item"
+					item: "botania:corporea_spark"
+				}
+			]
 		}
 		{
 			x: -1.5d
