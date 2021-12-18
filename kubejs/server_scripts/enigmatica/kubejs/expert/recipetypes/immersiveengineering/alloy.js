@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     const idPrefix = 'enigmatica:expert/immersiveengineering/alloy/';
     const recipes = [
         {
-            inputs: [Item.of('3x #forge:ingots/cobalt'), 'thermal:blizz_powder'],
+            inputs: [Ingredient.of('3x #forge:ingots/cobalt'), 'thermal:blizz_powder'],
             output: Item.of('3x undergarden:froststeel_ingot'),
             id: `${idPrefix}froststeel_ingot_3`
         },
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
             id: `${idPrefix}crystal_glass_2`
         },
         {
-            inputs: [Item.of('4x #forge:storage_blocks/arcane_gold'), 'create:honeyed_apple'],
+            inputs: [Ingredient.of('4x #forge:storage_blocks/arcane_gold'), 'create:honeyed_apple'],
             output: Item.of('minecraft:enchanted_golden_apple'),
             id: `${idPrefix}enchanted_golden_apple`
         },
@@ -108,6 +108,16 @@ onEvent('recipes', (event) => {
             inputs: [Item.of('8x minecraft:book'), '#forge:ingots/refined_radiance'],
             output: Item.of('8x pedestals:bookadvanced'),
             id: 'pedestals:bookadvanced'
+        },
+        {
+            inputs: [Ingredient.of('2x #forge:ingots/terminite'), '#forge:dusts/diamond'],
+            output: Item.of('2x emendatusenigmatica:enderium_ingot'),
+            id: `${idPrefix}enderium_ingot`
+        },
+        {
+            inputs: [Ingredient.of('2x #forge:storage_blocks/terminite'), Ingredient.of('9x #forge:dusts/diamond')],
+            output: Item.of('2x emendatusenigmatica:enderium_block'),
+            id: `${idPrefix}enderium_block`
         }
     ];
 

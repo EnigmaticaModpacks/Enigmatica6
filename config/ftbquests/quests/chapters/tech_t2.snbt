@@ -174,8 +174,7 @@
 		}
 		{
 			x: 5.0d
-			y: 6.5d
-			shape: "octagon"
+			y: 6.0d
 			description: [
 				"Some tasks are simply better off to the precision control of machines where tight tolerances don’t leave any room for error.  "
 				""
@@ -335,7 +334,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 6.0d
 			y: 4.0d
 			shape: "diamond"
 			description: ["There’s something eerily unusual about Enderium that makes it invaluable for complex computation…"]
@@ -349,7 +348,7 @@
 		}
 		{
 			x: 4.0d
-			y: 5.5d
+			y: 5.0d
 			shape: "diamond"
 			description: [
 				"By refining our electrical components, we’ll be better positioned to harness energy from multiple sources."
@@ -409,7 +408,7 @@
 		}
 		{
 			x: 3.0d
-			y: 6.0d
+			y: 6.5d
 			shape: "gear"
 			description: [
 				"It appears you’re not alone in your endeavors; your recent progress has allowed you to tap into a global yet small network of like-minded engineers looking to trade for knowledge. "
@@ -422,6 +421,19 @@
 				id: "6DF327D277407CBF"
 				type: "item"
 				item: "kubejs:medium_machinery_schematics"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 7.5d
+			shape: "octagon"
+			description: ["A suitably shielded casing for delicate electronics."]
+			dependencies: ["4B7BDCCE4535A4F9"]
+			id: "1560E98A52BEF117"
+			tasks: [{
+				id: "7F4FBA868C08B64B"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
 			}]
 		}
 	]

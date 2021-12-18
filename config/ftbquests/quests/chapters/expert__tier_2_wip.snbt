@@ -205,7 +205,13 @@
 			tasks: [{
 				id: "50CA5DE83B5986DC"
 				type: "item"
-				item: "occultism:chalk_white_impure"
+				item: {
+					id: "occultism:chalk_white"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 		}
 		{
@@ -218,11 +224,18 @@
 			]
 			dependencies: ["598A3BD34A7DD40B"]
 			id: "2422557696EB83F3"
-			tasks: [{
-				id: "21F3F09A493EE8D1"
-				type: "item"
-				item: "naturesaura:nature_altar"
-			}]
+			tasks: [
+				{
+					id: "21F3F09A493EE8D1"
+					type: "item"
+					item: "naturesaura:nature_altar"
+				}
+				{
+					id: "4A0060B60B3FDF95"
+					type: "item"
+					item: "naturesaura:infused_iron"
+				}
+			]
 		}
 		{
 			title: "Ritual of the Forest"
