@@ -40,6 +40,11 @@
 		{
 			x: 1.0d
 			y: 1.0d
+			description: [
+				"Layered brick work suitable for insulating machines working at very high temperatures."
+				""
+				"Build up a Blast Furnace to begin preparing a specialized compound.  "
+			]
 			dependencies: ["06F4A47216226927"]
 			id: "0FF412352C4AA995"
 			tasks: [{
@@ -50,9 +55,17 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 2.0d
-			dependencies: ["159CEE8160564096"]
+			x: 0.5d
+			y: 3.0d
+			description: [
+				"Ordinarily used for simply alloying, kilns well insulated to maintain high temperatures, and often sealed to prevent impurities being introduced into the product."
+				""
+				"Build up an Alloy Kiln to prepare for the next step."
+			]
+			dependencies: [
+				"159CEE8160564096"
+				"56A05A07C30709EC"
+			]
 			id: "51C4B771C756A8DD"
 			tasks: [{
 				id: "1696A045279F7734"
@@ -62,9 +75,10 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 1.5d
+			x: 1.0d
+			y: 2.0d
 			shape: "diamond"
+			description: ["A peculiar compound with very special properties indeed…"]
 			dependencies: ["0FF412352C4AA995"]
 			id: "159CEE8160564096"
 			tasks: [{
@@ -74,9 +88,14 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 1.5d
 			y: 3.0d
-			dependencies: ["059321636D20E33A"]
+			description: [
+				"Haunted? Surely not… Though the bricks are infused with rather peculiar materials… and that voice you hear near the kiln does seem rather insistent. "
+				""
+				"Place a book and an Upgrade Matrix into the Alloy Kiln…"
+			]
+			dependencies: ["640AF7C1C65218DD"]
 			id: "56A05A07C30709EC"
 			tasks: [{
 				id: "2B7F725CA5D12C72"
@@ -91,23 +110,14 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 2.5d
-			shape: "diamond"
-			dependencies: [
-				"51C4B771C756A8DD"
-				"640AF7C1C65218DD"
-			]
-			id: "059321636D20E33A"
-			tasks: [{
-				id: "507E9B0D33201C3D"
-				type: "item"
-				item: "pneumaticcraft:upgrade_matrix"
-			}]
-		}
-		{
 			x: 1.0d
-			y: 4.5d
+			y: 4.0d
+			shape: "diamond"
+			description: [
+				"Precision craftsmanship has its benefits. "
+				""
+				"Build an Engineer’s Workbench to have a proper place for building up smaller components. "
+			]
 			dependencies: ["56A05A07C30709EC"]
 			id: "3AC1DD7E5DDDC129"
 			tasks: [{
@@ -117,8 +127,10 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 5.5d
+			x: 0.5d
+			y: 4.5d
+			shape: "diamond"
+			description: ["A batch of these ought to last a while, right?"]
 			dependencies: ["3AC1DD7E5DDDC129"]
 			id: "065270B7FA576ED0"
 			tasks: [{
@@ -129,8 +141,13 @@
 		}
 		{
 			x: 1.0d
-			y: 6.5d
+			y: 5.5d
 			shape: "octagon"
+			description: [
+				"It ain’t much, but it’s honest work. "
+				""
+				"Pity Machine Frames open the way to advanced material processing needed for Nuclear Science. "
+			]
 			dependencies: [
 				"065270B7FA576ED0"
 				"3DA107DD546F8E02"
@@ -143,8 +160,10 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 5.5d
+			x: 1.5d
+			y: 4.5d
+			shape: "diamond"
+			description: ["Ready? Set…"]
 			dependencies: ["3AC1DD7E5DDDC129"]
 			id: "3DA107DD546F8E02"
 			tasks: [{
@@ -157,6 +176,11 @@
 			x: 5.0d
 			y: 6.5d
 			shape: "octagon"
+			description: [
+				"Some tasks are simply better off to the precision control of machines where tight tolerances don’t leave any room for error.  "
+				""
+				"Build out a full Assembly Table to begin assembling more complex components and pave the way towards the nuclear sciences. "
+			]
 			dependencies: [
 				"37CC74C655BCE0C0"
 				"54DA0B6FC5FE6F1A"
@@ -178,6 +202,11 @@
 		{
 			x: 3.5d
 			y: 1.0d
+			description: [
+				"It fries, it crystallizes, it infuses! "
+				""
+				"Just maybe consider washing it out first between uses…"
+			]
 			dependencies: ["6EC89B2EB48331A5"]
 			id: "640AF7C1C65218DD"
 			tasks: [{
@@ -380,7 +409,7 @@
 		}
 		{
 			x: 3.0d
-			y: 6.5d
+			y: 6.0d
 			shape: "gear"
 			description: [
 				"It appears you’re not alone in your endeavors; your recent progress has allowed you to tap into a global yet small network of like-minded engineers looking to trade for knowledge. "

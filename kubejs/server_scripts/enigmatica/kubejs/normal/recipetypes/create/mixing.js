@@ -25,6 +25,11 @@ onEvent('recipes', (event) => {
             output: 'thermal:cured_rubber',
             superheated: true,
             id: `${id_prefix}cured_rubber`
+        },
+        {
+            inputs: ['#forge:ingots/iron', '#forge:dusts/ender'],
+            output: Item.of('betterendforge:terminite_ingot', 1),
+            id: `${id_prefix}terminite_ingot_from_iron`
         }
     ];
 
