@@ -468,6 +468,8 @@ const recipesToHide = [
             'botania:gaia_spreader',
             'botania:fel_pumpkin',
             'botania:blood_pendant',
+            'botania:ender_dagger',
+            'botania:brewery',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',

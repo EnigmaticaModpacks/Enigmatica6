@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
                 input: 'input item here',
                 output: 'output item here',
                 syphon: 1000,                       //Recipe LP Cost
-                altarLevel: 0,                      //Altar Level is zero idexed
+                altarLevel: 0,                      //Altar Level is zero indexed
                 consumptionRate: 5,                 //How much LP is infused per operation
                 drainRate: 5,                       //How much LP is lost per operation when the altar is empty
                 id: 'input item here'
@@ -98,10 +98,10 @@ onEvent('recipes', (event) => {
         {
             input: 'kubejs:firmament',
             output: 'architects_palette:moonstone',
-            syphon: 25000,
-            altarLevel: 2,
-            consumptionRate: 20,
-            drainRate: 20,
+            syphon: 7000,
+            altarLevel: 0,
+            consumptionRate: 5,
+            drainRate: 1,
             id: `${id_prefix}moonstone`
         },
         {
