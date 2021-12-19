@@ -179,9 +179,9 @@ onEvent('recipes', (event) => {
         recipe.type = 'occultism:ritual';
 
         recipe.activation_item = Ingredient.of(recipe.activation_item).toJson();
-        /*if (recipe.item_to_use) {
+        if (recipe.item_to_use) {
             recipe.item_to_use = Ingredient.of(recipe.item_to_use).toJson();
-        }*/
+        }
         recipe.ritual_dummy = Ingredient.of(recipe.ritual_dummy).toJson();
         recipe.ingredients = recipe.ingredients.map((input) => Ingredient.of(input).toJson());
         recipe.result = Item.of(recipe.result).toJson();
