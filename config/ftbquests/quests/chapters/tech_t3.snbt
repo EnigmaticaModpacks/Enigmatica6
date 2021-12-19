@@ -34,7 +34,7 @@
 		}
 		{
 			x: -1.0d
-			y: 0.0d
+			y: 0.5d
 			shape: "diamond"
 			dependencies: ["7522971912BCF482"]
 			optional: true
@@ -47,31 +47,14 @@
 		}
 		{
 			x: 0.0d
-			y: 2.0d
-			dependencies: ["3CBABF225201DBED"]
+			y: 1.5d
+			description: ["Capable of safely working with all manner of corrosive, reactive, and otherwise dangerous liquids to incorporate them into useful products, the Dissolution Chamber is an invaluable tool in the Engineer’s Toolbox. "]
+			dependencies: ["7522971912BCF482"]
 			id: "6079CBE9ECE6EB1D"
 			tasks: [{
 				id: "76E7A09884C5D8AB"
 				type: "item"
 				item: "industrialforegoing:dissolution_chamber"
-			}]
-		}
-		{
-			x: 0.0d
-			y: 1.0d
-			dependencies: ["7522971912BCF482"]
-			id: "3CBABF225201DBED"
-			tasks: [{
-				id: "21117FB18D6E9300"
-				type: "item"
-				title: "Any #forge:plastic"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "forge:plastic"
-					}
-				}
 			}]
 		}
 		{
@@ -89,6 +72,13 @@
 		{
 			x: 0.5d
 			y: 3.0d
+			description: [
+				"How does one drill for pink slime when the machines used to drill it require it as a component?"
+				""
+				"Who has even ever seen a Pink Wither?"
+				""
+				"The question comes up regularly over the Amadron network, with would-be engineers left scratching their noses. But, having studied the Arcane, you think you see a way around this. The answer? Well, Magic, of course."
+			]
 			dependencies: [
 				"6079CBE9ECE6EB1D"
 				"26D8327770B81C08"
@@ -113,7 +103,7 @@
 			x: 0.0d
 			y: 4.5d
 			subtitle: "Milk a Pink Wither."
-			description: ["Summon a Pink Wither with Occultism, or convert a Wither with a Pinkinator from The Guardian of Gaia."]
+			description: ["Summon a Pink Wither with Occultism Rituals or convert a Wither with a Pinkinator obtained by fighting The Guardian of Gaia."]
 			dependencies: ["412F3A311A7CFCB3"]
 			id: "35EE2BA3A988F416"
 			tasks: [{
@@ -125,43 +115,53 @@
 		{
 			x: 3.5d
 			y: 3.0d
+			description: ["The next step towards Nuclear Physics requires materials that can withstand the high temperatures, pressures, and radiation involved. "]
 			dependencies: [
 				"72945D9390F479E7"
 				"242AEF5D6C2318D3"
 			]
 			id: "3B9B0EB73BF19CBD"
-			tasks: [{
-				id: "65AF9984F551512B"
-				type: "item"
-				item: "mekanism:metallurgic_infuser"
-			}]
+			tasks: [
+				{
+					id: "65AF9984F551512B"
+					type: "item"
+					item: "mekanism:metallurgic_infuser"
+				}
+				{
+					id: "044F4F0627E059A3"
+					type: "item"
+					item: "mekanism:alloy_infused"
+				}
+			]
 		}
 		{
 			x: 4.0d
-			y: 1.0d
+			y: 1.5d
+			description: [
+				"Kickstart some Blaze Rods with a zap of focused energy in an Energizing Orb to make some Blazing Rods. These make an excellent, low-cost, portable fuel source that may be burned in a Blazing Generator. "
+				""
+				"They may be inserted into a Blazing Agitator to further refine them as a fuel source. Starting off with a high-quality rod such as these is preferred."
+			]
 			dependencies: ["1E4DC3A7546EC894"]
-			id: "20C024EA7A79FBB4"
-			tasks: [{
-				id: "42D68FA716910115"
-				type: "item"
-				item: "rftoolspower:blazing_rod"
-			}]
-		}
-		{
-			x: 4.0d
-			y: 2.0d
-			dependencies: ["20C024EA7A79FBB4"]
 			id: "72945D9390F479E7"
-			tasks: [{
-				id: "3C415238A247D89A"
-				type: "item"
-				item: "rftoolspower:blazing_agitator"
-			}]
+			tasks: [
+				{
+					id: "3C415238A247D89A"
+					type: "item"
+					item: "rftoolspower:blazing_agitator"
+				}
+				{
+					id: "29584C030AC3CC61"
+					type: "item"
+					item: "rftoolspower:blazing_rod"
+				}
+			]
 		}
 		{
-			x: 1.5d
+			x: 2.5d
 			y: 0.5d
 			shape: "diamond"
+			description: ["Crude, yet effective. These memory chips have done admirably thus far, but they’re in need of a boost. "]
 			dependencies: ["3E03729D4E825E26"]
 			id: "2182BC78D342D1AA"
 			tasks: [{
@@ -171,9 +171,10 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 1.5d
 			y: 0.5d
 			shape: "diamond"
+			description: ["An empty shell, missing one vital component: You."]
 			dependencies: ["2182BC78D342D1AA"]
 			id: "51AFB0E11AB83CFC"
 			tasks: [{
@@ -197,8 +198,9 @@
 		}
 		{
 			x: -1.0d
-			y: 2.5d
+			y: 2.0d
 			shape: "diamond"
+			description: ["Though costly to run, the Stasis Chamber can safely contain most creatures, preventing them from moving and even slowly healing them of any wounds they might incur. "]
 			dependencies: ["6079CBE9ECE6EB1D"]
 			optional: true
 			id: "0F16543E9DE08714"
@@ -211,6 +213,7 @@
 		{
 			x: 2.0d
 			y: 3.0d
+			description: ["Advanced optics for highly focused laser operations."]
 			dependencies: ["3B9B0EB73BF19CBD"]
 			id: "26D8327770B81C08"
 			tasks: [{
@@ -222,6 +225,11 @@
 		{
 			x: 2.0d
 			y: 5.5d
+			description: [
+				"It’s time to assemble our first fully technological Fission Reactor! "
+				""
+				"Refer to the Mekanism quest chapter for more information regarding fissile fuel processing and the Reactor structure itself. "
+			]
 			dependencies: ["71D581C742D17CA4"]
 			id: "7E3DDF2413EA9433"
 			tasks: [{
@@ -233,6 +241,7 @@
 		{
 			x: 4.0d
 			y: 4.5d
+			description: ["While technically optional, running a Fission Reactor without a turbine is slow and wastes all the precious energy generated by the reaction. The larger they are, the more efficient they become. "]
 			dependencies: ["71D581C742D17CA4"]
 			id: "5AB7BDCE735F200A"
 			tasks: [{
@@ -246,7 +255,8 @@
 			icon: "minecraft:wither_skeleton_skull"
 			x: 1.0d
 			y: 4.0d
-			description: ["Ether Gas"]
+			subtitle: "Milk a Wither."
+			description: ["Summon a Wither and safely contain it to begin drilling for Ether Gas."]
 			dependencies: ["412F3A311A7CFCB3"]
 			id: "4A453667AB7D1197"
 			tasks: [{
@@ -258,6 +268,7 @@
 		{
 			x: 2.0d
 			y: 4.0d
+			description: ["The penultimate control circuit known to modern science. Securing a supply of Ether Gas for cooling is critical, as these run hot."]
 			dependencies: [
 				"4A453667AB7D1197"
 				"3B9B0EB73BF19CBD"
@@ -272,6 +283,7 @@
 		{
 			x: 2.0d
 			y: 2.0d
+			description: ["Putting it all together gets us a Basic Control Circuit capable of driving more powerful machines. "]
 			dependencies: ["52FEE141AD87B819"]
 			id: "242AEF5D6C2318D3"
 			tasks: [{
@@ -283,6 +295,7 @@
 		{
 			x: 2.0d
 			y: 7.0d
+			description: ["The ultimate circuit design, capable of controlling machines working at the quantum level. "]
 			dependencies: [
 				"206F4AA9A9278D8D"
 				"5AD982728B95438C"
@@ -297,6 +310,11 @@
 		{
 			x: 3.5d
 			y: 6.0d
+			description: [
+				"Plutonium, Manyullyn, and Shadow Steel fuse to become a very powerful and important alloy. "
+				""
+				"Always take special precautions when dealing with radioactive materials! Keeping these machines well away from living creatures is highly recommended. "
+			]
 			dependencies: [
 				"7E3DDF2413EA9433"
 				"5AB7BDCE735F200A"
@@ -311,6 +329,7 @@
 		{
 			x: 3.0d
 			y: 8.0d
+			description: ["A feat once thought impossible, even by those great engineers who came before. It was only through careful fusion of their sciences and ancient magics that they were able to master fusion and power their cities with seemingly limitless energy. "]
 			dependencies: ["40204EBF03AD725E"]
 			id: "16DE48989A21D643"
 			tasks: [{
@@ -322,12 +341,26 @@
 		{
 			x: 1.0d
 			y: 8.0d
+			description: ["Any sufficiently advanced technology is indistinguishable from magic. We may not fully understand the fusion of Magic and Technology in these mycelial networks, but we’re certainly able to exploit it. "]
 			dependencies: ["40204EBF03AD725E"]
 			id: "2A9B2999EFB358D6"
 			tasks: [{
 				id: "5919D1C305DF769B"
 				type: "item"
 				item: "industrialforegoing:mycelial_reactor"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.0d
+			shape: "gear"
+			description: ["Help your engineering network over the hump by providing them with drills and computers of their own. It seems they’ve got a trick or two to teach you in exchange."]
+			dependencies: ["206F4AA9A9278D8D"]
+			id: "0E7B4F927F548AF9"
+			tasks: [{
+				id: "4769F3CFE98A445F"
+				type: "item"
+				item: "kubejs:heavy_machinery_schematics"
 			}]
 		}
 	]

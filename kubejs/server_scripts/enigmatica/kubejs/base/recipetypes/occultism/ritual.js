@@ -12,7 +12,8 @@ onEvent('recipes', (event) => {
             entity_to_summon: 'occultism:afrit',
             ritual_dummy: 'occultism:ritual_dummy/summon_afrit_rain_weather',
             ingredients: ['#forge:sand', '#forge:gems/diamond', 'minecraft:cactus', 'minecraft:dead_bush'],
-            result: 'occultism:jei_dummy/none'
+            result: 'occultism:jei_dummy/none',
+            id: 'occultism:ritual/summon_afrit_rain_weather'
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -25,7 +26,8 @@ onEvent('recipes', (event) => {
             entity_to_summon: 'occultism:afrit',
             ritual_dummy: 'occultism:ritual_dummy/summon_afrit_thunder_weather',
             ingredients: ['#forge:bones', '#forge:gunpowder', '#forge:gunpowder', 'minecraft:ghast_tear'],
-            result: 'occultism:jei_dummy/none'
+            result: 'occultism:jei_dummy/none',
+            id: 'occultism:ritual/summon_afrit_thunder_weather'
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -37,7 +39,8 @@ onEvent('recipes', (event) => {
             entity_to_summon: 'occultism:djinni',
             ritual_dummy: 'occultism:ritual_dummy/summon_djinni_clear_weather',
             ingredients: ['#forge:crops/beetroot', '#forge:crops/carrot', '#forge:crops/potato', '#forge:crops/wheat'],
-            result: 'occultism:jei_dummy/none'
+            result: 'occultism:jei_dummy/none',
+            id: 'occultism:ritual/summon_djinni_clear_weather'
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -49,7 +52,8 @@ onEvent('recipes', (event) => {
             entity_to_summon: 'occultism:djinni',
             ritual_dummy: 'occultism:ritual_dummy/summon_djinni_day_time',
             ingredients: ['minecraft:torch', '#minecraft:saplings', 'minecraft:wheat', '#forge:dyes/yellow'],
-            result: 'occultism:jei_dummy/none'
+            result: 'occultism:jei_dummy/none',
+            id: 'occultism:ritual/summon_djinni_day_time'
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -61,7 +65,8 @@ onEvent('recipes', (event) => {
             entity_to_summon: 'occultism:djinni',
             ritual_dummy: 'occultism:ritual_dummy/summon_djinni_night_time',
             ingredients: ['#minecraft:beds', 'minecraft:rotten_flesh', '#forge:bones', '#forge:dyes/black'],
-            result: 'occultism:jei_dummy/none'
+            result: 'occultism:jei_dummy/none',
+            id: 'occultism:ritual/summon_djinni_night_time'
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -73,7 +78,8 @@ onEvent('recipes', (event) => {
             entity_to_summon: 'occultism:foliot',
             ritual_dummy: 'occultism:ritual_dummy/summon_foliot_otherstone_trader',
             ingredients: ['minecraft:stone', 'minecraft:granite', 'minecraft:diorite', 'minecraft:andesite'],
-            result: 'occultism:jei_dummy/none'
+            result: 'occultism:jei_dummy/none',
+            id: 'occultism:ritual/summon_foliot_otherstone_trader'
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -90,7 +96,8 @@ onEvent('recipes', (event) => {
                 'minecraft:spruce_sapling',
                 'minecraft:jungle_sapling'
             ],
-            result: 'occultism:jei_dummy/none'
+            result: 'occultism:jei_dummy/none',
+            id: 'occultism:ritual/summon_foliot_sapling_trader'
         },
 
         /// Custom Rituals

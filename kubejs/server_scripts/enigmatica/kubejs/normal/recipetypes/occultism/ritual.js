@@ -15,7 +15,8 @@ onEvent('recipes', (event) => {
             entity_to_summon: 'occultism:foliot',
             ritual_dummy: 'occultism:ritual_dummy/summon_foliot_crusher',
             ingredients: ['#forge:ores/iron', '#forge:ores/gold', '#forge:ores/copper', '#forge:ores/silver'],
-            result: 'occultism:jei_dummy/none'
+            result: 'occultism:jei_dummy/none',
+            id: 'occultism:ritual/summon_foliot_crusher'
         }
     ];
 

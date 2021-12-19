@@ -1965,17 +1965,17 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'create:polished_rose_quartz',
+                '#forge:nuggets/tinkers_bronze',
                 'minecraft:clock',
-                'create:polished_rose_quartz',
+                '#forge:nuggets/tinkers_bronze',
                 '#forge:ingots/tinkers_bronze',
                 '#forge:ingots/tinkers_bronze',
+                '#forge:nuggets/tinkers_bronze',
                 'create:polished_rose_quartz',
-                'create:polished_rose_quartz',
-                'create:polished_rose_quartz'
+                '#forge:nuggets/tinkers_bronze'
             ],
             sourceCost: 500,
-            reagent: 'ars_nouveau:spell_turret',
+            reagent: 'ars_nouveau:basic_spell_turret',
             output: 'ars_nouveau:timer_spell_turret',
             id: 'ars_nouveau:timer_spell_turret'
         },
