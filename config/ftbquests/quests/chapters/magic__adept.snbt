@@ -303,7 +303,11 @@
 			x: 2.5d
 			y: -4.0d
 			shape: "diamond"
-			description: ["Tossing Arcane Stone into a Spirit Fire is certainly… effective, but an Otherstone Trader will do the job at a significant discount. "]
+			description: [
+				"Tossing Arcane Stone into a Spirit Fire is certainly… effective, but an Otherstone Trader will do the job at a significant discount. "
+				""
+				"Note: The Spirit Trader still requires Arcane Stone, but at a rate of two Otherstone per Arcane Stone."
+			]
 			dependencies: ["4CEB33C94A160D68"]
 			id: "2DD9ABCD4AC03D03"
 			tasks: [{
