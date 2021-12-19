@@ -47,31 +47,14 @@
 		}
 		{
 			x: 0.0d
-			y: 2.0d
-			dependencies: ["3CBABF225201DBED"]
+			y: 1.5d
+			description: ["Capable of safely working with all manner of corrosive, reactive, and otherwise dangerous liquids to incorporate them into useful products, the Dissolution Chamber is an invaluable tool in the Engineer’s Toolbox. "]
+			dependencies: ["7522971912BCF482"]
 			id: "6079CBE9ECE6EB1D"
 			tasks: [{
 				id: "76E7A09884C5D8AB"
 				type: "item"
 				item: "industrialforegoing:dissolution_chamber"
-			}]
-		}
-		{
-			x: 0.0d
-			y: 1.0d
-			dependencies: ["7522971912BCF482"]
-			id: "3CBABF225201DBED"
-			tasks: [{
-				id: "21117FB18D6E9300"
-				type: "item"
-				title: "Any #forge:plastic"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "forge:plastic"
-					}
-				}
 			}]
 		}
 		{
@@ -89,6 +72,13 @@
 		{
 			x: 0.5d
 			y: 3.0d
+			description: [
+				"How does one drill for pink slime when the machines used to drill it require it as a component?"
+				""
+				"Who has even ever seen a Pink Wither?"
+				""
+				"The question comes up regularly over the Amadron network, with would-be engineers left scratching their noses. But, having studied the Arcane, you think you see a way around this. The answer? Well, Magic, of course."
+			]
 			dependencies: [
 				"6079CBE9ECE6EB1D"
 				"26D8327770B81C08"
@@ -113,7 +103,7 @@
 			x: 0.0d
 			y: 4.5d
 			subtitle: "Milk a Pink Wither."
-			description: ["Summon a Pink Wither with Occultism, or convert a Wither with a Pinkinator from The Guardian of Gaia."]
+			description: ["Summon a Pink Wither with Occultism Rituals or convert a Wither with a Pinkinator obtained by fighting The Guardian of Gaia."]
 			dependencies: ["412F3A311A7CFCB3"]
 			id: "35EE2BA3A988F416"
 			tasks: [{
@@ -146,31 +136,26 @@
 		}
 		{
 			x: 4.0d
-			y: 1.0d
+			y: 1.5d
 			description: [
-				"Kickstart some Blaze Rods with a zap of focused energy. Blazing Rods may be inserted into a Blazing Agitator to further refine them as a fuel source. "
+				"Kickstart some Blaze Rods with a zap of focused energy in an Energizing Orb to make some Blazing Rods. These make an excellent, low-cost, portable fuel source that may be burned in a Blazing Generator. "
 				""
-				"Starting off with a high-quality rod such as these is preferred. "
+				"They may be inserted into a Blazing Agitator to further refine them as a fuel source. Starting off with a high-quality rod such as these is preferred."
 			]
 			dependencies: ["1E4DC3A7546EC894"]
-			id: "20C024EA7A79FBB4"
-			tasks: [{
-				id: "42D68FA716910115"
-				type: "item"
-				item: "rftoolspower:blazing_rod"
-			}]
-		}
-		{
-			x: 4.0d
-			y: 2.0d
-			description: ["Arrange some Blazing Rods in an Agitator to act as catalysts for making more. These make an excellent, low-cost, portable fuel source that may be burned in a Blazing Generator."]
-			dependencies: ["20C024EA7A79FBB4"]
 			id: "72945D9390F479E7"
-			tasks: [{
-				id: "3C415238A247D89A"
-				type: "item"
-				item: "rftoolspower:blazing_agitator"
-			}]
+			tasks: [
+				{
+					id: "3C415238A247D89A"
+					type: "item"
+					item: "rftoolspower:blazing_agitator"
+				}
+				{
+					id: "29584C030AC3CC61"
+					type: "item"
+					item: "rftoolspower:blazing_rod"
+				}
+			]
 		}
 		{
 			x: 2.5d
@@ -213,8 +198,9 @@
 		}
 		{
 			x: -1.0d
-			y: 2.5d
+			y: 2.0d
 			shape: "diamond"
+			description: ["Though costly to run, the Stasis Chamber can safely contain most creatures, preventing them from moving and even slowly healing them of any wounds they might incur. "]
 			dependencies: ["6079CBE9ECE6EB1D"]
 			optional: true
 			id: "0F16543E9DE08714"
@@ -269,7 +255,8 @@
 			icon: "minecraft:wither_skeleton_skull"
 			x: 1.0d
 			y: 4.0d
-			description: ["Ether Gas"]
+			subtitle: "Milk a Wither."
+			description: ["Summon a Wither and safely contain it to begin drilling for Ether Gas."]
 			dependencies: ["412F3A311A7CFCB3"]
 			id: "4A453667AB7D1197"
 			tasks: [{
@@ -281,6 +268,7 @@
 		{
 			x: 2.0d
 			y: 4.0d
+			description: ["The penultimate control circuit known to modern science. Securing a supply of Ether Gas for cooling is critical, as these run hot."]
 			dependencies: [
 				"4A453667AB7D1197"
 				"3B9B0EB73BF19CBD"
@@ -341,6 +329,7 @@
 		{
 			x: 3.0d
 			y: 8.0d
+			description: ["A feat once thought impossible, even by those great engineers who came before. It was only through careful fusion of their sciences and ancient magics that they were able to master fusion and power their cities with seemingly limitless energy. "]
 			dependencies: ["40204EBF03AD725E"]
 			id: "16DE48989A21D643"
 			tasks: [{
@@ -365,6 +354,7 @@
 			x: -0.5d
 			y: 7.0d
 			shape: "gear"
+			description: ["Help your engineering network over the hump by providing them with drills and computers of their own. It seems they’ve got a trick or two to teach you in exchange."]
 			dependencies: ["206F4AA9A9278D8D"]
 			id: "0E7B4F927F548AF9"
 			tasks: [{

@@ -152,19 +152,6 @@ onEvent('recipes', (event) => {
             id: 'industrialforegoing:conveyor_splitting_upgrade'
         },
         {
-            output: 'industrialforegoing:dissolution_chamber',
-            pattern: ['PCP', 'BMB', 'GDG'],
-            key: {
-                P: '#forge:plastic',
-                C: '#forge:chests',
-                B: 'minecraft:bucket',
-                M: '#industrialforegoing:machine_frame/pity',
-                G: '#forge:ingots/gold_tin',
-                D: '#forge:gears/diamond'
-            },
-            id: 'industrialforegoing:dissolution_chamber'
-        },
-        {
             output: 'industrialforegoing:dye_mixer',
             pattern: ['PDP', 'DMD', 'PRP'],
             key: {
