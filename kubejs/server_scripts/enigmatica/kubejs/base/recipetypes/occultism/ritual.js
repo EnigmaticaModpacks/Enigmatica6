@@ -99,19 +99,6 @@ onEvent('recipes', (event) => {
             result: 'occultism:jei_dummy/none',
             id: 'occultism:ritual/summon_foliot_sapling_trader'
         },
-        {
-            ritual_type: 'occultism:summon_spirit_with_job',
-            activation_item: 'occultism:book_of_binding_bound_foliot',
-            pentacle_id: 'occultism:summon_foliot',
-            duration: 60,
-            spirit_max_age: -1,
-            spirit_job_type: 'occultism:crush_tier1',
-            entity_to_summon: 'occultism:foliot',
-            ritual_dummy: 'occultism:ritual_dummy/summon_foliot_crusher',
-            ingredients: ['#forge:ores/iron', '#forge:ores/gold', '#forge:ores/copper', '#forge:ores/silver'],
-            result: 'occultism:jei_dummy/none',
-            id: 'occultism:ritual/summon_foliot_crusher'
-        },
 
         /// Custom Rituals
         {
