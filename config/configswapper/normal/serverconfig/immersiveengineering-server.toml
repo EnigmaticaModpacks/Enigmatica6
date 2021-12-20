@@ -1,3 +1,25 @@
+[machines]
+	#The Flux per tick that the Diesel Generator will output. The burn time of the fuel determines the total output
+	#Range: > 0
+	dieselGen_output = 4096
+	#The Flux per tick the Blast Furnace Preheater will consume to speed up the Blast Furnace
+	#Range: > 1
+	preheater_consumption = 32
+	#The amount of damage a sawblade in the sawmill takes for a single recipe.
+	#Range: > 1
+	sawmill_bladeDamage = 5
+	#The Flux the Assembler will consume to craft an item from a recipe
+	#Range: > 1
+	assembler_consumption = 80
+
+[machines.garden_cloche]
+	#The Flux per tick the cloche consumes to grow plants
+	#Range: > 1
+	consumption = 8
+	#A modifier to apply to the cloches total growing speed
+	#Range: 0.001 ~ 1000.0
+	growth_modifier = 1.0
+
 [machines.arc_furnace]
 	#A modifier to apply to the energy costs of every arc furnace recipe
 	#Range: 0.001 ~ 1000.0
@@ -5,3 +27,135 @@
 	#A modifier to apply to the time of every arc furnace recipe
 	#Range: 0.001 ~ 1000.0
 	timeModifier = 1.0
+
+[machines.crusher]
+	#A modifier to apply to the energy costs of every crusher recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 1.0
+	#A modifier to apply to the time of every crusher recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 1.0
+
+[machines.squeezer]
+	#A modifier to apply to the energy costs of every squeezer recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 1.0
+	#A modifier to apply to the time of every squeezer recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 1.0
+
+[machines.fermenter]
+	#A modifier to apply to the energy costs of every fermenter recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 1.0
+	#A modifier to apply to the time of every fermenter recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 1.0
+
+[machines.refinery]
+	#A modifier to apply to the energy costs of every refinery recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 1.0
+
+[machines.auto_workbench]
+	#A modifier to apply to the energy costs of every auto workbench recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 1.0
+	#A modifier to apply to the time of every auto workbench recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 1.0
+
+[machines.sawmill]
+	#A modifier to apply to the energy costs of every sawmill recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 1.0
+	#A modifier to apply to the time of every sawmill recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 1.0
+
+[machines.turret]
+	#The Flux per tick the chemthrower turret consumes to shoot
+	#Range: > 1
+	chem_consumption = 16
+
+[machines.excavator]
+	#The Flux per tick the Excavator will consume to dig
+	#Range: > 1
+	consumption = 4096
+	#The speed of the Excavator. Basically translates to how many degrees per tick it will turn.
+	#Range: 0.001 ~ 1000.0
+	speed = 1.5
+
+[ores.copper]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[ores.bauxite]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[ores.lead]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[ores.silver]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[ores.nickel]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[ores.uranium]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[tools]
+	#The maximum durability of the Engineer's Hammer. Used up when hammering ingots into plates.
+	#Range: > 1
+	hammer_durability = 128
+
+[tools.bullet_damage]
+	#The amount of base damage a Casull Cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	casull = 16.0
+	#The amount of base damage a armor piercing Cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	ap = 16.0
+	#The amount of base damage a single part of buckshot inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	buck = 3.0
+	#The amount of base damage a dragon breath cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	dragon = 4.0
+	#The amount of base damage a homing cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	homing = 16.0
+	#The amount of base damage a wolfpack cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	wolfpack = 5.0
+	#The amount of base damage the sub-projectiles of a  wolfpack cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	wolfpack_part = 10.0
+	#The amount of damage a silver bullet inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	silver = 12.0
+
+[tools.chemthrower]
+	#The mb of fluid the Chemical Thrower will consume per tick of usage
+	#Range: > 1
+	consumption = 2
+
+[tools.railgun]
+	#The base amount of Flux consumed per shot by the Railgun
+	#Range: > 1
+	consumption = 600
+	#A modifier for the damage of all projectiles fired by the Railgun
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_modifier = 2.0

@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: Item.of('prettypipes:pipe', 8),
             pattern: ['CCC', 'ABA', 'CCC'],
@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    newRecipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         if (recipe.id) {
             event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
         } else {

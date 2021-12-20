@@ -603,6 +603,12 @@ onEvent('recipes', (event) => {
                     material: '#forge:ingots/neptunium',
                     result: 'aquaculture:neptunium_helmet',
                     id: 'aquaculture:neptunium_helmet'
+                },
+                {
+                    base: 'minecraft:chainmail_helmet',
+                    material: '#forge:ingots/manyullyn',
+                    result: 'tconstruct:plate_helmet',
+                    id: 'tconstruct:armor/building/plate_helmet'
                 }
             ]
         },
@@ -752,6 +758,12 @@ onEvent('recipes', (event) => {
                     material: '#forge:ingots/neptunium',
                     result: 'aquaculture:neptunium_chestplate',
                     id: 'aquaculture:neptunium_chestplate'
+                },
+                {
+                    base: 'minecraft:chainmail_chestplate',
+                    material: '#forge:ingots/manyullyn',
+                    result: 'tconstruct:plate_chestplate',
+                    id: 'tconstruct:armor/building/plate_chestplate'
                 }
             ]
         },
@@ -895,6 +907,12 @@ onEvent('recipes', (event) => {
                     material: '#forge:ingots/neptunium',
                     result: 'aquaculture:neptunium_leggings',
                     id: 'aquaculture:neptunium_leggings'
+                },
+                {
+                    base: 'minecraft:chainmail_leggings',
+                    material: '#forge:ingots/manyullyn',
+                    result: 'tconstruct:plate_leggings',
+                    id: 'tconstruct:armor/building/plate_leggings'
                 }
             ]
         },
@@ -1032,6 +1050,12 @@ onEvent('recipes', (event) => {
                     material: '#forge:ingots/neptunium',
                     result: 'aquaculture:neptunium_boots',
                     id: 'aquaculture:neptunium_boots'
+                },
+                {
+                    base: 'minecraft:chainmail_boots',
+                    material: '#forge:ingots/manyullyn',
+                    result: 'tconstruct:plate_boots',
+                    id: 'tconstruct:armor/building/plate_boots'
                 }
             ]
         }

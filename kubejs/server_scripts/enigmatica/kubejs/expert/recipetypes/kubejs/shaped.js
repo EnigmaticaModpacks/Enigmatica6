@@ -98,6 +98,58 @@ onEvent('recipes', (event) => {
             },
             id: `${id_prefix}cpu_core_2000`
         },
+        {
+            output: 'kubejs:mekasuit_helmet_package',
+            pattern: ['AAA', 'BCD', 'EFF'],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'rftoolsbuilder:shield_block1',
+                C: 'betterendforge:crystalite_helmet',
+                D: 'mekanism:basic_induction_cell',
+                E: 'mekanism:cardboard_box',
+                F: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}mekasuit_helmet`
+        },
+        {
+            output: 'kubejs:mekasuit_bodyarmor_package',
+            pattern: ['AAA', 'BCD', 'EFF'],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'rftoolsbuilder:shield_block1',
+                C: 'betterendforge:crystalite_chestplate',
+                D: 'mekanism:basic_induction_cell',
+                E: 'mekanism:cardboard_box',
+                F: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}mekasuit_bodyarmor`
+        },
+        {
+            output: 'kubejs:mekasuit_pants_package',
+            pattern: ['AAA', 'BCD', 'EFF'],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'rftoolsbuilder:shield_block1',
+                C: 'betterendforge:crystalite_leggings',
+                D: 'mekanism:basic_induction_cell',
+                E: 'mekanism:cardboard_box',
+                F: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}mekasuit_pants`
+        },
+        {
+            output: 'kubejs:mekasuit_boots_package',
+            pattern: ['AAA', 'BCD', 'EFF'],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'rftoolsbuilder:shield_block1',
+                C: 'betterendforge:crystalite_boots',
+                D: 'mekanism:basic_induction_cell',
+                E: 'mekanism:cardboard_box',
+                F: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}mekasuit_boots`
+        },
 
         // Storage Parts
         {

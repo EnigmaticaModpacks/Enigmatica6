@@ -248,10 +248,7 @@
 			x: 2.0d
 			y: -1.5d
 			description: ["Begin manufacturing rune stones to build the foundations for a stronger Blood Altar. "]
-			dependencies: [
-				"46993F7BA43BE3AB"
-				"0D8649291801C76C"
-			]
+			dependencies: ["0D8649291801C76C"]
 			id: "43D3D565E295FA5D"
 			tasks: [{
 				id: "089924B8BB44ECFD"
@@ -306,7 +303,11 @@
 			x: 2.5d
 			y: -4.0d
 			shape: "diamond"
-			description: ["Tossing Arcane Stone into a Spirit Fire is certainly… effective, but an Otherstone Trader will do the job at a significant discount. "]
+			description: [
+				"Tossing Arcane Stone into a Spirit Fire is certainly… effective, but an Otherstone Trader will do the job at a significant discount. "
+				""
+				"Note: The Spirit Trader still requires Arcane Stone, but at a rate of two Otherstone per Arcane Stone."
+			]
 			dependencies: ["4CEB33C94A160D68"]
 			id: "2DD9ABCD4AC03D03"
 			tasks: [{
@@ -407,7 +408,7 @@
 		{
 			x: 1.0d
 			y: 0.5d
-			description: ["With little more than Snares in hand, the Adept is set out on the hunt. They either come back mor knowledgeable, or they do not come back at all. "]
+			description: ["With little more than Snares in hand, the Adept is sent out on the hunt. They either come back more knowledgeable, or they do not come back at all."]
 			dependencies: ["7BA120BEA495D354"]
 			id: "358D438E941E3FFE"
 			tasks: [{
@@ -425,14 +426,26 @@
 				"Judging."
 				""
 				"Your actions appear to have pleased one such being. Construct an Offering Table and see what wisdom it will impart upon you. "
+				""
+				"Of course, all knowledge comes at a cost…"
 			]
-			dependencies: ["54BD6A448EC80453"]
+			dependencies: [
+				"54BD6A448EC80453"
+				"46993F7BA43BE3AB"
+			]
 			id: "39F1798BD7FDA0EC"
-			tasks: [{
-				id: "289310ED8AE0AA8E"
-				type: "item"
-				item: "naturesaura:offering_table"
-			}]
+			tasks: [
+				{
+					id: "289310ED8AE0AA8E"
+					type: "item"
+					item: "naturesaura:offering_table"
+				}
+				{
+					id: "38201997FD403259"
+					type: "item"
+					item: "naturesaura:calling_spirit"
+				}
+			]
 		}
 		{
 			x: -3.5d
@@ -556,21 +569,6 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 1.5d
-			description: ["Of course, all knowledge comes at a cost…"]
-			dependencies: [
-				"39F1798BD7FDA0EC"
-				"46993F7BA43BE3AB"
-			]
-			id: "4780541D7D03AFE9"
-			tasks: [{
-				id: "5121A366F884AFEE"
-				type: "item"
-				item: "naturesaura:calling_spirit"
-			}]
-		}
-		{
 			x: 1.0d
 			y: 1.5d
 			description: [
@@ -631,6 +629,22 @@
 						sacrifice: 0b
 					}
 				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			description: [
+				"“There was always something new to be seen in the unchanging night sky…”"
+				""
+				"– Elder Leiber"
+			]
+			dependencies: ["39F1798BD7FDA0EC"]
+			id: "7154DB9C4506F05B"
+			tasks: [{
+				id: "652DE77D344E1B5F"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
 			}]
 		}
 	]

@@ -192,7 +192,15 @@ onEvent('jei.information', (event) => {
         },
         {
             items: [/quark:\w+_crystal$/],
-            text: ['Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.']
+            text: [
+                'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.',
+                ' ',
+                'May sprout Corundum Clusters as well.'
+            ]
+        },
+        {
+            items: [/quark:\w+_crystal_cluster/],
+            text: ['Grows occasionally on Corundum Blocks when grown underground.']
         },
         {
             items: ['quark:bottled_cloud'],
@@ -361,6 +369,19 @@ onEvent('jei.information', (event) => {
             text: [`Splash a Phantom with a Potion of Insomnia to convert it to a Flare.`]
         },
         {
+            items: ['immersiveengineering:cloche'],
+            text: [
+                `Available Fertilizers:`,
+                ` `,
+                `Bone Meal: 1.25x`,
+                `Floral Fertilizer: 1.5x`,
+                `Green Fertilizer: 1.5x`,
+                `Fertilizer: 1.7x`,
+                `Red Fertilizer: 2.0x`,
+                `Phyto-Gro: 3.0x`
+            ]
+        },
+        {
             items: ['quark:dragon_scale'],
             text: [`Only drops from Ender Dragons after the first one has been killed.`]
         },
@@ -408,6 +429,14 @@ onEvent('jei.information', (event) => {
             text: [
                 `Commonly found growing in Oasis Biomes in Atum. Grows like Sugar Cane on Strange Sand or Fertile Soil.`
             ]
+        },
+        {
+            items: ['astralsorcery:infused_wood'],
+            text: [`Made by dropping any Log into Liquid Starlight.`]
+        },
+        {
+            items: ['environmental:thief_hood'],
+            text: [`May be repaired with Rabbit Hide.`]
         }
     ];
 

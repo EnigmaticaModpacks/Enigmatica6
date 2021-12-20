@@ -87,10 +87,9 @@ onEvent('recipes', (event) => {
             id: 'mekanism:thermal_evaporation/valve'
         },
         {
-            output: Item.of('3x mekanism:structural_glass'),
-            pattern: ['ABC', 'BCB', 'CBA'],
+            output: Item.of('5x mekanism:structural_glass'),
+            pattern: ['CBC', 'BCB', 'CBC'],
             key: {
-                A: '#mekanism:alloys/reinforced',
                 B: '#forge:plates/aluminum',
                 C: '#thermal:glass/hardened'
             },
@@ -792,6 +791,27 @@ onEvent('recipes', (event) => {
                 C: '#forge:ingots/hepatizon'
             },
             id: `mekanism:bin/ultimate`
+        },
+        {
+            output: `mekanism:logistical_sorter`,
+            pattern: ['ABA', 'ACA', 'EDE'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_black',
+                B: 'prettypipes:medium_extraction_module',
+                C: 'prettypipes:medium_filter_module',
+                D: 'prettypipes:round_robin_sorting_modifier',
+                E: '#forge:plates/iron_osmium'
+            },
+            id: `mekanism:logistical_sorter`
+        },
+        {
+            output: Item.of(`8x mekanism:basic_logistical_transporter`),
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:ingots/steel',
+                B: 'pneumaticcraft:logistics_core'
+            },
+            id: `mekanism:transmitter/logistical_transporter/basic`
         }
     ];
 

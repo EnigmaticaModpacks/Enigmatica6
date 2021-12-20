@@ -1,6 +1,6 @@
 ### Enigmatica 6 v0.5.22
 
-_Using Forge-1.16.5-36.2.19_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.22.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.22.md)_
+_Using Forge-1.16.5-36.2.20_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.22.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.22.md)_
 
 ---
 

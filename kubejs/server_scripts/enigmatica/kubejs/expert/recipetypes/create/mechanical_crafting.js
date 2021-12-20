@@ -692,6 +692,22 @@ onEvent('recipes', (event) => {
                 I: 'pneumaticcraft:huge_tank'
             },
             id: 'industrialforegoing:dissolution_chamber/infinity_nuke'
+        },
+        {
+            output: 'industrialforegoing:dissolution_chamber',
+            pattern: ['ABCBA', 'BDCDB', 'ECFCE', 'BGHGB', 'ABIBA'],
+            key: {
+                A: '#forge:alloys/elite',
+                B: '#forge:plastic',
+                C: 'mekanism:elite_mechanical_pipe',
+                D: '#forge:gears/enderium',
+                E: 'mekanism:elite_fluid_tank',
+                F: 'pneumaticcraft:smart_chest',
+                G: 'mekanism:superheating_element',
+                H: 'mekanism:basic_induction_provider',
+                I: '#industrialforegoing:machine_frame/pity'
+            },
+            id: 'industrialforegoing:dissolution_chamber'
         }
     ];
 

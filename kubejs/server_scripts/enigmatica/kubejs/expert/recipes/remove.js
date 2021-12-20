@@ -82,6 +82,7 @@ onEvent('recipes', (event) => {
         'mekanism:osmium_compressor',
         /mekanism:factory/,
         'mekanism:robit',
+        /mekanism:mekasuit/,
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
@@ -153,6 +154,17 @@ onEvent('recipes', (event) => {
         { output: 'apotheosis:hellshelf', id: 'apotheosis:hellshelf' },
         { output: 'apotheosis:seashelf', id: 'apotheosis:seashelf' },
         { output: 'apotheosis:endshelf', id: 'apotheosis:endshelf' },
+        { output: 'apotheosis:enchantment_library', id: 'apotheosis:enchantment_library' },
+        { output: 'apotheosis:armor_head_book', id: 'apotheosis:armor_head_book' },
+        { output: 'apotheosis:armor_chest_book', id: 'apotheosis:armor_chest_book' },
+        { output: 'apotheosis:armor_legs_book', id: 'apotheosis:armor_legs_book' },
+        { output: 'apotheosis:armor_feet_book', id: 'apotheosis:armor_feet_book' },
+        { output: 'apotheosis:bow_book', id: 'apotheosis:bow_book' },
+        { output: 'apotheosis:fishing_rod_book', id: 'apotheosis:fishing_rod_book' },
+        { output: 'apotheosis:digger_book', id: 'apotheosis:digger_book' },
+        { output: 'apotheosis:weapon_book', id: 'apotheosis:weapon_book' },
+        { output: 'apotheosis:scrap_tome', id: 'apotheosis:scrap_tome' },
+        { output: 'apotheosis:null_book', id: 'apotheosis:null_book' },
 
         { output: 'ars_nouveau:arcane_stone', id: 'ars_nouveau:arcane_stone' },
         { output: 'ars_nouveau:crystallizer', id: 'ars_nouveau:crystallizer' },
@@ -215,6 +227,8 @@ onEvent('recipes', (event) => {
         { output: 'botania:gaia_spreader', id: 'botania:gaia_spreader' },
         { output: 'botania:fel_pumpkin', id: 'botania:fel_pumpkin' },
         { output: 'botania:blood_pendant', id: 'botania:blood_pendant' },
+        { output: 'botania:ender_dagger', id: 'botania:ender_dagger' },
+        { output: 'botania:brewery', id: 'botania:brewery' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
@@ -222,6 +236,7 @@ onEvent('recipes', (event) => {
         { output: 'mythicbotany:fire_ring', id: 'mythicbotany:fire_ring' },
         { output: 'mythicbotany:ice_ring', id: 'mythicbotany:ice_ring' },
         { output: 'mythicbotany:mana_collector', id: 'mythicbotany:mana_collector' },
+        { output: 'mythicbotany:kvasir_mead', id: 'mythicbotany:kvasir_mead' },
 
         { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
         { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },
