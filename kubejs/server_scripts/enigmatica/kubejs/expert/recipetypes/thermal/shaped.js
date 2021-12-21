@@ -123,11 +123,9 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'thermal:tinker_bench',
-            pattern: ['ABC', 'DED', 'FGF'],
+            pattern: ['AE ', 'DDD', 'FGF'],
             key: {
-                A: 'immersiveengineering:screwdriver',
-                B: 'immersiveengineering:wirecutter',
-                C: 'immersiveengineering:hammer',
+                A: Item.of('immersiveengineering:maintenance_kit', '{Damage:0}').weakNBT(),
                 D: '#forge:plates/lead',
                 E: '#create:toolboxes',
                 F: 'thermal:rf_coil',

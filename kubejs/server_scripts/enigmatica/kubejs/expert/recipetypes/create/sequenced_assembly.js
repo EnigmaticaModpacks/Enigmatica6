@@ -248,22 +248,22 @@ onEvent('recipes', (event) => {
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'immersiveengineering:craftingtable'],
+                    input: ['mekanism:cardboard_box', 'create:goggles'],
                     output: 'mekanism:cardboard_box'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'immersiveengineering:screwdriver'],
+                    input: ['mekanism:cardboard_box', 'engineersdecor:metal_crafting_table'],
                     output: 'mekanism:cardboard_box'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'immersiveengineering:hammer'],
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:maintenance_kit'],
                     output: 'mekanism:cardboard_box'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'immersiveengineering:wirecutter'],
+                    input: ['mekanism:cardboard_box', 'pneumaticcraft:manometer'],
                     output: 'mekanism:cardboard_box'
                 },
                 {
