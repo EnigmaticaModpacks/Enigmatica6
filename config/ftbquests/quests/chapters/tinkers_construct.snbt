@@ -484,14 +484,25 @@
 			id: "1BECFB61E2216217"
 			tasks: [
 				{
-					id: "40C66C0A845AC4DC"
-					type: "item"
-					item: "tconstruct:seared_melter"
-				}
-				{
 					id: "66575D6B48FFD434"
 					type: "item"
-					item: "tconstruct:seared_heater"
+					title: "Seared Melter"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:seared_melter"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:seared_heater"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "78758910B6CD9108"
