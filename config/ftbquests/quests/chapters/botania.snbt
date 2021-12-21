@@ -410,7 +410,24 @@
 			tasks: [{
 				id: "0000000000000522"
 				type: "item"
-				item: "botania:endoflame"
+				title: "Endoflame"
+				icon: "botania:endoflame"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:endoflame"
+								Count: 1b
+							}
+							{
+								id: "botania:gourmaryllis"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [
 				{
