@@ -253,7 +253,12 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'thermal:tinker_bench'],
+                    input: ['mekanism:cardboard_box', 'engineersdecor:metal_crafting_table'],
+                    output: 'mekanism:cardboard_box'
+                },
+                {
+                    type: 'deploying',
+                    input: ['mekanism:cardboard_box', 'immersiveengineering:maintenance_kit'],
                     output: 'mekanism:cardboard_box'
                 },
                 {
