@@ -3,7 +3,7 @@
 	#Can a non-creative user create a portal using the scarab?
 	"Atum Portal" = true
 	#Should clientside fog be rendered?
-	"Atum Fog" = true
+	"Atum Fog" = false
 
 ["atum start"]
 	#New players should start in Atum?
@@ -21,7 +21,7 @@
 	"Sandstorm Sand Layer" = 60
 	#Multiplier to fog during sandstorms
 	#Range: 0 ~ 100
-	"Sandstorm Fog" = 2
+	"Sandstorm Fog" = 0
 	#How light the sand particles are
 	#Range: 0 ~ 100
 	"Sandstorm Brightness" = 75
@@ -185,10 +185,10 @@
 [mobs]
 	#How frequent Bandit patrols are. The higher the number, the less patrols will spawn
 	#Range: -1 ~ 10000
-	banditPatrolFrequency = 1000
+	banditPatrolFrequency = 1600
 	#How long time is required for an Assassin to spawn. The higher the number, the less frequent Assassin will spawn
 	#Range: 1 ~ 10000
-	markedForDeathFrequency = 1000
+	markedForDeathFrequency = 1600
 	#Whether a message should be broadcast to everybody, when a Pharaoh have been killed
 	displayPharaohSlainMessage = true
 
