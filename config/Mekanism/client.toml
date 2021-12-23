@@ -1,8 +1,6 @@
 
 #Client Config. This config only exists on the client
 [client]
-	#Set to false to prevent particle spam when loading multiblocks (notification message will display instead).
-	enableMultiblockFormationParticles = true
 	#If enabled machines play their sounds while running.
 	enableMachineSounds = true
 	#Play sounds for Jetpack/Gas Mask/Flamethrower/Radiation (all players).
@@ -13,29 +11,18 @@
 	#Range at which Tile Entity Renderer's added by Mekanism can render at, for example the contents of multiblocks. Vanilla defaults the rendering range for TERs to 64 for most blocks, but uses a range of 256 for beacons and end gateways.
 	#Range: 1 ~ 1024
 	terRange = 256
-	#How many particles spawn when rendering radiation effects (scaled by radiation level).
-	radiationParticleCount = 100
-	#Show particles when machines active.
-	machineEffects = true
 	#Enable item information HUD during gameplay
 	enableHUD = true
 	#Allow sneak + scroll to change item modes.
 	allowModeScroll = true
-	#Should active machines produce block light.
-	enableAmbientLighting = true
 	#If true, don't render Cables/Pipes/Tubes as transparent and don't render their contents.
 	opaqueTransmitters = false
 	#Christmas/New Years greetings in chat.
 	holidays = true
 	#Color of energy in item durability display.
 	energyColor = 3997338
-	#How far (in blocks) from the player radiation particles can spawn.
-	radiationParticleRadius = 30
 	#Align HUD (text) with left (if true) or right (if false)
 	alignHUDLeft = true
-	#How much light to produce if ambient lighting is enabled.
-	#Range: 1 ~ 15
-	ambientLightingLevel = 15
 	#Scale of the text displayed on the HUD.
 	#Range: 0.25 ~ 1.0
 	hudScale = 0.6
@@ -71,4 +58,66 @@
 		hudWarningColor = 16768335
 		#Color of danger HUD elements used by MekaSuit.
 		hudDangerColor = 16726076
+
+		#Last Window Positions. In general these values should not be modified manually.
+		[client.gui.window]
+
+			[client.gui.window.color]
+				x = 2147483647
+				y = 2147483647
+
+			[client.gui.window.confirmation]
+				x = 2147483647
+				y = 2147483647
+
+			[client.gui.window.crafting0]
+				x = 2147483647
+				y = 2147483647
+
+			[client.gui.window.crafting1]
+				x = 2147483647
+				y = 2147483647
+
+			[client.gui.window.crafting2]
+				x = 2147483647
+				y = 2147483647
+
+			[client.gui.window.mekaSuitHelmet]
+				x = 2147483647
+				y = 2147483647
+
+			[client.gui.window.rename]
+				x = 2147483647
+				y = 2147483647
+
+			[client.gui.window.skinSelect]
+				x = 2147483647
+				y = 2147483647
+
+			[client.gui.window.sideConfig]
+				x = 2147483647
+				y = 2147483647
+
+			[client.gui.window.transporterConfig]
+				x = 2147483647
+				y = 2147483647
+
+			[client.gui.window.upgrade]
+				x = 2147483647
+				y = 2147483647
+
+	#Particle Config
+	[client.particle]
+		#Set to false to prevent particle spam when loading multiblocks (notification message will display instead).
+		enableMultiblockFormationParticles = true
+		#Show particles when machines active.
+		machineEffects = true
+		#How far (in blocks) from the player radiation particles can spawn.
+		radiationParticleRadius = 30
+		#How many particles spawn when rendering radiation effects (scaled by radiation level).
+		radiationParticleCount = 100
+		#Show bolts when the Magnetic Attraction Unit is pulling items.
+		magneticAttraction = true
+		#Show bolts for various AOE tool behaviors such as tilling, debarking, and vein mining.
+		toolAOE = true
 

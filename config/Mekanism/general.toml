@@ -28,6 +28,11 @@
 	logPackets = false
 	#How many ticks must pass until a block's active state is synced with the client, if it has been rapidly changing.
 	blockDeactivationDelay = 60
+	#Enable this to allow dragging items from JEI into the target slot of Digital Miner filters.
+	easyMinerFilters = false
+	#Number of ticks to burn an item at in a Fuelwood Heater. Use this config option to effectively make Fuelwood Heater's burn faster but produce the same amount of heat per item.
+	#Range: 1 ~ 1000
+	fuelwoodTickMultiplier = 1
 
 	#Thermal Evaporation Plant Settings
 	[general.thermal_evaporation]
@@ -80,6 +85,7 @@
 		#Disables IC2 power integration. Requires world restart (server-side option in SMP).
 		blacklistIC2 = false
 		#Burn time for Ethylene (1mB hydrogen + 2*bioFuel/tick*200ticks/100mB * 20x efficiency bonus).
+		#Range: > 1
 		EthyleneBurnTime = 40
 		#Conversion multiplier from Joules to EU (Joules * EUPerJoule = EU)
 		EUPerJoule = "0.1000"
@@ -108,6 +114,9 @@
 		chemical = 1024
 		#Rate at which fluid gets auto ejected from tiles.
 		fluid = 1024
+		#The percentage of a tank's capacity to leave contents in when set to dumping excess.
+		#Range: 0.001 ~ 1.0
+		dumpExcessKeepRatio = 0.9
 
 	#Block security/protection Settings
 	[general.security]
@@ -143,7 +152,7 @@
 		#Number of mB of gas that decay every radioactiveWasteBarrelProcessTicks ticks when stored in a Radioactive Waste Barrel. Set to zero to disable decay all together. (Gases in the mekanism:waste_barrel_decay_blacklist tag will not decay).
 		#Range: 0 ~ 9223372036854775807
 		radioactiveWasteBarrelDecayAmount = 100
-		#Radiation sources are multiplied by this constant roughly once per second to represent their emission decay. At the default rate, it takes roughly 10 days to remove a 1,000 Sv/h (crazy high) source.
+		#Radiation sources are multiplied by this constant roughly once per second to represent their emission decay. At the default rate, it takes roughly 10 hours to remove a 1,000 Sv/h (crazy high) source.
 		sourceDecayRate = 0.9995
 		#Defines the minimum severity radiation dosage severity (scale of 0 to 1) for which negative effects can take place. Set to 1 to disable negative effects completely.
 		#Range: 0.0 ~ 1.0
@@ -168,10 +177,24 @@
 		#If enabled makes Water and Heavy Water blocks be removed from the world on pump.
 		pumpWaterSources = false
 
-	#Nutritional PasteSettings
+	#Nutritional Paste Settings
 	[general.nutritional_paste]
 		#Saturation level of Nutritional Paste when eaten.
 		saturation = 0.8
 		#How much mB of Nutritional Paste equates to one 'half-food.'
 		mbPerFood = 50
+
+	#Dynamic Tank Settings
+	[general.dynamic_tank]
+		#Amount of fluid (mB) that each block of the dynamic tank contributes to the volume. Max = volume * fluidPerTank
+		#Range: 1 ~ 368224
+		fluidPerTank = 350000
+		#Amount of chemical (mB) that each block of the dynamic tank contributes to the volume. Max = volume * chemicalPerTank
+		#Range: 1 ~ 1581510980256305
+		chemicalPerTank = 16000000
+
+	#Oredictionificator Settings
+	[general.oredictionificator]
+		#The list of valid tag prefixes for the Oredictionificator. Note: It is highly recommended to only include well known/defined tag prefixes otherwise it is very easy to potentially add in accidental conversions of things that are not actually equivalent.
+		validItemFilters = ["forge:dusts/", "forge:ingots/", "forge:nuggets/", "forge:ores/", "forge:storage_blocks/"]
 
