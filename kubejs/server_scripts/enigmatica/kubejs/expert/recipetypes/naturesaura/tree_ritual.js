@@ -56,8 +56,8 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'quark:bottled_cloud',
                 'powah:charged_snowball',
-                'naturesaura:gold_leaf',
-                'minecraft:diamond_axe',
+                'naturesaura:gold_leaf',                
+                Item.of('minecraft:diamond_axe', '{Damage:0}').weakNBT(),
                 'alexsmobs:komodo_spit',
                 'powah:charged_snowball',
                 'alexsmobs:komodo_spit',
@@ -103,8 +103,8 @@ onEvent('recipes', (event) => {
         {
             ingredients: [
                 'naturesaura:tainted_gold',
-                'architects_palette:moonstone',
-                'eidolon:reaper_scythe',
+                'architects_palette:moonstone',                
+                Item.of('eidolon:reaper_scythe', '{Damage:0}').weakNBT(),
                 'naturesaura:token_sorrow',
                 '#forge:ingots/nether_brick',
                 'minecraft:soul_sand',
