@@ -8,40 +8,103 @@
 		#Range: 1 ~ 9223372036854775807
 		nutritionalMaxStorage = 128000
 		#Energy usage (Joules) of MekaSuit per tick when flying via Gravitational Modulation.
-		energyUsageGravitationalModulation = "1000"
+		energyUsageGravitationalModulation = "250000"
 		#Energy cost/multiplier in Joules for reducing magic damage via the inhalation purification unit. Energy cost is: MagicDamage * energyUsageMagicPrevent. (1 MagicDamage is 1 half heart).
-		energyUsageMagicReduce = "1000"
+		energyUsageMagicReduce = "250000"
 		#Energy usage (Joules) of MekaSuit when adding 0.1 to jump motion.
-		baseJumpEnergyUsage = "1000"
+		baseJumpEnergyUsage = "50000"
 		#Energy usage (Joules) of MekaSuit per tick of using vision enhancement.
-		energyUsageVisionEnhancement = "500"
+		energyUsageVisionEnhancement = "7000"
 		#Solar recharging rate (Joules) of helmet per tick, per upgrade installed.
-		solarRechargingRate = "500"
+		solarRechargingRate = "7000"
 		#Energy usage (Joules) of MekaSuit per tick of attracting a single item.
-		energyUsageItemAttraction = "250"
+		energyUsageItemAttraction = "25000"
 		#Energy usage (Joules) of MekaSuit when adding 0.1 to sprint motion.
-		energyUsageSprintBoost = "100"
+		energyUsageSprintBoost = "25000"
 		#Maximum amount of Hydrogen storable in the jetpack unit.
 		#Range: 1 ~ 9223372036854775807
-		jetpackMaxStorage = 48000
+		jetpackMaxStorage = 256000
 		#Rate at which Hydrogen can be transferred into the jetpack unit.
 		#Range: 1 ~ 9223372036854775807
-		jetpackTransferRate = 256
+		jetpackTransferRate = 512
 		#Energy usage (Joules) of MekaSuit when lessening a potion effect.
-		energyUsagePotionTick = "40000"
+		energyUsagePotionTick = "250000"
 		#Energy capacity (Joules) of MekaSuit items without any installed upgrades. Quadratically scaled by upgrades.
-		baseEnergyCapacity = "16000000"
+		baseEnergyCapacity = "8000000"
 		#Amount (joules) of energy the MekaSuit can accept per tick. Quadratically scaled by upgrades.
 		chargeRate = "100000"
 		#Energy usage (Joules) of MekaSuit per unit of damage applied.
-		energyUsageDamage = "100000"
+		energyUsageDamage = "250000"
 		#Rate at which Nutritional Paste can be transferred into the nutritional injection unit.
 		#Range: 1 ~ 9223372036854775807
-		nutritionalTransferRate = 256
+		nutritionalTransferRate = 512
 		#Charge rate of inventory items (Joules) per tick.
 		inventoryChargeRate = "10000"
 		#Energy usage (Joules) of MekaSuit per half-food of nutritional injection.
-		energyUsageNutritionalInjection = "20000"
+		energyUsageNutritionalInjection = "50000"
+		#Energy usage (Joules) per second of the MekaSuit when flying with the Elytra Unit.
+		elytraEnergyUsage = "32000"
+		#Energy cost/multiplier in Joules for reducing fall damage with MekaSuit Boots. Energy cost is: FallDamage * freeRunnerFallEnergyCost. (1 FallDamage is 1 half heart)
+		energyUsageFall = "50"
+
+		[gear.mekasuit.damage_absorption]
+			#Percent of damage taken from fall that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			fallDamageReductionRatio = 1.0
+			#Percent of damage taken from magic damage that can be absorbed by MekaSuit Helmet with Purification unit when it has enough power.
+			#Range: 0.0 ~ 1.0
+			magicDamageReductionRatio = 1.0
+			#Percent of damage taken from other non explicitly supported damage types that don't bypass armor when the MekaSuit has enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			unspecifiedDamageReductionRatio = 1.0
+			#Percent of damage taken from anvil that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			anvilDamageReductionRatio = 1.0
+			#Percent of damage taken from cactus that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			cactusDamageReductionRatio = 1.0
+			#Percent of damage taken from cramming that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			crammingDamageReductionRatio = 1.0
+			#Percent of damage taken from dragonBreath that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			dragonBreathDamageReductionRatio = 1.0
+			#Percent of damage taken from dryout that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			dryoutDamageReductionRatio = 1.0
+			#Percent of damage taken from fallingBlock that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			fallingBlockDamageReductionRatio = 1.0
+			#Percent of damage taken from flyIntoWall that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			flyIntoWallDamageReductionRatio = 1.0
+			#Percent of damage taken from generic that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			genericDamageReductionRatio = 1.0
+			#Percent of damage taken from hotFloor that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			hotFloorDamageReductionRatio = 1.0
+			#Percent of damage taken from inFire that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			inFireDamageReductionRatio = 1.0
+			#Percent of damage taken from inWall that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			inWallDamageReductionRatio = 1.0
+			#Percent of damage taken from lava that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			lavaDamageReductionRatio = 1.0
+			#Percent of damage taken from lightningBolt that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			lightningBoltDamageReductionRatio = 1.0
+			#Percent of damage taken from onFire that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			onFireDamageReductionRatio = 1.0
+			#Percent of damage taken from sweetBerryBush that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			sweetBerryBushDamageReductionRatio = 1.0
+			#Percent of damage taken from wither that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.
+			#Range: 0.0 ~ 1.0
+			witherDamageReductionRatio = 1.0
 
 	#Network Reader Settings
 	[gear.network_reader]
@@ -60,6 +123,9 @@
 		chargeRate = "320"
 		#Energy cost/multiplier in Joules for reducing fall damage with free runners. Energy cost is: FallDamage * freeRunnerFallEnergyCost. (1 FallDamage is 1 half heart)
 		fallEnergyCost = "50"
+		#Percent of damage taken from falling that can be absorbed by Free Runners when they have enough power.
+		#Range: 0.0 ~ 1.0
+		fallDamageReductionRatio = 1.0
 
 	#Portable Teleporter Settings
 	[gear.portable_teleporter]
@@ -86,14 +152,10 @@
 		fastMode = true
 		#Enable the 'Vein Mining' mode for the Atomic Disassembler.
 		veinMining = true
-		#The amount of damage the Atomic Disassembler does when it has at least DisassemblerEnergyUsageWeapon power stored. (Value is in number of half hearts)
+		#The amount of damage the Atomic Disassembler does when it has at least energyUsageWeapon power stored. (Value is in number of half hearts)
 		maxDamage = 20
 		#The max Atomic Disassembler Vein Mining Block Count.
 		miningCount = 128
-		#The Range of the Atomic Disassembler Extended Vein Mining.
-		miningRange = 10
-		#Enable the 'Extended Vein Mining' mode for the Atomic Disassembler. (Allows vein mining everything not just ores/logs)
-		extendedMining = true
 		#The amount of damage the Atomic Disassembler does when it is out of power. (Value is in number of half hearts)
 		minDamage = 4
 
@@ -130,8 +192,10 @@
 		maxEnergy = "120000"
 		#Amount (joules) of energy the Electric Bow can accept per tick.
 		chargeRate = "600"
-		#Cost in Joules of using the Electric Bow with flame mode active.
+		#Cost in Joules of using the Electric Bow.
 		energyUsage = "1200"
+		#Cost in Joules of using the Electric Bow with flame mode active.
+		energyUsageFire = "1200"
 
 	#Flamethrower Settings
 	[gear.flamethrower]
@@ -141,6 +205,8 @@
 		#Flamethrower Gas Tank capacity in mB.
 		#Range: 1 ~ 9223372036854775807
 		maxGas = 24000
+		#Determines whether or not the Flamethrower can destroy items if it fails to smelt them.
+		destroyItems = true
 
 	#Jetpack Settings
 	[gear.jetpack]
@@ -200,4 +266,12 @@
 		baseEfficiency = 4.0
 		#Enable the 'Extended Vein Mining' mode for the Meka-Tool. (Allows vein mining everything not just ores/logs)
 		extendedMining = true
+		#Base energy (Joules) usage of the Meka-Tool. (Gets multiplied by speed factor)
+		energyUsage = "10"
+		#Silk touch energy (Joules) usage of the Meka-Tool. (Gets multiplied by speed factor)
+		energyUsageSilk = "100"
+		#Cost in Joules of using the Meka-Tool to shear blocks (beehives, pumpkins).
+		energyUsageShearBlock = "10"
+		#Cost in Joules of using the Meka-Tool to shear entities.
+		energyUsageShearEntity = "10"
 
