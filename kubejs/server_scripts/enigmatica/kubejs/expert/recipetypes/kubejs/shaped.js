@@ -104,7 +104,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'mekanism:hdpe_sheet',
                 B: 'rftoolsbuilder:shield_block1',
-                C: 'betterendforge:crystalite_helmet',
+                C: Item.of('betterendforge:crystalite_helmet', '{Damage:0}').weakNBT(),
                 D: 'mekanism:basic_induction_cell',
                 E: 'mekanism:cardboard_box',
                 F: '#forge:circuits/elite'
@@ -117,7 +117,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'mekanism:hdpe_sheet',
                 B: 'rftoolsbuilder:shield_block1',
-                C: 'betterendforge:crystalite_chestplate',
+                C: Item.of('betterendforge:crystalite_chestplate', '{Damage:0}').weakNBT(),
                 D: 'mekanism:basic_induction_cell',
                 E: 'mekanism:cardboard_box',
                 F: '#forge:circuits/elite'
@@ -130,7 +130,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'mekanism:hdpe_sheet',
                 B: 'rftoolsbuilder:shield_block1',
-                C: 'betterendforge:crystalite_leggings',
+                C: Item.of('betterendforge:crystalite_leggings', '{Damage:0}').weakNBT(),
                 D: 'mekanism:basic_induction_cell',
                 E: 'mekanism:cardboard_box',
                 F: '#forge:circuits/elite'
@@ -143,7 +143,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'mekanism:hdpe_sheet',
                 B: 'rftoolsbuilder:shield_block1',
-                C: 'betterendforge:crystalite_boots',
+                C: Item.of('betterendforge:crystalite_boots', '{Damage:0}').weakNBT(),
                 D: 'mekanism:basic_induction_cell',
                 E: 'mekanism:cardboard_box',
                 F: '#forge:circuits/elite'
