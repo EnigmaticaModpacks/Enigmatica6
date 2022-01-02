@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
             mana: 4000000,
             ticks: 200,
             inputs: [
-                'botania:ender_dagger',
+                Item.of('botania:ender_dagger', '{Damage:0}').weakNBT(),
                 'bloodmagic:looting_anointment_l',
                 'botania:flask',
                 'naturesaura:token_rage'

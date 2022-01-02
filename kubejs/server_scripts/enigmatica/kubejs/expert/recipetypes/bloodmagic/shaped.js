@@ -74,7 +74,7 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:incense_altar'
         },
         {
-            output: 'bloodmagic:ritualstone',
+            output: Item.of('2x bloodmagic:ritualstone'),
             pattern: ['CBC', 'BAB', 'CBC'],
             key: {
                 A: { type: 'bloodmagic:bloodorb', orb_tier: 2 },

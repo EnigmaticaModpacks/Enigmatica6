@@ -150,7 +150,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDE', 'FGF'],
             key: {
                 A: '#forge:plastic',
-                B: 'aquaculture:neptunium_fishing_rod',
+                B: Item.of('aquaculture:neptunium_fishing_rod', '{Damage:0}').weakNBT(),
                 C: 'aquaculture:nether_star_hook',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: 'aquaculture:worm',
