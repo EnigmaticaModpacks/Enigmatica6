@@ -121,7 +121,7 @@ function Pull-Changes {
 function Move-ServerFiles {
 	Write-Host
 	Write-Host "Copying server files to base folder..." -ForegroundColor Cyan
-	Write-Host "This will not overwrite existing files." -ForegroundColor Gray
+	Write-Host "This will overwrite existing files." -ForegroundColor Gray
 	@(
 		"automation/settings.cfg", 
 		"automation/start-automated-server.bat", 
@@ -130,9 +130,8 @@ function Move-ServerFiles {
 		$splitFileName = $_ -split "/"
 		$fileName = $splitFileName[$splitFileName.length - 1]
 		$destination = "$fileName" 
-		if (-not (Test-Path $destination)) {
-			Copy-Item -Path $_ -Destination $destination
-		}
+		Write-Host "Moving '$fileName' to the base folder."
+		Copy-Item -Path $_ -Destination $destination -Force
 	}
 }
 
