@@ -98,6 +98,31 @@ onEvent('recipes', (event) => {
             aura: 5000000,
             time: 200,
             id: `${id_prefix}masticator`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                'resourcefulbees:sand_honeycomb',
+                'architects_palette:rotten_flesh_block'
+            ],
+            entity: 'alexsmobs:komodo_dragon',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}komodo_dragon`
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:sand_honeycomb', 'minecraft:chicken'],
+            entity: 'alexsmobs:rattlesnake',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}rattlesnake`
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:sand_honeycomb', 'minecraft:golden_carrot'],
+            entity: 'atum:camel',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}camel`
         }
     ];
     recipes.forEach((recipe) => {

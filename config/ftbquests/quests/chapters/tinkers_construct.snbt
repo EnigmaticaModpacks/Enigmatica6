@@ -3034,23 +3034,38 @@
 			description: ["These boots will allow the tinkerer to bounce safely from great heights instead of hitting the ground hard. Unlike the slings, the different boots are purely aesthetic. "]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "12B4F7ED5AD83DBC"
-			tasks: [
-				{
-					id: "176867E738D4714C"
-					type: "item"
-					item: "tconstruct:earth_slime_boots"
+			tasks: [{
+				id: "176867E738D4714C"
+				type: "item"
+				item: {
+					id: "tconstruct:slime_boots"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 546.0f
+							"tconstruct:armor": 0.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:bouncy"
+								level: 1s
+							}
+							{
+								name: "tconstruct:leaping"
+								level: 1s
+							}
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 5
+						}
+					}
 				}
-				{
-					id: "71C0FF1C37666BB9"
-					type: "item"
-					item: "tconstruct:sky_slime"
-				}
-				{
-					id: "2542091A64F64F8C"
-					type: "item"
-					item: "tconstruct:ender_slime"
-				}
-			]
+			}]
 			rewards: [{
 				id: "7DE85E011FF0A2CC"
 				type: "command"
