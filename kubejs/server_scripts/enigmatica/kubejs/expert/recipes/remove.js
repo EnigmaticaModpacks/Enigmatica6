@@ -59,6 +59,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/cokebrick',
         'immersiveengineering:crafting/blastbrick',
         'immersiveengineering:crafting/alloybrick',
+        'immersiveengineering:generator_fuel/biodiesel',
+        'immersiveengineering:generator_fuel/creosote',
 
         'industrialforegoing:mob_slaughter_factory',
         /industrialforegoing:mycelial/,
