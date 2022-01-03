@@ -437,6 +437,14 @@ onEvent('jei.information', (event) => {
         {
             items: ['environmental:thief_hood'],
             text: [`May be repaired with Rabbit Hide.`]
+        },
+        {
+            items: ['naturesaura:gold_leaf'],
+            text: [`Obtained by breaking Golden Leaves.`]
+        },
+        {
+            items: ['naturesaura:golden_leaves'],
+            text: [`Obtained by using Brilliant Fiber on leaves. Allow to spread for best effect.`]
         }
     ];
 
