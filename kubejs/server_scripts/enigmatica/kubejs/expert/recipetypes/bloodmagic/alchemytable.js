@@ -156,7 +156,7 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:alchemytable/reagent_void'
         },
         {
-            inputs: ['quark:bottled_cloud', 'alexsmobs:tarantula_hawk_wing', 'ars_nouveau:wilden_wing'],
+            inputs: ['quark:bottled_cloud', 'alexsmobs:tarantula_hawk_wing_fragment', 'ars_nouveau:wilden_wing'],
             output: 'bloodmagic:reagentair',
             count: 1,
             syphon: 2000,
