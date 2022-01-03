@@ -117,7 +117,7 @@ onEvent('item.registry', (event) => {
         { name: 'foundation_materials', texture: 'packing_crate_red' },
         { name: 'construction_tools', texture: 'packing_crate_yellow' },
         { name: 'landscaping_materials', texture: 'packing_crate_lime' },
-        { name: 'engineering_student_supplies', texture: 'packing_crate_blue' },
+        { name: 'engineering_student_meals', texture: 'packing_crate_blue' },
         { name: 'building_materials', texture: 'packing_crate_orange' },
 
         { name: 'engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
@@ -226,7 +226,7 @@ onEvent('item.registry', (event) => {
     });
 
     ritualDummies.forEach((item) => {
-        event.create(item).type('occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/pentacle');
+        event.create(item).type('occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/ritual_dummy');
     });
 
     reusableItemTextures.forEach((item) => {

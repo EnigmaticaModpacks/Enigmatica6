@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:engineers_school_project',
             inputs: [
                 'kubejs:construction_tools',
-                'kubejs:engineering_student_supplies',
+                'kubejs:engineering_student_meals',
                 'kubejs:landscaping_materials',
                 'kubejs:foundation_materials',
                 'kubejs:building_materials',

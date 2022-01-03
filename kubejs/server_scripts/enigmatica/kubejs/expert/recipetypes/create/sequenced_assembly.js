@@ -242,42 +242,37 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'mekanism:cardboard_box',
-            outputs: ['kubejs:engineering_student_supplies'],
+            outputs: ['kubejs:engineering_student_meals'],
             transitionalItem: 'mekanism:cardboard_box',
-            loops: 20,
+            loops: 60,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'create:goggles'],
+                    input: ['mekanism:cardboard_box', 'create:builders_tea'],
                     output: 'mekanism:cardboard_box'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'engineersdecor:metal_crafting_table'],
+                    input: ['mekanism:cardboard_box', 'simplefarming:vegetable_curry'],
                     output: 'mekanism:cardboard_box'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'immersiveengineering:maintenance_kit'],
+                    input: ['mekanism:cardboard_box', 'simpledelights:mango_wings'],
                     output: 'mekanism:cardboard_box'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'pneumaticcraft:manometer'],
+                    input: ['mekanism:cardboard_box', 'simpledelights:plum_pudding'],
                     output: 'mekanism:cardboard_box'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'immersiveengineering:manual'],
-                    output: 'mekanism:cardboard_box'
-                },
-                {
-                    type: 'deploying',
-                    input: ['mekanism:cardboard_box', '#create:seats'],
+                    input: ['mekanism:cardboard_box', 'minecraft:enchanted_golden_apple'],
                     output: 'mekanism:cardboard_box'
                 }
             ],
-            id: `${id_prefix}engineering_student_supplies`
+            id: `${id_prefix}engineering_student_meals`
         },
         {
             input: 'mekanism:cardboard_box',
