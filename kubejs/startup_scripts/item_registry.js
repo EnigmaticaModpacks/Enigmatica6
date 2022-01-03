@@ -44,7 +44,9 @@ onEvent('item.registry', (event) => {
         'memory_ultimate_empty',
         'memory_ultimate_filled',
         'scented_stick',
-        'celestial_mycelium_filaments'
+        'celestial_mycelium_filaments',
+        'incomplete_book',
+        'incomplete_capacitor_basic_large'
     ];
 
     const ritualDummies = [

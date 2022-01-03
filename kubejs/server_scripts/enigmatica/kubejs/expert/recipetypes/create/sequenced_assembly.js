@@ -26,28 +26,28 @@ onEvent('recipes', (event) => {
         {
             input: 'minecraft:leather',
             outputs: ['minecraft:book'],
-            transitionalItem: 'minecraft:leather',
+            transitionalItem: 'kubejs:incomplete_book',
             loops: 4,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['minecraft:leather', '#forge:string'],
-                    output: 'minecraft:leather'
+                    input: ['kubejs:incomplete_book', '#forge:string'],
+                    output: 'kubejs:incomplete_book'
                 },
                 {
                     type: 'deploying',
-                    input: ['minecraft:leather', '#forge:paper'],
-                    output: 'minecraft:leather'
+                    input: ['kubejs:incomplete_book', '#forge:paper'],
+                    output: 'kubejs:incomplete_book'
                 },
                 {
                     type: 'deploying',
-                    input: ['minecraft:leather', '#forge:paper'],
-                    output: 'minecraft:leather'
+                    input: ['kubejs:incomplete_book', '#forge:paper'],
+                    output: 'kubejs:incomplete_book'
                 },
                 {
                     type: 'deploying',
-                    input: ['minecraft:leather', '#forge:paper'],
-                    output: 'minecraft:leather'
+                    input: ['kubejs:incomplete_book', '#forge:paper'],
+                    output: 'kubejs:incomplete_book'
                 }
             ],
             id: `${id_prefix}book_from_leather`
@@ -55,28 +55,28 @@ onEvent('recipes', (event) => {
         {
             input: 'tconstruct:pattern',
             outputs: ['minecraft:book'],
-            transitionalItem: 'tconstruct:pattern',
+            transitionalItem: 'kubejs:incomplete_book',
             loops: 4,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['tconstruct:pattern', '#forge:slimeballs'],
-                    output: 'tconstruct:pattern'
+                    input: ['kubejs:incomplete_book', '#forge:slimeballs'],
+                    output: 'kubejs:incomplete_book'
                 },
                 {
                     type: 'deploying',
-                    input: ['tconstruct:pattern', '#forge:paper'],
-                    output: 'tconstruct:pattern'
+                    input: ['kubejs:incomplete_book', '#forge:paper'],
+                    output: 'kubejs:incomplete_book'
                 },
                 {
                     type: 'deploying',
-                    input: ['tconstruct:pattern', '#forge:paper'],
-                    output: 'tconstruct:pattern'
+                    input: ['kubejs:incomplete_book', '#forge:paper'],
+                    output: 'kubejs:incomplete_book'
                 },
                 {
                     type: 'deploying',
-                    input: ['tconstruct:pattern', '#forge:paper'],
-                    output: 'tconstruct:pattern'
+                    input: ['kubejs:incomplete_book', '#forge:paper'],
+                    output: 'kubejs:incomplete_book'
                 }
             ],
             id: `${id_prefix}book_from_pattern`
@@ -84,28 +84,28 @@ onEvent('recipes', (event) => {
         {
             input: 'pneumaticcraft:plastic',
             outputs: [Item.of('powah:capacitor_basic_large', 2)],
-            transitionalItem: 'pneumaticcraft:plastic',
+            transitionalItem: 'kubejs:incomplete_capacitor_basic_large',
             loops: 4,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['pneumaticcraft:plastic', '#forge:plates/aluminum'],
-                    output: 'pneumaticcraft:plastic'
+                    input: ['kubejs:incomplete_capacitor_basic_large', '#forge:plates/aluminum'],
+                    output: 'kubejs:incomplete_capacitor_basic_large'
                 },
                 {
                     type: 'deploying',
-                    input: ['pneumaticcraft:plastic', 'powah:dielectric_paste'],
-                    output: 'pneumaticcraft:plastic'
+                    input: ['kubejs:incomplete_capacitor_basic_large', 'powah:dielectric_paste'],
+                    output: 'kubejs:incomplete_capacitor_basic_large'
                 },
                 {
                     type: 'deploying',
-                    input: ['pneumaticcraft:plastic', '#forge:plates/signalum'],
-                    output: 'pneumaticcraft:plastic'
+                    input: ['kubejs:incomplete_capacitor_basic_large', '#forge:plates/signalum'],
+                    output: 'kubejs:incomplete_capacitor_basic_large'
                 },
                 {
                     type: 'pressing',
-                    input: 'pneumaticcraft:plastic',
-                    output: 'pneumaticcraft:plastic'
+                    input: 'kubejs:incomplete_capacitor_basic_large',
+                    output: 'kubejs:incomplete_capacitor_basic_large'
                 }
             ],
             id: 'powah:crafting/capacitor_basic_large'
