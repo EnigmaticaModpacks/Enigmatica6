@@ -211,6 +211,26 @@ onEvent('recipes', (event) => {
             ],
             id: `${id_prefix}fluid_laser_base`
         },
+        {
+            output: Item.of('apotheosis:seashelf', 1),
+            pattern: ['G___G', '_ACF_', '_BEB_', '_FCA_', 'G___G'],
+            key: {
+                A: { item: 'upgrade_aquatic:prismarine_coral_block' },
+                B: { tag: 'botania:runes/water' },
+                C: { item: 'resourcefulbees:icy_honeycomb' },
+                E: { tag: 'forge:bookshelves' },
+                F: { item: 'powah:crystal_niotic' },
+                G: { item: 'bloodmagic:reagentwater' }
+            },
+            altar_type: 1,
+            duration: 200,
+            starlight: 1400,
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: `${id_prefix}seashelf`
+        },
 
         /// Guidebook safe removals
 
@@ -223,13 +243,7 @@ onEvent('recipes', (event) => {
             altar_type: 1,
             duration: 200,
             starlight: 1600,
-            effects: [
-                'astralsorcery:pillar_sparkle',
-                'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:altar_default_lightbeams',
-                'astralsorcery:altar_default_sparkle',
-                'astralsorcery:built_in_effect_attunement_sparkle'
-            ],
+            effects: ['astralsorcery:pillar_sparkle'],
             id: 'astralsorcery:altar/attunement_altar'
         }
     ];

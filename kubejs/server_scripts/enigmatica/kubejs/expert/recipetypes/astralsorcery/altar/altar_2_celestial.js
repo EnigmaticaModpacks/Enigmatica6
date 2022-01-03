@@ -51,50 +51,6 @@ onEvent('recipes', (event) => {
             id: 'astralsorcery:altar/altar_radiance'
         },
         {
-            output: Item.of('apotheosis:hellshelf', 1),
-            pattern: ['AG__A', 'G_BC_', '_DED_', '_FB_G', 'A__GA'],
-            key: {
-                A: { item: 'tconstruct:scorched_bricks' },
-                B: { tag: 'botania:runes/fire' },
-                C: { item: 'resourcefulbees:ghast_honeycomb' },
-                D: { tag: 'botania:runes/muspelheim' },
-                E: { tag: 'forge:bookshelves' },
-                F: { item: 'powah:crystal_blazing' },
-                G: { item: 'bloodmagic:reagentlava' }
-            },
-            altar_type: 2,
-            duration: 200,
-            starlight: 3000,
-            effects: [
-                'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:gateway_edge',
-                'astralsorcery:built_in_effect_attunement_sparkle'
-            ],
-            id: `${id_prefix}hellshelf`
-        },
-        {
-            output: Item.of('apotheosis:seashelf', 1),
-            pattern: ['AG__A', 'G_BC_', '_DED_', '_FB_G', 'A__GA'],
-            key: {
-                A: { item: 'upgrade_aquatic:prismarine_coral_block' },
-                B: { tag: 'botania:runes/water' },
-                C: { item: 'resourcefulbees:icy_honeycomb' },
-                D: { tag: 'botania:runes/vanaheim' },
-                E: { tag: 'forge:bookshelves' },
-                F: { item: 'powah:crystal_niotic' },
-                G: { item: 'bloodmagic:reagentwater' }
-            },
-            altar_type: 2,
-            duration: 200,
-            starlight: 3000,
-            effects: [
-                'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:gateway_edge',
-                'astralsorcery:built_in_effect_attunement_sparkle'
-            ],
-            id: `${id_prefix}seashelf`
-        },
-        {
             output: Item.of('apotheosis:endshelf', 1),
             pattern: ['AG__A', 'G_BC_', '_DED_', '_FB_G', 'A__GA'],
             key: {
