@@ -399,7 +399,7 @@
 			description: [
 				"“Beautiful dreamer, wake unto me, Starlight and dewdrops are waiting for thee; Sounds of the rude world heard in the day, Lull'd by the moonlight have all pass'd away.”"
 				""
-				"– Aes-Danai Foster of the Celestial Order"
+				"–Aes-Danai Foster of the Celestial Order"
 			]
 			dependencies: ["42EC202E93A7E5A3"]
 			id: "2D6DDD000FC99514"
@@ -468,6 +468,32 @@
 				type: "item"
 				item: "ars_nouveau:glyph_sentientharm"
 			}]
+		}
+		{
+			title: "Edge of the Hidden Realm"
+			x: 4.5d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"Travel to the Hidden Realms, a land bordering this world and the Spirit Realm. Here, the ancient Tau Berry may be found. Retrieve some of this precious fruit and learn to cultivate it. "
+				""
+				"Upon completion of the Edge of the Hidden Realm ritual, a pillar will appear. Right click it to travel to a pocket dungeon filled with treasures. Opening the doors in this realm requires Iron Keys so come prepared. "
+			]
+			dependencies: ["06E76BE2A422E8AC"]
+			id: "0225B4F9E4ECAC21"
+			tasks: [
+				{
+					id: "5B057F8FE1A8E286"
+					type: "item"
+					item: "bloodmagic:simplekey"
+					count: 8L
+				}
+				{
+					id: "1ECC374EB08B5BDA"
+					type: "item"
+					item: "bloodmagic:weak_tau"
+				}
+			]
 		}
 	]
 }
