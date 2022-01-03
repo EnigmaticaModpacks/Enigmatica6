@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:air_canister',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'pneumaticcraft:compressed_iron_helmet',
+                C: Item.of('pneumaticcraft:compressed_iron_helmet', '{Damage:0}').weakNBT(),
                 D: 'mekanism:cardboard_box'
             },
             id: 'pneumaticcraft:pneumatic_helmet'
@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:air_canister',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'pneumaticcraft:compressed_iron_chestplate',
+                C: Item.of('pneumaticcraft:compressed_iron_chestplate', '{Damage:0}').weakNBT(),
                 D: 'mekanism:cardboard_box'
             },
             id: 'pneumaticcraft:pneumatic_chestplate'
@@ -45,7 +45,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:air_canister',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'pneumaticcraft:compressed_iron_leggings',
+                C: Item.of('pneumaticcraft:compressed_iron_leggings', '{Damage:0}').weakNBT(),
                 D: 'mekanism:cardboard_box'
             },
             id: 'pneumaticcraft:pneumatic_leggings'
@@ -56,7 +56,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:air_canister',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'pneumaticcraft:compressed_iron_boots',
+                C: Item.of('pneumaticcraft:compressed_iron_boots', '{Damage:0}').weakNBT(),
                 D: 'mekanism:cardboard_box'
             },
             id: 'pneumaticcraft:pneumatic_boots'
@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#pneumaticcraft:upgrade_components',
                 B: '#pneumaticcraft:plastic_sheets',
-                C: 'thermal:diving_boots'
+                C: Item.of('thermal:diving_boots', '{Damage:0}').weakNBT(),
             },
             id: 'pneumaticcraft:flippers_upgrade'
         },

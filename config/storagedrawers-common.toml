@@ -12,7 +12,10 @@
 	#Half-depth drawers hold half those amounts.
 	baseStackStorage = 4
 	enableExtraCompactingRules = true
-	#Range: 1 ~ 50
+	#Controller range defines how far away a drawer can be connected
+	#on X, Y, or Z planes.  The default value of 50 gives the controller a very
+	#large range, but not beyond the chunk load distance.
+	#Range: 1 ~ 75
 	controllerRange = 12
 	enableSidedOutput = true
 
@@ -26,5 +29,8 @@
 	level4Mult = 16
 
 [Integration]
+	#When true, shows quantity as NxS + R (by stack size) rather than count
 	wailaStackRemainder = true
+	#When true, does not show current quantities unless quantify key was used
+	wailaRespectQuantifyKey = false
 

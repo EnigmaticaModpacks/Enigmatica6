@@ -413,12 +413,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:gems/mana_diamond',
-                'bloodmagic:firescribetool',
+                Item.of('bloodmagic:firescribetool', '{Damage:0}').weakNBT(),
                 '#forge:gems/mana_diamond',
-                'bloodmagic:airscribetool',
-                'bloodmagic:earthscribetool',
+                Item.of('bloodmagic:airscribetool', '{Damage:0}').weakNBT(),
+                Item.of('bloodmagic:earthscribetool', '{Damage:0}').weakNBT(),
                 '#forge:gems/mana_diamond',
-                'bloodmagic:waterscribetool',
+                Item.of('bloodmagic:waterscribetool', '{Damage:0}').weakNBT(),
                 '#forge:gems/mana_diamond'
             ],
             reagent: 'botania:livingwood_twig',
@@ -429,7 +429,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'botania:pixie_dust',
-                'naturesaura:sky_sword',
+                Item.of('naturesaura:sky_sword', '{Damage:0}').weakNBT(),
                 'botania:pixie_dust',
                 'atum:montu_godshard',
                 '#botania:runes/muspelheim',
@@ -445,7 +445,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'botania:pixie_dust',
-                'botania:crystal_bow',
+                Item.of('botania:crystal_bow', '{Damage:0}').weakNBT(),
                 'botania:pixie_dust',
                 'atum:montu_godshard',
                 '#botania:runes/muspelheim',

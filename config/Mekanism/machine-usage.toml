@@ -53,6 +53,14 @@
 	nutritionalLiquifier = "200"
 	#Energy per operation tick (Joules).
 	antiprotonicNucleosynthesizer = "100000"
+	#Energy that can be transferred at once per charge operation (Joules).
+	chargePad = "1024000"
+	#Energy per operation tick (Joules).
+	pigmentExtractor = "200"
+	#Energy per operation tick (Joules).
+	pigmentMixer = "200"
+	#Energy per operation tick (Joules).
+	paintingMachine = "100"
 
 	#Teleporter
 	[usage.teleporter]
