@@ -47,6 +47,8 @@ onEvent('recipes', (event) => {
         'farmersdelight:book_from_canvas',
 
         'fluxnetworks:fluxcontroller',
+        'fluxnetworks:fluxplug',
+        'fluxnetworks:fluxpoint',
 
         'immersiveengineering:crafting/component_iron',
         'immersiveengineering:crafting/component_steel',

@@ -23,16 +23,27 @@ onEvent('recipes', (event) => {
             i++;
         }
 
-        recipes.push({
-            output: Item.of(`powah:energy_cable_${tier}`, 6),
-            pattern: ['CCC', 'BAB', 'CCC'],
-            key: {
-                A: capacitor,
-                B: Ingredient.of(lowerTiers.map((item) => `powah:energy_cable_${item}`)),
-                C: Ingredient.of('powah:dielectric_rod_horizontal')
+        recipes.push(
+            {
+                output: Item.of(`powah:energy_cable_${tier}`, 6),
+                pattern: ['CCC', 'BAB', 'CCC'],
+                key: {
+                    A: capacitor,
+                    B: Ingredient.of(lowerTiers.map((item) => `powah:energy_cable_${item}`)),
+                    C: Ingredient.of('powah:dielectric_rod_horizontal')
+                },
+                id: `powah:crafting/cable_${tier}`
             },
-            id: `powah:crafting/cable_${tier}`
-        });
+            {
+                output: Item.of(`powah:ender_cell_${tier}`),
+                pattern: [' A ', 'ABA', ' A '],
+                key: {
+                    A: crystal,
+                    B: Ingredient.of(lowerTiers.map((item) => `powah:ender_cell_${item}`))
+                },
+                id: `${id_prefix}ender_cell_${tier}`
+            }
+        );
     });
 
     recipes.forEach((recipe) => {
