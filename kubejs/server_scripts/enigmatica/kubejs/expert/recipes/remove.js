@@ -141,6 +141,7 @@ onEvent('recipes', (event) => {
         'tconstruct:smeltery/melting/metal/netherite/lodestone',
         'tconstruct:compat/refined_obsidian_ingot',
         'tconstruct:smeltery/alloys/molten_refined_obsidian',
+        'tconstruct:compat/refined_glowstone_ingot',
 
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
 
