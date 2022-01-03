@@ -1013,7 +1013,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'create:mechanical_arm',
                 Item.of('farmersdelight:netherite_knife', '{Damage:0]}').weakNBT(),
-                'sophisticatedbackpacks:upgrade_base',
+                '#sophisticatedbackpacks:upgrades/base',
                 'tconstruct:silky_cloth'
             ],
             result: 'sophisticatedbackpacks:feeding_upgrade',
@@ -1026,7 +1026,7 @@ onEvent('recipes', (event) => {
             duration: 240,
             ritual_dummy: 'kubejs:craft_advanced_feeding_upgrade',
             ingredients: [
-                'sophisticatedbackpacks:feeding_upgrade',
+                '#sophisticatedbackpacks:upgrades/feeding',
                 '#botania:runes/gluttony',
                 'botania:pixie_dust',
                 '#botania:runes/gluttony'
@@ -1041,7 +1041,7 @@ onEvent('recipes', (event) => {
             duration: 240,
             ritual_dummy: 'kubejs:craft_auto_smelting_upgrade',
             ingredients: [
-                'sophisticatedbackpacks:smelting_upgrade',
+                '#sophisticatedbackpacks:upgrades/smelting',
                 'create:brass_funnel',
                 'create:mechanical_arm',
                 'create:brass_funnel'
@@ -1058,7 +1058,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'create:mechanical_pump',
                 'create:fluid_pipe',
-                'sophisticatedbackpacks:upgrade_base',
+                '#sophisticatedbackpacks:upgrades/base',
                 'create:fluid_pipe',
                 'create:cogwheel',
                 'create:hand_crank'
@@ -1075,7 +1075,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'create:smart_fluid_pipe',
                 'create:fluid_pipe',
-                'sophisticatedbackpacks:pump_upgrade',
+                '#sophisticatedbackpacks:upgrades/pump',
                 'create:fluid_pipe',
                 'create:filter'
             ],
@@ -1091,7 +1091,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'create:smart_fluid_pipe',
                 'create:fluid_pipe',
-                'sophisticatedbackpacks:pump_upgrade',
+                '#sophisticatedbackpacks:upgrades/pump',
                 'create:fluid_pipe',
                 'create:filter',
                 'ars_nouveau:greater_experience_gem',
@@ -1111,7 +1111,7 @@ onEvent('recipes', (event) => {
                 'create:mechanical_press',
                 'create:hand_crank',
                 'create:basin',
-                'sophisticatedbackpacks:crafting_upgrade',
+                '#sophisticatedbackpacks:upgrades/crafting',
                 'create:large_cogwheel',
                 'create:cogwheel'
             ],
@@ -1125,7 +1125,7 @@ onEvent('recipes', (event) => {
             duration: 240,
             ritual_dummy: 'kubejs:craft_advanced_compacting_upgrade',
             ingredients: [
-                'sophisticatedbackpacks:compacting_upgrade',
+                '#sophisticatedbackpacks:upgrades/compacting',
                 'create:precision_mechanism',
                 'create:attribute_filter',
                 'create:precision_mechanism',
@@ -1147,7 +1147,7 @@ onEvent('recipes', (event) => {
                 'create:deployer',
                 'create:hand_crank',
                 'meetyourfight:spectres_eye',
-                'sophisticatedbackpacks:upgrade_base',
+                '#sophisticatedbackpacks:upgrades/base',
                 'create:large_cogwheel',
                 'create:cogwheel'
             ],
@@ -1161,7 +1161,7 @@ onEvent('recipes', (event) => {
             duration: 240,
             ritual_dummy: 'kubejs:craft_advanced_tool_swapper_upgrade',
             ingredients: [
-                'sophisticatedbackpacks:tool_swapper_upgrade',
+                '#sophisticatedbackpacks:upgrades/tool_swapper',
                 'create:precision_mechanism',
                 'create:attribute_filter',
                 'create:precision_mechanism',
@@ -1183,7 +1183,7 @@ onEvent('recipes', (event) => {
                 'create:chute',
                 'rsgauges:oldfancy_bistableswitch1',
                 'meetyourfight:spectres_eye',
-                'sophisticatedbackpacks:upgrade_base'
+                '#sophisticatedbackpacks:upgrades/base'
             ],
             result: 'sophisticatedbackpacks:refill_upgrade',
             id: `${id_prefix}refill_upgrade`
