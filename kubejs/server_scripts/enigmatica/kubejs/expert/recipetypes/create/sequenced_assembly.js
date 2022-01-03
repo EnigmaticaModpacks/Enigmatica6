@@ -113,28 +113,28 @@ onEvent('recipes', (event) => {
         {
             input: 'minecraft:paper',
             outputs: [Item.of('immersiveengineering:cokebrick', 3)],
-            transitionalItem: 'kubejs:coke_brick',
+            transitionalItem: 'kubejs:partial_cokebrick',
             loops: 4,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['kubejs:coke_brick', 'kubejs:coke_brick'],
-                    output: 'kubejs:coke_brick'
+                    input: ['kubejs:partial_cokebrick', 'kubejs:coke_brick'],
+                    output: 'kubejs:partial_cokebrick'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:coke_brick', 'kubejs:coke_brick'],
-                    output: 'kubejs:coke_brick'
+                    input: ['kubejs:partial_cokebrick', 'kubejs:coke_brick'],
+                    output: 'kubejs:partial_cokebrick'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:coke_brick', 'kubejs:coke_brick'],
-                    output: 'kubejs:coke_brick'
+                    input: ['kubejs:partial_cokebrick', 'kubejs:coke_brick'],
+                    output: 'kubejs:partial_cokebrick'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:coke_brick', 'buildinggadgets:construction_paste'],
-                    output: 'kubejs:coke_brick'
+                    input: ['kubejs:partial_cokebrick', 'buildinggadgets:construction_paste'],
+                    output: 'kubejs:partial_cokebrick'
                 }
             ],
             id: `${id_prefix}cokebricks`
@@ -142,28 +142,28 @@ onEvent('recipes', (event) => {
         {
             input: 'minecraft:paper',
             outputs: [Item.of('immersiveengineering:blastbrick', 3)],
-            transitionalItem: 'kubejs:blast_brick',
+            transitionalItem: 'kubejs:partial_blastbrick',
             loops: 4,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['kubejs:blast_brick', 'kubejs:red_nether_brick'],
-                    output: 'kubejs:blast_brick'
+                    input: ['kubejs:partial_blastbrick', 'kubejs:red_nether_brick'],
+                    output: 'kubejs:partial_blastbrick'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:blast_brick', 'kubejs:coke_brick'],
-                    output: 'kubejs:blast_brick'
+                    input: ['kubejs:partial_blastbrick', 'kubejs:coke_brick'],
+                    output: 'kubejs:partial_blastbrick'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
-                    output: 'kubejs:blast_brick'
+                    input: ['kubejs:partial_blastbrick', 'kubejs:blast_brick'],
+                    output: 'kubejs:partial_blastbrick'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:blast_brick', 'buildinggadgets:construction_paste'],
-                    output: 'kubejs:blast_brick'
+                    input: ['kubejs:partial_blastbrick', 'buildinggadgets:construction_paste'],
+                    output: 'kubejs:partial_blastbrick'
                 }
             ],
             id: `${id_prefix}blastbricks`
@@ -171,33 +171,33 @@ onEvent('recipes', (event) => {
         {
             input: 'kubejs:smoldering_lapis_lazuli_compound',
             outputs: [Item.of('immersiveengineering:alloybrick', 4)],
-            transitionalItem: 'kubejs:blast_brick',
+            transitionalItem: 'kubejs:partial_alloybrick',
             loops: 4,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
-                    output: 'kubejs:blast_brick'
+                    input: ['kubejs:partial_alloybrick', 'kubejs:blast_brick'],
+                    output: 'kubejs:partial_alloybrick'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
-                    output: 'kubejs:blast_brick'
+                    input: ['kubejs:partial_alloybrick', 'kubejs:blast_brick'],
+                    output: 'kubejs:partial_alloybrick'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
-                    output: 'kubejs:blast_brick'
+                    input: ['kubejs:partial_alloybrick', 'kubejs:blast_brick'],
+                    output: 'kubejs:partial_alloybrick'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:blast_brick', 'environmental:mud_brick'],
-                    output: 'kubejs:blast_brick'
+                    input: ['kubejs:partial_alloybrick', 'environmental:mud_brick'],
+                    output: 'kubejs:partial_alloybrick'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:blast_brick', 'buildinggadgets:construction_paste'],
-                    output: 'kubejs:blast_brick'
+                    input: ['kubejs:partial_alloybrick', 'buildinggadgets:construction_paste'],
+                    output: 'kubejs:partial_alloybrick'
                 }
             ],
             id: `${id_prefix}alloybricks`
@@ -243,33 +243,33 @@ onEvent('recipes', (event) => {
         {
             input: 'mekanism:cardboard_box',
             outputs: ['kubejs:engineering_student_meals'],
-            transitionalItem: 'mekanism:cardboard_box',
+            transitionalItem: 'kubejs:partial_engineering_student_meals',
             loops: 60,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'create:builders_tea'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_engineering_student_meals', 'create:builders_tea'],
+                    output: 'kubejs:partial_engineering_student_meals'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'simplefarming:vegetable_curry'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_engineering_student_meals', 'simplefarming:vegetable_curry'],
+                    output: 'kubejs:partial_engineering_student_meals'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'simpledelights:mango_wings'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_engineering_student_meals', 'simpledelights:mango_wings'],
+                    output: 'kubejs:partial_engineering_student_meals'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'simpledelights:plum_pudding'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_engineering_student_meals', 'simpledelights:plum_pudding'],
+                    output: 'kubejs:partial_engineering_student_meals'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'minecraft:enchanted_golden_apple'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_engineering_student_meals', 'minecraft:enchanted_golden_apple'],
+                    output: 'kubejs:partial_engineering_student_meals'
                 }
             ],
             id: `${id_prefix}engineering_student_meals`
@@ -277,38 +277,38 @@ onEvent('recipes', (event) => {
         {
             input: 'mekanism:cardboard_box',
             outputs: ['kubejs:building_materials'],
-            transitionalItem: 'mekanism:cardboard_box',
+            transitionalItem: 'kubejs:partial_building_materials',
             loops: 500,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_building_materials', '#forge:treated_wood'],
+                    output: 'kubejs:partial_building_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_building_materials', '#forge:treated_wood'],
+                    output: 'kubejs:partial_building_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_building_materials', '#forge:treated_wood'],
+                    output: 'kubejs:partial_building_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', '#forge:treated_wood'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_building_materials', '#forge:treated_wood'],
+                    output: 'kubejs:partial_building_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'create:copper_shingles'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_building_materials', 'create:copper_shingles'],
+                    output: 'kubejs:partial_building_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'quark:framed_glass'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_building_materials', 'quark:framed_glass'],
+                    output: 'kubejs:partial_building_materials'
                 }
             ],
             id: `${id_prefix}building_materials`
@@ -316,38 +316,38 @@ onEvent('recipes', (event) => {
         {
             input: 'mekanism:cardboard_box',
             outputs: ['kubejs:landscaping_materials'],
-            transitionalItem: 'mekanism:cardboard_box',
+            transitionalItem: 'kubejs:partial_landscaping_materials',
             loops: 250,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'quark:turf'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_landscaping_materials', 'quark:turf'],
+                    output: 'kubejs:partial_landscaping_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'quark:turf'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_landscaping_materials', 'quark:turf'],
+                    output: 'kubejs:partial_landscaping_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'quark:turf'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_landscaping_materials', 'quark:turf'],
+                    output: 'kubejs:partial_landscaping_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'quark:turf'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_landscaping_materials', 'quark:turf'],
+                    output: 'kubejs:partial_landscaping_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', '#minecraft:small_flowers'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_landscaping_materials', '#minecraft:small_flowers'],
+                    output: 'kubejs:partial_landscaping_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', '#minecraft:leaves'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_landscaping_materials', '#minecraft:leaves'],
+                    output: 'kubejs:partial_landscaping_materials'
                 }
             ],
             id: `${id_prefix}landscaping_materials`
@@ -355,38 +355,38 @@ onEvent('recipes', (event) => {
         {
             input: 'mekanism:cardboard_box',
             outputs: ['kubejs:construction_tools'],
-            transitionalItem: 'mekanism:cardboard_box',
+            transitionalItem: 'kubejs:partial_construction_tools',
             loops: 5,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'pneumaticcraft:jackhammer'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_construction_tools', 'pneumaticcraft:jackhammer'],
+                    output: 'kubejs:partial_construction_tools'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'pneumaticcraft:drill_bit_compressed_iron'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_construction_tools', 'pneumaticcraft:drill_bit_compressed_iron'],
+                    output: 'kubejs:partial_construction_tools'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_construction_tools', 'pneumaticcraft:bandage'],
+                    output: 'kubejs:partial_construction_tools'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_construction_tools', 'pneumaticcraft:bandage'],
+                    output: 'kubejs:partial_construction_tools'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_construction_tools', 'pneumaticcraft:bandage'],
+                    output: 'kubejs:partial_construction_tools'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'pneumaticcraft:bandage'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_construction_tools', 'pneumaticcraft:bandage'],
+                    output: 'kubejs:partial_construction_tools'
                 }
             ],
             id: `${id_prefix}construction_tools`
@@ -394,38 +394,38 @@ onEvent('recipes', (event) => {
         {
             input: 'mekanism:cardboard_box',
             outputs: ['kubejs:foundation_materials'],
-            transitionalItem: 'mekanism:cardboard_box',
+            transitionalItem: 'kubejs:partial_foundation_materials',
             loops: 500,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'immersiveengineering:concrete'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_foundation_materials', 'immersiveengineering:concrete'],
+                    output: 'kubejs:partial_foundation_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'immersiveengineering:concrete'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_foundation_materials', 'immersiveengineering:concrete'],
+                    output: 'kubejs:partial_foundation_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'immersiveengineering:concrete'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_foundation_materials', 'immersiveengineering:concrete'],
+                    output: 'kubejs:partial_foundation_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', '#immersiveengineering:scaffoldings/steel'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_foundation_materials', '#immersiveengineering:scaffoldings/steel'],
+                    output: 'kubejs:partial_foundation_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'engineersdecor:clinker_brick_block'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_foundation_materials', 'engineersdecor:clinker_brick_block'],
+                    output: 'kubejs:partial_foundation_materials'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'engineersdecor:clinker_brick_block'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_foundation_materials', 'engineersdecor:clinker_brick_block'],
+                    output: 'kubejs:partial_foundation_materials'
                 }
             ],
             id: `${id_prefix}foundation_materials`
@@ -433,28 +433,28 @@ onEvent('recipes', (event) => {
         {
             input: 'mekanism:cardboard_box',
             outputs: ['kubejs:computer_package'],
-            transitionalItem: 'mekanism:cardboard_box',
+            transitionalItem: 'kubejs:partial_computer_package',
             loops: 5,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_computer_package', 'rftoolsbase:tablet'],
+                    output: 'kubejs:partial_computer_package'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_computer_package', 'rftoolsbase:tablet'],
+                    output: 'kubejs:partial_computer_package'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_computer_package', 'rftoolsbase:tablet'],
+                    output: 'kubejs:partial_computer_package'
                 },
                 {
                     type: 'deploying',
-                    input: ['mekanism:cardboard_box', 'rftoolsbase:tablet'],
-                    output: 'mekanism:cardboard_box'
+                    input: ['kubejs:partial_computer_package', 'rftoolsbase:tablet'],
+                    output: 'kubejs:partial_computer_package'
                 }
             ],
             id: `${id_prefix}computer_package`

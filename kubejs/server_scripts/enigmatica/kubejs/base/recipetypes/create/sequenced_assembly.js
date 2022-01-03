@@ -19,21 +19,16 @@ onEvent('recipes', (event) => {
             ],
             id: 'recipe_id_here'
         }*/
-        
+
         {
             input: 'create:andesite_alloy',
-            outputs: [
-                Item.of('12x create:cogwheel'),
-            ],
+            outputs: [Item.of('12x create:cogwheel')],
             transitionalItem: 'create:incomplete_cogwheel',
             loops: 4,
             sequence: [
                 {
                     type: 'deploying',
-                    input: [
-                        'create:incomplete_cogwheel',
-                        '#minecraft:wooden_buttons'
-                    ],
+                    input: ['create:incomplete_cogwheel', '#minecraft:wooden_buttons'],
                     output: 'create:incomplete_cogwheel'
                 },
                 {
@@ -47,26 +42,18 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'create:andesite_alloy',
-            outputs: [
-                Item.of('6x create:large_cogwheel'),
-            ],
+            outputs: [Item.of('6x create:large_cogwheel')],
             transitionalItem: 'create:incomplete_large_cogwheel',
             loops: 3,
             sequence: [
                 {
                     type: 'deploying',
-                    input: [
-                        'create:incomplete_large_cogwheel',
-                        '#minecraft:planks'
-                    ],
+                    input: ['create:incomplete_large_cogwheel', '#minecraft:planks'],
                     output: 'create:incomplete_large_cogwheel'
                 },
                 {
                     type: 'deploying',
-                    input: [
-                        'create:incomplete_large_cogwheel',
-                        '#minecraft:wooden_buttons'
-                    ],
+                    input: ['create:incomplete_large_cogwheel', '#minecraft:wooden_buttons'],
                     output: 'create:incomplete_large_cogwheel'
                 },
                 {
@@ -80,65 +67,51 @@ onEvent('recipes', (event) => {
         },
         {
             input: '#forge:plates/gold',
-            outputs: [
-                'create:precision_mechanism',
-            ],
+            outputs: ['create:precision_mechanism'],
             transitionalItem: 'create:incomplete_precision_mechanism',
             loops: 5,
             sequence: [
                 {
                     type: 'deploying',
-                    input: [
-                        'create:incomplete_precision_mechanism',
-                        'create:cogwheel'
-                    ],
+                    input: ['create:incomplete_precision_mechanism', 'create:cogwheel'],
                     output: 'create:incomplete_precision_mechanism'
                 },
                 {
                     type: 'deploying',
-                    input: [
-                        'create:incomplete_precision_mechanism',
-                        'create:large_cogwheel'
-                    ],
+                    input: ['create:incomplete_precision_mechanism', 'create:large_cogwheel'],
                     output: 'create:incomplete_precision_mechanism'
                 },
                 {
                     type: 'deploying',
-                    input: [
-                        'create:incomplete_precision_mechanism',
-                        '#forge:nuggets/iron'
-                    ],
+                    input: ['create:incomplete_precision_mechanism', '#forge:nuggets/iron'],
                     output: 'create:incomplete_precision_mechanism'
                 }
             ],
             id: 'create:precision_mechanism'
         }
-
     ];
 
     recipes.forEach((recipe) => {
         let sequence = [];
 
-        recipe.sequence.forEach((step) => { 
-            if (step.type == 'deploying'){
-                sequence.push(event.recipes.create.deploying(step.output,step.input))
-            }
-            else if (step.type == 'cutting'){
-                sequence.push(event.recipes.create.cutting(step.output,step.input).processingTime(step.processingTime))
-            }
-            else if (step.type == 'filling'){
-                sequence.push(event.recipes.create.filling(step.output,step.input))
-            }
-            else if (step.type == 'pressing'){
-                sequence.push(event.recipes.create.pressing(step.output,step.input))
+        recipe.sequence.forEach((step) => {
+            if (step.type == 'deploying') {
+                sequence.push(event.recipes.create.deploying(step.output, step.input));
+            } else if (step.type == 'cutting') {
+                sequence.push(
+                    event.recipes.create.cutting(step.output, step.input).processingTime(step.processingTime)
+                );
+            } else if (step.type == 'filling') {
+                sequence.push(event.recipes.create.filling(step.output, step.input));
+            } else if (step.type == 'pressing') {
+                sequence.push(event.recipes.create.pressing(step.output, step.input));
             }
         });
 
-        const re = event.recipes.create.sequenced_assembly(
-            recipe.outputs,
-            recipe.input,
-            sequence
-        ).loops(recipe.loops).transitionalItem(recipe.transitionalItem)
+        const re = event.recipes.create
+            .sequenced_assembly(recipe.outputs, recipe.input, sequence)
+            .loops(recipe.loops)
+            .transitionalItem(recipe.transitionalItem);
 
         if (recipe.id) {
             re.id(recipe.id);
