@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:normal/powah/shaped/';
     const recipes = [];
 
     powahTiers.forEach((tier) => {
