@@ -4,30 +4,30 @@
 
 	#Powercell settings
 	[general.powercell]
-		#Maximum RF a single tier3 cell can hold
-		#Range: 1 ~ 2000000000
-		tier3MaxRF = 20000000
-		#Maximum RF/tick per side for a tier1 cell
-		#Range: 1 ~ 2000000000
-		tier1MaxRFPerTick = 250
-		#Maximum RF/tick per side for a tier3 cell
-		#Range: 1 ~ 2000000000
-		tier3MaxRFPerTick = 4000
-		#Maximum RF/tick per side for a tier2 cell
-		#Range: 1 ~ 2000000000
-		tier2MaxRFPerTick = 1000
 		#Maximum RF a single tier1 cell can hold
 		#Range: 1 ~ 2000000000
 		tier1MaxRF = 500000
+		#Maximum RF/tick per side for a tier1 cell
+		#Range: 1 ~ 2000000000
+		tier1MaxRFPerTick = 250
+		#Maximum RF a single tier2 cell can hold
+		#Range: 1 ~ 2000000000
+		tier2MaxRF = 4000000		
+		#Maximum RF/tick per side for a tier2 cell
+		#Range: 1 ~ 2000000000
+		tier2MaxRFPerTick = 1000	
+		#Maximum RF a single tier3 cell can hold
+		#Range: 1 ~ 2000000000
+		tier3MaxRF = 20000000		
+		#Maximum RF/tick per side for a tier3 cell
+		#Range: 1 ~ 2000000000
+		tier3MaxRFPerTick = 4000
 		#Maximum number of blocks in a single multiblock network
 		#Range: 1 ~ 2000000000
 		networkMax = 729
-		#Maximum RF a single tier2 cell can hold
-		#Range: 1 ~ 2000000000
-		tier2MaxRF = 4000000
 		#How much extra RF/tick every cell gets per cell in the network. 0 means constant RF/t. 1 means linear with amount of cells
 		#Range: 0.0 ~ 100.0
-		rfPerTickScale = 0.25
+		rfPerTickScale = 1.0
 
 	#Settings for the blazing generator
 	[general.blazing]
