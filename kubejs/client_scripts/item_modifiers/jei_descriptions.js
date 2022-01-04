@@ -232,7 +232,15 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['quark:root_item'],
-            text: ['Drops occasionally when breaking Cave Roots.']
+            text: [
+                'Drops occasionally when breaking Cave Roots.',
+                ' ',
+                'Cave Roots may be crafted and grown just like Vines, though they require low light to grow.'
+            ]
+        },
+        {
+            items: ['quark:root'],
+            text: ['May be crafted and grown just like Vines, though they require low light to grow.']
         },
         {
             items: ['meetyourfight:phantoplasm'],

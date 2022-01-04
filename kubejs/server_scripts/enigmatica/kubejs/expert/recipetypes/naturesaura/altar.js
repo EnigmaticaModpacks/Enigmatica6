@@ -53,14 +53,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}sunstone`
         },
         {
-            input: 'minecraft:vine',
-            output: { item: 'quark:root' },
-            aura_type: 'naturesaura:nether',
-            aura: 30000,
-            time: 250,
-            id: `${id_prefix}root`
-        },
-        {
             input: 'ars_nouveau:arcane_stone',
             output: { item: 'naturesaura:infused_stone' },
             aura_type: 'naturesaura:nether',
