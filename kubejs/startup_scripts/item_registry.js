@@ -44,7 +44,9 @@ onEvent('item.registry', (event) => {
         'memory_ultimate_empty',
         'memory_ultimate_filled',
         'scented_stick',
-        'celestial_mycelium_filaments'
+        'celestial_mycelium_filaments',
+        'incomplete_book',
+        'incomplete_capacitor_basic_large'
     ];
 
     const ritualDummies = [
@@ -114,15 +116,24 @@ onEvent('item.registry', (event) => {
         { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
 
         { name: 'engineers_school_project', texture: 'packing_crate_gray' },
+        { name: 'partial_engineers_school_project', texture: 'packing_crate_gray' },
         { name: 'foundation_materials', texture: 'packing_crate_red' },
+        { name: 'partial_foundation_materials', texture: 'packing_crate_red' },
         { name: 'construction_tools', texture: 'packing_crate_yellow' },
+        { name: 'partial_construction_tools', texture: 'packing_crate_yellow' },
         { name: 'landscaping_materials', texture: 'packing_crate_lime' },
-        { name: 'engineering_student_supplies', texture: 'packing_crate_blue' },
+        { name: 'partial_landscaping_materials', texture: 'packing_crate_lime' },
+        { name: 'engineering_student_meals', texture: 'packing_crate_blue' },
+        { name: 'partial_engineering_student_meals', texture: 'packing_crate_blue' },
         { name: 'building_materials', texture: 'packing_crate_orange' },
+        { name: 'partial_building_materials', texture: 'packing_crate_orange' },
 
         { name: 'engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
+        { name: 'partial_engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
         { name: 'computer_package', texture: 'advanced_packing_crate_green' },
+        { name: 'partial_computer_package', texture: 'advanced_packing_crate_green' },
         { name: 'fluid_drill_package', texture: 'advanced_packing_crate_purple' },
+        { name: 'partial_fluid_drill_package', texture: 'advanced_packing_crate_purple' },
 
         { name: 'basic_memory_package', texture: 'assembly_package_filled' },
         { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
@@ -226,7 +237,7 @@ onEvent('item.registry', (event) => {
     });
 
     ritualDummies.forEach((item) => {
-        event.create(item).type('occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/pentacle');
+        event.create(item).type('occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/ritual_dummy');
     });
 
     reusableItemTextures.forEach((item) => {

@@ -392,6 +392,30 @@ onEvent('recipes', (event) => {
                 E: 'thermal:rf_coil'
             },
             id: 'thermal:machine_furnace'
+        },
+        {
+            output: 'thermal:dynamo_disenchantment',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: 'ars_nouveau:greater_experience_gem',
+                C: 'ars_nouveau:enchanting_apparatus',
+                D: '#forge:gears/cobalt',
+                E: '#botania:runes/mana'
+            },
+            id: 'thermal:dynamo_disenchantment'
+        },
+        {
+            output: 'thermal:dynamo_gourmand',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: '#forge:plates/cobalt',
+                C: 'powah:thermoelectric_plate',
+                D: '#forge:gears/uranium',
+                E: 'engineersdecor:small_waste_incinerator'
+            },
+            id: 'thermal:dynamo_gourmand'
         }
     ];
 

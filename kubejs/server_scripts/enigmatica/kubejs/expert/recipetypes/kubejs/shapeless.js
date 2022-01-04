@@ -2,13 +2,13 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/kubejs/shapeless';
+    const id_prefix = 'enigmatica:expert/kubejs/shapeless/';
     const recipes = [
         {
             output: 'kubejs:engineers_school_project',
             inputs: [
                 'kubejs:construction_tools',
-                'kubejs:engineering_student_supplies',
+                'kubejs:engineering_student_meals',
                 'kubejs:landscaping_materials',
                 'kubejs:foundation_materials',
                 'kubejs:building_materials',
