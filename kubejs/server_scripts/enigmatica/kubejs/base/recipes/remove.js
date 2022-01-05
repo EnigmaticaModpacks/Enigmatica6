@@ -160,6 +160,7 @@ onEvent('recipes', (event) => {
         'mekanism:processing/lapis_lazuli/from_ore',
 
         'minecraft:crystal_glass',
+        'minecraft:bone_pile_from_bone_pile_block',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',

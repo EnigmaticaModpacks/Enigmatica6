@@ -11,7 +11,8 @@ onEvent('recipes', (event) => {
             inputs: ['valhelsia_structures:dark_oak_post']
         },
         { output: Item.of('3x valhelsia_structures:cut_warped_post'), inputs: ['valhelsia_structures:warped_post'] },
-        { output: Item.of('3x valhelsia_structures:cut_crimson_post'), inputs: ['valhelsia_structures:crimson_post'] }
+        { output: Item.of('3x valhelsia_structures:cut_crimson_post'), inputs: ['valhelsia_structures:crimson_post'] },
+        { output: Item.of('9x minecraft:bone'), inputs: ['valhelsia_structures:bone_pile_block'] }
     ];
 
     recipes.forEach((recipe) => {
