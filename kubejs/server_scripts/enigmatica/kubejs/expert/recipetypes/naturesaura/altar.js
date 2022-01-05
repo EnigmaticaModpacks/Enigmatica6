@@ -53,14 +53,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}sunstone`
         },
         {
-            input: 'minecraft:vine',
-            output: { item: 'quark:root' },
-            aura_type: 'naturesaura:nether',
-            aura: 30000,
-            time: 250,
-            id: `${id_prefix}root`
-        },
-        {
             input: 'ars_nouveau:arcane_stone',
             output: { item: 'naturesaura:infused_stone' },
             aura_type: 'naturesaura:nether',
@@ -92,6 +84,15 @@ onEvent('recipes', (event) => {
             aura: 1000,
             time: 60,
             id: `${id_prefix}fish_bones`
+        },
+        {
+            input: 'minecraft:pufferfish',
+            output: { item: 'upgrade_aquatic:lionfish' },
+            catalyst: { item: 'naturesaura:conversion_catalyst' },
+            aura_type: 'naturesaura:nether',
+            aura: 15000,
+            time: 80,
+            id: `${id_prefix}lionfish`
         }
     ];
 

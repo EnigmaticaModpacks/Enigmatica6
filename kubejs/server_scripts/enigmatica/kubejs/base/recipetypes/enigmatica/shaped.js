@@ -378,69 +378,6 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    powahTiers.forEach(function (tier) {
-        let capacitor = 'powah:capacitor_' + tier,
-            crystal = 'powah:crystal_' + tier,
-            cable = 'powah:energy_cable_' + tier;
-
-        if (tier == 'basic' || tier == 'starter') {
-            return;
-        } else if (tier == 'hardened') {
-            crystal = 'powah:steel_energized';
-        }
-
-        let lowerTiers = [],
-            i = 0,
-            j = powahTiers.indexOf(tier);
-
-        while (i < j) {
-            lowerTiers.push(powahTiers[i]);
-            i++;
-        }
-
-        recipes.push(
-            {
-                output: Item.of(`powah:energy_cell_${tier}`),
-                pattern: ['ABA', 'BCB', 'ABA'],
-                key: {
-                    A: crystal,
-                    B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:energy_cell_${item}`))
-                },
-                id: `${id_prefix}powah/energy_cell_${tier}`
-            },
-            {
-                output: Item.of(`powah:battery_${tier}`),
-                pattern: [' A ', 'BCB', ' B '],
-                key: {
-                    A: crystal,
-                    B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:battery_${item}`))
-                },
-                id: `${id_prefix}powah/battery_${tier}`
-            },
-            {
-                output: Item.of(`powah:ender_cell_${tier}`),
-                pattern: [' A ', 'ABA', ' A '],
-                key: {
-                    A: crystal,
-                    B: Ingredient.of(lowerTiers.map((item) => `powah:ender_cell_${item}`))
-                },
-                id: `${id_prefix}powah/ender_cell_${tier}`
-            },
-            {
-                output: Item.of(`powah:solar_panel_${tier}`),
-                pattern: ['BCB', 'AAA'],
-                key: {
-                    A: crystal,
-                    B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:solar_panel_${item}`))
-                },
-                id: `${id_prefix}powah/solar_panel_${tier}`
-            }
-        );
-    });
-
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });

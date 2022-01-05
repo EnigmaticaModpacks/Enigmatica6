@@ -232,7 +232,15 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['quark:root_item'],
-            text: ['Drops occasionally when breaking Cave Roots.']
+            text: [
+                'Drops occasionally when breaking Cave Roots.',
+                ' ',
+                'Cave Roots may be crafted and grown just like Vines, though they require low light to grow.'
+            ]
+        },
+        {
+            items: ['quark:root'],
+            text: ['May be crafted and grown just like Vines, though they require low light to grow.']
         },
         {
             items: ['meetyourfight:phantoplasm'],
@@ -437,6 +445,14 @@ onEvent('jei.information', (event) => {
         {
             items: ['environmental:thief_hood'],
             text: [`May be repaired with Rabbit Hide.`]
+        },
+        {
+            items: ['naturesaura:gold_leaf'],
+            text: [`Obtained by breaking Golden Leaves.`]
+        },
+        {
+            items: ['naturesaura:golden_leaves'],
+            text: [`Obtained by using Brilliant Fiber on leaves. Allow to spread for best effect.`]
         }
     ];
 
@@ -449,7 +465,7 @@ onEvent('jei.information', (event) => {
     disabledItems.forEach((item) => {
         event.add(
             item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/NillerMedDild/Enigmatica6/issues"
+            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica6/issues"
         );
     });
 

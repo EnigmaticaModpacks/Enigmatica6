@@ -152,6 +152,16 @@ onEvent('recipes', (event) => {
                     D: 'powah:dielectric_rod'
                 },
                 id: `powah:crafting/energy_hopper_${tier}`
+            },
+            {
+                output: `powah:ender_cell_${tier}`,
+                pattern: ['ABA', 'BCB', 'ABA'],
+                key: {
+                    A: 'fluxnetworks:flux_core',
+                    B: capacitor,
+                    C: 'fluxnetworks:flux_block'
+                },
+                id: `powah:crafting/ender_cell_${tier}`
             }
         );
 
@@ -205,6 +215,15 @@ onEvent('recipes', (event) => {
                         B: Ingredient.of(lowerTiers.map((item) => `powah:energy_hopper_${item}`))
                     },
                     id: `${id_prefix}energy_hopper_${tier}_upgrade`
+                },
+                {
+                    output: Item.of(`powah:ender_cell_${tier}`),
+                    pattern: [' A ', 'ABA', ' A '],
+                    key: {
+                        A: capacitor,
+                        B: Ingredient.of(lowerTiers.map((item) => `powah:ender_cell_${item}`))
+                    },
+                    id: `${id_prefix}ender_cell_${tier}_upgrade`
                 }
             );
         }

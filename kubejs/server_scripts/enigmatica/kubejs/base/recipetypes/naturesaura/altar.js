@@ -123,6 +123,14 @@ onEvent('recipes', (event) => {
             aura: 5000,
             time: 60,
             id: `${id_prefix}blitz_powder`
+        },
+        {
+            input: 'minecraft:vine',
+            output: { item: 'quark:root' },
+            aura_type: 'naturesaura:nether',
+            aura: 30000,
+            time: 250,
+            id: `${id_prefix}root`
         }
     ];
     recipes.forEach((recipe) => {

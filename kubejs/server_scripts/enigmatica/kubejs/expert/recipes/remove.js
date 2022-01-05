@@ -47,6 +47,8 @@ onEvent('recipes', (event) => {
         'farmersdelight:book_from_canvas',
 
         'fluxnetworks:fluxcontroller',
+        'fluxnetworks:fluxplug',
+        'fluxnetworks:fluxpoint',
 
         'immersiveengineering:crafting/component_iron',
         'immersiveengineering:crafting/component_steel',
@@ -57,6 +59,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/cokebrick',
         'immersiveengineering:crafting/blastbrick',
         'immersiveengineering:crafting/alloybrick',
+        'immersiveengineering:generator_fuel/biodiesel',
+        'immersiveengineering:generator_fuel/creosote',
 
         'industrialforegoing:mob_slaughter_factory',
         /industrialforegoing:mycelial/,
@@ -139,6 +143,7 @@ onEvent('recipes', (event) => {
         'tconstruct:smeltery/melting/metal/netherite/lodestone',
         'tconstruct:compat/refined_obsidian_ingot',
         'tconstruct:smeltery/alloys/molten_refined_obsidian',
+        'tconstruct:compat/refined_glowstone_ingot',
 
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
 

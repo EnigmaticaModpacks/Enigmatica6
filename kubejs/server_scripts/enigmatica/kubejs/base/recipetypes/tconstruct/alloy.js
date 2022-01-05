@@ -7,7 +7,8 @@ onEvent('recipes', (event) => {
                 { name: 'resourcefulbees:lapis_honey', amount: 500 }
             ],
             result: { fluid: 'kubejs:molten_cobalt_bee', amount: 500 },
-            temperature: 1400
+            temperature: 1400,
+            id: `${id_prefix}molten_cobalt_bee`
         },
         {
             inputs: [
@@ -15,7 +16,8 @@ onEvent('recipes', (event) => {
                 { name: 'tconstruct:sky_slime', amount: 500 }
             ],
             result: { fluid: 'kubejs:liquid_skyslime_bee', amount: 500 },
-            temperature: 500
+            temperature: 500,
+            id: `${id_prefix}liquid_skyslime_bee`
         },
         {
             inputs: [
@@ -23,7 +25,8 @@ onEvent('recipes', (event) => {
                 { name: 'tconstruct:blood', amount: 500 }
             ],
             result: { fluid: 'kubejs:liquid_ichor_bee', amount: 500 },
-            temperature: 500
+            temperature: 500,
+            id: `${id_prefix}liquid_ichor_bee`
         },
         {
             inputs: [
@@ -31,7 +34,8 @@ onEvent('recipes', (event) => {
                 { name: 'tconstruct:ender_slime', amount: 500 }
             ],
             result: { fluid: 'kubejs:liquid_enderslime_bee', amount: 500 },
-            temperature: 500
+            temperature: 500,
+            id: `${id_prefix}liquid_enderslime_bee`
         },
         {
             inputs: [

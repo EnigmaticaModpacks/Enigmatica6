@@ -13,12 +13,12 @@ onForgeEvent('blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler$
         ['immersiveengineering:multiblocks/squeezer', 'medium_machinery_schematics'],
         ['immersiveengineering:multiblocks/lightning_rod', 'medium_machinery_schematics'],
         ['immersiveengineering:multiblocks/metal_press', 'medium_machinery_schematics'],
+        ['immersiveengineering:multiblocks/diesel_generator', 'medium_machinery_schematics'],
 
         ['immersiveengineering:multiblocks/auto_workbench', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/arcfurnace', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/assembler', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/crusher', 'heavy_machinery_schematics'],
-        ['immersiveengineering:multiblocks/diesel_generator', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/refinery', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/fermenter', 'heavy_machinery_schematics'],
         ['immersivepetroleum:multiblocks/cokerunit', 'heavy_machinery_schematics'],
