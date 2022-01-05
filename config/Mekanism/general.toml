@@ -62,10 +62,10 @@
 		energyBuffer = "256000000"
 		#Maximum fluid buffer (mb) of an Entangoloporter frequency - i.e. the maximum transfer per tick per frequency. Default is ultimate tier tank capacity.
 		#Range: > 1
-		fluidBuffer = 112000
+		fluidBuffer = 256000
 		#Maximum chemical buffer (mb) of an Entangoloporter frequency - i.e. the maximum transfer per tick per frequency. Default is ultimate tier tank capacity.
 		#Range: 1 ~ 9223372036854775807
-		chemicalBuffer = 512000
+		chemicalBuffer = 8192000
 
 	#Energy Conversion Rate Settings
 	[general.energy_conversion]
@@ -140,7 +140,7 @@
 	[general.radiation]
 		#Amount of gas (mB) that can be stored in a Radioactive Waste Barrel.
 		#Range: 1 ~ 9223372036854775807
-		radioactiveWasteBarrelMaxGas = 64000
+		radioactiveWasteBarrelMaxGas = 512000
 		#The radius of chunks checked when running radiation calculations. The algorithm is efficient, but don't abuse it by making this crazy high.
 		#Range: 1 ~ 100
 		chunkCheckRadius = 5
