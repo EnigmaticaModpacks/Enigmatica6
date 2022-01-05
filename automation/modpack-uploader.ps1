@@ -55,34 +55,6 @@ function Test-ForDependencies {
 
 function New-ClientFiles {
     if ($ENABLE_CURSE_CLIENT_MODULE) {
-        if ((-not (Test-Path "$InstanceRoot/TwitchExportBuilder.exe") -and 
-                -not (Test-Path "$InstanceRoot/TwitchExportBuilder")) -or 
-            $ENABLE_ALWAYS_UPDATE_JARS) {
-
-            Write-Host 
-            Write-Host "Downloading Twitch Export Builder..." -ForegroundColor Cyan
-            Write-Host 
-    
-            $TwitchExportBuilderDLDestination = "$InstanceRoot/TwitchExportBuilder"
-            if ($IsLinux) {
-                $TwitchExportBuilderDL = $TwitchExportBuilderDLLinux
-            }                
-            elseif ($IsMacOS) {
-                $TwitchExportBuilderDL = $TwitchExportBuilderDLMac
-            }
-            elseif ($IsWindows) {
-                $TwitchExportBuilderDL = $TwitchExportBuilderDLWindows
-                $TwitchExportBuilderDLDestination = "$InstanceRoot/TwitchExportBuilder.exe"
-            }
-    
-            Remove-Item "$InstanceRoot\TwitchExportBuilder.exe", "$InstanceRoot/TwitchExportBuilder" -Recurse -Force -ErrorAction SilentlyContinue
-            Get-GitHubRelease -repo "Gaz492/twitch-export-builder" -file $TwitchExportBuilderDL
-            Move-Item -Path "$TwitchExportBuilderDL" -Destination $TwitchExportBuilderDLDestination -ErrorAction SilentlyContinue
-            if (-not $IsWindows) {
-                chmod +x ./TwitchExportBuilder
-            }
-        }
-
         Write-Host 
         Write-Host "Creating Client Files..." -ForegroundColor Cyan
         Write-Host 
@@ -90,36 +62,85 @@ function New-ClientFiles {
         Remove-Item "$CLIENT_ZIP_NAME.zip" -Recurse -Force -ErrorAction SilentlyContinue
         $StartLocation = Get-Location
         Set-Location $InstanceRoot
-        if ($IsLinux -or $IsMacOS) {
-            .\TwitchExportBuilder  -n "$CLIENT_NAME" -p "$MODPACK_VERSION" -c ("$PSScriptRoot/.build.json" | Resolve-Path)
+        
+        New-ManifestJson
+
+        $overridesFolder = "overrides"
+        if (Test-Path -PathType Container $overridesFolder) {
+            Write-Host "The folder 'overrides' will be removed by manifest generation." -ForegroundColor Red
+            Write-Host "Press any key to proceed, CTRL + C To cancel."
+            pause
         }
-        elseif ($IsWindows) {
-            .\TwitchExportBuilder.exe -n "$CLIENT_NAME" -p "$MODPACK_VERSION" -c ("$PSScriptRoot\.build.json" | Resolve-Path)
+
+        Remove-Item $overridesFolder -Force -Recurse -ErrorAction SilentlyContinue
+        New-Item -ItemType Directory $overridesFolder
+        
+        $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES | ForEach-Object {
+            Copy-Item -Path $_ -Destination "$overridesFolder/$_" -Recurse
         }
-        #Now lets rename it to the name you selected in the settings.ps1
-        Rename-Item -Path "$CLIENT_NAME-$MODPACK_VERSION.zip" -NewName "$CLIENT_ZIP_NAME.zip" -ErrorAction SilentlyContinue
-        Set-Location $StartLocation
 
         Remove-BlacklistedFiles
+
+        7z a "$CLIENT_ZIP_NAME.zip" ("overrides", "manifest.json") -mx1 -r -sdel
+
+        Write-Host "Client files $CLIENT_ZIP_NAME.zip created!" -ForegroundColor Green
+
+        Set-Location $StartLocation
     }
 }
 
-function Remove-BlacklistedFiles {
-    if ($ENABLE_CURSE_CLIENT_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
-        if (Test-Path "$InstanceRoot/$CLIENT_ZIP_NAME.zip") {
-            foreach ($config in $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES) {
-                Write-Host "Removing config $config from client files"
-                7z d "$InstanceRoot/$CLIENT_ZIP_NAME.zip" "overrides/config/$config*" | Out-Null
-            }
+function New-ManifestJson {
+    $minecraftInstanceFile = "minecraftinstance.json"
+    $outfile = "manifest.json"
 
-            foreach ($folder in $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES) {
-                Write-Host "Removing folder $folder from client files"
-                7z d "$InstanceRoot/$CLIENT_ZIP_NAME.zip" "overrides/$folder*" -r | Out-Null
-            } 
+    if (!(Test-Path $minecraftInstanceFile)) {
+        Write-Host "Generating a manifest requires a $minecraftInstanceFile file." -ForegroundColor Red
+    }
 
-            # Remove all .bak files
-            7z d "$InstanceRoot/$CLIENT_ZIP_NAME.zip" "*.bak" -r | Out-Null
+    $minecraftInstanceJson = Get-Content $minecraftInstanceFile | ConvertFrom-Json
+
+    $mods = [System.Collections.ArrayList]@()
+    foreach ($addon in $minecraftInstanceJson.installedAddons) {
+        $mods.Add(@{
+                projectID = $addon.addonID
+                fileID    = $addon.installedFile.id
+                required  = $true
+            }) > $null
+    }
+
+    $jsonOutput = @{
+        minecraft       = @{
+            version    = $minecraftInstanceJson.baseModLoader.minecraftVersion
+            modLoaders = @(@{
+                    id      = $minecraftInstanceJson.baseModLoader.name
+                    primary = $true
+                })
         }
+        manifestType    = "minecraftModpack"
+        manifestVersion = 1
+        name            = $MODPACK_NAME
+        version         = $MODPACK_VERSION
+        author          = $CLIENT_FILE_AUTHOR
+        mods            = $mods
+    } 
+
+    remove-item $outfile -Force -Recurse -ErrorAction SilentlyContinue
+    $jsonOutput | ConvertTo-Json -Depth 3 | Out-File $outfile
+}
+
+function Remove-BlacklistedFiles {
+    if ($ENABLE_CURSE_CLIENT_MODULE -or $ENABLE_SERVER_FILE_MODULE) {    
+        $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
+            Remove-Item -Path "overrides/$_" -Recurse -ErrorAction SilentlyContinue
+        }
+    
+        $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
+            Remove-Item -Path "overrides/config/$_" -Recurse -ErrorAction SilentlyContinue
+        }
+    
+        Get-ChildItem *.bak | ForEach-Object { 
+            Remove-Item -Path $_.FullName 
+        }    
     }
 }
 
@@ -161,14 +182,13 @@ function Push-ClientFiles {
             Remove-BlacklistedFiles
         }
 
-        $CLIENT_METADATA = 
-        "{
-        'changelog': `'$CLIENT_CHANGELOG`',
-        'changelogType': `'$CLIENT_CHANGELOG_TYPE`',
-        'displayName': `'$CLIENT_FILE_DISPLAY_NAME`',
-        'gameVersions': [$GAME_VERSIONS],
-        'releaseType': `'$CLIENT_RELEASE_TYPE`'
-        }"
+        $CLIENT_METADATA = @{
+            changelog     = $CLIENT_CHANGELOG
+            changelogType = $CLIENT_CHANGELOG_TYPE
+            displayName   = $CLIENT_FILE_DISPLAY_NAME
+            gameVersions  = @($GAME_VERSIONS)
+            releaseType   = $CLIENT_RELEASE_TYPE
+        }
         
         Write-Host
         Write-Host "Uploading client files..." -ForegroundColor Green
@@ -209,6 +229,7 @@ function Update-FileLinkInServerFiles {
     if ($ClientFileId) {
         $clientFileIdString = $ClientFileId.toString()
         $idPart1 = $clientFileIdString.Substring(0, 4)
+        $idPart1 = Remove-LeadingZero -text $idPart1
         $idPart2 = $clientFileIdString.Substring(4, $clientFileIdString.length - 4)
         $idPart2 = Remove-LeadingZero -text $idPart2
         $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$CLIENT_ZIP_NAME.zip"
@@ -245,14 +266,14 @@ function Push-ServerFiles {
     )
     if ($ENABLE_SERVER_FILE_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
         $serverFilePath = "$InstanceRoot\$SERVER_ZIP_NAME.zip"
-        $SERVER_METADATA = 
-        "{
-        'changelog': `'$SERVER_CHANGELOG`',
-        'changelogType': `'$SERVER_CHANGELOG_TYPE`',
-        'displayName': `'$SERVER_FILE_DISPLAY_NAME`',
-        'parentFileId': $clientFileReturnId,
-        'releaseType': `'$SERVER_RELEASE_TYPE`'
-        }"
+
+        $SERVER_METADATA = @{
+            changelog     = $SERVER_CHANGELOG
+            changelogType = $SERVER_CHANGELOG_TYPE
+            displayName   = $SERVER_FILE_DISPLAY_NAME
+            parentFileId  = $clientFileReturnId
+            releaseType   = $SERVER_RELEASE_TYPE
+        }
 
         Write-Host 
         Write-Host "Uploading server files..." -ForegroundColor Cyan
@@ -288,12 +309,12 @@ function New-GitHubRelease {
         };
     
         $Body = @{
-            tag_name         = $MODPACK_VERSION;
-            target_commitish = 'master';
-            name             = $MODPACK_VERSION;
-            body             = '';
-            draft            = $false;
-            prerelease       = $false;
+            tag_name         = $MODPACK_VERSION
+            target_commitish = 'master'
+            name             = $MODPACK_VERSION
+            body             = ''
+            draft            = $false
+            prerelease       = $false
         } | ConvertTo-Json;
 
     
@@ -329,7 +350,7 @@ function Remove-LeadingZero {
     param(
         [string]$text
     )
-    return $text.TrimStart(0)
+    return [int]$text
 }
 
 Test-ForDependencies
