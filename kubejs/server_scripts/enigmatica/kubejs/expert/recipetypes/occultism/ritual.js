@@ -939,7 +939,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 '#forge:gems/mana_diamond',
                 'botania:bifrost_perm',
-                'mekanism:teleportation_core',
+                'powah:ender_core',
                 'botania:bifrost_perm',
                 'integratedterminals:menril_glass',
                 'integratedterminals:menril_glass',
