@@ -140,7 +140,7 @@ function New-ManifestJson {
         name            = $MODPACK_NAME
         version         = $MODPACK_VERSION
         author          = $CLIENT_FILE_AUTHOR
-        mods            = $mods
+        files           = $mods
     } 
 
     Remove-Item $outfile -Force -Recurse -ErrorAction SilentlyContinue
