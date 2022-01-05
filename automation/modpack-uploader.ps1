@@ -1,7 +1,21 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
+$manifest = "manifest.json"
+$overridesFolder = "overrides"
+$minecraftInstanceFile = "minecraftinstance.json"
+$secretsFile = "secrets.ps1"
+
+function Validate-SecretsFile {
+    if (!(Test-Path "$PSScriptRoot\$secretsFile")) {
+        Write-Host "You need a valid CurseForge API Token in a $secretsFile file" -ForegroundColor Red
+        Write-Host "Creating $secretsFile" -ForegroundColor Cyan
+        New-Item -Path $PSScriptRoot -ItemType File -Name $secretsFile -Value "# To generate an API token go to: https://authors.curseforge.com/account/api-tokens `n $CURSEFORGE_TOKEN = `"your-curseforge-token-here`""
+    }
+}
+
 . "$PSScriptRoot\settings.ps1"
-. "$PSScriptRoot\secrets.ps1"
+. "$PSScriptRoot\$secretsFile"
+
 
 function Get-GitHubRelease {
     param(
@@ -59,13 +73,14 @@ function New-ClientFiles {
         Write-Host "Creating Client Files..." -ForegroundColor Cyan
         Write-Host 
 
-        Remove-Item "$CLIENT_ZIP_NAME.zip" -Recurse -Force -ErrorAction SilentlyContinue
+        $clientZip = "$CLIENT_ZIP_NAME.zip"
+
+        Remove-Item $clientZip -Recurse -Force -ErrorAction SilentlyContinue
         $StartLocation = Get-Location
         Set-Location $InstanceRoot
         
         New-ManifestJson
 
-        $overridesFolder = "overrides"
         if (Test-Path -PathType Container $overridesFolder) {
             Write-Host "The folder 'overrides' will be removed by manifest generation." -ForegroundColor Red
             Write-Host "Press any key to proceed, CTRL + C To cancel."
@@ -76,25 +91,29 @@ function New-ClientFiles {
         New-Item -ItemType Directory $overridesFolder
         
         $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES | ForEach-Object {
+            Write-Host "Adding " -ForegroundColor Cyan -NoNewline
+            Write-Host $_ -ForegroundColor Blue -NoNewline
+            Write-Host " to client files." -ForegroundColor Cyan
             Copy-Item -Path $_ -Destination "$overridesFolder/$_" -Recurse
         }
 
         Remove-BlacklistedFiles
 
-        7z a "$CLIENT_ZIP_NAME.zip" ("overrides", "manifest.json") -mx1 -r -sdel
+        # Zipping up the newly created overrides folder and $manifest
+        7z a $clientZip ($overridesFolder, $manifest) -mx1 -r -sdel
 
-        Write-Host "Client files $CLIENT_ZIP_NAME.zip created!" -ForegroundColor Green
+        Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
+        Write-Host "Client files $clientZip created!" -ForegroundColor Green
 
         Set-Location $StartLocation
     }
 }
 
 function New-ManifestJson {
-    $minecraftInstanceFile = "minecraftinstance.json"
-    $outfile = "manifest.json"
+    $outfile = $manifest
 
     if (!(Test-Path $minecraftInstanceFile)) {
-        Write-Host "Generating a manifest requires a $minecraftInstanceFile file." -ForegroundColor Red
+        Write-Host "Generating a $manifest requires a $minecraftInstanceFile file." -ForegroundColor Red
     }
 
     $minecraftInstanceJson = Get-Content $minecraftInstanceFile | ConvertFrom-Json
@@ -124,22 +143,27 @@ function New-ManifestJson {
         mods            = $mods
     } 
 
-    remove-item $outfile -Force -Recurse -ErrorAction SilentlyContinue
+    Remove-Item $outfile -Force -Recurse -ErrorAction SilentlyContinue
     $jsonOutput | ConvertTo-Json -Depth 3 | Out-File $outfile
+    Write-Host "$manifest created!" -ForegroundColor Green
 }
 
 function Remove-BlacklistedFiles {
     if ($ENABLE_CURSE_CLIENT_MODULE -or $ENABLE_SERVER_FILE_MODULE) {    
         $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
+            Write-Host "Removing overrides/$_"
             Remove-Item -Path "overrides/$_" -Recurse -ErrorAction SilentlyContinue
         }
     
         $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
+            Write-Host "Removing overrides/config/$_"
             Remove-Item -Path "overrides/config/$_" -Recurse -ErrorAction SilentlyContinue
         }
     
-        Get-ChildItem *.bak | ForEach-Object { 
-            Remove-Item -Path $_.FullName 
+        Write-Host "Removing all .bak files from overrides" -ForegroundColor Cyan
+        Get-ChildItem "overrides/*.bak" | ForEach-Object { 
+            Write-Host "Removing $($_.FullName)"
+            Remove-Item -Path $_.FullName -Force -ErrorAction SilentlyContinue
         }    
     }
 }
@@ -155,11 +179,11 @@ function New-Changelog {
             Remove-Item $ChangelogGeneratorDL -Recurse -Force -ErrorAction SilentlyContinue
             Get-GitHubRelease -repo "TheRandomLabs/ChangelogGenerator" -file $ChangelogGeneratorDL
         }
-        
-        Remove-Item "changelog.md" -ErrorAction SilentlyContinue
+        $changelogFile = "changelog.md"
+        Remove-Item $changelogFile -ErrorAction SilentlyContinue
 
         Write-Host 
-        Write-Host "Generating changelog..." -ForegroundColor Green
+        Write-Host "Generating mod changelog..." -ForegroundColor Cyan
         Write-Host 
 
         java -jar $ChangelogGeneratorDL `
@@ -170,10 +194,11 @@ function New-Changelog {
             --old="$InstanceRoot\$LAST_MODPACK_ZIP_NAME.zip"
 
         Remove-Item $ChangelogPath -ErrorAction SilentlyContinue
-        Move-Item -Path "changelog.md" -Destination $ChangelogPath
+        Move-Item -Path $changelogFile -Destination $ChangelogPath
+
+        Write-Host "Mod changelog generated!" -ForegroundColor Green
     }
 }
-
 
 function Push-ClientFiles {
     if ($ENABLE_MODPACK_UPLOADER_MODULE) {
@@ -182,16 +207,24 @@ function Push-ClientFiles {
             Remove-BlacklistedFiles
         }
 
-        $CLIENT_METADATA = @{
-            changelog     = $CLIENT_CHANGELOG
-            changelogType = $CLIENT_CHANGELOG_TYPE
-            displayName   = $CLIENT_FILE_DISPLAY_NAME
-            gameVersions  = @($GAME_VERSIONS)
-            releaseType   = $CLIENT_RELEASE_TYPE
-        }
+        #$CLIENT_CHANGELOG = Get-Content -Path "$PSScriptRoot\..\changelogs\changelog.md"
+
+        $CLIENT_METADATA = 
+        "{
+            changelog: `'$CLIENT_CHANGELOG`',
+            changelogType: `'$CLIENT_CHANGELOG_TYPE`',
+            displayName: `'$CLIENT_FILE_DISPLAY_NAME`',
+            gameVersions: [$GAME_VERSIONS],
+            releaseType: `'$CLIENT_RELEASE_TYPE`'
+        }"
+
+        Write-Host
+        Write-Host "Client Metadata:" -ForegroundColor Cyan
+        Write-Host
+        Write-Host $CLIENT_METADATA -ForegroundColor Blue
         
         Write-Host
-        Write-Host "Uploading client files..." -ForegroundColor Green
+        Write-Host "Uploading client files to https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" -ForegroundColor Green
         Write-Host
 
         $response = curl.exe `
@@ -206,21 +239,19 @@ function Push-ClientFiles {
 
         if (-not $response.id) {
             Write-Host "Failed to upload client files: $response" -ForegroundColor Red
-            pause
             throw "Failed to upload client files: $response"
         }
         else {
             Write-Host 
             Write-Host "Uploaded modpack!" -ForegroundColor Green
             Write-Host 
+            Write-Host "Return Id: $clientFileReturnId" -ForegroundColor Cyan
+            Write-Host
 
             Update-FileLinkInServerFiles -ClientFileId $clientFileReturnId
         }
     }
 }
-
-
-
 
 function Update-FileLinkInServerFiles {
     param(
@@ -247,12 +278,14 @@ function New-ServerFiles {
         [int]$ClientFileId
     )
     if ($ENABLE_SERVER_FILE_MODULE) {
-        Remove-Item "$SERVER_ZIP_NAME.zip", "$InstanceRoot\$SERVER_ZIP_NAME.zip" -Force -ErrorAction SilentlyContinue
+        $serverZip = "$SERVER_ZIP_NAME.zip"
+        Remove-Item $serverZip, "$InstanceRoot\$serverZip" -Force -ErrorAction SilentlyContinue
         Write-Host 
         Write-Host "Creating server files..." -ForegroundColor Cyan
         Write-Host 
-        7z a -tzip "$SERVER_ZIP_NAME.zip" "$ServerFilesFolder\*"
-        Move-Item -Path "$InstanceRoot\automation\$SERVER_ZIP_NAME.zip" -Destination "$InstanceRoot\$SERVER_ZIP_NAME.zip" -ErrorAction SilentlyContinue
+        7z a -tzip $serverZip "$ServerFilesFolder\*"
+        Move-Item -Path "$InstanceRoot\automation\$serverZip" -Destination "$InstanceRoot\$serverZip" -ErrorAction SilentlyContinue
+        Write-Host "Server files created!" -ForegroundColor Green
 
         if ($ENABLE_MODPACK_UPLOADER_MODULE) {
             Push-ServerFiles -ClientFileId $ClientFileId
@@ -267,13 +300,14 @@ function Push-ServerFiles {
     if ($ENABLE_SERVER_FILE_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
         $serverFilePath = "$InstanceRoot\$SERVER_ZIP_NAME.zip"
 
-        $SERVER_METADATA = @{
-            changelog     = $SERVER_CHANGELOG
-            changelogType = $SERVER_CHANGELOG_TYPE
-            displayName   = $SERVER_FILE_DISPLAY_NAME
-            parentFileId  = $clientFileReturnId
-            releaseType   = $SERVER_RELEASE_TYPE
-        }
+        $SERVER_METADATA = 
+        "{
+        'changelog': `'$SERVER_CHANGELOG`',
+        'changelogType': `'$SERVER_CHANGELOG_TYPE`',
+        'displayName': `'$SERVER_FILE_DISPLAY_NAME`',
+        'parentFileId': $clientFileReturnId,
+        'releaseType': `'$SERVER_RELEASE_TYPE`'
+        }"
 
         Write-Host 
         Write-Host "Uploading server files..." -ForegroundColor Cyan
@@ -315,7 +349,7 @@ function New-GitHubRelease {
             body             = ''
             draft            = $false
             prerelease       = $false
-        } | ConvertTo-Json;
+        } | ConvertTo-Json
 
     
         Write-Host 
@@ -354,6 +388,7 @@ function Remove-LeadingZero {
 }
 
 Test-ForDependencies
+Validate-SecretsFile
 New-ClientFiles
 Push-ClientFiles
 if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
