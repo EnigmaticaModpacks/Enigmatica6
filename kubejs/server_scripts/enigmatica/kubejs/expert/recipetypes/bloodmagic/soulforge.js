@@ -92,7 +92,11 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}arcane_gold_ingot`
             },
             {
-                inputs: ['bloodmagic:rawdemoncrystal', 'bloodmagic:soulpickaxe', '#forge:storage_blocks/iesnium'],
+                inputs: [
+                    'bloodmagic:rawdemoncrystal',
+                    Item.of('bloodmagic:soulpickaxe', '{Damage:0]}').weakNBT(),
+                    '#forge:storage_blocks/iesnium'
+                ],
                 output: Item.of('occultism:iesnium_pickaxe'),
                 minimumDrain: 4000.0,
                 drain: 2048.0,
