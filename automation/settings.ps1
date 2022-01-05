@@ -168,6 +168,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"Mekanism/machine-usage.toml",
 	"Mekanism/machine-storage.toml",
 	"Mekanism/gear.toml"
+	"Mekanism/client.toml",
+	"Mekanism/tools-client.toml",
+	"randompatches.toml"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
