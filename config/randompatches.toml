@@ -1,0 +1,331 @@
+# RandomPatches configuration.
+# All configuration options not under [client] are server-sided unless otherwise stated.
+
+# Client-sided options.
+[client]
+	# Optimizes bamboo rendering.
+	# This works by overriding the method that returns the ambient occlusion light value for the bamboo block, which runs some expensive logic, but always returns 1.0F.
+	# Changes to this option are applied after a game restart.
+	# Default: true
+	optimize_bamboo_rendering = true
+	# Removes the glowing effect from potions.
+	# This makes the potion colors more visible.
+	# Default: true
+	remove_glowing_effect_from_potions = true
+	# Removes the glowing effect from enchanted books.
+	# Default: false
+	remove_glowing_effect_from_enchanted_books = false
+	# Disables the warning that displays when loading a world that uses experimental settings.
+	# Default: true
+	disable_experimental_settings_warning = true
+	# The framerate limit slider step size.
+	# The vanilla default is 10.0.
+	# Min: 1.4E-45
+	# Max: 260.0
+	# Default: 1.0
+	framerate_limit_slider_step_size = 1.0
+	# Causes Minecraft to show the main menu screen after disconnecting rather than the Realms or multiplayer screen.
+	# Default: false
+	return_to_main_menu_after_disconnect = false
+	# Gives capes to RandomPatches contributors.
+	# Default: true
+	contributor_capes = true
+
+	# Client-sided bug fixes.
+	[client.bug_fixes]
+		# Fixes water in cauldrons rendering as opaque.
+		# This bug is reported as MC-13187: https://bugs.mojang.com/browse/MC-13187
+		# Changes to this option are applied after resources are reloaded or a world restart.
+		# Default: true
+		fix_water_in_cauldrons_rendering_as_opaque = true
+		# Fixes end portals only rendering from above.
+		# This bug is reported as MC-3366: https://bugs.mojang.com/browse/MC-3366
+		# Default: true
+		fix_end_portals_only_rendering_from_above = true
+		# Fixes only 18 out of 20 rows of pixels showing of villager robe textures.
+		# This issue also affects witches.
+		# This bug is reported as MC-53312: https://bugs.mojang.com/browse/MC-53312
+		# Changes to this option are applied after a game restart.
+		# Default: true
+		fix_villager_robe_textures = true
+		# Fixes the player model sometimes disappearing in certain instances.
+		# This is most noticeable when flying with elytra in a straight line in third-person mode.
+		# A video of this issue can be found here: https://youtu.be/YdbxknpfJHQ
+		# Changes to this option are applied after a game restart.
+		# Default: true
+		fix_invisible_player_model = true
+
+	# Options related to key bindings.
+	[client.key_bindings]
+		# The secondary sprint key binding.
+		# This allows double-tap sprinting to be disabled, fixing MC-203401: https://bugs.mojang.com/browse/MC-203401
+		# Default: true
+		secondary_sprint = true
+		# The dismount key binding.
+		# This allows the dismount key to be different from the sneak key.
+		# Default: true
+		dismount = true
+		# The narrator toggle key binding.
+		# This fixes MC-122645: https://bugs.mojang.com/browse/MC-122645
+		# Default: true
+		toggle_narrator = true
+		# The pause key binding.
+		# This is only for pausing and unpausing the game; the Escape key is still used to close GUI screens.
+		# This partially fixes MC-147718: https://bugs.mojang.com/browse/MC-147718
+		# Default: true
+		pause = true
+		# The GUI toggle key binding.
+		# This partially fixes MC-147718: https://bugs.mojang.com/browse/MC-147718
+		# Default: true
+		toggle_gui = true
+		# The debug info toggle key binding.
+		# The F3 key is still used for F3 actions.
+		# This partially fixes MC-147718: https://bugs.mojang.com/browse/MC-147718
+		# Default: true
+		toggle_debug_info = true
+		# Allows double-tap sprinting while flying.
+		# This fixes MC-68453: https://bugs.mojang.com/browse/MC-68453
+		# Default: true
+		double_tap_sprinting_while_flying = true
+		# Makes standalone modifier keys not conflict with key combinations with that modifier key, which seems to be intended Forge behavior.
+		# Default: true
+		standalone_modifiers_do_not_conflict_with_combinations = true
+
+	# Options related to the Minecraft window.
+	[client.window]
+		# Enables custom Minecraft window titles.
+		# Default: true
+		custom_title = true
+		# The simple Minecraft window title.
+		# The current activity, the number of mods loaded and mod versions are not available.
+		# Variables:
+		#  - ${mcversion}: The Minecraft version
+		#  - ${username}: The username.
+		# '$' can be escaped by using an extra '$'.
+		# Default: "Minecraft ${mcversion}"
+		simple_title = "Enigmatica 6 - Minecraft ${mcversion}"
+		# The Minecraft window title.
+		# The current activity is not available.
+		# Variables:
+		#  - ${mcversion}: The Minecraft version
+		#  - ${username}: The username.
+		#  - ${modsloaded}: The number of mods loaded.
+		#  - ${modversion:modid}: The version of the mod with the specified ID.
+		# '$' can be escaped by using an extra '$'.
+		# Default: "Minecraft ${mcversion}"
+		title = "Enigmatica 6 - Minecraft ${mcversion}"
+		# The Minecraft window title that also takes into account the current activity.
+		# Variables:
+		#  - ${mcversion}: The Minecraft version
+		#  - ${activity}: The current activity.
+		#  - ${username}: The username.
+		#  - ${modsloaded}: The number of mods loaded.
+		#  - ${modversion:modid}: The version of the mod with the specified ID.
+		# '$' can be escaped by using an extra '$'.
+		# Default: "Minecraft ${mcversion} - ${activity}"
+		title_with_activity = "Enigmatica 6 - Minecraft ${mcversion} - ${activity}"
+		# Enables custom Minecraft window icons.
+		# Default: true
+		custom_icon = true
+		# The path to the 16x16 Minecraft window icon relative to the Minecraft instance directory.
+		# Forward slashes should be used even on Windows to preserve compatibility with other platforms.
+		# Backward slashes will automatically be replaced.
+		# Default: ""
+		icon_16x16 = "packmenu/resources/assets/enigmatica/textures/icon.png"
+		# The path to the 16x16 Minecraft window icon relative to the Minecraft instance directory.
+		# Forward slashes should be used even on Windows to preserve compatibility with other platforms.
+		# Backward slashes will automatically be replaced.
+		# Default: ""
+		icon_32x32 = "packmenu/resources/assets/enigmatica/textures/icon.png"
+		# The path to the 256x256 Minecraft window icon relative to the Minecraft instance directory.
+		# This is only used on Mac OS X.
+		# Default: ""
+		icon_256x256 = "packmenu/resources/assets/enigmatica/textures/icon.png"
+
+# Options related to connection timeouts.
+[connection_timeouts]
+	# The connection read timeout in seconds.
+	# This value is used on both the client and the server.
+	# Min: 1
+	# Max: 2147483647
+	# Default: 120
+	read_timeout_seconds = 360
+	# The login timeout in ticks.
+	# Min: 1
+	# Max: 2147483647
+	# Default: 2400
+	login_timeout_ticks = 3600
+	# The interval in seconds at which KeepAlive packets are sent to clients.
+	# Min: 1
+	# Max: 2147483647
+	# Default: 15
+	keep_alive_packet_interval_seconds = 15
+	# The KeepAlive timeout in seconds.
+	# This is how long the server waits for a player to return a KeepAlive packet before disconnecting them.
+	# This is automatically rounded up to a multiple of the KeepAlive packet interval.
+	# Min: 1
+	# Max: 2147483647
+	# Default: 120
+	keep_alive_timeout_seconds = 120
+
+# Options related to packet size limits.
+[packet_size_limits]
+	# The maximum compressed packet size.
+	# The vanilla limit is 2097152.
+	# This option is both client and server-sided.
+	# Setting this to a higher value than the vanilla limit can fix MC-185901, which may cause players to be disconnected: https://bugs.mojang.com/browse/MC-185901
+	# Min: 256
+	# Max: 2147483647
+	# Default: 16777216
+	max_compressed_packet_size = 16777216
+	# The maximum NBT compound tag packet size.
+	# The vanilla limit is 2097152.
+	# This option is both client and server-sided.
+	# Setting this to a higher value than the vanilla limit may prevent players from being disconnected.
+	# Min: 256
+	# Max: 2147483647
+	# Default: 16777216
+	max_nbt_compound_tag_packet_size = 16777216
+	# The maximum client custom payload packet size.
+	# The vanilla limit is 32767.
+	# Setting this to a higher value than the vanilla limit may prevent the client from being disconnected.
+	# Min: 256
+	# Max: 2147483647
+	# Default: 16777216
+	max_client_custom_payload_packet_size = 16777216
+
+# Options related to player speed limits.
+# These options are used to fix MC-90062: https://bugs.mojang.com/browse/MC-90062
+[player_speed_limits]
+	# The maximum player speed when not riding a vehicle or flying with elytra.
+	# The vanilla default is 100.0.
+	# Min: 0.0
+	# Max: 3.4028235E38
+	# Default: 1000000.0
+	default_max_speed = 1000000.0
+	# The maximum player elytra speed.
+	# The vanilla default is 300.0.
+	# Min: 0.0
+	# Max: 3.4028235E38
+	# Default: 1000000.0
+	max_elytra_speed = 1000000.0
+	# The maximum player vehicle speed.
+	# The vanilla default is 100.0.
+	# Min: 0.0
+	# Max: 1.7976931348623157E308
+	# Default: 1000000.0
+	max_vehicle_speed = 1000000.0
+
+# Miscellaneous options.
+[misc]
+	# The buoyancy of boats when they are under flowing water.
+	# The vanilla default is -0.0007.
+	# Setting this to a positive value allows boats to float up when they move into a higher block of water, fixing MC-91206: https://bugs.mojang.com/browse/MC-91206
+	# Default: 0.023
+	boat_buoyancy_under_flowing_water = 0.023
+	# How long it takes in ticks for a boat passenger to be ejected when underwater.
+	# Set this to -1 to disable underwater boat passenger ejection.
+	# Min: -1
+	# Max: 2147483647
+	# Default: 60
+	underwater_boat_passenger_ejection_delay_ticks = 60
+	# The name of the command that reloads this configuration from disk.
+	# Set this to an empty string to disable the command.
+	# Changes to this option are applied when a server is loaded.
+	# Default: "rpconfigreload"
+	config_reload_command = "rpconfigreload"
+	# Disables the execution of DataFixerUpper.
+	# This reduces RAM usage and decreases the Minecraft loading time.
+	# WARNING: THIS IS NOT RECOMMENDED! RandomPatches is not responsible for any damage caused by this feature.
+	# - DataFixerUpper is responsible for the backwards compatibility of worlds.
+	# - Ensure you have used the Optimize feature on any worlds from previous versions of Minecraft before enabling this feature.
+	# - Before migrating worlds to new versions of Minecraft, ensure this feature is disabled, and use the Optimize feature again before re-enabling it.
+	# - Take regular backups of your worlds.
+	# Changes to this option are applied after a game restart.
+	# Default: false
+	disable_data_fixer_upper = false
+	# A list of mixins that should not be applied.
+	# These are the mixins that are not automatically disabled when the features that depend on them are:
+	# - AbstractOption: Required for modifying the framerate limit slider step size.
+	# - AnimalEntity: Required for fixing animal breeding hearts.
+	# - BoatEntity: Required for modifying boat options.
+	# - CCustomPayloadPacket: Required for setting the maximum client custom payload packet size.
+	# - ClientPlayerEntity: Required for the secondary sprint and dismount key bindings.
+	# - ClientPlayNetHandler: Required for making the dismount overlay message show the correct key when the dismount key binding is enabled.
+	# - CompoundNBT: Required for fixing player head stacking.
+	# - EnchantedBookItem: Required for removing the glowing effect from enchanted books.
+	# - EndPortalTileEntityRenderer: Required for fixing end portal rendering.
+	# - Entity:
+	#   - Required for fixing MC-2025.
+	#   - Required for fixing entities not being considered wet in cauldrons filled with water.
+	# - IngameMenuScreen: Required for making Minecraft show the main menu screen after disconnecting rather than the Realms or multiplayer screen.
+	# - KeyBinding:
+	#   - Required for making the forward movement key not conflict with the secondary sprint key.
+	#   - Required for making the sneak key not conflict with the dismount key.
+	#   - Required for making standalone modifier keys not conflict with key combinations with that modifier key.
+	# - KeyboardListener: Required for the narrator toggle, pause, GUI toggle and debug key bindings.
+	# - Minecraft:
+	#   - Required for changing Minecraft window options.
+	#   - Required for disabling the warning that displays when loading a world that uses experimental settings.
+	# - MouseHelper: Required for using mouse buttons for the narrator toggle, pause, GUI toggle and debug key bindings.
+	# - NettyCompressionDecoder: Required for setting the maximum compressed packet size.
+	# - PacketBuffer: Required for setting the maximum NBT compound tag packet size.
+	# - PotionItem: Required for removing the glowing effect from potions.
+	# - ReadTimeoutHandler: Required for changing the read timeout.
+	# - ServerLoginNetHandler: Required for changing the login timeout.
+	# - ServerPlayNetHandlerKeepAlive: Required for changing KeepAlive packet settings.
+	# - ServerPlayNetHandlerPlayerSpeedLimits: Required for changing player speed limits.
+	# - ServerRecipePlacer: Required for fixing the recipe book not moving ingredients with tags.
+	# - ToggleableKeyBinding: Required for the secondary sprint key binding.
+	# - WalkNodeProcessor: Required for fixing mobs not being able to cross rails.
+	# This option is both client and server-sided.
+	# Changes to this option are applied after a game restart.
+	# Default: []
+	mixin_blacklist = ["ServerPlayNetHandlerKeepAlive"]
+
+	# Miscellaneous bug fixes.
+	[misc.bug_fixes]
+		# Fixes MC-2025: https://bugs.mojang.com/browse/MC-2025
+		# For more information, see: https://redd.it/8pgd4q
+		# Default: true
+		fix_mc-2025 = true
+		# Fixes animals which can breed only showing hearts once initially instead of continuously.
+		# This bug is reported as MC-93826: https://bugs.mojang.com/browse/MC-93826
+		# Default: true
+		fix_animal_breeding_hearts = true
+		# Fixes entities not being considered wet in cauldrons filled with water.
+		# This allows players to use Riptide in cauldrons filled with water, fixing MC-145311: https://bugs.mojang.com/browse/MC-145311
+		# The MC-145311 fix works client-side only, so please be mindful of server rules when using this feature.
+		# This also allows players to receive the Conduit Power effect in cauldrons filled with water.
+		# Default: true
+		fix_entities_not_being_considered_wet_in_cauldrons = true
+		# Fixes mobs not being able to cross rails.
+		# This bug is reported as MC-33359: https://bugs.mojang.com/browse/MC-33359
+		# Default: true
+		fix_mobs_not_crossing_rails = true
+		# Fixes boats and players in boats not taking fall damage.
+		# This bug is reported as both MC-98160: https://bugs.mojang.com/browse/MC-98160
+		# and MC-105103: https://bugs.mojang.com/browse/MC-105103
+		# Default: true
+		fix_boat_fall_damage = true
+		# Fixes player heads from the same player sometimes not stacking.
+		# DISABLED: Disables this fix.
+		# REQUIRE_SAME_PLAYER_AND_TEXTURE_URL: Player heads can stack if they are from the same player and have the same texture URL.
+		# REQUIRE_SAME_PLAYER: Player heads can stack if they are from the same player.
+		# This bug is reported as MC-100044: https://bugs.mojang.com/browse/MC-100044
+		# Default: "REQUIRE_SAME_PLAYER_AND_TEXTURE_URL"
+		fix_player_head_stacking = "REQUIRE_SAME_PLAYER_AND_TEXTURE_URL"
+		# Fixes duplicate entity UUIDs by assigning new UUIDs to the affected entities.
+		# This bug is reported as MC-95649: https://bugs.mojang.com/browse/MC-95649
+		# Default: true
+		fix_duplicate_entity_uuids = false
+		# Logs fixed entity UUIDs.
+		# Default: true
+		log_fixed_duplicate_entity_uuids = false
+		# Fixes the recipe book not automatically moving ingredients with NBT tags to the crafting grid.
+		# This bug is reported as MC-129057: https://bugs.mojang.com/browse/MC-129057
+		# Default: true
+		fix_recipe_book_not_moving_ingredients_with_tags = true
+		# Fixes MC-149777, which can cause crashes when loading worlds on Java 11 or newer: https://bugs.mojang.com/browse/MC-149777
+		# Default: true
+		fix_mc-149777 = true
