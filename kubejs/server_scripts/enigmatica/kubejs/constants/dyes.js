@@ -1346,6 +1346,13 @@ const dyeSources = [
         primary: 'minecraft:black_dye',
         secondary: 'minecraft:black_dye',
         tertiary: 'minecraft:black_dye'
+    },
+	{
+        input: 'quark:cactus_paste',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:green_dye'
     }
 ];
 
