@@ -73,22 +73,6 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'occultism:otherstone',
-                '#forge:dusts/mana',
-                'occultism:otherstone',
-                'eidolon:pewter_inlay',
-                'eidolon:pewter_inlay',
-                'occultism:otherstone',
-                'occultism:otherstone',
-                'occultism:otherstone'
-            ],
-            reagent: 'minecraft:bowl',
-            sourceCost: 1000,
-            output: 'occultism:sacrificial_bowl',
-            id: 'occultism:crafting/sacrificial_bowl'
-        },
-        {
-            inputs: [
                 'eidolon:gold_inlay',
                 '#forge:dusts/mana',
                 'eidolon:gold_inlay',

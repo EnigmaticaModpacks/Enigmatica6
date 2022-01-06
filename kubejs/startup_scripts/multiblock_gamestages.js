@@ -26,13 +26,14 @@ onForgeEvent('blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler$
         ['immersivepetroleum:multiblocks/hydrotreater', 'heavy_machinery_schematics']
     ]);
 
-    const name = '' + event.multiblock.getUniqueName();
+    const name = `${event.multiblock.getUniqueName()}`;
     if (requiredGameStage.has(name)) {
         if (!event.player.stages.has(requiredGameStage.get(name))) {
             event.setCanceled(true);
             if (!event.player.field_70170_p.field_72995_K) {
-                let gamestage_item = titleCase(requiredGameStage.get(name).toString().replace(/_/g, ' ')),
-                    error_message = `Obtain a ${gamestage_item} to be able to form this multiblock.`;
+                let error_message = `Invalid structure or missing gamestage. Obtain a ${titleCase(
+                    requiredGameStage.get(name).toString().replace(/_/g, ' ')
+                )} to be able to form this multiblock.`;
                 event.player.field_70170_p.asKJS().getPlayer(event.player).tell(error_message);
             }
         }
