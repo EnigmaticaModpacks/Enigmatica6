@@ -100,7 +100,7 @@ function New-ClientFiles {
         Remove-BlacklistedFiles
 
         # Zipping up the newly created overrides folder and $manifest
-        7z a $clientZip ($overridesFolder, $manifest) -mx1 -r -sdel
+        7z a $clientZip ($overridesFolder, $manifest) -r -sdel
 
         Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
         Write-Host "Client files $clientZip created!" -ForegroundColor Green
@@ -141,6 +141,7 @@ function New-ManifestJson {
         version         = $MODPACK_VERSION
         author          = $CLIENT_FILE_AUTHOR
         files           = $mods
+        overrides       = "overrides"
     } 
 
     Remove-Item $outfile -Force -Recurse -ErrorAction SilentlyContinue
@@ -397,5 +398,3 @@ if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
 New-GitHubRelease
 New-Changelog
 Update-Modlist
-
-
