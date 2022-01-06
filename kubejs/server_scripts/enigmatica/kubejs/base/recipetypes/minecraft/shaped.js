@@ -27,6 +27,14 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:honeycomb'
             },
             id: 'minecraft:honeycomb_block'
+        },
+        {
+            output: Item.of('4x minecraft:stone_bricks'),
+            pattern: ['AA', 'AA'],
+            key: {
+                A: 'minecraft:stone'
+            },
+            id: 'minecraft:stone_bricks'
         }
     ];
 
