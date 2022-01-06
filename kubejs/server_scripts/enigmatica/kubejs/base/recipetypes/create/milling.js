@@ -131,6 +131,24 @@ onEvent('recipes', (event) => {
             ],
             processingTime: 150,
             id: `${id_prefix}wheat_flour_from_oat`
+        },
+        {
+            input: '#forge:coal_petcoke',
+            outputs: ['immersivepetroleum:petcoke_dust'],
+            processingTime: 150,
+            id: `${id_prefix}petcoke_dust`
+        },
+        {
+            input: '#forge:storage_blocks/coal_petcoke',
+            outputs: [Item.of('9x immersivepetroleum:petcoke_dust')],
+            processingTime: 1200,
+            id: `${id_prefix}petcoke_dust_from_block`
+        },
+        {
+            input: '#forge:storage_blocks/coal_coke',
+            outputs: [Item.of('9x emendatusenigmatica:coke_dust')],
+            processingTime: 1200,
+            id: `${id_prefix}coke_dust_from_block`
         }
     ];
     recipes.forEach((recipe) => {

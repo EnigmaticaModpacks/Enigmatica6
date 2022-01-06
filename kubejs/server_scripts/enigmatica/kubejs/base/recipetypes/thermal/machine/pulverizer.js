@@ -126,6 +126,24 @@ onEvent('recipes', (event) => {
             experience: 0.2,
             outputs: [Item.of('minecraft:blaze_powder', 3), Item.of('emendatusenigmatica:sulfur_dust').chance(0.25)],
             id: 'thermal:machine/pulverizer/pulverizer_blaze_rod'
+        },
+        {
+            input: '#forge:coal_petcoke',
+            experience: 0.2,
+            outputs: ['immersivepetroleum:petcoke_dust'],
+            id: `${id_prefix}petcoke_dust`
+        },
+        {
+            input: '#forge:storage_blocks/coal_petcoke',
+            experience: 1.8,
+            outputs: [Item.of('9x immersivepetroleum:petcoke_dust')],
+            id: `${id_prefix}petcoke_dust_from_block`
+        },
+        {
+            input: '#forge:storage_blocks/coal_coke',
+            experience: 1.8,
+            outputs: [Item.of('9x emendatusenigmatica:coke_dust')],
+            id: `${id_prefix}coke_dust_from_block`
         }
     ];
     recipes.forEach((recipe) => {

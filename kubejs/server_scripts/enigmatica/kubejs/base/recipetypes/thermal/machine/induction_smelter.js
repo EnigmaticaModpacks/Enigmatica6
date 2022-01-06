@@ -57,6 +57,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}steel_ingot`
         },
         {
+            inputs: ['#forge:ingots/iron', '#forge:dusts/coal_petcoke'],
+            outputs: ['emendatusenigmatica:steel_ingot'],
+            id: `${id_prefix}steel_ingot`
+        },
+        {
             inputs: ['#forge:ingots/iron', '#forge:ingots/lead'],
             outputs: [Item.of('eidolon:pewter_ingot', 2)],
             id: `${id_prefix}pewter_ingot`
@@ -130,7 +135,7 @@ onEvent('recipes', (event) => {
                 Ingredient.of('resourcefulbees:nickel_honeycomb_block', 1),
                 Ingredient.of('resourcefulbees:iron_honeycomb_block', 2)
             ],
-            outputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:invar_bee"})],
+            outputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:invar_bee' })],
             id: `${id_prefix}invar_bee_jar`
         },
         {
@@ -139,7 +144,7 @@ onEvent('recipes', (event) => {
                 Ingredient.of('#forge:storage_blocks/coal_coke', 1),
                 Ingredient.of('resourcefulbees:iron_honeycomb_block', 1)
             ],
-            outputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:steel_bee"})],
+            outputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:steel_bee' })],
             id: `${id_prefix}steel_bee_jar`
         },
         {
@@ -148,7 +153,7 @@ onEvent('recipes', (event) => {
                 Ingredient.of('resourcefulbees:zinc_honeycomb_block', 1),
                 Ingredient.of('resourcefulbees:copper_honeycomb_block', 3)
             ],
-            outputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:brass_bee"})],
+            outputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:brass_bee' })],
             id: `${id_prefix}brass_bee_jar`
         },
         {
@@ -157,7 +162,7 @@ onEvent('recipes', (event) => {
                 Ingredient.of('resourcefulbees:tin_honeycomb_block', 1),
                 Ingredient.of('resourcefulbees:copper_honeycomb_block', 3)
             ],
-            outputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:bronze_bee"})],
+            outputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:bronze_bee' })],
             id: `${id_prefix}bronze_bee_jar`
         },
         {
@@ -166,7 +171,7 @@ onEvent('recipes', (event) => {
                 Ingredient.of('resourcefulbees:nickel_honeycomb_block', 1),
                 Ingredient.of('resourcefulbees:copper_honeycomb_block', 1)
             ],
-            outputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:constantan_bee"})],
+            outputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:constantan_bee' })],
             id: `${id_prefix}constantan_bee_jar`
         },
         {
@@ -175,7 +180,7 @@ onEvent('recipes', (event) => {
                 Ingredient.of('resourcefulbees:tin_honeycomb_block', 3),
                 Ingredient.of('resourcefulbees:glowstone_honeycomb_block', 2)
             ],
-            outputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:lumium_bee"})],
+            outputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:lumium_bee' })],
             id: `${id_prefix}lumium_bee_jar`
         },
         {
@@ -184,7 +189,7 @@ onEvent('recipes', (event) => {
                 Ingredient.of('resourcefulbees:copper_honeycomb_block', 3),
                 Ingredient.of('resourcefulbees:redstone_honeycomb_block', 4)
             ],
-            outputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:signalum_bee"})],
+            outputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:signalum_bee' })],
             id: `${id_prefix}signalum_bee_jar`
         },
         {
@@ -193,7 +198,7 @@ onEvent('recipes', (event) => {
                 Ingredient.of('resourcefulbees:lead_honeycomb_block', 3),
                 Ingredient.of('resourcefulbees:ender_honeycomb_block', 2)
             ],
-            outputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:enderium_bee"})],
+            outputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:enderium_bee' })],
             id: `${id_prefix}enderium_bee_jar`
         },
         {
@@ -202,7 +207,7 @@ onEvent('recipes', (event) => {
                 Ingredient.of('resourcefulbees:silver_honeycomb_block', 1),
                 Ingredient.of('resourcefulbees:gold_honeycomb_block', 1)
             ],
-            outputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:electrum_bee"})],
+            outputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:electrum_bee' })],
             id: `${id_prefix}electrum_bee_jar`
         }
     ];
