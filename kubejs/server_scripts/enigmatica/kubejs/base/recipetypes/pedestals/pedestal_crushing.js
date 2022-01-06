@@ -48,6 +48,24 @@ onEvent('recipes', (event) => {
             output: 'byg:quartzite_sand',
             count: 2,
             id: `${id_prefix}quartzite_sand`
+        },
+        {
+            input: '#forge:coal_petcoke',
+            output: 'immersivepetroleum:petcoke_dust',
+            count: 1,
+            id: `${id_prefix}petcoke_dust`
+        },
+        {
+            input: '#forge:storage_blocks/coal_petcoke',
+            output: 'immersivepetroleum:petcoke_dust',
+            count: 9,
+            id: `${id_prefix}petcoke_dust_from_block`
+        },
+        {
+            input: '#forge:storage_blocks/coal_coke',
+            output: 'emendatusenigmatica:coke_dust',
+            count: 9,
+            id: `${id_prefix}coke_dust_from_block`
         }
     ];
     recipes.forEach((recipe) => {
