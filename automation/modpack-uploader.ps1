@@ -1,8 +1,8 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $manifest = "manifest.json"
-$overridesFolder = "overrides"
 $minecraftInstanceFile = "minecraftinstance.json"
+$overridesFolder = "overrides"
 $secretsFile = "secrets.ps1"
 
 function Validate-SecretsFile {
@@ -76,8 +76,7 @@ function New-ClientFiles {
         $clientZip = "$CLIENT_ZIP_NAME.zip"
 
         Remove-Item $clientZip -Recurse -Force -ErrorAction SilentlyContinue
-        $StartLocation = Get-Location
-        Set-Location $InstanceRoot
+        
         
         New-ManifestJson
 
@@ -105,13 +104,10 @@ function New-ClientFiles {
         Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
         Write-Host "Client files $clientZip created!" -ForegroundColor Green
 
-        Set-Location $StartLocation
     }
 }
 
 function New-ManifestJson {
-    $outfile = $manifest
-
     if (!(Test-Path $minecraftInstanceFile)) {
         Write-Host "Generating a $manifest requires a $minecraftInstanceFile file." -ForegroundColor Red
     }
@@ -144,8 +140,12 @@ function New-ManifestJson {
         overrides       = "overrides"
     } 
 
-    Remove-Item $outfile -Force -Recurse -ErrorAction SilentlyContinue
+    Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
     $jsonString = $jsonOutput | ConvertTo-Json -Depth 3
+    pause 
+    $manifest
+    $outfile = "$InstanceRoot/$manifest"
+    pause
     [System.IO.File]::WriteAllLines($outfile, $jsonString)
     Write-Host "$manifest created!" -ForegroundColor Green
 }
@@ -192,8 +192,8 @@ function New-Changelog {
             --markdown `
             --lines=50 `
             --entries=1 `
-            --new="$InstanceRoot\$CLIENT_ZIP_NAME.zip" `
-            --old="$InstanceRoot\$LAST_MODPACK_ZIP_NAME.zip"
+            --new="$CLIENT_ZIP_NAME.zip" `
+            --old="$LAST_MODPACK_ZIP_NAME.zip"
 
         Remove-Item $ChangelogPath -ErrorAction SilentlyContinue
         Move-Item -Path $changelogFile -Destination $ChangelogPath
@@ -235,7 +235,7 @@ function Push-ClientFiles {
             -H "Accept: application/json" `
             -H X-Api-Token:$CURSEFORGE_TOKEN `
             -F metadata=$CLIENT_METADATA `
-            -F file=@"$InstanceRoot\$CLIENT_ZIP_NAME.zip" `
+            -F file=@"$CLIENT_ZIP_NAME.zip" `
             --progress-bar | ConvertFrom-Json
         $clientFileReturnId = $response.id
 
@@ -281,12 +281,12 @@ function New-ServerFiles {
     )
     if ($ENABLE_SERVER_FILE_MODULE) {
         $serverZip = "$SERVER_ZIP_NAME.zip"
-        Remove-Item $serverZip, "$InstanceRoot\$serverZip" -Force -ErrorAction SilentlyContinue
+        Remove-Item $serverZip, "$serverZip" -Force -ErrorAction SilentlyContinue
         Write-Host 
         Write-Host "Creating server files..." -ForegroundColor Cyan
         Write-Host 
         7z a -tzip $serverZip "$ServerFilesFolder\*"
-        Move-Item -Path "$InstanceRoot\automation\$serverZip" -Destination "$InstanceRoot\$serverZip" -ErrorAction SilentlyContinue
+        Move-Item -Path "automation\$serverZip" -Destination "$serverZip" -ErrorAction SilentlyContinue
         Write-Host "Server files created!" -ForegroundColor Green
 
         if ($ENABLE_MODPACK_UPLOADER_MODULE) {
@@ -300,7 +300,7 @@ function Push-ServerFiles {
         [int]$ClientFileId
     )
     if ($ENABLE_SERVER_FILE_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
-        $serverFilePath = "$InstanceRoot\$SERVER_ZIP_NAME.zip"
+        $serverFilePath = "$SERVER_ZIP_NAME.zip"
 
         $SERVER_METADATA = 
         "{
@@ -359,10 +359,7 @@ function New-GitHubRelease {
         Write-Host 
     
         Invoke-RestMethod -Headers $Headers -Uri $Uri -Body $Body -Method Post
-        $currentLocation = Get-Location
-        Set-Location $InstanceRoot
         Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
-        Set-Location $currentLocation
     }
 }
 
@@ -374,11 +371,11 @@ function Update-Modlist {
         }
 
         Remove-Item $ModlistPath -ErrorAction SilentlyContinue
-        java -jar $ModlistCreatorJar --markdown --output ".\" --detailed --manifest "$InstanceRoot\$CLIENT_ZIP_NAME.zip"
-        Copy-Item -Path "$InstanceRoot\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
-        Move-Item -Path "$InstanceRoot\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue -Force
-        Copy-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
-        Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue -Force
+        java -jar $ModlistCreatorJar --markdown --output ".\" --detailed --manifest "$CLIENT_ZIP_NAME.zip"
+        Copy-Item -Path "MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Move-Item -Path "MODLIST.md" -Destination "MODLIST.md" -ErrorAction SilentlyContinue -Force
+        Copy-Item -Path "automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Move-Item -Path "automation\MODLIST.md" -Destination "MODLIST.md" -ErrorAction SilentlyContinue -Force
     }
 }
 
@@ -388,6 +385,9 @@ function Remove-LeadingZero {
     )
     return [int]$text
 }
+
+$StartLocation = Get-Location
+Set-Location $InstanceRoot
 
 Test-ForDependencies
 Validate-SecretsFile
@@ -399,3 +399,8 @@ if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
 New-GitHubRelease
 New-Changelog
 Update-Modlist
+
+Write-Host "Modpack Upload Complete!" -ForegroundColor Green
+Set-Location $StartLocation
+
+pause
