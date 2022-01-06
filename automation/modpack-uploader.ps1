@@ -121,9 +121,9 @@ function New-ManifestJson {
     $mods = [System.Collections.ArrayList]@()
     foreach ($addon in $minecraftInstanceJson.installedAddons) {
         $mods.Add(@{
+                required  = $true
                 projectID = $addon.addonID
                 fileID    = $addon.installedFile.id
-                required  = $true
             }) > $null
     }
 
@@ -145,7 +145,8 @@ function New-ManifestJson {
     } 
 
     Remove-Item $outfile -Force -Recurse -ErrorAction SilentlyContinue
-    $jsonOutput | ConvertTo-Json -Depth 3 | Out-File $outfile
+    $jsonString = $jsonOutput | ConvertTo-Json -Depth 3
+    [System.IO.File]::WriteAllLines($outfile, $jsonString)
     Write-Host "$manifest created!" -ForegroundColor Green
 }
 
@@ -266,7 +267,7 @@ function Update-FileLinkInServerFiles {
         $idPart2 = Remove-LeadingZero -text $idPart2
         $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$CLIENT_ZIP_NAME.zip"
         $content = (Get-Content -Path $ServerSetupConfigPath) -replace "https://media.forgecdn.net/files/\d+/\d+/.*.zip", $curseForgeCdnUrl 
-        [IO.File]::WriteAllLines(($ServerSetupConfigPath | Resolve-Path), $content)
+        [System.IO.File]::WriteAllLines(($ServerSetupConfigPath | Resolve-Path), $content)
 
         if ($ENABLE_SERVER_FILE_MODULE) {
             New-ServerFiles -ClientFileId $ClientFileId
