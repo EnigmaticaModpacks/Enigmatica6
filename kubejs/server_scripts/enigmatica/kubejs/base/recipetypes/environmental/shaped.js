@@ -1,8 +1,5 @@
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
-        return;
-    }
-    const id_prefix = 'enigmatica:expert/environmental/';
+    const id_prefix = 'enigmatica:base/environmental/shaped';
     /*
         ,
         {
@@ -17,14 +14,13 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            output: 'environmental:kiln',
-            pattern: ['AAA', 'ABA', 'CCC'],
+            output: Item.of('environmental:mud_ball', 16),
+            pattern: ['AAA', 'ABA', 'AAA'],
             key: {
-                A: 'environmental:mud_bricks',
-                B: 'minecraft:blast_furnace',
-                C: 'minecraft:smooth_stone'
+                A: 'minecraft:dirt',
+                B: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 1000 }
             },
-            id: 'environmental:crafting/kiln'
+            id: 'environmental:building/mud_balls_from_dirt'
         }
     ];
 
