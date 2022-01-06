@@ -749,146 +749,6 @@ const stonecuttables = [
         onlyAsInput: []
     },
     {
-        name: 'glass',
-        stones: [
-            'minecraft:glass',
-            'chipped:crimson_wood_glass_6',
-            'chipped:crimson_wood_glass_5',
-            'chipped:crimson_wood_glass_4',
-            'chipped:crimson_wood_glass_3',
-            'chipped:crimson_wood_glass_2',
-            'chipped:crimson_wood_glass_1',
-            'chipped:warped_wood_glass_6',
-            'chipped:warped_wood_glass_5',
-            'chipped:warped_wood_glass_4',
-            'chipped:warped_wood_glass_3',
-            'chipped:warped_wood_glass_2',
-            'chipped:warped_wood_glass_1',
-            'chipped:dark_oak_wood_glass_6',
-            'chipped:dark_oak_wood_glass_5',
-            'chipped:dark_oak_wood_glass_4',
-            'chipped:dark_oak_wood_glass_3',
-            'chipped:dark_oak_wood_glass_2',
-            'chipped:dark_oak_wood_glass_1',
-            'chipped:acacia_wood_glass_6',
-            'chipped:acacia_wood_glass_5',
-            'chipped:acacia_wood_glass_4',
-            'chipped:acacia_wood_glass_3',
-            'chipped:acacia_wood_glass_2',
-            'chipped:acacia_wood_glass_1',
-            'chipped:jungle_wood_glass_6',
-            'chipped:jungle_wood_glass_5',
-            'chipped:jungle_wood_glass_4',
-            'chipped:jungle_wood_glass_3',
-            'chipped:jungle_wood_glass_2',
-            'chipped:jungle_wood_glass_1',
-            'chipped:spruce_wood_glass_6',
-            'chipped:spruce_wood_glass_5',
-            'chipped:spruce_wood_glass_4',
-            'chipped:spruce_wood_glass_3',
-            'chipped:spruce_wood_glass_2',
-            'chipped:spruce_wood_glass_1',
-            'chipped:birch_wood_glass_6',
-            'chipped:birch_wood_glass_5',
-            'chipped:birch_wood_glass_4',
-            'chipped:birch_wood_glass_3',
-            'chipped:birch_wood_glass_2',
-            'chipped:birch_wood_glass_1',
-            'chipped:oak_wood_glass_6',
-            'chipped:oak_wood_glass_5',
-            'chipped:oak_wood_glass_4',
-            'chipped:oak_wood_glass_3',
-            'chipped:oak_wood_glass_2',
-            'chipped:oak_wood_glass_1',
-            'chipped:glass_14',
-            'chipped:glass_13',
-            'chipped:glass_12',
-            'chipped:glass_11',
-            'chipped:glass_10',
-            'chipped:glass_9',
-            'chipped:glass_8',
-            'chipped:glass_7',
-            'chipped:glass_6',
-            'chipped:glass_5',
-            'chipped:glass_4',
-            'chipped:glass_3',
-            'chipped:glass_2',
-            'chipped:glass_1'
-        ],
-        onlyAsOutput: [],
-        onlyAsInput: []
-    },
-    {
-        name: 'glass_pane',
-        stones: [
-            'minecraft:glass_pane',
-            'chipped:crimson_wood_glass_pane_6',
-            'chipped:crimson_wood_glass_pane_5',
-            'chipped:crimson_wood_glass_pane_4',
-            'chipped:crimson_wood_glass_pane_3',
-            'chipped:crimson_wood_glass_pane_2',
-            'chipped:crimson_wood_glass_pane_1',
-            'chipped:warped_wood_glass_pane_6',
-            'chipped:warped_wood_glass_pane_5',
-            'chipped:warped_wood_glass_pane_4',
-            'chipped:warped_wood_glass_pane_3',
-            'chipped:warped_wood_glass_pane_2',
-            'chipped:warped_wood_glass_pane_1',
-            'chipped:dark_oak_wood_glass_pane_6',
-            'chipped:dark_oak_wood_glass_pane_5',
-            'chipped:dark_oak_wood_glass_pane_4',
-            'chipped:dark_oak_wood_glass_pane_3',
-            'chipped:dark_oak_wood_glass_pane_2',
-            'chipped:dark_oak_wood_glass_pane_1',
-            'chipped:acacia_wood_glass_pane_6',
-            'chipped:acacia_wood_glass_pane_5',
-            'chipped:acacia_wood_glass_pane_4',
-            'chipped:acacia_wood_glass_pane_3',
-            'chipped:acacia_wood_glass_pane_2',
-            'chipped:acacia_wood_glass_pane_1',
-            'chipped:jungle_wood_glass_pane_6',
-            'chipped:jungle_wood_glass_pane_5',
-            'chipped:jungle_wood_glass_pane_4',
-            'chipped:jungle_wood_glass_pane_3',
-            'chipped:jungle_wood_glass_pane_2',
-            'chipped:jungle_wood_glass_pane_1',
-            'chipped:spruce_wood_glass_pane_6',
-            'chipped:spruce_wood_glass_pane_5',
-            'chipped:spruce_wood_glass_pane_4',
-            'chipped:spruce_wood_glass_pane_3',
-            'chipped:spruce_wood_glass_pane_2',
-            'chipped:spruce_wood_glass_pane_1',
-            'chipped:birch_wood_glass_pane_6',
-            'chipped:birch_wood_glass_pane_5',
-            'chipped:birch_wood_glass_pane_4',
-            'chipped:birch_wood_glass_pane_3',
-            'chipped:birch_wood_glass_pane_2',
-            'chipped:birch_wood_glass_pane_1',
-            'chipped:oak_wood_glass_pane_6',
-            'chipped:oak_wood_glass_pane_5',
-            'chipped:oak_wood_glass_pane_4',
-            'chipped:oak_wood_glass_pane_3',
-            'chipped:oak_wood_glass_pane_2',
-            'chipped:oak_wood_glass_pane_1',
-            'chipped:glass_pane_14',
-            'chipped:glass_pane_13',
-            'chipped:glass_pane_12',
-            'chipped:glass_pane_11',
-            'chipped:glass_pane_10',
-            'chipped:glass_pane_9',
-            'chipped:glass_pane_8',
-            'chipped:glass_pane_7',
-            'chipped:glass_pane_6',
-            'chipped:glass_pane_5',
-            'chipped:glass_pane_4',
-            'chipped:glass_pane_3',
-            'chipped:glass_pane_2',
-            'chipped:glass_pane_1'
-        ],
-        onlyAsOutput: [],
-        onlyAsInput: []
-    },
-    {
         name: 'granite',
         stones: [
             'minecraft:polished_granite',
@@ -2391,14 +2251,38 @@ const stonecuttables = [
     }
 ];
 
+const glassTypes = [`glass`, 'glass_panes'];
+glassTypes.forEach((glassType) => {
+    let glassesInTag = getItemsInTag(Ingredient.of(`#forge:${glassType}/colorless`)),
+        glasses = [];
+
+    glassesInTag.forEach((glass) => {
+        let modId = glass.id.split(':')[0];
+        if (modId == 'atum' || modId == 'tconstruct') {
+            return;
+        }
+        glasses.push(glass.id);
+    });
+
+    stonecuttables.push({
+        name: `colorless_${glassType}`,
+        stones: glasses,
+        onlyAsOutput: [],
+        onlyAsInput: []
+    });
+});
+
 colors.forEach((color) => {
     // Glass
-    let glassTypes = ['glass', 'glass_panes'];
     glassTypes.forEach((glassType) => {
         let glassesInTag = getItemsInTag(Ingredient.of(`#forge:${glassType}/${color}`)),
             glasses = [];
 
         glassesInTag.forEach((glass) => {
+            let modId = glass.id.split(':')[0];
+            if (modId == 'atum') {
+                return;
+            }
             glasses.push(glass.id);
         });
 
