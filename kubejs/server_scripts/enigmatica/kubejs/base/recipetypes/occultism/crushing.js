@@ -352,6 +352,30 @@ onEvent('recipes', (event) => {
             time: 200,
             ignore_crushing_multiplier: true,
             id: `${id_prefix}red_sand_from_terracotta`
+        },
+        {
+            input: { tag: 'forge:coal_petcoke' },
+            output: 'immersivepetroleum:petcoke_dust',
+            count: 1,
+            time: 200,
+            ignore_crushing_multiplier: true,
+            id: `${id_prefix}petcoke_dust`
+        },
+        {
+            input: { tag: 'forge:storage_blocks/coal_petcoke' },
+            output: 'immersivepetroleum:petcoke_dust',
+            count: 9,
+            time: 1600,
+            ignore_crushing_multiplier: true,
+            id: `${id_prefix}petcoke_dust_from_block`
+        },
+        {
+            input: { tag: 'forge:storage_blocks/coal_coke' },
+            output: 'emendatusenigmatica:coke_dust',
+            count: 9,
+            time: 1600,
+            ignore_crushing_multiplier: true,
+            id: `${id_prefix}coke_dust_from_block`
         }
     ];
 

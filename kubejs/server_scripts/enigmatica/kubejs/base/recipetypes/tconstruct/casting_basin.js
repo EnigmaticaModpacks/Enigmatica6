@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/tconstruct/casting_basin/';
     const recipes = [
         /*
         {
@@ -11,23 +12,38 @@ onEvent('recipes', (event) => {
         }
         */
         {
-            fluid: {
-                name: 'emendatusenigmatica:molten_redstone',
-                amount: 1296
-            },
+            fluid: { name: 'emendatusenigmatica:molten_redstone', amount: 1296 },
             result: Item.of('minecraft:redstone_block').toJson(),
             cooling_time: 200
+        },
+        {
+            fluid: { name: 'kubejs:molten_hardened_glass', amount: 1000 },
+            result: Item.of('thermal:obsidian_glass').toJson(),
+            cooling_time: 300,
+            id: `${id_prefix}obsidian_glass`
+        },
+        {
+            fluid: { name: 'kubejs:molten_signalum_glass', amount: 1000 },
+            result: Item.of('thermal:signalum_glass').toJson(),
+            cooling_time: 300,
+            id: `${id_prefix}signalum_glass`
+        },
+        {
+            fluid: { name: 'kubejs:molten_lumium_glass', amount: 1000 },
+            result: Item.of('thermal:lumium_glass').toJson(),
+            cooling_time: 300,
+            id: `${id_prefix}lumium_glass`
+        },
+        {
+            fluid: { name: 'kubejs:molten_enderium_glass', amount: 1000 },
+            result: Item.of('thermal:enderium_glass').toJson(),
+            cooling_time: 300,
+            id: `${id_prefix}enderium_glass`
         }
     ];
 
     recipes.forEach((recipe) => {
-        event
-            .custom({
-                type: 'tconstruct:casting_basin',
-                fluid: recipe.fluid,
-                result: recipe.result,
-                cooling_time: recipe.cooling_time
-            })
-            .id(recipe.id);
+        recipe.type = 'tconstruct:casting_basin';
+        event.custom(recipe).id(recipe.id);
     });
 });

@@ -17,7 +17,7 @@ onEvent('recipes', (event) => {
         },
         {
             static: true,
-            input: { type: 'ITEM', id: 'kubejs:fluid_drill_package', amount: 1 },
+            input: { type: 'ITEM', id: 'kubejs:engineers_school_upgrades', amount: 1 },
             output: { type: 'ITEM', id: 'kubejs:heavy_machinery_schematics', amount: 1 },
             level: 0,
             maxStock: 5,
@@ -30,5 +30,3 @@ onEvent('recipes', (event) => {
         event.custom(recipe).id(recipe.id);
     });
 });
-
-/**/

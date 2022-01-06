@@ -27,6 +27,11 @@
 			shape: "square"
 			subtitle: "Hammer time!"
 			description: [
+				"Tetra is a tool mod that allows you to make powerful modular tools."
+				""
+				"This chapter will show you which tools are available and how you obtain them."
+				""
+				""
 				"The first step is to make a Tetra Hammer and smack a Vanilla Crafting Table with it!"
 				""
 				"To make Tetra tools, you need a hammer, and occasionally other tools."
@@ -38,7 +43,6 @@
 				""
 				"Note: Non-vanilla Crafting Tables can be converted to vanilla through crafting."
 			]
-			dependencies: ["0000000000000843"]
 			size: 1.5d
 			id: "0000000000000773"
 			tasks: [{
@@ -455,41 +459,6 @@
 				type: "item"
 				title: "Combustion Chamber"
 				item: "tetra:combustion_chamber"
-			}]
-		}
-		{
-			title: "Tetra 101"
-			x: -2.5d
-			y: -22.0d
-			shape: "gear"
-			description: [
-				"Tetra is a tool mod similar to Tinkers' Construct, that allows you to make powerful modular tools."
-				""
-				"This chapter will show you which tools are available and how you obtain them."
-			]
-			optional: true
-			id: "0000000000000843"
-			tasks: [{
-				id: "0000000000000844"
-				type: "checkmark"
-				icon: {
-					id: "tetra:modular_double"
-					Count: 1b
-					tag: {
-						"double/handle": "double/basic_handle"
-						"double/head_left": "double/basic_hammer_left"
-						"double/head_right": "double/basic_hammer_right"
-						Damage: 0
-						"double/basic_hammer_right_material": "basic_hammer/diorite"
-						"double/basic_handle_material": "basic_handle/stick"
-						"double/basic_hammer_left_material": "basic_hammer/diorite"
-					}
-				}
-			}]
-			rewards: [{
-				id: "0000000000000CA5"
-				type: "xp"
-				xp: 100
 			}]
 		}
 		{

@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
                 input: 'input item here',
                 output: 'output item here',
                 syphon: 1000,                       //Recipe LP Cost
-                altarLevel: 0,                      //Altar Level is zero idexed
+                altarLevel: 0,                      //Altar Level is zero indexed
                 consumptionRate: 5,                 //How much LP is infused per operation
                 drainRate: 5,                       //How much LP is lost per operation when the altar is empty
                 id: 'input item here'
@@ -98,14 +98,14 @@ onEvent('recipes', (event) => {
         {
             input: 'kubejs:firmament',
             output: 'architects_palette:moonstone',
-            syphon: 25000,
-            altarLevel: 2,
-            consumptionRate: 20,
-            drainRate: 20,
+            syphon: 7000,
+            altarLevel: 0,
+            consumptionRate: 5,
+            drainRate: 1,
             id: `${id_prefix}moonstone`
         },
         {
-            input: 'eidolon:sapping_sword',
+            input: Item.of('eidolon:sapping_sword', '{Damage:0}').weakNBT(),
             output: 'bloodmagic:sacrificialdagger',
             syphon: 7000,
             altarLevel: 1,
@@ -179,10 +179,10 @@ onEvent('recipes', (event) => {
         {
             input: 'ars_nouveau:ritual_warping',
             output: 'waystones:warp_stone',
-            syphon: 50000,
+            syphon: 25000,
             altarLevel: 2,
-            consumptionRate: 1000,
-            drainRate: 100,
+            consumptionRate: 20,
+            drainRate: 20,
             id: 'waystones:warp_stone'
         },
         {
@@ -202,6 +202,15 @@ onEvent('recipes', (event) => {
             consumptionRate: 5,
             drainRate: 5,
             id: `${id_prefix}blood_pendant`
+        },
+        {
+            input: 'bloodmagic:demonslate',
+            output: 'bloodmagic:etherealslate',
+            syphon: 200000,
+            altarLevel: 4,
+            consumptionRate: 1000,
+            drainRate: 1000,
+            id: `${id_prefix}etherealslate`
         }
     ];
 

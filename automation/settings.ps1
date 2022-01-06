@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.21"
+$MODPACK_VERSION = "0.5.22"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.5.20"
+$LAST_MODPACK_VERSION = "0.5.21"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -65,11 +65,6 @@ $CLIENT_RELEASE_TYPE = "alpha"
 #  DEPENDENCIES URL
 #=====================================================================//
 
-# File name of the latest https://github.com/Gaz492/twitch-export-builder/releases
-$TwitchExportBuilderDLWindows = "twitch-export-builder_windows_amd64.exe"
-$TwitchExportBuilderDLLinux = "twitch-export-builder_linux_amd64"
-$TwitchExportBuilderDLMac = "twitch-export-builder_darwin_amd64"
-
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
 $ChangelogGeneratorDL = "ChangelogGenerator-2.0.0-pre10.jar"
 
@@ -80,9 +75,17 @@ $ModlistCreatorJar = "ModListCreator-1.2.1.jar"
 #  CLIENT FILE SETTINGS
 #=====================================================================//
 
-# Most of these are defined in .build.json.
+$CLIENT_FILE_AUTHOR = "EnigmaticaModpacks"
 
-# Configs to remove from the client files
+$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
+	"config",
+	"defaultconfigs",
+	"kubejs",
+	"local",
+	"packmenu",
+	"patchouli_books",
+	"schematics")
+
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"betterendforge/client-config.toml",
 	"jei/bookmarks.ini",
@@ -161,10 +164,12 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"jeed-client.toml",
 	"valhelsia_core-client.toml",
 	"forge-client.toml",
-	"configured-client.toml"
+	"configured-client.toml",
+	"Mekanism/client.toml",
+	"Mekanism/tools-client.toml"
 )
 
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
@@ -182,22 +187,12 @@ $ServerSetupConfigPath = "$InstanceRoot/server_files/server-setup-config.yaml"
 $CONTENTS_TO_ZIP = @()
 
 # =====================================================================//
-#  Operating System
-# =====================================================================//
-
-$IsLinux = $false
-
-$IsMacOS = $false
-
-$IsWindows = $true
-
-# =====================================================================//
 #  MODULES
 # =====================================================================//
 
 # Toggle twitch-export-builder (automatic building of the manifest zip) on/off
 # Default: $true
-$ENABLE_CURSE_CLIENT_MODULE = $false
+$ENABLE_CURSE_CLIENT_MODULE = $true
 
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.

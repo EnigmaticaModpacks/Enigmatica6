@@ -42,9 +42,6 @@ function compareIndices(a, b, tag) {
     console.error('[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!'));
     return 0;
 }
-function wrapArray(array) {
-    return utils.listOf(array).toArray();
-}
 
 function getStrippedLogFrom(logBlock) {
     let result = air;

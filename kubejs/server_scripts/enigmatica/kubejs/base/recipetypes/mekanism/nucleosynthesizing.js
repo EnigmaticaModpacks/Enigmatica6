@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/mekanism/nucleosynthesizing/';
     /* 
         Recipes use about 40k rf per point of duration. 
         Duration is not a fixed speed, as the machine runs at 10000% speed when the energy buffer is full.  
@@ -19,7 +20,8 @@ onEvent('recipes', (event) => {
                     Selected: 'ARTIFACT',
                     Loyalty: 0
                 }),
-                duration: 2500000
+                duration: 2500000,
+                id: `${id_prefix}infinity_trident`
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -33,7 +35,8 @@ onEvent('recipes', (event) => {
                     Selected: 'ARTIFACT',
                     Beheading: 0
                 }),
-                duration: 2500000
+                duration: 2500000,
+                id: `${id_prefix}infinity_hammer`
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -46,7 +49,8 @@ onEvent('recipes', (event) => {
                     Energy: 9223372036854775807,
                     Fluid: { FluidName: 'biofuel', Amount: 0 }
                 }),
-                duration: 2500000
+                duration: 2500000,
+                id: `${id_prefix}infinity_drill`
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -59,7 +63,8 @@ onEvent('recipes', (event) => {
                     Energy: 9223372036854775807,
                     Fluid: { FluidName: 'biofuel', Amount: 0 }
                 }),
-                duration: 2500000
+                duration: 2500000,
+                id: `${id_prefix}infinity_saw`
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -71,7 +76,8 @@ onEvent('recipes', (event) => {
                     Selected: 'ARTIFACT',
                     Energy: 9223372036854775807
                 }),
-                duration: 2500000
+                duration: 2500000,
+                id: `${id_prefix}infinity_backpack`
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -84,7 +90,8 @@ onEvent('recipes', (event) => {
                     Energy: 9223372036854775807,
                     Fluid: { FluidName: 'biofuel', Amount: 0 }
                 }),
-                duration: 2500000
+                duration: 2500000,
+                id: `${id_prefix}infinity_nuke`
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -98,19 +105,15 @@ onEvent('recipes', (event) => {
                     Selected: 'ARTIFACT',
                     Plunger: 0
                 }),
-                duration: 2500000
+                duration: 2500000,
+                id: `${id_prefix}infinity_launcher`
                 //Approximately 100 billion RF to complete the craft.
             }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        event.custom({
-            type: 'mekanism:nucleosynthesizing',
-            itemInput: recipe.itemInput,
-            gasInput: recipe.gasInput,
-            output: recipe.output,
-            duration: recipe.duration
-        });
+        recipe.type = 'mekanism:nucleosynthesizing';
+        event.custom(recipe).id(recipe.id);
     });
 });

@@ -192,7 +192,15 @@ onEvent('jei.information', (event) => {
         },
         {
             items: [/quark:\w+_crystal$/],
-            text: ['Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.']
+            text: [
+                'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.',
+                ' ',
+                'May sprout Corundum Clusters as well.'
+            ]
+        },
+        {
+            items: [/quark:\w+_crystal_cluster/],
+            text: ['Grows occasionally on Corundum Blocks when grown underground.']
         },
         {
             items: ['quark:bottled_cloud'],
@@ -224,7 +232,15 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['quark:root_item'],
-            text: ['Drops occasionally when breaking Cave Roots.']
+            text: [
+                'Drops occasionally when breaking Cave Roots.',
+                ' ',
+                'Cave Roots may be crafted and grown just like Vines, though they require low light to grow.'
+            ]
+        },
+        {
+            items: ['quark:root'],
+            text: ['May be crafted and grown just like Vines, though they require low light to grow.']
         },
         {
             items: ['meetyourfight:phantoplasm'],
@@ -298,7 +314,7 @@ onEvent('jei.information', (event) => {
             text: [
                 `Used in a Logic Unit to create advanced Redstone Logic.`,
                 ` `,
-                `Crafted in an Engineer's Circuit Table. Requires Circuit Backplanes, Lead or Copper Wire, and Vacuum Tubes.`
+                `Crafted in an Engineer's Circuit Table. Requires Circuit Backplanes and Lead or Copper Wire. Vacuum Tubes are required for all operators except SET.`
             ]
         },
         {
@@ -361,6 +377,19 @@ onEvent('jei.information', (event) => {
             text: [`Splash a Phantom with a Potion of Insomnia to convert it to a Flare.`]
         },
         {
+            items: ['immersiveengineering:cloche'],
+            text: [
+                `Available Fertilizers:`,
+                ` `,
+                `Bone Meal: 1.25x`,
+                `Floral Fertilizer: 1.5x`,
+                `Green Fertilizer: 1.5x`,
+                `Fertilizer: 1.7x`,
+                `Red Fertilizer: 2.0x`,
+                `Phyto-Gro: 3.0x`
+            ]
+        },
+        {
             items: ['quark:dragon_scale'],
             text: [`Only drops from Ender Dragons after the first one has been killed.`]
         },
@@ -398,6 +427,32 @@ onEvent('jei.information', (event) => {
                 ` `,
                 `Enderiophage may be found in the wild in the End Midlands biome. They may also be called forth by consuming Otherworldly Honey.`
             ]
+        },
+        {
+            items: ['eidolon:sanguine_amulet', 'eidolon:sapping_sword'],
+            text: [`For crafting steps, refer to the Sanguine Items section under Rituals in the Ars Ecclesia.`]
+        },
+        {
+            items: ['atum:papyrus_plant'],
+            text: [
+                `Commonly found growing in Oasis Biomes in Atum. Grows like Sugar Cane on Strange Sand or Fertile Soil.`
+            ]
+        },
+        {
+            items: ['astralsorcery:infused_wood'],
+            text: [`Made by dropping any Log into Liquid Starlight.`]
+        },
+        {
+            items: ['environmental:thief_hood'],
+            text: [`May be repaired with Rabbit Hide.`]
+        },
+        {
+            items: ['naturesaura:gold_leaf'],
+            text: [`Obtained by breaking Golden Leaves.`]
+        },
+        {
+            items: ['naturesaura:golden_leaves'],
+            text: [`Obtained by using Brilliant Fiber on leaves. Allow to spread for best effect.`]
         }
     ];
 
@@ -410,7 +465,7 @@ onEvent('jei.information', (event) => {
     disabledItems.forEach((item) => {
         event.add(
             item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/NillerMedDild/Enigmatica6/issues"
+            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica6/issues"
         );
     });
 

@@ -100,6 +100,9 @@ const colors = [
 ];
 
 const itemsToHide = [
+    'advancedperipherals:me_bridge',
+    'advancedperipherals:colony_integrator',
+
     'aiotbotania:livingwood_shears',
     'aiotbotania:livingrock_shears',
 
@@ -176,9 +179,14 @@ const itemsToHide = [
     'emendatusenigmatica:molten_utherium_bucket',
     'emendatusenigmatica:molten_regalium_bucket',
     'emendatusenigmatica:molten_iesnium_bucket',
+    'emendatusenigmatica:molten_lumium_bucket',
+    'emendatusenigmatica:molten_enderium_bucket',
+    'emendatusenigmatica:molten_signalum_bucket',
     /iridium/,
     /cast_iron/,
     /peridot/,
+    /emendatusenigmatica.*sapphire/,
+    /emendatusenigmatica.*ruby/,
 
     'environmental:cherry_pie',
     'environmental:apple_pie',
@@ -396,6 +404,17 @@ const recipesToHide = [
             'apotheosis:hellshelf',
             'apotheosis:seashelf',
             'apotheosis:endshelf',
+            'apotheosis:enchantment_library',
+            'apotheosis:armor_head_book',
+            'apotheosis:armor_chest_book',
+            'apotheosis:armor_legs_book',
+            'apotheosis:armor_feet_book',
+            'apotheosis:bow_book',
+            'apotheosis:fishing_rod_book',
+            'apotheosis:digger_book',
+            'apotheosis:weapon_book',
+            'apotheosis:scrap_tome',
+            'apotheosis:null_book',
 
             'ars_nouveau:arcane_stone',
             'ars_nouveau:crystallizer',
@@ -459,6 +478,8 @@ const recipesToHide = [
             'botania:gaia_spreader',
             'botania:fel_pumpkin',
             'botania:blood_pendant',
+            'botania:ender_dagger',
+            'botania:brewery',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
@@ -468,6 +489,7 @@ const recipesToHide = [
             'mythicbotany:fire_ring',
             'mythicbotany:ice_ring',
             'mythicbotany:mana_collector',
+            'mythicbotany:kvasir_mead',
 
             'naturesaura:calling_spirit',
             'naturesaura:animal_spawner',
@@ -750,5 +772,14 @@ const craftedBees = [
     'pcbee',
     'otherworldly',
     'carbee',
-    'dusty_mummbee'
+    'dusty_mummbee',
+    'brass',
+    'bronze',
+    'constantan',
+    'invar',
+    'steel',
+    'lumium',
+    'signalum',
+    'electrum',
+    'enderium'
 ];

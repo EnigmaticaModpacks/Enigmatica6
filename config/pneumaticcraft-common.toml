@@ -92,6 +92,8 @@
 	seismic_sensor_fluid_tags = ["forge:crude_oil"]
 	#Blacklist items from being allowed in the Pressure Chamber disenchanting system. This is a starts-with string match, so you can match by mod, or individual item names as you need. Blacklisted by default are Quark Ancient Tomes, and all Tetra items; both can lead to enchantment duping as they have special enchantment mechanics.
 	disenchanting_blacklist = ["quark:ancient_tome", "tetra:"]
+	#Are players in Creative mode exempt from Security Station block protection? If false, only server ops are exempt (command permission >= 2)
+	security_station_creative_players_exempt = false
 
 ["Pneumatic Armor"]
 	#Air usage for armor repair, in mL per Item Life Upgrade per point of damage repaired

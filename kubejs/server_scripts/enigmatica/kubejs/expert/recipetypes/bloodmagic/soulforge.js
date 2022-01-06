@@ -78,30 +78,25 @@ onEvent('recipes', (event) => {
                 id: 'bloodmagic:soulforge/greatertartaricgem'
             },
             {
-                inputs: [
-                    'atum:nuit_godshard',
-                    'eidolon:soul_shard',
-                    'astralsorcery:nocturnal_powder',
-                    'eidolon:death_essence'
-                ],
+                inputs: ['atum:nuit_godshard', 'astralsorcery:nocturnal_powder', 'eidolon:death_essence'],
                 output: Item.of('eidolon:shadow_gem'),
                 minimumDrain: 100.0,
                 drain: 32.0,
                 id: `${id_prefix}shadow_gem`
             },
             {
-                inputs: [
-                    ['#forge:ingots/regalium', '#forge:ingots/nebu'],
-                    'eidolon:soul_shard',
-                    'eidolon:crimson_essence'
-                ],
-                output: Item.of('eidolon:arcane_gold_ingot'),
+                inputs: ['#forge:storage_blocks/gold', 'eidolon:crimson_essence'],
+                output: Item.of('eidolon:arcane_gold_block'),
                 minimumDrain: 32.0,
                 drain: 16.0,
                 id: `${id_prefix}arcane_gold_ingot`
             },
             {
-                inputs: ['bloodmagic:rawdemoncrystal', 'bloodmagic:soulpickaxe', '#forge:storage_blocks/iesnium'],
+                inputs: [
+                    'bloodmagic:rawdemoncrystal',
+                    Item.of('bloodmagic:soulpickaxe', '{Damage:0]}').weakNBT(),
+                    '#forge:storage_blocks/iesnium'
+                ],
                 output: Item.of('occultism:iesnium_pickaxe'),
                 minimumDrain: 4000.0,
                 drain: 2048.0,
@@ -120,13 +115,6 @@ onEvent('recipes', (event) => {
                 minimumDrain: 1200.0,
                 drain: 200.0,
                 id: 'bloodmagic:soulforge/primitive_crystalline_resonator'
-            },
-            {
-                inputs: ['occultism:otherstone_frame', 'atum:nebu_chain'],
-                output: 'occultism:wormhole_frame',
-                minimumDrain: 16.0,
-                drain: 2.0,
-                id: 'occultism:crafting/wormhole_frame'
             },
 
             /// Patchouli Removals

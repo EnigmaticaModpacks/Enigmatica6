@@ -29,6 +29,8 @@ onEvent('recipes', (event) => {
 
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
+        'byg:mud_block',
+        'byg:mud_ball',
 
         'create:crushing/obsidian',
 
@@ -137,6 +139,7 @@ onEvent('recipes', (event) => {
         'industrialforegoing:laser_drill_ore/copper',
         'industrialforegoing:laser_drill_ore/aluminum',
         'industrialforegoing:laser_drill_ore/coal',
+        'industrialforegoing:laser_drill_ore/certus_quartz',
         'industrialforegoing:stonework_generate/andesite',
         'industrialforegoing:stonework_generate/diorite',
         'industrialforegoing:stonework_generate/granite',
@@ -157,6 +160,7 @@ onEvent('recipes', (event) => {
         'mekanism:processing/lapis_lazuli/from_ore',
 
         'minecraft:crystal_glass',
+        'minecraft:bone_pile_from_bone_pile_block',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',

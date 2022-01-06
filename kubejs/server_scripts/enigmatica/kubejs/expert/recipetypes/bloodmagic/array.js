@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             input: '#forge:rods/copper',
-            addedInput: '#forge:dusts/fluorite',
+            addedInput: '#forge:gems/fluorite',
             output: 'powah:charged_snowball',
             texture: 'bindinglightningarray',
             id: `${id_prefix}charged_snowball`

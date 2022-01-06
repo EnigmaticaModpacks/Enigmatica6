@@ -116,28 +116,14 @@
 				type: "item"
 				item: "bloodmagic:altar"
 			}]
-			rewards: [
-				{
-					id: "00000000000008C1"
-					type: "item"
-					title: "Sacrificial Knife"
-					item: {
-						id: "bloodmagic:sacrificialdagger"
-						Count: 1b
-						tag: {
-							sacrifice: 0b
-						}
-					}
-				}
-				{
-					id: "00000000000008C2"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "00000000000008C2"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: -3.0d
@@ -971,6 +957,31 @@
 					}
 				}
 			]
+		}
+		{
+			x: -3.0d
+			y: 6.5d
+			subtitle: "The Book is Mightier than the Sword"
+			description: [
+				"Multidisciplinary Sorcerers may prefer not to dirty their hands with a sword. If this sounds like you, the \"Sentient Harm\" glyph would make a good addition to your spellbook."
+				""
+				"Just like the Sentient Sword, the Sentient Harm glyph will drop Will from mobs that are killed with it - just swap the \"Harm\" glyph out for it in your attack spells. Just like the normal glyph, things like Amplify will apply when added."
+			]
+			dependencies: ["00000000000008A6"]
+			id: "6257CACC1274C997"
+			tasks: [{
+				id: "043C1AA85668AD68"
+				type: "item"
+				item: "ars_nouveau:glyph_sentientharm"
+			}]
+			rewards: [{
+				id: "0006651ED51BA2A9"
+				type: "command"
+				title: "Rare Blood Magic Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
+				player_command: false
+			}]
 		}
 	]
 }

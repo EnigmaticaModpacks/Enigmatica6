@@ -123,11 +123,9 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'thermal:tinker_bench',
-            pattern: ['ABC', 'DED', 'FGF'],
+            pattern: ['AE ', 'DDD', 'FGF'],
             key: {
-                A: 'immersiveengineering:screwdriver',
-                B: 'immersiveengineering:wirecutter',
-                C: 'immersiveengineering:hammer',
+                A: Item.of('immersiveengineering:maintenance_kit', '{Damage:0}').weakNBT(),
                 D: '#forge:plates/lead',
                 E: '#create:toolboxes',
                 F: 'thermal:rf_coil',
@@ -394,6 +392,30 @@ onEvent('recipes', (event) => {
                 E: 'thermal:rf_coil'
             },
             id: 'thermal:machine_furnace'
+        },
+        {
+            output: 'thermal:dynamo_disenchantment',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: 'ars_nouveau:greater_experience_gem',
+                C: 'ars_nouveau:enchanting_apparatus',
+                D: '#forge:gears/cobalt',
+                E: '#botania:runes/mana'
+            },
+            id: 'thermal:dynamo_disenchantment'
+        },
+        {
+            output: 'thermal:dynamo_gourmand',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: '#forge:plates/cobalt',
+                C: 'powah:thermoelectric_plate',
+                D: '#forge:gears/uranium',
+                E: 'engineersdecor:small_waste_incinerator'
+            },
+            id: 'thermal:dynamo_gourmand'
         }
     ];
 

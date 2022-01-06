@@ -27,6 +27,10 @@
 	#Bees will not scan surroundings for flowers or hives and will instead go to their designated spot until changed.
 	#WARNING: For now, this will prevent bees from having their wander goal attached which effectively makes them dumb (seriously, they'll just hover in one spot), however it would also significantly improve performance until pathfinding can be optimized.
 	use_experimental_manual_mode = false
+	#
+	#The default radius that all bees will use for their auras.
+	#Range: 3 ~ 20
+	beeAuraRange = 10
 
 ["Apiary Options"]
 	#
@@ -156,6 +160,10 @@
 	#Amount of honey Honey Pipes can transfer per tick.
 	#Range: 10 ~ 16000
 	maxHoneyPipeFlow = 250
+	#
+	#Set to true if you want patreon custom bees to generate [true/false]
+	#The only easter egg bee currently available is the Oreo bee
+	enableCustomPatreonBees = true
 
 ["Honey Generator Options"]
 	#
@@ -238,9 +246,6 @@
 
 ["Ender Beecon Options"]
 	#
-	#If true, the below values will be multiplied with the base value, if false they will be added instead.
-	beeconDoMultiplier = true
-	#
 	#Multiplier for the drain rate for the Ender Beecon when the Calming effect is active.
 	#Range: 1.0 ~ 128.0
 	beeconCalmingValue = 2.0
@@ -257,10 +262,6 @@
 	#Range: 1.0 ~ 128.0
 	beeconRegenerationValue = 2.5
 	#
-	#Range in blocks added for each effect that is currently active.
-	#Range: 1 ~ 25
-	beeconRangePerEffect = 10
-	#
 	#The base drain rate for the Ender Beecon when an effect is active.
 	#Range: 1 ~ 128
 	beeconBaseDrain = 1
@@ -268,6 +269,10 @@
 	#The amount of fluid per tick the Ender Beecon can pull from below blocks.
 	#Range: 1 ~ 16000
 	beeconPullAmount = 250
+	#
+	#Multiplier for each level of range applied to the Ender Beecon's drain.
+	#Range: 0.0 ~ 2.0
+	beeconRangeMultiplier = 0.33
 
 ["Mod Options"]
 	#Set this to true if you wish to live life on the edge!

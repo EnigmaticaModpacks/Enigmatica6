@@ -26,6 +26,14 @@ onEvent('recipes', (event) => {
         'botania:mana_infusion/mana_diamond_block',
         'byg:compat/create/black_sand_from_crushing',
 
+        'computercraft:computer_advanced_upgrade',
+        'computercraft:turtle_advanced_upgrade',
+        'computercraft:turtle_normal',
+        'computercraft:turtle_advanced',
+        'computercraft:pocket_computer_normal',
+        'computercraft:pocket_computer_advanced',
+        'computercraft:pocket_computer_advanced_upgrade',
+
         /compactmachines:machine_/,
         /create:pressing\/\w*_ingot/,
 
@@ -39,6 +47,8 @@ onEvent('recipes', (event) => {
         'farmersdelight:book_from_canvas',
 
         'fluxnetworks:fluxcontroller',
+        'fluxnetworks:fluxplug',
+        'fluxnetworks:fluxpoint',
 
         'immersiveengineering:crafting/component_iron',
         'immersiveengineering:crafting/component_steel',
@@ -49,6 +59,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/cokebrick',
         'immersiveengineering:crafting/blastbrick',
         'immersiveengineering:crafting/alloybrick',
+        'immersiveengineering:generator_fuel/biodiesel',
+        'immersiveengineering:generator_fuel/creosote',
 
         'industrialforegoing:mob_slaughter_factory',
         /industrialforegoing:mycelial/,
@@ -74,6 +86,7 @@ onEvent('recipes', (event) => {
         'mekanism:osmium_compressor',
         /mekanism:factory/,
         'mekanism:robit',
+        /mekanism:mekasuit/,
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
@@ -103,6 +116,9 @@ onEvent('recipes', (event) => {
         'quark:building/crafting/red_nether_bricks_util',
 
         'refinedstorage:quartz_enriched_iron',
+        'rftoolscontrol:cpu_core_500',
+        'rftoolscontrol:cpu_core_1000',
+        'rftoolscontrol:cpu_core_2000',
 
         'sophisticatedbackpacks:feeding_upgrade',
         'sophisticatedbackpacks:advanced_feeding_upgrade',
@@ -125,8 +141,13 @@ onEvent('recipes', (event) => {
         'tconstruct:smeltery/seared/seared_brick_kiln',
         'tconstruct:tables/book_substitute',
         'tconstruct:smeltery/melting/metal/netherite/lodestone',
+        'tconstruct:compat/refined_obsidian_ingot',
+        'tconstruct:smeltery/alloys/molten_refined_obsidian',
+        'tconstruct:compat/refined_glowstone_ingot',
 
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
+
+        'tomeofblood:glyph_sentientharm',
 
         'waystones:warp_dust',
 
@@ -140,6 +161,17 @@ onEvent('recipes', (event) => {
         { output: 'apotheosis:hellshelf', id: 'apotheosis:hellshelf' },
         { output: 'apotheosis:seashelf', id: 'apotheosis:seashelf' },
         { output: 'apotheosis:endshelf', id: 'apotheosis:endshelf' },
+        { output: 'apotheosis:enchantment_library', id: 'apotheosis:enchantment_library' },
+        { output: 'apotheosis:armor_head_book', id: 'apotheosis:armor_head_book' },
+        { output: 'apotheosis:armor_chest_book', id: 'apotheosis:armor_chest_book' },
+        { output: 'apotheosis:armor_legs_book', id: 'apotheosis:armor_legs_book' },
+        { output: 'apotheosis:armor_feet_book', id: 'apotheosis:armor_feet_book' },
+        { output: 'apotheosis:bow_book', id: 'apotheosis:bow_book' },
+        { output: 'apotheosis:fishing_rod_book', id: 'apotheosis:fishing_rod_book' },
+        { output: 'apotheosis:digger_book', id: 'apotheosis:digger_book' },
+        { output: 'apotheosis:weapon_book', id: 'apotheosis:weapon_book' },
+        { output: 'apotheosis:scrap_tome', id: 'apotheosis:scrap_tome' },
+        { output: 'apotheosis:null_book', id: 'apotheosis:null_book' },
 
         { output: 'ars_nouveau:arcane_stone', id: 'ars_nouveau:arcane_stone' },
         { output: 'ars_nouveau:crystallizer', id: 'ars_nouveau:crystallizer' },
@@ -202,6 +234,8 @@ onEvent('recipes', (event) => {
         { output: 'botania:gaia_spreader', id: 'botania:gaia_spreader' },
         { output: 'botania:fel_pumpkin', id: 'botania:fel_pumpkin' },
         { output: 'botania:blood_pendant', id: 'botania:blood_pendant' },
+        { output: 'botania:ender_dagger', id: 'botania:ender_dagger' },
+        { output: 'botania:brewery', id: 'botania:brewery' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
@@ -209,6 +243,7 @@ onEvent('recipes', (event) => {
         { output: 'mythicbotany:fire_ring', id: 'mythicbotany:fire_ring' },
         { output: 'mythicbotany:ice_ring', id: 'mythicbotany:ice_ring' },
         { output: 'mythicbotany:mana_collector', id: 'mythicbotany:mana_collector' },
+        { output: 'mythicbotany:kvasir_mead', id: 'mythicbotany:kvasir_mead' },
 
         { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
         { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },

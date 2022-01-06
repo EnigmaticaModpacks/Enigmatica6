@@ -33,18 +33,18 @@
 		turbineDisperserGasFlow = 1280.0
 		#The rate at which steam is condensed in the turbine.
 		condenserRate = 64000
-		#The percentage of the turbine's steam tank to leave steam in when set to dumping excess.
-		#Range: 0.001 ~ 1.0
-		dumpExcessKeepRatio = 0.9
 
 	#Heat Generator Settings
 	[generators.heat_generator]
 		#Add this amount of Joules to the energy produced by a heat generator if it is in an 'ultrawarm' dimension, in vanilla this is just the Nether.
 		heatGenerationNether = "100"
-		#Multiplier of effectiveness of Lava in the Heat Generator.
+		#Multiplier of effectiveness of Lava that is adjacent to the Heat Generator.
 		heatGenerationLava = "30"
-		#Amount of energy in Joules the Heat Generator produces per tick. (heatGenerationLava * heatGenerationLava) + heatGenerationNether
+		#Amount of energy in Joules the Heat Generator produces per tick. heatGeneration + heatGenerationLava * lavaSides + heatGenerationNether. Note: lavaSides is how many sides are adjacent to lava, this includes the block itself if it is lava logged allowing for a max of 7 "sides".
 		heatGeneration = "200"
+		#The amount of lava in mB that gets consumed to transfer heatGeneration Joules to the Heat Generator.
+		#Range: 1 ~ 24000
+		heatGenerationFluidRate = 10
 
 	#Fission Reactor Settings
 	[generators.fission_reactor]
@@ -53,7 +53,7 @@
 		#The chance of a meltdown occurring once damage passes 100%. Will linearly scale as damage continues increasing.
 		#Range: 0.0 ~ 1.0
 		meltdownChance = 0.001
-		#Whether catastrophic meltdowns can occur from Fission Reactors.
+		#Whether catastrophic meltdowns can occur from Fission Reactors. If disabled instead of melting down the reactor will turn off and not be able to be turned back on until the damage level decreases.
 		meltdownsEnabled = true
 		#How much radioactivity of fuel/waste contents are multiplied during a meltdown.
 		meltdownRadiationMultiplier = 50.0
@@ -68,6 +68,9 @@
 		#The burn rate increase each fuel assembly provides. Max Burn Rate = fuelAssemblies * burnPerAssembly
 		#Range: 1 ~ 1000000
 		burnPerAssembly = 1
+		#Damage to reset the reactor to after a meltdown.
+		#Range: 0.0 ~ 100.0
+		postMeltdownDamage = 75.0
 
 	#Hohlraum Settings
 	[generators.hohlraum]
@@ -83,7 +86,7 @@
 		#The fraction of the heat dissipated from the case that is converted to Joules.
 		#Range: 0.0 ~ 1.0
 		thermocoupleEfficiency = 0.014
-		#The fraction fraction of heat from the casing that can be transfered to all sources that are not water. Will impact max heat, heat transfer to thermodynamic conductors, and power generation.
+		#The fraction fraction of heat from the casing that can be transferred to all sources that are not water. Will impact max heat, heat transfer to thermodynamic conductors, and power generation.
 		#Range: 0.001 ~ 1.0
 		casingThermalConductivity = 0.1
 		#The fraction of the heat from the casing that is dissipated to water when water cooling is in use. Will impact max heat, and steam generation.

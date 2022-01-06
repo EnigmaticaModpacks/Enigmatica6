@@ -64,6 +64,6 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'sophisticatedbackpacks:backpack_upgrade';
-        event.shaped(recipe).id(recipe.id);
+        event.custom(recipe).id(recipe.id);
     });
 });

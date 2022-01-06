@@ -27,6 +27,7 @@ onEvent('recipes', (event) => {
                 '#forge:dusts/lapis',
                 '#forge:dusts/quartz',
                 '#forge:dusts/quartz',
+                'atum:ectoplasm',
                 '#forge:tar'
             ],
             output: 'kubejs:coarse_lapis_lazuli_compound',

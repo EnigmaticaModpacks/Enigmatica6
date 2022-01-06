@@ -55,7 +55,7 @@ onEvent('recipes', (event) => {
             output: 'bloodmagic:daggerofsacrifice',
             pattern: ['  A', 'BA ', 'CB '],
             key: {
-                A: '#forge:ingots/gold_bronze',
+                A: '#forge:ingots/silicon_bronze',
                 B: 'eidolon:pewter_inlay',
                 C: '#forge:rods/wooden'
             },
@@ -74,7 +74,7 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:incense_altar'
         },
         {
-            output: 'bloodmagic:ritualstone',
+            output: Item.of('2x bloodmagic:ritualstone'),
             pattern: ['CBC', 'BAB', 'CBC'],
             key: {
                 A: { type: 'bloodmagic:bloodorb', orb_tier: 2 },

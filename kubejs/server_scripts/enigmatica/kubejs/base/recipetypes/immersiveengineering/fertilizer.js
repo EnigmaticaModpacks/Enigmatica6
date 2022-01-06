@@ -16,6 +16,10 @@ onEvent('recipes', (event) => {
             {
                 input: 'farmingforblockheads:red_fertilizer',
                 growthModifier: 2.0
+            },
+            {
+                input: 'farmingforblockheads:green_fertilizer',
+                growthModifier: 1.5
             }
         ]
     };

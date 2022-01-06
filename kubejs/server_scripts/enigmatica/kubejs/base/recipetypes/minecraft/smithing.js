@@ -1,7 +1,7 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
-            input1: 'aiotbotania:terra_aiot',
+            input1: Item.of('aiotbotania:terra_aiot', '{Damage:0}').weakNBT(),
             input2: 'kubejs:quintuple_alfsteel_ingot',
             output: 'aiotbotania:alfsteel_aiot'
         }

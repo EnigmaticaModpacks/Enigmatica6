@@ -438,7 +438,6 @@ onEvent('recipes', (event) => {
                 { tag: 'botania:petals/brown' },
                 { tag: 'botania:petals/red' },
                 { tag: 'botania:petals/blue' },
-                { item: 'bloodmagic:reagentmagnetism' },
                 { item: 'botania:redstone_root' },
                 { item: 'thermal:phytogro' }
             ],

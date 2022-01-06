@@ -15,6 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
+    const id_prefix = 'enigmatica:expert/occultism/shaped/';
     const newRecipes = [
         {
             output: 'occultism:divination_rod',
@@ -26,14 +27,20 @@ onEvent('recipes', (event) => {
                 D: 'occultism:spirit_attuned_gem'
             },
             id: 'occultism:crafting/divination_rod'
+        },
+        {
+            output: 'occultism:sacrificial_bowl',
+            pattern: ['ABA', 'CAC'],
+            key: {
+                A: 'occultism:otherstone_slab',
+                B: '#forge:dusts/mana',
+                C: '#forge:inlays/pewter'
+            },
+            id: 'occultism:crafting/sacrificial_bowl'
         }
     ];
 
     newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

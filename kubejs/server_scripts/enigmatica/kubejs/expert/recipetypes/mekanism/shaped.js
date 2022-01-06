@@ -87,10 +87,9 @@ onEvent('recipes', (event) => {
             id: 'mekanism:thermal_evaporation/valve'
         },
         {
-            output: Item.of('3x mekanism:structural_glass'),
-            pattern: ['ABC', 'BCB', 'CBA'],
+            output: Item.of('5x mekanism:structural_glass'),
+            pattern: ['CBC', 'BCB', 'CBC'],
             key: {
-                A: '#mekanism:alloys/reinforced',
                 B: '#forge:plates/aluminum',
                 C: '#thermal:glass/hardened'
             },
@@ -752,6 +751,67 @@ onEvent('recipes', (event) => {
                 B: 'create:electron_tube'
             },
             id: 'mekanism:crafting_formula'
+        },
+        {
+            output: `mekanism:basic_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:lime_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/copper'
+            },
+            id: `mekanism:bin/basic`
+        },
+        {
+            output: `mekanism:advanced_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:red_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/bronze'
+            },
+            id: `mekanism:bin/advanced`
+        },
+        {
+            output: `mekanism:elite_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:light_blue_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/brass'
+            },
+            id: `mekanism:bin/elite`
+        },
+        {
+            output: `mekanism:ultimate_bin`,
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:blue_terracotta',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:ingots/hepatizon'
+            },
+            id: `mekanism:bin/ultimate`
+        },
+        {
+            output: `mekanism:logistical_sorter`,
+            pattern: ['ABA', 'ACA', 'EDE'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_black',
+                B: 'prettypipes:medium_extraction_module',
+                C: 'prettypipes:medium_filter_module',
+                D: 'prettypipes:round_robin_sorting_modifier',
+                E: '#forge:plates/iron_osmium'
+            },
+            id: `mekanism:logistical_sorter`
+        },
+        {
+            output: Item.of(`8x mekanism:basic_logistical_transporter`),
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:ingots/steel',
+                B: 'pneumaticcraft:logistics_core'
+            },
+            id: `mekanism:transmitter/logistical_transporter/basic`
         }
     ];
 

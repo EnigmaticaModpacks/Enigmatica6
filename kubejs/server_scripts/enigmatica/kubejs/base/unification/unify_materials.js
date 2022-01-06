@@ -453,7 +453,7 @@ onEvent('recipes', (event) => {
             recipes.push({ type: 'gear', amount: 576, input: `forge:gears/${material}`, time: 114 });
         }
         if (rod != air) {
-            recipes.push({ type: 'rod', amount: 72, input: `forge:rods/${material}`, time: 11 });
+            recipes.push({ type: 'rod', amount: 144, input: `forge:rods/${material}`, time: 11 });
         }
         if (plate != air) {
             recipes.push({ type: 'plate', amount: 144, input: `forge:plates/${material}`, time: 80 });
@@ -1156,7 +1156,7 @@ onEvent('recipes', (event) => {
             recipes.push({ type: 'gear', amount: 576, output: gear, energy: 20000 });
         }
         if (rod != air) {
-            recipes.push({ type: 'rod', amount: 72, output: rod, energy: 2500 });
+            recipes.push({ type: 'rod', amount: 144, output: rod, energy: 2500 });
         }
         if (plate != air) {
             recipes.push({ type: 'plate', amount: 144, output: plate, energy: 5000 });
@@ -1202,7 +1202,7 @@ onEvent('recipes', (event) => {
             recipes.push({ type: 'gear', amount: 576, input: `#forge:gears/${material}`, energy: 20000 });
         }
         if (rod != air) {
-            recipes.push({ type: 'rod', amount: 72, input: `#forge:rods/${material}`, energy: 2500 });
+            recipes.push({ type: 'rod', amount: 144, input: `#forge:rods/${material}`, energy: 2500 });
         }
         if (plate != air) {
             recipes.push({ type: 'plate', amount: 144, input: `#forge:plates/${material}`, energy: 5000 });
@@ -1247,7 +1247,7 @@ onEvent('recipes', (event) => {
             recipes.push({ type: 'gear', amount: 576, output: gear, energy: 20000 });
         }
         if (rod != air) {
-            recipes.push({ type: 'rod', amount: 72, output: rod, energy: 2500 });
+            recipes.push({ type: 'rod', amount: 144, output: rod, energy: 2500 });
         }
         if (plate != air) {
             recipes.push({ type: 'plate', amount: 144, output: plate, energy: 5000 });
@@ -1297,7 +1297,7 @@ onEvent('recipes', (event) => {
             recipes.push({ type: 'gear', amount: 576, input: `#forge:gears/${material}`, energy: 20000 });
         }
         if (rod != air) {
-            recipes.push({ type: 'rod', amount: 72, input: `#forge:rods/${material}`, energy: 2500 });
+            recipes.push({ type: 'rod', amount: 144, input: `#forge:rods/${material}`, energy: 2500 });
         }
         if (plate != air) {
             recipes.push({ type: 'plate', amount: 144, input: `#forge:plates/${material}`, energy: 5000 });
@@ -1337,7 +1337,7 @@ onEvent('recipes', (event) => {
             recipes.push({ type: 'gear', amount: 576, cooling: 114, output: gear });
         }
         if (rod != air) {
-            recipes.push({ type: 'rod', amount: 72, cooling: 40, output: rod });
+            recipes.push({ type: 'rod', amount: 144, cooling: 40, output: rod });
         }
         if (plate != air) {
             recipes.push({ type: 'plate', amount: 144, cooling: 57, output: plate });
@@ -1408,7 +1408,7 @@ onEvent('recipes', (event) => {
             recipes.push({ type: 'gear', amount: 576, cooling: 256, output: gear });
         }
         if (rod != air) {
-            recipes.push({ type: 'rod', amount: 72, cooling: 32, output: rod });
+            recipes.push({ type: 'rod', amount: 144, cooling: 32, output: rod });
         }
         if (plate != air) {
             recipes.push({ type: 'plate', amount: 144, cooling: 64, output: plate });

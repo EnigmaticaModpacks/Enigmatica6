@@ -5,16 +5,28 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/astralsorcery/block_transmutation';
     const recipes = [
         {
-            input: 'eidolon:worktable',
-            output: 'astralsorcery:altar_discovery',
+            input: { block: 'eidolon:worktable' },
+            output: { block: 'astralsorcery:altar_discovery' },
             starlight: 60,
             id: 'astralsorcery:block_transmutation/craftingtable_altar'
         },
         {
-            input: 'kubejs:firmament',
-            output: 'astralsorcery:starmetal_ore',
+            input: { block: 'kubejs:firmament' },
+            output: { block: 'astralsorcery:starmetal_ore' },
             starlight: 100,
             id: 'astralsorcery:block_transmutation/iron_starmetal'
+        },
+        {
+            input: [
+                {
+                    block: 'farmersdelight:stuffed_pumpkin_block',
+                    display: { item: 'farmersdelight:stuffed_pumpkin_block', count: 1 }
+                }
+            ],
+            output: { block: 'minecraft:cake', properties: [{ name: 'bites', value: '0' }] },
+            display: { item: 'minecraft:cake', count: 1 },
+            starlight: 300,
+            id: 'astralsorcery:block_transmutation/pumpkin_cake'
         }
     ];
 
@@ -32,21 +44,15 @@ onEvent('recipes', (event) => {
 
     crystals.forEach((crystal) => {
         recipes.push({
-            input: `quark:${crystal.color1}_crystal`,
-            output: `quark:${crystal.color2}_crystal`,
+            input: { block: `quark:${crystal.color1}_crystal` },
+            output: { block: `quark:${crystal.color2}_crystal` },
             starlight: 1000,
             id: `${id_prefix}${crystal.color2}_crystal`
         });
     });
 
     recipes.forEach((recipe) => {
-        event
-            .custom({
-                type: 'astralsorcery:block_transmutation',
-                input: { block: recipe.input },
-                output: { block: recipe.output },
-                starlight: recipe.starlight
-            })
-            .id(recipe.id);
+        recipe.type = 'astralsorcery:block_transmutation';
+        event.custom(recipe).id(recipe.id);
     });
 });

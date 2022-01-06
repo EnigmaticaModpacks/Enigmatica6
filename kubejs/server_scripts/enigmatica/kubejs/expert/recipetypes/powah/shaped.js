@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/powah/';
     const recipes = [
         {
             output: 'powah:photoelectric_pane',
@@ -41,6 +41,28 @@ onEvent('recipes', (event) => {
                 C: 'powah:dielectric_rod'
             },
             id: 'powah:crafting/dielectric_casing'
+        },
+        {
+            output: `powah:player_transmitter_basic`,
+            pattern: [' A ', 'BCB', 'BDB'],
+            key: {
+                A: 'powah:player_aerial_pearl',
+                B: 'powah:capacitor_basic_large',
+                C: 'immersiveengineering:tesla_coil',
+                D: 'powah:dielectric_casing'
+            },
+            id: `powah:crafting/player_tranmitter_basic`
+        },
+        {
+            output: `powah:energizing_rod_basic`,
+            pattern: [' A ', 'BCB', 'BDB'],
+            key: {
+                A: 'refinedstorage:quartz_enriched_iron_block',
+                B: 'powah:capacitor_basic_large',
+                C: 'immersiveengineering:tesla_coil',
+                D: 'immersiveengineering:coil_lv'
+            },
+            id: `powah:crafting/energizing_rod_basic`
         }
     ];
 
@@ -48,8 +70,7 @@ onEvent('recipes', (event) => {
         if (tier == 'starter') {
             return;
         }
-        let capacitor = `powah:capacitor_${tier}`,
-            crystal = `powah:crystal_${tier}`;
+        let capacitor = `powah:capacitor_${tier}`;
 
         if (tier == 'basic') {
             capacitor = `powah:capacitor_${tier}_large`;
@@ -73,6 +94,7 @@ onEvent('recipes', (event) => {
             i++;
         }
 
+        // Primary Craft
         recipes.push(
             {
                 output: `powah:furnator_${tier}`,
@@ -130,52 +152,111 @@ onEvent('recipes', (event) => {
                     D: 'powah:dielectric_rod'
                 },
                 id: `powah:crafting/energy_hopper_${tier}`
+            },
+            {
+                output: `powah:ender_cell_${tier}`,
+                pattern: ['ABA', 'BCB', 'ABA'],
+                key: {
+                    A: 'fluxnetworks:flux_core',
+                    B: capacitor,
+                    C: 'fluxnetworks:flux_block'
+                },
+                id: `powah:crafting/ender_cell_${tier}`
             }
         );
+
+        // Upgrade Craft
+        if (tier != 'basic') {
+            recipes.push(
+                {
+                    output: Item.of(`powah:furnator_${tier}`),
+                    pattern: ['BCB'],
+                    key: {
+                        B: capacitor,
+                        C: Ingredient.of(lowerTiers.map((item) => `powah:furnator_${item}`))
+                    },
+                    id: `${id_prefix}furnator_${tier}_upgrade`
+                },
+                {
+                    output: Item.of(`powah:magmator_${tier}`),
+                    pattern: ['BAB', 'BCB'],
+                    key: {
+                        A: wire_coil,
+                        B: capacitor,
+                        C: Ingredient.of(lowerTiers.map((item) => `powah:magmator_${item}`))
+                    },
+                    id: `${id_prefix}magmator_${tier}_upgrade`
+                },
+                {
+                    output: Item.of(`powah:thermo_generator_${tier}`),
+                    pattern: ['BAB', 'BCB'],
+                    key: {
+                        A: `powah:magmator_${tier}`,
+                        B: capacitor,
+                        C: Ingredient.of(lowerTiers.map((item) => `powah:thermo_generator_${item}`))
+                    },
+                    id: `${id_prefix}thermo_generator_${tier}_upgrade`
+                },
+                {
+                    output: Item.of(`powah:energy_discharger_${tier}`),
+                    pattern: ['ABA', ' C ', ' A '],
+                    key: {
+                        A: capacitor,
+                        B: `powah:energy_discharger_${tier}`,
+                        C: Ingredient.of(lowerTiers.map((item) => `powah:energy_cell_${item}`))
+                    },
+                    id: `${id_prefix}energy_discharger_${tier}_upgrade`
+                },
+                {
+                    output: Item.of(`powah:energy_hopper_${tier}`),
+                    pattern: ['A A', 'ABA'],
+                    key: {
+                        A: capacitor,
+                        B: Ingredient.of(lowerTiers.map((item) => `powah:energy_hopper_${item}`))
+                    },
+                    id: `${id_prefix}energy_hopper_${tier}_upgrade`
+                },
+                {
+                    output: Item.of(`powah:ender_cell_${tier}`),
+                    pattern: [' A ', 'ABA', ' A '],
+                    key: {
+                        A: capacitor,
+                        B: Ingredient.of(lowerTiers.map((item) => `powah:ender_cell_${item}`))
+                    },
+                    id: `${id_prefix}ender_cell_${tier}_upgrade`
+                }
+            );
+        }
 
         let previousTierRod, previousTierTransmitter;
         if (index > 1) {
             previousTierRod = `powah:energizing_rod_${powahTiers[index - 1]}`;
             previousTierTransmitter = `powah:player_transmitter_${powahTiers[index - 1]}`;
 
-            recipes.push({
-                output: `powah:player_transmitter_${tier}`,
-                pattern: ['BCB', 'BDB'],
-                key: {
-                    B: capacitor,
-                    C: previousTierTransmitter,
-                    D: 'powah:dielectric_casing'
+            recipes.push(
+                {
+                    output: `powah:player_transmitter_${tier}`,
+                    pattern: ['BCB', 'BDB'],
+                    key: {
+                        B: capacitor,
+                        C: previousTierTransmitter,
+                        D: 'powah:dielectric_casing'
+                    },
+                    id: `powah:crafting/player_tranmitter_${tier}`
                 },
-                id: `powah:crafting/player_tranmitter_${tier}`
-            });
-        } else {
-            previousTierRod = 'immersiveengineering:tesla_coil';
-            previousTierTransmitter = 'immersiveengineering:tesla_coil';
-
-            recipes.push({
-                output: `powah:player_transmitter_${tier}`,
-                pattern: [' A ', 'BCB', 'BDB'],
-                key: {
-                    A: 'powah:player_aerial_pearl',
-                    B: capacitor,
-                    C: previousTierTransmitter,
-                    D: 'powah:dielectric_casing'
-                },
-                id: `powah:crafting/player_tranmitter_${tier}`
-            });
+                {
+                    output: `powah:energizing_rod_${tier}`,
+                    pattern: [' A ', 'BCB', 'BDB'],
+                    key: {
+                        A: 'refinedstorage:quartz_enriched_iron_block',
+                        B: capacitor,
+                        C: previousTierRod,
+                        D: wire_coil
+                    },
+                    id: `powah:crafting/energizing_rod_${tier}`
+                }
+            );
         }
-
-        recipes.push({
-            output: `powah:energizing_rod_${tier}`,
-            pattern: [' A ', 'BCB', 'BDB'],
-            key: {
-                A: 'refinedstorage:quartz_enriched_iron_block',
-                B: capacitor,
-                C: previousTierRod,
-                D: wire_coil
-            },
-            id: `powah:crafting/energizing_rod_${tier}`
-        });
     });
 
     recipes.forEach((recipe) => {

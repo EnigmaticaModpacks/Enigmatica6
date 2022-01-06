@@ -90,7 +90,7 @@ onEvent('recipes', (event) => {
             output: 'sophisticatedbackpacks:pickup_upgrade',
             pattern: [' A ', 'BDB', ' C '],
             key: {
-                A: 'quark:slime_in_a_bucket',
+                A: '#forge:slimeballs',
                 B: 'thermal:redstone_servo',
                 C: 'aquaculture:diamond_fishing_rod',
                 D: 'sophisticatedbackpacks:upgrade_base'

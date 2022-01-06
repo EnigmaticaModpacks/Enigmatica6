@@ -20,4 +20,19 @@ dimension_whitelist = []
 dimension_blacklist = []
 #list of loot tables which shouldn't be converted [in the format of modid:loot_table]
 loot_table_blacklist = []
+#lootr will automatically log all unresolved tables (i.e., for containers that have a loot table associated with them but, for whatever reason, the lookup for this table returns empty). setting this option to true additionally informs players when they open containers.
+report_unresolved_tables = false
+#prevent the destruction of Lootr chests except while sneaking in creative mode
+disable_break = false
+#how long (in ticks) a decaying loot containers should take to decay [default 5 minutes = 5 * 60 * 20]
+#Range: > 0
+decay_value = 6000
+#list of loot tables which will decay [default blank, meaning no chests decay, in the format of 'modid:loot_table']
+decay_loot_tables = []
+#list of mod IDs whose loot tables will decay [default blank, meaning no chests decay, in the format of 'modid', 'modid']
+decay_modids = []
+#list of dimensions where loot chests should automatically decay [default: blank, e.g., minecraft:overworld]
+decay_dimensions = []
+#overriding decay_loot_tables, decay_modids and decay_dimensions: all chests will decay after being opened for the first time
+decay_all = false
 

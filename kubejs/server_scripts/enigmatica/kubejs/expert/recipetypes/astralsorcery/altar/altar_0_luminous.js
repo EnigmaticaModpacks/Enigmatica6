@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 0,
             duration: 100,
-            starlight: 700,
+            starlight: 500,
             recipe_class: 'astralsorcery:attunement_upgrade',
             effects: ['astralsorcery:built_in_effect_discovery_central_beam', 'astralsorcery:upgrade_altar'],
             id: 'astralsorcery:altar/altar_attunement'
@@ -133,6 +133,22 @@ onEvent('recipes', (event) => {
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
             id: `${id_prefix}mana_spreader`
+        },
+        {
+            output: Item.of('apotheosis:hellshelf', 1),
+            pattern: ['_____', '_ACF_', '_BEB_', '_FCA_', '_____'],
+            key: {
+                A: { item: 'tconstruct:scorched_bricks' },
+                B: { tag: 'botania:runes/fire' },
+                C: { item: 'resourcefulbees:ghast_honeycomb' },
+                E: { tag: 'forge:bookshelves' },
+                F: { item: 'ars_nouveau:blaze_fiber' }
+            },
+            altar_type: 0,
+            duration: 100,
+            starlight: 200,
+            effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
+            id: `${id_prefix}hellshelf`
         }
     ];
 

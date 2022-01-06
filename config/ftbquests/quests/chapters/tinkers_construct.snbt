@@ -18,7 +18,7 @@
 				"tconstruct:mining_speed": 2.5125f
 				"tconstruct:attack_damage": 5.9375f
 				"tconstruct:harvest_level": 4.0f
-				"tconstruct:durability": 7562.5f
+				"tconstruct:durability": 7906.25f
 			}
 			tic_broken: 0b
 			tic_modifiers: [
@@ -47,6 +47,7 @@
 					level: 1s
 				}
 			]
+			HideFlags: 3
 			tic_materials: [
 				"tconstruct:hepatizon"
 				"tconstruct:wood"
@@ -82,7 +83,7 @@
 						"tconstruct:mining_speed": 2.5125f
 						"tconstruct:attack_damage": 5.9375f
 						"tconstruct:harvest_level": 4.0f
-						"tconstruct:durability": 7562.5f
+						"tconstruct:durability": 7906.25f
 					}
 					tic_broken: 0b
 					tic_modifiers: [
@@ -111,6 +112,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:hepatizon"
 						"tconstruct:wood"
@@ -482,14 +484,25 @@
 			id: "1BECFB61E2216217"
 			tasks: [
 				{
-					id: "40C66C0A845AC4DC"
-					type: "item"
-					item: "tconstruct:seared_melter"
-				}
-				{
 					id: "66575D6B48FFD434"
 					type: "item"
-					item: "tconstruct:seared_heater"
+					title: "Seared Melter"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:seared_melter"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:seared_heater"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "78758910B6CD9108"
@@ -755,13 +768,23 @@
 			dependencies: ["155CE535A506F2D4"]
 			id: "23F5852361B79CC5"
 			tasks: [{
-				id: "4F528D63F9B53280"
+				id: "3187F82B6F7F3E2A"
 				type: "item"
+				title: "Tinker's Anvil"
 				item: {
-					id: "tconstruct:scorched_anvil"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						texture: "tconstruct:slimesteel_block"
+						items: [
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
@@ -818,6 +841,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:wood"
@@ -919,6 +943,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:tinkers_bronze"
 								"tconstruct:wood"
@@ -983,6 +1008,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:wood"
@@ -1077,6 +1103,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:tinkers_bronze"
 								"tconstruct:wood"
@@ -1145,6 +1172,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:wood"
@@ -1243,6 +1271,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:tinkers_bronze"
 								"tconstruct:wood"
@@ -1307,6 +1336,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:wood"
@@ -1415,6 +1445,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:tinkers_bronze"
 								"tconstruct:wood"
@@ -1479,6 +1510,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:wood"
@@ -1583,6 +1615,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:tinkers_bronze"
 								"tconstruct:wood"
@@ -1651,6 +1684,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:wood"
@@ -1739,6 +1773,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:tinkers_bronze"
 								"tconstruct:wood"
@@ -1807,6 +1842,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:stone"
 						"tconstruct:wood"
@@ -1891,6 +1927,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:stone"
 								"tconstruct:wood"
@@ -1948,6 +1985,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:stone"
 						"tconstruct:wood"
@@ -2032,6 +2070,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:stone"
 								"tconstruct:wood"
@@ -2084,6 +2123,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:stone"
 						"tconstruct:wood"
@@ -2165,6 +2205,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:stone"
 								"tconstruct:wood"
@@ -2217,6 +2258,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:stone"
 						"tconstruct:wood"
@@ -2299,6 +2341,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:stone"
 								"tconstruct:wood"
@@ -2328,13 +2371,19 @@
 				id: "tconstruct:mattock"
 				Count: 1b
 				tag: {
-					tic_multipliers: { }
+					tic_multipliers: {
+						"tconstruct:secondary_mining": 0.65f
+						"tconstruct:mining_speed": 1.1f
+						"tconstruct:attack_damage": 1.1f
+						"tconstruct:durability": 1.25f
+					}
 					tic_stats: {
-						"tconstruct:attack_speed": 1.0f
-						"tconstruct:mining_speed": 4.0f
-						"tconstruct:attack_damage": 2.5f
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:secondary_mining": 0.65f
+						"tconstruct:attack_damage": 2.75f
 						"tconstruct:harvest_level": 1.0f
-						"tconstruct:durability": 130.0f
+						"tconstruct:durability": 162.5f
+						"tconstruct:mining_speed": 4.4f
 					}
 					tic_broken: 0b
 					tic_modifiers: [
@@ -2355,6 +2404,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:stone"
 						"tconstruct:wood"
@@ -2413,13 +2463,19 @@
 						id: "tconstruct:mattock"
 						Count: 1b
 						tag: {
-							tic_multipliers: { }
+							tic_multipliers: {
+								"tconstruct:secondary_mining": 0.65f
+								"tconstruct:mining_speed": 1.1f
+								"tconstruct:attack_damage": 1.1f
+								"tconstruct:durability": 1.25f
+							}
 							tic_stats: {
-								"tconstruct:attack_speed": 1.0f
-								"tconstruct:mining_speed": 4.0f
-								"tconstruct:attack_damage": 2.5f
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:secondary_mining": 0.65f
+								"tconstruct:attack_damage": 2.75f
 								"tconstruct:harvest_level": 1.0f
-								"tconstruct:durability": 130.0f
+								"tconstruct:durability": 162.5f
+								"tconstruct:mining_speed": 4.4f
 							}
 							tic_broken: 0b
 							tic_modifiers: [
@@ -2440,6 +2496,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:stone"
 								"tconstruct:wood"
@@ -2502,6 +2559,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:stone"
 						"tconstruct:wood"
@@ -2593,6 +2651,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:stone"
 								"tconstruct:wood"
@@ -2685,6 +2744,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:wood"
@@ -2762,6 +2822,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							tic_materials: [
 								"tconstruct:tinkers_bronze"
 								"tconstruct:wood"
@@ -2973,23 +3034,38 @@
 			description: ["These boots will allow the tinkerer to bounce safely from great heights instead of hitting the ground hard. Unlike the slings, the different boots are purely aesthetic. "]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "12B4F7ED5AD83DBC"
-			tasks: [
-				{
-					id: "176867E738D4714C"
-					type: "item"
-					item: "tconstruct:earth_slime_boots"
+			tasks: [{
+				id: "176867E738D4714C"
+				type: "item"
+				item: {
+					id: "tconstruct:slime_boots"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 546.0f
+							"tconstruct:armor": 0.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:bouncy"
+								level: 1s
+							}
+							{
+								name: "tconstruct:leaping"
+								level: 1s
+							}
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 5
+						}
+					}
 				}
-				{
-					id: "71C0FF1C37666BB9"
-					type: "item"
-					item: "tconstruct:sky_slime_boots"
-				}
-				{
-					id: "2542091A64F64F8C"
-					type: "item"
-					item: "tconstruct:ender_slime_boots"
-				}
-			]
+			}]
 			rewards: [{
 				id: "7DE85E011FF0A2CC"
 				type: "command"
@@ -3238,6 +3314,7 @@
 								level: 1s
 							}
 						]
+						HideFlags: 3
 						Damage: 0
 						tic_persistent_data: {
 							abilities: 0
