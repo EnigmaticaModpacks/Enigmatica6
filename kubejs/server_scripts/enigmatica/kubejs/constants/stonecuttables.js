@@ -2390,17 +2390,43 @@ const stonecuttables = [
         onlyAsInput: []
     }
 ];
+// Glass
+colors.forEach((color) => {
+    let glasses_in_tag = getItemsInTag(Ingredient.of(`#forge:glass/${color}`)),
+        glass_panes_in_tag = getItemsInTag(Ingredient.of(`#forge:glass_panes/${color}`)),
+        glasses = [],
+        glass_panes = [];
 
-let chippedTypes = ['wool', 'carpet', 'stained_glass', 'stained_glass_pane', 'terracotta', 'concrete'];
+    glasses_in_tag.forEach((glass) => {
+        glasses.push(glass.id);
+    });
+
+    glass_panes_in_tag.forEach((glass_pane) => {
+        glass_panes.push(glass_pane.id);
+    });
+
+    stonecuttables.push({
+        name: `${color}_glass`,
+        stones: glasses,
+        onlyAsOutput: [],
+        onlyAsInput: []
+    });
+
+    stonecuttables.push({
+        name: `${color}_glass_pane`,
+        stones: glass_panes,
+        onlyAsOutput: [],
+        onlyAsInput: []
+    });
+});
+
+let chippedTypes = ['wool', 'carpet', 'terracotta', 'concrete'];
 
 chippedTypes.forEach((chippedType) => {
     colors.forEach((color) => {
         let stones = [`minecraft:${color}_${chippedType}`],
             indexLength = 18;
 
-        if (chippedType == 'stained_glass' || chippedType == 'stained_glass_pane') {
-            indexLength = 8;
-        }
         for (i = 1; i <= indexLength; i++) {
             stones.push(`chipped:${color}_${chippedType}_${i}`);
         }
