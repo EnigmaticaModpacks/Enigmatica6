@@ -2390,40 +2390,29 @@ const stonecuttables = [
         onlyAsInput: []
     }
 ];
-// Glass
+
 colors.forEach((color) => {
-    let glasses_in_tag = getItemsInTag(Ingredient.of(`#forge:glass/${color}`)),
-        glass_panes_in_tag = getItemsInTag(Ingredient.of(`#forge:glass_panes/${color}`)),
-        glasses = [],
-        glass_panes = [];
+    // Glass
+    let glassTypes = ['glass', 'glass_panes'];
+    glassTypes.forEach((glassType) => {
+        let glassesInTag = getItemsInTag(Ingredient.of(`#forge:${glassType}/${color}`)),
+            glasses = [];
 
-    glasses_in_tag.forEach((glass) => {
-        glasses.push(glass.id);
+        glassesInTag.forEach((glass) => {
+            glasses.push(glass.id);
+        });
+
+        stonecuttables.push({
+            name: `${color}_${glassType}`,
+            stones: glasses,
+            onlyAsOutput: [],
+            onlyAsInput: []
+        });
     });
 
-    glass_panes_in_tag.forEach((glass_pane) => {
-        glass_panes.push(glass_pane.id);
-    });
-
-    stonecuttables.push({
-        name: `${color}_glass`,
-        stones: glasses,
-        onlyAsOutput: [],
-        onlyAsInput: []
-    });
-
-    stonecuttables.push({
-        name: `${color}_glass_pane`,
-        stones: glass_panes,
-        onlyAsOutput: [],
-        onlyAsInput: []
-    });
-});
-
-let chippedTypes = ['wool', 'carpet', 'terracotta', 'concrete'];
-
-chippedTypes.forEach((chippedType) => {
-    colors.forEach((color) => {
+    // Chipped Extras
+    let chippedTypes = ['wool', 'carpet', 'terracotta', 'concrete'];
+    chippedTypes.forEach((chippedType) => {
         let stones = [`minecraft:${color}_${chippedType}`],
             indexLength = 18;
 
@@ -2435,7 +2424,6 @@ chippedTypes.forEach((chippedType) => {
             stones.push(`chisel:${chippedType}/${color}/llama`);
             stones.push(`chisel:${chippedType}/${color}/legacy`);
         }
-        //
         stonecuttables.push({
             name: `${color}_${chippedType}`,
             stones: stones,
@@ -2443,44 +2431,43 @@ chippedTypes.forEach((chippedType) => {
             onlyAsInput: []
         });
     });
-});
 
-let chiselStoneTypes = [
-    'cracked',
-    'solid_bricks',
-    'small_bricks',
-    'soft_bricks',
-    'cracked_bricks',
-    'triple_bricks',
-    'encased_bricks',
-    'chaotic_bricks',
-    'array',
-    'tiles_medium',
-    'tiles_large',
-    'tiles_small',
-    'chaotic_medium',
-    'chaotic_small',
-    'braid',
-    'dent',
-    'french_1',
-    'french_2',
-    'jellybean',
-    'layers',
-    'mosaic',
-    'ornate',
-    'panel',
-    'road',
-    'slanted',
-    'zag',
-    'circular',
-    'circularct',
-    'weaver',
-    'pillar',
-    'twisted',
-    'prism',
-    'cuts'
-];
-colors.forEach((color) => {
+    let chiselStoneTypes = [
+        'cracked',
+        'solid_bricks',
+        'small_bricks',
+        'soft_bricks',
+        'cracked_bricks',
+        'triple_bricks',
+        'encased_bricks',
+        'chaotic_bricks',
+        'array',
+        'tiles_medium',
+        'tiles_large',
+        'tiles_small',
+        'chaotic_medium',
+        'chaotic_small',
+        'braid',
+        'dent',
+        'french_1',
+        'french_2',
+        'jellybean',
+        'layers',
+        'mosaic',
+        'ornate',
+        'panel',
+        'road',
+        'slanted',
+        'zag',
+        'circular',
+        'circularct',
+        'weaver',
+        'pillar',
+        'twisted',
+        'prism',
+        'cuts'
+    ];
+
     // @Chisel concrete
     let stonecuttablesIndex = stonecuttables.findIndex((obj) => {
         return obj.name == `${color}_concrete`;
