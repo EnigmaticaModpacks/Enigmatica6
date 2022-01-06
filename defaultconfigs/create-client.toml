@@ -12,6 +12,7 @@
 	#Log a stack-trace when rendering issues happen within a moving contraption.
 	explainRenderErrors = false
 	# 
+	#Higher density means more spawned particles.
 	#Range: 0.0 ~ 1.0
 	fanParticleDensity = 0.5
 	# 
@@ -20,14 +21,6 @@
 	# 
 	#Use modern OpenGL features to drastically increase performance.
 	experimentalRendering = true
-	# 
-	#Offset the overlay from goggle- and hover- information by this many pixels on the X axis; Use /create overlay
-	#Range: > -2147483648
-	overlayOffsetX = 20
-	# 
-	#Offset the overlay from goggle- and hover- information by this many pixels on the Y axis; Use /create overlay
-	#Range: > -2147483648
-	overlayOffsetY = 0
 	# 
 	#Setting this to true will prevent Create from sending you a warning when playing with Fabulous graphics enabled
 	ignoreFabulousWarning = false
@@ -42,7 +35,7 @@
 	mainMenuConfigButtonRow = 0
 	# 
 	#Offset the Create config button in the main menu by this many pixels on the X axis
-	#The sign (+/-) of this value determines what side of the row the button appears on (right/left)
+	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
 	#Range: > -2147483648
 	mainMenuConfigButtonOffsetX = -4
 	# 
@@ -52,9 +45,14 @@
 	ingameMenuConfigButtonRow = 3
 	# 
 	#Offset the Create config button in the in-game menu by this many pixels on the X axis
-	#The sign (+/-) of this value determines what side of the row the button appears on (right/left)
+	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
 	#Range: > -2147483648
 	ingameMenuConfigButtonOffsetX = -4
+	# 
+	#[in Blocks]
+	#Maximum Distance to the player at which items in Blocks' filter slots will be displayed
+	#Range: 1.0 ~ 3.4028234663852886E38
+	filterItemRenderDistance = 10.0
 
 	# 
 	#Settings for the Placement Assist
@@ -86,4 +84,37 @@
 		#Maximum volume modifier of Ambient noise
 		#Range: 0.0 ~ 1.0
 		ambientVolumeCap = 0.10000000149011612
+
+	# 
+	#Settings for the Goggle Overlay
+	[client.goggleOverlay]
+		# 
+		#Offset the overlay from goggle- and hover- information by this many pixels on the respective axis; Use /create overlay
+		#Range: > -2147483648
+		overlayOffsetX = 20
+		# 
+		#Offset the overlay from goggle- and hover- information by this many pixels on the respective axis; Use /create overlay
+		#Range: > -2147483648
+		overlayOffsetY = 0
+		# 
+		#Enable this to use your custom colors for the Goggle- and Hover- Overlay
+		customColorsOverlay = false
+		# 
+		#The custom background color to use for the Goggle- and Hover- Overlays, if enabled
+		#[in Hex: #AaRrGgBb]
+		#[@cui:IntDisplay:#]
+		#Range: > -2147483648
+		customBackgroundOverlay = -267386864
+		# 
+		#The custom top color of the border gradient to use for the Goggle- and Hover- Overlays, if enabled
+		#[in Hex: #AaRrGgBb]
+		#[@cui:IntDisplay:#]
+		#Range: > -2147483648
+		customBorderTopOverlay = 1347420415
+		# 
+		#The custom bot color of the border gradient to use for the Goggle- and Hover- Overlays, if enabled
+		#[in Hex: #AaRrGgBb]
+		#[@cui:IntDisplay:#]
+		#Range: > -2147483648
+		customBorderBotOverlay = 1344798847
 
