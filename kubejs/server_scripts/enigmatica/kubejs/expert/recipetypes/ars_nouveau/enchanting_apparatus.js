@@ -389,7 +389,7 @@ onEvent('recipes', (event) => {
                 'naturesaura:aura_bloom',
                 '#resourcefulbees:resourceful_honeycomb_block'
             ],
-            reagent: 'resourcefulbees:t1_apiary',
+            reagent: Item.of('resourcefulbees:t1_apiary').ignoreNBT(),
             sourceCost: 5000,
             output: 'resourcefulbees:t2_apiary',
             id: 'resourcefulbees:t2_apiary'
