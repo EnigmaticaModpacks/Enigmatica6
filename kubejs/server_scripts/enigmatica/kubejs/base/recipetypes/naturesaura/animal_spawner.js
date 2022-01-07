@@ -156,6 +156,18 @@ onEvent('recipes', (event) => {
             aura: 50000,
             time: 60,
             id: `${id_prefix}yak`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                'environmental:slabfish_effigy',
+                'minecraft:tropical_fish',
+                'upgrade_aquatic:luminous_prismarine_vertical_slab'
+            ],
+            entity: 'environmental:slabfish',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}slabfish`
         }
     ];
     recipes.forEach((recipe) => {
