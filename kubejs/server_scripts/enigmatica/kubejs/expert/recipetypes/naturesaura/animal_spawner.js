@@ -4,7 +4,6 @@ onEvent('recipes', (event) => {
     }
 
     const id_prefix = 'enigmatica:base/naturesaura/animalspawner/';
-
     const recipes = [
         {
             inputs: [
@@ -67,21 +66,21 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:animal_spawner/blaze'
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:bloody_honeycomb', 'minecraft:blue_ice'],
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:forest_honeycomb', 'minecraft:blue_ice'],
             entity: 'ars_nouveau:wilden_guardian',
             aura: 250000,
             time: 120,
             id: `${id_prefix}wilden_guardian`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:bloody_honeycomb', 'valhelsia_structures:bone_pile'],
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:forest_honeycomb', 'valhelsia_structures:bone_pile'],
             entity: 'ars_nouveau:wilden_hunter',
             aura: 150000,
             time: 120,
             id: `${id_prefix}wilden_hunter`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:bloody_honeycomb', 'astralsorcery:nocturnal_powder'],
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:forest_honeycomb', 'astralsorcery:nocturnal_powder'],
             entity: 'ars_nouveau:wilden_stalker',
             aura: 150000,
             time: 120,
@@ -126,20 +125,8 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        let ingredients = [];
-
-        recipe.inputs.forEach((input) => {
-            ingredients.push(Ingredient.of(input).toJson());
-        });
-
-        event
-            .custom({
-                type: 'naturesaura:animal_spawner',
-                ingredients: ingredients,
-                entity: recipe.entity,
-                aura: recipe.aura,
-                time: recipe.time
-            })
-            .id(recipe.id);
+        recipe.type = 'naturesaura:animal_spawner';
+        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+        event.custom(recipe).id(recipe.id);
     });
 });
