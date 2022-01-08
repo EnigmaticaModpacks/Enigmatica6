@@ -152,6 +152,7 @@ onEvent('recipes', (event) => {
         'immersivepetroleum:distillationtower/oilcracking',
 
         'materialis:smeltery/melting/metal/starmetal/dust',
+        /materialis:armor\/building\/exosuit/,
 
         'mekanism:crushing/stone/to_cobblestone',
         'mekanism:enriching/enriched/tin',
