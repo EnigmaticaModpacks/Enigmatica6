@@ -642,6 +642,8 @@ const disabledItems = [
     'losttrinkets:rock_candy',
     'losttrinkets:mad_aura',
 
+    /materialis:psimetal/,
+
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',
     'mekanism:dust_lithium',
