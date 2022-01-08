@@ -6,9 +6,9 @@ onEvent('recipes', (event) => {
     var data = {
         recipes: [
             {
-                input1: Item.of('#forge:ingots/cobalt', 3),
+                input1: Ingredient.of('3x #forge:ingots/cobalt'),
                 secondaries: ['thermal:blizz_powder'],
-                outputs: [Item.of('undergarden:froststeel_ingot', 3)],
+                outputs: [Item.of('3x undergarden:froststeel_ingot')],
                 id: `${id_prefix}froststeel_ingot`
             },
             {
@@ -22,6 +22,12 @@ onEvent('recipes', (event) => {
                 secondaries: ['immersiveengineering:coil_mv', Item.of('3x fluxnetworks:flux_dust')],
                 outputs: [Item.of('6x compactmachines:wall')],
                 id: `${id_prefix}cm_wall`
+            },
+            {
+                input1: Item.of('8x industrialforegoing:dryrubber'),
+                secondaries: [['#forge:dusts/coal_petcoke', '#forge:dusts/coal_coke']],
+                outputs: [Item.of('8x industrialforegoing:plastic'), Item.of('8x thermal:slag')],
+                id: `${id_prefix}plastic`
             }
         ]
     };

@@ -708,6 +708,23 @@ onEvent('recipes', (event) => {
                 I: '#industrialforegoing:machine_frame/pity'
             },
             id: 'industrialforegoing:dissolution_chamber'
+        },
+        {
+            output: 'mekanism:meka_tool',
+            pattern: ['AAABB', ' CDE ', 'AAABB', '  F  '],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'immersiveengineering:toolupgrade_shield_magnet',
+                D: [
+                    'mininggadgets:mininggadget_simple',
+                    'mininggadgets:mininggadget',
+                    'mininggadgets:mininggadget_fancy'
+                ],
+                E: 'mekanism:laser_amplifier',
+                F: 'thermal:upgrade_augment_3'
+            },
+            id: 'mekanism:meka_tool'
         }
     ];
 

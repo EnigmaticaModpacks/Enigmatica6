@@ -6,6 +6,7 @@ onEvent('recipes', (event) => {
         immersiveengineering_dye_crusher(event, recipe);
         //integrateddynamics_dye_squeezing(event, recipe);
         mekanism_dye_enriching(event, recipe);
+        mekanism_pigment_extracting(event, recipe);
         pedestals_dye_crushing(event, recipe);
         thermal_dye_centrifuge(event, recipe);
         atum_quern_milling(event, recipe);
@@ -126,6 +127,27 @@ function mekanism_dye_enriching(event, recipe) {
 
     event.recipes.mekanism.enriching(output, input);
 }
+
+function mekanism_pigment_extracting(event, recipe) {
+    if (!recipe.primary.includes('_dye')) {
+        return;
+    }
+    var baseCount = 3,
+        multiplier = 1;
+    if (recipe.type == 'large') {
+        multiplier = 2;
+    }
+
+    let dye_color = recipe.primary.split(':')[1].replace('_dye', '');
+    let count = baseCount * multiplier;
+
+    event.custom({
+        type: 'mekanism:pigment_extracting',
+        input: { ingredient: { item: recipe.input } },
+        output: { pigment: `mekanism:${dye_color}`, amount: 256 * count }
+    });
+}
+
 function pedestals_dye_crushing(event, recipe) {
     if (recipe.input == 'minecraft:bone') {
         return;
