@@ -1068,6 +1068,120 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanismgenerators:module_geothermal_generator_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/elite',
+                '#forge:circuits/elite',
+                'botania:pixie_dust',
+                'travel_anchors:travel_staff',
+                'botania:pixie_dust'
+            ],
+            inputFluid: 'materialis:molten_elementium',
+            inputFluidAmount: 1296,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_teleportation_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_teleportation_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/elite',
+                '#forge:circuits/elite',
+                'bloodmagic:destructivecrystal',
+                'astralsorcery:colored_lens_break',
+                'bloodmagic:destructivecrystal'
+            ],
+            inputFluid: 'thermal:glowstone',
+            inputFluidAmount: 8000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_vein_mining_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_vein_mining_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/elite',
+                '#forge:circuits/elite',
+                'bloodmagic:steadfastcrystal',
+                'astralsorcery:colored_lens_spectral',
+                'bloodmagic:steadfastcrystal'
+            ],
+            inputFluid: 'thermal:ender',
+            inputFluidAmount: 8000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_silk_touch_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_silk_touch_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/elite',
+                '#forge:circuits/elite',
+                'bloodmagic:vengefulcrystal',
+                'astralsorcery:colored_lens_damage',
+                'bloodmagic:vengefulcrystal'
+            ],
+            inputFluid: 'tconstruct:molten_quartz',
+            inputFluidAmount: 16000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_attack_amplification_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_attack_amplification_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/elite',
+                '#forge:circuits/elite',
+                '#forge:gems/emerald',
+                'astralsorcery:colored_lens_push',
+                '#forge:gems/emerald'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_farming_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_farming_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/elite',
+                '#forge:circuits/elite',
+                'mekanismgenerators:laser_focus_matrix',
+                'astralsorcery:colored_lens_break',
+                'mekanismgenerators:laser_focus_matrix'
+            ],
+            inputFluid: 'thermal:redstone',
+            inputFluidAmount: 16000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_excavation_escalation_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_excavation_escalation_unit'
         }
         /*
         {
