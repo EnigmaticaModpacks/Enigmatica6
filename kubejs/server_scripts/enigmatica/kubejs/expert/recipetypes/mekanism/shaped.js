@@ -851,6 +851,30 @@ onEvent('recipes', (event) => {
                 F: 'thermal:rf_coil'
             },
             id: `mekanism:pigment_extractor`
+        },
+        {
+            output: `mekanism:security_desk`,
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'rftoolsbase:tablet',
+                B: 'refinedstorage:security_card',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:circuits/advanced',
+                E: 'rftoolspower:cell1'
+            },
+            id: `mekanism:security_desk`
+        },
+        {
+            output: `mekanism:modification_station`,
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'rftoolsbase:tablet',
+                B: 'pneumaticcraft:assembly_io_unit_import',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:circuits/advanced',
+                E: 'rftoolspower:cell1'
+            },
+            id: `mekanism:modification_station`
         }
     ];
 
