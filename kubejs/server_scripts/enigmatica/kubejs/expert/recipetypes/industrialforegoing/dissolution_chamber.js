@@ -248,6 +248,25 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
+                '#forge:gears/osmium',
+                'powah:blank_card',
+                '#forge:gears/osmium',
+                'bloodmagic:reagentwater',
+                'bloodmagic:reagentlava',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper'
+            ],
+            inputFluid: 'tconstruct:blazing_blood',
+            inputFluidAmount: 1000,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:upgrade_stone_generator', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:upgrade/stone_generator'
+        },
+        {
+            inputs: [
                 '#forge:pellets/polonium',
                 '#industrialforegoing:machine_frame/supreme',
                 '#forge:pellets/polonium',
@@ -935,6 +954,101 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:module_magnetic_attraction_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                '#forge:ingots/refined_radiance',
+                '#forge:ingots/refined_radiance',
+                '#forge:alloys/ultimate',
+                'fluxnetworks:flux_core',
+                '#forge:alloys/ultimate'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 500,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_laser_dissipation_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_laser_dissipation_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:ingots/energized_steel',
+                '#forge:gems/niotic',
+                '#forge:ingots/energized_steel'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 100,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_shearing_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_shearing_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:alloys/advanced',
+                'mekanism:geiger_counter',
+                '#forge:alloys/advanced'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 100,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_geiger_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_geiger_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:alloys/elite',
+                'mekanism:hdpe_elytra',
+                '#forge:alloys/elite'
+            ],
+            inputFluid: 'thermal:ender',
+            inputFluidAmount: 1000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_elytra_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_elytra_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:alloys/elite',
+                'betterendforge:ancient_emerald_ice',
+                '#forge:alloys/elite'
+            ],
+            inputFluid: 'mekanism:hydrogen',
+            inputFluidAmount: 8000,
+            processingTime: 200,
+            outputItem: { item: 'mekanism:module_frost_walker_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:module_frost_walker_unit'
         }
         /*
         {
