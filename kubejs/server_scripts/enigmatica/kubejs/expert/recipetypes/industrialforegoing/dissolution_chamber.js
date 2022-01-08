@@ -1024,7 +1024,7 @@ onEvent('recipes', (event) => {
                 '#forge:alloys/elite'
             ],
             inputFluid: 'thermal:ender',
-            inputFluidAmount: 1000,
+            inputFluidAmount: 16000,
             processingTime: 200,
             outputItem: { item: 'mekanism:module_elytra_unit', count: 1 },
             outputFluid: '',
@@ -1049,6 +1049,25 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:module_frost_walker_unit'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                'mekanism:module_base',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                '#forge:ingots/shadow_steel',
+                'powah:thermo_generator_nitro',
+                '#forge:ingots/shadow_steel'
+            ],
+            inputFluid: 'mekanism:hydrogen',
+            inputFluidAmount: 8000,
+            processingTime: 200,
+            outputItem: { item: 'mekanismgenerators:module_geothermal_generator_unit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanismgenerators:module_geothermal_generator_unit'
         }
         /*
         {
