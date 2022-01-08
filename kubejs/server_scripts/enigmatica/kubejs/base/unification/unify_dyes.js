@@ -129,13 +129,16 @@ function mekanism_dye_enriching(event, recipe) {
 }
 
 function mekanism_pigment_extracting(event, recipe) {
+    if (!recipe.primary.includes('_dye')) {
+        return;
+    }
     var baseCount = 3,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
     }
 
-    let dye_color = recipe.primary.split(':')[1].split('_')[0];
+    let dye_color = recipe.primary.split(':')[1].replace('_dye', '');
     let count = baseCount * multiplier;
 
     event.custom({
