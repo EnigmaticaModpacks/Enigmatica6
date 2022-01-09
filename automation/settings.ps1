@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.22"
+$MODPACK_VERSION = "0.5.23"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.5.21"
+$LAST_MODPACK_VERSION = "0.5.22"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -177,9 +177,9 @@ $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/
 
 # $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES has been moved to remove-client-mods.ps1 
 
-$SERVER_FILES_FOLDER = "$InstanceRoot/server_files"
+$SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files"
 
-$SERVER_SETUP_CONFIG_PATH = "$InstanceRoot/server_files/server-setup-config.yaml"
+$SERVER_SETUP_CONFIG_PATH = "$INSTANCE_ROOT/server_files/server-setup-config.yaml"
 
 # A continuous line of the folders and files (with extensions) to zip into Server Files.
 # Default: @("mods", "config")
@@ -228,7 +228,6 @@ $ENABLE_ALWAYS_UPDATE_JARS = $false
 $ENABLE_GITHUB_CHANGELOG_GENERATOR_MODULE = $true	
 
 
-
 # =====================================================================//
 #  ADVANCED
 #  Do not change anything unless you
@@ -263,5 +262,5 @@ $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
 $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Server $MODPACK_VERSION"
 
 # Path to the ModListCreators output file
-$MODLIST_PATH = "$InstanceRoot/changelogs/modlist_$MODPACK_VERSION.md"
-$CHANGELOG_PATH = "$InstanceRoot/changelogs/changelog_mods_$MODPACK_VERSION.md"
+$MODLIST_PATH = "$INSTANCE_ROOT/changelogs/modlist_$MODPACK_VERSION.md"
+$CHANGELOG_PATH = "$INSTANCE_ROOT/changelogs/changelog_mods_$MODPACK_VERSION.md"
