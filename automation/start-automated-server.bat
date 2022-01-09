@@ -72,6 +72,15 @@
 
 :::: *** THIS FILE NOT INTENDED TO BE EDITED, USE "settings.cfg" INSTEAD ***
 
+REM Stop if not in instance root with installed pack
+IF NOT EXIST "%~dp0mods\" (
+	echo Could not find mods folder!
+	echo This should be run from the instance root not from the automation folder!
+	pause
+	exit
+)
+
+
 Powershell.exe -ExecutionPolicy RemoteSigned -File %~dp0remove-client-mods.ps1
 
 SETLOCAL
