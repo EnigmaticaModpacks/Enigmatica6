@@ -3,7 +3,7 @@
 
 # The main modpack folder
 # Do not change or move
-$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
+$INSTANCE_ROOT = ("$PSScriptRoot/.." | Resolve-Path)
 
 # =====================================================================//
 #  CURSEFORGE ACCOUNT SETTINGS
@@ -66,10 +66,10 @@ $CLIENT_RELEASE_TYPE = "alpha"
 #=====================================================================//
 
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$ChangelogGeneratorDL = "ChangelogGenerator-2.0.0-pre10.jar"
+$CHANGELOG_GENERATOR_JAR = "ChangelogGenerator-2.0.0-pre10.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$ModlistCreatorJar = "ModListCreator-1.2.1.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-1.2.1.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
@@ -177,9 +177,9 @@ $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/
 
 # $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES has been moved to remove-client-mods.ps1 
 
-$ServerFilesFolder = "$InstanceRoot/server_files"
+$SERVER_FILES_FOLDER = "$InstanceRoot/server_files"
 
-$ServerSetupConfigPath = "$InstanceRoot/server_files/server-setup-config.yaml"
+$SERVER_SETUP_CONFIG_PATH = "$InstanceRoot/server_files/server-setup-config.yaml"
 
 # A continuous line of the folders and files (with extensions) to zip into Server Files.
 # Default: @("mods", "config")
@@ -263,5 +263,5 @@ $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
 $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Server $MODPACK_VERSION"
 
 # Path to the ModListCreators output file
-$ModlistPath = "$InstanceRoot/changelogs/modlist_$MODPACK_VERSION.md"
-$ChangelogPath = "$InstanceRoot/changelogs/changelog_mods_$MODPACK_VERSION.md"
+$MODLIST_PATH = "$InstanceRoot/changelogs/modlist_$MODPACK_VERSION.md"
+$CHANGELOG_PATH = "$InstanceRoot/changelogs/changelog_mods_$MODPACK_VERSION.md"
