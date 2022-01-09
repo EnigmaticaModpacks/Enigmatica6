@@ -39,10 +39,19 @@
 	# Valid values: "none", "night", "topography", "blocks", "light_sources"
 	map_mode: "none"
 	
+	# Advanced option. Change how often the minimap will refresh icons
+	# Default: 500
+	# Range: 0 ~ 10000
+	minimap_icon_update_timer: 500
+	
 	# Noise added to map to make it look less plastic
 	# Default: 0.05
 	# Range: 0.0 ~ 0.5
 	noise: 0.05d
+	
+	# Only show entities that are on the surface
+	# Default: true
+	only_surface_entities: true
 	
 	# Show your own claimed chunks on the map
 	# Default: true
@@ -86,14 +95,20 @@
 	# Default: 220
 	# Range: 0 ~ 255
 	water_visibility: 220
+	
+	# Distance at which waypoints start to fade
+	# Default: 12.0
+	# Range: 1.0 ~ 200.0
+	waypoint_fade_distance: 12.0d
 	minimap: {
 		# Show biome under minimap
 		# Default: true
 		biome: true
 		
 		# Blurs minimap
-		# Default: false
-		blur: false
+		# Default: "auto"
+		# Valid values: "auto", "on", "off"
+		blur_mode: "auto"
 		
 		# Adds NWSE compass inside minimap
 		# Default: true
