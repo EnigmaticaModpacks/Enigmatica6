@@ -1,0 +1,48 @@
+{
+  "beeVersion": 0.10,
+  "flower": "minecraft:snow_block",
+  "baseLayerTexture": "yeti/yeti_bee",
+  "creator": "Joosh",
+  "lore": "A pretty §ocool§r bee.\nHe's here to bee your best friend :)",
+  "loreColor": "#ADD8E6",
+  "traits": ["oreo"],
+  "sizeModifier": 1.25,
+  "maxTimeInHive": 6000,
+  "hasHoneycomb": false,
+  "ColorData" : {
+    "isBeeColored": false,
+    "primaryColor": "#E9F4F6",
+    "secondaryColor": "#777E86",
+    "modelType": "YETI"
+  },
+  "CombatData": {
+    "isPassive": false,
+    "attackDamage": 0,
+    "baseHealth": 20,
+    "removeStingerOnAttack": false
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 30,
+    "mutations": [
+      {
+        "type": "BLOCK",
+        "inputID": "minecraft:water",
+        "outputs": [
+          {"outputID": "minecraft:ice"}
+        ]
+      }
+    ]
+  },
+  "SpawnData" : {
+    "canSpawnInWorld": true,
+    "spawnWeight": 2,
+    "biomeWhitelist": "tag:snowy",
+    "lightLevel": "DAY",
+    "minGroupSize": 1,
+    "maxGroupSize": 1
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}
