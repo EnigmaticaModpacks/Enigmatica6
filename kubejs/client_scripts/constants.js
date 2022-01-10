@@ -659,6 +659,10 @@ const disabledItems = [
 
     'pneumaticcraft:wheat_flour',
 
+	'projectvibrantjourneys:clam',
+	'projectvibrantjourneys:clam_chowder',
+	'projectvibrantjourneys:cooked_clam',
+
     'quark:pipe',
     'quark:potato_crate',
     'quark:beetroot_crate',
