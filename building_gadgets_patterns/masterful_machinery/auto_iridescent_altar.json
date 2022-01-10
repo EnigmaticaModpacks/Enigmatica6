@@ -1,0 +1,260 @@
+{
+    "header": {
+        "version": "2.1.0",
+        "mc_version": "1.16.5",
+        "name": "Automated Iridescent Altar",
+        "author": "Enigmatica",
+        "bounding_box": {
+            "min_x": 0,
+            "min_y": 0,
+            "min_z": 0,
+            "max_x": 21,
+            "max_y": 15,
+            "max_z": 22
+        },
+        "material_list": {
+            "root_type": "buildinggadgets:entries",
+            "root_entry": [
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 123,
+                    "item": {
+                        "id": "architects_palette:abyssaline_bricks"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 40,
+                    "item": {
+                        "id": "architects_palette:abyssaline_lamp"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 8,
+                    "item": {
+                        "id": "architects_palette:abyssaline_pillar"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "astralsorcery:altar_radiance"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:auto_iridescent_altar_controller"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:auto_iridescent_altar_energy_port_energy_input"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:auto_iridescent_altar_fluid_port_fluids_input"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:auto_iridescent_altar_item_port_items_input"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 2,
+                    "item": {
+                        "id": "masterfulmachinery:auto_iridescent_altar_item_port_items_output"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:auto_iridescent_altar_starlight_port_astral_starlight_input"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 49,
+                    "item": {
+                        "id": "astralsorcery:black_marble_raw"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "minecraft:campfire"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "architects_palette:chiseled_abyssaline_bricks"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 142,
+                    "item": {
+                        "id": "immersiveengineering:coil_mv"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 96,
+                    "item": {
+                        "id": "immersiveengineering:cokebrick"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 8,
+                    "item": {
+                        "id": "pneumaticcraft:compressed_brick_tile"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 36,
+                    "item": {
+                        "id": "immersiveengineering:generator"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "minecraft:hay_block"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 24,
+                    "item": {
+                        "id": "immersiveengineering:heavy_engineering"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 113,
+                    "item": {
+                        "id": "mekanism:induction_casing"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 59,
+                    "item": {
+                        "id": "astralsorcery:infused_wood_infused"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 68,
+                    "item": {
+                        "id": "astralsorcery:marble_bricks"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 4,
+                    "item": {
+                        "id": "astralsorcery:marble_chiseled"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 8,
+                    "item": {
+                        "id": "astralsorcery:marble_pillar"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 12,
+                    "item": {
+                        "id": "astralsorcery:marble_raw"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 4,
+                    "item": {
+                        "id": "astralsorcery:marble_runed"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 6,
+                    "item": {
+                        "id": "powah:nitro_crystal_block"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 3,
+                    "item": {
+                        "id": "pneumaticcraft:programmer"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 18,
+                    "item": {
+                        "id": "immersiveengineering:radiator"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 24,
+                    "item": {
+                        "id": "minecraft:red_nether_bricks"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 95,
+                    "item": {
+                        "id": "immersiveengineering:sheetmetal_steel"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 8,
+                    "item": {
+                        "id": "astralsorcery:spectral_relay"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 134,
+                    "item": {
+                        "id": "immersiveengineering:storage_steel"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 12,
+                    "item": {
+                        "id": "immersiveengineering:treated_wood_horizontal"
+                    }
+                }
+            ]
+        }
+    },
+    "body": "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"
+}
