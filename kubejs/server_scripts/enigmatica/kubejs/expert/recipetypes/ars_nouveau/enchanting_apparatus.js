@@ -382,10 +382,10 @@ onEvent('recipes', (event) => {
             inputs: [
                 '#resourcefulbees:resourceful_honeycomb_block',
                 'minecraft:sunflower',
-                'resourcefulbees:honey_fluid_bucket',
+                '#resourcefulbees:resourceful_honey_block',
                 '#botania:runes/earth',
                 '#botania:runes/air',
-                'resourcefulbees:honey_fluid_bucket',
+                '#resourcefulbees:resourceful_honey_block',
                 'naturesaura:aura_bloom',
                 '#resourcefulbees:resourceful_honeycomb_block'
             ],
