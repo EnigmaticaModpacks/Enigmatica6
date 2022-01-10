@@ -1,0 +1,43 @@
+{
+    "controllerId": "auto_iridescent_altar",
+    "textureOverride": "kubejs:block/storage_steel",
+    "name": "Automated Iridescent Altar",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "Item",
+            "id": "item",
+            "data": {
+                "rows": 6,
+                "columns": 5
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "textureOverride": "kubejs:block/storage_steel",
+            "name": "FE",
+            "id": "energy",
+            "data": {
+                "capacity": 1000000000
+            }
+        },
+        {
+            "type": "masterfulmachinery:fluids",
+            "textureOverride": "kubejs:block/storage_steel",
+            "name": "Fluid",
+            "id": "fluid",
+            "data": {
+                "capacity": 10000
+            }
+        },
+        {
+            "type": "masterfulmachinery:astral_starlight",
+            "textureOverride": "powah:block/niotic_crystal_block",
+            "name": "Astral Starlight",
+            "id": "starlight",
+            "data": {
+                "capacity": 123456789
+            }
+        }
+    ]
+}
