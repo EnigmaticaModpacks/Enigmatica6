@@ -193,7 +193,7 @@
 		}
 		{
 			x: 1.5d
-			y: 5.5d
+			y: 5.0d
 			description: [
 				"A touch of clay, a bit of fine ground basalt, the powdered remnants of a thousand souls…"
 				""
@@ -221,7 +221,7 @@
 		}
 		{
 			x: 3.0d
-			y: 7.0d
+			y: 6.0d
 			shape: "octagon"
 			description: [
 				"An assembly line will be required to properly set these bricks. "
@@ -239,13 +239,13 @@
 		}
 		{
 			x: 4.5d
-			y: 5.5d
+			y: 5.0d
 			description: [
 				"A ready supply of liquid fuel will soon be quite useful. In the meantime, some byproducts are needed instead. "
 				""
 				"Build a machine to begin producing Tar. Be sure to keep that fuel handy!"
 			]
-			dependencies: ["15C239A8575142B1"]
+			dependencies: ["4A45210857A2FE10"]
 			id: "155D0B93052756E8"
 			tasks: [{
 				id: "11D4AFF923BA438E"
@@ -275,7 +275,7 @@
 		}
 		{
 			x: 4.5d
-			y: 7.5d
+			y: 7.0d
 			shape: "diamond"
 			description: [
 				"Let the ingots hit the floor!"
@@ -298,7 +298,7 @@
 		}
 		{
 			x: 4.5d
-			y: 8.5d
+			y: 8.0d
 			description: ["Now to squeeze it before rapidly cooling in a bath of water. "]
 			dependencies: ["3DD1F984ED880148"]
 			id: "00EF0CAB3FB28938"
@@ -310,7 +310,7 @@
 		}
 		{
 			x: 4.5d
-			y: 9.5d
+			y: 9.0d
 			shape: "octagon"
 			description: ["With the advent of Compressed Iron comes access to better manufacturing techniques and eventually advanced technology not seen in these parts for some time. "]
 			dependencies: ["00EF0CAB3FB28938"]
@@ -338,10 +338,10 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 4.0d
+			x: 6.0d
+			y: 2.5d
 			description: ["Craft a Magma crucible to pave the way towards tool tinkering and advanced metallurgy. "]
-			dependencies: ["0616453B4BBEFB11"]
+			dependencies: ["508E396542F84E94"]
 			id: "15C239A8575142B1"
 			tasks: [{
 				id: "1FF36C55EC7E0648"
@@ -459,7 +459,7 @@
 			}]
 		}
 		{
-			x: 6.5d
+			x: 7.5d
 			y: 2.5d
 			dependencies: ["2803A0750EE32FBC"]
 			optional: true
@@ -525,7 +525,7 @@
 			]
 		}
 		{
-			x: 6.5d
+			x: 7.5d
 			y: 3.5d
 			dependencies: ["6BAC6A8BB59E458E"]
 			optional: true
@@ -587,8 +587,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 8.5d
+			x: 6.0d
+			y: 8.0d
 			shape: "hexagon"
 			description: [
 				"Some like it hot. Real hot."
@@ -605,7 +605,7 @@
 		}
 		{
 			x: 6.5d
-			y: 5.0d
+			y: 4.0d
 			shape: "hexagon"
 			description: [
 				"A small amount of molten copper will be required to properly set the Smeltery’s heat control. "
@@ -647,7 +647,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 7.0d
 			y: 1.5d
 			description: [
 				"So soft and… wait isn’t this made of slag?"
@@ -694,7 +694,7 @@
 		}
 		{
 			x: 4.5d
-			y: 6.5d
+			y: 6.0d
 			shape: "diamond"
 			description: ["Keep it coming!"]
 			dependencies: ["155D0B93052756E8"]
@@ -707,7 +707,7 @@
 		}
 		{
 			x: 4.0d
-			y: 7.0d
+			y: 6.5d
 			shape: "diamond"
 			description: [
 				"Clean, durable steel. Highly sought after for many engineering projects due to its strength and durability. "
@@ -724,7 +724,7 @@
 		}
 		{
 			x: 5.0d
-			y: 7.0d
+			y: 6.5d
 			shape: "diamond"
 			description: ["Gather some obsidian to add to the mix. "]
 			dependencies: ["1A3727BA37EA4F6D"]
@@ -733,6 +733,41 @@
 				id: "7913A39A566A6943"
 				type: "item"
 				item: "minecraft:obsidian"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			dependencies: ["0616453B4BBEFB11"]
+			id: "4A45210857A2FE10"
+			tasks: [{
+				id: "5D74174DF5F08D7E"
+				type: "item"
+				item: {
+					id: "thermal:fluid_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								FluidName: "minecraft:empty"
+								Capacity: 32000
+								Tank: 0b
+								Amount: 0
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.0d
+			dependencies: ["4A45210857A2FE10"]
+			id: "555BF630B1097FE2"
+			tasks: [{
+				id: "1219720F5782198E"
+				type: "item"
+				item: "immersiveengineering:circuit_table"
 			}]
 		}
 	]
