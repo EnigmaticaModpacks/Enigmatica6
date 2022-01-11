@@ -386,15 +386,15 @@ function Remove-LeadingZero {
 $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
 
-# Test-ForDependencies
-# Validate-SecretsFile
-# New-ClientFiles
-# Push-ClientFiles
-# if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
-#     New-ServerFiles
-# }
-# New-GitHubRelease
-#New-Changelog
+Test-ForDependencies
+Validate-SecretsFile
+New-ClientFiles
+Push-ClientFiles
+if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
+    New-ServerFiles
+}
+New-GitHubRelease
+New-Changelog
 Update-Modlist
 
 Write-Host "Modpack Upload Complete!" -ForegroundColor Green
