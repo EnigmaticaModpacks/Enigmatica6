@@ -17,7 +17,7 @@ dimension_whitelist = []
 #list of dimensions that loot chests should not be replaced in [default: blank, allowing all dimensions, format e.g., minecraft:overworld]
 dimension_blacklist = []
 #list of loot tables which shouldn't be converted [in the format of modid:loot_table]
-loot_table_blacklist = []
+loot_table_blacklist = ["atum:chests/pharaoh"]
 #lootr will automatically log all unresolved tables (i.e., for containers that have a loot table associated with them but, for whatever reason, the lookup for this table returns empty). setting this option to true additionally informs players when they open containers.
 report_unresolved_tables = false
 #prevent the destruction of Lootr chests except while sneaking in creative mode
