@@ -50,8 +50,8 @@ onEvent('recipes', (event) => {
                     data: { item: 'astralsorcery:attuned_celestial_crystal', count: 1 }
                 },
 
-                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 150000 } },
-                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 15 } }
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 300000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 60 } }
             ],
             outputs: [
                 { type: 'masterfulmachinery:items', chance: 1.0, data: { item: 'kubejs:observatory_lens', count: 1 } }
