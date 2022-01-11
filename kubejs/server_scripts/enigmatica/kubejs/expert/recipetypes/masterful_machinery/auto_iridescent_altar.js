@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
         {
             structureId: 'auto_iridescent_altar_structure',
             controllerId: 'auto_iridescent_altar',
-            ticks: 600,
+            ticks: 200,
             inputs: [
                 {
                     type: 'masterfulmachinery:items',
@@ -42,7 +42,7 @@ onEvent('recipes', (event) => {
                     data: { item: 'astralsorcery:attuned_celestial_crystal', count: 1 }
                 },
 
-                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 300000 } },
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 60 } }
             ],
             outputs: [
