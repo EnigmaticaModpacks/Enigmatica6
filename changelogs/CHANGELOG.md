@@ -1,3 +1,59 @@
+### Enigmatica 6 v0.5.23
+
+_Using Forge-1.16.5-36.2.22_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.23.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.23.md)_
+
+**New Mods**
+
+* [Ars Arsenal](https://www.curseforge.com/minecraft/mc-mods/ars-arsenal)
+* [Ars Elemental - Elemental Spell Foci](https://www.curseforge.com/minecraft/mc-mods/ars-elemental-elemental-spell-foci)
+* [Ars EnderStorage](https://www.curseforge.com/minecraft/mc-mods/ars-enderstorage)
+* [Masterful Machinery](https://www.curseforge.com/minecraft/mc-mods/masterful-machinery)
+* [Too Many Glyphs](https://www.curseforge.com/minecraft/mc-mods/too-many-glyphs)
+
+**Bug Fixes**
+
+- \[0.5.22\] Immersive Engineering Copper Ore [\#4033](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4033)
+- Ars Shield not crafting [\#3833](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3833)
+- Atum sarcophagus replaced with lootr chest, pharaoh doesn't spawn [\#4036](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4036)
+- Blacklist Atum Sarcophagus loot table from Lootr [\#4037](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4037) ([theboo](https://github.com/theboo))
+- Disable unobtainable food items, update Spice of Life food blacklist [\#4032](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4032) ([fajcyk](https://github.com/fajcyk))
+- Enigmatica 6 Expert 8x Kiln brick dependency issue [\#4002](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4002)
+- Ensure shell scripts/hooks are executable [\#4004](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4004) ([Blacksmoke16](https://github.com/Blacksmoke16))
+- Environmental leaves are not affected by Fast Leaf Decay [\#2699](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/2699)
+- Gold and Netherite crafters losing patterns [\#3076](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3076)
+- Impossible to make Enderium tools due to different liquids [\#3849](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3849)
+- Integrated Dynamics Squeezer does not accept items when there's a Dank in your inventory [\#3478](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3478)
+- Item duplication using Sophisticated Backpacks Stonecutter upgrade [\#3914](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3914)
+- Lava block near PCR refinery turns into obsidian instantly under certain very specific conditions [\#3853](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3853)
+- Living armor equip causes ctd and world corrupt [\#3494](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3494)
+- Mud ball recipe clash [\#3824](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3824)
+- no recipe in JEI for steel [\#4012](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4012)
+- Prevent IE Ores from generating on first launch.  [\#4020](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4020) ([MuteTiefling](https://github.com/MuteTiefling))
+- Server crash with Immersive engineering multiblock structures [\#3987](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3987)
+- Server doesn't start anymore [\#3994](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3994)
+- Some molten materials from KubeJS can't be used to make ingots with tinker's ingot cast [\#3983](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3983)
+- Storage Drawers upgrade recipe issues [\#3808](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3808)
+- Vanilla Crafting Table doesn't show Polymorph Button [\#3948](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3948)
+
+**Changes/Improvements**
+
+- Add Connected Glass variants to stonecutter list [\#3968](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3968)
+- Decrease Atum Patrol Spawn Rate [\#3929](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3929)
+- Add deepslate to cobbleworks cobblestone gen. [\#3978](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3978)
+- Birthing altar updates [\#4000](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4000) ([MuteTiefling](https://github.com/MuteTiefling))
+- Create Altar of Birthing recipes for ducks and deer [\#4007](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4007) ([MuteTiefling](https://github.com/MuteTiefling))
+- Disallow running start-automatic-server from the automation folder [\#4026](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4026) ([Darkere](https://github.com/Darkere))
+- Enable Chiselling between glass types [\#3991](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/3991) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fixed Dev Bee <-> Starry Bee id collision [\#4034](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4034) ([TemperedFool](https://github.com/TemperedFool))
+- Make new combo script executable [\#4027](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4027) ([Blacksmoke16](https://github.com/Blacksmoke16))
+- Remove psimetal exosuit from materialis [\#4019](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4019) ([MuteTiefling](https://github.com/MuteTiefling))
+- Resolve recipe conflict with knives and chisels [\#3999](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/3999) ([MuteTiefling](https://github.com/MuteTiefling))
+- Rusty Iron not updated with the other ingots and nuggets. [\#3844](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3844)
+- add missing slabfish from \#4000 [\#4006](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4006) ([MuteTiefling](https://github.com/MuteTiefling))
+- Reduce cost of Lightning Arrows for all modes [\#4030](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4030) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 6 v0.5.22
 
 _Using Forge-1.16.5-36.2.22_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.22.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.22.md)_
