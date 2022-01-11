@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "masterfulmachinery:block/projector"
+    },
+    "facing=south": {
+      "model": "masterfulmachinery:block/projector",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "masterfulmachinery:block/projector",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "masterfulmachinery:block/projector",
+      "y": 90
+    }
+  }
+}
