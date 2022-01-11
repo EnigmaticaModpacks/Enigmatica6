@@ -11,42 +11,34 @@ onEvent('recipes', (event) => {
             inputs: [
                 {
                     type: 'masterfulmachinery:items',
-                    consumeInstantly: true,
                     data: { tag: 'forge:ingots/shadow_steel', count: 8 }
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    consumeInstantly: true,
                     data: { tag: 'botania:runes/air', count: 4 }
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    consumeInstantly: true,
                     data: { item: 'astralsorcery:colored_lens_spectral', count: 4 }
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    consumeInstantly: true,
                     data: { item: 'astralsorcery:resonating_gem', count: 4 }
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    consumeInstantly: true,
                     data: { item: 'astralsorcery:illumination_powder', count: 4 }
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    consumeInstantly: true,
                     data: { item: 'astralsorcery:nocturnal_powder', count: 2 }
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    consumeInstantly: true,
                     data: { tag: 'forge:dusts/starmetal', count: 2 }
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    consumeInstantly: true,
                     data: { item: 'astralsorcery:attuned_celestial_crystal', count: 1 }
                 },
 
