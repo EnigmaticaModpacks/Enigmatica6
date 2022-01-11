@@ -422,6 +422,38 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: 'mekanism:solar_neutron_activator'
+        },
+        {
+            output: Item.of('masterfulmachinery:auto_iridescent_altar_starlight_port_astral_starlight_input', 1),
+            pattern: ['ABCBA', 'BADAB', 'CDEDC', 'BADAB', 'ABCBA'],
+            key: {
+                A: { tag: 'forge:dusts/starmetal' },
+                B: { tag: 'forge:gems/niotic' },
+                C: { item: 'bloodmagic:etherealslate' },
+                D: { tag: 'forge:pellets/polonium' },
+                E: { item: 'astralsorcery:shifting_star_vicio' }
+            },
+            relay_inputs: [
+                { item: 'bloodmagic:steadfastcrystal' },
+                { item: 'bloodmagic:steadfastcrystal' },
+                { item: 'bloodmagic:steadfastcrystal' },
+                { item: 'bloodmagic:steadfastcrystal' },
+                { item: 'bloodmagic:steadfastcrystal' },
+                { item: 'bloodmagic:steadfastcrystal' }
+            ],
+            altar_type: 3,
+            duration: 600,
+            starlight: 4800,
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: `${id_prefix}auto_iridescent_altar_starlight_port_astral_starlight_input`
         }
     ];
 

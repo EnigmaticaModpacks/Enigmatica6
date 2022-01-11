@@ -525,8 +525,8 @@
 			]
 		}
 		{
-			x: 7.5d
-			y: 3.5d
+			x: 8.0d
+			y: 4.0d
 			dependencies: ["6BAC6A8BB59E458E"]
 			optional: true
 			id: "5FD0550A79C3F850"
@@ -588,7 +588,7 @@
 		}
 		{
 			x: 6.0d
-			y: 8.0d
+			y: 8.5d
 			shape: "hexagon"
 			description: [
 				"Some like it hot. Real hot."
@@ -647,7 +647,7 @@
 			}]
 		}
 		{
-			x: 7.0d
+			x: 6.5d
 			y: 1.5d
 			description: [
 				"So soft and… wait isn’t this made of slag?"
@@ -738,6 +738,7 @@
 		{
 			x: 4.5d
 			y: 4.0d
+			description: ["Cook that rubber down to make Cured Rubber, suitable for sealing Fluid Cells."]
 			dependencies: ["0616453B4BBEFB11"]
 			id: "4A45210857A2FE10"
 			tasks: [{
@@ -760,8 +761,13 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 5.5d
 			y: 5.0d
+			description: [
+				"Making decent circuitry is tough but kludging something basic together will do for now. "
+				""
+				"The Engineer’s Circuit Table will serve as the basis for early circuitry. It cannot be automated, but better options will present themselves later."
+			]
 			dependencies: ["4A45210857A2FE10"]
 			id: "555BF630B1097FE2"
 			tasks: [{
