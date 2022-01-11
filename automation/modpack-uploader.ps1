@@ -247,14 +247,14 @@ function Push-ClientFiles {
             Write-Host "Return Id: $clientFileReturnId" -ForegroundColor Cyan
             Write-Host
 
-            Update-FileLinkInServerFiles -ClientFileId $clientFileReturnId
+            Update-FileLinkInServerFiles -ClientFileReturnId $clientFileReturnId
         }
     }
 }
 
 function Update-FileLinkInServerFiles {
     param(
-        [int]$clientFileReturnId
+        [int]$ClientFileReturnId
     )
     if ($clientFileReturnId) {
         $clientFileIdString = $clientFileReturnId.toString()
@@ -267,14 +267,14 @@ function Update-FileLinkInServerFiles {
         [System.IO.File]::WriteAllLines(($SERVER_SETUP_CONFIG_PATH | Resolve-Path), $content)
 
         if ($ENABLE_SERVER_FILE_MODULE) {
-            New-ServerFiles -clientFileReturnId $clientFileReturnId
+            New-ServerFiles -ClientFileReturnId $clientFileReturnId
         }
     }
 }
 
 function New-ServerFiles {
     param(
-        [int]$clientFileReturnId
+        [int]$ClientFileReturnId
     )
     if ($ENABLE_SERVER_FILE_MODULE) {
         $serverZip = "$SERVER_ZIP_NAME.zip"
@@ -386,16 +386,18 @@ function Remove-LeadingZero {
 $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
 
-# Test-ForDependencies
-# Validate-SecretsFile
-# New-ClientFiles
-# Push-ClientFiles
-# if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
-#     New-ServerFiles
-# }
-# New-GitHubRelease
-#New-Changelog
+Test-ForDependencies
+Validate-SecretsFile
+New-ClientFiles
+Push-ClientFiles
+if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
+    New-ServerFiles
+}
+New-GitHubRelease
+New-Changelog
 Update-Modlist
 
 Write-Host "Modpack Upload Complete!" -ForegroundColor Green
 Set-Location $startLocation
+
+pause
