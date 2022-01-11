@@ -1,0 +1,64 @@
+{
+  "beeVersion": 0.10,
+  "flower": "minecraft:beacon",
+  "maxTimeInHive": 1200,
+  "traits": ["starry"],
+  "creator": "Lady Lexxie",
+  "lore": "Reach for the stars!",
+  "loreColor": "rainbow",
+  "sizeModifier": 1.25,
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [1, 1, 1, 1, 1],
+  "apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB", "COMB"],
+  "honeycombRarity": "EPIC",
+  "baseLayerTexture": "empty_layer",
+  "ColorData": {
+    "isBeeColored": true,
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#FFA500",
+    "honeycombColor": "#FFA500",
+    "primaryLayerTexture": "starry/starry_bee_primary_layer",
+    "secondaryLayerTexture": "empty_layer",
+    "emissiveLayerTexture": "starry/starry_bee_emissive",
+    "isGlowing": true,
+    "glowColor": "#FFA500",
+    "glowingPulse": 1,
+    "modelType": "QUEEN"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutations": [{
+      "type": "ITEM",
+      "inputID": "resourcefulbees:starry_honey_block",
+      "outputs": [{
+        "outputID": "minecraft:nether_star",
+        "chance": 0.1
+      }]
+    }]
+  },
+  "CombatData": {
+    "isInvulnerable": true,
+    "removeStingerOnAttack": false,
+    "baseHealth": 20,
+    "attackDamage": 0
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "resourcefulbees:starry_honey",
+    "mainOutputWeight": 0.1,
+    "mainOutputCount": 5,
+    "hasFluidOutput": true
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "minecraft:small_end_islands",
+    "spawnWeight": 2,
+    "minGroupSize": 1,
+    "maxGroupSize": 1,
+    "minYLevel": 50,
+    "maxYLevel": 80
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

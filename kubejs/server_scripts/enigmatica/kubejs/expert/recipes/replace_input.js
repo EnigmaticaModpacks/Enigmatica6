@@ -98,6 +98,16 @@ onEvent('recipes', (event) => {
             filter: { id: 'resourcefulbees:ender_beecon' },
             toReplace: 'minecraft:ender_pearl',
             replaceWith: 'naturesaura:token_joy'
+        },
+        {
+            filter: { id: 'botania:abstruse_platform' },
+            toReplace: 'botania:mana_pearl',
+            replaceWith: 'atum:ectoplasm'
+        },
+        {
+            filter: { id: 'botania:spectral_platform' },
+            toReplace: 'botania:pixie_dust',
+            replaceWith: 'atum:ectoplasm'
         }
     ];
 

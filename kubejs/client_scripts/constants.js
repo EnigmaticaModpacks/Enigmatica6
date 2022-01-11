@@ -642,6 +642,8 @@ const disabledItems = [
     'losttrinkets:rock_candy',
     'losttrinkets:mad_aura',
 
+    /materialis:psimetal/,
+
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',
     'mekanism:dust_lithium',
@@ -656,6 +658,10 @@ const disabledItems = [
     'pitg:green_dye',
 
     'pneumaticcraft:wheat_flour',
+
+	'projectvibrantjourneys:clam',
+	'projectvibrantjourneys:clam_chowder',
+	'projectvibrantjourneys:cooked_clam',
 
     'quark:pipe',
     'quark:potato_crate',

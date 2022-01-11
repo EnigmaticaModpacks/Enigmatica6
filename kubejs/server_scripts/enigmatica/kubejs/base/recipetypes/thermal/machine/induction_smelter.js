@@ -52,12 +52,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}netherite_ingot`
         },
         {
-            inputs: ['#forge:ingots/iron', '#forge:dusts/coal_coke'],
-            outputs: ['emendatusenigmatica:steel_ingot'],
-            id: `${id_prefix}steel_ingot`
-        },
-        {
-            inputs: ['#forge:ingots/iron', '#forge:dusts/coal_petcoke'],
+            inputs: ['#forge:ingots/iron', ['#forge:dusts/coal_coke', '#forge:dusts/coal_petcoke']],
             outputs: ['emendatusenigmatica:steel_ingot'],
             id: `${id_prefix}steel_ingot`
         },

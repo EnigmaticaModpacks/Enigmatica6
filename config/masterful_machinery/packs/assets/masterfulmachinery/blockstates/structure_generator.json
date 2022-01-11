@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "masterfulmachinery:block/structure_generator"
+    },
+    "facing=south": {
+      "model": "masterfulmachinery:block/structure_generator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "masterfulmachinery:block/structure_generator",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "masterfulmachinery:block/structure_generator",
+      "y": 90
+    }
+  }
+}

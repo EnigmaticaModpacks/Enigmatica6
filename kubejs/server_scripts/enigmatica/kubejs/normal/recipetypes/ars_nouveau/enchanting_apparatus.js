@@ -247,7 +247,7 @@ onEvent('recipes', (event) => {
                 '#forge:storage_blocks/mana',
                 '#forge:storage_blocks/mana'
             ],
-            reagent: 'minecraft:shield',
+            reagent: Item.of('minecraft:shield', '{Damage:0}').weakNBT(),
             output: 'ars_nouveau:enchanters_shield',
             id: 'ars_nouveau:enchanters_shield'
         },

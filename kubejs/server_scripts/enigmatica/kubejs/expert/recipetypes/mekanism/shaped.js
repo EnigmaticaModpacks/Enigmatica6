@@ -812,6 +812,69 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:logistics_core'
             },
             id: `mekanism:transmitter/logistical_transporter/basic`
+        },
+        {
+            output: `mekanism:painting_machine`,
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: 'create:nozzle',
+                C: 'mekanism:dye_base',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: '#forge:gears/osmium',
+                F: 'thermal:rf_coil'
+            },
+            id: `mekanism:painting_machine`
+        },
+        {
+            output: `mekanism:pigment_mixer`,
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: 'immersiveengineering:turntable',
+                C: 'mekanism:hdpe_rod',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: '#forge:gears/osmium',
+                F: 'thermal:rf_coil'
+            },
+            id: `mekanism:pigment_mixer`
+        },
+        {
+            output: `mekanism:pigment_extractor`,
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plastic',
+                B: 'ppfluids:high_fluid_retrieval_module',
+                C: 'mekanism:basic_fluid_tank',
+                D: '#industrialforegoing:machine_frame/pity',
+                E: '#forge:gears/osmium',
+                F: 'thermal:rf_coil'
+            },
+            id: `mekanism:pigment_extractor`
+        },
+        {
+            output: `mekanism:security_desk`,
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'rftoolsbase:tablet',
+                B: 'refinedstorage:security_card',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:circuits/advanced',
+                E: 'rftoolspower:cell1'
+            },
+            id: `mekanism:security_desk`
+        },
+        {
+            output: `mekanism:modification_station`,
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'rftoolsbase:tablet',
+                B: 'pneumaticcraft:assembly_io_unit_import',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:circuits/advanced',
+                E: 'rftoolspower:cell1'
+            },
+            id: `mekanism:modification_station`
         }
     ];
 

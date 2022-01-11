@@ -9,6 +9,11 @@ onEvent('recipes', (event) => {
             replaceTarget: { id: 'constructionwand:stone_wand' },
             toReplace: '#minecraft:stone_tool_materials',
             replaceWith: '#quark:stone_tool_materials'
+        },
+        {
+            replaceTarget: { id: 'archers_paradox:lightning_arrow' },
+            toReplace: 'minecraft:nether_star',
+            replaceWith: 'thermal:lightning_charge'
         }
     ];
     event.replaceInput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');

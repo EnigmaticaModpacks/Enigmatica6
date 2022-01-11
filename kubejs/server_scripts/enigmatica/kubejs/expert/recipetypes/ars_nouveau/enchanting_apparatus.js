@@ -382,10 +382,10 @@ onEvent('recipes', (event) => {
             inputs: [
                 '#resourcefulbees:resourceful_honeycomb_block',
                 'minecraft:sunflower',
-                'resourcefulbees:honey_fluid_bucket',
+                '#resourcefulbees:resourceful_honey_block',
                 '#botania:runes/earth',
                 '#botania:runes/air',
-                'resourcefulbees:honey_fluid_bucket',
+                '#resourcefulbees:resourceful_honey_block',
                 'naturesaura:aura_bloom',
                 '#resourcefulbees:resourceful_honeycomb_block'
             ],
@@ -1975,7 +1975,7 @@ onEvent('recipes', (event) => {
                 '#forge:inlays/arcane_gold'
             ],
             sourceCost: 5000,
-            reagent: 'mekanismtools:osmium_shield',
+            reagent: Item.of('mekanismtools:osmium_shield', '{Damage:0}').weakNBT(),
             output: Item.of('ars_nouveau:enchanters_shield', '{Damage:0}').weakNBT(),
             id: 'ars_nouveau:enchanters_shield'
         },

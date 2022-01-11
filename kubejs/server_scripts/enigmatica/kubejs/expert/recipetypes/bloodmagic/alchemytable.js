@@ -430,9 +430,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'undergarden:cloggrum_pickaxe',
-                'undergarden:cloggrum_axe',
-                'undergarden:cloggrum_shovel',
+                'undergarden:roasted_underbeans',
+                'undergarden:roasted_underbeans',
+                'undergarden:roasted_underbeans',
+                'undergarden:gloomper_leg',
+                'undergarden:cloggrum_ingot',
                 'undergarden:blisterberry'
             ],
             output: 'bloodmagic:reagentfastminer',

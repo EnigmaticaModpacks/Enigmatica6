@@ -1,0 +1,37 @@
+{
+  "beeVersion": 0.10,
+  "flower": "ALL",
+  "baseLayerTexture": "oreo/oreo_bee",
+  "creator": "Epic Oreo",
+  "lore": "A Delicious Bee",
+  "loreColor": "rainbow",
+  "traits": ["oreo"],
+  "apiaryOutputAmounts": [1, 2, 3, 4],
+  "customCombDrop": "resourcefulbees:oreo_cookie",
+  "customCombBlockDrop": "resourcefulbees:oreo_cookie",
+  "sizeModifier": 1.5,
+  "maxTimeInHive": 6000,
+  "hasHoneycomb": true,
+  "ColorData" : {
+    "isBeeColored": false,
+    "primaryColor": "#442920",
+    "secondaryColor": "#e1d9b8"
+  },
+  "CombatData": {
+    "isPassive": false,
+    "attackDamage": 0,
+    "baseHealth": 20,
+    "removeStingerOnAttack": false
+  },
+  "SpawnData" : {
+    "canSpawnInWorld": true,
+    "spawnWeight": 3,
+    "biomeWhitelist": "tag:rare",
+    "lightLevel": "DAY",
+    "minGroupSize": 1,
+    "maxGroupSize": 1
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

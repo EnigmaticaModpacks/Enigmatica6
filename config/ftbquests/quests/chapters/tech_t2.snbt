@@ -62,10 +62,7 @@
 				""
 				"Build up an Alloy Kiln to prepare for the next step."
 			]
-			dependencies: [
-				"159CEE8160564096"
-				"56A05A07C30709EC"
-			]
+			dependencies: ["159CEE8160564096"]
 			id: "51C4B771C756A8DD"
 			tasks: [{
 				id: "1696A045279F7734"
@@ -95,7 +92,10 @@
 				""
 				"Place a book and an Upgrade Matrix into the Alloy Kiln…"
 			]
-			dependencies: ["640AF7C1C65218DD"]
+			dependencies: [
+				"640AF7C1C65218DD"
+				"51C4B771C756A8DD"
+			]
 			id: "56A05A07C30709EC"
 			tasks: [{
 				id: "2B7F725CA5D12C72"

@@ -152,12 +152,15 @@ onEvent('recipes', (event) => {
         'immersivepetroleum:distillationtower/oilcracking',
 
         'materialis:smeltery/melting/metal/starmetal/dust',
+        /materialis:armor\/building\/exosuit/,
 
         'mekanism:crushing/stone/to_cobblestone',
         'mekanism:enriching/enriched/tin',
         'mekanism:processing/bronze/dust/from_infusing',
         'mekanism:processing/bronze/ingot/from_infusing',
         'mekanism:processing/lapis_lazuli/from_ore',
+        /mekanism:pigment_extracting\/flower/,
+        /mekanism:compat\/byg\/pigment_extracting/,
 
         'minecraft:crystal_glass',
         'minecraft:bone_pile_from_bone_pile_block',
