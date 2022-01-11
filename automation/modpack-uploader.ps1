@@ -247,14 +247,14 @@ function Push-ClientFiles {
             Write-Host "Return Id: $clientFileReturnId" -ForegroundColor Cyan
             Write-Host
 
-            Update-FileLinkInServerFiles -ClientFileId $clientFileReturnId
+            Update-FileLinkInServerFiles -ClientFileReturnId $clientFileReturnId
         }
     }
 }
 
 function Update-FileLinkInServerFiles {
     param(
-        [int]$clientFileReturnId
+        [int]$ClientFileReturnId
     )
     if ($clientFileReturnId) {
         $clientFileIdString = $clientFileReturnId.toString()
@@ -267,14 +267,14 @@ function Update-FileLinkInServerFiles {
         [System.IO.File]::WriteAllLines(($SERVER_SETUP_CONFIG_PATH | Resolve-Path), $content)
 
         if ($ENABLE_SERVER_FILE_MODULE) {
-            New-ServerFiles -clientFileReturnId $clientFileReturnId
+            New-ServerFiles -ClientFileReturnId $clientFileReturnId
         }
     }
 }
 
 function New-ServerFiles {
     param(
-        [int]$clientFileReturnId
+        [int]$ClientFileReturnId
     )
     if ($ENABLE_SERVER_FILE_MODULE) {
         $serverZip = "$SERVER_ZIP_NAME.zip"
@@ -399,3 +399,5 @@ Update-Modlist
 
 Write-Host "Modpack Upload Complete!" -ForegroundColor Green
 Set-Location $startLocation
+
+pause
