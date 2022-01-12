@@ -14,7 +14,6 @@
         },
         {
             "type": "masterfulmachinery:energy",
-            "textureOverride": "kubejs:block/storage_steel",
             "name": "FE",
             "id": "energy",
             "data": {
@@ -23,7 +22,6 @@
         },
         {
             "type": "masterfulmachinery:fluids",
-            "textureOverride": "kubejs:block/storage_steel",
             "name": "Fluid",
             "id": "fluid",
             "data": {
@@ -32,11 +30,11 @@
         },
         {
             "type": "masterfulmachinery:astral_starlight",
-            "textureOverride": "powah:block/niotic_crystal_block",
-            "name": "Astral Starlight",
+            "textureOverride": "architects_palette:block/abyssaline_bricks_charged",
+            "name": "Starlight",
             "id": "starlight",
             "data": {
-                "capacity": 1000000000
+                "capacity": 250000000
             }
         }
     ]
