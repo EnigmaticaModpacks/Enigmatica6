@@ -45,7 +45,7 @@ onEvent('recipes', (event) => {
                 },
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
-                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 1000 } }
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
             ],
             ticks: 200,
             id: `${id_prefix}observatory_lens`
@@ -86,7 +86,7 @@ onEvent('recipes', (event) => {
                 },
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
-                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 500 } }
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
             ],
             ticks: 100,
             id: `${id_prefix}colored_lens_fire`
@@ -127,7 +127,7 @@ onEvent('recipes', (event) => {
                 },
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
-                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 500 } }
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
             ],
             ticks: 100,
             id: `${id_prefix}colored_lens_break`
@@ -168,7 +168,7 @@ onEvent('recipes', (event) => {
                 },
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
-                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 500 } }
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
             ],
             ticks: 100,
             id: `${id_prefix}colored_lens_growth`
@@ -209,7 +209,7 @@ onEvent('recipes', (event) => {
                 },
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
-                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 500 } }
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
             ],
             ticks: 100,
             id: `${id_prefix}colored_lens_damage`
@@ -250,7 +250,7 @@ onEvent('recipes', (event) => {
                 },
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
-                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 500 } }
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
             ],
             ticks: 100,
             id: `${id_prefix}colored_lens_regeneration`
@@ -291,7 +291,7 @@ onEvent('recipes', (event) => {
                 },
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
-                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 500 } }
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
             ],
             ticks: 100,
             id: `${id_prefix}colored_lens_push`
@@ -332,7 +332,7 @@ onEvent('recipes', (event) => {
                 },
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
-                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 500 } }
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
             ],
             ticks: 100,
             id: `${id_prefix}colored_lens_spectral`
