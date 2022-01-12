@@ -420,7 +420,7 @@ IF NOT %MC_SERVER_IGNORE_OFFLINE% EQU 0 (
 )
 
 REM Ping minecraftforge before attempting download
-%MC_SYS32%\PING.EXE -n 2 -w 1000 minecraftforge.net | %MC_SYS32%\FIND.EXE "TTL="  1>> "%~dp0logs\serverstart.log" 2>&1
+%MC_SYS32%\PING.EXE -n 2 -w 1000 minecraftforge.net -4 | %MC_SYS32%\FIND.EXE "TTL="  1>> "%~dp0logs\serverstart.log" 2>&1
 IF %ERRORLEVEL% EQU 0 (
 	ECHO INFO: Ping of "minecraftforge.net" Successfull 1>>  "%~dp0logs\serverstart.log" 2>&1
 ) ELSE (
