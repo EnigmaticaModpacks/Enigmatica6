@@ -725,6 +725,22 @@ onEvent('recipes', (event) => {
                 F: 'thermal:upgrade_augment_3'
             },
             id: 'mekanism:meka_tool'
+        },
+        {
+            output: 'masterfulmachinery:auto_iridescent_altar_controller',
+            pattern: ['ABCBA', 'BDEDB', 'CDFDC', 'BGHGB', 'ABIBA'],
+            key: {
+                A: 'thermal:enderium_glass',
+                B: '#forge:plates/steel',
+                C: 'xnet:advanced_connector_green',
+                D: 'xnet:netcable_green',
+                E: 'rftoolsbase:tablet',
+                F: '#industrialforegoing:machine_frame/supreme',
+                G: 'xnet:netcable_red',
+                H: '#forge:circuits/ultimate',
+                I: 'xnet:advanced_connector_red'
+            },
+            id: `${id_prefix}auto_iridescent_altar_controller`
         }
     ];
 
