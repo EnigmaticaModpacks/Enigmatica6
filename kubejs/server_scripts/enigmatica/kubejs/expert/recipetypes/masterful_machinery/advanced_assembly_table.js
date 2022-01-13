@@ -7,20 +7,24 @@ onEvent('recipes', (event) => {
         {
             outputs: [
                 {
-                    type: 'masterfulmachinery:pncr_pressure',
-                    perTick: true,
-                    data: { air: 100 }
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'kubejs:batch_basic_circuit_package', count: 1 }
                 }
             ],
 
             inputs: [
                 {
                     type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:cobblestone', count: 1 }
+                    data: { item: 'kubejs:basic_circuit_package', count: 32 }
+                },
+                {
+                    type: 'masterfulmachinery:pncr_pressure',
+                    perTick: true,
+                    data: { air: 300 * 4 }
                 }
             ],
-            ticks: 200,
-            id: `${id_prefix}test`
+            ticks: 240,
+            id: `${id_prefix}batch_basic_circuit_package`
         }
     ];
 
