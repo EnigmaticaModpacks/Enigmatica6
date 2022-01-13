@@ -204,7 +204,20 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'occultism:afrit_essence',
-                Item.of('botania:incense_stick', { brewKey: 'botania:bloodthirst' }),
+                Item.of('botania:brew_vial', '{brewKey:"botania:bloodthirst"}'),
+                'eidolon:crimson_essence'
+            ],
+            output: 'bloodmagic:weakbloodshard',
+            count: 1,
+            syphon: 20000,
+            ticks: 200,
+            orbLevel: 3,
+            id: `${id_prefix}weakbloodshard_from_vial`
+        },
+        {
+            inputs: [
+                'occultism:afrit_essence',
+                Item.of('botania:brew_flask', '{brewKey:"botania:bloodthirst"}'),
                 'eidolon:crimson_essence'
             ],
             output: 'bloodmagic:weakbloodshard',
@@ -212,7 +225,20 @@ onEvent('recipes', (event) => {
             syphon: 20000,
             ticks: 200,
             orbLevel: 3,
-            id: `${id_prefix}weakbloodshard`
+            id: `${id_prefix}weakbloodshard_from_flask`
+        },
+        {
+            inputs: [
+                'occultism:afrit_essence',
+                Item.of('botania:incense_stick', '{brewKey:"botania:bloodthirst"}'),
+                'eidolon:crimson_essence'
+            ],
+            output: 'bloodmagic:weakbloodshard',
+            count: 10,
+            syphon: 20000,
+            ticks: 200,
+            orbLevel: 4,
+            id: `${id_prefix}weakbloodshard_from_incense`
         },
         {
             inputs: [
