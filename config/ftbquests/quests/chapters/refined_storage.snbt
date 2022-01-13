@@ -468,9 +468,12 @@
 				"For normal crafting recipes, that's all you need to set up - pop in a pattern and you gain the ability to request it from any connected Grid."
 				""
 				"For processing recipes, the crafter must be placed facing the input of whichever machine is doing the processing. Note that all the crafter will actually do in this case is give the recipe items to the machine; getting the output into the network must be handled otherwise (e.g. with an Interface)."
+				""
+				"Note: Placing identical processing patterns in multiple crafters will allow the system to intelligently share the job between multiple machines. This is particularly useful for crafts that involve multiple inputs, as otherwise distributing them would be complicated with most pipes."
 			]
 			dependencies: ["0000000000000270"]
 			size: 1.25d
+			min_width: 300
 			id: "0000000000000272"
 			tasks: [{
 				id: "0000000000000273"
