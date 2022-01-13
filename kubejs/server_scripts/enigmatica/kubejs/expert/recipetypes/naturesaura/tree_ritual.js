@@ -252,8 +252,8 @@ onEvent('recipes', (event) => {
                 '#botania:runes/spring',
                 '#resourcefulbees:resourceful_honeycomb_block',
                 '#resourcefulbees:resourceful_honeycomb_block',
-                'resourcefulbees:honey_fluid_bucket',
-                'resourcefulbees:honey_fluid_bucket'
+                '#resourcefulbees:resourceful_honey_block',
+                '#resourcefulbees:resourceful_honey_block'
             ],
             output: 'resourcefulbees:t3_apiary',
             time: 300,
