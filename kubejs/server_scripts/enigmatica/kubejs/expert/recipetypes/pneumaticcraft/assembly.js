@@ -153,6 +153,12 @@ onEvent('recipes', (event) => {
             output: { item: 'rftoolscontrol:cpu_core_2000', count: 32 },
             program: 'laser',
             id: `${id_prefix}batch_cpu_core_2000`
+        },
+        {
+            input: { item: 'kubejs:batch_unassembled_pcb', count: 1 },
+            output: { item: 'pneumaticcraft:unassembled_pcb', count: 32 },
+            program: 'laser',
+            id: `${id_prefix}batch_unassembled_pcb`
         }
     ];
 

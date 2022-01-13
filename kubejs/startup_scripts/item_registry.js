@@ -159,6 +159,7 @@ onEvent('item.registry', (event) => {
         { name: 'batch_basic_circuit_assembly', texture: 'assembly_package_processing' },
 
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
+        { name: 'batch_unassembled_pcb', texture: 'packing_crate_lime' },
 
         { name: 'pneumatic_helmet_package', texture: 'assembly_package_filled' },
         { name: 'pneumatic_helmet_assembly', texture: 'assembly_package_processing' },
