@@ -1059,30 +1059,30 @@ onEvent('recipes', (event) => {
     armorTypes.forEach((armorType) => {
         armorType.armors.forEach((armor) => {
             recipes.push({
-                input: Item.of(armor.base, '{Damage:0}').weakNBT(),
+                input: Ingredient.customNBT(Item.of(armor.base, '{Damage:0}').weakNBT(), nbt => !nbt.SequencedAssembly),
                 outputs: [armor.result],
-                transitionalItem: armor.material,
+                transitionalItem: armor.base,
                 loops: armorType.loops,
                 sequence: [
                     {
                         type: 'deploying',
-                        input: [armor.material, armor.material],
-                        output: armor.material
+                        input: [armor.base, armor.material],
+                        output: armor.base
                     },
                     {
                         type: 'pressing',
-                        input: armor.material,
-                        output: armor.material
+                        input: armor.base,
+                        output: armor.base
                     },
                     {
                         type: 'pressing',
-                        input: armor.material,
-                        output: armor.material
+                        input: armor.base,
+                        output: armor.base
                     },
                     {
                         type: 'pressing',
-                        input: armor.material,
-                        output: armor.material
+                        input: armor.base,
+                        output: armor.base
                     }
                 ],
                 id: armor.id
