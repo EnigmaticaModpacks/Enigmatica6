@@ -14,6 +14,51 @@ onEvent('recipes', (event) => {
         });
     });
 
+    // Fill the stonecuttables json with items from tags
+    const glassTypes = [`glass`, 'glass_panes'];
+    glassTypes.forEach((glassType) => {
+        let glassesInTag = getItemsInTag(Ingredient.of(`#forge:${glassType}/colorless`)),
+            glasses = [];
+
+        glassesInTag.forEach((glass) => {
+            let modId = glass.id.split(':')[0];
+            if (modId == 'atum' || modId == 'tconstruct') {
+                return;
+            }
+            glasses.push(glass.id);
+        });
+
+        stonecuttables.push({
+            name: `colorless_${glassType}`,
+            stones: glasses,
+            onlyAsOutput: [],
+            onlyAsInput: []
+        });
+    });
+
+    colors.forEach((color) => {
+        // Glass
+        glassTypes.forEach((glassType) => {
+            let glassesInTag = getItemsInTag(Ingredient.of(`#forge:${glassType}/${color}`)),
+                glasses = [];
+
+            glassesInTag.forEach((glass) => {
+                let modId = glass.id.split(':')[0];
+                if (modId == 'atum') {
+                    return;
+                }
+                glasses.push(glass.id);
+            });
+
+            stonecuttables.push({
+                name: `${color}_${glassType}`,
+                stones: glasses,
+                onlyAsOutput: [],
+                onlyAsInput: []
+            });
+        });
+    });
+
     stonecuttables.forEach((stoneType) => {
         var tag = `#enigmatica:stonecuttables/${stoneType.name}`;
         stoneType.stones.forEach((stone) => {
