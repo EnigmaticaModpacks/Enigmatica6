@@ -84,6 +84,13 @@ onEvent('recipes', (event) => {
             temperature: 1400,
             time: 64,
             id: `${id_prefix}molten_enderium_glass`
+        },
+        {
+            ingredient: { item: 'minecraft:chain' },
+            result: { fluid: 'tconstruct:molten_iron', amount: 22 },
+            temperature: 800,
+            time: 58,
+            id: 'tconstruct:smeltery/melting/metal/iron/chain'
         }
     ];
 

@@ -137,17 +137,29 @@ onEvent('item.registry', (event) => {
 
         { name: 'basic_memory_package', texture: 'assembly_package_filled' },
         { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_basic_memory_package', texture: 'packing_crate_yellow' },
+        { name: 'batch_basic_memory_assembly', texture: 'assembly_package_processing' },
 
         { name: 'cpu_core_500_package', texture: 'assembly_package_filled' },
         { name: 'cpu_core_500_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_cpu_core_500_package', texture: 'packing_crate_blue' },
+        { name: 'batch_cpu_core_500_assembly', texture: 'assembly_package_processing' },
         { name: 'cpu_core_1000_package', texture: 'assembly_package_filled' },
         { name: 'cpu_core_1000_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_cpu_core_1000_package', texture: 'packing_crate_blue' },
+        { name: 'batch_cpu_core_1000_assembly', texture: 'assembly_package_processing' },
         { name: 'cpu_core_2000_package', texture: 'assembly_package_filled' },
         { name: 'cpu_core_2000_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_cpu_core_2000_package', texture: 'packing_crate_blue' },
+        { name: 'batch_cpu_core_2000_assembly', texture: 'assembly_package_processing' },
 
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_basic_circuit_package', texture: 'packing_crate_lime' },
+        { name: 'batch_basic_circuit_assembly', texture: 'assembly_package_processing' },
+
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
+        { name: 'batch_unassembled_pcb', texture: 'packing_crate_lime' },
 
         { name: 'pneumatic_helmet_package', texture: 'assembly_package_filled' },
         { name: 'pneumatic_helmet_assembly', texture: 'assembly_package_processing' },
