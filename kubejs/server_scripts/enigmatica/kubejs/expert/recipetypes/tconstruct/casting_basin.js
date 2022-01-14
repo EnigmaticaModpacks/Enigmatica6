@@ -17,7 +17,7 @@ onEvent('recipes', (event) => {
             {
                 fluid: 'kubejs:molten_compressed_iron',
                 fluid_amount: 18,
-                casts: [{ tag: 'forge:concrete_powder' }],
+                casts: [{ item: 'minecraft:light_gray_concrete_powder' }],
                 cast_consumed: true,
                 output: 'pneumaticcraft:reinforced_stone',
                 cooling_time: 10,

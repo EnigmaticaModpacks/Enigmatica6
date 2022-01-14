@@ -1235,14 +1235,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:concrete_powder',
-                '#forge:concrete_powder',
-                '#forge:concrete_powder',
-                '#forge:concrete_powder',
-                '#forge:concrete_powder',
-                '#forge:concrete_powder',
-                '#forge:concrete_powder',
-                '#forge:concrete_powder'
+                'minecraft:light_gray_concrete_powder',
+                'minecraft:light_gray_concrete_powder',
+                'minecraft:light_gray_concrete_powder',
+                'minecraft:light_gray_concrete_powder',
+                'minecraft:light_gray_concrete_powder',
+                'minecraft:light_gray_concrete_powder',
+                'minecraft:light_gray_concrete_powder',
+                'minecraft:light_gray_concrete_powder'
             ],
             inputFluid: 'kubejs:molten_compressed_iron',
             inputFluidAmount: 144,

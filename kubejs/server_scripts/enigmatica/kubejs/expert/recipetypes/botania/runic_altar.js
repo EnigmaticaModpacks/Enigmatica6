@@ -82,8 +82,6 @@ onEvent('recipes', (event) => {
                 'naturesaura:birth_spirit',
                 'thermal:syrup_bottle',
                 [
-                    'byg:california_poppy',
-                    'minecraft:poppy',
                     'byg:yellow_tulip',
                     'byg:purple_tulip',
                     'byg:magenta_tulip',
@@ -95,8 +93,6 @@ onEvent('recipes', (event) => {
                     'minecraft:red_tulip'
                 ],
                 [
-                    'byg:california_poppy',
-                    'minecraft:poppy',
                     'byg:yellow_tulip',
                     'byg:purple_tulip',
                     'byg:magenta_tulip',
