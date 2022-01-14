@@ -1182,6 +1182,75 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:module_excavation_escalation_unit'
+        },
+        {
+            inputs: ['kubejs:memory_basic_empty'],
+            inputFluid: 'pneumaticcraft:memory_essence',
+            inputFluidAmount: 8000,
+            processingTime: 20,
+            outputItem: { item: 'kubejs:memory_basic_filled', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: `${id_prefix}memory_basic_filled`
+        },
+        {
+            inputs: ['kubejs:memory_advanced_empty'],
+            inputFluid: 'pneumaticcraft:memory_essence',
+            inputFluidAmount: 8000 * 2,
+            processingTime: 20 * 2,
+            outputItem: { item: 'kubejs:memory_advanced_filled', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: `${id_prefix}memory_advanced_filled`
+        },
+        {
+            inputs: ['kubejs:memory_elite_empty'],
+            inputFluid: 'pneumaticcraft:memory_essence',
+            inputFluidAmount: 8000 * 4,
+            processingTime: 20 * 4,
+            outputItem: { item: 'kubejs:memory_elite_filled', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: `${id_prefix}memory_elite_filled`
+        },
+        {
+            inputs: ['kubejs:memory_ultimate_empty'],
+            inputFluid: 'pneumaticcraft:memory_essence',
+            inputFluidAmount: 8000 * 8,
+            processingTime: 20 * 8,
+            outputItem: { item: 'kubejs:memory_ultimate_filled', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: `${id_prefix}memory_ultimate_filled`
+        },
+        {
+            inputs: ['extrastorage:diamond_crafter'],
+            inputFluid: 'tconstruct:molten_netherite',
+            inputFluidAmount: 144 * 9,
+            processingTime: 200,
+            outputItem: { item: 'extrastorage:netherite_crafter', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'extrastorage:netherite_crafter'
+        },
+        {
+            inputs: [
+                '#forge:concrete_powder',
+                '#forge:concrete_powder',
+                '#forge:concrete_powder',
+                '#forge:concrete_powder',
+                '#forge:concrete_powder',
+                '#forge:concrete_powder',
+                '#forge:concrete_powder',
+                '#forge:concrete_powder'
+            ],
+            inputFluid: 'kubejs:molten_compressed_iron',
+            inputFluidAmount: 144,
+            processingTime: 20,
+            outputItem: { item: 'pneumaticcraft:reinforced_stone', count: 8 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: `${id_prefix}reinforced_stone`
         }
         /*
         {

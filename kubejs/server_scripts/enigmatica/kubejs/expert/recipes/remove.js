@@ -104,6 +104,7 @@ onEvent('recipes', (event) => {
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
         'pneumaticcraft:speed_upgrade',
+        'pneumaticcraft:reinforced_stone',
 
         'powah:crafting/dielectric_paste_2',
         'powah:energizing/blazing_crystal_2',
