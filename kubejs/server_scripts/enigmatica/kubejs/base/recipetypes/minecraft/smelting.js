@@ -161,13 +161,19 @@ onEvent('recipes', (event) => {
             input: 'atum:bone_ore',
             output: Item.of('atum:dusty_bone', 2),
             xp: 0.7,
-            id: `${id_prefix}atum_bone`
+            id: `${id_prefix}atum_bone_ore`
         },
         {
             input: 'atum:khnumite_raw',
             output: Item.of('atum:khnumite', 3),
             xp: 0.7,
             id: `${id_prefix}atum_khnumite_raw`
+        },
+        {
+            input: 'atum:relic_ore',
+            output: 'minecraft:gold_ingot',
+            xp: 0.7,
+            id: `${id_prefix}atum_relic_ore`
         }
     ];
 
