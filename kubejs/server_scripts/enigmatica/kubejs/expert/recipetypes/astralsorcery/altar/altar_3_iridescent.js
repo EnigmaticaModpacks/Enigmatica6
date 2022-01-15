@@ -62,7 +62,7 @@ onEvent('recipes', (event) => {
                 A: { item: 'resourcefulbees:t3_apiary' },
                 B: Item.of('naturesaura:effect_powder', { effect: 'naturesaura:animal' }).toJson(),
                 C: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                D: { item: 'resourcefulbees:honey_fluid_bucket' },
+                D: { tag: 'resourcefulbees:resourceful_honey_block' },
                 E: { item: 'astralsorcery:illumination_powder' }
             },
             relay_inputs: [
