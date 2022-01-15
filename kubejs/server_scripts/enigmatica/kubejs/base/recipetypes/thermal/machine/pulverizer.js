@@ -144,6 +144,16 @@ onEvent('recipes', (event) => {
             experience: 1.8,
             outputs: [Item.of('9x emendatusenigmatica:coke_dust')],
             id: `${id_prefix}coke_dust_from_block`
+        },
+        {
+            input: '#forge:ores/starmetal',
+            experience: 0.2,
+            outputs: [
+                Item.of('astralsorcery:stardust', 2).chance(1.0),
+                Item.of('astralsorcery:stardust').chance(0.1),
+                Item.of('minecraft:gravel').chance(0.2)
+            ],
+            id: 'thermal:machine/pulverizer/pulverizer_starmetal_ore'
         }
     ];
     recipes.forEach((recipe) => {
