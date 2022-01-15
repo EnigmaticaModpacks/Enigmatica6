@@ -17,12 +17,12 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}sticks_from_wooden_stairs`
         },
         {
-            input: ['naturesaura:ancient_log'],
+            input: 'naturesaura:ancient_log',
             outputs: [Item.of('6x naturesaura:ancient_planks'), Item.of('emendatusenigmatica:wood_dust').chance(0.25)],
             id: `${id_prefix}ancient_planks_from_log`
         },
         {
-            input: ['naturesaura:ancient_bark'],
+            input: 'naturesaura:ancient_bark',
             outputs: [Item.of('6x naturesaura:ancient_planks'), Item.of('emendatusenigmatica:wood_dust').chance(0.25)],
             id: `${id_prefix}ancient_planks_from_bark`
         }
