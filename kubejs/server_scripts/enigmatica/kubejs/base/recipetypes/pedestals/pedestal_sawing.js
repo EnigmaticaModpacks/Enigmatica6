@@ -4,7 +4,12 @@ onEvent('recipes', (event) => {
         {
             input: 'naturesaura:ancient_log',
             output: '6x naturesaura:ancient_planks',
-            id: `${id_prefix}stick`
+            id: `${id_prefix}ancient_planks_from_log`
+        },
+        {
+            input: 'naturesaura:ancient_bark',
+            output: '6x naturesaura:ancient_planks',
+            id: `${id_prefix}ancient_planks_from_bark`
         }
     ];
     recipes.forEach((recipe) => {

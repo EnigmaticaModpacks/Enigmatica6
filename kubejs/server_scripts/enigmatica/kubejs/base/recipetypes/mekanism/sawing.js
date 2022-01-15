@@ -20,10 +20,16 @@ onEvent('recipes', (event) => {
             id: 'mekanism:sawing/stairs'
         },
         {
-            input: ['naturesaura:ancient_bark', 'naturesaura:ancient_log'],
+            input: ['naturesaura:ancient_log'],
             output: Item.of('6x naturesaura:ancient_planks'),
             extraOutput: Item.of('emendatusenigmatica:wood_dust').chance(0.25),
-            id: `${id_prefix}ancient_planks`
+            id: `${id_prefix}ancient_planks_from_log`
+        },
+        {
+            input: ['naturesaura:ancient_bark'],
+            output: Item.of('6x naturesaura:ancient_planks'),
+            extraOutput: Item.of('emendatusenigmatica:wood_dust').chance(0.25),
+            id: `${id_prefix}ancient_planks_from_bark`
         }
     ];
     recipes.forEach((recipe) => {
