@@ -171,6 +171,41 @@ onEvent('recipes', (event) => {
         }
     ];
 
+    let atumRecyclables = {
+        "iron": [
+            'desert_boots_iron',
+            'desert_chest_iron',
+            'desert_helmet_iron',
+            'desert_legs_iron',
+            'iron_club',
+            'iron_dagger',
+            'iron_khopesh',
+            'iron_greatsword',
+            'iron_scimitar',
+            'camel_iron_armor',
+            'desert_wolf_iron_armor'
+        ],
+        "gold": [
+            'desert_boots_gold',
+            'desert_chest_gold',
+            'desert_helmet_gold',
+            'desert_legs_gold',
+            'camel_gold_armor',
+            'desert_wolf_gold_armor'
+        ]
+    };
+
+    Object.keys(atumRecyclables).forEach((mat) => {
+        atumRecyclables[mat].forEach((item) => {
+            recipes.push({
+                input: Item.of(`atum:${item}`).ignoreNBT(),
+                output: `minecraft:${mat}_nugget`,
+                xp: 0.1,
+                id: `${id_prefix}${mat}_nugget_from_${item}`
+            });
+        });
+    });
+
     var stones = [
         'granite',
         'diorite',
