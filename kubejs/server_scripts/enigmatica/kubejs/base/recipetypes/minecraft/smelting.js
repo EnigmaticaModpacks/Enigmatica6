@@ -156,6 +156,18 @@ onEvent('recipes', (event) => {
             output: 'atum:ceramic_white',
             xp: 0.3,
             id: `${id_prefix}ceramic_white`
+        },
+        {
+            input: 'atum:bone_ore',
+            output: Item.of('atum:dusty_bone', 2),
+            xp: 0.7,
+            id: `${id_prefix}atum_bone`
+        },
+        {
+            input: 'atum:khnumite_raw',
+            output: Item.of('atum:khnumite', 3),
+            xp: 0.7,
+            id: `${id_prefix}atum_khnumite_raw`
         }
     ];
 
