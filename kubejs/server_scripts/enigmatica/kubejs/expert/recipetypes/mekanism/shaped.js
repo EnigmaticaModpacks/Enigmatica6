@@ -295,7 +295,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:gears/osmium',
                 B: 'mekanism:electrolytic_core',
-                C: 'thermal:fluid_cell',
+                C: Item.of('thermal:fluid_cell').ignoreNBT(),
                 D: 'thermal:machine_frame'
             },
             id: 'mekanism:electrolytic_separator'
