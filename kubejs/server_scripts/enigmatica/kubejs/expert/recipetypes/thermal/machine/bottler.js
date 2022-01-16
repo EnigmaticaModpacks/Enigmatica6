@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             input: 'minecraft:light_gray_concrete_powder',
             fluid: Fluid.of('kubejs:molten_compressed_iron', 18),
             output: 'pneumaticcraft:reinforced_stone',
-            energy: 100,
+            energy: 4000,
             id: 'pneumaticcraft:reinforced_stone'
         },
         {
