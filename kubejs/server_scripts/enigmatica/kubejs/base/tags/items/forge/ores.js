@@ -8,7 +8,9 @@ onEvent('item.tags', (event) => {
         'minecraft:ancient_debris',
         'occultism:iesnium_ore',
         'byg:cryptic_redstone_ore',
-        'betterendforge:thallasium_ore'
+        'betterendforge:thallasium_ore',
+        'atum:bone_ore',
+        'atum:relic_ore'
     ]);
 
     event.add('forge:ores/dimensional', [
