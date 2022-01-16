@@ -14,8 +14,8 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'occultism:lenses',
                 '#forge:ingots/lumium',
-                '#forge:ingots/lumium',
                 '#forge:ingots/arcane_gold',
+                '#forge:ingots/lumium',
                 'bloodmagic:reagentsight'
             ],
             result: 'occultism:infused_lenses',
