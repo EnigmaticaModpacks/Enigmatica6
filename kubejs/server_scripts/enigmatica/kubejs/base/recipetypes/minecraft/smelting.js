@@ -156,8 +156,61 @@ onEvent('recipes', (event) => {
             output: 'atum:ceramic_white',
             xp: 0.3,
             id: `${id_prefix}ceramic_white`
+        },
+        {
+            input: 'atum:bone_ore',
+            output: Item.of('atum:dusty_bone', 2),
+            xp: 0.7,
+            id: `${id_prefix}atum_bone_ore`
+        },
+        {
+            input: 'atum:khnumite_raw',
+            output: Item.of('atum:khnumite', 3),
+            xp: 0.7,
+            id: `${id_prefix}atum_khnumite_raw`
+        },
+        {
+            input: 'atum:relic_ore',
+            output: 'minecraft:gold_ingot',
+            xp: 0.7,
+            id: `${id_prefix}atum_relic_ore`
         }
     ];
+
+    let atumRecyclables = {
+        "iron": [
+            'desert_boots_iron',
+            'desert_chest_iron',
+            'desert_helmet_iron',
+            'desert_legs_iron',
+            'iron_club',
+            'iron_dagger',
+            'iron_khopesh',
+            'iron_greatsword',
+            'iron_scimitar',
+            'camel_iron_armor',
+            'desert_wolf_iron_armor'
+        ],
+        "gold": [
+            'desert_boots_gold',
+            'desert_chest_gold',
+            'desert_helmet_gold',
+            'desert_legs_gold',
+            'camel_gold_armor',
+            'desert_wolf_gold_armor'
+        ]
+    };
+
+    Object.keys(atumRecyclables).forEach((mat) => {
+        atumRecyclables[mat].forEach((item) => {
+            recipes.push({
+                input: Item.of(`atum:${item}`).ignoreNBT(),
+                output: `minecraft:${mat}_nugget`,
+                xp: 0.1,
+                id: `${id_prefix}${mat}_nugget_from_${item}`
+            });
+        });
+    });
 
     var stones = [
         'granite',

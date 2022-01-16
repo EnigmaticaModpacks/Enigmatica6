@@ -162,6 +162,24 @@ onEvent('recipes', (event) => {
             output: 'thermal:white_rockwool',
             xp: 0.1,
             id: 'thermal:rockwool/white_rockwool_from_blasting'
+        },
+        {
+            input: 'atum:bone_ore',
+            output: Item.of('atum:dusty_bone', 2),
+            xp: 0.7,
+            id: `${id_prefix}atum_bone_ore`
+        },
+        {
+            input: 'atum:khnumite_raw',
+            output: Item.of('atum:khnumite', 3),
+            xp: 0.7,
+            id: `${id_prefix}atum_khnumite_raw`
+        },
+        {
+            input: 'atum:relic_ore',
+            output: 'minecraft:gold_ingot',
+            xp: 0.7,
+            id: `${id_prefix}atum_relic_ore`
         }
     ];
     recipes.forEach((recipe) => {

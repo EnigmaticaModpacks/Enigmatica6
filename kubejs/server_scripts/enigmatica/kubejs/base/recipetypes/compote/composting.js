@@ -24,7 +24,9 @@ onEvent('recipes', (event) => {
                 { item: 'sushigocrafting:wasabi_root', chance: 0.65 },
                 { item: 'sushigocrafting:soy_bean', chance: 0.65 },
                 { item: 'sushigocrafting:cucumber', chance: 0.65 },
-                { item: 'sushigocrafting:rice', chance: 0.65 }
+                { item: 'sushigocrafting:rice', chance: 0.65 },
+
+                { item: 'atum:flax_seeds', chance: 0.3 }
             ],
             remove: [],
             change: []

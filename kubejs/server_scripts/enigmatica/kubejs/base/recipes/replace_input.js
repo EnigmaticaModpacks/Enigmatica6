@@ -211,6 +211,28 @@ onEvent('recipes', (event) => {
                 event.shapeless(Item.of(block, 1), [dyeTag, itemTag]);
             }
         );
+
+        ['linen', 'linen_carpet'].forEach(
+            (blockName) => {
+                var itemTag = `#atum:${blockName}`;
+                var block = `atum:${blockName}_${color}`;
+
+                if (blockName == 'linen_carpet') {
+                    event.remove({ id: `atum:${color}_linen_carpet_from_white_linen_carpet` });
+                } else if (blockName == 'linen') {
+                    if (color != 'white') { // linen_white is Atum's linen cloth -> linen recipe
+                        event.remove({ id: `atum:linen_${color}` });
+                    }
+                }
+
+                event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
+                    S: itemTag,
+                    D: dyeTag
+                }).id(`kubejs:${blockName}_${color}_bulk`);
+                event.shapeless(Item.of(block, 1), [dyeTag, itemTag]).id(`kubejs:${blockName}_${color}`);
+            }
+        );
+
         event.shapeless(Item.of(`minecraft:${color}_concrete_powder`, 8), [
             dyeTag,
             '#forge:sand',
