@@ -763,7 +763,7 @@ onEvent('recipes', (event) => {
                 B: casingMaterial,
                 C: `powah:energy_cell_${tier}`,
                 D: `powah:thermo_generator_${tier}`,
-                E: Item.of('thermal:fluid_cell').ignoreNBT(),
+                E: 'thermal:fluid_cell_frame',
                 F: 'xnet:advanced_connector_green',
                 G: 'xnet:netcable_green',
                 H: 'xnet:advanced_connector_red',
