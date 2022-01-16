@@ -90,10 +90,10 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: '#forge:gears/invar',
-                B: 'thermal:energy_cell',
+                B: Item.of('thermal:energy_cell').ignoreNBT(),
                 C: '#xnet:connectors',
                 D: 'pneumaticcraft:advanced_pcb',
-                E: 'thermal:fluid_cell'
+                E: Item.of('thermal:fluid_cell').ignoreNBT()
             },
             id: 'thermal:augments/upgrade_augment_1'
         },
@@ -262,7 +262,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersiveengineering:alu_wallmount',
                 B: '#forge:fences/aluminum',
-                C: 'thermal:fluid_cell',
+                C: Item.of('thermal:fluid_cell').ignoreNBT(),
                 D: 'immersiveengineering:turntable',
                 E: '#forge:storage_blocks/lead',
                 F: '#forge:gears/constantan',
@@ -276,7 +276,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersivepetroleum:flarestack',
                 B: 'create:fluid_pipe',
-                C: 'thermal:fluid_cell',
+                C: Item.of('thermal:fluid_cell').ignoreNBT(),
                 D: 'create:blaze_burner',
                 E: 'thermal:rf_coil',
                 F: '#immersiveengineering:scaffoldings/steel'
@@ -341,7 +341,7 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:pressure_tube',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: '#forge:gears/compressed_iron',
-                E: 'thermal:fluid_cell'
+                E: Item.of('thermal:fluid_cell').ignoreNBT()
             },
             id: 'thermal:dynamo_compression'
         },
@@ -353,7 +353,7 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:reinforced_brick_tile',
                 C: 'powah:thermoelectric_plate',
                 D: '#forge:gears/compressed_iron',
-                E: 'thermal:fluid_cell'
+                E: Item.of('thermal:fluid_cell').ignoreNBT()
             },
             id: 'thermal:dynamo_magmatic'
         },

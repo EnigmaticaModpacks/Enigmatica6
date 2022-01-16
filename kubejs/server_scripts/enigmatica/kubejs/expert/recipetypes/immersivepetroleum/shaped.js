@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDE', 'F F'],
             key: {
                 A: 'immersiveengineering:sheetmetal_colored_red',
-                B: 'thermal:fluid_cell',
+                B: Item.of('thermal:fluid_cell').ignoreNBT(),
                 C: 'immersiveengineering:generator',
                 D: 'immersiveengineering:radiator',
                 E: 'create:propeller',

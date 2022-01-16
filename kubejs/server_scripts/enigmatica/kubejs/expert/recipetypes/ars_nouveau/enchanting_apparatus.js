@@ -846,7 +846,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'astralsorcery:resonating_gem',
-                'thermal:fluid_cell',
+                Item.of('thermal:fluid_cell').ignoreNBT(),
                 'astralsorcery:resonating_gem',
                 'naturesaura:token_sorrow',
                 '#botania:runes/greed',
