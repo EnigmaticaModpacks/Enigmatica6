@@ -141,6 +141,16 @@ onEvent('recipes', (event) => {
             exothermic: false,
             temperature: { max_temp: 1973 },
             id: `${id_prefix}kvasir_mead`
+        },
+        {
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'astralsorcery:liquid_starlight', amount: 1000 },
+            item_input: { item: 'kubejs:astrogro' },
+            item_output: { item: 'astralsorcery:celestial_crystal', count: 1 },
+            pressure: 4.5,
+            exothermic: true,
+            speed: 2.0,
+            temperature: { max_temp: 100 },
+            id: `${id_prefix}celestial_crystal`
         }
     ];
 
