@@ -139,6 +139,7 @@ onEvent('recipes', (event) => {
             item_output: { item: 'mythicbotany:kvasir_mead', count: 1 },
             pressure: 4.0,
             exothermic: false,
+            speed: 0.1,
             temperature: { max_temp: 1973 },
             id: `${id_prefix}kvasir_mead`
         },
@@ -148,7 +149,7 @@ onEvent('recipes', (event) => {
             item_output: { item: 'astralsorcery:celestial_crystal', count: 1 },
             pressure: 4.5,
             exothermic: true,
-            speed: 2.0,
+            speed: 0.1,
             temperature: { max_temp: 100 },
             id: `${id_prefix}celestial_crystal`
         }
