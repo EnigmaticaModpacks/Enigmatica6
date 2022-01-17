@@ -101,21 +101,21 @@ onEvent('recipes', (event) => {
         },
         {
             ingredient: { item: 'betterendforge:thalassium_chain' },
-            result: { fluid: 'tconstruct:molten_thalassium', amount: 22 },
+            result: { fluid: 'tconstruct:molten_thalassium', amount: 176 },
             temperature: 800,
             time: 58,
             id: `${id_prefix}molten_thalassium_from_thalassium_chain`
         },
         {
             ingredient: { item: 'betterendforge:terminite_chain' },
-            result: { fluid: 'tconstruct:molten_terminite', amount: 22 },
+            result: { fluid: 'tconstruct:molten_terminite', amount: 176 },
             temperature: 840,
             time: 58,
             id: `${id_prefix}molten_terminite_from_terminite_chain`
         },
         {
             ingredient: { item: 'atum:nebu_chain' },
-            result: { fluid: 'tconstruct:molten_nebu', amount: 22 },
+            result: { fluid: 'tconstruct:molten_nebu', amount: 176 },
             temperature: 1400,
             time: 58,
             id: `${id_prefix}molten_nebu_from_nebu_chain`
