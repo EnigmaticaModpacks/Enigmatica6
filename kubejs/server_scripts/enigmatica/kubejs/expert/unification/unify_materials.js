@@ -62,7 +62,7 @@ onEvent('recipes', (event) => {
             .id(`thermal:machine/press/press_${material}_ingot_to_gear`);
 
         event.recipes.immersiveengineering
-            .metal_press(output, Ingredient.of(input, 4), mold)
+            .metal_press(`4x ${output}`, Ingredient.of(`16x ${input}`), mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_gear`);
 
         event
@@ -100,7 +100,7 @@ onEvent('recipes', (event) => {
             .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
 
         event.recipes.immersiveengineering
-            .metal_press(rod, input, mold)
+            .metal_press(`4x ${rod}`, `4x ${input}`, mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
 
         event.shapeless(output, [plateTag, hammer, plateTag]).id(`kubejs:shapeless_crafting_${material}_rod`);
@@ -129,7 +129,7 @@ onEvent('recipes', (event) => {
         event.shapeless(output, [input, hammer, input]).id(`kubejs:shapeless_crafting_${material}_plate`);
 
         event.recipes.immersiveengineering
-            .metal_press(output, input, mold)
+            .metal_press(`4x ${output}`, `4x ${input}`, mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_plate`);
 
         event.recipes.create.pressing(output, input).id(`kubejs:create_pressing_${material}_plate`);
@@ -165,7 +165,7 @@ onEvent('recipes', (event) => {
             .id(`kubejs:immersiveengineering_metal_press_${material}_wire`);
 
         event.recipes.immersiveengineering
-            .metal_press(Item.of(output, 4), plate, mold)
+            .metal_press(`16x ${output}`, `4x ${plate}`, mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_wire`);
 
         event.shapeless(Item.of(output, 2), [plate, plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
@@ -261,7 +261,7 @@ onEvent('recipes', (event) => {
                     { result: { item: secondary_fulminated_cluster, count: 1 }, weight: 5 },
                     { result: { item: 'thermal:slag', count: 1 }, weight: 35 }
                 ],
-                empty_weight: 50,
+                empty_weight: 0,
                 rolls: 20
             }
         });
