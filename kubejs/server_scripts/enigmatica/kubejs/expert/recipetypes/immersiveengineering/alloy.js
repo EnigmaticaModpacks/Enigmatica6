@@ -120,28 +120,24 @@ onEvent('recipes', (event) => {
             id: `${idPrefix}enderium_block`
         },
         {
-            inputs: [
-                Ingredient.of('3x modularrouters:blank_module'),
-                Ingredient.of('3x prettypipes:high_retrieval_module')
-            ],
+            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('3x prettypipes:high_retrieval_module')],
             output: Item.of('3x modularrouters:puller_module_1'),
             id: 'modularrouters:puller_module_1'
         },
         {
-            inputs: [
-                Ingredient.of('3x modularrouters:blank_module'),
-                Ingredient.of('3x prettypipes:high_extraction_module')
-            ],
+            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('3x prettypipes:high_extraction_module')],
             output: Item.of('3x modularrouters:sender_module_1'),
             id: 'modularrouters:sender_module_1'
         },
         {
-            inputs: [
-                Ingredient.of('3x modularrouters:blank_module'),
-                Ingredient.of('3x ppfluids:high_fluid_retrieval_module')
-            ],
-            output: Item.of('3x modularrouters:sender_module_1'),
-            id: 'ppfluids:high_fluid_retrieval_module'
+            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('3x ppfluids:high_fluid_retrieval_module')],
+            output: Item.of('3x modularrouters:fluid_module'),
+            id: 'modularrouters:fluid_module'
+        },
+        {
+            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('thermal:charge_bench')],
+            output: Item.of('3x modularrouters:energy_output_module'),
+            id: 'modularrouters:energy_output_module'
         }
     ];
 
