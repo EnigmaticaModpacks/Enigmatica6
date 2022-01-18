@@ -245,7 +245,7 @@ onEvent('recipes', (event) => {
                 { item: 'modularrouters:speed_upgrade', count: 3 },
                 { item: 'tconstruct:sky_slime_crystal', count: 1 }
             ],
-            pressure: 4.5,
+            pressure: 2.0,
             results: [{ item: 'modularrouters:stack_upgrade', count: 1 }],
             id: 'modularrouters:stack_upgrade'
         }
