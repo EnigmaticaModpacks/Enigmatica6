@@ -21,6 +21,15 @@ onEvent('recipes', (event) => {
                 B: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 1000 }
             },
             id: 'environmental:building/mud_balls_from_dirt'
+        },
+        {
+            output: Item.of('8x environmental:ice_chain'),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:chain',
+                B: '#forge:ices/packed'
+            },
+            id: 'environmental:building/ice_chain'
         }
     ];
 

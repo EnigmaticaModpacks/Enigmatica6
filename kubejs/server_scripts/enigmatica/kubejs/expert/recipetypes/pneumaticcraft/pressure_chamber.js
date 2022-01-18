@@ -243,7 +243,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'modularrouters:speed_upgrade', count: 3 },
-                { tag: 'forge:slimeball/sky', count: 1 }
+                { item: 'tconstruct:sky_slime_crystal', count: 1 }
             ],
             pressure: 4.5,
             results: [{ item: 'modularrouters:stack_upgrade', count: 1 }],

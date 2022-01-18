@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/modularrouters/shaped';
+    const id_prefix = 'enigmatica:expert/modularrouters/shaped/';
     /*
         ,
         {
