@@ -94,6 +94,8 @@ onEvent('recipes', (event) => {
 
         'mininggadgets:upgrade_empty',
 
+        'modularrouters:energy_upgrade',
+
         'pedestals:ingot_gold_from_upgrades',
         'pedestals:upgrades/breaker2',
         'pedestals:upgrades/crafter1mk2',
