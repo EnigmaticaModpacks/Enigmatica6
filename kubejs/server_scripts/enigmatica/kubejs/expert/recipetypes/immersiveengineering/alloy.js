@@ -118,6 +118,30 @@ onEvent('recipes', (event) => {
             inputs: [Ingredient.of('2x #forge:storage_blocks/terminite'), Ingredient.of('9x #forge:dusts/diamond')],
             output: Item.of('2x emendatusenigmatica:enderium_block'),
             id: `${idPrefix}enderium_block`
+        },
+        {
+            inputs: [
+                Ingredient.of('3x modularrouters:blank_module'),
+                Ingredient.of('3x prettypipes:high_retrieval_module')
+            ],
+            output: Item.of('3x modularrouters:puller_module_1'),
+            id: 'modularrouters:puller_module_1'
+        },
+        {
+            inputs: [
+                Ingredient.of('3x modularrouters:blank_module'),
+                Ingredient.of('3x prettypipes:high_extraction_module')
+            ],
+            output: Item.of('3x modularrouters:sender_module_1'),
+            id: 'modularrouters:sender_module_1'
+        },
+        {
+            inputs: [
+                Ingredient.of('3x modularrouters:blank_module'),
+                Ingredient.of('3x ppfluids:high_fluid_retrieval_module')
+            ],
+            output: Item.of('3x modularrouters:sender_module_1'),
+            id: 'ppfluids:high_fluid_retrieval_module'
         }
     ];
 
