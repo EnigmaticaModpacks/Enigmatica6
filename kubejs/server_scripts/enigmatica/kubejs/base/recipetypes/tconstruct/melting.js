@@ -91,6 +91,41 @@ onEvent('recipes', (event) => {
             temperature: 800,
             time: 58,
             id: 'tconstruct:smeltery/melting/metal/iron/chain'
+        },
+        {
+            ingredient: { item: 'dustrial_decor:gold_chain' },
+            result: { fluid: 'tconstruct:molten_gold', amount: 22 },
+            temperature: 700,
+            time: 58,
+            id: `${id_prefix}molten_gold_from_gold_chain`
+        },
+        {
+            ingredient: { item: 'betterendforge:thalassium_chain' },
+            result: { fluid: 'tconstruct:molten_thalassium', amount: 176 },
+            temperature: 800,
+            time: 58,
+            id: `${id_prefix}molten_thalassium_from_thalassium_chain`
+        },
+        {
+            ingredient: { item: 'betterendforge:terminite_chain' },
+            result: { fluid: 'tconstruct:molten_terminite', amount: 176 },
+            temperature: 840,
+            time: 58,
+            id: `${id_prefix}molten_terminite_from_terminite_chain`
+        },
+        {
+            ingredient: { item: 'atum:nebu_chain' },
+            result: { fluid: 'tconstruct:molten_nebu', amount: 176 },
+            temperature: 1400,
+            time: 58,
+            id: `${id_prefix}molten_nebu_from_nebu_chain`
+        },
+        {
+            ingredient: { item: 'environmental:ice_chain' },
+            result: { fluid: 'tconstruct:molten_iron', amount: 4 },
+            temperature: 800,
+            time: 58,
+            id: `${id_prefix}molten_iron_from_ice_chain`
         }
     ];
 
