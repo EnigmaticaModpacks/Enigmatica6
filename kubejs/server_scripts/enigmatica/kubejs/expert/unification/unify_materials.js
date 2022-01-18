@@ -248,7 +248,7 @@ onEvent('recipes', (event) => {
             input: Ingredient.of(infusing_input).toJson(),
             output: { item: mana_cluster, count: 1 },
             catalyst: { type: 'block', block: 'naturesaura:generator_limit_remover' },
-            mana: 10000
+            mana: 2000
         });
 
         // Step Two: Zap!
@@ -257,11 +257,11 @@ onEvent('recipes', (event) => {
             inputs: [Ingredient.of(zapping_input).toJson()],
             output: {
                 entries: [
-                    { result: { item: fulminated_cluster, count: 1 }, weight: 10 },
-                    { result: { item: secondary_fulminated_cluster, count: 1 }, weight: 5 },
-                    { result: { item: 'thermal:slag', count: 1 }, weight: 35 }
+                    { result: { item: fulminated_cluster, count: 1 }, weight: 20 },
+                    { result: { item: secondary_fulminated_cluster, count: 1 }, weight: 10 },
+                    { result: { item: 'thermal:slag', count: 1 }, weight: 5 }
                 ],
-                empty_weight: 0,
+                empty_weight: 65,
                 rolls: 20
             }
         });
@@ -273,8 +273,8 @@ onEvent('recipes', (event) => {
             output: Ingredient.of(levigated_material).toJson(),
             catalyst: Ingredient.of('naturesaura:crushing_catalyst').toJson(),
             aura_type: 'naturesaura:overworld',
-            aura: 15000,
-            time: 80
+            aura: 1500,
+            time: 10
         });
 
         // Step Four: Freeze!
@@ -293,14 +293,14 @@ onEvent('recipes', (event) => {
                 rolls: 20
             },
             fluid: { fluid: 'astralsorcery:liquid_starlight' },
-            consume_fluid: 0.15
+            consume_fluid: 0.05
         });
 
         // Step Five: Fuse!
         event.custom({
             type: 'botania:runic_altar',
             output: { item: ingot, count: 1 },
-            mana: 25000,
+            mana: 2500,
             ingredients: [
                 Ingredient.of(fusing_input).toJson(),
                 Ingredient.of(fusing_input).toJson(),
@@ -311,7 +311,6 @@ onEvent('recipes', (event) => {
                 Ingredient.of(fusing_input).toJson(),
                 Ingredient.of(fusing_input).toJson(),
                 Ingredient.of(fusing_input).toJson(),
-                Ingredient.of('#forge:dusts/mana').toJson(),
                 Ingredient.of(`#botania:runes/nidavellir`).toJson()
             ]
         });
