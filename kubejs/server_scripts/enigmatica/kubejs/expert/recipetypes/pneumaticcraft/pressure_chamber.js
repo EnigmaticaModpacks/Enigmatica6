@@ -230,6 +230,15 @@ onEvent('recipes', (event) => {
             pressure: 4.0,
             results: [{ item: 'mekanismgenerators:turbine_blade', count: 1 }],
             id: 'mekanismgenerators:turbine/blade'
+        },
+        {
+            inputs: [
+                { item: 'astralsorcery:celestial_crystal', count: 1 },
+                { tag: 'forge:dusts/starmetal', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:astrogro', count: 3 }],
+            id: `${id_prefix}astrogro`
         }
     ];
 

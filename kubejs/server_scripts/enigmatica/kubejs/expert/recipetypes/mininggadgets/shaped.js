@@ -125,7 +125,7 @@ onEvent('recipes', (event) => {
                 B: '#forge:circuits/elite',
                 C: 'create:polished_rose_quartz',
                 D: 'mininggadgets:upgrade_fortune_2',
-                E: 'atum:fish_jeweled'
+                E: 'tconstruct:jeweled_apple'
             },
             id: 'mininggadgets:upgrade_fortune_3'
         },

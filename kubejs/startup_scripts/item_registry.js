@@ -45,7 +45,8 @@ onEvent('item.registry', (event) => {
         'scented_stick',
         'celestial_mycelium_filaments',
         'incomplete_book',
-        'incomplete_capacitor_basic_large'
+        'incomplete_capacitor_basic_large',
+        'astrogro'
     ];
 
     const ritualDummies = [
