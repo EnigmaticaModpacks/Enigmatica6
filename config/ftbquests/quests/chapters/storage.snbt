@@ -1360,6 +1360,8 @@
 			subtitle: "Point A to Point B"
 			dependencies: ["00000000000003FF"]
 			id: "30AA6A8DF0B65273"
+			description: ["Need a way to move those beautifully stored items around?"
+			"No, \"your inventory\" isn't a scalable answer."]
 			tasks: [{
 				id: "4FB3F0534FC9F890"
 				type: "item"
@@ -1376,6 +1378,7 @@
 			y: -0.5d
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "3FF1B8E5563D4ECF"
+			description: ["Mekanism's pipes can be configured to pull, push, or not connect to each adjacent inventory."]
 			tasks: [{
 				id: "390C2385836A0859"
 				type: "item"
@@ -1392,6 +1395,7 @@
 			y: 0.5d
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "1A865F69095572C3"
+			description: ["Pipes from pretty pipes don't just move items, but can intelligently distribute and request items from all connected inventories."]
 			tasks: [{
 				id: "7D9BD24CCE0A679C"
 				type: "item"
@@ -1408,6 +1412,7 @@
 			y: 1.5d
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "4DD97175C1818801"
+			description: ["Immersive Engineering's conveyor belts can move entities in-world, not just items in inventories."]
 			tasks: [{
 				id: "484B8D4B94C6C182"
 				type: "item"
@@ -1424,6 +1429,7 @@
 			y: 2.5d
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "2441588EA9FC9FDB"
+			description: ["Create machines will pause items on its conveyor belts to process them, making them perfect for automating processing and assembly."]
 			tasks: [{
 				id: "366C08F8F32D7E4A"
 				type: "item"
@@ -1440,6 +1446,7 @@
 			y: 3.0d
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "6BCBA74138F138BC"
+			description: ["Need sorting, routing, and things beyond basic item movement? Try the Modular Routers item router."]
 			tasks: [{
 				id: "07FA31F7D204F116"
 				type: "item"
@@ -1456,6 +1463,7 @@
 			y: 3.0d
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "559D7D60CDDE5596"
+			description: ["XNet can intelligently transfer items and does it instantly too. No more items filling up pipes or bouncing because the destination is full."]
 			tasks: [{
 				id: "204956F05E407E82"
 				type: "item"
@@ -1472,6 +1480,7 @@
 			y: 1.5d
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "26ACCA8BF3FD389E"
+			description: ["Factory Hoppers from Engineer's Decor run substantially faster than vanilla hoppers."]
 			tasks: [{
 				id: "019D7BDF7259CA1E"
 				type: "item"
@@ -1493,6 +1502,7 @@
 				type: "item"
 				item: "pneumaticcraft:omnidirectional_hopper"
 			}]
+			description: ["PneumaticCraft's Omnidirectional Hoppers can be rotated to have their open side face in any direction."]
 			rewards: [{
 				id: "1802F4AD7CEC8593"
 				type: "xp"
