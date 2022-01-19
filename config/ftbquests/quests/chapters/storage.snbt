@@ -1171,6 +1171,9 @@
 			x: 8.0d
 			y: -2.5d
 			subtitle: "When buckets aren't enough"
+			description: ["Getting fluids to work with your storage system can be hard. Here are some dedicated fluid storage units."
+			""
+			"This is meant to be a start, not exhaustive, so check out the quest chapters for each mod for more information."]
 			dependencies: ["00000000000003FF"]
 			id: "568DC3ECDB943C47"
 			tasks: [{
@@ -1179,153 +1182,193 @@
 				item: "minecraft:bucket"
 			}]
 			rewards: [{
-				id: "2B4B50E7C109C496"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				id: "4ADE1E2D7CB232BF"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
+			title: "Fluid Cell"
 			x: 6.5d
 			y: -4.0d
 			dependencies: ["568DC3ECDB943C47"]
 			id: "5BEB6955518864A8"
+			description: ["Thermal Series' fluid cells are pretty configurable. Their sides can be configured to automatically input and output into adjacent inventories."]
 			tasks: [{
 				id: "49D84038D947694F"
 				type: "item"
-				item: {
-					id: "thermal:fluid_cell"
-					Count: 1b
-					tag: {
-						BlockEntityTag: {
-							TankInv: [{
-								FluidName: "minecraft:empty"
-								Capacity: 32000
-								Tank: 0b
-								Amount: 0
-							}]
-						}
-					}
-				}
+				item: "thermal:fluid_cell"
 			}]
 			rewards: [{
-				id: "2F4812DD3AAE3501"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				id: "2B1E9DE51DAB8B6E"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
+			title: "Fluid Tank (Mekanism)"
 			x: 7.5d
 			y: -4.5d
 			dependencies: ["568DC3ECDB943C47"]
 			id: "120DA7809C60693C"
+			description: ["Mekanism fluid tanks have a bucket mode (default: shift + scroll), which lets them pick up and use fluids. Try it as a gigantic bucket!"]
 			tasks: [{
 				id: "72362A5E247C68DE"
 				type: "item"
 				item: "mekanism:basic_fluid_tank"
 			}]
+			rewards: [{
+				id: "30EC70E6E72E71F0"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
+			title: "Fluid Storage Disk"
 			x: 6.5d
 			y: -1.0d
 			dependencies: ["568DC3ECDB943C47"]
 			id: "475E9EE7D90F0BB8"
+			description: ["Fluids can be stored as data too."]
 			tasks: [{
 				id: "545FD60137957AF6"
 				type: "item"
 				item: "refinedstorage:64k_fluid_storage_disk"
 			}]
+			rewards: [{
+				id: "38D75CB831BBCD62"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
+			title: "Fluid Tank (PNC)"
 			x: 8.5d
 			y: -4.5d
 			dependencies: ["568DC3ECDB943C47"]
 			id: "42FE114176EAE0DD"
+			description: ["Using a wrench, PneumaticCraft's tanks can be connected with tanks above and below to combine their capacities."]
 			tasks: [{
 				id: "61F77FEB2B9801A7"
 				type: "item"
 				item: "pneumaticcraft:small_tank"
 			}]
+			rewards: [{
+				id: "4EDA302F870DAEE1"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
+			title: "Black Hole Tank"
 			x: 10.0d
 			y: -3.0d
 			dependencies: ["568DC3ECDB943C47"]
+			description: [
+				"Industrial Foregoing has massive storage capabilities. "
+				""
+				"Head over to the Industrial Foregoing Chapter to learn about Black Hole Storage."
+			]
 			id: "1A0E0EC91FB287B0"
 			tasks: [{
 				id: "74238F0F4B713CBE"
 				type: "item"
 				item: "industrialforegoing:common_black_hole_tank"
 			}]
+			rewards: [{
+				id: "05BBC26D4E6D383F"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
+			title: "Fluid Tank (Create)"
 			x: 9.5d
 			y: -1.0d
 			dependencies: ["568DC3ECDB943C47"]
 			id: "516772B582C9114A"
+			description: ["Create tanks automatically merge with adjacent tanks and can be up to 3x3."]
 			tasks: [{
 				id: "755A21A9FE7980B4"
 				type: "item"
 				item: "create:fluid_tank"
 			}]
+			rewards: [{
+				id: "6A4A37F812BE7CA6"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
+			title: "Tank"
 			x: 7.5d
 			y: -0.5d
 			dependencies: ["568DC3ECDB943C47"]
 			id: "5D02087F29AA5454"
+			description: ["The Tank is the ultimate portable fluid storage solution. It can pick up and place fluids, store multiple fluids, and even automatically absorb nearby fluids."]
 			tasks: [{
 				id: "790BBE6ECCCC0ABF"
 				type: "item"
-				item: {
-					id: "tanknull:tank_1"
-					Count: 1b
-					tag: {
-						fluidinv: { }
-					}
-				}
+				item: "tanknull:tank_1"
+			}]
+			rewards: [{
+				id: "5418D856C9F47F1F"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
+			title: "Ender Tank"
 			x: 9.5d
 			y: -4.0d
 			dependencies: ["568DC3ECDB943C47"]
 			id: "1E357DE462DBB1C8"
+			description: ["Ender Tanks will share their inventories with other tanks using the same color code. Try them for pipeless fluid transport."]
 			tasks: [{
 				id: "3CD94E8A1FADA69C"
 				type: "item"
 				item: "enderstorage:ender_tank"
 			}]
+			rewards: [{
+				id: "4599B224091071B3"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
+			title: "Tank (RFTools)"
 			x: 10.0d
 			y: -2.0d
 			dependencies: ["568DC3ECDB943C47"]
 			id: "484A9BB4A5423AF8"
+			description: ["Tanks in your fluid storage keep filling with the wrong liquids? RFTools tanks can filter what liquid they accept."]
 			tasks: [{
 				id: "3BF2366BB0C0E896"
 				type: "item"
 				item: "rftoolsutility:tank"
 			}]
+			rewards: [{
+				id: "2EB730BCB1D4B0F0"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Logistics"
-			x: 8.0d
-			y: -2.5d
-			subtitle: "Point A to Point B"
-			dependencies: ["00000000000003FF"]
 			x: 4.0d
 			y: 1.0d
+			subtitle: "Point A to Point B"
+			dependencies: ["00000000000003FF"]
 			id: "30AA6A8DF0B65273"
 			tasks: [{
 				id: "4FB3F0534FC9F890"
 				type: "item"
 				item: "minecraft:hopper"
+			}]
+			rewards: [{
+				id: "1AF3E35B6E460EFA"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -1338,6 +1381,11 @@
 				type: "item"
 				item: "mekanism:basic_mechanical_pipe"
 			}]
+			rewards: [{
+				id: "7CEC37180EF4A917"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 6.0d
@@ -1348,6 +1396,11 @@
 				id: "7D9BD24CCE0A679C"
 				type: "item"
 				item: "prettypipes:pipe"
+			}]
+			rewards: [{
+				id: "079A10B81D100FD5"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -1360,6 +1413,11 @@
 				type: "item"
 				item: "immersiveengineering:conveyor_basic"
 			}]
+			rewards: [{
+				id: "4ED4D5478954E517"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 5.5d
@@ -1370,6 +1428,11 @@
 				id: "366C08F8F32D7E4A"
 				type: "item"
 				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "1C26C1ED80BAF827"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -1382,6 +1445,11 @@
 				type: "item"
 				item: "modularrouters:item_router"
 			}]
+			rewards: [{
+				id: "253F6017BAA3F041"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 3.5d
@@ -1392,6 +1460,11 @@
 				id: "204956F05E407E82"
 				type: "item"
 				item: "xnet:router"
+			}]
+			rewards: [{
+				id: "532E2A032D617559"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -1404,6 +1477,11 @@
 				type: "item"
 				item: "engineersdecor:factory_hopper"
 			}]
+			rewards: [{
+				id: "7A95EC6D5D219313"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 2.5d
@@ -1414,6 +1492,11 @@
 				id: "3FE101E73831B589"
 				type: "item"
 				item: "pneumaticcraft:omnidirectional_hopper"
+			}]
+			rewards: [{
+				id: "1802F4AD7CEC8593"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]
