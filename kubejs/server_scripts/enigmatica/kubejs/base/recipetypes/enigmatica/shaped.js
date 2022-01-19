@@ -301,7 +301,7 @@ onEvent('recipes', (event) => {
             pattern: ['A A', 'ABA', 'A A'],
             key: {
                 A: '#forge:rods/wooden',
-                B: '#minecraft:planks'
+                B: '#enigmatica:ladder_planks'
             },
             id: `${id_prefix}minecraft/ladder`
         },
