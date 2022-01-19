@@ -111,7 +111,7 @@ onEvent('recipes', (event) => {
                 output: `powah:magmator_${tier}`,
                 pattern: ['BAB', 'CDE', 'BFB'],
                 key: {
-                    A: 'thermal:fluid_cell',
+                    A: Item.of('thermal:fluid_cell').ignoreNBT(),
                     B: capacitor,
                     C: 'immersiveengineering:radiator',
                     D: 'pneumaticcraft:turbine_rotor',

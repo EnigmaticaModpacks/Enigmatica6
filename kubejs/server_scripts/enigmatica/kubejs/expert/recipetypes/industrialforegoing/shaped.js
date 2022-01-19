@@ -537,10 +537,10 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'BCB', 'DED'],
             key: {
                 A: 'mekanism:hdpe_sheet',
-                B: 'thermal:fluid_cell',
+                B: Item.of('thermal:fluid_cell').ignoreNBT(),
                 C: 'tconstruct:piggy_backpack',
                 D: 'dankstorage:dank_3',
-                E: 'thermal:energy_cell'
+                E: Item.of('thermal:energy_cell').ignoreNBT()
             },
             id: 'industrialforegoing:dissolution_chamber/infinity_backpack'
         }

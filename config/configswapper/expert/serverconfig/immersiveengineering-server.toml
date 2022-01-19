@@ -28,6 +28,14 @@
 	#Range: 0.001 ~ 1000.0
 	timeModifier = 0.25
 
+[machines.metal_press]
+	#A modifier to apply to the energy costs of every metal press recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 20.0
+	#A modifier to apply to the time of every metal press recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.5
+
 [machines.crusher]
 	#A modifier to apply to the energy costs of every crusher recipe
 	#Range: 0.001 ~ 1000.0
@@ -63,7 +71,7 @@
 	energyModifier = 8.0
 	#A modifier to apply to the time of every auto workbench recipe
 	#Range: 0.001 ~ 1000.0
-	timeModifier = 0.5
+	timeModifier = 0.1
 
 [machines.sawmill]
 	#A modifier to apply to the energy costs of every sawmill recipe

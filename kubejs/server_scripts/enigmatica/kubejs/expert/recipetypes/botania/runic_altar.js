@@ -80,9 +80,29 @@ onEvent('recipes', (event) => {
                 '#botania:runes/water',
                 '#botania:runes/fire',
                 'naturesaura:birth_spirit',
-                'kubejs:syrup_bottle',
-                '#minecraft:saplings',
-                '#minecraft:saplings',
+                'thermal:syrup_bottle',
+                [
+                    'byg:yellow_tulip',
+                    'byg:purple_tulip',
+                    'byg:magenta_tulip',
+                    'byg:green_tulip',
+                    'byg:cyan_tulip',
+                    'minecraft:pink_tulip',
+                    'minecraft:white_tulip',
+                    'minecraft:orange_tulip',
+                    'minecraft:red_tulip'
+                ],
+                [
+                    'byg:yellow_tulip',
+                    'byg:purple_tulip',
+                    'byg:magenta_tulip',
+                    'byg:green_tulip',
+                    'byg:cyan_tulip',
+                    'minecraft:pink_tulip',
+                    'minecraft:white_tulip',
+                    'minecraft:orange_tulip',
+                    'minecraft:red_tulip'
+                ],
                 'quark:turf',
                 'quark:turf',
                 'atum:osiris_godshard'
@@ -372,12 +392,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'bloodmagic:blankrune',
-                'quark:green_rune',
+                ['quark:green_rune', 'quark:lime_rune'],
                 'architects_palette:moonstone',
                 'ars_nouveau:glyph_delay',
                 'bloodmagic:reinforcedslate',
                 'kubejs:cutting_essence',
-                'quark:green_rune',
+                ['quark:green_rune', 'quark:lime_rune'],
                 'architects_palette:moonstone',
                 'ars_nouveau:glyph_delay',
                 'bloodmagic:reinforcedslate'

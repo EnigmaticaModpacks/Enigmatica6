@@ -453,6 +453,15 @@ onEvent('jei.information', (event) => {
         {
             items: ['naturesaura:golden_leaves'],
             text: [`Obtained by using Brilliant Fiber on leaves. Allow to spread for best effect.`]
+        },
+        {
+            items: [/masterfulmachinery:\w+_controller/],
+            text: [
+                `This structure will be difficult to build by hand.`,
+                ` `,
+                `Use the included Building Gadgets patterns found in the "building_gadgets_patterns" folder of Enigmatica 6 instance folder.`,
+                'May be rotated, but not mirrored.'
+            ]
         }
     ];
 

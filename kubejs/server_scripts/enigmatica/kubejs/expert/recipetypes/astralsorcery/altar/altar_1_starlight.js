@@ -215,7 +215,7 @@ onEvent('recipes', (event) => {
             output: Item.of('apotheosis:seashelf', 1),
             pattern: ['G___G', '_ACF_', '_BEB_', '_FCA_', 'G___G'],
             key: {
-                A: { item: 'upgrade_aquatic:prismarine_coral_block' },
+                A: { item: 'minecraft:prismarine_bricks' },
                 B: { tag: 'botania:runes/water' },
                 C: { item: 'resourcefulbees:icy_honeycomb' },
                 E: { tag: 'forge:bookshelves' },

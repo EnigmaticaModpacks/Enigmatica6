@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             cast_consumed: true,
             fluid: { name: 'tconstruct:blazing_blood', amount: 5 },
             result: Item.of('gunswithoutroses:blaze_bullet').toResultJson(),
-            cooling_time: 10,
+            cooling_time: 2,
             id: 'gunswithoutroses:blaze_bullet'
         }
     ];

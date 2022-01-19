@@ -12,7 +12,6 @@ onEvent('item.registry', (event) => {
         'alchemists_delight',
         'quintuple_alfsteel_ingot',
         'altered_recipe_indicator',
-        'syrup_bottle',
         'disabled_recipe_indicator',
 
         // Expert
@@ -46,7 +45,8 @@ onEvent('item.registry', (event) => {
         'scented_stick',
         'celestial_mycelium_filaments',
         'incomplete_book',
-        'incomplete_capacitor_basic_large'
+        'incomplete_capacitor_basic_large',
+        'astrogro'
     ];
 
     const ritualDummies = [
@@ -103,6 +103,7 @@ onEvent('item.registry', (event) => {
         { name: 'medium_machinery_schematics', texture: 'blueprint' },
         { name: 'heavy_machinery_schematics', texture: 'blueprint' },
 
+        /*
         { name: 'machine_speed_augment_mk2', texture: 'machine_speed_augment' },
         { name: 'machine_speed_augment_mk3', texture: 'machine_speed_augment' },
         { name: 'machine_speed_augment_mk4', texture: 'machine_speed_augment' },
@@ -114,6 +115,7 @@ onEvent('item.registry', (event) => {
         { name: 'dynamo_fuel_augment_mk2', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
+        */
 
         { name: 'engineers_school_project', texture: 'packing_crate_gray' },
         { name: 'partial_engineers_school_project', texture: 'packing_crate_gray' },
@@ -137,17 +139,29 @@ onEvent('item.registry', (event) => {
 
         { name: 'basic_memory_package', texture: 'assembly_package_filled' },
         { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_basic_memory_package', texture: 'packing_crate_yellow' },
+        { name: 'batch_basic_memory_assembly', texture: 'assembly_package_processing' },
 
         { name: 'cpu_core_500_package', texture: 'assembly_package_filled' },
         { name: 'cpu_core_500_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_cpu_core_500_package', texture: 'packing_crate_blue' },
+        { name: 'batch_cpu_core_500_assembly', texture: 'assembly_package_processing' },
         { name: 'cpu_core_1000_package', texture: 'assembly_package_filled' },
         { name: 'cpu_core_1000_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_cpu_core_1000_package', texture: 'packing_crate_blue' },
+        { name: 'batch_cpu_core_1000_assembly', texture: 'assembly_package_processing' },
         { name: 'cpu_core_2000_package', texture: 'assembly_package_filled' },
         { name: 'cpu_core_2000_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_cpu_core_2000_package', texture: 'packing_crate_blue' },
+        { name: 'batch_cpu_core_2000_assembly', texture: 'assembly_package_processing' },
 
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_basic_circuit_package', texture: 'packing_crate_lime' },
+        { name: 'batch_basic_circuit_assembly', texture: 'assembly_package_processing' },
+
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
+        { name: 'batch_unassembled_pcb', texture: 'packing_crate_lime' },
 
         { name: 'pneumatic_helmet_package', texture: 'assembly_package_filled' },
         { name: 'pneumatic_helmet_assembly', texture: 'assembly_package_processing' },

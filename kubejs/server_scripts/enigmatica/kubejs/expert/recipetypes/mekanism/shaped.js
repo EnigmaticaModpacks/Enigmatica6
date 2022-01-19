@@ -295,7 +295,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:gears/osmium',
                 B: 'mekanism:electrolytic_core',
-                C: 'thermal:fluid_cell',
+                C: Item.of('thermal:fluid_cell').ignoreNBT(),
                 D: 'thermal:machine_frame'
             },
             id: 'mekanism:electrolytic_separator'
@@ -574,7 +574,7 @@ onEvent('recipes', (event) => {
                 A: 'mekanism:elite_mechanical_pipe',
                 B: 'mekanism:electrolytic_separator',
                 C: 'mekanism:elite_pressurized_tube',
-                D: 'cookingforblockheads:sink',
+                D: 'thermal:device_water_gen',
                 E: 'mekanism:chemical_injection_chamber',
                 F: '#forge:circuits/elite',
                 G: 'rftoolspower:cell3'

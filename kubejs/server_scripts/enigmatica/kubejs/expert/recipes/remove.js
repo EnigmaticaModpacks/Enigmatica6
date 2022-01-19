@@ -94,6 +94,9 @@ onEvent('recipes', (event) => {
 
         'mininggadgets:upgrade_empty',
 
+        'modularrouters:energy_upgrade',
+        'modularrouters:sender_module_1_alt',
+
         'pedestals:ingot_gold_from_upgrades',
         'pedestals:upgrades/breaker2',
         'pedestals:upgrades/crafter1mk2',
@@ -104,6 +107,7 @@ onEvent('recipes', (event) => {
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
         'pneumaticcraft:speed_upgrade',
+        'pneumaticcraft:reinforced_stone',
 
         'powah:crafting/dielectric_paste_2',
         'powah:energizing/blazing_crystal_2',

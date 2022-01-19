@@ -19,7 +19,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {
                 A: 'portality:frame',
-                B: 'thermal:energy_cell',
+                B: Item.of('thermal:energy_cell').ignoreNBT(),
                 C: 'pneumaticcraft:logistics_core',
                 D: 'xnet:wireless_router'
             },

@@ -90,7 +90,7 @@ onEvent('recipes', (event) => {
                 B: 'immersiveengineering:screwdriver',
                 C: '#forge:treated_wood_slab',
                 D: 'immersiveengineering:craftingtable',
-                E: 'thermal:energy_cell'
+                E: Item.of('thermal:energy_cell').ignoreNBT()
             },
             id: 'immersiveengineering:crafting/circuit_table'
         },
@@ -134,7 +134,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:treated_wood',
                 B: 'immersiveengineering:connector_lv',
                 C: '#forge:plates/lead',
-                D: 'thermal:fluid_cell',
+                D: Item.of('thermal:fluid_cell').ignoreNBT(),
                 E: {
                     type: 'pneumaticcraft:fluid',
                     tag: 'pneumaticcraft:etching_acid',

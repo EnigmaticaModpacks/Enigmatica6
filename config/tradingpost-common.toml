@@ -1,0 +1,19 @@
+
+[trading_post]
+	#Range on xz plane trading post should search for merchants.
+	#Range: 1 ~ 96
+	"Horizontal Range" = 24
+	#Range on y axis trading post should search for merchants.
+	#Range: 1 ~ 96
+	"Vertical Range" = 16
+	#Disable traders on the trading screen when they wander out of range.
+	"Enforce Range" = false
+	#Teleport xp from trading from villagers on top of the trading post.
+	"Teleport Xp" = true
+	#Close trading post interface when all traders have become unavailable.
+	"Close Empty Screen" = true
+	#Trader entities disabled from being found by the trading post.
+	#Modders may add their own incompatible trader entities via the "tradingpost:blacklisted_traders" entity tag.
+	#Format for every entry is "<namespace>:<path>". Path may use asterisk as wildcard parameter. Tags are not supported.
+	"Trader Blacklist" = []
+

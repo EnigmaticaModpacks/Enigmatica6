@@ -126,6 +126,12 @@ onEvent('recipes', (event) => {
             input: '#forge:nuggets/neptunium',
             energy: 555,
             id: `${id_prefix}neptunium_nugget`
+        },
+        {
+            output: Fluid.of('tconstruct:magma', 250),
+            input: 'minecraft:magma_cream',
+            energy: 5000,
+            id: `${id_prefix}fairy_imagma_creamngot`
         }
     ];
 

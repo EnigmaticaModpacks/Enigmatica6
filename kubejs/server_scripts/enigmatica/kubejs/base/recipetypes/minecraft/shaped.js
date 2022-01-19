@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/minecraft/shaped/';
     const recipes = [
         {
             output: 'minecraft:pumpkin_pie',
@@ -35,6 +36,14 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:stone'
             },
             id: 'minecraft:stone_bricks'
+        },
+        {
+            output: Item.of('2x minecraft:stick'),
+            pattern: ['A', 'A'],
+            key: {
+                A: 'naturesaura:ancient_stick'
+            },
+            id: `${id_prefix}stick`
         }
     ];
 

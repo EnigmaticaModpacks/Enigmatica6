@@ -413,6 +413,9 @@ onEvent('recipes', (event) => {
 
     function emendatus_item_melting(event, material, ore, block, ingot, nugget, gem, dust, gear, rod, plate) {
         let modId;
+        if (material == 'redstone') {
+            return;
+        }
 
         if (Fluid.exists(`tconstruct:molten_${material}`)) {
             return;

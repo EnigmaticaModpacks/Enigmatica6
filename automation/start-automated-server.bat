@@ -152,16 +152,6 @@ ECHO. 1>>  "%~dp0logs\serverstart.log" 2>&1
 	GOTO ERROR
 	)
 
->nul %MC_SYS32%\FIND.EXE /I "IGNORE_OFFLINE=" "%~dp0settings.cfg" || (
-	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:IGNORE_OFFLINE
-	GOTO ERROR
-	)	
-
->nul %MC_SYS32%\FIND.EXE /I "IGNORE_JAVA_CHECK=" "%~dp0settings.cfg" || (
-	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:IGNORE_JAVA_CHECK
-	GOTO ERROR
-	)	
-
 >nul %MC_SYS32%\FIND.EXE /I "MCVER=" "%~dp0settings.cfg" || (
 	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:MCVER
 	GOTO ERROR
@@ -202,13 +192,10 @@ SET MC_SERVER_JVM_ARGS=-Xmx%MC_SERVER_MAX_RAM% -Xms%MC_SERVER_TMP_FLAG%%MC_SERVE
 SET MC_SERVER_MAX_CRASH=%CRASH_COUNT%
 SET MC_SERVER_CRASH_TIMER=%CRASH_TIMER%
 SET MC_SERVER_RUN_FROM_BAD_FOLDER=%RUN_FROM_BAD_FOLDER%
-SET MC_SERVER_IGNORE_OFFLINE=%IGNORE_OFFLINE%
-SET MC_SERVER_IGNORE_JAVA=%IGNORE_JAVA_CHECK%
 SET MC_SERVER_MCVER=%MCVER%
 SET MC_SERVER_FORGEVER=%FORGEVER%
 SET MC_SERVER_FORGEURL=%FORGEURL%
 SET MC_SERVER_SPONGE=%USE_SPONGE%
-SET MC_SERVER_HIGH_PRIORITY=%HIGH_CPU_PRIORITY%
 SET MC_SERVER_PACKNAME=%MODPACK_NAME%
 
 REM Cleanup imported vars after being remapped
@@ -218,12 +205,10 @@ SET JAVA_ARGS=
 SET CRASH_COUNT=
 SET CRASH_TIMER=
 SET RUN_FROM_BAD_FOLDER=
-SET IGNORE_OFFLINE=
 SET MCVER=
 SET FORGEVER=
 SET FORGEURL=
 SET USE_SPONGE=
-SET HIGH_CPU_PRIORITY=
 SET MODPACK_NAME=
 SET MC_SERVER_TMP_FLAG=
 
@@ -256,14 +241,12 @@ ECHO DEBUG: MC_SERVER_SPONGE_BOOT=%MC_SERVER_SPONGE_BOOT% 1>>  "%~dp0logs\server
 ECHO DEBUG: MC_SERVER_JVM_ARGS=%MC_SERVER_JVM_ARGS% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_MAX_CRASH=%MC_SERVER_MAX_CRASH% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_CRASH_TIMER=%MC_SERVER_CRASH_TIMER% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_IGNORE_OFFLINE=%MC_SERVER_IGNORE_OFFLINE% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_RUN_FROM_BAD_FOLDER=%MC_SERVER_RUN_FROM_BAD_FOLDER% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_MCVER=%MC_SERVER_MCVER% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGEVER=%MC_SERVER_FORGEVER% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGESHORT=%MC_SERVER_FORGESHORT% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGEURL=%MC_SERVER_FORGEURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_SPONGE=%MC_SERVER_SPONGE% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_HIGH_PRIORITY=%MC_SERVER_HIGH_PRIORITY% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_PACKNAME=%MC_SERVER_PACKNAME% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_SPONGEURL=%MC_SERVER_SPONGEURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_SPONGEBOOTSTRAPURL=%MC_SERVER_SPONGEBOOTSTRAPURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
@@ -361,22 +344,15 @@ IF %MC_SERVER_SPONGE% EQU 1 (
 	ECHO DEBUG: Attempting to execute [ java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_SPONGE_BOOT%" nogui ]
 	ECHO DEBUG: Attempting to execute [ java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_SPONGE_BOOT%" nogui ] 1>> "%~dp0logs\serverstart.log" 2>&1
 	COLOR 
-	IF %MC_SERVER_HIGH_PRIORITY% EQU 1 (
-		START /B /I /WAIT /HIGH java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_SPONGE_BOOT%" nogui
-	) ELSE (
-		java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_SPONGE_BOOT%" nogui
-	)
+	java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_SPONGE_BOOT%" nogui
+	
 ) ELSE (
 	ECHO DEBUG: Disabling any spongeforge jar in \mods\ because USE_SPONGE is disabled in settings.cfg 1>> "%~dp0logs\serverstart.log" 2>&1
 	(FOR /f "tokens=* delims=*" %%x in ('dir "%~dp0mods\*spongeforge*.jar" /B /O:-D') DO MOVE /Y "%~dp0mods\%%x" "%%x.disabled") 1>> "%~dp0logs\serverstart.log" 2>&1
 	ECHO DEBUG: Attempting to execute [ java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_FORGE_JAR%" nogui ]
 	ECHO DEBUG: Attempting to execute [ java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_FORGE_JAR%" nogui ] 1>> "%~dp0logs\serverstart.log" 2>&1
 	COLOR 
-	IF %MC_SERVER_HIGH_PRIORITY% EQU 1 (
-		START /B /I /WAIT /HIGH java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_FORGE_JAR%" nogui
-	) ELSE (
-		java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_FORGE_JAR%" nogui
-	)
+	java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_FORGE_JAR%" nogui
 )
 
 REM If server is exited or crashes, restart...
@@ -411,23 +387,6 @@ IF EXIST "%~dp0forge-%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%-installer.jar" (
 	ECHO Existing forge installer already found...
 	ECHO Default is to use this installer and not re-download
 	GOTO RUNINSTALLER
-)
-
-IF NOT %MC_SERVER_IGNORE_OFFLINE% EQU 0 (
-	ECHO Skipping forge server online check...
-	ECHO WARN: Skipping forge server online check... 1>>  "%~dp0logs\serverstart.log" 2>&1
-	GOTO FORGEFILEPREP
-)
-
-REM Ping minecraftforge before attempting download
-%MC_SYS32%\PING.EXE -n 2 -w 1000 minecraftforge.net | %MC_SYS32%\FIND.EXE "TTL="  1>> "%~dp0logs\serverstart.log" 2>&1
-IF %ERRORLEVEL% EQU 0 (
-	ECHO INFO: Ping of "minecraftforge.net" Successfull 1>>  "%~dp0logs\serverstart.log" 2>&1
-) ELSE (
-	ECHO ERROR: Could not reach minecraftforge.net! Possible firewall or internet issue?
-	ECHO ERROR: Could not reach minecraftforge.net 1>>  "%~dp0logs\serverstart.log" 2>&1
-	SET MC_SERVER_ERROR_REASON=NoInternetConnectivityMinecraftForgeNet
-	GOTO ERROR
 )
 
 :FORGEFILEPREP
@@ -652,13 +611,11 @@ ECHO DEBUG: MC_SERVER_SPONGE_BOOT=%MC_SERVER_SPONGE_BOOT% 1>>  "%~dp0logs\server
 ECHO DEBUG: MC_SERVER_JVM_ARGS=%MC_SERVER_JVM_ARGS% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_MAX_CRASH=%MC_SERVER_MAX_CRASH% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_CRASH_TIMER=%MC_SERVER_CRASH_TIMER% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_IGNORE_OFFLINE=%MC_SERVER_IGNORE_OFFLINE% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_RUN_FROM_BAD_FOLDER=%MC_SERVER_RUN_FROM_BAD_FOLDER% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_MCVER=%MC_SERVER_MCVER% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGEVER=%MC_SERVER_FORGEVER% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGESHORT=%MC_SERVER_FORGESHORT% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGEURL=%MC_SERVER_FORGEURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_HIGH_PRIORITY=%MC_SERVER_HIGH_PRIORITY% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_SPONGE=%MC_SERVER_SPONGE% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_PACKNAME=%MC_SERVER_PACKNAME% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_SPONGEURL=%MC_SERVER_SPONGEURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
@@ -678,14 +635,12 @@ SET MC_SERVER_SPONGE_BOOT=
 SET MC_SERVER_JVM_ARGS=
 SET MC_SERVER_MAX_CRASH=
 SET MC_SERVER_CRASH_TIMER=
-SET MC_SERVER_IGNORE_OFFLINE=
 SET MC_SERVER_RUN_FROM_BAD_FOLDER=
 SET MC_SERVER_MCVER=
 SET MC_SERVER_FORGEVER=
 SET MC_SERVER_FORGESHORT=
 SET MC_SERVER_FORGEURL=
 SET MC_SERVER_SPONGE=
-SET MC_SERVER_HIGH_PRIORITY=
 SET MC_SERVER_PACKNAME=
 SET MC_SERVER_SPONGEURL=
 SET MC_SERVER_SPONGEBOOTSTRAPURL=

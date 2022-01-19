@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
         {
             replaceTarget: { id: 'thermal:machine_pyrolyzer' },
             toReplace: 'thermal:machine_frame',
-            replaceWith: 'thermal:fluid_cell'
+            replaceWith: Item.of('thermal:fluid_cell').ignoreNBT()
         },
         {
             replaceTarget: { id: 'thermal:machine_pyrolyzer' },
