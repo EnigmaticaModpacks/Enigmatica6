@@ -8,14 +8,30 @@ _Using Forge-1.16.5-36.2.22_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Changes/Improvements**
 
--   Reduce Sooty bee spawn rates [\#4073](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4073)
+-   Add Sawing recipes for Ancient Wood and Bark [\#4058](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4058) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Allow various chains to be recycled by melting [\#4066](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4066) ([g0urra](https://github.com/g0urra))
+-   Ancient Wood sawing and rod improvements [\#4057](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4057) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Gave OPs access to FTB Essentials commands by default [\#4048](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4048) ([hvdklauw](https://github.com/hvdklauw))
+-   Reduce output of chains when melting in tinkers [\#4049](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4049) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Reduce Sooty Spawn Weight [\#4074](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4074) ([TemperedFool](https://github.com/TemperedFool))
+-   Some Atum QOL suggestions [\#4056](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4056) ([FieldArmada](https://github.com/FieldArmada))
+-   Update RS Crafter quest to add information about distributed crafting [\#4050](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4050) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Update Tinkers quests to provide the correct fluid types. [\#4072](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4072) ([FieldArmada](https://github.com/FieldArmada))
 
 **Bug Fixes**
 
-- unify molten redstone from Emandatus Enigmatica and destabilized redstone from Thermal [\#4070](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4070)
 - \[Exploit\] Chains give more Iron in Tinker's smeltery. [\#4045](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4045)
-- start-automated-server.bat doesn't support IPv6 [\#4043](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4043)
+- fixed crash when building IE multiblocks [\#4082](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4082) ([Darkere](https://github.com/Darkere))
+- Hide visible Expert quests for Normal mode. [\#4081](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4081) ([MuteTiefling](https://github.com/MuteTiefling))
 - Offhand items may be inadvertently placed in cutting boards [\#3964](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3964)
+- Start-automated-server.bat doesn't support IPv6 [\#4043](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4043)
+- Unify molten redstone from Emandatus Enigmatica and destabilized redstone from Thermal [\#4070](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4070)
+
+
+
+---
+
+
 
 ### Enigmatica 6 v0.5.23
 
