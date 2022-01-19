@@ -239,15 +239,6 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:astrogro', count: 3 }],
             id: `${id_prefix}astrogro`
-        },
-        {
-            inputs: [
-                { item: 'modularrouters:speed_upgrade', count: 3 },
-                { item: 'tconstruct:sky_slime_crystal', count: 1 }
-            ],
-            pressure: 2.0,
-            results: [{ item: 'modularrouters:stack_upgrade', count: 1 }],
-            id: 'modularrouters:stack_upgrade'
         }
     ];
 

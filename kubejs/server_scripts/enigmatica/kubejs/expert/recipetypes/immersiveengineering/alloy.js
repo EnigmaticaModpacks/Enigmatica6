@@ -135,9 +135,14 @@ onEvent('recipes', (event) => {
             id: 'modularrouters:fluid_module'
         },
         {
-            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('thermal:charge_bench')],
+            inputs: [Item.of('3x modularrouters:blank_module'), 'thermal:charge_bench'],
             output: Item.of('3x modularrouters:energy_output_module'),
             id: 'modularrouters:energy_output_module'
+        },
+        {
+            inputs: ['modularrouters:blank_upgrade', Item.of('8x tconstruct:sky_slime_crystal')],
+            output: Item.of('modularrouters:stack_upgrade'),
+            id: 'modularrouters:stack_upgrade'
         }
     ];
 

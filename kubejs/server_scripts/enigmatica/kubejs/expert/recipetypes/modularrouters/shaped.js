@@ -29,6 +29,16 @@ onEvent('recipes', (event) => {
                 }
             },
             id: 'modularrouters:speed_upgrade'
+        },
+        {
+            output: Item.of('3x modularrouters:fluid_upgrade'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:glass/colorless',
+                B: 'thermal:cured_rubber',
+                C: 'modularrouters:blank_upgrade'
+            },
+            id: 'modularrouters:fluid_upgrade'
         }
     ];
 
