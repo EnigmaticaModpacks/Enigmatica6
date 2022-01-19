@@ -23,6 +23,21 @@ onEvent('recipes', (event) => {
                 'tconstruct:sky_slime_crystal'
             ],
             id: 'modularrouters:stack_upgrade'
+        },
+        {
+            output: 'modularrouters:flinger_module',
+            inputs: ['modularrouters:dropper_module', 'create:weighted_ejector'],
+            id: 'modularrouters:flinger_module'
+        },
+        {
+            output: 'modularrouters:vacuum_module',
+            inputs: ['modularrouters:blank_module', 'minecraft:lodestone', 'pneumaticcraft:omnidirectional_hopper'],
+            id: 'modularrouters:vacuum_module'
+        },
+        {
+            output: 'modularrouters:xp_vacuum_augment',
+            inputs: ['modularrouters:augment_core', 'thermal:xp_crystal'],
+            id: 'modularrouters:xp_vacuum_augment'
         }
     ];
 
