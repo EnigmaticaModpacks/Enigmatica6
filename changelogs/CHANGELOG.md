@@ -2,8 +2,20 @@
 
 _Using Forge-1.16.5-36.2.22_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.24.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.24.md)_
 
+**New Mods**
+
+-   Trading Post [\#4055](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4055)
+
+**Changes/Improvements**
+
+-   Reduce Sooty bee spawn rates [\#4073](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4073)
+
 **Bug Fixes**
 
+- unify molten redstone from Emandatus Enigmatica and destabilized redstone from Thermal [\#4070](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4070)
+- \[Exploit\] Chains give more Iron in Tinker's smeltery. [\#4045](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4045)
+- start-automated-server.bat doesn't support IPv6 [\#4043](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4043)
+- Offhand items may be inadvertently placed in cutting boards [\#3964](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3964)
 
 ### Enigmatica 6 v0.5.23
 
