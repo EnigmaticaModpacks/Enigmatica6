@@ -126,6 +126,20 @@ onEvent('recipes', (event) => {
             temperature: 800,
             time: 58,
             id: `${id_prefix}molten_iron_from_ice_chain`
+        },
+        {
+            ingredient: { tag: 'forge:storage_blocks/redstone' },
+            result: { fluid: 'thermal:redstone', amount: 900 },
+            temperature: 660,
+            time: 64 * 9,
+            id: `${id_prefix}destabilized_redstone_from_redstone_block`
+        },
+        {
+            ingredient: { tag: 'forge:dusts/redstone' },
+            result: { fluid: 'thermal:redstone', amount: 100 },
+            temperature: 660,
+            time: 64,
+            id: `${id_prefix}destabilized_redstone_from_redstone_dust`
         }
     ];
 

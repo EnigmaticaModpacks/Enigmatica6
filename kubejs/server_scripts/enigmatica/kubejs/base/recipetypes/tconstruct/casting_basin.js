@@ -12,9 +12,10 @@ onEvent('recipes', (event) => {
         }
         */
         {
-            fluid: { name: 'emendatusenigmatica:molten_redstone', amount: 1296 },
+            fluid: { name: 'thermal:redstone', amount: 1296 },
             result: Item.of('minecraft:redstone_block').toJson(),
-            cooling_time: 200
+            cooling_time: 200,
+            id: `${id_prefix}redstone_block`
         },
         {
             fluid: { name: 'kubejs:molten_hardened_glass', amount: 1000 },
