@@ -1,4 +1,4 @@
-onForgeEvent('blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler$MultiblockFormEvent', (event) => {
+onEvent('ie.multiblock.form', event => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -26,16 +26,16 @@ onForgeEvent('blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler$
         ['immersivepetroleum:multiblocks/hydrotreater', 'heavy_machinery_schematics']
     ]);
 
-    const name = `${event.multiblock.getUniqueName()}`;
+    const name = `${event.getMultiblock()}`;
     if (requiredGameStage.has(name)) {
-        if (!event.player.stages.has(requiredGameStage.get(name))) {
-            event.setCanceled(true);
-            if (!event.player.field_70170_p.field_72995_K) {
-                let error_message = `Invalid structure or missing gamestage. Obtain a ${titleCase(
-                    requiredGameStage.get(name).toString().replace(/_/g, ' ')
-                )} to be able to form this multiblock.`;
-                event.player.field_70170_p.asKJS().getPlayer(event.player).tell(error_message);
-            }
+        if (!event.getEntity().stages.has(requiredGameStage.get(name))) {
+			event.cancel();
+			if(!event.getEntity().getServer()) {
+				let error_message = `Invalid structure or missing gamestage. Obtain a ${titleCase(
+                   requiredGameStage.get(name).toString().replace(/_/g, ' ')
+               )} to be able to form this multiblock.`;
+               event.getEntity().tell(error_message);
+			}
         }
     }
 });
