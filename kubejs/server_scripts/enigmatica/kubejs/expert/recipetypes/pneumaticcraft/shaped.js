@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#pneumaticcraft:upgrade_components',
                 B: '#pneumaticcraft:plastic_sheets',
-                C: Item.of('thermal:diving_boots', '{Damage:0}').weakNBT(),
+                C: Item.of('thermal:diving_boots', '{Damage:0}').weakNBT()
             },
             id: 'pneumaticcraft:flippers_upgrade'
         },
@@ -392,6 +392,20 @@ onEvent('recipes', (event) => {
                 C: '#forge:storage_blocks/copper'
             },
             id: 'pneumaticcraft:heat_pipe'
+        },
+        {
+            output: Item.of('4x pneumaticcraft:speed_upgrade'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'pneumaticcraft:glycerol',
+                C: {
+                    type: 'pneumaticcraft:fluid',
+                    tag: 'forge:lubricant',
+                    amount: 1000
+                }
+            },
+            id: 'pneumaticcraft:speed_upgrade_from_glycerol'
         }
     ];
 

@@ -103,6 +103,7 @@ onEvent('item.registry', (event) => {
         { name: 'medium_machinery_schematics', texture: 'blueprint' },
         { name: 'heavy_machinery_schematics', texture: 'blueprint' },
 
+        /*
         { name: 'machine_speed_augment_mk2', texture: 'machine_speed_augment' },
         { name: 'machine_speed_augment_mk3', texture: 'machine_speed_augment' },
         { name: 'machine_speed_augment_mk4', texture: 'machine_speed_augment' },
@@ -114,6 +115,7 @@ onEvent('item.registry', (event) => {
         { name: 'dynamo_fuel_augment_mk2', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
+        */
 
         { name: 'engineers_school_project', texture: 'packing_crate_gray' },
         { name: 'partial_engineers_school_project', texture: 'packing_crate_gray' },

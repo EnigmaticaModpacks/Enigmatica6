@@ -392,12 +392,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'bloodmagic:blankrune',
-                'quark:green_rune',
+                ['quark:green_rune', 'quark:lime_rune'],
                 'architects_palette:moonstone',
                 'ars_nouveau:glyph_delay',
                 'bloodmagic:reinforcedslate',
                 'kubejs:cutting_essence',
-                'quark:green_rune',
+                ['quark:green_rune', 'quark:lime_rune'],
                 'architects_palette:moonstone',
                 'ars_nouveau:glyph_delay',
                 'bloodmagic:reinforcedslate'

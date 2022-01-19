@@ -95,6 +95,8 @@ onEvent('recipes', (event) => {
         'create:pressing/lapis_block',
         'create:fill_minecraft_bucket_with_create_honey',
 
+        'dustrial_decor:ice_chain',
+
         'eidolon:tallow',
         'eidolon:smelt_stone_brick',
 

@@ -118,6 +118,31 @@ onEvent('recipes', (event) => {
             inputs: [Ingredient.of('2x #forge:storage_blocks/terminite'), Ingredient.of('9x #forge:dusts/diamond')],
             output: Item.of('2x emendatusenigmatica:enderium_block'),
             id: `${idPrefix}enderium_block`
+        },
+        {
+            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('3x prettypipes:high_retrieval_module')],
+            output: Item.of('3x modularrouters:puller_module_1'),
+            id: 'modularrouters:puller_module_1'
+        },
+        {
+            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('3x prettypipes:high_extraction_module')],
+            output: Item.of('3x modularrouters:sender_module_1'),
+            id: 'modularrouters:sender_module_1'
+        },
+        {
+            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('3x ppfluids:high_fluid_retrieval_module')],
+            output: Item.of('3x modularrouters:fluid_module'),
+            id: 'modularrouters:fluid_module'
+        },
+        {
+            inputs: [Item.of('3x modularrouters:blank_module'), 'thermal:charge_bench'],
+            output: Item.of('3x modularrouters:energy_output_module'),
+            id: 'modularrouters:energy_output_module'
+        },
+        {
+            inputs: ['modularrouters:blank_upgrade', Item.of('8x tconstruct:sky_slime_crystal')],
+            output: Item.of('modularrouters:stack_upgrade'),
+            id: 'modularrouters:stack_upgrade'
         }
     ];
 
