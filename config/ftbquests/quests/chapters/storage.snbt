@@ -1171,9 +1171,11 @@
 			x: 8.0d
 			y: -2.5d
 			subtitle: "When buckets aren't enough"
-			description: ["Getting fluids to work with your storage system can be hard. Here are some dedicated fluid storage units."
-			""
-			"This is meant to be a start, not exhaustive, so check out the quest chapters for each mod for more information."]
+			description: [
+				"Getting fluids to work with your storage system can be hard. Here are some dedicated fluid storage units."
+				""
+				"This is meant to be a start, not exhaustive, so check out the quest chapters for each mod for more information."
+			]
 			dependencies: ["00000000000003FF"]
 			id: "568DC3ECDB943C47"
 			tasks: [{
@@ -1188,30 +1190,12 @@
 			}]
 		}
 		{
-			title: "Fluid Cell"
-			x: 6.5d
-			y: -4.0d
-			dependencies: ["568DC3ECDB943C47"]
-			id: "5BEB6955518864A8"
-			description: ["Thermal Series' fluid cells are pretty configurable. Their sides can be configured to automatically input and output into adjacent inventories."]
-			tasks: [{
-				id: "49D84038D947694F"
-				type: "item"
-				item: "thermal:fluid_cell"
-			}]
-			rewards: [{
-				id: "2B1E9DE51DAB8B6E"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "Fluid Tank (Mekanism)"
 			x: 7.5d
 			y: -4.5d
+			description: ["Mekanism fluid tanks have a bucket mode (default: shift + scroll), which lets them pick up and use fluids. Try it as a gigantic bucket!"]
 			dependencies: ["568DC3ECDB943C47"]
 			id: "120DA7809C60693C"
-			description: ["Mekanism fluid tanks have a bucket mode (default: shift + scroll), which lets them pick up and use fluids. Try it as a gigantic bucket!"]
 			tasks: [{
 				id: "72362A5E247C68DE"
 				type: "item"
@@ -1224,30 +1208,12 @@
 			}]
 		}
 		{
-			title: "Fluid Storage Disk"
-			x: 6.5d
-			y: -1.0d
-			dependencies: ["568DC3ECDB943C47"]
-			id: "475E9EE7D90F0BB8"
-			description: ["Fluids can be stored as data too."]
-			tasks: [{
-				id: "545FD60137957AF6"
-				type: "item"
-				item: "refinedstorage:64k_fluid_storage_disk"
-			}]
-			rewards: [{
-				id: "38D75CB831BBCD62"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "Fluid Tank (PNC)"
 			x: 8.5d
 			y: -4.5d
+			description: ["Using a wrench, PneumaticCraft's tanks can be connected with tanks above and below to combine their capacities."]
 			dependencies: ["568DC3ECDB943C47"]
 			id: "42FE114176EAE0DD"
-			description: ["Using a wrench, PneumaticCraft's tanks can be connected with tanks above and below to combine their capacities."]
 			tasks: [{
 				id: "61F77FEB2B9801A7"
 				type: "item"
@@ -1260,15 +1226,33 @@
 			}]
 		}
 		{
-			title: "Black Hole Tank"
-			x: 10.0d
-			y: -3.0d
+			title: "Fluid Cell"
+			x: 9.5d
+			y: -4.0d
+			description: ["Thermal Series' fluid cells are pretty configurable. Their sides can be configured to automatically input and output into adjacent inventories."]
 			dependencies: ["568DC3ECDB943C47"]
+			id: "5BEB6955518864A8"
+			tasks: [{
+				id: "49D84038D947694F"
+				type: "item"
+				item: "thermal:fluid_cell"
+			}]
+			rewards: [{
+				id: "2B1E9DE51DAB8B6E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Black Hole Tank"
+			x: 8.5d
+			y: -0.5d
 			description: [
 				"Industrial Foregoing has massive storage capabilities. "
 				""
 				"Head over to the Industrial Foregoing Chapter to learn about Black Hole Storage."
 			]
+			dependencies: ["568DC3ECDB943C47"]
 			id: "1A0E0EC91FB287B0"
 			tasks: [{
 				id: "74238F0F4B713CBE"
@@ -1283,11 +1267,11 @@
 		}
 		{
 			title: "Fluid Tank (Create)"
-			x: 9.5d
-			y: -1.0d
+			x: 10.0d
+			y: -2.0d
+			description: ["Create tanks automatically merge with adjacent tanks and can be up to 3x3."]
 			dependencies: ["568DC3ECDB943C47"]
 			id: "516772B582C9114A"
-			description: ["Create tanks automatically merge with adjacent tanks and can be up to 3x3."]
 			tasks: [{
 				id: "755A21A9FE7980B4"
 				type: "item"
@@ -1300,30 +1284,12 @@
 			}]
 		}
 		{
-			title: "Tank"
-			x: 7.5d
-			y: -0.5d
-			dependencies: ["568DC3ECDB943C47"]
-			id: "5D02087F29AA5454"
-			description: ["The Tank is the ultimate portable fluid storage solution. It can pick up and place fluids, store multiple fluids, and even automatically absorb nearby fluids."]
-			tasks: [{
-				id: "790BBE6ECCCC0ABF"
-				type: "item"
-				item: "tanknull:tank_1"
-			}]
-			rewards: [{
-				id: "5418D856C9F47F1F"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "Ender Tank"
-			x: 9.5d
-			y: -4.0d
+			x: 10.0d
+			y: -3.0d
+			description: ["Ender Tanks will share their inventories with other tanks using the same color code. Try them for pipeless fluid transport."]
 			dependencies: ["568DC3ECDB943C47"]
 			id: "1E357DE462DBB1C8"
-			description: ["Ender Tanks will share their inventories with other tanks using the same color code. Try them for pipeless fluid transport."]
 			tasks: [{
 				id: "3CD94E8A1FADA69C"
 				type: "item"
@@ -1337,11 +1303,11 @@
 		}
 		{
 			title: "Tank (RFTools)"
-			x: 10.0d
-			y: -2.0d
+			x: 9.5d
+			y: -1.0d
+			description: ["Tanks in your fluid storage keep filling with the wrong liquids? RFTools tanks can filter what liquid they accept."]
 			dependencies: ["568DC3ECDB943C47"]
 			id: "484A9BB4A5423AF8"
-			description: ["Tanks in your fluid storage keep filling with the wrong liquids? RFTools tanks can filter what liquid they accept."]
 			tasks: [{
 				id: "3BF2366BB0C0E896"
 				type: "item"
@@ -1354,14 +1320,52 @@
 			}]
 		}
 		{
+			title: "Tank"
+			x: 7.5d
+			y: -0.5d
+			description: ["The Tank is the ultimate portable fluid storage solution. It can pick up and place fluids, store multiple fluids, and even automatically absorb nearby fluids."]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "5D02087F29AA5454"
+			tasks: [{
+				id: "790BBE6ECCCC0ABF"
+				type: "item"
+				item: "tanknull:tank_1"
+			}]
+			rewards: [{
+				id: "5418D856C9F47F1F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Fluid Storage Disk"
+			x: 6.5d
+			y: -1.0d
+			description: ["Fluids can be stored as data too."]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "475E9EE7D90F0BB8"
+			tasks: [{
+				id: "545FD60137957AF6"
+				type: "item"
+				item: "refinedstorage:64k_fluid_storage_disk"
+			}]
+			rewards: [{
+				id: "38D75CB831BBCD62"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
 			title: "Logistics"
 			x: 4.0d
 			y: 1.0d
 			subtitle: "Point A to Point B"
+			description: [
+				"Need a way to move those beautifully stored items around?"
+				"No, \"your inventory\" isn't a scalable answer."
+			]
 			dependencies: ["00000000000003FF"]
 			id: "30AA6A8DF0B65273"
-			description: ["Need a way to move those beautifully stored items around?"
-			"No, \"your inventory\" isn't a scalable answer."]
 			tasks: [{
 				id: "4FB3F0534FC9F890"
 				type: "item"
@@ -1374,15 +1378,19 @@
 			}]
 		}
 		{
+			title: "Logistical Transporters"
 			x: 5.5d
 			y: -0.5d
+			description: [
+				"Mekanism's transporters can be configured to pull, push, or not connect to each adjacent inventory."
+				"Pipes, Cables, and Pressurized Tubes also handle fluids, RF, and gases, respectively."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "3FF1B8E5563D4ECF"
-			description: ["Mekanism's pipes can be configured to pull, push, or not connect to each adjacent inventory."]
 			tasks: [{
 				id: "390C2385836A0859"
 				type: "item"
-				item: "mekanism:basic_mechanical_pipe"
+				item: "mekanism:basic_logistical_transporter"
 			}]
 			rewards: [{
 				id: "7CEC37180EF4A917"
@@ -1391,11 +1399,12 @@
 			}]
 		}
 		{
+			title: "Pretty Pipes"
 			x: 6.0d
 			y: 0.5d
+			description: ["Pipes from pretty pipes don't just move items, but can intelligently distribute and request items from all connected inventories."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "1A865F69095572C3"
-			description: ["Pipes from pretty pipes don't just move items, but can intelligently distribute and request items from all connected inventories."]
 			tasks: [{
 				id: "7D9BD24CCE0A679C"
 				type: "item"
@@ -1408,11 +1417,15 @@
 			}]
 		}
 		{
+			title: "Conveyor Belts"
 			x: 6.0d
 			y: 1.5d
+			description: [
+				"Immersive Engineering's conveyor belts can move entities in-world, not just items in inventories."
+				"They'll also automatically extract items from and send items into inventories they touch."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "4DD97175C1818801"
-			description: ["Immersive Engineering's conveyor belts can move entities in-world, not just items in inventories."]
 			tasks: [{
 				id: "484B8D4B94C6C182"
 				type: "item"
@@ -1425,11 +1438,15 @@
 			}]
 		}
 		{
+			title: "Mechanical Belts"
 			x: 5.5d
 			y: 2.5d
+			description: [
+				"Create machines will pause items on its conveyor belts to process them, making them perfect for automating processing and assembly."
+				"If you need more than just linear movement, try out the Weighted Ejector or the Mechanical Arm."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "2441588EA9FC9FDB"
-			description: ["Create machines will pause items on its conveyor belts to process them, making them perfect for automating processing and assembly."]
 			tasks: [{
 				id: "366C08F8F32D7E4A"
 				type: "item"
@@ -1442,11 +1459,12 @@
 			}]
 		}
 		{
+			title: "Modular Router"
 			x: 4.5d
 			y: 3.0d
+			description: ["Need sorting, routing, and things beyond basic item movement? Try the Modular Routers item router."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "6BCBA74138F138BC"
-			description: ["Need sorting, routing, and things beyond basic item movement? Try the Modular Routers item router."]
 			tasks: [{
 				id: "07FA31F7D204F116"
 				type: "item"
@@ -1459,11 +1477,12 @@
 			}]
 		}
 		{
+			title: "Router (XNet)"
 			x: 3.5d
 			y: 3.0d
+			description: ["XNet can intelligently transfer items and does it instantly too. No more items filling up pipes or bouncing because the destination is full."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "559D7D60CDDE5596"
-			description: ["XNet can intelligently transfer items and does it instantly too. No more items filling up pipes or bouncing because the destination is full."]
 			tasks: [{
 				id: "204956F05E407E82"
 				type: "item"
@@ -1476,25 +1495,14 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 1.5d
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "26ACCA8BF3FD389E"
-			description: ["Factory Hoppers from Engineer's Decor run substantially faster than vanilla hoppers."]
-			tasks: [{
-				id: "019D7BDF7259CA1E"
-				type: "item"
-				item: "engineersdecor:factory_hopper"
-			}]
-			rewards: [{
-				id: "7A95EC6D5D219313"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
+			title: "Omnidirectional Hopper"
 			x: 2.5d
 			y: 2.5d
+			description: [
+				"PneumaticCraft's Omnidirectional Hoppers can be rotated to have their open side face in any direction."
+				"Once you have some pressurized air, also make sure to check out the logistics system in the PneumaticCraft chapter,"
+				"capable of deploying instant logistics systems over pressure tube networks and flying aerial drones."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "0EF9750F679732E6"
 			tasks: [{
@@ -1502,9 +1510,26 @@
 				type: "item"
 				item: "pneumaticcraft:omnidirectional_hopper"
 			}]
-			description: ["PneumaticCraft's Omnidirectional Hoppers can be rotated to have their open side face in any direction."]
 			rewards: [{
 				id: "1802F4AD7CEC8593"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Carbuncle"
+			x: 2.0d
+			y: 1.5d
+			description: ["Magic mods can have their item transportation fun too! Carbuncles will helpfully collect items and store them into inventories for you."]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "2831B38150565AEF"
+			tasks: [{
+				id: "6895F42F97F55A26"
+				type: "item"
+				item: "ars_nouveau:carbuncle_charm"
+			}]
+			rewards: [{
+				id: "76086ABB78E76EB5"
 				type: "xp"
 				xp: 100
 			}]
