@@ -242,7 +242,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'integrateddynamics:logic_programmer',
-            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CHIHC', 'ABBBA'],
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CIHJC', 'ABBBA'],
             key: {
                 A: 'pneumaticcraft:logistics_core',
                 B: 'integrateddynamics:crystalized_menril_block',
@@ -252,7 +252,8 @@ onEvent('recipes', (event) => {
                 F: 'pneumaticcraft:smart_chest',
                 G: 'refinedstorage:machine_casing',
                 H: 'pneumaticcraft:upgrade_matrix',
-                I: 'pneumaticcraft:remote'
+                I: 'pneumaticcraft:network_io_port',
+				J: 'pneumaticcraft:network_data_storage'
             },
             id: 'integrateddynamics:crafting/logic_programmer'
         },

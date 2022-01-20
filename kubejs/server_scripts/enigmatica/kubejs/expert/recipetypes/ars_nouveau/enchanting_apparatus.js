@@ -2151,6 +2151,22 @@ onEvent('recipes', (event) => {
             output: Item.of('2x bloodmagic:blankrune'),
             id: `${id_prefix}blood_rune_blank`
         },
+        {
+            inputs: [
+                'ars_nouveau:greater_experience_gem',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
+                'ars_nouveau:greater_experience_gem',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
+                'ars_nouveau:greater_experience_gem',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
+                'ars_nouveau:greater_experience_gem'
+            ],
+            sourceCost: 10000,
+            reagent: 'atum:isis_godshard',
+            output: 'thermal:xp_crystal',
+            id: 'thermal:tools/xp_crystal'
+        },
 
         /// Patchouli Removals
         {

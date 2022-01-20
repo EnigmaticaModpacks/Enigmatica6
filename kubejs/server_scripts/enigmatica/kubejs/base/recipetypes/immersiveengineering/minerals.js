@@ -241,28 +241,6 @@ onEvent('recipes', (event) => {
                 id: 'kimberlite'
             },
             {
-                ores: [
-                    { chance: 0.7, output: { tag: 'forge:ores/thallasium' } },
-                    { chance: 0.3, output: { tag: 'forge:shards/ender' } }
-                ],
-                dimensions: ['minecraft:end'],
-                weight: 15,
-                fail_chance: 0.15,
-                sample_background: 'minecraft:end_stone',
-                id: 'abyssalite'
-            },
-            {
-                ores: [
-                    { chance: 0.7, output: { tag: 'forge:shards/aurora' } },
-                    { chance: 0.3, output: { tag: 'forge:shards/amber' } }
-                ],
-                dimensions: ['minecraft:end'],
-                weight: 15,
-                fail_chance: 0.15,
-                sample_background: 'betterendforge:flavolite',
-                id: 'prismatic_xyloretinite'
-            },
-            {
                 ores: [{ chance: 1.0, output: { tag: 'forge:ores/cloggrum' } }],
                 dimensions: ['undergarden:undergarden'],
                 weight: 20,
