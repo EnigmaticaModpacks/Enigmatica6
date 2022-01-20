@@ -11,9 +11,9 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}smoldering_lapis_lazuli_compound`
         },
         {
-            output: Item.of('4x industrialforegoing:plastic'),
-            input: Item.of('4x industrialforegoing:dryrubber'),
-            slag: Item.of('4x thermal:slag'),
+            output: 'industrialforegoing:plastic',
+            input: 'industrialforegoing:dryrubber',
+            slag: 'thermal:slag',
             id: 'industrialforegoing:plastic'
         }
     ];
