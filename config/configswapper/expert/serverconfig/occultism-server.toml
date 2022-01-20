@@ -6,9 +6,9 @@
 	#The amount of slots the storage stabilizer tier 2 provides.
 	stabilizerTier2Slots = 512
 	#The amount of slots the storage stabilizer tier 3 provides.
-	stabilizerTier3Slots = 1024
+	stabilizerTier3Slots = 2048
 	#The amount of slots the storage stabilizer tier 4 provides.
-	stabilizerTier4Slots = 2048
+	stabilizerTier4Slots = 4096
 	#The amount of slots the storage actuator provides.
 	controllerBaseSlots = 128
 	#The stack size the storage actuator uses.
@@ -72,7 +72,7 @@
 		#The amount of blocks the spirit will obtain per mining operation
 		rollsPerOperation = 1
 		#The amount of mining operations the spirit can perform before breaking.
-		durability = 1000
+		durability = 100
 
 	#Miner Spirit Settings
 	[dimensional_mineshaft.miner_djinni_ores]
@@ -81,7 +81,7 @@
 		#The amount of blocks the spirit will obtain per mining operation
 		rollsPerOperation = 2
 		#The amount of mining operations the spirit can perform before breaking.
-		durability = 5000
+		durability = 50
 
 #Item Settings
 [items]
