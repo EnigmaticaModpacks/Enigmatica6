@@ -220,7 +220,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/craft_miner_foliot_unspecialized',
             ingredients: [
                 'occultism:magic_lamp_empty',
-                Item.of('occultism:iesnium_pickaxe', '{Damage:0]}').weakNBT(),
+                Item.of('naturesaura:infused_iron_pickaxe', '{Damage:0]}').weakNBT(),
                 '#atum:relic_non_dirty/brooch',
                 'atum:limestone_gravel'
             ],
