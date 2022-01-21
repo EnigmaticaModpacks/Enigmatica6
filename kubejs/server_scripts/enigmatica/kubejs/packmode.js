@@ -1,10 +1,12 @@
 //priority: 1004
 setMode = (player) => {
-    console.log('setting mode for player: ' + player);
+    const expertModeQuestId = '0000000000000FEB';
+    console.log(`setting mode for player: ${player}`);
     if (global.packmode == 'expert') {
-        player.data.ftbquests.complete('0000000000000FEB');
+        player.data.ftbquests.complete(expertModeQuestId);
+        console.log(`set mode to expert for player: ${player}`);
     } else {
-        player.data.ftbquests.reset('0000000000000FEB');
+        player.data.ftbquests.reset(expertModeQuestId);
     }
 };
 
