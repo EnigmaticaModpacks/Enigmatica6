@@ -163,6 +163,8 @@ onEvent('item.registry', (event) => {
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
         { name: 'batch_unassembled_pcb', texture: 'packing_crate_lime' },
 
+        { name: 'soggy_treasure_box', texture: 'common_lootbox' },
+
         { name: 'pneumatic_helmet_package', texture: 'assembly_package_filled' },
         { name: 'pneumatic_helmet_assembly', texture: 'assembly_package_processing' },
         { name: 'pneumatic_chestplate_package', texture: 'assembly_package_filled' },
@@ -257,6 +259,14 @@ onEvent('item.registry', (event) => {
     reusableItemTextures.forEach((item) => {
         event.create(item.name).group('KubeJS').texture(`kubejs:item/${item.texture}`);
     });
+
+    event
+        .create('fisher_foliot')
+        .group('KubeJS')
+        .texture('kubejs:item/magic_lamp')
+        .maxStackSize(1)
+        .maxDamage(500)
+        .displayName('Fisher Foliot');
 
     // Custom Foods
     event

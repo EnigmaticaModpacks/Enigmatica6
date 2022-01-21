@@ -184,6 +184,10 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['clockout:clockout_block'],
             text: [Text.of(`Outputs redstone when the player is online.`).aqua()]
+        },
+        {
+            items: ['kubejs:soggy_treasure_box'],
+            text: [Text.of(`The lock appears broken... What could be inside?`).darkAqua()]
         }
     ];
 
