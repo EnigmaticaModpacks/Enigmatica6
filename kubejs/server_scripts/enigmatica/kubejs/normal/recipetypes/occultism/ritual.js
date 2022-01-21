@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
                 'minecraft:sea_lantern',
                 'aquaculture:nether_star_hook'
             ],
-            result: Item.of('kubejs:fisher_foliot', '{rollsPerOperation:1,Damage:0,maxMiningTime:400}'),
+            result: Item.of('kubejs:fisher_foliot', '{rollsPerOperation:3,Damage:0,maxMiningTime:400}'),
             id: `${id_prefix}craft_fisher_foliot`
         }
     ];
