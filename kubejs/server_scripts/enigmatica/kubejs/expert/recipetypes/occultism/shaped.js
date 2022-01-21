@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'ABA', ' AA'],
             key: {
                 A: '#forge:ingots/silver',
-                B: '#forge:ingots/nebu'
+                B: 'atum:horus_godshard'
             },
             id: 'occultism:crafting/magic_lamp_empty'
         }
