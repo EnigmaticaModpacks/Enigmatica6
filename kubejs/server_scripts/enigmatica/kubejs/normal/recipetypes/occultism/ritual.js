@@ -26,9 +26,9 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'kubejs:craft_fisher_foliot',
             ingredients: [
                 'occultism:magic_lamp_empty',
-                Item.of('minecraft:fishing_rod', '{Damage:0]}').weakNBT(),
+                Item.of('aquaculture:diamond_fishing_rod', '{Damage:0]}').weakNBT(),
                 'minecraft:sea_lantern',
-                'aquaculture:nether_star_hook'
+                'aquaculture:diamond_hook'
             ],
             result: Item.of('kubejs:fisher_foliot', '{rollsPerOperation:3,Damage:0,maxMiningTime:400}'),
             id: `${id_prefix}craft_fisher_foliot`
