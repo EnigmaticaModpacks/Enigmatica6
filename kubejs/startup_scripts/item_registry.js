@@ -96,7 +96,8 @@ onEvent('item.registry', (event) => {
         'craft_mycelial_furnace',
         'craft_glyph_sentientharm',
         'craft_ender_dagger',
-        'craft_enchantment_library'
+        'craft_enchantment_library',
+        'craft_fisher_foliot'
     ];
 
     const reusableItemTextures = [

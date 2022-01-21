@@ -17,6 +17,21 @@ onEvent('recipes', (event) => {
             ingredients: ['#forge:ores/iron', '#forge:ores/gold', '#forge:ores/copper', '#forge:ores/silver'],
             result: 'occultism:jei_dummy/none',
             id: 'occultism:ritual/summon_foliot_crusher'
+        },
+        {
+            ritual_type: 'occultism:craft_miner_spirit',
+            activation_item: 'occultism:book_of_binding_bound_foliot',
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 60,
+            ritual_dummy: 'kubejs:craft_fisher_foliot',
+            ingredients: [
+                'occultism:magic_lamp_empty',
+                Item.of('minecraft:fishing_rod', '{Damage:0]}').weakNBT(),
+                'minecraft:sea_lantern',
+                'aquaculture:nether_star_hook'
+            ],
+            result: Item.of('kubejs:fisher_foliot', '{rollsPerOperation:1,Damage:0,maxMiningTime:400}'),
+            id: `${id_prefix}craft_fisher_foliot`
         }
     ];
 
