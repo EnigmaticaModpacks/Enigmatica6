@@ -3,8 +3,43 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'kubejs:soggy_treasure_box',
-            weight: 50,
+            weight: 177,
             id: `${id_prefix}soggy_treasure_box`
+        },
+        {
+            output: 'aquaculture:starshell_turtle',
+            weight: 100,
+            id: `${id_prefix}starshell_turtle`
+        },
+        {
+            output: 'aquaculture:arrau_turtle',
+            weight: 100,
+            id: `${id_prefix}arrau_turtle`
+        },
+        {
+            output: 'aquaculture:box_turtle',
+            weight: 100,
+            id: `${id_prefix}box_turtle`
+        },
+        {
+            output: 'aquaculture:leech',
+            weight: 100,
+            id: `${id_prefix}leech`
+        },
+        {
+            output: 'aquaculture:frog',
+            weight: 100,
+            id: `${id_prefix}frog`
+        },
+        {
+            output: 'aquaculture:jellyfish',
+            weight: 100,
+            id: `${id_prefix}jellyfish`
+        },
+        {
+            output: 'aquaculture:fish_bones',
+            weight: 100,
+            id: `${id_prefix}fish_bones`
         }
     ];
 

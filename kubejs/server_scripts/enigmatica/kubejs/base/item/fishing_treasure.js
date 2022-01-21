@@ -1,7 +1,5 @@
 onEvent('item.right_click', (e) => {
     if (e.item.id != 'kubejs:soggy_treasure_box') return;
-    //if (!e.player.isPlayer() || e.player.isFake()) return;
-
     if (!e.player.isCreativeMode()) {
         e.player.getMainHandItem().count--;
     }
