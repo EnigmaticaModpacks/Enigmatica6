@@ -102,6 +102,50 @@ onEvent('recipes', (event) => {
                 D: 'thermal:red_rockwool'
             },
             id: `${id_prefix}advanced_assembly_table_item_port_items_output`
+        },
+        {
+            output: Item.of('2x masterfulmachinery:stellar_neutron_activator_mana_port_botania_mana_input'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'kubejs:observatory_lens',
+                B: 'botania:mana_diamond_block',
+                C: '#botania:runes/mana',
+                D: 'botania:fabulous_pool'
+            },
+            id: `${id_prefix}stellar_neutron_activator_mana_port_botania_mana_input`
+        },
+        {
+            output: 'masterfulmachinery:stellar_neutron_activator_fluid_port_fluids_input',
+            pattern: ['BAB', 'ACA', 'BDB'],
+            key: {
+                A: 'immersiveengineering:hempcrete',
+                B: 'mekanism:ultimate_mechanical_pipe',
+                C: 'pneumaticcraft:huge_tank',
+                D: 'xnet:advanced_connector_green'
+            },
+            id: `${id_prefix}stellar_neutron_activator_fluid_port_fluids_input`
+        },
+        {
+            output: 'masterfulmachinery:stellar_neutron_activator_fluid_port_fluids_output',
+            pattern: ['BAB', 'ACA', 'BDB'],
+            key: {
+                A: 'immersiveengineering:hempcrete',
+                B: 'mekanism:ultimate_mechanical_pipe',
+                C: 'pneumaticcraft:huge_tank',
+                D: 'xnet:advanced_connector_red'
+            },
+            id: `${id_prefix}stellar_neutron_activator_fluid_port_fluids_output`
+        },
+        {
+            output: 'masterfulmachinery:stellar_neutron_activator_energy_port_energy_input',
+            pattern: ['BAB', 'ACA', 'BDB'],
+            key: {
+                A: 'immersiveengineering:hempcrete',
+                B: 'mekanism:ultimate_universal_cable',
+                C: 'mekanism:ultimate_induction_provider',
+                D: 'xnet:advanced_connector_green'
+            },
+            id: `${id_prefix}stellar_neutron_activator_energy_port_energy_input`
         }
     ];
 

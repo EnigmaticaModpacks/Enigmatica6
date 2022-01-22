@@ -14,7 +14,6 @@
         },
         {
             "type": "masterfulmachinery:energy",
-            "textureOverride": "kubejs:block/storage_steel",
             "name": "FE",
             "id": "energy",
             "data": {
@@ -23,20 +22,10 @@
         },
         {
             "type": "masterfulmachinery:fluids",
-            "textureOverride": "kubejs:block/storage_steel",
             "name": "Fluid",
             "id": "fluid",
             "data": {
-                "capacity": 500000000
-            }
-        },
-        {
-            "type": "masterfulmachinery:mekanism_gas",
-            "textureOverride": "kubejs:block/storage_steel",
-            "name": "Gas",
-            "id": "gas",
-            "data": {
-                "capacity": 500000000
+                "capacity": 512000
             }
         }
     ]
