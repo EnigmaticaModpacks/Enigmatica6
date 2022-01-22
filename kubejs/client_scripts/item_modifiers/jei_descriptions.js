@@ -191,7 +191,16 @@ onEvent('jei.information', (event) => {
             text: ['Place next to living coral to infuse.']
         },
         {
-            items: [/quark:\w+_crystal$/],
+            items: [
+                'quark:red_crystal',
+                'quark:orange_crystal',
+                'quark:yellow_crystal',
+                'quark:green_crystal',
+                'quark:blue_crystal',
+                'quark:indigo_crystal',
+                'quark:violet_crystal',
+                'quark:white_crystal',
+                'quark:black_crystal'],
             text: [
                 'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.',
                 ' ',
