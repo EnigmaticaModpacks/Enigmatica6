@@ -47,7 +47,7 @@ onEvent('recipes', (event) => {
         recipes.push({
             output: fish,
             weight: 100,
-            id: `${id_prefix}${fish.split(':')[0]}`
+            id: `${id_prefix}${fish.split(':')[1]}`
         });
     });
 
