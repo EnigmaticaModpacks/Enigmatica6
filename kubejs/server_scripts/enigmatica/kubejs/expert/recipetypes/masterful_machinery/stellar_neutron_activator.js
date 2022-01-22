@@ -16,12 +16,12 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:botania_mana',
                     perTick: true,
-                    data: { amount: 2000 }
+                    data: { amount: 1000 }
                 },
                 {
                     type: 'masterfulmachinery:energy',
                     perTick: true,
-                    data: { amount: 50000 }
+                    data: { amount: 100000 }
                 },
                 {
                     type: 'masterfulmachinery:fluids',
