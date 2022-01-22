@@ -7,27 +7,26 @@ onEvent('recipes', (event) => {
         {
             outputs: [
                 {
-                    type: 'masterfulmachinery:mekanism_gas',
+                    type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { gas: 'mekanismgenerators:tritium', amount: 640 }
+                    data: { fluid: 'mekanismgenerators:tritium', amount: 640 }
                 }
             ],
             inputs: [
-                ,
-                {
-                    type: 'masterfulmachinery:fluids',
-                    consumeInstantly: true,
-                    data: { fluid: 'minecraft:water', amount: 6400000 }
-                },
                 {
                     type: 'masterfulmachinery:botania_mana',
                     perTick: true,
-                    data: { amount: 8000 }
+                    data: { amount: 2000 }
                 },
                 {
                     type: 'masterfulmachinery:energy',
                     perTick: true,
                     data: { amount: 50000 }
+                },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'minecraft:water', amount: 64000 }
                 }
             ],
             ticks: 100,
@@ -42,3 +41,24 @@ onEvent('recipes', (event) => {
         event.custom(recipe).id(recipe.id);
     });
 });
+
+/*
+{
+    type: 'masterfulmachinery:botania_mana',
+    perTick: true,
+    data: { amount: 8000 }
+},
+{
+    type: 'masterfulmachinery:fluids',
+    perTick: true,
+    data: { fluid: 'minecraft:water', amount: 64000 }
+},
+
+
+
+{
+    type: 'masterfulmachinery:mekanism_gas',
+    data: { gas: 'mekanismgenerators:tritium', amount: 64000 }
+}
+
+*/
