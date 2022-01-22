@@ -1744,7 +1744,7 @@ const stonecuttables = [
         onlyAsOutput: [],
         onlyAsInput: []
     },
-	{
+    {
         name: 'deepslate',
         stones: [
             'quark:cobbled_deepslate',
@@ -2284,8 +2284,120 @@ const stonecuttables = [
         onlyAsInput: []
     }
 ];
+// Colorless Glass
+let glassTypes = ['glass', 'glass_pane'];
+
+glassTypes.forEach((glassType) => {
+    let colorlessGlass = [
+        `create:vertical_framed_${glassType}`,
+        `create:horizontal_framed_${glassType}`,
+        `create:framed_${glassType}`,
+        `create:tiled_${glassType}`,
+        `connectedglass:scratched_${glassType}`,
+        `connectedglass:clear_${glassType}`,
+        `connectedglass:borderless_${glassType}`,
+        `minecraft:${glassType}`
+    ];
+
+    // Chipped glasses
+    let chippedGlassTypes = [
+        'oak_wood',
+        'birch_wood',
+        'spruce_wood',
+        'jungle_wood',
+        'acacia_wood',
+        'dark_oak_wood',
+        'warped_wood',
+        'crimson_wood'
+    ];
+    chippedGlassTypes.forEach((chippedGlassType) => {
+        for (i = 1; i <= 6; i++) {
+            colorlessGlass.push(`chipped:${chippedGlassType}_${glassType}_${i}`);
+        }
+    });
+    for (i = 1; i <= 14; i++) {
+        colorlessGlass.push(`chipped:glass_${i}`);
+    }
+
+    stonecuttables.push({
+        name: `colorless_${glassType}`,
+        stones: colorlessGlass,
+        onlyAsOutput: [],
+        onlyAsInput: [
+            `tconstruct:clear_${glassType}`,
+            `atum:deadwood_framed_crystal_${glassType}`,
+            `atum:palm_framed_crystal_${glassType}`,
+            `atum:crystal_${glassType}`,
+            `valhelsia_structures:metal_framed_${glassType}`,
+            `undergarden:sediment_${glassType}`
+        ]
+    });
+});
 
 colors.forEach((color) => {
+    // Colored Glass
+    let glass = [
+        `chipped:${color}_stained_glass_8`,
+        `chipped:${color}_stained_glass_7`,
+        `chipped:${color}_stained_glass_6`,
+        `chipped:${color}_stained_glass_5`,
+        `chipped:${color}_stained_glass_4`,
+        `chipped:${color}_stained_glass_3`,
+        `chipped:${color}_stained_glass_2`,
+        `chipped:${color}_stained_glass_1`,
+        `quark:${color}_framed_glass`,
+        `connectedglass:scratched_glass_${color}`,
+        `connectedglass:clear_glass_${color}`,
+        `connectedglass:borderless_glass_${color}`,
+        `minecraft:${color}_stained_glass`
+    ];
+
+    let glassOnlyInput = [
+        `tconstruct:${color}_clear_stained_glass`,
+        `atum:${color}_stained_deadwood_framed_crystal_glass`,
+        `atum:${color}_stained_palm_framed_crystal_glass`,
+        `atum:${color}_stained_crystal_glass`
+    ];
+
+    stonecuttables.push({
+        name: `${color}_glass`,
+        stones: glass,
+        onlyAsOutput: [],
+        onlyAsInput: glassOnlyInput
+    });
+
+    // Colored Glass Panes
+    let glassPanes = [
+        `chipped:${color}_stained_glass_pane_8`,
+        `chipped:${color}_stained_glass_pane_7`,
+        `chipped:${color}_stained_glass_pane_6`,
+        `chipped:${color}_stained_glass_pane_5`,
+        `chipped:${color}_stained_glass_pane_4`,
+        `chipped:${color}_stained_glass_pane_3`,
+        `chipped:${color}_stained_glass_pane_2`,
+        `chipped:${color}_stained_glass_pane_1`,
+        `pitg:${color}_stained_glasspane`,
+        `quark:${color}_framed_glass_pane`,
+        `connectedglass:scratched_glass_${color}_pane`,
+        `connectedglass:clear_glass_${color}_pane`,
+        `connectedglass:borderless_glass_${color}_pane`,
+        `minecraft:${color}_stained_glass_pane`
+    ];
+
+    let glassPanesOnlyInput = [
+        `tconstruct:${color}_clear_stained_glass_pane`,
+        `atum:${color}_stained_deadwood_framed_crystal_glass_pane`,
+        `atum:${color}_stained_palm_framed_crystal_glass_pane`,
+        `atum:${color}_stained_crystal_glass_pane`
+    ];
+
+    stonecuttables.push({
+        name: `${color}_glass_panes`,
+        stones: glassPanes,
+        onlyAsOutput: [],
+        onlyAsInput: glassPanesOnlyInput
+    });
+
     // Chipped Extras
     let chippedTypes = ['wool', 'carpet', 'terracotta', 'concrete'];
     chippedTypes.forEach((chippedType) => {
