@@ -253,7 +253,7 @@ onEvent('recipes', (event) => {
                 G: 'refinedstorage:machine_casing',
                 H: 'pneumaticcraft:upgrade_matrix',
                 I: 'pneumaticcraft:network_io_port',
-				J: 'pneumaticcraft:network_data_storage'
+                J: 'pneumaticcraft:network_data_storage'
             },
             id: 'integrateddynamics:crafting/logic_programmer'
         },
@@ -742,6 +742,19 @@ onEvent('recipes', (event) => {
                 I: 'xnet:advanced_connector_red'
             },
             id: `${id_prefix}auto_iridescent_altar_controller`
+        },
+        {
+            output: 'masterfulmachinery:stellar_neutron_activator_controller',
+            pattern: ['ABCBA', 'BDDDB', 'EDFDE', 'BDDDB', 'ABCBA'],
+            key: {
+                A: 'immersiveengineering:hempcrete',
+                B: 'mekanism:thermal_evaporation_block',
+                C: 'mekanism:resistive_heater',
+                D: 'mekanism:ultimate_thermodynamic_conductor',
+                E: 'mekanism:thermal_evaporation_valve',
+                F: 'mekanism:thermal_evaporation_controller'
+            },
+            id: `${id_prefix}stellar_neutron_activator_controller`
         }
     ];
 
