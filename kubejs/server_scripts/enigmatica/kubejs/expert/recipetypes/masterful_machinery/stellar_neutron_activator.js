@@ -16,7 +16,7 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:botania_mana',
                     consumeInstantly: true,
-                    data: { amount: 100000 }
+                    data: { amount: 4000000 }
                 },
                 {
                     type: 'masterfulmachinery:energy',
@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
                     data: { fluid: 'minecraft:water', amount: 64000 }
                 }
             ],
-            ticks: 100,
+            ticks: 4000,
             id: `${id_prefix}tritium`
         }
     ];
