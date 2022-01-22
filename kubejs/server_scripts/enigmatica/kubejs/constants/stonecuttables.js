@@ -189,7 +189,13 @@ const stonecuttables = [
             'ars_nouveau:ab_mosaic',
             'ars_nouveau:ab_herring',
             'ars_nouveau:ab_basket',
-            'ars_nouveau:ab_alternating'
+            'ars_nouveau:ab_alternating',
+            'ars_nouveau:sas_basket',
+            'ars_nouveau:sas_clover',
+            'ars_nouveau:sas_herring',
+            'ars_nouveau:sas_mosaic',
+            'ars_nouveau:sas_alternating',
+            'ars_nouveau:sas_ashlar'
         ],
         onlyAsOutput: [],
         onlyAsInput: []
@@ -1723,6 +1729,20 @@ const stonecuttables = [
         ],
         onlyAsOutput: [],
         onlyAsInput: []
+    },
+	{
+        name: 'deepslate',
+        stones: [
+            'quark:cobbled_deepslate',
+            'quark:polished_deepslate',
+            'quark:deepslate_bricks',
+            'quark:deepslate_tiles',
+            'quark:chiseled_deepslate',
+            'quark:cracked_deepslate_bricks',
+            'quark:cracked_deepslate_tiles'
+        ],
+        onlyAsOutput: [],
+        onlyAsInput: ['quark:deepslate']
     },
     {
         name: 'soapstone',
