@@ -1034,6 +1034,20 @@ const stonecuttables = [
         onlyAsInput: []
     },
     {
+        name: 'marblesooty',
+        stones: [
+            'astralsorcery:black_marble_raw',
+            'astralsorcery:black_marble_runed',
+            'astralsorcery:black_marble_pillar',
+            'astralsorcery:black_marble_arch',
+            'astralsorcery:black_marble_bricks',
+            'astralsorcery:black_marble_chiseled',
+            'astralsorcery:black_marble_engraved'
+        ],
+        onlyAsOutput: [],
+        onlyAsInput: []
+    },
+    {
         name: 'metamorphic_desert_stone',
         stones: [
             'botania:metamorphic_desert_stone',
