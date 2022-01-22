@@ -15,8 +15,8 @@ onEvent('recipes', (event) => {
             inputs: [
                 {
                     type: 'masterfulmachinery:botania_mana',
-                    perTick: true,
-                    data: { amount: 1000 }
+                    consumeInstantly: true,
+                    data: { amount: 100000 }
                 },
                 {
                     type: 'masterfulmachinery:energy',
