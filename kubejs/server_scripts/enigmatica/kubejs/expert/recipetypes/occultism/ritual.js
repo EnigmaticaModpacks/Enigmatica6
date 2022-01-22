@@ -220,7 +220,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/craft_miner_foliot_unspecialized',
             ingredients: [
                 'occultism:magic_lamp_empty',
-                Item.of('occultism:iesnium_pickaxe', '{Damage:0]}').weakNBT(),
+                Item.of('naturesaura:infused_iron_pickaxe', '{Damage:0]}').weakNBT(),
                 '#atum:relic_non_dirty/brooch',
                 'atum:limestone_gravel'
             ],
@@ -1077,7 +1077,7 @@ onEvent('recipes', (event) => {
                 'create:fluid_pipe',
                 '#sophisticatedbackpacks:upgrades/pump',
                 'create:fluid_pipe',
-                'create:filter'
+                'create:attribute_filter'
             ],
             result: 'sophisticatedbackpacks:advanced_pump_upgrade',
             id: `${id_prefix}advanced_pump_upgrade`
@@ -1283,6 +1283,21 @@ onEvent('recipes', (event) => {
             ],
             result: 'apotheosis:enchantment_library',
             id: `${id_prefix}enchantment_library`
+        },
+        {
+            ritual_type: 'occultism:craft_miner_spirit',
+            activation_item: 'occultism:book_of_binding_bound_foliot',
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 60,
+            ritual_dummy: 'kubejs:craft_fisher_foliot',
+            ingredients: [
+                'occultism:magic_lamp_empty',
+                Item.of('atum:atems_bounty', '{Damage:0]}').weakNBT(),
+                'minecraft:heart_of_the_sea',
+                'aquaculture:nether_star_hook'
+            ],
+            result: Item.of('kubejs:fisher_foliot', '{rollsPerOperation:1,Damage:0,maxMiningTime:400}'),
+            id: `${id_prefix}craft_fisher_foliot`
         }
     ];
 

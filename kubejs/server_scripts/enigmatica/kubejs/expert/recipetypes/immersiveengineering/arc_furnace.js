@@ -84,6 +84,14 @@ onEvent('recipes', (event) => {
                 secondaries: [Item.of('thermal:charge_bench')],
                 outputs: [Item.of('3x modularrouters:energy_output_module')],
                 id: `${id_prefix}energy_output_module`
+            },
+            {
+                input1: Item.of('thermal:tar'),
+                secondaries: ['atum:ectoplasm', Item.of('2x #forge:dusts/quartz'), Item.of('5x #forge:dusts/lapis')],
+                outputs: ['kubejs:smoldering_lapis_lazuli_compound'],
+                time: 400,
+                energy: 204800,
+                id: `${id_prefix}smoldering_lapis_lazuli_compound`
             }
         ]
     };
