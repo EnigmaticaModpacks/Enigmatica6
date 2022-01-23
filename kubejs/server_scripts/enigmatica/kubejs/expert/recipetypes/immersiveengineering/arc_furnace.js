@@ -87,7 +87,11 @@ onEvent('recipes', (event) => {
             },
             {
                 input1: Item.of('thermal:tar'),
-                secondaries: ['atum:ectoplasm', Item.of('2x #forge:dusts/quartz'), Item.of('5x #forge:dusts/lapis')],
+                secondaries: [
+                    'atum:ectoplasm',
+                    Ingredient.of('2x #forge:dusts/quartz'),
+                    Ingredient.of('5x #forge:dusts/lapis')
+                ],
                 outputs: ['kubejs:smoldering_lapis_lazuli_compound'],
                 time: 400,
                 energy: 204800,
