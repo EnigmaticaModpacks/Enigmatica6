@@ -1,3 +1,34 @@
+### Enigmatica 6 v0.5.25
+
+_Using Forge-1.16.5-36.2.22_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.25.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.25.md)_
+
+**Changes/Improvements**
+
+- Add missing Lang entry for Sentient Harm [\#4091](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4091) ([MuteTiefling](https://github.com/MuteTiefling))
+- Add tag for shields [\#3904](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3904)
+- Allow Quark turf to be made from more types of grass [\#4108](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4108) ([MuteTiefling](https://github.com/MuteTiefling))
+- Create Recipes for clearing NBT from Pretty Pipes Modules [\#4093](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4093) ([Rodg88](https://github.com/Rodg88))
+- Disable IE Mineral nodes in the End as they're incompatible with the dimension. [\#4090](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4090) ([MuteTiefling](https://github.com/MuteTiefling))
+- Ladder Unification [\#3962](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3962)
+- Remove duplicate construction paste recipe. [\#4107](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4107) ([MuteTiefling](https://github.com/MuteTiefling))
+- Resolve conflicts with Ladder recipes [\#4092](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4092) ([MuteTiefling](https://github.com/MuteTiefling))
+
+**Bug Fixes**
+
+- Added Quark deepslate and new Ars stones to stonecutter [\#4099](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4099) ([Rodg88](https://github.com/Rodg88))
+- \[Expert\] Sooty Marble Variants cannot be crafted into other variants [\#4101](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4101)
+- Block breakers always break blocks that drop nothing by default despite filters [\#3698](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3698)
+- Dank/Industrial Forgoeing dupe glitch [\#3195](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3195)
+- Duplicate Dense Construction Block -\> Construction Paste crushing recipe [\#4103](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4103)
+- Enigmatica 6 Expert Astral sorcery Iridescent Altar [\#4010](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4010)
+- Fix for corundum info tab appearing on too many items [\#4104](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4104) ([Rodg88](https://github.com/Rodg88))
+- Inconsistent issue with PCR Programmers refusing to switch difficulty [\#3498](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3498)
+- Infinite XP with Insightful Crystal and Mekanism Fluid Tanks [\#3290](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3290)
+- Missing localisation string for blood school in Ars Nouveau [\#3961](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3961)
+- Offhand items may be inadvertently placed in cutting boards [\#3964](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3964)
+
+---
+
 ### Enigmatica 6 v0.5.24
 
 _Using Forge-1.16.5-36.2.22_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.24.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.24.md)_
