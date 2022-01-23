@@ -94,6 +94,7 @@ onEvent('recipes', (event) => {
         'create:mechanical_crafting/integrated_circuit',
         'create:pressing/lapis_block',
         'create:fill_minecraft_bucket_with_create_honey',
+        'create:crushing/dense_construction_block',
 
         'dustrial_decor:ice_chain',
 

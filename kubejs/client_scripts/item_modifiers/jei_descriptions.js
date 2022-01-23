@@ -191,7 +191,16 @@ onEvent('jei.information', (event) => {
             text: ['Place next to living coral to infuse.']
         },
         {
-            items: [/quark:\w+_crystal$/],
+            items: [
+                'quark:red_crystal',
+                'quark:orange_crystal',
+                'quark:yellow_crystal',
+                'quark:green_crystal',
+                'quark:blue_crystal',
+                'quark:indigo_crystal',
+                'quark:violet_crystal',
+                'quark:white_crystal',
+                'quark:black_crystal'],
             text: [
                 'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.',
                 ' ',
@@ -460,6 +469,7 @@ onEvent('jei.information', (event) => {
                 `This structure will be difficult to build by hand.`,
                 ` `,
                 `Use the included Building Gadgets patterns found in the "building_gadgets_patterns" folder of Enigmatica 6 instance folder.`,
+                ` `,
                 'May be rotated, but not mirrored.'
             ]
         }

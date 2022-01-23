@@ -37,6 +37,15 @@ onEvent('recipes', (event) => {
                 C: '#forge:inlays/pewter'
             },
             id: 'occultism:crafting/sacrificial_bowl'
+        },
+        {
+            output: 'occultism:magic_lamp_empty',
+            pattern: [' A ', 'ABA', ' AA'],
+            key: {
+                A: '#forge:ingots/silver',
+                B: 'atum:horus_godshard'
+            },
+            id: 'occultism:crafting/magic_lamp_empty'
         }
     ];
 
