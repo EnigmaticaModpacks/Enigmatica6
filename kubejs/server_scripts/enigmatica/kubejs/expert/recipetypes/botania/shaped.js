@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'botania:mana_pool',
             pattern: ['A A', 'ABA'],
@@ -136,10 +136,20 @@ onEvent('recipes', (event) => {
                 C: 'naturesaura:ancient_stick'
             },
             id: 'botania:glass_pickaxe'
+        },
+        {
+            output: Item.of('botania:corporea_spark', 6),
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: 'botania:spark',
+                B: 'atum:ectoplasm',
+                C: Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })
+            },
+            id: 'botania:corporea_spark'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

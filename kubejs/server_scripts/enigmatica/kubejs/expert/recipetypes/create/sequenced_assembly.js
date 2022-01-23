@@ -253,6 +253,11 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'deploying',
+                    input: ['kubejs:partial_engineering_student_meals', 'create:builders_tea'],
+                    output: 'kubejs:partial_engineering_student_meals'
+                },
+                {
+                    type: 'deploying',
                     input: ['kubejs:partial_engineering_student_meals', 'simplefarming:vegetable_curry'],
                     output: 'kubejs:partial_engineering_student_meals'
                 },
@@ -1059,7 +1064,10 @@ onEvent('recipes', (event) => {
     armorTypes.forEach((armorType) => {
         armorType.armors.forEach((armor) => {
             recipes.push({
-                input: Ingredient.customNBT(Item.of(armor.base, '{Damage:0}').weakNBT(), nbt => !nbt.SequencedAssembly),
+                input: Ingredient.customNBT(
+                    Item.of(armor.base, '{Damage:0}').weakNBT(),
+                    (nbt) => !nbt.SequencedAssembly
+                ),
                 outputs: [armor.result],
                 transitionalItem: armor.base,
                 loops: armorType.loops,

@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC'],
             key: {
                 A: 'integrateddynamics:menril_wood',
-                B: 'pneumaticcraft:reinforced_chest',
+                B: 'ironchest:copper_chest',
                 C: 'integratedterminals:menril_glass',
                 D: 'pneumaticcraft:logistics_core'
             },
