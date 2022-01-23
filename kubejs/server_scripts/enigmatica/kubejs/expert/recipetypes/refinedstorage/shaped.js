@@ -17,12 +17,13 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            output: Item.of('12x refinedstorage:cable'),
-            pattern: ['AAA', 'BCB', 'AAA'],
+            output: Item.of('4x refinedstorage:cable'),
+            pattern: ['DBD', 'ACA', 'DBD'],
             key: {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: 'immersiveengineering:connector_bundled',
-                C: 'immersiveengineering:wirecoil_redstone'
+                C: 'immersiveengineering:wirecoil_redstone',
+                D: 'integrateddynamics:cable'
             },
             id: 'refinedstorage:cable'
         },

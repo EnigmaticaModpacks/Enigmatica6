@@ -93,6 +93,14 @@ onEvent('recipes', (event) => {
             aura: 15000,
             time: 80,
             id: `${id_prefix}lionfish`
+        },
+        {
+            input: 'integrateddynamics:part_static_light_panel',
+            output: { item: 'integrateddynamics:part_display_panel' },
+            aura_type: 'naturesaura:nether',
+            aura: 100,
+            time: 20,
+            id: 'integrateddynamics:crafting/part_display_panel'
         }
     ];
 
