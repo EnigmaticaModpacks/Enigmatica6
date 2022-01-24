@@ -14,6 +14,11 @@ onEvent('recipes', (event) => {
             replaceTarget: { id: 'archers_paradox:lightning_arrow' },
             toReplace: 'minecraft:nether_star',
             replaceWith: 'thermal:lightning_charge'
+        },
+        {
+            replaceTarget: { id: 'immersivecooking:fried_potato_cubes' },
+            toReplace: 'immersivecooking:potato_slice',
+            replaceWith: 'immersivecooking:potato_cubes'
         }
     ];
     event.replaceInput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');
@@ -212,26 +217,27 @@ onEvent('recipes', (event) => {
             }
         );
 
-        ['linen', 'linen_carpet'].forEach(
-            (blockName) => {
-                var itemTag = `#atum:${blockName}`;
-                var block = `atum:${blockName}_${color}`;
+        ['linen', 'linen_carpet'].forEach((blockName) => {
+            var itemTag = `#atum:${blockName}`;
+            var block = `atum:${blockName}_${color}`;
 
-                if (blockName == 'linen_carpet') {
-                    event.remove({ id: `atum:${color}_linen_carpet_from_white_linen_carpet` });
-                } else if (blockName == 'linen') {
-                    if (color != 'white') { // linen_white is Atum's linen cloth -> linen recipe
-                        event.remove({ id: `atum:linen_${color}` });
-                    }
+            if (blockName == 'linen_carpet') {
+                event.remove({ id: `atum:${color}_linen_carpet_from_white_linen_carpet` });
+            } else if (blockName == 'linen') {
+                if (color != 'white') {
+                    // linen_white is Atum's linen cloth -> linen recipe
+                    event.remove({ id: `atum:linen_${color}` });
                 }
+            }
 
-                event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
+            event
+                .shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
                     S: itemTag,
                     D: dyeTag
-                }).id(`kubejs:${blockName}_${color}_bulk`);
-                event.shapeless(Item.of(block, 1), [dyeTag, itemTag]).id(`kubejs:${blockName}_${color}`);
-            }
-        );
+                })
+                .id(`kubejs:${blockName}_${color}_bulk`);
+            event.shapeless(Item.of(block, 1), [dyeTag, itemTag]).id(`kubejs:${blockName}_${color}`);
+        });
 
         event.shapeless(Item.of(`minecraft:${color}_concrete_powder`, 8), [
             dyeTag,
