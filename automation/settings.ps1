@@ -157,7 +157,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"bloodmagic-client.toml",
 	"jmi-client.toml",
 	"tconplanner-client.toml",
-	"equipmentcompare-common.toml",
 	"roadrunner/client.toml",
 	"roadrunner/common.toml",
 	"oauth-client.toml",
