@@ -47,6 +47,11 @@ onEvent('recipes', (event) => {
                 '#forge:gems/mana'
             ],
             id: 'ars_nouveau:ritual_binding'
+        },
+        {
+            output: 'ars_nouveau:potion_jar',
+            inputs: ['ars_nouveau:mana_jar', ['minecraft:nether_wart', 'eidolon:fungus_sprouts']],
+            id: 'ars_nouveau:potion_jar'
         }
     ];
 

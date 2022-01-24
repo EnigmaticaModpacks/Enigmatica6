@@ -177,22 +177,22 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'integrateddynamics:variable', count: 1 },
+                { item: 'integrateddynamics:variable', count: 3 },
                 { item: 'refinedstorage:construction_core', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,
-            results: [{ item: 'integrateddynamics:variable_transformer_output', count: 1 }],
+            results: [{ item: 'integrateddynamics:variable_transformer_output', count: 3 }],
             id: `${id_prefix}variable_transformer_output`
         },
         {
             inputs: [
-                { item: 'integrateddynamics:variable', count: 1 },
+                { item: 'integrateddynamics:variable', count: 3 },
                 { item: 'refinedstorage:destruction_core', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,
-            results: [{ item: 'integrateddynamics:variable_transformer_input', count: 1 }],
+            results: [{ item: 'integrateddynamics:variable_transformer_input', count: 3 }],
             id: `${id_prefix}variable_transformer_input`
         },
         {

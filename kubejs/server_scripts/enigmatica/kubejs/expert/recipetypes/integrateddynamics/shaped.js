@@ -36,6 +36,17 @@ onEvent('recipes', (event) => {
                 D: 'botania:corporea_spark'
             },
             id: 'integrateddynamics:crafting/part_connector_mono_directional'
+        },
+        {
+            output: 'integrateddynamics:part_static_light_panel',
+            pattern: ['AB', 'CD', 'AB'],
+            key: {
+                A: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
+                B: 'integrateddynamics:menril_wood',
+                C: '#forge:plates/lumium',
+                D: 'atum:white_stained_crystal_glass_pane'
+            },
+            id: 'integrateddynamics:crafting/part_static_light_panel'
         }
     ];
 

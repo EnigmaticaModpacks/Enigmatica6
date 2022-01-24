@@ -1,3 +1,82 @@
+
+#Configuration related to Immersive Engineering wires
+[wires]
+	#Attempts to make the internal data structures used for wires consistent with the connectors in the world.Use with care and backups and only when suspecting corrupted data.
+	#This option will check and load all connection endpoints and may slow down the world loading process.
+	sanitizeConnections = false
+	#If this is enabled, wires connected to power sources will cause damage to entities touching them
+	#This shouldn't cause significant lag but possibly will. If it does, please report it at https://github.com/BluSunrize/ImmersiveEngineering/issues unless there is a report of it already.
+	enableWireDamage = true
+	#If this is enabled, placing a block in a wire will break it (drop the wire coil)
+	blocksBreakWires = true
+
+	[wires.copper]
+		#The maximum length of copper wires
+		#Range: > 0
+		maxLength = 16
+		#The transfer rate of copper wire in IF/t
+		#Range: > 0
+		transferRate = 2048
+		#The percentage of power lost every 16 blocks of distance in copper wire
+		#Range: 0.0 ~ 1.0
+		loss = 0.05
+		#In- and output rates of copper wire connectors. This is independant of the transferrate of the wires.
+		#Range: > 0
+		wireConnectorInput = 256
+
+	[wires.electrum]
+		#The maximum length of electrum wires
+		#Range: > 0
+		maxLength = 16
+		#The transfer rate of electrum wire in IF/t
+		#Range: > 0
+		transferRate = 8192
+		#The percentage of power lost every 16 blocks of distance in electrum wire
+		#Range: 0.0 ~ 1.0
+		loss = 0.025
+		#In- and output rates of electrum wire connectors. This is independant of the transferrate of the wires.
+		#Range: > 0
+		wireConnectorInput = 1024
+
+	[wires.hv]
+		#The maximum length of hv wires
+		#Range: > 0
+		maxLength = 32
+		#The transfer rate of hv wire in IF/t
+		#Range: > 0
+		transferRate = 32768
+		#The percentage of power lost every 16 blocks of distance in hv wire
+		#Range: 0.0 ~ 1.0
+		loss = 0.025
+		#In- and output rates of hv wire connectors. This is independant of the transferrate of the wires.
+		#Range: > 0
+		wireConnectorInput = 4096
+
+	[wires.rope]
+		#The maximum length of rope wires
+		#Range: > 0
+		maxLength = 32
+
+	[wires.cable]
+		#The maximum length of cable wires
+		#Range: > 0
+		maxLength = 32
+
+	[wires.redstone]
+		#The maximum length of redstone wires
+		#Range: > 0
+		maxLength = 32
+
+	[wires.insulated_copper]
+		#The maximum length of insulated_copper wires
+		#Range: > 0
+		maxLength = 16
+
+	[wires.insulated_electrum]
+		#The maximum length of insulated_electrum wires
+		#Range: > 0
+		maxLength = 16
+
 [machines]
 	#The Flux per tick that the Diesel Generator will output. The burn time of the fuel determines the total output
 	#Range: > 0
