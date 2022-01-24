@@ -217,6 +217,8 @@ onEvent('recipes', (event) => {
         'thermal:storage/sulfur_block',
         'thermal:gunpowder_4',
 
+        'pneumaticcraft:one_probe_crafting',
+
         'ppfluids:fluid_pipe_to_pipe',
 
         'powah:crafting/energy_cell_basic_2',
