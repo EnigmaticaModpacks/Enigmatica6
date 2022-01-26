@@ -165,6 +165,21 @@ onEvent('chest.loot_tables', (event) => {
                     count: [1, 2]
                 },
                 {
+                    item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:rattlesnake"}'),
+                    weight: 10,
+                    count: [1, 2]
+                },
+                {
+                    item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:komodo_dragon"}'),
+                    weight: 10,
+                    count: [1, 2]
+                },
+                {
+                    item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:kangaroo"}'),
+                    weight: 10,
+                    count: [1, 2]
+                },
+                {
                     item: 'ars_nouveau:carbuncle_shards',
                     weight: 10,
                     count: 1
