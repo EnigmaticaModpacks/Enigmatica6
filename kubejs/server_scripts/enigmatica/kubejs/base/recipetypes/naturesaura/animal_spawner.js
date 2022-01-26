@@ -182,6 +182,30 @@ onEvent('recipes', (event) => {
             aura: 50000,
             time: 60,
             id: `${id_prefix}duck`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                Item.of('thermal:satchel').ignoreNBT(),
+                'minecraft:grass',
+                'minecraft:carrot'
+            ],
+            entity: 'alexsmobs:kangaroo',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}kangaroo`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                'upgrade_aquatic:guardian_spine',
+                'minecraft:prismarine_shard',
+                '#minecraft:fishes'
+            ],
+            entity: 'upgrade_aquatic:thrasher',
+            aura: 100000,
+            time: 120,
+            id: `${id_prefix}thrasher`
         }
     ];
     recipes.forEach((recipe) => {
