@@ -48,6 +48,35 @@ onEvent('item.tooltip', (event) => {
                 Text.of('Liquid Meat can be obtained by "processing" cows.').color('#6e2a2a'),
                 Text.of('Pink Slime can be harvested from a Pink Wither using a Fluid Laser.').color('#da07e6')
             ]
+        },
+        {
+            items: ['kubejs:medium_machinery_schematics'],
+            text: [
+                Text.of(`Unlocks the ability to form the following strutures:`).blue(),
+                Text.of(`- Diesel Generator`).aqua(),
+                Text.of(`- Excavator`).aqua(),
+                Text.of(`- Fermenter`).aqua(),
+                Text.of(`- Metal Press`).aqua(),
+                Text.of(`- Mixer`).aqua(),
+                Text.of(`- Pumpjack`).aqua(),
+                Text.of(`- Refinery`).aqua(),
+                Text.of(`- Sawmill`).aqua(),
+                Text.of(`- Squeezer`).aqua()
+            ]
+        },
+        {
+            items: ['kubejs:heavy_machinery_schematics'],
+            text: [
+                Text.of(`Unlocks the ability to form the following strutures:`).blue(),
+                Text.of(`- Arc Furnace`).aqua(),
+                Text.of(`- Assembler`).aqua(),
+                Text.of(`- Automated Engineer's Workbench`).aqua(),
+                Text.of(`- Coker Unit`).aqua(),
+                Text.of(`- Crusher`).aqua(),
+                Text.of(`- Distillation Tower`).aqua(),
+                Text.of(`- Lightning Rod`).aqua(),
+                Text.of(`- Sulfur Recovery Unit`).aqua()
+            ]
         }
     ];
 
