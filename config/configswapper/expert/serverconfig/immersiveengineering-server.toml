@@ -80,7 +80,7 @@
 [machines]
 	#The Flux that will be output by the lightning rod when it is struck
 	#Range: > 0
-	lightning_output = 2147483647
+	lightning_output = 1073741824
 	#The Flux per tick that the Diesel Generator will output. The burn time of the fuel determines the total output
 	#Range: > 0
 	dieselGen_output = 16384
