@@ -1,4 +1,4 @@
-onEvent('ie.multiblock.form', event => {
+onEvent('ie.multiblock.form', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -10,32 +10,32 @@ onEvent('ie.multiblock.form', event => {
         ['immersiveengineering:multiblocks/excavator_full', 'medium_machinery_schematics'],
         ['immersiveengineering:multiblocks/mixer', 'medium_machinery_schematics'],
         ['immersiveengineering:multiblocks/sawmill', 'medium_machinery_schematics'],
-        ['immersiveengineering:multiblocks/squeezer', 'medium_machinery_schematics'],
-        ['immersiveengineering:multiblocks/lightning_rod', 'medium_machinery_schematics'],
         ['immersiveengineering:multiblocks/metal_press', 'medium_machinery_schematics'],
         ['immersiveengineering:multiblocks/diesel_generator', 'medium_machinery_schematics'],
+        ['immersiveengineering:multiblocks/refinery', 'medium_machinery_schematics'],
+        ['immersiveengineering:multiblocks/fermenter', 'medium_machinery_schematics'],
+        ['immersiveengineering:multiblocks/squeezer', 'medium_machinery_schematics'],
 
         ['immersiveengineering:multiblocks/auto_workbench', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/arcfurnace', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/assembler', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/crusher', 'heavy_machinery_schematics'],
-        ['immersiveengineering:multiblocks/refinery', 'heavy_machinery_schematics'],
-        ['immersiveengineering:multiblocks/fermenter', 'heavy_machinery_schematics'],
         ['immersivepetroleum:multiblocks/cokerunit', 'heavy_machinery_schematics'],
         ['immersivepetroleum:multiblocks/distillationtower', 'heavy_machinery_schematics'],
-        ['immersivepetroleum:multiblocks/hydrotreater', 'heavy_machinery_schematics']
+        ['immersivepetroleum:multiblocks/hydrotreater', 'heavy_machinery_schematics'],
+        ['immersiveengineering:multiblocks/lightning_rod', 'heavy_machinery_schematics']
     ]);
 
     const name = `${event.getMultiblock()}`;
     if (requiredGameStage.has(name)) {
         if (!event.getEntity().stages.has(requiredGameStage.get(name))) {
-			event.cancel();
-			if(!event.getEntity().getServer()) {
-				let error_message = `Invalid structure or missing gamestage. Obtain a ${titleCase(
-                   requiredGameStage.get(name).toString().replace(/_/g, ' ')
-               )} to be able to form this multiblock.`;
-               event.getEntity().tell(error_message);
-			}
+            event.cancel();
+            if (!event.getEntity().getServer()) {
+                let error_message = `Invalid structure or missing gamestage. Obtain a ${titleCase(
+                    requiredGameStage.get(name).toString().replace(/_/g, ' ')
+                )} to be able to form this multiblock.`;
+                event.getEntity().tell(error_message);
+            }
         }
     }
 });
