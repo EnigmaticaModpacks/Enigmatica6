@@ -479,7 +479,7 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['ars_nouveau:belt_of_levitation'],
-            text: [`When equiped in the belt slot, hold the sneak key while airborne to float.`]
+            text: [`When equipped in the belt slot, hold the sneak key while airborne to float.`]
         },
         {
             items: ['create:chromatic_compound', 'create:refined_radiance'],
