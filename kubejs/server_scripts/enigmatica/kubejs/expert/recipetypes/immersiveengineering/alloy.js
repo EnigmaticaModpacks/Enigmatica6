@@ -30,42 +30,60 @@ onEvent('recipes', (event) => {
             id: `${idPrefix}enchanted_golden_apple`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('minecraft:chainmail_helmet', '{Damage:0}').weakNBT()],
+            inputs: [
+                Item.of('16x minecraft:book'),
+                Item.of('mekanismtools:lapis_lazuli_helmet', '{Damage:0}').weakNBT()
+            ],
             output: Item.of('16x apotheosis:armor_head_book'),
             id: `${idPrefix}armor_head_book`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('minecraft:chainmail_chestplate', '{Damage:0}').weakNBT()],
+            inputs: [
+                Item.of('16x minecraft:book'),
+                Item.of('mekanismtools:lapis_lazuli_chestplate', '{Damage:0}').weakNBT()
+            ],
             output: Item.of('16x apotheosis:armor_chest_book'),
             id: `${idPrefix}armor_chest_book`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('minecraft:chainmail_leggings', '{Damage:0}').weakNBT()],
+            inputs: [
+                Item.of('16x minecraft:book'),
+                Item.of('mekanismtools:lapis_lazuli_leggings', '{Damage:0}').weakNBT()
+            ],
             output: Item.of('16x apotheosis:armor_legs_book'),
             id: `${idPrefix}armor_legs_book`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('minecraft:chainmail_boots', '{Damage:0}').weakNBT()],
+            inputs: [
+                Item.of('16x minecraft:book'),
+                Item.of('mekanismtools:lapis_lazuli_boots', '{Damage:0}').weakNBT()
+            ],
             output: Item.of('16x apotheosis:armor_feet_book'),
             id: `${idPrefix}armor_feet_book`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('minecraft:bow', '{Damage:0}').weakNBT()],
+            inputs: [Item.of('16x minecraft:book'), Item.of('botania:livingwood_bow', '{Damage:0}').weakNBT()],
             output: Item.of('16x apotheosis:bow_book'),
             id: `${idPrefix}bow_book`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('minecraft:fishing_rod', '{Damage:0}').weakNBT()],
+            inputs: [Item.of('16x minecraft:book'), Item.of('aquacutlture:gold_fishing_rod', '{Damage:0}').weakNBT()],
             output: Item.of('16x apotheosis:fishing_rod_book'),
             id: `${idPrefix}fishing_rod_book`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('minecraft:iron_pickaxe', '{Damage:0}').weakNBT()],
+            inputs: [
+                Item.of('16x minecraft:book'),
+                Item.of('mekanismtools:lapis_lazuli_pickaxe', '{Damage:0}').weakNBT()
+            ],
             output: Item.of('16x apotheosis:digger_book'),
             id: `${idPrefix}digger_book`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('minecraft:iron_sword', '{Damage:0}').weakNBT()],
+            inputs: [
+                Item.of('16x minecraft:book'),
+                Item.of('mekanismtools:lapis_lazuli_sword', '{Damage:0}').weakNBT()
+            ],
             output: Item.of('16x apotheosis:weapon_book'),
             id: `${idPrefix}weapon_book`
         },

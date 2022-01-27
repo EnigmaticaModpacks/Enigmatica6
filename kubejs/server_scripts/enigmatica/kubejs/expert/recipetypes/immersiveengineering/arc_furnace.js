@@ -96,6 +96,108 @@ onEvent('recipes', (event) => {
                 time: 400,
                 energy: 204800,
                 id: `${id_prefix}smoldering_lapis_lazuli_compound`
+            },
+            {
+                input1: 'create:honeyed_apple',
+                secondaries: [Ingredient.of('4x #forge:storage_blocks/arcane_gold')],
+                outputs: ['minecraft:enchanted_golden_apple'],
+                id: `${id_prefix}enchanted_golden_apple`
+            },
+            {
+                input1: Item.of('mekanismtools:lapis_lazuli_helmet', '{Damage:0}').weakNBT(),
+                secondaries: [Item.of('16x minecraft:book')],
+                outputs: [Item.of('16x apotheosis:armor_head_book')],
+                id: `${id_prefix}armor_head_book`
+            },
+            {
+                input1: Item.of('mekanismtools:lapis_lazuli_chestplate', '{Damage:0}').weakNBT(),
+                secondaries: [Item.of('16x minecraft:book')],
+                outputs: [Item.of('16x apotheosis:armor_chest_book')],
+                id: `${id_prefix}armor_chest_book`
+            },
+            {
+                input1: Item.of('mekanismtools:lapis_lazuli_leggings', '{Damage:0}').weakNBT(),
+                secondaries: [Item.of('16x minecraft:book')],
+                outputs: [Item.of('16x apotheosis:armor_legs_book')],
+                id: `${id_prefix}armor_legs_book`
+            },
+            {
+                input1: Item.of('mekanismtools:lapis_lazuli_boots', '{Damage:0}').weakNBT(),
+                secondaries: [Item.of('16x minecraft:book')],
+                outputs: [Item.of('16x apotheosis:armor_feet_book')],
+                id: `${id_prefix}armor_feet_book`
+            },
+            {
+                input1: Item.of('botania:livingwood_bow', '{Damage:0}').weakNBT(),
+                secondaries: [Item.of('16x minecraft:book')],
+                outputs: [Item.of('16x apotheosis:bow_book')],
+                id: `${id_prefix}bow_book`
+            },
+            {
+                input1: Item.of('aquacutlture:gold_fishing_rod', '{Damage:0}').weakNBT(),
+                secondaries: [Item.of('16x minecraft:book')],
+                outputs: [Item.of('16x apotheosis:fishing_rod_book')],
+                id: `${id_prefix}fishing_rod_book`
+            },
+            {
+                input1: Item.of('mekanismtools:lapis_lazuli_pickaxe', '{Damage:0}').weakNBT(),
+                secondaries: [Item.of('16x minecraft:book')],
+                outputs: [Item.of('16x apotheosis:digger_book')],
+                id: `${id_prefix}digger_book`
+            },
+            {
+                input1: Item.of('mekanismtools:lapis_lazuli_sword', '{Damage:0}').weakNBT(),
+                secondaries: [Item.of('16x minecraft:book')],
+                outputs: [Item.of('16x apotheosis:weapon_book')],
+                id: `${id_prefix}weapon_book`
+            },
+            {
+                input1: 'tconstruct:ender_slime_crystal',
+                secondaries: [Item.of('16x minecraft:book')],
+                outputs: [Item.of('16x apotheosis:scrap_tome')],
+                id: `${id_prefix}scrap_tome`
+            },
+            {
+                input1: 'tconstruct:sky_slime_crystal',
+                secondaries: [Item.of('16x minecraft:book')],
+                outputs: [Item.of('16x apotheosis:null_book')],
+                id: `${id_prefix}null_book`
+            },
+            {
+                input1: 'thermal:rf_coil',
+                secondaries: [Item.of('8x minecraft:book')],
+                outputs: [Item.of('8x pedestals:bookmagnet')],
+                id: `${id_prefix}bookmagnet`
+            },
+            {
+                input1: '#forge:ingots/invar',
+                secondaries: [Item.of('8x minecraft:book')],
+                outputs: [Item.of('8x pedestals:bookarea')],
+                id: `${id_prefix}bookarea`
+            },
+            {
+                input1: '#forge:ingots/lumium',
+                secondaries: [Item.of('8x minecraft:book')],
+                outputs: [Item.of('8x pedestals:bookrange')],
+                id: `${id_prefix}bookrange`
+            },
+            {
+                input1: '#forge:ingots/terminite',
+                secondaries: [Item.of('8x minecraft:book')],
+                outputs: [Item.of('8x pedestals:bookspeed')],
+                id: `${id_prefix}bookspeed`
+            },
+            {
+                input1: '#forge:ingots/infused_iron',
+                secondaries: [Item.of('8x minecraft:book')],
+                outputs: [Item.of('8x pedestals:bookcapacity')],
+                id: `${id_prefix}bookcapacity`
+            },
+            {
+                input1: '#forge:ingots/refined_radiance',
+                secondaries: [Item.of('8x minecraft:book')],
+                outputs: [Item.of('8x pedestals:bookadvanced')],
+                id: `${id_prefix}bookadvanced`
             }
         ]
     };
