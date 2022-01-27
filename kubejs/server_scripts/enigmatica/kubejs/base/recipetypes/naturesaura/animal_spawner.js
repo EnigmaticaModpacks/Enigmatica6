@@ -187,8 +187,8 @@ onEvent('recipes', (event) => {
             inputs: [
                 'naturesaura:birth_spirit',
                 Item.of('thermal:satchel').ignoreNBT(),
-                'minecraft:grass',
-                'minecraft:carrot'
+                ['minecraft:grass', 'minecraft:dead_bush'],
+                'minecraft:rabbit_foot'
             ],
             entity: 'alexsmobs:kangaroo',
             aura: 50000,
@@ -198,9 +198,9 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'naturesaura:birth_spirit',
-                'upgrade_aquatic:guardian_spine',
-                'minecraft:prismarine_shard',
-                '#minecraft:fishes'
+                'astralsorcery:nocturnal_powder',
+                'minecraft:prismarine_crystals',
+                'upgrade_aquatic:glow_squid_bucket'
             ],
             entity: 'upgrade_aquatic:thrasher',
             aura: 100000,
