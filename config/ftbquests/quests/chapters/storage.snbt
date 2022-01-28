@@ -1,7 +1,7 @@
 {
-	id: "00000000000002AB"
+	id: "583482A1C530FE26"
 	group: "0856CF7F5CBEB20A"
-	order_index: 0
+	order_index: 1
 	filename: "storage"
 	title: "Storage"
 	icon: "minecraft:chest"
@@ -66,7 +66,7 @@
 		{
 			title: "Refined Storage"
 			x: 1.0d
-			y: -5.5d
+			y: -6.0d
 			subtitle: "Energy Mass Conversion in a Square"
 			description: [
 				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. "
@@ -242,7 +242,7 @@
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "0000000000000A5D"
+				id: "2D1E55B5A92B9F94"
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
@@ -524,7 +524,7 @@
 				item: "prettypipes:item_terminal"
 			}]
 			rewards: [{
-				id: "0000000000000968"
+				id: "266D8479D7BEC164"
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
@@ -740,7 +740,7 @@
 				item: "storagedrawers:void_upgrade"
 			}]
 			rewards: [{
-				id: "0000000000000A5A"
+				id: "695D02E01FA0C0BD"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1132,7 +1132,7 @@
 				item: "sophisticatedbackpacks:netherite_backpack"
 			}]
 			rewards: [{
-				id: "5319BF6929089EA6"
+				id: "2102EE1604B1EE96"
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
@@ -1159,6 +1159,222 @@
 			}]
 			rewards: [{
 				id: "44BA68CC5061BD0A"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Fluids"
+			x: 8.0d
+			y: -2.5d
+			subtitle: "When buckets aren't enough"
+			description: [
+				"Getting fluids to work with your storage system can be hard. Here are some dedicated fluid storage units."
+				""
+				"This is meant to be a start, not exhaustive, so check out the quest chapters for each mod for more information."
+			]
+			dependencies: ["00000000000003FF"]
+			id: "568DC3ECDB943C47"
+			tasks: [{
+				id: "5DF4DF16758CC1FC"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+			rewards: [{
+				id: "4ADE1E2D7CB232BF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Fluid Tank (Mekanism)"
+			x: 7.5d
+			y: -4.5d
+			description: ["Mekanism fluid tanks have a bucket mode (default: shift + scroll), which lets them pick up and use fluids. Try it as a gigantic bucket!"]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "120DA7809C60693C"
+			tasks: [{
+				id: "72362A5E247C68DE"
+				type: "item"
+				item: "mekanism:basic_fluid_tank"
+			}]
+			rewards: [{
+				id: "709B21A95F17EE1D"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Fluid Tank (PNC)"
+			x: 8.5d
+			y: -4.5d
+			description: ["Using a wrench, PneumaticCraft's tanks can be connected with tanks above and below to combine their capacities."]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "42FE114176EAE0DD"
+			tasks: [{
+				id: "61F77FEB2B9801A7"
+				type: "item"
+				item: "pneumaticcraft:small_tank"
+			}]
+			rewards: [{
+				id: "4785C4A736D2AF59"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Fluid Cell"
+			x: 9.5d
+			y: -4.0d
+			description: ["Thermal Series' fluid cells are pretty configurable. Their sides can be configured to automatically input and output into adjacent inventories."]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "5BEB6955518864A8"
+			tasks: [{
+				id: "49D84038D947694F"
+				type: "item"
+				item: "thermal:fluid_cell"
+			}]
+			rewards: [{
+				id: "6D790AACCAD44C66"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Black Hole Tank"
+			x: 8.5d
+			y: -0.5d
+			description: [
+				"Industrial Foregoing has massive storage capabilities. "
+				""
+				"Head over to the Industrial Foregoing Chapter to learn about Black Hole Storage."
+			]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "1A0E0EC91FB287B0"
+			tasks: [{
+				id: "74238F0F4B713CBE"
+				type: "item"
+				item: "industrialforegoing:common_black_hole_tank"
+			}]
+			rewards: [{
+				id: "0004F6E55C5AE700"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Fluid Tank (Create)"
+			x: 10.0d
+			y: -2.0d
+			description: ["Create tanks automatically merge with adjacent tanks and can be up to 3x3."]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "516772B582C9114A"
+			tasks: [{
+				id: "755A21A9FE7980B4"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+			rewards: [{
+				id: "72197B3870AE32F2"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Ender Tank"
+			x: 10.0d
+			y: -3.0d
+			description: ["Ender Tanks will share their inventories with other tanks using the same color code. Try them for pipeless fluid transport."]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "1E357DE462DBB1C8"
+			tasks: [{
+				id: "3CD94E8A1FADA69C"
+				type: "item"
+				item: "enderstorage:ender_tank"
+			}]
+			rewards: [{
+				id: "695238D700D88386"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tank (RFTools)"
+			x: 9.5d
+			y: -1.0d
+			description: ["Tanks in your fluid storage keep filling with the wrong liquids? RFTools tanks can filter what liquid they accept."]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "484A9BB4A5423AF8"
+			tasks: [{
+				id: "3BF2366BB0C0E896"
+				type: "item"
+				item: "rftoolsutility:tank"
+			}]
+			rewards: [{
+				id: "798CE4333D002DC4"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tank"
+			x: 7.5d
+			y: -0.5d
+			description: ["The Tank is the ultimate portable fluid storage solution. It can pick up and place fluids, store multiple fluids, and even automatically absorb nearby fluids."]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "5D02087F29AA5454"
+			tasks: [{
+				id: "790BBE6ECCCC0ABF"
+				type: "item"
+				item: "tanknull:tank_1"
+			}]
+			rewards: [{
+				id: "7EBBEE7C21C23DA7"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Fluid Storage Disk"
+			x: 6.5d
+			y: -1.0d
+			description: ["Fluids can be stored as data too."]
+			dependencies: ["568DC3ECDB943C47"]
+			id: "475E9EE7D90F0BB8"
+			tasks: [{
+				id: "545FD60137957AF6"
+				type: "item"
+				item: "refinedstorage:64k_fluid_storage_disk"
+			}]
+			rewards: [{
+				id: "604ED1BE1F115A88"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"

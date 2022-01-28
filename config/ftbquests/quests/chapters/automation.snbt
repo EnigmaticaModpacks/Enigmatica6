@@ -1,0 +1,236 @@
+{
+	id: "00000000000002AB"
+	group: "0856CF7F5CBEB20A"
+	order_index: 0
+	filename: "automation"
+	title: "Automation"
+	icon: "minecraft:hopper"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Logistics"
+			icon: "minecraft:hopper"
+			x: 4.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Point A to Point B"
+			description: [
+				"Need a way to move those beautifully stored items around?"
+				"No, \"your inventory\" isn't a scalable answer."
+			]
+			id: "30AA6A8DF0B65273"
+			tasks: [{
+				id: "4FB3F0534FC9F890"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "1AF3E35B6E460EFA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Logistical Transporters"
+			x: 5.5d
+			y: -0.5d
+			description: [
+				"Mekanism's transporters can be configured to pull, push, or not connect to each adjacent inventory."
+				"Pipes, Cables, and Pressurized Tubes also handle fluids, RF, and gases, respectively."
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "3FF1B8E5563D4ECF"
+			tasks: [{
+				id: "390C2385836A0859"
+				type: "item"
+				item: "mekanism:basic_logistical_transporter"
+			}]
+			rewards: [{
+				id: "5319BF6929089EA6"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Pretty Pipes"
+			x: 6.0d
+			y: 0.5d
+			description: ["Pipes from pretty pipes don't just move items, but can intelligently distribute and request items from all connected inventories."]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "1A865F69095572C3"
+			tasks: [{
+				id: "7D9BD24CCE0A679C"
+				type: "item"
+				item: "prettypipes:pipe"
+			}]
+			rewards: [{
+				id: "00269BA94CF36438"
+				type: "item"
+				item: "prettypipes:blank_module"
+				count: 2
+			}]
+		}
+		{
+			title: "Conveyor Belts"
+			x: 6.0d
+			y: 1.5d
+			description: [
+				"Immersive Engineering's conveyor belts can move entities in-world, not just items in inventories."
+				"They'll also automatically extract items from and send items into inventories they touch."
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "4DD97175C1818801"
+			tasks: [{
+				id: "366C08F8F32D7E4A"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+			}]
+			rewards: [{
+				id: "0000000000000A5A"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Mechanical Belts"
+			x: 5.5d
+			y: 2.5d
+			description: [
+				"Create machines will pause items on its conveyor belts to process them, making them perfect for automating processing and assembly."
+				"If you need more than just linear movement, try out the Weighted Ejector or the Mechanical Arm."
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "2441588EA9FC9FDB"
+			tasks: [{
+				id: "366C08F8F32D7E4A"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "5288E3C74F547749"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Item Router"
+			icon: "modularrouters:item_router"
+			x: 4.5d
+			y: 3.0d
+			subtitle: "Have you tried turning off and on again"
+			description: ["Modular Routers is a powerful item transport and automation mod that revolves around a single block, the item router"]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "15E49A6B00BE744C"
+			tasks: [{
+				id: "366C08F8F32D7E4B"
+				type: "item"
+				item: "modularrouters:item_router"
+			}]
+			rewards: [{
+				id: "0000000000000968"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Router (XNet)"
+			x: 3.5d
+			y: 3.0d
+			description: ["XNet can intelligently transfer items and does it instantly too. No more items filling up pipes or bouncing because the destination is full."]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "559D7D60CDDE5596"
+			tasks: [{
+				id: "204956F05E407E82"
+				type: "item"
+				item: "xnet:router"
+			}]
+			rewards: [{
+				id: "0000000000000A5D"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Omnidirectional Hopper"
+			x: 2.5d
+			y: 2.5d
+			description: [
+				"PneumaticCraft's Omnidirectional Hoppers can be rotated to have their open side face in any direction."
+				"Once you have some pressurized air, also make sure to check out the logistics system in the PneumaticCraft chapter,"
+				"capable of deploying instant logistics systems over pressure tube networks and flying aerial drones."
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "0EF9750F679732E6"
+			tasks: [{
+				id: "3FE101E73831B589"
+				type: "item"
+				item: "pneumaticcraft:omnidirectional_hopper"
+			}]
+			rewards: [{
+				id: "4A9CA0152EEA1EC3"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Carbuncle"
+			x: 2.0d
+			y: 1.5d
+			description: ["Magic mods can have their item transportation fun too! Carbuncles will helpfully collect items and store them into inventories for you."]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "2831B38150565AEF"
+			tasks: [{
+				id: "6895F42F97F55A26"
+				type: "item"
+				item: "ars_nouveau:carbuncle_charm"
+			}]
+			rewards: [{
+				id: "6328E4D871385365"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Corporea"
+			x: 2.0d
+			y: 0.5d
+			description: ["Botania's Corporea network can wirelessly access the contents of inventories by placing a Corporea Spark on them. See the Botania chapter for more details."]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "7C44D1DEA350DB7E"
+			tasks: [{
+				id: "2BDBC3D43C040EE8"
+				type: "item"
+				item: "botania:corporea_spark"
+			}]
+			rewards: [{
+				id: "317C80815FA09662"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+	]
+}
