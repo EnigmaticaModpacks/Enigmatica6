@@ -26,7 +26,8 @@ onEvent('recipes', (event) => {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
                     data: { fluid: 'astralsorcery:liquid_starlight', amount: 1000 }
-                }
+                },
+                { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
             ticks: 300,
             id: `${id_prefix}gaia_spirit`
