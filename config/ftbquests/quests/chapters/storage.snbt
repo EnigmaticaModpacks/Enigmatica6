@@ -1,7 +1,7 @@
 {
-	id: "00000000000002AB"
+	id: "583482A1C530FE26"
 	group: "0856CF7F5CBEB20A"
-	order_index: 0
+	order_index: 1
 	filename: "storage"
 	title: "Storage"
 	icon: "minecraft:chest"
@@ -65,8 +65,8 @@
 		}
 		{
 			title: "Refined Storage"
-			x: -1.5d
-			y: -4.5d
+			x: 1.0d
+			y: -6.0d
 			subtitle: "Energy Mass Conversion in a Square"
 			description: [
 				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. "
@@ -242,7 +242,7 @@
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "0000000000000A5D"
+				id: "2D1E55B5A92B9F94"
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
@@ -524,7 +524,7 @@
 				item: "prettypipes:item_terminal"
 			}]
 			rewards: [{
-				id: "0000000000000968"
+				id: "266D8479D7BEC164"
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
@@ -740,7 +740,7 @@
 				item: "storagedrawers:void_upgrade"
 			}]
 			rewards: [{
-				id: "0000000000000A5A"
+				id: "695D02E01FA0C0BD"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1132,7 +1132,7 @@
 				item: "sophisticatedbackpacks:netherite_backpack"
 			}]
 			rewards: [{
-				id: "5319BF6929089EA6"
+				id: "2102EE1604B1EE96"
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
@@ -1202,9 +1202,12 @@
 				item: "mekanism:basic_fluid_tank"
 			}]
 			rewards: [{
-				id: "30EC70E6E72E71F0"
-				type: "xp"
-				xp: 100
+				id: "709B21A95F17EE1D"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1220,9 +1223,12 @@
 				item: "pneumaticcraft:small_tank"
 			}]
 			rewards: [{
-				id: "4EDA302F870DAEE1"
-				type: "xp"
-				xp: 100
+				id: "4785C4A736D2AF59"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1238,9 +1244,12 @@
 				item: "thermal:fluid_cell"
 			}]
 			rewards: [{
-				id: "2B1E9DE51DAB8B6E"
-				type: "xp"
-				xp: 100
+				id: "6D790AACCAD44C66"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1260,9 +1269,12 @@
 				item: "industrialforegoing:common_black_hole_tank"
 			}]
 			rewards: [{
-				id: "05BBC26D4E6D383F"
-				type: "xp"
-				xp: 100
+				id: "0004F6E55C5AE700"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1278,9 +1290,12 @@
 				item: "create:fluid_tank"
 			}]
 			rewards: [{
-				id: "6A4A37F812BE7CA6"
-				type: "xp"
-				xp: 100
+				id: "72197B3870AE32F2"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1296,9 +1311,12 @@
 				item: "enderstorage:ender_tank"
 			}]
 			rewards: [{
-				id: "4599B224091071B3"
-				type: "xp"
-				xp: 100
+				id: "695238D700D88386"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1314,9 +1332,12 @@
 				item: "rftoolsutility:tank"
 			}]
 			rewards: [{
-				id: "2EB730BCB1D4B0F0"
-				type: "xp"
-				xp: 100
+				id: "798CE4333D002DC4"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1332,9 +1353,12 @@
 				item: "tanknull:tank_1"
 			}]
 			rewards: [{
-				id: "5418D856C9F47F1F"
-				type: "xp"
-				xp: 100
+				id: "7EBBEE7C21C23DA7"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1350,188 +1374,12 @@
 				item: "refinedstorage:64k_fluid_storage_disk"
 			}]
 			rewards: [{
-				id: "38D75CB831BBCD62"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Logistics"
-			x: 4.0d
-			y: 1.0d
-			subtitle: "Point A to Point B"
-			description: [
-				"Need a way to move those beautifully stored items around?"
-				"No, \"your inventory\" isn't a scalable answer."
-			]
-			dependencies: ["00000000000003FF"]
-			id: "30AA6A8DF0B65273"
-			tasks: [{
-				id: "4FB3F0534FC9F890"
-				type: "item"
-				item: "minecraft:hopper"
-			}]
-			rewards: [{
-				id: "1AF3E35B6E460EFA"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Logistical Transporters"
-			x: 5.5d
-			y: -0.5d
-			description: [
-				"Mekanism's transporters can be configured to pull, push, or not connect to each adjacent inventory."
-				"Pipes, Cables, and Pressurized Tubes also handle fluids, RF, and gases, respectively."
-			]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "3FF1B8E5563D4ECF"
-			tasks: [{
-				id: "390C2385836A0859"
-				type: "item"
-				item: "mekanism:basic_logistical_transporter"
-			}]
-			rewards: [{
-				id: "7CEC37180EF4A917"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Pretty Pipes"
-			x: 6.0d
-			y: 0.5d
-			description: ["Pipes from pretty pipes don't just move items, but can intelligently distribute and request items from all connected inventories."]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "1A865F69095572C3"
-			tasks: [{
-				id: "7D9BD24CCE0A679C"
-				type: "item"
-				item: "prettypipes:pipe"
-			}]
-			rewards: [{
-				id: "079A10B81D100FD5"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Conveyor Belts"
-			x: 6.0d
-			y: 1.5d
-			description: [
-				"Immersive Engineering's conveyor belts can move entities in-world, not just items in inventories."
-				"They'll also automatically extract items from and send items into inventories they touch."
-			]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "4DD97175C1818801"
-			tasks: [{
-				id: "484B8D4B94C6C182"
-				type: "item"
-				item: "immersiveengineering:conveyor_basic"
-			}]
-			rewards: [{
-				id: "4ED4D5478954E517"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Mechanical Belts"
-			x: 5.5d
-			y: 2.5d
-			description: [
-				"Create machines will pause items on its conveyor belts to process them, making them perfect for automating processing and assembly."
-				"If you need more than just linear movement, try out the Weighted Ejector or the Mechanical Arm."
-			]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "2441588EA9FC9FDB"
-			tasks: [{
-				id: "366C08F8F32D7E4A"
-				type: "item"
-				item: "create:belt_connector"
-			}]
-			rewards: [{
-				id: "1C26C1ED80BAF827"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Modular Router"
-			x: 4.5d
-			y: 3.0d
-			description: ["Need sorting, routing, and things beyond basic item movement? Try the Modular Routers item router."]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "6BCBA74138F138BC"
-			tasks: [{
-				id: "07FA31F7D204F116"
-				type: "item"
-				item: "modularrouters:item_router"
-			}]
-			rewards: [{
-				id: "253F6017BAA3F041"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Router (XNet)"
-			x: 3.5d
-			y: 3.0d
-			description: ["XNet can intelligently transfer items and does it instantly too. No more items filling up pipes or bouncing because the destination is full."]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "559D7D60CDDE5596"
-			tasks: [{
-				id: "204956F05E407E82"
-				type: "item"
-				item: "xnet:router"
-			}]
-			rewards: [{
-				id: "532E2A032D617559"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Omnidirectional Hopper"
-			x: 2.5d
-			y: 2.5d
-			description: [
-				"PneumaticCraft's Omnidirectional Hoppers can be rotated to have their open side face in any direction."
-				"Once you have some pressurized air, also make sure to check out the logistics system in the PneumaticCraft chapter,"
-				"capable of deploying instant logistics systems over pressure tube networks and flying aerial drones."
-			]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "0EF9750F679732E6"
-			tasks: [{
-				id: "3FE101E73831B589"
-				type: "item"
-				item: "pneumaticcraft:omnidirectional_hopper"
-			}]
-			rewards: [{
-				id: "1802F4AD7CEC8593"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Carbuncle"
-			x: 2.0d
-			y: 1.5d
-			description: ["Magic mods can have their item transportation fun too! Carbuncles will helpfully collect items and store them into inventories for you."]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "2831B38150565AEF"
-			tasks: [{
-				id: "6895F42F97F55A26"
-				type: "item"
-				item: "ars_nouveau:carbuncle_charm"
-			}]
-			rewards: [{
-				id: "76086ABB78E76EB5"
-				type: "xp"
-				xp: 100
+				id: "604ED1BE1F115A88"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 	]
