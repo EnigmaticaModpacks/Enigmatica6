@@ -25,7 +25,16 @@
             "name": "Fluid",
             "id": "fluid",
             "data": {
-                "capacity": 5000
+                "capacity": 256000
+            }
+        },
+        {
+            "type": "masterfulmachinery:botania_mana",
+            "textureOverride": "mekanism:block/block_bronze",
+            "name": "Mana",
+            "id": "mana",
+            "data": {
+                "capacity": 1000000
             }
         },
         {
