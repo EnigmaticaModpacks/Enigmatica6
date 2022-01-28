@@ -1298,6 +1298,33 @@ onEvent('recipes', (event) => {
             ],
             result: Item.of('kubejs:fisher_foliot', '{rollsPerOperation:1,Damage:0,maxMiningTime:400}'),
             id: `${id_prefix}craft_fisher_foliot`
+        },
+        {
+            ritual_type: 'occultism:craft',
+            activation_item: 'industrialforegoing:stasis_chamber',
+            pentacle_id: 'occultism:craft_marid',
+            duration: 120,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:gaia_guardian',
+                display_name: 'ritual.occultism.sacrifice.gaia_guardian'
+            },
+            ritual_dummy: 'kubejs:craft_gaia_reactor_controller',
+            ingredients: [
+                '#forge:pellets/antimatter',
+                '#botania:runes/wrath',
+                '#botania:runes/vanaheim',
+                '#botania:runes/greed',
+                '#forge:ingots/gaia_spirit',
+                'bloodmagic:corrosivecrystal',
+                '#forge:ingots/gaia_spirit',
+                'bloodmagic:steadfastcrystal',
+                'bloodmagic:destructivecrystal',
+                '#forge:ingots/gaia_spirit',
+                'bloodmagic:vengefulcrystal',
+                '#forge:ingots/gaia_spirit'
+            ],
+            result: 'masterfulmachinery:gaia_reactor_controller',
+            id: `${id_prefix}gaia_reactor_controller`
         }
     ];
 
@@ -1331,8 +1358,14 @@ onEvent('recipes', (event) => {
         { name: 'ender', ingredients: ['tconstruct:ender_cake', 'powah:ender_core'] },
         { name: 'explosive', ingredients: ['thermal:fire_tnt', 'industrialforegoing:infinity_nuke'] },
         { name: 'disenchantment', ingredients: ['apotheosis:draconic_endshelf', 'botania:rosa_arcana'] },
-        { name: 'rocket', ingredients: ['minecraft:firework_rocket', Item.of('alexsmobs:frontier_cap', '{Damage:0]}').weakNBT()] },
-        { name: 'death', ingredients: [Item.of('eidolon:reaper_scythe', '{Damage:0]}').weakNBT(), 'naturesaura:chorus_generator'] },
+        {
+            name: 'rocket',
+            ingredients: ['minecraft:firework_rocket', Item.of('alexsmobs:frontier_cap', '{Damage:0]}').weakNBT()]
+        },
+        {
+            name: 'death',
+            ingredients: [Item.of('eidolon:reaper_scythe', '{Damage:0]}').weakNBT(), 'naturesaura:chorus_generator']
+        },
         { name: 'frosty', ingredients: ['thermal:ice_tnt', 'betterendforge:ancient_emerald_ice'] },
         { name: 'culinary', ingredients: ['create:builders_tea', 'nethers_delight:stuffed_hoglin_item'] },
         { name: 'pink', ingredients: ['industrialforegoing:pink_slime_ingot', 'botania:pinkinator'] },
