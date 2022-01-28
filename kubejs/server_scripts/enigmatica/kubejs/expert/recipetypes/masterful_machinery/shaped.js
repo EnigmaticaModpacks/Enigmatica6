@@ -201,6 +201,17 @@ onEvent('recipes', (event) => {
                 E: '#forge:ingots/terrasteel'
             },
             id: `${id_prefix}gaia_reactor_item_port_items_output`
+        },
+        {
+            output: Item.of('2x masterfulmachinery:gaia_reactor_mana_port_botania_mana_output'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'botania:life_essence',
+                B: '#forge:storage_blocks/bronze',
+                C: '#botania:runes/mana',
+                D: 'botania:fabulous_pool'
+            },
+            id: `${id_prefix}gaia_reactor_mana_port_botania_mana_output`
         }
     ];
 
