@@ -840,7 +840,7 @@ onEvent('server.datapack.high_priority', (event) => {
             name: 'iron_golem',
             entity: 'minecraft:iron_golem',
             weight: 3,
-            size: { width: 6, height: 8 },
+            size: { width: 3, height: 4 },
             enchant_chance: 0.95,
             rarity_offset: 880,
             enchantment_levels: [50, 30, 120, 40],
