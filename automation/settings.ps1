@@ -97,7 +97,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"astralsorcery-client.toml",
 	"betteradvancements-client.toml",
 	"cagedmobs-client.toml",
-	"chiselsandbits-client.toml",
 	"computercraft-client.toml",
 	"craftingtweaks-client.toml",
 	"create-client.toml",

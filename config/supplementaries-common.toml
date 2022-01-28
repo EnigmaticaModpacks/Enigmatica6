@@ -68,6 +68,9 @@
 		allow_all_mobs = false
 		#Dynamically allows all small mobs inside cages depending on their hitbox size
 		cage_auto_detect = false
+		#Health percentage under which mobs will be allowed to be captured by cages and jars. Leave at 100 to accept any health level
+		#Range: 1 ~ 100
+		health_threshold = 100
 
 	[blocks.notice_board]
 		#Allows notice boards to accept and display any item, not just maps and books
