@@ -835,6 +835,43 @@ onEvent('server.datapack.high_priority', (event) => {
                 }
             ],
             valid_gear_sets: ['#standard', '#flying_bugs']
+        },
+        {
+            name: 'iron_golem',
+            entity: 'minecraft:iron_golem',
+            weight: 3,
+            size: { width: 3, height: 4 },
+            enchant_chance: 0.95,
+            rarity_offset: 880,
+            enchantment_levels: [50, 30, 120, 40],
+            effects: [
+                        { effect: 'minecraft:resistance', chance: 1.0 },
+                        { effect: 'minecraft:regeneration', chance: 1.0},
+                        
+                    ],
+            attribute_modifiers: [
+                {
+                    attribute: 'minecraft:generic.max_health',
+                    operation: 'MULTIPLY_BASE',
+                    value: { min: 3, max: 8 }
+                },
+                {
+                    attribute: 'minecraft:generic.movement_speed',
+                    operation: 'MULTIPLY_BASE',
+                    value: { min: 0.08, max: 0.2 }
+                },
+                {
+                    attribute: 'minecraft:generic.attack_damage',
+                    operation: 'MULTIPLY_BASE',
+                    value: { min: 2, max: 4.6 }
+                },
+                {
+                    attribute: 'minecraft:generic.knockback_resistance',
+                    operation: 'ADDITION',
+                    value: { min: 0.75, max: 1 }
+                }
+            ],
+            valid_gear_sets: ['#standard']
         }
     ];
 
