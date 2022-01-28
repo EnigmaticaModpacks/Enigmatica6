@@ -1,0 +1,33 @@
+{
+    "parent": "occultism:occultism/root",
+    "display": {
+      "icon": {
+        "item": "occultism:jei_dummy/none"
+      },
+      "title": {
+        "translate": "advancements.occultism.familiar_blacksmith.title"
+      },
+      "description": {
+        "translate": "advancements.occultism.familiar_blacksmith.description"
+      },
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "familiar_blacksmith": {
+        "trigger": "occultism:ritual",
+        "conditions": {
+          "ritual_predicate": {
+            "ritual_id": "occultism:ritual/familiar_blacksmith"
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "familiar_blacksmith"
+      ]
+    ]
+  }
