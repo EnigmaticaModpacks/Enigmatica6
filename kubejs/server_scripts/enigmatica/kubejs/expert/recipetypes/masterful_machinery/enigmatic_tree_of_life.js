@@ -216,6 +216,80 @@ onEvent('recipes', (event) => {
             ],
             ticks: 3000,
             id: `${id_prefix}energistics_mastery`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:dimensional_mastery', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:16k_storage_disk', count: 8 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'refinedstorage:1024k_fluid_storage_disk', count: 8 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:disk_drive', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:quantum_entangloporter', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'rsinfinitybooster:dimension_card', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_receiver', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_transmitter', count: 8 } }
+            ],
+            ticks: 60,
+            id: `${id_prefix}dimensional_mastery`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:battle_mastery', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:mekasuit_helmet', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:module_vision_enhancement_unit', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:module_inhalation_purification_unit', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:module_nutritional_injection_unit', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:module_electrolytic_breathing_unit', count: 4 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:mekasuit_bodyarmor', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_geiger_unit', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:module_gravitational_modulating_unit', count: 1 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_dosimeter_unit', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:mekasuit_pants', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanismgenerators:module_geothermal_generator_unit', count: 8 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:mekasuit_boots', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:module_hydraulic_propulsion_unit', count: 4 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:meka_tool', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:module_attack_amplification_unit', count: 4 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_vein_mining_unit', count: 4 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:module_excavation_escalation_unit', count: 4 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_teleportation_unit', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:module_laser_dissipation_unit', count: 4 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_energy_unit', count: 40 } }
+            ],
+            ticks: 60,
+            id: `${id_prefix}battle_mastery`
         }
     ];
 
