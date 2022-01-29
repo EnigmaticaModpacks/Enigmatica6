@@ -54,6 +54,61 @@ onEvent('recipes', (event) => {
             ],
             ticks: 60,
             id: `${id_prefix}alchemy_mastery`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:ritual_mastery', count: 5 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:altar', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:largebloodstonebrick', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:sea_lantern', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:beacon', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:chargingrune', count: 48 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:accelerationrune', count: 20 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:dislocationrune', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:altarcapacityrune', count: 16 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:bettercapacityrune', count: 16 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:masterritualstone', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:ritualstone', count: 36 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:ritualdivinerdusk', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:ritualtinkerer', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:chalk_white', count: 10 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:chalk_gold', count: 10 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:chalk_purple', count: 10 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:chalk_red', count: 10 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:skeleton_skull', count: 40 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:wither_skeleton_skull', count: 40 } },
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:candlestick', count: 80 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:spirit_attuned_crystal', count: 80 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:golden_sacrificial_bowl', count: 10 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:sacrificial_bowl', count: 120 } },
+                { type: 'masterfulmachinery:fluids', data: { fluid: 'bloodmagic:life_essence_fluid', amount: 64000 } }
+            ],
+            ticks: 60,
+            id: `${id_prefix}ritual_mastery`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:aura_mastery', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:aura_trove', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:generator_limit_remover', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:calling_spirit', count: 16 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:projectile_generator', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:experience_bottle', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:firework_generator', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:firework_rocket', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:chorus_generator', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:chorus_flower', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:moss_generator', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:mossy_cobblestone', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:ancient_sapling', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:mover_cart', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:powered_rail', count: 32 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:rail', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:activator_rail', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:aura_detector', count: 8 } }
+            ],
+            ticks: 60,
+            id: `${id_prefix}aura_mastery`
         }
     ];
 
