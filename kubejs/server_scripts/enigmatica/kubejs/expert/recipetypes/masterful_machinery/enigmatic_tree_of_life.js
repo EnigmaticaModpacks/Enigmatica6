@@ -109,6 +109,60 @@ onEvent('recipes', (event) => {
             ],
             ticks: 60,
             id: `${id_prefix}aura_mastery`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_mastery', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'create:flywheel', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:furnace_engine', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:blast_furnace', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:heat_pipe', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:vortex_tube', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:heat_sink', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:advanced_pressure_tube', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:liquid_compressor', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:rotation_speed_controller', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:large_cogwheel', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:shaft', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:encased_chain_drive', count: 32 } },
+                { type: 'masterfulmachinery:items', data: { item: 'emendatusenigmatica:steel_block', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:fluid_pipe', count: 21 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:cauldron', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:heavy_engineering', count: 11 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:light_engineering', count: 12 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:rs_engineering', count: 3 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:blastbrick_reinforced', count: 27 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:steel_scaffolding_standard', count: 41 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:slab_steel_scaffolding_standard', count: 30 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:sheetmetal_steel', count: 12 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:slab_sheetmetal_steel', count: 20 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:sheetmetal_iron', count: 60 } },
+                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:treated_fence', count: 6 } },
+                { type: 'masterfulmachinery:fluids', data: { fluid: 'pneumaticcraft:lubricant', amount: 64000 } }
+            ],
+            ticks: 60,
+            id: `${id_prefix}engineering_mastery`
         }
     ];
 
