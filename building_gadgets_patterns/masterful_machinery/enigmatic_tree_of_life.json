@@ -1,0 +1,71 @@
+{
+    "header": {
+        "version": "2.1.0",
+        "mc_version": "1.16.5",
+        "name": "Enigmatic Tree of Life",
+        "author": "MuteTiefling",
+        "bounding_box": {
+            "min_x": 0,
+            "min_y": 0,
+            "min_z": 0,
+            "max_x": 17,
+            "max_y": 24,
+            "max_z": 18
+        },
+        "material_list": {
+            "root_type": "buildinggadgets:entries",
+            "root_entry": [
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 443,
+                    "item": {
+                        "id": "byg:baobab_leaves"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 325,
+                    "item": {
+                        "id": "byg:baobab_log"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:enigmatic_tree_of_life_controller"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 2,
+                    "item": {
+                        "id": "masterfulmachinery:enigmatic_tree_of_life_fluid_port_fluids_input"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:enigmatic_tree_of_life_item_port_items_input"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:enigmatic_tree_of_life_item_port_items_output"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:enigmatic_tree_of_life_mana_port_botania_mana_input"
+                    }
+                }
+            ]
+        }
+    },
+    "body": "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"
+}
