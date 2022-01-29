@@ -1420,6 +1420,9 @@
 			description: [
 				"The Integrated Dynamics Storage Terminal lets you access and craft with items from all connected inventories, with no wait times or power use!"
 				""
+				"To connect an inventory, place a logic cable adjacent to it, then place an item interface against the inventory in the same block space as the cable. Then just link all the cables together, slap the Storage Terminal on one of the cables, and that's it! Who said ID was complicated?"
+				""
+				"You can then cover your cables with Facades to hide them, just craft the facade with a block to make the facade take on that block's appearance."
 			]
 			dependencies: ["00000000000003FF"]
 			optional: true

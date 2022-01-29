@@ -12,7 +12,7 @@
 		{
 			title: "Logistics"
 			icon: "minecraft:hopper"
-			x: 4.0d
+			x: 4.5d
 			y: 1.0d
 			shape: "gear"
 			subtitle: "Point A to Point B"
@@ -33,8 +33,8 @@
 		}
 		{
 			title: "Logistical Transporters"
-			x: 5.5d
-			y: -0.5d
+			x: 2.5d
+			y: 3.0d
 			description: [
 				"Mekanism's transporters can be configured to pull, push, or not connect to each adjacent inventory."
 				"Pipes, Cables, and Pressurized Tubes also handle fluids, RF, and gases, respectively."
@@ -42,9 +42,32 @@
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "3FF1B8E5563D4ECF"
 			tasks: [{
-				id: "390C2385836A0859"
+				id: "523B5EFA6AB455D2"
 				type: "item"
-				item: "mekanism:basic_logistical_transporter"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_logistical_transporter"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "5319BF6929089EA6"
@@ -56,28 +79,9 @@
 			}]
 		}
 		{
-			title: "Pretty Pipes"
-			x: 6.0d
-			y: 0.5d
-			description: ["Pipes from pretty pipes don't just move items, but can intelligently distribute and request items from all connected inventories."]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "1A865F69095572C3"
-			tasks: [{
-				id: "7D9BD24CCE0A679C"
-				type: "item"
-				item: "prettypipes:pipe"
-			}]
-			rewards: [{
-				id: "00269BA94CF36438"
-				type: "item"
-				item: "prettypipes:blank_module"
-				count: 2
-			}]
-		}
-		{
 			title: "Conveyor Belts"
-			x: 6.0d
-			y: 1.5d
+			x: 5.5d
+			y: -1.5d
 			description: [
 				"Immersive Engineering's conveyor belts can move entities in-world, not just items in inventories."
 				"They'll also automatically extract items from and send items into inventories they touch."
@@ -100,8 +104,8 @@
 		}
 		{
 			title: "Mechanical Belts"
-			x: 5.5d
-			y: 2.5d
+			x: 4.5d
+			y: 3.5d
 			description: [
 				"Create machines will pause items on its conveyor belts to process them, making them perfect for automating processing and assembly."
 				"If you need more than just linear movement, try out the Weighted Ejector or the Mechanical Arm."
@@ -125,8 +129,8 @@
 		{
 			title: "Item Router"
 			icon: "modularrouters:item_router"
-			x: 4.5d
-			y: 3.0d
+			x: -0.5d
+			y: -2.0d
 			subtitle: "Have you tried turning off and on again"
 			description: ["Modular Routers is a powerful item transport and automation mod that revolves around a single block, the item router"]
 			dependencies: ["30AA6A8DF0B65273"]
@@ -147,10 +151,13 @@
 		}
 		{
 			title: "XNet Controller"
-			x: 3.5d
-			y: 3.0d
+			x: -0.5d
+			y: 1.0d
 			description: ["XNet can intelligently transfer items and does it instantly too. No more items filling up pipes or bouncing because the destination is full."]
-			dependencies: ["30AA6A8DF0B65273"]
+			dependencies: [
+				"30AA6A8DF0B65273"
+				"3468E652B4FE85FA"
+			]
 			id: "559D7D60CDDE5596"
 			tasks: [{
 				id: "204956F05E407E82"
@@ -168,8 +175,8 @@
 		}
 		{
 			title: "Omnidirectional Hopper"
-			x: 2.5d
-			y: 2.5d
+			x: 6.5d
+			y: 3.0d
 			description: ["PneumaticCraft's Omnidirectional Hoppers can be rotated to have either side face in any direction, and have various upgrades installed to change their behaviour."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "0EF9750F679732E6"
@@ -186,8 +193,8 @@
 		}
 		{
 			title: "Carbuncle"
-			x: 2.0d
-			y: 1.5d
+			x: 9.0d
+			y: 2.0d
 			description: ["Magic mods can have their item transportation fun too! Carbuncles will helpfully collect items and store them into inventories for you."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "2831B38150565AEF"
@@ -207,8 +214,8 @@
 		}
 		{
 			title: "Corporea"
-			x: 2.0d
-			y: 0.5d
+			x: 9.0d
+			y: 1.0d
 			description: ["Botania's Corporea network can wirelessly access the contents of inventories by placing a Corporea Spark on them. See the Botania chapter for more details."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "7C44D1DEA350DB7E"
@@ -224,6 +231,1545 @@
 				icon: "kubejs:sorcerers_delight"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 				player_command: false
+			}]
+		}
+		{
+			title: "Redstone and Logic"
+			icon: "minecraft:comparator"
+			x: -5.5d
+			y: 1.0d
+			shape: "gear"
+			id: "3468E652B4FE85FA"
+			tasks: [{
+				id: "61B85B234D1E9F5E"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.5d
+			dependencies: ["3468E652B4FE85FA"]
+			id: "3B9FA6A21DF4776A"
+			tasks: [
+				{
+					id: "647E5AE9043B27C1"
+					type: "item"
+					item: "rsgauges:industrial_switchlink_receiver"
+				}
+				{
+					id: "2D7685414E434104"
+					type: "item"
+					item: "rsgauges:industrial_switchlink_relay"
+				}
+			]
+			rewards: [{
+				id: "569C5C2E846AC3A5"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+		}
+		{
+			icon: "rsgauges:industrial_comparator_switch"
+			x: -5.5d
+			y: -2.5d
+			shape: "heart"
+			dependencies: ["3468E652B4FE85FA"]
+			id: "642570832E7034B8"
+			tasks: [
+				{
+					id: "259D5F4823B2D9D4"
+					type: "item"
+					item: "rsgauges:industrial_comparator_switch"
+				}
+				{
+					id: "207704CCE394C4EF"
+					type: "item"
+					item: "minecraft:redstone_torch"
+				}
+			]
+			rewards: [
+				{
+					id: "4BC9E62CEA6CB0C2"
+					type: "item"
+					item: "rsgauges:industrial_comparator_switch"
+				}
+				{
+					id: "24210CC003CE2C18"
+					type: "item"
+					item: "rsgauges:industrial_switchlink_receiver"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -1.5d
+			dependencies: ["3468E652B4FE85FA"]
+			id: "37A085B3E48E7851"
+			tasks: [{
+				id: "4841A010573BC10A"
+				type: "item"
+				item: "rsgauges:industrial_block_detector"
+			}]
+		}
+		{
+			icon: "rsgauges:industrial_entity_detector"
+			x: -6.5d
+			y: -1.5d
+			dependencies: ["3468E652B4FE85FA"]
+			id: "3A0580E4575DC389"
+			tasks: [{
+				id: "4BEA4E38195AD242"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "rsgauges:industrial_entity_detector"
+								Count: 1b
+							}
+							{
+								id: "rsgauges:industrial_linear_entity_detector"
+								Count: 1b
+							}
+							{
+								id: "rsgauges:glass_entity_detector"
+								Count: 1b
+							}
+							{
+								id: "rsgauges:glass_linear_entity_detector"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.0d
+			dependencies: ["15E49A6B00BE744C"]
+			id: "21B266F6556271EB"
+			tasks: [{
+				id: "428BD8D12FB203C8"
+				type: "item"
+				item: "modularrouters:blank_module"
+			}]
+			rewards: [{
+				id: "04E2CB365714CFFD"
+				type: "item"
+				item: "modularrouters:blank_module"
+				count: 4
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.0d
+			dependencies: ["21B266F6556271EB"]
+			id: "1956D60143703C16"
+			tasks: [{
+				id: "6F60B6D7143847D6"
+				type: "item"
+				item: {
+					id: "modularrouters:distributor_module"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -6.0d
+			dependencies: ["21B266F6556271EB"]
+			id: "108E174F5672BF48"
+			tasks: [{
+				id: "614539807F15E23E"
+				type: "item"
+				item: {
+					id: "modularrouters:breaker_module"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -6.5d
+			dependencies: ["21B266F6556271EB"]
+			id: "27C9B26FB5FF10E1"
+			tasks: [{
+				id: "462755624D5FE2DE"
+				type: "item"
+				item: {
+					id: "modularrouters:activator_module"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.0d
+			dependencies: ["21B266F6556271EB"]
+			id: "322583CAAD093EE4"
+			tasks: [{
+				id: "56280F9C61952290"
+				type: "item"
+				item: {
+					id: "modularrouters:vacuum_module"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.0d
+			dependencies: ["21B266F6556271EB"]
+			id: "56234AA9ED3E8324"
+			tasks: [{
+				id: "6F58BD0AC1F29AD4"
+				type: "item"
+				item: {
+					id: "modularrouters:fluid_module_2"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							FluidDir: 0b
+							MaxTransfer: 1000
+							ModuleFilter: { }
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.5d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "6FD366DECA24BCE2"
+			tasks: [{
+				id: "60910BC8BC9E4763"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 4.0d
+			dependencies: ["0EF9750F679732E6"]
+			id: "5D9993B074F13846"
+			tasks: [{
+				id: "4ABEFC9942D16386"
+				type: "item"
+				item: "pneumaticcraft:logistics_frame_requester"
+			}]
+		}
+		{
+			title: "Redstone Pen"
+			icon: {
+				id: "redstonepen:pen"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -8.0d
+			y: 1.0d
+			description: [
+				"The Redstone Pen and Quill can \"draw\" redstone dust on any side of a block, with full manual control of connections. Just right click to start drawing! Just having a charged path running over a block won't power the block, but you can choose to do so by right clicking in the center of the redtone path with the pen."
+				""
+				"The Quill uses up redstone dust from your inventory, while the Pen version is charged up with redstone and doesn't need any from your inventory. Craft the pen with dust or blocks to recharge it. The Pen also re-absorbs the redstone when you clear a segment of path by left clicking it."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "44070C90619D14E6"
+			tasks: [{
+				id: "4DCA07CD21BD3977"
+				type: "item"
+				title: "Either Redstone Pen"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "redstonepen:quill"
+								Count: 1b
+							}
+							{
+								id: "redstonepen:pen"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5EEDBF4F50558BA8"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 16
+			}]
+		}
+		{
+			title: "IE Redstone Wire"
+			icon: "immersiveengineering:wirecoil_redstone"
+			x: -7.5d
+			y: -1.0d
+			description: [
+				"Can transmit redstone signals long distance, about 32 blocks per wire, using one of 16 channels. The connectors also act as relays to chain together longer runs of cable."
+				""
+				"Use the screwdriver on the connector to set the channel."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "24734CF49B87D810"
+			tasks: [
+				{
+					id: "5F0331EC4C91FD7C"
+					type: "item"
+					item: "immersiveengineering:wirecoil_redstone"
+					count: 4L
+				}
+				{
+					id: "0F6BD9BB53137D58"
+					type: "item"
+					icon: "immersiveengineering:connector_bundled"
+					item: "immersiveengineering:connector_redstone"
+					count: 4L
+				}
+				{
+					id: "43B9CFD93A321FCB"
+					type: "item"
+					item: "immersiveengineering:screwdriver"
+				}
+			]
+			rewards: [
+				{
+					id: "7AE7E2E3A4862210"
+					type: "item"
+					item: "immersiveengineering:wirecoil_redstone"
+					count: 4
+				}
+				{
+					id: "3312A02466B4A2BA"
+					type: "item"
+					item: "immersiveengineering:connector_redstone"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			description: [
+				"The Redstone Module basically turns a pressure tube into a 16 channel bundled redstone cable. In the module's UI, press the arrow on the top right to swap between input and output mode."
+				""
+				"Applying an Advanced PCB to the module will unlock logic features, like running an AND operator on two differnt signals, or working as a comparitor checking the block the module is pointing at."
+				""
+				"Doesn't consume air, doesn't even need pressure to operate."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "386EC1D34B3969E5"
+			tasks: [{
+				id: "28C6D6C09A1A14A2"
+				type: "item"
+				item: "pneumaticcraft:redstone_module"
+				count: 2L
+			}]
+			rewards: [{
+				id: "3CC18D8D933DF433"
+				type: "item"
+				item: "pneumaticcraft:pressure_tube"
+				count: 4
+			}]
+		}
+		{
+			title: "RF Tools Logic"
+			icon: "rftoolsutility:logic"
+			x: -3.0d
+			y: 1.0d
+			description: [
+				"There are many different blocks from RF Tools for redstone logic and control, like timers, customizable 3-input logic gates, inventory sensors, or wireless redstone."
+				""
+				"There are more details about them in the RF Tools quest chapter."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "4EB7B3610D407775"
+			tasks: [{
+				id: "6212C5EAC52CD7D6"
+				type: "item"
+				title: "Any RF Tools Logic Gate"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "rftoolsutility:analog"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:invchecker"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:sensor"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:sequencer"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:logic"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:timer"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:wire"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "2B4EB7EFF98BBF05"
+				type: "item"
+				item: "rftoolsbase:machine_base"
+				count: 2
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.5d
+			description: [
+				"Cheap wireless redstone, with unlimited channels, and good but not unlimited range."
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "28A8C7959A7EEBAE"
+			tasks: [{
+				id: "1C4826588F57C889"
+				type: "item"
+				item: "create:redstone_link"
+				count: 2L
+			}]
+			rewards: [{
+				id: "6F390DC46A49341F"
+				type: "item"
+				item: "create:redstone_link"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 5.5d
+			description: [
+				"Can remotly activate connected Redstone Links."
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
+			]
+			dependencies: ["28A8C7959A7EEBAE"]
+			id: "21E4D556E8AE724E"
+			tasks: [{
+				id: "161C3B3F56665A92"
+				type: "item"
+				item: "create:linked_controller"
+			}]
+			rewards: [{
+				id: "21EC369B48E4317E"
+				type: "item"
+				item: "minecraft:lectern"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 3.5d
+			description: [
+				"Set the output with a signal at the back, and reset the output with a signal from the side. Perfect for toggling your power generation automatically."
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "1042C49086A29CE2"
+			tasks: [{
+				id: "6A55E19410163485"
+				type: "item"
+				item: "create:powered_latch"
+			}]
+			rewards: [{
+				id: "3AA02F6637A04AD3"
+				type: "item"
+				item: "minecraft:comparator"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			dependencies: [
+				"3468E652B4FE85FA"
+				"30AA6A8DF0B65273"
+			]
+			id: "1C24D2BD564F9E58"
+			tasks: [{
+				id: "3A648B70B73CF497"
+				type: "item"
+				item: "rftoolscontrol:processor"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 3.0d
+			dependencies: ["3468E652B4FE85FA"]
+			id: "556F3942AF7CFB8C"
+			tasks: [{
+				id: "51C8B1DAC8F7BE8C"
+				type: "item"
+				item: "integrateddynamics:cable"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			dependencies: ["559D7D60CDDE5596"]
+			id: "34D8561D229A3122"
+			tasks: [{
+				id: "52CC0A821DCFE9D5"
+				type: "item"
+				item: "xnet:redstone_proxy_upd"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			description: [
+				"Works as a redstone timer: emits a redstone pulse when it turns, and turns automatically when all sand moves from top to bottom. Set the timing by adding sand via right-click, different stack sizes and different types of sand affect the final timing."
+				""
+				"For more details, see it's entry in the Lexica Botania."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "29803ABB5ED76295"
+			tasks: [{
+				id: "3D8A78B97E92A697"
+				type: "item"
+				item: "botania:hourglass"
+			}]
+			rewards: [
+				{
+					id: "58A3177CC744984E"
+					type: "item"
+					item: "minecraft:sand"
+					count: 60
+				}
+				{
+					id: "3469D68A3DEBB2C4"
+					type: "item"
+					item: "minecraft:red_sand"
+					count: 6
+				}
+				{
+					id: "75F550507C0BA786"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 4.5d
+			dependencies: ["556F3942AF7CFB8C"]
+			id: "36C83AD9F9CE9970"
+			tasks: [{
+				id: "6E70FB12746633E9"
+				type: "item"
+				item: "integrateddynamics:part_redstone_writer"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "75BDA7686541C47C"
+			tasks: [{
+				id: "64C72A375D64DA2A"
+				type: "item"
+				item: "bloodmagic:itemroutingnode"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.0d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "4345FED5C76788A6"
+			tasks: [{
+				id: "5408C3E44BBB429D"
+				type: "item"
+				item: "enderstorage:ender_chest"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "46589062E091762E"
+			tasks: [{
+				id: "261512B6634D57B4"
+				type: "item"
+				item: "naturesaura:ender_crate"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			description: ["Acts like redstone dust, but in solid block form. Easy vertical transmission!"]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "359D48635F222076"
+			tasks: [{
+				id: "59DB7B4DA871079D"
+				type: "item"
+				item: "supplementaries:cog_block"
+			}]
+			rewards: [{
+				id: "45E59A0B45A70321"
+				type: "item"
+				item: "supplementaries:cog_block"
+				count: 2
+			}]
+		}
+		{
+			title: "RS Pen Relays"
+			icon: "redstonepen:inverted_relay"
+			x: -9.0d
+			y: 1.0d
+			description: [
+				"Simple relays that can be placed on any side of a block. The tooltips explain how each one works."
+				""
+				"When placing, right click the side of the block face you want the output side to face."
+			]
+			dependencies: ["44070C90619D14E6"]
+			id: "28F791EC21444045"
+			tasks: [{
+				id: "1B0B720B736296F8"
+				type: "item"
+				title: "Any RS Pen Relay"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "redstonepen:relay"
+								Count: 1b
+							}
+							{
+								id: "redstonepen:inverted_relay"
+								Count: 1b
+							}
+							{
+								id: "redstonepen:bistable_relay"
+								Count: 1b
+							}
+							{
+								id: "redstonepen:pulse_relay"
+								Count: 1b
+							}
+							{
+								id: "redstonepen:bridge_relay"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "38EDFE0071A6B262"
+				type: "item"
+				item: "redstonepen:relay"
+				count: 2
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.5d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "39A5BD63D3070AFE"
+			tasks: [{
+				id: "387BB2A005140790"
+				type: "item"
+				item: {
+					id: "create:attribute_filter"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 5.5d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "5971196375D3CDF4"
+			tasks: [{
+				id: "0FCD37CE46EADCA8"
+				type: "item"
+				item: "create:smart_chute"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "6D8F2F2A24C48898"
+			tasks: [{
+				id: "5C650F2B0511D4B9"
+				type: "item"
+				item: "industrialforegoing:conveyor"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			dependencies: ["15E49A6B00BE744C"]
+			id: "7CD587747CC14268"
+			tasks: [{
+				id: "3FD6609BE4F80DAD"
+				type: "item"
+				item: "modularrouters:blank_upgrade"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			dependencies: ["15E49A6B00BE744C"]
+			id: "7CA354074FCF8447"
+			tasks: [{
+				id: "175A67867F65B8C0"
+				type: "item"
+				item: "modularrouters:augment_core"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 4.0d
+			dependencies: ["5D9993B074F13846"]
+			id: "220A44895955F05C"
+			tasks: [{
+				id: "6C4DBB089E25038C"
+				type: "item"
+				item: "pneumaticcraft:logistics_drone"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 5.5d
+			dependencies: ["5D9993B074F13846"]
+			id: "0303BC77E551B918"
+			tasks: [{
+				id: "4ED812C28C222E5C"
+				type: "item"
+				item: "pneumaticcraft:logistics_module"
+			}]
+		}
+		{
+			title: "Tranporters"
+			icon: "industrialforegoing:item_transporter_type"
+			x: 3.5d
+			y: -1.5d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "65ADBE44B41C4A63"
+			tasks: [{
+				id: "777033A441C9C51A"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:item_transporter_type"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:fluid_transporter_type"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:world_transporter_type"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "70B28063B4F531E0"
+			tasks: [{
+				id: "16C948B2655035E5"
+				type: "item"
+				item: "engineersdecor:factory_hopper"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "14502C1A1BCB79E2"
+			tasks: [{
+				id: "7EA023686AFA0889"
+				type: "item"
+				item: "thermal:device_collector"
+			}]
+		}
+		{
+			icon: "immersiveengineering:logic_circuit"
+			x: -9.0d
+			y: -1.0d
+			description: ["With the Circuit Table, you can create programmed logic circuits to run operators on incoming redstone wire signals. To use them, you need a Logic Unit, explained in the next quest."]
+			dependencies: ["24734CF49B87D810"]
+			id: "74AB9B268FB948B4"
+			tasks: [
+				{
+					id: "06378CC534E82DD9"
+					type: "item"
+					item: "immersiveengineering:circuit_table"
+				}
+				{
+					id: "116C2DBD2FDBE328"
+					type: "item"
+					item: "immersiveengineering:circuit_board"
+				}
+				{
+					id: "2D93AB7927DF1AAE"
+					type: "item"
+					title: "Any #immersiveengineering:circuits/solder"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "immersiveengineering:circuits/solder"
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "1459B7AF61937097"
+					type: "item"
+					item: "immersiveengineering:electron_tube"
+				}
+			]
+			rewards: [
+				{
+					id: "633A17D5AE1F551F"
+					type: "item"
+					item: "immersiveengineering:wire_lead"
+					count: 4
+				}
+				{
+					id: "0FD49B027DDA346E"
+					type: "item"
+					item: "immersiveengineering:electron_tube"
+					count: 4
+				}
+				{
+					id: "370012CA54D4BDCB"
+					type: "item"
+					item: "immersiveengineering:circuit_board"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 3.5d
+			description: [
+				"Sends a pulse a set amount of ticks after receiving a signal"
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "26365967FDE026B6"
+			tasks: [{
+				id: "1E9609D8328D536F"
+				type: "item"
+				item: "create:adjustable_pulse_repeater"
+			}]
+			rewards: [{
+				id: "2E26D4A73E250301"
+				type: "item"
+				item: "create:adjustable_pulse_repeater"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 3.5d
+			description: [
+				"Uses an input pulse to toggle the output. Use a repeater to send a pulse from the output back to the input, with a delay, to make a pulse lengthener."
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "2013BF98F905223C"
+			tasks: [{
+				id: "39E71AF33C273C4C"
+				type: "item"
+				item: "create:powered_toggle_latch"
+			}]
+			rewards: [
+				{
+					id: "46DC8CD903DE448A"
+					type: "item"
+					item: "create:pulse_repeater"
+				}
+				{
+					id: "0EA944B40AA81DC1"
+					type: "item"
+					item: "create:adjustable_repeater"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "65EAD75949FFD642"
+			tasks: [{
+				id: "76705057110D6381"
+				type: "item"
+				item: "engineersdecor:factory_dropper"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			description: [
+				"Can detect many things about blocks, doesn't need to be touching the target block."
+				""
+				"See the quest in the PNC chapter for more."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "0C54045202F9D1F4"
+			tasks: [{
+				id: "35841153FE4E2098"
+				type: "item"
+				item: "pneumaticcraft:universal_sensor"
+			}]
+			rewards: [{
+				id: "7156087E310228A4"
+				type: "command"
+				icon: "kubejs:scavengers_delight"
+				command: "/say Hi, @p!"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "506D4EF3FFC8B11B"
+			tasks: [{
+				id: "47C00029C050A20C"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "0E5467F884E6B23A"
+			tasks: [{
+				id: "17CBAEF23312421A"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["559D7D60CDDE5596"]
+			id: "0597A437596EABC1"
+			tasks: [{
+				id: "3DFB959BAC0FAAFF"
+				type: "item"
+				item: {
+					id: "rftoolsbase:filter_module"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Pretty Pipes"
+			icon: "prettypipes:item_terminal"
+			x: -0.5d
+			y: 4.0d
+			subtitle: "No Power? No Problem"
+			description: [
+				"Pretty Pipes is a powerful early game logistics system that will help keep you organized. "
+				""
+				"Use pipes to move items from place to place, filters and priorities to ensure items are ending up in the right locations, and access everything centrally from an Item Terminal or Crafting Terminal. Request based auto crafting is possible as well."
+			]
+			dependencies: [
+				"00000000000003FF"
+				"30AA6A8DF0B65273"
+			]
+			id: "0000000000000401"
+			tasks: [{
+				id: "0000000000000953"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "0000000000000696"
+				type: "item"
+				title: "Pipe Wrench"
+				item: "prettypipes:wrench"
+			}]
+		}
+		{
+			title: "Pipes"
+			x: -0.5d
+			y: 5.0d
+			subtitle: "I Feel Pretty, Oh So Pretty"
+			description: [
+				"To get things moving, you'll need some pipes. Craft up a bunch!"
+				""
+				"Pretty Pipes' pipes follow a few fairly simple rules that are good to keep in mind when building with them. "
+				""
+				"● First, a section of pipe may only insert or extract. Therefore, to send items from one chest to another requires a minimum of 2 pipes. "
+				""
+				"● Second, an item will never be routed back to the inventory it was extracted from. So it's not possible to simply loop pipe around a furnace, for instance, to feed the output back into it. An intermediate storage inventory is required."
+				""
+				"● Third, pipe sections can be disconnected from an inventory by Right Clicking them with the wrench."
+				""
+				"● Fourth, upgrade modules may be installed in a section of pipe by right clicking the module on the pipe. Alternatively, right clicking with an empty hand allows one to access the pipe to add, remove, or configure modules. "
+				""
+				"Finally, pipes may be covered with most any block, even transparent or partial blocks. Simply hold the desired 'cover' in your off hand and right click a section of pipe with the wrench to apply the block. "
+			]
+			dependencies: ["0000000000000401"]
+			min_width: 250
+			id: "0000000000000954"
+			tasks: [{
+				id: "0000000000000955"
+				type: "item"
+				item: "prettypipes:pipe"
+				count: 12L
+			}]
+			rewards: [{
+				id: "0000000000000A5F"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Item Filtering"
+			x: -2.0d
+			y: 5.5d
+			subtitle: "Gated Community"
+			description: [
+				"Filter Modules are an excellent way to ensure that only certain items end up in a given inventory. Insert them into the pipe section adjacent to the inventory to be filtered on the receiving end. "
+				""
+				"Filters can be upgraded with a number of useful Modifiers, such as NBT, Tag, and Mod filters. Insert these in the same section of pipe as the Filter Module."
+				""
+				"Similarly, the Stack Limiter limits the number of items allowed in an inventory and works alongside the filter. A Stack Limiter set to 1, for instance, will only allow one of each item listed in the Filter module. "
+			]
+			dependencies: ["0000000000000954"]
+			id: "0000000000000958"
+			tasks: [
+				{
+					id: "0000000000000959"
+					type: "item"
+					item: "prettypipes:low_filter_module"
+				}
+				{
+					id: "0000000000000979"
+					type: "item"
+					item: "prettypipes:stack_size_module"
+				}
+			]
+			rewards: [{
+				id: "0000000000000978"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Speed Modules"
+			x: -2.0d
+			y: 6.5d
+			subtitle: "No Time To Wait"
+			description: ["Speed Modules combine with Extraction and Retrieval Modules. They don't effect how fast those Modules work, but rather how quickly the items travel once in the pipe network. "]
+			dependencies: ["0000000000000958"]
+			dependency_requirement: "one_started"
+			id: "000000000000095A"
+			tasks: [{
+				id: "000000000000095B"
+				type: "item"
+				item: "prettypipes:low_speed_module"
+				count: 3L
+			}]
+			rewards: [{
+				id: "0000000000000A61"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: 7.5d
+			subtitle: "They've Gone To Plaid"
+			description: [
+				"Speed Modules are great in a small network, but in a larger network it can be costly to craft and insert them at every extraction point. "
+				""
+				"The Pipe Pressurizer solves this by increasing the speed of every item passing through the connected network at the cost of a little energy. "
+			]
+			dependencies: ["000000000000095A"]
+			dependency_requirement: "one_started"
+			id: "0000000000000964"
+			tasks: [{
+				id: "0000000000000965"
+				type: "item"
+				item: "prettypipes:pressurizer"
+			}]
+			rewards: [{
+				id: "000000000000096A"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Item Routing"
+			x: 1.0d
+			y: 5.5d
+			subtitle: "Coming or Going?"
+			description: [
+				"Retrieval and Extraction modules are required if anything is going to get anywhere."
+				""
+				"Naturally, Extraction Modules pull from the adjacent inventories and send the items out into the network, assuming they have a place to go to. "
+				""
+				"Retrieval Modules, in opposite fashion, pull from far inventories in an attempt to place items into the adjacent chests."
+				""
+				"A simple network might consist of two chests connected by two lengths of pipe and either an Extraction Module or a Retrieval Module in one of the pipes. "
+			]
+			dependencies: ["0000000000000954"]
+			id: "0000000000000956"
+			tasks: [
+				{
+					id: "000000000000096F"
+					type: "item"
+					item: "prettypipes:low_retrieval_module"
+					count: 3L
+				}
+				{
+					id: "0000000000000971"
+					type: "item"
+					item: "prettypipes:low_extraction_module"
+					count: 3L
+				}
+			]
+			rewards: [{
+				id: "0000000000000A68"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Priority Modules"
+			x: 1.0d
+			y: 6.5d
+			subtitle: "Getting Your Priorities Straight"
+			description: [
+				"By default, pipes function in a 'nearest first' fashion. In order to override this and change the priority of a given inventory, place a Priority Module in the pipe adjacent to that inventory."
+				""
+				"A High Priority Module in a chest that's farther away will cause items to attempt to go there first. "
+				""
+				"A Low Priority module is excellent for creating a 'default' path, for instance to send to an overflow chest or a trash can. "
+			]
+			dependencies: ["0000000000000956"]
+			dependency_requirement: "one_started"
+			id: "000000000000095C"
+			tasks: [
+				{
+					id: "000000000000096D"
+					type: "item"
+					item: "prettypipes:low_high_priority_module"
+				}
+				{
+					id: "000000000000096E"
+					type: "item"
+					item: "prettypipes:low_low_priority_module"
+				}
+			]
+			rewards: [{
+				id: "0000000000000A60"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Advanced Routing"
+			x: 1.0d
+			y: 7.5d
+			description: [
+				"Want to spread your ores evenly across some furnaces for faster smelting? The Round Robin Sorting Module has you covered. "
+				""
+				"Looking to make a mini-game with your friends and want a simple randomizer? Then the Random Sorting Module will do exactly that."
+				""
+				"For either of these to work, they ought to be placed in a section of pipe along with an Extraction module. Both will ignore priorities set on destination pipes. "
+			]
+			dependencies: ["000000000000095C"]
+			dependency_requirement: "one_started"
+			id: "0000000000000972"
+			tasks: [
+				{
+					id: "0000000000000973"
+					type: "item"
+					item: "prettypipes:round_robin_sorting_modifier"
+				}
+				{
+					id: "0000000000000975"
+					type: "item"
+					item: "prettypipes:random_sorting_modifier"
+				}
+			]
+			rewards: [{
+				id: "0000000000000977"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			description: [
+				"The Item Terminal acts as a central access point for the entire pipe network and shows the contents of every inventory on the network, excluding inventories connected via Extraction or Retrieval Modules. "
+				""
+				"Items may be requested from the network by clicking the item, selecting a quantity, and pressing Request. "
+				""
+				"Shift Clicking the + or - for the quantity will increase or decrease by 64 at a time, while Ctrl Clicking will increase or decrease by 10 at a time. "
+				""
+				"Items may be easily dumped back into the network by placing them in the right hand slots."
+			]
+			dependencies: ["0000000000000954"]
+			id: "0000000000000960"
+			tasks: [{
+				id: "0000000000000961"
+				type: "item"
+				item: "prettypipes:item_terminal"
+			}]
+			rewards: [{
+				id: "266D8479D7BEC164"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.0d
+			description: [
+				"The Crafting Terminal upgrades the Item Terminal with built in crafting. "
+				""
+				"The crafting grid may be filled manually or via JEI. Pressing the Request button will request enough for a single craft. Shift Clicking will request for 64 crafts, and Ctrl Click will request for 10."
+			]
+			dependencies: ["0000000000000960"]
+			id: "0000000000000962"
+			tasks: [{
+				id: "0000000000000963"
+				type: "item"
+				item: "prettypipes:crafting_terminal"
+			}]
+			rewards: [{
+				id: "0000000000000A62"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -0.5d
+			y: 8.0d
+			description: [
+				"Crafting Modules work alongside the Crafting or Item Terminals to allow for on demand crafting via machines. "
+				""
+				"Working with the Crafting Module will require a few pieces, however."
+				""
+				"First, the machine in question must be connected to the pipe network on its Input side. For a Vanilla Furnace, this would be the top side. A Crafting Module is then inserted into this pipe section."
+				""
+				"Next, a recipe needs to be set in the Module. Only one recipe may be set per module, but up to three modules may be inserted into a single pipe. Inputs go in the top half of the module, and the expected outputs go in the bottom."
+				""
+				"With the recipe set, an Extraction Module needs to be installed on the output face of the machine. The Crafting Module does not export the crafted item."
+				""
+				"Finally, ensure the required items are in the network and request the output item. Craftable items always appear with a 0 for their quantity and appear at the end of the list of items."
+				""
+				"Of course, the Crafting Module does not need to go directly on the machine."
+				""
+				"For instance, it could be installed on a pipe connected to a chest and a secondary network could then be connected to that chest which sends them to an array of furnaces."
+				""
+				"Creating Proxies like this is an excellent method for setting up more than 3 recipes per machine, also. "
+			]
+			dependencies: ["0000000000000962"]
+			min_width: 300
+			id: "000000000000096B"
+			tasks: [{
+				id: "000000000000096C"
+				type: "item"
+				item: "prettypipes:low_crafting_module"
+			}]
+			rewards: [{
+				id: "000000000000097B"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.0d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "3E093BB431EE7A98"
+			tasks: [{
+				id: "3E4D5BD7F14FB003"
+				type: "item"
+				item: {
+					id: "entangled:block"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			icon: "immersiveengineering:logic_unit"
+			x: -9.0d
+			y: -2.5d
+			subtitle: "An absolute one at that"
+			description: [
+				"The Logic Unit is the block that actually processes incoming signals using the programmed logic circuits. The Interface Connector is needed for this, a normal one won't do."
+				""
+				"For more details, check the Engineer's Manual."
+			]
+			dependencies: ["74AB9B268FB948B4"]
+			id: "365595FB3098F534"
+			tasks: [
+				{
+					id: "15226021C1D06870"
+					type: "item"
+					item: "immersiveengineering:logic_unit"
+				}
+				{
+					id: "099717FDF38223BC"
+					type: "item"
+					item: "immersiveengineering:connector_bundled"
+				}
+			]
+			rewards: [
+				{
+					id: "4BA97A28F5BCA25A"
+					type: "item"
+					item: "immersiveengineering:connector_redstone"
+					count: 2
+				}
+				{
+					id: "35254DCB159DC63F"
+					type: "item"
+					item: "immersiveengineering:wirecoil_redstone"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: 4.5d
+			dependencies: [
+				"36C83AD9F9CE9970"
+				"3195632E0EE15137"
+			]
+			id: "3E2016CF7DEAB4EE"
+			tasks: [{
+				id: "719B5DD8D7CF5C8C"
+				type: "item"
+				item: "integrateddynamics:variable"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			dependencies: ["3FF1B8E5563D4ECF"]
+			id: "71431A0FE1CF8670"
+			tasks: [
+				{
+					id: "08E6D0DE581F0AFC"
+					type: "item"
+					item: "mekanism:restrictive_transporter"
+				}
+				{
+					id: "40BA31F7C22BD650"
+					type: "item"
+					item: "mekanism:diversion_transporter"
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "3B3CBB15D2401A28"
+			tasks: [{
+				id: "0385817687124825"
+				type: "item"
+				item: "create:andesite_funnel"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "776E644ED0F02AF1"
+			tasks: [{
+				id: "295B17B130AD46DF"
+				type: "item"
+				item: "botania:open_crate"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -2.5d
+			description: [
+				"Acts like an inventory checker, similar to a vanilla comparator. Also recieves signals as a normal redstone connector does."
+				""
+				"Connect to redstone wire, and set channel with the screwdriver"
+			]
+			dependencies: ["24734CF49B87D810"]
+			id: "19174CDDA6283934"
+			tasks: [{
+				id: "313678BE1EC5ABA8"
+				type: "item"
+				item: "immersiveengineering:connector_probe"
+			}]
+			rewards: [
+				{
+					id: "6C8F093A907A47AD"
+					type: "item"
+					item: "immersiveengineering:connector_redstone"
+					count: 2
+				}
+				{
+					id: "019D3BC4480CC945"
+					type: "item"
+					item: "immersiveengineering:wirecoil_redstone"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: 3.0d
+			dependencies: ["556F3942AF7CFB8C"]
+			id: "3195632E0EE15137"
+			tasks: [{
+				id: "67ADE82CC1CDD6E0"
+				type: "item"
+				item: "integrateddynamics:part_redstone_reader"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			dependencies: ["7CA354074FCF8447"]
+			id: "0163571DC8F997F5"
+			tasks: [{
+				id: "143E9C1A894A8972"
+				type: "item"
+				item: "modularrouters:regulator_augment"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.5d
+			dependencies: ["7CA354074FCF8447"]
+			id: "77458390B359EB6C"
+			tasks: [{
+				id: "76BE11C2D660721D"
+				type: "item"
+				item: "modularrouters:xp_vacuum_augment"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			dependencies: ["7CD587747CC14268"]
+			id: "3D7E621374741748"
+			tasks: [{
+				id: "7CABBEFEA29A5692"
+				type: "item"
+				item: "modularrouters:stack_upgrade"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			dependencies: ["7CD587747CC14268"]
+			id: "27F2EAA313795208"
+			tasks: [{
+				id: "61DD5DD42B8E1C8E"
+				type: "item"
+				item: "modularrouters:blast_upgrade"
 			}]
 		}
 	]
