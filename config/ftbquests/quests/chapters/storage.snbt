@@ -443,7 +443,7 @@
 		}
 		{
 			x: 2.5d
-			y: -6.5d
+			y: -9.0d
 			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
 			dependencies: ["0000000000000986"]
 			id: "0000000000000988"
@@ -463,7 +463,7 @@
 		}
 		{
 			x: 3.5d
-			y: -6.0d
+			y: -9.0d
 			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
 			dependencies: ["0000000000000988"]
 			id: "000000000000098A"
@@ -483,7 +483,7 @@
 		}
 		{
 			x: 4.5d
-			y: -6.0d
+			y: -9.0d
 			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
 			dependencies: ["000000000000098A"]
 			id: "000000000000098C"
@@ -739,7 +739,7 @@
 		}
 		{
 			x: 5.5d
-			y: -6.0d
+			y: -9.0d
 			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
 			dependencies: ["000000000000098C"]
 			id: "585A22AF9FB84AFD"
@@ -1247,58 +1247,6 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: -5.0d
-			description: [
-				"The Item Terminal acts as a central access point for the entire pipe network and shows the contents of every inventory on the network, excluding inventories connected via Extraction or Retrieval Modules. "
-				""
-				"Items may be requested from the network by clicking the item, selecting a quantity, and pressing Request. "
-				""
-				"Shift Clicking the + or - for the quantity will increase or decrease by 64 at a time, while Ctrl Clicking will increase or decrease by 10 at a time. "
-				""
-				"Items may be easily dumped back into the network by placing them in the right hand slots."
-			]
-			dependencies: ["0000000000000954"]
-			id: "0000000000000960"
-			tasks: [{
-				id: "0000000000000961"
-				type: "item"
-				item: "prettypipes:item_terminal"
-			}]
-			rewards: [{
-				id: "266D8479D7BEC164"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: -8.5d
-			y: -5.0d
-			description: [
-				"The Crafting Terminal upgrades the Item Terminal with built in crafting. "
-				""
-				"The crafting grid may be filled manually or via JEI. Pressing the Request button will request enough for a single craft. Shift Clicking will request for 64 crafts, and Ctrl Click will request for 10."
-			]
-			dependencies: ["0000000000000960"]
-			id: "0000000000000962"
-			tasks: [{
-				id: "0000000000000963"
-				type: "item"
-				item: "prettypipes:crafting_terminal"
-			}]
-			rewards: [{
-				id: "0000000000000A62"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
-			}]
-		}
-		{
 			title: "Dynamic Tank"
 			x: 4.0d
 			y: -1.5d
@@ -1446,300 +1394,75 @@
 			}]
 		}
 		{
-			title: "Pretty Pipes"
-			icon: "prettypipes:item_terminal"
 			x: -3.5d
 			y: -5.0d
-			subtitle: "No Power? No Problem"
-			description: [
-				"Pretty Pipes is a powerful early game logistics system that will help keep you organized. "
-				""
-				"Use pipes to move items from place to place, filters and priorities to ensure items are ending up in the right locations, and access everything centrally from an Item Terminal or Crafting Terminal. Request based auto crafting is possible as well."
-			]
+			description: ["The Pretty Pipes Item Terminal and Crafting Terminal are a great early game way to access all your items from a single location, use them for crafting, and can even have autocrafting. Check out the Pretty Pipes quests in the Automation chapter for more info!"]
 			dependencies: ["00000000000003FF"]
-			id: "0000000000000401"
+			id: "6E3133DD54A6C7E7"
 			tasks: [{
-				id: "0000000000000953"
-				type: "checkmark"
+				id: "43B9523816655544"
+				type: "item"
+				item: "prettypipes:item_terminal"
 			}]
 			rewards: [{
-				id: "0000000000000696"
-				type: "item"
-				title: "Pipe Wrench"
-				item: "prettypipes:wrench"
-			}]
-		}
-		{
-			title: "Pipes"
-			x: -5.5d
-			y: -5.0d
-			subtitle: "I Feel Pretty, Oh So Pretty"
-			description: [
-				"To get things moving, you'll need some pipes. Craft up a bunch!"
-				""
-				"Pretty Pipes' pipes follow a few fairly simple rules that are good to keep in mind when building with them. "
-				""
-				"● First, a section of pipe may only insert or extract. Therefore, to send items from one chest to another requires a minimum of 2 pipes. "
-				""
-				"● Second, an item will never be routed back to the inventory it was extracted from. So it's not possible to simply loop pipe around a furnace, for instance, to feed the output back into it. An intermediate storage inventory is required."
-				""
-				"● Third, pipe sections can be disconnected from an inventory by Right Clicking them with the wrench."
-				""
-				"● Fourth, upgrade modules may be installed in a section of pipe by right clicking the module on the pipe. Alternatively, right clicking with an empty hand allows one to access the pipe to add, remove, or configure modules. "
-				""
-				"Finally, pipes may be covered with most any block, even transparent or partial blocks. Simply hold the desired 'cover' in your off hand and right click a section of pipe with the wrench to apply the block. "
-			]
-			dependencies: ["0000000000000401"]
-			min_width: 250
-			id: "0000000000000954"
-			tasks: [{
-				id: "0000000000000955"
+				id: "68188157B1667326"
 				type: "item"
 				item: "prettypipes:pipe"
-				count: 12L
-			}]
-			rewards: [{
-				id: "0000000000000A5F"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
+				count: 8
 			}]
 		}
 		{
-			title: "Item Filtering"
-			x: -7.0d
-			y: -6.0d
-			subtitle: "Gated Community"
-			description: [
-				"Filter Modules are an excellent way to ensure that only certain items end up in a given inventory. Insert them into the pipe section adjacent to the inventory to be filtered on the receiving end. "
-				""
-				"Filters can be upgraded with a number of useful Modifiers, such as NBT, Tag, and Mod filters. Insert these in the same section of pipe as the Filter Module."
-				""
-				"Similarly, the Stack Limiter limits the number of items allowed in an inventory and works alongside the filter. A Stack Limiter set to 1, for instance, will only allow one of each item listed in the Filter module. "
-			]
-			dependencies: ["0000000000000954"]
-			id: "0000000000000958"
-			tasks: [
-				{
-					id: "0000000000000959"
-					type: "item"
-					item: "prettypipes:low_filter_module"
-				}
-				{
-					id: "0000000000000979"
-					type: "item"
-					item: "prettypipes:stack_size_module"
-				}
-			]
-			rewards: [{
-				id: "0000000000000978"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Speed Modules"
-			x: -8.0d
-			y: -6.0d
-			subtitle: "No Time To Wait"
-			description: ["Speed Modules combine with Extraction and Retrieval Modules. They don't effect how fast those Modules work, but rather how quickly the items travel once in the pipe network. "]
-			dependencies: ["0000000000000958"]
-			dependency_requirement: "one_started"
-			id: "000000000000095A"
-			tasks: [{
-				id: "000000000000095B"
-				type: "item"
-				item: "prettypipes:low_speed_module"
-				count: 3L
-			}]
-			rewards: [{
-				id: "0000000000000A61"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: -9.0d
-			y: -6.0d
-			subtitle: "They've Gone To Plaid"
-			description: [
-				"Speed Modules are great in a small network, but in a larger network it can be costly to craft and insert them at every extraction point. "
-				""
-				"The Pipe Pressurizer solves this by increasing the speed of every item passing through the connected network at the cost of a little energy. "
-			]
-			dependencies: ["000000000000095A"]
-			dependency_requirement: "one_started"
-			id: "0000000000000964"
-			tasks: [{
-				id: "0000000000000965"
-				type: "item"
-				item: "prettypipes:pressurizer"
-			}]
-			rewards: [{
-				id: "000000000000096A"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: -9.5d
+			title: "ID Storage Terminal"
+			icon: "integratedterminals:part_terminal_storage"
+			x: 2.5d
 			y: -5.0d
+			subtitle: "Data-magic"
 			description: [
-				"Crafting Modules work alongside the Crafting or Item Terminals to allow for on demand crafting via machines. "
+				"The Integrated Dynamics Storage Terminal lets you access and craft with items from all connected inventories, with no wait times or power use!"
 				""
-				"Working with the Crafting Module will require a few pieces, however."
-				""
-				"First, the machine in question must be connected to the pipe network on its Input side. For a Vanilla Furnace, this would be the top side. A Crafting Module is then inserted into this pipe section."
-				""
-				"Next, a recipe needs to be set in the Module. Only one recipe may be set per module, but up to three modules may be inserted into a single pipe. Inputs go in the top half of the module, and the expected outputs go in the bottom."
-				""
-				"With the recipe set, an Extraction Module needs to be installed on the output face of the machine. The Crafting Module does not export the crafted item."
-				""
-				"Finally, ensure the required items are in the network and request the output item. Craftable items always appear with a 0 for their quantity and appear at the end of the list of items."
-				""
-				"Of course, the Crafting Module does not need to go directly on the machine."
-				""
-				"For instance, it could be installed on a pipe connected to a chest and a secondary network could then be connected to that chest which sends them to an array of furnaces."
-				""
-				"Creating Proxies like this is an excellent method for setting up more than 3 recipes per machine, also. "
 			]
-			dependencies: ["0000000000000962"]
-			min_width: 300
-			id: "000000000000096B"
-			tasks: [{
-				id: "000000000000096C"
-				type: "item"
-				item: "prettypipes:low_crafting_module"
-			}]
-			rewards: [{
-				id: "000000000000097B"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Advanced Routing"
-			x: -9.0d
-			y: -4.0d
-			description: [
-				"Want to spread your ores evenly across some furnaces for faster smelting? The Round Robin Sorting Module has you covered. "
-				""
-				"Looking to make a mini-game with your friends and want a simple randomizer? Then the Random Sorting Module will do exactly that."
-				""
-				"For either of these to work, they ought to be placed in a section of pipe along with an Extraction module. Both will ignore priorities set on destination pipes. "
-			]
-			dependencies: ["000000000000095C"]
-			dependency_requirement: "one_started"
-			id: "0000000000000972"
+			dependencies: ["00000000000003FF"]
+			optional: true
+			id: "69982730005EDD7D"
 			tasks: [
 				{
-					id: "0000000000000973"
+					id: "305FEF030727F2B7"
 					type: "item"
-					item: "prettypipes:round_robin_sorting_modifier"
+					item: "integratedterminals:part_terminal_storage"
 				}
 				{
-					id: "0000000000000975"
+					id: "5EE786F87A40ABE3"
 					type: "item"
-					item: "prettypipes:random_sorting_modifier"
-				}
-			]
-			rewards: [{
-				id: "0000000000000977"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Priority Modules"
-			x: -8.0d
-			y: -4.0d
-			subtitle: "Getting Your Priorities Straight"
-			description: [
-				"By default, pipes function in a 'nearest first' fashion. In order to override this and change the priority of a given inventory, place a Priority Module in the pipe adjacent to that inventory."
-				""
-				"A High Priority Module in a chest that's farther away will cause items to attempt to go there first. "
-				""
-				"A Low Priority module is excellent for creating a 'default' path, for instance to send to an overflow chest or a trash can. "
-			]
-			dependencies: ["0000000000000956"]
-			dependency_requirement: "one_started"
-			id: "000000000000095C"
-			tasks: [
-				{
-					id: "000000000000096D"
-					type: "item"
-					item: "prettypipes:low_high_priority_module"
+					item: "integrateddynamics:cable"
+					count: 8L
 				}
 				{
-					id: "000000000000096E"
+					id: "56CE84BAC42C77C2"
 					type: "item"
-					item: "prettypipes:low_low_priority_module"
+					item: "integratedtunnels:part_interface_item"
+					count: 2L
 				}
 			]
-			rewards: [{
-				id: "0000000000000A60"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Item Routing"
-			x: -7.0d
-			y: -4.0d
-			subtitle: "Coming or Going?"
-			description: [
-				"Retrieval and Extraction modules are required if anything is going to get anywhere."
-				""
-				"Naturally, Extraction Modules pull from the adjacent inventories and send the items out into the network, assuming they have a place to go to. "
-				""
-				"Retrieval Modules, in opposite fashion, pull from far inventories in an attempt to place items into the adjacent chests."
-				""
-				"A simple network might consist of two chests connected by two lengths of pipe and either an Extraction Module or a Retrieval Module in one of the pipes. "
-			]
-			dependencies: ["0000000000000954"]
-			id: "0000000000000956"
-			tasks: [
+			rewards: [
 				{
-					id: "000000000000096F"
+					id: "2DCCF7F86474DF47"
 					type: "item"
-					item: "prettypipes:low_retrieval_module"
-					count: 3L
+					item: "integratedtunnels:part_interface_item"
+					count: 2
 				}
 				{
-					id: "0000000000000971"
+					id: "000CFB69B8DEE81F"
 					type: "item"
-					item: "prettypipes:low_extraction_module"
-					count: 3L
+					item: "integrateddynamics:cable"
+					count: 8
+				}
+				{
+					id: "26F8EDF02B0D31AA"
+					type: "item"
+					item: "integrateddynamics:facade"
+					count: 16
 				}
 			]
-			rewards: [{
-				id: "0000000000000A68"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
 		}
 	]
 }
