@@ -97,7 +97,8 @@ onEvent('item.registry', (event) => {
         'craft_glyph_sentientharm',
         'craft_ender_dagger',
         'craft_enchantment_library',
-        'craft_fisher_foliot'
+        'craft_fisher_foliot',
+        'craft_gaia_reactor_controller'
     ];
 
     const reusableItemTextures = [

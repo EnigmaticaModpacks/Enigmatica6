@@ -1251,6 +1251,22 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: `${id_prefix}reinforced_stone`
+        },
+        {
+            inputs: [
+                'astralsorcery:resonating_gem',
+                'occultism:infused_lenses',
+                'astralsorcery:resonating_gem',
+                'astralsorcery:resonating_gem',
+                'astralsorcery:resonating_gem'
+            ],
+            inputFluid: 'astralsorcery:liquid_starlight',
+            inputFluidAmount: 100,
+            processingTime: 20,
+            outputItem: { item: 'astralsorcery:glass_lens', count: 2 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: `${id_prefix}glass_lens`
         }
         /*
         {

@@ -159,6 +159,10 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['kubejs:soggy_treasure_box'],
             text: [Text.of(`The lock appears broken... What could be inside?`).darkAqua()]
+        },
+        {
+            items: [/masterfulmachinery:\w+_mana_port/],
+            text: [Text.of(`Compatible with Mana Spreaders and Sparks.`).green()]
         }
     ];
 
