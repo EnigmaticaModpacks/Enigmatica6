@@ -46,7 +46,19 @@ onEvent('item.registry', (event) => {
         'celestial_mycelium_filaments',
         'incomplete_book',
         'incomplete_capacitor_basic_large',
-        'astrogro'
+        'astrogro',
+        'automation_mastery',
+        'botanical_mastery',
+        'astronomy_mastery',
+        'alchemy_mastery',
+        'ritual_mastery',
+        'aura_mastery',
+        'engineering_mastery',
+        'energistics_mastery',
+        'dimensional_mastery',
+        'battle_mastery',
+        'excavation_mastery',
+        'culinary_mastery'
     ];
 
     const ritualDummies = [
