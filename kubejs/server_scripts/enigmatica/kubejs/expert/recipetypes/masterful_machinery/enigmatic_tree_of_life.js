@@ -163,6 +163,59 @@ onEvent('recipes', (event) => {
             ],
             ticks: 60,
             id: `${id_prefix}engineering_mastery`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:energistics_mastery', count: 50 } }],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanismgenerators:fusion_reactor_controller', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanismgenerators:fusion_reactor_frame', count: 36 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanismgenerators:fusion_reactor_port', count: 5 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanismgenerators:reactor_glass', count: 24 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanismgenerators:electromagnetic_coil', count: 5 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:pressure_disperser', count: 224 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanismgenerators:rotational_complex', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanismgenerators:saturating_condenser', count: 293 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:structural_glass', count: 598 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanismgenerators:turbine_casing', count: 417 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanismgenerators:turbine_rotor', count: 10 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanismgenerators:turbine_blade', count: 20 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanismgenerators:turbine_valve', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanismgenerators:turbine_vent', count: 585 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:induction_casing', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:induction_port', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:ultimate_induction_provider', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:ultimate_induction_cell', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'fluxnetworks:flux_controller', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'fluxnetworks:flux_point', count: 50 } },
+                { type: 'masterfulmachinery:items', data: { item: 'fluxnetworks:flux_plug', count: 2 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'mekanismgenerators:tritium', amount: 12800 }
+                },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'mekanismgenerators:deuterium', amount: 12800 }
+                }
+            ],
+            ticks: 3000,
+            id: `${id_prefix}energistics_mastery`
         }
     ];
 
