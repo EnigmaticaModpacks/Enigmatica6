@@ -1,0 +1,32 @@
+{
+    "controllerId": "enigmatic_tree_of_life",
+    "textureOverride": "minecraft:block/oak_log",
+    "name": "Enigmatic Tree of Life",
+    "ports": [
+        {
+            "type": "masterfulmachinery:botania_mana",
+            "name": "Mana",
+            "id": "mana",
+            "data": {
+                "capacity": 1000000
+            }
+        },
+        {
+            "type": "masterfulmachinery:fluids",
+            "name": "Fluid",
+            "id": "fluid",
+            "data": {
+                "capacity": 512000
+            }
+        },
+        {
+            "type": "masterfulmachinery:items",
+            "name": "Item",
+            "id": "item",
+            "data": {
+                "rows": 9,
+                "columns": 7
+            }
+        }
+    ]
+}
