@@ -498,11 +498,11 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('botanypots:botany_pot'),
-            inputs: ['#enigmatica:washables/simplebotanypots', 'minecraft:water_bucket']
+            inputs: ['#botanypots:botany_pots/simple', 'minecraft:water_bucket']
         },
         {
             output: Item.of('botanypots:hopper_botany_pot'),
-            inputs: ['#enigmatica:washables/hopperbotanypots', 'minecraft:water_bucket']
+            inputs: ['#botanypots:botany_pots/hopper', 'minecraft:water_bucket']
         },
         {
             output: Item.of('minecraft:terracotta'),
