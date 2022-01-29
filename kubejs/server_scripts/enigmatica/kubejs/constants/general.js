@@ -31,8 +31,7 @@ const modPriorities = [
     'miniutilities',
     'chipped',
     'chisel',
-    'tconstruct',
-    'cavesandcliffs'
+    'tconstruct'
 ];
 
 const lootChests = ['lootr:lootr_chest', 'lootr:lootr_barrel', 'lootr:lootr_trapped_chest'];
