@@ -1167,6 +1167,14 @@
 				type: "item"
 				item: "engineersdecor:factory_dropper"
 			}]
+			rewards: [{
+				id: "7156087E310228A4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: -8.0d
@@ -1186,8 +1194,9 @@
 			rewards: [{
 				id: "7156087E310228A4"
 				type: "command"
+				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/say Hi, @p!"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -1201,6 +1210,14 @@
 				type: "item"
 				item: "sophisticatedbackpacks:backpack"
 			}]
+			rewards: [{
+				id: "7156087E310228A4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 3.5d
@@ -1211,6 +1228,14 @@
 				id: "17CBAEF23312421A"
 				type: "item"
 				item: "create:encased_fan"
+			}]
+			rewards: [{
+				id: "7156087E310228A4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1226,6 +1251,14 @@
 					Count: 1b
 					tag: { }
 				}
+			}]
+			rewards: [{
+				id: "7156087E310228A4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1664,6 +1697,14 @@
 					item: "mekanism:diversion_transporter"
 				}
 			]
+			rewards: [{
+				id: "7156087E310228A4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 5.5d
@@ -1675,6 +1716,14 @@
 				type: "item"
 				item: "create:andesite_funnel"
 			}]
+			rewards: [{
+				id: "7156087E310228A4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 6.5d
@@ -1685,6 +1734,14 @@
 				id: "295B17B130AD46DF"
 				type: "item"
 				item: "botania:open_crate"
+			}]
+			rewards: [{
+				id: "7156087E310228A4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1726,6 +1783,14 @@
 				id: "67ADE82CC1CDD6E0"
 				type: "item"
 				item: "integrateddynamics:part_redstone_reader"
+			}]
+			rewards: [{
+				id: "7156087E310228A4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
