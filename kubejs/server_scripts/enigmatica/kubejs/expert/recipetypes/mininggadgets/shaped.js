@@ -101,7 +101,7 @@ onEvent('recipes', (event) => {
                 B: '#forge:circuits/basic',
                 C: 'create:polished_rose_quartz',
                 D: 'mekanism:module_base',
-                E: 'meetyourfight:fortunes_favor'
+                E: 'bloodmagic:fortune_anointment'
             },
             id: 'mininggadgets:upgrade_fortune_1'
         },
