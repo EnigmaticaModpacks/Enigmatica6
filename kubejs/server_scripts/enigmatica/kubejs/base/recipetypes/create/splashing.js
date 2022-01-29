@@ -36,12 +36,12 @@ onEvent('recipes', (event) => {
         },
         {
             outputs: ['botanypots:botany_pot'],
-            input: '#botanypots:botany_pots/simple',
+            input: '#enigmatica:washables/simplebotanypots',
             id: `${id_prefix}botany_pot`
         },
         {
             outputs: ['botanypots:hopper_botany_pot'],
-            input: '#botanypots:botany_pots/hopper',
+            input: '#enigmatica:washables/hopperbotanypots',
             id: `${id_prefix}hopper_botany_pot`
         },
         {
