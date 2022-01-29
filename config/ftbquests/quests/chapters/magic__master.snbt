@@ -62,7 +62,7 @@
 			x: 2.5d
 			y: -1.5d
 			shape: "rsquare"
-			dependencies: ["0000000000000FEB"]
+			dependencies: ["0000000000000FCF"]
 			id: "06A6BE8C4A3B0C1D"
 			tasks: [{
 				id: "3200842BF652DCB5"
@@ -82,10 +82,7 @@
 			x: 3.0d
 			y: -0.5d
 			description: ["A better receptacle is needed once more to delve deeper into the knowledge of the spirit worlds. A Mana Tablet, deeply rooted in the natural arts of this plane, will serve as a safe anchor. "]
-			dependencies: [
-				"06A6BE8C4A3B0C1D"
-				"7660DCCE5DF6B3E1"
-			]
+			dependencies: ["06A6BE8C4A3B0C1D"]
 			id: "06E76BE2A422E8AC"
 			tasks: [
 				{
@@ -131,10 +128,10 @@
 		}
 		{
 			x: 1.0d
-			y: 0.5d
+			y: 0.0d
 			shape: "diamond"
 			description: ["Seek out the Crystalline Mountains in the End where these crystals grow naturally in great abundance. "]
-			dependencies: ["3200842BF652DCB5"]
+			dependencies: ["0000000000000FCF"]
 			id: "0CFE47372EC49DC8"
 			tasks: [{
 				id: "5F5822FEF6F28BB7"
@@ -143,11 +140,11 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: 2.0d
 			y: 0.0d
 			shape: "diamond"
 			description: ["Found commonly in the Sulfur Springs of the End. Be prepared to go for a swim!"]
-			dependencies: ["3200842BF652DCB5"]
+			dependencies: ["0000000000000FCF"]
 			id: "69201BA9E47F94EE"
 			tasks: [{
 				id: "124E2656A866D979"
@@ -156,7 +153,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 1.5d
 			y: 0.5d
 			shape: "diamond"
 			description: ["Enchanted Petals have long been used as a test of sorts for those seeking the title of Master. Requiring extensive travel through the inhospitable lands of the End, these petals hold the key to advanced spell casting and summoning.  "]
@@ -333,7 +330,7 @@
 			x: 0.5d
 			y: -1.5d
 			shape: "rsquare"
-			dependencies: ["0000000000000FEB"]
+			dependencies: ["0000000000000FC9"]
 			id: "1C5802ADD3834FE9"
 			tasks: [{
 				id: "7660DCCE5DF6B3E1"
