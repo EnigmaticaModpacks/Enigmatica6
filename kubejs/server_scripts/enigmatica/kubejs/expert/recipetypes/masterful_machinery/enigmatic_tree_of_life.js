@@ -37,6 +37,23 @@ onEvent('recipes', (event) => {
             ],
             ticks: 60,
             id: `${id_prefix}astronomy_mastery`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:alchemy_mastery', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:death_ring', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:soul_gem', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:looting_anointment_l', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'ars_nouveau:wixie_charm', count: 3 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:pet_reviver', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:nocturnal_powder', count: 16 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:enchanted_golden_apple', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'atum:linen_bandage', count: 33 } },
+                { type: 'masterfulmachinery:items', data: { item: 'darkutils:rune_weakness', count: 9 } },
+                { type: 'masterfulmachinery:items', data: { item: 'darkutils:anchor_plate', count: 9 } }
+            ],
+            ticks: 60,
+            id: `${id_prefix}alchemy_mastery`
         }
     ];
 
