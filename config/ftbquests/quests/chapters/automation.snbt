@@ -5,7 +5,6 @@
 	filename: "automation"
 	title: "Automation (WIP, hidden)"
 	icon: "minecraft:hopper"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -152,19 +151,87 @@
 		}
 		{
 			title: "XNet Controller"
+			icon: "xnet:controller"
 			x: -0.5d
-			y: 1.0d
-			description: ["XNet can intelligently transfer items and does it instantly too. No more items filling up pipes or bouncing because the destination is full."]
+			y: 0.5d
+			description: [
+				"XNet can intelligently transfer items and does it instantly too. No more items filling up pipes or bouncing because the destination is full."
+				""
+				"Requires connection to cables via a connector. Connectors are also used to access other blocks to interact with."
+				""
+				"See the TF Tools chapter for some more details."
+			]
 			dependencies: [
 				"30AA6A8DF0B65273"
 				"3468E652B4FE85FA"
 			]
 			id: "559D7D60CDDE5596"
-			tasks: [{
-				id: "204956F05E407E82"
-				type: "item"
-				item: "xnet:controller"
-			}]
+			tasks: [
+				{
+					id: "204956F05E407E82"
+					type: "item"
+					item: "xnet:controller"
+				}
+				{
+					id: "79D951766C0A6EF5"
+					type: "item"
+					title: "Any XNet cable"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "xnet:netcable_red"
+									Count: 1b
+								}
+								{
+									id: "xnet:netcable_green"
+									Count: 1b
+								}
+								{
+									id: "xnet:netcable_blue"
+									Count: 1b
+								}
+								{
+									id: "xnet:netcable_yellow"
+									Count: 1b
+								}
+							]
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "4B2CE60937C00CCE"
+					type: "item"
+					title: "Any XNet Connector"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "xnet:connector_red"
+									Count: 1b
+								}
+								{
+									id: "xnet:connector_green"
+									Count: 1b
+								}
+								{
+									id: "xnet:connector_blue"
+									Count: 1b
+								}
+								{
+									id: "xnet:connector_yellow"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
 			rewards: [{
 				id: "0000000000000A5D"
 				type: "command"
@@ -255,132 +322,113 @@
 		}
 		{
 			title: "Switch Links"
-			icon: "rsgauges:switchlink_pearl"
+			icon: "rsgauges:industrial_switchlink_receiver"
 			x: -5.5d
 			y: -1.5d
+			description: [
+				"Switch Links are small wireless redstone transmitters or receivers. To link a pair of them together, right-click an ender pearl on the receiving switch link, then right-click that linked pearl onto the sending switch link."
+				""
+				"You can then right click on a switch link while holding a redstone torch to change it's redstone behavior, between weak or strong, and inverted or not. You can also right-click the linked pearl on the receiver again to change it's mode, adjusting how it gets triggered."
+				""
+				"Switch Links come in 3 flavors: regular, 'pulse' which pulses when it activates, and 'analog' which emits different strength signals depending on input strength."
+			]
 			dependencies: ["3468E652B4FE85FA"]
 			id: "3B9FA6A21DF4776A"
 			tasks: [
 				{
-					id: "647E5AE9043B27C1"
+					id: "2BD50EA5A8688B73"
 					type: "item"
-					title: "Any Switch Link Reciever"
-					icon: "rsgauges:industrial_switchlink_receiver"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "rsgauges:industrial_switchlink_receiver"
-									Count: 1b
-								}
-								{
-									id: "rsgauges:industrial_switchlink_pulse_receiver"
-									Count: 1b
-								}
-								{
-									id: "rsgauges:industrial_switchlink_receiver_analog"
-									Count: 1b
-								}
-								{
-									id: "rsgauges:industrial_switchlink_cased_pulse_receiver"
-									Count: 1b
-								}
-								{
-									id: "rsgauges:industrial_switchlink_cased_receiver"
-									Count: 1b
-								}
-							]
-						}
-					}
+					item: "rsgauges:industrial_switchlink_relay"
 				}
 				{
-					id: "2D7685414E434104"
+					id: "4CA0D2C7367B1662"
 					type: "item"
-					title: "Any Switch Link Transmitter"
-					icon: "rsgauges:industrial_switchlink_relay"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "rsgauges:industrial_switchlink_relay"
-									Count: 1b
-								}
-								{
-									id: "rsgauges:industrial_switchlink_pulse_relay"
-									Count: 1b
-								}
-								{
-									id: "rsgauges:industrial_switchlink_relay_analog"
-									Count: 1b
-								}
-							]
-						}
-					}
+					item: "rsgauges:industrial_switchlink_receiver"
 				}
 			]
-			rewards: [{
-				id: "569C5C2E846AC3A5"
-				type: "item"
-				item: "minecraft:ender_pearl"
-			}]
+			rewards: [
+				{
+					id: "569C5C2E846AC3A5"
+					type: "item"
+					auto: "disabled"
+					item: "minecraft:ender_pearl"
+				}
+				{
+					id: "572B5575E8BA6012"
+					type: "item"
+					item: "minecraft:redstone_torch"
+				}
+			]
 		}
 		{
 			icon: "rsgauges:industrial_comparator_switch"
 			x: -5.5d
 			y: -2.5d
 			shape: "heart"
+			subtitle: "Not your grand-pappy's comparator!"
+			description: [
+				"The Industrial Comparator Switch works as a comparator that reads the block it's attached to, and can be placed on any side of a block. It's output is also the attached block, but can be sent to a Switch Link Receiver as well, in the same way as linking two switch links together, just with the comparator as the source."
+				""
+				"Right clicking the buttons on it's face will adjust the base settings for the comparator, while right clicking with a redstone torch will change the redstone output to the attached block."
+			]
 			dependencies: ["3468E652B4FE85FA"]
 			id: "642570832E7034B8"
-			tasks: [
-				{
-					id: "259D5F4823B2D9D4"
-					type: "item"
-					item: "rsgauges:industrial_comparator_switch"
-				}
-				{
-					id: "207704CCE394C4EF"
-					type: "item"
-					item: "minecraft:redstone_torch"
-				}
-			]
+			tasks: [{
+				id: "259D5F4823B2D9D4"
+				type: "item"
+				item: "rsgauges:industrial_comparator_switch"
+			}]
 			rewards: [
 				{
-					id: "4BC9E62CEA6CB0C2"
+					id: "3B8EBF108B1FEB84"
 					type: "item"
-					item: "rsgauges:industrial_comparator_switch"
+					item: "rsgauges:industrial_switchlink_receiver_analog"
 				}
 				{
-					id: "24210CC003CE2C18"
+					id: "6F179D1F6787B2DB"
 					type: "item"
-					item: "rsgauges:industrial_switchlink_receiver"
-					count: 2
+					item: "minecraft:ender_pearl"
 				}
 			]
 		}
 		{
 			x: -4.5d
 			y: -1.5d
-			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Observes the block it's facing, including at range, and emits a redstone signal based on the set 'category' filter. Right click the green arrows on the back to change the filter category."
+				""
+				"As usual, right-clicking with a redstone torch will change the emitted redstone behavior, and can link to a switch link receiver."
+				""
+				"Fun fact, the 'plant' category matches netherrack, but not magma blocks!"
+			]
+			dependencies: ["3B9FA6A21DF4776A"]
 			id: "37A085B3E48E7851"
 			tasks: [{
 				id: "4841A010573BC10A"
 				type: "item"
 				item: "rsgauges:industrial_block_detector"
 			}]
+			rewards: [{
+				id: "5904991DB0986B52"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
+			title: "Entity Detectors"
 			icon: "rsgauges:industrial_entity_detector"
 			x: -6.5d
 			y: -1.5d
-			dependencies: ["3468E652B4FE85FA"]
+			description: ["Can detect entities in an area (infrared) or in a line in front of it (laser). Adjust the settings for range by right clicking the buttons on the front. Can send the signal to a switch link receiver. "]
+			dependencies: ["3B9FA6A21DF4776A"]
 			id: "3A0580E4575DC389"
 			tasks: [{
 				id: "4BEA4E38195AD242"
 				type: "item"
+				title: "Any Entity Detector"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -406,6 +454,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5B82A191C238A20B"
+				type: "item"
+				item: "rsgauges:industrial_switchlink_receiver"
+			}]
 		}
 		{
 			x: -0.5d
@@ -425,7 +478,7 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: 1.0d
 			y: -5.0d
 			dependencies: ["21B266F6556271EB"]
 			id: "1956D60143703C16"
@@ -504,7 +557,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: -2.0d
 			y: -5.0d
 			dependencies: ["21B266F6556271EB"]
 			id: "56234AA9ED3E8324"
@@ -792,17 +845,37 @@
 			}]
 		}
 		{
+			title: "RF Tools Control"
+			icon: "rftoolscontrol:processor"
 			x: -0.5d
-			y: 2.0d
+			y: 1.5d
+			description: ["Program complex automations with a visual programing UI. Make your program in the programmer, then transfer it to the processor with the program card. The processor requires a CPU to run, and can be upgraded to run faster or with more memory."]
 			dependencies: [
 				"3468E652B4FE85FA"
 				"30AA6A8DF0B65273"
 			]
 			id: "1C24D2BD564F9E58"
-			tasks: [{
-				id: "3A648B70B73CF497"
+			tasks: [
+				{
+					id: "3A648B70B73CF497"
+					type: "item"
+					item: "rftoolscontrol:processor"
+				}
+				{
+					id: "53B6687A1024692F"
+					type: "item"
+					item: "rftoolscontrol:programmer"
+				}
+				{
+					id: "6CFA2106351100B2"
+					type: "item"
+					item: "rftoolscontrol:program_card"
+				}
+			]
+			rewards: [{
+				id: "20DF77C0364ADE55"
 				type: "item"
-				item: "rftoolscontrol:processor"
+				item: "rftoolscontrol:cpu_core_500"
 			}]
 		}
 		{
@@ -828,8 +901,10 @@
 			}]
 		}
 		{
+			title: "Redstone Proxy (Update)"
 			x: -1.0d
-			y: 0.0d
+			y: -0.5d
+			description: ["Used when you want to emit a redstone signal with XNet directly, and triggers a block update when updated. Useful for intergrating NXet automation into external systems. Can also read redstone from external sources powering the proxy."]
 			dependencies: ["559D7D60CDDE5596"]
 			id: "34D8561D229A3122"
 			tasks: [{
@@ -1038,7 +1113,7 @@
 		}
 		{
 			x: 0.5d
-			y: -3.5d
+			y: -2.0d
 			dependencies: ["15E49A6B00BE744C"]
 			id: "7CD587747CC14268"
 			tasks: [{
@@ -1049,7 +1124,7 @@
 		}
 		{
 			x: -1.5d
-			y: -3.5d
+			y: -2.0d
 			dependencies: ["15E49A6B00BE744C"]
 			id: "7CA354074FCF8447"
 			tasks: [{
@@ -1323,7 +1398,8 @@
 		}
 		{
 			x: 0.0d
-			y: 0.0d
+			y: -0.5d
+			description: ["The RF Tools filter is compatible with XNet, and is required for tag filtering (the default tag option in XNet is bugged). Insert the filter into one of the 4 slots at the top of the UI, and choose which filter a connector uses with the 'filter index' button on the right."]
 			dependencies: ["559D7D60CDDE5596"]
 			id: "0597A437596EABC1"
 			tasks: [{
@@ -1355,10 +1431,7 @@
 				""
 				"Use pipes to move items from place to place, filters and priorities to ensure items are ending up in the right locations, and access everything centrally from an Item Terminal or Crafting Terminal. Request based auto crafting is possible as well."
 			]
-			dependencies: [
-				"00000000000003FF"
-				"30AA6A8DF0B65273"
-			]
+			dependencies: ["30AA6A8DF0B65273"]
 			id: "0000000000000401"
 			tasks: [{
 				id: "0000000000000953"
@@ -1995,6 +2068,110 @@
 				id: "761880A207E10159"
 				type: "item"
 				item: "integrateddynamics:part_display_panel"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			description: [
+				"When placed pointing towards a block, the Red Stringed Comparator will mirror the comparator output of that block, so you can place a comparator against the Red Stringed Comparator instead of the target block. Great for moving your automation out away from tight spaces."
+				""
+				"There are other Red Stringed blocks available, check the entry for Red String in the Elven Lexica Botania for more details."
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "642C66D035EC4141"
+			tasks: [{
+				id: "2A160C7D2F6863B6"
+				type: "item"
+				item: "botania:red_string_comparator"
+			}]
+			rewards: [{
+				id: "7571E7BDE443E313"
+				type: "item"
+				item: "minecraft:comparator"
+			}]
+		}
+		{
+			title: "Computer Craft: Tweaked"
+			icon: "computercraft:computer_advanced"
+			x: -0.5d
+			y: 2.5d
+			subtitle: "A Computer within a Game within a Computer"
+			description: [
+				"Use the LUA programming language to interact with the world."
+				""
+				""
+				"When you claim this reward, a link will be posted in chat to a video playlist for a basic tutorial on CC. While for an old version, it should still be relevant."
+				"Unfortunately repeatable quests aren't yet implemented so the command will only run once, so be sure to save the link somewhere!"
+			]
+			dependencies: [
+				"30AA6A8DF0B65273"
+				"3468E652B4FE85FA"
+			]
+			optional: true
+			id: "77F743435F64DFEC"
+			tasks: [{
+				id: "4B7B9611F1294D2B"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "20E531EBA4E9DA87"
+				type: "command"
+				title: "CC Tutorial Link"
+				icon: "pneumaticcraft:tag_filter"
+				command: "/tellraw @p {\"text\":\"CC Tutorial Link\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtube.com/playlist?list=PLaiPn4ewcbkHYflo2jl0OuNaHK6Mj-koG\"}}"
+				player_command: false
+			}]
+		}
+		{
+			x: 9.0d
+			y: 5.5d
+			dependencies: ["0EF9750F679732E6"]
+			id: "1FAAB2243CA49CA9"
+			tasks: [{
+				id: "15AC1FED7DA293EF"
+				type: "item"
+				item: "pneumaticcraft:programmer"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.0d
+			dependencies: ["21B266F6556271EB"]
+			id: "60A72B4FC2AFD9C3"
+			tasks: [{
+				id: "659E378856A13D06"
+				type: "item"
+				item: {
+					id: "modularrouters:puller_module_1"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			dependencies: ["21B266F6556271EB"]
+			id: "029313754BAF820E"
+			tasks: [{
+				id: "5CFF2A9710804BFA"
+				type: "item"
+				item: {
+					id: "modularrouters:sender_module_1"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
 			}]
 		}
 	]
