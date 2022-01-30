@@ -20,6 +20,7 @@
 				"Need a way to move those beautifully stored items around?"
 				"No, \"your inventory\" isn't a scalable answer."
 			]
+			size: 1.5d
 			id: "30AA6A8DF0B65273"
 			tasks: [{
 				id: "4FB3F0534FC9F890"
@@ -239,6 +240,7 @@
 			x: -5.5d
 			y: 1.0d
 			shape: "gear"
+			size: 1.5d
 			id: "3468E652B4FE85FA"
 			tasks: [{
 				id: "61B85B234D1E9F5E"
@@ -748,12 +750,23 @@
 		{
 			x: -7.5d
 			y: 3.0d
+			description: [
+				"Integrated Dynamics is a great choice for all your redstone logic needs, from simple to very complex."
+				""
+				"Even without using the Logic Programmer, you can use it to transmit analogue or digital signals, read blocks like a comparator, or set up a clock with custom pulse lengths."
+			]
 			dependencies: ["3468E652B4FE85FA"]
 			id: "556F3942AF7CFB8C"
 			tasks: [{
 				id: "51C8B1DAC8F7BE8C"
 				type: "item"
 				item: "integrateddynamics:cable"
+			}]
+			rewards: [{
+				id: "76756F33D7703CDC"
+				type: "item"
+				item: "integrateddynamics:cable"
+				count: 4
 			}]
 		}
 		{
@@ -803,14 +816,26 @@
 			]
 		}
 		{
-			x: -7.5d
+			x: -9.0d
 			y: 4.5d
-			dependencies: ["556F3942AF7CFB8C"]
+			subtitle: "...redstone comes out!"
+			description: [
+				"Once you have your linked Variable Card, just place it in the appropriate slot in the Redstone Writer. If the card has blue corners, it's a 'Boolean' type card that outputs either 'true' or 'false'. Orange corners mean an 'Integer' type, which output a number."
+				""
+				"So if you have a card linked to the Comparator aspect of a Redstone Reader, it will be an integer card, so place that card in the orange Redstone output of the Writer, and that writer will emit redstone equal to the comparator strength the Reader is providing."
+			]
+			dependencies: ["3195632E0EE15137"]
 			id: "36C83AD9F9CE9970"
 			tasks: [{
 				id: "6E70FB12746633E9"
 				type: "item"
 				item: "integrateddynamics:part_redstone_writer"
+			}]
+			rewards: [{
+				id: "6C9866BF4C38B8C3"
+				type: "item"
+				item: "integrateddynamics:variable"
+				count: 2
 			}]
 		}
 		{
@@ -1192,7 +1217,7 @@
 				item: "pneumaticcraft:universal_sensor"
 			}]
 			rewards: [{
-				id: "7156087E310228A4"
+				id: "280ABEAFF8C46046"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1211,7 +1236,7 @@
 				item: "sophisticatedbackpacks:backpack"
 			}]
 			rewards: [{
-				id: "7156087E310228A4"
+				id: "092B56B47CD50A73"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1230,7 +1255,7 @@
 				item: "create:encased_fan"
 			}]
 			rewards: [{
-				id: "7156087E310228A4"
+				id: "141581BC00F3E20A"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1253,7 +1278,7 @@
 				}
 			}]
 			rewards: [{
-				id: "7156087E310228A4"
+				id: "7E251F2D83DBC6E3"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1667,17 +1692,55 @@
 			]
 		}
 		{
+			title: "Logic Programmer"
+			icon: "integrateddynamics:portable_logic_programmer"
 			x: -9.0d
-			y: 4.5d
-			dependencies: [
-				"36C83AD9F9CE9970"
-				"3195632E0EE15137"
+			y: 3.0d
+			subtitle: "Get Logical"
+			description: [
+				"Once you have a Logic Programmer however, the fun can really start! By setting Variable Cards to be different values, or operators referencing other Variable Cards, such as inputs from various Readers, you can create deep nested logic trees, and use a redstone writer as the final output."
+				""
+				"All set variable cards need to be stored somewhere in the system, so you'll need a Variable Store for anything more complicated than a basic redstone signal transfer."
+				""
+				"The Labeller lets you name your variable cards as you program them, which is highly recommended practice."
+				""
+				"For more info on the various blocks, check the mod's guide book \"On the Dynamics of Integration\" in your Akashic Tome."
 			]
+			dependencies: ["36C83AD9F9CE9970"]
 			id: "3E2016CF7DEAB4EE"
-			tasks: [{
-				id: "719B5DD8D7CF5C8C"
+			tasks: [
+				{
+					id: "6548685DA5ACC850"
+					type: "item"
+					title: "Logic Programmer"
+					icon: "integrateddynamics:portable_logic_programmer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "integrateddynamics:logic_programmer"
+									Count: 1b
+								}
+								{
+									id: "integrateddynamics:portable_logic_programmer"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "6E17A6DD5E71478B"
+					type: "item"
+					item: "integrateddynamics:variablestore"
+				}
+			]
+			rewards: [{
+				id: "1C4E18FCBA752A88"
 				type: "item"
-				item: "integrateddynamics:variable"
+				item: "integrateddynamics:labeller"
 			}]
 		}
 		{
@@ -1698,7 +1761,7 @@
 				}
 			]
 			rewards: [{
-				id: "7156087E310228A4"
+				id: "08BAF3870FEFB9EC"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1717,7 +1780,7 @@
 				item: "create:andesite_funnel"
 			}]
 			rewards: [{
-				id: "7156087E310228A4"
+				id: "0192F87D3477C49F"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1736,7 +1799,7 @@
 				item: "botania:open_crate"
 			}]
 			rewards: [{
-				id: "7156087E310228A4"
+				id: "37F0D154487A4F08"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1775,8 +1838,14 @@
 			]
 		}
 		{
-			x: -9.0d
-			y: 3.0d
+			x: -7.5d
+			y: 4.5d
+			subtitle: "Signal goes in..."
+			description: [
+				"The Redstone Reader allows the ID system to read external redstone signals, read blocks as a comparator, or generate pulses as a redstone clock."
+				""
+				"To set up a Variable Card linked to the reader, just place a blank card in the appropriate slot, and the card will be assigned to use the data that slot provides."
+			]
 			dependencies: ["556F3942AF7CFB8C"]
 			id: "3195632E0EE15137"
 			tasks: [{
@@ -1785,12 +1854,10 @@
 				item: "integrateddynamics:part_redstone_reader"
 			}]
 			rewards: [{
-				id: "7156087E310228A4"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				id: "17AE67B6404F4B63"
+				type: "item"
+				item: "integrateddynamics:variable"
+				count: 2
 			}]
 		}
 		{
@@ -1835,6 +1902,41 @@
 				id: "61DD5DD42B8E1C8E"
 				type: "item"
 				item: "modularrouters:blast_upgrade"
+			}]
+		}
+		{
+			title: "Block NBT Extraction"
+			icon: "integrateddynamics:part_block_reader"
+			x: -10.5d
+			y: 3.0d
+			subtitle: "Reveal Your Secrets"
+			description: [
+				"The NBT Extractor and Block Reader are a powerful combo. Place the Block Reader against any block that has NBT, for example a Botania Mana Pool, and link a card to the Tile Entity NBT aspect."
+				""
+				"You can place the Tile Entity NBT card into the display, and you'll see a bunch of info about the read block. With the programmer, using string cards you can manually dig down into the NBT tree to find the tag you want to compare to, but the NBT Extractor makes this much simpler."
+				""
+				"Just place the Extractor on the same network as the reader, and place the NBT card in it's left 'SRC NBT' slot. You'll see the NBT again, but this time you can click on the tag you are interested in to select it, and then place a blank variable card in the right 'OUT' slot. For the mana pool example, click on 'mana: *' tag, and when you place a blank card in the OUT slot, that card will now give the numerical value of mana in the pool."
+				""
+				"Once you link the card to the NBT tag you wanted, you can remove the NBT Extractor from the network."
+			]
+			dependencies: ["3E2016CF7DEAB4EE"]
+			id: "01DA715D5D271E92"
+			tasks: [
+				{
+					id: "0D75CAA1DE1284B2"
+					type: "item"
+					item: "integrateddynamics:part_block_reader"
+				}
+				{
+					id: "25838A87475AEEC9"
+					type: "item"
+					item: "integratednbt:nbt_extractor"
+				}
+			]
+			rewards: [{
+				id: "761880A207E10159"
+				type: "item"
+				item: "integrateddynamics:part_display_panel"
 			}]
 		}
 	]
