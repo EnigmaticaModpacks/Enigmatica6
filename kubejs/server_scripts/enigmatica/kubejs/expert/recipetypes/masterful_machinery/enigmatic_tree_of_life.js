@@ -235,7 +235,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}dimensional_mastery`
         },
         {
-            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:battle_mastery', count: 1 } }],
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:battle_mastery', count: 5 } }],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:mekasuit_helmet', count: 1 } },
                 {
@@ -286,7 +286,9 @@ onEvent('recipes', (event) => {
                     type: 'masterfulmachinery:items',
                     data: { item: 'mekanism:module_laser_dissipation_unit', count: 4 }
                 },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_energy_unit', count: 40 } }
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_energy_unit', count: 40 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:teleporter', count: 5 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:portable_teleporter', count: 1 } }
             ],
             ticks: 60,
             id: `${id_prefix}battle_mastery`
