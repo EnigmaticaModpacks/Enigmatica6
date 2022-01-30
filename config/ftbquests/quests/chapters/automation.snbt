@@ -130,10 +130,20 @@
 			title: "Item Router"
 			icon: "modularrouters:item_router"
 			x: -0.5d
-			y: -2.0d
-			subtitle: "Have you tried turning off and on again"
-			description: ["Modular Routers is a powerful item transport and automation mod that revolves around a single block, the item router"]
-			dependencies: ["30AA6A8DF0B65273"]
+			y: -4.0d
+			subtitle: "Have you tried turning it off and on again?"
+			description: [
+				"Modular Routers are very powerful tools for automation. They're a single block that can be augmented to do many things, like breaking blocks, sorting items, pushing items into remote inventories, or all of the above at once, and more!"
+				""
+				"All of the modules/upgrades/augments in Modular Routers have info tooltips, just hold 'i' while holding the mouse over them in JEI or your inventory for some hints as to how they operate."
+				"(tooltips won't work if a JEI recipe window is open)"
+				""
+				"There is also a mod guidebook \"Modular Routers Manual\", which will have details on everything."
+			]
+			dependencies: [
+				"30AA6A8DF0B65273"
+				"3468E652B4FE85FA"
+			]
 			id: "15E49A6B00BE744C"
 			tasks: [{
 				id: "366C08F8F32D7E4B"
@@ -462,7 +472,8 @@
 		}
 		{
 			x: -0.5d
-			y: -5.0d
+			y: -7.0d
+			description: [""]
 			dependencies: ["15E49A6B00BE744C"]
 			id: "21B266F6556271EB"
 			tasks: [{
@@ -474,12 +485,12 @@
 				id: "04E2CB365714CFFD"
 				type: "item"
 				item: "modularrouters:blank_module"
-				count: 4
+				count: 2
 			}]
 		}
 		{
 			x: 1.0d
-			y: -5.0d
+			y: -7.0d
 			dependencies: ["21B266F6556271EB"]
 			id: "1956D60143703C16"
 			tasks: [{
@@ -498,7 +509,7 @@
 		}
 		{
 			x: -1.5d
-			y: -6.0d
+			y: -8.0d
 			dependencies: ["21B266F6556271EB"]
 			id: "108E174F5672BF48"
 			tasks: [{
@@ -518,7 +529,7 @@
 		}
 		{
 			x: -0.5d
-			y: -6.5d
+			y: -8.5d
 			dependencies: ["21B266F6556271EB"]
 			id: "27C9B26FB5FF10E1"
 			tasks: [{
@@ -537,8 +548,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -6.0d
+			x: -2.0d
+			y: -7.0d
 			dependencies: ["21B266F6556271EB"]
 			id: "322583CAAD093EE4"
 			tasks: [{
@@ -557,22 +568,43 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -5.0d
+			x: -0.5d
+			y: -5.5d
 			dependencies: ["21B266F6556271EB"]
 			id: "56234AA9ED3E8324"
 			tasks: [{
 				id: "6F58BD0AC1F29AD4"
 				type: "item"
+				title: "Fluid Modules"
 				item: {
-					id: "modularrouters:fluid_module_2"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						modularrouters: {
-							FluidDir: 0b
-							MaxTransfer: 1000
-							ModuleFilter: { }
-						}
+						items: [
+							{
+								id: "modularrouters:fluid_module"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										FluidDir: 0b
+										MaxTransfer: 1000
+										ModuleFilter: { }
+										Direction: "NONE"
+									}
+								}
+							}
+							{
+								id: "modularrouters:fluid_module_2"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										FluidDir: 0b
+										MaxTransfer: 1000
+										ModuleFilter: { }
+									}
+								}
+							}
+						]
 					}
 				}
 			}]
@@ -1112,8 +1144,9 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -2.0d
+			x: 1.0d
+			y: -4.0d
+			description: ["Upgrades upgrade the router as a whole, instead of individual modules."]
 			dependencies: ["15E49A6B00BE744C"]
 			id: "7CD587747CC14268"
 			tasks: [{
@@ -1121,16 +1154,29 @@
 				type: "item"
 				item: "modularrouters:blank_upgrade"
 			}]
+			rewards: [{
+				id: "3E55636E26686CC0"
+				type: "item"
+				item: "modularrouters:blank_upgrade"
+				count: 2
+			}]
 		}
 		{
-			x: -1.5d
-			y: -2.0d
+			x: -2.0d
+			y: -4.0d
+			description: ["Augments are applied to modules, instead of the router itself, to change how they operate"]
 			dependencies: ["15E49A6B00BE744C"]
 			id: "7CA354074FCF8447"
 			tasks: [{
 				id: "175A67867F65B8C0"
 				type: "item"
 				item: "modularrouters:augment_core"
+			}]
+			rewards: [{
+				id: "35F7F3293209E5BA"
+				type: "item"
+				item: "modularrouters:augment_core"
+				count: 2
 			}]
 		}
 		{
@@ -1424,7 +1470,7 @@
 			title: "Pretty Pipes"
 			icon: "prettypipes:item_terminal"
 			x: -0.5d
-			y: 4.0d
+			y: 6.0d
 			subtitle: "No Power? No Problem"
 			description: [
 				"Pretty Pipes is a powerful early game logistics system that will help keep you organized. "
@@ -1447,7 +1493,7 @@
 		{
 			title: "Pipes"
 			x: -0.5d
-			y: 5.0d
+			y: 7.0d
 			subtitle: "I Feel Pretty, Oh So Pretty"
 			description: [
 				"To get things moving, you'll need some pipes. Craft up a bunch!"
@@ -1485,7 +1531,7 @@
 		{
 			title: "Item Filtering"
 			x: -2.0d
-			y: 5.5d
+			y: 7.5d
 			subtitle: "Gated Community"
 			description: [
 				"Filter Modules are an excellent way to ensure that only certain items end up in a given inventory. Insert them into the pipe section adjacent to the inventory to be filtered on the receiving end. "
@@ -1520,7 +1566,7 @@
 		{
 			title: "Speed Modules"
 			x: -2.0d
-			y: 6.5d
+			y: 8.5d
 			subtitle: "No Time To Wait"
 			description: ["Speed Modules combine with Extraction and Retrieval Modules. They don't effect how fast those Modules work, but rather how quickly the items travel once in the pipe network. "]
 			dependencies: ["0000000000000958"]
@@ -1543,7 +1589,7 @@
 		}
 		{
 			x: -2.0d
-			y: 7.5d
+			y: 9.5d
 			subtitle: "They've Gone To Plaid"
 			description: [
 				"Speed Modules are great in a small network, but in a larger network it can be costly to craft and insert them at every extraction point. "
@@ -1570,7 +1616,7 @@
 		{
 			title: "Item Routing"
 			x: 1.0d
-			y: 5.5d
+			y: 7.5d
 			subtitle: "Coming or Going?"
 			description: [
 				"Retrieval and Extraction modules are required if anything is going to get anywhere."
@@ -1609,7 +1655,7 @@
 		{
 			title: "Priority Modules"
 			x: 1.0d
-			y: 6.5d
+			y: 8.5d
 			subtitle: "Getting Your Priorities Straight"
 			description: [
 				"By default, pipes function in a 'nearest first' fashion. In order to override this and change the priority of a given inventory, place a Priority Module in the pipe adjacent to that inventory."
@@ -1645,7 +1691,7 @@
 		{
 			title: "Advanced Routing"
 			x: 1.0d
-			y: 7.5d
+			y: 9.5d
 			description: [
 				"Want to spread your ores evenly across some furnaces for faster smelting? The Round Robin Sorting Module has you covered. "
 				""
@@ -1679,7 +1725,7 @@
 		}
 		{
 			x: -0.5d
-			y: 6.0d
+			y: 8.0d
 			description: [
 				"The Item Terminal acts as a central access point for the entire pipe network and shows the contents of every inventory on the network, excluding inventories connected via Extraction or Retrieval Modules. "
 				""
@@ -1707,7 +1753,7 @@
 		}
 		{
 			x: -0.5d
-			y: 7.0d
+			y: 9.0d
 			description: [
 				"The Crafting Terminal upgrades the Item Terminal with built in crafting. "
 				""
@@ -1731,7 +1777,7 @@
 		}
 		{
 			x: -0.5d
-			y: 8.0d
+			y: 10.0d
 			description: [
 				"Crafting Modules work alongside the Crafting or Item Terminals to allow for on demand crafting via machines. "
 				""
@@ -1992,8 +2038,11 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -2.5d
+			title: "The Regulator Augment"
+			x: -3.5d
+			y: -4.0d
+			subtitle: "Come with me and walk the longest mile"
+			description: ["Regulator Augments allow any item pushing or pulling module to be aware of the target inventory, and stop moving items if the target inventory's item is above or below a threshold."]
 			dependencies: ["7CA354074FCF8447"]
 			id: "0163571DC8F997F5"
 			tasks: [{
@@ -2001,10 +2050,17 @@
 				type: "item"
 				item: "modularrouters:regulator_augment"
 			}]
+			rewards: [{
+				id: "621F32F72099BE12"
+				type: "command"
+				command: "/say Hi, @p!"
+				player_command: false
+			}]
 		}
 		{
 			x: -3.0d
-			y: -4.5d
+			y: -5.0d
+			description: ["When applied to the vacuum module, enables collection of XP orbs. The absorbed orbs can then be converted to XP bottles, stored in a tank in the router's inventory, or pushed to an adjacent tank. You can pick between PNC or IF liquid XP."]
 			dependencies: ["7CA354074FCF8447"]
 			id: "77458390B359EB6C"
 			tasks: [{
@@ -2012,10 +2068,17 @@
 				type: "item"
 				item: "modularrouters:xp_vacuum_augment"
 			}]
+			rewards: [{
+				id: "04C695D215824999"
+				type: "command"
+				command: "/say Hi, @p!"
+				player_command: false
+			}]
 		}
 		{
-			x: 2.0d
-			y: -2.5d
+			x: 2.5d
+			y: -4.0d
+			description: ["Increases amount of items moved at once. Add larger stacks of upgrades to increase the effect."]
 			dependencies: ["7CD587747CC14268"]
 			id: "3D7E621374741748"
 			tasks: [{
@@ -2023,14 +2086,29 @@
 				type: "item"
 				item: "modularrouters:stack_upgrade"
 			}]
+			rewards: [{
+				id: "1BAB8612F63CCCC9"
+				type: "item"
+				item: "modularrouters:stack_upgrade"
+			}]
 		}
 		{
 			x: 2.0d
-			y: -4.5d
+			y: -5.0d
+			description: [
+				"Makes the router fully blastproof, including against withers."
+				""
+				"Why would you want a witherproof router, or 7 of them for that matter? That's up to you!"
+			]
 			dependencies: ["7CD587747CC14268"]
 			id: "27F2EAA313795208"
 			tasks: [{
 				id: "61DD5DD42B8E1C8E"
+				type: "item"
+				item: "modularrouters:blast_upgrade"
+			}]
+			rewards: [{
+				id: "2DA82C3A16F3ACB1"
 				type: "item"
 				item: "modularrouters:blast_upgrade"
 			}]
@@ -2136,14 +2214,252 @@
 		}
 		{
 			x: -1.5d
-			y: -4.0d
+			y: -6.0d
 			dependencies: ["21B266F6556271EB"]
 			id: "60A72B4FC2AFD9C3"
 			tasks: [{
 				id: "659E378856A13D06"
 				type: "item"
+				title: "Puller Modules"
 				item: {
-					id: "modularrouters:puller_module_1"
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "modularrouters:puller_module_1"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+										Direction: "NONE"
+									}
+								}
+							}
+							{
+								id: "modularrouters:puller_module_2"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.0d
+			dependencies: ["21B266F6556271EB"]
+			id: "029313754BAF820E"
+			tasks: [{
+				id: "5CFF2A9710804BFA"
+				type: "item"
+				title: "Sender Modules"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "modularrouters:sender_module_1"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+										Direction: "NONE"
+									}
+								}
+							}
+							{
+								id: "modularrouters:sender_module_2"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+									}
+								}
+							}
+							{
+								id: "modularrouters:sender_module_3"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "modularrouters:energy_distributor_module"
+				Count: 1b
+				tag: {
+					modularrouters: {
+						ModuleFilter: { }
+						Direction: "NONE"
+					}
+				}
+			}
+			x: -0.5d
+			y: -3.0d
+			description: ["The Energy Distributor module allows the router to send power up to up to 8 nearby blocks wirelessly. It draws RF from the held item, or the router itself if it's upgraded to have RF capacity."]
+			dependencies: ["15E49A6B00BE744C"]
+			id: "2AB330A73BD6447C"
+			tasks: [
+				{
+					id: "79300CFD6BA43948"
+					type: "item"
+					item: {
+						id: "modularrouters:energy_distributor_module"
+						Count: 1b
+						tag: {
+							modularrouters: {
+								ModuleFilter: { }
+								Direction: "NONE"
+							}
+						}
+					}
+				}
+				{
+					id: "36A2B364AA9213B8"
+					type: "item"
+					title: "Any compatible energy storage"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "powah:battery_basic"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "powah:battery_hardened"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "powah:battery_blazing"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "powah:battery_niotic"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "powah:battery_spirited"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "powah:battery_nitro"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "thermal:flux_capacitor"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "mekanism:energy_tablet"
+									Count: 1b
+								}
+								{
+									id: "mekanism:basic_energy_cube"
+									Count: 1b
+								}
+								{
+									id: "powah:energy_cell_basic"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "27AFD476C3E9CE35"
+				type: "command"
+				command: "/say Hi, @p!"
+				player_command: false
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			description: ["Allows the router to store RF, which can be used by certain modules without needing to use the router's item slot for a battery, freeing it up for the router to do other things."]
+			dependencies: ["2AB330A73BD6447C"]
+			id: "5A7512AA919309E5"
+			tasks: [{
+				id: "0CF6F9BAA4502A0E"
+				type: "item"
+				item: "modularrouters:energy_upgrade"
+			}]
+			rewards: [{
+				id: "56004BEDB4624F96"
+				type: "command"
+				command: "/say Hi, @p!"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			description: ["Can be applied to modules that have range, such as puller mk2, sender mk1 and 2, fluid mk2, extruders, and item or power distributors."]
+			dependencies: ["7CA354074FCF8447"]
+			id: "5769B2F6C1C41BF9"
+			tasks: [{
+				id: "4E92C9FC29427BD1"
+				type: "item"
+				item: "modularrouters:range_up_augment"
+			}]
+			rewards: [{
+				id: "16F20BC236C77741"
+				type: "command"
+				command: "/say Hi, @p!"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			subtitle: "Must have been the wind..."
+			description: ["Makes the router look like another block, to hide your automation! To set the block to camouflage as, just right click the upgrade onto the block."]
+			dependencies: ["7CD587747CC14268"]
+			id: "58F3471ACCC0F86A"
+			tasks: [{
+				id: "035E21B5DBD9BD35"
+				type: "item"
+				item: "modularrouters:camouflage_upgrade"
+			}]
+			rewards: [{
+				id: "54186C7FFD7F0FE0"
+				type: "item"
+				item: "mekanism:cardboard_box"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -8.0d
+			dependencies: ["21B266F6556271EB"]
+			id: "3CB129682BA3399A"
+			tasks: [{
+				id: "0F3A18E0B4440919"
+				type: "item"
+				item: {
+					id: "modularrouters:dropper_module"
 					Count: 1b
 					tag: {
 						modularrouters: {
@@ -2155,21 +2471,38 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -4.0d
+			title: "More Filtering"
+			icon: "modularrouters:bulk_item_filter"
+			x: -0.5d
+			y: -10.0d
 			dependencies: ["21B266F6556271EB"]
-			id: "029313754BAF820E"
+			id: "795B13C31D41A45D"
 			tasks: [{
-				id: "5CFF2A9710804BFA"
+				id: "5B47A042CE63665C"
 				type: "item"
+				title: "Any Filter"
 				item: {
-					id: "modularrouters:sender_module_1"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						modularrouters: {
-							ModuleFilter: { }
-							Direction: "NONE"
-						}
+						items: [
+							{
+								id: "modularrouters:bulk_item_filter"
+								Count: 1b
+							}
+							{
+								id: "modularrouters:inspection_filter"
+								Count: 1b
+							}
+							{
+								id: "modularrouters:mod_filter"
+								Count: 1b
+							}
+							{
+								id: "modularrouters:regex_filter"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
