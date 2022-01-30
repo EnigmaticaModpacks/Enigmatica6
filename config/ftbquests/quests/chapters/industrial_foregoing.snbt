@@ -198,10 +198,7 @@
 			x: 3.0d
 			y: -3.5d
 			description: ["Addons can increase the range, speed, or efficiency of most machines. As default operating areas are usually quite small, addons are important!"]
-			dependencies: [
-				"0000000000000054"
-				"0000000000000057"
-			]
+			dependencies: ["0000000000000057"]
 			id: "0000000000000076"
 			tasks: [{
 				id: "35428F7A336EE4A1"
@@ -392,11 +389,7 @@
 			x: -1.5d
 			y: -4.5d
 			description: ["The Infinity Drill is powered by Biofuel and can mine increasingly large areas depending on its RF charge level."]
-			dependencies: [
-				"0000000000000054"
-				"0000000000000050"
-				"0000000000000057"
-			]
+			dependencies: ["0000000000000057"]
 			id: "0000000000000082"
 			tasks: [{
 				id: "0000000000000083"
