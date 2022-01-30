@@ -292,6 +292,93 @@ onEvent('recipes', (event) => {
             ],
             ticks: 60,
             id: `${id_prefix}battle_mastery`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:excavation_mastery', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:fluid_laser_base', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:ore_laser_base', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:laser_drill', count: 16 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:dimensional_mineshaft', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:heavy_engineering', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:light_engineering', count: 9 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:rs_engineering', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:radiator', count: 3 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:sheetmetal_steel', count: 16 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'immersiveengineering:steel_scaffolding_standard', count: 26 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'emendatusenigmatica:steel_block', count: 9 } },
+                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:survey_tools', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:mininggadget', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_fortune_3', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_efficiency_5', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_battery_3', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_silk', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_three_by_three', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_magnet', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_range_3', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'thermal:flux_drill', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'thermal:upgrade_augment_3', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'thermal:area_radius_augment', count: 3 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pedestals:pedestal/stone333', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pedestals:coin/quarry', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pedestals:bookspeed', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pedestals:bookrange', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pedestals:bookarea', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pedestals:bookcapacity', count: 8 } }
+            ],
+            ticks: 60,
+            id: `${id_prefix}excavation_mastery`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:culinary_mastery', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_student_meals', count: 128 } }
+            ],
+            ticks: 60,
+            id: `${id_prefix}culinary_mastery`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:automation_mastery', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:controller', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'extrastorage:iron_crafter', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:pattern_grid', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:pattern', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:cable', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:drone', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:charging_station', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:programming_puzzle', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:programmer', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:deployer', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:mechanical_arm', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:content_observer', count: 16 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:stockpile_switch', count: 16 } },
+                { type: 'masterfulmachinery:items', data: { item: 'modularrouters:item_router', count: 64 } },
+                { type: 'masterfulmachinery:items', data: { item: 'modularrouters:distributor_module', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'modularrouters:vacuum_module', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'modularrouters:detector_module', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'modularrouters:player_module', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:auto_crafting_halo', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:open_crate', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:rannuncarpus', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:spectranthemum', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:field_creator', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:placer', count: 8 } }
+            ],
+            ticks: 60,
+            id: `${id_prefix}automation_mastery`
         }
     ];
 
