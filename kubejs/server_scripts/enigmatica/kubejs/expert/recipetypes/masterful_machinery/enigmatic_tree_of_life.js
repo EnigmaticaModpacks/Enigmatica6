@@ -344,7 +344,7 @@ onEvent('recipes', (event) => {
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:culinary_mastery', count: 1 } }],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_student_meals', count: 128 } }
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_student_meals', count: 1 } }
             ],
             ticks: 60,
             id: `${id_prefix}culinary_mastery`
