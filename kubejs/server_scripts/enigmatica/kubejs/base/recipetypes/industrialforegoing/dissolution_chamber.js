@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
 */
         {
             inputs: ['minecraft:glass_pane'],
-            inputFluid: 'pneumaticcraft:memory_essence',
+            inputFluid: 'sophisticatedbackpacks:xp_still',
             inputFluidAmount: 1000,
             processingTime: 50,
             outputItem: { item: 'minecraft:glass_pane', count: 1 },
@@ -46,6 +46,15 @@ onEvent('recipes', (event) => {
             processingTime: 50,
             outputItem: { item: 'minecraft:glass_pane', count: 1 },
             outputFluid: 'pneumaticcraft:memory_essence',
+            outputFluidAmount: 1000
+        },
+        {
+            inputs: ['minecraft:glass_pane'],
+            inputFluid: 'pneumaticcraft:memory_essence',
+            inputFluidAmount: 1000,
+            processingTime: 50,
+            outputItem: { item: 'minecraft:glass_pane', count: 1 },
+            outputFluid: 'sophisticatedbackpacks:xp_still',
             outputFluidAmount: 1000
         },
         {
