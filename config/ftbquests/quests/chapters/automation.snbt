@@ -81,7 +81,7 @@
 		}
 		{
 			title: "Conveyor Belts"
-			x: 5.5d
+			x: 4.5d
 			y: -1.5d
 			description: [
 				"Immersive Engineering's conveyor belts can move entities in-world, not just items in inventories."
@@ -240,14 +240,22 @@
 			x: -5.5d
 			y: 1.0d
 			shape: "gear"
+			description: ["Mods bring a lot to the table when it comes to using redstone. From cable that can transmit 16 different signals at once, compact one-block timers or latches, or just wireless inter-dimensional connections, there's bound to be a solution to your redstone needs. "]
 			size: 1.5d
 			id: "3468E652B4FE85FA"
 			tasks: [{
 				id: "61B85B234D1E9F5E"
 				type: "checkmark"
 			}]
+			rewards: [{
+				id: "0DFBD5289D4AFCA0"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
+			title: "Switch Links"
+			icon: "rsgauges:switchlink_pearl"
 			x: -5.5d
 			y: -1.5d
 			dependencies: ["3468E652B4FE85FA"]
@@ -256,12 +264,62 @@
 				{
 					id: "647E5AE9043B27C1"
 					type: "item"
-					item: "rsgauges:industrial_switchlink_receiver"
+					title: "Any Switch Link Reciever"
+					icon: "rsgauges:industrial_switchlink_receiver"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "rsgauges:industrial_switchlink_receiver"
+									Count: 1b
+								}
+								{
+									id: "rsgauges:industrial_switchlink_pulse_receiver"
+									Count: 1b
+								}
+								{
+									id: "rsgauges:industrial_switchlink_receiver_analog"
+									Count: 1b
+								}
+								{
+									id: "rsgauges:industrial_switchlink_cased_pulse_receiver"
+									Count: 1b
+								}
+								{
+									id: "rsgauges:industrial_switchlink_cased_receiver"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "2D7685414E434104"
 					type: "item"
-					item: "rsgauges:industrial_switchlink_relay"
+					title: "Any Switch Link Transmitter"
+					icon: "rsgauges:industrial_switchlink_relay"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "rsgauges:industrial_switchlink_relay"
+									Count: 1b
+								}
+								{
+									id: "rsgauges:industrial_switchlink_pulse_relay"
+									Count: 1b
+								}
+								{
+									id: "rsgauges:industrial_switchlink_relay_analog"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 			]
 			rewards: [{
@@ -497,8 +555,8 @@
 					Damage: 0
 				}
 			}
-			x: -8.0d
-			y: 1.0d
+			x: -3.5d
+			y: -1.0d
 			description: [
 				"The Redstone Pen and Quill can \"draw\" redstone dust on any side of a block, with full manual control of connections. Just right click to start drawing! Just having a charged path running over a block won't power the block, but you can choose to do so by right clicking in the center of the redtone path with the pen."
 				""
@@ -612,7 +670,7 @@
 		{
 			title: "RF Tools Logic"
 			icon: "rftoolsutility:logic"
-			x: -3.0d
+			x: -8.0d
 			y: 1.0d
 			description: [
 				"There are many different blocks from RF Tools for redstone logic and control, like timers, customizable 3-input logic gates, inventory sensors, or wireless redstone."
@@ -781,8 +839,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 2.0d
+			x: -3.5d
+			y: 3.0d
 			description: [
 				"Works as a redstone timer: emits a redstone pulse when it turns, and turns automatically when all sand moves from top to bottom. Set the timing by adding sand via right-click, different stack sizes and different types of sand affect the final timing."
 				""
@@ -817,7 +875,7 @@
 		}
 		{
 			x: -9.0d
-			y: 4.5d
+			y: 3.0d
 			subtitle: "...redstone comes out!"
 			description: [
 				"Once you have your linked Variable Card, just place it in the appropriate slot in the Redstone Writer. If the card has blue corners, it's a 'Boolean' type card that outputs either 'true' or 'false'. Orange corners mean an 'Integer' type, which output a number."
@@ -892,8 +950,8 @@
 		{
 			title: "RS Pen Relays"
 			icon: "redstonepen:inverted_relay"
-			x: -9.0d
-			y: 1.0d
+			x: -2.5d
+			y: -1.0d
 			description: [
 				"Simple relays that can be placed on any side of a block. The tooltips explain how each one works."
 				""
@@ -968,7 +1026,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 5.5d
 			y: -1.5d
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "6D8F2F2A24C48898"
@@ -1025,8 +1083,8 @@
 		{
 			title: "Tranporters"
 			icon: "industrialforegoing:item_transporter_type"
-			x: 3.5d
-			y: -1.5d
+			x: 6.5d
+			y: -1.0d
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "65ADBE44B41C4A63"
 			tasks: [{
@@ -1695,7 +1753,7 @@
 			title: "Logic Programmer"
 			icon: "integrateddynamics:portable_logic_programmer"
 			x: -9.0d
-			y: 3.0d
+			y: 4.5d
 			subtitle: "Get Logical"
 			description: [
 				"Once you have a Logic Programmer however, the fun can really start! By setting Variable Cards to be different values, or operators referencing other Variable Cards, such as inputs from various Readers, you can create deep nested logic trees, and use a redstone writer as the final output."
@@ -1789,8 +1847,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: -1.0d
+			x: 3.5d
+			y: -1.5d
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "776E644ED0F02AF1"
 			tasks: [{
@@ -1907,8 +1965,8 @@
 		{
 			title: "Block NBT Extraction"
 			icon: "integrateddynamics:part_block_reader"
-			x: -10.5d
-			y: 3.0d
+			x: -10.0d
+			y: 5.5d
 			subtitle: "Reveal Your Secrets"
 			description: [
 				"The NBT Extractor and Block Reader are a powerful combo. Place the Block Reader against any block that has NBT, for example a Botania Mana Pool, and link a card to the Tile Entity NBT aspect."
