@@ -144,10 +144,10 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: -4.5d
+			x: 5.0d
+			y: -5.0d
 			description: ["The Mob Slaughter Factory kills mobs and animals in its area of effect. Entities slain in this way do not drop anything, but are converted to Liquid Meat and Pink Slime, liquids that can be piped out of the block."]
-			dependencies: ["000000000000004A"]
+			dependencies: ["000000000000004F"]
 			id: "0000000000000053"
 			tasks: [{
 				id: "0000000000000054"
@@ -225,7 +225,7 @@
 			x: 3.0d
 			y: -0.5d
 			shape: "hexagon"
-			description: ["The third and currently final tier of machine frame. Used in a variety of powerful automation machines."]
+			description: ["The third tier of machine frame. Used in a variety of powerful automation machines."]
 			dependencies: [
 				"0000000000000050"
 				"0000000000000051"
@@ -352,7 +352,7 @@
 		}
 		{
 			x: 0.0d
-			y: -5.5d
+			y: -6.0d
 			description: ["The Bioreactor can process up to nine different types of plant-based items at once to make Biofuel; the more slots that are filled, the higher the efficiency. Biofuel can be used to make power with the Biofuel Generator, or to run Infinity tools."]
 			dependencies: ["000000000000004F"]
 			id: "0000000000000080"
@@ -461,7 +461,7 @@
 		}
 		{
 			x: 3.0d
-			y: -5.0d
+			y: -6.0d
 			description: ["IF conveyor belts move entities (not items, unlike IE belts). Several types of conveyor belt upgrades are available; see JEI."]
 			dependencies: [
 				"000000000000004C"
