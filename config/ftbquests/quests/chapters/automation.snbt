@@ -3,7 +3,7 @@
 	group: "0856CF7F5CBEB20A"
 	order_index: 1
 	filename: "automation"
-	title: "Automation (WIP, hidden)"
+	title: "Automation"
 	icon: "minecraft:hopper"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -496,7 +496,7 @@
 			x: 1.0d
 			y: -6.5d
 			description: [
-				"Can send items into or pull items from up to 8 different remote linked inventories."
+				"Can send items into or pull items from up to 8 different remote linked inventories. To set the targets, hold the module and shift-right click on each target block. It should highlight the selected blocks if done correctly."
 				""
 				"Works well with a regulator augment, for example this allows sending only one item into each linked inventory."
 				""
@@ -590,16 +590,16 @@
 			rewards: [{
 				id: "3922A588208AF529"
 				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
 		{
 			x: -2.0d
 			y: -7.5d
-			description: ["Collects items dropped  nearby. Can be augmented to have more range, to collect faster or with a delay, or to collect XP orbs."]
+			description: ["Collects items dropped nearby. Can be augmented to have more range, to collect faster or with a delay, or to collect XP orbs."]
 			dependencies: ["21B266F6556271EB"]
 			id: "322583CAAD093EE4"
 			tasks: [{
@@ -619,16 +619,20 @@
 			rewards: [{
 				id: "3C512C78B12406AA"
 				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
 		{
-			x: -1.0d
-			y: -5.5d
-			description: ["does a fluid (wip)"]
+			x: -2.0d
+			y: -6.5d
+			description: [
+				"Works as both a puller or sender module, but for fluids. Requires a fluid tank placed in the router's item slot to function, then can interact with other tanks, or source blocks in the world. Mk2 adds ranged capability."
+				""
+				"To set the target block for the ranged module, shift-right click the module onto the target, and the block should be highlighted if done correctly."
+			]
 			dependencies: ["21B266F6556271EB"]
 			id: "56234AA9ED3E8324"
 			tasks: [{
@@ -666,6 +670,14 @@
 						]
 					}
 				}
+			}]
+			rewards: [{
+				id: "30E1EC30981D6B46"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -2276,9 +2288,15 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -6.5d
-			description: ["Succ (wip)"]
+			x: -1.0d
+			y: -5.5d
+			description: [
+				"Puller Modules 'pull' items from other inventories into the router's internal item slot."
+				""
+				"The main difference between the Mk1 and Mk2 is the Mk1 only pulls from adjacent inventories, while the Mk2 can pull from up to 12 blocks away, or even further with range upgrades."
+				""
+				"To set the target block for the ranged module, shift-right click the module onto the target, and the block should be highlighted if done correctly."
+			]
 			dependencies: ["21B266F6556271EB"]
 			id: "60A72B4FC2AFD9C3"
 			tasks: [{
@@ -2331,7 +2349,11 @@
 		{
 			x: 0.0d
 			y: -5.5d
-			description: ["Sends stuff real good like (wip)"]
+			description: [
+				"Sender Modules 'send' items from inside the router to other inventories."
+				""
+				"Unlike puller modules, even the Mk1 has ranged capabilities. It will send items in a straight line, in the configured direction, up to 8 blocks away, as long as it isn't blocked by solid blocks. The Mk2 has no alignment or line of sight restriction, and the Mk3 has no restrictions at all, not even being in a different dimension from it's target will stop it."
+			]
 			dependencies: ["21B266F6556271EB"]
 			id: "029313754BAF820E"
 			tasks: [{
@@ -2552,7 +2574,7 @@
 		{
 			x: 1.0d
 			y: -7.5d
-			description: ["Drawbridge or wither builder. (wip)"]
+			description: [""]
 			dependencies: ["21B266F6556271EB"]
 			id: "3CB129682BA3399A"
 			tasks: [{
