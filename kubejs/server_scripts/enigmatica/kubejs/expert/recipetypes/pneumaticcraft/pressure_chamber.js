@@ -302,7 +302,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'mininggadgets:mininggadget', count: 1 },
+                { tag: 'mininggadgets:mininggadgets', count: 1 },
                 { item: 'mininggadgets:upgrade_fortune_3', count: 1 },
                 { item: 'mininggadgets:upgrade_efficiency_5', count: 1 },
                 { item: 'mininggadgets:upgrade_battery_3', count: 1 },
