@@ -30,7 +30,8 @@ const modPriorities = [
     'betterendforge',
     'miniutilities',
     'chipped',
-    'chisel'
+    'chisel',
+    'tconstruct'
 ];
 
 const lootChests = ['lootr:lootr_chest', 'lootr:lootr_barrel', 'lootr:lootr_trapped_chest'];
