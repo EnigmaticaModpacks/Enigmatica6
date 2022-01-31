@@ -4,12 +4,12 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             type: 'pneumaticcraft:thermo_plant',
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'pneumaticcraft:memory_essence', amount: 1000 },
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'sophisticatedbackpacks:xp_still', amount: 1000 },
             fluid_output: { fluid: 'industrialforegoing:essence', amount: 1000 },
             pressure: 1.0,
             speed: 5.0,
             exothermic: false,
-            id: `${id_prefix}pnc_memory_essence_from_if_essence`
+            id: `${id_prefix}if_memory_essence_from_sbp_essence`
         },
         {
             type: 'pneumaticcraft:thermo_plant',
@@ -28,6 +28,15 @@ onEvent('recipes', (event) => {
             speed: 5.0,
             exothermic: false,
             id: `${id_prefix}pnc_essence_from_cofh_experience`
+        },
+        {
+            type: 'pneumaticcraft:thermo_plant',
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'pneumaticcraft:memory_essence', amount: 1000 },
+            fluid_output: { fluid: 'sophisticatedbackpacks:xp_still', amount: 1000 },
+            pressure: 1.0,
+            speed: 5.0,
+            exothermic: false,
+            id: `${id_prefix}sbp_essence_from_pnc_experience`
         },
         {
             type: 'pneumaticcraft:thermo_plant',
