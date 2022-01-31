@@ -225,7 +225,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:fluid_laser_base', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:ore_laser_base', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:laser_drill', count: 16 } },
+                { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:laser_drill', count: 8 } },
                 { type: 'masterfulmachinery:items', data: { item: 'occultism:dimensional_mineshaft', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_excavator', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:survey_tools', count: 1 } },
