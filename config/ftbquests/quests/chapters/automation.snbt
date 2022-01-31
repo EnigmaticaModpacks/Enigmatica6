@@ -473,7 +473,11 @@
 		{
 			x: -0.5d
 			y: -7.0d
-			description: [""]
+			description: [
+				"In order for your router to actually do anything, you'll need at least one module."
+				""
+				"Modules installed in a router execute from left to right, and each module has configurable options. These include a filter, and options for canceling or continuing the execution of subsequent modules depending module activity. This allows for small 'programs' to be made from different combinations of modules, letting you automate some very complicated tasks, especially when you use multiple routers in conjunction!"
+			]
 			dependencies: ["15E49A6B00BE744C"]
 			id: "21B266F6556271EB"
 			tasks: [{
@@ -490,7 +494,14 @@
 		}
 		{
 			x: 1.0d
-			y: -7.0d
+			y: -6.5d
+			description: [
+				"Can send items into or pull items from up to 8 different remote linked inventories."
+				""
+				"Works well with a regulator augment, for example this allows sending only one item into each linked inventory."
+				""
+				"Comes with different distribution modes, including round robin (no need for the round robin augment)."
+			]
 			dependencies: ["21B266F6556271EB"]
 			id: "1956D60143703C16"
 			tasks: [{
@@ -506,10 +517,23 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "239155FDD340ECAF"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
 		}
 		{
-			x: -1.5d
-			y: -8.0d
+			x: -1.0d
+			y: -8.5d
+			description: [
+				"Breaks the block in front of it, also sucking the broken block into the router."
+				""
+				"When crafting the module you can use any vanilla pick, and the resultant module will have the same mining level as the pick used in the recipe. If the pick was enchanted, that is also transferred to the module, though basically only silk touch or fortune will affect the module's behavior. "
+			]
 			dependencies: ["21B266F6556271EB"]
 			id: "108E174F5672BF48"
 			tasks: [{
@@ -526,10 +550,27 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1277D5B23BCA8923"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_pickaxe"
+					Count: 1b
+					tag: {
+						RepairCost: 1
+						Damage: 0
+						Enchantments: [{
+							lvl: 1s
+							id: "minecraft:silk_touch"
+						}]
+					}
+				}
+			}]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: -8.5d
+			description: ["Can right-click or attack with the item in the router, though attacking will use power from the router, requiring the energy upgrade."]
 			dependencies: ["21B266F6556271EB"]
 			id: "27C9B26FB5FF10E1"
 			tasks: [{
@@ -546,10 +587,19 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "3922A588208AF529"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: -2.0d
-			y: -7.0d
+			y: -7.5d
+			description: ["Collects items dropped  nearby. Can be augmented to have more range, to collect faster or with a delay, or to collect XP orbs."]
 			dependencies: ["21B266F6556271EB"]
 			id: "322583CAAD093EE4"
 			tasks: [{
@@ -566,10 +616,19 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "3C512C78B12406AA"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
 		}
 		{
-			x: -0.5d
+			x: -1.0d
 			y: -5.5d
+			description: ["does a fluid (wip)"]
 			dependencies: ["21B266F6556271EB"]
 			id: "56234AA9ED3E8324"
 			tasks: [{
@@ -2053,7 +2112,9 @@
 			rewards: [{
 				id: "621F32F72099BE12"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -2071,7 +2132,9 @@
 			rewards: [{
 				id: "04C695D215824999"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -2213,8 +2276,9 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -6.0d
+			x: -2.0d
+			y: -6.5d
+			description: ["Succ (wip)"]
 			dependencies: ["21B266F6556271EB"]
 			id: "60A72B4FC2AFD9C3"
 			tasks: [{
@@ -2249,10 +2313,25 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "2D7425203F0BBD59"
+				type: "item"
+				item: {
+					id: "modularrouters:puller_module_1"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
+			}]
 		}
 		{
-			x: 0.5d
-			y: -6.0d
+			x: 0.0d
+			y: -5.5d
+			description: ["Sends stuff real good like (wip)"]
 			dependencies: ["21B266F6556271EB"]
 			id: "029313754BAF820E"
 			tasks: [{
@@ -2293,6 +2372,20 @@
 								}
 							}
 						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B9A3A2F4383F914"
+				type: "item"
+				item: {
+					id: "modularrouters:sender_module_1"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
 					}
 				}
 			}]
@@ -2392,7 +2485,9 @@
 			rewards: [{
 				id: "27AFD476C3E9CE35"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -2410,7 +2505,9 @@
 			rewards: [{
 				id: "56004BEDB4624F96"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -2428,7 +2525,9 @@
 			rewards: [{
 				id: "16F20BC236C77741"
 				type: "command"
-				command: "/say Hi, @p!"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -2451,23 +2550,51 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -8.0d
+			x: 1.0d
+			y: -7.5d
+			description: ["Drawbridge or wither builder. (wip)"]
 			dependencies: ["21B266F6556271EB"]
 			id: "3CB129682BA3399A"
 			tasks: [{
 				id: "0F3A18E0B4440919"
 				type: "item"
+				title: "Extruder Module"
 				item: {
-					id: "modularrouters:dropper_module"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						modularrouters: {
-							ModuleFilter: { }
-							Direction: "NONE"
-						}
+						items: [
+							{
+								id: "modularrouters:extruder_module_1"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+										Direction: "NONE"
+									}
+								}
+							}
+							{
+								id: "modularrouters:extruder_module_2"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+										Direction: "NONE"
+									}
+								}
+							}
+						]
 					}
 				}
+			}]
+			rewards: [{
+				id: "67EA54AB859657A6"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -2475,6 +2602,7 @@
 			icon: "modularrouters:bulk_item_filter"
 			x: -0.5d
 			y: -10.0d
+			description: ["If you run out of room in a module's filter, or want filtering more complex than just item matching, you can use one of these. Just configure it, then place in one of the filter slots of the module."]
 			dependencies: ["21B266F6556271EB"]
 			id: "795B13C31D41A45D"
 			tasks: [{
@@ -2505,6 +2633,11 @@
 						]
 					}
 				}
+			}]
+			rewards: [{
+				id: "2E3F82B6A759073B"
+				type: "item"
+				item: "modularrouters:bulk_item_filter"
 			}]
 		}
 	]
