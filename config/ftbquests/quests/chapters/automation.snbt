@@ -36,14 +36,16 @@
 			x: 6.5d
 			y: -1.0d
 			description: [
-				"Mekanism's transporters can be configured to pull, push, or not connect to each adjacent inventory."
-				"Pipes, Cables, and Pressurized Tubes also handle fluids, RF, and gases, respectively."
+				"Mekanism's Logistical Transporters can be configured to pull, push, or not connect to each adjacent inventory. Shift-right click on the connecting section of pipe with the Configurator to cycle the connection type."
+				""
+				"Mechanical Pipes, Universal Cables, and Pressurized Tubes also handle fluids, RF, and gases, respectively."
 			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "3FF1B8E5563D4ECF"
 			tasks: [{
 				id: "523B5EFA6AB455D2"
 				type: "item"
+				title: "Any Logistical Transporter"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -79,27 +81,63 @@
 			}]
 		}
 		{
-			title: "Conveyor Belts"
+			title: "IE Conveyor Belts"
+			icon: "immersiveengineering:conveyor_basic"
 			x: 4.5d
 			y: -1.5d
 			description: [
-				"Immersive Engineering's conveyor belts can move entities in-world, not just items in inventories."
-				"They'll also automatically extract items from and send items into inventories they touch."
+				"Immersive Engineering's conveyor belts move items as entities in-world. Use the extracting version to pull items out of inventories, they automatically insert items into inventories they're pointed at."
+				""
+				"Can be dyed in-world to change the color of the guard rails. Is also a steel scaffolding covered variant."
 			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "4DD97175C1818801"
-			tasks: [{
-				id: "366C08F8F32D7E4A"
+			tasks: [
+				{
+					id: "366C08F8F32D7E4A"
+					type: "item"
+					title: "Any Conveyor Belt"
+					icon: "immersiveengineering:conveyor_basic"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "immersiveengineering:conveyor_basic"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:conveyor_redstone"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:conveyor_dropper"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:conveyor_vertical"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:conveyor_splitter"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "1657A85990D2F7FC"
+					type: "item"
+					item: "immersiveengineering:conveyor_extract"
+				}
+			]
+			rewards: [{
+				id: "6FE59A0E58F2E620"
 				type: "item"
 				item: "immersiveengineering:conveyor_basic"
-			}]
-			rewards: [{
-				id: "0000000000000A5A"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				count: 6
 			}]
 		}
 		{
@@ -296,7 +334,11 @@
 			title: "Corporea"
 			x: 8.0d
 			y: 0.5d
-			description: ["Botania's Corporea network can wirelessly access the contents of inventories by placing a Corporea Spark on them. See the Botania chapter for more details."]
+			description: [
+				"Botania's Corporea network can wirelessly access the contents of inventories by placing a Corporea Spark on them."
+				""
+				"See the Botania chapter for more details."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "7C44D1DEA350DB7E"
 			tasks: [{
@@ -709,43 +751,62 @@
 			}]
 		}
 		{
-			title: "PNC Logistics netowrks"
+			title: "PNC Logistics networks"
 			x: 7.5d
 			y: 4.0d
+			description: [
+				"With PNC Logistics Frames, along with Logistics Modules, you can set up air powered item sorting systems. You can even replace the tube modules with Logistics Drones to move the items around if you don't want to run tubes everywhere!"
+				""
+				"See the Pneumaticcraft Chapter for more details."
+			]
 			dependencies: ["0EF9750F679732E6"]
 			id: "5D9993B074F13846"
-			tasks: [{
-				id: "4ABEFC9942D16386"
-				type: "item"
-				title: "Any logistics network frame"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "pneumaticcraft:logistics_frame_requester"
-								Count: 1b
-							}
-							{
-								id: "pneumaticcraft:logistics_frame_storage"
-								Count: 1b
-							}
-							{
-								id: "pneumaticcraft:logistics_frame_default_storage"
-								Count: 1b
-							}
-							{
-								id: "pneumaticcraft:logistics_frame_passive_provider"
-								Count: 1b
-							}
-							{
-								id: "pneumaticcraft:logistics_frame_active_provider"
-								Count: 1b
-							}
-						]
+			tasks: [
+				{
+					id: "4ABEFC9942D16386"
+					type: "item"
+					title: "Any logistics network frame"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "pneumaticcraft:logistics_frame_requester"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:logistics_frame_storage"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:logistics_frame_default_storage"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:logistics_frame_passive_provider"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:logistics_frame_active_provider"
+									Count: 1b
+								}
+							]
+						}
 					}
 				}
+				{
+					id: "7B13649BFE29381F"
+					type: "item"
+					item: "pneumaticcraft:logistics_module"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "3A1FCBBA4730B4F4"
+				type: "item"
+				item: "pneumaticcraft:pressure_tube"
+				count: 4
 			}]
 		}
 		{
@@ -1314,14 +1375,72 @@
 			}]
 		}
 		{
+			title: "IF Conveyor Belts"
+			icon: "industrialforegoing:conveyor"
 			x: 5.5d
 			y: -1.5d
+			description: [
+				"Conveyors from Industrial Foregoing can transport items, entities, or even fluids. To extract or insert, apply the relevant upgrades. There are a few different upgrades for other functionality, including short-range teleportation."
+				""
+				"Can be dyed in-world to change the color of the belt."
+				""
+				"Check the IF Manual for descriptions of the upgrades."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "6D8F2F2A24C48898"
-			tasks: [{
-				id: "5C650F2B0511D4B9"
+			tasks: [
+				{
+					id: "5C650F2B0511D4B9"
+					type: "item"
+					item: "industrialforegoing:conveyor"
+				}
+				{
+					id: "64840DBB127F1522"
+					type: "item"
+					title: "Any Conveyor Upgrade"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:conveyor_detection_upgrade"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:conveyor_insertion_upgrade"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:conveyor_extraction_upgrade"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:conveyor_bouncing_upgrade"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:conveyor_dropping_upgrade"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:conveyor_blinking_upgrade"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:conveyor_splitting_upgrade"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4F77C91667650D88"
 				type: "item"
 				item: "industrialforegoing:conveyor"
+				count: 6
 			}]
 		}
 		{
@@ -1361,33 +1480,17 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 4.0d
-			dependencies: ["5D9993B074F13846"]
-			id: "220A44895955F05C"
-			tasks: [{
-				id: "6C4DBB089E25038C"
-				type: "item"
-				item: "pneumaticcraft:logistics_drone"
-			}]
-		}
-		{
-			x: 7.5d
-			y: 5.5d
-			dependencies: ["5D9993B074F13846"]
-			id: "0303BC77E551B918"
-			tasks: [{
-				id: "4ED812C28C222E5C"
-				type: "item"
-				item: "pneumaticcraft:logistics_module"
-			}]
-		}
-		{
 			title: "Tranporters"
 			icon: "industrialforegoing:item_transporter_type"
 			x: 3.5d
 			y: -1.5d
-			subtitle: "Tastes like Chicken..."
+			description: [
+				"Industrial Foregoing Transporters are small one-block modules for moving items or fluids between inventories. They have a built-in filter and regulator mode, so they can keep a certain amount of items in a target inventory."
+				""
+				"To set them up, you place between 2 and 6 against inventories (or tanks for the fluid transporters), all within the same block space. Then right click it's middle 'button' to set a Transporter to pull mode, and it will pull from any other non-pulling transporters in the block space. Right click the outside ring to access the filter and regulator mode. When using regulate mode, mouse over the item in the filter and scroll to change the set amount."
+				""
+				"The World Transporter will collect or drop items in the world."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "65ADBE44B41C4A63"
 			tasks: [{
@@ -1413,6 +1516,11 @@
 						]
 					}
 				}
+			}]
+			rewards: [{
+				id: "1EB099955410CAF5"
+				type: "item"
+				item: "industrialforegoing:world_transporter_type"
 			}]
 		}
 		{
@@ -2178,8 +2286,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: -2.0d
+			x: 6.5d
+			y: -2.5d
 			description: [
 				"The Restrictive Transporter causes any destination after it in the pipe path to be lower priority than those that don't cross it."
 				""
@@ -2488,17 +2596,6 @@
 				icon: "pneumaticcraft:tag_filter"
 				command: "/tellraw @p {\"text\":\"CC Tutorial Link\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtube.com/playlist?list=PLaiPn4ewcbkHYflo2jl0OuNaHK6Mj-koG\"}}"
 				player_command: false
-			}]
-		}
-		{
-			x: 9.0d
-			y: 5.5d
-			dependencies: ["0EF9750F679732E6"]
-			id: "1FAAB2243CA49CA9"
-			tasks: [{
-				id: "15AC1FED7DA293EF"
-				type: "item"
-				item: "pneumaticcraft:programmer"
 			}]
 		}
 		{
@@ -2883,47 +2980,21 @@
 			}]
 		}
 		{
-			title: "Filtered Ducts"
-			icon: "tconstruct:seared_duct"
-			x: 4.5d
-			y: 7.0d
-			subtitle: "Quack?"
-			description: ["Adding a seared or scorched duct to your smeltery or foundry lets you extract specific fluids by applying a bucket or copper can of fluid to the duct as a filter. Right click the duct to access it's UI to insert the filtering item."]
-			dependencies: ["40474087F229A612"]
-			id: "7F9D6CA4D855230C"
-			tasks: [
-				{
-					id: "5A9FAF8450056BF5"
-					type: "item"
-					title: "Seared or Scorched Duct"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "tconstruct:seared_duct"
-									Count: 1b
-								}
-								{
-									id: "tconstruct:scorched_duct"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "7A26A5B5058F40AE"
-					type: "item"
-					item: "tconstruct:copper_can"
-				}
-			]
-			rewards: [{
-				id: "5DBE012B3B4A9AE9"
+			x: 8.0d
+			y: -1.0d
+			subtitle: "kerchunk kerchunk kerchunk"
+			description: ["Logistical Sorters extract items from an inventory into Logistical Transporter pipes, while 'coloring' the extracted items according to custom filters you set up. Colored items will only pass though pipes that have no color, or pipes set to the same color as themselves. Using this you can create a sorting system."]
+			dependencies: ["3FF1B8E5563D4ECF"]
+			id: "0460B6B82842ADA8"
+			tasks: [{
+				id: "5BBC6277D3E82E07"
 				type: "item"
-				item: "tconstruct:copper_can"
-				count: 8
+				item: "mekanism:logistical_sorter"
+			}]
+			rewards: [{
+				id: "1FBF8F3349ACA9D8"
+				type: "item"
+				item: "trashcans:item_trash_can"
 			}]
 		}
 	]
