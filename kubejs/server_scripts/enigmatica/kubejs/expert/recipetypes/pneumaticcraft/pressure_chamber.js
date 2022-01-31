@@ -404,6 +404,32 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:diy_meka_tool', count: 1 }],
             id: `${id_prefix}diy_meka_tool`
+        },
+        {
+            inputs: [
+                { item: 'minecraft:skeleton_skull', count: 4 },
+                { item: 'minecraft:wither_skeleton_skull', count: 4 },
+                { item: 'eidolon:candlestick', count: 8 },
+                { item: 'occultism:spirit_attuned_crystal', count: 8 },
+                { item: 'occultism:golden_sacrificial_bowl', count: 1 },
+                { item: 'occultism:sacrificial_bowl', count: 12 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:beginners_guide_to_the_occult', count: 1 }],
+            id: `${id_prefix}beginners_guide_to_the_occult`
+        },
+        {
+            inputs: [
+                { item: 'occultism:chalk_white', count: 1 },
+                { item: 'occultism:chalk_gold', count: 1 },
+                { item: 'occultism:chalk_purple', count: 1 },
+                { item: 'occultism:chalk_red', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:artisinal_chalk_set', count: 1 }],
+            id: `${id_prefix}artisinal_chalk_set`
         }
     ];
 

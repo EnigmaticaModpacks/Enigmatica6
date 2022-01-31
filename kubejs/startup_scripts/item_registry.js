@@ -143,6 +143,8 @@ onEvent('item.registry', (event) => {
         { name: 'diy_mekasuit_pants', texture: 'packing_crate_red' },
         { name: 'diy_mekasuit_boots', texture: 'packing_crate_red' },
         { name: 'diy_meka_tool', texture: 'packing_crate_red' },
+        { name: 'artisinal_ritual_kit', texture: 'advanced_packing_crate_purple' },
+        { name: 'artisinal_chalk_set', texture: 'advanced_packing_crate_green' },
 
         { name: 'engineers_school_project', texture: 'packing_crate_gray' },
         { name: 'partial_engineers_school_project', texture: 'packing_crate_gray' },
