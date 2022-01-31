@@ -416,8 +416,8 @@ onEvent('recipes', (event) => {
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
             pressure: 4.5,
-            results: [{ item: 'kubejs:beginners_guide_to_the_occult', count: 1 }],
-            id: `${id_prefix}beginners_guide_to_the_occult`
+            results: [{ item: 'kubejs:artisinal_ritual_kit', count: 1 }],
+            id: `${id_prefix}artisinal_ritual_kit`
         },
         {
             inputs: [
