@@ -33,8 +33,8 @@
 		}
 		{
 			title: "Logistical Transporters"
-			x: 2.5d
-			y: 3.0d
+			x: 6.5d
+			y: -1.0d
 			description: [
 				"Mekanism's transporters can be configured to pull, push, or not connect to each adjacent inventory."
 				"Pipes, Cables, and Pressurized Tubes also handle fluids, RF, and gases, respectively."
@@ -109,6 +109,8 @@
 			description: [
 				"Create machines will pause items on its conveyor belts to process them, making them perfect for automating processing and assembly."
 				"If you need more than just linear movement, try out the Weighted Ejector or the Mechanical Arm."
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
 			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "2441588EA9FC9FDB"
@@ -271,8 +273,8 @@
 		}
 		{
 			title: "Carbuncle"
-			x: 9.0d
-			y: 2.0d
+			x: 8.0d
+			y: 1.5d
 			description: ["Magic mods can have their item transportation fun too! Carbuncles will helpfully collect items and store them into inventories for you."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "2831B38150565AEF"
@@ -292,8 +294,8 @@
 		}
 		{
 			title: "Corporea"
-			x: 9.0d
-			y: 1.0d
+			x: 8.0d
+			y: 0.5d
 			description: ["Botania's Corporea network can wirelessly access the contents of inventories by placing a Corporea Spark on them. See the Botania chapter for more details."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "7C44D1DEA350DB7E"
@@ -681,8 +683,15 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 3.5d
 			y: 5.5d
+			description: [
+				"The Mechanical Arm can move items between multiple input and outputs. Can't access most inventories directly, generally only depots, belts, or funnels."
+				""
+				"To set it up, hold the mechanical arm and right-click on the desired inputs and outputs (just right click the block again to swap between the two), it will remember them once you place it down."
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "6FD366DECA24BCE2"
 			tasks: [{
@@ -690,8 +699,17 @@
 				type: "item"
 				item: "create:mechanical_arm"
 			}]
+			rewards: [{
+				id: "56CA8A9B268DAD53"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
 		}
 		{
+			title: "PNC Logistics netowrks"
 			x: 7.5d
 			y: 4.0d
 			dependencies: ["0EF9750F679732E6"]
@@ -699,7 +717,35 @@
 			tasks: [{
 				id: "4ABEFC9942D16386"
 				type: "item"
-				item: "pneumaticcraft:logistics_frame_requester"
+				title: "Any logistics network frame"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "pneumaticcraft:logistics_frame_requester"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:logistics_frame_storage"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:logistics_frame_default_storage"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:logistics_frame_passive_provider"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:logistics_frame_active_provider"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		}
 		{
@@ -1075,36 +1121,60 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 0.0d
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "75BDA7686541C47C"
-			tasks: [{
-				id: "64C72A375D64DA2A"
-				type: "item"
-				item: "bloodmagic:itemroutingnode"
-			}]
-		}
-		{
+			icon: "enderstorage:ender_chest"
 			x: 7.0d
 			y: 1.0d
+			description: [
+				"Unlike vanilla ender chests, the Ender Storage version actually has a real inventory, so can be interacted with using pipes or other item transport methods. Using this, you have easy free inter-dimensional transport for items!"
+				""
+				"Ender Chests will share their inventories with other chests using the same color coded channel. The default color code when you craft the tank will be the color of wool you used in the recipe, but you can customize the code by right-clicking dye onto the three color swatches on the top."
+				""
+				"You can also craft a hand-held version, the Ender Pouch. Shift-right click an ender pouch on an ender chest, and it will match that chest's color channel. You can then access that chest from anywhere by right clicking with the pouch. Link the pouch to an ender chest that has a refined storage importer on it to have a quick way to put items away from anywhere!"
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "4345FED5C76788A6"
-			tasks: [{
-				id: "5408C3E44BBB429D"
-				type: "item"
-				item: "enderstorage:ender_chest"
-			}]
+			tasks: [
+				{
+					id: "5408C3E44BBB429D"
+					type: "item"
+					item: "enderstorage:ender_chest"
+				}
+				{
+					id: "424E229DB25249A8"
+					type: "item"
+					item: "enderstorage:ender_pouch"
+				}
+			]
+			rewards: [
+				{
+					id: "40445565E00E3023"
+					type: "item"
+					item: "resourcefulbees:rgbee_honeycomb"
+					count: 4
+				}
+				{
+					id: "2AD840AF4AC90407"
+					type: "item"
+					item: "resourcefulbees:wax"
+					count: 4
+				}
+			]
 		}
 		{
 			x: 7.0d
 			y: 0.0d
+			description: ["Shares inventories between Ender Crates that have the same name. Set the names in an anvil while combining with an eye of ender. Consumes a small amount of aura for each inventory interaction."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "46589062E091762E"
 			tasks: [{
 				id: "261512B6634D57B4"
 				type: "item"
 				item: "naturesaura:ender_crate"
+			}]
+			rewards: [{
+				id: "0B54FF42FF336AE0"
+				type: "item"
+				item: "minecraft:ender_eye"
 			}]
 		}
 		{
@@ -1180,6 +1250,7 @@
 		{
 			x: 4.5d
 			y: 4.5d
+			description: ["Attribute filters allow for combinations of white and blacklists, inverses, tags, and some extra bonus attributes too, and can be applied to many create blocks."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "39A5BD63D3070AFE"
 			tasks: [{
@@ -1191,16 +1262,55 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "39E65FC08DF8415D"
+				type: "item"
+				item: {
+					id: "create:attribute_filter"
+					Count: 1b
+					tag: { }
+				}
+			}]
 		}
 		{
-			x: 3.5d
+			title: "Chutes"
+			icon: "create:smart_chute"
+			x: 5.5d
 			y: 5.5d
+			description: [
+				"Chutes are a simple tool for moving items downwards. You can place a 2nd chute against the side of another to merge the 2nd chute into the 1st. And using encased fans, you can blow items upwards through chutes."
+				""
+				"The brass Smart chute moves a larger stack size at once, and can be filtered."
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "5971196375D3CDF4"
 			tasks: [{
 				id: "0FCD37CE46EADCA8"
 				type: "item"
-				item: "create:smart_chute"
+				title: "Any Chute"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:chute"
+								Count: 1b
+							}
+							{
+								id: "create:smart_chute"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "535E72E3B501F2AA"
+				type: "item"
+				item: "create:chute"
 			}]
 		}
 		{
@@ -1275,8 +1385,9 @@
 		{
 			title: "Tranporters"
 			icon: "industrialforegoing:item_transporter_type"
-			x: 6.5d
-			y: -1.0d
+			x: 3.5d
+			y: -1.5d
+			subtitle: "Tastes like Chicken..."
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "65ADBE44B41C4A63"
 			tasks: [{
@@ -1306,7 +1417,8 @@
 		}
 		{
 			x: 2.0d
-			y: 0.0d
+			y: 1.0d
+			description: ["A hopper with many adjustable settings, including collection range and stack size."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "70B28063B4F531E0"
 			tasks: [{
@@ -1314,16 +1426,27 @@
 				type: "item"
 				item: "engineersdecor:factory_hopper"
 			}]
+			rewards: [{
+				id: "00368EF72093C005"
+				type: "item"
+				item: "engineersdecor:factory_hopper"
+			}]
 		}
 		{
 			x: 2.0d
 			y: 2.0d
+			description: ["Collects items dropped in the world in a 9x9 area centered on itself, with an optional filter."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "14502C1A1BCB79E2"
 			tasks: [{
 				id: "7EA023686AFA0889"
 				type: "item"
 				item: "thermal:device_collector"
+			}]
+			rewards: [{
+				id: "62D934EA94DB12BB"
+				type: "item"
+				item: "thermal:item_filter_augment"
 			}]
 		}
 		{
@@ -1433,8 +1556,9 @@
 			]
 		}
 		{
-			x: 2.5d
-			y: -1.0d
+			x: 2.0d
+			y: 0.0d
+			description: ["A round-robin dropper with many settings, including dropped stack size, and exit velocity."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "65EAD75949FFD642"
 			tasks: [{
@@ -1476,14 +1600,41 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 1.0d
+			title: "Backpack based automation"
+			icon: "sophisticatedbackpacks:iron_backpack"
+			x: 2.5d
+			y: 3.0d
+			subtitle: "No, this quest isn't in the wrong chapter!"
+			description: [
+				"Backpacks can be used for much more than portable personal storage! When placed in the world (with shift-right click), many of the different backpack upgrades will still work, and you can connect to them with pipes as with any other inventory block."
+				""
+				"Some examples of useful upgrades for placed backpacks:"
+				"Filter upgrades control what items can be inserted or pulled form the backpack."
+				"Magnet upgrades will pick up nearby items."
+				"Compacting upgrades will auto-craft compacting recipes, like nuggets to ingots."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "506D4EF3FFC8B11B"
 			tasks: [{
 				id: "47C00029C050A20C"
 				type: "item"
-				item: "sophisticatedbackpacks:backpack"
+				title: "Filter Upgrade"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "sophisticatedbackpacks:filter_upgrade"
+								Count: 1b
+							}
+							{
+								id: "sophisticatedbackpacks:advanced_filter_upgrade"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "092B56B47CD50A73"
@@ -1497,6 +1648,11 @@
 		{
 			x: 3.5d
 			y: 3.5d
+			description: [
+				"Encased Fans can blow any entities around, including items. Input shaft speed controls the fan's range, and rotation direction controls whether the fan blows or sucks."
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "0E5467F884E6B23A"
 			tasks: [{
@@ -1886,18 +2042,48 @@
 			}]
 		}
 		{
+			icon: {
+				id: "entangled:block"
+				Count: 1b
+				tag: { }
+			}
 			x: 7.0d
 			y: 2.0d
+			subtitle: "A Phantom's Face?"
+			description: [
+				"The Entangled Block, when bound to another block using the binding tool, offers remote access to the target block. Pipes attached to the entangled block will instead interact with the target block, from up to 1000 blocks away."
+				""
+				"To bind, shift-right click on the target with the binder (it should show the target block in it's item tooltip), then right click the binder on the entangled block."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "3E093BB431EE7A98"
-			tasks: [{
-				id: "3E4D5BD7F14FB003"
-				type: "item"
-				item: {
-					id: "entangled:block"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "3E4D5BD7F14FB003"
+					type: "item"
+					item: {
+						id: "entangled:block"
+						Count: 1b
+						tag: { }
+					}
 				}
+				{
+					id: "691DB7953EE82E15"
+					type: "item"
+					item: {
+						id: "entangled:item"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "1CAE1F841E978999"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1992,8 +2178,13 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 4.0d
+			x: 7.5d
+			y: -2.0d
+			description: [
+				"The Restrictive Transporter causes any destination after it in the pipe path to be lower priority than those that don't cross it."
+				""
+				"The Diversion Transporter allows individual sides to be controlled by redstone independently of each-other, unlike a regular transporter pipe which is only all-on or all-off."
+			]
 			dependencies: ["3FF1B8E5563D4ECF"]
 			id: "71431A0FE1CF8670"
 			tasks: [
@@ -2018,14 +2209,36 @@
 			}]
 		}
 		{
+			icon: "create:brass_funnel"
 			x: 5.5d
 			y: 3.5d
+			description: [
+				"The basic item extracter and inserter for create. When placed on an inventory, right click with the wrench to swap between input and output mode. The Brass version allows for more than one item to be moved at once, and filtering."
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
+			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "3B3CBB15D2401A28"
 			tasks: [{
 				id: "0385817687124825"
 				type: "item"
-				item: "create:andesite_funnel"
+				title: "Funnels"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:andesite_funnel"
+								Count: 1b
+							}
+							{
+								id: "create:brass_funnel"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0192F87D3477C49F"
@@ -2037,8 +2250,9 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -1.5d
+			x: 2.5d
+			y: -1.0d
+			description: ["Simply dropps any item inserted into it straight down."]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "776E644ED0F02AF1"
 			tasks: [{
@@ -2574,7 +2788,13 @@
 		{
 			x: 1.0d
 			y: -7.5d
-			description: [""]
+			description: [
+				"The Extruder module Mk1 will, on high redstone signal, place a line of blocks in front of itself from the router's inventory, and retract them again when the redstone signal is disabled. The stats of the breaker module used to craft the extruder will be inherited."
+				""
+				"The Mk2 variant works a little differently; it will follow a pattern of blocks set in the module's configuration screen, and when extruding, it places fake versions of the blocks which drop nothing when broken. So this can be used to make fancier pattered doors, and doesn't need to worry about harvest levels or item management."
+				""
+				"When using multiple extruders together, the Sync Upgrade can help control the exact timing, so all routers can extend or retract in time with each other."
+			]
 			dependencies: ["21B266F6556271EB"]
 			id: "3CB129682BA3399A"
 			tasks: [{
@@ -2660,6 +2880,50 @@
 				id: "2E3F82B6A759073B"
 				type: "item"
 				item: "modularrouters:bulk_item_filter"
+			}]
+		}
+		{
+			title: "Filtered Ducts"
+			icon: "tconstruct:seared_duct"
+			x: 4.5d
+			y: 7.0d
+			subtitle: "Quack?"
+			description: ["Adding a seared or scorched duct to your smeltery or foundry lets you extract specific fluids by applying a bucket or copper can of fluid to the duct as a filter. Right click the duct to access it's UI to insert the filtering item."]
+			dependencies: ["40474087F229A612"]
+			id: "7F9D6CA4D855230C"
+			tasks: [
+				{
+					id: "5A9FAF8450056BF5"
+					type: "item"
+					title: "Seared or Scorched Duct"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:seared_duct"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:scorched_duct"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7A26A5B5058F40AE"
+					type: "item"
+					item: "tconstruct:copper_can"
+				}
+			]
+			rewards: [{
+				id: "5DBE012B3B4A9AE9"
+				type: "item"
+				item: "tconstruct:copper_can"
+				count: 8
 			}]
 		}
 	]
