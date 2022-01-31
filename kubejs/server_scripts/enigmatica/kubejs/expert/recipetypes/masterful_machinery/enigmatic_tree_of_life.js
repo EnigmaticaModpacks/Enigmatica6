@@ -130,40 +130,11 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'create:large_cogwheel', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'create:shaft', count: 64 } },
                 { type: 'masterfulmachinery:items', data: { item: 'create:encased_chain_drive', count: 32 } },
-                { type: 'masterfulmachinery:items', data: { item: 'emendatusenigmatica:steel_block', count: 8 } },
-                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:fluid_pipe', count: 21 } },
-                { type: 'masterfulmachinery:items', data: { item: 'minecraft:cauldron', count: 1 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:heavy_engineering', count: 11 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:light_engineering', count: 12 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:rs_engineering', count: 3 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:blastbrick_reinforced', count: 27 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:steel_scaffolding_standard', count: 41 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:slab_steel_scaffolding_standard', count: 30 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:sheetmetal_steel', count: 12 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:slab_sheetmetal_steel', count: 20 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:sheetmetal_iron', count: 60 } },
-                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:treated_fence', count: 6 } },
+
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_arc_furnace', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pumpjack', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_distillation_tower', count: 1 } },
+
                 { type: 'masterfulmachinery:fluids', data: { fluid: 'pneumaticcraft:lubricant', amount: 64000 } },
                 { type: 'masterfulmachinery:botania_mana', perTick: true, data: { amount: 500 } }
             ],
@@ -245,56 +216,11 @@ onEvent('recipes', (event) => {
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:battle_mastery', count: 5 } }],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:mekasuit_helmet', count: 1 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanism:module_vision_enhancement_unit', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanism:module_inhalation_purification_unit', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanism:module_nutritional_injection_unit', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanism:module_electrolytic_breathing_unit', count: 4 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:mekasuit_bodyarmor', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_geiger_unit', count: 1 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanism:module_gravitational_modulating_unit', count: 1 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_dosimeter_unit', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:mekasuit_pants', count: 1 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanismgenerators:module_geothermal_generator_unit', count: 8 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:mekasuit_boots', count: 1 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanism:module_hydraulic_propulsion_unit', count: 4 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:meka_tool', count: 1 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanism:module_attack_amplification_unit', count: 4 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_vein_mining_unit', count: 4 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanism:module_excavation_escalation_unit', count: 4 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_teleportation_unit', count: 1 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanism:module_laser_dissipation_unit', count: 4 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:module_energy_unit', count: 40 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_mekasuit_helmet', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_mekasuit_bodyarmor', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_mekasuit_pants', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_mekasuit_boots', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_meka_tool', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:teleporter', count: 5 } },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:portable_teleporter', count: 1 } },
                 { type: 'masterfulmachinery:botania_mana', perTick: true, data: { amount: 500 } }
@@ -309,43 +235,11 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:ore_laser_base', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:laser_drill', count: 16 } },
                 { type: 'masterfulmachinery:items', data: { item: 'occultism:dimensional_mineshaft', count: 1 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:heavy_engineering', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:light_engineering', count: 9 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:rs_engineering', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:radiator', count: 3 } },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:sheetmetal_steel', count: 16 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'immersiveengineering:steel_scaffolding_standard', count: 26 }
-                },
-                { type: 'masterfulmachinery:items', data: { item: 'emendatusenigmatica:steel_block', count: 9 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_excavator', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:survey_tools', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:mininggadget', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_fortune_3', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_efficiency_5', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_battery_3', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_silk', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_three_by_three', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_magnet', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mininggadgets:upgrade_range_3', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'thermal:flux_drill', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'thermal:upgrade_augment_3', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'thermal:area_radius_augment', count: 3 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pedestals:pedestal/stone333', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pedestals:coin/quarry', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pedestals:bookspeed', count: 8 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pedestals:bookrange', count: 8 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pedestals:bookarea', count: 8 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pedestals:bookcapacity', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:mining_gadget_kit', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:flux_bore_kit', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pedestal_quarry', count: 4 } },
                 { type: 'masterfulmachinery:botania_mana', perTick: true, data: { amount: 500 } }
             ],
             ticks: 60,

@@ -77,6 +77,10 @@ onEvent('item.tooltip', (event) => {
                 Text.of(`- Lightning Rod`).aqua(),
                 Text.of(`- Sulfur Recovery Unit`).aqua()
             ]
+        },
+        {
+            items: [/kubejs:diy/],
+            text: [Text.of(`Some Assembly Required.`).green(), Text.of(`Batteries Not Included.`).darkRed()]
         }
     ];
 
