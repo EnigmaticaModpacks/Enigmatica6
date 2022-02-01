@@ -144,10 +144,10 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: -4.5d
+			x: 5.0d
+			y: -5.0d
 			description: ["The Mob Slaughter Factory kills mobs and animals in its area of effect. Entities slain in this way do not drop anything, but are converted to Liquid Meat and Pink Slime, liquids that can be piped out of the block."]
-			dependencies: ["000000000000004A"]
+			dependencies: ["000000000000004F"]
 			id: "0000000000000053"
 			tasks: [{
 				id: "0000000000000054"
@@ -198,10 +198,7 @@
 			x: 3.0d
 			y: -3.5d
 			description: ["Addons can increase the range, speed, or efficiency of most machines. As default operating areas are usually quite small, addons are important!"]
-			dependencies: [
-				"0000000000000054"
-				"0000000000000057"
-			]
+			dependencies: ["0000000000000057"]
 			id: "0000000000000076"
 			tasks: [{
 				id: "35428F7A336EE4A1"
@@ -228,7 +225,7 @@
 			x: 3.0d
 			y: -0.5d
 			shape: "hexagon"
-			description: ["The third and currently final tier of machine frame. Used in a variety of powerful automation machines."]
+			description: ["The third tier of machine frame. Used in a variety of powerful automation machines."]
 			dependencies: [
 				"0000000000000050"
 				"0000000000000051"
@@ -355,7 +352,7 @@
 		}
 		{
 			x: 0.0d
-			y: -5.5d
+			y: -6.0d
 			description: ["The Bioreactor can process up to nine different types of plant-based items at once to make Biofuel; the more slots that are filled, the higher the efficiency. Biofuel can be used to make power with the Biofuel Generator, or to run Infinity tools."]
 			dependencies: ["000000000000004F"]
 			id: "0000000000000080"
@@ -392,11 +389,7 @@
 			x: -1.5d
 			y: -4.5d
 			description: ["The Infinity Drill is powered by Biofuel and can mine increasingly large areas depending on its RF charge level."]
-			dependencies: [
-				"0000000000000054"
-				"0000000000000050"
-				"0000000000000057"
-			]
+			dependencies: ["0000000000000057"]
 			id: "0000000000000082"
 			tasks: [{
 				id: "0000000000000083"
@@ -468,7 +461,7 @@
 		}
 		{
 			x: 3.0d
-			y: -5.0d
+			y: -6.0d
 			description: ["IF conveyor belts move entities (not items, unlike IE belts). Several types of conveyor belt upgrades are available; see JEI."]
 			dependencies: [
 				"000000000000004C"
@@ -559,8 +552,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 5.0d
+			x: 3.0d
+			y: 9.0d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EE5"
@@ -571,8 +564,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 6.0d
+			x: 5.5d
+			y: 4.0d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000051"]
 			id: "0000000000000EE7"
@@ -619,8 +612,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 10.0d
+			x: -1.5d
+			y: 6.0d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EEF"
@@ -631,8 +624,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 11.0d
+			x: -2.0d
+			y: 5.0d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000051"]
 			id: "0000000000000EF1"
@@ -655,8 +648,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 10.0d
+			x: 4.5d
+			y: 6.0d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EF5"
@@ -667,8 +660,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 9.0d
+			x: 5.0d
+			y: 5.0d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000051"]
 			id: "0000000000000EF7"
@@ -679,8 +672,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 8.0d
+			x: 1.0d
+			y: 11.0d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000EDC"]
 			id: "0000000000000EF9"
@@ -703,8 +696,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 6.0d
+			x: 2.5d
+			y: 10.0d
 			description: ["Will produce power using fireworks depending of the firework type and shapes."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
@@ -716,8 +709,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 5.0d
+			x: 3.5d
+			y: 8.0d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000F01"
@@ -728,8 +721,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 4.0d
+			x: 0.5d
+			y: 10.0d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000EDC"]
 			id: "0000000000000F03"
