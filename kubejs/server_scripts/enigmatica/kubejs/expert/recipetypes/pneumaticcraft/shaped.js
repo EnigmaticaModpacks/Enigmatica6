@@ -406,6 +406,16 @@ onEvent('recipes', (event) => {
                 }
             },
             id: 'pneumaticcraft:speed_upgrade_from_glycerol'
+        },
+        {
+            output: Item.of('4x pneumaticcraft:volume_upgrade'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'pneumaticcraft:air_canister',
+                C: '#thermal:glass/hardened'
+            },
+            id: 'pneumaticcraft:volume_upgrade'
         }
     ];
 

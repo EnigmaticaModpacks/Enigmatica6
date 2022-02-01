@@ -11,15 +11,15 @@ onEvent('recipes', (event) => {
             id: 'modularrouters:item_router'
         },
         {
-            output: 'kubejs:unassembled_rftools_machine_frame',
+            output: 'kubejs:rough_machine_frame',
             inputs: [
                 'rftoolsbase:machine_base',
-                'kubejs:unassembled_rftools_machine_frame_top',
+                'kubejs:coated_machine_frame_top',
                 '#forge:plates/invar',
                 '#forge:plates/invar'
             ],
             heated: true,
-            id: 'kubejs:unassembled_rftools_machine_frame'
+            id: 'kubejs:rough_machine_frame'
         }
     ];
 
