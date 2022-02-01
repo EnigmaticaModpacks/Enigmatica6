@@ -56,7 +56,7 @@ onEvent('recipes', (event) => {
                 { pos: { x: 0, z: 3 }, item: 'mythicbotany:yggdrasil_branch' },
                 { pos: { x: 1, z: 3 }, item: 'byg:flowering_palo_verde_leaves' },
                 { pos: { x: 2, z: 3 }, item: 'mythicbotany:yggdrasil_branch' },
-                { pos: { x: 3, z: 3 }, item: '#botania:runes/alfheim' },
+                { pos: { x: 3, z: 3 }, item: '#botania:runes/vanaheim' },
                 { pos: { x: 4, z: 3 }, item: 'astralsorcery:shifting_star_aevitas' },
 
                 { pos: { x: -4, z: 2 }, item: 'astralsorcery:resonating_gem' },
