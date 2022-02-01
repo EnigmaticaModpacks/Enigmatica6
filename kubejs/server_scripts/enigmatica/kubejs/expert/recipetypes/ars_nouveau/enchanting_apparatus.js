@@ -2167,6 +2167,32 @@ onEvent('recipes', (event) => {
             output: 'thermal:xp_crystal',
             id: 'thermal:tools/xp_crystal'
         },
+        {
+            inputs: [
+                '#forge:dusts/mana',
+                'arsarsenal:source_steel_ingot',
+                '#forge:dusts/mana',
+                'arsarsenal:source_steel_ingot',
+                'arsarsenal:source_steel_ingot'
+            ],
+            sourceCost: 1000,
+            reagent: 'occultism:otherstone_pedestal',
+            output: 'mythicbotany:rune_holder',
+            id: 'mythicbotany:rune_holder'
+        },
+        {
+            inputs: [
+                '#forge:dusts/mana',
+                '#forge:ingots/terrasteel',
+                '#forge:dusts/mana',
+                '#forge:ingots/terrasteel',
+                '#forge:ingots/terrasteel'
+            ],
+            sourceCost: 10000,
+            reagent: 'occultism:otherstone_pedestal',
+            output: 'mythicbotany:master_rune_holder',
+            id: 'mythicbotany:master_rune_holder'
+        },
 
         /// Patchouli Removals
         {
