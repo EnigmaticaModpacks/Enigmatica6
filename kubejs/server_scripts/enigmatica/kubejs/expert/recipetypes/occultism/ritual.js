@@ -1077,7 +1077,7 @@ onEvent('recipes', (event) => {
                 'create:fluid_pipe',
                 '#sophisticatedbackpacks:upgrades/pump',
                 'create:fluid_pipe',
-                '#sophisticatedbackpacks:upgrades/advanced_filtee'
+                '#sophisticatedbackpacks:upgrades/advanced_filter'
             ],
             result: 'sophisticatedbackpacks:advanced_pump_upgrade',
             id: `${id_prefix}advanced_pump_upgrade`

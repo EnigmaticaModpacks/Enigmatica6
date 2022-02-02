@@ -17,13 +17,13 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            output: '#sophisticatedbackpacks:upgrades/base',
+            output: 'sophisticatedbackpacks:upgrade_base',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'kubejs:scented_stick',
                 B: 'farmersdelight:canvas'
             },
-            id: '#sophisticatedbackpacks:upgrades/base'
+            id: 'sophisticatedbackpacks:upgrade_base'
         },
         {
             output: 'sophisticatedbackpacks:backpack',
