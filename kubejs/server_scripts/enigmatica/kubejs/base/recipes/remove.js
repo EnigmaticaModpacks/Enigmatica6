@@ -95,6 +95,7 @@ onEvent('recipes', (event) => {
         'create:pressing/lapis_block',
         'create:fill_minecraft_bucket_with_create_honey',
         'create:crushing/dense_construction_block',
+        'create:crushing/nether_quartz_ore',
 
         'dustrial_decor:ice_chain',
 
