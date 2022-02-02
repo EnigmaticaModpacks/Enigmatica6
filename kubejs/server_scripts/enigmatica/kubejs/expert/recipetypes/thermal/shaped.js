@@ -223,7 +223,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/andesite_alloy',
                 B: 'minecraft:hopper',
-                C: 'create:filter',
+                C: '#sophisticatedbackpacks:upgrades/filter',
                 D: 'thermal:machine_frame',
                 E: '#forge:gears/iron',
                 F: 'thermal:rf_coil'
