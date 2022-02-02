@@ -429,7 +429,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:gears/osmium',
                 B: 'engineersdecor:factory_hopper',
-                C: 'create:filter',
+                C: '#sophisticatedbackpacks:upgrades/advanced_filter',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: 'pneumaticcraft:advanced_pcb',
                 F: 'thermal:rf_coil'

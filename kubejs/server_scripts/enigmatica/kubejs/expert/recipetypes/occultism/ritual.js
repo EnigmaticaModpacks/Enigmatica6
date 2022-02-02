@@ -1077,7 +1077,7 @@ onEvent('recipes', (event) => {
                 'create:fluid_pipe',
                 '#sophisticatedbackpacks:upgrades/pump',
                 'create:fluid_pipe',
-                'create:attribute_filter'
+                '#sophisticatedbackpacks:upgrades/advanced_filter'
             ],
             result: 'sophisticatedbackpacks:advanced_pump_upgrade',
             id: `${id_prefix}advanced_pump_upgrade`
@@ -1093,7 +1093,7 @@ onEvent('recipes', (event) => {
                 'create:fluid_pipe',
                 '#sophisticatedbackpacks:upgrades/pump',
                 'create:fluid_pipe',
-                'create:filter',
+                '#sophisticatedbackpacks:upgrades/filter',
                 'ars_nouveau:greater_experience_gem',
                 'ars_nouveau:greater_experience_gem',
                 'ars_nouveau:greater_experience_gem'
@@ -1125,9 +1125,9 @@ onEvent('recipes', (event) => {
             duration: 120,
             ritual_dummy: 'kubejs:craft_advanced_compacting_upgrade',
             ingredients: [
-                '#sophisticatedbackpacks:upgrades/compacting',
+                '#sophisticatedbackpacks:upgrades/crafting',
                 'create:precision_mechanism',
-                'create:attribute_filter',
+                '#sophisticatedbackpacks:upgrades/advanced_filter',
                 'create:precision_mechanism',
                 '#forge:gears/lumium',
                 '#forge:gears/lumium',
@@ -1163,7 +1163,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 '#sophisticatedbackpacks:upgrades/tool_swapper',
                 'create:precision_mechanism',
-                'create:attribute_filter',
+                '#sophisticatedbackpacks:upgrades/advanced_filter',
                 'create:precision_mechanism',
                 '#forge:gears/lumium',
                 '#forge:gears/lumium',

@@ -307,26 +307,7 @@ onEvent('recipes', (event) => {
                 consume_fluid: 0.05
             })
             .id(`enigmatica:expert/magical_ore_processing/starlight/${material}`);
-        /*
-        // Step Five: Fuse!
-        event.custom({
-            type: 'botania:runic_altar',
-            output: { item: ingot, count: 1 },
-            mana: 2500,
-            ingredients: [
-                Ingredient.of(fusing_input).toJson(),
-                Ingredient.of(fusing_input).toJson(),
-                Ingredient.of(fusing_input).toJson(),
-                Ingredient.of(fusing_input).toJson(),
-                Ingredient.of(fusing_input).toJson(),
-                Ingredient.of(fusing_input).toJson(),
-                Ingredient.of(fusing_input).toJson(),
-                Ingredient.of(fusing_input).toJson(),
-                Ingredient.of(fusing_input).toJson(),
-                Ingredient.of(`#botania:runes/nidavellir`).toJson()
-            ]
-        });
-        */
+
         // Step Five: Blood!
         event.recipes.bloodmagic
             .altar(nugget, fusing_input)
