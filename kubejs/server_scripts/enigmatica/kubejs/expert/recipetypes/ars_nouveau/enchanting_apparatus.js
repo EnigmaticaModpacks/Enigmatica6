@@ -2176,7 +2176,7 @@ onEvent('recipes', (event) => {
                 'arsarsenal:source_steel_ingot'
             ],
             sourceCost: 1000,
-            reagent: 'occultism:otherstone_pedestal',
+            reagent: 'minecraft:conduit',
             output: 'mythicbotany:rune_holder',
             id: 'mythicbotany:rune_holder'
         },
@@ -2189,7 +2189,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/terrasteel'
             ],
             sourceCost: 10000,
-            reagent: 'occultism:otherstone_pedestal',
+            reagent: 'minecraft:conduit',
             output: 'mythicbotany:master_rune_holder',
             id: 'mythicbotany:master_rune_holder'
         },
