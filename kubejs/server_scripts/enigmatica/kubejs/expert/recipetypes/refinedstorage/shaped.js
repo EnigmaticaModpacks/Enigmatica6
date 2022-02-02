@@ -17,7 +17,18 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            output: Item.of('4x refinedstorage:cable'),
+            output: Item.of('8x refinedstorage:cable'),
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: 'refinedstorage:quartz_enriched_iron',
+                B: 'immersiveengineering:connector_bundled',
+                C: 'immersiveengineering:wirecoil_redstone',
+                D: 'prettypipes:pipe'
+            },
+            id: 'refinedstorage:cable'
+        },
+        {
+            output: Item.of('8x refinedstorage:cable'),
             pattern: ['DBD', 'ACA', 'DBD'],
             key: {
                 A: 'refinedstorage:quartz_enriched_iron',
@@ -25,7 +36,7 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:wirecoil_redstone',
                 D: 'integrateddynamics:cable'
             },
-            id: 'refinedstorage:cable'
+            id: `${id_prefix}cable_alt`
         },
         {
             output: 'refinedstorage:importer',
