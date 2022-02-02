@@ -2167,6 +2167,22 @@ onEvent('recipes', (event) => {
             output: 'thermal:xp_crystal',
             id: 'thermal:tools/xp_crystal'
         },
+        {
+            inputs: [
+                '#forge:nuggets/arcane_gold',
+                'botania:auto_crafting_halo',
+                '#forge:nuggets/arcane_gold',
+                '#forge:gears/osmium',
+                '#forge:gears/osmium',
+                '#forge:nuggets/arcane_gold',
+                'botania:corporea_spark',
+                '#forge:nuggets/arcane_gold'
+            ],
+            sourceCost: 2000,
+            reagent: '#sophisticatedbackpacks:upgrades/crafting',
+            output: 'sophisticatedbackpacks:compacting_upgrade',
+            id: 'sophisticatedbackpacks:compacting_upgrade'
+        },
 
         /// Patchouli Removals
         {

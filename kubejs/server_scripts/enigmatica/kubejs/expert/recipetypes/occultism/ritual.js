@@ -1103,29 +1103,12 @@ onEvent('recipes', (event) => {
         },
         {
             ritual_type: 'occultism:craft_with_spirit_name',
-            activation_item: 'occultism:book_of_binding_bound_foliot',
-            pentacle_id: 'occultism:craft_foliot',
-            duration: 120,
-            ritual_dummy: 'kubejs:craft_compacting_upgrade',
-            ingredients: [
-                'create:mechanical_press',
-                'create:hand_crank',
-                'create:basin',
-                '#sophisticatedbackpacks:upgrades/crafting',
-                'create:large_cogwheel',
-                'create:cogwheel'
-            ],
-            result: 'sophisticatedbackpacks:compacting_upgrade',
-            id: `${id_prefix}compacting_upgrade`
-        },
-        {
-            ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
             duration: 120,
             ritual_dummy: 'kubejs:craft_advanced_compacting_upgrade',
             ingredients: [
-                '#sophisticatedbackpacks:upgrades/crafting',
+                'sophisticatedbackpacks:compacting_upgrade',
                 'create:precision_mechanism',
                 '#sophisticatedbackpacks:upgrades/advanced_filter',
                 'create:precision_mechanism',

@@ -67,7 +67,6 @@ onEvent('item.registry', (event) => {
         'craft_pump_upgrade',
         'craft_advanced_pump_upgrade',
         'craft_xp_pump_upgrade',
-        'craft_compacting_upgrade',
         'craft_advanced_compacting_upgrade',
         'craft_tool_swapper_upgrade',
         'craft_advanced_tool_swapper_upgrade',
