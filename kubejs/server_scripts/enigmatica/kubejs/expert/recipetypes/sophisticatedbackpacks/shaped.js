@@ -17,13 +17,13 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            output: 'sophisticatedbackpacks:upgrade_base',
+            output: '#sophisticatedbackpacks:upgrades/base',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'kubejs:scented_stick',
                 B: 'farmersdelight:canvas'
             },
-            id: 'sophisticatedbackpacks:upgrade_base'
+            id: '#sophisticatedbackpacks:upgrades/base'
         },
         {
             output: 'sophisticatedbackpacks:backpack',
@@ -41,7 +41,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/pig_iron',
                 B: 'immersiveengineering:hemp_fabric',
-                C: 'sophisticatedbackpacks:upgrade_base'
+                C: '#sophisticatedbackpacks:upgrades/base'
             },
             id: 'sophisticatedbackpacks:stack_upgrade_tier_1'
         },
@@ -51,7 +51,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:storage_blocks/rose_gold',
                 B: 'thermal:hazmat_fabric',
-                D: 'sophisticatedbackpacks:stack_upgrade_tier_1'
+                D: '#sophisticatedbackpacks:upgrades/stack_tier_1'
             },
             id: 'sophisticatedbackpacks:stack_upgrade_tier_2'
         },
@@ -61,7 +61,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:storage_blocks/enderium',
                 B: 'thermal:diving_fabric',
-                D: 'sophisticatedbackpacks:stack_upgrade_tier_2'
+                D: '#sophisticatedbackpacks:upgrades/stack_tier_2'
             },
             id: 'sophisticatedbackpacks:stack_upgrade_tier_3'
         },
@@ -71,7 +71,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:storage_blocks/aeternium',
                 B: 'botania:manaweave_cloth',
-                D: 'sophisticatedbackpacks:stack_upgrade_tier_3'
+                D: '#sophisticatedbackpacks:upgrades/stack_tier_3'
             },
             id: 'sophisticatedbackpacks:stack_upgrade_tier_4'
         },
@@ -82,7 +82,7 @@ onEvent('recipes', (event) => {
                 A: 'create:precision_mechanism',
                 B: 'create:crafting_blueprint',
                 C: 'minecraft:barrel',
-                D: 'sophisticatedbackpacks:upgrade_base'
+                D: '#sophisticatedbackpacks:upgrades/base'
             },
             id: 'sophisticatedbackpacks:crafting_upgrade'
         },
@@ -93,7 +93,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:slimeballs',
                 B: 'thermal:redstone_servo',
                 C: 'aquaculture:diamond_fishing_rod',
-                D: 'sophisticatedbackpacks:upgrade_base'
+                D: '#sophisticatedbackpacks:upgrades/base'
             },
             id: 'sophisticatedbackpacks:pickup_upgrade'
         },
@@ -103,7 +103,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/iron',
                 B: 'bloodmagic:reagentmagnetism',
-                C: 'sophisticatedbackpacks:pickup_upgrade'
+                C: '#sophisticatedbackpacks:upgrades/pickup'
             },
             id: 'sophisticatedbackpacks:magnet_upgrade'
         },
@@ -113,7 +113,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/iron',
                 B: 'bloodmagic:reagentmagnetism',
-                C: 'sophisticatedbackpacks:advanced_pickup_upgrade'
+                C: '#sophisticatedbackpacks:upgrades/advanced_pickup'
             },
             id: 'sophisticatedbackpacks:advanced_magnet_upgrade'
         },
@@ -123,7 +123,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'naturesaura:hopper_upgrade',
                 B: '#forge:gears/lumium',
-                C: 'sophisticatedbackpacks:magnet_upgrade',
+                C: '#sophisticatedbackpacks:upgrades/magnet',
                 D: 'create:electron_tube'
             },
             id: 'sophisticatedbackpacks:advanced_magnet_upgrade_from_basic'
@@ -134,7 +134,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'naturesaura:hopper_upgrade',
                 B: '#forge:gears/lumium',
-                C: 'sophisticatedbackpacks:pickup_upgrade',
+                C: '#sophisticatedbackpacks:upgrades/pickup',
                 D: 'create:electron_tube'
             },
             id: 'sophisticatedbackpacks:advanced_pickup_upgrade'
@@ -143,9 +143,9 @@ onEvent('recipes', (event) => {
             output: 'sophisticatedbackpacks:advanced_void_upgrade',
             pattern: ['EAE', 'BCB', 'DDD'],
             key: {
-                A: 'create:attribute_filter',
+                A: '#sophisticatedbackpacks:upgrades/advanced_filter',
                 B: '#forge:gears/lumium',
-                C: 'sophisticatedbackpacks:void_upgrade',
+                C: '#sophisticatedbackpacks:upgrades/void',
                 D: 'create:electron_tube',
                 E: 'create:precision_mechanism'
             },
@@ -157,7 +157,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'create:fluid_pipe',
                 B: 'create:fluid_tank',
-                C: 'sophisticatedbackpacks:upgrade_base'
+                C: '#sophisticatedbackpacks:upgrades/base'
             },
             id: 'sophisticatedbackpacks:tank_upgrade'
         },
@@ -167,7 +167,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'thermal:flux_capacitor',
                 B: 'thermal:rf_coil',
-                C: 'sophisticatedbackpacks:upgrade_base'
+                C: '#sophisticatedbackpacks:upgrades/base'
             },
             id: 'sophisticatedbackpacks:battery_upgrade'
         },
@@ -178,7 +178,7 @@ onEvent('recipes', (event) => {
                 A: 'quark:bottled_cloud',
                 B: Item.of('minecraft:enchanted_book').enchant('minecraft:protection', 1),
                 C: Item.of('minecraft:enchanted_book').enchant('minecraft:blast_protection', 1),
-                D: 'sophisticatedbackpacks:upgrade_base',
+                D: '#sophisticatedbackpacks:upgrades/base',
                 E: Item.of('minecraft:enchanted_book').enchant('minecraft:fire_protection', 1),
                 F: Item.of('minecraft:enchanted_book').enchant('minecraft:projectile_protection', 1)
             },
