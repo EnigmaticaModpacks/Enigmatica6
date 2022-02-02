@@ -33,7 +33,18 @@ onEvent('item.tooltip', (event) => {
             items: ['tconstruct:seared_melter'],
             text: [disabledInExpert, Text.of('Use the Smeltery Controller instead.').aqua()]
         },
-
+        {
+            items: [
+                'integrateddynamics:mechanical_squeezer',
+                'integrateddynamics:mechanical_drying_basin',
+                'integrateddynamics:squeezer',
+                'integrateddynamics:drying_basin',
+                'pneumaticcraft:air_compressor',
+                'pneumaticcraft:advanced_air_compressor',
+                'darkutils:rune_damage_player'
+            ],
+            text: [disabledInExpert]
+        },
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
             text: [

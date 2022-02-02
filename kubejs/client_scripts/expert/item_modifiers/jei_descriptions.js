@@ -44,7 +44,8 @@ onEvent('jei.information', (event) => {
         'integrateddynamics:mechanical_drying_basin',
         'integrateddynamics:squeezer',
         'integrateddynamics:drying_basin',
-        'integrateddynamics:coal_generator'
+        'integrateddynamics:coal_generator',
+        'darkutils:rune_damage_player'
     ];
     disabledItems.forEach((item) => {
         event.add(
