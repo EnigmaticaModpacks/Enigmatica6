@@ -2169,6 +2169,32 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
+                '#forge:dusts/mana',
+                'arsarsenal:source_steel_ingot',
+                '#forge:dusts/mana',
+                'arsarsenal:source_steel_ingot',
+                'arsarsenal:source_steel_ingot'
+            ],
+            sourceCost: 1000,
+            reagent: 'minecraft:conduit',
+            output: 'mythicbotany:rune_holder',
+            id: 'mythicbotany:rune_holder'
+        },
+        {
+            inputs: [
+                '#forge:dusts/mana',
+                '#forge:ingots/terrasteel',
+                '#forge:dusts/mana',
+                '#forge:ingots/terrasteel',
+                '#forge:ingots/terrasteel'
+            ],
+            sourceCost: 10000,
+            reagent: 'minecraft:conduit',
+            output: 'mythicbotany:master_rune_holder',
+            id: 'mythicbotany:master_rune_holder'
+        },
+        {
+            inputs: [
                 '#forge:nuggets/arcane_gold',
                 'botania:auto_crafting_halo',
                 '#forge:nuggets/arcane_gold',

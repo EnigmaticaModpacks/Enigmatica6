@@ -212,6 +212,51 @@ onEvent('recipes', (event) => {
                 D: 'botania:fabulous_pool'
             },
             id: `${id_prefix}gaia_reactor_mana_port_botania_mana_output`
+        },
+        {
+            output: 'masterfulmachinery:enigmatic_tree_of_life_item_port_items_output',
+            pattern: ['ABA', 'BCB', 'ADA'],
+            key: {
+                A: 'mythicbotany:yggdrasil_branch',
+                B: 'botania:abstruse_platform',
+                C: 'botania:light_relay',
+                D: 'botania:red_petal_block'
+            },
+            id: `${id_prefix}enigmatic_tree_of_life_item_port_items_output`
+        },
+        {
+            output: 'masterfulmachinery:enigmatic_tree_of_life_item_port_items_input',
+            pattern: ['ABA', 'BCB', 'ADA'],
+            key: {
+                A: 'mythicbotany:yggdrasil_branch',
+                B: 'botania:abstruse_platform',
+                C: 'botania:light_relay',
+                D: 'botania:green_petal_block'
+            },
+            id: `${id_prefix}enigmatic_tree_of_life_item_port_items_input`
+        },
+        {
+            output: 'masterfulmachinery:enigmatic_tree_of_life_fluid_port_fluids_input',
+            pattern: ['ABA', 'CEC', 'ADA'],
+            key: {
+                A: 'mythicbotany:yggdrasil_branch',
+                B: 'create:copper_valve_handle',
+                C: 'create:fluid_pipe',
+                D: 'botania:green_petal_block',
+                E: 'create:fluid_valve'
+            },
+            id: `${id_prefix}enigmatic_tree_of_life_fluid_port_fluids_input`
+        },
+        {
+            output: 'masterfulmachinery:enigmatic_tree_of_life_mana_port_botania_mana_input',
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: 'mythicbotany:yggdrasil_branch',
+                B: 'botania:abstruse_platform',
+                C: 'botania:fabulous_pool',
+                D: '#botania:runes/mana'
+            },
+            id: `${id_prefix}enigmatic_tree_of_life_mana_port_botania_mana_input`
         }
     ];
 

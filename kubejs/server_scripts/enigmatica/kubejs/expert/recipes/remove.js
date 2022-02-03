@@ -4,6 +4,8 @@ onEvent('recipes', (event) => {
     }
 
     const idRemovals = [
+        'architects_palette:sunstone',
+
         'ars_nouveau:dull_trinket',
         'ars_nouveau:moonfall_2',
         'ars_nouveau:mundane_belt',
@@ -130,7 +132,6 @@ onEvent('recipes', (event) => {
         'sophisticatedbackpacks:pump_upgrade',
         'sophisticatedbackpacks:advanced_pump_upgrade',
         'sophisticatedbackpacks:xp_pump_upgrade',
-        'sophisticatedbackpacks:compacting_upgrade',
         'sophisticatedbackpacks:advanced_compacting_upgrade',
         'sophisticatedbackpacks:tool_swapper_upgrade',
         'sophisticatedbackpacks:advanced_tool_swapper_upgrade',
@@ -286,7 +287,7 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'integrateddynamics:drying_basin' });
     event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
     event.remove({ type: 'integrateddynamics:squeezer' });
-    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
+    event.remove({ type: 'integrateddynamics:mechanical_squeezer' });
 
     patchouli_safe_removals.forEach((recipe) => {
         event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);

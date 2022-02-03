@@ -1,0 +1,23 @@
+{
+    "type": "masterfulmachinery:machine_structure",
+    "id": "enigmatic_tree_of_life_structure",
+    "controllerId": "enigmatic_tree_of_life",
+    "name": "Enigmatic Tree of Life",
+    "layout": [
+        ["))", "*+", "))"],
+        ["))", ",C", "))"],
+        ["))", "*-", "))"],
+        ["))", "))", "))"],
+        ["..", "..", ".."],
+        ["..", "..", ".."],
+        ["..", "..", ".."]
+    ],
+    "legend": {
+        ")": { "block": "minecraft:oak_wood" },
+        "*": { "block": "masterfulmachinery:enigmatic_tree_of_life_fluid_port_fluids_input" },
+        "+": { "block": "masterfulmachinery:enigmatic_tree_of_life_item_port_items_output" },
+        ",": { "block": "masterfulmachinery:enigmatic_tree_of_life_mana_port_botania_mana_input" },
+        "-": { "block": "masterfulmachinery:enigmatic_tree_of_life_item_port_items_input" },
+        ".": { "block": "minecraft:oak_leaves" }
+    }
+}

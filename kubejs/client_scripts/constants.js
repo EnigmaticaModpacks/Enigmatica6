@@ -197,6 +197,20 @@ const itemsToHide = [
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
 
+    'masterfulmachinery:auto_iridescent_altar_starlight_port_astral_starlight_output',
+    'masterfulmachinery:auto_iridescent_altar_fluid_port_fluids_output',
+    'masterfulmachinery:auto_iridescent_altar_energy_port_energy_output',
+    'masterfulmachinery:advanced_assembly_table_high_pressure_port_pncr_pressure_output',
+    'masterfulmachinery:stellar_neutron_activator_energy_port_energy_output',
+    'masterfulmachinery:stellar_neutron_activator_mana_port_botania_mana_output',
+    'masterfulmachinery:gaia_reactor_high_pressure_port_pncr_pressure_output',
+    'masterfulmachinery:gaia_reactor_mana_port_botania_mana_input',
+    'masterfulmachinery:gaia_reactor_fluid_port_fluids_output',
+    'masterfulmachinery:gaia_reactor_energy_port_energy_output',
+    'masterfulmachinery:gaia_reactor_item_port_items_input',
+    'masterfulmachinery:enigmatic_tree_of_life_fluid_port_fluids_output',
+    'masterfulmachinery:enigmatic_tree_of_life_mana_port_botania_mana_output',
+
     'mctb:cherry_crafting_table',
     'mctb:dead_crafting_table',
     'mctb:fir_crafting_table',
@@ -659,9 +673,9 @@ const disabledItems = [
 
     'pneumaticcraft:wheat_flour',
 
-	'projectvibrantjourneys:clam',
-	'projectvibrantjourneys:clam_chowder',
-	'projectvibrantjourneys:cooked_clam',
+    'projectvibrantjourneys:clam',
+    'projectvibrantjourneys:clam_chowder',
+    'projectvibrantjourneys:cooked_clam',
 
     'quark:pipe',
     'quark:potato_crate',
