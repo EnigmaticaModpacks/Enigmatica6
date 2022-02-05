@@ -2209,6 +2209,54 @@ onEvent('recipes', (event) => {
             output: 'sophisticatedbackpacks:compacting_upgrade',
             id: 'sophisticatedbackpacks:compacting_upgrade'
         },
+        {
+            inputs: [
+                'botania:corporea_block',
+                'botania:red_string',
+                'botania:corporea_block',
+                'ars_nouveau:mythical_clay',
+                'ars_nouveau:mythical_clay',
+                'botania:corporea_block',
+                'botania:red_string',
+                'botania:corporea_block'
+            ],
+            sourceCost: 10000,
+            reagent: 'botania:corporea_index',
+            output: 'interactive_corporea:requesting_halo',
+            id: 'interactive_corporea:requesting_halo'
+        },
+        {
+            inputs: [
+                'botania:corporea_block',
+                'botania:corporea_funnel',
+                'botania:corporea_block',
+                'ars_nouveau:relay_warp',
+                'ars_nouveau:relay_warp',
+                'botania:corporea_block',
+                'botania:corporea_funnel',
+                'botania:corporea_block'
+            ],
+            sourceCost: 10000,
+            reagent: 'botania:light_relay',
+            output: 'interactive_corporea:item_quantization_device',
+            id: 'interactive_corporea:item_quantization_device'
+        },
+        {
+            inputs: [
+                'botania:red_string',
+                '#forge:dusts/lumium',
+                'botania:red_string',
+                '#forge:dusts/lumium',
+                '#forge:dusts/lumium',
+                'botania:red_string',
+                '#forge:dusts/lumium',
+                'botania:red_string'
+            ],
+            sourceCost: 500,
+            reagent: 'botania:light_relay',
+            output: Item.of('4x botania:light_relay'),
+            id: 'botania:light_relay'
+        },
 
         /// Patchouli Removals
         {
