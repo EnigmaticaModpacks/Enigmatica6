@@ -193,6 +193,7 @@ const itemsToHide = [
 
     'farmersdelight:fried_egg',
 
+    'immersiveengineering:dust_coke',
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
