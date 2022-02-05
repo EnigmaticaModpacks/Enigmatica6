@@ -346,7 +346,6 @@ onEvent('recipes', (event) => {
                 'bloodmagic:sacrificialdagger',
                 'bloodmagic:experiencebook',
                 'bloodmagic:soulforge',
-                'pneumaticcraft:medium_tank',
                 'pneumaticcraft:minigun',
                 'pneumaticcraft:pressure_gauge',
                 'thermal:diving_helmet',
