@@ -2253,7 +2253,7 @@ onEvent('recipes', (event) => {
                 'botania:red_string'
             ],
             sourceCost: 500,
-            reagent: 'botania:light_relay',
+            reagent: '#forge:gems/mana',
             output: Item.of('4x botania:light_relay'),
             id: 'botania:light_relay'
         },
