@@ -61,6 +61,11 @@
 		{
 			x: -2.0d
 			y: 1.0d
+			description: [
+				"Mining is a dangerous profession to undertake, but technology can make it considerably safer."
+				""
+				"Provide the tools necessary to allow these communities access to greater resource abundance, freeing them from toiling in the earth to study and learn. "
+			]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "36CDE03E505E0F94"
 			tasks: [{
@@ -72,6 +77,11 @@
 		{
 			x: 2.0d
 			y: 1.0d
+			description: [
+				"The art of medicine and healing lives on through ancient alchemical practices. "
+				""
+				"Spread this knowledge to prevent further unnecessary loss of life.  "
+			]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "477CEC2E3F4736C3"
 			tasks: [{
@@ -82,7 +92,18 @@
 		}
 		{
 			x: 0.0d
-			y: 1.0d
+			y: 1.5d
+			description: [
+				"As the Tree of Life settles its roots into the soil, a deep hum emanates from the ground as ethereal roots begin to spread and take hold. Within moments, lights blink to life upon the surface and as things settle down, fifty lights blink a gentle calming greenish-blue. Many more, however, settle into a deeply unsettling crimson. "
+				""
+				"Near the greenish-blue lights, requests for assistance begin to appear as, one-by-one, these remaining communities realize there is still someone out there who can offer them aid."
+				""
+				"---------------------------------"
+				""
+				"Supply these last remaining outposts of civilization with the tools and equipment they need to restore the world to its former magical and technological pinnacle and usher in a new golden age of prosperity."
+				""
+				"To begin, provide them the tools they'll need to become self sufficient."
+			]
 			dependencies: ["7C0943FD8F8A0D69"]
 			id: "4AB9649C1D2FE587"
 			tasks: [{
@@ -94,6 +115,7 @@
 		{
 			x: -1.0d
 			y: -2.5d
+			description: ["A return to prosperity will require a great deal of knowledge. Help prepare these communities to build and maintain the complex machinery they’ll need."]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "6218AF7644C178A7"
 			tasks: [{
@@ -105,6 +127,7 @@
 		{
 			x: 2.5d
 			y: -1.0d
+			description: ["The purest life essence of the earth, Mana suffuses all things. Knowledge of its ebb and flow will undoubtedly aid these communities in becoming excellent stewards of this land. "]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "5DA9A0C75EA47DFF"
 			tasks: [{
@@ -116,6 +139,7 @@
 		{
 			x: -2.0d
 			y: -2.0d
+			description: ["Many threats still roam this land and without defenses, these communities are under severe threat; it’s no wonder so few lights appear to still be active; many must have fallen to the various monstrosities that roam the lands."]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "188BE70C3D176BCA"
 			tasks: [{
@@ -127,6 +151,11 @@
 		{
 			x: 0.0d
 			y: -3.0d
+			description: [
+				"There’s no shortage of resources across the realms and allies a plenty for those willing to bridge the gap. "
+				""
+				"Provide the necessary tools for these communities to set up long distance communications and dimensional transport of goods."
+			]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "72C894BE4081603D"
 			tasks: [{
@@ -138,6 +167,7 @@
 		{
 			x: -2.5d
 			y: -1.0d
+			description: ["Access to clean renewable energy will be vital for these communities to thrive. Assist them in setting up the infrastructure they’ll need as they step forward into a new dawn."]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "3AB61B2854483CE3"
 			tasks: [{
@@ -149,6 +179,11 @@
 		{
 			x: 2.5d
 			y: 0.0d
+			description: [
+				"Thriving means living in balance with life and not just the local flora and fauna. The spirits of the Otherworld will undoubtedly be important allies to these communities as they grow."
+				""
+				"Teach them how to contact the Otherworld and respectfully obtain their aid. "
+			]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "474DFFBB63FE90BA"
 			tasks: [{
@@ -160,6 +195,11 @@
 		{
 			x: 1.0d
 			y: -2.5d
+			description: [
+				"Stepping into this new age of prosperity does not mean forsaking the lands around us that provide the essentials of life."
+				""
+				"Assist the communities in becoming stewards of the land, caring for and maintaining the balance of energies that surround them."
+			]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "65F9021D56312C9B"
 			tasks: [{
@@ -171,6 +211,11 @@
 		{
 			x: 2.0d
 			y: -2.0d
+			description: [
+				"Keep an eye to the heavens."
+				""
+				"Knowledge of the celestial bodies and their influences upon us will assist these communities as they grow. "
+			]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "2A79C4CDDA045886"
 			tasks: [{
@@ -181,22 +226,35 @@
 		}
 		{
 			title: "Bragging Rights"
-			icon: {
-				id: "tconstruct:creative_slot"
-				Count: 1b
-				tag: {
-					slot: "abilities"
-				}
-			}
+			icon: "kubejs:altered_recipe_indicator"
 			x: 0.0d
 			y: 4.0d
+			description: [
+				"Countless hours of research, experimentation, and hard work have led you to one final discovery in the notes left behind by those who came before; an immense interdimensional organize who’s roots spread throughout the world: The Tree of Life."
+				""
+				"Even here in this far off locale, once you knew what to look for, the telltale signs were there all along, remnants of the long-withered root network. With careful preparation, a new tree may be coerced from the soil to join its roots to those fragile remnants."
+				""
+				"---------------------------------"
+				""
+				"Construct the Enigmatic Tree of Life. This is a massive build that will require the use of the Building Gadget or Schematicannon to complete. "
+			]
 			dependencies: ["0000000000000FEB"]
 			hide: true
 			id: "7C0943FD8F8A0D69"
+			tasks: [{
+				id: "2731482A6457D737"
+				type: "item"
+				item: "masterfulmachinery:enigmatic_tree_of_life_controller"
+			}]
 		}
 		{
 			x: -2.5d
 			y: 0.0d
+			description: [
+				"For many of these communities, nutrition has taken a back seat as farming techniques and access to diverse foods has been lost. "
+				""
+				"Prepare meals to fill their bellies so that their minds may be filled with the knowledge you have to share. "
+			]
 			dependencies: ["4AB9649C1D2FE587"]
 			id: "5A9BCC1CC2CC3E0C"
 			tasks: [{
