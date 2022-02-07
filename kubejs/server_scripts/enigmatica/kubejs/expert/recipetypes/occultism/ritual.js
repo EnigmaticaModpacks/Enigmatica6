@@ -209,7 +209,7 @@ onEvent('recipes', (event) => {
                 '#forge:storage_blocks/iesnium',
                 'occultism:spirit_attuned_crystal'
             ],
-            result:  Item.of('occultism:miner_djinni_ores', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
+            result: 'occultism:miner_djinni_ores',
             id: 'occultism:ritual/craft_miner_djinni_ores'
         },
         {
@@ -1324,7 +1324,7 @@ onEvent('recipes', (event) => {
                 '#forge:ores/uranium',
                 '#forge:ores/fluorite',
                 '#forge:ores/sulfur',
-                'occultism:iesnium_pickaxe',
+                Item.of('occultism:iesnium_pickaxe', '{Damage:0]}').weakNBT(),
                 'occultism:iesnium_block',
                 'atum:godforged_block'
             ],
