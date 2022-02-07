@@ -106,7 +106,8 @@ onEvent('item.registry', (event) => {
         'craft_ender_dagger',
         'craft_enchantment_library',
         'craft_fisher_foliot',
-        'craft_gaia_reactor_controller'
+        'craft_gaia_reactor_controller',
+        'craft_miner_marid_irradiated'
     ];
 
     const reusableItemTextures = [
@@ -284,7 +285,7 @@ onEvent('item.registry', (event) => {
     reusableItemTextures.forEach((item) => {
         event.create(item.name).group('KubeJS').texture(`kubejs:item/${item.texture}`);
     });
-
+    // Custom Occultism Miners
     event
         .create('fisher_foliot')
         .group('KubeJS')
@@ -292,6 +293,14 @@ onEvent('item.registry', (event) => {
         .maxStackSize(1)
         .maxDamage(500)
         .displayName('Fisher Foliot');
+    event
+        .create('miner_marid_irradiated')
+        .group('KubeJS')
+        .texture('kubejs:item/magic_lamp')
+        .maxStackSize(1)
+        .maxDamage(50)
+        .displayName('Irradiated Ore Miner Marid');
+
 
     // Custom Foods
     event

@@ -209,7 +209,7 @@ onEvent('recipes', (event) => {
                 '#forge:storage_blocks/iesnium',
                 'occultism:spirit_attuned_crystal'
             ],
-            result: 'occultism:miner_djinni_ores',
+            result:  Item.of('occultism:miner_djinni_ores', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
             id: 'occultism:ritual/craft_miner_djinni_ores'
         },
         {
@@ -1308,6 +1308,28 @@ onEvent('recipes', (event) => {
             ],
             result: 'masterfulmachinery:gaia_reactor_controller',
             id: `${id_prefix}gaia_reactor_controller`
+        },
+        {
+            ritual_type: 'occultism:craft_miner_spirit',
+            activation_item: 'occultism:book_of_binding_bound_marid',
+            pentacle_id: 'occultism:craft_marid',
+            duration: 120,
+            ritual_dummy: 'kubejs:craft_miner_marid_irradiated',
+            ingredients: [
+                '#forge:ores/uranium',
+                '#forge:ores/uranium',
+                '#forge:ores/uranium',
+                '#forge:ores/uranium',
+                '#forge:ores/uranium',
+                '#forge:ores/uranium',
+                '#forge:ores/fluorite',
+                '#forge:ores/sulfur',
+                'occultism:iesnium_pickaxe',
+                'occultism:iesnium_block',
+                'atum:godforged_block'
+            ],
+            result:  Item.of('kubejs:miner_marid_irradiated', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
+            id: `${id_prefix}miner_marid_irradiated`
         }
     ];
 
