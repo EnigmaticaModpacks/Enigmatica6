@@ -38,7 +38,14 @@ onEvent('server.datapack.high_priority', (event) => {
                         min: 1,
                         max: 4,
                         weight: 100,
-                        quality: 100
+                        quality: 100,
+                        functions: [
+                            {
+                                function: 'enchant_with_levels',
+                                levels: 30,
+                                treasure: true
+                            }
+                        ]
                     }
                 ]
             }
@@ -129,8 +136,8 @@ onEvent('generic.loot_tables', (event) => {
             ]
         },
         {
-            // Magic Reagents and oddities.
-            rolls: { min: 6, max: 9 },
+            // Incense oddities.
+            rolls: { min: 0, max: 1 },
             entries: [
                 {
                     item: Item.of('botania:incense_stick', '{brewKey:"botania:bloodthirst"}'),
@@ -159,7 +166,13 @@ onEvent('generic.loot_tables', (event) => {
                 {
                     item: Item.of('botania:incense_stick', '{brewKey:"botania:allure"}'),
                     weight: 50
-                },
+                }
+            ]
+        },
+        {
+            // Magic oddities.
+            rolls: { min: 6, max: 9 },
+            entries: [
                 {
                     item: 'eidolon:death_essence',
                     weight: 50,
@@ -221,6 +234,18 @@ onEvent('generic.loot_tables', (event) => {
                 {
                     item: 'undergarden:music_disc_relict',
                     weight: 20
+                },
+                {
+                    item: 'astralsorcery:perk_gem_sky',
+                    weight: 15
+                },
+                {
+                    item: 'astralsorcery:perk_gem_day',
+                    weight: 15
+                },
+                {
+                    item: 'astralsorcery:perk_gem_night',
+                    weight: 15
                 }
             ]
         }
