@@ -35,8 +35,10 @@ onEvent('server.datapack.high_priority', (event) => {
                     },
                     {
                         type: 'apotheosis:affix_entry',
-                        weight: 50,
-                        quality: 60
+                        min: 1,
+                        max: 4,
+                        weight: 100,
+                        quality: 100
                     }
                 ]
             }
@@ -131,27 +133,32 @@ onEvent('generic.loot_tables', (event) => {
             rolls: { min: 6, max: 9 },
             entries: [
                 {
-                    item: Item.of(
-                        'ars_nouveau:potion_flask',
-                        '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:90b,Amplifier:0b}],Potion:"ars_nouveau:spell_damage_long"}'
-                    ),
-                    weight: 50,
-                    count: [1, 2]
+                    item: Item.of('botania:incense_stick', '{brewKey:"botania:bloodthirst"}'),
+                    weight: 50
                 },
                 {
-                    item: 'ars_nouveau:wilden_spike',
-                    weight: 50,
-                    count: [1, 2]
+                    item: Item.of('botania:incense_stick', '{brewKey:"botania:regen"}'),
+                    weight: 50
                 },
                 {
-                    item: 'ars_nouveau:wilden_horn',
-                    weight: 50,
-                    count: [1, 2]
+                    item: Item.of('botania:incense_stick', '{brewKey:"botania:strength"}'),
+                    weight: 50
                 },
                 {
-                    item: 'ars_nouveau:wilden_wing',
-                    weight: 50,
-                    count: [1, 2]
+                    item: Item.of('botania:incense_stick', '{brewKey:"botania:resistance"}'),
+                    weight: 50
+                },
+                {
+                    item: Item.of('botania:incense_stick', '{brewKey:"botania:soul_cross"}'),
+                    weight: 50
+                },
+                {
+                    item: Item.of('botania:incense_stick', '{brewKey:"botania:emptiness"}'),
+                    weight: 50
+                },
+                {
+                    item: Item.of('botania:incense_stick', '{brewKey:"botania:allure"}'),
+                    weight: 50
                 },
                 {
                     item: 'eidolon:death_essence',
@@ -159,37 +166,8 @@ onEvent('generic.loot_tables', (event) => {
                     count: [1, 2]
                 },
                 {
-                    item: 'alexsmobs:guster_eye',
-                    weight: 50,
-                    count: [1, 2]
-                },
-                {
-                    item: 'alexsmobs:kangaroo_hide',
-                    weight: 50,
-                    count: [1, 2]
-                },
-                {
                     item: 'botania:blacker_lotus',
-                    weight: 50
-                },
-                {
-                    item: 'occultism:soul_gem',
-                    weight: 50
-                },
-                {
-                    item: 'ars_nouveau:drygmy_shard',
-                    weight: 50
-                },
-                {
-                    item: 'ars_nouveau:wixie_shards',
-                    weight: 50
-                },
-                {
-                    item: 'ars_nouveau:carbuncle_shards',
-                    weight: 50
-                },
-                {
-                    item: 'bloodmagic:intermediatecuttingfluid',
+                    count: [4, 8],
                     weight: 50
                 },
                 {
@@ -198,28 +176,8 @@ onEvent('generic.loot_tables', (event) => {
                     count: [1, 5]
                 },
                 {
-                    item: 'eidolon:arcane_gold_ingot',
+                    item: 'archers_paradox:lightning_arrow',
                     weight: 100,
-                    count: [2, 7]
-                },
-                {
-                    item: 'thermal:lightning_charge',
-                    weight: 100,
-                    count: [2, 7]
-                },
-                {
-                    item: 'alexsmobs:komodo_spit',
-                    weight: 50,
-                    count: [1, 2]
-                },
-                {
-                    item: 'alexsmobs:rattlesnake_rattle',
-                    weight: 50,
-                    count: [1, 2]
-                },
-                {
-                    item: 'eidolon:ender_calx',
-                    weight: 50,
                     count: [2, 7]
                 },
                 {
@@ -233,20 +191,42 @@ onEvent('generic.loot_tables', (event) => {
                     count: [2, 7]
                 },
                 {
-                    item: 'ars_nouveau:mana_gem',
-                    weight: 100,
-                    count: [5, 9]
+                    item: 'botania:mana_diamond',
+                    weight: 50
                 },
                 {
                     item: 'bloodmagic:experiencebook',
-                    weight: 15,
-                    count: 1
+                    weight: 15
+                },
+                {
+                    item: Item.of('shrink:mob_bottle', '{entity:"undergarden:forgotten_guardian"}'),
+                    weight: 50
+                },
+                {
+                    item: Item.of('botania:mana_ring', '{mana:250000}'),
+                    weight: 10
+                },
+                {
+                    item: Item.of('botania:mana_ring_greater', '{mana:1000000}'),
+                    weight: 2
+                },
+                {
+                    item: Item.of('mythicbotany:mana_ring_greatest', '{mana:2000000}'),
+                    weight: 1
+                },
+                {
+                    item: 'undergarden:music_disc_mammoth',
+                    weight: 20
+                },
+                {
+                    item: 'undergarden:music_disc_relict',
+                    weight: 20
                 }
             ]
         }
     ];
 
-    event.modify('apotheosis:tome_tower', (table) => {
+    event.modify('undergarden:chests/catacombs', (table) => {
         pools.forEach((pool) => {
             table.addPool((newPool) => {
                 newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);
