@@ -164,7 +164,7 @@ onEvent('recipes', (event) => {
                 { tag: 'botania:runes/earth' },
                 { tag: 'botania:runes/air' },
                 { item: 'undergarden:masticator_scales' },
-                { item: 'botania:life_essence' }
+                { item: 'naturesaura:calling_spirit' }
             ],
             output: { item: 'botania:dandelifeon' },
             id: 'botania:petal_apothecary/dandelifeon'
