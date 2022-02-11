@@ -198,6 +198,18 @@ onEvent('recipes', (event) => {
                 secondaries: [Item.of('8x minecraft:book')],
                 outputs: [Item.of('8x pedestals:bookadvanced')],
                 id: `${id_prefix}bookadvanced`
+            },
+            {
+                input1: 'quark:white_crystal_cluster',
+                secondaries: [Item.of('4x glassential:glass_ghostly')],
+                outputs: [Item.of('4x atum:crystal_glass')],
+                id: `${id_prefix}crystal_glass`
+            },
+            {
+                input1: 'quark:white_crystal',
+                secondaries: [Item.of('3x glassential:glass_ghostly')],
+                outputs: [Item.of('4x atum:crystal_glass')],
+                id: `${id_prefix}crystal_glass_2`
             }
         ]
     };

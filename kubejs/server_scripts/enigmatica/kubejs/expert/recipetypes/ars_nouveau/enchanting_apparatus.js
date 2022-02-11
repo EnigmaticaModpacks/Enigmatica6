@@ -2169,6 +2169,32 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
+                '#forge:dusts/mana',
+                'arsarsenal:source_steel_ingot',
+                '#forge:dusts/mana',
+                'arsarsenal:source_steel_ingot',
+                'arsarsenal:source_steel_ingot'
+            ],
+            sourceCost: 1000,
+            reagent: 'minecraft:conduit',
+            output: 'mythicbotany:rune_holder',
+            id: 'mythicbotany:rune_holder'
+        },
+        {
+            inputs: [
+                '#forge:dusts/mana',
+                '#forge:ingots/terrasteel',
+                '#forge:dusts/mana',
+                '#forge:ingots/terrasteel',
+                '#forge:ingots/terrasteel'
+            ],
+            sourceCost: 10000,
+            reagent: 'minecraft:conduit',
+            output: 'mythicbotany:master_rune_holder',
+            id: 'mythicbotany:master_rune_holder'
+        },
+        {
+            inputs: [
                 '#forge:nuggets/arcane_gold',
                 'botania:auto_crafting_halo',
                 '#forge:nuggets/arcane_gold',
@@ -2182,6 +2208,54 @@ onEvent('recipes', (event) => {
             reagent: '#sophisticatedbackpacks:upgrades/crafting',
             output: 'sophisticatedbackpacks:compacting_upgrade',
             id: 'sophisticatedbackpacks:compacting_upgrade'
+        },
+        {
+            inputs: [
+                'botania:corporea_block',
+                'botania:red_string',
+                'botania:corporea_block',
+                'ars_nouveau:mythical_clay',
+                'ars_nouveau:mythical_clay',
+                'botania:corporea_block',
+                'botania:red_string',
+                'botania:corporea_block'
+            ],
+            sourceCost: 10000,
+            reagent: 'botania:corporea_index',
+            output: 'interactive_corporea:requesting_halo',
+            id: 'interactive_corporea:requesting_halo'
+        },
+        {
+            inputs: [
+                'botania:corporea_block',
+                'botania:corporea_funnel',
+                'botania:corporea_block',
+                'ars_nouveau:relay_warp',
+                'ars_nouveau:relay_warp',
+                'botania:corporea_block',
+                'botania:corporea_funnel',
+                'botania:corporea_block'
+            ],
+            sourceCost: 10000,
+            reagent: 'botania:light_relay',
+            output: 'interactive_corporea:item_quantization_device',
+            id: 'interactive_corporea:item_quantization_device'
+        },
+        {
+            inputs: [
+                'botania:red_string',
+                '#forge:dusts/lumium',
+                'botania:red_string',
+                '#forge:dusts/lumium',
+                '#forge:dusts/lumium',
+                'botania:red_string',
+                '#forge:dusts/lumium',
+                'botania:red_string'
+            ],
+            sourceCost: 500,
+            reagent: '#forge:gems/mana',
+            output: Item.of('4x botania:light_relay'),
+            id: 'botania:light_relay'
         },
 
         /// Patchouli Removals

@@ -223,8 +223,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 5.5d
+			x: 2.5d
+			y: 5.0d
 			description: [
 				"It’s time to assemble our first fully technological Fission Reactor! "
 				""
@@ -361,6 +361,38 @@
 				id: "4769F3CFE98A445F"
 				type: "item"
 				item: "kubejs:heavy_machinery_schematics"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 9.0d
+			shape: "gear"
+			description: ["A fusion of technology and magic, the Stellar Neutron Activator is capable of producing enormous quantities of Tritium continuously, though the process requires enormous quantities of mana and energy to extract it from water."]
+			dependencies: ["16DE48989A21D643"]
+			id: "5A772150FF638680"
+			tasks: [{
+				id: "2124E28BB47D675C"
+				type: "item"
+				item: "masterfulmachinery:stellar_neutron_activator_controller"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			shape: "gear"
+			description: [
+				"A high-speed, high-pressure version of the standard Assembly Table capable of processing many circuits at once. Very useful for expanding circuit manufacturing operations!"
+				""
+				"Two air supplies are required to run this machine. The High-Pressure Input requires greater than 11 bar to begin functioning while the Assembly Controller needs 5 bar and may be accessed from below. "
+				""
+				"This machine will still function for all regular Assembly Table crafts as well by placing the inputs in the crate in the back. All outputs will be retrieved from this same crate."
+			]
+			dependencies: ["71D581C742D17CA4"]
+			id: "76EDB33FBF318FB4"
+			tasks: [{
+				id: "33104A6845FE9370"
+				type: "item"
+				item: "masterfulmachinery:advanced_assembly_table_controller"
 			}]
 		}
 	]

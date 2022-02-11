@@ -2,9 +2,10 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/mekanism/shaped_data/';
     const recipes = [
         {
-            result: { item: 'mekanism:basic_energy_cube' },
+            result: 'mekanism:basic_energy_cube',
             pattern: ['ABA', 'CDC', 'EEE'],
             key: {
                 A: { item: 'powah:capacitor_blazing' },
@@ -24,7 +25,7 @@ onEvent('recipes', (event) => {
             id: 'mekanism:energy_cube/basic'
         },
         {
-            result: { item: 'mekanism:advanced_energy_cube' },
+            result: 'mekanism:advanced_energy_cube',
             pattern: ['ABA', 'CDC', 'EEE'],
             key: {
                 A: { item: 'powah:capacitor_niotic' },
@@ -44,7 +45,7 @@ onEvent('recipes', (event) => {
             id: 'mekanism:energy_cube/advanced'
         },
         {
-            result: { item: 'mekanism:elite_energy_cube' },
+            result: 'mekanism:elite_energy_cube',
             pattern: ['ABA', 'CDC', 'EEE'],
             key: {
                 A: { item: 'powah:capacitor_spirited' },
@@ -64,7 +65,7 @@ onEvent('recipes', (event) => {
             id: 'mekanism:energy_cube/elite'
         },
         {
-            result: { item: 'mekanism:ultimate_energy_cube' },
+            result: 'mekanism:ultimate_energy_cube',
             pattern: ['ABA', 'CDC', 'EEE'],
             key: {
                 A: { item: 'powah:capacitor_nitro' },
@@ -84,7 +85,7 @@ onEvent('recipes', (event) => {
             id: 'mekanism:energy_cube/ultimate'
         },
         {
-            result: { item: 'mekanism:basic_induction_cell' },
+            result: 'mekanism:basic_induction_cell',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: { item: 'powah:capacitor_blazing' },
@@ -94,7 +95,7 @@ onEvent('recipes', (event) => {
             id: 'mekanism:induction/cell/basic'
         },
         {
-            result: { item: 'mekanism:advanced_induction_cell' },
+            result: 'mekanism:advanced_induction_cell',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: { item: 'powah:capacitor_niotic' },
@@ -104,7 +105,7 @@ onEvent('recipes', (event) => {
             id: 'mekanism:induction/cell/advanced'
         },
         {
-            result: { item: 'mekanism:elite_induction_cell' },
+            result: 'mekanism:elite_induction_cell',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: { item: 'powah:capacitor_spirited' },
@@ -114,7 +115,7 @@ onEvent('recipes', (event) => {
             id: 'mekanism:induction/cell/elite'
         },
         {
-            result: { item: 'mekanism:ultimate_induction_cell' },
+            result: 'mekanism:ultimate_induction_cell',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: { item: 'powah:capacitor_nitro' },
@@ -122,11 +123,127 @@ onEvent('recipes', (event) => {
                 C: { item: 'mekanism:ultimate_energy_cube' }
             },
             id: 'mekanism:induction/cell/ultimate'
+        },
+        {
+            result: 'mekanism:advanced_induction_cell',
+            pattern: ['ABA', 'DCD', 'ABA'],
+            key: {
+                A: { item: 'powah:capacitor_niotic' },
+                B: { item: 'mekanism:basic_induction_cell' },
+                C: { item: 'mekanism:advanced_energy_cube' },
+                D: { tag: 'forge:ingots/gaia_spirit' }
+            },
+            id: `${id_prefix}advanced_induction_cell_alt`
+        },
+        {
+            result: 'mekanism:elite_induction_cell',
+            pattern: ['ABA', 'DCD', 'ABA'],
+            key: {
+                A: { item: 'powah:capacitor_spirited' },
+                B: { item: 'mekanism:advanced_induction_cell' },
+                C: { item: 'mekanism:elite_energy_cube' },
+                D: { tag: 'forge:ingots/gaia_spirit' }
+            },
+            id: `${id_prefix}elite_induction_cell_alt`
+        },
+        {
+            result: 'mekanism:ultimate_induction_cell',
+            pattern: ['ABA', 'DCD', 'ABA'],
+            key: {
+                A: { item: 'powah:capacitor_nitro' },
+                B: { item: 'mekanism:elite_induction_cell' },
+                C: { item: 'mekanism:ultimate_energy_cube' },
+                D: { tag: 'forge:ingots/gaia_spirit' }
+            },
+            id: `${id_prefix}ultimate_induction_cell_alt`
+        },
+
+        {
+            result: 'mekanism:advanced_induction_provider',
+            pattern: ['BAB', 'ECE', 'DDD'],
+            key: {
+                A: { tag: 'forge:circuits/advanced' },
+                B: { item: 'mekanism:basic_induction_provider' },
+                C: { item: 'mekanism:advanced_energy_cube' },
+                D: { item: 'powah:capacitor_niotic' },
+                E: { tag: 'forge:ingots/gaia_spirit' }
+            },
+            id: `${id_prefix}advanced_induction_provider_alt`
+        },
+        {
+            result: 'mekanism:elite_induction_provider',
+            pattern: ['BAB', 'ECE', 'DDD'],
+            key: {
+                A: { tag: 'forge:circuits/elite' },
+                B: { item: 'mekanism:advanced_induction_provider' },
+                C: { item: 'mekanism:elite_energy_cube' },
+                D: { item: 'powah:capacitor_spirited' },
+                E: { tag: 'forge:ingots/gaia_spirit' }
+            },
+            id: `${id_prefix}elite_induction_provider_alt`
+        },
+        {
+            result: 'mekanism:ultimate_induction_provider',
+            pattern: ['BAB', 'ECE', 'DDD'],
+            key: {
+                A: { tag: 'forge:circuits/ultimate' },
+                B: { item: 'mekanism:elite_induction_provider' },
+                C: { item: 'mekanism:ultimate_energy_cube' },
+                D: { item: 'powah:capacitor_nitro' },
+                E: { tag: 'forge:ingots/gaia_spirit' }
+            },
+            id: `${id_prefix}ultimate_induction_provider_alt`
+        },
+
+        {
+            result: 'mekanism:basic_induction_provider',
+            pattern: ['BAB', 'BCB', 'DDD'],
+            key: {
+                A: { tag: 'forge:circuits/basic' },
+                B: { tag: 'forge:alloys/elite' },
+                C: { item: 'mekanism:basic_energy_cube' },
+                D: { item: 'powah:capacitor_blazing' }
+            },
+            id: 'mekanism:induction/provider/basic'
+        },
+        {
+            result: 'mekanism:advanced_induction_provider',
+            pattern: ['BAB', 'BCB', 'DDD'],
+            key: {
+                A: { tag: 'forge:circuits/advanced' },
+                B: { item: 'mekanism:basic_induction_provider' },
+                C: { item: 'mekanism:advanced_energy_cube' },
+                D: { item: 'powah:capacitor_niotic' }
+            },
+            id: 'mekanism:induction/provider/advanced'
+        },
+        {
+            result: 'mekanism:elite_induction_provider',
+            pattern: ['BAB', 'BCB', 'DDD'],
+            key: {
+                A: { tag: 'forge:circuits/elite' },
+                B: { item: 'mekanism:advanced_induction_provider' },
+                C: { item: 'mekanism:elite_energy_cube' },
+                D: { item: 'powah:capacitor_spirited' }
+            },
+            id: 'mekanism:induction/provider/elite'
+        },
+        {
+            result: 'mekanism:ultimate_induction_provider',
+            pattern: ['BAB', 'BCB', 'DDD'],
+            key: {
+                A: { tag: 'forge:circuits/ultimate' },
+                B: { item: 'mekanism:elite_induction_provider' },
+                C: { item: 'mekanism:ultimate_energy_cube' },
+                D: { item: 'powah:capacitor_nitro' }
+            },
+            id: 'mekanism:induction/provider/ultimate'
         }
     ];
 
     recipes.forEach((recipe) => {
         recipe.type = 'mekanism:mek_data';
+        recipe.result = Item.of(recipe.result).toJson();
         event.custom(recipe).id(recipe.id);
     });
 });

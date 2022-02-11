@@ -393,10 +393,10 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'rftoolsstorage:storage_module0',
-            pattern: ['ABA', 'CDC', 'ABA'],
+            pattern: ['ADA', 'CBC', 'ADA'],
             key: {
                 A: '#thermal:glass/hardened',
-                B: 'ironchest:silver_chest',
+                B: 'ironchest:copper_chest',
                 C: 'buildinggadgets:construction_paste',
                 D: '#forge:gears/osmium'
             },
