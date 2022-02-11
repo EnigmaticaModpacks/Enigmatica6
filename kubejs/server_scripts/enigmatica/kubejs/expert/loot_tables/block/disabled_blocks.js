@@ -17,12 +17,9 @@ onEvent('block.loot_tables', (event) => {
     ];
 
     let illusory_blocks = [
-        { real: 'botania:livingrock', fake: 'atum:sand' },
-        { real: 'botania:livingrock_wall', fake: 'atum:sand' },
-        { real: 'botania:livingrock_bricks', fake: 'atum:sand' },
-        { real: 'mythicbotany:gold_ore', fake: 'undergarden:sediment' },
-        { real: 'mythicbotany:dragonstone_ore', fake: 'undergarden:sediment' },
-        { real: 'botania:dreamwood', fake: 'minecraft:stick' },
+        { real: 'botania:livingrock', fake: 'undergarden:shiverstone' },
+        { real: 'botania:livingrock_wall', fake: 'undergarden:shiverstone' },
+        { real: 'botania:livingrock_bricks', fake: 'undergarden:shiverstone' },
         { real: 'botania:apothecary_default', fake: 'mekanism:salt' },
         { real: 'botania:apothecary_forest', fake: 'mekanism:salt' },
         { real: 'botania:apothecary_plains', fake: 'mekanism:salt' },

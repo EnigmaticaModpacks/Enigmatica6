@@ -43,7 +43,19 @@ onEvent('item.registry', (event) => {
         'celestial_mycelium_filaments',
         'incomplete_book',
         'incomplete_capacitor_basic_large',
-        'astrogro'
+        'astrogro',
+        'automation_mastery',
+        'botanical_mastery',
+        'astronomy_mastery',
+        'alchemy_mastery',
+        'ritual_mastery',
+        'aura_mastery',
+        'engineering_mastery',
+        'energistics_mastery',
+        'dimensional_mastery',
+        'battle_mastery',
+        'excavation_mastery',
+        'culinary_mastery'
     ];
 
     const ritualDummies = [
@@ -94,7 +106,8 @@ onEvent('item.registry', (event) => {
         'craft_ender_dagger',
         'craft_enchantment_library',
         'craft_fisher_foliot',
-        'craft_gaia_reactor_controller'
+        'craft_gaia_reactor_controller',
+        'craft_miner_marid_irradiated'
     ];
 
     const reusableItemTextures = [
@@ -114,6 +127,21 @@ onEvent('item.registry', (event) => {
         { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
         */
+
+        { name: 'diy_arc_furnace', texture: 'packing_crate_gray' },
+        { name: 'diy_pumpjack', texture: 'packing_crate_yellow' },
+        { name: 'diy_distillation_tower', texture: 'advanced_packing_crate_purple' },
+        { name: 'diy_excavator', texture: 'advanced_packing_crate_green' },
+        { name: 'mining_gadget_kit', texture: 'packing_crate_blue' },
+        { name: 'flux_bore_kit', texture: 'packing_crate_lime' },
+        { name: 'diy_pedestal_quarry', texture: 'packing_crate_red' },
+        { name: 'diy_mekasuit_helmet', texture: 'packing_crate_red' },
+        { name: 'diy_mekasuit_bodyarmor', texture: 'packing_crate_red' },
+        { name: 'diy_mekasuit_pants', texture: 'packing_crate_red' },
+        { name: 'diy_mekasuit_boots', texture: 'packing_crate_red' },
+        { name: 'diy_meka_tool', texture: 'packing_crate_red' },
+        { name: 'artisinal_ritual_kit', texture: 'advanced_packing_crate_purple' },
+        { name: 'artisinal_chalk_set', texture: 'advanced_packing_crate_green' },
 
         { name: 'engineers_school_project', texture: 'packing_crate_gray' },
         { name: 'partial_engineers_school_project', texture: 'packing_crate_gray' },
@@ -257,7 +285,7 @@ onEvent('item.registry', (event) => {
     reusableItemTextures.forEach((item) => {
         event.create(item.name).group('KubeJS').texture(`kubejs:item/${item.texture}`);
     });
-
+    // Custom Occultism Miners
     event
         .create('fisher_foliot')
         .group('KubeJS')
@@ -265,6 +293,14 @@ onEvent('item.registry', (event) => {
         .maxStackSize(1)
         .maxDamage(500)
         .displayName('Fisher Foliot');
+    event
+        .create('miner_marid_irradiated')
+        .group('KubeJS')
+        .texture('kubejs:item/magic_lamp')
+        .maxStackSize(1)
+        .maxDamage(50)
+        .displayName('Irradiated Ore Miner Marid');
+
 
     // Custom Foods
     event

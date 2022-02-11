@@ -44,6 +44,22 @@ onEvent('recipes', (event) => {
             extraOutputs: [Item.of('bloodmagic:corrupted_tinydust').chance(0.15)],
             consume: false,
             id: `${id_prefix}corrupted_tinydust_from_demon_crystals`
+        },
+        {
+            output: 'botania:mana_diamond',
+            input: 'botania:dragonstone',
+            tool: '#bloodmagic:arc/reverter',
+            extraOutputs: [],
+            consume: false,
+            id: `${id_prefix}mana_diamond_from_dragonstone`
+        },
+        {
+            output: 'botania:mana_diamond_block',
+            input: 'botania:dragonstone_block',
+            tool: '#bloodmagic:arc/reverter',
+            extraOutputs: [],
+            consume: false,
+            id: `${id_prefix}mana_diamond_block_from_dragonstone_block`
         }
 
         /*,
