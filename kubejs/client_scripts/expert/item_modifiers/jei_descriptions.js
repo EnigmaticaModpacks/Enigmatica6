@@ -27,13 +27,6 @@ onEvent('jei.information', (event) => {
                 Text.of('Liquid Meat can be obtained by "processing" cows.').color('#6e2a2a'),
                 Text.of('Pink Slime can be harvested from a Pink Wither using a Fluid Laser.').color('#da07e6')
             ]
-        },
-        {
-            items: ['mekanismgenerators:tritium', 'mekanismgenerators:deuterium'],
-            text: [
-                'Fission fuels cannot be manufactured as gasses in Expert mode.',
-                'Liquid Deuterium and Tritium can be obtained via custom Masterful Machines.'
-            ]
         }
     ];
 
