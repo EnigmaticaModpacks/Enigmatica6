@@ -273,6 +273,7 @@ onEvent('recipes', (event) => {
             },
             id: `${id_prefix}industrial_deuterium_plant_spinny_port_create_rotation_input`
         },
+        {
             output: 'masterfulmachinery:enigmatic_tree_of_life_item_port_items_output',
             pattern: ['ABA', 'BCB', 'ADA'],
             key: {
