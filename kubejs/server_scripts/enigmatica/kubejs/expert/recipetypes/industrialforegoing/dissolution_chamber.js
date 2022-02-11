@@ -170,7 +170,7 @@ onEvent('recipes', (event) => {
             outputFluidAmount: 0,
             id: 'mekanism:upgrade/energy'
         },
-        {
+        /*{
             inputs: [
                 '#forge:gears/bronze',
                 'powah:blank_card',
@@ -188,7 +188,7 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:upgrade/filter'
-        },
+        },*/
         {
             inputs: [
                 '#forge:gears/silver',

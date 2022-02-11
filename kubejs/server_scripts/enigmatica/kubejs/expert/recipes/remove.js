@@ -87,6 +87,10 @@ onEvent('recipes', (event) => {
         /mekanism:factory/,
         'mekanism:robit',
         /mekanism:mekasuit/,
+        'mekanism:upgrade/filter',
+
+        'mekanismgenerators:separator/heavy_water',
+        'mekanismgenerators:activating/tritium',
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
