@@ -45,6 +45,7 @@ onEvent('jei.information', (event) => {
         'integrateddynamics:squeezer',
         'integrateddynamics:drying_basin',
         'integrateddynamics:coal_generator',
+        'mekanism:upgrade_filter',
         'darkutils:rune_damage_player',
         'integrateddynamics:coal_generator',
         /darkutils:export_plate/,

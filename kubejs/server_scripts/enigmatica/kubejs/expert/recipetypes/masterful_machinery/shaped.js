@@ -214,6 +214,66 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}gaia_reactor_mana_port_botania_mana_output`
         },
         {
+            output: 'masterfulmachinery:industrial_deuterium_plant_fluid_port_fluids_input',
+            pattern: ['BEB', 'ACA', 'BDB'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'mekanism:ultimate_mechanical_pipe',
+                C: 'pneumaticcraft:huge_tank',
+                D: 'xnet:advanced_connector_green',
+                E: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}industrial_deuterium_plant_fluid_port_fluids_input`
+        },
+        {
+            output: 'masterfulmachinery:industrial_deuterium_plant_fluid_port_fluids_output',
+            pattern: ['BEB', 'ACA', 'BDB'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'mekanism:ultimate_mechanical_pipe',
+                C: 'pneumaticcraft:huge_tank',
+                D: 'xnet:advanced_connector_red',
+                E: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}industrial_deuterium_plant_fluid_port_fluids_output`
+        },
+        {
+            output: 'masterfulmachinery:industrial_deuterium_plant_energy_port_energy_input',
+            pattern: ['BEB', 'ACA', 'BDB'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'mekanism:ultimate_universal_cable',
+                C: 'mekanism:ultimate_induction_provider',
+                D: 'xnet:advanced_connector_green',
+                E: '#forge:circuits/elite'
+            },
+            id: `${id_prefix}industrial_deuterium_plant_energy_port_energy_input`
+        },
+        {
+            output: 'masterfulmachinery:industrial_deuterium_plant_pressure_port_pncr_pressure_input',
+            pattern: ['BDB', 'ACA', 'BEB'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'pneumaticcraft:advanced_pressure_tube',
+                C: 'pneumaticcraft:reinforced_air_canister',
+                D: '#forge:circuits/elite',
+                E: 'xnet:advanced_connector_green'
+            },
+            id: `${id_prefix}industrial_deuterium_plant_pressure_port_pncr_pressure_input`
+        },
+        {
+            output: 'masterfulmachinery:industrial_deuterium_plant_spinny_port_create_rotation_input',
+            pattern: ['BDB', 'ACA', 'BEB'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'create:brass_casing',
+                C: 'create:rotation_speed_controller',
+                D: '#forge:circuits/elite',
+                E: 'xnet:advanced_connector_green'
+            },
+            id: `${id_prefix}industrial_deuterium_plant_spinny_port_create_rotation_input`
+        },
+        {
             output: 'masterfulmachinery:enigmatic_tree_of_life_item_port_items_output',
             pattern: ['ABA', 'BCB', 'ADA'],
             key: {
