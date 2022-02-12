@@ -1316,19 +1316,20 @@ onEvent('recipes', (event) => {
             duration: 120,
             ritual_dummy: 'kubejs:craft_miner_marid_irradiated',
             ingredients: [
-                '#forge:ores/uranium',
-                '#forge:ores/uranium',
-                '#forge:ores/uranium',
-                '#forge:ores/uranium',
-                '#forge:ores/uranium',
-                '#forge:ores/uranium',
-                '#forge:ores/fluorite',
-                '#forge:ores/sulfur',
+                'occultism:magic_lamp_empty',
                 Item.of('occultism:iesnium_pickaxe', '{Damage:0]}').weakNBT(),
-                'occultism:iesnium_block',
-                'atum:godforged_block'
+                'atum:ptah_godforged_block',
+                '#forge:storage_blocks/iesnium',
+                '#forge:clusters/fluorite',
+                '#forge:clusters/sulfur',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium'
             ],
-            result:  Item.of('kubejs:miner_marid_irradiated', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
+            result: Item.of('kubejs:miner_marid_irradiated', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
             id: `${id_prefix}miner_marid_irradiated`
         }
     ];
