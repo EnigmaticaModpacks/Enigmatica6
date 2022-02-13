@@ -77,6 +77,27 @@ onEvent('recipes', (event) => {
                 rolls: 3
             },
             id: 'enigmatica:expert/interactio/item_explode/invar_dust'
+        },
+        {
+            inputs: [
+                { tag: 'botania:runes/earth', count: 1 },
+                { item: 'quark:rainbow_rune', count: 8 }
+            ],
+            output: {
+                entries: [
+                    { result: { item: 'quark:red_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:orange_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:yellow_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:green_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:blue_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:indigo_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:violet_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:white_crystal_cluster', count: 1 }, weight: 2 }
+                ],
+                empty_weight: 84,
+                rolls: 100
+            },
+            id: 'enigmatica:expert/interactio/item_explode/invar_dust'
         }
     ];
 
