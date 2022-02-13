@@ -459,7 +459,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}auto_iridescent_altar_starlight_port_astral_starlight_input`
         },
         {
-            output: 'kubejs:dreamwood_grip',
+            output: Item.of('kubejs:dreamwood_grip'),
             altar_type: 3,
             duration: 600,
             starlight: 7000,
@@ -499,7 +499,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}dreamwood_grip`
         },
         {
-            output: 'kubejs:worldshaper_barrel',
+            output: Item.of('kubejs:worldshaper_barrel'),
             altar_type: 3,
             duration: 600,
             starlight: 7000,

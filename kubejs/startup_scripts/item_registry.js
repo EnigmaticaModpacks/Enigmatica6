@@ -44,6 +44,18 @@ onEvent('item.registry', (event) => {
         'incomplete_book',
         'incomplete_capacitor_basic_large',
         'astrogro',
+        'automation_mastery_fragment',
+        'botanical_mastery_fragment',
+        'astronomy_mastery_fragment',
+        'alchemy_mastery_fragment',
+        'ritual_mastery_fragment',
+        'aura_mastery_fragment',
+        'engineering_mastery_fragment',
+        'energistics_mastery_fragment',
+        'dimensional_mastery_fragment',
+        'battle_mastery_fragment',
+        'excavation_mastery_fragment',
+        'culinary_mastery_fragment',
         'automation_mastery',
         'botanical_mastery',
         'astronomy_mastery',
@@ -55,7 +67,11 @@ onEvent('item.registry', (event) => {
         'dimensional_mastery',
         'battle_mastery',
         'excavation_mastery',
-        'culinary_mastery'
+        'culinary_mastery',
+        'dreamwood_grip',
+        'worldshaper_cog',
+        'worldshaper_barrel',
+        'laputian_ingot'
     ];
 
     const ritualDummies = [
@@ -300,7 +316,6 @@ onEvent('item.registry', (event) => {
         .maxStackSize(1)
         .maxDamage(50)
         .displayName('Irradiated Ore Miner Marid');
-
 
     // Custom Foods
     event
