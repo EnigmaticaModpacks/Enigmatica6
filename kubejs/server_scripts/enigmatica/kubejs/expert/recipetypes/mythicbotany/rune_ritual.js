@@ -139,11 +139,11 @@ onEvent('recipes', (event) => {
                 { pos: { x: 3, z: 3 }, item: '#botania:runes/vanaheim' },
 
                 { pos: { x: -3, z: 2 }, item: '#forge:circuits/ultimate' },
-                { pos: { x: -2, z: 2 }, item: 'kubejs:laputian_ingot' },
+                { pos: { x: -2, z: 2 }, item: 'botania:mana_diamond_block' },
                 { pos: { x: -1, z: 2 }, item: 'botania:dragonstone_block' },
                 { pos: { x: 0, z: 2 }, item: 'botania:mana_diamond_block' },
                 { pos: { x: 1, z: 2 }, item: 'botania:dragonstone_block' },
-                { pos: { x: 2, z: 2 }, item: 'kubejs:laputian_ingot' },
+                { pos: { x: 2, z: 2 }, item: 'botania:mana_diamond_block' },
                 { pos: { x: 3, z: 2 }, item: '#forge:circuits/ultimate' },
 
                 { pos: { x: -4, z: 1 }, item: '#forge:pellets/antimatter' },
@@ -177,11 +177,11 @@ onEvent('recipes', (event) => {
                 { pos: { x: 4, z: -1 }, item: '#forge:pellets/antimatter' },
 
                 { pos: { x: -3, z: -2 }, item: '#forge:circuits/ultimate' },
-                { pos: { x: -2, z: -2 }, item: 'kubejs:laputian_ingot' },
+                { pos: { x: -2, z: -2 }, item: 'botania:mana_diamond_block' },
                 { pos: { x: -1, z: -2 }, item: 'botania:dragonstone_block' },
                 { pos: { x: 0, z: -2 }, item: 'botania:mana_diamond_block' },
                 { pos: { x: 1, z: -2 }, item: 'botania:dragonstone_block' },
-                { pos: { x: 2, z: -2 }, item: 'kubejs:laputian_ingot' },
+                { pos: { x: 2, z: -2 }, item: 'botania:mana_diamond_block' },
                 { pos: { x: 3, z: -2 }, item: '#forge:circuits/ultimate' },
 
                 { pos: { x: -3, z: -3 }, item: '#botania:runes/joetunheim' },

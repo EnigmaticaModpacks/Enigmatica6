@@ -250,7 +250,7 @@ onEvent('recipes', (event) => {
         'culinary'
     ];
 
-    masteries.sizes.forEach((mastery) => {
+    masteries.forEach((mastery) => {
         recipes.push({
             input: { item: `kubejs:${mastery}_mastery_fragment`, count: 50 },
             output: { item: `kubejs:${mastery}_mastery`, count: 1 },
