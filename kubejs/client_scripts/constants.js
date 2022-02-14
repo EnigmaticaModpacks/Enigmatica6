@@ -211,6 +211,9 @@ const itemsToHide = [
     'masterfulmachinery:gaia_reactor_item_port_items_input',
     'masterfulmachinery:enigmatic_tree_of_life_fluid_port_fluids_output',
     'masterfulmachinery:enigmatic_tree_of_life_mana_port_botania_mana_output',
+    'masterfulmachinery:industrial_deuterium_plant_energy_port_energy_output',
+    'masterfulmachinery:industrial_deuterium_plant_spinny_port_create_rotation_output',
+    'masterfulmachinery:industrial_deuterium_plant_pressure_port_pncr_pressure_output',
 
     'mctb:cherry_crafting_table',
     'mctb:dead_crafting_table',
