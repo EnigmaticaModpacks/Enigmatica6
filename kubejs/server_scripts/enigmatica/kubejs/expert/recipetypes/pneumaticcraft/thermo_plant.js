@@ -155,6 +155,21 @@ onEvent('recipes', (event) => {
         }
     ];
 
+    let crystal_colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'white', 'black'];
+
+    crystal_colors.forEach((crystal_color) => {
+        recipes.push({
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'tconstruct:molten_aluminum', amount: 18 },
+            item_input: { item: `quark:${crystal_color}_crystal_cluster` },
+            item_output: { item: `quark:${crystal_color}_crystal_pane`, count: 1 },
+            pressure: 4.8,
+            exothermic: false,
+            speed: 0.25,
+            temperature: { min_temp: 2200 },
+            id: `${id_prefix}${crystal_color}_crystal_pane`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'pneumaticcraft:thermo_plant';
         event.custom(recipe).id(recipe.id);
