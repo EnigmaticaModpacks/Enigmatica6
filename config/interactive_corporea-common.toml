@@ -13,3 +13,8 @@
 	#Range: > 1
 	quantizationDeviceManaCapacity = 10000
 
+[Animations]
+	#The animation speed of the quantization of items (that's the ticks of one stage, and there's three stages, so the full animation time will be 3 * <this value>)
+	#Range: 1 ~ 100
+	quantizationAnimationSpeed = 10
+

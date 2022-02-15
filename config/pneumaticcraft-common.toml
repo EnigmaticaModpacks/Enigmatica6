@@ -278,6 +278,10 @@
 	#Number of periodic offers randomly selected for the 'live' offer list. Note: this a maximum, and the actual number chosen each time may be less.
 	#Range: > 0
 	numPeriodicOffers = 20
+	#Amadrone spawn location, relative to the delivery/pickup position. This is a X/Y/Z triple. See also 'amadrone_spawn_location_relative_to_ground_level' for how the drone's Y position is calculated.
+	amadrone_spawn_location = [30, 30, 0]
+	#Affects Amadrone Y spawning position: when true, the Y position is relative to ground level at the calculated X/Z position. When false, it is relative to the delivery/pickup position.
+	amadrone_spawn_location_relative_to_ground_level = true
 
 [Heat]
 	#Default thermal resistance for fluid blocks
