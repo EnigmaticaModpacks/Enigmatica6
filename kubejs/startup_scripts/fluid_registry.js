@@ -50,21 +50,9 @@ onEvent('fluid.registry', (event) => {
         },
         {
             type: 'thick',
-            id: 'molten_manasteel',
-            texture: '0x3287fc',
-            display: 'Molten Manasteel'
-        },
-        {
-            type: 'thick',
             id: 'molten_blazing',
             texture: '0xd79811',
             display: 'Molten Blazing Crystal'
-        },
-        {
-            type: 'thick',
-            id: 'molten_elementium',
-            texture: '0xee5bac',
-            display: 'Molten Elementium'
         },
         {
             type: 'thick',
@@ -86,21 +74,9 @@ onEvent('fluid.registry', (event) => {
         },
         {
             type: 'thick',
-            id: 'molten_terrasteel',
-            texture: '0x38e200',
-            display: 'Molten Terrasteel'
-        },
-        {
-            type: 'thick',
             id: 'molten_aeternium',
             texture: '0x2e847c',
             display: 'Molten Aeternium'
-        },
-        {
-            type: 'thick',
-            id: 'molten_alfsteel',
-            texture: '0xfbb616',
-            display: 'Molten Alfsteel'
         },
         {
             type: 'thick',
