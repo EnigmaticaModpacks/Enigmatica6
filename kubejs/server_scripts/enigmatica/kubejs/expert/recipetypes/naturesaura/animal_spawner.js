@@ -112,16 +112,107 @@ onEvent('recipes', (event) => {
         {
             inputs: ['naturesaura:birth_spirit', 'resourcefulbees:sand_honeycomb', 'minecraft:chicken'],
             entity: 'alexsmobs:rattlesnake',
-            aura: 50000,
+            aura: 500,
             time: 60,
             id: `${id_prefix}rattlesnake`
         },
         {
             inputs: ['naturesaura:birth_spirit', 'resourcefulbees:sand_honeycomb', 'minecraft:golden_carrot'],
             entity: 'atum:camel',
-            aura: 50000,
+            aura: 500,
             time: 60,
             id: `${id_prefix}camel`
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', '#forge:wool'],
+            entity: 'minecraft:sheep',
+            aura: 500,
+            time: 60,
+            id: `${id_prefix}sheep`
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:boobee_honeycomb', 'minecraft:fire_charge'],
+            entity: 'minecraft:ghast',
+            aura: 120000,
+            time: 150,
+            id: 'naturesaura:animal_spawner/ghast'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:water_honeycomb', 'minecraft:heart_of_the_sea'],
+            entity: 'minecraft:guardian',
+            aura: 120000,
+            time: 150,
+            id: 'naturesaura:animal_spawner/guardian'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:water_honeycomb', 'minecraft:conduit'],
+            entity: 'minecraft:elder_guardian',
+            aura: 5000000,
+            time: 200,
+            id: `${id_prefix}elder_guardian`
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:ender_honeycomb', 'archers_paradox:shulker_arrow'],
+            entity: 'minecraft:shulker',
+            aura: 150000,
+            time: 100,
+            id: 'naturesaura:animal_spawner/shulker'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'botania:red_string', 'minecraft:end_stone'],
+            entity: 'minecraft:enderman',
+            aura: 120000,
+            time: 120,
+            id: 'naturesaura:animal_spawner/enderman'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:forest_honeycomb', 'minecraft:dandelion'],
+            entity: 'alexsmobs:moose',
+            aura: 100000,
+            time: 100,
+            id: `${id_prefix}moose`
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:water_honeycomb', '#forge:dyes/black'],
+            entity: 'minecraft:squid',
+            aura: 500,
+            time: 60,
+            id: 'naturesaura:animal_spawner/squid'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', 'environmental:mud'],
+            entity: 'minecraft:pig',
+            aura: 500,
+            time: 60,
+            id: 'naturesaura:animal_spawner/pig'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', '#forge:hay_bales'],
+            entity: 'minecraft:cow',
+            aura: 50000,
+            time: 60,
+            id: 'naturesaura:animal_spawner/cow'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', 'minecraft:golden_carrot'],
+            entity: 'minecraft:horse',
+            aura: 100000,
+            time: 100,
+            id: 'naturesaura:animal_spawner/horse'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:creeper_honeycomb', 'minecraft:tnt'],
+            entity: 'minecraft:creeper',
+            aura: 100000,
+            time: 120,
+            id: 'naturesaura:animal_spawner/creeper'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', '#forge:carpet', 'minecraft:chest'],
+            entity: 'minecraft:llama',
+            aura: 100000,
+            time: 120,
+            id: 'naturesaura:animal_spawner/llama'
         }
     ];
     recipes.forEach((recipe) => {
