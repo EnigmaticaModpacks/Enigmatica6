@@ -112,21 +112,21 @@ onEvent('recipes', (event) => {
         {
             inputs: ['naturesaura:birth_spirit', 'resourcefulbees:sand_honeycomb', 'minecraft:chicken'],
             entity: 'alexsmobs:rattlesnake',
-            aura: 500,
-            time: 60,
+            aura: 30000,
+            time: 40,
             id: `${id_prefix}rattlesnake`
         },
         {
             inputs: ['naturesaura:birth_spirit', 'resourcefulbees:sand_honeycomb', 'minecraft:golden_carrot'],
             entity: 'atum:camel',
-            aura: 500,
+            aura: 50000,
             time: 60,
             id: `${id_prefix}camel`
         },
         {
             inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', '#forge:wool'],
             entity: 'minecraft:sheep',
-            aura: 500,
+            aura: 50000,
             time: 60,
             id: `${id_prefix}sheep`
         },
@@ -175,14 +175,14 @@ onEvent('recipes', (event) => {
         {
             inputs: ['naturesaura:birth_spirit', 'resourcefulbees:water_honeycomb', '#forge:dyes/black'],
             entity: 'minecraft:squid',
-            aura: 500,
-            time: 60,
+            aura: 50000,
+            time: 40,
             id: 'naturesaura:animal_spawner/squid'
         },
         {
             inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', 'environmental:mud'],
             entity: 'minecraft:pig',
-            aura: 500,
+            aura: 50000,
             time: 60,
             id: 'naturesaura:animal_spawner/pig'
         },
@@ -201,7 +201,7 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:animal_spawner/horse'
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:creeper_honeycomb', 'minecraft:tnt'],
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:creeper_honeycomb', 'minecraft:gunpowder'],
             entity: 'minecraft:creeper',
             aura: 100000,
             time: 120,
@@ -213,6 +213,27 @@ onEvent('recipes', (event) => {
             aura: 100000,
             time: 120,
             id: 'naturesaura:animal_spawner/llama'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', 'minecraft:wheat_seeds'],
+            entity: 'minecraft:chicken',
+            aura: 30000,
+            time: 40,
+            id: 'naturesaura:animal_spawner/chicken'
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:rocky_honeycomb', '#forge:gems/mana_diamond'],
+            entity: 'quark:stoneling',
+            aura: 5000000,
+            time: 200,
+            id: `${id_prefix}stoneling`
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:water_honeycomb', 'quark:crab_leg'],
+            entity: 'upgrade_aquatic:nautilus',
+            aura: 30000,
+            time: 40,
+            id: `${id_prefix}nautilus`
         }
     ];
     recipes.forEach((recipe) => {
