@@ -606,7 +606,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     base: 'minecraft:chainmail_helmet',
-                    material: '#forge:ingots/manyullyn',
+                    material: '#forge:ingots/cobalt',
                     result: 'tconstruct:plate_helmet',
                     id: 'tconstruct:armor/building/plate_helmet'
                 }
@@ -761,7 +761,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     base: 'minecraft:chainmail_chestplate',
-                    material: '#forge:ingots/manyullyn',
+                    material: '#forge:ingots/cobalt',
                     result: 'tconstruct:plate_chestplate',
                     id: 'tconstruct:armor/building/plate_chestplate'
                 }
@@ -910,7 +910,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     base: 'minecraft:chainmail_leggings',
-                    material: '#forge:ingots/manyullyn',
+                    material: '#forge:ingots/cobalt',
                     result: 'tconstruct:plate_leggings',
                     id: 'tconstruct:armor/building/plate_leggings'
                 }
@@ -1053,7 +1053,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     base: 'minecraft:chainmail_boots',
-                    material: '#forge:ingots/manyullyn',
+                    material: '#forge:ingots/cobalt',
                     result: 'tconstruct:plate_boots',
                     id: 'tconstruct:armor/building/plate_boots'
                 }
