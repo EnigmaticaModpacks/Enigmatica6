@@ -416,6 +416,22 @@ onEvent('recipes', (event) => {
                 C: '#thermal:glass/hardened'
             },
             id: 'pneumaticcraft:volume_upgrade'
+        },
+        {
+            output: Item.of(
+                'pneumaticcraft:vacuum_pump',
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
+            ),
+            pattern: ['AEA', 'CBC', 'DFD'],
+            key: {
+                A: 'pneumaticcraft:pressure_gauge',
+                B: 'pneumaticcraft:turbine_rotor',
+                C: 'pneumaticcraft:pressure_tube',
+                D: 'pneumaticcraft:reinforced_stone_slab',
+                E: 'pneumaticcraft:pressure_chamber_glass',
+                F: 'thermal:machine_frame'
+            },
+            id: 'pneumaticcraft:vacuum_pump'
         }
     ];
 
