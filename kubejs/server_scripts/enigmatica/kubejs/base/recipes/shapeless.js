@@ -21,6 +21,17 @@ onEvent('recipes', (event) => {
             ]
         },
         {
+            output: 'simplefarming:blt',
+            inputs: [
+                '#forge:bread',
+                '#forge:cooked_bacon',
+                '#forge:cooked_bacon',
+                '#forge:salad_ingredients',
+                '#forge:crops/tomato'
+            ],
+            id: 'simplefarming:blt'
+        },
+        {
             output: 'simplefarming:sushi',
             inputs: [
                 '#forge:grain',

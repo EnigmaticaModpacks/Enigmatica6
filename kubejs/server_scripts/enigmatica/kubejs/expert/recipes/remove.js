@@ -124,6 +124,7 @@ onEvent('recipes', (event) => {
 
         'quark:building/crafting/candles/candle_basic',
         'quark:building/crafting/red_nether_bricks_util',
+        'quark:tools/crafting/runes/rainbow_rune',
 
         'refinedstorage:quartz_enriched_iron',
         'rftoolscontrol:cpu_core_500',

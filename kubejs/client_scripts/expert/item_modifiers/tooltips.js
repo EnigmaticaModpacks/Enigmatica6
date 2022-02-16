@@ -64,6 +64,7 @@ onEvent('item.tooltip', (event) => {
             items: ['kubejs:medium_machinery_schematics'],
             text: [
                 Text.of(`Unlocks the ability to form the following strutures:`).blue(),
+                Text.of(`- Automated Engineer's Workbench`).aqua(),
                 Text.of(`- Diesel Generator`).aqua(),
                 Text.of(`- Excavator`).aqua(),
                 Text.of(`- Fermenter`).aqua(),
@@ -81,7 +82,6 @@ onEvent('item.tooltip', (event) => {
                 Text.of(`Unlocks the ability to form the following strutures:`).blue(),
                 Text.of(`- Arc Furnace`).aqua(),
                 Text.of(`- Assembler`).aqua(),
-                Text.of(`- Automated Engineer's Workbench`).aqua(),
                 Text.of(`- Coker Unit`).aqua(),
                 Text.of(`- Crusher`).aqua(),
                 Text.of(`- Distillation Tower`).aqua(),

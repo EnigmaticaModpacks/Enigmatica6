@@ -769,12 +769,16 @@ onEvent('recipes', (event) => {
             ingredients: [
                 '#atum:godshards',
                 'atum:golden_date_enchanted',
-                '#forge:storage_blocks/nebu',
+                '#forge:ingots/nebu',
                 '#forge:heads',
                 '#atum:godshards',
                 '#atum:godshards',
-                'atum:crystal_glass',
-                'atum:crystal_glass'
+                '#forge:ingots/nebu',
+                '#forge:ingots/nebu',
+                'atum:linen_bandage',
+                'atum:linen_bandage',
+                'atum:linen_bandage',
+                'atum:linen_bandage'
             ],
             result: 'occultism:jei_dummy/none',
             id: `${id_prefix}pharaoh`

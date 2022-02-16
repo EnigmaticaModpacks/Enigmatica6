@@ -15,8 +15,8 @@ onEvent('ie.multiblock.form', (event) => {
         ['immersiveengineering:multiblocks/refinery', 'medium_machinery_schematics'],
         ['immersiveengineering:multiblocks/fermenter', 'medium_machinery_schematics'],
         ['immersiveengineering:multiblocks/squeezer', 'medium_machinery_schematics'],
+        ['immersiveengineering:multiblocks/auto_workbench', 'medium_machinery_schematics'],
 
-        ['immersiveengineering:multiblocks/auto_workbench', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/arcfurnace', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/assembler', 'heavy_machinery_schematics'],
         ['immersiveengineering:multiblocks/crusher', 'heavy_machinery_schematics'],
