@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/enigmatica/crushing';
+    const id_prefix = 'enigmatica:expert/enigmatica/';
     const recipes = [
         // {
         //     secondary_output: Item.of('minecraft:sugar').chance(0.5),
