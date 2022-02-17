@@ -1,8 +1,5 @@
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
-        return;
-    }
-    const id_prefix = 'enigmatica:expert/enigmatica/crushing';
+    const id_prefix = 'enigmatica:base/enigmatica/';
     const recipes = [
         // {
         //     secondary_output: Item.of('minecraft:sugar').chance(0.5),
@@ -14,49 +11,49 @@ onEvent('recipes', (event) => {
         // }
 
         {
-            secondary_output: Item.of('kubejs:basalt_powder').chance(0.5),
-            output: Item.of('kubejs:basalt_powder', 4),
-            input: Ingredient.of('#forge:stones/basalt'),
+            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
+            output: Item.of('minecraft:bone_meal', 2),
+            input: Ingredient.of('alexsmobs:shark_tooth'),
             experience: 0.5,
-            duration: 100,
+            duration: 50,
             ignore_occultism_multiplier: true,
-            id_suffix: 'basalt_powder'
+            id_suffix: 'bone_meal_from_shark_tooth'
+        },
+        {
+            secondary_output: Item.of('minecraft:bone_meal', 2).chance(0.25),
+            output: Item.of('minecraft:bone_meal', 8),
+            input: Ingredient.of('alexsmobs:bone_serpent_tooth'),
+            experience: 0.5,
+            duration: 150,
+            ignore_occultism_multiplier: true,
+            id_suffix: 'bone_meal_from_bone_serpent_tooth'
+        },
+        {
+            secondary_output: Item.of('minecraft:bone_meal', 2).chance(0.25),
+            output: Item.of('minecraft:bone_meal', 8),
+            input: Ingredient.of('upgrade_aquatic:thrasher_tooth'),
+            experience: 0.5,
+            duration: 150,
+            ignore_occultism_multiplier: true,
+            id_suffix: 'bone_meal_from_thrasher_tooth'
+        },
+        {
+            secondary_output: Item.of('minecraft:bone_meal', 2).chance(0.25),
+            output: Item.of('minecraft:bone_meal', 8),
+            input: Ingredient.of('alexsmobs:cachalot_whale_tooth'),
+            experience: 0.5,
+            duration: 150,
+            ignore_occultism_multiplier: true,
+            id_suffix: 'bone_meal_from_cachalot_whale_tooth'
         },
         {
             secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
-            output: Item.of('kubejs:ground_meat', 1),
-            input: Ingredient.of('#enigmatica:meats/small'),
+            output: Item.of('minecraft:bone_meal', 4),
+            input: Ingredient.of('alexsmobs:serrated_shark_tooth'),
             experience: 0.5,
-            duration: 100,
+            duration: 50,
             ignore_occultism_multiplier: true,
-            id_suffix: 'ground_meat_small'
-        },
-        {
-            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
-            output: Item.of('kubejs:ground_meat', 2),
-            input: Ingredient.of('#enigmatica:meats/medium'),
-            experience: 0.5,
-            duration: 100,
-            ignore_occultism_multiplier: true,
-            id_suffix: 'ground_meat_medium'
-        },
-        {
-            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
-            output: Item.of('kubejs:ground_meat', 3),
-            input: Ingredient.of('#enigmatica:meats/large'),
-            experience: 0.5,
-            duration: 100,
-            ignore_occultism_multiplier: true,
-            id_suffix: 'ground_meat_large'
-        },
-        {
-            secondary_output: Item.of('waystones:warp_dust').chance(0.15),
-            output: Item.of('waystones:warp_dust', 3),
-            input: Ingredient.of('waystones:warp_stone'),
-            experience: 0.5,
-            duration: 100,
-            ignore_occultism_multiplier: true,
-            id_suffix: 'warp_dust'
+            id_suffix: 'bone_meal_from_serrated_shark_tooth'
         }
     ];
 
