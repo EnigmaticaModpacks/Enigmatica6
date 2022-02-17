@@ -911,7 +911,7 @@
 			description: [
 				"The Redstone Module basically turns a pressure tube into a 16 channel bundled redstone cable. In the module's UI, press the arrow on the top right to swap between input and output mode."
 				""
-				"Applying an Advanced PCB to the module will unlock logic features, like running an AND operator on two differnt signals, or working as a comparitor checking the block the module is pointing at."
+				"Applying an Advanced PCB to the module will unlock logic features, like running an AND operator on two different signals, or working as a comparator checking the block the module is pointing at."
 				""
 				"Doesn't consume air, doesn't even need pressure to operate."
 			]
@@ -1114,7 +1114,7 @@
 			title: "Redstone Proxy (Update)"
 			x: -1.0d
 			y: -0.5d
-			description: ["Used when you want to emit a redstone signal with XNet directly, and triggers a block update when updated. Useful for intergrating NXet automation into external systems. Can also read redstone from external sources powering the proxy."]
+			description: ["Used when you want to emit a redstone signal with XNet directly, and triggers a block update when updated. Useful for integrating NXet automation into external systems. Can also read redstone from external sources powering the proxy."]
 			dependencies: ["559D7D60CDDE5596"]
 			id: "34D8561D229A3122"
 			tasks: [{
@@ -2387,7 +2387,7 @@
 			x: -7.5d
 			y: -2.5d
 			description: [
-				"Acts like an inventory checker, similar to a vanilla comparator. Also recieves signals as a normal redstone connector does."
+				"Acts like an inventory checker, similar to a vanilla comparator. Also receives signals as a normal redstone connector does."
 				""
 				"Connect to redstone wire, and set channel with the screwdriver"
 			]
