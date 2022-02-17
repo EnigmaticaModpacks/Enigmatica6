@@ -278,15 +278,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}ender_calx`
         },
         {
-            inputs: ['minecraft:warped_fungus', 'eidolon:ender_calx', '#forge:crops/nether_wart'],
-            output: 'eidolon:warped_sprouts',
-            count: 2,
-            syphon: 200,
-            ticks: 200,
-            orbLevel: 1,
-            id: `${id_prefix}warped_sprouts`
-        },
-        {
             inputs: [
                 'aquaculture:fish_bones',
                 '#forge:dusts/lapis',

@@ -574,6 +574,11 @@ onEvent('recipes', (event) => {
             inputs: [{ item: 'minecraft:stone' }, { item: 'minecraft:vine' }, { item: 'thermal:phytogro' }],
             output: { item: 'byg:mossy_stone' },
             id: `byg:mossy_stone`
+        },
+        {
+            inputs: [{ item: 'minecraft:warped_fungus' }, { item: 'eidolon:ender_calx' }],
+            output: { item: 'eidolon:warped_sprouts', count: 2 },
+            id: `${id_prefix}warped_sprouts`
         }
     ];
 
