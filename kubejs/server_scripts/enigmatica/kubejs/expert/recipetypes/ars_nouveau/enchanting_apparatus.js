@@ -66,10 +66,10 @@ onEvent('recipes', (event) => {
                 'betterendforge:andesite_pedestal',
                 'thermal:phytogro'
             ],
-            reagent: 'eidolon:crucible',
+            reagent: 'farmersdelight:cooking_pot',
             sourceCost: 1000,
             output: 'botania:apothecary_default',
-            id: `${id_prefix}crucible`
+            id: `${id_prefix}apothecary_default`
         },
         {
             inputs: [
@@ -95,7 +95,7 @@ onEvent('recipes', (event) => {
                 'occultism:otherstone_pedestal',
                 'eidolon:pewter_inlay'
             ],
-            reagent: 'eidolon:crucible',
+            reagent: 'farmersdelight:cooking_pot',
             sourceCost: 5000,
             output: 'bloodmagic:soulforge',
             id: `${id_prefix}soulforge`

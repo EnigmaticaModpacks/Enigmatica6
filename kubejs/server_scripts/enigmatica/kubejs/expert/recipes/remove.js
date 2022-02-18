@@ -46,6 +46,8 @@ onEvent('recipes', (event) => {
         'darkutils:crafting/blank_plate',
         /darkutils:crafting\/export_plate/,
 
+        'eidolon:crucible',
+
         'farmersdelight:book_from_canvas',
 
         'fluxnetworks:fluxcontroller',
