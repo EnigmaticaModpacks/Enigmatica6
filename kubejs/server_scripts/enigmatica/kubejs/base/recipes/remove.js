@@ -232,6 +232,8 @@ onEvent('recipes', (event) => {
 
         'supplementaries:strings_recipe',
 
+        'upgrade_aquatic:bone_meal_from_tooth',
+
         '/integrateddynamics:\\w+/convenience/minecraft_dye/',
         '/integrateddynamics:\\w+/ore/dust/',
         '/integrateddynamics:\\w+/ore/redstone/',
