@@ -97,6 +97,9 @@ onEvent('recipes', (event) => {
         'minecraft:book',
         'minecraft:leather_to_stripes',
         'minecraft:stick',
+        'minecraft:golden_carrot',
+        'minecraft:glistering_melon_slice',
+        'minecraft:golden_apple',
 
         'mininggadgets:upgrade_empty',
 

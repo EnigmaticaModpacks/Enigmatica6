@@ -78,13 +78,6 @@ onEvent('recipes', (event) => {
                 id: 'bloodmagic:soulforge/greatertartaricgem'
             },
             {
-                inputs: ['atum:nuit_godshard', 'astralsorcery:nocturnal_powder', 'eidolon:death_essence'],
-                output: Item.of('eidolon:shadow_gem'),
-                minimumDrain: 100.0,
-                drain: 32.0,
-                id: `${id_prefix}shadow_gem`
-            },
-            {
                 inputs: ['#forge:storage_blocks/gold', 'eidolon:crimson_essence'],
                 output: Item.of('eidolon:arcane_gold_block'),
                 minimumDrain: 32.0,

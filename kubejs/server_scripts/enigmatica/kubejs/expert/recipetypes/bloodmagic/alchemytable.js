@@ -269,15 +269,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}death_essence`
         },
         {
-            inputs: ['eidolon:enchanted_ash', '#forge:dusts/ender_pearl'],
-            output: 'eidolon:ender_calx',
-            count: 2,
-            syphon: 50,
-            ticks: 100,
-            orbLevel: 1,
-            id: `${id_prefix}ender_calx`
-        },
-        {
             inputs: [
                 'aquaculture:fish_bones',
                 '#forge:dusts/lapis',
@@ -708,6 +699,22 @@ onEvent('recipes', (event) => {
             ticks: 200,
             orbLevel: 1,
             id: 'darkutils:crafting/rune_damage'
+        },
+        {
+            inputs: [
+                'atum:nuit_godshard',
+                'astralsorcery:nocturnal_powder',
+                'eidolon:death_essence',
+                'eidolon:death_essence',
+                'eidolon:soul_shard',
+                'eidolon:soul_shard'
+            ],
+            output: 'eidolon:shadow_gem',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: `${id_prefix}shadow_gem`
         },
 
         /// Patchouli Removals
