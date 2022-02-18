@@ -75,6 +75,33 @@ onEvent('server.datapack.low_priority', (event) => {
             ]
         },
         {
+            name: 'amadron_mineral_survey_the_end',
+            rolls: [16, 32],
+            entries: [
+                { amount: [16, 24], weight: 100, item: 'emendatusenigmatica:diamond_chunk' },
+                { amount: [16, 24], weight: 500, item: 'emendatusenigmatica:emerald_chunk' },
+                { amount: [16, 24], weight: 50, item: 'emendatusenigmatica:lapis_chunk' },
+                { amount: [16, 24], weight: 50, item: 'emendatusenigmatica:apatite_chunk' },
+                { amount: [16, 24], weight: 50, item: 'emendatusenigmatica:arcane_chunk' },
+                { amount: [16, 24], weight: 500, item: 'emendatusenigmatica:dimensional_chunk' },
+
+                { amount: [16, 24], weight: 500, item: 'emendatusenigmatica:iron_chunk' },
+                { amount: [16, 24], weight: 400, item: 'emendatusenigmatica:aluminum_chunk' },
+                { amount: [16, 24], weight: 250, item: 'emendatusenigmatica:silver_chunk' },
+                { amount: [16, 24], weight: 200, item: 'emendatusenigmatica:nickel_chunk' },
+                { amount: [16, 24], weight: 200, item: 'emendatusenigmatica:tin_chunk' },
+                { amount: [16, 24], weight: 100, item: 'emendatusenigmatica:zinc_chunk' },
+
+                { amount: [16, 24], weight: 1000, item: 'betterendforge:ender_ore' },
+                { amount: [16, 24], weight: 1400, item: 'betterendforge:thallasium_ore' },
+                { amount: [16, 24], weight: 1500, item: 'betterendforge:amber_ore' },
+                { amount: [16, 24], weight: 1100, item: 'betterendforge:smaragdant_crystal' },
+                { amount: [16, 24], weight: 500, item: 'betterendforge:smaragdant_crystal_shard' },
+                { amount: [16, 24], weight: 1100, item: 'betterendforge:aurora_crystal' },
+                { amount: [16, 24], weight: 500, item: 'betterendforge:crystal_shards' }
+            ]
+        },
+        {
             name: 'amadron_botanical_survey_nether',
             rolls: [16, 32],
             entries: [
@@ -264,6 +291,15 @@ onEvent('server.datapack.low_priority', (event) => {
                 { table: 'amadron_survey_tool_return', weight: 1 },
                 { table: 'amadron_survey_air_canister_return', weight: 1 },
                 { table: 'amadron_mineral_survey_undergarden', weight: 1 }
+            ]
+        },
+        {
+            name: 'amadron_mineral_survey_the_end_combo',
+            type: 'multi_pool',
+            pools: [
+                { table: 'amadron_survey_tool_return', weight: 1 },
+                { table: 'amadron_survey_air_canister_return', weight: 1 },
+                { table: 'amadron_mineral_survey_the_end', weight: 1 }
             ]
         },
         {
