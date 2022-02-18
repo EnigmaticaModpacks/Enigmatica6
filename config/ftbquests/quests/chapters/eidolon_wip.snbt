@@ -262,7 +262,24 @@
 			tasks: [{
 				id: "0000000000000E91"
 				type: "item"
-				item: "eidolon:crucible"
+				title: "Crucible"
+				icon: "eidolon:crucible"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "eidolon:crucible"
+								Count: 1b
+							}
+							{
+								id: "farmersdelight:cooking_pot"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [
 				{
