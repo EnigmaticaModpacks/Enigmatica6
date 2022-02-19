@@ -208,14 +208,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/gold_brass',
+                '#forge:inlays/arcane_gold',
                 'ars_nouveau:warding_stone',
-                '#forge:ingots/gold_brass',
-                '#forge:nuggets/gold_brass',
-                '#forge:nuggets/gold_brass',
-                '#forge:ingots/gold_brass',
+                '#forge:inlays/arcane_gold',
+                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/arcane_gold',
+                '#forge:inlays/arcane_gold',
                 'ars_nouveau:warding_stone',
-                '#forge:ingots/gold_brass'
+                '#forge:inlays/arcane_gold'
             ],
             reagent: '#forge:gems/mana',
             output: 'ars_nouveau:crystallizer',
@@ -1933,17 +1933,17 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/gold_brass',
+                '#forge:nuggets/arcane_gold',
                 'create:polished_rose_quartz',
-                '#forge:ingots/gold_brass',
-                'ars_nouveau:spell_parchment',
-                'ars_nouveau:glyph_redstone_signal',
-                '#forge:ingots/gold_brass',
+                '#forge:nuggets/arcane_gold',
+                '#forge:inlays/arcane_gold',
+                '#forge:inlays/arcane_gold',
+                '#forge:nuggets/arcane_gold',
                 'create:polished_rose_quartz',
-                '#forge:ingots/gold_brass'
+                '#forge:nuggets/arcane_gold'
             ],
             sourceCost: 500,
-            reagent: 'minecraft:dispenser',
+            reagent: 'ars_nouveau:basic_spell_turret',
             output: 'ars_nouveau:spell_turret',
             id: 'ars_nouveau:spell_turret'
         },
@@ -2129,11 +2129,29 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}carbee_jar`
         },
         {
-            inputs: ['#forge:ingots/gold', '#forge:ingots/gold', '#forge:dusts/redstone', '#forge:dusts/redstone'],
+            inputs: [
+                '#forge:ingots/gold',
+                'eidolon:enchanted_ash',
+                '#forge:ingots/gold',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone'
+            ],
             sourceCost: 500,
             reagent: 'eidolon:soul_shard',
             output: Item.of('2x eidolon:arcane_gold_ingot'),
-            id: `${id_prefix}carbee_jar`
+            id: `${id_prefix}arcane_gold_ingot`
+        },
+        {
+            inputs: [
+                '#forge:ingots/gold',
+                'eidolon:soul_shard',
+                '#forge:ingots/gold',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone'
+            ],
+            reagent: 'minecraft:conduit',
+            output: Item.of('2x eidolon:arcane_gold_ingot'),
+            id: `${id_prefix}arcane_gold_ingot_starter`
         },
         {
             inputs: [
