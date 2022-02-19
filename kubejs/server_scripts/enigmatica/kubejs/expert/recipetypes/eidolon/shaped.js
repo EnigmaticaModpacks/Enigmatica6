@@ -48,7 +48,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'eidolon:brazier',
-            pattern: ['AAA', 'CBC', 'ABA'],
+            pattern: ['AAA', 'CBC', 'D D'],
             key: {
                 A: '#forge:ingots/pewter',
                 B: 'minecraft:conduit',

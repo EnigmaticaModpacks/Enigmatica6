@@ -209,7 +209,6 @@ onEvent('recipes', (event) => {
         { output: 'ars_nouveau:archmage_robes', id: 'ars_nouveau:archmage_robes' },
         { output: 'ars_nouveau:archmage_leggings', id: 'ars_nouveau:archmage_leggings' },
         { output: 'ars_nouveau:archmage_boots', id: 'ars_nouveau:archmage_boots' },
-        { output: 'ars_nouveau:basic_spell_turret', id: 'ars_nouveau:basic_spell_turret' },
 
         { output: 'bloodmagic:soulforge', id: 'bloodmagic:soul_forge' },
         { output: 'bloodmagic:ritualdiviner', id: 'bloodmagic:ritual_diviner_0' },
