@@ -365,7 +365,7 @@ onEvent('recipes', (event) => {
                 B: 'ars_nouveau:warding_stone',
                 C: 'eidolon:wooden_brewing_stand',
                 D: 'atum:coin_gold',
-                E: 'eidolon:crucible'
+                E: 'farmersdelight:cooking_pot'
             },
             id: 'thermal:dynamo_numismatic'
         },

@@ -41,7 +41,8 @@ onEvent('item.tooltip', (event) => {
                 'integrateddynamics:drying_basin',
                 'pneumaticcraft:air_compressor',
                 'pneumaticcraft:advanced_air_compressor',
-                'darkutils:rune_damage_player'
+                'darkutils:rune_damage_player',
+                'eidolon:crucible'
             ],
             text: [disabledInExpert]
         },
