@@ -1,0 +1,336 @@
+{
+  "type": "minecraft:barter",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:elder_prismarine_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:prismarine_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:chrome_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:silk_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:pillow_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:rock_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:branch_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:petal_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:moss_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:star_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:finger_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:acan_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:horn_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fire_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bubble_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brain_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tube_coral",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:kelp",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 5.0, "max": 8.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sushigocrafting:seaweed",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 5.0, "max": 8.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:tongue_kelp",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 5.0, "max": 8.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:thorny_kelp",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 5.0, "max": 8.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:ochre_kelp",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 5.0, "max": 8.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:polar_kelp",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 5.0, "max": 8.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:polar_kelp",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 5.0, "max": 8.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 2000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nautilus_shell",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1.0, "max": 4.0, "type": "minecraft:uniform" }
+            }
+          ],
+          "weight": 1500
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_crystals",
+          "weight": 1000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wet_sponge",
+          "weight": 1000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alexsmobs:shark_tooth",
+          "weight": 500
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:thrasher_tooth",
+          "weight": 500
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "weight": 400
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:scute",
+          "weight": 400
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:turtle_egg",
+          "weight": 300
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alexsmobs:music_disc_thime",
+          "weight": 100
+        }
+      ]
+    }
+  ]
+}
