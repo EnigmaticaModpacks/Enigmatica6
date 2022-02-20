@@ -147,7 +147,7 @@
 			title: "Spirit Magic - Adept"
 			icon: "occultism:golden_sacrificial_bowl"
 			x: 2.0d
-			y: -5.0d
+			y: -5.5d
 			shape: "rsquare"
 			dependencies: ["0000000000000FCD"]
 			id: "4CEB33C94A160D68"
@@ -259,8 +259,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -1.5d
+			x: 3.5d
+			y: -1.0d
 			shape: "diamond"
 			description: [
 				""
@@ -303,7 +303,7 @@
 		{
 			title: "Otherstone Trader"
 			x: 2.5d
-			y: -4.0d
+			y: -4.5d
 			shape: "diamond"
 			description: [
 				"Tossing Arcane Stone into a Spirit Fire is certainly… effective, but an Otherstone Trader will do the job at a significant discount. "
@@ -320,7 +320,7 @@
 		}
 		{
 			x: 1.5d
-			y: -4.0d
+			y: -4.5d
 			shape: "diamond"
 			description: ["Need a hand? Summon a few assistants to help out around the place. "]
 			dependencies: ["4CEB33C94A160D68"]
@@ -336,7 +336,7 @@
 		}
 		{
 			x: 2.0d
-			y: -3.5d
+			y: -4.0d
 			shape: "diamond"
 			description: ["Forming a proper slate for advanced inscriptions is a delicate process that adepts spend many hours perfecting.  Even the slightest imperfection can cause a batch to be ruined. "]
 			dependencies: [
@@ -353,7 +353,7 @@
 		}
 		{
 			x: 2.0d
-			y: -2.5d
+			y: -3.0d
 			dependencies: ["32D9D96C23106285"]
 			id: "0D8649291801C76C"
 			tasks: [{

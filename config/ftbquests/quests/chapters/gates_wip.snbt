@@ -116,7 +116,7 @@
 			tasks: [{
 				id: "0000000000000FCA"
 				type: "item"
-				item: "botania:mana_pylon"
+				item: "botania:runic_altar"
 			}]
 		}
 		{
@@ -136,6 +136,7 @@
 		}
 		{
 			title: "Occultism"
+			icon: "kubejs:craft_miner_marid_irradiated"
 			x: 1.5d
 			y: 3.0d
 			dependencies: ["0000000000000FC3"]
@@ -144,10 +145,9 @@
 				id: "0000000000000FCE"
 				type: "item"
 				item: {
-					id: "occultism:miner_foliot_unspecialized"
+					id: "occultism:chalk_white"
 					Count: 1b
 					tag: {
-						spiritName: "Azurzerarc"
 						Damage: 0
 					}
 				}

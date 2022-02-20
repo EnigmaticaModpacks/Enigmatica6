@@ -159,10 +159,11 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('projectvibrantjourneys:seashells', 8),
-            pattern: ['AAA', 'ABA', 'AAA'],
+            pattern: ['AAA', 'ABA', 'AAC'],
             key: {
                 A: 'minecraft:prismarine_shard',
-                B: 'minecraft:nautilus_shell'
+                B: 'minecraft:nautilus_shell',
+                C: 'minecraft:prismarine_crystals'
             },
             id: `${id_prefix}projectvibrantjourneys/seashells`
         },
