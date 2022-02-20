@@ -35,7 +35,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 7.0d
 			y: -4.5d
 			subtitle: "T-U-R-R-E-T, Turret"
 			description: [
@@ -254,7 +254,7 @@
 		}
 		{
 			x: 0.5d
-			y: -0.5d
+			y: -1.5d
 			subtitle: "Chalk it up to Experience"
 			description: [
 				"It isn't always convenient to have to do things by hand. Save yourself some effort and imprint your spells into the ground. Perfect for mob traps or for applying buffs as you walk out the door."
@@ -288,7 +288,7 @@
 		{
 			title: "Spell Parchment"
 			x: 0.0d
-			y: -1.5d
+			y: -2.5d
 			subtitle: "Jousting Snails"
 			description: [
 				"With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways."
@@ -313,7 +313,7 @@
 		}
 		{
 			x: 0.5d
-			y: -3.5d
+			y: -4.5d
 			subtitle: "Putting Down Roots"
 			description: [
 				"The Mana Bloom sits at the border between the mundane and the magical. It grows as any other plant, but its roots reach through the veil, soaking in more of the Source that infuses the earth."
@@ -338,7 +338,7 @@
 			title: "Enchanting Apparatus"
 			icon: "ars_nouveau:enchanting_apparatus"
 			x: -0.5d
-			y: -4.5d
+			y: -6.0d
 			subtitle: "The Spirit is Willing but the Flesh is Spongy and Bruised"
 			description: [
 				"One's own reservoir of Source is limited: the flesh can only hold so much. Certain magical materials exist to assist this but they themselves require access to greater reservoirs to even make."
@@ -351,7 +351,7 @@
 				""
 				"The Enchanting Apparatus may also be used to apply specific enchantments to tools and armor, simplifying the process of getting a specific enchant to round out a piece of gear. The recipes are detailed in the Worn Notebook. "
 			]
-			dependencies: ["00000000000003E7"]
+			dependencies: ["00000000000003AC"]
 			min_width: 250
 			id: "00000000000003D7"
 			tasks: [
@@ -385,7 +385,7 @@
 			title: "Curious Trinkets"
 			icon: "ars_nouveau:amulet_of_mana_regen"
 			x: -2.0d
-			y: -3.5d
+			y: -4.5d
 			subtitle: "Draw Me Like Your French Girls"
 			description: [
 				"Source is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspiring practitioners may find themselves struggling to channel Source for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves."
@@ -414,8 +414,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -6.0d
+			x: -5.5d
+			y: -5.0d
 			subtitle: "One Dub-Step at a Time"
 			description: [
 				"Though found relatively commonly in the earth, Arcane Crystals can also be crystallized directly from the surrounding Source. "
@@ -424,7 +424,7 @@
 				""
 				"Build a Crystallizer early on to help obtain more of these very useful gems."
 			]
-			dependencies: ["00000000000003AC"]
+			dependencies: ["00000000000003B6"]
 			id: "00000000000003E7"
 			tasks: [{
 				id: "00000000000003E8"
@@ -440,7 +440,7 @@
 		}
 		{
 			x: -1.5d
-			y: -2.5d
+			y: -3.5d
 			subtitle: "Witches Abroad"
 			description: [
 				"Source permeates all things. Left to its own, it spreads and infuses but rarely collects. Binding it in jars is an excellent way of storing source for later use, but moving it from place to place can be a touchy subject."
@@ -465,7 +465,7 @@
 		}
 		{
 			x: -3.0d
-			y: -1.5d
+			y: -2.5d
 			subtitle: "Equal Rites"
 			description: ["A more advanced Source Relay capable of pulling from and sending to multiple locations."]
 			dependencies: ["00000000000003EB"]
@@ -485,8 +485,9 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -3.5d
+			x: 5.5d
+			y: -2.5d
+			shape: "hexagon"
 			subtitle: "Boop the Snoot"
 			description: [
 				"An amicable being that's deeply attuned with Source, Bookwyrms may be summoned by Sneak Right Clicking their charm on a Lectern. Once summoned, they’ll repeatedly cast any spell they’ve been given on blocks in their area."
@@ -510,8 +511,9 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -2.5d
+			x: 6.5d
+			y: -2.0d
+			shape: "hexagon"
 			subtitle: "In Search of the Golden Acorn"
 			description: [
 				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by collecting items and moving them to inventories. "
@@ -545,8 +547,9 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: -4.5d
+			x: 4.5d
+			y: -2.0d
+			shape: "hexagon"
 			subtitle: "Whispering Winds"
 			description: [
 				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you."
@@ -596,7 +599,7 @@
 		}
 		{
 			x: -3.5d
-			y: -5.5d
+			y: -5.0d
 			subtitle: "Vulcanologist in Training"
 			description: [
 				"Not every practitioner is born with a green thumb. Thankfully, trace amounts of Source may be extracted by burning various materials, releasing the latent Source stored within. This process also produces a prodigious amount of heat that can cause nearby stone to melt into magma and lava. "
@@ -655,8 +658,8 @@
 		{
 			title: "Turret Practice: Micro Farms"
 			icon: "ars_nouveau:glyph_harvest"
-			x: 7.5d
-			y: -2.5d
+			x: 6.5d
+			y: -3.5d
 			description: [
 				"A simple and compact crop farm can be made with a spell turret with the following spell:"
 				""
@@ -695,7 +698,7 @@
 		}
 		{
 			title: "Turret Practice: Redstone Clock"
-			x: 6.5d
+			x: 7.5d
 			y: -3.0d
 			description: [
 				"Considering the Turret needs a redstone signal to work, some form of clock is in order. There are many designs that will work, but perhaps something more thematic is in order?"
@@ -849,8 +852,9 @@
 		}
 		{
 			icon: "ars_nouveau:wixie_charm"
-			x: 5.5d
-			y: -3.5d
+			x: 5.0d
+			y: -1.0d
+			shape: "hexagon"
 			subtitle: "Wyrd Sisters"
 			description: [
 				"Wouldn't it be helpful to have a hand around the Crafting Table? Someone to pass you this, or fetch you that? Or perhaps they could just do the job for you while you further your studies of the arcane?"
@@ -883,8 +887,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: -2.0d
+			x: 4.0d
+			y: -4.5d
 			subtitle: "Nanny Ogg's Cookbook"
 			description: [
 				"Simple item crafting isn’t the only thing these crafty ladies have hidden up their sleeves. They’re quite the adept in a brewery as well, making potions of all types. "
@@ -895,7 +899,7 @@
 				""
 				"It is recommended to take that potion and stick it in the jar immediately so that the potion jar can be locked to that type. Sneak + Right-Click the jar with a Dominion Wand to lock it to that type of potion. This is handy when multiple Wixies are at work in the same area.  "
 			]
-			dependencies: ["0BC6D824A7A10356"]
+			dependencies: ["00000000000009ED"]
 			min_width: 250
 			id: "4DC7DC466B1F2D0B"
 			tasks: [{
@@ -915,7 +919,7 @@
 		{
 			icon: "ars_nouveau:potion_melder"
 			x: 4.5d
-			y: -1.0d
+			y: -3.5d
 			subtitle: "Subtle Infusions"
 			description: [
 				"The clever arcanist finds ways to save themselves time, and nothing wastes time like drinking five different potions in preparation for a fight. Why not mix them and drink them all at once? "
@@ -967,8 +971,8 @@
 			]
 		}
 		{
-			x: 6.5d
-			y: -1.0d
+			x: 3.5d
+			y: -3.0d
 			subtitle: "Why Limit Happy Hour?"
 			description: ["Multiple doses all bottled up and ready to go in an eco-friendly re-usable package. Each Flask can hold up to eight doses of potion and may even be enchanted to increase the potency or duration of the potions within. "]
 			dependencies: ["4DC7DC466B1F2D0B"]
@@ -989,7 +993,7 @@
 		}
 		{
 			x: -0.5d
-			y: 0.0d
+			y: -1.0d
 			subtitle: "Cast Wide, Your Net"
 			description: ["A traditional casting focus, the Wand may be inscribed with a single spell. Contrary to other casting methods, however, no Form is required. All spells cast from a Casting Wand are automatically Projectile and come Accelerated. This means extra slots for adding Effects or Augments. This makes them ideal for specialized tools. "]
 			dependencies: ["00000000000003D0"]
@@ -1178,6 +1182,7 @@
 			}]
 		}
 		{
+			title: "Portals"
 			icon: "ars_nouveau:arcane_bricks"
 			x: 1.5d
 			y: -4.0d
@@ -1259,8 +1264,9 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -3.0d
+			x: 6.0d
+			y: -1.0d
+			shape: "hexagon"
 			subtitle: "Very A-moose-ing."
 			description: [
 				"Found most anywhere that wild beasts roam, Drygmies are spirits bound to the earth, tending her flock. Through their magic, they can gather items from all manner of beast without causing them harm in any way. They may be enticed to work for you by showing them a token of their mortal enemies: Wilden Defenders."
@@ -1297,7 +1303,7 @@
 		}
 		{
 			x: -4.5d
-			y: -5.0d
+			y: -4.5d
 			subtitle: "Doesn't Take Up Mush Room"
 			description: [
 				"Decomposers have a vital role in the eco-system, and much like the fungal friends that sprout up around it, the Mycelial Sourcelink is capable of decomposing excess organic matter into useful Source. "
@@ -1330,7 +1336,7 @@
 		}
 		{
 			x: -7.5d
-			y: -5.5d
+			y: -5.0d
 			subtitle: "One for Me, One for My Homies"
 			description: [
 				"Potion brewing naturally distills a great deal of Source during the processes, serving to grant the otherwise mundane ingredients their power. This Source may be extracted, however, by way of the Alchemical Sourcelink. "
@@ -1381,7 +1387,7 @@
 		}
 		{
 			x: -6.5d
-			y: -5.0d
+			y: -4.5d
 			subtitle: "What Do We Say to the God of Death?"
 			description: [
 				"Birth and death. Two sides of the same coin. In each may be found some latent Source bursting out. "
@@ -1416,7 +1422,7 @@
 		}
 		{
 			x: -5.5d
-			y: -4.5d
+			y: -4.0d
 			description: [
 				"From the soil springs forth a great Source of energy. Tap into it to begin down the path of sorcery. "
 				""
@@ -1486,7 +1492,7 @@
 		}
 		{
 			x: -2.5d
-			y: -0.5d
+			y: -1.5d
 			subtitle: "Wee Free Men"
 			description: ["A specialized relay which serves to distribute Source to all nearby jars without being linked to them. "]
 			dependencies: ["00000000000003EB"]
@@ -1507,7 +1513,7 @@
 		}
 		{
 			x: -1.5d
-			y: -1.0d
+			y: -2.0d
 			subtitle: "I Shall Wear Midnight"
 			description: [
 				"A specialized relay capable of tunneling through the dark realm of the End to deposit mana into a jar or relay far from home. "
@@ -1667,7 +1673,7 @@
 		{
 			title: "Spell Practice: Wixies"
 			x: 1.5d
-			y: 0.5d
+			y: -0.5d
 			description: [
 				"Some hired help is just the thing for the Practitioner looking to expand their operations. The inhabitants of nearby villages may be er… enticed into service with a little magical manipulation. "
 				""
