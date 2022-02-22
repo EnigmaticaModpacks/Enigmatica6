@@ -1,7 +1,7 @@
 onEvent('generic.loot_tables', (event) => {
     const pools = [
         {
-            rolls: { min: 8, max: 16 },
+            rolls: { min: 2, max: 3 },
             entries: [
                 {
                     item: 'farmersdelight:noodle_soup',
@@ -44,7 +44,7 @@ onEvent('generic.loot_tables', (event) => {
                     count: [1, 2]
                 },
                 {
-                    item: 'sushigocrafting:tobiko_tuna_cucumber_california',
+                    item: Item.of('sushigocrafting:tobiko_tuna_cucumber_california', '{Weights:[I;0,0,0,0,0,0],Spices:{}}'),
                     weight: 20,
                     count: [4, 16]
                 },
@@ -99,7 +99,7 @@ onEvent('generic.loot_tables', (event) => {
                     count: [4, 16]
                 },
                 {
-                    item: 'sushigocrafting:onigiri',
+                    item: Item.of('sushigocrafting:onigiri', '{Weights:[I;0,0],Spices:{}}'),
                     weight: 50,
                     count: [4, 16]
                 },
