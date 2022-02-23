@@ -35,7 +35,7 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:brewing_stand',
                 B: 'bloodmagic:blankslate',
                 C: 'supplementaries:jar_tinted',
-                D: 'eidolon:wicked_weave',
+                D: 'thermal:hazmat_fabric',
                 E: 'eidolon:stone_altar'
             },
             id: 'bloodmagic:alchemy_table'

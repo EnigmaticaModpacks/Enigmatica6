@@ -2275,6 +2275,70 @@ onEvent('recipes', (event) => {
             output: Item.of('4x botania:light_relay'),
             id: 'botania:light_relay'
         },
+        {
+            inputs: [
+                'ars_elemental:fire_focus',
+                'eidolon:wicked_weave',
+                '#botania:runes/fire',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                '#botania:runes/fire',
+                'eidolon:wicked_weave',
+                'ars_elemental:fire_focus'
+            ],
+            sourceCost: 10000,
+            reagent: 'ars_nouveau:wilden_tribute',
+            output: Item.of('4x arsarsenal:sigil_of_pyromancy'),
+            id: 'arsarsenal:sigil_of_pyromancy'
+        },
+        {
+            inputs: [
+                'ars_elemental:water_focus',
+                'eidolon:wicked_weave',
+                '#botania:runes/water',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                '#botania:runes/water',
+                'eidolon:wicked_weave',
+                'ars_elemental:water_focus'
+            ],
+            sourceCost: 10000,
+            reagent: 'ars_nouveau:wilden_tribute',
+            output: Item.of('4x arsarsenal:sigil_of_aquamancy'),
+            id: 'arsarsenal:sigil_of_aquamancy'
+        },
+        {
+            inputs: [
+                'ars_elemental:earth_focus',
+                'eidolon:wicked_weave',
+                '#botania:runes/earth',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                '#botania:runes/earth',
+                'eidolon:wicked_weave',
+                'ars_elemental:earth_focus'
+            ],
+            sourceCost: 10000,
+            reagent: 'ars_nouveau:wilden_tribute',
+            output: Item.of('4x arsarsenal:sigil_of_geomancy'),
+            id: 'arsarsenal:sigil_of_geomancy'
+        },
+        {
+            inputs: [
+                'ars_elemental:air_focus',
+                'eidolon:wicked_weave',
+                '#botania:runes/air',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                '#botania:runes/air',
+                'eidolon:wicked_weave',
+                'ars_elemental:air_focus'
+            ],
+            sourceCost: 10000,
+            reagent: 'ars_nouveau:wilden_tribute',
+            output: Item.of('4x arsarsenal:sigil_of_aethermancy'),
+            id: 'arsarsenal:sigil_of_aethermancy'
+        },
 
         /// Patchouli Removals
         {
