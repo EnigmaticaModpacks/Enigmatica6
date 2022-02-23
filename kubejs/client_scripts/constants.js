@@ -535,7 +535,15 @@ const recipesToHide = [
     },
     {
         category: 'ars_nouveau:apparatus',
-        recipes_by_id: ['ars_nouveau:jar_of_light', 'ars_nouveau:void_jar']
+        recipes_by_id: [
+            'ars_nouveau:jar_of_light',
+            'ars_nouveau:void_jar',
+            'ars_elemental:air_focus',
+            'ars_elemental:water_focus',
+            'ars_elemental:earth_focus',
+            'ars_elemental:fire_focus',
+            'ars_elemental:necrotic_focus'
+        ]
     },
     {
         category: 'astralsorcery:altar_attunement',

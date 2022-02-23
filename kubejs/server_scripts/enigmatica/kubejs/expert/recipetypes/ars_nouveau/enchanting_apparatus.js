@@ -2043,7 +2043,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/tinkers_bronze'
             ],
             sourceCost: 10000,
-            reagent: 'ars_nouveau:summoning_crystal',
+            reagent: 'minecraft:conduit',
             output: 'ars_nouveau:summon_focus',
             id: 'ars_nouveau:summon_focus'
         },
@@ -2338,22 +2338,29 @@ onEvent('recipes', (event) => {
             reagent: 'ars_nouveau:wilden_tribute',
             output: Item.of('4x arsarsenal:sigil_of_aethermancy'),
             id: 'arsarsenal:sigil_of_aethermancy'
-        },
-
-        /// Patchouli Removals
-        {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            reagent: 'kubejs:altered_recipe_indicator',
-            output: 'ars_nouveau:void_jar',
-            id: 'ars_nouveau:jar_of_light'
-        },
-        {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            reagent: 'kubejs:altered_recipe_indicator',
-            output: 'ars_nouveau:void_jar',
-            id: 'ars_nouveau:void_jar'
         }
     ];
+
+    /// Patchouli Removals
+    let patchouli_removals = [
+        { output: 'ars_nouveau:void_jar', id: 'ars_nouveau:void_jar' },
+        { output: 'ars_nouveau:void_jar', id: 'ars_nouveau:void_jar' },
+        { output: 'ars_elemental:fire_focus', id: 'ars_elemental:fire_focus' },
+        { output: 'ars_elemental:water_focus', id: 'ars_elemental:water_focus' },
+        { output: 'ars_elemental:earth_focus', id: 'ars_elemental:earth_focus' },
+        { output: 'ars_elemental:air_focus', id: 'ars_elemental:air_focus' },
+        { output: 'ars_elemental:necrotic_focus', id: 'ars_elemental:necrotic_focus' }
+    ];
+
+    patchouli_removals.forEach((patchouli_removal) => {
+        recipes.push({
+            inputs: ['kubejs:altered_recipe_indicator'],
+            reagent: 'kubejs:altered_recipe_indicator',
+            output: patchouli_removal.output,
+            id: patchouli_removal.id
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.sourceCost
             ? event.recipes.ars_nouveau
