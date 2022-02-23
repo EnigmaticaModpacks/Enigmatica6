@@ -1179,9 +1179,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber'
             ],
             reagent: Item.of('atum:wanderer_helmet', '{Damage:0}').weakNBT(),
@@ -1192,12 +1195,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber'
             ],
             reagent: Item.of('atum:wanderer_chest', '{Damage:0}').weakNBT(),
@@ -1208,11 +1211,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber'
             ],
             reagent: Item.of('atum:wanderer_legs', '{Damage:0}').weakNBT(),
@@ -1223,8 +1227,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber'
             ],
             reagent: Item.of('atum:wanderer_boots', '{Damage:0}').weakNBT(),
@@ -1236,9 +1244,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_helmet', '{Damage:0}').weakNBT(),
@@ -1249,12 +1260,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_chest', '{Damage:0}').weakNBT(),
@@ -1265,11 +1276,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_legs', '{Damage:0}').weakNBT(),
@@ -1280,8 +1292,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_boots', '{Damage:0}').weakNBT(),
@@ -1293,9 +1309,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_helmet', '{Damage:0}').weakNBT(),
@@ -1306,12 +1325,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_chestplate', '{Damage:0}').weakNBT(),
@@ -1322,11 +1341,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_leggings', '{Damage:0}').weakNBT(),
@@ -1337,8 +1357,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_boots', '{Damage:0}').weakNBT(),

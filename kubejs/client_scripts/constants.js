@@ -106,6 +106,12 @@ const itemsToHide = [
     'aiotbotania:livingwood_shears',
     'aiotbotania:livingrock_shears',
 
+    // Deprecated Ars Arsenal items
+    'arsarsenal:aqua_hood',
+    'arsarsenal:fire_hood',
+    'arsarsenal:earth_hood',
+    'arsarsenal:air_hood',
+
     'ars_nouveau:arcane_brick',
     'ars_nouveau:arcane_ore',
     'ars_nouveau:mana_gem_block',
