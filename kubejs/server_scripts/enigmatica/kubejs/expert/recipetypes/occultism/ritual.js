@@ -1335,6 +1335,151 @@ onEvent('recipes', (event) => {
             ],
             result: Item.of('kubejs:miner_marid_irradiated', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
             id: `${id_prefix}miner_marid_irradiated`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: 'ars_nouveau:summon_focus',
+            pentacle_id: 'occultism:craft_afrit',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/fire',
+                display_name: 'ritual.occultism.sacrifice.elemental.fire'
+            },
+            ritual_dummy: 'kubejs:craft_fire_focus',
+            ingredients: [
+                '#botania:runes/fire',
+                'minecraft:fire_charge',
+                'minecraft:fire_charge',
+                'minecraft:fire_charge',
+
+                'atum:ra_godshard',
+                'atum:ra_godshard',
+                'atum:ra_godshard',
+                'atum:ra_godshard',
+
+                'resourcefulbees:blaze_honeycomb',
+                'resourcefulbees:blaze_honeycomb',
+                'resourcefulbees:blaze_honeycomb',
+                'resourcefulbees:blaze_honeycomb'
+            ],
+            result: 'ars_elemental:fire_focus',
+            id: `${id_prefix}fire_focus`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: 'ars_nouveau:summon_focus',
+            pentacle_id: 'occultism:craft_afrit',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/water',
+                display_name: 'ritual.occultism.sacrifice.elemental.water'
+            },
+            ritual_dummy: 'kubejs:craft_water_focus',
+            ingredients: [
+                '#botania:runes/water',
+                'thermal:ice_charge',
+                'thermal:ice_charge',
+                'thermal:ice_charge',
+
+                'atum:tefnut_godshard',
+                'atum:tefnut_godshard',
+                'atum:tefnut_godshard',
+                'atum:tefnut_godshard',
+
+                'resourcefulbees:blizz_honeycomb',
+                'resourcefulbees:blizz_honeycomb',
+                'resourcefulbees:blizz_honeycomb',
+                'resourcefulbees:blizz_honeycomb'
+            ],
+            result: 'ars_elemental:water_focus',
+            id: `${id_prefix}water_focus`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: 'ars_nouveau:summon_focus',
+            pentacle_id: 'occultism:craft_afrit',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/air',
+                display_name: 'ritual.occultism.sacrifice.elemental.air'
+            },
+            ritual_dummy: 'kubejs:craft_air_focus',
+            ingredients: [
+                '#botania:runes/air',
+                'thermal:lightning_charge',
+                'thermal:lightning_charge',
+                'thermal:lightning_charge',
+
+                'atum:horus_godshard',
+                'atum:horus_godshard',
+                'atum:horus_godshard',
+                'atum:horus_godshard',
+
+                'resourcefulbees:blitz_honeycomb',
+                'resourcefulbees:blitz_honeycomb',
+                'resourcefulbees:blitz_honeycomb',
+                'resourcefulbees:blitz_honeycomb'
+            ],
+            result: 'ars_elemental:air_focus',
+            id: `${id_prefix}air_focus`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: 'ars_nouveau:summon_focus',
+            pentacle_id: 'occultism:craft_afrit',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/earth',
+                display_name: 'ritual.occultism.sacrifice.elemental.earth'
+            },
+            ritual_dummy: 'kubejs:craft_earth_focus',
+            ingredients: [
+                '#botania:runes/earth',
+                'thermal:earth_charge',
+                'thermal:earth_charge',
+                'thermal:earth_charge',
+
+                'atum:osiris_godshard',
+                'atum:osiris_godshard',
+                'atum:osiris_godshard',
+                'atum:osiris_godshard',
+
+                'resourcefulbees:basalz_honeycomb',
+                'resourcefulbees:basalz_honeycomb',
+                'resourcefulbees:basalz_honeycomb',
+                'resourcefulbees:basalz_honeycomb'
+            ],
+            result: 'ars_elemental:earth_focus',
+            id: `${id_prefix}earth_focus`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: 'ars_nouveau:summon_focus',
+            pentacle_id: 'occultism:craft_afrit',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:wither',
+                display_name: 'ritual.occultism.sacrifice.wither'
+            },
+            ritual_dummy: 'kubejs:craft_necrotic_focus',
+            ingredients: [
+                '#botania:runes/helheim',
+                'eidolon:death_essence',
+                'eidolon:death_essence',
+                'eidolon:death_essence',
+
+                'atum:nepthys_godshard',
+                'atum:nepthys_godshard',
+                'atum:nepthys_godshard',
+                'atum:nepthys_godshard',
+
+                'resourcefulbees:wither_honeycomb',
+                'resourcefulbees:wither_honeycomb',
+                'resourcefulbees:wither_honeycomb',
+                'resourcefulbees:wither_honeycomb'
+            ],
+            result: 'ars_elemental:necrotic_focus',
+            id: `${id_prefix}necrotic_focus`
         }
     ];
 
