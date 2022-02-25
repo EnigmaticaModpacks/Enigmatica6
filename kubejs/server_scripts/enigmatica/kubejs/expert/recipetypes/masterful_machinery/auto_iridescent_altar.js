@@ -336,6 +336,154 @@ onEvent('recipes', (event) => {
             ],
             ticks: 100,
             id: `${id_prefix}colored_lens_spectral`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:altar_radiance', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'create:shadow_steel_casing', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'eidolon:shadow_gem', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:colored_lens_spectral', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:etherealslate', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/asgard', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/niflheim', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/alfheim', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/midgard', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'astralsorcery:crystals/attuned', count: 1 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}altar_radiance`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'botania:gaia_spreader', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'botania:bifrost_perm', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'botania:life_essence', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/midgard', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:colored_lens_spectral', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'botania:elven_spreader', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'naturesaura:ancient_sapling', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mythicbotany:dream_cherry', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:gems/dragonstone', count: 1 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}gaia_spreader`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'botania:elven_spreader', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/elementium', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'botania:dreamwood', count: 8 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'botania:glimmering_dreamwood', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'botania:spark', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/summer', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/air', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:colored_lens_push', count: 1 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}elven_spreader`
         }
     ];
 

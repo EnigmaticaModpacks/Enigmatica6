@@ -2813,7 +2813,7 @@
 			}]
 		}
 		{
-			x: -10.0d
+			x: -9.5d
 			y: -12.0d
 			subtitle: "Head in the Clouds"
 			description: [
@@ -3126,6 +3126,48 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
+		}
+		{
+			x: -10.5d
+			y: -12.0d
+			subtitle: "Pym Powered"
+			description: [
+				"Smaller, but equally strong? Impossible!"
+				""
+				"Until now. "
+				""
+				"With Shrink’s Personal Shrinking Device in hand, shrink to the tiniest of sizes and slip through cracks even a mouse would scoff at. "
+				""
+				"Sneak + Right Click to shrink yourself, or left click an entity to shrink it instead. Right click a shrunken entity to bottle it up and carry it with you. Keep a villager in your pocket for good luck!"
+			]
+			dependencies: ["00000000000003FF"]
+			id: "2A74822BE970E9D4"
+			tasks: [{
+				id: "417D1AA02B005770"
+				type: "item"
+				item: {
+					id: "shrink:shrinking_device"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "39498CF292AB8B53"
+					type: "item"
+					title: "Glass Bottle"
+					item: "minecraft:glass_bottle"
+					count: 8
+				}
+				{
+					id: "00012916E3BF0CC7"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
 		}
 	]
 }

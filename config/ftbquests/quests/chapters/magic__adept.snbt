@@ -132,10 +132,10 @@
 			title: "Natural Magic - Adept"
 			icon: "naturesaura:gold_leaf"
 			x: -3.0d
-			y: -5.0d
+			y: -5.5d
 			shape: "rsquare"
 			description: [""]
-			dependencies: ["0000000000000FEB"]
+			dependencies: ["0000000000000FC7"]
 			id: "6A88DD23AB4B2551"
 			tasks: [{
 				id: "75818E00A64B7C28"
@@ -147,9 +147,9 @@
 			title: "Spirit Magic - Adept"
 			icon: "occultism:golden_sacrificial_bowl"
 			x: 2.0d
-			y: -5.0d
+			y: -5.5d
 			shape: "rsquare"
-			dependencies: ["0000000000000FEB"]
+			dependencies: ["0000000000000FCD"]
 			id: "4CEB33C94A160D68"
 			tasks: [
 				{
@@ -198,7 +198,7 @@
 				""
 				"The dragons themselves produce little enough, thankfully it is exceptionally potent. A healthy adult will produce enough to collect daily. Be warned, Komodo dragons are violent when caged, often even attacking their own young. Keepers will know to separate them accordingly. "
 			]
-			dependencies: ["75818E00A64B7C28"]
+			dependencies: ["0000000000000FC7"]
 			id: "2A45214DF4B8A3A0"
 			tasks: [{
 				id: "4D8482E47412A89D"
@@ -259,8 +259,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -1.5d
+			x: 3.5d
+			y: -1.0d
 			shape: "diamond"
 			description: [
 				""
@@ -268,7 +268,7 @@
 				""
 				"Locate a Stoneborn and trade with them to obtain a sample of their traditional music. "
 			]
-			dependencies: ["4370B0FB1FFF0BBF"]
+			dependencies: ["0000000000000FCD"]
 			id: "4C82E47AABA7447B"
 			tasks: [{
 				id: "6C16A5254E2174E3"
@@ -303,7 +303,7 @@
 		{
 			title: "Otherstone Trader"
 			x: 2.5d
-			y: -4.0d
+			y: -4.5d
 			shape: "diamond"
 			description: [
 				"Tossing Arcane Stone into a Spirit Fire is certainly… effective, but an Otherstone Trader will do the job at a significant discount. "
@@ -320,7 +320,7 @@
 		}
 		{
 			x: 1.5d
-			y: -4.0d
+			y: -4.5d
 			shape: "diamond"
 			description: ["Need a hand? Summon a few assistants to help out around the place. "]
 			dependencies: ["4CEB33C94A160D68"]
@@ -336,7 +336,7 @@
 		}
 		{
 			x: 2.0d
-			y: -3.5d
+			y: -4.0d
 			shape: "diamond"
 			description: ["Forming a proper slate for advanced inscriptions is a delicate process that adepts spend many hours perfecting.  Even the slightest imperfection can cause a batch to be ruined. "]
 			dependencies: [
@@ -353,7 +353,7 @@
 		}
 		{
 			x: 2.0d
-			y: -2.5d
+			y: -3.0d
 			dependencies: ["32D9D96C23106285"]
 			id: "0D8649291801C76C"
 			tasks: [{
@@ -392,6 +392,7 @@
 			dependencies: [
 				"5602E77D09C84F56"
 				"43D3D565E295FA5D"
+				"57FFFBB68F2655C1"
 			]
 			id: "7BA120BEA495D354"
 			tasks: [
@@ -619,7 +620,7 @@
 			y: -0.5d
 			shape: "diamond"
 			description: ["Effective as it may be some practitioners find the practice of sacrificing other beings distasteful. The Adept learns early on to give of their own blood as sacrifice, and to draw upon the earth for healing. "]
-			dependencies: ["7BA120BEA495D354"]
+			dependencies: ["0000000000000FCD"]
 			id: "57FFFBB68F2655C1"
 			tasks: [{
 				id: "19014A262532EB8F"

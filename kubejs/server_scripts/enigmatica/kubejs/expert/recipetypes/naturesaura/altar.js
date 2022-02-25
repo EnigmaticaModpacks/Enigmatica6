@@ -93,6 +93,32 @@ onEvent('recipes', (event) => {
             aura: 15000,
             time: 80,
             id: `${id_prefix}lionfish`
+        },
+        {
+            input: 'integrateddynamics:part_static_light_panel',
+            output: { item: 'integrateddynamics:part_display_panel' },
+            aura_type: 'naturesaura:nether',
+            aura: 100,
+            time: 20,
+            id: 'integrateddynamics:crafting/part_display_panel'
+        },
+        {
+            input: 'botania:redstone_root',
+            output: { item: 'botania:root' },
+            catalyst: { item: 'naturesaura:conversion_catalyst' },
+            aura_type: 'naturesaura:overworld',
+            aura: 1500,
+            time: 20,
+            id: `${id_prefix}root`
+        },
+        {
+            input: 'minecraft:lily_pad',
+            output: { item: 'environmental:duckweed' },
+            catalyst: { item: 'naturesaura:conversion_catalyst' },
+            aura_type: 'naturesaura:overworld',
+            aura: 15000,
+            time: 80,
+            id: `${id_prefix}duckweed`
         }
     ];
 

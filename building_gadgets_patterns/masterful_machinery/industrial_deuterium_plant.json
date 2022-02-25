@@ -1,0 +1,183 @@
+{
+    "header": {
+      "version": "2.1.0",
+      "mc_version": "1.16.5",
+      "name": "Industrial Deuterium Plant",
+      "author": "Enigmatica",
+      "bounding_box": {
+        "min_x": 0,
+        "min_y": 0,
+        "min_z": 0,
+        "max_x": 20,
+        "max_y": 12,
+        "max_z": 18
+      },
+      "material_list": {
+        "root_type": "buildinggadgets:entries",
+        "root_entry": [
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 6,
+            "item": {
+              "id": "create:cogwheel"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 192,
+            "item": {
+              "id": "immersiveengineering:concrete_leaded"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 4,
+            "item": {
+              "id": "create:copper_valve_handle"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 35,
+            "item": {
+              "id": "create:fluid_pipe"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 108,
+            "item": {
+              "id": "create:fluid_tank"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 4,
+            "item": {
+              "id": "create:fluid_valve"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 1,
+            "item": {
+              "id": "masterfulmachinery:industrial_deuterium_plant_controller"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 1,
+            "item": {
+              "id": "masterfulmachinery:industrial_deuterium_plant_energy_port_energy_input"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 1,
+            "item": {
+              "id": "masterfulmachinery:industrial_deuterium_plant_fluid_port_fluids_input"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 1,
+            "item": {
+              "id": "masterfulmachinery:industrial_deuterium_plant_fluid_port_fluids_output"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 1,
+            "item": {
+              "id": "masterfulmachinery:industrial_deuterium_plant_pressure_port_pncr_pressure_input"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 1,
+            "item": {
+              "id": "masterfulmachinery:industrial_deuterium_plant_spinny_port_create_rotation_input"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 3,
+            "item": {
+              "id": "create:mechanical_pump"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 2,
+            "item": {
+              "id": "minecraft:redstone_block"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 5,
+            "item": {
+              "id": "create:shaft"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 3,
+            "item": {
+              "id": "create:smart_fluid_pipe"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 120,
+            "item": {
+              "id": "immersiveengineering:steel_scaffolding_standard"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 298,
+            "item": {
+              "id": "immersiveengineering:steel_scaffolding_wooden_top"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 12,
+            "item": {
+              "id": "immersiveengineering:steel_slope"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 4,
+            "item": {
+              "id": "immersiveengineering:tesla_coil"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 7,
+            "item": {
+              "id": "mekanism:ultimate_universal_cable"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 2,
+            "item": {
+              "id": "create:vertical_gearbox"
+            }
+          },
+          {
+            "item_type": "buildinggadgets:simple_item",
+            "count": 2,
+            "item": {
+              "id": "pneumaticcraft:vortex_tube"
+            }
+          }
+        ]
+      }
+    },
+    "body": "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"
+  }

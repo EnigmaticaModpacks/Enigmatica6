@@ -253,6 +253,11 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'deploying',
+                    input: ['kubejs:partial_engineering_student_meals', 'create:builders_tea'],
+                    output: 'kubejs:partial_engineering_student_meals'
+                },
+                {
+                    type: 'deploying',
                     input: ['kubejs:partial_engineering_student_meals', 'simplefarming:vegetable_curry'],
                     output: 'kubejs:partial_engineering_student_meals'
                 },
@@ -601,7 +606,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     base: 'minecraft:chainmail_helmet',
-                    material: '#forge:ingots/manyullyn',
+                    material: '#forge:ingots/cobalt',
                     result: 'tconstruct:plate_helmet',
                     id: 'tconstruct:armor/building/plate_helmet'
                 }
@@ -756,7 +761,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     base: 'minecraft:chainmail_chestplate',
-                    material: '#forge:ingots/manyullyn',
+                    material: '#forge:ingots/cobalt',
                     result: 'tconstruct:plate_chestplate',
                     id: 'tconstruct:armor/building/plate_chestplate'
                 }
@@ -905,7 +910,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     base: 'minecraft:chainmail_leggings',
-                    material: '#forge:ingots/manyullyn',
+                    material: '#forge:ingots/cobalt',
                     result: 'tconstruct:plate_leggings',
                     id: 'tconstruct:armor/building/plate_leggings'
                 }
@@ -1048,7 +1053,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     base: 'minecraft:chainmail_boots',
-                    material: '#forge:ingots/manyullyn',
+                    material: '#forge:ingots/cobalt',
                     result: 'tconstruct:plate_boots',
                     id: 'tconstruct:armor/building/plate_boots'
                 }
@@ -1059,7 +1064,10 @@ onEvent('recipes', (event) => {
     armorTypes.forEach((armorType) => {
         armorType.armors.forEach((armor) => {
             recipes.push({
-                input: Ingredient.customNBT(Item.of(armor.base, '{Damage:0}').weakNBT(), nbt => !nbt.SequencedAssembly),
+                input: Ingredient.customNBT(
+                    Item.of(armor.base, '{Damage:0}').weakNBT(),
+                    (nbt) => !nbt.SequencedAssembly
+                ),
                 outputs: [armor.result],
                 transitionalItem: armor.base,
                 loops: armorType.loops,

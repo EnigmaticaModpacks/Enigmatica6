@@ -366,14 +366,14 @@ onEvent('recipes', (event) => {
             },
             focus_constellation: 'naturesstarlight:naritis',
             relay_inputs: [
+                { item: 'mythicbotany:dream_cherry' },
                 { item: 'botania:life_essence' },
-                { item: 'mythicbotany:dream_cherry' },
                 { tag: 'botania:runes/midgard' },
-                { item: 'mythicbotany:dream_cherry' },
+                { item: 'botania:life_essence' },
                 { item: 'naturesaura:ancient_sapling' },
-                { item: 'mythicbotany:dream_cherry' },
+                { item: 'botania:life_essence' },
                 { tag: 'botania:runes/midgard' },
-                { item: 'mythicbotany:dream_cherry' }
+                { item: 'botania:life_essence' }
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',

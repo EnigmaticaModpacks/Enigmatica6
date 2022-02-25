@@ -85,7 +85,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'occultism:ritual_dummy/craft_dimensional_matrix',
             ingredients: [
                 '#quark:crystal_clusters',
@@ -131,7 +131,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'occultism:ritual_dummy/craft_stabilizer_tier2',
             ingredients: [
                 'occultism:storage_stabilizer_tier1',
@@ -154,7 +154,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_afrit',
             pentacle_id: 'occultism:craft_afrit',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'occultism:ritual_dummy/craft_stabilizer_tier3',
             ingredients: [
                 'occultism:storage_stabilizer_tier2',
@@ -177,7 +177,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_marid',
             pentacle_id: 'occultism:craft_marid',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'occultism:ritual_dummy/craft_stabilizer_tier4',
             ingredients: [
                 'occultism:storage_stabilizer_tier3',
@@ -231,7 +231,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'occultism:ritual_dummy/craft_dimensional_mineshaft',
             ingredients: [
                 'bloodmagic:infusedslate',
@@ -311,7 +311,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'occultism:ritual_dummy/craft_satchel',
             ingredients: [
                 'ironchest:silver_chest',
@@ -769,12 +769,16 @@ onEvent('recipes', (event) => {
             ingredients: [
                 '#atum:godshards',
                 'atum:golden_date_enchanted',
-                '#forge:storage_blocks/nebu',
+                '#forge:ingots/nebu',
                 '#forge:heads',
                 '#atum:godshards',
                 '#atum:godshards',
-                'atum:crystal_glass',
-                'atum:crystal_glass'
+                '#forge:ingots/nebu',
+                '#forge:ingots/nebu',
+                'atum:linen_bandage',
+                'atum:linen_bandage',
+                'atum:linen_bandage',
+                'atum:linen_bandage'
             ],
             result: 'occultism:jei_dummy/none',
             id: `${id_prefix}pharaoh`
@@ -880,7 +884,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'botania:runic_altar',
             pentacle_id: 'occultism:craft_marid',
-            duration: 240,
+            duration: 120,
             entity_to_sacrifice: {
                 tag: 'enigmatica:gaia_guardian',
                 display_name: 'ritual.occultism.sacrifice.gaia_guardian'
@@ -907,7 +911,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: '#botania:runes/midgard',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             entity_to_sacrifice: {
                 tag: 'enigmatica:pharaohs',
                 display_name: 'ritual.occultism.sacrifice.pharaohs'
@@ -915,16 +919,16 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'kubejs:craft_mana_collector',
             ingredients: [
                 '#botania:runes/asgard',
-                '#forge:ingots/gaia_spirit',
+                'botania:gaia_spreader',
                 '#botania:runes/niflheim',
                 'botania:gaia_spreader',
                 '#botania:runes/muspelheim',
                 '#botania:runes/nidavellir',
-                '#forge:storage_blocks/iesnium',
+                '#forge:ingots/gaia_spirit',
                 '#botania:runes/joetunheim',
                 '#botania:runes/alfheim',
                 '#botania:runes/helheim',
-                '#forge:storage_blocks/iesnium',
+                '#forge:ingots/gaia_spirit',
                 '#botania:runes/vanaheim'
             ],
             result: 'mythicbotany:mana_collector',
@@ -1008,7 +1012,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_feeding_upgrade',
             ingredients: [
                 'create:mechanical_arm',
@@ -1023,7 +1027,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_marid',
             pentacle_id: 'occultism:craft_marid',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_advanced_feeding_upgrade',
             ingredients: [
                 '#sophisticatedbackpacks:upgrades/feeding',
@@ -1038,7 +1042,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_auto_smelting_upgrade',
             ingredients: [
                 '#sophisticatedbackpacks:upgrades/smelting',
@@ -1053,7 +1057,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_pump_upgrade',
             ingredients: [
                 'create:mechanical_pump',
@@ -1070,14 +1074,14 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_advanced_pump_upgrade',
             ingredients: [
                 'create:smart_fluid_pipe',
                 'create:fluid_pipe',
                 '#sophisticatedbackpacks:upgrades/pump',
                 'create:fluid_pipe',
-                'create:attribute_filter'
+                '#sophisticatedbackpacks:upgrades/advanced_filter'
             ],
             result: 'sophisticatedbackpacks:advanced_pump_upgrade',
             id: `${id_prefix}advanced_pump_upgrade`
@@ -1086,14 +1090,14 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_xp_pump_upgrade',
             ingredients: [
                 'create:smart_fluid_pipe',
                 'create:fluid_pipe',
                 '#sophisticatedbackpacks:upgrades/pump',
                 'create:fluid_pipe',
-                'create:filter',
+                '#sophisticatedbackpacks:upgrades/filter',
                 'ars_nouveau:greater_experience_gem',
                 'ars_nouveau:greater_experience_gem',
                 'ars_nouveau:greater_experience_gem'
@@ -1103,31 +1107,14 @@ onEvent('recipes', (event) => {
         },
         {
             ritual_type: 'occultism:craft_with_spirit_name',
-            activation_item: 'occultism:book_of_binding_bound_foliot',
-            pentacle_id: 'occultism:craft_foliot',
-            duration: 240,
-            ritual_dummy: 'kubejs:craft_compacting_upgrade',
-            ingredients: [
-                'create:mechanical_press',
-                'create:hand_crank',
-                'create:basin',
-                '#sophisticatedbackpacks:upgrades/crafting',
-                'create:large_cogwheel',
-                'create:cogwheel'
-            ],
-            result: 'sophisticatedbackpacks:compacting_upgrade',
-            id: `${id_prefix}compacting_upgrade`
-        },
-        {
-            ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_advanced_compacting_upgrade',
             ingredients: [
-                '#sophisticatedbackpacks:upgrades/compacting',
+                'sophisticatedbackpacks:compacting_upgrade',
                 'create:precision_mechanism',
-                'create:attribute_filter',
+                '#sophisticatedbackpacks:upgrades/advanced_filter',
                 'create:precision_mechanism',
                 '#forge:gears/lumium',
                 '#forge:gears/lumium',
@@ -1141,7 +1128,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_tool_swapper_upgrade',
             ingredients: [
                 'create:deployer',
@@ -1158,12 +1145,12 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_advanced_tool_swapper_upgrade',
             ingredients: [
                 '#sophisticatedbackpacks:upgrades/tool_swapper',
                 'create:precision_mechanism',
-                'create:attribute_filter',
+                '#sophisticatedbackpacks:upgrades/advanced_filter',
                 'create:precision_mechanism',
                 '#forge:gears/lumium',
                 '#forge:gears/lumium',
@@ -1177,7 +1164,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_refill_upgrade',
             ingredients: [
                 'create:chute',
@@ -1192,7 +1179,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_foliot',
             pentacle_id: 'occultism:craft_foliot',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_glyph_sentientharm',
             ingredients: [
                 'ars_nouveau:marvelous_clay',
@@ -1207,7 +1194,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_turtle_normal',
             ingredients: [
                 'aquaculture:box_turtle',
@@ -1224,7 +1211,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 240,
+            duration: 120,
             ritual_dummy: 'kubejs:craft_turtle_advanced',
             ingredients: [
                 'aquaculture:box_turtle',
@@ -1298,6 +1285,201 @@ onEvent('recipes', (event) => {
             ],
             result: Item.of('kubejs:fisher_foliot', '{rollsPerOperation:1,Damage:0,maxMiningTime:400}'),
             id: `${id_prefix}craft_fisher_foliot`
+        },
+        {
+            ritual_type: 'occultism:craft',
+            activation_item: 'industrialforegoing:stasis_chamber',
+            pentacle_id: 'occultism:craft_marid',
+            duration: 120,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:gaia_guardian',
+                display_name: 'ritual.occultism.sacrifice.gaia_guardian'
+            },
+            ritual_dummy: 'kubejs:craft_gaia_reactor_controller',
+            ingredients: [
+                '#forge:pellets/antimatter',
+                '#botania:runes/wrath',
+                '#botania:runes/vanaheim',
+                '#botania:runes/greed',
+                '#forge:ingots/gaia_spirit',
+                'bloodmagic:corrosivecrystal',
+                '#forge:ingots/gaia_spirit',
+                'bloodmagic:steadfastcrystal',
+                'bloodmagic:destructivecrystal',
+                '#forge:ingots/gaia_spirit',
+                'bloodmagic:vengefulcrystal',
+                '#forge:ingots/gaia_spirit'
+            ],
+            result: 'masterfulmachinery:gaia_reactor_controller',
+            id: `${id_prefix}gaia_reactor_controller`
+        },
+        {
+            ritual_type: 'occultism:craft_miner_spirit',
+            activation_item: 'occultism:book_of_binding_bound_marid',
+            pentacle_id: 'occultism:craft_marid',
+            duration: 120,
+            ritual_dummy: 'kubejs:craft_miner_marid_irradiated',
+            ingredients: [
+                'occultism:magic_lamp_empty',
+                Item.of('occultism:iesnium_pickaxe', '{Damage:0]}').weakNBT(),
+                'atum:ptah_godforged_block',
+                '#forge:storage_blocks/iesnium',
+                '#forge:clusters/fluorite',
+                '#forge:clusters/sulfur',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium'
+            ],
+            result: Item.of('kubejs:miner_marid_irradiated', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
+            id: `${id_prefix}miner_marid_irradiated`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: 'ars_nouveau:summon_focus',
+            pentacle_id: 'occultism:craft_afrit',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/fire',
+                display_name: 'ritual.occultism.sacrifice.elemental.fire'
+            },
+            ritual_dummy: 'kubejs:craft_fire_focus',
+            ingredients: [
+                '#botania:runes/fire',
+                'minecraft:fire_charge',
+                'minecraft:fire_charge',
+                'minecraft:fire_charge',
+
+                'atum:ra_godshard',
+                'atum:ra_godshard',
+                'atum:ra_godshard',
+                'atum:ra_godshard',
+
+                'resourcefulbees:blaze_honeycomb',
+                'resourcefulbees:blaze_honeycomb',
+                'resourcefulbees:blaze_honeycomb',
+                'resourcefulbees:blaze_honeycomb'
+            ],
+            result: 'ars_elemental:fire_focus',
+            id: `${id_prefix}fire_focus`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: 'ars_nouveau:summon_focus',
+            pentacle_id: 'occultism:craft_afrit',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/water',
+                display_name: 'ritual.occultism.sacrifice.elemental.water'
+            },
+            ritual_dummy: 'kubejs:craft_water_focus',
+            ingredients: [
+                '#botania:runes/water',
+                'thermal:ice_charge',
+                'thermal:ice_charge',
+                'thermal:ice_charge',
+
+                'atum:tefnut_godshard',
+                'atum:tefnut_godshard',
+                'atum:tefnut_godshard',
+                'atum:tefnut_godshard',
+
+                'resourcefulbees:blizz_honeycomb',
+                'resourcefulbees:blizz_honeycomb',
+                'resourcefulbees:blizz_honeycomb',
+                'resourcefulbees:blizz_honeycomb'
+            ],
+            result: 'ars_elemental:water_focus',
+            id: `${id_prefix}water_focus`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: 'ars_nouveau:summon_focus',
+            pentacle_id: 'occultism:craft_afrit',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/air',
+                display_name: 'ritual.occultism.sacrifice.elemental.air'
+            },
+            ritual_dummy: 'kubejs:craft_air_focus',
+            ingredients: [
+                '#botania:runes/air',
+                'thermal:lightning_charge',
+                'thermal:lightning_charge',
+                'thermal:lightning_charge',
+
+                'atum:horus_godshard',
+                'atum:horus_godshard',
+                'atum:horus_godshard',
+                'atum:horus_godshard',
+
+                'resourcefulbees:blitz_honeycomb',
+                'resourcefulbees:blitz_honeycomb',
+                'resourcefulbees:blitz_honeycomb',
+                'resourcefulbees:blitz_honeycomb'
+            ],
+            result: 'ars_elemental:air_focus',
+            id: `${id_prefix}air_focus`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: 'ars_nouveau:summon_focus',
+            pentacle_id: 'occultism:craft_afrit',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/earth',
+                display_name: 'ritual.occultism.sacrifice.elemental.earth'
+            },
+            ritual_dummy: 'kubejs:craft_earth_focus',
+            ingredients: [
+                '#botania:runes/earth',
+                'thermal:earth_charge',
+                'thermal:earth_charge',
+                'thermal:earth_charge',
+
+                'atum:osiris_godshard',
+                'atum:osiris_godshard',
+                'atum:osiris_godshard',
+                'atum:osiris_godshard',
+
+                'resourcefulbees:basalz_honeycomb',
+                'resourcefulbees:basalz_honeycomb',
+                'resourcefulbees:basalz_honeycomb',
+                'resourcefulbees:basalz_honeycomb'
+            ],
+            result: 'ars_elemental:earth_focus',
+            id: `${id_prefix}earth_focus`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: 'ars_nouveau:summon_focus',
+            pentacle_id: 'occultism:craft_afrit',
+            duration: 60,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:wither',
+                display_name: 'ritual.occultism.sacrifice.wither'
+            },
+            ritual_dummy: 'kubejs:craft_necrotic_focus',
+            ingredients: [
+                '#botania:runes/helheim',
+                'eidolon:death_essence',
+                'eidolon:death_essence',
+                'eidolon:death_essence',
+
+                'atum:nepthys_godshard',
+                'atum:nepthys_godshard',
+                'atum:nepthys_godshard',
+                'atum:nepthys_godshard',
+
+                'resourcefulbees:wither_honeycomb',
+                'resourcefulbees:wither_honeycomb',
+                'resourcefulbees:wither_honeycomb',
+                'resourcefulbees:wither_honeycomb'
+            ],
+            result: 'ars_elemental:necrotic_focus',
+            id: `${id_prefix}necrotic_focus`
         }
     ];
 
@@ -1331,8 +1513,14 @@ onEvent('recipes', (event) => {
         { name: 'ender', ingredients: ['tconstruct:ender_cake', 'powah:ender_core'] },
         { name: 'explosive', ingredients: ['thermal:fire_tnt', 'industrialforegoing:infinity_nuke'] },
         { name: 'disenchantment', ingredients: ['apotheosis:draconic_endshelf', 'botania:rosa_arcana'] },
-        { name: 'rocket', ingredients: ['minecraft:firework_rocket', 'alexsmobs:frontier_cap'] },
-        { name: 'death', ingredients: ['eidolon:reaper_scythe', 'naturesaura:chorus_generator'] },
+        {
+            name: 'rocket',
+            ingredients: ['minecraft:firework_rocket', Item.of('alexsmobs:frontier_cap', '{Damage:0]}').weakNBT()]
+        },
+        {
+            name: 'death',
+            ingredients: [Item.of('eidolon:reaper_scythe', '{Damage:0]}').weakNBT(), 'naturesaura:chorus_generator']
+        },
         { name: 'frosty', ingredients: ['thermal:ice_tnt', 'betterendforge:ancient_emerald_ice'] },
         { name: 'culinary', ingredients: ['create:builders_tea', 'nethers_delight:stuffed_hoglin_item'] },
         { name: 'pink', ingredients: ['industrialforegoing:pink_slime_ingot', 'botania:pinkinator'] },
@@ -1343,7 +1531,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft',
             activation_item: 'occultism:dimensional_matrix',
             pentacle_id: 'occultism:craft_marid',
-            duration: 600,
+            duration: 300,
             entity_to_sacrifice: {
                 tag: 'enigmatica:mungus',
                 display_name: 'ritual.occultism.sacrifice.mungus'

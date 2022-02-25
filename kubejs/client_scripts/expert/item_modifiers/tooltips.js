@@ -33,7 +33,21 @@ onEvent('item.tooltip', (event) => {
             items: ['tconstruct:seared_melter'],
             text: [disabledInExpert, Text.of('Use the Smeltery Controller instead.').aqua()]
         },
-
+        {
+            items: [
+                'integrateddynamics:mechanical_squeezer',
+                'integrateddynamics:mechanical_drying_basin',
+                'integrateddynamics:squeezer',
+                'integrateddynamics:drying_basin',
+                'pneumaticcraft:air_compressor',
+                'pneumaticcraft:advanced_air_compressor',
+                'darkutils:rune_damage_player',
+                'eidolon:crucible',
+                'tanknull:dock',
+                'dankstorage:dock'
+            ],
+            text: [disabledInExpert]
+        },
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
             text: [
@@ -48,6 +62,39 @@ onEvent('item.tooltip', (event) => {
                 Text.of('Liquid Meat can be obtained by "processing" cows.').color('#6e2a2a'),
                 Text.of('Pink Slime can be harvested from a Pink Wither using a Fluid Laser.').color('#da07e6')
             ]
+        },
+        {
+            items: ['kubejs:medium_machinery_schematics'],
+            text: [
+                Text.of(`Unlocks the ability to form the following strutures:`).blue(),
+                Text.of(`- Automated Engineer's Workbench`).aqua(),
+                Text.of(`- Diesel Generator`).aqua(),
+                Text.of(`- Excavator`).aqua(),
+                Text.of(`- Fermenter`).aqua(),
+                Text.of(`- Metal Press`).aqua(),
+                Text.of(`- Mixer`).aqua(),
+                Text.of(`- Pumpjack`).aqua(),
+                Text.of(`- Refinery`).aqua(),
+                Text.of(`- Sawmill`).aqua(),
+                Text.of(`- Squeezer`).aqua()
+            ]
+        },
+        {
+            items: ['kubejs:heavy_machinery_schematics'],
+            text: [
+                Text.of(`Unlocks the ability to form the following strutures:`).blue(),
+                Text.of(`- Arc Furnace`).aqua(),
+                Text.of(`- Assembler`).aqua(),
+                Text.of(`- Coker Unit`).aqua(),
+                Text.of(`- Crusher`).aqua(),
+                Text.of(`- Distillation Tower`).aqua(),
+                Text.of(`- Lightning Rod`).aqua(),
+                Text.of(`- Sulfur Recovery Unit`).aqua()
+            ]
+        },
+        {
+            items: [/kubejs:diy/],
+            text: [Text.of(`Some Assembly Required.`).green(), Text.of(`Batteries Not Included.`).darkRed()]
         }
     ];
 

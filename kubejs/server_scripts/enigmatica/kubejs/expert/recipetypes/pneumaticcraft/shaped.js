@@ -406,6 +406,75 @@ onEvent('recipes', (event) => {
                 }
             },
             id: 'pneumaticcraft:speed_upgrade_from_glycerol'
+        },
+        {
+            output: Item.of('4x pneumaticcraft:volume_upgrade'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'pneumaticcraft:air_canister',
+                C: '#thermal:glass/hardened'
+            },
+            id: 'pneumaticcraft:volume_upgrade'
+        },
+        {
+            output: Item.of(
+                'pneumaticcraft:vacuum_pump',
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
+            ),
+            pattern: ['AEA', 'CBC', 'DFD'],
+            key: {
+                A: 'pneumaticcraft:pressure_gauge',
+                B: 'pneumaticcraft:turbine_rotor',
+                C: 'pneumaticcraft:pressure_tube',
+                D: 'pneumaticcraft:reinforced_stone_slab',
+                E: 'pneumaticcraft:pressure_chamber_glass',
+                F: 'thermal:machine_frame'
+            },
+            id: 'pneumaticcraft:vacuum_pump'
+        },
+        {
+            output: 'pneumaticcraft:item_life_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'atum:isis_godshard',
+                C: 'naturesaura:calling_spirit'
+            },
+            id: 'pneumaticcraft:item_life_upgrade'
+        },
+        {
+            output: Item.of('4x pneumaticcraft:inventory_upgrade'),
+            pattern: ['ACA', 'DBE', 'ACA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'thermal:energy_cell',
+                C: 'thermal:hazmat_fabric',
+                D: 'thermal:satchel',
+                E: 'thermal:fluid_reservoir'
+            },
+            id: 'pneumaticcraft:inventory_upgrade'
+        },
+        {
+            output: 'pneumaticcraft:entity_tracker_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'kubejs:memory_basic_filled',
+                C: 'botania:forest_eye'
+            },
+            id: 'pneumaticcraft:entity_tracker_upgrade'
+        },
+        {
+            output: 'pneumaticcraft:night_vision_upgrade',
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: Item.of('apotheosis:potion_charm', '{Damage:0,Potion:"minecraft:long_night_vision"}'),
+                C: 'occultism:infused_lenses',
+                D: '#forge:wires/copper'
+            },
+            id: 'pneumaticcraft:night_vision_upgrade'
         }
     ];
 

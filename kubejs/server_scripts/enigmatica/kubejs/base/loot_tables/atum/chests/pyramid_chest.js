@@ -142,27 +142,42 @@ onEvent('chest.loot_tables', (event) => {
                 {
                     item: Item.of('shrink:mob_bottle', '{entity:"minecraft:cat"}'),
                     weight: 20,
-                    count: [1, 2]
+                    count: 2
                 },
                 {
                     item: Item.of('shrink:mob_bottle', '{entity:"atum:desert_wolf"}'),
                     weight: 10,
-                    count: [1, 2]
+                    count: 2
                 },
                 {
                     item: Item.of('shrink:mob_bottle', '{entity:"atum:camel"}'),
                     weight: 10,
-                    count: [1, 2]
+                    count: 2
                 },
                 {
                     item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:crocodile"}'),
                     weight: 10,
-                    count: [1, 2]
+                    count: 2
                 },
                 {
                     item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:crow"}'),
                     weight: 20,
-                    count: [1, 2]
+                    count: 2
+                },
+                {
+                    item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:rattlesnake"}'),
+                    weight: 10,
+                    count: 2
+                },
+                {
+                    item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:komodo_dragon"}'),
+                    weight: 10,
+                    count: 2
+                },
+                {
+                    item: Item.of('shrink:mob_bottle', '{entity:"alexsmobs:kangaroo"}'),
+                    weight: 10,
+                    count: 2
                 },
                 {
                     item: 'ars_nouveau:carbuncle_shards',

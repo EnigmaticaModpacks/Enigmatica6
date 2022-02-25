@@ -1,0 +1,28 @@
+{
+    "controllerId": "enigmatic_tree_of_life",
+    "textureOverride": "minecraft:block/dark_oak_log",
+    "name": "Enigmatic Tree of Life",
+    "ports": [
+        {
+            "type": "masterfulmachinery:botania_mana",
+            "textureOverride": "botania:block/livingwood",
+            "name": "Mana",
+            "id": "mana",
+            "data": { "capacity": 1000000 }
+        },
+        {
+            "type": "masterfulmachinery:fluids",
+            "textureOverride": "botania:block/livingwood_planks",
+            "name": "Fluid",
+            "id": "fluid",
+            "data": { "capacity": 512000 }
+        },
+        {
+            "type": "masterfulmachinery:items",
+            "textureOverride": "botania:block/livingwood",
+            "name": "Item",
+            "id": "item",
+            "data": { "rows": 6, "columns": 9 }
+        }
+    ]
+}

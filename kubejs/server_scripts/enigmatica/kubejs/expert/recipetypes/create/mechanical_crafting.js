@@ -604,7 +604,7 @@ onEvent('recipes', (event) => {
                 A: 'thermal:lumium_glass',
                 B: 'immersiveengineering:electron_tube',
                 C: '#forge:treated_wood',
-                D: '#botanypots:simple_botany_pots',
+                D: '#botanypots:botany_pots',
                 E: 'immersiveengineering:component_steel',
                 F: 'pneumaticcraft:fluid_mixer'
             },
@@ -755,6 +755,20 @@ onEvent('recipes', (event) => {
                 F: 'mekanism:thermal_evaporation_controller'
             },
             id: `${id_prefix}stellar_neutron_activator_controller`
+        },
+        {
+            output: 'masterfulmachinery:industrial_deuterium_plant_controller',
+            pattern: ['ABCBA', 'CDFDC', 'BFGFB', 'CDEDC', 'ABCBA'],
+            key: {
+                A: 'immersiveengineering:concrete_leaded',
+                B: '#forge:plates/steel',
+                C: '#forge:plates/osmium',
+                D: '#forge:rods/osmium',
+                E: '#forge:circuits/ultimate',
+                F: 'mekanism:electrolytic_core',
+                G: '#industrialforegoing:machine_frame/supreme'
+            },
+            id: `${id_prefix}industrial_deuterium_plant_controller`
         }
     ];
 

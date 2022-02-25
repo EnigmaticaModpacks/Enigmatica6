@@ -223,11 +223,7 @@
 				""
 				"This spirit will take your ores and chonky chunks and crush crush crush them in to dusts which you can smelt in to ingots."
 				""
-				"Our little spirit friend is very efficient at their job! Each ore/chunk you give it will result in 2 dusts which you can smelt in to ingots effectively doubling your ore count!"
-				""
-				"While it does work hard, staying in this mortal realm is tough on our little friend. After awhile it will need to travel back to the other world where it will rest peacefully until you summon it again. As you progress in your journey, you will be able to summon more powerful crushers without these limitations!"
-				""
-				"Note: You must have a golden sacrificial bowl to continue."
+				"As you progress in your journey, you will be able to summon more powerful crushers!"
 			]
 			dependencies: ["0000000000000DD8"]
 			id: "0000000000000CF7"
@@ -1798,7 +1794,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "I crush circles around these other fools."
-			description: ["The Marid Crushing Spirit is the top ore multiplier in the occultist's arsenal! This spirit will provide 6 dust for each metal ore crushed and at an incredibly fast rate!"]
+			description: ["The Marid Crushing Spirit is the top ore multiplier in the occultist's arsenal! This spirit will provide even more dust per ore than the Afrit Crushing Spirit and at an incredibly fast rate!"]
 			dependencies: ["2DD7DA15B901B864"]
 			id: "62EC5B3B5D4AC29A"
 			tasks: [{
@@ -1987,7 +1983,7 @@
 				type: "advancement"
 				title: "Summon Blacksmith Familiar"
 				icon: "minecraft:anvil"
-				advancement: "occultism:occultism/familiar/blacksmith_upgrade"
+				advancement: "occultism:occultism/familiar_blacksmith"
 				criterion: ""
 			}]
 			rewards: [{

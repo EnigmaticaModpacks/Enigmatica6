@@ -33,6 +33,18 @@ onEvent('recipes', (event) => {
                 B: 'farmersdelight:canvas'
             },
             id: 'farmersdelight:basket'
+        },
+        {
+            output: 'farmersdelight:cooking_pot',
+            pattern: ['ABA', 'CDC', 'CEC'],
+            key: {
+                A: 'minecraft:brick',
+                B: 'kubejs:scented_stick',
+                C: '#forge:ingots/iron',
+                D: 'minecraft:conduit',
+                E: '#forge:plates/copper'
+            },
+            id: 'farmersdelight:cooking_pot'
         }
     ];
 

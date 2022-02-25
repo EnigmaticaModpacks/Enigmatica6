@@ -95,6 +95,7 @@ onEvent('recipes', (event) => {
         'create:pressing/lapis_block',
         'create:fill_minecraft_bucket_with_create_honey',
         'create:crushing/dense_construction_block',
+        'create:crushing/nether_quartz_ore',
 
         'dustrial_decor:ice_chain',
 
@@ -217,10 +218,13 @@ onEvent('recipes', (event) => {
         'thermal:storage/sulfur_block',
         'thermal:gunpowder_4',
 
+        'pneumaticcraft:one_probe_crafting',
+
         'ppfluids:fluid_pipe_to_pipe',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
+        'projectvibrantjourneys:seashells',
 
         'quark:building/crafting/compressed/gunpowder_sack',
 
@@ -228,6 +232,8 @@ onEvent('recipes', (event) => {
         'simplefarming:raw_chicken_wings',
 
         'supplementaries:strings_recipe',
+
+        'upgrade_aquatic:bone_meal_from_tooth',
 
         '/integrateddynamics:\\w+/convenience/minecraft_dye/',
         '/integrateddynamics:\\w+/ore/dust/',

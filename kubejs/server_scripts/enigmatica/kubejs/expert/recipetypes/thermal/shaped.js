@@ -223,7 +223,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/andesite_alloy',
                 B: 'minecraft:hopper',
-                C: 'create:filter',
+                C: '#sophisticatedbackpacks:upgrades/filter',
                 D: 'thermal:machine_frame',
                 E: '#forge:gears/iron',
                 F: 'thermal:rf_coil'
@@ -365,7 +365,7 @@ onEvent('recipes', (event) => {
                 B: 'ars_nouveau:warding_stone',
                 C: 'eidolon:wooden_brewing_stand',
                 D: 'atum:coin_gold',
-                E: 'eidolon:crucible'
+                E: 'farmersdelight:cooking_pot'
             },
             id: 'thermal:dynamo_numismatic'
         },

@@ -177,22 +177,22 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'integrateddynamics:variable', count: 1 },
+                { item: 'integrateddynamics:variable', count: 3 },
                 { item: 'refinedstorage:construction_core', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,
-            results: [{ item: 'integrateddynamics:variable_transformer_output', count: 1 }],
+            results: [{ item: 'integrateddynamics:variable_transformer_output', count: 3 }],
             id: `${id_prefix}variable_transformer_output`
         },
         {
             inputs: [
-                { item: 'integrateddynamics:variable', count: 1 },
+                { item: 'integrateddynamics:variable', count: 3 },
                 { item: 'refinedstorage:destruction_core', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,
-            results: [{ item: 'integrateddynamics:variable_transformer_input', count: 1 }],
+            results: [{ item: 'integrateddynamics:variable_transformer_input', count: 3 }],
             id: `${id_prefix}variable_transformer_input`
         },
         {
@@ -239,6 +239,197 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:astrogro', count: 3 }],
             id: `${id_prefix}astrogro`
+        },
+        {
+            inputs: [
+                { item: 'immersiveengineering:blastbrick_reinforced', count: 27 },
+                { item: 'immersiveengineering:light_engineering', count: 10 },
+                { item: 'immersiveengineering:heavy_engineering', count: 5 },
+                { tag: 'immersiveengineering:scaffoldings/steel', count: 5 },
+                { tag: 'forge:storage_blocks/steel', count: 6 },
+                { tag: 'forge:sheetmetals/steel', count: 15 },
+                { item: 'minecraft:cauldron', count: 1 },
+                { item: 'immersiveengineering:rs_engineering', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_arc_furnace', count: 1 }],
+            id: `${id_prefix}diy_arc_furnace`
+        },
+        {
+            inputs: [
+                { tag: 'immersiveengineering:scaffoldings/steel', count: 11 },
+                { item: 'immersiveengineering:light_engineering', count: 2 },
+                { item: 'immersiveengineering:treated_fence', count: 6 },
+                { item: 'immersiveengineering:rs_engineering', count: 1 },
+                { item: 'immersiveengineering:heavy_engineering', count: 2 },
+                { tag: 'forge:storage_blocks/steel', count: 2 },
+                { tag: 'forge:sheetmetals/steel', count: 4 },
+                { item: 'immersiveengineering:fluid_pipe', count: 4 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_pumpjack', count: 1 }],
+            id: `${id_prefix}diy_pumpjack`
+        },
+        {
+            inputs: [
+                { tag: 'immersiveengineering:scaffoldings/steel', count: 40 },
+                { item: 'immersiveengineering:heavy_engineering', count: 4 },
+                { item: 'immersiveengineering:rs_engineering', count: 1 },
+                { tag: 'forge:sheetmetals/iron', count: 60 },
+                { item: 'immersiveengineering:fluid_pipe', count: 17 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_distillation_tower', count: 1 }],
+            id: `${id_prefix}diy_distillation_tower`
+        },
+        {
+            inputs: [
+                { tag: 'immersiveengineering:scaffoldings/steel', count: 26 },
+                { tag: 'forge:sheetmetals/steel', count: 16 },
+                { item: 'immersiveengineering:radiator', count: 3 },
+                { item: 'immersiveengineering:light_engineering', count: 9 },
+                { item: 'immersiveengineering:rs_engineering', count: 1 },
+                { item: 'immersiveengineering:heavy_engineering', count: 4 },
+                { tag: 'forge:storage_blocks/steel', count: 9 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_excavator', count: 1 }],
+            id: `${id_prefix}diy_excavator`
+        },
+        {
+            inputs: [
+                { tag: 'mininggadgets:mininggadgets', count: 1 },
+                { item: 'mininggadgets:upgrade_fortune_3', count: 1 },
+                { item: 'mininggadgets:upgrade_efficiency_5', count: 1 },
+                { item: 'mininggadgets:upgrade_battery_3', count: 1 },
+                { item: 'mininggadgets:upgrade_silk', count: 1 },
+                { item: 'mininggadgets:upgrade_three_by_three', count: 1 },
+                { item: 'mininggadgets:upgrade_magnet', count: 1 },
+                { item: 'mininggadgets:upgrade_range_3', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:mining_gadget_kit', count: 1 }],
+            id: `${id_prefix}mining_gadget_kit`
+        },
+        {
+            inputs: [
+                { item: 'thermal:flux_drill', count: 1 },
+                { item: 'thermal:upgrade_augment_3', count: 1 },
+                { item: 'thermal:area_radius_augment', count: 3 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:flux_bore_kit', count: 1 }],
+            id: `${id_prefix}flux_bore_kit`
+        },
+        {
+            inputs: [
+                { item: 'pedestals:pedestal/stone333', count: 4 },
+                { item: 'pedestals:coin/quarry', count: 4 },
+                { item: 'pedestals:bookspeed', count: 8 },
+                { item: 'pedestals:bookrange', count: 8 },
+                { item: 'pedestals:bookarea', count: 8 },
+                { item: 'pedestals:bookcapacity', count: 8 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_pedestal_quarry', count: 1 }],
+            id: `${id_prefix}diy_pedestal_quarry`
+        },
+        {
+            inputs: [
+                { item: 'mekanism:mekasuit_helmet', count: 1 },
+                { item: 'mekanism:module_energy_unit', count: 8 },
+                { item: 'mekanism:module_vision_enhancement_unit', count: 4 },
+                { item: 'mekanism:module_inhalation_purification_unit', count: 1 },
+                { item: 'mekanism:module_nutritional_injection_unit', count: 1 },
+                { item: 'mekanism:module_electrolytic_breathing_unit', count: 4 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_mekasuit_helmet', count: 1 }],
+            id: `${id_prefix}diy_mekasuit_helmet`
+        },
+        {
+            inputs: [
+                { item: 'mekanism:mekasuit_bodyarmor', count: 1 },
+                { item: 'mekanism:module_energy_unit', count: 8 },
+                { item: 'mekanism:module_geiger_unit', count: 1 },
+                { item: 'mekanism:module_gravitational_modulating_unit', count: 1 },
+                { item: 'mekanism:module_dosimeter_unit', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_mekasuit_bodyarmor', count: 1 }],
+            id: `${id_prefix}diy_mekasuit_bodyarmor`
+        },
+        {
+            inputs: [
+                { item: 'mekanism:mekasuit_pants', count: 1 },
+                { item: 'mekanism:module_energy_unit', count: 8 },
+                { item: 'mekanismgenerators:module_geothermal_generator_unit', count: 8 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_mekasuit_pants', count: 1 }],
+            id: `${id_prefix}diy_mekasuit_pants`
+        },
+        {
+            inputs: [
+                { item: 'mekanism:mekasuit_boots', count: 1 },
+                { item: 'mekanism:module_energy_unit', count: 8 },
+                { item: 'mekanism:module_hydraulic_propulsion_unit', count: 4 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_mekasuit_boots', count: 1 }],
+            id: `${id_prefix}diy_mekasuit_boots`
+        },
+        {
+            inputs: [
+                { item: 'mekanism:meka_tool', count: 1 },
+                { item: 'mekanism:module_energy_unit', count: 8 },
+                { item: 'mekanism:module_attack_amplification_unit', count: 4 },
+                { item: 'mekanism:module_vein_mining_unit', count: 4 },
+                { item: 'mekanism:module_excavation_escalation_unit', count: 4 },
+                { item: 'mekanism:module_teleportation_unit', count: 1 },
+                { item: 'mekanism:module_laser_dissipation_unit', count: 4 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_meka_tool', count: 1 }],
+            id: `${id_prefix}diy_meka_tool`
+        },
+        {
+            inputs: [
+                { item: 'minecraft:skeleton_skull', count: 4 },
+                { item: 'minecraft:wither_skeleton_skull', count: 4 },
+                { item: 'eidolon:candlestick', count: 8 },
+                { item: 'occultism:spirit_attuned_crystal', count: 8 },
+                { item: 'occultism:golden_sacrificial_bowl', count: 1 },
+                { item: 'occultism:sacrificial_bowl', count: 12 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:artisinal_ritual_kit', count: 1 }],
+            id: `${id_prefix}artisinal_ritual_kit`
+        },
+        {
+            inputs: [
+                { item: 'occultism:chalk_white', count: 1 },
+                { item: 'occultism:chalk_gold', count: 1 },
+                { item: 'occultism:chalk_purple', count: 1 },
+                { item: 'occultism:chalk_red', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:artisinal_chalk_set', count: 1 }],
+            id: `${id_prefix}artisinal_chalk_set`
         }
     ];
 

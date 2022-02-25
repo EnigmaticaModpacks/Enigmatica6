@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'eidolon:wooden_altar',
             pattern: ['AAA', 'B B', 'B B'],
@@ -47,21 +47,19 @@ onEvent('recipes', (event) => {
             id: 'eidolon:basic_belt'
         },
         {
-            output: 'eidolon:crucible',
-            pattern: ['A A', 'ABA', 'AAA'],
+            output: 'eidolon:brazier',
+            pattern: ['AAA', 'CBC', 'D D'],
             key: {
                 A: '#forge:ingots/pewter',
-                B: 'minecraft:conduit'
+                B: 'minecraft:conduit',
+                C: 'eidolon:ender_calx',
+                D: 'minecraft:nether_brick_fence'
             },
-            id: 'eidolon:crucible'
+            id: 'eidolon:brazier'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

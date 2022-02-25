@@ -10,7 +10,7 @@ Loading an External Template
 	4) Place the Copy-Paste Gadget in the lower slot, the one the arrow is pointing at. 
 	5) Click the Paste button in the interface. 
 	
-At this point, the template is loaded and may be used to paste the structure in your world. The Gadget may still be in "Copy" mode and will need to be switched to "Paste" mode in order to work. With the Gadget in hand, press and hold the Mining Gadgets "Settings Menu" keybind** to open the gui. 
+At this point, the template is loaded and may be used to paste the structure in your world. The Gadget may still be in "Copy" mode and will need to be switched to "Paste" mode in order to work. With the Gadget in hand, press and hold the Building Gadgets "Settings Menu" keybind** to open the gui. 
 
 A list of required building materials can be viewed by holding the Gadget and pressing the "Open Material List" keybind**. These materials must be present in your inventory or in a Dank Storage item in your inventory. 
 

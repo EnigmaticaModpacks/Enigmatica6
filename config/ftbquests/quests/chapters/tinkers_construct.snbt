@@ -3720,5 +3720,52 @@
 				player_command: false
 			}]
 		}
+		{
+			title: "Filtered Ducts"
+			icon: "tconstruct:seared_duct"
+			x: 1.5d
+			y: 3.5d
+			subtitle: "Quack?"
+			description: ["Adding a seared or scorched duct to your smeltery or foundry lets you extract specific fluids by applying a bucket or copper can of fluid to the duct as a filter. Right click the duct to access it's UI to insert the filtering item."]
+			dependencies: [
+				"1EFC81649E4D4C50"
+				"40474087F229A612"
+			]
+			id: "2D600E439D5DE40B"
+			tasks: [
+				{
+					id: "6E5DBA482DE50E8D"
+					type: "item"
+					title: "Seared or Scorched Duct"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:seared_duct"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:scorched_duct"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "4A9CC9C83CE83620"
+					type: "item"
+					item: "tconstruct:copper_can"
+				}
+			]
+			rewards: [{
+				id: "2D49C30575BD08AE"
+				type: "item"
+				item: "tconstruct:copper_can"
+				count: 8
+			}]
+		}
 	]
 }

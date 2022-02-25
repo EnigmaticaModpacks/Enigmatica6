@@ -30,6 +30,8 @@
 		ingredientNetworkObserverFrequencyForced = 0
 		#If the version checker should be enabled.
 		versionChecker = false
+		#If corrupted networks should automatically be restored on first tick.
+		recreateCorruptedNetworks = true
 
 [general]
 

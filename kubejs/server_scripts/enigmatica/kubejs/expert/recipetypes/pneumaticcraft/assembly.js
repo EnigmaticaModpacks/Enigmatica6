@@ -6,12 +6,12 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             input: { item: 'thermal:machine_frame', count: 2 },
-            output: { item: 'kubejs:rftools_machine_frame_parts', count: 1 },
+            output: { item: 'kubejs:rough_machine_frame_top', count: 1 },
             program: 'drill',
-            id: `${id_prefix}rftools_machine_frame_parts`
+            id: `${id_prefix}rough_machine_frame_top`
         },
         {
-            input: { item: 'kubejs:unassembled_rftools_machine_frame', count: 1 },
+            input: { item: 'kubejs:rough_machine_frame', count: 1 },
             output: { item: 'rftoolsbase:machine_frame', count: 1 },
             program: 'laser',
             id: 'rftoolsbase:machine_frame'

@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
 
         var output = gear,
             input,
-            mold = '#thermal:crafting/dies/gear';
+            mold = 'immersiveengineering:mold_gear';
 
         if (ingot != air) {
             input = '#forge:ingots/' + material;

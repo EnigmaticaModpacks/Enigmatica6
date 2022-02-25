@@ -106,6 +106,12 @@ const itemsToHide = [
     'aiotbotania:livingwood_shears',
     'aiotbotania:livingrock_shears',
 
+    // Deprecated Ars Arsenal items
+    'arsarsenal:aqua_hood',
+    'arsarsenal:fire_hood',
+    'arsarsenal:earth_hood',
+    'arsarsenal:air_hood',
+
     'ars_nouveau:arcane_brick',
     'ars_nouveau:arcane_ore',
     'ars_nouveau:mana_gem_block',
@@ -193,9 +199,27 @@ const itemsToHide = [
 
     'farmersdelight:fried_egg',
 
+    'immersiveengineering:dust_coke',
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
+
+    'masterfulmachinery:auto_iridescent_altar_starlight_port_astral_starlight_output',
+    'masterfulmachinery:auto_iridescent_altar_fluid_port_fluids_output',
+    'masterfulmachinery:auto_iridescent_altar_energy_port_energy_output',
+    'masterfulmachinery:advanced_assembly_table_high_pressure_port_pncr_pressure_output',
+    'masterfulmachinery:stellar_neutron_activator_energy_port_energy_output',
+    'masterfulmachinery:stellar_neutron_activator_mana_port_botania_mana_output',
+    'masterfulmachinery:gaia_reactor_high_pressure_port_pncr_pressure_output',
+    'masterfulmachinery:gaia_reactor_mana_port_botania_mana_input',
+    'masterfulmachinery:gaia_reactor_fluid_port_fluids_output',
+    'masterfulmachinery:gaia_reactor_energy_port_energy_output',
+    'masterfulmachinery:gaia_reactor_item_port_items_input',
+    'masterfulmachinery:enigmatic_tree_of_life_fluid_port_fluids_output',
+    'masterfulmachinery:enigmatic_tree_of_life_mana_port_botania_mana_output',
+    'masterfulmachinery:industrial_deuterium_plant_energy_port_energy_output',
+    'masterfulmachinery:industrial_deuterium_plant_spinny_port_create_rotation_output',
+    'masterfulmachinery:industrial_deuterium_plant_pressure_port_pncr_pressure_output',
 
     'mctb:cherry_crafting_table',
     'mctb:dead_crafting_table',
@@ -517,7 +541,15 @@ const recipesToHide = [
     },
     {
         category: 'ars_nouveau:apparatus',
-        recipes_by_id: ['ars_nouveau:jar_of_light', 'ars_nouveau:void_jar']
+        recipes_by_id: [
+            'ars_nouveau:jar_of_light',
+            'ars_nouveau:void_jar',
+            'ars_elemental:air_focus',
+            'ars_elemental:water_focus',
+            'ars_elemental:earth_focus',
+            'ars_elemental:fire_focus',
+            'ars_elemental:necrotic_focus'
+        ]
     },
     {
         category: 'astralsorcery:altar_attunement',
@@ -659,9 +691,9 @@ const disabledItems = [
 
     'pneumaticcraft:wheat_flour',
 
-	'projectvibrantjourneys:clam',
-	'projectvibrantjourneys:clam_chowder',
-	'projectvibrantjourneys:cooked_clam',
+    'projectvibrantjourneys:clam',
+    'projectvibrantjourneys:clam_chowder',
+    'projectvibrantjourneys:cooked_clam',
 
     'quark:pipe',
     'quark:potato_crate',

@@ -676,6 +676,22 @@ onEvent('recipes', (event) => {
             output: 'quark:black_rune',
             count: 2,
             id: `quark:tools/crafting/runes/black_rune_from_crystal`
+        },
+        {
+            inputs: [
+                'quark:red_rune',
+                'quark:orange_rune',
+                'quark:yellow_rune',
+                'quark:lime_rune',
+                'quark:light_blue_rune',
+                'quark:blue_rune',
+                'quark:magenta_rune',
+                'quark:white_rune'
+            ],
+            mana: 4000 * 8,
+            output: 'quark:rainbow_rune',
+            count: 8,
+            id: 'quark:tools/crafting/runes/rainbow_rune2'
         }
     ];
 

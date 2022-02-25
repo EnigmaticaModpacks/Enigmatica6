@@ -4,6 +4,8 @@ onEvent('recipes', (event) => {
     }
 
     const idRemovals = [
+        'architects_palette:sunstone',
+
         'ars_nouveau:dull_trinket',
         'ars_nouveau:moonfall_2',
         'ars_nouveau:mundane_belt',
@@ -43,6 +45,8 @@ onEvent('recipes', (event) => {
         'darkutils:crafting/rune_damage_player',
         'darkutils:crafting/blank_plate',
         /darkutils:crafting\/export_plate/,
+
+        'eidolon:crucible',
 
         'farmersdelight:book_from_canvas',
 
@@ -87,15 +91,24 @@ onEvent('recipes', (event) => {
         /mekanism:factory/,
         'mekanism:robit',
         /mekanism:mekasuit/,
+        'mekanism:upgrade/filter',
+
+        'mekanismgenerators:separator/heavy_water',
+        'mekanismgenerators:activating/tritium',
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
         'minecraft:stick',
+        'minecraft:golden_carrot',
+        'minecraft:glistering_melon_slice',
+        'minecraft:golden_apple',
 
         'mininggadgets:upgrade_empty',
 
         'modularrouters:energy_upgrade',
         'modularrouters:sender_module_1_alt',
+
+        /naturesaura:animal_spawner\/sheep_/,
 
         'pedestals:ingot_gold_from_upgrades',
         'pedestals:upgrades/breaker2',
@@ -118,6 +131,7 @@ onEvent('recipes', (event) => {
 
         'quark:building/crafting/candles/candle_basic',
         'quark:building/crafting/red_nether_bricks_util',
+        'quark:tools/crafting/runes/rainbow_rune',
 
         'refinedstorage:quartz_enriched_iron',
         'rftoolscontrol:cpu_core_500',
@@ -130,7 +144,6 @@ onEvent('recipes', (event) => {
         'sophisticatedbackpacks:pump_upgrade',
         'sophisticatedbackpacks:advanced_pump_upgrade',
         'sophisticatedbackpacks:xp_pump_upgrade',
-        'sophisticatedbackpacks:compacting_upgrade',
         'sophisticatedbackpacks:advanced_compacting_upgrade',
         'sophisticatedbackpacks:tool_swapper_upgrade',
         'sophisticatedbackpacks:advanced_tool_swapper_upgrade',
@@ -286,7 +299,7 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'integrateddynamics:drying_basin' });
     event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
     event.remove({ type: 'integrateddynamics:squeezer' });
-    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
+    event.remove({ type: 'integrateddynamics:mechanical_squeezer' });
 
     patchouli_safe_removals.forEach((recipe) => {
         event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);
