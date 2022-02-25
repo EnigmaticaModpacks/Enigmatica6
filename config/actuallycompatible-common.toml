@@ -5,3 +5,9 @@
 	#Range: > 32767
 	newPaketBufferSize = 10000000
 
+["Ignored Mods"]
+	#Client-side mod IDs that will be ignored if not present on the server.
+	clientIgnoredMods = []
+	#Server-side mod IDs that will not be sent to the client.
+	serverIgnoredMods = []
+
