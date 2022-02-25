@@ -123,7 +123,12 @@ onEvent('item.registry', (event) => {
         'craft_enchantment_library',
         'craft_fisher_foliot',
         'craft_gaia_reactor_controller',
-        'craft_miner_marid_irradiated'
+        'craft_miner_marid_irradiated',
+        'craft_earth_focus',
+        'craft_air_focus',
+        'craft_water_focus',
+        'craft_fire_focus',
+        'craft_necrotic_focus'
     ];
 
     const reusableItemTextures = [

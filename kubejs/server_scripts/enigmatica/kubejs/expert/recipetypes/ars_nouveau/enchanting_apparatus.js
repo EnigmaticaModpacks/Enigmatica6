@@ -208,14 +208,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/gold_brass',
+                '#forge:inlays/arcane_gold',
                 'ars_nouveau:warding_stone',
-                '#forge:ingots/gold_brass',
-                '#forge:nuggets/gold_brass',
-                '#forge:nuggets/gold_brass',
-                '#forge:ingots/gold_brass',
+                '#forge:inlays/arcane_gold',
+                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/arcane_gold',
+                '#forge:inlays/arcane_gold',
                 'ars_nouveau:warding_stone',
-                '#forge:ingots/gold_brass'
+                '#forge:inlays/arcane_gold'
             ],
             reagent: '#forge:gems/mana',
             output: 'ars_nouveau:crystallizer',
@@ -1179,9 +1179,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber'
             ],
             reagent: Item.of('atum:wanderer_helmet', '{Damage:0}').weakNBT(),
@@ -1192,12 +1195,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber'
             ],
             reagent: Item.of('atum:wanderer_chest', '{Damage:0}').weakNBT(),
@@ -1208,11 +1211,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
-                'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber'
             ],
             reagent: Item.of('atum:wanderer_legs', '{Damage:0}').weakNBT(),
@@ -1223,8 +1227,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber',
+                'tconstruct:silky_cloth',
                 'ars_nouveau:mana_fiber'
             ],
             reagent: Item.of('atum:wanderer_boots', '{Damage:0}').weakNBT(),
@@ -1236,9 +1244,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_helmet', '{Damage:0}').weakNBT(),
@@ -1249,12 +1260,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_chest', '{Damage:0}').weakNBT(),
@@ -1265,11 +1276,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
-                'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_legs', '{Damage:0}').weakNBT(),
@@ -1280,8 +1292,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_boots', '{Damage:0}').weakNBT(),
@@ -1293,9 +1309,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_helmet', '{Damage:0}').weakNBT(),
@@ -1306,12 +1325,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_chestplate', '{Damage:0}').weakNBT(),
@@ -1322,11 +1341,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
-                'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_leggings', '{Damage:0}').weakNBT(),
@@ -1337,8 +1357,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber',
+                'eidolon:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_boots', '{Damage:0}').weakNBT(),
@@ -1933,17 +1957,17 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/gold_brass',
+                '#forge:nuggets/arcane_gold',
                 'create:polished_rose_quartz',
-                '#forge:ingots/gold_brass',
-                'ars_nouveau:spell_parchment',
-                'ars_nouveau:glyph_redstone_signal',
-                '#forge:ingots/gold_brass',
+                '#forge:nuggets/arcane_gold',
+                '#forge:inlays/arcane_gold',
+                '#forge:inlays/arcane_gold',
+                '#forge:nuggets/arcane_gold',
                 'create:polished_rose_quartz',
-                '#forge:ingots/gold_brass'
+                '#forge:nuggets/arcane_gold'
             ],
             sourceCost: 500,
-            reagent: 'minecraft:dispenser',
+            reagent: 'ars_nouveau:basic_spell_turret',
             output: 'ars_nouveau:spell_turret',
             id: 'ars_nouveau:spell_turret'
         },
@@ -2043,7 +2067,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/tinkers_bronze'
             ],
             sourceCost: 10000,
-            reagent: 'ars_nouveau:summoning_crystal',
+            reagent: 'minecraft:conduit',
             output: 'ars_nouveau:summon_focus',
             id: 'ars_nouveau:summon_focus'
         },
@@ -2129,11 +2153,29 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}carbee_jar`
         },
         {
-            inputs: ['#forge:ingots/gold', '#forge:ingots/gold', '#forge:dusts/redstone', '#forge:dusts/redstone'],
+            inputs: [
+                '#forge:ingots/gold',
+                'eidolon:enchanted_ash',
+                '#forge:ingots/gold',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone'
+            ],
             sourceCost: 500,
             reagent: 'eidolon:soul_shard',
             output: Item.of('2x eidolon:arcane_gold_ingot'),
-            id: `${id_prefix}carbee_jar`
+            id: `${id_prefix}arcane_gold_ingot`
+        },
+        {
+            inputs: [
+                '#forge:ingots/gold',
+                'eidolon:soul_shard',
+                '#forge:ingots/gold',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone'
+            ],
+            reagent: 'minecraft:conduit',
+            output: Item.of('2x eidolon:arcane_gold_ingot'),
+            id: `${id_prefix}arcane_gold_ingot_starter`
         },
         {
             inputs: [
@@ -2257,21 +2299,92 @@ onEvent('recipes', (event) => {
             output: Item.of('4x botania:light_relay'),
             id: 'botania:light_relay'
         },
-
-        /// Patchouli Removals
         {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            reagent: 'kubejs:altered_recipe_indicator',
-            output: 'ars_nouveau:void_jar',
-            id: 'ars_nouveau:jar_of_light'
+            inputs: [
+                'ars_elemental:fire_focus',
+                'eidolon:wicked_weave',
+                '#botania:runes/fire',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                '#botania:runes/fire',
+                'eidolon:wicked_weave',
+                'ars_elemental:fire_focus'
+            ],
+            sourceCost: 10000,
+            reagent: 'ars_nouveau:wilden_tribute',
+            output: Item.of('4x arsarsenal:sigil_of_pyromancy'),
+            id: 'arsarsenal:sigil_of_pyromancy'
         },
         {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            reagent: 'kubejs:altered_recipe_indicator',
-            output: 'ars_nouveau:void_jar',
-            id: 'ars_nouveau:void_jar'
+            inputs: [
+                'ars_elemental:water_focus',
+                'eidolon:wicked_weave',
+                '#botania:runes/water',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                '#botania:runes/water',
+                'eidolon:wicked_weave',
+                'ars_elemental:water_focus'
+            ],
+            sourceCost: 10000,
+            reagent: 'ars_nouveau:wilden_tribute',
+            output: Item.of('4x arsarsenal:sigil_of_aquamancy'),
+            id: 'arsarsenal:sigil_of_aquamancy'
+        },
+        {
+            inputs: [
+                'ars_elemental:earth_focus',
+                'eidolon:wicked_weave',
+                '#botania:runes/earth',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                '#botania:runes/earth',
+                'eidolon:wicked_weave',
+                'ars_elemental:earth_focus'
+            ],
+            sourceCost: 10000,
+            reagent: 'ars_nouveau:wilden_tribute',
+            output: Item.of('4x arsarsenal:sigil_of_geomancy'),
+            id: 'arsarsenal:sigil_of_geomancy'
+        },
+        {
+            inputs: [
+                'ars_elemental:air_focus',
+                'eidolon:wicked_weave',
+                '#botania:runes/air',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                '#botania:runes/air',
+                'eidolon:wicked_weave',
+                'ars_elemental:air_focus'
+            ],
+            sourceCost: 10000,
+            reagent: 'ars_nouveau:wilden_tribute',
+            output: Item.of('4x arsarsenal:sigil_of_aethermancy'),
+            id: 'arsarsenal:sigil_of_aethermancy'
         }
     ];
+
+    /// Patchouli Removals
+    let patchouli_removals = [
+        { output: 'ars_nouveau:void_jar', id: 'ars_nouveau:void_jar' },
+        { output: 'ars_nouveau:void_jar', id: 'ars_nouveau:void_jar' },
+        { output: 'ars_elemental:fire_focus', id: 'ars_elemental:fire_focus' },
+        { output: 'ars_elemental:water_focus', id: 'ars_elemental:water_focus' },
+        { output: 'ars_elemental:earth_focus', id: 'ars_elemental:earth_focus' },
+        { output: 'ars_elemental:air_focus', id: 'ars_elemental:air_focus' },
+        { output: 'ars_elemental:necrotic_focus', id: 'ars_elemental:necrotic_focus' }
+    ];
+
+    patchouli_removals.forEach((patchouli_removal) => {
+        recipes.push({
+            inputs: ['kubejs:altered_recipe_indicator'],
+            reagent: 'kubejs:altered_recipe_indicator',
+            output: patchouli_removal.output,
+            id: patchouli_removal.id
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.sourceCost
             ? event.recipes.ars_nouveau

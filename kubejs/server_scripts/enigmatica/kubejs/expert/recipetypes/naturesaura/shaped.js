@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'naturesaura:grated_chute',
             pattern: ['A A', 'ABA', ' A '],
@@ -27,13 +27,14 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'naturesaura:offering_table',
-            pattern: ['BAB', 'CBD', 'EEE'],
+            pattern: ['BAB', 'CED', 'EFE'],
             key: {
                 A: 'ars_nouveau:wilden_tribute',
                 B: 'naturesaura:infused_stone',
                 C: 'naturesaura:token_fear',
                 D: 'naturesaura:token_sorrow',
-                E: 'naturesaura:ancient_bark'
+                E: 'naturesaura:ancient_bark',
+                F: 'minecraft:conduit'
             },
             id: 'naturesaura:offering_table'
         },
@@ -135,11 +136,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

@@ -42,7 +42,9 @@ onEvent('item.tooltip', (event) => {
                 'pneumaticcraft:air_compressor',
                 'pneumaticcraft:advanced_air_compressor',
                 'darkutils:rune_damage_player',
-                'eidolon:crucible'
+                'eidolon:crucible',
+                'tanknull:dock',
+                'dankstorage:dock'
             ],
             text: [disabledInExpert]
         },

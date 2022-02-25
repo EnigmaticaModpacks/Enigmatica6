@@ -81,25 +81,25 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}arcane_gold_nugget`
         },
         {
-            inputs: [Fluid.of('materialis:molten_refined_obsidian', 144), 'tconstruct:ingot_cast'],
+            inputs: [Fluid.of('tconstruct:molten_refined_obsidian', 144), 'tconstruct:ingot_cast'],
             output: Item.of('mekanism:ingot_refined_obsidian', 1),
             energy: 5000,
             id: `${id_prefix}ingot_refined_obsidian`
         },
         {
-            inputs: [Fluid.of('materialis:molten_refined_obsidian', 16), 'tconstruct:nugget_cast'],
+            inputs: [Fluid.of('tconstruct:molten_refined_obsidian', 16), 'tconstruct:nugget_cast'],
             output: Item.of('mekanism:nugget_refined_obsidian', 1),
             energy: 555,
             id: `${id_prefix}nugget_refined_obsidian`
         },
         {
-            inputs: [Fluid.of('materialis:molten_refined_glowstone', 144), 'tconstruct:ingot_cast'],
+            inputs: [Fluid.of('tconstruct:molten_refined_glowstone', 144), 'tconstruct:ingot_cast'],
             output: Item.of('mekanism:ingot_refined_glowstone', 1),
             energy: 5000,
             id: `${id_prefix}ingot_refined_glowstone`
         },
         {
-            inputs: [Fluid.of('materialis:molten_refined_glowstone', 16), 'tconstruct:nugget_cast'],
+            inputs: [Fluid.of('tconstruct:molten_refined_glowstone', 16), 'tconstruct:nugget_cast'],
             output: Item.of('mekanism:nugget_refined_glowstone', 1),
             energy: 555,
             id: `${id_prefix}nugget_refined_glowstone`

@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
     ];
 
     colors.forEach((color) => {
-        data.recipes.push({
+        recipes.push({
             inputs: [`#forge:dyes/${color}`, '#enigmatica:candle_materials', '#forge:string'],
             output: `quark:${color}_candle`,
             count: 1,
