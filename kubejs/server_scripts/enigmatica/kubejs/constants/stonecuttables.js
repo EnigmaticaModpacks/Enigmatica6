@@ -2508,3 +2508,43 @@ plankTypes.forEach((plankType) => {
         onlyAsInput: []
     });
 });
+
+const masonryStoneTypes = ['stone', 'granite', 'andesite', 'diorite', 'darkprismarine', 'prismarine'];
+const masonryTiledStoneTypes = masonryStoneTypes.concat(['endstone', 'netherrack', 'obsidian']);
+const masonryPatterns = [
+    'carvedcreeper',
+    'carvedderp',
+    'carvedvillager',
+    'carvedwither',
+    'carvedwriting',
+    'column',
+    'cut',
+    'engraved',
+    'panels',
+    'pavers',
+    'pillar',
+    'polished',
+    'roughcut',
+    'chiseled',
+    'cobbled',
+    'cobbledmossy',
+    'diamondpavers',
+    'largebricks',
+    'largebrickscracked',
+    'largebricksmossy',
+    'smallbrick'
+];
+const masonryIgnoredInputs = [
+    'stonecobbled',
+    'stonecobbledmossy',
+    'stonelargebricks',
+    'stonelargebricksmossy',
+    'stonechiseled',
+    'stonelargebrickscracked',
+    'granitepolished',
+    'dioritepolished',
+    'andesitepolished',
+    'darkprismarinepanels',
+    'prismarinepavers',
+    'stonesmallbrick'
+];

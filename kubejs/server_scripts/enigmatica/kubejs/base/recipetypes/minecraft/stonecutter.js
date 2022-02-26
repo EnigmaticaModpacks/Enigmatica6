@@ -1,110 +1,141 @@
 onEvent('recipes', (event) => {
+    const recipes = [
+        {
+            output: 'masonry:stonechiseledslab',
+            input: 'minecraft:chiseled_stone_bricks'
+        },
+        {
+            output: 'masonry:stonechiseledwall',
+            input: 'minecraft:chiseled_stone_bricks'
+        },
+        {
+            output: 'masonry:stonelargebrickscrackedslab',
+            input: 'minecraft:cracked_stone_bricks'
+        },
+        {
+            output: 'masonry:stonelargebrickscrackedwall',
+            input: 'minecraft:cracked_stone_bricks'
+        },
+        {
+            output: 'masonry:granitepolishedwall',
+            input: 'minecraft:polished_granite'
+        },
+        {
+            output: 'masonry:dioritepolishedwall',
+            input: 'minecraft:polished_diorite'
+        },
+        {
+            output: 'masonry:andesitepolishedwall',
+            input: 'minecraft:polished_andesite'
+        },
+        {
+            output: 'masonry:darkprismarinepanelswall',
+            input: 'minecraft:dark_prismarine'
+        },
+        {
+            output: 'masonry:prismarinepaverswall',
+            input: 'minecraft:prismarine_bricks'
+        },
+        {
+            output: 'betterendforge:endstone_dust',
+            input: 'byg:end_sand'
+        },
+        {
+            output: 'byg:end_sand',
+            input: 'betterendforge:endstone_dust'
+        },
+        {
+            output: Item.of('2x occultism:otherstone_slab'),
+            input: 'occultism:otherstone'
+        },
+        {
+            output: Item.of('8x darkutils:blank_plate'),
+            input: 'occultism:otherstone'
+        },
+        {
+            output: 'minecraft:terracotta',
+            input: 'quark:shingles'
+        }
+    ];
+
+    // Color based recipes
+    colors.forEach((color) => {
+        recipes.push({
+            output: `minecraft:${color}_terracotta`,
+            input: `quark:${color}_shingles`
+        });
+    });
+
+    // Recipes for stonecuttables constant
+    stonecuttables.forEach((stoneType) => {
+        stoneType.stones.forEach((stone) => {
+            recipes.push({
+                output: stone,
+                input: `#enigmatica:stonecuttables/${stoneType.name}`
+            });
+        });
+
+        stoneType.onlyAsOutput.forEach((stone) => {
+            recipes.push({
+                output: stone,
+                input: `#enigmatica:stonecuttables/${stoneType.name}`
+            });
+        });
+    });
+
+    // Recipes for masonry constants
+    masonryStoneTypes.forEach((stoneType) => {
+        masonryPatterns.forEach((pattern) => {
+            let input = stoneType + pattern;
+            if (!masonryIgnoredInputs.includes(input)) {
+                recipes.push({
+                    output: `2x masonry:${input}slab`,
+                    input: `masonry:${input}`
+                });
+                recipes.push({
+                    output: `masonry:${input}wall`,
+                    input: `masonry:${input}`
+                });
+            }
+        });
+    });
+
+    masonryTiledStoneTypes.forEach((stoneType) => {
+        recipes.push({
+            output: Item.of(`2x masonry:${stoneType}tiledslab`),
+            input: `masonry:${stoneType}tiled`
+        });
+        recipes.push({
+            output: `masonry:${stoneType}tiledwall`,
+            input: `masonry:${stoneType}tiled`
+        });
+    });
+
     // Conversion between different storage_blocks of the same material
-    var conversionTypes = ['storage_block', 'ore'];
+    let conversionTypes = ['storage_block', 'ore'];
     conversionTypes.forEach((type) => {
         materialsToUnify.forEach((material) => {
             if (!entryIsBlacklisted(material, type)) {
                 let tag = Ingredient.of(`#forge:${type}s/${material}`);
                 if (tag.stacks.size() > 1) {
                     tag.stacks.forEach((block) => {
-                        event.stonecutting(block.id, tag);
+                        recipes.push({ output: block.id, input: tag });
                     });
                 }
             }
         });
     });
 
-    stonecuttables.forEach((stoneType) => {
-        var tag = `#enigmatica:stonecuttables/${stoneType.name}`;
-        stoneType.stones.forEach((stone) => {
-            event.stonecutting(stone, tag);
-        });
-        stoneType.onlyAsOutput.forEach((stone) => {
-            event.stonecutting(stone, tag);
-        });
-    });
-
-    event.stonecutting('minecraft:terracotta', 'quark:shingles');
-
-    colors.forEach((color) => {
-        event.stonecutting(`minecraft:${color}_terracotta`, `quark:${color}_shingles`);
-    });
-
-    var masonryStoneTypes = ['stone', 'granite', 'andesite', 'diorite', 'darkprismarine', 'prismarine'];
-    var masonryCuttingTypes = ['slab', 'wall'];
-    var masonryPatterns = [
-        'carvedcreeper',
-        'carvedderp',
-        'carvedvillager',
-        'carvedwither',
-        'carvedwriting',
-        'column',
-        'cut',
-        'engraved',
-        'panels',
-        'pavers',
-        'pillar',
-        'polished',
-        'roughcut',
-        'chiseled',
-        'cobbled',
-        'cobbledmossy',
-        'diamondpavers',
-        'largebricks',
-        'largebrickscracked',
-        'largebricksmossy',
-        'smallbrick'
-    ];
-    var masonryIgnoredInputs = [
-        'stonecobbled',
-        'stonecobbledmossy',
-        'stonelargebricks',
-        'stonelargebricksmossy',
-        'stonechiseled',
-        'stonelargebrickscracked',
-        'granitepolished',
-        'dioritepolished',
-        'andesitepolished',
-        'darkprismarinepanels',
-        'prismarinepavers',
-        'stonesmallbrick'
-    ];
-    masonryStoneTypes.forEach((stoneType) => {
-        masonryPatterns.forEach((pattern) => {
-            masonryCuttingTypes.forEach((cuttingType) => {
-                let input = stoneType + pattern;
-                if (!masonryIgnoredInputs.includes(input)) {
-                    event.stonecutting('masonry:' + input + cuttingType, 'masonry:' + input);
-                }
-            });
+    // Tag conversion
+    conversionTypes = ['#forge:dirt', '#forge:workbenches', '#forge:grass'];
+    conversionTypes.forEach((tag) => {
+        let ingredient = Ingredient.of(tag);
+        ingredient.stacks.forEach((block) => {
+            recipes.push({ output: block.id, input: ingredient });
         });
     });
-    event.stonecutting('masonry:stonechiseledslab', 'minecraft:chiseled_stone_bricks');
-    event.stonecutting('masonry:stonechiseledwall', 'minecraft:chiseled_stone_bricks');
-    event.stonecutting('masonry:stonelargebrickscrackedslab', 'minecraft:cracked_stone_bricks');
-    event.stonecutting('masonry:stonelargebrickscrackedwall', 'minecraft:cracked_stone_bricks');
-    event.stonecutting('masonry:granitepolishedwall', 'minecraft:polished_granite');
-    event.stonecutting('masonry:dioritepolishedwall', 'minecraft:polished_diorite');
-    event.stonecutting('masonry:andesitepolishedwall', 'minecraft:polished_andesite');
-    event.stonecutting('masonry:darkprismarinepanelswall', 'minecraft:dark_prismarine');
-    event.stonecutting('masonry:prismarinepaverswall', 'minecraft:prismarine_bricks');
-    event.stonecutting('betterendforge:endstone_dust', 'byg:end_sand');
-    event.stonecutting('byg:end_sand', 'betterendforge:endstone_dust');
 
-    var masonryTiledStoneTypes = masonryStoneTypes.concat(['endstone', 'netherrack', 'obsidian']);
-    masonryTiledStoneTypes.forEach((stoneType) => {
-        event.stonecutting(`masonry:${stoneType}tiledslab`, `masonry:${stoneType}tiled`);
-        event.stonecutting(`masonry:${stoneType}tiledwall`, `masonry:${stoneType}tiled`);
-    });
-
-    ['#forge:dirt', '#forge:workbenches', '#forge:grass'].forEach((tag) => {
-        stonecutterTagConversion(event, tag);
+    recipes.forEach((recipe) => {
+        event.stonecutting(recipe.output, recipe.input);
     });
 });
-
-stonecutterTagConversion = (event, tag) => {
-    let ingredient = Ingredient.of(tag);
-    ingredient.stacks.forEach((block) => {
-        event.stonecutting(block.id, ingredient);
-    });
-};
