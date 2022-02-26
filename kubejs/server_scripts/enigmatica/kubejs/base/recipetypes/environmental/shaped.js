@@ -1,5 +1,5 @@
 onEvent('recipes', (event) => {
-    const id_prefix = 'enigmatica:base/environmental/shaped';
+    const id_prefix = 'enigmatica:base/environmental/shaped/';
     /*
         ,
         {
@@ -30,6 +30,58 @@ onEvent('recipes', (event) => {
                 B: '#forge:ices/packed'
             },
             id: 'environmental:building/ice_chain'
+        },
+        {
+            output: Item.of('3x environmental:willow_sign'),
+            pattern: ['AAA', 'AAA', ' B '],
+            key: {
+                A: ['byg:willow_planks', 'environmental:willow_planks', 'projectvibrantjourneys:willow_planks'],
+                B: '#forge:rods/wooden'
+            },
+            id: 'environmental:building/wood/willow/willow_sign'
+        },
+        {
+            output: Item.of('3x environmental:cherry_sign'),
+            pattern: ['AAA', 'AAA', ' B '],
+            key: {
+                A: ['byg:cherry_planks', 'atmospheric:cherry_planks', 'projectvibrantjourneys:sakura_planks'],
+                B: '#forge:rods/wooden'
+            },
+            id: 'environmental:building/wood/cherry/cherry_sign'
+        },
+
+        {
+            output: 'environmental:willow_chest',
+            pattern: ['AAA', 'A A', 'AAA'],
+            key: {
+                A: ['byg:willow_planks', 'environmental:willow_planks', 'projectvibrantjourneys:willow_planks']
+            },
+            id: 'environmental:building/wood/willow/willow_chest'
+        },
+        {
+            output: 'environmental:cherry_chest',
+            pattern: ['AAA', 'A A', 'AAA'],
+            key: {
+                A: ['byg:cherry_planks', 'atmospheric:cherry_planks', 'projectvibrantjourneys:sakura_planks']
+            },
+            id: 'environmental:building/wood/cherry/cherry_chest'
+        },
+
+        {
+            output: Item.of('4x environmental:willow_chest'),
+            pattern: ['AAA', 'A A', 'AAA'],
+            key: {
+                A: ['byg:willow_log', 'environmental:willow_log', 'projectvibrantjourneys:willow_log']
+            },
+            id: `${id_prefix}willow_chest_from_logs`
+        },
+        {
+            output: Item.of('4x environmental:cherry_chest'),
+            pattern: ['AAA', 'A A', 'AAA'],
+            key: {
+                A: ['byg:cherry_log', 'atmospheric:cherry_log', 'projectvibrantjourneys:sakura_log']
+            },
+            id: `${id_prefix}cherry_chest_from_logs`
         }
     ];
 
