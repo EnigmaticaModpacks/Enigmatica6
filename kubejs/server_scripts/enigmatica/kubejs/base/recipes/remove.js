@@ -74,6 +74,8 @@ onEvent('recipes', (event) => {
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 
+        /atmospheric:\w+_chest_wood/,
+
         'atum:pumpkin_pie',
 
         'betterendforge:gunpowder_from_sulphur',
@@ -107,6 +109,7 @@ onEvent('recipes', (event) => {
 
         'environmental:misc/cherries/cherry_pie',
         'environmental:misc/apple_pie',
+        /environmental:building\/wood\/\w+\/\w+_chest_wood/,
 
         'farmersdelight:cutting/chicken',
         'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
