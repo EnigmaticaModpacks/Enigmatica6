@@ -1,3 +1,99 @@
+### Enigmatica 6 v0.5.26
+
+_Using Forge-1.16.5-36.2.29_ | No Mod Update List this time :( | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.26.md)_
+
+**New Mods!**
+
+- Interactive Corporea
+- Trading Post
+- Culinary Construct
+- When Dungeons Arise
+- Guard Villagers
+- Diagonal Fences
+- Refined Cooking
+- Observable
+
+**Changes/Improvements**
+
+- Add a way to get Upgrade aquatic kelps for rewards? [\#4227](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4227)
+- Add crushing recipes for teeth to bonemeal. Yum. [\#4253](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4253) ([MuteTiefling](https://github.com/MuteTiefling))
+- Add End Mineral Survey as replacement to previously disabled IE mineral nodes. [\#4256](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4256) ([MuteTiefling](https://github.com/MuteTiefling))
+- Add iron golem apotheosis boss [\#4152](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4152) ([theboo](https://github.com/theboo))
+- Add Irradiated Occultism Miner for fissile fuel production [\#4208](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4208) ([theboo](https://github.com/theboo))
+- Add marshmallow and chicory roots to Market [\#4150](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4150) ([Rodg88](https://github.com/Rodg88))
+- Add mention in Astral quests that attunement is required to see Dim constellations [\#4292](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4292) ([MuteTiefling](https://github.com/MuteTiefling))
+- Add more BYG mushrooms to the market [\#4116](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4116) ([mcilhargey](https://github.com/mcilhargey))
+- Add Upgrade Aquatic kelp as uncommon loot in Neptune's Bounty [\#4234](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4234) ([MuteTiefling](https://github.com/MuteTiefling))
+- Ars Nouveau Quest update to help make Expert/Normal work together [\#4268](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4268) ([MuteTiefling](https://github.com/MuteTiefling))
+- Automation quests and other minor quest fixes [\#4161](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4161) ([Rodg88](https://github.com/Rodg88))
+- \[Expert\] fix RS cables and \[Base\] remove extra quartz processing recipe in Create [\#4175](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4175) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[expert\] The Ars Nouveau quests for the enchanting apparatus and the crystallizer should be switched around for progression, since the crystallizer is made on the apparatus.  [\#4265](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4265)
+- Blacklist Ars Familiars and Target Dummies from Sacrifices [\#4278](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4278) ([MuteTiefling](https://github.com/MuteTiefling))
+- Change patchouli to be an all-modes config [\#4163](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4163) ([Rodg88](https://github.com/Rodg88))
+- Fix Botany Pot washing recipes [\#4157](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4157) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix input for Fried Potato Cubes [\#4118](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4118) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix PNC tanks not consuming input tanks on upgrade [\#4195](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4195) ([MuteTiefling](https://github.com/MuteTiefling))
+- fix powah player transmitter title [\#4209](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4209) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix typo in storage quests: "$storage/bag" [\#4266](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4266) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fluid Storage and Automation quests [\#4084](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4084) ([FieldArmada](https://github.com/FieldArmada))
+- Gear press uses IE gear form [\#4187](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4187) ([MuteTiefling](https://github.com/MuteTiefling))
+- Hide IE coke dust [\#4196](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4196) ([FieldArmada](https://github.com/FieldArmada))
+- Improve visibility of Occultism Ritual Dummies in JEI [\#4178](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4178) ([MuteTiefling](https://github.com/MuteTiefling))
+- Increase output rate of Powah Thermo Generators [\#4210](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4210) ([MuteTiefling](https://github.com/MuteTiefling))
+- Make Immersive Engineering Evacuator Fetch Infinite Ores  [\#3350](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3350)
+- Max thermo generator IO can't keep up to its output [\#4204](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4204)
+- New Crowdin updates [\#4124](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4124) ([NillerMedDild](https://github.com/NillerMedDild))
+- New Crowdin updates [\#4147](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4147) ([NillerMedDild](https://github.com/NillerMedDild))
+- Quark Runes [\#4222](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4222)
+- Quartz Ore processing with Create Crushing wheels doesn't make sense? [\#4174](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4174)
+- Quest Update: Fix Blacksmith Familiar quest and modify Foliot Crusher description [\#4148](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4148) ([theboo](https://github.com/theboo))
+- Remove lingering one probe recipe for PNC helmet [\#4119](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4119) ([MuteTiefling](https://github.com/MuteTiefling))
+- Remove unused molten metals from Botania added by KubeJS. Materialis has them already. [\#4233](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4233) ([MuteTiefling](https://github.com/MuteTiefling))
+- Storage quests update [\#4149](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4149) ([Rodg88](https://github.com/Rodg88))
+- Suggestion: Add a way to manually place Miner's Light [\#3920](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3920)
+- Swap to tconstruct's native fluids for Refined Glowstone and Refined Obsidian [\#4280](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4280) ([MuteTiefling](https://github.com/MuteTiefling))
+- Tinkers Construct Questline [\#2463](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/2463)
+- Uses for Alex's Mobs Teeth  [\#4248](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4248)
+- Add tons of food to the various mansion store rooms [\#4272](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4272) ([theboo](https://github.com/theboo))
+
+**Bug Fixes**
+
+- All items can be duped using the Pretty Pipes "Crafting Terminal" [\#4122](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4122)
+- Apiary visualiser not working properly [\#3659](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3659)
+- Bacon sandwich and BLT crafting recipe conflict [\#4218](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4218)
+- \[expert\] New Un-Crucible recipes lock ars nouveau with present arcane gold recipe, and a suggested solution. [\#4260](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4260)
+- Botony Pots Colorized with Hopper Transformation [\#3865](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3865)
+- Bug duping Refined Obsidian Ingots in Thermal Blast Chiller [\#4279](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4279)
+- Building Gadgets Readme Mislabelled Binding [\#4164](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4164)
+- Change '$storage/bags' in storage quest to '$storage/bag' and potentially add more items to the tag [\#4264](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4264)
+- Conflict between Manual Centrifgure and Tinkers' Construct chest armor [\#4167](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4167)
+- Expert quests are \[again\] visible on normal version from CurseForge! [\#4140](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4140)
+- Fix recipe conflict [\#4219](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4219) ([Rodg88](https://github.com/Rodg88))
+- Fried Potato Slices recipe issue [\#4115](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4115)
+- Hide Chisels & Bits's bunch of bits from JEI [\#4173](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4173)
+- Invalid Player Transmitter quest requirement [\#4202](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4202)
+- JEI + Refined Storage should ideally have a "default" item per valid tag [\#2975](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/2975)
+- No drops after update [\#4270](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4270)
+- Normal mode - IE press - broken gear recipe [\#4185](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4185)
+- Occultism Foliot Lumberjack causing crash [\#4207](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4207)
+- Pink wither milking [\#4259](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4259)
+- PneumaticCraft tank upgrade recipe does not consume tanks with fluids [\#4188](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4188)
+- Re-add missing trapped chest recipe [\#4235](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4235) ([MuteTiefling](https://github.com/MuteTiefling))
+- Redstone Pen's redstone tracks behave unexpectedly  [\#4126](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4126)
+- Resourceful Bees Beehive de-tier when broken with Silktouch [\#3517](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3517)
+- RFToolsBase machine frame [\#4112](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4112)
+- shields are not visible on left hand [\#4098](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4098)
+- Tinkers Con Capacitor Modifier [\#4138](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4138)
+- Typo in quest book [\#4246](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4246)
+- Wasabee breeding tab causing client to crash [\#4076](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4076)
+- When i press shift on a backpack to view its contents, this happens. [\#4105](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4105)
+- Fix Wasabee Crash [\#4226](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4226) ([TemperedFool](https://github.com/TemperedFool))
+- Remove reference to exact output for Marid Crusher [\#4245](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4245) ([MuteTiefling](https://github.com/MuteTiefling))
+- Typo fixes [\#4247](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4247) ([Rodg88](https://github.com/Rodg88))
+- Remove Mimicream from Hemolymph Blaster recipe [\#4290](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4290) ([theboo](https://github.com/theboo))
+
+---
+
 ### Enigmatica 6 v0.5.25
 
 _Using Forge-1.16.5-36.2.22_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.25.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.25.md)_
