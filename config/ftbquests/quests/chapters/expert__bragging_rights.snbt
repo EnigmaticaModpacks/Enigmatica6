@@ -33,8 +33,7 @@
 								id: "kubejs:disabled_recipe_indicator"
 								Count: 1b
 							}
-							DisplayScale: 1.0f
-							Animation: "fixed"
+							DisplayHeight: "2.0f.0f"
 							Colors: {
 								Bottom: {
 									Red: 249
@@ -52,6 +51,8 @@
 									Green: 255
 								}
 							}
+							Animation: "spinning"
+							AnimationSpeed: 0.3f
 							Name: "Enigmatica 6: Expert Mode"
 						}
 					}
@@ -68,6 +69,44 @@
 				type: "item"
 				item: "kubejs:excavation_mastery_token"
 			}]
+			rewards: [{
+				id: "693FC941F15A3ACE"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:excavation_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Excavation Mastery"
+						}
+					}
+				}
+			}]
 		}
 		{
 			x: 1.5d
@@ -78,6 +117,44 @@
 				id: "6BDE4D704EAF5C05"
 				type: "item"
 				item: "kubejs:alchemy_mastery_token"
+			}]
+			rewards: [{
+				id: "551D5FD396FF093D"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:alchemy_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Alchemy Mastery"
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -90,6 +167,44 @@
 				type: "item"
 				item: "kubejs:automation_mastery_token"
 			}]
+			rewards: [{
+				id: "3AB2CF7F89C657B5"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:automation_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Automation Mastery"
+						}
+					}
+				}
+			}]
 		}
 		{
 			x: 0.0d
@@ -100,6 +215,44 @@
 				id: "2BB3E567517D599F"
 				type: "item"
 				item: "kubejs:engineering_mastery_token"
+			}]
+			rewards: [{
+				id: "4D3A23023C449286"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:engineering_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Engineering Mastery"
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -112,6 +265,44 @@
 				type: "item"
 				item: "kubejs:botanical_mastery_token"
 			}]
+			rewards: [{
+				id: "2544D1CD29FA3294"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:botanical_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Botanical Mastery"
+						}
+					}
+				}
+			}]
 		}
 		{
 			x: 0.0d
@@ -122,6 +313,44 @@
 				id: "5C9CA9991302C5CA"
 				type: "item"
 				item: "kubejs:battle_mastery_token"
+			}]
+			rewards: [{
+				id: "1D9D78838F73FAB1"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:battle_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Battle Mastery"
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -134,6 +363,44 @@
 				type: "item"
 				item: "kubejs:dimensional_mastery_token"
 			}]
+			rewards: [{
+				id: "0E6C5C79136A434B"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:dimensional_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Dimensional Mastery"
+						}
+					}
+				}
+			}]
 		}
 		{
 			x: -2.0d
@@ -144,6 +411,44 @@
 				id: "7C2A6AD9D846702E"
 				type: "item"
 				item: "kubejs:energistics_mastery_token"
+			}]
+			rewards: [{
+				id: "20CD22DE6E8E7067"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:energistics_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Energistics Mastery"
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -156,6 +461,44 @@
 				type: "item"
 				item: "kubejs:ritual_mastery_token"
 			}]
+			rewards: [{
+				id: "541CF497CB5FE81E"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:ritual_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Ritual Mastery"
+						}
+					}
+				}
+			}]
 		}
 		{
 			x: 2.5d
@@ -166,6 +509,44 @@
 				id: "15599A14E7C2F230"
 				type: "item"
 				item: "kubejs:aura_mastery_token"
+			}]
+			rewards: [{
+				id: "3D93697F45EC1124"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:aura_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Aura Mastery"
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -178,21 +559,58 @@
 				type: "item"
 				item: "kubejs:astronomy_mastery_token"
 			}]
+			rewards: [{
+				id: "678108C4817B164B"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:astronomy_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Astronomy Mastery"
+						}
+					}
+				}
+			}]
 		}
 		{
 			title: "Bragging Rights"
-			icon: {
-				id: "tconstruct:creative_slot"
-				Count: 1b
-				tag: {
-					slot: "abilities"
-				}
-			}
+			icon: "masterfulmachinery:enigmatic_tree_of_life_controller"
 			x: 0.0d
 			y: 4.0d
 			dependencies: ["0000000000000FEB"]
 			hide: true
 			id: "7C0943FD8F8A0D69"
+			tasks: [{
+				id: "0B1FB01E3D6A63F8"
+				type: "item"
+				item: "masterfulmachinery:enigmatic_tree_of_life_controller"
+			}]
 		}
 		{
 			x: 0.0d
@@ -203,6 +621,44 @@
 				id: "0C3AD97B67E61659"
 				type: "item"
 				item: "kubejs:culinary_mastery_token"
+			}]
+			rewards: [{
+				id: "5C862E67BDEE747A"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:culinary_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 94
+									Blue: 22
+									Green: 124
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Culinary Mastery"
+						}
+					}
+				}
 			}]
 		}
 	]
