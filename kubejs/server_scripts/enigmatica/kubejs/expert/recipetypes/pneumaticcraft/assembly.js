@@ -252,10 +252,10 @@ onEvent('recipes', (event) => {
 
     masteries.forEach((mastery) => {
         recipes.push({
-            input: { item: `kubejs:${mastery}_mastery_fragment`, count: 50 },
-            output: { item: `kubejs:${mastery}_mastery`, count: 1 },
+            input: { item: `kubejs:${mastery}_mastery_shard`, count: 50 },
+            output: { item: `kubejs:${mastery}_mastery_token`, count: 1 },
             program: 'laser',
-            id: `${id_prefix}${mastery}_mastery`
+            id: `${id_prefix}${mastery}_mastery_token`
         });
     });
 
