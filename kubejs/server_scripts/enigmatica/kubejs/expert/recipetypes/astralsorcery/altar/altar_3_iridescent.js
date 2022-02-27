@@ -449,11 +449,134 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_trait_relay_highlight',
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: `${id_prefix}auto_iridescent_altar_starlight_port_astral_starlight_input`
+        },
+        {
+            output: Item.of('kubejs:worldshaper_handle'),
+            altar_type: 3,
+            duration: 600,
+            starlight: 7000,
+            pattern: ['AA___', 'ABA__', '_ACA_', '__ABA', '___AA'],
+            key: {
+                A: { item: 'botania:dreamwood' },
+                B: { item: 'kubejs:laputian_ingot' },
+                C: { tag: 'botania:runes/vanaheim' }
+            },
+            focus_constellation: 'astralsorcery:evorsio',
+            relay_inputs: [
+                { item: 'astralsorcery:resonating_gem' },
+                { item: 'mythicbotany:dream_cherry' },
+                { item: 'astralsorcery:resonating_gem' },
+                { item: 'mythicbotany:dream_cherry' },
+                { item: 'astralsorcery:resonating_gem' },
+                { item: 'mythicbotany:dream_cherry' },
+                { item: 'astralsorcery:resonating_gem' },
+                { item: 'mythicbotany:dream_cherry' },
+                { item: 'astralsorcery:resonating_gem' },
+                { item: 'mythicbotany:dream_cherry' },
+                { item: 'astralsorcery:resonating_gem' },
+                { item: 'mythicbotany:dream_cherry' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: `${id_prefix}worldshaper_handle`
+        },
+        {
+            output: Item.of('kubejs:worldshaper_barrel'),
+            altar_type: 3,
+            duration: 600,
+            starlight: 7000,
+            pattern: ['_____', 'AAAAA', 'BCDEF', 'AAAAA', '_____'],
+            key: {
+                A: { item: 'kubejs:laputian_ingot' },
+                B: { item: 'botania:lens_gravity' },
+                C: { item: 'botania:lens_influence' },
+                D: { item: 'botania:lens_warp' },
+                E: { item: 'mekanism:laser_tractor_beam' },
+                F: { item: 'industrialforegoing:laser_drill' }
+            },
+            focus_constellation: 'astralsorcery:evorsio',
+            relay_inputs: [
+                { item: 'bloodmagic:chargingrune' },
+                { item: 'bloodmagic:dislocationrune' },
+                { item: 'bloodmagic:accelerationrune' },
+                { item: 'bloodmagic:chargingrune' },
+                { item: 'bloodmagic:dislocationrune' },
+                { item: 'bloodmagic:accelerationrune' },
+                { item: 'bloodmagic:chargingrune' },
+                { item: 'bloodmagic:dislocationrune' },
+                { item: 'bloodmagic:accelerationrune' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: `${id_prefix}worldshaper_barrel`
+        },
+        {
+            output: Item.of('create:handheld_worldshaper'),
+            altar_type: 3,
+            duration: 1200,
+            starlight: 7000,
+            pattern: ['_____', '_AAB_', '___C_', '_____', '_____'],
+            key: {
+                A: { item: 'kubejs:worldshaper_barrel' },
+                B: { item: 'kubejs:worldshaper_cog' },
+                C: { item: 'kubejs:worldshaper_handle' }
+            },
+            focus_constellation: 'astralsorcery:evorsio',
+            relay_inputs: [
+                { item: 'kubejs:automation_mastery_token' },
+                { item: 'kubejs:botanical_mastery_token' },
+                { item: 'kubejs:engineering_mastery_token' },
+                { item: 'kubejs:astronomy_mastery_token' },
+                { item: 'kubejs:energistics_mastery_token' },
+                { item: 'kubejs:alchemy_mastery_token' },
+                { item: 'kubejs:dimensional_mastery_token' },
+                { item: 'kubejs:ritual_mastery_token' },
+                { item: 'kubejs:battle_mastery_token' },
+                { item: 'kubejs:aura_mastery_token' },
+                { item: 'kubejs:excavation_mastery_token' },
+                { item: 'kubejs:culinary_mastery_token' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: `${id_prefix}handheld_worldshaper`
         }
     ];
 

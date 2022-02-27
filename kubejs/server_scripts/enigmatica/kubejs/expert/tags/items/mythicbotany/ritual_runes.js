@@ -16,6 +16,12 @@ onEvent('item.tags', (event) => {
             'minecraft:oak_leaves',
             'byg:flowering_palo_verde_leaves',
             'naturesaura:generator_limit_remover',
-            'quark:root_item'
+            'quark:root_item',
+            'mekanism:pellet_antimatter',
+            'mekanism:ultimate_control_circuit',
+            'kubejs:laputian_ingot',
+            'botania:mana_diamond_block',
+            'botania:dragonstone_block',
+            'powah:ender_core'
         ]);
 });

@@ -235,6 +235,30 @@ onEvent('recipes', (event) => {
         });
     });
 
+    let masteries = [
+        'automation',
+        'botanical',
+        'astronomy',
+        'alchemy',
+        'ritual',
+        'aura',
+        'engineering',
+        'energistics',
+        'dimensional',
+        'battle',
+        'excavation',
+        'culinary'
+    ];
+
+    masteries.forEach((mastery) => {
+        recipes.push({
+            input: { item: `kubejs:${mastery}_mastery_shard`, count: 50 },
+            output: { item: `kubejs:${mastery}_mastery_token`, count: 1 },
+            program: 'laser',
+            id: `${id_prefix}${mastery}_mastery_token`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.input.type = 'pneumaticcraft:stacked_item';
         event
