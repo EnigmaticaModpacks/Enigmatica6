@@ -522,6 +522,8 @@ const recipesToHide = [
             'naturesaura:generator_limit_remover',
             'naturesaura:shockwave_creator',
             'naturesaura:death_ring',
+            'naturesaura:ender_crate',
+            'naturesaura:ender_access',
 
             'pneumaticcraft:air_compressor',
             'pneumaticcraft:advanced_air_compressor',

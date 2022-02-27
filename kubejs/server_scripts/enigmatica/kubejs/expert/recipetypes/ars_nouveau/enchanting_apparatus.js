@@ -2362,6 +2362,38 @@ onEvent('recipes', (event) => {
             reagent: 'ars_nouveau:wilden_tribute',
             output: Item.of('4x arsarsenal:sigil_of_aethermancy'),
             id: 'arsarsenal:sigil_of_aethermancy'
+        },
+        {
+            inputs: [
+                'occultism:otherstone_slab',
+                'botania:corporea_spark',
+                'occultism:otherstone_slab',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                'occultism:otherstone_tablet',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                'occultism:otherstone_tablet'
+            ],
+            sourceCost: 500,
+            reagent: 'ars_nouveau:archwood_chest',
+            output: 'naturesaura:ender_crate',
+            id: `${id_prefix}ender_crate`
+        },
+        {
+            inputs: [
+                'occultism:otherstone_slab',
+                'botania:corporea_spark',
+                'occultism:otherstone_slab',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                'occultism:otherstone_tablet',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                'occultism:otherstone_tablet'
+            ],
+            sourceCost: 500,
+            reagent: 'thermal:satchel',
+            output: 'naturesaura:ender_access',
+            id: `${id_prefix}ender_access`
         }
     ];
 
