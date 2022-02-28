@@ -29,6 +29,7 @@ if ($uploadExpertMode) {
     $CLIENT_NAME = "Enigmatica6Expert"
     $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Expert $MODPACK_VERSION"
     $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Expert Server $MODPACK_VERSION"
+    $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES += "mode.json"
 }
 
 function Get-GitHubRelease {
