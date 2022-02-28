@@ -1,0 +1,29 @@
+
+#Client-Side Integration
+[FTBChunks]
+	#Enable FTBChunks Integration
+	ftbChunks = true
+	#Range: 0.0 ~ 1.0
+	claimedChunkOverlayOpacity = 0.25
+	#Disable conflict functions for FTBChunks (MiniMap, Waypoint beam, Death waypoint)
+	disableFTBFunction = true
+	#Show chunk claiming screen first instead of large map screen.
+	showClaimChunkScreen = false
+
+[Waystones]
+	#Enable Waystones Integration
+	waystones = true
+	#The color code for Waystone marker. You can generate the color code from https://www.mathsisfun.com/hexadecimal-decimal-colors.html
+	#Range: 0 ~ 16777215
+	wayStoneMarkerColor = 16777215
+
+[WaypointMessage]
+	emptyHandOnly = true
+	#List of block id and tags for WaypointMessage. e.g., ["#forge:ores/diamond", "minecraft:diamond_block"]
+	waypointMessageBlocks = []
+
+["JourneyMap Default Config"]
+	#When local JM default config version is older than `defaultConfigVersion` it will copy everything under `/config/jmdefaultconfig/` to `/journeymap/` and replace the existing files. Set to -1 to disable.
+	#Range: > -1
+	defaultConfigVersion = -1
+
