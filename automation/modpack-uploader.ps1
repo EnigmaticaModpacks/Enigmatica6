@@ -1,3 +1,8 @@
+param(
+    [Parameter(Position = 0)]
+    [switch]$uploadExpertMode
+)
+
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $manifest = "manifest.json"
@@ -16,6 +21,15 @@ function Validate-SecretsFile {
 . "$PSScriptRoot\settings.ps1"
 . "$PSScriptRoot\$secretsFile"
 
+if ($uploadExpertMode) {
+    $CURSEFORGE_PROJECT_ID = 585046
+    $SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files_expert"
+    $SERVER_SETUP_CONFIG_PATH = "$SERVER_FILES_FOLDER/server-setup-config.yaml"
+    $MODPACK_NAME = "Enigmatica6Expert"
+    $CLIENT_NAME = "Enigmatica6Expert"
+    $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Expert $MODPACK_VERSION"
+    $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Expert Server $MODPACK_VERSION"
+}
 
 function Get-GitHubRelease {
     param(
@@ -356,7 +370,9 @@ function New-GitHubRelease {
         Write-Host 
     
         Invoke-RestMethod -Headers $Headers -Uri $Uri -Body $Body -Method Post
-        Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
+        
+        # github_changelog_generator does not seem to run when I do this? Running it manually for now
+        #Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
     }
 }
 
