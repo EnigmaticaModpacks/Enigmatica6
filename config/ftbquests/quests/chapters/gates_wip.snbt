@@ -9,20 +9,21 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "The Experts 2: Electric Boogaloo"
+			title: "Enigmatica 6: Expert"
 			icon: "mekanism:robit"
 			x: 0.0d
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"Welcome to Enigmatica 6: Expert mode! This chapter serves as a general guide to the progression."
+				"Welcome to Enigmatica 6: Expert mode!"
 				""
 				"The Goal of E6E is to complete all quests in the Bragging Rights chapter. Good luck, and have fun :D"
 				"- Niller"
 				""
+				"The quests in this chapter provide a rough outline of the progression of the pack."
+				""
 				""
 				"Please note that mods are rarely \"strictly\" gated - Some of their items will be obtainable prior to the Gate being unlocked, and not all things will be immediately obtainable once the Gate is unlocked."
-				""
 			]
 			dependencies: ["0000000000000FEB"]
 			hide: true
@@ -312,7 +313,7 @@
 		}
 		{
 			title: "Bragging Rights"
-			icon: "create:creative_crate"
+			icon: "create:handheld_worldshaper"
 			x: 0.0d
 			y: 8.0d
 			shape: "octagon"
@@ -324,9 +325,9 @@
 			size: 2.0d
 			id: "0000000000000FE7"
 			tasks: [{
-				id: "0000000000000FE8"
+				id: "281E59C3023B532F"
 				type: "item"
-				item: "create:creative_crate"
+				item: "create:handheld_worldshaper"
 			}]
 		}
 		{
