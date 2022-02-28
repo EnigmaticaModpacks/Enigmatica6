@@ -146,6 +146,15 @@ onEvent('recipes', (event) => {
                 C: Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })
             },
             id: 'botania:corporea_spark'
+        },
+        {
+            output: 'botania:vine_ball',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:vine',
+                B: '#forge:slimeballs'
+            },
+            id: 'botania:vine_ball'
         }
     ];
 
