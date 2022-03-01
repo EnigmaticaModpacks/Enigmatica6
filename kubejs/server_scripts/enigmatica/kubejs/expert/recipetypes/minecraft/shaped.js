@@ -112,6 +112,16 @@ onEvent('recipes', (event) => {
                 E: 'quark:diamond_heart'
             },
             id: 'minecraft:enchanting_table'
+        },
+        {
+            output: 'minecraft:brewing_stand',
+            pattern: ['ABA', ' B ', 'CCC'],
+            key: {
+                A: '#forge:nuggets/invar',
+                B: '#forge:rods/brass',
+                C: '#forge:ingots/pewter'
+            },
+            id: 'minecraft:brewing_stand'
         }
     ];
 
