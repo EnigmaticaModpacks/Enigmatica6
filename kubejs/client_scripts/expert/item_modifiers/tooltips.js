@@ -43,6 +43,7 @@ onEvent('item.tooltip', (event) => {
                 'pneumaticcraft:advanced_air_compressor',
                 'darkutils:rune_damage_player',
                 'eidolon:crucible',
+                'eidolon:wooden_brewing_stand',
                 'tanknull:dock',
                 'dankstorage:dock'
             ],

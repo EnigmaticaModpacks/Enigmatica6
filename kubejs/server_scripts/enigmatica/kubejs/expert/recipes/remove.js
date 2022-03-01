@@ -19,6 +19,7 @@ onEvent('recipes', (event) => {
 
         'atum:blast_furnace',
         'atum:book',
+        'atum:ore_brewing_stand',
 
         'betterendforge:leather_to_stripes',
 
@@ -47,6 +48,7 @@ onEvent('recipes', (event) => {
         /darkutils:crafting\/export_plate/,
 
         'eidolon:crucible',
+        'eidolon:wooden_brewing_stand',
 
         'farmersdelight:book_from_canvas',
 

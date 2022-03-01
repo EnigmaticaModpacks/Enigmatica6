@@ -194,7 +194,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:nuggets/gold_brass',
-                'eidolon:wooden_brewing_stand',
+                'minecraft:brewing_stand',
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
@@ -2077,7 +2077,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:glyph_craft',
                 '#forge:nuggets/arcane_gold',
                 'architects_palette:twisted_sapling',
-                'eidolon:wooden_brewing_stand',
+                'minecraft:brewing_stand',
                 '#forge:nuggets/arcane_gold',
                 '#forge:coins/electrum',
                 '#forge:nuggets/arcane_gold'

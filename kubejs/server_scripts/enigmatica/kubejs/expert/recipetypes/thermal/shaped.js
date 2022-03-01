@@ -363,7 +363,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'thermal:rf_coil',
                 B: 'ars_nouveau:warding_stone',
-                C: 'eidolon:wooden_brewing_stand',
+                C: 'minecraft:brewing_stand',
                 D: 'atum:coin_gold',
                 E: 'farmersdelight:cooking_pot'
             },
