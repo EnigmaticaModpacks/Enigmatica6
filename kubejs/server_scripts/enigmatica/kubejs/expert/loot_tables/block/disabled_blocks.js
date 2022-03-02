@@ -13,6 +13,16 @@ onEvent('block.loot_tables', (event) => {
                     droppedItems: [{ id: 'pneumaticcraft:reinforced_bricks' }]
                 }
             ]
+        },
+        {
+            target: ['eidolon:crucible'],
+            block_pools: [
+                {
+                    rolls: [1, 2],
+                    survivesExplosion: true,
+                    droppedItems: [{ id: 'eidolon:pewter_ingot' }]
+                }
+            ]
         }
     ];
 
