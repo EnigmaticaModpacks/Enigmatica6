@@ -19,7 +19,8 @@ onEvent('recipes', (event) => {
                 'sushigocrafting:cucumber_seeds',
                 'sushigocrafting:soy_seeds',
                 'sushigocrafting:wasabi_seeds',
-                'sushigocrafting:sesame_seeds'
+                'sushigocrafting:sesame_seeds',
+                'environmental:cattail_seeds'
             ],
             value: 20
         },
