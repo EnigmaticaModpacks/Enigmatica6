@@ -59,7 +59,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'eidolon:wooden_altar',
-            pattern: ['AAA', 'CBC', 'D CBC'],
+            pattern: ['AAA', 'CBC', 'CBC'],
             key: {
                 A: 'quark:brown_stained_planks_slab',
                 B: 'kubejs:scented_stick',
