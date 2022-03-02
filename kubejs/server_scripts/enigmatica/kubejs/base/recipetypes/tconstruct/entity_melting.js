@@ -1,40 +1,55 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/tconstruct/entity_melting/';
     const recipes = [
         {
-            entity: {
-                types: [
-                    'resourcefulbees:aluminum_bee'
-                ]
-            },
-            result: {
-                fluid: 'kubejs:molten_aluminum_bee',
-                amount: 100
-            },
-            damage: 2
+            entity: { types: ['resourcefulbees:aluminum_bee'] },
+            result: { fluid: 'kubejs:molten_aluminum_bee', amount: 100 },
+            damage: 2,
+            id: `${id_prefix}molten_aluminum_bee`
         },
+        {
+            entity: { types: ['resourcefulbees:slimy_bee'] },
+            result: { fluid: 'kubejs:liquid_slimy_bee', amount: 100 },
+            damage: 2,
+            id: `${id_prefix}liquid_slimy_bee`
+        },
+
+        // Entity Melting Blacklist
         {
             entity: {
                 types: [
-                    'resourcefulbees:slimy_bee'
+                    'pneumaticcraft:drone',
+                    'pneumaticcraft:amadrone',
+                    'pneumaticcraft:collector_drone',
+                    'pneumaticcraft:guard_drone',
+                    'pneumaticcraft:harvesting_drone',
+                    'pneumaticcraft:logistics_drone',
+                    'dummmmmmy:target_dummy',
+                    'ars_nouveau:whelp',
+                    'ars_nouveau:familiar_bookwyrm',
+                    'ars_nouveau:carbuncle',
+                    'ars_nouveau:familiar_carbuncle',
+                    'ars_nouveau:drygmy',
+                    'ars_nouveau:familiar_drygmy',
+                    'ars_nouveau:dummy',
+                    'ars_nouveau:familiar_jabberwog',
+                    'ars_nouveau:sylph',
+                    'ars_nouveau:familiar_sylph',
+                    'ars_nouveau:wixie',
+                    'ars_nouveau:familiar_wixie',
+                    'ars_nouveau:summon_horse',
+                    'ars_nouveau:summon_wolf',
+                    'ars_nouveau:ally_vex'
                 ]
             },
-            result: {
-                fluid: 'kubejs:liquid_slimy_bee',
-                amount: 100
-            },
-            damage: 2
+            result: { fluid: 'minecraft:water', amount: 0 },
+            damage: 2,
+            id: `${id_prefix}disabled`
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
-            type: 'tconstruct:entity_melting',
-            entity: recipe.entity,
-            result: recipe.result,
-            damage: recipe.damage
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        recipe.type = 'tconstruct:entity_melting';
+        event.custom(recipe).id(recipe.id);
     });
 });
