@@ -37,6 +37,15 @@
 	drones_can_be_picked_up = false
 	#Oil worldgen blacklist by dimension ID: add dimension ID's to this list if you don't want oil lake worldgen to happen there. You can wildcard this; e.g 'modid:*' blacklists ALL dimensions of namespace 'modid'.
 	oil_world_gen_dimension_blacklist = []
+	#Cooldown, in ticks, between subsequent uses of Bandages. Set to 0 to disable cooldowns entirely.
+	#Range: > 0
+	bandage_cooldown = 160
+	#Time, in ticks, it takes to use a bandage.
+	#Range: > 1
+	bandage_use_time = 40
+	#Health points restored on bandage use (1 health = half a heart).
+	#Range: 1.0 ~ 1.7976931348623157E308
+	bandage_health_restored = 6.0
 
 ["Machine Properties"]
 	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed
