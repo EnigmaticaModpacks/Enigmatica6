@@ -23,9 +23,9 @@
 ####
 
 if test -f $PWD/remove-client-mods.ps1; then
-	powershell $PWD/remove-client-mods.ps1 >/dev/null
+	pwsh $PWD/remove-client-mods.ps1 >/dev/null
 elif test -f remove-client-mods.ps1; then
-	powershell remove-client-mods.ps1 >/dev/null
+	pwsh remove-client-mods.ps1 >/dev/null
 fi
 
 unameOut="$(uname -s)"
