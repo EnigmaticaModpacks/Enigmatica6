@@ -224,7 +224,7 @@ onEvent('recipes', (event) => {
                 'naturesaura:birth_spirit',
                 '#resourcefulbees:resourceful_honeycomb',
                 '#forge:ingots/tinkers_bronze',
-                'minecraft:dark_primarine'
+                'minecraft:dark_prismarine'
             ],
             entity: 'resourcefulbees:water_bee',
             aura: 50000,
