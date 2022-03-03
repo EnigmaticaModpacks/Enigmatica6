@@ -31,8 +31,7 @@ function Determine-Location {
 		if (-not (Test-Path $modFolder)) {
 			Write-Host "Unable to determine where the main folder is. " -ForegroundColor Red
 			Write-Host "This script should be run from the instance root, or from the automation folder." -ForegroundColor Red
-			pause
-			throw
+			throw "Unable to determine where the main folder is. This script should be run from the instance root, or from the automation folder."
 		}
 	}
 }
