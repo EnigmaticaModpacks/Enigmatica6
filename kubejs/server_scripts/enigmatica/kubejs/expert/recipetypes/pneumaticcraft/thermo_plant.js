@@ -152,6 +152,16 @@ onEvent('recipes', (event) => {
             speed: 0.1,
             temperature: { max_temp: 100 },
             id: `${id_prefix}celestial_crystal`
+        },
+        {
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'industrialforegoing:latex', amount: 900 },
+            item_input: { tag: 'forge:dusts/sulfur' },
+            item_output: { item: 'industrialforegoing:dryrubber', count: 1 },
+            pressure: 3.0,
+            exothermic: false,
+            speed: 1.1,
+            temperature: { min_temp: 433 },
+            id: `${id_prefix}dryrubber`
         }
     ];
 
