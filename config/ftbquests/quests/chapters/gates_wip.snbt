@@ -42,7 +42,7 @@
 			tasks: [{
 				id: "0000000000000FBE"
 				type: "item"
-				item: "create:cogwheel"
+				item: "create:gearbox"
 			}]
 		}
 		{
@@ -64,11 +64,12 @@
 			y: 1.5d
 			shape: "diamond"
 			dependencies: ["0000000000000FBF"]
+			size: 1.25d
 			id: "0000000000000FC1"
 			tasks: [{
 				id: "0000000000000FC2"
 				type: "item"
-				item: "xnet:netcable_blue"
+				item: "xnet:controller"
 			}]
 		}
 		{
@@ -111,7 +112,7 @@
 		{
 			title: "Botania"
 			x: 3.0d
-			y: 4.5d
+			y: 6.0d
 			dependencies: ["0000000000000FC7"]
 			id: "0000000000000FC9"
 			tasks: [{
@@ -162,7 +163,7 @@
 		}
 		{
 			title: "Blood Magic: Part Two"
-			x: 1.5d
+			x: 2.0d
 			y: 5.0d
 			dependencies: ["0000000000000FCD"]
 			id: "0000000000000FCF"
@@ -174,21 +175,22 @@
 		}
 		{
 			title: "Pretty Pipes"
-			x: -4.5d
-			y: 1.5d
+			x: -4.375d
+			y: 1.25d
 			shape: "diamond"
 			dependencies: ["0000000000000FBD"]
+			size: 1.25d
 			id: "0000000000000FD1"
 			tasks: [{
 				id: "0000000000000FD2"
 				type: "item"
-				item: "prettypipes:pipe"
+				item: "prettypipes:crafting_terminal"
 			}]
 		}
 		{
 			title: "Powah"
 			x: -4.5d
-			y: 3.0d
+			y: 2.5d
 			dependencies: ["0000000000000FD5"]
 			id: "0000000000000FD3"
 			tasks: [{
@@ -212,7 +214,7 @@
 		}
 		{
 			title: "RFTools"
-			x: -1.5d
+			x: -2.0d
 			y: 5.0d
 			dependencies: ["0000000000000FDB"]
 			id: "0000000000000FD7"
@@ -228,6 +230,7 @@
 			y: 4.5d
 			shape: "diamond"
 			dependencies: ["0000000000000FD3"]
+			size: 1.25d
 			id: "0000000000000FD9"
 			tasks: [{
 				id: "0000000000000FDA"
@@ -250,14 +253,12 @@
 			}]
 		}
 		{
-			title: "Refined Storage"
-			x: 0.0d
+			title: "Refined Storage: Automation"
+			x: -0.625d
 			y: 5.0d
-			dependencies: [
-				"0000000000000FDB"
-				"0000000000000FCD"
-				"51E57880AFDE5595"
-			]
+			shape: "diamond"
+			dependencies: ["0000000000000FDB"]
+			size: 1.25d
 			id: "0000000000000FDD"
 			tasks: [{
 				id: "0000000000000FDE"
@@ -281,10 +282,11 @@
 		{
 			title: "Resourceful Bees"
 			icon: "minecraft:honeycomb"
-			x: 4.5d
-			y: 3.0d
+			x: 4.375d
+			y: 2.5d
 			shape: "diamond"
 			dependencies: ["0000000000000FC7"]
+			size: 1.25d
 			id: "0000000000000FE1"
 			tasks: [{
 				id: "0000000000000FE2"
@@ -295,7 +297,7 @@
 		{
 			title: "Immersive Engineering: Part Two"
 			x: -3.0d
-			y: 6.5d
+			y: 6.0d
 			dependencies: ["0000000000000FDF"]
 			id: "0000000000000FE3"
 			tasks: [{
@@ -309,7 +311,10 @@
 			icon: "mekanism:alloy_atomic"
 			x: -1.5d
 			y: 6.5d
-			dependencies: ["0000000000000FD7"]
+			dependencies: [
+				"0000000000000FD7"
+				"0000000000000FE3"
+			]
 			id: "0000000000000FE5"
 			tasks: [{
 				id: "0EBD46ADF246F17F"
@@ -324,7 +329,6 @@
 			y: 8.0d
 			shape: "octagon"
 			dependencies: [
-				"0000000000000FE3"
 				"0000000000000FE5"
 				"0000000000000FCB"
 			]
@@ -340,9 +344,10 @@
 			title: "Integrated Dynamics"
 			icon: "integrateddynamics:variable_transformer_input"
 			x: 0.0d
-			y: 6.5d
+			y: 5.625d
 			shape: "diamond"
 			dependencies: ["0000000000000FDD"]
+			size: 1.25d
 			id: "218FBDC6B17EDF33"
 			tasks: [{
 				id: "2A11C229CEEEBE6F"
@@ -353,9 +358,10 @@
 		{
 			title: "Flux Networks"
 			x: -4.5d
-			y: 6.0d
+			y: 6.5d
 			shape: "diamond"
 			dependencies: ["0000000000000FE3"]
+			size: 1.25d
 			id: "11FC40A4B8CBA98A"
 			tasks: [{
 				id: "590186031154D036"
@@ -366,10 +372,11 @@
 		{
 			title: "Pedestals"
 			icon: "pedestals:pedestal/stone333"
-			x: 3.0d
-			y: 6.0d
+			x: 4.5d
+			y: 6.5d
 			shape: "diamond"
 			dependencies: ["0000000000000FC9"]
+			size: 1.25d
 			id: "6CA3B688C7701907"
 			tasks: [{
 				id: "5727C862289731E8"
@@ -381,7 +388,9 @@
 			title: "Tinkers' Construct"
 			x: 0.0d
 			y: 3.0d
+			shape: "diamond"
 			dependencies: ["0000000000000FBF"]
+			size: 1.25d
 			id: "51E57880AFDE5595"
 			tasks: [{
 				id: "746F162F9FD6B5C6"
@@ -399,6 +408,20 @@
 				id: "50E8AA4A66F47704"
 				type: "item"
 				item: "bloodmagic:altar"
+			}]
+		}
+		{
+			title: "Refined Storage: Digital Storage"
+			x: 0.625d
+			y: 5.0d
+			shape: "diamond"
+			dependencies: ["0000000000000FCD"]
+			size: 1.25d
+			id: "2AFC23BBBA407467"
+			tasks: [{
+				id: "786CC87833A2294A"
+				type: "item"
+				item: "refinedstorage:disk_drive"
 			}]
 		}
 	]
