@@ -221,7 +221,7 @@
 		}
 		{
 			x: 3.0d
-			y: 6.0d
+			y: 6.5d
 			shape: "octagon"
 			description: [
 				"An assembly line will be required to properly set these bricks. "
@@ -239,7 +239,7 @@
 		}
 		{
 			x: 4.5d
-			y: 5.0d
+			y: 6.0d
 			description: [
 				"A ready supply of liquid fuel will soon be quite useful. In the meantime, some byproducts are needed instead. "
 				""
@@ -275,7 +275,7 @@
 		}
 		{
 			x: 4.5d
-			y: 7.0d
+			y: 8.0d
 			shape: "diamond"
 			description: [
 				"Let the ingots hit the floor!"
@@ -298,7 +298,7 @@
 		}
 		{
 			x: 4.5d
-			y: 8.0d
+			y: 9.0d
 			description: ["Now to squeeze it before rapidly cooling in a bath of water. "]
 			dependencies: ["3DD1F984ED880148"]
 			id: "00EF0CAB3FB28938"
@@ -310,7 +310,7 @@
 		}
 		{
 			x: 4.5d
-			y: 9.0d
+			y: 10.0d
 			shape: "octagon"
 			description: ["With the advent of Compressed Iron comes access to better manufacturing techniques and eventually advanced technology not seen in these parts for some time. "]
 			dependencies: ["00EF0CAB3FB28938"]
@@ -350,11 +350,13 @@
 			}]
 		}
 		{
-			x: 5.0d
+			title: "Latex from Trees"
+			icon: "minecraft:acacia_sapling"
+			x: 4.0d
 			y: 2.5d
 			shape: "diamond"
 			description: [
-				"The trek for Latex will take you from the deepest jungles to the depths of the seas. "
+				"The trek for a reliable source of Latex will take you from the deepest jungles to the depths of the seas."
 				""
 				"Locate some trees suitable for Latex extraction and take a dive off the coast to retrieve some coral. Be gentle, as these precious creatures are delicate and require extra care when harvesting them. "
 			]
@@ -365,11 +367,11 @@
 					id: "671E424988B48284"
 					type: "item"
 					item: "thermal:device_tree_extractor"
-					count: 2L
 				}
 				{
 					id: "06ECC057A46741D7"
 					type: "item"
+					title: "Latex Producing Trees"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -422,15 +424,19 @@
 			]
 		}
 		{
-			x: 4.0d
-			y: 2.5d
+			x: 4.5d
+			y: 3.0d
 			shape: "diamond"
 			description: [
 				"Like an espresso machine for rocks! Sounds horrible!"
 				""
 				"Though useful for filling buckets for other processing, the Fluid Encapsulator is also capable of attaining high enough pressures to infuse industrial materials like concrete, rubber, and reinforced stone. "
 			]
-			dependencies: ["508E396542F84E94"]
+			dependencies: [
+				"4082766981B24A44"
+				"4A5B10B9E4F2440D"
+			]
+			dependency_requirement: "one_completed"
 			id: "63B1F7BACD7CCD5D"
 			tasks: [{
 				id: "035C29A43AEA51CB"
@@ -440,17 +446,14 @@
 		}
 		{
 			x: 4.5d
-			y: 3.0d
+			y: 4.0d
 			shape: "diamond"
 			description: [
 				"The sulfur needed to cure liquid Latex into workable rubber may be difficult to come by, indeed."
 				""
 				"Extracting it from ores will mean gentler harvesting methods and mechanical processing to recover enough to be of any use. "
 			]
-			dependencies: [
-				"63B1F7BACD7CCD5D"
-				"4082766981B24A44"
-			]
+			dependencies: ["63B1F7BACD7CCD5D"]
 			id: "0616453B4BBEFB11"
 			tasks: [{
 				id: "75BAF49D78BF95C0"
@@ -587,8 +590,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 8.5d
+			x: 5.5d
+			y: 9.0d
 			shape: "hexagon"
 			description: [
 				"Some like it hot. Real hot."
@@ -694,7 +697,7 @@
 		}
 		{
 			x: 4.5d
-			y: 6.0d
+			y: 7.0d
 			shape: "diamond"
 			description: ["Keep it coming!"]
 			dependencies: ["155D0B93052756E8"]
@@ -707,7 +710,7 @@
 		}
 		{
 			x: 4.0d
-			y: 6.5d
+			y: 7.5d
 			shape: "diamond"
 			description: [
 				"Clean, durable steel. Highly sought after for many engineering projects due to its strength and durability. "
@@ -724,7 +727,7 @@
 		}
 		{
 			x: 5.0d
-			y: 6.5d
+			y: 7.5d
 			shape: "diamond"
 			description: ["Gather some obsidian to add to the mix. "]
 			dependencies: ["1A3727BA37EA4F6D"]
@@ -737,7 +740,7 @@
 		}
 		{
 			x: 4.5d
-			y: 4.0d
+			y: 5.0d
 			description: ["Cook that rubber down to make Cured Rubber, suitable for sealing Fluid Cells."]
 			dependencies: ["0616453B4BBEFB11"]
 			id: "4A45210857A2FE10"
@@ -762,7 +765,7 @@
 		}
 		{
 			x: 5.5d
-			y: 5.0d
+			y: 6.0d
 			description: [
 				"Making decent circuitry is tough but kludging something basic together will do for now. "
 				""
@@ -775,6 +778,58 @@
 				type: "item"
 				item: "immersiveengineering:circuit_table"
 			}]
+		}
+		{
+			title: "Latex from Plants"
+			icon: "minecraft:dandelion"
+			x: 5.0d
+			y: 2.5d
+			shape: "diamond"
+			description: [
+				"Trees aren’t the only source of Latex, though extracting it from other plants requires a bit of time and effort."
+				""
+				"Grow some vines or dandelions to press down for Latex."
+			]
+			dependencies: ["508E396542F84E94"]
+			id: "4A5B10B9E4F2440D"
+			tasks: [
+				{
+					id: "60C1CC77F18EE9EF"
+					type: "item"
+					title: "Latex Producing Plants"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:dandelion"
+									Count: 1b
+								}
+								{
+									id: "minecraft:vine"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "30453B6039FD25BE"
+					type: "item"
+					item: "create:basin"
+				}
+				{
+					id: "5D78B207DC1EBB03"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "4689407918AFE07B"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
 		}
 	]
 }
