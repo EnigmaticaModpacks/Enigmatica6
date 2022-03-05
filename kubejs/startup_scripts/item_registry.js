@@ -252,6 +252,23 @@ onEvent('item.registry', (event) => {
         { name: '16384k_storage_part_package', texture: 'assembly_package_filled' },
         { name: '16384k_storage_part_assembly', texture: 'assembly_package_processing' },
 
+        { name: 'batch_1k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_1k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_4k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_4k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_16k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_16k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_64k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_64k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_256k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_256k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_1024k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_1024k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_4096k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_4096k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_16384k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_16384k_storage_part_assembly', texture: 'assembly_package_processing' },
+
         { name: '64k_fluid_storage_part_package', texture: 'assembly_package_filled' },
         { name: '64k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
         { name: '256k_fluid_storage_part_package', texture: 'assembly_package_filled' },
@@ -267,7 +284,24 @@ onEvent('item.registry', (event) => {
         { name: '262144k_fluid_storage_part_package', texture: 'assembly_package_filled' },
         { name: '262144k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
         { name: '1048576k_fluid_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '1048576k_fluid_storage_part_assembly', texture: 'assembly_package_processing' }
+        { name: '1048576k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+
+        { name: 'batch_64k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_64k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_256k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_256k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_1024k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_1024k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_4096k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_4096k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_16384k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_16384k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_65536k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_65536k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_262144k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_262144k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_1048576k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_1048576k_fluid_storage_part_assembly', texture: 'assembly_package_processing' }
     ];
 
     let metals = [
