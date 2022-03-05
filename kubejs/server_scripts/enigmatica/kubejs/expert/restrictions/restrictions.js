@@ -15,6 +15,7 @@ onEvent('server.datapack.high_priority', (event) => {
             errorKey: `${errorKey_prefix}hellfire_forge`
         }
     ];
+
     // Requires creation of Red Chalk to place outside of Atum
     let restricted_occultism_items = ['occultism:chalk_purple', 'occultism:chalk_gold', 'occultism:chalk_white'];
     restricted_occultism_items.forEach((item) => {
