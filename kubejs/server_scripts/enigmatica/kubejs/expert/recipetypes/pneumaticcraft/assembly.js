@@ -230,6 +230,19 @@ onEvent('recipes', (event) => {
                     output: { item: storagePartID, count: 1 },
                     program: 'laser',
                     id: `${id_prefix}${partSize}_storage_part`
+                },
+
+                {
+                    input: { item: `kubejs:batch_${partSize}_storage_part_package`, count: 1 },
+                    output: { item: `kubejs:batch_${partSize}_storage_part_assembly`, count: 1 },
+                    program: 'drill',
+                    id: `${id_prefix}batch_${partSize}_storage_part_assembly`
+                },
+                {
+                    input: { item: `kubejs:batch_${partSize}_storage_part_assembly`, count: 1 },
+                    output: { item: storagePartID, count: 30 },
+                    program: 'laser',
+                    id: `${id_prefix}batch_${partSize}_storage_part`
                 }
             );
         });
