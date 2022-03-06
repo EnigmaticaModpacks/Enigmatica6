@@ -67,7 +67,7 @@ onEvent('recipes', (event) => {
             id: `${idPrefix}bow_book`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('aquacutlture:gold_fishing_rod', '{Damage:0}').weakNBT()],
+            inputs: [Item.of('16x minecraft:book'), Item.of('aquaculture:gold_fishing_rod', '{Damage:0}').weakNBT()],
             output: Item.of('16x apotheosis:fishing_rod_book'),
             id: `${idPrefix}fishing_rod_book`
         },

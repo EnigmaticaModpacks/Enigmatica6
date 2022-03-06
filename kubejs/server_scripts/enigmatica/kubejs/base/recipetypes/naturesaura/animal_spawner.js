@@ -1,22 +1,22 @@
 onEvent('recipes', (event) => {
-    const id_prefix = 'enigmatica:base/naturesaura/animalspawner/';
+    const id_prefix = 'enigmatica:base/naturesaura/animal_spawner/';
     recipes = [
         {
-            inputs: ['naturesaura:birth_spirit', 'emendatusenigmatica:arcane_gem', 'naturesaura:gold_leaf'],
+            inputs: ['naturesaura:birth_spirit', '#forge:gems/mana', 'naturesaura:gold_leaf'],
             entity: 'ars_nouveau:carbuncle',
             aura: 100000,
             time: 100,
             id: `${id_prefix}carbuncle`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'emendatusenigmatica:arcane_gem', 'naturesaura:ancient_sapling'],
+            inputs: ['naturesaura:birth_spirit', '#forge:gems/mana', 'naturesaura:ancient_sapling'],
             entity: 'ars_nouveau:sylph',
             aura: 100000,
             time: 100,
             id: `${id_prefix}sylph`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'emendatusenigmatica:arcane_gem', 'naturesaura:token_joy'],
+            inputs: ['naturesaura:birth_spirit', '#forge:gems/mana', 'naturesaura:token_joy'],
             entity: 'ars_nouveau:drygmy',
             aura: 100000,
             time: 100,
@@ -400,6 +400,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}clogged_bee`
         }
     ];
+
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:animal_spawner';
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());

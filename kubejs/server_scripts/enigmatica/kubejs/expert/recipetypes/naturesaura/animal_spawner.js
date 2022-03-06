@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
         return;
     }
 
-    const id_prefix = 'enigmatica:base/naturesaura/animalspawner/';
+    const id_prefix = 'enigmatica:base/naturesaura/animal_spawner/';
     const recipes = [
         {
             inputs: [
@@ -128,7 +128,7 @@ onEvent('recipes', (event) => {
             entity: 'minecraft:sheep',
             aura: 50000,
             time: 60,
-            id: `${id_prefix}sheep`
+            id: 'naturesaura:animal_spawner/sheep_white'
         },
         {
             inputs: ['naturesaura:birth_spirit', 'resourcefulbees:boobee_honeycomb', 'minecraft:fire_charge'],
@@ -236,6 +236,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}nautilus`
         }
     ];
+
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:animal_spawner';
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
