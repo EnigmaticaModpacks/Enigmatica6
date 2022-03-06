@@ -144,7 +144,7 @@ onEvent('recipes', (event) => {
             id: 'meetyourfight:haunted_bell'
         },
         {
-            inputs: ['2x thermal:phytogro', '2x forge:dusts/iron', '#forge:dusts/nickel'],
+            inputs: ['2x thermal:phytogro', '2x #forge:dusts/iron', '#forge:dusts/nickel'],
             output: {
                 entries: [{ result: { item: 'emendatusenigmatica:invar_dust', count: 3 }, weight: 1 }],
                 empty_weight: 0,
