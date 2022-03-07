@@ -33,7 +33,7 @@ $MODPACK_VERSION = "1.0.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.5.27"
+$LAST_MODPACK_VERSION = "0.5.26"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
