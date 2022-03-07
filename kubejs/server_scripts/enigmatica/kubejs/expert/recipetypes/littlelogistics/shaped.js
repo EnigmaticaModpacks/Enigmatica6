@@ -19,7 +19,7 @@ onEvent('recipes', (event) => {
             pattern: ['D D', 'ABA', 'CCC'],
             key: {
                 A: '#forge:plates/aluminum',
-                B: 'aquaculture:tackle_box',
+                B: Item.of('aquaculture:tackle_box').ignoreNBT(),
                 C: 'immersiveengineering:sheetmetal_colored_red',
                 D: 'farmersdelight:safety_net'
             },
