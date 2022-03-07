@@ -109,15 +109,20 @@ onEvent('recipes', (event) => {
             toReplace: 'botania:pixie_dust',
             replaceWith: 'atum:ectoplasm'
         },
-		{
+        {
             filter: { id: 'integratednbt:nbt_extractor' },
             toReplace: 'integrateddynamics:logic_programmer',
             replaceWith: 'integrateddynamics:variable_transformer_input'
         },
-		{
+        {
             filter: { id: 'integratednbt:nbt_extractor_remote' },
             toReplace: 'integrateddynamics:logic_programmer',
             replaceWith: 'integrateddynamics:variable_transformer_input'
+        },
+        {
+            filter: { mod: 'littlelogistics' },
+            toReplace: '#forge:stone',
+            replaceWith: 'minecraft:gray_concrete'
         }
     ];
 
