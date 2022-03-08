@@ -15,8 +15,7 @@ onEvent('entity_type.tags', (event) => {
         'ars_nouveau:familiar_jabberwog',
         'ars_nouveau:familiar_sylph',
         'ars_nouveau:familiar_wixie',
-        'atum:pharaoh',
-        'undergarden:masticator'
+        'atum:pharaoh'
     ];
     event.get('enigmatica:mob_spawner_blacklist').add(entities);
 });
