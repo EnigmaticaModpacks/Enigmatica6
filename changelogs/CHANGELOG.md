@@ -1,39 +1,3 @@
-### Enigmatica 6 & Enigmatica 6: Expert v1.0.0
-
-_Using Forge-1.16.5-36.2.29_ | No Mod Update List this time :( | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.0.0.md)_
-
-
-
-We are now releasing Enigmatica 6: Expert!
-
-Download the modpack from the CurseForge App, or enable it in a normal Enigmatica 6 instance with the command `/mode expert`
-
-
-
-**This is not a breaking update** for normal mode, you do not have to create a new world.
-
-
-
-But, **we recommend that you update into a separate profile** to ensure the modpack is in perfect shape.
-
-**New Mods!**
-
-- 
-
-**Changes/Improvements**
-
-- 
-
-**Bug Fixes**
-
-- 
-
-
-
----
-
-
-
 ### Enigmatica 6 v0.5.26
 
 _Using Forge-1.16.5-36.2.29_ | No Mod Update List this time :( | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.26.md)_
