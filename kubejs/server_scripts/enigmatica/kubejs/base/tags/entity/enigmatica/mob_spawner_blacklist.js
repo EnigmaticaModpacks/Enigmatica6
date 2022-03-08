@@ -1,6 +1,7 @@
 onEvent('entity_type.tags', (event) => {
     let entities = [
         /occultism/,
+        /meetyourfight/,
         '#minecraft:beehive_inhabitors',
         'alexsmobs:mimicube',
         'alexsmobs:centipede_body',
@@ -14,7 +15,8 @@ onEvent('entity_type.tags', (event) => {
         'ars_nouveau:familiar_jabberwog',
         'ars_nouveau:familiar_sylph',
         'ars_nouveau:familiar_wixie',
-        'atum:pharaoh'
+        'atum:pharaoh',
+        'undergarden:masticator'
     ];
     event.get('enigmatica:mob_spawner_blacklist').add(entities);
 });
