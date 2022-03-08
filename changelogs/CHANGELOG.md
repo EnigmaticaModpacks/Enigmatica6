@@ -1,3 +1,96 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.0.0
+
+_Using Forge-1.16.5-36.2.29_ | No Mod Update List this time | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.0.0.md)_
+
+
+
+We are now releasing Enigmatica 6: Expert!
+
+Download the modpack from the CurseForge App, or enable it in a normal Enigmatica 6 instance with the command `/mode expert`
+
+
+
+**This is not a breaking update** for normal mode, you do not have to create a new world.
+
+
+
+But, **we recommend that you update into a separate profile** to ensure the modpack is in perfect shape.
+
+
+
+---
+
+
+
+### Enigmatica 6 v0.5.27
+
+_Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.27.md)_ | No Mod List this time :(
+
+**New Mods!**
+
+- [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo)
+- [BisectHosting Server Integration Menu [FORGE]](https://www.curseforge.com/minecraft/mc-mods/bisecthosting-server-integration-menu-forge)
+- [Game Menu Mod Option [Forge]](https://www.curseforge.com/minecraft/mc-mods/gamemenumodoption)
+- [Little Logistics](https://www.curseforge.com/minecraft/mc-mods/little-logistics)
+- [Notes](https://www.curseforge.com/minecraft/mc-mods/notes)
+- [Starlight x Create](https://www.curseforge.com/minecraft/mc-mods/starlight-x-create) 
+  - Will be removed again, it was not meant to be added. Woops ^^''
+
+
+**Changes/Improvements**
+
+- Add a quest-step for attunement \(Astral Sorcery Questline\) [\#4291](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4291)
+- Add Game Menu Mod Options [\#4287](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4287)
+- Add morphing tool quest [\#4322](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4322) ([MuteTiefling](https://github.com/MuteTiefling))
+- Add new main menu panorama [\#4336](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4336) ([theboo](https://github.com/theboo))
+- Add Overworld worldgen bees to Beekeeper villager [\#4320](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4320) ([theboo](https://github.com/theboo))
+- Add Storage Parts to Advanced assembly table. [\#4333](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4333)
+- Allow Tree Fertilizer to use any coral [\#4359](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4359) ([MuteTiefling](https://github.com/MuteTiefling))
+- Ars Creo - Ars Nouveau + Create compatibility [\#4302](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4302)
+- \[expert\] Nature Aura - Ender Crate recipe seem alittle bit too easy  [\#4297](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4297)
+- \[expert\] Quality of life: Otherstone support for stonecutter [\#4274](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4274)
+- \[expert\] Remove / Change  NBT Tag "minecraft:planks" in Polished wood plank [\#4306](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4306)
+- Blacklist respawnable mobs from melting for blood. [\#4313](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4313) ([MuteTiefling](https://github.com/MuteTiefling))
+- cleanup stonecutting script, allow otherstone to be cut [\#4296](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4296) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix crafting recipes for signs and chests [\#4295](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4295) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix repair material for Tinker's Plate [\#4294](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4294) ([MuteTiefling](https://github.com/MuteTiefling))
+- Journeymap integrations block ftb chunks minimap and chunk claims map shows first [\#4308](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4308)
+- Little Logistics [\#4194](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4194)
+- Make Seaweed exchangable for Kelp [\#4258](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4258)
+- Morphing Tool Quest. [\#3628](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3628)
+- New Crowdin updates [\#4335](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4335) ([NillerMedDild](https://github.com/NillerMedDild))
+- New Crowdin updates [\#4343](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4343) ([NillerMedDild](https://github.com/NillerMedDild))
+- Notes mod [\#4240](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4240)
+- Raise sea level in Terraforged preset up to y=62 [\#4339](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4339) ([theboo](https://github.com/theboo))
+- scented stick looks just like a normal stick [\#4344](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4344)
+- Tag Thief Hood as `armor/helm` [\#4317](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4317) ([MuteTiefling](https://github.com/MuteTiefling))
+- Thief's Hood from Environmental mod should be tagged as armor/helm [\#4316](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4316)
+- With the inclusion of when dungeons arise, the terraforged config preset of enigmatica needs to be updated for structures.  [\#4349](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4349)
+- `level-type` terraforged confusion [\#4351](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4351)
+
+**Bug Fixes**
+
+- Atum at least wooden items uncraftable [\#4288](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4288)
+- \[Expert\] Blank rune recipe outputs 3 instead of 2 when using xnet [\#4212](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4212)
+- \[Expert\] Crash when viewing Refined Obsidian in Blast Chiller recipe in JEI [\#3916](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3916)
+- \[Expert\] Upgrade Aquatic Coral can't be used for Create Tree fertilizer [\#4358](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4358)
+- \[Occultism\] - Summon Blacksmith Familiar quest bug [\#3997](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3997)
+- blacklist meetyourfight bosses and masticator from apo spawners [\#4364](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4364) ([MuteTiefling](https://github.com/MuteTiefling))
+- Blocks do not drop after player death. [\#4304](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4304)
+- crash when forming Immersive Engineering multiblocks [\#4232](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4232)
+- Engineers Decor Block Placer drops items in world if used outside of the Overworld [\#3894](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3894)
+- Immersive Engineering Ores don't drop chunks \[They don't generate either\] [\#3651](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3651)
+- Industrial Foregoing Stasis Chamber using infinite Energy [\#3890](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3890)
+- JEI lacking crafting catagories in Multiplayer [\#3075](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3075)
+- Multiple powershell script errors in automation folder [\#4314](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4314)
+- Non-vanilla/simple farming/farmer's delight crop seeds can't be made into IE Plant Oil [\#3773](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3773)
+- Red X when connecting to servers \[You can join anyway\] [\#2921](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/2921)
+- Screen Shimmy on Player Approach [\#2925](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/2925)
+
+---
+
+
+
 ### Enigmatica 6 v0.5.26
 
 _Using Forge-1.16.5-36.2.29_ | No Mod Update List this time :( | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.26.md)_
