@@ -19,6 +19,13 @@ onEvent('recipes', (event) => {
             replaceTarget: { id: 'immersivecooking:fried_potato_cubes' },
             toReplace: 'immersivecooking:potato_slice',
             replaceWith: 'immersivecooking:potato_cubes'
+        },
+        {
+            replaceTarget: {
+                not: [{ id: 'minecraft:dried_kelp_block' }]
+            },
+            toReplace: 'minecraft:dried_kelp',
+            replaceWith: ['minecraft:dried_kelp', 'sushigocrafting:dried_seaweed']
         }
     ];
     event.replaceInput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');

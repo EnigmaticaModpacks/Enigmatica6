@@ -1,8 +1,7 @@
 onEvent('recipes', (event) => {
-    const id_prefix = 'enigmatica:base/enigmatica/';
+    const id_prefix = 'enigmatica:base/enigmatica/shaped/';
     const recipes = [
         {
-            // Add Blaze + Coal Comb -> Lava Bucket Recipe
             output: 'minecraft:lava_bucket',
             pattern: ['BDB', 'CAC', 'BDB'],
             key: {
@@ -387,22 +386,21 @@ onEvent('recipes', (event) => {
         if (wood.modId == 'minecraft') {
             return;
         }
-        let craftingTable = wood.modId + ':' + wood.logType + '_crafting_table';
-        if (!Item.exists(craftingTable)) {
-            event.shaped('minecraft:crafting_table', ['AA', 'AA'], {
-                A: wood.plankBlock
-            });
-        }
+
         //All recipes using logs here
         var chest = wood.modId + ':' + wood.logType + '_chest';
         if (!Item.exists(chest)) {
-            event.shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
-                A: wood.logBlock
-            });
+            event
+                .shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
+                    A: wood.logBlock
+                })
+                .id(`${id_prefix}chest_from_${wood.logBlock.replace(':', '_')}`);
         } else {
-            event.shaped(Item.of(chest, 4), ['AAA', 'A A', 'AAA'], {
-                A: wood.logBlock
-            });
+            event
+                .shaped(Item.of(chest, 4), ['AAA', 'A A', 'AAA'], {
+                    A: wood.logBlock
+                })
+                .id(`${id_prefix}${chest.replace(':', '_')}_from_${wood.logBlock.replace(':', '_')}`);
         }
 
         var dupes = [
@@ -423,14 +421,32 @@ onEvent('recipes', (event) => {
         }
 
         //All recipes using planks here
-        event.shaped(Item.of('minecraft:oak_sign', 3), ['AAA', 'AAA', ' B '], {
-            A: wood.plankBlock,
-            B: '#forge:rods/wooden'
-        });
 
-        event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
-            A: wood.plankBlock
-        });
+        let craftingTable = wood.modId + ':' + wood.logType + '_crafting_table';
+        if (!Item.exists(craftingTable)) {
+            event
+                .shaped('minecraft:crafting_table', ['AA', 'AA'], {
+                    A: wood.plankBlock
+                })
+                .id(`${id_prefix}crafting_table_from_${wood.plankBlock.replace(':', '_')}`);
+        }
+
+        if (!sign_wood_type_blacklist.includes(wood.logType)) {
+            event
+                .shaped(Item.of('minecraft:oak_sign'), ['AAA', 'AAA', ' B '], {
+                    A: wood.plankBlock,
+                    B: '#forge:rods/wooden'
+                })
+                .id(`${id_prefix}oak_sign_from_${wood.plankBlock.replace(':', '_')}`);
+        }
+
+        if (!chest_wood_type_blacklist.includes(wood.logType)) {
+            event
+                .shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
+                    A: wood.plankBlock
+                })
+                .id(`${id_prefix}chest_from_${wood.plankBlock.replace(':', '_')}`);
+        }
     });
 
     //Generate Forest Comb recipes for each tree type other than Oak (those are handled under newRecipes)
@@ -438,25 +454,31 @@ onEvent('recipes', (event) => {
         if (treeCategories.type == 'tree') {
             treeCategories.trees.forEach((tree) => {
                 if (tree.trunk != 'minecraft:oak_log') {
-                    event.shaped(Item.of(tree.trunk, 8), ['BCB', 'CAC', 'BCB'], {
-                        A: tree.sapling,
-                        C: 'resourcefulbees:forest_honeycomb',
-                        B: 'resourcefulbees:wax'
-                    });
+                    event
+                        .shaped(Item.of(tree.trunk, 8), ['BCB', 'CAC', 'BCB'], {
+                            A: tree.sapling,
+                            C: 'resourcefulbees:forest_honeycomb',
+                            B: 'resourcefulbees:wax'
+                        })
+                        .id(`${id_prefix}${tree.trunk.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
                 }
                 if (tree.sapling != 'minecraft:oak_sapling') {
-                    event.shaped(Item.of(tree.sapling, 4), [' C ', 'BAB', ' C '], {
-                        A: tree.sapling,
-                        C: 'resourcefulbees:forest_honeycomb',
-                        B: 'resourcefulbees:wax'
-                    });
+                    event
+                        .shaped(Item.of(tree.sapling, 4), [' C ', 'BAB', ' C '], {
+                            A: tree.sapling,
+                            C: 'resourcefulbees:forest_honeycomb',
+                            B: 'resourcefulbees:wax'
+                        })
+                        .id(`${id_prefix}${tree.sapling.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
                 }
                 if (tree.leaf != 'minecraft:oak_leaves') {
-                    event.shaped(Item.of(tree.leaf, 16), ['   ', 'BAC', '   '], {
-                        A: tree.sapling,
-                        C: 'resourcefulbees:forest_honeycomb',
-                        B: 'resourcefulbees:wax'
-                    });
+                    event
+                        .shaped(Item.of(tree.leaf, 16), ['   ', 'BAC', '   '], {
+                            A: tree.sapling,
+                            C: 'resourcefulbees:forest_honeycomb',
+                            B: 'resourcefulbees:wax'
+                        })
+                        .id(`${id_prefix}${tree.leaf.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
                 }
             });
         }
@@ -466,10 +488,12 @@ onEvent('recipes', (event) => {
     colors.forEach((color) => {
         let flowers = dyeSources.filter((dyeSource) => dyeSource.primary == `minecraft:${color}_dye`);
         let ingredients = flowers.map((flower) => flower.input);
-        event.shaped(Item.of(`minecraft:${color}_dye`, 8), ['BCB', 'CAC', 'BCB'], {
-            A: ingredients,
-            C: 'resourcefulbees:rgbee_honeycomb',
-            B: 'resourcefulbees:wax'
-        });
+        event
+            .shaped(Item.of(`minecraft:${color}_dye`, 8), ['BCB', 'CAC', 'BCB'], {
+                A: ingredients,
+                C: 'resourcefulbees:rgbee_honeycomb',
+                B: 'resourcefulbees:wax'
+            })
+            .id(`${id_prefix}${color}_dye_from_rgbee_honeycomb`);
     });
 });

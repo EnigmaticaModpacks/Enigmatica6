@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
             input: '#forge:dusts/sulfur',
             fluid: Fluid.of('industrialforegoing:latex', 900),
             output: 'industrialforegoing:dryrubber',
-            energy: 4000,
+            energy: 12000,
             id: `${id_prefix}dryrubber`
         },
         {
@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             input: 'minecraft:light_gray_concrete_powder',
             fluid: Fluid.of('kubejs:molten_compressed_iron', 18),
             output: 'pneumaticcraft:reinforced_stone',
-            energy: 4000,
+            energy: 8000,
             id: 'pneumaticcraft:reinforced_stone'
         },
         {

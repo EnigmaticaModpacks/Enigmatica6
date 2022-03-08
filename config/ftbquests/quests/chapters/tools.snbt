@@ -1060,8 +1060,8 @@
 		}
 		{
 			title: "Tools and Armor"
-			x: -5.5d
-			y: -11.0d
+			x: -4.5d
+			y: -11.5d
 			shape: "gear"
 			description: [
 				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable mentions."
@@ -3168,6 +3168,34 @@
 					player_command: false
 				}
 			]
+		}
+		{
+			x: -6.5d
+			y: -11.5d
+			shape: "gear"
+			description: [
+				"Always searching for the right tool for the job? Is this one in Metric? Imperial? And where did that flat head screwdriver get off to anyways?"
+				""
+				"Introducing the Morphing Tool; the one tool that always knows what to do. Simply point it at a machine and watch it slip into the proper shape based on the mod the block is from."
+				""
+				"Need a specific wrench to rotate those fussy stairs you’re installing? Sneak and scroll wheel to choose from any of the loaded tools. And if you’d rather work with a tool separately, sneak and throw to eject that tool from the Morphing Tool. Getting it back in is as simple as crafting the two together again."
+				""
+				"Be sure to check out the special EZ-Charge recipe which, for the minimal cost of a few gears and redstone, pre-charges your wrench with a variety of tools from common mods to help get you started. "
+			]
+			id: "7EDFBD3AEAC8B587"
+			tasks: [{
+				id: "0D382E19423F7F14"
+				type: "item"
+				item: "morphtool:tool"
+			}]
+			rewards: [{
+				id: "2826CA3ECD3974D4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 	]
 }

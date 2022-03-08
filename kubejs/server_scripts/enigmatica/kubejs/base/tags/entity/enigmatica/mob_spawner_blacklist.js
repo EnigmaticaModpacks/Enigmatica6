@@ -1,6 +1,7 @@
 onEvent('entity_type.tags', (event) => {
     let entities = [
         /occultism/,
+        /meetyourfight/,
         '#minecraft:beehive_inhabitors',
         'alexsmobs:mimicube',
         'alexsmobs:centipede_body',

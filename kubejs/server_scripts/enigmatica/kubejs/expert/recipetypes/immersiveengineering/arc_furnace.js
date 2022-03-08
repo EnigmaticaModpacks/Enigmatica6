@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/immersiveengineering/arc_furnace';
+    const id_prefix = 'enigmatica:expert/immersiveengineering/arc_furnace/';
     var data = {
         recipes: [
             {
@@ -134,7 +134,7 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}bow_book`
             },
             {
-                input1: Item.of('aquacutlture:gold_fishing_rod', '{Damage:0}').weakNBT(),
+                input1: Item.of('aquaculture:gold_fishing_rod', '{Damage:0}').weakNBT(),
                 secondaries: [Item.of('16x minecraft:book')],
                 outputs: [Item.of('16x apotheosis:fishing_rod_book')],
                 id: `${id_prefix}fishing_rod_book`
@@ -210,6 +210,14 @@ onEvent('recipes', (event) => {
                 secondaries: [Item.of('3x glassential:glass_ghostly')],
                 outputs: [Item.of('4x atum:crystal_glass')],
                 id: `${id_prefix}crystal_glass_2`
+            },
+            {
+                input1: Ingredient.of('12x #forge:ingots/refined_radiance'),
+                secondaries: ['astralsorcery:shifting_star', Item.of('2x botania:laputa_shard')],
+                outputs: ['kubejs:laputian_ingot'],
+                time: 100 * 64,
+                energy: 51200 * 64,
+                id: `${id_prefix}laputian_ingot`
             }
         ]
     };

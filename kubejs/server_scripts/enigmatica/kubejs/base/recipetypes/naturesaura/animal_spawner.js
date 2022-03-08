@@ -1,22 +1,22 @@
 onEvent('recipes', (event) => {
-    const id_prefix = 'enigmatica:base/naturesaura/animalspawner/';
+    const id_prefix = 'enigmatica:base/naturesaura/animal_spawner/';
     recipes = [
         {
-            inputs: ['naturesaura:birth_spirit', 'emendatusenigmatica:arcane_gem', 'naturesaura:gold_leaf'],
+            inputs: ['naturesaura:birth_spirit', '#forge:gems/mana', 'naturesaura:gold_leaf'],
             entity: 'ars_nouveau:carbuncle',
             aura: 100000,
             time: 100,
             id: `${id_prefix}carbuncle`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'emendatusenigmatica:arcane_gem', 'naturesaura:ancient_sapling'],
+            inputs: ['naturesaura:birth_spirit', '#forge:gems/mana', 'naturesaura:ancient_sapling'],
             entity: 'ars_nouveau:sylph',
             aura: 100000,
             time: 100,
             id: `${id_prefix}sylph`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'emendatusenigmatica:arcane_gem', 'naturesaura:token_joy'],
+            inputs: ['naturesaura:birth_spirit', '#forge:gems/mana', 'naturesaura:token_joy'],
             entity: 'ars_nouveau:drygmy',
             aura: 100000,
             time: 100,
@@ -206,8 +206,201 @@ onEvent('recipes', (event) => {
             aura: 100000,
             time: 120,
             id: `${id_prefix}thrasher`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/iron',
+                'architects_palette:rotten_flesh_block'
+            ],
+            entity: 'resourcefulbees:zombie_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}zombie_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/tinkers_bronze',
+                'minecraft:dark_prismarine'
+            ],
+            entity: 'resourcefulbees:water_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}water_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/slimesteel',
+                'minecraft:slime_block'
+            ],
+            entity: 'resourcefulbees:slimy_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}slimy_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/tin',
+                'minecraft:bone_block'
+            ],
+            entity: 'resourcefulbees:skeleton_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}skeleton_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/zinc',
+                'minecraft:sandstone'
+            ],
+            entity: 'resourcefulbees:sand_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}sand_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/nickel',
+                'minecraft:andesite'
+            ],
+            entity: 'resourcefulbees:rocky_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}rocky_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/gold',
+                '#forge:dyes'
+            ],
+            entity: 'resourcefulbees:rgbee_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}rgbee_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/osmium',
+                'minecraft:blue_ice'
+            ],
+            entity: 'resourcefulbees:icy_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}icy_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/steel',
+                'minecraft:coal_block'
+            ],
+            entity: 'resourcefulbees:coal_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}coal_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/uranium',
+                'thermal:gunpowder_block'
+            ],
+            entity: 'resourcefulbees:creeper_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}creeper_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/copper',
+                'minecraft:oak_wood'
+            ],
+            entity: 'resourcefulbees:forest_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}forest_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/aeternium',
+                'minecraft:obsidian'
+            ],
+            entity: 'resourcefulbees:obsidian_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}obsidian_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/aeternium',
+                'architects_palette:ender_pearl_block'
+            ],
+            entity: 'resourcefulbees:ender_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}ender_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/netherite',
+                'minecraft:glowstone'
+            ],
+            entity: 'resourcefulbees:glowstone_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}glowstone_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/netherite',
+                'architects_palette:rotten_flesh_block'
+            ],
+            entity: 'resourcefulbees:pigman_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}pigman_bee`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#resourcefulbees:resourceful_honeycomb',
+                '#forge:ingots/cloggrum',
+                'undergarden:catalyst'
+            ],
+            entity: 'resourcefulbees:clogged_bee',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}clogged_bee`
         }
     ];
+
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:animal_spawner';
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());

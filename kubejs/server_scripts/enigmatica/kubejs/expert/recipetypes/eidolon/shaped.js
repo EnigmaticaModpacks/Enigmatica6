@@ -56,6 +56,16 @@ onEvent('recipes', (event) => {
                 D: 'minecraft:nether_brick_fence'
             },
             id: 'eidolon:brazier'
+        },
+        {
+            output: 'eidolon:wooden_altar',
+            pattern: ['AAA', 'CBC', 'CBC'],
+            key: {
+                A: 'quark:brown_stained_planks_slab',
+                B: 'kubejs:scented_stick',
+                C: 'quark:brown_stained_planks_vertical_slab'
+            },
+            id: 'eidolon:wooden_altar'
         }
     ];
 

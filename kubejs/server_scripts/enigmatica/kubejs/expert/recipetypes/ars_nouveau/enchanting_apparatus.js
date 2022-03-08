@@ -194,7 +194,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:nuggets/gold_brass',
-                'eidolon:wooden_brewing_stand',
+                'minecraft:brewing_stand',
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
@@ -2077,7 +2077,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:glyph_craft',
                 '#forge:nuggets/arcane_gold',
                 'architects_palette:twisted_sapling',
-                'eidolon:wooden_brewing_stand',
+                'minecraft:brewing_stand',
                 '#forge:nuggets/arcane_gold',
                 '#forge:coins/electrum',
                 '#forge:nuggets/arcane_gold'
@@ -2362,6 +2362,38 @@ onEvent('recipes', (event) => {
             reagent: 'ars_nouveau:wilden_tribute',
             output: Item.of('4x arsarsenal:sigil_of_aethermancy'),
             id: 'arsarsenal:sigil_of_aethermancy'
+        },
+        {
+            inputs: [
+                'occultism:otherstone_slab',
+                'botania:corporea_spark',
+                'occultism:otherstone_slab',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                'occultism:otherstone_tablet',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                'occultism:otherstone_tablet'
+            ],
+            sourceCost: 500,
+            reagent: 'ars_nouveau:archwood_chest',
+            output: 'naturesaura:ender_crate',
+            id: `${id_prefix}ender_crate`
+        },
+        {
+            inputs: [
+                'occultism:otherstone_slab',
+                'botania:corporea_spark',
+                'occultism:otherstone_slab',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                'occultism:otherstone_tablet',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                'occultism:otherstone_tablet'
+            ],
+            sourceCost: 500,
+            reagent: 'thermal:satchel',
+            output: 'naturesaura:ender_access',
+            id: `${id_prefix}ender_access`
         }
     ];
 

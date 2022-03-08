@@ -19,6 +19,7 @@ onEvent('recipes', (event) => {
 
         'atum:blast_furnace',
         'atum:book',
+        'atum:ore_brewing_stand',
 
         'betterendforge:leather_to_stripes',
 
@@ -47,6 +48,7 @@ onEvent('recipes', (event) => {
         /darkutils:crafting\/export_plate/,
 
         'eidolon:crucible',
+        'eidolon:wooden_brewing_stand',
 
         'farmersdelight:book_from_canvas',
 
@@ -269,6 +271,8 @@ onEvent('recipes', (event) => {
         { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
         { output: 'naturesaura:shockwave_creator', id: 'naturesaura:shockwave_creator' },
         { output: 'naturesaura:death_ring', id: 'naturesaura:death_ring' },
+        { output: 'naturesaura:ender_crate', id: 'naturesaura:ender_crate' },
+        { output: 'naturesaura:ender_access', id: 'naturesaura:ender_access' },
 
         { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
         { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },

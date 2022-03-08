@@ -9,20 +9,21 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "The Experts 2: Electric Boogaloo"
+			title: "Enigmatica 6: Expert"
 			icon: "mekanism:robit"
 			x: 0.0d
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"Welcome to Enigmatica 6: Expert mode! This chapter serves as a general guide to the progression."
+				"Welcome to Enigmatica 6: Expert mode!"
 				""
 				"The Goal of E6E is to complete all quests in the Bragging Rights chapter. Good luck, and have fun :D"
 				"- Niller"
 				""
+				"The quests in this chapter provide a rough outline of the progression of the pack."
+				""
 				""
 				"Please note that mods are rarely \"strictly\" gated - Some of their items will be obtainable prior to the Gate being unlocked, and not all things will be immediately obtainable once the Gate is unlocked."
-				""
 			]
 			dependencies: ["0000000000000FEB"]
 			hide: true
@@ -41,7 +42,7 @@
 			tasks: [{
 				id: "0000000000000FBE"
 				type: "item"
-				item: "create:cogwheel"
+				item: "create:gearbox"
 			}]
 		}
 		{
@@ -60,14 +61,15 @@
 		{
 			title: "XNet"
 			x: 0.0d
-			y: 1.0d
+			y: 1.5d
 			shape: "diamond"
 			dependencies: ["0000000000000FBF"]
+			size: 1.25d
 			id: "0000000000000FC1"
 			tasks: [{
 				id: "0000000000000FC2"
 				type: "item"
-				item: "xnet:netcable_blue"
+				item: "xnet:controller"
 			}]
 		}
 		{
@@ -110,7 +112,7 @@
 		{
 			title: "Botania"
 			x: 3.0d
-			y: 4.5d
+			y: 6.0d
 			dependencies: ["0000000000000FC7"]
 			id: "0000000000000FC9"
 			tasks: [{
@@ -122,7 +124,7 @@
 		{
 			title: "Astral Sorcery"
 			x: 1.5d
-			y: 6.0d
+			y: 6.5d
 			dependencies: [
 				"0000000000000FCF"
 				"0000000000000FC9"
@@ -131,15 +133,21 @@
 			tasks: [{
 				id: "0000000000000FCC"
 				type: "item"
-				item: "astralsorcery:stardust"
+				item: {
+					id: "astralsorcery:celestial_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
 			}]
 		}
 		{
 			title: "Occultism"
 			icon: "kubejs:craft_miner_marid_irradiated"
 			x: 1.5d
-			y: 3.0d
-			dependencies: ["0000000000000FC3"]
+			y: 3.75d
+			dependencies: ["573D1ADF4FBE3044"]
 			id: "0000000000000FCD"
 			tasks: [{
 				id: "0000000000000FCE"
@@ -154,34 +162,35 @@
 			}]
 		}
 		{
-			title: "Blood Magic"
-			x: 1.5d
-			y: 4.5d
+			title: "Blood Magic: Part Two"
+			x: 2.0d
+			y: 5.0d
 			dependencies: ["0000000000000FCD"]
 			id: "0000000000000FCF"
 			tasks: [{
 				id: "0000000000000FD0"
 				type: "item"
-				item: "bloodmagic:altar"
+				item: "bloodmagic:demoncrucible"
 			}]
 		}
 		{
 			title: "Pretty Pipes"
-			x: -4.5d
-			y: 1.5d
+			x: -4.375d
+			y: 1.25d
 			shape: "diamond"
 			dependencies: ["0000000000000FBD"]
+			size: 1.25d
 			id: "0000000000000FD1"
 			tasks: [{
 				id: "0000000000000FD2"
 				type: "item"
-				item: "prettypipes:pipe"
+				item: "prettypipes:crafting_terminal"
 			}]
 		}
 		{
 			title: "Powah"
 			x: -4.5d
-			y: 3.0d
+			y: 2.5d
 			dependencies: ["0000000000000FD5"]
 			id: "0000000000000FD3"
 			tasks: [{
@@ -205,8 +214,8 @@
 		}
 		{
 			title: "RFTools"
-			x: -1.5d
-			y: 4.5d
+			x: -2.0d
+			y: 5.0d
 			dependencies: ["0000000000000FDB"]
 			id: "0000000000000FD7"
 			tasks: [{
@@ -221,6 +230,7 @@
 			y: 4.5d
 			shape: "diamond"
 			dependencies: ["0000000000000FD3"]
+			size: 1.25d
 			id: "0000000000000FD9"
 			tasks: [{
 				id: "0000000000000FDA"
@@ -232,7 +242,7 @@
 			title: "PneumaticCraft"
 			icon: "pneumaticcraft:pressure_gauge"
 			x: -1.5d
-			y: 3.0d
+			y: 3.75d
 			dependencies: ["0000000000000FBF"]
 			id: "0000000000000FDB"
 			tasks: [{
@@ -243,14 +253,12 @@
 			}]
 		}
 		{
-			title: "Refined Storage"
-			x: 0.0d
-			y: 4.0d
-			dependencies: [
-				"0000000000000FDB"
-				"0000000000000FCD"
-				"51E57880AFDE5595"
-			]
+			title: "Refined Storage: Automation"
+			x: -0.625d
+			y: 5.0d
+			shape: "diamond"
+			dependencies: ["0000000000000FDB"]
+			size: 1.25d
 			id: "0000000000000FDD"
 			tasks: [{
 				id: "0000000000000FDE"
@@ -274,10 +282,11 @@
 		{
 			title: "Resourceful Bees"
 			icon: "minecraft:honeycomb"
-			x: 4.5d
-			y: 3.0d
+			x: 4.375d
+			y: 2.5d
 			shape: "diamond"
 			dependencies: ["0000000000000FC7"]
+			size: 1.25d
 			id: "0000000000000FE1"
 			tasks: [{
 				id: "0000000000000FE2"
@@ -301,8 +310,11 @@
 			title: "Mekanism"
 			icon: "mekanism:alloy_atomic"
 			x: -1.5d
-			y: 6.0d
-			dependencies: ["0000000000000FD7"]
+			y: 6.5d
+			dependencies: [
+				"0000000000000FD7"
+				"0000000000000FE3"
+			]
 			id: "0000000000000FE5"
 			tasks: [{
 				id: "0EBD46ADF246F17F"
@@ -312,43 +324,44 @@
 		}
 		{
 			title: "Bragging Rights"
-			icon: "create:creative_crate"
+			icon: "create:handheld_worldshaper"
 			x: 0.0d
 			y: 8.0d
 			shape: "octagon"
 			dependencies: [
-				"0000000000000FE3"
 				"0000000000000FE5"
 				"0000000000000FCB"
 			]
 			size: 2.0d
 			id: "0000000000000FE7"
 			tasks: [{
-				id: "0000000000000FE8"
+				id: "281E59C3023B532F"
 				type: "item"
-				item: "create:creative_crate"
+				item: "create:handheld_worldshaper"
 			}]
 		}
 		{
 			title: "Integrated Dynamics"
-			icon: "integrateddynamics:crystalized_menril_chunk"
+			icon: "integrateddynamics:variable_transformer_input"
 			x: 0.0d
-			y: 6.0d
+			y: 5.625d
 			shape: "diamond"
 			dependencies: ["0000000000000FDD"]
+			size: 1.25d
 			id: "218FBDC6B17EDF33"
 			tasks: [{
 				id: "2A11C229CEEEBE6F"
 				type: "item"
-				item: "integrateddynamics:crystalized_menril_chunk"
+				item: "integrateddynamics:variablestore"
 			}]
 		}
 		{
 			title: "Flux Networks"
 			x: -4.5d
-			y: 6.0d
+			y: 6.5d
 			shape: "diamond"
 			dependencies: ["0000000000000FE3"]
+			size: 1.25d
 			id: "11FC40A4B8CBA98A"
 			tasks: [{
 				id: "590186031154D036"
@@ -359,9 +372,11 @@
 		{
 			title: "Pedestals"
 			icon: "pedestals:pedestal/stone333"
-			x: 3.0d
-			y: 6.0d
+			x: 4.5d
+			y: 6.5d
+			shape: "diamond"
 			dependencies: ["0000000000000FC9"]
+			size: 1.25d
 			id: "6CA3B688C7701907"
 			tasks: [{
 				id: "5727C862289731E8"
@@ -372,13 +387,41 @@
 		{
 			title: "Tinkers' Construct"
 			x: 0.0d
-			y: 2.0d
+			y: 3.0d
+			shape: "diamond"
 			dependencies: ["0000000000000FBF"]
+			size: 1.25d
 			id: "51E57880AFDE5595"
 			tasks: [{
 				id: "746F162F9FD6B5C6"
 				type: "item"
 				item: "tconstruct:smeltery_controller"
+			}]
+		}
+		{
+			title: "Blood Magic: Part One"
+			x: 1.5d
+			y: 2.6d
+			dependencies: ["0000000000000FC3"]
+			id: "573D1ADF4FBE3044"
+			tasks: [{
+				id: "50E8AA4A66F47704"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+		}
+		{
+			title: "Refined Storage: Digital Storage"
+			x: 0.625d
+			y: 5.0d
+			shape: "diamond"
+			dependencies: ["0000000000000FCD"]
+			size: 1.25d
+			id: "2AFC23BBBA407467"
+			tasks: [{
+				id: "786CC87833A2294A"
+				type: "item"
+				item: "refinedstorage:disk_drive"
 			}]
 		}
 	]

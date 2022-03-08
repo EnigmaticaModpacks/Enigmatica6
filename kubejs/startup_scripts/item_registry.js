@@ -44,18 +44,39 @@ onEvent('item.registry', (event) => {
         'incomplete_book',
         'incomplete_capacitor_basic_large',
         'astrogro',
-        'automation_mastery',
-        'botanical_mastery',
-        'astronomy_mastery',
-        'alchemy_mastery',
-        'ritual_mastery',
-        'aura_mastery',
-        'engineering_mastery',
-        'energistics_mastery',
-        'dimensional_mastery',
-        'battle_mastery',
-        'excavation_mastery',
-        'culinary_mastery'
+
+        'automation_mastery_shard',
+        'engineering_mastery_shard',
+        'energistics_mastery_shard',
+        'dimensional_mastery_shard',
+        'battle_mastery_shard',
+        'excavation_mastery_shard',
+
+        'botanical_mastery_shard',
+        'astronomy_mastery_shard',
+        'alchemy_mastery_shard',
+        'ritual_mastery_shard',
+        'aura_mastery_shard',
+        'culinary_mastery_shard',
+
+        'automation_mastery_token',
+        'engineering_mastery_token',
+        'energistics_mastery_token',
+        'dimensional_mastery_token',
+        'battle_mastery_token',
+        'excavation_mastery_token',
+
+        'botanical_mastery_token',
+        'astronomy_mastery_token',
+        'alchemy_mastery_token',
+        'ritual_mastery_token',
+        'aura_mastery_token',
+        'culinary_mastery_token',
+
+        'worldshaper_handle',
+        'worldshaper_cog',
+        'worldshaper_barrel',
+        'laputian_ingot'
     ];
 
     const ritualDummies = [
@@ -231,6 +252,23 @@ onEvent('item.registry', (event) => {
         { name: '16384k_storage_part_package', texture: 'assembly_package_filled' },
         { name: '16384k_storage_part_assembly', texture: 'assembly_package_processing' },
 
+        { name: 'batch_1k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_1k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_4k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_4k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_16k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_16k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_64k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_64k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_256k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_256k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_1024k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_1024k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_4096k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_4096k_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_16384k_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_16384k_storage_part_assembly', texture: 'assembly_package_processing' },
+
         { name: '64k_fluid_storage_part_package', texture: 'assembly_package_filled' },
         { name: '64k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
         { name: '256k_fluid_storage_part_package', texture: 'assembly_package_filled' },
@@ -246,7 +284,24 @@ onEvent('item.registry', (event) => {
         { name: '262144k_fluid_storage_part_package', texture: 'assembly_package_filled' },
         { name: '262144k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
         { name: '1048576k_fluid_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '1048576k_fluid_storage_part_assembly', texture: 'assembly_package_processing' }
+        { name: '1048576k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+
+        { name: 'batch_64k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_64k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_256k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_256k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_1024k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_1024k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_4096k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_4096k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_16384k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_16384k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_65536k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_65536k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_262144k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_262144k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+        { name: 'batch_1048576k_fluid_storage_part_package', texture: 'packing_crate_lime' },
+        { name: 'batch_1048576k_fluid_storage_part_assembly', texture: 'assembly_package_processing' }
     ];
 
     let metals = [

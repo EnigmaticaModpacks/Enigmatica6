@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/pneumaticcraft/';
+    const id_prefix = 'enigmatica:expert/pneumaticcraft/shaped';
 
     /*
         ,
@@ -221,7 +221,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:ingots/compressed_iron',
                 B: 'pneumaticcraft:pressure_tube',
                 C: 'powah:thermoelectric_plate',
-                D: 'thermal:machine_frame'
+                D: '#industrialforegoing:machine_frame/pity'
             },
             id: 'pneumaticcraft:thermal_compressor'
         },
