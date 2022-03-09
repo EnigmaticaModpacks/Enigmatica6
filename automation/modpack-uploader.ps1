@@ -29,14 +29,25 @@ if ($uploadExpertMode) {
     $CLIENT_NAME = "Enigmatica6Expert"
     $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Expert $MODPACK_VERSION"
     $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Expert Server $MODPACK_VERSION"
-    $modeFilePath = "mode.json"
-    $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES += $modeFilePath
+
+    Switch-DefaultMode-To "expert"
+}
+else {
+    Switch-DefaultMode-To "normal"
+}
+
+function Switch-DefaultMode-To {
+    param(
+        [Parameter(Position = 0)]
+        [string]$mode
+    )
+    $defaultModeFilePath = "config/configswapper.json"
 
     # Force the mode.json to be in expert mode for publishing
-    $modeFile = Get-Content -Raw -Path $modeFilePath | ConvertFrom-Json
-    if ($modeFile.mode -ne "expert") {
-        $modeFile.mode = "expert"
-        $modeFile | ConvertTo-Json | Set-Content $modeFilePath
+    $defaultModeFilePath = Get-Content -Raw -Path $modeFilePath | ConvertFrom-Json
+    if ($defaultModeFilePath.defaultmode -ne $mode) {
+        $defaultModeFilePath.defaultmode = $mode
+        $defaultModeFilePath | ConvertTo-Json | Set-Content $defaultModeFilePath
     }
 }
 
