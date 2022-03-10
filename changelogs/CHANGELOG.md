@@ -1,6 +1,6 @@
 ### Enigmatica 6 & Enigmatica 6: Expert v1.0.0
 
-_Using Forge-1.16.5-36.2.29_ | No Mod Update List this time | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.0.0.md)_
+_Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.0.0.md)_ | No Mod List this time :(
 
 
 
@@ -40,13 +40,11 @@ _Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 **Changes/Improvements**
 
 - Add a quest-step for attunement \(Astral Sorcery Questline\) [\#4291](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4291)
-- Add Game Menu Mod Options [\#4287](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4287)
 - Add morphing tool quest [\#4322](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4322) ([MuteTiefling](https://github.com/MuteTiefling))
 - Add new main menu panorama [\#4336](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4336) ([theboo](https://github.com/theboo))
 - Add Overworld worldgen bees to Beekeeper villager [\#4320](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4320) ([theboo](https://github.com/theboo))
 - Add Storage Parts to Advanced assembly table. [\#4333](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4333)
 - Allow Tree Fertilizer to use any coral [\#4359](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4359) ([MuteTiefling](https://github.com/MuteTiefling))
-- Ars Creo - Ars Nouveau + Create compatibility [\#4302](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4302)
 - \[expert\] Nature Aura - Ender Crate recipe seem alittle bit too easy  [\#4297](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4297)
 - \[expert\] Quality of life: Otherstone support for stonecutter [\#4274](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4274)
 - \[expert\] Remove / Change  NBT Tag "minecraft:planks" in Polished wood plank [\#4306](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4306)
@@ -55,12 +53,9 @@ _Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 - Fix crafting recipes for signs and chests [\#4295](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4295) ([MuteTiefling](https://github.com/MuteTiefling))
 - Fix repair material for Tinker's Plate [\#4294](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4294) ([MuteTiefling](https://github.com/MuteTiefling))
 - Journeymap integrations block ftb chunks minimap and chunk claims map shows first [\#4308](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4308)
-- Little Logistics [\#4194](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4194)
 - Make Seaweed exchangable for Kelp [\#4258](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4258)
 - Morphing Tool Quest. [\#3628](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3628)
 - New Crowdin updates [\#4335](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4335) ([NillerMedDild](https://github.com/NillerMedDild))
-- New Crowdin updates [\#4343](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4343) ([NillerMedDild](https://github.com/NillerMedDild))
-- Notes mod [\#4240](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4240)
 - Raise sea level in Terraforged preset up to y=62 [\#4339](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4339) ([theboo](https://github.com/theboo))
 - scented stick looks just like a normal stick [\#4344](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4344)
 - Tag Thief Hood as `armor/helm` [\#4317](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4317) ([MuteTiefling](https://github.com/MuteTiefling))

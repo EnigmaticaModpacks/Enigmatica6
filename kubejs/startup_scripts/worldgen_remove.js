@@ -5,7 +5,8 @@ onEvent('worldgen.remove', (event) => {
             'chisel:basalt/raw',
             'chisel:limestone/raw',
             'minecraft:nether_quartz_ore',
-            'minecraft:nether_gold_ore'
+            'minecraft:nether_gold_ore',
+            /immersiveengineering:ore\w+/
         ];
     });
 });
