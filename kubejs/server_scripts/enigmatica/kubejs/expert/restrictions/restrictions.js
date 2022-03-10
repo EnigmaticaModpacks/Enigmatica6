@@ -16,19 +16,6 @@ onEvent('server.datapack.high_priority', (event) => {
         }
     ];
 
-    // Requires creation of Red Chalk to place outside of Atum
-    let restricted_occultism_items = ['occultism:chalk_purple', 'occultism:chalk_gold', 'occultism:chalk_white'];
-    restricted_occultism_items.forEach((item) => {
-        restrictions.push({
-            type: 'or',
-            name: item,
-            item: true,
-            first: { type: 'dimension', dimension: 'atum:atum' },
-            second: { type: 'gamestage', stage: 'red_chalk' },
-            errorKey: `${errorKey_prefix}red_chalk`
-        });
-    });
-
     let restricted_occultism_blocks = ['occultism:golden_sacrificial_bowl', 'occultism:sacrificial_bowl'];
     restricted_occultism_blocks.forEach((block) => {
         restrictions.push({
