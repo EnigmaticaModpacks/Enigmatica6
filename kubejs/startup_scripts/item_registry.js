@@ -326,6 +326,92 @@ onEvent('item.registry', (event) => {
         'zinc'
     ];
 
+    const bees = [ //keep changes mostly synced to "server_scripts/constants/resourcefulbees.js", combVariants constant
+    'aluminum',
+    'blaze',
+    'boobee',
+    'brass',
+    'bronze',
+    'catnip',
+    'clay',
+    'coal',
+    'constantan',
+    'copper',
+    'creeper',
+    'diamond',
+    'electrum',
+    'emerald',
+    'ender',
+    'enderium',
+    'ghast',
+    'glowstone',
+    'gold',
+    'gravel',
+    'icy',
+    'invar',
+    'iron',
+    'lapis',
+    'lead',
+    'lumium',
+    'netherite',
+    'nether_quartz',
+    'nickel',
+    'obsidian',
+    'osmium',
+    'pigman',
+    'redstone',
+    'rgbee',
+    'sand',
+    'signalum',
+    'silver',
+    'skeleton',
+    'slimy',
+    'steel',
+    'tin',
+    'uranium',
+    'water',
+    'wither',
+    'zinc',
+    'zombie',
+    'forest',
+    'rocky',
+    'industrious',
+    'bloody',
+    'elven',
+    'infused',
+    'mana',
+    'sky',
+    'starry',
+    'tainted',
+    'terrestrial',
+    'enderslime',
+    'ichor',
+    'skyslime',
+    'cobalt',
+    'soup',
+    'clockwork',
+    'spelling',
+    'wasabee',
+    'basalz',
+    'blitz',
+    'blizz',
+    'direbee20',
+    'generikbee',
+    'otherworldly',
+    'carbee',
+    'dusty_mummbee',
+    'brutish_zombee',
+    'shepherd',
+    'clogged',
+    'regal',
+    'frosty',
+    'starry_lexxie',
+    'kitten',
+    'oreo',
+    'yeti',
+    'abbee'
+];
+
     let metalTypes = ['suffused', 'fulminated', 'levigated', 'sliver'];
 
     metalTypes.forEach((metalType) => {
@@ -345,6 +431,11 @@ onEvent('item.registry', (event) => {
     reusableItemTextures.forEach((item) => {
         event.create(item.name).group('KubeJS').texture(`kubejs:item/${item.texture}`);
     });
+
+    bees.forEach((bee) => {
+        event.create(`${bee}_larva`).group(`KubeJS`).texture(`kubejs:item/bee_larva`)
+    });
+
     // Custom Occultism Miners
     event
         .create('fisher_foliot')
