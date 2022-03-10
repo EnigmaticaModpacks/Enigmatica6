@@ -30,13 +30,13 @@ if ($uploadExpertMode) {
     $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Expert $MODPACK_VERSION"
     $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Expert Server $MODPACK_VERSION"
 
-    Switch-DefaultMode-To "expert"
+    Switch-DefaultModeTo -mode "expert"
 }
 else {
-    Switch-DefaultMode-To "normal"
+    Switch-DefaultModeTo -mode "normal"
 }
 
-function Switch-DefaultMode-To {
+function Switch-DefaultModeTo {
     param(
         [Parameter(Position = 0)]
         [string]$mode
