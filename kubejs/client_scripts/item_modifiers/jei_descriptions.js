@@ -132,7 +132,7 @@ onEvent('jei.information', (event) => {
             text: [
                 'Obtained by killing Nautilus, found in Warm Oceans.',
                 ' ',
-                'Also obtained from Embedded Ammonite, found at any Y level in Oceans and Beaches.'
+                'Also obtained from Embedded Ammonite, found at any Y level under Oceans and Beaches.'
             ]
         },
         {
