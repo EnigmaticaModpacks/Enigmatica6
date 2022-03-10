@@ -1,6 +1,6 @@
 ### Enigmatica 6 & Enigmatica 6: Expert v1.0.0
 
-_Using Forge-1.16.5-36.2.29_ | No Mod Update List this time | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.0.0.md)_
+_Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.0.0.md)_ | No Mod List this time :(
 
 
 
