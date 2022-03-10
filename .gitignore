@@ -81,7 +81,6 @@ config/mining_helmet-client.toml
 stop-java-detection.txt
 remove-client-mods.bat
 remove-client-mods.ps1
-!server_files/server-guide.txt
 server-install.sh
 start-server.bat
 start-server.sh
@@ -93,6 +92,7 @@ settings.cfg
 update-server.bat
 update-server.ps1
 !server_files/**
+!server_files_expert/**
 !automation/**
 automation/secrets.ps1
 automation/ChangelogGenerator-2.0.0-pre10.jar
@@ -219,6 +219,5 @@ config/industrialforegoing/machine-agriculture-husbandry.toml
 manifest.json
 config/modularrouters-common.toml
 config/Mekanism/generators.toml
-server_files_expert/server-guide.txt
 config/bhmenu-client.toml
 config/configswapper.json
