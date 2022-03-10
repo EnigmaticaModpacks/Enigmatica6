@@ -29,10 +29,10 @@ function Switch-DefaultModeTo {
     $defaultModeFilePath = "config/configswapper.json"
 
     # Force the mode.json to be in expert mode for publishing
-    $defaultModeFilePath = Get-Content -Raw -Path $modeFilePath | ConvertFrom-Json
-    if ($defaultModeFilePath.defaultmode -ne $mode) {
-        $defaultModeFilePath.defaultmode = $mode
-        $defaultModeFilePath | ConvertTo-Json | Set-Content $defaultModeFilePath
+    $defaultModeJson = Get-Content -Raw -Path $defaultModeFilePath | ConvertFrom-Json
+    if ($defaultModeJson.defaultmode -ne $mode) {
+        $defaultModeJson.defaultmode = $mode
+        $defaultModeJson | ConvertTo-Json | Set-Content $defaultModeFilePath
     }
 }
 
