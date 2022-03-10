@@ -21,21 +21,6 @@ function Validate-SecretsFile {
 . "$PSScriptRoot\settings.ps1"
 . "$PSScriptRoot\$secretsFile"
 
-if ($uploadExpertMode) {
-    $CURSEFORGE_PROJECT_ID = 585046
-    $SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files_expert"
-    $SERVER_SETUP_CONFIG_PATH = "$SERVER_FILES_FOLDER/server-setup-config.yaml"
-    $MODPACK_NAME = "Enigmatica6Expert"
-    $CLIENT_NAME = "Enigmatica6Expert"
-    $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Expert $MODPACK_VERSION"
-    $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Expert Server $MODPACK_VERSION"
-
-    Switch-DefaultModeTo -mode "expert"
-}
-else {
-    Switch-DefaultModeTo -mode "normal"
-}
-
 function Switch-DefaultModeTo {
     param(
         [Parameter(Position = 0)]
@@ -424,6 +409,23 @@ Set-Location $INSTANCE_ROOT
 
 Test-ForDependencies
 Validate-SecretsFile
+
+
+if ($uploadExpertMode) {
+    $CURSEFORGE_PROJECT_ID = 585046
+    $SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files_expert"
+    $SERVER_SETUP_CONFIG_PATH = "$SERVER_FILES_FOLDER/server-setup-config.yaml"
+    $MODPACK_NAME = "Enigmatica6Expert"
+    $CLIENT_NAME = "Enigmatica6Expert"
+    $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Expert $MODPACK_VERSION"
+    $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Expert Server $MODPACK_VERSION"
+
+    Switch-DefaultModeTo -mode "expert"
+}
+else {
+    Switch-DefaultModeTo -mode "normal"
+}
+
 New-ClientFiles
 Push-ClientFiles
 if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
