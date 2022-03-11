@@ -422,7 +422,7 @@
 
 		["When Configurations Arise"."Haunted Structures"."Plague Asylum Spawning Settings"]
 			#Whether Plague Asylums generate on your worlds or not.
-			plagueAsylumGenerates = false
+			plagueAsylumGenerates = true
 			#Maximum separation between Plague Asylums (in chunks).
 			#Range: 0 ~ 1000000
 			plagueAsylumSpacing = 240
@@ -431,7 +431,7 @@
 			plagueAsylumSeparation = 200
 			#Number of Jigsaw iterations when generating a Plague Asylum.
 			#Range: 0 ~ 1000000
-			plagueAsylumSize = 35
+			plagueAsylumSize = 20
 			#Whether Plague Asylums adapt the terrain around them or not.
 			plagueAsylumTransformsTerrain = false
 			#The point in which Plague Asylums will start spawning. This is based around X = 0, Z = 0.
@@ -566,18 +566,18 @@
 
 		["When Configurations Arise"."Underworld Structures"."Foundry Spawning Settings"]
 			#Whether Foundries generate on your worlds or not.
-			foundryGenerates = false
+			foundryGenerates = true
 			#Maximum separation between Foundries (in chunks).
 			#Range: 0 ~ 1000000
 			foundrySpacing = 120
 			#Minimum spacing between Foundries (in chunks).
 			#Range: 0 ~ 1000000
-			foundrySeparation = 60
+			foundrySeparation = 40
 			#Number of Jigsaw iterations when generating an Foundry.
 			#Range: 0 ~ 1000000
 			foundrySize = 20
 			#Whether Foundries adapt the terrain around them or not.
-			foundryTransformsTerrain = false
+			foundryTransformsTerrain = true
 			#The point in which Foundries will start spawning. This is based around X = 0, Z = 0.
 			#Range: 0 ~ 1000000
 			foundrySpawnpointSeparation = 1
