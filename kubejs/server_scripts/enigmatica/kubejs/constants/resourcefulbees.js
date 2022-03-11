@@ -45,7 +45,7 @@ const honeyVarieties = [
     'resourcefulbees:otherworldly_honey'
 ];
 
-const combVariants = [
+const combVariants = [ //keep changes synced to "startup_scripts/item_registry.js", bees constant
     'aluminum',
     'blaze',
     'boobee',
@@ -125,3 +125,21 @@ const combVariants = [
     'regal',
     'frosty'
 ];
+
+const bees = [];
+
+combVariants.forEach((bee) => {
+    bees.push(bee)
+})
+
+let moreBees = [
+    'starry_lexxie',
+    'kitten',
+    'oreo',
+    'yeti',
+    'abbee'
+];
+
+moreBees.forEach((bee) => {
+    bees.push(bee);
+})
