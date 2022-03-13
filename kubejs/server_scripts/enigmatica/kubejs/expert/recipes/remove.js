@@ -84,6 +84,8 @@ onEvent('recipes', (event) => {
         'integrateddynamics:crafting/variable_transformer_output',
         'integrateddynamics:crafting/variable_transformer_input',
 
+        'materialis:smeltery/alloys/molten_pink_slime',
+
         'mekanism:metallurgic_infusing/alloy/reinforced',
         'mekanism:metallurgic_infusing/alloy/atomic',
         'mekanism:enriching/conversion/basalt_to_polished_basalt',
