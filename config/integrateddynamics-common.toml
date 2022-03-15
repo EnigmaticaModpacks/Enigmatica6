@@ -32,6 +32,8 @@
 		versionChecker = false
 		#If corrupted networks should automatically be restored on first tick.
 		recreateCorruptedNetworks = true
+		#The maximum frequency at which speach messages can be played in millis.
+		speachMaxFrequency = 1000
 
 [general]
 
