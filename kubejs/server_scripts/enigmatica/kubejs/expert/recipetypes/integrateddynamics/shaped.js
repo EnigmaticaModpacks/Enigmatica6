@@ -47,7 +47,17 @@ onEvent('recipes', (event) => {
                 D: 'atum:white_stained_crystal_glass_pane'
             },
             id: 'integrateddynamics:crafting/part_static_light_panel'
+        },
+        {
+            output: 'integrateddynamics:part_display_panel',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:nether"}'),
+                B: 'integrateddynamics:part_static_light_panel',
+            },
+            id: 'integrateddynamics:crafting/part_display_panel'
         }
+
     ];
 
     recipes.forEach((recipe) => {
