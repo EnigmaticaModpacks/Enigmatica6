@@ -16,17 +16,6 @@ onEvent('recipes', (event) => {
             id: 'integratedtunnels:crafting/part_interface_energy'
         },
         {
-            output: Item.of('integratedtunnels:part_interface_item', 2),
-            pattern: ['ABA', 'CDC'],
-            key: {
-                A: 'integrateddynamics:menril_wood',
-                B: 'ironchest:copper_chest',
-                C: 'integratedterminals:menril_glass',
-                D: 'pneumaticcraft:logistics_core'
-            },
-            id: 'integratedtunnels:crafting/part_interface_item'
-        },
-        {
             output: Item.of('integratedtunnels:part_interface_fluid', 2),
             pattern: ['ABA', 'CDC'],
             key: {
@@ -43,10 +32,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'integrateddynamics:menril_wood',
                 B: 'ironchest:silver_chest',
-                C: 'botania:corporea_block',
+                C: 'glassential:glass_ghostly',
                 D: 'botania:corporea_funnel'
             },
-            id: `${id_prefix}part_interface_item_alt`
+            id: `integratedtunnels:crafting/part_interface_item`
         }
     ];
 

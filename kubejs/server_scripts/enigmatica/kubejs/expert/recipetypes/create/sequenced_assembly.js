@@ -203,20 +203,20 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}alloybricks`
         },
         {
-            input: 'ppfluids:fluid_pipe',
+            input: 'prettypipes:pipe',
             outputs: ['integrateddynamics:cable'],
-            transitionalItem: 'ppfluids:fluid_pipe',
+            transitionalItem: 'prettypipes:pipe',
             loops: 1,
             sequence: [
                 {
                     type: 'filling',
-                    input: ['ppfluids:fluid_pipe', Fluid.of('integrateddynamics:menril_resin', 200)],
-                    output: 'ppfluids:fluid_pipe'
+                    input: ['prettypipes:pipe', Fluid.of('integrateddynamics:menril_resin', 200)],
+                    output: 'prettypipes:pipe'
                 },
                 {
                     type: 'filling',
-                    input: ['ppfluids:fluid_pipe', Fluid.of('thermal:redstone', 100)],
-                    output: 'ppfluids:fluid_pipe'
+                    input: ['prettypipes:pipe', Fluid.of('thermal:redstone', 100)],
+                    output: 'prettypipes:pipe'
                 }
             ],
             id: `${id_prefix}logic_cable`
