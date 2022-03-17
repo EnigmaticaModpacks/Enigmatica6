@@ -16,7 +16,7 @@ onEvent('server.datapack.high_priority', (event) => {
         }
     ];
 
-    let restricted_occultism_blocks = ['occultism:golden_sacrificial_bowl', 'occultism:sacrificial_bowl'];
+    let restricted_occultism_blocks = ['occultism:sacrificial_bowl'];
     restricted_occultism_blocks.forEach((block) => {
         restrictions.push({
             type: 'or',
