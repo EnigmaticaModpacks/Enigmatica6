@@ -76,7 +76,11 @@ onEvent('item.registry', (event) => {
         'worldshaper_handle',
         'worldshaper_cog',
         'worldshaper_barrel',
-        'laputian_ingot'
+        'laputian_ingot',
+
+        'partial_alloybrick',
+        'partial_blastbrick',
+        'partial_cokebrick'
     ];
 
     const ritualDummies = [
