@@ -7,7 +7,7 @@ global.onReload = function onReload(){
     var client = java('shadows.menu.PackMenuClient');
     client.loadConfig();
     
-    //update title
+    //reload randompatches config
     let randompatches = java('com.therandomlabs.randompatches.RandomPatches');
     randompatches.reloadConfig();
 }
