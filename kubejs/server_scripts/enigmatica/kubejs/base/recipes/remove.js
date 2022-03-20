@@ -196,6 +196,8 @@ onEvent('recipes', (event) => {
         'tconstruct:tools/modifiers/wither_bone_conversion',
         'tconstruct:tables/tinkers_anvil',
         'tconstruct:tables/scorched_anvil',
+        'tconstruct:smeltery/melting/metal/iron/ingot_6_16', //remove rail melting
+        'tconstruct:smeltery/melting/metal/gold/powered_rail', //to prevent dupe loop with Transport
 
         'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
