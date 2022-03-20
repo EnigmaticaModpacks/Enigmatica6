@@ -69,7 +69,7 @@ $CLIENT_RELEASE_TYPE = "beta"
 $CHANGELOG_GENERATOR_JAR = "ChangelogGenerator-2.0.0-pre10.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-1.2.1.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-2.0.1.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
