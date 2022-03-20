@@ -11,10 +11,13 @@ setMode = (player) => {
 };
 
 onEvent('server.datapack.high_priority', (event) => {
-    if (event.server) {
-        event.server.players.forEach((player) => {
+    if (event.getServer()) {
+        event.getServer().players.forEach((player) => {
             setMode(player);
         });
+        event.getServer().sendDataToAll('reload',{});
+        if(event.getServer().isDedicated())
+            global.onReload();
     }
 });
 
