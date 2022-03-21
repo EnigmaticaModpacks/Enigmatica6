@@ -789,8 +789,8 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'powah:dielectric_casing',
                 B: casingMaterial,
-                C: `powah:energy_cell_${tier}`,
-                D: `powah:thermo_generator_${tier}`,
+                C: Item.of(`powah:energy_cell_${tier}`).ignoreNBT(),
+                D: Item.of(`powah:thermo_generator_${tier}`).ignoreNBT(),
                 E: 'thermal:fluid_cell_frame',
                 F: 'xnet:advanced_connector_green',
                 G: 'xnet:netcable_green',
@@ -801,7 +801,7 @@ onEvent('recipes', (event) => {
                 L: 'pneumaticcraft:heat_pipe',
                 M: 'kubejs:spirit_entropic_gateway',
                 N: 'xnet:controller',
-                O: `powah:furnator_${tier}`,
+                O: Item.of(`powah:furnator_${tier}`).ignoreNBT(),
                 P: 'create:fluid_pipe'
             },
             id: `powah:crafting/reactor_${tier}`
