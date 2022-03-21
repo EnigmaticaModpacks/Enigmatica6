@@ -1255,7 +1255,23 @@
 			tasks: [{
 				id: "0000000000000D2E"
 				type: "item"
-				item: "create:mechanical_piston"
+				title: "Mechanical Piston"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:mechanical_piston"
+								Count: 1b
+							}
+							{
+								id: "create:sticky_mechanical_piston"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [
 				{
