@@ -179,10 +179,10 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'pneumaticcraft:assembly_controller',
-            pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
+            pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
             key: {
                 A: 'prettypipes:pipe',
-                B: 'rftoolsutility:screen',
+                B: 'computercraft:computer_normal',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'pneumaticcraft:reinforced_stone_slab',
                 E: 'pneumaticcraft:pneumatic_dynamo'
