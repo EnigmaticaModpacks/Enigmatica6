@@ -1313,6 +1313,20 @@ const dyeSources = [
         tertiary: 'minecraft:green_dye'
     },
     {
+        input: 'byg:cattail',
+        type: 'small',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'projectvibrantjourneys:cattail',
+        type: 'small',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
         input: 'atum:weed',
         type: 'small',
         primary: 'minecraft:brown_dye',
@@ -1347,7 +1361,7 @@ const dyeSources = [
         secondary: 'minecraft:black_dye',
         tertiary: 'minecraft:black_dye'
     },
-	{
+    {
         input: 'quark:cactus_paste',
         type: 'small',
         primary: 'minecraft:green_dye',
