@@ -176,7 +176,12 @@ onEvent('recipes', (event) => {
         /emendatusenigmatica:alloy_dust/
     ];
 
-    const outputRemovals = ['tiab:timeinabottle', 'minecraft:nautilus_shell', 'bloodmagic:intermediatecuttingfluid'];
+    const outputRemovals = [
+        'tiab:timeinabottle',
+        'minecraft:nautilus_shell',
+        'bloodmagic:intermediatecuttingfluid',
+        'engineersdecor:factory_placer'
+    ];
 
     const patchouli_safe_removals = [
         { output: 'apotheosis:hellshelf', id: 'apotheosis:hellshelf' },
