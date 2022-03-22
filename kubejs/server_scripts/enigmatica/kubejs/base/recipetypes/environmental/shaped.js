@@ -44,7 +44,7 @@ onEvent('recipes', (event) => {
             output: Item.of('3x environmental:cherry_sign'),
             pattern: ['AAA', 'AAA', ' B '],
             key: {
-                A: ['byg:cherry_planks', 'atmospheric:cherry_planks', 'projectvibrantjourneys:sakura_planks'],
+                A: ['byg:cherry_planks', 'environmental:cherry_planks', 'projectvibrantjourneys:sakura_planks'],
                 B: '#forge:rods/wooden'
             },
             id: 'environmental:building/wood/cherry/cherry_sign'
@@ -62,7 +62,7 @@ onEvent('recipes', (event) => {
             output: 'environmental:cherry_chest',
             pattern: ['AAA', 'A A', 'AAA'],
             key: {
-                A: ['byg:cherry_planks', 'atmospheric:cherry_planks', 'projectvibrantjourneys:sakura_planks']
+                A: ['byg:cherry_planks', 'environmental:cherry_planks', 'projectvibrantjourneys:sakura_planks']
             },
             id: 'environmental:building/wood/cherry/cherry_chest'
         },
@@ -79,7 +79,7 @@ onEvent('recipes', (event) => {
             output: Item.of('4x environmental:cherry_chest'),
             pattern: ['AAA', 'A A', 'AAA'],
             key: {
-                A: ['byg:cherry_log', 'atmospheric:cherry_log', 'projectvibrantjourneys:sakura_log']
+                A: ['byg:cherry_log', 'environmental:cherry_log', 'projectvibrantjourneys:sakura_log']
             },
             id: `${id_prefix}cherry_chest_from_logs`
         }
