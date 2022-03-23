@@ -27,5 +27,5 @@ onEvent('block.tags', (event) => {
         'occultism:chalk_glyph_red',
         'occultism:chalk_glyph_gold'
     ];
-    event.get('buidlinggadggets:blacklist/generic', blocks);
+    event.get('buildinggadgets:blacklist/generic').add(blocks);
 });

@@ -18,7 +18,6 @@ onEvent('block.tags', (event) => {
         'immersiveengineering:lightning_rod',
         'immersiveengineering:metal_press',
         'immersiveengineering:mixer',
-        'immersiveengineering:pumpjack',
         'immersiveengineering:refinery',
         'immersiveengineering:sawmill',
         'immersiveengineering:silo',
@@ -26,7 +25,8 @@ onEvent('block.tags', (event) => {
         'immersiveengineering:tank',
         'immersivepetroleum:hydrotreater',
         'immersivepetroleum:distillationtower',
-        'immersivepetroleum:cokerunit'
+        'immersivepetroleum:cokerunit',
+        'immersivepetroleum:pumpjack'
     ];
-    event.get('buidlinggadggets:blacklist/generic', blocks);
+    event.get('buildinggadgets:blacklist/generic').add(blocks);
 });
