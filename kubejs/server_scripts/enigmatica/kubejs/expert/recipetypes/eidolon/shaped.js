@@ -79,6 +79,16 @@ onEvent('recipes', (event) => {
                 E: Item.of('bloodmagic:soulgemlesser', '{souls:256.0d}')
             },
             id: `${id_prefix}soul_enchanter`
+        },
+        {
+            output: Item.of('6x eidolon:wicked_weave'),
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: 'atum:linen_cloth',
+                B: Item.of('minecraft:potion', '{Potion:"ars_nouveau:spell_damage_strong"}'),
+                C: { type: 'bloodmagic:bloodorb', orb_tier: 1 }
+            },
+            id: `${id_prefix}wicked_weave`
         }
     ];
 
