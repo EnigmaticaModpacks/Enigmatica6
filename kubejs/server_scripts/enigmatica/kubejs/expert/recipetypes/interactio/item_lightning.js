@@ -162,7 +162,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}firmament`
         },
         {
-            inputs: ['eidolon:soul_shard', 'minecraft:polished_andesite', '#eidolon:inlays/pewter'],
+            inputs: ['eidolon:soul_shard', 'minecraft:polished_andesite', '#forge:inlays/pewter'],
             output: {
                 entries: [{ result: { item: 'eidolon:stone_altar', count: 1 }, weight: 1 }],
                 empty_weight: 0,

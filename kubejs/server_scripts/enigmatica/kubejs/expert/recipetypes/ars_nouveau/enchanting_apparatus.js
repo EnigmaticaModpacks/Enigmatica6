@@ -2394,6 +2394,22 @@ onEvent('recipes', (event) => {
             reagent: 'thermal:satchel',
             output: 'naturesaura:ender_access',
             id: `${id_prefix}ender_access`
+        },
+        {
+            inputs: [
+                '#forge:inlays/pewter',
+                'eidolon:lesser_soul_gem',
+                '#forge:inlays/pewter',
+                'quark:soul_bead',
+                'quark:soul_bead',
+                '#forge:inlays/pewter',
+                'quark:soul_bead',
+                '#forge:inlays/pewter'
+            ],
+            sourceCost: 10000,
+            reagent: Item.of('minecraft:chainmail_chestplate', '{Damage:0}').weakNBT(),
+            output: 'eidolon:warded_mail',
+            id: `${id_prefix}warded_mail`
         }
     ];
 
