@@ -2458,6 +2458,54 @@ onEvent('recipes', (event) => {
             reagent: 'eidolon:basic_belt',
             output: 'eidolon:gravity_belt',
             id: `${id_prefix}gravity_belt`
+        },
+        {
+            inputs: [
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave'
+            ],
+            sourceCost: 3000,
+            reagent: 'atum:wanderer_boots',
+            output: 'eidolon:warlock_boots',
+            id: `${id_prefix}warlock_boots`
+        },
+        {
+            inputs: [
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave'
+            ],
+            sourceCost: 3000,
+            reagent: 'atum:wanderer_chest',
+            output: 'eidolon:warlock_cloak',
+            id: `${id_prefix}warlock_cloak`
+        },
+        {
+            inputs: [
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave'
+            ],
+            sourceCost: 3000,
+            reagent: 'atum:wanderer_helmet',
+            output: 'eidolon:warlock_hat',
+            id: `${id_prefix}warlock_hat`
         }
     ];
 

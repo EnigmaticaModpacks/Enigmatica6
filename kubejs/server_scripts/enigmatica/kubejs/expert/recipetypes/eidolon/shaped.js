@@ -89,6 +89,30 @@ onEvent('recipes', (event) => {
                 C: { type: 'bloodmagic:bloodorb', orb_tier: 1 }
             },
             id: `${id_prefix}wicked_weave`
+        },
+        {
+            output: Item.of('eidolon:bonechill_wand'),
+            pattern: [' AB', 'CDA', 'EC '],
+            key: {
+                A: '#forge:ingots/pewter',
+                B: 'eidolon:wraith_heart',
+                C: '#forge:rods/silver',
+                D: 'minecraft:bone',
+                E: '#forge:inlays/pewter'
+            },
+            id: `${id_prefix}bonechill_wand`
+        },
+        {
+            output: Item.of('eidolon:soulfire_wand'),
+            pattern: [' AB', 'CDA', 'EC '],
+            key: {
+                A: '#forge:ingots/arcane_gold',
+                B: 'atum:anubis_godshard',
+                C: '#forge:rods/electrum',
+                D: '#forge:bones/wither',
+                E: '#forge:inlays/arcane_gold'
+            },
+            id: `${id_prefix}soulfire_wand`
         }
     ];
 

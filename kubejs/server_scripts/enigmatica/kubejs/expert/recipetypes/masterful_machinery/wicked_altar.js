@@ -69,6 +69,77 @@ onEvent('recipes', (event) => {
             ],
             ticks: 400,
             id: `${id_prefix}lesser_soul_gem`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'eidolon:reversal_pick', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:ingots/hepatizon', count: 3 } },
+                { type: 'masterfulmachinery:items', data: { item: 'betterendforge:leather_wrapped_stick', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:soul_shard', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:inlays/pewter', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:lesser_soul_gem', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 500,
+            id: `${id_prefix}reversal_pick`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'alexsmobs:dimensional_carver', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:reversal_pick', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'alexsmobs:void_worm_mandible', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'alexsmobs:void_worm_eye', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:ingots/netherite', count: 2 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 500,
+            id: 'alexsmobs:dimensional_carver'
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'eidolon:glass_hand', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:basic_amulet', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:brass_hand', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:zombie_heart', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:lesser_soul_gem', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:wraith_heart', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'glassential:glass_dark_ethereal_reverse', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 1000,
+            id: `${id_prefix}glass_hand`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'eidolon:void_amulet', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:basic_amulet', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'alexsmobs:emu_feather', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:inlays/pewter', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:soul_shard', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:ingots/silver', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 1000,
+            id: `${id_prefix}void_amulet`
         }
     ];
 
