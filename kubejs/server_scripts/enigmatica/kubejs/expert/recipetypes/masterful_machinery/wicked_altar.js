@@ -19,7 +19,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             ticks: 100,
-            id: `${id_prefix}gaia_spirit`
+            id: `${id_prefix}reaper_scythe`
         }
     ];
 
