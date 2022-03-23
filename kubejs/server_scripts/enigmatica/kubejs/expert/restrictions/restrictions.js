@@ -6,6 +6,7 @@ onEvent('server.datapack.high_priority', (event) => {
 
     let restrictions = [
         // Soul Enchanter only usable in the nether after crafting a Hellfire Forge
+
         {
             type: 'and',
             name: 'eidolon:soul_enchanter',
@@ -13,6 +14,13 @@ onEvent('server.datapack.high_priority', (event) => {
             first: { type: 'dimension', dimension: 'minecraft:the_nether' },
             second: { type: 'gamestage', stage: 'hellfire_forge' },
             errorKey: `${errorKey_prefix}hellfire_forge`
+        },
+        {
+            type: 'gamestage',
+            name: 'eidolon:worktable',
+            block: true,
+            stage: 'disabled',
+            errorKey: `${errorKey_prefix}disabled`
         }
     ];
 

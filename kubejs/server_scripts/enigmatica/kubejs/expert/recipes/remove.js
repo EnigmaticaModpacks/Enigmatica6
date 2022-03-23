@@ -49,6 +49,7 @@ onEvent('recipes', (event) => {
 
         'eidolon:crucible',
         'eidolon:wooden_brewing_stand',
+        'eidolon:worktable',
 
         'farmersdelight:book_from_canvas',
 

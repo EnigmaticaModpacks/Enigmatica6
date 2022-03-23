@@ -23,6 +23,16 @@ onEvent('block.loot_tables', (event) => {
                     droppedItems: [{ id: 'eidolon:pewter_ingot' }]
                 }
             ]
+        },
+        {
+            target: ['eidolon:worktable'],
+            block_pools: [
+                {
+                    rolls: [1, 1],
+                    survivesExplosion: true,
+                    droppedItems: [{ id: 'minecraft:conduit' }]
+                }
+            ]
         }
     ];
 

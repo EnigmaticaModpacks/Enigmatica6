@@ -27,17 +27,6 @@ onEvent('recipes', (event) => {
             id: 'eidolon:wooden_altar'
         },
         {
-            output: 'eidolon:worktable',
-            pattern: ['AAA', 'BCB', 'DDD'],
-            key: {
-                A: 'atum:linen_carpet_red',
-                B: 'eidolon:pewter_inlay',
-                C: 'minecraft:conduit',
-                D: 'ars_nouveau:purple_archwood_wood'
-            },
-            id: 'eidolon:worktable'
-        },
-        {
             output: 'eidolon:basic_belt',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
