@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/eidolon/shaped/';
 
     /*
         ,
@@ -66,6 +67,18 @@ onEvent('recipes', (event) => {
                 C: 'quark:brown_stained_planks_vertical_slab'
             },
             id: 'eidolon:wooden_altar'
+        },
+        {
+            output: 'eidolon:soul_enchanter',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'tomeofblood:blood_tome_three',
+                B: '#forge:inlays/arcane_gold',
+                C: 'eidolon:polished_planks',
+                D: 'create:shadow_steel_casing',
+                E: Item.of('bloodmagic:soulgemlesser', '{souls:256.0d}')
+            },
+            id: `${id_prefix}soul_enchanter`
         }
     ];
 
