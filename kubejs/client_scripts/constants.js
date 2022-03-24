@@ -567,7 +567,14 @@ const recipesToHide = [
     },
     {
         category: 'bloodmagic:alchemytable',
-        recipes_by_id: ['bloodmagic:alchemytable/basic_cutting_fluid_sigil']
+        recipes_by_id: [
+            'bloodmagic:alchemytable/basic_cutting_fluid_sigil',
+            'bloodmagic:alchemytable/component_frame_parts',
+            'bloodmagic:alchemytable/router_filter',
+            'bloodmagic:alchemytable/tag_router_filter',
+            'bloodmagic:alchemytable/enchant_router_filter',
+            'bloodmagic:alchemytable/composite_router_filter'
+        ]
     },
     {
         category: 'bloodmagic:soulforge',
@@ -576,7 +583,8 @@ const recipesToHide = [
             'bloodmagic:soulforge/sentientaxe',
             'bloodmagic:soulforge/sentientpickaxe',
             'bloodmagic:soulforge/sentientshovel',
-            'bloodmagic:soulforge/sentientscythe'
+            'bloodmagic:soulforge/sentientscythe',
+            'bloodmagic:soulforge/node_router'
         ]
     }
 ];

@@ -12,8 +12,8 @@ onEvent('server.datapack.high_priority', (event) => {
             name: 'eidolon:soul_enchanter',
             block: true,
             first: { type: 'dimension', dimension: 'minecraft:the_nether' },
-            second: { type: 'gamestage', stage: 'hellfire_forge' },
-            errorKey: `${errorKey_prefix}hellfire_forge`
+            second: { type: 'gamestage', stage: 'lesser_tartaric_gem' },
+            errorKey: `${errorKey_prefix}lesser_tartaric_gem`
         },
         {
             type: 'gamestage',

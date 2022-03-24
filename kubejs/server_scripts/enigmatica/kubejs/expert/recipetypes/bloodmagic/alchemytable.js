@@ -726,6 +726,60 @@ onEvent('recipes', (event) => {
             ticks: 1,
             orbLevel: 1,
             id: 'bloodmagic:alchemytable/basic_cutting_fluid_sigil'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:componentframeparts',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/component_frame_parts'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:itemrouterfilterexact',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/router_filter'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:itemrouterfilteroredict',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/tag_router_filter'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:itemrouterfilterenchant',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/enchant_router_filter'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:itemrouterfiltermoditems',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/mod_router_filter'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:itemrouterfiltercomposite',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/composite_router_filter'
         }
     ];
 

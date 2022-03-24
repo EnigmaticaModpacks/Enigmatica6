@@ -147,6 +147,13 @@ onEvent('recipes', (event) => {
                 minimumDrain: 0.0,
                 drain: 0.0,
                 id: 'bloodmagic:soulforge/sentientscythe'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:noderouter'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/node_router'
             }
         ]
     };

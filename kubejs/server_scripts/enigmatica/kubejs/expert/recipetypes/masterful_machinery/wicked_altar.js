@@ -140,6 +140,170 @@ onEvent('recipes', (event) => {
             ],
             ticks: 1000,
             id: `${id_prefix}void_amulet`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:componentframeparts', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:gears/osmium', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'tconstruct:ender_slime_crystal', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/utherium', count: 4 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 100,
+            id: `${id_prefix}componentframeparts`
+        },
+        {
+            outputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:itemrouterfilterexact', count: 1 } }
+            ],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:componentframeparts', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'atum:red_stained_crystal_glass_pane', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/arcane_gold', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 100,
+            id: `${id_prefix}itemrouterfilterexact`
+        },
+        {
+            outputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:itemrouterfilteroredict', count: 1 } }
+            ],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:componentframeparts', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'atum:lime_stained_crystal_glass_pane', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:chunks', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 100,
+            id: `${id_prefix}itemrouterfilteroredict`
+        },
+        {
+            outputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:itemrouterfilterenchant', count: 1 } }
+            ],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:componentframeparts', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'atum:green_stained_crystal_glass_pane', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:enchanted_book', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 100,
+            id: `${id_prefix}itemrouterfilterenchant`
+        },
+        {
+            outputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:itemrouterfiltermoditems', count: 1 } }
+            ],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:componentframeparts', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'atum:yellow_stained_crystal_glass_pane', count: 1 }
+                },
+                { type: 'masterfulmachinery:items', data: { item: 'eidolon:enchanted_ash', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 100,
+            id: `${id_prefix}itemrouterfiltermoditems`
+        },
+        {
+            outputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:itemrouterfiltercomposite', count: 1 } }
+            ],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:componentframeparts', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'atum:white_stained_crystal_glass_pane', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/silicon_bronze', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 100,
+            id: `${id_prefix}itemrouterfiltercomposite`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:noderouter', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'upgrade_aquatic:elder_eye', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:spirit_attuned_gem', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:rods/prismarine', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:inlays/arcane_gold', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 50 }
+                }
+            ],
+            ticks: 1000,
+            id: `${id_prefix}noderouter`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:itemroutingnode', count: 2 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'botania:corporea_spark', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'occultism:spirit_attuned_gem', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'architects_palette:moonstone', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 50,
+            id: `${id_prefix}itemroutingnode`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:inputroutingnode', count: 2 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:itemroutingnode', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/lumium', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/fluorite', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 50,
+            id: `${id_prefix}inputroutingnode`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:outputroutingnode', count: 2 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:itemroutingnode', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/signalum', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/fluorite', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                }
+            ],
+            ticks: 50,
+            id: `${id_prefix}outputroutingnode`
         }
     ];
 

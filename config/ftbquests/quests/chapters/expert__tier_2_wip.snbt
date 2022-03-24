@@ -389,16 +389,16 @@
 			x: -1.0d
 			y: -5.0d
 			description: [
-				"A workbench suitable for practitioners at all levels, made from the finest magical materials. "
+				"Historical records show a timeless debate raging amongst scholars dealing with the origins of Nebu and Godshards. There is no definitive answer to the question, but it’s plain that they’re deeply linked and flush with magical energy. "
 				""
-				"While somewhat rare in the overworld, the flax needed to make linen is very commonly found in Atum by breaking Oasis Grass."
+				"Godshards turn up in many magical crafts and obtaining them may seem daunting at first. However, they may be ‘grown’ quite simply by forming a Godforged block, breaking it with a Nebu Hammer, and smelting down the resulting relic in a Godforge using Lava to fuel it. "
 			]
 			dependencies: ["719AFD0C38BE19A2"]
 			id: "4C5CCC780A4B07A7"
 			tasks: [{
 				id: "5B0160F4F724F8F8"
 				type: "item"
-				item: "eidolon:worktable"
+				item: "atum:godforged_block"
 			}]
 		}
 		{
