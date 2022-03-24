@@ -1337,7 +1337,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}miner_marid_irradiated`
         },
         {
-            ritual_type: 'occultism:summon',
+            ritual_type: 'occultism:craft',
             activation_item: 'ars_nouveau:summon_focus',
             pentacle_id: 'occultism:craft_afrit',
             duration: 60,
@@ -1366,7 +1366,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}fire_focus`
         },
         {
-            ritual_type: 'occultism:summon',
+            ritual_type: 'occultism:craft',
             activation_item: 'ars_nouveau:summon_focus',
             pentacle_id: 'occultism:craft_afrit',
             duration: 60,
@@ -1395,7 +1395,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}water_focus`
         },
         {
-            ritual_type: 'occultism:summon',
+            ritual_type: 'occultism:craft',
             activation_item: 'ars_nouveau:summon_focus',
             pentacle_id: 'occultism:craft_afrit',
             duration: 60,
@@ -1424,7 +1424,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}air_focus`
         },
         {
-            ritual_type: 'occultism:summon',
+            ritual_type: 'occultism:craft',
             activation_item: 'ars_nouveau:summon_focus',
             pentacle_id: 'occultism:craft_afrit',
             duration: 60,
@@ -1453,7 +1453,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}earth_focus`
         },
         {
-            ritual_type: 'occultism:summon',
+            ritual_type: 'occultism:craft',
             activation_item: 'ars_nouveau:summon_focus',
             pentacle_id: 'occultism:craft_afrit',
             duration: 60,
@@ -1480,6 +1480,21 @@ onEvent('recipes', (event) => {
             ],
             result: 'ars_elemental:necrotic_focus',
             id: `${id_prefix}necrotic_focus`
+        },
+        {
+            ritual_type: 'occultism:craft',
+            activation_item: 'occultism:book_of_binding_bound_foliot',
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 120,
+            ritual_dummy: 'kubejs:craft_masterroutingnode',
+            ingredients: [
+                'eidolon:shadow_gem',
+                'botania:corporea_spark',
+                'architects_palette:moonstone',
+                'botania:corporea_spark'
+            ],
+            result: 'bloodmagic:masterroutingnode',
+            id: `${id_prefix}masterroutingnode`
         }
     ];
 

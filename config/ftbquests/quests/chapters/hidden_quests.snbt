@@ -101,14 +101,20 @@
 			tasks: [{
 				id: "5B43BCA2F385EE07"
 				type: "item"
-				item: "bloodmagic:soulforge"
+				item: {
+					id: "bloodmagic:soulgemlesser"
+					Count: 1b
+					tag: {
+						souls: 256.0d
+					}
+				}
 			}]
 			rewards: [{
 				id: "6D36A253466E98C9"
 				type: "gamestage"
-				title: "Hellfire Forge"
+				title: "Lesser Tartaric Gem"
 				auto: "invisible"
-				stage: "hellfire_forge"
+				stage: "lesser_tartaric_gem"
 			}]
 		}
 		{

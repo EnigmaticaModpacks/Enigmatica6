@@ -46,7 +46,8 @@ onEvent('item.tooltip', (event) => {
                 'eidolon:wooden_brewing_stand',
                 'tanknull:dock',
                 'dankstorage:dock',
-                'engineersdecor:factory_placer'
+                'engineersdecor:factory_placer',
+                'eidolon:worktable'
             ],
             text: [disabledInExpert]
         },

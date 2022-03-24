@@ -217,7 +217,11 @@
 		{
 			x: 5.0d
 			y: 2.0d
-			description: ["Solid fuel compressors are disabled entirely, instead relying on liquid fueled compressors to start."]
+			description: [
+				"Solid fuel compressors are disabled entirely, instead relying on liquid fueled compressors to start."
+				""
+				"Look closely at the recipes involved here. There are multiple paths available, but only one is viable at this stage. "
+			]
 			dependencies: ["67F7E4C19E39F9F3"]
 			id: "6EC89B2EB48331A5"
 			tasks: [

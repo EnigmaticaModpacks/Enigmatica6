@@ -220,6 +220,7 @@ const itemsToHide = [
     'masterfulmachinery:industrial_deuterium_plant_energy_port_energy_output',
     'masterfulmachinery:industrial_deuterium_plant_spinny_port_create_rotation_output',
     'masterfulmachinery:industrial_deuterium_plant_pressure_port_pncr_pressure_output',
+    'masterfulmachinery:wicked_altar_fluid_port_fluids_output',
 
     'mctb:cherry_crafting_table',
     'mctb:dead_crafting_table',
@@ -567,7 +568,14 @@ const recipesToHide = [
     },
     {
         category: 'bloodmagic:alchemytable',
-        recipes_by_id: ['bloodmagic:alchemytable/basic_cutting_fluid_sigil']
+        recipes_by_id: [
+            'bloodmagic:alchemytable/basic_cutting_fluid_sigil',
+            'bloodmagic:alchemytable/component_frame_parts',
+            'bloodmagic:alchemytable/router_filter',
+            'bloodmagic:alchemytable/tag_router_filter',
+            'bloodmagic:alchemytable/enchant_router_filter',
+            'bloodmagic:alchemytable/composite_router_filter'
+        ]
     },
     {
         category: 'bloodmagic:soulforge',
@@ -576,7 +584,11 @@ const recipesToHide = [
             'bloodmagic:soulforge/sentientaxe',
             'bloodmagic:soulforge/sentientpickaxe',
             'bloodmagic:soulforge/sentientshovel',
-            'bloodmagic:soulforge/sentientscythe'
+            'bloodmagic:soulforge/sentientscythe',
+            'bloodmagic:soulforge/node_router',
+            'bloodmagic:soulforge/routing_node',
+            'bloodmagic:soulforge/output_routing_node',
+            'bloodmagic:soulforge/input_routing_node'
         ]
     }
 ];

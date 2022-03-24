@@ -34,23 +34,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}coarse_lapis_lazuli_compound`
         },
         {
-            heated: true,
-            inputs: [
-                '#forge:gems/quartz',
-                '#forge:gems/lapis',
-                '#forge:gems/lapis',
-                '#forge:dusts/redstone',
-                '#forge:dusts/redstone',
-                'eidolon:soul_shard',
-                'eidolon:soul_shard',
-                'eidolon:soul_shard',
-                'eidolon:soul_shard',
-                Fluid.of('bloodmagic:life_essence_fluid', 1000)
-            ],
-            output: 'eidolon:lesser_soul_gem',
-            id: `${id_prefix}lesser_soul_gem`
-        },
-        {
             inputs: [
                 'ars_nouveau:mana_fiber',
                 'ars_nouveau:mana_fiber',

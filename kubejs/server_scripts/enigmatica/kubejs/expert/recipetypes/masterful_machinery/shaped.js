@@ -317,6 +317,49 @@ onEvent('recipes', (event) => {
                 D: '#botania:runes/mana'
             },
             id: `${id_prefix}enigmatic_tree_of_life_mana_port_botania_mana_input`
+        },
+        {
+            output: 'masterfulmachinery:wicked_altar_controller',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'eidolon:polished_wood_pillar',
+                B: 'bloodmagic:blankslate',
+                C: 'minecraft:conduit'
+            },
+            id: `${id_prefix}wicked_altar_controller`
+        },
+        {
+            output: 'masterfulmachinery:wicked_altar_item_port_items_output',
+            pattern: ['ABA', 'BCB', 'ADA'],
+            key: {
+                A: 'eidolon:polished_wood_pillar',
+                B: '#forge:ingots/silicon_bronze',
+                C: 'ironchest:silver_chest',
+                D: 'atum:linen_red'
+            },
+            id: `${id_prefix}wicked_altar_item_port_items_output`
+        },
+        {
+            output: 'masterfulmachinery:wicked_altar_item_port_items_input',
+            pattern: ['ABA', 'BCB', 'ADA'],
+            key: {
+                A: 'eidolon:polished_wood_pillar',
+                B: '#forge:ingots/silicon_bronze',
+                C: 'ironchest:silver_chest',
+                D: 'atum:linen_lime'
+            },
+            id: `${id_prefix}wicked_altar_item_port_items_input`
+        },
+        {
+            output: 'masterfulmachinery:wicked_altar_fluid_port_fluids_input',
+            pattern: ['ABA', 'BCB', 'ADA'],
+            key: {
+                A: 'eidolon:polished_wood_pillar',
+                B: '#forge:ingots/silicon_bronze',
+                C: 'pneumaticcraft:small_tank',
+                D: 'atum:linen_lime'
+            },
+            id: `${id_prefix}wicked_altar_fluid_port_fluids_input`
         }
     ];
 
