@@ -220,6 +220,7 @@ const itemsToHide = [
     'masterfulmachinery:industrial_deuterium_plant_energy_port_energy_output',
     'masterfulmachinery:industrial_deuterium_plant_spinny_port_create_rotation_output',
     'masterfulmachinery:industrial_deuterium_plant_pressure_port_pncr_pressure_output',
+    'masterfulmachinery:wicked_altar_fluid_port_fluids_output',
 
     'mctb:cherry_crafting_table',
     'mctb:dead_crafting_table',
@@ -584,7 +585,10 @@ const recipesToHide = [
             'bloodmagic:soulforge/sentientpickaxe',
             'bloodmagic:soulforge/sentientshovel',
             'bloodmagic:soulforge/sentientscythe',
-            'bloodmagic:soulforge/node_router'
+            'bloodmagic:soulforge/node_router',
+            'bloodmagic:soulforge/routing_node',
+            'bloodmagic:soulforge/output_routing_node',
+            'bloodmagic:soulforge/input_routing_node'
         ]
     }
 ];

@@ -276,7 +276,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemroutingnode`
         },
         {
-            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:inputroutingnode', count: 2 } }],
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:inputroutingnode', count: 1 } }],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:itemroutingnode', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/lumium', count: 1 } },
@@ -291,7 +291,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}inputroutingnode`
         },
         {
-            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:outputroutingnode', count: 2 } }],
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:outputroutingnode', count: 1 } }],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:itemroutingnode', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/signalum', count: 1 } },
