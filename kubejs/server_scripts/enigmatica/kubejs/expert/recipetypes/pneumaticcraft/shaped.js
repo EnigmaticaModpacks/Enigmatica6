@@ -118,11 +118,11 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'pneumaticcraft:small_tank',
-            pattern: ['AAA', 'CBC', 'AAA'],
+            pattern: ['AAA', 'BCB', 'AAA'],
             key: {
-                A: 'pneumaticcraft:reinforced_stone_slab',
+                A: 'create:andesite_alloy',
                 B: '#thermal:glass/hardened',
-                C: 'pneumaticcraft:reinforced_brick_wall'
+                C: 'mekanism:basic_fluid_tank'
             },
             id: 'pneumaticcraft:small_tank'
         },
