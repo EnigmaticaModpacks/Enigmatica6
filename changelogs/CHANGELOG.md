@@ -1,3 +1,90 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.1.0
+
+_Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.1.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.1.0.md)_
+
+
+
+**Changes/Improvements**
+
+- Add BYG and PVJ Cattails to dye recipes [\#4461](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4461) ([MuteTiefling](https://github.com/MuteTiefling))
+- Add Eternal Steak/Beef to Seagull blacklist [\#4472](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4472) ([MuteTiefling](https://github.com/MuteTiefling))
+- Alex's Mobs Seagull - Add Everlasting Beef/Eternal Steak to Seagull Stealing Blocklist [\#4470](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4470)
+- Allow Cherry Chests/Signs to be made from Environmental cherry too [\#4473](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4473) ([MuteTiefling](https://github.com/MuteTiefling))
+- Allow Composter to extract/insert from all sides [\#4496](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4496)
+- \[Expert\] Allow automation to work with Occultism [\#4426](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4426) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Change PNC assembly recipe to use computer craft computer [\#4464](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4464) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[expert\] Clean up a few more unnecessary blocks from the tree of life [\#4411](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4411) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Disable Factory Placer because it doesn't respect Game Stages [\#4460](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4460) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Fix BM Part 2 Gate [\#4466](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4466) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Fix Powah Reactor crafting to work with 'used' blocks [\#4462](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4462) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Increase the warning on the masticator quest [\#4370](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4370) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Remove easy smeltery Pink Slime Ingots [\#4393](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4393) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Remove Eidolon Magic Workbench [\#4482](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4482) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] remove mushrooms from tree of life [\#4409](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4409) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Revert restriction for occultism chalk [\#4375](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4375) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Sequenced Assembly Blocks -\> Items, \[Base\] Remove Rail Melting Recipes [\#4435](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4435) ([TemperedFool](https://github.com/TemperedFool))
+- \[Expert\] Tier 2 Magic dependency fixes [\#4384](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4384) ([MuteTiefling](https://github.com/MuteTiefling))
+- De-jankify foundry generation in rivers [\#4381](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4381) ([theboo](https://github.com/theboo))
+- Disable Flies spawning outside of swamps [\#4459](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4459) ([MuteTiefling](https://github.com/MuteTiefling))
+- Disable Melting Golden Apples [\#4471](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4471) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix for Twig/Pinecone recipes eating shears [\#4405](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4405) ([MuteTiefling](https://github.com/MuteTiefling))
+- Implement BuildingGadgets blacklists for IE machines, as well as blocks with restrictions in Expert. [\#4475](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4475) ([MuteTiefling](https://github.com/MuteTiefling))
+- Move ID storage networks up a tiny bit earlier [\#4424](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4424) ([theboo](https://github.com/theboo))
+- New Crowdin updates [\#4363](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4363) ([NillerMedDild](https://github.com/NillerMedDild))
+- New Crowdin updates [\#4450](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4450) ([NillerMedDild](https://github.com/NillerMedDild))
+- New Tips [\#4498](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4498) ([Rodg88](https://github.com/Rodg88))
+- Quest fixes - allow any mechanical piston in Create, fix typo in Expert quests [\#4463](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4463) ([MuteTiefling](https://github.com/MuteTiefling))
+- Quest for: Create - Mechanical Piston [\#4438](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4438)
+- Reload powah and randompatches configs on mode change [\#4443](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4443) ([Darkere](https://github.com/Darkere))
+- Remove Reinforced Stone from PNC Basic Tank [\#4492](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4492) ([TemperedFool](https://github.com/TemperedFool))
+- Think of the Bees! [\#4378](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4378) ([TemperedFool](https://github.com/TemperedFool))
+- Update base Blood Magic altar quest text. [\#4398](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4398) ([Rodg88](https://github.com/Rodg88))
+
+**Bug Fixes**
+
+- 2 types of cattails which don't craft into the same thing [\#4455](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4455)
+- Auto-crafting jetpack doesn't work [\#4394](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4394)
+- \(Expert\) Reactor crafting not taking NBT data into account [\#4453](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4453)
+- Blacklist arcane pedestal from tinkers crafting station inventory [\#4447](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4447) ([theboo](https://github.com/theboo))
+- Blood magic part two gate quest requirements make no sense [\#4457](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4457)
+- Can't start server of E6:E 1.0.0 , that use world from expert mode 0.5.26 [\#4379](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4379)
+- Cherry Planks from the Environmental mod are unable to be used to craft a Cherry Chest [\#4419](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4419)
+- Crafting Station + Arcane Pedestal Duplication Glitch [\#4444](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4444)
+- Crash when moving server in server list up [\#4412](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4412)
+- Disables flying structures and infested temple [\#4487](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4487) ([theboo](https://github.com/theboo))
+- E6 is showing E6E main menu [\#4367](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4367)
+- E6E Occultism Automation [\#4425](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4425)
+- Easy pink slime ingots \[Expert\] [\#4390](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4390)
+- Enigmatic Tree of Life spawning vegetation blocks that get destroyed when copy-pasting the structure [\#4406](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4406)
+- Expert - possible repeated boss fight required to progress through adept magic chapter [\#4477](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4477)
+- fix typo in honey compacting script [\#4374](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4374) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix typos in BG blacklist [\#4480](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4480) ([MuteTiefling](https://github.com/MuteTiefling))
+- Gold duplication using powered rails + smeltery [\#4433](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4433)
+- I-Chisel does not function \(Expert\) [\#4478](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4478)
+- Immersive Engineering Copper Ore has generated in world [\#4355](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4355)
+- Item not visible while in a mechanical crafter slot [\#4391](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4391)
+- Partial coke & blast bricks can be placed, wiping NBT [\#4423](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4423)
+- Passthrough Signs mod not compatiable with Quark edit sign. [\#4421](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4421)
+- PNC:R Refinery crash when \> 2 outputs are present in a setup producing only 2 products [\#4485](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4485)
+- RFTools Monitor Crash [\#4028](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4028)
+- Server - Locking when structures generate above build height [\#4479](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4479)
+- Shears are destroyed when making twigs from leaf [\#4387](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4387)
+- Smooth Boot giving server connection issues.  [\#4467](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4467)
+- World Not Loading [\#4452](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4452)
+
+
+
+**Mod Removals**
+
+- SmoothBoot [Forge]
+- Starlight X Create *(for reals this time)*
+
+
+
+---
+
+
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.0.0
 
 _Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.0.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.0.0.md)_
@@ -35,7 +122,6 @@ _Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 - [Notes](https://www.curseforge.com/minecraft/mc-mods/notes)
 - [Starlight x Create](https://www.curseforge.com/minecraft/mc-mods/starlight-x-create) 
   - Will be removed again, it was not meant to be added. Woops ^^''
-
 
 **Changes/Improvements**
 
