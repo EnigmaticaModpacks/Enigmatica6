@@ -49,7 +49,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'atum:ectoplasm',
                 B: 'glassential:glass_ghostly',
-                C: 'botania:corporea_block',
+                C: 'botania:corporea_interceptor',
                 D: 'occultism:spirit_attuned_gem'
             },
             id: 'botania:corporea_index'

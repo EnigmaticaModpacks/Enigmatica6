@@ -147,6 +147,41 @@ onEvent('recipes', (event) => {
                 minimumDrain: 0.0,
                 drain: 0.0,
                 id: 'bloodmagic:soulforge/sentientscythe'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:noderouter'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/node_router'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:itemroutingnode'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/routing_node'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:outputroutingnode'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/output_routing_node'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:inputroutingnode'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/input_routing_node'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:masterroutingnode'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/master_routing_node'
             }
         ]
     };

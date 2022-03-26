@@ -354,7 +354,24 @@
 			tasks: [{
 				id: "0000000000000E95"
 				type: "item"
-				item: "eidolon:worktable"
+				title: "Magic Workbench"
+				icon: "eidolon:worktable"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "masterfulmachinery:wicked_altar_controller"
+								Count: 1b
+							}
+							{
+								id: "eidolon:worktable"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0000000000000EC2"

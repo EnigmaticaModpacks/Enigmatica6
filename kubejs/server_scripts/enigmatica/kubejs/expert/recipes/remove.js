@@ -49,6 +49,7 @@ onEvent('recipes', (event) => {
 
         'eidolon:crucible',
         'eidolon:wooden_brewing_stand',
+        'eidolon:worktable',
 
         'farmersdelight:book_from_canvas',
 
@@ -83,6 +84,8 @@ onEvent('recipes', (event) => {
         'integrateddynamics:crafting/logic_director',
         'integrateddynamics:crafting/variable_transformer_output',
         'integrateddynamics:crafting/variable_transformer_input',
+
+        'materialis:smeltery/alloys/molten_pink_slime',
 
         'mekanism:metallurgic_infusing/alloy/reinforced',
         'mekanism:metallurgic_infusing/alloy/atomic',
@@ -174,7 +177,12 @@ onEvent('recipes', (event) => {
         /emendatusenigmatica:alloy_dust/
     ];
 
-    const outputRemovals = ['tiab:timeinabottle', 'minecraft:nautilus_shell', 'bloodmagic:intermediatecuttingfluid'];
+    const outputRemovals = [
+        'tiab:timeinabottle',
+        'minecraft:nautilus_shell',
+        'bloodmagic:intermediatecuttingfluid',
+        'engineersdecor:factory_placer'
+    ];
 
     const patchouli_safe_removals = [
         { output: 'apotheosis:hellshelf', id: 'apotheosis:hellshelf' },

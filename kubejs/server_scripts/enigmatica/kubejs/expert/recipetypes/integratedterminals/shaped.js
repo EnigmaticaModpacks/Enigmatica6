@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
             pattern: ['AB', 'CD', 'AB'],
             key: {
                 A: 'thermal:lumium_glass',
-                B: 'botania:corporea_block',
+                B: 'botania:corporea_funnel',
                 C: 'botania:corporea_index',
                 D: 'integrateddynamics:part_display_panel'
             },

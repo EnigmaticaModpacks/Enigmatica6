@@ -1,82 +1,44 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
-            inputs: [
-                {
-                    tag: 'minecraft:planks',
-                    count: 1,
-                    return_chance: 0
-                }
-            ],
-            fluid: {
-                fluid: 'immersiveengineering:creosote'
-            },
+            inputs: [{ tag: 'minecraft:planks', count: 1, return_chance: 0 }],
+            fluid: { fluid: 'immersiveengineering:creosote' },
             output: {
-                entries: [
-                    {
-                        result: {
-                            item: 'immersiveengineering:treated_wood_horizontal',
-                            count: 1
-                        },
-                        weight: 1
-                    }
-                ],
+                entries: [{ result: { item: 'immersiveengineering:treated_wood_horizontal', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
             consume_fluid: 0.125
         },
         {
-            inputs: [
-                {
-                    tag: 'forge:rods/wooden',
-                    count: 1,
-                    return_chance: 0
-                }
-            ],
-            fluid: {
-                fluid: 'immersiveengineering:creosote'
-            },
+            inputs: [{ tag: 'forge:rods/wooden', count: 1, return_chance: 0 }],
+            fluid: { fluid: 'immersiveengineering:creosote' },
             output: {
-                entries: [
-                    {
-                        result: {
-                            item: 'immersiveengineering:stick_treated',
-                            count: 1
-                        },
-                        weight: 1
-                    }
-                ],
+                entries: [{ result: { item: 'immersiveengineering:stick_treated', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
             consume_fluid: 0.005
         },
         {
-            inputs: [
-                {
-                    tag: 'minecraft:logs_that_burn',
-                    count: 16,
-                    return_chance: 0
-                }
-            ],
-            fluid: {
-                fluid: 'minecraft:water'
-            },
+            inputs: [{ tag: 'minecraft:logs_that_burn', count: 16, return_chance: 0 }],
+            fluid: { fluid: 'minecraft:water' },
             output: {
-                entries: [
-                    {
-                        result: {
-                            item: 'upgrade_aquatic:driftwood_log',
-                            count: 16
-                        },
-                        weight: 1
-                    }
-                ],
+                entries: [{ result: { item: 'upgrade_aquatic:driftwood_log', count: 16 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
             consume_fluid: 0.005
+        },
+        {
+            inputs: [{ item: 'minecraft:rotten_flesh', count: 8, return_chance: 0 }],
+            fluid: { fluid: 'pneumaticcraft:yeast_culture' },
+            output: {
+                entries: [{ result: { item: 'alexsmobs:maggot', count: 32 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 1.0
         }
     ];
 
@@ -145,26 +107,10 @@ onEvent('recipes', (event) => {
     simpleTagRecipes.forEach((recipe) => {
         event.custom({
             type: 'interactio:item_fluid_transform',
-            inputs: [
-                {
-                    tag: recipe.input,
-                    count: 1,
-                    return_chance: 0
-                }
-            ],
-            fluid: {
-                fluid: 'minecraft:water'
-            },
+            inputs: [{ tag: recipe.input, count: 1, return_chance: 0 }],
+            fluid: { fluid: 'minecraft:water' },
             output: {
-                entries: [
-                    {
-                        result: {
-                            item: recipe.output,
-                            count: 1
-                        },
-                        weight: 1
-                    }
-                ],
+                entries: [{ result: { item: recipe.output, count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
@@ -175,26 +121,10 @@ onEvent('recipes', (event) => {
     simpleItemRecipes.forEach((recipe) => {
         event.custom({
             type: 'interactio:item_fluid_transform',
-            inputs: [
-                {
-                    item: recipe.input,
-                    count: 1,
-                    return_chance: 0
-                }
-            ],
-            fluid: {
-                fluid: 'minecraft:water'
-            },
+            inputs: [{ item: recipe.input, count: 1, return_chance: 0 }],
+            fluid: { fluid: 'minecraft:water' },
             output: {
-                entries: [
-                    {
-                        result: {
-                            item: recipe.output,
-                            count: 1
-                        },
-                        weight: 1
-                    }
-                ],
+                entries: [{ result: { item: recipe.output, count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
@@ -206,26 +136,10 @@ onEvent('recipes', (event) => {
         let unrustedItem = rustyItem.replace('rusty_', '');
         event.custom({
             type: 'interactio:item_fluid_transform',
-            inputs: [
-                {
-                    item: unrustedItem,
-                    count: 1,
-                    return_chance: 0
-                }
-            ],
-            fluid: {
-                fluid: 'minecraft:water'
-            },
+            inputs: [{ item: unrustedItem, count: 1, return_chance: 0 }],
+            fluid: { fluid: 'minecraft:water' },
             output: {
-                entries: [
-                    {
-                        result: {
-                            item: rustyItem,
-                            count: 1
-                        },
-                        weight: 1
-                    }
-                ],
+                entries: [{ result: { item: rustyItem, count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },

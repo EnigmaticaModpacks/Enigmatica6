@@ -2394,6 +2394,118 @@ onEvent('recipes', (event) => {
             reagent: 'thermal:satchel',
             output: 'naturesaura:ender_access',
             id: `${id_prefix}ender_access`
+        },
+        {
+            inputs: [
+                '#forge:inlays/pewter',
+                'eidolon:lesser_soul_gem',
+                '#forge:inlays/pewter',
+                'quark:soul_bead',
+                'quark:soul_bead',
+                '#forge:inlays/pewter',
+                'quark:soul_bead',
+                '#forge:inlays/pewter'
+            ],
+            sourceCost: 10000,
+            reagent: Item.of('minecraft:chainmail_chestplate', '{Damage:0}').weakNBT(),
+            output: 'eidolon:warded_mail',
+            id: `${id_prefix}warded_mail`
+        },
+        {
+            inputs: [
+                '#forge:plates/lead',
+                'atum:nuit_godshard',
+                '#forge:plates/lead',
+                '#forge:plates/lead',
+                '#forge:plates/lead',
+                'eidolon:soul_shard',
+                'ars_nouveau:glyph_shield',
+                'eidolon:soul_shard'
+            ],
+            sourceCost: 500,
+            reagent: 'eidolon:basic_belt',
+            output: 'eidolon:mind_shielding_plate',
+            id: `${id_prefix}mind_shielding_plate`
+        },
+        {
+            inputs: [
+                'eidolon:soul_shard',
+                '#forge:gems/apatite',
+                'eidolon:soul_shard',
+                '#forge:rods/basalz',
+                '#forge:rods/basalz',
+                '#forge:inlays/arcane_gold',
+                'ars_nouveau:glyph_dampen',
+                '#forge:inlays/arcane_gold'
+            ],
+            sourceCost: 500,
+            reagent: 'eidolon:basic_belt',
+            output: 'eidolon:resolute_belt',
+            id: `${id_prefix}resolute_belt`
+        },
+        {
+            inputs: [
+                'eidolon:soul_shard',
+                'quark:bottled_cloud',
+                'eidolon:soul_shard',
+                '#forge:rods/blitz',
+                '#forge:rods/blitz',
+                '#forge:inlays/pewter',
+                'ars_nouveau:glyph_slowfall',
+                '#forge:inlays/pewter'
+            ],
+            sourceCost: 500,
+            reagent: 'eidolon:basic_belt',
+            output: 'eidolon:gravity_belt',
+            id: `${id_prefix}gravity_belt`
+        },
+        {
+            inputs: [
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave'
+            ],
+            sourceCost: 3000,
+            reagent: 'atum:wanderer_boots',
+            output: 'eidolon:warlock_boots',
+            id: `${id_prefix}warlock_boots`
+        },
+        {
+            inputs: [
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave'
+            ],
+            sourceCost: 3000,
+            reagent: 'atum:wanderer_chest',
+            output: 'eidolon:warlock_cloak',
+            id: `${id_prefix}warlock_cloak`
+        },
+        {
+            inputs: [
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:wicked_weave',
+                'eidolon:soul_shard',
+                'eidolon:wicked_weave'
+            ],
+            sourceCost: 3000,
+            reagent: 'atum:wanderer_helmet',
+            output: 'eidolon:warlock_hat',
+            id: `${id_prefix}warlock_hat`
         }
     ];
 

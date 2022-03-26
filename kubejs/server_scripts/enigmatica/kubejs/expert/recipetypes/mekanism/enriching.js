@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
         return;
     }
 
-    const id_prefix = 'enigmatica:base/mekanism/enriching/';
+    const id_prefix = 'enigmatica:expert/mekanism/enriching/';
     const recipes = [
         {
             input: '#forge:slimeball/earth',

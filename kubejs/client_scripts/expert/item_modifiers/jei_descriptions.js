@@ -50,7 +50,12 @@ onEvent('jei.information', (event) => {
         'integrateddynamics:coal_generator',
         /darkutils:export_plate/,
         /integrateddynamics:energy_battery/,
-        /powah:energy_cable_/
+        /powah:energy_cable_/,
+        'eidolon:crucible',
+        'eidolon:wooden_brewing_stand',
+        'tanknull:dock',
+        'dankstorage:dock',
+        'engineersdecor:factory_placer'
     ];
     disabledItems.forEach((item) => {
         event.add(

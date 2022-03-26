@@ -160,6 +160,15 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             id: `${id_prefix}firmament`
+        },
+        {
+            inputs: ['eidolon:soul_shard', 'minecraft:polished_andesite', '#forge:inlays/pewter'],
+            output: {
+                entries: [{ result: { item: 'eidolon:stone_altar', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: `${id_prefix}stone_altar`
         }
     ];
 

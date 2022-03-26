@@ -102,7 +102,7 @@
 				""
 				"It also serves as the basis for fueling your Soul Network, an ethereal web of souls that may be tapped into from anywhere."
 				""
-				"More fundamentally, the Altar will serve as a receptacle for transmuting objects with stored LP. To begin filling it, use the provided knife near it to drain some of your own blood into the Altar. "
+				"More fundamentally, the Altar will serve as a receptacle for transmuting objects with stored LP. To begin filling it, use a Sacrificial Knife near it to drain some of your own blood into the Altar. Another option is using the Dagger of Sacrifice to sacrifice mobs instead of your own health. "
 				""
 				"Once it is full, right click an item into the Altar to begin the transmutation process. Red particles mean the craft is proceeding normally, whereas grey particles mean there's not enough LP and the craft is losing progress. "
 				""
@@ -942,19 +942,6 @@
 					type: "item"
 					item: "bloodmagic:itemrouterfilterexact"
 					count: 2
-				}
-				{
-					id: "24C9A479B52447B3"
-					type: "item"
-					item: {
-						id: "bloodmagic:noderouter"
-						Count: 1b
-						tag: {
-							zCoord: 0
-							yCoord: 0
-							xCoord: 0
-						}
-					}
 				}
 			]
 		}

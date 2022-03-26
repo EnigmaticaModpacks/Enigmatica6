@@ -22,7 +22,7 @@ loot_table_blacklist = ["atum:chests/pharaoh"]
 report_unresolved_tables = false
 #prevent the destruction of Lootr chests except while sneaking in creative mode
 disable_break = false
-#how long (in ticks) before the contents of a loot container will be refresh [default 20 minutes = 20 * 60 * 20]
+#how long (in ticks) a decaying loot containers should take to decay [default 5 minutes = 5 * 60 * 20]
 #Range: > 0
 decay_value = 6000
 #list of loot tables which will decay [default blank, meaning no chests decay, in the format of 'modid:loot_table']
@@ -43,4 +43,7 @@ refresh_modids = []
 refresh_dimensions = []
 #overriding refresh_loot_tables, refresh_modids and refresh_dimensions: all chests will refresh after being opened for the first time
 refresh_all = false
+#how long (in ticks) before the contents of a loot container will be refresh [default 20 minutes = 20 * 60 * 20]
+#Range: > 0
+refresh_value = 24000
 

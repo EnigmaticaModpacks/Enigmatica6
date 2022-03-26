@@ -624,6 +624,21 @@ onEvent('recipes', (event) => {
             output: 'eidolon:warped_sprouts',
             count: 2,
             id: `${id_prefix}warped_sprouts`
+        },
+        {
+            inputs: [
+                'upgrade_aquatic:elder_guardian_spine',
+                'upgrade_aquatic:elder_guardian_spine',
+                'upgrade_aquatic:elder_guardian_spine',
+                '#forge:inlays/arcane_gold',
+                '#forge:gems/aquamarine',
+                'minecraft:heart_of_the_sea',
+                '#forge:gems/aquamarine',
+                'eidolon:unholy_symbol'
+            ],
+            output: 'eidolon:unholy_effigy',
+            count: 1,
+            id: `${id_prefix}unholy_effigy`
         }
     ];
 

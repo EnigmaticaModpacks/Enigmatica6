@@ -107,7 +107,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'ars_nouveau:novice_spell_book',
                 B: 'atum:isis_godshard',
-                C: 'eidolon:worktable',
+                C: 'eidolon:stone_altar',
                 D: 'minecraft:crying_obsidian',
                 E: 'quark:diamond_heart'
             },

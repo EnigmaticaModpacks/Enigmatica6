@@ -402,7 +402,7 @@
 
 		["When Configurations Arise"."Haunted Structures"."Infested Temple Spawning Settings"]
 			#Whether Infested Temples generate on your worlds or not.
-			infestedTempleGenerates = true
+			infestedTempleGenerates = false
 			#Maximum separation between Infested Temples (in chunks).
 			#Range: 0 ~ 1000000
 			infestedTempleSpacing = 140
@@ -431,7 +431,7 @@
 			plagueAsylumSeparation = 200
 			#Number of Jigsaw iterations when generating a Plague Asylum.
 			#Range: 0 ~ 1000000
-			plagueAsylumSize = 35
+			plagueAsylumSize = 20
 			#Whether Plague Asylums adapt the terrain around them or not.
 			plagueAsylumTransformsTerrain = false
 			#The point in which Plague Asylums will start spawning. This is based around X = 0, Z = 0.
@@ -444,7 +444,7 @@
 
 		["When Configurations Arise"."Eerie Structures"."Heavenly Rider Spawning Settings"]
 			#Whether Heavenly Riders generate on your worlds or not.
-			heavenlyRiderGenerates = true
+			heavenlyRiderGenerates = false
 			#Maximum separation between Heavenly Riders (in chunks).
 			#Range: 0 ~ 1000000
 			heavenlyRiderSpacing = 180
@@ -464,7 +464,7 @@
 
 		["When Configurations Arise"."Eerie Structures"."Heavenly Conqueror Spawning Settings"]
 			#Whether Heavenly Conquerors generate on your worlds or not.
-			heavenlyConquerorGenerates = true
+			heavenlyConquerorGenerates = false
 			#Maximum separation between Heavenly Conquerors (in chunks).
 			#Range: 0 ~ 1000000
 			heavenlyConquerorSpacing = 230
@@ -484,7 +484,7 @@
 
 		["When Configurations Arise"."Eerie Structures"."Heavenly Challenger Spawning Settings"]
 			#Whether Heavenly Challengers generate on your worlds or not.
-			heavenlyChallengerGenerates = true
+			heavenlyChallengerGenerates = false
 			#Maximum separation between Heavenly Challengers (in chunks).
 			#Range: 0 ~ 1000000
 			heavenlyChallengerSpacing = 340
@@ -566,18 +566,18 @@
 
 		["When Configurations Arise"."Underworld Structures"."Foundry Spawning Settings"]
 			#Whether Foundries generate on your worlds or not.
-			foundryGenerates = false
+			foundryGenerates = true
 			#Maximum separation between Foundries (in chunks).
 			#Range: 0 ~ 1000000
 			foundrySpacing = 120
 			#Minimum spacing between Foundries (in chunks).
 			#Range: 0 ~ 1000000
-			foundrySeparation = 60
+			foundrySeparation = 40
 			#Number of Jigsaw iterations when generating an Foundry.
 			#Range: 0 ~ 1000000
 			foundrySize = 20
 			#Whether Foundries adapt the terrain around them or not.
-			foundryTransformsTerrain = false
+			foundryTransformsTerrain = true
 			#The point in which Foundries will start spawning. This is based around X = 0, Z = 0.
 			#Range: 0 ~ 1000000
 			foundrySpawnpointSeparation = 1

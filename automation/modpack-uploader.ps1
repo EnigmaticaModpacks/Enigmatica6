@@ -417,6 +417,9 @@ if ($uploadExpertMode) {
     $SERVER_SETUP_CONFIG_PATH = "$SERVER_FILES_FOLDER/server-setup-config.yaml"
     $MODPACK_NAME = "Enigmatica6Expert"
     $CLIENT_NAME = "Enigmatica6Expert"
+    $CLIENT_ZIP_NAME = "$CLIENT_NAME-$MODPACK_VERSION"
+    $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
+    $LAST_MODPACK_ZIP_NAME = "$CLIENT_NAME-$LAST_MODPACK_VERSION"
     $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Expert $MODPACK_VERSION"
     $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Expert Server $MODPACK_VERSION"
 

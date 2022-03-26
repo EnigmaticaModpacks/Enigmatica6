@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/astralsorcery/block_transmutation';
     const recipes = [
         {
-            input: { block: 'eidolon:worktable' },
+            input: { block: 'atum:godforged_block' },
             output: { block: 'astralsorcery:altar_discovery' },
             starlight: 60,
             id: 'astralsorcery:block_transmutation/craftingtable_altar'
