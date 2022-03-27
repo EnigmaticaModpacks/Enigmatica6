@@ -293,7 +293,23 @@
 			tasks: [{
 				id: "0CDA65B3EB419AE4"
 				type: "item"
-				item: "kubejs:superheated_steel_ingot"
+				title: "Superheated Steel"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "kubejs:superheated_steel_ingot"
+								Count: 1b
+							}
+							{
+								id: "kubejs:superheated_steel_block"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		}
 		{
@@ -305,7 +321,23 @@
 			tasks: [{
 				id: "1B2F44B4F78173E4"
 				type: "item"
-				item: "kubejs:hot_compressed_iron_ingot"
+				title: "Hot Compressed Iron"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "kubejs:hot_compressed_iron_ingot"
+								Count: 1b
+							}
+							{
+								id: "kubejs:hot_compressed_iron_block"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		}
 		{
