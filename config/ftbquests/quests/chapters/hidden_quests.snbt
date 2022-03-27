@@ -156,10 +156,32 @@
 				id: "2CAEC5249040770D"
 				type: "item"
 				item: {
-					id: "bloodmagic:soulgemlesser"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						souls: 256.0d
+						items: [
+							{
+								id: "bloodmagic:soulgemlesser"
+								Count: 1b
+								tag: {
+									souls: 256.0d
+								}
+							}
+							{
+								id: "bloodmagic:soulgemcommon"
+								Count: 1b
+								tag: {
+									souls: 1024.0d
+								}
+							}
+							{
+								id: "bloodmagic:soulgemgreater"
+								Count: 1b
+								tag: {
+									souls: 4096.0d
+								}
+							}
+						]
 					}
 				}
 			}]
