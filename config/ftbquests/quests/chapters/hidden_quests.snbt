@@ -95,29 +95,6 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: -5.0d
-			id: "38F3D549DAFF2CD0"
-			tasks: [{
-				id: "5B43BCA2F385EE07"
-				type: "item"
-				item: {
-					id: "bloodmagic:soulgemlesser"
-					Count: 1b
-					tag: {
-						souls: 256.0d
-					}
-				}
-			}]
-			rewards: [{
-				id: "6D36A253466E98C9"
-				type: "gamestage"
-				title: "Lesser Tartaric Gem"
-				auto: "invisible"
-				stage: "lesser_tartaric_gem"
-			}]
-		}
-		{
 			x: -7.0d
 			y: -5.0d
 			id: "7F501A95E6E9C7A6"
@@ -169,6 +146,28 @@
 				type: "gamestage"
 				auto: "invisible"
 				stage: "heavy_machinery_schematics"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			id: "0D3EFC571F771C0B"
+			tasks: [{
+				id: "2CAEC5249040770D"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemlesser"
+					Count: 1b
+					tag: {
+						souls: 256.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "7CBA6F3356BEE33B"
+				type: "gamestage"
+				auto: "invisible"
+				stage: "lesser_tartaric_gem"
 			}]
 		}
 	]
