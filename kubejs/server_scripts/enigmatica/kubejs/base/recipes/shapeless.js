@@ -419,6 +419,27 @@ onEvent('recipes', (event) => {
                                 Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"The End for Dummies"}]}'
                             }
                         }
+                    },
+                    littlelogistics: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Little Logistics Guide' },
+                            'patchouli:book': 'littlelogistics:guide',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Little Logistics Guide"}]}'
+                            }
+                        }
+                    },
+                    tconstruct: {
+                        id: 'tconstruct:encyclopedia',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Encyclopedia of Tinkering' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Encyclopedia of Tinkering"}]}'
+                            }
+                        }
                     }
                 }
             }),
