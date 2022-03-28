@@ -182,7 +182,7 @@ onEvent('recipes', (event) => {
             pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
             key: {
                 A: 'prettypipes:pipe',
-                B: 'computercraft:computer_normal',
+                B: 'computercraft:monitor_normal',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'pneumaticcraft:reinforced_stone_slab',
                 E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
