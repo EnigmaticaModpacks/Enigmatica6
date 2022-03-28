@@ -197,7 +197,7 @@ onEvent('server.datapack.high_priority', (event) => {
                         functions: [
                             {
                                 function: 'set_nbt',
-                                tag: `{Enchantments:[{lvl:1,id:\"minecraft:infinity\"}],display:{Name:\"{\\\"text\\\":\\\"#MLG-YOLO\\\"}\"}}`
+                                tag: `{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:'{"text":"#MLG-YOLO"}'}}`
                             }
                         ]
                     }
