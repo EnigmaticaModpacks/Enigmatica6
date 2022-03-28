@@ -66,7 +66,7 @@ onEvent('recipes', (event) => {
             pattern: ['BBB', 'ACA', 'BBB'],
             key: {
                 A: 'create:andesite_alloy',
-                B: 'minecraft:stone_slab',
+                B: '#enigmatica:crafting_slabs',
                 C: 'minecraft:comparator'
             },
             id: 'minecraft:observer'
