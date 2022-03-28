@@ -395,5 +395,22 @@
 				item: "masterfulmachinery:advanced_assembly_table_controller"
 			}]
 		}
+		{
+			x: 2.5d
+			y: 9.0d
+			shape: "gear"
+			description: [
+				"Though based on simple technologies, this massive machine can churn out industrial quantities of Deuterium quickly enough to meet the needs of a Fusion Reactor.  "
+				""
+				"Note: This multiblock expects water underneath it and is best built as an offshore platform. Be wary of kelp and other plant life, as its presence will break the structure "
+			]
+			dependencies: ["16DE48989A21D643"]
+			id: "5E61BE9DA7DA1FEC"
+			tasks: [{
+				id: "621697B1EC42D23F"
+				type: "item"
+				item: "masterfulmachinery:industrial_deuterium_plant_controller"
+			}]
+		}
 	]
 }
