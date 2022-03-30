@@ -747,7 +747,7 @@ const treeRegistry = [
                 trunk: 'architects_palette:twisted_log',
                 leaf: 'architects_palette:twisted_leaves',
                 substrate: 'dirt',
-                sap: 'thermal:resin',
+                sap: 'tconstruct:blood',
                 rate: { living: 25, dead: 4 }
             },
             {
@@ -1105,7 +1105,7 @@ const treeRegistry = [
                 extraDecoration: 'undergarden:blood_mushroom_globule',
                 substrate: 'deepturf',
                 sap: 'tconstruct:blood',
-                rate: { living: 25, dead: 4 }
+                rate: { living: 0, dead: 4 }
             },
 
             {
@@ -1174,7 +1174,7 @@ const treeRegistry = [
                 fruit: 'tconstruct:ichor_slime_ball',
                 substrate: 'slimy_dirt',
                 sap: 'tconstruct:blood',
-                rate: { living: 25, dead: 4 }
+                rate: { living: 0, dead: 4 }
             }
         ]
     }

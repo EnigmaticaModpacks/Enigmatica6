@@ -116,12 +116,12 @@ onEvent('recipes', (event) => {
             pattern: ['ABBBA', 'ACDCA', 'EFGFE', 'HIJIH', 'HHKHH'],
             key: {
                 A: 'thermal:hazmat_fabric',
-                B: 'powah:capacitor_nitro',
+                B: Item.of('powah:capacitor_nitro').ignoreNBT(),
                 C: 'pneumaticcraft:turbine_rotor',
                 D: 'mekanism:basic_control_circuit',
                 E: 'pneumaticcraft:advanced_pressure_tube',
                 F: '#forge:gears/compressed_iron',
-                G: 'powah:thermo_generator_nitro',
+                G: Item.of('powah:thermo_generator_nitro').ignoreNBT(),
                 H: 'fluxnetworks:flux_block',
                 I: 'supplementaries:bellows',
                 J: 'thermal:upgrade_augment_3',
@@ -137,7 +137,7 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:drill_bit_diamond',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: 'pneumaticcraft:pneumatic_dynamo'
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
             },
             id: `${id_prefix}assembly_drill`
         },
@@ -149,7 +149,7 @@ onEvent('recipes', (event) => {
                 B: '#powah:energizing_rod',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: 'pneumaticcraft:pneumatic_dynamo'
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
             },
             id: `${id_prefix}assembly_laser`
         },
@@ -161,7 +161,7 @@ onEvent('recipes', (event) => {
                 B: 'create:brass_hand',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: 'pneumaticcraft:pneumatic_dynamo'
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
             },
             id: `${id_prefix}assembly_io_unit_import`
         },
@@ -173,7 +173,7 @@ onEvent('recipes', (event) => {
                 B: 'create:brass_hand',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: 'pneumaticcraft:pneumatic_dynamo'
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
             },
             id: `${id_prefix}assembly_io_unit_export`
         },
@@ -182,10 +182,10 @@ onEvent('recipes', (event) => {
             pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
             key: {
                 A: 'prettypipes:pipe',
-                B: 'computercraft:computer_normal',
+                B: 'computercraft:monitor_normal',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: 'pneumaticcraft:pneumatic_dynamo'
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
             },
             id: `${id_prefix}assembly_controller`
         },
@@ -206,7 +206,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:pressure_chamber_wall',
                 B: 'pneumaticcraft:advanced_pressure_tube',
-                C: 'powah:capacitor_blazing',
+                C: Item.of('powah:capacitor_blazing').ignoreNBT(),
                 D: 'pneumaticcraft:omnidirectional_hopper',
                 E: 'pneumaticcraft:printed_circuit_board',
                 F: '#industrialforegoing:machine_frame/supreme',
@@ -309,7 +309,7 @@ onEvent('recipes', (event) => {
                 C: '#xnet:cables',
                 D: '#mekanism:alloys/reinforced',
                 E: 'rftoolscontrol:node',
-                F: 'rftoolsbase:tablet',
+                F: Item.of('rftoolsbase:tablet').ignoreNBT(),
                 G: '#industrialforegoing:machine_frame/advanced'
             },
             id: 'mekanismgenerators:rotational_complex'
@@ -322,11 +322,11 @@ onEvent('recipes', (event) => {
                 B: '#xnet:cables',
                 C: 'mekanismgenerators:fusion_reactor_frame',
                 D: '#xnet:advanced_connectors',
-                E: 'mekanism:ultimate_chemical_tank',
+                E: Item.of('mekanism:ultimate_chemical_tank').ignoreNBT(),
                 F: 'rftoolsutility:environmental_controller',
                 G: '#forge:circuits/ultimate',
-                H: 'mekanism:ultimate_fluid_tank',
-                I: 'rftoolsbase:tablet'
+                H: Item.of('mekanism:ultimate_fluid_tank').ignoreNBT(),
+                I: Item.of('rftoolsbase:tablet').ignoreNBT()
             },
             id: 'mekanismgenerators:reactor/controller'
         },
@@ -337,7 +337,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:sheetmetals/steel',
                 B: 'pneumaticcraft:smart_chest',
                 C: 'integrateddynamics:part_display_panel',
-                D: 'rftoolsbase:tablet',
+                D: Item.of('rftoolsbase:tablet').ignoreNBT(),
                 E: 'integratedtunnels:part_importer_energy',
                 F: 'rftoolsutility:matter_transmitter',
                 G: 'mekanism:robit',
@@ -357,7 +357,7 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:infused_diamond',
                 F: 'industrialforegoing:laser_lens2',
                 G: 'thermal:upgrade_augment_2',
-                H: 'immersiveengineering:wooden_grip'
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
             },
             id: 'mininggadgets:mininggadget_simple'
         },
@@ -372,7 +372,7 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:infused_diamond',
                 F: 'industrialforegoing:laser_lens6',
                 G: 'thermal:upgrade_augment_2',
-                H: 'immersiveengineering:wooden_grip'
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
             },
             id: 'mininggadgets:mininggadget_fancy'
         },
@@ -387,7 +387,7 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:infused_diamond',
                 F: 'industrialforegoing:laser_lens3',
                 G: 'thermal:upgrade_augment_2',
-                H: 'immersiveengineering:wooden_grip'
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
             },
             id: 'mininggadgets:mininggadget'
         },
@@ -400,7 +400,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:hdpe_sheet',
                 D: 'betterendforge:leather_stripe',
                 E: 'create:precision_mechanism',
-                F: 'thermal:flux_capacitor',
+                F: Item.of('thermal:flux_capacitor').ignoreNBT(),
                 G: 'mekanism:hdpe_stick'
             },
             id: 'thermal:flux_saw'
@@ -414,7 +414,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:hdpe_sheet',
                 D: 'betterendforge:leather_stripe',
                 E: 'create:precision_mechanism',
-                F: 'thermal:flux_capacitor',
+                F: Item.of('thermal:flux_capacitor').ignoreNBT(),
                 G: 'mekanism:hdpe_stick'
             },
             id: 'thermal:flux_drill'
@@ -440,13 +440,13 @@ onEvent('recipes', (event) => {
             pattern: ['  A ', 'BCDE', ' FGH'],
             key: {
                 A: '#forge:plates/steel',
-                B: 'immersiveengineering:gunpart_barrel',
-                C: 'immersiveengineering:gunpart_drum',
+                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
+                C: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
                 D: 'create:precision_mechanism',
-                E: 'immersiveengineering:gunpart_hammer',
+                E: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
                 F: '#forge:treated_wood_slab',
                 G: '#forge:nuggets/steel',
-                H: 'immersiveengineering:wooden_grip'
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
             },
             id: 'gunswithoutroses:iron_gun'
         },
@@ -455,13 +455,13 @@ onEvent('recipes', (event) => {
             pattern: ['  A ', 'BCDE', ' FGH'],
             key: {
                 A: '#forge:plates/gold',
-                B: 'immersiveengineering:gunpart_barrel',
-                C: 'immersiveengineering:gunpart_drum',
+                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
+                C: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
                 D: 'create:precision_mechanism',
-                E: 'immersiveengineering:gunpart_hammer',
+                E: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
                 F: '#forge:treated_wood_slab',
                 G: '#forge:nuggets/steel',
-                H: 'immersiveengineering:wooden_grip'
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
             },
             id: 'gunswithoutroses:gold_gun'
         },
@@ -472,11 +472,11 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/steel',
                 B: '#forge:plates/diamond',
                 C: 'pneumaticcraft:cannon_barrel',
-                D: 'immersiveengineering:gunpart_hammer',
+                D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
                 E: 'create:precision_mechanism',
                 F: '#forge:treated_wood',
                 G: '#forge:nuggets/steel',
-                H: 'immersiveengineering:wooden_grip',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
                 I: '#forge:wires/steel'
             },
             id: 'gunswithoutroses:diamond_shotgun'
@@ -487,12 +487,12 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/diamond',
                 B: 'immersiveengineering:toolupgrade_railgun_scope',
-                C: 'immersiveengineering:gunpart_barrel',
-                D: 'immersiveengineering:gunpart_hammer',
+                C: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
+                D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
                 E: 'create:precision_mechanism',
                 F: '#forge:treated_wood',
                 G: '#forge:nuggets/steel',
-                H: 'immersiveengineering:wooden_grip',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
                 I: '#forge:plates/steel'
             },
             id: 'gunswithoutroses:diamond_sniper'
@@ -502,16 +502,16 @@ onEvent('recipes', (event) => {
             pattern: ['   AAA ', 'BBBCDCE', 'BBBFGHE', 'III JK '],
             key: {
                 A: '#forge:inlays/pewter',
-                B: 'immersiveengineering:gunpart_barrel',
+                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
                 C: 'create:encased_chain_drive',
                 D: 'create:adjustable_chain_gearshift',
                 E: '#forge:treated_wood',
-                F: 'immersiveengineering:gunpart_drum',
+                F: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
                 G: 'create:precision_mechanism',
                 H: '#forge:gears/steel',
                 I: '#forge:wires/steel',
                 J: '#forge:nuggets/steel',
-                K: 'immersiveengineering:wooden_grip'
+                K: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
             },
             id: 'gunswithoutroses:diamond_gatling'
         },
@@ -521,12 +521,12 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:inlays/arcane_gold',
                 B: 'meetyourfight:phantoplasm',
-                C: 'immersiveengineering:gunpart_barrel',
-                D: 'immersiveengineering:gunpart_hammer',
+                C: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
+                D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
                 E: 'create:precision_mechanism',
                 F: '#forge:treated_wood',
                 G: '#forge:nuggets/steel',
-                H: 'immersiveengineering:wooden_grip',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
                 I: '#forge:plates/electrum'
             },
             id: 'meetyourfight:phantasmal_rifle'
@@ -536,16 +536,16 @@ onEvent('recipes', (event) => {
             pattern: ['   AAA ', 'BBBCDCE', 'BBBFGHE', 'ILI JK '],
             key: {
                 A: '#forge:inlays/pewter',
-                B: 'immersiveengineering:gunpart_barrel',
+                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
                 C: 'create:encased_chain_drive',
                 D: 'create:adjustable_chain_gearshift',
                 E: '#forge:treated_wood',
-                F: 'immersiveengineering:gunpart_drum',
+                F: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
                 G: 'create:precision_mechanism',
                 H: '#forge:gears/enderium',
                 I: '#forge:wires/steel',
                 J: '#forge:nuggets/steel',
-                K: 'immersiveengineering:wooden_grip',
+                K: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
                 L: 'meetyourfight:fortunes_favor'
             },
             id: 'meetyourfight:cocktail_shotgun'
@@ -573,7 +573,7 @@ onEvent('recipes', (event) => {
                 D: '#forge:circuits/elite',
                 E: 'rftoolsutility:spawner',
                 F: 'ars_nouveau:greater_experience_gem',
-                G: 'pneumaticcraft:huge_tank',
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT(),
                 H: 'botania:spawner_mover',
                 I: '#industrialforegoing:machine_frame/supreme'
             },
@@ -617,10 +617,10 @@ onEvent('recipes', (event) => {
                 A: 'rftoolsbase:infused_diamond',
                 B: '#forge:storage_blocks/hepatizon',
                 C: '#forge:plastic',
-                D: 'mekanism:elite_induction_cell',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: 'thermal:upgrade_augment_3',
-                F: 'immersiveengineering:wooden_grip',
-                G: 'pneumaticcraft:huge_tank'
+                F: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
             },
             id: 'industrialforegoing:dissolution_chamber/infinity_drill'
         },
@@ -631,9 +631,9 @@ onEvent('recipes', (event) => {
                 A: 'rftoolsbase:infused_diamond',
                 B: '#forge:storage_blocks/hepatizon',
                 C: '#forge:plastic',
-                D: 'mekanism:elite_induction_cell',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: 'thermal:upgrade_augment_3',
-                G: 'pneumaticcraft:huge_tank'
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
             },
             id: 'industrialforegoing:dissolution_chamber/infinity_trident'
         },
@@ -644,10 +644,10 @@ onEvent('recipes', (event) => {
                 A: 'rftoolsbase:infused_diamond',
                 B: '#forge:storage_blocks/hepatizon',
                 C: '#forge:plastic',
-                D: 'mekanism:elite_induction_cell',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: 'thermal:upgrade_augment_3',
-                F: 'immersiveengineering:wooden_grip',
-                G: 'pneumaticcraft:huge_tank'
+                F: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
             },
             id: 'industrialforegoing:dissolution_chamber/infinity_saw'
         },
@@ -658,9 +658,9 @@ onEvent('recipes', (event) => {
                 A: 'rftoolsbase:infused_diamond',
                 B: '#forge:storage_blocks/hepatizon',
                 C: '#forge:plastic',
-                D: 'mekanism:elite_induction_cell',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: 'thermal:upgrade_augment_3',
-                G: 'pneumaticcraft:huge_tank'
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
             },
             id: 'industrialforegoing:dissolution_chamber/infinity_hammer'
         },
@@ -671,10 +671,10 @@ onEvent('recipes', (event) => {
                 A: 'thermal:cured_rubber_block',
                 B: '#forge:storage_blocks/hepatizon',
                 C: '#forge:plastic',
-                D: 'mekanism:elite_induction_cell',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: 'thermal:upgrade_augment_3',
-                F: 'immersiveengineering:wooden_grip',
-                G: 'pneumaticcraft:huge_tank'
+                F: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
             },
             id: 'industrialforegoing:dissolution_chamber/infinity_launcher'
         },
@@ -685,12 +685,12 @@ onEvent('recipes', (event) => {
                 A: 'thermal:earth_tnt',
                 B: '#forge:storage_blocks/hepatizon',
                 C: '#forge:plastic',
-                D: 'mekanism:elite_induction_cell',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: Item.of('tconstruct:copper_can', '{fluid:"industrialforegoing:ether_gas"}'),
                 F: '#forge:alloys/ultimate',
                 G: '#forge:pellets/plutonium',
                 H: 'mekanism:hdpe_rod',
-                I: 'pneumaticcraft:huge_tank'
+                I: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
             },
             id: 'industrialforegoing:dissolution_chamber/infinity_nuke'
         },
@@ -702,10 +702,10 @@ onEvent('recipes', (event) => {
                 B: '#forge:plastic',
                 C: 'mekanism:elite_mechanical_pipe',
                 D: '#forge:gears/enderium',
-                E: 'mekanism:elite_fluid_tank',
-                F: 'pneumaticcraft:smart_chest',
+                E: Item.of('mekanism:elite_fluid_tank').ignoreNBT(),
+                F: Item.of('pneumaticcraft:smart_chest').ignoreNBT(),
                 G: 'mekanism:superheating_element',
-                H: 'immersiveengineering:capacitor_hv',
+                H: Item.of('immersiveengineering:capacitor_hv').ignoreNBT(),
                 I: '#industrialforegoing:machine_frame/pity'
             },
             id: 'industrialforegoing:dissolution_chamber'
@@ -718,11 +718,11 @@ onEvent('recipes', (event) => {
                 B: 'powah:dielectric_rod_horizontal',
                 C: 'immersiveengineering:toolupgrade_shield_magnet',
                 D: [
-                    'mininggadgets:mininggadget_simple',
-                    'mininggadgets:mininggadget',
-                    'mininggadgets:mininggadget_fancy'
+                    Item.of('mininggadgets:mininggadget_simple').ignoreNBT(),
+                    Item.of('mininggadgets:mininggadget').ignoreNBT(),
+                    Item.of('mininggadgets:mininggadget_fancy').ignoreNBT()
                 ],
-                E: 'mekanism:laser_amplifier',
+                E: Item.of('mekanism:laser_amplifier').ignoreNBT(),
                 F: 'thermal:upgrade_augment_3'
             },
             id: 'mekanism:meka_tool'
@@ -735,7 +735,7 @@ onEvent('recipes', (event) => {
                 B: '#forge:plates/steel',
                 C: 'xnet:advanced_connector_green',
                 D: 'xnet:netcable_green',
-                E: 'rftoolsbase:tablet',
+                E: Item.of('rftoolsbase:tablet').ignoreNBT(),
                 F: '#industrialforegoing:machine_frame/supreme',
                 G: 'xnet:netcable_red',
                 H: '#forge:circuits/ultimate',
@@ -749,7 +749,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersiveengineering:hempcrete',
                 B: 'mekanism:thermal_evaporation_block',
-                C: 'mekanism:resistive_heater',
+                C: Item.of('mekanism:resistive_heater').ignoreNBT(),
                 D: 'mekanism:ultimate_thermodynamic_conductor',
                 E: 'mekanism:thermal_evaporation_valve',
                 F: 'mekanism:thermal_evaporation_controller'

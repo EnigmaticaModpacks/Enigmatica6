@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'BBB', 'CCC'],
             key: {
                 A: '#forge:dusts/redstone',
-                B: 'minecraft:stone_slab',
+                B: '#enigmatica:crafting_slabs',
                 C: '#forge:nuggets/copper'
             },
             id: 'prettypipes:blank_module'

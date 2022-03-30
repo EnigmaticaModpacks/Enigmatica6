@@ -26,6 +26,21 @@ onEvent('recipes', (event) => {
             },
             toReplace: 'minecraft:dried_kelp',
             replaceWith: ['minecraft:dried_kelp', 'sushigocrafting:dried_seaweed']
+        },
+        {
+            replaceTarget: { id: 'eidolon:stone_hand' },
+            toReplace: 'minecraft:stone_slab',
+            replaceWith: '#enigmatica:crafting_slabs'
+        },
+        {
+            replaceTarget: { id: 'culinaryconstruct:culinary_station' },
+            toReplace: 'minecraft:stone_slab',
+            replaceWith: '#enigmatica:crafting_slabs'
+        },
+        {
+            replaceTarget: { id: 'minecraft:grindstone' },
+            toReplace: 'minecraft:stone_slab',
+            replaceWith: '#enigmatica:crafting_slabs'
         }
     ];
     event.replaceInput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');

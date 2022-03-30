@@ -22,6 +22,7 @@ onEvent('recipes', (event) => {
         'atum:ore_brewing_stand',
 
         'betterendforge:leather_to_stripes',
+        'betterendforge:terminite_ingot',
 
         'bloodmagic:arc/weakbloodshard_tau',
         /bloodmagic:alchemytable\/melee_damage_anointment/,

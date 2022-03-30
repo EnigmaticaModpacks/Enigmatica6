@@ -114,6 +114,30 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}bloodmagic/dungeon_polished_wall`
         },
         {
+            output: Item.of('bloodmagic:dungeon_tile', 4),
+            pattern: ['AA', 'AA'],
+            key: {
+                A: 'bloodmagic:dungeon_brick1'
+            },
+            id: `${id_prefix}bloodmagic/dungeon_tile`
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_tile_slab', 6),
+            pattern: ['AAA'],
+            key: {
+                A: 'bloodmagic:dungeon_tile'
+            },
+            id: `${id_prefix}bloodmagic/dungeon_tile_slab`
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_brick_slab', 6),
+            pattern: ['AAA'],
+            key: {
+                A: 'bloodmagic:dungeon_brick1'
+            },
+            id: `${id_prefix}bloodmagic/dungeon_brick_slab`
+        },
+        {
             output: Item.of('bloodmagic:dungeon_brick_wall', 6),
             pattern: ['AAA', 'AAA'],
             key: {

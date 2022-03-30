@@ -64,19 +64,19 @@ onEvent('generic.loot_tables', (event) => {
                 {
                     item: Item.of(
                         'ars_nouveau:caster_tome',
-                        '{flavor:"Gusts of wind, sharp as blades.",color:"1,1,1",spell_0:"[projectile, split, split, pierce, pierce, gust, amplify, amplify, cut, amplify]",display:{item:\'{"italic":true,"color":"dark_purple","text":"Wind Blades"}\'},current_slot:0,max_slot:1}'
+                        '{flavor:"Gusts of wind, sharp as blades.",color:"1,1,1",spell_0:"[projectile, split, split, pierce, pierce, gust, amplify, amplify, cut, amplify]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Wind Blades"}\'},current_slot:0,max_slot:1}'
                     )
                 },
                 {
                     item: Item.of(
                         'ars_nouveau:caster_tome',
-                        '{flavor:"Believe it!",color:"1,1,1",spell_0:"[underfoot, linger, accelerate, accelerate, accelerate, aoe, aoe, aoe, summon_decoy]",display:{item:\'{"italic":true,"color":"dark_purple","text":"Multi Shadow Clone"}\'},current_slot:0,max_slot:1}'
+                        '{flavor:"Believe it!",color:"1,1,1",spell_0:"[underfoot, linger, accelerate, accelerate, accelerate, aoe, aoe, aoe, summon_decoy]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Multi Shadow Clone"}\'},current_slot:0,max_slot:1}'
                     )
                 },
                 {
                     item: Item.of(
                         'ars_nouveau:caster_tome',
-                        '{flavor:"Creates a fire that quickly freezes to ice.",color:"255,25,180",spell_0:"[projectile, ignite, delay, conjure_water, freeze]",display:{item:\'{"italic":true,"color":"dark_purple","text":"Farfalla\\\'s Frosty Flames"}\'},current_slot:0,max_slot:1}'
+                        '{flavor:"Creates a fire that quickly freezes to ice.",color:"255,25,180",spell_0:"[projectile, ignite, delay, conjure_water, freeze]",display:{Name:\'{"italic":true,"color":"dark_purple","text":"Farfalla\\\'s Frosty Flames"}\'},current_slot:0,max_slot:1}'
                     )
                 },
                 {
@@ -180,7 +180,7 @@ onEvent('generic.loot_tables', (event) => {
                 },
                 {
                     item: 'botania:blacker_lotus',
-                    count: [4, 8],
+                    count: [2, 4],
                     weight: 50
                 },
                 {
