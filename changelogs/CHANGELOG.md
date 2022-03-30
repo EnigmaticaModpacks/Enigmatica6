@@ -6,11 +6,38 @@ _Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Changes/Improvements**
 
-- 
+- Add Little Logistics and Encyclopedia of Tinkering to Akashic Tome [\#4512](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4512) ([MuteTiefling](https://github.com/MuteTiefling))
+- Add Recipes for more Demonstone blocks [\#4533](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4533) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Add Quest for Deuterium Plant [\#4516](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4516) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Astral Sorcery Quest Step Inconsistency [\#4526](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4526)
+- \[Expert\] Fix uncraftable Assembly Controller [\#4524](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4524) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Quest Update - Allow Superheated Steel ingot quest under Mechanical Mayhem to accept block variants [\#4511](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4511)
+- \[Expert\] Remove Terminite from Iron recipes [\#4520](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4520) ([MuteTiefling](https://github.com/MuteTiefling))
+- Catacombs Loot: Fix typos on some custom Caster Tomes, slightly reduce the rate of Blacker Lotuses [\#4519](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4519) ([MuteTiefling](https://github.com/MuteTiefling))
+- Convert stone slab recipes to use more types of stone [\#4525](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4525) ([MuteTiefling](https://github.com/MuteTiefling))
+- Explicitly state in the Expert quests how to obtain rock crystals. Remove superfluous Linking Tool from Astral Quests.  [\#4530](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4530) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix broken NBT on MLG-YOLO buckets from Loot [\#4518](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4518) ([MuteTiefling](https://github.com/MuteTiefling))
+- Make Blood available from trees again [\#4514](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4514) ([MuteTiefling](https://github.com/MuteTiefling))
+- Make Pretty Pipes Blank Module craftable using other types of stone slabs [\#4413](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4413)
+- New Crowdin updates [\#4507](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4507) ([NillerMedDild](https://github.com/NillerMedDild))
+- Quest updates - Fix Iron Jetpack quest visibility [\#4517](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4517) ([MuteTiefling](https://github.com/MuteTiefling))
+- Update Expert quests to accept Superheated Steel Blocks and Hot Compressed Iron Blocks as well as Ingots [\#4515](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4515) ([MuteTiefling](https://github.com/MuteTiefling))
 
 **Bug Fixes**
 
-- 
+- \[Expert\] Resolve soul enchanter gamestage mixup, preventing some players from placing after the update. [\#4510](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4510) ([MuteTiefling](https://github.com/MuteTiefling))
+- \[Expert\] Update Mechanical Crafter recipes to ignore NBT where appropriate. [\#4513](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4513) ([MuteTiefling](https://github.com/MuteTiefling))
+- Clarify Requirements for Industrial Deuterium Plant in Quests [\#4503](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4503)
+- Enigmatica 6 Expert - Cannot place Soul Enchanter in the nether even after crafting new lesser tartaric gem [\#4508](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4508)
+- Enigmatica 6 Expert Blood Magic 3 Demon realm Not generated Demon Stone Tile Slab [\#4531](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4531)
+- Fix fluids given by Tinker's Quests to use proper fluids [\#4527](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4527) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix typo in BM entity blacklist [\#4521](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/4521) ([MuteTiefling](https://github.com/MuteTiefling))
+- Impossible to extract blood from mushroom and tree [\#4499](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4499)
+- Issue crafting Ironjetpacks Hardened Jetpack due to NBT issue with water bucket [\#4484](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4484)
+- Item not visible while in a mechanical crafter slot [\#4391](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4391)
+- MAGIC workbench [\#4504](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4504)
+- PNC:R Refinery crash when \> 2 outputs are present in a setup producing only 2 products [\#4485](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4485)
+- Terminite Ingot too easy to obtain [\#4495](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4495)
 
 
 
