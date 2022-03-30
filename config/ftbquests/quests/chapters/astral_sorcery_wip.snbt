@@ -813,22 +813,14 @@
 					item: "astralsorcery:wand"
 				}
 			]
-			rewards: [
-				{
-					id: "0000000000000BBC"
-					type: "item"
-					title: "Linking Tool"
-					item: "astralsorcery:linking_tool"
-				}
-				{
-					id: "0000000000000C5F"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "0000000000000C5F"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 5.0d
