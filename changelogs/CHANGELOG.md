@@ -1,3 +1,19 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.1.2
+
+_Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.1.2.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.1.2.md)_
+
+
+
+**Bug Fixes**
+
+- Pretty Pipes 1.9.7 crashes when requesting items from terminals. [#4534](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4534)
+
+
+
+---
+
+
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.1.1
 
 _Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.1.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.1.1.md)_
