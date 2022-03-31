@@ -44,6 +44,7 @@ function Close-FixedIssues {
 function Merge-DevelopIntoMaster {
     git stash
     git checkout master
+    git stash
     git merge develop
     git checkout develop
     git merge master
