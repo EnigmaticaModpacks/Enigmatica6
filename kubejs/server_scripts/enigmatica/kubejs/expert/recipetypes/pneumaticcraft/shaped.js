@@ -258,7 +258,7 @@ onEvent('recipes', (event) => {
             id: 'pneumaticcraft:pneumatic_dynamo'
         },
         {
-            output: 'pneumaticcraft:thermal_lagging',
+            output: Item.of('6x pneumaticcraft:thermal_lagging'),
             pattern: ['AAA', 'BBB', 'AAA'],
             key: {
                 A: '#forge:glass_panes/black',
