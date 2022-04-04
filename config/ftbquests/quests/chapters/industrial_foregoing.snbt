@@ -152,7 +152,24 @@
 			tasks: [{
 				id: "0000000000000054"
 				type: "item"
-				item: "industrialforegoing:mob_slaughter_factory"
+				title: "Mob Slaughter Factory"
+				icon: "industrialforegoing:mob_slaughter_factory"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:pink_slime_bucket"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:mob_slaughter_factory"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0000000000000626"
