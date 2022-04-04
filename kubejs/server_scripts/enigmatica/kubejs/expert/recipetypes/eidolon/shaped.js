@@ -74,7 +74,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
                 A: 'atum:linen_cloth',
-                B: Item.of('minecraft:potion', '{Potion:"ars_nouveau:spell_damage_strong"}'),
+                B: Item.of('minecraft:potion', '{Potion:"ars_nouveau:spell_damage"}'),
                 C: { type: 'bloodmagic:bloodorb', orb_tier: 1 }
             },
             id: `${id_prefix}wicked_weave`
