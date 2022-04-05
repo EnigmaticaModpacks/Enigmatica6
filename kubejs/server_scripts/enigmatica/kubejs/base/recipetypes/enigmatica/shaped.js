@@ -527,5 +527,13 @@ onEvent('recipes', (event) => {
                 B: `#forge:dyes/${color}`
             })
             .id(`${id_prefix}${color}_rockwool_batch`);
+
+        // Generate dye recipes for ceramic
+        event
+            .shaped(Item.of(`atum:ceramic_${color}`, 8), ['AAA', 'ABA', 'AAA'], {
+                A: '#forge:ceramics',
+                B: `#forge:dyes/${color}`
+            })
+            .id(`${id_prefix}${color}_ceramic_batch`);
     });
 });
