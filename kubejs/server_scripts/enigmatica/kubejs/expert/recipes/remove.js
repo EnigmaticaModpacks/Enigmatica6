@@ -108,6 +108,7 @@ onEvent('recipes', (event) => {
         'minecraft:golden_carrot',
         'minecraft:glistering_melon_slice',
         'minecraft:golden_apple',
+        'minecraft:lodestone',
 
         'mininggadgets:upgrade_empty',
 
@@ -167,6 +168,7 @@ onEvent('recipes', (event) => {
         'tconstruct:compat/refined_obsidian_ingot',
         'tconstruct:smeltery/alloys/molten_refined_obsidian',
         'tconstruct:compat/refined_glowstone_ingot',
+        'tconstruct:smeltery/melting/metal/gold/produce',
 
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
 
