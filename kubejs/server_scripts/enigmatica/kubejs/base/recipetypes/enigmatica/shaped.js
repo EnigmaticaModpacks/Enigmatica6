@@ -364,6 +364,15 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}quark/turf_from_slab`
         },
         {
+            output: Item.of('thermal:white_rockwool', 8),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#enigmatica:washables/rockwool',
+                B: 'minecraft:water_bucket'
+            },
+            id: `${id_prefix}thermal/white_rockwool_from_washing`
+        },
+        {
             output: Item.of('morphtool:tool', {
                 'morphtool:data': {
                     blockcarpentry: { id: 'blockcarpentry:texture_wrench', Count: 1 },
@@ -520,12 +529,22 @@ onEvent('recipes', (event) => {
             })
             .id(`${id_prefix}${color}_dye_from_rgbee_honeycomb`);
 
-        // Generate dye recipes for rockwool
-        event
-            .shaped(Item.of(`thermal:${color}_rockwool`, 8), ['AAA', 'ABA', 'AAA'], {
-                A: '#thermal:rockwool',
-                B: `#forge:dyes/${color}`
-            })
-            .id(`${id_prefix}${color}_rockwool_batch`);
+        if (color != 'white') {
+            // Generate dye recipes for rockwool
+            event
+                .shaped(Item.of(`thermal:${color}_rockwool`, 8), ['AAA', 'ABA', 'AAA'], {
+                    A: 'thermal:white_rockwool',
+                    B: `#forge:dyes/${color}`
+                })
+                .id(`${id_prefix}${color}_rockwool_batch`);
+
+            // Generate dye recipes for ceramic
+            event
+                .shaped(Item.of(`atum:ceramic_${color}`, 8), ['AAA', 'ABA', 'AAA'], {
+                    A: 'atum:ceramic_white',
+                    B: `#forge:dyes/${color}`
+                })
+                .id(`${id_prefix}${color}_ceramic_batch`);
+        }
     });
 });

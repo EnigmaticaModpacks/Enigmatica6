@@ -23,13 +23,19 @@ onEvent('recipes', (event) => {
             input: 'naturesaura:ancient_log',
             output: Item.of('6x naturesaura:ancient_planks'),
             extraOutput: Item.of('emendatusenigmatica:wood_dust').chance(0.25),
-            id: `${id_prefix}sticks_from_wooden_stairs`
+            id: `${id_prefix}ancient_planks_from_log`
         },
         {
             input: 'naturesaura:ancient_bark',
             output: Item.of('6x naturesaura:ancient_planks'),
             extraOutput: Item.of('emendatusenigmatica:wood_dust').chance(0.25),
             id: `${id_prefix}ancient_planks_from_bark`
+        },
+        {
+            input: 'botania:livingwood',
+            output: Item.of('6x botania:livingwood_planks'),
+            extraOutput: Item.of('emendatusenigmatica:wood_dust').chance(0.25),
+            id: `${id_prefix}livingwood_planks_from_livingwood`
         }
     ];
 

@@ -10,6 +10,11 @@ onEvent('recipes', (event) => {
             input: 'naturesaura:ancient_bark',
             output: '6x naturesaura:ancient_planks',
             id: `${id_prefix}ancient_planks_from_bark`
+        },
+        {
+            input: 'botania:livingwood',
+            output: '6x botania:livingwood_planks',
+            id: `${id_prefix}livingwood_planks_from_livingwood`
         }
     ];
     recipes.forEach((recipe) => {

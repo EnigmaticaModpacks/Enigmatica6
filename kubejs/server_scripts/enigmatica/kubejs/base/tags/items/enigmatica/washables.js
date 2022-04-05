@@ -20,4 +20,8 @@ onEvent('item.tags', (event) => {
         .get('enigmatica:washables/ceramic_wall')
         .add(/atum:ceramic_wall_[a-z]+$/)
         .remove('atum:ceramic_wall_white');
+    event
+        .get('enigmatica:washables/rockwool')
+        .add(/thermal:\w+_rockwool/)
+        .remove('thermal:white_rockwool');
 });
