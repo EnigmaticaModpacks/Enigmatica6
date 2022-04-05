@@ -508,8 +508,8 @@ onEvent('recipes', (event) => {
         }
     });
 
-    //Generate one RGBee Comb recipe for each dye, using the appropriate flowers from dyeSources
     colors.forEach((color) => {
+        //Generate one RGBee Comb recipe for each dye, using the appropriate flowers from dyeSources
         let flowers = dyeSources.filter((dyeSource) => dyeSource.primary == `minecraft:${color}_dye`);
         let ingredients = flowers.map((flower) => flower.input);
         event
@@ -519,5 +519,13 @@ onEvent('recipes', (event) => {
                 B: 'resourcefulbees:wax'
             })
             .id(`${id_prefix}${color}_dye_from_rgbee_honeycomb`);
+
+        // Generate dye recipes for rockwool
+        event
+            .shaped(Item.of(`thermal:${color}_rockwool`, 8), ['AAA', 'ABA', 'AAA'], {
+                A: '#thermal:rockwool',
+                B: `#forge:dyes/${color}`
+            })
+            .id(`${id_prefix}${color}_rockwool_batch`);
     });
 });
