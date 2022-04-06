@@ -224,7 +224,7 @@ onEvent('recipes', (event) => {
         {
             inputs: ['naturesaura:birth_spirit', 'resourcefulbees:rocky_honeycomb', '#forge:gems/mana_diamond'],
             entity: 'quark:stoneling',
-            aura: 5000000,
+            aura: 2000000,
             time: 200,
             id: `${id_prefix}stoneling`
         },
