@@ -696,7 +696,7 @@ onEvent('recipes', (event) => {
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'betterendforge:terminite_anvil',
-                'betterendforge:terminite_hammer',
+		Item.of('betterendforge:terminite_hammer', '{Damage:0]}').weakNBT(),
                 'minecraft:blast_furnace',
                 'supplementaries:bellows',
                 '#forge:storage_blocks/coal',
