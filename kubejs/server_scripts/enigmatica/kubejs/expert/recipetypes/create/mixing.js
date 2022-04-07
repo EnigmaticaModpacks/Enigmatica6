@@ -108,6 +108,16 @@ onEvent('recipes', (event) => {
             ],
             output: Item.of('kubejs:blast_brick_blend', 4),
             id: `${id_prefix}blast_brick_blend`
+        },
+        {
+            inputs: [
+                'farmersdelight:wheat_dough',
+                'farmersdelight:wheat_dough',
+                'farmersdelight:wheat_dough',
+                'ars_nouveau:mana_berry'
+            ],
+            output: Item.of('ars_nouveau:source_berry_roll', 3),
+            id: `${id_prefix}source_berry_roll`
         }
     ];
 
