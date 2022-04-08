@@ -140,6 +140,14 @@ onEvent('recipes', (event) => {
             temperature: 660,
             time: 64,
             id: `${id_prefix}destabilized_redstone_from_redstone_dust`
+        },
+        {
+            ingredient: { tag: 'forge:ores/utherium' },
+            result: { fluid: 'materialis:molten_utherium', amount: 288 },
+            temperature: 1070,
+            time: 20 * 20,
+            byproducts: [{ fluid: 'materialis:molten_regalium', amount: 48 }],
+            id: 'materialis:smeltery/melting/metal/utherium/ore'
         }
     ];
 
