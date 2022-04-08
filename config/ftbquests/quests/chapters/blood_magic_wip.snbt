@@ -179,24 +179,17 @@
 			}]
 			rewards: [
 				{
-					id: "00000000000008A5"
-					type: "item"
-					title: "Sentient Pickaxe"
-					item: {
-						id: "bloodmagic:soulpickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
 					id: "00000000000009AE"
 					type: "command"
 					title: "Sorcerer's Delight"
 					icon: "kubejs:sorcerers_delight"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 					player_command: false
+				}
+				{
+					id: "6797B35CCCC56777"
+					type: "item"
+					item: "bloodmagic:melee_anointment_l"
 				}
 			]
 		}
