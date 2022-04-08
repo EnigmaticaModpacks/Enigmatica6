@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'betterendforge:leather_stripe',
                 B: 'tconstruct:clear_glass_pane',
-                C: '#forge:plates/constantan'
+                C: '#forge:plates/copper'
             },
             id: 'tconstruct:armor/building/travelers_goggles'
         },
@@ -40,7 +40,7 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'BCB'],
             key: {
                 A: '#forge:slimeball/sky',
-                B: '#forge:plates/constantan',
+                B: '#forge:plates/copper',
                 C: Item.of('minecraft:leather_chestplate', '{Damage:0}').weakNBT()
             },
             id: 'tconstruct:armor/building/travelers_chestplate'
@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'BCB'],
             key: {
                 A: '#forge:slimeball/sky',
-                B: '#forge:plates/constantan',
+                B: '#forge:plates/copper',
                 C: Item.of('minecraft:leather_leggings', '{Damage:0}').weakNBT()
             },
             id: 'tconstruct:armor/building/travelers_pants'
@@ -60,7 +60,7 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'BCB'],
             key: {
                 A: '#forge:slimeball/sky',
-                B: '#forge:plates/constantan',
+                B: '#forge:plates/copper',
                 C: Item.of('minecraft:leather_boots', '{Damage:0}').weakNBT()
             },
             id: 'tconstruct:armor/building/travelers_boots'
