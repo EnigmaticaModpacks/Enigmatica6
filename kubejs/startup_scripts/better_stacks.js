@@ -1,10 +1,5 @@
 onEvent('item.modification', (event) => {
     const increaseStackSize = [
-        'minecraft:ender_pearl',
-        'rftoolsbase:infused_enderpearl',
-        'rftoolsbase:infused_diamond',
-        'minecraft:snowball',
-        'powah:charged_snowball',
         'industrialforegoing:efficiency_addon_1',
         'industrialforegoing:efficiency_addon_2',
         'industrialforegoing:speed_addon_1',
@@ -22,7 +17,18 @@ onEvent('item.modification', (event) => {
         'industrialforegoing:range_addon8',
         'industrialforegoing:range_addon9',
         'industrialforegoing:range_addon10',
-        'industrialforegoing:range_addon11'
+        'industrialforegoing:range_addon11',
+
+        'minecraft:ender_pearl',
+        'minecraft:bucket',
+        'minecraft:snowball',
+
+        'powah:charged_snowball',
+
+        'rftoolsbase:infused_enderpearl',
+        'rftoolsbase:infused_diamond',
+
+        'undergarden:goo_ball'
     ];
 
     event.modify(increaseStackSize, (item) => {
