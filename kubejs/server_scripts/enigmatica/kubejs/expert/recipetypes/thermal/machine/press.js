@@ -48,7 +48,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                Item.of('tconstruct:large_plate', '{Material:"materialis:invar"}'),
+                Item.of('tconstruct:large_plate', '{Material:"tconstruct:invar"}'),
                 'immersiveengineering:mold_gear'
             ],
             output: 'thermal:saw_blade',
