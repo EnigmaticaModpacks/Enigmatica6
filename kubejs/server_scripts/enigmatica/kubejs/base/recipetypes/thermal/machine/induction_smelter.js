@@ -95,9 +95,9 @@ onEvent('recipes', (event) => {
             inputs: [
                 Ingredient.of('#forge:ingots/copper', 2),
                 Ingredient.of('#forge:ingots/cobalt', 1),
-                '#forge:obsidian'
+                Ingredient.of('#forge:dusts/quartz', 4)
             ],
-            outputs: [Item.of('tconstruct:hepatizon_ingot', 4)],
+            outputs: [Item.of('tconstruct:hepatizon_ingot', 2)],
             id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_hepatizon_ingot'
         },
         {

@@ -45,8 +45,8 @@ onEvent('recipes', (event) => {
         },
         {
             input1: Ingredient.of('#forge:ingots/copper', 2),
-            secondaries: ['#forge:ingots/cobalt', '#forge:obsidian'],
-            outputs: [Item.of('tconstruct:hepatizon_ingot', 4)],
+            secondaries: ['#forge:ingots/cobalt', Ingredient.of('#forge:dusts/quartz', 4)],
+            outputs: [Item.of('tconstruct:hepatizon_ingot', 2)],
             id: `${id_prefix}hepatizon_ingot`
         },
         {
