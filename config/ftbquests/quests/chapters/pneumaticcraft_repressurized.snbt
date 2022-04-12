@@ -279,7 +279,17 @@
 			x: -12.5d
 			y: -12.0d
 			subtitle: "Whirling Dervishes"
-			description: ["Built on the principle of swirling high pressure air in a special chamber to create a temperature differential, the Vortex Tube allows you to finely control the amount of heating or cooling it does by controlling the pressure."]
+			description: [
+				"Built on the principle of swirling high pressure air in a special chamber to create a temperature differential, the Vortex Tube allows you to finely control the amount of heating or cooling it does by controlling the pressure."
+				""
+				"The Vortex Tube isn’t the only way to generate Heat, however. Looking up uses on Heat Pipes in JEI will bring up a variety of blocks and liquids that may be used for heating and cooling as well. "
+				""
+				"Lastly, PneumaticCraft has built in support for Mekanism’s Heat system and compatibility with Integrated Dynamics. Some notable heat sources include:"
+				""
+				"● External Heater"
+				"● Resistive Heater"
+				"● Fuelwood Heater"
+			]
 			dependencies: ["00000000000000CC"]
 			id: "00000000000000CF"
 			tasks: [{
