@@ -34,11 +34,11 @@ onEvent('recipes', (event) => {
                 { item: 'astralsorcery:illumination_powder' },
                 { item: 'astralsorcery:nocturnal_powder' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' },
+                { item: 'astralsorcery:stardust' },
                 { item: 'astralsorcery:illumination_powder' },
                 { item: 'astralsorcery:nocturnal_powder' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' }
             ],
             altar_type: 3,
             duration: 600,
@@ -67,7 +67,7 @@ onEvent('recipes', (event) => {
             },
             relay_inputs: [
                 { item: 'naturesaura:token_euphoria' },
-                { tag: 'botania:runes/lust' },
+                { item: 'botania:rune_lust' },
                 { item: 'ars_nouveau:ritual_fertility' }
             ],
             altar_type: 3,
@@ -98,8 +98,8 @@ onEvent('recipes', (event) => {
             },
             relay_inputs: [
                 { item: 'eidolon:shadow_gem' },
-                { tag: 'forge:inlays/arcane_gold' },
-                { tag: 'forge:inlays/arcane_gold' }
+                { item: 'eidolon:gold_inlay' },
+                { item: 'eidolon:gold_inlay' }
             ],
             altar_type: 3,
             duration: 600,
@@ -125,8 +125,8 @@ onEvent('recipes', (event) => {
             },
             relay_inputs: [
                 { item: 'betterendforge:aeternium_hammer' },
-                { tag: 'forge:ingots/netherite' },
-                { tag: 'forge:ingots/netherite' }
+                { item: 'minecraft:netherite_ingot' },
+                { item: 'minecraft:netherite_ingot' }
             ],
             altar_type: 3,
             duration: 600,
@@ -157,10 +157,10 @@ onEvent('recipes', (event) => {
                 F: { tag: 'botania:runes/mana' }
             },
             relay_inputs: [
-                { tag: 'astralsorcery:starmetal' },
-                { tag: 'botania:runes/envy' },
+                { item: 'astralsorcery:starmetal' },
+                { item: 'botania:rune_envy' },
                 { item: 'magicfeather:magicfeather' },
-                { tag: 'botania:runes/pride' }
+                { item: 'botania:rune_pride' }
             ],
             altar_type: 3,
             duration: 600,
@@ -193,10 +193,10 @@ onEvent('recipes', (event) => {
             relay_inputs: [
                 { item: 'bloodmagic:steadfastcrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' },
+                { item: 'astralsorcery:stardust' },
                 { item: 'bloodmagic:steadfastcrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' }
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -228,10 +228,10 @@ onEvent('recipes', (event) => {
             relay_inputs: [
                 { item: 'bloodmagic:vengefulcrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' },
+                { item: 'astralsorcery:stardust' },
                 { item: 'bloodmagic:vengefulcrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' }
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -263,10 +263,10 @@ onEvent('recipes', (event) => {
             relay_inputs: [
                 { item: 'bloodmagic:destructivecrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' },
+                { item: 'astralsorcery:stardust' },
                 { item: 'bloodmagic:destructivecrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' }
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -298,10 +298,10 @@ onEvent('recipes', (event) => {
             relay_inputs: [
                 { item: 'bloodmagic:defaultcrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' },
+                { item: 'astralsorcery:stardust' },
                 { item: 'bloodmagic:defaultcrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' }
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -333,10 +333,10 @@ onEvent('recipes', (event) => {
             relay_inputs: [
                 { item: 'bloodmagic:corrosivecrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' },
+                { item: 'astralsorcery:stardust' },
                 { item: 'bloodmagic:corrosivecrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { tag: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' }
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -368,11 +368,11 @@ onEvent('recipes', (event) => {
             relay_inputs: [
                 { item: 'mythicbotany:dream_cherry' },
                 { item: 'botania:life_essence' },
-                { tag: 'botania:runes/midgard' },
+                { item: 'mythicbotany:midgard_rune' },
                 { item: 'botania:life_essence' },
                 { item: 'naturesaura:ancient_sapling' },
                 { item: 'botania:life_essence' },
-                { tag: 'botania:runes/midgard' },
+                { item: 'mythicbotany:midgard_rune' },
                 { item: 'botania:life_essence' }
             ],
             effects: [
@@ -403,11 +403,11 @@ onEvent('recipes', (event) => {
             focus_constellation: 'astralsorcery:horologium',
             relay_inputs: [
                 { item: 'astralsorcery:stardust' },
-                { tag: 'forge:dusts/end_stone' },
-                { tag: 'forge:dusts/iesnium' },
+                { item: 'occultism:crushed_end_stone' },
+                { item: 'occultism:iesnium_dust' },
                 { item: 'astralsorcery:stardust' },
-                { tag: 'forge:dusts/end_stone' },
-                { tag: 'forge:dusts/iesnium' }
+                { item: 'occultism:crushed_end_stone' },
+                { item: 'occultism:iesnium_dust' }
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
