@@ -1,34 +1,34 @@
 onEvent('item.modification', (event) => {
     const increaseStackSize = [
-        'industrialforegoing:efficiency_addon_1',
-        'industrialforegoing:efficiency_addon_2',
-        'industrialforegoing:speed_addon_1',
-        'industrialforegoing:speed_addon_2',
-        'industrialforegoing:processing_addon_1',
-        'industrialforegoing:processing_addon_2',
-        'industrialforegoing:range_addon0',
-        'industrialforegoing:range_addon1',
-        'industrialforegoing:range_addon2',
-        'industrialforegoing:range_addon3',
-        'industrialforegoing:range_addon4',
-        'industrialforegoing:range_addon5',
-        'industrialforegoing:range_addon6',
-        'industrialforegoing:range_addon7',
-        'industrialforegoing:range_addon8',
-        'industrialforegoing:range_addon9',
-        'industrialforegoing:range_addon10',
-        'industrialforegoing:range_addon11',
+        'alexsmobs:emu_egg',
+
+        'atum:quail_egg',
+
+        'environmental:duck_egg',
+
+        /industrialforegoing:efficiency_addon/,
+        /industrialforegoing:speed_addon/,
+        /industrialforegoing:processing_addon/,
+        /industrialforegoing:range_addon/,
 
         'minecraft:ender_pearl',
         'minecraft:bucket',
         'minecraft:snowball',
+        'minecraft:honey_bottle',
+        'minecraft:egg',
 
         'powah:charged_snowball',
+
+        'resourcefulbees:bee_jar',
+        /resourcefulbees:\w+_honey_bottle/,
 
         'rftoolsbase:infused_enderpearl',
         'rftoolsbase:infused_diamond',
 
-        'undergarden:goo_ball'
+        'undergarden:goo_ball',
+
+        //signs
+        /(minecraft|undergarden|betterendforge|atmospheric|upgrade_aquatic|atum|tconstruct|environmental):\w+_sign/
     ];
 
     event.modify(increaseStackSize, (item) => {
