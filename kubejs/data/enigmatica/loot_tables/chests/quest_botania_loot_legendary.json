@@ -234,7 +234,18 @@
                             "count": 4
                         }
                     ]
-                }
+                },                
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:mana_pearl",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
             ]
         }
     ]
