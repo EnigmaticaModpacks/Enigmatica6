@@ -465,14 +465,14 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:blankrune',
                 'quark:orange_rune',
-                'bloodmagic:infusedslate',
+                'bloodmagic:reinforcedslate',
                 'bloodmagic:reagentholding',
-                'bloodmagic:infusedslate',
+                'bloodmagic:reinforcedslate',
                 'kubejs:cutting_essence',
                 'quark:orange_rune',
-                'bloodmagic:infusedslate',
+                'bloodmagic:reinforcedslate',
                 'bloodmagic:reagentholding',
-                'bloodmagic:infusedslate'
+                'bloodmagic:reinforcedslate'
             ],
             mana: 64000,
             output: 'bloodmagic:altarcapacityrune',

@@ -5,14 +5,12 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/integratedcrafting/';
     const recipes = [
         {
-            output: 'integratedcrafting:part_interface_crafting',
-            pattern: ['ABA', 'CDE', 'ABA'],
+            output: Item.of('3x integratedcrafting:part_interface_crafting'),
+            pattern: [' A ', 'BAC', ' A '],
             key: {
-                A: 'botania:crafty_crate',
-                B: 'refinedstorage:advanced_processor',
-                C: 'integrateddynamics:variable_transformer_output',
-                D: 'integrateddynamics:logic_director',
-                E: 'integrateddynamics:variable_transformer_input'
+                A: 'create:mechanical_crafter',
+                B: 'integrateddynamics:variable_transformer_output',
+                C: 'integrateddynamics:variable_transformer_input'
             },
             id: 'integratedcrafting:crafting/part_interface_crafting'
         }
