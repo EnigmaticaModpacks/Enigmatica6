@@ -234,6 +234,18 @@ onEvent('recipes', (event) => {
             aura: 30000,
             time: 40,
             id: `${id_prefix}nautilus`
+        },
+        {
+            inputs: [
+                'naturesaura:birth_spirit',
+                '#botania:runes/asgard',
+                '#botania:runes/vanaheim',
+                'bloodmagic:seersigil'
+            ],
+            entity: 'minecraft:wandering_trader',
+            aura: 2000000,
+            time: 400,
+            id: `${id_prefix}wandering_trader`
         }
     ];
 
