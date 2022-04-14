@@ -10,6 +10,16 @@ onEvent('recipes', (event) => {
                 Fluid.of('pneumaticcraft:oil', 100)
             ],
             id: `${id_prefix}meat`
+        },
+        {
+            input: 'tconstruct:blood_slime_leaves',
+            outputs: [
+                Item.of('minecraft:nether_wart').withChance(1.5),
+                Item.of('tconstruct:blood_slime_sapling').withChance(0.1),
+                Item.of('tconstruct:ichor_slime_ball').withChance(0.25),
+                Fluid.of('tconstruct:blood', 50)
+            ],
+            id: `${id_prefix}nether_wart`
         }
     ];
     recipes.forEach((recipe) => {
