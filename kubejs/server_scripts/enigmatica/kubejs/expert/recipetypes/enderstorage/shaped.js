@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
         return;
     }
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'enderstorage:ender_pouch',
             pattern: ['ABA', 'CEC', 'ADA'],
@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: { tag: 'forge:plates/lumium' },
                 B: { tag: 'forge:wool' },
-                C: { item: 'minecraft:crying_obsidian' },
+                C: { tag: 'forge:storage_blocks/hepatizon' },
                 D: { item: 'botania:corporea_spark' },
                 E: { item: 'occultism:satchel' }
             },
@@ -42,15 +42,14 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        const re = event.custom({
-            type: 'enderstorage:create_recipe',
-            result: { item: recipe.output },
-            pattern: recipe.pattern,
-            key: recipe.key
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+    recipes.forEach((recipe) => {
+        event
+            .custom({
+                type: 'enderstorage:create_recipe',
+                result: { item: recipe.output },
+                pattern: recipe.pattern,
+                key: recipe.key
+            })
+            .id(recipe.id);
     });
 });
