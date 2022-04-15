@@ -49,18 +49,6 @@ onEvent('recipes', (event) => {
             },
             id: 'astralsorcery:observatory'
         },
-        /*{
-            output: Item.of('immersiveengineering:blastbrick', 9),
-            pattern: ['ADA', 'CBC', 'AEA'],
-            key: {
-                C: 'immersiveengineering:cokebrick',
-                B: 'minecraft:blast_furnace',
-                A: 'minecraft:red_nether_bricks',
-                D: 'thermal:fire_tnt',
-                E: '#forge:storage_blocks/coal_coke'
-            },
-            id: 'immersiveengineering:crafting/blastbrick'
-        },*/
         {
             output: 'refinedstorage:controller',
             pattern: ['ACACA', 'CDBDC', 'AFEFA', 'CDBDC', 'ACACA'],
@@ -769,6 +757,19 @@ onEvent('recipes', (event) => {
                 G: '#industrialforegoing:machine_frame/supreme'
             },
             id: `${id_prefix}industrial_deuterium_plant_controller`
+        },
+        {
+            output: 'thermal:machine_pyrolyzer',
+            pattern: ['AAAAA', 'AACAA', 'AADAA', 'AEFEA', 'AGGGA'],
+            key: {
+                A: 'immersiveengineering:cokebrick',
+                C: 'thermal:machine_frame',
+                D: Item.of('thermal:fluid_cell').ignoreNBT(),
+                E: '#forge:gears/constantan',
+                F: 'botania:blaze_block',
+                G: 'immersiveengineering:coil_mv'
+            },
+            id: 'thermal:machine_pyrolyzer'
         }
     ];
 
