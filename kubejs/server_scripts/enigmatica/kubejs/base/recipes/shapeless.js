@@ -440,6 +440,17 @@ onEvent('recipes', (event) => {
                                 Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Encyclopedia of Tinkering"}]}'
                             }
                         }
+                    },
+                    apotheosis: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Chronicle of Shadows' },
+                            'patchouli:book': 'apotheosis:apoth_chronicle',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Chronicle of Shadows"}]}'
+                            }
+                        }
                     }
                 }
             }),
