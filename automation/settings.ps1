@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.1.2"
+$MODPACK_VERSION = "1.2.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.1.1"
+$LAST_MODPACK_VERSION = "1.1.2"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -59,7 +59,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 $GAME_VERSIONS = @(8203)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "beta"
+$CLIENT_RELEASE_TYPE = "alpha"
 
 #=====================================================================//
 #  DEPENDENCIES URL
@@ -87,7 +87,7 @@ $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
 	"schematics")
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
-	"betterendforge/client-config.toml",
+	"betterendforge/client.json",
 	"jei/bookmarks.ini",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
