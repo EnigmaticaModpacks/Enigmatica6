@@ -21,9 +21,10 @@
 			description: [
 				"In the ancient texts, lightning is often called down to impart the required energy for a reaction. Many a young mageling met their end in the effort…"
 				""
-				"Explore the lands to locate objects of power to assist in this endeavor, seek aid from the elementals that roam the lands, or trust in the signs and symbols left in the treatises on alchemy left by the Ancients. "
+				"Explore the lands to locate objects of power to assist in this endeavor, seek aid from the elementals that roam the lands, or trust in the treatises on alchemy left by the Ancients."
 			]
 			dependencies: ["48BA066E1B977D32"]
+			min_width: 300
 			id: "72D589CE18202510"
 			tasks: [{
 				id: "61813D97AAD3C2B9"
@@ -60,6 +61,7 @@
 				"Some few may still remain buried near the sea, though the process of their creation has survived to present day."
 			]
 			dependencies: ["72D589CE18202510"]
+			min_width: 300
 			id: "55B791C2720332C5"
 			tasks: [{
 				id: "606F700B17783FF9"
@@ -74,11 +76,17 @@
 				"And so it begins, this pathway to the arcane arts…"
 				""
 				"The Ancients described many pathways through the arts, many disciplines intertwined. Regardless of where those paths lead, they all began with a conduit to channel the vast energies they worked with. "
+				""
+				"-------------------------------------------------"
+				"Performing Lightning Crafting, such as is required to make conduits, is simple enough. Drop all the items on the ground and strike it with lightning. Large batches may be crafted at once with a single strike."
+				""
+				"Do note that Ars Nouveau’s lightning spell is not currently compatible with Lightning Crafting."
 			]
 			dependencies: [
 				"55B791C2720332C5"
 				"26800BC5BDEC484A"
 			]
+			min_width: 300
 			id: "2A5E2A21BFECF76C"
 			tasks: [{
 				id: "0887A21EA010D9D6"
@@ -451,6 +459,7 @@
 				"Seals have also been known to give people a variety of precious materials from the ocean depths. Perhaps they’ll be able to assist?"
 			]
 			dependencies: ["72D589CE18202510"]
+			min_width: 300
 			id: "26800BC5BDEC484A"
 			tasks: [{
 				id: "35E1F20C18B5A6B7"
