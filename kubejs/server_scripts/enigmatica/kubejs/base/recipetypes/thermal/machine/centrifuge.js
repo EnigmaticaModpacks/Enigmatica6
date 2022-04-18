@@ -22,6 +22,23 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}nether_wart`
         }
     ];
+    
+    honeyVarieties.forEach((honeyVariety) => {
+        if(honeyVariety == 'resourcefulbees:honey') {
+            return;
+        }
+
+        let honey = honeyVariety.split(':')[1];
+        recipes.push({
+            input: Item.of(`${honeyVariety}_bottle`),
+            outputs: [
+                Item.of('minecraft:glass_bottle'),
+                Fluid.of(honeyVariety, 250)
+            ],
+            id: `${id_prefix}honey/${honey}`
+        });
+    });
+    
     recipes.forEach((recipe) => {
         event.recipes.thermal.centrifuge(recipe.outputs, recipe.input).id(recipe.id);
     });
