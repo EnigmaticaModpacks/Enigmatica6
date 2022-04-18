@@ -148,6 +148,14 @@ onEvent('recipes', (event) => {
             time: 20 * 20,
             byproducts: [{ fluid: 'materialis:molten_regalium', amount: 48 }],
             id: 'materialis:smeltery/melting/metal/utherium/ore'
+        },
+        {
+            ingredient: { tag: 'forge:ores/starmetal' },
+            result: { fluid: 'materialis:molten_starmetal', amount: 288 },
+            temperature: 750,
+            time: 20 * 22,
+            byproducts: [{ fluid: 'materialis:molten_starmetal', amount: 48 }],
+            id: 'materialis:smeltery/melting/metal/starmetal/ore'
         }
     ];
 
