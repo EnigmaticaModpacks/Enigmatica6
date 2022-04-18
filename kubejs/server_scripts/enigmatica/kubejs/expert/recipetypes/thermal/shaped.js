@@ -48,7 +48,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('thermal:rf_coil'),
-            pattern: ['CA ', 'ABA', ' AC'],
+            pattern: [' AC', 'ABA', 'CA '],
             key: {
                 A: '#forge:dusts/redstone',
                 B: '#forge:rods/gold_copper',
