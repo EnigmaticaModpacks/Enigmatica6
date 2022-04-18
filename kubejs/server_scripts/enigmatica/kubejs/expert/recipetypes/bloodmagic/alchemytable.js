@@ -133,7 +133,7 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:alchemytable/reagent_lava'
         },
         {
-            inputs: ['#forge:saplings', '#forge:saplings', 'minecraft:sugar_cane', 'thermal:phytogro'],
+            inputs: ['#minecraft:saplings', '#minecraft:saplings', 'minecraft:sugar_cane', 'thermal:phytogro'],
             output: 'bloodmagic:reagentgrowth',
             count: 1,
             syphon: 2000,
