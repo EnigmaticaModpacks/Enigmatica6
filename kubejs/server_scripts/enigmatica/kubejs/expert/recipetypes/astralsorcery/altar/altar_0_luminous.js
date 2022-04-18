@@ -94,7 +94,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 0,
             duration: 100,
-            starlight: 700,
+            starlight: 500,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
             id: `${id_prefix}animal_spawner`
         },
@@ -114,7 +114,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 0,
             duration: 100,
-            starlight: 700,
+            starlight: 500,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
             id: `${id_prefix}runic_altar`
         },
