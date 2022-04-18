@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 2,
             duration: 400,
-            starlight: 3800,
+            starlight: 3500,
             recipe_class: 'astralsorcery:trait_upgrade',
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -91,7 +91,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 2,
             duration: 400,
-            starlight: 3800,
+            starlight: 3500,
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:built_in_effect_discovery_central_beam',
@@ -121,7 +121,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 2,
             duration: 400,
-            starlight: 3800,
+            starlight: 3500,
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:pillar_sparkle',
@@ -302,7 +302,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 2,
             duration: 400,
-            starlight: 3800,
+            starlight: 3500,
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:built_in_effect_discovery_central_beam',

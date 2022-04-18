@@ -58,7 +58,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 1,
             duration: 200,
-            starlight: 1900,
+            starlight: 1400,
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
@@ -90,7 +90,7 @@ onEvent('recipes', (event) => {
             output: Item.of('astralsorcery:shifting_star'),
             altar_type: 1,
             duration: 200,
-            starlight: 1600,
+            starlight: 1400,
             pattern: ['A___A', '_ECB_', '_CDC_', '_BCE_', 'A___A'],
             key: {
                 A: { tag: 'forge:gems/niotic' },
@@ -130,7 +130,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 1,
             duration: 200,
-            starlight: 1600,
+            starlight: 1400,
             effects: [
                 'astralsorcery:pillar_sparkle',
                 'astralsorcery:built_in_effect_discovery_central_beam',
@@ -165,7 +165,7 @@ onEvent('recipes', (event) => {
             output: Item.of('cookingforblockheads:sink'),
             altar_type: 1,
             duration: 200,
-            starlight: 1400,
+            starlight: 1000,
             pattern: ['A___A', '_BCB_', '_GEG_', '_GFG_', 'D___D'],
             key: {
                 A: { tag: 'botania:runes/water' },
@@ -242,7 +242,7 @@ onEvent('recipes', (event) => {
             },
             altar_type: 1,
             duration: 200,
-            starlight: 1600,
+            starlight: 1400,
             effects: ['astralsorcery:pillar_sparkle'],
             id: 'astralsorcery:altar/attunement_altar'
         }
