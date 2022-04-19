@@ -21,9 +21,9 @@
 
 	[MachineResourceProductionConfig.SludgeRefinerConfig]
 		#Amount of Power Consumed per Tick - Default: [40FE]
-		powerPerTick = 2500
+		powerPerTick = 500
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 50000
+		maxStoredPower = 10000
 		#Max Amount of Stored Fluid [Sludge] - Default: [8000mB]
 		maxSludgeTankSize = 16000
 
@@ -47,7 +47,7 @@
 
 	[MachineResourceProductionConfig.ResourcefulFurnaceConfig]
 		#Amount of Power Consumed per Tick - Default: [400FE]
-		powerPerTick = 800
+		powerPerTick = 500
 		#Max Stored Power [FE] - Default: [10000 FE]
 		maxStoredPower = 10000
 		#Max Amount of Stored Fluid [Essence] - Default: [8000mB]
