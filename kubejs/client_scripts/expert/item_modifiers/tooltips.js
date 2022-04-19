@@ -69,7 +69,7 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['kubejs:medium_machinery_schematics'],
             text: [
-                Text.of(`Unlocks the ability to form the following strutures:`).blue(),
+                Text.of(`Unlocks the ability to form the following structures:`).blue(),
                 Text.of(`- Automated Engineer's Workbench`).aqua(),
                 Text.of(`- Diesel Generator`).aqua(),
                 Text.of(`- Excavator`).aqua(),
@@ -85,7 +85,7 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['kubejs:heavy_machinery_schematics'],
             text: [
-                Text.of(`Unlocks the ability to form the following strutures:`).blue(),
+                Text.of(`Unlocks the ability to form the following structures:`).blue(),
                 Text.of(`- Arc Furnace`).aqua(),
                 Text.of(`- Assembler`).aqua(),
                 Text.of(`- Coker Unit`).aqua(),
