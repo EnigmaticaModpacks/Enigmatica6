@@ -373,7 +373,7 @@
 		}
 		{
 			x: 6.0d
-			y: 2.5d
+			y: 3.0d
 			description: ["Craft a Magma crucible to pave the way towards tool tinkering and advanced metallurgy. "]
 			dependencies: ["508E396542F84E94"]
 			id: "15C239A8575142B1"
@@ -497,7 +497,7 @@
 		}
 		{
 			x: 7.5d
-			y: 2.5d
+			y: 3.0d
 			dependencies: ["2803A0750EE32FBC"]
 			optional: true
 			id: "6BAC6A8BB59E458E"
@@ -563,7 +563,7 @@
 			]
 		}
 		{
-			x: 8.0d
+			x: 7.5d
 			y: 4.0d
 			dependencies: ["6BAC6A8BB59E458E"]
 			optional: true
@@ -625,8 +625,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 9.0d
+			x: 6.0d
+			y: 9.5d
 			shape: "hexagon"
 			description: [
 				"Some like it hot. Real hot."
@@ -642,7 +642,7 @@
 			}]
 		}
 		{
-			x: 6.5d
+			x: 6.0d
 			y: 4.0d
 			shape: "hexagon"
 			description: [
@@ -685,7 +685,7 @@
 			}]
 		}
 		{
-			x: 6.5d
+			x: 6.0d
 			y: 1.5d
 			description: [
 				"So soft and… wait isn’t this made of slag?"
@@ -799,8 +799,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 6.0d
+			x: 6.0d
+			y: 6.5d
 			description: [
 				"Making decent circuitry is tough but kludging something basic together will do for now. "
 				""
@@ -863,6 +863,25 @@
 					id: "4689407918AFE07B"
 					type: "item"
 					item: "create:blaze_burner"
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			description: ["The boundless oceans hold untold treasures but reclaiming them can be a thankless task without proper machinery. A simple fishing barge can be used to dredge up these treasures while also providing an excellent source of nutrition."]
+			dependencies: ["2357CCF3A0758B0C"]
+			id: "31A1002C96D4DC64"
+			tasks: [
+				{
+					id: "3CA6E011378BC3A3"
+					type: "item"
+					item: "littlelogistics:tug"
+				}
+				{
+					id: "4027EC3C87869F9C"
+					type: "item"
+					item: "littlelogistics:fishing_barge"
 				}
 			]
 		}

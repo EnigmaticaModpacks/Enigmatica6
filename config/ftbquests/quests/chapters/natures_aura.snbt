@@ -64,8 +64,16 @@
 			optional: true
 			id: "000000000000009F"
 			tasks: [{
-				id: "00000000000000A0"
-				type: "checkmark"
+				id: "5DCF7175B494CD02"
+				type: "item"
+				title: "Any Sapling"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:saplings"
+					}
+				}
 			}]
 			rewards: [{
 				id: "00000000000000A6"
