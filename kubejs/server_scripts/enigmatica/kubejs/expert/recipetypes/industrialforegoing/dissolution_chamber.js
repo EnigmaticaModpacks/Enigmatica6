@@ -102,6 +102,25 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
+                'rftoolscontrol:cpu_core_500',
+                '#forge:alloys/advanced',
+                '#forge:alloys/advanced',
+                '#forge:circuits/basic',
+                'kubejs:memory_advanced_filled',
+                'bloodmagic:blankslate',
+                'bloodmagic:blankslate',
+                'bloodmagic:blankslate'
+            ],
+            inputFluid: 'mekanism:lithium',
+            inputFluidAmount: 100,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:advanced_control_circuit', count: 2 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: `${id_prefix}advanced_control_circuit_magic`
+        },
+        {
+            inputs: [
                 'rftoolscontrol:cpu_core_1000',
                 '#forge:alloys/elite',
                 '#forge:alloys/elite',
@@ -118,6 +137,25 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
+                'rftoolscontrol:cpu_core_1000',
+                '#forge:alloys/elite',
+                '#forge:alloys/elite',
+                '#forge:circuits/advanced',
+                'kubejs:memory_elite_filled',
+                'bloodmagic:infusedslate',
+                'bloodmagic:infusedslate',
+                'bloodmagic:infusedslate'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 100,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:elite_control_circuit', count: 2 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: `${id_prefix}elite_control_circuit_magic`
+        },
+        {
+            inputs: [
                 'rftoolscontrol:cpu_core_2000',
                 '#forge:alloys/ultimate',
                 '#forge:alloys/ultimate',
@@ -131,6 +169,25 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:control_circuit/ultimate'
+        },
+        {
+            inputs: [
+                'rftoolscontrol:cpu_core_2000',
+                '#forge:alloys/ultimate',
+                '#forge:alloys/ultimate',
+                '#forge:circuits/elite',
+                'kubejs:memory_ultimate_filled',
+                'bloodmagic:etherealslate',
+                'bloodmagic:etherealslate',
+                'bloodmagic:etherealslate'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 100,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:ultimate_control_circuit', count: 2 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: `${id_prefix}ultimate_control_circuit_magic`
         },
         {
             inputs: [
