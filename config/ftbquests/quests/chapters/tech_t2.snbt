@@ -401,8 +401,12 @@
 		}
 		{
 			x: 3.0d
-			y: 6.0d
-			description: ["Amadron at last. But is there anyone out there still listening? Check what’s available for trade. Perhaps you’ll be surprised. "]
+			y: 6.5d
+			description: [
+				"Amadron at last. But is there anyone out there still listening? "
+				""
+				"It appears you’re not alone in your endeavors; accessing the Amadron network has allowed you to tap into a small global community of like-minded engineers looking to trade for knowledge and materials."
+			]
 			dependencies: ["5258B21FEBF3E222"]
 			id: "26BE40771EA0B53D"
 			tasks: [{
@@ -413,14 +417,18 @@
 		}
 		{
 			x: 3.0d
-			y: 7.5d
+			y: 9.0d
 			shape: "gear"
 			description: [
-				"It appears you’re not alone in your endeavors; your recent progress has allowed you to tap into a global yet small network of like-minded engineers looking to trade for knowledge. "
+				"For your massive contributions in providing a new school, the engineers have shared their blueprints for several advanced machines. "
 				""
-				"Help them establish a new school of engineering in exchange for their knowledge of more advanced machinery. "
+				"By receiving these blueprints, you’ll now be able to construct several larger multiblock machines from Immersive Engineering. Be sure to check your Engineer’s Manual to see exactly which block to hit to form them! Hitting them on the wrong block, or even the wrong side of the block will not work!"
 			]
-			dependencies: ["26BE40771EA0B53D"]
+			dependencies: [
+				"2F4E5595CF6E7C18"
+				"2B8E1E0F065271FC"
+				"77685CCEBB43BE31"
+			]
 			id: "44D8EF9036E30760"
 			tasks: [{
 				id: "6DF327D277407CBF"
@@ -440,6 +448,82 @@
 				type: "item"
 				item: "rftoolsbase:machine_frame"
 			}]
+		}
+		{
+			x: 2.0d
+			y: 7.0d
+			shape: "diamond"
+			description: [
+				"Short on rare resources?"
+				""
+				"The Amadron network maintained by the few remaining engineers around the world specializes in in targeted mining operations. "
+				""
+				"Simply provide the drones with the tools they’ll need, and they’ll deliver a plethora of useful resources direct to your doorstep!"
+			]
+			dependencies: ["26BE40771EA0B53D"]
+			id: "50971B41665D4AD5"
+			tasks: [{
+				id: "5C3819A92A37BF5A"
+				type: "item"
+				item: "kubejs:amadron_survey_tools"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 8.0d
+			shape: "diamond"
+			description: ["Empty bellies are terrible at physical labor, and worse still at the mental efforts to come. Prepare nourishing meals to help these engineers as they build their school and prepare to welcome their new students. "]
+			dependencies: ["26BE40771EA0B53D"]
+			id: "2F4E5595CF6E7C18"
+			tasks: [{
+				id: "0B08E1FD7B99D610"
+				type: "item"
+				item: "kubejs:engineering_student_meals"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 8.0d
+			shape: "diamond"
+			description: ["Clearing the land and laying the foundations for this school would be grueling work without mechanical aid. Send along some supplies to get the work done extra quick. "]
+			dependencies: ["26BE40771EA0B53D"]
+			id: "2B8E1E0F065271FC"
+			tasks: [{
+				id: "792FFEF4FD9A35BE"
+				type: "item"
+				item: "kubejs:construction_tools"
+			}]
+		}
+		{
+			title: "Building Materials"
+			x: 3.0d
+			y: 7.5d
+			shape: "diamond"
+			description: [
+				"It appears this small network of engineers is looking to expand their numbers. But they’re lacking in the raw resources to bring their dreams to reality."
+				""
+				"Without a doubt, building an entire school is no small undertaking. Begin gathering the materials they’ve requested for their building project. "
+			]
+			dependencies: ["26BE40771EA0B53D"]
+			id: "77685CCEBB43BE31"
+			tasks: [
+				{
+					id: "65B40E4EE6596323"
+					type: "item"
+					item: "kubejs:building_materials"
+					count: 5L
+				}
+				{
+					id: "457B0FD1BEFC5F7B"
+					type: "item"
+					item: "kubejs:foundation_materials"
+				}
+				{
+					id: "6B9D17102A99F785"
+					type: "item"
+					item: "kubejs:landscaping_materials"
+				}
+			]
 		}
 	]
 }

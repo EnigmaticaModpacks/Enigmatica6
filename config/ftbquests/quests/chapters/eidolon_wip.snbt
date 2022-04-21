@@ -10,6 +10,7 @@
 	quests: [
 		{
 			title: "Welcome to Eidolon!"
+			icon: "eidolon:codex"
 			x: 1.5d
 			y: 0.5d
 			shape: "hexagon"
@@ -27,9 +28,9 @@
 			optional: true
 			id: "0000000000000E80"
 			tasks: [{
-				id: "0000000000000E81"
-				type: "checkmark"
-				icon: "eidolon:codex"
+				id: "5BB374740D4295E0"
+				type: "item"
+				item: "eidolon:tattered_cloth"
 			}]
 			rewards: [{
 				id: "5855578CE2117C3E"
