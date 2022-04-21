@@ -195,7 +195,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: 'pneumaticcraft:plastic',
-                B: 'rftoolscontrol:ram_chip',
+                B: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 C: 'pneumaticcraft:printed_circuit_board'
             },
             id: 'rftoolscontrol:program_card'
@@ -352,7 +352,7 @@ onEvent('recipes', (event) => {
             output: 'rftoolsutility:crafter1',
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {
-                A: 'rftoolscontrol:ram_chip',
+                A: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 B: 'pneumaticcraft:smart_chest',
                 C: 'rftoolscontrol:craftingstation',
                 D: 'rftoolsbase:machine_frame'
@@ -363,7 +363,7 @@ onEvent('recipes', (event) => {
             output: 'rftoolsutility:crafter2',
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {
-                A: 'rftoolscontrol:ram_chip',
+                A: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 B: 'powah:capacitor_blazing',
                 C: 'rftoolscontrol:craftingstation',
                 D: 'rftoolsutility:crafter1'
@@ -374,7 +374,7 @@ onEvent('recipes', (event) => {
             output: 'rftoolsutility:crafter3',
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {
-                A: 'rftoolscontrol:ram_chip',
+                A: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 B: 'powah:capacitor_nitro',
                 C: 'rftoolscontrol:craftingstation',
                 D: 'rftoolsutility:crafter2'

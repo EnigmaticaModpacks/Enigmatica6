@@ -44,6 +44,7 @@ onEvent('item.registry', (event) => {
         'incomplete_book',
         'incomplete_capacitor_basic_large',
         'astrogro',
+        'advanced_ram_chip',
 
         'automation_mastery_shard',
         'engineering_mastery_shard',

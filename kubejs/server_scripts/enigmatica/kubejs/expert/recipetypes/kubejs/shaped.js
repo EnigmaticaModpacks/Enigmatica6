@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:basic_memory_package',
             pattern: ['AAA', 'AAA', 'BC '],
             key: {
-                A: 'rftoolscontrol:ram_chip',
+                A: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 B: 'mekanism:cardboard_box',
                 C: 'pneumaticcraft:unassembled_pcb'
             },
