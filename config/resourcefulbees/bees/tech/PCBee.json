@@ -35,22 +35,7 @@
         ]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-
-        "mainOutput": "pneumaticcraft:etching_acid",
-        "mainOutputWeight": 0.2,
-        "mainOutputCount": 250,
-        "hasFluidOutput": true,
-
-        "secondaryOutput": "pneumaticcraft:ingot_iron_compressed",
-        "secondaryOutputWeight": 0.05,
-        "secondaryOutputCount": 1,
-
-        "bottleOutput": "pneumaticcraft:empty_pcb",
-        "bottleOutputWeight": 0.01,
-        "bottleOutputCount": 1,
-
-        "mainInputCount": 1
+        "hasCentrifugeOutput": false
     },
     "SpawnData": {
         "canSpawnInWorld": false

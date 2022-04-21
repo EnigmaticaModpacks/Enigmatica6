@@ -47,6 +47,54 @@ onEvent('recipes', (event) => {
             ],
             time: 200,
             noBottleInput: true
+        },
+        {
+            ingredient: {
+                item: 'resourcefulbees:pcbee_honeycomb'
+            },
+            results: [
+                {
+                    item: 'pneumaticcraft:empty_pcb',
+                    chance: 0.01,
+                    count: 1
+                },
+                {
+                    item: 'pneumaticcraft:ingot_iron_compressed',
+                    chance: 0.05,
+                    count: 1
+                },
+                {
+                    fluid: 'pneumaticcraft:etching_acid',
+                    amount: 250,
+                    chance: 0.2
+                }
+            ],
+            time: 200,
+            noBottleInput: true
+        },
+        {
+            ingredient: {
+                item: 'resourcefulbees:pcbee_honeycomb_block'
+            },
+            results: [
+                {
+                    item: 'pneumaticcraft:empty_pcb',
+                    chance: 0.01,
+                    count: 9
+                },
+                {
+                    item: 'pneumaticcraft:ingot_iron_compressed',
+                    chance: 0.05,
+                    count: 9
+                },
+                {
+                    fluid: 'pneumaticcraft:etching_acid',
+                    amount: 2250,
+                    chance: 0.2
+                }
+            ],
+            time: 200,
+            noBottleInput: true
         }
     ];
 
