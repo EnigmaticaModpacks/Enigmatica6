@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/kubejs/shaped';
+    const id_prefix = 'enigmatica:expert/kubejs/shaped/';
     /*
         ,
         {
@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:basic_memory_package',
             pattern: ['AAA', 'AAA', 'BC '],
             key: {
-                A: 'rftoolscontrol:ram_chip',
+                A: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 B: 'mekanism:cardboard_box',
                 C: 'pneumaticcraft:unassembled_pcb'
             },
@@ -67,7 +67,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'kubejs:cpu_core_500_package',
-            pattern: ['BCB', 'BAB', 'D  '],
+            pattern: ['BAB', 'ADA', 'BCB'],
             key: {
                 A: '#forge:wires/lead',
                 B: 'refinedstorage:basic_processor',
@@ -78,22 +78,22 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'kubejs:cpu_core_1000_package',
-            pattern: ['BCB', 'BAB', 'D  '],
+            pattern: ['BAB', 'ADA', 'BCB'],
             key: {
                 A: '#forge:wires/copper',
                 B: 'refinedstorage:improved_processor',
-                C: 'rftoolscontrol:cpu_core_500',
+                C: 'pneumaticcraft:unassembled_pcb',
                 D: 'mekanism:cardboard_box'
             },
             id: `${id_prefix}cpu_core_1000`
         },
         {
             output: 'kubejs:cpu_core_2000_package',
-            pattern: ['BCB', 'BAB', 'D  '],
+            pattern: ['BAB', 'ADA', 'BCB'],
             key: {
                 A: '#forge:wires/electrum',
                 B: 'refinedstorage:advanced_processor',
-                C: 'rftoolscontrol:cpu_core_1000',
+                C: 'pneumaticcraft:unassembled_pcb',
                 D: 'mekanism:cardboard_box'
             },
             id: `${id_prefix}cpu_core_2000`

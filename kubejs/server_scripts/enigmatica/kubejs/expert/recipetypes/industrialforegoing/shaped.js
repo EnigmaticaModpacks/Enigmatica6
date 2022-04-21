@@ -383,7 +383,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:dyes/gray',
                 B: '#forge:dusts/redstone',
-                C: 'rftoolscontrol:ram_chip'
+                C: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip']
             },
             id: `${id_prefix}range_addon0`
         },
@@ -393,7 +393,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:dyes/blue',
                 B: '#forge:dusts/redstone',
-                C: 'rftoolscontrol:ram_chip'
+                C: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip']
             },
             id: `${id_prefix}range_addon1`
         },
@@ -403,7 +403,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:dyes/light_gray',
                 B: '#forge:dusts/redstone',
-                C: 'rftoolscontrol:ram_chip'
+                C: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip']
             },
             id: `${id_prefix}range_addon2`
         },

@@ -430,6 +430,15 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:artisinal_chalk_set', count: 1 }],
             id: `${id_prefix}artisinal_chalk_set`
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:transistor', count: 4 },
+                { tag: 'forge:alloys/elite', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:advanced_ram_chip', count: 16 }],
+            id: `${id_prefix}advanced_ram_chip`
         }
     ];
 

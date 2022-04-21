@@ -99,7 +99,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {
                 A: 'thermal:signalum_glass',
-                B: 'rftoolscontrol:ram_chip',
+                B: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 C: 'immersiveengineering:wirecoil_redstone',
                 D: '#forge:sheetmetals/aluminum'
             },
