@@ -91,6 +91,15 @@
 	#Regen bonus per potion level
 	#Range: > 0
 	potionRegen = 10
+
+[Spells]
 	#Enforce augment cap on casting? Turn this off if you are a pack maker and want to create more powerful items than players.
 	enforceCapOnCast = true
+	#Enforce glyph per spell limit on casting? Turn this off if you are a pack maker and want to create more powerful items than players.
+	enforceGlyphLimitOnCast = true
+
+#Items
+[item]
+	#Spawn Caster Tomes in Dungeon Loot?
+	spawnTomes = true
 

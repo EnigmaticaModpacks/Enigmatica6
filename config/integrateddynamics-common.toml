@@ -139,6 +139,10 @@
 		#The energy capacity of a mechanical drying basin.
 		capacity = 100000
 
+	[machine.cable]
+		#If cable shapes should be determined dynamically. Disable this if FPS issues would occur.
+		dynamicShape = true
+
 [worldgeneration]
 
 	[worldgeneration.menril_log_filled]
