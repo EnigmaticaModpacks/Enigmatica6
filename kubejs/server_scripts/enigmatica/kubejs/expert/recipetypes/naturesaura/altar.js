@@ -72,8 +72,8 @@ onEvent('recipes', (event) => {
             input: 'minecraft:ender_pearl',
             output: { item: 'integrateddynamics:proto_chorus' },
             aura_type: 'naturesaura:nether',
-            aura: 135000,
-            time: 700,
+            aura: 5000,
+            time: 20,
             id: 'integrateddynamics:crafting/proto_chorus'
         },
         {
@@ -144,6 +144,38 @@ onEvent('recipes', (event) => {
             aura: 50000,
             time: 20,
             id: `${id_prefix}floral_fertilizer`
+        },
+        {
+            input: 'minecraft:slime_ball',
+            output: { item: 'tconstruct:ichor_slime_ball' },
+            aura_type: 'naturesaura:nether',
+            aura: 5000,
+            time: 20,
+            id: `${id_prefix}ichor_slime_ball`
+        },
+        {
+            input: 'minecraft:slime_ball',
+            output: { item: 'tconstruct:sky_slime_ball' },
+            aura_type: 'naturesaura:overworld',
+            aura: 5000,
+            time: 20,
+            id: `${id_prefix}sky_slime_ball`
+        },
+        {
+            input: 'tconstruct:earth_congealed_slime',
+            output: { item: 'tconstruct:ichor_congealed_slime' },
+            aura_type: 'naturesaura:nether',
+            aura: 5000 * 3,
+            time: 20 * 3,
+            id: `${id_prefix}ichor_congealed_slime`
+        },
+        {
+            input: 'tconstruct:earth_congealed_slime',
+            output: { item: 'tconstruct:sky_congealed_slime' },
+            aura_type: 'naturesaura:overworld',
+            aura: 5000 * 3,
+            time: 20 * 3,
+            id: `${id_prefix}sky_congealed_slime`
         }
     ];
 
