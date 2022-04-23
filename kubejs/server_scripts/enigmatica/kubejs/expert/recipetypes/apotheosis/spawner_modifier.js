@@ -1,59 +1,69 @@
 onEvent('recipes', (event) => {
-    if (global.isNormalMode == false) {
+    if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:normal/apotheosis/spawner_modifier/';
+    const id_prefix = 'enigmatica:expert/apotheosis/spawner_modifier/';
     const recipes = [
         {
-            mainhand: { item: 'comforts:rope_and_nail' },
+            mainhand: { item: 'ars_nouveau:glyph_freeze' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
             stat_changes: [{ id: 'no_ai', value: true }],
             id: 'apotheosis:spawner/no_ai'
         },
         {
-            mainhand: { item: 'comforts:rope_and_nail' },
-            offhand: { item: 'minecraft:quartz' },
+            mainhand: { item: 'ars_nouveau:glyph_freeze' },
+            offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [{ id: 'no_ai', value: false }],
             id: 'apotheosis:spawner/no_ai_inverted'
         },
         {
-            mainhand: { item: 'upgrade_aquatic:elder_eye' },
+            mainhand: { item: 'meetyourfight:spectres_eye' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
             stat_changes: [{ id: 'ignore_players', value: true }],
             id: 'apotheosis:spawner/ignore_players'
         },
         {
-            mainhand: { item: 'upgrade_aquatic:elder_eye' },
-            offhand: { item: 'minecraft:quartz' },
+            mainhand: { item: 'meetyourfight:spectres_eye' },
+            offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [{ id: 'ignore_players', value: false }],
             id: 'apotheosis:spawner/ignore_players_inverted'
         },
         {
-            mainhand: { item: 'architects_palette:abyssaline_lamp' },
+            mainhand: { item: 'ars_nouveau:glyph_intangible' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
             stat_changes: [{ id: 'ignore_conditions', value: true }],
             id: 'apotheosis:spawner/ignore_conditions'
         },
         {
-            mainhand: { item: 'architects_palette:abyssaline_lamp' },
-            offhand: { item: 'minecraft:quartz' },
+            mainhand: { item: 'ars_nouveau:glyph_intangible' },
+            offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [{ id: 'ignore_conditions', value: false }],
             id: 'apotheosis:spawner/ignore_conditions_inverted'
         },
         {
-            mainhand: { item: 'glassential:glass_dark' },
+            mainhand: { item: 'ars_nouveau:glyph_shield' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
             stat_changes: [{ id: 'ignore_light', value: true }],
             id: 'apotheosis:spawner/ignore_light'
         },
         {
-            mainhand: { item: 'glassential:glass_dark' },
-            offhand: { item: 'minecraft:quartz' },
+            mainhand: { item: 'ars_nouveau:glyph_shield' },
+            offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [{ id: 'ignore_light', value: false }],
             id: 'apotheosis:spawner/ignore_light_inverted'
         },
         {
-            mainhand: { item: 'upgrade_aquatic:tooth_lantern' },
+            mainhand: { item: 'ars_nouveau:glyph_linger' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
             stat_changes: [
                 {
                     id: 'max_nearby_entities',
@@ -65,8 +75,8 @@ onEvent('recipes', (event) => {
             id: 'apotheosis:spawner/max_nearby'
         },
         {
-            mainhand: { item: 'upgrade_aquatic:tooth_lantern' },
-            offhand: { item: 'minecraft:quartz' },
+            mainhand: { item: 'ars_nouveau:glyph_linger' },
+            offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [
                 {
@@ -79,7 +89,9 @@ onEvent('recipes', (event) => {
             id: 'apotheosis:spawner/max_nearby_inverted'
         },
         {
-            mainhand: { item: 'minecraft:clock' },
+            mainhand: { item: 'ars_nouveau:glyph_delay' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
             stat_changes: [
                 {
                     id: 'min_delay',
@@ -91,8 +103,8 @@ onEvent('recipes', (event) => {
             id: 'apotheosis:spawner/min_delay'
         },
         {
-            mainhand: { item: 'minecraft:clock' },
-            offhand: { item: 'minecraft:quartz' },
+            mainhand: { item: 'ars_nouveau:glyph_delay' },
+            offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [
                 {
@@ -105,7 +117,9 @@ onEvent('recipes', (event) => {
             id: 'apotheosis:spawner/min_delay_inverted'
         },
         {
-            mainhand: { item: 'aquaculture:double_hook' },
+            mainhand: { item: 'ars_nouveau:glyph_summon_decoy' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
             stat_changes: [
                 {
                     id: 'spawn_count',
@@ -117,8 +131,8 @@ onEvent('recipes', (event) => {
             id: 'apotheosis:spawner/spawn_count'
         },
         {
-            mainhand: { item: 'aquaculture:double_hook' },
-            offhand: { item: 'minecraft:quartz' },
+            mainhand: { item: 'ars_nouveau:glyph_summon_decoy' },
+            offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [
                 {
@@ -131,7 +145,9 @@ onEvent('recipes', (event) => {
             id: 'apotheosis:spawner/spawn_count_inverted'
         },
         {
-            mainhand: { item: 'minecraft:sea_lantern' },
+            mainhand: { item: 'ars_nouveau:ritual_scrying' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
             stat_changes: [
                 {
                     id: 'req_player_range',
@@ -143,8 +159,8 @@ onEvent('recipes', (event) => {
             id: 'apotheosis:spawner/player_range'
         },
         {
-            mainhand: { item: 'minecraft:sea_lantern' },
-            offhand: { item: 'minecraft:quartz' },
+            mainhand: { item: 'ars_nouveau:ritual_scrying' },
+            offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [
                 {
@@ -157,7 +173,9 @@ onEvent('recipes', (event) => {
             id: 'apotheosis:spawner/player_range_inverted'
         },
         {
-            mainhand: { item: 'botania:blaze_block' },
+            mainhand: { item: 'ars_nouveau:glyph_aoe' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
             stat_changes: [
                 {
                     id: 'spawn_range',
@@ -169,8 +187,8 @@ onEvent('recipes', (event) => {
             id: 'apotheosis:spawner/spawn_range'
         },
         {
-            mainhand: { item: 'botania:blaze_block' },
-            offhand: { item: 'minecraft:quartz' },
+            mainhand: { item: 'ars_nouveau:glyph_aoe' },
+            offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [
                 {
@@ -181,6 +199,30 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: 'apotheosis:spawner/spawn_range_inverted'
+        },
+        {
+            mainhand: { item: 'ars_nouveau:glyph_sensitive' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
+            stat_changes: [
+                {
+                    id: 'redstone_control',
+                    value: true
+                }
+            ],
+            id: 'apotheosis:spawner/redstone_control'
+        },
+        {
+            mainhand: { item: 'ars_nouveau:glyph_sensitive' },
+            offhand: { item: 'naturesaura:token_sorrow' },
+            consumes_offhand: false,
+            stat_changes: [
+                {
+                    id: 'redstone_control',
+                    value: false
+                }
+            ],
+            id: 'apotheosis:spawner/redstone_control_inverted'
         }
     ];
 
