@@ -34,8 +34,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 1.5d
+			x: 1.5d
+			y: 3.0d
 			description: ["Exceptionally transformative and exceedingly dangerous, Hellfire has been used in the arcane arts since time immemorable. There is no safe way for mere humans to work with it directly, however, though the Spirits of the Otherworld seem to have no difficulties channeling it through a specially prepared forge. "]
 			dependencies: ["2B6914734BC1B9EA"]
 			id: "76E780FECC4F3BA8"
@@ -46,8 +46,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 0.5d
+			x: 2.0d
+			y: 2.0d
 			description: [
 				"“Not all spirits come willingly. Some find this plane… distasteful. They may still be of use, however, bound into items of power that limit their contact with this place.”"
 				""
@@ -355,7 +355,7 @@
 		}
 		{
 			x: 2.0d
-			y: -3.0d
+			y: -2.5d
 			description: ["It hums subtly when held."]
 			dependencies: ["32D9D96C23106285"]
 			id: "0D8649291801C76C"
@@ -596,8 +596,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 1.5d
+			x: 2.5d
+			y: 3.0d
 			description: [
 				"“Open your eyes and then open your eyes again.”"
 				""
@@ -621,7 +621,11 @@
 			x: 1.0d
 			y: -0.5d
 			shape: "diamond"
-			description: ["Effective as it may be some practitioners find the practice of sacrificing other beings distasteful. The Adept learns early on to give of their own blood as sacrifice, and to draw upon the earth for healing. "]
+			description: [
+				"Effective as it may be, some practitioners find the practice of sacrificing other beings distasteful."
+				""
+				"The Adept learns early on to give of their own blood as sacrifice, and to draw upon the earth for healing. "
+			]
 			dependencies: ["7BA120BEA495D354"]
 			id: "57FFFBB68F2655C1"
 			tasks: [{
@@ -659,7 +663,7 @@
 			description: [
 				"The ancients knew to care for the natural resources at their disposal, using only what is needed and replenishing more than was taken. For every tree cut, two grown. "
 				""
-				"The Aura exuded by life needs similar care. When used in the Natural Arts, it must similarly be replenished. Failure to do will lead to catastrophic consequences."
+				"The Aura exuded by life needs similar care. When used in the Natural Arts, it must similarly be replenished. Failure to do so will lead to catastrophic consequences."
 				""
 				"While many methods exist, The Shooting Mark and Herbivorous Absorber both offer paths to rapid Aura replenishment. Treat Nature well and she’ll respond in kind. Abuse her and face her wrath. "
 			]
