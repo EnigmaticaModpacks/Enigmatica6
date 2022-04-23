@@ -136,6 +136,14 @@ onEvent('recipes', (event) => {
             aura: 20000,
             time: 20,
             id: `${id_prefix}mana_powder`
+        },
+        {
+            input: 'thermal:phytogro',
+            output: { item: 'botania:fertilizer' },
+            aura_type: 'naturesaura:overworld',
+            aura: 50000,
+            time: 20,
+            id: `${id_prefix}floral_fertilizer`
         }
     ];
 
