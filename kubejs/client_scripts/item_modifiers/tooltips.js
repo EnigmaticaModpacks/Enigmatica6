@@ -163,6 +163,10 @@ onEvent('item.tooltip', (event) => {
         {
             items: [/masterfulmachinery:\w+_mana_port/],
             text: [Text.of(`Compatible with Mana Spreaders and Sparks.`).green()]
+        },
+        {
+            items: ['kubejs:amadron_survey_tools'],
+            text: [Text.of(`Tools used by Amadron Drones to gather rare resources.`).aqua()]
         }
     ];
 
