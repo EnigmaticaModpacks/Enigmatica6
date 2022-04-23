@@ -284,6 +284,7 @@ onEvent('recipes', (event) => {
         { output: 'naturesaura:death_ring', id: 'naturesaura:death_ring' },
         { output: 'naturesaura:ender_crate', id: 'naturesaura:ender_crate' },
         { output: 'naturesaura:ender_access', id: 'naturesaura:ender_access' },
+        { output: 'naturesaura:gold_nether_brick', id: 'naturesaura:gold_nether_brick' },
 
         { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
         { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },

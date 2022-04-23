@@ -639,6 +639,12 @@ onEvent('recipes', (event) => {
             output: 'eidolon:unholy_effigy',
             count: 1,
             id: `${id_prefix}unholy_effigy`
+        },
+        {
+            inputs: ['minecraft:nether_bricks', 'naturesaura:gold_fiber', 'thermal:phytogro'],
+            output: 'naturesaura:gold_nether_brick',
+            count: 1,
+            id: `${id_prefix}gold_nether_brick`
         }
     ];
 
