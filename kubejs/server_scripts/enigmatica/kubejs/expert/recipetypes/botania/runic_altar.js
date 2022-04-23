@@ -321,11 +321,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/refined_radiance',
+                '#forge:ingots/refined_glowstone',
                 '#botania:runes/fire',
                 '#botania:runes/summer',
                 '#botania:runes/wrath',
-                'architects_palette:sunstone'
+                'create:refined_radiance_casing'
             ],
             mana: 96000,
             output: 'mythicbotany:muspelheim_rune',
@@ -334,7 +334,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'create:shadow_steel',
+                '#forge:ingots/arcane_gold',
                 '#botania:runes/earth',
                 '#botania:runes/winter',
                 '#botania:runes/sloth',
@@ -347,11 +347,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/shadow_steel',
+                '#forge:ingots/refined_obsidian',
                 '#botania:runes/water',
                 '#botania:runes/winter',
                 '#botania:runes/wrath',
-                'architects_palette:moonstone'
+                'create:shadow_steel_casing'
             ],
             mana: 96000,
             output: 'mythicbotany:niflheim_rune',
