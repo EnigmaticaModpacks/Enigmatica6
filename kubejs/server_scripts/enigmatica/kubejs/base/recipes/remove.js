@@ -58,6 +58,9 @@ onEvent('recipes', (event) => {
     ];
 
     var idRemovals = [
+        'apotheosis:spawner/max_delay_inverted',
+        'apotheosis:spawner/max_delay',
+
         'aquaculture:brown_mushroom_from_fish',
         'aquaculture:gold_nugget_from_blasting',
         'aquaculture:gold_nugget_from_gold_fish',
