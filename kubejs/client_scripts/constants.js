@@ -525,6 +525,7 @@ const recipesToHide = [
             'naturesaura:death_ring',
             'naturesaura:ender_crate',
             'naturesaura:ender_access',
+            'naturesaura:gold_nether_brick',
 
             'pneumaticcraft:air_compressor',
             'pneumaticcraft:advanced_air_compressor',
