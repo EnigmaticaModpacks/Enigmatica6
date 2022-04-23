@@ -48,7 +48,7 @@ onEvent('recipes', (event) => {
             input: 'kubejs:firmament',
             output: { item: 'architects_palette:sunstone' },
             aura_type: 'naturesaura:overworld',
-            aura: 50000,
+            aura: 40000,
             time: 20,
             id: `${id_prefix}sunstone`
         },
@@ -56,7 +56,7 @@ onEvent('recipes', (event) => {
             input: 'ars_nouveau:arcane_stone',
             output: { item: 'naturesaura:infused_stone' },
             aura_type: 'naturesaura:nether',
-            aura: 50000,
+            aura: 40000,
             time: 20,
             id: 'naturesaura:altar/infused_stone'
         },
@@ -127,6 +127,15 @@ onEvent('recipes', (event) => {
             aura: 135000,
             time: 40,
             id: `${id_prefix}warding_stone`
+        },
+        {
+            input: '#forge:gems/mana',
+            output: { item: 'botania:mana_powder', count: 4 },
+            aura_type: 'naturesaura:overworld',
+            catalyst: { item: 'naturesaura:crushing_catalyst' },
+            aura: 20000,
+            time: 20,
+            id: `${id_prefix}mana_powder`
         }
     ];
 
