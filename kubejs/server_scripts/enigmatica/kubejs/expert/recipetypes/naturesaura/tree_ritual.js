@@ -482,6 +482,22 @@ onEvent('recipes', (event) => {
             output: 'botania:brewery',
             time: 4 * time_multiplier,
             id: `${id_prefix}brewery`
+        },
+        {
+            ingredients: [
+                'naturesaura:token_anger',
+                'naturesaura:token_joy',
+                'minecraft:spawner',
+                'ars_nouveau:summoning_crystal',
+                '#forge:storage_blocks/infused_iron',
+                '#forge:storage_blocks/infused_iron',
+                '#forge:storage_blocks/infused_iron',
+                '#forge:storage_blocks/infused_iron'
+            ],
+            sapling: 'quark:lavender_blossom_sapling',
+            output: 'naturesaura:animal_spawner',
+            time: 20 * time_multiplier,
+            id: `${id_prefix}animal_spawner`
         }
 
         /*

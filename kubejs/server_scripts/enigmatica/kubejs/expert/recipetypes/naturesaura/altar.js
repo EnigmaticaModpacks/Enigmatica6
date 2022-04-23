@@ -48,16 +48,16 @@ onEvent('recipes', (event) => {
             input: 'kubejs:firmament',
             output: { item: 'architects_palette:sunstone' },
             aura_type: 'naturesaura:overworld',
-            aura: 15000,
-            time: 80,
+            aura: 50000,
+            time: 20,
             id: `${id_prefix}sunstone`
         },
         {
             input: 'ars_nouveau:arcane_stone',
             output: { item: 'naturesaura:infused_stone' },
             aura_type: 'naturesaura:nether',
-            aura: 15000,
-            time: 40,
+            aura: 50000,
+            time: 20,
             id: 'naturesaura:altar/infused_stone'
         },
         {
@@ -119,6 +119,14 @@ onEvent('recipes', (event) => {
             aura: 15000,
             time: 80,
             id: `${id_prefix}duckweed`
+        },
+        {
+            input: 'ars_nouveau:arcane_stone',
+            output: { item: 'ars_nouveau:warding_stone' },
+            aura_type: 'naturesaura:overworld',
+            aura: 135000,
+            time: 40,
+            id: `${id_prefix}warding_stone`
         }
     ];
 
