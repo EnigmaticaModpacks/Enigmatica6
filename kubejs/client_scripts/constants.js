@@ -297,6 +297,8 @@ const itemsToHide = [
 
     'refinedstorage:silicon',
 
+    'shrink:shrink_ray',
+
     'simplefarming:apple_pie',
     'simplefarming:blueberry_pie',
 
