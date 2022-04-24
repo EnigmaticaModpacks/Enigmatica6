@@ -46,10 +46,9 @@ function Merge-DevelopIntoMaster {
     Write-Host "Make sure you have no unsaved changes!" -ForegroundColor Red
     Write-Host "Ctrl+C to exit"
     pause
-    git stash
-    git checkout orgin/master
+    git checkout master
     git merge develop
-    git checkout orgin/develop
+    git checkout develop
     git merge master
 }
 
