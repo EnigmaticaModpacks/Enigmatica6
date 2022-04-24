@@ -83,22 +83,6 @@ onEvent('recipes', (event) => {
             id: 'astralsorcery:altar/altar_attunement'
         },
         {
-            output: Item.of('naturesaura:animal_spawner'),
-            pattern: ['_____', '_ABA_', '_CDE_', '_ABA_', '_____'],
-            key: {
-                A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: { item: 'ars_nouveau:summoning_crystal' },
-                C: { item: 'naturesaura:token_joy' },
-                D: { item: 'minecraft:spawner' },
-                E: { item: 'naturesaura:token_anger' }
-            },
-            altar_type: 0,
-            duration: 100,
-            starlight: 500,
-            effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
-            id: `${id_prefix}animal_spawner`
-        },
-        {
             output: Item.of('botania:runic_altar'),
             pattern: ['_____', '_AAA_', '_ABA_', '_CDC_', '_____'],
             key: {

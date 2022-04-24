@@ -48,16 +48,16 @@ onEvent('recipes', (event) => {
             input: 'kubejs:firmament',
             output: { item: 'architects_palette:sunstone' },
             aura_type: 'naturesaura:overworld',
-            aura: 15000,
-            time: 80,
+            aura: 40000,
+            time: 20,
             id: `${id_prefix}sunstone`
         },
         {
             input: 'ars_nouveau:arcane_stone',
             output: { item: 'naturesaura:infused_stone' },
             aura_type: 'naturesaura:nether',
-            aura: 15000,
-            time: 40,
+            aura: 40000,
+            time: 20,
             id: 'naturesaura:altar/infused_stone'
         },
         {
@@ -72,8 +72,8 @@ onEvent('recipes', (event) => {
             input: 'minecraft:ender_pearl',
             output: { item: 'integrateddynamics:proto_chorus' },
             aura_type: 'naturesaura:nether',
-            aura: 135000,
-            time: 700,
+            aura: 5000,
+            time: 20,
             id: 'integrateddynamics:crafting/proto_chorus'
         },
         {
@@ -119,6 +119,103 @@ onEvent('recipes', (event) => {
             aura: 15000,
             time: 80,
             id: `${id_prefix}duckweed`
+        },
+        {
+            input: 'ars_nouveau:arcane_stone',
+            output: { item: 'ars_nouveau:warding_stone' },
+            aura_type: 'naturesaura:overworld',
+            aura: 135000,
+            time: 40,
+            id: `${id_prefix}warding_stone`
+        },
+        {
+            input: '#forge:gems/mana',
+            output: { item: 'botania:mana_powder', count: 4 },
+            aura_type: 'naturesaura:overworld',
+            catalyst: { item: 'naturesaura:crushing_catalyst' },
+            aura: 20000,
+            time: 20,
+            id: `${id_prefix}mana_powder`
+        },
+        {
+            input: 'thermal:phytogro',
+            output: { item: 'botania:fertilizer' },
+            aura_type: 'naturesaura:overworld',
+            aura: 50000,
+            time: 20,
+            id: `${id_prefix}floral_fertilizer`
+        },
+        {
+            input: 'minecraft:slime_ball',
+            output: { item: 'tconstruct:ichor_slime_ball' },
+            aura_type: 'naturesaura:nether',
+            aura: 5000,
+            time: 20,
+            id: `${id_prefix}ichor_slime_ball`
+        },
+        {
+            input: 'minecraft:slime_ball',
+            output: { item: 'tconstruct:sky_slime_ball' },
+            aura_type: 'naturesaura:overworld',
+            aura: 5000,
+            time: 20,
+            id: `${id_prefix}sky_slime_ball`
+        },
+        {
+            input: 'tconstruct:earth_congealed_slime',
+            output: { item: 'tconstruct:ichor_congealed_slime' },
+            aura_type: 'naturesaura:nether',
+            aura: 5000 * 3,
+            time: 20 * 3,
+            id: `${id_prefix}ichor_congealed_slime`
+        },
+        {
+            input: 'tconstruct:earth_congealed_slime',
+            output: { item: 'tconstruct:sky_congealed_slime' },
+            aura_type: 'naturesaura:overworld',
+            aura: 5000 * 3,
+            time: 20 * 3,
+            id: `${id_prefix}sky_congealed_slime`
+        },
+        {
+            input: 'create:rose_quartz',
+            output: { item: 'create:polished_rose_quartz' },
+            aura_type: 'naturesaura:overworld',
+            aura: 5000,
+            time: 20,
+            id: `${id_prefix}polished_rose_quartz`
+        },
+        {
+            input: 'botania:vine_ball',
+            output: { item: 'botania:thorn_chakram', count: 2 },
+            aura_type: 'naturesaura:overworld',
+            aura: 135000,
+            time: 500,
+            id: `${id_prefix}thorn_chakram`
+        },
+        {
+            input: 'ars_nouveau:mana_bloom_crop',
+            output: { item: 'botania:overgrowth_seed' },
+            aura_type: 'naturesaura:overworld',
+            aura: 500000,
+            time: 1000,
+            id: `${id_prefix}overgrowth_seed`
+        },
+        {
+            input: 'ars_nouveau:mana_bloom_crop',
+            output: { item: 'botania:overgrowth_seed' },
+            aura_type: 'naturesaura:overworld',
+            aura: 500000,
+            time: 1000,
+            id: `${id_prefix}overgrowth_seed`
+        },
+        {
+            input: 'ars_nouveau:magic_clay',
+            output: { item: 'ars_nouveau:marvelous_clay' },
+            aura_type: 'naturesaura:overworld',
+            aura: 15000,
+            time: 20,
+            id: 'ars_nouveau:marvelous_clay'
         }
     ];
 

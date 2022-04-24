@@ -200,7 +200,8 @@ onEvent('jei.information', (event) => {
                 'quark:indigo_crystal',
                 'quark:violet_crystal',
                 'quark:white_crystal',
-                'quark:black_crystal'],
+                'quark:black_crystal'
+            ],
             text: [
                 'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.',
                 ' ',
@@ -475,7 +476,9 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['naturesaura:break_prevention'],
-            text: [`When applied to a tool in an anvil, the tool will just stop working when durability runs out, instead of being destroyed.`]
+            text: [
+                `When applied to a tool in an anvil, the tool will just stop working when durability runs out, instead of being destroyed.`
+            ]
         },
         {
             items: ['ars_nouveau:belt_of_levitation'],
@@ -483,11 +486,23 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['create:chromatic_compound', 'create:refined_radiance'],
-            text: [`Chromatic Compound absorbs light when dropped in the world, transforming into Refined Radiance. Charges slowly from ambient light, faster by consuming nearby light emitting blocks, and instantly when dropped onto an active beacon.`]
+            text: [
+                `Chromatic Compound absorbs light when dropped in the world, transforming into Refined Radiance. Charges slowly from ambient light, faster by consuming nearby light emitting blocks, and instantly when dropped onto an active beacon.`
+            ]
         },
         {
             items: ['create:chromatic_compound', 'create:shadow_steel'],
-            text: [`Chromatic Compound absorbs darkness when dropped into the void, returning as Shadow Steel, floating back up out of the void shortly after falling into the depths.`]
+            text: [
+                `Chromatic Compound absorbs darkness when dropped into the void, returning as Shadow Steel, floating back up out of the void shortly after falling into the depths.`
+            ]
+        },
+        {
+            items: ['naturesaura:projectile_generator'],
+            text: [`Valid Projectiles:`, ``, `● Snowballs`, `● Eggs`, `● Arrows`, `● Fire Charges`, `● Spectral Arrows`]
+        },
+        {
+            items: ['naturesaura:projectile_generator'],
+            text: [`● Ender Pearls`, `● Llama Spit`, `● Bottles o' Enchanting`, `● Shulker Bullets`, `● Tridents`]
         }
     ];
 

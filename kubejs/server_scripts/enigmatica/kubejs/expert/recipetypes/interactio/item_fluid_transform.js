@@ -17,40 +17,8 @@ onEvent('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            consume_fluid: 1.0,
+            consume_fluid: 0.0,
             id: 'ars_nouveau:magic_clay'
-        },
-        {
-            inputs: [
-                { item: 'ars_nouveau:magic_clay', count: 2 },
-                { item: 'naturesaura:gold_powder', count: 1 },
-                { tag: 'forge:dusts/mana', count: 1 },
-                { tag: 'forge:dusts/lapis', count: 2 }
-            ],
-            fluid: { fluid: 'water' },
-            output: {
-                entries: [{ result: { item: 'ars_nouveau:marvelous_clay', count: 2 }, weight: 1 }],
-                empty_weight: 0,
-                rolls: 1
-            },
-            consume_fluid: 1.0,
-            id: 'ars_nouveau:marvelous_clay'
-        },
-        {
-            inputs: [
-                { item: 'ars_nouveau:marvelous_clay', count: 2 },
-                { tag: 'forge:dusts/emerald', count: 2 },
-                { tag: 'forge:dusts/mana', count: 1 },
-                { item: 'thermal:blitz_powder', count: 2 }
-            ],
-            fluid: { fluid: 'water' },
-            output: {
-                entries: [{ result: { item: 'ars_nouveau:mythical_clay', count: 2 }, weight: 1 }],
-                empty_weight: 0,
-                rolls: 1
-            },
-            consume_fluid: 1.0,
-            id: 'ars_nouveau:mythical_clay'
         },
         {
             inputs: [
@@ -66,33 +34,29 @@ onEvent('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            consume_fluid: 1.0,
+            consume_fluid: 0.0,
             id: 'meetyourfight:spectres_eye'
         },
         {
-            inputs: [
-                { item: 'kubejs:hot_compressed_iron_ingot', count: 1 }
-            ],
+            inputs: [{ item: 'kubejs:hot_compressed_iron_ingot', count: 1 }],
             fluid: { fluid: 'water' },
             output: {
                 entries: [{ result: { item: 'pneumaticcraft:ingot_iron_compressed', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
-            consume_fluid: 0.2,
+            consume_fluid: 0.0,
             id: 'enigmatica:expert/interactio/ingot_iron_compressed'
         },
         {
-            inputs: [
-                { item: 'kubejs:hot_compressed_iron_block', count: 1 }
-            ],
+            inputs: [{ item: 'kubejs:hot_compressed_iron_block', count: 1 }],
             fluid: { fluid: 'water' },
             output: {
                 entries: [{ result: { item: 'pneumaticcraft:compressed_iron_block', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
-            consume_fluid: 1.0,
+            consume_fluid: 0.0,
             id: 'enigmatica:expert/interactio/compressed_iron_block'
         }
     ];

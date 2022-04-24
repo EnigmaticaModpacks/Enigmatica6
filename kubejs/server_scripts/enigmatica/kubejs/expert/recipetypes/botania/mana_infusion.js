@@ -66,6 +66,14 @@ onEvent('recipes', (event) => {
             catalyst: 'architects_palette:moonstone',
             id: 'botania:mana_infusion/mana_pearl'
         },
+        {
+            input: 'ars_nouveau:marvelous_clay',
+            output: 'ars_nouveau:mythical_clay',
+            count: 1,
+            mana: 10000,
+            catalyst: 'architects_palette:sunstone',
+            id: 'ars_nouveau:mythical_clay'
+        },
 
         /// Patchouli Safe Removals
 

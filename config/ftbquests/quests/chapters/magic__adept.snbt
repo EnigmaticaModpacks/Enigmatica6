@@ -10,7 +10,7 @@
 	quests: [
 		{
 			x: -2.0d
-			y: -2.5d
+			y: -1.5d
 			description: [
 				"Capable of grinding stone to dust in its mighty jaws, the Masticator’s scales were found to have great alchemical powers, specifically in creating magical flora to digest various objects and extract the latent energies within."
 				""
@@ -18,7 +18,7 @@
 				""
 				"Summoning the Masticator requires the Altar of Birthing as well as several other items. Look up the recipe for the Masticator Spawn egg in JEI to find them. "
 				""
-				"Be warned, its hunger is deep and summoning it will consume the Aura in the area. Allow it to drop too low and the consequences will be dire for the surrounding area."
+				"Be warned, its hunger is deep and summoning it will consume the Aura in the area. Allow it to drop too low and the consequences will be dire for life in the surrounding area."
 			]
 			dependencies: [
 				"583A58418CBF0606"
@@ -34,8 +34,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 1.5d
+			x: 1.5d
+			y: 3.0d
 			description: ["Exceptionally transformative and exceedingly dangerous, Hellfire has been used in the arcane arts since time immemorable. There is no safe way for mere humans to work with it directly, however, though the Spirits of the Otherworld seem to have no difficulties channeling it through a specially prepared forge. "]
 			dependencies: ["2B6914734BC1B9EA"]
 			id: "76E780FECC4F3BA8"
@@ -46,8 +46,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 0.5d
+			x: 2.0d
+			y: 2.0d
 			description: [
 				"“Not all spirits come willingly. Some find this plane… distasteful. They may still be of use, however, bound into items of power that limit their contact with this place.”"
 				""
@@ -69,14 +69,14 @@
 		}
 		{
 			x: -2.0d
-			y: -4.5d
+			y: -3.5d
 			shape: "diamond"
 			description: [
 				"Journey to the depths of the Undergarden and seek out the catacombs where the ancients buried their revered dead. Be wary, as these tombs are well guarded. "
 				""
 				"While the art of making these automatons was lost long ago to the sands of time, not all knowledge of them is lost. There exist some forest creatures who remain quite adept at harvesting excess metal from them without harm to the automaton. "
 			]
-			dependencies: ["6A88DD23AB4B2551"]
+			dependencies: ["1684922D360579EA"]
 			id: "3244CF5322CDA8FA"
 			tasks: [{
 				id: "67D72ED6F85B74D2"
@@ -86,10 +86,10 @@
 		}
 		{
 			x: -2.5d
-			y: -4.0d
+			y: -3.0d
 			shape: "diamond"
 			description: ["The shadows deepen all around when in the presence of these mystical gems. "]
-			dependencies: ["6A88DD23AB4B2551"]
+			dependencies: ["1684922D360579EA"]
 			id: "70FE54E5B37720F8"
 			tasks: [{
 				id: "2EDC01F6C01A4342"
@@ -99,7 +99,7 @@
 		}
 		{
 			x: -1.5d
-			y: -4.0d
+			y: -3.0d
 			shape: "diamond"
 			description: [
 				"“It is wise to direct your anger towards problems, not people; to focus your energies on answers, not excuses.”"
@@ -107,8 +107,8 @@
 				"– Master Gyatso the Serene"
 			]
 			dependencies: [
-				"6A88DD23AB4B2551"
 				"2A45214DF4B8A3A0"
+				"1684922D360579EA"
 			]
 			id: "583A58418CBF0606"
 			tasks: [{
@@ -119,10 +119,10 @@
 		}
 		{
 			x: -2.0d
-			y: -3.5d
+			y: -2.5d
 			shape: "diamond"
 			description: ["A rare delicacy for beasts not of this plain. "]
-			dependencies: ["6A88DD23AB4B2551"]
+			dependencies: ["1684922D360579EA"]
 			id: "7D6DB53D88AA8955"
 			tasks: [{
 				id: "30B057E09BA7FEC1"
@@ -193,7 +193,7 @@
 		}
 		{
 			x: -1.0d
-			y: -4.5d
+			y: -3.5d
 			shape: "diamond"
 			description: [
 				"Komodo dragons may be found in many dry climates and “befriended” with suitably rotten meat. Their spit is prized by alchemists and naturalists alike. In the case of the former, as a reagent for purifying ore, and the latter for the deep emotions it evokes."
@@ -210,7 +210,7 @@
 		}
 		{
 			x: -2.0d
-			y: -1.5d
+			y: 0.0d
 			description: [
 				"Source and Aura, both facets of the same whole: Mana. With access to Generating Flora pure Mana may be extracted and used in a variety of new ways."
 				""
@@ -226,7 +226,7 @@
 		}
 		{
 			x: -2.0d
-			y: -0.5d
+			y: 1.0d
 			description: ["The neophyte believes runes are simply carved symbols; decorative and nothing more. But magical practitioners know the truth; they are carved purposely to channel magical energies to specific purposes. Doing so requires great effort of will. "]
 			dependencies: ["0E6B41A9E8802F67"]
 			id: "46993F7BA43BE3AB"
@@ -355,7 +355,8 @@
 		}
 		{
 			x: 2.0d
-			y: -3.0d
+			y: -2.5d
+			description: ["It hums subtly when held."]
 			dependencies: ["32D9D96C23106285"]
 			id: "0D8649291801C76C"
 			tasks: [{
@@ -423,7 +424,7 @@
 		}
 		{
 			x: -3.0d
-			y: 0.5d
+			y: 2.0d
 			description: [
 				"This world is filled with invisible beings. Watching. Waiting."
 				""
@@ -453,7 +454,7 @@
 		}
 		{
 			x: -3.5d
-			y: -1.5d
+			y: 0.0d
 			description: ["To properly summon the Wilden Chimera, one must offer tributes claimed from the bodies of each of the lesser Wilden that roam the lands. "]
 			dependencies: ["37E5C854B3C997E6"]
 			id: "638E2FA97CF961F7"
@@ -477,7 +478,7 @@
 		}
 		{
 			x: -4.0d
-			y: -0.5d
+			y: 1.0d
 			description: ["Place down the tablet and let it burn. Toss the remaining tributes atop the pyre and activate the ritual when ready. "]
 			dependencies: ["638E2FA97CF961F7"]
 			id: "54BD6A448EC80453"
@@ -489,7 +490,7 @@
 		}
 		{
 			x: -4.0d
-			y: -2.5d
+			y: -1.5d
 			description: [
 				"Flip a coin. "
 				""
@@ -516,10 +517,10 @@
 		}
 		{
 			x: -3.5d
-			y: -4.0d
+			y: -3.0d
 			shape: "diamond"
 			description: ["Though they themselves quite unaware of it, the coins traded by the denizens of Atum hold great arcane potential. Some have theorized that it may be due to a special alloying of nebu within the coins. "]
-			dependencies: ["6A88DD23AB4B2551"]
+			dependencies: ["5DBF0C080455A59F"]
 			id: "0140C94C9E0BE11B"
 			tasks: [{
 				id: "358386F4F0FC273F"
@@ -529,10 +530,10 @@
 		}
 		{
 			x: -4.5d
-			y: -4.0d
+			y: -3.0d
 			shape: "diamond"
 			description: ["Oft named Lucky Bees, Quartz bees were kept around the lab for one simple reason: Their crystalline growth tended to change colors when exposed to trace amounts of toxins in the air, allowing observant Alchemists to avoid disaster.  "]
-			dependencies: ["6A88DD23AB4B2551"]
+			dependencies: ["5DBF0C080455A59F"]
 			id: "749514BCD02A1A51"
 			tasks: [{
 				id: "4F21E8E2B24A5777"
@@ -542,10 +543,10 @@
 		}
 		{
 			x: -4.0d
-			y: -3.5d
+			y: -2.5d
 			shape: "diamond"
 			description: ["Many an early Alchemist met their end through a slip of the hand or a slight imperfection in their glassware. It’s no wonder, then, that they quickly developed tinctures to help improve their luck when dealing with dangerous substances. "]
-			dependencies: ["6A88DD23AB4B2551"]
+			dependencies: ["5DBF0C080455A59F"]
 			id: "14B74BACBD651D14"
 			tasks: [{
 				id: "5CE84C7DE08F8B26"
@@ -555,7 +556,7 @@
 		}
 		{
 			x: -4.5d
-			y: -1.5d
+			y: 0.0d
 			description: [
 				"Magic takes its toll, both mentally and physically. Many have succumbed to lesser trials, never even reaching this far. Will the Wilden Chimera prove too great a challenge?"
 				""
@@ -595,8 +596,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 1.5d
+			x: 2.5d
+			y: 3.0d
 			description: [
 				"“Open your eyes and then open your eyes again.”"
 				""
@@ -620,7 +621,11 @@
 			x: 1.0d
 			y: -0.5d
 			shape: "diamond"
-			description: ["Effective as it may be some practitioners find the practice of sacrificing other beings distasteful. The Adept learns early on to give of their own blood as sacrifice, and to draw upon the earth for healing. "]
+			description: [
+				"Effective as it may be, some practitioners find the practice of sacrificing other beings distasteful."
+				""
+				"The Adept learns early on to give of their own blood as sacrifice, and to draw upon the earth for healing. "
+			]
 			dependencies: ["7BA120BEA495D354"]
 			id: "57FFFBB68F2655C1"
 			tasks: [{
@@ -637,7 +642,7 @@
 		}
 		{
 			x: -3.0d
-			y: 1.5d
+			y: 3.0d
 			description: [
 				"“There was always something new to be seen in the unchanging night sky…”"
 				""
@@ -649,6 +654,64 @@
 				id: "652DE77D344E1B5F"
 				type: "item"
 				item: "astralsorcery:altar_attunement"
+			}]
+		}
+		{
+			title: "Aura Generation"
+			x: -2.0d
+			y: -4.5d
+			description: [
+				"The ancients knew to care for the natural resources at their disposal, using only what is needed and replenishing more than was taken. For every tree cut, two grown. "
+				""
+				"The Aura exuded by life needs similar care. When used in the Natural Arts, it must similarly be replenished. Failure to do so will lead to catastrophic consequences."
+				""
+				"While many methods exist, The Shooting Mark and Herbivorous Absorber both offer paths to rapid Aura replenishment. Treat Nature well and she’ll respond in kind. Abuse her and face her wrath. "
+			]
+			dependencies: ["6A88DD23AB4B2551"]
+			id: "1684922D360579EA"
+			tasks: [{
+				id: "53DCB9AF9595A5D2"
+				type: "item"
+				title: "Aura Generation"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "naturesaura:flower_generator"
+								Count: 1b
+							}
+							{
+								id: "naturesaura:projectile_generator"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			description: [
+				"The bees that inhabit these lands were long ago infused with powerful magics and though that magic has waned some without proper tending the thread remains in their descendants. With a bit of care, that deeper connection may be restored, allowing them to produce marvelous resources useful in both the Arcane and Technological arts. "
+				""
+				"Gather some bees and their nests to begin tending them. Through selective breeding and other techniques, more powerful bees may be produced. Their resources will be vital going forward. "
+			]
+			dependencies: ["6A88DD23AB4B2551"]
+			id: "5DBF0C080455A59F"
+			tasks: [{
+				id: "4024203A654C177D"
+				type: "item"
+				title: "Any Bee Nest"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:beehives/tier_0"
+					}
+				}
 			}]
 		}
 	]

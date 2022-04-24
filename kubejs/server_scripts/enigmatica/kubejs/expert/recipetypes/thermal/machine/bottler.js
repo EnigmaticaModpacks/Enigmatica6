@@ -59,6 +59,13 @@ onEvent('recipes', (event) => {
             output: 'gunswithoutroses:blaze_bullet',
             energy: 100,
             id: `${id_prefix}blaze_bullet`
+        },
+        {
+            input: 'botania:thorn_chakram',
+            fluid: Fluid.of('tconstruct:blazing_blood', 1000),
+            output: 'botania:flare_chakram',
+            energy: 15000,
+            id: `${id_prefix}flare_chakram`
         }
     ];
     recipes.forEach((recipe) => {

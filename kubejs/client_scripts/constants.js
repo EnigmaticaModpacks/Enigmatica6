@@ -297,6 +297,8 @@ const itemsToHide = [
 
     'refinedstorage:silicon',
 
+    'shrink:shrink_ray',
+
     'simplefarming:apple_pie',
     'simplefarming:blueberry_pie',
 
@@ -360,6 +362,7 @@ const itemsToHide = [
     /emendatusenigmatica:\w+_brimstone_ore/,
     /emendatusenigmatica:\w+_soul_soil_ore/,
     /emendatusenigmatica:\w+_basalt_ore/,
+    /emendatusenigmatica:certus/,
     /tconstruct:copper_(ore|block|nugget)/,
     /tconstruct:cobalt_(ore|block|nugget)/,
     /titanium:\w+_gear/,
@@ -505,6 +508,8 @@ const recipesToHide = [
             'botania:blood_pendant',
             'botania:ender_dagger',
             'botania:brewery',
+            'botania:thorn_chakram',
+            'botania:flare_chakram',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
@@ -525,6 +530,7 @@ const recipesToHide = [
             'naturesaura:death_ring',
             'naturesaura:ender_crate',
             'naturesaura:ender_access',
+            'naturesaura:gold_nether_brick',
 
             'pneumaticcraft:air_compressor',
             'pneumaticcraft:advanced_air_compressor',

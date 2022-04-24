@@ -266,6 +266,8 @@ onEvent('recipes', (event) => {
         { output: 'botania:blood_pendant', id: 'botania:blood_pendant' },
         { output: 'botania:ender_dagger', id: 'botania:ender_dagger' },
         { output: 'botania:brewery', id: 'botania:brewery' },
+        { output: 'botania:thorn_chakram', id: 'botania:thorn_chakram' },
+        { output: 'botania:flare_chakram', id: 'botania:flare_chakram' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
@@ -284,6 +286,7 @@ onEvent('recipes', (event) => {
         { output: 'naturesaura:death_ring', id: 'naturesaura:death_ring' },
         { output: 'naturesaura:ender_crate', id: 'naturesaura:ender_crate' },
         { output: 'naturesaura:ender_access', id: 'naturesaura:ender_access' },
+        { output: 'naturesaura:gold_nether_brick', id: 'naturesaura:gold_nether_brick' },
 
         { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
         { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },
