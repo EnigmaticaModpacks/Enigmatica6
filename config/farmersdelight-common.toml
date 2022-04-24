@@ -14,6 +14,8 @@
 	#A list of dye colors that, when used as the background of a Canvas Sign, should default to white text when placed.
 	#Dyes: ["white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black"]
 	canvasSignDarkBackgroundList = ["gray", "purple", "blue", "brown", "green", "red", "black"]
+	#Should the Wandering Trader sell some of this mod's items? (Currently includes crop seeds and onions)
+	wanderingTraderSellsFDItems = true
 
 #Vanilla item overrides
 [overrides]
@@ -35,12 +37,10 @@
 
 #World generation
 [world]
-	#Generate crop items on Village houses (all biomes)
-	cropsOnVillageHouseLoot = true
-	#Generate crop items on a Shipwreck's supply chests
-	cropsOnShipwreckSupplyLoot = true
 	#Generate Compost Heaps across all village biomes
 	genVillageCompostHeaps = true
+	#Should this mod add some of its items (ropes, seeds, knives, meals etc.) as extra chest loot across Minecraft?
+	generateFDChestLoot = true
 
 	#Sea Beet generation
 	[world.wild_beetroots]
