@@ -1,3 +1,29 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.2.0
+
+_Using Forge-1.16.5-36.2.34_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.2.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.2.0.md)_
+
+
+
+If you're experiencing an out of memory crash, we recommend that you add the JVM argument `
+
+**Changes/Improvements**
+
+- 
+
+**Bug Fixes**
+
+- 
+
+**Removed Mods**
+
+- Shutup Experimental Settings! (RandomPatches does the same)
+
+
+
+---
+
+
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.1.2
 
 _Using Forge-1.16.5-36.2.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.1.2.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.1.2.md)_
