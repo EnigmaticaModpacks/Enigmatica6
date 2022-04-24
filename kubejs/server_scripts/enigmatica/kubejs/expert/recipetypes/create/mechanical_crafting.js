@@ -207,12 +207,12 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:spawner_extractor',
             pattern: ['  A  ', ' BCB ', ' DED ', 'F E F'],
             key: {
-                A: 'pneumaticcraft:pressure_tube',
-                B: 'alexsmobs:hemolymph_sac',
+                A: 'pneumaticcraft:huge_tank',
+                B: 'pneumaticcraft:pressure_tube',
                 C: '#industrialforegoing:machine_frame/advanced',
-                D: 'alexsmobs:warped_muscle',
+                D: 'alexsmobs:hemolymph_sac',
                 E: 'pneumaticcraft:drill_pipe',
-                F: 'pneumaticcraft:spawner_agitator'
+                F: 'alexsmobs:warped_muscle'
             },
             id: `${id_prefix}spawner_extractor`
         },
@@ -537,19 +537,6 @@ onEvent('recipes', (event) => {
                 L: 'meetyourfight:fortunes_favor'
             },
             id: 'meetyourfight:cocktail_shotgun'
-        },
-        {
-            output: 'kubejs:fluid_drill_package',
-            pattern: ['CDC', 'ABA', 'BEB', 'ABA', 'CFC'],
-            key: {
-                A: 'industrialforegoing:efficiency_addon_2',
-                B: 'industrialforegoing:laser_drill',
-                C: 'industrialforegoing:speed_addon_2',
-                D: 'industrialforegoing:laser_lens10',
-                E: 'industrialforegoing:fluid_laser_base',
-                F: 'mekanism:cardboard_box'
-            },
-            id: `${id_prefix}fluid_drill_package`
         },
         {
             output: 'industrialforegoing:mob_duplicator',

@@ -439,6 +439,19 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:advanced_ram_chip', count: 16 }],
             id: `${id_prefix}advanced_ram_chip`
+        },
+        {
+            inputs: [
+                { item: 'industrialforegoing:laser_lens10', count: 1 },
+                { item: 'industrialforegoing:fluid_laser_base', count: 1 },
+                { item: 'industrialforegoing:laser_drill', count: 4 },
+                { item: 'industrialforegoing:speed_addon_2', count: 4 },
+                { item: 'industrialforegoing:efficiency_addon_2', count: 4 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:fluid_drill_package', count: 1 }],
+            id: `${id_prefix}fluid_drill_package`
         }
     ];
 

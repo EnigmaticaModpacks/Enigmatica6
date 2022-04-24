@@ -10,8 +10,8 @@
 	quests: [
 		{
 			icon: "powah:book"
-			x: 0.0d
-			y: 0.0d
+			x: 1.5d
+			y: -1.5d
 			shape: "gear"
 			subtitle: "Now you're playing with Powah!"
 			description: [
@@ -51,8 +51,8 @@
 					PowahWrenchNBT: { }
 				}
 			}
-			x: -1.5d
-			y: 0.0d
+			x: 0.5d
+			y: -2.0d
 			shape: "diamond"
 			subtitle: "No, wait, I meant... Stop crying!"
 			description: [
@@ -578,7 +578,7 @@
 				"The Rods will now start charging up the orb (faster depending on the rods’ tier and how many you have) and infuse power into the items you place in the orb."
 				"This is how you craft all the basic resources you will use to climb up the tiers in Powah, so let’s start going for the top!"
 			]
-			dependencies: ["0000000000000174"]
+			dependencies: ["000000000000016F"]
 			id: "000000000000018C"
 			tasks: [
 				{
