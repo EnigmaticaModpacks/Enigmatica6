@@ -4,19 +4,64 @@ _Using Forge-1.16.5-36.2.34_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 
 
-If you're experiencing an out of memory crash, we recommend that you add the JVM argument `
+If you're experiencing an out of memory crash, you can fix it by adding the JVM argument `-Dio.netty.maxDirectMemory=0` in your launcher's options.
+
+
+
+The changelog for 1.2.0 is incomplete at the moment, we have a little issue with our changelog generation tool.
+
+
 
 **Changes/Improvements**
 
-- 
+- Improve server-setup-config.yaml to allow serverpack to also run on java16+ without user intervention [\#4701](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4701)
+- Improve Discoverability of Amadron Survey Tools [\#4700](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4700)
+- Change the pnc spawner extractor recipe / pnc spawner agitator cannot be right clicked into a mechanical crafter [\#4694](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4694)
+- Remove Shutup Experimental Settings! [\#4641](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4641)
+- \[Expert\] Add info about the fuelwood heater somewhere [\#4623](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4623)
+- Tinkers traveller's gears repairing [\#4567](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4567)
 
 **Bug Fixes**
 
-- 
+- Building Gadgets blueprint for Advanced Assembly contains tubes [\#4704](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4704)
+- \[Expert\] Sludge Refiner FE requirement disproportionately high given its recipe [\#4674](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4674)
+- \[Expert\] Can't craft BM Growth Reagent [\#4651](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4651)
+- Using old version of BetterEnd - Crashing with Forge Sodium. [\#4650](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4650)
+- Items disappearing into Immersive Engineering Item Router [\#4629](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4629)
+- Typo in "Valhelsia Structures" quest. [\#4627](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4627)
+- Easy bee dupe [\#4624](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4624)
+- Thermal sawblade Jei bug [\#4611](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4611)
+- Typo in Quest "Create Building Tools" [\#4607](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4607)
+- incorrect building gadget template [\#4606](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4606)
+- Saplings have tags for forge: but some singular some plural [\#4604](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4604)
+- \[E6E\]Hepatizon recipe has different ingredients [\#4603](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4603)
+- Sentient Pickaxe unable to mine naturally spawned Iesnium [\#4590](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4590)
+- \[Quest\]\[E6E\] Wording aligned to Non-Expert - PNC  [\#4588](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4588)
+- Occultism Familiar summoning script [\#4580](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4580)
+- \[E6E\] Tinker Smeltery have the wrong amount output  [\#4579](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4579)
+- \[Expert\] Crash from Lootr on world load after updating from 1.0.0 -\> 1.1.2 [\#4578](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4578)
+- Add Seared Stone recipe to the Magma Crucible \[Expert Mode E6E\] [\#4558](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4558)
+- Advanced Machine Frame quest unable to be completed in Expert due to quest dependency [\#4557](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4557)
+- \[E6E\]The custom tips ender\_air\_ghasts.json and astral\_cake.json have the same text. [\#4536](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4536)
+- /mode expert instructions unclear [\#4506](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4506)
+- End-gated bees can spawn in overworld [\#4502](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4502)
+- \[E6E\]Astral altar's recipe, relay can't show item form tag [\#4465](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4465)
+- Venison with Bamboo Shoots missing Protein food group [\#4417](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4417)
+- Can't brew "Potion of Mana Regeneration II" get "Calming Potion" instead [\#4102](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4102)
+- Shapeless recipe for Source Berry Roll can't be crafted via Create mixer [\#4040](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4040)
+- Pretty Pipes fails to accurately calculate how many of an item it can craft when a recipe outputs multiple of an item [\#3892](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/3892)
+- Infinity Items with RFTools Storage Scanner! [\#2926](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/2926)
+
+**Added Mods**
+
+- [BetterEnd Reforked](https://www.curseforge.com/minecraft/mc-mods/betterend-re-forked)
+* [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions)
 
 **Removed Mods**
 
-- Shutup Experimental Settings! (RandomPatches does the same)
+- [BetterEnd (Forge)](https://www.curseforge.com/minecraft/mc-mods/betterend-forge-port) (Replaced by BetterEnd Reforked)
+* [MmmMmmMmmMmm (Target Dummy)](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm)
+* [Shutup Experimental Settings!](https://www.curseforge.com/minecraft/mc-mods/shutup-experimental-settings)
 
 
 
