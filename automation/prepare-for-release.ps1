@@ -42,11 +42,14 @@ function Close-FixedIssues {
 
 }
 function Merge-DevelopIntoMaster {
+    Write-Host "Merging Develop into Master, and then Master into Develop"
+    Write-Host "Make sure you have no unsaved changes!" -ForegroundColor Red
+    Write-Host "Ctrl+C to exit"
+    pause
     git stash
-    git checkout master
-    git stash
+    git checkout orgin/master
     git merge develop
-    git checkout develop
+    git checkout orgin/develop
     git merge master
 }
 
