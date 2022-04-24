@@ -176,6 +176,30 @@ onEvent('recipes', (event) => {
             aura: 5000 * 3,
             time: 20 * 3,
             id: `${id_prefix}sky_congealed_slime`
+        },
+        {
+            input: 'create:rose_quartz',
+            output: { item: 'create:polished_rose_quartz' },
+            aura_type: 'naturesaura:overworld',
+            aura: 5000,
+            time: 20,
+            id: `${id_prefix}polished_rose_quartz`
+        },
+        {
+            input: 'botania:vine_ball',
+            output: { item: 'botania:thorn_chakram', count: 2 },
+            aura_type: 'naturesaura:overworld',
+            aura: 135000,
+            time: 500,
+            id: `${id_prefix}thorn_chakram`
+        },
+        {
+            input: 'ars_nouveau:mana_bloom_crop',
+            output: { item: 'botania:overgrowth_seed' },
+            aura_type: 'naturesaura:overworld',
+            aura: 500000,
+            time: 1000,
+            id: `${id_prefix}overgrowth_seed`
         }
     ];
 

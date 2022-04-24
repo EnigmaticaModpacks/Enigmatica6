@@ -266,6 +266,8 @@ onEvent('recipes', (event) => {
         { output: 'botania:blood_pendant', id: 'botania:blood_pendant' },
         { output: 'botania:ender_dagger', id: 'botania:ender_dagger' },
         { output: 'botania:brewery', id: 'botania:brewery' },
+        { output: 'botania:thorn_chakram', id: 'botania:thorn_chakram' },
+        { output: 'botania:flare_chakram', id: 'botania:flare_chakram' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
