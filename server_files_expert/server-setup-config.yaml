@@ -206,3 +206,6 @@ launch:
         - '-Daikars.new.flags=true'
         - '-Dfml.readTimeout=180' # servertimeout
         - '-Dfml.queryResult=confirm' # auto /fmlconfirm
+        - '--add-opens=java.base/sun.security.util=ALL-UNNAMED' # java16+ support
+        - '--add-opens=java.base/java.util.jar=ALL-UNNAMED' # java16+ support
+        - '-XX:+IgnoreUnrecognizedVMOptions' # java16+ support
