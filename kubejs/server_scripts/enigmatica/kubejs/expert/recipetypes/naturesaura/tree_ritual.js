@@ -485,16 +485,16 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
+                'ars_nouveau:summoning_crystal',
+                Item.of('naturesaura:aura_cache', '{aura:400000}'),
                 'naturesaura:token_anger',
                 'naturesaura:token_joy',
-                'minecraft:spawner',
-                'ars_nouveau:summoning_crystal',
+                'botania:overgrowth_seed',
                 '#forge:storage_blocks/infused_iron',
-                '#forge:storage_blocks/infused_iron',
-                '#forge:storage_blocks/infused_iron',
+                'botania:overgrowth_seed',
                 '#forge:storage_blocks/infused_iron'
             ],
-            sapling: 'quark:lavender_blossom_sapling',
+            sapling: 'quark:blue_blossom_sapling',
             output: 'naturesaura:animal_spawner',
             time: 20 * time_multiplier,
             id: `${id_prefix}animal_spawner`
