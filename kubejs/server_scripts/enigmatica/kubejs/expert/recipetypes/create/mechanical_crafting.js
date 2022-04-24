@@ -207,12 +207,12 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:spawner_extractor',
             pattern: ['  A  ', ' BCB ', ' DED ', 'F E F'],
             key: {
-                A: 'pneumaticcraft:pressure_tube',
-                B: 'alexsmobs:hemolymph_sac',
+                A: 'pneumaticcraft:huge_tank',
+                B: 'pneumaticcraft:pressure_tube',
                 C: '#industrialforegoing:machine_frame/advanced',
-                D: 'alexsmobs:warped_muscle',
+                D: 'alexsmobs:hemolymph_sac',
                 E: 'pneumaticcraft:drill_pipe',
-                F: 'pneumaticcraft:spawner_agitator'
+                F: 'alexsmobs:warped_muscle'
             },
             id: `${id_prefix}spawner_extractor`
         },
