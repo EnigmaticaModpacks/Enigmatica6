@@ -200,6 +200,22 @@ onEvent('recipes', (event) => {
             aura: 500000,
             time: 1000,
             id: `${id_prefix}overgrowth_seed`
+        },
+        {
+            input: 'ars_nouveau:mana_bloom_crop',
+            output: { item: 'botania:overgrowth_seed' },
+            aura_type: 'naturesaura:overworld',
+            aura: 500000,
+            time: 1000,
+            id: `${id_prefix}overgrowth_seed`
+        },
+        {
+            input: 'ars_nouveau:magic_clay',
+            output: { item: 'ars_nouveau:marvelous_clay' },
+            aura_type: 'naturesaura:overworld',
+            aura: 15000,
+            time: 20,
+            id: 'ars_nouveau:marvelous_clay'
         }
     ];
 
