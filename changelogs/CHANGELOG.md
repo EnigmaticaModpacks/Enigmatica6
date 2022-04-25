@@ -1,3 +1,19 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.2.1
+
+_Using Forge-1.16.5-36.2.34_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.2.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.2.1.md)_
+
+
+**Bug Fixes**
+
+-   Downgraded Tactical Fishing to allow servers to start
+
+**Changes/Improvements**
+
+-   Updated Advanced RAM Chip texture (Credit Rid)
+
+---
+
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.2.0
 
 _Using Forge-1.16.5-36.2.34_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.2.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.2.0.md)_
