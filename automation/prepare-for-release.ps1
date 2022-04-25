@@ -48,6 +48,7 @@ function Merge-DevelopIntoMaster {
     pause
     git checkout master
     git merge develop
+    git push
     git checkout develop
     git merge master
 }
