@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.2.0"
+$MODPACK_VERSION = "1.2.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.1.2"
+$LAST_MODPACK_VERSION = "1.2.0"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
