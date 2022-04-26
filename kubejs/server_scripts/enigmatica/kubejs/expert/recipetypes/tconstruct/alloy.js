@@ -9,16 +9,16 @@ onEvent('recipes', (event) => {
             inputs: [
                 {
                     tag: 'forge:pink_slime',
-                    amount: 144
+                    amount: 250
                 },
                 {
                     tag: 'tconstruct:ender_slime',
-                    amount: 144
+                    amount: 250
                 }
             ],
             result: {
                 fluid: 'kubejs:pink_ender_slime',
-                amount: 288
+                amount: 500
             },
             temperature: 1500,
             id: `${id_prefex}pink_ender_slime`
