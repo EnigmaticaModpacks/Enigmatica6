@@ -17,6 +17,13 @@ onEvent('recipes', (event) => {
             reagent: Item.of('minecraft:potion', '{Potion:"ars_nouveau:mana_regen_potion_long"}'),
             output: Item.of('resourcefulbees:mana_honey_bottle', 1),
             id: `${id_prefix}mana_honey_bottle`
+        },
+
+        {
+          inputs: [],
+          reagent:Item.of(`computercraft:disk`).ignoreNBT(),
+          output: Item.of(`computercraft:treasure_disk`, {Title: "Enchanting Apparatus Recipes", SubPath: "recipes_for/enchanting_apparatus", Colour: 11174897}),
+          id: `${id_prefix}treasure_disk`
         }
     ];
     recipes.forEach((recipe) => {

@@ -1,7 +1,17 @@
 onEvent('recipes', (event) => {
-    const recipes = [];
+  const id_prefix = 'enigmatica:base/create/mechanical_crafting/';
+  const recipes = [
+      {
+        output: Item.of(`computercraft:treasure_disk`, {Title: "Mechanical Crafting Recipes", SubPath: "recipes_for/mechanical_crafting", Colour: 11829822}),
+        pattern: ['A'],
+        key: {
+          A: Item.of(`computercraft:disk`).ignoreNBT(), 
+        },
+        id: `${id_prefix}treasure_disk`
+      }
+  ];
 
-    recipes.forEach((recipe) => {
-        event.recipes.create.mechanical_crafting(recipe.result, recipe.pattern, recipe.key);
-    });
+  recipes.forEach((recipe) => {
+      event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
+  });
 });
