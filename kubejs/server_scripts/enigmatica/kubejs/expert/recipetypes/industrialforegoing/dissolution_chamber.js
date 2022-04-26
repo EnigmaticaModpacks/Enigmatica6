@@ -534,7 +534,7 @@ onEvent('recipes', (event) => {
                 'rsinfinitybooster:infinity_card'
             ],
             inputFluid: 'kubejs:pink_ender_slime',
-            inputFluidAmount: 1296,
+            inputFluidAmount: 1250,
             processingTime: 400,
             outputItem: { item: 'rsinfinitybooster:dimension_card', count: 1 },
             outputFluid: '',
