@@ -106,9 +106,11 @@ onEvent('recipes', (event) => {
 
         'eidolon:tallow',
         'eidolon:smelt_stone_brick',
+        'eidolon:lead_block',
 
         /emendatusenigmatica:dust_from_chunk/,
         'emendatusenigmatica:dust_from_ore/quartz',
+        'emendatusenigmatica:block_from_gem/arcane',
 
         'environmental:misc/cherries/cherry_pie',
         'environmental:misc/apple_pie',
@@ -160,6 +162,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crusher/bone_meal',
         /immersiveengineering:crafting\/hammercrushing/,
         'immersivepetroleum:distillationtower/oilcracking',
+        'immersiveengineering:crafting/coal_coke_to_coke',
+        //'immersiveengineering:crafting/ingot_copper_to_storage_copper',
 
         'materialis:smeltery/melting/metal/starmetal/dust',
         /materialis:armor\/building\/exosuit/,
@@ -270,7 +274,14 @@ onEvent('recipes', (event) => {
         /atum:.*dye$/,
         /thermal:compat\/\w+\/\w+_ore/,
         /decorative_blocks:\w+_beam/,
-        /decorative_blocks_abnormals:\w+_beam/
+        /decorative_blocks_abnormals:\w+_beam/,
+        /mekanism:storage_blocks\/\w+/,
+        /mekanism:processing\/\w+\/storage_blocks\/from_ingots/,
+        /thermal:storage\/\w+_block/,
+        /tconstruct:common\/materials\/\w+_block_from_ingots/,
+        /immersiveengineering:crafting\/ingot_\w+_to_storage_\w+/,
+        /create:crafting\/materials\/\w+_block_from_compacting/,
+        /occultism:crafting\/\w+_block/
     ];
 
     outputRemovals.forEach((removal) => {
