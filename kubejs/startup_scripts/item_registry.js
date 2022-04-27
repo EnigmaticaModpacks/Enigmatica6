@@ -45,6 +45,7 @@ onEvent('item.registry', (event) => {
         'incomplete_capacitor_basic_large',
         'astrogro',
         'advanced_ram_chip',
+        'monster_mash',
 
         'automation_mastery_shard',
         'engineering_mastery_shard',
