@@ -1324,6 +1324,25 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: `${id_prefix}glass_lens`
+        },
+        {
+            inputs: [
+                'mekanism:elite_mechanical_pipe',
+                '#industrialforegoing:machine_frame/simple',
+                'mekanism:elite_mechanical_pipe',
+                'mekanism:elite_fluid_tank',
+                'mekanism:elite_fluid_tank',
+                'mekanism:superheating_element',
+                'immersiveengineering:capacitor_hv',
+                'mekanism:superheating_element'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 1000,
+            processingTime: 100,
+            outputItem: { item: 'industrialforegoing:dissolution_chamber', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: `${id_prefix}dissolution_chamber_alternate`
         }
         /*
         {
