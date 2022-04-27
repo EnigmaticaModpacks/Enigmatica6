@@ -307,7 +307,18 @@ onEvent('item.registry', (event) => {
         { name: 'batch_262144k_fluid_storage_part_package', texture: 'packing_crate_lime' },
         { name: 'batch_262144k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
         { name: 'batch_1048576k_fluid_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_1048576k_fluid_storage_part_assembly', texture: 'assembly_package_processing' }
+        { name: 'batch_1048576k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
+
+        { name: 'assembly_io_package', texture: 'advanced_packing_crate_green' },
+        { name: 'assembly_io_assembly', texture: 'assembly_package_processing' },
+        { name: 'assembly_laser_package', texture: 'advanced_packing_crate_green' },
+        { name: 'assembly_laser_assembly', texture: 'assembly_package_processing' },
+        { name: 'assembly_drill_package', texture: 'advanced_packing_crate_green' },
+        { name: 'assembly_drill_assembly', texture: 'assembly_package_processing' },
+        { name: 'assembly_platform_package', texture: 'advanced_packing_crate_green' },
+        { name: 'assembly_platform_assembly', texture: 'assembly_package_processing' },
+        { name: 'assembly_controller_package', texture: 'advanced_packing_crate_green' },
+        { name: 'assembly_controller_assembly', texture: 'assembly_package_processing' }
     ];
 
     let metals = [

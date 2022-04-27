@@ -452,6 +452,70 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:fluid_drill_package', count: 1 }],
             id: `${id_prefix}fluid_drill_package`
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:pneumatic_cylinder', count: 6 },
+                { item: 'prettypipes:pipe', count: 10 },
+                { item: 'pneumaticcraft:reinforced_stone_slab', count: 6 },
+                { item: 'pneumaticcraft:pneumatic_dynamo', count: 1 },
+                { item: 'create:brass_hand', count: 2 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'kubejs:assembly_io_package', count: 1 }],
+            id: `${id_prefix}assembly_io_package`
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:pneumatic_cylinder', count: 3 },
+                { item: 'prettypipes:pipe', count: 5 },
+                { item: 'pneumaticcraft:reinforced_stone_slab', count: 3 },
+                { item: 'pneumaticcraft:pneumatic_dynamo', count: 1 },
+                { tag: 'powah:energizing_rod', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'kubejs:assembly_laser_package', count: 1 }],
+            id: `${id_prefix}assembly_laser_package`
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:pneumatic_cylinder', count: 3 },
+                { item: 'prettypipes:pipe', count: 5 },
+                { item: 'pneumaticcraft:reinforced_stone_slab', count: 3 },
+                { item: 'pneumaticcraft:pneumatic_dynamo', count: 1 },
+                { item: 'pneumaticcraft:drill_bit_diamond', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'kubejs:assembly_drill_package', count: 1 }],
+            id: `${id_prefix}assembly_drill_package`
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:pneumatic_cylinder', count: 2 },
+                { item: 'pneumaticcraft:plastic', count: 2 },
+                { item: 'pneumaticcraft:reinforced_stone_slab', count: 4 },
+                { tag: 'forge:ingots/compressed_iron', count: 2 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'kubejs:assembly_platform_package', count: 1 }],
+            id: `${id_prefix}assembly_platform_package`
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:printed_circuit_board', count: 3 },
+                { item: 'prettypipes:pipe', count: 5 },
+                { item: 'computercraft:monitor_normal', count: 1 },
+                { item: 'pneumaticcraft:reinforced_stone_slab', count: 3 },
+                { item: 'pneumaticcraft:pneumatic_dynamo', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'kubejs:assembly_controller_package', count: 1 }],
+            id: `${id_prefix}assembly_controller_package`
         }
     ];
 
