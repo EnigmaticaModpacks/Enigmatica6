@@ -363,6 +363,7 @@ const itemsToHide = [
     /emendatusenigmatica:\w+_soul_soil_ore/,
     /emendatusenigmatica:\w+_basalt_ore/,
     /emendatusenigmatica:certus/,
+    /emendatusenigmatica:fluix/,
     /tconstruct:copper_(ore|block|nugget)/,
     /tconstruct:cobalt_(ore|block|nugget)/,
     /titanium:\w+_gear/,
