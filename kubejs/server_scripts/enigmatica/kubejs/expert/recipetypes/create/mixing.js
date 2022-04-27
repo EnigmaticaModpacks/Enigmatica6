@@ -120,6 +120,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}source_berry_roll`
         },
         {
+            heated: true,
             inputs: [
                 'minecraft:spider_eye',
                 'minecraft:spider_eye',
@@ -128,7 +129,7 @@ onEvent('recipes', (event) => {
                 'minecraft:gunpowder',
                 'minecraft:gunpowder'
             ],
-            output: 'kubejs:monster_mash',
+            output: Item.of('kubejs:monster_mash', 2),
             id: `${id_prefix}monster_mash`
         }
     ];

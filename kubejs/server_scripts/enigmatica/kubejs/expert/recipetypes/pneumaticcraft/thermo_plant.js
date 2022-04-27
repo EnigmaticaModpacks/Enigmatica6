@@ -170,7 +170,7 @@ onEvent('recipes', (event) => {
             pressure: 2.0,
             exothermic: false,
             speed: 0.5,
-            temperature: { min_temp: 283 },
+            temperature: { min_temp: 373 },
             id: `${id_prefix}venom_from_spider_eye`
         },
         {
@@ -180,7 +180,7 @@ onEvent('recipes', (event) => {
             pressure: 2.0,
             exothermic: false,
             speed: 0.5,
-            temperature: { min_temp: 283 },
+            temperature: { min_temp: 373 },
             id: `${id_prefix}venom_from_fermented_spider_eye`
         },
         {
@@ -189,7 +189,7 @@ onEvent('recipes', (event) => {
             fluid_output: { fluid: 'pneumaticcraft:etching_acid', amount: 1000 },
             pressure: 1.0,
             exothermic: false,
-            speed: 1.0,
+            speed: 0.5,
             id: `${id_prefix}etching_acid_from_monster_mash`
         }
     ];
