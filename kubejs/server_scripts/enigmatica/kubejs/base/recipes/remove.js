@@ -106,6 +106,7 @@ onEvent('recipes', (event) => {
 
         'eidolon:tallow',
         'eidolon:smelt_stone_brick',
+        'eidolon:lead_block',
         'eidolon:decompress_lead_block',
         'eidolon:lead_ingot',
         'eidolon:decompress_lead_ingot',
