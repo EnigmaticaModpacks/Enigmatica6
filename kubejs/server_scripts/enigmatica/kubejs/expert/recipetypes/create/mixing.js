@@ -118,6 +118,18 @@ onEvent('recipes', (event) => {
             ],
             output: Item.of('ars_nouveau:source_berry_roll', 3),
             id: `${id_prefix}source_berry_roll`
+        },
+        {
+            inputs: [
+                'minecraft:spider_eye',
+                'minecraft:spider_eye',
+                'minecraft:rotten_flesh',
+                'minecraft:rotten_flesh',
+                'minecraft:gunpowder',
+                'minecraft:gunpowder'
+            ],
+            output: 'kubejs:monster_mash',
+            id: `${id_prefix}monster_mash`
         }
     ];
 

@@ -162,6 +162,35 @@ onEvent('recipes', (event) => {
             speed: 1.1,
             temperature: { min_temp: 433 },
             id: `${id_prefix}dryrubber`
+        },
+        {
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 100 },
+            item_input: { item: 'minecraft:spider_eye' },
+            fluid_output: { fluid: 'tconstruct:venom', amount: 100 },
+            pressure: 2.0,
+            exothermic: false,
+            speed: 0.5,
+            temperature: { min_temp: 283 },
+            id: `${id_prefix}venom_from_spider_eye`
+        },
+        {
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 200 },
+            item_input: { item: 'minecraft:fermented_spider_eye' },
+            fluid_output: { fluid: 'tconstruct:venom', amount: 200 },
+            pressure: 2.0,
+            exothermic: false,
+            speed: 0.5,
+            temperature: { min_temp: 283 },
+            id: `${id_prefix}venom_from_fermented_spider_eye`
+        },
+        {
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'pneumaticcraft:plastic', amount: 1000 },
+            item_input: { item: 'kubejs:monster_mash' },
+            fluid_output: { fluid: 'pneumaticcraft:etching_acid', amount: 1000 },
+            pressure: 1.0,
+            exothermic: false,
+            speed: 1.0,
+            id: `${id_prefix}etching_acid_from_monster_mash`
         }
     ];
 
