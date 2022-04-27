@@ -2506,6 +2506,22 @@ onEvent('recipes', (event) => {
             reagent: 'atum:wanderer_helmet',
             output: 'eidolon:warlock_hat',
             id: `${id_prefix}warlock_hat`
+        },
+        {
+            inputs: [
+                'bloodmagic:etherealslate',
+                '#botania:runes/nidavellir',
+                'bloodmagic:etherealslate',
+                '#forge:pellets/antimatter',
+                '#forge:pellets/antimatter',
+                'bloodmagic:etherealslate',
+                'naturesaura:break_prevention',
+                'bloodmagic:etherealslate'
+            ],
+            sourceCost: 10000,
+            reagent: Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0}'),
+            output: Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0,Unbreakable:1}'),
+            id: `${id_prefix}unbreakable_graphite_electrode`
         }
     ];
 

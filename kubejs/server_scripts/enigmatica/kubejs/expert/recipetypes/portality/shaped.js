@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/portality/shaped/';
     const recipes = [
         {
             output: Item.of('4x portality:frame'),
@@ -57,6 +57,17 @@ onEvent('recipes', (event) => {
                 D: 'xnet:wireless_router'
             },
             id: 'portality:interdimensional'
+        },
+        {
+            output: Item.of('portality:controller'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'portality:frame',
+                B: 'immersiveengineering:coil_hv',
+                C: 'immersiveengineering:current_transformer',
+                D: '#industrialforegoing:machine_frame/simple'
+            },
+            id: `${id_prefix}controller_alternate`
         }
     ];
 

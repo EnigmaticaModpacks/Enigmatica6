@@ -276,14 +276,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'mekanismgenerators:wind_generator',
-            pattern: ['ABC', 'DEF', 'DEF', 'DGF'],
+            pattern: ['ABC', ' E ', ' E ', ' G '],
             key: {
                 A: 'pneumaticcraft:turbine_rotor',
                 B: 'immersiveengineering:dynamo',
                 C: '#forge:gears/compressed_iron',
-                D: 'pneumaticcraft:plastic',
                 E: 'engineersdecor:thick_steel_pole',
-                F: 'powah:capacitor_basic_large',
                 G: 'engineersdecor:thick_steel_pole_head'
             },
             id: 'mekanismgenerators:generator/wind'

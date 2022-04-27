@@ -159,6 +159,82 @@ onEvent('recipes', (event) => {
             output: { item: 'pneumaticcraft:unassembled_pcb', count: 32 },
             program: 'laser',
             id: `${id_prefix}batch_unassembled_pcb`
+        },
+        {
+            input: { item: 'kubejs:assembly_io_package', count: 1 },
+            output: { item: 'kubejs:assembly_io_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}assembly_io_assembly`
+        },
+        {
+            input: { item: 'kubejs:assembly_io_assembly', count: 1 },
+            output: { item: 'pneumaticcraft:assembly_io_unit_import', count: 2 },
+
+            program: 'laser',
+            id: `${id_prefix}assembly_io_alternate`
+        },
+        {
+            input: { item: 'kubejs:assembly_laser_package', count: 1 },
+            output: { item: 'kubejs:assembly_laser_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}assembly_laser_assembly`
+        },
+        {
+            input: { item: 'kubejs:assembly_laser_assembly', count: 1 },
+            output: { item: 'pneumaticcraft:assembly_laser', count: 1 },
+
+            program: 'laser',
+            id: `${id_prefix}assembly_laser_alternate`
+        },
+        {
+            input: { item: 'kubejs:assembly_drill_package', count: 1 },
+            output: { item: 'kubejs:assembly_drill_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}assembly_drill_assembly`
+        },
+        {
+            input: { item: 'kubejs:assembly_drill_assembly', count: 1 },
+            output: { item: 'pneumaticcraft:assembly_drill', count: 1 },
+
+            program: 'laser',
+            id: `${id_prefix}assembly_drill_alternate`
+        },
+        {
+            input: { item: 'kubejs:assembly_platform_package', count: 1 },
+            output: { item: 'kubejs:assembly_platform_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}assembly_platform_assembly`
+        },
+        {
+            input: { item: 'kubejs:assembly_platform_assembly', count: 1 },
+            output: { item: 'pneumaticcraft:assembly_platform', count: 1 },
+
+            program: 'laser',
+            id: `${id_prefix}assembly_platform_alternate`
+        },
+        {
+            input: { item: 'kubejs:assembly_controller_package', count: 1 },
+            output: { item: 'kubejs:assembly_controller_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}assembly_controller_assembly`
+        },
+        {
+            input: { item: 'kubejs:assembly_controller_assembly', count: 1 },
+            output: { item: 'pneumaticcraft:assembly_controller', count: 1 },
+            program: 'laser',
+            id: `${id_prefix}asssembly_controller_alternate`
+        },
+        {
+            input: { tag: 'forge:storage_blocks/brass', count: 1 },
+            output: { item: 'create:furnace_engine', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}assembly_controller_assembly`
+        },
+        {
+            input: { tag: 'forge:ingots/brass', count: 32 },
+            output: { item: 'create:flywheel', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}flywheel_alternate`
         }
     ];
 

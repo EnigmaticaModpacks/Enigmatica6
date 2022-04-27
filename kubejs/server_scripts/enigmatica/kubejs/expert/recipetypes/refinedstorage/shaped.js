@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/refinedstorage/';
+    const id_prefix = 'enigmatica:expert/refinedstorage/shaped/';
     /*
         ,
         {
@@ -157,6 +157,17 @@ onEvent('recipes', (event) => {
                 G: 'rftoolscontrol:cpu_core_2000'
             },
             id: 'refinedstorage:network_receiver'
+        },
+        {
+            output: 'refinedstorage:disk_drive',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:circuits/elite',
+                B: 'extrastorage:neural_processor',
+                C: 'immersiveengineering:logic_unit',
+                D: 'refinedstorage:machine_casing'
+            },
+            id: `${id_prefix}disk_drive_alternate`
         }
     ];
 
