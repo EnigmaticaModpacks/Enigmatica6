@@ -80,6 +80,7 @@ onEvent('recipes', (event) => {
         thermal_metal_melting(event, material, block, ingot, nugget, gear, rod, plate);
         thermal_gem_casting(event, material, gem, gear, rod, plate);
         thermal_gem_melting(event, material, block, gem, gear, rod, plate);
+        thermal_nugget_packing_unpacking(event, material, ingot, nugget);
 
         tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate);
         tconstruct_gem_casting(event, material, block, gem, gear, rod, plate);
@@ -1311,6 +1312,35 @@ onEvent('recipes', (event) => {
                 .crucible(Fluid.of(`${modId}:molten_${material}`, recipe.amount), recipe.input)
                 .energy(recipe.energy)
                 .id(`enigmatica:base/thermal/crucible/${material}_${recipe.type}`);
+        })
+    }
+
+    function thermal_nugget_packing_unpacking(event, material, ingot, nugget) {
+        if (ingot == air || nugget == air){
+            return;
+        }
+        let recipes = [
+            {
+                inputs: [
+                    Item.of(nugget, 9),
+                    Ingredient.of('#thermal:crafting/dies/packing_3x3')
+                ],
+                outputs: [Item.of(ingot, 1)],
+                energy: 2400,
+                id: `thermal:machine/press/packing3x3/press_${material}_packing`
+            },
+            {
+                inputs: [
+                    Item.of(ingot, 1),
+                    Ingredient.of('#thermal:crafting/dies/unpacking')
+                ],
+                outputs: [Item.of(nugget, 9)],
+                energy: 2400,
+                id: `thermal:machine/press/unpacking/press_${material}_packing`
+            }
+        ]
+        recipes.forEach((recipe) => {
+            event.recipes.thermal.press(recipe.outputs, recipe.inputs).energy(recipe.energy).id(recipe.id);
         });
     }
 
