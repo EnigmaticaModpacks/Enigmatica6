@@ -106,9 +106,14 @@ onEvent('recipes', (event) => {
 
         'eidolon:tallow',
         'eidolon:smelt_stone_brick',
+        'eidolon:lead_block',
+        'eidolon:decompress_lead_block',
+        'eidolon:lead_ingot',
+        'eidolon:decompress_lead_ingot',
 
         /emendatusenigmatica:dust_from_chunk/,
         'emendatusenigmatica:dust_from_ore/quartz',
+        'emendatusenigmatica:block_from_gem/arcane',
 
         'environmental:misc/cherries/cherry_pie',
         'environmental:misc/apple_pie',
@@ -160,6 +165,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crusher/bone_meal',
         /immersiveengineering:crafting\/hammercrushing/,
         'immersivepetroleum:distillationtower/oilcracking',
+        'immersiveengineering:crafting/coal_coke_to_coke',
+        //'immersiveengineering:crafting/ingot_copper_to_storage_copper',
 
         'materialis:smeltery/melting/metal/starmetal/dust',
         /materialis:armor\/building\/exosuit/,
@@ -270,7 +277,31 @@ onEvent('recipes', (event) => {
         /atum:.*dye$/,
         /thermal:compat\/\w+\/\w+_ore/,
         /decorative_blocks:\w+_beam/,
-        /decorative_blocks_abnormals:\w+_beam/
+        /decorative_blocks_abnormals:\w+_beam/,
+        /mekanism:storage_blocks\/\w+/,
+        /mekanism:nuggets\/\w+/,
+        /mekanism:processing\/\w+\/storage_blocks\/from_ingots/,
+        /mekanism:processing\/\w+\/ingot\/from_block/,
+        /mekanism:processing\/\w+\/ingot\/from_nuggets/,
+        /mekanism:processing\/\w+\/nugget\/from_ingot/,
+        /thermal:storage\/\w+_block/,
+        /thermal:storage\/\w+_ingot_from_nuggets/,
+        /thermal:storage\/\w+_nugget_from_ingot/,
+        /tconstruct:common\/materials\/\w+_block_from_ingots/,
+        /tconstruct:common\/materials\/\w+_ingot_from_block/,
+        /tconstruct:common\/materials\/\w+_ingot_from_nuggets/,
+        /tconstruct:common\/materials\/\w+_nugget_from_ingot/,
+        /immersiveengineering:crafting\/ingot_\w+_to_storage_\w+/,
+        /immersiveengineering:crafting\/ingot_\w+_to_nugget_\w+/,
+        /immersiveengineering:crafting\/nugget_\w+_to_ingot_\w+/,
+        /immersiveengineering:crafting\/storage_\w+_to_ingot_\w+/,
+        /create:crafting\/materials\/\w+_block_from_compacting/,
+        /create:crafting\/materials\/\w+_ingot_from_compacting/,
+        /create:crafting\/materials\/\w+_ingot_from_decompacting/,
+        /create:crafting\/materials\/\w+_nugget_from_decompacting/,
+        /occultism:crafting\/\w+_block/,
+        /occultism:crafting\/\w+_nugget/,
+        /occultism:crafting\/\w+_ingot_from_nuggets/
     ];
 
     outputRemovals.forEach((removal) => {

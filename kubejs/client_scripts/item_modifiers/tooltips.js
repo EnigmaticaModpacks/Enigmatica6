@@ -167,12 +167,16 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['kubejs:amadron_survey_tools'],
             text: [Text.of(`Tools used by Amadron Drones to gather rare resources.`).aqua()]
+        },
+        {
+            items: ['kubejs:monster_mash'],
+            text: [Text.of(`...It caught on in a flash...`).red()]
         }
     ];
 
     refinedStorageItems.forEach((item) => {
         recipes.push({
-            items: ['refinedstorage:' + item],
+            items: [`refinedstorage:${item}`],
             text: ['Can be dyed through crafting or by right clicking it with dye in-world.']
         });
     });
