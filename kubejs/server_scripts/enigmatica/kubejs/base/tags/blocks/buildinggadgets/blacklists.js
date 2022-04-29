@@ -26,7 +26,8 @@ onEvent('block.tags', (event) => {
         'immersivepetroleum:hydrotreater',
         'immersivepetroleum:distillationtower',
         'immersivepetroleum:cokerunit',
-        'immersivepetroleum:pumpjack'
+        'immersivepetroleum:pumpjack',
+        'xnet:facade'
     ];
     event.get('buildinggadgets:blacklist/generic').add(blocks);
 });
