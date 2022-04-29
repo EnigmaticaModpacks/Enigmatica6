@@ -24,7 +24,6 @@ onEvent('recipes', (event) => {
                     'pneumaticcraft:guard_drone',
                     'pneumaticcraft:harvesting_drone',
                     'pneumaticcraft:logistics_drone',
-                    'dummmmmmy:target_dummy',
                     'ars_nouveau:whelp',
                     'ars_nouveau:familiar_bookwyrm',
                     'ars_nouveau:carbuncle',

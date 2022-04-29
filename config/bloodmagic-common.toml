@@ -2,7 +2,7 @@
 #Stops the listed entities from being used in the Well of Suffering.
 #Use the registry name of the entity. Vanilla entities do not require the modid.
 [Blacklist]
-	wellOfSuffering = ["dummmmmmy:target_dummy", "ars_nouveau:whelp", "ars_nouveau:familiar_bookwyrm", "ars_nouveau:carbuncle", "ars_nouveau:familiar_carbuncle", "ars_nouveau:drygmy", "ars_nouveau:familiar_drygmy", "ars_nouveau:dummy", "ars_nouveau:familiar_jabberwog", "ars_nouveau:sylph", "ars_nouveau:familiar_sylph", "ars_nouveau:wixie", "ars_nouveau:familiar_wixie", "ars_nouveau:summon_horse", "ars_nouveau:summon_wolf", "ars_nouveau:ally_vex"]
+	wellOfSuffering = ["ars_nouveau:whelp", "ars_nouveau:familiar_bookwyrm", "ars_nouveau:carbuncle", "ars_nouveau:familiar_carbuncle", "ars_nouveau:drygmy", "ars_nouveau:familiar_drygmy", "ars_nouveau:dummy", "ars_nouveau:familiar_jabberwog", "ars_nouveau:sylph", "ars_nouveau:familiar_sylph", "ars_nouveau:wixie", "ars_nouveau:familiar_wixie", "ars_nouveau:summon_horse", "ars_nouveau:summon_wolf", "ars_nouveau:ally_vex"]
 
 #Amount of LP the Sacrificial Dagger should provide for each damage dealt.
 ["Config Values"]
@@ -12,7 +12,7 @@
 	#Setting the value to 0 will blacklist it.
 	#Use the registry name of the entity followed by a ';' and then the value you want.
 	#Vanilla entities do not require the modid.
-	sacrificialValues = ["villager;100", "slime;15", "enderman;10", "cow;100", "chicken;100", "horse;100", "sheep;100", "wolf;100", "ocelot;100", "pig;100", "rabbit;100", "parrot;300", "dummmmmmy:target_dummy;0", "ars_nouveau:whelp;0", "ars_nouveau:familiar_bookwyrm;0", "ars_nouveau:carbuncle;0", "ars_nouveau:familiar_carbuncle;0", "ars_nouveau:drygmy;0", "ars_nouveau:familiar_drygmy;0", "ars_nouveau:dummy;0", "ars_nouveau:familiar_jabberwog;0", "ars_nouveau:sylph;0", "ars_nouveau:familiar_sylph;0", "ars_nouveau:wixie;0", "ars_nouveau:familiar_wixie;0", "ars_nouveau:summon_horse;0", "ars_nouveau:summon_wolf;0", "ars_nouveau:ally_vex;0"]
+	sacrificialValues = ["villager;100", "slime;15", "enderman;10", "cow;100", "chicken;100", "horse;100", "sheep;100", "wolf;100", "ocelot;100", "pig;100", "rabbit;100", "parrot;300", "ars_nouveau:whelp;0", "ars_nouveau:familiar_bookwyrm;0", "ars_nouveau:carbuncle;0", "ars_nouveau:familiar_carbuncle;0", "ars_nouveau:drygmy;0", "ars_nouveau:familiar_drygmy;0", "ars_nouveau:dummy;0", "ars_nouveau:familiar_jabberwog;0", "ars_nouveau:sylph;0", "ars_nouveau:familiar_sylph;0", "ars_nouveau:wixie;0", "ars_nouveau:familiar_wixie;0", "ars_nouveau:summon_horse;0", "ars_nouveau:summon_wolf;0", "ars_nouveau:ally_vex;0"]
 	#State that the dungeon spawning ritual can only be activated when using a Creative Activation Crystal.
 	#Used on servers for if you do not trust your players to not destroy other people's bases.
 	makeDungeonRitualCreativeOnly = false
