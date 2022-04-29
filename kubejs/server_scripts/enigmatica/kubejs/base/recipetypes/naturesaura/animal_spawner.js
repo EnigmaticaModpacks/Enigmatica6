@@ -398,6 +398,13 @@ onEvent('recipes', (event) => {
             aura: 50000,
             time: 60,
             id: `${id_prefix}clogged_bee`
+        },
+        {
+            inputs: ['naturesaura:birth_spirit', 'alexsmobs:maggot', 'farmersdelight:organic_compost'],
+            entity: 'alexsmobs:fly',
+            aura: 50000,
+            time: 60,
+            id: `${id_prefix}fly`
         }
     ];
 
