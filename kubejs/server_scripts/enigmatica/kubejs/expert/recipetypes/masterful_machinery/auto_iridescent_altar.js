@@ -484,6 +484,75 @@ onEvent('recipes', (event) => {
             ],
             ticks: 400,
             id: `${id_prefix}elven_spreader`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:gems/niotic', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentbinding', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 4 }
+                },
+
+                { type: 'masterfulmachinery:fluids', data: { fluid: 'industrialforegoing:ether_gas', amount: 1000 } },
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:chalice', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/gold', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:black_marble_raw', count: 3 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:gems/aquamarine', count: 5 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}chalice`
         }
     ];
 
