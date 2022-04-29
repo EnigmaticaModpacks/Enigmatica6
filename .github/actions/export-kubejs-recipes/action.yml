@@ -1,0 +1,49 @@
+name: 'export kubejs recipes'
+inputs:
+  mode:
+    description: 'for which mode?'
+    required: true
+runs:
+  using: "composite"
+  steps:
+
+    # set mode
+    - run: node ${{ github.action_path }}/packmode.js ${{ inputs.mode }} >> mode.json
+      shell: bash
+    - run: cat mode.json
+      shell: bash
+
+    # install server
+    - uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+    - run: java -jar InstanceSync.jar
+      shell: bash
+    - run: pwsh update-server.ps1
+      shell: bash
+      working-directory: ./automation
+    - run: java -jar InstanceSync.jar
+      shell: bash
+
+    # launch server
+    - uses: actions/setup-node@v3
+    - run: echo "eula=true" >> ./eula.txt
+      shell: bash
+    - run: sed -i'' -e 's/debugInfo=false/debugInfo=true/g' ${{ github.workspace }}/kubejs/config/common.properties
+      shell: bash
+    - run: node ${{ github.action_path }}/extract.js ./start-automated-server.sh
+      shell: bash
+    - run: sed -i'' -e 's/debugInfo=true/debugInfo=false/g' ${{ github.workspace }}/kubejs/config/common.properties
+      shell: bash
+
+    # export recipes
+    - run: node ${{ github.action_path }}/treasure_disks.js
+      shell: bash
+    - run: tree
+      shell: bash
+    - name: Upload all ${{ inputs.mode }} mode recipes
+      uses: actions/upload-artifact@v3
+      with:
+        name: ${{ inputs.mode }}_mode_recipes.json
+        path: ./kubejs/data/computercraft/lua/treasure/kubejs/recipes/recipes.json

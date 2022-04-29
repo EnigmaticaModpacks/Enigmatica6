@@ -1,0 +1,27 @@
+name: export kubejs recipes
+on: [push]
+jobs:
+  normal:
+    name: normal mode recipes
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Composite
+        uses: ./.github/actions/export-kubejs-recipes
+        with:
+          mode: 'normal'
+  expert:
+    name: expert mode recipes
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Composite
+        uses: ./.github/actions/export-kubejs-recipes
+        with:
+          mode: 'expert'
