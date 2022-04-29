@@ -323,7 +323,14 @@
 			tasks: [{
 				id: "7D3D33D0DC05CF54"
 				type: "item"
-				item: "bloodmagic:largebloodstonebrick"
+				title: "Bloodstone"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "enigmatica:stonecuttables/bloodstone"
+					}
+				}
 			}]
 		}
 		{
