@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
   const id_prefix = 'enigmatica:base/create/mechanical_crafting/';
   const recipes = [
     {
-      output: Item.of(`computercraft:treasure_disk`, {Title: "all recipes", SubPath: "kubejs/recipes", Colour: 11829822}),
+      output: Item.of(`computercraft:treasure_disk`, {Title: "", SubPath: "kubejs/recipes", Colour: 11829822}),
       pattern: ['A'],
       key: {
         A: Item.of(`computercraft:disk`).ignoreNBT(), 
