@@ -1,4 +1,5 @@
 const fs = require('fs');
+// const { format, parse } = require('lua-json');
 
 const recipes_created = '======== Debug output of all added recipes ========';
 const recipes_updated = '======== Debug output of all modified recipes ========';
@@ -64,5 +65,8 @@ const disk = './kubejs/data/computercraft/lua/treasure/kubejs/recipes';
 
 fs.mkdirSync(disk, {recursive: true});
 fs.writeFileSync(`${disk}/.gitignore`, '*')
+
 fs.writeFileSync(`${disk}/recipes.lua`, "return textutils.unserializeJSON(io.open(... .. '.json', 'r'):read('a'))");
 fs.writeFileSync(`${disk}/recipes.json`, JSON.stringify(data.recipes, null, '  '));
+
+// fs.writeFileSync(`${disk}/recipes.lua`, format(data.recipes).replaceAll("\\\\'", "\\'").replaceAll("'\\'", "'\\\\'").replaceAll("and =", "['and'] ="))
