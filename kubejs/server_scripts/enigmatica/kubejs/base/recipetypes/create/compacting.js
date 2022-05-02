@@ -49,6 +49,12 @@ onEvent('recipes', (event) => {
             output: Fluid.of('industrialforegoing:latex', 50),
             type: 'heated',
             id: `${id_prefix}latex_from_dandelion`
+        },
+        {
+            inputs: ['powah:photoelectric_pane', 'minecraft:ender_eye'],
+            output: 'powah:lens_of_ender',
+            type: 'heated',
+            id: `${id_prefix}lens_of_ender`
         }
     ];
     honeyVarieties.forEach((honeyVariety) => {
