@@ -149,6 +149,8 @@
 	#The maximum distance that a Drone may teleport when it can't find a path to its destination. Default value of 0 means no limit. This is primarily intended to limit abuse of teleportation to other players on PvP servers, but may find other uses. Be careful about setting this value very low.
 	#Range: > 0
 	max_drone_teleport_range = 0
+	#When set to true, server will strip NBT data from pressurizable items (pneumatic armor, drones...) which the client doesn't care about. Good for saving on network chatter, but can cause players to be kicked under some circumstances. If this occurs, set this config value to false.
+	nbt_to_client_modification = false
 
 ["Micromissile Properties"]
 	#Base explosion damage (modified by missile setup)
