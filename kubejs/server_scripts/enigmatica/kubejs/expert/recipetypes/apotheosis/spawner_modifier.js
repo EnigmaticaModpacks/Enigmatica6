@@ -223,6 +223,30 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: 'apotheosis:spawner/redstone_control_inverted'
+        },
+        {
+            mainhand: { item: 'ars_nouveau:glyph_dampen' },
+            offhand: { item: 'naturesaura:token_joy' },
+            consumes_offhand: false,
+            stat_changes: [
+                {
+                    id: 'silent',
+                    value: true
+                }
+            ],
+            id: 'apotheosis:spawner/silent'
+        },
+        {
+            mainhand: { item: 'ars_nouveau:glyph_dampen' },
+            offhand: { item: 'naturesaura:token_sorrow' },
+            consumes_offhand: false,
+            stat_changes: [
+                {
+                    id: 'silent',
+                    value: false
+                }
+            ],
+            id: 'apotheosis:spawner/silent_inverted'
         }
     ];
 
