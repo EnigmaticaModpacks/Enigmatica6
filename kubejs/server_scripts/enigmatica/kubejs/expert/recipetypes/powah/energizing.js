@@ -11,7 +11,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:storage_blocks/iron_osmium' },
                 { tag: 'forge:storage_blocks/iron_osmium' }
             ],
-            energy: '1000000',
+            energy: 1000000,
             result: {
                 item: 'xnet:antenna_dish',
                 count: 1
@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ item: 'thermal:energy_cell_frame' }, { tag: 'forge:storage_blocks/redstone' }],
-            energy: '250000',
+            energy: 250000,
             result: {
                 item: 'xnet:redstone_proxy',
                 count: 1
@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ item: 'xnet:redstone_proxy_upd' }],
-            energy: '100000',
+            energy: 100000,
             result: {
                 item: 'xnet:redstone_proxy',
                 count: 1
@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ item: 'xnet:redstone_proxy' }],
-            energy: '100000',
+            energy: 100000,
             result: {
                 item: 'xnet:redstone_proxy_upd',
                 count: 1
@@ -52,7 +52,7 @@ onEvent('recipes', (event) => {
                 { item: 'refinedstorage:raw_advanced_processor' },
                 { item: 'refinedstorage:raw_advanced_processor' }
             ],
-            energy: '3000000',
+            energy: 3000000,
             result: {
                 item: 'extrastorage:raw_neural_processor',
                 count: 3
@@ -65,7 +65,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:gems/diamond' },
                 { item: 'integrateddynamics:crystalized_menril_block' }
             ],
-            energy: '9000000',
+            energy: 9000000,
             result: {
                 item: 'rftoolsbase:infused_diamond',
                 count: 1
@@ -78,7 +78,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:gems/ender' },
                 { item: 'integrateddynamics:crystalized_chorus_block' }
             ],
-            energy: '18000000',
+            energy: 18000000,
             result: {
                 item: 'rftoolsbase:infused_enderpearl',
                 count: 1
@@ -87,7 +87,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ tag: 'forge:ingots/froststeel' }, { tag: 'forge:ingots/electrum' }],
-            energy: '10000',
+            energy: 10000,
             result: {
                 item: 'powah:steel_energized',
                 count: 2
@@ -96,7 +96,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ tag: 'forge:storage_blocks/froststeel' }, { tag: 'forge:storage_blocks/electrum' }],
-            energy: '100000',
+            energy: 100000,
             result: {
                 item: 'powah:energized_steel_block',
                 count: 2
@@ -105,7 +105,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ item: 'ars_nouveau:blaze_fiber' }, { item: 'resourcefulbees:blaze_honeycomb' }],
-            energy: '120000',
+            energy: 120000,
             result: {
                 item: 'powah:crystal_blazing',
                 count: 1
@@ -114,7 +114,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ item: 'astralsorcery:resonating_gem' }, { tag: 'forge:dusts/starmetal' }],
-            energy: '300000',
+            energy: 300000,
             result: {
                 item: 'powah:crystal_niotic',
                 count: 1
@@ -123,7 +123,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ item: 'atum:osiris_godshard' }, { tag: 'forge:dusts/uranium' }],
-            energy: '1000000',
+            energy: 1000000,
             result: {
                 item: 'powah:crystal_spirited',
                 count: 1
@@ -137,7 +137,7 @@ onEvent('recipes', (event) => {
                 { item: 'bloodmagic:weakbloodshard' },
                 { tag: 'forge:storage_blocks/blazing' }
             ],
-            energy: '20000000',
+            energy: 20000000,
             result: {
                 item: 'powah:crystal_nitro',
                 count: 16
@@ -154,7 +154,7 @@ onEvent('recipes', (event) => {
                     nbt: '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}'
                 }
             ],
-            energy: '20000000',
+            energy: 20000000,
             result: {
                 item: 'powah:ender_core',
                 count: 1
@@ -168,7 +168,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:dusts/sulfur' },
                 { tag: 'forge:dusts/fluorite' }
             ],
-            energy: '10000',
+            energy: 10000,
             result: {
                 item: 'powah:uraninite',
                 count: 2
@@ -177,7 +177,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ item: 'minecraft:blaze_rod' }],
-            energy: '10000000',
+            energy: 10000000,
             result: {
                 type: 'forge:nbt',
                 item: 'rftoolspower:blazing_rod',
@@ -194,7 +194,7 @@ onEvent('recipes', (event) => {
                 { item: 'powah:capacitor_blazing' },
                 { item: 'powah:capacitor_blazing' }
             ],
-            energy: '500000',
+            energy: 500000,
             result: {
                 item: 'rftoolspower:power_core2',
                 count: 1
@@ -209,7 +209,7 @@ onEvent('recipes', (event) => {
                 { item: 'powah:capacitor_nitro' },
                 { item: 'powah:capacitor_nitro' }
             ],
-            energy: '10000000',
+            energy: 10000000,
             result: {
                 item: 'rftoolspower:power_core3',
                 count: 1
@@ -224,7 +224,7 @@ onEvent('recipes', (event) => {
                 { item: 'rftoolsbase:infused_diamond' },
                 { tag: 'mekanism:alloys/atomic' }
             ],
-            energy: '1000000000',
+            energy: 1000000000,
             result: {
                 item: 'mekanism:teleportation_core',
                 count: 2
