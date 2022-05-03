@@ -192,11 +192,16 @@
 				id: "000000000000017D"
 				type: "item"
 				title: "Energy Cable (Any Tier)"
+				icon: "powah:energy_cable_basic"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
 					tag: {
 						items: [
+							{
+								id: "powah:energy_cable_starter"
+								Count: 1b
+							}
 							{
 								id: "powah:energy_cable_basic"
 								Count: 1b
@@ -220,6 +225,69 @@
 							{
 								id: "powah:energy_cable_nitro"
 								Count: 1b
+							}
+							{
+								id: "powah:ender_gate_starter"
+								Count: 1b
+								tag: {
+									lollipoptile_stack_nbt: {
+										energy_stored_main_energy: 0L
+									}
+								}
+							}
+							{
+								id: "powah:ender_gate_basic"
+								Count: 1b
+								tag: {
+									lollipoptile_stack_nbt: {
+										energy_stored_main_energy: 0L
+									}
+								}
+							}
+							{
+								id: "powah:ender_gate_hardened"
+								Count: 1b
+								tag: {
+									lollipoptile_stack_nbt: {
+										energy_stored_main_energy: 0L
+									}
+								}
+							}
+							{
+								id: "powah:ender_gate_blazing"
+								Count: 1b
+								tag: {
+									lollipoptile_stack_nbt: {
+										energy_stored_main_energy: 0L
+									}
+								}
+							}
+							{
+								id: "powah:ender_gate_niotic"
+								Count: 1b
+								tag: {
+									lollipoptile_stack_nbt: {
+										energy_stored_main_energy: 0L
+									}
+								}
+							}
+							{
+								id: "powah:ender_gate_spirited"
+								Count: 1b
+								tag: {
+									lollipoptile_stack_nbt: {
+										energy_stored_main_energy: 0L
+									}
+								}
+							}
+							{
+								id: "powah:ender_gate_nitro"
+								Count: 1b
+								tag: {
+									lollipoptile_stack_nbt: {
+										energy_stored_main_energy: 0L
+									}
+								}
 							}
 						]
 					}
