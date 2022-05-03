@@ -43,8 +43,8 @@ onEvent('recipes', (event) => {
             output: '{FluidName:"astralsorcery:liquid_starlight",Amount:1000}',
             rarity: [
                 {
-                    whitelist: {},
-                    blacklist: { type: 'minecraft:worldgen/biome', values: nether_end_biomes },
+                    whitelist: { type: 'minecraft:worldgen/biome', values: end_biomes },
+                    blacklist: {},
                     depth_min: 250,
                     depth_max: 255,
                     weight: 10
