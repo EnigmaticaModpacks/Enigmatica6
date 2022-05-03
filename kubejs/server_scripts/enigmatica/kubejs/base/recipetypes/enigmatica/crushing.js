@@ -54,6 +54,15 @@ onEvent('recipes', (event) => {
             duration: 50,
             ignore_occultism_multiplier: true,
             id_suffix: 'bone_meal_from_serrated_shark_tooth'
+        },
+        {
+            secondary_output: Item.of('astralsorcery:aquamarine').chance(0.15),
+            output: Item.of('astralsorcery:aquamarine', 4),
+            input: Ingredient.of('#forge:ores/aquamarine'),
+            experience: 0.5,
+            duration: 150,
+            ignore_occultism_multiplier: false,
+            id_suffix: 'aquamarine'
         }
     ];
 
