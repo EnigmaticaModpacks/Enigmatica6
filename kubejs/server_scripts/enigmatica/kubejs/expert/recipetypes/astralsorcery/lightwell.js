@@ -19,7 +19,7 @@ onEvent('recipes', (event) => {
         {
             input: { item: 'astralsorcery:resonating_gem' },
             output: 'astralsorcery:liquid_starlight',
-            productionMultiplier: 0.75,
+            productionMultiplier: 10.0,
             shatterMultiplier: 100.0,
             color: -16734209,
             id: 'astralsorcery:lightwell/starlight_resonating_gem'
