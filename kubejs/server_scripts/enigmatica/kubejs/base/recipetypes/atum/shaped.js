@@ -18,6 +18,14 @@ onEvent('recipes', (event) => {
                 B: '#forge:ingots/nebu'
             },
             id: 'atum:nebu_chain'
+        },
+        {
+            output: Item.of('6x atum:sand_layer'),
+            pattern: ['AAA'],
+            key: {
+                A: 'atum:sand'
+            },
+            id: `${id_prefix}sand_layer`
         }
     ];
 
