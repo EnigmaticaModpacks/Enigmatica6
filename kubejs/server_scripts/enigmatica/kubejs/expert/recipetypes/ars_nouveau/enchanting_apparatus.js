@@ -1507,7 +1507,7 @@ onEvent('recipes', (event) => {
             ],
             reagent: '#forge:gems/mana',
             sourceCost: 500,
-            output: Item.of('2x occultism:otherstone_tablet'),
+            output: Item.of('4x occultism:otherstone_tablet'),
             id: 'occultism:crafting/otherstone_tablet'
         },
         {

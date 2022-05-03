@@ -158,6 +158,7 @@ onEvent('recipes', (event) => {
         'industrialforegoing:stonework_generate/andesite',
         'industrialforegoing:stonework_generate/diorite',
         'industrialforegoing:stonework_generate/granite',
+        'industrialforegoing:laser_drill_fluid/oil',
 
         'immersiveengineering:crafting/stick_steel',
         'immersiveengineering:crafting/stick_aluminum',
