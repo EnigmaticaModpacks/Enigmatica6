@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
                 { item: 'powah:capacitor_blazing' },
                 { item: 'powah:capacitor_blazing' }
             ],
-            energy: '250000',
+            energy: 250000,
             result: {
                 item: 'tetra:magmatic_cell',
                 count: 1
