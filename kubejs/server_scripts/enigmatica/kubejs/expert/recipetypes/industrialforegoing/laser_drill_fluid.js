@@ -38,6 +38,22 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'industrialforegoing:laser_lens14' },
             entity: 'minecraft:villager',
             id: `${id_prefix}life_essence_fluid`
+        },
+        {
+            output: '{FluidName:"astralsorcery:liquid_starlight",Amount:1000}',
+            rarity: [
+                {
+                    whitelist: { type: 'minecraft:worldgen/biome', values: end_biomes },
+                    blacklist: {},
+                    depth_min: 250,
+                    depth_max: 255,
+                    weight: 10
+                }
+            ],
+            pointer: 0,
+            catalyst: { item: 'industrialforegoing:laser_lens0' },
+            entity: 'minecraft:empty',
+            id: `${id_prefix}liquid_starlight`
         }
     ];
     recipes.forEach((recipe) => {
