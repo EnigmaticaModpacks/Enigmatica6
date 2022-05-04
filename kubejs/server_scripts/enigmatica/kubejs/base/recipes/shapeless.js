@@ -79,12 +79,6 @@ onEvent('recipes', (event) => {
             output: Item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }),
             inputs: ['minecraft:sugar', 'minecraft:book']
         },
-
-        {
-            output: 'prettypipes:crafting_terminal',
-            inputs: ['prettypipes:item_terminal', 'prettypipes:low_crafting_module'],
-            id: 'prettypipes:crafting_terminal'
-        },
         { output: 'ars_nouveau:mana_gem', inputs: ['emendatusenigmatica:arcane_gem'] },
         { output: 'emendatusenigmatica:arcane_gem', inputs: ['ars_nouveau:mana_gem'] },
         {
