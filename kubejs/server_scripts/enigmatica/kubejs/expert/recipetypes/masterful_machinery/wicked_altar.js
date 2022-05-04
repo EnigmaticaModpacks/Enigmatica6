@@ -14,8 +14,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'atum:anubis_godshard', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
                 }
             ],
             ticks: 100,
@@ -31,8 +30,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'atum:anput_godshard', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
                 }
             ],
             ticks: 100,
@@ -48,8 +46,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:warped_sprouts', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
                 }
             ],
             ticks: 100,
@@ -63,8 +60,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'atum:nepthys_godshard', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 4000 }
                 }
             ],
             ticks: 400,
@@ -80,8 +76,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:lesser_soul_gem', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 5000 }
                 }
             ],
             ticks: 500,
@@ -97,7 +92,7 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 5000 }
                 }
             ],
             ticks: 500,
@@ -117,8 +112,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10000 }
                 }
             ],
             ticks: 1000,
@@ -134,8 +128,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:ingots/silver', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10000 }
                 }
             ],
             ticks: 1000,
@@ -149,8 +142,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/utherium', count: 4 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
                 }
             ],
             ticks: 100,
@@ -166,8 +158,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/arcane_gold', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
                 }
             ],
             ticks: 100,
@@ -183,8 +174,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:chunks', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
                 }
             ],
             ticks: 100,
@@ -200,8 +190,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'minecraft:enchanted_book', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
                 }
             ],
             ticks: 100,
@@ -220,8 +209,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:enchanted_ash', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
                 }
             ],
             ticks: 100,
@@ -237,8 +225,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/silicon_bronze', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
                 }
             ],
             ticks: 100,
@@ -253,8 +240,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:inlays/arcane_gold', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 50 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 50000 }
                 }
             ],
             ticks: 1000,
@@ -268,8 +254,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'architects_palette:moonstone', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 500 }
                 }
             ],
             ticks: 50,
@@ -283,8 +268,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/fluorite', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 500 }
                 }
             ],
             ticks: 50,
@@ -298,8 +282,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/fluorite', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 500 }
                 }
             ],
             ticks: 50,
