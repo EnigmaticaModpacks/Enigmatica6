@@ -213,7 +213,7 @@ onEvent('recipes', (event) => {
             },
             {
                 input1: Ingredient.of('12x #forge:ingots/refined_radiance'),
-                secondaries: ['astralsorcery:shifting_star', Item.of('2x botania:laputa_shard')],
+                secondaries: ['astralsorcery:shifting_star', 'botania:laputa_shard'],
                 outputs: ['kubejs:laputian_ingot'],
                 time: 100 * 64,
                 energy: 51200 * 64,
