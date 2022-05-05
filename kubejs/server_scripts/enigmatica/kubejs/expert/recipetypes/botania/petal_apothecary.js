@@ -645,6 +645,25 @@ onEvent('recipes', (event) => {
             output: 'naturesaura:gold_nether_brick',
             count: 1,
             id: `${id_prefix}gold_nether_brick`
+        },
+        {
+            inputs: [
+                '#botania:runes/air',
+                '#forge:ingots/sky',
+                'atum:horus_godshard',
+                '#forge:gems/dragonstone',
+                'atum:geb_godshard',
+                '#forge:ingots/gaia',
+                '#botania:runes/earth',
+                '#forge:ingots/gaia',
+                'atum:geb_godshard',
+                'botania:floating_rosa_arcana',
+                'atum:horus_godshard',
+                '#forge:ingots/sky'
+            ],
+            output: 'botania:laputa_shard',
+            count: 1,
+            id: `${id_prefix}laputa_shard`
         }
     ];
 

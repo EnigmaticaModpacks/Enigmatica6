@@ -511,6 +511,7 @@ const recipesToHide = [
             'botania:brewery',
             'botania:thorn_chakram',
             'botania:flare_chakram',
+            'botania:laputa_shard',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
