@@ -540,11 +540,52 @@ onEvent('recipes', (event) => {
             id: `powah:crafting/ender_gate_${tier}`
         });
     });
+    
+   powahTiers.forEach(function (this_tier, i) {
+      if (['starter', 'nitro'].includes(this_tier)) {
+          return;
+      }
+
+      function casingMaterial(tier) {
+        switch(tier) {
+          case 'basic': return {
+            tag: 'forge:storage_blocks/lead',
+            item: 'emendatusenigmatica:lead_block'};
+          case 'hardened': return {
+            tag: 'forge:storage_blocks/energized_steel',
+            item: 'powah:energized_steel_block'};
+          default: return {
+            tag: `forge:storage_blocks/${tier}`,
+            item: `powah:${tier}_crystal_block`};
+        }
+      }
+
+      let next_tier = powahTiers[i + 1];
+
+      recipes.push({
+        inputs: [
+          { item: `powah:reactor_${this_tier}`, count: 36 },
+          { item: `powah:energy_cell_${next_tier}`, count: 2, unstackable: true },
+          { item: `powah:thermo_generator_${next_tier}`, count: 3, unstackable: true },
+          { item: `powah:furnator_${next_tier}`, count: 1, unstackable: true },
+          { tag: casingMaterial(next_tier).tag, count: 6 }
+        ],
+        pressure: -0.75,
+        results: [
+          { item: `powah:reactor_${next_tier}`, count: 36 },
+          { item: `powah:energy_cell_${this_tier}`, count: 2 },
+          { item: `powah:thermo_generator_${this_tier}`, count: 3 },
+          { item: `powah:furnator_${this_tier}`, count: 1 },
+          { item: casingMaterial(this_tier).item, count: 6 }
+        ],
+        id: `${id_prefix}upgrade_${this_tier}_reactor_to_${next_tier}`
+      });
+    })
 
     recipes.forEach((recipe) => {
         let ingredients = [];
         recipe.inputs.forEach((input) => {
-            input.type = 'pneumaticcraft:stacked_item';
+            if (!input.unstackable) input.type = 'pneumaticcraft:stacked_item';
             ingredients.push(input);
         });
 
