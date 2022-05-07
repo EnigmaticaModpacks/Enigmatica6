@@ -67,7 +67,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             pointer: 0,
-            catalyst: { item: 'industrialforegoing:laser_lens4' },
+            catalyst: { item: industrialforegoing.laser_lens.orange },
             entity: 'minecraft:blaze',
             type: 'industrialforegoing:laser_drill_fluid',
             id: `${id_prefix}blazing_blood`
