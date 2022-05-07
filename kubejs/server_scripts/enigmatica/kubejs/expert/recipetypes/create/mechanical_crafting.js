@@ -341,7 +341,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:hdpe_sheet',
                 D: 'thermal:charge_bench',
                 E: 'rftoolsbase:infused_diamond',
-                F: 'industrialforegoing:laser_lens2',
+                F: industrialforegoing.laser_lens.magenta,
                 G: 'thermal:upgrade_augment_2',
                 H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
             },
@@ -356,7 +356,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:hdpe_sheet',
                 D: 'thermal:charge_bench',
                 E: 'rftoolsbase:infused_diamond',
-                F: 'industrialforegoing:laser_lens6',
+                F: industrialforegoing.laser_lens.pink,
                 G: 'thermal:upgrade_augment_2',
                 H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
             },
@@ -371,7 +371,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:hdpe_sheet',
                 D: 'thermal:charge_bench',
                 E: 'rftoolsbase:infused_diamond',
-                F: 'industrialforegoing:laser_lens3',
+                F: industrialforegoing.laser_lens.light_blue,
                 G: 'thermal:upgrade_augment_2',
                 H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
             },

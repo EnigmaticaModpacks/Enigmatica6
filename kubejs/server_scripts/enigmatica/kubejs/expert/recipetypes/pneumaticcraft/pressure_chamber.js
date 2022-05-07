@@ -442,7 +442,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'industrialforegoing:laser_lens10', count: 1 },
+                { item: industrialforegoing.laser_lens.purple, count: 1 },
                 { item: 'industrialforegoing:fluid_laser_base', count: 1 },
                 { item: 'industrialforegoing:laser_drill', count: 4 },
                 { item: 'industrialforegoing:speed_addon_2', count: 4 },

@@ -55,7 +55,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'rftoolsutility:matter_receiver',
-                'industrialforegoing:laser_lens14',
+                industrialforegoing.laser_lens.red,
                 '#industrialforegoing:machine_frame/advanced',
                 'minecraft:spawner',
                 'minecraft:spawner'
@@ -71,7 +71,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'rftoolsutility:matter_transmitter',
-                'industrialforegoing:laser_lens4',
+                industrialforegoing.laser_lens.yellow,
                 '#industrialforegoing:machine_frame/simple',
                 '#forge:gears/lumium',
                 '#forge:gears/lumium'
