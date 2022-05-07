@@ -54,6 +54,23 @@ onEvent('recipes', (event) => {
             catalyst: { item: industrialforegoing.laser_lens.white },
             entity: 'minecraft:empty',
             id: `${id_prefix}liquid_starlight`
+        },
+        {
+            output: '{FluidName:"tconstruct:blazing_blood",Amount:1000}',
+            rarity: [
+                {
+                    whitelist: { type: 'minecraft:worldgen/biome', values: nether_biomes },
+                    blacklist: {},
+                    depth_min: 0,
+                    depth_max: 256,
+                    weight: 1
+                }
+            ],
+            pointer: 0,
+            catalyst: { item: 'industrialforegoing:laser_lens4' },
+            entity: 'minecraft:blaze',
+            type: 'industrialforegoing:laser_drill_fluid',
+            id: `${id_prefix}blazing_blood`
         }
     ];
     recipes.forEach((recipe) => {
