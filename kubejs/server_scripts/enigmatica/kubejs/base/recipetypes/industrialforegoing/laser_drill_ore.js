@@ -41,7 +41,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens8'
+                item: industrialforegoing.laser_lens.light_gray
             }
         },
         {
@@ -65,7 +65,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens2'
+                item: industrialforegoing.laser_lens.magenta
             }
         },
         {
@@ -89,7 +89,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens15'
+                item: industrialforegoing.laser_lens.black
             }
         },
         {
@@ -113,7 +113,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens7'
+                item: industrialforegoing.laser_lens.gray
             }
         },
         {
@@ -144,7 +144,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens0'
+                item: industrialforegoing.laser_lens.white
             }
         },
         {
@@ -168,7 +168,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens0'
+                item: industrialforegoing.laser_lens.white
             }
         },
         {
@@ -192,7 +192,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens15'
+                item: industrialforegoing.laser_lens.black
             }
         },
         {
@@ -216,7 +216,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens1'
+                item: industrialforegoing.laser_lens.orange
             }
         },
         {
@@ -240,7 +240,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens3'
+                item: industrialforegoing.laser_lens.light_blue
             }
         },
         {
@@ -264,7 +264,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens6'
+                item: industrialforegoing.laser_lens.pink
             }
         },
         {
@@ -288,7 +288,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens11'
+                item: industrialforegoing.laser_lens.blue
             }
         },
         {
@@ -312,7 +312,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens10'
+                item: industrialforegoing.laser_lens.purple
             }
         },
         {
@@ -336,7 +336,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens12'
+                item: industrialforegoing.laser_lens.brown
             }
         },
         {
@@ -360,7 +360,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens9'
+                item: industrialforegoing.laser_lens.cyan
             }
         },
         {
@@ -384,7 +384,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens12'
+                item: industrialforegoing.laser_lens.brown
             }
         },
         {
@@ -408,7 +408,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens0'
+                item: industrialforegoing.laser_lens.white
             }
         },
         {
@@ -432,7 +432,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens11'
+                item: industrialforegoing.laser_lens.blue
             }
         },
         {
@@ -456,7 +456,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens14'
+                item: industrialforegoing.laser_lens.red
             }
         },
         {
@@ -480,7 +480,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens8'
+                item: industrialforegoing.laser_lens.light_gray
             }
         },
         {
@@ -504,7 +504,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens4'
+                item: industrialforegoing.laser_lens.yellow
             }
         },
         {
@@ -528,7 +528,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens7'
+                item: industrialforegoing.laser_lens.gray
             }
         },
         {
@@ -552,7 +552,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens5'
+                item: industrialforegoing.laser_lens.lime
             }
         },
         {
@@ -586,7 +586,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens13'
+                item: industrialforegoing.laser_lens.green
             }
         },
         {
@@ -610,7 +610,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens4'
+                item: industrialforegoing.laser_lens.yellow
             }
         },
         {
@@ -651,7 +651,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens4'
+                item: industrialforegoing.laser_lens.yellow
             }
         },
         {
@@ -675,7 +675,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens7'
+                item: industrialforegoing.laser_lens.gray
             }
         },
         {
@@ -699,7 +699,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens8'
+                item: industrialforegoing.laser_lens.light_gray
             }
         },
         {
@@ -716,7 +716,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens12'
+                item: industrialforegoing.laser_lens.brown
             }
         },
         {
@@ -733,7 +733,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens12'
+                item: industrialforegoing.laser_lens.brown
             }
         },
         {
@@ -750,7 +750,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens9'
+                item: industrialforegoing.laser_lens.cyan
             }
         },
         {
@@ -767,7 +767,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens12'
+                item: industrialforegoing.laser_lens.brown
             }
         },
         {
@@ -784,7 +784,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens1'
+                item: industrialforegoing.laser_lens.orange
             }
         },
         {
@@ -801,7 +801,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens4'
+                item: industrialforegoing.laser_lens.yellow
             }
         },
         {
@@ -825,7 +825,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             catalyst: {
-                item: 'industrialforegoing:laser_lens3'
+                item: industrialforegoing.laser_lens.light_blue
             }
         }
     ];

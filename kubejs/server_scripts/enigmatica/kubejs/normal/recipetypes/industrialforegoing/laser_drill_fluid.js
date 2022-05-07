@@ -28,13 +28,13 @@ onEvent('recipes', (event) => {
                         }
                     ],
                     pointer: 0,
-                    catalyst: { item: 'industrialforegoing:laser_lens0' },
+                    catalyst: { item: industrialforegoing.laser_lens.white },
                     entity: 'minecraft:empty',
                     id: `${id_prefix}liquid_starlight`
                 }
             ],
             pointer: 0,
-            catalyst: { item: 'industrialforegoing:laser_lens14' },
+            catalyst: { item: industrialforegoing.laser_lens.red },
             entity: 'minecraft:villager',
             id: `${id_prefix}life_essence_fluid`
         }

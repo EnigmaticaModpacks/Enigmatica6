@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             pointer: 0,
-            catalyst: { item: 'industrialforegoing:laser_lens15' },
+            catalyst: { item: industrialforegoing.laser_lens.black },
             entity: 'minecraft:empty',
             id: `${id_prefix}oil`
         },
@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             pointer: 0,
-            catalyst: { item: 'industrialforegoing:laser_lens13' },
+            catalyst: { item: industrialforegoing.laser_lens.green },
             entity: 'minecraft:empty',
             id: `${id_prefix}essence`
         },
@@ -47,7 +47,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             pointer: 0,
-            catalyst: { item: 'industrialforegoing:laser_lens4' },
+            catalyst: { item: industrialforegoing.laser_lens.yellow },
             entity: 'minecraft:empty',
             id: `${id_prefix}honey`
         },
@@ -63,7 +63,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             pointer: 0,
-            catalyst: { item: 'industrialforegoing:laser_lens6' },
+            catalyst: { item: industrialforegoing.laser_lens.pink },
             entity: 'botania:pink_wither',
             id: `${id_prefix}pink_slime`
         }

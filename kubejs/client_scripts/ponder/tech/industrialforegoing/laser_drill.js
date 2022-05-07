@@ -245,7 +245,7 @@ onEvent('ponder.registry', (event) => {
                     .showControls(
                         new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN)
                             .rightClick()
-                            .withItem(`industrialforegoing:laser_lens5`),
+                            .withItem(industrialforegoing.laser_lens.lime),
                         20
                     );
 
@@ -392,7 +392,7 @@ onEvent('ponder.registry', (event) => {
                     .showControls(
                         new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_ADD)
-                            .withItem(`industrialforegoing:laser_lens1`),
+                            .withItem(industrialforegoing.laser_lens.orange),
                         30
                     );
 
@@ -512,7 +512,7 @@ onEvent('ponder.registry', (event) => {
                     .showControls(
                         new PonderInput([3.5, 7, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_ADD)
-                            .withItem(`industrialforegoing:laser_lens10`),
+                            .withItem(industrialforegoing.laser_lens.purple),
                         60
                     );
 

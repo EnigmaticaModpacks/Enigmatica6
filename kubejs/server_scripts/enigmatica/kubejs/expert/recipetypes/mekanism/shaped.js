@@ -383,7 +383,7 @@ onEvent('recipes', (event) => {
                 A: '#mekanism:alloys/infused',
                 B: 'mekanismgenerators:laser_focus_matrix',
                 C: 'mekanism:basic_induction_cell',
-                D: 'industrialforegoing:laser_lens14'
+                D: industrialforegoing.laser_lens.red
             },
             id: 'mekanism:laser_amplifier'
         },
@@ -392,7 +392,7 @@ onEvent('recipes', (event) => {
             pattern: [' B ', 'BAB', ' B '],
             key: {
                 A: 'mekanismgenerators:reactor_glass',
-                B: 'industrialforegoing:laser_lens14'
+                B: industrialforegoing.laser_lens.red
             },
             id: 'mekanismgenerators:laser_focus_matrix'
         },
