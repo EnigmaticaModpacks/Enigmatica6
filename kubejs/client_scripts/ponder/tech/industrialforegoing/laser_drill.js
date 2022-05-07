@@ -18,23 +18,23 @@ onEvent('ponder.registry', (event) => {
             'industrialforegoing:ore_laser_base',
             'industrialforegoing:fluid_laser_base',
             'industrialforegoing:laser_drill',
-            industrialforegoing.laser_lens.white,
-            industrialforegoing.laser_lens.orange,
-            industrialforegoing.laser_lens.orange,
-            industrialforegoing.laser_lens.magenta,
-            industrialforegoing.laser_lens.light_blue,
-            industrialforegoing.laser_lens.yellow,
-            industrialforegoing.laser_lens.lime,
-            industrialforegoing.laser_lens.pink,
-            industrialforegoing.laser_lens.gray,
-            industrialforegoing.laser_lens.light_gray,
-            industrialforegoing.laser_lens.cyan,
-            industrialforegoing.laser_lens.purple,
-            industrialforegoing.laser_lens.blue,
-            industrialforegoing.laser_lens.brown,
-            industrialforegoing.laser_lens.green,
-            industrialforegoing.laser_lens.red,
-            industrialforegoing.laser_lens.black,
+            'industrialforegoing:laser_lens0',
+            'industrialforegoing:laser_lens1',
+            'industrialforegoing:laser_lens1',
+            'industrialforegoing:laser_lens2',
+            'industrialforegoing:laser_lens3',
+            'industrialforegoing:laser_lens4',
+            'industrialforegoing:laser_lens5',
+            'industrialforegoing:laser_lens6',
+            'industrialforegoing:laser_lens7',
+            'industrialforegoing:laser_lens8',
+            'industrialforegoing:laser_lens9',
+            'industrialforegoing:laser_lens10',
+            'industrialforegoing:laser_lens11',
+            'industrialforegoing:laser_lens12',
+            'industrialforegoing:laser_lens13',
+            'industrialforegoing:laser_lens14',
+            'industrialforegoing:laser_lens15',
             'industrialforegoing:ether_gas_bucket'
         ])
         //.tag('enigmatica:industrial_foregoing')
@@ -392,7 +392,7 @@ onEvent('ponder.registry', (event) => {
                     .showControls(
                         new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_ADD)
-                            .withItem(`industrialforegoing:laser_lens1`),
+                            .withItem(industrialforegoing.laser_lens.orange),
                         30
                     );
 
@@ -512,7 +512,7 @@ onEvent('ponder.registry', (event) => {
                     .showControls(
                         new PonderInput([3.5, 7, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_ADD)
-                            .withItem(`industrialforegoing:laser_lens10`),
+                            .withItem(industrialforegoing.laser_lens.purple),
                         60
                     );
 
