@@ -1408,17 +1408,15 @@ onEvent('recipes', (event) => {
             ingredients.push(Ingredient.of(input));
         });
 
-        const re = event.custom({
-            type: 'industrialforegoing:dissolution_chamber',
-            input: ingredients,
-            inputFluid: `{FluidName:"${recipe.inputFluid}",Amount:${recipe.inputFluidAmount}}`,
-            processingTime: recipe.processingTime,
-            output: recipe.outputItem,
-            outputFluid: `{FluidName:"${recipe.outputFluid}",Amount:${recipe.outputFluidAmount}}`
-        });
-
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event
+            .custom({
+                type: 'industrialforegoing:dissolution_chamber',
+                input: ingredients,
+                inputFluid: `{FluidName:"${recipe.inputFluid}",Amount:${recipe.inputFluidAmount}}`,
+                processingTime: recipe.processingTime,
+                output: recipe.outputItem,
+                outputFluid: `{FluidName:"${recipe.outputFluid}",Amount:${recipe.outputFluidAmount}}`
+            })
+            .id(recipe.id);
     });
 });
