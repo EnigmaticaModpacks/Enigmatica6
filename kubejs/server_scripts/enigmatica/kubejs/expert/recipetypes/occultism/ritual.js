@@ -1223,7 +1223,7 @@ onEvent('recipes', (event) => {
         },
         {
             ritual_type: 'occultism:craft',
-            activation_item: 'occultism:satchel',
+            activation_item: 'kubejs:dimensional_storage_crystal',
             pentacle_id: 'occultism:craft_djinni',
             duration: 100,
             entity_to_sacrifice: {
