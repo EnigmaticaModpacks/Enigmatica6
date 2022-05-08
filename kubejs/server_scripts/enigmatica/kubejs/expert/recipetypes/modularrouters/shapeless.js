@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
                 'tconstruct:sky_slime_crystal',
                 'tconstruct:sky_slime_crystal'
             ],
-            id: `'modularrouters:stack_upgrade'`
+            id: 'modularrouters:stack_upgrade'
         },
         {
             output: 'modularrouters:flinger_module',
