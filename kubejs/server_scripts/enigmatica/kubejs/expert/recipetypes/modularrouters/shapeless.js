@@ -5,13 +5,20 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/modularrouters/shapeless/';
     const recipes = [
         {
-            output: Item.of('2x modularrouters:sender_module_3'),
+            output: Item.of('modularrouters:sender_module_3'),
+            inputs: [Item.of('modularrouters:sender_module_2').ignoreNBT(), 'integrateddynamics:logic_director'],
+            id: 'modularrouters:sender_module_3'
+        },
+        {
+            output: Item.of('4x modularrouters:sender_module_3'),
             inputs: [
                 Item.of('modularrouters:sender_module_2').ignoreNBT(),
                 Item.of('modularrouters:sender_module_2').ignoreNBT(),
-                Item.of('occultism:satchel').ignoreNBT()
+                Item.of('modularrouters:sender_module_2').ignoreNBT(),
+                Item.of('modularrouters:sender_module_2').ignoreNBT(),
+                'integrateddynamics:logic_director'
             ],
-            id: 'modularrouters:sender_module_3'
+            id: `${id_prefix}sender_module_3_alt`
         },
         {
             output: Item.of('modularrouters:stack_upgrade'),
@@ -22,7 +29,7 @@ onEvent('recipes', (event) => {
                 'tconstruct:sky_slime_crystal',
                 'tconstruct:sky_slime_crystal'
             ],
-            id: 'modularrouters:stack_upgrade'
+            id: `'modularrouters:stack_upgrade'`
         },
         {
             output: 'modularrouters:flinger_module',

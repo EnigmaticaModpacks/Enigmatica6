@@ -494,7 +494,16 @@ onEvent('recipes', (event) => {
             id: 'mekanism:tier_installer/ultimate'
         },
         {
-            inputs: ['sophisticatedbackpacks:upgrade_base', 'occultism:satchel'],
+            inputs: [
+                'ars_nouveau:end_fiber',
+                'sophisticatedbackpacks:upgrade_base',
+                'ars_nouveau:end_fiber',
+                'create:shadow_steel_casing',
+                'create:shadow_steel_casing',
+                'ars_nouveau:end_fiber',
+                'kubejs:dimensional_storage_crystal',
+                'ars_nouveau:end_fiber'
+            ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 250,
             processingTime: 100,
