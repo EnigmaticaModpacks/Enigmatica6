@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
         {
             byproducts: [{ item: 'emendatusenigmatica:bitumen_gem', chance: '0.07' }],
             results: [
-                { fluid: 'immersivepetroleum:lubricant', amount: 9 },
+                { fluid: 'pneumaticcraft:lubricant', amount: 9 },
                 { fluid: 'immersivepetroleum:diesel_sulfur', amount: 14 },
                 { fluid: 'immersivepetroleum:gasoline', amount: 39 }
             ],
