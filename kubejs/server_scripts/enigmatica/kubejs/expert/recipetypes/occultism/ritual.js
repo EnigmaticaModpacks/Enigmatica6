@@ -696,7 +696,7 @@ onEvent('recipes', (event) => {
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'betterendforge:terminite_anvil',
-		Item.of('betterendforge:terminite_hammer', '{Damage:0]}').weakNBT(),
+                Item.of('betterendforge:terminite_hammer', '{Damage:0]}').weakNBT(),
                 'minecraft:blast_furnace',
                 'supplementaries:bellows',
                 '#forge:storage_blocks/coal',
@@ -933,29 +933,6 @@ onEvent('recipes', (event) => {
             ],
             result: 'mythicbotany:mana_collector',
             id: `${id_prefix}mana_collector`
-        },
-        {
-            ritual_type: 'occultism:craft_with_spirit_name',
-            activation_item: 'occultism:book_of_binding_bound_djinni',
-            pentacle_id: 'occultism:craft_djinni',
-            duration: 100,
-            ritual_dummy: 'kubejs:craft_logic_director',
-            ingredients: [
-                '#forge:gems/mana_diamond',
-                'botania:bifrost_perm',
-                'powah:ender_core',
-                'botania:bifrost_perm',
-                'integratedterminals:menril_glass',
-                'integratedterminals:menril_glass',
-                'integratedterminals:menril_glass',
-                'integratedterminals:menril_glass',
-                'integratedterminals:chorus_glass',
-                'integratedterminals:chorus_glass',
-                'integratedterminals:chorus_glass',
-                'integratedterminals:chorus_glass'
-            ],
-            result: 'integrateddynamics:logic_director',
-            id: `${id_prefix}logic_director`
         },
         {
             ritual_type: 'occultism:summon',

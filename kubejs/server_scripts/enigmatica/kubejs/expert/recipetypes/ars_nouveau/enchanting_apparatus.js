@@ -2522,6 +2522,22 @@ onEvent('recipes', (event) => {
             reagent: Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0}'),
             output: Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0,Unbreakable:1}'),
             id: `${id_prefix}unbreakable_graphite_electrode`
+        },
+        {
+            inputs: [
+                'botania:pixie_dust',
+                'integratedterminals:chorus_glass',
+                'botania:pixie_dust',
+                'naturesaura:token_fear',
+                '#botania:runes/mana',
+                'botania:pixie_dust',
+                'integratedterminals:chorus_glass',
+                'botania:pixie_dust'
+            ],
+            reagent: '#forge:gems/mana_diamond',
+            sourceCost: 5000,
+            output: 'integrateddynamics:logic_director',
+            id: `${id_prefix}logic_director`
         }
     ];
 
