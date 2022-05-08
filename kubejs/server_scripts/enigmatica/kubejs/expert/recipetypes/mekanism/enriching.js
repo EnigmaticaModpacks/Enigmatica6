@@ -29,6 +29,16 @@ onEvent('recipes', (event) => {
             input: 'industrialforegoing:pink_slime',
             output: 'materialis:pink_slime_crystal',
             id: `${id_prefix}pink_slime_crystal`
+        },
+        {
+            input: '4x #forge:dusts/coal_coke',
+            output: 'immersiveengineering:dust_hop_graphite',
+            id: `${id_prefix}hop_graphite_from_coke`
+        },
+        {
+            input: '4x #forge:dusts/coal_petcoke',
+            output: 'immersiveengineering:dust_hop_graphite',
+            id: `${id_prefix}hop_graphite_from_petcoke`
         }
     ];
     recipes.forEach((recipe) => {
