@@ -21,9 +21,7 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            output: {
-                tag: 'forge:chunks/potassium_nitrate'
-            },
+            output: { tag: 'forge:chunks/potassium_nitrate' },
             rarity: [
                 {
                     whitelist: {},
@@ -40,14 +38,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.light_gray
-            }
+            catalyst: { item: industrialforegoing.laser_lens.light_gray }
         },
         {
-            output: {
-                tag: 'forge:chunks/mana'
-            },
+            output: { tag: 'forge:chunks/mana' },
             rarity: [
                 {
                     whitelist: {},
@@ -64,14 +58,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.magenta
-            }
+            catalyst: { item: industrialforegoing.laser_lens.magenta }
         },
         {
-            output: {
-                tag: 'forge:chunks/bitumen'
-            },
+            output: { tag: 'forge:chunks/bitumen' },
             rarity: [
                 {
                     whitelist: {},
@@ -88,14 +78,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.black
-            }
+            catalyst: { item: industrialforegoing.laser_lens.black }
         },
         {
-            output: {
-                tag: 'forge:chunks/fluorite'
-            },
+            output: { tag: 'forge:chunks/fluorite' },
             rarity: [
                 {
                     whitelist: {},
@@ -112,20 +98,16 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.gray
-            }
+            catalyst: { item: industrialforegoing.laser_lens.gray }
         },
         {
-            output: {
-                item: 'emendatusenigmatica:dimensional_chunk'
-            },
+            output: { item: 'emendatusenigmatica:dimensional_chunk' },
             rarity: [
                 {
                     whitelist: endBiomes,
                     blacklist: {},
-                    depth_min: 0,
-                    depth_max: 255,
+                    depth_min: 30,
+                    depth_max: 60,
                     weight: 12
                 },
                 {
@@ -143,14 +125,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.white
-            }
+            catalyst: { item: industrialforegoing.laser_lens.white }
         },
         {
-            output: {
-                tag: 'forge:chunks/aluminum'
-            },
+            output: { tag: 'forge:chunks/aluminum' },
             rarity: [
                 {
                     whitelist: {},
@@ -167,14 +145,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.white
-            }
+            catalyst: { item: industrialforegoing.laser_lens.white }
         },
         {
-            output: {
-                tag: 'forge:chunks/coal'
-            },
+            output: { tag: 'forge:chunks/coal' },
             rarity: [
                 {
                     whitelist: {},
@@ -191,14 +165,10 @@ onEvent('recipes', (event) => {
                     weight: 4
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.black
-            }
+            catalyst: { item: industrialforegoing.laser_lens.black }
         },
         {
-            output: {
-                tag: 'forge:chunks/copper'
-            },
+            output: { tag: 'forge:chunks/copper' },
             rarity: [
                 {
                     whitelist: {},
@@ -215,14 +185,10 @@ onEvent('recipes', (event) => {
                     weight: 2
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.orange
-            }
+            catalyst: { item: industrialforegoing.laser_lens.orange }
         },
         {
-            output: {
-                tag: 'forge:chunks/diamond'
-            },
+            output: { tag: 'forge:chunks/diamond' },
             rarity: [
                 {
                     whitelist: {},
@@ -239,14 +205,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.light_blue
-            }
+            catalyst: { item: industrialforegoing.laser_lens.light_blue }
         },
         {
-            output: {
-                tag: 'forge:chunks/cinnabar'
-            },
+            output: { tag: 'forge:chunks/cinnabar' },
             rarity: [
                 {
                     whitelist: {},
@@ -263,14 +225,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.pink
-            }
+            catalyst: { item: industrialforegoing.laser_lens.pink }
         },
         {
-            output: {
-                tag: 'forge:chunks/lapis'
-            },
+            output: { tag: 'forge:chunks/lapis' },
             rarity: [
                 {
                     whitelist: {},
@@ -287,14 +245,10 @@ onEvent('recipes', (event) => {
                     weight: 2
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.blue
-            }
+            catalyst: { item: industrialforegoing.laser_lens.blue }
         },
         {
-            output: {
-                tag: 'forge:chunks/lead'
-            },
+            output: { tag: 'forge:chunks/lead' },
             rarity: [
                 {
                     whitelist: {},
@@ -311,14 +265,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.purple
-            }
+            catalyst: { item: industrialforegoing.laser_lens.purple }
         },
         {
-            output: {
-                tag: 'forge:chunks/zinc'
-            },
+            output: { tag: 'forge:chunks/zinc' },
             rarity: [
                 {
                     whitelist: {},
@@ -335,14 +285,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.brown
-            }
+            catalyst: { item: industrialforegoing.laser_lens.brown }
         },
         {
-            output: {
-                tag: 'forge:chunks/apatite'
-            },
+            output: { tag: 'forge:chunks/apatite' },
             rarity: [
                 {
                     whitelist: {},
@@ -359,14 +305,10 @@ onEvent('recipes', (event) => {
                     weight: 2
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.cyan
-            }
+            catalyst: { item: industrialforegoing.laser_lens.cyan }
         },
         {
-            output: {
-                tag: 'forge:chunks/nickel'
-            },
+            output: { tag: 'forge:chunks/nickel' },
             rarity: [
                 {
                     whitelist: {},
@@ -383,14 +325,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.brown
-            }
+            catalyst: { item: industrialforegoing.laser_lens.brown }
         },
         {
-            output: {
-                tag: 'forge:chunks/quartz'
-            },
+            output: { tag: 'forge:chunks/quartz' },
             rarity: [
                 {
                     whitelist: netherBiomes,
@@ -407,14 +345,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.white
-            }
+            catalyst: { item: industrialforegoing.laser_lens.white }
         },
         {
-            output: {
-                tag: 'forge:chunks/cobalt'
-            },
+            output: { tag: 'forge:chunks/cobalt' },
             rarity: [
                 {
                     whitelist: netherBiomes,
@@ -431,14 +365,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.blue
-            }
+            catalyst: { item: industrialforegoing.laser_lens.blue }
         },
         {
-            output: {
-                tag: 'forge:chunks/redstone'
-            },
+            output: { tag: 'forge:chunks/redstone' },
             rarity: [
                 {
                     whitelist: {},
@@ -455,14 +385,10 @@ onEvent('recipes', (event) => {
                     weight: 4
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.red
-            }
+            catalyst: { item: industrialforegoing.laser_lens.red }
         },
         {
-            output: {
-                tag: 'forge:chunks/silver'
-            },
+            output: { tag: 'forge:chunks/silver' },
             rarity: [
                 {
                     whitelist: {},
@@ -479,14 +405,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.light_gray
-            }
+            catalyst: { item: industrialforegoing.laser_lens.light_gray }
         },
         {
-            output: {
-                tag: 'forge:chunks/sulfur'
-            },
+            output: { tag: 'forge:chunks/sulfur' },
             rarity: [
                 {
                     whitelist: {},
@@ -503,14 +425,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.yellow
-            }
+            catalyst: { item: industrialforegoing.laser_lens.yellow }
         },
         {
-            output: {
-                tag: 'forge:chunks/tin'
-            },
+            output: { tag: 'forge:chunks/tin' },
             rarity: [
                 {
                     whitelist: {},
@@ -527,14 +445,10 @@ onEvent('recipes', (event) => {
                     weight: 2
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.gray
-            }
+            catalyst: { item: industrialforegoing.laser_lens.gray }
         },
         {
-            output: {
-                tag: 'forge:chunks/uranium'
-            },
+            output: { tag: 'forge:chunks/uranium' },
             rarity: [
                 {
                     whitelist: {},
@@ -551,14 +465,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.lime
-            }
+            catalyst: { item: industrialforegoing.laser_lens.lime }
         },
         {
-            output: {
-                tag: 'forge:chunks/emerald'
-            },
+            output: { tag: 'forge:chunks/emerald' },
             rarity: [
                 {
                     whitelist: {
@@ -585,14 +495,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.green
-            }
+            catalyst: { item: industrialforegoing.laser_lens.green }
         },
         {
-            output: {
-                item: 'minecraft:glowstone'
-            },
+            output: { item: 'minecraft:glowstone' },
             rarity: [
                 {
                     whitelist: netherBiomes,
@@ -609,14 +515,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.yellow
-            }
+            catalyst: { item: industrialforegoing.laser_lens.yellow }
         },
         {
-            output: {
-                tag: 'forge:chunks/gold'
-            },
+            output: { tag: 'forge:chunks/gold' },
             rarity: [
                 {
                     whitelist: {
@@ -650,14 +552,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.yellow
-            }
+            catalyst: { item: industrialforegoing.laser_lens.yellow }
         },
         {
-            output: {
-                tag: 'forge:chunks/iron'
-            },
+            output: { tag: 'forge:chunks/iron' },
             rarity: [
                 {
                     whitelist: {},
@@ -674,14 +572,10 @@ onEvent('recipes', (event) => {
                     weight: 3
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.gray
-            }
+            catalyst: { item: industrialforegoing.laser_lens.gray }
         },
         {
-            output: {
-                tag: 'forge:chunks/osmium'
-            },
+            output: { tag: 'forge:chunks/osmium' },
             rarity: [
                 {
                     whitelist: {},
@@ -698,14 +592,10 @@ onEvent('recipes', (event) => {
                     weight: 2
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.light_gray
-            }
+            catalyst: { item: industrialforegoing.laser_lens.light_gray }
         },
         {
-            output: {
-                item: 'minecraft:ancient_debris'
-            },
+            output: { item: 'minecraft:ancient_debris' },
             rarity: [
                 {
                     whitelist: netherBiomes,
@@ -715,14 +605,10 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.brown
-            }
+            catalyst: { item: industrialforegoing.laser_lens.brown }
         },
         {
-            output: {
-                item: 'undergarden:cloggrum_ore'
-            },
+            output: { item: 'undergarden:cloggrum_ore' },
             rarity: [
                 {
                     whitelist: undergardenBiomes,
@@ -732,14 +618,10 @@ onEvent('recipes', (event) => {
                     weight: 20
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.brown
-            }
+            catalyst: { item: industrialforegoing.laser_lens.brown }
         },
         {
-            output: {
-                item: 'undergarden:froststeel_ore'
-            },
+            output: { item: 'undergarden:froststeel_ore' },
             rarity: [
                 {
                     whitelist: undergardenBiomes,
@@ -749,14 +631,10 @@ onEvent('recipes', (event) => {
                     weight: 20
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.cyan
-            }
+            catalyst: { item: industrialforegoing.laser_lens.cyan }
         },
         {
-            output: {
-                item: 'undergarden:cloggrum_ore'
-            },
+            output: { item: 'undergarden:cloggrum_ore' },
             rarity: [
                 {
                     whitelist: undergardenBiomes,
@@ -766,14 +644,10 @@ onEvent('recipes', (event) => {
                     weight: 20
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.brown
-            }
+            catalyst: { item: industrialforegoing.laser_lens.brown }
         },
         {
-            output: {
-                item: 'undergarden:utherium_ore'
-            },
+            output: { item: 'undergarden:utherium_ore' },
             rarity: [
                 {
                     whitelist: undergardenBiomes,
@@ -783,14 +657,10 @@ onEvent('recipes', (event) => {
                     weight: 20
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.orange
-            }
+            catalyst: { item: industrialforegoing.laser_lens.orange }
         },
         {
-            output: {
-                item: 'undergarden:regalium_ore'
-            },
+            output: { item: 'undergarden:regalium_ore' },
             rarity: [
                 {
                     whitelist: undergardenBiomes,
@@ -800,14 +670,10 @@ onEvent('recipes', (event) => {
                     weight: 2
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.yellow
-            }
+            catalyst: { item: industrialforegoing.laser_lens.yellow }
         },
         {
-            output: {
-                tag: 'forge:ores/aquamarine'
-            },
+            output: { tag: 'forge:ores/aquamarine' },
             rarity: [
                 {
                     whitelist: {},
@@ -824,9 +690,70 @@ onEvent('recipes', (event) => {
                     weight: 1
                 }
             ],
-            catalyst: {
-                item: industrialforegoing.laser_lens.light_blue
-            }
+            catalyst: { item: industrialforegoing.laser_lens.light_blue }
+        },
+        {
+            output: { item: 'betterendforge:thallasium_ore' },
+            rarity: [
+                {
+                    whitelist: endBiomes,
+                    blacklist: {},
+                    depth_min: 30,
+                    depth_max: 60,
+                    weight: 36
+                },
+
+                {
+                    whitelist: {},
+                    blacklist: endBiomes,
+                    depth_min: 0,
+                    depth_max: 255,
+                    weight: 1
+                }
+            ],
+            catalyst: { item: industrialforegoing.laser_lens.cyan }
+        },
+        {
+            output: { item: 'betterendforge:ender_ore' },
+            rarity: [
+                {
+                    whitelist: endBiomes,
+                    blacklist: {},
+                    depth_min: 30,
+                    depth_max: 60,
+                    weight: 50
+                },
+
+                {
+                    whitelist: {},
+                    blacklist: endBiomes,
+                    depth_min: 0,
+                    depth_max: 255,
+                    weight: 1
+                }
+            ],
+            catalyst: { item: industrialforegoing.laser_lens.green }
+        },
+        {
+            output: { item: 'betterendforge:amber_ore' },
+            rarity: [
+                {
+                    whitelist: endBiomes,
+                    blacklist: {},
+                    depth_min: 30,
+                    depth_max: 60,
+                    weight: 50
+                },
+
+                {
+                    whitelist: {},
+                    blacklist: endBiomes,
+                    depth_min: 0,
+                    depth_max: 255,
+                    weight: 1
+                }
+            ],
+            catalyst: { item: industrialforegoing.laser_lens.yellow }
         }
     ];
     recipes.forEach((recipe) => {

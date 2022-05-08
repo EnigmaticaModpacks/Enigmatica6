@@ -155,6 +155,11 @@ onEvent('recipes', (event) => {
             output: 'betterendforge:ender_ore',
             weight: 50,
             id: `${id_prefix}ender_ore`
+        },
+        {
+            output: 'betterendforge:thallasium_ore',
+            weight: 100,
+            id: `${id_prefix}thallasium_ore`
         }
     ];
 
