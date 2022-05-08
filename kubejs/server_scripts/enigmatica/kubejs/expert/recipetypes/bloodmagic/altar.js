@@ -206,10 +206,10 @@ onEvent('recipes', (event) => {
         {
             input: 'bloodmagic:demonslate',
             output: 'bloodmagic:etherealslate',
-            syphon: 200000,
+            syphon: 25000,
             altarLevel: 4,
-            consumptionRate: 1000,
-            drainRate: 1000,
+            consumptionRate: 40,
+            drainRate: 40,
             id: `${id_prefix}etherealslate`
         }
     ];
