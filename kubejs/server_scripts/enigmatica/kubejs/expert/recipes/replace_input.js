@@ -123,6 +123,11 @@ onEvent('recipes', (event) => {
             filter: { mod: 'littlelogistics' },
             toReplace: '#forge:stone',
             replaceWith: 'minecraft:gray_concrete'
+        },
+        {
+            filter: { mod: 'modularrouters' },
+            toReplace: 'minecraft:ender_pearl',
+            replaceWith: 'botania:corporea_spark'
         }
     ];
 

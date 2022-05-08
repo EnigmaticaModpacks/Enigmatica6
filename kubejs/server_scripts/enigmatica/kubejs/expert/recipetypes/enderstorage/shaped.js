@@ -6,37 +6,38 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'enderstorage:ender_pouch',
-            pattern: ['ABA', 'CEC', 'ADA'],
+            pattern: ['ABA', 'CDC', 'ECE'],
             key: {
-                A: { tag: 'forge:leather' },
+                A: { item: 'ars_nouveau:end_fiber' },
                 B: { tag: 'forge:wool' },
-                C: { tag: 'forge:inlays/arcane_gold' },
-                D: { item: 'botania:corporea_spark' },
-                E: { item: 'occultism:satchel' }
+                C: { item: 'alexsmobs:kangaroo_hide' },
+                D: { item: 'kubejs:dimensional_storage_crystal' },
+                E: { tag: 'forge:inlays/arcane_gold' }
             },
             id: 'enderstorage:ender_pouch'
         },
         {
             output: 'enderstorage:ender_chest',
-            pattern: ['ABA', 'CEC', 'ADA'],
+            pattern: ['ABA', 'CDC', 'ECE'],
             key: {
-                A: { tag: 'forge:plates/lumium' },
+                A: { item: 'ars_nouveau:end_fiber' },
                 B: { tag: 'forge:wool' },
-                C: { tag: 'forge:storage_blocks/hepatizon' },
-                D: { item: 'botania:corporea_spark' },
-                E: { item: 'occultism:satchel' }
+                C: { item: 'create:shadow_steel_casing' },
+                D: { item: 'kubejs:dimensional_storage_crystal' },
+                E: { tag: 'forge:plates/lumium' }
             },
             id: 'enderstorage:ender_chest'
         },
         {
             output: 'enderstorage:ender_tank',
-            pattern: ['ABA', 'CEC', 'ADA'],
+            pattern: ['ABA', 'FDF', 'ECE'],
             key: {
-                A: { tag: 'forge:rods/lumium' },
+                A: { item: 'ars_nouveau:end_fiber' },
                 B: { tag: 'forge:wool' },
-                C: { tag: 'thermal:glass/hardened' },
-                D: { item: 'botania:corporea_spark' },
-                E: { item: 'occultism:satchel' }
+                C: { item: 'create:shadow_steel_casing' },
+                D: { item: 'kubejs:dimensional_storage_crystal' },
+                E: { tag: 'forge:rods/lumium' },
+                F: { item: 'integratedterminals:chorus_glass' }
             },
             id: 'enderstorage:ender_tank'
         }

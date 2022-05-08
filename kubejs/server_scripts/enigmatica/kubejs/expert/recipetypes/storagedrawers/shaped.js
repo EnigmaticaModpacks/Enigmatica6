@@ -80,7 +80,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/osmium',
                 B: '#forge:sheetmetals/aluminum',
                 C: '#storagedrawers:drawers',
-                D: '#sophisticatedbackpacks:upgrades/advanced_compacting'
+                D: 'pedestals:coin/compactor3'
             },
             id: 'storagedrawers:compacting_drawers_3'
         },
