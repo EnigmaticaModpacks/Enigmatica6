@@ -519,15 +519,28 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    powahTiers.forEach(function (tier) {
+    powahTiers.forEach(function (tier, index) {
         if (tier == 'starter') {
             return;
         }
         let capacitor = `powah:capacitor_${tier}`;
+
         if (tier == 'basic') {
             capacitor = `powah:capacitor_${tier}_large`;
+        } else if (tier == 'hardened') {
+            crystal = 'powah:steel_energized';
         }
 
+        let lowerTiers = [],
+            i = 0,
+            j = powahTiers.indexOf(tier);
+
+        while (i < j) {
+            lowerTiers.push(powahTiers[i]);
+            i++;
+        }
+
+        // Primary Craft
         recipes.push({
             inputs: [
                 { item: 'powah:blank_card', count: 1 },
@@ -539,6 +552,20 @@ onEvent('recipes', (event) => {
             results: [{ item: `powah:ender_gate_${tier}`, count: 1 }],
             id: `powah:crafting/ender_gate_${tier}`
         });
+
+        // Disassemble Craft
+        if (tier != 'basic') {
+            recipes.push({
+                inputs: [{ item: `powah:reactor_${tier}`, count: 36 }],
+                pressure: -0.9,
+                results: [
+                    { item: `powah:thermo_generator_${tier}`, count: 3 },
+                    { item: `powah:energy_cell_${tier}`, count: 2 },
+                    { item: `powah:furnator_${tier}`, count: 1 }
+                ],
+                id: `${id_prefix}disassemble_reactor_${tier}`
+            });
+        }
     });
 
     recipes.forEach((recipe) => {
