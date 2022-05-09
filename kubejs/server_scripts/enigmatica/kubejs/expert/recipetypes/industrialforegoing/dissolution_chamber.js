@@ -107,9 +107,9 @@ onEvent('recipes', (event) => {
                 '#forge:alloys/advanced',
                 '#forge:circuits/basic',
                 'kubejs:memory_advanced_filled',
-                'bloodmagic:blankslate',
-                'bloodmagic:blankslate',
-                'bloodmagic:blankslate'
+                'bloodmagic:reinforcedslate',
+                'bloodmagic:reinforcedslate',
+                'bloodmagic:reinforcedslate'
             ],
             inputFluid: 'mekanism:lithium',
             inputFluidAmount: 100,
@@ -177,9 +177,9 @@ onEvent('recipes', (event) => {
                 '#forge:alloys/ultimate',
                 '#forge:circuits/elite',
                 'kubejs:memory_ultimate_filled',
-                'bloodmagic:etherealslate',
-                'bloodmagic:etherealslate',
-                'bloodmagic:etherealslate'
+                'bloodmagic:demonslate',
+                'bloodmagic:demonslate',
+                'bloodmagic:demonslate'
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 100,
