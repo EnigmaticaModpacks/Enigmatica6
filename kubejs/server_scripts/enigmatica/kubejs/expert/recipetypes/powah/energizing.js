@@ -135,7 +135,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:dusts/uranium' },
                 { tag: 'forge:dusts/uranium' }
             ],
-            energy: 24000000,
+            energy: 6000000,
             result: {
                 item: 'powah:crystal_spirited',
                 count: 2
@@ -151,7 +151,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:gems/blazing' },
                 { tag: 'forge:gems/blazing' }
             ],
-            energy: 600000000,
+            energy: 100000000,
             result: {
                 item: 'powah:crystal_nitro',
                 count: 16

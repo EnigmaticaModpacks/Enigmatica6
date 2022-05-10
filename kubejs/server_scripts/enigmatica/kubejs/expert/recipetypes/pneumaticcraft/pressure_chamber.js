@@ -516,6 +516,22 @@ onEvent('recipes', (event) => {
             pressure: 2.0,
             results: [{ item: 'kubejs:assembly_controller_package', count: 1 }],
             id: `${id_prefix}assembly_controller_package`
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:pressure_chamber_valve', count: 1 },
+                { item: 'pneumaticcraft:pressure_chamber_interface', count: 2 },
+                { item: 'pneumaticcraft:pressure_chamber_glass', count: 36 },
+                { item: 'pneumaticcraft:pressure_chamber_wall', count: 59 },
+                { item: 'pneumaticcraft:speed_upgrade', count: 40 },
+                { item: 'pneumaticcraft:volume_upgrade', count: 50 },
+                { item: 'pneumaticcraft:regulator_tube_module', count: 2 },
+                { item: 'pneumaticcraft:vacuump_pump', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_pressure_chamber', count: 1 }],
+            id: `${id_prefix}diy_pressure_chamber`
         }
     ];
 
