@@ -141,7 +141,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'thermal:phytogro',
-            output: { item: 'botania:fertilizer' },
+            output: { item: 'botania:fertilizer', count: 32 },
             aura_type: 'naturesaura:overworld',
             aura: 50000,
             time: 200,
