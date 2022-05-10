@@ -11,9 +11,9 @@ onEvent('recipes', (event) => {
                 'immersiveengineering:tesla_coil',
                 'immersiveengineering:coil_hv',
                 'immersiveengineering:coil_hv',
-                'powah:energy_discharger_spirited',
-                'powah:capacitor_spirited',
-                'powah:energy_discharger_spirited'
+                'immersiveengineering:coil_hv',
+                'powah:energy_discharger_nitro',
+                'immersiveengineering:coil_hv'
             ],
             inputFluid: 'tconstruct:molten_obsidian',
             inputFluidAmount: 1000,
