@@ -2,6 +2,8 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+
+    // Altar's Max Fill rate is 300 aura per tick. If a recipe draws faster than this, it'll still work, but will slow the craft down to that rate if a large enough batch goes through.
     const id_prefix = 'enigmatica:expert/naturesaura/altar/';
     const recipes = [
         {
@@ -40,7 +42,7 @@ onEvent('recipes', (event) => {
             input: 'eidolon:candle',
             output: { item: 'occultism:candle_white' },
             aura_type: 'naturesaura:nether',
-            aura: 50000,
+            aura: 18000,
             time: 60,
             id: 'occultism:crafting/candle'
         },
@@ -48,16 +50,16 @@ onEvent('recipes', (event) => {
             input: 'kubejs:firmament',
             output: { item: 'architects_palette:sunstone' },
             aura_type: 'naturesaura:overworld',
-            aura: 40000,
-            time: 20,
+            aura: 12000,
+            time: 40,
             id: `${id_prefix}sunstone`
         },
         {
             input: 'ars_nouveau:arcane_stone',
             output: { item: 'naturesaura:infused_stone' },
             aura_type: 'naturesaura:nether',
-            aura: 40000,
-            time: 20,
+            aura: 12000,
+            time: 40,
             id: 'naturesaura:altar/infused_stone'
         },
         {
@@ -125,7 +127,7 @@ onEvent('recipes', (event) => {
             output: { item: 'ars_nouveau:warding_stone' },
             aura_type: 'naturesaura:overworld',
             aura: 135000,
-            time: 40,
+            time: 450,
             id: `${id_prefix}warding_stone`
         },
         {
@@ -133,16 +135,16 @@ onEvent('recipes', (event) => {
             output: { item: 'botania:mana_powder', count: 4 },
             aura_type: 'naturesaura:overworld',
             catalyst: { item: 'naturesaura:crushing_catalyst' },
-            aura: 20000,
+            aura: 6000,
             time: 20,
             id: `${id_prefix}mana_powder`
         },
         {
             input: 'thermal:phytogro',
-            output: { item: 'botania:fertilizer' },
+            output: { item: 'botania:fertilizer', count: 32 },
             aura_type: 'naturesaura:overworld',
             aura: 50000,
-            time: 20,
+            time: 200,
             id: `${id_prefix}floral_fertilizer`
         },
         {
@@ -206,7 +208,7 @@ onEvent('recipes', (event) => {
             output: { item: 'ars_nouveau:marvelous_clay' },
             aura_type: 'naturesaura:overworld',
             aura: 15000,
-            time: 20,
+            time: 50,
             id: 'ars_nouveau:marvelous_clay'
         },
         {
@@ -214,8 +216,17 @@ onEvent('recipes', (event) => {
             output: { item: 'bloodmagic:slate_ampoule' },
             aura_type: 'naturesaura:nether',
             aura: 15000,
-            time: 20,
+            time: 50,
             id: `${id_prefix}slate_ampoule`
+        },
+        {
+            input: 'ars_nouveau:ritual_fertility',
+            output: { item: 'naturesaura:birth_spirit', count: 8 },
+            catalyst: { item: 'naturesaura:conversion_catalyst' },
+            aura_type: 'naturesaura:overworld',
+            aura: 300000,
+            time: 1000,
+            id: `${id_prefix}birth_spirit`
         }
     ];
 

@@ -503,6 +503,10 @@ onEvent('jei.information', (event) => {
         {
             items: ['naturesaura:projectile_generator'],
             text: [`● Ender Pearls`, `● Llama Spit`, `● Bottles o' Enchanting`, `● Shulker Bullets`, `● Tridents`]
+        },
+        {
+            items: ['naturesaura:birth_spirit'],
+            text: [`Obtained by manually breeding animals in high Aura areas.`]
         }
     ];
 
