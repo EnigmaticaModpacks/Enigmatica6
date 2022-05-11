@@ -111,8 +111,14 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:heat_pipe', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:vortex_tube', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:heat_sink', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:advanced_pressure_tube', count: 8 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:liquid_compressor', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'pneumaticcraft:advanced_pressure_tube', count: 64 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'pneumaticcraft:advanced_liquid_compressor', count: 1 }
+                },
                 { type: 'masterfulmachinery:items', data: { item: 'create:rotation_speed_controller', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'create:large_cogwheel', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'create:shaft', count: 64 } },
@@ -121,6 +127,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_arc_furnace', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pumpjack', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_distillation_tower', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pressure_chamber', count: 1 } },
 
                 { type: 'masterfulmachinery:fluids', data: { fluid: 'pneumaticcraft:lubricant', amount: 64000 } },
                 { type: 'masterfulmachinery:botania_mana', perTick: true, data: { amount: 500 } }
@@ -221,13 +228,14 @@ onEvent('recipes', (event) => {
         },
         {
             outputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:excavation_mastery_shard', count: 1 } }
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:excavation_mastery_shard', count: 2 } }
             ],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:fluid_laser_base', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:ore_laser_base', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:laser_drill', count: 8 } },
                 { type: 'masterfulmachinery:items', data: { item: 'occultism:dimensional_mineshaft', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:miner_marid_irradiated', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_excavator', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:survey_tools', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:mining_gadget_kit', count: 1 } },

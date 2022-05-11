@@ -344,7 +344,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'mekanism:mekasuit_helmet', count: 1 },
-                { item: 'mekanism:module_energy_unit', count: 8 },
+                { item: 'mekanism:module_energy_unit', count: 2 },
                 { item: 'mekanism:module_vision_enhancement_unit', count: 4 },
                 { item: 'mekanism:module_inhalation_purification_unit', count: 1 },
                 { item: 'mekanism:module_nutritional_injection_unit', count: 1 },
@@ -358,7 +358,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'mekanism:mekasuit_bodyarmor', count: 1 },
-                { item: 'mekanism:module_energy_unit', count: 8 },
+                { item: 'mekanism:module_energy_unit', count: 2 },
                 { item: 'mekanism:module_geiger_unit', count: 1 },
                 { item: 'mekanism:module_gravitational_modulating_unit', count: 1 },
                 { item: 'mekanism:module_dosimeter_unit', count: 1 },
@@ -371,7 +371,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'mekanism:mekasuit_pants', count: 1 },
-                { item: 'mekanism:module_energy_unit', count: 8 },
+                { item: 'mekanism:module_energy_unit', count: 2 },
                 { item: 'mekanismgenerators:module_geothermal_generator_unit', count: 8 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
@@ -382,7 +382,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'mekanism:mekasuit_boots', count: 1 },
-                { item: 'mekanism:module_energy_unit', count: 8 },
+                { item: 'mekanism:module_energy_unit', count: 2 },
                 { item: 'mekanism:module_hydraulic_propulsion_unit', count: 4 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
@@ -393,7 +393,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'mekanism:meka_tool', count: 1 },
-                { item: 'mekanism:module_energy_unit', count: 8 },
+                { item: 'mekanism:module_energy_unit', count: 2 },
                 { item: 'mekanism:module_attack_amplification_unit', count: 4 },
                 { item: 'mekanism:module_vein_mining_unit', count: 4 },
                 { item: 'mekanism:module_excavation_escalation_unit', count: 4 },
@@ -516,6 +516,22 @@ onEvent('recipes', (event) => {
             pressure: 2.0,
             results: [{ item: 'kubejs:assembly_controller_package', count: 1 }],
             id: `${id_prefix}assembly_controller_package`
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:pressure_chamber_valve', count: 1 },
+                { item: 'pneumaticcraft:pressure_chamber_interface', count: 2 },
+                { item: 'pneumaticcraft:pressure_chamber_glass', count: 36 },
+                { item: 'pneumaticcraft:pressure_chamber_wall', count: 59 },
+                { item: 'pneumaticcraft:speed_upgrade', count: 40 },
+                { item: 'pneumaticcraft:volume_upgrade', count: 50 },
+                { item: 'pneumaticcraft:regulator_tube_module', count: 2 },
+                { item: 'pneumaticcraft:vacuum_pump', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_pressure_chamber', count: 1 }],
+            id: `${id_prefix}diy_pressure_chamber`
         }
     ];
 

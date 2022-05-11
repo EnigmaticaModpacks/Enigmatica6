@@ -104,29 +104,41 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}energized_steel_block`
         },
         {
-            ingredients: [{ item: 'ars_nouveau:blaze_fiber' }, { item: 'resourcefulbees:blaze_honeycomb' }],
-            energy: 120000,
+            ingredients: [
+                { item: 'ars_nouveau:blaze_fiber' },
+                { item: 'resourcefulbees:blaze_honeycomb' },
+                { item: 'resourcefulbees:blaze_honeycomb' }
+            ],
+            energy: 240000,
             result: {
                 item: 'powah:crystal_blazing',
-                count: 1
+                count: 2
             },
             id: 'powah:energizing/blazing_crystal'
         },
         {
-            ingredients: [{ item: 'astralsorcery:resonating_gem' }, { tag: 'forge:dusts/starmetal' }],
-            energy: 300000,
+            ingredients: [
+                { item: 'astralsorcery:resonating_gem' },
+                { tag: 'forge:dusts/starmetal' },
+                { tag: 'forge:dusts/starmetal' }
+            ],
+            energy: 600000,
             result: {
                 item: 'powah:crystal_niotic',
-                count: 1
+                count: 2
             },
             id: 'powah:energizing/niotic_crystal'
         },
         {
-            ingredients: [{ item: 'atum:osiris_godshard' }, { tag: 'forge:dusts/uranium' }],
-            energy: 1000000,
+            ingredients: [
+                { item: 'atum:osiris_godshard' },
+                { tag: 'forge:dusts/uranium' },
+                { tag: 'forge:dusts/uranium' }
+            ],
+            energy: 6000000,
             result: {
                 item: 'powah:crystal_spirited',
-                count: 1
+                count: 2
             },
             id: 'powah:energizing/spirited_crystal'
         },
@@ -135,9 +147,11 @@ onEvent('recipes', (event) => {
                 { item: 'minecraft:nether_star' },
                 { item: 'bloodmagic:weakbloodshard' },
                 { item: 'bloodmagic:weakbloodshard' },
-                { tag: 'forge:storage_blocks/blazing' }
+                { tag: 'forge:gems/blazing' },
+                { tag: 'forge:gems/blazing' },
+                { tag: 'forge:gems/blazing' }
             ],
-            energy: 20000000,
+            energy: 100000000,
             result: {
                 item: 'powah:crystal_nitro',
                 count: 16
