@@ -115,7 +115,10 @@ onEvent('recipes', (event) => {
                     type: 'masterfulmachinery:items',
                     data: { item: 'pneumaticcraft:advanced_pressure_tube', count: 64 }
                 },
-                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:liquid_compressor', count: 1 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'pneumaticcraft:advanced_liquid_compressor', count: 1 }
+                },
                 { type: 'masterfulmachinery:items', data: { item: 'create:rotation_speed_controller', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'create:large_cogwheel', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'create:shaft', count: 64 } },

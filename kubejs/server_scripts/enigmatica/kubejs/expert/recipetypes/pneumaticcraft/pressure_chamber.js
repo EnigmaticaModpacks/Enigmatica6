@@ -526,7 +526,7 @@ onEvent('recipes', (event) => {
                 { item: 'pneumaticcraft:speed_upgrade', count: 40 },
                 { item: 'pneumaticcraft:volume_upgrade', count: 50 },
                 { item: 'pneumaticcraft:regulator_tube_module', count: 2 },
-                { item: 'pneumaticcraft:vacuump_pump', count: 1 },
+                { item: 'pneumaticcraft:vacuum_pump', count: 1 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
             pressure: 4.5,
