@@ -73,7 +73,7 @@ onEvent('recipes', (event) => {
     let storageParts = [
         {
             modID: 'refinedstorage',
-            sizes: ['1k', '4k', '16k', '64k', '64k_fluid', '256k_fluid', '1024k_fluid', '4096k_fluid']
+            sizes: ['16k', '64k', '1024k_fluid', '4096k_fluid']
         },
         {
             modID: 'extrastorage',
