@@ -27,6 +27,14 @@ onEvent('jei.information', (event) => {
                 Text.of('Liquid Meat can be obtained by "processing" cows.').color('#6e2a2a'),
                 Text.of('Pink Slime can be harvested from a Pink Wither using a Fluid Laser.').color('#da07e6')
             ]
+        },
+        {
+            items: ['refinedstorage:4k_storage_part', 'refinedstorage:1k_storage_part'],
+            text: ['Crafting is disabled in Expert, begin with the 16k Storage Part']
+        },
+        {
+            items: ['refinedstorage:256k_fluid_storage_part', 'refinedstorage:64k_fluid_storage_part'],
+            text: ['Crafting is disabled in Expert, begin with the 1024k Fluid Storage Part']
         }
     ];
 
