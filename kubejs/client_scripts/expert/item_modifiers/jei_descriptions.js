@@ -30,11 +30,11 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['refinedstorage:4k_storage_part', 'refinedstorage:1k_storage_part'],
-            text: ['Crafting is disabled in Expert, begin with the 16k Storage Part']
+            text: ['Crafting is disabled in Expert, begin with the 16k Storage Part.']
         },
         {
             items: ['refinedstorage:256k_fluid_storage_part', 'refinedstorage:64k_fluid_storage_part'],
-            text: ['Crafting is disabled in Expert, begin with the 1024k Fluid Storage Part']
+            text: ['Crafting is disabled in Expert, begin with the 1024k Fluid Storage Part.']
         }
     ];
 
