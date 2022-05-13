@@ -349,6 +349,7 @@ onEvent('recipes', (event) => {
                 { item: 'mekanism:module_inhalation_purification_unit', count: 1 },
                 { item: 'mekanism:module_nutritional_injection_unit', count: 1 },
                 { item: 'mekanism:module_electrolytic_breathing_unit', count: 4 },
+                { item: 'mekanism:module_laser_dissipation_unit', count: 1 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
             pressure: 4.5,
@@ -362,6 +363,7 @@ onEvent('recipes', (event) => {
                 { item: 'mekanism:module_geiger_unit', count: 1 },
                 { item: 'mekanism:module_gravitational_modulating_unit', count: 1 },
                 { item: 'mekanism:module_dosimeter_unit', count: 1 },
+                { item: 'mekanism:module_laser_dissipation_unit', count: 1 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
             pressure: 4.5,
@@ -373,6 +375,7 @@ onEvent('recipes', (event) => {
                 { item: 'mekanism:mekasuit_pants', count: 1 },
                 { item: 'mekanism:module_energy_unit', count: 2 },
                 { item: 'mekanismgenerators:module_geothermal_generator_unit', count: 8 },
+                { item: 'mekanism:module_laser_dissipation_unit', count: 1 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
             pressure: 4.5,
@@ -384,6 +387,7 @@ onEvent('recipes', (event) => {
                 { item: 'mekanism:mekasuit_boots', count: 1 },
                 { item: 'mekanism:module_energy_unit', count: 2 },
                 { item: 'mekanism:module_hydraulic_propulsion_unit', count: 4 },
+                { item: 'mekanism:module_laser_dissipation_unit', count: 1 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
             pressure: 4.5,
@@ -398,7 +402,6 @@ onEvent('recipes', (event) => {
                 { item: 'mekanism:module_vein_mining_unit', count: 4 },
                 { item: 'mekanism:module_excavation_escalation_unit', count: 4 },
                 { item: 'mekanism:module_teleportation_unit', count: 1 },
-                { item: 'mekanism:module_laser_dissipation_unit', count: 4 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
             pressure: 4.5,
