@@ -141,6 +141,11 @@ onEvent('recipes', (event) => {
         'quark:tools/crafting/runes/rainbow_rune',
 
         'refinedstorage:quartz_enriched_iron',
+        'refinedstorage:1k_storage_part',
+        'refinedstorage:4k_storage_part',
+        'refinedstorage:64k_fluid_storage_part',
+        'refinedstorage:256k_fluid_storage_part',
+
         'rftoolscontrol:cpu_core_500',
         'rftoolscontrol:cpu_core_1000',
         'rftoolscontrol:cpu_core_2000',
