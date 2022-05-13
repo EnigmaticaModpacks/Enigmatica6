@@ -47,7 +47,12 @@ onEvent('item.tooltip', (event) => {
                 'tanknull:dock',
                 'dankstorage:dock',
                 'engineersdecor:factory_placer',
-                'eidolon:worktable'
+                'eidolon:worktable',
+                'mekanism:osmium_compressor',
+                'mekanism:ultimate_compressing_factory',
+                'mekanism:elite_compressing_factory',
+                'mekanism:advanced_compressing_factory',
+                'mekanism:basic_compressing_factory'
             ],
             text: [disabledInExpert]
         },
