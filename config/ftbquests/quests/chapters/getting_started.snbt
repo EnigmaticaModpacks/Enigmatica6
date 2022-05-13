@@ -358,6 +358,13 @@
 								id: "betterendforge:guidebook"
 								Count: 1.0d
 							}
+							apotheosis: {
+								id: "patchouli:guide_book"
+								Count: 1.0d
+								tag: {
+									"patchouli:book": "apotheosis:apoth_chronicle"
+								}
+							}
 						}
 					}
 				}
@@ -520,6 +527,13 @@
 							betterendforge: {
 								id: "betterendforge:guidebook"
 								Count: 1.0d
+							}
+							apotheosis: {
+								id: "patchouli:guide_book"
+								Count: 1.0d
+								tag: {
+									"patchouli:book": "apotheosis:apoth_chronicle"
+								}
 							}
 						}
 					}
