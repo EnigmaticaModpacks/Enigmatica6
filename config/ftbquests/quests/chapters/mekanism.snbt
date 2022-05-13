@@ -512,6 +512,7 @@
 				id: "00000000000006C6"
 				type: "item"
 				title: "Osmium Compressor"
+				icon: "mekanism:osmium_compressor"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -535,6 +536,14 @@
 							}
 							{
 								id: "mekanism:ultimate_compressing_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ingot_refined_glowstone"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ingot_refined_obsidian"
 								Count: 1b
 							}
 						]
