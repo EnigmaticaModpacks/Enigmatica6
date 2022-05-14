@@ -1,4 +1,4 @@
-import { spawn } from 'child_process';
+const { spawn } = require('child_process');
 
 const child = spawn(process.argv[2], [process.argv[3]]);
 
