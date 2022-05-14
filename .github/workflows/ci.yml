@@ -4,10 +4,10 @@ on:
         branches:
             - 'develop'
             - 'master'
-    pull-request:
+    pull_request:
         branches:
-            - develop
-            - master
+            - 'develop'
+            - 'master'
 
 jobs:
     server:
