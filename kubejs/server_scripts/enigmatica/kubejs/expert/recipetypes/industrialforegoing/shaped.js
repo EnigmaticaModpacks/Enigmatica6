@@ -129,19 +129,25 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'industrialforegoing:common_black_hole_tank',
-            pattern: ['AAA', 'A A', 'ABA'],
+            pattern: ['AAA', 'BCB', 'DED'],
             key: {
-                A: '#forge:sheetmetals/aluminum',
-                B: 'thermal:fluid_cell_frame'
+                A: 'industrialforegoing:plastic',
+                B: 'minecraft:ender_eye',
+                C: 'minecraft:ender_pearl',
+                D: 'minecraft:bucket',
+                E: 'thermal:machine_frame'
             },
             id: 'industrialforegoing:common_black_hole_tank'
         },
         {
             output: 'industrialforegoing:common_black_hole_unit',
-            pattern: ['AAA', 'A A', 'ABA'],
+            pattern: ['AAA', 'BCB', 'DED'],
             key: {
-                A: '#forge:sheetmetals/aluminum',
-                B: 'thermal:machine_frame'
+                A: 'industrialforegoing:plastic',
+                B: 'minecraft:ender_eye',
+                C: 'minecraft:ender_pearl',
+                D: '#forge:chests/wooden',
+                E: 'thermal:machine_frame'
             },
             id: 'industrialforegoing:common_black_hole_unit'
         },
