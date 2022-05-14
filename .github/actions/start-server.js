@@ -1,3 +1,5 @@
+// This script is responsible for relaying logs from the Minecraft server instance to the console.
+
 const { spawn } = require('child_process');
 
 const child = spawn(process.argv[2], [process.argv[3]]);
