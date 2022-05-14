@@ -198,7 +198,7 @@ onEvent('recipes', (event) => {
                 E: 'thermal:machine_frame'
             },
             id: 'industrialforegoing:common_black_hole_unit'
-        },
+        }
     ];
 
     recipes.forEach((recipe) => {
