@@ -577,7 +577,7 @@ onEvent('recipes', (event) => {
                 A: 'thermal:lumium_glass',
                 B: 'immersiveengineering:electron_tube',
                 C: '#forge:treated_wood',
-                D: '#botanypots:botany_pots',
+                D: '#botanypots:botany_pots/simple',
                 E: 'immersiveengineering:component_steel',
                 F: 'pneumaticcraft:fluid_mixer'
             },
