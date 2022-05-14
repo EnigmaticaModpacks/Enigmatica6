@@ -190,6 +190,20 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}uraninite`
         },
         {
+            ingredients: [
+                { tag: 'forge:storage_blocks/uranium' },
+                { tag: 'forge:storage_blocks/uranium' },
+                { tag: 'forge:storage_blocks/sulfur' },
+                { tag: 'forge:storage_blocks/fluorite' }
+            ],
+            energy: 100000,
+            result: {
+                item: 'powah:uraninite_block',
+                count: 2
+            },
+            id: `${id_prefix}uraninite_block`
+        },
+        {
             ingredients: [{ item: 'minecraft:blaze_rod' }],
             energy: 10000000,
             result: {
