@@ -15,10 +15,7 @@ onEvent('recipes', (event) => {
         black_hole_tiers.forEach((tier, index) => {
 
             // first tier has no previous tier to upgrade from
-            if(index == 0) return; 
-
-            // no 3 free plastic & enderpearls for expert mode
-            if(index == 1 && global.isExpertMode) return; 
+            if(index == 0) return;
 
             const prev = black_hole_tiers[index - 1];
             recipes.push({
