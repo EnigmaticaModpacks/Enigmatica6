@@ -128,30 +128,6 @@ onEvent('recipes', (event) => {
             id: 'industrialforegoing:potion_brewer'
         },
         {
-            output: 'industrialforegoing:common_black_hole_tank',
-            pattern: ['AAA', 'BCB', 'DED'],
-            key: {
-                A: 'industrialforegoing:plastic',
-                B: 'minecraft:ender_eye',
-                C: 'minecraft:ender_pearl',
-                D: 'minecraft:bucket',
-                E: 'thermal:machine_frame'
-            },
-            id: 'industrialforegoing:common_black_hole_tank'
-        },
-        {
-            output: 'industrialforegoing:common_black_hole_unit',
-            pattern: ['AAA', 'BCB', 'DED'],
-            key: {
-                A: 'industrialforegoing:plastic',
-                B: 'minecraft:ender_eye',
-                C: 'minecraft:ender_pearl',
-                D: '#forge:chests/wooden',
-                E: 'thermal:machine_frame'
-            },
-            id: 'industrialforegoing:common_black_hole_unit'
-        },
-        {
             output: 'industrialforegoing:marine_fisher',
             pattern: ['ABA', 'CDE', 'FGF'],
             key: {
