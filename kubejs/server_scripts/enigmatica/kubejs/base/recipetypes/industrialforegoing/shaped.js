@@ -183,7 +183,7 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:ender_eye',
                 C: 'minecraft:ender_pearl',
                 D: 'minecraft:bucket',
-                E: 'thermal:machine_frame'
+                E: 'thermal:fluid_cell_frame'
             },
             id: 'industrialforegoing:common_black_hole_tank'
         },
