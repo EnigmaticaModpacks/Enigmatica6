@@ -32,7 +32,7 @@ jobs:
 
             - run: bash ./InstanceSyncSetup.sh
               working-directory: ./automation
-            - run: pwsh ./update-server.ps1 -targetBranch ${{ github.ref_name }} -backupWorld false -backupMods false
+            - run: pwsh ./update-server.ps1 -targetBranch ${{ github.ref_name }} -backupWorld $False -backupMods $False
               working-directory: ./automation
 
             - name: Setting eula to true
