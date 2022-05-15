@@ -48,8 +48,8 @@ jobs:
                   name: server (${{ matrix.packmode }}) logs kubejs
                   path: ./logs/kubejs/
 
-            - name: Cache ./logs/kubejs/server.txt
+            - name: Cache logs
               uses: actions/cache@v3
               with:
-                path: ./logs/kubejs/server.txt
-                key: ${{ github.run_id }}-./logs/kubejs/server.txt
+                path: logs
+                key: ${{ github.run_id }}/logs

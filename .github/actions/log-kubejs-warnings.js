@@ -12,7 +12,7 @@ server.split(/\r?\n/).forEach((line) => {
         console.log(line);
     } else if (line.includes('[ERR  ]')) {
         console.log(`::warning::${line}`);
-        code = 1;
+        // code = 1;
     }
 });
 
