@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:normal/pneumaticcraft/pressure_chamber/';
     const recipes = [
         {
-            ingredients: [
+            inputs: [
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:nuggets/gold_copper', count: 2 },
                 { tag: 'forge:slimeballs' },
                 { item: 'pneumaticcraft:plastic' }
@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
             id: 'pneumaticcraft:pressure_chamber/capacitor'
         },
         {
-            ingredients: [
+            inputs: [
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:nuggets/gold_copper', count: 3 },
                 { tag: 'forge:dusts/redstone' },
                 { item: 'pneumaticcraft:plastic' }
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
             id: 'pneumaticcraft:pressure_chamber/transistor'
         },
         {
-            ingredients: [
+            inputs: [
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:nuggets/gold_copper', count: 3 },
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:redstone_torch', count: 2 },
                 { item: 'pneumaticcraft:plastic' }
@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((recipe) => {
         let ingredients = [];
-        recipe.ingredients.forEach((input) => {
+        recipe.inputs.forEach((input) => {
             input.type = 'pneumaticcraft:stacked_item';
             ingredients.push(input);
         });
