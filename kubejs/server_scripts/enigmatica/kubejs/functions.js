@@ -67,3 +67,12 @@ const unificationBlacklist = [
 const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
 };
+
+// lt  = .slice(0, index)
+// lte = .slice(0, index + 1)
+// gt  = .slice(index)
+// gte = .slice(index + 1)
+
+function lowerTiers(tiers, tier) {
+    return tiers.slice(0, tiers.indexOf(tier));
+}

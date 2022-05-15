@@ -15,14 +15,7 @@ onEvent('recipes', (event) => {
             crystal = 'powah:steel_energized';
         }
 
-        let lowerTiers = [],
-            i = 0,
-            j = powahTiers.indexOf(tier);
-
-        while (i < j) {
-            lowerTiers.push(powahTiers[i]);
-            i++;
-        }
+        let lower_tiers = lowerTiers(powahTiers, tier);
 
         recipes.push(
             {
@@ -30,7 +23,7 @@ onEvent('recipes', (event) => {
                 pattern: ['CCC', 'BAB', 'CCC'],
                 key: {
                     A: capacitor,
-                    B: Ingredient.of(lowerTiers.map((item) => `powah:energy_cable_${item}`)),
+                    B: Ingredient.of(lower_tiers.map((item) => `powah:energy_cable_${item}`)),
                     C: Ingredient.of('powah:dielectric_rod_horizontal')
                 },
                 id: `powah:crafting/cable_${tier}`
@@ -40,7 +33,7 @@ onEvent('recipes', (event) => {
                 pattern: [' A ', 'ABA', ' A '],
                 key: {
                     A: crystal,
-                    B: Ingredient.of(lowerTiers.map((item) => `powah:ender_cell_${item}`))
+                    B: Ingredient.of(lower_tiers.map((item) => `powah:ender_cell_${item}`))
                 },
                 id: `${id_prefix}ender_cell_${tier}`
             }

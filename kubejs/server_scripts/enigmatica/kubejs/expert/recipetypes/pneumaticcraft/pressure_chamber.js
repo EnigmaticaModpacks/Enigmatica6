@@ -538,7 +538,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    powahTiers.forEach(function (tier, index) {
+    powahTiers.forEach(function (tier) {
         if (tier == 'starter') {
             return;
         }
@@ -550,14 +550,7 @@ onEvent('recipes', (event) => {
             crystal = 'powah:steel_energized';
         }
 
-        let lowerTiers = [],
-            i = 0,
-            j = powahTiers.indexOf(tier);
-
-        while (i < j) {
-            lowerTiers.push(powahTiers[i]);
-            i++;
-        }
+        // let lower_tiers = lowerTiers(powahTiers, tier);
 
         // Primary Craft
         recipes.push({
