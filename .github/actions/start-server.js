@@ -5,6 +5,8 @@ const { spawn } = require('child_process');
 
 const child = spawn(process.argv[2], [process.argv[3]]);
 
+let exit_code = 0;
+
 child.stderr.on('data', (data) => {
     process.stdout.write(`${data}`);
 });
@@ -27,8 +29,13 @@ child.stdout.on('data', (data) => {
 
     exits.forEach((exit, code) => {
         if (line.includes(exit)) {
+            child.kill();
             console.log(`nodejs: process.exit(${code})`);
-            process.exit(code);
+            exit_code = code;
         }
     });
+});
+
+child.on('exit', () => {
+    process.exit(exit_code);
 });
