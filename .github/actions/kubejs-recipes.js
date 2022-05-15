@@ -15,36 +15,47 @@ fsp.readFile('logs/kubejs/server.txt').then(data => {
   const lines = data.toString().split('\n');
 
   let group = null;
-  let groups = {};
+  let groups = {
+    added: {},
+    removed: {},
+    modified: {},
+
+    duplicate: {},
+    nameless: {},
+  };
 
   lines.forEach(line => {
     if(pattern_totals.test(line)) {
-      console.log(line.match(pattern_totals));
-      return;
+      return console.log(line.match(pattern_totals));
     }
 
     if(pattern_header.test(line)) {
-      group = line.match(pattern_header)[1];
-      groups[group] = {};
-      return;
+      return group = line.match(pattern_header)[1];
     }
     
     if (!group || !line.endsWith('}')) return;
 
     console.log(line);
-    const recipe = line.match(/^\[\d{2}:\d{2}:\d{2}] \[INFO \] (.*?): (.*)/); // [1] = id, [2] = {recipe}
-    groups[group][recipe[1]] = JSON.parse(recipe[2].split(' FROM {"')[0]);
-  });
+    const matches = line.match(/^\[\d{2}:\d{2}:\d{2}] \[INFO \] (.*?): (.*)/);
 
-  // assert that we have as much groups as were expecting
-  if (Object.entries(groups).length != 3) process.exit(1);
+    let id = matches[1];
+    let recipe = JSON.parse(matches[2].split(' FROM {"')[0]);
 
-  fsp.access('kubejs/exported/recipes').catch(() => {
-    fsp.rmdir('kubejs/exported/recipes');
+    if (group == "added" && groups[group][id]) {
+      groups['duplicate'][id] = recipe;      
+    }
+
+    if (group == "added" && id.includes(':kjs_')) {
+      groups['nameless'][id] = recipe;      
+    }
+
+    groups[group][id] = recipe;
   });
 
   // write each group to their own file
   for (const [group, recipes] of Object.entries(groups)) {
     fsp.writeFile(`kubejs/exported/recipes/${group}.json`, JSON.stringify(recipes, null, '\t'));
   }
+
+  console.log(`::notice title=KubeJS::${Object.entries(groups['nameless']).length} recipes without a name, and ${Object.entries(groups['duplicate']).length} duplicates.`)
 });
