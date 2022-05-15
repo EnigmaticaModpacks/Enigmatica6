@@ -10,7 +10,7 @@ let code = 0;
 server.split(/\r?\n/).forEach((line) => {
     if (line.includes('[ERR  ] Error')) {
         console.log(`::warning::${line}`);
-        // code = 1;
+        code = 1;
     } else if (line.includes('[ERR  ]') || line.includes('[WARN ]')) {
         console.log(line);
     }
