@@ -308,7 +308,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'rftoolsbase:information_screen',
                 B: 'rftoolscontrol:advanced_network_card',
-                C: 'rftoolscontrol:cpu_core_2000',
+                C: 'kubejs:cpu_core_as_81221',
                 D: 'rftoolscontrol:graphics_card',
                 E: 'rftoolsbase:machine_base'
             },

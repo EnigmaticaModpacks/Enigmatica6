@@ -140,7 +140,7 @@ onEvent('recipes', (event) => {
                 D: 'refinedstorage:machine_casing',
                 E: 'refinedstorage:destruction_core',
                 F: '#forge:ingots/aeternium',
-                G: 'rftoolscontrol:cpu_core_2000'
+                G: 'kubejs:cpu_core_as_81221'
             },
             id: 'refinedstorage:network_transmitter'
         },
@@ -154,7 +154,7 @@ onEvent('recipes', (event) => {
                 D: 'refinedstorage:machine_casing',
                 E: 'refinedstorage:destruction_core',
                 F: '#forge:ingots/aeternium',
-                G: 'rftoolscontrol:cpu_core_2000'
+                G: 'kubejs:cpu_core_as_81221'
             },
             id: 'refinedstorage:network_receiver'
         },

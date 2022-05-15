@@ -95,7 +95,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'rftoolscontrol:cpu_core_500',
+                'kubejs:cpu_core_mk_1026',
                 '#forge:alloys/advanced',
                 '#forge:alloys/advanced',
                 '#forge:circuits/basic',
@@ -111,7 +111,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'rftoolscontrol:cpu_core_500',
+                'kubejs:cpu_core_mk_1026',
                 '#forge:alloys/advanced',
                 '#forge:alloys/advanced',
                 '#forge:circuits/basic',
@@ -130,7 +130,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'rftoolscontrol:cpu_core_1000',
+                'kubejs:cpu_core_eg_28222',
                 '#forge:alloys/elite',
                 '#forge:alloys/elite',
                 '#forge:circuits/advanced',
@@ -146,7 +146,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'rftoolscontrol:cpu_core_1000',
+                'kubejs:cpu_core_eg_28222',
                 '#forge:alloys/elite',
                 '#forge:alloys/elite',
                 '#forge:circuits/advanced',
@@ -165,7 +165,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'rftoolscontrol:cpu_core_2000',
+                'kubejs:cpu_core_as_81221',
                 '#forge:alloys/ultimate',
                 '#forge:alloys/ultimate',
                 '#forge:circuits/elite',
@@ -181,7 +181,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'rftoolscontrol:cpu_core_2000',
+                'kubejs:cpu_core_as_81221',
                 '#forge:alloys/ultimate',
                 '#forge:alloys/ultimate',
                 '#forge:circuits/elite',
