@@ -102,7 +102,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: '#forge:gears/lumium',
-                B: 'rftoolscontrol:cpu_core_1000',
+                B: 'kubejs:cpu_core_eg_28222',
                 C: 'kubejs:memory_advanced_filled',
                 D: 'thermal:upgrade_augment_1',
                 E: 'powah:capacitor_hardened'
@@ -114,7 +114,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: '#forge:gears/enderium',
-                B: 'rftoolscontrol:cpu_core_2000',
+                B: 'kubejs:cpu_core_as_81221',
                 C: 'kubejs:memory_elite_filled',
                 D: 'thermal:upgrade_augment_2',
                 E: 'powah:capacitor_niotic'
