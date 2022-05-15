@@ -52,6 +52,6 @@ jobs:
               with:
                   name: server (${{ matrix.packmode }})
                   path: |
-                    ./*/crash-reports/
-                    ./*/logs/
-                    ./*/kubejs/exported/recipes/
+                    ./*/crash-reports/*
+                    ./*/logs/*
+                    ./*/kubejs/exported/recipes/*
