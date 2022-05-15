@@ -236,7 +236,7 @@ onEvent('recipes', (event) => {
                 B: 'integrateddynamics:crystalized_menril_block',
                 C: 'integrateddynamics:menril_wood',
                 D: 'extrastorage:neural_processor',
-                E: 'rftoolscontrol:cpu_core_2000',
+                E: 'kubejs:cpu_core_as_81221',
                 F: 'pneumaticcraft:smart_chest',
                 G: 'refinedstorage:machine_casing',
                 H: 'pneumaticcraft:upgrade_matrix',
