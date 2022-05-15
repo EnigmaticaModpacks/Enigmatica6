@@ -54,6 +54,11 @@ jobs:
                   path: ./logs/kubejs/
 
             - run: node .github/actions/kubejs-recipes.js
+            - name: Upload ./kubejs/exported/recipes/
+              uses: actions/upload-artifact@v3
+              with:
+                  name: server (${{ matrix.packmode }}) recipes
+                  path: ./kubejs/exported/recipes/
     # kubejs:
     #     needs: [server]
     #     runs-on: ubuntu-latest
