@@ -4,7 +4,7 @@ on: [push]
 jobs:
     server:
         runs-on: ubuntu-latest
-        timeout-minutes: 10
+        timeout-minutes: 15
         strategy:
             fail-fast: false
             matrix:
@@ -71,5 +71,5 @@ jobs:
 
             - run: tree 
             - run: cat logs/kubejs/server.txt
-            
+
             - run: node .github/actions/kubejs-recipes.js
