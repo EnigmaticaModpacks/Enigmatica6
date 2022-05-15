@@ -11,7 +11,7 @@ server.split(/\r?\n/).forEach((line) => {
     if (line.includes('[WARN ]')) {
         console.log(line);
     } else if (line.includes('[ERR  ]')) {
-        console.log(`::ERROR::${line}`);
+        console.log(`::warning::${line}`);
         code = 1;
     }
 });
