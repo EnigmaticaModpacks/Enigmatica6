@@ -6,6 +6,11 @@ const fsp = require('fs/promises');
 const pattern_totals = /Added (\d+) recipes, removed (\d+) recipes, modified (\d+) recipes, with (\d+) failed recipes and (\d+) fall-backed recipes/;
 const pattern_header = /======== Debug output of all (\w+) recipes ========/;
 
+// ensure the output directory exists
+fsp.access('kubejs/exported/recipes').catch(() => {
+  fsp.mkdir('kubejs/exported/recipes');
+});
+
 fsp.readFile('logs/kubejs/server.txt').then(data => {
   const lines = data.toString().split('\n');
 
@@ -34,8 +39,12 @@ fsp.readFile('logs/kubejs/server.txt').then(data => {
   // assert that we have as much groups as were expecting
   if (Object.entries(groups).length != 3) process.exit(1);
 
+  fsp.access('kubejs/exported/recipes').catch(() => {
+    fsp.rmdir('kubejs/exported/recipes');
+  });
+
   // write each group to their own file
   for (const [group, recipes] of Object.entries(groups)) {
-    fsp.writeFile(`kubejs/exported/recipes-${group}.json`, JSON.stringify(recipes, null, '\t'));
+    fsp.writeFile(`kubejs/exported/recipes/${group}.json`, JSON.stringify(recipes, null, '\t'));
   }
 });
