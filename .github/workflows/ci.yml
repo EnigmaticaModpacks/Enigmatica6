@@ -50,16 +50,16 @@ jobs:
                   path: ./crash-reports/
 
             - run: node .github/actions/log-kubejs-warnings.js
-            - name: Upload ./logs/kubejs/
+            - name: Upload ./logs/kubejs
               if: always()
               uses: actions/upload-artifact@v3
               with:
                   name: server (${{ matrix.packmode }}) logs kubejs
-                  path: ./logs/kubejs/
+                  path: ./logs/kubejs
 
             - run: node .github/actions/kubejs-recipes.js
-            - name: Upload ./kubejs/exported/recipes/
+            - name: Upload ./kubejs/exported/recipes
               uses: actions/upload-artifact@v3
               with:
                   name: server (${{ matrix.packmode }}) recipes
-                  path: ./kubejs/exported/recipes/
+                  path: ./kubejs/exported/recipes
