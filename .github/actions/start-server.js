@@ -40,6 +40,11 @@ child.stdout.on('data', (data) => {
     });
 });
 
+child.on('exit', (code, signal) => {
+    console.log('child exited!');
+});
+
 child.on('close', (code, signal) => {
+    console.log('child closed!');
     process.exit(exit_code);
 });
