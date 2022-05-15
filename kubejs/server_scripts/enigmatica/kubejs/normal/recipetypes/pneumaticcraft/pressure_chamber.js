@@ -11,7 +11,7 @@ onEvent('recipes', (event) => {
                 { item: 'pneumaticcraft:plastic' }
             ],
             pressure: 1.0,
-            output: [{ item: 'pneumaticcraft:capacitor' }],
+            results: [{ item: 'pneumaticcraft:capacitor' }],
             id: 'pneumaticcraft:pressure_chamber/capacitor'
         },
         {
@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
                 { item: 'pneumaticcraft:plastic' }
             ],
             pressure: 1.0,
-            output: [{ item: 'pneumaticcraft:transistor' }],
+            results: [{ item: 'pneumaticcraft:transistor' }],
             id: 'pneumaticcraft:pressure_chamber/transistor'
         },
         {
@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
                 { item: 'pneumaticcraft:plastic' }
             ],
             pressure: 1.5,
-            output: [{ item: 'pneumaticcraft:empty_pcb', count: 3 }],
+            results: [{ item: 'pneumaticcraft:empty_pcb', count: 3 }],
             id: 'pneumaticcraft:pressure_chamber/empty_pcb'
         }
     ];
