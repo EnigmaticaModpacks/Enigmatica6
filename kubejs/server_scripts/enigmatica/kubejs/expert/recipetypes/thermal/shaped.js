@@ -301,10 +301,10 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'BCB', 'DED'],
             key: {
                 A: 'architects_palette:abyssaline_lamp',
-                B: '#botania:runes/earth',
-                C: 'industrialforegoing:hydroponic_bed',
+                B: '#botania:runes/midgard',
+                C: '#botanypots:botany_pots/simple',
                 D: '#forge:gears/lumium',
-                E: '#forge:circuits/advanced'
+                E: '#industrialforegoing:machine_frame/supreme'
             },
             id: 'thermal:machine_insolator'
         },
