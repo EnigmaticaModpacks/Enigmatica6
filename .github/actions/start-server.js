@@ -36,6 +36,6 @@ child.stdout.on('data', (data) => {
     });
 });
 
-child.on('exit', () => {
+child.on('close', () => {
     process.exit(exit_code);
 });
