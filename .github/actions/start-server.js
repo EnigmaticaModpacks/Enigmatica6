@@ -27,9 +27,13 @@ child.stdout.on('data', (data) => {
         })
     }
 
+    if(line.includes('[minecraft/DedicatedServer]: Done (')) {
+        child.stdin.write("stop\n"); // fuck off node
+    }
+
     exits.forEach((exit, code) => {
         if (line.includes(exit)) {
-            child.kill(15);
+            child.kill(9);
             console.log(`nodejs: process.exit(${code})`);
             exit_code = code;
         }
