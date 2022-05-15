@@ -42,24 +42,16 @@ jobs:
                   cat eula.txt
 
             - run: node .github/actions/start-server.js bash ./start-automated-server.sh
-            - name: Upload ./crash-reports/
-              if: failure()
-              uses: actions/upload-artifact@v3
-              with:
-                  name: server (${{ matrix.packmode }}) crash-reports
-                  path: ./crash-reports/
 
             - run: node .github/actions/log-kubejs-warnings.js
-            - name: Upload ./logs/kubejs
-              if: always()
-              uses: actions/upload-artifact@v3
-              with:
-                  name: server (${{ matrix.packmode }}) logs kubejs
-                  path: ./logs/kubejs
-
             - run: node .github/actions/kubejs-recipes.js
-            - name: Upload ./kubejs/exported/recipes
+
+            - name: Upload artifacts
               uses: actions/upload-artifact@v3
+              if: always()
               with:
-                  name: server (${{ matrix.packmode }}) recipes
-                  path: ./kubejs/exported/recipes
+                  name: server (${{ matrix.packmode }})
+                  path: |
+                    ./*/crash-reports/
+                    ./*/logs/
+                    ./*/kubejs/exported/recipes/
