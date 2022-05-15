@@ -25,11 +25,11 @@ fsp.readFile('logs/kubejs/server.txt').then(data => {
   };
 
   lines.forEach(line => {
-    if(pattern_totals.test(line)) {
+    if (pattern_totals.test(line)) {
       return console.log(line.match(pattern_totals));
     }
 
-    if(pattern_header.test(line)) {
+    if (pattern_header.test(line)) {
       return group = line.match(pattern_header)[1];
     }
     
