@@ -52,4 +52,16 @@ jobs:
               uses: actions/cache@v3
               with:
                 path: logs
-                key: ${{ github.run_id }}/logs
+                key: ${{ github.run_id }}/{{ matrix.packmode }}/logs
+    kubejs:
+        runs-on: ubuntu-latest
+        timeout-minutes: 1
+        needs: [server]
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+            - uses: actions/cache@v3
+                with:
+                  path: logs
+                  key: ${{ github.run_id }}/{{ matrix.packmode }}/logs
+            - run: tree 
