@@ -484,9 +484,10 @@
 			id: "1BECFB61E2216217"
 			tasks: [
 				{
-					id: "66575D6B48FFD434"
+					id: "10BB8FE4AD38C5ED"
 					type: "item"
 					title: "Seared Melter"
+					icon: "tconstruct:seared_melter"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -497,12 +498,18 @@
 									Count: 1b
 								}
 								{
-									id: "tconstruct:seared_heater"
+									id: "tconstruct:smeltery_controller"
 									Count: 1b
 								}
 							]
 						}
 					}
+				}
+				{
+					id: "66575D6B48FFD434"
+					type: "item"
+					title: "Seared Melter"
+					item: "tconstruct:seared_heater"
 				}
 				{
 					id: "78758910B6CD9108"
@@ -519,7 +526,7 @@
 					id: "2329D0FAF7E1308E"
 					type: "item"
 					item: "tconstruct:seared_basin"
-				}
+				}				
 			]
 			rewards: [{
 				id: "767CD1B19307EC7E"
