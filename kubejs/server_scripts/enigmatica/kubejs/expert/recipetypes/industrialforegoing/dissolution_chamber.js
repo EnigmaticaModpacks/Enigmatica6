@@ -43,7 +43,16 @@ onEvent('recipes', (event) => {
             id: 'botanypots:crafting/botany_pot'
         },
         {
-            inputs: ['botanypots:botany_pot', 'ars_nouveau:sylph_charm', 'naturesaura:grated_chute'],
+            inputs: [
+                'ars_nouveau:sylph_charm',
+                'botanypots:botany_pot',
+                'astralsorcery:tree_beacon',
+                'botania:enchanted_soil',
+                'botania:enchanted_soil',
+                '#botania:runes/midgard',
+                'naturesaura:grated_chute',
+                '#botania:runes/midgard'
+            ],
             inputFluid: 'materialis:molten_fairy',
             inputFluidAmount: 1296,
             processingTime: 600,
