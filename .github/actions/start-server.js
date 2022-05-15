@@ -29,13 +29,13 @@ child.stdout.on('data', (data) => {
 
     exits.forEach((exit, code) => {
         if (line.includes(exit)) {
-            child.kill(9);
+            process.kill(-child.pid, 'SIGINT');
             console.log(`nodejs: process.exit(${code})`);
             exit_code = code;
         }
     });
 });
 
-child.on('close', () => {
+child.on('close', (code, signal) => {
     process.exit(exit_code);
 });
