@@ -3,7 +3,7 @@
 const fsp = require('fs/promises');
 const { spawn } = require('child_process');
 
-const child = spawn(process.argv[2], [process.argv[3]]);
+const child = spawn(process.argv[2], [process.argv[3]], {shell: true});
 
 let exit_code = 0;
 
@@ -29,7 +29,7 @@ child.stdout.on('data', (data) => {
 
     exits.forEach((exit, code) => {
         if (line.includes(exit)) {
-            process.kill(child.pid, 'SIGINT');
+            child.kill();
             console.log(`nodejs: process.exit(${code})`);
             exit_code = code;
         }
