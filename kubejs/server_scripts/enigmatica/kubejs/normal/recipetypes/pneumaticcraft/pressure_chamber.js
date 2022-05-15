@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((recipe) => {
         let ingredients = [];
-        recipe.inputs.forEach((input) => {
+        recipe.ingredients.forEach((input) => {
             input.type = 'pneumaticcraft:stacked_item';
             ingredients.push(input);
         });
