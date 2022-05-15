@@ -29,7 +29,7 @@ child.stdout.on('data', (data) => {
 
     exits.forEach((exit, code) => {
         if (line.includes(exit)) {
-            child.kill(15);
+            child.kill(9);
             console.log(`nodejs: process.exit(${code})`);
             exit_code = code;
         }
