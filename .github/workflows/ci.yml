@@ -52,6 +52,6 @@ jobs:
               with:
                   name: server (${{ matrix.packmode }})
                   path: |
-                    ./*/crash-reports/*
-                    ./*/logs/*
-                    ./*/kubejs/exported/recipes/*
+                    ${{ github.workspace }}/*/crash-reports/
+                    ${{ github.workspace }}/*/logs/
+                    ${{ github.workspace }}/*/kubejs/exported/recipes/
