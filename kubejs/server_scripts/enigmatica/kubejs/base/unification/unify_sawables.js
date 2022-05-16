@@ -47,7 +47,7 @@ function create_cutting(event, variant, sawDust, treeBark) {
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.create.cutting({
+        md5(event.recipes.create.cutting({
             type: 'create:cutting',
             ingredients: [
                 {
@@ -65,21 +65,21 @@ function create_cutting(event, variant, sawDust, treeBark) {
                 }
             ],
             processingTime: recipe.time
-        });
+        }), `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`);
     });
 }
 
 function immersiveengineering_sawing(event, variant, sawDust, treeBark) {
-    event.recipes.immersiveengineering
+    md5(event.recipes.immersiveengineering
         .sawmill(Item.of(variant.plankBlock, 6), variant.logBlockStripped, [
             {
                 stripping: false,
                 output: sawDust
             }
         ])
-        .energy(800);
+        .energy(800), `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`);
 
-    event.recipes.immersiveengineering
+    md5(event.recipes.immersiveengineering
         .sawmill(
             Item.of(variant.plankBlock, 6),
             [variant.logBlock, variant.woodBlock],
@@ -95,7 +95,7 @@ function immersiveengineering_sawing(event, variant, sawDust, treeBark) {
             ],
             variant.logBlockStripped
         )
-        .energy(1600);
+        .energy(1600), `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`);
 }
 
 function mekanism_sawing(event, variant, sawDust) {
@@ -133,7 +133,7 @@ function mekanism_sawing(event, variant, sawDust) {
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.mekanism.sawing(Item.of(recipe.output, 6), recipe.input, Item.of(sawDust).chance(0.25));
+        md5(event.recipes.mekanism.sawing(Item.of(recipe.output, 6), recipe.input, Item.of(sawDust).chance(0.25)), `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`);
     });
 }
 function pedestal_sawing(event, variant) {
@@ -168,7 +168,7 @@ function pedestal_sawing(event, variant) {
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.pedestals.pedestal_sawing({
+        md5(event.recipes.pedestals.pedestal_sawing({
             type: 'pedestals:pedestal_sawing',
             ingredient: {
                 item: recipe.input
@@ -177,7 +177,7 @@ function pedestal_sawing(event, variant) {
                 item: recipe.output,
                 count: recipe.count
             }
-        });
+        }), `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`);
     });
 }
 function thermal_sawing(event, variant, sawDust) {
@@ -214,8 +214,8 @@ function thermal_sawing(event, variant, sawDust) {
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.thermal
+        md5(event.recipes.thermal
             .sawmill([Item.of(recipe.output, 6), Item.of(sawDust).chance(1.25)], recipe.input)
-            .energy(1000);
+            .energy(1000), `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`);
     });
 }
