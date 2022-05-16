@@ -27,7 +27,7 @@ jobs:
 
             - name: Setting mode to ${{ matrix.packmode }}
               run: |
-                  node .github/actions/packmode.js ${{ matrix.packmode }} > mode.json
+                  node .github/actions/ci/packmode.js ${{ matrix.packmode }} > mode.json
                   cat mode.json
 
             - run: bash ./InstanceSyncSetup.sh
@@ -40,7 +40,7 @@ jobs:
                   echo "eula=true" > eula.txt
                   cat eula.txt
 
-            - run: node .github/actions/start-server.js bash ./start-automated-server.sh
+            - run: node .github/actions/ci/start-server.js bash ./start-automated-server.sh
             - name: Upload ./crash-reports/
               if: failure()
               uses: actions/upload-artifact@v3
@@ -48,7 +48,7 @@ jobs:
                   name: server (${{ matrix.packmode }}) crash-reports
                   path: ./crash-reports/
 
-            - run: node .github/actions/log-kubejs-warnings.js
+            - run: node .github/actions/ci/log-kubejs-warnings.js
             - name: Upload ./logs/kubejs/
               if: always()
               uses: actions/upload-artifact@v3
