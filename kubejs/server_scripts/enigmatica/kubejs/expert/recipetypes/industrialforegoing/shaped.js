@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/industrialforegoing/shaped/';
+    const id_prefix = 'enigmatica:expert/industrialforegoing/shaped';
 
     /*
         ,
@@ -26,7 +26,8 @@ onEvent('recipes', (event) => {
                 C: 'create:andesite_casing',
                 D: 'immersiveengineering:component_iron'
             },
-            id: 'industrialforegoing:machine_frame_pity'
+            id: 'industrialforegoing:machine_frame_pity',
+            as: `${id_prefix}/machine_frame_pity`
         },
         {
             output: 'industrialforegoing:laser_drill',
@@ -37,7 +38,8 @@ onEvent('recipes', (event) => {
                 C: '#forge:gears/enderium',
                 D: 'mekanism:laser'
             },
-            id: 'industrialforegoing:laser_drill'
+            id: 'industrialforegoing:laser_drill',
+            as: `${id_prefix}/laser_drill`
         },
         {
             output: 'industrialforegoing:ore_laser_base',
@@ -49,7 +51,8 @@ onEvent('recipes', (event) => {
                 D: '#industrialforegoing:machine_frame/supreme',
                 E: 'pneumaticcraft:smart_chest'
             },
-            id: 'industrialforegoing:ore_laser_base'
+            id: 'industrialforegoing:ore_laser_base',
+            as: `${id_prefix}/ore_laser_base`
         },
         {
             output: 'industrialforegoing:fluid_laser_base',
@@ -61,7 +64,8 @@ onEvent('recipes', (event) => {
                 D: '#industrialforegoing:machine_frame/advanced',
                 E: 'pneumaticcraft:large_tank'
             },
-            id: 'industrialforegoing:fluid_laser_base'
+            id: 'industrialforegoing:fluid_laser_base',
+            as: `${id_prefix}/fluid_laser_base`
         },
         {
             output: 'industrialforegoing:plant_fertilizer',
@@ -75,7 +79,8 @@ onEvent('recipes', (event) => {
                 F: '#forge:gears/lumium',
                 G: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:plant_fertilizer'
+            id: 'industrialforegoing:plant_fertilizer',
+            as: `${id_prefix}/plant_fertilizer`
         },
         {
             output: 'industrialforegoing:hydroponic_bed',
@@ -88,7 +93,8 @@ onEvent('recipes', (event) => {
                 E: '#industrialforegoing:machine_frame/pity',
                 F: '#forge:gears/lumium'
             },
-            id: 'industrialforegoing:hydroponic_bed'
+            id: 'industrialforegoing:hydroponic_bed',
+            as: `${id_prefix}/hydroponic_bed`
         },
         {
             output: 'industrialforegoing:mob_detector',
@@ -100,7 +106,8 @@ onEvent('recipes', (event) => {
                 D: '#industrialforegoing:machine_frame/pity',
                 E: 'botania:ender_eye_block'
             },
-            id: 'industrialforegoing:mob_detector'
+            id: 'industrialforegoing:mob_detector',
+            as: `${id_prefix}/mob_detector`
         },
         {
             output: 'industrialforegoing:enchantment_sorter',
@@ -113,7 +120,8 @@ onEvent('recipes', (event) => {
                 E: '#forge:gears/osmium',
                 F: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:enchantment_sorter'
+            id: 'industrialforegoing:enchantment_sorter',
+            as: `${id_prefix}/enchantment_sorter`
         },
         {
             output: 'industrialforegoing:potion_brewer',
@@ -125,7 +133,8 @@ onEvent('recipes', (event) => {
                 D: '#forge:gears/constantan',
                 E: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:potion_brewer'
+            id: 'industrialforegoing:potion_brewer',
+            as: `${id_prefix}/potion_brewer`
         },
         {
             output: 'industrialforegoing:marine_fisher',
@@ -139,7 +148,8 @@ onEvent('recipes', (event) => {
                 F: '#forge:gears/bronze',
                 G: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:marine_fisher'
+            id: 'industrialforegoing:marine_fisher',
+            as: `${id_prefix}marine_fisher`
         },
         {
             output: 'industrialforegoing:enchantment_extractor',
@@ -152,7 +162,8 @@ onEvent('recipes', (event) => {
                 E: '#forge:gears/osmium',
                 F: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:enchantment_extractor'
+            id: 'industrialforegoing:enchantment_extractor',
+            as: `${id_prefix}/enchantment_extractor`
         },
         {
             output: 'industrialforegoing:washing_factory',
@@ -165,7 +176,8 @@ onEvent('recipes', (event) => {
                 E: '#forge:gears/compressed_iron',
                 F: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:washing_factory'
+            id: 'industrialforegoing:washing_factory',
+            as: `${id_prefix}/washing_factory`
         },
         {
             output: 'industrialforegoing:fermentation_station',
@@ -177,7 +189,8 @@ onEvent('recipes', (event) => {
                 D: 'sushigocrafting:fermentation_barrel',
                 E: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:fermentation_station'
+            id: 'industrialforegoing:fermentation_station',
+            as: `${id_prefix}/fermenting_station`
         },
         {
             output: 'industrialforegoing:fluid_sieving_machine',
@@ -191,7 +204,8 @@ onEvent('recipes', (event) => {
                 F: '#forge:gears/compressed_iron',
                 G: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:fluid_sieving_machine'
+            id: 'industrialforegoing:fluid_sieving_machine',
+            as: `${id_prefix}/fluid_sieving_machine`
         },
         {
             output: 'industrialforegoing:material_stonework_factory',
@@ -205,7 +219,8 @@ onEvent('recipes', (event) => {
                 F: '#forge:gears/compressed_iron',
                 G: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:material_stonework_factory'
+            id: 'industrialforegoing:material_stonework_factory',
+            as: `${id_prefix}/material_stonework_factory`
         },
         {
             output: 'industrialforegoing:stasis_chamber',
@@ -219,7 +234,8 @@ onEvent('recipes', (event) => {
                 F: '#forge:gears/uranium',
                 G: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:stasis_chamber'
+            id: 'industrialforegoing:stasis_chamber',
+            as: `${id_prefix}/statis_chamber`
         },
         {
             output: 'industrialforegoing:mob_crusher',
@@ -233,7 +249,8 @@ onEvent('recipes', (event) => {
                 F: '#forge:gears/uranium',
                 G: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:mob_crusher'
+            id: 'industrialforegoing:mob_crusher',
+            as: `${id_prefix}/mob_crusher`
         },
         {
             output: 'industrialforegoing:black_hole_controller',
@@ -245,7 +262,8 @@ onEvent('recipes', (event) => {
                 D: 'enderstorage:ender_chest',
                 E: 'portality:controller'
             },
-            id: 'industrialforegoing:black_hole_controller'
+            id: 'industrialforegoing:black_hole_controller',
+            as: `${id_prefix}/black_hole_controller`
         },
         {
             output: 'industrialforegoing:infinity_charger',
@@ -257,7 +275,8 @@ onEvent('recipes', (event) => {
                 D: '#forge:gears/signalum',
                 E: '#industrialforegoing:machine_frame/advanced'
             },
-            id: 'industrialforegoing:infinity_charger'
+            id: 'industrialforegoing:infinity_charger',
+            as: `${id_prefix}/infinity_charger`
         },
         {
             output: 'industrialforegoing:enchantment_factory',
@@ -270,7 +289,8 @@ onEvent('recipes', (event) => {
                 E: 'botania:mana_pylon',
                 F: '#industrialforegoing:machine_frame/advanced'
             },
-            id: 'industrialforegoing:enchantment_factory'
+            id: 'industrialforegoing:enchantment_factory',
+            as: `${id_prefix}/enchantment_factory`
         },
         {
             output: 'industrialforegoing:enchantment_applicator',
@@ -283,7 +303,8 @@ onEvent('recipes', (event) => {
                 E: '#forge:gears/osmium',
                 F: '#industrialforegoing:machine_frame/simple'
             },
-            id: 'industrialforegoing:enchantment_applicator'
+            id: 'industrialforegoing:enchantment_applicator',
+            as: `${id_prefix}/enchantment_applicator`
         },
         {
             output: 'industrialforegoing:mob_imprisonment_tool',
@@ -292,7 +313,8 @@ onEvent('recipes', (event) => {
                 A: '#forge:plastic',
                 B: 'pneumaticcraft:spawner_core'
             },
-            id: 'industrialforegoing:mob_imprisonment_tool'
+            id: 'industrialforegoing:mob_imprisonment_tool',
+            as: `${id_prefix}/mob_imprisonment_tool`
         },
         {
             output: 'industrialforegoing:wither_builder',
@@ -304,7 +326,8 @@ onEvent('recipes', (event) => {
                 D: Item.of('rftoolsutility:syringe', '{mobName:"minecraft:wither",mobId:"minecraft:wither",level:10}'),
                 E: '#industrialforegoing:machine_frame/supreme'
             },
-            id: 'industrialforegoing:wither_builder'
+            id: 'industrialforegoing:wither_builder',
+            as: `${id_prefix}/wither_builder`
         },
         {
             output: 'industrialforegoing:sewer',
@@ -316,7 +339,8 @@ onEvent('recipes', (event) => {
                 D: 'environmental:mud_bricks',
                 E: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:sewer'
+            id: 'industrialforegoing:sewer',
+            as: `${id_prefix}/sewer`
         },
         {
             output: 'industrialforegoing:sewage_composter',
@@ -329,7 +353,8 @@ onEvent('recipes', (event) => {
                 E: 'environmental:mud_bricks',
                 F: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:sewage_composter'
+            id: 'industrialforegoing:sewage_composter',
+            as: `${id_prefix}/sewage_composter`
         },
         {
             output: 'industrialforegoing:animal_baby_separator',
@@ -343,7 +368,8 @@ onEvent('recipes', (event) => {
                 F: '#forge:gears/invar',
                 G: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:animal_baby_separator'
+            id: 'industrialforegoing:animal_baby_separator',
+            as: `${id_prefix}/animal_baby_separator`
         },
         {
             output: 'industrialforegoing:animal_rancher',
@@ -357,7 +383,8 @@ onEvent('recipes', (event) => {
                 F: '#forge:gears/invar',
                 G: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:animal_rancher'
+            id: 'industrialforegoing:animal_rancher',
+            as: `${id_prefix}/animal_rancher`
         },
         {
             output: Item.of('industrialforegoing:range_addon0', '{TitaniumAugment:{Range:0.0f}}'),
@@ -367,7 +394,7 @@ onEvent('recipes', (event) => {
                 B: '#forge:dusts/redstone',
                 C: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip']
             },
-            id: `${id_prefix}range_addon0`
+            id: `${id_prefix}/range_addon0`
         },
         {
             output: Item.of('industrialforegoing:range_addon1', '{TitaniumAugment:{Range:1.0f}}'),
@@ -377,7 +404,7 @@ onEvent('recipes', (event) => {
                 B: '#forge:dusts/redstone',
                 C: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip']
             },
-            id: `${id_prefix}range_addon1`
+            id: `${id_prefix}/range_addon1`
         },
         {
             output: Item.of('industrialforegoing:range_addon2', '{TitaniumAugment:{Range:2.0f}}'),
@@ -387,7 +414,7 @@ onEvent('recipes', (event) => {
                 B: '#forge:dusts/redstone',
                 C: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip']
             },
-            id: `${id_prefix}range_addon2`
+            id: `${id_prefix}/range_addon2`
         },
         {
             output: 'industrialforegoing:fluid_placer',
@@ -399,7 +426,8 @@ onEvent('recipes', (event) => {
                 D: 'minecraft:smooth_stone',
                 E: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:fluid_placer'
+            id: 'industrialforegoing:fluid_placer',
+            as: `${id_prefix}/fluid_placer`
         },
         {
             output: 'industrialforegoing:water_condensator',
@@ -411,7 +439,8 @@ onEvent('recipes', (event) => {
                 D: 'create:mechanical_pump',
                 E: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:water_condensator'
+            id: 'industrialforegoing:water_condensator',
+            as: `${id_prefix}/water_condensator`
         },
         {
             output: 'industrialforegoing:block_placer',
@@ -423,7 +452,8 @@ onEvent('recipes', (event) => {
                 D: '#industrialforegoing:machine_frame/pity',
                 E: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:block_placer'
+            id: 'industrialforegoing:block_placer',
+            as: `${id_prefix}/block_placer`
         },
         {
             output: 'industrialforegoing:block_breaker',
@@ -435,7 +465,8 @@ onEvent('recipes', (event) => {
                 D: '#industrialforegoing:machine_frame/pity',
                 E: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:block_breaker'
+            id: 'industrialforegoing:block_breaker',
+            as: `${id_prefix}/block_breaker`
         },
         {
             output: 'industrialforegoing:spores_recreator',
@@ -448,7 +479,8 @@ onEvent('recipes', (event) => {
                 E: 'minecraft:mycelium',
                 F: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:spores_recreator'
+            id: 'industrialforegoing:spores_recreator',
+            as: `${id_prefix}/spores_reactor`
         },
         {
             output: 'industrialforegoing:plant_sower',
@@ -461,7 +493,8 @@ onEvent('recipes', (event) => {
                 E: '#forge:gears/lumium',
                 F: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:plant_sower'
+            id: 'industrialforegoing:plant_sower',
+            as: `${id_prefix}/plant_sower`
         },
         {
             output: 'industrialforegoing:plant_gatherer',
@@ -475,7 +508,8 @@ onEvent('recipes', (event) => {
                 F: '#forge:gears/lumium',
                 G: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:plant_gatherer'
+            id: 'industrialforegoing:plant_gatherer',
+            as: `${id_prefix}/plant_gatherer`
         },
         {
             output: 'industrialforegoing:sludge_refiner',
@@ -488,7 +522,8 @@ onEvent('recipes', (event) => {
                 E: '#forge:gears/uranium',
                 F: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:sludge_refiner'
+            id: 'industrialforegoing:sludge_refiner',
+            as: `${id_prefix}/sludge_refiner`
         },
         {
             output: 'industrialforegoing:fluid_extractor',
@@ -500,7 +535,8 @@ onEvent('recipes', (event) => {
                 D: 'create:mechanical_drill',
                 E: '#industrialforegoing:machine_frame/pity'
             },
-            id: 'industrialforegoing:fluid_extractor'
+            id: 'industrialforegoing:fluid_extractor',
+            as: `${id_prefix}/fluid_extractor`
         },
         {
             output: 'industrialforegoing:latex_processing_unit',
@@ -512,7 +548,8 @@ onEvent('recipes', (event) => {
                 D: '#forge:gears/uranium',
                 E: 'thermal:rf_coil'
             },
-            id: 'industrialforegoing:latex_processing_unit'
+            id: 'industrialforegoing:latex_processing_unit',
+            as: `${id_prefix}/latex_processing_unit`
         },
         {
             output: 'industrialforegoing:infinity_backpack',
@@ -524,11 +561,13 @@ onEvent('recipes', (event) => {
                 D: 'dankstorage:dank_3',
                 E: Item.of('thermal:energy_cell').ignoreNBT()
             },
-            id: 'industrialforegoing:dissolution_chamber/infinity_backpack'
+            id: 'industrialforegoing:dissolution_chamber/infinity_backpack',
+            as: `${id_prefix}/infinity_backpack`,
         }
     ];
 
     recipes.forEach((recipe) => {
-        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.as || recipe.id);
+        if (recipe.as) event.remove({id: recipe.id});
     });
 });
