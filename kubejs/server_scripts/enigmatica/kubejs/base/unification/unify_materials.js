@@ -561,7 +561,7 @@ onEvent('recipes', (event) => {
         var output = dust,
             input = `#forge:gems/${material}`;
 
-        event.recipes.immersiveengineering.crusher(output, input).energy(2000);
+        md5(event.recipes.immersiveengineering.crusher(output, input).energy(2000), `${id_prefix}${arguments.callee.name}/`);
     }
 
     function immersiveengineering_ingot_crushing(event, material, dust, ingot) {
@@ -573,7 +573,7 @@ onEvent('recipes', (event) => {
             var output = dust,
                 input = `#forge:ingots/${material}`;
 
-            event.recipes.immersiveengineering.crusher(output, input).energy(2000);
+            md5(event.recipes.immersiveengineering.crusher(output, input).energy(2000), `${id_prefix}${arguments.callee.name}/`);
         }
     }
 
