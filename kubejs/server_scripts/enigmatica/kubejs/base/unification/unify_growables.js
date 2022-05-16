@@ -49,7 +49,7 @@ function soils_botany_pots(event, soil) {
         display: display,
         categories: soil.categories,
         growthModifier: soil.growthModifier
-    }), `enigmatica:base/unify_growables/${arguments.callee.name}/`);
+    }), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
 }
 
 function crops_botany_pots(event, type, crop) {
@@ -141,7 +141,7 @@ function crops_botany_pots(event, type, crop) {
         growthTicks: growthTicks * growthModifier,
         display: { block: crop.render },
         results: outputs
-    }), `enigmatica:base/unify_growables/${arguments.callee.name}/`);
+    }), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
 }
 
 function crops_thermal_insolator(event, type, crop) {
@@ -230,7 +230,7 @@ function crops_thermal_insolator(event, type, crop) {
     md5(event.recipes.thermal
         .insolator(outputs, input)
         .water(baseWater * waterModifier)
-        .energy(baseEnergy * energyModifier), `enigmatica:base/unify_growables/${arguments.callee.name}/`);
+        .energy(baseEnergy * energyModifier), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
 }
 
 function crops_immersiveengineering_cloche(event, type, crop) {
@@ -414,7 +414,7 @@ function crops_immersiveengineering_cloche(event, type, crop) {
             type: renderType,
             block: renderBlock
         })
-        .time(growthTicks * growthModifier), `enigmatica:base/unify_growables/${arguments.callee.name}/`);
+        .time(growthTicks * growthModifier), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
 }
 
 function trees_botany_pots(event, type, tree) {
@@ -500,7 +500,7 @@ function trees_botany_pots(event, type, tree) {
         growthTicks: growthTicks * growthModifier,
         display: { block: input },
         results: outputs
-    }), `enigmatica:base/unify_growables/${arguments.callee.name}/`);
+    }), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
 }
 
 function trees_thermal_insolator(event, tree) {
@@ -535,7 +535,7 @@ function trees_thermal_insolator(event, tree) {
     md5(event.recipes.thermal
         .insolator(outputs, input)
         .water(baseWater * waterModifier)
-        .energy(baseEnergy * energyModifier), `enigmatica:base/unify_growables/${arguments.callee.name}/`);
+        .energy(baseEnergy * energyModifier), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
 }
 
 function trees_immersiveengineering_cloche(event, tree) {
@@ -618,5 +618,5 @@ function trees_immersiveengineering_cloche(event, tree) {
             type: renderType,
             block: renderBlock
         })
-        .time(baseGrowthTicks * growthModifier), `enigmatica:base/unify_growables/${arguments.callee.name}/`);
+        .time(baseGrowthTicks * growthModifier), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
 }

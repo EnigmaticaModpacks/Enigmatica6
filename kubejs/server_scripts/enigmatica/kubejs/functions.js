@@ -80,6 +80,7 @@ function lowerTiers(tiers, tier) {
 // transplant the md5 from `<type's mod>:kjs_<md5>` onto the supplied prefix
 function md5(recipe, id_prefix) {
     if (recipe.getId().includes(':kjs_')) {
-        recipe.id(id_prefix + recipe.getId().split(':kjs_').pop());
+        recipe.serializeJson(); // without this the hashes *will* collide
+        recipe.id(id_prefix + recipe.getUniqueId());
     }
 }
