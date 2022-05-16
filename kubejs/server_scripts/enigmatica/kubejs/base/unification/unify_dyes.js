@@ -1,6 +1,6 @@
 //priority: 900
 onEvent('recipes', (event) => {
-    const id_prefix = 'enigmatica:base/unification/dye/';
+    const id_prefix = 'enigmatica:base/unification/unify_dyes/';
 
     dyeSources.forEach((recipe) => {
         botania_dye_pestle_mortar(event, recipe, id_prefix);
