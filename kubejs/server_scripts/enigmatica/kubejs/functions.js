@@ -76,3 +76,10 @@ const playerHas = (item, player) => {
 function lowerTiers(tiers, tier) {
     return tiers.slice(0, tiers.indexOf(tier));
 }
+
+// transplant the md5 from `<type's mod>:kjs_<md5>` onto the supplied prefix
+function md5(recipe, id_prefix) {
+    if (recipe.getId().includes(':kjs_')) {
+        recipe.id(id_prefix + recipe.getId().split(':kjs_').pop());
+    }
+}
