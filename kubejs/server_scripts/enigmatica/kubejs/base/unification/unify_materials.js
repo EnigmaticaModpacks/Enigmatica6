@@ -240,7 +240,7 @@ onEvent('recipes', (event) => {
         }
 
         // Alchemy Table Processing
-        event.recipes.bloodmagic.alchemytable(Item.of(output, count), inputs).syphon(400).ticks(200).upgradeLevel(1);
+        md5(event.recipes.bloodmagic.alchemytable(Item.of(output, count), inputs).syphon(400).ticks(200).upgradeLevel(1), `${id_prefix}${arguments.callee.name}/`);
     }
     function bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem) {
         if (dust == air) {
