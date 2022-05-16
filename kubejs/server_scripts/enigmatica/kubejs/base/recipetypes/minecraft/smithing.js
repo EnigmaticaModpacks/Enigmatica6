@@ -14,11 +14,9 @@ onEvent('recipes', (event) => {
     const black_hole_tiers = ['common', 'pity', 'simple', 'advanced', 'supreme'];
 
     black_hole_types.forEach(type => {
-        black_hole_tiers.forEach((tier, index) => {
+        black_hole_tiers.forEach(tier => {
 
-            let lower_tiers = black_hole_tiers.slice(0, index);
-
-            lower_tiers.forEach(prev => {
+            lowerTiers(black_hole_tiers, tier).forEach(prev => {
                 recipes.push({
                     input1: `industrialforegoing:${prev}_black_hole_${type}`,
                     input2: `industrialforegoing:machine_frame_${tier}`,
@@ -26,6 +24,7 @@ onEvent('recipes', (event) => {
                     id: `${id_prefix}upgrade_${prev}_black_hole_${type}_to_${tier}`
                 });
             });
+
         });
     })
 
