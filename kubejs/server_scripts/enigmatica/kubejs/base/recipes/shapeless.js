@@ -1,5 +1,5 @@
 onEvent('recipes', (event) => {
-    const id_prefix = 'enigmatica:base/';
+    const id_prefix = 'enigmatica:base/shapeless/';
     const recipes = [
         { output: 'botania:enchanted_soil', inputs: ['minecraft:grass_block', 'botania:overgrowth_seed'] },
         { output: 'minecraft:sticky_piston', inputs: ['minecraft:piston', '#forge:slimeballs'] },
@@ -584,14 +584,14 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         recipe.id
             ? event.shapeless(recipe.output, recipe.inputs).id(recipe.id)
-            : event.shapeless(recipe.output, recipe.inputs);
+            : md5(event.shapeless(recipe.output, recipe.inputs), id_prefix);
     });
 
     powahTiers.forEach((tier) => {
         if (tier == 'starter') {
             return;
         }
-        event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`);
+        md5(event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`), id_prefix);
     });
 
     colors.forEach(function (color) {
@@ -603,20 +603,23 @@ onEvent('recipes', (event) => {
         otherSimplePots.push('botanypots:botany_pot');
         otherHopperPots.push('botanypots:hopper_botany_pot');
 
-        event.shapeless(`botanypots:${color}_botany_pot`, [Ingredient.of(otherSimplePots), `#forge:dyes/${color}`]);
+        event.shapeless(`botanypots:${color}_botany_pot`, [
+            Ingredient.of(otherSimplePots),
+            `#forge:dyes/${color}`
+        ]).id(`${id_prefix}dye_botany_pot_${color}`);
 
         event.shapeless(`botanypots:hopper_${color}_botany_pot`, [
             Ingredient.of(otherHopperPots),
             `#forge:dyes/${color}`
-        ]);
+        ]).id(`${id_prefix}dye_hopper_botany_pot_${color}`);
 
         if (color != 'white') {
-            event.shapeless(Item.of(`2x atum:ceramic_slab_${color}`), [
+            md5(event.shapeless(Item.of(`2x atum:ceramic_slab_${color}`), [
                 'atum:ceramic_slab_white',
                 'atum:ceramic_slab_white',
                 `#forge:dyes/${color}`
-            ]);
-            event.shapeless(Item.of(`6x atum:ceramic_tile_${color}`), [
+            ]), id_prefix);
+            md5(event.shapeless(Item.of(`6x atum:ceramic_tile_${color}`), [
                 'atum:ceramic_tile_white',
                 'atum:ceramic_tile_white',
                 'atum:ceramic_tile_white',
@@ -624,21 +627,21 @@ onEvent('recipes', (event) => {
                 'atum:ceramic_tile_white',
                 'atum:ceramic_tile_white',
                 `#forge:dyes/${color}`
-            ]);
-            event.shapeless(Item.of(`3x atum:ceramic_stairs_${color}`), [
+            ]), id_prefix);
+            md5(event.shapeless(Item.of(`3x atum:ceramic_stairs_${color}`), [
                 'atum:ceramic_stairs_white',
                 'atum:ceramic_stairs_white',
                 'atum:ceramic_stairs_white',
                 `#forge:dyes/${color}`
-            ]);
-            event.shapeless(`atum:ceramic_wall_${color}`, ['atum:ceramic_wall_white', `#forge:dyes/${color}`]);
+            ]), id_prefix);
+            md5(event.shapeless(`atum:ceramic_wall_${color}`, ['atum:ceramic_wall_white', `#forge:dyes/${color}`]), id_prefix);
         }
     });
 
     materialsToUnify.forEach((material) => {
         var ore = Item.of(`emendatusenigmatica:${material}_ore`);
         if (ore.exists) {
-            event.shapeless(ore, `#forge:ores/${material}`);
+            md5(event.shapeless(ore, `#forge:ores/${material}`), id_prefix);
         }
     });
 });
