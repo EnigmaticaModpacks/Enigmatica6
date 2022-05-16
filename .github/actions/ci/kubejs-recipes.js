@@ -57,5 +57,5 @@ fsp.readFile('logs/kubejs/server.txt').then(data => {
     fsp.writeFile(`kubejs/exported/recipes/${group}.json`, JSON.stringify(recipes, null, '\t'));
   }
 
-  console.log(`::notice::${Object.entries(groups['nameless']).length} KubeJS recipes without a randomized name, and ${Object.entries(groups['duplicate']).length} duplicates.`)
+  console.log(`::notice::${Object.entries(groups['nameless']).length} KubeJS recipes with a randomized name, and ${Object.entries(groups['duplicate']).length} duplicates.`)
 });
