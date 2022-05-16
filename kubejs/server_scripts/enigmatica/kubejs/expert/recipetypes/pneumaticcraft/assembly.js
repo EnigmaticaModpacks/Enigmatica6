@@ -90,9 +90,9 @@ onEvent('recipes', (event) => {
         },
         {
             input: { item: 'kubejs:cpu_core_500_assembly', count: 1 },
-            output: { item: 'rftoolscontrol:cpu_core_500', count: 1 },
+            output: { item: 'kubejs:cpu_core_mk_1026', count: 1 },
             program: 'laser',
-            id: `${id_prefix}cpu_core_500`
+            id: `${id_prefix}cpu_core_mk_1026`
         },
         {
             input: { item: 'kubejs:batch_cpu_core_500_package', count: 1 },
@@ -102,9 +102,9 @@ onEvent('recipes', (event) => {
         },
         {
             input: { item: 'kubejs:batch_cpu_core_500_assembly', count: 1 },
-            output: { item: 'rftoolscontrol:cpu_core_500', count: 32 },
+            output: { item: 'kubejs:cpu_core_mk_1026', count: 32 },
             program: 'laser',
-            id: `${id_prefix}batch_cpu_core_500`
+            id: `${id_prefix}batch_cpu_core_mk_1026`
         },
         {
             input: { item: 'kubejs:cpu_core_1000_package', count: 1 },
@@ -114,9 +114,9 @@ onEvent('recipes', (event) => {
         },
         {
             input: { item: 'kubejs:cpu_core_1000_assembly', count: 1 },
-            output: { item: 'rftoolscontrol:cpu_core_1000', count: 1 },
+            output: { item: 'kubejs:cpu_core_eg_28222', count: 1 },
             program: 'laser',
-            id: `${id_prefix}cpu_core_1000`
+            id: `${id_prefix}cpu_core_eg_28222`
         },
         {
             input: { item: 'kubejs:batch_cpu_core_1000_package', count: 1 },
@@ -126,9 +126,9 @@ onEvent('recipes', (event) => {
         },
         {
             input: { item: 'kubejs:batch_cpu_core_1000_assembly', count: 1 },
-            output: { item: 'rftoolscontrol:cpu_core_1000', count: 32 },
+            output: { item: 'kubejs:cpu_core_eg_28222', count: 32 },
             program: 'laser',
-            id: `${id_prefix}batch_cpu_core_1000`
+            id: `${id_prefix}batch_cpu_core_eg_28222`
         },
         {
             input: { item: 'kubejs:cpu_core_2000_package', count: 1 },
@@ -138,9 +138,9 @@ onEvent('recipes', (event) => {
         },
         {
             input: { item: 'kubejs:cpu_core_2000_assembly', count: 1 },
-            output: { item: 'rftoolscontrol:cpu_core_2000', count: 1 },
+            output: { item: 'kubejs:cpu_core_as_81221', count: 1 },
             program: 'laser',
-            id: `${id_prefix}cpu_core_2000`
+            id: `${id_prefix}cpu_core_as_81221`
         },
         {
             input: { item: 'kubejs:batch_cpu_core_2000_package', count: 1 },
@@ -150,9 +150,9 @@ onEvent('recipes', (event) => {
         },
         {
             input: { item: 'kubejs:batch_cpu_core_2000_assembly', count: 1 },
-            output: { item: 'rftoolscontrol:cpu_core_2000', count: 32 },
+            output: { item: 'kubejs:cpu_core_as_81221', count: 32 },
             program: 'laser',
-            id: `${id_prefix}batch_cpu_core_2000`
+            id: `${id_prefix}batch_cpu_core_as_81221`
         },
         {
             input: { item: 'kubejs:batch_unassembled_pcb', count: 1 },

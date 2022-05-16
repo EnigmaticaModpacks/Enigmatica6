@@ -85,14 +85,7 @@ onEvent('recipes', (event) => {
             wire_coil = 'immersiveengineering:coil_hv';
         }
 
-        let lowerTiers = [],
-            i = 0,
-            j = powahTiers.indexOf(tier);
-
-        while (i < j) {
-            lowerTiers.push(powahTiers[i]);
-            i++;
-        }
+        let lower_tiers = lowerTiers(powahTiers, tier);
 
         // Primary Craft
         recipes.push(
@@ -173,7 +166,7 @@ onEvent('recipes', (event) => {
                     pattern: ['BCB'],
                     key: {
                         B: capacitor,
-                        C: Ingredient.of(lowerTiers.map((item) => `powah:furnator_${item}`))
+                        C: Ingredient.of(lower_tiers.map((item) => `powah:furnator_${item}`))
                     },
                     id: `${id_prefix}furnator_${tier}_upgrade`
                 },
@@ -183,7 +176,7 @@ onEvent('recipes', (event) => {
                     key: {
                         A: wire_coil,
                         B: capacitor,
-                        C: Ingredient.of(lowerTiers.map((item) => `powah:magmator_${item}`))
+                        C: Ingredient.of(lower_tiers.map((item) => `powah:magmator_${item}`))
                     },
                     id: `${id_prefix}magmator_${tier}_upgrade`
                 },
@@ -193,7 +186,7 @@ onEvent('recipes', (event) => {
                     key: {
                         A: `powah:magmator_${tier}`,
                         B: capacitor,
-                        C: Ingredient.of(lowerTiers.map((item) => `powah:thermo_generator_${item}`))
+                        C: Ingredient.of(lower_tiers.map((item) => `powah:thermo_generator_${item}`))
                     },
                     id: `${id_prefix}thermo_generator_${tier}_upgrade`
                 },
@@ -203,7 +196,7 @@ onEvent('recipes', (event) => {
                     key: {
                         A: capacitor,
                         B: `powah:energy_discharger_${tier}`,
-                        C: Ingredient.of(lowerTiers.map((item) => `powah:energy_cell_${item}`))
+                        C: Ingredient.of(lower_tiers.map((item) => `powah:energy_cell_${item}`))
                     },
                     id: `${id_prefix}energy_discharger_${tier}_upgrade`
                 },
@@ -212,7 +205,7 @@ onEvent('recipes', (event) => {
                     pattern: ['A A', 'ABA'],
                     key: {
                         A: capacitor,
-                        B: Ingredient.of(lowerTiers.map((item) => `powah:energy_hopper_${item}`))
+                        B: Ingredient.of(lower_tiers.map((item) => `powah:energy_hopper_${item}`))
                     },
                     id: `${id_prefix}energy_hopper_${tier}_upgrade`
                 },
@@ -221,7 +214,7 @@ onEvent('recipes', (event) => {
                     pattern: [' A ', 'ABA', ' A '],
                     key: {
                         A: capacitor,
-                        B: Ingredient.of(lowerTiers.map((item) => `powah:ender_cell_${item}`))
+                        B: Ingredient.of(lower_tiers.map((item) => `powah:ender_cell_${item}`))
                     },
                     id: `${id_prefix}ender_cell_${tier}_upgrade`
                 }

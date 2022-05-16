@@ -5,33 +5,33 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:normal/pneumaticcraft/pressure_chamber/';
     const recipes = [
         {
-            ingredients: [
+            inputs: [
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:nuggets/gold_copper', count: 2 },
-                { tag: 'forge:slimeballs' },
-                { item: 'pneumaticcraft:plastic' }
+                { tag: 'forge:slimeballs', count: 1 },
+                { item: 'pneumaticcraft:plastic', count: 1 }
             ],
             pressure: 1.0,
-            output: [{ item: 'pneumaticcraft:capacitor' }],
+            results: [{ item: 'pneumaticcraft:capacitor', count: 1 }],
             id: 'pneumaticcraft:pressure_chamber/capacitor'
         },
         {
-            ingredients: [
+            inputs: [
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:nuggets/gold_copper', count: 3 },
-                { tag: 'forge:dusts/redstone' },
-                { item: 'pneumaticcraft:plastic' }
+                { tag: 'forge:dusts/redstone', count: 1 },
+                { item: 'pneumaticcraft:plastic', count: 1 }
             ],
             pressure: 1.0,
-            output: [{ item: 'pneumaticcraft:transistor' }],
+            results: [{ item: 'pneumaticcraft:transistor', count: 1 }],
             id: 'pneumaticcraft:pressure_chamber/transistor'
         },
         {
-            ingredients: [
+            inputs: [
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:nuggets/gold_copper', count: 3 },
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:redstone_torch', count: 2 },
-                { item: 'pneumaticcraft:plastic' }
+                { item: 'pneumaticcraft:plastic', count: 1 }
             ],
             pressure: 1.5,
-            output: [{ item: 'pneumaticcraft:empty_pcb', count: 3 }],
+            results: [{ item: 'pneumaticcraft:empty_pcb', count: 3 }],
             id: 'pneumaticcraft:pressure_chamber/empty_pcb'
         }
     ];

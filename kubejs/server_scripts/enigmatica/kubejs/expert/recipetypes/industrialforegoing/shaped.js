@@ -128,24 +128,6 @@ onEvent('recipes', (event) => {
             id: 'industrialforegoing:potion_brewer'
         },
         {
-            output: 'industrialforegoing:common_black_hole_tank',
-            pattern: ['AAA', 'A A', 'ABA'],
-            key: {
-                A: '#forge:sheetmetals/aluminum',
-                B: 'thermal:fluid_cell_frame'
-            },
-            id: 'industrialforegoing:common_black_hole_tank'
-        },
-        {
-            output: 'industrialforegoing:common_black_hole_unit',
-            pattern: ['AAA', 'A A', 'ABA'],
-            key: {
-                A: '#forge:sheetmetals/aluminum',
-                B: 'thermal:machine_frame'
-            },
-            id: 'industrialforegoing:common_black_hole_unit'
-        },
-        {
             output: 'industrialforegoing:marine_fisher',
             pattern: ['ABA', 'CDE', 'FGF'],
             key: {

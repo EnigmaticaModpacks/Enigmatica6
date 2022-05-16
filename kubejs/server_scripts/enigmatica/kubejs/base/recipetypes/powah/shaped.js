@@ -13,14 +13,7 @@ onEvent('recipes', (event) => {
             crystal = 'powah:steel_energized';
         }
 
-        let lowerTiers = [],
-            i = 0,
-            j = powahTiers.indexOf(tier);
-
-        while (i < j) {
-            lowerTiers.push(powahTiers[i]);
-            i++;
-        }
+        let lower_tiers = lowerTiers(powahTiers, tier);
 
         recipes.push(
             {
@@ -29,7 +22,7 @@ onEvent('recipes', (event) => {
                 key: {
                     A: crystal,
                     B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:energy_cell_${item}`))
+                    C: Ingredient.of(lower_tiers.map((item) => `powah:energy_cell_${item}`))
                 },
                 id: `${id_prefix}energy_cell_${tier}`
             },
@@ -39,7 +32,7 @@ onEvent('recipes', (event) => {
                 key: {
                     A: crystal,
                     B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:battery_${item}`))
+                    C: Ingredient.of(lower_tiers.map((item) => `powah:battery_${item}`))
                 },
                 id: `${id_prefix}battery_${tier}`
             },
@@ -50,7 +43,7 @@ onEvent('recipes', (event) => {
                 key: {
                     A: crystal,
                     B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:solar_panel_${item}`))
+                    C: Ingredient.of(lower_tiers.map((item) => `powah:solar_panel_${item}`))
                 },
                 id: `${id_prefix}solar_panel_${tier}`
             }

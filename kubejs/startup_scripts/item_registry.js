@@ -46,6 +46,9 @@ onEvent('item.registry', (event) => {
         'astrogro',
         'advanced_ram_chip',
         'monster_mash',
+        'cpu_core_mk_1026',
+        'cpu_core_eg_28222',
+        'cpu_core_as_81221',
 
         'automation_mastery_shard',
         'engineering_mastery_shard',
