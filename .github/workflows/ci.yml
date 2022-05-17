@@ -55,3 +55,11 @@ jobs:
                     ./logs
                     ./crash-reports
                     ./kubejs/exported/recipes
+    kubejs:
+        runs-on: ubuntu-latest
+        timeout-minutes: 1
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+
+            - run: node .github/actions/ci/kubejs-todo-remove.js 
