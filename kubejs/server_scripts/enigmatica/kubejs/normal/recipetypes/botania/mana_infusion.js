@@ -2,18 +2,23 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
+
+    const id_prefix = 'enigmatica:normal/botania/mana_infusion/';
+
     const recipes = [
         {
             input: 'resourcefulbees:mana_honeycomb',
             output: 'botania:manasteel_ingot',
             count: 1,
-            mana: 2000
+            mana: 2000,
+            id: `${id_prefix}manasteel_ingot`
         },
         {
             input: 'resourcefulbees:mana_honeycomb_block',
             output: 'botania:manasteel_block',
             count: 1,
-            mana: 19000
+            mana: 19000,
+            id: `${id_prefix}manasteel_block`
         }
     ];
 
@@ -24,15 +29,14 @@ onEvent('recipes', (event) => {
             output: { item: recipe.output, count: recipe.count },
             mana: recipe.mana
         };
+        
         if (recipe.catalyst) {
             constructed_recipe.catalyst = {
                 type: 'block',
                 block: recipe.catalyst
             };
         }
-        const re = event.custom(constructed_recipe);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+
+        event.custom(constructed_recipe).id(recipe.id);
     });
 });
