@@ -3,13 +3,16 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:normal/mekanism/metallurgic_infusing/';
+
     var data = {
         recipes: [
             {
                 output: Item.of('compactmachines:wall', 32),
                 inputItem: '#forge:storage_blocks/ender',
                 infusionInput: 'mekanism:refined_obsidian',
-                infusionAmount: 80
+                infusionAmount: 80,
+                id: `${id_prefix}compactmachines_wall`
             }
         ]
     };
@@ -20,6 +23,6 @@ onEvent('recipes', (event) => {
             recipe.inputItem,
             recipe.infusionInput,
             recipe.infusionAmount
-        );
+        ).id(recipe.id);
     });
 });
