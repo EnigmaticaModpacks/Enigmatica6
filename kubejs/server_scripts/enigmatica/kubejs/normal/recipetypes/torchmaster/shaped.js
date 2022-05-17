@@ -3,6 +3,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:normal/torchmaster/shaped/';
+
     const recipes = [
         {
             output: 'torchmaster:megatorch',
@@ -12,7 +14,8 @@ onEvent('recipes', (event) => {
                 B: '#enigmatica:crafting_materials/diamond',
                 C: '#minecraft:logs',
                 D: '#forge:storage_blocks/gold'
-            }
+            },
+            id: `${id_prefix}megatorch`
         },
         {
             output: 'torchmaster:feral_flare_lantern',
@@ -21,15 +24,12 @@ onEvent('recipes', (event) => {
                 A: '#forge:ingots/gold',
                 B: '#forge:glass',
                 C: '#forge:storage_blocks/glowstone'
-            }
+            },
+            id: `${id_prefix}feral_flare_lantern`
         }
     ];
 
     recipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });
