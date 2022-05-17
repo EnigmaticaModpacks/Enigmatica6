@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/compote/composting/';
+
     const recipes = [
         /*
         {
@@ -35,6 +37,6 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'compote:composting';
-        event.custom(recipe);
+        md5(event.custom(recipe), id_prefix);
     });
 });
