@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/thermal/lapidary_fuel/';
+
     event.remove({ type: 'thermal:lapidary_fuel' });
     var multiplier = 40;
     var data = {
@@ -18,7 +20,8 @@ onEvent('recipes', (event) => {
             { input: '#forge:gems/amber', energy: 160000 }
         ]
     };
+
     data.recipes.forEach((recipe) => {
-        event.recipes.thermal.lapidary_fuel(recipe.input).energy(recipe.energy * multiplier);
+        event.recipes.thermal.lapidary_fuel(recipe.input).energy(recipe.energy * multiplier).id(`${id_prefix}${recipe.input.replace('#forge:gems/', '')}`);
     });
 });
