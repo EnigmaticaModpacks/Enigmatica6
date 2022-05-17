@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/immersiveengineering/squeezer/';
+
     const recipes = [
         {
             inputs: [
@@ -84,7 +86,7 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((input) => {
         input.inputs.forEach((seed) => {
-            event.custom({
+            md5(event.custom({
                 type: 'immersiveengineering:squeezer',
                 fluid: {
                     fluid: 'immersiveengineering:plantoil',
@@ -94,7 +96,7 @@ onEvent('recipes', (event) => {
                     item: seed
                 },
                 energy: 6400
-            });
+            }), id_prefix);
         });
     });
 });
