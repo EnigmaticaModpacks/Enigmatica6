@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
                 altarLevel: 3,
                 consumptionRate: 50,
                 drainRate: 50,
-                id: `${id_prefix}bloody_bee`
+                id: `${id_prefix}bloody_bee_jar`
             }
             
         ]
