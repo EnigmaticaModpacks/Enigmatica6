@@ -2,12 +2,26 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
+
+    const id_prefix = 'enigmatica:normal/astralsorcery/block_transmutation/';
+
     var data = {
         recipes: [
-            { inputTag: '#forge:ores/iron', output: 'astralsorcery:starmetal_ore', starlight: 100 },
-            { inputTag: '#forge:workbenches', output: 'astralsorcery:altar_discovery', starlight: 60 }
+            {
+                inputTag: '#forge:ores/iron',
+                output: 'astralsorcery:starmetal_ore',
+                starlight: 100,
+                id: `${id_prefix}starmetal_ore`
+            },
+            { 
+                inputTag: '#forge:workbenches',
+                output: 'astralsorcery:altar_discovery',
+                starlight: 60,
+                id: `${id_prefix}luminous_crafting_table`
+            }
         ]
     };
+
     data.recipes.forEach((recipe) => {
         Ingredient.of(recipe.inputTag).stacks.forEach((input) => {
             if (!input.id.includes('chunk')) {
@@ -20,7 +34,7 @@ onEvent('recipes', (event) => {
                         block: recipe.output
                     },
                     starlight: recipe.starlight
-                });
+                }).id(recipe.id);
             }
         });
     });
