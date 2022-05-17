@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee"}).weakNBT().toJson()],
             output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:elven_bee"}).toJson(),
-            id: `${id_prefix}elven_bee`
+            id: `${id_prefix}elven_bee_jar`
         },
         {
             inputs: [{ item: 'resourcefulbees:elven_honeycomb' }, { item: 'resourcefulbees:elven_honeycomb' }],
