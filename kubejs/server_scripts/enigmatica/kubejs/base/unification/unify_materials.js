@@ -1,6 +1,6 @@
 //priority: 900
 onEvent('recipes', (event) => {
-    const id_prefix = 'enigmatica:base/unification/unify_dyes/';
+    const id_prefix = 'enigmatica:base/unification/unify_materials/';
 
     materialsToUnify.forEach((material) => {
         let ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
