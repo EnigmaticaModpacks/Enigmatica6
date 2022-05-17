@@ -2,6 +2,9 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
+
+    // todo: id_prefix
+
     const recipes = [
         {
             inputs: [
