@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
                         block: recipe.output
                     },
                     starlight: recipe.starlight
-                }), id_prefix);
+                }), recipe.id);
             }
         });
     });
