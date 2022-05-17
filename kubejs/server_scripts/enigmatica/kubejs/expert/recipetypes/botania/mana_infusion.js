@@ -3,6 +3,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:expert/botania/mana_infusion/';
+
     const recipes = [
         {
             input: '#forge:ingots/froststeel',
@@ -102,15 +104,20 @@ onEvent('recipes', (event) => {
             output: { item: recipe.output, count: recipe.count },
             mana: recipe.mana
         };
+
         if (recipe.catalyst) {
             constructed_recipe.catalyst = {
                 type: 'block',
                 block: recipe.catalyst
             };
         }
+
         const re = event.custom(constructed_recipe);
+        
         if (recipe.id) {
             re.id(recipe.id);
+        } else {
+            md5(re, id_prefix);
         }
     });
 });
