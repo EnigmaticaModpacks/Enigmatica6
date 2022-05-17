@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/pneumaticcraft/fuel_quantity/';
+
     var multiplier = 1000;
     var data = {
         recipes: [
@@ -25,7 +27,7 @@ onEvent('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.custom({
+        md5(event.custom({
             type: 'pneumaticcraft:fuel_quality',
             fluid: {
                 type: 'pneumaticcraft:fluid',
@@ -34,6 +36,6 @@ onEvent('recipes', (event) => {
             },
             air_per_bucket: recipe.air * multiplier,
             burn_rate: recipe.rate
-        });
+        }), id_prefix);
     });
 });
