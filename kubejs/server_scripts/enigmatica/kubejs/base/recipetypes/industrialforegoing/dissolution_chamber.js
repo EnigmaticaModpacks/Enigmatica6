@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/industrialforegoing/dissolution_chamber/';
+
     const recipes = [
         /*
         {
@@ -95,6 +97,8 @@ onEvent('recipes', (event) => {
 
         if (recipe.id) {
             re.id(recipe.id);
+        } else {
+            md5(re, id_prefix);
         }
     });
 });
