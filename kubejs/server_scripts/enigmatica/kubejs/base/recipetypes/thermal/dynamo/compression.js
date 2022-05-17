@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/thermal/compression_fuel/';
+
     var multiplier = 10;
     var data = {
         recipes: [
@@ -23,6 +25,6 @@ onEvent('recipes', (event) => {
     };
     data.recipes.forEach((recipe) => {
         //event.recipes.thermal.compression_fuel(recipe.fluid).energy(recipe.energy * multiplier);
-        event.recipes.thermal.compression_fuel(Fluid.of(recipe.input, 1000)).energy(recipe.energy * multiplier);
+        md5(event.recipes.thermal.compression_fuel(Fluid.of(recipe.input, 1000)).energy(recipe.energy * multiplier), id_prefix);
     });
 });
