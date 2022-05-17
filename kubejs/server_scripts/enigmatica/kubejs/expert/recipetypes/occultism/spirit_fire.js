@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
         return;
     }
 
-    // no in the enigmatica namespace for some legacy reason?
+    // not in the enigmatica namespace for some legacy reason?
     const id_prefix = `occultism:spirit_fire/`;
 
     const recipes = [
