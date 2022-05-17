@@ -11,13 +11,13 @@ onEvent('recipes', (event) => {
                 inputTag: '#forge:ores/iron',
                 output: 'astralsorcery:starmetal_ore',
                 starlight: 100,
-                id: `${id_prefix}starmetal_ore`
+                id: `${id_prefix}starmetal_ore_from_`
             },
             { 
                 inputTag: '#forge:workbenches',
                 output: 'astralsorcery:altar_discovery',
                 starlight: 60,
-                id: `${id_prefix}luminous_crafting_table`
+                id: `${id_prefix}luminous_crafting_table_from_`
             }
         ]
     };
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
     data.recipes.forEach((recipe) => {
         Ingredient.of(recipe.inputTag).stacks.forEach((input) => {
             if (!input.id.includes('chunk')) {
-                event.custom({
+                md5(event.custom({
                     type: 'astralsorcery:block_transmutation',
                     input: {
                         block: input.id
@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
                         block: recipe.output
                     },
                     starlight: recipe.starlight
-                }).id(recipe.id);
+                }), id_prefix);
             }
         });
     });
