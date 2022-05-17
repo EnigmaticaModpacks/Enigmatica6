@@ -2,6 +2,9 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+
+    const id_prefix = 'enigmatica:expert/enigmatica/alloying/';
+
     const recipes = [
         {
             inputs: ['#forge:ingots/compressed_iron', '#forge:gems/quartz'],
@@ -18,23 +21,23 @@ onEvent('recipes', (event) => {
         }
 
         // betterendforge
-        event.custom({
+        md5(event.custom({
             type: 'betterendforge:alloying',
             ingredients: [Ingredient.of(recipe.inputs[0]).toJson(), Ingredient.of(recipe.inputs[1]).toJson()],
             result: recipe.output,
             experience: recipe.experience,
             smelttime: recipe.smelttime
-        });
+        }), id_prefix);
 
         // create
-        event.recipes.create.mixing(recipe.output, recipe.inputs).heated();
+        md5(event.recipes.create.mixing(recipe.output, recipe.inputs).heated(), id_prefix);
 
         // immersiveengineering
-        event.recipes.immersiveengineering.alloy(recipe.output, recipe.inputs[0], recipe.inputs[1]);
-        event.recipes.immersiveengineering.arc_furnace([recipe.output], recipe.inputs[0], [recipe.inputs[1]]);
+        md5(event.recipes.immersiveengineering.alloy(recipe.output, recipe.inputs[0], recipe.inputs[1]), id_prefix);
+        md5(event.recipes.immersiveengineering.arc_furnace([recipe.output], recipe.inputs[0], [recipe.inputs[1]]), id_prefix);
 
         // thermal
-        event.recipes.thermal.smelter([recipe.output], recipe.inputs);
+        md5(event.recipes.thermal.smelter([recipe.output], recipe.inputs), id_prefix);
     };
 
     recipes.forEach((recipe) => {
