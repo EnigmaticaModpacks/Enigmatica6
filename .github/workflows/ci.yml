@@ -31,10 +31,9 @@ jobs:
           node .github/actions/ci/packmode.js ${{ matrix.packmode }} > mode.json
           cat mode.json
 
-      - name: cd automation && bash ./InstanceSyncSetup.sh
-        run: java -jar InstanceSync.jar
-      - name: cd automation && pwsh ./update-server.ps1
+      - name: Install server
         run: |
+          java -jar InstanceSync.jar
           cp ./automation/settings.cfg ./settings.cfg
           cp ./automation/start-automated-server.sh ./start-automated-server.sh
           pwsh ./automation/remove-client-mods.ps1
