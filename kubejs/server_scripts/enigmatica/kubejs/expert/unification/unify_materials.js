@@ -99,7 +99,7 @@ onEvent('recipes', (event) => {
         event.recipes.thermal
             .press(rod, [input, mold])
             .energy(2400)
-            .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
+            .id(`thermal:machine/press/press_${material}_ingot_to_rod`);
 
         event.recipes.immersiveengineering
             .metal_press(`4x ${rod}`, `4x ${input}`, mold)
