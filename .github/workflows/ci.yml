@@ -37,6 +37,7 @@ jobs:
               run: |
                   cp ./automation/settings.cfg ./settings.cfg
                   cp ./automation/start-automated-server.sh ./start-automated-server.sh
+                  pwsh ./automation/remove-client-mods.ps1
 
             - name: Setting eula to true
               run: |
