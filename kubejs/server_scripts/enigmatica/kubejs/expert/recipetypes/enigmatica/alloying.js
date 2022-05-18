@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
         }
 
         // betterendforge
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'betterendforge:alloying',
             ingredients: [Ingredient.of(recipe.inputs[0]).toJson(), Ingredient.of(recipe.inputs[1]).toJson()],
             result: recipe.output,
@@ -30,14 +30,14 @@ onEvent('recipes', (event) => {
         }), id_prefix);
 
         // create
-        md5(event.recipes.create.mixing(recipe.output, recipe.inputs).heated(), id_prefix);
+        fallback_id(event.recipes.create.mixing(recipe.output, recipe.inputs).heated(), id_prefix);
 
         // immersiveengineering
-        md5(event.recipes.immersiveengineering.alloy(recipe.output, recipe.inputs[0], recipe.inputs[1]), id_prefix);
-        md5(event.recipes.immersiveengineering.arc_furnace([recipe.output], recipe.inputs[0], [recipe.inputs[1]]), id_prefix);
+        fallback_id(event.recipes.immersiveengineering.alloy(recipe.output, recipe.inputs[0], recipe.inputs[1]), id_prefix);
+        fallback_id(event.recipes.immersiveengineering.arc_furnace([recipe.output], recipe.inputs[0], [recipe.inputs[1]]), id_prefix);
 
         // thermal
-        md5(event.recipes.thermal.smelter([recipe.output], recipe.inputs), id_prefix);
+        fallback_id(event.recipes.thermal.smelter([recipe.output], recipe.inputs), id_prefix);
     };
 
     recipes.forEach((recipe) => {

@@ -127,7 +127,7 @@ onEvent('recipes', (event) => {
                 break;
         }
 
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'astralsorcery:infuser',
             fluidInput: 'astralsorcery:liquid_starlight',
             input: {
@@ -150,7 +150,7 @@ onEvent('recipes', (event) => {
             return;
         }
         var tag = `forge:ores/${material}`;
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'betterendforge:alloying',
             ingredients: [{ tag: tag }, { tag: tag }],
             result: Ingredient.of(ingot, 3),
@@ -240,7 +240,7 @@ onEvent('recipes', (event) => {
         }
 
         // Alchemy Table Processing
-        md5(event.recipes.bloodmagic.alchemytable(Item.of(output, count), inputs).syphon(400).ticks(200).upgradeLevel(1), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.recipes.bloodmagic.alchemytable(Item.of(output, count), inputs).syphon(400).ticks(200).upgradeLevel(1), `${id_prefix}${arguments.callee.name}/`);
     }
     function bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem) {
         if (dust == air) {
@@ -386,7 +386,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        md5(event.recipes.create.milling(outputs, input).processingTime(processingTime), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.recipes.create.milling(outputs, input).processingTime(processingTime), `${id_prefix}${arguments.callee.name}/`);
     }
 
     function create_metal_block_processing(event, material, crushed_ore, ingot, nugget) {
@@ -561,7 +561,7 @@ onEvent('recipes', (event) => {
         var output = dust,
             input = `#forge:gems/${material}`;
 
-        md5(event.recipes.immersiveengineering.crusher(output, input).energy(2000), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.recipes.immersiveengineering.crusher(output, input).energy(2000), `${id_prefix}${arguments.callee.name}/`);
     }
 
     function immersiveengineering_ingot_crushing(event, material, dust, ingot) {
@@ -573,7 +573,7 @@ onEvent('recipes', (event) => {
             var output = dust,
                 input = `#forge:ingots/${material}`;
 
-            md5(event.recipes.immersiveengineering.crusher(output, input).energy(2000), `${id_prefix}${arguments.callee.name}/`);
+            fallback_id(event.recipes.immersiveengineering.crusher(output, input).energy(2000), `${id_prefix}${arguments.callee.name}/`);
         }
     }
 
@@ -793,8 +793,8 @@ onEvent('recipes', (event) => {
         var output = ingot,
             input = `#forge:ores/${material}`;
 
-        md5(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
-        md5(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
     }
 
     function minecraft_gem_ore_smelting(event, material, ore, gem) {
@@ -813,8 +813,8 @@ onEvent('recipes', (event) => {
         var output = gem,
             input = `#forge:ores/${material}`;
 
-        md5(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
-        md5(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
     }
 
     function minecraft_dust_smelting(event, material, dust, ingot) {
@@ -833,8 +833,8 @@ onEvent('recipes', (event) => {
         var output = ingot,
             input = `#forge:dusts/${material}`;
 
-        md5(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
-        md5(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
     }
 
     function occultism_gem_ore_crushing(event, material, ore, dust, gem, shard) {
@@ -865,7 +865,7 @@ onEvent('recipes', (event) => {
                 return;
         }
 
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'occultism:crushing',
             ingredient: { tag: input },
             result: { item: output, count: count },
@@ -917,7 +917,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'occultism:crushing',
             ingredient: { tag: input },
             result: { item: output, count: 1 },
@@ -1004,7 +1004,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'pedestals:pedestal_crushing',
             ingredient: {
                 tag: input
@@ -1133,7 +1133,7 @@ onEvent('recipes', (event) => {
             mod: 'thermal',
             type: 'thermal:pulverizer'
         });
-        md5(event.recipes.thermal.pulverizer(output, input), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.recipes.thermal.pulverizer(output, input), `${id_prefix}${arguments.callee.name}/`);
     }
 
     function thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate) {

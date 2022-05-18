@@ -80,7 +80,7 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        md5(event.custom(recipe), id_prefix);
+        fallback_id(event.custom(recipe), id_prefix);
     });
 
     const tillsIntoFarmland = [
@@ -107,7 +107,7 @@ onEvent('recipes', (event) => {
             let ingredients = Ingredient.of(soil);
             let result = [Item.of(farmland)];
 
-            md5(event.custom({
+            fallback_id(event.custom({
                 type: 'farmersdelight:cutting',
                 ingredients: [ingredients],
                 tool: tool,
@@ -138,7 +138,7 @@ onEvent('recipes', (event) => {
 
             event.remove({ mod: 'farmersdelight', output: recipe.output });
 
-            md5(event.custom({
+            fallback_id(event.custom({
                 type: 'farmersdelight:cutting',
                 ingredients: [ingredients],
                 tool: tool,

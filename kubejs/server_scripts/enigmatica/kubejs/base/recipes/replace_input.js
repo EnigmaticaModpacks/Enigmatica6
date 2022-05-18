@@ -208,16 +208,16 @@ onEvent('recipes', (event) => {
         event.remove({
             id: `minecraft:${color}_carpet_from_white_carpet`
         });
-        md5(event.shaped(Item.of(`minecraft:${color}_carpet`, 3), ['WW'], {
+        fallback_id(event.shaped(Item.of(`minecraft:${color}_carpet`, 3), ['WW'], {
             W: `minecraft:${color}_wool`
         }), id_prefix);
 
-        md5(event.shaped(Item.of(`minecraft:${color}_stained_glass_pane`, 8), ['GGG', 'GDG', 'GGG'], {
+        fallback_id(event.shaped(Item.of(`minecraft:${color}_stained_glass_pane`, 8), ['GGG', 'GDG', 'GGG'], {
             G: 'minecraft:glass_pane',
             D: dyeTag
         }), id_prefix);
 
-        md5(event.shaped(Item.of(`minecraft:${color}_stained_glass`, 8), ['GGG', 'GDG', 'GGG'], {
+        fallback_id(event.shaped(Item.of(`minecraft:${color}_stained_glass`, 8), ['GGG', 'GDG', 'GGG'], {
             G: 'minecraft:glass',
             D: dyeTag
         }), id_prefix);
@@ -233,11 +233,11 @@ onEvent('recipes', (event) => {
                     event.remove({ id: block });
                 }
 
-                md5(event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
+                fallback_id(event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
                     S: itemTag,
                     D: dyeTag
                 }), id_prefix);
-                md5(event.shapeless(Item.of(block, 1), [dyeTag, itemTag]), id_prefix);
+                fallback_id(event.shapeless(Item.of(block, 1), [dyeTag, itemTag]), id_prefix);
             }
         );
 
@@ -263,7 +263,7 @@ onEvent('recipes', (event) => {
             event.shapeless(Item.of(block, 1), [dyeTag, itemTag]).id(`kubejs:${blockName}_${color}`);
         });
 
-        md5(event.shapeless(Item.of(`minecraft:${color}_concrete_powder`, 8), [
+        fallback_id(event.shapeless(Item.of(`minecraft:${color}_concrete_powder`, 8), [
             dyeTag,
             '#forge:sand',
             '#forge:sand',

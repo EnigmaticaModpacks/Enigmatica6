@@ -40,7 +40,7 @@ function botania_dye_pestle_mortar(event, recipe, id_prefix) {
         output = Item.of(recipe.primary, count),
         inputs = [recipe.input, 'botania:pestle_and_mortar'];
 
-    md5(event.shapeless(output, inputs), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.shapeless(output, inputs), `${id_prefix}${arguments.callee.name}/`);
 }
 
 function create_dye_milling(event, recipe, id_prefix) {
@@ -58,7 +58,7 @@ function create_dye_milling(event, recipe, id_prefix) {
         ],
         input = recipe.input;
 
-    md5(event.recipes.create.milling(outputs, input), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.recipes.create.milling(outputs, input), `${id_prefix}${arguments.callee.name}/`);
 }
 
 function immersiveengineering_dye_crusher(event, recipe, id_prefix) {
@@ -75,7 +75,7 @@ function immersiveengineering_dye_crusher(event, recipe, id_prefix) {
         ],
         input = recipe.input;
 
-    md5(event.recipes.immersiveengineering.crusher(output, input, extras), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.recipes.immersiveengineering.crusher(output, input, extras), `${id_prefix}${arguments.callee.name}/`);
 }
 
 // function integrateddynamics_dye_squeezing(event, recipe, id_prefix) {
@@ -102,7 +102,7 @@ function immersiveengineering_dye_crusher(event, recipe, id_prefix) {
 //         }
 //     });
 
-//     md5(event.custom({
+//     fallback_id(event.custom({
 //         type: 'integrateddynamics:mechanical_squeezer',
 //         item: {
 //             item: recipe.input
@@ -129,7 +129,7 @@ function mekanism_dye_enriching(event, recipe, id_prefix) {
         output = Item.of(recipe.primary, count),
         input = recipe.input;
 
-    md5(event.recipes.mekanism.enriching(output, input), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.recipes.mekanism.enriching(output, input), `${id_prefix}${arguments.callee.name}/`);
 }
 
 function mekanism_pigment_extracting(event, recipe, id_prefix) {
@@ -145,7 +145,7 @@ function mekanism_pigment_extracting(event, recipe, id_prefix) {
     let dye_color = recipe.primary.split(':')[1].replace('_dye', '');
     let count = baseCount * multiplier;
 
-    md5(event.custom({
+    fallback_id(event.custom({
         type: 'mekanism:pigment_extracting',
         input: { ingredient: { item: recipe.input } },
         output: { pigment: `mekanism:${dye_color}`, amount: 256 * count }
@@ -167,7 +167,7 @@ function pedestals_dye_crushing(event, recipe, id_prefix) {
         output = recipe.primary,
         input = recipe.input;
 
-    md5(event.custom({
+    fallback_id(event.custom({
         type: 'pedestals:pedestal_crushing',
         ingredient: { item: input },
         result: { item: output, count: count }
@@ -193,7 +193,7 @@ function thermal_dye_centrifuge(event, recipe, id_prefix) {
         ],
         input = recipe.input;
 
-    md5(event.recipes.thermal.centrifuge(outputs, input), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.recipes.thermal.centrifuge(outputs, input), `${id_prefix}${arguments.callee.name}/`);
 }
 
 function atum_quern_milling(event, recipe, id_prefix) {
@@ -208,7 +208,7 @@ function atum_quern_milling(event, recipe, id_prefix) {
         input = recipe.input,
         rotations = 1 * multiplier;
 
-    md5(event.custom({
+    fallback_id(event.custom({
         type: 'atum:quern',
         ingredient: { item: input },
         result: { item: output, count: count },
@@ -223,7 +223,7 @@ function shapeless_dye_crafting(event, recipe, id_prefix) {
     var output = Item.of(recipe.primary),
         inputs = [recipe.input];
 
-    md5(event.shapeless(output, inputs), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.shapeless(output, inputs), `${id_prefix}${arguments.callee.name}/`);
 }
 
 function occultism_dye_crushing(event, recipe, id_prefix) {
@@ -241,7 +241,7 @@ function occultism_dye_crushing(event, recipe, id_prefix) {
         output = recipe.primary,
         input = recipe.input;
 
-    md5(event.custom({
+    fallback_id(event.custom({
         type: 'occultism:crushing',
         ingredient: { item: input },
         result: { item: output, count: count },

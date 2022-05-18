@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
         treeCategories.trees.forEach((tree) => {
             if (tree.sap) {
                 if (tree.rate.living > 0) {
-                    md5(event.custom({
+                    fallback_id(event.custom({
                         type: 'thermal:tree_extractor',
                         trunk: tree.trunk,
                         leaves: tree.leaf,

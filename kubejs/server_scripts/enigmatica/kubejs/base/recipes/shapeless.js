@@ -584,14 +584,14 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         recipe.id
             ? event.shapeless(recipe.output, recipe.inputs).id(recipe.id)
-            : md5(event.shapeless(recipe.output, recipe.inputs), id_prefix);
+            : fallback_id(event.shapeless(recipe.output, recipe.inputs), id_prefix);
     });
 
     powahTiers.forEach((tier) => {
         if (tier == 'starter') {
             return;
         }
-        md5(event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`), id_prefix);
+        fallback_id(event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`), id_prefix);
     });
 
     colors.forEach(function (color) {
@@ -614,12 +614,12 @@ onEvent('recipes', (event) => {
         ]).id(`${id_prefix}dye_hopper_botany_pot_${color}`);
 
         if (color != 'white') {
-            md5(event.shapeless(Item.of(`2x atum:ceramic_slab_${color}`), [
+            fallback_id(event.shapeless(Item.of(`2x atum:ceramic_slab_${color}`), [
                 'atum:ceramic_slab_white',
                 'atum:ceramic_slab_white',
                 `#forge:dyes/${color}`
             ]), id_prefix);
-            md5(event.shapeless(Item.of(`6x atum:ceramic_tile_${color}`), [
+            fallback_id(event.shapeless(Item.of(`6x atum:ceramic_tile_${color}`), [
                 'atum:ceramic_tile_white',
                 'atum:ceramic_tile_white',
                 'atum:ceramic_tile_white',
@@ -628,20 +628,20 @@ onEvent('recipes', (event) => {
                 'atum:ceramic_tile_white',
                 `#forge:dyes/${color}`
             ]), id_prefix);
-            md5(event.shapeless(Item.of(`3x atum:ceramic_stairs_${color}`), [
+            fallback_id(event.shapeless(Item.of(`3x atum:ceramic_stairs_${color}`), [
                 'atum:ceramic_stairs_white',
                 'atum:ceramic_stairs_white',
                 'atum:ceramic_stairs_white',
                 `#forge:dyes/${color}`
             ]), id_prefix);
-            md5(event.shapeless(`atum:ceramic_wall_${color}`, ['atum:ceramic_wall_white', `#forge:dyes/${color}`]), id_prefix);
+            fallback_id(event.shapeless(`atum:ceramic_wall_${color}`, ['atum:ceramic_wall_white', `#forge:dyes/${color}`]), id_prefix);
         }
     });
 
     materialsToUnify.forEach((material) => {
         var ore = Item.of(`emendatusenigmatica:${material}_ore`);
         if (ore.exists) {
-            md5(event.shapeless(ore, `#forge:ores/${material}`), id_prefix);
+            fallback_id(event.shapeless(ore, `#forge:ores/${material}`), id_prefix);
         }
     });
 });

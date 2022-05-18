@@ -25,7 +25,7 @@ function pedestals_stoneworks(event, material, type) {
         recipeType = 'pedestals:pedestal_cobblegensilk';
     }
     //console.log(`Pedestals Recipe for Material: ${material}, Type: ${type}`);
-    md5(event.custom({
+    fallback_id(event.custom({
         type: recipeType,
         ingredient: {
             item: material
@@ -46,7 +46,7 @@ function industrialforegoing_stoneworks(event, material, type) {
         lavaConsume = 0;
     }
 
-    md5(event.custom({
+    fallback_id(event.custom({
         output: {
             item: material,
             count: 1
@@ -60,7 +60,7 @@ function industrialforegoing_stoneworks(event, material, type) {
 }
 
 function thermal_stoneworks(event, material) {
-    md5(event.custom({
+    fallback_id(event.custom({
         type: 'thermal:rock_gen',
         adjacent: 'minecraft:water',
         below: material,

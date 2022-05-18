@@ -27,7 +27,7 @@ onEvent('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'pneumaticcraft:fuel_quality',
             fluid: {
                 type: 'pneumaticcraft:fluid',

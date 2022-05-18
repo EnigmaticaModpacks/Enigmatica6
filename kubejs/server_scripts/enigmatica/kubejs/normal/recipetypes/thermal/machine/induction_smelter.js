@@ -23,6 +23,6 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        md5(event.recipes.thermal.smelter(recipe.outputs, recipe.inputs), id_prefix);
+        fallback_id(event.recipes.thermal.smelter(recipe.outputs, recipe.inputs), id_prefix);
     });
 });

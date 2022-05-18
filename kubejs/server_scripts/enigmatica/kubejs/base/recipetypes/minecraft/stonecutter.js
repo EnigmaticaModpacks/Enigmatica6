@@ -137,6 +137,6 @@ onEvent('recipes', (event) => {
     });
 
     recipes.forEach((recipe) => {
-        md5(event.stonecutting(recipe.output, recipe.input), id_prefix);
+        fallback_id(event.stonecutting(recipe.output, recipe.input), id_prefix);
     });
 });

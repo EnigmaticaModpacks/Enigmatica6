@@ -37,6 +37,6 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'compote:composting';
-        md5(event.custom(recipe), id_prefix);
+        fallback_id(event.custom(recipe), id_prefix);
     });
 });

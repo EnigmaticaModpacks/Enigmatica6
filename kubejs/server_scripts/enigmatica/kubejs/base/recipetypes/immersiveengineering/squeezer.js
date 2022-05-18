@@ -86,7 +86,7 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((input) => {
         input.inputs.forEach((seed) => {
-            md5(event.custom({
+            fallback_id(event.custom({
                 type: 'immersiveengineering:squeezer',
                 fluid: {
                     fluid: 'immersiveengineering:plantoil',

@@ -111,7 +111,7 @@ onEvent('recipes', (event) => {
         if (recipe.id) {
             re.id(recipe.id);
         } else {
-            md5(re, id_prefix);
+            fallback_id(re, id_prefix);
         }
     });
 });

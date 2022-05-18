@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'astralsorcery:infuser',
             fluidInput: recipe.fluid,
             input: recipe.input,

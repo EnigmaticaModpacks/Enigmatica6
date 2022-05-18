@@ -101,7 +101,7 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'resourcefulbees:centrifuge',
             ingredient: recipe.ingredient,
             results: recipe.results,

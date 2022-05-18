@@ -82,7 +82,7 @@ onEvent('recipes', (event) => {
 	*/
 
     lowAmountInputs.forEach((input) => {
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'immersiveengineering:fermenter',
             fluid: {
                 fluid: 'immersiveengineering:ethanol',
@@ -95,7 +95,7 @@ onEvent('recipes', (event) => {
         }), `${id_prefix}low/`);
     });
     normalAmountInputs.forEach((input) => {
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'immersiveengineering:fermenter',
             fluid: {
                 fluid: 'immersiveengineering:ethanol',

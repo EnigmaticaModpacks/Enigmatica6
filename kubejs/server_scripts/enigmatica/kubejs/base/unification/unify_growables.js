@@ -43,7 +43,7 @@ function soils_botany_pots(event, soil) {
         display.properties = { moisture: 7 };
     }
 
-    md5(event.custom({
+    fallback_id(event.custom({
         type: 'botanypots:soil',
         input: { item: input },
         display: display,
@@ -134,7 +134,7 @@ function crops_botany_pots(event, type, crop) {
         });
     }
 
-    md5(event.custom({
+    fallback_id(event.custom({
         type: 'botanypots:crop',
         seed: { item: input },
         categories: [crop.substrate],
@@ -227,7 +227,7 @@ function crops_thermal_insolator(event, type, crop) {
         outputs.push(Item.of(plantSecondary).chance(secondaryChance));
     }
 
-    md5(event.recipes.thermal
+    fallback_id(event.recipes.thermal
         .insolator(outputs, input)
         .water(baseWater * waterModifier)
         .energy(baseEnergy * energyModifier), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
@@ -409,7 +409,7 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         //add any secondary
         outputs.push(Item.of(plantSecondary, secondaryCount));
     }
-    md5(event.recipes.immersiveengineering
+    fallback_id(event.recipes.immersiveengineering
         .cloche(outputs, input, substrate, {
             type: renderType,
             block: renderBlock
@@ -493,7 +493,7 @@ function trees_botany_pots(event, type, tree) {
         growthModifier = 0.5;
     }
 
-    md5(event.custom({
+    fallback_id(event.custom({
         type: 'botanypots:crop',
         seed: { item: input },
         categories: [tree.substrate],
@@ -532,7 +532,7 @@ function trees_thermal_insolator(event, tree) {
         outputs.push(Item.of(tree.extraDecoration).chance(extraDecorationRate));
     }
 
-    md5(event.recipes.thermal
+    fallback_id(event.recipes.thermal
         .insolator(outputs, input)
         .water(baseWater * waterModifier)
         .energy(baseEnergy * energyModifier), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
@@ -613,7 +613,7 @@ function trees_immersiveengineering_cloche(event, tree) {
         outputs.push(Item.of(tree.extraDecoration, extraDecorationRate));
     }
     
-    md5(event.recipes.immersiveengineering
+    fallback_id(event.recipes.immersiveengineering
         .cloche(outputs, input, substrate, {
             type: renderType,
             block: renderBlock

@@ -37,7 +37,7 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        md5(event.custom(recipe), id_prefix);
+        fallback_id(event.custom(recipe), id_prefix);
     });
 
     buildWoodVariants.forEach((variant) => {
@@ -57,7 +57,7 @@ onEvent('recipes', (event) => {
             };
             let ingredients = Ingredient.of(recipe.input);
             let result = [Item.of('minecraft:stick', 8)];
-            md5(event.custom({
+            fallback_id(event.custom({
                 type: 'farmersdelight:cutting',
                 ingredients: [ingredients],
                 tool: tool,

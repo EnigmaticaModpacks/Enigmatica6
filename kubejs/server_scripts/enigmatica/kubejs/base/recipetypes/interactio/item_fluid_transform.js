@@ -97,7 +97,7 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'interactio:item_fluid_transform',
             inputs: recipe.inputs,
             fluid: recipe.fluid,
@@ -107,7 +107,7 @@ onEvent('recipes', (event) => {
     });
 
     simpleTagRecipes.forEach((recipe) => {
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'interactio:item_fluid_transform',
             inputs: [{ tag: recipe.input, count: 1, return_chance: 0 }],
             fluid: { fluid: 'minecraft:water' },
@@ -121,7 +121,7 @@ onEvent('recipes', (event) => {
     });
 
     simpleItemRecipes.forEach((recipe) => {
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'interactio:item_fluid_transform',
             inputs: [{ item: recipe.input, count: 1, return_chance: 0 }],
             fluid: { fluid: 'minecraft:water' },
@@ -136,7 +136,7 @@ onEvent('recipes', (event) => {
 
     rustyItems.forEach((rustyItem) => {
         let unrustedItem = rustyItem.replace('rusty_', '');
-        md5(event.custom({
+        fallback_id(event.custom({
             type: 'interactio:item_fluid_transform',
             inputs: [{ item: unrustedItem, count: 1, return_chance: 0 }],
             fluid: { fluid: 'minecraft:water' },

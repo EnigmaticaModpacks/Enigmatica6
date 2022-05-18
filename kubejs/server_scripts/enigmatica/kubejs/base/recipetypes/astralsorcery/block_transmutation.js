@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
     data.recipes.forEach((recipe) => {
         Ingredient.of(recipe.inputTag).stacks.forEach((input) => {
             if (!input.id.includes('chunk')) {
-                md5(event.custom({
+                fallback_id(event.custom({
                     type: 'astralsorcery:block_transmutation',
                     input: {
                         block: input.id
