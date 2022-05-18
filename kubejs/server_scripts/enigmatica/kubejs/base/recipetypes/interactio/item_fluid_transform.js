@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/interactio/item_fluid_transform/';
+
     const recipes = [
         {
             inputs: [{ tag: 'minecraft:planks', count: 1, return_chance: 0 }],
@@ -95,17 +97,17 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.custom({
+        fallback_id(event.custom({
             type: 'interactio:item_fluid_transform',
             inputs: recipe.inputs,
             fluid: recipe.fluid,
             output: recipe.output,
             consume_fluid: recipe.consume_fluid
-        });
+        }), id_prefix);
     });
 
     simpleTagRecipes.forEach((recipe) => {
-        event.custom({
+        fallback_id(event.custom({
             type: 'interactio:item_fluid_transform',
             inputs: [{ tag: recipe.input, count: 1, return_chance: 0 }],
             fluid: { fluid: 'minecraft:water' },
@@ -115,11 +117,11 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             consume_fluid: 0.0
-        });
+        }), id_prefix);
     });
 
     simpleItemRecipes.forEach((recipe) => {
-        event.custom({
+        fallback_id(event.custom({
             type: 'interactio:item_fluid_transform',
             inputs: [{ item: recipe.input, count: 1, return_chance: 0 }],
             fluid: { fluid: 'minecraft:water' },
@@ -129,12 +131,12 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             consume_fluid: 0.0
-        });
+        }), id_prefix);
     });
 
     rustyItems.forEach((rustyItem) => {
         let unrustedItem = rustyItem.replace('rusty_', '');
-        event.custom({
+        fallback_id(event.custom({
             type: 'interactio:item_fluid_transform',
             inputs: [{ item: unrustedItem, count: 1, return_chance: 0 }],
             fluid: { fluid: 'minecraft:water' },
@@ -144,6 +146,6 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             consume_fluid: 0.0
-        });
+        }), id_prefix);
     });
 });

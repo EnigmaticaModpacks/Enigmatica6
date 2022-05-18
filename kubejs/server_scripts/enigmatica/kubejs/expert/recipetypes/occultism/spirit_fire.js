@@ -3,31 +3,32 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    // not in the enigmatica namespace for some legacy reason?
+    const id_prefix = `occultism:spirit_fire/`;
+
     const recipes = [
         {
             input: 'ars_nouveau:magic_clay',
-            output: 'bloodmagic:arcaneashes'
+            output: 'bloodmagic:arcaneashes',
+            id: `${id_prefix}arcane_ashes`
         },
         {
             input: 'ars_nouveau:arcane_stone',
             output: 'occultism:otherstone',
-            id: 'otherstone'
+            id: `${id_prefix}otherstone`
         },
         {
             input: '#forge:gems/mana',
             output: 'occultism:spirit_attuned_gem',
-            id: 'spirit_attuned_gem'
+            id: `${id_prefix}spirit_attuned_gem`
         }
     ];
 
     recipes.forEach((recipe) => {
-        let re = event.custom({
+        event.custom({
             type: 'occultism:spirit_fire',
             ingredient: Ingredient.of(recipe.input).toJson(),
             result: Ingredient.of(recipe.output).toJson()
-        });
-        if (recipe.id) {
-            re.id(`occultism:spirit_fire/${recipe.id}`);
-        }
+        }).id(recipe.id);
     });
 });

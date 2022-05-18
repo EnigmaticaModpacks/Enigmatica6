@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/minecraft/stonecutter/';
     const recipes = [
         {
             output: 'masonry:stonechiseledslab',
@@ -136,6 +137,6 @@ onEvent('recipes', (event) => {
     });
 
     recipes.forEach((recipe) => {
-        event.stonecutting(recipe.output, recipe.input);
+        fallback_id(event.stonecutting(recipe.output, recipe.input), id_prefix);
     });
 });

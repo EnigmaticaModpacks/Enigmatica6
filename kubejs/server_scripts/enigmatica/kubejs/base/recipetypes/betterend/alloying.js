@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/betterend/alloying/';
+
     var data = {
         recipes: [
             {
@@ -28,12 +30,12 @@ onEvent('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.custom({
+        fallback_id(event.custom({
             type: 'betterendforge:alloying',
             ingredients: recipe.ingredients,
             result: recipe.result,
             experience: recipe.experience,
             smelttime: recipe.smelttime
-        });
+        }), id_prefix);
     });
 });

@@ -1,14 +1,18 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/botania/elven_trade/';
+
     const recipes = [
         {
             inputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee"}).weakNBT().toJson()],
-            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:elven_bee"}).toJson()
+            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:elven_bee"}).toJson(),
+            id: `${id_prefix}elven_bee_jar`
         },
         {
             inputs: [{ item: 'resourcefulbees:elven_honeycomb' }, { item: 'resourcefulbees:elven_honeycomb' }],
             output: {
                 item: 'botania:elementium_ingot'
-            }
+            },
+            id: `${id_prefix}elementium_ingot`
         },
         {
             inputs: [
@@ -17,18 +21,16 @@ onEvent('recipes', (event) => {
             ],
             output: {
                 item: 'botania:elementium_block'
-            }
+            },
+            id: `${id_prefix}elementium_block`
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
+        event.custom({
             type: 'botania:elven_trade',
             ingredients: recipe.inputs,
             output: recipe.output
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        }).id(recipe.id);
     });
 });

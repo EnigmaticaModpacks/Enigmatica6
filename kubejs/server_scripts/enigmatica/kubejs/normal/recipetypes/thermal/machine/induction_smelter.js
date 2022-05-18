@@ -3,6 +3,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:normal/thermal/smelter/';
+
     var data = {
         recipes: [
             {
@@ -21,6 +23,6 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.thermal.smelter(recipe.outputs, recipe.inputs);
+        fallback_id(event.recipes.thermal.smelter(recipe.outputs, recipe.inputs), id_prefix);
     });
 });

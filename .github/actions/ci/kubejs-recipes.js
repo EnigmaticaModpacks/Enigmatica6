@@ -21,7 +21,8 @@ fsp.readFile('logs/kubejs/server.txt').then(data => {
     modified: {},
 
     duplicate: {},
-    nameless: {},
+    kjs: {},
+    md5: {},
   };
 
   lines.forEach(line => {
@@ -45,8 +46,12 @@ fsp.readFile('logs/kubejs/server.txt').then(data => {
       groups['duplicate'][id] = recipe;      
     }
 
-    if (group == "added" && id.includes(':kjs_')) {
-      groups['nameless'][id] = recipe;      
+    if (group == "added" && id.includes('kjs_')) {
+      groups['kjs'][id] = recipe;      
+    }
+
+    if (group == "added" && id.includes('md5_')) {
+      groups['md5'][id] = recipe;      
     }
 
     groups[group][id] = recipe;
@@ -57,5 +62,5 @@ fsp.readFile('logs/kubejs/server.txt').then(data => {
     fsp.writeFile(`kubejs/exported/recipes/${group}.json`, JSON.stringify(recipes, null, '\t'));
   }
 
-  console.log(`::notice::${Object.entries(groups['nameless']).length} KubeJS recipes with a randomized name, and ${Object.entries(groups['duplicate']).length} duplicates.`)
+  console.log(`::notice::${Object.entries(groups['kjs']).length} KubeJS recipes with kjs_, ${Object.entries(groups['md5']).length} recipes with md5_, and ${Object.entries(groups['duplicate']).length} duplicates.`)
 });

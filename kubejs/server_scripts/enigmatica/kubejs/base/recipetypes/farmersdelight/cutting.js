@@ -14,6 +14,8 @@ function filletRecipe(fish, filletCount) {
     ]);
 }
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/farmersdelight/cutting/';
+
     const recipes = [
         cuttingRecipe(
             Ingredient.of('#forge:storage_blocks/clay'),
@@ -78,7 +80,7 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.custom(recipe);
+        fallback_id(event.custom(recipe), id_prefix);
     });
 
     const tillsIntoFarmland = [
@@ -105,12 +107,12 @@ onEvent('recipes', (event) => {
             let ingredients = Ingredient.of(soil);
             let result = [Item.of(farmland)];
 
-            event.custom({
+            fallback_id(event.custom({
                 type: 'farmersdelight:cutting',
                 ingredients: [ingredients],
                 tool: tool,
                 result: result
-            });
+            }), id_prefix);
         });
     });
 
@@ -136,12 +138,12 @@ onEvent('recipes', (event) => {
 
             event.remove({ mod: 'farmersdelight', output: recipe.output });
 
-            event.custom({
+            fallback_id(event.custom({
                 type: 'farmersdelight:cutting',
                 ingredients: [ingredients],
                 tool: tool,
                 result: result
-            });
+            }), id_prefix);
         });
     });
 });

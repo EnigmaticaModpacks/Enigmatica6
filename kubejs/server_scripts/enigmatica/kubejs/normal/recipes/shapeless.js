@@ -3,6 +3,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:normal/recipes/shapeless/';
+
     const recipes = [
         {
             output: 'mekanism:hdpe_sheet',
@@ -11,7 +13,8 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'quark:root',
-            inputs: ['minecraft:vine', '#forge:dyes/brown']
+            inputs: ['minecraft:vine', '#forge:dyes/brown'],
+            id: `${id_prefix}quark_root`
         },
         {
             output: Item.of('refinedstorage:quartz_enriched_iron', 4),
@@ -21,8 +24,6 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.id
-            ? event.shapeless(recipe.output, recipe.inputs).id(recipe.id)
-            : event.shapeless(recipe.output, recipe.inputs);
+        event.shapeless(recipe.output, recipe.inputs).id(recipe.id);
     });
 });

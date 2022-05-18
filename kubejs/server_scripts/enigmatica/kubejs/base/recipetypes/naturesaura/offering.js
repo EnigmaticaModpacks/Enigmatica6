@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/naturesaura/offering/';
+
     const data = {
         recipes: [
             /*{
@@ -12,7 +14,7 @@ onEvent('recipes', (event) => {
                     item: 'naturesaura:infused_iron',
                     count: 3,
                 },
-                id: ''
+                id: `${id_prefix}`
             }*/
             {
                 input: {
@@ -24,20 +26,18 @@ onEvent('recipes', (event) => {
                 output: {
                     item: 'naturesaura:sky_ingot',
                     count: 3
-                }
+                },
+                id: `${id_prefix}sky_ingot_from_honeycomb`
             }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        const re = event.custom({
+        event.custom({
             type: 'naturesaura:offering',
             input: recipe.input,
             start_item: recipe.start_item,
             output: recipe.output
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        }).id(recipe.id);
     });
 });

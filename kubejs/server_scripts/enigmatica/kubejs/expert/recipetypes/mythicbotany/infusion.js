@@ -69,7 +69,8 @@ onEvent('recipes', (event) => {
             output: { item: 'mythicbotany:alfsteel_ingot' },
             mana: 1500000,
             fromColor: parseInt('0xFF008D'),
-            toColor: parseInt('0xFF9600')
+            toColor: parseInt('0xFF9600'),
+            id: `${id_prefix}alfsteel_ingot_comb`
         },
         {
             inputs: [
@@ -119,7 +120,7 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
+        event.custom({
             type: 'mythicbotany:infusion',
             group: 'infuser',
             ingredients: recipe.inputs,
@@ -127,9 +128,6 @@ onEvent('recipes', (event) => {
             mana: recipe.mana,
             fromColor: recipe.fromColor,
             toColor: recipe.toColor
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        }).id(recipe.id);
     });
 });

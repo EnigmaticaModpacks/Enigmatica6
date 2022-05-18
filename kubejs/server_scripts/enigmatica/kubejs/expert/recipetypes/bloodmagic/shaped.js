@@ -99,7 +99,8 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'naturesaura:infused_stone',
                 B: '#bloodmagic:crystals/demon'
-            }
+            },
+            id: 'bloodmagic:dungeon_stone'
         },
         {
             output: 'bloodmagic:alchemicalreactionchamber',
