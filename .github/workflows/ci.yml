@@ -31,10 +31,12 @@ jobs:
                   node .github/actions/ci/packmode.js ${{ matrix.packmode }} > mode.json
                   cat mode.json
 
-            - run: bash ./InstanceSyncSetup.sh
-              working-directory: ./automation
-            - run: pwsh ./update-server.ps1 ${{ github.ref_name }} world backups $true $false
-              working-directory: ./automation
+            - name: bash ./InstanceSyncSetup.sh
+              run: java -jar InstanceSync.jar
+            - name: pwsh ./update-server.ps1
+              run: |
+                  cp ./automation/settings.cfg ./settings.cfg
+                  cp ./automation/start-automated-server.sh ./start-automated-server.sh
 
             - name: Setting eula to true
               run: |
