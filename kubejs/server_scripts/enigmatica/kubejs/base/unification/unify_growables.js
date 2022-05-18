@@ -43,13 +43,13 @@ function soils_botany_pots(event, soil) {
         display.properties = { moisture: 7 };
     }
 
-    fallback_id(event.custom({
+    event.custom({
         type: 'botanypots:soil',
         input: { item: input },
         display: display,
         categories: soil.categories,
         growthModifier: soil.growthModifier
-    }), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
+    });
 }
 
 function crops_botany_pots(event, type, crop) {
@@ -134,14 +134,14 @@ function crops_botany_pots(event, type, crop) {
         });
     }
 
-    fallback_id(event.custom({
+    event.custom({
         type: 'botanypots:crop',
         seed: { item: input },
         categories: [crop.substrate],
         growthTicks: growthTicks * growthModifier,
         display: { block: crop.render },
         results: outputs
-    }), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
+    });
 }
 
 function crops_thermal_insolator(event, type, crop) {
@@ -493,14 +493,14 @@ function trees_botany_pots(event, type, tree) {
         growthModifier = 0.5;
     }
 
-    fallback_id(event.custom({
+    event.custom({
         type: 'botanypots:crop',
         seed: { item: input },
         categories: [tree.substrate],
         growthTicks: growthTicks * growthModifier,
         display: { block: input },
         results: outputs
-    }), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
+    });
 }
 
 function trees_thermal_insolator(event, tree) {
