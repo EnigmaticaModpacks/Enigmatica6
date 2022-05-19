@@ -2025,12 +2025,6 @@ const cropRegistry = [
                 substrate: 'water'
             },
             {
-                seed: 'byg:cattail',
-                render: 'byg:cattail',
-                plant: 'byg:cattail',
-                substrate: 'water'
-            },
-            {
                 seed: 'projectvibrantjourneys:sea_oats',
                 render: 'projectvibrantjourneys:sea_oats',
                 plant: 'projectvibrantjourneys:sea_oats',
