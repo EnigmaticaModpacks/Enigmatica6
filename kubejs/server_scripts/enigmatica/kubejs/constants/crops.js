@@ -1869,12 +1869,6 @@ const cropRegistry = [
                 substrate: 'deepturf'
             },
             {
-                seed: 'undergarden:ashen_deepturf',
-                render: 'undergarden:ashen_deepturf',
-                plant: 'undergarden:ashen_deepturf',
-                substrate: 'deepturf'
-            },
-            {
                 seed: 'undergarden:deepturf',
                 render: 'undergarden:deepturf',
                 plant: 'undergarden:deepturf',
