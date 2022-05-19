@@ -465,7 +465,7 @@ onEvent('recipes', (event) => {
             sapling: 'architects_palette:twisted_sapling',
             output: 'naturesaura:shockwave_creator',
             time: 4 * time_multiplier,
-            id: 'naturesaura:shockwave_creator'
+            id: `${id_prefix}shockwave_creator`
         },
         {
             ingredients: [

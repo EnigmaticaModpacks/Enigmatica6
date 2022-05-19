@@ -124,18 +124,6 @@ onEvent('recipes', (event) => {
             id: 'industrialforegoing:dye_mixer'
         },
         {
-            output: 'industrialforegoing:fluid_collector',
-            pattern: ['PBP', 'BMB', 'SRS'],
-            key: {
-                P: '#forge:plastic',
-                B: 'minecraft:bucket',
-                M: '#industrialforegoing:machine_frame/pity',
-                R: 'minecraft:redstone',
-                S: '#forge:gears/iron_invar'
-            },
-            id: 'industrialforegoing:fluid_collector'
-        },
-        {
             output: 'industrialforegoing:meat_feeder',
             pattern: ['pip', 'gig', ' i '],
             key: {

@@ -293,6 +293,18 @@ onEvent('recipes', (event) => {
                 S: '#forge:gears/iron_invar'
             },
             id: 'industrialforegoing:fluid_placer'
+        },
+        {
+            output: 'industrialforegoing:fluid_collector',
+            pattern: ['PBP', 'BMB', 'SRS'],
+            key: {
+                P: '#forge:plastic',
+                B: 'minecraft:bucket',
+                M: '#industrialforegoing:machine_frame/pity',
+                R: 'minecraft:redstone',
+                S: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:fluid_collector'
         }
     ];
 
