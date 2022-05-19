@@ -1767,12 +1767,6 @@ const cropRegistry = [
                 substrate: 'end_stone'
             },
             {
-                seed: 'byg:shulkren_moss_blanket',
-                render: 'byg:shulkren_moss_blanket',
-                plant: 'byg:shulkren_moss_blanket',
-                substrate: 'end_stone'
-            },
-            {
                 seed: 'byg:sythian_roots',
                 render: 'byg:sythian_roots',
                 plant: 'byg:sythian_roots',
