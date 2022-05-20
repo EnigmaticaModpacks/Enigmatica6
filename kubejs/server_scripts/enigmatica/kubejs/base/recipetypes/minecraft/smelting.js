@@ -47,7 +47,7 @@ onEvent('recipes', (event) => {
             input: Item.of('dustrial_decor:rusty_iron_ingot'),
             output: Item.of('#forge:ingots/iron'),
             xp: 0.1,
-            id: `${id_prefix}iron_nugget_from_iron_knife`
+            id: `${id_prefix}iron_nugget_from_rusty_iron_ingot`
         },
         {
             input: Item.of('dustrial_decor:rusty_iron_nugget'),
@@ -59,7 +59,7 @@ onEvent('recipes', (event) => {
             input: '#forge:dusts/netherite',
             output: Item.of('#forge:ingots/netherite'),
             xp: 0.1,
-            id: `${id_prefix}iron_ingot_from_rusty_iron_ingot`
+            id: `${id_prefix}netherite_ingot_from_netherite_dust`
         },
         {
             input: 'aquaculture:tin_can',
