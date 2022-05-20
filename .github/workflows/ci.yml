@@ -65,3 +65,26 @@ jobs:
       - uses: actions/setup-node@v3
 
       - run: node .github/actions/ci/kubejs-todo-remove.js
+  patchouli:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v3
+      - uses: php-actions/composer@v6
+        with:
+          working_dir: .github/actions/ci/php/
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - run: java -jar InstanceSync.jar
+      - run: php .github/actions/ci/php/app.php
+      - run: cat patchouli_mentioned_recipe_ids.txt
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: patchouli
+          path: |
+            ./patchouli_mentioned_recipe_ids.txt
