@@ -34,6 +34,6 @@ Promise.all(requests)
     .then(() => {
         console.log(no_3rd_party_downloads);
         if (no_3rd_party_downloads.length > 0) {
-            console.log(`::warning::${no_3rd_party_downloads.length} have opted out of distribution: ${no_3rd_party_downloads.join(', ')}`);
+            console.log(`::warning::${no_3rd_party_downloads.length} mods have opted out of distribution: ${no_3rd_party_downloads.join(', ')}`);
         }
     });

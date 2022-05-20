@@ -67,7 +67,7 @@ jobs:
       - run: node .github/actions/ci/kubejs-todo-remove.js
   curseforge:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 2.5
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
