@@ -80,7 +80,7 @@ jobs:
 
       - run: sudo apt-get install composer
       - run: composer install
-        working-directory: .github/actions/ci/php/app/
+        working-directory: .github/actions/ci/php/
 
       - run: java -jar InstanceSync.jar
       - run: php .github/actions/ci/php/app.php
