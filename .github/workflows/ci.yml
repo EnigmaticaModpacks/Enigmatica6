@@ -67,12 +67,9 @@ jobs:
       - run: node .github/actions/ci/kubejs-todo-remove.js
   patchouli:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 1
     steps:
       - uses: actions/checkout@v3
-#      - uses: php-actions/composer@v6
-#        with:
-#          working_dir: .github/actions/ci/php/
       - uses: actions/setup-java@v3
         with:
           distribution: 'temurin'

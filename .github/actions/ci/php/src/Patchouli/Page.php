@@ -91,21 +91,19 @@ class Page
         self::$whitelist->put('pneumaticcraft:pressure_chamber', $default);
         self::$whitelist->put('pneumaticcraft:amadron_trade',    $default);
 
+        // ars arsenal
         self::$whitelist->put('apparatus_recipe', $default);
 
         // blood magic
-
         $bloodmagic_2x = function (Collection $page) {
             yield $page->get('a.recipe');
             yield $page->get('b.recipe');
         };
-
         $bloodmagic_3x = function (Collection $page) {
             yield $page->get('a.recipe');
             yield $page->get('b.recipe');
             yield $page->get('c.recipe');
         };
-
         self::$whitelist->put('crafting_2-step_sigil', function (Collection $page) {
             yield $page->get('array.recipe');
             yield $page->get('alchemy_table.recipe');

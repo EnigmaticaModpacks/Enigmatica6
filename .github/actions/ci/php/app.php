@@ -56,7 +56,7 @@ $last_mod = null;
 
 foreach ($mentioned_recipe_ids as $recipe_id) {
     if($last_mod != null && $last_mod != explode(':', $recipe_id)[0]) {
-        $txt[] = null; // add a gap each time the mod: changes
+        $txt[] = null; // add a gap each time the `mod:` changes
     }
     $txt[] = $recipe_id;
     $last_mod = explode(':', $recipe_id)[0];
@@ -64,5 +64,5 @@ foreach ($mentioned_recipe_ids as $recipe_id) {
 
 //
 
-echo "::notice::Patchouli is referencing {$mentioned_recipe_ids->count()} recipe ids." . PHP_EOL;
+echo "::notice::{$mentioned_recipe_ids->count()} unique recipe ids found." . PHP_EOL;
 file_put_contents('patchouli_mentioned_recipe_ids.txt', implode(PHP_EOL, $txt) . PHP_EOL);
