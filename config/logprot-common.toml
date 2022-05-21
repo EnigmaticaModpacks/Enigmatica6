@@ -6,8 +6,12 @@
 	#Max distance in blocks(2d) the invulnerability lasts, default: 10
 	#Range: 1 ~ 200
 	maxDistance = 2
+	#Enables the protection for dimension changes too, default: true
+	dimensionprotection = true
+	#Enables the protection for respawning too, default: true
+	respawnprotection = true
 
 [debug]
-	#Wether to enable debug log outputs, default: false
+	#Whether to enable debug log outputs, default: false
 	debugLog = false
 
