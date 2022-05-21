@@ -17,7 +17,7 @@ if [ -f serverstarter-2.2.0.jar ]; then
     fi
     exit 0
 else
-    export URL="https://github.com/EnigmaticaModpacks/ServerStarter/releases/download/v2.2.0/serverstarter-2.2.0.jar"
+    export URL="https://github.com/EnigmaticaModpacks/ServerStarter/releases/download/v2.4.0/serverstarter-2.4.0.jar"
 fi
 echo $URL
 if command -v wget >>/dev/null; then
