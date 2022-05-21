@@ -136,9 +136,10 @@ function New-ManifestJson {
     $mods = [System.Collections.ArrayList]@()
     foreach ($addon in $minecraftInstanceJson.installedAddons) {
         $mods.Add(@{
-                required  = $true
-                projectID = $addon.addonID
-                fileID    = $addon.installedFile.id
+                required    = $true
+                projectID   = $addon.addonID
+                fileID      = $addon.installedFile.id
+                downloadUrl = $addon.installedFile.downloadUrl
             }) > $null
     }
 
