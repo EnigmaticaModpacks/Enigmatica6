@@ -2,11 +2,11 @@
     "name": "hunter",
     "spawnsInBoard": true,
     "objectivePools": [
-        "obj_hunter",
-        "obj_combat"
+        "hunter_objs",
+        "combat_objs"
     ],
     "rewardPools": [
-        "exotichunter",
-        "monsterhunter"
+        "exotichunter_rews",
+        "monsterhunter_rews"
     ]
   }

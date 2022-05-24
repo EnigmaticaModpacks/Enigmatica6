@@ -2,15 +2,15 @@
     "name": "miner",
     "spawnsInBoard": true,
     "objectivePools": [
-        "obj_mining",
-        "obj_utility"
+        "mining_objs",
+        "utility_objs"
     ],
     "rewardPools": [
-        "gems_common",
-        "gems_rare",
-        "gems_epic",
-        "metal_common",
-        "metal_rare",
-        "metal_epic"
+        "gems_common_rews",
+        "gems_rare_rews",
+        "gems_epic_rews",
+        "metal_common_rews",
+        "metal_rare_rews",
+        "metal_epic_rews"
     ]
   }
