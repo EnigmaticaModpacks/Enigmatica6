@@ -1,24 +1,20 @@
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
-        return;
-    }
-    const id_prefix = 'enigmatica:expert/immersivepetroleum/coker/';
+    const id_prefix = 'enigmatica:base/immersivepetroleum/coker/';
 
     const recipes = [
         {
             result: { item: 'immersivepetroleum:petcoke' },
             resultfluid: { tag: 'forge:diesel_sulfur', amount: 27 },
             input: {
-                base_ingredient: { tag: 'forge:bitumen' },
-                count: 2
+                count: 2,
+                base_ingredient: { tag: 'forge:gems/bitumen' }
             },
             inputfluid: { tag: 'minecraft:water', amount: 125 },
-            time: 8,
-            energy: 24000,
-            id: `immersivepetroleum:coking/petcoke`
+            time: 30,
+            energy: 1024,
+            id: 'immersivepetroleum:coking/petcoke'
         }
     ];
-
     recipes.forEach((recipe) => {
         recipe.type = 'immersivepetroleum:coker';
         event.custom(recipe).id(recipe.id);
