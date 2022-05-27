@@ -43,6 +43,26 @@ onEvent('recipes', (event) => {
             replaceTarget: { id: 'minecraft:grindstone' },
             toReplace: 'minecraft:stone_slab',
             replaceWith: '#enigmatica:crafting_slabs'
+        },
+        {
+            replaceTarget: {},
+            toReplace: 'emendatusenigmatica:coke_block',
+            replaceWith: '#forge:storage_blocks/coke'
+        },
+        {
+            replaceTarget: {},
+            toReplace: 'emendatusenigmatica:arcane_block',
+            replaceWith: '#forge:storage_blocks/mana'
+        },
+        {
+            replaceTarget: {},
+            toReplace: 'emendatusenigmatica:sulfur_gem',
+            replaceWith: '#forge:gems/sulfur'
+        },
+        {
+            replaceTarget: {},
+            toReplace: 'emendatusenigmatica:steel_block',
+            replaceWith: '#forge:storage_blocks/steel'
         }
     ];
     event.replaceInput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');
@@ -208,19 +228,28 @@ onEvent('recipes', (event) => {
         event.remove({
             id: `minecraft:${color}_carpet_from_white_carpet`
         });
-        fallback_id(event.shaped(Item.of(`minecraft:${color}_carpet`, 3), ['WW'], {
-            W: `minecraft:${color}_wool`
-        }), id_prefix);
+        fallback_id(
+            event.shaped(Item.of(`minecraft:${color}_carpet`, 3), ['WW'], {
+                W: `minecraft:${color}_wool`
+            }),
+            id_prefix
+        );
 
-        fallback_id(event.shaped(Item.of(`minecraft:${color}_stained_glass_pane`, 8), ['GGG', 'GDG', 'GGG'], {
-            G: 'minecraft:glass_pane',
-            D: dyeTag
-        }), id_prefix);
+        fallback_id(
+            event.shaped(Item.of(`minecraft:${color}_stained_glass_pane`, 8), ['GGG', 'GDG', 'GGG'], {
+                G: 'minecraft:glass_pane',
+                D: dyeTag
+            }),
+            id_prefix
+        );
 
-        fallback_id(event.shaped(Item.of(`minecraft:${color}_stained_glass`, 8), ['GGG', 'GDG', 'GGG'], {
-            G: 'minecraft:glass',
-            D: dyeTag
-        }), id_prefix);
+        fallback_id(
+            event.shaped(Item.of(`minecraft:${color}_stained_glass`, 8), ['GGG', 'GDG', 'GGG'], {
+                G: 'minecraft:glass',
+                D: dyeTag
+            }),
+            id_prefix
+        );
 
         ['stained_glass', 'stained_glass_pane', 'terracotta', 'concrete_powder', 'wool', 'carpet'].forEach(
             (blockName) => {
@@ -233,10 +262,13 @@ onEvent('recipes', (event) => {
                     event.remove({ id: block });
                 }
 
-                fallback_id(event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
-                    S: itemTag,
-                    D: dyeTag
-                }), id_prefix);
+                fallback_id(
+                    event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
+                        S: itemTag,
+                        D: dyeTag
+                    }),
+                    id_prefix
+                );
                 fallback_id(event.shapeless(Item.of(block, 1), [dyeTag, itemTag]), id_prefix);
             }
         );
@@ -263,17 +295,20 @@ onEvent('recipes', (event) => {
             event.shapeless(Item.of(block, 1), [dyeTag, itemTag]).id(`kubejs:${blockName}_${color}`);
         });
 
-        fallback_id(event.shapeless(Item.of(`minecraft:${color}_concrete_powder`, 8), [
-            dyeTag,
-            '#forge:sand',
-            '#forge:sand',
-            '#forge:sand',
-            '#forge:sand',
-            '#forge:gravel',
-            '#forge:gravel',
-            '#forge:gravel',
-            '#forge:gravel'
-        ]), id_prefix);
+        fallback_id(
+            event.shapeless(Item.of(`minecraft:${color}_concrete_powder`, 8), [
+                dyeTag,
+                '#forge:sand',
+                '#forge:sand',
+                '#forge:sand',
+                '#forge:sand',
+                '#forge:gravel',
+                '#forge:gravel',
+                '#forge:gravel',
+                '#forge:gravel'
+            ]),
+            id_prefix
+        );
     });
 
     const alt_material_tag_replacements = [
