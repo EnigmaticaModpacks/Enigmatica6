@@ -40,7 +40,7 @@ onEvent('recipes', (event) => {
         {
             input: ['astralsorcery:infused_wood'],
             output: Item.of('6x astralsorcery:infused_wood_planks'),
-            extraOutput: Item.of('astralsorcery:stardust').chance(0.01),
+            extraOutput: Item.of('astralsorcery:stardust').chance(0.05),
             id: `${id_prefix}infused_wood_planks_from_infused_wood`
         }
     ];
