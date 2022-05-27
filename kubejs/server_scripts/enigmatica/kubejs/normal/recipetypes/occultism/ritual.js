@@ -41,8 +41,8 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'kubejs:craft_miner_marid_irradiated',
             ingredients: [
                 'occultism:magic_lamp_empty',
+                '#forge:storage_blocks/iesnium',
                 Item.of('occultism:iesnium_pickaxe', '{Damage:0]}').weakNBT(),
-                '#forge:storage_blocks/gold',
                 '#forge:storage_blocks/iesnium',
                 '#forge:clusters/fluorite',
                 '#forge:clusters/sulfur',
