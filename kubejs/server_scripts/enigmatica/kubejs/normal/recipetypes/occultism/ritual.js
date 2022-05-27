@@ -32,6 +32,29 @@ onEvent('recipes', (event) => {
             ],
             result: Item.of('kubejs:fisher_foliot', '{rollsPerOperation:3,Damage:0,maxMiningTime:400}'),
             id: `${id_prefix}craft_fisher_foliot`
+        },
+        {
+            ritual_type: 'occultism:craft_miner_spirit',
+            activation_item: 'occultism:book_of_binding_bound_marid',
+            pentacle_id: 'occultism:craft_marid',
+            duration: 120,
+            ritual_dummy: 'kubejs:craft_miner_marid_irradiated',
+            ingredients: [
+                'occultism:magic_lamp_empty',
+                Item.of('occultism:iesnium_pickaxe', '{Damage:0]}').weakNBT(),
+                '#forge:storage_blocks/gold',
+                '#forge:storage_blocks/iesnium',
+                '#forge:clusters/fluorite',
+                '#forge:clusters/sulfur',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium',
+                '#forge:clusters/uranium'
+            ],
+            result: Item.of('kubejs:miner_marid_irradiated', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
+            id: `${id_prefix}miner_marid_irradiated`
         }
     ];
 
