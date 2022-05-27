@@ -36,6 +36,12 @@ onEvent('recipes', (event) => {
             output: Item.of('6x botania:livingwood_planks'),
             extraOutput: Item.of('emendatusenigmatica:wood_dust').chance(0.25),
             id: `${id_prefix}livingwood_planks_from_livingwood`
+        },
+        {
+            input: 'astralsorcery:infused_wood',
+            output: Item.of('6x astralsorcery:infused_wood_planks'),
+            extraOutput: Item.of('astralsorcery:stardust').chance(0.03),
+            id: `${id_prefix}infused_wood_planks_from_infused_wood`
         }
     ];
 
