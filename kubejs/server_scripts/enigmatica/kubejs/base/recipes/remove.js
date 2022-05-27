@@ -84,6 +84,7 @@ onEvent('recipes', (event) => {
         'atum:pumpkin_pie',
 
         'betterendforge:gunpowder_from_sulphur',
+        'betterendforge:ender_block',
 
         'bloodmagic:smelting/ingot_netherite_scrap',
         'bloodmagic:alchemytable/gunpowder',
@@ -240,6 +241,12 @@ onEvent('recipes', (event) => {
         'thermal:storage/sulfur_block',
         'thermal:gunpowder_4',
         'thermal:machine/press/unpacking/press_coal_coke_unpacking',
+        'thermal:machine/press/packing2x2/press_clay_packing',
+        'thermal:machine/press/unpacking/press_clay_unpacking',
+        'thermal:machine/press/packing2x2/press_quartz_packing',
+        'thermal:machine/press/unpacking/press_quartz_unpacking',
+        'thermal:machine/press/packing2x2/press_slag_packing',
+        'thermal:machine/press/unpacking/press_slag_unpacking',
 
         'pneumaticcraft:one_probe_crafting',
 

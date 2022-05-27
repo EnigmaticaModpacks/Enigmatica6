@@ -189,8 +189,118 @@ onEvent('recipes', (event) => {
             input: '9x integrateddynamics:crystalized_chorus_chunk',
             mold: '#thermal:crafting/dies/packing_3x3',
             id_suffix: 'crystalized_chorus_chunk_to_block'
+        },
+
+        {
+            output: '4x minecraft:quartz',
+            input: 'minecraft:quartz_block',
+            mold: '#thermal:crafting/dies/unpacking',
+            id_suffix: 'quartz_block_to_gems'
+        },
+        {
+            output: 'minecraft:quartz_block',
+            input: '4x minecraft:quartz',
+            mold: '#thermal:crafting/dies/packing_2x2',
+            id_suffix: 'quartz_gems_to_block'
+        },
+
+        {
+            output: '4x minecraft:ender_pearl',
+            input: '#forge:storage_blocks/ender',
+            mold: '#thermal:crafting/dies/unpacking',
+            id_suffix: 'ender_pearl_block_to_gems'
+        },
+        {
+            output: 'betterendforge:ender_block',
+            input: '4x #forge:gems/ender',
+            mold: '#thermal:crafting/dies/packing_2x2',
+            id_suffix: 'ender_pearl_gems_to_block'
+        },
+
+        {
+            output: '4x minecraft:glowstone_dust',
+            input: '#forge:storage_blocks/glowstone',
+            mold: '#thermal:crafting/dies/unpacking',
+            id_suffix: 'glowstone_block_to_dust'
+        },
+        {
+            output: 'minecraft:glowstone',
+            input: '4x #forge:dusts/glowstone',
+            mold: '#thermal:crafting/dies/packing_2x2',
+            id_suffix: 'glowstone_dust_to_block'
+        },
+
+        {
+            output: '4x minecraft:clay_ball',
+            input: '#forge:storage_blocks/clay',
+            mold: '#thermal:crafting/dies/unpacking',
+            id_suffix: 'clay_block_to_dust'
+        },
+        {
+            output: 'minecraft:clay',
+            input: '4x #forge:clay',
+            mold: '#thermal:crafting/dies/packing_2x2',
+            id_suffix: 'clay_ball_to_block'
+        },
+
+        {
+            output: '4x thermal:slag',
+            input: '#forge:storage_blocks/slag',
+            mold: '#thermal:crafting/dies/unpacking',
+            id_suffix: 'slag_block_to_slag'
+        },
+        {
+            output: 'thermal:slag_block',
+            input: '4x #forge:slag',
+            mold: '#thermal:crafting/dies/packing_2x2',
+            id_suffix: 'slag_to_slag_block'
+        },
+
+        {
+            output: '4x betterendforge:crystal_shards',
+            input: '#forge:storage_blocks/aurora',
+            mold: '#thermal:crafting/dies/unpacking',
+            id_suffix: 'aurora_block_to_shards'
+        },
+        {
+            output: 'betterendforge:aurora_crystal',
+            input: '4x #forge:shards/aurora',
+            mold: '#thermal:crafting/dies/packing_2x2',
+            id_suffix: 'aurora_shards_to_block'
+        },
+
+        {
+            output: '4x betterendforge:amber_gem',
+            input: '#forge:storage_blocks/amber',
+            mold: '#thermal:crafting/dies/unpacking',
+            id_suffix: 'amber_block_to_gems'
+        },
+        {
+            output: 'betterendforge:amber_block',
+            input: '4x #forge:gems/amber',
+            mold: '#thermal:crafting/dies/packing_2x2',
+            id_suffix: 'amber_gems_to_block'
         }
     ];
+
+    let botania_quartz_types = ['dark', 'mana', 'blaze', 'lavender', 'red', 'elven', 'sunny'];
+
+    botania_quartz_types.forEach((type) => {
+        recipes.push(
+            {
+                output: `4x botania:quartz_${type}`,
+                input: `botania:${type == 'elven' ? 'elf' : type}_quartz`,
+                mold: '#thermal:crafting/dies/unpacking',
+                id_suffix: `${type}_quartz_block_to_gems`
+            },
+            {
+                output: `botania:${type == 'elven' ? 'elf' : type}_quartz`,
+                input: `4x botania:quartz_${type}`,
+                mold: '#thermal:crafting/dies/packing_2x2',
+                id_suffix: `${type}_quartz_gems_to_block`
+            }
+        );
+    });
 
     recipetypes_packing_unpacking = (event, recipe) => {
         // Thermal
