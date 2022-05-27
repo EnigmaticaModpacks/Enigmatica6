@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/immersivepetroleum/coker/';
 
     const recipes = [
         {
