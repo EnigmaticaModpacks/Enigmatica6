@@ -2282,6 +2282,12 @@ const stonecuttables = [
         ],
         onlyAsOutput: [],
         onlyAsInput: []
+    },
+    {
+        name: 'bamboo',
+        stones: ['quark:bamboo_block', 'thermal:bamboo_block'],
+        onlyAsOutput: [],
+        onlyAsInput: []
     }
 ];
 // Colorless Glass
