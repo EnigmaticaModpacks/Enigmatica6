@@ -247,6 +247,7 @@ onEvent('recipes', (event) => {
         'thermal:machine/press/unpacking/press_quartz_unpacking',
         'thermal:machine/press/packing2x2/press_slag_packing',
         'thermal:machine/press/unpacking/press_slag_unpacking',
+        'thermal:compat/industrialforegoing/bottler_essence',
 
         'pneumaticcraft:one_probe_crafting',
 
