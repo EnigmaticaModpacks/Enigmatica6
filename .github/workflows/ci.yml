@@ -11,7 +11,8 @@ on:
   #         - 'master'
 
 jobs:
-  mods:
+  # job
+  instancesync:
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
@@ -27,9 +28,9 @@ jobs:
           key: ${{ github.run.id }}-mods
 
       - run: java -jar InstanceSync.jar
-
+  # job
   server:
-    needs: [mods]
+    needs: [instancesync]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     strategy:
@@ -79,6 +80,7 @@ jobs:
             ./logs
             ./crash-reports
             ./kubejs/exported/recipes
+  # job
   kubejs:
     runs-on: ubuntu-latest
     timeout-minutes: 1
