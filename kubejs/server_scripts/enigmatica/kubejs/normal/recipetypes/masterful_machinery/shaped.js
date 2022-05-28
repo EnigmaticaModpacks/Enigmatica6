@@ -86,6 +86,17 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}industrial_deuterium_plant_fluid_port_fluids_input`
         },
         {
+            output: 'masterfulmachinery:industrial_deuterium_plant_controller',
+            pattern: ['ABA', 'BCB', 'ADA'],
+            key: {
+                A: 'immersiveengineering:concrete_leaded',
+                B: 'mekanism:electrolytic_core',
+                C: '#industrialforegoing:machine_frame/supreme',
+                D: '#forge:circuits/ultimate'
+            },
+            id: `${id_prefix}industrial_deuterium_plant_controller`
+        },
+        {
             output: 'masterfulmachinery:industrial_deuterium_plant_fluid_port_fluids_output',
             pattern: ['BEB', 'ACA', 'BDB'],
             key: {
