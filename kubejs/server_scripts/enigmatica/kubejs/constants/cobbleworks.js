@@ -64,6 +64,8 @@ const generatableStone = [
     'atmospheric:red_arid_sandstone',
     'atmospheric:arid_sandstone',
     'atum:alabaster',
-    'atum:porphyry'
+    'atum:porphyry',
+    'quark:myalite',
+    'quark:dusky_myalite'
 ];
 const generatableBasalt = [];
