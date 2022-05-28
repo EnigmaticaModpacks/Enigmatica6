@@ -25,7 +25,7 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: mods
-          key: ${{ github.run.id }}-mods
+          key: ${{ github.run_id }}-mods
 
       - run: java -jar InstanceSync.jar
   # job
@@ -48,7 +48,7 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: mods
-          key: ${{ github.run.id }}-mods
+          key: ${{ github.run_id }}-mods
 
       - name: Setting mode to ${{ matrix.packmode }}
         run: |
