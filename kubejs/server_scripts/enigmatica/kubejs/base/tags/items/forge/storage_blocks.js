@@ -1,34 +1,35 @@
 onEvent('item.tags', (event) => {
     var storageBlocks = 'forge:storage_blocks';
     event.add(storageBlocks, [
-        'minecraft:glowstone',
+        'architects_palette:ender_pearl_block',
+        'ars_nouveau:mana_gem_block',
+        'astralsorcery:starmetal',
+        'betterendforge:aeternium_block',
+        'betterendforge:amber_block',
+        'betterendforge:aurora_crystal',
+        'betterendforge:ender_block',
+        'betterendforge:terminite_block',
+        'betterendforge:thallasium_block',
+        'bloodmagic:dungeon_metal',
+        'immersiveengineering:coke',
         'immersiveengineering:storage_aluminum',
-        'immersiveengineering:storage_lead',
-        'immersiveengineering:storage_silver',
-        'immersiveengineering:storage_nickel',
-        'immersiveengineering:storage_uranium',
         'immersiveengineering:storage_constantan',
         'immersiveengineering:storage_electrum',
-        'immersiveengineering:coke',
-        'powah:uraninite_block',
-        'occultism:iesnium_block',
+        'immersiveengineering:storage_lead',
+        'immersiveengineering:storage_nickel',
+        'immersiveengineering:storage_silver',
+        'immersiveengineering:storage_uranium',
+        'minecraft:glowstone',
+        'mythicbotany:alfsteel_block',
         'naturesaura:infused_iron_block',
         'naturesaura:tainted_gold_block',
-        'astralsorcery:starmetal',
-        'ars_nouveau:mana_gem_block',
-        'betterendforge:aeternium_block',
-        'betterendforge:terminite_block',
-        'betterendforge:ender_block',
-        'betterendforge:aurora_crystal',
-        'betterendforge:amber_block',
-        'betterendforge:thallasium_block',
-        'powah:energized_steel_block',
-        'mythicbotany:alfsteel_block',
+        'occultism:iesnium_block',
         'powah:blazing_crystal_block',
+        'powah:energized_steel_block',
         'powah:niotic_crystal_block',
-        'powah:spirited_crystal_block',
         'powah:nitro_crystal_block',
-        'architects_palette:ender_pearl_block'
+        'powah:spirited_crystal_block',
+        'powah:uraninite_block'
     ]);
 
     event.get(storageBlocks + '/glowstone').add('minecraft:glowstone');
@@ -60,4 +61,6 @@ onEvent('item.tags', (event) => {
     event.add(storageBlocks + '/redstone', ['#chisel:redstone']);
     event.add(storageBlocks + '/coal', ['#chisel:coal']);
     event.add(storageBlocks + '/glowstone', ['#chipped:glowstone']);
+
+    event.add(storageBlocks + '/hellforged', ['bloodmagic:dungeon_metal']);
 });
