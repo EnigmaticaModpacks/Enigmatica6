@@ -11,7 +11,26 @@ on:
   #         - 'master'
 
 jobs:
+  # job
+  instancesync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - uses: actions/cache@v3
+        with:
+          path: mods
+          key: ${{ github.run_id }}-mods
+
+      - run: java -jar InstanceSync.jar
+  # job
   server:
+    needs: [instancesync]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     strategy:
@@ -26,6 +45,11 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
+      - uses: actions/cache@v3
+        with:
+          path: mods
+          key: ${{ github.run_id }}-mods
+
       - name: Setting mode to ${{ matrix.packmode }}
         run: |
           node .github/actions/ci/packmode.js ${{ matrix.packmode }} > mode.json
@@ -33,7 +57,6 @@ jobs:
 
       - name: Install server
         run: |
-          java -jar InstanceSync.jar
           cp ./automation/settings.cfg ./settings.cfg
           cp ./automation/start-automated-server.sh ./start-automated-server.sh
           pwsh ./automation/remove-client-mods.ps1
@@ -57,6 +80,7 @@ jobs:
             ./logs
             ./crash-reports
             ./kubejs/exported/recipes
+  # job
   kubejs:
     runs-on: ubuntu-latest
     timeout-minutes: 1
