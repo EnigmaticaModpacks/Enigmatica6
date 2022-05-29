@@ -26,32 +26,32 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}flux_point`
             },
             {
-                output: Item.of('powah:blazing_crystal_block'),
+                output: Item.of('16x powah:crystal_blazing'),
                 itemInput: { ingredient: { item: 'quark:blaze_lantern' } },
                 gasInput: { amount: 2, gas: 'mekanism:antimatter' },
                 duration: 500,
-                id: `${id_prefix}blazing_crystal_block`
+                id: `${id_prefix}crystal_blazing`
             },
             {
-                output: Item.of('powah:niotic_crystal_block'),
+                output: Item.of('16x powah:crystal_niotic'),
                 itemInput: { ingredient: { item: 'astralsorcery:celestial_crystal' } },
                 gasInput: { amount: 2, gas: 'mekanism:antimatter' },
                 duration: 500,
-                id: `${id_prefix}niotic_crystal_block`
+                id: `${id_prefix}crystal_niotic`
             },
             {
-                output: Item.of('powah:spirited_crystal_block'),
+                output: Item.of('16x powah:crystal_spirited'),
                 itemInput: { ingredient: { item: 'atum:osiris_godforged_block' } },
                 gasInput: { amount: 2, gas: 'mekanism:antimatter' },
                 duration: 500,
-                id: `${id_prefix}spirited_crystal_block`
+                id: `${id_prefix}crystal_spirited`
             },
             {
-                output: Item.of('powah:nitro_crystal_block'),
+                output: Item.of('16x powah:crystal_nitro'),
                 itemInput: { ingredient: { item: 'bloodmagic:largebloodstonebrick' } },
                 gasInput: { amount: 2, gas: 'mekanism:antimatter' },
                 duration: 500,
-                id: `${id_prefix}nitro_crystal_block`
+                id: `${id_prefix}crystal_nitro`
             }
         ]
     };
