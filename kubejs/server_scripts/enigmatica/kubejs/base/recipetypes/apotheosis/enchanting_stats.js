@@ -160,6 +160,19 @@ onEvent('server.datapack.high_priority', (event) => {
             stats: {
                 rectification: 15
             }
+        },
+        {
+            block: 'supplementaries:book_pile',
+            stats: {
+                maxEterna: 7.5,
+                eterna: 1
+            }
+        },
+        {
+            block: 'eidolon:necrotic_focus',
+            stats: {
+                arcana: 2.5
+            }
         }
     ];
 
