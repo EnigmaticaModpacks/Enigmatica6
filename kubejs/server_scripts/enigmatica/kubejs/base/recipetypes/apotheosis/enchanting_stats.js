@@ -187,6 +187,26 @@ onEvent('server.datapack.high_priority', (event) => {
         });
     });
 
+    atum_aspects.forEach((atum_aspect) => {
+        enchantingBlocks.push(
+            {
+                block: `atum:torch_of_${atum_aspect}`,
+                stats: {
+                    maxEterna: 10,
+                    eterna: 0.5
+                }
+            },
+            {
+                block: `atum:lantern_of_${atum_aspect}`,
+                stats: {
+                    maxEterna: 10,
+                    eterna: 1,
+                    arcana: 1.5
+                }
+            }
+        );
+    });
+
     enchantingBlocks.forEach((enchantingBlock) => {
         event.addJson(`apotheosis:enchanting_stats/${enchantingBlock.block.replace(':', '_')}.json`, enchantingBlock);
     });
