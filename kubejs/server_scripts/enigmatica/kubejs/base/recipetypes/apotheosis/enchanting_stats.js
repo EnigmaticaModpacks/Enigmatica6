@@ -16,8 +16,7 @@ onEvent('server.datapack.high_priority', (event) => {
                 eterna: 10,
                 arcana: 15,
                 clues: 1
-            },
-            json: 'enchanting_stats/mana_pylon'
+            }
         },
         {
             block: 'botania:natura_pylon',
@@ -26,8 +25,7 @@ onEvent('server.datapack.high_priority', (event) => {
                 eterna: 15,
                 arcana: 30,
                 clues: 5
-            },
-            json: 'enchanting_stats/natura_pylon'
+            }
         },
         {
             block: 'botania:gaia_pylon',
@@ -37,8 +35,7 @@ onEvent('server.datapack.high_priority', (event) => {
                 arcana: -30,
                 quanta: 25,
                 rectification: -15
-            },
-            json: 'enchanting_stats/gaia_pylon'
+            }
         },
         {
             block: 'mythicbotany:alfsteel_pylon',
@@ -49,12 +46,91 @@ onEvent('server.datapack.high_priority', (event) => {
                 quanta: 50,
                 clues: -5,
                 rectification: -25
-            },
-            json: 'enchanting_stats/alfsteel_pylon'
+            }
+        },
+        {
+            block: 'astralsorcery:prism',
+            stats: {
+                arcana: 10,
+                clues: 2,
+                rectification: 15
+            }
+        },
+        {
+            block: 'occultism:spirit_attuned_crystal',
+            stats: {
+                arcana: 15,
+                clues: 1,
+                quanta: -15
+            }
+        },
+        {
+            block: 'botania:floating_rosa_arcana',
+            stats: {
+                maxEterna: 30,
+                eterna: 15,
+                arcana: 15
+            }
+        },
+        {
+            block: 'eidolon:candle',
+            stats: {
+                maxEterna: 15,
+                eterna: 0.5,
+                arcana: 5
+            }
+        },
+        {
+            block: 'eidolon:candlestick',
+            stats: {
+                maxEterna: 15,
+                eterna: 0.5,
+                arcana: 5
+            }
+        },
+        {
+            block: 'supplementaries:candle_holder',
+            stats: {
+                maxEterna: 15,
+                eterna: 0.5
+            }
+        },
+        {
+            block: 'eidolon:stone_hand',
+            stats: {
+                maxEterna: 15,
+                eterna: 0.5
+            }
+        },
+        {
+            block: 'eidolon:plinth',
+            stats: {
+                maxEterna: 15,
+                eterna: 0.5
+            }
+        },
+        {
+            block: 'eidolon:straw_effigy',
+            stats: {
+                maxEterna: 15,
+                eterna: 0.5,
+                quanta: 5,
+                rectification: -5
+            }
+        },
+        {
+            block: 'eidolon:unholy',
+            stats: {
+                maxEterna: 15,
+                eterna: 5,
+                arcana: 15,
+                quanta: 15,
+                rectification: -15
+            }
         }
     ];
 
     enchantingBlocks.forEach((enchantingBlock) => {
-        event.addJson(`apotheosis:enchanting_stats/${enchantingBlock.json}.json`, enchantingBlock);
+        event.addJson(`apotheosis:enchanting_stats/${enchantingBlock.block.replace(':', '_')}.json`, enchantingBlock);
     });
 });
