@@ -36,7 +36,7 @@ onEvent('server.datapack.high_priority', (event) => {
                 eterna: 20,
                 arcana: -30,
                 quanta: 25,
-                rectification: 15
+                rectification: -15
             },
             json: 'enchanting_stats/gaia_pylon'
         },
@@ -45,9 +45,10 @@ onEvent('server.datapack.high_priority', (event) => {
             stats: {
                 maxEterna: 50,
                 eterna: 25,
-                arcana: -50,
+                arcana: 50,
                 quanta: 50,
-                clues: -5
+                clues: -5,
+                rectification: -25
             },
             json: 'enchanting_stats/alfsteel_pylon'
         }
