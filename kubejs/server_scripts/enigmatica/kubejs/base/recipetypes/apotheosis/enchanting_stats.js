@@ -176,6 +176,17 @@ onEvent('server.datapack.high_priority', (event) => {
         }
     ];
 
+    colors.forEach((color) => {
+        enchantingBlocks.push({
+            block: `botania:${color}_floating_flower`,
+            stats: {
+                maxEterna: 10,
+                eterna: 1,
+                arcana: 1.5
+            }
+        });
+    });
+
     enchantingBlocks.forEach((enchantingBlock) => {
         event.addJson(`apotheosis:enchanting_stats/${enchantingBlock.block.replace(':', '_')}.json`, enchantingBlock);
     });
