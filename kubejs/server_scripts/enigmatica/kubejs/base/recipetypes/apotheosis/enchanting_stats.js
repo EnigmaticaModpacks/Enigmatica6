@@ -91,25 +91,24 @@ onEvent('server.datapack.high_priority', (event) => {
         {
             block: 'eidolon:stone_hand',
             stats: {
-                maxEterna: 10,
+                maxEterna: 7.5,
                 eterna: 0.5
             }
         },
         {
             block: 'eidolon:plinth',
             stats: {
-                maxEterna: 10,
+                maxEterna: 7.5,
                 eterna: 0.5
             }
         },
         {
             block: 'eidolon:straw_effigy',
             stats: {
-                maxEterna: 10,
+                maxEterna: 7.5,
                 eterna: 5,
                 quanta: 5,
-                rectification: -5,
-                clues: -1
+                rectification: -5
             }
         },
         {
@@ -134,7 +133,7 @@ onEvent('server.datapack.high_priority', (event) => {
         {
             block: 'ars_nouveau:arcane_pedestal',
             stats: {
-                maxEterna: 20,
+                maxEterna: 15,
                 eterna: 1,
                 arcana: 2,
                 quanta: -2
@@ -143,16 +142,16 @@ onEvent('server.datapack.high_priority', (event) => {
         {
             block: 'ars_nouveau:arcane_core',
             stats: {
-                maxEterna: 20,
-                eterna: 6,
+                maxEterna: 15,
+                eterna: 3.5,
                 quanta: 8
             }
         },
         {
             block: 'ars_nouveau:enchanting_apparatus',
             stats: {
-                maxEterna: 20,
-                eterna: 6,
+                maxEterna: 15,
+                eterna: 3.5,
                 quanta: 8
             }
         },
