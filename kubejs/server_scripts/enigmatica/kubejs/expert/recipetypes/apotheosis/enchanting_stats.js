@@ -13,10 +13,9 @@ onEvent('server.datapack.high_priority', (event) => {
     */
     let enchantingBlocks = [];
 
-    let bookshelves = getItemsInTag(Ingredient.of('#forge:bookshelves'));
     bookshelves.forEach((bookshelf) => {
         enchantingBlocks.push({
-            block: bookshelf.id,
+            block: bookshelf,
             stats: {
                 maxEterna: 7.5,
                 eterna: 1
@@ -24,14 +23,13 @@ onEvent('server.datapack.high_priority', (event) => {
         });
     });
 
-    let candles = getItemsInTag(Ingredient.of('#forge:candles'));
     candles.forEach((candle) => {
-        if (candle.id == 'eidolon:candlestick' || candle.id == 'eidolon:candle') {
+        if (candle == 'eidolon:candlestick' || candle == 'eidolon:candle') {
             return;
         }
 
         enchantingBlocks.push({
-            block: candle.id,
+            block: candle,
             stats: {
                 maxEterna: 7.5,
                 eterna: 0.5
