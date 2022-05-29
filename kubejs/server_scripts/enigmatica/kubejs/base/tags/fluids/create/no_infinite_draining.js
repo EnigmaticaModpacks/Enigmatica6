@@ -6,6 +6,7 @@ onEvent('fluid.tags', (event) => {
             /mekanism/,
             /emendatusenigmatica/,
             /kubejs/,
+            /materialis/,
             /chorus/,
             /essence/,
             /meat/,
