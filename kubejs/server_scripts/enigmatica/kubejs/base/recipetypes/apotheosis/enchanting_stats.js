@@ -119,7 +119,7 @@ onEvent('server.datapack.high_priority', (event) => {
             }
         },
         {
-            block: 'eidolon:unholy',
+            block: 'eidolon:unholy_effigy',
             stats: {
                 maxEterna: 15,
                 eterna: 5,
