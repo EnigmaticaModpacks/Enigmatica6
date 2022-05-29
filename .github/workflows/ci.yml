@@ -32,7 +32,7 @@ jobs:
   server:
     needs: [instancesync]
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     strategy:
       fail-fast: false
       matrix:
@@ -70,6 +70,7 @@ jobs:
 
       - run: node .github/actions/ci/log-kubejs-warnings.js
       - run: node .github/actions/ci/kubejs-recipes.js
+      - run: node .github/actions/ci/kubejs-list-hose-pulley-fluids.js
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
@@ -79,7 +80,7 @@ jobs:
           path: |
             ./logs
             ./crash-reports
-            ./kubejs/exported/recipes
+            ./kubejs/exported
   # job
   kubejs:
     runs-on: ubuntu-latest
