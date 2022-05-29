@@ -26,7 +26,7 @@ onEvent('server.datapack.high_priority', (event) => {
 
     let candles = getItemsInTag(Ingredient.of('#forge:candles'));
     candles.forEach((candle) => {
-        if (candle.id == 'eidolon:candlestick' || 'eidolon:candle') {
+        if (candle.id == 'eidolon:candlestick' || candle.id == 'eidolon:candle') {
             return;
         }
 

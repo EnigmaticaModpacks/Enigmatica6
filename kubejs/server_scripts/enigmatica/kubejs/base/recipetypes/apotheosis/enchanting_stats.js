@@ -89,39 +89,33 @@ onEvent('server.datapack.high_priority', (event) => {
             }
         },
         {
-            block: 'supplementaries:candle_holder',
-            stats: {
-                maxEterna: 15,
-                eterna: 0.5
-            }
-        },
-        {
             block: 'eidolon:stone_hand',
             stats: {
-                maxEterna: 17.5,
+                maxEterna: 10,
                 eterna: 0.5
             }
         },
         {
             block: 'eidolon:plinth',
             stats: {
-                maxEterna: 17.5,
+                maxEterna: 10,
                 eterna: 0.5
             }
         },
         {
             block: 'eidolon:straw_effigy',
             stats: {
-                maxEterna: 15,
-                eterna: 0.5,
+                maxEterna: 10,
+                eterna: 5,
                 quanta: 5,
-                rectification: -5
+                rectification: -5,
+                clues: -1
             }
         },
         {
             block: 'eidolon:unholy_effigy',
             stats: {
-                maxEterna: 15,
+                maxEterna: 10,
                 eterna: 5,
                 arcana: 15,
                 quanta: 15,
