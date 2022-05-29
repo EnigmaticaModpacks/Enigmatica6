@@ -98,14 +98,14 @@ onEvent('server.datapack.high_priority', (event) => {
         {
             block: 'eidolon:stone_hand',
             stats: {
-                maxEterna: 15,
+                maxEterna: 17.5,
                 eterna: 0.5
             }
         },
         {
             block: 'eidolon:plinth',
             stats: {
-                maxEterna: 15,
+                maxEterna: 17.5,
                 eterna: 0.5
             }
         },
@@ -126,6 +126,46 @@ onEvent('server.datapack.high_priority', (event) => {
                 arcana: 15,
                 quanta: 15,
                 rectification: -15
+            }
+        },
+        {
+            block: 'ars_nouveau:bookwyrm_lectern',
+            stats: {
+                arcana: 30,
+                quanta: -30,
+                rectification: 30,
+                clues: 3
+            }
+        },
+        {
+            block: 'ars_nouveau:arcane_pedestal',
+            stats: {
+                maxEterna: 20,
+                eterna: 1,
+                arcana: 2,
+                quanta: -2
+            }
+        },
+        {
+            block: 'ars_nouveau:arcane_core',
+            stats: {
+                maxEterna: 20,
+                eterna: 6,
+                quanta: 8
+            }
+        },
+        {
+            block: 'ars_nouveau:enchanting_apparatus',
+            stats: {
+                maxEterna: 20,
+                eterna: 6,
+                quanta: 8
+            }
+        },
+        {
+            block: 'mekanism:block_refined_glowstone',
+            stats: {
+                rectification: 15
             }
         }
     ];
