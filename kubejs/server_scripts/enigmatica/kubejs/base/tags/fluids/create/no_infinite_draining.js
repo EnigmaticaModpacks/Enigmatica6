@@ -42,7 +42,8 @@ onEvent('fluid.tags', (event) => {
             /pneumaticcraft/,
             /sophisticatedbackpacks/,
             /tconstruct/,
-            /thermal/
+            /thermal/,
+            /resourcefulbees/
         ])
         .remove(draining_whitelist);
 
