@@ -507,6 +507,31 @@ onEvent('jei.information', (event) => {
         {
             items: ['naturesaura:birth_spirit'],
             text: [`Obtained by manually breeding animals in high Aura areas.`]
+        },
+        {
+            items: ['create:hose_pulley'],
+            text: [
+                `May be used to pump the following infinitely:`,
+                ` `,
+                `● Lava`,
+                `● Water`,
+                `● Milk`,
+                `● Latex`,
+                `● Sewage`,
+                `● Sludge`,
+                `● Crude Oil`,
+                `● Resin`,
+                `● Sap`,
+                `● Virulent Mix`,
+                `● Builder's Tea`,
+                `● Chocolate`,
+                `● Liquid Chorus`,
+                `● Menril Resin`,
+                `● Blood`,
+                `● Slime`,
+                `● Enderslime`,
+                `● Skyslime`
+            ]
         }
     ];
 
