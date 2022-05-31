@@ -23,29 +23,7 @@ onEvent('fluid.tags', (event) => {
         'undergarden:virulent_mix_source'
     ];
 
-    event
-        .get('create:no_infinite_draining')
-        .add([
-            /astralsorcery/,
-            /cofh_core/,
-            /create/,
-            /decorative_blocks/,
-            /emendatusenigmatica/,
-            /immersiveengineering/,
-            /immersivepetroleum/,
-            /industrialforegoing/,
-            /integrateddynamics/,
-            /kubejs/,
-            /materialis/,
-            /mekanism/,
-            /minecraft/,
-            /pneumaticcraft/,
-            /sophisticatedbackpacks/,
-            /tconstruct/,
-            /thermal/,
-            /resourcefulbees/
-        ])
-        .remove(draining_whitelist);
+    event.get('create:no_infinite_draining').add(/.*/).remove(draining_whitelist);
 
     event.get('create:allow_infinite_draining').add(draining_whitelist);
 });
