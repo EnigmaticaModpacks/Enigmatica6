@@ -47,60 +47,6 @@ onEvent('server.datapack.low_priority', (event) => {
             ]
         },
         {
-            identifier: 'livingwood',
-            recipes: [
-                {
-                    craftable: true,
-                    tier: 1,
-                    sortOrder: 0,
-                    textColor: '#291108'
-                },
-                {
-                    stats: {
-                        'tconstruct:extra': {},
-                        'tconstruct:handle': {
-                            durability: 0.9,
-                            miningSpeed: 1.0,
-                            attackSpeed: 1.1,
-                            attackDamage: 1.0
-                        },
-                        'tconstruct:head': {
-                            durability: 68,
-                            miningSpeed: 2.0,
-                            harvestLevel: 0,
-                            attack: 0.5
-                        }
-                    }
-                },
-                {
-                    default: [
-                        {
-                            name: 'tconstruct:cultivated',
-                            level: 1
-                        }
-                    ]
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        item: 'botania:livingwood_planks'
-                    },
-                    value: 1,
-                    needed: 1,
-                    material: 'enigmatica:livingwood'
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        item: 'botania:livingwood'
-                    },
-                    value: 4,
-                    needed: 1,
-                    material: 'enigmatica:livingwood'
-                }
-            ]
-        },
-        {
             identifier: 'treated_wood',
             recipes: [
                 {
@@ -194,11 +140,11 @@ onEvent('server.datapack.low_priority', (event) => {
                     input: 'tconstruct:stone',
                     fluid: [
                         {
-                            tag: 'tconstruct:molten_iron',
+                            tag: 'forge:molten_iron',
                             amount: 16
                         },
                         {
-                            tag: 'tconstruct:molten_zinc',
+                            tag: 'forge:molten_zinc',
                             amount: 16
                         }
                     ],
@@ -253,7 +199,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_compressed_iron',
+                        tag: 'forge:molten_compressed_iron',
                         amount: 144
                     },
                     temperature: 900,
@@ -319,7 +265,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_infused_iron',
+                        tag: 'forge:molten_infused_iron',
                         amount: 144
                     },
                     temperature: 850,
@@ -345,81 +291,6 @@ onEvent('server.datapack.low_priority', (event) => {
                     leftover: {
                         tag: 'forge:ingots/infused_iron'
                     }
-                }
-            ]
-        },
-        {
-            identifier: 'manasteel',
-            recipes: [
-                {
-                    craftable: false,
-                    tier: 2,
-                    sortOrder: 2,
-                    textColor: '#3287fc'
-                },
-                {
-                    stats: {
-                        'tconstruct:extra': {},
-                        'tconstruct:handle': {
-                            durability: 0.95,
-                            miningSpeed: 1,
-                            attackSpeed: 1.05,
-                            attackDamage: 1.05
-                        },
-                        'tconstruct:head': {
-                            durability: 300,
-                            miningSpeed: 6.5,
-                            harvestLevel: 2,
-                            attack: 2.0
-                        }
-                    }
-                },
-                {
-                    default: [
-                        {
-                            name: 'tconstruct:ductile',
-                            level: 1
-                        }
-                    ]
-                },
-                {
-                    type: 'tconstruct:material_fluid',
-                    fluid: {
-                        name: 'kubejs:molten_manasteel',
-                        amount: 144
-                    },
-                    temperature: 900,
-                    output: 'enigmatica:manasteel'
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:ingots/manasteel'
-                    },
-                    value: 1,
-                    needed: 1,
-                    material: 'enigmatica:manasteel'
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:storage_blocks/manasteel'
-                    },
-                    value: 9,
-                    needed: 1,
-                    material: 'enigmatica:manasteel',
-                    leftover: {
-                        tag: 'forge:ingots/manasteel'
-                    }
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:nuggets/manasteel'
-                    },
-                    value: 1,
-                    needed: 9,
-                    material: 'enigmatica:manasteel'
                 }
             ]
         },
@@ -460,7 +331,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'emendatusenigmatica:molten_thallasium',
+                        tag: 'forge:molten_thallasium',
                         amount: 144
                     },
                     temperature: 825,
@@ -535,7 +406,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        tag: 'tconstruct:molten_tin',
+                        tag: 'forge:molten_tin',
                         amount: 144
                     },
                     temperature: 225,
@@ -610,7 +481,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        tag: 'tconstruct:molten_zinc',
+                        tag: 'forge:molten_zinc',
                         amount: 144
                     },
                     temperature: 420,
@@ -687,7 +558,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     type: 'tconstruct:material_fluid',
                     input: 'enigmatica:energized_steel',
                     fluid: {
-                        name: 'kubejs:molten_blazing',
+                        tag: 'forge:molten_blazing',
                         amount: 144
                     },
                     temperature: 950,
@@ -713,81 +584,6 @@ onEvent('server.datapack.low_priority', (event) => {
                     leftover: {
                         item: 'powah:crystal_blazing'
                     }
-                }
-            ]
-        },
-        {
-            identifier: 'elementium',
-            recipes: [
-                {
-                    craftable: false,
-                    tier: 3,
-                    sortOrder: 1,
-                    textColor: '#ee5bac'
-                },
-                {
-                    stats: {
-                        'tconstruct:extra': {},
-                        'tconstruct:handle': {
-                            durability: 1.05,
-                            miningSpeed: 1.1,
-                            attackSpeed: 0.9,
-                            attackDamage: 1.2
-                        },
-                        'tconstruct:head': {
-                            durability: 720,
-                            miningSpeed: 6.5,
-                            harvestLevel: 3,
-                            attack: 2.0
-                        }
-                    }
-                },
-                {
-                    default: [
-                        {
-                            name: 'tconstruct:temperate',
-                            level: 1
-                        }
-                    ]
-                },
-                {
-                    type: 'tconstruct:material_fluid',
-                    fluid: {
-                        name: 'kubejs:molten_elementium',
-                        amount: 144
-                    },
-                    temperature: 875,
-                    output: 'enigmatica:elementium'
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:ingots/elementium'
-                    },
-                    value: 1,
-                    needed: 1,
-                    material: 'enigmatica:elementium'
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:storage_blocks/elementium'
-                    },
-                    value: 9,
-                    needed: 1,
-                    material: 'enigmatica:elementium',
-                    leftover: {
-                        tag: 'forge:ingots/elementium'
-                    }
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:nuggets/elementium'
-                    },
-                    value: 1,
-                    needed: 9,
-                    material: 'enigmatica:elementium'
                 }
             ]
         },
@@ -828,7 +624,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_energized_steel',
+                        tag: 'forge:molten_energized_steel',
                         amount: 144
                     },
                     temperature: 875,
@@ -894,7 +690,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_sky',
+                        tag: 'forge:molten_sky',
                         amount: 144
                     },
                     temperature: 950,
@@ -948,7 +744,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_terminite',
+                        tag: 'forge:molten_terminite',
                         amount: 144
                     },
                     temperature: 840,
@@ -983,81 +779,6 @@ onEvent('server.datapack.low_priority', (event) => {
                     value: 1,
                     needed: 9,
                     material: 'enigmatica:terminite'
-                }
-            ]
-        },
-        {
-            identifier: 'terrasteel',
-            recipes: [
-                {
-                    craftable: false,
-                    tier: 3,
-                    sortOrder: 0,
-                    textColor: '#38e200'
-                },
-                {
-                    stats: {
-                        'tconstruct:extra': {},
-                        'tconstruct:handle': {
-                            durability: 0.95,
-                            miningSpeed: 1.1,
-                            attackSpeed: 1.1,
-                            attackDamage: 1.0
-                        },
-                        'tconstruct:head': {
-                            durability: 1750,
-                            miningSpeed: 9.0,
-                            harvestLevel: 3,
-                            attack: 4.0
-                        }
-                    }
-                },
-                {
-                    default: [
-                        {
-                            name: 'tconstruct:ductile',
-                            level: 1
-                        }
-                    ]
-                },
-                {
-                    type: 'tconstruct:material_fluid',
-                    fluid: {
-                        name: 'kubejs:molten_terrasteel',
-                        amount: 144
-                    },
-                    temperature: 975,
-                    output: 'enigmatica:terrasteel'
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:ingots/terrasteel'
-                    },
-                    value: 1,
-                    needed: 1,
-                    material: 'enigmatica:terrasteel'
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:storage_blocks/terrasteel'
-                    },
-                    value: 9,
-                    needed: 1,
-                    material: 'enigmatica:terrasteel',
-                    leftover: {
-                        tag: 'forge:ingots/terrasteel'
-                    }
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:nuggets/terrasteel'
-                    },
-                    value: 1,
-                    needed: 9,
-                    material: 'enigmatica:terrasteel'
                 }
             ]
         },
@@ -1099,7 +820,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'kubejs:molten_aeternium',
+                        tag: 'forge:molten_aeternium',
                         amount: 144
                     },
                     temperature: 1250,
@@ -1125,82 +846,6 @@ onEvent('server.datapack.low_priority', (event) => {
                     leftover: {
                         tag: 'forge:ingots/aeternium'
                     }
-                }
-            ]
-        },
-        {
-            identifier: 'alfsteel',
-            recipes: [
-                {
-                    craftable: false,
-                    tier: 4,
-                    sortOrder: 2,
-                    textColor: '#fbb616'
-                },
-                {
-                    stats: {
-                        'tconstruct:extra': {},
-                        'tconstruct:handle': {
-                            durability: 1.0,
-                            miningSpeed: 1.0,
-                            attackSpeed: 1.15,
-                            attackDamage: 1.0
-                        },
-                        'tconstruct:head': {
-                            durability: 2300,
-                            miningSpeed: 9.0,
-                            harvestLevel: 4,
-                            attack: 5.0
-                        }
-                    }
-                },
-                {
-                    default: [
-                        {
-                            name: 'tconstruct:piercing',
-                            level: 1
-                        }
-                    ]
-                },
-                {
-                    type: 'tconstruct:material_fluid',
-                    input: 'enigmatica:terrasteel',
-                    fluid: {
-                        name: 'kubejs:molten_alfsteel',
-                        amount: 144
-                    },
-                    temperature: 1450,
-                    output: 'enigmatica:alfsteel'
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:ingots/alfsteel'
-                    },
-                    value: 1,
-                    needed: 1,
-                    material: 'enigmatica:alfsteel'
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:storage_blocks/alfsteel'
-                    },
-                    value: 9,
-                    needed: 1,
-                    material: 'enigmatica:alfsteel',
-                    leftover: {
-                        tag: 'forge:ingots/alfsteel'
-                    }
-                },
-                {
-                    type: 'tconstruct:material',
-                    ingredient: {
-                        tag: 'forge:nuggets/alfsteel'
-                    },
-                    value: 1,
-                    needed: 9,
-                    material: 'enigmatica:alfsteel'
                 }
             ]
         },
@@ -1241,7 +886,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'emendatusenigmatica:molten_enderium',
+                        tag: 'forge:molten_enderium',
                         amount: 144
                     },
                     temperature: 1450,
@@ -1315,9 +960,9 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     type: 'tconstruct:material_fluid',
-                    input: 'enigmatica:terrasteel',
+                    input: 'materialis:terrasteel',
                     fluid: {
-                        name: 'kubejs:molten_gaia_spirit',
+                        tag: 'forge:molten_gaia_spirit',
                         amount: 144
                     },
                     temperature: 1350,
@@ -1371,7 +1016,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'emendatusenigmatica:molten_lumium',
+                        tag: 'forge:molten_lumium',
                         amount: 144
                     },
                     temperature: 1354,
@@ -1447,7 +1092,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     type: 'tconstruct:material_fluid',
                     input: 'enigmatica:energized_steel',
                     fluid: {
-                        name: 'kubejs:molten_niotic',
+                        tag: 'forge:molten_niotic',
                         amount: 144
                     },
                     temperature: 1250,
@@ -1514,7 +1159,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     type: 'tconstruct:material_fluid',
                     input: 'enigmatica:energized_steel',
                     fluid: {
-                        name: 'kubejs:molten_nitro',
+                        tag: 'forge:molten_nitro',
                         amount: 144
                     },
                     temperature: 1450,
@@ -1580,7 +1225,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     type: 'tconstruct:material_fluid',
                     fluid: {
-                        name: 'emendatusenigmatica:molten_signalum',
+                        tag: 'forge:molten_signalum',
                         amount: 144
                     },
                     temperature: 1272,
@@ -1656,7 +1301,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     type: 'tconstruct:material_fluid',
                     input: 'enigmatica:energized_steel',
                     fluid: {
-                        name: 'kubejs:molten_spirited',
+                        tag: 'forge:molten_spirited',
                         amount: 144
                     },
                     temperature: 1350,

@@ -23,6 +23,7 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations": [
             {
                 "type": "BLOCK",
@@ -39,11 +40,11 @@
         "mainOutputCount": 4,
 
         "secondaryOutput": "refinedstorage:processor_binding",
-        "secondaryOutputWeight": 0.02,
+        "secondaryOutputWeight": 0.05,
         "secondaryOutputCount": 1,
 
         "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
+        "bottleOutputWeight": 0.4,
         "bottleOutputCount": 1,
 
         "mainInputCount": 1
@@ -51,7 +52,7 @@
     "SpawnData": {
         "canSpawnInWorld": true,
         "spawnWeight": 12,
-        "biomeWhitelist": "tag:SWAMP",
+        "biomeWhitelist": "tag:SWAMP,UNDERGARDEN",
         "biomeBlacklist": "tag:NETHER,END",
         "minGroupSize": 2,
         "maxGroupSize": 3,

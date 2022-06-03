@@ -1,0 +1,774 @@
+
+#Basic configuration options
+#	    'Spacing' and 'Separation' values are useful if you want to tweak
+#	    the amount of structures that generate.
+#	    Keep in mind that spacing has to be higher than separation.
+#	    I.e.: shirazPalaceSpacing = 1, shirazPalaceSeparation = 0 will generate the 'Shiraz Palace' on every possible chunk.
+#	    'SpawnpointSeparation', on the other hand, is used to prevent structures from generating near x = 0, z = 0.
+#	    Further customization options are available through datapacks. This includes structure layout, loot and mobs."
+["When Configurations Arise"]
+
+	["When Configurations Arise"."Campsite Structures"]
+
+		["When Configurations Arise"."Campsite Structures"."Illager Campsite Spawning Settings"]
+			#Whether Illager Campsites generate on your worlds or not.
+			illagerCampsiteGenerates = true
+			#Maximum separation between Illager Campsites (in chunks).
+			#Range: 0 ~ 1000000
+			illagerCampsiteSpacing = 60
+			#Minimum spacing between Illager Campsites (in chunks).
+			#Range: 0 ~ 1000000
+			illagerCampsiteSeparation = 30
+			#Number of Jigsaw iterations when generating an Illager Campsite.
+			#Range: 0 ~ 1000000
+			illagerCampsiteSize = 10
+			#Whether Illager Campsites adapt the terrain around them or not.
+			illagerCampsiteTransformsTerrain = true
+			#The point in which Illager Campsites will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			illagerCampsiteSpawnpointSeparation = 300
+			#Whether cartographer villagers generate maps for Illager Campsites or not.
+			illagerCampsiteMapTrades = true
+
+		["When Configurations Arise"."Campsite Structures"."Merchant Campsite Spawning Settings"]
+			#Whether merchant Campsites generate on your worlds or not.
+			merchantCampsiteGenerates = true
+			#Maximum separation between merchant Campsites (in chunks).
+			#Range: 0 ~ 1000000
+			merchantCampsiteSpacing = 60
+			#Minimum spacing between merchant Campsites (in chunks).
+			#Range: 0 ~ 1000000
+			merchantCampsiteSeparation = 40
+			#Number of Jigsaw iterations when generating an merchant Campsite.
+			#Range: 0 ~ 1000000
+			merchantCampsiteSize = 10
+			#Whether merchant Campsites adapt the terrain around them or not.
+			merchantCampsiteTransformsTerrain = true
+			#The point in which merchant Campsites will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			merchantCampsiteSpawnpointSeparation = 1
+			#Whether cartographer vmerchants generate maps for merchant Campsites or not.
+			merchantCampsiteMapTrades = true
+
+	["When Configurations Arise"."Fortified Structures"]
+
+		["When Configurations Arise"."Fortified Structures"."Illager Castle Spawning Settings"]
+			#Whether Illager Castles generate on your worlds or not.
+			illagerCastleGenerates = false
+			#Maximum separation between Illager Castles (in chunks).
+			#Range: 0 ~ 1000000
+			illagerCastleSpacing = 160
+			#Minimum spacing between Illager Castles (in chunks).
+			#Range: 0 ~ 1000000
+			illagerCastleSeparation = 60
+			#Number of Jigsaw iterations when generating an Illager Castle.
+			#Range: 0 ~ 1000000
+			illagerCastleSize = 10
+			#Whether Illager Castles adapt the terrain around them or not.
+			illagerCastleTransformsTerrain = true
+			#The point in which Illager Castles will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			illagerCastleSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Illager Castles or not.
+			illagerCastleMapTrades = true
+
+		["When Configurations Arise"."Fortified Structures"."Illager Fort Spawning Settings"]
+			#Whether Illager Forts generate on your worlds or not.
+			illagerFortGenerates = true
+			#Maximum separation between Illager Forts (in chunks).
+			#Range: 0 ~ 1000000
+			illagerFortSpacing = 160
+			#Minimum spacing between Illager Forts (in chunks).
+			#Range: 0 ~ 1000000
+			illagerFortSeparation = 60
+			#Number of Jigsaw iterations when generating an Illager Fort.
+			#Range: 0 ~ 1000000
+			illagerFortSize = 10
+			#Whether Illager Forts adapt the terrain around them or not.
+			illagerFortTransformsTerrain = true
+			#The point in which Illager Forts will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			illagerFortSpawnpointSeparation = 500
+			#Whether cartographer villagers generate maps for Illager Forts or not.
+			illagerFortMapTrades = true
+
+		["When Configurations Arise"."Fortified Structures"."Illager Hall Spawning Settings"]
+			#Whether Illager Halls generate on your worlds or not.
+			illagerHallGenerates = false
+			#Maximum separation between Illager Halls (in chunks).
+			#Range: 0 ~ 1000000
+			illagerHallSpacing = 230
+			#Minimum spacing between Illager Halls (in chunks).
+			#Range: 0 ~ 1000000
+			illagerHallSeparation = 90
+			#Number of Jigsaw iterations when generating an Illager Hall.
+			#Range: 0 ~ 1000000
+			illagerHallSize = 10
+			#Whether Illager Halls adapt the terrain around them or not.
+			illagerHallTransformsTerrain = false
+			#The point in which Illager Halls will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			illagerHallSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Illager Halls or not.
+			illagerHallMapTrades = true
+
+		["When Configurations Arise"."Fortified Structures"."Abandoned Temple Spawning Settings"]
+			#Whether Abandoned Temples generate on your world or not.
+			abandonedTempleGenerates = true
+			#Maximum separation between Abandoned Temples (in chunks).
+			#Range: 0 ~ 1000000
+			abandonedTempleSpacing = 30
+			#Minimum spacing between Abandoned Temples (in chunks).
+			#Range: 0 ~ 1000000
+			abandonedTempleSeparation = 20
+			#Number of Jigsaw iterations when generating an Abandoned Temple.
+			#Range: 0 ~ 1000000
+			abandonedTempleSize = 30
+			#Whether Abandoned Temples adapt the terrain around them or not.
+			abandonedTempleTransformsTerrain = true
+			#The point in which Abandoned Temples will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			abandonedTempleSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Abandoned Temples or not.
+			abandonedTempleMapTrades = true
+
+		["When Configurations Arise"."Fortified Structures"."Thornborn Towers Spawning Settings"]
+			#Whether Thornborn Towers generate on your world or not.
+			thornbornTowersGenerates = true
+			#Maximum separation between Thornborn Towers (in chunks).
+			#Range: 0 ~ 1000000
+			thornbornTowersSpacing = 80
+			#Minimum spacing between Thornborn Towers (in chunks).
+			#Range: 0 ~ 1000000
+			thornbornTowersSeparation = 70
+			#Number of Jigsaw iterations when generating an Thornborn Towers.
+			#Range: 0 ~ 1000000
+			thornbornTowersSize = 50
+			#Whether Thornborn Towerss adapt the terrain around them or not.
+			thornbornTowersTransformsTerrain = false
+			#The point in which Thornborn Towers will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			thornbornTowersSpawnpointSeparation = 500
+			#Whether cartographer villagers generate maps for Thornborn Towers or not.
+			thornbornTowersMapTrades = true
+
+		["When Configurations Arise"."Fortified Structures"."Monastery Spawning Settings"]
+			#Whether Monasteries generate on your worlds or not.
+			monasteryGenerates = true
+			#Maximum separation between Monasteries (in chunks).
+			#Range: 0 ~ 1000000
+			monasterySpacing = 150
+			#Minimum spacing between Monasteries (in chunks).
+			#Range: 0 ~ 1000000
+			monasterySeparation = 90
+			#Number of Jigsaw iterations when generating a Monastery.
+			#Range: 0 ~ 1000000
+			monasterySize = 8
+			#Whether Monasteries adapt the terrain around them or not.
+			monasteryTransformsTerrain = true
+			#The point in which Monasteries will start spawning.,This is based around X = 0, Z = 0
+			#Range: 0 ~ 1000000
+			monasterySpawnpointSeparation = 100
+			#Whether cartographer villagers generate maps for Monasteries or not.
+			monasteryMapTrades = true
+
+	["When Configurations Arise"."Enigmatic Structures"]
+
+		["When Configurations Arise"."Enigmatic Structures"."Lighthouse Spawning Settings"]
+			#Whether Lighthouses generate on your worlds or not.
+			lighthouseGenerates = true
+			#Maximum separation between Lighthouse (in chunks).
+			#Range: 0 ~ 1000000
+			lighthouseSpacing = 100
+			#Minimum spacing between Lighthouses (in chunks).
+			#Range: 0 ~ 1000000
+			lighthouseSeparation = 90
+			#Number of Jigsaw iterations when generating a Lighthouse.
+			#Range: 0 ~ 1000000
+			lighthouseSize = 10
+			#Whether Lighthouses adapt the terrain around them or not.
+			lighthouseTransformsTerrain = true
+			#The point in which Lighthouses will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			lighthouseSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Lighthouses or not.
+			lighthouseMapTrades = true
+
+		["When Configurations Arise"."Enigmatic Structures"."Small Blimp Spawning Settings"]
+			#Whether Small Blimps generate on your worlds or not.
+			smallBlimpGenerates = true
+			#Maximum separation between Small Blimps (in chunks).
+			#Range: 0 ~ 1000000
+			smallBlimpSpacing = 80
+			#Minimum spacing between Small Blimps (in chunks).
+			#Range: 0 ~ 1000000
+			smallBlimpSeparation = 60
+			#Number of Jigsaw iterations when generating an Small Blimp.
+			#Range: 0 ~ 1000000
+			smallBlimpSize = 50
+			#Whether Small Blimps adapt the terrain around them or not.
+			smallBlimpTransformsTerrain = false
+			#The point in which Small Blimps will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			smallBlimpSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Small Blimps or not.
+			smallBlimpMapTrades = true
+
+	["When Configurations Arise"."Fungi Structures"]
+
+		["When Configurations Arise"."Fungi Structures"."Mushroom Village Spawning Settings"]
+			#Whether Mushroom Villages generate on your worlds or not.
+			mushroomVillageGenerates = true
+			#Maximum separation between Mushroom Villages (in chunks).
+			#Range: 0 ~ 1000000
+			mushroomVillageSpacing = 60
+			#Minimum spacing between Mushroom Villages (in chunks).
+			#Range: 0 ~ 1000000
+			mushroomVillageSeparation = 20
+			#Number of Jigsaw iterations when generating a Mushroom Village.
+			#Range: 0 ~ 1000000
+			mushroomVillageSize = 6
+			#Whether Mushroom Villages adapt the terrain around them or not.
+			mushroomVillageTransformsTerrain = true
+			#The point in which Mushroom Villages will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			mushroomVillageSpawnpointSeparation = 800
+			#Whether cartographer villagers generate maps for Mushroom Villages or not.
+			mushroomVillageMapTrades = true
+
+		["When Configurations Arise"."Fungi Structures"."Mushroom Mines Spawning Settings"]
+			#Whether Mushroom Mines generate on your worlds or not.
+			mushroomMinesGenerates = false
+			#Maximum separation between Mushroom Mines (in chunks).
+			#Range: 0 ~ 1000000
+			mushroomMinesSpacing = 80
+			#Minimum spacing between Mushroom Mines (in chunks).
+			#Range: 0 ~ 1000000
+			mushroomMinesSeparation = 40
+			#Number of Jigsaw iterations when generating a Mushroom Mine.
+			#Range: 0 ~ 1000000
+			mushroomMinesSize = 50
+			#Whether Mushroom Mines adapt the terrain around them or not.
+			mushroomMinesTransformsTerrain = true
+			#The point in which Mushroom Mines will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			mushroomMinesSpawnpointSeparation = 800
+			#Whether cartographer villagers generate maps for Mushroom Mines or not.
+			mushroomMinesMapTrades = true
+
+		["When Configurations Arise"."Fungi Structures"."Mushroom House Spawning Settings"]
+			#Whether Mushroom House generate on your worlds or not.
+			mushroomHouseGenerates = true
+			#Maximum separation between Mushroom House (in chunks).
+			#Range: 0 ~ 1000000
+			mushroomHouseSpacing = 80
+			#Minimum spacing between Mushroom House (in chunks).
+			#Range: 0 ~ 1000000
+			mushroomHouseSeparation = 40
+			#Number of Jigsaw iterations when generating a Mushroom House.
+			#Range: 0 ~ 1000000
+			mushroomHouseSize = 10
+			#Whether Mushroom House adapt the terrain around them or not.
+			mushroomHouseTransformsTerrain = false
+			#The point in which Mushroom House will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			mushroomHouseSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Mushroom House or not.
+			mushroomHouseMapTrades = false
+
+		["When Configurations Arise"."Fungi Structures"."Giant Mushroom Spawning Settings"]
+			#Whether Giant Mushroom generate on your worlds or not.
+			giantMushroomGenerates = true
+			#Maximum separation between Giant Mushrooms (in chunks).
+			#Range: 0 ~ 1000000
+			giantMushroomSpacing = 80
+			#Minimum spacing between Giant Mushrooms (in chunks).
+			#Range: 0 ~ 1000000
+			giantMushroomSeparation = 40
+			#Number of Jigsaw iterations when generating a Giant Mushroom.
+			#Range: 0 ~ 1000000
+			giantMushroomSize = 10
+			#Whether Giant Mushroom adapt the terrain around them or not.
+			giantMushroomTransformsTerrain = false
+			#The point in which Giant Mushroom will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			giantMushroomSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Giant Mushroom or not.
+			giantMushroomMapTrades = false
+
+	["When Configurations Arise"."Prairie Structures"]
+
+		["When Configurations Arise"."Prairie Structures"."Small Prairie House Spawning Settings"]
+			#Whether Small Prairie Houses generate on your worlds or not.
+			smallPrairieHouseGenerates = true
+			#Maximum separation between Small Prairie Houses (in chunks).
+			#Range: 0 ~ 1000000
+			smallPrairieHouseSpacing = 25
+			#Minimum spacing between Small Prairie Houses (in chunks).
+			#Range: 0 ~ 1000000
+			smallPrairieHouseSeparation = 10
+			#Number of Jigsaw iterations when generating a Small Prairie House.
+			#Range: 0 ~ 1000000
+			smallPrairieHouseSize = 10
+			#Whether Small Prairie Houses adapt the terrain around them or not.
+			smallPrairieHouseTransformsTerrain = true
+			#The point in which Small Prairie Houses will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			smallPrairieHouseSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Small Prairie Houses or not.
+			smallPrairieHouseMapTrades = false
+
+		["When Configurations Arise"."Prairie Structures"."Illager Windmill Spawning Settings"]
+			#Whether Illager Windmills generate on your worlds or not.
+			illagerWindmillGenerates = true
+			#Maximum separation between Illager Windmills (in chunks).
+			#Range: 0 ~ 1000000
+			illagerWindmillSpacing = 50
+			#Minimum spacing between Illager Windmills (in chunks).
+			#Range: 0 ~ 1000000
+			illagerWindmillSeparation = 45
+			#Number of Jigsaw iterations when generating a Illager Windmill.
+			#Range: 0 ~ 1000000
+			illagerWindmillSize = 5
+			#Whether Illager Windmills adapt the terrain around them or not.
+			illagerWindmillTransformsTerrain = false
+			#The point in which Illager Windmills will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			illagerWindmillSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Illager Windmills or not.
+			illagerWindmillMapTrades = false
+
+		["When Configurations Arise"."Prairie Structures"."Fishing Hut Spawning Settings"]
+			#Whether Fishing Huts generate on your worlds or not.
+			fishingHutGenerates = true
+			#Maximum separation between Fishing Huts (in chunks).
+			#Range: 0 ~ 1000000
+			fishingHutSpacing = 20
+			#Minimum spacing between Fishing Huts (in chunks).
+			#Range: 0 ~ 1000000
+			fishingHutSeparation = 5
+			#Number of Jigsaw iterations when generating a Fishing Hut.
+			#Range: 0 ~ 1000000
+			fishingHutSize = 10
+			#Whether Fishing Huts adapt the terrain around them or not.
+			fishingHutTransformsTerrain = true
+			#The point in which Fishing Huts will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			fishingHutSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Fishing Huts or not.
+			fishingHutMapTrades = false
+
+		["When Configurations Arise"."Prairie Structures"."Coliseum Spawning Settings"]
+			#Whether Coliseums generate on your worlds or not.
+			coliseumGenerates = true
+			#Maximum separation between Coliseums (in chunks).
+			#Range: 0 ~ 1000000
+			coliseumSpacing = 240
+			#Minimum spacing between Coliseums (in chunks).
+			#Range: 0 ~ 1000000
+			coliseumSeparation = 200
+			#Number of Jigsaw iterations when generating a Coliseum.
+			#Range: 0 ~ 1000000
+			coliseumSize = 10
+			#Whether Coliseums adapt the terrain around them or not.
+			coliseumTransformsTerrain = true
+			#The point in which Coliseums will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			coliseumSpawnpointSeparation = 1000
+			#Whether cartographer villagers generate maps for Coliseums or not.
+			coliseumMapTrades = true
+
+		["When Configurations Arise"."Prairie Structures"."Wishing Well Spawning Settings"]
+			#Whether Wishing Wells generate on your worlds or not.
+			wishingWellGenerates = true
+			#Maximum separation between Wishing Wells (in chunks).
+			#Range: 0 ~ 1000000
+			wishingWellSpacing = 40
+			#Minimum spacing between Wishing Wells (in chunks).
+			#Range: 0 ~ 1000000
+			wishingWellSeparation = 30
+			#Number of Jigsaw iterations when generating a Wishing Well.
+			#Range: 0 ~ 1000000
+			wishingWellSize = 10
+			#Whether Wishing Wells adapt the terrain around them or not.
+			wishingWellTransformsTerrain = false
+			#The point in which Wishing Wells will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			wishingWellSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Wishing Wells or not.
+			wishingWellMapTrades = false
+
+	["When Configurations Arise"."Haunted Structures"]
+
+		["When Configurations Arise"."Haunted Structures"."Infested Temple Spawning Settings"]
+			#Whether Infested Temples generate on your worlds or not.
+			infestedTempleGenerates = false
+			#Maximum separation between Infested Temples (in chunks).
+			#Range: 0 ~ 1000000
+			infestedTempleSpacing = 140
+			#Minimum spacing between Infested Temples (in chunks).
+			#Range: 0 ~ 1000000
+			infestedTempleSeparation = 100
+			#Number of Jigsaw iterations when generating an Infested Temple.
+			#Range: 0 ~ 1000000
+			infestedTempleSize = 50
+			#Whether Infested Temples adapt the terrain around them or not.
+			infestedTempleTransformsTerrain = false
+			#The point in which Infested Temples will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			infestedTempleSpawnpointSeparation = 1000
+			#Whether cartographer villagers generate maps for Infested Temples or not.
+			infestedTempleMapTrades = true
+
+		["When Configurations Arise"."Haunted Structures"."Plague Asylum Spawning Settings"]
+			#Whether Plague Asylums generate on your worlds or not.
+			plagueAsylumGenerates = false
+			#Maximum separation between Plague Asylums (in chunks).
+			#Range: 0 ~ 1000000
+			plagueAsylumSpacing = 240
+			#Minimum spacing between Plague Asylums (in chunks).
+			#Range: 0 ~ 1000000
+			plagueAsylumSeparation = 200
+			#Number of Jigsaw iterations when generating a Plague Asylum.
+			#Range: 0 ~ 1000000
+			plagueAsylumSize = 20
+			#Whether Plague Asylums adapt the terrain around them or not.
+			plagueAsylumTransformsTerrain = false
+			#The point in which Plague Asylums will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			plagueAsylumSpawnpointSeparation = 600
+			#Whether cartographer villagers generate maps for Plague Asylums or not.
+			plagueAsylumMapTrades = true
+
+	["When Configurations Arise"."Eerie Structures"]
+
+		["When Configurations Arise"."Eerie Structures"."Heavenly Rider Spawning Settings"]
+			#Whether Heavenly Riders generate on your worlds or not.
+			heavenlyRiderGenerates = false
+			#Maximum separation between Heavenly Riders (in chunks).
+			#Range: 0 ~ 1000000
+			heavenlyRiderSpacing = 180
+			#Minimum spacing between Heavenly Riders (in chunks).
+			#Range: 0 ~ 1000000
+			heavenlyRiderSeparation = 160
+			#Number of Jigsaw iterations when generating an Heavenly Rider.
+			#Range: 0 ~ 1000000
+			heavenlyRiderSize = 20
+			#Whether Heavenly Riders adapt the terrain around them or not.
+			heavenlyRiderTransformsTerrain = false
+			#The point in which Heavenly Riders will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			heavenlyRiderSpawnpointSeparation = 500
+			#Whether cartographer villagers generate maps for Heavenly Riders or not.
+			heavenlyRiderMapTrades = true
+
+		["When Configurations Arise"."Eerie Structures"."Heavenly Conqueror Spawning Settings"]
+			#Whether Heavenly Conquerors generate on your worlds or not.
+			heavenlyConquerorGenerates = false
+			#Maximum separation between Heavenly Conquerors (in chunks).
+			#Range: 0 ~ 1000000
+			heavenlyConquerorSpacing = 230
+			#Minimum spacing between Heavenly Conquerors (in chunks).
+			#Range: 0 ~ 1000000
+			heavenlyConquerorSeparation = 190
+			#Number of Jigsaw iterations when generating an Heavenly Conqueror.
+			#Range: 0 ~ 1000000
+			heavenlyConquerorSize = 20
+			#Whether Heavenly Conquerors adapt the terrain around them or not.
+			heavenlyConquerorTransformsTerrain = false
+			#The point in which Heavenly Conquerors will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			heavenlyConquerorSpawnpointSeparation = 800
+			#Whether cartographer villagers generate maps for Heavenly Conquerors or not.
+			heavenlyConquerorMapTrades = true
+
+		["When Configurations Arise"."Eerie Structures"."Heavenly Challenger Spawning Settings"]
+			#Whether Heavenly Challengers generate on your worlds or not.
+			heavenlyChallengerGenerates = false
+			#Maximum separation between Heavenly Challengers (in chunks).
+			#Range: 0 ~ 1000000
+			heavenlyChallengerSpacing = 340
+			#Minimum spacing between Heavenly Challengers (in chunks).
+			#Range: 0 ~ 1000000
+			heavenlyChallengerSeparation = 290
+			#Number of Jigsaw iterations when generating an Heavenly Challenger.
+			#Range: 0 ~ 1000000
+			heavenlyChallengerSize = 20
+			#Whether Heavenly Challengers adapt the terrain around them or not.
+			heavenlyChallengerTransformsTerrain = false
+			#The point in which Heavenly Challengers will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			heavenlyChallengerSpawnpointSeparation = 1200
+			#Whether cartographer villagers generate maps for Heavenly Challengers or not.
+			heavenlyChallengerMapTrades = true
+
+		["When Configurations Arise"."Eerie Structures"."Aviary Spawning Settings"]
+			#Whether Aviaries generate on your worlds or not.
+			aviaryGenerates = true
+			#Maximum separation between Aviaries (in chunks).
+			#Range: 0 ~ 1000000
+			aviarySpacing = 140
+			#Minimum spacing between Aviaries (in chunks).
+			#Range: 0 ~ 1000000
+			aviarySeparation = 110
+			#Number of Jigsaw iterations when generating an Aviary.
+			#Range: 0 ~ 1000000
+			aviarySize = 20
+			#Whether Aviaries adapt the terrain around them or not.
+			aviaryTransformsTerrain = false
+			#The point in which Aviaries will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			aviarySpawnpointSeparation = 500
+			#Whether cartographer villagers generate maps for Aviaries or not.
+			aviaryMapTrades = true
+
+	["When Configurations Arise"."Underworld Structures"]
+
+		["When Configurations Arise"."Underworld Structures"."Mining System Spawning Settings"]
+			#Whether Mining Systems generate on your worlds or not.
+			miningSystemGenerates = false
+			#Maximum separation between Mining Systems (in chunks).
+			#Range: 0 ~ 1000000
+			miningSystemSpacing = 90
+			#Minimum spacing between Mining Systems (in chunks).
+			#Range: 0 ~ 1000000
+			miningSystemSeparation = 60
+			#Number of Jigsaw iterations when generating an Mining System.
+			#Range: 0 ~ 1000000
+			miningSystemSize = 20
+			#Whether Mining Systems adapt the terrain around them or not.
+			miningSystemTransformsTerrain = false
+			#The point in which Mining Systems will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			miningSystemSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Mining Systems or not.
+			miningSystemMapTrades = true
+
+		["When Configurations Arise"."Underworld Structures"."Scorched Mines Spawning Settings"]
+			#Whether Scorched Mines generate on your worlds or not.
+			scorchedMinesGenerates = false
+			#Maximum separation between Scorched Mines (in chunks).
+			#Range: 0 ~ 1000000
+			scorchedMinesSpacing = 120
+			#Minimum spacing between Scorched Mines (in chunks).
+			#Range: 0 ~ 1000000
+			scorchedMinesSeparation = 90
+			#Number of Jigsaw iterations when generating an Scorched Mines.
+			#Range: 0 ~ 1000000
+			scorchedMinesSize = 12
+			#Whether Scorched Mines adapt the terrain around them or not.
+			scorchedMinesTransformsTerrain = false
+			#The point in which Scorched Mines will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			scorchedMinesSpawnpointSeparation = 500
+			#Whether cartographer villagers generate maps for Scorched Mines or not.
+			scorchedMinesMapTrades = true
+
+		["When Configurations Arise"."Underworld Structures"."Foundry Spawning Settings"]
+			#Whether Foundries generate on your worlds or not.
+			foundryGenerates = true
+			#Maximum separation between Foundries (in chunks).
+			#Range: 0 ~ 1000000
+			foundrySpacing = 120
+			#Minimum spacing between Foundries (in chunks).
+			#Range: 0 ~ 1000000
+			foundrySeparation = 40
+			#Number of Jigsaw iterations when generating an Foundry.
+			#Range: 0 ~ 1000000
+			foundrySize = 20
+			#Whether Foundries adapt the terrain around them or not.
+			foundryTransformsTerrain = true
+			#The point in which Foundries will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			foundrySpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Foundries or not.
+			foundryMapTrades = true
+
+	["When Configurations Arise"."Aquatic Structures"]
+
+		["When Configurations Arise"."Aquatic Structures"."Undead Pirate Ship Spawning Settings"]
+			#Whether Undead Pirate Ships generate on your worlds or not.
+			undeadPirateShipGenerates = true
+			#Maximum separation between Undead Pirate Ships (in chunks).
+			#Range: 0 ~ 1000000
+			undeadPirateShipSpacing = 60
+			#Minimum spacing between Undead Pirate Ships (in chunks).
+			#Range: 0 ~ 1000000
+			undeadPirateShipSeparation = 40
+			#Number of Jigsaw iterations when generating a Undead Pirate Ships.
+			#Range: 0 ~ 1000000
+			undeadPirateShipSize = 10
+			#Whether Undead Pirate Ships adapt the terrain around them or not.
+			undeadPirateShipTransformsTerrain = false
+			#The point in which Undead Pirate Ships will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			undeadPirateShipSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Undead Pirate Ships or not.
+			undeadPirateShipMapTrades = true
+
+		["When Configurations Arise"."Aquatic Structures"."Thypon Spawning Settings"]
+			#Whether Thypons generate on your worlds or not.
+			typhonGenerates = true
+			#Maximum separation between Thypons (in chunks).
+			#Range: 0 ~ 1000000
+			typhonSpacing = 60
+			#Minimum spacing between Thypons (in chunks).
+			#Range: 0 ~ 1000000
+			typhonSeparation = 50
+			#Number of Jigsaw iterations when generating a Thypons.
+			#Range: 0 ~ 1000000
+			typhonSize = 10
+			#Whether Thypons adapt the terrain around them or not.
+			typhonTransformsTerrain = false
+			#The point in which Thypons will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			typhonSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Thypons or not.
+			typhonMapTrades = true
+
+		["When Configurations Arise"."Aquatic Structures"."Illager Corsair Spawning Settings"]
+			#Whether Illager Corsairs generate on your worlds or not.
+			illagerCorsairGenerates = true
+			#Maximum separation between Illager Corsairs (in chunks).
+			#Range: 0 ~ 1000000
+			illagerCorsairSpacing = 64
+			#Minimum spacing between Illager Corsairs (in chunks).
+			#Range: 0 ~ 1000000
+			illagerCorsairSeparation = 48
+			#Number of Jigsaw iterations when generating a Illager Corsairs.
+			#Range: 0 ~ 1000000
+			illagerCorsairSize = 10
+			#Whether Illager Corsairs adapt the terrain around them or not.
+			illagerCorsairTransformsTerrain = false
+			#The point in which Illager Corsairs will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			illagerCorsairSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Illager Corsairs or not.
+			illagerCorsairMapTrades = true
+
+		["When Configurations Arise"."Aquatic Structures"."Illager Galley Spawning Settings"]
+			#Whether Illager Galleys generate on your worlds or not.
+			illagerGalleyGenerates = true
+			#Maximum separation between Illager Galleys (in chunks).
+			#Range: 0 ~ 1000000
+			illagerGalleySpacing = 50
+			#Minimum spacing between Illager Galleys (in chunks).
+			#Range: 0 ~ 1000000
+			illagerGalleySeparation = 30
+			#Number of Jigsaw iterations when generating a Illager Galleys.
+			#Range: 0 ~ 1000000
+			illagerGalleySize = 10
+			#Whether Illager Galleys adapt the terrain around them or not.
+			illagerGalleyTransformsTerrain = false
+			#The point in which Illager Galleys will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			illagerGalleySpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Illager Galleys or not.
+			illagerGalleyMapTrades = true
+
+	["When Configurations Arise"."Bandit Structures"]
+
+		["When Configurations Arise"."Bandit Structures"."Bandit Village Spawning Settings"]
+			#Whether Bandit Villages generate on your worlds or not.
+			banditVillageGenerates = true
+			#Maximum separation between Bandit Villages (in chunks).
+			#Range: 0 ~ 1000000
+			banditVillageSpacing = 45
+			#Minimum spacing between Bandit Villages (in chunks).
+			#Range: 0 ~ 1000000
+			banditVillageSeparation = 35
+			#Number of Jigsaw iterations when generating a Bandit Village.
+			#Range: 0 ~ 1000000
+			banditVillageSize = 13
+			#Whether Bandit Villages adapt the terrain around them or not.
+			banditVillageTransformsTerrain = true
+			#The point in which Bandit Villages will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			banditVillageSpawnpointSeparation = 1
+			#Whether cartographer villagers generate maps for Bandit Villages or not.
+			banditVillageMapTrades = true
+
+		["When Configurations Arise"."Bandit Structures"."Bandit Towers Spawning Settings"]
+			#Whether Bandit Towerss generate on your worlds or not.
+			banditTowersGenerates = true
+			#Maximum separation between Bandit Towerss (in chunks).
+			#Range: 0 ~ 1000000
+			banditTowersSpacing = 45
+			#Minimum spacing between Bandit Towers (in chunks).
+			#Range: 0 ~ 1000000
+			banditTowersSeparation = 35
+			#Number of Jigsaw iterations when generating Bandit Towers.
+			#Range: 0 ~ 1000000
+			banditTowersSize = 50
+			#Whether Bandit Towerss adapt the terrain around them or not.
+			banditTowersTransformsTerrain = false
+			#The point in which Bandit Towers will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			banditTowersSpawnpointSeparation = 1
+			#Whether cartographer towersrs generate maps for Bandit Towers or not.
+			banditTowersMapTrades = true
+
+	["When Configurations Arise"."Desertic Structures"]
+
+		["When Configurations Arise"."Desertic Structures"."Ceryneian Hind Spawning Settings"]
+			#Whether Ceryneian Hinds generate on your worlds or not.
+			ceryneianHindGenerates = true
+			#Maximum separation between Ceryneian Hinds (in chunks).
+			#Range: 0 ~ 1000000
+			ceryneianHindSpacing = 80
+			#Minimum spacing between Ceryneian Hinds (in chunks).
+			#Range: 0 ~ 1000000
+			ceryneianHindSeparation = 70
+			#Number of Jigsaw iterations when generating a Ceryneian Hind.
+			#Range: 0 ~ 1000000
+			ceryneianHindSize = 10
+			#Whether Ceryneian Hinds adapt the terrain around them or not.
+			ceryneianHindTransformsTerrain = false
+			#The point in which Ceryneian Hinds will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			ceryneianHindSpawnpointSeparation = 800
+			#Whether cartographer villagers generate maps for Ceryneian Hinds or not.
+			ceryneianHindMapTrades = true
+
+		["When Configurations Arise"."Desertic Structures"."Shiraz Palace Spawning Settings"]
+			#Whether Shiraz Palaces generate on your worlds or not.
+			shirazPalaceGenerates = true
+			#Maximum separation between Shiraz Palaces (in chunks).
+			#Range: 0 ~ 1000000
+			shirazPalaceSpacing = 160
+			#Minimum spacing between Shiraz Palaces (in chunks).
+			#Range: 0 ~ 1000000
+			shirazPalaceSeparation = 140
+			#Number of Jigsaw iterations when generating a Shiraz Palace.
+			#Range: 0 ~ 1000000
+			shirazPalaceSize = 50
+			#Whether Shiraz Palaces adapt the terrain around them or not.
+			shirazPalaceTransformsTerrain = false
+			#The point in which Shiraz Palaces will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			shirazPalaceSpawnpointSeparation = 1000
+			#Whether cartographer villagers generate maps for Shiraz Palaces or not.
+			shirazPalaceMapTrades = true
+
+	["When Configurations Arise"."Jungle Structures"]
+
+		["When Configurations Arise"."Jungle Structures"."Jungle Tree House Spawning Settings"]
+			#Whether Jungle Tree Houses generate on your worlds or not.
+			jungleTreeHouseGenerates = true
+			#Maximum separation between Jungle Tree Houses (in chunks).
+			#Range: 0 ~ 1000000
+			jungleTreeHouseSpacing = 160
+			#Minimum spacing between Jungle Tree Houses (in chunks).
+			#Range: 0 ~ 1000000
+			jungleTreeHouseSeparation = 140
+			#Number of Jigsaw iterations when generating a Jungle Tree House.
+			#Range: 0 ~ 1000000
+			jungleTreeHouseSize = 50
+			#Whether Jungle Tree Houses adapt the terrain around them or not.
+			jungleTreeHouseTransformsTerrain = false
+			#The point in which Jungle Tree Houses will start spawning. This is based around X = 0, Z = 0.
+			#Range: 0 ~ 1000000
+			jungleTreeHouseSpawnpointSeparation = 1000
+			#Whether cartographer villagers generate maps for Jungle Tree Houses or not.
+			jungleTreeHouseMapTrades = true
+

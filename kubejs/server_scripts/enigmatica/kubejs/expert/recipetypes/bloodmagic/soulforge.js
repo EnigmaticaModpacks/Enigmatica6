@@ -78,40 +78,28 @@ onEvent('recipes', (event) => {
                 id: 'bloodmagic:soulforge/greatertartaricgem'
             },
             {
-                inputs: [
-                    'atum:nuit_godshard',
-                    'eidolon:soul_shard',
-                    'astralsorcery:nocturnal_powder',
-                    'eidolon:death_essence'
-                ],
-                output: Item.of('eidolon:shadow_gem'),
-                minimumDrain: 100.0,
-                drain: 32.0,
-                id: `${id_prefix}shadow_gem`
-            },
-            {
-                inputs: [
-                    ['#forge:ingots/regalium', '#forge:ingots/nebu'],
-                    'eidolon:soul_shard',
-                    'eidolon:crimson_essence'
-                ],
-                output: Item.of('eidolon:arcane_gold_ingot'),
+                inputs: ['#forge:storage_blocks/gold', 'eidolon:crimson_essence'],
+                output: Item.of('eidolon:arcane_gold_block'),
                 minimumDrain: 32.0,
                 drain: 16.0,
                 id: `${id_prefix}arcane_gold_ingot`
             },
             {
-                inputs: ['bloodmagic:rawdemoncrystal', 'bloodmagic:soulpickaxe', '#forge:storage_blocks/iesnium'],
+                inputs: [
+                    'bloodmagic:rawdemoncrystal',
+                    Item.of('bloodmagic:soulpickaxe', '{Damage:0]}').weakNBT(),
+                    '#forge:storage_blocks/iesnium'
+                ],
                 output: Item.of('occultism:iesnium_pickaxe'),
                 minimumDrain: 4000.0,
                 drain: 2048.0,
                 id: 'occultism:crafting/iesnium_pickaxe'
             },
             {
-                inputs: ['occultism:dimensional_matrix', '#botania:runes/helheim', 'occultism:storage_controller_base'],
+                inputs: ['occultism:dimensional_matrix', 'occultism:storage_controller_base'],
                 output: 'occultism:storage_controller',
-                minimumDrain: 1000.0,
-                drain: 200.0,
+                minimumDrain: 32.0,
+                drain: 16.0,
                 id: 'occultism:crafting/storage_controller'
             },
             {
@@ -159,6 +147,41 @@ onEvent('recipes', (event) => {
                 minimumDrain: 0.0,
                 drain: 0.0,
                 id: 'bloodmagic:soulforge/sentientscythe'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:noderouter'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/node_router'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:itemroutingnode'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/routing_node'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:outputroutingnode'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/output_routing_node'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:inputroutingnode'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/input_routing_node'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:masterroutingnode'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/master_routing_node'
             }
         ]
     };

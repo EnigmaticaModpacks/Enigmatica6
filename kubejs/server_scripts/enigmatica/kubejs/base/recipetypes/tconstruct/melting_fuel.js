@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/tconstruct/melting_fuel/';
+
     const recipes = [
         {
             fluid: {
@@ -6,19 +8,17 @@ onEvent('recipes', (event) => {
                 amount: 50
             },
             duration: 150,
-            temperature: 1500
+            temperature: 1500,
+            id: `${id_prefix}blaze_honey`
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
+        event.custom({
             type: 'tconstruct:melting_fuel',
             fluid: recipe.fluid,
             duration: recipe.duration,
             temperature: recipe.temperature
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        }).id(recipe.id);
     });
 });

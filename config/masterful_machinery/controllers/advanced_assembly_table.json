@@ -1,0 +1,28 @@
+{
+    "controllerId": "advanced_assembly_table",
+    "name": "Advanced Assembly Table",
+    "textureOverride": "pneumaticcraft:block/compressed_brick_tile",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "Item",
+            "id": "item",
+            "textureOverride": "immersiveengineering:block/metal_decoration/radiator",
+            "data": {
+                "rows": 3,
+                "columns": 3
+            }
+        },
+        {
+            "type": "masterfulmachinery:pncr_pressure",
+            "name": "High Pressure",
+            "id": "high_pressure",
+            "textureOverride": "immersiveengineering:block/metal_decoration/radiator",
+            "data": {
+                "volume": 120,
+                "dangerPressure": 20.0,
+                "criticalPressure": 20.5
+            }
+        }
+    ]
+}

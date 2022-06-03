@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/shapeless/';
     const recipes = [
         { output: 'botania:enchanted_soil', inputs: ['minecraft:grass_block', 'botania:overgrowth_seed'] },
         { output: 'minecraft:sticky_piston', inputs: ['minecraft:piston', '#forge:slimeballs'] },
@@ -18,6 +19,17 @@ onEvent('recipes', (event) => {
                 '#forge:crops/tomato',
                 '#forge:salad_ingredients'
             ]
+        },
+        {
+            output: 'simplefarming:blt',
+            inputs: [
+                '#forge:bread',
+                '#forge:cooked_bacon',
+                '#forge:cooked_bacon',
+                '#forge:salad_ingredients',
+                '#forge:crops/tomato'
+            ],
+            id: 'simplefarming:blt'
         },
         {
             output: 'simplefarming:sushi',
@@ -66,12 +78,6 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }),
             inputs: ['minecraft:sugar', 'minecraft:book']
-        },
-
-        {
-            output: 'prettypipes:crafting_terminal',
-            inputs: ['prettypipes:item_terminal', 'prettypipes:low_crafting_module'],
-            id: 'prettypipes:crafting_terminal'
         },
         { output: 'ars_nouveau:mana_gem', inputs: ['emendatusenigmatica:arcane_gem'] },
         { output: 'emendatusenigmatica:arcane_gem', inputs: ['ars_nouveau:mana_gem'] },
@@ -407,6 +413,38 @@ onEvent('recipes', (event) => {
                                 Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"The End for Dummies"}]}'
                             }
                         }
+                    },
+                    littlelogistics: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Little Logistics Guide' },
+                            'patchouli:book': 'littlelogistics:guide',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Little Logistics Guide"}]}'
+                            }
+                        }
+                    },
+                    tconstruct: {
+                        id: 'tconstruct:encyclopedia',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Encyclopedia of Tinkering' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Encyclopedia of Tinkering"}]}'
+                            }
+                        }
+                    },
+                    apotheosis: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Chronicle of Shadows' },
+                            'patchouli:book': 'apotheosis:apoth_chronicle',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Chronicle of Shadows"}]}'
+                            }
+                        }
                     }
                 }
             }),
@@ -455,57 +493,36 @@ onEvent('recipes', (event) => {
             inputs: ['byg:quartzite_sand', 'byg:quartzite_sand', 'byg:quartzite_sand']
         },
         {
-            output: Item.of('projectvibrantjourneys:twigs', 4),
-            inputs: ['#minecraft:leaves', '#forge:shears']
-        },
-        {
-            output: Item.of('projectvibrantjourneys:pinecones', 6),
-            inputs: [
-                '#minecraft:leaves/coniferous',
-                '#minecraft:leaves/coniferous',
-                '#minecraft:leaves/coniferous',
-                '#forge:shears'
-            ]
-        },
-        {
-            output: Item.of('projectvibrantjourneys:fallen_leaves', 1),
-            inputs: ['quark:oak_leaf_carpet']
-        },
-        {
-            output: Item.of('projectvibrantjourneys:rocks', 4),
-            inputs: ['minecraft:cobblestone', '#forge:tools/crafting_hammer']
-        },
-        {
-            output: Item.of('projectvibrantjourneys:mossy_rocks', 4),
-            inputs: ['minecraft:mossy_cobblestone', '#forge:tools/crafting_hammer']
-        },
-        {
-            output: Item.of('projectvibrantjourneys:sandstone_rocks', 4),
-            inputs: ['minecraft:sandstone', '#forge:tools/crafting_hammer']
-        },
-        {
-            output: Item.of('projectvibrantjourneys:red_sandstone_rocks', 4),
-            inputs: ['minecraft:red_sandstone', '#forge:tools/crafting_hammer']
-        },
-        {
-            output: Item.of('projectvibrantjourneys:ice_chunks', 4),
-            inputs: ['minecraft:ice', '#forge:tools/crafting_hammer']
-        },
-        {
-            output: Item.of('projectvibrantjourneys:glowcap'),
-            inputs: ['minecraft:glowstone_dust', ['minecraft:brown_mushroom', 'minecraft:red_mushroom']]
-        },
-        {
             output: Item.of('botanypots:botany_pot'),
-            inputs: ['#enigmatica:washables/simplebotanypots', 'minecraft:water_bucket']
+            inputs: ['#botanypots:botany_pots/simple', 'minecraft:water_bucket']
         },
         {
             output: Item.of('botanypots:hopper_botany_pot'),
-            inputs: ['#enigmatica:washables/hopperbotanypots', 'minecraft:water_bucket']
+            inputs: ['#botanypots:botany_pots/hopper', 'minecraft:water_bucket']
         },
         {
             output: Item.of('minecraft:terracotta'),
             inputs: ['#enigmatica:washables/terracotta', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('atum:ceramic_white'),
+            inputs: ['#enigmatica:washables/ceramic', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('atum:ceramic_slab_white'),
+            inputs: ['#enigmatica:washables/ceramic_slab', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('atum:ceramic_tile_white'),
+            inputs: ['#enigmatica:washables/ceramic_tile', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('atum:ceramic_stairs_white'),
+            inputs: ['#enigmatica:washables/ceramic_stairs', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('atum:ceramic_wall_white'),
+            inputs: ['#enigmatica:washables/ceramic_wall', 'minecraft:water_bucket']
         },
         {
             output: 'mythicbotany:raindeletia_floating',
@@ -552,20 +569,29 @@ onEvent('recipes', (event) => {
                 '#forge:fruits/mana_berry'
             ],
             id: 'ars_nouveau:source_berry_roll'
+        },
+        {
+            output: Item.of('byg:brimstone', 2),
+            inputs: ['minecraft:netherrack', 'byg:sythian_wart_block']
+        },
+        {
+            output: 'minecraft:charcoal',
+            inputs: ['#chisel:charcoal'],
+            id: `${id_prefix}charcoal`
         }
     ];
 
     recipes.forEach((recipe) => {
         recipe.id
             ? event.shapeless(recipe.output, recipe.inputs).id(recipe.id)
-            : event.shapeless(recipe.output, recipe.inputs);
+            : fallback_id(event.shapeless(recipe.output, recipe.inputs), id_prefix);
     });
 
     powahTiers.forEach((tier) => {
         if (tier == 'starter') {
             return;
         }
-        event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`);
+        fallback_id(event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`), id_prefix);
     });
 
     colors.forEach(function (color) {
@@ -577,18 +603,45 @@ onEvent('recipes', (event) => {
         otherSimplePots.push('botanypots:botany_pot');
         otherHopperPots.push('botanypots:hopper_botany_pot');
 
-        event.shapeless(`botanypots:${color}_botany_pot`, [Ingredient.of(otherSimplePots), `#forge:dyes/${color}`]);
+        event.shapeless(`botanypots:${color}_botany_pot`, [
+            Ingredient.of(otherSimplePots),
+            `#forge:dyes/${color}`
+        ]).id(`${id_prefix}dye_botany_pot_${color}`);
 
         event.shapeless(`botanypots:hopper_${color}_botany_pot`, [
             Ingredient.of(otherHopperPots),
             `#forge:dyes/${color}`
-        ]);
+        ]).id(`${id_prefix}dye_hopper_botany_pot_${color}`);
+
+        if (color != 'white') {
+            fallback_id(event.shapeless(Item.of(`2x atum:ceramic_slab_${color}`), [
+                'atum:ceramic_slab_white',
+                'atum:ceramic_slab_white',
+                `#forge:dyes/${color}`
+            ]), id_prefix);
+            fallback_id(event.shapeless(Item.of(`6x atum:ceramic_tile_${color}`), [
+                'atum:ceramic_tile_white',
+                'atum:ceramic_tile_white',
+                'atum:ceramic_tile_white',
+                'atum:ceramic_tile_white',
+                'atum:ceramic_tile_white',
+                'atum:ceramic_tile_white',
+                `#forge:dyes/${color}`
+            ]), id_prefix);
+            fallback_id(event.shapeless(Item.of(`3x atum:ceramic_stairs_${color}`), [
+                'atum:ceramic_stairs_white',
+                'atum:ceramic_stairs_white',
+                'atum:ceramic_stairs_white',
+                `#forge:dyes/${color}`
+            ]), id_prefix);
+            fallback_id(event.shapeless(`atum:ceramic_wall_${color}`, ['atum:ceramic_wall_white', `#forge:dyes/${color}`]), id_prefix);
+        }
     });
 
     materialsToUnify.forEach((material) => {
         var ore = Item.of(`emendatusenigmatica:${material}_ore`);
         if (ore.exists) {
-            event.shapeless(ore, `#forge:ores/${material}`);
+            fallback_id(event.shapeless(ore, `#forge:ores/${material}`), id_prefix);
         }
     });
 });

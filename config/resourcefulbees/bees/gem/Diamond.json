@@ -23,16 +23,12 @@
     },
     "MutationData": {
         "hasMutation": true,
+        "mutationCount": 4,
         "mutations": [
             {
                 "type": "BLOCK",
-                "inputID": "tag:forge:stone",
-                "outputs": [{ "outputID": "emendatusenigmatica:diamond_ore", "weight": 10 }]
-            },
-            {
-                "type": "ITEM",
-                "inputID": "resourcefulbees:ender_honeycomb_block",
-                "outputs": [{ "outputID": "resourcefulbees:enderium_bee_spawn_egg", "weight": 10 }]
+                "inputID": "create:granite_cobblestone",
+                "outputs": [{ "outputID": "emendatusenigmatica:diamond_granite_ore", "weight": 10 }]
             }
         ]
     },

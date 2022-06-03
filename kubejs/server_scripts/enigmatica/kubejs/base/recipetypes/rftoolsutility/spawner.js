@@ -1011,13 +1011,6 @@ onEvent('recipes', (event) => {
                 item1: { amount: 0.1, ingredient: { item: 'minecraft:end_crystal' } },
                 item2: { amount: 100.0, ingredient: substrates.alien },
                 item3: { amount: 200.0, living: true }
-            },
-            {
-                entity: 'atum:pharaoh',
-                power: 200000,
-                item1: { amount: 0.1, ingredient: { tag: 'atum:relic' } },
-                item2: { amount: 0.5, ingredient: substrates.arid },
-                item3: { amount: 100.0, living: true }
             }
         ]
     };

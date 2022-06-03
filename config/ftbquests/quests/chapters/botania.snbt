@@ -10,6 +10,13 @@
 	quests: [
 		{
 			title: "Botania"
+			icon: {
+				id: "botania:lexicon"
+				Count: 1b
+				tag: {
+					"botania:elven_unlock": 1b
+				}
+			}
 			x: 4.5d
 			y: -0.5d
 			shape: "gear"
@@ -20,11 +27,19 @@
 				""
 				"~MuteTiefling"
 			]
+			optional: true
 			id: "0000000000000501"
 			tasks: [{
-				id: "0000000000000502"
-				type: "checkmark"
-				icon: "botania:lexicon"
+				id: "26553788817F4728"
+				type: "item"
+				title: "Any Mystical Flower"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				}
 			}]
 			rewards: [{
 				id: "0000000000000504"
@@ -49,7 +64,7 @@
 			tasks: [{
 				id: "0000000000000507"
 				type: "item"
-				title: "Any botania:mystical_flowers"
+				title: "Any Mystical Flower"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -149,7 +164,7 @@
 			]
 		}
 		{
-			title: "Livingwood \\\\& Livingrock"
+			title: "Livingwood \\& Livingrock"
 			x: -3.0d
 			y: 3.5d
 			subtitle: "Breathing New Life"
@@ -409,7 +424,24 @@
 			tasks: [{
 				id: "0000000000000522"
 				type: "item"
-				item: "botania:endoflame"
+				title: "Endoflame"
+				icon: "botania:endoflame"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:endoflame"
+								Count: 1b
+							}
+							{
+								id: "botania:gourmaryllis"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [
 				{

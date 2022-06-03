@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             id: 'ars_nouveau:glyph_fortune'
         },
         {
-            input: 'thermal:earth_charge',
+            input: 'powah:charged_snowball',
             output: 'ars_nouveau:glyph_amplify',
             tier: 'ONE',
             id: 'ars_nouveau:glyph_amplify'
@@ -134,18 +134,49 @@ onEvent('recipes', (event) => {
             output: 'ars_nouveau:glyph_glide',
             tier: 'THREE',
             id: 'ars_nouveau:glyph_glide'
+        },
+        {
+            input: 'botania:glass_pickaxe',
+            output: 'ars_nouveau:glyph_extract',
+            tier: 'TWO',
+            id: 'ars_nouveau:glyph_extract'
+        },
+        {
+            input: 'eidolon:shadow_gem',
+            output: 'ars_nouveau:glyph_amplify_two',
+            tier: 'TWO',
+            id: 'toomanyglyphs:glyph_amplify_two'
+        },
+        {
+            input: 'botania:mana_diamond',
+            output: 'ars_nouveau:glyph_amplify_three',
+            tier: 'THREE',
+            id: 'toomanyglyphs:glyph_amplify_three'
+        },
+        {
+            input: 'atum:nebu_chain',
+            output: 'ars_nouveau:glyph_chaining',
+            tier: 'TWO',
+            id: 'toomanyglyphs:glyph_chaining'
+        },
+        {
+            input: 'powah:lens_of_ender',
+            output: 'ars_nouveau:glyph_ray',
+            tier: 'ONE',
+            id: 'toomanyglyphs:glyph_ray'
         }
     ];
 
+    /*
+    Tiers
+    ONE: Magic Clay
+    TWO: Marvelous Clay
+    THREE: Mythical Clay
+    */
+
     recipes.forEach((recipe) => {
-        const re = event.custom({
-            type: 'ars_nouveau:glyph_recipe',
-            tier: recipe.tier,
-            input: recipe.input,
-            output: recipe.output
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        recipe.type = 'ars_nouveau:glyph_recipe';
+
+        event.custom(recipe).id(recipe.id);
     });
 });

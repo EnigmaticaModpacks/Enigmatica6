@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/astralsorcery/altar/';
+
     const recipes = [
         {
             output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:starry_bee"}),
@@ -32,7 +34,8 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_trait_focus_circle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines'
-            ]
+            ],
+            id: `${id_prefix}starry_bee_jar`
         }
     ];
 
@@ -58,9 +61,6 @@ onEvent('recipes', (event) => {
             constructed_recipe.recipe_class = recipe.recipe_class;
         }
 
-        const re = event.custom(constructed_recipe);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event.custom(constructed_recipe).id(recipe.id);
     });
 });

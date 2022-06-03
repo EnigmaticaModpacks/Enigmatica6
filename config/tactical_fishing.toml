@@ -1,0 +1,15 @@
+
+[general]
+	#When true writes a step-by-step feedback to your log file when the mod is testing if a certain combination matches a recipe's requirement; Default: false
+	Debug = false
+	#When true writes the in-built datapack on world creation; Default: true
+	#Keep in mind if you set this to false there will be no 'tactical_fishing:fishing_rods' tag nor any of the fish bucket recipes
+	WriteDatapack = true
+
+[datapack]
+	#When true makes sure to update the datapack if your mod list changes; Default: true
+	VerifyDatapack = true
+	#When true writes .json files for each possible fish bucket; Default: true
+	#If you want to use this mod for the fishing crafting without the fish buckets, you should set this to false
+	WriteFishBucketRecipes = true
+

@@ -17,6 +17,7 @@ onEvent('item.tags', (event) => {
 
     event.add('forge:dusts/starmetal', 'astralsorcery:stardust');
     event.get('forge:dusts/lapis').add('mekanism:dust_lapis_lazuli');
+    event.get('forge:dusts/netherite_scrap').add('mekanism:dust_netherite');
 
     event.get('forge:dusts').remove('minecraft:prismarine_shard');
     event.get('forge:dusts/prismarine').remove('minecraft:prismarine_shard');

@@ -1,0 +1,51 @@
+{
+    "beeVersion": 0.10,
+    "flower": "tag:minecraft:beds",
+    "baseLayerTexture": "kitten/bee",
+    "creator": "Dawn Felstar",
+    "lore": "Cute little baby kitten bee.",
+    "loreColor": "rainbow",
+    "traits": ["kitten"],
+    "customCombDrop": "resourcefulbees:catnip_honeycomb",
+    "customCombBlockDrop": "resourcefulbees:catnip_honeycomb_block",
+    "sizeModifier": 0.75,
+    "maxTimeInHive": 500,
+    "hasHoneycomb": true,
+    "ColorData" : {
+      "isBeeColored": false,
+      "modelType": "KITTEN",
+      "primaryColor": "#EAA939",
+      "secondaryColor": "#4C483B"
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:cat_spawn_egg",
+      "mainOutputWeight": 0.01,
+      "bottleOutput": "resourcefulbees:catnip_honey_bottle",
+      "bottleOutputWeight": 0.1
+    },
+    "CombatData": {
+      "isPassive": false,
+      "attackDamage": 0,
+      "baseHealth": 20,
+      "removeStingerOnAttack": false
+    },
+    "SpawnData" : {
+      "canSpawnInWorld": true,
+      "spawnWeight": 3,
+      "biomeWhitelist": "tag:rare",
+      "lightLevel": "DAY",
+      "minGroupSize": 1,
+      "maxGroupSize": 1
+    },
+    "TraitData": {
+      "hasTraits": true
+    },
+    "BreedData": {
+        "isBreedable": false,
+        "feedItem": "tag:minecraft:fishes",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    }
+  }

@@ -30,6 +30,10 @@
 		ingredientNetworkObserverFrequencyForced = 0
 		#If the version checker should be enabled.
 		versionChecker = false
+		#If corrupted networks should automatically be restored on first tick.
+		recreateCorruptedNetworks = true
+		#The maximum frequency at which speach messages can be played in millis.
+		speachMaxFrequency = 1000
 
 [general]
 
@@ -134,6 +138,10 @@
 		consumptionRate = 80
 		#The energy capacity of a mechanical drying basin.
 		capacity = 100000
+
+	[machine.cable]
+		#If cable shapes should be determined dynamically. Disable this if FPS issues would occur.
+		dynamicShape = true
 
 [worldgeneration]
 

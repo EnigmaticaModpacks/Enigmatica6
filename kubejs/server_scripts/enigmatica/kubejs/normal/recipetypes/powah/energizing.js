@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             ingredients: [{ tag: 'forge:storage_blocks/iron_copper' }, { tag: 'forge:storage_blocks/gold' }],
-            energy: '100000',
+            energy: 100000,
             result: {
                 item: 'powah:energized_steel_block',
                 count: 2
@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ item: 'botania:blaze_block' }],
-            energy: '900000',
+            energy: 900000,
             result: {
                 item: 'powah:blazing_crystal_block',
                 count: 1
@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ tag: 'forge:storage_blocks/diamond' }],
-            energy: '3000000',
+            energy: 3000000,
             result: {
                 item: 'powah:niotic_crystal_block',
                 count: 1
@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [{ tag: 'forge:storage_blocks/emerald' }],
-            energy: '10000000',
+            energy: 10000000,
             result: {
                 item: 'powah:spirited_crystal_block',
                 count: 1

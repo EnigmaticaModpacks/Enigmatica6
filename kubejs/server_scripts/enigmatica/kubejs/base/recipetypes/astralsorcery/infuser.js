@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/astralsorcery/infuser/';
+
     data = {
         recipes: [
             {
@@ -75,7 +77,7 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        event.custom({
+        fallback_id(event.custom({
             type: 'astralsorcery:infuser',
             fluidInput: recipe.fluid,
             input: recipe.input,
@@ -88,6 +90,6 @@ onEvent('recipes', (event) => {
             consumeMultipleFluids: false,
             acceptChaliceInput: true,
             copyNBTToOutputs: false
-        });
+        }), id_prefix);
     });
 });

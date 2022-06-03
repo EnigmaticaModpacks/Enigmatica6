@@ -12,6 +12,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:expert/farmersdelight/cutting/';
+
     const recipes = [
         cuttingRecipe(Ingredient.of('minecraft:leather'), Ingredient.of('#forge:tools/knives'), [
             Item.of('betterendforge:leather_stripe', 3)
@@ -35,7 +37,7 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.custom(recipe);
+        fallback_id(event.custom(recipe), id_prefix);
     });
 
     buildWoodVariants.forEach((variant) => {
@@ -55,12 +57,12 @@ onEvent('recipes', (event) => {
             };
             let ingredients = Ingredient.of(recipe.input);
             let result = [Item.of('minecraft:stick', 8)];
-            event.custom({
+            fallback_id(event.custom({
                 type: 'farmersdelight:cutting',
                 ingredients: [ingredients],
                 tool: tool,
                 result: result
-            });
+            }), id_prefix);
         });
     });
 });

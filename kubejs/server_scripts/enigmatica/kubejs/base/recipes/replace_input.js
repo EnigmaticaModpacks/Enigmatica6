@@ -1,9 +1,68 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/recipes/replace_input/';
+
     const recipes = [
         {
             replaceTarget: { id: 'entangled:block' },
             toReplace: 'minecraft:chest',
             replaceWith: '#forge:chests/wooden'
+        },
+        {
+            replaceTarget: { id: 'constructionwand:stone_wand' },
+            toReplace: '#minecraft:stone_tool_materials',
+            replaceWith: '#quark:stone_tool_materials'
+        },
+        {
+            replaceTarget: { id: 'archers_paradox:lightning_arrow' },
+            toReplace: 'minecraft:nether_star',
+            replaceWith: 'thermal:lightning_charge'
+        },
+        {
+            replaceTarget: { id: 'immersivecooking:fried_potato_cubes' },
+            toReplace: 'immersivecooking:potato_slice',
+            replaceWith: 'immersivecooking:potato_cubes'
+        },
+        {
+            replaceTarget: {
+                not: [{ id: 'minecraft:dried_kelp_block' }]
+            },
+            toReplace: 'minecraft:dried_kelp',
+            replaceWith: ['minecraft:dried_kelp', 'sushigocrafting:dried_seaweed']
+        },
+        {
+            replaceTarget: { id: 'eidolon:stone_hand' },
+            toReplace: 'minecraft:stone_slab',
+            replaceWith: '#enigmatica:crafting_slabs'
+        },
+        {
+            replaceTarget: { id: 'culinaryconstruct:culinary_station' },
+            toReplace: 'minecraft:stone_slab',
+            replaceWith: '#enigmatica:crafting_slabs'
+        },
+        {
+            replaceTarget: { id: 'minecraft:grindstone' },
+            toReplace: 'minecraft:stone_slab',
+            replaceWith: '#enigmatica:crafting_slabs'
+        },
+        {
+            replaceTarget: {},
+            toReplace: 'emendatusenigmatica:coke_block',
+            replaceWith: '#forge:storage_blocks/coke'
+        },
+        {
+            replaceTarget: {},
+            toReplace: 'emendatusenigmatica:arcane_block',
+            replaceWith: '#forge:storage_blocks/mana'
+        },
+        {
+            replaceTarget: {},
+            toReplace: 'emendatusenigmatica:sulfur_gem',
+            replaceWith: '#forge:gems/sulfur'
+        },
+        {
+            replaceTarget: {},
+            toReplace: 'emendatusenigmatica:steel_block',
+            replaceWith: '#forge:storage_blocks/steel'
         }
     ];
     event.replaceInput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');
@@ -77,12 +136,12 @@ onEvent('recipes', (event) => {
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
 
     powahTiers.forEach(function (tier) {
-        var capacitor = 'powah:capacitor_' + tier;
-        event.replaceInput({ id: 'powah:crafting/energy_cell_' + tier }, '#powah:energy_cell', capacitor);
+        var capacitor = `powah:capacitor_${tier}`;
+        event.replaceInput({ id: `powah:crafting/energy_cell_${tier}` }, '#powah:energy_cell', capacitor);
         if (tier == 'basic') {
-            capacitor = 'powah:capacitor_' + tier + '_large';
+            capacitor = `powah:capacitor_${tier}_large`;
         }
-        event.replaceInput({ id: 'powah:crafting/battery_' + tier }, '#powah:battery', capacitor);
+        event.replaceInput({ id: `powah:crafting/battery_${tier}` }, '#powah:battery', capacitor);
     });
 
     event.replaceInput({ mod: 'powah' }, '#powah:magmator', 'mekanism:dynamic_tank');
@@ -169,19 +228,28 @@ onEvent('recipes', (event) => {
         event.remove({
             id: `minecraft:${color}_carpet_from_white_carpet`
         });
-        event.shaped(Item.of(`minecraft:${color}_carpet`, 3), ['WW'], {
-            W: `minecraft:${color}_wool`
-        });
+        fallback_id(
+            event.shaped(Item.of(`minecraft:${color}_carpet`, 3), ['WW'], {
+                W: `minecraft:${color}_wool`
+            }),
+            id_prefix
+        );
 
-        event.shaped(Item.of(`minecraft:${color}_stained_glass_pane`, 8), ['GGG', 'GDG', 'GGG'], {
-            G: 'minecraft:glass_pane',
-            D: dyeTag
-        });
+        fallback_id(
+            event.shaped(Item.of(`minecraft:${color}_stained_glass_pane`, 8), ['GGG', 'GDG', 'GGG'], {
+                G: 'minecraft:glass_pane',
+                D: dyeTag
+            }),
+            id_prefix
+        );
 
-        event.shaped(Item.of(`minecraft:${color}_stained_glass`, 8), ['GGG', 'GDG', 'GGG'], {
-            G: 'minecraft:glass',
-            D: dyeTag
-        });
+        fallback_id(
+            event.shaped(Item.of(`minecraft:${color}_stained_glass`, 8), ['GGG', 'GDG', 'GGG'], {
+                G: 'minecraft:glass',
+                D: dyeTag
+            }),
+            id_prefix
+        );
 
         ['stained_glass', 'stained_glass_pane', 'terracotta', 'concrete_powder', 'wool', 'carpet'].forEach(
             (blockName) => {
@@ -194,24 +262,53 @@ onEvent('recipes', (event) => {
                     event.remove({ id: block });
                 }
 
-                event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
-                    S: itemTag,
-                    D: dyeTag
-                });
-                event.shapeless(Item.of(block, 1), [dyeTag, itemTag]);
+                fallback_id(
+                    event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
+                        S: itemTag,
+                        D: dyeTag
+                    }),
+                    id_prefix
+                );
+                fallback_id(event.shapeless(Item.of(block, 1), [dyeTag, itemTag]), id_prefix);
             }
         );
-        event.shapeless(Item.of(`minecraft:${color}_concrete_powder`, 8), [
-            dyeTag,
-            '#forge:sand',
-            '#forge:sand',
-            '#forge:sand',
-            '#forge:sand',
-            '#forge:gravel',
-            '#forge:gravel',
-            '#forge:gravel',
-            '#forge:gravel'
-        ]);
+
+        ['linen', 'linen_carpet'].forEach((blockName) => {
+            var itemTag = `#atum:${blockName}`;
+            var block = `atum:${blockName}_${color}`;
+
+            if (blockName == 'linen_carpet') {
+                event.remove({ id: `atum:${color}_linen_carpet_from_white_linen_carpet` });
+            } else if (blockName == 'linen') {
+                if (color != 'white') {
+                    // linen_white is Atum's linen cloth -> linen recipe
+                    event.remove({ id: `atum:linen_${color}` });
+                }
+            }
+
+            event
+                .shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
+                    S: itemTag,
+                    D: dyeTag
+                })
+                .id(`kubejs:${blockName}_${color}_bulk`);
+            event.shapeless(Item.of(block, 1), [dyeTag, itemTag]).id(`kubejs:${blockName}_${color}`);
+        });
+
+        fallback_id(
+            event.shapeless(Item.of(`minecraft:${color}_concrete_powder`, 8), [
+                dyeTag,
+                '#forge:sand',
+                '#forge:sand',
+                '#forge:sand',
+                '#forge:sand',
+                '#forge:gravel',
+                '#forge:gravel',
+                '#forge:gravel',
+                '#forge:gravel'
+            ]),
+            id_prefix
+        );
     });
 
     const alt_material_tag_replacements = [
@@ -291,7 +388,6 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:marvelous_clay',
                 'ars_nouveau:ritual',
                 'ars_nouveau:sconce',
-                'ars_nouveau:basic_spell_turret',
                 'ars_nouveau:mycelial_sourcelink',
                 'ars_nouveau:vitalic_sourcelink',
                 'ars_nouveau:alchemical_sourcelink',
@@ -308,7 +404,6 @@ onEvent('recipes', (event) => {
                 'bloodmagic:sacrificialdagger',
                 'bloodmagic:experiencebook',
                 'bloodmagic:soulforge',
-                'pneumaticcraft:medium_tank',
                 'pneumaticcraft:minigun',
                 'pneumaticcraft:pressure_gauge',
                 'thermal:diving_helmet',

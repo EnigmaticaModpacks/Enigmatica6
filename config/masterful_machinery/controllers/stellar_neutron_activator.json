@@ -1,0 +1,32 @@
+{
+    "controllerId": "stellar_neutron_activator",
+    "textureOverride": "immersiveengineering:block/stone_decoration/hempcrete",
+    "name": "Stellar Neutron Activator",
+    "ports": [
+        {
+            "type": "masterfulmachinery:botania_mana",
+            "name": "Mana",
+            "id": "mana",
+            "textureOverride": "botania:block/mana_diamond_block",
+            "data": {
+                "capacity": 1000000
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "FE",
+            "id": "energy",
+            "data": {
+                "capacity": 500000000
+            }
+        },
+        {
+            "type": "masterfulmachinery:fluids",
+            "name": "Fluid",
+            "id": "fluid",
+            "data": {
+                "capacity": 512000
+            }
+        }
+    ]
+}

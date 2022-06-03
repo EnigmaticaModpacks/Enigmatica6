@@ -1,0 +1,65 @@
+
+#Power settings
+[power]
+
+	#Upgrade Cost Settings
+	[power.upgrades]
+		#Cost per Light Block placed
+		#Range: > 0
+		upgradeLight = 500
+		#Cost per block for Silk Touch upgrade
+		#Range: > 0
+		upgradeSilkCost = 5000
+		#Cost per block Frozen
+		#Range: > 0
+		upgradeFreeze = 500
+		#Cost per block for Fortune 1 upgrade
+		#Range: > 0
+		upgradeFortune1 = 1000
+		#Cost per block for Fortune 2 upgrade
+		#Range: > 0
+		upgradeFortune2 = 4000
+		#Cost per block for Fortune 3 upgrade
+		#Range: > 0
+		upgradeFortune3 = 6000		
+		#Capacity Boost from Battery 1 Upgrade
+		#Range: > 0
+		battery1 = 4800000
+		#Capacity Boost from Battery 2 Upgrade
+		#Range: > 0
+		battery2 = 19200000
+		#Capacity Boost from Battery 3 Upgrade
+		#Range: > 0
+		battery3 = 76800000
+		#Cost per block for Efficiency 1 upgrade
+		#Range: > 0
+		upgradeEfficiency1 = 100
+		#Cost per block for Efficiency 2 upgrade
+		#Range: > 0
+		upgradeEfficiency2 = 200
+		#Cost per block for Efficiency 3 upgrade
+		#Range: > 0
+		upgradeEfficiency3 = 450
+		#Cost per block for Efficiency 4 upgrade
+		#Range: > 0
+		upgradeEfficiency4 = 1200
+		#Cost per block for Efficiency 5 upgrade
+		#Range: > 0
+		upgradeEfficiency5 = 3500
+		#Cost per block for Magnet upgrade
+		#Range: > 0
+		upgradeMagnet = 250
+		#Cost per block for Void Junk upgrade
+		#Range: > 0
+		upgradeVoid = 100
+		
+
+	#Mining Gadget Settings
+	[power.mining_gadget]
+		#Base cost per block broken
+		#Range: > 0
+		baseCost = 1000
+		#Maximum power for the Mining Gadget
+		#Range: > 0
+		maxPower = 500000
+

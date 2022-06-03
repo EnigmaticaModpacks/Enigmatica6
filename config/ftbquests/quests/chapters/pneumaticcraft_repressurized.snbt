@@ -20,11 +20,12 @@
 				""
 				"~MuteTiefling"
 			]
+			optional: true
 			id: "00000000000000AF"
 			tasks: [{
-				id: "00000000000000B0"
-				type: "checkmark"
-				title: "PneumaticCraft: Repressurized"
+				id: "7B56DD5D9F4BBB68"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
 			}]
 			rewards: [{
 				id: "00000000000000B1"
@@ -46,7 +47,7 @@
 			y: -14.5d
 			shape: "rsquare"
 			description: [
-				"To begin your journey with PNC:R, you’ll need to obtain some Compressed Iron. Either find some TnT and blow up a handful of iron ingots, or find a village and see if there’s anything of use there. "
+				"To begin your journey with PNC:R, you’ll need to obtain some Compressed Iron. The process for making this is quite dangerous without a pressure chamber. Be sure to stand well back!"
 				""
 				"Once you’ve acquired the materials, build a 3x3x3 pressure chamber. The PNC:R Manual will show you how."
 				""
@@ -114,7 +115,24 @@
 				{
 					id: "00000000000000BF"
 					type: "item"
-					item: "pneumaticcraft:air_compressor"
+					title: "Air Compressor"
+					icon: "pneumaticcraft:air_compressor"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "pneumaticcraft:air_compressor"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:liquid_compressor"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "00000000000000C0"
@@ -145,7 +163,7 @@
 			y: -12.5d
 			subtitle: "Cautiously Optimistic"
 			description: ["Even the best laid plans can be brought to ruin by unexpected events. Install security upgrades in your compressor and pressure chamber to prevent rapid unscheduled disassembly."]
-			dependencies: ["00000000000000BD"]
+			dependencies: ["00000000000000B3"]
 			id: "00000000000000C3"
 			tasks: [{
 				id: "00000000000000C4"
@@ -171,7 +189,7 @@
 				""
 				"Note: Liquid Compressors can burn many types of fuel, all listed within the GUI, however some notable renewable fuels include biodiesel, liquid hydrogen, and liquid ethylene."
 			]
-			dependencies: ["00000000000000BD"]
+			dependencies: ["00000000000000B3"]
 			id: "00000000000000C7"
 			tasks: [{
 				id: "00000000000000C8"
@@ -261,7 +279,17 @@
 			x: -12.5d
 			y: -12.0d
 			subtitle: "Whirling Dervishes"
-			description: ["Built on the principle of swirling high pressure air in a special chamber to create a temperature differential, the Vortex Tube allows you to finely control the amount of heating or cooling it does by controlling the pressure."]
+			description: [
+				"Built on the principle of swirling high pressure air in a special chamber to create a temperature differential, the Vortex Tube allows you to finely control the amount of heating or cooling it does by controlling the pressure."
+				""
+				"The Vortex Tube isn’t the only way to generate Heat, however. Looking up uses on Heat Pipes in JEI will bring up a variety of blocks and liquids that may be used for heating and cooling as well. "
+				""
+				"Lastly, PneumaticCraft has built in support for Mekanism’s Heat system and compatibility with Integrated Dynamics. Some notable heat sources include:"
+				""
+				"● External Heater"
+				"● Resistive Heater"
+				"● Fuelwood Heater"
+			]
 			dependencies: ["00000000000000CC"]
 			id: "00000000000000CF"
 			tasks: [{
@@ -1258,7 +1286,11 @@
 			title: "Prime Delivery"
 			x: 0.0d
 			y: -13.0d
-			description: ["The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it. "]
+			description: [
+				"The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it. "
+				""
+				"A number of special trades have been added to Enigmatica 6 which allow trading a set of survey tools for different materials from various dimensions. Try them out to obtain rare and unusual items!"
+			]
 			dependencies: ["0000000000000145"]
 			id: "0000000000000148"
 			tasks: [{
@@ -1267,10 +1299,9 @@
 				item: "pneumaticcraft:amadron_tablet"
 			}]
 			rewards: [{
-				id: "000000000000014A"
+				id: "705F9A21C798611B"
 				type: "item"
-				title: "Block of Emerald"
-				item: "minecraft:emerald_block"
+				item: "kubejs:amadron_survey_tools"
 			}]
 		}
 		{
@@ -1563,7 +1594,12 @@
 				""
 				"Tip: A Pressure Chamber in Vacuum can be used to extract enchants from items."
 			]
-			dependencies: ["00000000000000BD"]
+			dependencies: [
+				"00000000000000BD"
+				"00000000000000C7"
+				"00000000000000C3"
+			]
+			dependency_requirement: "one_completed"
 			id: "0000000000000417"
 			tasks: [{
 				id: "0000000000000418"

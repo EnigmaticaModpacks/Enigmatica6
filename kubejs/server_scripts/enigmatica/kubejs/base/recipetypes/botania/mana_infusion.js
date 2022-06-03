@@ -1,9 +1,12 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/botania/mana_infusion/';
+
     const recipes = [
         {
             input: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:iron_bee"}),
             output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee"}),
-            mana: 99999
+            mana: 99999,
+            id: `${id_prefix}mana_bee_jar`
         }
     ];
 
@@ -14,15 +17,14 @@ onEvent('recipes', (event) => {
             output: Item.of(recipe.output).toJson(),
             mana: recipe.mana
         };
+
         if (recipe.catalyst) {
             constructed_recipe.catalyst = {
                 type: 'block',
                 block: recipe.catalyst
             };
         }
-        const re = event.custom(constructed_recipe);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        
+        event.custom(constructed_recipe).id(recipe.id);
     });
 });

@@ -1,7 +1,7 @@
 {
 	id: "529A046A403F6A21"
 	group: "0856CF7F5CBEB20A"
-	order_index: 2
+	order_index: 3
 	filename: "integrated_dynamics"
 	title: "Integrated Dynamics"
 	icon: "integrateddynamics:crystalized_menril_chunk"
@@ -19,10 +19,11 @@
 				""
 				"In order to function, all blocks other than the Logic Programmer, Squeezers, Drying Basins, and Generators have to be connected to each other via Logic Cables."
 				""
-				"For more complex blocks, like the Readers and Writers, make sure to read the book given in this Quest to fully understand them."
+				"For more complex blocks, like the Readers and Writers, make sure to read the mod's guide book \"On the Dynamics of Integration\" to fully understand them."
 				""
 				"-OneLemonyBoi"
 			]
+			optional: true
 			id: "7E516ACCF6DA5588"
 			tasks: [{
 				id: "581379EDC8E0E1B8"
@@ -68,13 +69,35 @@
 			x: -1.5d
 			y: 4.0d
 			subtitle: "Keep JUMPING!"
-			description: ["This should be the first block that you make from ID, along with the Drying Basin. This block creates Menril Resin from Menril Logs. However, someone or something needs to jump on the top of it numerous times in order to work the machine. Apply a redstone signal to reset the Squeezer for the next item."]
+			description: [
+				"This should be the first block that you make from ID, along with the Drying Basin. This block creates Menril Resin from Menril Logs. However, someone or something needs to jump on the top of it numerous times in order to work the machine. Apply a redstone signal to reset the Squeezer for the next item."
+				""
+				"Known issue: You cannot use the Squeezer if you have a Dank in your inventory."
+			]
 			dependencies: ["42D9F6E36CF8F06E"]
+			optional: true
 			id: "4666E2A199FC676E"
 			tasks: [{
 				id: "53097394003302F7"
 				type: "item"
-				item: "integrateddynamics:squeezer"
+				title: "Squeezer"
+				icon: "integrateddynamics:squeezer"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "integrateddynamics:squeezer"
+								Count: 1b
+							}
+							{
+								id: "integrateddynamics:bucket_menril_resin"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -98,11 +121,29 @@
 			subtitle: "Dryer than my Jokes"
 			description: ["This, along with the Squeezer, will make getting Menril a lot easier. Place this block right next to the Squeezer, with the spout of the squeezer facing it. Every time a Menril Log is squeezed, the Menril Resin enters the drying basin, and dries into a Menril Block."]
 			dependencies: ["42D9F6E36CF8F06E"]
+			optional: true
 			id: "510121D501040EA5"
 			tasks: [{
 				id: "6DFFC1D94075DA22"
 				type: "item"
-				item: "integrateddynamics:drying_basin"
+				title: "Drying Basin"
+				icon: "integrateddynamics:drying_basin"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "integrateddynamics:drying_basin"
+								Count: 1b
+							}
+							{
+								id: "integrateddynamics:crystalized_menril_block"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "6FCCEF89844BC6E9"
@@ -114,52 +155,34 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 5.0d
-			subtitle: "*Insert Bad Generator Joke*"
-			description: ["The Generator is the only way to produce RF in Integrated Dynamics, producing 20rf/t. Each fuel lasts for the same time as in a furnace, so a piece of coal burns for 80 seconds and produces a total of 32krf. The generator doesn't have a power buffer, so it needs to be next to a Battery in order to work."]
-			dependencies: [
-				"4666E2A199FC676E"
-				"510121D501040EA5"
-			]
-			id: "16EAF5653A205232"
-			tasks: [
-				{
-					id: "7A0CECA206871B59"
-					type: "item"
-					item: "integrateddynamics:coal_generator"
-				}
-				{
-					id: "0F7686E620CD9D0D"
-					type: "item"
-					item: {
-						id: "integrateddynamics:energy_battery"
-						Count: 1b
-						tag: {
-							energy: 0
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "43CE6F2A10A769E2"
-				type: "item"
-				title: "Coal"
-				item: "minecraft:coal"
-				count: 16
-			}]
-		}
-		{
-			x: 1.5d
-			y: 6.0d
+			x: 1.0d
+			y: 5.5d
 			subtitle: "Drying, but FASTER"
 			description: ["The same as the regular Drying Basin, but is faster and uses RF."]
-			dependencies: ["16EAF5653A205232"]
+			dependencies: ["510121D501040EA5"]
+			optional: true
 			id: "05C24B4CAB4AC124"
 			tasks: [{
 				id: "4884D5DED8B35CFD"
 				type: "item"
-				item: "integrateddynamics:mechanical_drying_basin"
+				title: "Mechanical Drying Basin"
+				icon: "integrateddynamics:mechanical_drying_basin"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "integrateddynamics:mechanical_drying_basin"
+								Count: 1b
+							}
+							{
+								id: "integrateddynamics:crystalized_chorus_block"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "2490003809DE5195"
@@ -171,16 +194,34 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 6.0d
+			x: -1.0d
+			y: 5.5d
 			subtitle: "No more Jumping"
 			description: ["The same as the Squeezer, but is faster, requires RF, and doesn't require the player to be jumping on it."]
-			dependencies: ["16EAF5653A205232"]
+			dependencies: ["4666E2A199FC676E"]
+			optional: true
 			id: "5183909586CBC38F"
 			tasks: [{
 				id: "256E9E07904E5A4A"
 				type: "item"
-				item: "integrateddynamics:mechanical_squeezer"
+				title: "Mechanical Squeezer"
+				icon: "integrateddynamics:mechanical_squeezer"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "integrateddynamics:mechanical_squeezer"
+								Count: 1b
+							}
+							{
+								id: "integrateddynamics:bucket_liquid_chorus"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "7C49676D6152BAE1"

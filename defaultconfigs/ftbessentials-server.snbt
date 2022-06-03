@@ -1,0 +1,78 @@
+# Default config file that will be copied to world's serverconfig/ftbessentials.snbt location
+# Copy values you wish to override in here
+# Example:
+# 
+# {
+# 	misc: {
+# 		enderchest: {
+# 			enabled: false
+# 		}
+# 	}
+# }
+
+{
+	commands: {
+		back: {
+			# /back cooldown in seconds
+			# Default: 30
+			# Range: 0 ~ 604800
+			cooldown: 600
+			
+			# Max number of times you can use /back
+			# Default: 10
+			# Range: 0 ~ +∞
+			max: 10
+		}
+		home: {
+			# /home cooldown in seconds
+			# Default: 10
+			# Range: 0 ~ 604800
+			cooldown: 180
+			
+			# Max homes
+			# Default: 1
+			# Range: 0 ~ +∞
+			max: 1
+		}
+		rtp: {
+			# /rtp cooldown in seconds
+			# Default: 600
+			# Range: 0 ~ 604800
+			cooldown: 300
+			
+			# /rtp max distance from spawn point
+			# Default: 100000
+			# Range: 0 ~ 30000000
+			max_distance: 10000
+			
+			# Number of tries before /rtp gives up
+			# Default: 100
+			# Range: 1 ~ 1000
+			max_tries: 100
+			
+			# /rtp min distance from spawn point
+			# Default: 1000
+			# Range: 0 ~ 30000000
+			min_distance: 1000
+		}
+		spawn: {
+			# /spawn cooldown in seconds
+			# Default: 10
+			# Range: 0 ~ 604800
+			cooldown: 600
+		}
+		tpa: {
+			# /tpa cooldown in seconds
+			# Default: 10
+			# Range: 0 ~ 604800
+			cooldown: 300
+		}
+		warp: {
+			# /warp cooldown in seconds
+			# Default: 10
+			# Range: 0 ~ 604800
+			cooldown: 1800
+		}
+	}
+}
+

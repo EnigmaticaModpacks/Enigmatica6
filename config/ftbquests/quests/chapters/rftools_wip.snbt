@@ -22,12 +22,32 @@
 				""
 				"~Merlo"
 			]
+			optional: true
 			id: "000000000000034A"
 			tasks: [{
-				id: "000000000000034B"
-				type: "checkmark"
-				title: "Intro"
-				icon: "rftoolsbase:smartwrench"
+				id: "0EB362B38C59907A"
+				type: "item"
+				title: "RFTools or XNet intro item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "xnet:controller"
+								Count: 1b
+							}
+							{
+								id: "rftoolsbase:machine_frame"
+								Count: 1b
+							}
+							{
+								id: "rftoolsbase:machine_base"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0000000000000C00"

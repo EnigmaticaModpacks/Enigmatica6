@@ -1,0 +1,45 @@
+#Illagers In Raids Attack Animals?
+"Illagers in raids attack animals?" = false
+#Witches Attack Villagers?
+"Witches attack villagers?" = true
+#This will make Illusioners get involved in raids
+"Have illusioners in raids?" = true
+#Guards will attack all hostiles with this option
+"Guards attack all mobs?" = false
+#Guards won't attack mobs in this list if AttackAllMobs is enabled, for example, putting minecraft:creeper in this list will make guards ignore creepers.
+"Mob BlackList" = []
+#This makes villagers run from polar bears, as anyone with common sense would.
+"Have Villagers have some common sense?" = true
+#This makes Illagers run from polar bears, as anyone with common sense would.
+"Have Illagers have some common sense?" = true
+#This makes Guards run from polar bears, as anyone with common sense would.
+"Have Guards have some common sense?" = false
+#This lets Guards open doors.
+"Have Guards open doors?" = true
+#This will make guards raise their shields all the time, on default they will only raise their shields under certain conditions
+"Have Guards raise their shield all the time?" = false
+#This makes guards form a phalanx
+"Have guards form a phalanx?" = true
+#This will make guards attempt to avoid friendly fire.
+"Have guards attempt to avoid firing into other friendlies? (Experimental)" = false
+#This will make it so villagers will only be converted into guards if the player has hero of the village
+"Make it so players have to have hero of the village to convert villagers into guards?" = false
+"Have it so blacksmiths heal golems under 60 health?" = true
+"Have it so clerics heal guards and players with hero of the village?" = true
+#This is the range in which the guards will be aggroed to mobs that are attacking villagers. Higher values are more resource intensive, and setting this to zero will disable the goal.
+#Range: -500.0 ~ 500.0
+Range = 50.0
+#Range: -500.0 ~ 500.0
+"Guard Health" = 20.0
+#Range: -500.0 ~ 500.0
+"Guard speed" = 0.5
+#Range: -500.0 ~ 500.0
+"Guard follow range" = 25.0
+#How much health a guard regenerates.
+#Range: -500.0 ~ 500.0
+"Guard health regeneration amount" = 1.0
+"Allow guard arrows to damage villagers, iron golems, or other guards? The i-frames will still be shown for them but they won't lose any health if this is set to false" = true
+"Allow armorers and weaponsmiths repair guard items when down below half durability?" = true
+"Allow players to give guards stuff only if they have the hero of the village effect?" = true
+"Allow players to set guard patrol points only if they have hero of the village" = true
+

@@ -1,9 +1,12 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/create/emptying/';
+
     const recipes = [
         {
             input: 'farmersdelight:milk_bottle',
             container: 'minecraft:glass_bottle',
-            fluid: Fluid.of('minecraft:milk', 250)
+            fluid: Fluid.of('minecraft:milk', 250),
+            id: `${id_prefix}milk_bottle`
         }
     ];
 
@@ -20,9 +23,6 @@ onEvent('recipes', (event) => {
     });
 
     recipes.forEach((recipe) => {
-        const re = event.recipes.create.emptying([recipe.fluid, recipe.container], recipe.input);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event.recipes.create.emptying([recipe.fluid, recipe.container], recipe.input).id(recipe.id);
     });
 });

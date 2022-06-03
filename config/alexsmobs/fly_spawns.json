@@ -1,21 +1,16 @@
 {
-  "biomes": [
-    [
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_CATEGORY",
-        "negate": true,
-        "value": "ocean"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "ocean"
-      }
+    "biomes": [
+        [
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "overworld"
+            },
+            {
+                "type": "BIOME_CATEGORY",
+                "negate": false,
+                "value": "swamp"
+            }
+        ]
     ]
-  ]
 }

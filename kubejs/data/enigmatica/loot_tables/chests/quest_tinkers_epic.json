@@ -1,0 +1,287 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:golden_carrot",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{RepairCost:0,display:{Name:'{\"text\":\"\\'Luckier\\' Carrot\"}'}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_brick",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 6,
+                                "max": 18
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:nahuatl",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:bloodbone",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:blazing_blood_bucket",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_refined_glowstone\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"kubejs:molten_sky\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"kubejs:molten_blazing\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_slimesteel\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_electrum\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"materialis:molten_elementium\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_cobalt\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"kubejs:molten_infused_iron\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"materialis:molten_terrasteel\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_refined_obsidian\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"kubejs:molten_blazing\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_slimesteel\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"materialis:molten_terrasteel\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"kubejs:molten_infused_iron\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_cobalt\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"materialis:molten_elementium\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_electrum\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_refined_obsidian\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"kubejs:molten_sky\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_refined_glowstone\",Amount:100}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

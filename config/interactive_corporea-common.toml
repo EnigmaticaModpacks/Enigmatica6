@@ -1,0 +1,20 @@
+
+[Mana]
+	#Mana consumption per tick while the halo interface is open
+	#Range: 0 ~ 100
+	requestingHaloStaticConsumption = 1
+	#Mana consumption when the displayed item list is updated
+	#Range: 0 ~ 100
+	requestingHaloUpdateConsumption = 10
+	#Mana consumption PER ITEM to quantize items
+	#Range: 0 ~ 100
+	quantizationConsumption = 20
+	#The mana capacity of the Quantization Device (recommended to be larger than <quantizationConsumption> * 256)
+	#Range: > 1
+	quantizationDeviceManaCapacity = 10000
+
+[Animations]
+	#The animation speed of the quantization of items (that's the ticks of one stage, and there's three stages, so the full animation time will be 3 * <this value>)
+	#Range: 1 ~ 100
+	quantizationAnimationSpeed = 10
+

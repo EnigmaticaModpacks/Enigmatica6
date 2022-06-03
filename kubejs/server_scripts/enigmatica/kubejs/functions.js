@@ -31,6 +31,11 @@ function getPreferredItemInTag(tag) {
             .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air);
     return pref;
 }
+
+function getItemsInTag(tag) {
+    let items = utils.listOf(tag.stacks).toArray();
+    return items;
+}
 function compareIndices(a, b, tag) {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
@@ -41,9 +46,6 @@ function compareIndices(a, b, tag) {
 
     console.error('[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!'));
     return 0;
-}
-function wrapArray(array) {
-    return utils.listOf(array).toArray();
 }
 
 function getStrippedLogFrom(logBlock) {
@@ -65,3 +67,20 @@ const unificationBlacklist = [
 const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
 };
+
+// lt  = .slice(0, index)
+// lte = .slice(0, index + 1)
+// gt  = .slice(index)
+// gte = .slice(index + 1)
+
+function lowerTiers(tiers, tier) {
+    return tiers.slice(0, tiers.indexOf(tier));
+}
+
+// transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
+function fallback_id(recipe, id_prefix) {
+    if (recipe.getId().includes(':kjs_')) {
+        recipe.serializeJson(); // without this the hashes *will* collide
+        recipe.id(id_prefix + 'md5_' + recipe.getUniqueId());
+    }
+}

@@ -8,7 +8,7 @@
 	#If set to 'true' anything that prevents mobspawning !by this mod!, will also prevent EVERY natural mobspawning of any mobtype. When set to 'false' it'll only stop monsters of type 'MONSTER' from spawning.
 	mobSpawningDenyAllTypes = false
 	#Features generating random ores in AstralSorcery will not spawn ores from mods listed here.
-	modidOreBlacklist = ["create", "eidolon", "occultism", "techreborn", "gregtech","mekanism","thermal","undergarden","immersiveengineering","tmechworks","mapperbase","minecraft","tconstruct"]
+	modidOreBlacklist = ["create", "eidolon", "occultism", "techreborn", "gregtech","mekanism","thermal","undergarden","immersiveengineering","tmechworks","mapperbase","minecraft","tconstruct","byg"]
 	#Set this to false to prevent players from being affected by entity-related colored lens effects.
 	doColoredLensesAffectPlayers = true
 
@@ -16,14 +16,6 @@
 	#Sets the amount of damage reduction a player gets when being hit by a DE chaos-damage-related damagetype.
 	#Range: 0.0 ~ 1.0
 	capeChaosResistance = 0.8
-	#If this is set to true, charged crystals tools can revert back to their inert state.
-	chargedToolsRevert = true
-	#Defines the minimum uses a user at least gets before it's trying to revert to an inert crystal tool.
-	#Range: 0 ~ 2147483646
-	chargedToolsRevertStart = 40
-	#After 'chargedCrystalToolsRevertStart' uses, it will random.nextInt(chance) == 0 try and see if the tool gets reverted to its inert crystal tool.
-	#Range: 1 ~ 1073741823
-	chargedToolsRevertChance = 80
 
 	[tools.wands]
 		#Sets the quick-charge cost for one usage of the illumination wand
@@ -90,22 +82,12 @@
 
 	[perks.root]
 
-		[perks.root.armara]
-			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
-			#Range: 0.10000000149011612 ~ 20.0
-			expMultiplier = 1.0
-
-		[perks.root.aevitas]
-			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
-			#Range: 0.10000000149011612 ~ 20.0
-			expMultiplier = 1.0
-
 		[perks.root.vicio]
 			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
 			#Range: 0.10000000149011612 ~ 20.0
 			expMultiplier = 1.0
 
-		[perks.root.discidia]
+		[perks.root.armara]
 			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
 			#Range: 0.10000000149011612 ~ 20.0
 			expMultiplier = 1.0
@@ -115,15 +97,76 @@
 			#Range: 0.10000000149011612 ~ 20.0
 			expMultiplier = 1.0
 
+		[perks.root.discidia]
+			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
+			#Range: 0.10000000149011612 ~ 20.0
+			expMultiplier = 1.0
+
+		[perks.root.aevitas]
+			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
+			#Range: 0.10000000149011612 ~ 20.0
+			expMultiplier = 1.0
+
 	[perks.key]
 
-		[perks.key.proj_proximity]
-			#Defines the distance at which no additional damage is awarded.
-			#Range: 4.0 ~ 65536.0
-			capDistance = 100.0
-			#Defines the maximum multiplier that can be reached if the distance when hitting something with projectiles is basically nothing.
+		[perks.key.no_armor]
+			#The multiplier that is applied to damage the player receives. The lower the more damage is negated.
+			#Range: 0.10000000149011612 ~ 1.0
+			damageTakenMultiplier = 0.699999988079071
+
+		[perks.key.culling]
+			#Defines the percentage at how low the entities' health as to be to then cull the entity.
+			#Range: 0.05000000074505806 ~ 0.5
+			cullHealth = 0.15000000596046448
+			#Defines the amount of starlight charge consumed per culling attempt.
+			#Range: 1 ~ 500
+			chargeCost = 250
+
+		[perks.key.proj_distance]
+			#Defines the distance that must be reached to achieve the maximum damage multiplier
+			#Range: 100.0 ~ 65536.0
+			capDistance = 6400.0
+			#Defines the maximum multiplier that can be reached if the 'capDistance' is reached or surpassed when hitting something
 			#Range: 0.05000000074505806 ~ 5.0
 			maxAdditionalMultiplier = 0.75
+
+		[perks.key.damage_effects]
+			#Defines the chance per hit to apply additional effects.
+			#Range: 0.009999999776482582 ~ 0.20000000298023224
+			applicationChance = 0.07999999821186066
+
+		[perks.key.growable]
+			#Sets the chance to try to see if a random plant near the player gets bonemeal'd.
+			#Range: 0.0 ~ 1.0
+			chanceToBonemeal = 0.30000001192092896
+			#Defines the radius around which the perk effect should apply around the player.
+			#Range: 1 ~ 16
+			radius = 3
+			#Defines the amount of starlight charge consumed per growth-attempt.
+			#Range: 1 ~ 500
+			chargeCost = 120
+
+		[perks.key.rampage]
+			#Defines the chance to gain rampage buffs when killing a mob
+			#Range: 0.05000000074505806 ~ 1.0
+			rampageChance = 1.0
+			#Defines the duration of the rampage in ticks
+			#Range: 10 ~ 100000
+			rampageDuration = 100
+
+		[perks.key.cheat_death]
+			#Once the potion effect gets applied, it'll take at least this amount of ticks or a server restart until it can be re-applied by this perk.
+			#Range: > 1
+			cooldownPotionApplication = 600
+			#Once the potion effect gets applied by any of the triggers, this will be used as tick-duration of the potion effect.
+			#Range: > 1
+			potionDuration = 500
+			#Once the potion effect gets applied by any of the triggers, this will be used as amplifier of the potion effect.
+			#Range: 0 ~ 4
+			potionAmplifier = 0
+			#Defines the amount of starlight charge consumed per death-prevention.
+			#Range: 1 ~ 500
+			chargeCost = 350
 
 		[perks.key.mending]
 			#Sets the chance (Random.nextInt(chance) == 0) to try to see if a piece of armor on the player that is damageable and damaged can be repaired; the lower the more likely.
@@ -132,6 +175,25 @@
 			#Defines the amount of starlight charge consumed per restored durability point.
 			#Range: 1 ~ 500
 			chargeCost = 60
+
+		[perks.key.stone_enrichment]
+			#Defines the radius where a random position to generate a ore at is checked for
+			#Range: 1 ~ 15
+			enrichmentRadius = 3
+			#Sets the chance (Random.nextInt(chance) == 0) to try to see if a random stone next to the player should get turned into an ore; the lower the more likely
+			#Range: 2 ~ 512
+			chanceToEnrich = 55
+			#Defines the amount of starlight charge consumed per created ore.
+			#Range: 1 ~ 500
+			chargeCost = 150
+
+		[perks.key.bleed]
+			#Defines the duration of the bleeding effect when applied. Refreshes this duration when a it is applied again
+			#Range: 5 ~ 400
+			bleedDuration = 40
+			#Defines the base chance a bleed can/is applied when an entity is being hit by this entity
+			#Range: 0.01 ~ 1.0
+			bleedChance = 0.25
 
 		[perks.key.lightning_arc]
 			#Sets the chance to spawn a damage-arc effect when an enemy is hit (value is in percent).
@@ -149,35 +211,38 @@
 			#Range: 1 ~ 500
 			chargeCost = 60
 
+		[perks.key.proj_proximity]
+			#Defines the distance at which no additional damage is awarded.
+			#Range: 4.0 ~ 65536.0
+			capDistance = 100.0
+			#Defines the maximum multiplier that can be reached if the distance when hitting something with projectiles is basically nothing.
+			#Range: 0.05000000074505806 ~ 5.0
+			maxAdditionalMultiplier = 0.75
+
 		[perks.key.disarm]
 			#Defines the chance (in percent) per hit to make the attacked entity drop its armor.
 			#Range: 0.0 ~ 1.0
 			dropChance = 0.05000000074505806
 
-		[perks.key.cheat_death]
-			#Once the potion effect gets applied, it'll take at least this amount of ticks or a server restart until it can be re-applied by this perk.
-			#Range: > 1
-			cooldownPotionApplication = 600
-			#Once the potion effect gets applied by any of the triggers, this will be used as tick-duration of the potion effect.
-			#Range: > 1
-			potionDuration = 500
-			#Once the potion effect gets applied by any of the triggers, this will be used as amplifier of the potion effect.
-			#Range: 0 ~ 4
-			potionAmplifier = 0
-			#Defines the amount of starlight charge consumed per death-prevention.
-			#Range: 1 ~ 500
-			chargeCost = 350
+		[perks.key.last_breath]
+			#Defines the dig speed multiplier you get additionally to your normal dig speed when being low on health (25% health = 75% of this additional multiplier)
+			#Range: 0.1 ~ 10.0
+			digSpeedMultiplier = 1.5
+			#Defines the damage multiplier you get additionally to your normal damage when being low on health (25% health = 75% of this additional multiplier)
+			#Range: 0.1 ~ 10.0
+			damageMultiplier = 3.0
 
-		[perks.key.stone_enrichment]
-			#Defines the radius where a random position to generate a ore at is checked for
-			#Range: 1 ~ 15
-			enrichmentRadius = 3
-			#Sets the chance (Random.nextInt(chance) == 0) to try to see if a random stone next to the player should get turned into an ore; the lower the more likely
-			#Range: 2 ~ 512
-			chanceToEnrich = 55
-			#Defines the amount of starlight charge consumed per created ore.
-			#Range: 1 ~ 500
-			chargeCost = 150
+		[perks.key.void_trash]
+			#List items that should count as trash and should be voided.
+			trashItems = ["minecraft:dirt", "minecraft:cobblestone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:stone", "minecraft:gravel"]
+			#Chance that a voided drop will instead yield a random ore out of the configured ore table.
+			#Range: 0.0 ~ 1.0
+			oreChance = 0.019999999552965164
+
+		[perks.key.damage_armor]
+			#Defines how much damage is dealt additionally to armor. This value gets multiplied by the amount of armorpieces the entity you're attacking wears.
+			#Range: 0.009999999776482582 ~ 0.20000000298023224
+			damagePerArmor = 0.05000000074505806
 
 		[perks.key.spawn_lights]
 			#Defines the rate in ticks a position to spawn a light in is attempted to be found near the player
@@ -190,90 +255,17 @@
 			#Range: 1 ~ 500
 			chargeCost = 60
 
-		[perks.key.rampage]
-			#Defines the chance to gain rampage buffs when killing a mob
-			#Range: 0.05000000074505806 ~ 1.0
-			rampageChance = 1.0
-			#Defines the duration of the rampage in ticks
-			#Range: 10 ~ 100000
-			rampageDuration = 100
-
-		[perks.key.bleed]
-			#Defines the duration of the bleeding effect when applied. Refreshes this duration when a it is applied again
-			#Range: 5 ~ 400
-			bleedDuration = 40
-			#Defines the base chance a bleed can/is applied when an entity is being hit by this entity
-			#Range: 0.01 ~ 1.0
-			bleedChance = 0.25
-
-		[perks.key.culling]
-			#Defines the percentage at how low the entities' health as to be to then cull the entity.
-			#Range: 0.05000000074505806 ~ 0.5
-			cullHealth = 0.15000000596046448
-			#Defines the amount of starlight charge consumed per culling attempt.
-			#Range: 1 ~ 500
-			chargeCost = 250
-
-		[perks.key.growable]
-			#Sets the chance to try to see if a random plant near the player gets bonemeal'd.
-			#Range: 0.0 ~ 1.0
-			chanceToBonemeal = 0.30000001192092896
-			#Defines the radius around which the perk effect should apply around the player.
-			#Range: 1 ~ 16
-			radius = 3
-			#Defines the amount of starlight charge consumed per growth-attempt.
-			#Range: 1 ~ 500
-			chargeCost = 120
-
-		[perks.key.void_trash]
-			#List items that should count as trash and should be voided.
-			trashItems = ["minecraft:dirt", "minecraft:cobblestone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:stone", "minecraft:gravel"]
-			#Chance that a voided drop will instead yield a random ore out of the configured ore table.
-			#Range: 0.0 ~ 1.0
-			oreChance = 0.019999999552965164
-
-		[perks.key.proj_distance]
-			#Defines the distance that must be reached to achieve the maximum damage multiplier
-			#Range: 100.0 ~ 65536.0
-			capDistance = 6400.0
-			#Defines the maximum multiplier that can be reached if the 'capDistance' is reached or surpassed when hitting something
-			#Range: 0.05000000074505806 ~ 5.0
-			maxAdditionalMultiplier = 0.75
-
-		[perks.key.damage_effects]
-			#Defines the chance per hit to apply additional effects.
-			#Range: 0.009999999776482582 ~ 0.20000000298023224
-			applicationChance = 0.07999999821186066
-
-		[perks.key.last_breath]
-			#Defines the dig speed multiplier you get additionally to your normal dig speed when being low on health (25% health = 75% of this additional multiplier)
-			#Range: 0.1 ~ 10.0
-			digSpeedMultiplier = 1.5
-			#Defines the damage multiplier you get additionally to your normal damage when being low on health (25% health = 75% of this additional multiplier)
-			#Range: 0.1 ~ 10.0
-			damageMultiplier = 3.0
-
-		[perks.key.no_armor]
-			#The multiplier that is applied to damage the player receives. The lower the more damage is negated.
-			#Range: 0.10000000149011612 ~ 1.0
-			damageTakenMultiplier = 0.699999988079071
-
-		[perks.key.damage_armor]
-			#Defines how much damage is dealt additionally to armor. This value gets multiplied by the amount of armorpieces the entity you're attacking wears.
-			#Range: 0.009999999776482582 ~ 0.20000000298023224
-			damagePerArmor = 0.05000000074505806
-
 	[perks.type]
-
-		[perks.type.miningsize]
-			#Defines the amount of starlight charge consumed per additional block break through this attribute.
-			#Range: 1 ~ 500
-			chargeCost = 4
 
 		[perks.type.dodge]
 			#Defines the amount of starlight charge consumed per dodged damage.
 			#Range: 1 ~ 500
 			chargeCost = 80
+
+		[perks.type.miningsize]
+			#Defines the amount of starlight charge consumed per additional block break through this attribute.
+			#Range: 1 ~ 500
+			chargeCostPerBreak = 2
 
 [enchantment_amulet]
 	#Defines the chance to roll a 2nd-enchantment-manipulating roll on the amulet. Value defines a percent chance from 0% to 100%. Setting this to 0 also prevents a 3rd roll
@@ -450,12 +442,12 @@
 			#Range: 1 ~ 2048
 			maxAmount = 5
 			#Defines the maximum default tick-time until a fish may be fished by the ritual. Gets reduced internally the more starlight was provided at the ritual. Has to be bigger as the minimum time; if it isn't it'll be set to the minimum.
-			#Range: > 20
+			#Range: > 10
 			maxFishTickTime = 500
 			#Defines the minimum default tick-time until a fish may be fished by the ritual. Gets reduced internally the more starlight was provided at the ritual.
 			#Range: > 20
+			
 			minFishTickTime = 100
-
 		[constellation.effect.pelotrio]
 			#Set this to false to disable this ritual effect
 			enabled = true
@@ -502,9 +494,9 @@
 			#Set the amount of food recovered by food cycle.
 			#Range: 0.0 ~ 100.0
 			foodPerCycle = 1.0
-			#Set the amount alignment charge consumed per block placed
-			#Range: 0 ~ 1000
-			chargeCostPerBlock = 2
+			#Set the amount alignment charge consumed per tick when walking/standing in the air
+			#Range: 0.0 ~ 100.0
+			chargeCostPerTravelTick = 2
 			#Set the amount alignment charge consumed per feed-cycle
 			#Range: 0 ~ 1000
 			chargeCostPerFood = 100
@@ -675,7 +667,7 @@
 
 	[registries.fluid_rarities]
 		#Defines fluid-rarities and amounts for the evershifting fountain's neromantic prime. The lower the relative rarity, the more rare the fluid. Format: <FluidName>;<guaranteedMbAmount>;<additionalRandomMbAmount>;<rarity>
-		fluid_rarities = ["minecraft:water;2147483647;2147483647;14000", "minecraft:lava;4000000;1000000;7500","immersivepetroleum:oil;2500000;1000000;5000","mekanismgenerators:flowing_fusion_fuel;1000000;500000;100","industrialforegoing:sewage_fluid;10000000;5000000;250","bloodmagic:life_essence_fluid_flowing;5000000;2500000;250","industrialforegoing:sludge_fluid;1000000;1000000;200","immersivepetroleum:napalm;500000;500000;100","industrialforegoing:essence_fluid;500000;100000;300", "mekanism:flowing_heavy_water;10000000;2000000;2500"]
+		fluid_rarities = ["minecraft:water;2147483647;2147483647;14000", "minecraft:lava;4000000;1000000;7500","pneumaticcraft:oil;2500000;1000000;5000","mekanismgenerators:flowing_fusion_fuel;1000000;500000;100","industrialforegoing:sewage_fluid;10000000;5000000;250","bloodmagic:life_essence_fluid_flowing;5000000;2500000;250","industrialforegoing:sludge_fluid;1000000;1000000;200","immersivepetroleum:napalm;500000;500000;100","industrialforegoing:essence_fluid;500000;100000;300", "mekanism:flowing_heavy_water;10000000;2000000;2500"]
 
 	[registries.technical_entities]
 		#Defines entities whose purpose is mostly technical and less gameplay impactful. Those will be excluded from effects that manipulate entities. Add entities by their entity type name.Format: <EntityTypeName>
@@ -683,7 +675,7 @@
 
 	[registries.tile_acceleration_blacklist]
 		#Accepts & matches against strings: 1) what a tileentity-type's registry name starts with, 2) what a tileentity's fully qualified class name starts with, 3) (special case) a fully qualified class name (Instances & sub-class instance of that class will be blacklisted)
-		tile_acceleration_blacklist = ["appeng", "raoulvdberge.refinedstorage", "hellfirepvp.astralsorcery.common.tile.base.network.TileTransmissionBase", "hellfirepvp.astralsorcery.common.tile.base.network.TileSourceBase", "hellfirepvp.astralsorcery.common.tile.altar.TileAltar", "hellfirepvp.astralsorcery.common.tile.TileAttunementAltar", "hellfirepvp.astralsorcery.common.tile.TileObservatory", "hellfirepvp.astralsorcery.common.tile.TileRitualLink", "hellfirepvp.astralsorcery.common.tile.TileRitualPedestal", "hellfirepvp.astralsorcery.common.tile.TileTranslucentBlock", "hellfirepvp.astralsorcery.common.tile.TileTreeBeaconComponent", "hellfirepvp.astralsorcery.common.tile.TileVanishing"]
+		tile_acceleration_blacklist = ["net.minecraft.tileentity.PistonTileEntity", "net.minecraft.tileentity.LockableLootTileEntity", "appeng", "raoulvdberge.refinedstorage", "hellfirepvp.astralsorcery.common.tile.base.network.TileTransmissionBase", "hellfirepvp.astralsorcery.common.tile.base.network.TileSourceBase", "hellfirepvp.astralsorcery.common.tile.altar.TileAltar", "hellfirepvp.astralsorcery.common.tile.TileAttunementAltar", "hellfirepvp.astralsorcery.common.tile.TileObservatory", "hellfirepvp.astralsorcery.common.tile.TileRitualLink", "hellfirepvp.astralsorcery.common.tile.TileRitualPedestal", "hellfirepvp.astralsorcery.common.tile.TileSpectralRelay", "hellfirepvp.astralsorcery.common.tile.TileTelescope", "hellfirepvp.astralsorcery.common.tile.TileTranslucentBlock", "hellfirepvp.astralsorcery.common.tile.TileTreeBeaconComponent", "hellfirepvp.astralsorcery.common.tile.TileVanishing"]
 
 	[registries.amulet_enchantments]
 		#Defines a whitelist of which enchantments can be rolled and buffed by the enchantment-amulet. The higher the weight, the more likely that roll is selected.Format: <enchantment-registry-name>;<weight>
@@ -696,7 +688,6 @@
 	[registries.perk_void_trash_ore]
 		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define item-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
 		perk_void_trash_ore = ["forge:ores/aluminum;1200","forge:ores/apatite;700","forge:ores/mana;200", "forge:ores/bitumen;1000","forge:ores/cinnabar;500","forge:ores/coal;5200","forge:ores/copper;2000","forge:ores/diamond;120","forge:ores/dimensional;20","forge:ores/emerald;100","forge:ores/fluorite;50","forge:ores/gold;550","forge:ores/iron;2500","forge:ores/lapis;360","forge:ores/lead;1500","forge:ores/nickel;100","forge:ores/osmium;1500","forge:ores/potassium_nitrate;250","forge:ores/redstone;700","forge:ores/silver;1000","forge:ores/sulfur;300","forge:ores/tin;1800","forge:ores/uranium;400","forge:ores/zinc;1000"]
-
 	[registries.perk_stone_enrichment_ore]
 		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define block-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
 		perk_stone_enrichment_ore = ["forge:ores/aluminum;1200","forge:ores/apatite;700","forge:ores/mana;200", "forge:ores/bitumen;1000","forge:ores/cinnabar;500","forge:ores/coal;5200","forge:ores/copper;2000","forge:ores/diamond;120","forge:ores/dimensional;20","forge:ores/emerald;100","forge:ores/fluorite;50","forge:ores/gold;550","forge:ores/iron;2500","forge:ores/lapis;360","forge:ores/lead;1500","forge:ores/nickel;100","forge:ores/osmium;1500","forge:ores/potassium_nitrate;250","forge:ores/redstone;700","forge:ores/silver;1000","forge:ores/sulfur;300","forge:ores/tin;1800","forge:ores/uranium;400","forge:ores/zinc;1000"]
@@ -704,7 +695,6 @@
 	[registries.mineralis_ritual_ore]
 		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define block-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
 		mineralis_ritual_ore = ["forge:ores/aluminum;1200","forge:ores/apatite;700","forge:ores/mana;200", "forge:ores/bitumen;1000","forge:ores/cinnabar;500","forge:ores/coal;2400","forge:ores/copper;2000","forge:ores/diamond;120","forge:ores/dimensional;20","forge:ores/emerald;100","forge:ores/fluorite;50","forge:ores/gold;550","forge:ores/iron;2500","forge:ores/lapis;360","forge:ores/lead;1500","forge:ores/nickel;100","forge:ores/osmium;1500","forge:ores/potassium_nitrate;250","forge:ores/redstone;700","forge:ores/silver;1000","forge:ores/sulfur;300","forge:ores/tin;1800","forge:ores/uranium;400","forge:ores/zinc;1000"]
-
 	[registries.entity_transmutation]
 		#Defines the entity types the corrupted pelotrio ritual can transmute from and to. Format: <EntityTypeFrom>;<EntityTypeTo>
 		entity_transmutation = ["minecraft:skeleton;minecraft:wither_skeleton", "minecraft:villager;minecraft:witch", "minecraft:pig;minecraft:zombified_piglin", "minecraft:cow;minecraft:zombie", "minecraft:parrot;minecraft:ghast", "minecraft:chicken;minecraft:blaze", "minecraft:sheep;minecraft:stray", "minecraft:horse;minecraft:skeleton_horse"]

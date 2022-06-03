@@ -25,7 +25,7 @@ function pedestals_stoneworks(event, material, type) {
         recipeType = 'pedestals:pedestal_cobblegensilk';
     }
     //console.log(`Pedestals Recipe for Material: ${material}, Type: ${type}`);
-    event.custom({
+    fallback_id(event.custom({
         type: recipeType,
         ingredient: {
             item: material
@@ -34,7 +34,7 @@ function pedestals_stoneworks(event, material, type) {
             item: material,
             count: 1
         }
-    });
+    }), `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`);
 }
 
 function industrialforegoing_stoneworks(event, material, type) {
@@ -46,7 +46,7 @@ function industrialforegoing_stoneworks(event, material, type) {
         lavaConsume = 0;
     }
 
-    event.custom({
+    fallback_id(event.custom({
         output: {
             item: material,
             count: 1
@@ -56,16 +56,16 @@ function industrialforegoing_stoneworks(event, material, type) {
         waterConsume: waterConsume,
         lavaConsume: lavaConsume,
         type: 'industrialforegoing:stonework_generate'
-    });
+    }), `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`);
 }
 
 function thermal_stoneworks(event, material) {
-    event.custom({
+    fallback_id(event.custom({
         type: 'thermal:rock_gen',
         adjacent: 'minecraft:water',
         below: material,
         result: {
             item: material
         }
-    });
+    }), `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`);
 }

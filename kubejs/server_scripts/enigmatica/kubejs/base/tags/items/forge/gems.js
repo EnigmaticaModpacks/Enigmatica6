@@ -15,7 +15,8 @@ onEvent('item.tags', (event) => {
         'powah:crystal_blazing',
         'powah:crystal_niotic',
         'powah:crystal_spirited',
-        'powah:crystal_nitro'
+        'powah:crystal_nitro',
+        'astralsorcery:aquamarine'
     ]);
 
     event.add(gems + '/coal_coke', [

@@ -25,6 +25,7 @@
 				""
 				"~MuteTiefling"
 			]
+			optional: true
 			id: "0000000000000C40"
 			tasks: [{
 				id: "0000000000000C41"
@@ -289,6 +290,7 @@
 			]
 		}
 		{
+			title: "Andesite Casings"
 			x: 1.0d
 			y: 1.0d
 			subtitle: "That Was Below the Belt"
@@ -418,6 +420,7 @@
 			}]
 		}
 		{
+			title: "Mechanical Belts"
 			x: 1.5d
 			y: 3.0d
 			subtitle: "You're On a Roll Now"
@@ -532,6 +535,7 @@
 			}]
 		}
 		{
+			title: "Chutes"
 			x: 1.5d
 			y: 4.0d
 			subtitle: "Learning To Take Things in Slide"
@@ -944,7 +948,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -2.0d
 			y: 3.0d
 			subtitle: "Archimedean Screw"
 			description: [
@@ -954,7 +958,7 @@
 				""
 				"The block has a handy little directional indicator to help visualize the flow. A single pump can pressurize a large section of pipe, so be sure to spread them out. "
 			]
-			dependencies: ["0000000000000CD6"]
+			dependencies: ["0000000000000D11"]
 			id: "0000000000000D0F"
 			tasks: [{
 				id: "0000000000000D10"
@@ -971,11 +975,12 @@
 			}]
 		}
 		{
-			x: -2.0d
+			title: "Fluid Pipes"
+			x: -1.0d
 			y: 3.0d
 			subtitle: "Clear the Channel"
 			description: ["Pipes are the primary means of conveying fluids. Fluid goes in, fluid goes out. Simple!"]
-			dependencies: ["0000000000000D0F"]
+			dependencies: ["0000000000000CD6"]
 			id: "0000000000000D11"
 			tasks: [{
 				id: "0000000000000D12"
@@ -994,7 +999,7 @@
 		}
 		{
 			icon: "create:fluid_valve"
-			x: -1.5d
+			x: -2.5d
 			y: 4.0d
 			subtitle: "Shut The Front Door"
 			description: ["Fluid valves may be opened and closed by applying some rotational force, for example with a Valve Handle. "]
@@ -1022,7 +1027,7 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: -3.0d
 			y: 5.0d
 			subtitle: "Reverse Osmosis Filter"
 			description: ["Doing the impossible is just another Tuesday in modded. Smart Fluid Pipes act as a fluid filter, either controlling what is allowed to be pulled from a connected tank, or what is allowed to continue down the line. "]
@@ -1043,12 +1048,14 @@
 			}]
 		}
 		{
+			title: "Fluid Tanks"
 			x: -3.0d
 			y: 3.0d
 			subtitle: "Unfathomably Deep"
 			description: [
 				"Fluid Tanks are a thematic multi-block tank for all your fluid storing needs. "
 				""
+				"While they can't be interacted with by the player directly, needing pipes to insert and extract fluids, they merge with adjacent tanks to form large multi-blocks for bulk storage."
 				"They can have a 1x1, 2x2, or 3x3 base and extend as high as you like. "
 			]
 			dependencies: ["0000000000000D11"]
@@ -1132,7 +1139,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: -1.5d
 			y: 4.0d
 			subtitle: "Spouting Off Nonsense"
 			description: ["The spout is paired with a Depot by placing it above the Depot. It will attempt to fill any item appearing on the Depot. For example, to make buckets of water, fill potion bottles, or make delicious tea!"]
@@ -1248,7 +1255,23 @@
 			tasks: [{
 				id: "0000000000000D2E"
 				type: "item"
-				item: "create:mechanical_piston"
+				title: "Mechanical Piston"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:mechanical_piston"
+								Count: 1b
+							}
+							{
+								id: "create:sticky_mechanical_piston"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -1558,7 +1581,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -2.0d
 			y: 5.0d
 			subtitle: "Well, There's an Upside and a Downside"
 			description: [

@@ -3,6 +3,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:normal/naturesaura/altar/';
+
     var data = {
         recipes: [
             {
@@ -10,7 +12,8 @@ onEvent('recipes', (event) => {
                 output: Item.of('compactmachines:wall', 32),
                 aura_type: 'naturesaura:overworld',
                 aura: 15000,
-                time: 100
+                time: 100,
+                id: `${id_prefix}compactmachines_wall`
             }
         ]
     };
@@ -23,6 +26,6 @@ onEvent('recipes', (event) => {
             aura_type: recipe.aura_type,
             aura: recipe.aura,
             time: recipe.time
-        });
+        }).id(recipe.id);
     });
 });

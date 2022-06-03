@@ -8,7 +8,8 @@ onEvent('item.tags', (event) => {
             'astralsorcery:marble_engraved',
             'astralsorcery:marble_raw',
             'astralsorcery:marble_runed',
-            'create:natural_scoria'
+            'create:natural_scoria',
+            'quark:deepslate'
         ])
         .remove(['#pneumaticcraft:reinforced_stone']);
 

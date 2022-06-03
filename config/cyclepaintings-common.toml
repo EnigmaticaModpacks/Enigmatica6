@@ -1,0 +1,7 @@
+
+[General]
+	#Split by a , (comma). The paintings to ignore during the cycle. You can either input an entire mod's prefix (only the part before the : (colon)) or the entire line found via 'showRegisteredPaintingsDebug'.
+	ignorePaintingsInCycleResourceLocation = "infernalexp,"
+	#When enabled, prints all paintings registered to the console. With this you can find which to add to the 'ignorePaintingsInCycleResourceLocationPrefix' config.
+	showRegisteredPaintingsDebug = false
+

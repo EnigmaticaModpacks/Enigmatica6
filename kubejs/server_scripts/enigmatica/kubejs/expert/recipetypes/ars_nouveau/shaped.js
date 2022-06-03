@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'ars_nouveau:arcane_core',
             pattern: ['CAC', 'BDB', 'CAC'],
@@ -79,14 +79,20 @@ onEvent('recipes', (event) => {
                 B: 'ars_nouveau:mana_bloom'
             },
             id: 'ars_nouveau:mana_fiber'
+        },
+        {
+            output: 'ars_nouveau:basic_spell_turret',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'eidolon:enchanted_ash',
+                B: 'quark:gold_bars',
+                C: '#forge:storage_blocks/mana'
+            },
+            id: 'ars_nouveau:basic_spell_turret'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

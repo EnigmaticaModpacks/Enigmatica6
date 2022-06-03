@@ -1,0 +1,264 @@
+
+#Configuration related to Immersive Engineering wires
+[wires]
+	#Attempts to make the internal data structures used for wires consistent with the connectors in the world.Use with care and backups and only when suspecting corrupted data.
+	#This option will check and load all connection endpoints and may slow down the world loading process.
+	sanitizeConnections = false
+	#If this is enabled, wires connected to power sources will cause damage to entities touching them
+	#This shouldn't cause significant lag but possibly will. If it does, please report it at https://github.com/BluSunrize/ImmersiveEngineering/issues unless there is a report of it already.
+	enableWireDamage = true
+	#If this is enabled, placing a block in a wire will break it (drop the wire coil)
+	blocksBreakWires = true
+
+	[wires.copper]
+		#The maximum length of copper wires
+		#Range: > 0
+		maxLength = 32
+		#The transfer rate of copper wire in IF/t
+		#Range: > 0
+		transferRate = 8192
+		#The percentage of power lost every 16 blocks of distance in copper wire
+		#Range: 0.0 ~ 1.0
+		loss = 0.05
+		#In- and output rates of copper wire connectors. This is independant of the transferrate of the wires.
+		#Range: > 0
+		wireConnectorInput = 1024
+
+	[wires.electrum]
+		#The maximum length of electrum wires
+		#Range: > 0
+		maxLength = 32
+		#The transfer rate of electrum wire in IF/t
+		#Range: > 0
+		transferRate = 32768
+		#The percentage of power lost every 16 blocks of distance in electrum wire
+		#Range: 0.0 ~ 1.0
+		loss = 0.025
+		#In- and output rates of electrum wire connectors. This is independant of the transferrate of the wires.
+		#Range: > 0
+		wireConnectorInput = 4096
+
+	[wires.hv]
+		#The maximum length of hv wires
+		#Range: > 0
+		maxLength = 64
+		#The transfer rate of hv wire in IF/t
+		#Range: > 0
+		transferRate = 131072
+		#The percentage of power lost every 16 blocks of distance in hv wire
+		#Range: 0.0 ~ 1.0
+		loss = 0.025
+		#In- and output rates of hv wire connectors. This is independant of the transferrate of the wires.
+		#Range: > 0
+		wireConnectorInput = 16384
+
+	[wires.rope]
+		#The maximum length of rope wires
+		#Range: > 0
+		maxLength = 64
+
+	[wires.cable]
+		#The maximum length of cable wires
+		#Range: > 0
+		maxLength = 64
+
+	[wires.redstone]
+		#The maximum length of redstone wires
+		#Range: > 0
+		maxLength = 64
+
+	[wires.insulated_copper]
+		#The maximum length of insulated_copper wires
+		#Range: > 0
+		maxLength = 32
+
+	[wires.insulated_electrum]
+		#The maximum length of insulated_electrum wires
+		#Range: > 0
+		maxLength = 32
+
+[machines]
+	#The Flux that will be output by the lightning rod when it is struck
+	#Range: > 0
+	lightning_output = 1073741824
+	#The Flux per tick that the Diesel Generator will output. The burn time of the fuel determines the total output
+	#Range: > 0
+	dieselGen_output = 16384
+	#The Flux per tick the Blast Furnace Preheater will consume to speed up the Blast Furnace
+	#Range: > 1
+	preheater_consumption = 256
+	#The amount of damage a sawblade in the sawmill takes for a single recipe.
+	#Range: > 1
+	sawmill_bladeDamage = 1
+	#The Flux the Assembler will consume to craft an item from a recipe
+	#Range: > 1
+	assembler_consumption = 1024
+
+[machines.garden_cloche]
+	#The Flux per tick the cloche consumes to grow plants
+	#Range: > 1
+	consumption = 4096
+	#A modifier to apply to the cloches total growing speed
+	#Range: 0.001 ~ 1000.0
+	growth_modifier = 1.25
+
+[machines.arc_furnace]
+	#A modifier to apply to the energy costs of every arc furnace recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 2.5
+	#A modifier to apply to the time of every arc furnace recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.25
+
+[machines.metal_press]
+	#A modifier to apply to the energy costs of every metal press recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 20.0
+	#A modifier to apply to the time of every metal press recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.5
+
+[machines.crusher]
+	#A modifier to apply to the energy costs of every crusher recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 25.6
+	#A modifier to apply to the time of every crusher recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.1
+
+[machines.squeezer]
+	#A modifier to apply to the energy costs of every squeezer recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 1.6
+	#A modifier to apply to the time of every squeezer recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.5
+
+[machines.fermenter]
+	#A modifier to apply to the energy costs of every fermenter recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 1.6
+	#A modifier to apply to the time of every fermenter recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.5
+
+[machines.refinery]
+	#A modifier to apply to the energy costs of every refinery recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 25.6
+
+[machines.auto_workbench]
+	#A modifier to apply to the energy costs of every auto workbench recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 8.0
+	#A modifier to apply to the time of every auto workbench recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.1
+
+[machines.sawmill]
+	#A modifier to apply to the energy costs of every sawmill recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 25.6
+	#A modifier to apply to the time of every sawmill recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.75
+
+[machines.turret]
+	#The Flux per tick the chemthrower turret consumes to shoot
+	#Range: > 1
+	chem_consumption = 16
+
+[machines.excavator]
+	#The Flux per tick the Excavator will consume to dig
+	#Range: > 1
+	consumption = 10240
+	#The speed of the Excavator. Basically translates to how many degrees per tick it will turn.
+	#Range: 0.001 ~ 1000.0
+	speed = 2.0
+	#Set this to false to disable the ridiculous amounts of particles the Excavator spawns
+	particles = true
+	#The threshold the perlin noise has to cross for a mineral vein to be generated. Higher means less likely.
+	#Range: 0.0 ~ 1.0
+	chance = 0.9
+	#The maximum amount of yield one can get out of a chunk with the excavator. Set a number smaller than zero to make it infinite
+	#Range: > -1
+	yield = 2000000
+	#The maximum depletion a vein can start with, as a decimal value. When a vein generates, a random percentage up to this value is depleted from it
+	#Range: 0.0 ~ 1.0
+	initial_depletion = 0.5
+	#List of dimensions that can't contain minerals. Default: The End.
+	dimBlacklist = ["minecraft:the_end"]
+
+[ores.copper]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[ores.bauxite]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[ores.lead]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[ores.silver]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[ores.nickel]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[ores.uranium]
+	#The maximum size of a vein. Set to 0 to disable generation
+	#Range: > 0
+	vein_size = 0
+
+[tools]
+	#The maximum durability of the Engineer's Hammer. Used up when hammering ingots into plates.
+	#Range: > 1
+	hammer_durability = 128
+
+[tools.bullet_damage]
+	#The amount of base damage a Casull Cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	casull = 16.0
+	#The amount of base damage a armor piercing Cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	ap = 16.0
+	#The amount of base damage a single part of buckshot inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	buck = 3.0
+	#The amount of base damage a dragon breath cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	dragon = 4.0
+	#The amount of base damage a homing cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	homing = 16.0
+	#The amount of base damage a wolfpack cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	wolfpack = 5.0
+	#The amount of base damage the sub-projectiles of a  wolfpack cartridge inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	wolfpack_part = 10.0
+	#The amount of damage a silver bullet inflicts
+	#Range: 0.0 ~ 1.7976931348623157E308
+	silver = 12.0
+
+[tools.chemthrower]
+	#The mb of fluid the Chemical Thrower will consume per tick of usage
+	#Range: > 1
+	consumption = 2
+
+[tools.railgun]
+	#The base amount of Flux consumed per shot by the Railgun
+	#Range: > 1
+	consumption = 600
+	#A modifier for the damage of all projectiles fired by the Railgun
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_modifier = 2.0

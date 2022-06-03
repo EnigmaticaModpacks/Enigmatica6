@@ -50,21 +50,9 @@ onEvent('fluid.registry', (event) => {
         },
         {
             type: 'thick',
-            id: 'molten_manasteel',
-            texture: '0x3287fc',
-            display: 'Molten Manasteel'
-        },
-        {
-            type: 'thick',
             id: 'molten_blazing',
             texture: '0xd79811',
             display: 'Molten Blazing Crystal'
-        },
-        {
-            type: 'thick',
-            id: 'molten_elementium',
-            texture: '0xee5bac',
-            display: 'Molten Elementium'
         },
         {
             type: 'thick',
@@ -86,21 +74,9 @@ onEvent('fluid.registry', (event) => {
         },
         {
             type: 'thick',
-            id: 'molten_terrasteel',
-            texture: '0x38e200',
-            display: 'Molten Terrasteel'
-        },
-        {
-            type: 'thick',
             id: 'molten_aeternium',
             texture: '0x2e847c',
             display: 'Molten Aeternium'
-        },
-        {
-            type: 'thick',
-            id: 'molten_alfsteel',
-            texture: '0xfbb616',
-            display: 'Molten Alfsteel'
         },
         {
             type: 'thick',
@@ -125,14 +101,44 @@ onEvent('fluid.registry', (event) => {
             id: 'molten_spirited',
             texture: '0x86c52d',
             display: 'Molten Spirited Crystal'
+        },
+        {
+            type: 'thick',
+            id: 'pink_ender_slime',
+            texture: '0xa504d1',
+            display: 'Molten Pink Enderslime'
+        },
+        {
+            type: 'thick',
+            id: 'molten_hardened_glass',
+            texture: '0x535054',
+            display: 'Molten Hardened Glass'
+        },
+        {
+            type: 'thick',
+            id: 'molten_signalum_glass',
+            texture: '0x968274',
+            display: 'Molten Signalum Glass'
+        },
+        {
+            type: 'thick',
+            id: 'molten_lumium_glass',
+            texture: '0x959674',
+            display: 'Molten Lumium Glass'
+        },
+        {
+            type: 'thick',
+            id: 'molten_enderium_glass',
+            texture: '0x356e5b',
+            display: 'Molten Enderium Glass'
         }
     ];
 
     generalFluids.forEach((fluid) => {
         if (fluid.type == 'thick') {
-            event.create(fluid.id).textureThick(fluid.texture).bucketColor(fluid.texture); //.displayName(fluid.display);
+            event.create(fluid.id).textureThick(fluid.texture).bucketColor(fluid.texture).displayName(fluid.display);
         } else if (fluid.type == 'thin') {
-            event.create(fluid.id).textureThin(fluid.texture).bucketColor(fluid.texture); //.displayName(fluid.display);
+            event.create(fluid.id).textureThin(fluid.texture).bucketColor(fluid.texture).displayName(fluid.display);
         } /*
         else if (fluid.type == 'custom') {
             event.create(fluid.id).displayName(fluid.display).textureStill(fluid.still).textureFlowing(fluid.flowing).bucketColor(fluid.color)

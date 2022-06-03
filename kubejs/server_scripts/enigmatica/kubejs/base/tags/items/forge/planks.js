@@ -11,4 +11,6 @@ onEvent('item.tags', (event) => {
     event.get('forge:planks/smogstem').add('undergarden:smogstem_planks');
     event.get('forge:planks/grongle').add('undergarden:grongle_planks');
     event.get('forge:planks/wigglewood').add('undergarden:wigglewood_planks');
+
+    event.get('forge:planks').remove('eidolon:polished_planks');
 });

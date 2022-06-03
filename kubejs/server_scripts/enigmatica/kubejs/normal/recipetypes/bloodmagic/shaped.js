@@ -3,6 +3,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:normal/bloodmagic/shaped/';
+
     const recipes = [
         {
             output: Item.of('bloodmagic:dungeon_stone', 8),
@@ -10,15 +12,12 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:stone',
                 B: '#bloodmagic:crystals/demon'
-            }
+            },
+            id: `${id_prefix}dungeon_stone`
         }
     ];
 
     recipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });
