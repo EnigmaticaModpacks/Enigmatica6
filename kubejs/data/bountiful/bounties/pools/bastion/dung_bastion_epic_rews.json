@@ -21,6 +21,7 @@
         { "type": "item", "content": "minecraft:netherite_axe", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
         { "type": "item", "content": "minecraft:netherite_pickaxe", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
         { "type": "item", "content": "minecraft:netherite_shovel", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
-        { "type": "item", "content": "minecraft:netherite_sword", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100}
+        { "type": "item", "content": "minecraft:netherite_sword", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
+        { "type": "command", "content": "/loot give %player% loot enigmatica:chests/dungeon_bastion_epic", "name": "Epic Bastion Loot", "unitWorth": 1000, "weight": 1}
     ]
 }
