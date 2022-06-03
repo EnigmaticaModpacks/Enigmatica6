@@ -432,7 +432,7 @@ onEvent('item.registry', (event) => {
         {name: 'kitten',         band: 0xeaa939, outline: 0x4c483b},
         {name: 'oreo',           band: 0x442920, outline: 0xe1d9b8},
         {name: 'yeti',           band: 0xe9f4f6, outline: 0x777e86},
-        {name: 'abbee',          band: 0xe68fa4, outline: 0xe4ded6},
+        {name: 'abbee',          band: 0xe5ded5, outline: 0xffb1c5},
     ];
 
     let metalTypes = ['suffused', 'fulminated', 'levigated', 'sliver'];
