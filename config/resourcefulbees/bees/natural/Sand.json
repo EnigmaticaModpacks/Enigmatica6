@@ -1,0 +1,72 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 1:\nThe Sandy Bee can be found, unsurprisingly, in the sand.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 2400,
+    "sizeModifier": 0.75,
+    "traits": ["can_swim", "desert"],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "other/sand",
+    "ColorData": {
+        "honeycombColor": "#e7e4bb",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:gravel",
+                "outputs": [{ "outputID": "minecraft:sand", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:sand",
+        "mainOutputWeight": 0.6,
+        "mainOutputCount": 3,
+
+        "secondaryOutput": "minecraft:glass",
+        "secondaryOutputWeight": 0.05,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.4,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "spawnWeight": 12,
+        "biomeWhitelist": "tag:BEACH,SANDY,ATUM",
+        "biomeBlacklist": "tag:NETHER,END,OCEAN",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "minYLevel": 60,
+        "maxYLevel": 250,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:minecraft:sand",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

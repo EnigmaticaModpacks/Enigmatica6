@@ -1,0 +1,241 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:manasteel_ingot",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:livingrock",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 32
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:manaweave_cloth",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:cosmetic_four_leaf_clover",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:cosmetic_blue_butterfly",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:cosmetic_groucho_glasses",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:cacophonium",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:livingwood",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 32
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:vine_ball",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:grass_seeds",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:cosmetic_unicorn_horn",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:cosmetic_thick_eyebrows",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:cosmetic_puffy_scarf",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:mana_diamond",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:goddess_charm",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:incense_stick",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:mana_ring",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{mana: 500000}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:cosmetic_black_bowtie",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:cosmetic_eerie_mask",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:cosmetic_engineer_goggles",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:solegnolia",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

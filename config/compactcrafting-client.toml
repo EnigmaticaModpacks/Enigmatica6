@@ -1,0 +1,14 @@
+
+#Projector Settings
+[projectors]
+	#The color for the projector fields. (HEX format)
+	#Examples: Orange - #FF6A00, Violet - #32174D, Green - #00A658, Blue - #3A7FE1
+	projectorColor = "#FF6A00"
+	#The color for the projectors when not active. (HEX format)
+	projectorOffColor = "#898989"
+	#Whether or not activating F3 will enable debug renderers.
+	projectorDebugger = false
+	#How long (ticks) the placement helper will show on right-clicking a projector.
+	#Range: 60 ~ 240
+	placementTime = 160
+

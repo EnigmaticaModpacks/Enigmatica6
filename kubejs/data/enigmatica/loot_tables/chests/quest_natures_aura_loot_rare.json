@@ -1,0 +1,68 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:pickup_stopper"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:infused_iron",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:gold_powder",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:token_joy"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:token_fear"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:token_anger"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:token_sorrow"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:ancient_log",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

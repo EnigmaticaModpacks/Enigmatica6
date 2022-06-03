@@ -1,0 +1,718 @@
+{
+	id: "1E033FC07DE39E5E"
+	group: "34B7FB260B6AEB81"
+	order_index: 5
+	filename: "magic__adept"
+	title: "Magic - Adept"
+	icon: "botania:runic_altar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -1.5d
+			description: [
+				"Capable of grinding stone to dust in its mighty jaws, the Masticator’s scales were found to have great alchemical powers, specifically in creating magical flora to digest various objects and extract the latent energies within."
+				""
+				"Bait the trap and be prepared for a nasty fight."
+				""
+				"Summoning the Masticator requires the Altar of Birthing as well as several other items. Look up the recipe for the Masticator Spawn egg in JEI to find them. "
+				""
+				"Be warned, its hunger is deep and summoning it will consume the Aura in the area. Allow it to drop too low and the consequences will be dire for life in the surrounding area."
+			]
+			dependencies: [
+				"583A58418CBF0606"
+				"3244CF5322CDA8FA"
+				"70FE54E5B37720F8"
+				"7D6DB53D88AA8955"
+			]
+			id: "61AA75CF5577A737"
+			tasks: [{
+				id: "5A05847FBAD84A7B"
+				type: "item"
+				item: "naturesaura:animal_spawner"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			description: ["Exceptionally transformative and exceedingly dangerous, Hellfire has been used in the arcane arts since time immemorable. There is no safe way for mere humans to work with it directly, however, though the Spirits of the Otherworld seem to have no difficulties channeling it through a specially prepared forge. "]
+			dependencies: ["2B6914734BC1B9EA"]
+			id: "76E780FECC4F3BA8"
+			tasks: [{
+				id: "00EC065C41CF5882"
+				type: "item"
+				item: "bloodmagic:soulforge"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"“Not all spirits come willingly. Some find this plane… distasteful. They may still be of use, however, bound into items of power that limit their contact with this place.”"
+				""
+				"– Eziveus The Diligent"
+			]
+			dependencies: ["7BA120BEA495D354"]
+			id: "2B6914734BC1B9EA"
+			tasks: [{
+				id: "5DBA1CA341658512"
+				type: "item"
+				item: {
+					id: "occultism:chalk_gold"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			shape: "diamond"
+			description: [
+				"Journey to the depths of the Undergarden and seek out the catacombs where the ancients buried their revered dead. Be wary, as these tombs are well guarded. "
+				""
+				"While the art of making these automatons was lost long ago to the sands of time, not all knowledge of them is lost. There exist some forest creatures who remain quite adept at harvesting excess metal from them without harm to the automaton. "
+			]
+			dependencies: ["1684922D360579EA"]
+			id: "3244CF5322CDA8FA"
+			tasks: [{
+				id: "67D72ED6F85B74D2"
+				type: "item"
+				item: "undergarden:forgotten_ingot"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			shape: "diamond"
+			description: ["The shadows deepen all around when in the presence of these mystical gems. "]
+			dependencies: ["1684922D360579EA"]
+			id: "70FE54E5B37720F8"
+			tasks: [{
+				id: "2EDC01F6C01A4342"
+				type: "item"
+				item: "eidolon:shadow_gem"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			shape: "diamond"
+			description: [
+				"“It is wise to direct your anger towards problems, not people; to focus your energies on answers, not excuses.”"
+				""
+				"– Master Gyatso the Serene"
+			]
+			dependencies: [
+				"2A45214DF4B8A3A0"
+				"1684922D360579EA"
+			]
+			id: "583A58418CBF0606"
+			tasks: [{
+				id: "589DC07682196D6E"
+				type: "item"
+				item: "naturesaura:token_anger"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			shape: "diamond"
+			description: ["A rare delicacy for beasts not of this plain. "]
+			dependencies: ["1684922D360579EA"]
+			id: "7D6DB53D88AA8955"
+			tasks: [{
+				id: "30B057E09BA7FEC1"
+				type: "item"
+				item: "farmersdelight:honey_glazed_ham_block"
+			}]
+		}
+		{
+			title: "Natural Magic - Adept"
+			icon: "naturesaura:gold_leaf"
+			x: -3.0d
+			y: -5.5d
+			shape: "rsquare"
+			description: [""]
+			dependencies: ["0000000000000FC7"]
+			id: "6A88DD23AB4B2551"
+			tasks: [{
+				id: "75818E00A64B7C28"
+				type: "item"
+				item: "naturesaura:infused_iron"
+			}]
+		}
+		{
+			title: "Spirit Magic - Adept"
+			icon: "occultism:golden_sacrificial_bowl"
+			x: 2.0d
+			y: -5.5d
+			shape: "rsquare"
+			dependencies: ["0000000000000FCD"]
+			id: "4CEB33C94A160D68"
+			tasks: [
+				{
+					id: "5A0243D5E0EB0586"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "494D1F8ABF9632B2"
+					type: "item"
+					item: "occultism:golden_sacrificial_bowl"
+				}
+				{
+					id: "0B7F689031988967"
+					type: "item"
+					item: "occultism:sacrificial_bowl"
+					count: 4L
+				}
+				{
+					id: "3D10E2B67F80993F"
+					type: "item"
+					title: "Any Candles"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:candles"
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			shape: "diamond"
+			description: [
+				"Komodo dragons may be found in many dry climates and “befriended” with suitably rotten meat. Their spit is prized by alchemists and naturalists alike. In the case of the former, as a reagent for purifying ore, and the latter for the deep emotions it evokes."
+				""
+				"The dragons themselves produce little enough, thankfully it is exceptionally potent. A healthy adult will produce enough to collect daily. Be warned, Komodo dragons are violent when caged, often even attacking their own young. Keepers will know to separate them accordingly. "
+			]
+			dependencies: ["0000000000000FC7"]
+			id: "2A45214DF4B8A3A0"
+			tasks: [{
+				id: "4D8482E47412A89D"
+				type: "item"
+				item: "alexsmobs:komodo_spit"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: [
+				"Source and Aura, both facets of the same whole: Mana. With access to Generating Flora pure Mana may be extracted and used in a variety of new ways."
+				""
+				"The Gourmaryllis is the first Generating Flower available since mana costs are increased for many crafts. Strong Mana generation is recommended going forward."
+			]
+			dependencies: ["61AA75CF5577A737"]
+			id: "0E6B41A9E8802F67"
+			tasks: [{
+				id: "1BBA6E352E900519"
+				type: "item"
+				item: "botania:gourmaryllis"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			description: ["The neophyte believes runes are simply carved symbols; decorative and nothing more. But magical practitioners know the truth; they are carved purposely to channel magical energies to specific purposes. Doing so requires great effort of will. "]
+			dependencies: ["0E6B41A9E8802F67"]
+			id: "46993F7BA43BE3AB"
+			tasks: [
+				{
+					id: "645C3EA5C8B170D1"
+					type: "item"
+					item: "botania:runic_altar"
+				}
+				{
+					id: "54F41577B733E652"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+				{
+					id: "34CD855E65A6875F"
+					type: "item"
+					item: "botania:mana_spreader"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			description: ["Begin manufacturing rune stones to build the foundations for a stronger Blood Altar. "]
+			dependencies: ["0D8649291801C76C"]
+			id: "43D3D565E295FA5D"
+			tasks: [{
+				id: "089924B8BB44ECFD"
+				type: "item"
+				item: "bloodmagic:blankrune"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			shape: "diamond"
+			description: [
+				""
+				"Knowledge once thought lost has turned up in the most unexpected of places: the music of the denizens of the Undergarden. "
+				""
+				"Locate a Stoneborn and trade with them to obtain a sample of their traditional music. "
+			]
+			dependencies: ["0000000000000FCD"]
+			id: "4C82E47AABA7447B"
+			tasks: [{
+				id: "6C16A5254E2174E3"
+				type: "item"
+				title: "Undergarden Music"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "undergarden:music_disc_mammoth"
+								Count: 1b
+							}
+							{
+								id: "undergarden:music_disc_limax_maximus"
+								Count: 1b
+							}
+							{
+								id: "undergarden:music_disc_gloomper_anthem"
+								Count: 1b
+							}
+							{
+								id: "undergarden:music_disc_relict"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Otherstone Trader"
+			x: 2.5d
+			y: -4.5d
+			shape: "diamond"
+			description: [
+				"Tossing Arcane Stone into a Spirit Fire is certainly… effective, but an Otherstone Trader will do the job at a significant discount. "
+				""
+				"Note: The Spirit Trader still requires Arcane Stone, but at a rate of two Otherstone per Arcane Stone."
+			]
+			dependencies: ["4CEB33C94A160D68"]
+			id: "2DD9ABCD4AC03D03"
+			tasks: [{
+				id: "1AF021ACBE2DE220"
+				type: "item"
+				item: "occultism:otherstone"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			shape: "diamond"
+			description: ["Need a hand? Summon a few assistants to help out around the place. "]
+			dependencies: ["4CEB33C94A160D68"]
+			id: "1B5E9BB425088A6B"
+			tasks: [{
+				id: "3FFEE25A741F67CD"
+				type: "advancement"
+				title: "Transport Spirit"
+				icon: "minecraft:chest_minecart"
+				advancement: "occultism:occultism/summon_foliot_transport_items"
+				criterion: ""
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			shape: "diamond"
+			description: ["Forming a proper slate for advanced inscriptions is a delicate process that adepts spend many hours perfecting.  Even the slightest imperfection can cause a batch to be ruined. "]
+			dependencies: [
+				"2DD9ABCD4AC03D03"
+				"1B5E9BB425088A6B"
+			]
+			dependency_requirement: "one_completed"
+			id: "32D9D96C23106285"
+			tasks: [{
+				id: "5451DDAB7FE89E14"
+				type: "item"
+				item: "occultism:otherstone_tablet"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			description: ["It hums subtly when held."]
+			dependencies: ["32D9D96C23106285"]
+			id: "0D8649291801C76C"
+			tasks: [{
+				id: "16E18C3168EE5014"
+				type: "item"
+				item: "bloodmagic:blankslate"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			shape: "diamond"
+			description: [
+				"Music acquired, use it to make bait to summon Swamp Jaw. "
+				""
+				"Defeat the beast to claim a Mossy Tooth. "
+			]
+			dependencies: ["4C82E47AABA7447B"]
+			id: "5602E77D09C84F56"
+			tasks: [{
+				id: "4FDEBE41FC30CD46"
+				type: "item"
+				item: "meetyourfight:fossil_bait"
+			}]
+		}
+		{
+			title: "Blood Altar - Tier 2"
+			icon: "bloodmagic:altar"
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"A stronger receptacle will be required to delve deeper into the secrets of the spirit realm. "
+				""
+				"What better than the still beating heart of a Zombie Brute bound in bone?"
+			]
+			dependencies: [
+				"5602E77D09C84F56"
+				"43D3D565E295FA5D"
+			]
+			id: "7BA120BEA495D354"
+			tasks: [
+				{
+					id: "4FCDA238FEC31CAB"
+					type: "item"
+					item: "meetyourfight:caged_heart"
+				}
+				{
+					id: "687C659EAB4DD9B2"
+					type: "item"
+					item: "bloodmagic:apprenticebloodorb"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			description: ["With little more than Snares in hand, the Adept is sent out on the hunt. They either come back more knowledgeable, or they do not come back at all."]
+			dependencies: ["7BA120BEA495D354"]
+			id: "358D438E941E3FFE"
+			tasks: [{
+				id: "7FADC33010E15D46"
+				type: "item"
+				item: "bloodmagic:soulsnare"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			description: [
+				"This world is filled with invisible beings. Watching. Waiting."
+				""
+				"Judging."
+				""
+				"Your actions appear to have pleased one such being. Construct an Offering Table and see what wisdom it will impart upon you. "
+				""
+				"Of course, all knowledge comes at a cost…"
+			]
+			dependencies: [
+				"54BD6A448EC80453"
+				"46993F7BA43BE3AB"
+			]
+			id: "39F1798BD7FDA0EC"
+			tasks: [
+				{
+					id: "289310ED8AE0AA8E"
+					type: "item"
+					item: "naturesaura:offering_table"
+				}
+				{
+					id: "38201997FD403259"
+					type: "item"
+					item: "naturesaura:calling_spirit"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			description: ["To properly summon the Wilden Chimera, one must offer tributes claimed from the bodies of each of the lesser Wilden that roam the lands. "]
+			dependencies: ["37E5C854B3C997E6"]
+			id: "638E2FA97CF961F7"
+			tasks: [
+				{
+					id: "0AC4BD687E08497E"
+					type: "item"
+					item: "ars_nouveau:wilden_horn"
+				}
+				{
+					id: "21E2513CFEDA6EE5"
+					type: "item"
+					item: "ars_nouveau:wilden_wing"
+				}
+				{
+					id: "7935F91A85707BD7"
+					type: "item"
+					item: "ars_nouveau:wilden_spike"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			description: ["Place down the tablet and let it burn. Toss the remaining tributes atop the pyre and activate the ritual when ready. "]
+			dependencies: ["638E2FA97CF961F7"]
+			id: "54BD6A448EC80453"
+			tasks: [{
+				id: "54160558748B2EC1"
+				type: "item"
+				item: "ars_nouveau:ritual"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.5d
+			description: [
+				"Flip a coin. "
+				""
+				"Will she grant you favor? Or flay you for your insolence?"
+			]
+			dependencies: [
+				"14B74BACBD651D14"
+				"0140C94C9E0BE11B"
+				"749514BCD02A1A51"
+			]
+			id: "37E5C854B3C997E6"
+			tasks: [
+				{
+					id: "6CFD58817C017D20"
+					type: "item"
+					item: "meetyourfight:devils_ante"
+				}
+				{
+					id: "35A5C79245D10412"
+					type: "item"
+					item: "meetyourfight:velvet_fortune"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			shape: "diamond"
+			description: ["Though they themselves quite unaware of it, the coins traded by the denizens of Atum hold great arcane potential. Some have theorized that it may be due to a special alloying of nebu within the coins. "]
+			dependencies: ["5DBF0C080455A59F"]
+			id: "0140C94C9E0BE11B"
+			tasks: [{
+				id: "358386F4F0FC273F"
+				type: "item"
+				item: "atum:coin_gold"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -3.0d
+			shape: "diamond"
+			description: ["Oft named Lucky Bees, Quartz bees were kept around the lab for one simple reason: Their crystalline growth tended to change colors when exposed to trace amounts of toxins in the air, allowing observant Alchemists to avoid disaster.  "]
+			dependencies: ["5DBF0C080455A59F"]
+			id: "749514BCD02A1A51"
+			tasks: [{
+				id: "4F21E8E2B24A5777"
+				type: "item"
+				item: "resourcefulbees:nether_quartz_honeycomb"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.5d
+			shape: "diamond"
+			description: ["Many an early Alchemist met their end through a slip of the hand or a slight imperfection in their glassware. It’s no wonder, then, that they quickly developed tinctures to help improve their luck when dealing with dangerous substances. "]
+			dependencies: ["5DBF0C080455A59F"]
+			id: "14B74BACBD651D14"
+			tasks: [{
+				id: "5CE84C7DE08F8B26"
+				type: "item"
+				item: "bloodmagic:fortune_anointment"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			description: [
+				"Magic takes its toll, both mentally and physically. Many have succumbed to lesser trials, never even reaching this far. Will the Wilden Chimera prove too great a challenge?"
+				""
+				"Prepare a tablet to summon it. And prepare yourself for the fight to come. "
+			]
+			dependencies: [
+				"54BD6A448EC80453"
+				"37E5C854B3C997E6"
+			]
+			id: "6722BAF4546DB225"
+			tasks: [{
+				id: "011B34FD3685CBB4"
+				type: "item"
+				item: "ars_nouveau:ritual_wilden_summon"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			description: [
+				"“Your Will shall decide your destiny.”"
+				""
+				"– Charlotte of the Radiant Order"
+			]
+			dependencies: ["358D438E941E3FFE"]
+			id: "4E25D127FFBA7553"
+			tasks: [{
+				id: "5A45A95D9017FB1D"
+				type: "item"
+				item: {
+					id: "bloodmagic:basemonstersoul"
+					Count: 1b
+					tag: {
+						souls: 5.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			description: [
+				"“Open your eyes and then open your eyes again.”"
+				""
+				"– Mistress Weatherwax"
+			]
+			dependencies: ["2B6914734BC1B9EA"]
+			id: "1EF3485CE70E529D"
+			tasks: [{
+				id: "588927AD981F5FDB"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_goggles"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			shape: "diamond"
+			description: [
+				"Effective as it may be, some practitioners find the practice of sacrificing other beings distasteful."
+				""
+				"The Adept learns early on to give of their own blood as sacrifice, and to draw upon the earth for healing. "
+			]
+			dependencies: ["7BA120BEA495D354"]
+			id: "57FFFBB68F2655C1"
+			tasks: [{
+				id: "19014A262532EB8F"
+				type: "item"
+				item: {
+					id: "bloodmagic:sacrificialdagger"
+					Count: 1b
+					tag: {
+						sacrifice: 0b
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			description: [
+				"“There was always something new to be seen in the unchanging night sky…”"
+				""
+				"– Elder Leiber"
+			]
+			dependencies: ["39F1798BD7FDA0EC"]
+			id: "7154DB9C4506F05B"
+			tasks: [{
+				id: "652DE77D344E1B5F"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+		}
+		{
+			title: "Aura Generation"
+			x: -2.0d
+			y: -4.5d
+			description: [
+				"The ancients knew to care for the natural resources at their disposal, using only what is needed and replenishing more than was taken. For every tree cut, two grown. "
+				""
+				"The Aura exuded by life needs similar care. When used in the Natural Arts, it must similarly be replenished. Failure to do so will lead to catastrophic consequences."
+				""
+				"While many methods exist, The Shooting Mark and Herbivorous Absorber both offer paths to rapid Aura replenishment. Treat Nature well and she’ll respond in kind. Abuse her and face her wrath. "
+			]
+			dependencies: ["6A88DD23AB4B2551"]
+			id: "1684922D360579EA"
+			tasks: [{
+				id: "53DCB9AF9595A5D2"
+				type: "item"
+				title: "Aura Generation"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "naturesaura:flower_generator"
+								Count: 1b
+							}
+							{
+								id: "naturesaura:projectile_generator"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			description: [
+				"The bees that inhabit these lands were long ago infused with powerful magics and though that magic has waned some without proper tending the thread remains in their descendants. With a bit of care, that deeper connection may be restored, allowing them to produce marvelous resources useful in both the Arcane and Technological arts. "
+				""
+				"Gather some bees and their nests to begin tending them. Through selective breeding and other techniques, more powerful bees may be produced. Their resources will be vital going forward. "
+			]
+			dependencies: ["6A88DD23AB4B2551"]
+			id: "5DBF0C080455A59F"
+			tasks: [{
+				id: "4024203A654C177D"
+				type: "item"
+				title: "Any Bee Nest"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:beehives/tier_0"
+					}
+				}
+			}]
+		}
+	]
+}

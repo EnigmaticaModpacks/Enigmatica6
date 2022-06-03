@@ -1,0 +1,37 @@
+
+#How the grave data is handled
+[data]
+	#Defines how the experience should be handled when the player dies.
+	#DROP: Drops the xp as normal.
+	#REMOVE: Doesn't drop or restore the xp. Effectively removes it on death.
+	#KEEP_VANILLA: Stores the same amount of xp that would've been dropped normally into the grave.
+	#KEEP_ALL: Stores all the players xp in the graves to restore it.
+	#Allowed Values: DROP, REMOVE, KEEP_VANILLA, KEEP_ALL
+	experienceHandling = "KEEP_VANILLA"
+	#Defines the amount of entries per player that can be stored to retrieve using commands.
+	#Once the entry count overflows, the oldest entries will be removed.
+	#Range: 1 ~ 99
+	graveEntryCount = 10
+
+#Grave Spawn Place Handling
+#The grave will first scan down from the death position until it finds a solid block to place the grave on.
+#If there is no solid block below the death position, it will attempt to scan from the 'scanHeight' value
+#It will scan up to +-'scanRange' in attempt to find a solid block with 2 air blocks above it to spawn the grave on.
+#If it fails to find a place, it will then either: 
+#   - Place a block at y=1 with the grave on top, if the 'scanHeight' were filled with block
+#   - Place a block at y='scanHeight' with the grave on top, if the 'scanHeight' were filled with air
+[position]
+	#The scanning start position for a valid place to spawn
+	#Range: 0 ~ 255
+	scanHeight = 60
+	#The vertical range (up/down) from the initial position to scan for a valid spot to place a grave
+	#Range: 0 ~ 255
+	scanRange = 10
+	#The block that should spawn below the grave if there is none
+	floorBlock = "minecraft:dirt"
+
+#Misc Options
+[misc]
+	#Should you get a grave finder item after you respawn?
+	spawnGraveFinder = true
+

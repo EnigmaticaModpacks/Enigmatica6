@@ -1,0 +1,174 @@
+#
+###Version, do not change!##
+#Range: > 0
+Version = 9
+
+#Small Ships Config:
+[Ships]
+	#
+	#----Galley Speed Factor.----
+	#	(takes effect after restart)
+	#	default: 1.3
+	#Range: 0.0 ~ 2.0
+	GalleySpeedFactor = 1.3
+	#
+	#----Galley Turn Factor.----
+	#	(takes effect after restart)
+	#	default: 0.5
+	#Range: 0.0 ~ 1.0
+	GalleyTurnFactor = 0.5
+	#
+	#----Cog Speed Factor.----
+	#	(takes effect after restart)
+	#	default: 1.25
+	#Range: 0.0 ~ 2.0
+	CogSpeedFactor = 1.25
+	#
+	#----Cog Turn Factor.----
+	#	(takes effect after restart)
+	#	default: 0.1
+	#Range: 0.0 ~ 1.0
+	CogTurnFactor = 0.1
+	#
+	#----War Galley Speed Factor.----
+	#	(takes effect after restart)
+	#	default: 1.15
+	#Range: 0.0 ~ 2.0
+	WarGalleySpeedFactor = 1.15
+	#
+	#----War Galley Turn Factor.----
+	#	(takes effect after restart)
+	#	default: 0.4
+	#Range: 0.0 ~ 1.0
+	WarGalleyTurnFactor = 0.4
+	#
+	#----Drakkar Speed Factor.----
+	#	(takes effect after restart)
+	#	default: 1.25
+	#Range: 0.0 ~ 2.0
+	DrakkarSpeedFactor = 1.0
+	#
+	#----Drakkar Turn Factor.----
+	#	(takes effect after restart)
+	#	default: 0.3
+	#Range: 0.0 ~ 1.0
+	DrakkarTurnFactor = 0.8
+	#
+	#----Drakkar Ice Break Speed.----
+	#	(takes effect after restart)
+	#	higher values = slower break speed
+	#	default: 2.0
+	#Range: 0.0 ~ 100.0
+	DrakkarIceBreakSpeed = 2.0
+	#
+	#----Brigg Speed Factor.----
+	#	(takes effect after restart)
+	#	default: 1.28
+	#Range: 0.0 ~ 2.0
+	BriggSpeedFactor = 1.35
+	#
+	#----Brigg Turn Factor.----
+	#	(takes effect after restart)
+	#	default: 0.2
+	#Range: 0.0 ~ 1.0
+	BriggTurnFactor = 0.3
+	#
+	#----Should Ships Make Swimming sounds?----
+	#	(takes effect after restart)
+	#	default: true
+	PlaySwimmSound = true
+	#
+	#----Should Ships Make WaterMobs flee?----
+	#	(takes effect after restart)
+	#	default: true
+	WaterMobFlee = false
+	#
+	#----Ship Zoom.----
+	#	(takes effect after restart)
+	#	default: 0.2
+	#Range: 1.0 ~ 20.0
+	ShipZoom = 6.0
+	#
+	#----Should the player enter ships in third person?----
+	#	(takes effect after restart)
+	#	default: true
+	EnterThirdPerson = true
+	#
+	#----Should the Ships make waving animation?----
+	#	(takes effect after restart)
+	#	default: true
+	MakeWaveAnimation = true
+	#
+	#----Brigg Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 600
+	#Range: 0.0 ~ 10000.0
+	BriggHealth = 600.0
+	#
+	#----Cog Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 300.0
+	#Range: 0.0 ~ 10000.0
+	CogHealth = 300.0
+	#
+	#----Drakkar Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 360
+	#Range: 0.0 ~ 10000.0
+	DrakkarHealth = 360.0
+	#
+	#----Galley Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 600
+	#Range: 0.0 ~ 10000.0
+	GalleyHealth = 600.0
+	#
+	#----Row Boat Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 100
+	#Range: 0.0 ~ 10000.0
+	RowBoatHealth = 100.0
+	#
+	#----War Galley Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 600
+	#Range: 0.0 ~ 10000.0
+	WarGalleyHealth = 600.0
+	#
+	#----Dhow Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 400
+	#Range: 0.0 ~ 10000.0
+	DhowHealth = 400.0
+	#
+	#----Row Boat Speed Factor.----
+	#	(takes effect after restart)
+	#	default: 1.0
+	#Range: 0.0 ~ 2.0
+	RowBoatSpeedFactor = 1.0
+	#
+	#----Row Boat Turn Factor.----
+	#	(takes effect after restart)
+	#	default: 0.8
+	#Range: 0.0 ~ 1.0
+	RowBoatTurnFactor = 0.8
+	#
+	#----Dhow Speed Factor.----
+	#	(takes effect after restart)
+	#	default: 1.35
+	#Range: 0.0 ~ 2.0
+	DhowSpeedFactor = 1.35
+	#
+	#----Dhow Turn Factor.----
+	#	(takes effect after restart)
+	#	default: 0.3
+	#Range: 0.0 ~ 1.0
+	DhowTurnFactor = 0.3
+

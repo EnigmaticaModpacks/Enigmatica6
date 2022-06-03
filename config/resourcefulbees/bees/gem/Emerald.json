@@ -1,0 +1,67 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 3:\nDying a Diamond green (and slimy) apparently yields an Emerald.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["sedimentary", "can_swim"],
+    "baseLayerTexture": "ores/emerald/emerald_bee",
+    "ColorData": {
+        "honeycombColor": "#18eb09",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "create:diorite_cobblestone",
+                "outputs": [{ "outputID": "emendatusenigmatica:emerald_diorite_ore", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "emendatusenigmatica:emerald_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "minecraft:prismarine_shard",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "resourcefulbees:emerald_honey_bottle",
+        "bottleOutputWeight": 0.01,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "diamond",
+        "parent2": "slimy",
+        "feedItem": "tag:forge:storage_blocks/emerald",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

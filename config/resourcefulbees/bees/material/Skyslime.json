@@ -1,0 +1,61 @@
+{
+    "flower": "ALL",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "A skilled tinkerer can use their smeltery for\ncasting more than mere tool parts.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["slimy", "can_swim"],
+    "baseLayerTexture": "slime/sky_slime_bee",
+    "ColorData": {
+        "honeycombColor": "#4ab1a4",
+        "modelType": "GELATINOUS"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:honey_block",
+                "outputs": [{ "outputID": "tconstruct:sky_slime", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "tconstruct:sky_slime_ball",
+        "mainOutputWeight": 0.6,
+        "mainOutputCount": 4,
+
+        "secondaryOutput": "refinedstorage:processor_binding",
+        "secondaryOutputWeight": 0.02,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:slime_block",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

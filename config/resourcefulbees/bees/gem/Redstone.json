@@ -1,0 +1,69 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 2:\nCoal + Rainbows = Redstone? Makes sense.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["sedimentary", "can_swim"],
+    "baseLayerTexture": "ores/redstone/redstone_bee",
+    "ColorData": {
+        "honeycombColor": "#aa0f01",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "create:andesite_cobblestone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:redstone_andesite_ore", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "emendatusenigmatica:redstone_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "emendatusenigmatica:cinnabar_chunk",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "resourcefulbees:redstone_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "rgbee",
+        "parent2": "coal",
+        "feedItem": "tag:forge:storage_blocks/redstone",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

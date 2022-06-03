@@ -1,0 +1,553 @@
+{
+	id: "0000000000000097"
+	group: ""
+	order_index: 3
+	filename: "adventure"
+	title: "Adventure"
+	icon: {
+		id: "minecraft:filled_map"
+		Count: 2b
+		tag: {
+			map: 1
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "alexsmobs:banana"
+			x: -1.0d
+			y: 0.0d
+			subtitle: "Monkeys and Gorillas and Bears, Oh My!"
+			description: ["Alex’s Mod breathes new life into old biomes with a host of critter friends ranging from the cute and cuddly, to the downright deadly. Watch out and keep this guidebook handy to help you survive. "]
+			id: "0000000000000C7F"
+			tasks: [{
+				id: "0000000000000C80"
+				type: "checkmark"
+				title: "Alex's Mobs"
+			}]
+			rewards: [{
+				id: "0000000000000C9D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "losttrinkets:treasure_bag"
+			x: -1.0d
+			y: 3.0d
+			subtitle: "One Man's Trash Is Another Man's Treasure"
+			description: [
+				"Lost Trinkets are found through various actions, digging, planting, murdering. Normal, everyday Minecraft, you know?"
+				""
+				"Had one pop up on your screen? Read more about it in JEI. New trinkets may be equipped by pressing R (default) to open the menu. "
+			]
+			id: "0000000000000C81"
+			tasks: [{
+				id: "0000000000000C82"
+				type: "checkmark"
+				title: "Lost Trinkets"
+			}]
+			rewards: [{
+				id: "0000000000000CA2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			subtitle: "Treasure or Trap? "
+			description: [
+				"Spelunkers report stumbling across abandoned camp sites deep in the caves they explore. But who, or what, could have left them? "
+				""
+				"Not every site is what it seems. Beware and approach with caution. "
+			]
+			id: "0000000000000C83"
+			tasks: [{
+				id: "0000000000000C84"
+				type: "checkmark"
+				title: "Artifacts"
+				icon: "artifacts:mimic_spawn_egg"
+			}]
+			rewards: [{
+				id: "0000000000000CA0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Dungeoneering"
+			x: 1.0d
+			y: 0.0d
+			subtitle: "Hack 'n Slash"
+			description: [
+				"Explorers beware, for terrors await in many seemingly abandoned structures throughout the lands. "
+				""
+				"Treasure awaits the brave; death awaits the weak. "
+			]
+			id: "0000000000000C85"
+			tasks: [{
+				id: "0000000000000C86"
+				type: "checkmark"
+				title: "Dungeoneering"
+				icon: "kubejs:scavengers_delight"
+			}]
+			rewards: [{
+				id: "0000000000000C9C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Oh, The Biomes You'll Go"
+			x: 0.0d
+			y: -0.5d
+			subtitle: "It's opener out there, in the wide open air."
+			description: [
+				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. "
+				""
+				"Take a stroll, look around, see what you like. Maybe you’ll find a new place to call home? "
+			]
+			id: "0000000000000C89"
+			tasks: [{
+				id: "0000000000000C8A"
+				type: "checkmark"
+				title: "Oh, The Biomes You'll Go"
+				icon: "byg:pink_cherry_sapling"
+			}]
+			rewards: [{
+				id: "0000000000000C9F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "meetyourfight:devils_ante"
+			x: 0.0d
+			y: 2.5d
+			subtitle: "Leave Nothing To Chance"
+			description: [
+				"Have you got the Wither Blues? Looking for a bit of a challenge? Then come and meet your fight. "
+				""
+				"These bosses may be summoned with crafted tokens, just look them up in JEI when you’re ready to face off."
+			]
+			id: "0000000000000C95"
+			tasks: [
+				{
+					id: "21AEFA982B148B13"
+					type: "item"
+					item: "meetyourfight:fossil_bait"
+				}
+				{
+					id: "453C91C39D9B851B"
+					type: "item"
+					item: "meetyourfight:devils_ante"
+				}
+				{
+					id: "57A8C245E83C8992"
+					type: "item"
+					item: "meetyourfight:haunted_bell"
+				}
+			]
+			rewards: [{
+				id: "0000000000000C9B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			subtitle: "We're not lost, we're right here on this very spot."
+			description: [
+				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
+				""
+				"Craft a Nature’s Compass to help locate rare or unusual biomes. "
+			]
+			id: "0000000000000C97"
+			tasks: [{
+				id: "0000000000000C98"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C9E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Undergarden"
+			icon: "undergarden:catalyst"
+			x: 2.0d
+			y: 2.0d
+			subtitle: "Down Beneath"
+			description: [
+				"Many believed that the Nether existed beneath the bedrock layer, but with the discovery of the terrifying Undergarden, that theory was scrapped."
+				""
+				"Visualize the portal by pressing your Ponder key on the Catalyst in JEI."
+			]
+			id: "386EC8C30DD8EF00"
+			tasks: [{
+				id: "7ACC9974FA0E7D85"
+				type: "item"
+				item: "undergarden:catalyst"
+			}]
+			rewards: [{
+				id: "50D671240789A59B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "bountiful:bountyboard"
+			x: -1.5d
+			y: 1.0d
+			subtitle: "This is the Way"
+			description: [
+				"Looking for something to do? Go find a village and see what you can do to help them out!"
+				""
+				"Bounty Boards can be found in most any village and provide random tasks based on the decrees in the board. Tasks vary from simple gathering objectives to mob hunting. "
+				""
+				"Find a bounty that interests you? Take it out of the board and keep it in your inventory while you go about completing it. Be careful, however, as these are timed tasks! Be sure to get the completed bounty back to a board in time to claim your reward. "
+			]
+			id: "3B63337D83616524"
+			tasks: [{
+				id: "6C7F0A0389326A73"
+				type: "checkmark"
+				title: "Bountiful Bounties"
+			}]
+			rewards: [{
+				id: "5FF113B2959E2911"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Atum"
+			icon: "atum:scarab"
+			x: -2.0d
+			y: 2.0d
+			subtitle: "Shining, Shimmering, Splendid"
+			description: [
+				"A whole new world to discover. Bring a change of clothes though, the sand gets everywhere."
+				""
+				"To access Atum, a portal will be required. It is built entirely from Sandstone and Water and looks a bit like a well. "
+				""
+				"Visualize the portal by pressing your Ponder key on the Scarab in JEI."
+			]
+			id: "7FCB0C026902B90C"
+			tasks: [{
+				id: "4828663C763E74C1"
+				type: "item"
+				item: "atum:scarab"
+			}]
+			rewards: [{
+				id: "4117CA9FCFFD42FA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Pyramids!"
+			x: -1.5d
+			y: 4.5d
+			subtitle: "Breaking Ground"
+			description: [
+				"Grab a shovel and get to digging, there’s Nebu in them there hills!"
+				""
+				"Nebu Ore can be found deep underground and is used to craft Nebu Torches, the key to opening the pyramids that dot the land. "
+				""
+				"Gather some torches, then seek out the buried entrance to a pyramid. Place torches on each Quandary Block located near the entrance to open the way. "
+				""
+				"Once inside, tread carefully and seek out the Pharaoh’s Chamber where more Quandary Blocks will need to be activated. With all of them lit up, the Sarcophagus’ treasures are yours to plunder. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["7FCB0C026902B90C"]
+			hide: true
+			id: "3A6AE256747CFC1D"
+			tasks: [{
+				id: "3BC303A931EA3D28"
+				type: "item"
+				item: "atum:nebu_torch"
+				count: 6L
+			}]
+			rewards: [{
+				id: "34BDC736FE34B9ED"
+				type: "item"
+				item: "atum:coin_gold"
+				random_bonus: 7
+			}]
+		}
+		{
+			icon: "atum:godforge"
+			x: 0.0d
+			y: 6.0d
+			subtitle: "Renowned Artificer"
+			description: ["With a Godforge, unwanted artifacts may be rendered down into Godshards; items of great power unto themselves. "]
+			dependencies: ["68A4A5043858181B"]
+			id: "02CCE8639F56F007"
+			tasks: [
+				{
+					id: "5BCC3A511531AE2C"
+					type: "item"
+					item: "atum:godforge"
+				}
+				{
+					id: "792618FCBFF7E262"
+					type: "item"
+					title: "Godshard"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "atum:godshards"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "48AA5AE834D2E95C"
+				type: "item"
+				item: "atum:coin_gold"
+				random_bonus: 7
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			subtitle: "Reduce, Reuse, Recycle"
+			description: ["Crafted from precious material and Godshards from rendered artifacts, the Godforged Block may be placed and broken open with a Nebu Hammer. Doing so will result in a new Artifact. "]
+			dependencies: ["02CCE8639F56F007"]
+			id: "5695DE9BCDF64302"
+			tasks: [
+				{
+					id: "117913EE85B58990"
+					type: "item"
+					title: "Godforged Blocks"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "atum:godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:anput_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:atem_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:geb_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:horus_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:ra_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:ptah_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:osiris_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:nuit_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:nepthys_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:montu_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:isis_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:seth_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:shu_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:tefnut_godforged_block"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "61E0AF842C54D624"
+					type: "item"
+					item: "atum:nebu_hammer"
+				}
+			]
+			rewards: [{
+				id: "53A2DDBBE322E06E"
+				type: "item"
+				item: "atum:coin_gold"
+				random_bonus: 7
+			}]
+		}
+		{
+			title: "God Torches"
+			x: 1.5d
+			y: 4.5d
+			subtitle: "Call My Name"
+			description: ["When used in place of Nebu Torches in a Sarcophagus Chamber, these will call forth a Pharaoh with a link to the deity in question; quite useful if one is seeking out specific artifacts. "]
+			dependencies: ["5695DE9BCDF64302"]
+			id: "7FE27B11109B41D7"
+			tasks: [{
+				id: "396862609A53439A"
+				type: "item"
+				title: "God Torches"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "atum:torch_of_anput"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_anubis"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_atem"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_geb"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_horus"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_isis"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_montu"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_nepthys"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_nuit"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_osiris"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_ptah"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_ra"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_seth"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_shu"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_tefnut"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "23BFB971FA19252E"
+				type: "item"
+				item: "atum:coin_gold"
+				random_bonus: 7
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			subtitle: "It's my birthday and I wants it."
+			description: ["That’s quite a nice treasure you’ve found for yourself. Would be a shame if something were to happen to it… "]
+			dependencies: ["3A6AE256747CFC1D"]
+			hide: true
+			id: "68A4A5043858181B"
+			tasks: [{
+				id: "3CECEAAAA80EBB9F"
+				type: "item"
+				title: "Artifacts!"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "atum:artifact"
+					}
+				}
+			}]
+			rewards: [{
+				id: "563CCA75A137FE84"
+				type: "item"
+				item: "atum:coin_gold"
+				random_bonus: 7
+			}]
+		}
+		{
+			icon: "ars_nouveau:glyph_summon_wolves"
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Dangit, Moon Moon"
+			description: [
+				"Adventuring alone can be dangerous, but the fear of losing a beloved canine defender might prompt one to leave them home. "
+				""
+				"Fear no more. With Bandages from Save Your Pets, your fallen floofer may be revived to bite again. "
+			]
+			id: "60FAAD35C8C375BD"
+			tasks: [{
+				id: "0CE70793928F6DE0"
+				type: "checkmark"
+				title: "Save Your Pets"
+			}]
+			rewards: [{
+				id: "218393C856E322C3"
+				type: "item"
+				item: "syp:pet_bandage"
+			}]
+		}
+	]
+}

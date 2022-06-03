@@ -1,0 +1,17 @@
+{
+    "name" : "icy",
+    "hunger": 3,
+    "honeyColor": "#92b9fe",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:conduit_power",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

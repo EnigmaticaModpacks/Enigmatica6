@@ -1,0 +1,71 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 1:\nForest Bees prefer to stick to the woods & clearings of their birth.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 2400,
+    "sizeModifier": 0.75,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/forest",
+    "ColorData": {
+        "honeycombColor": "#4c4c26",
+        "modelType": "ARMORED"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "minecraft:oak_log", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:oak_log",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 4,
+
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.6,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "resourcefulbees:illuminating_honey_bottle",
+        "bottleOutputWeight": 0.4,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:FOREST,CLEARING",
+        "biomeBlacklist": "tag:OCEAN",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "minYLevel": 60,
+        "maxYLevel": 250,
+        "spawnWeight": 14,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:minecraft:logs",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

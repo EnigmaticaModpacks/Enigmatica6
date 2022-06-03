@@ -1,0 +1,28 @@
+
+#General settings
+[general]
+	#Maximum gas per operation that an advanced connector can input or output
+	#Range: 1 ~ 1000000000
+	maxGasRateAdvanced = 5000
+	#Maximum gas per operation that a normal connector can input or output
+	#Range: 1 ~ 1000000000
+	maxGasRateNormal = 1000
+	#Maximum slurry per operation that an advanced connector can input or output
+	#Range: 1 ~ 1000000000
+	maxSlurryRateAdvanced = 5000
+	#Maximum slurry per operation that a normal connector can input or output
+	#Range: 1 ~ 1000000000
+	maxSlurryRateNormal = 1000
+	#Maximum infuse per operation that a normal connector can input or output
+	#Range: 1 ~ 1000000000
+	maxInfuseRateNormal = 1000
+	#Maximum infuse per operation that an advanced connector can input or output
+	#Range: 1 ~ 1000000000
+	maxInfuseRateAdvanced = 5000
+	#Maximum pigment per operation that a normal connector can input or output
+	#Range: 1 ~ 1000000000
+	maxPigmentRateNormal = 1000
+	#Maximum pigment per operation that an advanced connector can input or output
+	#Range: 1 ~ 1000000000
+	maxPigmentRateAdvanced = 5000
+

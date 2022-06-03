@@ -1,0 +1,65 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 2:\nGravel seems like the Rocky version of Sand, right?",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 2400,
+    "sizeModifier": 0.75,
+    "traits": ["can_swim"],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "other/gravel",
+    "ColorData": {
+        "honeycombColor": "#968e8e",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:stone",
+                "outputs": [{ "outputID": "minecraft:gravel", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:gravel",
+        "mainOutputWeight": 0.6,
+        "mainOutputCount": 3,
+
+        "secondaryOutput": "minecraft:flint",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "rocky",
+        "parent2": "sand",
+        "feedItem": "tag:forge:gravel",
+        "feedAmount": 2,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

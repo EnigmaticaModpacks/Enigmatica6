@@ -1,0 +1,75 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 1:\nSooty Bees are common in the Overworld, found close to sea level.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 2400,
+    "sizeModifier": 0.75,
+    "hasHoneycomb": true,
+    "traits": ["sedimentary", "can_swim"],
+    "baseLayerTexture": "ores/coal/coal_bee",
+    "ColorData": {
+        "honeycombColor": "#303030",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:cobblestone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:coal_ore", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "emendatusenigmatica:coal_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 2,
+
+        "secondaryOutput": "emendatusenigmatica:bitumen_chunk",
+        "secondaryOutputWeight": 0.25,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:coal_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:OVERWORLD",
+        "biomeBlacklist": "tag:OCEAN",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "spawnWeight": 10,
+        "minYLevel": 12,
+        "maxYLevel": 75,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:storage_blocks/coal",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

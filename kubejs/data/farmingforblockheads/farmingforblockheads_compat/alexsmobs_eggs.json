@@ -1,0 +1,16 @@
+{
+    "modId": "alexsmobs",
+    "group": {
+        "name": "Alex's Mobs Spawn Eggs",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "minecraft:emerald",
+            "count": 8
+        },
+        "defaultCategory": "farmingforblockheads:other"
+    },
+    "customEntries": [
+        { "output": { "item": "alexsmobs:spawn_egg_cockroach" } },
+        { "output": { "item": "alexsmobs:spawn_egg_centipede" } }
+    ]
+}

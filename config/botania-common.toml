@@ -15,7 +15,10 @@ invertMagnetRing = false
 #List of modids to prioritize when choosing a random ore from the tag.
 #By default, the chosen ore is randomly picked from all ores in the ore's tag.
 #Ores from mods present on this list will be picked over mods listed lower or not listed at all.
-orechidPriorityMods = ["emendatusenigmatica", "minecraft", "immersiveengineering", "create", "mekanism", "jaopca", "kubejs", "appliedenergistics2", "pneumaticcraft", "occultism", "tmechworks", "industrialforegoing", "botania", "quark", "pedestals"]
+#Applying changes at runtime requires /reload afterwards.
+orechidPriorityMods = ["emendatusenigmatica", "minecraft", "immersiveengineering", "create", "mekanism", "jaopca", "kubejs", "refinedstorage", "pneumaticcraft", "occultism", "tmechworks", "industrialforegoing", "botania", "quark", "pedestals"]
+#Set this to false to disable mystical flower and mushroom worldgen. More fine-tuned customization should be done with datapacks.
+worldgen = true
 
 [blockBreakingParticles]
 	#Set this to false to remove the block breaking particles from the Terra Shatterer, as there can be a good amount in higher levels.
@@ -38,30 +41,6 @@ orechidPriorityMods = ["emendatusenigmatica", "minecraft", "immersiveengineering
 	#Range: > 0
 	boreLens = 3
 
-[worldgen]
-
-	[worldgen.mushroom]
-		#The quantity of Botania mushrooms to generate underground, in the world, defaults to 40, the lower the number the less patches generate.
-		#Range: > 0
-		quantity = 40
-
-	[worldgen.flower]
-		#The inverse chance for a Botania flower patch to be generated, defaults to 16. The higher this value is the less patches will exist and the more flower each will have.
-		#Range: > 0
-		patchChance = 16
-		#The chance for a Botania flower generated in a patch to be a tall flower. 0.1 is 10%, 1 is 100%. Defaults to 0.05
-		#Range: 0.0 ~ 1.0
-		tallChance = 0.05
-		#The quantity of Botania flower patches to generate in the world, defaults to 2, the lower the number the less patches generate.
-		#Range: > 0
-		quantity = 2
-		#The density of each Botania flower patch generated, defaults to 2, the lower the number, the less each patch will have.
-		#Range: > 0
-		density = 2
-		#The size of each Botania flower patch, defaults to 6. The larger this is the farther the each patch can spread
-		#Range: > 0
-		patchSize = 6
-
 [gardenOfGlass]
 	#The multiplier for island distances for multiplayer Garden of Glass worlds.
 	#Islands are placed on a grid with 256 blocks between points, with the spawn island always being placed on 256, 256.
@@ -71,4 +50,11 @@ orechidPriorityMods = ["emendatusenigmatica", "minecraft", "immersiveengineering
 	islandScaleMultiplier = 8
 	#Set this to false to disable spawning with a Lexica Botania in Garden of Glass worlds, if you are modifying the modpack's progression to not start with Botania.
 	spawnWithLexicon = true
+
+[rannuncarpus]
+	#List of item registry names that will be ignored by rannuncarpuses when placing blocks.
+	itemBlacklist = []
+	#List of mod names for rannuncarpuses to ignore.
+	#Ignores Storage Drawers by default due to crashes with placing drawer blocks without player involvement.
+	modBlacklist = ["storagedrawers"]
 

@@ -1,0 +1,74 @@
+{
+    "flower": "tag:forge:mushrooms",
+    "lore": "Tier 1:\nHellish Zombees prefer similar enviorns to thier Piglin bretheren.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "apiaryOutputAmounts": [3, 6, 1, 2],
+    "traits": ["nether", "pigman", "can_swim", "wither"],
+    "baseLayerTexture": "pigman/pigman_bee",
+    "ColorData": {
+        "honeycombColor": "#885956",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:blackstone",
+                "outputs": [{ "outputID": "minecraft:gilded_blackstone", "weight": 10 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "entity:resourcefulbees:icy_bee",
+                "outputs": [{ "outputID": "entity:resourcefulbees:nether_quartz_bee", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:gold_nugget",
+        "mainOutputWeight": 0.2,
+        "mainOutputCount": 6,
+
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.75,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.4,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "minecraft:nether_wastes, minecraft:crimson_forest",
+        "biomeBlacklist": "tag:OVERWORLD,END",
+        "lightLevel": "ANY",
+        "spawnWeight": 10
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:storage_blocks/gold",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

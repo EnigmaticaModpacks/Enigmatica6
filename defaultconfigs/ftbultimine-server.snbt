@@ -1,0 +1,23 @@
+# Server-specific configuration for FTB Ultimine
+# This file is meant for server administrators to control user behaviour.
+# Changes in this file currently require a server restart to take effect
+
+{
+	# Hunger multiplied for each block mined with ultimine
+	# Default: 20.0
+	# Range: 0.0 ~ 10000.0
+	exhaustion_per_block: 25.0d
+	
+	# Max amount of blocks that can be ultimined at once
+	# Default: 64
+	# Range: 0 ~ 32768
+	max_blocks: 128
+	
+	# These tags will be considered the same block when checking for blocks to Ultimine
+	# Default: ["minecraft:base_stone_overworld", "c:*_ores", "forge:ores/*"]
+	merge_tags: [
+		"minecraft:base_stone_overworld"
+		"ftbultimine:menril_logs"
+		"forge:ores/*"
+	]
+}

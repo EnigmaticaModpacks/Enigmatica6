@@ -1,0 +1,41 @@
+
+#General settings
+[general]
+	#Is Enabled?
+	enabled = true
+	#Cost
+	#Range: > -2147483648
+	cost = 300
+	#Is Starter Glyph?
+	starter = false
+	#The maximum number of times this glyph may appear in a single spell
+	#Range: > 1
+	per_spell_limit = 1
+	#Limits the number of times a given augment may be applied to a given effect
+	#Example entry: "amplify=5"
+	augment_limits = []
+	#Base maximum number of blocks struck when targeting blocks
+	#Range: > 1
+	base_max_blocks = 16
+	#Bonus to maximum blocks per augment
+	#Range: > 1
+	bonus_blocks = 16
+	#Base search distance around each target block
+	#Range: 1.0 ~ 2.147483647E9
+	base_block_search_distance_euclidean = 1.75
+	#Bonus search distance around each target block per augment
+	#Range: 1.0 ~ 2.147483647E9
+	bonus_block_distance_euclidean = 1.0
+	#Base maximum number of entities struck when targeting entities
+	#Range: > 1
+	base_max_entities = 8
+	#Bonus to maximum entities per augment
+	#Range: > 1
+	bonus_entities = 16
+	#Base search distance around each target entity
+	#Range: 0.0 ~ 1.7976931348623157E308
+	base_entity_distance = 8.0
+	#Bonus search distance around each target entity per augment
+	#Range: 0.0 ~ 1.7976931348623157E308
+	bonus_entity_distance = 4.0
+

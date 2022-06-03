@@ -1,0 +1,41 @@
+{
+    "controllerId": "auto_iridescent_altar",
+    "textureOverride": "immersiveengineering:block/metal/storage_steel",
+    "name": "Automated Iridescent Altar",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "Item",
+            "id": "item",
+            "data": {
+                "rows": 6,
+                "columns": 5
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "FE",
+            "id": "energy",
+            "data": {
+                "capacity": 500000000
+            }
+        },
+        {
+            "type": "masterfulmachinery:fluids",
+            "name": "Fluid",
+            "id": "fluid",
+            "data": {
+                "capacity": 5000
+            }
+        },
+        {
+            "type": "masterfulmachinery:astral_starlight",
+            "textureOverride": "architects_palette:block/abyssaline_bricks_charged",
+            "name": "Starlight",
+            "id": "starlight",
+            "data": {
+                "capacity": 250000000
+            }
+        }
+    ]
+}

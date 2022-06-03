@@ -1,0 +1,1723 @@
+{
+	id: "00000000000000AE"
+	group: "72A9465344128AF9"
+	order_index: 4
+	filename: "pneumaticcraft_repressurized"
+	title: "PneumaticCraft: Repressurized"
+	icon: "pneumaticcraft:pressure_gauge_module"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "pneumaticcraft:ingot_iron_compressed"
+			x: -8.5d
+			y: -16.0d
+			shape: "gear"
+			description: [
+				"PneumaticCraft: Repressurized is all about logistics, automation, and generally blowing things up for profit. Mastering pressurized air and heat will be the beginning of your journey. "
+				""
+				"These quests will guide you through the mod, but be sure to refer back to the manual regularly for extra information. Chapters will unlock as you complete these quests and their associated achievements. "
+				""
+				"~MuteTiefling"
+			]
+			optional: true
+			id: "00000000000000AF"
+			tasks: [{
+				id: "7B56DD5D9F4BBB68"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+			rewards: [{
+				id: "00000000000000B1"
+				type: "item"
+				title: "Pneumatic Wrench"
+				item: {
+					id: "pneumaticcraft:pneumatic_wrench"
+					Count: 1b
+					tag: {
+						"pneumaticcraft:air": 30000
+					}
+				}
+			}]
+		}
+		{
+			title: "Ethically Sourced"
+			icon: "pneumaticcraft:pressure_chamber_wall"
+			x: -16.5d
+			y: -14.5d
+			shape: "rsquare"
+			description: [
+				"To begin your journey with PNC:R, you’ll need to obtain some Compressed Iron. The process for making this is quite dangerous without a pressure chamber. Be sure to stand well back!"
+				""
+				"Once you’ve acquired the materials, build a 3x3x3 pressure chamber. The PNC:R Manual will show you how."
+				""
+				"Note: Take caution when building your Pressure Chamber and try to keep the structure within a single chunk. F3+G will display chunk boundaries."
+			]
+			dependencies: ["00000000000000AF"]
+			id: "00000000000000B3"
+			tasks: [
+				{
+					id: "00000000000000B4"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 23L
+				}
+				{
+					id: "00000000000000BA"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					count: 2L
+				}
+				{
+					id: "00000000000000BB"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+				}
+			]
+			rewards: [
+				{
+					id: "00000000000000C6"
+					type: "command"
+					title: "Rare PNC:R Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+					player_command: false
+				}
+				{
+					id: "0000000000000A78"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Air Compressor"
+			icon: "pneumaticcraft:air_compressor"
+			x: -16.5d
+			y: -13.0d
+			subtitle: "Under Pressure"
+			description: [
+				"While it won’t have you being visited by danger noodles from space or irradiating the countryside for the next millennium, Pressurized Air can be dangerous in its own right and going over pressure can cause that block to burst and be lost."
+				""
+				"A simple redstone cut-off can be built for your new Air Compressor with a bit of Redstone and a Repeater."
+			]
+			dependencies: ["00000000000000B3"]
+			id: "00000000000000BD"
+			tasks: [
+				{
+					id: "00000000000000BE"
+					type: "item"
+					item: "pneumaticcraft:pressure_gauge_module"
+				}
+				{
+					id: "00000000000000BF"
+					type: "item"
+					title: "Air Compressor"
+					icon: "pneumaticcraft:air_compressor"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "pneumaticcraft:air_compressor"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:liquid_compressor"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "00000000000000C0"
+					type: "item"
+					item: "pneumaticcraft:pressure_tube"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "00000000000000C1"
+					type: "item"
+					title: "Redstone Dust"
+					item: "minecraft:redstone"
+					count: 9
+				}
+				{
+					id: "00000000000000C2"
+					type: "item"
+					title: "Redstone Repeater"
+					item: "minecraft:repeater"
+				}
+			]
+		}
+		{
+			title: "Security Upgrades"
+			x: -17.5d
+			y: -12.5d
+			subtitle: "Cautiously Optimistic"
+			description: ["Even the best laid plans can be brought to ruin by unexpected events. Install security upgrades in your compressor and pressure chamber to prevent rapid unscheduled disassembly."]
+			dependencies: ["00000000000000B3"]
+			id: "00000000000000C3"
+			tasks: [{
+				id: "00000000000000C4"
+				type: "item"
+				item: "pneumaticcraft:security_upgrade"
+				count: 2L
+			}]
+			rewards: [{
+				id: "00000000000000C5"
+				type: "command"
+				title: "Rare PNC:R Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -15.5d
+			y: -12.5d
+			subtitle: "A Cleaner Burn"
+			description: [
+				"Solid fuels can be potent, but they lack finesse as they’ll continue to generate pressure until the entire piece of fuel has burned, even if the compressor is disabled by redstone. Consider upgrading to a safer fuel source."
+				""
+				"Note: Liquid Compressors can burn many types of fuel, all listed within the GUI, however some notable renewable fuels include biodiesel, liquid hydrogen, and liquid ethylene."
+			]
+			dependencies: ["00000000000000B3"]
+			id: "00000000000000C7"
+			tasks: [{
+				id: "00000000000000C8"
+				type: "item"
+				item: "pneumaticcraft:liquid_compressor"
+			}]
+			rewards: [{
+				id: "00000000000000C9"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.0d
+			y: -10.0d
+			subtitle: "The Night is Dark..."
+			description: ["Despite its name, the Kerosene Lamp is capable of using all of the same fuels as the Liquid Compressor and can light an area up to 30 blocks in radius. Perfect for keeping the terrors at bay. Try using a few to safely light up your base."]
+			dependencies: ["00000000000000EA"]
+			id: "00000000000000CA"
+			tasks: [{
+				id: "00000000000000CB"
+				type: "item"
+				item: "pneumaticcraft:kerosene_lamp"
+			}]
+			rewards: [{
+				id: "000000000000022D"
+				type: "item"
+				title: "Medium Fluid Tank"
+				item: {
+					id: "pneumaticcraft:medium_tank"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							SavedTanks: {
+								Tank: {
+									FluidName: "pneumaticcraft:kerosene"
+									Amount: 64000
+								}
+							}
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "-173 Fahrenheit or Celsius?"
+			icon: "minecraft:packed_ice"
+			x: -12.5d
+			y: -13.5d
+			shape: "rsquare"
+			subtitle: "First one, then the other"
+			description: ["Where pressurized air is your primary power supply, heat is a secondary but just as vital mechanic. Advanced Compressors and other machines rely on either heating them up or cooling them down to run properly."]
+			dependencies: ["00000000000000AF"]
+			id: "00000000000000CC"
+			tasks: [{
+				id: "00000000000000CD"
+				type: "checkmark"
+				title: "-173 Fahrenheit or Celsius?"
+			}]
+			rewards: [
+				{
+					id: "00000000000000CE"
+					type: "item"
+					title: "Camouflage Applicator"
+					item: {
+						id: "pneumaticcraft:camo_applicator"
+						Count: 1b
+						tag: {
+							"pneumaticcraft:air": 30000
+						}
+					}
+				}
+				{
+					id: "0000000000000A79"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -12.5d
+			y: -12.0d
+			subtitle: "Whirling Dervishes"
+			description: [
+				"Built on the principle of swirling high pressure air in a special chamber to create a temperature differential, the Vortex Tube allows you to finely control the amount of heating or cooling it does by controlling the pressure."
+				""
+				"The Vortex Tube isn’t the only way to generate Heat, however. Looking up uses on Heat Pipes in JEI will bring up a variety of blocks and liquids that may be used for heating and cooling as well. "
+				""
+				"Lastly, PneumaticCraft has built in support for Mekanism’s Heat system and compatibility with Integrated Dynamics. Some notable heat sources include:"
+				""
+				"● External Heater"
+				"● Resistive Heater"
+				"● Fuelwood Heater"
+			]
+			dependencies: ["00000000000000CC"]
+			id: "00000000000000CF"
+			tasks: [{
+				id: "00000000000000D0"
+				type: "item"
+				item: "pneumaticcraft:vortex_tube"
+			}]
+			rewards: [{
+				id: "00000000000000D1"
+				type: "item"
+				title: "Heat Sink"
+				item: "pneumaticcraft:heat_sink"
+			}]
+		}
+		{
+			title: "Heat Pipe"
+			x: -12.5d
+			y: -11.0d
+			subtitle: "The Cold Never Bothered Me Anyway"
+			description: [
+				"Heat Pipe is useful for transmitting heat between blocks quickly and without loss to the environment. Use it to move heat from a Vortex Tube to one or more machines. Heat can also be used to directly power a Furnace."
+				""
+				"Note: Heat capable machines will also share heat between themselves, so it’s only necessary to run a heat pipe to one of any set of machines in a row."
+			]
+			dependencies: ["00000000000000CF"]
+			id: "00000000000000D2"
+			tasks: [{
+				id: "00000000000000D3"
+				type: "item"
+				item: "pneumaticcraft:heat_pipe"
+				count: 6L
+			}]
+			rewards: [{
+				id: "00000000000000D4"
+				type: "item"
+				title: "Thermal Lagging"
+				item: "pneumaticcraft:thermal_lagging"
+				count: 12
+			}]
+		}
+		{
+			x: -13.5d
+			y: -12.5d
+			description: [
+				"You may have noted by now that the Vortex Tube uses a lot of air and does not respond to redstone. In order to turn it off, the air supply must be cut. A Regulator Tube Module allows you to do just that."
+				""
+				"Place it in line in your Pressure Tube and apply a redstone signal to it. A signal of 15 will fully disable the flow of air, turning off any machines down the line."
+			]
+			dependencies: ["00000000000000CF"]
+			id: "00000000000000D5"
+			tasks: [{
+				id: "00000000000000D6"
+				type: "item"
+				item: "pneumaticcraft:regulator_tube_module"
+			}]
+			rewards: [{
+				id: "00000000000000D8"
+				type: "command"
+				title: "Rare PNC:R Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -13.5d
+			y: -10.5d
+			subtitle: "Freeze Frame"
+			description: [
+				"The Heat Frame is placed on any inventory and allows the inventory to make use of heat or cold to perform crafting operations. When heated, it smelts items as a furnace would. When cooled, it can make a variety of useful items."
+				""
+				"In order to cool liquids, fill a PneumaticCraft tank or a bucket and place it inside the inventory. The cooled items will appear in the chest as long as there's room."
+			]
+			dependencies: ["00000000000000D2"]
+			id: "00000000000000D9"
+			tasks: [{
+				id: "00000000000000DA"
+				type: "item"
+				item: "pneumaticcraft:heat_frame"
+			}]
+			rewards: [{
+				id: "00000000000000DB"
+				type: "item"
+				title: "Reinforced Chest"
+				item: "pneumaticcraft:reinforced_chest"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -10.0d
+			subtitle: "Under the Radar"
+			description: [
+				"The Universal Sensor is a powerful block that will output a redstone signal based on various conditions, such as detecting a nearby player, when a player right clicks a block, the presence of blocks, light level, or even the current heat of a block."
+				""
+				"When reading heat, try aiming it at a heat pipe or a PNC:R machine, rather than at an inventory with a heat frame."
+			]
+			dependencies: ["00000000000000D2"]
+			id: "00000000000000DC"
+			tasks: [{
+				id: "00000000000000DD"
+				type: "item"
+				item: "pneumaticcraft:universal_sensor"
+			}]
+			rewards: [
+				{
+					id: "00000000000000DE"
+					type: "item"
+					title: "Block Tracker Upgrade"
+					item: "pneumaticcraft:block_tracker_upgrade"
+				}
+				{
+					id: "00000000000000DF"
+					type: "item"
+					title: "GPS Tool"
+					item: "pneumaticcraft:gps_tool"
+				}
+			]
+		}
+		{
+			title: "Crude and Un-Cultured"
+			x: -4.0d
+			y: -13.5d
+			shape: "rsquare"
+			description: ["Go scoop up a bucket of oil like some filthy mongrel. You’ll find it commonly above ground and it’s easily spotted by watching your minimap."]
+			dependencies: ["00000000000000AF"]
+			id: "00000000000000E0"
+			tasks: [{
+				id: "00000000000000E1"
+				type: "item"
+				item: "pneumaticcraft:oil_bucket"
+			}]
+			rewards: [
+				{
+					id: "00000000000000E6"
+					type: "command"
+					title: "Rare PNC:R Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+					player_command: false
+				}
+				{
+					id: "0000000000000A7B"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			icon: "pneumaticcraft:gas_lift"
+			x: -5.5d
+			y: -12.5d
+			subtitle: "Hands Off!"
+			description: [
+				"The Gas Lift can be used to pump up fluids from the world. Place it above a source block of any fluid, insert drill pipes, and provide air. The pipes will extend down to a source and the lift will attempt to pull all nearby connected source blocks."
+				""
+				"Note: Sneak + Right click any PNC:R block with a Pneumatic Wrench to instantly pick it up while retaining the stored air and upgrades. This also works on Pressure Chamber Valves."
+			]
+			dependencies: ["00000000000000E0"]
+			id: "00000000000000E2"
+			tasks: [
+				{
+					id: "00000000000000E3"
+					type: "item"
+					item: "pneumaticcraft:gas_lift"
+				}
+				{
+					id: "00000000000000E4"
+					type: "item"
+					item: "pneumaticcraft:drill_pipe"
+					count: 12L
+				}
+			]
+			rewards: [{
+				id: "00000000000000E5"
+				type: "item"
+				title: "Seismic Sensor"
+				item: "pneumaticcraft:seismic_sensor"
+			}]
+		}
+		{
+			title: "Oil Refinery"
+			icon: "pneumaticcraft:refinery_output"
+			x: -4.0d
+			y: -12.0d
+			subtitle: "Refined Company"
+			description: [
+				"The Refinery is built by placing the Controller and stacking 2-4 outputs on top of it. Be sure to insulate all of the sides! Consider using a logistics network to extract the outputs for further processing. Supply heat and oil to begin the process. "
+				""
+				"Note: A Comparator reading from the Controller is an excellent way of controlling your Vortex Tube to prevent wasting fuel."
+			]
+			dependencies: ["00000000000000E0"]
+			id: "00000000000000E7"
+			tasks: [
+				{
+					id: "00000000000000E8"
+					type: "item"
+					item: "pneumaticcraft:refinery"
+				}
+				{
+					id: "00000000000000E9"
+					type: "item"
+					item: "pneumaticcraft:refinery_output"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "000000000000022C"
+				type: "command"
+				title: "Rare PNC:R Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Thermopneumatic Processing"
+			x: -4.0d
+			y: -11.0d
+			subtitle: "Thermo-new-what-now?"
+			description: [
+				"TPP for short, this machine uses a combination of heat and pressure to transform solids and liquids. It has even found use in the kitchen in recent years. "
+				""
+				"Placing the machines in a row allows them to share both heat and pressure through their sides. "
+			]
+			dependencies: ["00000000000000E7"]
+			id: "00000000000000EA"
+			tasks: [{
+				id: "00000000000000EB"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "00000000000000EC"
+					type: "item"
+					title: "Cod n Chips"
+					item: "pneumaticcraft:cod_n_chips"
+					count: 16
+				}
+				{
+					id: "00000000000000ED"
+					type: "item"
+					title: "Dispenser Upgrade"
+					item: "pneumaticcraft:dispenser_upgrade"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Lubricant"
+			x: -5.0d
+			y: -9.5d
+			subtitle: "Slippery Slope"
+			description: ["Extremely valuable for creating Speed Upgrades."]
+			dependencies: ["00000000000000F8"]
+			id: "00000000000000EE"
+			tasks: [{
+				id: "00000000000000EF"
+				type: "item"
+				item: "pneumaticcraft:lubricant_bucket"
+			}]
+			rewards: [{
+				id: "00000000000000F0"
+				type: "item"
+				title: "Speed Upgrade"
+				item: "pneumaticcraft:speed_upgrade"
+				count: 2
+			}]
+		}
+		{
+			title: "LPG"
+			x: -3.0d
+			y: -10.5d
+			subtitle: "Out of Phase"
+			description: ["Need more? Consider converting some of your other fuels."]
+			dependencies: ["00000000000000EA"]
+			id: "00000000000000F1"
+			tasks: [{
+				id: "00000000000000F2"
+				type: "item"
+				item: "pneumaticcraft:lpg_bucket"
+			}]
+			rewards: [{
+				id: "00000000000000F3"
+				type: "command"
+				title: "Rare PNC:R Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Molten Plastic"
+			x: -3.0d
+			y: -9.5d
+			subtitle: "White Gold"
+			description: ["A drop in the sea to come."]
+			dependencies: ["00000000000000F1"]
+			id: "00000000000000F4"
+			tasks: [{
+				id: "00000000000000F5"
+				type: "item"
+				item: "pneumaticcraft:plastic_bucket"
+			}]
+			rewards: [{
+				id: "00000000000000F7"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Diesel"
+			x: -5.0d
+			y: -10.5d
+			subtitle: "To Burn, or Not To Burn"
+			description: ["It's a decent fuel... but perhaps a little transformation is in order."]
+			dependencies: ["00000000000000EA"]
+			id: "00000000000000F8"
+			tasks: [{
+				id: "00000000000000F9"
+				type: "item"
+				item: "pneumaticcraft:diesel_bucket"
+			}]
+			rewards: [{
+				id: "00000000000000FA"
+				type: "command"
+				title: "Rare PNC:R Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.0d
+			y: -9.0d
+			subtitle: "Mixin’ It Up"
+			description: ["The Fluid Mixer is primarily used as the final step in the Biodiesel processing chain. It also creates a very useful byproduct, Glycerol."]
+			dependencies: [
+				"00000000000000F4"
+				"00000000000000EE"
+			]
+			id: "00000000000000FB"
+			tasks: [{
+				id: "00000000000000FC"
+				type: "item"
+				item: "pneumaticcraft:fluid_mixer"
+			}]
+			rewards: [
+				{
+					id: "0000000000000105"
+					type: "item"
+					title: "Red Mushroom"
+					item: "minecraft:red_mushroom"
+					count: 16
+				}
+				{
+					id: "0000000000000106"
+					type: "item"
+					title: "Podzol"
+					item: "minecraft:podzol"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Yeast Culture"
+			icon: "minecraft:red_mushroom_block"
+			x: -4.0d
+			y: -7.5d
+			subtitle: "Cultural Revolution"
+			description: [
+				"The first step to producing renewable plastic and lubricant, creating Yeast Culture with a TPP will require precise heat control."
+				""
+				"Experiment with low power heat sources such as torches, varying levels of insulation, or even different biomes or dimensions to find a way to produce the culture reliably."
+			]
+			dependencies: ["00000000000000FB"]
+			id: "00000000000000FD"
+			tasks: [{
+				id: "00000000000000FE"
+				type: "item"
+				item: "pneumaticcraft:yeast_culture_bucket"
+			}]
+			rewards: [{
+				id: "00000000000000FF"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Ethanol"
+			x: -5.0d
+			y: -7.0d
+			subtitle: "What a Corny Joke"
+			description: [""]
+			dependencies: ["00000000000000FD"]
+			id: "0000000000000100"
+			tasks: [{
+				id: "0000000000000101"
+				type: "item"
+				item: "pneumaticcraft:ethanol_bucket"
+			}]
+			rewards: [{
+				id: "0000000000000102"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Vegetable Oil"
+			x: -3.0d
+			y: -7.0d
+			subtitle: "Give Peas a Chance"
+			description: ["Or any seed, for that matter."]
+			dependencies: ["00000000000000FD"]
+			id: "0000000000000103"
+			tasks: [{
+				id: "0000000000000104"
+				type: "item"
+				item: "pneumaticcraft:vegetable_oil_bucket"
+			}]
+			rewards: [{
+				id: "000000000000022A"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Biodiesel"
+			x: -4.0d
+			y: -6.5d
+			subtitle: "Slow Burn"
+			description: ["A sustainable way forward."]
+			dependencies: [
+				"0000000000000103"
+				"0000000000000100"
+			]
+			id: "0000000000000107"
+			tasks: [{
+				id: "0000000000000108"
+				type: "item"
+				item: "pneumaticcraft:biodiesel_bucket"
+			}]
+			rewards: [{
+				id: "0000000000000379"
+				type: "command"
+				title: "Legendary PNC:R Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.0d
+			shape: "octagon"
+			description: ["Find a way to fully automate the creation of plastic sheets and speed upgrades from biodiesel with only PNC:R and vanilla mechanics. Consider the use of drones for farming and logistics."]
+			dependencies: ["0000000000000107"]
+			id: "0000000000000109"
+			tasks: [{
+				id: "000000000000010A"
+				type: "checkmark"
+				title: "Sustainability Challenge"
+				icon: {
+					id: "pneumaticcraft:logistics_drone"
+					Count: 1b
+					tag: {
+						"pneumaticcraft:air": 120000
+					}
+				}
+			}]
+		}
+		{
+			title: "Logistics"
+			x: -8.5d
+			y: -12.0d
+			subtitle: "Framing Your Request"
+			description: [
+				"Logistics Frames and Modules are the heart and soul of the logistics network. Frames can be installed on any inventory and configured with a Logistical Configurator."
+				""
+				"For more complex setups, it may be necessary to ‘extend’ the machine by using other inventories. "
+				""
+				"For example, you may use a requester frame on a furnace to pull items into it, then pull the result out with a hopper. A provider frame on the hopper can then send back into the network."
+			]
+			dependencies: ["000000000000011D"]
+			id: "000000000000010B"
+			tasks: [{
+				id: "000000000000010C"
+				type: "item"
+				item: "pneumaticcraft:logistics_module"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "000000000000010D"
+					type: "item"
+					title: "Logistic Requester Frame"
+					item: "pneumaticcraft:logistics_frame_requester"
+					count: 8
+				}
+				{
+					id: "000000000000010E"
+					type: "item"
+					title: "Logistic Passive Provider Frame"
+					item: "pneumaticcraft:logistics_frame_passive_provider"
+					count: 8
+				}
+				{
+					id: "000000000000010F"
+					type: "item"
+					title: "Logistic Storage Frame"
+					item: "pneumaticcraft:logistics_frame_storage"
+					count: 8
+				}
+				{
+					id: "00000000000006FF"
+					type: "item"
+					title: "Logistic Active Provider Frame"
+					item: "pneumaticcraft:logistics_frame_active_provider"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -12.0d
+			subtitle: "Who Says You Can't Take It With You?"
+			description: ["A blast resistant chest that retains its contents when broken."]
+			dependencies: ["000000000000010B"]
+			id: "0000000000000110"
+			tasks: [{
+				id: "0000000000000111"
+				type: "item"
+				item: "pneumaticcraft:reinforced_chest"
+			}]
+			rewards: [{
+				id: "0000000000000113"
+				type: "command"
+				title: "Rare PNC:R Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.0d
+			y: -11.0d
+			subtitle: "Work Smarter, Not Harder"
+			description: ["An advanced version of the Reinforced Chest featuring a larger inventory, per slot item type and quantity filtering, ranged item collection, and the ability to push and pull items to and from nearby inventories."]
+			dependencies: ["0000000000000110"]
+			id: "0000000000000114"
+			tasks: [{
+				id: "0000000000000115"
+				type: "item"
+				item: "pneumaticcraft:smart_chest"
+			}]
+			rewards: [
+				{
+					id: "0000000000000117"
+					type: "command"
+					title: "Epic PNC:R Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+					player_command: false
+				}
+				{
+					id: "0000000000000118"
+					type: "item"
+					title: "Magnet Upgrade"
+					item: "pneumaticcraft:magnet_upgrade"
+				}
+			]
+		}
+		{
+			title: "Hoppers"
+			icon: "pneumaticcraft:omnidirectional_hopper"
+			x: -11.0d
+			y: -11.0d
+			subtitle: "Weird Flex, Bro"
+			description: ["Filterable and fast, PNC Hoppers can be oriented however you like and accept multiple useful upgrades. Check their GUI for more info."]
+			dependencies: ["0000000000000110"]
+			id: "0000000000000119"
+			tasks: [
+				{
+					id: "000000000000011A"
+					type: "item"
+					item: "pneumaticcraft:omnidirectional_hopper"
+				}
+				{
+					id: "000000000000011B"
+					type: "item"
+					item: "pneumaticcraft:liquid_hopper"
+				}
+			]
+			rewards: [{
+				id: "000000000000011C"
+				type: "item"
+				title: "Speed Upgrade"
+				item: "pneumaticcraft:speed_upgrade"
+				count: 2
+			}]
+		}
+		{
+			title: "The Logical Path Forward"
+			x: -8.5d
+			y: -13.5d
+			shape: "rsquare"
+			description: [
+				"The Logistics system for PNC:R is quite powerful, though it requires some fore-thought in implementation and has an upkeep cost in air for moving items and fluid around. "
+				""
+				"When used over a pressure tube network, it allows for instantaneous movement of large amounts of items and fluids through the same line simultaneously."
+			]
+			dependencies: ["00000000000000AF"]
+			id: "000000000000011D"
+			tasks: [{
+				id: "000000000000011E"
+				type: "checkmark"
+				title: "The Logical Path Forward"
+				icon: "pneumaticcraft:logistics_core"
+			}]
+			rewards: [
+				{
+					id: "000000000000011F"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:logistics_configurator"
+						Count: 1b
+						tag: {
+							"pneumaticcraft:air": 30000
+						}
+					}
+				}
+				{
+					id: "0000000000000A7A"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Redstone Modules"
+			x: -10.0d
+			y: -10.0d
+			subtitle: "Redstone Evolution"
+			description: [
+				"Redstone Modules are used to read and output redstone signals by transmitting them over a pipe network.This does not require air to use."
+				""
+				"Install an Advanced PCB into one to allow it to perform much more complicated operations, such as acting as a clock, a signal counter, or a toggle. "
+			]
+			dependencies: ["000000000000010B"]
+			id: "0000000000000120"
+			tasks: [{
+				id: "0000000000000121"
+				type: "item"
+				item: "pneumaticcraft:redstone_module"
+				count: 2L
+			}]
+			rewards: [{
+				id: "0000000000000122"
+				type: "command"
+				title: "Rare PNC:R Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -11.0d
+			y: -10.0d
+			subtitle: "Raspberry Pi"
+			description: [
+				"Advanced PCBs are inserted into various tube modules to enhance their capabilities.Regulator Tube Modules, Pressure Gauge Tube Modules, Redstone Modules,and Air Grate Modules all benefit greatly from advanced PCBs."
+				""
+				"Consider upgrading the redstone control on your compressor using a combination of an advanced Pressure Gauge Module and some redstone modules."
+			]
+			dependencies: ["0000000000000120"]
+			id: "0000000000000123"
+			tasks: [{
+				id: "0000000000000124"
+				type: "item"
+				item: "pneumaticcraft:advanced_pcb"
+			}]
+			rewards: [{
+				id: "0000000000000125"
+				type: "command"
+				title: "Legendary PNC:R Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -8.5d
+			y: -10.5d
+			subtitle: "Flying Circus"
+			description: ["Logistics Drones are handy little helpers in places where you don’t want to run a full air infrastructure. Experiment with some logistics frames and deploy a logistics drone to move the items for you."]
+			dependencies: ["000000000000010B"]
+			id: "0000000000000126"
+			tasks: [{
+				id: "0000000000000127"
+				type: "item"
+				item: "pneumaticcraft:logistics_drone"
+			}]
+			rewards: [{
+				id: "0000000000000128"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -8.5d
+			y: -9.0d
+			subtitle: "Automation Valley"
+			description: [
+				"Craft and deploy a Harvest Drone to automate a crop farm or a tree farm. Use a Collector Drone to keep things tidy."
+				""
+				"Refer to the PNC Manual or the item tooltips for instructions on how they work."
+			]
+			dependencies: ["0000000000000126"]
+			id: "0000000000000129"
+			tasks: [{
+				id: "000000000000012A"
+				type: "item"
+				item: "pneumaticcraft:harvesting_drone"
+			}]
+			rewards: [
+				{
+					id: "000000000000012B"
+					type: "item"
+					title: "Collector Drone"
+					item: "pneumaticcraft:collector_drone"
+				}
+				{
+					id: "0000000000000701"
+					type: "item"
+					title: "Refined Obsidian Hoe"
+					item: {
+						id: "mekanismtools:refined_obsidian_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -7.5d
+			subtitle: "In-Flight Refueling"
+			description: [
+				"The charging station is vital for keeping drones charged automatically. Place one down and insert a Dispenser Upgrade into it to allow it to charge entities above it. Nearby drones will automatically seek out available charging stations when needed."
+				""
+				"Standing on such a Charging Station will also charge items in your inventory."
+				""
+				"Note: The Charging Station is the POI for Pressure Mechanics. Maybe go make a friend and see what they have to offer."
+			]
+			dependencies: ["0000000000000129"]
+			id: "000000000000012C"
+			tasks: [{
+				id: "000000000000012D"
+				type: "item"
+				item: "pneumaticcraft:charging_station"
+			}]
+			rewards: [
+				{
+					id: "000000000000012E"
+					type: "item"
+					title: "Dispenser Upgrade"
+					item: "pneumaticcraft:dispenser_upgrade"
+				}
+				{
+					id: "0000000000000700"
+					type: "item"
+					title: "Volume Upgrade"
+					item: "pneumaticcraft:volume_upgrade"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -7.0d
+			subtitle: "In Her Time of Need"
+			description: ["Install one or more Item Life Upgrades in your drones to help them stay in working order. They can occasionally take damage from environmental hazards and these upgrades will cause them to self repair."]
+			dependencies: ["000000000000012C"]
+			id: "000000000000012F"
+			tasks: [{
+				id: "0000000000000130"
+				type: "item"
+				item: "pneumaticcraft:item_life_upgrade"
+			}]
+			rewards: [{
+				id: "0000000000000131"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -8.5d
+			y: -6.5d
+			subtitle: "She's All Alone, All Alone"
+			description: ["Install a Standby Upgrade in a drone to conserve a little air."]
+			dependencies: ["000000000000012C"]
+			id: "0000000000000132"
+			tasks: [{
+				id: "0000000000000133"
+				type: "item"
+				item: "pneumaticcraft:standby_upgrade"
+			}]
+			rewards: [{
+				id: "0000000000000134"
+				type: "command"
+				title: "Rare PNC:R Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Inventory Upgrade"
+			x: -7.5d
+			y: -8.0d
+			subtitle: "This Bad Boy Can Fit So Many Blocks In It!"
+			description: ["Install some Inventory Upgrades in your Collector Drone."]
+			dependencies: ["000000000000012C"]
+			id: "0000000000000135"
+			tasks: [{
+				id: "0000000000000136"
+				type: "item"
+				item: "pneumaticcraft:inventory_upgrade"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0000000000000137"
+				type: "item"
+				title: "Inventory Upgrade"
+				item: "pneumaticcraft:inventory_upgrade"
+				count: 8
+			}]
+		}
+		{
+			x: -9.5d
+			y: -8.0d
+			subtitle: "He's Going the Distance"
+			description: ["Install a few Range Upgrades in your Collector Drone."]
+			dependencies: ["000000000000012C"]
+			id: "0000000000000138"
+			tasks: [{
+				id: "0000000000000139"
+				type: "item"
+				item: "pneumaticcraft:range_upgrade"
+			}]
+			rewards: [{
+				id: "000000000000013A"
+				type: "item"
+				title: "Range Upgrade"
+				item: "pneumaticcraft:range_upgrade"
+				count: 2
+			}]
+		}
+		{
+			x: -9.5d
+			y: -7.0d
+			subtitle: "He's Going for Speed"
+			description: ["Speed things up with a few of these in your Drones, or many other blocks."]
+			dependencies: ["000000000000012C"]
+			id: "000000000000013B"
+			tasks: [{
+				id: "000000000000013C"
+				type: "item"
+				item: "pneumaticcraft:speed_upgrade"
+			}]
+			rewards: [{
+				id: "000000000000013D"
+				type: "item"
+				title: "Speed Upgrade"
+				item: "pneumaticcraft:speed_upgrade"
+				count: 2
+			}]
+		}
+		{
+			title: "Programmable Drones"
+			icon: "pneumaticcraft:programmer"
+			x: -10.0d
+			y: -9.0d
+			subtitle: "Doin’ It My Way"
+			description: [
+				"Programmable Drones are the pinnacle of PNC:R’s automation capabilities and the options are near limitless as they can interact with blocks and entities, wield weapons and tools, and perform their actions based on complex conditions."
+				""
+				"Take a dive into this visual programming language and see what you can come up with! If you’re short of ideas, try some of these:"
+				""
+				"● Automate Powah’s Energizing Orb"
+				"● Automate Botania’s Runic Altar"
+				"● Automate PNC:R’s Biodiesel"
+				"● Create a slime farm using milk buckets and green dye"
+				"● Create a transportation network using drones to pick you up and teleport you"
+			]
+			dependencies: ["0000000000000129"]
+			id: "000000000000013E"
+			tasks: [
+				{
+					id: "000000000000013F"
+					type: "item"
+					item: "pneumaticcraft:drone"
+				}
+				{
+					id: "0000000000000141"
+					type: "item"
+					item: "pneumaticcraft:programmer"
+				}
+			]
+			rewards: [{
+				id: "0000000000000140"
+				type: "item"
+				title: "Programming Puzzle Piece"
+				item: "pneumaticcraft:programming_puzzle"
+				count: 64
+			}]
+		}
+		{
+			x: -11.0d
+			y: -9.0d
+			subtitle: "Always At Arms Reach"
+			description: ["Remotes are programmable interface devices that work by manipulating global variables. You can use these for remote redstone when combined with a Universal Sensor, or they can be used to control programmable drones."]
+			dependencies: ["000000000000013E"]
+			id: "0000000000000142"
+			tasks: [{
+				id: "0000000000000143"
+				type: "item"
+				item: "pneumaticcraft:remote"
+			}]
+			rewards: [{
+				id: "0000000000000144"
+				type: "command"
+				title: "Legendary PNC:R Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Plastic Sheets"
+			x: 0.0d
+			y: -14.5d
+			shape: "rsquare"
+			subtitle: "You Can Touch, You Can Play"
+			description: ["Cooling plastic by dumping a bucket in the world will get you started, but surely there’s a better way?"]
+			dependencies: [
+				"00000000000000BF"
+				"00000000000000F5"
+				"00000000000000AF"
+			]
+			id: "0000000000000145"
+			tasks: [{
+				id: "0000000000000146"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0000000000000147"
+				type: "item"
+				title: "Plastic Sheet"
+				item: "pneumaticcraft:plastic"
+				count: 8
+			}]
+		}
+		{
+			title: "Prime Delivery"
+			x: 0.0d
+			y: -13.0d
+			description: [
+				"The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it. "
+				""
+				"A number of special trades have been added to Enigmatica 6 which allow trading a set of survey tools for different materials from various dimensions. Try them out to obtain rare and unusual items!"
+			]
+			dependencies: ["0000000000000145"]
+			id: "0000000000000148"
+			tasks: [{
+				id: "0000000000000149"
+				type: "item"
+				item: "pneumaticcraft:amadron_tablet"
+			}]
+			rewards: [{
+				id: "705F9A21C798611B"
+				type: "item"
+				item: "kubejs:amadron_survey_tools"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -12.0d
+			subtitle: "Burning It In"
+			description: ["Always available from Amadron, any time, any day. But your local Pressure Mechanic commonly carries them as an initial trade as well…"]
+			dependencies: ["0000000000000148"]
+			id: "000000000000014B"
+			tasks: [{
+				id: "000000000000014C"
+				type: "item"
+				item: "pneumaticcraft:pcb_blueprint"
+			}]
+			rewards: [{
+				id: "000000000000014D"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -0.5d
+			y: -11.0d
+			subtitle: "Brighter than the Sun"
+			description: [
+				"Used to prepare Empty PCBs for etching. This can be a slow process without speed upgrades… Consider setting a threshold around 60-70% to have a decent chance of etching while waiting less. Automating this process is highly recommended."
+				""
+				"Failed PCBs can be recycled."
+			]
+			dependencies: ["000000000000014B"]
+			id: "000000000000014E"
+			tasks: [{
+				id: "000000000000014F"
+				type: "item"
+				item: "pneumaticcraft:uv_light_box"
+			}]
+			rewards: [{
+				id: "0000000000000150"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Etching Tank"
+			icon: "pneumaticcraft:etching_tank"
+			x: -1.0d
+			y: -10.0d
+			subtitle: "A Caustic Solution"
+			description: [
+				"The next step of creating Circuit Boards is to etch them in this tank, which can hold and simultaneously process as many as 25 Empty PCBs. The acid is only consumed if heat is applied while etching a board."
+				"Doing so significantly speeds up the etching process, however, and a single bucket will last for many PCBs."
+			]
+			dependencies: ["000000000000014E"]
+			id: "0000000000000151"
+			tasks: [
+				{
+					id: "0000000000000152"
+					type: "item"
+					item: "pneumaticcraft:etching_tank"
+				}
+				{
+					id: "0000000000000153"
+					type: "item"
+					item: "pneumaticcraft:etching_acid_bucket"
+				}
+			]
+			rewards: [{
+				id: "0000000000000154"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Assembly Table"
+			icon: "pneumaticcraft:assembly_platform"
+			x: 0.5d
+			y: -7.5d
+			subtitle: "Some Assembly Required"
+			description: [
+				"The Assembly Table provides a simpler way of making circuit boards and provides access to other advanced recipes."
+				""
+				"Each piece has limitations on where it can be placed. Refer to the PNC:R manual for the exact placement rules."
+				""
+				"A simple layout can be done in a 2x3 space, however:"
+				""
+				"IO, Controller, IO"
+				"Drill, Table, Laser"
+			]
+			dependencies: ["0000000000000165"]
+			id: "0000000000000155"
+			tasks: [
+				{
+					id: "0000000000000157"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_import"
+				}
+				{
+					id: "0000000000000158"
+					type: "item"
+					item: "pneumaticcraft:assembly_controller"
+				}
+				{
+					id: "0000000000000159"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_export"
+				}
+				{
+					id: "000000000000015A"
+					type: "item"
+					item: "pneumaticcraft:assembly_drill"
+				}
+				{
+					id: "000000000000015B"
+					type: "item"
+					item: "pneumaticcraft:assembly_platform"
+				}
+				{
+					id: "000000000000015C"
+					type: "item"
+					item: "pneumaticcraft:assembly_laser"
+				}
+			]
+			rewards: [{
+				id: "000000000000015D"
+				type: "command"
+				title: "Legendary PNC:R Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -9.0d
+			subtitle: "What Do You Do With a Bad Circuit?"
+			description: ["Ground it."]
+			dependencies: ["0000000000000151"]
+			id: "000000000000015E"
+			tasks: [{
+				id: "000000000000015F"
+				type: "item"
+				item: "pneumaticcraft:empty_pcb"
+			}]
+			rewards: [{
+				id: "0000000000000164"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -8.0d
+			subtitle: "Short Circuit"
+			description: ["Did you try stretching it?"]
+			dependencies: ["000000000000015E"]
+			id: "0000000000000160"
+			tasks: [{
+				id: "0000000000000161"
+				type: "item"
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+			rewards: [
+				{
+					id: "0000000000000162"
+					type: "item"
+					title: "Transistor"
+					item: "pneumaticcraft:transistor"
+					count: 2
+				}
+				{
+					id: "0000000000000163"
+					type: "item"
+					title: "Capacitor"
+					item: "pneumaticcraft:capacitor"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -7.5d
+			subtitle: "Who Investigates Electronic Crimes?"
+			description: ["Sherlok Ohms"]
+			dependencies: ["0000000000000160"]
+			id: "0000000000000165"
+			tasks: [{
+				id: "0000000000000166"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+			rewards: [{
+				id: "0000000000000167"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Assembly Program"
+			x: 1.0d
+			y: -8.5d
+			subtitle: "Two Birds with One Stone"
+			description: [
+				"Insert it into the Assembly Controller and provide air to get it started. Speed upgrades are highly recommended."
+				""
+				"Note: The Drill \\& Laser program allows the Assembly Table to craft recipes that require only a drill or laser. In most cases there’s no reason to use the individual programs."
+			]
+			dependencies: ["0000000000000155"]
+			id: "0000000000000168"
+			tasks: [{
+				id: "0000000000000169"
+				type: "item"
+				item: "pneumaticcraft:assembly_program_drill_laser"
+			}]
+			rewards: [{
+				id: "000000000000016A"
+				type: "command"
+				title: "Legendary PNC:R Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Fluid Tanks"
+			x: -11.0d
+			y: -12.0d
+			subtitle: "Stacking the Odds"
+			description: [
+				"Portable Fluid Storage. Also capable of filling buckets and other tanks for automation purposes."
+				""
+				"Stack them vertically and right click with a Pneumatic Wrench to form a multiblock tank."
+			]
+			dependencies: ["0000000000000110"]
+			id: "000000000000016B"
+			tasks: [{
+				id: "000000000000016C"
+				type: "item"
+				item: "pneumaticcraft:small_tank"
+				count: 2L
+			}]
+			rewards: [{
+				id: "000000000000016D"
+				type: "item"
+				title: "Medium Fluid Tank"
+				item: "pneumaticcraft:medium_tank"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -9.5d
+			subtitle: "Super Laminar Flow"
+			description: ["With advanced machining methods, stronger pressure tubes may be made and higher pressure attained. Advanced Compressors must be kept cool, and therefore are not always the best option for a given task. Some machines will only begin to work, however, at the pressures made by an advanced compressor."]
+			dependencies: ["0000000000000168"]
+			id: "0000000000000415"
+			tasks: [{
+				id: "0000000000000416"
+				type: "item"
+				item: "pneumaticcraft:advanced_liquid_compressor"
+			}]
+			rewards: [{
+				id: "000000000000063D"
+				type: "command"
+				title: "Legendary PNC:R Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -16.5d
+			y: -11.5d
+			subtitle: "Full Reverse!"
+			description: [
+				"Keeping things under pressure is only one side of the coin. Creating a vacuum can be very beneficial as well."
+				""
+				"Tip: A Pressure Chamber in Vacuum can be used to extract enchants from items."
+			]
+			dependencies: [
+				"00000000000000BD"
+				"00000000000000C7"
+				"00000000000000C3"
+			]
+			dependency_requirement: "one_completed"
+			id: "0000000000000417"
+			tasks: [{
+				id: "0000000000000418"
+				type: "item"
+				item: "pneumaticcraft:vacuum_pump"
+			}]
+			rewards: [{
+				id: "0000000000000423"
+				type: "item"
+				title: "Memory Stick"
+				item: "pneumaticcraft:memory_stick"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -10.5d
+			subtitle: "Helter Skelter"
+			description: [
+				"Recent advancements in Pneumatic technology now allow for the forced removal of the magical core of Spawners found throughout the world. Once extracted, they can be empowered to run more quickly by inserting them in a modified spawner and spinning them up with air."
+				""
+				"To begin, prepare the area around a spawner for a fight. Disabling it with Torches or by Hacking it are recommended."
+				""
+				"Place the Spawner Extractor on top of the spawner, connect a Vacuum Pump to the Extractor, and begin pumping the air out. As the Extractor reaches the requisite negative pressure, things will begin happening."
+				""
+				"The Extractor only works while the player is nearby, so stay close."
+				""
+				"As it works, mobs will be forcibly spawned in the area. You brought your armor, right?"
+				""
+				"The Extractor will slow down as more mobs accumulate in the area. Kill them quickly."
+				""
+				"Be prepared for large waves of mobs. Things can get hectic."
+				""
+				"Note: When the process has finished, sneak + right-click the Extractor with a Pneumatic Wrench to avoid the need to charge from scratch the next time. An extractor with some volume upgrades should be able to extract cores from several spawners before needing to be re-charged. "
+			]
+			dependencies: ["0000000000000417"]
+			min_width: 300
+			id: "0000000000000419"
+			tasks: [{
+				id: "000000000000041A"
+				type: "item"
+				item: "pneumaticcraft:spawner_extractor"
+			}]
+			rewards: [{
+				id: "0000000000000433"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "pneumaticcraft:vacuum_trap"
+			x: -15.5d
+			y: -10.5d
+			subtitle: "Who Ya Gonna Call?"
+			description: [
+				"Your gateway to custom spawning."
+				""
+				"Not every mob is readily available from natural spawners. Thankfully, there is a way of recreating the magic of the Spawner Core: The Vacuum Trap."
+				""
+				"The process begins similarly to the Spawner Extractor, hook the Vacuum Trap up to a Vacuum Pump and pull out all of the air. Volume upgrades are recommended and a Spawner Core is required. Sneak + Right Click the charged Trap with a Pneumatic Wrench to pick it up. Now place it down near most any mob and Sneak + Right Click it with an empty hand to open it. Nearby mobs will be sucked in and be added to the Core."
+				""
+				"Multiple mob types can be stored in a Core, making mixed spawners possible. "
+				""
+				"A Spawner Core with only one mob in it is still valid for use in a Pressurized Spawner; very useful for hard to capture or rare mobs."
+				""
+				"The Trap works more efficiently if it has Memory Essence in the internal tank, meaning it takes fewer mobs to completely fill it. "
+				""
+				"Random mobs may be released from a core by Sneak + Right Clicking it on the ground, allowing easier transportation of mobs even before the Pressurized Spawner is available. "
+			]
+			dependencies: ["000000000000041F"]
+			id: "000000000000041B"
+			tasks: [
+				{
+					id: "000000000000041C"
+					type: "item"
+					item: "pneumaticcraft:vacuum_trap"
+				}
+				{
+					id: "0000000000000422"
+					type: "item"
+					item: "pneumaticcraft:spawner_core"
+				}
+			]
+			rewards: [{
+				id: "0000000000000434"
+				type: "command"
+				title: "Legendary PNC:R Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -16.5d
+			y: -9.5d
+			subtitle: "Spinning in Their Graves"
+			description: [
+				"Once the Extraction process has finished, be sure to break the empty spawner (any pick will do) and take it with you. It's required for crafting a Pressurized Spawner."
+				""
+				"Note: Consider keeping a spare empty spawner at your base. The Spawner Extractor can be placed atop it to simplify recharging it for future projects."
+			]
+			dependencies: ["0000000000000419"]
+			id: "000000000000041F"
+			tasks: [{
+				id: "0000000000000420"
+				type: "item"
+				item: "pneumaticcraft:pressurized_spawner"
+			}]
+			rewards: [{
+				id: "0000000000000432"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+	]
+}

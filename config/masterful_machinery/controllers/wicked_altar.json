@@ -1,0 +1,19 @@
+{
+    "controllerId": "wicked_altar",
+    "textureOverride": "eidolon:block/polished_wood_pillar_top",
+    "name": "Wicked Altar",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "Item",
+            "id": "item",
+            "data": { "rows": 5, "columns": 5 }
+        },
+        {
+            "type": "masterfulmachinery:fluids",
+            "name": "Fluid",
+            "id": "fluid",
+            "data": { "capacity": 64000 }
+        }
+    ]
+}

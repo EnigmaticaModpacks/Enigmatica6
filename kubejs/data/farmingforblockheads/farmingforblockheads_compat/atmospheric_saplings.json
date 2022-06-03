@@ -1,0 +1,19 @@
+{
+    "modId": "atmospheric",
+    "group": {
+        "name": "Atmospheric Saplings",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "minecraft:emerald"
+        },
+        "defaultCategory": "farmingforblockheads:saplings"
+    },
+    "customEntries": [
+        { "output": { "item": "atmospheric:rosewood_sapling" } },
+        { "output": { "item": "atmospheric:morado_sapling" } },
+        { "output": { "item": "atmospheric:yucca_sapling" } },
+        { "output": { "item": "atmospheric:kousa_sapling" } },
+        { "output": { "item": "atmospheric:aspen_sapling" } },
+        { "output": { "item": "atmospheric:grimwood_sapling" } }
+    ]
+}

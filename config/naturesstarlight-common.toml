@@ -1,0 +1,39 @@
+#The amount of aura that the crystal generator generates per crystal growth
+crystalGeneratorAura = 30000
+#The maximum amount of starlight that is added around the powder of starry skies
+starlightEffectAddedStarlight = 0.6
+#The amount of aura that the powder of starry skies drains per second
+starlightEffectAuraDrain = 400
+
+[constellation]
+
+	[constellation.effect]
+
+		[constellation.effect.naritis]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 5.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 2.5
+			#Defines the amount of aura that this ritual generates per tick by default
+			auraPerTick = 350
+			#Defines the amount of aura the corrupted version of this ritual drains per tick by default
+			auraDrainPerTick = 75
+			#Defines the factor that the corrupted version of this ritual increases aura generation in the area by
+			auraGenIncreaseFactor = 2.5
+			#The enchantments that can be applied using stellar refraction, along with the minimum and maximum applied levels
+			engravingEnchantments = ["naturesaura:aura_mending, 1, 1", "minecraft:silk_touch, 1, 1", "minecraft:efficiency, 5, 6", "minecraft:thorns, 4, 6"]
+
+	[constellation.mantle]
+
+		[constellation.mantle.naritis]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#The amount of aura that one unit of charge creates
+			chargeToAuraRatio = 0.01
+			#The amount of charge that is converted into aura per second
+			chargeConvertedPerSecond = 6000.0
+

@@ -1,0 +1,16 @@
+
+#General settings
+[general]
+	#Advanced Demagnetizer Range
+	#Range: > 1
+	demagnetizerAdvancedRange = 16
+	#The number of filter slots the Advanced Demagnetizer has, ensure this is changed on all clients and the server.
+	#Range: 0 ~ 9
+	demagnetizerAdvancedFilterSlots = 9
+	#The number of filter slots the Demagnetizer has, ensure this is changed on all clients and the server.
+	#Range: 0 ~ 9
+	demagnetizerFilterSlots = 4
+	#Demagnetizer Range
+	#Range: > 1
+	demagnetizerRange = 4
+

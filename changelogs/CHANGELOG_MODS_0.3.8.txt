@@ -1,0 +1,790 @@
+=======================================
+Enigmatica6 0.3.7 --> Enigmatica6 0.3.8
+=======================================
+
+Added:
+- Lootr
+- Tome of Blood
+- Undergarden/Tetra Patch
+
+Updated:
+	AIOT Botania (aiotbotania-1.16.4-1.6.0.jar --> aiotbotania-1.16.4-1.7.0.jar):
+		aiotbotania-1.16.4-1.7.0.jar:
+			* fix pushing player into block when turning farmland to dirt/grass - MelanX
+			* fix lower tiers can make superfarmland + fix aoe tilting just inverts - MelanX
+			* fix crash when breaking trees with terra aiot - MelanX
+
+	Architectury API (Forge) ([Forge 1.16.4] v1.3.83 --> [Forge 1.16.4/5] v1.3.88):
+		[Forge 1.16.4/5] v1.3.88:
+			Architectury v1.3.88 for 1.16.4/5
+			Updated at 2021-01-22 18:28.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/526bbfb)
+			* Fix compilation error
+			* Add ClientLifecycleEvent.CLIENT_SETUP and allow deferring in ColorHandlers
+			* Add 1.16.5 to CurseForge versions
+			* Fix AW
+			* Add LevelResourceHooks
+			* Close #18 Currently testing item / block addition, keybinds and creative tabs.
+			* Add AbstractRecipeSerializer
+			* ArchitecturyBlockEntity to sync data to client (#10)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.3.86:
+			Architectury v1.3.86 for 1.16.4
+			Updated at 2021-01-21 18:39.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/7c4b602)
+			* Add 1.16.5 to CurseForge versions
+			* Fix AW
+			* Add LevelResourceHooks
+			* Close #18 Currently testing item / block addition, keybinds and creative tabs.
+			* Add AbstractRecipeSerializer
+			* ArchitecturyBlockEntity to sync data to client (#10)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.3.85:
+			Architectury v1.3.85 for 1.16.4
+			Updated at 2021-01-21 13:25.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/0bb1d9c)
+			* Fix AW
+			* Add LevelResourceHooks
+			* Close #18 Currently testing item / block addition, keybinds and creative tabs.
+			* Add AbstractRecipeSerializer
+			* ArchitecturyBlockEntity to sync data to client (#10)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.3.84:
+			Architectury v1.3.84 for 1.16.4
+			Updated at 2021-01-21 13:12.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/bca7340)
+			* Add LevelResourceHooks
+			* Close #18 Currently testing item / block addition, keybinds and creative tabs.
+			* Add AbstractRecipeSerializer
+			* ArchitecturyBlockEntity to sync data to client (#10)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+	Biomes O' Plenty (Biomes O' Plenty 1.16.4-13.0.0.429 --> Biomes O' Plenty 1.16.4-13.0.0.430):
+		Biomes O' Plenty 1.16.4-13.0.0.430:
+			github:
+			* Update ru_ru.json (#1793)
+
+	Botania (Botania-1.16.4-410.jar --> Botania-1.16.4-411.jar):
+		Botania-1.16.4-411.jar:
+			[https://botaniamod.net/changelog.php]()
+
+	Caelus API (Forge) (caelus-forge-1.16.4-2.1.0.2.jar --> caelus-forge-1.16.5-2.1.2.2.jar):
+		caelus-forge-1.16.5-2.1.2.2.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[1.16.5-2.1.2.2] - 2021.01.21
+			Fixed
+			* Fixed colored elytra texture rendering
+			[1.16.5-2.1.2.1] - 2021.01.21
+			Fixed
+			* Fixed elytra rendering
+			[1.16.5-2.1.2.0] - 2021.01.21
+			Added
+			* Added color overrides to RenderElytraEvent
+			[1.16.5-2.1.1.0] - 2021.01.21
+			Added
+			* Added taggable elytra implementations with "forge:elytra"
+			[1.16.4-2.1.0.2] - 2021.01.06
+			Fixed
+			* Fixed enchantment glint not being applied to the render layer
+			[1.16.4-2.1.0.1] - 2021.01.06
+			Fixed
+			* Fixed incorrect mixin injection
+			[1.16.4-2.1.0.0] - 2020.11.16
+			Changed
+			* Updated to 1.16.4
+			[1.16.3-2.0.0.3] - 2020.09.29
+			Fixed
+			* Fixed FML injection crash [#11](https://github.com/TheIllusiveC4/Caelus/issues/11)
+			[1.16.3-2.0.0.2] - 2020.09.27
+			Fixed
+			* Fixed jar build
+			[1.16.3-2.0.0.1] - 2020.09.27
+			Changed
+			* Updated to 1.16.3
+			[1.16.2-2.0.0.0] - 2020.08.14
+			Changed
+			* Updated to 1.16.2
+			[2.0-beta7] - 2020.08.07
+			Fixed
+			* Fixed dedicated server crash [#8](https://github.com/TheIllusiveC4/Caelus/issues/8)
+			[2.0-beta6] - 2020.08.06
+			Changed
+			* Updated to Forge 32.0.101+
+			* Javascript coremods replaced with mixins
+			[2.0-beta5] - 2020.07.14
+			Fixed
+			* Fixed NoClassDefFoundError
+			[2.0-beta4] - 2020.06.11
+			Added
+			* [API] Added RenderElytraEvent for rendering non-vanilla elytras, including enchantment glow and custom textures
+			Changed
+			* Ported to 1.16.1 Forge
+			Removed
+			* Removed elytra rendering IMC in favor of bringing back RenderElytraEvent
+			* Removed all advanced elytra controls (these will return in a separate mod TBA)
+
+		caelus-forge-1.16.5-2.1.1.0.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[1.16.5-2.1.1.0] - 2021.01.21
+			Added
+			* Added taggable elytra implementations with "forge:elytra"
+			[1.16.4-2.1.0.2] - 2021.01.06
+			Fixed
+			* Fixed enchantment glint not being applied to the render layer
+			[1.16.4-2.1.0.1] - 2021.01.06
+			Fixed
+			* Fixed incorrect mixin injection
+			[1.16.4-2.1.0.0] - 2020.11.16
+			Changed
+			* Updated to 1.16.4
+			[1.16.3-2.0.0.3] - 2020.09.29
+			Fixed
+			* Fixed FML injection crash [#11](https://github.com/TheIllusiveC4/Caelus/issues/11)
+			[1.16.3-2.0.0.2] - 2020.09.27
+			Fixed
+			* Fixed jar build
+			[1.16.3-2.0.0.1] - 2020.09.27
+			Changed
+			* Updated to 1.16.3
+			[1.16.2-2.0.0.0] - 2020.08.14
+			Changed
+			* Updated to 1.16.2
+			[2.0-beta7] - 2020.08.07
+			Fixed
+			* Fixed dedicated server crash [#8](https://github.com/TheIllusiveC4/Caelus/issues/8)
+			[2.0-beta6] - 2020.08.06
+			Changed
+			* Updated to Forge 32.0.101+
+			* Javascript coremods replaced with mixins
+			[2.0-beta5] - 2020.07.14
+			Fixed
+			* Fixed NoClassDefFoundError
+			[2.0-beta4] - 2020.06.11
+			Added
+			* [API] Added RenderElytraEvent for rendering non-vanilla elytras, including enchantment glow and custom textures
+			Changed
+			* Ported to 1.16.1 Forge
+			Removed
+			* Removed elytra rendering IMC in favor of bringing back RenderElytraEvent
+			* Removed all advanced elytra controls (these will return in a separate mod TBA)
+
+	Chisels & Bits (C&B 0.2.9 --> C&B 0.2.10):
+		C&B 0.2.10:
+			Several fixes for client related issues:
+			* Fixed a memory leak on the client when it is connected to a dedicated server, because the model cache size was set to a million......
+			* Fixed several crashes that could occur when model data was loaded from either the TE or an Stack.
+			* Added a bunch of translations.
+			Thanks to all contributors.
+
+	CodeChicken Lib 1.8.+ (CodeChicken Lib 1.16.4-3.5.0.401-universal --> CodeChicken Lib 1.16.4-3.5.1.408-universal):
+		CodeChicken Lib 1.16.4-3.5.1.408-universal:
+			No changelog available.
+
+	Curious Elytra (Forge) (curiouselytra-forge-1.16.3-4.0.0.1.jar --> curiouselytra-forge-1.16.5-4.0.2.0.jar):
+		curiouselytra-forge-1.16.5-4.0.2.0.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[1.16.5-4.0.2.0] - 2021.01.21
+			Added
+			* Added Silent Gear Elytra rendering integration
+			[1.16.5-4.0.1.0] - 2021.01.21
+			Added
+			* Added Enderite Mod integration
+			* Added Netherite Plus integration
+			Changed
+			* Updated to 1.16.5
+			[1.16.3-4.0.0.1] - 2020.09.27
+			Changed
+			* Updated to 1.16.3
+			[1.16.2-4.0.0.0] - 2020.08.14
+			Changed
+			* Updated to 1.16.2
+			[3.0](https://github.com/TheIllusiveC4/CuriousElytra/compare/1.15.x...master) - 2020.07.02
+			Changed
+			* Ported to 1.16.1 Forge
+
+		curiouselytra-forge-1.16.5-4.0.1.0.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[1.16.5-4.0.1.0] - 2021.01.21
+			Added
+			* Added Enderite Mod integration
+			* Added Netherite Plus integration
+			Changed
+			* Updated to 1.16.5
+			[1.16.3-4.0.0.1] - 2020.09.27
+			Changed
+			* Updated to 1.16.3
+			[1.16.2-4.0.0.0] - 2020.08.14
+			Changed
+			* Updated to 1.16.2
+			[3.0](https://github.com/TheIllusiveC4/CuriousElytra/compare/1.15.x...master) - 2020.07.02
+			Changed
+			* Ported to 1.16.1 Forge
+
+	Emojiful (emojiful-1.16.4-2.1.2.jar --> emojiful-1.16.4-2.1.3.jar):
+		emojiful-1.16.4-2.1.3.jar:
+			Various rendering fixes
+
+	Ender Storage 1.8.+ (Ender Storage 1.16.4-2.7.0.161-universal --> Ender Storage 1.16.4-2.7.1.166-universal):
+		Ender Storage 1.16.4-2.7.1.166-universal:
+			No changelog available.
+
+	ExtraStorage (ExtraStorage-1.16.4-1.2.2 --> ExtraStorage-1.16.4-1.3.0):
+		ExtraStorage-1.16.4-1.3.0:
+			* Added compatibility with other mods
+
+	FTB Chunks (ftb-chunks-1604.2.2.60.jar --> ftb-chunks-1604.2.2.61.jar):
+		ftb-chunks-1604.2.2.61.jar:
+			* Re-formatted some files - LatvianModder
+			* Merge pull request #91 from EnterFor/patch-2 - Kristiāns Micītis
+			* Merge pull request #96 from Sunekaer/patch-2 - Kristiāns Micītis
+			* Merge pull request #97 from Sunekaer/patch-4 - Kristiāns Micītis
+			* Merge pull request #95 from Sunekaer/patch-1 - Kristiāns Micītis
+			* pneumaticcraft block color for oil - Sunekaer
+			* BetterEndForge block colors - Sunekaer
+			* Updated BYG block colors - Sunekaer
+			* Create zh_cn.json - EnterFor
+
+	FTB GUI Library (ftb-gui-library-1604.2.0.29-forge.jar --> ftb-gui-library-1604.2.0.30-forge.jar):
+		ftb-gui-library-1604.2.0.30-forge.jar:
+			* Added fabric version uploading - LatvianModder
+
+	FTB Ranks (ftb-ranks-1604.1.1.9.jar --> ftb-ranks-1604.1.1.10.jar):
+		ftb-ranks-1604.1.1.10.jar:
+			* Made reflection in command handler less cancerous - LatvianModder
+
+	FTB Teams (ftb-teams-1604.1.0.13.jar --> ftb-teams-1604.1.0.14-forge.jar):
+		ftb-teams-1604.1.0.14-forge.jar:
+			* Reformatted code, fixed forge build, added fabric curseforge project - LatvianModder
+			* Merge pull request #5 from shedaniel/master - Kristiāns Micītis
+			* Port to architectury - shedaniel
+			* port to forge loom and remap - shedaniel
+
+	GeckoLib (GeckoLib 3.0.0 --> forge-1.16.5-geckolib-3.0.2.jar):
+		forge-1.16.5-geckolib-3.0.2.jar:
+			v3.0.2
+			* Fixed Armor rotations again #McHorse
+			* Fixed Geckolib Example entities not having Attributes #Paspartout
+			* Fixed Nameplates not showing on custom named mobs. #Paspartout/AzureDoom
+			* Fixed the invisible crash on glowing mobs, glowing mobs will now go invisible and glow wih their outline. #AzureDoom
+			* Updated to Latest Forge mappings.
+
+		forge-1.16.5-geckolib-3.0.1.jar:
+			v3.0.1
+			* Fixed Armor rotations properly #McHorse
+			* Fixed BoxUVs and Normals #McHorse
+			* Hopefully fixed random missing model crash. #BaileyH
+			* GeoLayerRenderer now has a getRenderType method for setting RenderType. #AzureDoom
+			* Fixed Animation Singleton sync on items. #grillo78
+			* Fixed Item Lighting in GUI #BaileyH/AzureDoom
+			* Fixed Entities not going invisible. #AzureDoom
+
+	Item Filters (item-filters-1604.2.2.19.jar --> item-filters-1605.2.3.20-forge.jar):
+		item-filters-1605.2.3.20-forge.jar:
+			* Added .vscode to gitignore - LatvianModder
+			* Removed vscode files - LatvianModder
+			* Mod filter now only shows mods with items - LatvianModder
+			* Finished arch port - LatvianModder
+			* Merge pull request #5 from Blueberryy/master - Kristiāns Micītis
+			* Initial Arch port - LatvianModder
+			* Create ru_ru.json - Blueberry
+
+	JAOPCA (JAOPCA-1.16.4-3.4.0.2.jar --> JAOPCA-1.16.4-3.4.0.3.jar):
+		JAOPCA-1.16.4-3.4.0.3.jar:
+			Note: Untested on 1.16.5
+			Added Blood Magic compat
+			Updated CraftTweaker
+			Added KubeJS datapack support
+
+	Modular Routers (modular-routers-1.16.4-7.3.0-47.jar --> modular-routers-1.16.4-7.3.1-50.jar):
+		modular-routers-1.16.4-7.3.1-50.jar:
+			7.3.1 (21 Jan 2021)
+			* Fixed crash (intermod compat issue) when placing block with Extruder Mk2 and Mimic Augment
+			* Activator Module in Entity mode now ignores Villagers and Wandering Traders
+			* - Activating them locks up their GUI, making it impossible to trade with them
+			* - Entity blacklist is editable in config: see activatorEntityBlacklist in modularrouters-common.toml
+			* Corrected Regex Filter tooltip: make it clear that regex filters are applied to the item's registry name, not its display name
+
+	Neat (Neat 1.7-25.jar --> Neat 1.7-26.jar):
+		Neat 1.7-26.jar:
+			* Rewrite the renderer to be compatible with optifine/shaders. (Kamefrede)
+
+	Pedestals (Pedestals -1.16.5_0.8r_hotfix_2 --> Pedestals -1.16.5_0.8r_hotfix_4):
+		Pedestals -1.16.5_0.8r_hotfix_4:
+			Fixed The Hive Harvester Upgrade
+			Also some other minor fixes and texture tweaks.
+
+		Pedestals -1.16.5_0.8r_hotfix_3:
+			Work Queue and Magnet Fixes!
+			Fixed an issue where magnets and upgrades with magnet like functionality would stop working, and updating the pedestal block would cause the upgrade to loose its enchants.
+			Removed some old recipes that were causing console errors to be displayed.
+			First pass at adding custom emotes for pedestals when emojiful mod is installed.
+			Fixed an issue where the work queue for most the machine upgrades wasnt updating properly under some rare situations.
+			Fixed some tooltips and Jei descriptions for the fluid upgrades.
+
+	Quark (Quark-r2.4-295.jar --> Quark-r2.4-297.jar):
+		Quark-r2.4-297.jar:
+			* Fixed a crash with configuring the food tooltip to only display saturation.
+			* Fixed a crash with fake players.
+			* Fixed a random concurrency crash on startup.
+			* Fixed crash when the magnet system is configured to include items that don't exist.
+			* Made a tag for hoes that can harvest a 5x5.
+
+		Quark-r2.4-296.jar:
+			* Added Glowing Glass Item Frames.
+			* Added some more mod screens to the sorting blacklist.
+			* Added Stained Framed Glass and panes.
+			* Added Stools.
+			* Added Twisted and Weeping Blackstone Bricks.
+			* Fixed matrix enchanting tables not dropping the block when broken.
+			* Fixed modded woods without an associated chest not being usable to craft vanilla chests.
+			* Fixed the dark elder prismarine recipe giving the wrong count.
+			* Fixed Vertical Slabs not rotating properly.
+			* Food tooltips will now compress the food pips if there's more than 4.
+			* Glass item frames with an interactable inventory behind them can now be right clicked to open that inventory.
+			* Improved pressure plate code. Might help with mod interactions. (ChloeDawn)
+			* Saturation tooltips can now display even if food tooltips are disabled.
+
+	RandomPatches (Forge) (RandomPatches 2.1.5-forge --> RandomPatches 2.2.0-forge):
+		RandomPatches 2.2.0-forge:
+			* Removed the non-functional tick scheduler desync fix.
+			* Documented that the MC-145311 fix works client-only.
+
+	Supplementaries (Archived file --> supplementaries-0.9.22.jar):
+		supplementaries-0.9.22.jar:
+			Fixed a critical bug that happened with certain mods on biome generation due to a noob mistake I made :/
+			Fixed a bug where cages and jars weren't returning the correct item when releasing a mob.
+			Added hanging flower pots. They are placed when you place a flower pot on a ceiling and will work with any modded plants that pots already support. Should also work for modded custom flower pot as long as they extend the FlowerPot class but so far I have not found any 1.16.4 mod that does that.
+			Sack blocks now react to gravity and will deal less damage that an anvil but more than a normal falling block. You can now also switch out an item on a pedestal using a sack, Indiana Jones style
+			All animated tile entity are now drawn using a different method that should give them proper shading and ambient occlusion to make them blend better with normal blocks
+			Cages and jars can now be waterlogged. When you load already placed one they will default to waterlogged so you might want to get some buckets and empty them
+			You can shift right click to rotate a crank counter clockwise.
+			Added some tooltips to guide through some of the mod functionality
+			Added a whitelist for cookie jars
+			fixed some bugged recipes. Safe is now much cheaper to craft
+			Rewrote wall lantern placement logic. tell me if there are problems
+
+	The Undergarden (The Undergarden 0.4.4 --> The Undergarden 0.4.5):
+		The Undergarden 0.4.5:
+			The Undergarden 0.4.5
+			* Fixed issue where restarting game would set Undergarden world and biome seed to 0
+			:(
+
+	U Team Core (U-Team-Core-1.16.4-3.1.17.191 --> U-Team-Core-1.16.4-3.1.17.192):
+		U-Team-Core-1.16.4-3.1.17.192:
+			[Changelog of 3.1.17.192](https://github.com/MC-U-Team/U-Team-Core/blob/1.16.4/CHANGELOG.md#1164-3117192---2021-01-22)
+
+	Useful Backpacks (Useful-Backpacks-1.16.4-1.11.6.86 --> Useful-Backpacks-1.16.4-1.11.6.87):
+		Useful-Backpacks-1.16.4-1.11.6.87:
+			[Changelog of 1.11.6.87](https://github.com/MC-U-Team/Useful-Backpacks/blob/1.16.4/CHANGELOG.md#1164-111687---2021-01-22)
+
+	Useful Railroads (Useful-Railroads-1.16.4-1.4.6.34 --> Useful-Railroads-1.16.4-1.4.6.35):
+		Useful-Railroads-1.16.4-1.4.6.35:
+			[Changelog of 1.4.6.35](https://github.com/MC-U-Team/Useful-Railroads/blob/1.16.4/CHANGELOG.md#1164-14635---2021-01-22)
+
+	YUNG's Better Mineshafts (Forge) ([1.16.4 / 1.16.5] YUNG's Better Mineshafts v2.0 --> [1.16.4 / 1.16.5] YUNG's Better Mineshafts v2.0.1):
+		[1.16.4 / 1.16.5] YUNG's Better Mineshafts v2.0.1:
+			IF YOU'VE USED THE MOD BEFORE, DELETE YOUR EXISTING bettermineshafts/1_16 DIRECTORY!
+			Many of you ran Better Mineshafts 2.0 with an old version of YUNG's API, resulting in some corruption to your bettermineshafts config folder. Please delete that directory before running this version to ensure your config files are fixed!
+			This version properly requires users to have YUNG's API v1.16.4-Forge-3 in order to prevent such config corruption.
+			For more information on the JSON-related crashes and issues from the previous version, see this GitHub issue: [https://github.com/yungnickyoung/YUNGs-Better-Mineshafts/issues/39#issuecomment-764189914](https://github.com/yungnickyoung/YUNGs-Better-Mineshafts/issues/39#issuecomment-764189914)
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

@@ -1,0 +1,17 @@
+{
+    "name" : "constantan",
+    "hunger": 3,
+    "honeyColor": "#d8876b",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:regeneration",
+        "duration": 2400,
+        "strength": 1,
+        "chance": 1
+      }
+    ]
+  }

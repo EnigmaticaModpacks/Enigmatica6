@@ -1,0 +1,163 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:clogged_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:glowstone_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:pigman_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:obsidian_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:clay_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:gravel_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:centrifuge_casing",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:honeycomb_block",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "resourcefulbees:wax_block",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:honey_block",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:t2_hive_upgrade",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

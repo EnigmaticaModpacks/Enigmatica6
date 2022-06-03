@@ -1,0 +1,24 @@
+{
+    "flower": "tag:minecraft:flowers",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "A suitable offering to Nature will birth the unnatural.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/tainted",
+    "ColorData": {
+        "honeycombColor": "#cc6d3d"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {"hasMutation": false},
+    "CentrifugeData": {"hasCentrifugeOutput": false},
+    "SpawnData": {"canSpawnInWorld": false},
+    "BreedData": {"isBreedable": false},
+    "TraitData": {"hasTraits": true}
+}

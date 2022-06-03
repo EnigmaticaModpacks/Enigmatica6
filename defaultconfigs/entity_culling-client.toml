@@ -1,0 +1,63 @@
+#Requires restart. Ram usage (in Bytes) = ((x * 16 * 2) ^ 3) / 4
+#Range: 1 ~ 32
+cacheSize = 12
+#No comment
+debug = false
+#Disable all changes from this mod.
+enabled = true
+#Skip rendering of entities that are not visible (hidden behind blocks). Bosses will be rendered normally. This might cause issues where an entity is partly behind a block and thus does not get rendered but it's usually not really noticable.
+skipHiddenEntityRendering = true
+#Entities with a width or height greater than this value will always get rendered.
+#Range: 0.0 ~ 128.0
+skipHiddenEntityRenderingSize = 128.0
+#Entities which will always be rendered. (Format: 'modid:entity_name')
+skipHiddenEntityRenderingBlacklist = []
+#Skip rendering of entities that are not visible (hidden behind blocks). This might cause issues where a tile entity is partly behind a block and thus does not get rendered but it's usually not really noticable.
+skipHiddenTileEntityRendering = true
+#Tile entities with a width or height greater than this value will always get rendered.
+#Range: 0.0 ~ 128.0
+skipHiddenTileEntityRenderingSize = 128.0
+#Tile entities which will always be rendered. (Format: 'modid:tile_entity_name')
+skipHiddenTileEntityRenderingBlacklist = ["travel_anchors:travel_anchor", "create:belt", "pneumaticcraft:pressure_tube"]
+
+#No comment
+[optifineShaderOptions]
+	#No comment
+	entityShadowsCulling = true
+	#No comment
+	entityShadowsCullingLessAggressiveMode = true
+	#No comment
+	#Range: 0.0 ~ 32.0
+	entityShadowsCullingLessAggressiveModeDiff = 4.0
+	#No comment
+	entityShadowsEnabled = true
+	#No comment
+	entityShadowsDistanceLimited = true
+	#No comment
+	#Range: 0.0 ~ 64.0
+	entityShadowsMaxDistance = 4.0
+	#No comment
+	terrainShadowsEnabled = true
+	#No comment
+	terrainShadowsDistanceLimited = true
+	#No comment
+	#Range: 0.0 ~ 64.0
+	terrainShadowsMaxHorizontalDistance = 8.0
+	#No comment
+	#Range: 0.0 ~ 64.0
+	terrainShadowsMaxVerticalDistance = 4.0
+	#No comment
+	tileEntityShadowsCulling = true
+	#No comment
+	tileEntityShadowsCullingLessAggressiveMode = true
+	#No comment
+	#Range: 0.0 ~ 32.0
+	tileEntityShadowsCullingLessAggressiveModeDiff = 4.0
+	#No comment
+	tileEntityShadowsEnabled = true
+	#No comment
+	tileEntityShadowsDistanceLimited = true
+	#No comment
+	#Range: 0.0 ~ 64.0
+	tileEntityShadowsMaxDistance = 4.0
+

@@ -17,4 +17,7 @@ ovenFuelTimeMultiplier = 0.33000001311302185
 ovenCookTimeMultiplier = 1.0
 #Set this to true if you'd like the oven to only accept cooking oil as fuel (requires Pam's Harvestcraft)
 ovenRequiresCookingOil = false
+#Ex Compressum compatibility. Multiplier applied to the milk per tick for Compressed Cow in a Jar.
+#Range: 0.0 ~ 3.4028234663852886E38
+compressedCowJarMilkMultiplier = 9.0
 

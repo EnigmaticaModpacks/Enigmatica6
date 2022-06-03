@@ -1,0 +1,49 @@
+#determine whether or not loot generated is the same for all players using the provided seed, or randomised per player
+randomise_seed = true
+#whether or not mineshaft chest minecarts should be converted to standard loot chests
+convert_mineshafts = true
+#whether or not quark chests used in world generation for loot purposes should be replaced with Lootr chests
+convert_quark = true
+#whether or not the entire forge:chests/wooden tag should be added to the conversion list for structures (if they are backed by LockableLootTileEntity)
+convert_wooden_chests = true
+#whether or not the entire forge:chests/trapped tag should be added to the conversion list for structures (if they are backed by LockableLootTileEntity
+convert_trapped_chests = true
+#a list of additional chests that should be converted [in the format of modid:name, must be a tile entity instance of LockableLootTileEntity]
+additional_chests = []
+#a list of additional trapped chests that should be converted [in the format of modid:name, must be a tile entity instanceof LockableLootTileEntity]
+additional_trapped_chests = []
+#list of dimensions (to the exclusion of all others) that loot chest should be replaced in [default: blank, allowing all dimensions, e.g., minecraft:overworld]
+dimension_whitelist = []
+#list of dimensions that loot chests should not be replaced in [default: blank, allowing all dimensions, format e.g., minecraft:overworld]
+dimension_blacklist = []
+#list of loot tables which shouldn't be converted [in the format of modid:loot_table]
+loot_table_blacklist = ["atum:chests/pharaoh"]
+#lootr will automatically log all unresolved tables (i.e., for containers that have a loot table associated with them but, for whatever reason, the lookup for this table returns empty). setting this option to true additionally informs players when they open containers.
+report_unresolved_tables = false
+#prevent the destruction of Lootr chests except while sneaking in creative mode
+disable_break = false
+#how long (in ticks) a decaying loot containers should take to decay [default 5 minutes = 5 * 60 * 20]
+#Range: > 0
+decay_value = 6000
+#list of loot tables which will decay [default blank, meaning no chests decay, in the format of 'modid:loot_table']
+decay_loot_tables = []
+#list of mod IDs whose loot tables will decay [default blank, meaning no chests decay, in the format of 'modid', 'modid']
+decay_modids = []
+#list of dimensions where loot chests should automatically decay [default: blank, e.g., minecraft:overworld]
+decay_dimensions = []
+#overriding decay_loot_tables, decay_modids and decay_dimensions: all chests will decay after being opened for the first time
+decay_all = false
+#list of modids which shouldn't be converted [in the format of modid, modid]
+loot_mod_blacklist = []
+#list of loot tables which will refresh [default blank, meaning no chests refresh, in the format of 'modid:loot_table']
+refresh_loot_tables = []
+#list of mod IDs whose loot tables will refresh [default blank, meaning no chests refresh, in the format of 'modid', 'modid']
+refresh_modids = []
+#list of dimensions where loot chests should automatically refresh [default: blank, e.g., minecraft:overworld]
+refresh_dimensions = []
+#overriding refresh_loot_tables, refresh_modids and refresh_dimensions: all chests will refresh after being opened for the first time
+refresh_all = false
+#how long (in ticks) before the contents of a loot container will be refresh [default 20 minutes = 20 * 60 * 20]
+#Range: > 0
+refresh_value = 24000
+

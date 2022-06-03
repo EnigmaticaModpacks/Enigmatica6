@@ -1,0 +1,22 @@
+#
+# Average distance between spawn attempts for Repurposed Structures Mansions.
+# 1 for spawning in most chunks and 1001 for none.
+#Range: 1 ~ 1001
+mansionBirchMaxChunkDistance = 140
+#Range: 1 ~ 1001
+mansionJungleMaxChunkDistance = 140
+#Range: 1 ~ 1001
+mansionOakMaxChunkDistance = 140
+#Range: 1 ~ 1001
+mansionSavannaMaxChunkDistance = 140
+#Range: 1 ~ 1001
+mansionTaigaMaxChunkDistance = 140
+#Range: 1 ~ 1001
+mansionDesertMaxChunkDistance = 140
+#Range: 1 ~ 1001
+mansionSnowyMaxChunkDistance = 140
+#
+# Only make supports downward if there is land below.
+# (Helps make structure look better in floating island worlds instead of support going down to void at world bottom)
+pillarOnlyToLand = true
+

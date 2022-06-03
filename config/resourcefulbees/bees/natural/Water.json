@@ -1,0 +1,79 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 1:\nWater Bees prefer to stay hydrated, but\nalways stick to fresh water.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 0.75,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/water",
+    "ColorData": {
+        "honeycombColor": "#5979ef",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:lava",
+                "outputs": [{ "outputID": "minecraft:obsidian", "weight": 10 }]
+            },
+            {
+              "type": "ENTITY",
+              "inputID": "entity:minecraft:cat",
+              "outputs": [
+                {"outputID": "entity:resourcefulbees:wasabee_bee", "weight": 10}
+              ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:kelp",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 16,
+
+        "secondaryOutput": "minecraft:sea_pickle",
+        "secondaryOutputWeight": 0.5,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:water_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:RIVER,WET,BEACH",
+        "biomeBlacklist": "tag:NETHER,END,OCEAN,SPOOKY",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "minYLevel": 60,
+        "maxYLevel": 250,
+        "spawnWeight": 12,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:seagrass",
+        "feedAmount": 4,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

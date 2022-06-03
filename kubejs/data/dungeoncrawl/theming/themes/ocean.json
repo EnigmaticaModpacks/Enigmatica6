@@ -1,0 +1,83 @@
+{
+    "type": "theme",
+    "id": 1002,
+    "sub_theme": 2002,
+    "decorations": [{ "type": "vines" }],
+    "theme": {
+        "normal": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "masonry:prismarineengraved",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:prismarine_bricks",
+                    "weight": 3
+                },
+                {
+                    "block": "architects_palette:chiseled_algal_bricks",
+                    "weight": 1
+                },
+                {
+                    "block": "architects_palette:cracked_algal_bricks",
+                    "weight": 1
+                },
+                {
+                    "block": "architects_palette:algal_bricks",
+                    "weight": 1
+                }
+            ]
+        },
+        "normal_2": { "type": "block", "block": "architects_palette:algal_bricks" },
+        "solid": {
+            "type": "block",
+            "block": "minecraft:warped_hyphae"
+        },
+        "floor": {
+            "type": "random_block",
+            "blocks": [
+                { "block": "minecraft:dark_prismarine" },
+                { "block": "chipped:dark_prismarine_8" },
+                { "block": "chipped:dark_prismarine_13" }
+            ]
+        },
+        "stairs": {
+            "type": "random_block",
+            "blocks": [
+                { "block": "minecraft:dark_prismarine_stairs", "weight": 1 },
+                { "block": "minecraft:prismarine_brick_stairs", "weight": 3 }
+            ]
+        },
+        "solid_stairs": {
+            "type": "random_block",
+            "blocks": [
+                { "block": "minecraft:dark_prismarine_stairs", "weight": 1 },
+                { "block": "minecraft:prismarine_brick_stairs", "weight": 3 }
+            ]
+        },
+        "material": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "masonry:prismarineengraved"
+                },
+                {
+                    "block": "minecraft:prismarine_bricks"
+                }
+            ]
+        },
+        "slab": {
+            "type": "block",
+            "block": "minecraft:prismarine_brick_slab"
+        },
+        "solid_slab": {
+            "type": "block",
+            "block": "minecraft:prismarine_brick_slab"
+        },
+        "wall": {
+            "type": "block",
+            "block": "masonry:prismarinetiledwall"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+#Fire will float you upward.
+ascendingWinds = true
+#You can customize which block produces wind.
+#Write each blockstate to one of this format:
+#  [block ID]   (Matches all state of the block)
+#  [block ID]#[property1=value],[property2=value],[property3=value]   (Matches state of the block that has specified properties)
+#Same property cannot be specified multiple times. Wind sources with any invalid part will be excluded.
+windSources = ["fire", "campfire#lit=true", "soul_campfire#lit=true"]
+#Paragliding will consume stamina.
+paraglidingConsumesStamina = false
+#Actions other than paragliding will consume stamina.
+runningAndSwimmingConsumesStamina = false
+

@@ -1,0 +1,36 @@
+{
+    "type": "masterfulmachinery:machine_structure",
+    "id": "advanced_assembly_table_structure",
+    "controllerId": "advanced_assembly_table",
+    "name": "Advanced Assembly Table",
+    "layout": [
+        [")  )", "    ", "    ", "    ", ")  )", ") ) ", "    ", ") ) "],
+        ["*++*", "+,,+", "+ ,C", "+,,+", "*++*", "-.- ", "-/- ", "-.- "],
+        ["+00+", "1230", "4560", "1780", "+9:+", ".;. ", "<;< ", ".<. "],
+        ["+00+", "1  0", "1= 0", "1  0", "+::+", "-.- ", "-.- ", "-.- "],
+        ["*++*", "+00+", "+00+", "+00+", "*++*", "    ", "    ", "    "]
+    ],
+    "legend": {
+        ")": { "block": "immersiveengineering:steel_scaffolding_standard" },
+        "*": { "block": "pneumaticcraft:compressed_brick_tile" },
+        "+": { "block": "pneumaticcraft:compressed_brick_pillar" },
+        ",": { "block": "pneumaticcraft:compressed_stone_slab" },
+        "-": { "block": "immersiveengineering:storage_steel" },
+        ".": { "block": "immersiveengineering:sheetmetal_steel" },
+        "/": { "block": "masterfulmachinery:advanced_assembly_table_high_pressure_port_pncr_pressure_input" },
+        "0": { "block": "pneumaticcraft:pressure_chamber_glass" },
+        "1": { "block": "immersiveengineering:treated_wood_horizontal" },
+        "2": { "block": "pneumaticcraft:assembly_io_unit_export" },
+        "3": { "block": "pneumaticcraft:assembly_drill" },
+        "4": { "block": "engineersdecor:labeled_crate" },
+        "5": { "block": "pneumaticcraft:assembly_controller" },
+        "6": { "block": "pneumaticcraft:assembly_platform" },
+        "7": { "block": "pneumaticcraft:assembly_io_unit_import" },
+        "8": { "block": "pneumaticcraft:assembly_laser" },
+        "9": { "block": "masterfulmachinery:advanced_assembly_table_item_port_items_output" },
+        ":": { "block": "immersiveengineering:radiator" },
+        ";": { "block": "immersiveengineering:heavy_engineering" },
+        "<": { "block": "masterfulmachinery:advanced_assembly_table_item_port_items_input" },
+        "=": { "block": "pneumaticcraft:wall_lamp_inverted_red" }
+    }
+}

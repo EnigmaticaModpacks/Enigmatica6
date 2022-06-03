@@ -1,0 +1,196 @@
+{
+	id: "0000000000000328"
+	group: ""
+	order_index: 0
+	filename: "hidden_quests"
+	title: "Hidden_Quests"
+	icon: "minecraft:experience_bottle"
+	subtitle: ["It does not exist, you are not seeing anything here"]
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Visit The End"
+			x: -10.0d
+			y: -8.0d
+			description: ["Visit The End"]
+			id: "0000000000000329"
+			tasks: [{
+				id: "000000000000032A"
+				type: "dimension"
+				dimension: "minecraft:the_end"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -8.0d
+			id: "000000000000046C"
+			tasks: [{
+				id: "000000000000046D"
+				type: "advancement"
+				icon: "minecraft:diamond"
+				advancement: "minecraft:story/mine_diamond"
+				criterion: ""
+			}]
+		}
+		{
+			x: -7.0d
+			y: -8.0d
+			id: "000000000000046E"
+			tasks: [{
+				id: "000000000000046F"
+				type: "advancement"
+				advancement: "minecraft:story/smelt_iron"
+				criterion: ""
+			}]
+		}
+		{
+			x: -8.5d
+			y: -6.5d
+			id: "00000000000004B3"
+			tasks: [{
+				id: "00000000000004B4"
+				type: "item"
+				item: "aquaculture:neptunes_bounty"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -6.5d
+			id: "0000000000000856"
+			tasks: [{
+				id: "0000000000000857"
+				type: "advancement"
+				advancement: "tetra:spelunking/ancient_ruins"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Hidden quest that hides the Expert Mode quest"
+			x: -7.0d
+			y: -6.5d
+			id: "0000000000000FEB"
+			tasks: [{
+				id: "0000000000000FEC"
+				type: "gamestage"
+				stage: "impossible"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -5.0d
+			id: "28619E49157C73FE"
+			tasks: [{
+				id: "124102D88E74BB65"
+				type: "item"
+				item: "bloodmagic:masterbloodorb"
+			}]
+			rewards: [{
+				id: "0917A808DE276817"
+				type: "gamestage"
+				title: "Master Blood Orb"
+				auto: "invisible"
+				stage: "master_blood_orb"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -5.0d
+			id: "7F501A95E6E9C7A6"
+			tasks: [{
+				id: "1F386E8BDBE651FF"
+				type: "item"
+				item: {
+					id: "occultism:chalk_red"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5D12D220379855E1"
+				type: "gamestage"
+				auto: "invisible"
+				stage: "red_chalk"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -3.5d
+			id: "57A0CCE04931D4C4"
+			tasks: [{
+				id: "419C023D60CDB890"
+				type: "item"
+				item: "kubejs:medium_machinery_schematics"
+			}]
+			rewards: [{
+				id: "12961819A6E04E7F"
+				type: "gamestage"
+				auto: "invisible"
+				stage: "medium_machinery_schematics"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -3.5d
+			id: "73317AB5A4FE3FDE"
+			tasks: [{
+				id: "6A0EACB8797C11D0"
+				type: "item"
+				item: "kubejs:heavy_machinery_schematics"
+			}]
+			rewards: [{
+				id: "11884A83C06080A0"
+				type: "gamestage"
+				auto: "invisible"
+				stage: "heavy_machinery_schematics"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			id: "0D3EFC571F771C0B"
+			tasks: [{
+				id: "2CAEC5249040770D"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "bloodmagic:soulgemlesser"
+								Count: 1b
+								tag: {
+									souls: 256.0d
+								}
+							}
+							{
+								id: "bloodmagic:soulgemcommon"
+								Count: 1b
+								tag: {
+									souls: 1024.0d
+								}
+							}
+							{
+								id: "bloodmagic:soulgemgreater"
+								Count: 1b
+								tag: {
+									souls: 4096.0d
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "7CBA6F3356BEE33B"
+				type: "gamestage"
+				auto: "invisible"
+				stage: "lesser_tartaric_gem"
+			}]
+		}
+	]
+}

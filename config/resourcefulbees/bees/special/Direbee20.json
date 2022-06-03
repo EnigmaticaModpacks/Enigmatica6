@@ -1,0 +1,95 @@
+{
+    "flower": "atmospheric:yucca_flower",
+    "creator": "direwolf20",
+    "lore": "How cool is that?",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["desert", "can_swim"],
+    "baseLayerTexture": "other/direbee20",
+    "ColorData": {
+        "honeycombColor": "#859292"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "ITEM",
+                "inputID": "buildinggadgets:construction_block_powder",
+                "outputs": [
+                  {"outputID": "buildinggadgets:construction_paste", "weight": 512},
+                  {"outputID": "buildinggadgets:construction_paste_container_t1", "nbtData": {"amount": 512}, "weight": 16},
+                  {"outputID": "buildinggadgets:construction_paste_container_t2", "nbtData": {"amount": 2048}, "weight": 8},
+                  {"outputID": "buildinggadgets:construction_paste_container_t3", "nbtData": {"amount": 8192}, "weight": 1}
+                  
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:bread",
+        "mainOutputWeight": 0.1,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "pneumaticcraft:reinforced_chest",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 1,
+        "secondaryNBTData": {
+            "RepairCost":0,
+            "BlockEntityTag":{
+                "ForgeCaps":{},
+                "Items":{
+                    "Size":36,
+                    "Items":[
+                        {"Slot":0,"id":"minecraft:cobblestone","Count":64},
+                        {"Slot":1,"id":"minecraft:cobblestone","Count":64},
+                        {"Slot":2,"id":"minecraft:cobblestone","Count":64},
+                        {"Slot":3,"id":"minecraft:cobblestone","Count":64},
+                        {"Slot":4,"id":"minecraft:cobblestone","Count":48},
+                        {"Slot":5,"id":"connectedglass:borderless_glass","Count":16},
+                        {"Slot":6,"id":"minecraft:oak_door","Count":1},
+                        {"Slot":7,"id":"torchmaster:feral_flare_lantern","Count":1}
+                    ]
+                },
+                "id":"pneumaticcraft:reinforced_chest"
+            },
+            "display":{
+                "Name":"{\"text\":\"Dire's Patented 9x9 Starter Kit\"}"
+            }
+        },
+
+        "bottleOutput": "minecraft:potion",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+        "bottleNBTData" : {
+            "Potion": "alexsmobs:speed_iii"
+          },
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "rocky",
+        "parent2": "osmium",
+        "feedItem": "minecraft:bread",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

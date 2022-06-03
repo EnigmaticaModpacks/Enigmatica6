@@ -1,0 +1,57 @@
+{
+    "flower": "tconstruct:ender_cake",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "This bee can be acquired via the mutagenic properties of the Blaze Bee-\n its pollen will convert a Blizz into bee form.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1.0,
+    "traits": ["blizz", "wither", "can_swim"],
+    "baseLayerTexture": "other/blizz",
+    "hasHoneycomb": true,
+    "ColorData": {
+        "honeycombColor": "#37b7fe",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "thermal:blizz_rod",
+        "mainOutputWeight": 0.20,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "minecraft:snowball",
+        "secondaryOutputWeight": 0.25,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:blaze_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:rods/blizz",
+        "feedAmount": 3,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "flower": "minecraft:chorus_flower",
+    "lore": "Tier 1:\nObsidian Bees, surprising some, hail from the End.\nMaybe it's the obsidian pillars.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim", "desert", "wither"],
+    "baseLayerTexture": "other/obsidian",
+    "ColorData": {
+        "honeycombColor": "#663399",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:netherrack",
+            "outputs": [
+              {"outputID": "minecraft:obsidian", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:obsidian",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "fluxnetworks:flux_dust",
+        "secondaryOutputWeight": 0.02,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "resourcefulbees:obsidian_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:END",
+        "biomeBlacklist": "tag:NETHER,OVERWORLD",
+        "minGroupSize": 1,
+        "maxGroupSize": 2,
+        "spawnWeight": 10,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:obsidian",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

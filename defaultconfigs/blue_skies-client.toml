@@ -1,0 +1,35 @@
+#
+# Whether or not festive cosmetic effects should happen.
+# Default: true
+festivities = true
+#
+# Should blue skies override the title screen panorama.
+# Default: true
+custom_panorama = false
+#
+# Whether or not brightness should be capped when inside the dimensions for aesthetic purposes.
+# Default: true
+cap_brightness = true
+
+["Inventory Tab Settings"]
+	#
+	# If set to true, inventory tabs will use simple buttons that can be placed anywhere on the screen.
+	# Note: Placing on the left of the inventory is not suggested due to the recipe book.
+	# Default: false
+	use_simple_inventory_tabs = false
+	#
+	# This setting does nothing when use_simple_inventory_tabs is set to false.
+	# The x position of the inventory tabs.
+	# Default: 88
+	inventory_tab_x = 88
+	#
+	# This setting does nothing when use_simple_inventory_tabs is set to false.
+	# The y position of the inventory tabs.
+	# Default: 80
+	inventory_tab_y = 80
+	#
+	# This setting does nothing when use_simple_inventory_tabs is set to false.
+	# If set to true, inventory tabs are sorted vertically. If set to false, they are sorted horizontally.
+	# Default: true
+	vertical_inventory_tabs = true
+

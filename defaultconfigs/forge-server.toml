@@ -20,9 +20,6 @@
 	logCascadingWorldGeneration = true
 	#Vanilla will treat crafting recipes using empty tags as air, and allow you to craft with nothing in that slot. This changes empty tags to use BARRIER as the item. To prevent crafting with air.
 	treatEmptyTagsAsAir = false
-	#Controls the number threshold at which Packet51 is preferred over Packet52, default and minimum 64, maximum 1024.
-	#Range: 64 ~ 1024
-	clumpingThreshold = 64
 	#Set this to true to remove any TileEntity that throws an error in its update method instead of closing the server and reporting a crash log. BE WARNED THIS COULD SCREW UP EVERYTHING USE SPARINGLY WE ARE NOT RESPONSIBLE FOR DAMAGES.
 	removeErroringTileEntities = false
 	#Fix vanilla issues that cause worldgen cascading. This DOES change vanilla worldgen so DO NOT report bugs related to world differences if this flag is on.

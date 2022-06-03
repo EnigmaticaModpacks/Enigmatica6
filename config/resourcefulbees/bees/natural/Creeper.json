@@ -1,0 +1,77 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 1:\nBeepers skulk in the dark, in wasted surrounds and mesa's highlands.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 2400,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "/creeper/creeper_bee",
+    "traits": ["creeper", "can_swim"],
+    "ColorData": {
+        "honeycombColor": "#0c9f0a",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": true,
+        "isEnchanted": false,
+        "glowColor": "#e2d3d3",
+        "glowingPulse": 2,
+        "emissiveLayerTexture": "/creeper/creeper_bee_emissive"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:minecraft:lava",
+            "outputs": [
+              {"outputID": "minecraft:mossy_cobblestone", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:gunpowder",
+        "mainOutputWeight": 0.6,
+        "mainOutputCount": 3,
+
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.6,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.4,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:MESA,WASTELAND,UNDERGARDEN",
+        "biomeBlacklist": "tag:OCEAN",
+        "lightLevel": "ALL",
+        "minGroupSize": 2,
+        "maxGroupSize": 4,
+        "minYLevel": 12,
+        "maxYLevel": 250,
+        "spawnWeight": 12
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:gunpowder",
+        "feedAmount": 2,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

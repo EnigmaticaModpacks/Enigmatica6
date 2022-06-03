@@ -1,0 +1,53 @@
+
+[MachineMiscConfig]
+
+	[MachineMiscConfig.EnchantmentFactoryConfig]
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 50000
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 5000000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
+		maxProgress = 50
+		#Max Essence [mb] - Default: [32000 mb]
+		tankSize = 32000
+
+	[MachineMiscConfig.StasisChamberConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 300000000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (5s)]
+		maxProgress = 50
+		#Amount of Power Consumed per Tick - Default: [400FE]
+		powerPerOperation = 1500000
+		#If true, the boss bar of an entity with the AI disable won't be rendered
+		disableBossBars = true
+
+	[MachineMiscConfig.EnchantmentSorterConfig]
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 150
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
+		maxProgress = 50
+
+	[MachineMiscConfig.EnchantmentApplicatorConfig]
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 5000
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 5000000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
+		maxProgress = 50
+		#Max Essence [mb] - Default: [64000 mb]
+		tankSize = 32000
+		#Ignore max level for enchanting
+		ignoreEnchantMaxLevels = false
+
+	[MachineMiscConfig.EnchantmentExtractorConfig]
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 5000
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 5000000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
+		maxProgress = 50
+		#Max Essence [mb] - Default: [32000 mb]
+		tankSize = 32000
+

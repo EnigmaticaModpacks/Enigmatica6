@@ -1,0 +1,125 @@
+{
+    "modsRequired": ["aquaculture"],
+    "content": [
+        {
+            "type": "item",
+            "content": "farmersdelight:flint_knife",
+            "amountRange": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:atlantic_cod",
+            "amountRange": {
+                "min": 2,
+                "max": 8
+            },
+            "unitWorth": 100,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:blackfish",
+            "amountRange": {
+                "min": 2,
+                "max": 8
+            },
+            "unitWorth": 125,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:pacific_halibut",
+            "amountRange": {
+                "min": 2,
+                "max": 8
+            },
+            "unitWorth": 150,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:atlantic_halibut",
+            "amountRange": {
+                "min": 2,
+                "max": 8
+            },
+            "unitWorth": 125,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:tackle_box",
+            "amountRange": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 12250,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:capitaine",
+            "amountRange": {
+                "min": 2,
+                "max": 8
+            },
+            "unitWorth": 250,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:catfish",
+            "amountRange": {
+                "min": 2,
+                "max": 8
+            },
+            "unitWorth": 250,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:gar",
+            "amountRange": {
+                "min": 2,
+                "max": 16
+            },
+            "unitWorth": 150,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:minnow",
+            "amountRange": {
+                "min": 3,
+                "max": 18
+            },
+            "unitWorth": 80,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:perch",
+            "amountRange": {
+                "min": 3,
+                "max": 18
+            },
+            "unitWorth": 80,
+            "weight": 1000
+        },
+        {
+            "type": "item",
+            "content": "aquaculture:fish_fillet_raw",
+            "amountRange": {
+                "min": 4,
+                "max": 64
+            },
+            "unitWorth": 40,
+            "weight": 1000
+        }
+    ]
+}

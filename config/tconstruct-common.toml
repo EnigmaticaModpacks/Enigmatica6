@@ -1,0 +1,128 @@
+
+#Everything to do with gameplay
+[gameplay]
+	#Set this to false to disable new players spawning with the Tinkers' Book.
+	shouldSpawnWithTinkersBook = false
+	#If non-empty, only this material will be shown on tools in creative and JEI (or the first valid material if this is invalid for the tool).
+	#If empty, all materials will show
+	showOnlyToolMaterial = ""
+	#If non-empty, only material will be shown on parts in creative and JEI (or the first valid material if this is invalid for the part).
+	#If empty, all materials will show
+	showOnlyPartMaterial = ""
+	#If true, tables such as the part builder and tinker station will show all variants. If false shows only a variant with a default texture.
+	showAllTableVariants = false
+	#If true, anvils will show all metal variants. If false, shows only a variant with the default texture
+	showAllAnvilVariants = false
+
+#Options related to recipes, limited options as a datapack allows most recipes to be modified
+[recipes]
+	#Add a recipe that allows you to craft a piece of flint using 3 gravel
+	addGravelToFlintRecipe = false
+	#Makes the recipe to alloy netherite in the smeltery only cost 2 gold per netherite ingot. If false uses the vanilla rate of 4 gold per ingot. Disable if there are crafting duplications.
+	cheaperNetheriteAlloy = false
+	#Makes wither skeletons drop necrotic bones
+	witherBoneDrop = true
+	#Allows converting wither bones to regular bones
+	witherBoneConversion = true
+	#Number of nuggets produced when an ore block is melted in the melter. 9 would give 1 ingot
+	#Range: 1 ~ 45
+	melterNuggetsPerOre = 12
+	#Number of nuggets produced when an ore block is melted in the smeltery. 9 nuggets would give 1 ingot
+	#Range: 1 ~ 45
+	smelteryNuggetsPerOre = 18
+	#Number of nuggets produced when an ore block is melted in the foundry. 9 nuggets would give 1 ingot
+	#Range: 1 ~ 45
+	foundryNuggetsPerOre = 15
+	#Fixes clear glass not being usable in vanilla recipes that require glass. Config option exists to disable easily in case this fix is redundant to another mod
+	glassRecipeFix = true
+	#Slimealls not being usable in vanilla recipes that require slimeballs. Config option exists to disable easily in case this fix is redundant to another mod
+	slimeRecipeFix = true
+
+	#Entity head drops when killed by a charged creeper
+	[recipes.heads]
+		blaze = true
+		enderman = true
+		stray = true
+		husk = true
+		drowned = true
+		spider = true
+		cave_spider = true
+		piglin = true
+		piglin_brute = true
+		zombified_piglin = true
+
+#Everything to do with world generation
+[worldgen]
+	#Generate Copper
+	generateCopper = false
+	#Approx Ores per Chunk
+	veinCountCopper = 20
+	#Generate Cobalt
+	generateCobalt = false
+	#Approx Ores per Chunk
+	veinCountCobalt = 14
+
+	#Options related to slime islands
+	[worldgen.slime_islands]
+
+		#Options related to earth slime islands spawning in the oceans
+		[worldgen.slime_islands.earth]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 15
+
+		#Settings for sky slime islands in the overworld sky
+		[worldgen.slime_islands.sky]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 30
+
+		#Settings for clay islands in the overworld sky
+		[worldgen.slime_islands.clay]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 100
+
+		#Settings for blood islands in the nether lava ocean
+		[worldgen.slime_islands.blood]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 13
+
+		#Settings for end slime islands in the outer end islands
+		[worldgen.slime_islands.end]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 25
+
+#Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
+[debug]
+	#If true, forces integration materials to be enabled, even if the relevant metal is missing. Useful for testing material balance.
+	#Does not provide recipes for any of them, they will only be available to cheat in creative.
+	forceIntegrationMaterials = false
+
+#Options related to loot table injections. Note some of the changes are done via global loot managers, these only control injecting loot into loot pools
+#If your modpack makes extensive loot table changes, many of these may be automatically disabled. You can also manually set up tables for more control.
+[loot]
+	#Adds slimy saplings and seeds into various loot chests. Helps for worlds without slime islands
+	slimy_loot = true
+	#Weight of blazing blood in the piglin bartering tables. Set to 0 to disable
+	#Range: 0 ~ 100
+	barter_blazing_blood = 20
+	#Weight of tinker tools in the vanilla spawn bonus chest, randomly replacing the vanilla axe or shovel. Tool will have a random tier 1 head and binding, plus a wooden handle. Set to 0 to disable.
+	#For comparison, vanilla wooden axes and pickaxes have a weight of 3, and stone axes/pickaxes have a weight of 1
+	#Range: 0 ~ 25
+	tinker_tool_bonus_chest = 2
+	#If true, ender dragons will drop scales when damaged by explosions
+	drop_dragon_Scales = true
+

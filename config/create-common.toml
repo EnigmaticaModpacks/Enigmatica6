@@ -1,0 +1,136 @@
+
+[worldgen]
+
+	# 
+	#Modify Create's impact on your terrain
+	[worldgen.v2]
+		# 
+		#Prevents all worldgen added by Create from taking effect
+		disableWorldGen = true
+
+		[worldgen.v2.copper_ore]
+			# 
+			#Range: > 0
+			clusterSize = 18
+			# 
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
+			# 
+			#Range: > 0
+			minHeight = 40
+			# 
+			#Range: > 0
+			maxHeight = 85
+
+		[worldgen.v2.weathered_limestone]
+			# 
+			#Range: > 0
+			clusterSize = 128
+			# 
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
+			# 
+			#Range: > 0
+			minHeight = 10
+			# 
+			#Range: > 0
+			maxHeight = 30
+
+		[worldgen.v2.zinc_ore]
+			# 
+			#Range: > 0
+			clusterSize = 14
+			# 
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
+			# 
+			#Range: > 0
+			minHeight = 15
+			# 
+			#Range: > 0
+			maxHeight = 70
+
+		[worldgen.v2.limestone]
+			# 
+			#Range: > 0
+			clusterSize = 128
+			# 
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
+			# 
+			#Range: > 0
+			minHeight = 30
+			# 
+			#Range: > 0
+			maxHeight = 70
+
+		[worldgen.v2.dolomite]
+			# 
+			#Range: > 0
+			clusterSize = 128
+			# 
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
+			# 
+			#Range: > 0
+			minHeight = 20
+			# 
+			#Range: > 0
+			maxHeight = 70
+
+		[worldgen.v2.gabbro]
+			# 
+			#Range: > 0
+			clusterSize = 128
+			# 
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
+			# 
+			#Range: > 0
+			minHeight = 20
+			# 
+			#Range: > 0
+			maxHeight = 70
+
+		[worldgen.v2.scoria]
+			# 
+			#Range: > 0
+			clusterSize = 128
+			# 
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
+			# 
+			#Range: > 0
+			minHeight = 0
+			# 
+			#Range: > 0
+			maxHeight = 10
+

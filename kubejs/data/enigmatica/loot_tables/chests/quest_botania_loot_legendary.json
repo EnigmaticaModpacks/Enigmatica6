@@ -1,0 +1,252 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 3,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:light_relay",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:overgrowth_seed",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:brew_flask",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{brewKey:\"botania:resistance\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:brew_flask",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{brewKey:\"botania:bloodthirst\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:brew_flask",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{brewKey:\"botania:emptiness\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:rannuncarpus",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:spectranthemum",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:elementium_ingot",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:pixie_dust",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:dragonstone",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:red_string",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:rafflowsia",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:rune_lust",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:rune_gluttony",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:rune_greed",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:rune_sloth",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:heisei_dream",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:rune_wrath",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:rune_envy",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:rune_pride",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:blacker_lotus",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },                
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "botania:mana_pearl",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+
+#Project: Vibrant Journeys settings
+[Settings]
+
+	#World Gen Settings
+	[Settings."World Gen"]
+		seaOats = true
+		cattails = true
+		barkMushrooms = true
+		cobwebs = true
+		bushes = true
+		glowcap = true
+		netherNettles = true
+		fallenTrees = true
+		#Seagrass in lakes
+		moreSeagrass = true
+		#Denser river grass
+		moreGrassInRivers = true
+		shortGrass = true
+		beachGrass = true
+
+		[Settings."World Gen".Groundcover]
+			rocks = true
+			twigs = true
+			fallenLeaves = true
+			bones = true
+			charredBones = true
+			iceChunks = true
+			pinecones = true
+			seashells = true
+			# % chance of groundcover placement
+			#Range: 0 ~ 100
+			groundcoverChance = 100
+			#Groundcover Biome Blacklist, example: ["minecraft:plains", "minecraft:beach"]
+			groundcoverBlacklist = []
+
+	#Biome Settings
+	[Settings.Biomes]
+		overgrown_spires = true
+		verdant_sands = true
+		boreal_forest = false
+		snowy_boreal_forest = false
+		redwoods = false
+		snowy_redwoods = false
+		redwood_peaks = false
+		pine_meadows = false
+		alpine_heights = false
+		boreal_plateau = false
+		aspen_grove = false
+		mangrove_marsh = false
+		willow_wetlands = false
+		baobab_fields = false
+		prairie = false
+		blossoming_fields = false
+		autumnal_coniferous_forest = false
+		crimson_thicket = false
+		desert_shrubland = false
+		red_rock_valley = false
+		crystal_lakes = false
+		windswept_cliffs = false
+
+		#Biome Weights
+		[Settings.Biomes."Biome Weights"]
+			overgrown_spires_weight = 3
+			verdant_sands_weight = 3
+			boreal_forest_weight = 3
+			snowy_boreal_forest_weight = 3
+			redwoods_weight = 3
+			snowy_redwoods_weight = 3
+			redwood_peaks_weight = 3
+			pine_meadows_weight = 3
+			alpine_heights_weight = 3
+			boreal_plateau_weight = 3
+			aspen_grove_weight = 3
+			mangrove_marsh_weight = 3
+			willow_wetlands_weight = 3
+			baobab_fields_weight = 3
+			prairie_weight = 3
+			blossoming_fields_weight = 3
+			autumnal_coniferous_forest_weight = 3
+			crimson_thicket_weight = 3
+			desert_shrubland_weight = 3
+			red_rock_valley_weight = 3
+			crystal_lakes_weight = 3
+			windswept_cliffs_weight = 3
+
+		#Biome Ambience Settings
+		[Settings.Biomes."Biome Ambience"]
+			windswept_cliffs_particles = true
+
+	[Settings."Mob Settings"]
+
+		[Settings."Mob Settings"."Mob Toggles"]
+			"Enable Flies" = false
+			"Enable Fireflies" = false
+			"Enable Starfish" = false
+			"Enable Clams" = false
+			"Enable Snails" = false
+			"Enable Slugs" = false
+			"Enable Small Spiders" = false
+			"Enable Frogs" = false
+
+			[Settings."Mob Settings"."Mob Toggles"."Mob Spawn Weights"]
+				"Fly Spawn Weight" = 15
+				"Firefly Spawn Weight" = 30
+				"Starfish Spawn Weight" = 30
+				"Clam Spawn Weight" = 10
+				"Snail Spawn Weight" = 30
+				"Slug Spawn Weight" = 25
+				"Small Spider Spawn Weight" = 5
+				"Frog Spawn Weight" = 30
+
+		[Settings."Mob Settings"."Misc Mob Settings"]
+			"Mute Flies" = false
+
+		[Settings."Mob Settings"."Vanilla Mob Settings"]
+			#Tropical fish in jungles
+			jungleTropicalFish = true
+			#Bats spawn outside at night
+			nightBats = false
+
+	#Tree Settings
+	[Settings."Tree Settings"]
+		enablePalmTrees = true
+		enableJuniperTrees = true
+

@@ -1,0 +1,19 @@
+{
+    "modId": "sushigocrafting",
+    "group": {
+        "name": "SushiGo Crafting Seeds",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "minecraft:emerald"
+        },
+        "defaultCategory": "farmingforblockheads:seeds"
+    },
+    "customEntries": [
+        { "output": { "item": "sushigocrafting:seaweed" } },
+        { "output": { "item": "sushigocrafting:sesame_seeds" } },
+        { "output": { "item": "sushigocrafting:wasabi_seeds" } },
+        { "output": { "item": "sushigocrafting:soy_seeds" } },
+        { "output": { "item": "sushigocrafting:cucumber_seeds" } },
+        { "output": { "item": "sushigocrafting:rice_seeds" } }
+    ]
+}

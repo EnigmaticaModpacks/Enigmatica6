@@ -1,0 +1,70 @@
+{
+    "flower": "minecraft:chorus_flower",
+    "lore": "Tier 1:\nThe Ender Bee, as it name suggests, hails\nfrom the same lands as the Enderman.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["ender", "can_swim", "desert", "wither"],
+    "baseLayerTexture": "other/ender",
+    "ColorData": {
+        "honeycombColor": "#339786",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:stone",
+                "outputs": [{ "outputID": "minecraft:end_stone", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:ender_pearl",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "emendatusenigmatica:dimensional_chunk",
+        "secondaryOutputWeight": 0.25,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "minecraft:dragon_breath",
+        "bottleOutputWeight": 0.01,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:END",
+        "biomeBlacklist": "tag:OVERWORLD,NETHER",
+        "lightLevel": "ALL",
+        "minGroupSize": 1,
+        "maxGroupSize": 2,
+        "spawnWeight": 10
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:gems/ender",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

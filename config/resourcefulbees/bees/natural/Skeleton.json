@@ -1,0 +1,72 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 1:\nThe Skeleton Bee can be found haunting spooky, dead places.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "skeleton/skeleton_bee",
+    "ColorData": {
+        "honeycombColor": "#f6f2e6",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:stone",
+                "outputs": [{ "outputID": "minecraft:bone_block", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:bone",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 3,
+
+        "secondaryOutput": "minecraft:bone_block",
+        "secondaryOutputWeight": 0.05,
+        "secondaryOutputCount": 2,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.8,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:SPOOKY,DEAD,RARE,NETHER",
+        "biomeBlacklist": "tag:END,OCEAN",
+        "lightLevel": "ANY",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "minYLevel": 12,
+        "maxYLevel": 250,
+        "spawnWeight": 12
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:bone_block",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

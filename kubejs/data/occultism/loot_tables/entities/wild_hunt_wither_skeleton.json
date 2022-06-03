@@ -1,0 +1,252 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:coal",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": -1,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:bone",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:wither_skeleton_skull"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 12,
+                    "name": "minecraft:book",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "immersiveengineering:sword_steel",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 60,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "immersiveengineering:armor_steel_head",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 60,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "immersiveengineering:armor_steel_chest",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 60,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "immersiveengineering:armor_steel_legs",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 60,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "immersiveengineering:armor_steel_feet",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 60,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "immersiveengineering:pickaxe_steel",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 60,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:bow",
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 60,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 10,
+                    "name": "minecraft:chests/nether_bridge"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.02,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "artifacts:artifact",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.3,
+                    "looting_multiplier": 0.05
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:gold_block"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "emendatusenigmatica:silver_block"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "emendatusenigmatica:copper_block"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:diamond",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 8
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

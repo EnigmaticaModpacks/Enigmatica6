@@ -1,0 +1,98 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:super_glue",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:powered_toggle_latch",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:powered_latch",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:shaft",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:tree_fertilizer",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:analog_lever",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:andesite_casing",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:belt_connector",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

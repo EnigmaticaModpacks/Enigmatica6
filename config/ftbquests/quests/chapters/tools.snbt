@@ -1,0 +1,3262 @@
+{
+	id: "0000000000000093"
+	group: "74B3CF67FCEAB20F"
+	order_index: 0
+	filename: "tools"
+	title: "Tools and Armor"
+	icon: {
+		id: "minecraft:netherite_pickaxe"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -7.5d
+			y: -8.5d
+			subtitle: "Swiss-Army… Hammer"
+			description: [
+				"A versatile multi-tool capable of clearing large areas with ease. Sneak right click to access the GUI where Drill Bits and Enchanted Books can be installed as well as changing the drill mode."
+				""
+				"Accepts Fortune or Silk Touch books."
+			]
+			dependencies: ["0000000000000145"]
+			id: "00000000000001C6"
+			tasks: [{
+				id: "00000000000001C7"
+				type: "item"
+				item: "pneumaticcraft:jackhammer"
+			}]
+			rewards: [
+				{
+					id: "00000000000001C8"
+					type: "item"
+					title: "Compressed Iron Drill Bit"
+					item: "pneumaticcraft:drill_bit_compressed_iron"
+				}
+				{
+					id: "0000000000000A58"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -7.5d
+			subtitle: "Lucy In the Sky"
+			description: ["A bit faster than the Compressed Iron Bit and with basic vein mining functions."]
+			dependencies: ["00000000000001C6"]
+			id: "00000000000001C9"
+			tasks: [{
+				id: "00000000000001CA"
+				type: "item"
+				item: "pneumaticcraft:drill_bit_diamond"
+			}]
+			rewards: [
+				{
+					id: "00000000000001CB"
+					type: "item"
+					title: "Volume Upgrade"
+					item: "pneumaticcraft:volume_upgrade"
+					count: 5
+				}
+				{
+					id: "00000000000006F8"
+					type: "command"
+					title: "Miner's Delight"
+					icon: "kubejs:miners_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -6.5d
+			subtitle: "I'm Told You Were The Best"
+			description: ["Faster still and with full vein mining capabilities."]
+			dependencies: ["00000000000001C9"]
+			id: "00000000000001CC"
+			tasks: [{
+				id: "00000000000001CD"
+				type: "item"
+				item: "pneumaticcraft:drill_bit_netherite"
+			}]
+			rewards: [
+				{
+					id: "00000000000001CE"
+					type: "item"
+					title: "Speed Upgrade"
+					item: "pneumaticcraft:speed_upgrade"
+					count: 2
+				}
+				{
+					id: "00000000000006F7"
+					type: "command"
+					title: "Miner's Delight"
+					icon: "kubejs:miners_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -9.5d
+			subtitle: "Send Your Armies But They'll Never Be Enough, My Shell's Too Tough"
+			description: [
+				"Notable Upgrades"
+				""
+				"● Magnet Upgrade"
+				"● Auto Tool Charging"
+				"● Block Launcher"
+				"● Self Repairing"
+			]
+			dependencies: ["0000000000000165"]
+			id: "00000000000001CF"
+			tasks: [{
+				id: "00000000000001D0"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:pneumatic_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000650"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.0d
+			y: -10.5d
+			subtitle: "Soak It In 'Cause It's The Last You'll Ever See"
+			description: [
+				"Notable Upgrades"
+				""
+				"● Night Vision"
+				"● Entity and Block Tracking"
+				"● Entity and Block Hacking"
+				"● S.C.U.B.A. Gear"
+				"● Item Search"
+				"● Self Repairing"
+			]
+			dependencies: ["0000000000000165"]
+			id: "00000000000001D1"
+			tasks: [{
+				id: "00000000000001D2"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:pneumatic_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "000000000000064F"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.0d
+			y: -7.5d
+			subtitle: "I'll Never Hide. I Can't. I'm Too Shiny"
+			description: [
+				"Notable Upgrades "
+				""
+				"● Run Speed"
+				"● Jump Height"
+				"● Self Repairing"
+			]
+			dependencies: ["0000000000000165"]
+			id: "00000000000001D3"
+			tasks: [{
+				id: "00000000000001D4"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:pneumatic_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000651"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.0d
+			y: -6.5d
+			subtitle: "Now It's Time to Kick Your... Hiney"
+			description: [
+				"Notable Upgrades "
+				""
+				"● Built in Step Assist"
+				"● Built in Fall Damage Negation"
+				"● Swim Speed"
+				"● Powered Kick"
+				"● Creative Flight"
+				"● Self Repairing"
+			]
+			dependencies: ["0000000000000165"]
+			id: "00000000000001D5"
+			tasks: [{
+				id: "00000000000001D6"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:pneumatic_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000652"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Armor Upgrade"
+			x: -10.0d
+			y: -8.5d
+			subtitle: "You Tried to Be Tough But Your Armor's Just Not Hard Enough"
+			description: ["Each armor piece accepts up to four of these for extreme protection."]
+			dependencies: [
+				"00000000000001D1"
+				"00000000000001D5"
+				"00000000000001D3"
+				"00000000000001CF"
+			]
+			dependency_requirement: "one_completed"
+			id: "00000000000001D7"
+			tasks: [{
+				id: "00000000000001D8"
+				type: "item"
+				item: "pneumaticcraft:armor_upgrade"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0000000000000654"
+				type: "item"
+				title: "Armor Upgrade"
+				item: "pneumaticcraft:armor_upgrade"
+				count: 4
+			}]
+		}
+		{
+			x: -9.0d
+			y: -10.0d
+			dependencies: ["00000000000001D1"]
+			id: "00000000000001D9"
+			tasks: [{
+				id: "00000000000001DA"
+				type: "item"
+				item: "pneumaticcraft:night_vision_upgrade"
+			}]
+			rewards: [{
+				id: "0000000000000645"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -11.0d
+			y: -10.0d
+			dependencies: ["00000000000001D1"]
+			id: "00000000000001DB"
+			tasks: [{
+				id: "00000000000001DC"
+				type: "item"
+				item: "pneumaticcraft:scuba_upgrade"
+			}]
+			rewards: [{
+				id: "0000000000000644"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -9.0d
+			y: -9.0d
+			dependencies: ["00000000000001CF"]
+			id: "00000000000001DD"
+			tasks: [{
+				id: "00000000000001DE"
+				type: "item"
+				item: "pneumaticcraft:magnet_upgrade"
+			}]
+			rewards: [{
+				id: "0000000000000642"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -11.0d
+			y: -9.0d
+			dependencies: ["00000000000001CF"]
+			id: "00000000000001DF"
+			tasks: [{
+				id: "00000000000001E0"
+				type: "item"
+				item: "pneumaticcraft:charging_upgrade"
+			}]
+			rewards: [{
+				id: "0000000000000643"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -11.0d
+			y: -7.0d
+			dependencies: ["00000000000001D5"]
+			id: "00000000000001E3"
+			tasks: [{
+				id: "00000000000001E4"
+				type: "item"
+				item: "pneumaticcraft:flippers_upgrade"
+			}]
+			rewards: [{
+				id: "000000000000063F"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -9.0d
+			y: -8.0d
+			subtitle: "Shared Experiences"
+			description: ["Held in the inventory or worn as a Curio, this handy device helps you keep your valuable experience intact."]
+			dependencies: ["0000000000000145"]
+			id: "00000000000001E7"
+			tasks: [{
+				id: "00000000000001E8"
+				type: "item"
+				item: "pneumaticcraft:memory_stick"
+			}]
+			rewards: [{
+				id: "0000000000000653"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+		}
+		{
+			title: "Jumping Upgrade"
+			x: -11.0d
+			y: -8.0d
+			description: [""]
+			dependencies: ["00000000000001D3"]
+			id: "00000000000001ED"
+			tasks: [{
+				id: "00000000000001EE"
+				type: "item"
+				item: "pneumaticcraft:jumping_upgrade_4"
+			}]
+			rewards: [{
+				id: "0000000000000641"
+				type: "command"
+				title: "Legendary PNC:R Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Jet Boots Upgrade"
+			x: -9.0d
+			y: -7.0d
+			description: [""]
+			dependencies: ["00000000000001D5"]
+			id: "00000000000001F5"
+			tasks: [{
+				id: "00000000000001F6"
+				type: "item"
+				item: "pneumaticcraft:jet_boots_upgrade_5"
+			}]
+			rewards: [{
+				id: "0000000000000640"
+				type: "command"
+				title: "Legendary PNC:R Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -6.0d
+			y: -7.5d
+			subtitle: "Target Acquired"
+			description: [
+				"Bats. The greatest enemy of them all. Now behold, their doom is in your hands."
+				""
+				"Micro missiles are target seeking explosives. They do no damage to the terrain and can be configured for varying degrees of explosive damage, travel speed, and turn speed. Sneak right click to configure."
+			]
+			dependencies: ["0000000000000165"]
+			id: "00000000000001F7"
+			tasks: [{
+				id: "00000000000001F8"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:micromissiles"
+					Count: 1b
+					tag: {
+						damage: 0.0f
+						topSpeed: 0.0f
+						Damage: 0
+						turnSpeed: 0.0f
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000A56"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.0d
+			y: -9.5d
+			subtitle: "Stand and Deliver"
+			description: ["A smart turret that can be filtered to attack only certain creatures. For instance, only adult animals. "]
+			dependencies: ["00000000000001FB"]
+			id: "00000000000001F9"
+			tasks: [{
+				id: "00000000000001FA"
+				type: "item"
+				item: "pneumaticcraft:sentry_turret"
+			}]
+			rewards: [{
+				id: "0000000000000868"
+				type: "item"
+				title: "Armor-Piercing Minigun Ammo"
+				item: {
+					id: "pneumaticcraft:gun_ammo_ap"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							lvl: 5s
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: -9.5d
+			subtitle: "Leveling the Playing Field"
+			description: ["A modern solution to monster slaying. Pet friendly too!"]
+			dependencies: ["00000000000000B3"]
+			id: "00000000000001FB"
+			tasks: [{
+				id: "00000000000001FC"
+				type: "item"
+				item: "pneumaticcraft:minigun"
+			}]
+			rewards: [{
+				id: "0000000000000867"
+				type: "item"
+				title: "Minigun Ammo"
+				item: {
+					id: "pneumaticcraft:gun_ammo"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							lvl: 5s
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			title: "Ammunition"
+			x: -6.0d
+			y: -8.5d
+			subtitle: "Something For Every Occasion"
+			description: ["Craft some specialized ammo and give them a try. Regular ammo can also be coated with a potion to give it a little extra oomph."]
+			dependencies: ["00000000000001FB"]
+			id: "0000000000000202"
+			tasks: [
+				{
+					id: "0000000000000203"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:gun_ammo_freezing"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000020B"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:gun_ammo_explosive"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000869"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:gun_ammo_incendiary"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0000000000000A55"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.0d
+			y: -8.5d
+			subtitle: "Inevitable Escalation"
+			description: [
+				"Creeper infestation got you down? Tired of zombie villagers knocking at all hours? Wish those skeletons would stay in the ground where Fido buried them?"
+				""
+				"Look no further. This autonomous sentry system will keep your home monster free with minor upkeep. "
+			]
+			dependencies: ["00000000000001FB"]
+			id: "000000000000020E"
+			tasks: [{
+				id: "000000000000020F"
+				type: "item"
+				item: "pneumaticcraft:guard_drone"
+			}]
+			rewards: [{
+				id: "0000000000000655"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.0d
+			y: -7.5d
+			subtitle: "This Is How You Get SkyNET"
+			description: [
+				"When added to a Guard Drone or a Programmable Drone, this converts it into a state-of-the-art killing machine. "
+				""
+				"Ammunition not included."
+			]
+			dependencies: ["000000000000020E"]
+			id: "0000000000000210"
+			tasks: [{
+				id: "0000000000000211"
+				type: "item"
+				item: "pneumaticcraft:minigun_upgrade"
+			}]
+			rewards: [{
+				id: "0000000000000A57"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -7.5d
+			y: -9.5d
+			subtitle: "It's Over! I Have the High Ground!"
+			description: ["Provides automation access to the player's inventory, allows auto feeding, and auto charging of equipment, among other perks."]
+			dependencies: ["0000000000000168"]
+			id: "0000000000000212"
+			tasks: [{
+				id: "0000000000000213"
+				type: "item"
+				item: "pneumaticcraft:aerial_interface"
+			}]
+			rewards: [{
+				id: "0000000000000894"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: -10.5d
+			subtitle: "The Only Thing They Fear... Is You."
+			description: [
+				"Notable Upgrades"
+				""
+				"● Auto Feeding"
+				"● Night Vision"
+				"● Solar Charging"
+				"● Underwater Breathing"
+				"● Magic Damage Protection"
+				"● Status Effect Protection"
+				"● Radiation Protection"
+				"● Energy Shielding"
+			]
+			dependencies: ["00000000000007A9"]
+			id: "0000000000000435"
+			tasks: [{
+				id: "0000000000000436"
+				type: "item"
+				item: {
+					id: "mekanism:mekasuit_helmet"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000836"
+				type: "command"
+				title: "Legendary Mekanism Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: -9.5d
+			subtitle: "Stand Strong Against Their Legions"
+			description: [
+				"Notable Upgrades"
+				""
+				"● Creative Flight"
+				"● Radiation Tracking"
+				"● Energy Distribution"
+				"● Radiation Protection"
+				"● Energy Shielding"
+			]
+			dependencies: ["00000000000007A9"]
+			id: "0000000000000437"
+			tasks: [{
+				id: "0000000000000438"
+				type: "item"
+				item: {
+					id: "mekanism:mekasuit_bodyarmor"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000835"
+				type: "command"
+				title: "Legendary Mekanism Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.5d
+			subtitle: "They Are Rage, Brutal, Without Mercy"
+			description: [
+				"Notable Upgrades"
+				""
+				"● Run Speed Enhancement"
+				"● Radiation Protection"
+				"● Energy Shielding"
+			]
+			dependencies: ["00000000000007A9"]
+			id: "0000000000000439"
+			tasks: [{
+				id: "000000000000043A"
+				type: "item"
+				item: {
+					id: "mekanism:mekasuit_pants"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000834"
+				type: "command"
+				title: "Legendary Mekanism Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.5d
+			subtitle: "But You, You Will Be Worse"
+			description: [
+				"Notable Upgrades"
+				""
+				"● Jump Height Enhancement"
+				"● Magnet Upgrade"
+				"● Radiation Protection"
+				"● Energy Shielding"
+			]
+			dependencies: ["00000000000007A9"]
+			id: "000000000000043B"
+			tasks: [{
+				id: "000000000000043C"
+				type: "item"
+				item: {
+					id: "mekanism:mekasuit_boots"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000833"
+				type: "command"
+				title: "Legendary Mekanism Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			icon: "mekanism:canteen"
+			x: 0.0d
+			y: -8.0d
+			subtitle: "Soylent Green"
+			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."]
+			dependencies: ["00000000000006A5"]
+			id: "000000000000043D"
+			tasks: [
+				{
+					id: "000000000000043E"
+					type: "item"
+					item: "mekanism:canteen"
+				}
+				{
+					id: "00000000000004B5"
+					type: "item"
+					item: "mekanism:nutritional_liquifier"
+				}
+			]
+			rewards: [{
+				id: "000000000000083D"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: -10.0d
+			dependencies: ["0000000000000435"]
+			id: "000000000000043F"
+			tasks: [{
+				id: "0000000000000440"
+				type: "item"
+				item: "mekanism:module_vision_enhancement_unit"
+			}]
+			rewards: [{
+				id: "000000000000083B"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -10.0d
+			dependencies: ["0000000000000435"]
+			id: "0000000000000441"
+			tasks: [{
+				id: "0000000000000442"
+				type: "item"
+				item: "mekanism:module_electrolytic_breathing_unit"
+			}]
+			rewards: [{
+				id: "000000000000083A"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.0d
+			dependencies: ["000000000000043B"]
+			id: "0000000000000443"
+			tasks: [{
+				id: "0000000000000444"
+				type: "item"
+				item: "mekanism:module_hydraulic_propulsion_unit"
+			}]
+			rewards: [{
+				id: "0000000000000839"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.0d
+			dependencies: ["000000000000043B"]
+			id: "0000000000000445"
+			tasks: [{
+				id: "0000000000000446"
+				type: "item"
+				item: "mekanism:module_magnetic_attraction_unit"
+			}]
+			rewards: [{
+				id: "000000000000083E"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -9.0d
+			dependencies: ["0000000000000437"]
+			id: "0000000000000447"
+			tasks: [{
+				id: "0000000000000448"
+				type: "item"
+				item: "mekanism:module_charge_distribution_unit"
+			}]
+			rewards: [{
+				id: "0000000000000837"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: -8.5d
+			subtitle: "The Cost Of Progress"
+			description: [""]
+			dependencies: [
+				"0000000000000437"
+				"000000000000043B"
+				"0000000000000435"
+				"0000000000000439"
+			]
+			id: "0000000000000449"
+			tasks: [{
+				id: "000000000000044A"
+				type: "item"
+				item: "mekanism:module_energy_unit"
+			}]
+			rewards: [{
+				id: "000000000000083F"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: -9.0d
+			dependencies: ["0000000000000437"]
+			id: "000000000000044B"
+			tasks: [{
+				id: "000000000000044C"
+				type: "item"
+				item: "mekanism:module_jetpack_unit"
+			}]
+			rewards: [{
+				id: "000000000000083C"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -8.0d
+			dependencies: ["0000000000000439"]
+			id: "000000000000044D"
+			tasks: [{
+				id: "000000000000044E"
+				type: "item"
+				item: "mekanism:module_locomotive_boosting_unit"
+			}]
+			rewards: [{
+				id: "0000000000000838"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.5d
+			y: -8.5d
+			subtitle: "Don't Leave That Plasma Cutter Running"
+			description: ["A basic multi-tool with built in vein mining and excellent attack damage."]
+			dependencies: ["00000000000006C5"]
+			id: "000000000000044F"
+			tasks: [{
+				id: "0000000000000450"
+				type: "item"
+				item: {
+					id: "mekanism:atomic_disassembler"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000831"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.5d
+			y: -6.5d
+			subtitle: "Rip and Tear"
+			description: [
+				"A powerful all in one tool capable of accepting several upgrades. "
+				""
+				"Notable Upgrades"
+				""
+				"● Attack Amplification Unit"
+				"● Excavation Escalation Unit"
+				"● Vein Mining Unit"
+				"● Silk Touch Unit"
+				"● Teleportation Unit"
+				"● Farming Unit"
+			]
+			dependencies: ["00000000000007A9"]
+			id: "0000000000000451"
+			tasks: [{
+				id: "0000000000000452"
+				type: "item"
+				item: {
+					id: "mekanism:meka_tool"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000832"
+				type: "command"
+				title: "Legendary Mekanism Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.5d
+			y: -7.5d
+			subtitle: "Be the Change"
+			description: ["Used for applying all upgrades to the MekaTool and MekaSuit pieces."]
+			dependencies: ["00000000000007A9"]
+			id: "0000000000000453"
+			tasks: [{
+				id: "0000000000000454"
+				type: "item"
+				item: "mekanism:modification_station"
+			}]
+			rewards: [{
+				id: "0000000000000830"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tools and Armor"
+			x: -4.5d
+			y: -11.5d
+			shape: "gear"
+			description: [
+				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable mentions."
+				""
+				"Note: Most tools and armor have been Tagged for easier search in JEI. Search for the following categories to discover more:"
+				""
+				"● $armor"
+				"● $armor/helm"
+				"● $armor/chest"
+				"● $armor/leggings"
+				"● $armor/boots"
+				""
+				"● $tools"
+				"● $tools/pickaxe"
+				"● $tools/shovel"
+				"● $tools/axe"
+				"● $tools/hoe"
+				"● $tools/multi-tool"
+			]
+			id: "000000000000045C"
+			tasks: [{
+				id: "000000000000045D"
+				type: "checkmark"
+				icon: {
+					id: "minecraft:netherite_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000CA4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: {
+				id: "mininggadgets:mininggadget"
+				Count: 1b
+				tag: { }
+			}
+			x: -10.0d
+			y: -16.0d
+			subtitle: "Frickin' Laser Beams"
+			description: [
+				"A powered tool capable of mining blocks from a distance. "
+				""
+				"Danger: Class 4 Laser Device. Avoid eye or skin exposure."
+				""
+				"Notable Upgrades"
+				""
+				"● Torch Placer"
+				"● Area Mining"
+				"● Silk Touch"
+				"● Fortune"
+				"● Filterable Void Upgrade to delete unwanted trash like excess stone"
+				"● Magnet upgrade that draws mined items into your inventory"
+			]
+			dependencies: ["000000000000046C"]
+			id: "000000000000045F"
+			tasks: [
+				{
+					id: "0000000000000460"
+					type: "item"
+					title: "Mining Gadget"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mininggadgets:mininggadget_simple"
+									Count: 1b
+									tag: {
+										energy: 1000000
+									}
+								}
+								{
+									id: "mininggadgets:mininggadget_fancy"
+									Count: 1b
+									tag: {
+										energy: 1000000
+									}
+								}
+								{
+									id: "mininggadgets:mininggadget"
+									Count: 1b
+									tag: {
+										energy: 1000000
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "00000000000006F2"
+					type: "item"
+					item: "mininggadgets:modificationtable"
+				}
+			]
+			rewards: [
+				{
+					id: "000000000000067D"
+					type: "item"
+					title: "Upgrade: Light Placer"
+					item: "mininggadgets:upgrade_light_placer"
+				}
+				{
+					id: "0000000000000A52"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Fortune Laser Upgrade (Tier 3)"
+			x: -10.5d
+			y: -15.0d
+			dependencies: ["000000000000045F"]
+			id: "0000000000000464"
+			tasks: [{
+				id: "0000000000000465"
+				type: "item"
+				item: "mininggadgets:upgrade_fortune_3"
+			}]
+			rewards: [{
+				id: "00000000000006EF"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Silk Touch Laser Upgrade (Tier 1)"
+			x: -11.0d
+			y: -14.0d
+			dependencies: ["000000000000045F"]
+			id: "0000000000000466"
+			tasks: [{
+				id: "000000000000067C"
+				type: "item"
+				item: "mininggadgets:upgrade_silk"
+			}]
+			rewards: [
+				{
+					id: "000000000000067B"
+					type: "item"
+					title: "Upgrade: Magnet"
+					item: "mininggadgets:upgrade_magnet"
+				}
+				{
+					id: "0000000000000A53"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Efficiency Laser Upgrade (Tier 5)"
+			x: -9.5d
+			y: -15.0d
+			dependencies: ["000000000000045F"]
+			id: "0000000000000468"
+			tasks: [{
+				id: "0000000000000469"
+				type: "item"
+				item: "mininggadgets:upgrade_efficiency_5"
+			}]
+			rewards: [{
+				id: "00000000000006EE"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Battery Laser Upgrade (Tier 3)"
+			x: -9.0d
+			y: -14.0d
+			dependencies: ["000000000000045F"]
+			id: "000000000000046A"
+			tasks: [{
+				id: "000000000000046B"
+				type: "item"
+				item: "mininggadgets:upgrade_battery_3"
+			}]
+			rewards: [{
+				id: "0000000000000A54"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Alfsteel Armor"
+			icon: {
+				id: "mythicbotany:alfsteel_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: -12.0d
+			subtitle: "Evolution Complete"
+			description: ["An upgrade to Terrasteel armor, Alfsteel provides bonus reach, speed, and knockback resistance."]
+			dependencies: [
+				"0000000000000475"
+				"0000000000000595"
+			]
+			id: "0000000000000470"
+			tasks: [
+				{
+					id: "0000000000000471"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000472"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000473"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000474"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "000000000000065C"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Terrasteel Armor"
+			icon: {
+				id: "botania:terrasteel_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: -13.0d
+			subtitle: "Direct My Wrath"
+			description: ["Potent armor that's deeply infused with magic, Terrasteel affords excellent protection, reduced mana costs, and knockback resistance."]
+			dependencies: ["0000000000000517"]
+			id: "0000000000000475"
+			tasks: [
+				{
+					id: "0000000000000476"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000477"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000478"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000479"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "000000000000065D"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -13.0d
+			subtitle: "It's Something, Not Sure What"
+			description: ["Magically imbued and magically combined. This tool can absorb mana to increase its power, just like the Terrashatterer."]
+			dependencies: ["0000000000000517"]
+			id: "000000000000047A"
+			tasks: [{
+				id: "000000000000047B"
+				type: "item"
+				item: {
+					id: "aiotbotania:terra_aiot"
+					Count: 1b
+					tag: {
+						mana: 9999
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "000000000000065E"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -12.0d
+			subtitle: "Thing of Beauty"
+			description: ["Magically imbued and magically combined. This tool can absorb mana to increase its power, just like the Terrashatterer."]
+			dependencies: ["0000000000000595"]
+			id: "000000000000047C"
+			tasks: [{
+				id: "000000000000047D"
+				type: "item"
+				item: {
+					id: "aiotbotania:alfsteel_aiot"
+					Count: 1b
+					tag: {
+						mana: 9999
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "000000000000065B"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Neptunium Armor"
+			icon: {
+				id: "aquaculture:neptunium_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: -14.0d
+			subtitle: "And With Strange Aeons, Even Death May Die"
+			description: ["Forged in ages past in the deepest depths. Neptunium armor grants it's wearer a taste of the unimaginable power of the Abyssal Depths."]
+			dependencies: ["00000000000004B3"]
+			id: "000000000000047E"
+			tasks: [
+				{
+					id: "000000000000047F"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000660"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000661"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000662"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "000000000000065F"
+					type: "item"
+					title: "Nether Star Hook"
+					item: "aquaculture:nether_star_hook"
+				}
+				{
+					id: "00000000000006F4"
+					type: "command"
+					title: "Sorcerer's Delight"
+					icon: "kubejs:sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -14.0d
+			subtitle: "Dig the Water"
+			description: ["Neptunium Tools offer many benefits to those who spend most of their time under water. "]
+			dependencies: ["00000000000004B3"]
+			id: "0000000000000480"
+			tasks: [{
+				id: "0000000000000481"
+				type: "item"
+				item: {
+					id: "aquaculture:neptunium_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "00000000000006F5"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Archmage's Arcana"
+			icon: {
+				id: "ars_nouveau:archmage_hood"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: -16.0d
+			description: ["Ars Nouveau has several tiers of armor to assist the aspiring caster. Each permits the wearer to access more mana and regenerate spent mana faster."]
+			dependencies: ["00000000000003D5"]
+			id: "0000000000000486"
+			tasks: [
+				{
+					id: "0000000000000487"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048A"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048B"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000666"
+					type: "command"
+					title: "Rare Ars Nouveau Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+					player_command: false
+				}
+				{
+					id: "000000000000066E"
+					type: "item"
+					title: "Mana Boost V, Mana Regen V"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [
+								{
+									lvl: 5s
+									id: "ars_nouveau:mana_regen"
+								}
+								{
+									lvl: 5s
+									id: "ars_nouveau:mana_boost"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Skyseeker's Mantle"
+			icon: {
+				id: "naturesaura:sky_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: -15.0d
+			description: ["Skyseeker's Armor imbues the wearer with the affinity of the wind itself, granting speed and a lighter step."]
+			dependencies: ["00000000000002E9"]
+			id: "0000000000000488"
+			tasks: [
+				{
+					id: "0000000000000489"
+					type: "item"
+					item: {
+						id: "naturesaura:sky_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048D"
+					type: "item"
+					item: {
+						id: "naturesaura:sky_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048E"
+					type: "item"
+					item: {
+						id: "naturesaura:sky_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048F"
+					type: "item"
+					item: {
+						id: "naturesaura:sky_shoes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0000000000000665"
+				type: "command"
+				title: "Epic Nature's Aura Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -6.0d
+			y: -5.5d
+			subtitle: "Guaranteed to Satisfy"
+			description: [
+				"A powered drill that makes short work of any digging task. Use a Tinker's Workbench to install various upgrades:"
+				""
+				"● Integral Component "
+				"● RF Coil"
+				"● Radial Enhancement"
+			]
+			dependencies: ["00000000000004A3"]
+			id: "0000000000000490"
+			tasks: [{
+				id: "0000000000000491"
+				type: "item"
+				item: "thermal:flux_drill"
+			}]
+			rewards: [
+				{
+					id: "0000000000000657"
+					type: "command"
+					title: "Epic Thermal Series Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+					player_command: false
+				}
+				{
+					id: "0000000000000865"
+					type: "command"
+					title: "Miner's Delight"
+					icon: "kubejs:miners_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -5.5d
+			subtitle: "You Try to Hold Me But I Bust Through"
+			description: [
+				"A powered saw that makes short work of any arboreal task. Use a Tinker's Workbench to install various upgrades:"
+				""
+				"● Integral Component "
+				"● RF Coil"
+				"● Radial Enhancement"
+			]
+			dependencies: ["00000000000004A3"]
+			id: "0000000000000492"
+			tasks: [{
+				id: "0000000000000493"
+				type: "item"
+				item: "thermal:flux_saw"
+			}]
+			rewards: [
+				{
+					id: "0000000000000656"
+					type: "command"
+					title: "Epic Thermal Series Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+					player_command: false
+				}
+				{
+					id: "0000000000000866"
+					type: "command"
+					title: "Miner's Delight"
+					icon: "kubejs:miners_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Hazmat Suit"
+			icon: {
+				id: "thermal:hazmat_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.5d
+			y: -4.5d
+			subtitle: "So Dangerous, You'll Have to Sign a Waiver"
+			description: ["Sturdy protection against many of the world's hazards, such as fire and very sharp booshes."]
+			dependencies: ["00000000000004A6"]
+			id: "0000000000000494"
+			tasks: [
+				{
+					id: "0000000000000495"
+					type: "item"
+					item: {
+						id: "thermal:hazmat_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000049A"
+					type: "item"
+					item: {
+						id: "thermal:hazmat_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000049B"
+					type: "item"
+					item: {
+						id: "thermal:hazmat_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000049C"
+					type: "item"
+					item: {
+						id: "thermal:hazmat_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0000000000000659"
+				type: "command"
+				title: "Epic Thermal Series Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Diving Suit"
+			icon: {
+				id: "thermal:diving_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.5d
+			y: -4.5d
+			subtitle: "You'll Think You're Looking at Aquaman"
+			description: ["A technological marvel that allows the wearer to remain productive for longer under water."]
+			dependencies: ["00000000000003A2"]
+			id: "0000000000000496"
+			tasks: [
+				{
+					id: "0000000000000497"
+					type: "item"
+					item: {
+						id: "thermal:diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000049D"
+					type: "item"
+					item: {
+						id: "thermal:diving_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000049E"
+					type: "item"
+					item: {
+						id: "thermal:diving_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000049F"
+					type: "item"
+					item: {
+						id: "thermal:diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0000000000000658"
+				type: "command"
+				title: "Epic Thermal Series Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.5d
+			description: [
+				"A powered magnet, perfect for keeping your precious items from falling into lava. Use a Tinker's Workbench to install various upgrades:"
+				""
+				"● Integral Component "
+				"● RF Coil"
+				"● Radial Enhancement"
+			]
+			dependencies: ["00000000000004A3"]
+			id: "0000000000000498"
+			tasks: [{
+				id: "0000000000000499"
+				type: "item"
+				item: "thermal:flux_magnet"
+			}]
+			rewards: [{
+				id: "000000000000065A"
+				type: "command"
+				title: "Epic Thermal Series Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -15.0d
+			subtitle: "Dig the Air"
+			description: [
+				"Nature's Aura has a variety of useful mining implements, each with their own special features beyond basic block breaking."
+				""
+				"Read more about them in the Natural Items section of the Book of Natural Aura."
+			]
+			dependencies: ["00000000000002E9"]
+			id: "00000000000004B6"
+			tasks: [{
+				id: "00000000000004B7"
+				type: "item"
+				item: {
+					id: "naturesaura:sky_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000664"
+				type: "command"
+				title: "Epic Nature's Aura Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -9.5d
+			y: -13.0d
+			subtitle: "Chiseled like a Greek God"
+			description: [
+				"It cuts, it grinds, it chisels, polishes and and even cooks and cleans!"
+				""
+				"All the power of a Stone Cutter, now in a compact portable format that fits in the palm of your hand."
+				""
+				"Disclaimer: Will not actually cook or clean. Not for Commercial Use"
+				""
+				"Warning: Keep away from children, animals, nitwits. Do not place hand on blade while in motion. Extended use may lead to fatigue and loss of vision."
+			]
+			dependencies: ["000000000000046E"]
+			id: "0000000000000AF7"
+			tasks: [{
+				id: "0000000000000AF8"
+				type: "item"
+				item: "portable_stonecutter:portable_stonecutter"
+			}]
+			rewards: [{
+				id: "0000000000000B0B"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -7.5d
+			y: -13.5d
+			subtitle: "Cannot dig beyond bedrock"
+			description: ["The Infinity Drill will allow you mine big areas when using biofuel. It can be upgraded by charging it."]
+			dependencies: ["0000000000000082"]
+			id: "0000000000000F5F"
+			tasks: [{
+				id: "0000000000000F60"
+				type: "item"
+				item: {
+					id: "industrialforegoing:infinity_drill"
+					Count: 1b
+					tag: {
+						CanCharge: 1b
+						Special: 0b
+						Selected: "POOR"
+						Energy: 0L
+						Fluid: {
+							FluidName: "biofuel"
+							Amount: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: -13.0d
+			subtitle: "Beat that, buzzsaw"
+			description: ["The Infinity Saw will allow you chop big forests when using biofuel. It can be upgraded by charging it."]
+			dependencies: ["0000000000000F09"]
+			id: "0000000000000F61"
+			tasks: [{
+				id: "0000000000000F62"
+				type: "item"
+				item: {
+					id: "industrialforegoing:infinity_saw"
+					Count: 1b
+					tag: {
+						CanCharge: 1b
+						Special: 0b
+						Selected: "POOR"
+						Energy: 0L
+						Fluid: {
+							FluidName: "biofuel"
+							Amount: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -13.0d
+			subtitle: "Trident * ♾"
+			description: ["The Infinity Trident is an upgraded version of the Minecraft Trident, most of the enchantments can be unlocked by upgrading it. It can be upgraded by charging it."]
+			dependencies: ["0000000000000F07"]
+			id: "0000000000000F63"
+			tasks: [{
+				id: "0000000000000F64"
+				type: "item"
+				item: {
+					id: "industrialforegoing:infinity_trident"
+					Count: 1b
+					tag: {
+						CanCharge: 1b
+						Riptide: 0
+						Channeling: 0b
+						Energy: 0L
+						Fluid: {
+							FluidName: "biofuel"
+							Amount: 0
+						}
+						Special: 0b
+						Selected: "POOR"
+						Loyalty: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -13.5d
+			subtitle: "Sadly Cannot Make Multiblocks"
+			description: ["The Infinity Hammer will allow you attack enemies in big areas when using biofuel. It can be upgraded by charging it."]
+			dependencies: ["0000000000000F0B"]
+			id: "0000000000000F65"
+			tasks: [{
+				id: "0000000000000F66"
+				type: "item"
+				item: {
+					id: "industrialforegoing:infinity_hammer"
+					Count: 1b
+					tag: {
+						CanCharge: 1b
+						Energy: 0L
+						Fluid: {
+							FluidName: "biofuel"
+							Amount: 0
+						}
+						Special: 0b
+						Selected: "POOR"
+						Beheading: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -4.5d
+			description: [
+				"When installed in Flux Tools, the Radial Enhancement allows them to work on larger areas. Drillin or Sawing a 3x3, 5x5, or 7x7 area. "
+				""
+				"Likewise, it increase the pickup range for a FluxoMagnet."
+			]
+			dependencies: [
+				"00000000000004A4"
+				"0000000000000490"
+				"0000000000000492"
+				"0000000000000498"
+			]
+			dependency_requirement: "one_completed"
+			id: "0000000000000F98"
+			tasks: [{
+				id: "0000000000000F99"
+				type: "item"
+				item: "thermal:area_radius_augment"
+			}]
+			rewards: [
+				{
+					id: "0000000000000F9A"
+					type: "command"
+					title: "Epic Thermal Series Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+					player_command: false
+				}
+				{
+					id: "0000000000000F9B"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			subtitle: "Goes Brrr"
+			description: [
+				"A handheld saw perfect for chopping down trees or chopping through zombies. "
+				""
+				"This tool runs on biodiesel, though the internal tank is on the smaller side. Consider carrying a tank with you for refueling in the field. Simply place it in the input slot of the tank to fill it up. "
+				""
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			]
+			dependencies: ["0000000000000012"]
+			id: "1487479CFA348530"
+			tasks: [{
+				id: "716019716B2915F9"
+				type: "item"
+				item: {
+					id: "immersiveengineering:buzzsaw"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4AA86E1E20DADE27"
+					type: "item"
+					title: "Advanced Fluid Tank"
+					item: {
+						id: "mekanism:advanced_fluid_tank"
+						Count: 1b
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b
+									stored: {
+										FluidName: "immersiveengineering:biodiesel"
+										Amount: 16000
+									}
+								}]
+							}
+						}
+					}
+				}
+				{
+					id: "17E85BEC398930AD"
+					type: "item"
+					title: "Sawblade"
+					item: {
+						id: "immersiveengineering:sawblade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -5.0d
+			subtitle: "First comes smiles, then lies. Last is gunfire."
+			description: [
+				"A trusty side-arm suitable for any Gunslinger."
+				""
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			]
+			dependencies: ["0000000000000012"]
+			id: "52DFEA36FFFBCDD5"
+			tasks: [{
+				id: "54E76BD7C4FB9D97"
+				type: "item"
+				item: {
+					id: "immersiveengineering:revolver"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 21
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "098BE70A0BFCDBDC"
+					type: "command"
+					title: "Rare Immersive Engineering Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+					player_command: false
+				}
+				{
+					id: "02E988D98405DAFB"
+					type: "item"
+					title: "Casull Cartridge"
+					item: "immersiveengineering:casull"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: -2.0d
+			subtitle: "Workin' in a coal mine. Oops, about to slip down."
+			description: [
+				"A handheld tunnel bore capable of quickly digging through the toughest rocks. "
+				""
+				"This tool runs on biodiesel, though the internal tank is on the smaller side. Consider carrying a tank with you for refueling in the field. Simply place it in the input slot of the tank to fill it up. "
+				""
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			]
+			dependencies: ["0000000000000012"]
+			id: "0A476C6332EB6477"
+			tasks: [{
+				id: "5B3CC19ED97DFA26"
+				type: "item"
+				item: {
+					id: "immersiveengineering:drill"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5D7232BCA248639D"
+					type: "item"
+					title: "Advanced Fluid Tank"
+					item: {
+						id: "mekanism:advanced_fluid_tank"
+						Count: 1b
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b
+									stored: {
+										FluidName: "immersiveengineering:biodiesel"
+										Amount: 16000
+									}
+								}]
+							}
+						}
+					}
+				}
+				{
+					id: "7683853C5B00EE25"
+					type: "item"
+					title: "Iron Drill Head"
+					item: "immersiveengineering:drillhead_iron"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -5.0d
+			subtitle: "See the TURTLE, ain't he keen?"
+			description: [
+				"Capable of launching projectiles at immense velocities and ripping through targets with impunity, the Railgun is a fierce weapon. "
+				""
+				"Suitable ammunition includes Iron and Steel Rods, as well as Graphite Electrodes and many others. "
+				""
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			]
+			dependencies: ["0000000000000012"]
+			id: "69C4E9422B0C695A"
+			tasks: [{
+				id: "404F5C421F8FFFD5"
+				type: "item"
+				item: {
+					id: "immersiveengineering:railgun"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 3
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "57BCCB513CA91D6B"
+					type: "command"
+					title: "Rare Immersive Engineering Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+					player_command: false
+				}
+				{
+					id: "6BCA8B2194807B4D"
+					type: "item"
+					title: "Iron Rod"
+					item: "emendatusenigmatica:iron_rod"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			subtitle: "When the shooting starts, we kill what moves."
+			description: [
+				"The Speedloader will automatically reload the Revolver when it runs out of ammo, making it a great way to continue the fight. "
+				""
+				"To refill it on the go, simply right click and place your cartridges in it. However, it can also be filled in a 3x3 crafting grid by surrounding it with ammo. Combined with some automation and a Player Module, this could mean never running out of ammo again."
+			]
+			dependencies: ["52DFEA36FFFBCDD5"]
+			id: "3FC9C9BA6C4B9597"
+			tasks: [{
+				id: "46FB2138D39F9238"
+				type: "item"
+				item: {
+					id: "immersiveengineering:speedloader"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 8
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "24A27D154F9FB236"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			subtitle: "The man in black fled across the desert..."
+			description: ["For those times when the beasts get too close, or your ammo runs dry. "]
+			dependencies: ["52DFEA36FFFBCDD5"]
+			id: "3C6A4FF4F12DCAB2"
+			tasks: [{
+				id: "4E1995B3908BE0A1"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_revolver_bayonet"
+			}]
+			rewards: [{
+				id: "1EE1E0D6A82D9B90"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -9.0d
+			y: -4.0d
+			subtitle: "The wheel turns and the world moves on."
+			description: ["Heatsinks allow the Railgun to recharge faster for more rapid-fire destruction. "]
+			dependencies: ["69C4E9422B0C695A"]
+			id: "4AEF4EECF33AAD14"
+			tasks: [{
+				id: "1722BA00297D1CD5"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_railgun_capacitors"
+			}]
+			rewards: [{
+				id: "388801C14A6A9916"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -11.0d
+			y: -4.0d
+			subtitle: "All things serve the beam."
+			description: ["The Middle Mouse button will enable the scope when installed and scrolling will adjust the magnification level. Great for picking off a target at a distance. "]
+			dependencies: ["69C4E9422B0C695A"]
+			id: "375C292687CF5637"
+			tasks: [{
+				id: "258019F9C44FA366"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_railgun_scope"
+			}]
+			rewards: [{
+				id: "231932437B4E9839"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.0d
+			y: -3.5d
+			subtitle: "Pain is a tool, after all. Sometimes it's the best tool."
+			description: [
+				"The Railgun, mighty as it is, holds relatively little FE. A Capacitor Backpack is an excellent way to extend the battery life."
+				""
+				"While it can go in a Curios slot, the Capacitor Backpack is perhaps better combined with a chest armor in a crafting grid."
+			]
+			dependencies: ["69C4E9422B0C695A"]
+			id: "149EC37E85BC39BB"
+			tasks: [{
+				id: "0946F869835964E3"
+				type: "item"
+				item: {
+					id: "immersiveengineering:powerpack"
+					Count: 1b
+					tag: {
+						energy: 100000
+					}
+				}
+			}]
+		}
+		{
+			title: "Ammo Cartridges"
+			x: -1.0d
+			y: -3.5d
+			subtitle: "...and the gunslinger followed."
+			description: [
+				"Casull Cartridges are the cheapest, most basic ammo; however, they still pack quite a punch. "
+				""
+				"Armor-Piercing Cartridges will quickly dispatch a well armored foe and Silver Cartridges are potent against the Undead. "
+				""
+				"For controlling large crowds, consider something a little more potent, like Buckshot or Dragon’s Breath Cartridges which fire a short-range conical burst. And if your aim is simply terrible, consider the Wolfpack Cartridge, which bursts on impact launching homing shrapnel in all directions, quickly dispatching anything they encounter. "
+				""
+				"Explore your options and read more in the Engineer’s Manual."
+			]
+			dependencies: ["52DFEA36FFFBCDD5"]
+			id: "7EA4E88D7230D94D"
+			tasks: [{
+				id: "3E8BA9F57E3C4452"
+				type: "item"
+				title: "Ammo Cartridges"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "immersiveengineering:casull"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:armor_piercing"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:buckshot"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:he"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:silver"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:dragons_breath"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:potion"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:flare"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:firework"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:homing"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:wolfpack"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 24L
+			}]
+			rewards: [{
+				id: "673B7ECE0BDE897E"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			subtitle: "A Clean Job"
+			description: ["An exceptional cutting implement that can cleanly carve out blocks of Stone, Ice, or Glass, effectively acting as a tool with Silk Touch. "]
+			dependencies: ["1487479CFA348530"]
+			id: "650F8ED52289B8AC"
+			tasks: [{
+				id: "07CF70C497212059"
+				type: "item"
+				item: {
+					id: "immersiveengineering:rockcutter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "541EA45AC0E8D7CF"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -7.0d
+			y: -1.0d
+			subtitle: "Don't Burst It"
+			description: ["The Mining Drill’s engine is not normally capable of operating under water. However, with the addition of a Pressurized Air Tank it can be kept running at full speed."]
+			dependencies: ["0A476C6332EB6477"]
+			id: "322F7E60078AC6F6"
+			tasks: [{
+				id: "4D1F4C0716B593B9"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_waterproof"
+			}]
+			rewards: [{
+				id: "5691DD3285ADB605"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -8.0d
+			y: -1.5d
+			subtitle: "Diggy Diggy Hole"
+			description: [
+				"Drill heads do wear out over time, though they can be removed from the drill and repaired in an Anvil. "
+				""
+				"Upgrading to a steel drill head not only increases the durability, but also allows mining Obsidian without wasting your precious shiny blue rocks. "
+			]
+			dependencies: ["0A476C6332EB6477"]
+			id: "13AA0065B8167EF4"
+			tasks: [{
+				id: "6A6D387D221FEC38"
+				type: "item"
+				item: "immersiveengineering:drillhead_steel"
+			}]
+			rewards: [{
+				id: "39097B6C7B38506A"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.5d
+			description: ["Adding some lubricant to a Drill or Saw destined for rugged digging and cutting tough material can greatly extend the lifetime of the tool. "]
+			dependencies: [
+				"5B3CC19ED97DFA26"
+				"716019716B2915F9"
+			]
+			dependency_requirement: "one_completed"
+			id: "546222019B6470BA"
+			tasks: [{
+				id: "4A295A3D115FE1F2"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_lube"
+			}]
+			rewards: [{
+				id: "713B059CB5DBEBCA"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: -0.5d
+			description: ["An extended Fuel tank that works in the Mining Drill, Buzzsaw, and even the Chemical Thrower. Well worth the cost."]
+			dependencies: [
+				"716019716B2915F9"
+				"672C630D81BD8E94"
+				"5B3CC19ED97DFA26"
+			]
+			dependency_requirement: "one_completed"
+			id: "7B384B41FCA9F17A"
+			tasks: [{
+				id: "5761B4339C81361F"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_capacity"
+			}]
+			rewards: [{
+				id: "60482427F2F16E9B"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -8.0d
+			y: -0.5d
+			description: ["Up to three of these Additional Augers may be added to a drill, each one speeding up the mining speed and even improving the damage dealt to anything unlucky enough to be standing in front of it. "]
+			dependencies: ["0A476C6332EB6477"]
+			id: "1A0053922B30B033"
+			tasks: [{
+				id: "762650E500C59FAF"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_damage"
+			}]
+			rewards: [{
+				id: "1D732032B9C86AB5"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			subtitle: "So Wait, Instead of Arrows..."
+			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to spot between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "]
+			dependencies: ["1487479CFA348530"]
+			id: "283516E560D1D20E"
+			tasks: [{
+				id: "59195DC2ADAA355B"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_buzzsaw_spareblades"
+			}]
+			rewards: [{
+				id: "36142E0E21AC2474"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.5d
+			subtitle: "So anyway, I started blasting."
+			description: [
+				"Ever wanted a flame thrower? Now’s your chance. Fill this with any flammable fuel, ignite the pilot light with Sneak + Right Click, and start spraying. "
+				""
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			]
+			dependencies: ["0000000000000012"]
+			id: "4498690DCA41A562"
+			tasks: [{
+				id: "672C630D81BD8E94"
+				type: "item"
+				item: {
+					id: "immersiveengineering:chemthrower"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 4
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "2DBC321E9D2AE461"
+				type: "item"
+				title: "Focused Nozzle"
+				item: "immersiveengineering:toolupgrade_chemthrower_focus"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -12.0d
+			subtitle: "Head in the Clouds"
+			description: [
+				"Ever wish you could start building a platform in the sky without having to nerd-pole your way up there? "
+				""
+				"Well, if you can't fly you may still need that nerd-pole. If you can, however, grab a bottle of cloud to act as a starting point for the platform. "
+				""
+				"Using a glass bottle between y126 and y132 will get you a Bottled Cloud. Right-Clicking the air again will place the cloud, allowing other blocks to be placed against it. It will disappear after a few moments, but will go back into your bottle on it's own if another block is placed against it in time. "
+			]
+			id: "322E9DDDEE1623E3"
+			tasks: [{
+				id: "2AF9B5D1BACA4A59"
+				type: "item"
+				item: "quark:bottled_cloud"
+			}]
+			rewards: [{
+				id: "43188DFF0C8F9DDC"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.5d
+			y: -13.0d
+			subtitle: "Just to Spend it With You..."
+			description: [
+				"Save every day like a treasure and spend them on whatever you like."
+				""
+				"Sneak Right-Click most machines to spend stored time on them, speeding them up briefly. "
+			]
+			dependencies: ["000000000000046D"]
+			id: "7AE1180EFAF22376"
+			tasks: [{
+				id: "4D29649F3F51D7D3"
+				type: "item"
+				item: {
+					id: "tiab:timeinabottle"
+					Count: 1b
+					tag: {
+						timeData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "4FDD99B9F9F65B1D"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: -11.5d
+			description: [
+				"A mighty weapon indeed which may only be wielded by those it finds worthy."
+				""
+				"And how does it find you?"
+			]
+			dependencies: ["3EA3751B482189B7"]
+			id: "1C861BDF9266B721"
+			tasks: [{
+				id: "14ED2E5760DB70B5"
+				type: "item"
+				item: "mythicbotany:mjoellnir"
+			}]
+			rewards: [{
+				id: "196A0F3B1A3EB04F"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Arcane Arsenal"
+			x: -1.0d
+			y: -14.0d
+			description: ["Powerful tools which may be enchanted with spells to cast upon use. A must have for any aspiring magician."]
+			dependencies: ["00000000000003D7"]
+			id: "4A1C227E044B02D6"
+			tasks: [
+				{
+					id: "0733FFA5BAB24544"
+					type: "item"
+					item: "ars_nouveau:spell_bow"
+				}
+				{
+					id: "25A8965A5E3C4458"
+					type: "item"
+					item: {
+						id: "ars_nouveau:enchanters_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4CDEBD46316A28AF"
+					type: "item"
+					item: "ars_nouveau:wand"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -14.0d
+			subtitle: "The lights are on, but nobody's home"
+			description: [
+				"Playing on a server? Consider making some Clockout Blocks to disable machines while logged out. "
+				""
+				"The Clockout Block emits a redstone signal when the player who placed it is online. So simply toss one down and set up your automations to run only with redstone. "
+			]
+			dependencies: ["000000000000046F"]
+			id: "03CE9A1AE5E2538D"
+			tasks: [{
+				id: "21050326FB2FBF70"
+				type: "item"
+				item: "clockout:clockout_block"
+			}]
+			rewards: [{
+				id: "1A05BF41EEF353BA"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.5d
+			y: -12.0d
+			subtitle: "Pym Powered"
+			description: [
+				"Smaller, but equally strong? Impossible!"
+				""
+				"Until now. "
+				""
+				"With Shrink’s Personal Shrinking Device in hand, shrink to the tiniest of sizes and slip through cracks even a mouse would scoff at. "
+				""
+				"● Right Click to open the GUI and select a size."
+				"● Sneak + Right Click to shrink yourself."
+				"● Left Click an entity to shrink it. "
+				"● Right Click a shrunken entity with a Glass Bottle to pick it up. "
+				""
+				"Keep a villager in your pocket for good luck!"
+			]
+			dependencies: ["00000000000003FF"]
+			min_width: 300
+			id: "2A74822BE970E9D4"
+			tasks: [{
+				id: "417D1AA02B005770"
+				type: "item"
+				item: {
+					id: "shrink:shrinking_device"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "39498CF292AB8B53"
+					type: "item"
+					title: "Glass Bottle"
+					item: "minecraft:glass_bottle"
+					count: 8
+				}
+				{
+					id: "00012916E3BF0CC7"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -11.5d
+			shape: "gear"
+			description: [
+				"Always searching for the right tool for the job? Is this one in Metric? Imperial? And where did that flat head screwdriver get off to anyways?"
+				""
+				"Introducing the Morphing Tool; the one tool that always knows what to do. Simply point it at a machine and watch it slip into the proper shape based on the mod the block is from."
+				""
+				"Need a specific wrench to rotate those fussy stairs you’re installing? Sneak and scroll wheel to choose from any of the loaded tools. And if you’d rather work with a tool separately, sneak and throw to eject that tool from the Morphing Tool. Getting it back in is as simple as crafting the two together again."
+				""
+				"Be sure to check out the special EZ-Charge recipe which, for the minimal cost of a few gears and redstone, pre-charges your wrench with a variety of tools from common mods to help get you started. "
+			]
+			id: "7EDFBD3AEAC8B587"
+			tasks: [{
+				id: "0D382E19423F7F14"
+				type: "item"
+				item: "morphtool:tool"
+			}]
+			rewards: [{
+				id: "2826CA3ECD3974D4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Iron Jetpacks"
+			x: -5.5d
+			y: -14.5d
+			subtitle: "Hang On, This Isn't Iron"
+			description: [
+				"These jetpacks are tier-based utility items that allow you to fly, provided they contain enough RF, which can be inserted into them via some sort of charger."
+				""
+				"In Enigmatica 6, the jetpacks are crafted using Thermal Series and Powah items in particular. This first one, the Hardened Jetpack, is made using a Thermal Hazmat Suit and various Hardened-tier Powah machines and materials."
+			]
+			dependencies: ["000000000000019B"]
+			id: "32543CB763F99E26"
+			tasks: [{
+				id: "5E0566EA6AC167A7"
+				type: "item"
+				item: {
+					id: "ironjetpacks:hardened_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "1CB81CA01A66EFF3"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				player_command: false
+			}]
+		}
+		{
+			title: "Still Not Iron"
+			x: -4.5d
+			y: -15.5d
+			subtitle: "Close enough"
+			description: ["The second jetpack is mainly made out of Invar, an alloy created using Nickel and Iron, plus your old Hardened Jetpack."]
+			dependencies: ["32543CB763F99E26"]
+			id: "517AFDCCF9B4F556"
+			tasks: [{
+				id: "6CC77BA53377140C"
+				type: "item"
+				item: {
+					id: "ironjetpacks:invar_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "2A08858F195AB557"
+				type: "command"
+				title: "Epic Thermal Series Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "It's Literally On Fire"
+			x: -6.5d
+			y: -15.5d
+			subtitle: "Ironic how none of these are actually iron"
+			description: ["The third tier of jetpacks is made solely using items from Powah's Blazing tier (plus the Invar Jetpack)."]
+			dependencies: ["517AFDCCF9B4F556"]
+			id: "3DE9AC6CE13B591B"
+			tasks: [{
+				id: "55F87954F5A7F169"
+				type: "item"
+				item: {
+					id: "ironjetpacks:blazing_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "3CF8EC622824974F"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				player_command: false
+			}]
+		}
+		{
+			title: "No Signal"
+			x: -4.5d
+			y: -16.5d
+			subtitle: "No, wait-it's actually too much signal."
+			description: ["The fourth jetpack is made out of signalum, an alloy of silver and redstone that conducts electricity very well. It also, of course, requires a Blazing Jetpack."]
+			dependencies: ["3DE9AC6CE13B591B"]
+			id: "7A685C5CF8B6792E"
+			tasks: [{
+				id: "3AC7C02A3C65D157"
+				type: "item"
+				item: {
+					id: "ironjetpacks:signalum_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "2F7341AFE1379D57"
+				type: "command"
+				title: "Epic Thermal Series Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Powered by Energy Drinks"
+			x: -6.5d
+			y: -16.5d
+			subtitle: "...what even is this made of?!"
+			description: ["The fifth jetpack, Niotic, is created using materials from Powah's Niotic tier and the previous jetpack tier."]
+			dependencies: ["7A685C5CF8B6792E"]
+			id: "53232F72A2133D14"
+			tasks: [{
+				id: "377EE5AC5053521D"
+				type: "item"
+				item: {
+					id: "ironjetpacks:niotic_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "1C0DB38F8304E24B"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				player_command: false
+			}]
+		}
+		{
+			title: "You Lumatic"
+			x: -4.5d
+			y: -17.5d
+			subtitle: "This is not even anywhere NEAR iron"
+			description: ["Lumium is an alloy of tin, silver and glowstone."]
+			dependencies: ["53232F72A2133D14"]
+			id: "64D05D57CD3BD048"
+			tasks: [{
+				id: "7632CE1603104C5B"
+				type: "item"
+				item: {
+					id: "ironjetpacks:lumium_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "1A8129ADCF741705"
+				type: "command"
+				title: "Epic Thermal Series Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Rising Spirit"
+			x: -6.5d
+			y: -17.5d
+			subtitle: "Fine, fine, I'll stop"
+			description: ["The Spirited Jetpack is made using Powah's Spirited tier."]
+			dependencies: ["64D05D57CD3BD048"]
+			id: "78FB2B0A5D565203"
+			tasks: [{
+				id: "76E9010CA6A45910"
+				type: "item"
+				item: {
+					id: "ironjetpacks:spirited_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "44AEA9FA58AF9913"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				player_command: false
+			}]
+		}
+		{
+			title: "Up Goer Five"
+			x: -5.5d
+			y: -20.5d
+			shape: "gear"
+			subtitle: "Crash Bandicoot's Favourite Toy"
+			description: ["The final tier of jetpack is created with Nitro-tier Powah items. Have fun flying! No, I don't want a ride, you keep your supersonic jetpack to yourself, thanks."]
+			dependencies: ["0430DED82424A380"]
+			size: 2.0d
+			id: "4A1D635E224616E5"
+			tasks: [{
+				id: "1E21A04D7897170A"
+				type: "item"
+				item: {
+					id: "ironjetpacks:nitro_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "4C390C7FDB3F39FD"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				player_command: false
+			}]
+		}
+		{
+			title: "Basically Teleportation"
+			x: -5.5d
+			y: -18.5d
+			subtitle: "So this is how the Endermen go long distances"
+			description: ["Don't ask how it works, just trust that it does."]
+			dependencies: ["78FB2B0A5D565203"]
+			id: "0430DED82424A380"
+			tasks: [{
+				id: "3AD4174B377A96BE"
+				type: "item"
+				item: {
+					id: "ironjetpacks:enderium_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "33DDF92F40291EBA"
+				type: "command"
+				title: "Epic Thermal Series Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				player_command: false
+			}]
+		}
+	]
+}

@@ -1,0 +1,105 @@
+
+#General settings
+[general]
+	#Dimensions where hostile mobs will not spawn. Ex: ["minecraft:overworld", "undergarden:undergarden"]. . Run /forge dimensions for a list.
+	dimensionBlacklist = ["compactmachines:compact_world", "atum:atum", "mythicbotany:alfheim", "undergarden:undergarden"]
+	#Spawn Arcane Ore in the world
+	genOre = false
+	#Rate of tree spawn per chunk
+	#Range: 0.0 ~ 1.0
+	genTrees = 0.002
+	#Spawn Mana Berry Bushes in the world
+	genBerries = true
+	#Spawn a book in the players inventory on login
+	spawnBook = false
+	#How often Carbuncles spawn
+	#Range: 0 ~ 100
+	carbuncleWeight = 5
+	#How often Sylphs spawn
+	#Range: 0 ~ 100
+	sylphWeight = 5
+	#How often Drygmys spawn
+	#Range: 0 ~ 100
+	drygmyWeight = 3
+	#How much mana sylphs consume per generation
+	#Range: 0 ~ 10000
+	sylphManaCost = 250
+	#How often Wilden Guardians spawn
+	#Range: 0 ~ 200
+	wguardianWeight = 8
+	#How often Wilden Stalkers spawn
+	#Range: 0 ~ 200
+	wstalkerWeight = 8
+	#How often Wilden Hunter spawn
+	#Range: 0 ~ 200
+	whunterWeight = 8
+	#Should the Wilden Hunter attack animals?
+	hunterHuntsAnimals = false
+	#Should the Wilden Stalker attack animals?
+	stalkerHuntsAnimals = false
+	#Should the Wilden Defender attack animals?
+	defenderHuntsAnimals = false
+	#Archwood forest spawn weight
+	#Range: > 0
+	archwoodForest = 3
+	#Crystallizer output item. Do not use a wrong ID!
+	crystallizer_output = "emendatusenigmatica:arcane_gem"
+
+[drygmy_production]
+	#How much mana drygmys consume per generation
+	#Range: 0 ~ 10000
+	drygmyManaCost = 1000
+	#How many channels must occur before a drygmy produces loot
+	#Range: 0 ~ 300
+	drygmyMaxProgress = 20
+	#Bonus number of items a drygmy produces per unique mob
+	#Range: 0 ~ 300
+	drygmyUniqueBonus = 2
+	#Base number of items a drygmy produces per cycle before bonuses.
+	#Range: > -2147483648
+	drygmyBaseItems = 1
+	#Max Bonus number of items a drygmy produces from nearby entities. Each entity equals 1 item.
+	#Range: 0 ~ 300
+	drygmyQuantityCap = 5
+
+#Mana
+[mana]
+	#Base mana regen in seconds
+	#Range: > 0
+	baseRegen = 5
+	#Base max mana
+	#Range: > 0
+	baseMax = 100
+	#How often max and regen will be calculated, in ticks. NOTE: Having the base mana regen AT LEAST this value is recommended.
+	#Range: 1 ~ 20
+	updateInterval = 5
+	#Max mana bonus per glyph
+	#Range: > 0
+	glyphmax = 15
+	#Max mana bonus for tier of book
+	#Range: > 0
+	tierMax = 50
+	#Mana Boost value per level
+	#Range: > 0
+	manaBoost = 25
+	#(enchantment) Mana regen per second per level
+	#Range: > 0
+	manaRegenEnchantment = 2
+	#Regen bonus per glyph
+	#Range: 0.0 ~ 2.147483647E9
+	glyphRegen = 0.33
+	#Regen bonus per potion level
+	#Range: > 0
+	potionRegen = 10
+
+[Spells]
+	#Enforce augment cap on casting? Turn this off if you are a pack maker and want to create more powerful items than players.
+	enforceCapOnCast = true
+	#Enforce glyph per spell limit on casting? Turn this off if you are a pack maker and want to create more powerful items than players.
+	enforceGlyphLimitOnCast = true
+
+#Items
+[item]
+	#Spawn Caster Tomes in Dungeon Loot?
+	spawnTomes = true
+

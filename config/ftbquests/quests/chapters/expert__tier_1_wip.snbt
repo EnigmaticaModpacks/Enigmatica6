@@ -1,0 +1,889 @@
+{
+	id: "0000000000000B66"
+	group: "34B7FB260B6AEB81"
+	order_index: 1
+	filename: "expert__tier_1_wip"
+	title: "Tech - Mechanical Mayhem"
+	icon: "create:large_cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Crude Alloy \"Furnace\""
+			x: 3.0d
+			y: 0.0d
+			description: [
+				"Let’s kick this off with a bang, shall we?"
+				""
+				"All around, there are ruins. Monsters roam the lands and simple village folk hide in their huts at night, afraid to step out of their dim lights. But there was more here once upon a time. "
+				""
+				"Explore the lands to locate any form of explosive using all resources available. Once found, drop some materials on the ground and blow them up. The resulting explosion will fuse them into new compounds."
+				""
+				"Note: A single explosion has enough energy to transform large batches of materials. "
+			]
+			dependencies: ["1D574D041D9164AD"]
+			id: "6AADF6A0814C29D4"
+			tasks: [
+				{
+					id: "17152C3290B7D560"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+				{
+					id: "7D6B5C1ED8564A15"
+					type: "item"
+					item: "emendatusenigmatica:invar_dust"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			description: [
+				"It’s crude, but it works."
+				""
+				"Bang out some sheets and gears to begin building up a basic energy infrastructure and machinery. "
+			]
+			dependencies: ["1D574D041D9164AD"]
+			id: "2357CCF3A0758B0C"
+			tasks: [
+				{
+					id: "10768509F8F36CE9"
+					type: "item"
+					item: "thermal:dynamo_stirling"
+				}
+				{
+					id: "1A9617FC53ED59BE"
+					type: "item"
+					item: {
+						id: "emendatusenigmatica:enigmatic_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "create:mechanical_mixer"
+			x: 2.0d
+			y: 2.5d
+			shape: "diamond"
+			description: [
+				""
+				"The heat is on! No, really you left the stove on. "
+				""
+				"Wait, is that heating element looking at me?"
+				""
+				"Brave the Nether and come back with whatever treasures there are to find. Maybe stop and pick up a friendly Blaze or two along the way. "
+			]
+			dependencies: ["10890B170755A6D5"]
+			dependency_requirement: "one_started"
+			optional: true
+			id: "4399B01214307E59"
+			tasks: [
+				{
+					id: "6F436217C7C8E2C0"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "0D72E1875F30E74C"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+				{
+					id: "7B79FCC58E931447"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+		}
+		{
+			title: "Pressing Efficiency"
+			x: 1.0d
+			y: 2.5d
+			shape: "diamond"
+			description: [
+				"Those rough plates you’ve been hammering out up till now are… well… how to put this nicely? Sufficient."
+				""
+				"Who am I kidding? They’re terrible. Look at all that scrap left behind? And there’s no uniformity, what-so-ever. "
+			]
+			dependencies: ["10890B170755A6D5"]
+			optional: true
+			id: "5647CE9AC8F56F4D"
+			tasks: [{
+				id: "2A2571F7DFC9C4F4"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			title: "Basic Rotation Acquired!"
+			x: 1.5d
+			y: 1.5d
+			description: ["A little renewable power goes a long way with so few resources at hand. Harness the wind, the water, anything it takes to get some basic machinery stood up. We crawl before we walk. "]
+			dependencies: ["6AADF6A0814C29D4"]
+			id: "10890B170755A6D5"
+			tasks: [{
+				id: "6F7E34D112D43E07"
+				type: "item"
+				title: "Basic Rotation Generating Device"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:hand_crank"
+								Count: 1b
+							}
+							{
+								id: "create:water_wheel"
+								Count: 1b
+							}
+							{
+								id: "create:encased_fan"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			shape: "diamond"
+			description: ["Brass in hand, a number of new possibilities become possible. Let’s see where this leads…"]
+			dependencies: ["4399B01214307E59"]
+			id: "6F3E31687E06AA19"
+			tasks: [{
+				id: "2B77C401C033F97D"
+				type: "item"
+				item: "emendatusenigmatica:brass_ingot"
+			}]
+		}
+		{
+			title: "Bigger Than You Thought"
+			x: 1.5d
+			y: 4.0d
+			description: [
+				"Let those puppies drop."
+				""
+				"Build up a big brass crafter and get your hands on a massive pair of crushing wheels.  "
+			]
+			dependencies: ["6F3E31687E06AA19"]
+			id: "1FF1E4E11F6A5745"
+			tasks: [
+				{
+					id: "188613747DBDF702"
+					type: "item"
+					item: "create:mechanical_crafter"
+					count: 21L
+				}
+				{
+					id: "65DFBB37E7D75590"
+					type: "item"
+					item: "create:crushing_wheel"
+					count: 2L
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			description: [
+				"A touch of clay, a bit of fine ground basalt, the powdered remnants of a thousand souls…"
+				""
+				"All in a day’s work!"
+			]
+			dependencies: ["1FF1E4E11F6A5745"]
+			id: "1AA1AAE2DA37A44F"
+			tasks: [
+				{
+					id: "5470B75D9A088C52"
+					type: "item"
+					item: "create:cinder_flour"
+				}
+				{
+					id: "491EEC5AE95DDAE0"
+					type: "item"
+					item: "kubejs:basalt_powder"
+				}
+				{
+					id: "2FA897D7047480DE"
+					type: "item"
+					item: "minecraft:clay_ball"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 6.5d
+			shape: "octagon"
+			description: [
+				"An assembly line will be required to properly set these bricks. "
+				""
+				"Do note that Sequenced Assembly can be automated easily enough by performing each crafting step on a moving belt. Items will stop at the appropriate step to be processed. "
+				""
+				"You can choose to make a Coke Oven with 27 Coke Bricks, or a Pyrolyzer with 17 Coke Bricks."
+			]
+			dependencies: ["1AA1AAE2DA37A44F"]
+			id: "737FEF84207E1AD5"
+			tasks: [{
+				id: "45F596F7AFA8BFFF"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 17L
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			description: [
+				"A ready supply of liquid fuel will soon be quite useful. In the meantime, some byproducts are needed instead. "
+				""
+				"Build a machine to begin producing Tar. Be sure to keep that fuel handy!"
+			]
+			dependencies: ["4A45210857A2FE10"]
+			id: "155D0B93052756E8"
+			tasks: [{
+				id: "11D4AFF923BA438E"
+				type: "item"
+				title: "Tar Producing Machine"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "thermal:machine_refinery"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_pyrolyzer"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_centrifuge"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 8.0d
+			shape: "diamond"
+			description: [
+				"Let the ingots hit the floor!"
+				""
+				"Drop the gathered materials and get ready to blast them once more. Working in batches is a great way to use TNT efficiently, just be sure to count your inputs correctly or materials may be lost. "
+				""
+				"Watch out! These come out piping hot."
+			]
+			dependencies: [
+				"62895312DA739FBF"
+				"1A3727BA37EA4F6D"
+				"354FE8210390E793"
+			]
+			id: "3DD1F984ED880148"
+			tasks: [{
+				id: "0CDA65B3EB419AE4"
+				type: "item"
+				title: "Superheated Steel"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "kubejs:superheated_steel_ingot"
+								Count: 1b
+							}
+							{
+								id: "kubejs:superheated_steel_block"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 9.0d
+			description: ["Now to squeeze it before rapidly cooling in a bath of water. "]
+			dependencies: ["3DD1F984ED880148"]
+			id: "00EF0CAB3FB28938"
+			tasks: [{
+				id: "1B2F44B4F78173E4"
+				type: "item"
+				title: "Hot Compressed Iron"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "kubejs:hot_compressed_iron_ingot"
+								Count: 1b
+							}
+							{
+								id: "kubejs:hot_compressed_iron_block"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 10.0d
+			shape: "octagon"
+			description: ["With the advent of Compressed Iron comes access to better manufacturing techniques and eventually advanced technology not seen in these parts for some time. "]
+			dependencies: ["00EF0CAB3FB28938"]
+			id: "60DF22034242502E"
+			tasks: [{
+				id: "58F6F9B04F87F83E"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				count: 16L
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			description: ["A better means of alloying is going to be crucial as better materials are required for more refined machines. We can’t hope to succeed by simply blowing everything to pieces. Can we?"]
+			dependencies: [
+				"2357CCF3A0758B0C"
+				"6AADF6A0814C29D4"
+			]
+			id: "508E396542F84E94"
+			tasks: [{
+				id: "48D3578471D55A69"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			description: ["Craft a Magma crucible to pave the way towards tool tinkering and advanced metallurgy. "]
+			dependencies: ["508E396542F84E94"]
+			id: "15C239A8575142B1"
+			tasks: [{
+				id: "1FF36C55EC7E0648"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+		}
+		{
+			title: "Latex from Trees"
+			icon: "minecraft:acacia_sapling"
+			x: 4.0d
+			y: 2.5d
+			shape: "diamond"
+			description: [
+				"The trek for a reliable source of Latex will take you from the deepest jungles to the depths of the seas."
+				""
+				"Locate some trees suitable for Latex extraction and take a dive off the coast to retrieve some coral. Be gentle, as these precious creatures are delicate and require extra care when harvesting them. Seals have also been known to gift corals to those who offer them gifts in returns."
+			]
+			dependencies: ["508E396542F84E94"]
+			id: "4082766981B24A44"
+			tasks: [
+				{
+					id: "671E424988B48284"
+					type: "item"
+					item: "thermal:device_tree_extractor"
+				}
+				{
+					id: "06ECC057A46741D7"
+					type: "item"
+					title: "Latex Producing Trees"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "byg:baobab_log"
+									Count: 1b
+								}
+								{
+									id: "byg:rainbow_eucalyptus_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:jungle_log"
+									Count: 1b
+								}
+								{
+									id: "byg:mahogany_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:acacia_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:acacia_sapling"
+									Count: 1b
+								}
+								{
+									id: "byg:baobab_sapling"
+									Count: 1b
+								}
+								{
+									id: "byg:rainbow_eucalyptus_sapling"
+									Count: 1b
+								}
+								{
+									id: "byg:mahogany_sapling"
+									Count: 1b
+								}
+								{
+									id: "minecraft:jungle_sapling"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			shape: "diamond"
+			description: [
+				"Like an espresso machine for rocks! Sounds horrible!"
+				""
+				"Though useful for filling buckets for other processing, the Fluid Encapsulator is also capable of attaining high enough pressures to infuse industrial materials like concrete, rubber, and reinforced stone. "
+			]
+			dependencies: [
+				"4082766981B24A44"
+				"4A5B10B9E4F2440D"
+			]
+			dependency_requirement: "one_completed"
+			id: "63B1F7BACD7CCD5D"
+			tasks: [{
+				id: "035C29A43AEA51CB"
+				type: "item"
+				item: "thermal:machine_bottler"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			shape: "diamond"
+			description: [
+				"The sulfur needed to cure liquid Latex into workable rubber may be difficult to come by, indeed."
+				""
+				"Extracting it from ores will mean gentler harvesting methods and mechanical processing to recover enough to be of any use. "
+			]
+			dependencies: ["63B1F7BACD7CCD5D"]
+			id: "0616453B4BBEFB11"
+			tasks: [{
+				id: "75BAF49D78BF95C0"
+				type: "item"
+				item: "industrialforegoing:dryrubber"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.0d
+			dependencies: ["2803A0750EE32FBC"]
+			optional: true
+			id: "6BAC6A8BB59E458E"
+			tasks: [
+				{
+					id: "4635A9AA2AFB35C4"
+					type: "item"
+					title: "xNet Cables"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "xnet:connector_red"
+									Count: 1b
+								}
+								{
+									id: "xnet:connector_green"
+									Count: 1b
+								}
+								{
+									id: "xnet:connector_blue"
+									Count: 1b
+								}
+								{
+									id: "xnet:connector_yellow"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "629C5937D3BF4203"
+					type: "item"
+					title: "xNet Cables"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "xnet:netcable_red"
+									Count: 1b
+								}
+								{
+									id: "xnet:netcable_green"
+									Count: 1b
+								}
+								{
+									id: "xnet:netcable_blue"
+									Count: 1b
+								}
+								{
+									id: "xnet:netcable_yellow"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 4.0d
+			dependencies: ["6BAC6A8BB59E458E"]
+			optional: true
+			id: "5FD0550A79C3F850"
+			tasks: [{
+				id: "7F89F46E4234C872"
+				type: "item"
+				item: "xnet:controller"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			description: [
+				"Put down that hopper. No, down. Just… just leave it. "
+				""
+				"Better."
+				""
+				"Now, listen up. Nobody’s got time to run around all day moving bits and bobs from place to place. Invest in some pipes and they’ll make life much easier. "
+			]
+			dependencies: ["6AADF6A0814C29D4"]
+			optional: true
+			id: "514A0FC52ADBE1DD"
+			tasks: [
+				{
+					id: "63BE4DE5D52BA7FD"
+					type: "item"
+					item: "prettypipes:pipe"
+					count: 8L
+				}
+				{
+					id: "7F749FB1AD173412"
+					type: "item"
+					item: "prettypipes:low_extraction_module"
+				}
+				{
+					id: "42285973A3B8F1B0"
+					type: "item"
+					item: "prettypipes:low_retrieval_module"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			shape: "hexagon"
+			description: [
+				"It may be held together with string and superglue, but a Crafting Terminal can allow central access to that big pile of crates over there. Even on demand auto crafting. "
+				""
+				"Doesn’t that sound nice?"
+			]
+			dependencies: ["514A0FC52ADBE1DD"]
+			optional: true
+			id: "4607CD4FC64387B3"
+			tasks: [{
+				id: "52DED6EEEEB4E244"
+				type: "item"
+				item: "prettypipes:crafting_terminal"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 9.5d
+			shape: "hexagon"
+			description: [
+				"Some like it hot. Real hot."
+				""
+				"Keep that steel up to temperature and infuse it with Molten Scorched Stone to begin working with high level Tinker’s materials. "
+			]
+			dependencies: ["3DD1F984ED880148"]
+			id: "720C5EDF3E3B37A6"
+			tasks: [{
+				id: "11608309A9D6E501"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			shape: "hexagon"
+			description: [
+				"A small amount of molten copper will be required to properly set the Smeltery’s heat control. "
+				""
+				"Melt some in a Magma Crucible and pour it over the Seared Heater."
+			]
+			dependencies: ["15C239A8575142B1"]
+			id: "1F777AA9D474D17C"
+			tasks: [
+				{
+					id: "1DD4546D37449EB3"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "3D1FA15C2CFF46C3"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+				{
+					id: "1831E181039C1FBA"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+			]
+		}
+		{
+			title: "Tech Progression Tier 1"
+			icon: "create:large_cogwheel"
+			x: 4.5d
+			y: -1.5d
+			shape: "rsquare"
+			dependencies: ["0000000000000FEB"]
+			hide: true
+			id: "1D574D041D9164AD"
+			tasks: [{
+				id: "1AFB699186CA1AAC"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			description: [
+				"So soft and… wait isn’t this made of slag?"
+				""
+				"Though available as a byproduct of other processing, slag can be obtained directly from gravel in a furnace in large quantities. "
+			]
+			dependencies: ["508E396542F84E94"]
+			id: "2803A0750EE32FBC"
+			tasks: [{
+				id: "64759DEEB6AF63CA"
+				type: "item"
+				title: "Rockwool"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "thermal:rockwool"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: [
+				"Travel by land can be dangerous with all these beasts roaming around. "
+				""
+				"A good boat is invaluable when out exploring for useful tools. Consider crafting one for fast travel across oceans and travelling deep inland on the many rivers that cross the land. "
+			]
+			dependencies: ["1D574D041D9164AD"]
+			id: "1348985516A60B72"
+			tasks: [{
+				id: "31BE7B445BC9FC71"
+				type: "item"
+				title: "Small Ships"
+				item: {
+					id: "itemfilters:id_regex"
+					Count: 1b
+					tag: {
+						value: "smallships:(?!\\w*(?:sail_item))"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 7.0d
+			shape: "diamond"
+			description: ["Keep it coming!"]
+			dependencies: ["155D0B93052756E8"]
+			id: "1A3727BA37EA4F6D"
+			tasks: [{
+				id: "56E32EE158B78F90"
+				type: "item"
+				item: "thermal:tar"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 7.5d
+			shape: "diamond"
+			description: [
+				"Clean, durable steel. Highly sought after for many engineering projects due to its strength and durability. "
+				""
+				"The process for making it is rather involved, making it rather expensive as well. So, it seems like the perfect thing to blow to smithereens. "
+			]
+			dependencies: ["737FEF84207E1AD5"]
+			id: "62895312DA739FBF"
+			tasks: [{
+				id: "01569489009ABEDD"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 7.5d
+			shape: "diamond"
+			description: ["Gather some obsidian to add to the mix. "]
+			dependencies: ["1A3727BA37EA4F6D"]
+			id: "354FE8210390E793"
+			tasks: [{
+				id: "7913A39A566A6943"
+				type: "item"
+				item: "minecraft:obsidian"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.0d
+			description: ["Cook that rubber down to make Cured Rubber, suitable for sealing Fluid Cells."]
+			dependencies: ["0616453B4BBEFB11"]
+			id: "4A45210857A2FE10"
+			tasks: [{
+				id: "5D74174DF5F08D7E"
+				type: "item"
+				item: {
+					id: "thermal:fluid_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								FluidName: "minecraft:empty"
+								Capacity: 32000
+								Tank: 0b
+								Amount: 0
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.5d
+			description: [
+				"Making decent circuitry is tough but kludging something basic together will do for now. "
+				""
+				"The Engineer’s Circuit Table will serve as the basis for early circuitry. It cannot be automated, but better options will present themselves later."
+			]
+			dependencies: ["4A45210857A2FE10"]
+			id: "555BF630B1097FE2"
+			tasks: [{
+				id: "1219720F5782198E"
+				type: "item"
+				item: "immersiveengineering:circuit_table"
+			}]
+		}
+		{
+			title: "Latex from Plants"
+			icon: "minecraft:dandelion"
+			x: 5.0d
+			y: 2.5d
+			shape: "diamond"
+			description: [
+				"Trees aren’t the only source of Latex, though extracting it from other plants requires a bit of time and effort."
+				""
+				"Grow some vines or dandelions to press down for Latex."
+			]
+			dependencies: ["508E396542F84E94"]
+			id: "4A5B10B9E4F2440D"
+			tasks: [
+				{
+					id: "60C1CC77F18EE9EF"
+					type: "item"
+					title: "Latex Producing Plants"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:dandelion"
+									Count: 1b
+								}
+								{
+									id: "minecraft:vine"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "30453B6039FD25BE"
+					type: "item"
+					item: "create:basin"
+				}
+				{
+					id: "5D78B207DC1EBB03"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "4689407918AFE07B"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			description: ["The boundless oceans hold untold treasures but reclaiming them can be a thankless task without proper machinery. A simple fishing barge can be used to dredge up these treasures while also providing an excellent source of nutrition."]
+			dependencies: ["2357CCF3A0758B0C"]
+			id: "31A1002C96D4DC64"
+			tasks: [
+				{
+					id: "3CA6E011378BC3A3"
+					type: "item"
+					item: "littlelogistics:tug"
+				}
+				{
+					id: "4027EC3C87869F9C"
+					type: "item"
+					item: "littlelogistics:fishing_barge"
+				}
+			]
+		}
+	]
+}

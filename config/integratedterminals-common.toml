@@ -1,0 +1,45 @@
+
+[general]
+
+	[general.general]
+		#The base energy usage for the crafting terminal.
+		terminalCraftingBaseConsumption = 1
+		#The base energy usage for the storage terminal.
+		terminalStorageBaseConsumption = 2
+		#If shift-clicking on the crafting terminal's crafting result slot should only produce a single result.
+		shiftClickCraftingResultLimit = false
+		#If the search box and button states should be synchronized between the item storage and crafting tabs.
+		syncItemStorageAndCraftingTabStates = true
+
+[core]
+
+	[core.general]
+		#If the crafting planners can work on separate thread.
+		craftingPlannerEnableMultithreading = true
+		#The number of threads that the crafting plan calculator can use.
+		craftingPlannerThreads = 2
+		#The maximum number of terminal storage instances that can be sent in a single packet. Reduce this when you have packet overflows.
+		terminalStoragePacketMaxInstances = 1024
+		#If an anonymous mod startup analytics request may be sent to our analytics service.
+		analytics = true
+		#If the version checker should be enabled.
+		versionChecker = false
+
+[machine]
+
+	[machine.general]
+		#The number of items that should be selected when clicking on energy in the storage terminal.
+		guiStorageEnergyInitialQuantity = 100000
+		#The number of items that should be selected when clicking on an item in the storage terminal.
+		guiStorageItemInitialQuantity = 64
+		#The number of items that should be removed when right-clicking when energy is selected in the storage terminal.
+		guiStorageEnergyIncrementalQuantity = 1000
+		#The number of items that should be removed when right-clicking when a fluid is selected in the storage terminal.
+		guiStorageFluidIncrementalQuantity = 1000
+		#The update frequency in milliseconds for the crafting jobs gui.
+		guiTerminalCraftingJobsUpdateFrequency = 1000
+		#The number of items that should be removed when right-clicking when an item is selected in the storage terminal.
+		guiStorageItemIncrementalQuantity = 1
+		#The number of items that should be selected when clicking on a fluid in the storage terminal.
+		guiStorageFluidInitialQuantity = 100000
+

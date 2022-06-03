@@ -1,0 +1,17 @@
+{
+    "name" : "bronze",
+    "hunger": 3,
+    "honeyColor": "#d38c53",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:resistance",
+        "duration": 2400,
+        "strength": 1,
+        "chance": 1
+      }
+    ]
+  }

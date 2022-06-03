@@ -1,0 +1,147 @@
+{
+  // Whether the alfheim dimension is enabled. When this is set to false, you'll still be able to use
+  // the mead of kvasir as usual but the portal to alfheim will not work.
+  "enableAlfheim": true,
+  
+  // Whether to replace the recipe for the Gaia Pylon with a recipe that requires Alfsteel.
+  "replaceGaiaRecipe": true,
+  
+  // Whether rituals and infusions that are cancelled will drop solidified mana that can be used to get the mana back.
+  "solidified_mana": true,
+  
+  "alftools": {
+  
+    // Jump boost modifier for the alfsteel boots
+    // Minimum: 0.0
+    "jump_modifier": 0.025,
+    
+    // Knockback resistance modifier for the alfsteel chestplate
+    // Minimum: 0.0
+    "knockback_resistance_modifier": 1.0,
+    
+    // Reach distance modifier for the alfsteel helmet
+    // Minimum: 0.0
+    "reach_modifier": 2.0,
+    
+    // Speed modifier for the alfsteel leggings
+    // Minimum: 0.0
+    "speed_modifier": 0.05
+  },
+  
+  "flowers": {
+  
+    // How much mana a wither aconite should generate per nether star.
+    // Minimum: 1
+    "witherAconiteMana": 2000000,
+    
+    // Can be used to tweak the multipliers for the raindeletia. All matching values are multiplied
+    // The result is the mana generated per tick.
+    "raindeletia": {
+    
+      // Base modifier. This one will always be applied
+      // Minimum: 0.0
+      "base": 5.0,
+      
+      // Modifier for dry grass
+      // Minimum: 0.0
+      "dry_grass": 0.5,
+      
+      // Modifier for enchanted soil
+      // Minimum: 0.0
+      "enchanted_soil": 5.0,
+      
+      // Modifier for normal rain, not for thunder
+      // Minimum: 0.0
+      "rain": 0.09,
+      
+      // Modifier for thundering
+      // Minimum: 0.0
+      "thunder": 3.0,
+      
+      // Modifier for vivid grass
+      // Minimum: 0.0
+      "vivid_grass": 2.0
+    }
+  },
+  
+  "mjoellnir": {
+  
+    // The amount the attack speed increases per level of hammer mobility.
+    // Minimum: 0.0
+    "attack_speed_multiplier": 0.2,
+    
+    // The base attack speed attribute for mjoellnir.
+    "base_attack_speed": -3.5,
+    
+    // The base damage for melee attacks.
+    // Minimum: 1.0
+    "base_damage_melee": 25.0,
+    
+    // The base damage for the main target on ranged attacks.
+    // Minimum: 1.0
+    "base_damage_ranged": 25.0,
+    
+    // Enchantment multiplier for sharpness and power enchantments.
+    // Minimum: 1.0
+    "enchantment_multiplier": 5.0,
+    
+    // The cooldown in ticks after a ranged attack, before mjoellnir can be thrown again.
+    // Minimum: 0
+    "ranged_cooldown": 120,
+    
+    // What is required for a player to hold mjoellnir.
+    // nothing  - Players will always be able to hold mjoellnir.
+    // effect   - Players need the absorption effect to hold mjoellnir.
+    // hearts   - Players need absorption hearts to hold mjoellnir.
+    //            If they run out of golden hearts but still have the effect, mjoellnir is dropped.
+    // Allowed values: nothing, effect, hearts
+    "requirement": "effect",
+    
+    // What is required for a player that holds the ring of thor to hold mjoellnir.
+    // If a player holds the ring of thor, this OR `mjoellnir.requirement` must be met.
+    // Allowed values: nothing, effect, hearts
+    "requirement_thor": "nothing",
+    
+    // The chance for secondary targets to get lightning effects  applied as well on ranged attacks.
+    // Range: 0.0 - 1.0
+    "secondary_lightning_chance": 0.25,
+    
+    // The damage dealt to secondary targets on ranged attacks.
+    // This value is multiplied with the damage to the main target.
+    // Range: 0.0 - 1.0
+    "secondary_target_multiplier": 0.2
+  },
+  
+  "spawns": {
+  
+    // Spawn configuration for the illusioner in alfheim.
+    "illusioner": {
+    
+      "max": 1,
+      
+      "min": 1,
+      
+      "weight": 5
+    },
+    
+    // Spawn configuration for the alf pixie.
+    "pixies": {
+    
+      "max": 10,
+      
+      "min": 4,
+      
+      "weight": 50
+    },
+    
+    // Spawn configuration for the withes in alfheim.
+    "witch": {
+    
+      "max": 2,
+      
+      "min": 1,
+      
+      "weight": 10
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+    "flower": "undergarden:gloomgourd",
+    "lore": "Tier 2:\nMating the Clogged Bee with the I-C-Bee\nyields chilled out, Frosty children.\nMy Milkshake brings all the queens to the yard.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/frosty",
+    "ColorData": {
+        "honeycombColor": "#b9d3ec",
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+    	"hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:stone",
+            "outputs": [
+              {"outputID": "undergarden:depthrock", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "undergarden:froststeel_ore",
+        "mainOutputWeight": 0.4,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "thermal:blizz_powder",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 2,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:UNDERGARDEN",
+        "biomeBlacklist": "tag:OCEAN,NETHER,END",
+        "lightLevel": "ANY",
+        "spawnWeight": 10,
+        "minYLevel": 12,
+        "maxYLevel": 250,
+        "minGroupSize": 2,
+        "maxGroupSize": 4
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "clogged",
+        "parent2": "icy",
+        "feedItem": "undergarden:froststeel_ingot",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

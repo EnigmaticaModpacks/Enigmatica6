@@ -1,0 +1,101 @@
+{
+    "type": "theme",
+    "id": 1004,
+    "sub_theme": 4,
+    "theme": {
+        "normal": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "create:andesite_casing",
+                    "weight": 8
+                },
+                {
+                    "block": "minecraft:jukebox",
+                    "weight": 2
+                },
+                {
+                    "block": "quark:vertical_black_stained_planks"
+                }
+            ]
+        },
+        "normal_2": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "create:gabbro_bricks",
+                    "weight": 8
+                },
+                {
+                    "block": "create:polished_gabbro",
+                    "weight": 2
+                },
+                {
+                    "block": "create:gabbro_cobblestone"
+                }
+            ]
+        },
+        "solid": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "create:brass_casing",
+                    "weight": 8
+                },
+                {
+                    "block": "quark:lit_lamp"
+                }
+            ]
+        },
+        "floor": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "decorative_blocks:dark_oak_beam",
+                    "data": {
+                        "axis": "x"
+                    },
+                    "weight": 6
+                },
+                {
+                    "block": "decorative_blocks:dark_oak_beam",
+                    "data": {
+                        "axis": "z"
+                    },
+                    "weight": 6
+                },
+                {
+                    "block": "minecraft:grass_path",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:andesite"
+                }
+            ]
+        },
+        "stairs": {
+            "type": "block",
+            "block": "minecraft:dark_oak_stairs"
+        },
+        "solid_stairs": {
+            "type": "block",
+            "block": "minecraft:dark_oak_stairs"
+        },
+        "material": {
+            "type": "block",
+            "block": "create:brass_casing"
+        },
+        "wall": {
+            "type": "block",
+            "block": "minecraft:andesite_wall"
+        },
+        "slab": {
+            "type": "block",
+            "block": "minecraft:dark_oak_slab"
+        },
+        "solid_slab": {
+            "type": "block",
+            "block": "minecraft:dark_oak_slab"
+        }
+    }
+}

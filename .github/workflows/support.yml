@@ -1,0 +1,11 @@
+
+name: Support Requests
+
+on:
+  issues:
+    types: [labeled, unlabeled, reopened]
+
+
+jobs:
+  support-requests:
+    uses: NillerMedDild/.github/.github/workflows/support.yml@master

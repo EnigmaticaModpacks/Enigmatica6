@@ -1,0 +1,542 @@
+{
+	id: "0000000000000B67"
+	group: "34B7FB260B6AEB81"
+	order_index: 4
+	filename: "expert__tier_2_wip"
+	title: "Magic - Apprentice"
+	icon: {
+		id: "eidolon:soulfire_wand"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Lightning in a Bottle"
+			x: -2.5d
+			y: -12.0d
+			description: [
+				"In the ancient texts, lightning is often called down to impart the required energy for a reaction. Many a young mageling met their end in the effort…"
+				""
+				"Explore the lands to locate objects of power to assist in this endeavor, seek aid from the elementals that roam the lands, or trust in the treatises on alchemy left by the Ancients."
+			]
+			dependencies: ["48BA066E1B977D32"]
+			min_width: 300
+			id: "72D589CE18202510"
+			tasks: [{
+				id: "61813D97AAD3C2B9"
+				type: "item"
+				title: "Lightning"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "thermal:lightning_charge"
+								Count: 1b
+							}
+							{
+								id: "archers_paradox:lightning_arrow"
+								Count: 1b
+							}
+							{
+								id: "powah:charged_snowball"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -11.0d
+			description: [
+				"Great power lurks in the depths, though its source remained mysterious even to the Ancients. These Hearts of the Sea allowed them to tap into these energies. "
+				""
+				"Some few may still remain buried near the sea, though the process of their creation has survived to present day."
+			]
+			dependencies: ["72D589CE18202510"]
+			min_width: 300
+			id: "55B791C2720332C5"
+			tasks: [{
+				id: "606F700B17783FF9"
+				type: "item"
+				item: "minecraft:heart_of_the_sea"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -10.0d
+			description: [
+				"And so it begins, this pathway to the arcane arts…"
+				""
+				"The Ancients described many pathways through the arts, many disciplines intertwined. Regardless of where those paths lead, they all began with a conduit to channel the vast energies they worked with. "
+				""
+				"-------------------------------------------------"
+				"Performing Lightning Crafting, such as is required to make conduits, is simple enough. Drop all the items on the ground and strike it with lightning. Large batches may be crafted at once with a single strike."
+				""
+				"Do note that Ars Nouveau’s lightning spell is not currently compatible with Lightning Crafting."
+			]
+			dependencies: [
+				"55B791C2720332C5"
+				"26800BC5BDEC484A"
+			]
+			min_width: 300
+			id: "2A5E2A21BFECF76C"
+			tasks: [{
+				id: "0887A21EA010D9D6"
+				type: "item"
+				item: "minecraft:conduit"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -9.0d
+			description: [
+				"Trust ghosts. Their knowledge, both of this plane and beyond the veil, is invaluable. "
+				""
+				"Speak to them regularly and bring them offerings to honor them."
+			]
+			dependencies: ["2A5E2A21BFECF76C"]
+			id: "1C17C09DD9AB58BD"
+			tasks: [
+				{
+					id: "00A73F4961BFEB07"
+					type: "item"
+					item: "eidolon:brazier"
+				}
+				{
+					id: "3AB5F233F75DD849"
+					type: "item"
+					item: "farmersdelight:cooking_pot"
+				}
+				{
+					id: "5A65288C9B50231B"
+					type: "item"
+					item: "farmersdelight:stove"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -5.0d
+			description: [
+				"The beings that once roamed the lands of Atum held power over life and death, creation and destruction. "
+				""
+				"Those energies remain infused in the land; use it to transmute a nest of bees into a nest of Silk Moths. The nest will periodically produce more Silk Moths which may be culled for their silk."
+				""
+				"Be warned, Silk Moths are an invasive species and will spread rapidly as they have no natural predator. A wise apprentice will keep them enclosed to prevent ecological disaster. "
+			]
+			dependencies: ["719AFD0C38BE19A2"]
+			id: "5AA38E6753FF4210"
+			tasks: [{
+				id: "638694418DEBB47D"
+				type: "item"
+				item: "betterendforge:silk_moth_nest"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -9.0d
+			description: ["Like light through a lens, the magical energies of this land may be focused or scattered by physical apparatus. Just as glass is often used to bend light, proper materials are required to begin manipulating these energies directly. "]
+			dependencies: ["2A5E2A21BFECF76C"]
+			id: "4642C99F4B51005B"
+			tasks: [
+				{
+					id: "6D272FF41C244D34"
+					type: "item"
+					item: "ars_nouveau:enchanting_apparatus"
+				}
+				{
+					id: "67FDDC3CABAFF8F2"
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			description: [
+				"Like runes drawn upon the firmament itself, the constellations channel great energies and bring with them knowledge of secrets long thought lost. "
+				""
+				"Many of their secrets remain out of reach, however even an apprentice knows enough to channel some starlight for basic tasks. "
+				""
+				"Note: The Floating Crystal will not link to the Godforged Block automatically. Therefore, a Linking Tool must first be crafted to manually link them. "
+			]
+			dependencies: [
+				"598A3BD34A7DD40B"
+				"269CB5E2F7130224"
+			]
+			id: "102775CD7F9CD338"
+			tasks: [
+				{
+					id: "0F780C3F50CF951D"
+					type: "item"
+					item: "astralsorcery:altar_discovery"
+				}
+				{
+					id: "0EA40EE2C1484EEE"
+					type: "item"
+					item: "astralsorcery:linking_tool"
+				}
+			]
+		}
+		{
+			title: "Blood Altar - Tier 1"
+			x: -0.5d
+			y: -6.0d
+			description: [
+				"If something hungers, feed it. Great power flows through all things, both the living and the dead. "
+				""
+				"Obtaining LP early on will require the sacrifice of animals or monsters. "
+			]
+			dependencies: ["719AFD0C38BE19A2"]
+			id: "06A20E7EA36392CB"
+			tasks: [
+				{
+					id: "6DBA42D76D507F3F"
+					type: "item"
+					item: "bloodmagic:altar"
+				}
+				{
+					id: "00FAE80C413DF107"
+					type: "item"
+					item: "bloodmagic:daggerofsacrifice"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			description: [
+				"“The spirits beckon. Will you answer their call? “"
+				""
+				"– Aviar The Attentive"
+			]
+			dependencies: ["5A53DAE0FAC0A38F"]
+			id: "4280183EE48A8F1E"
+			tasks: [{
+				id: "50CA5DE83B5986DC"
+				type: "item"
+				item: {
+					id: "occultism:chalk_white"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.5d
+			description: [
+				"“Life is balance, give and take. Be wary not to draw more Aura than you return. “"
+				""
+				"– Ulmaern of the Wild Grove"
+			]
+			dependencies: ["598A3BD34A7DD40B"]
+			id: "2422557696EB83F3"
+			tasks: [
+				{
+					id: "21F3F09A493EE8D1"
+					type: "item"
+					item: "naturesaura:nature_altar"
+				}
+				{
+					id: "4A0060B60B3FDF95"
+					type: "item"
+					item: "naturesaura:infused_iron"
+				}
+			]
+		}
+		{
+			title: "Ritual of the Forest"
+			x: -3.5d
+			y: -2.5d
+			description: [
+				"“Do you feel it? The pulse of the Earth thrums through the ritual center. Focus, let it flow through you and the magic will grow like weeds in the sun.”"
+				""
+				"– Cisu The Patient"
+			]
+			dependencies: [
+				"566824DF05761A43"
+				"62F3B5013BAB47AB"
+			]
+			id: "598A3BD34A7DD40B"
+			tasks: [{
+				id: "64DA833E05EAACEC"
+				type: "item"
+				item: "naturesaura:wood_stand"
+				count: 8L
+			}]
+		}
+		{
+			x: -4.5d
+			y: -6.0d
+			description: ["The gateway to floral magics, and advanced medicinal brewing. "]
+			dependencies: ["719AFD0C38BE19A2"]
+			id: "295B7A0FB81D44DB"
+			tasks: [{
+				id: "3281C71438B7C50A"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.0d
+			description: ["A potent apparatus designed by the ancients that works off natural background mana. Originally designed for the purpose of training young apprentices, the contraption soon caught on as a more efficient means of creating some materials. Sadly, those original methods are now lost to the ages. "]
+			dependencies: ["295B7A0FB81D44DB"]
+			id: "566824DF05761A43"
+			tasks: [{
+				id: "7F1D294618FECED9"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			description: [
+				"Something powerful has been listening. "
+				""
+				"Waiting."
+				""
+				"Gain its approval to begin channeling the energies of sanguimancy."
+				""
+				"The Weak Blood Orb is crafted from an Unholy Symbol. Refer to the Ars Ecclesia and Eidolon quest chapters to learn how these are made."
+			]
+			dependencies: [
+				"06A20E7EA36392CB"
+				"4C5CCC780A4B07A7"
+			]
+			id: "7E371FBDE82532D9"
+			tasks: [
+				{
+					id: "093DCD4B762371E2"
+					type: "item"
+					item: "bloodmagic:weakbloodorb"
+				}
+				{
+					id: "6DB611075387D462"
+					type: "item"
+					item: "eidolon:unholy_symbol"
+				}
+			]
+		}
+		{
+			title: "Offworld Adventure"
+			x: -2.5d
+			y: -6.5d
+			description: [
+				"The Ancients were no strangers to dimensional travel, and some of the bridges they formed are still very much operational. Setting up a small base of operations in those that remain may prove invaluable indeed. "
+				""
+				"Travel to Atum and the Undergarden. Some magic may only be performed in these regions until they’ve been mastered, and many powerful materials may only be acquired there. "
+			]
+			dependencies: [
+				"7A61BA54CFCA2973"
+				"1FB260E6CB51800E"
+			]
+			id: "719AFD0C38BE19A2"
+			tasks: [
+				{
+					id: "691A203B9168177A"
+					type: "item"
+					item: "atum:scarab"
+				}
+				{
+					id: "4370B0FB1FFF0BBF"
+					type: "item"
+					item: "undergarden:catalyst"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -3.5d
+			description: [
+				"There is subtle magic to be found throughout the natural world, and silk moths are no exception. Their silk is prized for its arcane properties. "
+				""
+				"Convert some Silk Fiber to Brilliant Fiber and place it in the leaves of trees. Once it has been allowed to spread and mature, it may be harvested to obtain Gold Leaf."
+			]
+			dependencies: ["5AA38E6753FF4210"]
+			id: "62F3B5013BAB47AB"
+			tasks: [
+				{
+					id: "7FA190A131C27BC6"
+					type: "item"
+					item: "naturesaura:gold_fiber"
+				}
+				{
+					id: "5AA8561505815247"
+					type: "item"
+					item: "naturesaura:gold_leaf"
+				}
+			]
+		}
+		{
+			title: "Magic Progression - Apprentice"
+			icon: "ars_nouveau:spell_parchment"
+			x: -2.5d
+			y: -13.0d
+			description: [
+				"“They came from above… With their power, they raised the land sundering the seas… In a blink they had wiped themselves out.”"
+				""
+				"– V'uithlos The Elder"
+			]
+			dependencies: ["0000000000000FEB"]
+			hide: true
+			id: "48BA066E1B977D32"
+			tasks: [{
+				id: "254F767D474E7B72"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.0d
+			description: [
+				"Historical records show a timeless debate raging amongst scholars dealing with the origins of Nebu and Godshards. There is no definitive answer to the question, but it’s plain that they’re deeply linked and flush with magical energy. "
+				""
+				"Godshards turn up in many magical crafts and obtaining them may seem daunting at first. However, they may be ‘grown’ quite simply by forming a Godforged block, breaking it with a Nebu Hammer, and smelting down the resulting relic in a Godforge using Lava as fuel."
+			]
+			dependencies: ["719AFD0C38BE19A2"]
+			id: "4C5CCC780A4B07A7"
+			tasks: [{
+				id: "5B0160F4F724F8F8"
+				type: "item"
+				item: "atum:godforged_block"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -7.5d
+			description: [
+				"A delicate blend of Silver, Sulfur, and Source; Sunmetal is renowned for its mystical properties. "
+				""
+				"Silver and Sulfur, of course, are both readily available. Gathering Source, on the other hand, will require the creation of a Sourcelink. The Agronomic Sourcelink will serve admirably for now for the manufacture of Sunmetal. "
+			]
+			dependencies: ["4642C99F4B51005B"]
+			id: "1FB260E6CB51800E"
+			tasks: [
+				{
+					id: "2B8585C3F93E9864"
+					type: "item"
+					item: "ars_nouveau:mana_condenser"
+				}
+				{
+					id: "652E7031800BC423"
+					type: "item"
+					item: "architects_palette:sunmetal_blend"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -7.5d
+			description: [
+				"Infused with the crystallized soul fragments that animate the dead, Arcane Gold is found throughout the arcane arts. "
+				""
+				"These Soul Shards may be gathered from the undead by way of the Crystallization Ritual detailed in the Ars Ecclesia, or later simply by harvesting the undead with a Reaper’s Scythe."
+			]
+			dependencies: ["1C17C09DD9AB58BD"]
+			id: "7A61BA54CFCA2973"
+			tasks: [{
+				id: "2B5C17D526E0CEBA"
+				type: "item"
+				item: "eidolon:gold_inlay"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -11.0d
+			description: [
+				"Natives of the deep, distant cousins to what powers came before; the spiral of the nautilus’ shell has been found to be a near perfect amplifier for arcane energies. "
+				""
+				"While the living creature may be found in deep oceans, their shells are often preserved intact in the sediments beneath beaches and oceans alike, as well as in the piles of Seashells that may be found in and around oceans."
+				""
+				"Seals have also been known to give people a variety of precious materials from the ocean depths. Perhaps they’ll be able to assist?"
+			]
+			dependencies: ["72D589CE18202510"]
+			min_width: 300
+			id: "26800BC5BDEC484A"
+			tasks: [{
+				id: "35E1F20C18B5A6B7"
+				type: "item"
+				item: "minecraft:nautilus_shell"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			description: ["The link though tenuous, grows stronger. Channeling the spirits and their energies paves the way to Alchemy and from there, the deeper magics. "]
+			dependencies: ["7E371FBDE82532D9"]
+			id: "5A53DAE0FAC0A38F"
+			tasks: [{
+				id: "370511870EE62EBD"
+				type: "item"
+				item: "bloodmagic:alchemytable"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			description: ["Once freed from their torturous bonds, the wraiths of Atum are surprisingly accommodating, retrieving and sorting items for the apprentice magician."]
+			dependencies: ["719AFD0C38BE19A2"]
+			id: "63835E28AFE16A89"
+			tasks: [
+				{
+					id: "260844590347A921"
+					type: "item"
+					item: "botania:corporea_spark_master"
+				}
+				{
+					id: "58727FA94D304EAC"
+					type: "item"
+					item: "botania:corporea_index"
+				}
+				{
+					id: "5F1BA591103283DA"
+					type: "item"
+					item: "botania:corporea_spark"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			description: [
+				"A time-honored tradition, dowsing has its origins deep in the hazy past of early magic, predating even written history. Though it’s more commonly known in terms of water dowsing, it was once used to find all manner of things, from plants, to minerals, or even strong magical field lines. "
+				""
+				"The Resonating Wand is particularly suited to finding Rock Crystals deep in the earth. Hold it at night and the locations of these crystals will be revealed by soft lights."
+			]
+			dependencies: ["4C5CCC780A4B07A7"]
+			id: "269CB5E2F7130224"
+			tasks: [{
+				id: "43C84D76D2C9FB48"
+				type: "item"
+				item: "astralsorcery:wand"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			shape: "gear"
+			description: ["By transmuting the latent energies in Life Essence, the Wicked Altar is capable of infusing specially prepared materials with great power. "]
+			dependencies: ["06A20E7EA36392CB"]
+			id: "03B61EC7DD43C550"
+			tasks: [{
+				id: "7C9DF703B05DF144"
+				type: "item"
+				item: "masterfulmachinery:wicked_altar_controller"
+			}]
+		}
+	]
+}

@@ -1,0 +1,64 @@
+{
+  "header": {
+    "version": "2-beta",
+    "mc_version": "1.16.4",
+    "name": "Basic Fission Reactor",
+    "author": "Enigmatica",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 4,
+      "max_y": 8,
+      "max_z": 4
+    },
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 5,
+          "item": {
+            "id": "mekanismgenerators:control_rod_assembly"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 30,
+          "item": {
+            "id": "mekanismgenerators:fission_fuel_assembly"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 69,
+          "item": {
+            "id": "mekanismgenerators:fission_reactor_casing"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 2,
+          "item": {
+            "id": "mekanismgenerators:fission_reactor_logic_adapter"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "mekanismgenerators:fission_reactor_port"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 87,
+          "item": {
+            "id": "mekanismgenerators:reactor_glass"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAAAL2WwW7TQBCG1zuT2A0VN+65Abeee+TADYQQh8Il2sbb1MKxI9tRKe/HezHOfkYNqlCoEDn4W8+MZ3d/j2ezcO7MaRmGsHDOFYs0duIWfeyqUFffY2cOt3CzfghDLJy+D9voXm/j19BU/XYTm9iFoe36y5uq76u2WXUxrM2wWoe+ajbjsycmXT6SdEq2qUPfn5Br4RYfunYXu6GKvSXetmV0z9v9sNsPq3Xb1qEZ3DThyxN2sWu74anzzqrGpv0P0z27M1tXt5tNLF128WvGV3+Y8WYf65WJGrfX9f2/m/KxTa7bZujaetW15d/MOKW8OEE3W0i1XoUy7IYxydPe1zl1chf6IT7htZ052bW92jQ/3INfBj0UqEcBmcuyFOW5Fx7UowQWBz0UEuvRBBYHPRQm1qMFWBz0UFiYTgucEQc9lBlx0M2Jgx7KnDjocuLytFjPveTEQXsDSR7ooUAtJgEnBR0KJgrUyZWNFx11PlCyZFRoDyY/FI8fWsLkhyL44eg6XKAofmg6Jj+UGX5o+iU/lDl+aLqlJFBy/DklVrBJ6KEU6FAcl2IGPRSok4TZSB3r0Y+L0wy7x+7TvcLxVR7sQrxgV+xKPLQtJPsMO7RHk32OHdr+/eGhHHvOJ1Wk+wx6KAX7KY4/vQx6KFCnkslGHupEqBOhToT9C3Ui1Imgg5BdqBOhToQ6EfQQ6kSoE0EXQRehToQ6EfQR9BHqRKgTQSdBJ6FOhDoR9BL0EvQS9BL0EvT6rUMkeihQpxaWJemyLH1q/sB81C3FQUug9C+lfyn9K8VBS6X0L6V/Kf0rxUG7Kv1L6V9K/0px0CRQ+pfSv5T+leLgWLL0L6V/Kf0rxUHbmtK/UhyUnDg4niD0L6V/Kf1L0VkXbn4bQxm7ws3DfrhtO3f+bj/ET1W8qe3vk/mv231T9rbnbdV8Rh4bXk3D8O0LothwDCjS8GqyVs2XaTnNeKC9eGP/zNbLt+kMW35MZ5idXg/OyuLwWpfX+6oubRmbUG7i0F+W++32fvXgSP0JWKw1/EEKAAA\u003d"
+}

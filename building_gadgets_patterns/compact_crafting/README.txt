@@ -1,0 +1,6 @@
+IMPORTANT: Compact Crafting is a newer mod, and as such the mechanics are still a bit rough around the edges.  These gadget patterns attempt to minimize the quirkiness as much as possible.  Please follow the steps below to reduce headaches:
+1) Start by pasting in the projectors.  The template is named projectors_max.txt.  This step works like a standard copy paste (see the README in the folder above this for instructions).
+2) Select the size compact machine you want, and copy the template into the gadget as you normally would
+3) Ensure you have all the materials listed, and paste the structure inside the projection field.  The entire structure must be inside the field, and for best results it should be on the ground.  No other blocks can be in the field or the craft will not work.  Take your time with this step, because the machine walls are currently unbreakable due to a bug!
+4) There will be a single missing machine wall block in the structure cube.  Fill it with a machine wall block, and then throw the catalyst (flux dust) into the field
+5) The miniaturization animation should begin, and you should soon have a compact machine.

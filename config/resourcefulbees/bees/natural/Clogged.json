@@ -1,0 +1,71 @@
+{
+    "flower": "create:fluid_pipe",
+    "lore": "Tier 1:\nSpending so much time underground has these bees backed up.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 0.75,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/clogged",
+    "ColorData": {
+        "honeycombColor": "#ba9d7b",
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+    	"hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:gravel",
+            "outputs": [
+              {"outputID": "undergarden:sediment", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "undergarden:cloggrum_ore",
+        "mainOutputWeight": 0.4,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "undergarden:sediment",
+        "secondaryOutputWeight": 0.3,
+        "secondaryOutputCount": 2,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.4,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:UNDERGARDEN",
+        "biomeBlacklist": "tag:OCEAN,NETHER,END",
+        "lightLevel": "ANY",
+        "spawnWeight": 10,
+        "minYLevel": 12,
+        "maxYLevel": 250,
+        "minGroupSize": 2,
+        "maxGroupSize": 4
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "undergarden:cloggrum_ingot",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

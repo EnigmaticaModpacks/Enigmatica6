@@ -1,0 +1,109 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:speedrune",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:sacrificerune",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:selfsacrificerune",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:altarcapacityrune",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:bettercapacityrune",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:ritualstone",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 24
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:stonebrickpath",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:woodbrickpath",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:wornstonebrickpath",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 12
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

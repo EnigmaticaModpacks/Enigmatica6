@@ -1,0 +1,62 @@
+
+#Settings for the light / mobspawn overlay
+[lightoverlay]
+	#Minimum save light level where no mobs can spawn
+	#Range: > 0
+	saveLevel = 8
+	#Ignore if mobs can actually spawn according to other mods and biome spawn lists and just go by light value
+	ignoreSpawnList = false
+	#Range of the lightoverlay (negative Y)
+	#Range: > 0
+	downrange = 16
+	#Blocks can allow/disallow spawns for different entity types. The check for this isn't very performat.
+	#Setting this to true will increase performance but decrease accuracy.
+	simpleCheck = false
+	#Range of the lightoverlay (Horizontal N,E,S,W)
+	#Range: > 0
+	hrange = 16
+	#Range of the lightoverlay (positive Y)
+	#Range: > 0
+	uprange = 4
+	#Ignore if there in no 2 Block space to spawn. (Less lag if true)
+	ignoreLayer = false
+
+#Settings for the chunk bounds overlay
+[chunkbounds]
+	#Show the middle of the current Chunk (yellow line)
+	middle = true
+	#Radius (in Chunks) to show the edges (red line)
+	#Range: > 0
+	radius = 1
+
+#General render settings.
+#Line thickness, Colors, ...
+[rendersettings]
+	#Color the X that marks "Spawns always possible"
+	#Range: 0 ~ 16777215
+	spawn_always_color = 16711680
+	#Color for the chunk grid
+	#Range: 0 ~ 16777215
+	chunk_grid_color = 65280
+	#Line width for spawn indication
+	#Range: 0.0 ~ 1.7976931348623157E308
+	spawn_line_width = 2.0
+	#Color for the chunk edge
+	#Range: 0 ~ 16777215
+	chunk_edge_color = 16711680
+	#Color the X that marks "Spawns at night possible"
+	#Range: 0 ~ 16777215
+	spawn_night_color = 16776960
+	#Color for the middle chunk line
+	#Range: 0 ~ 16777215
+	chunk_mid_color = 16776960
+	#Line width for chunk boundaries
+	#Range: 0.0 ~ 1.7976931348623157E308
+	chunk_line_width = 1.5
+
+#Settings for the search overlay
+[searchoverlay]
+	#Also searches for the custom name of an item in user inventory (for example items named in anvil)
+	#Setting this to false will increase performance but will not find custom named items.
+	custom_search = true
+

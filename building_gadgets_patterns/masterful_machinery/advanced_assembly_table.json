@@ -1,0 +1,176 @@
+{
+    "header": {
+        "version": "2.1.0",
+        "mc_version": "1.16.5",
+        "name": "Advanced Assembly Table",
+        "author": "Enigmatica",
+        "bounding_box": {
+            "min_x": 0,
+            "min_y": 0,
+            "min_z": 0,
+            "max_x": 3,
+            "max_y": 4,
+            "max_z": 7
+        },
+        "material_list": {
+            "root_type": "buildinggadgets:entries",
+            "root_entry": [
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:advanced_assembly_table_controller"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:advanced_assembly_table_high_pressure_port_pncr_pressure_input"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 3,
+                    "item": {
+                        "id": "masterfulmachinery:advanced_assembly_table_item_port_items_input"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "masterfulmachinery:advanced_assembly_table_item_port_items_output"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "pneumaticcraft:assembly_controller"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "pneumaticcraft:assembly_drill"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "pneumaticcraft:assembly_io_unit_export"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "pneumaticcraft:assembly_io_unit_import"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "pneumaticcraft:assembly_laser"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "pneumaticcraft:assembly_platform"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 27,
+                    "item": {
+                        "id": "pneumaticcraft:compressed_brick_pillar"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 8,
+                    "item": {
+                        "id": "pneumaticcraft:compressed_brick_tile"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 5,
+                    "item": {
+                        "id": "pneumaticcraft:compressed_stone_slab"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 2,
+                    "item": {
+                        "id": "immersiveengineering:heavy_engineering"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "engineersdecor:labeled_crate"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 16,
+                    "item": {
+                        "id": "pneumaticcraft:pressure_chamber_glass"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 3,
+                    "item": {
+                        "id": "immersiveengineering:radiator"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 9,
+                    "item": {
+                        "id": "immersiveengineering:sheetmetal_steel"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 8,
+                    "item": {
+                        "id": "immersiveengineering:steel_scaffolding_standard"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 12,
+                    "item": {
+                        "id": "immersiveengineering:storage_steel"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 5,
+                    "item": {
+                        "id": "immersiveengineering:treated_wood_horizontal"
+                    }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 1,
+                    "item": {
+                        "id": "pneumaticcraft:wall_lamp_inverted_red"
+                    }
+                }
+            ]
+        }
+    },
+    "body": "H4sIAAAAAAAAALVXS4/bNhCmSFreddJ3+ji0wCJocwrQ5tCLTy16bpAAPbS5ELQ0lolSokBSu+v99RlSY69h2Nho2xiGPj7G3zcPaggvGLtkstZRLxhj3y3GMRNsEcAbbc0deNxgCzYLUUdYsMUb73rw0UC4YE9ucM1b1zRQs9la2wDsgsnXugX2s2lb8MFcA3SN6QD5umYZIoBVodLrtbM1rijk7Wrt6yTygPqO+se+g6HV0VSV1+u4rFzbewgBarXypvpXRWPhA/iOopH61gRW3O5DePGQTm+s1f7RStuPoLRj/OmIMdMNHlS10e0KvGqsDuHRrt99/CSdOFyoGbc9MBFdzz7gNIToOlDB6tWEzL08eXCjB7Sp1Y1ztdo4b+5cF7WdwHucKEw/tCu7VcapoTNRwW3vfJzA+MM5xtpjzqdnvFzrCmNlEnSI+/z+2uIM/Hqwra42mBC/Xer6WncVpmMvGfXK4uHCpHhnLTyi3nv1GzhQ/35XhFBD5fwSawkWhTHi+Jh3PIe2O02z4Ia4uZ92mP/76ejIUVt7fi7nk0LfsV2dY+utjmvn2+kRCmsiviZ+gHMFPW4NN9paZXXbK9NdIw1m18OUfvzgyTbt/3WysWlNSvDvEw6vidCq5GgeBYVnox8meX2yc3hdGx3dFK+fn7k7ndcN9rN0h065Ck6zbQBiC9jDJhO+OEm4AX29VQcrExjfTijTxjQbtb/Ocr36rvL3S6abVrbf/sMZIa1LJnoXJJK37OAj8rPIX8Y4Kwh5Ma6Lgqx4QskKQs7HdUE4EuE+IRe0L4hfEj8hl8SfcZaGaFQm/Yw84yzpI87zTxn2hyLjZdLPpILTvqC5GH+XXMkPQi6JjxCfnHR4yrfI+CS7xtjTpIP4SdLhpMNJB/HTFCcnPU56nPQ46XHS46QnKD5BuoLiExQf4mdJF/HzpCtIV5CuID1BeoL0BOkJ0hNUWkmVkVRfSfWVVF9J9ZVUX8Qvkj7il0lfUn0l1TevF4Rc0L4gfkn8hFwSvxz9GIvMKBlfpS3EZ8mfPOc0RwPEr5Mfec452QuyF2Qv9jwlY98knpJ4EL9NPCXx5Dnn4z7ylMRTEk9J/s3Jvznxzsm/OfHOyb954iv4OOec7AXZC7JHXLASO04NHq85jbc4Ntinfw4R/jKwtth9cH/lhq4OmMPWdP+M9UrDv3dDffsueTYOk4Ech8lAjLbvsvPYKbrUKeZ/uH579eoXfEUOespFfteuVoPJ/2gaXTcQw7Ie2narDlrPe6x0CwltDQAA"
+}

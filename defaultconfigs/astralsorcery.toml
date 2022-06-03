@@ -1,0 +1,701 @@
+
+[general]
+	#Defines the length of a day (both daytime & nighttime obviously) for the mod's internal logic. NOTE: This does NOT CHANGE HOW LONG A DAY IN MC IS! It is only to provide potential compatibility for mods that do provide such functionality.
+	#Range: 1000 ~ 400000
+	dayLength = 24000
+	#If set to 'true', the player will receive an AstralSorcery Journal when they join the server for the first time.
+	giveJournalOnJoin = false
+	#If set to 'true' anything that prevents mobspawning !by this mod!, will also prevent EVERY natural mobspawning of any mobtype. When set to 'false' it'll only stop monsters of type 'MONSTER' from spawning.
+	mobSpawningDenyAllTypes = false
+	#Features generating random ores in AstralSorcery will not spawn ores from mods listed here.
+	modidOreBlacklist = ["create", "eidolon", "occultism", "techreborn", "gregtech","mekanism","thermal","undergarden","immersiveengineering","tmechworks","mapperbase","minecraft","tconstruct","byg"]
+	#Set this to false to prevent players from being affected by entity-related colored lens effects.
+	doColoredLensesAffectPlayers = true
+
+[tools]
+	#Sets the amount of damage reduction a player gets when being hit by a DE chaos-damage-related damagetype.
+	#Range: 0.0 ~ 1.0
+	capeChaosResistance = 0.8
+
+	[tools.wands]
+		#Sets the quick-charge cost for one usage of the illumination wand
+		#Range: 0.0 ~ 1.0
+		illuminationWandCost = 0.5
+		#Sets the quick-charge cost for one usage of the architect wand
+		#Range: 0.0 ~ 1.0
+		architectWandCost = 0.03
+		#Sets the quick-charge cost for one usage of the exchange wand
+		#Range: 0.0 ~ 1.0
+		exchangeWandCost = 0.002
+		#Sets the quick-charge cost for one usage of the grapple wand
+		#Range: 0.0 ~ 1.0
+		grappleWandCost = 0.7
+		#Sets the max. hardness the exchange wand can swap !from!. If the block you're trying to "mine" with the conversion wand is higher than this number, it won't work. (-1 to disable this check)
+		#Range: -1 ~ 50000
+		exchangeWandMaxHardness = -1
+
+[entities]
+	#Defines how common ***ambient*** flares are. the lower the more common. 0 = ambient ones don't appear/disable
+	#Range: 0 ~ 200000
+	flareAmbientSpawnChance = 10
+	#If this is set to true, occasionally, a spawned flare will (attempt to) kill bats close to it.
+	flareAttackBats = true
+	#If this is set to true, occasionally, a spawned flare will (attempt to) kill phantoms close to it.
+	flareAttackPhantoms = true
+
+[crafting]
+	#Set this to false to disable Rock/Celestial Crystal growing in liquid starlight.
+	liquidStarlightCrystalGrowth = true
+	#Set this to false to disable crystal + stardust -> Celestial Crystal cluster forming
+	liquidStarlightFormCelestialCrystalCluster = true
+	#Set this to false to disable crystal + illumination powder -> Gem Crystal cluster forming
+	liquidStarlightFormGemCrystalCluster = true
+	#Set this to false to disable that liquid starlight + lava occasionally/rarely produces aquamarine shale instead of sand.
+	liquidStarlightInteractionAquamarine = true
+	#Set this to false to disable that liquid starlight + lava produces sand.
+	liquidStarlightInteractionSand = true
+	#Set this to false to disable that liquid starlight + water produces ice.
+	liquidStarlightInteractionIce = true
+	#Set this to false to disable the functionality that wood logs will be converted to infused wood when thrown into liquid starlight.
+	liquidStarlightDropInfusedWood = true
+	#Set this to false to disable the functionality that two crystals can merge and combine stats when thrown into liquid starlight.
+	liquidStarlightMergeCrystals = true
+
+[lightnetwork]
+	#NOTE: ONLY run this once and set it to false again afterwards, nothing will be gained by setting this to true permanently, just longer loading times. When set to true and the server started, this will perform an integrity check over all nodes of the starlight network whenever a world gets loaded, removing invalid ones in the process. This might, depending on network sizes, take a while. It'll leave a message in the console when it's done. After this check has been run, you might need to tear down and rebuild your starlight network in case something doesn't work anymore.
+	performNetworkIntegrityCheck = false
+
+[logging]
+	#Set to true to enable this logging category. Only do this if you have to debug this section of code! May spam your log HEAVILY!
+	perks = false
+	#Set to true to enable this logging category. Only do this if you have to debug this section of code! May spam your log HEAVILY!
+	unintended_chunk_loading = false
+	#Set to true to enable this logging category. Only do this if you have to debug this section of code! May spam your log HEAVILY!
+	structure_match = false
+	#Set to true to enable this logging category. Only do this if you have to debug this section of code! May spam your log HEAVILY!
+	gateway_cache = false
+
+[perks]
+	#Sets the max level for the perk tree levels.
+	#Range: 10 ~ 100
+	perkLevelCap = 40
+
+	[perks.root]
+
+		[perks.root.vicio]
+			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
+			#Range: 0.10000000149011612 ~ 20.0
+			expMultiplier = 1.0
+
+		[perks.root.armara]
+			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
+			#Range: 0.10000000149011612 ~ 20.0
+			expMultiplier = 1.0
+
+		[perks.root.evorsio]
+			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
+			#Range: 0.10000000149011612 ~ 20.0
+			expMultiplier = 1.0
+
+		[perks.root.discidia]
+			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
+			#Range: 0.10000000149011612 ~ 20.0
+			expMultiplier = 1.0
+
+		[perks.root.aevitas]
+			#Defines the general exp multiplier for this root perk. Can be used for balancing in a pack environment.
+			#Range: 0.10000000149011612 ~ 20.0
+			expMultiplier = 1.0
+
+	[perks.key]
+
+		[perks.key.no_armor]
+			#The multiplier that is applied to damage the player receives. The lower the more damage is negated.
+			#Range: 0.10000000149011612 ~ 1.0
+			damageTakenMultiplier = 0.699999988079071
+
+		[perks.key.culling]
+			#Defines the percentage at how low the entities' health as to be to then cull the entity.
+			#Range: 0.05000000074505806 ~ 0.5
+			cullHealth = 0.15000000596046448
+			#Defines the amount of starlight charge consumed per culling attempt.
+			#Range: 1 ~ 500
+			chargeCost = 250
+
+		[perks.key.proj_distance]
+			#Defines the distance that must be reached to achieve the maximum damage multiplier
+			#Range: 100.0 ~ 65536.0
+			capDistance = 6400.0
+			#Defines the maximum multiplier that can be reached if the 'capDistance' is reached or surpassed when hitting something
+			#Range: 0.05000000074505806 ~ 5.0
+			maxAdditionalMultiplier = 0.75
+
+		[perks.key.damage_effects]
+			#Defines the chance per hit to apply additional effects.
+			#Range: 0.009999999776482582 ~ 0.20000000298023224
+			applicationChance = 0.07999999821186066
+
+		[perks.key.growable]
+			#Sets the chance to try to see if a random plant near the player gets bonemeal'd.
+			#Range: 0.0 ~ 1.0
+			chanceToBonemeal = 0.30000001192092896
+			#Defines the radius around which the perk effect should apply around the player.
+			#Range: 1 ~ 16
+			radius = 3
+			#Defines the amount of starlight charge consumed per growth-attempt.
+			#Range: 1 ~ 500
+			chargeCost = 120
+
+		[perks.key.rampage]
+			#Defines the chance to gain rampage buffs when killing a mob
+			#Range: 0.05000000074505806 ~ 1.0
+			rampageChance = 1.0
+			#Defines the duration of the rampage in ticks
+			#Range: 10 ~ 100000
+			rampageDuration = 100
+
+		[perks.key.cheat_death]
+			#Once the potion effect gets applied, it'll take at least this amount of ticks or a server restart until it can be re-applied by this perk.
+			#Range: > 1
+			cooldownPotionApplication = 600
+			#Once the potion effect gets applied by any of the triggers, this will be used as tick-duration of the potion effect.
+			#Range: > 1
+			potionDuration = 500
+			#Once the potion effect gets applied by any of the triggers, this will be used as amplifier of the potion effect.
+			#Range: 0 ~ 4
+			potionAmplifier = 0
+			#Defines the amount of starlight charge consumed per death-prevention.
+			#Range: 1 ~ 500
+			chargeCost = 350
+
+		[perks.key.mending]
+			#Sets the chance (Random.nextInt(chance) == 0) to try to see if a piece of armor on the player that is damageable and damaged can be repaired; the lower the more likely.
+			#Range: > 5
+			chanceToRepair = 800
+			#Defines the amount of starlight charge consumed per restored durability point.
+			#Range: 1 ~ 500
+			chargeCost = 60
+
+		[perks.key.stone_enrichment]
+			#Defines the radius where a random position to generate a ore at is checked for
+			#Range: 1 ~ 15
+			enrichmentRadius = 3
+			#Sets the chance (Random.nextInt(chance) == 0) to try to see if a random stone next to the player should get turned into an ore; the lower the more likely
+			#Range: 2 ~ 512
+			chanceToEnrich = 55
+			#Defines the amount of starlight charge consumed per created ore.
+			#Range: 1 ~ 500
+			chargeCost = 150
+
+		[perks.key.bleed]
+			#Defines the duration of the bleeding effect when applied. Refreshes this duration when a it is applied again
+			#Range: 5 ~ 400
+			bleedDuration = 40
+			#Defines the base chance a bleed can/is applied when an entity is being hit by this entity
+			#Range: 0.01 ~ 1.0
+			bleedChance = 0.25
+
+		[perks.key.lightning_arc]
+			#Sets the chance to spawn a damage-arc effect when an enemy is hit (value is in percent).
+			#Range: 0.1 ~ 1.0
+			arcChance = 0.6000000238418579
+			#Defines the damage-multiplier which gets added to the damage dealt initially.
+			#Range: 0.1 ~ 8.0
+			arcPercent = 0.6000000238418579
+			#Defines the distance for how far a single arc can jump/search for nearby entities.
+			#Range: 0.2 ~ 16.0
+			arcDistance = 7.0
+			#Range: 1 ~ 32
+			arcTicks = 3
+			#Defines the amount of starlight charge consumed per spawned lighning arc.
+			#Range: 1 ~ 500
+			chargeCost = 60
+
+		[perks.key.proj_proximity]
+			#Defines the distance at which no additional damage is awarded.
+			#Range: 4.0 ~ 65536.0
+			capDistance = 100.0
+			#Defines the maximum multiplier that can be reached if the distance when hitting something with projectiles is basically nothing.
+			#Range: 0.05000000074505806 ~ 5.0
+			maxAdditionalMultiplier = 0.75
+
+		[perks.key.disarm]
+			#Defines the chance (in percent) per hit to make the attacked entity drop its armor.
+			#Range: 0.0 ~ 1.0
+			dropChance = 0.05000000074505806
+
+		[perks.key.last_breath]
+			#Defines the dig speed multiplier you get additionally to your normal dig speed when being low on health (25% health = 75% of this additional multiplier)
+			#Range: 0.1 ~ 10.0
+			digSpeedMultiplier = 1.5
+			#Defines the damage multiplier you get additionally to your normal damage when being low on health (25% health = 75% of this additional multiplier)
+			#Range: 0.1 ~ 10.0
+			damageMultiplier = 3.0
+
+		[perks.key.void_trash]
+			#List items that should count as trash and should be voided.
+			trashItems = ["minecraft:dirt", "minecraft:cobblestone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:stone", "minecraft:gravel"]
+			#Chance that a voided drop will instead yield a random ore out of the configured ore table.
+			#Range: 0.0 ~ 1.0
+			oreChance = 0.019999999552965164
+
+		[perks.key.damage_armor]
+			#Defines how much damage is dealt additionally to armor. This value gets multiplied by the amount of armorpieces the entity you're attacking wears.
+			#Range: 0.009999999776482582 ~ 0.20000000298023224
+			damagePerArmor = 0.05000000074505806
+
+		[perks.key.spawn_lights]
+			#Defines the rate in ticks a position to spawn a light in is attempted to be found near the player
+			#Range: 4 ~ 1000
+			lightSpawnRate = 15
+			#Defines the radius around the player the perk will search for a suitable position
+			#Range: 2 ~ 10
+			lightSpawnRadius = 5
+			#Defines the amount of starlight charge consumed per spawned light.
+			#Range: 1 ~ 500
+			chargeCost = 60
+
+	[perks.type]
+
+		[perks.type.dodge]
+			#Defines the amount of starlight charge consumed per dodged damage.
+			#Range: 1 ~ 500
+			chargeCost = 80
+
+		[perks.type.miningsize]
+			#Defines the amount of starlight charge consumed per additional block break through this attribute.
+			#Range: 1 ~ 500
+			chargeCostPerBreak = 2
+
+[enchantment_amulet]
+	#Defines the chance to roll a 2nd-enchantment-manipulating roll on the amulet. Value defines a percent chance from 0% to 100%. Setting this to 0 also prevents a 3rd roll
+	#Range: 0.0 ~ 1.0
+	chance2nd = 0.8
+	#Defines the chance to roll a 3rd-enchantment-manipulation roll on the amulet. Value defines a percent chance from 0% to 100%.
+	#Range: 0.0 ~ 1.0
+	chance3rd = 0.25
+	#Defines the chance the roll will be +2 instead of +1 to existing enchantment/to enchantment/to all enchantments.
+	#Range: 0.0 ~ 1.0
+	chance2Level = 0.15
+	#Defines the chance the amulet-roll 'to all existing enchantments' will appear.
+	#Range: 0.0 ~ 1.0
+	chanceToAll = 0.02
+	#Defines the chance the amulet roll 'to <encahntment>' will appear. (Don't mistake this for 'to exsting <enchantment>'!)
+	#Range: 0.0 ~ 1.0
+	chanceToNonExisting = 0.35
+
+[machinery]
+
+	[machinery.tree_beacon]
+		#Set the radius of the tree beacon.
+		#Range: 3.0 ~ 32.0
+		range = 12.0
+		#Set the maximum amount of tree-components the tree beacon may allocate.
+		#Range: 50 ~ 1500
+		maxCount = 450
+		#Set the chance per harvest-tick for drops to get created.
+		#Range: 0.001 ~ 1.0
+		dropChance = 0.15000000596046448
+		#Set the chance per harvest-tick for the block to get broken (1 in <configured chance>). 0 = blocks never break.
+		#Range: > 0
+		breakChance = 1000
+		#Set the weight to pick a log-block to harvest instead of a leaf-block, compared to 'leafWeight'.
+		#Range: 1 ~ 200
+		logWeight = 2
+		#Set the weight to pick a leaf-block (strictly speaking, any non-log block) to harvest instead of a log-block, compared to 'logWeight'.
+		#Range: 1 ~ 200
+		leafWeight = 1
+
+[constellation]
+
+	[constellation.effect]
+
+		[constellation.effect.aevitas]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 10.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 4.0
+			#Defines the amount of blocks this ritual will try to capture at most.
+			#Range: 1 ~ 2048
+			maxAmount = 200
+			#Set the amplifier for the potion effects this ritual provides.
+			#Range: 0 ~ 10
+			potionAmplifier = 1
+
+		[constellation.effect.armara]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 16.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 2.0
+			#Set the amplifier for the potion effects this ritual provides.
+			#Range: 0 ~ 10
+			potionAmplifier = 1
+
+		[constellation.effect.bootes]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 12.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 4.0
+			#Set the chance that an registered animal will be considered for generating loot if it is close to the ritual.
+			#Range: 0.0 ~ 1.0
+			herdingChance = 0.05
+			#Set the chance that a drop that has been found on the entity's loot table is actually dropped.
+			#Range: 0.0 ~ 1.0
+			herdingLootChance = 0.01
+
+		[constellation.effect.discidia]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 10.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 2.0
+			#Defines the max. possible damage dealt per damage tick.
+			#Range: 0.1 ~ 128.0
+			damage = 3.0
+
+		[constellation.effect.evorsio]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 6.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 1.0
+
+		[constellation.effect.fornax]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 8.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 2.0
+			#Defines the chance (0% to 100% -> 0.0 to 1.0) if the block will be replaced with air instead of being properly melted into something.
+			#Range: 0.0 ~ 1.0
+			meltFailChance = 0.0
+
+		[constellation.effect.horologium]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 6.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 3.0
+			#Defines the amount of blocks this ritual will try to capture at most.
+			#Range: 1 ~ 2048
+			maxAmount = 32
+
+		[constellation.effect.lucerna]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 32.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 64.0
+
+		[constellation.effect.mineralis]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 6.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 4.0
+			#Defines the amount of blocks this ritual will try to capture at most.
+			#Range: 1 ~ 2048
+			maxAmount = 1
+			#Defines the blockstates that may be replaced by generated ore from the ritual.
+			replaceableStates = ["minecraft:stone"]
+
+		[constellation.effect.octans]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 12.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 2.0
+			#Defines the amount of blocks this ritual will try to capture at most.
+			#Range: 1 ~ 2048
+			maxAmount = 5
+			#Defines the maximum default tick-time until a fish may be fished by the ritual. Gets reduced internally the more starlight was provided at the ritual. Has to be bigger as the minimum time; if it isn't it'll be set to the minimum.
+			#Range: > 10
+			maxFishTickTime = 500
+			#Defines the minimum default tick-time until a fish may be fished by the ritual. Gets reduced internally the more starlight was provided at the ritual.
+			#Range: > 20
+			
+			minFishTickTime = 100
+		[constellation.effect.pelotrio]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 12.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 0.0
+			#Defines the amount of blocks this ritual will try to capture at most.
+			#Range: 1 ~ 2048
+			maxAmount = 5
+			#Defines the per-tick chance that a new position for a entity-spawn will be searched for.
+			#Range: 0.0 ~ 1.0
+			spawnChance = 0.05
+			#Defines the threshold at which the ritual will stop spawning mobs. If there are more or equal amount of mobs near this ritual, the ritual will not spawn more mobs. Mainly to reduce potential server lag.
+			#Range: 0 ~ 256
+			proximityAmount = 24
+
+		[constellation.effect.vicio]
+			#Set this to false to disable this ritual effect
+			enabled = true
+			#Defines the radius (in blocks) in which the ritual will do its effects.
+			#Range: 1.0 ~ 512.0
+			range = 24.0
+			#Defines the increase in radius the ritual will get per active lens enhancing the ritual.
+			#Range: 0.0 ~ 128.0
+			rangePerLens = 16.0
+
+	[constellation.mantle]
+
+		[constellation.mantle.aevitas]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Set the chance of '1 in <this value>' per tick to do 1 heal cycle. Amount healed per cycle is determined by 'healthPerCycle' config option. Set to 0 to disable.
+			#Range: > 0
+			healChance = 80
+			#Set the chance of '1 in <this value>' per tick to do 1 food cycle. Amount fed per cycle is determined by 'foodPerCycle' config option. Set to 0 to disable.
+			#Range: > 0
+			feedChance = 80
+			#Set the amount of health recovered by health cycle.
+			#Range: 0.0 ~ 100.0
+			healthPerCycle = 0.5
+			#Set the amount of food recovered by food cycle.
+			#Range: 0.0 ~ 100.0
+			foodPerCycle = 1.0
+			#Set the amount alignment charge consumed per tick when walking/standing in the air
+			#Range: 0.0 ~ 100.0
+			chargeCostPerTravelTick = 2
+			#Set the amount alignment charge consumed per feed-cycle
+			#Range: 0 ~ 1000
+			chargeCostPerFood = 100
+			#Set the amount alignment charge consumed per heal-cycle
+			#Range: 0 ~ 1000
+			chargeCostPerHeal = 100
+
+		[constellation.mantle.armara]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Set the max amount of immunity stacks.
+			#Range: 0 ~ 10
+			immunityStacks = 3
+			#Sets the amount of ticks between immunity stack recharges.
+			#Range: 20 ~ 1000000
+			immunityRechargeTicks = 300
+			#Set the amount alignment charge consumed per created immunity stack
+			#Range: 0 ~ 1000
+			chargeCostPerStack = 750
+
+		[constellation.mantle.bootes]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Defines the maximum flare count the mantle can summon and keep following the wearer.
+			#Range: 0 ~ 6
+			maxFlareCount = 3
+			#Set the amount alignment charge consumed per created flare
+			#Range: 0 ~ 1000
+			chargeCostPerFlare = 400
+
+		[constellation.mantle.discidia]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Sets the multiplier for how much of the received damage is converted into additional damage.
+			#Range: 0.0 ~ 100.0
+			damageMultiplier = 1.5
+			#Set the amount alignment charge consumed per attack enhanced by the mantle
+			#Range: 0 ~ 1000
+			chargeCostPerAttack = 100
+
+		[constellation.mantle.evorsio]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Set the amount alignment charge consumed per block break enhanced by the mantle effect
+			#Range: 0 ~ 1000
+			chargeCostPerBreak = 2
+
+		[constellation.mantle.fornax]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Sets the multiplier for how much damage you take from fire damage while wearing a fornax mantle.
+			#Range: 0.0 ~ 1.0
+			damageReductionInFire = 0.4000000059604645
+			#Sets the multiplier for how much more damage the player deals when ignited while wearing a fornax mantle.
+			#Range: 1.0 ~ 3.0
+			damageIncreaseInFire = 1.600000023841858
+			#Sets the multiplier for how much healing the player receives from the original damage when being hit by fire damage.
+			#Range: 0.0 ~ 3.0
+			healPercentFromFireDamage = 0.6000000238418579
+
+		[constellation.mantle.horologium]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Defines the range of the time-freeze bubble.
+			#Range: 4.0 ~ 64.0
+			effectRange = 20.0
+			#Defines the duration of the time-freeze bubble.
+			#Range: 40 ~ 1000
+			effectDuration = 180
+			#Defines the cooldown for the time-freeze effect after it triggered (should be longer than duration maybe)
+			#Range: 40 ~ 20000
+			cooldown = 1000
+			#Set the amount alignment charge consumed per created time stop zone
+			#Range: 0 ~ 1000
+			chargeCostPerFreeze = 400
+
+		[constellation.mantle.lucerna]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Sets the maximum range of where the lucerna cape effect will get entities (and potentially other stuff given the config option for that is enabled) to highlight.
+			#Range: 0 ~ 512
+			range = 48
+			#If this is set to true, particles spawned by the lucerna cape effect will also highlight spawners nearby.
+			findSpawners = true
+			#If this is set to true, particles spawned by the lucerna cape effect will also highlight chests nearby.
+			findChests = true
+
+		[constellation.mantle.mineralis]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Sets the highlight radius in which the cape effect will search for the block you're holding. Set to 0 to disable this effect.
+			#Range: 0 ~ 32
+			range = 10
+			#Set the amount alignment charge consumed per block break enhanced by the mantle effect
+			#Range: 0 ~ 1000
+			chargeCostPerBreak = 2
+
+		[constellation.mantle.octans]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Defines the amount of health that is healed while the wearer is in water. Can be set to 0 to disable this.
+			#Range: 0.0 ~ 5.0
+			healPerTick = 0.009999999776482582
+			#Set the amount alignment charge consumed per accelerated underwater block breaking
+			#Range: 0 ~ 1000
+			chargeCostPerBreakSpeed = 30
+
+		[constellation.mantle.pelotrio]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Defines the chance of a spectral sword spawning that fights mobs nearby for a while when you attack a mob.
+			#Range: 0.0 ~ 1.0
+			chanceSpawnSword = 0.6
+			#Defines the chance of a spectral pickaxe spawning that's mining for you for a bit when you mine a block.
+			#Range: 0.0 ~ 1.0
+			chanceSpawnPickaxe = 0.8
+			#Defines the chance of a spectral axe spawning that's chopping logs and leaves for you for a bit when you break a log or leaf.
+			#Range: 0.0 ~ 1.0
+			chanceSpawnAxe = 0.8
+			#Defines the movement/flying speed of a spawned spectral sword.
+			#Range: 0.5 ~ 4.5
+			speedSword = 2.3
+			#Defines the movement/flying speed of a spawned spectral pickaxe.
+			#Range: 0.5 ~ 4.5
+			speedPickaxe = 1.8
+			#Defines the movement/flying speed of a spawned spectral axe.
+			#Range: 0.5 ~ 4.5
+			speedAxe = 1.8
+			#Defines the damage the sword does per attack.
+			#Range: 0.1 ~ 32.0
+			swordDamage = 4.0
+			#Defines the duration a spawned spectral sword is alive for. It will stay around this amount plus randomly twice this amount of ticks.
+			#Range: 20 ~ 500
+			durationSword = 100
+			#Defines the duration a spawned spectral pickaxe is alive for. It will stay around this amount plus randomly twice this amount of ticks.
+			#Range: 20 ~ 500
+			durationPickaxe = 100
+			#Defines the duration a spawned spectral axe is alive for. It will stay around this amount plus randomly twice this amount of ticks.
+			#Range: 20 ~ 500
+			durationAxe = 100
+			#Defines how many ticks are at least between sword attacks the sword makes.
+			#Range: 1 ~ 100
+			ticksPerSwordAttack = 6
+			#Defines how long a pickaxe needs to break a block.
+			#Range: 1 ~ 100
+			ticksPerPickaxeBlockBreak = 4
+			#Defines how long an axe is going to need to break a leaf or log.
+			#Range: 1 ~ 100
+			ticksPerAxeLogBreak = 2
+			#Set the amount alignment charge consumed per created spectral sword
+			#Range: 0 ~ 1000
+			chargeCostPerSword = 250
+			#Set the amount alignment charge consumed per created spectral sword
+			#Range: 0 ~ 1000
+			chargeCostPerPickaxe = 250
+			#Set the amount alignment charge consumed per created spectral sword
+			#Range: 0 ~ 1000
+			chargeCostPerAxe = 250
+
+		[constellation.mantle.vicio]
+			#Set this to false to disable this mantle effect
+			enabled = true
+			#Defines the amount of starlight charge consumed per !second! during creative-flight with the vicio mantle.
+			#Range: 1 ~ 500
+			chargeCost = 60
+
+[registries]
+
+	[registries.fluid_rarities]
+		#Defines fluid-rarities and amounts for the evershifting fountain's neromantic prime. The lower the relative rarity, the more rare the fluid. Format: <FluidName>;<guaranteedMbAmount>;<additionalRandomMbAmount>;<rarity>
+		fluid_rarities = ["minecraft:water;2147483647;2147483647;14000", "minecraft:lava;4000000;1000000;7500","pneumaticcraft:oil;2500000;1000000;5000","mekanismgenerators:flowing_fusion_fuel;1000000;500000;100","industrialforegoing:sewage_fluid;10000000;5000000;250","bloodmagic:life_essence_fluid_flowing;5000000;2500000;250","industrialforegoing:sludge_fluid;1000000;1000000;200","immersivepetroleum:napalm;500000;500000;100","industrialforegoing:essence_fluid;500000;100000;300", "mekanism:flowing_heavy_water;10000000;2000000;2500"]
+
+	[registries.technical_entities]
+		#Defines entities whose purpose is mostly technical and less gameplay impactful. Those will be excluded from effects that manipulate entities. Add entities by their entity type name.Format: <EntityTypeName>
+		technical_entities = ["minecraft:ender_pearl", "minecraft:firework_rocket", "astralsorcery:observatory_helper", "astralsorcery:nocturnal_spark", "astralsorcery:illumination_spark", "astralsorcery:grappling_hook", "botania:mana_burst", "botania:spark", "botania:corporea_spark"]
+
+	[registries.tile_acceleration_blacklist]
+		#Accepts & matches against strings: 1) what a tileentity-type's registry name starts with, 2) what a tileentity's fully qualified class name starts with, 3) (special case) a fully qualified class name (Instances & sub-class instance of that class will be blacklisted)
+		tile_acceleration_blacklist = ["net.minecraft.tileentity.PistonTileEntity", "net.minecraft.tileentity.LockableLootTileEntity", "appeng", "raoulvdberge.refinedstorage", "hellfirepvp.astralsorcery.common.tile.base.network.TileTransmissionBase", "hellfirepvp.astralsorcery.common.tile.base.network.TileSourceBase", "hellfirepvp.astralsorcery.common.tile.altar.TileAltar", "hellfirepvp.astralsorcery.common.tile.TileAttunementAltar", "hellfirepvp.astralsorcery.common.tile.TileObservatory", "hellfirepvp.astralsorcery.common.tile.TileRitualLink", "hellfirepvp.astralsorcery.common.tile.TileRitualPedestal", "hellfirepvp.astralsorcery.common.tile.TileSpectralRelay", "hellfirepvp.astralsorcery.common.tile.TileTelescope", "hellfirepvp.astralsorcery.common.tile.TileTranslucentBlock", "hellfirepvp.astralsorcery.common.tile.TileTreeBeaconComponent", "hellfirepvp.astralsorcery.common.tile.TileVanishing"]
+
+	[registries.amulet_enchantments]
+		#Defines a whitelist of which enchantments can be rolled and buffed by the enchantment-amulet. The higher the weight, the more likely that roll is selected.Format: <enchantment-registry-name>;<weight>
+		amulet_enchantments = ["minecraft:protection;10", "minecraft:fire_protection;5", "minecraft:feather_falling;5", "minecraft:blast_protection;2", "minecraft:projectile_protection;5", "minecraft:respiration;2", "minecraft:aqua_affinity;2", "minecraft:thorns;1", "minecraft:depth_strider;2",   "minecraft:sharpness;10", "minecraft:smite;5", "minecraft:bane_of_arthropods;5", "minecraft:knockback;5", "minecraft:fire_aspect;2", "minecraft:looting;2", "minecraft:sweeping;2", "minecraft:efficiency;10", "minecraft:unbreaking;5", "minecraft:fortune;2", "minecraft:power;10", "minecraft:punch;2", "minecraft:flame;2", "minecraft:infinity;1", "minecraft:luck_of_the_sea;2", "minecraft:lure;2", "minecraft:loyalty;5", "minecraft:impaling;2", "minecraft:riptide;2", "minecraft:channeling;1", "minecraft:multishot;2", "minecraft:quick_charge;5", "minecraft:piercing;10", "minecraft:mending;2", "gunswithoutroses:impact;10", "gunswithoutroses:bullseye;10", "gunswithoutroses:sleight_of_hand;5", "gunswithoutroses:preserving;2", "naturesaura:aura_mending;2", "ensorcelled:enchantmentminer;1", "morevanillalib:repairing_luck;2", "astralsorcery:night_vision;1", "astralsorcery:scorching_heat;1", "farmersdelight:backstabbing;5", "ars_nouveau:mana_regen;5", "ars_nouveau:mana_boost;5", "ensorcellation:magic_protection;5", "ensorcellation:displacement;2", "ensorcellation:fire_rebuke;1", "ensorcellation:frost_rebuke;1", "ensorcellation:exp_boost;5", "ensorcellation:gourmand;5", "ensorcellation:reach;5", "ensorcellation:vitality;1", "ensorcellation:damage_ender;5", "ensorcellation:damage_illager;5", "ensorcellation:damage_villager;5", "ensorcellation:cavalier;5", "ensorcellation:frost_aspect;2", "ensorcellation:instigating;5", "ensorcellation:leech;5", "ensorcellation:magic_edge;2", "ensorcellation:vorpal;2", "ensorcellation:excavating;2", "ensorcellation:hunter;1", "ensorcellation:quick_draw;5", "ensorcellation:trueshot;5", "ensorcellation:volley;2", "ensorcellation:angler;1", "ensorcellation:pilfering;2", "ensorcellation:furrowing;5", "ensorcellation:tilling;2", "ensorcellation:weeding;5", "ensorcellation:bulwark;5", "ensorcellation:phalanx;5", "ensorcellation:soulbound;5", "travel_anchors:range;2", "apotheosis:hell_infusion;1", "apotheosis:depth_miner;2", "apotheosis:scavenger;1", "apotheosis:icy_thorns;2", "apotheosis:shield_bash;2", "apotheosis:reflective;2", "apotheosis:knowledge;2", "apotheosis:natures_blessing;2", "apotheosis:rebounding;2", "apotheosis:magic_protection;5", "apotheosis:sea_infusion;1", "apotheosis:bane_of_illagers;5", "apotheosis:obliteration;2", "apotheosis:crescendo;2", "apotheosis:capturing;1"]
+
+	[registries.gem_attributes]
+		#Format: '<attributeRegistryName>;<integerWeight>' Defines the attributes Perk Gems can roll.
+		gem_attributes = ["astralsorcery:maxhealth;2", "astralsorcery:movespeed;8", "astralsorcery:armor;8", "astralsorcery:reach;4", "astralsorcery:attackspeed;2", "astralsorcery:meleeattackdamage;8", "astralsorcery:projectileattackdamage;8", "astralsorcery:harvestspeed;2", "astralsorcery:critchance;4", "astralsorcery:critmulti;4", "astralsorcery:allres;2", "astralsorcery:dodge;2", "astralsorcery:liferecovery;2", "astralsorcery:chargecap;3", "astralsorcery:chargeregeneration;3", "astralsorcery:expgain;1"]
+
+	[registries.perk_void_trash_ore]
+		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define item-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
+		perk_void_trash_ore = ["forge:ores/aluminum;1200","forge:ores/apatite;700","forge:ores/mana;200", "forge:ores/bitumen;1000","forge:ores/cinnabar;500","forge:ores/coal;5200","forge:ores/copper;2000","forge:ores/diamond;120","forge:ores/dimensional;20","forge:ores/emerald;100","forge:ores/fluorite;50","forge:ores/gold;550","forge:ores/iron;2500","forge:ores/lapis;360","forge:ores/lead;1500","forge:ores/nickel;100","forge:ores/osmium;1500","forge:ores/potassium_nitrate;250","forge:ores/redstone;700","forge:ores/silver;1000","forge:ores/sulfur;300","forge:ores/tin;1800","forge:ores/uranium;400","forge:ores/zinc;1000"]
+	[registries.perk_stone_enrichment_ore]
+		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define block-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
+		perk_stone_enrichment_ore = ["forge:ores/aluminum;1200","forge:ores/apatite;700","forge:ores/mana;200", "forge:ores/bitumen;1000","forge:ores/cinnabar;500","forge:ores/coal;5200","forge:ores/copper;2000","forge:ores/diamond;120","forge:ores/dimensional;20","forge:ores/emerald;100","forge:ores/fluorite;50","forge:ores/gold;550","forge:ores/iron;2500","forge:ores/lapis;360","forge:ores/lead;1500","forge:ores/nickel;100","forge:ores/osmium;1500","forge:ores/potassium_nitrate;250","forge:ores/redstone;700","forge:ores/silver;1000","forge:ores/sulfur;300","forge:ores/tin;1800","forge:ores/uranium;400","forge:ores/zinc;1000"]
+
+	[registries.mineralis_ritual_ore]
+		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define block-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
+		mineralis_ritual_ore = ["forge:ores/aluminum;1200","forge:ores/apatite;700","forge:ores/mana;200", "forge:ores/bitumen;1000","forge:ores/cinnabar;500","forge:ores/coal;2400","forge:ores/copper;2000","forge:ores/diamond;120","forge:ores/dimensional;20","forge:ores/emerald;100","forge:ores/fluorite;50","forge:ores/gold;550","forge:ores/iron;2500","forge:ores/lapis;360","forge:ores/lead;1500","forge:ores/nickel;100","forge:ores/osmium;1500","forge:ores/potassium_nitrate;250","forge:ores/redstone;700","forge:ores/silver;1000","forge:ores/sulfur;300","forge:ores/tin;1800","forge:ores/uranium;400","forge:ores/zinc;1000"]
+	[registries.entity_transmutation]
+		#Defines the entity types the corrupted pelotrio ritual can transmute from and to. Format: <EntityTypeFrom>;<EntityTypeTo>
+		entity_transmutation = ["minecraft:skeleton;minecraft:wither_skeleton", "minecraft:villager;minecraft:witch", "minecraft:pig;minecraft:zombified_piglin", "minecraft:cow;minecraft:zombie", "minecraft:parrot;minecraft:ghast", "minecraft:chicken;minecraft:blaze", "minecraft:sheep;minecraft:stray", "minecraft:horse;minecraft:skeleton_horse"]
+

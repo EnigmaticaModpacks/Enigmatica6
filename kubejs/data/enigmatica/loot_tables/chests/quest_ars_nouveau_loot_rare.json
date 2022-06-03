@@ -1,0 +1,102 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "ars_nouveau:mana_gem",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "ars_nouveau:mythical_clay",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "ars_nouveau:marvelous_clay",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "ars_nouveau:magic_clay",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{StoredEnchantments:[{lvl:2,id:\"ars_nouveau:mana_regen\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{StoredEnchantments:[{lvl:2,id:\"ars_nouveau:mana_boost\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{StoredEnchantments:[{lvl:1,id:\"minecraft:mending\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:potion",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Potion:\"ars_nouveau:mana_regen_potion_long\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

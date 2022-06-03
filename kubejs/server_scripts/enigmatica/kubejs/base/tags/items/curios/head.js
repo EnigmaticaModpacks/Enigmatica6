@@ -1,0 +1,1 @@
+onEvent('item.tags', (event) => {});

@@ -1,0 +1,1596 @@
+{
+	id: "0000000000000AF3"
+	group: "5A8B89F87F77CF4C"
+	order_index: 2
+	filename: "astral_sorcery_wip"
+	title: "Astral Sorcery"
+	icon: "astralsorcery:hand_telescope"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Astral Sorcery"
+			icon: "astralsorcery:tome"
+			x: 7.0d
+			y: -10.5d
+			shape: "gear"
+			description: [
+				"Remnants of an ancient civilization dot the land, though they give little clue as to what became of them. The villagers who remain share legends of them in hushed “Hrms”, though they avoid the structures in fear."
+				""
+				"Pillagers, fierce as they may be, seem to share in this superstition... What secrets await discovery?"
+				""
+				"~MuteTiefling"
+			]
+			optional: true
+			id: "0000000000000AF4"
+			tasks: [{
+				id: "68C3AD7DEDCF8C8B"
+				type: "item"
+				item: "astralsorcery:aquamarine"
+				count: 4L
+			}]
+			rewards: [{
+				id: "00B5497F8AA28D93"
+				type: "item"
+				title: "Marble"
+				item: "astralsorcery:marble_raw"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			x: 7.0d
+			y: -9.0d
+			subtitle: "A Beacon in the Night"
+			description: [
+				"“Ancient ruins carved from brilliant white marble dot the land. They appear mostly harmless, despite the unwillingness of Villagers to approach them, and my explorations of them have turned up a number of curiosities that defy explanation."
+				""
+				"Prime among them being the floating crystals housed within the largest of the structures."
+				""
+				"While setting up a workstation to begin my studies, a brilliant white beam extended from it and imbued the wood, changing its structure entirely. Curious.”"
+				"_________________________________________________"
+				""
+				"Locate a Large Temple, found frequently in cold or mountainous biomes, and find a way inside. Be careful not to disturb the crystal within, as it will be needed to progress. "
+				""
+				"The crystal must be exposed to the sky to function. It will link automatically to a vanilla Crafting table, but will otherwise require a Linking Tool to connect to any other block."
+				""
+				"These may be located far from home, but revisiting this crystal will be vital through much of the early stages of the mod. Use the provided Warp Scrolls to simplify getting back and forth for now."
+			]
+			dependencies: ["0000000000000AF4"]
+			min_width: 300
+			id: "0000000000000B6E"
+			tasks: [{
+				id: "0000000000000B77"
+				type: "item"
+				item: "astralsorcery:altar_discovery"
+			}]
+			rewards: [
+				{
+					id: "0000000000000BDB"
+					type: "item"
+					title: "Warp Scroll"
+					item: "ars_nouveau:warp_scroll"
+					count: 16
+				}
+				{
+					id: "0000000000000C5E"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			icon: "astralsorcery:ritual_pedestal"
+			x: 2.5d
+			y: -4.0d
+			subtitle: "I Rise With The Moon"
+			description: [
+				"“The Attuned Crystal slots into the altar with a satisfying clink and a subtle hum resonates through the ground."
+				""
+				"Furball is nowhere to be seen. I cannot say as I blame her; this altar sends a chill down my spine even after all I’ve seen. Night approaches and I feel the power waxing with it.”"
+				"________________________________"
+				""
+				"The Ritual Altar is a powerful device capable of creating effects in a large area. For instance, all stone in the vicinity of a Mineralis ritual will spontaneously convert to random ores, and mob spawning will be halted by a Lucerna ritual."
+				""
+				"They may be further augmented by attuning the crystal a second time to a Faint constellation. Refer to the Astral Tome for more information on this process and the effects each constellation has. "
+				""
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+			]
+			dependencies: ["0000000000000B8E"]
+			id: "0000000000000B70"
+			tasks: [
+				{
+					id: "0000000000000B90"
+					type: "item"
+					item: "astralsorcery:ritual_pedestal"
+				}
+				{
+					id: "0000000000000B91"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 12L
+				}
+				{
+					id: "0000000000000B92"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+				}
+				{
+					id: "0000000000000B93"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 24L
+				}
+				{
+					id: "0000000000000B94"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 20L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C4D"
+				type: "command"
+				title: "Epic Astral Sorcery Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:well"
+			x: 4.0d
+			y: -9.5d
+			subtitle: "Let That Sink In"
+			description: [
+				"“Perhaps the old hermit wasn’t such a loon after all. Some inscriptions in the ruins have led me to craft a well that seems to resonate as more Rock Crystals or Aquamarines are brought nearby. "
+				""
+				"Placing either within the well has led to a shimmering liquid condensing on their surface, collecting in the bottom of the well. "
+				""
+				"Surely this isn’t the tea the hermit was after?”"
+				"________________________________"
+				""
+				"Right Click the Lightwell with an Aquamarine, found in shallow sandy waters, to begin collecting Starlight. "
+				"The Aquamarine will eventually be consumed but should produce a decent amount of Starlight before that happens. "
+				""
+				"Using a Linking Tool to bind a Collector Crystal (such as the ones located in Large Temples) can speed along this process. "
+				""
+				"Starlight may be extracted manually with a bucket, or with pipes from the bottom face. "
+			]
+			dependencies: ["0000000000000BA3"]
+			id: "0000000000000B72"
+			tasks: [
+				{
+					id: "0000000000000B86"
+					type: "item"
+					item: "astralsorcery:well"
+				}
+				{
+					id: "0000000000000BDF"
+					type: "item"
+					item: "astralsorcery:aquamarine"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000BE0"
+					type: "item"
+					title: "Aquamarine Shale"
+					item: "astralsorcery:aquamarine_sand_ore"
+					count: 8
+				}
+				{
+					id: "0000000000000C60"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -7.5d
+			subtitle: "As Above, So Below"
+			description: [
+				"“The fisher-folk of nearby villages are quite adept at their trade and spend days at sea fishing. When I’ve managed to catch them at their homes, they’ve spoken at length of the various constellations they use to navigate their boats in safety. "
+				""
+				"I thought them to be fanciful inventions, but now with these papers in hand, I see that their long traditions began from the very thing they now fear.”"
+				"________________________________"
+				""
+				"Constellation Papers may be found in any of the marble temples and ruins throughout the world. A total of sixteen will be needed eventually. Find as many as possible to begin. "
+			]
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000B74"
+			tasks: [{
+				id: "0000000000000B87"
+				type: "item"
+				item: {
+					id: "astralsorcery:constellation_paper"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C51"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:altar_attunement"
+			x: 7.0d
+			y: -6.0d
+			description: [
+				"The first upgrade to the crafting altar, be sure to use Astral Sorcery marble for the structure."
+				""
+				"Upgraded crafters are also capable of crafting everything that the previous tiers could craft."
+				""
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+			]
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000B79"
+			tasks: [
+				{
+					id: "0000000000000B7A"
+					type: "item"
+					item: "astralsorcery:altar_attunement"
+				}
+				{
+					id: "0000000000000C2F"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 8L
+				}
+				{
+					id: "0000000000000C30"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 8L
+				}
+				{
+					id: "0000000000000C31"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 24L
+				}
+				{
+					id: "0000000000000C32"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 28L
+				}
+				{
+					id: "0000000000000C33"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 21L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C42"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:altar_constellation"
+			x: 7.0d
+			y: -4.5d
+			description: [
+				"The next tier of crafting altar. Many of these resources may be re-used from the previous altar."
+				""
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+			]
+			dependencies: ["0000000000000B79"]
+			id: "0000000000000B7B"
+			tasks: [
+				{
+					id: "0000000000000B7C"
+					type: "item"
+					item: "astralsorcery:altar_constellation"
+				}
+				{
+					id: "0000000000000C34"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 4L
+				}
+				{
+					id: "0000000000000C35"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 4L
+				}
+				{
+					id: "0000000000000C36"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 49L
+				}
+				{
+					id: "0000000000000C37"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 12L
+				}
+				{
+					id: "0000000000000C38"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 8L
+				}
+				{
+					id: "0000000000000C39"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 40L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C43"
+				type: "command"
+				title: "Epic Astral Sorcery Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:altar_radiance"
+			x: 7.0d
+			y: -3.0d
+			description: [
+				"The final upgrade to the crafting altar. This tier introduces a new mechanic for crafts whereby Astral Relays must be present on the Sooty Marble. The craft will ask for items to be inserted into these relays during the process."
+				""
+				"A properly attuned crystal is also required in the extra slot of the crafting table itself to align it to that constellation."
+				""
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+			]
+			dependencies: ["0000000000000B7B"]
+			id: "0000000000000B7D"
+			tasks: [
+				{
+					id: "0000000000000B7E"
+					type: "item"
+					item: "astralsorcery:altar_radiance"
+				}
+				{
+					id: "0000000000000C3A"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 8L
+				}
+				{
+					id: "0000000000000C3B"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 4L
+				}
+				{
+					id: "0000000000000C3C"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 68L
+				}
+				{
+					id: "0000000000000C3D"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 12L
+				}
+				{
+					id: "0000000000000C3E"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 49L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C44"
+				type: "command"
+				title: "Legendary Astral Sorcery Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:spectral_relay"
+			x: 9.0d
+			y: -7.5d
+			description: [
+				"“Upon struggling to locate an appropriate starlight field anywhere near my basecamp, I have decided to take matters into my own hands. "
+				""
+				"Carving marble into the shapes found within these ancient temples has allowed me to create a focusing relay that gathers more starlight and sends it straight to the altar like some great parabolic dish.”"
+				"________________________________"
+				""
+				"Placing one of these structures to each side of the altar is an excellent way to boost early starlight. Ideally, they should be spaced far apart to prevent interference between Relays."
+				""
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+			]
+			dependencies: ["0000000000000B9F"]
+			id: "0000000000000B7F"
+			tasks: [
+				{
+					id: "0000000000000B80"
+					type: "item"
+					item: "astralsorcery:spectral_relay"
+				}
+				{
+					id: "0000000000000B81"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+				}
+				{
+					id: "0000000000000B82"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 4L
+				}
+				{
+					id: "0000000000000B83"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C46"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Through the Looking Glass"
+			x: 5.5d
+			y: -6.0d
+			subtitle: "Dreaming as the Days Go By"
+			description: [
+				"“It appears I have been adopted by a village cat. Adorable as it is, its attentions have made my star gazing rather difficult with only a handheld looking glass. "
+				""
+				"I shall have to find a way to brace it.”"
+				"________________________________"
+				""
+				"The Looking Glass is the first tool used to discover and map out the constellations in the sky. "
+				""
+				"Examine the constellation papers you have found so far and see if you can spot them in the night sky. They are notable for their large slowly blinking stars. "
+				""
+				"Once a constellation has been located, hold Sneak to begin tracing the points. Upon successfully tracing out the constellation, it will be learned. "
+				""
+				"Not every constellation appears each night, so regularly star gazing is encouraged. "
+			]
+			dependencies: ["0000000000000B74"]
+			id: "0000000000000B88"
+			tasks: [{
+				id: "0000000000000B89"
+				type: "item"
+				item: "astralsorcery:hand_telescope"
+			}]
+			rewards: [
+				{
+					id: "0000000000000C22"
+					type: "command"
+					title: "Furball"
+					icon: "aquaculture:fish_bones"
+					command: "/tamedsummon minecraft:cat @p ~ ~ ~"
+					player_command: false
+				}
+				{
+					id: "0000000000000C23"
+					type: "item"
+					title: "Raw Cod"
+					item: "minecraft:cod"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -5.0d
+			subtitle: "Ever Drifting Down the Stream"
+			description: [
+				"“This incorrigible lump of fur has shattered two of my lenses in the process of constructing this telescope. I suppose now is as good a time as any to purchase more salmon from the fishmonger…”"
+				"________________________________"
+				""
+				"The telescope greatly simplifies the task of searching for constellations. They must still be drawn in to learn them, but the improved optics grants a clearer image of the night sky."
+			]
+			dependencies: ["0000000000000B79"]
+			id: "0000000000000B8A"
+			tasks: [{
+				id: "0000000000000B8B"
+				type: "item"
+				item: "astralsorcery:telescope"
+			}]
+			rewards: [{
+				id: "0000000000000C4B"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.0d
+			subtitle: "Lingering in the Golden Gleam"
+			description: [
+				"“Furball has taken a liking to the small heater I’ve attached to the observatory to protect it on cold nights. She purrs beside me, curled up for the night. "
+				""
+				"Some of the older fisher-folk were able to tell me of these, though they haven’t seen them in an age themselves. I’m thankful for the company as seek for traces of faint starlight in the night skies.”"
+				"________________________________"
+				""
+				"With the observatory it is possible to locate the final few faint constellations in the night sky. "
+			]
+			dependencies: ["0000000000000B7D"]
+			id: "0000000000000B8C"
+			tasks: [{
+				id: "0000000000000B8D"
+				type: "item"
+				item: "astralsorcery:observatory"
+			}]
+			rewards: [{
+				id: "0000000000000C4A"
+				type: "command"
+				title: "Legendary Astral Sorcery Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.5d
+			description: [
+				"“I was sure she was dead. As I turned, I saw her floating there, a limp fluff ball hanging in the air as if held by the scruff of her neck. A breath. Two. Then her eyes opened, and I could see the entire night’s sky them."
+				""
+				"Imagine my relief. But she seems changed somehow. Does the attunement field interact with living beings in the same way as the crystals? "
+				""
+				"I suppose I have little else to try besides join her.”"
+				"________________________________"
+				""
+				"The Attunement Altar will attune both Crystals and you to a given constellation. Hold a constellation paper in one hand to see points of light mapping it out on the sooty marble of the altar. Placing relays at these points will set the constellation."
+				""
+				"Once attuned, a whole new talent tree will become available to you. Levels are earned by performing actions in line with the constellation, and points are assigned within the Astral Tome. Spend them wisely, for resetting them comes at a cost. "
+				""
+				"Attunement is also required to begin tracing Dim Constellations."
+				""
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+			]
+			dependencies: ["0000000000000B8A"]
+			min_width: 300
+			id: "0000000000000B8E"
+			tasks: [{
+				id: "0000000000000B8F"
+				type: "item"
+				item: "astralsorcery:attunement_altar"
+			}]
+			rewards: [{
+				id: "0000000000000C4C"
+				type: "command"
+				title: "Epic Astral Sorcery Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Nocturnal \\& Illumination Powder"
+			x: 8.5d
+			y: -9.5d
+			subtitle: "Letting the Dust Settle"
+			description: [
+				"“By the night, never in my wildest dreams have I met such horrors. Note to self: Do not, under any circumstances, drop this blackened powder without extreme precautionary measures.”"
+				"________________________________"
+				""
+				"Far from simple crafting requirements, Illumination and Nocturnal Powders are quite useful in their own right. The former will light up an area like a torch, while the latter will darken the area, forcing monsters to spawn there in large numbers."
+				""
+				"You have been warned."
+			]
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000B95"
+			tasks: [
+				{
+					id: "0000000000000B96"
+					type: "item"
+					item: "astralsorcery:nocturnal_powder"
+				}
+				{
+					id: "0000000000000B97"
+					type: "item"
+					item: "astralsorcery:illumination_powder"
+				}
+			]
+			rewards: [{
+				id: "0000000000000C2E"
+				type: "item"
+				title: "Cave Illuminator"
+				item: "astralsorcery:illuminator"
+			}]
+		}
+		{
+			title: "Enhanced Collector Crystals"
+			icon: {
+				id: "astralsorcery:celestial_collector_crystal"
+				Count: 1b
+				tag: {
+					astralsorcery: {
+						constellation: "astralsorcery:bootes"
+						crystalProperties: {
+							attributes: [
+								{
+									property: "astralsorcery:size"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:purity"
+									pLevel: 2
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:shape"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:collector.rate"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:constellation.bootes"
+									pLevel: 2
+									discovered: 1b
+								}
+							]
+						}
+					}
+				}
+			}
+			x: 1.0d
+			y: -4.5d
+			description: [
+				"“Using the same principal as applied to the Relays early in my studies, I believe it may be possible to greatly enhance the starlight collected by these floating crystals. The materials and structure must fit the application, however."
+				""
+				"Perhaps the mirror-like surface of liquid starlight itself?”"
+				"________________________________"
+				""
+				"Enhanced Collector Crystals can greatly enhance the power of a ritual. Be warned, however, that feeding too much starlight into a ritual can lead to the ritual’s crystal fracturing, dropping splinters into the world. "
+				""
+				"Certain attunements are more susceptible to this than others. "
+				""
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+			]
+			dependencies: [
+				"0000000000000B70"
+				"0000000000000BCD"
+			]
+			id: "0000000000000B98"
+			tasks: [
+				{
+					id: "0000000000000B99"
+					type: "item"
+					title: "Any Collector Crystal"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astralsorcery:crystals/collector"
+						}
+					}
+				}
+				{
+					id: "0000000000000B9A"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+				}
+				{
+					id: "0000000000000B9B"
+					type: "item"
+					item: "astralsorcery:marble_engraved"
+					count: 5L
+				}
+				{
+					id: "0000000000000B9C"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 9L
+				}
+				{
+					id: "0000000000000B9D"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 5L
+				}
+				{
+					id: "0000000000000B9E"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 12L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C52"
+				type: "command"
+				title: "Legendary Astral Sorcery Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: -8.5d
+			description: [
+				"“The Elders of villages have at times been known to hold an odd trinket aloft that spins lightly to no visible force. They are only brought out to consult on auspicious occasions, such as seeking a new plot to lay their crops. "
+				""
+				"Of course, I am familiar with magnetism and these devices appear as no magnet I have ever known. "
+				""
+				"I have only had a close look at one on a single occasion, but my memory is clear. I believe I may be able to replicate it and see exactly what it is they’re allowing themselves to be guided by.”"
+				"_________________________________________________"
+				""
+				"When held in hand, the Fosic Resonator serves to locate areas with a high starlight concentration. These areas are an excellent place to build crafting altars as they will grant a boost to the total starlight the altar receives. "
+				""
+				"Building the altar at higher elevations will also assist with starlight collection to a point. "
+				""
+				"Worry not, if an area with a high concentration cannot be found, it is more than possible to get enough starlight into an altar without these boosts. "
+			]
+			dependencies: ["0000000000000B6E"]
+			min_width: 300
+			id: "0000000000000B9F"
+			tasks: [{
+				id: "0000000000000BA0"
+				type: "item"
+				item: {
+					id: "astralsorcery:resonator"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							upgrades: [0]
+							selected_upgrade: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C45"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.5d
+			y: -9.0d
+			subtitle: "Unsettling to Behold"
+			description: [
+				"“While seeking materials in the depths, I stumbled across these brilliant white crystals. The local villagers would have nothing to do with them and offering them in trade earned me more than a few rude “Hrms” and one door slammed in my face. "
+				""
+				"One wizened old hermit did offer to buy it from me, muttering something about using it to brew some tea to rejuvenate his old bones…”"
+				"________________________________"
+				""
+				"Rock Crystals may be found near bedrock in small clusters and must be mined by hand. "
+				""
+				"Holding a Resonating Wand while wandering the surface at night will reveal where to begin digging, as great plumes of light burst from the ground, marking their locations. "
+			]
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000BA3"
+			tasks: [
+				{
+					id: "0000000000000BA4"
+					type: "item"
+					item: {
+						id: "astralsorcery:rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "543F8C616957EB53"
+					type: "item"
+					item: "astralsorcery:wand"
+				}
+			]
+			rewards: [{
+				id: "0000000000000C5F"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.0d
+			y: -10.5d
+			description: [
+				"“A strange thing occurred over-night which I am at odds to explain. I had left a handful of these crystals and tool rods scattered about and upon waking I note that they have spontaneously assembled into the shape of a pickaxe."
+				""
+				"A mere tap with a resonating wand causes them to self assemble into a tool of impeccable durability and strength.”"
+				"________________________________"
+				""
+				"Size, Shape, Durability, and Efficiency traits are all important when crafting Crystal Tools, where the stats of the final tool will be a combination of those used to craft it."
+			]
+			dependencies: ["0000000000000BA3"]
+			id: "0000000000000BA5"
+			tasks: [{
+				id: "0000000000000BA6"
+				type: "item"
+				item: {
+					id: "astralsorcery:crystal_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C54"
+				type: "command"
+				title: "Epic Astral Sorcery Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:infuser"
+			x: 8.5d
+			y: -3.5d
+			description: [
+				"“At long last, I believe I’ve discovered what that hermit was muttering about. An entry in a tome found recently has alluded to a process if Infusion with starlight that drastically transforms the object. "
+				""
+				"I shall have to ponder this discovery over another cup of tea.”"
+				"________________________________"
+				""
+				"Right-Click an item into the Infuser and then Right-Click again with a Resonating Wand to begin the craft. Each craft has a small chance of consuming Liquid Starlight. "
+				""
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+			]
+			dependencies: ["0000000000000B7B"]
+			id: "0000000000000BA7"
+			tasks: [
+				{
+					id: "0000000000000BA8"
+					type: "item"
+					item: "astralsorcery:infuser"
+				}
+				{
+					id: "0000000000000BA9"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+				{
+					id: "0000000000000BAA"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 8L
+				}
+				{
+					id: "0000000000000BAB"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 4L
+				}
+				{
+					id: "0000000000000BAC"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 20L
+				}
+				{
+					id: "0000000000000BAD"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C48"
+				type: "command"
+				title: "Epic Astral Sorcery Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: -8.5d
+			subtitle: "Splitting Hairs"
+			description: [
+				"“Pretty. I have found myself lost in thought more than once while contemplating the shimmering depths of this new metal.  Initial tests have proven it to be practically useless for work tools. Much too soft."
+				"Curiously, when brought into contact with the crystals, they seem to split with little effort."
+				""
+				"Perhaps I shall fashion a tool for just such a purpose.”"
+				"________________________________"
+				""
+				"Crystal splitting is an in-world process performed by dropping the crystals on the ground and left clicking them with the Cutting Tool. The crystal will not always split, and sometimes attributes will be lost during the process. "
+				""
+				"The same process is used to convert Starmetal Ingots into Stardust."
+			]
+			dependencies: ["0000000000000BB3"]
+			id: "0000000000000BAE"
+			tasks: [{
+				id: "0000000000000BAF"
+				type: "item"
+				item: {
+					id: "astralsorcery:chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000BB0"
+				type: "item"
+				title: "Unbreaking III"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -9.5d
+			description: [
+				"“No. No, this is not the tea, that’s for sure. And I question my own sanity for listening to the hermit. A cautious sip has left my mouth numb for hours. "
+				""
+				"In my shock at the sensation, I managed to spill the remaining liquid into my actual tea, freezing it solid, and into my crucible which has mysteriously been filled with sand now.”"
+				"________________________________"
+				""
+				"When placed in the world, flowing Starlight that encounters flowing water will create Packed Ice. When contacting flowing lava, it produces Sand with a chance of making Aquamarine Shale.  "
+				""
+				"Creating a small farm to generate Sand and Aquamarine Shale may prove very useful going forward to produce more Liquid Starlight. Packed Ice may also be of great use for other mods…"
+			]
+			dependencies: ["0000000000000B72"]
+			id: "0000000000000BB1"
+			tasks: [{
+				id: "0000000000000BB2"
+				type: "item"
+				item: "astralsorcery:liquid_starlight_bucket"
+			}]
+			rewards: [{
+				id: "0000000000000C56"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: -8.5d
+			description: [
+				"“After the unexpected incident with my work bench I began placing other objects near the floating crystal. None seemed to react in any way at first. "
+				""
+				"Instead, I found I needed to tease the beam of light out of the crystal using like materials.  It was an odd sensation, to be sure, like drawing a thread of light through the eye of a needle."
+				""
+				"The beam readily followed a crude wand and held steady once bound to a location. Placing different items at the end of the beam had surprising effects.”"
+				"________________________________"
+				""
+				"This Starlight Transmutation is capable of much more than making Starmetal. Explore the possibilities."
+				""
+				"Ore Chunks can be freely converted to Vanilla Iron Ore via the Stonecutter. "
+			]
+			dependencies: ["0000000000000BA3"]
+			id: "0000000000000BB3"
+			tasks: [{
+				id: "0000000000000BB4"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
+			}]
+			rewards: [{
+				id: "0000000000000C55"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.0d
+			description: [
+				"Placing a Containment Chalice filled with Starlight near a Starlight Infusion Altar will prevent the loss of Starlight sources blocks during crafting, instead causing a small amount to be drained from the Chalice itself. "
+				""
+				"The Chalice can be accessed by pipes from the bottom."
+			]
+			dependencies: ["0000000000000B7D"]
+			id: "0000000000000BB5"
+			tasks: [{
+				id: "0000000000000BB6"
+				type: "item"
+				item: "astralsorcery:chalice"
+			}]
+			rewards: [{
+				id: "0000000000000C49"
+				type: "command"
+				title: "Legendary Astral Sorcery Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Ritual Anchor"
+			x: 1.5d
+			y: -3.0d
+			description: [
+				"“Furball’s mistrust of the Rituals has made working with them somewhat difficult. Fortunately, it seems I can move the effect rather effortlessly with a specially prepared anchor. "
+				""
+				"They put off a pleasant glow perfect for reading by as well and she has taken to curling up near it as I study.”"
+				"________________________________"
+				""
+				"The Ritual Anchor is handy for moving the effect of a ritual to a place where the ritual wouldn't otherwise fit. They may be placed underground or otherwise out of view of the sky."
+				""
+				"Use a Linking Tool bind the Anchor above the ritual to the Anchor at the desired location. "
+			]
+			dependencies: ["0000000000000B70"]
+			id: "0000000000000BB7"
+			tasks: [{
+				id: "0000000000000BB8"
+				type: "item"
+				item: "astralsorcery:ritual_link"
+				count: 2L
+			}]
+			rewards: [{
+				id: "0000000000000C53"
+				type: "command"
+				title: "Epic Astral Sorcery Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.5d
+			subtitle: "Unprecedented Clarity"
+			description: [
+				"“It has been a cause of vexation to me for some time now, why I so frequently find bits of colored glass hanging in the homes of villagers. Orange near the hearth, green near their fields, pink near their beds. "
+				""
+				"They take great care in crafting these colorful displays, but when questioned on the topic they merely shrug it off as a lucky token. "
+				""
+				"Inspired by these displays, I have attempted to craft similar lenses from these purest of crystals. Where the beams would previously lose focus after a short distance, I’ve found the lenses to be the perfect tool for extending them.”"
+				"________________________________"
+				""
+				"When crafting Crystal Lenses, the Purity and Shape of the crystal effect the final attributes of the lens. The size of the crystal effects how many lenses are obtained from the craft."
+			]
+			dependencies: ["0000000000000BD1"]
+			id: "0000000000000BBD"
+			tasks: [{
+				id: "0000000000000BBE"
+				type: "item"
+				item: {
+					id: "astralsorcery:lens"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C59"
+				type: "command"
+				title: "Epic Astral Sorcery Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Colored Lenses"
+			x: -0.5d
+			y: -5.5d
+			description: [
+				"The focused beams of Starlight passing through Crystal Lenses may be forced to shift aspects with the use of colored lenses. Right-click the colored lens onto a Crystal Lens to apply it."
+				""
+				"Note that the aspect shift will be lost upon passing through another lens. "
+				""
+				"Ignition Lenses are a useful replacement for a standard furnace, smelting any items that come into contact with the beam."
+				""
+				"Similarly, the Damage Lens serves as a mob grinder, though it will not provide Player Kill drops. "
+				""
+				"Regeneration provides powerful healing to all entities in the beam, pairing nicely with certain other mods that drain health."
+				""
+				"Growth will very quickly bring any crop to maturity, and Push can be used to transport items and mobs in a manner similar to vanilla water streams and bubble elevators."
+				""
+				"Explore some of the other options to find what these lenses can do for you."
+			]
+			dependencies: ["0000000000000BBD"]
+			min_width: 250
+			id: "0000000000000BC7"
+			tasks: [{
+				id: "0000000000000BC8"
+				type: "item"
+				title: "Any astralsorcery:colored_lens"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "astralsorcery:colored_lens"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C5B"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Collector Crystals"
+			x: 1.5d
+			y: -5.5d
+			description: [
+				"“It is time I move on from this floating crystal. Useful as it has been, it is proving to be the limiting factor in further experimentation. After many hours of careful study of its structure, I do believe I know how to proceed.”"
+				"________________________________"
+				""
+				"As of this writing, no recipe displays in JEI for crafting a Collector Crystal. Refer to the Astral Tome for guidance."
+				""
+				"Take great care in crafting these crystals to get the most out of your efforts. It is likely not worth using anything less than a Celestial Crystal for the task."
+			]
+			dependencies: ["0000000000000BBD"]
+			id: "0000000000000BCD"
+			tasks: [{
+				id: "0000000000000BCE"
+				type: "item"
+				title: "Collector Crystal"
+				item: {
+					id: "astralsorcery:celestial_collector_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellation: "astralsorcery:pelotrio"
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:collector.rate"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:constellation.pelotrio"
+										pLevel: 2
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C5A"
+				type: "command"
+				title: "Epic Astral Sorcery Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Celestial Crystals"
+			x: 0.0d
+			y: -8.0d
+			subtitle: "Call of the Void"
+			description: [
+				"Crystal Doping Specimen: 42"
+				""
+				"“Powdered starmetal has successfully bound with the growing crystal, infusing it with the same resonating patterns as is seen in the metal itself. "
+				"Upon initial inspection, it appears to have leeched out impurities in the crystalline matrix, leading to a stronger crystal overall.”"
+				"________________________________"
+				""
+				"Celestial Crystals are formed by dropping a Crystal into a pool of Liquid Starlight along with Stardust. A Crystal Cluster will form and slowly grow until it is ready to be harvested. "
+				""
+				"The growth process can be sped along if the Crystal Cluster is growing atop a Starmetal Ore. This will leech the Starmetal, converting it back into mundane Iron which may be re-transmuted to Starmetal in situ. "
+			]
+			dependencies: ["0000000000000BD1"]
+			id: "0000000000000BCF"
+			tasks: [{
+				id: "0000000000000BE1"
+				type: "item"
+				item: {
+					id: "astralsorcery:celestial_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C58"
+				type: "command"
+				title: "Legendary Astral Sorcery Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Crystal Working"
+			icon: {
+				id: "astralsorcery:celestial_crystal_cluster"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+					Damage: 4
+				}
+			}
+			x: 1.0d
+			y: -9.0d
+			description: [
+				"Splitting crystals is generally useful for crafting specialised crystals, whereby individual attributes are separated and the pieces are recombined. "
+				""
+				"Splitting is performed with the Cutting Tool, and as previously noted, it may result in the loss of attributes. To reduce the risk of losing an attribute entirely, try soaking the Crystal in Starlight first to increase its Size."
+				""
+				"Fortune and Unbreaking on the Cutting Tool are both highly beneficial during this process."
+				""
+				"Once the desired attributes have been isolated, they may be combined by dropping two crystals into a pool of Starlight and allowing them to absorb the liquid entirely. "
+				""
+				"This is also not a guaranteed process and is more likely to fail the more attributes already exist on the crystals. "
+				""
+				"Creating ‘perfect’ crystals, therefore, can be a time-consuming process and should be reserved for things that will most benefit from them, such as Rituals or Crystal Tools. "
+				""
+				"Finally, any leftover pieces with undesirable traits may be recombined with Stardust to form a new Crystal Cluster. The resulting Crystal will have a completely random new set of attributes. "
+			]
+			dependencies: [
+				"0000000000000BB1"
+				"0000000000000BAE"
+			]
+			min_width: 300
+			id: "0000000000000BD1"
+			tasks: [{
+				id: "0000000000000BD2"
+				type: "checkmark"
+				title: "splitting and combining crystals"
+			}]
+			rewards: [{
+				id: "0000000000000C57"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Celestial Gateway"
+			icon: {
+				id: "astralsorcery:celestial_gateway"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+			x: 4.0d
+			y: -6.0d
+			subtitle: "Unpleasantly Like Being Drunk"
+			description: [
+				"“Of late, this ball of fur has taken it upon herself to attempt to feed me. It must think me completely inept at caring for myself."
+				""
+				"It did come as somewhat of a surprise today, however, when she gifted me with a dead toad. There are no such species for several days walk. She is quick, but not that quick. "
+				""
+				"I took it upon myself to keep a close eye on her for several days, and indeed upon skipping several meals she wandered off to a nearby pedestal and vanished. "
+				""
+				"Following her through the gateway revealed the source of her toads…a swamp overflowing with them.”"
+				"________________________________"
+				""
+				"Build two or more of these structures to begin creating a network of gates. These have no distance limitations and work cross dimensionally."
+				""
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+			]
+			dependencies: ["0000000000000B8A"]
+			id: "0000000000000BD3"
+			tasks: [
+				{
+					id: "0000000000000BD4"
+					type: "item"
+					item: {
+						id: "astralsorcery:celestial_gateway"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "0000000000000C1D"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 20L
+				}
+				{
+					id: "0000000000000C1E"
+					type: "item"
+					item: "astralsorcery:marble_engraved"
+					count: 4L
+				}
+				{
+					id: "0000000000000C1F"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 4L
+				}
+				{
+					id: "0000000000000C20"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 25L
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000C21"
+					type: "item"
+					title: "Celestial Gateway"
+					item: {
+						id: "astralsorcery:celestial_gateway"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "0000000000000C5D"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: -5.5d
+			description: [
+				"“The powers bound to each constellation appear to have close affinities to traditional enchantments, leading me to wonder where the true source of power lies with said enchantments. Somewhere in the heavens?"
+				""
+				"Nonetheless, my experiments with etching carefully prepared glass panes are beginning to bear fruit. These panes give some semblance of control over the outcome as compared to the enchanting tables favored by villagers.”"
+				"________________________________"
+				""
+				"The bonuses granted by directly enchanting gear in the Stellar Refraction Table extend beyond simple enchantments, offering increased damage, armor, or a host of other effects."
+				""
+				"The Astral Tome will give a brief overview of what enchants to expect from each constellation.  Experimentation is highly encouraged."
+			]
+			dependencies: ["0000000000000B7B"]
+			id: "0000000000000BD5"
+			tasks: [{
+				id: "0000000000000BD6"
+				type: "item"
+				item: "astralsorcery:refraction_table"
+			}]
+			rewards: [
+				{
+					id: "0000000000000C2D"
+					type: "item"
+					title: "Infused Glass"
+					item: {
+						id: "astralsorcery:infused_glass"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000C47"
+					type: "command"
+					title: "Epic Astral Sorcery Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -6.5d
+			description: [
+				"Like Crystal Lenses, Crystal Prisms can extend the range of a beam of starlight. They also allow the beam to be dispersed across multiple blocks, which can be quite handy for certain applications, such as growing crops. "
+				""
+				"Crystal Prisms may also be modified with Colored Lenses. For instance, a single Prism with a Growth Len could speed up multiple crops at once.  "
+			]
+			dependencies: ["0000000000000BBD"]
+			id: "0000000000000BD9"
+			tasks: [{
+				id: "0000000000000BDA"
+				type: "item"
+				item: {
+					id: "astralsorcery:prism"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C5C"
+				type: "command"
+				title: "Epic Astral Sorcery Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			description: [
+				"“My haste in following Furball into the Attunement Altar has left the harsh light of Discidia focused on me, which I find quite… unnerving. Furball seems to have taken to it quite well, however, and feasts on the local rat population."
+				""
+				"Perhaps the light of Aevitas would suit my nature better… as soon as the constellation rises, I shall experiment with a shift in attunement.”"
+				"________________________________"
+				""
+				"Chosen poorly? Wish to begin again with your attunement? "
+				""
+				"The Shifting Star will reset the attunement completely, abandoning all progress and losing all levels. "
+				""
+				"Hold the star and hold down right-click until it shatters to use it. "
+			]
+			dependencies: ["0000000000000B8E"]
+			id: "0000000000000C24"
+			tasks: [{
+				id: "0000000000000C25"
+				type: "item"
+				item: "astralsorcery:shifting_star"
+			}]
+			rewards: [{
+				id: "0000000000000C4F"
+				type: "command"
+				title: "Epic Astral Sorcery Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			description: [
+				"“My studies have brought me to the point of crafting a pretty bauble, which by all indications should enhance traditional enchantments by focusing starlight into them. "
+				""
+				"The process appears delicate, however. I believe it would be prudent to distract Furball with some music while I work.”"
+				"________________________________"
+				""
+				"Each Resplendent Prism will choose a random selection of enchants to either imbue or enhance on equipped gear. Should the Prism end up with enchants that are less desirable, it may be re-rolled at a fraction of the cost of making a new one."
+				""
+				"Did you know? Cats love to jam. Go ahead, let Furball get her jam on!"
+			]
+			dependencies: ["0000000000000C24"]
+			id: "0000000000000C26"
+			tasks: [{
+				id: "0000000000000C27"
+				type: "item"
+				item: {
+					id: "astralsorcery:enchantment_amulet"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0000000000000C2B"
+					type: "item"
+					title: "Jukebox"
+					item: "minecraft:jukebox"
+				}
+				{
+					id: "0000000000000C2C"
+					type: "item"
+					title: "Music Disc"
+					item: "minecraft:music_disc_pigstep"
+				}
+				{
+					id: "0000000000000C50"
+					type: "command"
+					title: "Legendary Astral Sorcery Loot Box"
+					icon: "kubejs:legendary_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Irradiant Star"
+			x: 5.0d
+			y: -2.0d
+			description: [
+				"Irradiant Stars serve a similar purpose to Shifting Stars, however as they are already attuned to a constellation, they allow you to keep what you’ve earned so far. "
+				""
+				"Using the Irradiant Star will reset all chosen talents, but levels will be retained and may be spent again immediately. Naturally, your root attunement also shifts to match that of the star."
+			]
+			dependencies: ["0000000000000C24"]
+			id: "0000000000000C28"
+			tasks: [{
+				id: "0000000000000C2A"
+				type: "item"
+				title: "Any astralsorcery:stars/irradiant"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "astralsorcery:stars/irradiant"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C4E"
+				type: "command"
+				title: "Legendary Astral Sorcery Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+	]
+}

@@ -1,0 +1,269 @@
+=======================================
+Enigmatica6 0.3.8 --> Enigmatica6 0.3.9
+=======================================
+
+Updated:
+	Architectury API (Forge) ([Forge 1.16.4/5] v1.3.88 --> [Forge 1.16.4/5] v1.4.89):
+		[Forge 1.16.4/5] v1.4.89:
+			Architectury v1.4.89 for 1.16.4/5
+			Updated at 2021-01-24 14:18.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/27de429)
+			* Bump minor version to 1.4
+			* Fix compilation error
+			* Add ClientLifecycleEvent.CLIENT_SETUP and allow deferring in ColorHandlers
+			* Add 1.16.5 to CurseForge versions
+			* Fix AW
+			* Add LevelResourceHooks
+			* Add raw input events, close #16
+			* Close #18 Currently testing item / block addition, keybinds and creative tabs.
+			* Add AbstractRecipeSerializer
+			* ArchitecturyBlockEntity to sync data to client (#10)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+	Ars Nouveau (ars_nouveau-1.16.4-1.11.1.jar --> ars_nouveau-1.16.4-1.11.2.jar):
+		ars_nouveau-1.16.4-1.11.2.jar:
+			Fixes crashes with Whelps
+			Fixes Delay ticking way faster than designed.
+			Catches missing model errors
+
+	Builders Crafts & Additions (Forge) (buildersaddition-1.16.4-20210118a --> buildersaddition-1.16.4-20210124a):
+		buildersaddition-1.16.4-20210124a:
+			~ Cabinet recipes using Quark blocks loading without quark.
+
+	Engineer's Decor (engineersdecor-1.16.4-1.1.6.jar --> engineersdecor-1.16.4-1.1.7.jar):
+		engineersdecor-1.16.4-1.1.7.jar:
+			* v1.1.7     [M] 1.16.5 support.
+			[F] Fixed Labeled Crate include (issue #157, ty NillerMedDild).
+			* v1.1.6     [F] Added common-config opt-out specification for pack level opt-outs (issue #154,
+			ty gekkone), will replace server config opt-out in MC1.17.
+			* v1.1.6-b3  [M] Config logging edited, E-Furnace GUI capacitor tooltip added, E-Furnace power consumption
+			independent of config speed setting (issue #152 ty Staegrin).
+			* v1.1.6-b2  [M] Alternative Clinker Brick recipe (swapped Bricks/Nether Bricks) added.
+			[M] Furnace XP handling simplified (simply stores/releases XP for each smelting process).
+			[M] Mod devices do not propagate strong Redstone power to adjacent blocks.
+			[M] Minor "librarizing" changes under the hood.
+			* v1.1.6-b1  [F] Fixed Metal Crafting Table Hopper access (issue #147, ty umerrr).
+			[F] Fixed Dark Shingle Roof Chimney placement restriction (issue #149, thx WenXin20).
+			[F] Door tags added for Wood Door and Metal Sliding Door (issue #150, thx WenXin20).
+			[A] Electrical Furnace automatically chokes speed and power consumption when the internally
+			stored power is below 20%.
+			* v1.1.5     [R] Release build v1.1.5.
+			[F] Fixed Crafting Table JEI storage slot count.
+			[F] Fixed Factory Hopper removed item collection dupe bug (issue #146, thx FatheredPuma81).
+			[F] Increased device GUI access ranges beyond the player block selection range.
+			[A] Window placement handling improved.
+			[M] Steel/Wood Pole and Double-T support placement improved (issue #139, thx Biviho).
+			[M] Metal Sliding Door bottom/top shape when opened added.
+			* v1.1.4     [R] Release build v1.1.4.
+			[F] Solar Panel balancing threshold tuned.
+			[F] Fixed Catwalk default state (issue #140, thx hvdklauw).
+			[M] Updated lang ru_ru file (PR#137, Smollet777).
+			[M] Factory Dropper: Added Ignore-External-Redstone mode.
+			* v1.1.4-b2  [A] Steel Catwalks added (top and bottom aligned).
+			[A] Steel Railings added.
+			[F] Fixed Empty Fluid Barrel crafting crash (ty inflamedsebi).
+			[A] Added Solar Panel power balancing.
+			[M] GUI Button tooltip delay reduced to 800ms.
+			[M] Hopper and Placer: Added "Redstone ignored" mode, changed icons from signal-like to Redstone-Torch-like.
+			[M] Treated Wood Ladder now crafted from Old Industrial Wood, as Treated Wood Sticks now count as normal Sticks.
+			* v1.1.4-b1  [U] Ported to 1.16.4.
+			* v1.1.3     [R] Release build v1.1.3.
+			* v1.1.3-b3  [A] Metal Sliding Door added (double door wing style).
+			[A] Doors implicitly open/close adjacent wings of double doors.
+			[A] Disabled injected buttons from other mods in container GUIs.
+			[A] Mob spawning on Rebar/Gas Concrete inhibited (IE Concrete Compliancy).
+			[M] Small Tree Cutter chopping improved (loosened tree volume search restrictions).
+			* v1.1.3-b2  [A] Crafting table shift/ctrl click item move actions tweaked to new metal slot design.
+			[A] Factory Dropper and Block Placer now also support quick-move-all (shift-ctrl-click).
+			[F] Fixed Small Lab Furnace speed boost factor (with IE Heater in aux slot).
+			* v1.1.3-b1  [A] The Factory Block Breaker can insert items into Hoppers underneath it (issue #121, winsrp).
+			[F] Help tooltips manually wrapped.
+			[F] Fixed Labeled Crate item name persistence (issue #127, ty inqie).
+			[F] Help text typo fixed (issue #129, ty Smollet777).
+			* v1.1.2     [U] Updated to Forge 1.16.3-34.1.0.
+			[A] Added Factory Hopper insertion/extraction for entities like Minecarts (issue #125, ty boneskull).
+			* v1.1.2-b8  [F] Fixed Double-T support thick steel pole connection (thx @CastCrafter).
+			[A] Concrete and Clinker walls connect to windows and glass panes.
+			* v1.1.2-b7  [U] Ported to MC1.16.3.
+			[F] Roof lighting improved.
+			* v1.1.2-b6  [A] Signs added: Generic Caution, Magical Hazard, Radioactive Hazard, Laser Hazard,
+			Fire Hazard, Caution Hot Surface, Magnetic Field Caution, Frost Warning.
+			[A] Water Freezer added (generates Ice, Packed Ice, Blue Ice from water).
+			[F] Mineral Smelter GUI model facing fixed.
+			[M] Hatch handling improved.
+			[M] Ladder fast-move improved.
+			[F] Roof Chimney Trunk shape hollow to allow feeding IE Wire power over the roof into the building.
+			[A] Roof Chimney added (smoking offset for Dark Shingle Roof Chimney Trunk block).
+			[A] Metal Bar (ingredient item) added to circumvent recipe collisions with other mods.
+			[M] Recipes for metallic blocks modified accordingly to depend on Metal Bars.
+			* v1.1.2-b5  [A] Sandstone Ornamented Clinker Brick added.
+			[A] Old Industrial Wood Planks/Stairs/Slabs/Slab Slices added.
+			[A] Old Industrial Wood Door added.
+			[M] Wood textures made slightly darker.
+			[F] Milking Machine fluid transfer re-added (thx gebcrafter).
+			[F] Fluid Barrel status overlay message format fixed.
+			[F] Fixed missing Dense Grit Dirt loot table (issue #124, thx vaelzan).
+			* v1.1.2-b4  [F] Mapping adaption to Forge 1.16.2-33.0.22/20200723-1.16.1.
+			[F] Fixed conditional recipe tag dependency (thx Blu, Cyborgmas).
+			* v1.1.2-b3  [F] Mapping adaption to Forge 1.16.2-33.0.20.
+			* v1.1.2-b2  [A] Dark Shingle Roof added.
+			* v1.1.2-b1  [U] Ported to MC1.16.2.
+
+	ExtraStorage (ExtraStorage-1.16.4-1.3.0 --> ExtraStorage-1.16.4-1.3.1):
+		ExtraStorage-1.16.4-1.3.1:
+			* Fixed TOP's bug
+
+	Gauges and Switches (rsgauges-1.16.4-1.2.7.jar --> rsgauges-1.16.4-1.2.8.jar):
+		rsgauges-1.16.4-1.2.8.jar:
+			* v1.2.8     [R] Release build.
+			[U] MC1.16.5 enabled.
+			[M] Block materials unified.
+			* v1.2.7     [R] Release build v1.2.7.
+			[F] Opt-out config pack level based.
+			* v1.2.7-b2  [F] Config load/apply condition fixed.
+			* v1.2.7-b1  [A] Analog Switch Linking signals added.
+			[A] Gauges and Indicators can be wirelessly connected to switches.
+			[A] Comparator Switch and Link Sender support analog data transmissions.
+			[A] Elevator Button up/down arrows added depending on where the wall is
+			clicked when placing.
+			* v1.2.6     [R] Release build  1.2.6.
+			* v1.2.6-b2  [A] Gauges can be explicitly set to Comparator-Input mode (click with a Redstone Torch).
+			[A] Auto switch buttons only display the current configurations on first click.
+			* v1.2.6-b1  [U] Ported to 1.16.4.
+			* v1.2.5     [R] Release build 1.2.5.
+			* v1.2.5-b1  [A] Linked switches are marked with particles when holding the Switch Link Pearl.
+			[U] Partial internal code refurbishments.
+			* v1.2.4     [U] Updated to Forge 1.16.3-34.1.0.
+			[A] Indicators and Gauges are invertible (input from Vallen while Forgecraft'ing).
+			[F] Ambient occlusion and GUI lightning fixes.
+			* v1.2.4-b8  [U] Ported to MC1.16.3.
+			* v1.2.4-b7  [U] Updated Forge to 33.0.37 (breaking change).
+			* v1.2.4-b6  [U] Updated Forge, adapted new mappings to 20200723-1.16.1.
+			[F] Fixed Contact Switch detection range.
+			* v1.2.4-b5  [F] Mapping adaption to Forge 1.16.2-33.0.20.
+			* v1.2.4-b4  [U] Ported to 1.16.2.
+			* v1.2.4-b2  [F] Door sensor look detection angle fixed.
+			[A] JEI integration added.
+			[F] Fixed startup issue by updating to Forge 32.0.97 (issue #28, ty wieselkatze).
+			* v1.2.4-b1  [M] Coloring of Sensitive Glass ported.
+			[F] Indicator power issue fixed.
+			* v1.2.4-a2  [A] Sensitive glass ported, overlay frame style ported.
+			[M] Modified global switch power placement default setting to strong.
+			* v1.2.4-a1  [A] Initial port.
+
+	Occultism (occultism-1.0.6.jar --> occultism-1.0.8.jar):
+		occultism-1.0.8.jar:
+			[Automated Build]
+			Find changes at [https://github.com/klikli-dev/occultism/releases](https://github.com/klikli-dev/occultism/releases)
+
+		occultism-1.0.7.jar:
+			[Automated Build]
+			Find changes at [https://github.com/klikli-dev/occultism/releases](https://github.com/klikli-dev/occultism/releases)
+
+	OpenBlocks Elevator (elevatorid-1.16.5-1.7.11.jar --> elevatorid-1.16.5-1.7.12.jar):
+		elevatorid-1.16.5-1.7.12.jar:
+			Fix crash when traveling between dimensions (#74)
+
+	Supplementaries (Archived file --> supplementaries-0.9.22d.jar):
+		supplementaries-0.9.22d.jar:
+			fixed a critical bug that I accidentally introduced a version ago with sitting cats
+			Updated some default config list for mob cages and jars
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

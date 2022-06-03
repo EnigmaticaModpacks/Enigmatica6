@@ -1,0 +1,87 @@
+{
+    "flower": "tconstruct:magma_cake",
+    "lore": "Tier 3:\nThe Coal Bee has a latent gene that, when\nsparked, will ignite with a Blaze.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1.0,
+    "traits": ["blaze", "nether", "wither", "can_swim"],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "other/blaze",
+    "ColorData": {
+        "honeycombColor": "#fff32d",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "ENTITY",
+            "inputID": "entity:resourcefulbees:creeper_bee",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:ghast_bee", "weight": 10}
+            ]
+          },
+          {
+            "type": "ENTITY",
+            "inputID": "entity:thermal:basalz",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:basalz_bee", "weight": 10}
+            ]
+          },
+          {
+            "type": "ENTITY",
+            "inputID": "entity:thermal:blitz",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:blitz_bee", "weight": 10}
+            ]
+          },
+          {
+            "type": "ENTITY",
+            "inputID": "entity:thermal:blizz",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:blizz_bee", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:blaze_rod",
+        "mainOutputWeight": 0.20,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "emendatusenigmatica:sulfur_chunk",
+        "secondaryOutputWeight": 0.25,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:blaze_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:rods/blaze",
+        "feedAmount": 3,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

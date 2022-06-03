@@ -1,0 +1,16 @@
+{
+    "name": "Waypoints",
+    "icon": "enigmatica:textures/pin.png",
+    "category": "patchouli:ftbchunks",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "text",
+            "text": "Waypoints can be created by $(l)right clicking on the spot in the map where you wish to place them.$(reset) They’re a really intuitive and useful way to mark your surroundings and remember points of interest where you want to explore, or simply keep track of where important areas of your world are."
+        },
+        {
+            "type": "text",
+            "text": "$(l)You can then edit the waypoints you placed by right clicking on them again.$(reset) The map also automatically creates a death waypoint every time you die, so it might be useful to track your grave down! The waypoints also appear in the world as a beacon beam to help you locate them. If you want to disable a waypoint’s beam just check “Hide” after right clicking the waypoint."
+        }
+    ]
+}

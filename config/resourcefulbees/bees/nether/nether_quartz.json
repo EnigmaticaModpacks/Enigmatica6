@@ -1,0 +1,65 @@
+{
+    "flower": "minecraft:warped_fungus",
+    "lore": "Tier 3:\nWithin the I-C-Bee's crystaline form lies dormant potential;\nthe Hellish Zombee can release it.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 0.75,
+    "hasHoneycomb": true,
+    "traits": ["nether", "wither", "can_swim"],
+    "baseLayerTexture": "ores/nether_quartz/nether_quartz_bee",
+    "ColorData": {
+        "honeycombColor": "#d4caba",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:polished_basalt",
+                "outputs": [{ "outputID": "emendatusenigmatica:quartz_basalt_ore", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "emendatusenigmatica:quartz_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "emendatusenigmatica:fluorite_chunk",
+        "secondaryOutputWeight": 0.05,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:storage_blocks/quartz",
+        "feedAmount": 2,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

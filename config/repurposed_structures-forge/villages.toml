@@ -1,0 +1,54 @@
+
+#-----------------------------------------------------------------------------------------
+# Average distance between spawn attempts for Repurposed Structures Villages 
+# 1 for spawning in most chunks and 1001 for no spawn.
+[Spawnrates]
+	#Range: 1 ~ 1001
+	badlandsVillageMaxChunkDistance = 34
+	#Range: 1 ~ 1001
+	birchVillageMaxChunkDistance = 47
+	#Range: 1 ~ 1001
+	darkForestVillageMaxChunkDistance = 47
+	#Range: 1 ~ 1001
+	jungleVillageMaxChunkDistance = 47
+	#Range: 1 ~ 1001
+	swampVillageMaxChunkDistance = 47
+	#Range: 1 ~ 1001
+	mountainsVillageMaxChunkDistance = 47
+	#Range: 1 ~ 1001
+	giantTaigaVillageMaxChunkDistance = 47
+	#Range: 1 ~ 1001
+	oakVillageMaxChunkDistance = 47
+	#Range: 1 ~ 1001
+	crimsonVillageMaxChunkDistance = 30
+	#Range: 1 ~ 1001
+	warpedVillageMaxChunkDistance = 30
+	#Range: 1 ~ 1001
+	villageMushroomAverageChunkDistance = 24
+
+#-----------------------------------------------------------------------------------------
+# Size of the village. This is how many pieces long a path can be from the start piece.
+[Size]
+	#Range: 1 ~ 30
+	badlandsVillageSize = 10
+	#Range: 1 ~ 30
+	birchVillageSize = 6
+	#Range: 1 ~ 30
+	darkForestVillageSize = 6
+	#Range: 1 ~ 30
+	jungleVillageSize = 8
+	#Range: 1 ~ 30
+	swampVillageSize = 6
+	#Range: 1 ~ 30
+	mountainsVillageSize = 6
+	#Range: 1 ~ 30
+	giantTaigaVillageSize = 6
+	#Range: 1 ~ 30
+	oakVillageSize = 6
+	#Range: 1 ~ 30
+	crimsonVillageSize = 6
+	#Range: 1 ~ 30
+	warpedVillageSize = 6
+	#Range: 1 ~ 30
+	mushroomVillageSize = 8
+

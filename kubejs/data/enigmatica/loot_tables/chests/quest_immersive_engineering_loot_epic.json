@@ -1,0 +1,167 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:cloche"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:connector_hv_relay",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:connector_hv",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:wirecoil_steel",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:coil_lv",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:circuit_board",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:steel_scaffolding_standard",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:capacitor_hv",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:dragons_breath",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 64
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:homing",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 64
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:wolfpack",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 64
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:light_engineering",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:heavy_engineering",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "immersiveengineering:shader_bag_rare"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "immersiveengineering:shader_bag_epic"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:shader_bag_ie_masterwork"
+                }
+            ]
+        }
+    ]
+}

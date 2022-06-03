@@ -1,0 +1,44 @@
+
+[entities]
+	#Make farm animals spawn in less biomes to allow new mobs to take their place and diversify biome spawns
+	"Limit farm animal spawns" = false
+	#Make biome variants of mobs like Husks always spawn in place of their original in their biomes
+	"Biome variants always spawn" = false
+
+	[entities.koi]
+		#Make Koi only block natural spawns
+		"Block only natural spawns" = true
+		#Horizontal radius of Serenity effect in blocks
+		"Horizontal serenity range (radius)" = 32
+		#Vertical radius of Serenity effect in blocks
+		"Vertical serenity range (radius)" = 8
+		#If Koi exude Serenity as a potion effect
+		"Serenity potion effect" = true
+
+[world]
+
+	[world.biomes]
+
+		[world.biomes.marsh]
+			"Marsh weight" = 6
+			"Mushroom Marsh weight" = 0
+
+		[world.biomes.blossom]
+			"Blossom Woods weight" = 3
+			"Blossom Hills weight" = 0
+			"Blossom Highlands weight" = 1
+			"Blossom Valleys weight" = 0
+
+	[world.generation]
+		"Giant Mushroom generation in Swamps" = true
+		"Giant Tall Grass generation" = true
+		"Wisteria Tree generation in Flower Forests" = true
+		"Delphinium generation in Flower Forests" = true
+		"Hibiscus generation in Jungles" = true
+
+[items]
+
+	[items.healers_pouch]
+		#Structures that can spawn mobs wearing a Healer's Pouch
+		"Healer's Pouch structures" = ["minecraft:mineshaft", "minecraft:stronghold"]
+

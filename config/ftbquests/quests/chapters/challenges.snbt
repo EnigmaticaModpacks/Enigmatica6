@@ -1,0 +1,1679 @@
+{
+	id: "0000000000000098"
+	group: ""
+	order_index: 4
+	filename: "challenges"
+	title: "Challenges"
+	icon: "minecraft:dragon_head"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Limitless Power"
+			icon: "mininggadgets:upgrade_battery_3"
+			x: 0.5d
+			y: 2.5d
+			subtitle: "Infinite Cosmic Power!"
+			description: [
+				"The Ultimate Induction Cell can store up to 1.600.000.000.000 FE, also known as 1.6TFE"
+				""
+				"To charge an Induction Cell, place it inside an Induction Cell multiblock and charge it."
+			]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "4473CCD6EB0E60E0"
+			tasks: [{
+				id: "43D8479933BD78E5"
+				type: "item"
+				title: "Full Ultimate Induction Cell"
+				icon: {
+					id: "mekanism:ultimate_induction_cell"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "4000000000000"
+							}]
+						}
+					}
+				}
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:strong_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										mekData: {
+											EnergyContainers: [{
+												Container: 0b
+												stored: "4000000000000"
+											}]
+										}
+									}
+								}
+							}
+							{
+								id: "mekanism:ultimate_induction_cell"
+								Count: 1b
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "4000000000000"
+										}]
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "18625435104F6277"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "mininggadgets:upgrade_battery_3"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 128
+									Blue: 31
+									Green: 199
+								}
+							}
+							Name: "Limitless Power Trophy"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Challenger"
+			icon: "minecraft:dragon_head"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Slaying the Ender Dragon has given you access to the Challenges chapter!"]
+			size: 1.5d
+			id: "1C6E46EA96373E74"
+			tasks: [{
+				id: "6C159C9408B0C66C"
+				type: "advancement"
+				title: "Kill the Ender Dragon"
+				icon: "minecraft:dragon_head"
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7F0FC16030FE7D99"
+				type: "item"
+				item: {
+					id: "trofers:trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:dragon_head"
+								Count: 1b
+							}
+							DisplayScale: 0.75f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 137
+									Blue: 184
+									Green: 50
+								}
+							}
+							Name: "Ender Dragon Trophy"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Limitless Lava"
+			x: -3.0d
+			y: 0.0d
+			description: [
+				"Fill a Supreme Black Hole Tank with Lava."
+				""
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+			]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "64A6812D6EFF4308"
+			tasks: [{
+				id: "5484233E300B3E29"
+				type: "item"
+				title: "Supreme Black Hole Tank with Lava"
+				icon: {
+					id: "industrialforegoing:supreme_black_hole_tank"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							filter: {
+								Type: "WHITELIST"
+								Pointer: 0
+								Filter: { }
+							}
+							tank: {
+								FluidName: "minecraft:lava"
+								FacingModes: {
+									LEFT: "ENABLED"
+									TOP: "ENABLED"
+									RIGHT: "ENABLED"
+									BACK: "ENABLED"
+									FRONT: "ENABLED"
+									BOTTOM: "ENABLED"
+								}
+								Amount: 2147483647
+							}
+						}
+					}
+				}
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:strong_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										BlockEntityTag: {
+											filter: {
+												Type: "WHITELIST"
+												Pointer: 0
+												Filter: { }
+											}
+											tank: {
+												FluidName: "minecraft:lava"
+												FacingModes: {
+													LEFT: "ENABLED"
+													TOP: "ENABLED"
+													RIGHT: "ENABLED"
+													BACK: "ENABLED"
+													FRONT: "ENABLED"
+													BOTTOM: "ENABLED"
+												}
+												Amount: 2147483647
+											}
+										}
+									}
+								}
+							}
+							{
+								id: "industrialforegoing:supreme_black_hole_tank"
+								Count: 1b
+								tag: {
+									BlockEntityTag: {
+										filter: {
+											Type: "WHITELIST"
+											Pointer: 0
+											Filter: { }
+										}
+										tank: {
+											FluidName: "minecraft:lava"
+											FacingModes: {
+												LEFT: "ENABLED"
+												TOP: "ENABLED"
+												RIGHT: "ENABLED"
+												BACK: "ENABLED"
+												FRONT: "ENABLED"
+												BOTTOM: "ENABLED"
+											}
+											Amount: 2147483647
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "2CEB97E39BE8BBE5"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:lava_bucket"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 176
+									Blue: 38
+									Green: 46
+								}
+							}
+							Name: "Lava Trophy"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Limitless Water"
+			icon: {
+				id: "industrialforegoing:supreme_black_hole_tank"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						filter: {
+							Type: "WHITELIST"
+							Pointer: 0
+							Filter: { }
+						}
+						tank: {
+							FluidName: "minecraft:water"
+							FacingModes: {
+								LEFT: "ENABLED"
+								TOP: "ENABLED"
+								RIGHT: "ENABLED"
+								BACK: "ENABLED"
+								FRONT: "ENABLED"
+								BOTTOM: "ENABLED"
+							}
+							Amount: 2147483647
+						}
+					}
+				}
+			}
+			x: -3.0d
+			y: 1.0d
+			description: [
+				"Fill a Supreme Black Hole Tank with Water."
+				""
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+			]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "6D463AE8FE933401"
+			tasks: [{
+				id: "68B113885B76682E"
+				type: "item"
+				title: "Supreme Black Hole with Water"
+				icon: {
+					id: "industrialforegoing:supreme_black_hole_tank"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							filter: {
+								Type: "WHITELIST"
+								Pointer: 0
+								Filter: { }
+							}
+							tank: {
+								FluidName: "minecraft:water"
+								FacingModes: {
+									LEFT: "ENABLED"
+									TOP: "ENABLED"
+									RIGHT: "ENABLED"
+									BACK: "ENABLED"
+									FRONT: "ENABLED"
+									BOTTOM: "ENABLED"
+								}
+								Amount: 2147483647
+							}
+						}
+					}
+				}
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:strong_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										BlockEntityTag: {
+											filter: {
+												Type: "WHITELIST"
+												Pointer: 0
+												Filter: { }
+											}
+											tank: {
+												FluidName: "minecraft:water"
+												FacingModes: {
+													LEFT: "ENABLED"
+													TOP: "ENABLED"
+													RIGHT: "ENABLED"
+													BACK: "ENABLED"
+													FRONT: "ENABLED"
+													BOTTOM: "ENABLED"
+												}
+												Amount: 2147483647
+											}
+										}
+									}
+								}
+							}
+							{
+								id: "industrialforegoing:supreme_black_hole_tank"
+								Count: 1b
+								tag: {
+									BlockEntityTag: {
+										filter: {
+											Type: "WHITELIST"
+											Pointer: 0
+											Filter: { }
+										}
+										tank: {
+											FluidName: "minecraft:water"
+											FacingModes: {
+												LEFT: "ENABLED"
+												TOP: "ENABLED"
+												RIGHT: "ENABLED"
+												BACK: "ENABLED"
+												FRONT: "ENABLED"
+												BOTTOM: "ENABLED"
+											}
+											Amount: 2147483647
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "2B3C7A66BA863710"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:water_bucket"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 58
+									Blue: 218
+									Green: 179
+								}
+							}
+							Name: "Water Trophy"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Limitless Oil"
+			icon: {
+				id: "industrialforegoing:supreme_black_hole_tank"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						filter: {
+							Type: "WHITELIST"
+							Pointer: 0
+							Filter: { }
+						}
+						tank: {
+							FluidName: "thermal:crude_oil"
+							FacingModes: {
+								LEFT: "ENABLED"
+								TOP: "ENABLED"
+								RIGHT: "ENABLED"
+								BACK: "ENABLED"
+								FRONT: "ENABLED"
+								BOTTOM: "ENABLED"
+							}
+							Amount: 2147483647
+						}
+					}
+				}
+			}
+			x: -3.0d
+			y: -1.0d
+			description: [
+				"Fill a Supreme Black Hole Tank with Oil."
+				""
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+			]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "378F01CE074D79A0"
+			tasks: [{
+				id: "53630EB2AB461FE0"
+				type: "item"
+				title: "Supreme Black Hole Tank with Oil"
+				icon: {
+					id: "industrialforegoing:supreme_black_hole_tank"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							filter: {
+								Type: "WHITELIST"
+								Pointer: 0
+								Filter: { }
+							}
+							tank: {
+								FluidName: "immersivepetroleum:oil"
+								FacingModes: {
+									LEFT: "ENABLED"
+									TOP: "ENABLED"
+									RIGHT: "ENABLED"
+									BACK: "ENABLED"
+									FRONT: "ENABLED"
+									BOTTOM: "ENABLED"
+								}
+								Amount: 2147483647
+							}
+						}
+					}
+				}
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "industrialforegoing:supreme_black_hole_tank"
+											Count: 1b
+											tag: {
+												BlockEntityTag: {
+													filter: {
+														Type: "WHITELIST"
+														Pointer: 0
+														Filter: { }
+													}
+													tank: {
+														FluidName: "thermal:crude_oil"
+														FacingModes: {
+															LEFT: "ENABLED"
+															TOP: "ENABLED"
+															RIGHT: "ENABLED"
+															BACK: "ENABLED"
+															FRONT: "ENABLED"
+															BOTTOM: "ENABLED"
+														}
+														Amount: 2147483647
+													}
+												}
+											}
+										}
+										{
+											id: "itemfilters:strong_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													BlockEntityTag: {
+														filter: {
+															Type: "WHITELIST"
+															Pointer: 0
+															Filter: { }
+														}
+														tank: {
+															FluidName: "thermal:crude_oil"
+															FacingModes: {
+																LEFT: "ENABLED"
+																TOP: "ENABLED"
+																RIGHT: "ENABLED"
+																BACK: "ENABLED"
+																FRONT: "ENABLED"
+																BOTTOM: "ENABLED"
+															}
+															Amount: 2147483647
+														}
+													}
+												}
+											}
+										}
+									]
+								}
+							}
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "industrialforegoing:supreme_black_hole_tank"
+											Count: 1b
+											tag: {
+												BlockEntityTag: {
+													filter: {
+														Type: "WHITELIST"
+														Pointer: 0
+														Filter: { }
+													}
+													tank: {
+														FluidName: "pneumaticcraft:oil"
+														FacingModes: {
+															LEFT: "ENABLED"
+															TOP: "ENABLED"
+															RIGHT: "ENABLED"
+															BACK: "ENABLED"
+															FRONT: "ENABLED"
+															BOTTOM: "ENABLED"
+														}
+														Amount: 2147483647
+													}
+												}
+											}
+										}
+										{
+											id: "itemfilters:strong_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													BlockEntityTag: {
+														filter: {
+															Type: "WHITELIST"
+															Pointer: 0
+															Filter: { }
+														}
+														tank: {
+															FluidName: "pneumaticcraft:oil"
+															FacingModes: {
+																LEFT: "ENABLED"
+																TOP: "ENABLED"
+																RIGHT: "ENABLED"
+																BACK: "ENABLED"
+																FRONT: "ENABLED"
+																BOTTOM: "ENABLED"
+															}
+															Amount: 2147483647
+														}
+													}
+												}
+											}
+										}
+									]
+								}
+							}
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "industrialforegoing:supreme_black_hole_tank"
+											Count: 1b
+											tag: {
+												BlockEntityTag: {
+													filter: {
+														Type: "WHITELIST"
+														Pointer: 0
+														Filter: { }
+													}
+													tank: {
+														FluidName: "immersivepetroleum:oil"
+														FacingModes: {
+															LEFT: "ENABLED"
+															TOP: "ENABLED"
+															RIGHT: "ENABLED"
+															BACK: "ENABLED"
+															FRONT: "ENABLED"
+															BOTTOM: "ENABLED"
+														}
+														Amount: 2147483647
+													}
+												}
+											}
+										}
+										{
+											id: "itemfilters:strong_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													BlockEntityTag: {
+														filter: {
+															Type: "WHITELIST"
+															Pointer: 0
+															Filter: { }
+														}
+														tank: {
+															FluidName: "immersivepetroleum:oil"
+															FacingModes: {
+																LEFT: "ENABLED"
+																TOP: "ENABLED"
+																RIGHT: "ENABLED"
+																BACK: "ENABLED"
+																FRONT: "ENABLED"
+																BOTTOM: "ENABLED"
+															}
+															Amount: 2147483647
+														}
+													}
+												}
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "2F30217DBD536B5C"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "thermal:crude_oil_bucket"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 29
+									Blue: 33
+									Green: 29
+								}
+							}
+							Name: "Oil Trophy"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Zoology"
+			x: 3.0d
+			y: 1.0d
+			subtitle: "Pets and kisses"
+			description: [
+				"Tame every animal there is to tame!"
+				""
+				"(You can track the progress you've made by looking at the 'Zoology' advancement in the Husbandry tab)"
+			]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "2AEE1AFA3BC416CE"
+			tasks: [{
+				id: "6550FEDCE5175F8C"
+				type: "advancement"
+				title: "Tame all tameable animals"
+				icon: "farmersdelight:horse_feed"
+				advancement: "enigmatica:husbandry/tame_all_animals"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1101CE8B58FFDB74"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "farmersdelight:horse_feed"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 249
+									Blue: 29
+									Green: 128
+								}
+							}
+							Name: "Zoology Trophy"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Two by Two"
+			x: 3.0d
+			y: 0.0d
+			subtitle: "The bees and the birds..."
+			description: [
+				"Breed every animal there is to breed!"
+				""
+				"(You can track the progress you've made by looking at the 'Two by Two' advancement in the Husbandry tab)"
+			]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "24ED473C9C545C09"
+			tasks: [{
+				id: "76A9D7B6C6D4C04F"
+				type: "advancement"
+				title: "Breed all breedable animals"
+				icon: "minecraft:golden_carrot"
+				advancement: "minecraft:husbandry/bred_all_animals"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2CBDA020ED4C5E9C"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:golden_carrot"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 254
+									Blue: 61
+									Green: 216
+								}
+							}
+							Name: "Breeding Trophy"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Infinity Tools"
+			x: -0.5d
+			y: 2.5d
+			description: [
+				"In order to complete this quest, you must obtain all Infinity Tools and get them to the Artifact tier."
+				""
+				"It's possible to upgrade Infinity Tools to Artifact tier without infinite power, we leave it to you to discover how."
+			]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "17E8CDC64C0FB5EA"
+			tasks: [
+				{
+					id: "4801DE27B925DA50"
+					type: "item"
+					title: "Infinity Drill: Artifact Tier"
+					icon: {
+						id: "industrialforegoing:infinity_drill"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Special: 0b
+							Selected: "ARTIFACT"
+							Energy: 9223372036854775807L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+						}
+					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:infinity_drill"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "ARTIFACT"
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+									}
+								}
+								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7FD0249142690FBD"
+					type: "item"
+					title: "Infinity Hammer: Artifact Tier"
+					icon: {
+						id: "industrialforegoing:infinity_hammer"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Energy: 9223372036854775807L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+							Special: 0b
+							Selected: "ARTIFACT"
+							Beheading: 0
+						}
+					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
+									id: "industrialforegoing:infinity_hammer"
+									Count: 1b
+									tag: {
+										CanCharge: 1
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+										Special: 0
+										Selected: "ARTIFACT"
+										Beheading: 0
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "625720B1A137C6DF"
+					type: "item"
+					title: "Infinity Trident: Artifact Tier"
+					icon: {
+						id: "industrialforegoing:infinity_trident"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Riptide: 0
+							Channeling: 0b
+							Energy: 9223372036854775807L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+							Special: 0b
+							Selected: "ARTIFACT"
+							Loyalty: 0
+						}
+					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
+									id: "industrialforegoing:infinity_trident"
+									Count: 1b
+									tag: {
+										CanCharge: 1
+										Riptide: 0
+										Channeling: 0
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+										Special: 0
+										Selected: "ARTIFACT"
+										Loyalty: 0
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "314182BBA59CFDD8"
+					type: "item"
+					title: "Infinity Saw: Artifact Tier"
+					icon: {
+						id: "industrialforegoing:infinity_saw"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Special: 0b
+							Selected: "ARTIFACT"
+							Energy: 9223372036854775807L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+						}
+					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
+									id: "industrialforegoing:infinity_saw"
+									Count: 1b
+									tag: {
+										CanCharge: 1
+										Special: 0
+										Selected: "ARTIFACT"
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "09A7BEA11BB1C9B1"
+					type: "item"
+					title: "Infinity Backpack: Artifact Tier"
+					icon: {
+						id: "industrialforegoing:infinity_backpack"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Special: 0b
+							Selected: "ARTIFACT"
+							Energy: 9223372036854775807L
+						}
+					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
+									id: "industrialforegoing:infinity_backpack"
+									Count: 1b
+									tag: {
+										CanCharge: 1
+										Special: 0
+										Selected: "ARTIFACT"
+										Energy: 9223372036854775807L
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "1C420C2B58ADD9F4"
+					type: "item"
+					title: "Infinity Nuke: Artifact Tier"
+					icon: {
+						id: "industrialforegoing:infinity_nuke"
+						Count: 1b
+						tag: {
+							CanCharge: 1
+							Special: 0
+							Selected: "ARTIFACT"
+							Energy: 9223372036854775807L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+						}
+					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
+									id: "industrialforegoing:infinity_nuke"
+									Count: 1b
+									tag: {
+										CanCharge: 1
+										Special: 0
+										Selected: "ARTIFACT"
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "50D6D2760038E934"
+					type: "item"
+					title: "Infinity Launcher: Artifact Tier"
+					icon: {
+						id: "industrialforegoing:infinity_launcher"
+						Count: 1b
+						tag: {
+							CanCharge: 1
+							Energy: 9223372036854775807L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+							Special: 0
+							Selected: "ARTIFACT"
+							Plunger: 0
+						}
+					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
+									id: "industrialforegoing:infinity_launcher"
+									Count: 1b
+									tag: {
+										CanCharge: 1
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+										Special: 0
+										Selected: "ARTIFACT"
+										Plunger: 0
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "485894E4EE24E3E1"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "industrialforegoing:infinity_trident"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Riptide: 0
+										Channeling: 0b
+										Energy: 0L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+										Special: 0b
+										Selected: "POOR"
+										Loyalty: 0
+									}
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 255
+										Blue: 255
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "23558895485FF9E0"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "industrialforegoing:infinity_drill"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "POOR"
+										Energy: 0L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+									}
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 255
+										Blue: 255
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "2E4A9E23F542A9BF"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "industrialforegoing:infinity_backpack"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "POOR"
+										Id: "75cd3df4-1573-46e9-a320-cac2879426bf"
+										Energy: 0L
+									}
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 255
+										Blue: 255
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "0992ACAB5C09DAE0"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "industrialforegoing:infinity_hammer"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Energy: 0L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+										Special: 0b
+										Selected: "POOR"
+										Beheading: 0
+									}
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "7EF5A4E188996336"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "industrialforegoing:infinity_saw"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "POOR"
+										Energy: 0L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+									}
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "6457AAA4C0F166C9"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									Colors: {
+										Bottom: {
+											Red: 249
+											Blue: 254
+											Green: 255
+										}
+										Top: {
+											Red: 249
+											Blue: 254
+											Green: 255
+										}
+										Middle: {
+											Red: 137
+											Blue: 184
+											Green: 50
+										}
+									}
+									DisplayScale: 0.5d
+									Animation: "fixed"
+									id: "industrialforegoing:infinity_nuke"
+									Count: 1
+									tag: { }
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "42B3BA6BE0A12001"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									Colors: {
+										Bottom: {
+											Red: 249
+											Blue: 254
+											Green: 255
+										}
+										Top: {
+											Red: 249
+											Blue: 254
+											Green: 255
+										}
+										Middle: {
+											Red: 137
+											Blue: 184
+											Green: 50
+										}
+									}
+									DisplayScale: 0.5d
+									Animation: "fixed"
+									id: "industrialforegoing:infinity_launcher"
+									Count: 1
+									tag: { }
+								}
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Ultimate Potato"
+			x: 3.0d
+			y: -1.0d
+			subtitle: "What's taters, precious?"
+			description: ["Po-tay-toes! Boil 'em, mash 'em, stick 'em in a stew..."]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "3DB3B9732A87744A"
+			tasks: [
+				{
+					id: "77ECAC90AB981C2F"
+					type: "item"
+					item: "farmersdelight:potato_crate"
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "0B0BD4EA2A6DE4E9"
+					type: "item"
+					item: {
+						id: "thermal:rf_potato"
+						Count: 1b
+						tag: {
+							Energy: 100000
+						}
+					}
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "382A604CF0387758"
+					type: "item"
+					item: "botania:tiny_potato"
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "1B6A594B8B7AEDC7"
+					type: "item"
+					item: "minecraft:baked_potato"
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "054D2C2D441C2021"
+					type: "item"
+					item: "minecraft:poisonous_potato"
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "4597CD2D2CBA65E7"
+					type: "item"
+					item: "pneumaticcraft:cod_n_chips"
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "469924BD6C490BF2"
+					type: "item"
+					item: "simplefarming:fish_and_chips"
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "174E223CF910A58D"
+					type: "item"
+					item: "farmersdelight:steak_and_potatoes"
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "19B011AE9B837D9E"
+					type: "item"
+					item: "farmersdelight:stuffed_potato"
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "5BAE86CC78F24DFD"
+					type: "item"
+					item: "simplefarming:potato_knish"
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "3D08E07D00A24BEB"
+					type: "item"
+					item: {
+						id: "botania:cosmetic_tiny_potato_mask"
+						Count: 1b
+						tag: { }
+					}
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "18DA6C0BF3BF2334"
+					type: "item"
+					item: "farmersdelight:wild_potatoes"
+					count: 2863L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "75E761B2293C1707"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:potato"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 254
+									Blue: 61
+									Green: 216
+								}
+							}
+						}
+					}
+				}
+			}]
+		}
+	]
+}

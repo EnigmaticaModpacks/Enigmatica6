@@ -1,23 +1,36 @@
+#Affects how common artifacts are (does not affect mimics)
+#When this is 1, the default artifact spawn rates will be used
+#Values higher that 1 will decrease spawn rates while values lower than 1 will increase spawn rates
+#Doubling this value will (roughly) halve the chance a container contains an artifact
+#Setting this to 10000 will completely prevent artifacts from spawning
+#When set to 0, every container that can contain artifacts will contain an artifact
+#Range: 0.0 ~ 10000.0
+artifact_rarity = 1.0
 
 [campsite]
-	#Chance for an ore vein to generate underneath a campsite
-	#Range: 0.0 ~ 1.0
-	campsite_ore_chance = 0.25
+	#List of biome IDs in which campsites are not allowed to generate
+	#End and nether biomes are excluded by default
+	#To blacklist all biomes from a single mod, use "modid:*"
+	biome_blacklist = ["minecraft:void", "undergarden:*", "the_bumblezone:*", "twilightforest:*"]
+	#Rarity of campsites generating in the world
+	#The chance a campsite generates in a specific chunk is 1/rarity
+	#A rarity of 1 will generate a campsite in every chunk, while 10000 will generate no campsites
+	#Not every attempt at generating a campsite succeeds, this also depends on the density and shape of caves
+	#Range: 1 ~ 10000
+	rarity = 12
 	#The minimum y-level at which a campsite can generate
-	#Range: 0 ~ 255
-	campsite_min_y = 0
+	#Range: 1 ~ 255
+	min_y = 1
 	#The maximum y-level at which a campsite can generate
-	#Range: 0 ~ 255
-	campsite_max_y = 45
-	#Chance for a container of a campsite to be replaced by a mimic
+	#Range: 1 ~ 255
+	max_y = 45
+	#Probability for a container of a campsite to be replaced by a mimic
 	#Range: 0.0 ~ 1.0
-	campsite_mimic_chance = 0.2
-	#Per-chunk chance a campsite is attempted to be generated. Not every attempt succeeds, this also depends on the density and shape of caves
+	mimic_chance = 0.3
+	#Probability for an ore vein to generate underneath a campsite
 	#Range: 0.0 ~ 1.0
-	campsite_chance = 0.2
-
-[items]
-	#Cooldown in ticks for the Everlasting Beef and Eternal Steak items
-	#Range: > 0
-	eternal_food_cooldown = 300
+	ore_chance = 0.25
+	#Whether to use wooden chests from other mods when generating campsites
+	#(keeping this enabled may make it easier to distinguish them from mimics)
+	use_modded_chests = true
 

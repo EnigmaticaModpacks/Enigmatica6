@@ -1,0 +1,69 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 2:\nMetal Bees have a grand breeding heirarchy, starting with\nthe bees found in nature as a base.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 3600,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["sedimentary", "can_swim"],
+    "baseLayerTexture": "ores/silver/silver_bee",
+    "ColorData": {
+        "honeycombColor": "#c5d1fe",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "create:granite_cobblestone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:silver_granite_ore", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "emendatusenigmatica:silver_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "emendatusenigmatica:lead_nugget",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "lead",
+        "parent2": "water",
+        "feedItem": "tag:forge:storage_blocks/silver",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

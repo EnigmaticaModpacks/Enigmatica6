@@ -1,0 +1,56 @@
+{
+    "type": "sub_theme",
+    "id": 2002,
+    "theme": {
+        "pillar": {
+            "type": "block",
+            "block": "minecraft:warped_hyphae"
+        },
+        "trapdoor": {
+            "type": "block",
+            "block": "upgrade_aquatic:tooth_trapdoor"
+        },
+        "door": {
+            "type": "block",
+            "block": "upgrade_aquatic:tooth_door"
+        },
+        "material": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "masonry:prismarineengraved"
+                },
+                {
+                    "block": "minecraft:prismarine_bricks"
+                }
+            ]
+        },
+        "stairs": {
+            "type": "random_block",
+            "blocks": [
+                { "block": "minecraft:dark_prismarine_stairs", "weight": 1 },
+                { "block": "minecraft:prismarine_brick_stairs", "weight": 3 }
+            ]
+        },
+        "slab": {
+            "type": "block",
+            "block": "minecraft:prismarine_brick_slab"
+        },
+        "fence": {
+            "type": "block",
+            "block": "minecraft:warped_fence"
+        },
+        "fence_gate": {
+            "type": "block",
+            "block": "minecraft:warped_fence_gate"
+        },
+        "button": {
+            "type": "block",
+            "block": "minecraft:warped_button"
+        },
+        "pressure_plate": {
+            "type": "block",
+            "block": "byg:witch_hazel_pressure_plate"
+        }
+    }
+}

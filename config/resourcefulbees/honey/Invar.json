@@ -1,0 +1,17 @@
+{
+    "name" : "invar",
+    "hunger": 3,
+    "honeyColor": "#dfe5e2",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:jump_boost",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

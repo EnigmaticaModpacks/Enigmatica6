@@ -1,0 +1,64 @@
+
+#Settings for the infusing system
+[infuser]
+	#Maximum RF storage that the infuser can hold
+	#Range: > 0
+	infuserMaxRF = 60000
+	#RF per tick that the infuser can receive
+	#Range: > 0
+	infuserRFPerTick = 600
+	#Maximum amount of dimensional shards before a machine is fully infused
+	#Range: > 1
+	maxInfuse = 256
+	#Amount of RF used per tick while infusing
+	#Range: > 0
+	usePerTick = 600
+
+#Dimensional shard ore generation
+[worldgen]
+
+	#Overworld
+	[worldgen.nether]
+		#Number of times to try generate the ore (set to 0 to disable)
+		#Range: 0 ~ 256
+		oreChances = 0
+		#Max height
+		#Range: 0 ~ 256
+		oreMax = 1
+		#Max size of veins
+		#Range: 1 ~ 256
+		oreVeinsize = 1
+		#Min height
+		#Range: 0 ~ 256
+		oreMin = 1
+
+	#End
+	[worldgen.end]
+		#Number of times to try generate the ore (set to 0 to disable)
+		#Range: 0 ~ 256
+		oreChances = 0
+		#Max height
+		#Range: 0 ~ 256
+		oreMax = 1
+		#Max size of veins
+		#Range: 1 ~ 256
+		oreVeinsize = 1
+		#Min height
+		#Range: 0 ~ 256
+		oreMin = 1
+
+	#Overworld
+	[worldgen.overworld]
+		#Number of times to try generate the ore (set to 0 to disable)
+		#Range: 0 ~ 256
+		oreChances = 0
+		#Max height
+		#Range: 0 ~ 256
+		oreMax = 1
+		#Max size of veins
+		#Range: 1 ~ 256
+		oreVeinsize = 1
+		#Min height
+		#Range: 0 ~ 256
+		oreMin = 1
+

@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "thermal:rf_coil_xfer_augment"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "thermal:machine_speed_augment"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "thermal:machine_output_augment"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "thermal:dynamo_output_augment"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "thermal:dynamo_fuel_augment"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "thermal:upgrade_augment_3"
+                }
+            ]
+        }
+    ]
+}

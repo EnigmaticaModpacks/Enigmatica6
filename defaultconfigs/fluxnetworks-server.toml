@@ -1,0 +1,18 @@
+
+[energy]
+	#The default transfer limit of a flux connector
+	#Range: 0 ~ 9223372036854775807
+	defaultLimit = 800000
+	#Range: 0 ~ 9223372036854775807
+	basicCapacity = 1000000
+	#Range: 0 ~ 9223372036854775807
+	basicTransfer = 20000
+	#Range: 0 ~ 9223372036854775807
+	herculeanCapacity = 8000000
+	#Range: 0 ~ 9223372036854775807
+	herculeanTransfer = 120000
+	#Range: 0 ~ 9223372036854775807
+	gargantuanCapacity = 128000000
+	#Range: 0 ~ 9223372036854775807
+	gargantuanTransfer = 1440000
+

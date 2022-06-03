@@ -1,0 +1,100 @@
+
+#Game settings
+[settings]
+	#Should Novice and Apprentice Farmers buy this mod's crops? (May reduce chances of other trades appearing)
+	farmersBuyFDCrops = true
+	#Farmer's Delight adds crates (3x3) for vanilla crops, similar to Quark and Thermal Cultivation. Should they be craftable?
+	enableVanillaCropCrates = true
+	#How often (in percentage) should Rich Soil succeed in boosting a plant's growth at each random tick? Set it to 0.0 to disable this.
+	#Range: 0.0 ~ 1.0
+	richSoilBoostChance = 0.2
+	#How much of a bonus (in percentage) should each level of Fortune grant to Cutting Board chances? Set it to 0.0 to disable this.
+	#Range: 0.0 ~ 1.0
+	cuttingBoardFortuneBonus = 0.1
+	#A list of dye colors that, when used as the background of a Canvas Sign, should default to white text when placed.
+	#Dyes: ["white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black"]
+	canvasSignDarkBackgroundList = ["gray", "purple", "blue", "brown", "green", "red", "black"]
+	#Should the Wandering Trader sell some of this mod's items? (Currently includes crop seeds and onions)
+	wanderingTraderSellsFDItems = true
+
+#Vanilla item overrides
+[overrides]
+	#Should Rabbit Stew grant users the jumping prowess of a rabbit when eaten?
+	rabbitStewJumpBoost = true
+	#Should most vanilla tools register a dispenser behavior when facing a Cutting Board?
+	dispenserUsesToolsOnCuttingBoard = true
+	#Should items inside the tag 'farmersdelight:comfort_foods' grant 2 minutes of Comfort when eaten? (defaults to vanilla SoupItems)
+	comfortFoodTagEffect = true
+
+	#Stack size overrides
+	[overrides.stack_size]
+		#Should SoupItems in the following list become stackable to 16, much like Farmer's Delight's meals?
+		enableStackableSoupItems = true
+		#List of SoupItems. Default: vanilla soups and stews.
+		soupItemList = ["minecraft:mushroom_stew", "minecraft:beetroot_soup", "minecraft:rabbit_stew"]
+		#Toggle this setting to instead make ALL SoupItems stackable, except the ones on the list (deny-list). This affects items from other mods, so be careful!
+		overrideAllSoupItems = false
+
+#World generation
+[world]
+	#Generate Compost Heaps across all village biomes
+	genVillageCompostHeaps = true
+	#Should this mod add some of its items (ropes, seeds, knives, meals etc.) as extra chest loot across Minecraft?
+	generateFDChestLoot = true
+
+	#Sea Beet generation
+	[world.wild_beetroots]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 10
+		#Generate sea beets on beaches
+		genWildBeetroots = true
+
+	#Tomato Vines generation
+	[world.wild_tomatoes]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 8
+		#Generate tomato vines on arid biomes (temperature 1.0 or higher)
+		genWildTomatoes = true
+
+	#Wild Cabbage generation
+	[world.wild_cabbages]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 10
+		#Generate wild cabbages on beaches
+		genWildCabbages = true
+
+	#Wild Onion generation
+	[world.wild_onions]
+		#Generate wild onions on temperate biomes (temperature between 0.4 and 0.9)
+		genWildOnions = true
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 8
+
+	#Wild Potato generation
+	[world.wild_potatoes]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 8
+		#Generate wild potatoes on cold biomes (temperature between 0.0 and 0.3)
+		genWildPotatoes = true
+
+	#Wild Carrot generation
+	[world.wild_carrots]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 8
+		#Generate wild carrots on temperate biomes (temperature between 0.4 and 0.9)
+		genWildCarrots = true
+
+	#Wild Rice generation
+	[world.wild_rice]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 10
+		#Generate wild rice on swamps and jungles
+		genWildRice = true
+

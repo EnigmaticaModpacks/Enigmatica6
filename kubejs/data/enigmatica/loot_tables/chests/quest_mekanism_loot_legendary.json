@@ -1,0 +1,76 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 3,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:reprocessed_fissile_fragment",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 24
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "mekanism:quantum_entangloporter",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "mekanism:upgrade_speed",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "mekanism:upgrade_energy",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:ultimate_induction_cell",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:pellet_polonium",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

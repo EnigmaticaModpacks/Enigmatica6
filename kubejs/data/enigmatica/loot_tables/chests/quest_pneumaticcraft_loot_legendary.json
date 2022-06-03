@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 3,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "pneumaticcraft:programming_puzzle",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "pneumaticcraft:drone",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{\"pneumaticcraft:air\": 120000}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "pneumaticcraft:printed_circuit_board"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "pneumaticcraft:smart_chest"
+                }
+            ]
+        }
+    ]
+}

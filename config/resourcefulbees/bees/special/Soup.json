@@ -1,0 +1,73 @@
+{
+    "flower": "tag:forge:mushrooms",
+    "creator": "Hazearil",
+    "lore": "The Lord of the Forest, wreathed in green, sent his most mighty servant to come to your aid.\nUnfortunately, the servant was busy and sent this bee instead.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 6000,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/soup",
+    "ColorData": {
+        "honeycombColor": "#8b7173",
+        "modelType": "MUSHROOM"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "ITEM",
+                "inputID": "minecraft:oak_log",
+                "outputs": [{ "outputID": "minecraft:mushroom_stew", "weight": 10 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "entity:minecraft:cow",
+                "outputs": [{ "outputID": "entity:minecraft:mooshroom", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:mushroom_stew",
+        "mainOutputWeight": 0.40,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "minecraft:beef",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "farmersdelight:milk_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:RARE",
+        "biomeBlacklist": "tag:OCEAN",
+        "spawnWeight": 3,
+        "minGroupSize": 1,
+        "maxGroupSize": 1,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:red_mushroom",
+        "feedAmount": 4,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

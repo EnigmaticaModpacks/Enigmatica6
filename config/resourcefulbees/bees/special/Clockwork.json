@@ -1,0 +1,71 @@
+{
+    "flower": "create:cuckoo_clock",
+    "creator": "NizBot",
+    "lore": "A clockwork creature of springs and gears.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 6000,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/clockwork",
+    "ColorData": {
+        "honeycombColor": "#70522e",
+        "modelType": "ARMORED"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "ITEM",
+                "inputID": "tag:forge:planks",
+                "outputs": [
+                    { "outputID": "create:andesite_casing", "weight": 10 },
+                    { "outputID": "create:brass_casing", "weight": 2 }
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "create:andesite_alloy",
+        "mainOutputWeight": 0.40,
+        "mainOutputCount": 3,
+
+        "secondaryOutput": "create:cogwheel",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 2,
+
+        "bottleOutput": "create:builders_tea",
+        "bottleOutputWeight": 0.1,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:RARE",
+        "biomeBlacklist": "tag:OCEAN",
+        "spawnWeight": 3,
+        "minGroupSize": 1,
+        "maxGroupSize": 1,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:clock",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

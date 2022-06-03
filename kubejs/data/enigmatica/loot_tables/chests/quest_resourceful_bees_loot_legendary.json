@@ -1,0 +1,231 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 6,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:brutish_zombee_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:ender_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:emerald_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:clockwork_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:spelling_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:soup_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:silver_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:gold_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:iron_bee\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "resourcefulbees:elite_centrifuge_casing",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "resourcefulbees:t2_hive_upgrade",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "resourcefulbees:t3_hive_upgrade",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "resourcefulbees:t4_hive_upgrade",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "glassential:glass_ethereal",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 8,
+                                "max": 16
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "glassential:glass_light",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 16,
+                                "max": 32
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

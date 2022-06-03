@@ -1,0 +1,66 @@
+{
+	// Noise added to map to make it look less plastic
+	"noise": 0.05000000074505806,
+	// Shadow intensity
+	"shadows": 0.10000000149011612,
+	// Chunk grid overlay in large map
+	"chunkGrid": false,
+	// Reduces color palette to 256 colors
+	"reducedColorPalette": false,
+	// Color intensity
+	"saturation": 1.0,
+	// Show claimed chunks on the map
+	"claimedChunksOnMap": true,
+	// Show your own claimed chunks on the map
+	"ownClaimedChunksOnMap": true,
+	// Show waypoints in world
+	"inWorldWaypoints": false,
+	// Enables creation of death waypoints
+	"deathWaypoints": false,
+	// Different ways to render map
+	"mapMode": "NONE",
+	// How many blocks should height checks skip in water. 0 means flat water, ignoring terrain
+	"waterHeightFactor": 8,
+	// Enables minimap to show up in corner
+	"minimap": "DISABLED",
+	// Scale of minimap
+	"minimapScale": 1.0,
+	// Minimap will not rotate
+	"minimapLockedNorth": true,
+	// Show waypoints on minimap
+	"minimapWaypoints": true,
+	// Show player heads on minimap
+	"minimapPlayerHeads": true,
+	// Show entities on minimap
+	"minimapEntities": true,
+	// Show entity heads on minimap
+	"minimapEntityHeads": true,
+	// Entities in minimap will be larger
+	"minimapLargeEntities": false,
+	// Show XYZ under minimap
+	"minimapXYZ": true,
+	// Show biome under minimap
+	"minimapBiome": true,
+	// Blurs minimap
+	"minimapBlur": true,
+	// Adds NWSE compass inside minimap
+	"minimapCompass": true,
+	// Minimap visibility
+	"minimapVisibility": 255,
+	// Show zone (claimed chunk or wilderness) under minimap
+	"minimapZone": true,
+	// Enables debug info
+	"debugInfo": false,
+	// Advanced option. How often queued tasks will run
+	"taskQueueTicks": 4,
+	// Advanced option. How often map render update will be queued
+	"rerenderQueueTicks": 60,
+	// Advanced option. Max tasks that can queue up
+	"taskQueueMax": 100,
+	// Advanced option. Water visibility
+	"waterVisibility": 220,
+	// Advanced option. Grass darkness
+	"grassDarkness": 50,
+	// Advanced option. Foliage darkness
+	"foliageDarkness": 50
+}

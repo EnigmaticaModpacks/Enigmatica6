@@ -1,0 +1,96 @@
+{
+    "name": "dungeons_arise:underworld/foundry/foundry_corridors",
+    "fallback": "dungeons_arise:underworld/foundry/foundry_passage_terminators",
+    "elements": [
+      {
+        "weight": 8,
+        "element": {
+          "location": "dungeons_arise:foundry/foundry_passage_0_stairway",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "location": "dungeons_arise:foundry/foundry_passage_0_stairway_exterior",
+          "processors": "dungeons_arise:waterloggingfix",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {
+        "weight": 10,
+        "element": {
+          "location": "dungeons_arise:foundry/foundry_passage_1_quad",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "location": "dungeons_arise:foundry/foundry_passage_1_quad_exterior",
+          "processors": "dungeons_arise:waterloggingfix",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {
+        "weight": 10,
+        "element": {
+          "location": "dungeons_arise:foundry/foundry_passage_2_straight",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {
+        "weight": 3,
+        "element": {
+          "location": "dungeons_arise:foundry/foundry_passage_2_straight_exterior",
+          "processors": "dungeons_arise:waterloggingfix",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "location": "dungeons_arise:foundry/foundry_passage_3_exterior_spawner",
+          "processors": "dungeons_arise:waterloggingfix",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {
+        "weight": 2,
+        "element": {
+          "location": "dungeons_arise:foundry/foundry_passage_5_straight_debris",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {
+        "weight": 8,
+        "element": {
+          "location": "dungeons_arise:foundry/foundry_passage_6_stairway",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {
+        "weight": 10,
+        "element": {
+          "location": "dungeons_arise:foundry/foundry_corridor_3_passages",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      }
+    ]
+  }

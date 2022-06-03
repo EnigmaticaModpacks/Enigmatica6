@@ -1,0 +1,57 @@
+{
+  "header": {
+    "version": "2.1.0",
+    "mc_version": "1.16.4",
+    "name": "Basic Fusion Reactor",
+    "author": "Enigmatica",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 4,
+      "max_y": 4,
+      "max_z": 4
+    },
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "mekanismgenerators:fusion_reactor_controller"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 36,
+          "item": {
+            "id": "mekanismgenerators:fusion_reactor_frame"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "mekanismgenerators:fusion_reactor_port"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "mekanismgenerators:laser_focus_matrix"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 24,
+          "item": {
+            "id": "mekanismgenerators:reactor_glass"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAAALVTTW/UMBAde2ZX24gfsRfgwpFTj3AGceDQ9rJyN97UIolXtoNafj3+eBE9VOqCRBTlzWjsN/P8nI7oiqQ3yXREtO1aTExdtMGZ0f2yIReoo01MJtkdyVczWXo/2R9mdnEa7GyDST7E69MSnZ8PwZpjzg+nUBbSxZT7FyhXrmE0MV7A1VH3LfizDcnZuKNt3u1+WtqczBgtrZ3evT782Yf0F7O/fYExj2zzKfjjEg+TScE9/rsASWH5H/Nf1O7D6+2Ofk7Bj2NhvyI++yi5y6fSSlN7lKpf0qrlDGwLFCmgBjI2ClAx6oz9QC2o49UVcx1YqCuPwhLdUDTqjDpQSVukBTzANqlqxdanIkOBIF9HkIq1qtGv1Rk542ikoJS+GTelb81ZwCvrCTVJjbR+GPoY+hj6GP0Y+hj6GPoY+hj6GOIEPgl8EvgkUC/wSeCTwCeBTwKfBD4JfBL4JB1tH6zpbShXbUkPPtCbL0uy3509jW4ecv3eL3Mf857Jzbdt/BLerKF5vGtiSnj7J7xZQzff1XHz7Z3L7d1+9uen/cd8LZ/9A7t6bvv7xY197juYfrApXvfLND0dnv0qvwGfJliCHwUAAA\u003d\u003d"
+}

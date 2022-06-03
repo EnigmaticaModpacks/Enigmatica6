@@ -1,0 +1,87 @@
+{
+    "flower": "minecraft:acacia_log",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "Using Industrial processing, dissolve 2 blocks Iron Honey,\n2 Blocks Iron Honeycombs,\n2 Pink Slime ingots.\nPour into a Bee Jar and insert an Advanced Machine Frame.\nSolidify in Pink Slime.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/industrious",
+    "ColorData": {
+        "honeycombColor": "#ce7dce"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "ITEM",
+                "inputID": "minecraft:hay_block",
+                "outputs": [{ "outputID": "minecraft:cooked_beef", "weight": 10, "chance": 0.1 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "minecraft:sheep",
+                "outputs": [{ "outputID": "minecraft:rabbit", "weight": 10 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "minecraft:rabbit",
+                "outputs": [{ "outputID": "minecraft:pig", "weight": 10 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "minecraft:pig",
+                "outputs": [{ "outputID": "minecraft:cow", "weight": 10 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "minecraft:cow",
+                "outputs": [{ "outputID": "minecraft:chicken", "weight": 10 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "minecraft:chicken",
+                "outputs": [{ "outputID": "minecraft:sheep", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "industrialforegoing:latex",
+        "mainOutputWeight": 0.2,
+        "mainOutputCount": 250,
+        "hasFluidOutput": true,
+
+        "secondaryOutput": "industrialforegoing:pink_slime",
+        "secondaryOutputWeight": 0.05,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:meaty_honey_bottle",
+        "bottleOutputWeight": 0.1,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:plastic",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

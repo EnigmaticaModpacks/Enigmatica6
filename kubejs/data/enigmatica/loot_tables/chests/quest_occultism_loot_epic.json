@@ -1,0 +1,111 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "occultism:spirit_attuned_gem",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "occultism:otherworld_sapling",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "occultism:soul_gem",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "occultism:book_of_binding_foliot",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "occultism:book_of_binding_djinni",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "occultism:iesnium_block",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "occultism:iesnium_ore",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "occultism:stable_wormhole",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "occultism:storage_stabilizer_tier2",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

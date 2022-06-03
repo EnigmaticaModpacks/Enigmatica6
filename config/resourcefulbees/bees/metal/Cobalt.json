@@ -1,0 +1,62 @@
+{
+    "flower": "ALL",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "A skilled tinkerer can use their smeltery for\ncasting more than mere tool parts.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 3600,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["sedimentary", "can_swim"],
+    "baseLayerTexture": "ores/cobalt/cobalt_bee",
+    "ColorData": {
+        "honeycombColor": "#20adc9",
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:polished_basalt",
+                "outputs": [{ "outputID": "emendatusenigmatica:cobalt_basalt_ore", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "emendatusenigmatica:cobalt_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "tconstruct:manyullyn_nugget",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:storage_blocks/cobalt",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name" : "steel",
+    "hunger": 3,
+    "honeyColor": "#858585",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:absorption",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

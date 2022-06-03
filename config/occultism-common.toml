@@ -1,0 +1,85 @@
+
+#WorldGen Settings
+[worldgen]
+
+	#Underground Grove Settings
+	[worldgen.underground_grove]
+		#The chance grass will spawn in the underground grove.
+		grassChance = 0.6
+		#The chance small trees will spawn in the underground grove.
+		treeChance = 0.1
+		#The chance vines will spawn in the underground grove.
+		vineChance = 0.3
+		#The chance glowstone will spawn in the ceiling of the underground grove.
+		ceilingLightChance = 0.1
+		#True to generate underground groves. Should not be changed in most scenarios.
+		generateUndergroundGroves = true
+		#The chance for a grove to spawn in a chunk (generates 1/groveSpawnChance chunks on average).
+		groveSpawnChance = 250
+		#The min height for a grove to spawn (applied to the center of the grove, not the floor).
+		groveSpawnMin = 25
+		#The max height for a grove to spawn (applied to the center of the grove, not the ceiling).
+		groveSpawnMax = 60
+		#The biome types the underground grove cannot spawn in.
+		biomeTypeBlacklist = ["NETHER", "END"]
+
+	#Ore Gen Settings
+	[worldgen.oregen]
+
+		#Ore Settings
+		[worldgen.oregen.copperOre]
+			#True to generate this ore.
+			generateOre = false
+			#The tag for the blocks this ore will spawn in.
+			fillerBlockTag = "minecraft:base_stone_overworld"
+			#The size of veins for this ore.
+			#Range: 0 ~ 127
+			size = 9
+			#The count value for the decorator for this ore.
+			#Range: 0 ~ 127
+			count = 0
+			#Range configuration bottom offset.
+			bottomOffset = 20
+			#Range configuration top offset.
+			topOffset = 0
+			#Range configuration maximum.
+			maximum = 64
+
+		#Ore Settings
+		[worldgen.oregen.silverOre]
+			#True to generate this ore.
+			generateOre = false
+			#The tag for the blocks this ore will spawn in.
+			fillerBlockTag = "minecraft:base_stone_overworld"
+			#The size of veins for this ore.
+			#Range: 0 ~ 127
+			size = 7
+			#The count value for the decorator for this ore.
+			#Range: 0 ~ 127
+			count = 0
+			#Range configuration bottom offset.
+			bottomOffset = 5
+			#Range configuration top offset.
+			topOffset = 0
+			#Range configuration maximum.
+			maximum = 30
+
+		#Ore Settings
+		[worldgen.oregen.iesniumOre]
+			#True to generate this ore.
+			generateOre = true
+			#The tag for the blocks this ore will spawn in.
+			fillerBlockTag = "occultism:netherrack"
+			#The size of veins for this ore.
+			#Range: 0 ~ 127
+			size = 3
+			#The count value for the decorator for this ore.
+			#Range: 0 ~ 127
+			count = 10
+			#Range configuration bottom offset.
+			bottomOffset = 10
+			#Range configuration top offset.
+			topOffset = 10
+			#Range configuration maximum.
+			maximum = 128
+

@@ -1,0 +1,109 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:end_city_finder",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:fortress_finder",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:ender_eye",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:brew_flask",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{brewKey:\"botania:speed\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:brew_flask",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{brewKey:\"botania:haste\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:brew_flask",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{brewKey:\"botania:absorption\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:brew_flask",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{brewKey:\"botania:resistance\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:brew_flask",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{brewKey:\"botania:fire_resistance\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "botania:brew_flask",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{brewKey:\"botania:regen_weak\"}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,726 @@
+{
+	id: "0000000000000B69"
+	group: "34B7FB260B6AEB81"
+	order_index: 7
+	filename: "expert__bragging_rights"
+	title: "Bragging Rights"
+	icon: "kubejs:disabled_recipe_indicator"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -6.0d
+			shape: "gear"
+			description: ["Obtaining the Creative Worldshaper is the ultimate goal - Complete this quest and you complete the modpack!"]
+			dependencies: ["0000000000000FEB"]
+			size: 2.0d
+			id: "6D3FE88DB30DEE00"
+			tasks: [{
+				id: "446147A7DA834368"
+				type: "item"
+				item: "create:handheld_worldshaper"
+			}]
+			rewards: [{
+				id: "3A52EC072B3445A2"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "kubejs:disabled_recipe_indicator"
+								Count: 1b
+							}
+							DisplayHeight: "2.0f.0f"
+							Colors: {
+								Bottom: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+							}
+							Animation: "spinning"
+							AnimationSpeed: 0.3f
+							Name: "Enigmatica 6: Expert Mode"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			description: [
+				"Mining is a dangerous profession to undertake, but technology can make it considerably safer."
+				""
+				"Provide the tools necessary to allow these communities access to greater resource abundance, freeing them from toiling in the earth to study and learn."
+			]
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "36CDE03E505E0F94"
+			tasks: [{
+				id: "720841254075293B"
+				type: "item"
+				item: "kubejs:excavation_mastery_token"
+			}]
+			rewards: [{
+				id: "693FC941F15A3ACE"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:excavation_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 69
+									Blue: 82
+									Green: 69
+								}
+								Top: {
+									Red: 69
+									Blue: 82
+									Green: 69
+								}
+								Middle: {
+									Red: 110
+									Blue: 18
+									Green: 74
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Excavation Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			description: [
+				"The art of medicine and healing lives on through ancient alchemical practices."
+				""
+				"Spread this knowledge to prevent further unnecessary loss of life."
+			]
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "477CEC2E3F4736C3"
+			tasks: [{
+				id: "6BDE4D704EAF5C05"
+				type: "item"
+				item: "kubejs:alchemy_mastery_token"
+			}]
+			rewards: [{
+				id: "551D5FD396FF093D"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:alchemy_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Top: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Middle: {
+									Red: 255
+									Blue: 191
+									Green: 178
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Alchemy Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"As the Tree of Life settles its roots into the soil, a deep hum emanates from the ground as ethereal roots begin to spread and take hold. Within moments, lights blink to life upon the surface and as things settle down, fifty lights blink a gentle calming greenish-blue. Many more, however, settle into a deeply unsettling crimson."
+				""
+				"Near the greenish-blue lights, requests for assistance begin to appear as, one-by-one, these remaining communities realize there is still someone out there who can offer them aid."
+				""
+				"---------------------------------"
+				""
+				"Supply these last remaining outposts of civilization with the tools and equipment they need to restore the world to its former magical and technological pinnacle and usher in a new golden age of prosperity."
+				""
+				"To begin, provide them the tools they'll need to become self sufficient."
+			]
+			dependencies: ["7C0943FD8F8A0D69"]
+			id: "4AB9649C1D2FE587"
+			tasks: [{
+				id: "571A2D485D7D82AD"
+				type: "item"
+				item: "kubejs:automation_mastery_token"
+			}]
+			rewards: [{
+				id: "3AB2CF7F89C657B5"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:automation_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 69
+									Blue: 82
+									Green: 69
+								}
+								Top: {
+									Red: 69
+									Blue: 82
+									Green: 69
+								}
+								Middle: {
+									Red: 179
+									Blue: 109
+									Green: 248
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Automation Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			description: ["A return to prosperity will require a great deal of knowledge. Help prepare these communities to build and maintain the complex machinery they’ll need."]
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "6218AF7644C178A7"
+			tasks: [{
+				id: "2BB3E567517D599F"
+				type: "item"
+				item: "kubejs:engineering_mastery_token"
+			}]
+			rewards: [{
+				id: "4D3A23023C449286"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:engineering_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 69
+									Blue: 82
+									Green: 69
+								}
+								Top: {
+									Red: 69
+									Blue: 82
+									Green: 69
+								}
+								Middle: {
+									Red: 98
+									Blue: 229
+									Green: 228
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Engineering Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			description: ["The purest life essence of the earth, Mana suffuses all things. Knowledge of its ebb and flow will undoubtedly aid these communities in becoming excellent stewards of this land."]
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "5DA9A0C75EA47DFF"
+			tasks: [{
+				id: "3F5DB81D50286BAC"
+				type: "item"
+				item: "kubejs:botanical_mastery_token"
+			}]
+			rewards: [{
+				id: "2544D1CD29FA3294"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:botanical_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Top: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Middle: {
+									Red: 23
+									Blue: 109
+									Green: 184
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Botanical Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			description: ["Many threats still roam this land and without defenses, these communities are under severe threat; it’s no wonder so few lights appear to still be active; many must have fallen to the various monstrosities that roam the lands."]
+			dependencies: ["6218AF7644C178A7"]
+			id: "188BE70C3D176BCA"
+			tasks: [{
+				id: "5C9CA9991302C5CA"
+				type: "item"
+				item: "kubejs:battle_mastery_token"
+			}]
+			rewards: [{
+				id: "1D9D78838F73FAB1"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:battle_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 69
+									Blue: 82
+									Green: 69
+								}
+								Top: {
+									Red: 69
+									Blue: 82
+									Green: 69
+								}
+								Middle: {
+									Red: 92
+									Blue: 214
+									Green: 169
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Battle Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			description: [
+				"There’s no shortage of resources across the realms and allies a plenty for those willing to bridge the gap."
+				""
+				"Provide the necessary tools for these communities to set up long distance communications and dimensional transport of goods."
+			]
+			dependencies: ["6218AF7644C178A7"]
+			id: "72C894BE4081603D"
+			tasks: [{
+				id: "5A6A9B10EF0B2E06"
+				type: "item"
+				item: "kubejs:dimensional_mastery_token"
+			}]
+			rewards: [{
+				id: "0E6C5C79136A434B"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:dimensional_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Top: {
+									Red: 71
+									Blue: 82
+									Green: 79
+								}
+								Middle: {
+									Red: 216
+									Blue: 218
+									Green: 120
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Dimensional Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			description: ["Access to clean renewable energy will be vital for these communities to thrive. Assist them in setting up the infrastructure they’ll need as they step forward into a new dawn."]
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "3AB61B2854483CE3"
+			tasks: [{
+				id: "7C2A6AD9D846702E"
+				type: "item"
+				item: "kubejs:energistics_mastery_token"
+			}]
+			rewards: [{
+				id: "20CD22DE6E8E7067"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:energistics_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 69
+									Blue: 82
+									Green: 69
+								}
+								Top: {
+									Red: 69
+									Blue: 82
+									Green: 69
+								}
+								Middle: {
+									Red: 240
+									Blue: 101
+									Green: 118
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Energistics Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			description: [
+				"Thriving means living in balance with life and not just the local flora and fauna. The spirits of the Otherworld will undoubtedly be important allies to these communities as they grow."
+				""
+				"Teach them how to contact the Otherworld and respectfully obtain their aid."
+			]
+			dependencies: ["6218AF7644C178A7"]
+			id: "474DFFBB63FE90BA"
+			tasks: [{
+				id: "7DE2D48092C045AA"
+				type: "item"
+				item: "kubejs:ritual_mastery_token"
+			}]
+			rewards: [{
+				id: "541CF497CB5FE81E"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:ritual_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Top: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Middle: {
+									Red: 196
+									Blue: 237
+									Green: 220
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Ritual Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			description: [
+				"Stepping into this new age of prosperity does not mean forsaking the lands around us that provide the essentials of life."
+				""
+				"Assist the communities in becoming stewards of the land, caring for and maintaining the balance of energies that surround them."
+			]
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "65F9021D56312C9B"
+			tasks: [{
+				id: "15599A14E7C2F230"
+				type: "item"
+				item: "kubejs:aura_mastery_token"
+			}]
+			rewards: [{
+				id: "3D93697F45EC1124"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:aura_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Top: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Middle: {
+									Red: 244
+									Blue: 128
+									Green: 255
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Aura Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			description: [
+				"Keep an eye to the heavens."
+				""
+				"Knowledge of the celestial bodies and their influences upon us will assist these communities as they grow."
+			]
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "2A79C4CDDA045886"
+			tasks: [{
+				id: "4BA322BD06DE3777"
+				type: "item"
+				item: "kubejs:astronomy_mastery_token"
+			}]
+			rewards: [{
+				id: "678108C4817B164B"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:astronomy_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Top: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Middle: {
+									Red: 56
+									Blue: 255
+									Green: 148
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Astronomy Mastery"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Bragging Rights"
+			icon: "masterfulmachinery:enigmatic_tree_of_life_controller"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Countless hours of research, experimentation, and hard work have led you to one final discovery in the notes left behind by those who came before; an immense interdimensional organism whose roots spread throughout the world: The Tree of Life."
+				""
+				"Even here in this far off locale, once you knew what to look for, the telltale signs were there all along, remnants of the long-withered root network. With careful preparation, a new tree may be coerced from the soil to join its roots to those fragile remnants."
+				""
+				"---------------------------------"
+				""
+				"Construct the Enigmatic Tree of Life. This is a massive build that will require the use of the Building Gadget or Schematicannon to complete. "
+				""
+				"Once built, the inputs and outputs may be found within the structure; an entrance awaits on the side."
+			]
+			dependencies: ["0000000000000FEB"]
+			hide: true
+			id: "7C0943FD8F8A0D69"
+			tasks: [{
+				id: "0B1FB01E3D6A63F8"
+				type: "item"
+				item: "masterfulmachinery:enigmatic_tree_of_life_controller"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			description: [
+				"For many of these communities, nutrition has taken a back seat as farming techniques and access to diverse foods has been lost."
+				""
+				"Prepare meals to fill their bellies so that their minds may be filled with the knowledge you have to share."
+			]
+			dependencies: ["4AB9649C1D2FE587"]
+			id: "5A9BCC1CC2CC3E0C"
+			tasks: [{
+				id: "0C3AD97B67E61659"
+				type: "item"
+				item: "kubejs:culinary_mastery_token"
+			}]
+			rewards: [{
+				id: "5C862E67BDEE747A"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							DisplayHeight: 2.0f
+							Item: {
+								id: "kubejs:culinary_mastery_token"
+								Count: 1b
+							}
+							Colors: {
+								Bottom: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Top: {
+									Red: 168
+									Blue: 27
+									Green: 93
+								}
+								Middle: {
+									Red: 242
+									Blue: 73
+									Green: 186
+								}
+							}
+							DisplayScale: 1.0f
+							AnimationSpeed: 0.3f
+							Animation: "spinning"
+							Name: "Culinary Mastery"
+						}
+					}
+				}
+			}]
+		}
+	]
+}

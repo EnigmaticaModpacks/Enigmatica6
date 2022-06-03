@@ -1,0 +1,207 @@
+=========================================
+Enigmatica6 0.2.16 --> Enigmatica6 0.2.17
+=========================================
+
+Added:
+- BlockCarpentry
+
+Updated:
+	Bamboo Blocks (Bamboo-Blocks-1.16.1-v2.0.0 --> Bamboo-Blocks-1.16.1-v2.0.1):
+		Bamboo-Blocks-1.16.1-v2.0.1:
+			* Fixed category for Bamboo Chest recipe
+			* Added some missing tags
+			* Fixed a log error from a recipe that wasn't supposed to be present
+			* Update the mods.toml
+
+	Botany Pots (BotanyPots-1.16.1-3.0.6.jar --> BotanyPots-1.16.1-3.0.7.jar):
+		BotanyPots-1.16.1-3.0.7.jar:
+			* Sync pot state without rebuilding the chunk. (Experimental Performance Update) - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	ConnectedTexturesMod (CTM - MC1.16.1-1.1.1.4 --> CTM - MC1.16.1-1.1.1.5):
+		CTM - MC1.16.1-1.1.1.5:
+			No changelog available.
+
+	Engineer's Decor (engineersdecor-1.16.1-1.1.3.jar --> engineersdecor-1.16.1-1.1.4.jar):
+		engineersdecor-1.16.1-1.1.4.jar:
+			* v1.1.4     [F] Milking Machine fluid transfer re-added (thx gebcrafter).
+			[F] Fluid Barrel status overlay message format fixed.
+			[F] Fixed missing Dense Grit Dirt loot table (issue #124, thx vaelzan).
+			* v1.1.3     [F] Fixed conditional recipe tag dependency (thx Blu, Cyborgmas).
+			* v1.1.2     [F] Fixed Crafting Table Patchouli manual entry.
+			* v1.1.1     [R] Intial 1.16.1 release.
+			* v1.1.1-b7  [F] Fixed AI-open-path bug (issue #116, ty KrAzYGEEK32, desht).
+			[F] Conditional recipes extended to additional vanilla ingredients in case of oredict tag issues.
+			[M] Lang file update zh_cn (PR#117, Moonisky).
+			* v1.1.1-b6  [F] Iron Hatch rendering fixed (issue #113, ty KrAzYGEEK32).
+			[F] Hotfix of UI tooltip crash for versions Forge < 32.0.97 mapping issue.
+			* v1.1.1-b5  [M] Transmuted the "Treated Wood Crafting Table" to a "Metal Crafting Table"
+			to de-duplicate the new Immersive Engineering "Engineer's Crafting Table".
+			[F] Fixed metal pole culling (issue #109, thx Alsett).
+			* v1.1.1-b4  [F] Fixed Fluid Barrel tooltip text duplicate.
+			[F] Fixed IE hard-dependency opt-out.
+			[M] Side Table model and shape refined.
+			[A] Dense Grit Dirt added.
+			[M] Wood textures slightly darker, obsolete textures removed.
+			* v1.1.1-b3  [A] Ceiling Edge Light added.
+			[A] Iron Bulb Light added.
+			[A] Iron Hatch added.
+			[A] Fluid Barrel added.
+			[M] Gas Concrete texture made slightly darker.
+			* v1.1.1-b2  [M] Nerfed Solar Panel output default config value from 45RF/t to 40RF/t.
+			[F] Fixed conditional IE tag dependency of alternative/standalone recipes.
+			* v1.1.1-b1  [A] JEI integration ported.
+			[M] Logical server side config moved from COMMON to SERVER (world/serverconfig).
+			[F] Labeled Crate recipe condition for missing Immersive Engineering fixed.
+			[F] Mouse scrolling works for Labeled Crate and TW Crafting Table.
+			* v1.1.1-a1  [A] Initial port.
+
+		engineersdecor-1.16.2-1.1.2-b5.jar:
+			* v1.1.2-b5  [A] Sandstone Ornamented Clinker Brick added.
+			[A] Old Industrial Wood Planks/Stairs/Slabs/Slab Slices added.
+			[A] Old Industrial Wood Door added.
+			[M] Wood textures made slightly darker.
+			[F] Milking Machine fluid transfer re-added (thx gebcrafter).
+			[F] Fluid Barrel status overlay message format fixed.
+			[F] Fixed missing Dense Grit Dirt loot table (issue #124, thx vaelzan).
+			* v1.1.2-b4  [F] Mapping adaption to Forge 1.16.2-33.0.22/20200723-1.16.1.
+			[F] Fixed conditional recipe tag dependency (thx Blu, Cyborgmas).
+			* v1.1.2-b3  [F] Mapping adaption to Forge 1.16.2-33.0.20.
+			* v1.1.2-b2  [A] Dark Shingle Roof added.
+			* v1.1.2-b1  [U] Ported to MC1.16.2.
+
+	Fast Leaf Decay (FastLeafDecay-v23.jar --> FastLeafDecay-v25.jar):
+		FastLeafDecay-v25.jar:
+			Removed debug statements.
+
+	Just Enough Resources (JER) (JustEnoughResources-1.16.1-0.11.1.96 --> JustEnoughResources-1.16.1-0.11.1.98):
+		JustEnoughResources-1.16.1-0.11.1.98:
+			[[bc99c8d](https://github.com/way2muchnoise/JustEnoughResources/commit/bc99c8d5e0a47268c439d7bedbc6fe8b31eb2362)] default to empty map if villager trades not found, fixes #250 (way2muchnoise)
+
+		JustEnoughResources-1.16.1-0.11.1.97:
+			[[13482cc](https://github.com/way2muchnoise/JustEnoughResources/commit/13482cca028db7df11a2349ecffed69be76d5994)] Include license option in mods.toml (#255) (GitHub)
+
+	Masonry (Masonry 0.3.5 (1.16.1) --> Masonry 0.3.6 (1.16.x) ):
+		Masonry 0.3.6 (1.16.x) :
+			* Updated to work with Minecraft 1.16.2 & 1.16.3 as well
+			* Fixed slabs being tagged as walls & slabs not being tagged as all
+
+	Mining Gadgets (MiningGadgets-1.4.1 --> mininggadgets-1.4.2.jar):
+		mininggadgets-1.4.2.jar:
+			[1.4.2] - 2020-09-12
+			Added
+			* A new render for when the Item is in your hand thanks to [ItsTheBdoge](https://github.com/ItsTheBdoge) :heart:
+			* Added hold shift for full energy reading aka: 1M/1M FE to 1,000,000/1,000,000 FE It's nice! :D
+			* Updated Modification table textures a bit
+			Changed
+			* You can now use right click on TileEntities with the Gadget in your hand again. The blocker on this operation has been modified to only apply to things you might have in your offhand like torches. It's not perfect, but the perfect option requires a PR to Forge...
+			Fixed
+			* Fixed the Mining Gadget going into negative energy due to a issue with freezing upgrade
+
+	MoreVanillaLib (morevanillalib-1.16.1-1.2.8.jar --> morevanillalib-1.16.1-1.2.11.jar):
+		morevanillalib-1.16.1-1.2.11.jar:
+			Fix shulker box loses its content/Mekanism Digital Miner will just be destroyed
+			you will not find this version on GitHub
+
+		morevanillalib-1.16.2-1.2.12.jar:
+			fix a bug for excavator mod
+
+		morevanillalib-1.16.2-1.2.11.jar:
+			fixed crash on world creation/joining existing world
+
+		morevanillalib-1.16.2-1.2.10.jar:
+			port to 1.16.2
+
+	PneumaticCraft: Repressurized (pneumaticcraft-repressurized-1.16.1-2.2.0-29.jar --> pneumaticcraft-repressurized-1.16.1-2.2.1-32.jar):
+		pneumaticcraft-repressurized-1.16.1-2.2.1-32.jar:
+			2.2.1-32 (14 Sep 2020)
+			[](https://github.com/TeamPneumatic/pnc-repressurized/blob/1.16/Changelog.md#fixes)Fixes
+			* Fixed Amadrones thinking they had only one inventory slot, causing orders with more than 64 of an item to fail
+			* Fixed Memory Stick sometimes losing its stored experience
+			* Left-clicking Memory Stick to toggle XP absorption mode now also works when left-clicking air (previously required a block to be clicked)
+			* Drone "Inventory Export" widget will now try to keep items stacked in the inventory it's exporting to
+			* - This also applies to Collector Drones, which use the "Inventory Export" widget internally
+
+	Productive Bees (productivebees-1.16.1-0.3.2.jar --> productivebees-1.16.1-0.3.3.jar):
+		productivebees-1.16.1-0.3.3.jar:
+			Backup before updating
+			* Added Patchouli book with general documentation
+			* Added JEI information to bees about flowering requirements
+			* Added production chance to the centrifuge recipe display in JEI
+			* Added obsidian bee
+			* Added TOP support to show what is in side a nest
+			* Changed quartz nest spawn calculation to hopefully make it easier to find a nest in the nether
+			* Moved some bees to data pack structure
+			* Fixed bees from data pack not showing on clients JEI
+			* Fixed plastic and silicon bee produce recipes
+			* Lowered the repopulation cooldown for nests
+
+		productivebees-1.16.2-0.3.2.jar:
+			* Fixed server connection issues
+			* Added plastic, silicon and ender biotite bees
+
+	Refined Storage (Refined Storage 1.9.2 --> Refined Storage 1.9.2b):
+		Refined Storage 1.9.2b:
+			Fixed duplication bug with the Constructor (Darkere, raoulvdberge)
+
+		Refined Storage 1.9.5:
+			* Re-added the /refinedstorage disk create <player> <id> command (raoulvdberge)
+			* Added the /refinedstorage disk list command (raoulvdberge)
+			* Added the /refinedstorage disk list <player> command (raoulvdberge)
+			* Added the /refinedstorage network list <dimension> command (raoulvdberge)
+			* Added the /refinedstorage network get <dimension> <pos> command (raoulvdberge)
+			* Added the /refinedstorage network get <dimension> <pos> autocrafting list command (raoulvdberge)
+			* Added the /refinedstorage network get <dimension> <pos> autocrafting get <id> command (raoulvdberge)
+			* Added the /refinedstorage network get <dimension> <pos> autocrafting cancel command (raoulvdberge)
+			* Added the /refinedstorage network get <dimension> <pos> autocrafting cancel <id> command (raoulvdberge)
+			* Added JEI ghost ingredient dragging support (raoulvdberge)
+			* Fixed text field not being focused in amount specifying screens (raoulvdberge)
+
+		Refined Storage 1.9.4:
+			* Fixed JEI recipes/usages keys not working in Grids (raoulvdberge)
+
+		Refined Storage 1.9.3:
+			* Port to Minecraft 1.16.2 (raoulvdberge)
+			* Fixed duplication bug with the Constructor (Darkere)
+			* Updated Japanese translation (a2y4)
+			* Updated Taiwanese translation (ForFunPenguin)
+			* Refactored autocrafting code (raoulvdberge)
+
+	Server Tab Info (ServerTabInfo-1.16.1-1.3.1.jar --> ServerTabInfo-1.16.1-1.3.2.jar):
+		ServerTabInfo-1.16.1-1.3.2.jar:
+			As always find the changelog here [CHANGELOG](https://github.com/Crimix/ServerTabInfo/blob/master/CHANGELOG.md)
+
+		ServerTabInfo-1.16.2-1.3.2.jar:
+			As always find the changelog here [CHANGELOG](https://github.com/Crimix/ServerTabInfo/blob/master/CHANGELOG.md)
+
+		ServerTabInfo-1.16.2-1.3.1.jar:
+			As always find the changelog here [CHANGELOG](https://github.com/Crimix/ServerTabInfo/blob/master/CHANGELOG.md)
+
+		ServerTabInfo-1.16.2-1.3.1-b1.jar:
+			As always find the changelog here [CHANGELOG](https://github.com/Crimix/ServerTabInfo/blob/master/CHANGELOG.md)
+
+	Tool Stats (ToolStats-1.16.1-2.0.4.jar --> ToolStats-1.16.1-2.0.5.jar):
+		ToolStats-1.16.1-2.0.5.jar:
+			* Added Russian localization. Thanks to BardinTheDwarf. - BardinTheDwarf
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?ToolStats)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Transport (Transport-1.16.1-3.0.0.jar --> Transport-1.16.1-3.1.0.jar):
+		Transport-1.16.1-3.1.0.jar:
+			Added:
+			* Rail Worker's Bench: Allowing switching between rails, similar to the Stone cutter
+			Fixes:
+			* Scaffolding Slab recipe produces 3
+
+	World Stripper (World-Stripper-1.7.2-1.16.jar --> World Stripper-1.16.3-1.7.2.jar):
+		World Stripper-1.16.3-1.7.2.jar:
+			Ported to run on ALL 1.16 versions of Minecraft
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

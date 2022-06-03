@@ -1,0 +1,18 @@
+
+#Options for getting help in game.
+[help]
+	#Should the help information be visible in tooltips?
+	enabled-in-tooltips = true
+
+#Performance related options.
+[performance]
+
+	#Configures caches
+	[performance.caches]
+
+		#Cache size related options.
+		[performance.caches.sizes]
+			#Size of the collision box cache.
+			#Range: -9223372036854775808 ~ 9223372036854775807
+			collision-boxes = 10000
+

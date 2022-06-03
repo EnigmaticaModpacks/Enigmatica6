@@ -1,0 +1,334 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:golden_carrot",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{RepairCost:0,display:{Name:'{\"text\":\"\\'Luckier\\' Carrot\"}'}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:earth_slime_tall_grass",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:sky_slime_tall_grass",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:ender_slime_tall_grass",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:blood_slime_tall_grass",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:crimson_roots",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:bacon",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 6,
+                                "max": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:blank_cast",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:soul_glass",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_invar\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_tinkers_bronze\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_rose_gold\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_constantan\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_bronze\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_brass\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"materialis:molten_manasteel\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_steel\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_pig_iron\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"kubejs:molten_compressed_iron\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_rose_gold\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_tinkers_bronze\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_invar\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_constantan\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_bronze\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_brass\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"materialis:molten_manasteel\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_steel\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_pig_iron\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"kubejs:molten_compressed_iron\",Amount:100}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

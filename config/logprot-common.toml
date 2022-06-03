@@ -1,0 +1,17 @@
+
+[Login-settings]
+	#Time in ticks the logging player is invulnerable, 20 ticks = 1sec. Default is 50secs = 1000 ticks
+	#Range: 0 ~ 50000
+	invulnerabilityTime = 3600
+	#Max distance in blocks(2d) the invulnerability lasts, default: 10
+	#Range: 1 ~ 200
+	maxDistance = 2
+	#Enables the protection for dimension changes too, default: true
+	dimensionprotection = true
+	#Enables the protection for respawning too, default: true
+	respawnprotection = true
+
+[debug]
+	#Whether to enable debug log outputs, default: false
+	debugLog = false
+

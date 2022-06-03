@@ -1,0 +1,17 @@
+{
+    "name" : "diamond",
+    "hunger": 3,
+    "honeyColor": "#00ffff",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:bad_omen",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

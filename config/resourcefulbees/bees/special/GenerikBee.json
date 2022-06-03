@@ -1,0 +1,66 @@
+{
+    "flower": "simplefarming:corn_crop",
+    "creator": "GenerikB",
+    "lore": "Pecker!",
+    "loreColor": "#FFA500",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["slimy", "can_swim"],
+    "baseLayerTexture": "other/generikbee",
+    "ColorData": {
+        "honeycombColor": "#f25843"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 5,
+        "baseHealth": 20
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "ENTITY",
+                "inputID": "undergarden:scintling",
+                "outputs": [
+                  {"outputID": "minecraft:chicken", "nbtData": {"CustomName":"{\"text\":\"Pecker\"}"}, "weight": 512}
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "undergarden:goo_ball",
+        "mainOutputWeight": 0.1,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "minecraft:egg",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:rocket_honey_bottle",
+        "bottleOutputWeight": 0.1,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "slimy",
+        "parent2": "creeper",
+        "feedItem": "simplefarming:cornbread",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

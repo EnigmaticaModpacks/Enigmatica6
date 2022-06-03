@@ -1,0 +1,896 @@
+{
+  "biomes": {
+    "byg:black_forest_clearing": {
+      "dictionary": [
+        "OVERWORLD",
+        "FOREST",
+        "CONIFEROUS",
+        "COLD"
+      ],
+      "beach": "byg:rocky_beach",
+      "river": "minecraft:river"
+    },
+    "byg:blue_taiga_hills": {
+      "dictionary": [
+        "CONIFEROUS",
+        "COLD",
+        "HILLS",
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:enchanted_grove": {
+      "dictionary": [
+        "PLAINS",
+        "LUSH",
+        "MAGICAL",
+        "RARE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:snowy_coniferous_clearing": {
+      "dictionary": [
+        "FOREST",
+        "SNOWY",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "byg:snowy_black_beach",
+      "river": "minecraft:frozen_river"
+    },
+    "byg:evergreen_hills": {
+      "dictionary": [
+        "HILLS",
+        "CONIFEROUS",
+        "FOREST",
+        "COLD",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:aspen_clearing": {
+      "dictionary": [
+        "OVERWORLD",
+        "FOREST"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:coniferous_forest_hills": {
+      "dictionary": [
+        "CONIFEROUS",
+        "COLD",
+        "FOREST",
+        "OVERWORLD",
+        "HILLS"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:twilight_valley_hills": {
+      "dictionary": [
+        "HILLS",
+        "COLD",
+        "WASTELAND",
+        "MAGICAL",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:deciduous_clearing": {
+      "dictionary": [
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:redwood_mountains": {
+      "dictionary": [
+        "DRY",
+        "HOT",
+        "MOUNTAIN",
+        "OVERWORLD"
+      ],
+      "beach": "byg:rocky_beach",
+      "river": "minecraft:river"
+    },
+    "byg:great_lake_isles": {
+      "dictionary": [
+        "OVERWORLD",
+        "CONIFEROUS"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:marshlands": {
+      "dictionary": [
+        "SWAMP",
+        "WET",
+        "WATER",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:marshlands"
+    },
+    "byg:red_oak_forest_hills": {
+      "dictionary": [
+        "HILLS",
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:sierra_range": {
+      "dictionary": [
+        "DRY",
+        "HOT",
+        "MOUNTAIN",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:weeping_witch_clearing": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "MAGICAL",
+        "RARE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:rainbow_beach": {
+      "dictionary": [
+        "OVERWORLD",
+        "BEACH"
+      ],
+      "river": "minecraft:river"
+    },
+    "byg:snowy_rocky_black_beach": {
+      "dictionary": [
+        "OVERWORLD",
+        "BEACH",
+        "SNOWY"
+      ],
+      "river": "minecraft:frozen_river"
+    },
+    "byg:bamboo_forest": {
+      "dictionary": [
+        "OVERWORLD",
+        "FOREST",
+        "DENSE"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:prairie_clearing": {
+      "dictionary": [
+        "PLAINS",
+        "DRY",
+        "SPARSE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:wooded_meadow": {
+      "dictionary": [
+        "PLAINS",
+        "LUSH",
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:flowering_meadow": {
+      "dictionary": [
+        "PLAINS",
+        "LUSH",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:snowy_blue_taiga_hills": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "SNOWY",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:snowy_beach",
+      "river": "minecraft:frozen_river"
+    },
+    "byg:wooded_red_rock_mountains": {
+      "dictionary": [
+        "DRY",
+        "HOT",
+        "MOUNTAIN",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:skyris_peaks": {
+      "dictionary": [
+        "CONIFEROUS",
+        "COLD",
+        "MOUNTAIN",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:skyris_peaks"
+    },
+    "byg:flowering_enchanted_grove": {
+      "dictionary": [
+        "PLAINS",
+        "LUSH",
+        "MAGICAL",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:alpine_foothills": {
+      "dictionary": [
+        "OVERWORLD",
+        "HILLS",
+        "COLD",
+        "SNOWY"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:alpine_foothills"
+    },
+    "byg:deciduous_forest_hills": {
+      "dictionary": [
+        "FOREST",
+        "OVERWORLD",
+        "HILLS"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:oasis": {
+      "dictionary": [
+        "WET",
+        "WATER",
+        "SANDY",
+        "HOT",
+        "LUSH",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:oasis"
+    },
+    "byg:flowering_ancient_forest": {
+      "dictionary": [
+        "FOREST",
+        "MAGICAL",
+        "DENSE",
+        "RARE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:coral_mangroves": {
+      "dictionary": [
+        "OVERWORLD",
+        "SWAMP",
+        "WATER",
+        "WET"
+      ],
+      "beach": "byg:coral_mangroves",
+      "river": "byg:coral_mangroves"
+    },
+    "byg:forest_fault": {
+      "dictionary": [
+        "CONIFEROUS",
+        "COLD",
+        "FOREST",
+        "OVERWORLD",
+        "RARE"
+      ],
+      "beach": "byg:rocky_beach",
+      "river": "minecraft:river"
+    },
+    "byg:tropical_islands": {
+      "dictionary": [
+        "OVERWORLD"
+      ],
+      "beach": "byg:rainbow_beach",
+      "river": "byg:tropical_islands"
+    },
+    "byg:cherry_blossom_clearing": {
+      "dictionary": [
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:enchanted_forest_hills": {
+      "dictionary": [
+        "HILLS",
+        "FOREST",
+        "RARE",
+        "MAGICAL",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:snowy_deciduous_forest_hills": {
+      "dictionary": [
+        "HILLS",
+        "FOREST",
+        "SNOWY",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:snowy_beach",
+      "river": "minecraft:frozen_river"
+    },
+    "byg:zelkova_forest_hills": {
+      "dictionary": [
+        "HILLS",
+        "CONIFEROUS",
+        "COLD",
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:frozen_lake": {
+      "dictionary": [
+        "SNOWY",
+        "WET",
+        "WATER",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:frozen_lake"
+    },
+    "byg:grove": {
+      "dictionary": [
+        "PLAINS",
+        "LUSH",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:ebony_hills": {
+      "dictionary": [
+        "HILLS",
+        "FOREST",
+        "DENSE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:white_beach": {
+      "dictionary": [
+        "OVERWORLD",
+        "BEACH"
+      ],
+      "river": "minecraft:river"
+    },
+    "byg:tropical_rainforest_hills": {
+      "dictionary": [
+        "HILLS",
+        "JUNGLE",
+        "HOT",
+        "DENSE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:guiana_clearing": {
+      "dictionary": [
+        "FOREST",
+        "JUNGLE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:boreal_clearing": {
+      "dictionary": [
+        "FOREST",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:seasonal_forest_hills": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:fresh_water_lake": {
+      "dictionary": [
+        "WET",
+        "WATER",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:fresh_water_lake"
+    },
+    "byg:coniferous_clearing": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:pointed_stone_forest": {
+      "dictionary": [
+        "PLATEAU",
+        "MOUNTAIN",
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "byg:rocky_beach",
+      "river": "minecraft:river"
+    },
+    "byg:red_rock_highlands": {
+      "dictionary": [
+        "MOUNTAIN",
+        "OVERWORLD",
+        "HOT"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:glowing_ancient_forest": {
+      "dictionary": [
+        "FOREST",
+        "MAGICAL",
+        "DENSE",
+        "RARE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:seasonal_taiga_hills": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:red_desert_dunes": {
+      "dictionary": [
+        "SANDY",
+        "WASTELAND",
+        "HOT",
+        "OVERWORLD",
+        "HILLS"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:red_desert_dunes"
+    },
+    "byg:boreal_forest_hills": {
+      "dictionary": [
+        "CONIFEROUS",
+        "COLD",
+        "FOREST",
+        "HILLS",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:blue_giant_taiga": {
+      "dictionary": [
+        "RARE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:black_forest_hills": {
+      "dictionary": [
+        "CONIFEROUS",
+        "COLD",
+        "FOREST",
+        "HILLS",
+        "OVERWORLD"
+      ],
+      "beach": "byg:rocky_beach",
+      "river": "minecraft:river"
+    },
+    "byg:tropical_fungal_rainforest_hills": {
+      "dictionary": [
+        "HILLS",
+        "JUNGLE",
+        "HOT",
+        "DENSE",
+        "MAGICAL",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:cika_mountains": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "CONIFEROUS",
+        "MOUNTAIN",
+        "OVERWORLD"
+      ],
+      "beach": "byg:rocky_beach",
+      "river": "minecraft:river"
+    },
+    "byg:snowy_deciduous_clearing": {
+      "dictionary": [
+        "FOREST",
+        "SNOWY",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:snowy_beach",
+      "river": "minecraft:frozen_river"
+    },
+    "byg:lush_red_desert": {
+      "dictionary": [
+        "DRY",
+        "HOT",
+        "SANDY",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:skyris_highlands_clearing": {
+      "dictionary": [
+        "CONIFEROUS",
+        "COLD",
+        "MOUNTAIN",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:skyris_highlands_clearing"
+    },
+    "byg:araucaria_forest": {
+      "dictionary": [
+        "DENSE",
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:polluted_lake": {
+      "dictionary": [
+        "WET",
+        "WATER",
+        "WASTELAND",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:polluted_lake"
+    },
+    "byg:red_spruce_taiga": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:snowy_coniferous_forest_hills": {
+      "dictionary": [
+        "HILLS",
+        "FOREST",
+        "SNOWY",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "byg:snowy_black_beach",
+      "river": "minecraft:frozen_river"
+    },
+    "byg:maple_hills": {
+      "dictionary": [
+        "HILLS",
+        "FOREST",
+        "COLD",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:bluff_peaks": {
+      "dictionary": [
+        "SNOWY",
+        "MOUNTAIN",
+        "COLD",
+        "OVERWORLD"
+      ],
+      "beach": "byg:rocky_beach",
+      "river": "minecraft:river"
+    },
+    "byg:canyon_edge": {
+      "dictionary": [
+        "OVERWORLD",
+        "WET",
+        "WATER"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:canyon_edge"
+    },
+    "byg:rocky_beach": {
+      "dictionary": [
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:dummy": {
+      "dictionary": [
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:red_rock_lowlands": {
+      "dictionary": [
+        "OVERWORLD",
+        "HOT"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:seasonal_giant_taiga": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:evergreen_clearing": {
+      "dictionary": [
+        "CONIFEROUS",
+        "FOREST",
+        "COLD",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:aspen_forest_hills": {
+      "dictionary": [
+        "HILLS",
+        "OVERWORLD",
+        "FOREST"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:bog": {
+      "dictionary": [
+        "OVERWORLD",
+        "SWAMP",
+        "WATER",
+        "WET"
+      ],
+      "beach": "byg:bog",
+      "river": "byg:bog"
+    },
+    "byg:zelkova_clearing": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:wooded_grassland_plateau": {
+      "dictionary": [
+        "PLAINS",
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "byg:rocky_beach",
+      "river": "minecraft:river"
+    },
+    "byg:guiana_springs": {
+      "dictionary": [
+        "FOREST",
+        "JUNGLE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:northern_forest": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "SNOWY",
+        "LUSH",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:jacaranda_forest_hills": {
+      "dictionary": [
+        "HILLS",
+        "JUNGLE",
+        "HOT",
+        "DENSE",
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:fungal_patch": {
+      "dictionary": [
+        "JUNGLE",
+        "HOT",
+        "DENSE",
+        "MAGICAL",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:seasonal_deciduous_forest_hills": {
+      "dictionary": [
+        "HILLS",
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:skyris_steeps": {
+      "dictionary": [
+        "CONIFEROUS",
+        "COLD",
+        "MOUNTAIN",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "byg:skyris_steeps"
+    },
+    "byg:seasonal_birch_forest_hills": {
+      "dictionary": [
+        "HILLS",
+        "FOREST",
+        "COLD",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:snowy_evergreen_hills": {
+      "dictionary": [
+        "FOREST",
+        "SNOWY",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "byg:snowy_black_beach",
+      "river": "minecraft:frozen_river"
+    },
+    "byg:basalt_barrera": {
+      "dictionary": [
+        "OVERWORLD",
+        "BEACH"
+      ],
+      "river": "minecraft:river"
+    },
+    "byg:redwood_clearing": {
+      "dictionary": [
+        "FOREST",
+        "SPARSE",
+        "OVERWORLD"
+      ],
+      "beach": "byg:rocky_beach",
+      "river": "minecraft:river"
+    },
+    "byg:snowy_evergreen_clearing": {
+      "dictionary": [
+        "FOREST",
+        "SNOWY",
+        "CONIFEROUS",
+        "OVERWORLD"
+      ],
+      "beach": "byg:snowy_black_beach",
+      "river": "minecraft:frozen_river"
+    },
+    "byg:jacaranda_clearing": {
+      "dictionary": [
+        "FOREST",
+        "JUNGLE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:seasonal_deciduous_clearing": {
+      "dictionary": [
+        "FOREST",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:flowering_grove": {
+      "dictionary": [
+        "PLAINS",
+        "LUSH",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:pumpkin_forest": {
+      "dictionary": [
+        "FOREST",
+        "COLD",
+        "MAGICAL",
+        "RARE",
+        "OVERWORLD"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    },
+    "byg:snowy_black_beach": {
+      "dictionary": [
+        "OVERWORLD",
+        "BEACH",
+        "SNOWY"
+      ],
+      "river": "minecraft:frozen_river"
+    },
+    "byg:snowy_blue_giant_taiga": {
+      "dictionary": [
+        "FOREST",
+        "SNOWY",
+        "CONIFEROUS",
+        "OVERWORLD",
+        "RARE"
+      ],
+      "beach": "minecraft:beach",
+      "river": "minecraft:river"
+    }
+  }
+}

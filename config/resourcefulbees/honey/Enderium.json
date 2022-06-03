@@ -1,0 +1,17 @@
+{
+    "name" : "enderium",
+    "hunger": 3,
+    "honeyColor": "#0a4a4a",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:instant_health",
+        "duration": 100,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

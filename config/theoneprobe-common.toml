@@ -10,8 +10,8 @@ loggingThrowableTimeout = 20000
 compactEqualStacks = true
 #Alternate color for the tank bar
 tankbarAlternateFilledColor = "ff000043"
-#How to display tank contents: 0 = do not show, 1 = show in a bar, 2 = show as text
-#Range: 0 ~ 2
+#How to display tank contents: 0 = do not show, 1 = show in fluid bar, 2 = show in a bar, 3 = show as text
+#Range: 0 ~ 3
 showTank = 1
 #If true there will be a readme note for first-time players
 spawnNote = false

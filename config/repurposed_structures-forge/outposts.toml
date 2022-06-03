@@ -1,0 +1,34 @@
+
+#-----------------------------------------------------------------------------------------
+# Average distance between spawn attempts for Repurposed Structures Outposts.
+# Will replace Vanilla Outposts with RS's themed Outposts if both would've been in same biome.
+# 1 for spawning in most chunks and 1001 for none.
+# Note: Vanilla Outposts will spawn again if a RS Outpost's entry is set to 1001 for the biome.
+[Outposts]
+	#Range: 1 ~ 1001
+	netherBrickOutpostMaxChunkDistance = 34
+	#Range: 1 ~ 1001
+	warpedOutpostMaxChunkDistance = 34
+	#Range: 1 ~ 1001
+	crimsonOutpostMaxChunkDistance = 34
+	#Range: 1 ~ 1001
+	outpostBirchMaxChunkDistance = 45
+	#Range: 1 ~ 1001
+	outpostJungleMaxChunkDistance = 45
+	#Range: 1 ~ 1001
+	outpostGiantTreeTaigaMaxChunkDistance = 45
+	#Range: 1 ~ 1001
+	outpostDesertMaxChunkDistance = 45
+	#Range: 1 ~ 1001
+	outpostBadlandsMaxChunkDistance = 45
+	#Range: 1 ~ 1001
+	outpostSnowyMaxChunkDistance = 45
+	#Range: 1 ~ 1001
+	outpostIcyMaxChunkDistance = 41
+	#Range: 1 ~ 1001
+	outpostOakMaxChunkDistance = 45
+	#Range: 1 ~ 1001
+	outpostTaigaMaxChunkDistance = 45
+	#Range: 1 ~ 1001
+	outpostEndMaxChunkDistance = 61
+

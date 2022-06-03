@@ -1,0 +1,1547 @@
+{
+	id: "0000000000000500"
+	group: "5A8B89F87F77CF4C"
+	order_index: 4
+	filename: "botania"
+	title: "Botania"
+	icon: "botania:mana_pylon"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Botania"
+			icon: {
+				id: "botania:lexicon"
+				Count: 1b
+				tag: {
+					"botania:elven_unlock": 1b
+				}
+			}
+			x: 4.5d
+			y: -0.5d
+			shape: "gear"
+			description: [
+				"While nobody can really agree on what pigeon-hole to stuff Botania into, one thing is clear: It can do most anything. It is perhaps best described as a box of tools. None of the components do much on their own, but when strung together creatively by the player they become so much more. "
+				""
+				"Botania is an expansive mod, and so not everything will be covered here. Refer back to the Lexica Botania frequently for in depth information and interesting tips."
+				""
+				"~MuteTiefling"
+			]
+			optional: true
+			id: "0000000000000501"
+			tasks: [{
+				id: "26553788817F4728"
+				type: "item"
+				title: "Any Mystical Flower"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000504"
+				type: "item"
+				title: "Pestle and Mortar"
+				item: "botania:pestle_and_mortar"
+			}]
+		}
+		{
+			title: "Mystical Flowers"
+			icon: "botania:magenta_mystical_flower"
+			x: -3.0d
+			y: 1.5d
+			subtitle: "Unaturally Vibrant"
+			description: [
+				"Scattered throughout the world are flowers that seem preternaturally bright. Collect some to begin exploring the mysteries of floromancy."
+				""
+				"It is also possible to entice these flowers to grow by placing the petals on the ground and applying bone meal. Be careful harvesting the tall variants, as they're much less hearty than their smaller counterparts. "
+			]
+			dependencies: ["0000000000000501"]
+			id: "0000000000000505"
+			tasks: [{
+				id: "0000000000000507"
+				type: "item"
+				title: "Any Mystical Flower"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "0000000000000508"
+					type: "item"
+					title: "Flower Pouch"
+					item: "botania:flower_bag"
+				}
+				{
+					id: "000000000000050D"
+					type: "item"
+					title: "Shears"
+					item: {
+						id: "minecraft:shears"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000A70"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			subtitle: "Miracle Grow"
+			description: ["Having trouble finding some colors of Mystical Flower? A bit of Floral Fertilizer can sprout them in no time."]
+			dependencies: ["0000000000000505"]
+			id: "0000000000000509"
+			tasks: [{
+				id: "000000000000050A"
+				type: "item"
+				item: "botania:fertilizer"
+			}]
+			rewards: [{
+				id: "00000000000005E6"
+				type: "item"
+				title: "Floral Fertilizer"
+				item: "botania:fertilizer"
+				count: 16
+			}]
+		}
+		{
+			title: "Petal Apothecary"
+			icon: "botania:apothecary_default"
+			x: -3.0d
+			y: 2.5d
+			subtitle: "Maybe it's Nanites?"
+			description: ["Something strange occurs when Mystical Petals are combined with certain reagents and a seed. They seem to spontaneously unfold and reform, hijacking the seed and making an entirely new construct. "]
+			dependencies: ["0000000000000505"]
+			id: "000000000000050B"
+			tasks: [
+				{
+					id: "000000000000050C"
+					type: "item"
+					item: "botania:apothecary_default"
+				}
+				{
+					id: "000000000000050E"
+					type: "item"
+					item: "botania:pure_daisy"
+				}
+			]
+			rewards: [
+				{
+					id: "000000000000064A"
+					type: "command"
+					title: "Rare Botania Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+					player_command: false
+				}
+				{
+					id: "0000000000000A71"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Livingwood \\& Livingrock"
+			x: -3.0d
+			y: 3.5d
+			subtitle: "Breathing New Life"
+			description: ["The Pure Daisy appears to draw some essence from the earth itself, infusing it into certain nearby materials. Perhaps this essence can itself be exploited more directly?"]
+			dependencies: ["000000000000050B"]
+			id: "000000000000050F"
+			tasks: [
+				{
+					id: "000000000000051D"
+					type: "item"
+					item: "botania:livingwood"
+					count: 16L
+				}
+				{
+					id: "000000000000051E"
+					type: "item"
+					item: "botania:livingrock"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "00000000000005E7"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			subtitle: "Programmed Response"
+			description: [
+				"If the latent energies in Mystical Petals are enough to cause spontaneous re-assembly in the Petal Apothecary, what would happen in the presence of a more focused field?"
+				""
+				"Well, the Petals wilt. So there's that. What about using some sturdier materials? Livingrock's ability to contain mana might be exploited to encode specific patterns to pass new information on to the Mystical Petals in the Apothecary. "
+				""
+				"Drop items on the Runic Altar to begin crafting. Mana must be supplied by linking a Mana Spreader to the Altar and crafting progresses faster if mana is supplied more rapidly. Right click the altar with a Wand of the Forest to finalize the operation. "
+				""
+				"A Comparator can be used to read the 'state' of the Runic Altar, creating a helpful control for automation. Refer to the Lexica Botania for more details. "
+			]
+			dependencies: ["0000000000000501"]
+			id: "0000000000000513"
+			tasks: [{
+				id: "0000000000000514"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+			rewards: [{
+				id: "00000000000005E5"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "The Portal to Alfheim"
+			icon: "botania:natura_pylon"
+			x: 7.0d
+			y: 4.5d
+			subtitle: "Weasel Town"
+			description: [
+				"Oh Alfheim, our most mysterious trade partner. Open those gates so I may unlock your secrets and exploit your riches. "
+				""
+				"The denizens of Alfheim are a secretive people, but they are willing to share some of their knowledge in fair exchange. Perhaps some bread?"
+				""
+				"Refer to the Lexica Botania for instructions on building the portal. The Lexica should be one of the first things sent through the portal to unlock further knowledge"
+			]
+			dependencies: ["0000000000000517"]
+			id: "0000000000000515"
+			tasks: [
+				{
+					id: "0000000000000516"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "000000000000057A"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+				{
+					id: "000000000000057B"
+					type: "item"
+					item: "botania:mana_pool"
+					count: 2L
+				}
+				{
+					id: "000000000000057C"
+					type: "item"
+					item: "botania:glimmering_livingwood"
+					count: 3L
+				}
+				{
+					id: "000000000000057D"
+					type: "item"
+					item: "botania:livingwood"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "00000000000005D8"
+				type: "command"
+				title: "Epic Botania Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "botania:terra_plate"
+			x: 7.0d
+			y: 3.0d
+			description: [
+				"Contentment leads to complacency, which leads to stagnation. Surely there must be a material that can assist in controlling the flow of mana through a Spark to bend them too to our will? "
+				""
+				"Upon placing an ingot of Manasteel, a Mana Diamond, and finally a Mana Pearl, something strange happens. The Pearl seems to warp the mana around it and draw it along the conduit lines made by the Spark. Once more, causing spontaneous re-assembly of the materials present to form a new substance."
+			]
+			dependencies: ["0000000000000559"]
+			id: "0000000000000517"
+			tasks: [
+				{
+					id: "0000000000000518"
+					type: "item"
+					item: "botania:terra_plate"
+				}
+				{
+					id: "000000000000056F"
+					type: "item"
+					item: "botania:livingrock"
+					count: 5L
+				}
+				{
+					id: "0000000000000570"
+					type: "item"
+					item: "minecraft:lapis_block"
+					count: 4L
+				}
+				{
+					id: "0000000000000599"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+				}
+			]
+			rewards: [{
+				id: "00000000000005D9"
+				type: "command"
+				title: "Epic Botania Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.0d
+			y: 5.0d
+			subtitle: "Not as Shallow as it Seems"
+			description: [
+				"Livingrock forms an excellent receptacle for mana, keeping it safe and ready for use at a moment's notice. "
+				""
+				"Breaking the Mana Pool will cause all stored mana to be lost. Placing a Comparator against it will allow the volume to be read for automation purposes. "
+			]
+			dependencies: ["000000000000050F"]
+			id: "0000000000000519"
+			tasks: [{
+				id: "000000000000051A"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+			rewards: [{
+				id: "00000000000005EA"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			subtitle: "Point and Shoot"
+			description: [
+				"This Livingwood construct makes an excellent conduit. "
+				""
+				"Mana Spreaders may be linked directly to Generating Flora to transmit Mana from the flower to a Mana Pool for storage. They can also be chained by linking one spreader to another and will automatically draw from an adjacent Mana Pool."
+				""
+				"Note that the closer they are to their destination, the faster they'll transfer mana as they won't fire another burst until the previous one has arrived at the destination. "
+			]
+			dependencies: ["000000000000050F"]
+			id: "000000000000051B"
+			tasks: [{
+				id: "000000000000051C"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+			rewards: [{
+				id: "00000000000005E9"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			description: [
+				"Livingwood appears to have an affinity for channeling this mysterious essence from the earth. Craft a Wand of the Forest to direct it more precisely."
+				""
+				"The Wand of the Forest will be the tool of choice for linking Generating Flora, Mana Spreaders, and Mana Pools. Sneak + Right Click the source, then destination."
+			]
+			dependencies: ["000000000000050F"]
+			id: "000000000000051F"
+			tasks: [{
+				id: "0000000000000520"
+				type: "item"
+				item: {
+					id: "botania:twig_wand"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "00000000000005EB"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.5d
+			subtitle: "It Was Always Burnin' Since the World Was Turnin'"
+			description: [
+				"It's a common trope in Fantasy that as soon as Man finds some new source of power, it is immediately exploited to the detriment of the Earth. Now you too can be part of that storied tradition!"
+				""
+				"Place the Endoflame on grass or dirt to begin. The Mana Spreader should be placed somewhere nearby as well as a Mana Pool. Use the Wand of the Forest to link the flower to the Spreader, and the Spreader to the Pool."
+				""
+				"The Endoflame can use any furnace fuel and will only accept a new piece when the previous has finished. "
+				""
+				"A simple contraption to deliver fuel automatically can be built with an Open Crate, a Pressure Plate of some sort, and some redstone. Be wary, however, as Mana Spreaders are redstone sensitive and will turn off if they receive a signal. Consider making a master shut-off for when the mana pool is full."
+			]
+			dependencies: [
+				"0000000000000519"
+				"000000000000051B"
+				"000000000000051F"
+			]
+			id: "0000000000000521"
+			tasks: [{
+				id: "0000000000000522"
+				type: "item"
+				title: "Endoflame"
+				icon: "botania:endoflame"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:endoflame"
+								Count: 1b
+							}
+							{
+								id: "botania:gourmaryllis"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0000000000000523"
+					type: "item"
+					title: "Open Crate"
+					item: "botania:open_crate"
+				}
+				{
+					id: "00000000000005E8"
+					type: "item"
+					title: "Manaseer Monacle"
+					item: {
+						id: "botania:monocle"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "Guardian of Gaia"
+			icon: "botania:life_essence"
+			x: 12.0d
+			y: 3.0d
+			subtitle: "How to Lose Friends and Alienate People"
+			description: [
+				"The Earth bleeds. One might even hear her weep if not for the sounds of the machinations draining the life from her."
+				""
+				"Summon forth the earth's final defenses and silence her cries, once and for all. "
+			]
+			dependencies: ["0000000000000528"]
+			id: "0000000000000524"
+			tasks: [{
+				id: "0000000000000527"
+				type: "item"
+				item: "botania:life_essence"
+			}]
+			rewards: [{
+				id: "00000000000005D2"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Gaia Arena"
+			icon: "botania:gaia_pylon"
+			x: 12.0d
+			y: 1.5d
+			subtitle: "Preparing the Final Coup"
+			description: [
+				"It stands to reason that the earth has more secrets yet to be revealed. Perhaps a trap can be formed by way of these alien materials? "
+				""
+				"Level a large area; a circle with a radius of roughly eleven blocks will suffice. Lay the trap and bait it with Terrasteel to see what comes forth."
+				""
+				"The Lexica Botania will show the exact structure required to build the arena."
+			]
+			dependencies: ["0000000000000501"]
+			id: "0000000000000528"
+			tasks: [
+				{
+					id: "0000000000000529"
+					type: "item"
+					item: "botania:gaia_pylon"
+					count: 4L
+				}
+				{
+					id: "000000000000052C"
+					type: "item"
+					item: "minecraft:beacon"
+				}
+			]
+			rewards: [{
+				id: "00000000000005D3"
+				type: "command"
+				title: "Epic Botania Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Dice of Fate"
+			icon: "botania:dice"
+			x: 12.0d
+			y: 4.5d
+			subtitle: "Twist the Blade"
+			description: [
+				"It would seem that for all of your efforts, you still lack the power to kill Gaia's Guardian for good, let alone Gaia herself. It's time to dig in and double down. "
+				""
+				"Use a Gaia Spirit Ingot in place of Terrasteel in the Gaia Arena to summon the second incarnation of the Guardian of Gaia. "
+			]
+			dependencies: ["0000000000000524"]
+			id: "000000000000052A"
+			tasks: [{
+				id: "000000000000052B"
+				type: "item"
+				item: "botania:dice"
+			}]
+			rewards: [{
+				id: "00000000000005CC"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Elemental Runes"
+			x: 2.0d
+			y: 3.0d
+			subtitle: "Like a Punch Card"
+			description: [
+				"Livingstone makes an excellent substrate for encoding information while Manasteel provides a portable vessel for mana. Supply a few other items to set an affinity and bind it all together with Mana powder. "
+				""
+				"Now we have a useful method for passing new instructions to the Petal Apothecary without overloading the sensitive petals or to pass more refined instruction sets to the Altar itself. These can almost certainly be put to use in hand held tools, as well. "
+			]
+			dependencies: ["0000000000000513"]
+			id: "000000000000052D"
+			tasks: [
+				{
+					id: "000000000000052E"
+					type: "item"
+					item: "botania:rune_water"
+				}
+				{
+					id: "000000000000052F"
+					type: "item"
+					item: "botania:rune_fire"
+				}
+				{
+					id: "0000000000000530"
+					type: "item"
+					item: "botania:rune_earth"
+				}
+				{
+					id: "0000000000000531"
+					type: "item"
+					item: "botania:rune_air"
+				}
+				{
+					id: "0000000000000532"
+					type: "item"
+					item: "botania:rune_mana"
+				}
+			]
+			rewards: [{
+				id: "00000000000005E4"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.5d
+			y: 7.0d
+			subtitle: "Bose-Enderman Condensate"
+			description: ["As if Ender Pearls weren't already mind bending enough, when soaked in mana they seem to have a warping effect on Mana in the immediate locale, causing it to behave unexpectedly."]
+			dependencies: ["0000000000000521"]
+			id: "0000000000000533"
+			tasks: [{
+				id: "0000000000000534"
+				type: "item"
+				item: "botania:mana_pearl"
+			}]
+			rewards: [{
+				id: "00000000000005EC"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.0d
+			subtitle: "Superradiant Scattering"
+			description: ["The facets in this gem seem to be amplifying the energies bound within it. Doubtless, this material would serve well as a focus for further exploitation."]
+			dependencies: ["0000000000000521"]
+			id: "0000000000000535"
+			tasks: [{
+				id: "0000000000000536"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+			rewards: [{
+				id: "00000000000005F0"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.5d
+			y: 9.0d
+			subtitle: "Everlasting"
+			description: ["When exposed even briefly to a pool of mana, iron transforms into a sort of mana accumulator, storing up more mana for later use and even spontaneously re-organizing after rapid forceful impact events. While this seems like an obvious material to use for a tool or armor, perhaps other more delicate uses can be found as well."]
+			dependencies: ["0000000000000521"]
+			id: "0000000000000537"
+			tasks: [{
+				id: "0000000000000538"
+				type: "item"
+				item: "botania:manasteel_ingot"
+			}]
+			rewards: [{
+				id: "00000000000005F1"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: 8.0d
+			subtitle: "Is It... Squirming?"
+			description: ["An ordinary piece of string seems a poor choice for the wild nature of mana. It seems to be barely holding itself together. "]
+			dependencies: ["0000000000000521"]
+			id: "0000000000000539"
+			tasks: [{
+				id: "000000000000053A"
+				type: "item"
+				item: "botania:mana_string"
+			}]
+			rewards: [{
+				id: "00000000000005EF"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.0d
+			y: 8.0d
+			subtitle: "Crystal Binding Compound"
+			description: ["It would seem that most any powder, when bathed in condensed mana, becomes a powerful bonding agent. This should prove useful"]
+			dependencies: ["0000000000000521"]
+			id: "000000000000053B"
+			tasks: [{
+				id: "000000000000053C"
+				type: "item"
+				item: "botania:mana_powder"
+			}]
+			rewards: [{
+				id: "00000000000005ED"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.0d
+			subtitle: "All Around the World"
+			description: [
+				"A Band of Mana combines several of the materials we've discovered so far into a useful object; one that can act as a portable mana pool. Making one will open up new possibilities as mana exploitation just got peronal. "
+				""
+				"While primarily used for powering certain hand held devices, Bands of Mana are also an excellent means of long distance mana transportation as they charge and discharge rapidly."
+			]
+			dependencies: ["0000000000000538"]
+			id: "000000000000053D"
+			tasks: [{
+				id: "000000000000053F"
+				type: "item"
+				item: {
+					id: "botania:mana_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "00000000000005EE"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.5d
+			subtitle: "Care for a Kombucha?"
+			description: [
+				"In a process similar to the Runic Altar's spontaneous re-assembly, a traditional brewing stand can be enhanced to recreate potent potables with the addition of a Rune of Mana. "
+				""
+				"Drop the required reagents on the Brewery and point a Mana Spreader at it to begin. "
+				""
+				"Brews are potions with multiple uses and Incense Sticks apply their effects in a wide area. "
+			]
+			dependencies: ["000000000000052D"]
+			id: "0000000000000540"
+			tasks: [{
+				id: "0000000000000541"
+				type: "item"
+				item: "botania:brewery"
+			}]
+			rewards: [
+				{
+					id: "00000000000005DB"
+					type: "item"
+					title: "Managlass Vial"
+					item: "botania:vial"
+					count: 8
+				}
+				{
+					id: "0000000000000A74"
+					type: "command"
+					title: "Alchemist's Delight"
+					icon: "kubejs:alchemists_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 6.5d
+			description: ["For reasons yet unknown, globules of impure mana appear briefly after a life has been terminated. A Rosa Arcana is capable of absorbing and purifying these globules for further use."]
+			dependencies: ["000000000000052D"]
+			id: "0000000000000542"
+			tasks: [{
+				id: "0000000000000543"
+				type: "item"
+				item: "botania:rosa_arcana"
+			}]
+			rewards: [{
+				id: "00000000000005DC"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			subtitle: "Don't Look Down"
+			description: ["A gust of wind rushes forth, wrapping the bearer in a protective envelope that pulls them into the sky and cushions their eventual decent. "]
+			dependencies: ["000000000000052D"]
+			id: "0000000000000544"
+			tasks: [{
+				id: "0000000000000545"
+				type: "item"
+				item: {
+					id: "botania:tornado_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "0000000000000556"
+					type: "item"
+					title: "Livingwood Avatar"
+					item: "botania:avatar"
+				}
+				{
+					id: "0000000000000A76"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			subtitle: "Spooky Action at a Distance"
+			description: [
+				"Localized eddie currents of wind circulate around the curious Hopperhock, drawing nearby items towards it and depositing them in adjacent inventories. Interestingly they appear to be somewhat 'intelligent' and will respect signals passed to them to limit their behavior. "
+				""
+				"Place an item in an item frame on the chest to control what gets picked up. The Hopperhock will distinguish between a full and empty Mana Tablet or Band of Mana. The flower can be disabled entirely by providing a redstone signal. "
+			]
+			dependencies: ["000000000000052D"]
+			id: "0000000000000546"
+			tasks: [{
+				id: "0000000000000547"
+				type: "item"
+				item: "botania:hopperhock"
+			}]
+			rewards: [{
+				id: "00000000000005E0"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			subtitle: "Mountain or Mole-hill?"
+			description: ["A rumble can be heard when activating this device as the earth shifts, forcing dirt to push up to fill the area at the point of contact. "]
+			dependencies: ["000000000000052D"]
+			id: "0000000000000548"
+			tasks: [{
+				id: "0000000000000549"
+				type: "item"
+				item: "botania:dirt_rod"
+			}]
+			rewards: [{
+				id: "00000000000005DD"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.0d
+			subtitle: "Attaining Equilibrium"
+			description: ["Thought it functions similarly to the Pure Daisy, the Clayconia requires far more mana than it can drain from the earth on its own. A source of mana is required nearby to power its nanocrystaline-recombination of sand into clay.."]
+			dependencies: ["000000000000052D"]
+			id: "000000000000054A"
+			tasks: [{
+				id: "000000000000054B"
+				type: "item"
+				item: "botania:clayconia"
+			}]
+			rewards: [{
+				id: "00000000000005DE"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.5d
+			subtitle: "High Tide"
+			description: ["The ability to draw forth water from the earth at a moment's notice is handy indeed."]
+			dependencies: ["000000000000052D"]
+			id: "000000000000054C"
+			tasks: [{
+				id: "000000000000054D"
+				type: "item"
+				item: "botania:water_rod"
+			}]
+			rewards: [{
+				id: "00000000000005DF"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			subtitle: "Deepwater Horizons"
+			description: ["Combining water from deep aquifers with liquid hot magma to create and draw forth raw stone from the earth. One can only imagine the damage it must be causing. "]
+			dependencies: ["000000000000052D"]
+			id: "000000000000054E"
+			tasks: [{
+				id: "000000000000054F"
+				type: "item"
+				item: "botania:cobble_rod"
+			}]
+			rewards: [{
+				id: "00000000000005E1"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			subtitle: "Life uh... Finds a Way"
+			description: [
+				"Livestock can be ... obstinate at times, only willingly eating if fed by hand. Worse, only breeding when they've had a snack. It's a wonder they've lasted this long."
+				""
+				"The Pollidisiac addresses this issue by driving the beasts to at least feed themselves. "
+			]
+			dependencies: ["000000000000052D"]
+			id: "0000000000000550"
+			tasks: [{
+				id: "0000000000000558"
+				type: "item"
+				item: "botania:pollidisiac"
+			}]
+			rewards: [{
+				id: "00000000000005E2"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			subtitle: "Forbidden Jello"
+			description: [
+				"One could be excused for thinking Slimes are somehow alive, but upon closer inspection they appear to be nothing more than the congealed remnants left behind when something truly alive dies. Sufficient damage will release the same impure globules that could be converted to mana, but a great deal is lost in this way. "
+				""
+				"The Narslimmus will absorb and process the entire Slime instead, breaking down its integral structure and releasing far more mana than could be obtained through more primitive methods."
+			]
+			dependencies: ["000000000000052D"]
+			id: "0000000000000552"
+			tasks: [{
+				id: "0000000000000553"
+				type: "item"
+				item: "botania:narslimmus"
+			}]
+			rewards: [{
+				id: "00000000000005E3"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.5d
+			y: 9.0d
+			subtitle: "Clear Sight"
+			description: ["The mana infused in this glass provides a brilliant source of light. Peering through it reveals a hidden world to you."]
+			dependencies: ["0000000000000521"]
+			id: "0000000000000554"
+			tasks: [{
+				id: "0000000000000555"
+				type: "item"
+				item: "botania:mana_glass"
+			}]
+			rewards: [{
+				id: "00000000000005F2"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Sparks"
+			x: 7.0d
+			y: 1.5d
+			subtitle: "Taking the Gloves Off"
+			description: [
+				"While the Livingwood casing of Mana Spreaders appear to make them very efficient at long distance channeling, they're not always the quickest method. By removing the casing, a Spark can be formed which lacks the directionality of a Spreader but makes up for it with the shear volume it can handle. "
+				""
+				"Mana will not flow through a Spark conduit on its own. It needs to be enticed."
+			]
+			dependencies: ["0000000000000501"]
+			id: "0000000000000559"
+			tasks: [{
+				id: "000000000000055A"
+				type: "item"
+				item: "botania:spark"
+				count: 2L
+			}]
+			rewards: [{
+				id: "00000000000005DA"
+				type: "command"
+				title: "Epic Botania Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.5d
+			subtitle: "Pink is the New Black"
+			description: [
+				"It's impossible to tell what the denizens of Alfheim have used as a base material, but upon inspection it would appear they've treated it in a process similar to Manasteel. Whatever the underlying material is, it's clear that its properties are vastly different than what was given in trade. "
+				""
+				"Explore the new tools and items that are now obtainable with Elementium."
+			]
+			dependencies: ["0000000000000515"]
+			id: "000000000000057F"
+			tasks: [{
+				id: "0000000000000580"
+				type: "item"
+				item: "botania:elementium_ingot"
+			}]
+			rewards: [{
+				id: "00000000000005D7"
+				type: "command"
+				title: "Epic Botania Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 8.0d
+			y: 5.5d
+			subtitle: "Crystaline Scales"
+			description: [
+				"Dragonstones appear to have an affinity with the End and the dragons native to that realm...Perhaps a journey there is in order."
+				""
+				"Explore the new tools and items that are now obtainable with Dragonstone."
+			]
+			dependencies: ["0000000000000515"]
+			id: "0000000000000581"
+			tasks: [{
+				id: "0000000000000582"
+				type: "item"
+				item: "botania:dragonstone"
+			}]
+			rewards: [{
+				id: "00000000000005D5"
+				type: "command"
+				title: "Epic Botania Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 7.0d
+			y: 6.0d
+			subtitle: "Unfit for Aerial Use"
+			description: [
+				"At last, a suitable catalyst for mana manipulation through Spark networks. "
+				""
+				"Explore the new tools and items that are now obtainable with Pixie Dust."
+			]
+			dependencies: ["0000000000000515"]
+			id: "0000000000000583"
+			tasks: [{
+				id: "0000000000000584"
+				type: "item"
+				item: "botania:pixie_dust"
+			}]
+			rewards: [{
+				id: "00000000000005D6"
+				type: "command"
+				title: "Epic Botania Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Spark Augments"
+			x: 7.0d
+			y: 7.0d
+			subtitle: "Ebb and Flow"
+			description: ["Spark Augments are the missing piece for more direct manipulation of mana over Spark conduits, allowing one to specify when and where the mana travels."]
+			dependencies: ["0000000000000583"]
+			id: "0000000000000585"
+			tasks: [
+				{
+					id: "0000000000000586"
+					type: "item"
+					item: "botania:spark_upgrade_recessive"
+				}
+				{
+					id: "000000000000058B"
+					type: "item"
+					item: "botania:spark_upgrade_dominant"
+				}
+			]
+			rewards: [{
+				id: "000000000000058F"
+				type: "item"
+				title: "Spark Tinkerer"
+				item: "botania:spark_changer"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.5d
+			description: [
+				"While basic Mana Spreaders have been sufficient to this point, it's become clear that with more advanced materials, better results could be had. "
+				""
+				"The Elementium core and Dreamwood stabilization seems capable of firing larger bursts at once, greatly enhancing throughput."
+			]
+			dependencies: ["000000000000057F"]
+			id: "0000000000000589"
+			tasks: [{
+				id: "000000000000058A"
+				type: "item"
+				item: "botania:elven_spreader"
+			}]
+			rewards: [{
+				id: "00000000000005D4"
+				type: "command"
+				title: "Epic Botania Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Corporea Networks"
+			icon: "botania:corporea_spark_master"
+			x: 8.0d
+			y: 6.5d
+			description: [
+				"It seems the ability for Mana to manipulate items is boundless, freely converting matter to energy and back to pull them through the Spark network. "
+				""
+				"The Corporea system is a powerful item management system that permits the transfer of items across long distances. Explore more by referring to the chapters on Corporea in the Lexica Botania."
+			]
+			dependencies: ["0000000000000581"]
+			id: "000000000000058C"
+			tasks: [
+				{
+					id: "000000000000058D"
+					type: "item"
+					item: "botania:corporea_index"
+				}
+				{
+					id: "000000000000058E"
+					type: "item"
+					item: "botania:corporea_spark_master"
+				}
+			]
+			rewards: [{
+				id: "0000000000000590"
+				type: "item"
+				title: "Corporea Spark"
+				item: "botania:corporea_spark"
+				count: 8
+			}]
+		}
+		{
+			title: "Mana Lenses"
+			x: 2.0d
+			y: 9.0d
+			subtitle: "Stereoscopic Mana Manipulation"
+			description: [
+				"Experiments with the various Runes show that they're capable of augmenting the behaviour of Mana Spreaders as well by combining them with a Mana Lens. Furthermore, two such lenses can be permanently bonded together by pressing some slime between them. "
+				""
+				"Further experimentation is needed as it seems that the raw mana burst can be augmented in a striking variety of ways."
+				""
+				"Combine the Velocity and Potency lenses to create a composite lens, which will allow a Mana Spreader to send larger bursts that travel faster. "
+			]
+			dependencies: [
+				"0000000000000531"
+				"000000000000052F"
+			]
+			id: "0000000000000591"
+			tasks: [
+				{
+					id: "0000000000000592"
+					type: "item"
+					item: {
+						id: "botania:lens_speed"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "0000000000000593"
+					type: "item"
+					item: {
+						id: "botania:lens_power"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000594"
+					type: "item"
+					title: "Green Slime Block"
+					item: "minecraft:slime_block"
+				}
+				{
+					id: "0000000000000A75"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			icon: "mythicbotany:mana_infuser"
+			x: 7.0d
+			y: 8.0d
+			subtitle: "Quixotic Electro-Destabilization"
+			description: [
+				"When exposed to an intense mana field, the materials native to Alfheim seem to spontaneously bond into a new substance in much the same way as Terrasteel is formed from native materials. "
+				""
+				"Unlike the Terrestrial Agglomeration Plate, this requires a Dominant Spark Augment installed on the Spark in order to draw in mana for crafting. "
+			]
+			dependencies: [
+				"0000000000000582"
+				"0000000000000584"
+				"0000000000000580"
+			]
+			id: "0000000000000595"
+			tasks: [
+				{
+					id: "0000000000000596"
+					type: "item"
+					item: "mythicbotany:mana_infuser"
+				}
+				{
+					id: "000000000000059A"
+					type: "item"
+					item: "minecraft:gold_block"
+					count: 4L
+				}
+				{
+					id: "000000000000059B"
+					type: "item"
+					item: "botania:shimmerrock"
+					count: 5L
+				}
+				{
+					id: "000000000000059C"
+					type: "item"
+					item: "mythicbotany:alfsteel_ingot"
+				}
+			]
+			rewards: [{
+				id: "00000000000005CB"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 7.0d
+			y: 9.0d
+			subtitle: "Constuct Additional Pylons"
+			description: [
+				"It has been well established at this point that mana is excellent at performing spontaneous recombinations. Some limited magics have managed to harness this by absorbing the latent mana in the globules left behind when the living pass. The Alfsteel Pylon helps to speed that process along, injecting pure mana directly into these Mendable items. "
+				""
+				"Use a Mana Spreader to send mana into the Pylon. Any items enchanted with Mending that find themselves atop the Pylon will rapidly repair at the cost of mana."
+			]
+			dependencies: ["0000000000000595"]
+			id: "0000000000000597"
+			tasks: [{
+				id: "0000000000000598"
+				type: "item"
+				item: "mythicbotany:alfsteel_pylon"
+			}]
+			rewards: [{
+				id: "00000000000005CA"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 11.0d
+			y: 4.0d
+			subtitle: "Conway's Game"
+			description: [
+				"A game of simple rules, yet complex outcomes, much like the living systems it mimics. Unlocking its mysteries will provide you with enormous mana for very little input."
+				""
+				"Refer to the Lexica Botania for the full list of rules."
+			]
+			dependencies: ["0000000000000524"]
+			id: "00000000000005A0"
+			tasks: [{
+				id: "00000000000005A1"
+				type: "item"
+				item: "botania:dandelifeon"
+			}]
+			rewards: [
+				{
+					id: "00000000000005CF"
+					type: "item"
+					title: "Cellular Block"
+					item: "botania:cell_block"
+					count: 8
+				}
+				{
+					id: "00000000000005D0"
+					type: "command"
+					title: "Legendary Botania Loot Box"
+					icon: "kubejs:legendary_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: 4.0d
+			subtitle: "It Grows On You"
+			description: [
+				"Not every material is as susceptible to mana's ability to spontaneously re-organize it, but by binding it with a still pulsing Spirit of Gaia, that property can be forced on nearly anything. "
+				""
+				"Timeless Ivy can be combined with anything that's normally repairable on an anvil. Place the item, a Timeless Ivy, and three of whatever material is used to repair the item in a crafting grid to bind it. For example, a Diamond Sword would require three diamonds. "
+			]
+			dependencies: ["0000000000000524"]
+			id: "00000000000005A2"
+			tasks: [{
+				id: "00000000000005A3"
+				type: "item"
+				item: "botaniaadditions:regen_ivy"
+			}]
+			rewards: [{
+				id: "00000000000005CD"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 14.0d
+			y: 3.5d
+			subtitle: "Open Veins"
+			description: ["The final iteration of the Mana Spreader, infused with the very essence of Gaia herself to maximize throughput. "]
+			dependencies: ["0000000000000524"]
+			id: "00000000000005A4"
+			tasks: [{
+				id: "00000000000005A5"
+				type: "item"
+				item: "botania:gaia_spreader"
+			}]
+			rewards: [{
+				id: "00000000000005CE"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 10.0d
+			y: 3.5d
+			subtitle: "Mind the Gap"
+			description: ["With the potent energies of Gaia to stabilize it, a small pocket dimension can be formed to store an unreal number of items. "]
+			dependencies: ["0000000000000524"]
+			id: "00000000000005A6"
+			tasks: [{
+				id: "00000000000005A7"
+				type: "item"
+				item: {
+					id: "botania:black_hole_talisman"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "00000000000005D1"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Water from the Well of Mimir"
+			icon: "mythicbotany:gjallar_horn_full"
+			x: 12.0d
+			y: 5.5d
+			subtitle: "Just a Sip and the Fae'll Love Ya!"
+			description: [
+				"Sacred water sourced from the very tree of life whose roots reach deep into all the realms. Dare you drink that which is reserved for divinity?"
+				""
+				"Obtaining this forbidden drink will require tapping into Yggdrasil itself by making a proxy that will bind to it. "
+				""
+				"Craft a Branch of Yggdrasil, Right-Click it with a Gjallarhorn, and supply it mana from a Mana Spreader. After some time, the horn will fill and may be consumed."
+			]
+			dependencies: ["0000000000000524"]
+			id: "5584BFC2DE3C29D7"
+			tasks: [
+				{
+					id: "16324032C65F1E46"
+					type: "item"
+					item: "mythicbotany:yggdrasil_branch"
+				}
+				{
+					id: "7F1EEC9AD6E865F7"
+					type: "item"
+					item: "mythicbotany:gjallar_horn_empty"
+				}
+				{
+					id: "2971617F05C67734"
+					type: "item"
+					item: "mythicbotany:gjallar_horn_full"
+				}
+			]
+			rewards: [{
+				id: "620D77CA6FA8C011"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 11.0d
+			y: 8.0d
+			subtitle: "Draining the Source"
+			description: [
+				"Once the bloodletting begins, it never stops. Find a Wandering Trader and entice them to stand in the middle of your circle of runes. "
+				""
+				"At least it will be quick."
+				""
+				"Set the ritual as described in the Lexica Botanica. The runes must be placed on Rune Holders and the Tablet placed on a Master Rune Holder. The required items are to be dropped on the ground near the Master while the Trader stands nearby. "
+				""
+				"Activate the ritual by right clicking the master rune with a wand of the forest. Mana is supplied from tablets or rings on your person. "
+			]
+			dependencies: ["3EA3751B482189B7"]
+			id: "1C1D719B824FB0AB"
+			tasks: [{
+				id: "0BFCAE28C250A671"
+				type: "item"
+				item: "mythicbotany:kvasir_blood"
+			}]
+			rewards: [{
+				id: "195C2F28DEEC1AE6"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Alfheim"
+			x: 12.0d
+			y: 9.0d
+			subtitle: "From Darkness into Light"
+			description: [
+				"Upon imbibing this disturbing drink, the portal to Alfheim will open to you allowing you to pass. "
+				""
+				"What awaits you on the other side?"
+			]
+			dependencies: ["1C1D719B824FB0AB"]
+			id: "47CDA7739244CE6F"
+			tasks: [{
+				id: "6D37E48268B35E38"
+				type: "item"
+				item: "mythicbotany:kvasir_mead"
+			}]
+			rewards: [{
+				id: "3542522DA81D210F"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 12.0d
+			y: 7.0d
+			subtitle: "Waxing Poetic"
+			description: [
+				"With the wisdom of the Aesir safely secured, it becomes clear the only way forward is to take a step back and redouble your efforts against the guardian of this land, Gaia. Bait her once more with a Gaia Spirit Ingot and call her forth for another bout."
+				""
+				"With the knowledge of Mimir, you will obtain a Rune Tablet of Fimbultyr upon defeating the Guardian of Gaia II. "
+			]
+			dependencies: ["0000000000000524"]
+			id: "3EA3751B482189B7"
+			tasks: [{
+				id: "1F77ECAE16AF537E"
+				type: "item"
+				item: "mythicbotany:fimbultyr_tablet"
+			}]
+			rewards: [{
+				id: "44A3C1F87AB6977B"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+	]
+}

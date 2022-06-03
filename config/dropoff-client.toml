@@ -1,0 +1,33 @@
+
+[general]
+	#Enable dump button.
+	"Enable Dump Button" = false
+	#Ignore hotbar when transferring.
+	"Ignore Hotbar" = true
+	#Highlight nearby containers.
+	"Highlight containers" = true
+	# information to the chat when task is complete.
+	"Display Message" = true
+	#Show button in the player inventory.
+	"Show inventory button" = true
+	#Creative inventory button position width offset.
+	#Range: > -2147483648
+	"Creative inventory button X offset" = 71
+	#Creative inventory button position height offset.
+	#Range: > -2147483648
+	"Creative inventory button Y offset" = -63
+	#Blocks highlighting delay in milliseconds. Delay < 0 means forever.
+	#Range: > -1
+	"Highlight delay" = 3000
+	#Min number of slots that a container can be eligible for transfer to, this will exclude furnaces and most machines with a low slot count.
+	#Range: > 0
+	"Minimum Slots" = 8
+	#Survival inventory button position width offset.
+	#Range: > -2147483648
+	"Survival inventory button X offset" = 61
+	#Survival inventory button position height offset.
+	#Range: > -2147483648
+	"Survival inventory button Y offset" = -17
+	"Blacklisted Block Entities" = ["minecraft:furnace", "minecraft:blast_furnace", "minecraft:smoker"]
+	"Whitelisted containers" = ["curios:curios_container"]
+

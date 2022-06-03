@@ -1,0 +1,58 @@
+{
+    "type": "sub_theme",
+    "id": 2003,
+    "theme": {
+        "pillar": { "type": "block", "block": "minecraft:magma_block" },
+        "trapdoor": { "type": "block", "block": "minecraft:crimson_trapdoor" },
+        "door": { "type": "block", "block": "minecraft:crimson_door" },
+        "material": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "chipped:blackstone_15",
+                    "weight": 2
+                },
+                {
+                    "block": "chipped:blackstone_14",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:polished_blackstone"
+                },
+                {
+                    "block": "chipped:gilded_blackstone_19"
+                }
+            ]
+        },
+        "stairs": {
+            "type": "random_block",
+            "blocks": [
+                { "block": "minecraft:polished_blackstone_brick_stairs" },
+                { "block": "minecraft:polished_blackstone_stairs" }
+            ]
+        },
+        "slab": {
+            "type": "random_block",
+            "blocks": [
+                { "block": "minecraft:polished_blackstone_brick_slab" },
+                { "block": "minecraft:polished_blackstone_slab" }
+            ]
+        },
+        "fence": {
+            "type": "block",
+            "block": "mcwfences:railing_blackstone_wall"
+        },
+        "fence_gate": {
+            "type": "block",
+            "block": "minecraft:cave_air"
+        },
+        "button": {
+            "type": "block",
+            "block": "quark:gold_button"
+        },
+        "pressure_plate": {
+            "type": "block",
+            "block": "minecraft:light_weighted_pressure_plate"
+        }
+    }
+}

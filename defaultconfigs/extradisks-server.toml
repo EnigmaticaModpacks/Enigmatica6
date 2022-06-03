@@ -1,0 +1,35 @@
+
+[storageblocks]
+
+	[storageblocks.item]
+		#item storage blocks energy usage
+		#Range: > 0
+		256k = 12
+		#Range: > 0
+		1024k = 14
+		#Range: > 0
+		4096k = 16
+		#Range: > 0
+		16384k = 18
+		#Range: > 0
+		65536k = 20
+		#Range: > 0
+		262144k = 22
+		#Range: > 0
+		1048576k = 24
+		#Range: > 0
+		infinite = 26
+
+	[storageblocks.fluid]
+		#fluid storage blocks energy usage
+		#Range: > 0
+		16384k = 12
+		#Range: > 0
+		65536k = 14
+		#Range: > 0
+		262144k = 16
+		#Range: > 0
+		1048576k = 18
+		#Range: > 0
+		infinite = 20
+

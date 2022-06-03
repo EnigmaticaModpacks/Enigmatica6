@@ -1,0 +1,68 @@
+
+#End related settings
+[end]
+	#Does BYG control The End?
+	#This only applies when making NEW worlds!
+	#Is not guaranteed to work in specific world types.
+	#You can find more info here in regards to specific world types: https://github.com/CorgiTaco/BYG/wiki/Enabling-BYG-Nether-&-End-Biomes
+	#For existing worlds, follow the steps listed here: https://wiki.griefed.de/SCP/edit-world.
+	controlEnd = true
+	#End Biome Size
+	#Default: 3
+	#Range: 1-10
+	endBiomeSize = 3
+	#Void Biome Size
+	#Default: 2
+	#Range: 1-10
+	voidBiomeSize = 2
+
+#Nether related settings
+[nether]
+	#Does BYG control The Nether?
+	#This only applies when making NEW worlds!
+	#Is not guaranteed to work in specific world types.
+	#You can find more info here in regards to specific world types: https://github.com/CorgiTaco/BYG/wiki/Enabling-BYG-Nether-&-End-Biomes
+	#For existing worlds, follow the steps listed here: https://wiki.griefed.de/SCP/edit-world.
+	controlNether = true
+	#Nether Biome Size
+	#Default: 3
+	#Range: 1-10
+	netherBiomeSize = 3
+
+#BYG uses a prefix system for its ore spawns.
+# Prefix Guide:
+# "#" - Biome category representable.
+# "$" - Biome dictionary representable.
+# "," - Creates a new condition, separate from the previous.
+# "ALL" - Spawn in all biomes(no condition).
+# "!" - Negates/flips/does the reverse of the condition.
+# "" - No prefix serves as a biome ID OR Mod ID representable.
+#
+# Here are a few examples:
+#1. "byg#THE_END, $OCEAN" would mean that the ore may spawn in biomes with the name space "byg" AND in the "END" biome category, OR all biomes in the "OCEAN" dictionary.
+#2. "byg:guiana_shield, #MESA" would mean that the ore may spawn in the "byg:guiana_shield" OR all biomes in the "MESA" category.
+#3. "byg#ICY$MOUNTAIN" would mean that the ore may only spawn in biomes from byg in the "ICY" category and "MOUNTAIN" dictionary type.
+#4. "!byg#DESERT" would mean that the ore may only spawn in biomes that are NOT from byg and NOT in the "DESERT" category.
+#5. "ALL", spawn everywhere. 
+#6. "" Don't spawn anywhere.
+[ores]
+	#What biome(s) does Ametrine spawn in? Default: "byg:shattered_viscal_isles".
+	ametrineSpawns = ""
+	#What biome(s) does Budding Ametrine spawn in? Default: "byg:shattered_viscal_isles".
+	buddingAmetrineSpawns = ""
+	#What biome(s) does Pendorite spawn in? Default: "byg:forest_fault".
+	pendoriteSpawns = ""
+	#What biome(s) does Therium spawn in? Default: "byg#THE_END".
+	theriumSpawns = ""
+	#What biome(s) does Emeraldite spawn in? Default: "byg:wailing_garth".
+	emeralditeSpawns = ""
+
+#See the explanation for ores for configuring stones.
+[stones]
+	#What biome(s) does Rocky Stone spawn in? Default: "!#THEEND#NETHER".
+	rockyStoneSpawns = ""
+	#What biome(s) does Scoria Stone spawn in? Default: "!#THEEND#NETHER".
+	scoriaStoneSpawns = ""
+	#What biome(s) does Soap Stone spawn in? Default: "!#THEEND#NETHER".
+	soapStoneSpawns = ""
+

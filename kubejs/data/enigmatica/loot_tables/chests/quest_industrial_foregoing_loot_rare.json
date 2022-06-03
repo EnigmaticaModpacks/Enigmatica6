@@ -1,0 +1,92 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:machine_frame_pity",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:machine_frame_simple"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:conveyor",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:dark_glass",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:dryrubber",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:dryrubber",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:efficiency_addon_1",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{TitaniumAugment:{Efficiency:0.9}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:speed_addon_1",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{TitaniumAugment:{Speed:2.0}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

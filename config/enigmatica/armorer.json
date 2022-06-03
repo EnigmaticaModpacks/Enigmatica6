@@ -1,0 +1,40 @@
+{
+    "profession": "minecraft:armorer",
+    "replace": "false",
+    "trades": 
+    [
+        {
+            "level": 1,
+            "trade": {
+                "type": "minecraft:items_for_emeralds",
+                "item": "tetra:metal_scrap",
+                "emerald_count": 1,
+                "count": 3,
+                "max_uses": 6,
+                "xp_value": 12
+            }
+        },
+		{
+            "level": 2,
+            "trade": {
+                "type": "minecraft:items_for_emeralds",
+                "item": "tetra:forged_beam",
+                "emerald_count": 4,
+                "count": 1,
+                "max_uses": 10,
+                "xp_value": 12
+            }
+        },
+		{
+            "level": 3,
+            "trade": {
+                "type": "minecraft:items_for_emeralds",
+                "item": "tetra:forged_bolt",
+                "emerald_count": 1,
+                "count": 2,
+                "max_uses": 8,
+                "xp_value": 12
+            }
+        }
+    ]
+}

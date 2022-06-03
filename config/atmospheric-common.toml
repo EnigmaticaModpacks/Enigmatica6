@@ -1,0 +1,27 @@
+
+[world]
+
+	[world.biomes]
+
+		[world.biomes.rainforest]
+			"Rainforest weight" = 1
+			"Rainforest Mountains weight" = 1
+			"Rainforest Plateau weight" = 0
+			"Sparse Rainforest Plateau weight" = 0
+			"Rainforest Basin weight" = 1
+			"Sparse Rainforest Basin weight" = 0
+
+		[world.biomes.dunes]
+			"Dunes weight" = 5
+			"Dunes Hills weight" = 0
+			"Flourishing Dunes weight" = 0
+			"Rocky Dunes weight" = 4
+			"Rocky Dunes Hills weight" = 0
+			"Petrified Dunes weight" = 0
+
+		#These biomes are experimental and not ready for use in gameplay
+		[world.biomes.experimental]
+
+			[world.biomes.experimental.hot_springs]
+				"Hot Springs weight" = 0
+

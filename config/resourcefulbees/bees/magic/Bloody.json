@@ -1,0 +1,47 @@
+{
+    "flower": "undergarden:blood_mushroom",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "Bathed in Blood, the Bronze Bee may become...\nsomething more.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 6000,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/bloody",
+    "ColorData": {
+        "honeycombColor": "#80251f",
+        "modelType": "MUSHROOM"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "chance": 0.2,
+                "inputID": "minecraft:water",
+                "outputs": [{ "outputID": "bloodmagic:life_essence_block", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "bloodmagic:slate_ampoule",
+        "mainOutputWeight": 0.10,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "bloodmagic:blankslate",
+        "secondaryOutputWeight": 0.03,
+        "secondaryOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {"canSpawnInWorld": false},
+    "BreedData": {"isBreedable": false},
+    "TraitData": {"hasTraits": true}
+}

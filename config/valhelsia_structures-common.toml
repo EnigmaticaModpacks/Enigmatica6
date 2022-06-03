@@ -1,0 +1,192 @@
+
+[structures]
+
+	[structures.global]
+		#How flat does terrain need to be for surface structures to spawn? (in blocks) [default: 4]
+		#Range: 0 ~ 64
+		flatness_delta = 3
+		#Biomes in which Structures can NOT generate in
+		blacklisted_biomes = ["minecraft:ocean", "minecraft:river", "minecraft:frozen_ocean", "minecraft:frozen_river", "minecraft:beach", "minecraft:deep_ocean", "minecraft:snowy_beach", "minecraft:warm_ocean", "minecraft:lukewarm_ocean", "minecraft:cold_ocean", "minecraft:deep_warm_ocean", "minecraft:deep_lukewarm_ocean", "minecraft:deep_cold_ocean", "minecraft:deep_frozen_ocean"]
+		#Dimensions in which Structures can NOT generate in
+		blacklisted_dimensions = ["minecraft:the_nether", "minecraft:the_end", "undergarden:undergarden", "atum:atum", "compactmachines:compact_world", "mythicbotany:alfheim"]
+
+	[structures.castle]
+		#Generate? [default: true]
+		generate = true
+		#Spawn Chance [default: 0.5]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.5
+		#Spacing (in chunks) [default: 40]
+		#Range: 0 ~ 200
+		spacing = 40
+		#Minimum Separation (in chunks) [default: 8]
+		#Range: 0 ~ 200
+		separation = 8
+		#Biome Categories the structure can generate in 
+		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
+		biome_categories = ["plains", "forest", "taiga"]
+		#Biomes the structure can NOT generate in
+		blacklisted_biomes = []
+		#Dimensions the structure can NOT generate in
+		blacklisted_dimensions = []
+
+	[structures.castle_ruin]
+		#Generate? [default: true]
+		generate = true
+		#Spawn Chance [default: 0.6]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.6
+		#Spacing (in chunks) [default: 35]
+		#Range: 0 ~ 200
+		spacing = 35
+		#Minimum Separation (in chunks) [default: 8]
+		#Range: 0 ~ 200
+		separation = 8
+		#Biome Categories the structure can generate in 
+		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
+		biome_categories = ["plains", "forest", "taiga"]
+		#Biomes the structure can NOT generate in
+		blacklisted_biomes = []
+		#Dimensions the structure can NOT generate in
+		blacklisted_dimensions = []
+
+	[structures.desert_house]
+		#Generate? [default: true]
+		generate = true
+		#Spawn Chance [default: 0.7]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.7
+		#Spacing (in chunks) [default: 30]
+		#Range: 0 ~ 200
+		spacing = 30
+		#Minimum Separation (in chunks) [default: 8]
+		#Range: 0 ~ 200
+		separation = 8
+		#Biome Categories the structure can generate in 
+		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
+		biome_categories = ["desert"]
+		#Biomes the structure can NOT generate in
+		blacklisted_biomes = []
+		#Dimensions the structure can NOT generate in
+		blacklisted_dimensions = []
+
+	[structures.forge]
+		#Generate? [default: true]
+		generate = true
+		#Spawn Chance [default: 0.7]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.7
+		#Spacing (in chunks) [default: 30]
+		#Range: 0 ~ 200
+		spacing = 30
+		#Minimum Separation (in chunks) [default: 8]
+		#Range: 0 ~ 200
+		separation = 8
+		#Biome Categories the structure can generate in 
+		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
+		biome_categories = ["plains", "forest", "extreme_hills", "taiga"]
+		#Biomes the structure can NOT generate in
+		blacklisted_biomes = []
+		#Dimensions the structure can NOT generate in
+		blacklisted_dimensions = []
+
+	[structures.player_house]
+		#Generate? [default: true]
+		generate = true
+		#Spawn Chance [default: 0.7]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.7
+		#Spacing (in chunks) [default: 30]
+		#Range: 0 ~ 200
+		spacing = 30
+		#Minimum Separation (in chunks) [default: 8]
+		#Range: 0 ~ 200
+		separation = 8
+		#Biome Categories the structure can generate in 
+		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
+		biome_categories = ["plains", "forest", "extreme_hills", "taiga"]
+		#Biomes the structure can NOT generate in
+		blacklisted_biomes = []
+		#Dimensions the structure can NOT generate in
+		blacklisted_dimensions = []
+
+	[structures.spawner_dungeon]
+		#Generate? [default: true]
+		generate = true
+		#Spawn Chance [default: 0.7]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.7
+		#Spacing (in chunks) [default: 30]
+		#Range: 0 ~ 200
+		spacing = 30
+		#Minimum Separation (in chunks) [default: 8]
+		#Range: 0 ~ 200
+		separation = 8
+		#Biome Categories the structure can generate in 
+		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
+		biome_categories = ["plains", "forest", "extreme_hills", "taiga", "desert", "mesa", "savanna", "jungle", "icy", "swamp", "mushroom"]
+		#Biomes the structure can NOT generate in
+		blacklisted_biomes = []
+		#Dimensions the structure can NOT generate in
+		blacklisted_dimensions = []
+
+	[structures.tower_ruin]
+		#Generate? [default: true]
+		generate = true
+		#Spawn Chance [default: 0.8]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.8
+		#Spacing (in chunks) [default: 25]
+		#Range: 0 ~ 200
+		spacing = 25
+		#Minimum Separation (in chunks) [default: 8]
+		#Range: 0 ~ 200
+		separation = 8
+		#Biome Categories the structure can generate in 
+		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
+		biome_categories = ["plains", "forest", "extreme_hills", "taiga"]
+		#Biomes the structure can NOT generate in
+		blacklisted_biomes = []
+		#Dimensions the structure can NOT generate in
+		blacklisted_dimensions = []
+
+	[structures.witch_hut]
+		#Generate? [default: true]
+		generate = true
+		#Spawn Chance [default: 0.85]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.85
+		#Spacing (in chunks) [default: 25]
+		#Range: 0 ~ 200
+		spacing = 25
+		#Minimum Separation (in chunks) [default: 7]
+		#Range: 0 ~ 200
+		separation = 7
+		#Biome Categories the structure can generate in 
+		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
+		biome_categories = ["swamp"]
+		#Biomes the structure can NOT generate in
+		blacklisted_biomes = []
+		#Dimensions the structure can NOT generate in
+		blacklisted_dimensions = []
+
+	[structures.big_tree]
+		#Generate? [default: true]
+		generate = true
+		#Spawn Chance [default: 0.7]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.7
+		#Spacing (in chunks) [default: 30]
+		#Range: 0 ~ 200
+		spacing = 30
+		#Minimum Separation (in chunks) [default: 8]
+		#Range: 0 ~ 200
+		separation = 8
+		#Biome Categories the structure can generate in 
+		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
+		biome_categories = ["plains", "forest"]
+		#Biomes the structure can NOT generate in
+		blacklisted_biomes = []
+		#Dimensions the structure can NOT generate in
+		blacklisted_dimensions = []
+

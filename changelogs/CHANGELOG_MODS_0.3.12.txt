@@ -1,0 +1,273 @@
+=========================================
+Enigmatica6 0.3.11 --> Enigmatica6 0.3.12
+=========================================
+
+Updated:
+	AIOT Botania (aiotbotania-1.16.4-1.7.0.jar --> aiotbotania-1.16.4-1.7.1.jar):
+		aiotbotania-1.16.4-1.7.1.jar:
+			* update images for new textures - MelanX
+			* Merge branch '1.16.x' of [https://github.com/MelanX/aiotbotania](https://github.com/MelanX/aiotbotania) into 1.16.x - MelanX
+			* Re-texturing (#60) - Kal Chikhou
+			* changed terra aiot model for new textures - MelanX
+			* fix game not starting - MelanX
+			* add 1.16.5 tag for curseforge - MelanX
+			* Fix shears not working in dispensers - MelanX
+
+	Advanced Hook Launchers (AdHooks-1.16.4-6.1.3.0-build.0038.jar --> AdHooks-1.16.4-6.1.3.1-build.0039.jar):
+		AdHooks-1.16.4-6.1.3.1-build.0039.jar:
+			6.1.3.1
+			* fixed: conflicting Attack keybind (thanks to Retrodaniel)
+			* requires: ForgeEndertech 7.0.10.0 or above
+
+	Alex's Mobs (alexsmobs-1.4.1 --> alexsmobs-1.5.0):
+		alexsmobs-1.5.0:
+			-Added Snow Leopard
+			-Added Spectre
+			-Added Crow
+			-Added Advancements
+			-Added Moose Ribs
+			-New textures for crocodile
+			-Increased elephant charge damage
+			-Fixed rattlesnake crash
+			-Fixed centipede body segments despawning
+			-Fixed crocodile roll attack dealing damage from afar
+			-Fixed seals not spawning on ice
+			-Fixed ticking world crash on block interact
+
+	Ars Nouveau (ars_nouveau-1.16.4-1.11.2.jar --> ars_nouveau-1.16.4-1.11.3.jar):
+		ars_nouveau-1.16.4-1.11.3.jar:
+			Spell Turrets and Runes may now use Blink with Warp Scrolls from adjacent inventories
+			Fixes crashes with carbuncles when breaking their last inventory
+			Reworks the enchanting apparatus to give feedback, now works with items in the offhand
+			Vexes have been reworked to be more responsive, no longer kill targets that the player has not targeted/are not targeting the player
+			Adds Summoning Sickness when using Summon Vex, prevents further summoning magic until the effect runs out. More to come
+			Adds command to reset mana bonuses from glyphs
+			Fixes bug with Carbuncles using adjacent filters if item frames were too close
+			Spell Bows may now be enchanted
+			Fixes bows and wands losing their names
+			Dispel now mimics milk and respects modded effects
+			Mana Blooms and seeds are now compostable
+			Archwood may now be used to make Charcoal
+
+	Curios API (Forge) (curios-forge-1.16.4-4.0.3.5.jar --> curios-forge-1.16.5-4.0.4.0.jar):
+		curios-forge-1.16.5-4.0.4.0.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project adheres to [Forge Recommended Versioning]().
+			[1.16.5-4.0.4.0] - 2021.01.29
+			Added
+			* SlotContext for providing and retrieving slot context throughout the API
+			* ICurio#getEquipSound(SlotContext) [#104](https://github.com/TheIllusiveC4/Curios/issues/104)
+			* ICurio#canEquipFromUse(SlotContext)
+			* ICurio#onEquipFromUse(SlotContext)
+			* ICurio#getAttributeModifiers(SlotContext, UUID)
+			* ICurioItem#getEquipSound(SlotContext, ItemStack)
+			* ICurioItem#canEquipFromUse(SlotContext, ItemStack)
+			* ICurioItem#onEquipFromUse(SlotContext, ItemStack)
+			* ICurioItem#getAttributeModifiers(SlotContext, UUID, ItemStack)
+			* ICuriosHelper#getAttributeModifiers(SlotContext, UUID, ItemStack)
+			Deprecated
+			* ICurio#canRightClickEquip() [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
+			* ICurio#playRightClickEquipSound(LivingEntity) [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
+			* ICurio#getAttributeModifiers(String)
+			* ICurioItem#canRightClickEquip(ItemStack) [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
+			* ICurioItem#playRightClickEquipSound(LivingEntity, ItemStack) [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
+			* ICurioItem#getAttributeModifiers(String, ItemStack)
+			* ICuriosHelper#getAttributeModifiers(String, ItemStack)
+			[1.16.4-4.0.3.5] - 2021.01.14
+			Fixed
+			* Fixed crash related to performing logic on empty itemstacks
+			[1.16.4-4.0.3.4] - 2021.01.12
+			Fixed
+			* Fixed command slot type identification for dedicated servers
+			[1.16.4-4.0.3.3] - 2020.12.31
+			Added
+			* Added Korean localization (thanks othuntgithub!) [#97](https://github.com/TheIllusiveC4/Curios/pull/97)
+			[1.16.4-4.0.3.2] - 2020.12.26
+			Changed
+			* Reverted ICurio#onUnequip change from 4.0.3.1
+			[1.16.4-4.0.3.1] - 2020.12.26
+			Changed
+			* [API] ICurio#onUnequip now passes the actual ItemStack instance instead of a copy
+			[1.16.4-4.0.3.0] - 2020.11.24
+			Added
+			* [API] ICurioItem interface for simple hard-dependency item implementations
+			Changed
+			* Minor improvements to "Curio" slot type and tag for universal acceptance
+			Fixed
+			* Fixed infinite log spam when using recipe book [#91](https://github.com/TheIllusiveC4/Curios/issues/91)
+			* Fixed command client crashes [#89](https://github.com/TheIllusiveC4/Curios/issues/89)
+			* Fixed overextended texture in Curios GUI
+			[1.16.4-4.0.2.1] - 2020.11.09
+			Changed
+			* Updated to 1.16.4
+			* "Curio" slot type now accepts any curio item [#78](https://github.com/TheIllusiveC4/Curios/issues/78)
+			Fixed
+			* Fixed NPE with Mahou Tsukai's scrying [#77](https://github.com/TheIllusiveC4/Curios/issues/77)
+			* Fixed empty tags being attached to items [#80](https://github.com/TheIllusiveC4/Curios/issues/80)
+			* Fixed render buttons toggling wrong slot [#75](https://github.com/TheIllusiveC4/Curios/issues/75) [#84](https://github.com/TheIllusiveC4/Curios/issues/84)
+			[1.16.3-4.0.2.0] - 2020.09.20
+			Update courtesy of Extegral, thanks! [#72](https://github.com/TheIllusiveC4/Curios/pull/72)
+			Added
+			* [API] Added ICurio#showAttributesTooltip for toggling attribute tooltips per curio
+			* [API] Added ICurio#getFortuneBonus for adding fortune levels when curio is equipped
+			* [API] Added ICurio#getLootingBonus for adding looting levels when curio is equipped
+			* Added curios:equip_curio criterion trigger for listening to curio equips
+			Changed
+			* Updated Russian localization
+			Fixed
+			* Fixed bug with recipe book persisting on Curios screen when going from Survival to Creative
+			[1.16.3-4.0.1.0] - 2020.09.14
+			Added
+			* Added Brazilian localization (thanks Mikeliro!) [#65](https://github.com/TheIllusiveC4/Curios/pull/65)
+			Changed
+			* Updated to Minecraft 1.16.3
+			Fixed
+			* Fixed crashing when attempting to unlock/lock slots in equip handlers [#68](https://github.com/TheIllusiveC4/Curios/issues/68)
+			* Fixed misaligned render toggle buttons with non-natively-positioned slots
+			[1.16.2-4.0.0.1] - 2020.08.26
+			Changed
+			* Updated to Forge 33.0.21
+			[1.16.2-4.0.0.0] - 2020.08.13
+			Changed
+			* Updated to Minecraft 1.16.2
+			* Archive base name changed from "curios" to "curios-forge"
+			* Mod version no longer contains "FORGE"
+			[3.0.0.2] - 2020.08.03
+			Fixed
+			* Fixed toggle render buttons desyncing when scrolling
+			* Fixed recipe book offsets in Curios GUI
+			[3.0.0.1] - 2020.08.02
+			Changed
+			* [API] Moved ICuriosItemHandler#handleInvalidStacks call to tick event
+			Fixed
+			* Fixed hidden slots still being handled by Curios GUI
+			[3.0] - 2020.07.21
+			Fixed
+			* Fixed Curios button disappearing when switching tabs in Creative menu [#55](https://github.com/TheIllusiveC4/Curios/issues/55)
+			* Fixed being able to right-click Curios items into any slot [#56](https://github.com/TheIllusiveC4/Curios/issues/56)
+			[3.0-beta4] - 2020.07.17
+			Fixed
+			* Fixed crashes with Forge 32.0.67+ [#53](https://github.com/TheIllusiveC4/Curios/issues/53)
+			[3.0-beta3] - 2020.07.14
+			Changed
+			* [API] IMC messages can now process iterable collections of SlotTypeMessage
+			[3.0-beta2] - 2020.07.02
+			Added
+			* [API] Added ICuriosHelper#getEquippedCurios that obtains all equipped, non-cosmetic curios
+			Changed
+			* [API] IDynamicStackHandler now extends IItemHandlerModifiable
+			Fixed
+			* Fixed NPE when registering no icon for a slot type
+			[3.0-beta1] - 2020.07.01
+			Added
+			* Opt-in cosmetic slots for slot types
+			* Toggleable rendering for equipped curio items
+			* "Bracelet" has been added as a potential preset slot type
+			Changed
+			* Ported to 1.16.1 Forge
+			* Slot types are now handled server-side, allowing for per-world slot configurations
+			* Icon registration is now done alongside slot registration without needing a separate IMC message
+			* ItemStacks with different durabilities will trigger curio change events
+			*  Names:
+			* LivingCurioChangeEvent -> CurioChangeEvent
+			* LivingCurioDropRulesEvent -> DropRulesEvent
+			* LivingCurioDropsEvent -> CurioDropsEvent
+			* CurioIMCMessage -> SlotTypeMessage
+			* CuriosAPI -> CuriosApi
+			*  ICurioItemHandler -> ICuriosItemHandler:
+			* getCurioMap -> getCurios
+			* setCurioMap -> setCurios
+			* getStackHandler -> getStacksHandler
+			* enableCurio -> unlockSlotType
+			* disableCurio -> lockSlotType
+			* addCurioSlot -> growSlotType
+			* removeCurioSlot -> shrinkSlotType
+			* getDisabled -> getLockedSlots
+			* addInvalid -> loseInvalidStack
+			* dropInvalidCache -> handleInvalidStacks
+			*  ICurio:
+			* onCurioTick -> curioTick
+			* onCurioAnimate -> curioAnimate
+			* onEquipped -> onEquip
+			* onUnequipped -> onUnequip
+			* playRightClickEquipSound -> playEquipSound
+			* onCurioBreak -> curioBreak
+			* shouldSyncToTracking -> canSync
+			* getSyncTag -> writeSyncData
+			* readSyncTag -> readSyncData
+			* hasRender -> canRender
+			*  Commands:
+			* enable -> unlock
+			* disable -> lock
+			*  Abstraction:
+			* CurioType abstracted to ISlotType
+			* CurioStackHandler abstracted to ICurioStacksHandler
+			* CuriosApi split into three helper interfaces (IIconHelper on the client, ISlotHelper on the server, ICuriosHelper for both)
+			* CurioTags functionality refactored into SlotTypePresets
+			* The above changes are only for the API, the rest of the classes have also had extensive changes
+
+	GeckoLib (forge-1.16.5-geckolib-3.0.6.jar --> forge-1.16.5-geckolib-3.0.7.jar):
+		forge-1.16.5-geckolib-3.0.7.jar:
+			v3.0.7
+			* Updated Botarium for z-fighting fix. #AzureDoom
+			* Fixed bottom face being flipped in BoxUV, re-enable culling. #Paspartout
+
+	Guns Without Roses (gunswithoutroses-1.16.4-1.0.6.jar --> gunswithoutroses-1.16.5-1.0.7.jar):
+		gunswithoutroses-1.16.5-1.0.7.jar:
+			* ADDED: Korean translation (by othuntgithub)
+			* REMOVED: Cherrounds, since Hanami is discontinued and isn't in 1.16.2+, they might come back in a future addon mod
+
+	Industrial Foregoing (industrial-foregoing-1.16.5-3.2.9-2215ef4.jar --> industrial-foregoing-1.16.5-3.2.9.1-fbef27c.jar):
+		industrial-foregoing-1.16.5-3.2.9.1-fbef27c.jar:
+			[https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md)
+
+	KubeJS (kubejs-1605.3.5-build.156-forge.jar --> kubejs-1605.3.5-build.157-forge.jar):
+		kubejs-1605.3.5-build.157-forge.jar:
+			* Updated buildscripts, arch version - LatvianModder
+
+	Nature's Aura (NaturesAura-33.4.jar --> NaturesAura-34.0.jar):
+		NaturesAura-34.0.jar:
+			* Added the eye of the pillager
+			* Lower the amount of aura that the everlasting spring drains
+			* Disallow aura mending on items that already mend themselves
+			* Allow using warped planks for the crimson altar
+			* Explicitly say which machines only work in the overworld
+			* Reduce the chance of sulfur generating using the ore powder
+			* Fixed the winter's calling replacing blocks that are waterlogged with ice
+			* Change the prismarine recipe to overworld aura to avoid it crafting into crystals right away
+			* Allow replacing ores using the additionalOres config
+			* Fixed wrong recipe display in the potato section
+			* Fixed an oak generator crash with some modded world gen
+			* Register configured features correctly to avoid Blame reports
+			* Some performance increases for areas with a lot of aura
+
+	Occultism (occultism-1.0.8.jar --> occultism-1.0.9.jar):
+		occultism-1.0.9.jar:
+			[Automated Build]
+			Find changes at [https://github.com/klikli-dev/occultism/releases](https://github.com/klikli-dev/occultism/releases)
+
+	Quark (Quark-r2.4-299.jar --> Quark-r2.4-300.jar):
+		Quark-r2.4-300.jar:
+			* Added the Forgotten and Forgotten Hat.
+			* Added Wraiths and Soul Bead.
+			* Fixed crash with armor right clicking messing up some GUIs.
+			* Fixed hedges' top textures culling when there's a block over them.
+			* Fixed ingame configs not having descriptions.
+			* Fixed quark entities being tracked across stupidly large distances.
+			* Fixed rotation lock showing a bit of the config button textures.
+			* Hedges can now hold flowers.
+			* Hedges now use their own tag, and only connect to eachother rather than also with fences and solid blocks.
+			* Improved hedges' rendering when stacked.
+			* Redid wooden posts from the ground up - they now come in log and stripped log variants, can be placed horizontally, and can connect to chains.
+			* Stools now attempt to predict when you'll right click a block onto their top face and increase in size before. This lets you place things like torches over them.
+
+	Titanium (titanium-1.16.5-3.2.6.jar --> titanium-1.16.5-3.2.6.1.jar):
+		titanium-1.16.5-3.2.6.1.jar:
+			[https://github.com/InnovativeOnlineIndustries/Titanium/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Titanium/blob/changelog/CHANGELOG.md)
+
+	YUNG's API (Forge) ([1.16.4 / 1.16.5] YUNG's API vForge-3 --> [1.16.4 / 1.16.5] YUNG's API vForge-4):
+		[1.16.4 / 1.16.5] YUNG's API vForge-4:
+			Remove debug logging message I accidentally left in :3
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

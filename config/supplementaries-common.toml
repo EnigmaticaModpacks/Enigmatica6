@@ -1,0 +1,367 @@
+
+#Server side blocks configs
+[blocks]
+
+	[blocks.globe]
+		#how many globe trades to give to the wandering trader. This will effectively increase the chance of him having a globe trader. Increase this if you have other mods that add stuff to that trader
+		#Range: 0 ~ 50
+		chance = 2
+
+	[blocks.speaker_block]
+		#Maximum block range
+		#Range: 0 ~ 100000000
+		range = 64
+		#Enable/disable speaker block narrator mode
+		narrator_enabled = true
+
+	[blocks.bellows]
+		#bellows pushes air following this equation: 
+		#air=(sin(2PI*ticks/period)<0), with period = base_period-(redstone_power-1)*power_scaling 
+		#represents base period at 1 power
+		#Range: 1 ~ 512
+		base_period = 78
+		#entities with velocity greated than this won't be pushed
+		#Range: 0.0 ~ 16.0
+		power_scaling = 2.0
+		#velocity increase uses this equation: 
+		#vel = base_vel*((range-entity_distance)/range) with base_vel = base_velocity_scaling/period 
+		#note that the block will push further the faster it's pulsing
+		#Range: 0.0 ~ 64.0
+		base_velocity_scaling = 5.0
+		#sets velocity changed flag when pushing entities +
+		#causes pushing animation to be smooth client side but also restricts player movement when being pushed
+		velocity_changed_flag = true
+		#note that it will still only keep alive the two fire blocks closer to it
+		#Range: 0 ~ 16
+		range = 5
+
+	[blocks.spring_launcher]
+		#spring launcher launch speed
+		#Range: 0.0 ~ 16.0
+		velocity = 1.5
+		#fall distance needed to trigger the automatic spring launch
+		#Range: 0 ~ 512
+		fall_height_required = 5
+
+	[blocks.turn_table]
+		#can rotate entities standing on it?
+		rotate_entities = true
+		#blocks that can't be rotated. Some special ones like chests, beds and pistons are already hardcoded
+		blacklist = ["minecraft:end_portal_frame"]
+
+	[blocks.jar]
+		#Jar liquid capacity: leave at 12 for pixel accuracy
+		#Range: 0 ~ 1024
+		capacity = 12
+		#Allow right click to instantly eat or drink food or potions inside a placed jar.
+		#Disable if you think this ability is op (honey for example). Cookies are excluded
+		drink_from_jar = true
+		#Dynamically allows all small mobs inside jars depending on their hitbox size. Tinted jars can accept hostile mbos too
+		jar_auto_detect = false
+		#Allows the player to directly drink from jar items
+		drink_from_jar_item = false
+
+	[blocks.cage]
+		#Allows all baby mobs to be captured by cages
+		cage_allow_all_babies = false
+		#Allows all entities to be captured by cages and jars. Not meant for survival
+		allow_all_mobs = false
+		#Dynamically allows all small mobs inside cages depending on their hitbox size
+		cage_auto_detect = false
+		#Health percentage under which mobs will be allowed to be captured by cages and jars. Leave at 100 to accept any health level
+		#Range: 1 ~ 100
+		health_threshold = 100
+
+	[blocks.notice_board]
+		#Allows notice boards to accept and display any item, not just maps and books
+		allow_any_item = false
+
+	[blocks.sack]
+		#Maximum number of sacks after which the slowness effect will be applied. each multiple of this number will further slow the player down
+		#Range: 0 ~ 50
+		sack_increment = 2
+		#How many slots should a sack have
+		#Range: 1 ~ 27
+		slots = 9
+		#Penalize the player with slowness effect when carrying too many sacks
+		sack_penalty = true
+
+	[blocks.safe]
+		#Makes safes only breakable by their owner or by a player in creative
+		prevent_breaking = true
+		#Make safes simpler so they do not require keys:
+		#they will be bound to the first person that opens one and only that person will be able to interact with them
+		simple_safes = false
+
+	[blocks.blackboard]
+		#Enable to draw directly on a blackboard using any dye. Gui still only works in black and white
+		colored_blackboard = false
+
+	[blocks.candle_holder]
+		#Candle holder light level
+		#Range: 1 ~ 15
+		light_level = 12
+
+	[blocks.hourglass]
+		#Time in ticks for sugar
+		#Range: 0 ~ 10000
+		sugar_time = 40
+		#Time in ticks for sand blocks
+		#Range: 0 ~ 10000
+		sand_time = 70
+		#Time in ticks for concrete blocks
+		#Range: 0 ~ 10000
+		concrete_time = 105
+		#Time in ticks for generic dust
+		#Range: 0 ~ 10000
+		dust_time = 150
+		#Time in ticks for glowstone dust
+		#Range: 0 ~ 10000
+		glowstone_time = 190
+		#Time in ticks for blaze powder
+		#Range: 0 ~ 10000
+		blaze_powder_time = 277
+		#Time in ticks for redstone dust
+		#Range: 0 ~ 10000
+		redstone_time = 400
+		#Time in ticks for slime balls
+		#Range: 0 ~ 10000
+		slime_time = 1750
+		#Time in ticks for honey
+		#Range: 0 ~ 10000
+		honey_time = 2000
+
+	[blocks.item_shelf]
+		#Makes item shelves climbable
+		climbable_shelves = false
+
+	[blocks.iron_gate]
+		#Allows two iron gates to be opened simultaneously when on top of the other
+		double_opening = true
+		#Makes iron (ang gold) gates behave like their door counterpart so for example iron gates will only be openeable by redstone
+		door-like_gates = false
+
+	[blocks.timber_frame]
+		#Replace a timber frame with wattle and daub block when daub is placed in it
+		replace_daub = true
+		#Allow placing a timber frame directly on a block by holding shift
+		swap_on_shift = false
+
+	[blocks.flag]
+		#Allows right/left clicking on a stick to lower/raise a flag attached to it
+		stick_pole = true
+		#Maximum allowed pole length
+		#Range: 0 ~ 256
+		pole_length = 16
+
+#Configure spawning conditions
+[spawns]
+
+	[spawns.firefly]
+		#Spawnable biomes
+		biomes = ["minecraft:swamp", "minecraft:swamp_hills", "minecraft:plains", "minecraft:sunflower_plains", "minecraft:dark_forest", "minecraft:dark_forest_hills", "byg:bayou", "byg:cypress_swamplands", "byg:glowshroom_bayou", "byg:mangrove_marshes", "byg:vibrant_swamplands", "byg:fresh_water_lake", "byg:grassland_plateau", "byg:wooded_grassland_plateau", "byg:flowering_grove", "byg:guiana_shield", "byg:guiana_clearing", "byg:meadow", "byg:orchard", "byg:seasonal_birch_forest", "byg:seasonal_deciduous_forest", "byg:seasonal_forest", "biomesoplenty:flower_meadow", "biomesoplenty:fir_clearing", "biomesoplenty:grove_lakes", "biomesoplenty:grove", "biomesoplenty:highland_moor", "biomesoplenty:wetland_marsh", "biomesoplenty:deep_bayou"]
+		#Whitelisted mods. All biomes from said mods will be able to spawn fireflies. Use the one above for more control
+		mod_whitelist = []
+		#Spawn weight 
+		#Set to 0 to disable spawning entirely
+		#Range: 0 ~ 100
+		weight = 3
+		#Minimum group size
+		#Range: 0 ~ 64
+		min = 5
+		#Maximum group size
+		#Range: 0 ~ 64
+		max = 9
+
+	[spawns.structures]
+
+		[spawns.structures.way_sign]
+			#Average distance apart in chunks between spawn attempts
+			#Range: 0 ~ 1001
+			average_distance = 19
+			#Minimum distance apart in chunks between spawn attempts. 1001 to disable them entirely
+			#Range: 0 ~ 1001
+			minimum_distance = 10
+			#With this option road signs will display the distance to the structure that they are pointing to
+			show_distance_text = true
+			#list of structure that a sign can point to. Note that they will only spawn in dimensions where vanilla villages can
+			villages = ["minecraft:village", "repurposed_structures:village_badlands", "repurposed_structures:village_dark_oak", "repurposed_structures:village_birch", "repurposed_structures:village_giant_taiga", "repurposed_structures:village_jungle", "repurposed_structures:village_mountains", "repurposed_structures:village_oak", "repurposed_structures:village_swamp", "pokecube:village", "pokecube_legends:village", "pokecube_legends:village/ocean", "valhelsia_structures:castle", "valhelsia_structures:castle_ruin", "valhelsia_structures:small_castle", "valhelsia_structures:tower_ruin"]
+
+		[spawns.structures.wild_flax]
+			enabled = true
+
+#entities parameters
+[entities]
+
+	[entities.firefly]
+		#firefly animation period
+		#note that actual period will be this + a random number between 0 and 10
+		#this needs to be here to allow correct despawning of the entity when it's not glowing
+		#check client configs come more animation settings
+		#Range: 1 ~ 200
+		period = 65
+		#firefly flying speed
+		#Range: 0.0 ~ 10.0
+		speed = 0.3
+		#despawn during the day
+		despawn = true
+
+#Vanilla tweaks
+[tweaks]
+
+	[tweaks.cake_tweaks]
+		#Allows you to place a cake on top of another
+		double_cake = true
+		#Replaces normal cake placement with a directional one
+		directional_cake = true
+
+	[tweaks.hanging_flower_pots]
+		#allows you to place hanging flower pots. Works with any modded pot too
+		enabled = true
+
+	[tweaks.throwable_bricks]
+		#Throw bricks at your foes! Might break glass blocks
+		enabled = true
+
+	[tweaks.wall_lantern]
+		#Allow wall lanterns placement
+		enabled = true
+		#Mod ids of mods that have lantern block that extend the base lantern class but don't look like one
+		mod_blacklist = ["extlights", "betterendforge", "tconstruct"]
+		#Gives high priority to wall lantern placement. Enable to override other wall lanterns placements, disable if it causes issues with other mods that use lower priority block click events
+		high_priority = true
+
+	[tweaks.bells_tweaks]
+		#Ring a bell by clicking on a chain that's connected to it
+		chain_ringing = true
+		#Max chain length that allows a bell to ring
+		#Range: 0 ~ 256
+		chain_length = 16
+
+	[tweaks.raked_gravel]
+		#allow gravel to be raked with a hoe
+		enabled = true
+
+	[tweaks.bottle_xp]
+		#Allow bottling up xp by using a bottle on an enchanting table
+		enabled = true
+		#bottling health cost
+		#Range: 0 ~ 20
+		cost = 2
+
+	[tweaks.map_tweaks]
+		#In this section you can add custom structure maps to cartographers
+		#The format required is as follows:
+		#[[<structure>,<level>,<min_price>,<max_price>,<map_name>,<map_color>,<map_marker>],[<structure>,...,<map_marker>],...]
+		#With the following parameters:
+		# - <structure> structure id to be located (ie: minecraft:igloo)
+		# - <level> villager trading level at which the map will be sold. Must be between 1 and 5
+		# - <min_price> minimum emerald price
+		# - <max_price> maximum emerald price
+		# - <map_name> map item name
+		# - <map_color> hex color of the map item overlay texture
+		# - <map_marker> id of the map marker to be used (ie: supplementaries:igloo). 
+		#See texture folder for all the names. Leave empty for default ones
+		#Note that ony the first parameter is required, each of the others others can me removed and will be defaulted to reasonable values
+		#example: ['minecraft:swamp_hut','2','5','7','witch hut map','0x00ff33']
+		custom_adventurer_maps = [[""]]
+		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
+		#Best kept disabled if you are adding custom adventurer maps with its config
+		random_adventurer_maps = true
+		#enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map
+		block_map_markers = true
+
+	[tweaks.ceiling_banners]
+		#Allow banners to be placed on ceilings
+		enabled = true
+
+	[tweaks.zombie_horse]
+		#Feed a stack of rotten flesh to a skeleton horse to buff him up to a zombie horse
+		zombie_horse_conversion = true
+		#Amount of rotten flesh needed
+		#Range: 1 ~ 1000
+		rotten_flesh = 64
+		#Allows zombie horses to be ridden underwater
+		rideable_underwater = true
+
+	[tweaks.placeable_sticks]
+		#Allow placeable sticks
+		sticks = true
+		#Allow placeable blaze rods
+		blaze_rods = true
+
+	[tweaks.placeable_gunpowder]
+		#Allow placeable gunpowder
+		enabled = true
+		#Number of ticks it takes for gunpowder to burn 1 stage (out of 8). Increase to slow it down
+		#Range: 0 ~ 20
+		speed = 2
+		#Age at which it spread to the next gunpowder block. Also affects speed
+		#Range: 0 ~ 8
+		spread_age = 2
+
+	[tweaks.placeable_books]
+		#Allow books and enchanted books to be placed on the ground
+		enabled = true
+		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
+		#Range: 0.0 ~ 5.0
+		book_power = 1.0
+		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
+		#Range: 0.0 ~ 5.0
+		enchanted_book_power = 1.334
+		#Allow all books to be placed both vertically and horizontally
+		mixed_books = false
+		#Allows written books to be placeable (will need shift clicking)
+		written_books = false
+
+[items]
+
+	[items.rope_arrow]
+		#If you don't like my ropes you can specify here the block id ofa rope from another mod which will get deployed by rope arrows instead of mine
+		rope_arrow_override = "supplementaries:rope"
+		#Max number of robe items allowed to be stored inside a rope arrow
+		#Range: 1 ~ 256
+		capacity = 24
+
+	[items.flute]
+		#radius in which an unbound flute will search pets
+		#Range: 0 ~ 500
+		unbound_radius = 64
+		#max distance at which a bound flute will allow a pet to teleport
+		#Range: 0 ~ 500
+		bound_distance = 64
+
+	[items.bomb]
+		#Bomb explosion radius (damage depends on this)
+		#Range: 0.1 ~ 10.0
+		explosion_radius = 2.0
+		#Do bombs break blocks like tnt?
+		#Allowed Values: ALL, WEAK, NONE
+		break_blocks = "WEAK"
+
+	[items.slingshot]
+		#Slingshot range multiplier. Affect the initial projectile speed
+		#Range: 0.0 ~ 5.0
+		range_multiplier = 1.0
+		#Time in ticks to fully charge a slingshot
+		#Range: 0 ~ 100
+		charge_time = 20
+		#Allow enderman to intercept any slingshot projectile
+		unrestricted_enderman_intercept = true
+		#Deceleration for the stasis projectile
+		#Range: 0.1 ~ 1.0
+		stasis_deceleration = 0.9624999761581421
+
+	[items.blue_bomb]
+		#Bomb explosion radius (damage depends on this)
+		#Range: 0.1 ~ 10.0
+		explosion_radius = 5.15
+		#Do bombs break blocks like tnt?
+		#Allowed Values: ALL, WEAK, NONE
+		break_blocks = "WEAK"
+
+#General settings
+[general]
+	#Turn this on to disable any interaction on blocks placed by other players. This affects item shelves, signs, flower pots, and boards. Useful for protected servers. Note that it will affect only blocks placed after this is turned on and such blocks will keep being protected after this option is disabled
+	server_protection = false
+

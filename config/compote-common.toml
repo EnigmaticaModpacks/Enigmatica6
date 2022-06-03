@@ -1,0 +1,15 @@
+
+#General Config
+[general]
+	#Shift right clicking with an empty hand will clear the composter of its contents. Default[Vanilla] is false.
+	right_click = false
+	#The number of levels the composter must gain before generating its loot. Default[Vanilla] is 7.
+	#Range: 1 ~ 7
+	level_count = 7
+	#Whether or not the first piece of compostable material always raises the composter's level. Default[Vanilla] is true.
+	first_compost_always_succeeds = true
+	#Allow items to be inserted from any face of the composter. Default[Vanilla] is false.
+	insert_from_any_direction = true
+	#Allow items to be extracted from any face of the composter. Default[Vanilla] is false.
+	extract_from_any_direction = true
+

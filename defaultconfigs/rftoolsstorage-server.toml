@@ -1,0 +1,66 @@
+
+#Settings for the modular storage system
+[storage]
+	#RF per tick that the storage tablet can receive
+	#Range: > 0
+	tabletRFPerTick = 500
+	#Maximum RF storage that the storage tablet can hold
+	#Range: > 0
+	tabletMaxRF = 20000
+	#RF/tick to share an inventory to all dimensions
+	#Range: > 0
+	remoteShareGlobal = 50
+	#Maximum RF storage that the remote storage block can hold
+	#Range: > 0
+	remoteStorageMaxRF = 100000
+	#RF per usage of the storage tablet
+	#Range: > 0
+	tabletRFUsage = 100
+	#The height for the tallest style modular storage GUI
+	#Range: 0 ~ 1000000
+	modularStorageGuiHeight3 = 490
+	#The height for the middle style modular storage GUI
+	#Range: 0 ~ 1000000
+	modularStorageGuiHeight2 = 320
+	#The height for the smallest style modular storage GUI
+	#Range: 0 ~ 1000000
+	modularStorageGuiHeight1 = 236
+	categories = ["extrabiomes.blocks.BlockCustomFlower=Flowers", "crazypants.enderio.material.ItemMachinePart=Technical", "net.minecraft.block.BlockPistonBase=Technical", "com.rwtema.extrautils.tileentity.transfernodes.BlockTransferPipe=Technical", "net.minecraft.block.BlockWood=null", "powercrystals.minefactoryreloaded.item.ItemPortaSpawner=Technical", "thermalfoundation.block.BlockOre=Ores", "mcjty.rftools.items.screenmodules=Modules", "net.minecraft.block.BlockRail=Technical", "net.minecraft.item.ItemShears=Tools", "net.minecraft.block.BlockRailPowered=Technical", "net.minecraft.block.BlockJukebox=Technical", "mcjty.rftools.blocks.teleporter.MatterBoosterBlock=Machines", "crazypants.enderio.material.ItemCapacitor=Technical", "powercrystals.minefactoryreloaded.item.ItemLaserFocus=Technical", "crazypants.enderio.fluid.ItemBucketEio=Buckets", "biomesoplenty.common.items.ItemBOPBucket=Buckets", "net.minecraft.block.BlockCommandBlock=Technical", "mcjty.rftools.items.dimensionmonitor.DimensionMonitorItem=Technical", "net.minecraft.block.BlockRedstoneLight=Technical", "net.minecraft.item.ItemFood=Food", "crazypants.enderio.conduit.facade.BlockConduitFacade=Technical", "mcjty.rftools.blocks.spaceprojector.SpaceChamberBlock=Machines", "powercrystals.minefactoryreloaded.item.base.ItemFactoryBucket=Buckets", "crazypants.enderio.conduit.BlockConduitBundle=Technical", "powercrystals.minefactoryreloaded.block=Machines", "net.minecraft.block.BlockPotato=Food", "crazypants.enderio.rail.BlockEnderRail=Technical", "crazypants.enderio.machine=Machines", "thermalexpansion.block.device.ItemBlockDevice=Machines", "mcjty.rftools.items.teleportprobe.ChargedPorterItem=Technical", "com.rwtema.extrautils.block.BlockEnderthermicPump=Machines", "net.minecraft.block.BlockPressurePlate=Technical", "net.minecraft.block.BlockFlower=Flowers", "mcjty.rftools.items.dimlets.KnownDimlet=Dimlets", "mcjty.rftools.items.teleportprobe.TeleportProbeItem=Technical", "crazypants.enderio.item.ItemMagnet=Technical", "mcjty.rftools.items.devdelight.DevelopersDelightItem=Technical", "mcjty.rftools.items.parts.MediocreEfficiencyEssenceItem=Dimlet Parts", "thermalexpansion.item.tool.ItemIgniter=Technical", "mcjty.rftools.items.smartwrench.SmartWrenchItem=Technical", "mcjty.rftools.items.parts.DimletTypeControllerItem=Dimlet Parts", "crazypants.enderio.block.BlockDarkSteelPressurePlate=Technical", "net.minecraft.block.BlockButtonStone=Technical", "mcjty.rftools.items.parts.PeaceEssenceItem=Dimlet Parts", "mcjty.rftools.items.envmodules=Modules", "net.minecraft.block.BlockDropper=Technical", "crazypants.enderio.conduit.redstone.ItemRedstoneConduit=Technical", "mcjty.rftools.blocks.MachineBase=Machines", "crazypants.enderio.conduit.item.filter.ItemBasicItemFilter=Technical", "crazypants.enderio.item.ItemConduitProbe=Technical", "thermalexpansion.item.tool.ItemMultimeter=Technical", "net.minecraft.item.ItemFlintAndSteel=Tools", "net.minecraft.block.BlockTripWireHook=Technical", "net.minecraft.block.BlockDispenser=Technical", "net.minecraft.block.BlockLever=Technical", "mcjty.rftools.blocks.MachineFrame=Machines", "crazypants.enderio.conduit.item.ItemItemConduit=Technical", "mcjty.rftools.items.parts.DimletEnergyModuleItem=Dimlet Parts", "thermalexpansion.block.machine=Machines", "crazypants.enderio.conduit.item.filter.ItemExistingItemFilter=Technical", "net.minecraft.item.ItemBow=Weapons", "net.minecraft.block.BlockRedstoneWire=Technical", "net.minecraft.block.BlockTripWire=Technical", "mcjty.rftools.items.manual.RFToolsDimensionManualItem=Books", "com.rwtema.extrautils.tileentity.enderquarry.BlockEnderQuarry=Machines", "codechicken.microblock.ItemSaw=Tools", "net.minecraft.block.BlockWorkbench=Technical", "biomesoplenty.common.blocks.BlockBOPFlower=Flowers", "biomesoplenty.common.itemblocks.ItemBlockFlower=Flowers", "powercrystals.minefactoryreloaded.item.ItemLogicUpgradeCard=Technical", "net.minecraft.block.BlockHopper=Technical", "net.minecraft.item.ItemPotion=Potions", "net.minecraft.item.ItemBook=Books", "net.minecraft.item.ItemBucket=Buckets", "mcjty.rftools.items.parts.DimletMemoryUnitItem=Dimlet Parts", "powercrystals.minefactoryreloaded.item.tool.ItemRedNetMeter=Technical", "mcjty.rftools.blocks.shield.ShieldTemplateBlock=Machines", "net.minecraft.block.BlockRedstoneTorch=Technical", "mcjty.lib.container.GenericBlock=Machines", "com.rwtema.extrautils.tileentity.enderquarry.BlockEnderMarkers=Technical", "net.minecraft.item.ItemRecord=Records", "crazypants.enderio.conduit.gas.ItemGasConduit=Technical", "mcjty.rftools.blocks.spaceprojector.SpaceChamberCardItem=Technical", "crazypants.enderio.conduit.liquid.ItemLiquidConduit=Technical", "powercrystals.minefactoryreloaded.item.tool.ItemXpExtractor=Technical", "net.minecraft.item.ItemArmor=Armor", "net.minecraft.block.BlockOre=Ores", "buildcraft.builders=Machines", "mcjty.rftools.blocks.teleporter.DestinationAnalyzerBlock=Machines", "com.rwtema.extrautils.tileentity.generators.BlockGenerator=Machines", "crazypants.enderio.conduit.item.ItemExtractSpeedUpgrade=Technical", "mcjty.rftools.items.parts.SyringeItem=Dimlet Parts", "net.minecraft.block.BlockRedstoneComparator=Technical", "mcjty.rftools.items.parts.EfficiencyEssenceItem=Dimlet Parts", "thermalexpansion.block.cell=Machines", "net.minecraft.item.ItemRedstone=Technical", "net.minecraft.block.BlockNote=Technical", "mcjty.rftools.items.manual.RFToolsManualItem=Books", "crazypants.enderio.conduit.power.ItemPowerConduit=Technical", "mcjty.rftools.items.storage=Modules", "mcjty.rftools.items.dimlets.RealizedDimensionTab=Dimlets", "crazypants.enderio.machine.spawner.ItemBrokenSpawner=Machines", "cofh.core.item.ItemBucket=Buckets", "net.minecraft.item.ItemMinecart=Technical", "net.minecraft.item.ItemSkull=Skulls", "mcjty.rftools.items.dimlets.EmptyDimensionTab=Dimlets", "mcjty.rftools.items.dimlets.UnknownDimlet=Dimlets", "crazypants.enderio.item.skull=Skulls", "net.minecraft.block.BlockFurnace=Technical", "net.minecraft.block.BlockPressurePlateWeighted=Technical", "powercrystals.minefactoryreloaded.item.ItemSafariNet=Technical", "net.minecraft.block.BlockRailDetector=Technical", "net.minecraft.block.BlockRedstoneRepeater=Technical", "mcjty.rftools.items.dimlets.DimletTemplate=Dimlets", "mcjty.rftools.items.dimensionmonitor.PhasedFieldGeneratorItem=Technical", "net.minecraft.block.BlockSapling=Saplings", "net.minecraft.block.BlockDaylightDetector=Technical", "cofh.thermalexpansion.block.device=Machines", "codechicken.microblock.ItemMicroPart=Microblocks", "crazypants.enderio.conduit.item.filter.ItemModItemFilter=Technical", "mcjty.rftools.items.manual.RFToolsShapeManualItem=Books", "net.minecraft.item.ItemSword=Weapons", "powercrystals.minefactoryreloaded.item.gun.ItemSafariNetLauncher=Technical", "net.minecraft.item.ItemTool=Tools", "thermalexpansion.item.tool.ItemWrench=Technical", "net.minecraft.block.BlockCake=Food", "mcjty.rftools.items.parts.DimletControlCircuitItem=Dimlet Parts", "net.minecraft.block.BlockCarrot=Food", "biomesoplenty.common.itemblocks.ItemBlockFlower2=Flowers", "thermalexpansion.block.dynamo.ItemBlockDynamo=Machines", "thermalexpansion.item.ItemCapacitor=Technical", "biomesoplenty.common.blocks.BlockBOPFlower2=Flowers", "codechicken.chunkloader.ItemChunkLoader=Machines", "powercrystals.minefactoryreloaded.item.tool.ItemRedNetMemoryCard=Technical", "net.minecraft.block.BlockTNT=Technical", "net.minecraft.item.ItemHoe=Tools", "mcjty.rftools.items.netmonitor.NetworkMonitorItem=Technical", "com.rwtema.extrautils.tileentity.enderquarry.BlockQuarryUpgrades=Technical"]
+	#RF per tick that the remote storage block can receive
+	#Range: > 0
+	remoteStorageRFPerTick = 300
+	#RF/tick to share an inventory to the same dimension
+	#Range: > 0
+	remoteShareLocal = 10
+	#RF per usage of the storage tablet when used in combation with the scanner module
+	#Range: > 0
+	tabletRFUsageScanner = 100
+	#Extra RF per usage per storage tier
+	#Range: > 0
+	tabletExtraRFUsage = 100
+
+#Settings for the storage scanner machine
+[storagescanner]
+	#If this is true then requesting items from the storage scanner will go straight into the player inventory and not the output slot
+	requestStraightToInventory = true
+	#Amount of RF used to insert an item
+	#Range: > 0
+	rfPerInsert = 20
+	#If this is true then XNet is required (if present) to be able to connect storages to a storage scanner
+	xnetRequired = false
+	#RF per tick that the storage scanner can receive
+	#Range: > 0
+	scannerRFPerTick = 500
+	#RF per tick/per block for the storage control module
+	#Range: > 0
+	storageControlRFPerTick = 0
+	#RF per tick/per block for the dump module
+	#Range: > 0
+	dumpRFPerTick = 0
+	#Amount of RF used to request an item
+	#Range: > 0
+	rfPerRequest = 100
+	#Maximum RF storage that the storage scanner can hold
+	#Range: > 0
+	scannerMaxRF = 50000
+

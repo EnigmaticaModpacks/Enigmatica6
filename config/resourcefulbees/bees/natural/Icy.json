@@ -1,0 +1,73 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 1:\nWhy are you here mister Winter Bee?\nYou're not where you're supposed to be.\nThe Sun is gone, you're all alone.\nSo why are you here mister Winter Bee?",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 2400,
+    "sizeModifier": 0.75,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/icy",
+    "ColorData": {
+        "honeycombColor": "#92b9fe",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "ARMORED"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:water",
+                "outputs": [{ "outputID": "minecraft:blue_ice", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:snowball",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 8,
+
+        "secondaryOutput": "powah:dry_ice",
+        "secondaryOutputWeight": 0.05,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:icy_honey_bottle",
+        "bottleOutputWeight": 0.5,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:COLD,SNOWY",
+        "biomeBlacklist": "tag:HOT,NETHER,END,OCEAN",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "minYLevel": 60,
+        "maxYLevel": 250,
+        "spawnWeight": 12,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:snow_block",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

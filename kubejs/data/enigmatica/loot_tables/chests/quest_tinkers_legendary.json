@@ -1,0 +1,224 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:debris_nugget",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 6,
+                                "max": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:netherite_nugget",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 9
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:blazing_bone",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"kubejs:molten_niotic\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"materialis:molten_alfsteel\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_queens_slime\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_signalum\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_hepatizon\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_lumium\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"kubejs:molten_spirited\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_manyullyn\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"kubejs:molten_niotic\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"kubejs:molten_spirited\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_manyullyn\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_hepatizon\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_lumium\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_signalum\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_queens_slime\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:scorched_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"materialis:molten_alfsteel\",Amount:100}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

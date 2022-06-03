@@ -1,0 +1,53 @@
+{
+    "flower": "tag:pneumaticcraft:plastic_bricks",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "What do you get if you lube up an Iron Bee, shove it inside\na Pneumatic Helmet, and toss it in a Pressure Chamber?\nI.. AM.. PCBEE!",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim", "slippers"],
+    "baseLayerTexture": "other/pcbee",
+    "ColorData": {
+        "honeycombColor": "#7a7f80",
+        "modelType": "ARMORED"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:water",
+                "outputs": [{ "outputID": "pneumaticcraft:yeast_culture", "weight": 10, "chance": 0.2 }]
+            },
+            {
+                "type": "BLOCK",
+                "inputID": "pneumaticcraft:vegetable_oil",
+                "outputs": [{ "outputID": "pneumaticcraft:oil", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "pneumaticcraft:programming_puzzle",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

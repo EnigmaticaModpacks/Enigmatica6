@@ -1,0 +1,13 @@
+
+#Configuration for world-related tweaks.
+#Please note that these options will only work if their corresponding mixin rule is enabled as well!
+[world]
+
+	[world.light_batching]
+		#Changes the max amount of tasks that the lighting engine may process at a time.
+		#By default, Vanilla uses a value of 500 during and 5 after initial world load,
+		#you may however change this to any arbitrary amount as in some cases,
+		#larger batch sizes may actually lead to *less* stalling when it comes to chunk loading.
+		#Range: > 0
+		size = 5
+

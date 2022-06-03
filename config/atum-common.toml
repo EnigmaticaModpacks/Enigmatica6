@@ -1,0 +1,285 @@
+
+[general]
+	#Can a non-creative user create a portal using the scarab?
+	"Atum Portal" = true
+	#Should clientside fog be rendered?
+	"Atum Fog" = true
+
+["atum start"]
+	#New players should start in Atum?
+	"Start in Atum" = false
+	#Structure that will generate next to the player when starting in Atum (Requires 'Start in Atum' to be enabled). Leave empty for no structure.
+	"Atum starting structure" = "atum:tent_small"
+	#Should a portal back to the Overworld generate, when starting in Atum?
+	"Create Atum Portal" = false
+
+[sandstorm]
+	#Enable/disables all functionality of sandstorms
+	"Sandstorm Enabled" = true
+	#Chance for sandstorms to generate sand layers. The higher the value, the more rare it is. Set to 0 to disable.
+	#Range: 0 ~ 10000
+	"Sandstorm Sand Layer" = 60
+	#Multiplier to fog during sandstorms
+	#Range: 0 ~ 100
+	"Sandstorm Fog" = 2
+	#How light the sand particles are
+	#Range: 0 ~ 100
+	"Sandstorm Brightness" = 75
+	#Base transparency for sand particles
+	#Range: 0 ~ 100
+	"Sandstorm Base Transparency" = 10
+	#Sand particle transparency while wearing Sandstorm reducing helmets
+	#Range: 0 ~ 100
+	"Sandstorm Helmet Transparency" = 40
+	#Seconds it takes to transition from clear to sandstorm
+	#Range: 0 ~ 100
+	"Sandstorm Transition Time" = 25
+
+["world gen"]
+	#Probability of mineshafts generating. Set to 0 to disable. Default value same as vanilla overworld
+	#Range: 0.0 ~ 1.0
+	"Minecraft probability" = 0.007
+	#Specify the amount of ruin variants structures/ruins. Allows for additional ruin structures with a resourcepack
+	#Range: 1 ~ 999
+	"Ruins Amount" = 17
+	#Range: 0 ~ 64
+	"Shrub frequency, set to 0 to disable" = 1
+	#Range: 0 ~ 255
+	"Fossils chance, set to 0 to disable" = 64
+	#Range: 0 ~ 255
+	"Dungeon chance, set to 0 to disable" = 8
+	#Should Sand Layers generate along all edges?
+	"Enable Sand Layer along edges" = true
+
+["ore gen"]
+	#All vanilla based ores, uses the vanilla values by default.
+	#Range: 1 ~ 64
+	"Coal vein size" = 17
+	#Range: 0 ~ 64
+	"Coal count, set to 0 to disable" = 20
+	#Range: 1 ~ 255
+	"Coal max height" = 128
+	#Range: 1 ~ 64
+	"Iron vein size" = 9
+	#Range: 0 ~ 64
+	"Iron count, set to 0 to disable" = 20
+	#Range: 1 ~ 255
+	"Iron max height" = 64
+	#Range: 1 ~ 64
+	"Gold vein size" = 9
+	#Range: 0 ~ 64
+	"Gold count, set to 0 to disable" = 2
+	#Range: 1 ~ 255
+	"Gold max height" = 32
+	#Range: 1 ~ 64
+	"Redstone vein size" = 8
+	#Range: 0 ~ 64
+	"Redstone count, set to 0 to disable" = 8
+	#Range: 1 ~ 255
+	"Redstone max height" = 16
+	#Range: 1 ~ 64
+	"Diamond vein size" = 8
+	#Range: 0 ~ 64
+	"Diamond count, set to 0 to disable" = 1
+	#Range: 1 ~ 255
+	"Diamond max height" = 16
+	#Range: 1 ~ 64
+	"Lapis vein size" = 7
+	#Range: 0 ~ 64
+	"Lapis baseline, set to 0 to disable" = 16
+	#Range: 1 ~ 64
+	"Lapis spread" = 16
+	#Range: 1 ~ 64
+	"Khnumite vein size" = 6
+	#Range: 0 ~ 64
+	"Khnumite count, set to 0 to disable" = 4
+	#Range: 1 ~ 255
+	"Khnumite max height" = 20
+	#Range: 1 ~ 64
+	"Bone Ore vein size" = 9
+	#Range: 0 ~ 64
+	"Bone Ore count, set to 0 to disable" = 12
+	#Range: 1 ~ 255
+	"Bone Ore max height" = 128
+	#Range: 1 ~ 64
+	"Relic Ore vein size" = 5
+	#Range: 0 ~ 64
+	"Relic Ore count, set to 0 to disable" = 4
+	#Range: 1 ~ 255
+	"Relic Ore max height" = 64
+	#Range: 1 ~ 64
+	"Nebu vein size" = 8
+	#Range: 0 ~ 64
+	"Nebu count, set to 0 to disable" = 1
+	#Range: 1 ~ 255
+	"Nebu max height" = 64
+	#Should Emeralds generate in Atum?
+	"Enable Emeralds" = true
+	#Range: 1 ~ 64
+	"Alabaster vein size" = 30
+	#Range: 0 ~ 64
+	"Alabaster count, set to 0 to disable" = 10
+	#Range: 1 ~ 255
+	"Alabaster max height" = 60
+	#Range: 1 ~ 64
+	"Porphyry vein size" = 30
+	#Range: 0 ~ 64
+	"Porphyry count, set to 0 to disable" = 10
+	#Range: 1 ~ 255
+	"Porphyry max height" = 60
+	#Range: 1 ~ 64
+	"Sand pocket vein size" = 28
+	#Range: 0 ~ 64
+	"Sand pocket count, set to 0 to disable" = 14
+	#Range: 1 ~ 255
+	"Sand pocket max height" = 255
+	#Range: 1 ~ 64
+	"Limestone Gravel pocket vein size" = 32
+	#Range: 0 ~ 64
+	"Limestone Gravel pocket count, set to 0 to disable" = 10
+	#Range: 1 ~ 255
+	"Limestone Gravel pocket max height" = 255
+	#Range: 1 ~ 64
+	"Marl vein size" = 14
+	#Range: 0 ~ 64
+	"Marl count, set to 0 to disable" = 8
+	#Range: 1 ~ 255
+	"Marl max height" = 50
+
+[biome]
+	#By default 1 in 30 Sand Plains biomes can contain either an Oasis or Dead Oasis. Set to 0 to disable both oases biomes.
+	#Range: 0 ~ 10000
+	"Oases chance" = 30
+	#Sets the percentage chance for oases to generate as an Oasis. The remaining oases will generate as an Dead Oasis. Set to 0 to only get Dead Oasis or to 100 to only get Oasis
+	#Range: 0 ~ 10000
+	"Oasis percentage" = 50
+
+	[biome.dense_woods]
+		#Range: -1 ~ 1000
+		weight = 10
+
+	[biome.sparse_woods]
+		#Range: -1 ~ 1000
+		weight = 10
+
+	[biome.limestone_crags]
+		#Range: -1 ~ 1000
+		weight = 3
+
+	[biome.limestone_mountains]
+		#Range: -1 ~ 1000
+		weight = 5
+
+	[biome.sand_dunes]
+		#Range: -1 ~ 1000
+		weight = 15
+
+	[biome.sand_hills]
+		#Range: -1 ~ 1000
+		weight = 10
+
+	[biome.sand_plains]
+		#Range: -1 ~ 1000
+		weight = 30
+
+[mobs]
+	#How frequent Bandit patrols are. The higher the number, the less patrols will spawn
+	#Range: -1 ~ 10000
+	banditPatrolFrequency = 2000
+	#How long time is required for an Assassin to spawn. The higher the number, the less frequent Assassin will spawn
+	#Range: 1 ~ 10000
+	markedForDeathFrequency = 1000
+	#Whether a message should be broadcast to everybody, when a Pharaoh have been killed
+	displayPharaohSlainMessage = true
+
+	[mobs.desert_rabbit]
+		#Range: -1 ~ 63
+		min = 2
+		#Range: 1 ~ 64
+		max = 3
+		#Range: -1 ~ 1000
+		weight = 5
+
+	[mobs.bat]
+		#Range: -1 ~ 63
+		min = 4
+		#Range: 1 ~ 64
+		max = 8
+		#Range: -1 ~ 1000
+		weight = 4
+
+	[mobs.quail]
+		#Range: -1 ~ 63
+		min = 2
+		#Range: 1 ~ 64
+		max = 4
+		#Range: -1 ~ 1000
+		weight = 3
+
+	[mobs.bonestorm]
+		#Range: -1 ~ 63
+		min = 1
+		#Range: 1 ~ 64
+		max = 2
+		#Range: -1 ~ 1000
+		weight = 5
+
+	[mobs.forsaken]
+		#Range: -1 ~ 63
+		min = 1
+		#Range: 1 ~ 64
+		max = 4
+		#Range: -1 ~ 1000
+		weight = 22
+
+	[mobs.mummy]
+		#Range: -1 ~ 63
+		min = 1
+		#Range: 1 ~ 64
+		max = 3
+		#Range: -1 ~ 1000
+		weight = 30
+
+	[mobs.wraith]
+		#Range: -1 ~ 63
+		min = 1
+		#Range: 1 ~ 64
+		max = 2
+		#Range: -1 ~ 1000
+		weight = 10
+
+	[mobs.stoneguard]
+		#Range: -1 ~ 63
+		min = 1
+		#Range: 1 ~ 64
+		max = 2
+		#Range: -1 ~ 1000
+		weight = 34
+
+	[mobs.tarantula]
+		#Range: -1 ~ 63
+		min = 1
+		#Range: 1 ~ 64
+		max = 3
+		#Range: -1 ~ 1000
+		weight = 20
+
+	[mobs.camel]
+		#Range: -1 ~ 63
+		min = 2
+		#Range: 1 ~ 64
+		max = 6
+		#Range: -1 ~ 1000
+		weight = 6
+
+	[mobs.desert_wolf]
+		#Range: -1 ~ 63
+		min = 2
+		#Range: 1 ~ 64
+		max = 4
+		#Range: -1 ~ 1000
+		weight = 6
+
+["mod integration"]
+	theoneprobe = true
+

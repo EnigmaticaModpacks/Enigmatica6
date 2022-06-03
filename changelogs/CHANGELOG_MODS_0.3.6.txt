@@ -1,0 +1,3567 @@
+=======================================
+Enigmatica6 0.3.5 --> Enigmatica6 0.3.6
+=======================================
+
+Added:
+- FerriteCore
+
+Updated:
+	'Dustrial Decor (DustrialDecor-1.1.4.jar --> DustrialDecor-1.1.5.jar):
+		DustrialDecor-1.1.5.jar:
+			Config, turns village houses and cardboard armor off by default.
+
+	Alex's Mobs (alexsmobs-1.3.0 --> alexsmobs-1.4.1):
+		alexsmobs-1.4.1:
+			-Fixed Elephants being considered undead
+			-Fixed Soul Vultures not being undead
+			-Fixed Tusked Elephants being as weak as non-tusked Elephants
+			-Fixed riding baby elephants
+			-Fixed elephants having small attack reach
+			-Fixed not being able to attack crocodiles or crimson mosquitos during attacks
+			-Fixed baby grizzly bears suffocating
+			-Updated Taiwanese translations
+			-Updated Russian translations
+			-Updated Portuguese translations
+			-Updated Swedish translations
+
+		alexsmobs-1.4.0:
+			-Added Elephant
+			-Added Soul Vulture
+			-Fixed baby seals always being brown
+			-Updated Portuguese translations
+			-Updated Taiwanese translations
+
+	Aquaculture 2 (Aquaculture-1.16.4-2.1.11.jar --> Aquaculture-1.16.4-2.1.12.jar):
+		Aquaculture-1.16.4-2.1.12.jar:
+			* Improved world load time, by reading fish biome information during common setup instead
+
+	Architectury (Forge) ([Forge 1.16.4] v1.2.69 --> [Forge 1.16.4] v1.3.80):
+		[Forge 1.16.4] v1.3.80:
+			Architectury v1.3.80 for 1.16.4
+			Updated at 2021-01-13 12:43.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/e28f43d)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.3.78:
+			Architectury v1.3.78 for 1.16.4
+			Updated at 2021-01-12 17:16.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/ce6fda2)
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.3.77:
+			Architectury v1.3.77 for 1.16.4
+			Updated at 2021-01-12 02:13.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/26c04a6)
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.3.76:
+			Architectury v1.3.76 for 1.16.4
+			Updated at 2021-01-11 06:42.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/7b3462c)
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.3.74:
+			Architectury v1.3.74 for 1.16.4
+			Updated at 2021-01-10 10:55.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/2ded801)
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.2.73:
+			Architectury v1.2.73 for 1.16.4
+			Updated at 2021-01-09 14:31.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/b8b419c)
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.2.72:
+			Architectury v1.2.72 for 1.16.4
+			Updated at 2021-01-09 12:20.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/5b6f429)
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.2.71:
+			Architectury v1.2.71 for 1.16.4
+			Updated at 2021-01-09 12:18.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/cd5d68e)
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.2.70:
+			Architectury v1.2.70 for 1.16.4
+			Updated at 2021-01-07 17:32.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/d3a127f)
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+	Artifacts (Artifacts-1.16.4-2.7.3.jar --> Artifacts-1.16.4-2.7.5.jar):
+		Artifacts-1.16.4-2.7.5.jar:
+			* Rebalanced loot (Decreased the probability of artifacts in vanilla loot tables)
+
+		Artifacts-1.16.4-2.7.4.jar:
+			* [jordanamr](https://github.com/ochotonida/artifacts/issues?q=is:pr author:jordanamr): updated French translation
+			* Added a client config option to prevent the kitty slippers/bunny hoppers from playing a cat/rabbit hurt sound
+			* The eternal steak and everlasting beef can no longer be fed to animals, as this would consume the item in the process
+
+	Better Advancements (BetterAdvancements-1.16.4-0.1.0.103 --> BetterAdvancements-1.16.4-0.1.0.104):
+		BetterAdvancements-1.16.4-0.1.0.104:
+			[[d2b6a67](https://github.com/way2muchnoise/BetterAdvancements/commit/d2b6a678feb6af318cc14eeef4d2583acd6e9428)] bump to recommended forge (way2muchnoise)
+
+	Biomes O' Plenty (Biomes O' Plenty 1.16.4-13.0.0.427 --> Biomes O' Plenty 1.16.4-13.0.0.428):
+		Biomes O' Plenty 1.16.4-13.0.0.428:
+			=========
+			Build: 1.16.4-13.0.0.427 - Tue Jan 05 22:01:07 GMT 2021
+			github:
+			de_de.json uptodate (#1780)
+			* Update de_de.json
+			added all new entries, removed not used ones
+			* syntax
+			=========
+			Build: 1.16.4-13.0.0.426 - Sat Dec 26 03:33:51 GMT 2020
+			github:
+			Update ko_kr.json (#1771)
+			=========
+			Build: 1.16.4-13.0.0.425 - Sat Dec 12 00:46:37 GMT 2020
+			forstride:
+			Updated some biome temperatures for Serene Seasons compatibility
+			=========
+			Build: 1.16.4-13.0.0.424 - Thu Dec 10 22:40:22 GMT 2020
+			github:
+			Update es_es.json es_mx.json es_ar.json (#1759)
+			* Update es_ar.json, es_es.json, es_mx.json
+			* Update es_es.json, es_mx.json, es_ar.json
+			Co-authored-by: Felipe Clariá <63019092+feliclaria@users.noreply.github.com>
+			Adubbz:
+			Adopted Forge's new world type system
+			=========
+			Build: 1.16.4-13.0.0.422 - Sat Nov 28 07:47:01 GMT 2020
+			github:
+			Correction of "Cherry" (#1749)
+			=========
+			Build: 1.16.4-13.0.0.421 - Sat Nov 21 12:27:53 GMT 2020
+			forstride:
+			Replaced Evoker spawns in the Ominous Woods with Illusioners
+			=========
+			Build: 1.16.4-13.0.0.420 - Tue Nov 10 07:41:35 GMT 2020
+			forstride:
+			Re-added biome dictionary tags
+			=========
+			Build: 1.16.4-13.0.0.419 - Mon Nov 09 22:56:25 GMT 2020
+			Adubbz:
+			Scale ocean climate zooming with biome size option
+			=========
+			Build: 1.16.3-12.0.0.417 - Thu Nov 05 07:55:36 GMT 2020
+			github:
+			Fixed technical biomes not being registered under our namespace
+			=========
+			Build: 1.16.3-12.0.0.416 - Sun Nov 01 11:19:05 GMT 2020
+			github:
+			Update ko_kr.json (#1730)
+			=========
+			Build: 1.16.3-12.0.0.415 - Thu Oct 29 05:15:18 GMT 2020
+			Adubbz:
+			Add back code to default to the bop worldtype
+			=========
+			Build: 1.16.3-12.0.0.414 - Thu Oct 29 04:48:38 GMT 2020
+			Adubbz:
+			Bump the required Forge version
+			=========
+			Build: 1.16.3-12.0.0.413 - Thu Oct 29 04:42:43 GMT 2020
+			Adubbz:
+			More mod compatibility fixes
+			=========
+			Build: 1.16.3-12.0.0.412 - Wed Oct 28 11:29:11 GMT 2020
+			Adubbz:
+			Attempt to fix dimension issues
+			Adubbz:
+			Fixed crashing with the latest Forge
+			=========
+			Build: 1.16.3-12.0.0.411 - Wed Oct 28 10:46:26 GMT 2020
+			forstride:
+			Configured surface builders
+			=========
+			Build: 1.16.3-12.0.0.409 - Tue Oct 13 18:31:10 GMT 2020
+			github:
+			Update ru_ru.json (#1701)
+			=========
+			Build: 1.16.3-12.0.0.408 - Mon Oct 12 10:14:38 GMT 2020
+			Adubbz:
+			Fixed a potential crash. Closes #1692
+			Adubbz:
+			Fixed server woes and (supposedly) some mod compatibility issue. Closes #1682, #1691
+			github:
+			Update it_it.json (#1695)
+			=========
+			Build: 1.16.3-12.0.0.405 - Fri Oct 09 09:56:24 GMT 2020
+			github:
+			Update es_ar.json, es_es.json, es_mx.json (#1687)
+			* Update es_ar.json, es_es.json, es_mx.json
+			* Update es_ar.json, es_es.json, es_mx.json
+			Orange sandstone, Lush desert
+			github:
+			Update es_ar.json, es_es.json, es_mx.json (#1687)
+			* Update es_ar.json, es_es.json, es_mx.json
+			* Update es_ar.json, es_es.json, es_mx.json
+			Orange sandstone, Lush desert
+			github:
+			Update it_it.json (#1695)
+			=========
+			Build: 1.16.3-12.0.0.404 - Tue Oct 06 01:01:27 GMT 2020
+			forstride:
+			* Added Lush Desert biome
+			* Added Orange Sand/Sandstone (And all matching blocks for it)
+			* Changed the Brushland into a new biome called the Dryland
+			* Renamed the Origin Hills to Origin Valley
+			* Renamed the Rainbow Valley to Rainbow Hills
+			* Removed Xeric Shrubland sub-biome
+			* Removed Oasis sub-biome
+			* Improved various textures
+			=========
+			Build: 1.16.3-12.0.0.403 - Mon Oct 05 01:12:00 GMT 2020
+			github:
+			Change climate offsetting to random instead of bitmask (#1690)
+			=========
+			Build: 1.16.3-12.0.0.402 - Sun Oct 04 22:14:35 GMT 2020
+			github:
+			Improve Origin Hills tree generation and beach generation (#1688)
+			* Trees now follow Alpha Minecraft's generation gradient
+			* Beaches use Alpha's noise generation for sand and gravel
+			=========
+			Build: 1.16.3-12.0.0.401 - Sun Oct 04 03:11:33 GMT 2020
+			forstride:
+			Removed roots (They didn't generate in 1.16.3 anyway), fixed potted sprout texture
+			=========
+			Build: 1.16.3-12.0.0.400 - Sun Sep 27 10:31:50 GMT 2020
+			github:
+			Update es_ar.json, es_es.json, es_mx.json (#1678)
+			* Update spanish
+			* Update es_ar.json, es_es.json, es_mx.json
+			=========
+			Build: 1.16.3-12.0.0.399 - Fri Sep 25 01:55:17 GMT 2020
+			forstride:
+			Re-added the Jade Cliffs. Improved the Overgrown Cliffs
+			=========
+			Build: 1.16.3-12.0.0.398 - Thu Sep 24 20:10:40 GMT 2020
+			forstride:
+			Added huge toadstools to the Woodland, fixed placing seagrass on white/black sand (Closes #1668)
+			=========
+			Build: 1.16.1-11.0.0.395 - Sat Aug 22 11:53:20 GMT 2020
+			github:
+			Update de_de.json (#1669)
+			github:
+			Update pt_br.json (#1666)
+			Changed "pau-brasil" to "sequoia"
+			Added translation for Hellbark (madeira infernal)
+			Added some missing translations
+			=========
+			Build: 1.16.1-11.0.0.393 - Fri Aug 07 04:38:15 GMT 2020
+			github:
+			Update zh_cn.json (#1662)
+			=========
+			Build: 1.16.1-11.0.0.392 - Thu Aug 06 07:50:56 GMT 2020
+			github:
+			Update it_it.json (#1660)
+			=========
+			Build: 1.16.1-11.0.0.391 - Wed Jul 29 23:33:02 GMT 2020
+			forstride:
+			Fixed some biomes using water creature entity classification instead of water ambient for fish spawns
+			=========
+			Build: 1.16.1-11.0.0.390 - Thu Jul 23 04:41:04 GMT 2020
+			github:
+			Update spanish translations (#1650)
+			=========
+			Build: 1.16.1-11.0.0.389 - Tue Jul 21 19:38:58 GMT 2020
+			forstride:
+			Added a few custom paintings
+			=========
+			Build: 1.16.1-11.0.0.388 - Tue Jul 21 03:32:42 GMT 2020
+			Adubbz:
+			Fixed server seed inconsistency. Closes #1644
+			=========
+			Build: 1.16.1-11.0.0.387 - Sun Jul 19 07:38:07 GMT 2020
+			github:
+			Update ru_ru.json (#1643)
+			=========
+			Build: 1.16.1-11.0.0.386 - Sat Jul 18 17:31:09 GMT 2020
+			forstride:
+			Added black sand/sandstone, changed the Volcano Edge biome into Volcanic Plains
+			=========
+			Build: 1.16.1-11.0.0.385 - Fri Jul 17 17:17:02 GMT 2020
+			forstride:
+			Tweaked the Bog, Grassland, and Tundra biomes
+			=========
+			Build: 1.16.1-11.0.0.384 - Fri Jul 17 17:15:22 GMT 2020
+			github:
+			Update spanish translations (#1642)
+			=========
+			Build: 1.16.1-11.0.0.383 - Fri Jul 17 13:46:41 GMT 2020
+			forstride:
+			Changed the Ghost Forest to a snowy biome called the Muskeg
+			(Be sure to delete your existing configs and use a new world, or you will likely run into issues!)
+			=========
+			Build: 1.16.1-11.0.0.382 - Thu Jul 16 13:18:18 GMT 2020
+			forstride:
+			Improvements to the Tropics and Grassland biomes
+			=========
+			Build: 1.16.1-11.0.0.381 - Wed Jul 15 17:20:57 GMT 2020
+			github:
+			Italian localization (#1640)
+			=========
+			Build: 1.16.1-11.0.0.380 - Wed Jul 15 02:04:35 GMT 2020
+			Adubbz:
+			Added an option to disable bop nether generation
+			=========
+			Build: 1.16.1-11.0.0.379 - Tue Jul 14 10:19:22 GMT 2020
+			Adubbz:
+			Fixed world type resetting to Biomes O' Plenty after customizing a Vanilla worldtype
+			=========
+			Build: 1.16.1-11.0.0.378 - Tue Jul 14 10:05:52 GMT 2020
+			github:
+			Update spanish translations (#1639)
+			=========
+			Build: 1.16.1-11.0.0.377 - Mon Jul 13 21:42:37 GMT 2020
+			forstride:
+			Added sign textures for if/when we add them
+			=========
+			Build: 1.16.1-11.0.0.376 - Mon Jul 13 15:50:07 GMT 2020
+			forstride:
+			Made the Origin Hills sand/gravel generation slightly more authentic to Alpha, removed the Origin Beach (No longer needed)
+			=========
+			Build: 1.16.1-11.0.0.375 - Mon Jul 13 00:49:11 GMT 2020
+			Adubbz:
+			Mark 1.16 builds as beta
+			=========
+			Build: 1.16.1-11.0.0.374 - Mon Jul 13 00:40:11 GMT 2020
+			forstride:
+			Removed water/lava ponds from the Origin Hills
+			=========
+			Build: 1.16.1-11.0.0.373 - Sun Jul 12 12:46:30 GMT 2020
+			forstride:
+			Re-added Origin Grass Blocks for the Origin Hills
+			=========
+			Build: 1.16.1-11.0.0.372 - Sat Jul 11 23:29:35 GMT 2020
+			github:
+			Update spanish translations (#1638)
+			=========
+			Build: 1.16.1-11.0.0.371 - Fri Jul 10 18:51:45 GMT 2020
+			forstride:
+			Renamed Undergarden to "Undergrowth" and Shadowlands to "Withered Abyss"
+			=========
+			Build: 1.16.1-11.0.0.370 - Fri Jul 10 13:33:30 GMT 2020
+			Adubbz:
+			Update issue template versions
+			=========
+			Build: 1.16.1-11.0.0.369 - Fri Jul 10 13:31:06 GMT 2020
+			Adubbz:
+			Fixed GuiEventHandler causing issues on servers
+			=========
+			Build: 1.16.1-11.0.0.368 - Fri Jul 10 11:01:15 GMT 2020
+			forstride:
+			Fixed supported plant types for Dried Salt blocks
+			=========
+			Build: 1.15.2-10.0.0.365 - Mon Jun 01 03:45:20 GMT 2020
+			github:
+			Edited spanish translations (#1621)
+			=========
+			Build: 1.15.2-10.0.0.364 - Fri May 29 00:21:57 GMT 2020
+			forstride:
+			Tweaked Dune Grass and Wanderer Music Disc textures
+			=========
+			Build: 1.15.2-10.0.0.363 - Thu May 21 07:49:48 GMT 2020
+			github:
+			Attempt to bump required Forge version
+			=========
+			Build: 1.15.2-10.0.0.362 - Mon May 18 22:38:48 GMT 2020
+			forstride:
+			Added stripped wood recipes (Closes #1612)
+			=========
+			Build: 1.15.2-10.0.0.361 - Sat May 16 08:15:55 GMT 2020
+			github:
+			Forge 31.2.0 fixes (#1605)
+			* Changed environment for testing in eclipse
+			* Fixes issue for Forge 31.2.0
+			Changes the way SoundEvents are constructed as to no longer use depreciated call to super in 31.2.0
+			* Remove generated files
+			Some things got past BiomeOPlenty's .gitignore, simply removing them before submitting a PR
+			* Cleanup
+			Should resolve style issues in PR
+			Co-authored-by: D Melton <55304913+DMelton1221@users.noreply.github.com>
+			=========
+			Build: 1.15.2-10.0.0.360 - Fri May 15 02:32:14 GMT 2020
+			github:
+			Bump forge version
+			=========
+			Build: 1.15.2-10.0.0.359 - Thu May 14 19:14:38 GMT 2020
+			github:
+			Updated spanish translations (#1599)
+			=========
+			Build: 1.15.2-10.0.0.358 - Mon May 04 13:04:06 GMT 2020
+			forstride:
+			Added block.properties for shader support (Doesn't seem to be working though? OptiFine might not have re-added support yet)
+			=========
+			Build: 1.15.2-10.0.0.357 - Fri May 01 13:54:34 GMT 2020
+			github:
+			Remove this too
+			=========
+			Build: 1.15.2-10.0.0.356 - Fri May 01 13:51:14 GMT 2020
+			github:
+			Remove legacy server.properties workaround
+			=========
+			Build: 1.15.2-10.0.0.355 - Tue Apr 21 11:27:07 GMT 2020
+			github:
+			refactor biome layers to match vanilla's new 1.15 system (#1571)
+			=========
+			Build: 1.15.2-10.0.0.354 - Tue Apr 21 11:23:46 GMT 2020
+			github:
+			fix infinite loop in BushTreeFeature (#1589)
+			github:
+			fix infinite loop in BushTreeFeature (#1589)
+			github:
+			refactor biome layers to match vanilla's new 1.15 system (#1571)
+			=========
+			Build: 1.15.2-10.0.0.353 - Wed Mar 25 10:00:51 GMT 2020
+			github:
+			Update zh_cn.json (#1570)
+			* Update zh_cn.json
+			Hey, I fixed the error and completed some translations,
+			Can you merge it? Thank you in advance!
+			* Update zh_cn.json
+			=========
+			Build: 1.15.2-10.0.0.352 - Sun Mar 22 08:07:29 GMT 2020
+			github:
+			Correct inconsistent tabs/spaces
+			=========
+			Build: 1.15.2-10.0.0.351 - Sun Mar 15 00:48:40 GMT 2020
+			Adubbz:
+			Fix ModFeatures indentation
+			=========
+			Build: 1.15.2-10.0.0.350 - Sun Mar 15 00:13:35 GMT 2020
+			alexthepokemon:
+			Register all BoP features now into Forge's feature Registry
+			=========
+			Build: 1.15.2-10.0.0.349 - Sat Mar 07 15:15:11 GMT 2020
+			forstride:
+			Renamed Pink/White Cherry and Jacaranda Leaves to "Blossoms"
+			=========
+			Build: 1.15.2-10.0.0.348 - Fri Mar 06 00:55:32 GMT 2020
+			github:
+			Update ru_ru.json (root, tall wheat)
+			=========
+			Build: 1.15.2-10.0.0.347 - Tue Mar 03 13:20:16 GMT 2020
+			forstride:
+			Re-added roots
+			forstride:
+			Removed passive mobs from the Dead Forest, changed biome dictionary tags for the Origin Hills/Orchard
+			=========
+			Build: 1.15.2-10.0.0.345 - Sun Feb 23 00:05:04 GMT 2020
+			forstride:
+			Fixed the Snowy Taiga not generating
+			=========
+			Build: 1.15.2-10.0.0.344 - Sat Feb 22 19:25:17 GMT 2020
+			forstride:
+			Added OnlyIn client annotation for GUI Event Handler (Closes #1561)
+			=========
+			Build: 1.15.2-10.0.0.343 - Sat Feb 22 11:57:33 GMT 2020
+			Adubbz:
+			Attempt to fix bad maven universal artifact
+			=========
+			Build: 1.15.2-10.0.0.342 - Sat Feb 22 10:56:13 GMT 2020
+			Adubbz:
+			Added various config options
+			=========
+			Build: 1.15.2-10.0.0.341 - Sat Feb 22 09:33:02 GMT 2020
+			Adubbz:
+			Make the orchard a technical biome
+			=========
+			Build: 1.15.2-10.0.0.340 - Sat Feb 22 09:02:32 GMT 2020
+			Adubbz:
+			Technical biomes can now be disabled. Fixed potential crashes when disabling certain biomes
+			=========
+			Build: 1.15.2-10.0.0.339 - Sat Feb 22 07:33:32 GMT 2020
+			Adubbz:
+			Island biomes can now be disabled
+			=========
+			Build: 1.15.2-10.0.0.338 - Thu Feb 20 05:22:36 GMT 2020
+			forstride:
+			Tweaked tall wheat texture and Prairie grass/foliage color
+			=========
+			Build: 1.15.2-10.0.0.337 - Wed Feb 19 19:45:37 GMT 2020
+			forstride:
+			Changed barley to tall wheat and made tweaks to the Pasture biome
+			=========
+			Build: 1.15.2-10.0.0.336 - Wed Feb 19 14:01:45 GMT 2020
+			forstride:
+			Improved mahogany leaf texture
+			=========
+			Build: 1.15.2-10.0.0.335 - Wed Feb 19 05:56:24 GMT 2020
+			forstride:
+			Fixed "CliamteLayer" typo
+			=========
+			Build: 1.15.2-10.0.0.334 - Tue Feb 18 13:46:47 GMT 2020
+			forstride:
+			Fixed edge biome crash, set fallback biome for empty climates to ocean
+			=========
+			Build: 1.15.2-10.0.0.333 - Tue Feb 18 13:29:17 GMT 2020
+			forstride:
+			Tweaks to the Bog, Mangrove, and Tundra
+			=========
+			Build: 1.15.2-10.0.0.332 - Tue Feb 18 12:21:27 GMT 2020
+			forstride:
+			Removed Glowstone Grotto nether biome (NOTE: CONFIGS NEED TO BE DELETED OR YOUR GAME WILL CRASH ON LOAD!)
+			=========
+			Build: 1.15.2-10.0.0.331 - Tue Feb 18 11:58:37 GMT 2020
+			Adubbz:
+			Vanilla biome weights are now configurable
+			=========
+			Build: 1.15.2-10.0.0.330 - Tue Feb 18 06:44:11 GMT 2020
+			forstride:
+			Added more tall grass to the Lush Grassland, made the Floodplains flatter
+			=========
+			Build: 1.15.2-10.0.0.329 - Mon Feb 17 13:22:20 GMT 2020
+			forstride:
+			Changed the Rainforest back to a subtropical biome
+			NOTE: This will affect existing worlds and cause chunk borders! Additionally, please delete old configs before creating a new world!
+			=========
+			Build: 1.15.2-10.0.0.328 - Sun Feb 16 09:48:27 GMT 2020
+			Adubbz:
+			Fixed structure generation. Closes #1531
+			=========
+			Build: 1.15.2-10.0.0.327 - Sun Feb 16 06:40:42 GMT 2020
+			github:
+			Update ko_kr.json (#1553)
+			* Update ko_kr.json
+			* Update ko_kr.json
+			github:
+			Update ru_ru.json (#1548)
+			dried salt
+			dead branch
+			=========
+			Build: 1.15.2-10.0.0.326 - Fri Feb 14 06:51:39 GMT 2020
+			forstride:
+			Reduced the amount of brown mushrooms in the Mire. Removed ponds from the Prairie
+			=========
+			Build: 1.15.2-10.0.0.325 - Fri Feb 14 05:17:54 GMT 2020
+			forstride:
+			* Added Snow Golem spawns to the Alps
+			* Added Evoker spawns to the Ominous Woods
+			* Added Stray spawns to the Wasteland
+			* Removed witch huts from the Bog, Ghost Forest, and Marsh
+			=========
+			Build: 1.15.2-10.0.0.324 - Fri Feb 14 02:19:04 GMT 2020
+			Adubbz:
+			Sort biome weights json alphabetically
+			=========
+			Build: 1.15.2-10.0.0.323 - Fri Feb 14 00:03:04 GMT 2020
+			Adubbz:
+			Simplified standard biome weights config
+			=========
+			Build: 1.15.2-10.0.0.322 - Thu Feb 13 18:05:28 GMT 2020
+			github:
+			Update ru_ru.json (Fungal Jungle) (#1546)
+			forstride:
+			Removed bee nests from the Prairie and Tropical Rainforest
+			=========
+			Build: 1.15.2-10.0.0.320 - Thu Feb 13 06:36:52 GMT 2020
+			forstride:
+			Allowed TNT to be crafted with white sand, and rabbit stew to be crafted with toadstools. Updated block/item tags
+			=========
+			Build: 1.15.2-10.0.0.319 - Thu Feb 13 05:38:42 GMT 2020
+			forstride:
+			Updated biome dictionary tags
+			=========
+			Build: 1.15.2-10.0.0.318 - Wed Feb 12 13:35:31 GMT 2020
+			forstride:
+			* Added Fungal Jungle overworld biome
+			* Added Huge Glowshrooms and Huge Toadstools
+			* Removed Fungi Forest Nether biome
+			* Re-added hostile mobs to the Tropics/White Beach biomes
+			* Cleaned up vanilla biome climate registration
+			=========
+			Build: 1.15.2-10.0.0.317 - Tue Feb 11 10:04:50 GMT 2020
+			Adubbz:
+			Prefix modid in weights config for standard biomes, fallback on Ocean for empty climates
+			=========
+			Build: 1.15.2-10.0.0.316 - Tue Feb 11 08:33:14 GMT 2020
+			Adubbz:
+			Preliminary biome weight config file implementation
+			=========
+			Build: 1.15.2-10.0.0.315 - Tue Feb 11 07:13:34 GMT 2020
+			Adubbz:
+			Refactored biome registration
+			=========
+			Build: 1.15.2-10.0.0.314 - Tue Feb 11 06:13:14 GMT 2020
+			github:
+			Create ko_kr.json (#1545)
+			=========
+			Build: 1.15.2-10.0.0.313 - Mon Feb 10 05:37:39 GMT 2020
+			forstride:
+			Fixed the Wooded Badlands Plateau not generating
+			=========
+			Build: 1.15.2-10.0.0.312 - Mon Feb 10 01:02:14 GMT 2020
+			forstride:
+			Adjusted lush swamp/rainforest temperatures to be in line with other tropical biomes
+			=========
+			Build: 1.15.2-10.0.0.311 - Sun Feb 09 11:39:52 GMT 2020
+			forstride:
+			Tweaked the grass color of the Origin Hills
+			=========
+			Build: 1.15.2-10.0.0.310 - Sun Feb 09 06:20:27 GMT 2020
+			forstride:
+			Added branches for dead trees
+			=========
+			Build: 1.15.2-10.0.0.309 - Sat Feb 08 13:53:55 GMT 2020
+			forstride:
+			Renamed Dried Sand to Dried Salt, tweaks to the Wasteland biome
+			=========
+			Build: 1.15.2-10.0.0.308 - Fri Feb 07 05:23:30 GMT 2020
+			forstride:
+			Improvements to the Ghost Forest and Mire
+			=========
+			Build: 1.15.2-10.0.0.307 - Fri Feb 07 04:00:20 GMT 2020
+			forstride:
+			Added better edge casing for swamp <-> jungle biomes, minor biome tweaks
+			=========
+			Build: 1.15.2-10.0.0.306 - Fri Feb 07 02:22:50 GMT 2020
+			forstride:
+			Changed Origin Leaves/Sapling texture, minor biome tweaks
+			=========
+			Build: 1.15.2-10.0.0.305 - Thu Feb 06 13:13:49 GMT 2020
+			forstride:
+			Updated door/trapdoor textures
+			=========
+			Build: 1.15.2-10.0.0.304 - Thu Feb 06 08:46:31 GMT 2020
+			github:
+			Update ru_ru.json (Ghost forest)
+			=========
+			Build: 1.15.2-10.0.0.303 - Thu Feb 06 05:44:31 GMT 2020
+			forstride:
+			Added Ghost Forest biome, moved Rainforest biome from Subtropical to Tropical climate, improvements to Mire biome
+			=========
+			Build: 1.15.2-10.0.0.302 - Mon Feb 03 12:05:32 GMT 2020
+			github:
+			Update zh_tw.json
+			* Translated Sprout & Toadstool
+			=========
+			Build: 1.15.2-10.0.0.301 - Mon Feb 03 03:10:26 GMT 2020
+			github:
+			Create zh_tw.json (#1539)
+			Here comes the translations of Traditional Chinese. Based on the Simplified, but I really reedited it "from head to toe."
+			It took me so much time to finish removing texts and resorting.
+			Highlights:
+			* Localized for Traditional Chinese
+			* Updated all of the strings, e.g. Removing the things that no longer exist, Adding the new things released, Resorting the strings according to en_us.
+			PS, The strings of Biome is untranlated for now as I'm exhausted and I have no idea where it would show. Anyway, those who want to translate it completely don't need to worry about that, like aforementioned, I've resorted all of the strings, just go translating!
+			Any sugesstion/correction would be appreciated.
+			=========
+			Build: 1.15.2-10.0.0.300 - Mon Jan 27 21:58:08 GMT 2020
+			forstride:
+			Removed lava lakes from the Poppy Field
+			=========
+			Build: 1.15.2-10.0.0.299 - Sat Jan 25 01:30:54 GMT 2020
+			github:
+			Added Poppy Field biome
+			=========
+			Build: 1.15.2-10.0.0.298 - Fri Jan 24 13:41:01 GMT 2020
+			Adubbz:
+			Updated to Minecraft 1.15.2
+			=========
+			Build: 1.15.1-10.0.0.297 - Fri Jan 24 03:24:40 GMT 2020
+			Adubbz:
+			Do biome dictionary and villager type registration earlier. Closes #1529
+			forstride:
+			Added Poppy Field biome
+			forstride:
+			Tweaks to Poppy Field rarity/mob spawns
+			forstride:
+			update ru_ru.json (poppy field) (#1534)
+			=========
+			Build: 1.15.1-10.0.0.296 - Mon Jan 06 19:36:08 GMT 2020
+			forstride:
+			Tweaks to the Mystic Grove
+			=========
+			Build: 1.15.1-10.0.0.295 - Mon Jan 06 14:11:52 GMT 2020
+			Adubbz:
+			Update ru_ru.json (#1527)
+			=========
+			Build: 1.15.1-10.0.0.294 - Fri Jan 03 04:35:34 GMT 2020
+			Adubbz:
+			Dutch Localization (#1525)
+			=========
+			Build: 1.15.1-10.0.0.293 - Thu Jan 02 08:08:22 GMT 2020
+			forstride:
+			Added villager types for remaining biomes
+			=========
+			Build: 1.15.1-10.0.0.292 - Thu Jan 02 01:08:11 GMT 2020
+			forstride:
+			Minor biome tweaks
+			=========
+			Build: 1.15.1-10.0.0.291 - Wed Jan 01 08:46:25 GMT 2020
+			Adubbz:
+			Fixed villager types. Closes #1519
+			=========
+			Build: 1.15.1-10.0.0.290 - Wed Jan 01 08:22:34 GMT 2020
+			Adubbz:
+			Fixed nether fortress generation. Closes #1523
+			=========
+			Build: 1.15.1-10.0.0.289 - Wed Jan 01 06:16:09 GMT 2020
+			Adubbz:
+			Fix huge mushroom generation in BOP biomes. Note that this is still broken in Vanilla biomes due to a Forge bug. The Forge bug is present with or without BOP installed.
+			=========
+			Build: 1.15.1-10.0.0.288 - Tue Dec 31 22:55:54 GMT 2019
+			Adubbz:
+			Fixed recursion crash in some generation features
+			Adubbz:
+			Mappings overhaul
+			=========
+			Build: 1.15.1-10.0.0.286 - Tue Dec 31 07:29:37 GMT 2019
+			Adubbz:
+			Fix merge conflicts
+			=========
+			Build: 1.15.1-10.0.0.285 - Mon Dec 30 17:39:41 GMT 2019
+			forstride:
+			Gave Rainbow Leaf coloration a wavy pattern
+			=========
+			Build: 1.15.1-10.0.0.284 - Mon Dec 30 08:06:15 GMT 2019
+			forstride:
+			Added bees to the Rainbow Valley
+			=========
+			Build: 1.15.1-10.0.0.283 - Mon Dec 30 04:20:29 GMT 2019
+			forstride:
+			Added Rainbow Birch trees and Rainbow Valley island biome
+			=========
+			Build: 1.15.1-10.0.0.282 - Mon Dec 30 01:47:44 GMT 2019
+			forstride:
+			Replaced the Jacaranda leaves in the Highland Moor with Violets
+			forstride:
+			Fixed big oak trees not generating
+			=========
+			Build: 1.15.1-10.0.0.280 - Sat Dec 28 10:13:20 GMT 2019
+			Adubbz:
+			Updated issue templates for 1.15
+			=========
+			Build: 1.15.1-10.0.0.279 - Sat Dec 28 10:09:35 GMT 2019
+			Adubbz:
+			Update ru_ru.json (#1520)
+			Removed End biome stuff
+			=========
+			Build: 1.15.1-10.0.0.278 - Sat Dec 28 01:38:55 GMT 2019
+			Adubbz:
+			Fixed boats. Closes #1518
+			=========
+			Build: 1.15.1-10.0.0.277 - Sat Dec 28 01:05:25 GMT 2019
+			Adubbz:
+			Water plants still suck
+			=========
+			Build: 1.15.1-10.0.0.276 - Fri Dec 27 23:51:09 GMT 2019
+			Adubbz:
+			Fix water plants 2: Electric boogaloo. Closes #1516
+			=========
+			Build: 1.15.1-10.0.0.275 - Fri Dec 27 22:48:29 GMT 2019
+			Adubbz:
+			Mark doors and trapdoors as noOcclusion. Closes #1517
+			=========
+			Build: 1.15.1-10.0.0.274 - Fri Dec 27 15:43:39 GMT 2019
+			forstride:
+			Removed squid spawns from normal biomes
+			=========
+			Build: 1.15.1-10.0.0.273 - Fri Dec 27 14:10:39 GMT 2019
+			forstride:
+			Added bees to various biomes
+			=========
+			Build: 1.15.1-10.0.0.272 - Fri Dec 27 07:40:18 GMT 2019
+			Adubbz:
+			Fixed water plant generation
+			=========
+			Build: 1.15.1-10.0.0.271 - Fri Dec 27 06:55:23 GMT 2019
+			Adubbz:
+			Fixed trees growing from saplings
+			=========
+			Build: 1.15.1-10.0.0.270 - Thu Dec 26 22:27:52 GMT 2019
+			Adubbz:
+			Fixed tpbiome comman
+			=========
+			Build: 1.15.1-10.0.0.269 - Thu Dec 26 17:56:47 GMT 2019
+			forstride:
+			Lowered lilypad spawn frequency
+			=========
+			Build: 1.15.1-10.0.0.268 - Thu Dec 26 09:59:05 GMT 2019
+			Adubbz:
+			Fixed overworld biomes generating in the nether
+			=========
+			Build: 1.15.1-10.0.0.267 - Thu Dec 26 09:47:45 GMT 2019
+			Adubbz:
+			Change biomes to use Mojang's builder model
+			=========
+			Build: 1.15.1-10.0.0.266 - Thu Dec 26 08:53:16 GMT 2019
+			Adubbz:
+			Fixed leaves occlusion
+			Adubbz:
+			Update curse gradle
+			Adubbz:
+			Mappings updates
+			=========
+			Build: 1.15.1-10.0.0.264 - Thu Dec 26 07:14:46 GMT 2019
+			forstride:
+			Fixed block rendering types
+			=========
+			Build: 1.14.4-9.0.0.262 - Sat Dec 21 12:11:31 GMT 2019
+			Adubbz:
+			Updated for latest MCP mappings
+			=========
+			Build: 1.14.4-9.0.0.261 - Sat Dec 14 10:44:47 GMT 2019
+			Adubbz:
+			Fixed compile error
+			Adubbz:
+			Optimized tpbiome command by using ExecutorService (#1504)
+			=========
+			Build: 1.14.4-9.0.0.259 - Mon Dec 02 12:22:20 GMT 2019
+			github:
+			Update ru_ru.json
+			Added a missing strings and fix other cosmetic things.
+			github:
+			Update ru_ru.json
+			Added a missing strings and fix other cosmetic things.
+			=========
+			Build: 1.14.4-9.0.0.258 - Thu Nov 21 23:55:56 GMT 2019
+			github:
+			Create ru_ru.json
+			=========
+			Build: 1.14.4-9.0.0.257 - Sun Nov 10 08:22:58 GMT 2019
+			github:
+			Create es_ar.json
+			Argentina Spanish Lang File
+			=========
+			Build: 1.14.4-9.0.0.256 - Sun Nov 10 08:20:22 GMT 2019
+			github:
+			es_es Lang File
+			Europe Spanish Lang File
+			github:
+			Create es_mx.json
+			And the méxico spanish lang file
+			github:
+			es_es Lang File
+			Europe Spanish Lang File
+			github:
+			Create es_ar.json
+			Argentina Spanish Lang File
+			github:
+			Create es_mx.json
+			And the méxico spanish lang file
+			=========
+			Build: 1.14.4-9.0.0.255 - Tue Oct 22 17:40:50 GMT 2019
+			github:
+			Updated Discord link in README.md
+			=========
+			Build: 1.14.4-9.0.0.254 - Fri Oct 04 09:46:53 GMT 2019
+			Adubbz:
+			Update to Forge RB, update MCP mappings
+			=========
+			Build: 1.14.4-9.0.0.253 - Sun Sep 15 10:21:56 GMT 2019
+			github:
+			update german translation to match vanilla names
+			=========
+			Build: 1.14.4-9.0.0.252 - Fri Sep 06 21:36:42 GMT 2019
+			forstride:
+			Fixed mangrove root/reed/watergrass loot tables
+			=========
+			Build: 1.14.4-9.0.0.251 - Sun Sep 01 19:15:23 GMT 2019
+			forstride:
+			Changed reeds, watergrass, and mangrove roots into proper double tall
+			blocks. NOTE: This will cause issues in existing worlds! Update at
+			your own risk!
+			=========
+			Build: 1.14.4-9.0.0.250 - Fri Aug 30 11:42:59 GMT 2019
+			forstride:
+			Removed witch huts from the Mangrove and Highland Moor
+			=========
+			Build: 1.14.4-9.0.0.249 - Fri Aug 30 01:32:47 GMT 2019
+			github:
+			Create de_de.json
+			add german translation
+			=========
+			Build: 1.14.4-9.0.0.248 - Wed Aug 28 11:31:10 GMT 2019
+			forstride:
+			Optimized class imports
+			=========
+			Build: 1.14.4-9.0.0.247 - Tue Aug 27 18:07:09 GMT 2019
+			forstride:
+			Changed blue hydrangeas and goldenrods into tall flowers (NOTE: This may
+			cause issues in existing worlds! Update at your own risk!)
+			=========
+			Build: 1.14.4-9.0.0.246 - Sun Aug 25 09:16:30 GMT 2019
+			forstride:
+			Made poplar tree generation look slightly more natural
+			=========
+			Build: 1.14.4-9.0.0.245 - Sat Aug 24 12:11:53 GMT 2019
+			forstride:
+			Fixed big trees not generating alternate leaves
+			=========
+			Build: 1.14.4-9.0.0.244 - Sat Aug 24 10:49:38 GMT 2019
+			forstride:
+			Added a deeper middle block layer for the Alps and Volcano biomes, fixed
+			big trees not growing on non-soil blocks, fixed ash/mud/flesh blocks not
+			having proper shading (At the expense of not sinking into the blocks)
+			=========
+			Build: 1.14.4-9.0.0.243 - Sat Aug 24 08:28:23 GMT 2019
+			forstride:
+			Prevented non-opped players from using the tpbiome command (Closes
+			#1459)
+			=========
+			Build: 1.14.4-9.0.0.242 - Fri Aug 23 22:34:07 GMT 2019
+			forstride:
+			Changed texture folder names to match vanilla (NOTE: This will break
+			existing texture packs with BOP support!)
+			=========
+			Build: 1.14.4-9.0.0.241 - Fri Aug 23 17:17:27 GMT 2019
+			forstride:
+			Fixed sparse trees not being sparse, and huge trees in the Mystic Grove
+			being too huge
+			=========
+			Build: 1.14.4-9.0.0.240 - Fri Aug 23 12:09:26 GMT 2019
+			Adubbz:
+			General system stability improvements to enhance the user's experience.
+			Closes #1439
+			=========
+			Build: 1.14.4-9.0.0.239 - Fri Aug 23 11:02:56 GMT 2019
+			Adubbz:
+			Fixed rare biome generation. Closes #1438
+			=========
+			Build: 1.14.4-9.0.0.238 - Fri Aug 23 06:24:01 GMT 2019
+			forstride:
+			Fixed trees not growing around ground foliage (Closes #1461)
+			=========
+			Build: 1.14.4-9.0.0.237 - Fri Aug 23 05:30:26 GMT 2019
+			forstride:
+			Added missing smooth white sandstone recipe
+			=========
+			Build: 1.14.4-9.0.0.236 - Wed Aug 21 13:21:37 GMT 2019
+			forstride:
+			Updated Forge to 28.0.55, improved mod logo
+			=========
+			Build: 1.14.4-9.0.0.235 - Wed Aug 21 09:06:42 GMT 2019
+			forstride:
+			Added Jacaranda trees to the vanilla Flower Forest, added big Jacaranda
+			tree variant to Lavender Field/sapling
+			forstride:
+			Changed order that blocks are registered for cleaner creative menu
+			forstride:
+			Fixed Ethereal wood map colors
+			forstride:
+			Tweaked various biome weights (WARNING: This update will cause abrupt
+			chunk borders in existing worlds! Update at your own risk!)
+			=========
+			Build: 1.14.4-9.0.0.231 - Tue Aug 13 04:13:20 GMT 2019
+			forstride:
+			Removed Lily of the Valley from the Prairie
+			=========
+			Build: 1.14.4-9.0.0.230 - Tue Aug 13 02:32:46 GMT 2019
+			forstride:
+			Lowered the amount of trees in the Snowy Coniferous Forest/Snowy Forest,
+			tweaked how Orchards generate within Plains to better match vanilla
+			=========
+			Build: 1.14.4-9.0.0.229 - Sun Aug 11 15:03:11 GMT 2019
+			forstride:
+			Added Fir/Snowy Fir Clearing and Temperate Rainforest Hills sub-biomes,
+			renamed Moor to Highland Moor, made a separate climate for the
+			Wasteland, allowed Deep Warm Ocean to generate within Warm Oceans (NOTE:
+			This update will cause abrupt chunk borders in existing worlds! Update
+			at your own risk!)
+			=========
+			Build: 1.14.4-9.0.0.228 - Sun Aug 11 09:16:06 GMT 2019
+			forstride:
+			Use white sand instead of normal sand for sediment in the Mystic Grove
+			=========
+			Build: 1.14.4-9.0.0.227 - Sun Aug 11 09:05:16 GMT 2019
+			forstride:
+			Tweaked cypress tree generation
+			=========
+			Build: 1.14.4-9.0.0.226 - Sun Aug 11 06:43:36 GMT 2019
+			forstride:
+			Added large versions of the yellow/orange autumn and maple trees
+			=========
+			Build: 1.14.4-9.0.0.225 - Sun Aug 11 03:47:55 GMT 2019
+			forstride:
+			Lush Swamp should be in Subtropical climate, not Wet Temperate.
+			Adjusted Mangrove and Bayou weights (NOTE: This update will cause abrupt
+			chunk borders in existing worlds! Update at your own risk!)
+			=========
+			Build: 1.14.4-9.0.0.224 - Sun Aug 11 03:31:25 GMT 2019
+			forstride:
+			Removed Dry Plains biome, moved Lush Swamp back to the Wet Temperate
+			climate, renamed Glowstone Cavern to Glowstone Grotto (NOTE: This update
+			will cause abrupt chunk borders in existing worlds! Update at your own
+			risk!)
+			=========
+			Build: 1.14.4-9.0.0.223 - Sun Aug 11 02:16:45 GMT 2019
+			forstride:
+			Updated BOP icon, fixed Origin Hills underwater fog color
+			=========
+			Build: 1.14.4-9.0.0.222 - Sat Aug 10 12:19:34 GMT 2019
+			forstride:
+			Improved poplar tree generation
+			=========
+			Build: 1.14.4-9.0.0.221 - Sat Aug 10 10:21:39 GMT 2019
+			forstride:
+			Changed default Wet Temperate climate temperature to Cool
+			=========
+			Build: 1.14.4-9.0.0.220 - Sat Aug 10 10:16:13 GMT 2019
+			Adubbz:
+			Don't convert biomes already registered to a climate via our api
+			=========
+			Build: 1.14.4-9.0.0.219 - Sat Aug 10 09:42:48 GMT 2019
+			Adubbz:
+			Fixed mod version. Closes #1422
+			=========
+			Build: 1.14.4-9.0.0.218 - Sat Aug 10 09:17:18 GMT 2019
+			Adubbz:
+			Copy modded biomes to our worldtype. Closes #1428
+			=========
+			Build: 1.14.4-9.0.0.217 - Sat Aug 10 08:28:04 GMT 2019
+			m.pietquin:
+			fix #1446 & add dispenser behavior for bop boats
+			=========
+			Build: 1.14.4-9.0.0.216 - Sat Aug 10 08:11:23 GMT 2019
+			forstride:
+			Improved Cherry Log textures
+			=========
+			Build: 1.14.4-9.0.0.215 - Sat Aug 10 06:17:28 GMT 2019
+			Adubbz:
+			Put config loading back in construction. Closes #1447
+			=========
+			Build: 1.14.4-9.0.0.214 - Sat Aug 10 05:30:03 GMT 2019
+			forstride:
+			Improved the Bayou biome, allowed all BOP biomes to be spawned in
+			=========
+			Build: 1.14.4-9.0.0.213 - Sat Aug 10 03:36:13 GMT 2019
+			Adubbz:
+			Perform registration during the registration events. Closes #1444
+			=========
+			Build: 1.14.4-9.0.0.212 - Sat Aug 10 02:52:03 GMT 2019
+			Adubbz:
+			Updated to Forge 28.0.45... It works fine?
+			=========
+			Build: 1.14.4-9.0.0.211 - Tue Aug 06 20:33:00 GMT 2019
+			forstride:
+			Fixed a potential crash caused by big oak trees, tweaked a few textures
+			=========
+			Build: 1.14.4-9.0.0.210 - Tue Aug 06 15:40:45 GMT 2019
+			github:
+			Update pl_pl.json
+			Poprawiono niektóre nazwy, by były bardziej spójne z vanilla Minecraft
+			=========
+			Build: 1.14.4-9.0.0.209 - Tue Aug 06 15:14:45 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.14.4-9.0.0.208 - Tue Aug 06 03:50:19 GMT 2019
+			forstride:
+			Tweaked mud generation in Mangroves
+			=========
+			Build: 1.14.4-9.0.0.207 - Tue Aug 06 03:32:09 GMT 2019
+			forstride:
+			Changed beach biomes for vanilla biomes, added the Mangrove as a beach
+			biome for tropical biomes, moved the Lush Swamp to the Warm Temperate
+			climate (NOTE: This can cause abrupt chunk borders in existing worlds!
+			Update at your own risk!)
+			forstride:
+			Added BOP features to various vanilla biomes (NOTE: This will also
+			affect the Default world type. Load existing vanilla worlds at your own
+			risk!)
+			=========
+			Build: 1.14.4-9.0.0.205 - Mon Aug 05 09:10:57 GMT 2019
+			forstride:
+			Allowed Sprouts to be placed in Flower Pots, made Toadstools more common
+			=========
+			Build: 1.14.4-9.0.0.204 - Mon Aug 05 05:37:57 GMT 2019
+			forstride:
+			Work on End biomes
+			=========
+			Build: 1.14.4-9.0.0.203 - Mon Aug 05 03:51:27 GMT 2019
+			forstride:
+			Removed Poison Puffs
+			=========
+			Build: 1.14.4-9.0.0.202 - Mon Aug 05 03:34:22 GMT 2019
+			forstride:
+			"Fixed" Flowering Oak leaf model in Fast graphics
+			=========
+			Build: 1.14.4-9.0.0.201 - Sun Aug 04 12:54:00 GMT 2019
+			forstride:
+			Finished up Nether biomes, which now generate
+			=========
+			Build: 1.14.4-9.0.0.200 - Sun Aug 04 12:04:55 GMT 2019
+			Adubbz:
+			Added support for Nether biomes
+			=========
+			Build: 1.14.4-9.0.0.199 - Sun Aug 04 08:39:30 GMT 2019
+			forstride:
+			More work on Nether biomes
+			=========
+			Build: 1.14.4-9.0.0.198 - Sun Aug 04 04:26:55 GMT 2019
+			forstride:
+			More work on Nether biomes, tweaks to the Tundra and Bog biomes
+			=========
+			Build: 1.14.4-9.0.0.197 - Sat Aug 03 06:46:12 GMT 2019
+			forstride:
+			Changed Nether Sprouts into regular Sprouts and allowed them to grow on
+			any block with a solid top
+			=========
+			Build: 1.14.4-9.0.0.196 - Thu Aug 01 00:08:36 GMT 2019
+			forstride:
+			Started working on Nether biomes/End biomes (Currently not available),
+			fixed Polish localization file name (Closes #1432)
+			=========
+			Build: 1.14.4-9.0.0.195 - Tue Jul 30 01:10:47 GMT 2019
+			m.pietquin:
+			bop boats now extends BoatEntity
+			=========
+			Build: 1.14.4-9.0.0.194 - Mon Jul 29 18:08:00 GMT 2019
+			m.pietquin:
+			fix boat inputs allowing to move
+			and also removes the import in the api
+			m.pietquin:
+			adapt without event
+			=========
+			Build: 1.14.4-9.0.0.193 - Mon Jul 29 08:15:39 GMT 2019
+			m.pietquin:
+			fix custom boats
+			=========
+			Build: 1.14.4-9.0.0.192 - Mon Jul 29 06:08:44 GMT 2019
+			forstride:
+			Fixed Flowering Oak Sapling loot table (Closes #1424)
+			=========
+			Build: 1.14.4-9.0.0.191 - Mon Jul 29 05:36:14 GMT 2019
+			forstride:
+			Improved reed/cattail texture
+			=========
+			Build: 1.14.4-9.0.0.190 - Mon Jul 29 04:11:04 GMT 2019
+			forstride:
+			Fixed flammability for foliage/wood blocks and removed unnecessary
+			classes
+			=========
+			Build: 1.14.4-9.0.0.189 - Mon Jul 29 02:08:59 GMT 2019
+			forstride:
+			Added Polish translation (Made by DarkKnightComes)
+			=========
+			Build: 1.14.4-9.0.0.188 - Sun Jul 28 10:39:12 GMT 2019
+			forstride:
+			Fixed plant sustainability for white sand/mud, fixed cattails being able
+			to grow on top of each other
+			=========
+			Build: 1.14.4-9.0.0.187 - Sun Jul 28 09:11:32 GMT 2019
+			forstride:
+			Added foxes to our biomes because I somehow forgot to
+			=========
+			Build: 1.14.4-9.0.0.186 - Sun Jul 28 01:14:47 GMT 2019
+			forstride:
+			Started working on re-adding boats (Still broken, boat items spawn oak
+			boats for the time being)
+			=========
+			Build: 1.14.4-9.0.0.185 - Sat Jul 27 10:39:50 GMT 2019
+			forstride:
+			Allowed BOP saplings/flower/mushrooms to be placed in flower pots, added
+			suspicious stew effects for BOP flowers, added makeshift vanilla sign
+			recipes using BOP planks
+			=========
+			Build: 1.14.4-9.0.0.184 - Sat Jul 27 05:12:34 GMT 2019
+			forstride:
+			Allowed BOP logs to be stripped (Closes #1394), and
+			saplings/leaves/plants to be composted
+			=========
+			Build: 1.14.4-9.0.0.183 - Fri Jul 26 10:57:43 GMT 2019
+			forstride:
+			Fixed sounds/tool effectiveness for various blocks, renamed block/item
+			classes to match 1.14 naming convention
+			=========
+			Build: 1.14.4-9.0.0.182 - Thu Jul 25 22:39:12 GMT 2019
+			forstride:
+			For some reason the last commit didn't fully work?
+			forstride:
+			Removed tiny cacti and mud ball entity, fixed stack sizes for mud
+			balls/music disc
+			=========
+			Build: 1.14.4-9.0.0.180 - Wed Jul 24 07:03:31 GMT 2019
+			github:
+			Update zh_cn.json
+			fixed mistakes 修复错误
+			=========
+			Build: 1.14.4-9.0.0.179 - Wed Jul 24 05:59:21 GMT 2019
+			forstride:
+			Fixed reed/watergrass/mangrove root item placement (Again...), removed
+			sweet berry bushes from Orchards
+			=========
+			Build: 1.14.4-9.0.0.178 - Tue Jul 23 01:44:29 GMT 2019
+			Adubbz:
+			Update Forge and MCP mappings
+			forstride:
+			Added bamboo to Cherry Blossom Grove and Tropics
+			forstride:
+			Fixed advancements, temporarily removed boat/sign files
+			Adubbz:
+			Updated to 1.14.4
+			=========
+			Build: 1.14.3-9.0.0.174 - Sun Jul 21 12:18:20 GMT 2019
+			dmitrij.drandarov:
+			Update to latest mappings (20190721) and forge version (1.14.3)
+			=========
+			Build: 1.14.3-9.0.0.173 - Thu Jul 04 09:03:32 GMT 2019
+			Adubbz:
+			Bump Forge version
+			=========
+			Build: 1.14.3-9.0.0.172 - Tue Jul 02 20:54:43 GMT 2019
+			github:
+			Update zh_cn.json
+			Add new Translation.
+			=========
+			Build: 1.14.3-9.0.0.171 - Mon Jul 01 15:14:20 GMT 2019
+			Adubbz:
+			Workaround server.properties being overwritten by introducing a config
+			option for using the BoP worldtype on servers
+			=========
+			Build: 1.14.3-9.0.0.170 - Fri Jun 28 20:16:53 GMT 2019
+			forstride:
+			Allowed fir, redwood, and umbran saplings to grow 2x2 trees
+			=========
+			Build: 1.14.3-9.0.0.169 - Fri Jun 28 13:40:57 GMT 2019
+			forstride:
+			Added villages to BOP biomes
+			=========
+			Build: 1.14.3-9.0.0.168 - Fri Jun 28 03:53:26 GMT 2019
+			Adubbz:
+			Fix issue template ordering
+			=========
+			Build: 1.14.3-9.0.0.167 - Fri Jun 28 03:52:11 GMT 2019
+			Adubbz:
+			Updated issue templates
+			=========
+			Build: 1.14.3-9.0.0.166 - Fri Jun 28 02:43:06 GMT 2019
+			forstride:
+			Updated a few additional textures
+			=========
+			Build: 1.13.2-8.0.0.164 - Thu Jun 13 04:50:03 GMT 2019
+			forstride:
+			Changed Cold Desert to not have snow, added missing override annotations
+			=========
+			Build: 1.13.2-8.0.0.163 - Tue Jun 11 06:23:37 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.162 - Sun Jun 09 15:00:43 GMT 2019
+			forstride:
+			Tweaked flower generation for certain biomes
+			=========
+			Build: 1.13.2-8.0.0.161 - Sun Jun 09 09:20:43 GMT 2019
+			forstride:
+			Added Lush Grassland biome
+			=========
+			Build: 1.13.2-8.0.0.160 - Sat Jun 08 09:44:30 GMT 2019
+			forstride:
+			Changed dead tree generation, increased cattail amounts in biomes that
+			have them
+			=========
+			Build: 1.13.2-8.0.0.159 - Sat Jun 08 04:57:30 GMT 2019
+			forstride:
+			Fixed placement check for giant trees in the Mystic Grove
+			=========
+			Build: 1.13.2-8.0.0.158 - Fri Jun 07 05:21:07 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.157 - Thu Jun 06 03:04:40 GMT 2019
+			forstride:
+			Started experimenting with End biomes (Not currently available yet)
+			=========
+			Build: 1.13.2-8.0.0.156 - Wed Jun 05 08:23:23 GMT 2019
+			forstride:
+			Fixed a crash caused by bramble blocks, various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.155 - Wed Jun 05 01:32:12 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.154 - Wed Jun 05 00:36:07 GMT 2019
+			forstride:
+			Prevented non-overworld dimensions from using BOP's overworld biome
+			provider
+			=========
+			Build: 1.13.2-8.0.0.153 - Tue Jun 04 17:36:42 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.152 - Tue Jun 04 14:26:40 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.151 - Tue Jun 04 04:02:34 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.150 - Tue Jun 04 00:24:23 GMT 2019
+			forstride:
+			Fixed the bases of fir/redwood trees not generating properly. Various
+			biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.149 - Mon Jun 03 12:06:17 GMT 2019
+			forstride:
+			Renamed the Dead Swamp to Mire, renamed the Highland Moor to Moor,
+			various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.148 - Mon Jun 03 00:19:36 GMT 2019
+			forstride:
+			Changed the Orchard biome to a sub-biome of the vanilla Plains
+			(Replacing the Forest as its sub-biome), improved the Grove biome,
+			prevented Plains/Forest islands from generating within oceans, added the
+			vanilla Desert as an edge biome of the Wasteland
+			=========
+			Build: 1.13.2-8.0.0.147 - Sun Jun 02 09:04:19 GMT 2019
+			forstride:
+			Cleaned up unused class imports
+			=========
+			Build: 1.13.2-8.0.0.146 - Sat Jun 01 18:29:37 GMT 2019
+			forstride:
+			Updated issue templates
+			=========
+			Build: 1.13.2-8.0.0.145 - Sat Jun 01 18:22:49 GMT 2019
+			github:
+			Update question.md
+			=========
+			Build: 1.13.2-8.0.0.144 - Sat Jun 01 18:21:11 GMT 2019
+			github:
+			Update question.md
+			github:
+			Update question.md
+			github:
+			Update question.md
+			=========
+			Build: 1.13.2-8.0.0.143 - Sat Jun 01 18:19:32 GMT 2019
+			github:
+			Update question.md
+			=========
+			Build: 1.13.2-8.0.0.142 - Sat Jun 01 08:12:31 GMT 2019
+			Adubbz:
+			Fixed server crashing on boot. Closes #1401
+			=========
+			Build: 1.13.2-8.0.0.141 - Fri May 31 20:38:29 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.140 - Fri May 31 12:08:48 GMT 2019
+			forstride:
+			Tweaks to the Bog biome
+			=========
+			Build: 1.13.2-8.0.0.139 - Fri May 31 05:47:18 GMT 2019
+			forstride:
+			Removed the Bog Mire sub-biome, renamed the Bog biome to Dead Swamp,
+			added a new Bog biome based on a cranberry bog
+			=========
+			Build: 1.13.2-8.0.0.138 - Thu May 30 20:58:52 GMT 2019
+			forstride:
+			Added natural carved pumpkins/jack-o-lanterns to the Pumpkin Patch
+			biome. Removed unused textures
+			=========
+			Build: 1.13.2-8.0.0.137 - Thu May 30 00:57:05 GMT 2019
+			forstride:
+			Added Pumpkin Patch sub-biome to the Seasonal Forest
+			=========
+			Build: 1.13.2-8.0.0.136 - Mon May 27 23:55:29 GMT 2019
+			forstride:
+			Biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.135 - Sun May 26 23:15:52 GMT 2019
+			forstride:
+			Fixed some improper biome tags
+			=========
+			Build: 1.13.2-8.0.0.134 - Sun May 26 21:33:17 GMT 2019
+			forstride:
+			Added Dry Plains biome
+			=========
+			Build: 1.13.2-8.0.0.133 - Sun May 26 08:15:01 GMT 2019
+			github:
+			Update README.md
+			=========
+			Build: 1.13.2-8.0.0.132 - Sun May 26 05:05:30 GMT 2019
+			forstride:
+			Added missing entities to various biomes
+			=========
+			Build: 1.13.2-8.0.0.131 - Sun May 26 00:01:11 GMT 2019
+			forstride:
+			Allowed palm saplings to grow on sand, Tropics/Volcano tweaks
+			=========
+			Build: 1.13.2-8.0.0.130 - Sat May 25 22:56:50 GMT 2019
+			forstride:
+			Fixed water plant itemblock not placing the right block
+			=========
+			Build: 1.13.2-8.0.0.129 - Sat May 25 19:31:59 GMT 2019
+			forstride:
+			Various biome improvements, allowed players to spawn in more biomes
+			=========
+			Build: 1.13.2-8.0.0.128 - Sat May 25 18:01:04 GMT 2019
+			github:
+			Create zh_cn.json
+			=========
+			Build: 1.13.2-8.0.0.127 - Sat May 25 09:28:28 GMT 2019
+			forstride:
+			Fixed willow vine flammability, beaches in Cold Deserts, and various
+			grass/foliage colors
+			=========
+			Build: 1.13.2-8.0.0.126 - Sat May 25 08:37:03 GMT 2019
+			forstride:
+			Added Igloos/Woodland Mansions to certain biomes
+			=========
+			Build: 1.13.2-8.0.0.125 - Sat May 25 08:18:03 GMT 2019
+			github:
+			Update issue templates
+			=========
+			Build: 1.13.2-8.0.0.124 - Sat May 25 05:35:18 GMT 2019
+			Adubbz:
+			Apparently this didn't get pushed
+			Adubbz:
+			Renaming access transformer
+			=========
+			Build: 1.13.2-8.0.0.122 - Sat May 25 03:53:28 GMT 2019
+			Adubbz:
+			Do curseforge task earlier
+			=========
+			Build: 1.13.2-8.0.0.121 - Sat May 25 03:49:38 GMT 2019
+			Adubbz:
+			changelog_file, not changelog
+			Adubbz:
+			Actually set the curse api key...
+			=========
+			Build: 1.13.2-8.0.0.118 - Sat May 25 03:36:38 GMT 2019
+			Adubbz:
+			Added mainArtifact to curseforge gradle section
+			=========
+			Build: 1.13.2-8.0.0.117 - Sat May 25 03:28:48 GMT 2019
+			Adubbz:
+			Try this instead
+			=========
+			Build: 1.13.2-8.0.0.116 - Sat May 25 03:18:58 GMT 2019
+			Adubbz:
+			Prepare for alpha builds
+			=========
+			Build: 1.13.2-8.0.0.115 - Sat May 25 03:01:03 GMT 2019
+			github:
+			pt_br cleanup
+			=========
+			Build: 1.13.2-8.0.0.114 - Sat May 25 02:45:22 GMT 2019
+			forstride:
+			Biome tweaks
+			forstride:
+			Added smelting recipes
+			=========
+			Build: 1.13.2-8.0.0.112 - Sat May 25 02:04:32 GMT 2019
+			forstride:
+			Added vanilla blocks to our tag JSONs for the time being until Forge
+			fixes tags
+			=========
+			Build: 1.13.2-8.0.0.111 - Sat May 25 01:25:32 GMT 2019
+			Adubbz:
+			Revert gradle update
+			=========
+			Build: 1.13.2-8.0.0.110 - Sat May 25 01:09:42 GMT 2019
+			Adubbz:
+			Fixed entities
+			=========
+			Build: 1.13.2-8.0.0.109 - Sat May 25 00:32:07 GMT 2019
+			Adubbz:
+			Updated Forge
+			=========
+			Build: 1.13.2-8.0.0.108 - Sat May 25 00:18:22 GMT 2019
+			forstride:
+			Fixed flammability for our blocks
+			=========
+			Build: 1.13.2-8.0.0.107 - Fri May 24 22:48:03 GMT 2019
+			forstride:
+			Re-added Mangrove
+			=========
+			Build: 1.13.2-8.0.0.106 - Fri May 24 21:00:07 GMT 2019
+			forstride:
+			Finished Volcano biome
+			=========
+			Build: 1.13.2-8.0.0.105 - Fri May 24 11:03:06 GMT 2019
+			forstride:
+			Island stuff
+			=========
+			Build: 1.13.2-8.0.0.104 - Fri May 24 09:43:39 GMT 2019
+			Adubbz:
+			Remove debug spam
+			=========
+			Build: 1.13.2-8.0.0.103 - Fri May 24 09:42:11 GMT 2019
+			Adubbz:
+			Generate islands before deep oceans
+			=========
+			Build: 1.13.2-8.0.0.102 - Fri May 24 09:26:21 GMT 2019
+			forstride:
+			Durr
+			=========
+			Build: 1.13.2-8.0.0.101 - Fri May 24 09:00:36 GMT 2019
+			Adubbz:
+			Hurr
+			=========
+			Build: 1.13.2-8.0.0.100 - Fri May 24 08:48:41 GMT 2019
+			Adubbz:
+			Re-added island biomes
+			=========
+			Build: 1.13.2-8.0.0.99 - Fri May 24 05:56:30 GMT 2019
+			forstride:
+			River stuff (Too lazy to write a proper commit description)
+			=========
+			Build: 1.13.2-8.0.0.98 - Fri May 24 05:35:40 GMT 2019
+			Adubbz:
+			Added support for custom river biomes
+			=========
+			Build: 1.13.2-8.0.0.97 - Fri May 24 05:20:15 GMT 2019
+			forstride:
+			Assigned beach biomes to our biomes, generate oceans by climate
+			=========
+			Build: 1.13.2-8.0.0.96 - Fri May 24 04:59:30 GMT 2019
+			Adubbz:
+			Oops
+			=========
+			Build: 1.13.2-8.0.0.95 - Fri May 24 04:52:15 GMT 2019
+			Adubbz:
+			Setup for climate-based ocean biomes
+			=========
+			Build: 1.13.2-8.0.0.94 - Fri May 24 04:28:00 GMT 2019
+			Adubbz:
+			Ensure the beach biome id is actually -1 when the biome is null
+			=========
+			Build: 1.13.2-8.0.0.93 - Fri May 24 04:23:38 GMT 2019
+			Adubbz:
+			Adjust this too
+			=========
+			Build: 1.13.2-8.0.0.92 - Fri May 24 04:22:20 GMT 2019
+			Adubbz:
+			Fix beach default
+			=========
+			Build: 1.13.2-8.0.0.91 - Fri May 24 04:04:25 GMT 2019
+			Adubbz:
+			Added support for custom beach biomes
+			=========
+			Build: 1.13.2-8.0.0.90 - Fri May 24 03:51:35 GMT 2019
+			forstride:
+			Biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.89 - Fri May 24 03:34:50 GMT 2019
+			Adubbz:
+			Added support for custom edge biomes
+			=========
+			Build: 1.13.2-8.0.0.88 - Fri May 24 01:16:05 GMT 2019
+			Adubbz:
+			Don't create an instance of BlockWaterTopPlant inline for registration.
+			Fixes a crash on boot
+			=========
+			Build: 1.13.2-8.0.0.87 - Thu May 23 22:26:20 GMT 2019
+			forstride:
+			Re-added reeds and watergrass
+			=========
+			Build: 1.13.2-8.0.0.86 - Thu May 23 05:10:28 GMT 2019
+			forstride:
+			Biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.85 - Wed May 22 20:06:42 GMT 2019
+			forstride:
+			Tweaked sub-biome rarity
+			=========
+			Build: 1.13.2-8.0.0.84 - Wed May 22 06:46:51 GMT 2019
+			forstride:
+			Allowed the player to spawn in BOP biomes
+			=========
+			Build: 1.13.2-8.0.0.83 - Wed May 22 04:44:11 GMT 2019
+			forstride:
+			Biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.82 - Wed May 22 02:37:36 GMT 2019
+			forstride:
+			Started re-adding boat entities
+			=========
+			Build: 1.13.2-8.0.0.81 - Wed May 22 01:30:51 GMT 2019
+			forstride:
+			Removed short grass, tweaked biomes, fixed tree generation block
+			replacement
+			=========
+			Build: 1.13.2-8.0.0.80 - Tue May 21 08:42:39 GMT 2019
+			forstride:
+			Implemented saplings properly
+			=========
+			Build: 1.13.2-8.0.0.79 - Tue May 21 06:46:44 GMT 2019
+			forstride:
+			Re-added Silkglade
+			=========
+			Build: 1.13.2-8.0.0.78 - Tue May 21 00:42:08 GMT 2019
+			forstride:
+			Biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.77 - Mon May 20 21:05:18 GMT 2019
+			forstride:
+			Re-added Bayou
+			=========
+			Build: 1.13.2-8.0.0.76 - Sun May 19 23:29:36 GMT 2019
+			forstride:
+			Fixed Bramble
+			=========
+			Build: 1.13.2-8.0.0.75 - Sun May 19 14:33:15 GMT 2019
+			forstride:
+			More biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.74 - Sun May 19 13:26:20 GMT 2019
+			Adubbz:
+			Added support for subbiomes
+			=========
+			Build: 1.13.2-8.0.0.73 - Sun May 19 13:08:05 GMT 2019
+			forstride:
+			Tweaked biomes
+			=========
+			Build: 1.13.2-8.0.0.72 - Sun May 19 10:36:15 GMT 2019
+			Adubbz:
+			Fixed tpbiome dropping you underneath the world
+			=========
+			Build: 1.13.2-8.0.0.71 - Sun May 19 10:30:24 GMT 2019
+			Adubbz:
+			Hopefully fixed climates getting clobbered
+			=========
+			Build: 1.13.2-8.0.0.70 - Sun May 19 03:20:44 GMT 2019
+			forstride:
+			Re-added most of the remaining overworld biomes, revamped climate
+			mapping
+			=========
+			Build: 1.13.2-8.0.0.69 - Sat May 18 05:59:12 GMT 2019
+			forstride:
+			Re-added Dead Forest and Grove
+			=========
+			Build: 1.13.2-8.0.0.68 - Sat May 18 03:13:02 GMT 2019
+			forstride:
+			Re-added Cold Desert and Bog Mire
+			=========
+			Build: 1.13.2-8.0.0.67 - Tue May 14 18:54:03 GMT 2019
+			forstride:
+			Fixed transparency for leaves in fast graphics
+			=========
+			Build: 1.13.2-8.0.0.66 - Tue May 14 08:17:47 GMT 2019
+			forstride:
+			Re-added Brushland, Tundra, and Flower Meadow
+			=========
+			Build: 1.13.2-8.0.0.65 - Mon May 13 23:40:27 GMT 2019
+			forstride:
+			Re-added Shield biome
+			=========
+			Build: 1.13.2-8.0.0.64 - Mon May 13 09:09:00 GMT 2019
+			forstride:
+			Re-added Boreal Forest, Pasture, and Prairie
+			=========
+			Build: 1.13.2-8.0.0.63 - Sat May 04 22:11:52 GMT 2019
+			forstride:
+			Re-added Chaparral
+			=========
+			Build: 1.13.2-8.0.0.62 - Sat May 04 18:35:12 GMT 2019
+			forstride:
+			Tweaked climate mapping
+			=========
+			Build: 1.13.2-8.0.0.61 - Sat May 04 12:43:37 GMT 2019
+			Adubbz:
+			Prevent oceans from generating in extreme climates
+			=========
+			Build: 1.13.2-8.0.0.60 - Sat May 04 07:51:26 GMT 2019
+			Adubbz:
+			Groovy requires double quotes for format strings
+			=========
+			Build: 1.13.2-8.0.0.59 - Sat May 04 07:46:56 GMT 2019
+			Adubbz:
+			Another attempt at fixing changelog naming
+			=========
+			Build: 1.13.2-8.0.0.58 - Sat May 04 07:38:01 GMT 2019
+			Adubbz:
+			Account for missing changelog for curse
+			=========
+			Build: 1.13.2-8.0.0.57 - Sat May 04 07:32:31 GMT 2019
+			Adubbz:
+			Attempt at better changelog naming
+			Adubbz:
+			More attempted fixes
+			=========
+			Build: 1.13.2-8.0.0.54 - Sat May 04 07:08:26 GMT 2019
+			Adubbz:
+			Ditch the git hash completely
+			=========
+			Build: 1.13.2-8.0.0.e1d728811 - Sat May 04 07:03:51 GMT 2019
+			Adubbz:
+			Hopefully fix wrong path
+			=========
+			Build: 1.13.2-8.0.0-06f254998.16 - Sat May 04 06:41:26 GMT 2019
+			Adubbz:
+			Put back the build number
+			=========
+			Build: 1.13.2-8.0.0.c49a4e404 - Sat May 04 06:34:56 GMT 2019
+			Adubbz:
+			Switch to using maven-publish
+			=========
+			Build: 1.13.2-8.0.0.51ff1cc23 - Sat May 04 06:02:01 GMT 2019
+			Adubbz:
+			Oops
+			Adubbz:
+			Swap build number for git hash
+			=========
+			Build: 1.13.2-8.0.0.12 - Sat May 04 05:44:54 GMT 2019
+			Adubbz:
+			It would be a good idea to include the password when trying to upload to
+			maven...
+			Adubbz:
+			Grep only for lines starting with version
+			Adubbz:
+			Fixed maven url
+			Adubbz:
+			Minor fix
+			Adubbz:
+			More gradle fixes
+			Adubbz:
+			Have I ever told you how much I love build.gradle updates
+
+	Blood Magic  (BloodMagic-1.16.3-3.0.3-8.jar --> BloodMagic-1.16.3-3.0.5-10.jar):
+		BloodMagic-1.16.3-3.0.5-10.jar:
+			------------------------------------------------------
+			Version 3.0.5
+			------------------------------------------------------
+			* Fixed a crash with the Blood Altar because I am dumb.
+			* Also fixed the recipe for the Day array. Now you don't need to clean your clocks!
+
+		BloodMagic-1.16.3-3.0.4-9.jar:
+			------------------------------------------Version 3.0.4------------------------------------------------------
+			* Added two new explosives:
+			* The Shaped Charge, which will break a 5x5x5 volume when placed
+			* The Deforester Charge, which can chop down a tree up to a maximum of 128 logs.
+			* (Both explosives drop all blocks affected, and do not cause further environmental nor entity damage.)
+			* Added new alchemy arrays:
+			* Two arrays, which changes the current daylight cycle to day and night. Recipes are temp.
+			* Fixed the following Living Armour upgrades so that they are now obtainable:
+			* Experienced
+			* Body Builder
+			* Fixed Living Armour not upgrading under certain conditions.
+			* Fixed the two rituals involving Living Armour so that they are properly activatable using a Weak Activation Crystal.
+			* Fixed NPE in Blood Altar when trying to interact with the contained Fluids
+			* Also fixed bug that prevented the Altar from accepting fluids piped in as inputs.
+			* Fixed a client-side crash when right clicking the ground with a Lava Crystal when on a server - now properly makes a fire without consuming the client.
+			* Fixed the JEI so that it no longer ouputs an error when loading Alchemy Array recipes without a crafting output.
+			* Fixed crash with Actually Additions
+
+	Bookshelf (Bookshelf-1.16.4-9.3.18.jar --> Bookshelf-1.16.4-9.3.25.jar):
+		Bookshelf-1.16.4-9.3.25.jar:
+			* Fix SidedExecutor sometimes running server code on the logical client. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		Bookshelf-1.16.4-9.3.24.jar:
+			* Updated Maven and Signature info. - Tyler Hancock
+			* Compile against newer version of Forge. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		Bookshelf-1.16.4-9.3.23.jar:
+			* Removed detached signature support. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		Bookshelf-1.16.4-9.3.21.jar:
+			* Fix Gradle wrapper not being executable. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Botany Pots (BotanyPots-1.16.4-6.0.13.jar --> BotanyPots-1.16.4-6.0.14.jar):
+		BotanyPots-1.16.4-6.0.14.jar:
+			* Fixed CraftTweaker related scripts running twice in single player worlds. - Tyler Hancock
+			* Fixed JAR signing. - Tyler Hancock
+			* Fix some modded soils loading when their owning mods are not installed. - Tyler Hancock
+			* Moved some soil and fertilizer support files to the correct namespace. - Tyler Hancock
+			* Formatted JSON files. - Tyler Hancock
+			* Formatted code. - Tyler Hancock
+			* Compile against newer Forge, JEI, and Bookshelf. - Tyler Hancock
+			* Cleaned up maven repos list. - Tyler Hancock
+			* Switch to local maven. - Tyler Hancock
+			* Added support for Druidcraft. - Warbringer12
+			* Added TCon support, fixed some soils and crops. - ModernGamingWorld
+			* Merge pull request #126 from kindlich/1.16.4 - Tyler Hancock
+			* Added /ct dump botanyXXX commands and /ct examples support - kindlich
+			* Removed Nullable annotation from getXXXData methods, as they cannot return null - kindlich
+			* CrT Integration: Fix inalid Method signatures - kindlich
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Builders Crafts & Additions (Forge) (buildersaddition-1.16.2/3/4-20201220b --> buildersaddition-1.16.4-20210113c):
+		buildersaddition-1.16.4-20210113c:
+			~ Fixed Entity Detector not working.
+			~ Tweaks to Midi Speaker.
+
+		buildersaddition-1.16.4-20210112d:
+			~ Incorrect version date (was 2020...)
+
+		buildersaddition-1.16.4-20210112c:
+			~ Quark recipe compatibility with chests.
+
+		buildersaddition-1.16.4-20210112b:
+			~ Midi Speaker server crash.
+
+		buildersaddition-1.16.4-20210111b:
+			+ Entity Detector.
+			+ Vertical Repeater.
+			+ Vertical Comparator.
+			~ Added missing Quark vertical slab recipe variants.
+
+	CC: Tweaked (cc-tweaked-1.16.4-1.95.0.jar --> cc-tweaked-1.16.4-1.95.1.jar):
+		cc-tweaked-1.16.4-1.95.1.jar:
+			Release notes can be found on the GitHub repository ([https://github.com/SquidDev-CC/CC-Tweaked/releases/tag/v1.16.4-1.95.1](https://github.com/SquidDev-CC/CC-Tweaked/releases/tag/v1.16.4-1.95.1)).
+
+	Chisels & Bits (C&B 0.2.8 --> C&B 0.2.9):
+		C&B 0.2.9:
+			Fixes several issues, including a memory leak on the client, performance issues, as well as a ray tracing offset issues causing bit placement to be broken.
+
+	Chocolate Fix (chocolate-1.2.0-1.16.4.jar --> chocolate-1.3.0-1.16.4.jar):
+		chocolate-1.3.0-1.16.4.jar:
+			[Release Notes 1.3.0-1.16.4](https://github.com/alcatrazEscapee/Chocolate/releases/tag/1.3.0-1.16.4)
+
+	Create (Create - mc1.16.3+4_v0.3c.jar --> Create - mc1.16.3+4_v0.3e.jar):
+		Create - mc1.16.3+4_v0.3e.jar:
+			Create v0.3e for Minecraft 1.16.3 & 1.16.4
+			Hotfix V
+			Fixes and Enhancements
+			* Fix random in-game crashes caused by the minecart controller capability
+			* Blaze Burners now have redstone comparator output
+			Inherited from .3d
+			* Fixed mechanical belts playing destroy effects when placed
+			* Honey and Chocolate Buckets are no longer stackable
+			* Fixed extendogrips able to attack entities behind blocks
+			* Fix random start-up crashes by updating registrate
+			* Fixed blocks not able to be placed onto a face with super glue
+			* Fixed block duplication involving super glue
+			* Fixed fluid tanks voiding content on contraption disassembly
+			* Tried addressing some redstone activation inconsistencies with disassembled contraptions
+			* Updated russian localization
+			Please submit any Issues you come across on the [Issue Tracker](https://github.com/Creators-of-Create/Create/issues).
+
+	Curios API (Forge) (curios-forge-1.16.4-4.0.3.3.jar --> curios-forge-1.16.4-4.0.3.4.jar):
+		curios-forge-1.16.4-4.0.3.4.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project adheres to [Forge Recommended Versioning]().
+			[1.16.4-4.0.3.4] - 2021.01.12
+			Fixed
+			* Fixed command slot type identification for dedicated servers
+			[1.16.4-4.0.3.3] - 2020.12.31
+			Added
+			* Added Korean localization (thanks othuntgithub!) [#97](https://github.com/TheIllusiveC4/Curios/pull/97)
+			[1.16.4-4.0.3.2] - 2020.12.26
+			Changed
+			* Reverted ICurio#onUnequip change from 4.0.3.1
+			[1.16.4-4.0.3.1] - 2020.12.26
+			Changed
+			* [API] ICurio#onUnequip now passes the actual ItemStack instance instead of a copy
+			[1.16.4-4.0.3.0] - 2020.11.24
+			Added
+			* [API] ICurioItem interface for simple hard-dependency item implementations
+			Changed
+			* Minor improvements to "Curio" slot type and tag for universal acceptance
+			Fixed
+			* Fixed infinite log spam when using recipe book [#91](https://github.com/TheIllusiveC4/Curios/issues/91)
+			* Fixed command client crashes [#89](https://github.com/TheIllusiveC4/Curios/issues/89)
+			* Fixed overextended texture in Curios GUI
+			[1.16.4-4.0.2.1] - 2020.11.09
+			Changed
+			* Updated to 1.16.4
+			* "Curio" slot type now accepts any curio item [#78](https://github.com/TheIllusiveC4/Curios/issues/78)
+			Fixed
+			* Fixed NPE with Mahou Tsukai's scrying [#77](https://github.com/TheIllusiveC4/Curios/issues/77)
+			* Fixed empty tags being attached to items [#80](https://github.com/TheIllusiveC4/Curios/issues/80)
+			* Fixed render buttons toggling wrong slot [#75](https://github.com/TheIllusiveC4/Curios/issues/75) [#84](https://github.com/TheIllusiveC4/Curios/issues/84)
+			[1.16.3-4.0.2.0] - 2020.09.20
+			Update courtesy of Extegral, thanks! [#72](https://github.com/TheIllusiveC4/Curios/pull/72)
+			Added
+			* [API] Added ICurio#showAttributesTooltip for toggling attribute tooltips per curio
+			* [API] Added ICurio#getFortuneBonus for adding fortune levels when curio is equipped
+			* [API] Added ICurio#getLootingBonus for adding looting levels when curio is equipped
+			* Added curios:equip_curio criterion trigger for listening to curio equips
+			Changed
+			* Updated Russian localization
+			Fixed
+			* Fixed bug with recipe book persisting on Curios screen when going from Survival to Creative
+			[1.16.3-4.0.1.0] - 2020.09.14
+			Added
+			* Added Brazilian localization (thanks Mikeliro!) [#65](https://github.com/TheIllusiveC4/Curios/pull/65)
+			Changed
+			* Updated to Minecraft 1.16.3
+			Fixed
+			* Fixed crashing when attempting to unlock/lock slots in equip handlers [#68](https://github.com/TheIllusiveC4/Curios/issues/68)
+			* Fixed misaligned render toggle buttons with non-natively-positioned slots
+			[1.16.2-4.0.0.1] - 2020.08.26
+			Changed
+			* Updated to Forge 33.0.21
+			[1.16.2-4.0.0.0] - 2020.08.13
+			Changed
+			* Updated to Minecraft 1.16.2
+			* Archive base name changed from "curios" to "curios-forge"
+			* Mod version no longer contains "FORGE"
+			[3.0.0.2] - 2020.08.03
+			Fixed
+			* Fixed toggle render buttons desyncing when scrolling
+			* Fixed recipe book offsets in Curios GUI
+			[3.0.0.1] - 2020.08.02
+			Changed
+			* [API] Moved ICuriosItemHandler#handleInvalidStacks call to tick event
+			Fixed
+			* Fixed hidden slots still being handled by Curios GUI
+			[3.0] - 2020.07.21
+			Fixed
+			* Fixed Curios button disappearing when switching tabs in Creative menu [#55](https://github.com/TheIllusiveC4/Curios/issues/55)
+			* Fixed being able to right-click Curios items into any slot [#56](https://github.com/TheIllusiveC4/Curios/issues/56)
+			[3.0-beta4] - 2020.07.17
+			Fixed
+			* Fixed crashes with Forge 32.0.67+ [#53](https://github.com/TheIllusiveC4/Curios/issues/53)
+			[3.0-beta3] - 2020.07.14
+			Changed
+			* [API] IMC messages can now process iterable collections of SlotTypeMessage
+			[3.0-beta2] - 2020.07.02
+			Added
+			* [API] Added ICuriosHelper#getEquippedCurios that obtains all equipped, non-cosmetic curios
+			Changed
+			* [API] IDynamicStackHandler now extends IItemHandlerModifiable
+			Fixed
+			* Fixed NPE when registering no icon for a slot type
+			[3.0-beta1] - 2020.07.01
+			Added
+			* Opt-in cosmetic slots for slot types
+			* Toggleable rendering for equipped curio items
+			* "Bracelet" has been added as a potential preset slot type
+			Changed
+			* Ported to 1.16.1 Forge
+			* Slot types are now handled server-side, allowing for per-world slot configurations
+			* Icon registration is now done alongside slot registration without needing a separate IMC message
+			* ItemStacks with different durabilities will trigger curio change events
+			*  Names:
+			* LivingCurioChangeEvent -> CurioChangeEvent
+			* LivingCurioDropRulesEvent -> DropRulesEvent
+			* LivingCurioDropsEvent -> CurioDropsEvent
+			* CurioIMCMessage -> SlotTypeMessage
+			* CuriosAPI -> CuriosApi
+			*  ICurioItemHandler -> ICuriosItemHandler:
+			* getCurioMap -> getCurios
+			* setCurioMap -> setCurios
+			* getStackHandler -> getStacksHandler
+			* enableCurio -> unlockSlotType
+			* disableCurio -> lockSlotType
+			* addCurioSlot -> growSlotType
+			* removeCurioSlot -> shrinkSlotType
+			* getDisabled -> getLockedSlots
+			* addInvalid -> loseInvalidStack
+			* dropInvalidCache -> handleInvalidStacks
+			*  ICurio:
+			* onCurioTick -> curioTick
+			* onCurioAnimate -> curioAnimate
+			* onEquipped -> onEquip
+			* onUnequipped -> onUnequip
+			* playRightClickEquipSound -> playEquipSound
+			* onCurioBreak -> curioBreak
+			* shouldSyncToTracking -> canSync
+			* getSyncTag -> writeSyncData
+			* readSyncTag -> readSyncData
+			* hasRender -> canRender
+			*  Commands:
+			* enable -> unlock
+			* disable -> lock
+			*  Abstraction:
+			* CurioType abstracted to ISlotType
+			* CurioStackHandler abstracted to ICurioStacksHandler
+			* CuriosApi split into three helper interfaces (IIconHelper on the client, ISlotHelper on the server, ICuriosHelper for both)
+			* CurioTags functionality refactored into SlotTypePresets
+			* The above changes are only for the API, the rest of the classes have also had extensive changes
+
+	Dank Storage (dankstorage-3.13.jar --> dankstorage-3.14.jar):
+		dankstorage-3.14.jar:
+			* Add tooltip to pickup button to indicate what mode it's in.
+			* Fix infinite arrow exploit
+			* Disable mekanism cables in dank due to voiding
+
+	Dark Utilities (DarkUtilities-1.16.4-7.0.3.jar --> DarkUtilities-1.16.4-7.0.7.jar):
+		DarkUtilities-1.16.4-7.0.7.jar:
+			* Moved to new build server.
+			* Fixed JAR signing.
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?DarkUtilities)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		DarkUtilities-1.16.4-7.0.6.jar:
+			* Removed accidental diluv publishing. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?DarkUtilities)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Decorative Blocks (decorative_blocks-1.16.4-1.7.0.jar --> decorative_blocks-1.16.4-1.7.2.jar):
+		decorative_blocks-1.16.4-1.7.2.jar:
+			serverside crash fix
+
+		decorative_blocks-1.16.4-1.7.1.jar:
+			Brazier collision & pathfinding improved
+
+	Dungeons Plus (Dungeons Plus 1.16.4-v1.1.0 --> Dungeons Plus 1.16.4-v1.1.1):
+		Dungeons Plus 1.16.4-v1.1.1:
+			Requires [Structure Gel 1.16.4-v1.7.4](https://www.curseforge.com/minecraft/mc-mods/structure-gel-api/files/3168706)
+			[https://gitlab.com/modding-legacy/dungeons-plus/-/blob/1.16.2/Changelogs/1.16.4-v1.1.1%20Changelog.md]()
+
+	Enchantment Descriptions (EnchantmentDescriptions-1.16.4-6.0.2.jar --> EnchantmentDescriptions-1.16.4-6.0.3.jar):
+		EnchantmentDescriptions-1.16.4-6.0.3.jar:
+			* Removed unused logo file. - Tyler Hancock
+			* Fix JAR signing on new CI/CD. - Tyler Hancock
+			* Add logs folder to git ignore. - Tyler Hancock
+			* Added support for JEI. Displays descriptions and compatible item lists. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?EnchantmentDescriptions)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		EnchantmentDescriptions-fabric-1.16.4-1.0.0.jar:
+			* Initial version with Fabric support.
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
+			* Diablo Crasher
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Engineer's Decor (engineersdecor-1.16.4-1.1.6-b2.jar --> engineersdecor-1.16.4-1.1.6-b3.jar):
+		engineersdecor-1.16.4-1.1.6-b3.jar:
+			* v1.1.6-b3  [M] Config logging edited, E-Furnace GUI capacitor tooltip added, E-Furnace power consumption
+			independent of config speed setting (issue #152 ty Staegrin).
+			* v1.1.6-b2  [M] Alternative Clinker Brick recipe (swapped Bricks/Nether Bricks) added.
+			[M] Furnace XP handling simplified (simply stores/releases XP for each smelting process).
+			[M] Mod devices do not propagate strong Redstone power to adjacent blocks.
+			[M] Minor "librarizing" changes under the hood.
+			* v1.1.6-b1  [F] Fixed Metal Crafting Table Hopper access (issue #147, ty umerrr).
+			[F] Fixed Dark Shingle Roof Chimney placement restriction (issue #149, thx WenXin20).
+			[F] Door tags added for Wood Door and Metal Sliding Door (issue #150, thx WenXin20).
+			[A] Electrical Furnace automatically chokes speed and power consumption when the internally
+			stored power is below 20%.
+			* v1.1.5     [R] Release build v1.1.5.
+			[F] Fixed Crafting Table JEI storage slot count.
+			[F] Fixed Factory Hopper removed item collection dupe bug (issue #146, thx FatheredPuma81).
+			[F] Increased device GUI access ranges beyond the player block selection range.
+			[A] Window placement handling improved.
+			[M] Steel/Wood Pole and Double-T support placement improved (issue #139, thx Biviho).
+			[M] Metal Sliding Door bottom/top shape when opened added.
+			* v1.1.4     [R] Release build v1.1.4.
+			[F] Solar Panel balancing threshold tuned.
+			[F] Fixed Catwalk default state (issue #140, thx hvdklauw).
+			[M] Updated lang ru_ru file (PR#137, Smollet777).
+			[M] Factory Dropper: Added Ignore-External-Redstone mode.
+			* v1.1.4-b2  [A] Steel Catwalks added (top and bottom aligned).
+			[A] Steel Railings added.
+			[F] Fixed Empty Fluid Barrel crafting crash (ty inflamedsebi).
+			[A] Added Solar Panel power balancing.
+			[M] GUI Button tooltip delay reduced to 800ms.
+			[M] Hopper and Placer: Added "Redstone ignored" mode, changed icons from signal-like to Redstone-Torch-like.
+			[M] Treated Wood Ladder now crafted from Old Industrial Wood, as Treated Wood Sticks now count as normal Sticks.
+			* v1.1.4-b1  [U] Ported to 1.16.4.
+			* v1.1.3     [R] Release build v1.1.3.
+			* v1.1.3-b3  [A] Metal Sliding Door added (double door wing style).
+			[A] Doors implicitly open/close adjacent wings of double doors.
+			[A] Disabled injected buttons from other mods in container GUIs.
+			[A] Mob spawning on Rebar/Gas Concrete inhibited (IE Concrete Compliancy).
+			[M] Small Tree Cutter chopping improved (loosened tree volume search restrictions).
+			* v1.1.3-b2  [A] Crafting table shift/ctrl click item move actions tweaked to new metal slot design.
+			[A] Factory Dropper and Block Placer now also support quick-move-all (shift-ctrl-click).
+			[F] Fixed Small Lab Furnace speed boost factor (with IE Heater in aux slot).
+			* v1.1.3-b1  [A] The Factory Block Breaker can insert items into Hoppers underneath it (issue #121, winsrp).
+			[F] Help tooltips manually wrapped.
+			[F] Fixed Labeled Crate item name persistence (issue #127, ty inqie).
+			[F] Help text typo fixed (issue #129, ty Smollet777).
+			* v1.1.2     [U] Updated to Forge 1.16.3-34.1.0.
+			[A] Added Factory Hopper insertion/extraction for entities like Minecarts (issue #125, ty boneskull).
+			* v1.1.2-b8  [F] Fixed Double-T support thick steel pole connection (thx @CastCrafter).
+			[A] Concrete and Clinker walls connect to windows and glass panes.
+			* v1.1.2-b7  [U] Ported to MC1.16.3.
+			[F] Roof lighting improved.
+			* v1.1.2-b6  [A] Signs added: Generic Caution, Magical Hazard, Radioactive Hazard, Laser Hazard,
+			Fire Hazard, Caution Hot Surface, Magnetic Field Caution, Frost Warning.
+			[A] Water Freezer added (generates Ice, Packed Ice, Blue Ice from water).
+			[F] Mineral Smelter GUI model facing fixed.
+			[M] Hatch handling improved.
+			[M] Ladder fast-move improved.
+			[F] Roof Chimney Trunk shape hollow to allow feeding IE Wire power over the roof into the building.
+			[A] Roof Chimney added (smoking offset for Dark Shingle Roof Chimney Trunk block).
+			[A] Metal Bar (ingredient item) added to circumvent recipe collisions with other mods.
+			[M] Recipes for metallic blocks modified accordingly to depend on Metal Bars.
+			* v1.1.2-b5  [A] Sandstone Ornamented Clinker Brick added.
+			[A] Old Industrial Wood Planks/Stairs/Slabs/Slab Slices added.
+			[A] Old Industrial Wood Door added.
+			[M] Wood textures made slightly darker.
+			[F] Milking Machine fluid transfer re-added (thx gebcrafter).
+			[F] Fluid Barrel status overlay message format fixed.
+			[F] Fixed missing Dense Grit Dirt loot table (issue #124, thx vaelzan).
+			* v1.1.2-b4  [F] Mapping adaption to Forge 1.16.2-33.0.22/20200723-1.16.1.
+			[F] Fixed conditional recipe tag dependency (thx Blu, Cyborgmas).
+			* v1.1.2-b3  [F] Mapping adaption to Forge 1.16.2-33.0.20.
+			* v1.1.2-b2  [A] Dark Shingle Roof added.
+			* v1.1.2-b1  [U] Ported to MC1.16.2.
+
+	Extra Disks (extradisks-1.16.4-1.3.4.jar --> extradisks-1.16.4-1.4.3.jar):
+		extradisks-1.16.4-1.4.3.jar:
+			PLEASE MAKE BACKUPS BEFORE UPDATING IF YOU USED 1.4! TRY TO STORE ITEMS TO DISKS BEFORE UPDATING
+			1.4
+			add (fluid) storage blocks
+			1.4.1
+			added server config for energy usage of new storage blocks
+			1.4.2
+			Fix fluid storage blocks not working
+			1.4.3
+			Fix blocks not dropping
+
+	Extreme sound muffler (Forge) (Extreme Sound Muffler 3.4 - Forge 1.16.4 --> Extreme Sound Muffler 3.5 - Forge 1.16.4):
+		Extreme Sound Muffler 3.5 - Forge 1.16.4:
+			Added highlighted rows to help visibility
+			Added config option to move Toggle sound buttons and play sound buttons to the left side of the GUI
+
+	FTB Chunks (ftb-chunks-1604.2.2.56.jar --> ftb-chunks-1604.2.2.57.jar):
+		ftb-chunks-1604.2.2.57.jar:
+			* Fixed servers not shutting down - LatvianModder
+
+	Gauges and Switches (rsgauges-1.16.4-1.2.7-b1.jar --> rsgauges-1.16.4-1.2.7-b2.jar):
+		rsgauges-1.16.4-1.2.7-b2.jar:
+			* v1.2.7-b2  [F] Config load/apply condition fixed.
+			* v1.2.7-b1  [A] Analog Switch Linking signals added.
+			[A] Gauges and Indicators can be wirelessly connected to switches.
+			[A] Comparator Switch and Link Sender support analog data transmissions.
+			[A] Elevator Button up/down arrows added depending on where the wall is
+			clicked when placing.
+			* v1.2.6     [R] Release build  1.2.6.
+			* v1.2.6-b2  [A] Gauges can be explicitly set to Comparator-Input mode (click with a Redstone Torch).
+			[A] Auto switch buttons only display the current configurations on first click.
+			* v1.2.6-b1  [U] Ported to 1.16.4.
+			* v1.2.5     [R] Release build 1.2.5.
+			* v1.2.5-b1  [A] Linked switches are marked with particles when holding the Switch Link Pearl.
+			[U] Partial internal code refurbishments.
+			* v1.2.4     [U] Updated to Forge 1.16.3-34.1.0.
+			[A] Indicators and Gauges are invertible (input from Vallen while Forgecraft'ing).
+			[F] Ambient occlusion and GUI lightning fixes.
+			* v1.2.4-b8  [U] Ported to MC1.16.3.
+			* v1.2.4-b7  [U] Updated Forge to 33.0.37 (breaking change).
+			* v1.2.4-b6  [U] Updated Forge, adapted new mappings to 20200723-1.16.1.
+			[F] Fixed Contact Switch detection range.
+			* v1.2.4-b5  [F] Mapping adaption to Forge 1.16.2-33.0.20.
+			* v1.2.4-b4  [U] Ported to 1.16.2.
+			* v1.2.4-b2  [F] Door sensor look detection angle fixed.
+			[A] JEI integration added.
+			[F] Fixed startup issue by updating to Forge 32.0.97 (issue #28, ty wieselkatze).
+			* v1.2.4-b1  [M] Coloring of Sensitive Glass ported.
+			[F] Indicator power issue fixed.
+			* v1.2.4-a2  [A] Sensitive glass ported, overlay frame style ported.
+			[M] Modified global switch power placement default setting to strong.
+			* v1.2.4-a1  [A] Initial port.
+
+	Industrial Foregoing (industrial-foregoing-1.16.4-3.2.7-7d95990.jar --> industrial-foregoing-1.16.4-3.2.8.2-6b5c95b.jar):
+		industrial-foregoing-1.16.4-3.2.8.2-6b5c95b.jar:
+			[https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md)
+
+		industrial-foregoing-1.16.4-3.2.8.1-f2c848c.jar:
+			[https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md)
+
+	KubeJS (kubejs-1604.3.4.140-forge.jar --> kubejs-1604.3.4.143-forge.jar):
+		kubejs-1604.3.4.143-forge.jar:
+			* Added recipes.type_registry event. call event.ignore('mod:type') to exclude recipe from scanning for items, in case it breaks the recipes more than improves - LatvianModder
+
+		kubejs-1604.3.4.142-forge.jar:
+			* Fixed stupid crash that shouldn't even be possible - LatvianModder
+
+		kubejs-1604.3.4.141-forge.jar:
+			* Added new, improved tooltip event - LatvianModder
+			* Fixed servers not shutting down - LatvianModder
+			* Updated rhino dep - LatvianModder
+
+	Lollipop (Lollipop-1.16.4-3.2.3.jar --> Lollipop-1.16.4-3.2.4.jar):
+		Lollipop-1.16.4-3.2.4.jar:
+			No changelog available.
+
+	Lost Trinkets (LostTrinkets-1.16.4-0.1.6.jar --> LostTrinkets-1.16.4-0.1.10.jar):
+		LostTrinkets-1.16.4-0.1.10.jar:
+			0.1.10
+			* Added config for unlock cooldown delay - Thanks to BlueAgent
+			* Added config for non-random trinkets - Thanks to BlueAgent
+			0.1.9
+			* Fixed Tha Ghost does not work bug, Closes #20 - Thanks to BlueAgent
+			* Updated Lollipop to 3.2.4.
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+
+		LostTrinkets-1.16.4-0.1.9.jar:
+			0.1.9
+			* Fixed Tha Ghost does not work bug, Closes #20 - Thanks to BlueAgent
+			* Fixed a Dummy crash.
+			* Updated Lollipop to 3.2.4.
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+
+		LostTrinkets-1.16.4-0.1.8.jar:
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+			* First release.
+
+		LostTrinkets-1.16.4-0.1.7.jar:
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+			* First release.
+
+	Nature's Aura (NaturesAura-33.2.jar --> NaturesAura-33.4.jar):
+		NaturesAura-33.4.jar:
+			* Fixed a crash with world gen and some mods
+			* Fixed a crash when looking at effect powder using The One Probe
+			* Changed the way the feature config works to "soft-disable" the chunk loader and rf generator
+			* Possibly fixed a deadlock with chunk loaders
+
+		NaturesAura-33.3.jar:
+			* Reordered advancements a bit to account for proper progression
+			* Fixed dispensing ender pearls causing servers to crash
+
+	Neat (Neat 1.7-24.jar --> Neat 1.7-25.jar):
+		Neat 1.7-25.jar:
+			* Fixed blacklist not working
+
+	ObserverLib (ObserverLib-1.16.4-1.5.0.jar --> ObserverLib-1.16.4-1.5.1.jar):
+		ObserverLib-1.16.4-1.5.1.jar:
+			Built with:
+			* Forge 35.1.13 (Requires any 1.16.4 Forge)
+			Fixes:
+			* Fixes occasional deadlock between reading and writing section data
+
+	Occultism (occultism-0.2.20.jar --> occultism-1.0.3.jar):
+		occultism-1.0.3.jar:
+			[Automated Build]
+			Find changes at [https://github.com/klikli-dev/occultism/releases](https://github.com/klikli-dev/occultism/releases)
+
+		occultism-1.0.2.jar:
+			[Automated Build]
+			Find changes at [https://github.com/klikli-dev/occultism/releases](https://github.com/klikli-dev/occultism/releases)
+
+		occultism-1.0.1.jar:
+			[Automated Build]
+			Find changes at [https://github.com/klikli-dev/occultism/releases](https://github.com/klikli-dev/occultism/releases)
+
+		occultism-1.0.0.jar:
+			[Automated Build]
+			Find changes at [https://github.com/klikli-dev/occultism/releases](https://github.com/klikli-dev/occultism/releases)
+
+	Oh The Biomes You'll Go ( Biomes You Go 1.1.6 MCV: 1.16.3/1.16.4 --> Biomes You Go 1.1.7-BETA-v2 MCV: 1.16.4):
+		Biomes You Go 1.1.7-BETA-v2 MCV: 1.16.4:
+			-Fix melting & xray black ice.
+			-Force Chocolate fix dependency
+			-Update lang file
+
+		Biomes You Go 1.1.7-BETA-v1 MCV: 1.16.4:
+			-Add a bunch of missing loot tables/recipes/other data
+			-Clean up /gendata datapack export
+			-Weighted End Biomes(with datapack/modded biome support)
+			-Add byg-end-biomes.json(read every world load)
+			-Add byg-end-sub-biomes.json(read every world load)
+			-Revamp Ethereal Islands
+			-Add Shattered Viscal Isles
+			-Add bulbis gardens edge
+			-Add Ethereal Forest
+			-Add Ethereal Clearing
+			-Revamp Ethereal Islands, Viscal Isles, Bulbis Gardens, Cryptic wastes, Nightshade forest
+			-Some new blocks(i.e Therium)
+			-Dev note: Therium is no longer exclusive to the Viscal Isles, in fact it spawns in all BYG biomes! Find extremely rare (ancient debris rare) therium deposits with a chance to have therium crystals growing on them. These cyrstals can only be placed on therium blocks & will grow & can be harvested like a crop
+			-Other stuff we dont remember rn lol
+			-Terraforged support for our end & nether biome sources
+
+	OpenBlocks Elevator (elevatorid-1.16.4-1.7.8.jar --> elevatorid-1.16.4-1.7.9.jar):
+		elevatorid-1.16.4-1.7.9.jar:
+			Prevent camouflage with tile entities. Fixes #71
+			Built with forge 1.16.4-35.1.32
+
+	PneumaticCraft: Repressurized (pneumaticcraft-repressurized-1.16.4-2.9.0-111.jar --> pneumaticcraft-repressurized-1.16.4-2.9.2-116.jar):
+		pneumaticcraft-repressurized-1.16.4-2.9.2-116.jar:
+			IMPORTANT: this release requires Forge 35.1.34 or later!
+			2.9.2-116 (13 Jan 2021)
+			Updates
+			* Drones (and Guard Drones, but not other basic drones) can now take up to 15 Armor Upgrades
+			* - Each Armor Upgrade gives the Drone one point of armor, so 15 is equivalent to a full suit of Iron armor
+			* - However, any Armor Upgrades over 6 will apply a small movement speed penalty to the Drone, so you will need to balance protection vs. movement
+			Fixes
+			* Fixed changes to pressure levels in Pressure Gauge Module GUI not being properly sync'd to server
+			* Fixed mobs not properly targeting Drones for retaliation when attacked by them
+			* Fixed Drone's targeting laser rendering too low on the Y axis
+			* Fixed Vacuum Pump GUI showing wrong vacuum pressure when Volume Upgrades are installed (display bug only: actual pressure was OK)
+			* Fixed Liquid Hopper ignoring "leave 1000mB" mode when ejecting fluid via Dispenser Upgrade
+			*
+			2.9.1-115 (11 Jan 2021)
+			This release was pulled to due a bad bug in Pressure Gauge GUI level updating. Get 2.9.2 instead.
+			Updates
+			* Security Station hacking is now back in game for the first time since 1.12.2!
+			* - Nuke Viruses now have a 3 second cooldown when used
+			* - General security station GUI cleanup
+			* - Entity Tracker upgrades now have diminishing returns in the Security Station for intrusion detection
+			* - Up to 12 Entity Tracker upgrades can be installed for 99% detection chance per node hacked
+			* - The Security Station no longer informs potential hackers how many Security Upgrades they need
+			* - The Security Station now deals a small amount of non-resistible damage to potential hackers who lack the correct number of Security Upgrades
+			* - Nuke Viruses and STOP! Worms are now level 5 villager trades, with fewer available, and cost more than they used to (they were too easily obtained before)
+			* Amadron offers can now have a maximum stock, i.e. the maximum number of times an offer can be bought before it becomes unavailable
+			* - This is shown as a blue number on the offer in the Amadron Tablet GUI (via the same mechanism that player->player trades use)
+			* - Random villager trades are now all limited by this maximum (to the same number they would be if you bought directly from the villager)
+			* - All core Amadron trades (e.g. PCB Blueprint or Emeralds to Lubricant) remain unlimited and can be bought as many times as you want
+			* - Limited trades are refreshed once per Minecraft day (when trades are reshuffled)
+			* - Custom trades (loaded from datapack) can take advantage of this with the "maxStock" JSON field. Set to -1 or omit entirely for unlimited trades.
+			Fixes
+			* Pneumatic Kick upgrade in the Pneumatic Boots now works on players too. Have fun...
+			* Drone fake players now use the owner's UUID and name again, which should resolve a lot of issues with protection mods such as FTB Chunks (and the Security Station) preventing drones from operating in the protected area
+			* Fixed some non-fatal errors in the startup log related to Mekanism fuel entries, when Mekanism isn't installed
+			* Fixed global variables not being properly sync'd and updated for GPS Tool & GPS Area Tools
+			* Cull area rendering for GPS Area Tools with very huge areas (>10000 blockpos), to prevent killing client framerate
+			* Fixed Jet Boots HUD always showing 0 speed for the player
+			* Fixed client crash when trying to open "Condition: Item Filter" widget manual entry from the Programmer GUI
+			* Amadrones will now try all sides of the target inventory/tank when delivering goods, not just the top
+			* - Prevents loss of goods (fluids especially) if there's any block on top the target inventory/tank
+
+	Portable Stonecutter (Portable Stonecutter-1.16.4-1.3.1 --> Portable Stonecutter-1.16.4-1.3.2):
+		Portable Stonecutter-1.16.4-1.3.2:
+			More bug fixes, after yet another server crash
+
+	Powah! (Powah-1.16.4-2.3.6.jar --> Powah-1.16.4-2.3.8.jar):
+		Powah-1.16.4-2.3.8.jar:
+			2.3.8
+			* Added Brazilian translation pt_br.json - Thanks to Mikeliro
+			* Added french translation fr_fr.json - Thanks to jordanamr
+			2.3.7
+			* Fixed Powah's dry ice and uraninite ores ConfiguredFeatures should be registered, closes #129.
+			* Fixed Solar Panel has wrong time, closes #132.
+			* Fixed Ender Cell/Ender Gate channel mismatch, closes #131.
+			2.3.6
+			* Fixed Configs for thermo_gen and magmator are mixed up, Closes #126.
+			* Fixed Excessive cable network size issues, Closes #128.
+			* Added uraninite storage blocks tags.
+			* Updated lollipop to v3.2.3.
+			2.3.5
+			* Fixed Impossible to disable worldgen, Closes #124.
+			2.3.4 (1.16.4)
+			* Initial port to 1.16.4
+			2.3.4
+			* Disabled energizing particle temporary to fix a crash.
+			2.3.3
+			* Fix Client Crash Using Powah and Forge 34.1.27+, Closes #119
+			2.3.2
+			* Fixed opening GUI instantly crashes Forge server, Closes #115.
+			* Updated lollipop to v3.2.2
+			2.3.1
+			* Fixed reactor gen mode not stopping reactor when is full.
+			* Fixed JEI not showing info.
+			* Random bug fixes.
+			* Updated lollipop to v3.2.1
+			2.3.0
+			* Did a full rewrite to the Powah: manual.
+			* Improved all tooltips.
+			* Added Energizing orb particles.
+			* Added Energizing orb progress overlay.
+			* Fixed player transmitter and energy hopper bounding boxes (voxel shapes).
+			* Fixed reactor and some other non chargeable blocks getting charged.
+			* Fixed graphics on Energy Cable are counter intuitive, Closes #107.
+			* Fixed cables not stacking, Closes #104.
+			* Moved to 1.16.3
+			* Clean-up.
+			* Updated lollipop to v3.2.0
+			2.2.0
+			* Fix player transmitter not checking top part position, Closes #100.
+			* Fix Uraninite ores breaking hardness.
+			* Fixed random bugs.
+			* Updated lollipop to v3.0.0
+			2.1.3
+			* Added Reactor generation mode (if set to on the reactor will stop if is full and start when has less than 70% of energy).
+			* Fixed losing side config when chunk load/unload.
+			* Fixed Player transmitter not breaking properly.
+			* Updated lollipop to v2.1.3.
+			2.1.2
+			* Fixed magmator creates ungodly amount of pings in server, Closes #97.
+			* Added all uraninite ores to the forge:ores and forge:ores/uraninite tags, Closes #96.
+			* Updated lollipop to v2.1.2.
+			2.1.1
+			* Ignored breaking change from newer forge to fix the crash (now should work with all forge versions without crashing).
+			* Changed min forge version to 32.0.14.
+			* Updated lollipop to v2.1.1.
+			2.1.0
+			* Fixed crash caused by the breaking change from forge 32.0.67.
+			* Changed min forge version to 32.0.67.
+			* Updated lollipop to v2.1.0.
+			2.0.4
+			* Re-implemented Powah! manual.
+			* Re-implemented missing discharger functions.
+			* Fixed Redstone configuration for all blocks.
+			* The fixed reactor not accepting solid coolant.
+			* Updated lollipop to v2.0.2.
+			2.0.3
+			* Fixed crash when adding a binding card to the player transmitter, Closes #90.
+			* Fixed binding card not rendering correctly.
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+		Powah-1.16.4-2.3.7.jar:
+			2.3.7
+			* Fixed Powah's dry ice and uraninite ores ConfiguredFeatures should be registered, closes #129.
+			* Fixed Solar Panel has wrong time, closes #132.
+			* Fixed Ender Cell/Ender Gate channel mismatch, closes #131.
+			2.3.6
+			* Fixed Configs for thermo_gen and magmator are mixed up, Closes #126.
+			* Fixed Excessive cable network size issues, Closes #128.
+			* Added uraninite storage blocks tags.
+			* Updated lollipop to v3.2.3.
+			2.3.5
+			* Fixed Impossible to disable worldgen, Closes #124.
+			2.3.4 (1.16.4)
+			* Initial port to 1.16.4
+			2.3.4
+			* Disabled energizing particle temporary to fix a crash.
+			2.3.3
+			* Fix Client Crash Using Powah and Forge 34.1.27+, Closes #119
+			2.3.2
+			* Fixed opening GUI instantly crashes Forge server, Closes #115.
+			* Updated lollipop to v3.2.2
+			2.3.1
+			* Fixed reactor gen mode not stopping reactor when is full.
+			* Fixed JEI not showing info.
+			* Random bug fixes.
+			* Updated lollipop to v3.2.1
+			2.3.0
+			* Did a full rewrite to the Powah: manual.
+			* Improved all tooltips.
+			* Added Energizing orb particles.
+			* Added Energizing orb progress overlay.
+			* Fixed player transmitter and energy hopper bounding boxes (voxel shapes).
+			* Fixed reactor and some other non chargeable blocks getting charged.
+			* Fixed graphics on Energy Cable are counter intuitive, Closes #107.
+			* Fixed cables not stacking, Closes #104.
+			* Moved to 1.16.3
+			* Clean-up.
+			* Updated lollipop to v3.2.0
+			2.2.0
+			* Fix player transmitter not checking top part position, Closes #100.
+			* Fix Uraninite ores breaking hardness.
+			* Fixed random bugs.
+			* Updated lollipop to v3.0.0
+			2.1.3
+			* Added Reactor generation mode (if set to on the reactor will stop if is full and start when has less than 70% of energy).
+			* Fixed losing side config when chunk load/unload.
+			* Fixed Player transmitter not breaking properly.
+			* Updated lollipop to v2.1.3.
+			2.1.2
+			* Fixed magmator creates ungodly amount of pings in server, Closes #97.
+			* Added all uraninite ores to the forge:ores and forge:ores/uraninite tags, Closes #96.
+			* Updated lollipop to v2.1.2.
+			2.1.1
+			* Ignored breaking change from newer forge to fix the crash (now should work with all forge versions without crashing).
+			* Changed min forge version to 32.0.14.
+			* Updated lollipop to v2.1.1.
+			2.1.0
+			* Fixed crash caused by the breaking change from forge 32.0.67.
+			* Changed min forge version to 32.0.67.
+			* Updated lollipop to v2.1.0.
+			2.0.4
+			* Re-implemented Powah! manual.
+			* Re-implemented missing discharger functions.
+			* Fixed Redstone configuration for all blocks.
+			* The fixed reactor not accepting solid coolant.
+			* Updated lollipop to v2.0.2.
+			2.0.3
+			* Fixed crash when adding a binding card to the player transmitter, Closes #90.
+			* Fixed binding card not rendering correctly.
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+	Quark (Quark-r2.4-289.jar --> Quark-r2.4-294.jar):
+		Quark-r2.4-294.jar:
+			* Added config options to make Ancient Tomes generate in Nether Fortresses and Underwater Ruins.
+			* Ancient Tomes now generate in Woodland Mansions and Bastions.
+			* Attempted to fix a crash with the Usage Ticker again.
+			* Configs now add an empty line before comments to be a bit more readable.
+			* Fix scuffed pickarang config descriptions.
+			* Fixed a crash on startup (? I can't reproduce it)
+			* Fixed food tooltips for foods with 0 food value displaying an empty line.
+			* Fixed food tooltips for items with stupid amounts of food. Thanks funny rat man.
+			* Fixed setting the rune apply cost to 0 causing them to not work.
+			* Fixed Stained Planks not being tagged minecraft:planks.
+			* Fixed White Cave Crystals having the wrong texture in hand.
+			* Limited how many blocks the Monster Box generator can move before trying to place one. Should make it so you no longer get a massive spam of them in mega dungeons.
+			* The Matrix Enchanting Table is now a new block, this should fix crashes with Apotheosis.
+			* Tile entity blocks can no longer be placed on the tips of scaffolds.
+
+		Quark-r2.4-293.jar:
+			* Fixed a crash with the usage ticker running before the world is properly loaded.
+
+		Quark-r2.4-292.jar:
+			* Changed some code around to help prevent potential multithreading related crashes.
+
+		Quark-r2.4-291.jar:
+			* Added a nerf to wool drops in the optional Game Nerfs module.
+			* Changed the way the mixed chest recipe works to prevent it from taking over other mods' chest recipes.
+			* Fixed a crash with the usage ticker.
+			* Fixed a startup crash with pathfinder maps.
+			* Fixed the myalite config not working properly.
+
+		Quark-r2.4-290.jar:
+			* Fixed dupe with crafting in the backpack screen.
+			* Fixed slightly unnecessary memory usage with dispensers placing blocks.
+
+	Refined Storage for ComputerCraft (RefinedStorage4ComputerCraft-1.16.4-1.1.0.jar --> Storage4ComputerCraft-1.16.4-1.2.1.jar):
+		Storage4ComputerCraft-1.16.4-1.2.1.jar:
+			Fixes crash in 1.2.0 when breaking RS Peripheral while connected to computer network.
+
+		Storage4ComputerCraft-1.16.4-1.2.0.jar:
+			This is a beta release. That means I think it probably won't set your world on fire (unless I just wanted to watch it burn). But you should still make a backup first.
+			Note that the mod has changed names! I'll be updating the pages shortly, but the new version is called "Storage for ComputerCraft" rather than "Refined Storage for ComputerCraft" because the new version adds experimental support for Applied Energistics 2 as well. All the internal ids etc for the mod have also changed, but I did a magic such that you can still safely upgrade older worlds without losing anything. This is a one-way trip, though: if you later try to swap back to 1.1.0 or older then the peripheral blocks will vanish and you'll have to craft them again.
+			AE2 is an optional dependency -- you do not need to include it in your mod list if you don't want to. Conversely, however, Refined Storage is still a required dependency -- even if you only want to use AE2, you have to have RS installed if you want to use this mod. That will probably change in a future version.
+			AutoStock is also included and supported for AE2, although since AE2 doesn't support fluid crafting it has fewer features. You can connect both RS and AE2 to the same computer if you like, but only when using your own programs -- AutoStock won't like it; keep it on separate systems.
+			Note that for balance reasons, the ME Peripheral for AE2 has some fairly hefty power and channel requirements, so it's not something you want to be installing early game.
+
+	Rhino (rhino-1.7.13.9.jar --> rhino-1.7.13.10.jar):
+		rhino-1.7.13.10.jar:
+			* Added @RemapForJS - LatvianModder
+			* Added @Wrap and TypeWrappers - LatvianModder
+			* Added HideFromJS annotation. Use this to hide fields, methods, classes, constructors and packages - LatvianModder
+
+	Runelic (Runelic-1.16.4-6.0.2.jar --> Runelic-1.16.4-6.0.4.jar):
+		Runelic-1.16.4-6.0.4.jar:
+			* Fixed JAR signing and speed up build times. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Runelic)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		Runelic-1.16.4-6.0.3.jar:
+			* Added logs to git ignore. - Tyler Hancock
+			* Compile against newer version of Forge. - Tyler Hancock
+			* Moved to local maven transfer. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Runelic)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Shrink. (Shrink-1.16.4-1.0.5.jar --> Shrink-1.16.4-1.0.7.jar):
+		Shrink-1.16.4-1.0.7.jar:
+			Fixed an issue with shrunken mobs hitboxes.
+			Fixed an issue with shrunken mobs not staying shrunk on reload.
+
+		Shrink-1.16.4-1.0.6.jar:
+			Fixed a few little bugs.
+			Added the ability to catch entities in glass bottles.
+
+	Sophisticated Backpacks (sophisticatedbackpacks-1.16.4-1.2.1.124.jar --> sophisticatedbackpacks-1.16.4-1.2.1.127.jar):
+		sophisticatedbackpacks-1.16.4-1.2.1.127.jar:
+			Fixed issue with changes in first player's slot closing backpack gui if backpack was open in chest plate or curios slot using keybind
+			Fixed filter logic in general to ignore Damage tag and only compare the rest of the NBT tag values when player selects to match nbt, but ignore damage
+
+	Spawner Bug Fix (SpawnerFix-1.16.2-1.0.0.1.jar --> SpawnerFix-1.16.2-1.0.0.2.jar):
+		SpawnerFix-1.16.2-1.0.0.2.jar:
+			Support Zombified Piglin
+
+		SpawnerFix-1.16.1-1.0.0.2.jar:
+			Support Zombified Piglin
+
+	Structure Gel API (Structure Gel API 1.16.4-v1.7.2 --> Structure Gel 1.16.4-v1.7.4):
+		Structure Gel 1.16.4-v1.7.4:
+			Major bugfix update
+			[https://gitlab.com/modding-legacy/structure-gel-api/-/blob/1.16.4/jars/1.16.4-v1.7.4%20Changelog.md]()
+
+		Structure Gel 1.16.4-v1.7.3:
+			CRASHES GAME ON LOADING EXISTING WORLD. PLEASE USE 1.16.4-v1.7.4 OR NEWER
+			Fixed bugs related to structures not placing in the correct world types
+			[Changelog]()
+
+	The Undergarden (The Undergarden 0.4.1 --> The Undergarden 0.4.3):
+		The Undergarden 0.4.3:
+			The Undergarden 0.4.3
+			* Hopefully fixed random issue where Undergarden portals regenerate every time you use them
+			* Changed Undergarden portal texture and gave it a new particle
+			* Made Undergarden trees capable of generating on any block tagged as forge:dirt, which allows for saplings to grow on any grass/dirt block
+			* Updated mods.toml in anticipation for 1.16.5, which will probably work fine when it's out
+
+		The Undergarden 0.4.2:
+			The Undergarden 0.4.2
+			* Fixed an issue with completely overwriting stripping logs and tilling land (thanks KingLemming)
+			* Probably fixed an issue related to stuff like the vanilla Composter
+			* Made the Undergarden have a coordinate scale of 4 (half of the Nether's)
+			* Vastly improved Undergarden teleportation logic (it's just a copy of vanilla's pretty much lol)
+			Thanks for 100k downloads!
+
+	Titanium (titanium-1.16.4-3.2.4.jar --> titanium-1.16.4-3.2.5.jar):
+		titanium-1.16.4-3.2.5.jar:
+			[https://github.com/InnovativeOnlineIndustries/Titanium/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Titanium/blob/changelog/CHANGELOG.md)
+
+	Trash Cans (trashcans-1.0.6-mc1.16.4 --> trashcans-1.0.6a-mc1.16.4):
+		trashcans-1.0.6a-mc1.16.4:
+			* Mekanism radioactive gasses are now blocked from the liquid trash can
+			* fixed the liquid trash can accepting blacklisted gasses
+
+		trashcans-1.0.6a-mc1.16.3:
+			* Mekanism radioactive gasses are now blocked from the liquid trash can
+			* fixed the liquid trash can accepting blacklisted gasses
+
+		trashcans-1.0.6a-mc1.16.2:
+			* Mekanism radioactive gasses are now blocked from the liquid trash can
+			* fixed the liquid trash can accepting blacklisted gasses
+
+		trashcans-1.0.6a-mc1.16.1:
+			* Mekanism radioactive gasses are now blocked from the liquid trash can
+			* fixed the liquid trash can accepting blacklisted gasses
+
+	XNet Gases (XNetGases-1.16.4-2.1.1.jar --> XNetGases-1.16.4-2.2.3.jar):
+		XNetGases-1.16.4-2.2.3.jar:
+			Logic channel for slurries and gases. [Feature request](https://github.com/Terrails/XNetGases/issues/4)
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

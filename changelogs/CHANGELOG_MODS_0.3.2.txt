@@ -1,0 +1,46 @@
+=======================================
+Enigmatica6 0.3.1 --> Enigmatica6 0.3.2
+=======================================
+
+Updated:
+	Ars Nouveau (ars_nouveau-1.16.4-1.9.2.jar --> ars_nouveau-1.16.4-1.9.3.jar):
+		ars_nouveau-1.16.4-1.9.3.jar:
+			Fixes higher tier effects appearing in lower tier books
+			Fixes Runes costing the caster multiple times
+			Void Jars now respect the Pickup Spell (Thanks Derringer!)
+			Break now uses harvest level instead of hardness, one amplify is required per harvest level
+			Fixes stuttering mana HUD on servers
+			Fixes datapack apparatus recipes breaking with less than 8 items
+
+	Astral Sorcery (AstralSorcery-1.16.4-1.13.7.jar --> AstralSorcery-1.16.4-1.13.8.jar):
+		AstralSorcery-1.16.4-1.13.8.jar:
+			Built with:
+			* Forge: 35.1.7 (Requires 35.0.2+)
+			* ObserverLib: 1.16.4-1.4.4 (Requires 1.4.4+)
+			* Curios: 1.16.4-4.0.2.1 (Requires 4.0.2+)
+			Fixes:
+			* Fixes CME on PerkAttributeType application cache reading
+			* Fixes incorrect data format loading from version 1.13.1
+			* Fixes collector crystal crashing if moved by means such as block teleportation or CarryOn moving; instead just does nothing as its constellation data is lost
+			* Fixes java's LinkedHashMap not removing old entries
+
+	Builders Crafts & Additions (Forge) (buildersaddition-1.16.2/3/4-20201214d --> buildersaddition-1.16.2/3/4-20201220b):
+		buildersaddition-1.16.2/3/4-20201220b:
+			+ Winter painting.
+			~ Cupboard waterlogging bug.
+			~ Itemframe scale and position of several items.
+
+	FTB Chunks (ftb-chunks-1604.2.2.53.jar --> ftb-chunks-1604.2.2.54.jar):
+		ftb-chunks-1604.2.2.54.jar:
+			* Added fir and pine leaves support from byg - LatvianModder
+
+	Quark (Quark-r2.4-280.jar --> Quark-r2.4-281.jar):
+		Quark-r2.4-281.jar:
+			* Added a bunch of more blocks that can be added to flower pots. (muzikbike)
+			* Added Chorus Vegetation to the end.
+			* Added Myalite to the End, a new stone type to match the crystals added last update.
+			* Added Red Blossom Trees, which spawn in Badlands.
+			* Added support for a bunch of other mods to the default variant chest config. (BugmanBugman)
+			* Changed the way the Myalite colors are generated to use a noise pattern.
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

@@ -1,0 +1,85 @@
+{
+  "header": {
+    "version": "2-beta",
+    "mc_version": "1.16.4",
+    "name": "Basic Industrial Turbine",
+    "author": "Enigmatica",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 4,
+      "max_y": 8,
+      "max_z": 4
+    },
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 3,
+          "item": {
+            "id": "mekanismgenerators:electromagnetic_coil"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 8,
+          "item": {
+            "id": "mekanism:pressure_disperser"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "mekanismgenerators:rotational_complex"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 6,
+          "item": {
+            "id": "mekanismgenerators:saturating_condenser"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 58,
+          "item": {
+            "id": "mekanism:structural_glass"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 69,
+          "item": {
+            "id": "mekanismgenerators:turbine_casing"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 5,
+          "item": {
+            "id": "mekanismgenerators:turbine_rotor"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 2,
+          "item": {
+            "id": "mekanismgenerators:turbine_valve"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 33,
+          "item": {
+            "id": "mekanismgenerators:turbine_vent"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAAAKWWsXLTQBCGT7drWxgeAIaCUDC01CnpKGAoUkAaz8U6HA2ylNFJIfBmvB0r3ycmZjKZZHDhT3f3a7X/+rTntXNPnFZhCGtnl+t87cStU+zr0NS/Ym8Lbu0WaQhDLJ1+CvvoXu/j99DWab+LbezD0PXpdBj7i7qNm21Idbub7nlgsBdzsNM09OPW4oRms2tCSo8IcnJPRtehuY6PiPXqvlixHR4R6uVfb1d9TGns46aq01Xs06R/cJi3d2SUwlSpwWq92XZtFduHhVy79ee+swyGOqbSPf1hc33T7XaxcsU795B69p0NH5H9mztiWQzLvWvtp952+6sm3vxnOWITt0Pf7cOujUO9tah1M+1uueqSWozf7tangB4K1CNB4Yoiqzxj4UY9CmA66KEQWI8eYDroofBgPUrAdNBDITGdE1yggx7KAh10y/zwAnooS3TQrdBBD2WFDtr2yOWBHgrUci7gXEFHBTMF6rxU5C+FJsxjOKV0GEO7MY+h1SGPF1lsfrMIeijLvK7Q/OaboYeyQrdii5QkAT2UEh/l8VYqoIcCdS5BMXE57SePb89ded4zD6dHHuaFeThZO8wr83CycphfMH/goS6euvjJvGcsy7yucFo6mIYeygrdilemzOMCeiglfsvjV6uAHgrUeUsUmQpNKNRBuFvwL/gXfAu+Bb+CX8GvsA8Ev4Jfwa+wD4R9IOwDwa/gV/Ar+BX8Cn7/eYMzPRSoc4sp8itQFHlreMZSoIO2pPQXpb8o/SXr4JQq/UXpL0p/yTpo30p/UfqL0l+yDloJlP6i9Belv2QdtDor/UXpL0p/yTpodVb6i9JflP6i9Belzkp/UfqL0l+UOuvaLS9jqGJfumUYh0s7ip59HId4VsdvjZ2Gtn7RjW2VzPO+br9SHrv8Ml+Gm3OKYpeToMyXX+bZuj2f02mnA+f5e/tTsz350Faj/Uexk+nkLJ+FdsDcOqvKwy97cjHWTWWZ7EK1i0M6rcb9/ufm1pH2B2Tflg93CQAA"
+}

@@ -1,0 +1,17 @@
+{
+    "name" : "lumium",
+    "hunger": 3,
+    "honeyColor": "#e5f3b5",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:night_vision",
+        "duration": 3600,
+        "strength": 1,
+        "chance": 1
+      }
+    ]
+  }

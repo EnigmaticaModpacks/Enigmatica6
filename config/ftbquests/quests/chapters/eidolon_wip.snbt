@@ -1,0 +1,858 @@
+{
+	id: "0000000000000E7F"
+	group: "5A8B89F87F77CF4C"
+	order_index: 5
+	filename: "eidolon_wip"
+	title: "Eidolon"
+	icon: "eidolon:unholy_symbol"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Eidolon!"
+			icon: "eidolon:codex"
+			x: 1.5d
+			y: 0.5d
+			shape: "hexagon"
+			subtitle: "It means \"spirit-image of a living or dead person\" by the way"
+			description: [
+				"Eidolon is a dark magic mod focused on prayers, alchemy, sacrifices and magic shenanigans! "
+				""
+				"While it is still very early in development, it already offers some cool gadgets and toys to play around with, and lays a really strong foundation for an exciting future to come. So what are you waiting for, jump in before everyone else does!"
+				""
+				"Grab your Ars Ecclesia, guide to every step you’ll take in the mod and get ready to please the Dark Lord."
+				""
+				"~Merlo"
+			]
+			size: 1.5d
+			optional: true
+			id: "0000000000000E80"
+			tasks: [{
+				id: "5BB374740D4295E0"
+				type: "item"
+				item: "eidolon:tattered_cloth"
+			}]
+			rewards: [{
+				id: "5855578CE2117C3E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Basic Altar"
+			icon: "eidolon:wooden_altar"
+			x: 1.5d
+			y: 3.5d
+			subtitle: "Just a casual prayer to the Dark Lord"
+			description: [
+				"You should now know the Wicked Sign and how to use it to perform a Dark Prayer, but where should you perform it? Let’s build an altar for all our praying needs!"
+				""
+				"A Wooden Altar is the most basic one you can craft, so that will be fine for now. You’ll also need an Effigy, so make one out of straw for now and place it on top of the altar."
+				""
+				"Praying to the Effigy will now raise your favor with the Dark Lord, and if you do it enough he might even decide to reveal some new knowledge to you…"
+				""
+				"Be careful though: any prayer can only be performed once per day, any duplicate attempts will fail. You’ll know if a prayer has worked because the Effigy’s eyes will light up and you’ll hear a thunderstorm sound."
+				""
+				"I recommend setting up an altar as soon as possible and praying once per day even if you don’t plan on progressing in the mod: that way you’ll be ready when the time comes."
+			]
+			dependencies: ["0000000000000E85"]
+			min_width: 300
+			id: "0000000000000E83"
+			tasks: [
+				{
+					id: "0000000000000E84"
+					type: "item"
+					item: "eidolon:wooden_altar"
+				}
+				{
+					id: "0000000000000E96"
+					type: "item"
+					item: "eidolon:straw_effigy"
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000ECE"
+					type: "item"
+					title: "Candle"
+					item: "eidolon:candle"
+					count: 2
+				}
+				{
+					id: "0000000000000ECF"
+					type: "item"
+					title: "Zombie Head"
+					item: "minecraft:zombie_head"
+				}
+			]
+		}
+		{
+			title: "Signs and Chants"
+			x: 1.5d
+			y: 2.0d
+			subtitle: "This is going to be spooky..."
+			description: [
+				"Chants are an important mechanic in Eidolon, that will allow you to progress in Theurgy and unlock the more powerful items and tools in the mod. "
+				""
+				"To perform chants you’ll need to learn signs and then combine them from your Ars Ecclesia to compose the correct sequence for the chant you want."
+				""
+				"While most signs are learned from the gods themselves while progressing in theurgy, a few basic ones might be known to magical users in the normal world."
+				""
+				"Try paying a visit to your local witch and toss her your Ars Ecclesia, you might learn something new..."
+			]
+			dependencies: ["0000000000000E80"]
+			id: "0000000000000E85"
+			tasks: [{
+				id: "0000000000000E86"
+				type: "checkmark"
+				title: "Chants"
+				icon: {
+					id: "eidolon:warlock_hat"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000ECD"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Rituals"
+			icon: "eidolon:brazier"
+			x: 4.5d
+			y: 2.0d
+			subtitle: "It's lit fam!"
+			description: [
+				"Rituals are a way to create certain items or get certain effects to happen, like turn the day into night or viceversa, summon mobs and more (check the Ars Ecclesia for a complete list)."
+				""
+				"To start out, place a Brazier in the center of your setup, and then surround it with a number of Stone Hands. You will then need to follow the recipe in the book and place items in the middle and on the Hands."
+				""
+				"When you’re ready, take a flint and steel and light up the Brazier to start the ritual."
+			]
+			dependencies: ["0000000000000E80"]
+			id: "0000000000000E87"
+			tasks: [
+				{
+					id: "0000000000000E88"
+					type: "item"
+					item: "eidolon:brazier"
+				}
+				{
+					id: "0000000000000E89"
+					type: "item"
+					item: "eidolon:stone_hand"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000EC6"
+					type: "item"
+					title: "Stone Hand"
+					item: "eidolon:stone_hand"
+					count: 2
+				}
+				{
+					id: "0000000000000EC7"
+					type: "item"
+					title: "Enchanted Ash"
+					item: "eidolon:enchanted_ash"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			subtitle: "Spooky Scary Focuses"
+			description: [
+				"Some rituals, like the mob summon ones, require a more advanced item receptacle, identified by a different texture in the Ritual recipe."
+				""
+				"To perform these rituals you’ll need to craft a Necrotic Focus and place it around the Brazier. Like a normal Stone Hand you can place items on it, but for those special rituals one particular item must be on the Necrotic Focus."
+				""
+				"Make sure you got the right one!"
+			]
+			dependencies: ["0000000000000E87"]
+			id: "0000000000000E8A"
+			tasks: [{
+				id: "0000000000000E8B"
+				type: "item"
+				item: "eidolon:necrotic_focus"
+			}]
+			rewards: [{
+				id: "0000000000000EC9"
+				type: "item"
+				title: "Potion of Harming"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+			}]
+		}
+		{
+			title: "Pewter"
+			icon: "eidolon:pewter_ingot"
+			x: -1.5d
+			y: 2.0d
+			subtitle: "Let's go fight Brock!"
+			description: [
+				"One of the first basic resources you’ll need for many items in the mod is Pewter, an alloy of iron and lead."
+				""
+				"You can craft it in most alloying machines, or also by simply combining the two ingots and smelting the blend you get by doing so. Stock up on a bunch, you’ll need it!"
+			]
+			dependencies: ["0000000000000E80"]
+			id: "0000000000000E8E"
+			tasks: [
+				{
+					id: "0000000000000E8F"
+					type: "item"
+					item: "eidolon:pewter_ingot"
+					count: 16L
+				}
+				{
+					id: "0000000000000EBB"
+					type: "item"
+					item: "eidolon:pewter_inlay"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000EBC"
+					type: "item"
+					title: "Pewter Blend"
+					item: "eidolon:pewter_blend"
+					count: 8
+				}
+				{
+					id: "0000000000000EBD"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			subtitle: "Wouldn't be a magic mod without one of these!"
+			description: [
+				"Many ingredients in Eidolon are made in the Crucible, so you’ll need to get familiar with it. Craft one, fill it with water, place it above a heat source, like lava or a magma block, and wait for the water to boil."
+				""
+				"You’ll notice Crucible recipes come in different steps you’ll need to follow. Throw all the items for a step into the crucible, wait for the water to change color and then quickly drop all the items for the next step in, until all steps are done."
+				""
+				"If you’re too slow, the water will evaporate and you’ll lose the items you dropped in so far, so be prepared! "
+				""
+				"Some recipes also require you to stir the Crucible: you can do that by right clicking the Crucible when it’s the right time."
+			]
+			dependencies: ["0000000000000E8E"]
+			min_width: 300
+			id: "0000000000000E90"
+			tasks: [{
+				id: "0000000000000E91"
+				type: "item"
+				title: "Crucible"
+				icon: "eidolon:crucible"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "eidolon:crucible"
+								Count: 1b
+							}
+							{
+								id: "farmersdelight:cooking_pot"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0000000000000EBE"
+					type: "item"
+					title: "Redstone Dust"
+					item: "minecraft:redstone"
+					count: 2
+				}
+				{
+					id: "0000000000000EBF"
+					type: "item"
+					title: "Soul Shard"
+					item: "eidolon:soul_shard"
+				}
+				{
+					id: "0000000000000EC0"
+					type: "item"
+					title: "Gold Ingot"
+					item: "minecraft:gold_ingot"
+					count: 2
+				}
+				{
+					id: "0000000000000EC1"
+					type: "item"
+					title: "Magma Block"
+					item: "minecraft:magma_block"
+				}
+			]
+		}
+		{
+			title: "Crystallization Ritual"
+			x: 4.0d
+			y: 3.0d
+			subtitle: "Turn them into shards!"
+			description: [
+				"The first ritual you’ll want to perform is the Crystallization Ritual. It will kill Undead mobs nearby and turn them into Soul Shards, which are needed for many items and recipes throughout the mod."
+				""
+				"You can try to use the Arcane Ashes you got from the last quest to trap mobs: you can place them on the ground like redstone and mobs won’t be able to walk through them."
+				"Wrap them around a group of mobs and you have a great cage you can use to start your sacrifices!"
+				""
+				"You can see the items needed for the ritual inside your Ars Ecclesia."
+			]
+			dependencies: ["0000000000000E87"]
+			id: "0000000000000E92"
+			tasks: [{
+				id: "0000000000000E93"
+				type: "item"
+				item: "eidolon:soul_shard"
+				count: 16L
+			}]
+			rewards: [{
+				id: "0000000000000EC8"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			subtitle: "I thought it was green!"
+			description: [
+				"Most magic items in Eidolon require slightly more advanced crafting than a regular crafting table, so you’ll need to upgrade to a magic workbench."
+				""
+				"It’s pretty straight forward: it works exactly like a normal workbench (and can be used as one), but it has four additional slots you’ll need to use for certain magic recipes. "
+			]
+			dependencies: ["0000000000000E8E"]
+			id: "0000000000000E94"
+			tasks: [{
+				id: "0000000000000E95"
+				type: "item"
+				title: "Magic Workbench"
+				icon: "eidolon:worktable"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "masterfulmachinery:wicked_altar_controller"
+								Count: 1b
+							}
+							{
+								id: "eidolon:worktable"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000EC2"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Altar Upgrades: Lighting"
+			x: 2.5d
+			y: 4.0d
+			shape: "diamond"
+			subtitle: "No, not Lightning McQueen"
+			description: [
+				"You can put more stuff on your Altar to make it more powerful. There are two stats you can increase: "
+				""
+				"Power will make your prayers more powerful (and so it will take less time and less prayers for the Lord to reveal you new knowledge). "
+				""
+				"Capacity is currently unused, but it will allow for more powerful prayers to be cast to the altar in a future update."
+				""
+				"There are three different categories of upgrades, but note that items from the same category don’t stack, but the altar will instead always take the highest value for that category. "
+				""
+				"For example, if you put a Torch and a Candlestick on your altar, the bonus will only be +2 power. Items from different categories, however, stack as you’d expect."
+				""
+				"Check out the full list of viable upgrades in your Ars Ecclesia: for the lighting category, the best you can use is a Candlestick (or a Candle)."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000E83"]
+			optional: true
+			min_width: 300
+			id: "0000000000000E97"
+			tasks: [{
+				id: "0000000000000E98"
+				type: "item"
+				item: "eidolon:candlestick"
+			}]
+			rewards: [{
+				id: "0000000000000ED0"
+				type: "item"
+				title: "Basic Amulet"
+				item: "eidolon:basic_amulet"
+			}]
+		}
+		{
+			title: "Altar Upgrades: Skulls"
+			x: 3.0d
+			y: 3.5d
+			shape: "diamond"
+			subtitle: "Every good magic mod needs some skulls!"
+			description: [
+				"You can put more stuff on your Altar to make it more powerful. There are two stats you can increase: "
+				""
+				"Power will make your prayers more powerful (and so it will take less time and less prayers for the Lord to reveal you new knowledge). "
+				""
+				"Capacity is currently unused, but it will allow for more powerful prayers to be cast to the altar in a future update."
+				""
+				"There are three different categories of upgrades, but note that items from the same category don’t stack, but the altar will instead always take the highest value for that category. "
+				""
+				"For example, if you put a Torch and a Candlestick on your altar, the bonus will only be +2 power. Items from different categories, however, stack as you’d expect."
+				""
+				"Check out the full list of viable upgrades in your Ars Ecclesia: for the skulls category, the best you can use is a Wither Skeleton Skull."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000E83"]
+			optional: true
+			min_width: 300
+			id: "0000000000000E99"
+			tasks: [{
+				id: "0000000000000E9A"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
+			rewards: [
+				{
+					id: "0000000000000ED1"
+					type: "item"
+					title: "Potion of Wither"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "apotheosis:wither"
+						}
+					}
+				}
+				{
+					id: "0000000000000ED2"
+					type: "item"
+					title: "Wither Skull Fragment"
+					item: "wstweaks:fragment"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "Altar Upgrades: Herbs"
+			x: 3.0d
+			y: 4.5d
+			shape: "diamond"
+			subtitle: "Puns 'n' roses"
+			description: [
+				"You can put more stuff on your Altar to make it more powerful. There are two stats you can increase: "
+				""
+				"Power will make your prayers more powerful (and so it will take less time and less prayers for the Lord to reveal you new knowledge). "
+				""
+				"Capacity is currently unused, but it will allow for more powerful prayers to be cast to the altar in a future update."
+				""
+				"There are three different categories of upgrades, but note that items from the same category don’t stack, but the altar will instead always take the highest value for that category. "
+				""
+				"For example, if you put a Torch and a Candlestick on your altar, the bonus will only be +2 power. Items from different categories, however, stack as you’d expect."
+				""
+				"Check out the full list of viable upgrades in your Ars Ecclesia: for the herbs category, the best you can use is a Wither Rose in a Flower Pot."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000E83"]
+			optional: true
+			min_width: 300
+			id: "0000000000000E9B"
+			tasks: [{
+				id: "0000000000000E9C"
+				type: "item"
+				item: "minecraft:wither_rose"
+			}]
+			rewards: [{
+				id: "0000000000000ED3"
+				type: "item"
+				title: "Wither Skull Fragment"
+				item: "wstweaks:fragment"
+				count: 3
+			}]
+		}
+		{
+			title: "Sacrifices"
+			x: 1.5d
+			y: 4.5d
+			subtitle: "Blood for the Blood God"
+			description: [
+				"After some time and with enough prayer, the Dark Lord will reveal a new sign to you: the Blood Sign."
+				""
+				"This can be used for a more powerful prayer that will give you more favor with the Lord, but that will also require a Blood Sacrifice to perform."
+				""
+				"Craft a Goblet and place it on top of the altar, then lure a living creature nearby and slay it. The Goblet will fill with blood, and you will be able to perform the Sacrifice."
+				""
+				"You should always try to do this over the Dark Prayer if you can, it’s much more effective and will cut down the time until you get new knowledge significantly."
+			]
+			dependencies: ["0000000000000E83"]
+			id: "0000000000000E9D"
+			tasks: [{
+				id: "0000000000000E9E"
+				type: "item"
+				item: "eidolon:goblet"
+			}]
+			rewards: [{
+				id: "0000000000000ED4"
+				type: "item"
+				title: "Fresh Sacrifice Meat"
+				item: "minecraft:pig_spawn_egg"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.5d
+			shape: "hexagon"
+			subtitle: "It's not a metal band logo?"
+			description: [
+				"With enough prayer and sacrifice, the Soul Sign will be revealed to you. It can be used to perform the Touch of Darkness chant."
+				""
+				"Drop a Pewter Inlay on the ground and perform the chant to create an Unholy Symbol. "
+				""
+				"This relic will be needed to craft the most advanced items in the mod, but you’ll only need one, since it won’t be used up during crafting."
+			]
+			dependencies: ["0000000000000E9D"]
+			id: "0000000000000E9F"
+			tasks: [{
+				id: "0000000000000EA0"
+				type: "item"
+				item: "eidolon:unholy_symbol"
+			}]
+			rewards: [{
+				id: "0000000000000ED5"
+				type: "item"
+				title: "Warped Sprouts"
+				item: "eidolon:warped_sprouts"
+				count: 8
+			}]
+		}
+		{
+			icon: "eidolon:stone_altar"
+			x: 1.5d
+			y: 6.5d
+			subtitle: "Rolling Stone Altars"
+			description: [
+				"The most powerful chants you’ll unlock may only be performed on an upgraded altar made from stone, with an Elder Statue on top."
+				""
+				" This is how you’ll be able to unlock the Mind Sign, the current final sign in the mod. It unfortunately doesn’t have any uses yet, but will allow you to unlock the mod’s endgame very soon."
+			]
+			dependencies: ["0000000000000E9F"]
+			id: "0000000000000EA1"
+			tasks: [
+				{
+					id: "0000000000000EA2"
+					type: "item"
+					item: "eidolon:stone_altar"
+				}
+				{
+					id: "0000000000000EA3"
+					type: "item"
+					item: "eidolon:unholy_effigy"
+				}
+			]
+		}
+		{
+			title: "Alchemy Practice!"
+			icon: "eidolon:arcane_gold_ingot"
+			x: -1.5d
+			y: 4.0d
+			subtitle: "Try not to burn the place down, will you?"
+			description: [
+				"Time for some magic to happen! Get to know some of the basic alchemy ingredients you’ll be using to craft magical items in Eidolon."
+				""
+				"Arcane Gold is done infusing regular Gold with a Soul Shard, you might want to take a look at the “Rituals” quest first, if you haven’t already."
+				""
+				"A Lesser Soul Gem also comes from a Soul Shard, but it’s an upgraded form of the latter. You'll need it for slightly more advanced recipes."
+				""
+				"If you want a more challenging recipe, try crafting a Shadow Gem too! It’ll be used in the more powerful and advanced recipes."
+			]
+			dependencies: ["0000000000000E90"]
+			id: "0000000000000EAA"
+			tasks: [
+				{
+					id: "0000000000000EAB"
+					type: "item"
+					item: "eidolon:arcane_gold_ingot"
+					count: 4L
+				}
+				{
+					id: "0000000000000EAC"
+					type: "item"
+					item: "eidolon:lesser_soul_gem"
+				}
+				{
+					id: "0000000000000EC3"
+					type: "item"
+					item: "eidolon:shadow_gem"
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000EC4"
+					type: "item"
+					title: "Soul Shard"
+					item: "eidolon:soul_shard"
+					count: 16
+				}
+				{
+					id: "0000000000000EC5"
+					type: "command"
+					title: "Alchemist's Delight"
+					icon: "kubejs:alchemists_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Sanguine Items"
+			icon: "eidolon:sanguine_amulet"
+			x: 5.0d
+			y: 4.5d
+			subtitle: "No, not the Blood Magic book!"
+			description: [
+				"Sanguine Items are the most powerful tools you can make through Rituals (for now)."
+				""
+				"The Sword of Sapping will deal wither damage and heal you for any damage inflicted by withering. "
+				""
+				"The Sanguine Amulet will act as a health buffer: when your HP is full it will drain your hunger/any regen effect you might have to fill up its own health bar, but it will be ready to give it back if you find yourself in a pinch."
+				""
+				"Be sure to read the Ars Ecclesia carefully, as these rituals not only require the items described in the book, but also living creatures nearby to use as sacrifices with a certain amount of health. "
+				""
+				"If the Ritual doesn’t find any, it might even try and take it from you..."
+			]
+			dependencies: ["0000000000000E8A"]
+			id: "0000000000000EAD"
+			tasks: [
+				{
+					id: "0000000000000EAE"
+					type: "item"
+					item: "eidolon:sanguine_amulet"
+				}
+				{
+					id: "0000000000000EBA"
+					type: "item"
+					item: {
+						id: "eidolon:sapping_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000ECA"
+					type: "item"
+					title: "Zombie Heart"
+					item: "eidolon:zombie_heart"
+					count: 8
+				}
+				{
+					id: "0000000000000ECB"
+					type: "item"
+					title: "Tattered Cloth"
+					item: "eidolon:tattered_cloth"
+					count: 8
+				}
+				{
+					id: "0000000000000ECC"
+					type: "item"
+					title: "Wraith Heart"
+					item: "eidolon:wraith_heart"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Wands Galore"
+			x: -2.5d
+			y: 5.5d
+			subtitle: "Just look at those particle effects!"
+			description: [
+				"Like any respectable magic mod, Eidolon offers some cool wands to aid with ranged combat. "
+				""
+				"The Soulfire Wand will deal magic damage to your enemies, while the Bonechill Wand will negate any enemy’s ability to regenerate health. Try them both out!"
+				""
+				"Maybe consider making some Warlock Armor too: it could boost your magic damage even more. Here's a little something to get started, getting the rest might be a bit harder..."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000EAA"]
+			id: "0000000000000EAF"
+			tasks: [
+				{
+					id: "0000000000000EB0"
+					type: "item"
+					item: {
+						id: "eidolon:soulfire_wand"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000EB1"
+					type: "item"
+					item: {
+						id: "eidolon:bonechill_wand"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0000000000000ED8"
+				type: "item"
+				title: "Wicked Weave"
+				item: "eidolon:wicked_weave"
+				count: 3
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			subtitle: "This is confusing..."
+			description: [
+				"The Pickaxe of Inversion is a fun tool you can use while mining. Like the name implies, it’s the opposite of a normal Pickaxe."
+				""
+				"It will mine faster the harder the block, and drop down in speed for the softer blocks. Try it out on some obsidian!"
+				""
+				"Note that the items showcased here are not all the mod has to offer, I left some out on purpose to let you explore the mod on your own, so go find all the cool stuff!"
+			]
+			dependencies: ["0000000000000EAA"]
+			id: "0000000000000EB2"
+			tasks: [{
+				id: "0000000000000EB3"
+				type: "item"
+				item: {
+					id: "eidolon:reversal_pick"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000ED6"
+				type: "item"
+				title: "Obsidian"
+				item: "minecraft:obsidian"
+				count: 16
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.5d
+			subtitle: "Controlled Enchanting"
+			description: [
+				"The Soul Enchanter is a different and peculiar way to enchant your items: it can only do basic level 1 enchants and will use Soul Shards, but you will be able to enchant an already enchanted item and boost it even more. "
+				""
+				"If an item already has an enchant, it will also be able to upgrade to a higher level of that enchant, allowing you for even more control. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000EAA"]
+			id: "0000000000000EB4"
+			tasks: [{
+				id: "0000000000000EB5"
+				type: "item"
+				item: "eidolon:soul_enchanter"
+			}]
+			rewards: [{
+				id: "0000000000000EDA"
+				type: "xp"
+				xp: 400
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.5d
+			subtitle: "It's brittle..."
+			description: ["The Glass Hand is the ultimate glass cannon item for all you daredevils out there: it will double your strength, but increase any damage you get by 5 times. Are you up for the challenge?"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000EAA"]
+			id: "0000000000000EB6"
+			tasks: [{
+				id: "0000000000000EB7"
+				type: "item"
+				item: "eidolon:glass_hand"
+			}]
+			rewards: [{
+				id: "0000000000000EDB"
+				type: "item"
+				title: "Music Disc"
+				item: "eidolon:music_disc_parousia"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.5d
+			subtitle: "Also try the Cleaving Axe"
+			description: [
+				"Not only is the Reaper’s Scythe a powerful weapon, but killing undead mobs with it will also give you Soul Shards, although a bit less than you would’ve gotten by performing a Crystallization Ritual."
+				""
+				"It can still be a good way to stock up on some Shards to craft all the other items in the mod."
+			]
+			dependencies: [
+				"0000000000000E9F"
+				"0000000000000EAC"
+			]
+			id: "0000000000000EB8"
+			tasks: [{
+				id: "0000000000000EB9"
+				type: "item"
+				item: {
+					id: "eidolon:reaper_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000ED9"
+				type: "xp"
+				xp: 500
+			}]
+		}
+	]
+}

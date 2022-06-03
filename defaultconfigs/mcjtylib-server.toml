@@ -1,0 +1,13 @@
+
+#General settings for all mods using mcjtylib
+[general]
+	#If true dump a lot of logging information about various things. Useful for debugging
+	logging = false
+	#If true then blocks using mcjtylib will have ownership tagged on them (useful for the rftools security manager)
+	manageOwnership = true
+	#If true then mods using McJtyLib might try to be as friendly as possible to mods that support very tall chunks (taller then 256). No guarantees however! Set to false for more optimal performance
+	tallChunkFriendly = false
+	#The maximum amount of dimensional shards that can be infused in a single machine
+	#Range: > 1
+	maxInfuse = 256
+

@@ -1,0 +1,20 @@
+
+["Connectivity settings"]
+	#Should login packet size limits be disabled? Error:(IOException("Payload may not be larger than 1048576 bytes")) default:true
+	disableLoginLimits = true
+	#Should play packet size limits be disabled? Error:(Badly compressed packet) default:true
+	disablePacketLimits = true
+	#If enabled all packets exceeding normal limits will be printed to log. default:false
+	debugPrintMessages = false
+	#Set the max login timeout in ticks. 20 ticks = 1 sec, default = 120 seconds
+	#Range: 600 ~ 20000
+	logintimeout = 2400
+	#Set the ingame disconnect timeout for disconnecting players. Default = 60sec
+	#Range: 15 ~ 400
+	disconnectTimeout = 60
+	#Set the amount of minutes for which network packet history data is saved. Default = 5 minutes
+	#Range: 1 ~ 400
+	packetHistoryMinutes = 5
+	#Enable to see the full log output for all resource location exceptions. Default = false
+	showFullResourceLocationException = false
+

@@ -1,0 +1,12 @@
+#Enable this to prevent your equipment from getting damaged when attacking the dummy
+disable_equipment_damage = false
+
+[scarecrow]
+	#All animal entities will be scared. add here additional ones that are not included
+	mobs_whitelist = [""]
+	#Animal entities that will not be scared
+	mobs_blacklist = [""]
+	#Scaring radius
+	#Range: 0 ~ 100
+	scare_radius = 12
+

@@ -1,0 +1,125 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:advanced_chemical_tank",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{mekData:{InfusionTanks:[{Tank:0,stored:{infuseTypeName:\"mekanism:fungi\",amount:128000}}]}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:advanced_chemical_tank",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{mekData:{InfusionTanks:[{Tank:0,stored:{infuseTypeName:\"mekanism:bio\",amount:128000}}]}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:advanced_chemical_tank",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{mekData:{InfusionTanks:[{Tank:0,stored:{infuseTypeName:\"mekanism:ethene\",amount:16000}}]}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:upgrade_speed",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:upgrade_energy",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:steel_casing",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:dynamic_tank",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 28
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:basic_pressurized_tube",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:basic_universal_cable",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:basic_mechanical_pipe",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:elite_tier_installer"
+                }
+            ]
+        }
+    ]
+}

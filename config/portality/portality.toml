@@ -1,0 +1,33 @@
+
+[PortalityConfig]
+	#The amount of energy it will be consumed to teleport an entity
+	#Range: > 1
+	TELEPORT_ENERGY_AMOUNT = 500
+	#If true players will get the wither effect if there isn't enough power to teleport
+	HURT_PLAYERS = true
+	#If true players will be launched out of the portal instead of standing still in front of it
+	LAUNCH_PLAYERS = true
+	#How long the portal structure it can be
+	MAX_PORTAL_LENGTH = 16
+	#How wide a portal can be without counting the controller(radius)
+	#Range: > 1
+	MAX_PORTAL_WIDTH = 7
+	#How tall a portal can be (diameter)
+	#Range: > 3
+	MAX_PORTAL_HEIGHT = 15
+	#Portal energy buffer
+	#Range: > 1
+	MAX_PORTAL_POWER = 100000
+	#Portal energy buffer insertion rate
+	#Range: > 1
+	MAX_PORTAL_POWER_IN = 2000
+	#How much power it will be consumed to open the portal interdimensionally
+	#Range: > 1
+	PORTAL_POWER_OPEN_INTERDIMENSIONAL = 10000
+	#How much power it will be consumed/tick based on the portal length and if it is the caller. (portalLength*ThisValue). If it is the portal the created the link the power will be double
+	#Range: > 1
+	POWER_PORTAL_TICK = 1
+	#Max distance multiplier that a portal can be linked, based on length. PortalLength*ThisValue
+	#Range: > 1
+	DISTANCE_MULTIPLIER = 200
+

@@ -1,0 +1,20 @@
+#Settings for the builder
+[builder]
+	#Base RF per block operation for the builder when used as a quarry or voider (actual cost depends on hardness of block)
+	#Range: > 0
+	builderRfPerQuarry = 300	
+	#The RF per operation of the builder is multiplied with this factor when using the fortune quarry shape card
+	#Range: 0.0 ~ 1000000.0
+	fortunequarryShapeCardFactor = 2.0
+	#Maximum dimension of the shape when a shape card is used in the builder
+	#Range: > 0
+	maxBuilderDimension = 512	
+	#RF per tick that the builder can receive
+	#Range: > 0
+	builderRFPerTick = 20000
+	#The RF per operation of the builder is multiplied with this factor when using the silk quarry shape card
+	#Range: 0.0 ~ 1000000.0
+	silkquarryShapeCardFactor = 3.0	
+	#Maximum RF storage that the builder can hold
+	#Range: > 0
+	builderMaxRF = 1000000

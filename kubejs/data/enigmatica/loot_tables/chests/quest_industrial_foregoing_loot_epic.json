@@ -1,0 +1,109 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:basic_fluid_tank",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{mekData:{FluidTanks:[{Tank:0,stored:{FluidName:\"industrialforegoing:latex\",Amount:14000}}]}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:pink_slime",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:machine_frame_advanced",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:efficiency_addon_2",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{TitaniumAugment:{Efficiency:0.8f}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:speed_addon_2",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{TitaniumAugment:{Speed:3.0f}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:mob_imprisonment_tool",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:mechanical_dirt",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:basic_fluid_tank",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{mekData:{FluidTanks:[{Tank:0,stored:{FluidName:\"industrialforegoing:essence\",Amount:14000}}]}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:fertilizer",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 64
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "biomes": [
+        [
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "overworld"
+            },
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "swamp"
+            }
+        ],
+        [
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "overworld"
+            },
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "river"
+            },
+            {
+                "type": "BIOME_DICT",
+                "negate": true,
+                "value": "cold"
+            }
+        ],
+        [
+            {
+                "type": "BIOME_DICT",
+                "negate": false,
+                "value": "atum"
+            },
+            {
+                "type": "REGISTRY_NAME",
+                "negate": false,
+                "value": "atum:oasis"
+            }
+        ]
+    ]
+}

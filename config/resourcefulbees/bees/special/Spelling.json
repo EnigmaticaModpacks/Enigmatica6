@@ -1,0 +1,68 @@
+{
+    "flower": "minecraft:lectern",
+    "creator": "NizBot",
+    "lore": "A geeky bee, prone to pedantry.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 6000,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/spelling",
+    "ColorData": {
+        "honeycombColor": "#905e43",
+        "modelType": "VILLAGER"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [
+            {
+                "type": "ENTITY",
+                "inputID": "entity:minecraft:villager",
+                "outputs": [{ "outputID": "entity:minecraft:villager", "weight": 10, "nbtData": {"VillagerData":{"profession":"librarian","level":2,"type":"plains"},"PersistenceRequired":1,"Offers":{"Recipes":[{"buyB":{"id":"book","Count":1},"buy":{"id":"gold_ingot","Count":1},"sell":{"id":"darkutils:book_galactic","Count":1},"rewardExp":"0b","maxUses":99999},{"buy":{"id":"book","Count":1},"buyB":{"id":"diamond","Count":1},"sell":{"id":"darkutils:book_runelic","Count":1},"rewardExp":"0b","maxUses":99999},{"buy":{"id":"oak_log","Count":2},"buyB":{"id":"iron_ingot","Count":2},"sell":{"id":"supplementaries:globe","Count":1},"rewardExp":"0b","maxUses":99999},{"buy":{"id":"book","Count":1},"buyB":{"id":"emerald","Count":1},"sell":{"id":"enchanted_book","Count":1,"tag":{"StoredEnchantments":[{"id":"apotheosis:life_mending","lvl":3}]}},"rewardExp":"0b","maxUses":99999}]}}}]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:book",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "minecraft:paper",
+        "secondaryOutputWeight": 0.8,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "minecraft:experience_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:RARE",
+        "biomeBlacklist": "tag:OCEAN",
+        "spawnWeight": 3,
+        "minGroupSize": 1,
+        "maxGroupSize": 1,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:bookshelf",
+        "feedAmount": 4,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

@@ -1,0 +1,68 @@
+
+[general]
+	#Additional conversion recipes for the Botanist's Pickaxe right click function. Each entry needs to be formatted as modid:input_block[prop1=value1,...]->modid:output_block[prop1=value1,...] where block state properties are optional
+	additionalBotanistPickaxeConversions = []
+	#Additional projectile types that are allowed to be consumed by the projectile generator. Each entry needs to be formatted as entity_registry_name->aura_amount
+	additionalProjectiles = []
+	#The Aura to RF ratio used by the RF converter, read as aura*ratio = rf
+	auraToRFRatio = 0.05
+	#Blocks that are exempt from being recognized as generatable ores for the passive ore generation effect. Each entry needs to be formatted as modid:block[prop1=value1,...] where block state properties are optional
+	oreExceptions = ["emendatusenigmatica:iridium_ore", "create:copper_ore", "create:zinc_ore", "eidolon:lead_ore", "immersiveengineering:ore_aluminum", "immersiveengineering:ore_copper", "immersiveengineering:ore_lead", "immersiveengineering:ore_nickel", "immersiveengineering:ore_silver", "immersiveengineering:ore_uranium", "mapperbase:bitumen_ore", "mekanism:copper_ore", "mekanism:fluorite_ore", "mekanism:lead_ore", "mekanism:osmium_ore", "mekanism:tin_ore", "mekanism:uranium_ore", "thermal:apatite_ore", "thermal:copper_ore", "thermal:nickel_ore", "thermal:lead_ore", "thermal:ruby_ore", "thermal:sapphire_ore", "thermal:silver_ore", "thermal:sulfur_ore", "thermal:tin_ore", "tmechworks:aluminum_ore", "tmechworks:copper_ore", "undergarden:coal_ore", "undergarden:diamond_ore", "undergarden:gold_ore", "undergarden:iron_ore"]
+	#Additional blocks that are recognized as generatable ores for the passive ore generation effect. Each entry needs to be formatted as tag_name->oreWeight->dimension where a higher weight makes the ore more likely to spawn with 5000 being the weight of coal, the default ore with the highest weight, and dimension being any of overworld and nether
+	additionalOres = ["forge:ores/nether/gold->1000->nether", "forge:ores/netherite_scrap->1->nether", "forge:ores/bitumen->1000->overworld", "forge:ores/fluorite->50->overworld", "forge:ores/potassium_nitrate->500->overworld", "forge:ores/mana->500->overworld", "forge:ores/sulfur->300->overworld"]
+	#Additional dimensions that map to Aura types that should be present in them. This is useful if you have a modpack with custom dimensions that should have Aura act similarly to an existing dimension in them. Each entry needs to be formatted as dimension_name->aura_type, where aura_type can be any of naturesaura:overworld, naturesaura:nether and naturesaura:end.
+	auraTypeOverrides = ["undergarden:undergarden->naturesaura:end", "atum:atum->naturesaura:overworld"]
+	#The amount of blocks that can be between two Aura Field Creators for them to be connectable and work together
+	fieldCreatorRange = 10
+	#The maximum amount of animals that can be around the powder of fertility before it stops working
+	maxAnimalsAroundPowder = 200
+
+[features]
+	#If the Aura Imbalance effect of ores spawning in the area if Aura levels are too high should occur
+	oreEffect = true
+	#If the chunk loader block should be enabled
+	chunkLoader = true
+	#If the Aura Imbalance effect of grass growing on netherrack if the Aura levels are high enough should occur
+	netherGrassEffect = true
+	#If the Aura Imbalance effect of explosions happening randomly if Aura levels are too low should occur
+	explosionEffect = true
+	#If the Aura Imbalance effect of nether blocks degrading in the area if the Aura levels are too low should occur
+	netherDecayEffect = true
+	#If Aura Blooms and Aura Cacti should generate in the world
+	auraBlooms = true
+	#If the Aura Imbalance effect of grass and trees dying in the area if the Aura levels are too low should occur
+	grassDieEffect = true
+	#If the Aura Imbalance effect of aura containers in players' inventories being filled if the Aura levels are high enough should occur
+	cacheRechargeEffect = true
+	#If the RF converter block should be enabled
+	rfConverter = true
+	#If the Aura Imbalance effect of farm animals being affected in positive ways if Aura levels are too high should occur
+	animalEffect = true
+	#If the Aura Imbalance effect of breathlessness if Aura levels are too low should occur
+	breathlessEffect = true
+	#If the Aura Imbalance effect of plant growth being boosted if the Aura levels are high enough should occur
+	plantBoostEffect = true
+	#If the Aura Imbalance effect of passive mobs being angered if Aura levels are too low should occur
+	angerEffect = true
+
+[client]
+	#If, when the F3 debug menu is open and the player is in creative mode, every Aura spot should be highlighted in the world for debug purposes
+	debugWorld = false
+	#The location of the aura bar, where 0 is top left, 1 is top right, 2 is bottom left and 3 is bottom right
+	#Range: 0 ~ 3
+	auraBarLocation = 0
+	#The location of the aura cache bar, where 0 is to the left of the hotbar and 1 is to the right of the hotbar
+	#Range: 0 ~ 1
+	cacheBarLocation = 0
+	#The percentage of particles that should be displayed, where 1 is 100% and 0 is 0%
+	#Range: 0.0 ~ 1.0
+	particleAmount = 1.0
+	#The percentage of particles that should spawn when there is an excess amount of Aura in the environment, where 1 is 100% and 0 is 0%
+	excessParticleAmount = 1.0
+	#If certain equippable items, like the Environmental Eye, should be rendered on the player
+	renderItemsOnPlayer = true
+	#If particle spawning should respect the particle setting in Minecraft's video settings screen
+	respectVanillaParticleSettings = false
+	#If debug information about Aura around the player should be displayed in the F3 debug menu if the player is in creative mode
+	debugText = true
+
