@@ -171,6 +171,10 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['kubejs:monster_mash'],
             text: [Text.of(`...It caught on in a flash...`).red()]
+        },
+        {
+            items: ['refinedstorage:silk_touch_upgrade'],
+            text: [Text.of('Does not work on spawners.').red()]
         }
     ];
 
