@@ -269,7 +269,6 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["7FCB0C026902B90C"]
-			hide: true
 			id: "3A6AE256747CFC1D"
 			tasks: [{
 				id: "3BC303A931EA3D28"
@@ -506,7 +505,6 @@
 			subtitle: "It's my birthday and I wants it."
 			description: ["That’s quite a nice treasure you’ve found for yourself. Would be a shame if something were to happen to it… "]
 			dependencies: ["3A6AE256747CFC1D"]
-			hide: true
 			id: "68A4A5043858181B"
 			tasks: [{
 				id: "3CECEAAAA80EBB9F"
@@ -516,7 +514,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "atum:artifact"
+						value: "atum:artifacts"
 					}
 				}
 			}]
