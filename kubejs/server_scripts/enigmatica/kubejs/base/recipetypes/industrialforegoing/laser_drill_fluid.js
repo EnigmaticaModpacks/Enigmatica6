@@ -56,7 +56,7 @@ onEvent('recipes', (event) => {
             rarity: [
                 {
                     whitelist: {},
-                    blacklist: { type: 'minecraft:worldgen/biome', values: nether_end_biomes },
+                    blacklist: {},
                     depth_min: 1,
                     depth_max: 256,
                     weight: 10
