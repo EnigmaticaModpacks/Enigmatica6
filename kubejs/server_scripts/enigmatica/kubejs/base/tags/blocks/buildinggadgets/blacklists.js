@@ -1,6 +1,6 @@
 onEvent('block.tags', (event) => {
     // Documentation: https://github.com/Direwolf20-MC/BuildingGadgets/tree/master/src/main/resources/data/buildinggadgets/tags/blocks/blacklist
-    // Generic affects all tools
+
     const blocks = [
         'immersiveengineering:alloy_smelter',
         'immersiveengineering:arc_furnace',
@@ -29,5 +29,7 @@ onEvent('block.tags', (event) => {
         'immersivepetroleum:pumpjack',
         'xnet:facade'
     ];
-    event.get('buildinggadgets:blacklist/generic').add(blocks);
+    event.get('buildinggadgets:blacklist/building').add(blocks);
+    event.get('buildinggadgets:blacklist/copy_paste').add(blocks);
+    event.get('buildinggadgets:blacklist/exchanging').add(blocks);
 });

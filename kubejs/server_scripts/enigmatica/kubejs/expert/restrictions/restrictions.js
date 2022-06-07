@@ -44,17 +44,7 @@ onEvent('server.datapack.high_priority', (event) => {
         'bloodmagic:alchemytable',
         'bloodmagic:soulforge',
         'bloodmagic:alchemicalreactionchamber',
-        'bloodmagic:incensealtar',
-        'bloodmagic:accelerationrune',
-        'bloodmagic:orbcapacityrune',
-        'bloodmagic:bettercapacityrune',
-        'bloodmagic:altarcapacityrune',
-        'bloodmagic:dislocationrune',
-        'bloodmagic:selfsacrificerune',
-        'bloodmagic:sacrificerune',
-        'bloodmagic:speedrune',
-        'bloodmagic:chargingrune',
-        'bloodmagic:blankrune'
+        'bloodmagic:incensealtar'
     ];
     // Requires creation Master Blood Orb to place outside of Undergarden
     restricted_blood_magic_blocks.forEach((block) => {
