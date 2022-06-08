@@ -13,7 +13,5 @@ onEvent('item.tags', (event) => {
     'pneumaticcraft:jackhammer',
   ];
 
-  tags.forEach((tag) => {
-      event.get('pneumaticcraft:pressurable').add(items);
-  });
+  event.get('pneumaticcraft:pressurable').add(items);
 });
