@@ -13,5 +13,9 @@ onEvent('item.tags', (event) => {
     'pneumaticcraft:jackhammer'
   ];
 
-  event.get('pneumaticcraft:pressurable').add(items);
+  var tags = ['forge:storage', 'forge:storage/air'];
+
+  tags.forEach((tag) => {
+      event.get(tag).add(items);
+  });
 });
