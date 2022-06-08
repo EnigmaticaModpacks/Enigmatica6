@@ -10,7 +10,7 @@ onEvent('item.tags', (event) => {
     'pneumaticcraft:amadron_tablet',
     'pneumaticcraft:minigun',
     'pneumaticcraft:camo_applicator',
-    'pneumaticcraft:jackhammer',
+    'pneumaticcraft:jackhammer'
   ];
 
   event.get('pneumaticcraft:pressurable').add(items);
