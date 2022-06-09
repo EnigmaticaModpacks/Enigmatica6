@@ -74,12 +74,11 @@ jobs:
       - run: node .github/actions/ci/kubejs-list-hose-pulley-fluids.js
 
       - name: Compare against the base branch
-        # if: github.event_name == 'pull_request'
-        # node .github/actions/ci/node/compare_download-artifact.js ${{ github.event.pull_request.base.repo.full_name }} ${{ github.event.pull_request.base.sha }} ${{ matrix.packmode }} ${{ github.token }}
+        if: github.event_name == 'pull_request'
         run: |
           cd .github/actions/ci/node && npm install
           ls .github/actions/ci/node
-          node .github/actions/ci/node/compare_download-artifact.js EnigmaticaModpacks/Enigmatica6 77d09d110723a6524876a87afde7fff4d6224659 ${{ matrix.packmode }} ${{ github.token }}
+          node .github/actions/ci/node/compare_download-artifact.js ${{ github.event.pull_request.base.repo.full_name }} ${{ github.event.pull_request.base.sha }} ${{ matrix.packmode }} ${{ github.token }}
           node .github/actions/ci/node/compare_artifact-tags.js
 
       - name: Upload artifacts
