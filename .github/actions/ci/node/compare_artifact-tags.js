@@ -3,7 +3,7 @@ const fs = require("fs")
 const util = require('node:util')
 
 const negative = '\x1B[31m- #'
-const positive = '\x1B[32m+ #'
+const positive = '\x1B[32m+\x1B[m\x1B[32m #'
 
 const a = __dirname +    '/artifact' // base
 const b = __dirname + '/../../../..' // head
@@ -41,11 +41,17 @@ types.forEach(type => {
     if (diff == '') return
 
     // remove the + and - for empty lines
-    if (line == '\x1B[31m-\x1B[m' || line == '\x1B[32m-\x1B[m') line = '\x1B[m'
-    console.log(util.inspect(line, {colors: false}))
+    if (line == '\x1B[31m-\x1B[m' || line == '\x1B[32m+\x1B[m') line = '\x1B[m'
+    console.log(line) // debug: console.log(util.inspect(line, {colors: false}))
 
-    if (line.startsWith(positive)) positives++; changes++
-    if (line.startsWith(negative)) negatives++; changes++
+    if (line.startsWith(positive)) {
+      positives++
+      changes++
+    } else 
+    if (line.startsWith(negative)) {
+      negatives++
+      changes++
+    }
   })
 
   notices.push(`${type}(+${positives} -${negatives})`)
