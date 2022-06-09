@@ -14,12 +14,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}hot_cocoa`
         },
         {
-            input: 'minecraft:glass_bottle',
-            fluid: Fluid.of('pneumaticcraft:memory_essence', 250),
-            output: 'minecraft:experience_bottle',
-            id: `${id_prefix}experience_bottle`
-        },
-        {
             input: 'buildinggadgets:construction_block_powder',
             fluid: Fluid.of('minecraft:water', 1000),
             output: 'buildinggadgets:construction_block_dense',

@@ -1767,12 +1767,6 @@ const cropRegistry = [
                 substrate: 'end_stone'
             },
             {
-                seed: 'byg:shulkren_moss_blanket',
-                render: 'byg:shulkren_moss_blanket',
-                plant: 'byg:shulkren_moss_blanket',
-                substrate: 'end_stone'
-            },
-            {
                 seed: 'byg:sythian_roots',
                 render: 'byg:sythian_roots',
                 plant: 'byg:sythian_roots',
@@ -1867,12 +1861,6 @@ const cropRegistry = [
                 render: 'minecraft:warped_roots',
                 plant: 'minecraft:warped_roots',
                 substrate: 'warped_nylium'
-            },
-            {
-                seed: 'undergarden:ashen_deepturf',
-                render: 'undergarden:ashen_deepturf',
-                plant: 'undergarden:ashen_deepturf',
-                substrate: 'deepturf'
             },
             {
                 seed: 'undergarden:ashen_deepturf',
@@ -2034,12 +2022,6 @@ const cropRegistry = [
                 seed: 'projectvibrantjourneys:cattail',
                 render: 'projectvibrantjourneys:cattail',
                 plant: 'projectvibrantjourneys:cattail',
-                substrate: 'water'
-            },
-            {
-                seed: 'byg:cattail',
-                render: 'byg:cattail',
-                plant: 'byg:cattail',
                 substrate: 'water'
             },
             {

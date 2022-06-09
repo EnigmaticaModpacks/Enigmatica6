@@ -161,12 +161,12 @@
 			y: 0.5d
 			shape: "diamond"
 			description: ["Crude, yet effective. These memory chips have done admirably thus far, but they’re in need of a boost. "]
-			dependencies: ["0000000000000FD7"]
+			dependencies: ["0000000000000FDB"]
 			id: "2182BC78D342D1AA"
 			tasks: [{
 				id: "6B231E1F097FC1DC"
 				type: "item"
-				item: "rftoolscontrol:ram_chip"
+				item: "kubejs:advanced_ram_chip"
 			}]
 		}
 		{
@@ -326,10 +326,13 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 8.0d
+			x: 3.5d
+			y: 8.5d
 			description: ["A feat once thought impossible, even by those great engineers who came before. It was only through careful fusion of their sciences and ancient magics that they were able to master fusion and power their cities with seemingly limitless energy. "]
-			dependencies: ["40204EBF03AD725E"]
+			dependencies: [
+				"5A772150FF638680"
+				"5E61BE9DA7DA1FEC"
+			]
 			id: "16DE48989A21D643"
 			tasks: [{
 				id: "56BA92C0A36137C1"
@@ -338,8 +341,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 8.0d
+			x: 0.5d
+			y: 8.5d
 			description: ["Any sufficiently advanced technology is indistinguishable from magic. We may not fully understand the fusion of Magic and Technology in these mycelial networks, but we’re certainly able to exploit it. "]
 			dependencies: ["40204EBF03AD725E"]
 			id: "2A9B2999EFB358D6"
@@ -363,11 +366,11 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 9.0d
+			x: 4.0d
+			y: 7.0d
 			shape: "gear"
 			description: ["A fusion of technology and magic, the Stellar Neutron Activator is capable of producing enormous quantities of Tritium continuously, though the process requires enormous quantities of mana and energy to extract it from water."]
-			dependencies: ["16DE48989A21D643"]
+			dependencies: ["40204EBF03AD725E"]
 			id: "5A772150FF638680"
 			tasks: [{
 				id: "2124E28BB47D675C"
@@ -395,20 +398,32 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 9.0d
+			x: 3.0d
+			y: 7.0d
 			shape: "gear"
 			description: [
 				"Though based on simple technologies, this massive machine can churn out industrial quantities of Deuterium quickly enough to meet the needs of a Fusion Reactor.  "
 				""
 				"Note: This multiblock expects water underneath it with the legs submerged right up to the base of the platform. As such, it is best built as an offshore platform. Be wary of kelp and other plant life, as its presence will break the structure "
 			]
-			dependencies: ["16DE48989A21D643"]
+			dependencies: ["40204EBF03AD725E"]
 			id: "5E61BE9DA7DA1FEC"
 			tasks: [{
 				id: "621697B1EC42D23F"
 				type: "item"
 				item: "masterfulmachinery:industrial_deuterium_plant_controller"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 9.0d
+			description: ["It certainly shouldn’t be possible, by all accounts. Yet here you are, holding antimatter in the palm of your hand!"]
+			dependencies: ["40204EBF03AD725E"]
+			id: "169619599EE68547"
+			tasks: [{
+				id: "0FC0D1296975D5F3"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
 			}]
 		}
 	]

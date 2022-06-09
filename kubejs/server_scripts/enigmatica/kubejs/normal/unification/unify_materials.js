@@ -151,7 +151,7 @@ onEvent('recipes', (event) => {
         event.recipes.thermal
             .press(Item.of(output, 2), [input, mold])
             .energy(2400)
-            .id(`${id_prefix}immersiveengineering_metal_press_${material}_wire`);
+            .id(`thermal:machine/press/press_${material}_ingot_to_wire`);
 
         event.recipes.immersiveengineering
             .metal_press(Item.of(output, 2), input, mold)

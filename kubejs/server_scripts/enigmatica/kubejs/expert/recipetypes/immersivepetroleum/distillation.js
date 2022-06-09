@@ -4,7 +4,7 @@ onEvent('recipes', (event) => {
     }
     const id_prefix = 'enigmatica:expert/immersivepetroleum/distillation/';
 
-    recipes = [
+    const recipes = [
         {
             results: [
                 { fluid: 'mekanism:brine', amount: 10 },

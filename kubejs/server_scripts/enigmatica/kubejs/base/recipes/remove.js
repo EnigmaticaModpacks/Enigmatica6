@@ -74,6 +74,8 @@ onEvent('recipes', (event) => {
 
         'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking',
 
+        'ars_nouveau:mana_gem_2',
+
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 
@@ -82,6 +84,7 @@ onEvent('recipes', (event) => {
         'atum:pumpkin_pie',
 
         'betterendforge:gunpowder_from_sulphur',
+        'betterendforge:ender_block',
 
         'bloodmagic:smelting/ingot_netherite_scrap',
         'bloodmagic:alchemytable/gunpowder',
@@ -168,6 +171,7 @@ onEvent('recipes', (event) => {
         'immersivepetroleum:distillationtower/oilcracking',
         'immersiveengineering:crafting/coal_coke_to_coke',
         //'immersiveengineering:crafting/ingot_copper_to_storage_copper',
+        'immersiveengineering:crafting/coke_to_coal_coke',
 
         'materialis:smeltery/melting/metal/starmetal/dust',
         /materialis:armor\/building\/exosuit/,
@@ -236,6 +240,14 @@ onEvent('recipes', (event) => {
         'thermal:smelting/cured_rubber_from_smelting',
         'thermal:storage/sulfur_block',
         'thermal:gunpowder_4',
+        'thermal:machine/press/unpacking/press_coal_coke_unpacking',
+        'thermal:machine/press/packing2x2/press_clay_packing',
+        'thermal:machine/press/unpacking/press_clay_unpacking',
+        'thermal:machine/press/packing2x2/press_quartz_packing',
+        'thermal:machine/press/unpacking/press_quartz_unpacking',
+        'thermal:machine/press/packing2x2/press_slag_packing',
+        'thermal:machine/press/unpacking/press_slag_unpacking',
+        'thermal:compat/industrialforegoing/bottler_essence',
 
         'pneumaticcraft:one_probe_crafting',
 
@@ -246,6 +258,7 @@ onEvent('recipes', (event) => {
         'projectvibrantjourneys:seashells',
 
         'quark:building/crafting/compressed/gunpowder_sack',
+        'quark:building/crafting/compressed/charcoal_block_compress',
 
         'simplefarming:candy',
         'simplefarming:raw_chicken_wings',

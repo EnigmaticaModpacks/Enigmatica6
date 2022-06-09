@@ -224,34 +224,11 @@
 			]
 			dependencies: ["67F7E4C19E39F9F3"]
 			id: "6EC89B2EB48331A5"
-			tasks: [
-				{
-					id: "0FCB22D21C639EA2"
-					type: "item"
-					item: "pneumaticcraft:liquid_compressor"
-				}
-				{
-					id: "471ED32FEC003513"
-					type: "item"
-					title: "Liquid Fuels"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "thermal:tree_oil_bucket"
-									Count: 1b
-								}
-								{
-									id: "thermal:refined_fuel_bucket"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "0FCB22D21C639EA2"
+				type: "item"
+				item: "pneumaticcraft:liquid_compressor"
+			}]
 		}
 		{
 			x: 4.0d

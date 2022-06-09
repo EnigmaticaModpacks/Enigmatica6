@@ -8,7 +8,7 @@ const server = fs.readFileSync('logs/kubejs/server.txt', 'utf-8');
 let code = 0;
 
 server.split(/\r?\n/).forEach((line) => {
-    if (line.includes('[ERR  ] Error')) {
+    if (line.includes('[ERR  ] Error') && !line.includes('shadows.menu.PackMenuClient')) {
         console.log(`::warning::${line}`);
         code = 1;
     } else if (line.includes('[ERR  ]') || line.includes('[WARN ]')) {

@@ -15,6 +15,11 @@ onEvent('recipes', (event) => {
             input: 'botania:livingwood',
             output: '6x botania:livingwood_planks',
             id: `${id_prefix}livingwood_planks_from_livingwood`
+        },
+        {
+            input: 'astralsorcery:infused_wood',
+            output: '6x astralsorcery:infused_wood_planks',
+            id: `${id_prefix}infused_wood_planks_from_infused_wood`
         }
     ];
     recipes.forEach((recipe) => {

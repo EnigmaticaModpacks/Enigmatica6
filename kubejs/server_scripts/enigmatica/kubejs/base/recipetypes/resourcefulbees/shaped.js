@@ -583,7 +583,7 @@ onEvent('recipes', (event) => {
                 B: '#forge:ingots/nebu',
                 C: '#atum:godshards'
             },
-            id: `${id_prefix}raw_gloomper_meat`
+            id: `${id_prefix}godforged_block`
         }
     ];
 

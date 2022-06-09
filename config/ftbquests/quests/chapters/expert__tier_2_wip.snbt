@@ -525,5 +525,18 @@
 				item: "astralsorcery:wand"
 			}]
 		}
+		{
+			x: 0.5d
+			y: -5.5d
+			shape: "gear"
+			description: ["By transmuting the latent energies in Life Essence, the Wicked Altar is capable of infusing specially prepared materials with great power. "]
+			dependencies: ["06A20E7EA36392CB"]
+			id: "03B61EC7DD43C550"
+			tasks: [{
+				id: "7C9DF703B05DF144"
+				type: "item"
+				item: "masterfulmachinery:wicked_altar_controller"
+			}]
+		}
 	]
 }

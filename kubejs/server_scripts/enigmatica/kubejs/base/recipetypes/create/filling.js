@@ -23,19 +23,19 @@ onEvent('recipes', (event) => {
             input: 'minecraft:glass_bottle',
             fluid: Fluid.of('industrialforegoing:essence', 250),
             output: 'minecraft:experience_bottle',
-            id: `${id_prefix}experience_bottle`
+            id: `${id_prefix}experience_bottle_if`
         },
         {
             input: 'minecraft:glass_bottle',
             fluid: Fluid.of('pneumaticcraft:memory_essence', 250),
             output: 'minecraft:experience_bottle',
-            id: `${id_prefix}experience_bottle`
+            id: `${id_prefix}experience_bottle_pnc`
         },
         {
             input: 'minecraft:glass_bottle',
             fluid: Fluid.of('cofh_core:experience', 250),
             output: 'minecraft:experience_bottle',
-            id: `${id_prefix}experience_bottle`
+            id: `${id_prefix}experience_bottle_cofh`
         }
     ];
 

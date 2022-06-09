@@ -1,0 +1,27 @@
+{
+    "modsRequired":[],
+    "content":[
+        { "type": "item", "content": "botania:smelt_rod", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":20},
+        { "type": "item", "content": "botania:fire_rod", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":20},
+        { "type": "item", "content": "botania:exchange_rod", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":20},
+        { "type": "item", "content": "bloodmagic:experiencebook", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":20},
+        { "type": "item", "content": "bloodmagic:demonslate", "amountRange": {"min": 1, "max": 2}, "unitWorth": 500, "weight":10},
+        { "type": "item", "content": "artifacts:cloud_in_a_bottle", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":17},
+        { "type": "item", "content": "artifacts:umbrella", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":17},
+        { "type": "item", "content": "artifacts:scarf_of_invisibility", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":17},
+        { "type": "item", "content": "artifacts:fire_gauntlet", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":17},
+        { "type": "item", "content": "artifacts:vampiric_glove", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":17},
+        { "type": "item", "content": "artifacts:running_shoes", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":17},
+        { "type": "item", "content": "artifacts:antidote_vessel", "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":17},
+        { "type": "item", "content": "eidolon:soul_enchanter", "amountRange": {"min": 1, "max": 1}, "unitWorth": 100, "weight":20},
+        { "type": "item", "content": "minecraft:netherite_boots", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
+        { "type": "item", "content": "minecraft:netherite_leggings", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
+        { "type": "item", "content": "minecraft:netherite_chestplate", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
+        { "type": "item", "content": "minecraft:netherite_helmet", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
+        { "type": "item", "content": "minecraft:netherite_axe", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
+        { "type": "item", "content": "minecraft:netherite_pickaxe", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
+        { "type": "item", "content": "minecraft:netherite_shovel", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
+        { "type": "item", "content": "minecraft:netherite_sword", "amountRange": {"min": 1, "max": 1}, "unitWorth": 500, "weight":100},
+        { "type": "command", "content": "/loot give %player% loot enigmatica:chests/dungeon_bastion_epic", "name": "Epic Bastion Loot", "unitWorth": 1000, "weight": 1}
+    ]
+}

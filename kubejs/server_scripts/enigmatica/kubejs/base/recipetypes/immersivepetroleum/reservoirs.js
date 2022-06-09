@@ -1,31 +1,28 @@
 onEvent('recipes', (event) => {
-    let data = {
-        recipes: [
-            {
-                fluid: 'pneumaticcraft:oil',
-                fluidminimum: 2500000,
-                fluidcapacity: 15000000,
-                fluidtrace: 6,
-                weight: 40,
-                dimension: {
-                    whitelist: [],
-                    blacklist: ['minecraft:the_end']
-                },
-                biome: {
-                    whitelist: [],
-                    blacklist: []
-                },
-                name: 'oil',
-                id: 'oil'
-            }
-        ]
-    };
+    const id_prefix = 'enigmatica:base/immersivepetroleum/reservoirs/';
 
-    data.recipes.forEach((recipe) => {
-        recipe.type = 'immersivepetroleum:reservoirs';
-        const re = event.custom(recipe);
-        if (recipe.id) {
-            re.id(`immersivepetroleum:reservoirs/${recipe.id}`);
+    const recipes = [
+        {
+            fluid: 'pneumaticcraft:oil',
+            fluidminimum: 2500000,
+            fluidcapacity: 15000000,
+            fluidtrace: 6,
+            weight: 40,
+            dimension: {
+                whitelist: [],
+                blacklist: ['minecraft:the_end']
+            },
+            biome: {
+                whitelist: [],
+                blacklist: []
+            },
+            name: 'oil',
+            id: 'immersivepetroleum:reservoirs/oil'
         }
+    ];
+
+    recipes.forEach((recipe) => {
+        recipe.type = 'immersivepetroleum:reservoirs';
+        event.custom(recipe).id(recipe.id);
     });
 });

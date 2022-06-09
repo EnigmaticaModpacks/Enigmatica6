@@ -466,6 +466,7 @@ onEvent('recipes', (event) => {
             output: 'naturesaura:shockwave_creator',
             time: 4 * time_multiplier,
             id: `${id_prefix}shockwave_creator`
+
         },
         {
             ingredients: [

@@ -664,6 +664,8 @@ const disabledItems = [
 
     'decorative_blocks_abnormals:ender_brazier',
 
+    'integrateddynamics:part_entity_writer',
+
     'ironjetpacks:strap',
     'ironjetpacks:basic_coil',
     'ironjetpacks:advanced_coil',
