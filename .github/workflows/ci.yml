@@ -76,6 +76,7 @@ jobs:
       - name: Compare against the base branch
         if: github.event_name == 'pull_request'
         run: |
+          ls .github/actions/ci
           cd .github/actions/ci/node && npm install
           ls .github/actions/ci/node
           node .github/actions/ci/node/compare_download-artifact.js ${{ github.event.pull_request.base.repo.full_name }} ${{ github.event.pull_request.base.sha }} ${{ matrix.packmode }} ${{ github.token }}
