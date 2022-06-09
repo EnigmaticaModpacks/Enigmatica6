@@ -41,8 +41,8 @@ types.forEach(type => {
     if (diff == '') return
 
     // remove the + and - for empty lines
-    if (line == '\x1B[31m-\x1B[m' || line == '\x1B[32m-\x1B[m') line = ' \x1B[m'
-    console.log(line) // debug: console.log(util.inspect(line, {colors: false}))
+    if (line == '\x1B[31m-\x1B[m' || line == '\x1B[32m-\x1B[m') line = '\x1B[m'
+    console.log(util.inspect(line, {colors: false}))
 
     if (line.startsWith(positive)) positives++; changes++
     if (line.startsWith(negative)) negatives++; changes++
