@@ -125,7 +125,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersiveengineering:hempcrete',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_green',
                 E: 'mekanism:hdpe_sheet'
             },
@@ -137,7 +137,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersiveengineering:hempcrete',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_red',
                 E: 'mekanism:hdpe_sheet'
             },
@@ -184,7 +184,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/steel',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_green',
                 E: '#forge:ingots/terrasteel'
             },
@@ -219,7 +219,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/steel',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_green',
                 E: '#forge:circuits/elite'
             },
@@ -231,7 +231,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/steel',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_red',
                 E: '#forge:circuits/elite'
             },
@@ -297,13 +297,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'masterfulmachinery:enigmatic_tree_of_life_fluid_port_fluids_input',
-            pattern: ['ABA', 'CEC', 'ADA'],
+            pattern: ['ABA', 'BCB', 'ADA'],
             key: {
                 A: 'mythicbotany:yggdrasil_branch',
-                B: 'create:copper_valve_handle',
-                C: 'create:fluid_pipe',
-                D: 'botania:green_petal_block',
-                E: 'create:fluid_valve'
+                B: 'mekanism:ultimate_mechanical_pipe',
+                C: 'industrialforegoing:supreme_black_hole_tank',
+                D: 'botania:green_petal_block'
             },
             id: `${id_prefix}enigmatic_tree_of_life_fluid_port_fluids_input`
         },

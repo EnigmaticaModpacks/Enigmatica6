@@ -8,8 +8,7 @@ onEvent('recipes', (event) => {
             outputs: [
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'mekanismgenerators:tritium', amount: 640 }
+                    data: { fluid: 'mekanismgenerators:tritium', amount: 640 * 4000 }
                 }
             ],
             inputs: [
@@ -25,8 +24,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'masterfulmachinery:fluids',
-                    perTick: true,
-                    data: { fluid: 'minecraft:water', amount: 64000 }
+                    data: { fluid: 'minecraft:water', amount: 64000 * 4000 }
                 }
             ],
             ticks: 4000,
