@@ -1,7 +1,7 @@
 onEvent('item.tags', (event) => {
   var items = [
     /pneumaticcraft:(reinforced_)?air_canister/, // 10 & 20 bar canisters
-    /pneumaticcraft:(\w*_)?drone$/,              // all 5 craftable drones
+    /pneumaticcraft:(\w+_)?drone$/,              // all 5 craftable drones
 
     /pneumaticcraft:pneumatic_(wrench|helmet|chestplate|leggings|boots)/,
 
@@ -11,7 +11,7 @@ onEvent('item.tags', (event) => {
     'pneumaticcraft:amadron_tablet',
     'pneumaticcraft:minigun',
     'pneumaticcraft:camo_applicator',
-    'pneumaticcraft:jackhammer'
+    'pneumaticcraft:jackhammer',
   ];
 
   var tags = ['forge:storage', 'forge:storage/air'];
