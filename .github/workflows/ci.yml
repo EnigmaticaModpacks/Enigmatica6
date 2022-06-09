@@ -5,10 +5,11 @@ on:
       - 'develop'
       - 'master'
       - 'ci/*'
-  # pull_request:
-  #     branches:
-  #         - 'develop'
-  #         - 'master'
+  pull_request:
+    branches:
+      - 'develop'
+      - 'master'
+      - 'ci/*'
 
 jobs:
   # job
@@ -71,6 +72,13 @@ jobs:
       - run: node .github/actions/ci/log-kubejs-warnings.js
       - run: node .github/actions/ci/kubejs-recipes.js
       - run: node .github/actions/ci/kubejs-list-hose-pulley-fluids.js
+
+      - name: Compare against the base branch
+        if: github.event_name == 'pull_request'
+        run: |
+          cd .github/actions/ci/node && npm install && cd ../../../../
+          node .github/actions/ci/node/compare_download-artifact.js ${{ github.event.pull_request.base.repo.full_name }} ${{ github.event.pull_request.base.sha }} ${{ matrix.packmode }} ${{ github.token }}
+          node .github/actions/ci/node/compare_artifact-tags.js
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
