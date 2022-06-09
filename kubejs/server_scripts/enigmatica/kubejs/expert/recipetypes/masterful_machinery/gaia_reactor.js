@@ -19,11 +19,13 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'masterfulmachinery:fluids',
-                    data: { fluid: 'pneumaticcraft:memory_essence', amount: 16000 * 300 }
+                    perTick: true,
+                    data: { fluid: 'pneumaticcraft:memory_essence', amount: 16000 }
                 },
                 {
                     type: 'masterfulmachinery:fluids',
-                    data: { fluid: 'astralsorcery:liquid_starlight', amount: 1000 * 300 }
+                    perTick: true,
+                    data: { fluid: 'astralsorcery:liquid_starlight', amount: 1000 }
                 },
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],

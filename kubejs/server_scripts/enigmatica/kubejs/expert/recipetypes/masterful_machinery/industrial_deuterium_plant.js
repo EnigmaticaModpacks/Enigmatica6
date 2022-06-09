@@ -8,7 +8,8 @@ onEvent('recipes', (event) => {
             outputs: [
                 {
                     type: 'masterfulmachinery:fluids',
-                    data: { fluid: 'mekanismgenerators:deuterium', amount: 640 * 4000 }
+                    perTick: true,
+                    data: { fluid: 'mekanismgenerators:deuterium', amount: 640 }
                 }
             ],
             inputs: [
@@ -19,16 +20,21 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'masterfulmachinery:fluids',
-                    data: { fluid: 'emendatusenigmatica:molten_sulfur', amount: 10 * 4000 }
-                },
-                {
-                    type: 'masterfulmachinery:pncr_pressure',
                     perTick: true,
-                    data: { air: 100 }
+                    data: { fluid: 'emendatusenigmatica:molten_sulfur', amount: 10 }
                 },
                 {
-                    type: 'masterfulmachinery:create_rotation',
-                    data: { speed: 256 }
+                    type: "masterfulmachinery:pncr_pressure",
+                    perTick: true,
+                    data:{
+                        air: 100
+                    }
+                },
+                {
+                    type: "masterfulmachinery:create_rotation",
+                    data:{
+                        speed: 256
+                    }
                 }
             ],
             ticks: 4000,
