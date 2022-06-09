@@ -1,5 +1,5 @@
 onEvent('item.tags', (event) => {
-  var items = [
+  const items = [
     /pneumaticcraft:(reinforced_)?air_canister/, // 10 & 20 bar canisters
     /pneumaticcraft:(\w+_)?drone$/,              // all 5 craftable drones
 
@@ -14,7 +14,7 @@ onEvent('item.tags', (event) => {
     'pneumaticcraft:jackhammer',
   ];
 
-  var tags = ['forge:storage', 'forge:storage/air'];
+  const tags = ['forge:storage', 'forge:storage/air'];
 
   tags.forEach((tag) => {
       event.get(tag).add(items);
