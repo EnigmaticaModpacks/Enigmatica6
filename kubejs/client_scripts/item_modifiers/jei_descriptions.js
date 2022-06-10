@@ -466,12 +466,27 @@ onEvent('jei.information', (event) => {
         },
         {
             items: [/masterfulmachinery:\w+_controller/],
+            text: [`This structure will be difficult to build by hand.`]
+        },
+        {
+            items: [/masterfulmachinery:\w+_controller/],
             text: [
-                `This structure will be difficult to build by hand.`,
-                ` `,
                 `Use the included Building Gadgets patterns found in the "building_gadgets_patterns" folder of Enigmatica 6 instance folder.`,
                 ` `,
                 'May be rotated, but not mirrored.'
+            ]
+        },
+
+        {
+            items: [/masterfulmachinery:\w+_controller/],
+            text: [
+                'A note on the values shown in recipes for these machines:',
+                `● Forge Energy is consumed per tick`,
+                `● Pneumatic Air is consumed per tick and must be over 10 bar`,
+                `● Astral Starlight is consumed per tick`,
+                `● Fluids are consumed or created per tick`,
+                `● Items are consumed or created at the end of a craft`,
+                `● Mana is consumed at the start of a craft or created at the end`
             ]
         },
         {
