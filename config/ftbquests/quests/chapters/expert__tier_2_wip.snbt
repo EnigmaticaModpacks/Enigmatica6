@@ -529,8 +529,9 @@
 			x: 0.5d
 			y: -5.5d
 			shape: "gear"
-			description: ["By transmuting the latent energies in Life Essence, the Wicked Altar is capable of infusing specially prepared materials with great power."
-			""
+			description: [
+				"By transmuting the latent energies in Life Essence, the Wicked Altar is capable of infusing specially prepared materials with great power."
+				""
 				"================================================================="
 				""
 				"Note that the recipes shown in JEI don't accurately display whether any given input is per tick or all at once. For simplicity, all recipes for all Masterful Machines have been standardized under the following rule set:"
@@ -540,7 +541,8 @@
 				"● Astral Starlight is consumed per tick"
 				"● Fluids are consumed or created per tick"
 				"● Items are consumed or created at the end of a craft"
-				"● Mana is consumed at the start of a craft or created at the end"]
+				"● Mana is consumed at the start of a craft or created at the end"
+			]
 			dependencies: ["06A20E7EA36392CB"]
 			min_width: 400
 			id: "03B61EC7DD43C550"
