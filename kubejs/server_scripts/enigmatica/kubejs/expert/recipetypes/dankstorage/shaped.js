@@ -25,6 +25,17 @@ onEvent('recipes', (event) => {
                 C: 'industrialforegoing:common_black_hole_unit'
             },
             id: 'dankstorage:1'
+        },
+        {
+            output: 'dankstorage:dock',
+            pattern: ['AAA', 'BDC', 'AAA'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_black',
+                B: 'prettypipes:high_extraction_module',
+                C: 'prettypipes:high_retrieval_module',
+                D: 'thermal:machine_frame'
+            },
+            id: 'dankstorage:dock'
         }
     ];
 

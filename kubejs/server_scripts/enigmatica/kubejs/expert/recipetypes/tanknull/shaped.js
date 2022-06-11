@@ -25,6 +25,17 @@ onEvent('recipes', (event) => {
                 C: 'minecraft:sponge'
             },
             id: 'tanknull:1'
+        },
+        {
+            output: 'tanknull:dock',
+            pattern: ['AAA', 'BDC', 'AAA'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_white',
+                B: 'ppfluids:high_fluid_extraction_module',
+                C: 'ppfluids:high_fluid_retrieval_module',
+                D: 'thermal:fluid_cell_frame'
+            },
+            id: 'tanknull:dock'
         }
     ];
 
