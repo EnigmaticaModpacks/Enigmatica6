@@ -44,8 +44,6 @@ onEvent('item.tooltip', (event) => {
                 'darkutils:rune_damage_player',
                 'eidolon:crucible',
                 'eidolon:wooden_brewing_stand',
-                'tanknull:dock',
-                'dankstorage:dock',
                 'engineersdecor:factory_placer',
                 'eidolon:worktable',
                 'mekanism:osmium_compressor',

@@ -42,7 +42,6 @@ onEvent('recipes', (event) => {
         /create:pressing\/\w*_ingot/,
 
         /dankstorage:\w_to_\w/,
-        'dankstorage:dock',
 
         'darkutils:crafting/rune_damage_player',
         'darkutils:crafting/blank_plate',
@@ -160,8 +159,6 @@ onEvent('recipes', (event) => {
         'sophisticatedbackpacks:tool_swapper_upgrade',
         'sophisticatedbackpacks:advanced_tool_swapper_upgrade',
         'sophisticatedbackpacks:refill_upgrade',
-
-        'tanknull:dock',
 
         'tconstruct:smeltery/scorched/scorched_brick',
         'tconstruct:smeltery/scorched/scorched_brick_kiln',
