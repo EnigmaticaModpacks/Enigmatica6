@@ -2,7 +2,7 @@ onEvent('server.datapack.high_priority', function (event) {
 
     draining_whitelist.filter(fluid => fluid.create_a_hose_pulley_advancement).forEach(fluid => {
 
-        event.addJson(`minecraft:advancements/create/${fluid.name}.json`, {
+        event.addJson(`minecraft:advancements/create/infinite_${fluid.name}.json`, {
             parent: "create:hose_pulley",
             display: {
                 icon: {
