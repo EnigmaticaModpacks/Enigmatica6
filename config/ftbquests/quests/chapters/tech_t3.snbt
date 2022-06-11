@@ -369,8 +369,22 @@
 			x: 4.0d
 			y: 7.0d
 			shape: "gear"
-			description: ["A fusion of technology and magic, the Stellar Neutron Activator is capable of producing enormous quantities of Tritium continuously, though the process requires enormous quantities of mana and energy to extract it from water."]
+			description: [
+				"A fusion of technology and magic, the Stellar Neutron Activator is capable of producing enormous quantities of Tritium continuously, though the process requires enormous quantities of mana and energy to extract it from water."
+				""
+				"================================================================="
+				""
+				"Note that the recipes shown in JEI don't accurately display whether any given input is per tick or all at once. For simplicity, all recipes for all Masterful Machines have been standardized under the following rule set:"
+				""
+				"● Forge Energy is consumed per tick"
+				"● Pneumatic Air is consumed per tick and must be over 10 Bar"
+				"● Astral Starlight is consumed per tick"
+				"● Fluids are consumed or created per tick"
+				"● Items are consumed or created at the end of a craft"
+				"● Mana is consumed at the start of a craft or created at the end"
+			]
 			dependencies: ["40204EBF03AD725E"]
+			min_width: 400
 			id: "5A772150FF638680"
 			tasks: [{
 				id: "2124E28BB47D675C"
@@ -388,8 +402,20 @@
 				"Two air supplies are required to run this machine. The High-Pressure Input requires greater than 11 bar to begin functioning while the Assembly Controller needs 5 bar and may be accessed from below. "
 				""
 				"This machine will still function for all regular Assembly Table crafts as well by placing the inputs in the crate in the back. All outputs will be retrieved from this same crate."
+				""
+				"================================================================="
+				""
+				"Note that the recipes shown in JEI don't accurately display whether any given input is per tick or all at once. For simplicity, all recipes for all Masterful Machines have been standardized under the following rule set:"
+				""
+				"● Forge Energy is consumed per tick"
+				"● Pneumatic Air is consumed per tick and must be over 10 Bar"
+				"● Astral Starlight is consumed per tick"
+				"● Fluids are consumed or created per tick"
+				"● Items are consumed or created at the end of a craft"
+				"● Mana is consumed at the start of a craft or created at the end"
 			]
 			dependencies: ["71D581C742D17CA4"]
+			min_width: 400
 			id: "76EDB33FBF318FB4"
 			tasks: [{
 				id: "33104A6845FE9370"
@@ -402,11 +428,23 @@
 			y: 7.0d
 			shape: "gear"
 			description: [
-				"Though based on simple technologies, this massive machine can churn out industrial quantities of Deuterium quickly enough to meet the needs of a Fusion Reactor.  "
+				"Though based on simple technologies, this massive machine can churn out industrial quantities of Deuterium quickly enough to meet the needs of a Fusion Reactor."
 				""
-				"Note: This multiblock expects water underneath it with the legs submerged right up to the base of the platform. As such, it is best built as an offshore platform. Be wary of kelp and other plant life, as its presence will break the structure "
+				"Note: This multiblock expects water underneath it with the legs submerged right up to the base of the platform. As such, it is best built as an offshore platform. Be wary of kelp and other plant life, as its presence will break the structure."
+				""
+				"================================================================="
+				""
+				"Note that the recipes shown in JEI don't accurately display whether any given input is per tick or all at once. For simplicity, all recipes for all Masterful Machines have been standardized under the following rule set:"
+				""
+				"● Forge Energy is consumed per tick"
+				"● Pneumatic Air is consumed per tick and must be over 10 Bar"
+				"● Astral Starlight is consumed per tick"
+				"● Fluids are consumed or created per tick"
+				"● Items are consumed or created at the end of a craft"
+				"● Mana is consumed at the start of a craft or created at the end"
 			]
 			dependencies: ["40204EBF03AD725E"]
+			min_width: 400
 			id: "5E61BE9DA7DA1FEC"
 			tasks: [{
 				id: "621697B1EC42D23F"

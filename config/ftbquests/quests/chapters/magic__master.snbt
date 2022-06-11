@@ -509,9 +509,21 @@
 			description: [
 				"By storing Starlight eddies in a massive crystalline battery, the Iridescent Altar may be made to work faster and at any time of day."
 				""
-				"Advanced control circuits ensure the rituals are handled appropriately and without oversight. "
+				"Advanced control circuits ensure the rituals are handled appropriately and without oversight."
+				""
+				"================================================================="
+				""
+				"Note that the recipes shown in JEI don't accurately display whether any given input is per tick or all at once. For simplicity, all recipes for all Masterful Machines have been standardized under the following rule set:"
+				""
+				"● Forge Energy is consumed per tick"
+				"● Pneumatic Air is consumed per tick and must be over 10 Bar"
+				"● Astral Starlight is consumed per tick"
+				"● Fluids are consumed or created per tick"
+				"● Items are consumed or created at the end of a craft"
+				"● Mana is consumed at the start of a craft or created at the end"
 			]
 			dependencies: ["2D6DDD000FC99514"]
+			min_width: 400
 			id: "0D5EFF4C653C3DD9"
 			tasks: [{
 				id: "11A8B09E6B1A0DFB"
@@ -524,11 +536,23 @@
 			y: 4.0d
 			shape: "gear"
 			description: [
-				"A massive starlight cooled construct used to extract the very essence from the Guardian trapped within. "
+				"A massive starlight cooled construct used to extract the very essence from the Guardian trapped within."
 				""
 				"Though energy intensive, the machine can renewably generate Gaia Spirits needed by higher magics."
+				""
+				"================================================================="
+				""
+				"Note that the recipes shown in JEI don't accurately display whether any given input is per tick or all at once. For simplicity, all recipes for all Masterful Machines have been standardized under the following rule set:"
+				""
+				"● Forge Energy is consumed per tick"
+				"● Pneumatic Air is consumed per tick and must be over 10 Bar"
+				"● Astral Starlight is consumed per tick"
+				"● Fluids are consumed or created per tick"
+				"● Items are consumed or created at the end of a craft"
+				"● Mana is consumed at the start of a craft or created at the end"
 			]
 			dependencies: ["457523FA165A5A0B"]
+			min_width: 400
 			id: "226F249D3F4A9258"
 			tasks: [{
 				id: "59FF57ADF3D44FA2"
