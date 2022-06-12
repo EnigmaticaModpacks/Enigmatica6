@@ -68,6 +68,7 @@ jobs:
           cat eula.txt
 
       - run: node .github/actions/ci/start-server.js bash ./start-automated-server.sh
+      - run: sleep 1m
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
