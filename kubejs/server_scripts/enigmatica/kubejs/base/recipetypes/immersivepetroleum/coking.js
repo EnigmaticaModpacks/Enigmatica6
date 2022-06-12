@@ -1,1 +1,1 @@
-// todo: delete in 2.0.0
+// TODO: Delete in 2.0
