@@ -4,7 +4,7 @@ const clc = require('cli-color');
 
 const server_txt = fs.readFileSync('./logs/kubejs/server.txt').toString().split('\n')
 
-// [INFO ] server_scripts:enigmatica/kubejs/kubejs-pre.js:3: Object.keys(this): <csv in csv format>
+// [INFO ] server_scripts:enigmatica/kubejs/kubejs-pre.js:3: Object.keys(this): <keys in csv format>
 const regex = /server_scripts:enigmatica\/kubejs\/kubejs-(\w+)\.js:\d+: Object\.keys\(this\): (.*)/
 
 // store all the globals available when kubejs starts parsing files,
