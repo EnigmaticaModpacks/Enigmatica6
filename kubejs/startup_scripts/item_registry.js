@@ -355,7 +355,6 @@ onEvent('item.registry', (event) => {
         {name: 'boobee',         band: 0xe9f3ea, outline: 0xe9f3ea},
         {name: 'brass',          band: 0x998d38, outline: 0x998d38},
         {name: 'bronze',         band: 0xd38c53, outline: 0xd38c53},
-        {name: 'catnip',         band: 0xeaa939, outline: 0x4c483b},
         {name: 'clay',           band: 0xacaebd, outline: 0xacaebd},
         {name: 'coal',           band: 0x303030, outline: 0x303030},
         {name: 'constantan',     band: 0xd8876b, outline: 0xd8876b},
