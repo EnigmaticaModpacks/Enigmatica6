@@ -123,7 +123,8 @@ const combVariants = [ //keep changes synced to "startup_scripts/item_registry.j
     'shepherd',
     'clogged',
     'regal',
-    'frosty'
+    'frosty',
+    'pcbee'
 ];
 
 const bees = [];
