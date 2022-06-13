@@ -32,7 +32,7 @@ created.forEach(key => {
   const lines = execSync(`grep -r -e '${key} =' -e 'function ${key}(' ./kubejs/server_scripts || true`).toString().trim().split('\n')
   console.log(lines)
   if (lines.length != 1) {
-    backtrace[key] = '?'
+    backtrace[key] = `${lines.length}`
   } else {
     backtrace[key] = lines[0].match(/^(.*?):/)[1]
   }
@@ -42,12 +42,12 @@ created.forEach(key => {
 // - anything that likely shouldn't be global is red
 // - anything defined the constants becomes is green
 // - anything defined in the function file is yellow
+// - anything that couldn't be resolved once is blue
 
 console.log('{')
 for (const [key, value] of Object.entries(backtrace)) {
 
-  // default to red
-  let color = clc.red
+  let color = isNaN(value) ? clc.red : clc.blue
 
   if(value.includes('/constants/')) color = clc.green
   if(value.includes('functions.js')) color = clc.yellow
