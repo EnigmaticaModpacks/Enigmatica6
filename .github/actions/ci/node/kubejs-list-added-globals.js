@@ -28,6 +28,7 @@ server_txt.forEach(line => {
 // in that case you can use the ones printed above & below as a compass.
 
 const backtrace = {}
+
 created.forEach(key => {
   const lines = execSync(`grep -r -e '${key} =' -e 'function ${key}(' ./kubejs/server_scripts || true`).toString().trim().split('\n')
   console.log(lines)
