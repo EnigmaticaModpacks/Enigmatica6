@@ -428,6 +428,8 @@ onEvent('item.registry', (event) => {
         {name: 'clogged',        band: 0xba9d7b, outline: 0xba9d7b},
         {name: 'regal',          band: 0xebbe76, outline: 0xebbe76},
         {name: 'frosty',         band: 0xb9d3ec, outline: 0xb9d3ec},
+        {name: 'pcbee',          band: 0x7a7f80, outline: 0x7a7f80},
+
         {name: 'starry_lexxie',  band: 0xffffff, outline: 0xffa500},
         {name: 'kitten',         band: 0xeaa939, outline: 0x4c483b},
         {name: 'oreo',           band: 0x442920, outline: 0xe1d9b8},
