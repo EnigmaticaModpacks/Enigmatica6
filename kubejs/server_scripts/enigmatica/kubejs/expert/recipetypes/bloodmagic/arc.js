@@ -60,6 +60,30 @@ onEvent('recipes', (event) => {
             extraOutputs: [],
             consume: false,
             id: `${id_prefix}mana_diamond_block_from_dragonstone_block`
+        },
+        {
+            output: 'waystones:warp_stone',
+            input: '#waystones:waystone',
+            tool: '#bloodmagic:arc/reverter',
+            extraOutputs: [],
+            consume: false,
+            id: `${id_prefix}warp_stone_from_waystone`
+        },
+        {
+            output: 'waystones:warp_stone',
+            input: '#waystones:sharestone',
+            tool: '#bloodmagic:arc/reverter',
+            extraOutputs: [],
+            consume: false,
+            id: `${id_prefix}warp_stone_from_sharestone`
+        },
+        {
+            output: 'waystones:warp_stone',
+            input: 'waystones:portstone',
+            tool: '#bloodmagic:arc/reverter',
+            extraOutputs: [],
+            consume: false,
+            id: `${id_prefix}warp_stone_from_portstone`
         }
 
         /*,
