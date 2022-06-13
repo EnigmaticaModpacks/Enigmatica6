@@ -1,3 +1,3 @@
 // priority: -10000
 
-console.log('kubejs-post.js: ' + Object.keys(this));
+console.log('Object.keys(this): ' + Object.keys(this));
