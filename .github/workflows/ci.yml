@@ -67,6 +67,9 @@ jobs:
           echo "eula=true" > eula.txt
           cat eula.txt
 
+      - run: cp .github/actions/ci/kubejs/kubejs-pre.js ./kubejs/server_scripts/enigmatica/kubejs
+      - run: cp .github/actions/ci/kubejs/kubejs-post.js ./kubejs/server_scripts/enigmatica/kubejs
+
       - run: node .github/actions/ci/start-server.js bash ./start-automated-server.sh
       - run: sleep 1m
 
