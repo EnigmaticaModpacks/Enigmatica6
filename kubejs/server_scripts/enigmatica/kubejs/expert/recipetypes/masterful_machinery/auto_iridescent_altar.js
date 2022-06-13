@@ -510,8 +510,11 @@ onEvent('recipes', (event) => {
                     type: 'masterfulmachinery:items',
                     data: { item: 'astralsorcery:illumination_powder', count: 4 }
                 },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'industrialforegoing:ether_gas_bucket', count: 1 }
+                },
 
-                { type: 'masterfulmachinery:fluids', data: { fluid: 'industrialforegoing:ether_gas', amount: 1000 } },
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
             ],
