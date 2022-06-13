@@ -68,17 +68,7 @@ jobs:
           cat eula.txt
 
       - run: node .github/actions/ci/start-server.js bash ./start-automated-server.sh
-
-      - run: node .github/actions/ci/log-kubejs-warnings.js
-      - run: node .github/actions/ci/kubejs-recipes.js
-      - run: node .github/actions/ci/kubejs-list-hose-pulley-fluids.js
-
-      - name: Compare against the base branch
-        if: github.event_name == 'pull_request'
-        run: |
-          cd .github/actions/ci/node && npm install && cd ../../../../
-          node .github/actions/ci/node/compare_download-artifact.js ${{ github.event.pull_request.base.repo.full_name }} ${{ github.event.pull_request.base.sha }} ${{ matrix.packmode }} ${{ github.token }}
-          node .github/actions/ci/node/compare_artifact-tags.js
+      - run: sleep 1m
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
@@ -91,10 +81,31 @@ jobs:
             ./kubejs/exported
   # job
   kubejs:
+    needs: [server]
     runs-on: ubuntu-latest
     timeout-minutes: 1
+    strategy:
+      fail-fast: false
+      matrix:
+        packmode: ['normal', 'expert']
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
 
-      - run: node .github/actions/ci/kubejs-todo-remove.js
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: server (${{ matrix.packmode }})
+
+      - run: tree
+
+      - run: node .github/actions/ci/log-kubejs-warnings.js
+      - run: node .github/actions/ci/kubejs-recipes.js
+      - run: node .github/actions/ci/kubejs-list-hose-pulley-fluids.js
+
+      - name: Compare against the base branch
+        if: github.event_name == 'pull_request'
+        run: |
+          cd .github/actions/ci/node && npm install && cd ../../../../
+          node .github/actions/ci/node/compare_download-artifact.js ${{ github.event.pull_request.base.repo.full_name }} ${{ github.event.pull_request.base.sha }} ${{ matrix.packmode }} ${{ github.token }}
+          node .github/actions/ci/node/compare_artifact-tags.js
