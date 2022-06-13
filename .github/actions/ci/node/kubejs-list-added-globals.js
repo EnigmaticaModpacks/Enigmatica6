@@ -24,8 +24,8 @@ server_txt.forEach(line => {
 })
 
 // take a rough shot at finding the file where the variable/const/function is defined.
-// if it does not use one of the simple expected formats, ? is returned instead.
-// in that case you can use the ones printed above & below as a compass.
+// if it does not use one of the simple expected formats, int is returned instead.
+// in that case you can use the ones printed above and below to help pinpoint.
 
 const backtrace = {}
 
