@@ -29,6 +29,21 @@ jobs:
           key: ${{ github.run_id }}-mods
 
       - run: java -jar InstanceSync.jar
+  #job
+  mods:
+    runs-on: ubuntu-latest
+    needs: [instancesync, compile]
+    steps:
+      - uses: actions/cache@v3
+        with:
+          path: mods
+          key: ${{ github.run_id }}-mods
+      - uses: actions/download-artifact@v3
+        with:
+          name: compiled (kubejs)
+          path: mods
+      - run: ls
+        working-directory: mods
   # job
   server:
     needs: [mods]
@@ -138,18 +153,3 @@ jobs:
         with:
           name: compiled (${{ matrix.repo }})
           path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.19-build.${{ github.run_number }}.jar
-  #job
-  mods:
-    runs-on: ubuntu-latest
-    needs: [instancesync, compile]
-    steps:
-      - uses: actions/cache@v3
-        with:
-          path: mods
-          key: ${{ github.run_id }}-mods
-      - uses: actions/download-artifact@v3
-        with:
-          name: compiled (kubejs)
-          path: mods
-      - run: ls
-        working-directory: mods
