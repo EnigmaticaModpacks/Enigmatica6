@@ -123,7 +123,7 @@ jobs:
       - run: node .github/actions/ci/kubejs-recipes.js
       - run: node .github/actions/ci/kubejs-list-hose-pulley-fluids.js
       
-      - run: node .github/actions/ci/node/kubejs-list-added-globals.js
+      - run: node .github/actions/ci/node/kubejs-list-global-variables.js
 
       - name: Compare against the base branch
         if: github.event_name == 'pull_request'
