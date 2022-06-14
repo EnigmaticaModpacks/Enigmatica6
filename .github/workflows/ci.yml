@@ -147,7 +147,7 @@ jobs:
       - uses: actions/cache@v3
         id: cache
         with:
-          path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.19-build.${{ github.run_number }}.jar
+          path: ./KubeJS/forge/build/libs
           key: compile-${{ matrix.repo }}-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
 
       - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
