@@ -133,6 +133,7 @@ jobs:
   #job
   compile:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     strategy:
       matrix:
         repo: ['kubejs']
