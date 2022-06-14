@@ -38,10 +38,13 @@ jobs:
         with:
           path: mods
           key: ${{ github.run_id }}-mods
+
+      - run: find . -name 'kubejs-forge-*' -delete
       - uses: actions/download-artifact@v3
         with:
           name: compiled (kubejs)
           path: mods
+
       - run: ls
         working-directory: mods
   # job
