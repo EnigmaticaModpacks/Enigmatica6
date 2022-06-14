@@ -84,6 +84,7 @@ jobs:
             ./kubejs/exported
   # job
   parse-kubejs:
+    name: 'kubejs (parse)'
     needs: [server]
     runs-on: ubuntu-latest
     timeout-minutes: 2
@@ -117,6 +118,7 @@ jobs:
           node .github/actions/ci/node/compare_artifact-tags.js
   #job
   compile-kubejs:
+    name: 'kubejs (compile)'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-java@v3
@@ -124,5 +126,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
-      - run: cd KubeJS && ./gradlew build
+      - run: ./gradlew build
+        working-directory: KubeJS
       - run: tree KubeJS
