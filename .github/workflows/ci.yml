@@ -154,7 +154,7 @@ jobs:
         id: cache
         with:
           path: ./KubeJS/forge/build/libs
-          key: compile-${{ matrix.repo }}-v1-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
+          key: compile-${{ matrix.repo }}-v2-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
       - name: Gradle
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
