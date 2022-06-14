@@ -146,6 +146,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
+      - run: git apply ../.github/actions/ci/patches/kubejs.patch
+        working-directory: KubeJS
+
       - uses: actions/cache@v3
         id: cache
         with:
@@ -155,8 +159,6 @@ jobs:
       - name: Gradle
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
-          git apply ../.github/actions/ci/patches/kubejs.patch
           ./gradlew -p forge build
           tree
         working-directory: KubeJS
