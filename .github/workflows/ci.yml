@@ -15,7 +15,7 @@ jobs:
   # job
   instancesync:
     runs-on: ubuntu-latest
-    timeout-minutes: 1
+    timeout-minutes: 2
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
@@ -67,6 +67,9 @@ jobs:
           echo "eula=true" > eula.txt
           cat eula.txt
 
+      - run: cp .github/actions/ci/kubejs/kubejs-pre.js ./kubejs/server_scripts/enigmatica/kubejs
+      - run: cp .github/actions/ci/kubejs/kubejs-post.js ./kubejs/server_scripts/enigmatica/kubejs
+
       - run: node .github/actions/ci/start-server.js bash ./start-automated-server.sh
       - run: sleep 1m
 
@@ -83,7 +86,7 @@ jobs:
   kubejs:
     needs: [server]
     runs-on: ubuntu-latest
-    timeout-minutes: 1
+    timeout-minutes: 2
     strategy:
       fail-fast: false
       matrix:
@@ -91,6 +94,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+      - name: Run actions/setup-npm@v3
+        run: cd .github/actions/ci/node && npm install
 
       - name: Download artifact
         uses: actions/download-artifact@v3
@@ -102,10 +107,11 @@ jobs:
       - run: node .github/actions/ci/log-kubejs-warnings.js
       - run: node .github/actions/ci/kubejs-recipes.js
       - run: node .github/actions/ci/kubejs-list-hose-pulley-fluids.js
+      
+      - run: node .github/actions/ci/node/kubejs-list-added-globals.js
 
       - name: Compare against the base branch
         if: github.event_name == 'pull_request'
         run: |
-          cd .github/actions/ci/node && npm install && cd ../../../../
           node .github/actions/ci/node/compare_download-artifact.js ${{ github.event.pull_request.base.repo.full_name }} ${{ github.event.pull_request.base.sha }} ${{ matrix.packmode }} ${{ github.token }}
           node .github/actions/ci/node/compare_artifact-tags.js
