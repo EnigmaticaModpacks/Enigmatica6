@@ -137,6 +137,8 @@ jobs:
     strategy:
       matrix:
         repo: ['kubejs']
+    env:
+      GITHUB_RUN_NUMBER: 9999
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
@@ -148,7 +150,7 @@ jobs:
         id: cache
         with:
           path: ./KubeJS/forge/build/libs
-          key: compile-${{ matrix.repo }}-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
+          key: compile-${{ matrix.repo }}-v1-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
 
       - name: Gradle
         if: steps.cache.outputs.cache-hit != 'true'
@@ -162,4 +164,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: compiled (${{ matrix.repo }})
-          path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.19-build.${{ github.run_number }}.jar
+          path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.19-build.9999.jar
