@@ -26,7 +26,7 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: mods
-          key: ${{ github.run_id }}-mods
+          key: ${{ github.run_id }}-instancesync
 
       - run: java -jar InstanceSync.jar
   #job
