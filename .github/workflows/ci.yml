@@ -124,5 +124,5 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
-      - run: ./KubeJS/gradlew build
-      - run: tree ./KubeJS
+      - run: cd KubeJS && ./gradlew build
+      - run: tree KubeJS
