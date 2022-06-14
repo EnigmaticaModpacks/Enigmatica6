@@ -144,7 +144,8 @@ jobs:
           java-version: '17'
 
       - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
-      - run: git patch ./github/actions/ci/patches/kubejs.patch
+      - run: git apply ../.github/actions/ci/patches/kubejs.patch
+        working-directory: KubeJS
       - run: ./gradlew -p forge build
         working-directory: KubeJS
       - run: tree
