@@ -144,18 +144,18 @@ jobs:
           java-version: '17'
 
       - uses: actions/cache@v3
-        id: kubejs-forge
+        id: cache
         with:
           path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.19-build.${{ github.run_number }}.jar
           key: compile-${{ matrix.repo }}-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
 
       - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
-      - run: git apply ../.github/actions/ci/patches/kubejs.patch
-        working-directory: KubeJS
-      - run: ./gradlew -p forge build
-        working-directory: KubeJS
-        if: steps.kubejs-forge.outputs.cache-hit != 'true'
-      - run: tree
+      - name: Gradle
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          git apply ../.github/actions/ci/patches/kubejs.patch
+          ./gradlew -p forge build
+          tree
         working-directory: KubeJS
 
       - uses: actions/upload-artifact@v3
