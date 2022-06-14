@@ -126,8 +126,15 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+
       - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
       - run: ./gradlew build
         working-directory: KubeJS
       - run: tree
         working-directory: KubeJS
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: compiled (${{ matrix.repo }})
+          path: ./KubeJS/build/libs/kubejs-1605.3.19-build.186.jar
