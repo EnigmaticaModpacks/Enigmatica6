@@ -12,7 +12,7 @@ index 8b9f4a1d..9a38b65d 100644
  	archivesBaseName = project.archives_base_name
  
 diff --git a/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java b/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java
-index 907f306d..f45b2799 100644
+index 907f306d..dc8f9fb6 100644
 --- a/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java
 +++ b/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java
 @@ -21,6 +21,7 @@ import java.io.OutputStream;
@@ -23,7 +23,7 @@ index 907f306d..f45b2799 100644
  import java.util.LinkedHashMap;
  import java.util.Map;
  import java.util.Optional;
-@@ -125,13 +126,18 @@ public class ScriptManager {
+@@ -125,6 +126,11 @@ public class ScriptManager {
  				KubeJSPlugins.forEachPlugin(plugin -> plugin.addBindings(event));
  				BindingsEvent.EVENT.invoker().accept(event);
  
@@ -35,15 +35,7 @@ index 907f306d..f45b2799 100644
  				for (ScriptFile file : pack.scripts) {
  					t++;
  					long start = System.currentTimeMillis();
- 
- 					if (file.load()) {
- 						i++;
--						type.console.info("Loaded script " + file.info.location + " in " + (System.currentTimeMillis() - start) / 1000D + " s");
-+						type.console.info("Loaded zcript " + file.info.location + " in " + (System.currentTimeMillis() - start) / 1000D + " s");
- 					} else if (file.getError() != null) {
- 						if (file.getError() instanceof RhinoException) {
- 							type.console.error("Error loading KubeJS script: " + file.getError().getMessage());
-@@ -140,6 +146,15 @@ public class ScriptManager {
+@@ -140,6 +146,13 @@ public class ScriptManager {
  							file.getError().printStackTrace();
  						}
  					}
@@ -54,8 +46,6 @@ index 907f306d..f45b2799 100644
 +							globals.add((String) key);
 +						}
 +					}
-+
-+					type.console.info(pack.scope.getIds());
  				}
  			} catch (Throwable ex) {
  				type.console.error("Failed to read script pack " + pack.info.namespace + ": ", ex);
