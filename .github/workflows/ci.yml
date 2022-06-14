@@ -26,7 +26,7 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: mods
-          key: ${{ github.run_id }}-mods
+          key: ${{ github.run_id }}-mods-in
 
       - run: java -jar InstanceSync.jar
   #job
@@ -37,7 +37,9 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: mods
-          key: ${{ github.run_id }}-mods
+          key: ${{ github.run_id }}-mods-out
+          restore-keys: |
+            ${{ github.run_id }}-mods-
 
       - run: find . -name 'kubejs-forge-*' -delete
       - uses: actions/download-artifact@v3
