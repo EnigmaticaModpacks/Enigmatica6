@@ -1,0 +1,38 @@
+diff --git a/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java b/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java
+index 907f306d..dc8f9fb6 100644
+--- a/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java
++++ b/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java
+@@ -21,6 +21,7 @@ import java.io.OutputStream;
+ import java.nio.file.Files;
+ import java.nio.file.Path;
+ import java.util.HashMap;
++import java.util.HashSet;
+ import java.util.LinkedHashMap;
+ import java.util.Map;
+ import java.util.Optional;
+@@ -125,6 +126,11 @@ public class ScriptManager {
+ 				KubeJSPlugins.forEachPlugin(plugin -> plugin.addBindings(event));
+ 				BindingsEvent.EVENT.invoker().accept(event);
+ 
++				HashSet<String> globals = new HashSet<>();
++				for (Object key : pack.scope.getIds()) {
++					globals.add((String) key);
++				}
++
+ 				for (ScriptFile file : pack.scripts) {
+ 					t++;
+ 					long start = System.currentTimeMillis();
+@@ -140,6 +146,13 @@ public class ScriptManager {
+ 							file.getError().printStackTrace();
+ 						}
+ 					}
++
++					for (Object key : pack.scope.getIds()) {
++						if (!globals.contains((String) key)) {
++							type.console.info("- new global variable: " + key);
++							globals.add((String) key);
++						}
++					}
+ 				}
+ 			} catch (Throwable ex) {
+ 				type.console.error("Failed to read script pack " + pack.info.namespace + ": ", ex);
