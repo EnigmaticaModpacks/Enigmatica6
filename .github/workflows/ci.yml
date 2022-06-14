@@ -137,4 +137,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: compiled (${{ matrix.repo }})
-          path: ./KubeJS/build/libs/kubejs-1605.3.19-build.186.jar
+          path: ./KubeJS/build/libs/kubejs-1605.3.19-build.(\d+).jar
