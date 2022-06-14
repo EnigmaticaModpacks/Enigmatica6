@@ -7,15 +7,15 @@ const filenames = ['startup', 'client', 'server'];
 const loaded_script = / Loaded script (.*) in /;
 const new_global = / - new global variable: (.*)/;
 
-// color the string from the point where `Loaded script` & `- new global` start
+// color the string from the point where `Loaded script` & `- new global` starts
 function console_log(color, line) {
-  const matches = line.match(/\[INFO ] (SourceFile:\d+:)?(.*)/);
-  console.log(line.replace(matches[2], color(matches[2])));
+  const matches = line.match(/\[INFO ] (SourceFile:\d+: )?(.*)/);
+  console.log(color(matches[2]));
 }
 
 // filter out the lines that do not relate to `new global variable` and its context
 filenames.forEach(filename => {
-  console.log(`${filename}.txt:`);
+  console.log(clc.blue(`${filename}.txt:`));
   const lines = fs.readFileSync(`./logs/kubejs/${filename}.txt`).toString().split('\n');
 
   let color = null;
