@@ -150,10 +150,10 @@ jobs:
           path: ./KubeJS/forge/build/libs
           key: compile-${{ matrix.repo }}-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
 
-      - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
       - name: Gradle
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
+          git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
           git apply ../.github/actions/ci/patches/kubejs.patch
           ./gradlew -p forge build
           tree
