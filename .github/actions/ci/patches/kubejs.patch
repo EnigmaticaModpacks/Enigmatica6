@@ -1,3 +1,16 @@
+diff --git a/build.gradle b/build.gradle
+index 8b9f4a1d..9a38b65d 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -27,7 +27,7 @@ allprojects {
+ 	apply from: "https://files.latmod.com/public/markdown-git-changelog.gradle"
+ 
+ 	def ENV = System.getenv()
+-	version = "${mod_version}-build.${ENV.GITHUB_RUN_NUMBER ?: 9999}"
++	version = "${mod_version}-build.9999"
+ 	group = project.maven_group
+ 	archivesBaseName = project.archives_base_name
+ 
 diff --git a/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java b/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java
 index 907f306d..dc8f9fb6 100644
 --- a/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java
