@@ -143,11 +143,11 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-    - uses: actions/cache@v3
-      id: kubejs-forge
-      with:
-        path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.19-build.${{ github.run_number }}.jar
-        key: compile-${{ matrix.repo }}-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
+      - uses: actions/cache@v3
+        id: kubejs-forge
+        with:
+          path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.19-build.${{ github.run_number }}.jar
+          key: compile-${{ matrix.repo }}-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
 
       - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
       - run: git apply ../.github/actions/ci/patches/kubejs.patch
