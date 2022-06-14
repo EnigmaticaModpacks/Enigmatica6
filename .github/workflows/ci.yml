@@ -83,8 +83,7 @@ jobs:
             ./crash-reports
             ./kubejs/exported
   # job
-  parse-kubejs:
-    name: 'kubejs (parse)'
+  kubejs:
     needs: [server]
     runs-on: ubuntu-latest
     timeout-minutes: 2
@@ -117,9 +116,11 @@ jobs:
           node .github/actions/ci/node/compare_download-artifact.js ${{ github.event.pull_request.base.repo.full_name }} ${{ github.event.pull_request.base.sha }} ${{ matrix.packmode }} ${{ github.token }}
           node .github/actions/ci/node/compare_artifact-tags.js
   #job
-  compile-kubejs:
-    name: 'kubejs (compile)'
+  compile:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        repo: ['kubejs']
     steps:
       - uses: actions/setup-java@v3
         with:
@@ -128,4 +129,5 @@ jobs:
       - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
       - run: ./gradlew build
         working-directory: KubeJS
-      - run: tree KubeJS
+      - run: tree
+        working-directory: KubeJS
