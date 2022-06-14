@@ -128,7 +128,7 @@ jobs:
           java-version: '17'
 
       - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
-      - run: ./gradlew build
+      - run: ./gradlew -p forge build
         working-directory: KubeJS
       - run: tree
         working-directory: KubeJS
@@ -137,4 +137,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: compiled (${{ matrix.repo }})
-          path: ./KubeJS/build/libs/kubejs-1605.3.19-build.${{ github.run_number }}.jar
+          path: ./KubeJS/build/libs/kubejs-forge-1605.3.19-build.${{ github.run_number }}.jar
