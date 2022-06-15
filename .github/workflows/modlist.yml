@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - minecraftinstance.json
+      - ./github/workflows/modlist.yml
       - automation/node/modlist-generate.js
       - automation/node/modlist-uploader.js
 
