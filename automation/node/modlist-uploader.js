@@ -16,7 +16,7 @@ octokit.rest.repos.getContent(params).then(response => {
         content: Buffer.from(fs.readFileSync(`${__dirname}/../../MODLIST.md`)).toString('base64'),
         sha: response.data.sha,
         branch: params["ref"],
-        author: { // attribute the changelog to whomever last edited minecraftinstance.json:)
+        committer: { // attribute the modlist to whomever last edited minecraftinstance.json:)
             name: execSync('git log -n 1 --pretty=format:%an minecraftinstance.json').toString().trim(),
             email: execSync('git log -n 1 --pretty=format:%ae minecraftinstance.json').toString().trim(),
         },
