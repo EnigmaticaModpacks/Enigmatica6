@@ -1,6 +1,6 @@
 const { Octokit } = require("@octokit/rest");
 const fs = require("fs");
-const {execSync} = require("child_process");
+const { execSync } = require("child_process");
 const octokit = new Octokit({ auth: process.argv[2] });
 
 let params = {
@@ -11,9 +11,6 @@ let params = {
 };
 
 octokit.rest.repos.getContent(params).then(response => {
-    console.log(response);
-    console.log(response.data.sha);
-
     octokit.rest.repos.createOrUpdateFileContents({
         message: 'Update MODLIST.md',
         content: Buffer.from(fs.readFileSync(`${__dirname}/../../MODLIST.md`)).toString('base64'),

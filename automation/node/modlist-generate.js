@@ -10,8 +10,7 @@ const MODPACK_VERSION = settings_ps1.match(/\$MODPACK_VERSION = "(.*)"/)[1];
 const header = `## ${CLIENT_NAME} - ${MODPACK_VERSION}`;
 console.log(header);
 
-//
-
+// match the sorting of MelanX/ModListCreator
 function by_project_name(project_a, project_b) {
     if      (project_a.name.toLowerCase() > project_b.name.toLowerCase()) return +1;
     else if (project_a.name.toLowerCase() < project_b.name.toLowerCase()) return -1;
