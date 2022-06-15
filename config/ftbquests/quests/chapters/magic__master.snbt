@@ -16,8 +16,8 @@
 	quests: [
 		{
 			title: "Elven Gateway"
-			x: -0.5d
-			y: 1.0d
+			x: -1.0d
+			y: 1.5d
 			description: [
 				"Known for their mischief as much as their grace, the elves of Alfheim are... discerning in who they allow to enter their realm. "
 				""
@@ -40,8 +40,7 @@
 		}
 		{
 			x: 1.5d
-			y: 3.0d
-			shape: "diamond"
+			y: 3.5d
 			description: ["Through careful handling, Demonic Will may be purified and crystallized. Though they resemble candies of a sort, those who attempted to consume it experimentally quickly devolved into gibbering wretches. It is uncertain if this merely accelerated their madness, or caused it, but no sane arcanist has attempted it since. "]
 			dependencies: ["690063418D6815D2"]
 			id: "5E1A0B48076CD5F6"
@@ -80,8 +79,8 @@
 		{
 			title: "Blood Altar - Tier 3"
 			icon: "bloodmagic:altar"
-			x: 3.0d
-			y: -0.5d
+			x: 3.5d
+			y: 0.0d
 			description: ["A better receptacle is needed once more to delve deeper into the knowledge of the spirit worlds. A Mana Tablet, deeply rooted in the natural arts of this plane, will serve as a safe anchor. "]
 			dependencies: ["06A6BE8C4A3B0C1D"]
 			id: "06E76BE2A422E8AC"
@@ -103,8 +102,8 @@
 			]
 		}
 		{
-			x: 3.5d
-			y: 1.0d
+			x: 4.0d
+			y: 1.5d
 			description: [
 				"“Few problems cannot be solved with a bit of magic and a decent blade. Doubly so for a magical blade.”"
 				""
@@ -129,7 +128,7 @@
 		}
 		{
 			x: 1.0d
-			y: 0.0d
+			y: 0.5d
 			shape: "diamond"
 			description: ["Seek out the Crystalline Mountains in the End where these crystals grow naturally in great abundance. "]
 			dependencies: ["0000000000000FCF"]
@@ -142,7 +141,7 @@
 		}
 		{
 			x: 2.0d
-			y: 0.0d
+			y: 0.5d
 			shape: "diamond"
 			description: ["Found commonly in the Sulfur Springs of the End. Be prepared to go for a swim!"]
 			dependencies: ["0000000000000FCF"]
@@ -155,7 +154,7 @@
 		}
 		{
 			x: 1.5d
-			y: 0.5d
+			y: 1.0d
 			shape: "diamond"
 			description: ["Enchanted Petals have long been used as a test of sorts for those seeking the title of Master. Requiring extensive travel through the inhospitable lands of the End, these petals hold the key to advanced spell casting and summoning.  "]
 			dependencies: [
@@ -170,7 +169,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 2.0d
 			y: 2.0d
 			shape: "diamond"
 			description: [
@@ -195,7 +194,7 @@
 		}
 		{
 			x: 1.5d
-			y: 1.5d
+			y: 2.5d
 			shape: "diamond"
 			description: [
 				"A mysterious ore found seeping into the depths of this world, seemingly from the Otherworld. Little is known of its origins, though the lack of any naturally occurring sources in this plane suggest its source is not entirely natural. "
@@ -213,7 +212,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 1.0d
 			y: 2.0d
 			shape: "diamond"
 			description: ["Potent tools made from materials from across the realms and multi-disciplinary magics, the invention of Sentient Tools was a landmark moment in the arcane world, opening doors unimagined at the time. "]
@@ -245,34 +244,41 @@
 			]
 		}
 		{
-			x: 3.5d
-			y: 2.0d
-			shape: "diamond"
+			x: 4.0d
+			y: 3.0d
 			description: [
 				"It is said that the spirits of the Otherworld exist in an incorporeal state in their homes; the magic invoked in bringing them to this world assists them in building a form to inhabit to protect them during their stay. "
 				""
 				"Ordinarily these shells disintegrate entirely once the spirit leaves this realm, however some of the more powerful spirits seem to leave behind some small amount of Essence which has been found useful for the most advanced spirit magics. "
 				""
 				"Summon and slay an Unbound Afrit to obtain Afrit Essence. "
+				""
+				"Through a combination of both the natural and spiritual arts, a Weak Blood Shard may be created from the remnants of an Afrit’s shell. Craft some and prepare for one final expansion of your Blood Altar."
 			]
 			dependencies: ["152B45DD8C1899C2"]
 			id: "44ADBADBF2774DF4"
-			tasks: [{
-				id: "673AC1CB014F917C"
-				type: "item"
-				item: "occultism:afrit_essence"
-			}]
+			tasks: [
+				{
+					id: "673AC1CB014F917C"
+					type: "item"
+					item: "occultism:afrit_essence"
+				}
+				{
+					id: "7E7737137E78204B"
+					type: "item"
+					item: "bloodmagic:weakbloodshard"
+				}
+			]
 		}
 		{
-			x: 3.5d
-			y: 3.0d
-			shape: "diamond"
+			x: 2.5d
+			y: 4.5d
 			description: [
 				"When her apprentice finally broke through the barred door and entered the chamber, Uphyxes was nowhere to be seen. To this day, the cause of her disappearance is a mystery. Some say she ascended to the Otherworld herself, shedding the chains of her mortal self and becoming a timeless being such as those she studied. "
 				""
 				"The only remnant of her final studies is the pentacle she had chalked in the chamber. Though a number of uses have been found for it since, no further arcanists have disappeared while using the Inverted Tower pentacle that she discovered."
 			]
-			dependencies: ["44ADBADBF2774DF4"]
+			dependencies: ["3103AD6157F2D6AC"]
 			id: "15799BB5752AECB9"
 			tasks: [{
 				id: "7F2F8873597EE837"
@@ -287,50 +293,21 @@
 			}]
 		}
 		{
-			title: "Blood Altar - Tier 4"
+			title: "Blood Altar - Tiers 4 and 5"
 			icon: "bloodmagic:altar"
-			x: 3.0d
-			y: 5.5d
-			description: ["Mastery over the spiritual arts means the arcanist has reached a level of power where they may practice their magic outside of the Undergarden and away from the watchful eyes of dead who find their final rest there. "]
-			dependencies: ["4DE005315CFBB3AE"]
+			x: 3.5d
+			y: 4.5d
+			description: [
+				"With the Essence of an Afrit guiding the Altar it becomes possible to make use of many more runes, and therefore reach levels of power previously unattainable. "
+				""
+				"Mastery over the spiritual arts means the arcanist has reached a level of power where they may practice their magic outside of the Undergarden and away from the watchful eyes of dead who find their final rest there. "
+			]
+			dependencies: ["44ADBADBF2774DF4"]
 			id: "3103AD6157F2D6AC"
 			tasks: [{
 				id: "6C327DA3D328E507"
 				type: "item"
 				item: "bloodmagic:masterbloodorb"
-			}]
-		}
-		{
-			x: 4.0d
-			y: 3.5d
-			shape: "diamond"
-			description: ["Through a combination of both the natural and spiritual arts, a Weak Blood Shard may be created from the remnants of an Afrit’s shell. Craft some and prepare for one final expansion of your Blood Altar."]
-			dependencies: ["44ADBADBF2774DF4"]
-			id: "65BFA7184C041242"
-			tasks: [{
-				id: "302F6E8CD76FA37B"
-				type: "item"
-				item: "bloodmagic:weakbloodshard"
-			}]
-		}
-		{
-			x: 4.0d
-			y: 4.5d
-			shape: "diamond"
-			description: ["With the Essence of an Afrit guiding the Altar it becomes possible to make use of many more runes, and therefore reach levels of power previously unattainable. "]
-			dependencies: ["65BFA7184C041242"]
-			id: "4DE005315CFBB3AE"
-			tasks: [{
-				id: "7D3D33D0DC05CF54"
-				type: "item"
-				title: "Bloodstone"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "enigmatica:stonecuttables/bloodstone"
-					}
-				}
 			}]
 		}
 		{
@@ -347,8 +324,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -0.5d
+			x: -0.5d
+			y: 0.0d
 			description: [
 				"“Thoughts create a new heaven, a new firmament, a new source of energy, from which new arts flow.”"
 				""
@@ -370,9 +347,8 @@
 			]
 		}
 		{
-			x: 0.0d
-			y: 3.0d
-			shape: "diamond"
+			x: 0.5d
+			y: 3.5d
 			description: [
 				"Another trial is placed before those who would be called Master. "
 				""
@@ -390,7 +366,7 @@
 		}
 		{
 			x: -1.0d
-			y: 4.5d
+			y: 3.0d
 			description: ["Though quite potent in its raw form, some advanced practitioners have found that it may be further enhanced through special optics; filtering, focusing, and otherwise manipulating the starlight by way of special apparatuses."]
 			dependencies: ["54D0E568361DC267"]
 			id: "706AC0678CD303BA"
@@ -402,13 +378,16 @@
 		}
 		{
 			x: 1.5d
-			y: 6.0d
+			y: 6.5d
 			description: [
 				"“Beautiful dreamer, wake unto me, Starlight and dewdrops are waiting for thee; Sounds of the rude world heard in the day, Lull'd by the moonlight have all pass'd away.”"
 				""
 				"–Aes-Danai Foster of the Celestial Order"
 			]
-			dependencies: ["42EC202E93A7E5A3"]
+			dependencies: [
+				"42EC202E93A7E5A3"
+				"3103AD6157F2D6AC"
+			]
 			id: "2D6DDD000FC99514"
 			tasks: [{
 				id: "5494E63BE36C5962"
@@ -417,8 +396,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 5.5d
+			x: -0.5d
+			y: 4.5d
 			description: [
 				"The skies of Alfheim have been described as a blanket of stars so dense hardly any sky may be seen. If true, it is no wonder that they’ve developed a special affinity for the celestial magics; their Mana-Infuser being several orders of magnitude more powerful than the Terrestrial Agglomeration Plates used and developed in our realms. "
 				""
@@ -441,7 +420,7 @@
 		}
 		{
 			x: 1.5d
-			y: 5.0d
+			y: 4.5d
 			description: [
 				"“Patience, Connor. You have done well. But it will take time. You're at one with all living things. Each man's thoughts and dreams are yours to know. You have power beyond imagination. Use it well, my friend.”"
 				""
@@ -454,6 +433,7 @@
 			]
 			dependencies: [
 				"457523FA165A5A0B"
+				"5E1A0B48076CD5F6"
 				"15799BB5752AECB9"
 			]
 			id: "0E083E5951149AB5"
@@ -465,7 +445,7 @@
 		}
 		{
 			x: 1.5d
-			y: -1.0d
+			y: -1.5d
 			shape: "diamond"
 			description: ["Snares are a cruel joke invented to test the initiate. Most practitioners prefer the use of the Sentient Harm glyph to obtain Demon Will. "]
 			dependencies: ["06A6BE8C4A3B0C1D"]
@@ -478,8 +458,8 @@
 		}
 		{
 			title: "Edge of the Hidden Realm"
-			x: 4.0d
-			y: -1.0d
+			x: 1.5d
+			y: -0.5d
 			shape: "hexagon"
 			description: [
 				"Travel to the Hidden Realms, a land bordering this world and the Spirit Realm. Here, the ancient Tau Berry may be found. Retrieve some of this precious fruit and learn to cultivate it. "
@@ -504,7 +484,7 @@
 		}
 		{
 			x: 1.5d
-			y: 7.0d
+			y: 7.5d
 			shape: "gear"
 			description: [
 				"By storing Starlight eddies in a massive crystalline battery, the Iridescent Altar may be made to work faster and at any time of day."
@@ -533,7 +513,7 @@
 		}
 		{
 			x: 1.5d
-			y: 4.0d
+			y: 5.5d
 			shape: "gear"
 			description: [
 				"A massive starlight cooled construct used to extract the very essence from the Guardian trapped within."
@@ -551,7 +531,7 @@
 				"● Items are consumed or created at the end of a craft"
 				"● Mana is consumed at the start of a craft or created at the end"
 			]
-			dependencies: ["457523FA165A5A0B"]
+			dependencies: ["5E1A0B48076CD5F6"]
 			min_width: 400
 			id: "226F249D3F4A9258"
 			tasks: [{
