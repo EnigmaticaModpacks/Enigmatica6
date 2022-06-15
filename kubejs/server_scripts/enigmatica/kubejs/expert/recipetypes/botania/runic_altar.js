@@ -456,7 +456,7 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:glyph_accelerate',
                 'bloodmagic:reinforcedslate'
             ],
-            mana: 64000,
+            mana: 32000,
             output: 'bloodmagic:dislocationrune',
             count: 1,
             id: `${id_prefix}blood_rune_displacement`
