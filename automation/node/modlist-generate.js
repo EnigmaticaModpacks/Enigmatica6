@@ -19,14 +19,14 @@ function by_project_name(project_a, project_b) {
 
 const projects = [];
 
-const max = minecraftinstance_json.installedAddons.length;
+const total = minecraftinstance_json.installedAddons.length;
 
 function next(i) {
     const installedAddon = minecraftinstance_json.installedAddons[i];
 
     if (installedAddon) {
         const melanx_url = `https://curse.melanx.de/project/${installedAddon.addonID}`;
-        console.log(`${i+1}/${max}: ${melanx_url}`);
+        console.log(`${i+1}/${total}: ${melanx_url}`);
 
         axios.get(melanx_url)
             .then(response => {

@@ -13,13 +13,14 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v3
       - name: Run actions/setup-npm@v3
         run: cd automation/node && npm install
 
-      - run: git log ./minecraftinstance.json
-      - run: git log -n 1 ./minecraftinstance.json
-      - run: git log -n 1 --pretty=format:%an ./minecraftinstance.json
+      - run: git log -n 1 --pretty=format:%an minecraftinstance.json
+      - run: git log -n 1 --pretty=format:%ae minecraftinstance.json
 
       - run: node automation/node/modlist-generate.js
       - run: node automation/node/modlist-uploader.js ${{ github.token }} ${{ github.event.repository.owner.name }} ${{ github.event.repository.name }} ${{ github.ref_name }}
