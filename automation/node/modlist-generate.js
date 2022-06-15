@@ -59,6 +59,5 @@ function done() {
     fs.writeFileSync(`${__dirname}/../../MODLIST.md`, readme.join('\n') + '\n');
 }
 
-//
-
+// begin
 next(0);
