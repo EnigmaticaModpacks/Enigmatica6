@@ -24,4 +24,5 @@ warnings.forEach(warning => {
     console.log(`::warning::${warning}`);
 });
 
-process.exit(warnings.length === 0 ? 0 : 1);
+// return with exit code 1 for any warning amount
+process.exit(Math.min(1, warnings.length));
