@@ -14,4 +14,4 @@ jobs:
         run: cd automation/node && npm install
 
       - run: echo '${{ toJSON(github) }}'
-      - run: node automation/node/new-modlist.js ${{ github.token }} ${{ github.event.push.repository.owner.name }} ${{ github.event.push.repository.name }} ${{ github.event.push.ref }}
+      - run: node automation/node/new-modlist.js ${{ github.token }} ${{ github.event.repository.owner.name }} ${{ github.event.repository.name }} ${{ github.ref_name }}
