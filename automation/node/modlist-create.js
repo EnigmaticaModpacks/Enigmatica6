@@ -1,16 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
 
-const { execSync } = require('child_process');
-
-argv_token  = process.argv[2];
-argv_owner  = process.argv[3];
-argv_repo   = process.argv[4];
-argv_branch = process.argv[5];
-
-const { Octokit } = require("@octokit/rest");
-const octokit = new Octokit({ auth: argv_token });
-
 const minecraftinstance_json = JSON.parse(fs.readFileSync(`${__dirname}/../../minecraftinstance.json`));
 
 const settings_ps1 = fs.readFileSync(`${__dirname}/../../automation/settings.ps1`).toString();
@@ -73,29 +63,3 @@ function done() {
 //
 
 next(0);
-
-let params = {
-    owner: argv_owner,
-    repo:  argv_repo,
-    path: 'MODLIST.md',
-    ref: argv_branch,
-};
-
-octokit.rest.repos.getContent(params).then(response => {
-    console.log(response);
-    console.log(response.data.sha);
-
-    octokit.rest.repos.createOrUpdateFileContents({
-        ...params,
-        message: 'Update MODLIST.md',
-        content: Buffer.from(fs.readFileSync(`${__dirname}/../../MODLIST.md`)).toString('base64'),
-        sha: response.data.sha,
-        branch: params["ref"],
-        author: { // attribute the changelog to whomever last edited minecraftinstance.json:)
-            name: execSync('git log -n 1 --pretty=format:%an minecraftinstance.json').toString().trim(),
-            email: execSync('git log -n 1 --pretty=format:%ae minecraftinstance.json').toString().trim(),
-        }
-    })
-
-});
-
