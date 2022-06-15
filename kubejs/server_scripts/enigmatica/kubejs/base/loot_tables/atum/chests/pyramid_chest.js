@@ -376,47 +376,47 @@ onEvent('chest.loot_tables', (event) => {
             entries: [
                 {
                     item: 'minecraft:gold_ingot',
-                    weight: 100,
+                    weight: 75,
                     count: [1, 8]
                 },
                 {
                     item: 'minecraft:iron_ingot',
-                    weight: 100,
+                    weight: 75,
                     count: [1, 8]
                 },
                 {
                     item: 'emendatusenigmatica:tin_ingot',
-                    weight: 100,
+                    weight: 75,
                     count: [1, 16]
                 },
                 {
                     item: 'emendatusenigmatica:copper_ingot',
-                    weight: 100,
+                    weight: 75,
                     count: [1, 16]
                 },
                 {
                     item: 'emendatusenigmatica:silver_ingot',
-                    weight: 100,
+                    weight: 75,
                     count: [1, 8]
                 },
                 {
                     item: 'emendatusenigmatica:lead_ingot',
-                    weight: 100,
+                    weight: 75,
                     count: [1, 8]
                 },
                 {
                     item: 'emendatusenigmatica:nickel_ingot',
-                    weight: 100,
+                    weight: 75,
                     count: [1, 8]
                 },
                 {
                     item: 'emendatusenigmatica:electrum_ingot',
-                    weight: 100,
+                    weight: 75,
                     count: [1, 8]
                 },
                 {
                     item: 'emendatusenigmatica:aluminum_ingot',
-                    weight: 100,
+                    weight: 75,
                     count: [1, 8]
                 },
                 {
@@ -436,22 +436,22 @@ onEvent('chest.loot_tables', (event) => {
                 },
                 {
                     item: 'minecraft:lapis_lazuli',
-                    weight: 50,
+                    weight: 30,
                     count: [1, 16]
                 },
                 {
                     item: 'minecraft:coal',
-                    weight: 50,
+                    weight: 30,
                     count: [1, 16]
                 },
                 {
                     item: 'minecraft:redstone',
-                    weight: 50,
+                    weight: 30,
                     count: [1, 16]
                 },
                 {
                     item: 'quark:white_crystal',
-                    weight: 30,
+                    weight: 50,
                     count: [1, 8]
                 }
             ]
