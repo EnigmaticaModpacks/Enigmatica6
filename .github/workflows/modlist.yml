@@ -1,10 +1,11 @@
+name: Update Modlist
 on:
   push:
 #    paths:
 #      - 'minecraftinstance.json'
 
 jobs:
-  changelog:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
