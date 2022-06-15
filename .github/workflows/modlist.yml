@@ -1,9 +1,10 @@
 name: Update Modlist
 on:
   push:
-#    paths:
-#      - 'minecraftinstance.json'
-#      - 'automation/node/new-modlist.js'
+    paths:
+      - 'minecraftinstance.json'
+      - 'automation/node/modlist-generate.js'
+      - 'automation/node/modlist-uploader.js'
 
 jobs:
   generate:
