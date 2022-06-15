@@ -4,7 +4,7 @@ const axios = require('axios');
 const minecraftinstance_json = JSON.parse(fs.readFileSync(`${__dirname}/../../minecraftinstance.json`));
 
 const settings_ps1 = fs.readFileSync(`${__dirname}/../../automation/settings.ps1`).toString();
-const CLIENT_NAME = settings_ps1.match(/\$CLIENT_NAME = "(.*)"/)[1];
+const CLIENT_NAME     = settings_ps1.match(/\$CLIENT_NAME = "(.*)"/)[1];
 const MODPACK_VERSION = settings_ps1.match(/\$MODPACK_VERSION = "(.*)"/)[1];
 
 const header = `## ${CLIENT_NAME} - ${MODPACK_VERSION}`;
@@ -59,5 +59,5 @@ function done() {
     fs.writeFileSync(`${__dirname}/../../MODLIST.md`, readme.join('\n') + '\n');
 }
 
-// begin
+// start
 next(0);
