@@ -447,14 +447,14 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:blankrune',
                 'quark:blue_rune',
-                'bloodmagic:infusedslate',
+                'bloodmagic:reinforcedslate',
                 'ars_nouveau:glyph_extract',
-                'bloodmagic:infusedslate',
+                'bloodmagic:reinforcedslate',
                 'kubejs:cutting_essence',
                 'quark:blue_rune',
-                'bloodmagic:infusedslate',
+                'bloodmagic:reinforcedslate',
                 'ars_nouveau:glyph_accelerate',
-                'bloodmagic:infusedslate'
+                'bloodmagic:reinforcedslate'
             ],
             mana: 64000,
             output: 'bloodmagic:dislocationrune',

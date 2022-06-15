@@ -15,7 +15,7 @@ jobs:
   # job
   instancesync:
     runs-on: ubuntu-latest
-    timeout-minutes: 1
+    timeout-minutes: 2
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
@@ -26,12 +26,32 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: mods
-          key: ${{ github.run_id }}-mods
+          key: ${{ github.run_id }}-instancesync
 
       - run: java -jar InstanceSync.jar
+  #job
+  mods:
+    runs-on: ubuntu-latest
+    needs: [instancesync, compile]
+    steps:
+      - uses: actions/cache@v3
+        with:
+          path: mods
+          key: ${{ github.run_id }}-mods
+          restore-keys: |
+            ${{ github.run_id }}-instancesync
+
+      - run: find . -name 'kubejs-forge-*' -delete
+      - uses: actions/download-artifact@v3
+        with:
+          name: compiled (kubejs)
+          path: mods
+
+      - run: ls
+        working-directory: mods
   # job
   server:
-    needs: [instancesync]
+    needs: [mods]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     strategy:
@@ -83,7 +103,7 @@ jobs:
   kubejs:
     needs: [server]
     runs-on: ubuntu-latest
-    timeout-minutes: 1
+    timeout-minutes: 2
     strategy:
       fail-fast: false
       matrix:
@@ -91,6 +111,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+      - name: Run actions/setup-npm@v3
+        run: cd .github/actions/ci/node && npm install
 
       - name: Download artifact
         uses: actions/download-artifact@v3
@@ -102,13 +124,48 @@ jobs:
       - run: node .github/actions/ci/log-kubejs-warnings.js
       - run: node .github/actions/ci/kubejs-recipes.js
       - run: node .github/actions/ci/kubejs-list-hose-pulley-fluids.js
+      
+      - run: node .github/actions/ci/node/kubejs-list-global-variables.js
 
       - name: Compare against the base branch
         if: github.event_name == 'pull_request'
         run: |
-          cd .github/actions/ci/node && npm install && cd ../../../../
           node .github/actions/ci/node/compare_download-artifact.js ${{ github.event.pull_request.base.repo.full_name }} ${{ github.event.pull_request.base.sha }} ${{ matrix.packmode }} ${{ github.token }}
           node .github/actions/ci/node/compare_artifact-tags.js
+  #job
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        repo: ['kubejs']
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
+      - run: git apply ../.github/actions/ci/patches/kubejs.patch
+        working-directory: KubeJS
+
+      - uses: actions/cache@v3
+        id: cache
+        with:
+          path: ./KubeJS/forge/build/libs
+          key: compile-${{ matrix.repo }}-v2-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
+      - name: Gradle
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          ./gradlew -p forge build
+          tree
+        working-directory: KubeJS
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: compiled (${{ matrix.repo }})
+          path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.19-build.9999.jar
   # job
   curseforge:
     runs-on: ubuntu-latest
