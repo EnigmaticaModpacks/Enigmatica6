@@ -23,6 +23,3 @@ octokit.rest.repos.getContent(params).then(response => {
         ...params
     });
 });
-
-console.log(execSync('git log -n 1 --pretty=format:%an minecraftinstance.json').toString().trim());
-console.log(execSync('git log -n 1 --pretty=format:%ae minecraftinstance.json').toString().trim());
