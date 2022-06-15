@@ -12,14 +12,17 @@ let params = {
 
 octokit.rest.repos.getContent(params).then(response => {
     octokit.rest.repos.createOrUpdateFileContents({
-        message: 'Update MODLIST.md',
-        content: Buffer.from(fs.readFileSync(`${__dirname}/../../MODLIST.md`)).toString('base64'),
+        message: `Update ${params['path']}`,
+        content: Buffer.from(fs.readFileSync(`${__dirname}/../../${params['path']}`)).toString('base64'),
         sha: response.data.sha,
-        branch: params["ref"],
-        committer: { // attribute the modlist to whomever last edited minecraftinstance.json:)
+        branch: params['ref'],
+        author: {
             name: execSync('git log -n 1 --pretty=format:%an minecraftinstance.json').toString().trim(),
             email: execSync('git log -n 1 --pretty=format:%ae minecraftinstance.json').toString().trim(),
         },
         ...params
     });
 });
+
+console.log(execSync('git log -n 1 --pretty=format:%an minecraftinstance.json').toString().trim());
+console.log(execSync('git log -n 1 --pretty=format:%ae minecraftinstance.json').toString().trim());
