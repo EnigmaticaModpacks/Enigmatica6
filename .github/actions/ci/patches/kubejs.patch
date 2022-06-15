@@ -11,6 +11,19 @@ index 8b9f4a1d..9a38b65d 100644
  	group = project.maven_group
  	archivesBaseName = project.archives_base_name
  
+diff --git a/common/src/main/java/dev/latvian/kubejs/recipe/RecipeEventJS.java b/common/src/main/java/dev/latvian/kubejs/recipe/RecipeEventJS.java
+index 46e32fe8..639229b8 100644
+--- a/common/src/main/java/dev/latvian/kubejs/recipe/RecipeEventJS.java
++++ b/common/src/main/java/dev/latvian/kubejs/recipe/RecipeEventJS.java
+@@ -369,7 +369,7 @@ public class RecipeEventJS extends EventJS {
+ 		ConsoleJS.SERVER.info("Added " + added.getValue() + " recipes, removed " + removed.getValue() + " recipes, modified " + modifiedRecipesCount.get() + " recipes, with " + failed.getValue() + " failed recipes and " + fallbacked.getValue() + " fall-backed recipes");
+ 		RecipeJS.itemErrors = false;
+ 
+-		if (CommonProperties.get().debugInfo) {
++		if (true) {
+ 			ConsoleJS.SERVER.info("======== Debug output of all added recipes ========");
+ 
+ 			for (RecipeJS r : addedRecipes) {
 diff --git a/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java b/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java
 index 907f306d..dc8f9fb6 100644
 --- a/common/src/main/java/dev/latvian/kubejs/script/ScriptManager.java
