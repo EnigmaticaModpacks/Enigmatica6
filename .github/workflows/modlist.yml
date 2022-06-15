@@ -14,6 +14,5 @@ jobs:
         run: cd automation/node && npm install
 
       - run: echo ${{ github.EVENT_NAME }}
-      - run: echo ${{ github.event }}
-      - run: echo ${{ github.event.push }}
+      - run: echo ${{ JSON.stringify(github.event) }}
       - run: node automation/node/new-modlist.js ${{ github.token }} ${{ github.event.push.repository.owner.name }} ${{ github.event.push.repository.name }} ${{ github.event.push.ref }}
