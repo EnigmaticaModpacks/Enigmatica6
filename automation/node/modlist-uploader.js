@@ -19,7 +19,6 @@ octokit.rest.repos.getContent(params).then(response => {
         author: {
             name: execSync('git log -n 1 --pretty=format:%an minecraftinstance.json').toString().trim(),
             email: execSync('git log -n 1 --pretty=format:%ae minecraftinstance.json').toString().trim(),
-        },
-        ...params
+        },...params
     });
 });
