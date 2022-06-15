@@ -183,12 +183,16 @@ onEvent('jei.information', (event) => {
             text: ['Obtained by killing Silk Moths which are spawned by Silk Moth Nests.']
         },
         {
-            items: [/upgrade_aquatic:\w+_coralstone$/],
-            text: ['Obtained by placing Coralstone next to living coral and waiting.']
+            items: [/upgrade_aquatic:(?!.*dead_coralstone|chiseled)(?=.*_coralstone$)/],
+            text: ['Obtained by placing Coralstone next to living coral and waiting. Requires Silk Touch to harvest.']
         },
         {
             items: ['upgrade_aquatic:coralstone'],
             text: ['Place next to living coral and wait for it to infuse.']
+        },
+        {
+            items: ['upgrade_aquatic:dead_coralstone'],
+            text: ['Obtained by breaking infused Coralstone without Silk Touch.']
         },
         {
             items: [
