@@ -13,5 +13,5 @@ jobs:
       - name: Run actions/setup-npm@v3
         run: cd automation/node && npm install
 
-      - run: echo "$GITHUB_CONTEXT"
+      - run: echo ${{ toJSON(github) }}
       - run: node automation/node/new-modlist.js ${{ github.token }} ${{ github.event.push.repository.owner.name }} ${{ github.event.push.repository.name }} ${{ github.event.push.ref }}
