@@ -3,6 +3,7 @@ on:
   push:
 #    paths:
 #      - 'minecraftinstance.json'
+#      - 'automation/node/new-modlist.js'
 
 jobs:
   generate:
@@ -13,5 +14,5 @@ jobs:
       - name: Run actions/setup-npm@v3
         run: cd automation/node && npm install
 
-      - run: echo '${{ toJSON(github) }}'
+#      - run: echo '${{ toJSON(github) }}'
       - run: node automation/node/new-modlist.js ${{ github.token }} ${{ github.event.repository.owner.name }} ${{ github.event.repository.name }} ${{ github.ref_name }}

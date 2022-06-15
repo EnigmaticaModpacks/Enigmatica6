@@ -8,8 +8,6 @@ argv_owner  = process.argv[3];
 argv_repo   = process.argv[4];
 argv_branch = process.argv[5];
 
-console.log(process.argv);
-
 const { Octokit } = require("@octokit/rest");
 const octokit = new Octokit({ auth: argv_token });
 
@@ -74,7 +72,7 @@ function done() {
 
 //
 
-// next(0);
+next(0);
 
 let params = {
     owner: argv_owner,
