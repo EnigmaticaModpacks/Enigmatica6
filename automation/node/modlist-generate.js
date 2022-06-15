@@ -1,5 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
+const {execSync} = require("child_process");
 
 const minecraftinstance_json = JSON.parse(fs.readFileSync(`${__dirname}/../../minecraftinstance.json`));
 
@@ -60,5 +61,8 @@ function done() {
 }
 
 //
+
+console.log(execSync('git log -n 1 --pretty=format:%an minecraftinstance.json'))
+console.log(execSync('git log -n 1 --pretty=format:%ae minecraftinstance.json'))
 
 next(0);
