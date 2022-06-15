@@ -1,0 +1,15 @@
+on:
+  push:
+#    paths:
+#      - 'minecraftinstance.json'
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - name: Run actions/setup-npm@v3
+        run: cd automation/node && npm install
+
+      - run: node automation/node/new-modlist.js ${{ github.token }} ${{ github.event.push.repository.owner.name }} ${{ github.event.push.repository.name }} ${{ github.event.push.ref }}
