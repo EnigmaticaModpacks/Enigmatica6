@@ -184,11 +184,11 @@ onEvent('jei.information', (event) => {
         },
         {
             items: [/upgrade_aquatic:\w+_coralstone$/],
-            text: ['Obtained by placing Coralstone next to living coral.']
+            text: ['Obtained by placing Coralstone next to living coral and waiting.']
         },
         {
             items: ['upgrade_aquatic:coralstone'],
-            text: ['Place next to living coral to infuse.']
+            text: ['Place next to living coral and wait for it to infuse.']
         },
         {
             items: [
