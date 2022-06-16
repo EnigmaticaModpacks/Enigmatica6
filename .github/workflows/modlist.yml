@@ -5,11 +5,12 @@ on:
     paths:
       - minecraftinstance.json
       - automation/settings.ps1
+      - .github/workflows/modlist.yml
       - automation/node/modlist-generate.js
       - automation/node/modlist-uploader.js
 
 jobs:
-  generate:
+  job:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -17,8 +18,9 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v3
-      - name: Run actions/setup-npm@v3
-        run: cd automation/node && npm install
+
+      - run: npm install
+        working-directory: automation/node
 
       - run: node automation/node/modlist-generate.js
       - run: node automation/node/modlist-uploader.js ${{ github.token }} ${{ github.event.repository.owner.name }} ${{ github.event.repository.name }} ${{ github.ref_name }}
