@@ -22,7 +22,7 @@ octokit.rest.repos.getContent(params).then(response => {
         content: content_new,
         sha: response.data.sha,
         branch: params['ref'],
-        author: {
+        author: { // sets the author to the person that last modified minecraftinstance.json
             name: execSync('git log -n 1 --pretty=format:%an minecraftinstance.json').toString().trim(),
             email: execSync('git log -n 1 --pretty=format:%ae minecraftinstance.json').toString().trim(),
         },...params
