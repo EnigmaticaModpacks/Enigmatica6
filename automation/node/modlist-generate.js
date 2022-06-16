@@ -48,7 +48,7 @@ function next(i) {
 
                 next(i + 1); // process the next addon synchronously.
             })
-            .catch(error => {
+            .catch(() => {
                 next(i); // the api has a tendency to be slow (or even time out), so in case of failure retry the current addon.
             });
     } else {
