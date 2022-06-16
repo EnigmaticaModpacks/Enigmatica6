@@ -1,0 +1,28 @@
+name: Update Modlist
+
+on:
+  push:
+    branches:
+      - 'develop'
+    paths:
+      - minecraftinstance.json
+      - automation/settings.ps1
+      - .github/workflows/modlist.yml
+      - automation/node/modlist-generate.js
+      - automation/node/modlist-uploader.js
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+
+      - run: npm install
+        working-directory: automation/node
+
+      - run: node automation/node/modlist-generate.js
+      - run: node automation/node/modlist-uploader.js ${{ github.token }} ${{ github.event.repository.owner.name }} ${{ github.event.repository.name }} ${{ github.ref_name }}
