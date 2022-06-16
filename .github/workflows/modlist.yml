@@ -2,6 +2,8 @@ name: Update Modlist
 
 on:
   push:
+    branches:
+      - 'develop'
     paths:
       - minecraftinstance.json
       - automation/settings.ps1
