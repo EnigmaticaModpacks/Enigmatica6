@@ -6,6 +6,7 @@ on:
       - 'develop'
       - 'modlist/**'
     paths:
+      - MODLIST.md
       - minecraftinstance.json
       - automation/settings.ps1
       - .github/workflows/modlist.yml
