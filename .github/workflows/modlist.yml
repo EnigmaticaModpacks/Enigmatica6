@@ -26,9 +26,10 @@ jobs:
 
       - run: node automation/node/modlist-generate.js
 
-      - run: |
-          git config user.name $(git log -n 1 --pretty=format:%an minecraftinstance.json)
-          git config user.email $(git log -n 1 --pretty=format:%ae minecraftinstance.json)
+      - name: Update MODLIST.md
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an minecraftinstance.json)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae minecraftinstance.json)"
           git add MODLIST.md
           git commit -m "Update MODLIST.md"
           git push
