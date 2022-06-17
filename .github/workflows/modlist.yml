@@ -4,12 +4,12 @@ on:
   push:
     branches:
       - 'develop'
+      - 'modlist/**'
     paths:
       - minecraftinstance.json
       - automation/settings.ps1
       - .github/workflows/modlist.yml
       - automation/node/modlist-generate.js
-      - automation/node/modlist-uploader.js
 
 jobs:
   job:
@@ -25,4 +25,10 @@ jobs:
         working-directory: automation/node
 
       - run: node automation/node/modlist-generate.js
-      - run: node automation/node/modlist-uploader.js ${{ github.token }} ${{ github.event.repository.owner.name }} ${{ github.event.repository.name }} ${{ github.ref_name }}
+
+      - run: |
+          git config user.name $(git log -n 1 --pretty=format:%an minecraftinstance.json)
+          git config user.email $(git log -n 1 --pretty=format:%ae minecraftinstance.json)
+          git add MODLIST.md
+          git commit -m "Update MODLIST.md"
+          git push
