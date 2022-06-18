@@ -132,6 +132,18 @@ onEvent('recipes', (event) => {
             input: 'minecraft:magma_cream',
             energy: 5000,
             id: `${id_prefix}fairy_imagma_creamngot`
+        },
+        {
+            output: Fluid.of('tconstruct:molten_netherite', 144),
+            input: '#forge:ingots/netherite',
+            energy: 5000,
+            id: `${id_prefix}netherite_ingot`
+        },
+        {
+            output: Fluid.of('tconstruct:molten_netherite', 16),
+            input: '#forge:nuggets/netherite',
+            energy: 555,
+            id: `${id_prefix}netherite_nugget`
         }
     ];
 
