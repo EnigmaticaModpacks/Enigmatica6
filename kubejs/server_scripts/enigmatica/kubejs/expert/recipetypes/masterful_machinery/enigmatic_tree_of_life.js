@@ -196,16 +196,17 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:dimensional_mastery_shard', count: 1 } }
             ],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'extrastorage:disk_4096k', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'extrastorage:disk_4096k', count: 4 } },
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'extrastorage:disk_262144k_fluid', count: 8 }
+                    data: { item: 'extrastorage:disk_262144k_fluid', count: 4 }
                 },
-                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:disk_drive', count: 2 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:quantum_entangloporter', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:disk_drive', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:quantum_entangloporter', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'rsinfinitybooster:dimension_card', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_receiver', count: 8 } },
-                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_transmitter', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_receiver', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_transmitter', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_card', count: 4 } },
                 { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
             ],
             ticks: 60,
