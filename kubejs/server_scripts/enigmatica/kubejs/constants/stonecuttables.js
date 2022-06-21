@@ -2321,8 +2321,10 @@ glassTypes.forEach((glassType) => {
             colorlessGlass.push(`chipped:${chippedGlassType}_${glassType}_${i}`);
         }
     });
-    for (i = 1; i <= 14; i++) {
-        colorlessGlass.push(`chipped:glass_${i}`);
+    if (glassTypes == 'glass') {
+        for (i = 1; i <= 14; i++) {
+            colorlessGlass.push(`chipped:glass_${i}`);
+        }
     }
 
     stonecuttables.push({
