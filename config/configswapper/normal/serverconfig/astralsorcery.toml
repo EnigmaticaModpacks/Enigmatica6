@@ -1,3 +1,9 @@
 [crafting]
 	#Defines the state the starmetal ore will revert into when used up by a celestial crystal cluster. Obtain a valid state-string via '/astralsorcery serialize look' and look at the block you want to get. (Chat-Message can be copied)
 	starmetalRevertState = "minecraft:iron_ore"
+
+[registries]
+
+	[registries.amulet_enchantments]
+		#Defines a whitelist of which enchantments can be rolled and buffed by the enchantment-amulet. The higher the weight, the more likely that roll is selected.Format: <enchantment-registry-name>;<weight>
+		amulet_enchantments = ["minecraft:protection;5", "minecraft:respiration;2", "minecraft:sharpness;5", "minecraft:looting;2", "minecraft:sweeping;2", "minecraft:fortune;2", "minecraft:power;5", "minecraft:impaling;2", "minecraft:multishot;2", "gunswithoutroses:impact;5", "ars_nouveau:mana_regen;5", "ars_nouveau:mana_boost;5", "ensorcellation:magic_protection;5", "ensorcellation:exp_boost;5", "ensorcellation:gourmand;5", "ensorcellation:vitality;1", "ensorcellation:magic_edge;2", "ensorcellation:vorpal;2", "apotheosis:knowledge;2", "apotheosis:crescendo;2", "apotheosis:capturing;1"]
