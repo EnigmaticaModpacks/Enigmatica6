@@ -34,7 +34,11 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:black_marble_arch', count: 49 } },
                 { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:marble_bricks', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { tag: 'astralsorcery:crystals/attuned', count: 10 } },
-                { type: 'masterfulmachinery:fluids', data: { fluid: 'astralsorcery:liquid_starlight', amount: 64000 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'astralsorcery:liquid_starlight', amount: 1024 }
+                },
                 { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
             ],
             ticks: 60,
@@ -76,7 +80,11 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:ritualtinkerer', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:artisinal_ritual_kit', count: 10 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:artisinal_chalk_set', count: 10 } },
-                { type: 'masterfulmachinery:fluids', data: { fluid: 'bloodmagic:life_essence_fluid', amount: 64000 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1024 }
+                },
                 { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
             ],
             ticks: 60,
@@ -128,8 +136,11 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pumpjack', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_distillation_tower', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pressure_chamber', count: 1 } },
-
-                { type: 'masterfulmachinery:fluids', data: { fluid: 'pneumaticcraft:lubricant', amount: 64000 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    perTick: true,
+                    data: { fluid: 'pneumaticcraft:lubricant', amount: 1024 }
+                },
                 { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
             ],
             ticks: 60,
