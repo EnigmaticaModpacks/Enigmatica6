@@ -1,0 +1,744 @@
+{
+	id: "5E2F0BAE050252A8"
+	group: "72A9465344128AF9"
+	order_index: 8
+	filename: "computercraft_tweaked"
+	title: "ComputerCraft: Tweaked"
+	icon: "computercraft:computer_advanced"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Lets have some fun with Computers!"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Wait there are Computers in Minecraft?!"
+			description: [
+				"Welcome to the crazy world of programming! ComputerCraft: Tweaked is mod entirely focused about that one thing, giving you access to amazing Lua Programming language inside of Minecraft!"
+				""
+				"Its incredible how compact and complicated stuff you can do with this mod. Think about automating Create Mechanical Crafter with only 1 block!?! Or doing complex operating system controlling everything you have in your base. "
+				""
+				"Think about anything, this mod can do it!"
+				""
+				"Those quests are meant to showcase the mod, and teach you, fellow Player, Basics of Basics with Lua and how to start learning more!"
+				""
+				"~~Kanzio"
+				""
+				"PS: This chapter has few section: Peripherals, Lua Basics and Challenges! Most of them work on \"honor\" system, so please don't just do them all by once without even trying ^^\""
+			]
+			size: 2.0d
+			optional: true
+			min_width: 250
+			id: "2D79E4D126EE389E"
+			tasks: [{
+				id: "300A40F0F0E6E4B2"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+			rewards: [{
+				id: "7CB6B1E6983607A6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Advanced Computer"
+			x: -0.5d
+			y: -2.5d
+			subtitle: "Shiny!"
+			description: [
+				"This fancy gold plated computer has a tiny bit more to offer than his old gray ancestor."
+				""
+				"Except the fact it looks nicer, it has more disk space available for you and has colors support!"
+				""
+				"Colors doesn't matter for us however, as we aren't gonna do OS in this tutorial, but its good to know its a thing right?"
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			dependency_requirement: "all_started"
+			id: "5E9975407F07DBCE"
+			tasks: [{
+				id: "2C0D62579BA499E8"
+				type: "item"
+				item: "computercraft:computer_advanced"
+			}]
+		}
+		{
+			title: "Peripherals"
+			icon: {
+				id: "computercraft:disk"
+				Count: 1b
+				tag: {
+					Color: 14605932
+				}
+			}
+			x: -3.0d
+			y: 0.0d
+			subtitle: "There is something more than Computers?!"
+			description: [
+				"CC: Tweaked has a lot peripherals that are really useful for doing anything!"
+				""
+				"This section will show you all peripherals available and how to use them!"
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			size: 1.25d
+			id: "378BEFB62C4F98BF"
+			tasks: [{
+				id: "4231A52D1EB86805"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "40472804F00CBB98"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Advanced Peripherals"
+			x: -4.5d
+			y: -4.5d
+			subtitle: "Stuff you need for any sort of automation!"
+			description: [
+				"Advanced Peripherals is an addon for CC: Tweaked that adds massive amount of functionality to it with just few simple blocks!"
+				""
+				"Check individual quests for any peripheral from this mod to see what it's doing and how to use it!"
+				"TODO: Link to official Advanced Peripherals WIKI"
+			]
+			dependencies: ["378BEFB62C4F98BF"]
+			id: "6AA1236C9946F569"
+			tasks: [{
+				id: "56A45A4FCA54436D"
+				type: "item"
+				item: "advancedperipherals:peripheral_casing"
+			}]
+			rewards: [
+				{
+					id: "19528216C1F29F94"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "advancedperipherals:manual"
+						}
+					}
+				}
+				{
+					id: "6A25D30D59AEE169"
+					type: "item"
+					item: "advancedperipherals:peripheral_casing"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			subtitle: "Lua Basics: Enviroment Detector API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "643882E2974E1FC4"
+			tasks: [{
+				id: "5E945D7A74276756"
+				type: "item"
+				item: "advancedperipherals:environment_detector"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			subtitle: "Lua Basics: Chat API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "69538FA96C5DB66F"
+			tasks: [{
+				id: "5BDA5C07EECA1E62"
+				type: "item"
+				item: "advancedperipherals:chat_box"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -6.5d
+			subtitle: "Lua Basics: Player Detector API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "1FF23101B4AE771A"
+			tasks: [{
+				id: "21D3EBCD9EE314C8"
+				type: "item"
+				item: "advancedperipherals:player_detector"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -3.0d
+			subtitle: "Lua Basics: RS Bridge API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "29391D18C88CE860"
+			tasks: [{
+				id: "0936AC03B35A6BC1"
+				type: "item"
+				item: "advancedperipherals:rs_bridge"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -4.0d
+			subtitle: "Lua Basics: Energy Detector API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "5A981BAE9C143E66"
+			tasks: [{
+				id: "7190E44C0775FA32"
+				type: "item"
+				item: "advancedperipherals:energy_detector"
+			}]
+		}
+		{
+			icon: "advancedperipherals:ar_controller"
+			x: -5.0d
+			y: -6.5d
+			subtitle: "Lua Basics: AR Controller API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "0CA53F24B5D6FAC7"
+			tasks: [
+				{
+					id: "2B4D966DC13F3779"
+					type: "item"
+					item: "advancedperipherals:ar_controller"
+				}
+				{
+					id: "1A7C3F19B5A0DFBD"
+					type: "item"
+					item: {
+						id: "advancedperipherals:ar_goggles"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -5.0d
+			subtitle: "Lua Basics: Inventory Manager API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "63E3AF5B3F755AAB"
+			tasks: [{
+				id: "4C86ADCC2F1F1AF0"
+				type: "item"
+				item: "advancedperipherals:inventory_manager"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.5d
+			subtitle: "Lua Basics: Redstone API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "78DDFBC9534A6310"
+			tasks: [{
+				id: "2F43BBCBD9F69B8F"
+				type: "item"
+				item: "advancedperipherals:redstone_integrator"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			subtitle: "Lua Basics: Block Reader API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "44A95D62FE28D5A4"
+			tasks: [{
+				id: "0A711582592CA015"
+				type: "item"
+				item: "advancedperipherals:block_reader"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.0d
+			subtitle: "Lua Basics: Geo Scanner API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "3C2ED0224A637626"
+			tasks: [{
+				id: "28460122A0E940ED"
+				type: "item"
+				item: "advancedperipherals:geo_scanner"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.0d
+			dependencies: ["6AA1236C9946F569"]
+			id: "064DB44EB6A2DF89"
+			tasks: [{
+				id: "7C219A8F15FC0AC0"
+				type: "item"
+				item: "advancedperipherals:nbt_storage"
+			}]
+		}
+		{
+			title: "Pocket Computers"
+			x: 0.5d
+			y: -2.5d
+			subtitle: "Cookie Clicker in your Pocket all the time!"
+			description: [
+				"There are item version of those computers as well! Maybe they aren't so useful with automating stuff, but with some knowledge you can do, for example, a pocket Cookie Clicker game!"
+				""
+				"They are really useful for remote access to your systems, or for playing games all the time you have to build stuff."
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			id: "52933D3422727EB3"
+			tasks: [{
+				id: "7169C85D653C1F03"
+				type: "item"
+				title: "Pocket Computers"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "computercraft:pocket_computer_normal"
+								Count: 1b
+							}
+							{
+								id: "computercraft:pocket_computer_advanced"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "About Peripherals in General"
+			icon: "minecraft:chest"
+			x: -5.5d
+			y: 0.0d
+			shape: "circle"
+			subtitle: "Lua Basics: Peripheral API"
+			description: [
+				"In general, Peripheral is any block you could think of. Classic Minecraft Chest or Furnace, Drawer, Mekanism Metallurgic Infuser, anything!"
+				""
+				"In ComputerCraft, to use any peripheral you need to wrap / find it first. You could set it to a local variable to be able to just use name you gave it in the code."
+				""
+				"Functions:"
+				"peripheral.wrap(\"#1\")"
+				"#1 -> side of the PC or name of the peripheral you want to wrap!"
+				"It returns a table with all functions for that specific peripheral. Thanks to that you can use peripheral specific commands on peripheral you just wrapped."
+				""
+				"peripheral.find(\"#1\",\"#2\")"
+				"#1 -> The type of peripheral you are looking for."
+				"#2 -> Filter [Optional]. Requires function to work."
+				"It returns a table with all founded peripherals, that pass Filter requirements. Filter needs function that returns True/False for it to filter, but can also be used to run commands on every peripheral that was founded!"
+				""
+				"peripheral.getName(#1)"
+				"#1 -> Peripheral you want to get name of."
+				"getName is really useful command used a lot in CC, a lot of commands (mostly for moving stuff from one inventory to another) requires you to give then \"Name\" of the peripheral, and not a table that wrap / find gives you. This take what wrap / find returns and gives the Name of that peripheral!"
+			]
+			dependencies: ["378BEFB62C4F98BF"]
+			min_width: 350
+			id: "55493D823F7403DA"
+			tasks: [{
+				id: "0F3C08C74B6E61C1"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "1FEB3FACFB702936"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Inventory API"
+			icon: "minecraft:barrel"
+			x: -7.5d
+			y: -1.0d
+			subtitle: "Lua Basics: Global Block Inventory API"
+			description: [""]
+			dependencies: ["55493D823F7403DA"]
+			id: "4D55FB33758DEF7D"
+			tasks: [{
+				id: "3AB4C5F3F3B2CE51"
+				type: "checkmark"
+				title: "Inventory API"
+			}]
+		}
+		{
+			title: "Liquid API"
+			icon: "minecraft:water_bucket"
+			x: -7.5d
+			y: 0.0d
+			subtitle: "Lua Basics: Global Liquid API"
+			dependencies: ["55493D823F7403DA"]
+			id: "18C25A983C4831B7"
+			tasks: [{
+				id: "0B5412C79BD9E639"
+				type: "checkmark"
+				title: "Fluid API"
+			}]
+		}
+		{
+			title: "Energy API"
+			icon: "mekanism:basic_energy_cube"
+			x: -7.5d
+			y: 1.0d
+			subtitle: "Lua Basics: Global Energy API"
+			dependencies: ["55493D823F7403DA"]
+			id: "7CD446B77ACA29F7"
+			tasks: [{
+				id: "1718C0A07EBBF170"
+				type: "checkmark"
+				title: "Energy API"
+			}]
+		}
+		{
+			title: "CC Peripherals"
+			icon: "computercraft:pocket_computer_normal"
+			x: -4.5d
+			y: 4.5d
+			dependencies: ["378BEFB62C4F98BF"]
+			id: "1580D9FD06937ABB"
+			tasks: [{
+				id: "4816E5D3E5C6E0D2"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 6.0d
+			dependencies: ["1580D9FD06937ABB"]
+			id: "54E1A1FE032B1363"
+			tasks: [{
+				id: "5472E9F8815DEF4E"
+				type: "item"
+				title: "Monitors"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "computercraft:monitor_advanced"
+								Count: 1b
+							}
+							{
+								id: "computercraft:monitor_normal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 3.0d
+			dependencies: ["1580D9FD06937ABB"]
+			id: "582FF2D81252AC77"
+			tasks: [{
+				id: "0BB37782A3276ACB"
+				type: "item"
+				item: "computercraft:speaker"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 4.0d
+			description: ["TODO: Add different colors into the quest."]
+			dependencies: ["1580D9FD06937ABB"]
+			id: "0C3CF3165304BB22"
+			tasks: [
+				{
+					id: "4210C15D0320BE3E"
+					type: "item"
+					item: "computercraft:disk_drive"
+				}
+				{
+					id: "679CA9A8D8852B7A"
+					type: "item"
+					item: {
+						id: "computercraft:disk"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			icon: "computercraft:printer"
+			x: -4.0d
+			y: 6.0d
+			dependencies: ["1580D9FD06937ABB"]
+			id: "181772F6C62A4EEF"
+			tasks: [
+				{
+					id: "1DCFA115E667AFAE"
+					type: "item"
+					item: "computercraft:printer"
+				}
+				{
+					id: "6ADDB5B991464F08"
+					type: "item"
+					item: "minecraft:paper"
+					count: 8L
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 5.5d
+			dependencies: ["1580D9FD06937ABB"]
+			id: "229E3C141CF5DCA7"
+			tasks: [{
+				id: "348DDB1AB24A6234"
+				type: "item"
+				title: "Turtles"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "computercraft:turtle_advanced"
+								Count: 1b
+							}
+							{
+								id: "computercraft:turtle_normal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: 5.0d
+			dependencies: ["1580D9FD06937ABB"]
+			id: "162927942501A25B"
+			tasks: [
+				{
+					id: "2F30CD36EFF93C50"
+					type: "item"
+					title: "Wired Modem"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:wired_modem"
+									Count: 1b
+								}
+								{
+									id: "computercraft:wired_modem_full"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "64A1A1464DB5212B"
+					type: "item"
+					item: "computercraft:cable"
+				}
+			]
+			rewards: [
+				{
+					id: "313128DA796725C5"
+					type: "item"
+					item: "computercraft:cable"
+					count: 16
+				}
+				{
+					id: "64EBD65FFC3C660D"
+					type: "item"
+					item: "computercraft:wired_modem_full"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 4.5d
+			subtitle: "No More Cables!"
+			description: [""]
+			dependencies: ["162927942501A25B"]
+			id: "4CD43BE714CAE6D8"
+			tasks: [{
+				id: "0FF6E410A7B9EE4D"
+				type: "item"
+				title: "Wireless Modem"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "computercraft:wireless_modem_advanced"
+								Count: 1b
+							}
+							{
+								id: "computercraft:wireless_modem_normal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Documentation"
+			icon: "computercraft:printed_pages"
+			x: 2.5d
+			y: 1.25d
+			shape: "pentagon"
+			subtitle: "Official Wikis for everything!"
+			description: [
+				"If you want to learn even more, or need something that isn't here, check out those links!"
+				""
+				"Those are official docs to Lua Programming Languae, as well as to CC: Tweaked Wiki and Mekanism integration."
+				"TODO: clickable links or message on chat"
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			size: 1.25d
+			id: "508989B512DBB2A2"
+			tasks: [{
+				id: "0ED4FB7A29E8557D"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "6585C24F9B348B68"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Challenges"
+			icon: "computercraft:computer_command"
+			x: 0.0d
+			y: 2.25d
+			shape: "hexagon"
+			subtitle: "Try it for yourself!"
+			description: [
+				"Here are some easy challenges you could try completing to test what you learned so far ^^ For every challenge you will get a small prize :wink:"
+				""
+				"However at the end, there are few challenges you could not be able to finish without deeper understanding of Lua, so don't care too much about those if you aren't able to finish. There are here for those handful of people that know what there are doing ^^\""
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			size: 1.5d
+			min_width: 250
+			id: "777349A29491AE4C"
+			tasks: [{
+				id: "695699FD194967F9"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "4E84EC1B07DF8EA7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Your first program!"
+			x: -0.5d
+			y: 3.5d
+			subtitle: "Challenge #1"
+			description: ["Do program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
+			id: "7F980AC22498FE44"
+			tasks: [{
+				id: "194470FBF6D30D4B"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+			rewards: [{
+				id: "2F6F8FDD1C50F2A4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Item Transfer!"
+			x: 1.0d
+			y: 4.0d
+			subtitle: "Challenge #2"
+			description: ["Make a program that will transfer items from inventory on the left to inventory on the right!"]
+			id: "06A8B69F9385388B"
+			tasks: [{
+				id: "1DD8D1520D86E71D"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			title: "Using Peripherals to interract with RS"
+			x: 0.0d
+			y: 5.0d
+			subtitle: "Challenge #3"
+			description: ["Use Advanced Peripherals to import some items from RS into a chest!"]
+			id: "0F004D494E6114E8"
+			tasks: [{
+				id: "7F89261D56AFCC98"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			title: "Coding Tips"
+			icon: "create:wrench"
+			x: 2.5d
+			y: -1.25d
+			shape: "gear"
+			subtitle: "Enough of in-game coding? There is a solution!"
+			description: [
+				"I think after a while of editing in game, you know it's really annoying to use it, but don't worry fellow player, you don't need to use it anymore!"
+				""
+				"You can just drag\\&drop files into minecraft itself! "
+				"You just have to create a file on your desktop, code in it and rename it onto [your_name].lua, drop it into in-game Computer and run! It's that easy ^^"
+				""
+				"If you want to have proper Lua support and checking, you can install Visual Studio Code and ComputerCraft: Tweaked Plugin for full CC Lua support! Link to that Plugin is in wiki of that quest :stuck_out_tongue:"
+				"TODO: Reward with link to CC: Tweaked Plugin for Visual Studio Code"
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			size: 1.25d
+			id: "5D796A237D7164E5"
+			tasks: [{
+				id: "3FF05242E21A33DF"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Introduction to Lua"
+			icon: "computercraft:printed_book"
+			x: 3.0d
+			y: 0.0d
+			shape: "octagon"
+			subtitle: "Lua Basics #0 - Introduction"
+			description: [
+				"Welcome to Lua fellow Player!"
+				""
+				"Lua is one of many coding languages out there, but its one of the easiest ones. Don't think that it means its worse than others :stuck_out_tongue:"
+				"Its pretty powerful, but simple language, so simple it can be implemented into other games!"
+				"That doesn't meen that its only use in this application. There are a lot of games coded on Lua, that are pretty neat and popular (The Binding of Isaac for example)."
+				""
+				"In this tutorial I'll try to teach you basics of basics of Lua, so you can try doing your own automation projects with it!"
+				"PS: Thx (Put anyone that helped here) for helping ^^\""
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			size: 1.5d
+			id: "44029061DB640AE2"
+			tasks: [{
+				id: "6A987EA5C795264E"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+	]
+}
