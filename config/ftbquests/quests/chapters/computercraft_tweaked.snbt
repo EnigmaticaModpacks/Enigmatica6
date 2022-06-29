@@ -509,6 +509,7 @@
 		{
 			x: -5.0d
 			y: 6.0d
+			subtitle: "Lua Basics: Monitor \\& term functions"
 			dependencies: ["1580D9FD06937ABB"]
 			id: "54E1A1FE032B1363"
 			tasks: [{
@@ -724,7 +725,7 @@
 			x: 0.0d
 			y: 2.25d
 			shape: "hexagon"
-			subtitle: "Try it for yourself!"
+			subtitle: "Try yourself!"
 			description: [
 				"Here are some easy challenges you could try completing to test what you learned so far. For every challenge you will get a small prize :wink:"
 				""
@@ -748,8 +749,8 @@
 		{
 			title: "Your first program!"
 			icon: "computercraft:printed_page"
-			x: -0.5d
-			y: 4.0d
+			x: -1.0d
+			y: 4.5d
 			subtitle: "Challenge #1"
 			description: ["Do program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
 			dependencies: ["777349A29491AE4C"]
@@ -812,8 +813,8 @@
 		{
 			title: "Item Transfer!"
 			icon: "mekanism:basic_mechanical_pipe"
-			x: 1.5d
-			y: 4.5d
+			x: 0.5d
+			y: 5.5d
 			subtitle: "Challenge #2"
 			description: ["Make a program that will transfer items from inventory on the left to inventory on the right."]
 			dependencies: ["7F980AC22498FE44"]
@@ -872,8 +873,8 @@
 		{
 			title: "Using Peripherals to interract with RS"
 			icon: "refinedstorage:disk_drive"
-			x: 0.0d
-			y: 6.0d
+			x: 2.0d
+			y: 5.5d
 			subtitle: "Challenge #3"
 			description: ["Use Advanced Peripherals to import some items from RS into a chest."]
 			dependencies: ["06A8B69F9385388B"]
@@ -964,6 +965,7 @@
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.25d
+			min_width: 275
 			id: "5D796A237D7164E5"
 			tasks: [{
 				id: "3FF05242E21A33DF"
@@ -982,6 +984,7 @@
 				"Welcome to Lua fellow Player!"
 				""
 				"Lua is one of many coding languages out there, but its one of the easiest ones. Don't think that it means its worse than others :stuck_out_tongue:"
+				""
 				"Its pretty powerful, but simple language, so simple it can be implemented into other games!"
 				"That doesn't meen that its only use in this application. There are a lot of games coded on Lua, that are pretty neat and popular (The Binding of Isaac for example)."
 				""
@@ -989,6 +992,7 @@
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.5d
+			min_width: 275
 			id: "44029061DB640AE2"
 			tasks: [{
 				id: "6A987EA5C795264E"
@@ -999,7 +1003,7 @@
 		{
 			title: "Modem action!"
 			icon: "computercraft:wired_modem_full"
-			x: 2.0d
+			x: 2.5d
 			y: 6.5d
 			subtitle: "Challenge #4"
 			description: ["Use a wired Modem to interract with barrel, and print on the monitor list of items in it."]
@@ -1084,16 +1088,90 @@
 		{
 			title: "Wireless communications!"
 			icon: "computercraft:wireless_modem_normal"
-			x: 3.5d
-			y: 5.5d
+			x: -0.5d
+			y: 9.0d
 			subtitle: "Challenge #4.2"
-			description: [""]
+			description: [
+				""
+				"TODO: Learn actually how to use Wireless modems in they intended use, then do that challenge"
+			]
 			dependencies: ["44A7E0342E80526D"]
 			id: "70C1723A18F89BD9"
 			tasks: [{
 				id: "0F69F5424C241DC3"
 				type: "checkmark"
 				title: "Got it working!"
+			}]
+		}
+		{
+			title: "Variables and their types"
+			icon: "computercraft:printed_pages"
+			x: 7.5d
+			y: -1.25d
+			shape: "diamond"
+			subtitle: "Lua Basics #1 - Variables"
+			dependencies: ["44029061DB640AE2"]
+			size: 1.25d
+			id: "29C780353E7FB720"
+			tasks: [{
+				id: "282439D423FAC52F"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Type: Table"
+			x: 5.5d
+			y: -3.0d
+			id: "152F6E8D35D2069A"
+			tasks: [{
+				id: "124F45AFAA7A0206"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Type: Boolean"
+			x: 6.5d
+			y: -3.5d
+			id: "182654F933DE1815"
+			tasks: [{
+				id: "32D28AB681CE8601"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Type: Function"
+			x: 7.5d
+			y: -4.0d
+			id: "7B00ECCC48DA0445"
+			tasks: [{
+				id: "20F5794B8753B648"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Type: String"
+			x: 9.5d
+			y: -3.0d
+			id: "32B8B586F03321A7"
+			tasks: [{
+				id: "32E1201F35F1A394"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Type: Number"
+			x: 8.5d
+			y: -3.5d
+			id: "08E925A9223FC1BF"
+			tasks: [{
+				id: "56800F53C736541F"
+				type: "checkmark"
+				title: "Got it!"
 			}]
 		}
 	]
