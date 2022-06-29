@@ -83,7 +83,7 @@
 			y: 0.0d
 			subtitle: "There is something more than Computers?!"
 			description: [
-				"CC: Tweaked has a lot peripherals that are really useful for doing anything!"
+				"ComputerCraft: Tweaked has a lot peripherals that are really useful for doing anything!"
 				""
 				"This section will show you all peripherals available and how to use them."
 			]
@@ -107,7 +107,7 @@
 			y: -4.5d
 			subtitle: "Stuff you need for any sort of automation!"
 			description: [
-				"Advanced Peripherals is an addon for CC: Tweaked that adds massive amount of functionality to it with just few simple blocks!"
+				"Advanced Peripherals is an addon for ComputerCraft: Tweaked that adds massive amount of functionality to it with just few simple blocks!"
 				""
 				"Check individual quests for any peripheral from this mod to see what it's doing and how to use it!"
 				"TODO: Link to official Advanced Peripherals WIKI"
@@ -330,7 +330,7 @@
 			description: [
 				"In general, a Peripheral is any block you could think of. Classic Minecraft Chest or Furnace, Drawer, Mekanism Metallurgic Infuser, anything!"
 				""
-				"In ComputerCraft, to use any peripheral you need to wrap / find it first. You could set it to a local variable to be able to just use name you gave it in the code."
+				"In ComputerCraft: Tweaked, to use any peripheral you need to wrap / find it first. You could set it to a local variable to be able to just use name you gave it in the code."
 				""
 				"Functions:"
 				"peripheral.wrap(\"#1\")"
@@ -344,7 +344,7 @@
 				""
 				"peripheral.getName(#1)"
 				"#1 -> Peripheral you want to get name of."
-				"getName is really useful command used a lot in CC, a lot of commands (mostly for moving stuff from one inventory to another) requires you to give them \"Name\" of the peripheral, and not a table that wrap / find gives you. This takes what wrap / find returns and gives the Name of that peripheral!"
+				"getName is really useful command used a lot in ComputerCraft, a lot of commands (mostly for moving stuff from one inventory to another) requires you to give them \"Name\" of the peripheral, and not a table that wrap / find gives you. This takes what wrap / find returns and gives the Name of that peripheral!"
 			]
 			dependencies: ["378BEFB62C4F98BF"]
 			min_width: 350
@@ -474,12 +474,12 @@
 			}]
 		}
 		{
-			title: "CC Peripherals"
+			title: "ComputerCraft Peripherals"
 			icon: "computercraft:pocket_computer_normal"
 			x: -4.5d
 			y: 4.5d
 			subtitle: "Wait there is even more?"
-			description: ["ComputerCraft itself adds a few unique peripherals. Some of them aren't as useful as others, but all of them are worth attention."]
+			description: ["ComputerCraft: Tweaked adds on its own a few unique peripherals. Some of them aren't as useful as others, but all of them are worth attention."]
 			dependencies: ["378BEFB62C4F98BF"]
 			id: "1580D9FD06937ABB"
 			tasks: [{
@@ -691,7 +691,7 @@
 			description: [
 				"If you want to learn even more, or need something that isn't here, check out those links!"
 				""
-				"Those are official docs to Lua Programming Languae, as well as to CC: Tweaked Wiki and Mekanism integration."
+				"Those are official docs to Lua Programming Languae, as well as to ComputerCraft: Tweaked Wiki and Mekanism integration."
 				"TODO: clickable links or message on chat"
 			]
 			dependencies: ["2D79E4D126EE389E"]
@@ -949,7 +949,7 @@
 				"You can just drag \\& drop files into minecraft itself!"
 				"You just have to create a file on your desktop, code in it and rename it onto [your_name].lua, drop it into in-game Computer and run it. It's that easy ^^"
 				""
-				"If you want to have proper Lua support and checking, you can install Visual Studio Code and ComputerCraft: Tweaked Plugin for full CC Lua support! Link to that Plugin is in wiki of that quest"
+				"If you want to have proper Lua support and checking, you can install Visual Studio Code and ComputerCraft: Tweaked Plugin for full ComputerCraft Lua support! Link to that Plugin is in wiki of that quest"
 				"TODO: some sort of link to CC: Tweaked Plugin for Visual Studio Code "
 			]
 			dependencies: ["2D79E4D126EE389E"]
