@@ -383,9 +383,14 @@
 			dependencies: ["55493D823F7403DA"]
 			id: "4D55FB33758DEF7D"
 			tasks: [{
-				id: "3AB4C5F3F3B2CE51"
-				type: "checkmark"
-				title: "Inventory API"
+				id: "3EC51CC783415B4A"
+				type: "item"
+				item: "minecraft:barrel"
+			}]
+			rewards: [{
+				id: "76AFEDBB3D2A3334"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -397,9 +402,42 @@
 			dependencies: ["55493D823F7403DA"]
 			id: "18C25A983C4831B7"
 			tasks: [{
-				id: "0B5412C79BD9E639"
-				type: "checkmark"
-				title: "Fluid API"
+				id: "7C6525BE6C8CA991"
+				type: "item"
+				title: "Black Hole Tanks"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:common_black_hole_tank"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:pity_black_hole_tank"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:simple_black_hole_tank"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:advanced_black_hole_tank"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:supreme_black_hole_tank"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "6F5EDC40C986AE57"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -411,9 +449,41 @@
 			dependencies: ["55493D823F7403DA"]
 			id: "7CD446B77ACA29F7"
 			tasks: [{
-				id: "1718C0A07EBBF170"
-				type: "checkmark"
-				title: "Energy API"
+				id: "0085C0BFFF01C3DD"
+				type: "item"
+				title: "Energy Cells"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powah:energy_cell_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_nitro"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		}
 		{
@@ -422,7 +492,7 @@
 			x: -4.5d
 			y: 4.5d
 			subtitle: "Wait there is even more?"
-			description: ["ComputerCraft itself adds a few unique peripherals.  Some of them aren't as useful as others, but all of them are worth attention."]
+			description: ["ComputerCraft itself adds a few unique peripherals. Some of them aren't as useful as others, but all of them are worth attention."]
 			dependencies: ["378BEFB62C4F98BF"]
 			id: "1580D9FD06937ABB"
 			tasks: [{
@@ -684,11 +754,55 @@
 			description: ["Do program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
 			dependencies: ["777349A29491AE4C"]
 			id: "7F980AC22498FE44"
-			tasks: [{
-				id: "194470FBF6D30D4B"
-				type: "checkmark"
-				title: "Got it working!"
-			}]
+			tasks: [
+				{
+					id: "194470FBF6D30D4B"
+					type: "checkmark"
+					title: "Got it working!"
+				}
+				{
+					id: "37AC0AFD18F38CF9"
+					type: "item"
+					title: "Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "131814BA2E6573DB"
+					type: "item"
+					title: "Monitor"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:monitor_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:monitor_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
 			rewards: [{
 				id: "2F6F8FDD1C50F2A4"
 				type: "xp"
@@ -701,14 +815,59 @@
 			x: 1.5d
 			y: 4.5d
 			subtitle: "Challenge #2"
-			description: ["Make a program that will transfer items from inventory on the left to inventory on the right!"]
+			description: ["Make a program that will transfer items from inventory on the left to inventory on the right."]
 			dependencies: ["7F980AC22498FE44"]
 			id: "06A8B69F9385388B"
-			tasks: [{
-				id: "1DD8D1520D86E71D"
-				type: "checkmark"
-				title: "Got it working!"
-			}]
+			tasks: [
+				{
+					id: "1DD8D1520D86E71D"
+					type: "checkmark"
+					title: "Got it working!"
+				}
+				{
+					id: "29E0DE505929241E"
+					type: "item"
+					title: "Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "5C9E09235719EFE2"
+					type: "item"
+					title: "Inventory"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:chest"
+									Count: 1b
+								}
+								{
+									id: "minecraft:barrel"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 2L
+				}
+			]
 		}
 		{
 			title: "Using Peripherals to interract with RS"
@@ -716,14 +875,76 @@
 			x: 0.0d
 			y: 6.0d
 			subtitle: "Challenge #3"
-			description: ["Use Advanced Peripherals to import some items from RS into a chest!"]
+			description: ["Use Advanced Peripherals to import some items from RS into a chest."]
 			dependencies: ["06A8B69F9385388B"]
 			id: "0F004D494E6114E8"
-			tasks: [{
-				id: "7F89261D56AFCC98"
-				type: "checkmark"
-				title: "Got it working!"
-			}]
+			tasks: [
+				{
+					id: "7F89261D56AFCC98"
+					type: "checkmark"
+					title: "Got it working!"
+				}
+				{
+					id: "6375843352BB76C2"
+					type: "item"
+					title: "Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "5299FCDEF5D01998"
+					type: "item"
+					item: "advancedperipherals:rs_bridge"
+				}
+				{
+					id: "325807DC4DDF3807"
+					type: "item"
+					title: "Inventory"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:chest"
+									Count: 1b
+								}
+								{
+									id: "minecraft:barrel"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "09A23C581CD60BAE"
+					type: "item"
+					item: "refinedstorage:cable"
+					count: 8
+				}
+				{
+					id: "3F3E6C99F3DCDB19"
+					type: "item"
+					item: "refinedstorage:exporter"
+				}
+			]
 		}
 		{
 			title: "Coding Tips"
@@ -735,8 +956,8 @@
 			description: [
 				"I think after a while of editing in game, you know it's really annoying to use it, but don't worry fellow player, you don't need to use it anymore!"
 				""
-				"You can just drag\\&drop files into minecraft itself! "
-				"You just have to create a file on your desktop, code in it and rename it onto [your_name].lua, drop it into in-game Computer and run! It's that easy ^^"
+				"You can just drag\\&drop files into minecraft itself!"
+				"You just have to create a file on your desktop, code in it and rename it onto [your_name].lua, drop it into in-game Computer and run it. It's that easy ^^"
 				""
 				"If you want to have proper Lua support and checking, you can install Visual Studio Code and ComputerCraft: Tweaked Plugin for full CC Lua support! Link to that Plugin is in wiki of that quest"
 				"TODO: some sort of link to CC: Tweaked Plugin for Visual Studio Code "
@@ -781,11 +1002,96 @@
 			x: 2.0d
 			y: 6.5d
 			subtitle: "Challenge #4"
-			description: ["Use a wired Modem to interract with barrel, and print in the monitor list of items in it."]
+			description: ["Use a wired Modem to interract with barrel, and print on the monitor list of items in it."]
 			dependencies: ["0F004D494E6114E8"]
 			id: "44A7E0342E80526D"
+			tasks: [
+				{
+					id: "0F44049652DDBB03"
+					type: "checkmark"
+					title: "Got it working!"
+				}
+				{
+					id: "2A24265C5169E9C8"
+					type: "item"
+					title: "Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7466E2D8E41A02F5"
+					type: "item"
+					item: "minecraft:barrel"
+				}
+				{
+					id: "7141C9C70784F055"
+					type: "item"
+					title: "Wired Modem"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:wired_modem"
+									Count: 1b
+								}
+								{
+									id: "computercraft:wired_modem_full"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "3BAA23CEA19F1FC1"
+					type: "item"
+					item: "computercraft:cable"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "673964E9361F0DF7"
+					type: "item"
+					item: "computercraft:wired_modem_full"
+					count: 2
+				}
+				{
+					id: "5A2D6DA14896628E"
+					type: "item"
+					item: "computercraft:cable"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Wireless communications!"
+			icon: "computercraft:wireless_modem_normal"
+			x: 3.5d
+			y: 5.5d
+			subtitle: "Challenge #4.2"
+			description: [""]
+			dependencies: ["44A7E0342E80526D"]
+			id: "70C1723A18F89BD9"
 			tasks: [{
-				id: "0F44049652DDBB03"
+				id: "0F69F5424C241DC3"
 				type: "checkmark"
 				title: "Got it working!"
 			}]
