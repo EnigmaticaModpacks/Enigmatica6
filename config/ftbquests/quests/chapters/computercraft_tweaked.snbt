@@ -341,7 +341,7 @@
 			shape: "circle"
 			subtitle: "Lua Basics: Peripheral API"
 			description: [
-				"In general, Peripheral is any block you could think of. Classic Minecraft Chest or Furnace, Drawer, Mekanism Metallurgic Infuser, anything!"
+				"In general, a Peripheral is any block you could think of. Classic Minecraft Chest or Furnace, Drawer, Mekanism Metallurgic Infuser, anything!"
 				""
 				"In ComputerCraft, to use any peripheral you need to wrap / find it first. You could set it to a local variable to be able to just use name you gave it in the code."
 				""
@@ -876,7 +876,7 @@
 			x: 0.0d
 			y: 6.0d
 			subtitle: "Challenge #3"
-			description: ["Use Advanced Peripherals to import some items from RS into a chest."]
+			description: ["Use Advanced Peripherals to export some items from RS into a chest."]
 			dependencies: ["06A8B69F9385388B"]
 			id: "0F004D494E6114E8"
 			tasks: [
@@ -957,7 +957,7 @@
 			description: [
 				"I think after a while of editing in game, you know it's really annoying to use it, but don't worry fellow player, you don't need to use it anymore!"
 				""
-				"You can just drag\\&drop files into minecraft itself!"
+				"You can just drag \\& drop files into minecraft itself!"
 				"You just have to create a file on your desktop, code in it and rename it onto [your_name].lua, drop it into in-game Computer and run it. It's that easy ^^"
 				""
 				"If you want to have proper Lua support and checking, you can install Visual Studio Code and ComputerCraft: Tweaked Plugin for full CC Lua support! Link to that Plugin is in wiki of that quest"
