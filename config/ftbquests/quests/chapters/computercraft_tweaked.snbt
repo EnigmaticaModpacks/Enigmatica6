@@ -37,9 +37,10 @@
 				item: "computercraft:computer_normal"
 			}]
 			rewards: [{
-				id: "7CB6B1E6983607A6"
-				type: "xp"
-				xp: 100
+				id: "7CFA1D5619B10CC1"
+				type: "item"
+				item: "computercraft:monitor_normal"
+				count: 9
 			}]
 		}
 		{
@@ -84,7 +85,7 @@
 			description: [
 				"CC: Tweaked has a lot peripherals that are really useful for doing anything!"
 				""
-				"This section will show you all peripherals available and how to use them!"
+				"This section will show you all peripherals available and how to use them."
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.25d
@@ -153,7 +154,18 @@
 			x: -3.0d
 			y: -3.0d
 			subtitle: "Lua Basics: Chat API"
+			description: [
+				"The Chat Box is used to read and write messages to the in-game chat. You can even choose if you want to send it to everyone or just one/few people!"
+				""
+				"ProTip: If you prefix your message with \"$\" it will be invisible in game, but chatbox will still be able to see it."
+				""
+				"Functions:"
+				"sendMessage(#1, #2)"
+				"#1 -> String message you wanna send"
+				"#2 -> String Nickname. Its gonna add [your_input] before message"
+			]
 			dependencies: ["6AA1236C9946F569"]
+			min_width: 350
 			id: "69538FA96C5DB66F"
 			tasks: [{
 				id: "5BDA5C07EECA1E62"
@@ -410,7 +422,7 @@
 			x: -4.5d
 			y: 4.5d
 			subtitle: "Wait there is even more?"
-			description: ["ComputerCraft itself adds a few unique peripherals.  Some of them aren't as useful as others, but all of them are worth attention ^^"]
+			description: ["ComputerCraft itself adds a few unique peripherals.  Some of them aren't as useful as others, but all of them are worth attention."]
 			dependencies: ["378BEFB62C4F98BF"]
 			id: "1580D9FD06937ABB"
 			tasks: [{
@@ -644,7 +656,7 @@
 			shape: "hexagon"
 			subtitle: "Try it for yourself!"
 			description: [
-				"Here are some easy challenges you could try completing to test what you learned so far ^^ For every challenge you will get a small prize :wink:"
+				"Here are some easy challenges you could try completing to test what you learned so far. For every challenge you will get a small prize :wink:"
 				""
 				"However at the end, there are few challenges you could not be able to finish without deeper understanding of Lua, so don't care too much about those if you aren't able to finish. There are here for those handful of people that know what there are doing ^^\""
 			]
@@ -665,10 +677,12 @@
 		}
 		{
 			title: "Your first program!"
+			icon: "computercraft:printed_page"
 			x: -0.5d
-			y: 3.5d
+			y: 4.0d
 			subtitle: "Challenge #1"
 			description: ["Do program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
+			dependencies: ["777349A29491AE4C"]
 			id: "7F980AC22498FE44"
 			tasks: [{
 				id: "194470FBF6D30D4B"
@@ -683,10 +697,12 @@
 		}
 		{
 			title: "Item Transfer!"
-			x: 1.0d
-			y: 4.0d
+			icon: "mekanism:basic_mechanical_pipe"
+			x: 1.5d
+			y: 4.5d
 			subtitle: "Challenge #2"
 			description: ["Make a program that will transfer items from inventory on the left to inventory on the right!"]
+			dependencies: ["7F980AC22498FE44"]
 			id: "06A8B69F9385388B"
 			tasks: [{
 				id: "1DD8D1520D86E71D"
@@ -696,10 +712,12 @@
 		}
 		{
 			title: "Using Peripherals to interract with RS"
+			icon: "refinedstorage:disk_drive"
 			x: 0.0d
-			y: 5.0d
+			y: 6.0d
 			subtitle: "Challenge #3"
 			description: ["Use Advanced Peripherals to import some items from RS into a chest!"]
+			dependencies: ["06A8B69F9385388B"]
 			id: "0F004D494E6114E8"
 			tasks: [{
 				id: "7F89261D56AFCC98"
@@ -755,6 +773,21 @@
 				id: "6A987EA5C795264E"
 				type: "checkmark"
 				title: "Got it!"
+			}]
+		}
+		{
+			title: "Modem action!"
+			icon: "computercraft:wired_modem_full"
+			x: 2.0d
+			y: 6.5d
+			subtitle: "Challenge #4"
+			description: ["Use a wired Modem to interract with barrel, and print in the monitor list of items in it."]
+			dependencies: ["0F004D494E6114E8"]
+			id: "44A7E0342E80526D"
+			tasks: [{
+				id: "0F44049652DDBB03"
+				type: "checkmark"
+				title: "Got it working!"
 			}]
 		}
 	]
