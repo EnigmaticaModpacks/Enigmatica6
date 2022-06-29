@@ -4,7 +4,7 @@
 	order_index: 8
 	filename: "computercraft_tweaked"
 	title: "ComputerCraft: Tweaked"
-	icon: "computercraft:computer_advanced"
+	icon: "computercraft:computer_normal"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -15,7 +15,7 @@
 			shape: "square"
 			subtitle: "Wait there are Computers in Minecraft?!"
 			description: [
-				"Welcome to the crazy world of programming! ComputerCraft: Tweaked is mod entirely focused about that one thing, giving you access to amazing Lua Programming language inside of Minecraft!"
+				"Welcome to the crazy world of programming! ComputerCraft: Tweaked is a mod entirely focused about that one thing, giving you access to amazing Lua Programming language inside of Minecraft!"
 				""
 				"Its incredible how compact and complicated stuff you can do with this mod. Think about automating Create Mechanical Crafter with only 1 block!?! Or doing complex operating system controlling everything you have in your base. "
 				""
@@ -752,7 +752,7 @@
 			x: -0.5d
 			y: 4.0d
 			subtitle: "Challenge #1"
-			description: ["Do program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
+			description: ["Make a program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
 			dependencies: ["777349A29491AE4C"]
 			id: "7F980AC22498FE44"
 			tasks: [
