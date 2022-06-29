@@ -749,8 +749,8 @@
 		{
 			title: "Your first program!"
 			icon: "computercraft:printed_page"
-			x: -1.0d
-			y: 4.5d
+			x: -0.5d
+			y: 4.0d
 			subtitle: "Challenge #1"
 			description: ["Do program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
 			dependencies: ["777349A29491AE4C"]
@@ -813,8 +813,8 @@
 		{
 			title: "Item Transfer!"
 			icon: "mekanism:basic_mechanical_pipe"
-			x: 0.5d
-			y: 5.5d
+			x: 1.5d
+			y: 4.5d
 			subtitle: "Challenge #2"
 			description: ["Make a program that will transfer items from inventory on the left to inventory on the right."]
 			dependencies: ["7F980AC22498FE44"]
@@ -873,8 +873,8 @@
 		{
 			title: "Using Peripherals to interract with RS"
 			icon: "refinedstorage:disk_drive"
-			x: 2.0d
-			y: 5.5d
+			x: 0.0d
+			y: 6.0d
 			subtitle: "Challenge #3"
 			description: ["Use Advanced Peripherals to import some items from RS into a chest."]
 			dependencies: ["06A8B69F9385388B"]
@@ -1088,8 +1088,8 @@
 		{
 			title: "Wireless communications!"
 			icon: "computercraft:wireless_modem_normal"
-			x: -0.5d
-			y: 9.0d
+			x: 4.5d
+			y: 6.0d
 			subtitle: "Challenge #4.2"
 			description: [
 				""
@@ -1110,6 +1110,7 @@
 			y: -1.25d
 			shape: "diamond"
 			subtitle: "Lua Basics #1 - Variables"
+			description: ["I will finish this after fixing everything else ^^\""]
 			dependencies: ["44029061DB640AE2"]
 			size: 1.25d
 			id: "29C780353E7FB720"
