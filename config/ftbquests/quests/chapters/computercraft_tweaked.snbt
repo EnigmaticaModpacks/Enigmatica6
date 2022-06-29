@@ -62,6 +62,12 @@
 				type: "item"
 				item: "computercraft:computer_advanced"
 			}]
+			rewards: [{
+				id: "72295CD458441BE8"
+				type: "item"
+				item: "computercraft:monitor_advanced"
+				count: 9
+			}]
 		}
 		{
 			title: "Peripherals"
@@ -282,9 +288,9 @@
 			y: -2.5d
 			subtitle: "Cookie Clicker in your Pocket all the time!"
 			description: [
-				"There are item version of those computers as well! Maybe they aren't so useful with automating stuff, but with some knowledge you can do, for example, a pocket Cookie Clicker game!"
+				"There are item version of those computers as well. Maybe they aren't so useful with automating stuff, but with some knowledge you can do, for example, a pocket Cookie Clicker game!"
 				""
-				"They are really useful for remote access to your systems, or for playing games all the time you have to build stuff."
+				"However they are really useful for remote access to your systems, or for playing games all the time you have to build stuff."
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			id: "52933D3422727EB3"
@@ -308,6 +314,11 @@
 						]
 					}
 				}
+			}]
+			rewards: [{
+				id: "5E5F846DAF5BCE71"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -334,7 +345,7 @@
 				""
 				"peripheral.getName(#1)"
 				"#1 -> Peripheral you want to get name of."
-				"getName is really useful command used a lot in CC, a lot of commands (mostly for moving stuff from one inventory to another) requires you to give then \"Name\" of the peripheral, and not a table that wrap / find gives you. This take what wrap / find returns and gives the Name of that peripheral!"
+				"getName is really useful command used a lot in CC, a lot of commands (mostly for moving stuff from one inventory to another) requires you to give them \"Name\" of the peripheral, and not a table that wrap / find gives you. This takes what wrap / find returns and gives the Name of that peripheral!"
 			]
 			dependencies: ["378BEFB62C4F98BF"]
 			min_width: 350
@@ -398,12 +409,19 @@
 			icon: "computercraft:pocket_computer_normal"
 			x: -4.5d
 			y: 4.5d
+			subtitle: "Wait there is even more?"
+			description: ["ComputerCraft itself adds a few unique peripherals.  Some of them aren't as useful as others, but all of them are worth attention ^^"]
 			dependencies: ["378BEFB62C4F98BF"]
 			id: "1580D9FD06937ABB"
 			tasks: [{
 				id: "4816E5D3E5C6E0D2"
 				type: "checkmark"
 				title: "Got it!"
+			}]
+			rewards: [{
+				id: "3D0E9BD8DB101174"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -702,8 +720,8 @@
 				"You can just drag\\&drop files into minecraft itself! "
 				"You just have to create a file on your desktop, code in it and rename it onto [your_name].lua, drop it into in-game Computer and run! It's that easy ^^"
 				""
-				"If you want to have proper Lua support and checking, you can install Visual Studio Code and ComputerCraft: Tweaked Plugin for full CC Lua support! Link to that Plugin is in wiki of that quest :stuck_out_tongue:"
-				"TODO: Reward with link to CC: Tweaked Plugin for Visual Studio Code"
+				"If you want to have proper Lua support and checking, you can install Visual Studio Code and ComputerCraft: Tweaked Plugin for full CC Lua support! Link to that Plugin is in wiki of that quest"
+				"TODO: some sort of link to CC: Tweaked Plugin for Visual Studio Code "
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.25d
@@ -729,7 +747,6 @@
 				"That doesn't meen that its only use in this application. There are a lot of games coded on Lua, that are pretty neat and popular (The Binding of Isaac for example)."
 				""
 				"In this tutorial I'll try to teach you basics of basics of Lua, so you can try doing your own automation projects with it!"
-				"PS: Thx (Put anyone that helped here) for helping ^^\""
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.5d
