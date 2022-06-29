@@ -365,7 +365,7 @@
 			icon: "minecraft:barrel"
 			x: -7.5d
 			y: -1.0d
-			subtitle: "Lua Basics: Global Block Inventory API"
+			subtitle: "Lua Basics: Global Inventory API"
 			description: [""]
 			dependencies: ["55493D823F7403DA"]
 			id: "4D55FB33758DEF7D"
@@ -535,7 +535,6 @@
 		{
 			x: -6.0d
 			y: 4.0d
-			description: ["TODO: Add different colors into the quest."]
 			dependencies: ["1580D9FD06937ABB"]
 			id: "0C3CF3165304BB22"
 			tasks: [
@@ -547,10 +546,13 @@
 				{
 					id: "679CA9A8D8852B7A"
 					type: "item"
+					title: "Floppy Disk"
 					item: {
-						id: "computercraft:disk"
+						id: "itemfilters:id_regex"
 						Count: 1b
-						tag: { }
+						tag: {
+							value: "computercraft:disk$"
+						}
 					}
 				}
 			]
