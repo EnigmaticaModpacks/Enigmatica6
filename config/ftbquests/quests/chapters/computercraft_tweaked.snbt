@@ -24,8 +24,6 @@
 				"Those quests are meant to showcase the mod, and teach you, fellow Player, Basics of Basics with Lua and how to start learning more!"
 				""
 				"~~Kanzio"
-				""
-				"PS: This chapter has few section: Peripherals, Lua Basics and Challenges! Most of them work on \"honor\" system, so please don't just do them all by once without even trying ^^\""
 			]
 			size: 2.0d
 			optional: true
@@ -45,9 +43,9 @@
 		}
 		{
 			title: "Advanced Computer"
-			x: -0.5d
-			y: -2.5d
-			subtitle: "Shiny!"
+			x: -2.5d
+			y: -1.0d
+			subtitle: "Shiny."
 			description: [
 				"This fancy gold plated computer has a tiny bit more to offer than his old gray ancestor."
 				""
@@ -79,7 +77,7 @@
 					Color: 14605932
 				}
 			}
-			x: -3.0d
+			x: -5.0d
 			y: 0.0d
 			subtitle: "There is something more than Computers?!"
 			description: [
@@ -103,7 +101,7 @@
 		}
 		{
 			title: "Advanced Peripherals"
-			x: -4.5d
+			x: -6.5d
 			y: -4.5d
 			subtitle: "Stuff you need for any sort of automation!"
 			description: [
@@ -126,7 +124,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: -4.5d
 			y: -4.0d
 			subtitle: "Lua Basics: Enviroment Detector API"
 			dependencies: ["6AA1236C9946F569"]
@@ -138,7 +136,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -5.0d
 			y: -3.0d
 			subtitle: "Lua Basics: Chat API"
 			description: [
@@ -161,7 +159,7 @@
 			}]
 		}
 		{
-			x: -4.0d
+			x: -6.0d
 			y: -6.5d
 			subtitle: "Lua Basics: Player Detector API"
 			dependencies: ["6AA1236C9946F569"]
@@ -173,7 +171,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -8.0d
 			y: -3.0d
 			subtitle: "Lua Basics: RS Bridge API"
 			dependencies: ["6AA1236C9946F569"]
@@ -185,7 +183,7 @@
 			}]
 		}
 		{
-			x: -6.5d
+			x: -8.5d
 			y: -4.0d
 			subtitle: "Lua Basics: Energy Detector API"
 			dependencies: ["6AA1236C9946F569"]
@@ -198,7 +196,7 @@
 		}
 		{
 			icon: "advancedperipherals:ar_controller"
-			x: -5.0d
+			x: -7.0d
 			y: -6.5d
 			subtitle: "Lua Basics: AR Controller API"
 			dependencies: ["6AA1236C9946F569"]
@@ -223,7 +221,7 @@
 			]
 		}
 		{
-			x: -6.5d
+			x: -8.5d
 			y: -5.0d
 			subtitle: "Lua Basics: Inventory Manager API"
 			dependencies: ["6AA1236C9946F569"]
@@ -235,9 +233,15 @@
 			}]
 		}
 		{
-			x: -5.0d
+			x: -7.0d
 			y: -2.5d
 			subtitle: "Lua Basics: Redstone API"
+			description: [
+				"The Redstone Integrator is used to Emit / Read redstone signals in the world."
+				""
+				"Functions:"
+				"TODO: Add better Function explenation"
+			]
 			dependencies: ["6AA1236C9946F569"]
 			id: "78DDFBC9534A6310"
 			tasks: [{
@@ -247,7 +251,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: -4.5d
 			y: -5.0d
 			subtitle: "Lua Basics: Block Reader API"
 			dependencies: ["6AA1236C9946F569"]
@@ -259,7 +263,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -5.0d
 			y: -6.0d
 			subtitle: "Lua Basics: Geo Scanner API"
 			dependencies: ["6AA1236C9946F569"]
@@ -271,7 +275,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -8.0d
 			y: -6.0d
 			dependencies: ["6AA1236C9946F569"]
 			id: "064DB44EB6A2DF89"
@@ -283,8 +287,8 @@
 		}
 		{
 			title: "Pocket Computers"
-			x: 0.5d
-			y: -2.5d
+			x: -2.5d
+			y: 1.0d
 			subtitle: "Cookie Clicker in your Pocket all the time!"
 			description: [
 				"There are item version of those computers as well. Maybe they aren't so useful with automating stuff, but with some knowledge you can do, for example, a pocket Cookie Clicker game!"
@@ -323,7 +327,7 @@
 		{
 			title: "About Peripherals in General"
 			icon: "minecraft:chest"
-			x: -5.5d
+			x: -7.5d
 			y: 0.0d
 			shape: "circle"
 			subtitle: "Lua Basics: Peripheral API"
@@ -345,6 +349,8 @@
 				"peripheral.getName(#1)"
 				"#1 -> Peripheral you want to get name of."
 				"getName is really useful command used a lot in ComputerCraft, a lot of commands (mostly for moving stuff from one inventory to another) requires you to give them \"Name\" of the peripheral, and not a table that wrap / find gives you. This takes what wrap / find returns and gives the Name of that peripheral!"
+				""
+				"For more information look up ComputerCraft: Tweaked Wiki!"
 			]
 			dependencies: ["378BEFB62C4F98BF"]
 			min_width: 350
@@ -363,7 +369,7 @@
 		{
 			title: "Inventory API"
 			icon: "minecraft:barrel"
-			x: -7.5d
+			x: -9.5d
 			y: -1.0d
 			subtitle: "Lua Basics: Global Inventory API"
 			description: [""]
@@ -383,7 +389,7 @@
 		{
 			title: "Liquid API"
 			icon: "minecraft:water_bucket"
-			x: -7.5d
+			x: -9.5d
 			y: 0.0d
 			subtitle: "Lua Basics: Global Liquid API"
 			dependencies: ["55493D823F7403DA"]
@@ -430,7 +436,7 @@
 		{
 			title: "Energy API"
 			icon: "mekanism:basic_energy_cube"
-			x: -7.5d
+			x: -9.5d
 			y: 1.0d
 			subtitle: "Lua Basics: Global Energy API"
 			dependencies: ["55493D823F7403DA"]
@@ -476,7 +482,7 @@
 		{
 			title: "ComputerCraft Peripherals"
 			icon: "computercraft:pocket_computer_normal"
-			x: -4.5d
+			x: -6.5d
 			y: 4.5d
 			subtitle: "Wait there is even more?"
 			description: ["ComputerCraft: Tweaked adds on its own a few unique peripherals. Some of them aren't as useful as others, but all of them are worth attention."]
@@ -494,7 +500,7 @@
 			}]
 		}
 		{
-			x: -5.0d
+			x: -7.0d
 			y: 6.0d
 			subtitle: "Lua Basics: Monitor \\& term functions"
 			dependencies: ["1580D9FD06937ABB"]
@@ -522,7 +528,7 @@
 			}]
 		}
 		{
-			x: -5.5d
+			x: -7.5d
 			y: 3.0d
 			dependencies: ["1580D9FD06937ABB"]
 			id: "582FF2D81252AC77"
@@ -533,7 +539,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -8.0d
 			y: 4.0d
 			dependencies: ["1580D9FD06937ABB"]
 			id: "0C3CF3165304BB22"
@@ -559,7 +565,7 @@
 		}
 		{
 			icon: "computercraft:printer"
-			x: -4.0d
+			x: -6.0d
 			y: 6.0d
 			dependencies: ["1580D9FD06937ABB"]
 			id: "181772F6C62A4EEF"
@@ -578,7 +584,7 @@
 			]
 		}
 		{
-			x: -3.0d
+			x: -5.0d
 			y: 5.5d
 			dependencies: ["1580D9FD06937ABB"]
 			id: "229E3C141CF5DCA7"
@@ -605,7 +611,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -8.0d
 			y: 5.0d
 			dependencies: ["1580D9FD06937ABB"]
 			id: "162927942501A25B"
@@ -653,7 +659,7 @@
 			]
 		}
 		{
-			x: -7.5d
+			x: -9.5d
 			y: 4.5d
 			subtitle: "No More Cables!"
 			description: [""]
@@ -683,19 +689,19 @@
 		}
 		{
 			title: "Documentation"
-			icon: "computercraft:printed_pages"
-			x: 2.5d
-			y: 1.25d
+			icon: "akashictome:tome"
+			x: 2.25d
+			y: 2.25d
 			shape: "pentagon"
-			subtitle: "Official Wikis for everything!"
+			subtitle: "Official Wikis for everything."
 			description: [
-				"If you want to learn even more, or need something that isn't here, check out those links!"
+				"If you want to learn even more, or need something that isn't here, check out those links."
 				""
 				"Those are official docs to Lua Programming Languae, as well as to ComputerCraft: Tweaked Wiki and Mekanism integration."
 				"TODO: clickable links or message on chat"
 			]
 			dependencies: ["2D79E4D126EE389E"]
-			size: 1.25d
+			size: 1.5d
 			id: "508989B512DBB2A2"
 			tasks: [{
 				id: "0ED4FB7A29E8557D"
@@ -712,8 +718,8 @@
 			title: "Challenges"
 			icon: "computercraft:computer_command"
 			x: 0.0d
-			y: 2.25d
-			shape: "hexagon"
+			y: 3.0d
+			shape: "gear"
 			subtitle: "Try yourself!"
 			description: [
 				"Here are some easy challenges you could try completing to test what you learned so far. For every challenge you will get a small prize :wink:"
@@ -738,8 +744,8 @@
 		{
 			title: "Your first program!"
 			icon: "computercraft:printed_page"
-			x: -0.5d
-			y: 4.0d
+			x: -2.0d
+			y: 4.5d
 			subtitle: "Challenge #1"
 			description: ["Make a program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
 			dependencies: ["777349A29491AE4C"]
@@ -802,8 +808,8 @@
 		{
 			title: "Item Transfer!"
 			icon: "mekanism:basic_mechanical_pipe"
-			x: 1.5d
-			y: 4.5d
+			x: -1.5d
+			y: 6.0d
 			subtitle: "Challenge #2"
 			description: ["Make a program that will transfer items from inventory on the left to inventory on the right."]
 			dependencies: ["7F980AC22498FE44"]
@@ -862,8 +868,8 @@
 		{
 			title: "Using Peripherals to interract with RS"
 			icon: "refinedstorage:disk_drive"
-			x: 0.0d
-			y: 6.0d
+			x: 0.5d
+			y: 6.5d
 			subtitle: "Challenge #3"
 			description: ["Use Advanced Peripherals to export some items from RS into a chest."]
 			dependencies: ["06A8B69F9385388B"]
@@ -939,8 +945,8 @@
 		{
 			title: "Coding Tips"
 			icon: "create:wrench"
-			x: 2.5d
-			y: -1.25d
+			x: 3.125d
+			y: 0.0d
 			shape: "gear"
 			subtitle: "Enough of in-game coding? There is a solution!"
 			description: [
@@ -965,16 +971,16 @@
 		{
 			title: "Introduction to Lua"
 			icon: "computercraft:printed_book"
-			x: 3.0d
-			y: 0.0d
-			shape: "octagon"
+			x: 2.25d
+			y: -2.25d
+			shape: "hexagon"
 			subtitle: "Lua Basics #0 - Introduction"
 			description: [
 				"Welcome to Lua fellow Player!"
 				""
 				"Lua is one of many coding languages out there, but its one of the easiest ones. Don't think that it means its worse than others :stuck_out_tongue:"
 				""
-				"Its pretty powerful, but simple language, so simple it can be implemented into other games!"
+				"Its pretty powerful, but simple language, so simple it can be implemented into other games."
 				"That doesn't meen that its only use in this application. There are a lot of games coded on Lua, that are pretty neat and popular (The Binding of Isaac for example)."
 				""
 				"In this tutorial I'll try to teach you basics of basics of Lua, so you can try doing your own automation projects with it!"
@@ -1077,8 +1083,8 @@
 		{
 			title: "Wireless communications!"
 			icon: "computercraft:wireless_modem_normal"
-			x: 4.5d
-			y: 6.0d
+			x: 2.5d
+			y: 4.5d
 			subtitle: "Challenge #4.2"
 			description: [
 				""
@@ -1095,13 +1101,34 @@
 		{
 			title: "Variables and their types"
 			icon: "computercraft:printed_pages"
-			x: 7.5d
-			y: -1.25d
+			x: 5.5d
+			y: -3.5d
 			shape: "diamond"
 			subtitle: "Lua Basics #1 - Variables"
-			description: ["I will finish this after fixing everything else ^^\""]
+			description: [
+				"Lets start out with basics of basics shall we?"
+				""
+				"Variables are a place in the memory, where you can store data. Like a file, they have their own name, that you can use to interract with them. This is the most important thing in every programming language, because without those, you wouldn't be able to store and use any data at all in the program!"
+				""
+				"The way variables work is pretty simple, you set the name for it, and optionally you set what data it stores."
+				""
+				"-> local My_First_Variable = 0"
+				""
+				"● \"local\" is a function for creating new variables. \"My_First_Variable\" is the variable's name, that is first argument! Get used to that word, because every function has one or more of them."
+				"● Second \"argument\" is a data you want to store in that variable. Its optional, that means you can just leave it empty and variable still be created, but when you are gonna try reading it, it will return \"nil\"."
+				"(Important note: You can't type \"local x =\" when you aren't gonna store anything in that variable. You need to use \"local x\" or \"local x = nil\")"
+				""
+				"Now to read your variable, you simply use the name of your variable. It will give to the function data it contains (value). You can't read variables in any other place than function argument!"
+				""
+				"Only time it will function differently is when you want to change data it stores. Lets say we don't want our variable to store 0, we want it to store E6, how we can do that? To change value of variable, you simply type its name and set new data you want it to store."
+				""
+				"-> My_First_Variable = \"E6\""
+				""
+				"\"But Kanzio, what does \"nil\" mean and why did you use quotation marks with E6?\" - So there is few types of variables, and every of them have its own unique rules. Check \"Lua Basics #1 - Variable types\" above this quest for more information about those."
+			]
 			dependencies: ["44029061DB640AE2"]
 			size: 1.25d
+			min_width: 400
 			id: "29C780353E7FB720"
 			tasks: [{
 				id: "282439D423FAC52F"
@@ -1111,8 +1138,11 @@
 		}
 		{
 			title: "Type: Table"
-			x: 5.5d
-			y: -3.0d
+			icon: "computercraft:printed_page"
+			x: 3.65d
+			y: -4.8d
+			subtitle: "Lua Basics #1 - Variable types"
+			dependencies: ["29C780353E7FB720"]
 			id: "152F6E8D35D2069A"
 			tasks: [{
 				id: "124F45AFAA7A0206"
@@ -1122,8 +1152,20 @@
 		}
 		{
 			title: "Type: Boolean"
-			x: 6.5d
-			y: -3.5d
+			icon: "computercraft:printed_page"
+			x: 3.0d
+			y: -4.0d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"Boolean is the easiest type in every programming language. It can have 2 states, \"True\" and \"False\"."
+				""
+				"Its really useful in situations you need to check if something is True, or False. Example:"
+				"-> You need to know if on the left from the PC is chest. If there is chest, its \"True\", if there is not, \"False\""
+				""
+				"A lot of functions are returning boolean variable after they ended they work, it is useful to check for that output to see if what you wanted to do was actually done."
+			]
+			dependencies: ["29C780353E7FB720"]
+			min_width: 250
 			id: "182654F933DE1815"
 			tasks: [{
 				id: "32D28AB681CE8601"
@@ -1133,8 +1175,11 @@
 		}
 		{
 			title: "Type: Function"
-			x: 7.5d
-			y: -4.0d
+			icon: "computercraft:printed_page"
+			x: 4.5d
+			y: -5.4d
+			subtitle: "Lua Basics #1 - Variable types"
+			dependencies: ["29C780353E7FB720"]
 			id: "7B00ECCC48DA0445"
 			tasks: [{
 				id: "20F5794B8753B648"
@@ -1144,8 +1189,18 @@
 		}
 		{
 			title: "Type: String"
-			x: 9.5d
-			y: -3.0d
+			icon: "computercraft:printed_page"
+			disable_toast: true
+			x: 7.35d
+			y: -4.8d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"String is a type of variable that stores a sequence of characters. You can type here anything, binary code (Binary - Code using ones and zeros), your name, entire address or your homework :wink:"
+				""
+				"Strings can not be modified, but you can do a copy of it with a modification you want to do."
+			]
+			dependencies: ["29C780353E7FB720"]
+			min_width: 300
 			id: "32B8B586F03321A7"
 			tasks: [{
 				id: "32E1201F35F1A394"
@@ -1155,11 +1210,151 @@
 		}
 		{
 			title: "Type: Number"
-			x: 8.5d
-			y: -3.5d
+			icon: "computercraft:printed_page"
+			x: 6.5d
+			y: -5.4d
+			subtitle: "Lua Basics #1 - Variable types"
+			dependencies: ["29C780353E7FB720"]
 			id: "08E925A9223FC1BF"
 			tasks: [{
 				id: "56800F53C736541F"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Variable Tips \\& Tricks"
+			icon: "computercraft:printed_page"
+			x: 5.5d
+			y: -2.0d
+			subtitle: "Lua Basics #1.2 - Variable naming"
+			description: [
+				"Variable naming:"
+				"For setting variable's name, its important to know few things:"
+				""
+				"● Lua is \"capital sensitive\". It means that variables with name \"test\" and \"TEST\" are two different variables! "
+				""
+				"● Variable's name can't be longer than 64 characters"
+				""
+				"● Variable's name can't start with an number and can't have any spaces:"
+				"local test_1 -> Variable named correctly"
+				"local 1_test -> Variable named incorrectly, will not work"
+				"local test 1 -> Variable named incorrectly, will not work"
+				""
+				"● You should name variables in a way that they represent theirs use:"
+				"local day = \"Monday\""
+				"local x123 = \"Monday\""
+				"Both of those are used by me to store day of the week, but first one is named with its purpose in mind, other one is just random thing. They both will work, however if you are trying to do more advanced program, random names like x123 are gonna mess with you really quickly."
+				""
+				"General tips \\& tricks:"
+				""
+				"● You can create few variables at the same time! You just simply type two or more names after \"local\" and seperate them with comma. You can even set in the same way unique value for every variable."
+				"-> local x, y, z = 1, 2, 3"
+				"x -> 1 / y -> 2 / z -> 3"
+				""
+				"Dev Note: Remember to check this out later on and think if you didn't forget anything important ^^\""
+			]
+			dependencies: ["29C780353E7FB720"]
+			min_width: 400
+			id: "0944D4C1A4E3C8F3"
+			tasks: [{
+				id: "00E1D2866C886632"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "5BC935817892D231"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "minecraft:writable_book"
+			x: 0.5d
+			y: 5.0d
+			description: [
+				"Challenges are gonna change a lot. Those that are here right now, are gonna be in new section: Tasks! It will give a tutorial how to do a program so people can see how to write code"
+				""
+				"Challenges are gonna be hard from the beggining. Probably I will do 2 types of them: "
+				"basic -> Can be done w/o knowledge from somewhere else "
+				"advanced -> For advanced Users only, Requires usage of Wiki and Lua Docs, and probably experience for few of them"
+				""
+				"PS: For anyone that sees this. If you have any idea for quest requiremt for completion or better icon, I would aprreciate that ^^\""
+				""
+				"And about lua basics. I'm planing to add few more quests, talking about loops, function IF and searching for functions at wikis etc. Shouldn't be more than 10 quests (without those ones that have Variables Types) for entire Lua Basics"
+			]
+			min_width: 350
+			id: "422379AAF05456FC"
+			tasks: [{
+				id: "347BE76BC944769F"
+				type: "custom"
+				title: "Note"
+			}]
+		}
+		{
+			icon: "minecraft:writable_book"
+			x: 0.0d
+			y: -3.0d
+			shape: "octagon"
+			subtitle: "Lua Basics - Coding practice"
+			dependencies: ["2D79E4D126EE389E"]
+			size: 1.5d
+			id: "4B5728FBD119B4B7"
+			tasks: [{
+				id: "3E2B04698DC03A84"
+				type: "checkmark"
+				title: "Tasks!"
+			}]
+		}
+		{
+			title: "Variables Types - In General"
+			icon: "computercraft:printed_page"
+			x: 5.5d
+			y: -5.75d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"Every variable has its own type that determines what it stores and what you can do to it."
+				""
+				"In Lua there is 8 variable types, however I will cover only 6 because 2 of them aren't that useful in ComputerCraft, and require much more knowledge."
+				""
+				"Lua, whenever you are trying to do something that is designed for different type of variable, will try to convert variable you use to the type it needs to be. Of course it will not success 100%, because sometimes its impossible to convert. In this case it will crash the program and give error about illegal function on that type of the variable."
+				""
+				"There are few ways to convert manually one type to another, but its not that useful in stuff we are gonna do, and can be found in Official Lua Docs."
+				""
+				"Note: If you already know Integrated Dynamics' variable types, a lot of ComputerCraft ones are really similiar. On the last line of every type quest there is a note saying what type of Variable is that in ID :wink: -- need feedback about this, should I add this or its kinda pointless?"
+				"TODO: Link to the site with convert Functions"
+			]
+			dependencies: ["29C780353E7FB720"]
+			min_width: 375
+			id: "356E3B812A576EF7"
+			tasks: [{
+				id: "01B3465E67E41884"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Type: Nil"
+			icon: "computercraft:printed_page"
+			x: 8.0d
+			y: -4.0d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"Nil is a variable type and variable value. It means literally \"nothing\" in code. Variable with type nil, asked for their type and value, will return nil."
+				""
+				"Nil is useful when you need to clear some variable after use."
+				""
+				"x = nil"
+				""
+				"● This will set type and value of x as nil, setting it like it was just created in that line."
+				""
+				"Also some functions, when they don't find anything you asked for, they will return nil."
+			]
+			dependencies: ["29C780353E7FB720"]
+			min_width: 400
+			id: "1BFF3074E9708917"
+			tasks: [{
+				id: "401DE5F2E19708E0"
 				type: "checkmark"
 				title: "Got it!"
 			}]
