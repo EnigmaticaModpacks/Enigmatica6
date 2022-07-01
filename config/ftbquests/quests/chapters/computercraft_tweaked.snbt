@@ -1115,16 +1115,16 @@
 				"-> local My_First_Variable = 0"
 				""
 				"● \"local\" is a function for creating new variables. \"My_First_Variable\" is the variable's name, that is first argument! Get used to that word, because every function has one or more of them."
-				"● Second \"argument\" is a data you want to store in that variable. Its optional, that means you can just leave it empty and variable still be created, but when you are gonna try reading it, it will return \"nil\"."
-				"(Important note: You can't type \"local x =\" when you aren't gonna store anything in that variable. You need to use \"local x\" or \"local x = nil\")"
+				"● Second \"argument\" is a data you want to store in that variable. Its optional, that means you can just leave it empty and variable will still be created, but when you are gonna try reading it, it will return \"nil\"."
+				"(Important note: You can't write \"local x =\" when you want to create empty variable. You need to use \"local x\" or \"local x = nil\")"
 				""
-				"Now to read your variable, you simply use the name of your variable. It will give to the function data it contains (value). You can't read variables in any other place than function argument!"
+				"Now to read your variable, you just simply use the name of your variable. It will give to the function data it contains (value). You can't read variables in any other place than function's argument!"
 				""
-				"Only time it will function differently is when you want to change data it stores. Lets say we don't want our variable to store 0, we want it to store E6, how we can do that? To change value of variable, you simply type its name and set new data you want it to store."
+				"Only time it will function differently is when you want to change data it stores. Lets say we don't want our variable to store 0, we want it to store Enigmatica 6, how we can do that? To change value of variable, you simply type its name and set new data you want it to store."
 				""
-				"-> My_First_Variable = \"E6\""
+				"-> My_First_Variable = \"Enigmatica 6\""
 				""
-				"\"But Kanzio, what does \"nil\" mean and why did you use quotation marks with E6?\" - So there is few types of variables, and every of them have its own unique rules. Check \"Lua Basics #1 - Variable types\" above this quest for more information about those."
+				"\"But Kanzio, what does \"nil\" mean and why did you use quotation marks with Enigmatica 6?\" - So there is few types of variables, and every of them have its own unique rules. Check \"Lua Basics #1 - Variable types\" above this quest for more information about those."
 			]
 			dependencies: ["44029061DB640AE2"]
 			size: 1.25d
