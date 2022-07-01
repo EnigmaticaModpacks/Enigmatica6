@@ -1197,10 +1197,30 @@
 			description: [
 				"String is a type of variable that stores a sequence of characters. You can type here anything, binary code (Binary - Code using ones and zeros), your name, entire address or your homework :wink:"
 				""
+				"Strings need to be written between double quotes to be valid, otherwise program will think its the name of variable!"
+				""
+				"local my_first_string = \"Hello Player\" -> Valid"
+				"local my_first_string = Hello Player -> Not valid, program will think those are two variables"
+				""
 				"Strings can not be modified, but you can do a copy of it with a modification you want to do."
+				"local test_string = \"This is a test\""
+				"local test_string_edited = string.gsub(test_string, \"test\", \"Test!\", 1)"
+				"test_string_edited -> \"This is a Test!\""
+				""
+				"string.gsub is one of few ways you can edit your strings. First argument takes the string / variable you want to edit, second one what \"characters\" you want to change, and third one takes what you want to put in that place."
+				"There is fourth argument (Optional) that tells the program which occurance of those characters to change. If, for example, we would have 2 \"test\" in our string, with number you can set which one to edit! In our case it would edit the first one."
+				""
+				"There is also a way to add some text at the end of your string. This time you can \"edit\" the initial string by overwriting it, but its sometimes useful to have it as seperate variables."
+				"To add some text at the end of your string, you use 2 dots between 2 strings you want to add together:"
+				"local string_1 = \"Hello \""
+				"local string_2 = \"there!\""
+				"local full_string = string_1 .. string_2"
+				"full_string -> \"Hello there!\""
+				""
+				"There is also a few different ways to modify your strings, and to format them, however those can be found in Lua docs!"
 			]
 			dependencies: ["29C780353E7FB720"]
-			min_width: 300
+			min_width: 400
 			id: "32B8B586F03321A7"
 			tasks: [{
 				id: "32E1201F35F1A394"
@@ -1214,7 +1234,31 @@
 			x: 6.5d
 			y: -5.4d
 			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"Number is a type of variable to store numbers. Yes literally :sweat_smile:"
+				""
+				"Numbers should be written without any other characters to be valid and recognised as number:"
+				"local my_first_number = 6"
+				"my_first_number -> 6"
+				""
+				"● There are few exceptions however, as you can do single and double precision numbers as well. For that you just use a dot:"
+				"local some_number = 1.54"
+				"● You can also write numbers in scientific notation (example: 5e20), but personally I wouldn't recommend that unless you know what you are doing."
+				""
+				"Lua supports the usual arithemitcs operators:"
+				"+ -> Addition"
+				"- -> Substraction"
+				"* -> Multiplication"
+				"/ -> Division"
+				""
+				"Its really simple to use them, you just write between two numbers operator you want to use:"
+				"local add = 6 + 10"
+				"add -> 16"
+				""
+				"Unfortunately Lua doesn't support anything else that those 4 basic operators, for anything else that you will need to write the function yourself. For creating functions check out Function type in Lua Basics #1"
+			]
 			dependencies: ["29C780353E7FB720"]
+			min_width: 400
 			id: "08E925A9223FC1BF"
 			tasks: [{
 				id: "56800F53C736541F"
