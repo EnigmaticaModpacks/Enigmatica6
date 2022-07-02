@@ -83,7 +83,7 @@
 			description: [
 				"ComputerCraft: Tweaked has a lot peripherals that are really useful for doing anything!"
 				""
-				"This section will show you all peripherals available and how to use them."
+				"This section will show you all peripherals available and how to use their APIs."
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.25d
@@ -1112,17 +1112,20 @@
 				""
 				"The way variables work is pretty simple, you set the name for it, and optionally you set what data it stores."
 				""
-				"-> local My_First_Variable = 0"
+				"> local My_First_Variable = 0"
 				""
 				"● \"local\" is a function for creating new variables. \"My_First_Variable\" is the variable's name, that is first argument! Get used to that word, because every function has one or more of them."
 				"● Second \"argument\" is a data you want to store in that variable. Its optional, that means you can just leave it empty and variable will still be created, but when you are gonna try reading it, it will return \"nil\"."
-				"(Important note: You can't write \"local x =\" when you want to create empty variable. You need to use \"local x\" or \"local x = nil\")"
+				"(Important note: You can't write \"local x =\" when you want to create empty variable. You need to use \"local x\" or \"local x = nil\" where x is your's variable name)"
 				""
-				"Now to read your variable, you just simply use the name of your variable. It will give to the function data it contains (value). You can't read variables in any other place than function's argument!"
+				"Now to read your variable, you just simply use the name of your variable. It will give to the function data it contains (value). You can't read variables in any other place than function's argument! However for demonstration purposes, I will showcase variable's value like that:"
 				""
-				"Only time it will function differently is when you want to change data it stores. Lets say we don't want our variable to store 0, we want it to store Enigmatica 6, how we can do that? To change value of variable, you simply type its name and set new data you want it to store."
+				"> My_First_Variable -> 0"
 				""
-				"-> My_First_Variable = \"Enigmatica 6\""
+				"Only time it will function differently is when you want to change data it stores. Lets say we don't want our variable to store 0, we want it to store Enigmatica 6, how we can do that? To change value of variable, you simply overwrite it. That means you are deleting old value of variable, and putting new data in its place. To do that, you just simply use variable's name and set new value!"
+				""
+				"> My_First_Variable = \"Enigmatica 6\""
+				"> My_First_Variable -> \"Enigmatica 6\""
 				""
 				"\"But Kanzio, what does \"nil\" mean and why did you use quotation marks with Enigmatica 6?\" - So there is few types of variables, and every of them have its own unique rules. Check \"Lua Basics #1 - Variable types\" above this quest for more information about those."
 			]
@@ -1142,6 +1145,7 @@
 			x: 3.65d
 			y: -4.8d
 			subtitle: "Lua Basics #1 - Variable types"
+			description: ["TODO: Do it actually ^^\" Tables are actually hard to explain, so thats off for later"]
 			dependencies: ["29C780353E7FB720"]
 			id: "152F6E8D35D2069A"
 			tasks: [{
@@ -1179,7 +1183,32 @@
 			x: 4.5d
 			y: -5.4d
 			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"You heard already few times a function word in this quest line, but did you know its also a one of variable types?"
+				"Function is a variable that doesn't store data, it stores other functions and variables in it, that you can use in other place with just the name of that function. Pretty convenient isn't it?"
+				""
+				"As every variable, you can change its value later on to whatever you want. Yes that means you can edit some of Lua Functions and other APIs, but it will break stuff most of the time :sweat_smile:"
+				"API is set of functions you can use to interract with stuff that uses that API. For example to interract with monitor of the PC, you need to use API that has functions to do that. How to use APIs will be later."
+				""
+				"Now lets see how to use functions."
+				"For you to call (In other words, use) function, you need to simply type its name with 2 brackets. Between those are function's arguments."
+				""
+				"> print(string) -> Basic function to write text on the screen. Has one argument."
+				""
+				"In my case I called print(). Some of the functions doesn't require you to give them arguments, they can even don't have any of them, but there can be functions that require from you even 10 arguments. Crazy isn't it?!"
+				"In our case, print() requires as it's first and only argument some string (Read \"Type: String\" quest to know what string is)"
+				"So example usage of print() would look like this:"
+				""
+				"> print(\"This is a test!\") -> Writes on the screen --> This is a test!"
+				""
+				"As you can use variables in place of function's arguments, you can use functions as argument as well! Most of the functions return something, if its a table with stuff they found, or just boolean if they were able to do what they need to. They can even return other function! To use function as the argument, you just write it as you would normally, but in the argument of other function."
+				""
+				"> print(my_function(1)) -> It will print what my_function will return."
+				""
+				"For more about Functions, and how to create them, check Lua Basics #2, Creating Functions and Usage of API"
+			]
 			dependencies: ["29C780353E7FB720"]
+			min_width: 450
 			id: "7B00ECCC48DA0445"
 			tasks: [{
 				id: "20F5794B8753B648"
@@ -1199,7 +1228,7 @@
 				""
 				"Strings need to be written between double quotes to be valid, otherwise program will think its the name of variable!"
 				""
-				"local my_first_string = \"Hello Player\" -> Valid"
+				"local my_first_string = \"Hello Player\" -> Valid string"
 				"local my_first_string = Hello Player -> Not valid, program will think those are two variables"
 				""
 				"Strings can not be modified, but you can do a copy of it with a modification you want to do."
@@ -1214,10 +1243,11 @@
 				"To add some text at the end of your string, you use 2 dots between 2 strings you want to add together:"
 				"local string_1 = \"Hello \""
 				"local string_2 = \"there!\""
-				"local full_string = string_1 .. string_2"
-				"full_string -> \"Hello there!\""
+				"string_1 = string_1 .. string_2"
+				"(Note: string_2 can be replaced by non-string variable if it can be converted to string)"
+				"string_1 -> \"Hello there!\""
 				""
-				"There is also a few different ways to modify your strings, and to format them, however those can be found in Lua docs!"
+				"There is also a few different ways to modify your strings, and to format them, however those aren't as useful, and can be found in Lua docs!"
 			]
 			dependencies: ["29C780353E7FB720"]
 			min_width: 400
@@ -1238,11 +1268,11 @@
 				"Number is a type of variable to store numbers. Yes literally :sweat_smile:"
 				""
 				"Numbers should be written without any other characters to be valid and recognised as number:"
-				"local my_first_number = 6"
-				"my_first_number -> 6"
+				"> local my_first_number = 6"
+				"> my_first_number -> 6"
 				""
 				"● There are few exceptions however, as you can do single and double precision numbers as well. For that you just use a dot:"
-				"local some_number = 1.54"
+				"> local some_number = 1.54"
 				"● You can also write numbers in scientific notation (example: 5e20), but personally I wouldn't recommend that unless you know what you are doing."
 				""
 				"Lua supports the usual arithemitcs operators:"
@@ -1252,10 +1282,10 @@
 				"/ -> Division"
 				""
 				"Its really simple to use them, you just write between two numbers operator you want to use:"
-				"local add = 6 + 10"
-				"add -> 16"
+				"> local add = 6 + 10"
+				"> add -> 16"
 				""
-				"Unfortunately Lua doesn't support anything else that those 4 basic operators, for anything else that you will need to write the function yourself. For creating functions check out Function type in Lua Basics #1"
+				"Unfortunately Lua doesn't support anything else than those 4 basic operators, for anything else that you want, you will need to write the function yourself. For creating functions check out Function type in Lua Basics #1"
 			]
 			dependencies: ["29C780353E7FB720"]
 			min_width: 400
@@ -1341,6 +1371,11 @@
 			y: -3.0d
 			shape: "octagon"
 			subtitle: "Lua Basics - Coding practice"
+			description: [
+				"Here are few easy tasks that will show you simple programs, to teach you practically how to do some stuff."
+				""
+				"More tasks will get unlocked, the more you go in Lua Basics! Its recommended to do them as soon as possible, so you will practice stuff you learned as you go :D"
+			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.5d
 			id: "4B5728FBD119B4B7"
@@ -1384,7 +1419,7 @@
 			y: -4.0d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
-				"Nil is a variable type and variable value. It means literally \"nothing\" in code. Variable with type nil, asked for their type and value, will return nil."
+				"Nil is a variable type and variable value. It means literally \"nothing\" in code. Variable with type nil, asked for their type and what they're storing, will return nil."
 				""
 				"Nil is useful when you need to clear some variable after use."
 				""
@@ -1402,6 +1437,76 @@
 				type: "checkmark"
 				title: "Got it!"
 			}]
+		}
+		{
+			title: "Creating your own functions"
+			icon: "computercraft:printed_pages"
+			x: 8.0d
+			y: -2.0d
+			subtitle: "Lua Basics #2 - Creating Functions"
+			id: "5056B0737A8A8D64"
+			tasks: [{
+				id: "0C2F459BCB9222EC"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Your first program!"
+			icon: "computercraft:computer_normal"
+			x: -1.0d
+			y: -5.0d
+			subtitle: "Practice: Variables"
+			description: [
+				"Lets create our first program!"
+				"Main goal of task: Create a program that will use print() function to print few variables, before that lets edit few of them."
+				""
+				"First thing we would like to do, is to create 2 strings, 2 numbers, a boolean and nil variables. Name of them is up to you :smile:"
+				""
+				"Now as you know, print() function is to write some text on the screen, lets use it then! But first, we will add those two strings together."
+				"Another thing we would like to print are those numbers. Lets print first one, second one, and at the end we want to add them and print result."
+				"Now lets get our nil variable. As you know its empty, but that isn't efficient. Let's store \"Enigmatica 6 is great\" in it and print it!"
+				"Lastly we would like to know if our boolean variable is True or False. Print it!"
+				""
+				"Final results should be 6 lines of text, with stuff you stored in the variables!"
+				""
+				"Pro Tip: You don't need to do another variable in few cases like adding 2 variables together. You can do that in the functions argument!"
+				""
+				"> local number_1, number_2 = 1, 5"
+				"> print(number_1 + number_2) -> Writes results on the screen -> 6"
+			]
+			dependencies: ["4B5728FBD119B4B7"]
+			min_width: 400
+			id: "5E591D65A5014852"
+			tasks: [
+				{
+					id: "0829D34C8A1B13FA"
+					type: "checkmark"
+					title: "Got it working!"
+					disable_toast: true
+				}
+				{
+					id: "7981535031476D38"
+					type: "item"
+					title: "Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
 		}
 	]
 }
