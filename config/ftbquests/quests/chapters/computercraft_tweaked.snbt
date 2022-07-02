@@ -1205,7 +1205,9 @@
 				""
 				"> print(my_function(1)) -> It will print what my_function will return."
 				""
-				"For more about Functions, and how to create them, check Lua Basics #2, Creating Functions and Usage of API"
+				"There is also a way to pass the function, that is useful sometimes and should be used with functions that doesn't require any arguments. To pass a function, you simply write its name but without brackets! However its not that useful in our usage, and until you will not go deeper into Lua coding, you will probably never use it."
+				""
+				"For more about Functions, and how to create them, check Lua Basics #2."
 			]
 			dependencies: ["29C780353E7FB720"]
 			min_width: 450
