@@ -2574,15 +2574,15 @@
 		}
 		{
 			title: "Computer Craft: Tweaked"
-			icon: "computercraft:computer_advanced"
+			icon: "computercraft:computer_normal"
 			x: -0.5d
 			y: 2.5d
 			subtitle: "A Computer within a Game within a Computer"
 			description: [
-				"Use the LUA programming language to interact with the world."
+				"Use the Lua programming language to interact with the world."
 				""
-				""
-				"When you claim this reward, a link will be posted in chat to a video playlist for a basic tutorial on CC. While for an old version, it should still be relevant."
+				"With the power of computer and Lua, you can create amazing automation system. They could be massive, or compact as just one block!"
+				"If you are curious what you can do with that power, after completion of that quest, you will see on the chat a link to a video that shows few projects created by Enigmatica Community!"
 				"Unfortunately repeatable quests aren't yet implemented so the command will only run once, so be sure to save the link somewhere!"
 			]
 			dependencies: [
@@ -2590,6 +2590,7 @@
 				"3468E652B4FE85FA"
 			]
 			optional: true
+			min_width: 250
 			id: "77F743435F64DFEC"
 			tasks: [{
 				id: "4B7B9611F1294D2B"
@@ -2598,9 +2599,9 @@
 			rewards: [{
 				id: "20E531EBA4E9DA87"
 				type: "command"
-				title: "CC Tutorial Link"
+				title: "CC Introduction Video"
 				icon: "pneumaticcraft:tag_filter"
-				command: "/tellraw @p {\"text\":\"CC Tutorial Link\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtube.com/playlist?list=PLaiPn4ewcbkHYflo2jl0OuNaHK6Mj-koG\"}}"
+				command: "/tellraw @p {\"text\":\"ComputerCraft Introduction Video\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://google.com\"}}"
 				player_command: false
 			}]
 		}
