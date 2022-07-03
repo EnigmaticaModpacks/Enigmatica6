@@ -71,13 +71,7 @@
 		}
 		{
 			title: "Peripherals"
-			icon: {
-				id: "computercraft:disk"
-				Count: 1b
-				tag: {
-					Color: 14605932
-				}
-			}
+			icon: "rftoolscontrol:graphics_card"
 			x: -5.0d
 			y: 0.0d
 			subtitle: "There is something more than Computers?!"
@@ -113,7 +107,6 @@
 				"TODO: Link to official Advanced Peripherals WIKI"
 			]
 			dependencies: ["378BEFB62C4F98BF"]
-			hide: true
 			id: "6AA1236C9946F569"
 			tasks: [{
 				id: "56A45A4FCA54436D"
@@ -354,6 +347,7 @@
 				"getName is really useful command used a lot in ComputerCraft, a lot of commands (mostly for moving stuff from one inventory to another) requires you to give them \"Name\" of the peripheral, and not a table that wrap / find gives you. This takes what wrap / find returns and gives the Name of that peripheral!"
 				""
 				"For more information look up ComputerCraft: Tweaked Wiki!"
+				"TODO: Rewrite this API Usage."
 			]
 			dependencies: ["378BEFB62C4F98BF"]
 			hide: true
@@ -494,7 +488,6 @@
 			subtitle: "Wait there is even more?"
 			description: ["ComputerCraft: Tweaked adds on its own a few unique peripherals. Some of them aren't as useful as others, but all of them are worth attention."]
 			dependencies: ["378BEFB62C4F98BF"]
-			hide: true
 			id: "1580D9FD06937ABB"
 			tasks: [{
 				id: "4816E5D3E5C6E0D2"
@@ -725,16 +718,15 @@
 		{
 			title: "Challenges"
 			icon: "computercraft:computer_command"
-			x: 0.0d
-			y: 3.0d
+			x: 9.0d
+			y: 3.75d
 			shape: "gear"
 			subtitle: "Try yourself!"
 			description: [
-				"Here are some easy challenges you could try completing to test what you learned so far. For every challenge you will get a small prize :wink:"
+				"Here are some easy challenges you could try completing to test what you learned so far. For every challenge you will get a small prize :D"
 				""
 				"However at the end, there are few challenges you could not be able to finish without deeper understanding of Lua, so don't care too much about those if you aren't able to finish. There are here for those handful of people that know what there are doing ^^\""
 			]
-			dependencies: ["2D79E4D126EE389E"]
 			hide: true
 			size: 1.5d
 			min_width: 250
@@ -753,8 +745,8 @@
 		{
 			title: "Your first program!"
 			icon: "computercraft:printed_page"
-			x: -2.0d
-			y: 4.5d
+			x: 9.0d
+			y: 5.0d
 			subtitle: "Challenge #1"
 			description: ["Make a program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
 			dependencies: ["777349A29491AE4C"]
@@ -818,7 +810,7 @@
 		{
 			title: "Item Transfer!"
 			icon: "mekanism:basic_mechanical_pipe"
-			x: -1.5d
+			x: 8.5d
 			y: 6.0d
 			subtitle: "Challenge #2"
 			description: ["Make a program that will transfer items from inventory on the left to inventory on the right."]
@@ -879,8 +871,8 @@
 		{
 			title: "Using Peripherals to interract with RS"
 			icon: "refinedstorage:disk_drive"
-			x: 0.5d
-			y: 6.5d
+			x: 6.5d
+			y: 6.0d
 			subtitle: "Challenge #3"
 			description: ["Use Advanced Peripherals to export some items from RS into a chest."]
 			dependencies: ["06A8B69F9385388B"]
@@ -1000,12 +992,12 @@
 			description: [
 				"Welcome to Lua fellow Player!"
 				""
-				"Lua is one of many coding languages out there, but its one of the easiest ones. Don't think that it means its worse than others :stuck_out_tongue:"
+				"Lua is one of many coding languages out there, but its one of the easiest ones. Don't think that it means its worse than others!"
 				""
 				"Its pretty powerful, but simple language, so simple it can be implemented into other games."
 				"That doesn't meen that its only use in this application. There are a lot of games coded on Lua, that are pretty neat and popular (The Binding of Isaac for example)."
 				""
-				"In this tutorial I'll try to teach you basics of basics of Lua, so you can try doing your own automation projects with it!"
+				"In this tutorial I'll try to teach you basics of basics of Lua, so you can try doing your own automation projects with it."
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.5d
@@ -1034,8 +1026,8 @@
 		{
 			title: "Modem action!"
 			icon: "computercraft:wired_modem_full"
-			x: 2.5d
-			y: 6.5d
+			x: 7.5d
+			y: 6.0d
 			subtitle: "Challenge #4"
 			description: ["Use a wired Modem to interract with barrel, and print on the monitor list of items in it."]
 			dependencies: ["0F004D494E6114E8"]
@@ -1120,8 +1112,8 @@
 		{
 			title: "Wireless communications!"
 			icon: "computercraft:wireless_modem_normal"
-			x: 2.5d
-			y: 4.5d
+			x: 8.0d
+			y: 7.0d
 			subtitle: "Challenge #4.2"
 			description: [
 				""
@@ -1150,7 +1142,7 @@
 				""
 				"The way variables work is pretty simple, you set the name for it, and optionally you set what data it stores."
 				""
-				"> local My_First_Variable = 0"
+				"> local my_first_variable = 0"
 				""
 				"● \"local\" is a function for creating new variables. \"My_First_Variable\" is the variable's name, that is first argument! Get used to that word, because every function has one or more of them."
 				"● Second \"argument\" is a data you want to store in that variable. Its optional, that means you can just leave it empty and variable will still be created, but when you are gonna try reading it, it will return \"nil\"."
@@ -1158,14 +1150,14 @@
 				""
 				"Now to read your variable, you just simply use the name of your variable. It will give to the function data it contains (value). You can't read variables in any other place than function's argument! However for demonstration purposes, I will showcase variable's value like that:"
 				""
-				"> My_First_Variable -> 0"
+				"> 0 -> my_first_variable"
 				""
 				"Only time it will function differently is when you want to change data it stores. Lets say we don't want our variable to store 0, we want it to store Enigmatica 6, how we can do that? To change value of variable, you simply overwrite it. That means you are deleting old value of variable, and putting new data in its place. To do that, you just simply use variable's name and set new value!"
 				""
-				"> My_First_Variable = \"Enigmatica 6\""
-				"> My_First_Variable -> \"Enigmatica 6\""
+				"> my_first_variable = \"Enigmatica 6\""
+				"> \"Enigmatica 6\" -> my_first_variable"
 				""
-				"\"But Kanzio, what does \"nil\" mean and why did you use quotation marks with Enigmatica 6?\" - So there is few types of variables, and every of them have its own unique rules. Check \"Lua Basics #1 - Variable types\" above this quest for more information about those."
+				"\"But what does \"nil\" mean and why there are quotation marks near Enigmatica 6?\" - So there are few types of variables, and every of them have its own unique rules. Check \"Lua Basics #1 - Variable types\" above this quest for more information about those."
 			]
 			dependencies: ["44029061DB640AE2"]
 			hide: true
@@ -1208,7 +1200,7 @@
 				"Boolean is the easiest type in every programming language. It can have 2 states, \"True\" and \"False\"."
 				""
 				"Its really useful in situations you need to check if something is True, or False. Example:"
-				"-> You need to know if on the left from the PC is chest. If there is chest, its \"True\", if there is not, \"False\""
+				"● You need to know if on the left from the PC is chest. If there is chest, its \"True\", if there is not, \"False\""
 				""
 				"A lot of functions are returning boolean variable after they ended they work, it is useful to check for that output to see if what you wanted to do was actually done."
 			]
@@ -1237,17 +1229,17 @@
 				"Now lets see how to use functions."
 				"For you to call (In other words, use) function, you need to simply type its name with 2 brackets. Between those are function's arguments."
 				""
-				"> print(string) -> Basic function to write text on the screen. Has one argument."
+				"> print(string) -- Basic function to write text on the screen. Has one argument."
 				""
 				"In my case I called print(). Some of the functions doesn't require you to give them arguments, they can even don't have any of them, but there can be functions that require from you even 10 arguments. Crazy isn't it?!"
 				"In our case, print() requires as it's first and only argument some string (Read \"Type: String\" quest to know what string is)"
 				"So example usage of print() would look like this:"
 				""
-				"> print(\"This is a test!\") -> Writes on the screen --> This is a test!"
+				"> print(\"This is a test!\") -- Writes on the screen --> This is a test!"
 				""
 				"As you can use variables in place of function's arguments, you can use functions as argument as well! Most of the functions return something, if its a table with stuff they found, or just boolean if they were able to do what they need to. They can even return other function! To use function as the argument, you just write it as you would normally, but in the argument of other function."
 				""
-				"> print(my_function(1)) -> It will print what my_function will return."
+				"> print(my_function(1)) -- It will print what my_function will return."
 				""
 				"There is also a way to pass the function, that is useful sometimes and should be used with functions that doesn't require any arguments. To pass a function, you simply write its name but without brackets! However its not that useful in our usage, and until you will not go deeper into Lua coding, you will probably never use it."
 				""
@@ -1272,26 +1264,26 @@
 			description: [
 				"String is a type of variable that stores a sequence of characters. You can type here anything, binary code (Binary - Code using ones and zeros), your name, entire address or your homework :wink:"
 				""
-				"Strings need to be written between double quotes to be valid, otherwise program will think its the name of variable!"
+				"● Strings need to be written between double quotes to be valid, otherwise program will think its the name of variable!"
 				""
-				"local my_first_string = \"Hello Player\" -> Valid string"
-				"local my_first_string = Hello Player -> Not valid, program will think those are two variables"
+				"> local my_first_string = \"Hello Player\" -- Valid string"
+				"> local my_first_string = Hello Player -- Not valid, program will think those are two variables"
 				""
-				"Strings can not be modified, but you can do a copy of it with a modification you want to do."
-				"local test_string = \"This is a test\""
-				"local test_string_edited = string.gsub(test_string, \"test\", \"Test!\", 1)"
-				"test_string_edited -> \"This is a Test!\""
+				"● Strings can not be modified, but you can do a copy of them with a modification you want to do."
+				"> local test_string = \"This is a test\""
+				"> local test_string_edited = string.gsub(test_string, \"test\", \"Test!\", 1)"
+				"> \"This is a Test!\" -> test_string_edited"
 				""
-				"string.gsub is one of few ways you can edit your strings. First argument takes the string / variable you want to edit, second one what \"characters\" you want to change, and third one takes what you want to put in that place."
+				"● string.gsub is one of few ways you can edit your strings. First argument takes the string / variable you want to edit, second one what \"characters\" you want to change, and third one takes what you want to put in that place."
 				"There is fourth argument (Optional) that tells the program which occurance of those characters to change. If, for example, we would have 2 \"test\" in our string, with number you can set which one to edit! In our case it would edit the first one."
 				""
-				"There is also a way to add some text at the end of your string. This time you can \"edit\" the initial string by overwriting it, but its sometimes useful to have it as seperate variables."
+				"● There is also a way to add some text at the end of your string. This time you can \"edit\" the initial string by overwriting it, but its sometimes useful to have it as seperate variables."
 				"To add some text at the end of your string, you use 2 dots between 2 strings you want to add together:"
-				"local string_1 = \"Hello \""
-				"local string_2 = \"there!\""
-				"string_1 = string_1 .. string_2"
+				"> local string_1 = \"Hello \""
+				"> local string_2 = \"there!\""
+				"> string_1 = string_1 .. string_2"
 				"(Note: string_2 can be replaced by non-string variable if it can be converted to string)"
-				"string_1 -> \"Hello there!\""
+				"> \"Hello there!\" -> string_1"
 				""
 				"There is also a few different ways to modify your strings, and to format them, however those aren't as useful, and can be found in Lua docs!"
 			]
@@ -1315,7 +1307,7 @@
 				""
 				"Numbers should be written without any other characters to be valid and recognised as number:"
 				"> local my_first_number = 6"
-				"> my_first_number -> 6"
+				"> 6 -> my_first_number"
 				""
 				"● There are few exceptions however, as you can do single and double precision numbers as well. For that you just use a dot:"
 				"> local some_number = 1.54"
@@ -1329,7 +1321,7 @@
 				""
 				"Its really simple to use them, you just write between two numbers operator you want to use:"
 				"> local add = 6 + 10"
-				"> add -> 16"
+				"> 16 -> add"
 				""
 				"Unfortunately Lua doesn't support anything else than those 4 basic operators, for anything else that you want, you will need to write the function yourself. For creating functions check out Function type in Lua Basics #1"
 			]
@@ -1347,7 +1339,7 @@
 			icon: "computercraft:printed_page"
 			x: 5.5d
 			y: -2.0d
-			subtitle: "Lua Basics #1.2 - Variable naming"
+			subtitle: "Lua Basics #1 - Variable tips \\& tricks"
 			description: [
 				"Variable naming:"
 				"For setting variable's name, its important to know few things:"
@@ -1356,21 +1348,21 @@
 				""
 				"● Variable's name can't be longer than 64 characters"
 				""
-				"● Variable's name can't start with an number and can't have any spaces:"
-				"local test_1 -> Variable named correctly"
-				"local 1_test -> Variable named incorrectly, will not work"
-				"local test 1 -> Variable named incorrectly, will not work"
+				"● Variable's name can't start with a number and can't have any spaces:"
+				"> local test_1 -- Variable named correctly"
+				"> local 1_test -- Variable named incorrectly, will not work"
+				"> local test 1 -- Variable named incorrectly, will not work"
 				""
 				"● You should name variables in a way that they represent theirs use:"
-				"local day = \"Monday\""
-				"local x123 = \"Monday\""
+				"> local day = \"Monday\""
+				"> local x123 = \"Monday\""
 				"Both of those are used by me to store day of the week, but first one is named with its purpose in mind, other one is just random thing. They both will work, however if you are trying to do more advanced program, random names like x123 are gonna mess with you really quickly."
 				""
 				"General tips \\& tricks:"
 				""
 				"● You can create few variables at the same time! You just simply type two or more names after \"local\" and seperate them with comma. You can even set in the same way unique value for every variable."
-				"-> local x, y, z = 1, 2, 3"
-				"x -> 1 / y -> 2 / z -> 3"
+				"> local x, y, z = 1, 2, 3"
+				"> 1 -> x    /   2 -> y   /   3 -> z"
 				""
 				"Dev Note: Remember to check this out later on and think if you didn't forget anything important ^^\""
 			]
@@ -1390,7 +1382,7 @@
 		}
 		{
 			icon: "minecraft:writable_book"
-			x: -0.5d
+			x: 6.5d
 			y: 5.0d
 			description: [
 				"Challenges are gonna change a lot. Those that are here right now, are gonna be in new section: Tasks! It will give a tutorial how to do a program so people can see how to write code"
@@ -1428,6 +1420,7 @@
 			]
 			hide: true
 			size: 1.5d
+			min_width: 250
 			id: "4B5728FBD119B4B7"
 			tasks: [{
 				id: "3E2B04698DC03A84"
@@ -1471,9 +1464,9 @@
 			description: [
 				"Nil is a variable type and variable value. It means literally \"nothing\" in code. Variable with type nil, asked for their type and what they're storing, will return nil."
 				""
-				"Nil is useful when you need to clear some variable after use."
+				"● Nil is useful when you need to clear some variable after use."
 				""
-				"x = nil"
+				"> x = nil"
 				""
 				"● This will set type and value of x as nil, setting it like it was just created in that line."
 				""
@@ -1493,7 +1486,7 @@
 			icon: "computercraft:printed_pages"
 			x: 8.0d
 			y: -2.0d
-			subtitle: "Lua Basics #2 - Creating Functions"
+			subtitle: "Lua Basics #2 - Creating functions"
 			dependencies: [
 				"29C780353E7FB720"
 				"401DE5F2E19708E0"
@@ -1515,27 +1508,29 @@
 		}
 		{
 			title: "Your first program!"
-			icon: "computercraft:computer_normal"
-			x: -1.0d
-			y: -5.0d
+			icon: "rftoolscontrol:program_card"
+			x: -1.5d
+			y: -4.5d
 			subtitle: "Practice: Variables"
 			description: [
-				"Lets create our first program!"
-				"Main goal of task: Create a program that will use print() function to print few variables, before that lets edit few of them."
+				"Its time. We are gonna actually code something!"
+				"The program we will create, will use print() function to write some variable's values on the screen. Of course after we modify them :D"
 				""
-				"First thing we would like to do, is to create 2 strings, 2 numbers, a boolean and nil variables. Name of them is up to you :smile:"
+				"● First thing we need to do, is to create 2 strings, 2 numbers, a boolean and nil variable. Name for each of them is up to you."
 				""
-				"Now as you know, print() function is to write some text on the screen, lets use it then! But first, we will add those two strings together and print the result."
-				"Another thing we would like to print are those numbers. At first lets show first one, then second one, and at the end we want to add them and show the result."
-				"Now lets get our nil variable. As you know its empty, but that isn't efficient. Let's store \"Enigmatica 6 is great\" in it and print it!"
-				"Lastly we would like to know if our boolean variable is True or False. Show it on the screen and lets see what we got."
+				"● Now lets use print() function to write some text on the screen. However first, we will add one of those strings to the end of the other. Now we can print what we got."
 				""
-				"Final results should be 6 lines of text, with first one being the first string and second one after it. 2nd and 3rd would be two numbers, and 4th sum of those. 5th line the value of boolean variable and 6th line should say: Enigmatica 6 is great!"
+				"● Next thing we would like to print are those numbers. Lets show one of them first, after it second one, and lastly, lets add them together and print that as well."
+				""
+				"● Now lets get our nil variable. As you know its empty, but that isn't efficient. Let's store \"Enigmatica 6 is great!\" in it and print it as well."
+				""
+				"● Lastly lets see the value of our boolean."
+				""
+				"If everything was done correctly, the screen should have 6 lines printed on it. First one are two strings. Second and third are numbers. Fourth is the sum of them. 5th line should be \"Enigmatica 6 is great!\" and last line should show value of your boolean (True/False) If thats what you see, congratulations! :smile: You did create your first program!"
 				""
 				"Pro Tip: You don't need to do another variable in few cases like adding 2 variables together. You can do that in the functions argument!"
-				""
 				"> local number_1, number_2 = 1, 5"
-				"> print(number_1 + number_2) -> Writes results on the screen -> 6"
+				"> print(number_1 + number_2) -- Writes results on the screen --> 6"
 			]
 			dependencies: [
 				"4B5728FBD119B4B7"
@@ -1550,7 +1545,7 @@
 				"401DE5F2E19708E0"
 			]
 			hide: true
-			min_width: 400
+			min_width: 425
 			id: "5E591D65A5014852"
 			tasks: [
 				{
@@ -1582,13 +1577,13 @@
 				}
 			]
 			rewards: [{
-				id: "79B2F88657227DB2"
-				type: "xp"
-				xp: 100
+				id: "2FB3304315BB5F48"
+				type: "custom"
+				title: "I think about giving here one of the scavenging bags. What do you think?"
 			}]
 		}
 		{
-			x: 1.0d
+			x: 7.5d
 			y: 5.0d
 			description: [
 				"Progression visibility:"
@@ -1608,6 +1603,59 @@
 				title: "Note 2"
 				icon: "computercraft:printed_book"
 			}]
+		}
+		{
+			title: "How to use your Computer"
+			icon: "computercraft:computer_normal"
+			x: 0.0d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "It is simpler than you think!"
+			description: [
+				"Your computer you just created, is actually really similiar to your real PC! It has a screen, main directory, programs, files and console."
+				""
+				"In ComputerCraft, directory doesn't exist, until something isn't saved in it. That means you can't have empty folders on your computer. However you can have empty files. To see what programs you have on your computer, run \"programs' command. It will print a list of all programs avaiable! Of course you can make your own programs, and thats what, technically, we are gonna do later on."
+				""
+				"To use any program, you just write its name to the console. Here is few basic programs you need to know to use your computer and learn more:"
+				"> cd *directory* -- Changes what folder you are in. Your main directory is root."
+				"> mv *file* *file or directory* -- Used to rename and move files on the disk."
+				"> copy *file or directory* *directory* -- Used to copy file/files to other directory"
+				"> delete *file or directory* -- Deletes file or directory"
+				"> edit -- Runs edit program. This is code editor we will use to code!"
+				"> help *program* -- Most useful program on your computer. Gives more detailed information about specified program."
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			size: 1.5d
+			min_width: 450
+			id: "1FF283A30B6E415C"
+			tasks: [
+				{
+					id: "2F2D30981A0D12B6"
+					type: "checkmark"
+					title: "Got it!"
+				}
+				{
+					id: "2F63D341529F3534"
+					type: "item"
+					title: "Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
 		}
 	]
 }
