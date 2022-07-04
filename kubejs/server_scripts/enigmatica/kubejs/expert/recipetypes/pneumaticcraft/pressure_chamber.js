@@ -535,6 +535,33 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:diy_pressure_chamber', count: 1 }],
             id: `${id_prefix}diy_pressure_chamber`
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:drone', count: 1 },
+                { item: 'pneumaticcraft:charging_station', count: 1 },
+                { item: 'pneumaticcraft:programmer', count: 1 },
+                { item: 'pneumaticcraft:programming_puzzle', count: 64 },
+                { item: 'pneumaticcraft:programming_puzzle', count: 64 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_drone_kit', count: 1 }],
+            id: `${id_prefix}diy_drone_kit`
+        },
+        {
+            inputs: [
+                { item: 'modularrouters:item_router', count: 16 },
+                { item: 'modularrouters:distributor_module', count: 4 },
+                { item: 'modularrouters:sender_module_2', count: 4 },
+                { item: 'modularrouters:puller_module_2', count: 4 },
+                { item: 'modularrouters:vacuum_module', count: 1 },
+                { item: 'modularrouters:player_module', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:assorted_router_kit', count: 1 }],
+            id: `${id_prefix}assorted_router_kit`
         }
     ];
 
