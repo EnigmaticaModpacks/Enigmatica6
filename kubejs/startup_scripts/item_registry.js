@@ -181,6 +181,7 @@ onEvent('item.registry', (event) => {
         { name: 'diy_pressure_chamber', texture: 'packing_crate_lime' },
         { name: 'diy_drone_kit', texture: 'packing_crate_red' },
         { name: 'assorted_router_kit', texture: 'advanced_packing_crate_purple' },
+        { name: 'altar_of_birthing_kit', texture: 'packing_crate_blue' },
 
         { name: 'engineers_school_project', texture: 'packing_crate_gray' },
         { name: 'partial_engineers_school_project', texture: 'packing_crate_gray' },
@@ -194,6 +195,10 @@ onEvent('item.registry', (event) => {
         { name: 'partial_engineering_student_meals', texture: 'packing_crate_blue' },
         { name: 'building_materials', texture: 'packing_crate_orange' },
         { name: 'partial_building_materials', texture: 'packing_crate_orange' },
+        { name: 'big_box_o_boom', texture: 'packing_crate_gray' },
+        { name: 'partial_big_box_o_boom', texture: 'packing_crate_gray' },
+        { name: 'mimirs_memory_box', texture: 'packing_crate_lime' },
+        { name: 'partial_mimirs_memory_box', texture: 'packing_crate_lime' },
 
         { name: 'engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
         { name: 'partial_engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },

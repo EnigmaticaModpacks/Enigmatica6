@@ -562,6 +562,19 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:assorted_router_kit', count: 1 }],
             id: `${id_prefix}assorted_router_kit`
+        },
+        {
+            inputs: [
+                { item: 'naturesaura:animal_spawner', count: 1 },
+                { item: 'naturesaura:ancient_planks', count: 4 },
+                { item: 'naturesaura:infused_brick', count: 16 },
+                { item: 'minecraft:hay_block', count: 16 },
+                { item: 'naturesaura:birth_spirit', count: 64 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:altar_of_birthing_kit', count: 1 }],
+            id: `${id_prefix}altar_of_birthing_kit`
         }
     ];
 
