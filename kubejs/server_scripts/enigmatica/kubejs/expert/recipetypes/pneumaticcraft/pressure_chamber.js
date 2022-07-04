@@ -575,6 +575,19 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:altar_of_birthing_kit', count: 1 }],
             id: `${id_prefix}altar_of_birthing_kit`
+        },
+        {
+            inputs: [
+                { item: 'mekanism:resistive_heater', count: 1 },
+                { item: 'pneumaticcraft:heat_pipe', count: 1 },
+                { item: 'minecraft:blast_furnace', count: 1 },
+                { item: 'create:flywheel', count: 1 },
+                { item: 'create:furnace_engine', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_furnace_engine_kit', count: 1 }],
+            id: `${id_prefix}diy_furnace_engine_kit`
         }
     ];
 

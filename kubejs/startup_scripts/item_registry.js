@@ -182,6 +182,7 @@ onEvent('item.registry', (event) => {
         { name: 'diy_drone_kit', texture: 'packing_crate_red' },
         { name: 'assorted_router_kit', texture: 'advanced_packing_crate_purple' },
         { name: 'altar_of_birthing_kit', texture: 'packing_crate_blue' },
+        { name: 'diy_furnace_engine_kit', texture: 'packing_crate_blue' },
 
         { name: 'engineers_school_project', texture: 'packing_crate_gray' },
         { name: 'partial_engineers_school_project', texture: 'packing_crate_gray' },

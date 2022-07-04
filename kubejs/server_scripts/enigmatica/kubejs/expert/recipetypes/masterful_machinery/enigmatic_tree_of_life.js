@@ -115,12 +115,6 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_mastery_shard', count: 1 } }
             ],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'create:flywheel', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'create:furnace_engine', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'minecraft:blast_furnace', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:heat_pipe', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:vortex_tube', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:heat_sink', count: 1 } },
                 {
                     type: 'masterfulmachinery:items',
                     data: { item: 'pneumaticcraft:advanced_pressure_tube', count: 64 }
@@ -138,6 +132,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pumpjack', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_distillation_tower', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pressure_chamber', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_furnace_engine_kit', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
