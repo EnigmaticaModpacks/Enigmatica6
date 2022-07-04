@@ -329,12 +329,12 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'pedestals:pedestal/stone333', count: 4 },
-                { item: 'pedestals:coin/quarry', count: 4 },
-                { item: 'pedestals:bookspeed', count: 8 },
-                { item: 'pedestals:bookrange', count: 8 },
-                { item: 'pedestals:bookarea', count: 8 },
-                { item: 'pedestals:bookcapacity', count: 8 },
+                { item: 'pedestals:pedestal/stone333', count: 1 },
+                { item: 'pedestals:coin/quarry', count: 1 },
+                { item: 'pedestals:bookspeed', count: 1 },
+                { item: 'pedestals:bookrange', count: 1 },
+                { item: 'pedestals:bookarea', count: 1 },
+                { item: 'pedestals:bookcapacity', count: 1 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
             pressure: 4.5,
