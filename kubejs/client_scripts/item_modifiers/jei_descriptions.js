@@ -551,8 +551,50 @@ onEvent('jei.information', (event) => {
                 `● Enderslime`,
                 `● Skyslime`
             ]
+        },
+        {
+            items: ['farmersdelight:honey_glazed_ham'],
+            text: [`Obtained by right-clicking a placed Honey Glazed Ham with a Bowl.`]
+        },
+        {
+            items: ['farmersdelight:stuffed_pumpkin'],
+            text: [`Obtained by right-clicking a placed Stuffed Pumpkin with a Bowl.`]
+        },
+        {
+            items: ['farmersdelight:roast_chicken'],
+            text: [`Obtained by right-clicking a placed Roast Chicken with a Bowl.`]
+        },
+        {
+            items: ['simplefarming:brewing_barrel'],
+            text: [`Used for brewing various alcoholic beverages.`, ` `, `● Beer`, `● Cauim`, `● Cider`, `● Mead`]
+        },
+        {
+            items: ['simplefarming:brewing_barrel'],
+            text: [`● Sake`, `● Tiswin`, `● Vodka`, `● Whiskey`, `● Wine`]
         }
     ];
+
+    const simplefarming_beverages = [
+        { type: 'beer', ingredient: 'Barley', effect: 'Strength' },
+        { type: 'cauim', ingredient: 'Cassava', effect: 'Jump Boost' },
+        { type: 'cider', ingredient: 'Apples', effect: 'Luck' },
+        { type: 'mead', ingredient: 'Honeycomb', effect: 'Haste' },
+        { type: 'sake', ingredient: 'Rice', effect: 'Speed' },
+        { type: 'tiswin', ingredient: 'Cactus Fruit', effect: 'a Health Boost' },
+        { type: 'vodka', ingredient: 'Potatoes', effect: 'Resistance' },
+        { type: 'whiskey', ingredient: 'Wheat', effect: 'Absorption' },
+        { type: 'wine', ingredient: 'Grapes', effect: 'Regeneration' }
+    ];
+
+    simplefarming_beverages.forEach((beverage) => {
+        recipes.push({
+            items: [`simplefarming:${beverage.type}`],
+            text: [
+                `Brewed by right-clicking ${beverage.ingredient} into a Brewing Barrel.`,
+                `Grants the imbiber with ${beverage.effect}.`
+            ]
+        });
+    });
 
     recipes.forEach((recipe) => {
         recipe.items.forEach((item) => {
@@ -597,6 +639,7 @@ onEvent('jei.information', (event) => {
         'half_two',
         'half_four'
     ];
+
     framedDrawers.forEach((drawer) => {
         event.add('framedcompactdrawers:framed_' + drawer, [
             'Must be painted with any block to be used. To paint, put in any crafting grid with one block directly above and to its left diagonally.',

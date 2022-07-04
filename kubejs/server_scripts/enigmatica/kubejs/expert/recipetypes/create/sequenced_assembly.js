@@ -521,6 +521,45 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}mimirs_memory_box`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:box_of_thankful_dinners'],
+            transitionalItem: 'kubejs:partial_box_of_thankful_dinners',
+            loops: 60,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_box_of_thankful_dinners', 'farmersdelight:roast_chicken'],
+                    output: 'kubejs:partial_box_of_thankful_dinners'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_box_of_thankful_dinners', 'farmersdelight:stuffed_pumpkin'],
+                    output: 'kubejs:partial_box_of_thankful_dinners'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_box_of_thankful_dinners', 'simpledelights:summer_salad'],
+                    output: 'kubejs:partial_box_of_thankful_dinners'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_box_of_thankful_dinners', 'simpledelights:sweet_potato_casserole'],
+                    output: 'kubejs:partial_box_of_thankful_dinners'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_box_of_thankful_dinners', 'minecraft:pumpkin_pie'],
+                    output: 'kubejs:partial_box_of_thankful_dinners'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_box_of_thankful_dinners', 'farmersdelight:apple_cider'],
+                    output: 'kubejs:partial_box_of_thankful_dinners'
+                }
+            ],
+            id: `${id_prefix}box_of_thankful_dinners`
         }
     ];
 

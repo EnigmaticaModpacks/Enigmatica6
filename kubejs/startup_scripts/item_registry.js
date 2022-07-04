@@ -199,6 +199,8 @@ onEvent('item.registry', (event) => {
         { name: 'partial_big_box_o_boom', texture: 'packing_crate_gray' },
         { name: 'mimirs_memory_box', texture: 'packing_crate_lime' },
         { name: 'partial_mimirs_memory_box', texture: 'packing_crate_lime' },
+        { name: 'box_of_thankful_dinners', texture: 'advanced_packing_crate_purple' },
+        { name: 'partial_box_of_thankful_dinners', texture: 'advanced_packing_crate_purple' },
 
         { name: 'engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
         { name: 'partial_engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },

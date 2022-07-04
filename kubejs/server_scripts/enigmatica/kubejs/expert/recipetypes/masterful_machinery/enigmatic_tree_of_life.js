@@ -264,6 +264,7 @@ onEvent('recipes', (event) => {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:culinary_mastery_shard', count: 1 } }],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_student_meals', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:box_of_thankful_dinners', count: 1 } },
                 { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
             ],
             ticks: 60,
