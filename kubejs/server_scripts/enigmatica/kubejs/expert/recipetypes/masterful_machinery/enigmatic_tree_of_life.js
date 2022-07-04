@@ -249,7 +249,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'immersiveengineering:survey_tools', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:mining_gadget_kit', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:flux_bore_kit', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pedestal_quarry', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pedestal_quarry', count: 2 } },
                 { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
             ],
             ticks: 60,
