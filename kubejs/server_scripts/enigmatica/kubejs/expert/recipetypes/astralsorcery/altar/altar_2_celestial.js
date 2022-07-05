@@ -110,7 +110,7 @@ onEvent('recipes', (event) => {
                     hasToBeAttuned: true,
                     hasToBeCelestial: false,
                     canBeAttuned: true,
-                    canBeCelestialCrystal: false
+                    canBeCelestialCrystal: true
                 },
                 B: { item: 'botania:life_essence' },
                 C: { tag: 'botania:runes/mana' },
