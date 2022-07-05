@@ -25,15 +25,13 @@ onEvent('recipes', (event) => {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:astronomy_mastery_shard', count: 1 } }],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:observatory', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:altar_radiance', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:marble_chiseled', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:marble_raw', count: 12 } },
-                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:marble_pillar', count: 8 } },
-                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:marble_bricks', count: 64 } },
-                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:marble_runed', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:black_marble_arch', count: 49 } },
-                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:marble_bricks', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { tag: 'astralsorcery:crystals/attuned', count: 10 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'astralsorcery:crystals/attuned', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:mantle', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:marble_raw', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'thermal:device_rock_gen', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'create:mechanical_saw', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'astralsorcery:stars/irradiant', count: 1 } },
+
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
