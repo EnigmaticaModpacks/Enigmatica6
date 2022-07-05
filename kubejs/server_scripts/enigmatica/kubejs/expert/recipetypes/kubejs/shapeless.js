@@ -63,6 +63,72 @@ onEvent('recipes', (event) => {
                 'mekanism:cardboard_box'
             ],
             id: `${id_prefix}imaharas_indelible_electrodes`
+        },
+        {
+            output: 'kubejs:bright_constellation_box',
+            inputs: [
+                'mekanism:cardboard_box',
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:aevitas"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:armara"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:discidia"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:evorsio"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:vicio"}}'
+                ).weakNBT()
+            ],
+            id: `${id_prefix}bright_constellation_box`
+        },
+        {
+            output: 'kubejs:dim_constellation_box',
+            inputs: [
+                'mekanism:cardboard_box',
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"naturesstarlight:naritis"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:octans"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:horologium"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:lucerna"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:mineralis"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:bootes"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:fornax"}}'
+                ).weakNBT(),
+                Item.of(
+                    'astralsorcery:attuned_celestial_crystal',
+                    '{astralsorcery:{constellationName:"astralsorcery:pelotrio"}}'
+                ).weakNBT()
+            ],
+            id: `${id_prefix}dim_constellation_box`
         }
     ];
 

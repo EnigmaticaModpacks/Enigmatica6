@@ -556,6 +556,206 @@ onEvent('recipes', (event) => {
             ],
             ticks: 400,
             id: `${id_prefix}chalice`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star_vicio', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:defaultcrystal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentair', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star_vicio`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star_evorsio', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:destructivecrystal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentfastminer', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star_evorsio`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star_discidia', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:vengefulcrystal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentlava', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star_discidia`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star_armara', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:steadfastcrystal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentbinding', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star_armara`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star_aevitas', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:corrosivecrystal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentgrowth', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star_aevitas`
         }
     ];
 
