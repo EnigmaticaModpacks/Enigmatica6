@@ -591,7 +591,7 @@ onEvent('jei.information', (event) => {
             items: [`simplefarming:${beverage.type}`],
             text: [
                 `Brewed by right-clicking ${beverage.ingredient} into a Brewing Barrel.`,
-                `Grants the imbiber with ${beverage.effect}.`
+                `Grants the imbiber ${beverage.effect}.`
             ]
         });
     });
