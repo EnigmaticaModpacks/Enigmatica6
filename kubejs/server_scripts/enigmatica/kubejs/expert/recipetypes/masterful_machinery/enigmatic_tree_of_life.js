@@ -112,7 +112,7 @@ onEvent('recipes', (event) => {
         },
         {
             outputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_mastery_shard', count: 1 } }
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_mastery_shard', count: 2 } }
             ],
             inputs: [
                 {
@@ -129,6 +129,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'create:encased_chain_drive', count: 32 } },
 
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_arc_furnace', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:imaharas_indelible_electrodes', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pumpjack', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_distillation_tower', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pressure_chamber', count: 1 } },

@@ -53,6 +53,16 @@ onEvent('recipes', (event) => {
             output: 'rftoolscontrol:cpu_core_2000',
             inputs: ['kubejs:cpu_core_as_81221'],
             id: `${id_prefix}cpu_tier_three_reversion`
+        },
+        {
+            output: 'kubejs:imaharas_indelible_electrodes',
+            inputs: [
+                Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0,Unbreakable:1}'),
+                Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0,Unbreakable:1}'),
+                Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0,Unbreakable:1}'),
+                'mekanism:cardboard_box'
+            ],
+            id: `${id_prefix}imaharas_indelible_electrodes`
         }
     ];
 
