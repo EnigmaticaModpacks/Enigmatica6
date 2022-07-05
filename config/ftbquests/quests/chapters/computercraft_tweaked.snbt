@@ -1487,6 +1487,35 @@
 			x: 8.0d
 			y: -2.0d
 			subtitle: "Lua Basics #2 - Creating functions"
+			description: [
+				"Creating functions is a little different and more complicated than creating a normal variable. One of main differences is a function you use to create it. To create your own function variable, you use \"function\" command!"
+				""
+				"> function my_first_function(argument_1,argument_2)"
+				""
+				"● First argument is a name of your function. Important thing is to add brackets, as you would do while calling a normal one. They have the same purpose here, between them, you put your function's arguments!"
+				""
+				"You can add as many arguments as you want, and to separate them you use commas. Arguments work like normal variables. However if you call a function and not give it argument it needs, Lua will default that argument to \"nil\" variable. "
+				""
+				"● Variables that you just created for your function's arguments are temporary, they can not be used in any other place than that one function! Otherwise you use them like normal variables."
+				""
+				"● Everything you write after brackets is a code that will run when you call your function. There isn't anything more special here except two commands:"
+				""
+				"> return argument_1 + argument_2"
+				"> end"
+				""
+				"● It was mentioned in few quests that functions can return some variables, and command \"return\" is used to do exactly that. It's arguments are returned to other variable, that is set to have a value of a function."
+				""
+				"> local x = my_first_function(1,2)"
+				"> 3 -> x -- Return added both our arguments (1 and 2) and returned it to variable x."
+				""
+				"● \"end\" command is to set the end of your function. It is used after the last line of your function's code. To show this, here is our function we just created:"
+				""
+				"> function my_first_function(argument_1,argument_2)"
+				">   return argument_1 + argument_2"
+				"> end -- End of function."
+				""
+				"Important note is that you can use other functions in your function, even if there are created by you! However those need to be written before function that uses them, as Lua reads code from 1st line to last one, so if it sees a function that is created later, it will not know what is it."
+			]
 			dependencies: [
 				"29C780353E7FB720"
 				"401DE5F2E19708E0"
@@ -1499,6 +1528,7 @@
 				"401DE5F2E19708E0"
 			]
 			hide: true
+			min_width: 450
 			id: "5056B0737A8A8D64"
 			tasks: [{
 				id: "0C2F459BCB9222EC"
