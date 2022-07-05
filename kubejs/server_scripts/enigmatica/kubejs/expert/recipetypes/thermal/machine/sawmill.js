@@ -7,8 +7,8 @@ onEvent('recipes', (event) => {
         {
             input: 'occultism:dimensional_matrix',
             outputs: [
-                Item.of('kubejs:dimensional_storage_crystal', 6),
-                Item.of('kubejs:dimensional_storage_crystal').chance(0.25)
+                Item.of('12x kubejs:dimensional_storage_crystal'),
+                Item.of('3x kubejs:dimensional_storage_crystal').chance(0.25)
             ],
             id: `${id_prefix}dimensional_storage_crystal`
         },
