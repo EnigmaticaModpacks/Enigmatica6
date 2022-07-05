@@ -718,8 +718,8 @@
 		{
 			title: "Challenges"
 			icon: "computercraft:computer_command"
-			x: 9.0d
-			y: 3.75d
+			x: 2.0d
+			y: 4.75d
 			shape: "gear"
 			subtitle: "Try yourself!"
 			description: [
@@ -745,8 +745,8 @@
 		{
 			title: "Your first program!"
 			icon: "computercraft:printed_page"
-			x: 9.0d
-			y: 5.0d
+			x: 2.0d
+			y: 6.0d
 			subtitle: "Challenge #1"
 			description: ["Make a program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
 			dependencies: ["777349A29491AE4C"]
@@ -810,8 +810,8 @@
 		{
 			title: "Item Transfer!"
 			icon: "mekanism:basic_mechanical_pipe"
-			x: 8.5d
-			y: 6.0d
+			x: 1.5d
+			y: 7.0d
 			subtitle: "Challenge #2"
 			description: ["Make a program that will transfer items from inventory on the left to inventory on the right."]
 			dependencies: ["7F980AC22498FE44"]
@@ -871,8 +871,8 @@
 		{
 			title: "Using Peripherals to interract with RS"
 			icon: "refinedstorage:disk_drive"
-			x: 6.5d
-			y: 6.0d
+			x: -0.5d
+			y: 7.0d
 			subtitle: "Challenge #3"
 			description: ["Use Advanced Peripherals to export some items from RS into a chest."]
 			dependencies: ["06A8B69F9385388B"]
@@ -1026,8 +1026,8 @@
 		{
 			title: "Modem action!"
 			icon: "computercraft:wired_modem_full"
-			x: 7.5d
-			y: 6.0d
+			x: 0.5d
+			y: 7.0d
 			subtitle: "Challenge #4"
 			description: ["Use a wired Modem to interract with barrel, and print on the monitor list of items in it."]
 			dependencies: ["0F004D494E6114E8"]
@@ -1112,8 +1112,8 @@
 		{
 			title: "Wireless communications!"
 			icon: "computercraft:wireless_modem_normal"
-			x: 8.0d
-			y: 7.0d
+			x: 1.0d
+			y: 8.0d
 			subtitle: "Challenge #4.2"
 			description: [
 				""
@@ -1382,8 +1382,8 @@
 		}
 		{
 			icon: "minecraft:writable_book"
-			x: 6.5d
-			y: 5.0d
+			x: -0.5d
+			y: 6.0d
 			description: [
 				"Challenges are gonna change a lot. Those that are here right now, are gonna be in new section: Tasks! It will give a tutorial how to do a program so people can see how to write code"
 				""
@@ -1613,8 +1613,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 5.0d
+			x: 0.5d
+			y: 6.0d
 			description: [
 				"Progression visibility:"
 				"Introduction to Lua / Advanced PC \\& Pocket PC / Wikis - Stage 0"
@@ -1686,6 +1686,31 @@
 					}
 				}
 			]
+		}
+		{
+			title: "If this is equal 0, then true!"
+			icon: "computercraft:printed_pages"
+			x: 9.0d
+			y: -0.5d
+			subtitle: "Lua Basics #3 - If and logic operators"
+			description: [
+				"\"if\" is another one of most important things in coding. Without it we couldn't be able to create any decisions! \"if\" is used to check if variable is equal, bigger, smaller etc than other variable / value."
+				""
+				"Usage of \"if\" is actually really similiar to function, but you aren't doing a variable this time! To start creating your decision, you do something like this:"
+				""
+				"> if (variable_1 == variable_2) then"
+				""
+				"You could realise that I didn't use single \"=\" sign, and that's not a mistake! You can not use single equal sign in this case, as it is used to assing value to variable, and not to check value! Here is the list of logic operators you can use in Lua:"
+			]
+			dependencies: ["5056B0737A8A8D64"]
+			hide: true
+			min_width: 450
+			id: "6DF4A8FB92121573"
+			tasks: [{
+				id: "76DA4E58186F04A0"
+				type: "checkmark"
+				title: "Got it!"
+			}]
 		}
 	]
 }
