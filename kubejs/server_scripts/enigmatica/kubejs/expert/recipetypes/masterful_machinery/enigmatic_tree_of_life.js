@@ -203,17 +203,19 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:dimensional_mastery_shard', count: 1 } }
             ],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'extrastorage:disk_4096k', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'extrastorage:block_4096k', count: 2 } },
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'extrastorage:disk_262144k_fluid', count: 4 }
+                    data: { item: 'extrastorage:block_262144k_fluid', count: 2 }
                 },
-                { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:disk_drive', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:quantum_entangloporter', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'rsinfinitybooster:dimension_card', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_receiver', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_transmitter', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_card', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:teleporter', count: 5 } },
+                { type: 'masterfulmachinery:items', data: { item: 'mekanism:portable_teleporter', count: 1 } },
+
                 { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
             ],
             ticks: 60,
@@ -227,8 +229,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_mekasuit_pants', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_mekasuit_boots', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_meka_tool', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:teleporter', count: 5 } },
-                { type: 'masterfulmachinery:items', data: { item: 'mekanism:portable_teleporter', count: 1 } },
+
                 { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
             ],
             ticks: 60,
