@@ -813,6 +813,102 @@ onEvent('recipes', (event) => {
             ],
             ticks: 400,
             id: `${id_prefix}mantle`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'pedestals:coin/xpenchanter', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'pedestals:coin/default', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'botania:gaia_pylon', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'ars_nouveau:glyph_pickup', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/mana', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/vanaheim', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'ars_nouveau:greater_experience_gem', count: 12 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:inlays/arcane_gold', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'eidolon:shadow_gem', count: 1 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}coin_xpenchanter`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'pedestals:coin/xpanvil', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'pedestals:coin/default', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mythicbotany:alfsteel_pylon', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'ars_nouveau:glyph_pickup', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/mana', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/vanaheim', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'ars_nouveau:greater_experience_gem', count: 12 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/netherite', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'betterendforge:aeternium_hammer', count: 1 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}coin_xpanvil`
         }
     ];
 
