@@ -756,6 +756,63 @@ onEvent('recipes', (event) => {
             ],
             ticks: 400,
             id: `${id_prefix}shifting_star_aevitas`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:mantle', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'botania:balance_cloak', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:celestial_crystal', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'magicfeather:magicfeather', count: 1 }
+                },
+
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/mana', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/pride', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/envy', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:storage_blocks/starmetal', count: 1 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}mantle`
         }
     ];
 
