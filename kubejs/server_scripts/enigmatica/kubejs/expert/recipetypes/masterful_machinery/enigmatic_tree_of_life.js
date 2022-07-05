@@ -6,16 +6,17 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/';
     const recipes = [
         {
-            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:botanical_mastery_shard', count: 1 } }],
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:botanical_mastery_shard', count: 2 } }],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'mythicbotany:mana_collector', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'botania:spark', count: 12 } },
-                { type: 'masterfulmachinery:items', data: { item: 'botania:mana_ring_greater', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:spark', count: 16 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:spark_upgrade_recessive', count: 8 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:mana_ring_greater', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'botania:fabulous_pool', count: 8 } },
-                { type: 'masterfulmachinery:items', data: { item: 'botania:kekimurus', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'botania:shulk_me_not', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'botania:rosa_arcana', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'botania:dandelifeon', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:kekimurus', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:shulk_me_not', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:rosa_arcana', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'botania:dandelifeon', count: 1 } },
                 { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
             ],
             ticks: 60,
