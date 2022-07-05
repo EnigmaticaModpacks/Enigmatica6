@@ -909,6 +909,58 @@ onEvent('recipes', (event) => {
             ],
             ticks: 400,
             id: `${id_prefix}coin_xpanvil`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'mekanism:solar_neutron_activator', count: 2 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'kubejs:observatory_lens', count: 5 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'powah:solar_panel_niotic', count: 5 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:hdpe_sheet', count: 5 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'industrialforegoing:machine_frame/advanced', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:circuits/elite', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:plates/enderium', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/iesnium', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/end_stone', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}solar_neutron_activator`
         }
     ];
 
