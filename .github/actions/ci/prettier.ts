@@ -8,20 +8,15 @@ const directories: string[] = [
   'kubejs/startup_scripts',
 ];
 
-console.log({directories});
-
+// run each of the directories asyncronously
 const prettiers: Promise<Deno.ProcessStatus>[] = [];
-
 directories.forEach(directory => {
-  const process = Deno.run({
+  prettiers.push(Deno.run({
     cmd: ['npx', '--yes', 'prettier', directory, '--loglevel=debug', '--write'],
-  });
-
-  prettiers.push(process.status());
+  }).status());
 });
 
-//
-
+// once all prettiers are done, view diff
 Promise.all(prettiers).then(async () => {
 
   const process = Deno.run({
@@ -30,8 +25,6 @@ Promise.all(prettiers).then(async () => {
   });
 
   const status_lines = new TextDecoder().decode(await process.output()).split('\n');
-  console.log(status_lines);
-
   const authors: {[key: string]: boolean} = {};
 
   for (const status_line of status_lines) {
@@ -50,7 +43,6 @@ Promise.all(prettiers).then(async () => {
 
       // get the last author of this file who's name is not github-actions[bot]
       const author: string = new TextDecoder().decode(await git_log.output()).split('\n').find(author => {
-        console.log(pathname, author);
         return !author.startsWith('"github-actions[bot]');
       })!;
 
@@ -62,7 +54,6 @@ Promise.all(prettiers).then(async () => {
     }
   }
 
-  console.log({authors});
   let co_authors = '';
   for (const author of Object.keys(authors)) {
     co_authors += `Co-authored-by: ${author}\n`;
