@@ -329,12 +329,12 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'pedestals:pedestal/stone333', count: 4 },
-                { item: 'pedestals:coin/quarry', count: 4 },
-                { item: 'pedestals:bookspeed', count: 8 },
-                { item: 'pedestals:bookrange', count: 8 },
-                { item: 'pedestals:bookarea', count: 8 },
-                { item: 'pedestals:bookcapacity', count: 8 },
+                { item: 'pedestals:pedestal/stone333', count: 1 },
+                { item: 'pedestals:coin/quarry', count: 1 },
+                { item: 'pedestals:bookspeed', count: 1 },
+                { item: 'pedestals:bookrange', count: 1 },
+                { item: 'pedestals:bookarea', count: 1 },
+                { item: 'pedestals:bookcapacity', count: 1 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
             pressure: 4.5,
@@ -535,6 +535,59 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:diy_pressure_chamber', count: 1 }],
             id: `${id_prefix}diy_pressure_chamber`
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:drone', count: 1 },
+                { item: 'pneumaticcraft:charging_station', count: 1 },
+                { item: 'pneumaticcraft:programmer', count: 1 },
+                { item: 'pneumaticcraft:programming_puzzle', count: 64 },
+                { item: 'pneumaticcraft:programming_puzzle', count: 64 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_drone_kit', count: 1 }],
+            id: `${id_prefix}diy_drone_kit`
+        },
+        {
+            inputs: [
+                { item: 'modularrouters:item_router', count: 16 },
+                { item: 'modularrouters:distributor_module', count: 4 },
+                { item: 'modularrouters:sender_module_2', count: 4 },
+                { item: 'modularrouters:puller_module_2', count: 4 },
+                { item: 'modularrouters:vacuum_module', count: 1 },
+                { item: 'modularrouters:player_module', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:assorted_router_kit', count: 1 }],
+            id: `${id_prefix}assorted_router_kit`
+        },
+        {
+            inputs: [
+                { item: 'naturesaura:animal_spawner', count: 1 },
+                { item: 'naturesaura:ancient_planks', count: 4 },
+                { item: 'naturesaura:infused_brick', count: 16 },
+                { item: 'minecraft:hay_block', count: 16 },
+                { item: 'naturesaura:birth_spirit', count: 64 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:altar_of_birthing_kit', count: 1 }],
+            id: `${id_prefix}altar_of_birthing_kit`
+        },
+        {
+            inputs: [
+                { item: 'mekanism:resistive_heater', count: 1 },
+                { item: 'pneumaticcraft:heat_pipe', count: 1 },
+                { item: 'minecraft:blast_furnace', count: 1 },
+                { item: 'create:flywheel', count: 1 },
+                { item: 'create:furnace_engine', count: 1 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_furnace_engine_kit', count: 1 }],
+            id: `${id_prefix}diy_furnace_engine_kit`
         }
     ];
 

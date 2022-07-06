@@ -50,8 +50,8 @@ onEvent('recipes', (event) => {
             input: 'kubejs:firmament',
             output: { item: 'architects_palette:sunstone' },
             aura_type: 'naturesaura:overworld',
-            aura: 12000,
-            time: 40,
+            aura: 5000,
+            time: 20,
             id: `${id_prefix}sunstone`
         },
         {
