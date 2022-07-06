@@ -22,7 +22,7 @@
 				""
 				"Think about anything, this mod can do it!"
 				""
-				"Those quests are meant to showcase the mod, and teach you, fellow Player, Basics of Basics with Lua and how to start learning more!"
+				"These quests are meant to showcase the mod, and teach you, fellow Player, Basics of Basics with Lua and how to start learning more!"
 				""
 				"~~Kanzio"
 			]
@@ -76,7 +76,7 @@
 			y: 0.0d
 			subtitle: "There is something more than Computers?!"
 			description: [
-				"ComputerCraft: Tweaked has a lot peripherals that are really useful for doing anything!"
+				"ComputerCraft: Tweaked has a lot of peripherals that are really useful for doing anything!"
 				""
 				"This section will show you all peripherals available and how to use their APIs."
 			]
@@ -486,7 +486,7 @@
 			x: -6.5d
 			y: 4.5d
 			subtitle: "Wait there is even more?"
-			description: ["ComputerCraft: Tweaked adds on its own a few unique peripherals. Some of them aren't as useful as others, but all of them are worth attention."]
+			description: ["ComputerCraft: Tweaked adds a few unique peripherals on its own. Some of them aren't as useful as others, but all of them are worth to look at."]
 			dependencies: ["378BEFB62C4F98BF"]
 			id: "1580D9FD06937ABB"
 			tasks: [{
@@ -696,7 +696,7 @@
 			shape: "pentagon"
 			subtitle: "Official Wikis for everything."
 			description: [
-				"If you want to learn even more, or need something that isn't here, check out those links."
+				"If you want to learn even more, or need something that isn't here, check out these links."
 				""
 				"These are official docs to the Lua Programming Language, as well as to ComputerCraft: Tweaked Wiki and Mekanism integration."
 				"TODO: clickable links or message on chat"
@@ -1199,7 +1199,7 @@
 			description: [
 				"Boolean is the easiest type in every programming language. It can have 2 states, \"True\" and \"False\"."
 				""
-				"Its really useful in situations where you need to check if something is True, or False. Example:"
+				"A Boolean is really useful in situations where you need to check if something is True, or False. Example:"
 				"● You need to know if there is a chest on the left of the PC. If there is a chest, it's \"True\", if there is not, it's \"False\""
 				""
 				"A lot of functions are returning a boolean variable after they ended they work, it is useful to check for that output to see if what you wanted to do was actually done."
@@ -1220,30 +1220,30 @@
 			y: -5.4d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
-				"You already heard of the word \"function\" a few times in this quest line, but did you know its also one of the variable types?"
-				"Function is a variable that doesn't store data, it stores other functions and variables in it, that you can use in other place with just the name of that function. Pretty convenient isn't it?"
+				"You already heard of the word \"function\" a few times in this quest line, but did you know it's also one of the variable types?"
+				"Function is a variable that doesn't store data, it stores other functions and variables in it, which you can then use in another place with just the name of that function. Pretty convenient isn't it?"
 				""
-				"As every variable, you can change its value later on to whatever you want. Yes that means you can edit some of Lua Functions and other APIs, but it will break stuff most of the time :sweat_smile:"
-				"API is set of functions you can use to interract with stuff that uses that API. For example to interract with monitor of the PC, you need to use API that has functions to do that. How to use APIs will be later."
+				"As every variable, you can change its value later on to whatever you want. Yes that means you can edit some of the Lua Functions and other APIs, but it will break stuff most of the time."
+				"APIs are sets of functions you can use to interract with stuff that uses a given API. For example to interact with the monitor of the PC, you need to use API that has functions to do that. How to use APIs will be explained later."
 				""
 				"Now lets see how to use functions."
-				"For you to call (In other words, use) function, you need to simply type its name with 2 brackets. Between those are function's arguments."
+				"For you to call (In other words, use) a function, you need to simply type its name with 2 brackets. Between those are the function's arguments."
 				""
 				"> print(string) -- Basic function to write text on the screen. Has one argument."
 				""
-				"In my case I called print(). Some of the functions doesn't require you to give them arguments, they can even don't have any of them, but there can be functions that require from you even 10 arguments. Crazy isn't it?!"
-				"In our case, print() requires as it's first and only argument some string (Read \"Type: String\" quest to know what string is)"
-				"So example usage of print() would look like this:"
+				"In my case I called print(). Some of the functions don't require you to give them arguments, they can even not have any of them, but there can also be functions that require even 10 arguments. Crazy isn't it?!"
+				"In my case, print() requires as its first and only argument some string (Read \"Type: String\" quest to know what a string is)"
+				"Example usage of print() looks like this:"
 				""
 				"> print(\"This is a test!\") -- Writes on the screen --> This is a test!"
 				""
-				"As you can use variables in place of function's arguments, you can use functions as argument as well! Most of the functions return something, if its a table with stuff they found, or just boolean if they were able to do what they need to. They can even return other function! To use function as the argument, you just write it as you would normally, but in the argument of other function."
+				"You already know that function arguments require variable, but did you know that you can use a function as an argument as well? Most of the functions return something, if its a table with stuff they found, or just a boolean if they were able to do what they need to. They can even return other functions. To use functions as the arguments, you just write it as you would normally, just in this case it would be in the argument of your function."
 				""
-				"> print(my_function(1)) -- It will print what my_function will return."
+				"> print(my_function(1)) -- This will print what my_function will return."
 				""
-				"There is also a way to pass the function, that is useful sometimes and should be used with functions that doesn't require any arguments. To pass a function, you simply write its name but without brackets! However its not that useful in our usage, and until you will not go deeper into Lua coding, you will probably never use it."
+				"There is also a way to pass the function, this is sometimes useful and should be used with functions that don't require any arguments. To pass a function, you simply write its name without brackets. However its not that useful in our use case, and until you will not go deeper into Lua coding, you will probably never use it."
 				""
-				"For more about Functions, and how to create them, check Lua Basics #2."
+				"For more information about functions and how to create them, check Lua Basics #2."
 			]
 			dependencies: ["29C780353E7FB720"]
 			min_width: 450
@@ -1262,30 +1262,30 @@
 			y: -4.8d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
-				"String is a type of variable that stores a sequence of characters. You can type here anything, binary code (Binary - Code using ones and zeros), your name, entire address or your homework :wink:"
+				"String is a type of variable that stores a sequence of characters. You can type here anything, binary code (Binary - Code using ones and zeros), your name, entire address or your homework if you so desire."
 				""
-				"● Strings need to be written between double quotes to be valid, otherwise program will think its the name of variable!"
+				"● Strings need to be written between double quotes to be valid, otherwise the program will think its the name of variable!"
 				""
 				"> local my_first_string = \"Hello Player\" -- Valid string"
-				"> local my_first_string = Hello Player -- Not valid, program will think those are two variables"
+				"> local my_first_string = Hello Player -- Not valid, Lua will think those are two variables"
 				""
 				"● Strings can not be modified, but you can do a copy of them with a modification you want to do."
 				"> local test_string = \"This is a test\""
 				"> local test_string_edited = string.gsub(test_string, \"test\", \"Test!\", 1)"
 				"> \"This is a Test!\" -> test_string_edited"
 				""
-				"● string.gsub is one of few ways you can edit your strings. First argument takes the string / variable you want to edit, second one what \"characters\" you want to change, and third one takes what you want to put in that place."
-				"There is fourth argument (Optional) that tells the program which occurance of those characters to change. If, for example, we would have 2 \"test\" in our string, with number you can set which one to edit! In our case it would edit the first one."
+				"● string.gsub is one of the few ways with which you can edit your strings. First argument takes the string / variable you want to edit, second one what \"characters\" you want to change, and the third one takes what you want to put in its place."
+				"There is a fourth argument (Optional) that tells the program which occurance of those characters to change. If, for example, we would have 2 \"test\" in our string, with number you can set which one to edit! In our case it would edit the first one."
 				""
-				"● There is also a way to add some text at the end of your string. This time you can \"edit\" the initial string by overwriting it, but its sometimes useful to have it as seperate variables."
+				"● There is also a way to add some text at the end of your string. This time you can \"edit\" the initial string by overwriting it, but it's sometimes useful to have it as seperate variables."
 				"To add some text at the end of your string, you use 2 dots between 2 strings you want to add together:"
 				"> local string_1 = \"Hello \""
 				"> local string_2 = \"there!\""
 				"> string_1 = string_1 .. string_2"
-				"(Note: string_2 can be replaced by non-string variable if it can be converted to string)"
+				"(Note: string_2 can be replaced by a non-string variable if it can be converted to a string)"
 				"> \"Hello there!\" -> string_1"
 				""
-				"There is also a few different ways to modify your strings, and to format them, however those aren't as useful, and can be found in Lua docs!"
+				"There is also a few different ways to modify your strings and to format them, however those aren't as useful and can be found in Lua docs."
 			]
 			dependencies: ["29C780353E7FB720"]
 			min_width: 400
@@ -1303,13 +1303,13 @@
 			y: -5.4d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
-				"Number is a type of variable to store numbers. Yes literally :sweat_smile:"
+				"Number is a type of variable to store numbers."
 				""
-				"Numbers should be written without any other characters to be valid and recognised as number:"
+				"Numbers should be written without any other characters to be valid and recognised as such:"
 				"> local my_first_number = 6"
 				"> 6 -> my_first_number"
 				""
-				"● There are few exceptions however, as you can do single and double precision numbers as well. For that you just use a dot:"
+				"● There are a few exceptions however, as you can do single and double precision numbers as well. For that you just use a dot:"
 				"> local some_number = 1.54"
 				"● You can also write numbers in scientific notation (example: 5e20), but personally I wouldn't recommend that unless you know what you are doing."
 				""
@@ -1319,11 +1319,11 @@
 				"* -> Multiplication"
 				"/ -> Division"
 				""
-				"Its really simple to use them, you just write between two numbers operator you want to use:"
+				"It's really simple to use them, you just write the operator you want to use between two numbers:"
 				"> local add = 6 + 10"
 				"> 16 -> add"
 				""
-				"Unfortunately Lua doesn't support anything else than those 4 basic operators, for anything else that you want, you will need to write the function yourself. For creating functions check out Function type in Lua Basics #1"
+				"Unfortunately Lua doesn't support anything else than those 4 basic operators. If you want to do anything else you will need to write the function yourself. For creating functions check out Function type in Lua Basics #1"
 			]
 			dependencies: ["29C780353E7FB720"]
 			min_width: 400
@@ -1342,25 +1342,25 @@
 			subtitle: "Lua Basics #1 - Variable tips \\& tricks"
 			description: [
 				"Variable naming:"
-				"For setting variable's name, its important to know few things:"
+				"For setting a variable's name, it's important to know a few things:"
 				""
 				"● Lua is \"capital sensitive\". It means that variables with name \"test\" and \"TEST\" are two different variables! "
 				""
-				"● Variable's name can't be longer than 64 characters"
+				"● Variable names can't be longer than 64 characters"
 				""
-				"● Variable's name can't start with a number and can't have any spaces:"
+				"● Variable names can't start with a number and can't have any spaces:"
 				"> local test_1 -- Variable named correctly"
 				"> local 1_test -- Variable named incorrectly, will not work"
 				"> local test 1 -- Variable named incorrectly, will not work"
 				""
-				"● You should name variables in a way that they represent theirs use:"
+				"● You should name variables in a way that they represent their use:"
 				"> local day = \"Monday\""
 				"> local x123 = \"Monday\""
-				"Both of those are used by me to store day of the week, but first one is named with its purpose in mind, other one is just random thing. They both will work, however if you are trying to do more advanced program, random names like x123 are gonna mess with you really quickly."
+				"Both of these are used by me to store a day of the week, but the first one is named with its purpose in mind, the other one is just a random thing. They both will work, however if you are trying to do more advanced programming, random names like x123 are gonna make a mess really quick."
 				""
 				"General tips \\& tricks:"
 				""
-				"● You can create few variables at the same time! You just simply type two or more names after \"local\" and seperate them with comma. You can even set in the same way unique value for every variable."
+				"● You can create multiple variables at the same time! You just simply type two or more names after \"local\" and seperate them with a comma. You can even set a unique value for each variable."
 				"> local x, y, z = 1, 2, 3"
 				"> 1 -> x    /   2 -> y   /   3 -> z"
 				""
@@ -1439,11 +1439,11 @@
 				""
 				"In Lua there is 8 variable types, however I will cover only 6 because 2 of them aren't that useful in ComputerCraft, and require much more knowledge."
 				""
-				"Lua, whenever you are trying to do something that is designed for different type of variable, will try to convert variable you use to the type it needs to be. Of course it will not success 100%, because sometimes its impossible to convert. In this case it will crash the program and give error about illegal function on that type of the variable."
+				"Lua, whenever you are trying to do something that is designed for a different type of variable, will try to convert the variable you use to the type it needs to be. Of course it will not success 100%, because sometimes its impossible to convert. In this case it will crash the program and give an error about a illegal function on that type of the variable."
 				""
-				"There are few ways to convert manually one type to another, but its not that useful in stuff we are gonna do, and can be found in Official Lua Docs."
+				"There are few ways to convert one type to another manually, but it's not that useful in stuff we are gonna do, and can be found in Official Lua Docs."
 				""
-				"Note: If you already know Integrated Dynamics' variable types, a lot of ComputerCraft ones are really similiar. On the last line of every type quest there is a note saying what type of Variable is that in ID :wink: -- need feedback about this, should I add this or its kinda pointless?"
+				"Note: If you already know Integrated Dynamics' variable types, a lot of ComputerCraft ones are really similiar. On the last line of every type quest there is a note saying what type of Variable that is in ID -- need feedback about this, should I add this or its kinda pointless?"
 				"TODO: Link to the site with convert Functions"
 			]
 			dependencies: ["29C780353E7FB720"]
@@ -1462,7 +1462,7 @@
 			y: -4.0d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
-				"Nil is a variable type and variable value. It means literally \"nothing\" in code. Variable with type nil, asked for their type and what they're storing, will return nil."
+				"Nil is a variable type and variable value. It means literally \"nothing\" in code. Variables with type nil, asked for their type and what they're storing, will return nil."
 				""
 				"● Nil is useful when you need to clear some variable after use."
 				""
@@ -1470,7 +1470,7 @@
 				""
 				"● This will set type and value of x as nil, setting it like it was just created in that line."
 				""
-				"Also some functions, when they don't find anything you asked for, they will return nil."
+				"Some functions will return nil when they don't find anything you asked for."
 			]
 			dependencies: ["29C780353E7FB720"]
 			min_width: 400
@@ -1488,13 +1488,13 @@
 			y: -2.0d
 			subtitle: "Lua Basics #2 - Creating functions"
 			description: [
-				"Creating functions is a little different and more complicated than creating a normal variable. One of main differences is a function you use to create it. To create your own function variable, you use \"function\" command!"
+				"Creating functions is a little different and more complicated than creating a normal variable. One of the main differences is the function you use to create it. To create your own function variable, you use the \"function\" command!"
 				""
 				"> function my_first_function(argument_1,argument_2)"
 				""
-				"● First argument is a name of your function. Important thing is to add brackets, as you would do while calling a normal one. They have the same purpose here, between them, you put your function's arguments!"
+				"● First you enter the name of your function. Important thing to add is brackets as you would do while calling a normal one. They have the same purpose here, between them, you put your function's arguments!"
 				""
-				"You can add as many arguments as you want, and to separate them you use commas. Arguments work like normal variables. However if you call a function and not give it argument it needs, Lua will default that argument to \"nil\" variable. "
+				"You can add as many arguments as you want, and to separate them you use commas. Arguments work like normal variables. However if you call a function and not give it the argument that it needs, Lua will default that argument to the variable \"nil\". "
 				""
 				"● Variables that you just created for your function's arguments are temporary, they can not be used in any other place than that one function! Otherwise you use them like normal variables."
 				""
@@ -1503,18 +1503,18 @@
 				"> return argument_1 + argument_2"
 				"> end"
 				""
-				"● It was mentioned in few quests that functions can return some variables, and command \"return\" is used to do exactly that. It's arguments are returned to other variable, that is set to have a value of a function."
+				"● It was mentioned in a few quests that functions can return some variables, and the command \"return\" is used to do exactly that. Its arguments are returned to another variable, that is set to have a value of a function."
 				""
 				"> local x = my_first_function(1,2)"
 				"> 3 -> x -- Return added both our arguments (1 and 2) and returned it to variable x."
 				""
-				"● \"end\" command is to set the end of your function. It is used after the last line of your function's code. To show this, here is our function we just created:"
+				"● The \"end\" command is to set the end of your function. It is used after the last line of your function's code. To showcase this, here is our function we just created:"
 				""
 				"> function my_first_function(argument_1,argument_2)"
 				">   return argument_1 + argument_2"
 				"> end -- End of function."
 				""
-				"Important note is that you can use other functions in your function, even if there are created by you! However those need to be written before function that uses them, as Lua reads code from 1st line to last one, so if it sees a function that is created later, it will not know what is it."
+				"Important note is that you can use other functions in your function, even if they are created by you! However those need to be written before the function that uses them, as Lua reads code from 1st line to last one, so if it sees a function that is created later, it will not know what it is."
 			]
 			dependencies: [
 				"29C780353E7FB720"
@@ -1694,13 +1694,13 @@
 			y: -0.5d
 			subtitle: "Lua Basics #3 - If and logic operators"
 			description: [
-				"\"if\" is another one of most important things in coding. Without it we couldn't be able to create any decisions! \"if\" is used to check if variable is equal, bigger, smaller etc than other variable / value."
+				"\"if\" is another one of the most important things in coding. Without it we wouldn't be able to create any decisions! \"if\" is used to check if a variable is equal, bigger, smaller etc than another variable / value."
 				""
-				"Usage of \"if\" is actually really similiar to function, but you aren't doing a variable this time! To start creating your decision, you do something like this:"
+				"Usage of \"if\" is actually really similiar to a function, but you aren't doing a variable this time! To start creating your decision, you do something like this:"
 				""
 				"> if (variable_1 == variable_2) then"
 				""
-				"You could realise that I didn't use single \"=\" sign, and that's not a mistake! You can not use single equal sign in this case, as it is used to assing value to variable, and not to check value! Here is the list of logic operators you can use in Lua:"
+				"You probably realized that I didn't use single \"=\" sign, and that's not a mistake! You can not use a single equal sign in this case, as it is used to asign a value to a variable, and not to check its value! Here is the list of logic operators you can use in Lua:"
 			]
 			dependencies: ["5056B0737A8A8D64"]
 			hide: true
