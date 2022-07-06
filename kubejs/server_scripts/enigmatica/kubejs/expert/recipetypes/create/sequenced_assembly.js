@@ -560,6 +560,48 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}box_of_thankful_dinners`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:stim_pack'],
+            transitionalItem: 'kubejs:partial_stim_pack',
+            loops: 60,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: [
+                        'kubejs:partial_stim_pack',
+                        Item.of('botania:incense_stick', '{brewKey:"botania:emptiness"}')
+                    ],
+                    output: 'kubejs:partial_stim_pack'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_stim_pack', Item.of('botania:brew_flask', '{brewKey:"botania:regen"}')],
+                    output: 'kubejs:partial_stim_pack'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_stim_pack', Item.of('botania:brew_flask', '{brewKey:"botania:speed"}')],
+                    output: 'kubejs:partial_stim_pack'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_stim_pack', 'atum:linen_bandage'],
+                    output: 'kubejs:partial_stim_pack'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_stim_pack', 'atum:linen_bandage'],
+                    output: 'kubejs:partial_stim_pack'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_stim_pack', 'atum:linen_bandage'],
+                    output: 'kubejs:partial_stim_pack'
+                }
+            ],
+            id: `${id_prefix}stim_pack`
         }
     ];
 

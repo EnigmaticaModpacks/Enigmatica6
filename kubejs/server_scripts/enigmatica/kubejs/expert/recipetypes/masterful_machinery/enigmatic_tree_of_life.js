@@ -46,16 +46,12 @@ onEvent('recipes', (event) => {
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:alchemy_mastery_shard', count: 1 } }],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:death_ring', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'occultism:soul_gem', count: 2 } },
-                { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:looting_anointment_l', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'ars_nouveau:wixie_charm', count: 3 } },
-                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:pet_reviver', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'astralsorcery:nocturnal_powder', count: 16 } },
-                { type: 'masterfulmachinery:items', data: { item: 'minecraft:enchanted_golden_apple', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'atum:linen_bandage', count: 33 } },
-                { type: 'masterfulmachinery:items', data: { item: 'darkutils:rune_weakness', count: 9 } },
-                { type: 'masterfulmachinery:items', data: { item: 'darkutils:anchor_plate', count: 9 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_mixer', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_bottling_machine', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:stim_pack', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:death_ring', count: 5 } },
+                { type: 'masterfulmachinery:items', data: { item: 'naturesaura:pet_reviver', count: 5 } },
+
                 { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
             ],
             ticks: 60,
