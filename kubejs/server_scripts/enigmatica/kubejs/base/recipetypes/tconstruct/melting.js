@@ -156,20 +156,6 @@ onEvent('recipes', (event) => {
             time: 20 * 22,
             byproducts: [{ fluid: 'materialis:molten_starmetal', amount: 48 }],
             id: 'materialis:smeltery/melting/metal/starmetal/ore'
-        },
-        {
-            ingredient: { tag: 'forge:storage_blocks/glowstone' },
-            result: { fluid: 'thermal:glowstone', amount: 1000 },
-            temperature: 825,
-            time: 64 * 4,
-            id: `${id_prefix}energized_glowstone_from_glowstone_block`
-        },
-        {
-            ingredient: { tag: 'forge:dusts/glowstone' },
-            result: { fluid: 'thermal:glowstone', amount: 250 },
-            temperature: 825,
-            time: 64,
-            id: `${id_prefix}energized_glowstone_from_glowstone_dust`
         }
     ];
 

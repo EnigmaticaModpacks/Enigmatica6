@@ -46,45 +46,9 @@ onEvent('recipes', (event) => {
             output: 'bloodmagic:blankslate',
             syphon: 1000,
             altarLevel: 0,
-            consumptionRate: 50,
+            consumptionRate: 5,
             drainRate: 5,
             id: 'bloodmagic:altar/slate'
-        },
-        {
-            input: 'bloodmagic:blankslate',
-            output: 'bloodmagic:reinforcedslate',
-            syphon: 2000,
-            altarLevel: 1,
-            consumptionRate: 100,
-            drainRate: 5,
-            id: 'bloodmagic:altar/reinforcedslate'
-        },
-        {
-            input: 'bloodmagic:reinforcedslate',
-            output: 'bloodmagic:infusedslate',
-            syphon: 5000,
-            altarLevel: 2,
-            consumptionRate: 250,
-            drainRate: 10,
-            id: 'bloodmagic:altar/imbuedslate'
-        },
-        {
-            input: 'bloodmagic:infusedslate',
-            output: 'bloodmagic:demonslate',
-            syphon: 15000,
-            altarLevel: 3,
-            consumptionRate: 750,
-            drainRate: 20,
-            id: 'bloodmagic:altar/demonicslate'
-        },
-        {
-            input: 'bloodmagic:demonslate',
-            output: 'bloodmagic:etherealslate',
-            syphon: 200000,
-            altarLevel: 4,
-            consumptionRate: 1000,
-            drainRate: 1000,
-            id: `${id_prefix}etherealslate`
         },
         {
             input: 'occultism:chalk_white_impure',
@@ -134,9 +98,9 @@ onEvent('recipes', (event) => {
         {
             input: 'kubejs:firmament',
             output: 'architects_palette:moonstone',
-            syphon: 5000,
+            syphon: 7000,
             altarLevel: 0,
-            consumptionRate: 250,
+            consumptionRate: 5,
             drainRate: 1,
             id: `${id_prefix}moonstone`
         },
@@ -238,6 +202,15 @@ onEvent('recipes', (event) => {
             consumptionRate: 5,
             drainRate: 5,
             id: `${id_prefix}blood_pendant`
+        },
+        {
+            input: 'bloodmagic:demonslate',
+            output: 'bloodmagic:etherealslate',
+            syphon: 200000,
+            altarLevel: 4,
+            consumptionRate: 1000,
+            drainRate: 1000,
+            id: `${id_prefix}etherealslate`
         }
     ];
 
