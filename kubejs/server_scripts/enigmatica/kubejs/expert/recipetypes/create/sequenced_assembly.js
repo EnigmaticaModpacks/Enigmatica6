@@ -565,7 +565,7 @@ onEvent('recipes', (event) => {
             input: 'mekanism:cardboard_box',
             outputs: ['kubejs:stim_pack'],
             transitionalItem: 'kubejs:partial_stim_pack',
-            loops: 25,
+            loops: 30,
             sequence: [
                 {
                     type: 'deploying',
@@ -586,7 +586,17 @@ onEvent('recipes', (event) => {
                     ],
                     output: 'kubejs:partial_stim_pack'
                 },
-
+                {
+                    type: 'deploying',
+                    input: [
+                        'kubejs:partial_stim_pack',
+                        Item.of(
+                            'ars_nouveau:potion_flask',
+                            '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:22b,Amplifier:1b}],Potion:"apotheosis:strong_resistance"}'
+                        )
+                    ],
+                    output: 'kubejs:partial_stim_pack'
+                },
                 {
                     type: 'deploying',
                     input: ['kubejs:partial_stim_pack', 'atum:linen_bandage'],
