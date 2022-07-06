@@ -556,6 +556,411 @@ onEvent('recipes', (event) => {
             ],
             ticks: 400,
             id: `${id_prefix}chalice`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star_vicio', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:defaultcrystal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentair', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star_vicio`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star_evorsio', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:destructivecrystal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentfastminer', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star_evorsio`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star_discidia', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:vengefulcrystal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentlava', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star_discidia`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star_armara', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:steadfastcrystal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentbinding', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star_armara`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:shifting_star_aevitas', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 6 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:corrosivecrystal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'bloodmagic:reagentgrowth', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star_aevitas`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'astralsorcery:mantle', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'botania:balance_cloak', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:celestial_crystal', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'magicfeather:magicfeather', count: 1 }
+                },
+
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:illumination_powder', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/mana', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/pride', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/envy', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:storage_blocks/starmetal', count: 1 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}mantle`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'pedestals:coin/xpenchanter', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'pedestals:coin/default', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'botania:gaia_pylon', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'ars_nouveau:glyph_pickup', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/mana', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/vanaheim', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'ars_nouveau:greater_experience_gem', count: 12 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:inlays/arcane_gold', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'eidolon:shadow_gem', count: 1 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}coin_xpenchanter`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'pedestals:coin/xpanvil', count: 1 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'pedestals:coin/default', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mythicbotany:alfsteel_pylon', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'ars_nouveau:glyph_pickup', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/mana', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'botania:runes/vanaheim', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'ars_nouveau:greater_experience_gem', count: 12 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:ingots/netherite', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'betterendforge:aeternium_hammer', count: 1 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}coin_xpanvil`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'mekanism:solar_neutron_activator', count: 2 }
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'kubejs:observatory_lens', count: 5 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'powah:solar_panel_niotic', count: 5 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'mekanism:hdpe_sheet', count: 5 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'industrialforegoing:machine_frame/advanced', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:circuits/elite', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:plates/enderium', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/iesnium', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/starmetal', count: 2 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { tag: 'forge:dusts/end_stone', count: 2 }
+                },
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}solar_neutron_activator`
         }
     ];
 
