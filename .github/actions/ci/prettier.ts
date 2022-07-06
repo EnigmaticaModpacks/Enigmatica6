@@ -17,12 +17,12 @@ directories.forEach(directory => {
 // once all prettiers are done, view diff
 Promise.all(prettiers).then(async () => {
 
-  const process = Deno.run({
+  const git_status = Deno.run({
     cmd: ['git', 'status', '--porcelain'],
     stdout: 'piped',
   });
 
-  const status_lines = new TextDecoder().decode(await process.output()).split('\n');
+  const status_lines = new TextDecoder().decode(await git_status.output()).split('\n');
   const authors: {[key: string]: boolean} = {};
 
   for (const status_line of status_lines) {
