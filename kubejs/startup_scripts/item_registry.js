@@ -184,7 +184,8 @@ onEvent('item.registry', (event) => {
         { name: 'altar_of_birthing_kit', texture: 'packing_crate_blue' },
         { name: 'diy_furnace_engine_kit', texture: 'packing_crate_blue' },
         { name: 'imaharas_indelible_electrodes', texture: 'advanced_packing_crate_green' },
-
+        { name: 'diy_mixer', texture: 'advanced_packing_crate_green' },
+        { name: 'diy_bottling_machine', texture: 'advanced_packing_crate_purple' },
         { name: 'bright_constellation_box', texture: 'advanced_packing_crate_purple' },
         { name: 'dim_constellation_box', texture: 'advanced_packing_crate_green' },
 
@@ -206,6 +207,8 @@ onEvent('item.registry', (event) => {
         { name: 'partial_mimirs_memory_box', texture: 'packing_crate_lime' },
         { name: 'box_of_thankful_dinners', texture: 'advanced_packing_crate_purple' },
         { name: 'partial_box_of_thankful_dinners', texture: 'advanced_packing_crate_purple' },
+        { name: 'stim_pack', texture: 'packing_crate_red' },
+        { name: 'partial_stim_pack', texture: 'packing_crate_red' },
 
         { name: 'engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
         { name: 'partial_engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
