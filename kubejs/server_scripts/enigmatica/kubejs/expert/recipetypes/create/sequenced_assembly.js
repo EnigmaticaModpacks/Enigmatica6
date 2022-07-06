@@ -577,14 +577,16 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:partial_stim_pack', Item.of('botania:brew_flask', '{brewKey:"botania:regen"}')],
+                    input: [
+                        'kubejs:partial_stim_pack',
+                        Item.of(
+                            'ars_nouveau:potion_flask',
+                            '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:1b,Amplifier:0b}],Potion:"minecraft:strong_healing"}'
+                        )
+                    ],
                     output: 'kubejs:partial_stim_pack'
                 },
-                {
-                    type: 'deploying',
-                    input: ['kubejs:partial_stim_pack', Item.of('botania:brew_flask', '{brewKey:"botania:speed"}')],
-                    output: 'kubejs:partial_stim_pack'
-                },
+
                 {
                     type: 'deploying',
                     input: ['kubejs:partial_stim_pack', 'atum:linen_bandage'],
