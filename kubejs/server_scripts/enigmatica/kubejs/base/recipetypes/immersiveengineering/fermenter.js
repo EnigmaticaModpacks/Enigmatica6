@@ -82,29 +82,35 @@ onEvent('recipes', (event) => {
 	*/
 
     lowAmountInputs.forEach((input) => {
-        fallback_id(event.custom({
-            type: 'immersiveengineering:fermenter',
-            fluid: {
-                fluid: 'immersiveengineering:ethanol',
-                amount: 20
-            },
-            input: {
-                item: input
-            },
-            energy: 1600
-        }), `${id_prefix}low/`);
+        fallback_id(
+            event.custom({
+                type: 'immersiveengineering:fermenter',
+                fluid: {
+                    fluid: 'immersiveengineering:ethanol',
+                    amount: 20
+                },
+                input: {
+                    item: input
+                },
+                energy: 1600
+            }),
+            `${id_prefix}low/`
+        );
     });
     normalAmountInputs.forEach((input) => {
-        fallback_id(event.custom({
-            type: 'immersiveengineering:fermenter',
-            fluid: {
-                fluid: 'immersiveengineering:ethanol',
-                amount: 80
-            },
-            input: {
-                item: input
-            },
-            energy: 6400
-        }), `${id_prefix}high/`);
+        fallback_id(
+            event.custom({
+                type: 'immersiveengineering:fermenter',
+                fluid: {
+                    fluid: 'immersiveengineering:ethanol',
+                    amount: 80
+                },
+                input: {
+                    item: input
+                },
+                energy: 6400
+            }),
+            `${id_prefix}high/`
+        );
     });
 });

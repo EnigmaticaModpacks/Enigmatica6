@@ -4,7 +4,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             fluid: {
-                name: "resourcefulbees:blaze_honey",
+                name: 'resourcefulbees:blaze_honey',
                 amount: 50
             },
             duration: 150,
@@ -14,11 +14,13 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.custom({
-            type: 'tconstruct:melting_fuel',
-            fluid: recipe.fluid,
-            duration: recipe.duration,
-            temperature: recipe.temperature
-        }).id(recipe.id);
+        event
+            .custom({
+                type: 'tconstruct:melting_fuel',
+                fluid: recipe.fluid,
+                duration: recipe.duration,
+                temperature: recipe.temperature
+            })
+            .id(recipe.id);
     });
 });

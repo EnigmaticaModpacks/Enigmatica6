@@ -25,11 +25,13 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.custom({
-            type: 'architects_palette:warping',
-            ingredient: [Ingredient.of(recipe.input)],
-            result: Item.of(recipe.output),
-            dimension: 'minecraft:the_nether'
-        }).id(recipe.id);
+        event
+            .custom({
+                type: 'architects_palette:warping',
+                ingredient: [Ingredient.of(recipe.input)],
+                result: Item.of(recipe.output),
+                dimension: 'minecraft:the_nether'
+            })
+            .id(recipe.id);
     });
 });

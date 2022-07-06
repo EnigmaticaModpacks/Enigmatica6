@@ -75,7 +75,10 @@ function immersiveengineering_dye_crusher(event, recipe, id_prefix) {
         ],
         input = recipe.input;
 
-    fallback_id(event.recipes.immersiveengineering.crusher(output, input, extras), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(
+        event.recipes.immersiveengineering.crusher(output, input, extras),
+        `${id_prefix}${arguments.callee.name}/`
+    );
 }
 
 // function integrateddynamics_dye_squeezing(event, recipe, id_prefix) {
@@ -145,11 +148,14 @@ function mekanism_pigment_extracting(event, recipe, id_prefix) {
     let dye_color = recipe.primary.split(':')[1].replace('_dye', '');
     let count = baseCount * multiplier;
 
-    fallback_id(event.custom({
-        type: 'mekanism:pigment_extracting',
-        input: { ingredient: { item: recipe.input } },
-        output: { pigment: `mekanism:${dye_color}`, amount: 256 * count }
-    }), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(
+        event.custom({
+            type: 'mekanism:pigment_extracting',
+            input: { ingredient: { item: recipe.input } },
+            output: { pigment: `mekanism:${dye_color}`, amount: 256 * count }
+        }),
+        `${id_prefix}${arguments.callee.name}/`
+    );
 }
 
 function pedestals_dye_crushing(event, recipe, id_prefix) {
@@ -167,11 +173,14 @@ function pedestals_dye_crushing(event, recipe, id_prefix) {
         output = recipe.primary,
         input = recipe.input;
 
-    fallback_id(event.custom({
-        type: 'pedestals:pedestal_crushing',
-        ingredient: { item: input },
-        result: { item: output, count: count }
-    }), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(
+        event.custom({
+            type: 'pedestals:pedestal_crushing',
+            ingredient: { item: input },
+            result: { item: output, count: count }
+        }),
+        `${id_prefix}${arguments.callee.name}/`
+    );
 }
 
 function thermal_dye_centrifuge(event, recipe, id_prefix) {
@@ -208,12 +217,15 @@ function atum_quern_milling(event, recipe, id_prefix) {
         input = recipe.input,
         rotations = 1 * multiplier;
 
-    fallback_id(event.custom({
-        type: 'atum:quern',
-        ingredient: { item: input },
-        result: { item: output, count: count },
-        rotations: rotations
-    }), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(
+        event.custom({
+            type: 'atum:quern',
+            ingredient: { item: input },
+            result: { item: output, count: count },
+            rotations: rotations
+        }),
+        `${id_prefix}${arguments.callee.name}/`
+    );
 }
 
 function shapeless_dye_crafting(event, recipe, id_prefix) {
@@ -241,10 +253,13 @@ function occultism_dye_crushing(event, recipe, id_prefix) {
         output = recipe.primary,
         input = recipe.input;
 
-    fallback_id(event.custom({
-        type: 'occultism:crushing',
-        ingredient: { item: input },
-        result: { item: output, count: count },
-        crushing_time: 50
-    }), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(
+        event.custom({
+            type: 'occultism:crushing',
+            ingredient: { item: input },
+            result: { item: output, count: count },
+            crushing_time: 50
+        }),
+        `${id_prefix}${arguments.callee.name}/`
+    );
 }

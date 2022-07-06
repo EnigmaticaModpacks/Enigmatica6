@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
             pattern: ['ACA', 'BDB', 'ACA'],
             key: {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: { type: "resourcefulbees:hive", tier: 4 },
+                B: { type: 'resourcefulbees:hive', tier: 4 },
                 C: { item: 'resourcefulbees:t1_apiary' },
                 D: { item: 'minecraft:nether_star' }
             },
@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             pattern: ['ACA', 'BDB', 'ACA'],
             key: {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: { type: "resourcefulbees:hive", tier: 4 },
+                B: { type: 'resourcefulbees:hive', tier: 4 },
                 C: { item: 'resourcefulbees:t2_apiary' },
                 D: { item: 'minecraft:nether_star' }
             },
@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
             pattern: ['ACA', 'BDB', 'ACA'],
             key: {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: { type: "resourcefulbees:hive", tier: 4 },
+                B: { type: 'resourcefulbees:hive', tier: 4 },
                 C: { item: 'resourcefulbees:t3_apiary' },
                 D: { item: 'minecraft:nether_star' }
             },

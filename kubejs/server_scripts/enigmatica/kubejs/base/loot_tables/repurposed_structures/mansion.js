@@ -44,7 +44,10 @@ onEvent('generic.loot_tables', (event) => {
                     count: [1, 2]
                 },
                 {
-                    item: Item.of('sushigocrafting:tobiko_tuna_cucumber_california', '{Weights:[I;0,0,0,0,0,0],Spices:{}}'),
+                    item: Item.of(
+                        'sushigocrafting:tobiko_tuna_cucumber_california',
+                        '{Weights:[I;0,0,0,0,0,0],Spices:{}}'
+                    ),
                     weight: 20,
                     count: [4, 16]
                 },
@@ -56,7 +59,7 @@ onEvent('generic.loot_tables', (event) => {
                 {
                     item: 'farmersdelight:shepherds_pie',
                     weight: 50,
-                    count:[2, 8]
+                    count: [2, 8]
                 },
                 {
                     item: 'farmersdelight:fried_rice',
@@ -145,24 +148,17 @@ onEvent('generic.loot_tables', (event) => {
                 },
                 {
                     item: Item.of(
-                        'ars_nouveau:potion_flask', 
-                        '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:5b,Amplifier:0b},{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:900,Id:10b,Amplifier:0b},{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:1b,Amplifier:0b}],Potion:"apotheosis:resistance"}'),
-                    weight: 5,
+                        'ars_nouveau:potion_flask',
+                        '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:5b,Amplifier:0b},{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:900,Id:10b,Amplifier:0b},{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:1b,Amplifier:0b}],Potion:"apotheosis:resistance"}'
+                    ),
+                    weight: 5
                 }
             ]
         }
     ];
-    const mansions = [
-        'birch',
-        'desert',
-        'jungle',
-        'oak',
-        'savanna',
-        'snowy',
-        'taiga'
-    ];
+    const mansions = ['birch', 'desert', 'jungle', 'oak', 'savanna', 'snowy', 'taiga'];
     mansions.forEach((mansion) => {
-        event.modify('repurposed_structures:chests/mansion/'+mansion+'_storage', (table) => {
+        event.modify('repurposed_structures:chests/mansion/' + mansion + '_storage', (table) => {
             pools.forEach((pool) => {
                 table.addPool((newPool) => {
                     newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);

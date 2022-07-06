@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
             output: { item: recipe.output, count: recipe.count },
             mana: recipe.mana
         };
-        
+
         if (recipe.catalyst) {
             constructed_recipe.catalyst = {
                 type: 'block',

@@ -120,14 +120,16 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.custom({
-            type: 'mythicbotany:infusion',
-            group: 'infuser',
-            ingredients: recipe.inputs,
-            output: recipe.output,
-            mana: recipe.mana,
-            fromColor: recipe.fromColor,
-            toColor: recipe.toColor
-        }).id(recipe.id);
+        event
+            .custom({
+                type: 'mythicbotany:infusion',
+                group: 'infuser',
+                ingredients: recipe.inputs,
+                output: recipe.output,
+                mana: recipe.mana,
+                fromColor: recipe.fromColor,
+                toColor: recipe.toColor
+            })
+            .id(recipe.id);
     });
 });

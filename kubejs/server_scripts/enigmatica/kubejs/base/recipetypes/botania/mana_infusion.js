@@ -3,8 +3,8 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            input: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:iron_bee"}),
-            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee"}),
+            input: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:iron_bee' }),
+            output: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:mana_bee' }),
             mana: 99999,
             id: `${id_prefix}mana_bee_jar`
         }
@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
                 block: recipe.catalyst
             };
         }
-        
+
         event.custom(constructed_recipe).id(recipe.id);
     });
 });

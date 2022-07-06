@@ -45,7 +45,8 @@ const honeyVarieties = [
     'resourcefulbees:otherworldly_honey'
 ];
 
-const combVariants = [ //keep changes synced to "startup_scripts/item_registry.js", bees constant
+const combVariants = [
+    //keep changes synced to "startup_scripts/item_registry.js", bees constant
     // alloy
     'brass',
     'bronze',
@@ -134,14 +135,14 @@ const combVariants = [ //keep changes synced to "startup_scripts/item_registry.j
     'blitz',
     'blizz',
     'industrious',
-    'pcbee',
+    'pcbee'
 ];
 
 const bees = [];
 
 combVariants.forEach((bee) => {
-    bees.push(bee)
-})
+    bees.push(bee);
+});
 
 let moreBees = [
     // dev
@@ -150,9 +151,9 @@ let moreBees = [
     'starry_lexxie',
     'yeti',
     // manual
-    'abbee',
+    'abbee'
 ];
 
 moreBees.forEach((bee) => {
     bees.push(bee);
-})
+});
