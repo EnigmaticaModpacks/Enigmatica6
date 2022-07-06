@@ -1,5 +1,3 @@
-import { basename } from "https://deno.land/std@0.127.0/path/mod.ts";
-
 // during my tests a repo-wide .prettierignore didn't work nicely at all,
 // so instead of a blacklist we're gonna run prettier for each directory.
 const directories: string[] = [
