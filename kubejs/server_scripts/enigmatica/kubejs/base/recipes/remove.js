@@ -105,6 +105,12 @@ onEvent('recipes', (event) => {
         'create:crushing/dense_construction_block',
         'create:crushing/nether_quartz_ore',
 
+        'compactcrafting:match_proxy',
+        'compactcrafting:rescan_proxy',
+        'compactcrafting:base',
+        'compactcrafting:projector_dish',
+        'compactcrafting:field_projector',
+
         'dustrial_decor:ice_chain',
 
         'eidolon:tallow',

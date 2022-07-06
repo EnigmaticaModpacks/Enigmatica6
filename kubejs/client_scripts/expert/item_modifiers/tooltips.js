@@ -50,7 +50,8 @@ onEvent('item.tooltip', (event) => {
                 'mekanism:ultimate_compressing_factory',
                 'mekanism:elite_compressing_factory',
                 'mekanism:advanced_compressing_factory',
-                'mekanism:basic_compressing_factory'
+                'mekanism:basic_compressing_factory',
+                'compactmachines:tunnel'
             ],
             text: [disabledInExpert]
         },
