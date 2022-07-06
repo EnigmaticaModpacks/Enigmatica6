@@ -581,7 +581,7 @@ onEvent('recipes', (event) => {
                         'kubejs:partial_stim_pack',
                         Item.of(
                             'ars_nouveau:potion_flask',
-                            '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:1b,Amplifier:0b}],Potion:"minecraft:strong_healing"}'
+                            '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:1b,Amplifier:0b}],Potion:"minecraft:strong_regeneration"}'
                         )
                     ],
                     output: 'kubejs:partial_stim_pack'
