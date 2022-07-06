@@ -565,7 +565,7 @@ onEvent('recipes', (event) => {
             input: 'mekanism:cardboard_box',
             outputs: ['kubejs:stim_pack'],
             transitionalItem: 'kubejs:partial_stim_pack',
-            loops: 60,
+            loops: 25,
             sequence: [
                 {
                     type: 'deploying',
