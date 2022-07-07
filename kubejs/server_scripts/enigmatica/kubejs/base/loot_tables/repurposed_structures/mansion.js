@@ -156,7 +156,7 @@ onEvent('generic.loot_tables', (event) => {
             ]
         }
     ];
-    
+
     const mansions = [
         'birch', //
         'desert',
@@ -166,7 +166,7 @@ onEvent('generic.loot_tables', (event) => {
         'snowy',
         'taiga'
     ];
-    
+
     mansions.forEach((mansion) => {
         event.modify(`repurposed_structures:chests/mansion/${mansion}_storage`, (table) => {
             pools.forEach((pool) => {
