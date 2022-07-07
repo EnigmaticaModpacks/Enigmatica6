@@ -15,8 +15,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 maxEterna: 20,
                 eterna: 10,
                 arcana: 15,
-                clues: 1
-            }
+                clues: 1,
+            },
         },
         {
             block: 'botania:natura_pylon',
@@ -24,8 +24,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 maxEterna: 30,
                 eterna: 15,
                 arcana: 30,
-                clues: 5
-            }
+                clues: 5,
+            },
         },
         {
             block: 'botania:gaia_pylon',
@@ -34,8 +34,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 eterna: 20,
                 arcana: -30,
                 quanta: 25,
-                rectification: -15
-            }
+                rectification: -15,
+            },
         },
         {
             block: 'mythicbotany:alfsteel_pylon',
@@ -45,62 +45,62 @@ onEvent('server.datapack.high_priority', (event) => {
                 arcana: 50,
                 quanta: 50,
                 clues: -5,
-                rectification: -25
-            }
+                rectification: -25,
+            },
         },
         {
             block: 'astralsorcery:prism',
             stats: {
                 arcana: 10,
                 clues: 2,
-                rectification: 15
-            }
+                rectification: 15,
+            },
         },
         {
             block: 'occultism:spirit_attuned_crystal',
             stats: {
                 arcana: 15,
                 clues: 1,
-                quanta: -15
-            }
+                quanta: -15,
+            },
         },
         {
             block: 'botania:floating_rosa_arcana',
             stats: {
                 maxEterna: 30,
                 eterna: 15,
-                arcana: 15
-            }
+                arcana: 15,
+            },
         },
         {
             block: 'eidolon:candle',
             stats: {
                 maxEterna: 15,
                 eterna: 0.5,
-                arcana: 5
-            }
+                arcana: 5,
+            },
         },
         {
             block: 'eidolon:candlestick',
             stats: {
                 maxEterna: 15,
                 eterna: 0.5,
-                arcana: 5
-            }
+                arcana: 5,
+            },
         },
         {
             block: 'eidolon:stone_hand',
             stats: {
                 maxEterna: 7.5,
-                eterna: 0.5
-            }
+                eterna: 0.5,
+            },
         },
         {
             block: 'eidolon:plinth',
             stats: {
                 maxEterna: 7.5,
-                eterna: 0.5
-            }
+                eterna: 0.5,
+            },
         },
         {
             block: 'eidolon:straw_effigy',
@@ -108,8 +108,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 maxEterna: 7.5,
                 eterna: 5,
                 quanta: 5,
-                rectification: -5
-            }
+                rectification: -5,
+            },
         },
         {
             block: 'eidolon:unholy_effigy',
@@ -118,8 +118,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 eterna: 5,
                 arcana: 15,
                 quanta: 15,
-                rectification: -15
-            }
+                rectification: -15,
+            },
         },
         {
             block: 'ars_nouveau:bookwyrm_lectern',
@@ -127,8 +127,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 arcana: 30,
                 quanta: -30,
                 rectification: 30,
-                clues: 3
-            }
+                clues: 3,
+            },
         },
         {
             block: 'ars_nouveau:arcane_pedestal',
@@ -136,44 +136,44 @@ onEvent('server.datapack.high_priority', (event) => {
                 maxEterna: 15,
                 eterna: 1,
                 arcana: 2,
-                quanta: -2
-            }
+                quanta: -2,
+            },
         },
         {
             block: 'ars_nouveau:arcane_core',
             stats: {
                 maxEterna: 15,
                 eterna: 3.5,
-                quanta: 8
-            }
+                quanta: 8,
+            },
         },
         {
             block: 'ars_nouveau:enchanting_apparatus',
             stats: {
                 maxEterna: 15,
                 eterna: 3.5,
-                quanta: 8
-            }
+                quanta: 8,
+            },
         },
         {
             block: 'mekanism:block_refined_glowstone',
             stats: {
-                rectification: 15
-            }
+                rectification: 15,
+            },
         },
         {
             block: 'supplementaries:book_pile',
             stats: {
                 maxEterna: 7.5,
-                eterna: 1
-            }
+                eterna: 1,
+            },
         },
         {
             block: 'eidolon:necrotic_focus',
             stats: {
-                arcana: 2.5
-            }
-        }
+                arcana: 2.5,
+            },
+        },
     ];
 
     colors.forEach((color) => {
@@ -182,8 +182,8 @@ onEvent('server.datapack.high_priority', (event) => {
             stats: {
                 maxEterna: 10,
                 eterna: 1,
-                arcana: 1.5
-            }
+                arcana: 1.5,
+            },
         });
     });
 
@@ -193,17 +193,17 @@ onEvent('server.datapack.high_priority', (event) => {
                 block: `atum:torch_of_${atum_aspect}`,
                 stats: {
                     maxEterna: 10,
-                    eterna: 0.5
-                }
+                    eterna: 0.5,
+                },
             },
             {
                 block: `atum:lantern_of_${atum_aspect}`,
                 stats: {
                     maxEterna: 10,
                     eterna: 1,
-                    arcana: 1.5
-                }
-            }
+                    arcana: 1.5,
+                },
+            },
         );
     });
 

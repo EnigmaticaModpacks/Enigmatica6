@@ -13,22 +13,22 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 1.0,
                                     max: 1.0,
-                                    type: 'minecraft:uniform'
-                                }
+                                    type: 'minecraft:uniform',
+                                },
                             },
                             {
                                 function: 'minecraft:looting_enchant',
                                 count: {
                                     min: 1.0,
-                                    max: 2.0
-                                }
-                            }
+                                    max: 2.0,
+                                },
+                            },
                         ],
-                        name: 'occultism:afrit_essence'
-                    }
-                ]
-            }
-        ]
+                        name: 'occultism:afrit_essence',
+                    },
+                ],
+            },
+        ],
     };
 
     event.addJson(`occultism:loot_tables/entities/afrit_wild.json`, loot_table);

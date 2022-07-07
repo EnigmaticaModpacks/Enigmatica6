@@ -6,10 +6,10 @@ onEvent('recipes', (event) => {
             key: {
                 C: '#forge:workbenches',
                 X: '#forge:chests/wooden',
-                F: 'rftoolsbase:machine_frame'
+                F: 'rftoolsbase:machine_frame',
             },
-            id: 'rftoolscontrol:workbench'
-        }
+            id: 'rftoolscontrol:workbench',
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -24,9 +24,9 @@ onEvent('recipes', (event) => {
                 B: 'farmersdelight:cooking_pot',
                 C: 'occultism:otherstone',
                 D: 'minecraft:heart_of_the_sea',
-                E: '#forge:ingots/arcane_gold'
+                E: '#forge:ingots/arcane_gold',
             },
-            id: 'bloodmagic:blood_altar'
+            id: 'bloodmagic:blood_altar',
         },
         {
             output: 'bloodmagic:alchemytable',
@@ -36,9 +36,9 @@ onEvent('recipes', (event) => {
                 B: 'bloodmagic:blankslate',
                 C: 'supplementaries:jar_tinted',
                 D: 'thermal:hazmat_fabric',
-                E: 'eidolon:stone_altar'
+                E: 'eidolon:stone_altar',
             },
-            id: 'bloodmagic:alchemy_table'
+            id: 'bloodmagic:alchemy_table',
         },
         {
             output: 'bloodmagic:lavacrystal',
@@ -47,9 +47,9 @@ onEvent('recipes', (event) => {
                 A: { type: 'bloodmagic:bloodorb', orb_tier: 2 },
                 B: '#forge:dusts/obsidian',
                 C: 'bloodmagic:reagentlava',
-                D: 'minecraft:conduit'
+                D: 'minecraft:conduit',
             },
-            id: 'bloodmagic:lava_crystal'
+            id: 'bloodmagic:lava_crystal',
         },
         {
             output: 'bloodmagic:daggerofsacrifice',
@@ -57,9 +57,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/silicon_bronze',
                 B: 'eidolon:pewter_inlay',
-                C: '#forge:rods/wooden'
+                C: '#forge:rods/wooden',
             },
-            id: 'bloodmagic:altar/daggerofsacrifice'
+            id: 'bloodmagic:altar/daggerofsacrifice',
         },
         {
             output: 'bloodmagic:incensealtar',
@@ -69,9 +69,9 @@ onEvent('recipes', (event) => {
                 B: Item.of('botania:incense_stick', { brewKey: 'botania:soul_cross' }),
                 C: 'eidolon:polished_planks',
                 D: 'farmersdelight:cooking_pot',
-                E: 'eidolon:polished_wood_pillar'
+                E: 'eidolon:polished_wood_pillar',
             },
-            id: 'bloodmagic:incense_altar'
+            id: 'bloodmagic:incense_altar',
         },
         {
             output: Item.of('2x bloodmagic:ritualstone'),
@@ -79,9 +79,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: { type: 'bloodmagic:bloodorb', orb_tier: 2 },
                 B: 'bloodmagic:reinforcedslate',
-                C: 'architects_palette:abyssaline'
+                C: 'architects_palette:abyssaline',
             },
-            id: 'bloodmagic:ritual_stone_blank'
+            id: 'bloodmagic:ritual_stone_blank',
         },
         {
             output: 'bloodmagic:masterritualstone',
@@ -89,18 +89,18 @@ onEvent('recipes', (event) => {
             key: {
                 A: { type: 'bloodmagic:bloodorb', orb_tier: 3 },
                 B: 'bloodmagic:ritualstone',
-                C: 'architects_palette:abyssaline'
+                C: 'architects_palette:abyssaline',
             },
-            id: 'bloodmagic:ritual_stone_master'
+            id: 'bloodmagic:ritual_stone_master',
         },
         {
             output: Item.of('bloodmagic:dungeon_stone', 8),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'naturesaura:infused_stone',
-                B: '#bloodmagic:crystals/demon'
+                B: '#bloodmagic:crystals/demon',
             },
-            id: 'bloodmagic:dungeon_stone'
+            id: 'bloodmagic:dungeon_stone',
         },
         {
             output: 'bloodmagic:alchemicalreactionchamber',
@@ -110,10 +110,10 @@ onEvent('recipes', (event) => {
                 B: 'bloodmagic:infusedslate',
                 C: { type: 'bloodmagic:bloodorb', orb_tier: 3 },
                 D: '#forge:storage_blocks/blazing',
-                E: 'minecraft:blast_furnace'
+                E: 'minecraft:blast_furnace',
             },
-            id: 'bloodmagic:arc'
-        }
+            id: 'bloodmagic:arc',
+        },
     ];
 
     newRecipes.forEach((recipe) => {

@@ -7,8 +7,8 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('betterendforge:leather_wrapped_stick'),
             inputs: ['naturesaura:ancient_stick', 'betterendforge:leather_stripe'],
-            id: 'betterendforge:leather_wrapped_stick'
-        }
+            id: 'betterendforge:leather_wrapped_stick',
+        },
     ];
 
     recipes.forEach((recipe) => {

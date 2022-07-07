@@ -10,9 +10,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#enigmatica:stonecuttables/arcane_stone',
                 B: 'immersiveengineering:coil_lv',
-                C: 'immersiveengineering:electron_tube'
+                C: 'immersiveengineering:electron_tube',
             },
-            id: 'portality:frame'
+            id: 'portality:frame',
         },
         {
             output: Item.of('portality:module_energy'),
@@ -21,9 +21,9 @@ onEvent('recipes', (event) => {
                 A: 'portality:frame',
                 B: Item.of('thermal:energy_cell').ignoreNBT(),
                 C: 'pneumaticcraft:logistics_core',
-                D: 'xnet:wireless_router'
+                D: 'xnet:wireless_router',
             },
-            id: 'portality:energy_input'
+            id: 'portality:energy_input',
         },
         {
             output: Item.of('portality:module_items'),
@@ -32,9 +32,9 @@ onEvent('recipes', (event) => {
                 A: 'portality:frame',
                 B: 'immersiveengineering:sorter',
                 C: 'pneumaticcraft:logistics_core',
-                D: 'xnet:wireless_router'
+                D: 'xnet:wireless_router',
             },
-            id: 'portality:items_input'
+            id: 'portality:items_input',
         },
         {
             output: Item.of('portality:module_fluids'),
@@ -43,9 +43,9 @@ onEvent('recipes', (event) => {
                 A: 'portality:frame',
                 B: 'immersiveengineering:fluid_sorter',
                 C: 'pneumaticcraft:logistics_core',
-                D: 'xnet:wireless_router'
+                D: 'xnet:wireless_router',
             },
-            id: 'portality:fluids_input'
+            id: 'portality:fluids_input',
         },
         {
             output: Item.of('portality:module_interdimensional'),
@@ -54,9 +54,9 @@ onEvent('recipes', (event) => {
                 A: 'portality:frame',
                 B: 'occultism:stable_wormhole',
                 C: 'pneumaticcraft:logistics_core',
-                D: 'xnet:wireless_router'
+                D: 'xnet:wireless_router',
             },
-            id: 'portality:interdimensional'
+            id: 'portality:interdimensional',
         },
         {
             output: Item.of('portality:controller'),
@@ -65,10 +65,10 @@ onEvent('recipes', (event) => {
                 A: 'portality:frame',
                 B: 'immersiveengineering:coil_hv',
                 C: 'immersiveengineering:current_transformer',
-                D: '#industrialforegoing:machine_frame/simple'
+                D: '#industrialforegoing:machine_frame/simple',
             },
-            id: `${id_prefix}controller_alternate`
-        }
+            id: `${id_prefix}controller_alternate`,
+        },
     ];
 
     recipes.forEach((recipe) => {

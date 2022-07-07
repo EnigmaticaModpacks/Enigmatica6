@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
             mana_cluster,
             fulminated_cluster,
             levigated_material,
-            crystalline_sliver
+            crystalline_sliver,
         );
     });
 
@@ -71,7 +71,7 @@ onEvent('recipes', (event) => {
             .shaped(output, ['CAC', 'ABA', 'CAC'], {
                 A: input,
                 B: '#forge:plates/iron_tin',
-                C: '#forge:nuggets/aluminum'
+                C: '#forge:nuggets/aluminum',
             })
             .id(`kubejs:crafting_shaped_${material}_gear`);
     }
@@ -190,7 +190,7 @@ onEvent('recipes', (event) => {
 
         try {
             secondaryOutput = getPreferredItemInTag(
-                Ingredient.of(`#create:crushed_ores/${materialProperties.secondary}`)
+                Ingredient.of(`#create:crushed_ores/${materialProperties.secondary}`),
             ).id;
         } catch (err) {
             secondaryOutput = crushed_ore;
@@ -201,7 +201,7 @@ onEvent('recipes', (event) => {
                 Item.of(primaryOutput, 2).chance(0.6),
                 Item.of(primaryOutput).chance(0.5),
                 Item.of(secondaryOutput, 2).chance(0.35),
-                Item.of('minecraft:gravel').chance(0.18)
+                Item.of('minecraft:gravel').chance(0.18),
             ])
             .id(`immersiveengineering:crusher/ore_${material}`);
     }
@@ -215,7 +215,7 @@ onEvent('recipes', (event) => {
         mana_cluster,
         fulminated_cluster,
         levigated_material,
-        crystalline_sliver
+        crystalline_sliver,
     ) {
         if (
             ore == air ||
@@ -238,11 +238,11 @@ onEvent('recipes', (event) => {
 
         try {
             secondary_fulminated_cluster = getPreferredItemInTag(
-                Ingredient.of(`#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`)
+                Ingredient.of(`#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`),
             ).id;
         } catch (err) {
             secondary_fulminated_cluster = getPreferredItemInTag(
-                Ingredient.of(`#mekanism:fulminated_clusters/${material}`)
+                Ingredient.of(`#mekanism:fulminated_clusters/${material}`),
             ).id;
         }
 
@@ -253,7 +253,7 @@ onEvent('recipes', (event) => {
                 input: Ingredient.of(infusing_input).toJson(),
                 output: { item: mana_cluster, count: 1 },
                 catalyst: { type: 'block', block: 'naturesaura:generator_limit_remover' },
-                mana: 2000
+                mana: 2000,
             })
             .id(`enigmatica:expert/magical_ore_processing/mana/${material}`);
 
@@ -266,11 +266,11 @@ onEvent('recipes', (event) => {
                     entries: [
                         { result: { item: fulminated_cluster, count: 1 }, weight: 20 },
                         { result: { item: secondary_fulminated_cluster, count: 1 }, weight: 10 },
-                        { result: { item: 'thermal:slag', count: 1 }, weight: 5 }
+                        { result: { item: 'thermal:slag', count: 1 }, weight: 5 },
                     ],
                     empty_weight: 65,
-                    rolls: 20
-                }
+                    rolls: 20,
+                },
             })
             .id(`enigmatica:expert/magical_ore_processing/lightning/${material}`);
 
@@ -283,7 +283,7 @@ onEvent('recipes', (event) => {
                 catalyst: Ingredient.of('naturesaura:crushing_catalyst').toJson(),
                 aura_type: 'naturesaura:overworld',
                 aura: 1500,
-                time: 10
+                time: 10,
             })
             .id(`enigmatica:expert/magical_ore_processing/aura/${material}`);
 
@@ -293,18 +293,18 @@ onEvent('recipes', (event) => {
                 type: 'interactio:item_fluid_transform',
                 inputs: [
                     Ingredient.of(freezing_input).toJson(),
-                    { tag: 'botania:runes/winter', count: 1, return_chance: 1.0 }
+                    { tag: 'botania:runes/winter', count: 1, return_chance: 1.0 },
                 ],
                 output: {
                     entries: [
                         { result: Ingredient.of(crystalline_sliver).toJson(), weight: 75 },
-                        { result: Ingredient.of('bloodmagic:corrupted_tinydust').toJson(), weight: 25 }
+                        { result: Ingredient.of('bloodmagic:corrupted_tinydust').toJson(), weight: 25 },
                     ],
                     empty_weight: 0,
-                    rolls: 20
+                    rolls: 20,
                 },
                 fluid: { fluid: 'astralsorcery:liquid_starlight' },
-                consume_fluid: 0.05
+                consume_fluid: 0.05,
             })
             .id(`enigmatica:expert/magical_ore_processing/starlight/${material}`);
 

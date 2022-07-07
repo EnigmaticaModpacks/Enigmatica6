@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 100,
             ignore_occultism_multiplier: true,
-            id_suffix: 'basalt_powder'
+            id_suffix: 'basalt_powder',
         },
         {
             secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 100,
             ignore_occultism_multiplier: true,
-            id_suffix: 'ground_meat_small'
+            id_suffix: 'ground_meat_small',
         },
         {
             secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 100,
             ignore_occultism_multiplier: true,
-            id_suffix: 'ground_meat_medium'
+            id_suffix: 'ground_meat_medium',
         },
         {
             secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
@@ -47,7 +47,7 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 100,
             ignore_occultism_multiplier: true,
-            id_suffix: 'ground_meat_large'
+            id_suffix: 'ground_meat_large',
         },
         {
             secondary_output: Item.of('waystones:warp_dust').chance(0.15),
@@ -56,8 +56,8 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 100,
             ignore_occultism_multiplier: true,
-            id_suffix: 'warp_dust'
-        }
+            id_suffix: 'warp_dust',
+        },
     ];
 
     recipetypes_crushing = (event, recipe) => {
@@ -66,7 +66,7 @@ onEvent('recipes', (event) => {
             .custom({
                 type: 'pedestals:pedestal_crushing',
                 ingredient: recipe.input,
-                result: recipe.output
+                result: recipe.output,
             })
             .id(`${id_prefix}/pedestal_crushing/${recipe.id_suffix}`);
 
@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
                 ingredient: recipe.input,
                 result: recipe.output,
                 crushing_time: recipe.duration,
-                ignore_crushing_multiplier: recipe.ignore_occultism_multiplier
+                ignore_crushing_multiplier: recipe.ignore_occultism_multiplier,
             })
             .id(`${id_prefix}/occultism_crushing/${recipe.id_suffix}`);
 
@@ -92,7 +92,7 @@ onEvent('recipes', (event) => {
                 duration: recipe.duration,
                 consumeMultipleFluids: false,
                 acceptChaliceInput: true,
-                copyNBTToOutputs: false
+                copyNBTToOutputs: false,
             })
             .id(`${id_prefix}/astralsorcery_infuser/${recipe.id_suffix}`);
 
@@ -101,7 +101,7 @@ onEvent('recipes', (event) => {
             .custom({
                 type: 'industrialforegoing:crusher',
                 input: recipe.input,
-                output: recipe.output
+                output: recipe.output,
             })
             .id(`${id_prefix}/industrialforegoing_crusher/${recipe.id_suffix}`);
 

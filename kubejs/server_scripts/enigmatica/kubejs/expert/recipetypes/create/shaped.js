@@ -23,9 +23,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/copper',
                 B: '#forge:ingots/andesite_alloy',
                 C: 'create:cogwheel',
-                D: 'minecraft:smooth_stone_slab'
+                D: 'minecraft:smooth_stone_slab',
             },
-            id: 'create:crafting/kinetics/millstone'
+            id: 'create:crafting/kinetics/millstone',
         },
         {
             output: 'create:windmill_bearing',
@@ -33,27 +33,27 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'create:turntable',
                 B: 'minecraft:sticky_piston',
-                C: 'create:shaft'
+                C: 'create:shaft',
             },
-            id: 'create:crafting/kinetics/windmill_bearing'
+            id: 'create:crafting/kinetics/windmill_bearing',
         },
         {
             output: Item.of('create:white_sail', 8),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'create:sail_frame',
-                B: '#thermal:rockwool'
+                B: '#thermal:rockwool',
             },
-            id: 'create:crafting/kinetics/white_sail'
+            id: 'create:crafting/kinetics/white_sail',
         },
         {
             output: Item.of('create:brass_casing', 4),
             pattern: ['ABA', 'BBB', 'ABA'],
             key: {
                 A: '#forge:plates/brass',
-                B: 'eidolon:polished_planks'
+                B: 'eidolon:polished_planks',
             },
-            id: 'create:crafting/materials/brass_casing'
+            id: 'create:crafting/materials/brass_casing',
         },
         {
             output: Item.of('create:encased_chain_drive', 2),
@@ -61,9 +61,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:chain',
                 B: 'create:shaft',
-                C: 'create:andesite_casing'
+                C: 'create:andesite_casing',
             },
-            id: 'create:crafting/kinetics/encased_chain_drive'
+            id: 'create:crafting/kinetics/encased_chain_drive',
         },
         {
             output: 'create:copper_backtank',
@@ -73,9 +73,9 @@ onEvent('recipes', (event) => {
                 B: 'create:shaft',
                 C: '#forge:plates/copper',
                 D: 'mekanism:basic_chemical_tank',
-                E: '#forge:ingots/andesite_alloy'
+                E: '#forge:ingots/andesite_alloy',
             },
-            id: 'create:crafting/appliances/copper_backtank'
+            id: 'create:crafting/appliances/copper_backtank',
         },
         {
             output: 'create:diving_helmet',
@@ -83,9 +83,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'thermal:diving_fabric',
                 B: '#forge:ingots/silicon_bronze',
-                C: '#forge:glass_panes/cyan'
+                C: '#forge:glass_panes/cyan',
             },
-            id: 'create:crafting/appliances/diving_helmet'
+            id: 'create:crafting/appliances/diving_helmet',
         },
         {
             output: 'create:diving_boots',
@@ -93,10 +93,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'thermal:diving_fabric',
                 B: '#forge:ingots/silicon_bronze',
-                C: '#forge:plates/lead'
+                C: '#forge:plates/lead',
             },
-            id: 'create:crafting/appliances/diving_boots'
-        }
+            id: 'create:crafting/appliances/diving_boots',
+        },
     ];
 
     recipes.forEach((recipe) => {

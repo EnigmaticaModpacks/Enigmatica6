@@ -5,13 +5,13 @@ onEvent('recipes', (event) => {
             entity: { types: ['resourcefulbees:aluminum_bee'] },
             result: { fluid: 'kubejs:molten_aluminum_bee', amount: 100 },
             damage: 2,
-            id: `${id_prefix}molten_aluminum_bee`
+            id: `${id_prefix}molten_aluminum_bee`,
         },
         {
             entity: { types: ['resourcefulbees:slimy_bee'] },
             result: { fluid: 'kubejs:liquid_slimy_bee', amount: 100 },
             damage: 2,
-            id: `${id_prefix}liquid_slimy_bee`
+            id: `${id_prefix}liquid_slimy_bee`,
         },
 
         // Entity Melting Blacklist
@@ -38,13 +38,13 @@ onEvent('recipes', (event) => {
                     'ars_nouveau:familiar_wixie',
                     'ars_nouveau:summon_horse',
                     'ars_nouveau:summon_wolf',
-                    'ars_nouveau:ally_vex'
-                ]
+                    'ars_nouveau:ally_vex',
+                ],
             },
             result: { fluid: 'minecraft:water', amount: 0 },
             damage: 2,
-            id: `${id_prefix}disabled`
-        }
+            id: `${id_prefix}disabled`,
+        },
     ];
 
     recipes.forEach((recipe) => {

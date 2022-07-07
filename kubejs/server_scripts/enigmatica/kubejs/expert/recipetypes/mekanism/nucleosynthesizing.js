@@ -16,44 +16,44 @@ onEvent('recipes', (event) => {
                 itemInput: { ingredient: { item: 'powah:ender_cell_nitro' } },
                 gasInput: { amount: 10, gas: 'mekanism:antimatter' },
                 duration: 25000,
-                id: `${id_prefix}flux_plug`
+                id: `${id_prefix}flux_plug`,
             },
             {
                 output: Item.of('fluxnetworks:flux_point'),
                 itemInput: { ingredient: { item: 'powah:ender_gate_nitro' } },
                 gasInput: { amount: 10, gas: 'mekanism:antimatter' },
                 duration: 25000,
-                id: `${id_prefix}flux_point`
+                id: `${id_prefix}flux_point`,
             },
             {
                 output: Item.of('16x powah:crystal_blazing'),
                 itemInput: { ingredient: { item: 'quark:blaze_lantern' } },
                 gasInput: { amount: 2, gas: 'mekanism:antimatter' },
                 duration: 500,
-                id: `${id_prefix}crystal_blazing`
+                id: `${id_prefix}crystal_blazing`,
             },
             {
                 output: Item.of('16x powah:crystal_niotic'),
                 itemInput: { ingredient: { item: 'astralsorcery:celestial_crystal' } },
                 gasInput: { amount: 2, gas: 'mekanism:antimatter' },
                 duration: 500,
-                id: `${id_prefix}crystal_niotic`
+                id: `${id_prefix}crystal_niotic`,
             },
             {
                 output: Item.of('16x powah:crystal_spirited'),
                 itemInput: { ingredient: { item: 'atum:osiris_godforged_block' } },
                 gasInput: { amount: 2, gas: 'mekanism:antimatter' },
                 duration: 500,
-                id: `${id_prefix}crystal_spirited`
+                id: `${id_prefix}crystal_spirited`,
             },
             {
                 output: Item.of('16x powah:crystal_nitro'),
                 itemInput: { ingredient: { item: 'bloodmagic:largebloodstonebrick' } },
                 gasInput: { amount: 2, gas: 'mekanism:antimatter' },
                 duration: 500,
-                id: `${id_prefix}crystal_nitro`
-            }
-        ]
+                id: `${id_prefix}crystal_nitro`,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {

@@ -4,8 +4,8 @@ onEvent('recipes', (event) => {
         {
             output: 'minecraft:trapped_chest',
             inputs: ['minecraft:chest', 'minecraft:tripwire_hook'],
-            id: `${id_prefix}trapped_chest`
-        }
+            id: `${id_prefix}trapped_chest`,
+        },
     ];
 
     recipes.forEach((recipe) => {

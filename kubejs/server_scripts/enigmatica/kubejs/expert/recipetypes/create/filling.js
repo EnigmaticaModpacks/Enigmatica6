@@ -8,14 +8,14 @@ onEvent('recipes', (event) => {
             input: 'minecraft:glass_bottle',
             fluid: Fluid.of('thermal:syrup', 250),
             output: 'thermal:syrup_bottle',
-            id: `${id_prefix}syrup_bottle`
+            id: `${id_prefix}syrup_bottle`,
         },
         {
             input: 'minecraft:light_gray_concrete_powder',
             fluid: Fluid.of('kubejs:molten_compressed_iron', 18),
             output: 'pneumaticcraft:reinforced_stone',
-            id: `${id_prefix}reinforced_stone`
-        }
+            id: `${id_prefix}reinforced_stone`,
+        },
     ];
 
     recipes.forEach((recipe) => {

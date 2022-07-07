@@ -11,8 +11,8 @@ onEvent('recipes', (event) => {
             output: 'astralsorcery:glass_lens',
             count: 2,
             duration: 100,
-            id: `astralsorcery:infuser/glass_pane`
-        }
+            id: `astralsorcery:infuser/glass_pane`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -26,7 +26,7 @@ onEvent('recipes', (event) => {
                 duration: recipe.duration,
                 consumeMultipleFluids: false,
                 acceptChaliceInput: true,
-                copyNBTToOutputs: false
+                copyNBTToOutputs: false,
             })
             .id(recipe.id);
     });

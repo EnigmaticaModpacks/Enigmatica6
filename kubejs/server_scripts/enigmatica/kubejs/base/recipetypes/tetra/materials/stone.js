@@ -18,10 +18,10 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'stone_glyph', texture: 'stone' },
                     textures: ['crude', 'default'],
                     material: { tag: 'quark:stone_tool_materials' },
-                    requiredTools: { hammer: 1 }
-                }
-            ]
-        }
+                    requiredTools: { hammer: 1 },
+                },
+            ],
+        },
     ];
 
     data.forEach((recipeType) => {

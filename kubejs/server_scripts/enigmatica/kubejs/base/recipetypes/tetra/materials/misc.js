@@ -18,7 +18,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'blaze_rod_glyph', texture: 'blaze_rod' },
                     textures: ['metal', 'default'],
                     material: { item: 'minecraft:blaze_rod' },
-                    requiredTools: { hammer: 1 }
+                    requiredTools: { hammer: 1 },
                 },
                 {
                     key: 'vent_plate',
@@ -35,7 +35,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'vent_glyph', texture: 'vent' },
                     textures: ['vent', 'metal'],
                     material: { item: 'tetra:vent_plate' },
-                    requiredTools: { hammer: 5 }
+                    requiredTools: { hammer: 5 },
                 },
                 {
                     key: 'stick',
@@ -51,7 +51,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     toolEfficiency: '0',
                     tints: { glyph: 'stick_glyph', texture: 'stick' },
                     textures: ['crude', 'default'],
-                    material: { item: 'minecraft:stick' }
+                    material: { item: 'minecraft:stick' },
                 },
                 {
                     key: 'forged_beam',
@@ -68,7 +68,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'forged_beam_glyph', texture: 'forged_beam' },
                     textures: ['metal', 'default'],
                     material: { item: 'tetra:forged_beam' },
-                    requiredTools: { hammer: 1 }
+                    requiredTools: { hammer: 1 },
                 },
                 {
                     key: 'end_rod',
@@ -85,12 +85,12 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'end_rod_glyph', texture: 'end_rod' },
                     textures: ['metal', 'default'],
                     material: { item: 'minecraft:end_rod' },
-                    requiredTools: { hammer: 1 }
-                }
+                    requiredTools: { hammer: 1 },
+                },
             ],
             type: 'compat',
-            recipes: []
-        }
+            recipes: [],
+        },
     ];
 
     data.forEach((recipeType) => {

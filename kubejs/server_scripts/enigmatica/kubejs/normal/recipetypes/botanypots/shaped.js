@@ -10,10 +10,10 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:terracotta',
                 B: 'minecraft:flower_pot',
                 C: 'minecraft:bone_block',
-                D: 'minecraft:water_bucket'
+                D: 'minecraft:water_bucket',
             },
-            id: 'botanypots:crafting/botany_pot'
-        }
+            id: 'botanypots:crafting/botany_pot',
+        },
     ];
 
     colors.forEach((color) => {
@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
                 A: `minecraft:${color}_terracotta`,
                 B: 'minecraft:flower_pot',
                 C: 'minecraft:bone_block',
-                D: 'minecraft:water_bucket'
+                D: 'minecraft:water_bucket',
             })
             .id(`botanypots:crafting/${color}_botany_pot`);
         event.remove({ id: `botanypots:crafting/compact_hopper_${color}_botany_pot` });

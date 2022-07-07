@@ -5,19 +5,19 @@ onEvent('recipes', (event) => {
             pattern: [' A', 'B '],
             key: {
                 A: '#forge:ingots/iron',
-                B: '#forge:rods/iron'
+                B: '#forge:rods/iron',
             },
-            id: 'chisel:iron_chisel'
+            id: 'chisel:iron_chisel',
         },
         {
             output: 'chisel:diamond_chisel',
             pattern: [' A', 'B '],
             key: {
                 A: '#forge:gems/diamond',
-                B: '#forge:rods/iron'
+                B: '#forge:rods/iron',
             },
-            id: 'chisel:diamond_chisel'
-        }
+            id: 'chisel:diamond_chisel',
+        },
     ];
 
     recipes.forEach((recipe) => {

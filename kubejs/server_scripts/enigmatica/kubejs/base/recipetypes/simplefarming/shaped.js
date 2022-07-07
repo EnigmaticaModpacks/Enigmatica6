@@ -7,9 +7,9 @@ onEvent('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: '#forge:fruits/strawberries'
+                D: '#forge:fruits/strawberries',
             },
-            id: 'simplefarming:strawberry_pie'
+            id: 'simplefarming:strawberry_pie',
         },
         {
             output: 'simplefarming:raspberry_pie',
@@ -18,9 +18,9 @@ onEvent('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: '#forge:fruits/raspberries'
+                D: '#forge:fruits/raspberries',
             },
-            id: 'simplefarming:raspberry_pie'
+            id: 'simplefarming:raspberry_pie',
         },
         {
             output: 'simplefarming:plum_pie',
@@ -29,9 +29,9 @@ onEvent('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: '#forge:fruits/plum'
+                D: '#forge:fruits/plum',
             },
-            id: 'simplefarming:plum_pie'
+            id: 'simplefarming:plum_pie',
         },
         {
             output: 'simplefarming:pear_pie',
@@ -40,9 +40,9 @@ onEvent('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: '#forge:fruits/pear'
+                D: '#forge:fruits/pear',
             },
-            id: 'simplefarming:pear_pie'
+            id: 'simplefarming:pear_pie',
         },
         {
             output: 'simplefarming:peanut_butter_pie',
@@ -51,9 +51,9 @@ onEvent('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: '#forge:crops/peanut'
+                D: '#forge:crops/peanut',
             },
-            id: 'simplefarming:peanut_butter_pie'
+            id: 'simplefarming:peanut_butter_pie',
         },
         {
             output: 'simplefarming:cherry_pie',
@@ -62,9 +62,9 @@ onEvent('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: '#forge:fruits/cherries'
+                D: '#forge:fruits/cherries',
             },
-            id: 'simplefarming:cherry_pie'
+            id: 'simplefarming:cherry_pie',
         },
         {
             output: 'simplefarming:blackberry_pie',
@@ -73,9 +73,9 @@ onEvent('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: '#forge:fruits/blackberries'
+                D: '#forge:fruits/blackberries',
             },
-            id: 'simplefarming:blackberry_pie'
+            id: 'simplefarming:blackberry_pie',
         },
         {
             output: 'simplefarming:apricot_pie',
@@ -84,10 +84,10 @@ onEvent('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: '#forge:fruits/apricot'
+                D: '#forge:fruits/apricot',
             },
-            id: 'simplefarming:apricot_pie'
-        }
+            id: 'simplefarming:apricot_pie',
+        },
     ];
 
     recipes.forEach((recipe) => {

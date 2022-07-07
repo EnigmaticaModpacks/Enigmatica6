@@ -14,11 +14,11 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/neptunium',
                 '#botania:runes/water',
                 'undergarden:masticator_scales',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:hydroangeas',
             count: 1,
-            id: 'botania:petal_apothecary/hydroangeas'
+            id: 'botania:petal_apothecary/hydroangeas',
         },
         {
             inputs: [
@@ -29,11 +29,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/fire',
                 '#botania:runes/air',
                 'undergarden:masticator_scales',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:endoflame',
             count: 1,
-            id: 'botania:petal_apothecary/endoflame'
+            id: 'botania:petal_apothecary/endoflame',
         },
         {
             inputs: [
@@ -43,11 +43,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/earth',
                 '#botania:runes/fire',
                 'undergarden:masticator_scales',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:thermalily',
             count: 1,
-            id: 'botania:petal_apothecary/thermalily'
+            id: 'botania:petal_apothecary/thermalily',
         },
         {
             inputs: [
@@ -60,11 +60,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/mana',
                 '#botania:runes/mana',
                 'undergarden:masticator_scales',
-                'botania:life_essence'
+                'botania:life_essence',
             ],
             output: 'botania:rosa_arcana',
             count: 1,
-            id: 'botania:petal_apothecary/rosa_arcana'
+            id: 'botania:petal_apothecary/rosa_arcana',
         },
         {
             inputs: [
@@ -75,11 +75,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/green',
                 '#botania:runes/gluttony',
                 'undergarden:masticator_scales',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:munchdew',
             count: 1,
-            id: 'botania:petal_apothecary/munchdew'
+            id: 'botania:petal_apothecary/munchdew',
         },
         {
             inputs: [
@@ -92,11 +92,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/wrath',
                 '#botania:runes/fire',
                 'undergarden:masticator_scales',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:entropinnyum',
             count: 1,
-            id: 'botania:petal_apothecary/entropinnyum'
+            id: 'botania:petal_apothecary/entropinnyum',
         },
         {
             inputs: [
@@ -108,11 +108,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/brown',
                 '#botania:runes/gluttony',
                 'undergarden:masticator_scales',
-                'botania:pixie_dust'
+                'botania:pixie_dust',
             ],
             output: 'botania:kekimurus',
             count: 1,
-            id: 'botania:petal_apothecary/kekimurus'
+            id: 'botania:petal_apothecary/kekimurus',
         },
         {
             inputs: [
@@ -122,11 +122,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/yellow',
                 '#botania:petals/red',
                 'undergarden:masticator_scales',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:gourmaryllis',
             count: 1,
-            id: 'botania:petal_apothecary/gourmaryllis'
+            id: 'botania:petal_apothecary/gourmaryllis',
         },
         {
             inputs: [
@@ -138,11 +138,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/summer',
                 '#botania:runes/water',
                 'undergarden:masticator_scales',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:narslimmus',
             count: 1,
-            id: 'botania:petal_apothecary/narslimmus'
+            id: 'botania:petal_apothecary/narslimmus',
         },
         {
             inputs: [
@@ -157,11 +157,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/winter',
                 '#botania:runes/air',
                 'undergarden:masticator_scales',
-                'botania:pixie_dust'
+                'botania:pixie_dust',
             ],
             output: 'botania:spectrolus',
             count: 1,
-            id: 'botania:petal_apothecary/spectrolus'
+            id: 'botania:petal_apothecary/spectrolus',
         },
         {
             inputs: [
@@ -174,11 +174,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/earth',
                 '#botania:runes/air',
                 'undergarden:masticator_scales',
-                'naturesaura:calling_spirit'
+                'naturesaura:calling_spirit',
             ],
             output: 'botania:dandelifeon',
             count: 1,
-            id: 'botania:petal_apothecary/dandelifeon'
+            id: 'botania:petal_apothecary/dandelifeon',
         },
         {
             inputs: [
@@ -190,11 +190,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/earth',
                 '#botania:runes/pride',
                 'undergarden:masticator_scales',
-                'botania:pixie_dust'
+                'botania:pixie_dust',
             ],
             output: 'botania:rafflowsia',
             count: 1,
-            id: 'botania:petal_apothecary/rafflowsia'
+            id: 'botania:petal_apothecary/rafflowsia',
         },
         {
             inputs: [
@@ -206,11 +206,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/envy',
                 '#botania:runes/wrath',
                 'undergarden:masticator_scales',
-                'botania:life_essence'
+                'botania:life_essence',
             ],
             output: 'botania:shulk_me_not',
             count: 1,
-            id: 'botania:petal_apothecary/shulk_me_not'
+            id: 'botania:petal_apothecary/shulk_me_not',
         },
 
         /// Functional Flora
@@ -222,11 +222,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/yellow',
                 '#botania:runes/spring',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:agricarnation',
             count: 1,
-            id: 'botania:petal_apothecary/agricarnation'
+            id: 'botania:petal_apothecary/agricarnation',
         },
         {
             inputs: [
@@ -236,11 +236,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/cyan',
                 '#botania:petals/cyan',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:bellethorn',
             count: 1,
-            id: 'botania:petal_apothecary/bellethorn'
+            id: 'botania:petal_apothecary/bellethorn',
         },
         {
             inputs: [
@@ -248,11 +248,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/green',
                 '#botania:petals/green',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:bergamute',
             count: 1,
-            id: 'botania:petal_apothecary/bergamute'
+            id: 'botania:petal_apothecary/bergamute',
         },
         {
             inputs: [
@@ -261,11 +261,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/gray',
                 '#botania:petals/cyan',
                 '#botania:runes/earth',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:clayconia',
             count: 1,
-            id: 'botania:petal_apothecary/clayconia'
+            id: 'botania:petal_apothecary/clayconia',
         },
         {
             inputs: [
@@ -275,11 +275,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/yellow',
                 '#botania:runes/air',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:daffomill',
             count: 1,
-            id: 'botania:petal_apothecary/daffomill'
+            id: 'botania:petal_apothecary/daffomill',
         },
         {
             inputs: [
@@ -289,11 +289,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/cyan',
                 '#botania:petals/cyan',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:dreadthorn',
             count: 1,
-            id: 'botania:petal_apothecary/dreadthorn'
+            id: 'botania:petal_apothecary/dreadthorn',
         },
         {
             inputs: [
@@ -303,11 +303,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/light_gray',
                 '#botania:runes/fire',
                 '#botania:runes/summer',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:exoflame',
             count: 1,
-            id: 'botania:petal_apothecary/exoflame'
+            id: 'botania:petal_apothecary/exoflame',
         },
         {
             inputs: [
@@ -317,11 +317,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/yellow',
                 '#botania:petals/orange',
                 '#botania:runes/spring',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:fallen_kanade',
             count: 1,
-            id: 'botania:petal_apothecary/fallen_kanade'
+            id: 'botania:petal_apothecary/fallen_kanade',
         },
         {
             inputs: [
@@ -331,11 +331,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/light_gray',
                 '#botania:runes/air',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:hopperhock',
             count: 1,
-            id: 'botania:petal_apothecary/hopperhock'
+            id: 'botania:petal_apothecary/hopperhock',
         },
         {
             inputs: [
@@ -347,11 +347,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/water',
                 '#botania:runes/autumn',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:hyacidus',
             count: 1,
-            id: 'botania:petal_apothecary/hyacidus'
+            id: 'botania:petal_apothecary/hyacidus',
         },
         {
             inputs: [
@@ -360,11 +360,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/green',
                 '#botania:runes/spring',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:jaded_amaranthus',
             count: 1,
-            id: 'botania:petal_apothecary/jaded_amaranthus'
+            id: 'botania:petal_apothecary/jaded_amaranthus',
         },
         {
             inputs: [
@@ -374,11 +374,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/light_gray',
                 '#botania:runes/water',
                 '#botania:runes/air',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:jiyuulia',
             count: 1,
-            id: 'botania:petal_apothecary/jiyuulia'
+            id: 'botania:petal_apothecary/jiyuulia',
         },
         {
             inputs: [
@@ -387,11 +387,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/red',
                 '#botania:petals/cyan',
                 '#forge:dusts/mana',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:manastar',
             count: 1,
-            id: 'botania:petal_apothecary/manastar'
+            id: 'botania:petal_apothecary/manastar',
         },
         {
             inputs: [
@@ -402,11 +402,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/earth',
                 '#botania:runes/fire',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:marimorphosis',
             count: 1,
-            id: 'botania:petal_apothecary/marimorphosis'
+            id: 'botania:petal_apothecary/marimorphosis',
         },
         {
             inputs: [
@@ -416,11 +416,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/gray',
                 '#botania:runes/earth',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:medumone',
             count: 1,
-            id: 'botania:petal_apothecary/medumone'
+            id: 'botania:petal_apothecary/medumone',
         },
         {
             inputs: [
@@ -431,11 +431,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/orange',
                 '#botania:runes/lust',
                 '#botania:runes/fire',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:pollidisiac',
             count: 1,
-            id: 'botania:petal_apothecary/pollidisiac'
+            id: 'botania:petal_apothecary/pollidisiac',
         },
         {
             inputs: [
@@ -444,11 +444,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/white',
                 '#botania:petals/white',
                 'minecraft:conduit',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:pure_daisy',
             count: 1,
-            id: 'botania:petal_apothecary/pure_daisy'
+            id: 'botania:petal_apothecary/pure_daisy',
         },
         {
             inputs: [
@@ -457,11 +457,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/yellow',
                 '#botania:runes/earth',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:rannuncarpus',
             count: 1,
-            id: 'botania:petal_apothecary/rannuncarpus'
+            id: 'botania:petal_apothecary/rannuncarpus',
         },
         {
             inputs: [
@@ -470,11 +470,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/red',
                 '#botania:petals/blue',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:solegnolia',
             count: 1,
-            id: 'botania:petal_apothecary/solegnolia'
+            id: 'botania:petal_apothecary/solegnolia',
         },
         {
             inputs: [
@@ -484,11 +484,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/light_gray',
                 '#botania:runes/air',
                 '#botania:runes/earth',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:tangleberrie',
             count: 1,
-            id: 'botania:petal_apothecary/tangleberrie'
+            id: 'botania:petal_apothecary/tangleberrie',
         },
         {
             inputs: [
@@ -497,11 +497,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/orange',
                 '#botania:petals/lime',
                 '#botania:runes/autumn',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:tigerseye',
             count: 1,
-            id: 'botania:petal_apothecary/tigerseye'
+            id: 'botania:petal_apothecary/tigerseye',
         },
         {
             inputs: [
@@ -514,11 +514,11 @@ onEvent('recipes', (event) => {
                 '#botania:runes/sloth',
                 '#botania:runes/lust',
                 'botania:redstone_root',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'botania:vinculotus',
             count: 1,
-            id: 'botania:petal_apothecary/vinculotus'
+            id: 'botania:petal_apothecary/vinculotus',
         },
         {
             inputs: [
@@ -530,11 +530,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/green',
                 '#botania:runes/water',
                 '#botania:runes/sloth',
-                'botania:pixie_dust'
+                'botania:pixie_dust',
             ],
             output: 'mythicbotany:aquapanthus',
             count: 1,
-            id: 'mythicbotany:petal_apothecary/aquapanthus'
+            id: 'mythicbotany:petal_apothecary/aquapanthus',
         },
         {
             inputs: [
@@ -543,11 +543,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/purple',
                 '#botania:petals/cyan',
                 '#botania:runes/fire',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'mythicbotany:hellebore',
             count: 1,
-            id: 'mythicbotany:petal_apothecary/hellebore'
+            id: 'mythicbotany:petal_apothecary/hellebore',
         },
         {
             inputs: [
@@ -557,11 +557,11 @@ onEvent('recipes', (event) => {
                 '#botania:petals/light_gray',
                 '#botania:runes/fire',
                 '#forge:dusts/blaze',
-                'thermal:phytogro'
+                'thermal:phytogro',
             ],
             output: 'mythicbotany:exoblaze',
             count: 1,
-            id: 'mythicbotany:petal_apothecary/exoblaze'
+            id: 'mythicbotany:petal_apothecary/exoblaze',
         },
 
         /// Other
@@ -569,61 +569,61 @@ onEvent('recipes', (event) => {
             inputs: ['#forge:mushrooms', '#forge:mushrooms', 'thermal:phytogro'],
             output: 'eidolon:fungus_sprouts',
             count: 2,
-            id: `${id_prefix}fungus_sprouts`
+            id: `${id_prefix}fungus_sprouts`,
         },
         {
             inputs: ['minecraft:mossy_stone_bricks', 'naturesaura:gold_fiber', 'thermal:phytogro'],
             output: 'naturesaura:gold_brick',
             count: 1,
-            id: `${id_prefix}gold_brick`
+            id: `${id_prefix}gold_brick`,
         },
         {
             inputs: ['minecraft:cobblestone', 'minecraft:vine', 'thermal:phytogro'],
             output: 'minecraft:mossy_cobblestone',
             count: 1,
-            id: `minecraft:mossy_cobblestone`
+            id: `minecraft:mossy_cobblestone`,
         },
         {
             inputs: ['minecraft:stone_bricks', 'minecraft:vine', 'thermal:phytogro'],
             output: 'minecraft:mossy_stone_bricks',
             count: 1,
-            id: `minecraft:mossy_stone_bricks`
+            id: `minecraft:mossy_stone_bricks`,
         },
         {
             inputs: ['byg:red_rock_bricks', 'minecraft:vine', 'thermal:phytogro'],
             output: 'byg:mossy_red_rock_bricks',
             count: 1,
-            id: `byg:mossy_red_rock_bricks`
+            id: `byg:mossy_red_rock_bricks`,
         },
         {
             inputs: ['minecraft:netherrack', 'minecraft:vine', 'thermal:phytogro'],
             output: 'byg:mossy_netherrack',
             count: 1,
-            id: `byg:mossy_netherrack`
+            id: `byg:mossy_netherrack`,
         },
         {
             inputs: ['architects_palette:heavy_stone_bricks', 'minecraft:vine', 'thermal:phytogro'],
             output: 'architects_palette:heavy_mossy_stone_bricks',
             count: 1,
-            id: `architects_palette:heavy_mossy_stone_bricks`
+            id: `architects_palette:heavy_mossy_stone_bricks`,
         },
         {
             inputs: ['minecraft:stone', 'minecraft:vine', 'thermal:phytogro'],
             output: 'byg:mossy_stone',
             count: 1,
             count: 1,
-            id: `byg:mossy_stone`
+            id: `byg:mossy_stone`,
         },
         {
             inputs: [
                 'minecraft:warped_fungus',
                 'minecraft:warped_fungus',
                 'eidolon:ender_calx',
-                '#forge:crops/nether_wart'
+                '#forge:crops/nether_wart',
             ],
             output: 'eidolon:warped_sprouts',
             count: 2,
-            id: `${id_prefix}warped_sprouts`
+            id: `${id_prefix}warped_sprouts`,
         },
         {
             inputs: [
@@ -634,17 +634,17 @@ onEvent('recipes', (event) => {
                 '#forge:gems/aquamarine',
                 'minecraft:heart_of_the_sea',
                 '#forge:gems/aquamarine',
-                'eidolon:unholy_symbol'
+                'eidolon:unholy_symbol',
             ],
             output: 'eidolon:unholy_effigy',
             count: 1,
-            id: `${id_prefix}unholy_effigy`
+            id: `${id_prefix}unholy_effigy`,
         },
         {
             inputs: ['minecraft:nether_bricks', 'naturesaura:gold_fiber', 'thermal:phytogro'],
             output: 'naturesaura:gold_nether_brick',
             count: 1,
-            id: `${id_prefix}gold_nether_brick`
+            id: `${id_prefix}gold_nether_brick`,
         },
         {
             inputs: [
@@ -659,12 +659,12 @@ onEvent('recipes', (event) => {
                 'atum:geb_godshard',
                 'botania:floating_rosa_arcana',
                 'atum:horus_godshard',
-                '#forge:ingots/sky'
+                '#forge:ingots/sky',
             ],
             output: 'botania:laputa_shard',
             count: 1,
-            id: `${id_prefix}laputa_shard`
-        }
+            id: `${id_prefix}laputa_shard`,
+        },
     ];
 
     recipes.forEach((recipe) => {

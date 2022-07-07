@@ -7,6 +7,6 @@ onEvent('item.tags', (event) => {
         'alexsmobs:blobfish',
         'betterendforge:end_fish_raw',
         'upgrade_aquatic:pike',
-        'upgrade_aquatic:lionfish'
+        'upgrade_aquatic:lionfish',
     ]);
 });

@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
             count: 1,
             mana: 3000,
             catalyst: 'architects_palette:sunstone',
-            id: 'botania:mana_infusion/manasteel'
+            id: 'botania:mana_infusion/manasteel',
         },
         {
             input: '#forge:storage_blocks/froststeel',
@@ -20,21 +20,21 @@ onEvent('recipes', (event) => {
             count: 1,
             mana: 27000,
             catalyst: 'architects_palette:sunstone',
-            id: 'botania:mana_infusion/manasteel_block'
+            id: 'botania:mana_infusion/manasteel_block',
         },
         {
             input: 'resourcefulbees:mana_honeycomb',
             output: 'botania:manasteel_ingot',
             count: 1,
             mana: 2000,
-            catalyst: 'architects_palette:sunstone'
+            catalyst: 'architects_palette:sunstone',
         },
         {
             input: 'resourcefulbees:mana_honeycomb_block',
             output: 'botania:manasteel_block',
             count: 1,
             mana: 19000,
-            catalyst: 'architects_palette:sunstone'
+            catalyst: 'architects_palette:sunstone',
         },
         {
             input: 'betterendforge:silk_fiber',
@@ -42,7 +42,7 @@ onEvent('recipes', (event) => {
             count: 6,
             mana: 5000,
             catalyst: 'architects_palette:sunstone',
-            id: 'botania:mana_infusion/mana_string'
+            id: 'botania:mana_infusion/mana_string',
         },
         {
             input: '#forge:gems/aquamarine',
@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
             count: 1,
             mana: 50000,
             catalyst: 'architects_palette:moonstone',
-            id: 'astralsorcery:infuser/aquamarine'
+            id: 'astralsorcery:infuser/aquamarine',
         },
         {
             input: 'rftoolsbase:infused_diamond',
@@ -58,7 +58,7 @@ onEvent('recipes', (event) => {
             count: 1,
             mana: 50000,
             catalyst: 'architects_palette:sunstone',
-            id: 'botania:mana_infusion/mana_diamond'
+            id: 'botania:mana_infusion/mana_diamond',
         },
         {
             input: 'rftoolsbase:infused_enderpearl',
@@ -66,7 +66,7 @@ onEvent('recipes', (event) => {
             count: 1,
             mana: 35000,
             catalyst: 'architects_palette:moonstone',
-            id: 'botania:mana_infusion/mana_pearl'
+            id: 'botania:mana_infusion/mana_pearl',
         },
         {
             input: 'ars_nouveau:marvelous_clay',
@@ -74,7 +74,7 @@ onEvent('recipes', (event) => {
             count: 1,
             mana: 10000,
             catalyst: 'architects_palette:sunstone',
-            id: 'ars_nouveau:mythical_clay'
+            id: 'ars_nouveau:mythical_clay',
         },
 
         /// Patchouli Safe Removals
@@ -85,7 +85,7 @@ onEvent('recipes', (event) => {
             count: 1,
             mana: 10,
             catalyst: 'architects_palette:moonstone',
-            id: 'botania:mana_infusion/mana_powder_dye'
+            id: 'botania:mana_infusion/mana_powder_dye',
         },
         {
             input: 'kubejs:altered_recipe_indicator',
@@ -93,8 +93,8 @@ onEvent('recipes', (event) => {
             count: 1,
             mana: 10,
             catalyst: 'architects_palette:moonstone',
-            id: 'botania:mana_infusion/mana_powder_dust'
-        }
+            id: 'botania:mana_infusion/mana_powder_dust',
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -102,13 +102,13 @@ onEvent('recipes', (event) => {
             type: 'botania:mana_infusion',
             input: Ingredient.of(recipe.input).toJson(),
             output: { item: recipe.output, count: recipe.count },
-            mana: recipe.mana
+            mana: recipe.mana,
         };
 
         if (recipe.catalyst) {
             constructed_recipe.catalyst = {
                 type: 'block',
-                block: recipe.catalyst
+                block: recipe.catalyst,
             };
         }
 

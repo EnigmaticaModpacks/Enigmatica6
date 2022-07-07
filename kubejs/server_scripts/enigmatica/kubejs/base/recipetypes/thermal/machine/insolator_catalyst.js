@@ -10,7 +10,7 @@ onEvent('recipes', (event) => {
                 energyMod: 0.8,
                 minChance: 0.8,
                 useChance: 0.8,
-                id: `${id_prefix}fertilizer`
+                id: `${id_prefix}fertilizer`,
             },
             {
                 input: 'botania:fertilizer',
@@ -19,7 +19,7 @@ onEvent('recipes', (event) => {
                 energyMod: 0.9,
                 minChance: 0.5,
                 useChance: 0.5,
-                id: `${id_prefix}floral_fertilizer`
+                id: `${id_prefix}floral_fertilizer`,
             },
             {
                 input: 'farmingforblockheads:red_fertilizer', // no green fertilizer here too?
@@ -28,9 +28,9 @@ onEvent('recipes', (event) => {
                 energyMod: 0.8,
                 minChance: 0.15,
                 useChance: 0.15,
-                id: `${id_prefix}red_fertilizer`
-            }
-        ]
+                id: `${id_prefix}red_fertilizer`,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {

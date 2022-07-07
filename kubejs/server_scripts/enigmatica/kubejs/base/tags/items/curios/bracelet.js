@@ -5,6 +5,6 @@ onEvent('item.tags', (event) => {
         'atum:relic_sapphire_bracelet',
         'atum:relic_ruby_bracelet',
         'atum:relic_emerald_bracelet',
-        'atum:relic_diamond_bracelet'
+        'atum:relic_diamond_bracelet',
     ]);
 });

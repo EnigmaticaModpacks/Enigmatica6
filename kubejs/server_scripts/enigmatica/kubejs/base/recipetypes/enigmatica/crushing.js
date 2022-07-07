@@ -17,7 +17,7 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 50,
             ignore_occultism_multiplier: true,
-            id_suffix: 'bone_meal_from_shark_tooth'
+            id_suffix: 'bone_meal_from_shark_tooth',
         },
         {
             secondary_output: Item.of('minecraft:bone_meal', 2).chance(0.25),
@@ -26,7 +26,7 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 150,
             ignore_occultism_multiplier: true,
-            id_suffix: 'bone_meal_from_bone_serpent_tooth'
+            id_suffix: 'bone_meal_from_bone_serpent_tooth',
         },
         {
             secondary_output: Item.of('minecraft:bone_meal', 2).chance(0.25),
@@ -35,7 +35,7 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 150,
             ignore_occultism_multiplier: true,
-            id_suffix: 'bone_meal_from_thrasher_tooth'
+            id_suffix: 'bone_meal_from_thrasher_tooth',
         },
         {
             secondary_output: Item.of('minecraft:bone_meal', 2).chance(0.25),
@@ -44,7 +44,7 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 150,
             ignore_occultism_multiplier: true,
-            id_suffix: 'bone_meal_from_cachalot_whale_tooth'
+            id_suffix: 'bone_meal_from_cachalot_whale_tooth',
         },
         {
             secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
@@ -53,7 +53,7 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 50,
             ignore_occultism_multiplier: true,
-            id_suffix: 'bone_meal_from_serrated_shark_tooth'
+            id_suffix: 'bone_meal_from_serrated_shark_tooth',
         },
         {
             secondary_output: Item.of('astralsorcery:aquamarine').chance(0.15),
@@ -62,8 +62,8 @@ onEvent('recipes', (event) => {
             experience: 0.5,
             duration: 150,
             ignore_occultism_multiplier: false,
-            id_suffix: 'aquamarine'
-        }
+            id_suffix: 'aquamarine',
+        },
     ];
 
     recipetypes_crushing = (event, recipe) => {
@@ -72,7 +72,7 @@ onEvent('recipes', (event) => {
             .custom({
                 type: 'pedestals:pedestal_crushing',
                 ingredient: recipe.input,
-                result: recipe.output
+                result: recipe.output,
             })
             .id(`${id_prefix}/pedestal_crushing/${recipe.id_suffix}`);
 
@@ -83,7 +83,7 @@ onEvent('recipes', (event) => {
                 ingredient: recipe.input,
                 result: recipe.output,
                 crushing_time: recipe.duration,
-                ignore_crushing_multiplier: recipe.ignore_occultism_multiplier
+                ignore_crushing_multiplier: recipe.ignore_occultism_multiplier,
             })
             .id(`${id_prefix}/occultism_crushing/${recipe.id_suffix}`);
 
@@ -98,7 +98,7 @@ onEvent('recipes', (event) => {
                 duration: recipe.duration,
                 consumeMultipleFluids: false,
                 acceptChaliceInput: true,
-                copyNBTToOutputs: false
+                copyNBTToOutputs: false,
             })
             .id(`${id_prefix}/astralsorcery_infuser/${recipe.id_suffix}`);
 
@@ -107,7 +107,7 @@ onEvent('recipes', (event) => {
             .custom({
                 type: 'industrialforegoing:crusher',
                 input: recipe.input,
-                output: recipe.output
+                output: recipe.output,
             })
             .id(`${id_prefix}/industrialforegoing_crusher/${recipe.id_suffix}`);
 

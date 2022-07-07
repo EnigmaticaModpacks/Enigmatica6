@@ -3,6 +3,6 @@ onEvent('item.tags', (event) => {
         'mekanism:enriched_diamond',
         'botania:mana_diamond',
         'emendatusenigmatica:diamond_gear',
-        'minecraft:diamond_block'
+        'minecraft:diamond_block',
     ]);
 });

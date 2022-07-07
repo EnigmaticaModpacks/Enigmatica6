@@ -4,8 +4,8 @@ onEvent('recipes', (event) => {
             input: 'minecraft:chicken',
             output: 'ars_nouveau:glyph_filter_is_mature',
             tier: 'TWO',
-            id: 'toomanyglyphs:glyph_filter_is_mature'
-        }
+            id: 'toomanyglyphs:glyph_filter_is_mature',
+        },
     ];
 
     /*

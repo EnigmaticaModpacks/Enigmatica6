@@ -63,7 +63,7 @@ onEvent('recipes', (event) => {
             mek_clump,
             mek_dirty_dust,
             dust,
-            ingot
+            ingot,
         );
 
         minecraft_ore_ingot_smelting(event, material, ore, ingot);
@@ -136,19 +136,19 @@ onEvent('recipes', (event) => {
                 type: 'astralsorcery:infuser',
                 fluidInput: 'astralsorcery:liquid_starlight',
                 input: {
-                    tag: input
+                    tag: input,
                 },
                 output: {
                     item: output,
-                    count: count
+                    count: count,
                 },
                 consumptionChance: 0.1,
                 duration: 100,
                 consumeMultipleFluids: false,
                 acceptChaliceInput: true,
-                copyNBTToOutputs: false
+                copyNBTToOutputs: false,
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}${arguments.callee.name}/`,
         );
     }
 
@@ -163,9 +163,9 @@ onEvent('recipes', (event) => {
                 ingredients: [{ tag: tag }, { tag: tag }],
                 result: Ingredient.of(ingot, 3),
                 experience: 2,
-                smelttime: 300
+                smelttime: 300,
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}${arguments.callee.name}/`,
         );
     }
 
@@ -184,7 +184,7 @@ onEvent('recipes', (event) => {
 
         try {
             secondaryOutput = getPreferredItemInTag(
-                Ingredient.of(`#bloodmagic:fragments/${materialProperties.secondary}`)
+                Ingredient.of(`#bloodmagic:fragments/${materialProperties.secondary}`),
             ).id;
         } catch (err) {
             secondaryOutput = fragment;
@@ -194,7 +194,7 @@ onEvent('recipes', (event) => {
         event.recipes.bloodmagic
             .arc(Item.of(fragment, 3), `#forge:ores/${material}`, '#bloodmagic:arc/explosive', [
                 Item.of(fragment, 2).chance(0.25),
-                Item.of(secondaryOutput, 2).chance(0.25)
+                Item.of(secondaryOutput, 2).chance(0.25),
             ])
             .consumeIngredient(false)
             .id(`bloodmagic:arc/fragments${material}`);
@@ -203,7 +203,7 @@ onEvent('recipes', (event) => {
         event.recipes.bloodmagic
             .arc(gravel, `#bloodmagic:fragments/${material}`, '#bloodmagic:arc/resonator', [
                 Item.of('bloodmagic:corrupted_tinydust', 1).chance(0.05),
-                Item.of('bloodmagic:corrupted_tinydust', 1).chance(0.01)
+                Item.of('bloodmagic:corrupted_tinydust', 1).chance(0.01),
             ])
             .consumeIngredient(false)
             .id(`bloodmagic:arc/gravels${material}`);
@@ -256,7 +256,7 @@ onEvent('recipes', (event) => {
                 .syphon(400)
                 .ticks(200)
                 .upgradeLevel(1),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}${arguments.callee.name}/`,
         );
     }
     function bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem) {
@@ -305,7 +305,7 @@ onEvent('recipes', (event) => {
 
         try {
             secondaryOutput = getPreferredItemInTag(
-                Ingredient.of(`#create:crushed_ores/${materialProperties.secondary}`)
+                Ingredient.of(`#create:crushed_ores/${materialProperties.secondary}`),
             ).id;
             processingTime = materialProperties.createProcessingTime;
         } catch (err) {
@@ -318,7 +318,7 @@ onEvent('recipes', (event) => {
         var outputs = [
             Item.of(primaryOutput),
             Item.of(primaryOutput, primaryCount).withChance(primaryChance),
-            Item.of(secondaryOutput, secondaryCount).withChance(secondaryChance)
+            Item.of(secondaryOutput, secondaryCount).withChance(secondaryChance),
         ];
         event.recipes.create
             .milling(outputs, input)
@@ -332,7 +332,7 @@ onEvent('recipes', (event) => {
             Item.of(primaryOutput),
             Item.of(primaryOutput, primaryCount).withChance(primaryChance),
             Item.of(secondaryOutput, secondaryCount).withChance(secondaryChance),
-            Item.of(stoneOutput).withChance(0.125)
+            Item.of(stoneOutput).withChance(0.125),
         ];
         event.recipes.create
             .crushing(outputs, input)
@@ -378,7 +378,7 @@ onEvent('recipes', (event) => {
         let outputs = [
             Item.of(output, primaryCount),
             Item.of(secondaryOutput, secondaryCount).withChance(secondaryChance),
-            Item.of(stoneOutput).withChance(0.125)
+            Item.of(stoneOutput).withChance(0.125),
         ];
 
         event.recipes.create
@@ -405,7 +405,7 @@ onEvent('recipes', (event) => {
 
         fallback_id(
             event.recipes.create.milling(outputs, input).processingTime(processingTime),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}${arguments.callee.name}/`,
         );
     }
 
@@ -492,7 +492,7 @@ onEvent('recipes', (event) => {
                     ingredient: { tag: recipe.input },
                     result: { fluid: fluid, amount: recipe.amount },
                     temperature: temp,
-                    time: 43
+                    time: 43,
                 })
                 .id(`tconstruct:smeltery/melting/metal/${material}/${recipe.type}`);
         });
@@ -523,7 +523,7 @@ onEvent('recipes', (event) => {
                     result: { fluid: fluid, amount: 144 },
                     temperature: temp,
                     time: 98,
-                    byproducts: [{ fluid: secondaryFluid, amount: 48 }]
+                    byproducts: [{ fluid: secondaryFluid, amount: 48 }],
                 })
                 .id(`tconstruct:smeltery/melting/metal/${material}/ore`);
         }
@@ -537,7 +537,7 @@ onEvent('recipes', (event) => {
         event.replaceInput(
             { id: `emendatusenigmatica:dust_from_chunk/${material}` },
             `emendatusenigmatica:${material}_chunk`,
-            `#forge:ores/${material}`
+            `#forge:ores/${material}`,
         );
     }
 
@@ -583,7 +583,7 @@ onEvent('recipes', (event) => {
 
         fallback_id(
             event.recipes.immersiveengineering.crusher(output, input).energy(2000),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}${arguments.callee.name}/`,
         );
     }
     function immersiveengineering_coin_pressing(event, material, ingot, nugget, coin) {
@@ -598,7 +598,7 @@ onEvent('recipes', (event) => {
         // Ingots to Coins
         fallback_id(
             event.recipes.immersiveengineering.metal_press(output, input, mold),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}${arguments.callee.name}/`,
         );
 
         // Nuggets to Coins
@@ -606,7 +606,7 @@ onEvent('recipes', (event) => {
         input = `3x #forge:nuggets/${material}`;
         fallback_id(
             event.recipes.immersiveengineering.metal_press(output, input, mold),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}${arguments.callee.name}/`,
         );
     }
 
@@ -621,7 +621,7 @@ onEvent('recipes', (event) => {
 
             fallback_id(
                 event.recipes.immersiveengineering.crusher(output, input).energy(2000),
-                `${id_prefix}${arguments.callee.name}/`
+                `${id_prefix}${arguments.callee.name}/`,
             );
         }
     }
@@ -659,7 +659,7 @@ onEvent('recipes', (event) => {
                 secondaryChance = materialProperties.immersiveengineering.secondaryChance;
             event.recipes.immersiveengineering
                 .crusher(Item.of(primaryOutput, primaryCount), input, [
-                    Item.of(secondaryOutput).chance(secondaryChance)
+                    Item.of(secondaryOutput).chance(secondaryChance),
                 ])
                 .energy(2000)
                 .id(`immersiveengineering:crusher/ore_${material}`);
@@ -691,7 +691,7 @@ onEvent('recipes', (event) => {
         event.remove({
             input: input,
             mod: 'mekanism',
-            type: 'mekanism:crushing'
+            type: 'mekanism:crushing',
         });
 
         event.recipes.mekanism.crushing(output, input).id(`mekanism:processing/${material}/to_dust`);
@@ -736,7 +736,7 @@ onEvent('recipes', (event) => {
         mek_clump,
         mek_dirty_dust,
         dust,
-        ingot
+        ingot,
     ) {
         if (ore == air || ingot == air || mek_crystal == air) {
             return;
@@ -761,8 +761,8 @@ onEvent('recipes', (event) => {
                 output: {
                     slurry: mek_dirty_slurry,
                     amount: 1000,
-                    chemicalType: 'slurry'
-                }
+                    chemicalType: 'slurry',
+                },
             })
             .id(`mekanism:processing/${material}/slurry/dirty`);
 
@@ -772,7 +772,7 @@ onEvent('recipes', (event) => {
                 type: 'mekanism:washing',
                 fluidInput: { amount: 5, tag: 'minecraft:water' },
                 slurryInput: { amount: 1, slurry: mek_dirty_slurry },
-                output: { slurry: mek_clean_slurry, amount: 1 }
+                output: { slurry: mek_clean_slurry, amount: 1 },
             })
             .id(`mekanism:processing/${material}/slurry/clean`);
 
@@ -782,7 +782,7 @@ onEvent('recipes', (event) => {
                 type: 'mekanism:crystallizing',
                 chemicalType: 'slurry',
                 input: { amount: 200, slurry: mek_clean_slurry },
-                output: { item: mek_crystal }
+                output: { item: mek_crystal },
             })
             .id(`mekanism:processing/${material}/crystal/from_slurry`);
 
@@ -792,7 +792,7 @@ onEvent('recipes', (event) => {
                 type: 'mekanism:injecting',
                 itemInput: { ingredient: { tag: `mekanism:crystals/${material}` } },
                 gasInput: { amount: 1, gas: 'mekanism:hydrogen_chloride' },
-                output: { item: mek_shard }
+                output: { item: mek_shard },
             })
             .id(`mekanism:processing/${material}/shard/from_crystal`);
         event
@@ -800,7 +800,7 @@ onEvent('recipes', (event) => {
                 type: 'mekanism:injecting',
                 itemInput: { ingredient: { tag: `forge:ores/${material}` } },
                 gasInput: { amount: 1, gas: 'mekanism:hydrogen_chloride' },
-                output: { item: mek_shard, count: 4 }
+                output: { item: mek_shard, count: 4 },
             })
             .id(`mekanism:processing/${material}/shard/from_ore`);
 
@@ -920,9 +920,9 @@ onEvent('recipes', (event) => {
                 ingredient: { tag: input },
                 result: { item: output, count: count },
                 crushing_time: 100,
-                ignore_crushing_multiplier: false
+                ignore_crushing_multiplier: false,
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}${arguments.callee.name}/`,
         );
     }
 
@@ -941,7 +941,7 @@ onEvent('recipes', (event) => {
                 ingredient: { tag: input },
                 result: { item: output, count: count },
                 crushing_time: 100,
-                ignore_crushing_multiplier: false
+                ignore_crushing_multiplier: false,
             })
             .id(`occultism:crushing/${material}_dust`);
     }
@@ -975,9 +975,9 @@ onEvent('recipes', (event) => {
                 ingredient: { tag: input },
                 result: { item: output, count: 1 },
                 crushing_time: 100,
-                ignore_crushing_multiplier: true
+                ignore_crushing_multiplier: true,
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}${arguments.callee.name}/`,
         );
     }
 
@@ -1013,7 +1013,7 @@ onEvent('recipes', (event) => {
             .custom({
                 type: 'pedestals:pedestal_crushing',
                 ingredient: { tag: input },
-                result: { item: output, count: count }
+                result: { item: output, count: count },
             })
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
@@ -1031,7 +1031,7 @@ onEvent('recipes', (event) => {
                 type: 'occultism:crushing',
                 ingredient: { tag: input },
                 result: { item: output, count: count },
-                crushing_time: 100
+                crushing_time: 100,
             })
             .id(`occultism:crushing/${material}_dust`);
 
@@ -1039,7 +1039,7 @@ onEvent('recipes', (event) => {
             .custom({
                 type: 'pedestals:pedestal_crushing',
                 ingredient: { tag: input },
-                result: { item: output, count: count }
+                result: { item: output, count: count },
             })
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
@@ -1063,14 +1063,14 @@ onEvent('recipes', (event) => {
             event.custom({
                 type: 'pedestals:pedestal_crushing',
                 ingredient: {
-                    tag: input
+                    tag: input,
                 },
                 result: {
                     item: output,
-                    count: 1
-                }
+                    count: 1,
+                },
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}${arguments.callee.name}/`,
         );
     }
 
@@ -1101,7 +1101,7 @@ onEvent('recipes', (event) => {
         outputs = [
             Item.of(primaryOutput, primaryCount),
             Item.of(secondaryOutput).chance(0.1),
-            Item.of(stoneOutput).chance(0.2)
+            Item.of(stoneOutput).chance(0.2),
         ];
 
         if (material == 'gold') {
@@ -1154,7 +1154,7 @@ onEvent('recipes', (event) => {
         outputs = [
             Item.of(primaryOutput, primaryCount),
             Item.of(secondaryOutput, secondaryCount).chance(secondaryChance),
-            Item.of(stoneOutput).chance(0.2)
+            Item.of(stoneOutput).chance(0.2),
         ];
         /*
         event.remove({
@@ -1189,7 +1189,7 @@ onEvent('recipes', (event) => {
         event.remove({
             input: input,
             mod: 'thermal',
-            type: 'thermal:pulverizer'
+            type: 'thermal:pulverizer',
         });
         fallback_id(event.recipes.thermal.pulverizer(output, input), `${id_prefix}${arguments.callee.name}/`);
     }
@@ -1230,7 +1230,7 @@ onEvent('recipes', (event) => {
             event.recipes.thermal
                 .chiller(recipe.output, [
                     Fluid.of(`${modId}:molten_${material}`, recipe.amount),
-                    `tconstruct:${recipe.type}_cast`
+                    `tconstruct:${recipe.type}_cast`,
                 ])
                 .energy(recipe.energy)
                 .id(`thermal:compat/tconstruct/chiller_tconstruct_${material}_${recipe.type}`);
@@ -1321,7 +1321,7 @@ onEvent('recipes', (event) => {
             event.recipes.thermal
                 .chiller(recipe.output, [
                     Fluid.of(`${modId}:molten_${material}`, recipe.amount),
-                    `tconstruct:${recipe.type}_cast`
+                    `tconstruct:${recipe.type}_cast`,
                 ])
                 .energy(recipe.energy)
                 .id(`thermal:compat/tconstruct/chiller_tconstruct_${material}_${recipe.type}`);
@@ -1414,15 +1414,15 @@ onEvent('recipes', (event) => {
                     .custom({
                         type: 'tconstruct:casting_table',
                         cast: {
-                            tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`
+                            tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`,
                         },
                         cast_consumed: cast == 'sand' ? true : false,
                         fluid: {
                             name: `${modId}:molten_${material}`,
-                            amount: recipe.amount
+                            amount: recipe.amount,
                         },
                         result: recipe.output,
-                        cooling_time: recipe.cooling
+                        cooling_time: recipe.cooling,
                     })
                     .id(`tconstruct:smeltery/casting/metal/${material}/${recipe.type}_${cast}_cast`);
             });
@@ -1433,10 +1433,10 @@ onEvent('recipes', (event) => {
                     type: 'tconstruct:casting_basin',
                     fluid: {
                         name: `${modId}:molten_${material}`,
-                        amount: 1296
+                        amount: 1296,
                     },
                     result: block,
-                    cooling_time: 171
+                    cooling_time: 171,
                 })
                 .id(`tconstruct:smeltery/casting/metal/${material}/block`);
         }
@@ -1485,12 +1485,12 @@ onEvent('recipes', (event) => {
                     .custom({
                         type: 'tconstruct:casting_table',
                         cast: {
-                            tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`
+                            tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`,
                         },
                         cast_consumed: cast == 'sand' ? true : false,
                         fluid: { name: `${modId}:molten_${material}`, amount: recipe.amount },
                         result: recipe.output,
-                        cooling_time: recipe.cooling
+                        cooling_time: recipe.cooling,
                     })
                     .id(`tconstruct:smeltery/casting/${material}/${recipe.type}_${cast}_cast`);
             });
@@ -1500,7 +1500,7 @@ onEvent('recipes', (event) => {
                 type: 'tconstruct:casting_basin',
                 fluid: { name: `${modId}:molten_${material}`, amount: 1296 },
                 result: block,
-                cooling_time: 193
+                cooling_time: 193,
             })
             .id(`tconstruct:smeltery/casting/${material}/block`);
     }
@@ -1521,7 +1521,7 @@ onEvent('recipes', (event) => {
                 output: block,
                 input: `9x #forge:ingots/${material}`,
                 mold: '#thermal:crafting/dies/packing_3x3',
-                id_suffix: `${material}_ingots_to_block`
+                id_suffix: `${material}_ingots_to_block`,
             });
 
             //split block to ingot
@@ -1529,7 +1529,7 @@ onEvent('recipes', (event) => {
                 output: Item.of(ingot, 9),
                 input: `#forge:storage_blocks/${material}`,
                 mold: '#thermal:crafting/dies/unpacking',
-                id_suffix: `${material}_block_to_ingots`
+                id_suffix: `${material}_block_to_ingots`,
             });
         }
 
@@ -1539,7 +1539,7 @@ onEvent('recipes', (event) => {
                 output: block,
                 input: `9x #forge:gems/${material}`,
                 mold: '#thermal:crafting/dies/packing_3x3',
-                id_suffix: `${material}_gems_to_block`
+                id_suffix: `${material}_gems_to_block`,
             });
 
             //split block to gem
@@ -1547,7 +1547,7 @@ onEvent('recipes', (event) => {
                 output: Item.of(gem, 9),
                 input: `#forge:storage_blocks/${material}`,
                 mold: '#thermal:crafting/dies/unpacking',
-                id_suffix: `${material}_block_to_gems`
+                id_suffix: `${material}_block_to_gems`,
             });
         }
 
@@ -1557,7 +1557,7 @@ onEvent('recipes', (event) => {
                 output: ingot,
                 input: `9x #forge:nuggets/${material}`,
                 mold: '#thermal:crafting/dies/packing_3x3',
-                id_suffix: `${material}_nuggets_to_ingot`
+                id_suffix: `${material}_nuggets_to_ingot`,
             });
 
             //split ingot to nugget
@@ -1565,7 +1565,7 @@ onEvent('recipes', (event) => {
                 output: Item.of(nugget, 9),
                 input: `#forge:ingots/${material}`,
                 mold: '#thermal:crafting/dies/unpacking',
-                id_suffix: `${material}_ingot_to_nuggets`
+                id_suffix: `${material}_ingot_to_nuggets`,
             });
         }
 

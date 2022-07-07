@@ -12,9 +12,9 @@ onEvent('recipes', (event) => {
                 output: Item.of('undergarden:froststeel_ingot', 1),
                 experience: 2,
                 smelttime: 300,
-                id: `${id_prefix}froststeel_ingot`
-            }
-        ]
+                id: `${id_prefix}froststeel_ingot`,
+            },
+        ],
     };
     data.recipes.forEach((recipe) => {
         event
@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
                 ingredients: [Ingredient.of(recipe.inputs[0]).toJson(), Ingredient.of(recipe.inputs[1]).toJson()],
                 result: recipe.output,
                 experience: recipe.experience,
-                smelttime: recipe.smelttime
+                smelttime: recipe.smelttime,
             })
             .id(recipe.id);
     });

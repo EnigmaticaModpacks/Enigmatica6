@@ -8,18 +8,18 @@ onEvent('recipes', (event) => {
             output: 'minecraft:furnace',
             pattern: ['AAA', 'A A', 'AAA'],
             key: {
-                A: '#quark:stone_tool_materials'
+                A: '#quark:stone_tool_materials',
             },
-            id: 'minecraft:furnace'
+            id: 'minecraft:furnace',
         },
         {
             output: Item.of('minecraft:stick', 16),
             pattern: ['A', 'A'],
             key: {
-                A: '#minecraft:logs'
+                A: '#minecraft:logs',
             },
-            id: `${id_prefex}sticks_16`
-        }
+            id: `${id_prefex}sticks_16`,
+        },
     ];
 
     recipes.forEach((recipe) => {

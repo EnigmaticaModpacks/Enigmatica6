@@ -30,6 +30,6 @@ onEvent('item.tags', (event) => {
             'byg:ether_button',
             'byg:bulbis_button',
             'byg:nightshade_button',
-            'ars_nouveau:archwood_button'
+            'ars_nouveau:archwood_button',
         ]);
 });

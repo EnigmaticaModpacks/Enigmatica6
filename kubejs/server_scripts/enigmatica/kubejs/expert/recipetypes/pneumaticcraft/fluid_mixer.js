@@ -10,7 +10,7 @@ onEvent('recipes', (event) => {
             item_output: { item: 'integrateddynamics:crystalized_menril_block' },
             pressure: 4.0,
             time: 300,
-            id: `${id_prefix}crystalized_menril_block`
+            id: `${id_prefix}crystalized_menril_block`,
         },
         {
             input1: { type: 'pneumaticcraft:fluid', fluid: 'tconstruct:ender_slime', amount: 250 },
@@ -18,7 +18,7 @@ onEvent('recipes', (event) => {
             item_output: { item: 'integrateddynamics:crystalized_chorus_block' },
             pressure: 4.0,
             time: 300,
-            id: `${id_prefix}crystalized_chorus_block`
+            id: `${id_prefix}crystalized_chorus_block`,
         },
         {
             input1: { type: 'pneumaticcraft:fluid', fluid: 'tconstruct:venom', amount: 50 },
@@ -26,7 +26,7 @@ onEvent('recipes', (event) => {
             fluid_output: { fluid: 'undergarden:virulent_mix_source', amount: 100 },
             pressure: 2.0,
             time: 30,
-            id: `${id_prefix}virulent_mix`
+            id: `${id_prefix}virulent_mix`,
         },
         {
             input1: { type: 'pneumaticcraft:fluid', fluid: 'tconstruct:ender_slime', amount: 50 },
@@ -34,8 +34,8 @@ onEvent('recipes', (event) => {
             fluid_output: { fluid: 'kubejs:pink_ender_slime', amount: 100 },
             pressure: 4.0,
             time: 30,
-            id: `${id_prefix}pink_ender_slime`
-        }
+            id: `${id_prefix}pink_ender_slime`,
+        },
     ];
 
     recipes.forEach((recipe) => {

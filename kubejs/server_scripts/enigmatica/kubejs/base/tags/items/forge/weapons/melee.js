@@ -32,7 +32,7 @@ onEvent('item.tags', (event) => {
         'atum:iron_greatsword',
         'atum:iron_scimitar',
         'atum:dagger_poison',
-        'atum:iron_dagger'
+        'atum:iron_dagger',
     ];
     var exceptions = [
         'betterendforge:aeternium_hammer_head',
@@ -41,7 +41,7 @@ onEvent('item.tags', (event) => {
         'betterendforge:thallasium_sword_handle',
         'betterendforge:thallasium_sword_blade',
         'betterendforge:terminite_sword_handle',
-        'betterendforge:terminite_sword_blade'
+        'betterendforge:terminite_sword_blade',
     ];
 
     var tags = ['forge:weapons', 'forge:weapons/melee'];

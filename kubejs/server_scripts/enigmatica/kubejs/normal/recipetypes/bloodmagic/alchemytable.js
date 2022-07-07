@@ -12,15 +12,15 @@ onEvent('recipes', (event) => {
                 'minecraft:gunpowder',
                 'minecraft:sugar',
                 '#forge:dusts/sulfur',
-                Item.of('minecraft:potion', '{Potion:"minecraft:water"}')
+                Item.of('minecraft:potion', '{Potion:"minecraft:water"}'),
             ],
             output: 'bloodmagic:intermediatecuttingfluid',
             count: 1,
             syphon: 2000,
             ticks: 200,
             orbLevel: 3,
-            id: 'bloodmagic:alchemytable/intermediate_cutting_fluid'
-        }
+            id: 'bloodmagic:alchemytable/intermediate_cutting_fluid',
+        },
     ];
 
     recipes.forEach((recipe) => {

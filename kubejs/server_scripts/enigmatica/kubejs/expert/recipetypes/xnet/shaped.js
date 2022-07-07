@@ -22,9 +22,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:dusts/redstone',
                 B: 'thermal:white_rockwool',
-                C: '#forge:plates/signalum'
+                C: '#forge:plates/signalum',
             },
-            id: 'xnet:netcable_routing'
+            id: 'xnet:netcable_routing',
         },
         {
             output: 'xnet:controller',
@@ -34,9 +34,9 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:repeater',
                 C: 'minecraft:comparator',
                 D: '#forge:ingots/iron_tin',
-                E: 'thermal:redstone_servo'
+                E: 'thermal:redstone_servo',
             },
-            id: 'xnet:controller'
+            id: 'xnet:controller',
         },
         {
             output: 'xnet:router',
@@ -45,9 +45,9 @@ onEvent('recipes', (event) => {
                 A: 'thermal:energy_cell_frame',
                 B: '#forge:gems/ender',
                 C: '#forge:ingots/iron_tin',
-                D: 'minecraft:powered_rail'
+                D: 'minecraft:powered_rail',
             },
-            id: 'xnet:router'
+            id: 'xnet:router',
         },
         {
             output: 'xnet:wireless_router',
@@ -56,18 +56,18 @@ onEvent('recipes', (event) => {
                 A: 'thermal:energy_cell_frame',
                 B: '#forge:ingots/enderium',
                 C: '#forge:dusts/redstone',
-                D: 'minecraft:comparator'
+                D: 'minecraft:comparator',
             },
-            id: 'xnet:wireless_router'
+            id: 'xnet:wireless_router',
         },
         {
             output: 'xnet:antenna',
             pattern: ['ABA', 'ABA', ' B '],
             key: {
                 A: 'minecraft:iron_bars',
-                B: '#forge:rods/iron_osmium'
+                B: '#forge:rods/iron_osmium',
             },
-            id: 'xnet:antenna'
+            id: 'xnet:antenna',
         },
         {
             output: 'xnet:antenna_base',
@@ -75,9 +75,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:storage_blocks/iron_osmium',
                 B: '#forge:rods/iron_osmium',
-                C: '#forge:plates/iron_osmium'
+                C: '#forge:plates/iron_osmium',
             },
-            id: 'xnet:antenna_base'
+            id: 'xnet:antenna_base',
         },
         {
             output: 'xnet:antenna_base',
@@ -85,9 +85,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:storage_blocks/iron_osmium',
                 B: '#forge:rods/iron_osmium',
-                C: '#forge:plates/iron_osmium'
+                C: '#forge:plates/iron_osmium',
             },
-            id: 'xnet:antenna_base'
+            id: 'xnet:antenna_base',
         },
 
         {
@@ -97,10 +97,10 @@ onEvent('recipes', (event) => {
                 A: '#forge:ingots/uranium',
                 B: `thermal:light_blue_rockwool`,
                 C: '#forge:dusts/redstone',
-                D: 'minecraft:hopper'
+                D: 'minecraft:hopper',
             },
-            id: 'xnet:connector_routing'
-        }
+            id: 'xnet:connector_routing',
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -112,7 +112,7 @@ onEvent('recipes', (event) => {
             .shaped(Item.of(`xnet:netcable_${color}`, 16), [' A ', 'ACA', 'BAB'], {
                 A: '#forge:dusts/redstone',
                 B: `thermal:${color}_rockwool`,
-                C: '#forge:ingots/signalum'
+                C: '#forge:ingots/signalum',
             })
             .id(`xnet:netcable_${color}`);
 
@@ -121,7 +121,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:ingots/uranium',
                 B: `thermal:${color}_rockwool`,
                 C: '#forge:dusts/redstone',
-                D: 'minecraft:hopper'
+                D: 'minecraft:hopper',
             })
             .id(`xnet:connector_${color}`);
     });

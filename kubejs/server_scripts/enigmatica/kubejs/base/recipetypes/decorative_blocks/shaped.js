@@ -4,10 +4,10 @@ onEvent('recipes', (event) => {
             output: 'decorative_blocks:lattice',
             pattern: ['A A', '   ', 'A A'],
             key: {
-                A: '#forge:rods/wooden'
+                A: '#forge:rods/wooden',
             },
-            id: 'decorative_blocks:lattice'
-        }
+            id: 'decorative_blocks:lattice',
+        },
     ];
 
     recipes.forEach((recipe) => {

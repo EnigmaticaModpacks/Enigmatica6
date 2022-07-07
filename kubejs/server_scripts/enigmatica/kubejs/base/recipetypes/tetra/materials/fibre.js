@@ -18,7 +18,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'dragon_glyph', texture: 'dragon' },
                     textures: ['default'],
                     material: { item: 'tetra:dragon_sinew' },
-                    requiredTools: { cut: 3 }
+                    requiredTools: { cut: 3 },
                 },
                 {
                     key: 'weeping_vine',
@@ -35,7 +35,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'weeping_glyph', texture: 'weeping' },
                     textures: ['crude', 'default'],
                     material: { item: 'minecraft:weeping_vines' },
-                    requiredTools: { cut: 2 }
+                    requiredTools: { cut: 2 },
                 },
                 {
                     key: 'vine',
@@ -52,7 +52,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'vine_glyph', texture: 'vine' },
                     textures: ['crude', 'default'],
                     material: { item: 'minecraft:vine' },
-                    requiredTools: { cut: 1 }
+                    requiredTools: { cut: 1 },
                 },
                 {
                     key: 'twisting_vine',
@@ -70,7 +70,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['crude', 'default'],
                     material: { item: 'minecraft:twisting_vines' },
                     effects: { unstable: 10 },
-                    requiredTools: { cut: 2 }
+                    requiredTools: { cut: 2 },
                 },
                 {
                     key: 'string',
@@ -87,7 +87,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'string_glyph', texture: 'string' },
                     textures: ['crude', 'default'],
                     material: { tag: 'forge:string', count: 2 },
-                    requiredTools: { cut: 1 }
+                    requiredTools: { cut: 1 },
                 },
                 {
                     key: 'phantom_membrane',
@@ -104,8 +104,8 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'phantom_glyph', texture: 'phantom' },
                     textures: ['metal', 'default'],
                     material: { item: 'minecraft:phantom_membrane' },
-                    requiredTools: { cut: 1 }
-                }
+                    requiredTools: { cut: 1 },
+                },
             ],
             type: 'compat',
             recipes: [
@@ -125,7 +125,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '947d6c', texture: '947d6c' },
                     textures: ['crude', 'default'],
                     material: { tag: 'forge:fiber_hemp', count: 2 },
-                    requiredTools: { cut: 2 }
+                    requiredTools: { cut: 2 },
                 },
                 {
                     key: 'mana_string',
@@ -143,10 +143,10 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['crude', 'default'],
                     material: { item: 'botania:mana_string' },
                     improvements: { mana_repair: 2 },
-                    requiredTools: { cut: 2 }
-                }
-            ]
-        }
+                    requiredTools: { cut: 2 },
+                },
+            ],
+        },
     ];
 
     data.forEach((recipeType) => {

@@ -38,8 +38,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'simplefarming:sushi', weight: 100, amount: [1.0, 3.0] },
                 { item: 'minecraft:slime_ball', weight: 100, amount: [1.0, 3.0] },
                 { item: 'upgrade_aquatic:thrasher_tooth', weight: 100, amount: [1.0, 3.0] },
-                { item: 'alexsmobs:fish_oil', weight: 100, amount: [1.0, 3.0] }
-            ]
+                { item: 'alexsmobs:fish_oil', weight: 100, amount: [1.0, 3.0] },
+            ],
         },
         {
             name: 'dungeon_ocean_rare',
@@ -63,8 +63,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'minecraft:trident', weight: 20, enchantRange: [30.0, 40.0] },
                 { item: 'minecraft:heart_of_the_sea', weight: 20 },
                 { item: 'apotheosis:prismatic_web', weight: 20 },
-                { item: 'minecraft:nautilus_shell', weight: 100 }
-            ]
+                { item: 'minecraft:nautilus_shell', weight: 100 },
+            ],
         },
         {
             name: 'dungeon_ocean_epic',
@@ -97,13 +97,13 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'occultism:iesnium_ingot', weight: 100, amount: [1.0, 3.0] },
                 { item: 'archers_paradox:lightning_arrow', weight: 100, amount: [32.0, 64.0] },
                 { item: 'minecraft:conduit', weight: 100 },
-                { item: 'botania:water_ring', weight: 10 }
-            ]
+                { item: 'botania:water_ring', weight: 10 },
+            ],
         },
         {
             name: 'dungeon_ocean_legendary',
             rolls: [1, 1],
-            entries: [{ item: 'industrialforegoing:infinity_trident', weight: 1, chance: 0.000001 }]
+            entries: [{ item: 'industrialforegoing:infinity_trident', weight: 1, chance: 0.000001 }],
         },
         {
             name: 'dungeon_ocean_decoration',
@@ -178,8 +178,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'minecraft:prismarine_bricks', weight: 100, amount: [3.0, 7.0] },
                 { item: 'upgrade_aquatic:tooth_lantern', weight: 100, amount: [6.0, 14.0] },
                 { item: 'minecraft:lily_pad', weight: 100, amount: [6.0, 14.0] },
-                { item: 'minecraft:sea_pickle', weight: 100, amount: [6.0, 14.0] }
-            ]
+                { item: 'minecraft:sea_pickle', weight: 100, amount: [6.0, 14.0] },
+            ],
         },
         {
             name: 'dungeon_ocean_fish_buckets',
@@ -225,8 +225,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'minecraft:tropical_fish_bucket', weight: 100 },
                 { item: 'minecraft:cod_bucket', weight: 100 },
                 { item: 'minecraft:salmon_bucket', weight: 100 },
-                { item: 'minecraft:pufferfish_bucket', weight: 100 }
-            ]
+                { item: 'minecraft:pufferfish_bucket', weight: 100 },
+            ],
         },
         {
             name: 'dungeon_clockwork_common',
@@ -271,8 +271,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'create:cogwheel', weight: 80, amount: [1.0, 2.0] },
                 { item: 'create:belt_connector', weight: 80, amount: [1.0, 2.0] },
                 { item: 'create:propeller', weight: 80, amount: [1.0, 2.0] },
-                { item: 'create:builders_tea', weight: 100, amount: [1.0, 2.0] }
-            ]
+                { item: 'create:builders_tea', weight: 100, amount: [1.0, 2.0] },
+            ],
         },
         {
             name: 'dungeon_clockwork_rare',
@@ -300,8 +300,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'immersiveengineering:circuit_board', weight: 50, amount: [2.0, 4.0] },
                 { item: 'create:precision_mechanism', weight: 50, amount: [2.0, 4.0] },
                 { item: 'create:electron_tube', weight: 50, amount: [2.0, 4.0] },
-                { item: 'create:chromatic_compound', weight: 20 }
-            ]
+                { item: 'create:chromatic_compound', weight: 20 },
+            ],
         },
         {
             name: 'dungeon_clockwork_epic',
@@ -315,17 +315,17 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     item: 'immersiveengineering:gunpart_hammer',
                     weight: 33,
-                    nbt: '{perks:{cooldown:0.70,noise:0.75,luck:1.75},generatePerks:1}'
+                    nbt: '{perks:{cooldown:0.70,noise:0.75,luck:1.75},generatePerks:1}',
                 },
                 {
                     item: 'immersiveengineering:gunpart_drum',
                     weight: 33,
-                    nbt: '{perks:{cooldown:0.70,noise:0.75,luck:1.75},generatePerks:1}'
+                    nbt: '{perks:{cooldown:0.70,noise:0.75,luck:1.75},generatePerks:1}',
                 },
                 {
                     item: 'immersiveengineering:gunpart_barrel',
                     weight: 33,
-                    nbt: '{perks:{cooldown:0.70,noise:0.75,luck:1.75},generatePerks:1}'
+                    nbt: '{perks:{cooldown:0.70,noise:0.75,luck:1.75},generatePerks:1}',
                 },
                 { item: 'immersiveengineering:dragons_breath', weight: 100, amount: [32.0, 64.0] },
                 { item: 'immersiveengineering:wolfpack', weight: 100, amount: [32.0, 64.0] },
@@ -333,8 +333,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'create:refined_radiance', weight: 20 },
                 { item: 'create:shadow_steel', weight: 20 },
                 { item: 'immersiveengineering:blueprint', weight: 100, nbt: '{blueprint:"electrode"}' },
-                { item: 'immersiveengineering:blueprint', weight: 100, nbt: '{blueprint:"specialBullet"}' }
-            ]
+                { item: 'immersiveengineering:blueprint', weight: 100, nbt: '{blueprint:"specialBullet"}' },
+            ],
         },
         {
             name: 'dungeon_bastion_common',
@@ -385,8 +385,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'minecraft:obsidian', weight: 100, amount: [4.0, 8.0] },
                 { item: 'minecraft:crying_obsidian', weight: 100, amount: [4.0, 8.0] },
                 { item: 'minecraft:quartz', weight: 100, amount: [4.0, 16.0] },
-                { item: 'minecraft:blaze_powder', weight: 100, amount: [1.0, 4.0] }
-            ]
+                { item: 'minecraft:blaze_powder', weight: 100, amount: [1.0, 4.0] },
+            ],
         },
         {
             name: 'dungeon_bastion_rare',
@@ -408,7 +408,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     item: 'minecraft:enchanted_book',
                     weight: 100,
-                    nbt: '{StoredEnchantments:[{lvl:3s,id:"minecraft:soul_speed"}]}'
+                    nbt: '{StoredEnchantments:[{lvl:3s,id:"minecraft:soul_speed"}]}',
                 },
                 { item: 'minecraft:netherite_scrap', weight: 100, amount: [1.0, 4.0] },
                 { item: 'mekanismtools:refined_glowstone_boots', weight: 100, enchantRange: [30.0, 40.0] },
@@ -419,8 +419,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'mekanismtools:refined_glowstone_shovel', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'mekanismtools:refined_glowstone_axe', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'mekanismtools:refined_glowstone_pickaxe', weight: 100, enchantRange: [30.0, 40.0] },
-                { item: 'archers_paradox:blaze_arrow', weight: 100, amount: [32.0, 64.0] }
-            ]
+                { item: 'archers_paradox:blaze_arrow', weight: 100, amount: [32.0, 64.0] },
+            ],
         },
         {
             name: 'dungeon_bastion_epic',
@@ -446,8 +446,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'minecraft:netherite_axe', weight: 100, enchantRange: [60.0, 100.0] },
                 { item: 'minecraft:netherite_pickaxe', weight: 100, enchantRange: [60.0, 100.0] },
                 { item: 'minecraft:netherite_shovel', weight: 100, enchantRange: [60.0, 100.0] },
-                { item: 'minecraft:netherite_sword', weight: 100, enchantRange: [60.0, 100.0] }
-            ]
+                { item: 'minecraft:netherite_sword', weight: 100, enchantRange: [60.0, 100.0] },
+            ],
         },
         {
             name: 'dungeon_witch_common',
@@ -486,8 +486,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'eidolon:wraith_heart', weight: 20 },
                 { item: 'eidolon:zombie_heart', weight: 20 },
                 { item: 'darkutils:book_restore', weight: 100 },
-                { item: 'eidolon:candle', weight: 100, amount: [8.0, 12.0] }
-            ]
+                { item: 'eidolon:candle', weight: 100, amount: [8.0, 12.0] },
+            ],
         },
         {
             name: 'dungeon_witch_rare',
@@ -535,8 +535,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'eidolon:pewter_ingot', weight: 100, amount: [8.0, 16.0] },
                 { item: 'eidolon:arcane_gold_ingot', weight: 50, amount: [8.0, 16.0] },
                 { item: 'eidolon:pewter_inlay', weight: 100, amount: [1.0, 2.0] },
-                { item: 'eidolon:gold_inlay', weight: 100, amount: [1.0, 2.0] }
-            ]
+                { item: 'eidolon:gold_inlay', weight: 100, amount: [1.0, 2.0] },
+            ],
         },
         {
             name: 'dungeon_witch_epic',
@@ -562,8 +562,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'ars_nouveau:wand', weight: 10 },
                 { item: 'eidolon:soul_enchanter', weight: 10 },
                 { item: 'alexsmobs:mimicream', weight: 5 },
-                { item: 'bloodmagic:experiencebook', weight: 10 }
-            ]
+                { item: 'bloodmagic:experiencebook', weight: 10 },
+            ],
         },
         {
             type: 'combo_table',
@@ -573,8 +573,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'dungeon_ocean_common', weight: 70 },
                 { item: 'dungeon_ocean_rare', weight: 10 },
                 { item: 'dungeon_ocean_decoration', weight: 15 },
-                { item: 'dungeon_ocean_fish_buckets', weight: 5 }
-            ]
+                { item: 'dungeon_ocean_fish_buckets', weight: 5 },
+            ],
         },
         {
             type: 'combo_table',
@@ -584,8 +584,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'dungeon_ocean_common', weight: 30 },
                 { item: 'dungeon_ocean_rare', weight: 50 },
                 { item: 'dungeon_ocean_decoration', weight: 15 },
-                { item: 'dungeon_ocean_fish_buckets', weight: 5 }
-            ]
+                { item: 'dungeon_ocean_fish_buckets', weight: 5 },
+            ],
         },
         {
             type: 'combo_table',
@@ -597,8 +597,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'dungeon_ocean_epic', weight: 49 },
                 { item: 'dungeon_ocean_legendary', weight: 1 },
                 { item: 'dungeon_ocean_decoration', weight: 15 },
-                { item: 'dungeon_ocean_fish_buckets', weight: 5 }
-            ]
+                { item: 'dungeon_ocean_fish_buckets', weight: 5 },
+            ],
         },
         {
             type: 'combo_table',
@@ -606,8 +606,8 @@ onEvent('server.datapack.low_priority', (event) => {
             rolls: [5, 20],
             entries: [
                 { item: 'dungeon_clockwork_common', weight: 90 },
-                { item: 'dungeon_clockwork_rare', weight: 10 }
-            ]
+                { item: 'dungeon_clockwork_rare', weight: 10 },
+            ],
         },
         {
             type: 'combo_table',
@@ -615,8 +615,8 @@ onEvent('server.datapack.low_priority', (event) => {
             rolls: [5, 20],
             entries: [
                 { item: 'dungeon_clockwork_common', weight: 50 },
-                { item: 'dungeon_clockwork_rare', weight: 50 }
-            ]
+                { item: 'dungeon_clockwork_rare', weight: 50 },
+            ],
         },
         {
             type: 'combo_table',
@@ -625,8 +625,8 @@ onEvent('server.datapack.low_priority', (event) => {
             entries: [
                 { item: 'dungeon_clockwork_common', weight: 20 },
                 { item: 'dungeon_clockwork_rare', weight: 30 },
-                { item: 'dungeon_clockwork_epic', weight: 50 }
-            ]
+                { item: 'dungeon_clockwork_epic', weight: 50 },
+            ],
         },
         {
             type: 'combo_table',
@@ -634,8 +634,8 @@ onEvent('server.datapack.low_priority', (event) => {
             rolls: [5, 20],
             entries: [
                 { item: 'dungeon_bastion_common', weight: 90 },
-                { item: 'dungeon_bastion_rare', weight: 10 }
-            ]
+                { item: 'dungeon_bastion_rare', weight: 10 },
+            ],
         },
         {
             type: 'combo_table',
@@ -643,8 +643,8 @@ onEvent('server.datapack.low_priority', (event) => {
             rolls: [5, 20],
             entries: [
                 { item: 'dungeon_bastion_common', weight: 50 },
-                { item: 'dungeon_bastion_rare', weight: 50 }
-            ]
+                { item: 'dungeon_bastion_rare', weight: 50 },
+            ],
         },
         {
             type: 'combo_table',
@@ -653,8 +653,8 @@ onEvent('server.datapack.low_priority', (event) => {
             entries: [
                 { item: 'dungeon_bastion_common', weight: 20 },
                 { item: 'dungeon_bastion_rare', weight: 30 },
-                { item: 'dungeon_bastion_epic', weight: 50 }
-            ]
+                { item: 'dungeon_bastion_epic', weight: 50 },
+            ],
         },
         {
             type: 'combo_table',
@@ -662,8 +662,8 @@ onEvent('server.datapack.low_priority', (event) => {
             rolls: [5, 20],
             entries: [
                 { item: 'dungeon_witch_common', weight: 90 },
-                { item: 'dungeon_witch_rare', weight: 10 }
-            ]
+                { item: 'dungeon_witch_rare', weight: 10 },
+            ],
         },
         {
             type: 'combo_table',
@@ -671,8 +671,8 @@ onEvent('server.datapack.low_priority', (event) => {
             rolls: [5, 20],
             entries: [
                 { item: 'dungeon_witch_common', weight: 50 },
-                { item: 'dungeon_witch_rare', weight: 50 }
-            ]
+                { item: 'dungeon_witch_rare', weight: 50 },
+            ],
         },
         {
             type: 'combo_table',
@@ -681,9 +681,9 @@ onEvent('server.datapack.low_priority', (event) => {
             entries: [
                 { item: 'dungeon_witch_common', weight: 20 },
                 { item: 'dungeon_witch_rare', weight: 30 },
-                { item: 'dungeon_witch_epic', weight: 50 }
-            ]
-        }
+                { item: 'dungeon_witch_epic', weight: 50 },
+            ],
+        },
     ];
 
     lootTables.forEach((lootTable) => {
@@ -694,14 +694,14 @@ onEvent('server.datapack.low_priority', (event) => {
             if (entry.amount) {
                 functions.push({
                     function: 'set_count',
-                    count: { min: entry.amount[0], max: entry.amount[1] }
+                    count: { min: entry.amount[0], max: entry.amount[1] },
                 });
             }
             if (entry.enchantRange) {
                 functions.push({
                     function: 'enchant_with_levels',
                     levels: { min: entry.enchantRange[0], max: entry.enchantRange[1] },
-                    treasure: true
+                    treasure: true,
                 });
             }
             if (entry.nbt) {
@@ -710,14 +710,14 @@ onEvent('server.datapack.low_priority', (event) => {
             if (entry.chance) {
                 conditions.push({
                     condition: 'random_chance',
-                    chance: entry.chance
+                    chance: entry.chance,
                 });
             }
             if (lootTable.type == 'combo_table') {
                 entries.push({
                     type: 'loot_table',
                     weight: entry.weight,
-                    name: `enigmatica:chests/${entry.item}`
+                    name: `enigmatica:chests/${entry.item}`,
                 });
             } else {
                 entries.push({
@@ -725,13 +725,13 @@ onEvent('server.datapack.low_priority', (event) => {
                     weight: entry.weight,
                     name: entry.item,
                     functions: functions,
-                    conditions: conditions
+                    conditions: conditions,
                 });
             }
         });
 
         event.addJson(`enigmatica:loot_tables/chests/${lootTable.name}.json`, {
-            pools: [{ rolls: { min: lootTable.rolls[0], max: lootTable.rolls[1] }, entries: entries }]
+            pools: [{ rolls: { min: lootTable.rolls[0], max: lootTable.rolls[1] }, entries: entries }],
         });
     });
 });

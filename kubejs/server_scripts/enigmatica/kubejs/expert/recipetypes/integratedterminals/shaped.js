@@ -11,10 +11,10 @@ onEvent('recipes', (event) => {
                 A: 'thermal:lumium_glass',
                 B: 'botania:corporea_funnel',
                 C: 'botania:corporea_index',
-                D: 'integrateddynamics:part_display_panel'
+                D: 'integrateddynamics:part_display_panel',
             },
-            id: 'integratedterminals:crafting/part_terminal_storage'
-        }
+            id: 'integratedterminals:crafting/part_terminal_storage',
+        },
     ];
 
     recipes.forEach((recipe) => {

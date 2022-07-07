@@ -13,15 +13,15 @@ onEvent('server.datapack.high_priority', (event) => {
             block: true,
             first: { type: 'dimension', dimension: 'minecraft:the_nether' },
             second: { type: 'gamestage', stage: 'lesser_tartaric_gem' },
-            errorKey: `${errorKey_prefix}lesser_tartaric_gem`
+            errorKey: `${errorKey_prefix}lesser_tartaric_gem`,
         },
         {
             type: 'gamestage',
             name: 'eidolon:worktable',
             block: true,
             stage: 'disabled',
-            errorKey: `${errorKey_prefix}disabled`
-        }
+            errorKey: `${errorKey_prefix}disabled`,
+        },
     ];
 
     let restricted_occultism_blocks = ['occultism:sacrificial_bowl'];
@@ -32,7 +32,7 @@ onEvent('server.datapack.high_priority', (event) => {
             block: true,
             first: { type: 'dimension', dimension: 'atum:atum' },
             second: { type: 'gamestage', stage: 'red_chalk' },
-            errorKey: `${errorKey_prefix}red_chalk`
+            errorKey: `${errorKey_prefix}red_chalk`,
         });
     });
 
@@ -44,7 +44,7 @@ onEvent('server.datapack.high_priority', (event) => {
         'bloodmagic:alchemytable',
         'bloodmagic:soulforge',
         'bloodmagic:alchemicalreactionchamber',
-        'bloodmagic:incensealtar'
+        'bloodmagic:incensealtar',
     ];
     // Requires creation Master Blood Orb to place outside of Undergarden
     restricted_blood_magic_blocks.forEach((block) => {
@@ -54,7 +54,7 @@ onEvent('server.datapack.high_priority', (event) => {
             block: true,
             first: { type: 'dimension', dimension: 'undergarden:undergarden' },
             second: { type: 'gamestage', stage: 'master_blood_orb' },
-            errorKey: `${errorKey_prefix}master_blood_orb`
+            errorKey: `${errorKey_prefix}master_blood_orb`,
         });
     });
 

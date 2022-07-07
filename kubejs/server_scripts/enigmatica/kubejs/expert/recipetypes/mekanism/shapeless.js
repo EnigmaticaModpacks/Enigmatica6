@@ -7,8 +7,8 @@ onEvent('recipes', (event) => {
         {
             output: 'mekanism:hdpe_sheet',
             inputs: ['mekanism:hdpe_pellet', '#forge:tools/crafting_hammer', 'mekanism:hdpe_pellet'],
-            id: 'mekanism:hdpe_sheet'
-        }
+            id: 'mekanism:hdpe_sheet',
+        },
     ];
 
     recipes.forEach((recipe) => {

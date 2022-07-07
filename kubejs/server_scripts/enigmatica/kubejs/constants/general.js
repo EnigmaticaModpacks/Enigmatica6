@@ -31,7 +31,7 @@ const modPriorities = [
     'miniutilities',
     'chipped',
     'chisel',
-    'tconstruct'
+    'tconstruct',
 ];
 
 const lootChests = ['lootr:lootr_chest', 'lootr:lootr_barrel', 'lootr:lootr_trapped_chest'];
@@ -53,7 +53,7 @@ const colors = [
     'lime',
     'pink',
     'gray',
-    'light_gray'
+    'light_gray',
 ];
 
 // Quark Crystal Cluster Colors
@@ -68,7 +68,7 @@ const createStoneTypes = [
     'dolomite',
     'gabbro',
     'dark_scoria',
-    'natural_scoria'
+    'natural_scoria',
 ];
 
 const sign_wood_type_blacklist = [
@@ -101,7 +101,7 @@ const sign_wood_type_blacklist = [
     'wigglewood',
     'willow',
     'wisteria',
-    'yucca'
+    'yucca',
 ];
 
 const chest_wood_type_blacklist = [
@@ -124,7 +124,7 @@ const chest_wood_type_blacklist = [
     'umbrella_tree',
     'willow',
     'wisteria',
-    'yucca'
+    'yucca',
 ];
 
 const normalMode = global.packmode == 'normal';

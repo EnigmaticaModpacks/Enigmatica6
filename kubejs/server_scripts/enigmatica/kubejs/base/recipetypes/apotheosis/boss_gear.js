@@ -11,13 +11,13 @@ onEvent('server.datapack.high_priority', (event) => {
                 { weight: 4, stack: { item: 'atum:iron_club' } },
                 { weight: 2, stack: { item: 'minecraft:iron_axe' } },
                 { weight: 1, stack: { item: 'minecraft:iron_pickaxe' } },
-                { weight: 1, stack: { item: 'minecraft:iron_shovel' } }
+                { weight: 1, stack: { item: 'minecraft:iron_shovel' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'minecraft:chainmail_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'minecraft:chainmail_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'minecraft:chainmail_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'minecraft:chainmail_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'minecraft:chainmail_helmet' } }],
         },
         {
             name: 'iron_bow',
@@ -25,13 +25,13 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['skeleton'],
             mainhands: [
                 { weight: 1, stack: { item: 'atum:iron_greatsword' } },
-                { weight: 4, stack: { item: 'minecraft:bow' } }
+                { weight: 4, stack: { item: 'minecraft:bow' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'minecraft:chainmail_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'minecraft:chainmail_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'minecraft:chainmail_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'minecraft:chainmail_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'minecraft:chainmail_helmet' } }],
         },
         {
             name: 'diamond',
@@ -41,13 +41,13 @@ onEvent('server.datapack.high_priority', (event) => {
                 { weight: 4, stack: { item: 'undergarden:cloggrum_sword' } },
                 { weight: 2, stack: { item: 'undergarden:cloggrum_axe' } },
                 { weight: 1, stack: { item: 'undergarden:cloggrum_pickaxe' } },
-                { weight: 1, stack: { item: 'undergarden:cloggrum_shovel' } }
+                { weight: 1, stack: { item: 'undergarden:cloggrum_shovel' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'undergarden:cloggrum_shield' } }],
             boots: [{ weight: 3, stack: { item: 'undergarden:cloggrum_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'undergarden:cloggrum_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'undergarden:cloggrum_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'undergarden:cloggrum_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'undergarden:cloggrum_helmet' } }],
         },
         {
             name: 'diamond_bow',
@@ -55,13 +55,13 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['skeleton'],
             mainhands: [
                 { weight: 1, stack: { item: 'undergarden:cloggrum_sword' } },
-                { weight: 4, stack: { item: 'minecraft:bow' } }
+                { weight: 4, stack: { item: 'minecraft:bow' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'undergarden:cloggrum_shield' } }],
             boots: [{ weight: 3, stack: { item: 'undergarden:cloggrum_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'undergarden:cloggrum_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'undergarden:cloggrum_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'undergarden:cloggrum_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'undergarden:cloggrum_helmet' } }],
         },
         {
             name: 'netherite',
@@ -71,13 +71,13 @@ onEvent('server.datapack.high_priority', (event) => {
                 { weight: 4, stack: { item: 'minecraft:netherite_sword' } },
                 { weight: 2, stack: { item: 'minecraft:netherite_axe' } },
                 { weight: 1, stack: { item: 'minecraft:netherite_pickaxe' } },
-                { weight: 1, stack: { item: 'minecraft:netherite_shovel' } }
+                { weight: 1, stack: { item: 'minecraft:netherite_shovel' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'minecraft:netherite_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'minecraft:netherite_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'minecraft:netherite_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'minecraft:netherite_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'minecraft:netherite_helmet' } }],
         },
         {
             name: 'netherite_bow',
@@ -85,13 +85,13 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['skeleton'],
             mainhands: [
                 { weight: 1, stack: { item: 'minecraft:netherite_sword' } },
-                { weight: 4, stack: { item: 'minecraft:bow' } }
+                { weight: 4, stack: { item: 'minecraft:bow' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'minecraft:netherite_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'minecraft:netherite_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'minecraft:netherite_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'minecraft:netherite_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'minecraft:netherite_helmet' } }],
         },
 
         // Custom Sets
@@ -103,13 +103,13 @@ onEvent('server.datapack.high_priority', (event) => {
                 { weight: 4, stack: { item: 'botania:manasteel_sword' } },
                 { weight: 2, stack: { item: 'botania:manasteel_axe' } },
                 { weight: 1, stack: { item: 'botania:manasteel_pick' } },
-                { weight: 1, stack: { item: 'botania:manasteel_shovel' } }
+                { weight: 1, stack: { item: 'botania:manasteel_shovel' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'atum:brigand_shield' } }],
             boots: [{ weight: 3, stack: { item: 'botania:manaweave_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'botania:manaweave_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'botania:manaweave_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'botania:manaweave_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'botania:manaweave_helmet' } }],
         },
         {
             name: 'botania_manaweave_bow',
@@ -117,13 +117,13 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['skeleton'],
             mainhands: [
                 { weight: 1, stack: { item: 'botania:manasteel_sword' } },
-                { weight: 4, stack: { item: 'botania:livingwood_bow' } }
+                { weight: 4, stack: { item: 'botania:livingwood_bow' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'atum:brigand_shield' } }],
             boots: [{ weight: 3, stack: { item: 'botania:manaweave_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'botania:manaweave_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'botania:manaweave_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'botania:manaweave_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'botania:manaweave_helmet' } }],
         },
         {
             name: 'immersive_steel',
@@ -133,13 +133,13 @@ onEvent('server.datapack.high_priority', (event) => {
                 { weight: 4, stack: { item: 'immersiveengineering:sword_steel' } },
                 { weight: 2, stack: { item: 'immersiveengineering:axe_steel' } },
                 { weight: 1, stack: { item: 'immersiveengineering:pickaxe_steel' } },
-                { weight: 1, stack: { item: 'immersiveengineering:shovel_steel' } }
+                { weight: 1, stack: { item: 'immersiveengineering:shovel_steel' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'immersiveengineering:shield' } }],
             boots: [{ weight: 3, stack: { item: 'immersiveengineering:armor_steel_feet' } }],
             leggings: [{ weight: 3, stack: { item: 'immersiveengineering:armor_steel_legs' } }],
             chestplates: [{ weight: 3, stack: { item: 'immersiveengineering:armor_steel_chest' } }],
-            helmets: [{ weight: 3, stack: { item: 'immersiveengineering:armor_steel_head' } }]
+            helmets: [{ weight: 3, stack: { item: 'immersiveengineering:armor_steel_head' } }],
         },
         {
             name: 'immersive_steel_bow',
@@ -147,13 +147,13 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['skeleton'],
             mainhands: [
                 { weight: 1, stack: { item: 'immersiveengineering:sword_steel' } },
-                { weight: 4, stack: { item: 'minecraft:bow' } }
+                { weight: 4, stack: { item: 'minecraft:bow' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'immersiveengineering:shield' } }],
             boots: [{ weight: 3, stack: { item: 'immersiveengineering:armor_steel_feet' } }],
             leggings: [{ weight: 3, stack: { item: 'immersiveengineering:armor_steel_legs' } }],
             chestplates: [{ weight: 3, stack: { item: 'immersiveengineering:armor_steel_chest' } }],
-            helmets: [{ weight: 3, stack: { item: 'immersiveengineering:armor_steel_head' } }]
+            helmets: [{ weight: 3, stack: { item: 'immersiveengineering:armor_steel_head' } }],
         },
         {
             name: 'immersive_faraday',
@@ -163,13 +163,13 @@ onEvent('server.datapack.high_priority', (event) => {
                 { weight: 4, stack: { item: 'immersiveengineering:sword_steel' } },
                 { weight: 2, stack: { item: 'immersiveengineering:axe_steel' } },
                 { weight: 1, stack: { item: 'immersiveengineering:pickaxe_steel' } },
-                { weight: 1, stack: { item: 'immersiveengineering:shovel_steel' } }
+                { weight: 1, stack: { item: 'immersiveengineering:shovel_steel' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'immersiveengineering:shield' } }],
             boots: [{ weight: 3, stack: { item: 'immersiveengineering:armor_faraday_feet' } }],
             leggings: [{ weight: 3, stack: { item: 'immersiveengineering:armor_faraday_legs' } }],
             chestplates: [{ weight: 3, stack: { item: 'immersiveengineering:armor_faraday_chest' } }],
-            helmets: [{ weight: 3, stack: { item: 'immersiveengineering:armor_faraday_head' } }]
+            helmets: [{ weight: 3, stack: { item: 'immersiveengineering:armor_faraday_head' } }],
         },
         {
             name: 'immersive_faraday_bow',
@@ -177,13 +177,13 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['skeleton'],
             mainhands: [
                 { weight: 1, stack: { item: 'immersiveengineering:sword_steel' } },
-                { weight: 4, stack: { item: 'minecraft:bow' } }
+                { weight: 4, stack: { item: 'minecraft:bow' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'immersiveengineering:shield' } }],
             boots: [{ weight: 3, stack: { item: 'immersiveengineering:armor_faraday_feet' } }],
             leggings: [{ weight: 3, stack: { item: 'immersiveengineering:armor_faraday_legs' } }],
             chestplates: [{ weight: 3, stack: { item: 'immersiveengineering:armor_faraday_chest' } }],
-            helmets: [{ weight: 3, stack: { item: 'immersiveengineering:armor_faraday_head' } }]
+            helmets: [{ weight: 3, stack: { item: 'immersiveengineering:armor_faraday_head' } }],
         },
         {
             name: 'terminite',
@@ -193,13 +193,13 @@ onEvent('server.datapack.high_priority', (event) => {
                 { weight: 4, stack: { item: 'betterendforge:terminite_sword' } },
                 { weight: 2, stack: { item: 'betterendforge:terminite_axe' } },
                 { weight: 1, stack: { item: 'betterendforge:terminite_pickaxe' } },
-                { weight: 1, stack: { item: 'betterendforge:terminite_shovel' } }
+                { weight: 1, stack: { item: 'betterendforge:terminite_shovel' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'betterendforge:terminite_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'betterendforge:terminite_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'betterendforge:terminite_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'betterendforge:terminite_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'betterendforge:terminite_helmet' } }],
         },
         {
             name: 'terminite_bow',
@@ -207,13 +207,13 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['skeleton'],
             mainhands: [
                 { weight: 1, stack: { item: 'betterendforge:terminite_sword' } },
-                { weight: 4, stack: { item: 'minecraft:bow' } }
+                { weight: 4, stack: { item: 'minecraft:bow' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'betterendforge:terminite_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'betterendforge:terminite_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'betterendforge:terminite_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'betterendforge:terminite_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'betterendforge:terminite_helmet' } }],
         },
         {
             name: 'cardboard',
@@ -223,13 +223,13 @@ onEvent('server.datapack.high_priority', (event) => {
                 { weight: 4, stack: { item: 'occultism:butcher_knife' } },
                 { weight: 2, stack: { item: 'occultism:butcher_knife' } },
                 { weight: 1, stack: { item: 'aiotbotania:livingrock_pickaxe' } },
-                { weight: 1, stack: { item: 'aiotbotania:livingrock_shovel' } }
+                { weight: 1, stack: { item: 'aiotbotania:livingrock_shovel' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_helmet' } }],
         },
         {
             name: 'cardboard_bow',
@@ -237,13 +237,13 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['skeleton'],
             mainhands: [
                 { weight: 1, stack: { item: 'occultism:butcher_knife' } },
-                { weight: 4, stack: { item: 'minecraft:bow' } }
+                { weight: 4, stack: { item: 'minecraft:bow' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_helmet' } }],
         },
         {
             name: 'gold',
@@ -253,13 +253,13 @@ onEvent('server.datapack.high_priority', (event) => {
                 { weight: 4, stack: { item: 'minecraft:golden_sword' } },
                 { weight: 2, stack: { item: 'minecraft:golden_axe' } },
                 { weight: 1, stack: { item: 'minecraft:golden_pickaxe' } },
-                { weight: 1, stack: { item: 'minecraft:golden_shovel' } }
+                { weight: 1, stack: { item: 'minecraft:golden_shovel' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'minecraft:golden_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'minecraft:golden_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'minecraft:golden_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'minecraft:golden_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'minecraft:golden_helmet' } }],
         },
         {
             name: 'gold_bow',
@@ -267,13 +267,13 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['skeleton'],
             mainhands: [
                 { weight: 1, stack: { item: 'minecraft:golden_sword' } },
-                { weight: 4, stack: { item: 'minecraft:bow' } }
+                { weight: 4, stack: { item: 'minecraft:bow' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'minecraft:golden_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'minecraft:golden_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'minecraft:golden_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'minecraft:golden_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'minecraft:golden_helmet' } }],
         },
         {
             name: 'refined_glowstone',
@@ -283,13 +283,13 @@ onEvent('server.datapack.high_priority', (event) => {
                 { weight: 4, stack: { item: 'mekanismtools:refined_glowstone_sword' } },
                 { weight: 2, stack: { item: 'mekanismtools:refined_glowstone_axe' } },
                 { weight: 1, stack: { item: 'mekanismtools:refined_glowstone_pickaxe' } },
-                { weight: 1, stack: { item: 'mekanismtools:refined_glowstone_shovel' } }
+                { weight: 1, stack: { item: 'mekanismtools:refined_glowstone_shovel' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_helmet' } }]
+            helmets: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_helmet' } }],
         },
         {
             name: 'refined_glowstone_bow',
@@ -297,14 +297,14 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['skeleton'],
             mainhands: [
                 { weight: 1, stack: { item: 'mekanismtools:refined_glowstone_sword' } },
-                { weight: 4, stack: { item: 'minecraft:bow' } }
+                { weight: 4, stack: { item: 'minecraft:bow' } },
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_boots' } }],
             leggings: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_chestplate' } }],
-            helmets: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_helmet' } }]
-        }
+            helmets: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_helmet' } }],
+        },
     ];
 
     gearSets.forEach((gearSet) => {

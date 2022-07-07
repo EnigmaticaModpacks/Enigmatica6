@@ -17,7 +17,7 @@ const tier0Hives = [
     'resourcefulbees:red_mushroom_bee_nest',
     'resourcefulbees:spruce_bee_nest',
     'resourcefulbees:warped_bee_nest',
-    'resourcefulbees:warped_nylium_bee_nest'
+    'resourcefulbees:warped_nylium_bee_nest',
 ];
 
 const tier1Hives = ['resourcefulbees:t1_beehive'];

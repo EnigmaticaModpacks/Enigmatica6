@@ -14,17 +14,17 @@ onEvent('server.datapack.low_priority', (event) => {
             toolEfficiency: '6.5',
             tints: {
                 glyph: 'ffc940',
-                texture: 'ffc940'
+                texture: 'ffc940',
             },
             textures: ['metal', 'default'],
             material: {
-                tag: 'forge:ingots/brass'
+                tag: 'forge:ingots/brass',
             },
 
             requiredTools: {
-                hammer: 2
-            }
-        }
+                hammer: 2,
+            },
+        },
     ];
 
     recipes.forEach((recipe) => {

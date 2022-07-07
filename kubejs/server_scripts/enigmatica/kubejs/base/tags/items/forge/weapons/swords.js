@@ -9,7 +9,7 @@ onEvent('item.tags', (event) => {
         'atum:iron_khopesh',
         'atum:stoneguard_khopesh',
         'atum:stoneguard_greatsword',
-        'atum:iron_greatsword'
+        'atum:iron_greatsword',
     ];
     var exceptions = [
         'betterendforge:aeternium_sword_handle',
@@ -17,7 +17,7 @@ onEvent('item.tags', (event) => {
         'betterendforge:thallasium_sword_handle',
         'betterendforge:thallasium_sword_blade',
         'betterendforge:terminite_sword_handle',
-        'betterendforge:terminite_sword_blade'
+        'betterendforge:terminite_sword_blade',
     ];
 
     event

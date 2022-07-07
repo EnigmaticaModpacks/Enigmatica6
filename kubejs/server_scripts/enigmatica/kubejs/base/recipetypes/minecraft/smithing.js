@@ -6,8 +6,8 @@ onEvent('recipes', (event) => {
             input1: Item.of('aiotbotania:terra_aiot', '{Damage:0}').weakNBT(),
             input2: 'kubejs:quintuple_alfsteel_ingot',
             output: 'aiotbotania:alfsteel_aiot',
-            id: `${id_prefix}alfsteel_aiot`
-        }
+            id: `${id_prefix}alfsteel_aiot`,
+        },
     ];
 
     const black_hole_types = ['tank', 'unit'];
@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
                     input1: `industrialforegoing:${prev}_black_hole_${type}`,
                     input2: `industrialforegoing:machine_frame_${tier}`,
                     output: `industrialforegoing:${tier}_black_hole_${type}`,
-                    id: `${id_prefix}upgrade_${prev}_black_hole_${type}_to_${tier}`
+                    id: `${id_prefix}upgrade_${prev}_black_hole_${type}_to_${tier}`,
                 });
             });
         });

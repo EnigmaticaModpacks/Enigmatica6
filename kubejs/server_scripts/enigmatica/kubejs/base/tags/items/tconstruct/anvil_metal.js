@@ -10,7 +10,7 @@ onEvent('item.tags', (event) => {
         '#forge:storage_blocks/arcane_gold',
         '#forge:storage_blocks/terminite',
         '#forge:storage_blocks/aeternium',
-        '#forge:storage_blocks/terrasteel'
+        '#forge:storage_blocks/terrasteel',
     ];
     event.add('tconstruct:anvil_metal', anvil_blocks);
 });

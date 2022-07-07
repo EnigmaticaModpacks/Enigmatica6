@@ -18,7 +18,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'iron_glyph', texture: 'iron' },
                     textures: ['metal', 'default'],
                     material: { item: 'minecraft:iron_ingot' },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'gold',
@@ -36,7 +36,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['shiny', 'metal', 'default'],
                     material: { item: 'minecraft:gold_ingot' },
                     effects: { stabilizing: 15 },
-                    requiredTools: { hammer: 1 }
+                    requiredTools: { hammer: 1 },
                 },
                 {
                     key: 'netherite',
@@ -53,7 +53,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'netherite_glyph', texture: 'netherite' },
                     textures: ['metal', 'default'],
                     material: { item: 'minecraft:netherite_ingot' },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
                 {
                     key: 'brass',
@@ -70,7 +70,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '978b37', texture: '978b37' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/brass', count: 1 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'andesite_alloy',
@@ -87,8 +87,8 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '656565', texture: '656565' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/andesite_alloy', count: 1 },
-                    requiredTools: { hammer: 2 }
-                }
+                    requiredTools: { hammer: 2 },
+                },
             ],
             type: 'compat',
             recipes: [
@@ -107,7 +107,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'nickel_glyph', texture: 'nickel' },
                     textures: ['metal', 'default'],
                     material: { tag: 'forge:ingots/nickel' },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'lead',
@@ -124,7 +124,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'lead_glyph', texture: 'lead' },
                     textures: ['metal', 'default'],
                     material: { tag: 'forge:ingots/lead' },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'infused_iron',
@@ -142,7 +142,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['metal', 'default'],
                     material: { item: 'naturesaura:infused_iron' },
                     improvements: { naturesaura_aura_mending_innate: 1 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'electrum',
@@ -160,7 +160,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['shiny', 'metal'],
                     material: { tag: 'forge:ingots/electrum' },
                     effects: { stabilizing: 15 },
-                    requiredTools: { hammer: 1 }
+                    requiredTools: { hammer: 1 },
                 },
                 {
                     key: 'copper',
@@ -177,7 +177,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'copper_glyph', texture: 'copper' },
                     textures: ['metal'],
                     material: { tag: 'forge:ingots/copper' },
-                    requiredTools: { hammer: 1 }
+                    requiredTools: { hammer: 1 },
                 },
                 {
                     key: 'bronze',
@@ -195,7 +195,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['metal', 'default'],
                     material: { tag: 'forge:ingots/bronze' },
                     improvements: { workable: 1 },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'tin',
@@ -213,7 +213,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['metal'],
                     material: { tag: 'forge:ingots/tin' },
                     improvements: { workable: 1 },
-                    requiredTools: { hammer: 1 }
+                    requiredTools: { hammer: 1 },
                 },
                 {
                     key: 'steel',
@@ -230,7 +230,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'steel_glyph', texture: 'steel' },
                     textures: ['metal', 'default'],
                     material: { tag: 'forge:ingots/steel' },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'sky',
@@ -248,7 +248,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['metal', 'default'],
                     material: { item: 'naturesaura:sky_ingot' },
                     improvements: { naturesaura_aura_mending_innate: 1 },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'silver',
@@ -266,7 +266,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['shiny', 'metal'],
                     material: { tag: 'forge:ingots/silver' },
                     effects: { stabilizing: 10 },
-                    requiredTools: { hammer: 1 }
+                    requiredTools: { hammer: 1 },
                 },
                 {
                     key: 'osmium',
@@ -283,7 +283,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '7d91a0', texture: '7d91a0' },
                     textures: ['metal', 'default'],
                     material: { tag: 'forge:ingots/osmium' },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
 
                 {
@@ -301,7 +301,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'ecf1f8', texture: 'ecf1f8' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/aluminum', count: 1 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'zinc',
@@ -318,7 +318,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'a4ab6a', texture: 'a4ab6a' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/zinc', count: 1 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'constantan',
@@ -335,7 +335,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'd5856a', texture: 'd5856a' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/constantan', count: 1 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'invar',
@@ -352,7 +352,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'b6c2bd', texture: 'b6c2bd' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/invar', count: 1 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'signalum',
@@ -369,7 +369,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'fa631a', texture: 'fa631a' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/signalum', count: 1 },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'lumium',
@@ -386,7 +386,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'e2f0b3', texture: 'e2f0b3' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/lumium', count: 1 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'enderium',
@@ -403,7 +403,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '0a4949', texture: '0a4949' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/enderium', count: 1 },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
                 {
                     key: 'energized_steel',
@@ -420,7 +420,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'dac5ab', texture: 'dac5ab' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/energized_steel', count: 1 },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
                 {
                     key: 'starmetal',
@@ -437,7 +437,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '07186e', texture: '07186e' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/starmetal', count: 1 },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
                 {
                     key: 'manasteel',
@@ -455,7 +455,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/manasteel', count: 1 },
                     improvements: { mana_repair: 3 },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'elementium',
@@ -473,7 +473,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/elementium', count: 1 },
                     improvements: { mana_repair: 2 },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
                 {
                     key: 'terrasteel',
@@ -491,7 +491,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/terrasteel', count: 1 },
                     improvements: { mana_repair: 1 },
-                    requiredTools: { hammer: 5 }
+                    requiredTools: { hammer: 5 },
                 },
                 {
                     key: 'gaia',
@@ -508,7 +508,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'cebdf5', texture: 'cebdf5' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/gaia', count: 1 },
-                    requiredTools: { hammer: 5 }
+                    requiredTools: { hammer: 5 },
                 },
                 {
                     key: 'alfsteel',
@@ -525,7 +525,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'f5b540', texture: 'f28a3f' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/alfsteel', count: 1 },
-                    requiredTools: { hammer: 6 }
+                    requiredTools: { hammer: 6 },
                 },
                 {
                     key: 'refined_glowstone',
@@ -542,7 +542,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'fce599', texture: 'fce599' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/refined_glowstone', count: 1 },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'refined_obsidian',
@@ -559,7 +559,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '7f67ab', texture: '7f67ab' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/refined_obsidian', count: 1 },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
                 {
                     key: 'compressed_iron',
@@ -576,7 +576,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '868686', texture: '868686' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/compressed_iron', count: 1 },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
                 {
                     key: 'quartz_enriched_iron',
@@ -593,7 +593,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'eeede9', texture: 'eeede9' },
                     textures: ['shiny', 'default'],
                     material: { item: 'refinedstorage:quartz_enriched_iron', count: 1 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'pink_slime',
@@ -610,7 +610,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'c078b4', texture: 'c078b4' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/pink_slime', count: 1 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'pewter',
@@ -627,7 +627,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '72726a', texture: '72726a' },
                     textures: ['metal', 'default'],
                     material: { tag: 'forge:ingots/pewter' },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'arcane_gold',
@@ -644,7 +644,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'cd7b4b', texture: 'cd7b4b' },
                     textures: ['metal', 'default'],
                     material: { tag: 'forge:ingots/arcane_gold' },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
                 {
                     key: 'neptunium',
@@ -661,7 +661,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '17f1b6', texture: '17f1b6' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/neptunium', count: 1 },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'iesnium',
@@ -678,7 +678,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '92d1d8', texture: '92d1d8' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/iesnium', count: 1 },
-                    requiredTools: { hammer: 5 }
+                    requiredTools: { hammer: 5 },
                 },
                 {
                     key: 'hop_graphite',
@@ -695,10 +695,10 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '1e1e1e', texture: '1e1e1e' },
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/hop_graphite', count: 1 },
-                    requiredTools: { hammer: 3 }
-                }
-            ]
-        }
+                    requiredTools: { hammer: 3 },
+                },
+            ],
+        },
     ];
 
     data.forEach((recipeType) => {

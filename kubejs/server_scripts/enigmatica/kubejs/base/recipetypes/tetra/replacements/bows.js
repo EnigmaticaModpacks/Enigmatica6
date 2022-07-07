@@ -4,14 +4,14 @@ onEvent('server.datapack.low_priority', (event) => {
             {
                 item: 'aquaculture:neptunium_bow',
                 material: 'neptunium',
-                string: 'string'
+                string: 'string',
             },
             {
                 item: 'botaniaadditions:terra_bow',
                 material: 'terrasteel',
-                string: 'string'
-            }
-        ]
+                string: 'string',
+            },
+        ],
     };
     var toolList = [];
     data.tools.forEach((tool) => {
@@ -20,9 +20,9 @@ onEvent('server.datapack.low_priority', (event) => {
             item: 'tetra:modular_bow',
             modules: {
                 'bow/stave': ['bow/straight_stave', `straight_stave/${tool.material}`],
-                'bow/string': ['bow/basic_string', `basic_string/${tool.string}`]
+                'bow/string': ['bow/basic_string', `basic_string/${tool.string}`],
             },
-            improvements: tool.improvements
+            improvements: tool.improvements,
         });
     });
 

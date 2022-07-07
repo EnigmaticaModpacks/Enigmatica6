@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
                 consumptionChance: 0.1,
                 output: 'thermal:blizz_powder',
                 count: 4,
-                duration: 100
+                duration: 100,
             },
             {
                 input: { item: 'thermal:basalz_rod' },
@@ -17,7 +17,7 @@ onEvent('recipes', (event) => {
                 consumptionChance: 0.1,
                 output: 'thermal:basalz_powder',
                 count: 4,
-                duration: 100
+                duration: 100,
             },
             {
                 input: { item: 'thermal:blitz_rod' },
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                 consumptionChance: 0.1,
                 output: 'thermal:blitz_powder',
                 count: 4,
-                duration: 100
+                duration: 100,
             },
             {
                 input: { item: 'simplefarming:habanero' },
@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
                 consumptionChance: 0.1,
                 output: 'simplefarming:golden_habanero',
                 count: 1,
-                duration: 50
+                duration: 50,
             },
             {
                 input: { tag: 'forge:dusts/iron' },
@@ -41,7 +41,7 @@ onEvent('recipes', (event) => {
                 consumptionChance: 0.1,
                 output: 'astralsorcery:stardust',
                 count: 1,
-                duration: 100
+                duration: 100,
             },
             {
                 input: Ingredient.of([
@@ -49,13 +49,13 @@ onEvent('recipes', (event) => {
                     'byg:cyan_amaranth',
                     'byg:magenta_amaranth',
                     'byg:orange_amaranth',
-                    'byg:purple_amaranth'
+                    'byg:purple_amaranth',
                 ]),
                 fluid: 'astralsorcery:liquid_starlight',
                 consumptionChance: 1.1,
                 output: 'astralsorcery:glow_flower',
                 count: 1,
-                duration: 100
+                duration: 100,
             },
             {
                 input: { item: 'resourcefulbees:starry_honeycomb' },
@@ -63,7 +63,7 @@ onEvent('recipes', (event) => {
                 consumptionChance: 0.1,
                 output: 'astralsorcery:starmetal_ingot',
                 count: 3,
-                duration: 100
+                duration: 100,
             },
             {
                 input: { item: 'resourcefulbees:starry_honeycomb_block' },
@@ -71,9 +71,9 @@ onEvent('recipes', (event) => {
                 consumptionChance: 0.1,
                 output: 'astralsorcery:starmetal',
                 count: 3,
-                duration: 100
-            }
-        ]
+                duration: 100,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {
@@ -84,15 +84,15 @@ onEvent('recipes', (event) => {
                 input: recipe.input,
                 output: {
                     item: recipe.output,
-                    count: recipe.count
+                    count: recipe.count,
                 },
                 consumptionChance: recipe.consumptionChance,
                 duration: recipe.duration,
                 consumeMultipleFluids: false,
                 acceptChaliceInput: true,
-                copyNBTToOutputs: false
+                copyNBTToOutputs: false,
             }),
-            id_prefix
+            id_prefix,
         );
     });
 });

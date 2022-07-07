@@ -24,9 +24,9 @@ onEvent('recipes', (event) => {
                 B: '#forge:circuits/advanced',
                 C: 'extrastorage:neural_processor',
                 D: 'thermal:upgrade_augment_1',
-                E: 'refinedstorage:crafter'
+                E: 'refinedstorage:crafter',
             },
-            id: 'extrastorage:iron_crafter'
+            id: 'extrastorage:iron_crafter',
         },
         {
             output: Item.of('extrastorage:gold_crafter'),
@@ -36,9 +36,9 @@ onEvent('recipes', (event) => {
                 B: '#forge:circuits/elite',
                 C: 'extrastorage:neural_processor',
                 D: 'thermal:upgrade_augment_2',
-                E: 'refinedstorage:crafter'
+                E: 'refinedstorage:crafter',
             },
-            id: 'extrastorage:gold_crafter'
+            id: 'extrastorage:gold_crafter',
         },
         {
             output: Item.of('extrastorage:gold_crafter'),
@@ -46,9 +46,9 @@ onEvent('recipes', (event) => {
             key: {
                 B: '#forge:circuits/elite',
                 D: 'thermal:upgrade_augment_2',
-                E: 'extrastorage:iron_crafter'
+                E: 'extrastorage:iron_crafter',
             },
-            id: 'extrastorage:gold_crafter_upgrade'
+            id: 'extrastorage:gold_crafter_upgrade',
         },
         {
             output: Item.of('extrastorage:diamond_crafter'),
@@ -58,9 +58,9 @@ onEvent('recipes', (event) => {
                 B: '#forge:circuits/ultimate',
                 C: 'extrastorage:neural_processor',
                 D: 'thermal:upgrade_augment_3',
-                E: 'refinedstorage:crafter'
+                E: 'refinedstorage:crafter',
             },
-            id: 'extrastorage:diamond_crafter'
+            id: 'extrastorage:diamond_crafter',
         },
         {
             output: Item.of('extrastorage:diamond_crafter'),
@@ -68,10 +68,10 @@ onEvent('recipes', (event) => {
             key: {
                 B: '#forge:circuits/ultimate',
                 D: 'thermal:upgrade_augment_3',
-                E: 'extrastorage:gold_crafter'
+                E: 'extrastorage:gold_crafter',
             },
-            id: 'extrastorage:diamond_crafter_upgrade'
-        }
+            id: 'extrastorage:diamond_crafter_upgrade',
+        },
     ];
 
     recipes.forEach((recipe) => {

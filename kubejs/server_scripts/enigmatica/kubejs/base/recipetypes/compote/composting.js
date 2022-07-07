@@ -28,11 +28,11 @@ onEvent('recipes', (event) => {
                 { item: 'sushigocrafting:cucumber', chance: 0.65 },
                 { item: 'sushigocrafting:rice', chance: 0.65 },
 
-                { item: 'atum:flax_seeds', chance: 0.3 }
+                { item: 'atum:flax_seeds', chance: 0.3 },
             ],
             remove: [],
-            change: []
-        }
+            change: [],
+        },
     ];
 
     recipes.forEach((recipe) => {

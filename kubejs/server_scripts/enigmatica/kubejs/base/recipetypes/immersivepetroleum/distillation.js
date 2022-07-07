@@ -7,13 +7,13 @@ onEvent('recipes', (event) => {
             results: [
                 { fluid: 'pneumaticcraft:lubricant', amount: 9 },
                 { fluid: 'immersivepetroleum:diesel_sulfur', amount: 14 },
-                { fluid: 'immersivepetroleum:gasoline', amount: 39 }
+                { fluid: 'immersivepetroleum:gasoline', amount: 39 },
             ],
             input: { tag: 'forge:crude_oil', amount: 75 },
             time: 1,
             energy: 2048,
-            id: `immersivepetroleum:distillation/oilcracking`
-        }
+            id: `immersivepetroleum:distillation/oilcracking`,
+        },
     ];
 
     recipes.forEach((recipe) => {

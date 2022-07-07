@@ -28,7 +28,7 @@ onEvent('item.modification', (event) => {
         'undergarden:goo_ball',
 
         //signs
-        /(minecraft|undergarden|betterendforge|atmospheric|upgrade_aquatic|atum|tconstruct|environmental):\w+_sign/
+        /(minecraft|undergarden|betterendforge|atmospheric|upgrade_aquatic|atum|tconstruct|environmental):\w+_sign/,
     ];
 
     event.modify(increaseStackSize, (item) => {

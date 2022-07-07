@@ -17,6 +17,6 @@ const industrialforegoing = {
         brown: 'industrialforegoing:laser_lens12',
         green: 'industrialforegoing:laser_lens13',
         red: 'industrialforegoing:laser_lens14',
-        black: 'industrialforegoing:laser_lens15'
-    }
+        black: 'industrialforegoing:laser_lens15',
+    },
 };

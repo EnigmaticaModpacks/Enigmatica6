@@ -4,10 +4,10 @@ onEvent('recipes', (event) => {
             output: Item.of('minecraft:paper', 3),
             pattern: ['AAA'],
             key: {
-                A: '#forge:dusts/wood'
+                A: '#forge:dusts/wood',
             },
-            id: 'mekanism:paper'
-        }
+            id: 'mekanism:paper',
+        },
     ];
 
     recipes.forEach((recipe) => {

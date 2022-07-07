@@ -16,7 +16,7 @@ const refinedStorageItems = [
     'crafter',
     'crafting_monitor',
     'disk_manipulator',
-    'crafter_manager'
+    'crafter_manager',
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer cobblegens.
 const generatableCobblestone = [
@@ -42,7 +42,7 @@ const generatableCobblestone = [
     'atmospheric:saffron_travertine',
     'atmospheric:persimmon_travertine',
     'atmospheric:peach_travertine',
-    'atmospheric:ivory_travertine'
+    'atmospheric:ivory_travertine',
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
@@ -76,7 +76,7 @@ const generatableStone = [
     'create:weathered_limestone',
     'create:limestone',
     'atmospheric:red_arid_sandstone',
-    'atmospheric:arid_sandstone'
+    'atmospheric:arid_sandstone',
 ];
 const generatableBasalt = [];
 
@@ -96,7 +96,7 @@ const colors = [
     'lime',
     'pink',
     'gray',
-    'light_gray'
+    'light_gray',
 ];
 
 const itemsToHide = [
@@ -398,7 +398,7 @@ const itemsToHide = [
     /rftoolsbase:dimensionalshard_/,
     /theoneprobe:/,
     /upgrade_aquatic:\w+_jelly_torch/,
-    /chiselsandbits:block_bit$/
+    /chiselsandbits:block_bit$/,
 ];
 
 let ee_types = ['clump', 'crystal', 'dirty_dust', 'shard', 'fragment', 'gravel'];
@@ -422,7 +422,7 @@ ee_types.forEach((type) => {
         `emendatusenigmatica:sapphire_${type}`,
         `emendatusenigmatica:ruby_${type}`,
         `emendatusenigmatica:iridium_${type}`,
-        `emendatusenigmatica:peridot_${type}`
+        `emendatusenigmatica:peridot_${type}`,
     );
 });
 
@@ -553,8 +553,8 @@ const recipesToHide = [
             'pneumaticcraft:assembly_controller',
             'pneumaticcraft:assembly_platform',
             'pneumaticcraft:aerial_interface',
-            'pneumaticcraft:spawner_extractor'
-        ]
+            'pneumaticcraft:spawner_extractor',
+        ],
     },
     {
         category: 'ars_nouveau:apparatus',
@@ -565,20 +565,20 @@ const recipesToHide = [
             'ars_elemental:water_focus',
             'ars_elemental:earth_focus',
             'ars_elemental:fire_focus',
-            'ars_elemental:necrotic_focus'
-        ]
+            'ars_elemental:necrotic_focus',
+        ],
     },
     {
         category: 'astralsorcery:altar_attunement',
-        recipes_by_id: ['astralsorcery:altar/attunement_altar']
+        recipes_by_id: ['astralsorcery:altar/attunement_altar'],
     },
     {
         category: 'botania:petals',
-        recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
+        recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia'],
     },
     {
         category: 'botania:mana_pool',
-        recipes_by_id: ['botania:mana_infusion/mana_powder_dust', 'botania:mana_infusion/mana_powder_dye']
+        recipes_by_id: ['botania:mana_infusion/mana_powder_dust', 'botania:mana_infusion/mana_powder_dye'],
     },
     {
         category: 'bloodmagic:alchemytable',
@@ -589,8 +589,8 @@ const recipesToHide = [
             'bloodmagic:alchemytable/tag_router_filter',
             'bloodmagic:alchemytable/enchant_router_filter',
             'bloodmagic:alchemytable/composite_router_filter',
-            'bloodmagic:alchemytable/mod_router_filter'
-        ]
+            'bloodmagic:alchemytable/mod_router_filter',
+        ],
     },
     {
         category: 'bloodmagic:soulforge',
@@ -604,9 +604,9 @@ const recipesToHide = [
             'bloodmagic:soulforge/routing_node',
             'bloodmagic:soulforge/output_routing_node',
             'bloodmagic:soulforge/input_routing_node',
-            'bloodmagic:soulforge/master_routing_node'
-        ]
-    }
+            'bloodmagic:soulforge/master_routing_node',
+        ],
+    },
 ];
 
 const disabledItems = [
@@ -744,7 +744,7 @@ const disabledItems = [
     'simplefarming:noodles',
     'simplefarming:chocolate',
 
-    'storagedrawers:conversion_upgrade'
+    'storagedrawers:conversion_upgrade',
 ];
 
 const materialsToUnify = [
@@ -825,7 +825,7 @@ const materialsToUnify = [
     'blazing',
     'niotic',
     'spirited',
-    'nitro'
+    'nitro',
 ];
 
 const craftedBees = [
@@ -851,7 +851,7 @@ const craftedBees = [
     'lumium',
     'signalum',
     'electrum',
-    'enderium'
+    'enderium',
 ];
 
 const industrialforegoing = {
@@ -871,6 +871,6 @@ const industrialforegoing = {
         brown: 'industrialforegoing:laser_lens12',
         green: 'industrialforegoing:laser_lens13',
         red: 'industrialforegoing:laser_lens14',
-        black: 'industrialforegoing:laser_lens15'
-    }
+        black: 'industrialforegoing:laser_lens15',
+    },
 };

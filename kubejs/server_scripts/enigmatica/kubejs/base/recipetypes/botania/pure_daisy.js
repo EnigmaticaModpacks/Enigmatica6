@@ -6,9 +6,9 @@ onEvent('recipes', (event) => {
             {
                 input: 'minecraft:snow_block',
                 output: 'betterendforge:dense_snow',
-                id: `${id_prefix}dense_snow`
-            }
-        ]
+                id: `${id_prefix}dense_snow`,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {
@@ -17,11 +17,11 @@ onEvent('recipes', (event) => {
                 type: 'botania:pure_daisy',
                 input: {
                     type: 'block',
-                    block: recipe.input
+                    block: recipe.input,
                 },
                 output: {
-                    name: recipe.output
-                }
+                    name: recipe.output,
+                },
             })
             .id(recipe.id);
     });

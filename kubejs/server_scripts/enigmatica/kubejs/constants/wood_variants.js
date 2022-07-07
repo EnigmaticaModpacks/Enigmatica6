@@ -92,7 +92,7 @@ var woodVariantsToConstruct = [
     'projectvibrantjourneys:willow',
     'projectvibrantjourneys:redwood',
     'projectvibrantjourneys:pine',
-    'projectvibrantjourneys:fir'
+    'projectvibrantjourneys:fir',
     // 'sushigocrafting:avocado'
 ];
 
@@ -239,7 +239,7 @@ woodVariantsToConstruct.forEach((variant) => {
         logBlockStripped: logBlockStripped,
         woodBlockStripped: woodBlockStripped,
         plankBlock: plankBlock,
-        slabBlock: slabBlock
+        slabBlock: slabBlock,
     };
 
     buildWoodVariants.push(woodVariant);

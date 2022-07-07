@@ -5,7 +5,7 @@ onEvent('ponder.registry', (event) => {
         .create('enigmatica:respawn_ender_dragon', [
             'minecraft:end_crystal',
             'minecraft:dragon_egg',
-            'minecraft:dragon_head'
+            'minecraft:dragon_head',
         ])
 
         .scene(
@@ -144,6 +144,6 @@ onEvent('ponder.registry', (event) => {
                     .setBlocks(util.select().fromTo(5, 1, 3, 6, 1, 5), util.getDefaultState('minecraft:air'), true);
 
                 scene.idle(100);
-            }
+            },
         );
 });

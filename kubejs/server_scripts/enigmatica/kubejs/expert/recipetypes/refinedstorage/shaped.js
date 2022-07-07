@@ -23,9 +23,9 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: 'immersiveengineering:connector_bundled',
                 C: 'immersiveengineering:wirecoil_redstone',
-                D: 'prettypipes:pipe'
+                D: 'prettypipes:pipe',
             },
-            id: 'refinedstorage:cable'
+            id: 'refinedstorage:cable',
         },
         {
             output: Item.of('8x refinedstorage:cable'),
@@ -34,9 +34,9 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: 'immersiveengineering:connector_bundled',
                 C: 'immersiveengineering:wirecoil_redstone',
-                D: 'integrateddynamics:cable'
+                D: 'integrateddynamics:cable',
             },
-            id: `${id_prefix}cable_alt`
+            id: `${id_prefix}cable_alt`,
         },
         {
             output: 'refinedstorage:importer',
@@ -45,9 +45,9 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:cable',
                 B: 'refinedstorage:improved_processor',
                 C: 'refinedstorage:destruction_core',
-                D: '#xnet:connectors'
+                D: '#xnet:connectors',
             },
-            id: 'refinedstorage:importer'
+            id: 'refinedstorage:importer',
         },
         {
             output: 'refinedstorage:exporter',
@@ -56,9 +56,9 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:cable',
                 B: 'refinedstorage:improved_processor',
                 C: 'refinedstorage:construction_core',
-                D: '#xnet:connectors'
+                D: '#xnet:connectors',
             },
-            id: 'refinedstorage:exporter'
+            id: 'refinedstorage:exporter',
         },
         {
             output: 'refinedstorage:external_storage',
@@ -68,9 +68,9 @@ onEvent('recipes', (event) => {
                 B: 'refinedstorage:improved_processor',
                 C: 'refinedstorage:construction_core',
                 D: 'refinedstorage:destruction_core',
-                E: '#xnet:connectors'
+                E: '#xnet:connectors',
             },
-            id: 'refinedstorage:external_storage'
+            id: 'refinedstorage:external_storage',
         },
         {
             output: 'refinedstorage:crafter',
@@ -80,9 +80,9 @@ onEvent('recipes', (event) => {
                 B: 'refinedstorage:construction_core',
                 C: 'refinedstorage:advanced_processor',
                 D: 'refinedstorage:destruction_core',
-                E: 'refinedstorage:machine_casing'
+                E: 'refinedstorage:machine_casing',
             },
-            id: 'refinedstorage:crafter'
+            id: 'refinedstorage:crafter',
         },
         {
             output: 'refinedstorage:wireless_transmitter',
@@ -90,9 +90,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:wires/aluminum',
                 B: '#forge:rods/aluminum',
-                C: 'refinedstorage:advanced_processor'
+                C: 'refinedstorage:advanced_processor',
             },
-            id: 'refinedstorage:wireless_transmitter'
+            id: 'refinedstorage:wireless_transmitter',
         },
         {
             output: 'refinedstorage:range_upgrade',
@@ -101,9 +101,9 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: 'refinedstorage:upgrade',
                 C: 'refinedstorage:basic_processor',
-                D: 'refinedstorage:wireless_transmitter'
+                D: 'refinedstorage:wireless_transmitter',
             },
-            id: 'refinedstorage:range_upgrade'
+            id: 'refinedstorage:range_upgrade',
         },
         {
             output: Item.of('4x refinedstorage:speed_upgrade'),
@@ -114,10 +114,10 @@ onEvent('recipes', (event) => {
                 C: {
                     type: 'pneumaticcraft:fluid',
                     tag: 'forge:lubricant',
-                    amount: 1000
-                }
+                    amount: 1000,
+                },
             },
-            id: 'refinedstorage:speed_upgrade'
+            id: 'refinedstorage:speed_upgrade',
         },
         {
             output: 'refinedstorage:network_card',
@@ -126,9 +126,9 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: 'pneumaticcraft:printed_circuit_board',
                 C: 'refinedstorage:upgrade',
-                D: 'refinedstorage:advanced_processor'
+                D: 'refinedstorage:advanced_processor',
             },
-            id: 'refinedstorage:network_card'
+            id: 'refinedstorage:network_card',
         },
         {
             output: 'refinedstorage:network_transmitter',
@@ -140,9 +140,9 @@ onEvent('recipes', (event) => {
                 D: 'refinedstorage:machine_casing',
                 E: 'refinedstorage:destruction_core',
                 F: '#forge:ingots/aeternium',
-                G: 'kubejs:cpu_core_as_81221'
+                G: 'kubejs:cpu_core_as_81221',
             },
-            id: 'refinedstorage:network_transmitter'
+            id: 'refinedstorage:network_transmitter',
         },
         {
             output: 'refinedstorage:network_receiver',
@@ -154,9 +154,9 @@ onEvent('recipes', (event) => {
                 D: 'refinedstorage:machine_casing',
                 E: 'refinedstorage:destruction_core',
                 F: '#forge:ingots/aeternium',
-                G: 'kubejs:cpu_core_as_81221'
+                G: 'kubejs:cpu_core_as_81221',
             },
-            id: 'refinedstorage:network_receiver'
+            id: 'refinedstorage:network_receiver',
         },
         {
             output: 'refinedstorage:disk_drive',
@@ -165,10 +165,10 @@ onEvent('recipes', (event) => {
                 A: '#forge:circuits/elite',
                 B: 'extrastorage:neural_processor',
                 C: 'immersiveengineering:logic_unit',
-                D: 'refinedstorage:machine_casing'
+                D: 'refinedstorage:machine_casing',
             },
-            id: `${id_prefix}disk_drive_alternate`
-        }
+            id: `${id_prefix}disk_drive_alternate`,
+        },
     ];
 
     recipes.forEach((recipe) => {

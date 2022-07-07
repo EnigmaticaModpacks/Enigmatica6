@@ -8,8 +8,8 @@ onEvent('recipes', (event) => {
             input1: '#forge:ingots/iron',
             secondaries: ['#forge:dusts/ender'],
             outputs: [Item.of('betterendforge:terminite_ingot')],
-            id: `${id_prefix}terminite_ingot_from_iron`
-        }
+            id: `${id_prefix}terminite_ingot_from_iron`,
+        },
     ];
 
     recipes.forEach((recipe) => {

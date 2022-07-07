@@ -19,10 +19,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:cobblestone_slab',
                 B: 'minecraft:redstone_torch',
-                C: '#forge:dusts/redstone'
+                C: '#forge:dusts/redstone',
             },
-            id: 'redstonepen:relay_recipe'
-        }
+            id: 'redstonepen:relay_recipe',
+        },
     ];
 
     newRecipes.forEach((recipe) => {

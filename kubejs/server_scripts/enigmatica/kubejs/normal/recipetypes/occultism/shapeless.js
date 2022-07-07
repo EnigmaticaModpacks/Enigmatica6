@@ -9,8 +9,8 @@ onEvent('recipes', (event) => {
         {
             output: 'occultism:candle_white',
             inputs: ['#quark:candles'],
-            id: `${id_prefix}candle_white`
-        }
+            id: `${id_prefix}candle_white`,
+        },
     ];
 
     recipes.forEach((recipe) => {

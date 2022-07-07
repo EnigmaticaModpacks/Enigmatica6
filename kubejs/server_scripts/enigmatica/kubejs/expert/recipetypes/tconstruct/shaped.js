@@ -21,9 +21,9 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'ars_nouveau:mana_fiber',
-                B: '#forge:ingots/rose_gold'
+                B: '#forge:ingots/rose_gold',
             },
-            id: 'tconstruct:tools/modifiers/silky_cloth'
+            id: 'tconstruct:tools/modifiers/silky_cloth',
         },
         {
             output: 'tconstruct:travelers_helmet',
@@ -31,9 +31,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'betterendforge:leather_stripe',
                 B: 'tconstruct:clear_glass_pane',
-                C: '#forge:plates/copper'
+                C: '#forge:plates/copper',
             },
-            id: 'tconstruct:armor/building/travelers_goggles'
+            id: 'tconstruct:armor/building/travelers_goggles',
         },
         {
             output: 'tconstruct:travelers_chestplate',
@@ -41,9 +41,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:slimeball/sky',
                 B: '#forge:plates/copper',
-                C: Item.of('minecraft:leather_chestplate', '{Damage:0}').weakNBT()
+                C: Item.of('minecraft:leather_chestplate', '{Damage:0}').weakNBT(),
             },
-            id: 'tconstruct:armor/building/travelers_chestplate'
+            id: 'tconstruct:armor/building/travelers_chestplate',
         },
         {
             output: 'tconstruct:travelers_leggings',
@@ -51,9 +51,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:slimeball/sky',
                 B: '#forge:plates/copper',
-                C: Item.of('minecraft:leather_leggings', '{Damage:0}').weakNBT()
+                C: Item.of('minecraft:leather_leggings', '{Damage:0}').weakNBT(),
             },
-            id: 'tconstruct:armor/building/travelers_pants'
+            id: 'tconstruct:armor/building/travelers_pants',
         },
         {
             output: 'tconstruct:travelers_boots',
@@ -61,10 +61,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:slimeball/sky',
                 B: '#forge:plates/copper',
-                C: Item.of('minecraft:leather_boots', '{Damage:0}').weakNBT()
+                C: Item.of('minecraft:leather_boots', '{Damage:0}').weakNBT(),
             },
-            id: 'tconstruct:armor/building/travelers_boots'
-        }
+            id: 'tconstruct:armor/building/travelers_boots',
+        },
     ];
 
     recipes.forEach((recipe) => {

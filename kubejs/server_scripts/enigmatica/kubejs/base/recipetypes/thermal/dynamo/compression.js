@@ -20,14 +20,14 @@ onEvent('recipes', (event) => {
             { input: 'thermal:creosote', energy: 20000 },
             { input: 'immersiveengineering:creosote', energy: 20000 },
             { input: 'thermal:refined_fuel', energy: 1500000 },
-            { input: 'resourcefulbees:rocket_honey', energy: 1500000 }
-        ]
+            { input: 'resourcefulbees:rocket_honey', energy: 1500000 },
+        ],
     };
     data.recipes.forEach((recipe) => {
         //event.recipes.thermal.compression_fuel(recipe.fluid).energy(recipe.energy * multiplier);
         fallback_id(
             event.recipes.thermal.compression_fuel(Fluid.of(recipe.input, 1000)).energy(recipe.energy * multiplier),
-            id_prefix
+            id_prefix,
         );
     });
 });

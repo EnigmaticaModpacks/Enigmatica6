@@ -14,10 +14,10 @@ onEvent('recipes', (event) => {
                 '#forge:dusts/redstone',
                 '#forge:dusts/redstone',
                 '#forge:dusts/redstone',
-                '#forge:dusts/redstone'
+                '#forge:dusts/redstone',
             ],
-            id: 'emendatusenigmatica:alloy_dust/signalum'
-        }
+            id: 'emendatusenigmatica:alloy_dust/signalum',
+        },
     ];
 
     recipes.forEach((recipe) => {

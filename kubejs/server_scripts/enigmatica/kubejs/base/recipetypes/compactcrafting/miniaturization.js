@@ -37,7 +37,7 @@ onEvent('recipes', (event) => {
             layers: recipe.layers,
             catalyst: recipe.catalyst,
             components: recipe.components,
-            outputs: recipe.outputs
+            outputs: recipe.outputs,
         });
     });
 });

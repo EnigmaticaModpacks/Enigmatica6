@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 10000,
             time: 60,
-            id: `${id_prefix}infused_iron_from_comb`
+            id: `${id_prefix}infused_iron_from_comb`,
         },
         {
             input: 'resourcefulbees:infused_honeycomb_block',
@@ -16,7 +16,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 90000,
             time: 540,
-            id: `${id_prefix}infused_iron_block_from_comb_block`
+            id: `${id_prefix}infused_iron_block_from_comb_block`,
         },
         {
             input: 'resourcefulbees:tainted_honeycomb',
@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 10000,
             time: 60,
-            id: `${id_prefix}tainted_gold_from_comb`
+            id: `${id_prefix}tainted_gold_from_comb`,
         },
         {
             input: 'resourcefulbees:tainted_honeycomb_block',
@@ -32,7 +32,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 90000,
             time: 540,
-            id: `${id_prefix}tainted_gold_block_from_comb_block`
+            id: `${id_prefix}tainted_gold_block_from_comb_block`,
         },
         {
             input: 'undergarden:blood_mushroom',
@@ -41,7 +41,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:conversion_catalyst' },
             aura: 30000,
             time: 250,
-            id: `${id_prefix}soul_shroom`
+            id: `${id_prefix}soul_shroom`,
         },
         {
             input: 'undergarden:veil_mushroom',
@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:conversion_catalyst' },
             aura: 30000,
             time: 250,
-            id: `${id_prefix}death_cap`
+            id: `${id_prefix}death_cap`,
         },
         {
             input: 'undergarden:indigo_mushroom',
@@ -59,7 +59,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:conversion_catalyst' },
             aura: 30000,
             time: 250,
-            id: `${id_prefix}sythian_fungus`
+            id: `${id_prefix}sythian_fungus`,
         },
         {
             input: 'undergarden:ink_mushroom',
@@ -68,7 +68,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:conversion_catalyst' },
             aura: 30000,
             time: 250,
-            id: `${id_prefix}embur_wart`
+            id: `${id_prefix}embur_wart`,
         },
         {
             input: 'minecraft:bamboo',
@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:conversion_catalyst' },
             aura: 30000,
             time: 250,
-            id: `${id_prefix}sythian_stalk_block`
+            id: `${id_prefix}sythian_stalk_block`,
         },
         {
             input: 'minecraft:flint',
@@ -86,7 +86,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:conversion_catalyst' },
             aura: 10000,
             time: 60,
-            id: `${id_prefix}gunpowder`
+            id: `${id_prefix}gunpowder`,
         },
         {
             input: 'supplementaries:flint_block',
@@ -95,7 +95,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:conversion_catalyst' },
             aura: 80000,
             time: 480,
-            id: `${id_prefix}gunpowder_block`
+            id: `${id_prefix}gunpowder_block`,
         },
         {
             input: 'thermal:basalz_rod',
@@ -104,7 +104,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:crushing_catalyst' },
             aura: 5000,
             time: 60,
-            id: `${id_prefix}basalz_powder`
+            id: `${id_prefix}basalz_powder`,
         },
         {
             input: 'thermal:blizz_rod',
@@ -113,7 +113,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:crushing_catalyst' },
             aura: 5000,
             time: 60,
-            id: `${id_prefix}blizz_powder`
+            id: `${id_prefix}blizz_powder`,
         },
         {
             input: 'thermal:blitz_rod',
@@ -122,7 +122,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:crushing_catalyst' },
             aura: 5000,
             time: 60,
-            id: `${id_prefix}blitz_powder`
+            id: `${id_prefix}blitz_powder`,
         },
         {
             input: 'minecraft:vine',
@@ -130,8 +130,8 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 30000,
             time: 250,
-            id: `${id_prefix}root`
-        }
+            id: `${id_prefix}root`,
+        },
     ];
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:altar';

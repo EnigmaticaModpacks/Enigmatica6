@@ -21,9 +21,9 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: '#quark:stone_tool_materials',
-                B: '#minecraft:coals'
+                B: '#minecraft:coals',
             },
-            id: 'minecraft:furnace'
+            id: 'minecraft:furnace',
         },
         {
             output: 'minecraft:piston',
@@ -33,9 +33,9 @@ onEvent('recipes', (event) => {
                 B: ['#forge:ingots/iron', '#forge:ingots/aluminum', '#forge:ingots/copper', '#forge:ingots/tin'],
                 C: '#forge:dusts/redstone',
                 D: ['#forge:rods/iron', '#forge:rods/aluminum', '#forge:rods/copper', '#forge:rods/tin'],
-                E: '#minecraft:planks'
+                E: '#minecraft:planks',
             },
-            id: 'minecraft:piston'
+            id: 'minecraft:piston',
         },
         {
             output: Item.of('minecraft:piston', 2),
@@ -47,7 +47,7 @@ onEvent('recipes', (event) => {
                     '#forge:ingots/lead',
                     '#forge:ingots/gold',
                     '#forge:ingots/nickel',
-                    '#forge:ingots/zinc'
+                    '#forge:ingots/zinc',
                 ],
                 C: '#forge:dusts/redstone',
                 D: [
@@ -55,11 +55,11 @@ onEvent('recipes', (event) => {
                     '#forge:rods/lead',
                     '#forge:rods/gold',
                     '#forge:rods/nickel',
-                    '#forge:rods/zinc'
+                    '#forge:rods/zinc',
                 ],
-                E: '#minecraft:planks'
+                E: '#minecraft:planks',
             },
-            id: 'minecraft:piston_alternative'
+            id: 'minecraft:piston_alternative',
         },
         {
             output: 'minecraft:observer',
@@ -67,9 +67,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'create:andesite_alloy',
                 B: '#enigmatica:crafting_slabs',
-                C: 'minecraft:comparator'
+                C: 'minecraft:comparator',
             },
-            id: 'minecraft:observer'
+            id: 'minecraft:observer',
         },
         {
             output: Item.of('minecraft:blast_furnace'),
@@ -78,9 +78,9 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:smooth_stone',
                 B: 'minecraft:furnace',
                 C: 'minecraft:campfire',
-                D: ['#forge:plates/iron', '#forge:plates/tin', '#forge:plates/aluminum']
+                D: ['#forge:plates/iron', '#forge:plates/tin', '#forge:plates/aluminum'],
             },
-            id: 'minecraft:blast_furnace'
+            id: 'minecraft:blast_furnace',
         },
         {
             output: Item.of('minecraft:smoker'),
@@ -89,17 +89,17 @@ onEvent('recipes', (event) => {
                 A: '#minecraft:logs',
                 B: 'minecraft:furnace',
                 C: 'minecraft:campfire',
-                D: '#forge:rods/wooden'
+                D: '#forge:rods/wooden',
             },
-            id: 'minecraft:smoker'
+            id: 'minecraft:smoker',
         },
         {
             output: Item.of('minecraft:red_nether_bricks'),
             pattern: ['AA', 'AA'],
             key: {
-                A: 'kubejs:red_nether_brick'
+                A: 'kubejs:red_nether_brick',
             },
-            id: 'minecraft:red_nether_bricks'
+            id: 'minecraft:red_nether_bricks',
         },
         {
             output: 'minecraft:enchanting_table',
@@ -109,9 +109,9 @@ onEvent('recipes', (event) => {
                 B: '#forge:gems/prismarine',
                 C: 'eidolon:stone_altar',
                 D: 'minecraft:crying_obsidian',
-                E: 'minecraft:conduit'
+                E: 'minecraft:conduit',
             },
-            id: 'minecraft:enchanting_table'
+            id: 'minecraft:enchanting_table',
         },
         {
             output: 'minecraft:brewing_stand',
@@ -119,10 +119,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:nuggets/invar',
                 B: '#forge:rods/brass',
-                C: '#forge:ingots/pewter'
+                C: '#forge:ingots/pewter',
             },
-            id: 'minecraft:brewing_stand'
-        }
+            id: 'minecraft:brewing_stand',
+        },
     ];
 
     recipes.forEach((recipe) => {

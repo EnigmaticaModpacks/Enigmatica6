@@ -9,19 +9,19 @@ onEvent('recipes', (event) => {
             temperature: { min_temp: 373 },
             results: [
                 { fluid: 'mekanism:brine', amount: 10 },
-                { fluid: 'mekanism:steam', amount: 90 }
+                { fluid: 'mekanism:steam', amount: 90 },
             ],
-            id: `${id_prefix}brine`
+            id: `${id_prefix}brine`,
         },
         {
             input: { type: 'pneumaticcraft:fluid', fluid: 'mekanism:brine', amount: 10 },
             temperature: { min_temp: 373 },
             results: [
                 { fluid: 'mekanism:lithium', amount: 1 },
-                { fluid: 'mekanism:steam', amount: 9 }
+                { fluid: 'mekanism:steam', amount: 9 },
             ],
-            id: `${id_prefix}lithium`
-        }
+            id: `${id_prefix}lithium`,
+        },
     ];
 
     recipes.forEach((recipe) => {

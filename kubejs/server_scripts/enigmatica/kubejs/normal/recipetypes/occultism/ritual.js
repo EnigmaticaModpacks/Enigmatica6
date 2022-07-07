@@ -16,7 +16,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_foliot_crusher',
             ingredients: ['#forge:ores/iron', '#forge:ores/gold', '#forge:ores/copper', '#forge:ores/silver'],
             result: 'occultism:jei_dummy/none',
-            id: 'occultism:ritual/summon_foliot_crusher'
+            id: 'occultism:ritual/summon_foliot_crusher',
         },
         {
             ritual_type: 'occultism:craft_miner_spirit',
@@ -28,10 +28,10 @@ onEvent('recipes', (event) => {
                 'occultism:magic_lamp_empty',
                 Item.of('aquaculture:diamond_fishing_rod', '{Damage:0]}').weakNBT(),
                 'minecraft:sea_lantern',
-                'aquaculture:diamond_hook'
+                'aquaculture:diamond_hook',
             ],
             result: Item.of('kubejs:fisher_foliot', '{rollsPerOperation:3,Damage:0,maxMiningTime:400}'),
-            id: `${id_prefix}craft_fisher_foliot`
+            id: `${id_prefix}craft_fisher_foliot`,
         },
         {
             ritual_type: 'occultism:craft_miner_spirit',
@@ -51,11 +51,11 @@ onEvent('recipes', (event) => {
                 '#forge:clusters/uranium',
                 '#forge:clusters/uranium',
                 '#forge:clusters/uranium',
-                '#forge:clusters/uranium'
+                '#forge:clusters/uranium',
             ],
             result: Item.of('kubejs:miner_marid_irradiated', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
-            id: `${id_prefix}miner_marid_irradiated`
-        }
+            id: `${id_prefix}miner_marid_irradiated`,
+        },
     ];
 
     /*

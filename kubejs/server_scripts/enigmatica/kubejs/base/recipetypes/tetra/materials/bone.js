@@ -18,14 +18,14 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'bone_glyph', texture: 'bone' },
                     textures: ['bone', 'crude'],
                     material: { item: 'minecraft:bone' },
-                    requiredTools: { hammer: 1 }
-                }
+                    requiredTools: { hammer: 1 },
+                },
             ],
             type: 'compat',
             recipes: [
                 // todo: brute tusk, chachalot whale tooth, bone serpent tooth, shark tooth, thrasher tooth, wilden horn gazelle horn, Unicorn honr (joke, high magic but crappy stats?)
-            ]
-        }
+            ],
+        },
     ];
 
     data.forEach((recipeType) => {

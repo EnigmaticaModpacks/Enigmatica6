@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 15000,
             time: 80,
-            id: 'naturesaura:altar/infused_iron'
+            id: 'naturesaura:altar/infused_iron',
         },
         {
             input: 'architects_palette:sunmetal_block',
@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 135000,
             time: 700,
-            id: 'naturesaura:altar/infused_iron_block'
+            id: 'naturesaura:altar/infused_iron_block',
         },
         {
             input: '#forge:ingots/arcane_gold',
@@ -28,7 +28,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 15000,
             time: 80,
-            id: 'naturesaura:altar/tainted_gold'
+            id: 'naturesaura:altar/tainted_gold',
         },
         {
             input: '#forge:storage_blocks/arcane_gold',
@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 135000,
             time: 700,
-            id: 'naturesaura:altar/tainted_gold_block'
+            id: 'naturesaura:altar/tainted_gold_block',
         },
         {
             input: 'eidolon:candle',
@@ -44,7 +44,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 18000,
             time: 60,
-            id: 'occultism:crafting/candle'
+            id: 'occultism:crafting/candle',
         },
         {
             input: 'kubejs:firmament',
@@ -52,7 +52,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 5000,
             time: 20,
-            id: `${id_prefix}sunstone`
+            id: `${id_prefix}sunstone`,
         },
         {
             input: 'ars_nouveau:arcane_stone',
@@ -60,7 +60,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 12000,
             time: 40,
-            id: 'naturesaura:altar/infused_stone'
+            id: 'naturesaura:altar/infused_stone',
         },
         {
             input: 'minecraft:glass',
@@ -68,7 +68,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 100,
             time: 20,
-            id: `${id_prefix}glass_ghostly`
+            id: `${id_prefix}glass_ghostly`,
         },
         {
             input: 'minecraft:ender_pearl',
@@ -76,7 +76,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 5000,
             time: 20,
-            id: 'integrateddynamics:crafting/proto_chorus'
+            id: 'integrateddynamics:crafting/proto_chorus',
         },
         {
             input: '#minecraft:fishes',
@@ -85,7 +85,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:crushing_catalyst' },
             aura: 1000,
             time: 60,
-            id: `${id_prefix}fish_bones`
+            id: `${id_prefix}fish_bones`,
         },
         {
             input: 'minecraft:pufferfish',
@@ -94,7 +94,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 15000,
             time: 80,
-            id: `${id_prefix}lionfish`
+            id: `${id_prefix}lionfish`,
         },
         {
             input: 'integrateddynamics:part_static_light_panel',
@@ -102,7 +102,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 100,
             time: 20,
-            id: 'integrateddynamics:crafting/part_display_panel'
+            id: 'integrateddynamics:crafting/part_display_panel',
         },
         {
             input: 'botania:redstone_root',
@@ -111,7 +111,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 1500,
             time: 20,
-            id: `${id_prefix}root`
+            id: `${id_prefix}root`,
         },
         {
             input: 'minecraft:lily_pad',
@@ -120,7 +120,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 15000,
             time: 80,
-            id: `${id_prefix}duckweed`
+            id: `${id_prefix}duckweed`,
         },
         {
             input: 'ars_nouveau:arcane_stone',
@@ -128,7 +128,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 135000,
             time: 450,
-            id: `${id_prefix}warding_stone`
+            id: `${id_prefix}warding_stone`,
         },
         {
             input: '#forge:gems/mana',
@@ -137,7 +137,7 @@ onEvent('recipes', (event) => {
             catalyst: { item: 'naturesaura:crushing_catalyst' },
             aura: 6000,
             time: 20,
-            id: `${id_prefix}mana_powder`
+            id: `${id_prefix}mana_powder`,
         },
         {
             input: 'thermal:phytogro',
@@ -145,7 +145,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 50000,
             time: 200,
-            id: `${id_prefix}floral_fertilizer`
+            id: `${id_prefix}floral_fertilizer`,
         },
         {
             input: 'minecraft:slime_ball',
@@ -153,7 +153,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 5000,
             time: 20,
-            id: `${id_prefix}ichor_slime_ball`
+            id: `${id_prefix}ichor_slime_ball`,
         },
         {
             input: 'minecraft:slime_ball',
@@ -161,7 +161,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 5000,
             time: 20,
-            id: `${id_prefix}sky_slime_ball`
+            id: `${id_prefix}sky_slime_ball`,
         },
         {
             input: 'tconstruct:earth_congealed_slime',
@@ -169,7 +169,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 5000 * 3,
             time: 20 * 3,
-            id: `${id_prefix}ichor_congealed_slime`
+            id: `${id_prefix}ichor_congealed_slime`,
         },
         {
             input: 'tconstruct:earth_congealed_slime',
@@ -177,7 +177,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 5000 * 3,
             time: 20 * 3,
-            id: `${id_prefix}sky_congealed_slime`
+            id: `${id_prefix}sky_congealed_slime`,
         },
         {
             input: 'create:rose_quartz',
@@ -185,7 +185,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 5000,
             time: 20,
-            id: `${id_prefix}polished_rose_quartz`
+            id: `${id_prefix}polished_rose_quartz`,
         },
         {
             input: 'botania:vine_ball',
@@ -193,7 +193,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 135000,
             time: 500,
-            id: `${id_prefix}thorn_chakram`
+            id: `${id_prefix}thorn_chakram`,
         },
         {
             input: 'ars_nouveau:mana_bloom_crop',
@@ -201,7 +201,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 500000,
             time: 1000,
-            id: `${id_prefix}overgrowth_seed`
+            id: `${id_prefix}overgrowth_seed`,
         },
         {
             input: 'ars_nouveau:magic_clay',
@@ -209,7 +209,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 15000,
             time: 50,
-            id: 'ars_nouveau:marvelous_clay'
+            id: 'ars_nouveau:marvelous_clay',
         },
         {
             input: 'eidolon:soul_shard',
@@ -217,7 +217,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 15000,
             time: 50,
-            id: `${id_prefix}slate_ampoule`
+            id: `${id_prefix}slate_ampoule`,
         },
         {
             input: 'ars_nouveau:ritual_fertility',
@@ -226,7 +226,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 300000,
             time: 1000,
-            id: `${id_prefix}birth_spirit`
+            id: `${id_prefix}birth_spirit`,
         },
         {
             input: 'astralsorcery:infused_wood',
@@ -234,8 +234,8 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:overworld',
             aura: 500,
             time: 100,
-            id: `astralsorcery:infuser/infused_wood`
-        }
+            id: `astralsorcery:infuser/infused_wood`,
+        },
     ];
 
     recipes.forEach((recipe) => {

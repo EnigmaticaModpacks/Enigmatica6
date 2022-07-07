@@ -16,13 +16,13 @@ onEvent('item.tags', (event) => {
         'powah:crystal_niotic',
         'powah:crystal_spirited',
         'powah:crystal_nitro',
-        'astralsorcery:aquamarine'
+        'astralsorcery:aquamarine',
     ]);
 
     event.add(gems + '/coal_coke', [
         'emendatusenigmatica:coke_gem',
         'immersiveengineering:coal_coke',
-        'thermal:coal_coke'
+        'thermal:coal_coke',
     ]);
     event.get(gems_ender).add('minecraft:ender_pearl');
     event.get(gems_coal).add('minecraft:coal');

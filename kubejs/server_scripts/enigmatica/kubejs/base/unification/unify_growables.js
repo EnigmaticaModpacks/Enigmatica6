@@ -48,7 +48,7 @@ function soils_botany_pots(event, soil) {
         input: { item: input },
         display: display,
         categories: soil.categories,
-        growthModifier: soil.growthModifier
+        growthModifier: soil.growthModifier,
     });
 }
 
@@ -111,8 +111,8 @@ function crops_botany_pots(event, type, crop) {
                 chance: primary[0],
                 output: { item: crop.plant },
                 minRolls: primary[1],
-                maxRolls: primary[2]
-            }
+                maxRolls: primary[2],
+            },
         ];
     if (type.includes('crop_')) {
         //add seeds to crop type output
@@ -120,7 +120,7 @@ function crops_botany_pots(event, type, crop) {
             chance: 0.2,
             output: { item: crop.seed },
             minRolls: 1,
-            maxRolls: 5
+            maxRolls: 5,
         });
     }
 
@@ -130,7 +130,7 @@ function crops_botany_pots(event, type, crop) {
             chance: 0.05,
             output: { item: plantSecondary },
             minRolls: 1,
-            maxRolls: 5
+            maxRolls: 5,
         });
     }
 
@@ -140,7 +140,7 @@ function crops_botany_pots(event, type, crop) {
         categories: [crop.substrate],
         growthTicks: growthTicks * growthModifier,
         display: { block: crop.render },
-        results: outputs
+        results: outputs,
     });
 }
 
@@ -232,7 +232,7 @@ function crops_thermal_insolator(event, type, crop) {
             .insolator(outputs, input)
             .water(baseWater * waterModifier)
             .energy(baseEnergy * energyModifier),
-        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`,
     );
 }
 
@@ -416,10 +416,10 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         event.recipes.immersiveengineering
             .cloche(outputs, input, substrate, {
                 type: renderType,
-                block: renderBlock
+                block: renderBlock,
             })
             .time(growthTicks * growthModifier),
-        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`,
     );
 }
 
@@ -444,8 +444,8 @@ function trees_botany_pots(event, type, tree) {
                 chance: saplingRate[0],
                 output: { item: tree.sapling },
                 minRolls: saplingRate[1],
-                maxRolls: saplingRate[2]
-            }
+                maxRolls: saplingRate[2],
+            },
         ];
     /*
     types:  tree, tree_shroom
@@ -456,21 +456,21 @@ function trees_botany_pots(event, type, tree) {
                 chance: trunkRate[0],
                 output: { item: tree.trunk },
                 minRolls: trunkRate[1],
-                maxRolls: trunkRate[2]
+                maxRolls: trunkRate[2],
             },
             {
                 chance: leafRate[0],
                 output: { item: tree.leaf },
                 minRolls: leafRate[1],
-                maxRolls: leafRate[2]
-            }
+                maxRolls: leafRate[2],
+            },
         );
         if (tree.extraDecoration) {
             outputs.push({
                 chance: extraDecorationRate[0],
                 output: { item: tree.extraDecoration },
                 minRolls: extraDecorationRate[1],
-                maxRolls: extraDecorationRate[2]
+                maxRolls: extraDecorationRate[2],
             });
         }
         var stickType = 'minecraft:stick';
@@ -482,7 +482,7 @@ function trees_botany_pots(event, type, tree) {
             chance: stickRate[0],
             output: { item: stickType },
             minRolls: stickRate[1],
-            maxRolls: stickRate[2]
+            maxRolls: stickRate[2],
         });
         if (tree.fruit) {
             //add any fruits
@@ -490,7 +490,7 @@ function trees_botany_pots(event, type, tree) {
                 chance: fruitRate[0],
                 output: { item: tree.fruit },
                 minRolls: fruitRate[1],
-                maxRolls: fruitRate[2]
+                maxRolls: fruitRate[2],
             });
         }
     }
@@ -505,7 +505,7 @@ function trees_botany_pots(event, type, tree) {
         categories: [tree.substrate],
         growthTicks: growthTicks * growthModifier,
         display: { block: input },
-        results: outputs
+        results: outputs,
     });
 }
 
@@ -525,7 +525,7 @@ function trees_thermal_insolator(event, tree) {
         outputs = [
             Item.of(tree.sapling).chance(saplingRate),
             Item.of(tree.trunk).chance(trunkRate),
-            Item.of(tree.leaf).chance(leafRate)
+            Item.of(tree.leaf).chance(leafRate),
         ];
 
     if (tree.fruit) {
@@ -543,7 +543,7 @@ function trees_thermal_insolator(event, tree) {
             .insolator(outputs, input)
             .water(baseWater * waterModifier)
             .energy(baseEnergy * energyModifier),
-        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`,
     );
 }
 
@@ -626,9 +626,9 @@ function trees_immersiveengineering_cloche(event, tree) {
         event.recipes.immersiveengineering
             .cloche(outputs, input, substrate, {
                 type: renderType,
-                block: renderBlock
+                block: renderBlock,
             })
             .time(baseGrowthTicks * growthModifier),
-        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`,
     );
 }

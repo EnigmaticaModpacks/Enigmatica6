@@ -15,7 +15,7 @@ onEvent('item.tags', (event) => {
         'eidolon:top_hat',
         'atum:halo_of_ra',
         'atum:eyes_of_atem',
-        'environmental:thief_hood'
+        'environmental:thief_hood',
     ];
 
     var exceptions = ['kubejs:pneumatic_helmet_package', 'kubejs:pneumatic_helmet_assembly'];

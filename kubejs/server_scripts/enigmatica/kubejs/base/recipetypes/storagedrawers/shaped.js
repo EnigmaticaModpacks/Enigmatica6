@@ -7,10 +7,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:nuggets/gold',
                 B: '#forge:ingots/gold',
-                C: '#minecraft:signs'
+                C: '#minecraft:signs',
             },
-            id: `${id_prefix}shroud_key`
-        }
+            id: `${id_prefix}shroud_key`,
+        },
     ];
 
     recipes.forEach((recipe) => {

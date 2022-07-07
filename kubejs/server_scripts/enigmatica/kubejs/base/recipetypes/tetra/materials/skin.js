@@ -18,7 +18,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'hide_glyph', texture: 'hide' },
                     textures: ['crude', 'default'],
                     material: { item: 'minecraft:rabbit_hide', count: 2 },
-                    requiredTools: { cut: 2 }
+                    requiredTools: { cut: 2 },
                 },
                 {
                     key: 'leather',
@@ -35,14 +35,14 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'leather_glyph', texture: 'leather' },
                     textures: ['crude', 'default'],
                     material: { item: 'minecraft:leather' },
-                    requiredTools: { cut: 2 }
-                }
+                    requiredTools: { cut: 2 },
+                },
             ],
             type: 'compat',
             recipes: [
                 // todo: Kangaroo Hide
-            ]
-        }
+            ],
+        },
     ];
 
     data.forEach((recipeType) => {

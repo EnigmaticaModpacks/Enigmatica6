@@ -11,8 +11,8 @@ onEvent('recipes', (event) => {
             energyMod: 0.1,
             minChance: 0.0,
             useChance: 0.05,
-            id: `${id_prefix}earth_rune`
-        }
+            id: `${id_prefix}earth_rune`,
+        },
     ];
 
     recipes.forEach((recipe) => {

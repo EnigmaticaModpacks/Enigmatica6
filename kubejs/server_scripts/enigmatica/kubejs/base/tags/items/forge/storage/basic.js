@@ -19,7 +19,7 @@ onEvent('item.tags', (event) => {
         'minecraft:dropper',
         'resourcefulbees:apiary_storage',
         'rftoolsstorage:modular_storage',
-        'tetra:rack'
+        'tetra:rack',
     ];
     var exceptions = [
         'aquaculture:treasure_chest',
@@ -28,7 +28,7 @@ onEvent('item.tags', (event) => {
         'immersiveengineering:armor_steel_chest',
         'immersiveengineering:armor_faraday_chest',
         'atum:mummy_chest',
-        'atum:wanderer_chest'
+        'atum:wanderer_chest',
     ];
 
     var tags = ['forge:storage', 'forge:storage/basic'];

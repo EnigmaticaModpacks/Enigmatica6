@@ -3,14 +3,14 @@ function cuttingRecipe(ingredient, tool, result) {
         type: 'farmersdelight:cutting',
         ingredients: [ingredient],
         tool: tool,
-        result: result
+        result: result,
     };
 }
 
 function filletRecipe(fish, filletCount) {
     return cuttingRecipe(Ingredient.of(fish), Ingredient.of('#forge:tools/knives'), [
         Item.of('aquaculture:fish_fillet_raw', filletCount),
-        Item.of('minecraft:bone_meal', Math.ceil(filletCount / 3))
+        Item.of('minecraft:bone_meal', Math.ceil(filletCount / 3)),
     ]);
 }
 onEvent('recipes', (event) => {
@@ -21,33 +21,33 @@ onEvent('recipes', (event) => {
             Ingredient.of('#forge:storage_blocks/clay'),
             {
                 type: 'farmersdelight:tool',
-                tool: 'shovel'
+                tool: 'shovel',
             },
-            [Item.of('minecraft:clay_ball', 4)]
+            [Item.of('minecraft:clay_ball', 4)],
         ),
         cuttingRecipe(Ingredient.of('minecraft:chicken'), Ingredient.of('#forge:tools/knives'), [
             Item.of('farmersdelight:chicken_cuts', 2),
             Item.of('simplefarming:raw_chicken_wings'),
-            Item.of('minecraft:bone_meal')
+            Item.of('minecraft:bone_meal'),
         ]),
         cuttingRecipe(Ingredient.of('aquaculture:frog'), Ingredient.of('#forge:tools/knives'), [
-            Item.of('quark:frog_leg', 2)
+            Item.of('quark:frog_leg', 2),
         ]),
         cuttingRecipe(
             Ingredient.of('aquaculture:goldfish'),
             {
                 type: 'farmersdelight:tool',
-                tool: 'pickaxe'
+                tool: 'pickaxe',
             },
-            [Item.of('emendatusenigmatica:gold_chunk', 1)]
+            [Item.of('emendatusenigmatica:gold_chunk', 1)],
         ),
         cuttingRecipe(Ingredient.of('aquaculture:atlantic_cod'), Ingredient.of('#forge:tools/knives'), [
             Item.of('farmersdelight:cod_slice', 6),
-            Item.of('minecraft:bone_meal', 3)
+            Item.of('minecraft:bone_meal', 3),
         ]),
         cuttingRecipe(Ingredient.of('aquaculture:pink_salmon'), Ingredient.of('#forge:tools/knives'), [
             Item.of('farmersdelight:salmon_slice', 2),
-            Item.of('minecraft:bone_meal', 1)
+            Item.of('minecraft:bone_meal', 1),
         ]),
         filletRecipe('minecraft:pufferfish', 2),
         filletRecipe('aquaculture:boulti', 1),
@@ -76,7 +76,7 @@ onEvent('recipes', (event) => {
         filletRecipe('undergarden:raw_gwibling', 4),
         filletRecipe('alexsmobs:blobfish', 6),
         filletRecipe('betterendforge:end_fish_raw', 2),
-        filletRecipe('upgrade_aquatic:lionfish', 12)
+        filletRecipe('upgrade_aquatic:lionfish', 12),
     ];
 
     recipes.forEach((recipe) => {
@@ -92,9 +92,9 @@ onEvent('recipes', (event) => {
                 'undergarden:deepturf_block',
                 'undergarden:ashen_deepturf_block',
                 'undergarden:deepsoil',
-                'undergarden:coarse_deepsoil'
-            ]
-        }
+                'undergarden:coarse_deepsoil',
+            ],
+        },
     ];
 
     tillsIntoFarmland.forEach(function (category) {
@@ -102,7 +102,7 @@ onEvent('recipes', (event) => {
         category.soils.forEach(function (soil) {
             let tool = {
                 type: 'farmersdelight:tool',
-                tool: 'hoe'
+                tool: 'hoe',
             };
             let ingredients = Ingredient.of(soil);
             let result = [Item.of(farmland)];
@@ -112,9 +112,9 @@ onEvent('recipes', (event) => {
                     type: 'farmersdelight:cutting',
                     ingredients: [ingredients],
                     tool: tool,
-                    result: result
+                    result: result,
                 }),
-                id_prefix
+                id_prefix,
             );
         });
     });
@@ -123,18 +123,18 @@ onEvent('recipes', (event) => {
         let woodRecipes = [
             {
                 input: variant.logBlock,
-                output: variant.logBlockStripped
+                output: variant.logBlockStripped,
             },
             {
                 input: variant.woodBlock,
-                output: variant.woodBlockStripped
-            }
+                output: variant.woodBlockStripped,
+            },
         ];
 
         woodRecipes.forEach((recipe) => {
             let tool = {
                 type: 'farmersdelight:tool',
-                tool: 'axe'
+                tool: 'axe',
             };
             let ingredients = Ingredient.of(recipe.input);
             let result = [Item.of(recipe.output), Item.of('farmersdelight:tree_bark')];
@@ -146,9 +146,9 @@ onEvent('recipes', (event) => {
                     type: 'farmersdelight:cutting',
                     ingredients: [ingredients],
                     tool: tool,
-                    result: result
+                    result: result,
                 }),
-                id_prefix
+                id_prefix,
             );
         });
     });

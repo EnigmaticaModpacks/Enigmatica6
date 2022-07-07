@@ -10,9 +10,9 @@ onEvent('block.loot_tables', (event) => {
                 {
                     rolls: [4, 6],
                     survivesExplosion: true,
-                    droppedItems: [{ id: 'pneumaticcraft:reinforced_bricks' }]
-                }
-            ]
+                    droppedItems: [{ id: 'pneumaticcraft:reinforced_bricks' }],
+                },
+            ],
         },
         {
             target: ['eidolon:crucible'],
@@ -20,9 +20,9 @@ onEvent('block.loot_tables', (event) => {
                 {
                     rolls: [1, 2],
                     survivesExplosion: true,
-                    droppedItems: [{ id: 'eidolon:pewter_ingot' }]
-                }
-            ]
+                    droppedItems: [{ id: 'eidolon:pewter_ingot' }],
+                },
+            ],
         },
         {
             target: ['eidolon:worktable'],
@@ -30,10 +30,10 @@ onEvent('block.loot_tables', (event) => {
                 {
                     rolls: [1, 1],
                     survivesExplosion: true,
-                    droppedItems: [{ id: 'minecraft:conduit' }]
-                }
-            ]
-        }
+                    droppedItems: [{ id: 'minecraft:conduit' }],
+                },
+            ],
+        },
     ];
 
     let illusory_blocks = [
@@ -50,7 +50,7 @@ onEvent('block.loot_tables', (event) => {
         { real: 'botania:apothecary_taiga', fake: 'mekanism:salt' },
         { real: 'botania:apothecary_mesa', fake: 'mekanism:salt' },
         { real: 'botania:bifrost_perm', fake: 'dustrial_decor:cardboard' },
-        { real: 'botania:diluted_pool', fake: 'dustrial_decor:cardboard' }
+        { real: 'botania:diluted_pool', fake: 'dustrial_decor:cardboard' },
     ];
     illusory_blocks.forEach((illusory_block) => {
         loot_tables.push({
@@ -65,10 +65,10 @@ onEvent('block.loot_tables', (event) => {
                             condition: 'minecraft:inverted',
                             term: {
                                 condition: 'minecraft:location_check',
-                                predicate: { dimension: 'mythicbotany:alfheim' }
-                            }
-                        }
-                    ]
+                                predicate: { dimension: 'mythicbotany:alfheim' },
+                            },
+                        },
+                    ],
                 },
                 {
                     rolls: 1,
@@ -77,11 +77,11 @@ onEvent('block.loot_tables', (event) => {
                     conditions: [
                         {
                             condition: 'minecraft:location_check',
-                            predicate: { dimension: 'mythicbotany:alfheim' }
-                        }
-                    ]
-                }
-            ]
+                            predicate: { dimension: 'mythicbotany:alfheim' },
+                        },
+                    ],
+                },
+            ],
         });
     });
 

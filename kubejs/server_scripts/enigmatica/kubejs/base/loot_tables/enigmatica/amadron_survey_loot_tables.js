@@ -3,14 +3,14 @@ onEvent('server.datapack.low_priority', (event) => {
         {
             name: 'amadron_survey_tool_return',
             rolls: [1, 1],
-            entries: [{ item: 'mekanismtools:steel_paxel', weight: 1, chance: 0.15, damage: [0.01, 0.15] }]
+            entries: [{ item: 'mekanismtools:steel_paxel', weight: 1, chance: 0.15, damage: [0.01, 0.15] }],
         },
         {
             name: 'amadron_survey_air_canister_return',
             rolls: [1, 1],
             entries: [
-                { item: 'pneumaticcraft:air_canister', weight: 1, amount: [4, 4], nbt: '{"pneumaticcraft:air":500}' }
-            ]
+                { item: 'pneumaticcraft:air_canister', weight: 1, amount: [4, 4], nbt: '{"pneumaticcraft:air":500}' },
+            ],
         },
         {
             name: 'amadron_mineral_survey_atum',
@@ -40,8 +40,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { amount: [16, 24], weight: 2000, item: 'atum:nebu_ore' },
                 { amount: [16, 24], weight: 1500, item: 'atum:relic_ore' },
                 { amount: [32, 64], weight: 1200, item: 'atum:sand' },
-                { amount: [16, 24], weight: 300, item: 'atum:khnumite_raw' }
-            ]
+                { amount: [16, 24], weight: 300, item: 'atum:khnumite_raw' },
+            ],
         },
         {
             name: 'amadron_mineral_survey_undergarden',
@@ -71,8 +71,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { amount: [16, 24], weight: 1200, item: 'undergarden:regalium_ore' },
                 { amount: [16, 24], weight: 1200, item: 'undergarden:utherium_ore' },
                 { amount: [16, 24], weight: 1500, item: 'undergarden:froststeel_ore' },
-                { amount: [16, 24], weight: 1100, item: 'undergarden:cloggrum_ore' }
-            ]
+                { amount: [16, 24], weight: 1100, item: 'undergarden:cloggrum_ore' },
+            ],
         },
         {
             name: 'amadron_mineral_survey_the_end',
@@ -98,8 +98,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { amount: [16, 24], weight: 1100, item: 'betterendforge:smaragdant_crystal' },
                 { amount: [16, 24], weight: 500, item: 'betterendforge:smaragdant_crystal_shard' },
                 { amount: [16, 24], weight: 1100, item: 'betterendforge:aurora_crystal' },
-                { amount: [16, 24], weight: 500, item: 'betterendforge:crystal_shards' }
-            ]
+                { amount: [16, 24], weight: 500, item: 'betterendforge:crystal_shards' },
+            ],
         },
         {
             name: 'amadron_botanical_survey_nether',
@@ -150,8 +150,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { amount: [16, 24], weight: 100, item: 'byg:overgrown_crimson_blackstone' },
                 { amount: [16, 24], weight: 100, item: 'byg:overgrown_netherrack' },
                 { amount: [16, 24], weight: 100, item: 'byg:sythian_nylium' },
-                { amount: [16, 24], weight: 100, item: 'byg:wailing_nylium' }
-            ]
+                { amount: [16, 24], weight: 100, item: 'byg:wailing_nylium' },
+            ],
         },
         {
             name: 'amadron_botanical_survey_end',
@@ -272,8 +272,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { amount: [16, 24], weight: 100, item: 'byg:vermilion_sculk_growth' },
                 { amount: [16, 24], weight: 100, item: 'minecraft:chorus_flower' },
                 { amount: [16, 24], weight: 100, item: 'quark:chorus_twist' },
-                { amount: [16, 24], weight: 100, item: 'quark:chorus_weeds' }
-            ]
+                { amount: [16, 24], weight: 100, item: 'quark:chorus_weeds' },
+            ],
         },
         {
             name: 'amadron_mineral_survey_atum_combo',
@@ -281,8 +281,8 @@ onEvent('server.datapack.low_priority', (event) => {
             pools: [
                 { table: 'amadron_survey_tool_return', weight: 1 },
                 { table: 'amadron_survey_air_canister_return', weight: 1 },
-                { table: 'amadron_mineral_survey_atum', weight: 1 }
-            ]
+                { table: 'amadron_mineral_survey_atum', weight: 1 },
+            ],
         },
         {
             name: 'amadron_mineral_survey_undergarden_combo',
@@ -290,8 +290,8 @@ onEvent('server.datapack.low_priority', (event) => {
             pools: [
                 { table: 'amadron_survey_tool_return', weight: 1 },
                 { table: 'amadron_survey_air_canister_return', weight: 1 },
-                { table: 'amadron_mineral_survey_undergarden', weight: 1 }
-            ]
+                { table: 'amadron_mineral_survey_undergarden', weight: 1 },
+            ],
         },
         {
             name: 'amadron_mineral_survey_the_end_combo',
@@ -299,8 +299,8 @@ onEvent('server.datapack.low_priority', (event) => {
             pools: [
                 { table: 'amadron_survey_tool_return', weight: 1 },
                 { table: 'amadron_survey_air_canister_return', weight: 1 },
-                { table: 'amadron_mineral_survey_the_end', weight: 1 }
-            ]
+                { table: 'amadron_mineral_survey_the_end', weight: 1 },
+            ],
         },
         {
             name: 'amadron_botanical_survey_nether_combo',
@@ -308,8 +308,8 @@ onEvent('server.datapack.low_priority', (event) => {
             pools: [
                 { table: 'amadron_survey_tool_return', weight: 1 },
                 { table: 'amadron_survey_air_canister_return', weight: 1 },
-                { table: 'amadron_botanical_survey_nether', weight: 1 }
-            ]
+                { table: 'amadron_botanical_survey_nether', weight: 1 },
+            ],
         },
         {
             name: 'amadron_botanical_survey_end_combo',
@@ -317,9 +317,9 @@ onEvent('server.datapack.low_priority', (event) => {
             pools: [
                 { table: 'amadron_survey_tool_return', weight: 1 },
                 { table: 'amadron_survey_air_canister_return', weight: 1 },
-                { table: 'amadron_botanical_survey_end', weight: 1 }
-            ]
-        }
+                { table: 'amadron_botanical_survey_end', weight: 1 },
+            ],
+        },
     ];
 
     lootTables.forEach((lootTable) => {
@@ -332,14 +332,14 @@ onEvent('server.datapack.low_priority', (event) => {
                         {
                             type: 'loot_table',
                             weight: pool.weight,
-                            name: `enigmatica:chests/${pool.table}`
-                        }
-                    ]
+                            name: `enigmatica:chests/${pool.table}`,
+                        },
+                    ],
                 });
             });
 
             event.addJson(`enigmatica:loot_tables/chests/${lootTable.name}.json`, {
-                pools: pools
+                pools: pools,
             });
         } else {
             let entries = [];
@@ -349,14 +349,14 @@ onEvent('server.datapack.low_priority', (event) => {
                 if (entry.amount) {
                     functions.push({
                         function: 'set_count',
-                        count: { min: entry.amount[0], max: entry.amount[1] }
+                        count: { min: entry.amount[0], max: entry.amount[1] },
                     });
                 }
                 if (entry.enchantRange) {
                     functions.push({
                         function: 'enchant_with_levels',
                         levels: { min: entry.enchantRange[0], max: entry.enchantRange[1] },
-                        treasure: true
+                        treasure: true,
                     });
                 }
                 if (entry.nbt) {
@@ -365,20 +365,20 @@ onEvent('server.datapack.low_priority', (event) => {
                 if (entry.damage) {
                     functions.push({
                         function: 'set_damage',
-                        damage: { min: entry.damage[0], max: entry.damage[1] }
+                        damage: { min: entry.damage[0], max: entry.damage[1] },
                     });
                 }
                 if (entry.chance) {
                     conditions.push({
                         condition: 'random_chance',
-                        chance: entry.chance
+                        chance: entry.chance,
                     });
                 }
                 if (lootTable.type == 'combo_table') {
                     entries.push({
                         type: 'loot_table',
                         weight: entry.weight,
-                        name: `enigmatica:chests/${entry.item}`
+                        name: `enigmatica:chests/${entry.item}`,
                     });
                 } else {
                     entries.push({
@@ -386,13 +386,13 @@ onEvent('server.datapack.low_priority', (event) => {
                         weight: entry.weight,
                         name: entry.item,
                         functions: functions,
-                        conditions: conditions
+                        conditions: conditions,
                     });
                 }
             });
 
             event.addJson(`enigmatica:loot_tables/chests/${lootTable.name}.json`, {
-                pools: [{ rolls: { min: lootTable.rolls[0], max: lootTable.rolls[1] }, entries: entries }]
+                pools: [{ rolls: { min: lootTable.rolls[0], max: lootTable.rolls[1] }, entries: entries }],
             });
         }
     });

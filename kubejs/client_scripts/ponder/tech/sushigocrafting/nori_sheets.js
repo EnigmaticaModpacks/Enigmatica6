@@ -6,7 +6,7 @@ onEvent('ponder.registry', (event) => {
             'sushigocrafting:nori_sheets',
             'sushigocrafting:dried_seaweed_block',
             'sushigocrafting:dried_seaweed',
-            'sushigocrafting:seaweed'
+            'sushigocrafting:seaweed',
         ])
 
         .scene(
@@ -53,7 +53,7 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showControls(new PonderInput([2.5, 2, 2.5], PonderPointing.RIGHT).showing(PonderIcons.I_LMB), 50);
                 scene.idle(70);
-            }
+            },
         )
         .scene(
             'dried_seaweed_blocks',
@@ -96,7 +96,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([2.65, 1, 2], PonderPointing.RIGHT)
                             .showing(PonderIcons.I_CONFIG_OPEN)
                             .withItem('sushigocrafting:seaweed'),
-                        30
+                        30,
                     );
                 scene.idle(40);
                 scene
@@ -105,7 +105,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([1, 1.5, 1.5], PonderPointing.LEFT)
                             .showing(PonderIcons.I_CONFIG_OPEN)
                             .withItem('sushigocrafting:dried_seaweed'),
-                        30
+                        30,
                     );
                 scene.idle(60);
 
@@ -129,7 +129,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([2.65, 1, 2], PonderPointing.RIGHT)
                             .showing(PonderIcons.I_3x3)
                             .withItem('sushigocrafting:dried_seaweed'),
-                        30
+                        30,
                     );
                 scene.idle(40);
                 scene
@@ -138,10 +138,10 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([1, 1.5, 1.5], PonderPointing.LEFT)
                             .showing(PonderIcons.I_CONFIG_OPEN)
                             .withItem('sushigocrafting:dried_seaweed_block'),
-                        30
+                        30,
                     );
                 scene.idle(60);
-            }
+            },
         )
         .scene(
             'nori_sheet_press',
@@ -237,6 +237,6 @@ onEvent('ponder.registry', (event) => {
                     .text(`The piston will compress the seaweed block, dropping nori sheets.`)
                     .independent(0);
                 scene.idle(70);
-            }
+            },
         );
 });

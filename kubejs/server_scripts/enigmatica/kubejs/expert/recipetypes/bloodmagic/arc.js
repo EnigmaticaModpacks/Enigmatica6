@@ -11,7 +11,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
             consume: false,
-            id: 'bloodmagic:arc/reversion/weak_blood_orb'
+            id: 'bloodmagic:arc/reversion/weak_blood_orb',
         },
         {
             output: 'meetyourfight:caged_heart',
@@ -19,7 +19,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
             consume: false,
-            id: 'bloodmagic:arc/reversion/apprentice_blood_orb'
+            id: 'bloodmagic:arc/reversion/apprentice_blood_orb',
         },
         {
             output: 'botania:mana_tablet',
@@ -27,7 +27,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
             consume: false,
-            id: 'bloodmagic:arc/reversion/magician_blood_orb'
+            id: 'bloodmagic:arc/reversion/magician_blood_orb',
         },
         {
             output: 'create:shadow_steel',
@@ -35,7 +35,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
             consume: false,
-            id: 'bloodmagic:arc/reversion/master_blood_orb'
+            id: 'bloodmagic:arc/reversion/master_blood_orb',
         },
         {
             output: Item.of('bloodmagic:corrupted_tinydust', 6),
@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/resonator',
             extraOutputs: [Item.of('bloodmagic:corrupted_tinydust').chance(0.15)],
             consume: false,
-            id: `${id_prefix}corrupted_tinydust_from_demon_crystals`
+            id: `${id_prefix}corrupted_tinydust_from_demon_crystals`,
         },
         {
             output: 'botania:mana_diamond',
@@ -51,7 +51,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
             consume: false,
-            id: `${id_prefix}mana_diamond_from_dragonstone`
+            id: `${id_prefix}mana_diamond_from_dragonstone`,
         },
         {
             output: 'botania:mana_diamond_block',
@@ -59,7 +59,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
             consume: false,
-            id: `${id_prefix}mana_diamond_block_from_dragonstone_block`
+            id: `${id_prefix}mana_diamond_block_from_dragonstone_block`,
         },
         {
             output: 'waystones:warp_stone',
@@ -67,7 +67,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
             consume: false,
-            id: `${id_prefix}warp_stone_from_waystone`
+            id: `${id_prefix}warp_stone_from_waystone`,
         },
         {
             output: 'waystones:warp_stone',
@@ -75,7 +75,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
             consume: false,
-            id: `${id_prefix}warp_stone_from_sharestone`
+            id: `${id_prefix}warp_stone_from_sharestone`,
         },
         {
             output: 'waystones:warp_stone',
@@ -83,8 +83,8 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
             consume: false,
-            id: `${id_prefix}warp_stone_from_portstone`
-        }
+            id: `${id_prefix}warp_stone_from_portstone`,
+        },
 
         /*,
         // Disabled for now. Thought this could be a nifty way to access this stuff instead of the magma crucible recipes but it's not discoverable in JEI at all... 

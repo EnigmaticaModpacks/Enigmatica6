@@ -11,15 +11,15 @@ onEvent('recipes', (event) => {
                 inputTag: '#forge:ores/iron',
                 output: 'astralsorcery:starmetal_ore',
                 starlight: 100,
-                id: `${id_prefix}starmetal_ore_from_`
+                id: `${id_prefix}starmetal_ore_from_`,
             },
             {
                 inputTag: '#forge:workbenches',
                 output: 'astralsorcery:altar_discovery',
                 starlight: 60,
-                id: `${id_prefix}luminous_crafting_table_from_`
-            }
-        ]
+                id: `${id_prefix}luminous_crafting_table_from_`,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {
@@ -29,14 +29,14 @@ onEvent('recipes', (event) => {
                     event.custom({
                         type: 'astralsorcery:block_transmutation',
                         input: {
-                            block: input.id
+                            block: input.id,
                         },
                         output: {
-                            block: recipe.output
+                            block: recipe.output,
                         },
-                        starlight: recipe.starlight
+                        starlight: recipe.starlight,
                     }),
-                    recipe.id
+                    recipe.id,
                 );
             }
         });

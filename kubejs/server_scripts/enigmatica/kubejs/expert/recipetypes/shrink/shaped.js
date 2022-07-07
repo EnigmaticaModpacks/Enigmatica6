@@ -24,10 +24,10 @@ onEvent('recipes', (event) => {
                 B: '#forge:glass_panes/lime',
                 C: '#forge:plates/lead',
                 D: 'thermal:flux_capacitor',
-                E: '#resourcefulbees:resourceful_honeycomb'
+                E: '#resourcefulbees:resourceful_honeycomb',
             },
-            id: 'shrink:shrinking_device'
-        }
+            id: 'shrink:shrinking_device',
+        },
     ];
 
     recipes.forEach((recipe) => {

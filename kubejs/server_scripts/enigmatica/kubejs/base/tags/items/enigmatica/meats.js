@@ -6,7 +6,7 @@ onEvent('item.tags', (event) => {
             'farmersdelight:chicken_cuts',
             'farmersdelight:bacon',
             'quark:frog_leg',
-            'undergarden:raw_gloomper_leg'
+            'undergarden:raw_gloomper_leg',
         ],
         medium_meats = ['environmental:duck', 'minecraft:chicken', 'minecraft:rabbit'],
         large_meats = [
@@ -18,7 +18,7 @@ onEvent('item.tags', (event) => {
             'minecraft:beef',
             'minecraft:mutton',
             'minecraft:porkchop',
-            'alexsmobs:moose_ribs'
+            'alexsmobs:moose_ribs',
         ];
 
     event.get('enigmatica:meats').add(small_meats).add(medium_meats).add(large_meats);

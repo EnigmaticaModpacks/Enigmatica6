@@ -15,13 +15,13 @@ onEvent('recipes', (event) => {
         {
             type: { mod: 'dustrial_decor' },
             toReplace: 'minecraft:iron_ingot',
-            replaceWith: 'dustrial_decor:rusty_iron_ingot'
+            replaceWith: 'dustrial_decor:rusty_iron_ingot',
         },
         {
             type: { mod: 'dustrial_decor' },
             toReplace: 'minecraft:iron_nugget',
-            replaceWith: 'dustrial_decor:rusty_iron_nugget'
-        }
+            replaceWith: 'dustrial_decor:rusty_iron_nugget',
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
         event.replaceOutput(
             {},
             `thermal:press_${die.thermalName}_die`,
-            `immersiveengineering:mold_${die.immersiveEngineeringName}`
+            `immersiveengineering:mold_${die.immersiveEngineeringName}`,
         );
     });
 });

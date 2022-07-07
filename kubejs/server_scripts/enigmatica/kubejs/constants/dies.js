@@ -3,20 +3,20 @@
 const sharedDies = [
     {
         thermalName: 'gear',
-        immersiveEngineeringName: 'gear'
+        immersiveEngineeringName: 'gear',
     },
     {
         thermalName: 'unpacking',
-        immersiveEngineeringName: 'unpacking'
+        immersiveEngineeringName: 'unpacking',
     },
     {
         thermalName: 'packing_3x3',
-        immersiveEngineeringName: 'packing_9'
+        immersiveEngineeringName: 'packing_9',
     },
     {
         thermalName: 'packing_2x2',
-        immersiveEngineeringName: 'packing_4'
-    }
+        immersiveEngineeringName: 'packing_4',
+    },
 ];
 
 const thermalDies = ['coin'];

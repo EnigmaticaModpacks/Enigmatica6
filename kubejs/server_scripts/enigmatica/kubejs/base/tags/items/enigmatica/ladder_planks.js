@@ -36,6 +36,6 @@ onEvent('item.tags', (event) => {
             'minecraft:jungle_planks',
             'minecraft:birch_planks',
             'minecraft:spruce_planks',
-            'minecraft:oak_planks'
+            'minecraft:oak_planks',
         ]);
 });

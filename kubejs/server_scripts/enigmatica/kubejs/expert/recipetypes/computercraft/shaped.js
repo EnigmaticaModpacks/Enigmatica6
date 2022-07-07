@@ -24,9 +24,9 @@ onEvent('recipes', (event) => {
                 C: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 D: 'kubejs:cpu_core_eg_28222',
                 E: 'rftoolscontrol:graphics_card',
-                F: 'rsgauges:industrial_button'
+                F: 'rsgauges:industrial_button',
             },
-            id: 'computercraft:computer_normal'
+            id: 'computercraft:computer_normal',
         },
         {
             output: 'computercraft:computer_advanced',
@@ -34,9 +34,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'computercraft:computer_normal',
                 B: 'immersiveengineering:slab_sheetmetal_gold',
-                C: 'resourcefulbees:rgbee_honeycomb'
+                C: 'resourcefulbees:rgbee_honeycomb',
             },
-            id: 'computercraft:computer_advanced'
+            id: 'computercraft:computer_advanced',
         },
         {
             output: 'computercraft:wired_modem',
@@ -44,18 +44,18 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:sheetmetals/aluminum',
                 B: 'rftoolscontrol:network_card',
-                C: 'rftoolsbase:machine_base'
+                C: 'rftoolsbase:machine_base',
             },
-            id: 'computercraft:wired_modem'
+            id: 'computercraft:wired_modem',
         },
         {
             output: 'computercraft:monitor_normal',
             pattern: [' A ', 'ABA', ' A '],
             key: {
                 A: 'immersiveengineering:slab_sheetmetal_aluminum',
-                B: 'rftoolsbase:information_screen'
+                B: 'rftoolsbase:information_screen',
             },
-            id: 'computercraft:monitor_normal'
+            id: 'computercraft:monitor_normal',
         },
         {
             output: 'computercraft:monitor_advanced',
@@ -63,18 +63,18 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'computercraft:monitor_normal',
                 B: 'immersiveengineering:slab_sheetmetal_gold',
-                C: 'resourcefulbees:rgbee_honeycomb'
+                C: 'resourcefulbees:rgbee_honeycomb',
             },
-            id: 'computercraft:monitor_advanced'
+            id: 'computercraft:monitor_advanced',
         },
         {
             output: Item.of('computercraft:cable', 8),
             pattern: [' B ', 'BAB', ' B '],
             key: {
                 A: 'immersiveengineering:wirecoil_redstone',
-                B: '#forge:plastic'
+                B: '#forge:plastic',
             },
-            id: 'computercraft:cable'
+            id: 'computercraft:cable',
         },
         {
             output: 'computercraft:wireless_modem_normal',
@@ -83,9 +83,9 @@ onEvent('recipes', (event) => {
                 A: 'computercraft:wired_modem',
                 B: 'refinedstorage:wireless_transmitter',
                 C: 'pneumaticcraft:network_api',
-                D: 'refinedstorage:range_upgrade'
+                D: 'refinedstorage:range_upgrade',
             },
-            id: 'computercraft:wireless_modem_normal'
+            id: 'computercraft:wireless_modem_normal',
         },
         {
             output: 'computercraft:wireless_modem_advanced',
@@ -93,10 +93,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'computercraft:wireless_modem_normal',
                 B: 'rftoolsbase:infused_enderpearl',
-                C: 'rsinfinitybooster:infinity_card'
+                C: 'rsinfinitybooster:infinity_card',
             },
-            id: 'computercraft:wireless_modem_advanced'
-        }
+            id: 'computercraft:wireless_modem_advanced',
+        },
     ];
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);

@@ -44,5 +44,5 @@ const fishableFish = [
     'undergarden:raw_gwibling',
     'upgrade_aquatic:lionfish',
     'upgrade_aquatic:perch',
-    'upgrade_aquatic:pike'
+    'upgrade_aquatic:pike',
 ];

@@ -58,5 +58,5 @@ const bookshelves = [
     'quark:spruce_bookshelf',
     'quark:warped_bookshelf',
     'upgrade_aquatic:driftwood_bookshelf',
-    'upgrade_aquatic:river_bookshelf'
+    'upgrade_aquatic:river_bookshelf',
 ];

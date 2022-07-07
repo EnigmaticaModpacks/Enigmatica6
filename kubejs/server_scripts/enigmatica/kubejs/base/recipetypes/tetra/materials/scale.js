@@ -18,7 +18,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'shulker_glyph', texture: 'shulker' },
                     textures: ['crude', 'default'],
                     material: { item: 'minecraft:shulker_shell' },
-                    requiredTools: { cut: 3 }
+                    requiredTools: { cut: 3 },
                 },
                 {
                     key: 'turtle_scute',
@@ -35,14 +35,14 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'turtle_glyph', texture: 'turtle' },
                     textures: ['crude', 'default'],
                     material: { item: 'minecraft:scute' },
-                    requiredTools: { cut: 2 }
-                }
+                    requiredTools: { cut: 2 },
+                },
             ],
             type: 'compat',
             recipes: [
                 // todo: crocodile scute, spiked scute, snail shell piece, crab shell, nautilus shell, shulker shell, masticator scales, quark dragon scale, baubles ender dragon scale
-            ]
-        }
+            ],
+        },
     ];
 
     data.forEach((recipeType) => {

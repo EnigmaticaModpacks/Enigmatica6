@@ -10,9 +10,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/aluminum',
                 B: '#forge:chests',
-                C: 'immersiveengineering:sheetmetal_colored_red'
+                C: 'immersiveengineering:sheetmetal_colored_red',
             },
-            id: 'littlelogistics:barge'
+            id: 'littlelogistics:barge',
         },
         {
             output: 'littlelogistics:fishing_barge',
@@ -21,9 +21,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/aluminum',
                 B: Item.of('aquaculture:tackle_box').ignoreNBT(),
                 C: 'immersiveengineering:sheetmetal_colored_red',
-                D: 'farmersdelight:safety_net'
+                D: 'farmersdelight:safety_net',
             },
-            id: 'littlelogistics:fishing_barge'
+            id: 'littlelogistics:fishing_barge',
         },
         {
             output: 'littlelogistics:fluid_barge',
@@ -31,9 +31,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/aluminum',
                 B: 'create:fluid_tank',
-                C: 'immersiveengineering:sheetmetal_colored_red'
+                C: 'immersiveengineering:sheetmetal_colored_red',
             },
-            id: 'littlelogistics:fluid_barge'
+            id: 'littlelogistics:fluid_barge',
         },
         {
             output: 'littlelogistics:seater_barge',
@@ -41,9 +41,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/aluminum',
                 B: '#create:seats',
-                C: 'immersiveengineering:sheetmetal_colored_red'
+                C: 'immersiveengineering:sheetmetal_colored_red',
             },
-            id: 'littlelogistics:seater_barge'
+            id: 'littlelogistics:seater_barge',
         },
         {
             output: 'littlelogistics:tug',
@@ -51,9 +51,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/aluminum',
                 B: 'thermal:dynamo_stirling',
-                C: 'immersiveengineering:sheetmetal_colored_red'
+                C: 'immersiveengineering:sheetmetal_colored_red',
             },
-            id: 'littlelogistics:tug'
+            id: 'littlelogistics:tug',
         },
         {
             output: 'littlelogistics:energy_tug',
@@ -61,9 +61,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/aluminum',
                 B: Item.of('thermal:energy_cell').ignoreNBT(),
-                C: 'immersiveengineering:sheetmetal_colored_red'
+                C: 'immersiveengineering:sheetmetal_colored_red',
             },
-            id: 'littlelogistics:energy_tug'
+            id: 'littlelogistics:energy_tug',
         },
         {
             output: 'littlelogistics:chunk_loader_barge',
@@ -71,9 +71,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/aluminum',
                 B: 'botania:ender_eye_block',
-                C: 'immersiveengineering:sheetmetal_colored_purple'
+                C: 'immersiveengineering:sheetmetal_colored_purple',
             },
-            id: 'littlelogistics:chunk_loader_barge'
+            id: 'littlelogistics:chunk_loader_barge',
         },
         {
             output: 'littlelogistics:vessel_charger',
@@ -81,28 +81,28 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'thermal:rf_coil',
                 B: Item.of('thermal:energy_cell').ignoreNBT(),
-                C: 'immersiveengineering:sheetmetal_colored_red'
+                C: 'immersiveengineering:sheetmetal_colored_red',
             },
-            id: 'littlelogistics:vessel_charger'
+            id: 'littlelogistics:vessel_charger',
         },
         {
             output: 'littlelogistics:spring',
             pattern: ['  A', ' B ', 'A  '],
             key: {
                 A: '#forge:ingots/andesite_alloy',
-                B: 'minecraft:chain'
+                B: 'minecraft:chain',
             },
-            id: 'littlelogistics:spring'
+            id: 'littlelogistics:spring',
         },
         {
             output: 'littlelogistics:fluid_hopper',
             pattern: ['A', 'B'],
             key: {
                 A: 'create:fluid_tank',
-                B: 'minecraft:hopper'
+                B: 'minecraft:hopper',
             },
-            id: 'littlelogistics:fluid_hopper'
-        }
+            id: 'littlelogistics:fluid_hopper',
+        },
     ];
 
     recipes.forEach((recipe) => {

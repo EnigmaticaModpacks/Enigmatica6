@@ -20,13 +20,13 @@ onEvent('recipes', (event) => {
                 A: { item: 'astralsorcery:resonating_gem' },
                 B: { item: 'astralsorcery:marble_runed' },
                 C: { item: 'create:refined_radiance' },
-                D: { tag: 'botania:runes/winter' }
+                D: { tag: 'botania:runes/winter' },
             },
             altar_type: 0,
             duration: 100,
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
-            id: 'astralsorcery:altar/well'
+            id: 'astralsorcery:altar/well',
         },
         {
             output: Item.of('astralsorcery:spectral_relay'),
@@ -35,26 +35,26 @@ onEvent('recipes', (event) => {
                 A: { item: 'eidolon:gold_inlay' },
                 B: { item: 'astralsorcery:glass_lens' },
                 C: { item: 'create:refined_radiance' },
-                D: { tag: 'botania:runes/air' }
+                D: { tag: 'botania:runes/air' },
             },
             altar_type: 0,
             duration: 100,
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
-            id: 'astralsorcery:altar/spectral_relay'
+            id: 'astralsorcery:altar/spectral_relay',
         },
         {
             output: Item.of('astralsorcery:glass_lens', 2),
             pattern: ['_____', '__A__', '_ABA_', '__A__', '_____'],
             key: {
                 A: { item: 'astralsorcery:resonating_gem' },
-                B: { item: 'occultism:infused_lenses' }
+                B: { item: 'occultism:infused_lenses' },
             },
             altar_type: 0,
             duration: 100,
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
-            id: 'astralsorcery:altar/glass_lens'
+            id: 'astralsorcery:altar/glass_lens',
         },
         {
             output: Item.of('astralsorcery:altar_attunement'),
@@ -65,22 +65,22 @@ onEvent('recipes', (event) => {
                     hasToBeAttuned: false,
                     hasToBeCelestial: false,
                     canBeAttuned: true,
-                    canBeCelestialCrystal: true
+                    canBeCelestialCrystal: true,
                 },
                 B: { item: 'astralsorcery:marble_pillar' },
                 C: { item: 'create:refined_radiance' },
                 D: {
                     type: 'astralsorcery:fluid',
-                    fluid: [{ fluid: 'astralsorcery:liquid_starlight', amount: 1000 }]
+                    fluid: [{ fluid: 'astralsorcery:liquid_starlight', amount: 1000 }],
                 },
-                E: { tag: 'botania:runes/mana' }
+                E: { tag: 'botania:runes/mana' },
             },
             altar_type: 0,
             duration: 100,
             starlight: 500,
             recipe_class: 'astralsorcery:attunement_upgrade',
             effects: ['astralsorcery:built_in_effect_discovery_central_beam', 'astralsorcery:upgrade_altar'],
-            id: 'astralsorcery:altar/altar_attunement'
+            id: 'astralsorcery:altar/altar_attunement',
         },
         {
             output: Item.of('botania:runic_altar'),
@@ -93,14 +93,14 @@ onEvent('recipes', (event) => {
                     type: 'forge:nbt',
                     item: 'naturesaura:aura_cache',
                     count: 1,
-                    nbt: '{aura:400000}'
-                }
+                    nbt: '{aura:400000}',
+                },
             },
             altar_type: 0,
             duration: 100,
             starlight: 500,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
-            id: `${id_prefix}runic_altar`
+            id: `${id_prefix}runic_altar`,
         },
         {
             output: Item.of('botania:mana_spreader'),
@@ -110,13 +110,13 @@ onEvent('recipes', (event) => {
                 B: { item: 'botania:glimmering_livingwood' },
                 C: { tag: 'forge:ingots/infused_iron' },
                 D: { item: 'botania:spark' },
-                E: { item: 'atum:crystal_glass_pane' }
+                E: { item: 'atum:crystal_glass_pane' },
             },
             altar_type: 0,
             duration: 100,
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
-            id: `${id_prefix}mana_spreader`
+            id: `${id_prefix}mana_spreader`,
         },
         {
             output: Item.of('apotheosis:hellshelf', 1),
@@ -126,14 +126,14 @@ onEvent('recipes', (event) => {
                 B: { tag: 'botania:runes/fire' },
                 C: { item: 'resourcefulbees:ghast_honeycomb' },
                 E: { tag: 'forge:bookshelves' },
-                F: { item: 'ars_nouveau:blaze_fiber' }
+                F: { item: 'ars_nouveau:blaze_fiber' },
             },
             altar_type: 0,
             duration: 100,
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
-            id: `${id_prefix}hellshelf`
-        }
+            id: `${id_prefix}hellshelf`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -145,7 +145,7 @@ onEvent('recipes', (event) => {
             pattern: recipe.pattern,
             key: recipe.key,
             output: [recipe.output.toResultJson()],
-            effects: recipe.effects
+            effects: recipe.effects,
         };
 
         if (recipe.relay_inputs) {

@@ -29,7 +29,7 @@ const end_biomes = [
     'betterendforge:shadow_forest',
     'betterendforge:sulphur_springs',
     'betterendforge:umbrella_jungle',
-    'betterendforge:glowing_grasslands'
+    'betterendforge:glowing_grasslands',
 ];
 
 const nether_biomes = [
@@ -49,7 +49,7 @@ const nether_biomes = [
     'byg:withering_woods',
     'byg:magma_wastes',
     'byg:wailing_garth',
-    'byg:crimson_gardens'
+    'byg:crimson_gardens',
 ];
 
 const undergarden_biomes = [
@@ -61,5 +61,5 @@ const undergarden_biomes = [
     'undergarden:mushroom_bog',
     'undergarden:smog_spires',
     'undergarden:smogstem_forest',
-    'undergarden:wigglewood_forest'
+    'undergarden:wigglewood_forest',
 ];

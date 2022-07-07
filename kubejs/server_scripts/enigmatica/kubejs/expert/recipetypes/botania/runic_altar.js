@@ -11,12 +11,12 @@ onEvent('recipes', (event) => {
                 'thermal:blizz_powder',
                 '#upgrade_aquatic:coralstone/infused',
                 'minecraft:kelp',
-                'aquaculture:diamond_hook'
+                'aquaculture:diamond_hook',
             ],
             mana: 16000,
             output: 'botania:rune_water',
             count: 2,
-            id: 'botania:runic_altar/water'
+            id: 'botania:runic_altar/water',
         },
         {
             inputs: [
@@ -25,12 +25,12 @@ onEvent('recipes', (event) => {
                 'minecraft:blaze_powder',
                 'quark:magma_bricks',
                 'undergarden:ditchbulb',
-                'quark:white_candle'
+                'quark:white_candle',
             ],
             mana: 16000,
             output: 'botania:rune_fire',
             count: 2,
-            id: 'botania:runic_altar/fire'
+            id: 'botania:runic_altar/fire',
         },
         {
             inputs: [
@@ -39,12 +39,12 @@ onEvent('recipes', (event) => {
                 'thermal:basalz_powder',
                 'undergarden:shiverstone',
                 '#quark:runes',
-                'aquaculture:worm'
+                'aquaculture:worm',
             ],
             mana: 16000,
             output: 'botania:rune_earth',
             count: 2,
-            id: 'botania:runic_altar/earth'
+            id: 'botania:runic_altar/earth',
         },
         {
             inputs: [
@@ -53,12 +53,12 @@ onEvent('recipes', (event) => {
                 'thermal:blitz_powder',
                 'betterendforge:silk_fiber',
                 'quark:bottled_cloud',
-                'alexsmobs:guster_eye'
+                'alexsmobs:guster_eye',
             ],
             mana: 16000,
             output: 'botania:rune_air',
             count: 2,
-            id: 'botania:runic_altar/air'
+            id: 'botania:runic_altar/air',
         },
         {
             inputs: [
@@ -68,12 +68,12 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/manasteel',
                 '#forge:ingots/manasteel',
                 'botania:mana_pearl',
-                'atum:isis_godshard'
+                'atum:isis_godshard',
             ],
             mana: 96000,
             output: 'botania:rune_mana',
             count: 1,
-            id: 'botania:runic_altar/mana'
+            id: 'botania:runic_altar/mana',
         },
         {
             inputs: [
@@ -90,7 +90,7 @@ onEvent('recipes', (event) => {
                     'minecraft:pink_tulip',
                     'minecraft:white_tulip',
                     'minecraft:orange_tulip',
-                    'minecraft:red_tulip'
+                    'minecraft:red_tulip',
                 ],
                 [
                     'byg:yellow_tulip',
@@ -101,16 +101,16 @@ onEvent('recipes', (event) => {
                     'minecraft:pink_tulip',
                     'minecraft:white_tulip',
                     'minecraft:orange_tulip',
-                    'minecraft:red_tulip'
+                    'minecraft:red_tulip',
                 ],
                 'quark:turf',
                 'quark:turf',
-                'atum:osiris_godshard'
+                'atum:osiris_godshard',
             ],
             mana: 32000,
             output: 'botania:rune_spring',
             count: 1,
-            id: 'botania:runic_altar/spring'
+            id: 'botania:runic_altar/spring',
         },
         {
             inputs: [
@@ -122,12 +122,12 @@ onEvent('recipes', (event) => {
                 'farmersdelight:melon_popsicle',
                 '#forge:pies',
                 '#forge:pies',
-                'atum:ra_godshard'
+                'atum:ra_godshard',
             ],
             mana: 32000,
             output: 'botania:rune_summer',
             count: 1,
-            id: 'botania:runic_altar/summer'
+            id: 'botania:runic_altar/summer',
         },
         {
             inputs: [
@@ -139,12 +139,12 @@ onEvent('recipes', (event) => {
                 'create:honeyed_apple',
                 'farmersdelight:hot_cocoa',
                 'farmersdelight:hot_cocoa',
-                'atum:geb_godshard'
+                'atum:geb_godshard',
             ],
             mana: 32000,
             output: 'botania:rune_autumn',
             count: 1,
-            id: 'botania:runic_altar/autumn'
+            id: 'botania:runic_altar/autumn',
         },
         {
             inputs: [
@@ -156,12 +156,12 @@ onEvent('recipes', (event) => {
                 '#forge:hay_bales',
                 'betterendforge:dense_snow',
                 'betterendforge:dense_snow',
-                'atum:tefnut_godshard'
+                'atum:tefnut_godshard',
             ],
             mana: 32000,
             output: 'botania:rune_winter',
             count: 1,
-            id: 'botania:runic_altar/winter'
+            id: 'botania:runic_altar/winter',
         },
         {
             inputs: [
@@ -169,12 +169,12 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem',
                 '#botania:runes/winter',
                 '#botania:runes/water',
-                'astralsorcery:resonating_gem'
+                'astralsorcery:resonating_gem',
             ],
             mana: 64000,
             output: 'botania:rune_envy',
             count: 1,
-            id: 'botania:runic_altar/envy'
+            id: 'botania:runic_altar/envy',
         },
         {
             inputs: [
@@ -182,12 +182,12 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem',
                 '#botania:runes/winter',
                 '#botania:runes/fire',
-                'astralsorcery:resonating_gem'
+                'astralsorcery:resonating_gem',
             ],
             mana: 64000,
             output: 'botania:rune_gluttony',
             count: 1,
-            id: 'botania:runic_altar/gluttony'
+            id: 'botania:runic_altar/gluttony',
         },
         {
             inputs: [
@@ -195,12 +195,12 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem',
                 '#botania:runes/spring',
                 '#botania:runes/water',
-                'astralsorcery:resonating_gem'
+                'astralsorcery:resonating_gem',
             ],
             mana: 64000,
             output: 'botania:rune_greed',
             count: 1,
-            id: 'botania:runic_altar/greed'
+            id: 'botania:runic_altar/greed',
         },
         {
             inputs: [
@@ -208,12 +208,12 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem',
                 '#botania:runes/summer',
                 '#botania:runes/air',
-                'astralsorcery:resonating_gem'
+                'astralsorcery:resonating_gem',
             ],
             mana: 64000,
             output: 'botania:rune_lust',
             count: 1,
-            id: 'botania:runic_altar/lust'
+            id: 'botania:runic_altar/lust',
         },
         {
             inputs: [
@@ -221,12 +221,12 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem',
                 '#botania:runes/summer',
                 '#botania:runes/fire',
-                'astralsorcery:resonating_gem'
+                'astralsorcery:resonating_gem',
             ],
             mana: 64000,
             output: 'botania:rune_pride',
             count: 1,
-            id: 'botania:runic_altar/pride'
+            id: 'botania:runic_altar/pride',
         },
         {
             inputs: [
@@ -234,12 +234,12 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem',
                 '#botania:runes/autumn',
                 '#botania:runes/air',
-                'astralsorcery:resonating_gem'
+                'astralsorcery:resonating_gem',
             ],
             mana: 64000,
             output: 'botania:rune_sloth',
             count: 1,
-            id: 'botania:runic_altar/sloth'
+            id: 'botania:runic_altar/sloth',
         },
         {
             inputs: [
@@ -247,12 +247,12 @@ onEvent('recipes', (event) => {
                 'astralsorcery:resonating_gem',
                 '#botania:runes/winter',
                 '#botania:runes/earth',
-                'astralsorcery:resonating_gem'
+                'astralsorcery:resonating_gem',
             ],
             mana: 64000,
             output: 'botania:rune_wrath',
             count: 1,
-            id: 'botania:runic_altar/wrath'
+            id: 'botania:runic_altar/wrath',
         },
         {
             inputs: [
@@ -260,12 +260,12 @@ onEvent('recipes', (event) => {
                 '#botania:runes/air',
                 '#botania:runes/summer',
                 '#botania:runes/lust',
-                'naturesaura:gold_leaf'
+                'naturesaura:gold_leaf',
             ],
             mana: 96000,
             output: 'mythicbotany:alfheim_rune',
             count: 1,
-            id: 'mythicbotany:runic_altar/alfheim'
+            id: 'mythicbotany:runic_altar/alfheim',
         },
         {
             inputs: [
@@ -273,12 +273,12 @@ onEvent('recipes', (event) => {
                 '#botania:runes/air',
                 '#botania:runes/autumn',
                 '#botania:runes/pride',
-                'botania:bifrost_perm'
+                'botania:bifrost_perm',
             ],
             mana: 96000,
             output: 'mythicbotany:asgard_rune',
             count: 1,
-            id: 'mythicbotany:runic_altar/asgard'
+            id: 'mythicbotany:runic_altar/asgard',
         },
         {
             inputs: [
@@ -286,12 +286,12 @@ onEvent('recipes', (event) => {
                 '#botania:runes/fire',
                 '#botania:runes/autumn',
                 '#botania:runes/envy',
-                ['eidolon:zombie_heart', 'eidolon:wraith_heart']
+                ['eidolon:zombie_heart', 'eidolon:wraith_heart'],
             ],
             mana: 96000,
             output: 'mythicbotany:helheim_rune',
             count: 1,
-            id: 'mythicbotany:runic_altar/helheim'
+            id: 'mythicbotany:runic_altar/helheim',
         },
         {
             inputs: [
@@ -299,12 +299,12 @@ onEvent('recipes', (event) => {
                 '#botania:runes/earth',
                 '#botania:runes/autumn',
                 '#botania:runes/gluttony',
-                'naturesaura:infused_stone'
+                'naturesaura:infused_stone',
             ],
             mana: 96000,
             output: 'mythicbotany:joetunheim_rune',
             count: 1,
-            id: 'mythicbotany:runic_altar/joetunheim'
+            id: 'mythicbotany:runic_altar/joetunheim',
         },
         {
             inputs: [
@@ -312,12 +312,12 @@ onEvent('recipes', (event) => {
                 '#botania:runes/earth',
                 '#botania:runes/spring',
                 '#botania:runes/greed',
-                'minecraft:podzol'
+                'minecraft:podzol',
             ],
             mana: 96000,
             output: 'mythicbotany:midgard_rune',
             count: 1,
-            id: 'mythicbotany:runic_altar/midgard'
+            id: 'mythicbotany:runic_altar/midgard',
         },
         {
             inputs: [
@@ -325,12 +325,12 @@ onEvent('recipes', (event) => {
                 '#botania:runes/fire',
                 '#botania:runes/summer',
                 '#botania:runes/wrath',
-                'create:refined_radiance_casing'
+                'create:refined_radiance_casing',
             ],
             mana: 96000,
             output: 'mythicbotany:muspelheim_rune',
             count: 1,
-            id: 'mythicbotany:runic_altar/muspelheim'
+            id: 'mythicbotany:runic_altar/muspelheim',
         },
         {
             inputs: [
@@ -338,12 +338,12 @@ onEvent('recipes', (event) => {
                 '#botania:runes/earth',
                 '#botania:runes/winter',
                 '#botania:runes/sloth',
-                'eidolon:shadow_gem'
+                'eidolon:shadow_gem',
             ],
             mana: 96000,
             output: 'mythicbotany:nidavellir_rune',
             count: 1,
-            id: 'mythicbotany:runic_altar/nidavellir'
+            id: 'mythicbotany:runic_altar/nidavellir',
         },
         {
             inputs: [
@@ -351,12 +351,12 @@ onEvent('recipes', (event) => {
                 '#botania:runes/water',
                 '#botania:runes/winter',
                 '#botania:runes/wrath',
-                'create:shadow_steel_casing'
+                'create:shadow_steel_casing',
             ],
             mana: 96000,
             output: 'mythicbotany:niflheim_rune',
             count: 1,
-            id: 'mythicbotany:runic_altar/niflheim'
+            id: 'mythicbotany:runic_altar/niflheim',
         },
         {
             inputs: [
@@ -364,12 +364,12 @@ onEvent('recipes', (event) => {
                 '#botania:runes/earth',
                 '#botania:runes/spring',
                 '#botania:runes/pride',
-                'bloodmagic:seersigil'
+                'bloodmagic:seersigil',
             ],
             mana: 96000,
             output: 'mythicbotany:vanaheim_rune',
             count: 1,
-            id: 'mythicbotany:runic_altar/vanaheim'
+            id: 'mythicbotany:runic_altar/vanaheim',
         },
         {
             inputs: [
@@ -382,12 +382,12 @@ onEvent('recipes', (event) => {
                 'quark:white_rune',
                 'bloodmagic:blankslate',
                 'ars_nouveau:glyph_accelerate',
-                'bloodmagic:blankslate'
+                'bloodmagic:blankslate',
             ],
             mana: 16000,
             output: 'bloodmagic:speedrune',
             count: 1,
-            id: `${id_prefix}blood_rune_speed`
+            id: `${id_prefix}blood_rune_speed`,
         },
         {
             inputs: [
@@ -400,12 +400,12 @@ onEvent('recipes', (event) => {
                 ['quark:green_rune', 'quark:lime_rune'],
                 'architects_palette:moonstone',
                 'ars_nouveau:glyph_delay',
-                'bloodmagic:reinforcedslate'
+                'bloodmagic:reinforcedslate',
             ],
             mana: 32000,
             output: 'bloodmagic:chargingrune',
             count: 1,
-            id: `${id_prefix}blood_rune_charging`
+            id: `${id_prefix}blood_rune_charging`,
         },
         {
             inputs: [
@@ -418,12 +418,12 @@ onEvent('recipes', (event) => {
                 'quark:red_rune',
                 'bloodmagic:reinforcedslate',
                 'ars_nouveau:glyph_harm',
-                'bloodmagic:reinforcedslate'
+                'bloodmagic:reinforcedslate',
             ],
             mana: 32000,
             output: 'bloodmagic:sacrificerune',
             count: 1,
-            id: `${id_prefix}blood_rune_sacrifice`
+            id: `${id_prefix}blood_rune_sacrifice`,
         },
         {
             inputs: [
@@ -436,12 +436,12 @@ onEvent('recipes', (event) => {
                 'quark:yellow_rune',
                 'bloodmagic:reinforcedslate',
                 'ars_nouveau:glyph_harm',
-                'bloodmagic:reinforcedslate'
+                'bloodmagic:reinforcedslate',
             ],
             mana: 32000,
             output: 'bloodmagic:selfsacrificerune',
             count: 1,
-            id: `${id_prefix}blood_rune_self_sacrifice`
+            id: `${id_prefix}blood_rune_self_sacrifice`,
         },
         {
             inputs: [
@@ -454,12 +454,12 @@ onEvent('recipes', (event) => {
                 'quark:blue_rune',
                 'bloodmagic:reinforcedslate',
                 'ars_nouveau:glyph_accelerate',
-                'bloodmagic:reinforcedslate'
+                'bloodmagic:reinforcedslate',
             ],
             mana: 32000,
             output: 'bloodmagic:dislocationrune',
             count: 1,
-            id: `${id_prefix}blood_rune_displacement`
+            id: `${id_prefix}blood_rune_displacement`,
         },
         {
             inputs: [
@@ -472,12 +472,12 @@ onEvent('recipes', (event) => {
                 'quark:orange_rune',
                 'bloodmagic:reinforcedslate',
                 'bloodmagic:reagentholding',
-                'bloodmagic:reinforcedslate'
+                'bloodmagic:reinforcedslate',
             ],
             mana: 64000,
             output: 'bloodmagic:altarcapacityrune',
             count: 1,
-            id: `${id_prefix}blood_rune_capacity`
+            id: `${id_prefix}blood_rune_capacity`,
         },
         {
             inputs: [
@@ -490,12 +490,12 @@ onEvent('recipes', (event) => {
                 'quark:red_rune',
                 'architects_palette:moonstone',
                 'ars_nouveau:glyph_amplify',
-                'bloodmagic:demonslate'
+                'bloodmagic:demonslate',
             ],
             mana: 96000,
             output: 'bloodmagic:bettercapacityrune',
             count: 1,
-            id: `${id_prefix}blood_rune_aug_capacity`
+            id: `${id_prefix}blood_rune_aug_capacity`,
         },
         {
             inputs: [
@@ -508,12 +508,12 @@ onEvent('recipes', (event) => {
                 'quark:cyan_rune',
                 'architects_palette:moonstone',
                 'bloodmagic:masterbloodorb',
-                'bloodmagic:demonslate'
+                'bloodmagic:demonslate',
             ],
             mana: 96000,
             output: 'bloodmagic:orbcapacityrune',
             count: 1,
-            id: `${id_prefix}blood_rune_orb`
+            id: `${id_prefix}blood_rune_orb`,
         },
         {
             inputs: [
@@ -526,12 +526,12 @@ onEvent('recipes', (event) => {
                 'quark:light_blue_rune',
                 'architects_palette:moonstone',
                 'ars_nouveau:glyph_amplify',
-                'bloodmagic:demonslate'
+                'bloodmagic:demonslate',
             ],
             mana: 96000,
             output: 'bloodmagic:accelerationrune',
             count: 1,
-            id: `${id_prefix}blood_rune_acceleration`
+            id: `${id_prefix}blood_rune_acceleration`,
         },
         {
             inputs: [
@@ -542,12 +542,12 @@ onEvent('recipes', (event) => {
                 'quark:white_crystal',
                 'quark:white_crystal',
                 'quark:white_crystal',
-                'quark:white_crystal'
+                'quark:white_crystal',
             ],
             mana: 4000,
             output: 'quark:white_rune',
             count: 2,
-            id: `quark:tools/crafting/runes/white_rune_from_crystal`
+            id: `quark:tools/crafting/runes/white_rune_from_crystal`,
         },
         {
             inputs: [
@@ -558,12 +558,12 @@ onEvent('recipes', (event) => {
                 'quark:orange_crystal',
                 'quark:orange_crystal',
                 'quark:orange_crystal',
-                'quark:orange_crystal'
+                'quark:orange_crystal',
             ],
             mana: 4000,
             output: 'quark:orange_rune',
             count: 2,
-            id: `quark:tools/crafting/runes/orange_rune_from_crystal`
+            id: `quark:tools/crafting/runes/orange_rune_from_crystal`,
         },
         {
             inputs: [
@@ -574,12 +574,12 @@ onEvent('recipes', (event) => {
                 'quark:violet_crystal',
                 'quark:violet_crystal',
                 'quark:violet_crystal',
-                'quark:violet_crystal'
+                'quark:violet_crystal',
             ],
             mana: 4000,
             output: 'quark:magenta_rune',
             count: 2,
-            id: `quark:tools/crafting/runes/magenta_rune_from_crystal`
+            id: `quark:tools/crafting/runes/magenta_rune_from_crystal`,
         },
         {
             inputs: [
@@ -590,12 +590,12 @@ onEvent('recipes', (event) => {
                 'quark:blue_crystal',
                 'quark:blue_crystal',
                 'quark:blue_crystal',
-                'quark:blue_crystal'
+                'quark:blue_crystal',
             ],
             mana: 4000,
             output: 'quark:light_blue_rune',
             count: 2,
-            id: `quark:tools/crafting/runes/light_blue_rune_from_crystal`
+            id: `quark:tools/crafting/runes/light_blue_rune_from_crystal`,
         },
         {
             inputs: [
@@ -606,12 +606,12 @@ onEvent('recipes', (event) => {
                 'quark:yellow_crystal',
                 'quark:yellow_crystal',
                 'quark:yellow_crystal',
-                'quark:yellow_crystal'
+                'quark:yellow_crystal',
             ],
             mana: 4000,
             output: 'quark:yellow_rune',
             count: 2,
-            id: `quark:tools/crafting/runes/yellow_rune_from_crystal`
+            id: `quark:tools/crafting/runes/yellow_rune_from_crystal`,
         },
         {
             inputs: [
@@ -622,12 +622,12 @@ onEvent('recipes', (event) => {
                 'quark:green_crystal',
                 'quark:green_crystal',
                 'quark:green_crystal',
-                'quark:green_crystal'
+                'quark:green_crystal',
             ],
             mana: 4000,
             output: 'quark:lime_rune',
             count: 2,
-            id: `quark:tools/crafting/runes/lime_rune_from_crystal`
+            id: `quark:tools/crafting/runes/lime_rune_from_crystal`,
         },
         {
             inputs: [
@@ -638,12 +638,12 @@ onEvent('recipes', (event) => {
                 'quark:indigo_crystal',
                 'quark:indigo_crystal',
                 'quark:indigo_crystal',
-                'quark:indigo_crystal'
+                'quark:indigo_crystal',
             ],
             mana: 4000,
             output: 'quark:blue_rune',
             count: 2,
-            id: `quark:tools/crafting/runes/blue_rune_from_crystal`
+            id: `quark:tools/crafting/runes/blue_rune_from_crystal`,
         },
         {
             inputs: [
@@ -654,12 +654,12 @@ onEvent('recipes', (event) => {
                 'quark:red_crystal',
                 'quark:red_crystal',
                 'quark:red_crystal',
-                'quark:red_crystal'
+                'quark:red_crystal',
             ],
             mana: 4000,
             output: 'quark:red_rune',
             count: 2,
-            id: `quark:tools/crafting/runes/red_rune_from_crystal`
+            id: `quark:tools/crafting/runes/red_rune_from_crystal`,
         },
         {
             inputs: [
@@ -670,12 +670,12 @@ onEvent('recipes', (event) => {
                 'quark:black_crystal',
                 'quark:black_crystal',
                 'quark:black_crystal',
-                'quark:black_crystal'
+                'quark:black_crystal',
             ],
             mana: 4000,
             output: 'quark:black_rune',
             count: 2,
-            id: `quark:tools/crafting/runes/black_rune_from_crystal`
+            id: `quark:tools/crafting/runes/black_rune_from_crystal`,
         },
         {
             inputs: [
@@ -686,13 +686,13 @@ onEvent('recipes', (event) => {
                 'quark:light_blue_rune',
                 'quark:blue_rune',
                 'quark:magenta_rune',
-                'quark:white_rune'
+                'quark:white_rune',
             ],
             mana: 4000 * 8,
             output: 'quark:rainbow_rune',
             count: 8,
-            id: 'quark:tools/crafting/runes/rainbow_rune2'
-        }
+            id: 'quark:tools/crafting/runes/rainbow_rune2',
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -706,7 +706,7 @@ onEvent('recipes', (event) => {
             type: 'botania:runic_altar',
             output: { item: recipe.output, count: recipe.count },
             mana: recipe.mana,
-            ingredients: ingredients
+            ingredients: ingredients,
         });
         if (recipe.id) {
             re.id(recipe.id);

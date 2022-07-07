@@ -16,6 +16,6 @@ onEvent('block.tags', (event) => {
         'undergarden:indigo_mushroom',
         'byg:sythian_fungus',
         'undergarden:veil_mushroom',
-        'undergarden:blood_mushroom'
+        'undergarden:blood_mushroom',
     ]);
 });

@@ -7,8 +7,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 { item: 'minecraft:bow', weight: 1500 },
                 { item: 'botania:livingwood_bow', weight: 1000 },
                 { item: 'botania:crystal_bow', weight: 400 },
-                { item: 'minecraft:crossbow', weight: 1500 }
-            ]
+                { item: 'minecraft:crossbow', weight: 1500 },
+            ],
         },
         {
             type: 'ARMOR',
@@ -58,8 +58,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 { item: 'minecraft:netherite_helmet', weight: 10 },
                 { item: 'minecraft:netherite_chestplate', weight: 10 },
                 { item: 'minecraft:netherite_leggings', weight: 10 },
-                { item: 'minecraft:netherite_boots', weight: 10 }
-            ]
+                { item: 'minecraft:netherite_boots', weight: 10 },
+            ],
         },
         {
             type: 'SHIELD',
@@ -70,8 +70,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 { item: 'mekanismtools:lapis_lazuli_shield', weight: 1200 },
                 { item: 'undergarden:cloggrum_shield', weight: 1000 },
                 { item: 'immersiveengineering:shield', weight: 600 },
-                { item: 'mekanismtools:osmium_shield', weight: 500 }
-            ]
+                { item: 'mekanismtools:osmium_shield', weight: 500 },
+            ],
         },
         {
             type: 'SWORD',
@@ -80,8 +80,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 { item: 'mekanismtools:bronze_sword', weight: 1200 },
                 { item: 'mekanismtools:lapis_lazuli_sword', weight: 1200 },
                 { item: 'minecraft:diamond_sword', weight: 800 },
-                { item: 'minecraft:netherite_sword', weight: 10 }
-            ]
+                { item: 'minecraft:netherite_sword', weight: 10 },
+            ],
         },
         {
             type: 'SHOVEL',
@@ -90,8 +90,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 { item: 'mekanismtools:bronze_shovel', weight: 1200 },
                 { item: 'mekanismtools:lapis_lazuli_shovel', weight: 1200 },
                 { item: 'minecraft:diamond_shovel', weight: 800 },
-                { item: 'minecraft:netherite_shovel', weight: 10 }
-            ]
+                { item: 'minecraft:netherite_shovel', weight: 10 },
+            ],
         },
         {
             type: 'PICKAXE',
@@ -100,8 +100,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 { item: 'mekanismtools:bronze_pickaxe', weight: 1200 },
                 { item: 'mekanismtools:lapis_lazuli_pickaxe', weight: 1200 },
                 { item: 'minecraft:diamond_pickaxe', weight: 800 },
-                { item: 'minecraft:netherite_pickaxe', weight: 10 }
-            ]
+                { item: 'minecraft:netherite_pickaxe', weight: 10 },
+            ],
         },
         {
             type: 'AXE',
@@ -110,9 +110,9 @@ onEvent('server.datapack.high_priority', (event) => {
                 { item: 'mekanismtools:bronze_axe', weight: 1200 },
                 { item: 'mekanismtools:lapis_lazuli_axe', weight: 1200 },
                 { item: 'minecraft:diamond_axe', weight: 800 },
-                { item: 'minecraft:netherite_axe', weight: 10 }
-            ]
-        }
+                { item: 'minecraft:netherite_axe', weight: 10 },
+            ],
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -120,7 +120,7 @@ onEvent('server.datapack.high_priority', (event) => {
             let data = {
                 stack: { item: entry.item },
                 type: recipe.type,
-                weight: entry.weight
+                weight: entry.weight,
             };
 
             let fileName = entry.item.split(':')[1];

@@ -11,9 +11,9 @@ onEvent('recipes', (event) => {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
                 B: { item: 'resourcefulbees:t4_hive_upgrade' },
                 C: { item: 'resourcefulbees:t1_apiary' },
-                D: { item: 'minecraft:nether_star' }
+                D: { item: 'minecraft:nether_star' },
             },
-            id: 'resourcefulbees:t2_apiary'
+            id: 'resourcefulbees:t2_apiary',
         },
         {
             output: 'resourcefulbees:t3_apiary',
@@ -22,9 +22,9 @@ onEvent('recipes', (event) => {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
                 B: { item: 'resourcefulbees:t4_hive_upgrade' },
                 C: { item: 'resourcefulbees:t2_apiary' },
-                D: { item: 'minecraft:nether_star' }
+                D: { item: 'minecraft:nether_star' },
             },
-            id: 'resourcefulbees:t3_apiary'
+            id: 'resourcefulbees:t3_apiary',
         },
         {
             output: 'resourcefulbees:t4_apiary',
@@ -33,10 +33,10 @@ onEvent('recipes', (event) => {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
                 B: { item: 'resourcefulbees:t4_hive_upgrade' },
                 C: { item: 'resourcefulbees:t3_apiary' },
-                D: { item: 'minecraft:nether_star' }
+                D: { item: 'minecraft:nether_star' },
             },
-            id: 'resourcefulbees:t4_apiary'
-        }
+            id: 'resourcefulbees:t4_apiary',
+        },
     ];
 
     recipes.forEach((recipe) => {

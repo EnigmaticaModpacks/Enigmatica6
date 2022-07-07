@@ -9,7 +9,7 @@ onEvent('item.tags', (event) => {
         'ars_nouveau:worn_notebook',
         'astralsorcery:tome',
         'alexsmobs:animal_dictionary',
-        'occultism:dictionary_of_spirits'
+        'occultism:dictionary_of_spirits',
     ];
     event.get('forge:manuals').add(items);
 });

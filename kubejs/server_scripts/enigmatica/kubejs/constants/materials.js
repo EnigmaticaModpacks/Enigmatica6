@@ -78,7 +78,7 @@ const materialsToUnify = [
     'blazing',
     'niotic',
     'spirited',
-    'nitro'
+    'nitro',
 ];
 
 // Used to determine which material types to unify
@@ -104,7 +104,7 @@ const metals = [
     'tin',
     'uranium',
     'utherium',
-    'zinc'
+    'zinc',
 ];
 
 // Defines melting point of various materials
@@ -142,91 +142,91 @@ const meltingPoints = {
     blazing: { temp: 950 },
     niotic: { temp: 1250 },
     spirited: { temp: 1350 },
-    nitro: { temp: 1450 }
+    nitro: { temp: 1450 },
 };
 
 // Defines the secondary metal each metal type will produce.
 const oreProcessingSecondaries = {
     iron: {
         secondary: 'nickel',
-        createProcessingTime: 400
+        createProcessingTime: 400,
     },
     nickel: {
         secondary: 'iron',
-        createProcessingTime: 350
+        createProcessingTime: 350,
     },
     gold: {
         secondary: 'zinc',
-        createProcessingTime: 300
+        createProcessingTime: 300,
     },
     copper: {
         secondary: 'gold',
-        createProcessingTime: 350
+        createProcessingTime: 350,
     },
     aluminum: {
         secondary: 'iron',
-        createProcessingTime: 300
+        createProcessingTime: 300,
     },
     lead: {
         secondary: 'silver',
-        createProcessingTime: 300
+        createProcessingTime: 300,
     },
     silver: {
         secondary: 'lead',
-        createProcessingTime: 300
+        createProcessingTime: 300,
     },
     uranium: {
         secondary: 'lead',
-        createProcessingTime: 400
+        createProcessingTime: 400,
     },
     osmium: {
         secondary: 'tin',
-        createProcessingTime: 400
+        createProcessingTime: 400,
     },
     tin: {
         secondary: 'osmium',
-        createProcessingTime: 350
+        createProcessingTime: 350,
     },
     zinc: {
         secondary: 'gold',
-        createProcessingTime: 350
+        createProcessingTime: 350,
     },
     nebu: {
         secondary: 'uranium',
-        createProcessingTime: 400
+        createProcessingTime: 400,
     },
     cobalt: {
         secondary: 'iron',
-        createProcessingTime: 400
+        createProcessingTime: 400,
     },
     cloggrum: {
         secondary: 'froststeel',
-        createProcessingTime: 300
+        createProcessingTime: 300,
     },
     froststeel: {
         secondary: 'cobalt',
-        createProcessingTime: 400
+        createProcessingTime: 400,
     },
     regalium: {
         secondary: 'utherium',
-        createProcessingTime: 400
+        createProcessingTime: 400,
     },
     utherium: {
         secondary: 'regalium',
-        createProcessingTime: 400
+        createProcessingTime: 400,
     },
     thallasium: {
         secondary: 'thallasium',
-        createProcessingTime: 300
+        createProcessingTime: 300,
     },
     iesnium: {
         secondary: 'silver',
-        createProcessingTime: 500
+        createProcessingTime: 500,
     },
     elementium: {
         secondary: 'elementium',
-        createProcessingTime: 400
-    }
+        createProcessingTime: 400,
+    },
 };
 
 // Used to drive Unify_Materials outputs for gem processing.
@@ -238,28 +238,28 @@ const gemProcessingProperties = {
             primaryCount: 8,
             secondaryCount: 6,
             secondaryChance: 0.25,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 8,
             secondaryCount: 6,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         immersiveengineering: {
-            count: 6
+            count: 6,
         },
         occultism: {
-            count: 6
+            count: 6,
         },
         bloodmagic: {
-            count: 6
+            count: 6,
         },
         pedestals: {
-            count: 6
+            count: 6,
         },
         mekanism: {
-            count: 6
-        }
+            count: 6,
+        },
     },
     coal: {
         output: 'gem',
@@ -269,29 +269,29 @@ const gemProcessingProperties = {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 2,
             secondaryCount: 2,
-            secondaryChance: 0.5
+            secondaryChance: 0.5,
         },
         immersiveengineering: {
             count: 4,
-            secondaryChance: 0.15
+            secondaryChance: 0.15,
         },
         occultism: {
-            count: 4
+            count: 4,
         },
         bloodmagic: {
-            count: 4
+            count: 4,
         },
         pedestals: {
-            count: 4
+            count: 4,
         },
         mekanism: {
-            count: 2
-        }
+            count: 2,
+        },
     },
     diamond: {
         output: 'gem',
@@ -300,28 +300,28 @@ const gemProcessingProperties = {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            processingTime: 500
+            processingTime: 500,
         },
         thermal: {
             primaryCount: 2,
             secondaryCount: 2,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         immersiveengineering: {
-            count: 2
+            count: 2,
         },
         occultism: {
-            count: 2
+            count: 2,
         },
         bloodmagic: {
-            count: 2
+            count: 2,
         },
         pedestals: {
-            count: 2
+            count: 2,
         },
         mekanism: {
-            count: 2
-        }
+            count: 2,
+        },
     },
     emerald: {
         output: 'gem',
@@ -330,28 +330,28 @@ const gemProcessingProperties = {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            processingTime: 500
+            processingTime: 500,
         },
         thermal: {
             primaryCount: 2,
             secondaryCount: 2,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         immersiveengineering: {
-            count: 4
+            count: 4,
         },
         occultism: {
-            count: 4
+            count: 4,
         },
         bloodmagic: {
-            count: 4
+            count: 4,
         },
         pedestals: {
-            count: 4
+            count: 4,
         },
         mekanism: {
-            count: 2
-        }
+            count: 2,
+        },
     },
     lapis: {
         output: 'gem',
@@ -361,29 +361,29 @@ const gemProcessingProperties = {
             primaryCount: 8,
             secondaryCount: 4,
             secondaryChance: 0.5,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 8,
             secondaryCount: 4,
-            secondaryChance: 0.5
+            secondaryChance: 0.5,
         },
         immersiveengineering: {
             count: 9,
-            secondaryChance: 0.2
+            secondaryChance: 0.2,
         },
         occultism: {
-            count: 9
+            count: 9,
         },
         bloodmagic: {
-            count: 9
+            count: 9,
         },
         pedestals: {
-            count: 9
+            count: 9,
         },
         mekanism: {
-            count: 9
-        }
+            count: 9,
+        },
     },
     quartz: {
         output: 'gem',
@@ -393,29 +393,29 @@ const gemProcessingProperties = {
             primaryCount: 2,
             secondaryCount: 4,
             secondaryChance: 0.5,
-            processingTime: 350
+            processingTime: 350,
         },
         thermal: {
             primaryCount: 2,
             secondaryCount: 4,
-            secondaryChance: 0.5
+            secondaryChance: 0.5,
         },
         immersiveengineering: {
             count: 3,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         occultism: {
-            count: 3
+            count: 3,
         },
         bloodmagic: {
-            count: 3
+            count: 3,
         },
         pedestals: {
-            count: 3
+            count: 3,
         },
         mekanism: {
-            count: 3
-        }
+            count: 3,
+        },
     },
     sulfur: {
         output: 'gem',
@@ -424,28 +424,28 @@ const gemProcessingProperties = {
             primaryCount: 6,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 6,
             secondaryCount: 2,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         immersiveengineering: {
-            count: 6
+            count: 6,
         },
         occultism: {
-            count: 6
+            count: 6,
         },
         bloodmagic: {
-            count: 6
+            count: 6,
         },
         pedestals: {
-            count: 6
+            count: 6,
         },
         mekanism: {
-            count: 6
-        }
+            count: 6,
+        },
     },
     apatite: {
         output: 'gem',
@@ -454,28 +454,28 @@ const gemProcessingProperties = {
             primaryCount: 8,
             secondaryCount: 4,
             secondaryChance: 0.25,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 8,
             secondaryCount: 4,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         immersiveengineering: {
-            count: 12
+            count: 12,
         },
         occultism: {
-            count: 12
+            count: 12,
         },
         bloodmagic: {
-            count: 12
+            count: 12,
         },
         pedestals: {
-            count: 12
+            count: 12,
         },
         mekanism: {
-            count: 12
-        }
+            count: 12,
+        },
     },
     fluorite: {
         output: 'gem',
@@ -484,28 +484,28 @@ const gemProcessingProperties = {
             primaryCount: 6,
             secondaryCount: 3,
             secondaryChance: 0.25,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 6,
             secondaryCount: 3,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         immersiveengineering: {
-            count: 6
+            count: 6,
         },
         occultism: {
-            count: 6
+            count: 6,
         },
         bloodmagic: {
-            count: 6
+            count: 6,
         },
         pedestals: {
-            count: 6
+            count: 6,
         },
         mekanism: {
-            count: 6
-        }
+            count: 6,
+        },
     },
     dimensional: {
         output: 'gem',
@@ -514,28 +514,28 @@ const gemProcessingProperties = {
             primaryCount: 6,
             secondaryCount: 3,
             secondaryChance: 0.25,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 6,
             secondaryCount: 3,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         immersiveengineering: {
-            count: 8
+            count: 8,
         },
         occultism: {
-            count: 8
+            count: 8,
         },
         bloodmagic: {
-            count: 8
+            count: 8,
         },
         pedestals: {
-            count: 8
+            count: 8,
         },
         mekanism: {
-            count: 8
-        }
+            count: 8,
+        },
     },
     ender: {
         output: 'shard',
@@ -544,28 +544,28 @@ const gemProcessingProperties = {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 2,
             secondaryCount: 2,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         immersiveengineering: {
-            count: 3
+            count: 3,
         },
         occultism: {
-            count: 3
+            count: 3,
         },
         bloodmagic: {
-            count: 3
+            count: 3,
         },
         pedestals: {
-            count: 3
+            count: 3,
         },
         mekanism: {
-            count: 3
-        }
+            count: 3,
+        },
     },
     amber: {
         output: 'shard',
@@ -574,28 +574,28 @@ const gemProcessingProperties = {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 2,
             secondaryCount: 2,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         immersiveengineering: {
-            count: 3
+            count: 3,
         },
         occultism: {
-            count: 3
+            count: 3,
         },
         bloodmagic: {
-            count: 3
+            count: 3,
         },
         pedestals: {
-            count: 3
+            count: 3,
         },
         mekanism: {
-            count: 3
-        }
+            count: 3,
+        },
     },
     potassium_nitrate: {
         output: 'gem',
@@ -604,28 +604,28 @@ const gemProcessingProperties = {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 2,
             secondaryCount: 2,
-            secondaryChance: 0.25
+            secondaryChance: 0.25,
         },
         immersiveengineering: {
-            count: 3
+            count: 3,
         },
         occultism: {
-            count: 3
+            count: 3,
         },
         bloodmagic: {
-            count: 3
+            count: 3,
         },
         pedestals: {
-            count: 3
+            count: 3,
         },
         mekanism: {
-            count: 3
-        }
+            count: 3,
+        },
     },
     bitumen: {
         output: 'gem',
@@ -634,28 +634,28 @@ const gemProcessingProperties = {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 2,
             secondaryCount: 2,
-            secondaryChance: 0.5
+            secondaryChance: 0.5,
         },
         immersiveengineering: {
-            count: 4
+            count: 4,
         },
         occultism: {
-            count: 4
+            count: 4,
         },
         bloodmagic: {
-            count: 4
+            count: 4,
         },
         pedestals: {
-            count: 4
+            count: 4,
         },
         mekanism: {
-            count: 4
-        }
+            count: 4,
+        },
     },
     cinnabar: {
         output: 'gem',
@@ -664,28 +664,28 @@ const gemProcessingProperties = {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 2,
             secondaryCount: 2,
-            secondaryChance: 0.5
+            secondaryChance: 0.5,
         },
         immersiveengineering: {
-            count: 4
+            count: 4,
         },
         occultism: {
-            count: 4
+            count: 4,
         },
         bloodmagic: {
-            count: 4
+            count: 4,
         },
         pedestals: {
-            count: 4
+            count: 4,
         },
         mekanism: {
-            count: 4
-        }
+            count: 4,
+        },
     },
     mana: {
         output: 'gem',
@@ -694,27 +694,27 @@ const gemProcessingProperties = {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5,
-            processingTime: 300
+            processingTime: 300,
         },
         thermal: {
             primaryCount: 2,
             secondaryCount: 2,
-            secondaryChance: 0.5
+            secondaryChance: 0.5,
         },
         immersiveengineering: {
-            count: 4
+            count: 4,
         },
         occultism: {
-            count: 4
+            count: 4,
         },
         bloodmagic: {
-            count: 4
+            count: 4,
         },
         pedestals: {
-            count: 4
+            count: 4,
         },
         mekanism: {
-            count: 4
-        }
-    }
+            count: 4,
+        },
+    },
 };

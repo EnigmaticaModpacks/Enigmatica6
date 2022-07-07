@@ -6,26 +6,26 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'AAA', ' B '],
             key: {
                 A: ['byg:aspen_planks', 'atmospheric:aspen_planks', 'projectvibrantjourneys:aspen_planks'],
-                B: '#forge:rods/wooden'
+                B: '#forge:rods/wooden',
             },
-            id: 'atmospheric:aspen_sign'
+            id: 'atmospheric:aspen_sign',
         },
         {
             output: 'atmospheric:aspen_chest',
             pattern: ['AAA', 'A A', 'AAA'],
             key: {
-                A: ['byg:aspen_planks', 'atmospheric:aspen_planks', 'projectvibrantjourneys:aspen_planks']
+                A: ['byg:aspen_planks', 'atmospheric:aspen_planks', 'projectvibrantjourneys:aspen_planks'],
             },
-            id: 'atmospheric:aspen_chest'
+            id: 'atmospheric:aspen_chest',
         },
         {
             output: Item.of('4x atmospheric:aspen_chest'),
             pattern: ['AAA', 'A A', 'AAA'],
             key: {
-                A: ['byg:aspen_log', 'atmospheric:aspen_log', 'projectvibrantjourneys:aspen_log']
+                A: ['byg:aspen_log', 'atmospheric:aspen_log', 'projectvibrantjourneys:aspen_log'],
             },
-            id: `${id_prefix}aspen_chest_from_logs`
-        }
+            id: `${id_prefix}aspen_chest_from_logs`,
+        },
     ];
 
     recipes.forEach((recipe) => {

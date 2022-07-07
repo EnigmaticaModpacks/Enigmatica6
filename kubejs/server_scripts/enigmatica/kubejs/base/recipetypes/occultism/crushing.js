@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: 'occultism:crushing/crushed_end_stone'
+            id: 'occultism:crushing/crushed_end_stone',
         },
         {
             input: { tag: 'forge:obsidian' },
@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 400,
             ignore_crushing_multiplier: true,
-            id: 'occultism:crushing/obsidian_dust'
+            id: 'occultism:crushing/obsidian_dust',
         },
         {
             input: { tag: 'forge:grain' },
@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 50,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}wheat_flour`
+            id: `${id_prefix}wheat_flour`,
         },
         {
             input: { item: 'atum:emmer' },
@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 50,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}emmer_flour`
+            id: `${id_prefix}emmer_flour`,
         },
         {
             input: { item: 'minecraft:sugar_cane' },
@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 50,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}sugar`
+            id: `${id_prefix}sugar`,
         },
         {
             input: { tag: 'forge:ores/netherite' },
@@ -47,7 +47,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 400,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}netherite_scrap`
+            id: `${id_prefix}netherite_scrap`,
         },
         {
             input: { tag: 'minecraft:logs' },
@@ -55,7 +55,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 100,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}wood_dust`
+            id: `${id_prefix}wood_dust`,
         },
         {
             input: { tag: 'forge:cobblestone' },
@@ -63,7 +63,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}gravel`
+            id: `${id_prefix}gravel`,
         },
         {
             input: { tag: 'forge:gravel' },
@@ -71,7 +71,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}sand_from_gravel`
+            id: `${id_prefix}sand_from_gravel`,
         },
         {
             input: { tag: 'forge:slag' },
@@ -79,7 +79,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}sand_from_slag`
+            id: `${id_prefix}sand_from_slag`,
         },
         {
             input: { tag: 'forge:glass' },
@@ -87,7 +87,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}sand_from_glass`
+            id: `${id_prefix}sand_from_glass`,
         },
         {
             input: { tag: 'forge:sandstone/colorless' },
@@ -95,7 +95,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}sand_from_sandstone`
+            id: `${id_prefix}sand_from_sandstone`,
         },
         {
             input: { item: 'atmospheric:arid_sandstone' },
@@ -103,7 +103,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}arid_sand`
+            id: `${id_prefix}arid_sand`,
         },
         {
             input: { item: 'atmospheric:red_arid_sandstone' },
@@ -111,7 +111,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}red_arid_sand`
+            id: `${id_prefix}red_arid_sand`,
         },
         {
             input: { item: 'byg:pink_sandstone' },
@@ -119,7 +119,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}pink_sand`
+            id: `${id_prefix}pink_sand`,
         },
         {
             input: { item: 'byg:black_sandstone' },
@@ -127,7 +127,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}black_sand`
+            id: `${id_prefix}black_sand`,
         },
         {
             input: { item: 'byg:white_sandstone' },
@@ -135,7 +135,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}white_sand`
+            id: `${id_prefix}white_sand`,
         },
         {
             input: { item: 'byg:blue_sandstone' },
@@ -143,7 +143,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}blue_sand`
+            id: `${id_prefix}blue_sand`,
         },
         {
             input: { item: 'byg:purple_sandstone' },
@@ -151,7 +151,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}purple_sand`
+            id: `${id_prefix}purple_sand`,
         },
         {
             input: { tag: 'forge:sandstone/red' },
@@ -159,7 +159,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}red_sand_from_red_sandstone`
+            id: `${id_prefix}red_sand_from_red_sandstone`,
         },
         {
             input: { item: 'buildinggadgets:construction_block_dense' },
@@ -167,7 +167,7 @@ onEvent('recipes', (event) => {
             count: 3,
             time: 100,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}construction_paste`
+            id: `${id_prefix}construction_paste`,
         },
         {
             input: { item: 'minecraft:glowstone' },
@@ -175,7 +175,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}glowstone_dust_from_glowstone`
+            id: `${id_prefix}glowstone_dust_from_glowstone`,
         },
         {
             input: { tag: 'forge:rods/basalz' },
@@ -183,7 +183,7 @@ onEvent('recipes', (event) => {
             count: 3,
             time: 100,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}basalz_powder`
+            id: `${id_prefix}basalz_powder`,
         },
         {
             input: { tag: 'forge:rods/blitz' },
@@ -191,7 +191,7 @@ onEvent('recipes', (event) => {
             count: 3,
             time: 100,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}blitz_powder`
+            id: `${id_prefix}blitz_powder`,
         },
         {
             input: { tag: 'forge:rods/blizz' },
@@ -199,7 +199,7 @@ onEvent('recipes', (event) => {
             count: 3,
             time: 100,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}blizz_powder`
+            id: `${id_prefix}blizz_powder`,
         },
         {
             input: { item: 'minecraft:granite' },
@@ -207,7 +207,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}red_sand_from_granite`
+            id: `${id_prefix}red_sand_from_granite`,
         },
         {
             input: { item: 'minecraft:diorite' },
@@ -215,7 +215,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}limesand`
+            id: `${id_prefix}limesand`,
         },
         {
             input: { item: 'byg:blue_glowcane' },
@@ -223,7 +223,7 @@ onEvent('recipes', (event) => {
             count: 3,
             time: 50,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}blue_glowcane_dust_from_blue_glowcane`
+            id: `${id_prefix}blue_glowcane_dust_from_blue_glowcane`,
         },
         {
             input: { item: 'byg:blue_glowcane_block' },
@@ -231,7 +231,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}blue_glowcane_dust_from_blue_glowcane_block`
+            id: `${id_prefix}blue_glowcane_dust_from_blue_glowcane_block`,
         },
         {
             input: { item: 'byg:pink_glowcane' },
@@ -239,7 +239,7 @@ onEvent('recipes', (event) => {
             count: 3,
             time: 50,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}pink_glowcane_dust_from_pink_glowcane`
+            id: `${id_prefix}pink_glowcane_dust_from_pink_glowcane`,
         },
         {
             input: { item: 'byg:pink_glowcane_block' },
@@ -247,7 +247,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}pink_glowcane_dust_from_pink_glowcane_block`
+            id: `${id_prefix}pink_glowcane_dust_from_pink_glowcane_block`,
         },
         {
             input: { item: 'byg:purple_glowcane_block' },
@@ -255,7 +255,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}purple_glowcane_dust_from_purple_glowcane_block`
+            id: `${id_prefix}purple_glowcane_dust_from_purple_glowcane_block`,
         },
         {
             input: { item: 'byg:purple_glowcane' },
@@ -263,7 +263,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}purple_glowcane_dust_from_purple_glowcane`
+            id: `${id_prefix}purple_glowcane_dust_from_purple_glowcane`,
         },
         {
             input: { item: 'byg:red_glowcane_block' },
@@ -271,7 +271,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}red_glowcane_dust_from_red_glowcane_block`
+            id: `${id_prefix}red_glowcane_dust_from_red_glowcane_block`,
         },
         {
             input: { item: 'byg:red_glowcane' },
@@ -279,7 +279,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}red_glowcane_dust_from_red_glowcane`
+            id: `${id_prefix}red_glowcane_dust_from_red_glowcane`,
         },
         {
             input: { item: 'minecraft:clay' },
@@ -287,7 +287,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}clay_ball`
+            id: `${id_prefix}clay_ball`,
         },
         {
             input: { item: 'betterendforge:aurora_crystal' },
@@ -295,7 +295,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}crystal_shards`
+            id: `${id_prefix}crystal_shards`,
         },
         {
             input: { item: 'byg:ether_stone' },
@@ -303,7 +303,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}cobbled_ether_stone`
+            id: `${id_prefix}cobbled_ether_stone`,
         },
         {
             input: { item: 'byg:dacite' },
@@ -311,7 +311,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}dacite_cobblestone`
+            id: `${id_prefix}dacite_cobblestone`,
         },
         {
             input: { item: 'minecraft:nether_wart_block' },
@@ -319,7 +319,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}nether_wart`
+            id: `${id_prefix}nether_wart`,
         },
         {
             input: { item: 'byg:pervaded_netherrack' },
@@ -327,7 +327,7 @@ onEvent('recipes', (event) => {
             count: 2,
             time: 100,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}glowstone_dust_from_pervaded_netherrack`
+            id: `${id_prefix}glowstone_dust_from_pervaded_netherrack`,
         },
         {
             input: { tag: 'minecraft:wool' },
@@ -335,7 +335,7 @@ onEvent('recipes', (event) => {
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}string`
+            id: `${id_prefix}string`,
         },
         {
             input: { item: 'byg:red_rock' },
@@ -343,7 +343,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}red_sand_from_red_rock`
+            id: `${id_prefix}red_sand_from_red_rock`,
         },
         {
             input: { item: 'minecraft:terracotta' },
@@ -351,7 +351,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}red_sand_from_terracotta`
+            id: `${id_prefix}red_sand_from_terracotta`,
         },
         {
             input: { tag: 'forge:coal_petcoke' },
@@ -359,7 +359,7 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}petcoke_dust`
+            id: `${id_prefix}petcoke_dust`,
         },
         {
             input: { tag: 'forge:storage_blocks/coal_petcoke' },
@@ -367,7 +367,7 @@ onEvent('recipes', (event) => {
             count: 9,
             time: 1600,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}petcoke_dust_from_block`
+            id: `${id_prefix}petcoke_dust_from_block`,
         },
         {
             input: { tag: 'forge:storage_blocks/coal_coke' },
@@ -375,8 +375,8 @@ onEvent('recipes', (event) => {
             count: 9,
             time: 1600,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}coke_dust_from_block`
-        }
+            id: `${id_prefix}coke_dust_from_block`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -386,10 +386,10 @@ onEvent('recipes', (event) => {
                 ingredient: recipe.input,
                 result: {
                     item: recipe.output,
-                    count: recipe.count
+                    count: recipe.count,
                 },
                 crushing_time: recipe.time,
-                ignore_crushing_multiplier: recipe.ignore_crushing_multiplier
+                ignore_crushing_multiplier: recipe.ignore_crushing_multiplier,
             })
             .id(recipe.id);
     });

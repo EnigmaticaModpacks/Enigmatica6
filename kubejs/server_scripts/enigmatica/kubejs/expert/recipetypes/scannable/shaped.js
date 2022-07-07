@@ -24,9 +24,9 @@ onEvent('recipes', (event) => {
                 B: 'occultism:spirit_attuned_gem',
                 C: '#forge:plates/aluminum',
                 D: '#forge:glass_panes/cyan',
-                E: 'tconstruct:sky_slime_crystal'
+                E: 'tconstruct:sky_slime_crystal',
             },
-            id: 'scannable:scanner'
+            id: 'scannable:scanner',
         },
         {
             output: 'scannable:module_blank',
@@ -37,10 +37,10 @@ onEvent('recipes', (event) => {
                 C: 'ars_nouveau:magic_clay',
                 D: 'ars_nouveau:ritual_scrying',
                 E: '#forge:nuggets/copper',
-                F: 'create:polished_rose_quartz'
+                F: 'create:polished_rose_quartz',
             },
-            id: 'scannable:module_blank'
-        }
+            id: 'scannable:module_blank',
+        },
     ];
 
     recipes.forEach((recipe) => {

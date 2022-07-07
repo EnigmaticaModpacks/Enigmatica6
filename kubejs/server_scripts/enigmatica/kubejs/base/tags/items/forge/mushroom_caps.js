@@ -19,6 +19,6 @@ onEvent('item.tags', (event) => {
         'byg:embur_gel_block',
         'betterendforge:umbrella_tree_membrane',
         'betterendforge:mossy_glowshroom_cap',
-        'betterendforge:jellyshroom_cap_purple'
+        'betterendforge:jellyshroom_cap_purple',
     ]);
 });

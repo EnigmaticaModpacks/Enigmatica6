@@ -29,7 +29,7 @@ onEvent('item.tags', (event) => {
         'powah:niotic_crystal_block',
         'powah:nitro_crystal_block',
         'powah:spirited_crystal_block',
-        'powah:uraninite_block'
+        'powah:uraninite_block',
     ]);
 
     event.get(storageBlocks + '/glowstone').add('minecraft:glowstone');

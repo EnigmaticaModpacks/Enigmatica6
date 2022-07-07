@@ -9,56 +9,56 @@ onEvent('recipes', (event) => {
             offhand: { item: 'naturesaura:token_joy' },
             consumes_offhand: false,
             stat_changes: [{ id: 'no_ai', value: true }],
-            id: 'apotheosis:spawner/no_ai'
+            id: 'apotheosis:spawner/no_ai',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_freeze' },
             offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [{ id: 'no_ai', value: false }],
-            id: 'apotheosis:spawner/no_ai_inverted'
+            id: 'apotheosis:spawner/no_ai_inverted',
         },
         {
             mainhand: { item: 'meetyourfight:spectres_eye' },
             offhand: { item: 'naturesaura:token_joy' },
             consumes_offhand: false,
             stat_changes: [{ id: 'ignore_players', value: true }],
-            id: 'apotheosis:spawner/ignore_players'
+            id: 'apotheosis:spawner/ignore_players',
         },
         {
             mainhand: { item: 'meetyourfight:spectres_eye' },
             offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [{ id: 'ignore_players', value: false }],
-            id: 'apotheosis:spawner/ignore_players_inverted'
+            id: 'apotheosis:spawner/ignore_players_inverted',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_intangible' },
             offhand: { item: 'naturesaura:token_joy' },
             consumes_offhand: false,
             stat_changes: [{ id: 'ignore_conditions', value: true }],
-            id: 'apotheosis:spawner/ignore_conditions'
+            id: 'apotheosis:spawner/ignore_conditions',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_intangible' },
             offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [{ id: 'ignore_conditions', value: false }],
-            id: 'apotheosis:spawner/ignore_conditions_inverted'
+            id: 'apotheosis:spawner/ignore_conditions_inverted',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_shield' },
             offhand: { item: 'naturesaura:token_joy' },
             consumes_offhand: false,
             stat_changes: [{ id: 'ignore_light', value: true }],
-            id: 'apotheosis:spawner/ignore_light'
+            id: 'apotheosis:spawner/ignore_light',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_shield' },
             offhand: { item: 'naturesaura:token_sorrow' },
             consumes_offhand: false,
             stat_changes: [{ id: 'ignore_light', value: false }],
-            id: 'apotheosis:spawner/ignore_light_inverted'
+            id: 'apotheosis:spawner/ignore_light_inverted',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_linger' },
@@ -69,10 +69,10 @@ onEvent('recipes', (event) => {
                     id: 'max_nearby_entities',
                     value: 2,
                     min: -1,
-                    max: 10
-                }
+                    max: 10,
+                },
             ],
-            id: 'apotheosis:spawner/max_nearby'
+            id: 'apotheosis:spawner/max_nearby',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_linger' },
@@ -83,10 +83,10 @@ onEvent('recipes', (event) => {
                     id: 'max_nearby_entities',
                     value: -2,
                     min: 1,
-                    max: -1
-                }
+                    max: -1,
+                },
             ],
-            id: 'apotheosis:spawner/max_nearby_inverted'
+            id: 'apotheosis:spawner/max_nearby_inverted',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_delay' },
@@ -97,10 +97,10 @@ onEvent('recipes', (event) => {
                     id: 'min_delay',
                     value: -5,
                     min: 100,
-                    max: -1
-                }
+                    max: -1,
+                },
             ],
-            id: 'apotheosis:spawner/min_delay'
+            id: 'apotheosis:spawner/min_delay',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_delay' },
@@ -111,10 +111,10 @@ onEvent('recipes', (event) => {
                     id: 'min_delay',
                     value: 5,
                     min: -1,
-                    max: -1
-                }
+                    max: -1,
+                },
             ],
-            id: 'apotheosis:spawner/min_delay_inverted'
+            id: 'apotheosis:spawner/min_delay_inverted',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_summon_decoy' },
@@ -125,10 +125,10 @@ onEvent('recipes', (event) => {
                     id: 'spawn_count',
                     value: 1,
                     min: -1,
-                    max: 5
-                }
+                    max: 5,
+                },
             ],
-            id: 'apotheosis:spawner/spawn_count'
+            id: 'apotheosis:spawner/spawn_count',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_summon_decoy' },
@@ -139,10 +139,10 @@ onEvent('recipes', (event) => {
                     id: 'spawn_count',
                     value: -1,
                     min: 1,
-                    max: -1
-                }
+                    max: -1,
+                },
             ],
-            id: 'apotheosis:spawner/spawn_count_inverted'
+            id: 'apotheosis:spawner/spawn_count_inverted',
         },
         {
             mainhand: { item: 'ars_nouveau:ritual_scrying' },
@@ -153,10 +153,10 @@ onEvent('recipes', (event) => {
                     id: 'req_player_range',
                     value: 2,
                     min: -1,
-                    max: 50
-                }
+                    max: 50,
+                },
             ],
-            id: 'apotheosis:spawner/player_range'
+            id: 'apotheosis:spawner/player_range',
         },
         {
             mainhand: { item: 'ars_nouveau:ritual_scrying' },
@@ -167,10 +167,10 @@ onEvent('recipes', (event) => {
                     id: 'req_player_range',
                     value: -2,
                     min: 1,
-                    max: -1
-                }
+                    max: -1,
+                },
             ],
-            id: 'apotheosis:spawner/player_range_inverted'
+            id: 'apotheosis:spawner/player_range_inverted',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_aoe' },
@@ -181,10 +181,10 @@ onEvent('recipes', (event) => {
                     id: 'spawn_range',
                     value: 1,
                     min: -1,
-                    max: 32
-                }
+                    max: 32,
+                },
             ],
-            id: 'apotheosis:spawner/spawn_range'
+            id: 'apotheosis:spawner/spawn_range',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_aoe' },
@@ -195,10 +195,10 @@ onEvent('recipes', (event) => {
                     id: 'spawn_range',
                     value: -1,
                     min: 1,
-                    max: -1
-                }
+                    max: -1,
+                },
             ],
-            id: 'apotheosis:spawner/spawn_range_inverted'
+            id: 'apotheosis:spawner/spawn_range_inverted',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_sensitive' },
@@ -207,10 +207,10 @@ onEvent('recipes', (event) => {
             stat_changes: [
                 {
                     id: 'redstone_control',
-                    value: true
-                }
+                    value: true,
+                },
             ],
-            id: 'apotheosis:spawner/redstone_control'
+            id: 'apotheosis:spawner/redstone_control',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_sensitive' },
@@ -219,10 +219,10 @@ onEvent('recipes', (event) => {
             stat_changes: [
                 {
                     id: 'redstone_control',
-                    value: false
-                }
+                    value: false,
+                },
             ],
-            id: 'apotheosis:spawner/redstone_control_inverted'
+            id: 'apotheosis:spawner/redstone_control_inverted',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_dampen' },
@@ -231,10 +231,10 @@ onEvent('recipes', (event) => {
             stat_changes: [
                 {
                     id: 'silent',
-                    value: true
-                }
+                    value: true,
+                },
             ],
-            id: 'apotheosis:spawner/silent'
+            id: 'apotheosis:spawner/silent',
         },
         {
             mainhand: { item: 'ars_nouveau:glyph_dampen' },
@@ -243,11 +243,11 @@ onEvent('recipes', (event) => {
             stat_changes: [
                 {
                     id: 'silent',
-                    value: false
-                }
+                    value: false,
+                },
             ],
-            id: 'apotheosis:spawner/silent_inverted'
-        }
+            id: 'apotheosis:spawner/silent_inverted',
+        },
     ];
 
     recipes.forEach((recipe) => {

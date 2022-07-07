@@ -22,10 +22,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'botania:livingrock_slab',
                 B: 'botania:light_relay',
-                C: 'botania:livingrock'
+                C: 'botania:livingrock',
             },
-            id: 'pedestals:pedestal'
-        }
+            id: 'pedestals:pedestal',
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -12,8 +12,8 @@ onEvent('recipes', (event) => {
             duration: 2000,
             itemOutput: { item: 'mekanism:substrate' },
             gasOutput: { gas: 'mekanism:ethene', amount: 100 },
-            id: 'mekanism:reaction/substrate/water_hydrogen'
-        }
+            id: 'mekanism:reaction/substrate/water_hydrogen',
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
             gasInput: recipe.gasInput,
             duration: recipe.duration,
             itemOutput: recipe.itemOutput,
-            gasOutput: recipe.gasOutput
+            gasOutput: recipe.gasOutput,
         };
         if (recipe.energyRequired) {
             constructed_recipe.energyRequired = recipe.energyRequired;

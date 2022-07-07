@@ -8,7 +8,7 @@ onEvent('item.tags', (event) => {
         'thermal:satchel',
         'occultism:satchel',
         '#create:toolboxes',
-        'tetra:modular_toolbelt'
+        'tetra:modular_toolbelt',
     ];
 
     var tags = ['forge:storage', 'forge:storage/bag'];

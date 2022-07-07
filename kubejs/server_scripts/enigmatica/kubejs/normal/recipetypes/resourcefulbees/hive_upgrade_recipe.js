@@ -11,10 +11,10 @@ onEvent('recipes', (event) => {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
                 B: { type: 'resourcefulbees:hive', tier: 4 },
                 C: { item: 'resourcefulbees:t1_apiary' },
-                D: { item: 'minecraft:nether_star' }
+                D: { item: 'minecraft:nether_star' },
             },
             result: { item: 'resourcefulbees:t2_apiary' },
-            id: `${id_prefix}t2_apiary_nest`
+            id: `${id_prefix}t2_apiary_nest`,
         },
         {
             pattern: ['ACA', 'BDB', 'ACA'],
@@ -22,10 +22,10 @@ onEvent('recipes', (event) => {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
                 B: { type: 'resourcefulbees:hive', tier: 4 },
                 C: { item: 'resourcefulbees:t2_apiary' },
-                D: { item: 'minecraft:nether_star' }
+                D: { item: 'minecraft:nether_star' },
             },
             result: { item: 'resourcefulbees:t3_apiary' },
-            id: `${id_prefix}t3_apiary_nest`
+            id: `${id_prefix}t3_apiary_nest`,
         },
         {
             pattern: ['ACA', 'BDB', 'ACA'],
@@ -33,11 +33,11 @@ onEvent('recipes', (event) => {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
                 B: { type: 'resourcefulbees:hive', tier: 4 },
                 C: { item: 'resourcefulbees:t3_apiary' },
-                D: { item: 'minecraft:nether_star' }
+                D: { item: 'minecraft:nether_star' },
             },
             result: { item: 'resourcefulbees:t4_apiary' },
-            id: `${id_prefix}t4_apiary_nest`
-        }
+            id: `${id_prefix}t4_apiary_nest`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -45,7 +45,7 @@ onEvent('recipes', (event) => {
             type: 'resourcefulbees:hive_upgrade_recipe',
             pattern: recipe.pattern,
             key: recipe.key,
-            result: recipe.result
+            result: recipe.result,
         });
         if (recipe.id) {
             re.id(recipe.id);

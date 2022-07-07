@@ -25,10 +25,10 @@ onEvent('recipes', (event) => {
                 C: {
                     type: 'pneumaticcraft:fluid',
                     tag: 'forge:lubricant',
-                    amount: 1000
-                }
+                    amount: 1000,
+                },
             },
-            id: 'modularrouters:speed_upgrade'
+            id: 'modularrouters:speed_upgrade',
         },
         {
             output: Item.of('3x modularrouters:fluid_upgrade'),
@@ -36,10 +36,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:glass/colorless',
                 B: 'thermal:cured_rubber',
-                C: 'modularrouters:blank_upgrade'
+                C: 'modularrouters:blank_upgrade',
             },
-            id: 'modularrouters:fluid_upgrade'
-        }
+            id: 'modularrouters:fluid_upgrade',
+        },
     ];
 
     recipes.forEach((recipe) => {

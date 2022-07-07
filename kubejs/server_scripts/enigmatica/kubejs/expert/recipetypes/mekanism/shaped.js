@@ -24,9 +24,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/copper',
                 B: 'immersiveengineering:alloybrick',
                 C: 'environmental:kiln',
-                D: 'thermal:machine_frame'
+                D: 'thermal:machine_frame',
             },
-            id: 'mekanism:fuelwood_heater'
+            id: 'mekanism:fuelwood_heater',
         },
         {
             output: 'mekanism:resistive_heater',
@@ -36,9 +36,9 @@ onEvent('recipes', (event) => {
                 B: 'immersiveengineering:blastbrick_reinforced',
                 C: 'immersiveengineering:coil_hv',
                 D: '#industrialforegoing:machine_frame/simple',
-                E: 'pneumaticcraft:heat_sink'
+                E: 'pneumaticcraft:heat_sink',
             },
-            id: 'mekanism:resistive_heater'
+            id: 'mekanism:resistive_heater',
         },
         {
             output: 'mekanism:metallurgic_infuser',
@@ -48,9 +48,9 @@ onEvent('recipes', (event) => {
                 B: '#forge:circuits/basic',
                 C: 'rftoolspower:blazing_agitator',
                 D: 'thermal:machine_bottler',
-                E: 'rftoolspower:cell1'
+                E: 'rftoolspower:cell1',
             },
-            id: 'mekanism:metallurgic_infuser'
+            id: 'mekanism:metallurgic_infuser',
         },
         {
             output: 'mekanism:thermal_evaporation_controller',
@@ -59,9 +59,9 @@ onEvent('recipes', (event) => {
                 A: 'mekanism:thermal_evaporation_block',
                 B: '#forge:circuits/elite',
                 C: '#industrialforegoing:machine_frame/advanced',
-                D: 'rftoolsbase:tablet'
+                D: 'rftoolsbase:tablet',
             },
-            id: 'mekanism:thermal_evaporation/controller'
+            id: 'mekanism:thermal_evaporation/controller',
         },
         {
             output: Item.of('2x mekanism:thermal_evaporation_block'),
@@ -70,9 +70,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/bronze',
                 B: 'pneumaticcraft:heat_pipe',
                 C: 'immersiveengineering:alloybrick',
-                D: '#mekanism:alloys/reinforced'
+                D: '#mekanism:alloys/reinforced',
             },
-            id: 'mekanism:thermal_evaporation/block'
+            id: 'mekanism:thermal_evaporation/block',
         },
         {
             output: 'mekanism:thermal_evaporation_valve',
@@ -82,18 +82,18 @@ onEvent('recipes', (event) => {
                 B: 'create:copper_valve_handle',
                 C: 'create:fluid_pipe',
                 D: 'create:fluid_valve',
-                E: '#forge:circuits/elite'
+                E: '#forge:circuits/elite',
             },
-            id: 'mekanism:thermal_evaporation/valve'
+            id: 'mekanism:thermal_evaporation/valve',
         },
         {
             output: Item.of('5x mekanism:structural_glass'),
             pattern: ['CBC', 'BCB', 'CBC'],
             key: {
                 B: '#forge:plates/aluminum',
-                C: '#thermal:glass/hardened'
+                C: '#thermal:glass/hardened',
             },
-            id: 'mekanism:structural_glass'
+            id: 'mekanism:structural_glass',
         },
         {
             output: 'mekanism:steel_casing',
@@ -101,9 +101,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/steel',
                 B: '#mekanism:alloys/infused',
-                C: 'thermal:machine_frame'
+                C: 'thermal:machine_frame',
             },
-            id: 'mekanism:steel_casing'
+            id: 'mekanism:steel_casing',
         },
         {
             output: 'mekanism:boiler_valve',
@@ -113,9 +113,9 @@ onEvent('recipes', (event) => {
                 B: 'create:copper_valve_handle',
                 C: 'create:fluid_pipe',
                 D: 'create:fluid_valve',
-                E: '#forge:circuits/elite'
+                E: '#forge:circuits/elite',
             },
-            id: 'mekanism:boiler_valve'
+            id: 'mekanism:boiler_valve',
         },
         {
             output: Item.of('2x mekanism:boiler_casing'),
@@ -124,9 +124,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/constantan',
                 B: 'pneumaticcraft:heat_pipe',
                 C: 'mekanism:steel_casing',
-                D: '#mekanism:alloys/reinforced'
+                D: '#mekanism:alloys/reinforced',
             },
-            id: 'mekanism:boiler_casing'
+            id: 'mekanism:boiler_casing',
         },
         {
             output: 'mekanism:superheating_element',
@@ -135,18 +135,18 @@ onEvent('recipes', (event) => {
                 A: 'pneumaticcraft:heat_sink',
                 B: 'pneumaticcraft:heat_pipe',
                 C: 'immersiveengineering:alloybrick',
-                D: 'immersiveengineering:coil_mv'
+                D: 'immersiveengineering:coil_mv',
             },
-            id: 'mekanism:superheating_element'
+            id: 'mekanism:superheating_element',
         },
         {
             output: 'mekanism:pressure_disperser',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'pneumaticcraft:advanced_pressure_tube',
-                B: 'mekanism:steel_casing'
+                B: 'mekanism:steel_casing',
             },
-            id: 'mekanism:pressure_disperser'
+            id: 'mekanism:pressure_disperser',
         },
         {
             output: 'mekanism:dynamic_valve',
@@ -156,18 +156,18 @@ onEvent('recipes', (event) => {
                 B: 'create:copper_valve_handle',
                 C: 'create:fluid_pipe',
                 D: 'create:fluid_valve',
-                E: 'pneumaticcraft:advanced_pcb'
+                E: 'pneumaticcraft:advanced_pcb',
             },
-            id: 'mekanism:dynamic_valve'
+            id: 'mekanism:dynamic_valve',
         },
         {
             output: Item.of('8x mekanism:dynamic_tank'),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'immersiveengineering:sheetmetal_colored_black',
-                B: '#immersiveengineering:scaffoldings/aluminum'
+                B: '#immersiveengineering:scaffoldings/aluminum',
             },
-            id: 'mekanism:dynamic_tank'
+            id: 'mekanism:dynamic_tank',
         },
         {
             output: Item.of('2x mekanismgenerators:turbine_casing'),
@@ -176,9 +176,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/aluminum',
                 B: 'mekanism:hdpe_sheet',
                 C: 'mekanism:steel_casing',
-                D: '#mekanism:alloys/reinforced'
+                D: '#mekanism:alloys/reinforced',
             },
-            id: 'mekanismgenerators:turbine/casing'
+            id: 'mekanismgenerators:turbine/casing',
         },
         {
             output: 'mekanismgenerators:turbine_valve',
@@ -188,9 +188,9 @@ onEvent('recipes', (event) => {
                 B: 'create:copper_valve_handle',
                 C: 'create:fluid_pipe',
                 D: 'create:fluid_valve',
-                E: '#forge:circuits/elite'
+                E: '#forge:circuits/elite',
             },
-            id: 'mekanismgenerators:turbine/valve'
+            id: 'mekanismgenerators:turbine/valve',
         },
         {
             output: Item.of('2x mekanismgenerators:turbine_vent'),
@@ -198,9 +198,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'mekanismgenerators:turbine_casing',
                 B: 'create:fluid_pipe',
-                C: 'engineersdecor:straight_pipe_valve'
+                C: 'engineersdecor:straight_pipe_valve',
             },
-            id: 'mekanismgenerators:turbine/vent'
+            id: 'mekanismgenerators:turbine/vent',
         },
         {
             output: 'mekanismgenerators:saturating_condenser',
@@ -208,9 +208,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:heat_sink',
                 B: 'create:fluid_pipe',
-                C: 'mekanism:steel_casing'
+                C: 'mekanism:steel_casing',
             },
-            id: 'mekanismgenerators:saturating_condenser'
+            id: 'mekanismgenerators:saturating_condenser',
         },
         {
             output: 'mekanismgenerators:electromagnetic_coil',
@@ -218,9 +218,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersiveengineering:coil_lv',
                 B: '#industrialforegoing:machine_frame/supreme',
-                C: 'mekanism:basic_induction_cell'
+                C: 'mekanism:basic_induction_cell',
             },
-            id: 'mekanismgenerators:electromagnetic_coil'
+            id: 'mekanismgenerators:electromagnetic_coil',
         },
         {
             output: 'mekanismgenerators:fission_fuel_assembly',
@@ -228,9 +228,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:rods/cobalt',
                 B: 'mekanism:elite_pressurized_tube',
-                C: 'thermal:machine_frame'
+                C: 'thermal:machine_frame',
             },
-            id: 'mekanismgenerators:fission_reactor/fuel_assembly'
+            id: 'mekanismgenerators:fission_reactor/fuel_assembly',
         },
         {
             output: 'mekanismgenerators:control_rod_assembly',
@@ -241,9 +241,9 @@ onEvent('recipes', (event) => {
                 C: 'thermal:machine_frame',
                 D: 'thermal:redstone_servo',
                 E: '#forge:gears/cobalt',
-                F: '#forge:circuits/elite'
+                F: '#forge:circuits/elite',
             },
-            id: 'mekanismgenerators:fission_reactor/control_rod_assembly'
+            id: 'mekanismgenerators:fission_reactor/control_rod_assembly',
         },
         {
             output: Item.of('2x mekanism:sps_port'),
@@ -252,9 +252,9 @@ onEvent('recipes', (event) => {
                 A: 'mekanism:sps_casing',
                 B: 'mekanism:ultimate_universal_cable',
                 C: 'mekanism:ultimate_pressurized_tube',
-                D: '#forge:circuits/ultimate'
+                D: '#forge:circuits/ultimate',
             },
-            id: 'mekanism:sps_port'
+            id: 'mekanism:sps_port',
         },
         {
             output: 'mekanismgenerators:fission_reactor_port',
@@ -264,9 +264,9 @@ onEvent('recipes', (event) => {
                 B: 'create:copper_valve_handle',
                 C: 'create:fluid_pipe',
                 D: 'create:fluid_valve',
-                E: '#forge:circuits/elite'
+                E: '#forge:circuits/elite',
             },
-            id: 'mekanismgenerators:fission_reactor/port'
+            id: 'mekanismgenerators:fission_reactor/port',
         },
         {
             output: 'mekanism:laser',
@@ -275,9 +275,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:gems/nitro',
                 B: '#mekanism:alloys/infused',
                 C: 'mekanism:advanced_induction_cell',
-                D: '#industrialforegoing:machine_frame/simple'
+                D: '#industrialforegoing:machine_frame/simple',
             },
-            id: 'mekanism:laser'
+            id: 'mekanism:laser',
         },
         {
             output: Item.of('2x mekanism:induction_port'),
@@ -285,9 +285,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'mekanism:induction_casing',
                 B: '#forge:circuits/elite',
-                C: 'rftoolsbase:tablet'
+                C: 'rftoolsbase:tablet',
             },
-            id: 'mekanism:induction/port'
+            id: 'mekanism:induction/port',
         },
         {
             output: 'mekanism:electrolytic_separator',
@@ -296,9 +296,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/osmium',
                 B: 'mekanism:electrolytic_core',
                 C: Item.of('thermal:fluid_cell').ignoreNBT(),
-                D: 'thermal:machine_frame'
+                D: 'thermal:machine_frame',
             },
-            id: 'mekanism:electrolytic_separator'
+            id: 'mekanism:electrolytic_separator',
         },
         {
             output: 'mekanism:electrolytic_core',
@@ -307,9 +307,9 @@ onEvent('recipes', (event) => {
                 A: 'immersiveengineering:wirecoil_copper',
                 B: 'thermal:diving_fabric',
                 C: '#forge:plates/zinc',
-                D: '#forge:plates/aluminum'
+                D: '#forge:plates/aluminum',
             },
-            id: 'mekanism:electrolytic_core'
+            id: 'mekanism:electrolytic_core',
         },
         {
             output: 'mekanism:jetpack',
@@ -319,9 +319,9 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:advanced_pcb',
                 C: 'create:copper_backtank',
                 D: 'thermal:hazmat_chestplate',
-                E: 'immersiveengineering:toolupgrade_chemthrower_focus'
+                E: 'immersiveengineering:toolupgrade_chemthrower_focus',
             },
-            id: 'mekanism:jetpack'
+            id: 'mekanism:jetpack',
         },
         {
             output: 'mekanism:jetpack_armored',
@@ -330,18 +330,18 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/aluminum',
                 B: '#forge:plates/signalum',
                 C: ['mekanismtools:steel_chestplate', 'immersiveengineering:armor_steel_chest'],
-                D: 'mekanism:jetpack'
+                D: 'mekanism:jetpack',
             },
-            id: 'mekanism:jetpack_armored'
+            id: 'mekanism:jetpack_armored',
         },
         {
             output: 'mekanismgenerators:solar_panel',
             pattern: ['AAA', 'AAA', 'BBB'],
             key: {
                 A: 'quark:blue_framed_glass_pane',
-                B: 'powah:thermoelectric_plate'
+                B: 'powah:thermoelectric_plate',
             },
-            id: 'mekanismgenerators:solar_panel'
+            id: 'mekanismgenerators:solar_panel',
         },
         {
             output: 'mekanismgenerators:solar_generator',
@@ -350,9 +350,9 @@ onEvent('recipes', (event) => {
                 A: 'mekanismgenerators:solar_panel',
                 B: 'pneumaticcraft:advanced_pcb',
                 C: 'thermal:redstone_servo',
-                D: 'engineersdecor:thick_steel_pole_head'
+                D: 'engineersdecor:thick_steel_pole_head',
             },
-            id: 'mekanismgenerators:generator/solar'
+            id: 'mekanismgenerators:generator/solar',
         },
         {
             output: 'mekanismgenerators:advanced_solar_generator',
@@ -361,9 +361,9 @@ onEvent('recipes', (event) => {
                 A: 'mekanismgenerators:solar_generator',
                 B: 'engineersdecor:thick_steel_pole',
                 C: 'thermal:redstone_servo',
-                D: 'engineersdecor:thick_steel_pole_head'
+                D: 'engineersdecor:thick_steel_pole_head',
             },
-            id: 'mekanismgenerators:generator/advanced_solar'
+            id: 'mekanismgenerators:generator/advanced_solar',
         },
         {
             output: Item.of('2x mekanismgenerators:fusion_reactor_port'),
@@ -372,9 +372,9 @@ onEvent('recipes', (event) => {
                 A: 'mekanismgenerators:fusion_reactor_frame',
                 B: 'mekanism:ultimate_universal_cable',
                 C: 'mekanism:ultimate_pressurized_tube',
-                D: '#forge:circuits/ultimate'
+                D: '#forge:circuits/ultimate',
             },
-            id: 'mekanismgenerators:reactor/port'
+            id: 'mekanismgenerators:reactor/port',
         },
         {
             output: 'mekanism:laser_amplifier',
@@ -383,18 +383,18 @@ onEvent('recipes', (event) => {
                 A: '#mekanism:alloys/infused',
                 B: 'mekanismgenerators:laser_focus_matrix',
                 C: 'mekanism:basic_induction_cell',
-                D: industrialforegoing.laser_lens.red
+                D: industrialforegoing.laser_lens.red,
             },
-            id: 'mekanism:laser_amplifier'
+            id: 'mekanism:laser_amplifier',
         },
         {
             output: 'mekanismgenerators:laser_focus_matrix',
             pattern: [' B ', 'BAB', ' B '],
             key: {
                 A: 'mekanismgenerators:reactor_glass',
-                B: industrialforegoing.laser_lens.red
+                B: industrialforegoing.laser_lens.red,
             },
-            id: 'mekanismgenerators:laser_focus_matrix'
+            id: 'mekanismgenerators:laser_focus_matrix',
         },
         {
             output: 'mekanism:rotary_condensentrator',
@@ -406,9 +406,9 @@ onEvent('recipes', (event) => {
                 D: '#industrialforegoing:machine_frame/pity',
                 E: 'mekanism:basic_fluid_tank',
                 F: 'pneumaticcraft:advanced_pcb',
-                G: 'thermal:rf_coil'
+                G: 'thermal:rf_coil',
             },
-            id: 'mekanism:rotary_condensentrator'
+            id: 'mekanism:rotary_condensentrator',
         },
         {
             output: 'mekanism:enrichment_chamber',
@@ -419,9 +419,9 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:basic_induction_cell',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:circuits/basic',
-                F: 'rftoolspower:cell1'
+                F: 'rftoolspower:cell1',
             },
-            id: 'mekanism:enrichment_chamber'
+            id: 'mekanism:enrichment_chamber',
         },
         {
             output: 'mekanism:crusher',
@@ -432,9 +432,9 @@ onEvent('recipes', (event) => {
                 C: '#sophisticatedbackpacks:upgrades/advanced_filter',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: 'pneumaticcraft:advanced_pcb',
-                F: 'thermal:rf_coil'
+                F: 'thermal:rf_coil',
             },
-            id: 'mekanism:crusher'
+            id: 'mekanism:crusher',
         },
         {
             output: 'mekanism:energized_smelter',
@@ -445,9 +445,9 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:coil_hv',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:circuits/basic',
-                F: 'rftoolspower:cell1'
+                F: 'rftoolspower:cell1',
             },
-            id: 'mekanism:energized_smelter'
+            id: 'mekanism:energized_smelter',
         },
         {
             output: 'mekanism:precision_sawmill',
@@ -458,9 +458,9 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:heavy_engineering',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:circuits/basic',
-                F: 'rftoolspower:cell1'
+                F: 'rftoolspower:cell1',
             },
-            id: 'mekanism:precision_sawmill'
+            id: 'mekanism:precision_sawmill',
         },
         {
             output: 'mekanism:nutritional_liquifier',
@@ -471,9 +471,9 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:advanced_chemical_tank',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:circuits/basic',
-                F: 'rftoolspower:cell1'
+                F: 'rftoolspower:cell1',
             },
-            id: 'mekanism:nutritional_liquifier'
+            id: 'mekanism:nutritional_liquifier',
         },
         {
             output: 'mekanism:electric_pump',
@@ -483,9 +483,9 @@ onEvent('recipes', (event) => {
                 B: 'create:mechanical_pump',
                 C: 'create:fluid_pipe',
                 D: 'supplementaries:cog_block',
-                E: 'immersiveengineering:turntable'
+                E: 'immersiveengineering:turntable',
             },
-            id: 'mekanism:electric_pump'
+            id: 'mekanism:electric_pump',
         },
         {
             output: 'mekanism:fluidic_plenisher',
@@ -495,9 +495,9 @@ onEvent('recipes', (event) => {
                 B: 'create:mechanical_pump',
                 C: 'create:fluid_pipe',
                 D: 'supplementaries:cog_block',
-                E: 'immersiveengineering:turntable'
+                E: 'immersiveengineering:turntable',
             },
-            id: 'mekanism:fluidic_plenisher'
+            id: 'mekanism:fluidic_plenisher',
         },
         {
             output: 'mekanism:purification_chamber',
@@ -508,9 +508,9 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:advanced_chemical_tank',
                 D: '#industrialforegoing:machine_frame/advanced',
                 E: '#forge:circuits/advanced',
-                F: 'rftoolspower:cell2'
+                F: 'rftoolspower:cell2',
             },
-            id: 'mekanism:purification_chamber'
+            id: 'mekanism:purification_chamber',
         },
         {
             output: 'mekanism:pressurized_reaction_chamber',
@@ -521,9 +521,9 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:basic_chemical_tank',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: 'pneumaticcraft:advanced_pcb',
-                F: 'thermal:rf_coil'
+                F: 'thermal:rf_coil',
             },
-            id: 'mekanism:pressurized_reaction_chamber'
+            id: 'mekanism:pressurized_reaction_chamber',
         },
         {
             output: 'mekanism:chemical_injection_chamber',
@@ -535,9 +535,9 @@ onEvent('recipes', (event) => {
                 D: '#industrialforegoing:machine_frame/advanced',
                 E: '#forge:circuits/advanced',
                 F: 'rftoolspower:cell2',
-                G: 'mekanism:advanced_chemical_tank'
+                G: 'mekanism:advanced_chemical_tank',
             },
-            id: 'mekanism:chemical_injection_chamber'
+            id: 'mekanism:chemical_injection_chamber',
         },
         {
             output: 'mekanism:chemical_crystallizer',
@@ -550,9 +550,9 @@ onEvent('recipes', (event) => {
                 E: '#industrialforegoing:machine_frame/advanced',
                 F: 'thermal:machine_chiller',
                 G: '#forge:circuits/advanced',
-                H: 'rftoolspower:cell2'
+                H: 'rftoolspower:cell2',
             },
-            id: 'mekanism:chemical_crystallizer'
+            id: 'mekanism:chemical_crystallizer',
         },
         {
             output: 'mekanism:isotopic_centrifuge',
@@ -563,9 +563,9 @@ onEvent('recipes', (event) => {
                 C: 'mekanismgenerators:reactor_glass',
                 D: 'resourcefulbees:elite_centrifuge_controller',
                 E: '#forge:circuits/elite',
-                F: 'rftoolspower:cell3'
+                F: 'rftoolspower:cell3',
             },
-            id: 'mekanism:isotopic_centrifuge'
+            id: 'mekanism:isotopic_centrifuge',
         },
         {
             output: 'mekanism:chemical_oxidizer',
@@ -577,9 +577,9 @@ onEvent('recipes', (event) => {
                 D: 'thermal:device_water_gen',
                 E: 'mekanism:chemical_injection_chamber',
                 F: '#forge:circuits/elite',
-                G: 'rftoolspower:cell3'
+                G: 'rftoolspower:cell3',
             },
-            id: 'mekanism:chemical_oxidizer'
+            id: 'mekanism:chemical_oxidizer',
         },
         {
             output: 'mekanism:chemical_infuser',
@@ -589,9 +589,9 @@ onEvent('recipes', (event) => {
                 B: 'mekanism:elite_chemical_tank',
                 C: '#industrialforegoing:machine_frame/advanced',
                 D: '#forge:circuits/elite',
-                E: 'rftoolspower:cell3'
+                E: 'rftoolspower:cell3',
             },
-            id: 'mekanism:chemical_infuser'
+            id: 'mekanism:chemical_infuser',
         },
         {
             output: 'mekanism:chemical_dissolution_chamber',
@@ -602,9 +602,9 @@ onEvent('recipes', (event) => {
                 C: 'industrialforegoing:dissolution_chamber',
                 D: '#industrialforegoing:machine_frame/advanced',
                 E: '#forge:circuits/elite',
-                F: 'rftoolspower:cell3'
+                F: 'rftoolspower:cell3',
             },
-            id: 'mekanism:chemical_dissolution_chamber'
+            id: 'mekanism:chemical_dissolution_chamber',
         },
         {
             output: 'mekanism:chemical_washer',
@@ -615,9 +615,9 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:elite_fluid_tank',
                 D: '#industrialforegoing:machine_frame/supreme',
                 E: '#forge:circuits/elite',
-                F: 'mekanism:elite_induction_provider'
+                F: 'mekanism:elite_induction_provider',
             },
-            id: 'mekanism:chemical_washer'
+            id: 'mekanism:chemical_washer',
         },
         {
             output: 'mekanism:antiprotonic_nucleosynthesizer',
@@ -627,9 +627,9 @@ onEvent('recipes', (event) => {
                 B: '#forge:circuits/ultimate',
                 C: 'mekanism:supercharged_coil',
                 D: 'mekanism:sps_casing',
-                E: 'mekanism:ultimate_induction_provider'
+                E: 'mekanism:ultimate_induction_provider',
             },
-            id: 'mekanism:antiprotonic_nucleosynthesizer'
+            id: 'mekanism:antiprotonic_nucleosynthesizer',
         },
         {
             output: 'mekanismgenerators:heat_generator',
@@ -637,9 +637,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersiveengineering:blastbrick_reinforced',
                 B: 'powah:thermoelectric_plate',
-                C: 'minecraft:blast_furnace'
+                C: 'minecraft:blast_furnace',
             },
-            id: 'mekanismgenerators:generator/heat'
+            id: 'mekanismgenerators:generator/heat',
         },
         {
             output: 'mekanismgenerators:gas_burning_generator',
@@ -650,9 +650,9 @@ onEvent('recipes', (event) => {
                 C: 'pneumaticcraft:turbine_rotor',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: 'immersiveengineering:coil_lv',
-                F: 'thermal:rf_coil'
+                F: 'thermal:rf_coil',
             },
-            id: 'mekanismgenerators:generator/gas_burning'
+            id: 'mekanismgenerators:generator/gas_burning',
         },
         {
             output: 'mekanismgenerators:bio_generator',
@@ -663,9 +663,9 @@ onEvent('recipes', (event) => {
                 C: 'create:propeller',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: 'immersiveengineering:coil_lv',
-                F: 'thermal:rf_coil'
+                F: 'thermal:rf_coil',
             },
-            id: 'mekanismgenerators:generator/bio'
+            id: 'mekanismgenerators:generator/bio',
         },
         {
             output: 'mekanism:free_runners',
@@ -676,9 +676,9 @@ onEvent('recipes', (event) => {
                 C: '#forge:gears/bronze',
                 D: 'immersiveengineering:toolupgrade_drill_lube',
                 E: 'immersiveengineering:component_steel',
-                F: 'immersiveengineering:armor_faraday_feet'
+                F: 'immersiveengineering:armor_faraday_feet',
             },
-            id: 'mekanism:free_runners'
+            id: 'mekanism:free_runners',
         },
         {
             output: 'mekanism:electric_bow',
@@ -686,9 +686,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'powah:dielectric_rod',
                 B: 'powah:capacitor_hardened',
-                C: '#forge:wires/aluminum'
+                C: '#forge:wires/aluminum',
             },
-            id: 'mekanism:electric_bow'
+            id: 'mekanism:electric_bow',
         },
         {
             output: 'mekanism:configurator',
@@ -696,9 +696,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:rods/lapis',
                 B: 'thermal:rf_coil',
-                C: '#forge:rods/steel'
+                C: '#forge:rods/steel',
             },
-            id: 'mekanism:configurator'
+            id: 'mekanism:configurator',
         },
         {
             output: 'mekanism:chargepad',
@@ -706,9 +706,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:polished_blackstone_pressure_plate',
                 B: '#forge:ingots/steel',
-                C: 'thermal:rf_coil'
+                C: 'thermal:rf_coil',
             },
-            id: 'mekanism:chargepad'
+            id: 'mekanism:chargepad',
         },
         {
             output: 'mekanism:network_reader',
@@ -716,9 +716,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:alloys/advanced',
                 B: '#forge:ingots/steel',
-                C: 'thermal:rf_coil'
+                C: 'thermal:rf_coil',
             },
-            id: 'mekanism:network_reader'
+            id: 'mekanism:network_reader',
         },
         {
             output: 'mekanism:portable_teleporter',
@@ -727,9 +727,9 @@ onEvent('recipes', (event) => {
                 A: 'thermal:rf_coil',
                 B: 'mekanism:teleportation_core',
                 C: '#forge:plates/steel',
-                D: 'rftoolsbase:tablet'
+                D: 'rftoolsbase:tablet',
             },
-            id: 'mekanism:portable_teleporter'
+            id: 'mekanism:portable_teleporter',
         },
         {
             output: 'mekanism:formulaic_assemblicator',
@@ -739,18 +739,18 @@ onEvent('recipes', (event) => {
                 B: '#forge:gears/brass',
                 C: 'create:mechanical_crafter',
                 D: '#forge:plates/lead',
-                E: 'thermal:rf_coil'
+                E: 'thermal:rf_coil',
             },
-            id: 'mekanism:formulaic_assemblicator'
+            id: 'mekanism:formulaic_assemblicator',
         },
         {
             output: Item.of('8x mekanism:crafting_formula'),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'minecraft:paper',
-                B: 'create:electron_tube'
+                B: 'create:electron_tube',
             },
-            id: 'mekanism:crafting_formula'
+            id: 'mekanism:crafting_formula',
         },
         {
             output: `mekanism:basic_bin`,
@@ -758,9 +758,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:lime_terracotta',
                 B: 'minecraft:smooth_stone',
-                C: '#forge:ingots/copper'
+                C: '#forge:ingots/copper',
             },
-            id: `mekanism:bin/basic`
+            id: `mekanism:bin/basic`,
         },
         {
             output: `mekanism:advanced_bin`,
@@ -768,9 +768,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:red_terracotta',
                 B: 'minecraft:smooth_stone',
-                C: '#forge:ingots/bronze'
+                C: '#forge:ingots/bronze',
             },
-            id: `mekanism:bin/advanced`
+            id: `mekanism:bin/advanced`,
         },
         {
             output: `mekanism:elite_bin`,
@@ -778,9 +778,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:light_blue_terracotta',
                 B: 'minecraft:smooth_stone',
-                C: '#forge:ingots/brass'
+                C: '#forge:ingots/brass',
             },
-            id: `mekanism:bin/elite`
+            id: `mekanism:bin/elite`,
         },
         {
             output: `mekanism:ultimate_bin`,
@@ -788,9 +788,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:blue_terracotta',
                 B: 'minecraft:smooth_stone',
-                C: '#forge:ingots/hepatizon'
+                C: '#forge:ingots/hepatizon',
             },
-            id: `mekanism:bin/ultimate`
+            id: `mekanism:bin/ultimate`,
         },
         {
             output: `mekanism:logistical_sorter`,
@@ -800,18 +800,18 @@ onEvent('recipes', (event) => {
                 B: 'prettypipes:medium_extraction_module',
                 C: 'prettypipes:medium_filter_module',
                 D: 'prettypipes:round_robin_sorting_modifier',
-                E: '#forge:plates/iron_osmium'
+                E: '#forge:plates/iron_osmium',
             },
-            id: `mekanism:logistical_sorter`
+            id: `mekanism:logistical_sorter`,
         },
         {
             output: Item.of(`8x mekanism:basic_logistical_transporter`),
             pattern: ['ABA'],
             key: {
                 A: '#forge:ingots/steel',
-                B: 'pneumaticcraft:logistics_core'
+                B: 'pneumaticcraft:logistics_core',
             },
-            id: `mekanism:transmitter/logistical_transporter/basic`
+            id: `mekanism:transmitter/logistical_transporter/basic`,
         },
         {
             output: `mekanism:painting_machine`,
@@ -822,9 +822,9 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:dye_base',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: '#forge:gears/osmium',
-                F: 'thermal:rf_coil'
+                F: 'thermal:rf_coil',
             },
-            id: `mekanism:painting_machine`
+            id: `mekanism:painting_machine`,
         },
         {
             output: `mekanism:pigment_mixer`,
@@ -835,9 +835,9 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:hdpe_rod',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: '#forge:gears/osmium',
-                F: 'thermal:rf_coil'
+                F: 'thermal:rf_coil',
             },
-            id: `mekanism:pigment_mixer`
+            id: `mekanism:pigment_mixer`,
         },
         {
             output: `mekanism:pigment_extractor`,
@@ -848,9 +848,9 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:basic_fluid_tank',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: '#forge:gears/osmium',
-                F: 'thermal:rf_coil'
+                F: 'thermal:rf_coil',
             },
-            id: `mekanism:pigment_extractor`
+            id: `mekanism:pigment_extractor`,
         },
         {
             output: `mekanism:security_desk`,
@@ -860,9 +860,9 @@ onEvent('recipes', (event) => {
                 B: 'refinedstorage:security_card',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: '#forge:circuits/advanced',
-                E: 'rftoolspower:cell1'
+                E: 'rftoolspower:cell1',
             },
-            id: `mekanism:security_desk`
+            id: `mekanism:security_desk`,
         },
         {
             output: `mekanism:modification_station`,
@@ -872,10 +872,10 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:assembly_io_unit_import',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: '#forge:circuits/advanced',
-                E: 'rftoolspower:cell1'
+                E: 'rftoolspower:cell1',
             },
-            id: `mekanism:modification_station`
-        }
+            id: `mekanism:modification_station`,
+        },
     ];
 
     recipes.forEach((recipe) => {

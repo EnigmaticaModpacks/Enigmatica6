@@ -2,7 +2,7 @@ onEvent('item.tags', (event) => {
     sharedDies.forEach((die) => {
         event.add(`thermal:crafting/dies`, [`immersiveengineering:mold_${die.immersiveEngineeringName}`]);
         event.add(`thermal:crafting/dies/${die.thermalName}`, [
-            `immersiveengineering:mold_${die.immersiveEngineeringName}`
+            `immersiveengineering:mold_${die.immersiveEngineeringName}`,
         ]);
     });
 

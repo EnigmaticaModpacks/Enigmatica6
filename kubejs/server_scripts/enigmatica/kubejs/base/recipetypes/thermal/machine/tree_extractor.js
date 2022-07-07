@@ -12,10 +12,10 @@ onEvent('recipes', (event) => {
                             leaves: tree.leaf,
                             result: {
                                 fluid: tree.sap,
-                                amount: tree.rate.living
-                            }
+                                amount: tree.rate.living,
+                            },
                         }),
-                        id_prefix
+                        id_prefix,
                     );
                 }
             }

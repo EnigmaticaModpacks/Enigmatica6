@@ -36,8 +36,8 @@ onEvent('recipes', (event) => {
             thermalResistance: 100,
             transformCold: { block: 'immersiveengineering:concrete' },
             heatCapacity: 10000,
-            id: `${id_prefix}concrete`
-        }
+            id: `${id_prefix}concrete`,
+        },
     ];
 
     recipes.forEach((recipe) => {

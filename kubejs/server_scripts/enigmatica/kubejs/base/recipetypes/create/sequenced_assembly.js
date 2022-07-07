@@ -29,16 +29,16 @@ onEvent('recipes', (event) => {
                 {
                     type: 'deploying',
                     input: ['create:incomplete_cogwheel', '#minecraft:wooden_buttons'],
-                    output: 'create:incomplete_cogwheel'
+                    output: 'create:incomplete_cogwheel',
                 },
                 {
                     type: 'cutting',
                     input: 'create:incomplete_cogwheel',
                     output: 'create:incomplete_cogwheel',
-                    processingTime: 50
-                }
+                    processingTime: 50,
+                },
             ],
-            id: 'create:sequenced_assembly/cogwheel'
+            id: 'create:sequenced_assembly/cogwheel',
         },
         {
             input: 'create:andesite_alloy',
@@ -49,21 +49,21 @@ onEvent('recipes', (event) => {
                 {
                     type: 'deploying',
                     input: ['create:incomplete_large_cogwheel', '#minecraft:planks'],
-                    output: 'create:incomplete_large_cogwheel'
+                    output: 'create:incomplete_large_cogwheel',
                 },
                 {
                     type: 'deploying',
                     input: ['create:incomplete_large_cogwheel', '#minecraft:wooden_buttons'],
-                    output: 'create:incomplete_large_cogwheel'
+                    output: 'create:incomplete_large_cogwheel',
                 },
                 {
                     type: 'cutting',
                     input: 'create:incomplete_large_cogwheel',
                     output: 'create:incomplete_large_cogwheel',
-                    processingTime: 50
-                }
+                    processingTime: 50,
+                },
             ],
-            id: 'create:sequenced_assembly/large_cogwheel'
+            id: 'create:sequenced_assembly/large_cogwheel',
         },
         {
             input: '#forge:plates/gold',
@@ -74,21 +74,21 @@ onEvent('recipes', (event) => {
                 {
                     type: 'deploying',
                     input: ['create:incomplete_precision_mechanism', 'create:cogwheel'],
-                    output: 'create:incomplete_precision_mechanism'
+                    output: 'create:incomplete_precision_mechanism',
                 },
                 {
                     type: 'deploying',
                     input: ['create:incomplete_precision_mechanism', 'create:large_cogwheel'],
-                    output: 'create:incomplete_precision_mechanism'
+                    output: 'create:incomplete_precision_mechanism',
                 },
                 {
                     type: 'deploying',
                     input: ['create:incomplete_precision_mechanism', '#forge:nuggets/iron'],
-                    output: 'create:incomplete_precision_mechanism'
-                }
+                    output: 'create:incomplete_precision_mechanism',
+                },
             ],
-            id: 'create:precision_mechanism'
-        }
+            id: 'create:precision_mechanism',
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -99,7 +99,7 @@ onEvent('recipes', (event) => {
                 sequence.push(event.recipes.create.deploying(step.output, step.input));
             } else if (step.type == 'cutting') {
                 sequence.push(
-                    event.recipes.create.cutting(step.output, step.input).processingTime(step.processingTime)
+                    event.recipes.create.cutting(step.output, step.input).processingTime(step.processingTime),
                 );
             } else if (step.type == 'filling') {
                 sequence.push(event.recipes.create.filling(step.output, step.input));

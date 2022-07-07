@@ -11,7 +11,7 @@ onEvent('item.tags', (event) => {
         'mekanismtools:osmium_shield',
         'mekanismtools:lapis_lazuli_shield',
         'mekanismtools:bronze_shield',
-        'immersiveengineering:shield'
+        'immersiveengineering:shield',
     ];
 
     var tags = ['forge:armor', 'forge:armor/shields'];

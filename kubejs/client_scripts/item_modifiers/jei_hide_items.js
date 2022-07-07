@@ -20,7 +20,7 @@ onEvent('jei.hide.items', (event) => {
             'eidolon:ingot_' + material,
             'eidolon:nugget_' + material,
             'eidolon:block_' + material,
-            'thermal:' + material + '_block'
+            'thermal:' + material + '_block',
         );
     });
 

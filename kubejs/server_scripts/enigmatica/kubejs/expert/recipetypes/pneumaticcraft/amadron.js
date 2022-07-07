@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
             output: { type: 'ITEM', id: 'kubejs:medium_machinery_schematics', amount: 1 },
             level: 0,
             maxStock: 5,
-            id: `${id_prefix}medium_machinery_schematics`
+            id: `${id_prefix}medium_machinery_schematics`,
         },
         {
             static: true,
@@ -21,8 +21,8 @@ onEvent('recipes', (event) => {
             output: { type: 'ITEM', id: 'kubejs:heavy_machinery_schematics', amount: 1 },
             level: 0,
             maxStock: 5,
-            id: `${id_prefix}heavy_machinery_schematics`
-        }
+            id: `${id_prefix}heavy_machinery_schematics`,
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -21,8 +21,8 @@ onEvent('recipes', (event) => {
             fluid: { name: 'tconstruct:blazing_blood', amount: 5 },
             result: Item.of('gunswithoutroses:blaze_bullet').toResultJson(),
             cooling_time: 2,
-            id: 'gunswithoutroses:blaze_bullet'
-        }
+            id: 'gunswithoutroses:blaze_bullet',
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
                 cast_consumed: recipe.cast_consumed,
                 fluid: recipe.fluid,
                 result: recipe.result,
-                cooling_time: recipe.cooling_time
+                cooling_time: recipe.cooling_time,
             })
             .id(recipe.id);
     });

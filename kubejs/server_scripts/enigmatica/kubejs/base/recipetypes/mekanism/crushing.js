@@ -4,83 +4,83 @@ onEvent('recipes', (event) => {
         {
             input: 'byg:pink_sandstone',
             output: Item.of('byg:pink_sand', 2),
-            id: `${id_prefix}pink_sand`
+            id: `${id_prefix}pink_sand`,
         },
         {
             input: 'byg:purple_sandstone',
             output: Item.of('byg:purple_sand', 2),
-            id: `${id_prefix}purple_sand`
+            id: `${id_prefix}purple_sand`,
         },
         {
             input: 'byg:blue_sandstone',
             output: Item.of('byg:blue_sand', 2),
-            id: `${id_prefix}blue_sand`
+            id: `${id_prefix}blue_sand`,
         },
         {
             input: 'byg:white_sandstone',
             output: Item.of('byg:white_sand', 2),
-            id: `${id_prefix}white_sand`
+            id: `${id_prefix}white_sand`,
         },
         {
             input: 'byg:black_sandstone',
             output: Item.of('byg:black_sand', 2),
-            id: `${id_prefix}black_sand`
+            id: `${id_prefix}black_sand`,
         },
         {
             input: 'atmospheric:arid_sandstone',
             output: item.of('atmospheric:arid_sand', 2),
-            id: `${id_prefix}arid_sand`
+            id: `${id_prefix}arid_sand`,
         },
         {
             input: 'atmospheric:red_arid_sandstone',
             output: item.of('atmospheric:red_arid_sand', 2),
-            id: `${id_prefix}red_arid_sand`
+            id: `${id_prefix}red_arid_sand`,
         },
         {
             input: '#forge:stone',
             output: 'minecraft:cobblestone',
-            id: `${id_prefix}cobblestone`
+            id: `${id_prefix}cobblestone`,
         },
         {
             input: 'buildinggadgets:construction_block_dense',
             output: Item.of('buildinggadgets:construction_paste', 3),
-            id: `${id_prefix}construction_paste`
+            id: `${id_prefix}construction_paste`,
         },
         {
             input: Item.of('create:limesand', 3),
             output: Item.of('emendatusenigmatica:silicon_gem'),
-            id: `${id_prefix}silicon_gem`
+            id: `${id_prefix}silicon_gem`,
         },
         {
             input: '#forge:end_stones',
             output: Item.of('occultism:crushed_end_stone', 4),
-            id: `${id_prefix}crushed_end_stone`
+            id: `${id_prefix}crushed_end_stone`,
         },
         {
             input: 'byg:raw_quartz_block',
             output: Item.of('byg:quartzite_sand', 2),
-            id: `${id_prefix}quartzite_sand`
+            id: `${id_prefix}quartzite_sand`,
         },
         {
             input: '#forge:ores/netherite',
             output: Item.of('mekanism:dirty_netherite_scrap', 3),
-            id: 'mekanism:processing/netherite/ancient_debris_to_dirty_scrap'
+            id: 'mekanism:processing/netherite/ancient_debris_to_dirty_scrap',
         },
         {
             input: '#forge:coal_petcoke',
             output: 'immersivepetroleum:petcoke_dust',
-            id: `${id_prefix}petcoke_dust`
+            id: `${id_prefix}petcoke_dust`,
         },
         {
             input: '#forge:storage_blocks/coal_petcoke',
             output: Item.of('9x immersivepetroleum:petcoke_dust'),
-            id: `${id_prefix}petcoke_dust_from_block`
+            id: `${id_prefix}petcoke_dust_from_block`,
         },
         {
             input: '#forge:storage_blocks/coal_coke',
             output: Item.of('9x emendatusenigmatica:coke_dust'),
-            id: `${id_prefix}coke_dust_from_block`
-        }
+            id: `${id_prefix}coke_dust_from_block`,
+        },
     ];
 
     const biofuels = [
@@ -142,8 +142,8 @@ onEvent('recipes', (event) => {
                 'simplefarming:raspberries',
                 'simplefarming:blueberries',
                 'simplefarming:blackberries',
-                'byg:holly_berries'
-            ]
+                'byg:holly_berries',
+            ],
         },
         {
             count: 4,
@@ -157,8 +157,8 @@ onEvent('recipes', (event) => {
                 'byg:whaling_vine',
                 'byg:embur_gel_vines',
                 'byg:skyris_vine',
-                'byg:lament_vine'
-            ]
+                'byg:lament_vine',
+            ],
         },
         {
             count: 5,
@@ -199,13 +199,13 @@ onEvent('recipes', (event) => {
                 'simplefarming:cassava',
                 'simplefarming:broccoli',
                 'simplefarming:honeydew',
-                'simplefarming:cantaloupe'
-            ]
+                'simplefarming:cantaloupe',
+            ],
         },
         {
             count: 7,
-            inputs: ['#forge:mushroom_caps']
-        }
+            inputs: ['#forge:mushroom_caps'],
+        },
     ];
 
     biofuels.forEach((biofuel) => {
@@ -213,7 +213,7 @@ onEvent('recipes', (event) => {
             recipes.push({
                 input: input,
                 output: Item.of('mekanism:bio_fuel', biofuel.count),
-                id: `${id_prefix}bio_fuel_from_${input.split(':')[0].replace('#', '')}_${input.split(':')[1]}`
+                id: `${id_prefix}bio_fuel_from_${input.split(':')[0].replace('#', '')}_${input.split(':')[1]}`,
             });
         });
     });

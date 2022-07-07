@@ -17,51 +17,51 @@ onEvent('recipes', (event) => {
             output: '8x astralsorcery:infused_wood_stairs',
             pattern: ['A  ', 'AA ', 'AAA'],
             key: {
-                A: 'astralsorcery:infused_wood_planks'
+                A: 'astralsorcery:infused_wood_planks',
             },
-            id: `${id_prefix}infused_wood_stairs`
+            id: `${id_prefix}infused_wood_stairs`,
         },
         {
             output: '2x astralsorcery:infused_wood_arch',
             pattern: ['AA '],
             key: {
-                A: 'astralsorcery:infused_wood_planks'
+                A: 'astralsorcery:infused_wood_planks',
             },
-            id: `${id_prefix}infused_wood_arch`
+            id: `${id_prefix}infused_wood_arch`,
         },
         {
             output: '6x astralsorcery:infused_wood_slab',
             pattern: ['AAA'],
             key: {
-                A: 'astralsorcery:infused_wood_planks'
+                A: 'astralsorcery:infused_wood_planks',
             },
-            id: `${id_prefix}infused_wood_slab`
+            id: `${id_prefix}infused_wood_slab`,
         },
         {
             output: '2x astralsorcery:infused_wood_column',
             pattern: ['A', 'A'],
             key: {
-                A: 'astralsorcery:infused_wood_planks'
+                A: 'astralsorcery:infused_wood_planks',
             },
-            id: `${id_prefix}infused_wood_column`
+            id: `${id_prefix}infused_wood_column`,
         },
         {
             output: '4x astralsorcery:infused_wood_engraved',
             pattern: [' A ', 'A A', ' A '],
             key: {
-                A: 'astralsorcery:infused_wood_planks'
+                A: 'astralsorcery:infused_wood_planks',
             },
-            id: `${id_prefix}infused_wood_engraved`
+            id: `${id_prefix}infused_wood_engraved`,
         },
         {
             output: '4x astralsorcery:infused_wood_enriched',
             pattern: [' A ', 'ABA', ' A '],
             key: {
                 A: 'astralsorcery:infused_wood_planks',
-                B: '#forge:gems/aquamarine'
+                B: '#forge:gems/aquamarine',
             },
-            id: `${id_prefix}infused_wood_enriched`
-        }
+            id: `${id_prefix}infused_wood_enriched`,
+        },
     ];
 
     recipes.forEach((recipe) => {

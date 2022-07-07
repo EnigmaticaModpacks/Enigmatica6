@@ -28,10 +28,10 @@ onEvent('recipes', (event) => {
                     'astralsorcery:rock_crystal',
                     'astralsorcery:celestial_crystal',
                     'astralsorcery:attuned_rock_crystal',
-                    'astralsorcery:attuned_celestial_crystal'
-                ]
+                    'astralsorcery:attuned_celestial_crystal',
+                ],
             },
-            id: 'astralsorcery:altar/linking_tool'
+            id: 'astralsorcery:altar/linking_tool',
         },
         {
             output: 'astralsorcery:wand',
@@ -40,9 +40,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:rods/silver',
                 B: 'betterendforge:leather_stripe',
                 C: '#forge:gems/aquamarine',
-                D: 'eidolon:ender_calx'
+                D: 'eidolon:ender_calx',
             },
-            id: 'astralsorcery:altar/wand'
+            id: 'astralsorcery:altar/wand',
         },
         {
             output: 'astralsorcery:grapple_wand',
@@ -51,10 +51,10 @@ onEvent('recipes', (event) => {
                 A: '#forge:rods/silver',
                 B: 'betterendforge:leather_stripe',
                 C: '#forge:gems/aquamarine',
-                D: 'alexsmobs:guster_eye'
+                D: 'alexsmobs:guster_eye',
             },
-            id: 'astralsorcery:altar/grapple_wand'
-        }
+            id: 'astralsorcery:altar/grapple_wand',
+        },
     ];
 
     recipes.forEach((recipe) => {

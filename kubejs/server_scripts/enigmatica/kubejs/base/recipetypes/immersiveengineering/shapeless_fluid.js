@@ -7,11 +7,11 @@ onEvent('recipes', (event) => {
                 '#forge:dusts/wood',
                 '#forge:dusts/wood',
                 '#forge:dusts/wood',
-                { fluid: 'minecraft:water' }
+                { fluid: 'minecraft:water' },
             ],
             output: Item.of('minecraft:paper', 6),
-            id: 'immersiveengineering:crafting/paper_from_sawdust'
-        }
+            id: 'immersiveengineering:crafting/paper_from_sawdust',
+        },
     ];
     recipes.forEach((recipe) => {
         let ingredients = [];
@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
                 ingredients.push({
                     tag: input.fluid,
                     amount: 1000,
-                    type: 'immersiveengineering:fluid'
+                    type: 'immersiveengineering:fluid',
                 });
             } else {
                 ingredients.push(Ingredient.of(input).toJson());
@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
         const re = event.custom({
             type: 'immersiveengineering:shapeless_fluid',
             ingredients: ingredients,
-            result: recipe.output
+            result: recipe.output,
         });
         if (recipe.id) {
             re.id(recipe.id);

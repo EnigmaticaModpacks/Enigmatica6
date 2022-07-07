@@ -41,7 +41,7 @@ onEvent('jei.hide.fluids', (event) => {
         'emendatusenigmatica:molten_lumium',
         'emendatusenigmatica:molten_signalum',
         'emendatusenigmatica:molten_sapphire',
-        'emendatusenigmatica:molten_ruby'
+        'emendatusenigmatica:molten_ruby',
     ].forEach((disabledFluid) => {
         if (!Fluid.of(disabledFluid).isEmpty()) {
             event.hide(disabledFluid);

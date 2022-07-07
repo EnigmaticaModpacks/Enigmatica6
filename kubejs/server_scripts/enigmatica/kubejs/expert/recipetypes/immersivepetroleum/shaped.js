@@ -24,9 +24,9 @@ onEvent('recipes', (event) => {
                 B: '#forge:dusts/blaze',
                 C: 'thermal:redstone_servo',
                 D: 'immersiveengineering:fluid_placer',
-                E: 'immersiveengineering:fluid_pipe'
+                E: 'immersiveengineering:fluid_pipe',
             },
-            id: 'immersivepetroleum:flarestack'
+            id: 'immersivepetroleum:flarestack',
         },
         {
             output: 'immersivepetroleum:gas_generator',
@@ -37,10 +37,10 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:generator',
                 D: 'immersiveengineering:radiator',
                 E: 'create:propeller',
-                F: '#forge:rods/aluminum'
+                F: '#forge:rods/aluminum',
             },
-            id: 'immersivepetroleum:gas_generator'
-        }
+            id: 'immersivepetroleum:gas_generator',
+        },
     ];
 
     recipes.forEach((recipe) => {

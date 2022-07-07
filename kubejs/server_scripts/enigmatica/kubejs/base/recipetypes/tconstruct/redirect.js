@@ -1,29 +1,29 @@
 onEvent('server.datapack.low_priority', (event) => {
     var data = [
         {
-            identifier: 'livingwood'
+            identifier: 'livingwood',
         },
         {
-            identifier: 'manasteel'
+            identifier: 'manasteel',
         },
         {
-            identifier: 'elementium'
+            identifier: 'elementium',
         },
         {
-            identifier: 'terrasteel'
+            identifier: 'terrasteel',
         },
         {
-            identifier: 'alfsteel'
-        }
+            identifier: 'alfsteel',
+        },
     ];
 
     data.forEach((recipeType) => {
         event.addJson(`enigmatica:materials/definition/${recipeType.identifier}.json`, {
             redirect: [
                 {
-                    id: `materialis:${recipeType.identifier}`
-                }
-            ]
+                    id: `materialis:${recipeType.identifier}`,
+                },
+            ],
         });
     });
 });

@@ -7,8 +7,8 @@ onEvent('recipes', (event) => {
         {
             replaceTarget: { id: 'thermal:machine_bottler' },
             toReplace: 'thermal:machine_frame',
-            replaceWith: 'thermal:fluid_cell_frame'
-        }
+            replaceWith: 'thermal:fluid_cell_frame',
+        },
     ];
 
     recipes.forEach((recipe) => {

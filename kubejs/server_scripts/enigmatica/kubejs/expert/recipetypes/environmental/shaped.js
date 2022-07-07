@@ -22,10 +22,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'environmental:mud_bricks',
                 B: 'minecraft:blast_furnace',
-                C: 'minecraft:smooth_stone'
+                C: 'minecraft:smooth_stone',
             },
-            id: 'environmental:crafting/kiln'
-        }
+            id: 'environmental:crafting/kiln',
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -7,10 +7,10 @@ onEvent('recipes', (event) => {
                 A: 'alexsmobs:hemolymph_sac',
                 B: 'alexsmobs:warped_muscle',
                 C: 'alexsmobs:blood_sprayer',
-                D: 'alexsmobs:mosquito_proboscis'
+                D: 'alexsmobs:mosquito_proboscis',
             },
-            id: 'alexsmobs:hemolymph_blaster'
-        }
+            id: 'alexsmobs:hemolymph_blaster',
+        },
     ];
 
     recipes.forEach((recipe) => {

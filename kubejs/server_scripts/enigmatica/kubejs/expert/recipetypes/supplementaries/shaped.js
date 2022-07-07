@@ -22,10 +22,10 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'B B', 'AAA'],
             key: {
                 A: '#forge:treated_wood_slab',
-                B: '#forge:fabric_hemp'
+                B: '#forge:fabric_hemp',
             },
-            id: 'supplementaries:bellows'
-        }
+            id: 'supplementaries:bellows',
+        },
     ];
 
     recipes.forEach((recipe) => {

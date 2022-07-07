@@ -36,7 +36,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `When flowing lava falls on flowing water, it creates stone. This generator floods a stair block to protect the water source.`
+                        `When flowing lava falls on flowing water, it creates stone. This generator floods a stair block to protect the water source.`,
                     )
                     .independent(30);
 
@@ -76,7 +76,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `We can automate this with a block breaker of some sort - let's use a Modular Router with a breaker module. We'll clearly need silk touch on the breaker module.`
+                        `We can automate this with a block breaker of some sort - let's use a Modular Router with a breaker module. We'll clearly need silk touch on the breaker module.`,
                     )
                     .independent(30);
 
@@ -88,7 +88,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         [2, 2, 3],
                         Block.id('modularrouters:item_router').with('facing', 'east').blockState,
-                        false
+                        false,
                     );
 
                 scene.idle(50);
@@ -111,7 +111,7 @@ onEvent('ponder.registry', (event) => {
                     scene.world().setBlock([3, 2, 3], stone, false);
                     scene.idle(10);
                 }
-            }
+            },
         )
         .scene(
             'targeted_stonegen',
@@ -127,7 +127,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `Maybe you want something other than vanilla stone - let's say Scoria. This generator won't do.`
+                        `Maybe you want something other than vanilla stone - let's say Scoria. This generator won't do.`,
                     )
                     .independent(60);
 
@@ -150,7 +150,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(90)
                     .colored(PonderPalette.GREEN)
                     .text(
-                        `If we place a specific type of Stone under the stone generation point, the generator will now make that type of stone!`
+                        `If we place a specific type of Stone under the stone generation point, the generator will now make that type of stone!`,
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 1.5, 3.5]);
@@ -171,7 +171,7 @@ onEvent('ponder.registry', (event) => {
                     scene.world().setBlock([3, 2, 3], scoria, false);
                     scene.idle(10);
                 }
-            }
+            },
         )
         .scene(
             'random_stonegen',
@@ -208,7 +208,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `If you place a block of Diamond under the stone generation point the generator will now make random stone!`
+                        `If you place a block of Diamond under the stone generation point the generator will now make random stone!`,
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 1.5, 3.5]);
@@ -224,7 +224,7 @@ onEvent('ponder.registry', (event) => {
                     'minecraft:andesite',
                     'byg:pink_sandstone',
                     'astralsorcery:marble_raw',
-                    'create:limestone'
+                    'create:limestone',
                 ];
 
                 randStone.forEach((thisStone) => {
@@ -236,6 +236,6 @@ onEvent('ponder.registry', (event) => {
                     scene.world().setBlock([3, 2, 3], util.getDefaultState(thisStone), false);
                     scene.idle(10);
                 });
-            }
+            },
         );
 });

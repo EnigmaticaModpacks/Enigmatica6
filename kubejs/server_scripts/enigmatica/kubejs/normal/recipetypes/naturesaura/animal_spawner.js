@@ -9,43 +9,43 @@ onEvent('recipes', (event) => {
             entity: 'thermal:blitz',
             aura: 150000,
             time: 120,
-            id: `${id_prefix}blitz`
+            id: `${id_prefix}blitz`,
         },
         {
             inputs: ['naturesaura:birth_spirit', 'thermal:blizz_rod', 'thermal:blizz_powder'],
             entity: 'thermal:blizz',
             aura: 150000,
             time: 120,
-            id: `${id_prefix}blizz`
+            id: `${id_prefix}blizz`,
         },
         {
             inputs: ['naturesaura:birth_spirit', 'thermal:basalz_rod', 'thermal:basalz_powder'],
             entity: 'thermal:basalz',
             aura: 150000,
             time: 120,
-            id: `${id_prefix}basalz`
+            id: `${id_prefix}basalz`,
         },
         {
             inputs: ['naturesaura:birth_spirit', 'ars_nouveau:wilden_spike', 'minecraft:snow_block'],
             entity: 'ars_nouveau:wilden_guardian',
             aura: 250000,
             time: 120,
-            id: `${id_prefix}wilden_guardian`
+            id: `${id_prefix}wilden_guardian`,
         },
         {
             inputs: ['naturesaura:birth_spirit', 'ars_nouveau:wilden_horn', 'minecraft:bone'],
             entity: 'ars_nouveau:wilden_hunter',
             aura: 150000,
             time: 120,
-            id: `${id_prefix}wilden_hunter`
+            id: `${id_prefix}wilden_hunter`,
         },
         {
             inputs: ['naturesaura:birth_spirit', 'ars_nouveau:wilden_wing', 'astralsorcery:nocturnal_powder'],
             entity: 'ars_nouveau:wilden_stalker',
             aura: 150000,
             time: 120,
-            id: `${id_prefix}wilden_stalker`
-        }
+            id: `${id_prefix}wilden_stalker`,
+        },
     ];
 
     recipes.forEach((recipe) => {

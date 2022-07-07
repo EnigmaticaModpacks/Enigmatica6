@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
                 { item: '#botania:runes/fire', pos: { x: 1, z: -3 } },
                 { item: '#botania:runes/fire', pos: { x: -1, z: 3 } },
                 { item: '#botania:runes/fire', pos: { x: 3, z: -1 } },
-                { item: '#botania:runes/fire', pos: { x: -3, z: 1 } }
+                { item: '#botania:runes/fire', pos: { x: -3, z: 1 } },
             ],
             consume_runes: false,
             mana: 4000000,
@@ -29,11 +29,11 @@ onEvent('recipes', (event) => {
                 Item.of('botania:ender_dagger', '{Damage:0}').weakNBT(),
                 'bloodmagic:looting_anointment_l',
                 'botania:flask',
-                'naturesaura:token_rage'
+                'naturesaura:token_rage',
             ],
             outputs: ['mythicbotany:kvasir_blood'],
             special_input: 'mythicbotany:wandering_trader',
-            id: 'mythicbotany:mythicbotany_rune_rituals/kvasir_blood'
+            id: 'mythicbotany:mythicbotany_rune_rituals/kvasir_blood',
         },
         {
             group: 'rune_rituals',
@@ -111,14 +111,14 @@ onEvent('recipes', (event) => {
                 { pos: { x: 1, z: -4 }, item: 'botania:livingwood' },
                 { pos: { x: 2, z: -4 }, item: 'naturesaura:generator_limit_remover' },
                 { pos: { x: 3, z: -4 }, item: 'quark:root_item' },
-                { pos: { x: 4, z: -4 }, item: 'ars_nouveau:ritual_awakening' }
+                { pos: { x: 4, z: -4 }, item: 'ars_nouveau:ritual_awakening' },
             ],
             consume_runes: true,
             mana: 2000000,
             ticks: 200,
             inputs: ['naturesaura:ancient_sapling'],
             outputs: ['masterfulmachinery:enigmatic_tree_of_life_controller'],
-            id: `${id_prefix}enigmatic_tree_of_life_controller`
+            id: `${id_prefix}enigmatic_tree_of_life_controller`,
         },
         {
             group: 'rune_rituals',
@@ -196,15 +196,15 @@ onEvent('recipes', (event) => {
                 { pos: { x: -1, z: -4 }, item: '#forge:pellets/antimatter' },
                 { pos: { x: 0, z: -4 }, item: '#botania:runes/helheim' },
                 { pos: { x: 1, z: -4 }, item: '#forge:pellets/antimatter' },
-                { pos: { x: 4, z: -4 }, item: '#forge:pellets/antimatter' }
+                { pos: { x: 4, z: -4 }, item: '#forge:pellets/antimatter' },
             ],
             consume_runes: true,
             mana: 2000000,
             ticks: 1200,
             inputs: ['botania:sextant', 'botania:astrolabe', 'create:wand_of_symmetry', 'astralsorcery:exchange_wand'],
             outputs: ['kubejs:worldshaper_cog'],
-            id: `${id_prefix}worldshaper_cog`
-        }
+            id: `${id_prefix}worldshaper_cog`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -215,7 +215,7 @@ onEvent('recipes', (event) => {
                 rune: Item.of(rune.item).toJson(),
                 x: rune.pos.x,
                 z: rune.pos.z,
-                consume: recipe.consume_runes
+                consume: recipe.consume_runes,
             });
         });
 

@@ -80,7 +80,7 @@ onEvent('ponder.registry', (event) => {
             'resourcefulbees:blitz_bee_spawn_egg',
             'resourcefulbees:blizz_bee_spawn_egg',
             'resourcefulbees:direbee20_bee_spawn_egg',
-            'resourcefulbees:generikbee_bee_spawn_egg'
+            'resourcefulbees:generikbee_bee_spawn_egg',
         ])
         .scene(
             'pollen_mechanics',
@@ -135,7 +135,7 @@ onEvent('ponder.registry', (event) => {
                         .setBlock([1, 1, 1], Block.id('minecraft:wheat').with('age', i.toString()).blockState, false);
                     scene.idle(30);
                 }
-            }
+            },
         )
         .scene('entity_mutation', 'Pollen as Mutagen', 'enigmatica:enigmatica/bases/3x3', (scene, util) => {
             scene.showBasePlate();
@@ -162,7 +162,7 @@ onEvent('ponder.registry', (event) => {
                 .showText(60)
                 .colored(PonderPalette.WHITE)
                 .text(
-                    'Pollen can mutate things up to 2 blocks below the bee, and will pass through solid blocks to mutate things below.'
+                    'Pollen can mutate things up to 2 blocks below the bee, and will pass through solid blocks to mutate things below.',
                 )
                 .independent(0);
 
@@ -372,7 +372,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `Place the bee you'd like to mutate here; today we will be sacrificing a Beeper. Since things can be mutated through solid blocks, we can use a trap door to hold the Beeper in place.`
+                        `Place the bee you'd like to mutate here; today we will be sacrificing a Beeper. Since things can be mutated through solid blocks, we can use a trap door to hold the Beeper in place.`,
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 2, 3.5]);
@@ -414,7 +414,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        'Now that the Blaze Bee has gathered nectar, it will travel over to its hive, dripping pollen as it goes.'
+                        'Now that the Blaze Bee has gathered nectar, it will travel over to its hive, dripping pollen as it goes.',
                     )
                     .independent(30);
 
@@ -458,6 +458,6 @@ onEvent('ponder.registry', (event) => {
                 scene.idle(60);
 
                 scene.markAsFinished();
-            }
+            },
         );
 });

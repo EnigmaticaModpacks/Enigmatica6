@@ -20,10 +20,10 @@ onEvent('recipes', (event) => {
             output: 'architects_palette:sunmetal_block',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: 'architects_palette:sunmetal_brick'
+                A: 'architects_palette:sunmetal_brick',
             },
-            id: 'architects_palette:sunmetal_block'
-        }
+            id: 'architects_palette:sunmetal_block',
+        },
     ];
 
     newRecipes.forEach((recipe) => {

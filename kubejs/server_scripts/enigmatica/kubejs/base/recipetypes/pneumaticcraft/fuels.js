@@ -7,24 +7,24 @@ onEvent('recipes', (event) => {
             {
                 fluid: 'mekanismgenerators:bioethanol',
                 air: 400,
-                rate: 1
+                rate: 1,
             },
             {
                 fluid: 'industrialforegoing:biofuel',
                 air: 400,
-                rate: 1
+                rate: 1,
             },
             {
                 fluid: 'immersiveengineering:creosote',
                 air: 50,
-                rate: 0.25
+                rate: 0.25,
             },
             {
                 fluid: 'resourcefulbees:rocket_honey',
                 air: 1500,
-                rate: 2
-            }
-        ]
+                rate: 2,
+            },
+        ],
     };
     data.recipes.forEach((recipe) => {
         fallback_id(
@@ -33,12 +33,12 @@ onEvent('recipes', (event) => {
                 fluid: {
                     type: 'pneumaticcraft:fluid',
                     fluid: recipe.fluid,
-                    amount: 1000
+                    amount: 1000,
                 },
                 air_per_bucket: recipe.air * multiplier,
-                burn_rate: recipe.rate
+                burn_rate: recipe.rate,
             }),
-            id_prefix
+            id_prefix,
         );
     });
 });

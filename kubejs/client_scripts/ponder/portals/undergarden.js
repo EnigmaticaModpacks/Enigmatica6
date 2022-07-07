@@ -18,7 +18,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(80)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `Want to search the deep dark Undergarden? Build a nether portal like structure with Stone Bricks.`
+                        `Want to search the deep dark Undergarden? Build a nether portal like structure with Stone Bricks.`,
                     )
                     .independent(60);
 
@@ -46,7 +46,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([3.5, 2.5, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_PRIORITY_LOW)
                             .withItem('undergarden:catalyst'),
-                        40
+                        40,
                     );
 
                 scene.idle(20);
@@ -56,7 +56,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlocks(
                         util.select().fromTo(2, 2, 3, 4, 4, 3),
                         util.getDefaultState('undergarden:undergarden_portal'),
-                        true
+                        true,
                     );
 
                 scene.idle(30);
@@ -69,6 +69,6 @@ onEvent('ponder.registry', (event) => {
                     .independent(60);
 
                 scene.idle(60);
-            }
+            },
         );
 });

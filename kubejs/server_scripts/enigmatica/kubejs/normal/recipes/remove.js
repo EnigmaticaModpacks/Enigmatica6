@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
         'torchmaster:megatorch',
         'quark:white_candle',
         'occultism:candle_white',
-        'eidolon:candle'
+        'eidolon:candle',
     ];
 
     var idRemovals = [];

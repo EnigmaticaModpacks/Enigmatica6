@@ -9,9 +9,9 @@ onEvent('recipes', (event) => {
                 C: 'minecraft:golden_carrot',
                 G: '#forge:gears/iron_invar',
                 D: '#forge:dyes/purple',
-                M: '#industrialforegoing:machine_frame/pity'
+                M: '#industrialforegoing:machine_frame/pity',
             },
-            id: 'industrialforegoing:animal_feeder'
+            id: 'industrialforegoing:animal_feeder',
         },
         {
             output: 'industrialforegoing:biofuel_generator',
@@ -21,9 +21,9 @@ onEvent('recipes', (event) => {
                 D: 'minecraft:furnace',
                 S: 'minecraft:piston',
                 A: '#forge:gears/gold_bronze',
-                M: '#industrialforegoing:machine_frame/pity'
+                M: '#industrialforegoing:machine_frame/pity',
             },
-            id: 'industrialforegoing:biofuel_generator'
+            id: 'industrialforegoing:biofuel_generator',
         },
         {
             output: Item.of('industrialforegoing:conveyor', 6),
@@ -31,9 +31,9 @@ onEvent('recipes', (event) => {
             key: {
                 p: '#forge:plastic',
                 i: '#forge:ingots/iron_aluminum',
-                r: 'minecraft:redstone'
+                r: 'minecraft:redstone',
             },
-            id: 'industrialforegoing:conveyor'
+            id: 'industrialforegoing:conveyor',
         },
         {
             output: 'industrialforegoing:conveyor_blinking_upgrade',
@@ -42,9 +42,9 @@ onEvent('recipes', (event) => {
                 I: '#forge:ingots/iron_aluminum',
                 P: 'minecraft:chorus_fruit',
                 D: 'minecraft:piston',
-                C: 'industrialforegoing:conveyor'
+                C: 'industrialforegoing:conveyor',
             },
-            id: 'industrialforegoing:conveyor_blinking_upgrade'
+            id: 'industrialforegoing:conveyor_blinking_upgrade',
         },
         {
             output: 'industrialforegoing:conveyor_bouncing_upgrade',
@@ -53,9 +53,9 @@ onEvent('recipes', (event) => {
                 I: '#forge:ingots/iron_aluminum',
                 P: 'minecraft:slime_block',
                 D: 'minecraft:piston',
-                C: 'industrialforegoing:conveyor'
+                C: 'industrialforegoing:conveyor',
             },
-            id: 'industrialforegoing:conveyor_bouncing_upgrade'
+            id: 'industrialforegoing:conveyor_bouncing_upgrade',
         },
         {
             output: 'industrialforegoing:conveyor_detection_upgrade',
@@ -64,9 +64,9 @@ onEvent('recipes', (event) => {
                 I: '#forge:ingots/iron_aluminum',
                 P: 'minecraft:stone_pressure_plate',
                 D: 'minecraft:comparator',
-                C: 'industrialforegoing:conveyor'
+                C: 'industrialforegoing:conveyor',
             },
-            id: 'industrialforegoing:conveyor_detection_upgrade'
+            id: 'industrialforegoing:conveyor_detection_upgrade',
         },
         {
             output: 'industrialforegoing:conveyor_dropping_upgrade',
@@ -75,9 +75,9 @@ onEvent('recipes', (event) => {
                 I: '#forge:ingots/iron_aluminum',
                 P: 'minecraft:iron_bars',
                 D: 'minecraft:dropper',
-                C: 'industrialforegoing:conveyor'
+                C: 'industrialforegoing:conveyor',
             },
-            id: 'industrialforegoing:conveyor_dropping_upgrade'
+            id: 'industrialforegoing:conveyor_dropping_upgrade',
         },
         {
             output: 'industrialforegoing:conveyor_extraction_upgrade',
@@ -86,9 +86,9 @@ onEvent('recipes', (event) => {
                 I: '#forge:ingots/iron_aluminum',
                 P: '#forge:plastic',
                 D: 'minecraft:dispenser',
-                C: 'industrialforegoing:conveyor'
+                C: 'industrialforegoing:conveyor',
             },
-            id: 'industrialforegoing:conveyor_extraction_upgrade'
+            id: 'industrialforegoing:conveyor_extraction_upgrade',
         },
         {
             output: 'industrialforegoing:conveyor_insertion_upgrade',
@@ -97,9 +97,9 @@ onEvent('recipes', (event) => {
                 I: '#forge:ingots/iron_aluminum',
                 P: '#forge:plastic',
                 D: 'minecraft:hopper',
-                C: 'industrialforegoing:conveyor'
+                C: 'industrialforegoing:conveyor',
             },
-            id: 'industrialforegoing:conveyor_insertion_upgrade'
+            id: 'industrialforegoing:conveyor_insertion_upgrade',
         },
         {
             output: 'industrialforegoing:conveyor_splitting_upgrade',
@@ -108,9 +108,9 @@ onEvent('recipes', (event) => {
                 I: '#forge:ingots/iron_aluminum',
                 P: 'industrialforegoing:conveyor',
                 D: 'minecraft:hopper',
-                C: 'industrialforegoing:conveyor'
+                C: 'industrialforegoing:conveyor',
             },
-            id: 'industrialforegoing:conveyor_splitting_upgrade'
+            id: 'industrialforegoing:conveyor_splitting_upgrade',
         },
         {
             output: 'industrialforegoing:dye_mixer',
@@ -119,9 +119,9 @@ onEvent('recipes', (event) => {
                 P: '#forge:plastic',
                 D: '#forge:dyes',
                 M: '#industrialforegoing:machine_frame/pity',
-                R: '#forge:gears/gold_copper'
+                R: '#forge:gears/gold_copper',
             },
-            id: 'industrialforegoing:dye_mixer'
+            id: 'industrialforegoing:dye_mixer',
         },
         {
             output: 'industrialforegoing:meat_feeder',
@@ -129,9 +129,9 @@ onEvent('recipes', (event) => {
             key: {
                 p: 'industrialforegoing:plastic',
                 i: '#forge:ingots/iron_aluminum',
-                g: 'minecraft:glass_bottle'
+                g: 'minecraft:glass_bottle',
             },
-            id: 'industrialforegoing:meat_feeder'
+            id: 'industrialforegoing:meat_feeder',
         },
         {
             output: 'industrialforegoing:resourceful_furnace',
@@ -141,27 +141,27 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:bucket',
                 L: 'minecraft:furnace',
                 M: '#industrialforegoing:machine_frame/pity',
-                R: '#forge:gears/gold_copper'
+                R: '#forge:gears/gold_copper',
             },
-            id: 'industrialforegoing:resourceful_furnace'
+            id: 'industrialforegoing:resourceful_furnace',
         },
         {
             output: Item.of('industrialforegoing:tinydryrubber', 3),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'minecraft:vine',
-                B: 'minecraft:water_bucket'
+                B: 'minecraft:water_bucket',
             },
-            id: 'thermal:rubber_from_vine'
+            id: 'thermal:rubber_from_vine',
         },
         {
             output: Item.of('industrialforegoing:tinydryrubber', 3),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'minecraft:dandelion',
-                B: 'minecraft:water_bucket'
+                B: 'minecraft:water_bucket',
             },
-            id: 'thermal:rubber_from_dandelion'
+            id: 'thermal:rubber_from_dandelion',
         },
         {
             output: 'industrialforegoing:common_black_hole_tank',
@@ -171,9 +171,9 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:ender_eye',
                 C: 'minecraft:ender_pearl',
                 D: 'minecraft:bucket',
-                E: 'thermal:fluid_cell_frame'
+                E: 'thermal:fluid_cell_frame',
             },
-            id: 'industrialforegoing:common_black_hole_tank'
+            id: 'industrialforegoing:common_black_hole_tank',
         },
         {
             output: 'industrialforegoing:common_black_hole_unit',
@@ -183,10 +183,10 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:ender_eye',
                 C: 'minecraft:ender_pearl',
                 D: '#forge:chests/wooden',
-                E: 'thermal:machine_frame'
+                E: 'thermal:machine_frame',
             },
-            id: 'industrialforegoing:common_black_hole_unit'
-        }
+            id: 'industrialforegoing:common_black_hole_unit',
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -4,8 +4,8 @@ onEvent('recipes', (event) => {
         {
             output: 'refinedstorage:crafter',
             inputs: [Item.of('refinedstorage:crafter').ignoreNBT()],
-            id: `${id_prefix}crafter_reset`
-        }
+            id: `${id_prefix}crafter_reset`,
+        },
     ];
 
     recipes.forEach((recipe) => {

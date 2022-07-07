@@ -7,7 +7,7 @@ const validApiaryBlocks = [
     'glassential:glass_dark_ethereal',
     'glassential:glass_ethereal',
     'glassential:glass_light',
-    'glassential:glass_redstone'
+    'glassential:glass_redstone',
 ];
 
 const honeyVarieties = [
@@ -42,7 +42,7 @@ const honeyVarieties = [
     'resourcefulbees:meaty_honey',
     'resourcefulbees:rocket_honey',
     'resourcefulbees:mana_honey',
-    'resourcefulbees:otherworldly_honey'
+    'resourcefulbees:otherworldly_honey',
 ];
 
 const combVariants = [
@@ -135,7 +135,7 @@ const combVariants = [
     'blitz',
     'blizz',
     'industrious',
-    'pcbee'
+    'pcbee',
 ];
 
 const bees = [];
@@ -151,7 +151,7 @@ let moreBees = [
     'starry_lexxie',
     'yeti',
     // manual
-    'abbee'
+    'abbee',
 ];
 
 moreBees.forEach((bee) => {

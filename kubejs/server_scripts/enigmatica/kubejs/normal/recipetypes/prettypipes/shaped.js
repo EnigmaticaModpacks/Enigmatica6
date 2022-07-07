@@ -9,9 +9,9 @@ onEvent('recipes', (event) => {
             pattern: ['ABA'],
             key: {
                 A: '#forge:ingots/tin',
-                B: '#forge:glass/colorless'
+                B: '#forge:glass/colorless',
             },
-            id: 'prettypipes:pipe'
+            id: 'prettypipes:pipe',
         },
         {
             output: Item.of('ppfluids:fluid_pipe', 12),
@@ -19,10 +19,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/tin',
                 B: '#forge:glass/colorless',
-                C: 'thermal:cured_rubber'
+                C: 'thermal:cured_rubber',
             },
-            id: 'ppfluids:fluid_pipe'
-        }
+            id: 'ppfluids:fluid_pipe',
+        },
     ];
 
     recipes.forEach((recipe) => {

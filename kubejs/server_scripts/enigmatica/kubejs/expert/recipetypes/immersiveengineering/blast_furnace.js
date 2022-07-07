@@ -8,14 +8,14 @@ onEvent('recipes', (event) => {
             output: 'kubejs:smoldering_lapis_lazuli_compound',
             input: 'kubejs:coarse_lapis_lazuli_compound',
             slag: 'thermal:slag',
-            id: `${id_prefix}smoldering_lapis_lazuli_compound`
+            id: `${id_prefix}smoldering_lapis_lazuli_compound`,
         },
         {
             output: 'industrialforegoing:plastic',
             input: 'industrialforegoing:dryrubber',
             slag: 'thermal:slag',
-            id: 'industrialforegoing:plastic'
-        }
+            id: 'industrialforegoing:plastic',
+        },
     ];
 
     recipes.forEach((recipe) => {

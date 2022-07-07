@@ -61,7 +61,7 @@ function getStrippedLogFrom(logBlock) {
 
 const unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'gem'),
-    unificationBlacklistEntry('quartz', 'storage_block')
+    unificationBlacklistEntry('quartz', 'storage_block'),
 ];
 
 const playerHas = (item, player) => {

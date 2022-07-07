@@ -11,10 +11,10 @@ onEvent('recipes', (event) => {
                 'prettypipes:low_crafting_module',
                 'create:super_glue',
                 'minecraft:string',
-                'minecraft:string'
+                'minecraft:string',
             ],
-            id: 'prettypipes:crafting_terminal'
-        }
+            id: 'prettypipes:crafting_terminal',
+        },
     ];
 
     recipes.forEach((recipe) => {

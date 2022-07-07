@@ -85,7 +85,7 @@ onEvent('item.registry', (event) => {
 
         'partial_alloybrick',
         'partial_blastbrick',
-        'partial_cokebrick'
+        'partial_cokebrick',
     ];
 
     const ritualDummies = [
@@ -143,7 +143,7 @@ onEvent('item.registry', (event) => {
         'craft_water_focus',
         'craft_fire_focus',
         'craft_necrotic_focus',
-        'craft_masterroutingnode'
+        'craft_masterroutingnode',
     ];
 
     const reusableItemTextures = [
@@ -340,7 +340,7 @@ onEvent('item.registry', (event) => {
         { name: 'assembly_platform_package', texture: 'advanced_packing_crate_green' },
         { name: 'assembly_platform_assembly', texture: 'assembly_package_processing' },
         { name: 'assembly_controller_package', texture: 'advanced_packing_crate_green' },
-        { name: 'assembly_controller_assembly', texture: 'assembly_package_processing' }
+        { name: 'assembly_controller_assembly', texture: 'assembly_package_processing' },
     ];
 
     let metals = [
@@ -362,7 +362,7 @@ onEvent('item.registry', (event) => {
         'tin',
         'uranium',
         'utherium',
-        'zinc'
+        'zinc',
     ];
 
     // prettier-ignore

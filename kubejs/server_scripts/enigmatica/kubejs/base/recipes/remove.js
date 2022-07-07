@@ -54,7 +54,7 @@ onEvent('recipes', (event) => {
 
         'storagedrawers:conversion_upgrade',
 
-        'thermal:bamboo_block'
+        'thermal:bamboo_block',
     ];
 
     var idRemovals = [
@@ -280,7 +280,7 @@ onEvent('recipes', (event) => {
 
         '/integrateddynamics:\\w+/convenience/',
         '/integrateddynamics:\\w+/ore/',
-        '/integrateddynamics:blasting/menril_log/'
+        '/integrateddynamics:blasting/menril_log/',
     ];
 
     var regexIdRemovals = [
@@ -322,7 +322,7 @@ onEvent('recipes', (event) => {
         /create:crafting\/materials\/\w+_nugget_from_decompacting/,
         /occultism:crafting\/\w+_block/,
         /occultism:crafting\/\w+_nugget/,
-        /occultism:crafting\/\w+_ingot_from_nuggets/
+        /occultism:crafting\/\w+_ingot_from_nuggets/,
     ];
 
     outputRemovals.forEach((removal) => {
@@ -344,38 +344,38 @@ onEvent('recipes', (event) => {
     event.remove({
         output: 'mekanism:sawdust',
         mod: 'mekanism',
-        type: 'mekanism:sawing'
+        type: 'mekanism:sawing',
     });
 
     event.remove({
         output: '/\\w+:\\w+_gear$/',
-        type: 'minecraft:crafting_shaped'
+        type: 'minecraft:crafting_shaped',
     });
 
     event.remove({
         output: '/emendatusenigmatica:\\w+_rod/',
         mod: 'immersiveengineering',
-        type: 'immersiveengineering:metal_press'
+        type: 'immersiveengineering:metal_press',
     });
 
     event.remove({
         output: '/emendatusenigmatica:\\w+_rod/',
-        mod: 'immersiveposts'
+        mod: 'immersiveposts',
     });
 
     event.remove({
         output: '/emendatusenigmatica:\\w+_gear/',
-        mod: 'immersiveengineering'
+        mod: 'immersiveengineering',
     });
 
     event.remove({
         mod: 'occultism',
-        type: 'occultism:miner'
+        type: 'occultism:miner',
     });
 
     event.remove({
         output: '/powah:\\w+_starter/',
-        mod: 'powah'
+        mod: 'powah',
     });
 
     event.remove({ type: 'botanypots:crop' });
@@ -396,31 +396,31 @@ onEvent('recipes', (event) => {
 
     event.remove({
         input: '#forge:ores/zinc',
-        type: 'thermal:smelter'
+        type: 'thermal:smelter',
     });
     event.remove({
         input: '#forge:ores/osmium',
-        type: 'thermal:smelter'
+        type: 'thermal:smelter',
     });
     event.remove({
         input: '#forge:ores/uranium',
-        type: 'thermal:smelter'
+        type: 'thermal:smelter',
     });
     event.remove({
         input: '#forge:ores/aluminum',
-        type: 'thermal:smelter'
+        type: 'thermal:smelter',
     });
     event.remove({
         input: '#forge:ores/nickel',
-        type: 'thermal:smelter'
+        type: 'thermal:smelter',
     });
     event.remove({
-        id: /emendatusenigmatica:ore_from_chunk_crafting/
+        id: /emendatusenigmatica:ore_from_chunk_crafting/,
     });
     event.remove({
         input: 'minecraft:fire_charge',
         mod: 'thermal',
-        type: 'minecraft:crafting_shapeless'
+        type: 'minecraft:crafting_shapeless',
     });
     event.remove({ type: 'pedestals:pedestal_crushing', output: '#forge:dyes' });
     event.remove({ type: 'create:milling', output: '#forge:dyes' });

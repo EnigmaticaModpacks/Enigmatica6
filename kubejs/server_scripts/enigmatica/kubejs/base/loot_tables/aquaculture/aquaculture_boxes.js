@@ -10,9 +10,9 @@ onEvent('generic.loot_tables', (event) => {
                     loot_conditions: [
                         {
                             condition: 'random_chance',
-                            chance: 0.1
-                        }
-                    ]
+                            chance: 0.1,
+                        },
+                    ],
                 },
                 {
                     item: 'upgrade_aquatic:thorny_kelp',
@@ -21,9 +21,9 @@ onEvent('generic.loot_tables', (event) => {
                     loot_conditions: [
                         {
                             condition: 'random_chance',
-                            chance: 0.1
-                        }
-                    ]
+                            chance: 0.1,
+                        },
+                    ],
                 },
                 {
                     item: 'upgrade_aquatic:ochre_kelp',
@@ -32,9 +32,9 @@ onEvent('generic.loot_tables', (event) => {
                     loot_conditions: [
                         {
                             condition: 'random_chance',
-                            chance: 0.1
-                        }
-                    ]
+                            chance: 0.1,
+                        },
+                    ],
                 },
                 {
                     item: 'upgrade_aquatic:polar_kelp',
@@ -43,12 +43,12 @@ onEvent('generic.loot_tables', (event) => {
                     loot_conditions: [
                         {
                             condition: 'random_chance',
-                            chance: 0.1
-                        }
-                    ]
-                }
-            ]
-        }
+                            chance: 0.1,
+                        },
+                    ],
+                },
+            ],
+        },
     ];
 
     const chests = ['aquaculture:box/neptunes_bounty_junk'];

@@ -8,9 +8,9 @@ onEvent('recipes', (event) => {
             output: {
                 entries: [{ result: { item: 'immersiveengineering:treated_wood_horizontal', count: 1 }, weight: 1 }],
                 empty_weight: 0,
-                rolls: 1
+                rolls: 1,
             },
-            consume_fluid: 0.125
+            consume_fluid: 0.125,
         },
         {
             inputs: [{ tag: 'forge:rods/wooden', count: 1, return_chance: 0 }],
@@ -18,9 +18,9 @@ onEvent('recipes', (event) => {
             output: {
                 entries: [{ result: { item: 'immersiveengineering:stick_treated', count: 1 }, weight: 1 }],
                 empty_weight: 0,
-                rolls: 1
+                rolls: 1,
             },
-            consume_fluid: 0.005
+            consume_fluid: 0.005,
         },
         {
             inputs: [{ tag: 'minecraft:logs_that_burn', count: 16, return_chance: 0 }],
@@ -28,9 +28,9 @@ onEvent('recipes', (event) => {
             output: {
                 entries: [{ result: { item: 'upgrade_aquatic:driftwood_log', count: 16 }, weight: 1 }],
                 empty_weight: 0,
-                rolls: 1
+                rolls: 1,
             },
-            consume_fluid: 0.005
+            consume_fluid: 0.005,
         },
         {
             inputs: [{ item: 'minecraft:rotten_flesh', count: 8, return_chance: 0 }],
@@ -38,44 +38,44 @@ onEvent('recipes', (event) => {
             output: {
                 entries: [{ result: { item: 'alexsmobs:maggot', count: 32 }, weight: 1 }],
                 empty_weight: 0,
-                rolls: 1
+                rolls: 1,
             },
-            consume_fluid: 1.0
-        }
+            consume_fluid: 1.0,
+        },
     ];
 
     const simpleTagRecipes = [
         {
             input: 'forge:ingots/iron',
-            output: 'dustrial_decor:rusty_iron_ingot'
+            output: 'dustrial_decor:rusty_iron_ingot',
         },
         {
             input: 'forge:nuggets/iron',
-            output: 'dustrial_decor:rusty_iron_nugget'
+            output: 'dustrial_decor:rusty_iron_nugget',
         },
         {
             input: 'forge:storage_blocks/iron',
-            output: 'dustrial_decor:rusty_iron_block'
-        }
+            output: 'dustrial_decor:rusty_iron_block',
+        },
     ];
 
     const simpleItemRecipes = [
         {
             output: 'dustrial_decor:rusty_iron_door',
-            input: 'minecraft:iron_door'
+            input: 'minecraft:iron_door',
         },
         {
             output: 'dustrial_decor:rusty_iron_trapdoor',
-            input: 'minecraft:iron_trapdoor'
+            input: 'minecraft:iron_trapdoor',
         },
         {
             output: 'minecraft:soul_sand',
-            input: 'byg:nylium_soul_sand'
+            input: 'byg:nylium_soul_sand',
         },
         {
             output: 'minecraft:soul_soil',
-            input: 'byg:nylium_soul_soil'
-        }
+            input: 'byg:nylium_soul_soil',
+        },
     ];
 
     const rustyItems = [
@@ -93,7 +93,7 @@ onEvent('recipes', (event) => {
         'dustrial_decor:rusty_sheet_metal_treading_slab',
         'dustrial_decor:rusty_sheet_metal_treading_stairs',
         'dustrial_decor:rusty_sheet_metal_trapdoor',
-        'dustrial_decor:rusty_sheet_metal_door'
+        'dustrial_decor:rusty_sheet_metal_door',
     ];
 
     recipes.forEach((recipe) => {
@@ -103,9 +103,9 @@ onEvent('recipes', (event) => {
                 inputs: recipe.inputs,
                 fluid: recipe.fluid,
                 output: recipe.output,
-                consume_fluid: recipe.consume_fluid
+                consume_fluid: recipe.consume_fluid,
             }),
-            id_prefix
+            id_prefix,
         );
     });
 
@@ -118,11 +118,11 @@ onEvent('recipes', (event) => {
                 output: {
                     entries: [{ result: { item: recipe.output, count: 1 }, weight: 1 }],
                     empty_weight: 0,
-                    rolls: 1
+                    rolls: 1,
                 },
-                consume_fluid: 0.0
+                consume_fluid: 0.0,
             }),
-            id_prefix
+            id_prefix,
         );
     });
 
@@ -135,11 +135,11 @@ onEvent('recipes', (event) => {
                 output: {
                     entries: [{ result: { item: recipe.output, count: 1 }, weight: 1 }],
                     empty_weight: 0,
-                    rolls: 1
+                    rolls: 1,
                 },
-                consume_fluid: 0.0
+                consume_fluid: 0.0,
             }),
-            id_prefix
+            id_prefix,
         );
     });
 
@@ -153,11 +153,11 @@ onEvent('recipes', (event) => {
                 output: {
                     entries: [{ result: { item: rustyItem, count: 1 }, weight: 1 }],
                     empty_weight: 0,
-                    rolls: 1
+                    rolls: 1,
                 },
-                consume_fluid: 0.0
+                consume_fluid: 0.0,
             }),
-            id_prefix
+            id_prefix,
         );
     });
 });

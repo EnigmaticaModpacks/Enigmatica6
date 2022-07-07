@@ -13,10 +13,10 @@ onEvent('recipes', (event) => {
                 'thermal:blitz_rod',
                 'thermal:blizz_rod',
                 'thermal:basalz_rod',
-                'minecraft:blaze_rod'
+                'minecraft:blaze_rod',
             ],
             output: 'ars_nouveau:apprentice_spell_book',
-            id: 'ars_nouveau:apprentice_spell_book_upgrade'
+            id: 'ars_nouveau:apprentice_spell_book_upgrade',
         },
         {
             inputs: [
@@ -28,11 +28,11 @@ onEvent('recipes', (event) => {
                 'betterendforge:enchanted_petal',
                 'betterendforge:enchanted_petal',
                 'betterendforge:enchanted_petal',
-                'betterendforge:eternal_crystal'
+                'betterendforge:eternal_crystal',
             ],
             output: 'ars_nouveau:archmage_spell_book',
-            id: 'ars_nouveau:archmage_spell_book_upgrade'
-        }
+            id: 'ars_nouveau:archmage_spell_book_upgrade',
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
         const re = event.custom({
             type: 'ars_nouveau:book_upgrade',
             ingredients: ingredients,
-            result: Ingredient.of(recipe.output).toJson()
+            result: Ingredient.of(recipe.output).toJson(),
         });
         if (recipe.id) {
             re.id(recipe.id);

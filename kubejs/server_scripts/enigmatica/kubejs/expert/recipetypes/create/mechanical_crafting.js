@@ -12,9 +12,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/brass',
                 B: 'astralsorcery:glass_lens',
                 C: 'botania:livingwood_planks',
-                D: '#botania:runes/autumn'
+                D: '#botania:runes/autumn',
             },
-            id: 'astralsorcery:altar/hand_telescope'
+            id: 'astralsorcery:altar/hand_telescope',
         },
         {
             output: 'astralsorcery:observatory',
@@ -27,7 +27,7 @@ onEvent('recipes', (event) => {
                 ' LB BI   ',
                 'M CBAO   ',
                 'MN LPO   ',
-                'MMMOOO   '
+                'MMMOOO   ',
             ],
             key: {
                 A: '#forge:inlays/arcane_gold',
@@ -45,9 +45,9 @@ onEvent('recipes', (event) => {
                 M: '#forge:plates/brass',
                 N: '#create:seats',
                 O: 'create:brass_casing',
-                P: 'immersiveengineering:furnace_heater'
+                P: 'immersiveengineering:furnace_heater',
             },
-            id: 'astralsorcery:observatory'
+            id: 'astralsorcery:observatory',
         },
         {
             output: 'refinedstorage:controller',
@@ -58,9 +58,9 @@ onEvent('recipes', (event) => {
                 C: 'xnet:netcable_blue',
                 D: 'refinedstorage:quartz_enriched_iron',
                 E: 'refinedstorage:machine_casing',
-                F: 'immersiveengineering:logic_unit'
+                F: 'immersiveengineering:logic_unit',
             },
-            id: 'refinedstorage:controller'
+            id: 'refinedstorage:controller',
         },
         {
             output: Item.of('create:crushing_wheel', 2),
@@ -68,9 +68,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'create:andesite_alloy',
                 S: 'create:shaft',
-                P: 'create:brass_casing'
+                P: 'create:brass_casing',
             },
-            id: 'create:mechanical_crafting/crushing_wheel'
+            id: 'create:mechanical_crafting/crushing_wheel',
         },
         {
             output: 'refinedstorage:disk_drive',
@@ -82,9 +82,9 @@ onEvent('recipes', (event) => {
                 D: 'occultism:storage_stabilizer_tier1',
                 E: '#xnet:advanced_connectors',
                 F: 'immersiveengineering:logic_unit',
-                G: 'refinedstorage:machine_casing'
+                G: 'refinedstorage:machine_casing',
             },
-            id: 'refinedstorage:disk_drive'
+            id: 'refinedstorage:disk_drive',
         },
         {
             output: 'powah:energizing_orb',
@@ -92,14 +92,14 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'atum:crystal_glass',
                 B: 'thermal:machine_frame',
-                C: 'atum:ceramic_slab_black'
+                C: 'atum:ceramic_slab_black',
             },
-            id: 'powah:crafting/energizing_orb'
+            id: 'powah:crafting/energizing_orb',
         },
         {
             output: Item.of(
                 'pneumaticcraft:flux_compressor',
-                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}',
             ),
             pattern: ['ABBBA', 'ACDCA', 'EFGFE', 'HIJIH', 'HHKHH'],
             key: {
@@ -113,9 +113,9 @@ onEvent('recipes', (event) => {
                 H: 'fluxnetworks:flux_block',
                 I: 'supplementaries:bellows',
                 J: 'thermal:upgrade_augment_3',
-                K: 'thermal:rf_coil'
+                K: 'thermal:rf_coil',
             },
-            id: `${id_prefix}flux_compressor`
+            id: `${id_prefix}flux_compressor`,
         },
         {
             output: 'pneumaticcraft:assembly_drill',
@@ -125,9 +125,9 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:drill_bit_diamond',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT(),
             },
-            id: `${id_prefix}assembly_drill`
+            id: `${id_prefix}assembly_drill`,
         },
         {
             output: 'pneumaticcraft:assembly_laser',
@@ -137,9 +137,9 @@ onEvent('recipes', (event) => {
                 B: '#powah:energizing_rod',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT(),
             },
-            id: `${id_prefix}assembly_laser`
+            id: `${id_prefix}assembly_laser`,
         },
         {
             output: 'pneumaticcraft:assembly_io_unit_import',
@@ -149,9 +149,9 @@ onEvent('recipes', (event) => {
                 B: 'create:brass_hand',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT(),
             },
-            id: `${id_prefix}assembly_io_unit_import`
+            id: `${id_prefix}assembly_io_unit_import`,
         },
         {
             output: 'pneumaticcraft:assembly_io_unit_export',
@@ -161,9 +161,9 @@ onEvent('recipes', (event) => {
                 B: 'create:brass_hand',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT(),
             },
-            id: `${id_prefix}assembly_io_unit_export`
+            id: `${id_prefix}assembly_io_unit_export`,
         },
         {
             output: 'pneumaticcraft:assembly_controller',
@@ -173,9 +173,9 @@ onEvent('recipes', (event) => {
                 B: 'computercraft:monitor_normal',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT(),
             },
-            id: `${id_prefix}assembly_controller`
+            id: `${id_prefix}assembly_controller`,
         },
         {
             output: 'pneumaticcraft:assembly_platform',
@@ -184,9 +184,9 @@ onEvent('recipes', (event) => {
                 A: '#pneumaticcraft:plastic_sheets',
                 B: '#forge:ingots/compressed_iron',
                 C: 'pneumaticcraft:pneumatic_cylinder',
-                D: 'pneumaticcraft:reinforced_stone_slab'
+                D: 'pneumaticcraft:reinforced_stone_slab',
             },
-            id: `${id_prefix}assembly_platform`
+            id: `${id_prefix}assembly_platform`,
         },
         {
             output: 'pneumaticcraft:aerial_interface',
@@ -199,9 +199,9 @@ onEvent('recipes', (event) => {
                 E: 'pneumaticcraft:printed_circuit_board',
                 F: '#industrialforegoing:machine_frame/supreme',
                 G: 'extrastorage:neural_processor',
-                H: 'powah:player_aerial_pearl'
+                H: 'powah:player_aerial_pearl',
             },
-            id: `${id_prefix}aerial_interface`
+            id: `${id_prefix}aerial_interface`,
         },
         {
             output: 'pneumaticcraft:spawner_extractor',
@@ -212,9 +212,9 @@ onEvent('recipes', (event) => {
                 C: '#industrialforegoing:machine_frame/advanced',
                 D: 'alexsmobs:hemolymph_sac',
                 E: 'pneumaticcraft:drill_pipe',
-                F: 'alexsmobs:warped_muscle'
+                F: 'alexsmobs:warped_muscle',
             },
-            id: `${id_prefix}spawner_extractor`
+            id: `${id_prefix}spawner_extractor`,
         },
         {
             output: 'create:flywheel',
@@ -224,9 +224,9 @@ onEvent('recipes', (event) => {
                 B: '#forge:rods/brass',
                 C: '#forge:gears/enderium',
                 D: 'create:brass_casing',
-                E: 'ars_nouveau:carbuncle_charm'
+                E: 'ars_nouveau:carbuncle_charm',
             },
-            id: 'create:mechanical_crafting/flywheel'
+            id: 'create:mechanical_crafting/flywheel',
         },
         {
             output: 'integrateddynamics:logic_programmer',
@@ -241,9 +241,9 @@ onEvent('recipes', (event) => {
                 G: 'refinedstorage:machine_casing',
                 H: 'pneumaticcraft:upgrade_matrix',
                 I: 'pneumaticcraft:network_io_port',
-                J: 'pneumaticcraft:network_data_storage'
+                J: 'pneumaticcraft:network_data_storage',
             },
-            id: 'integrateddynamics:crafting/logic_programmer'
+            id: 'integrateddynamics:crafting/logic_programmer',
         },
         {
             output: Item.of('2x portality:controller'),
@@ -255,9 +255,9 @@ onEvent('recipes', (event) => {
                 D: 'immersiveengineering:wirecoil_redstone',
                 E: 'pneumaticcraft:advanced_pcb',
                 F: 'immersiveengineering:current_transformer',
-                G: 'xnet:controller'
+                G: 'xnet:controller',
             },
-            id: 'portality:controller'
+            id: 'portality:controller',
         },
         {
             output: 'rftoolsutility:environmental_controller',
@@ -270,9 +270,9 @@ onEvent('recipes', (event) => {
                 E: 'powah:aerial_pearl',
                 F: '#industrialforegoing:machine_frame/supreme',
                 G: '#forge:circuits/ultimate',
-                H: 'kubejs:spirit_entropic_gateway'
+                H: 'kubejs:spirit_entropic_gateway',
             },
-            id: 'rftoolsutility:environmental_controller'
+            id: 'rftoolsutility:environmental_controller',
         },
         {
             output: 'mekanismgenerators:wind_generator',
@@ -282,9 +282,9 @@ onEvent('recipes', (event) => {
                 B: 'immersiveengineering:dynamo',
                 C: '#forge:gears/compressed_iron',
                 E: 'engineersdecor:thick_steel_pole',
-                G: 'engineersdecor:thick_steel_pole_head'
+                G: 'engineersdecor:thick_steel_pole_head',
             },
-            id: 'mekanismgenerators:generator/wind'
+            id: 'mekanismgenerators:generator/wind',
         },
         {
             output: 'mekanismgenerators:rotational_complex',
@@ -296,9 +296,9 @@ onEvent('recipes', (event) => {
                 D: '#mekanism:alloys/reinforced',
                 E: 'rftoolscontrol:node',
                 F: Item.of('rftoolsbase:tablet').ignoreNBT(),
-                G: '#industrialforegoing:machine_frame/advanced'
+                G: '#industrialforegoing:machine_frame/advanced',
             },
-            id: 'mekanismgenerators:rotational_complex'
+            id: 'mekanismgenerators:rotational_complex',
         },
         {
             output: 'mekanismgenerators:fusion_reactor_controller',
@@ -312,9 +312,9 @@ onEvent('recipes', (event) => {
                 F: 'rftoolsutility:environmental_controller',
                 G: '#forge:circuits/ultimate',
                 H: Item.of('mekanism:ultimate_fluid_tank').ignoreNBT(),
-                I: Item.of('rftoolsbase:tablet').ignoreNBT()
+                I: Item.of('rftoolsbase:tablet').ignoreNBT(),
             },
-            id: 'mekanismgenerators:reactor/controller'
+            id: 'mekanismgenerators:reactor/controller',
         },
         {
             output: 'mekanism:digital_miner',
@@ -328,9 +328,9 @@ onEvent('recipes', (event) => {
                 F: 'rftoolsutility:matter_transmitter',
                 G: 'mekanism:robit',
                 H: 'rftoolsutility:matter_receiver',
-                I: 'engineersdecor:thick_steel_pole_head'
+                I: 'engineersdecor:thick_steel_pole_head',
             },
-            id: 'mekanism:digital_miner'
+            id: 'mekanism:digital_miner',
         },
         {
             output: 'mininggadgets:mininggadget_simple',
@@ -343,9 +343,9 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:infused_diamond',
                 F: industrialforegoing.laser_lens.magenta,
                 G: 'thermal:upgrade_augment_2',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
             },
-            id: 'mininggadgets:mininggadget_simple'
+            id: 'mininggadgets:mininggadget_simple',
         },
         {
             output: 'mininggadgets:mininggadget_fancy',
@@ -358,9 +358,9 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:infused_diamond',
                 F: industrialforegoing.laser_lens.pink,
                 G: 'thermal:upgrade_augment_2',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
             },
-            id: 'mininggadgets:mininggadget_fancy'
+            id: 'mininggadgets:mininggadget_fancy',
         },
         {
             output: 'mininggadgets:mininggadget',
@@ -373,9 +373,9 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:infused_diamond',
                 F: industrialforegoing.laser_lens.light_blue,
                 G: 'thermal:upgrade_augment_2',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
             },
-            id: 'mininggadgets:mininggadget'
+            id: 'mininggadgets:mininggadget',
         },
         {
             output: 'thermal:flux_saw',
@@ -387,9 +387,9 @@ onEvent('recipes', (event) => {
                 D: 'betterendforge:leather_stripe',
                 E: 'create:precision_mechanism',
                 F: Item.of('thermal:flux_capacitor').ignoreNBT(),
-                G: 'mekanism:hdpe_stick'
+                G: 'mekanism:hdpe_stick',
             },
-            id: 'thermal:flux_saw'
+            id: 'thermal:flux_saw',
         },
         {
             output: 'thermal:flux_drill',
@@ -401,9 +401,9 @@ onEvent('recipes', (event) => {
                 D: 'betterendforge:leather_stripe',
                 E: 'create:precision_mechanism',
                 F: Item.of('thermal:flux_capacitor').ignoreNBT(),
-                G: 'mekanism:hdpe_stick'
+                G: 'mekanism:hdpe_stick',
             },
-            id: 'thermal:flux_drill'
+            id: 'thermal:flux_drill',
         },
         {
             output: 'fluxnetworks:flux_controller',
@@ -417,9 +417,9 @@ onEvent('recipes', (event) => {
                 F: 'thermal:lightning_charge',
                 G: 'powah:player_transmitter_nitro',
                 H: '#botania:runes/earth',
-                I: '#forge:circuits/ultimate'
+                I: '#forge:circuits/ultimate',
             },
-            id: `${id_prefix}flux_controller`
+            id: `${id_prefix}flux_controller`,
         },
         {
             output: 'gunswithoutroses:iron_gun',
@@ -432,9 +432,9 @@ onEvent('recipes', (event) => {
                 E: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
                 F: '#forge:treated_wood_slab',
                 G: '#forge:nuggets/steel',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
             },
-            id: 'gunswithoutroses:iron_gun'
+            id: 'gunswithoutroses:iron_gun',
         },
         {
             output: 'gunswithoutroses:gold_gun',
@@ -447,9 +447,9 @@ onEvent('recipes', (event) => {
                 E: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
                 F: '#forge:treated_wood_slab',
                 G: '#forge:nuggets/steel',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
             },
-            id: 'gunswithoutroses:gold_gun'
+            id: 'gunswithoutroses:gold_gun',
         },
         {
             output: 'gunswithoutroses:diamond_shotgun',
@@ -463,9 +463,9 @@ onEvent('recipes', (event) => {
                 F: '#forge:treated_wood',
                 G: '#forge:nuggets/steel',
                 H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                I: '#forge:wires/steel'
+                I: '#forge:wires/steel',
             },
-            id: 'gunswithoutroses:diamond_shotgun'
+            id: 'gunswithoutroses:diamond_shotgun',
         },
         {
             output: 'gunswithoutroses:diamond_sniper',
@@ -479,9 +479,9 @@ onEvent('recipes', (event) => {
                 F: '#forge:treated_wood',
                 G: '#forge:nuggets/steel',
                 H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                I: '#forge:plates/steel'
+                I: '#forge:plates/steel',
             },
-            id: 'gunswithoutroses:diamond_sniper'
+            id: 'gunswithoutroses:diamond_sniper',
         },
         {
             output: 'gunswithoutroses:diamond_gatling',
@@ -497,9 +497,9 @@ onEvent('recipes', (event) => {
                 H: '#forge:gears/steel',
                 I: '#forge:wires/steel',
                 J: '#forge:nuggets/steel',
-                K: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+                K: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
             },
-            id: 'gunswithoutroses:diamond_gatling'
+            id: 'gunswithoutroses:diamond_gatling',
         },
         {
             output: 'meetyourfight:phantasmal_rifle',
@@ -513,9 +513,9 @@ onEvent('recipes', (event) => {
                 F: '#forge:treated_wood',
                 G: '#forge:nuggets/steel',
                 H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                I: '#forge:plates/electrum'
+                I: '#forge:plates/electrum',
             },
-            id: 'meetyourfight:phantasmal_rifle'
+            id: 'meetyourfight:phantasmal_rifle',
         },
         {
             output: 'meetyourfight:cocktail_shotgun',
@@ -532,9 +532,9 @@ onEvent('recipes', (event) => {
                 I: '#forge:wires/steel',
                 J: '#forge:nuggets/steel',
                 K: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                L: 'meetyourfight:fortunes_favor'
+                L: 'meetyourfight:fortunes_favor',
             },
-            id: 'meetyourfight:cocktail_shotgun'
+            id: 'meetyourfight:cocktail_shotgun',
         },
         {
             output: 'industrialforegoing:mob_duplicator',
@@ -548,9 +548,9 @@ onEvent('recipes', (event) => {
                 F: 'ars_nouveau:greater_experience_gem',
                 G: Item.of('pneumaticcraft:huge_tank').ignoreNBT(),
                 H: 'botania:spawner_mover',
-                I: '#industrialforegoing:machine_frame/supreme'
+                I: '#industrialforegoing:machine_frame/supreme',
             },
-            id: 'industrialforegoing:mob_duplicator'
+            id: 'industrialforegoing:mob_duplicator',
         },
         {
             output: 'industrialforegoing:mycelial_reactor',
@@ -566,9 +566,9 @@ onEvent('recipes', (event) => {
                 H: 'betterendforge:mossy_glowshroom_cap',
                 I: 'astralsorcery:shifting_star',
                 J: 'minecraft:red_mushroom_block',
-                K: 'byg:soul_shroom_block'
+                K: 'byg:soul_shroom_block',
             },
-            id: 'industrialforegoing:mycelial_reactor'
+            id: 'industrialforegoing:mycelial_reactor',
         },
         {
             output: 'immersiveengineering:cloche',
@@ -579,9 +579,9 @@ onEvent('recipes', (event) => {
                 C: '#forge:treated_wood',
                 D: 'industrialforegoing:hydroponic_bed',
                 E: 'immersiveengineering:component_steel',
-                F: 'pneumaticcraft:fluid_mixer'
+                F: 'pneumaticcraft:fluid_mixer',
             },
-            id: 'immersiveengineering:crafting/cloche'
+            id: 'immersiveengineering:crafting/cloche',
         },
         {
             output: 'industrialforegoing:infinity_drill',
@@ -593,9 +593,9 @@ onEvent('recipes', (event) => {
                 D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: 'thermal:upgrade_augment_3',
                 F: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT(),
             },
-            id: 'industrialforegoing:dissolution_chamber/infinity_drill'
+            id: 'industrialforegoing:dissolution_chamber/infinity_drill',
         },
         {
             output: 'industrialforegoing:infinity_trident',
@@ -606,9 +606,9 @@ onEvent('recipes', (event) => {
                 C: '#forge:plastic',
                 D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: 'thermal:upgrade_augment_3',
-                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT(),
             },
-            id: 'industrialforegoing:dissolution_chamber/infinity_trident'
+            id: 'industrialforegoing:dissolution_chamber/infinity_trident',
         },
         {
             output: 'industrialforegoing:infinity_saw',
@@ -620,9 +620,9 @@ onEvent('recipes', (event) => {
                 D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: 'thermal:upgrade_augment_3',
                 F: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT(),
             },
-            id: 'industrialforegoing:dissolution_chamber/infinity_saw'
+            id: 'industrialforegoing:dissolution_chamber/infinity_saw',
         },
         {
             output: 'industrialforegoing:infinity_hammer',
@@ -633,9 +633,9 @@ onEvent('recipes', (event) => {
                 C: '#forge:plastic',
                 D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: 'thermal:upgrade_augment_3',
-                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT(),
             },
-            id: 'industrialforegoing:dissolution_chamber/infinity_hammer'
+            id: 'industrialforegoing:dissolution_chamber/infinity_hammer',
         },
         {
             output: 'industrialforegoing:infinity_launcher',
@@ -647,9 +647,9 @@ onEvent('recipes', (event) => {
                 D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
                 E: 'thermal:upgrade_augment_3',
                 F: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT(),
             },
-            id: 'industrialforegoing:dissolution_chamber/infinity_launcher'
+            id: 'industrialforegoing:dissolution_chamber/infinity_launcher',
         },
         {
             output: 'industrialforegoing:infinity_nuke',
@@ -663,9 +663,9 @@ onEvent('recipes', (event) => {
                 F: '#forge:alloys/ultimate',
                 G: '#forge:pellets/plutonium',
                 H: 'mekanism:hdpe_rod',
-                I: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+                I: Item.of('pneumaticcraft:huge_tank').ignoreNBT(),
             },
-            id: 'industrialforegoing:dissolution_chamber/infinity_nuke'
+            id: 'industrialforegoing:dissolution_chamber/infinity_nuke',
         },
         {
             output: 'industrialforegoing:dissolution_chamber',
@@ -679,9 +679,9 @@ onEvent('recipes', (event) => {
                 F: Item.of('pneumaticcraft:smart_chest').ignoreNBT(),
                 G: 'mekanism:superheating_element',
                 H: Item.of('immersiveengineering:capacitor_hv').ignoreNBT(),
-                I: '#industrialforegoing:machine_frame/pity'
+                I: '#industrialforegoing:machine_frame/pity',
             },
-            id: 'industrialforegoing:dissolution_chamber'
+            id: 'industrialforegoing:dissolution_chamber',
         },
         {
             output: 'mekanism:meka_tool',
@@ -693,12 +693,12 @@ onEvent('recipes', (event) => {
                 D: [
                     Item.of('mininggadgets:mininggadget_simple').ignoreNBT(),
                     Item.of('mininggadgets:mininggadget').ignoreNBT(),
-                    Item.of('mininggadgets:mininggadget_fancy').ignoreNBT()
+                    Item.of('mininggadgets:mininggadget_fancy').ignoreNBT(),
                 ],
                 E: Item.of('mekanism:laser_amplifier').ignoreNBT(),
-                F: 'thermal:upgrade_augment_3'
+                F: 'thermal:upgrade_augment_3',
             },
-            id: 'mekanism:meka_tool'
+            id: 'mekanism:meka_tool',
         },
         {
             output: 'masterfulmachinery:auto_iridescent_altar_controller',
@@ -714,9 +714,9 @@ onEvent('recipes', (event) => {
                 H: '#forge:circuits/ultimate',
                 I: 'xnet:advanced_connector_red',
                 J: 'kubejs:bright_constellation_box',
-                K: 'kubejs:dim_constellation_box'
+                K: 'kubejs:dim_constellation_box',
             },
-            id: `${id_prefix}auto_iridescent_altar_controller`
+            id: `${id_prefix}auto_iridescent_altar_controller`,
         },
         {
             output: 'masterfulmachinery:stellar_neutron_activator_controller',
@@ -727,9 +727,9 @@ onEvent('recipes', (event) => {
                 C: Item.of('mekanism:resistive_heater').ignoreNBT(),
                 D: 'mekanism:ultimate_thermodynamic_conductor',
                 E: 'mekanism:thermal_evaporation_valve',
-                F: 'mekanism:thermal_evaporation_controller'
+                F: 'mekanism:thermal_evaporation_controller',
             },
-            id: `${id_prefix}stellar_neutron_activator_controller`
+            id: `${id_prefix}stellar_neutron_activator_controller`,
         },
         {
             output: 'masterfulmachinery:industrial_deuterium_plant_controller',
@@ -741,9 +741,9 @@ onEvent('recipes', (event) => {
                 D: '#forge:rods/osmium',
                 E: '#forge:circuits/ultimate',
                 F: 'mekanism:electrolytic_core',
-                G: '#industrialforegoing:machine_frame/supreme'
+                G: '#industrialforegoing:machine_frame/supreme',
             },
-            id: `${id_prefix}industrial_deuterium_plant_controller`
+            id: `${id_prefix}industrial_deuterium_plant_controller`,
         },
         {
             output: 'thermal:machine_pyrolyzer',
@@ -754,10 +754,10 @@ onEvent('recipes', (event) => {
                 D: Item.of('thermal:fluid_cell').ignoreNBT(),
                 E: '#forge:gears/constantan',
                 F: 'botania:blaze_block',
-                G: 'immersiveengineering:coil_mv'
+                G: 'immersiveengineering:coil_mv',
             },
-            id: 'thermal:machine_pyrolyzer'
-        }
+            id: 'thermal:machine_pyrolyzer',
+        },
     ];
 
     powahTiers.forEach(function (tier) {
@@ -790,9 +790,9 @@ onEvent('recipes', (event) => {
                 M: 'kubejs:spirit_entropic_gateway',
                 N: 'xnet:controller',
                 O: Item.of(`powah:furnator_${tier}`).ignoreNBT(),
-                P: 'create:fluid_pipe'
+                P: 'create:fluid_pipe',
             },
-            id: `powah:crafting/reactor_${tier}`
+            id: `powah:crafting/reactor_${tier}`,
         });
     });
 
@@ -802,7 +802,7 @@ onEvent('recipes', (event) => {
         { tier: 'normal', comb: 'zinc' },
         { tier: 'large', comb: 'uranium' },
         { tier: 'giant', comb: 'cobalt' },
-        { tier: 'maximum', comb: 'industrious' }
+        { tier: 'maximum', comb: 'industrious' },
     ];
 
     compactmachines.forEach((compactmachine) => {
@@ -816,9 +816,9 @@ onEvent('recipes', (event) => {
                 D: 'portality:module_items',
                 E: 'portality:controller',
                 F: 'portality:module_fluids',
-                G: 'portality:module_interdimensional'
+                G: 'portality:module_interdimensional',
             },
-            id: `${id_prefix}compact_machine_${compactmachine.tier}`
+            id: `${id_prefix}compact_machine_${compactmachine.tier}`,
         });
     });
 

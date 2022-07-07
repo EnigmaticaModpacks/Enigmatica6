@@ -8,8 +8,8 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: ['#forge:ingots/compressed_iron', '#forge:gems/quartz'],
-            output: Item.of('refinedstorage:quartz_enriched_iron', 2)
-        }
+            output: Item.of('refinedstorage:quartz_enriched_iron', 2),
+        },
     ];
 
     recipetypes_alloying = (event, recipe) => {
@@ -27,9 +27,9 @@ onEvent('recipes', (event) => {
                 ingredients: [Ingredient.of(recipe.inputs[0]).toJson(), Ingredient.of(recipe.inputs[1]).toJson()],
                 result: recipe.output,
                 experience: recipe.experience,
-                smelttime: recipe.smelttime
+                smelttime: recipe.smelttime,
             }),
-            id_prefix
+            id_prefix,
         );
 
         // create
@@ -38,11 +38,11 @@ onEvent('recipes', (event) => {
         // immersiveengineering
         fallback_id(
             event.recipes.immersiveengineering.alloy(recipe.output, recipe.inputs[0], recipe.inputs[1]),
-            id_prefix
+            id_prefix,
         );
         fallback_id(
             event.recipes.immersiveengineering.arc_furnace([recipe.output], recipe.inputs[0], [recipe.inputs[1]]),
-            id_prefix
+            id_prefix,
         );
 
         // thermal

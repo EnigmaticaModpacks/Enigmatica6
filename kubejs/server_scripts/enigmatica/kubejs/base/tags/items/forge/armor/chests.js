@@ -14,14 +14,14 @@ onEvent('item.tags', (event) => {
         'astralsorcery:mantle',
         'bloodmagic:livingplate',
         'eidolon:warlock_cloak',
-        'create:copper_backtank'
+        'create:copper_backtank',
     ];
 
     var exceptions = [
         'pneumaticcraft:jet_boots_upgrade_1',
         'atum:limestone_chest',
         'kubejs:pneumatic_chestplate_package',
-        'kubejs:pneumatic_chestplate_assembly'
+        'kubejs:pneumatic_chestplate_assembly',
     ];
 
     var tags = ['forge:armor', 'forge:armor/chest'];

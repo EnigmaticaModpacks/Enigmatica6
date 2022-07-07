@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
         'farmersdelight:pumpkin_slice',
         'simplefarming:cantaloupe',
         'simplefarming:honeydew',
-        'simplefarming:squash'
+        'simplefarming:squash',
     ];
 
     const normalAmountInputs = [
@@ -74,7 +74,7 @@ onEvent('recipes', (event) => {
         'sushigocrafting:wasabi_root',
         'sushigocrafting:avocado',
         'undergarden:blisterberry',
-        'upgrade_aquatic:mulberry'
+        'upgrade_aquatic:mulberry',
     ];
     /*
 		const recipes = [{	input: 'simplefarming:apricot',	fluid: 'immersiveengineering:ethanol',	amount: 80,	energy: 6400}
@@ -87,14 +87,14 @@ onEvent('recipes', (event) => {
                 type: 'immersiveengineering:fermenter',
                 fluid: {
                     fluid: 'immersiveengineering:ethanol',
-                    amount: 20
+                    amount: 20,
                 },
                 input: {
-                    item: input
+                    item: input,
                 },
-                energy: 1600
+                energy: 1600,
             }),
-            `${id_prefix}low/`
+            `${id_prefix}low/`,
         );
     });
     normalAmountInputs.forEach((input) => {
@@ -103,14 +103,14 @@ onEvent('recipes', (event) => {
                 type: 'immersiveengineering:fermenter',
                 fluid: {
                     fluid: 'immersiveengineering:ethanol',
-                    amount: 80
+                    amount: 80,
                 },
                 input: {
-                    item: input
+                    item: input,
                 },
-                energy: 6400
+                energy: 6400,
             }),
-            `${id_prefix}high/`
+            `${id_prefix}high/`,
         );
     });
 });

@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
                 time: 250,
                 id: `${id_prefix}mana_pylon`
             }*/
-        ]
+        ],
     };
     data.recipes.forEach((recipe) => {
         event
@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
                 input: Ingredient.of(recipe.input).toJson(),
                 output: recipe.output,
                 time: recipe.time,
-                catalysts: recipe.catalysts
+                catalysts: recipe.catalysts,
             })
             .id(recipe.id);
     });

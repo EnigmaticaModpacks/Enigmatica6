@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
                 'immersiveengineering:coil_hv',
                 'immersiveengineering:coil_hv',
                 'powah:energy_discharger_nitro',
-                'immersiveengineering:coil_hv'
+                'immersiveengineering:coil_hv',
             ],
             inputFluid: 'tconstruct:molten_obsidian',
             inputFluidAmount: 1000,
@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'rftoolsbuilder:shield_block1', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'rftoolsbuilder:shield_block1'
+            id: 'rftoolsbuilder:shield_block1',
         },
         {
             inputs: [
@@ -32,7 +32,7 @@ onEvent('recipes', (event) => {
                 'minecraft:terracotta',
                 'minecraft:terracotta',
                 'minecraft:terracotta',
-                'minecraft:terracotta'
+                'minecraft:terracotta',
             ],
             inputFluid: 'industrialforegoing:sewage',
             inputFluidAmount: 8000,
@@ -40,7 +40,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'botanypots:botany_pot', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'botanypots:crafting/botany_pot'
+            id: 'botanypots:crafting/botany_pot',
         },
         {
             inputs: [
@@ -51,7 +51,7 @@ onEvent('recipes', (event) => {
                 'botania:enchanted_soil',
                 '#botania:runes/midgard',
                 'naturesaura:grated_chute',
-                '#botania:runes/midgard'
+                '#botania:runes/midgard',
             ],
             inputFluid: 'materialis:molten_fairy',
             inputFluidAmount: 1296,
@@ -59,7 +59,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'botanypots:hopper_botany_pot', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'botanypots:crafting/hopper_botany_pot'
+            id: 'botanypots:crafting/hopper_botany_pot',
         },
         {
             inputs: [
@@ -67,7 +67,7 @@ onEvent('recipes', (event) => {
                 industrialforegoing.laser_lens.red,
                 '#industrialforegoing:machine_frame/advanced',
                 'minecraft:spawner',
-                'minecraft:spawner'
+                'minecraft:spawner',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 200,
@@ -75,7 +75,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'rftoolsutility:spawner', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'rftoolsutility:spawner'
+            id: 'rftoolsutility:spawner',
         },
         {
             inputs: [
@@ -83,7 +83,7 @@ onEvent('recipes', (event) => {
                 industrialforegoing.laser_lens.yellow,
                 '#industrialforegoing:machine_frame/simple',
                 '#forge:gears/lumium',
-                '#forge:gears/lumium'
+                '#forge:gears/lumium',
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 500,
@@ -91,7 +91,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'rftoolsutility:matter_beamer', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'rftoolsutility:matter_beamer'
+            id: 'rftoolsutility:matter_beamer',
         },
         {
             inputs: [
@@ -99,7 +99,7 @@ onEvent('recipes', (event) => {
                 '#forge:alloys/advanced',
                 '#forge:alloys/advanced',
                 '#forge:circuits/basic',
-                'kubejs:memory_advanced_filled'
+                'kubejs:memory_advanced_filled',
             ],
             inputFluid: 'mekanism:lithium',
             inputFluidAmount: 100,
@@ -107,7 +107,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:advanced_control_circuit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:control_circuit/advanced'
+            id: 'mekanism:control_circuit/advanced',
         },
         {
             inputs: [
@@ -118,7 +118,7 @@ onEvent('recipes', (event) => {
                 'kubejs:memory_advanced_filled',
                 'bloodmagic:reinforcedslate',
                 'bloodmagic:reinforcedslate',
-                'bloodmagic:reinforcedslate'
+                'bloodmagic:reinforcedslate',
             ],
             inputFluid: 'mekanism:lithium',
             inputFluidAmount: 100,
@@ -126,7 +126,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:advanced_control_circuit', count: 2 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: `${id_prefix}advanced_control_circuit_magic`
+            id: `${id_prefix}advanced_control_circuit_magic`,
         },
         {
             inputs: [
@@ -134,7 +134,7 @@ onEvent('recipes', (event) => {
                 '#forge:alloys/elite',
                 '#forge:alloys/elite',
                 '#forge:circuits/advanced',
-                'kubejs:memory_elite_filled'
+                'kubejs:memory_elite_filled',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 100,
@@ -142,7 +142,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:elite_control_circuit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:control_circuit/elite'
+            id: 'mekanism:control_circuit/elite',
         },
         {
             inputs: [
@@ -153,7 +153,7 @@ onEvent('recipes', (event) => {
                 'kubejs:memory_elite_filled',
                 'bloodmagic:infusedslate',
                 'bloodmagic:infusedslate',
-                'bloodmagic:infusedslate'
+                'bloodmagic:infusedslate',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 100,
@@ -161,7 +161,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:elite_control_circuit', count: 2 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: `${id_prefix}elite_control_circuit_magic`
+            id: `${id_prefix}elite_control_circuit_magic`,
         },
         {
             inputs: [
@@ -169,7 +169,7 @@ onEvent('recipes', (event) => {
                 '#forge:alloys/ultimate',
                 '#forge:alloys/ultimate',
                 '#forge:circuits/elite',
-                'kubejs:memory_ultimate_filled'
+                'kubejs:memory_ultimate_filled',
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 100,
@@ -177,7 +177,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:ultimate_control_circuit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:control_circuit/ultimate'
+            id: 'mekanism:control_circuit/ultimate',
         },
         {
             inputs: [
@@ -188,7 +188,7 @@ onEvent('recipes', (event) => {
                 'kubejs:memory_ultimate_filled',
                 'bloodmagic:demonslate',
                 'bloodmagic:demonslate',
-                'bloodmagic:demonslate'
+                'bloodmagic:demonslate',
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 100,
@@ -196,7 +196,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:ultimate_control_circuit', count: 2 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: `${id_prefix}ultimate_control_circuit_magic`
+            id: `${id_prefix}ultimate_control_circuit_magic`,
         },
         {
             inputs: [
@@ -207,7 +207,7 @@ onEvent('recipes', (event) => {
                 '#mekanism:alloys/infused',
                 '#forge:nuggets/copper',
                 '#forge:nuggets/copper',
-                '#forge:nuggets/copper'
+                '#forge:nuggets/copper',
             ],
             inputFluid: 'pneumaticcraft:lubricant',
             inputFluidAmount: 1000,
@@ -215,7 +215,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:upgrade_speed', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:upgrade/speed'
+            id: 'mekanism:upgrade/speed',
         },
         {
             inputs: [
@@ -226,7 +226,7 @@ onEvent('recipes', (event) => {
                 '#mekanism:alloys/reinforced',
                 '#forge:nuggets/copper',
                 '#forge:nuggets/copper',
-                '#forge:nuggets/copper'
+                '#forge:nuggets/copper',
             ],
             inputFluid: 'mekanism:lithium',
             inputFluidAmount: 1000,
@@ -234,7 +234,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:upgrade_energy', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:upgrade/energy'
+            id: 'mekanism:upgrade/energy',
         },
         /*{
             inputs: [
@@ -264,7 +264,7 @@ onEvent('recipes', (event) => {
                 '#mekanism:alloys/reinforced',
                 '#forge:nuggets/copper',
                 '#forge:nuggets/copper',
-                '#forge:nuggets/copper'
+                '#forge:nuggets/copper',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 1000,
@@ -272,7 +272,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:upgrade_gas', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:upgrade/gas'
+            id: 'mekanism:upgrade/gas',
         },
         {
             inputs: [
@@ -283,7 +283,7 @@ onEvent('recipes', (event) => {
                 '#thermal:rockwool',
                 '#forge:nuggets/copper',
                 '#forge:nuggets/copper',
-                '#forge:nuggets/copper'
+                '#forge:nuggets/copper',
             ],
             inputFluid: 'integrateddynamics:liquid_chorus',
             inputFluidAmount: 1000,
@@ -291,7 +291,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:upgrade_muffling', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:upgrade/muffling'
+            id: 'mekanism:upgrade/muffling',
         },
         {
             inputs: [
@@ -302,7 +302,7 @@ onEvent('recipes', (event) => {
                 '#mekanism:alloys/infused',
                 '#forge:nuggets/copper',
                 '#forge:nuggets/copper',
-                '#forge:nuggets/copper'
+                '#forge:nuggets/copper',
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 1000,
@@ -310,7 +310,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:upgrade_anchor', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:upgrade/anchor'
+            id: 'mekanism:upgrade/anchor',
         },
         {
             inputs: [
@@ -321,7 +321,7 @@ onEvent('recipes', (event) => {
                 'bloodmagic:reagentlava',
                 '#forge:nuggets/copper',
                 '#forge:nuggets/copper',
-                '#forge:nuggets/copper'
+                '#forge:nuggets/copper',
             ],
             inputFluid: 'tconstruct:blazing_blood',
             inputFluidAmount: 1000,
@@ -329,7 +329,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:upgrade_stone_generator', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:upgrade/stone_generator'
+            id: 'mekanism:upgrade/stone_generator',
         },
         {
             inputs: [
@@ -340,7 +340,7 @@ onEvent('recipes', (event) => {
                 '#forge:pellets/polonium',
                 'mekanism:hdpe_sheet',
                 '#forge:circuits/ultimate',
-                'mekanism:hdpe_sheet'
+                'mekanism:hdpe_sheet',
             ],
             inputFluid: 'immersiveengineering:concrete',
             inputFluidAmount: 1000,
@@ -348,7 +348,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:sps_casing', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:sps_casing'
+            id: 'mekanism:sps_casing',
         },
         {
             inputs: [
@@ -359,7 +359,7 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/ultimate',
                 '#forge:pellets/polonium',
                 'mekanism:laser',
-                '#forge:pellets/polonium'
+                '#forge:pellets/polonium',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 1000,
@@ -367,7 +367,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:supercharged_coil', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:supercharged_coil'
+            id: 'mekanism:supercharged_coil',
         },
         {
             inputs: [
@@ -375,7 +375,7 @@ onEvent('recipes', (event) => {
                 '#industrialforegoing:machine_frame/simple',
                 'mekanism:hdpe_sheet',
                 'mekanism:hdpe_sheet',
-                'mekanism:hdpe_sheet'
+                'mekanism:hdpe_sheet',
             ],
             inputFluid: 'immersiveengineering:concrete',
             inputFluidAmount: 4000,
@@ -383,7 +383,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:induction_casing', count: 4 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:induction/casing'
+            id: 'mekanism:induction/casing',
         },
         {
             inputs: [
@@ -394,7 +394,7 @@ onEvent('recipes', (event) => {
                 'rftoolscontrol:node',
                 '#xnet:cables',
                 '#xnet:cables',
-                '#xnet:cables'
+                '#xnet:cables',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 100,
@@ -402,7 +402,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanismgenerators:fusion_reactor_frame', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanismgenerators:reactor/frame'
+            id: 'mekanismgenerators:reactor/frame',
         },
         {
             inputs: [
@@ -410,7 +410,7 @@ onEvent('recipes', (event) => {
                 'immersiveengineering:wire_steel',
                 'immersiveengineering:wire_steel',
                 'immersiveengineering:wire_steel',
-                'immersiveengineering:wire_steel'
+                'immersiveengineering:wire_steel',
             ],
             inputFluid: 'immersiveengineering:concrete',
             inputFluidAmount: 1000,
@@ -418,7 +418,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanismgenerators:fission_reactor_casing', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanismgenerators:fission_reactor/casing'
+            id: 'mekanismgenerators:fission_reactor/casing',
         },
         {
             inputs: ['#forge:ingots/lumium'],
@@ -428,7 +428,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:ingot_refined_glowstone', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:processing/refined_glowstone/ingot/from_dust'
+            id: 'mekanism:processing/refined_glowstone/ingot/from_dust',
         },
         {
             inputs: [
@@ -438,7 +438,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/refined_obsidian',
                 '#forge:ingots/refined_obsidian',
                 '#forge:ingots/refined_glowstone',
-                '#forge:ingots/refined_glowstone'
+                '#forge:ingots/refined_glowstone',
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 250,
@@ -446,7 +446,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:basic_tier_installer', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:tier_installer/basic'
+            id: 'mekanism:tier_installer/basic',
         },
         {
             inputs: [
@@ -456,7 +456,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/refined_obsidian',
                 '#forge:ingots/refined_obsidian',
                 '#forge:ingots/refined_glowstone',
-                '#forge:ingots/refined_glowstone'
+                '#forge:ingots/refined_glowstone',
             ],
             inputFluid: 'mekanism:lithium',
             inputFluidAmount: 250,
@@ -464,7 +464,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:advanced_tier_installer', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:tier_installer/advanced'
+            id: 'mekanism:tier_installer/advanced',
         },
         {
             inputs: [
@@ -474,7 +474,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/refined_obsidian',
                 '#forge:ingots/refined_obsidian',
                 '#forge:ingots/refined_glowstone',
-                '#forge:ingots/refined_glowstone'
+                '#forge:ingots/refined_glowstone',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 250,
@@ -482,7 +482,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:elite_tier_installer', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:tier_installer/elite'
+            id: 'mekanism:tier_installer/elite',
         },
         {
             inputs: [
@@ -492,7 +492,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/refined_obsidian',
                 '#forge:ingots/refined_obsidian',
                 '#forge:ingots/refined_glowstone',
-                '#forge:ingots/refined_glowstone'
+                '#forge:ingots/refined_glowstone',
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 250,
@@ -500,7 +500,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:ultimate_tier_installer', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:tier_installer/ultimate'
+            id: 'mekanism:tier_installer/ultimate',
         },
         {
             inputs: [
@@ -511,7 +511,7 @@ onEvent('recipes', (event) => {
                 'create:shadow_steel_casing',
                 'ars_nouveau:end_fiber',
                 'kubejs:dimensional_storage_crystal',
-                'ars_nouveau:end_fiber'
+                'ars_nouveau:end_fiber',
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 250,
@@ -519,7 +519,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'sophisticatedbackpacks:inception_upgrade', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'sophisticatedbackpacks:inception_upgrade'
+            id: 'sophisticatedbackpacks:inception_upgrade',
         },
         {
             inputs: [
@@ -530,7 +530,7 @@ onEvent('recipes', (event) => {
                 'xnet:antenna_dish',
                 '#forge:ingots/aeternium',
                 '#forge:ingots/aeternium',
-                '#forge:ingots/aeternium'
+                '#forge:ingots/aeternium',
             ],
             inputFluid: 'tconstruct:molten_slimesteel',
             inputFluidAmount: 1296,
@@ -538,7 +538,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'rsinfinitybooster:infinity_card', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'rsinfinitybooster:infinity_card'
+            id: 'rsinfinitybooster:infinity_card',
         },
         {
             inputs: [
@@ -549,7 +549,7 @@ onEvent('recipes', (event) => {
                 'powah:ender_gate_nitro',
                 'rsinfinitybooster:infinity_card',
                 'powah:ender_gate_nitro',
-                'rsinfinitybooster:infinity_card'
+                'rsinfinitybooster:infinity_card',
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 1250,
@@ -557,7 +557,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'rsinfinitybooster:dimension_card', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'rsinfinitybooster:dimension_card'
+            id: 'rsinfinitybooster:dimension_card',
         },
         {
             inputs: [
@@ -568,7 +568,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/refined_obsidian',
                 '#forge:gears/osmium',
                 '#forge:circuits/basic',
-                '#forge:gears/osmium'
+                '#forge:gears/osmium',
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 250,
@@ -576,7 +576,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:machine_frame_simple', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'industrialforegoing:dissolution_chamber/simple_machine_frame'
+            id: 'industrialforegoing:dissolution_chamber/simple_machine_frame',
         },
         {
             inputs: [
@@ -587,7 +587,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/pink_slime',
                 '#forge:gears/compressed_iron',
                 '#forge:circuits/advanced',
-                '#forge:gears/compressed_iron'
+                '#forge:gears/compressed_iron',
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 1000,
@@ -595,7 +595,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:machine_frame_advanced', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'industrialforegoing:dissolution_chamber/advanced_machine_frame'
+            id: 'industrialforegoing:dissolution_chamber/advanced_machine_frame',
         },
         {
             inputs: [
@@ -606,7 +606,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/iesnium',
                 '#forge:gears/enderium',
                 '#forge:circuits/elite',
-                '#forge:gears/enderium'
+                '#forge:gears/enderium',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 135,
@@ -614,7 +614,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:machine_frame_supreme', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'industrialforegoing:dissolution_chamber/supreme_machine_frame'
+            id: 'industrialforegoing:dissolution_chamber/supreme_machine_frame',
         },
         {
             inputs: [
@@ -625,7 +625,7 @@ onEvent('recipes', (event) => {
                 '#forge:gears/signalum',
                 '#forge:gears/signalum',
                 '#forge:gems/blazing',
-                '#forge:gems/blazing'
+                '#forge:gems/blazing',
             ],
             inputFluid: 'mekanism:lithium',
             inputFluidAmount: 500,
@@ -633,7 +633,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:efficiency_addon_1', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'industrialforegoing:dissolution_chamber/efficiency_addon_1'
+            id: 'industrialforegoing:dissolution_chamber/efficiency_addon_1',
         },
         {
             inputs: [
@@ -644,7 +644,7 @@ onEvent('recipes', (event) => {
                 '#forge:gears/signalum',
                 '#forge:gears/signalum',
                 'pneumaticcraft:glycerol',
-                'pneumaticcraft:glycerol'
+                'pneumaticcraft:glycerol',
             ],
             inputFluid: 'pneumaticcraft:lubricant',
             inputFluidAmount: 500,
@@ -652,7 +652,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:speed_addon_1', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'industrialforegoing:dissolution_chamber/speed_addon_1'
+            id: 'industrialforegoing:dissolution_chamber/speed_addon_1',
         },
         {
             inputs: [
@@ -663,7 +663,7 @@ onEvent('recipes', (event) => {
                 '#forge:gears/signalum',
                 '#forge:gears/signalum',
                 'refinedstorage:construction_core',
-                'refinedstorage:construction_core'
+                'refinedstorage:construction_core',
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,
@@ -671,7 +671,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:processing_addon_1', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'industrialforegoing:dissolution_chamber/processing_addon_1'
+            id: 'industrialforegoing:dissolution_chamber/processing_addon_1',
         },
         {
             inputs: [
@@ -682,7 +682,7 @@ onEvent('recipes', (event) => {
                 '#forge:gears/enderium',
                 '#forge:gears/enderium',
                 'rftoolspower:blazing_rod',
-                'rftoolspower:blazing_rod'
+                'rftoolspower:blazing_rod',
             ],
             inputFluid: 'mekanism:lithium',
             inputFluidAmount: 500,
@@ -690,7 +690,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:efficiency_addon_2', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'industrialforegoing:dissolution_chamber/efficiency_addon_2'
+            id: 'industrialforegoing:dissolution_chamber/efficiency_addon_2',
         },
         {
             inputs: [
@@ -701,7 +701,7 @@ onEvent('recipes', (event) => {
                 '#forge:gears/enderium',
                 '#forge:gears/enderium',
                 'pneumaticcraft:glycerol',
-                'pneumaticcraft:glycerol'
+                'pneumaticcraft:glycerol',
             ],
             inputFluid: 'pneumaticcraft:lubricant',
             inputFluidAmount: 500,
@@ -709,7 +709,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:speed_addon_2', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'industrialforegoing:dissolution_chamber/speed_addon_2'
+            id: 'industrialforegoing:dissolution_chamber/speed_addon_2',
         },
         {
             inputs: [
@@ -720,7 +720,7 @@ onEvent('recipes', (event) => {
                 '#forge:gears/enderium',
                 '#forge:gears/enderium',
                 'extrastorage:neural_processor',
-                'extrastorage:neural_processor'
+                'extrastorage:neural_processor',
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,
@@ -728,14 +728,14 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:processing_addon_2', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'industrialforegoing:dissolution_chamber/processing_addon_2'
+            id: 'industrialforegoing:dissolution_chamber/processing_addon_2',
         },
         {
             inputs: [
                 '#forge:ingots/queens_slime',
                 '#forge:ingots/slimesteel',
                 '#forge:ingots/slimesteel',
-                '#forge:ingots/slimesteel'
+                '#forge:ingots/slimesteel',
             ],
             inputFluid: 'industrialforegoing:pink_slime',
             inputFluidAmount: 2000,
@@ -743,7 +743,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:pink_slime_ingot', count: 4 },
             outputFluid: 'industrialforegoing:sludge',
             outputFluidAmount: 500,
-            id: 'industrialforegoing:dissolution_chamber/pink_slime_ingot'
+            id: 'industrialforegoing:dissolution_chamber/pink_slime_ingot',
         },
         {
             inputs: [
@@ -754,7 +754,7 @@ onEvent('recipes', (event) => {
                 'tconstruct:blood_slime',
                 'architects_palette:withered_bone_block',
                 '#industrialforegoing:machine_frame/simple',
-                'architects_palette:withered_bone_block'
+                'architects_palette:withered_bone_block',
             ],
             inputFluid: 'bloodmagic:life_essence_fluid',
             inputFluidAmount: 1000,
@@ -762,7 +762,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:mechanical_dirt', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'industrialforegoing:dissolution_chamber/mechanical_dirt'
+            id: 'industrialforegoing:dissolution_chamber/mechanical_dirt',
         },
         {
             inputs: [
@@ -773,7 +773,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:ingots/shadow_steel',
                 'powah:solar_panel_nitro',
-                '#forge:ingots/shadow_steel'
+                '#forge:ingots/shadow_steel',
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,
@@ -781,7 +781,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_solar_recharging_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_solar_recharging_unit'
+            id: 'mekanism:module_solar_recharging_unit',
         },
         {
             inputs: [
@@ -792,7 +792,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:circuits/basic',
                 'mekanism:electrolytic_core',
-                '#forge:circuits/basic'
+                '#forge:circuits/basic',
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,
@@ -800,7 +800,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_electrolytic_breathing_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_electrolytic_breathing_unit'
+            id: 'mekanism:module_electrolytic_breathing_unit',
         },
         {
             inputs: [
@@ -811,7 +811,7 @@ onEvent('recipes', (event) => {
                 'thermal:hazmat_fabric',
                 '#forge:circuits/ultimate',
                 'mekanism:scuba_mask',
-                '#forge:circuits/ultimate'
+                '#forge:circuits/ultimate',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 500,
@@ -819,7 +819,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_inhalation_purification_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_inhalation_purification_unit'
+            id: 'mekanism:module_inhalation_purification_unit',
         },
         {
             inputs: [
@@ -830,7 +830,7 @@ onEvent('recipes', (event) => {
                 'industrialforegoing:straw',
                 'industrialforegoing:straw',
                 'mekanism:canteen',
-                'industrialforegoing:straw'
+                'industrialforegoing:straw',
             ],
             inputFluid: 'industrialforegoing:meat',
             inputFluidAmount: 16000,
@@ -838,7 +838,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_nutritional_injection_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_nutritional_injection_unit'
+            id: 'mekanism:module_nutritional_injection_unit',
         },
         {
             inputs: [
@@ -849,7 +849,7 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/ultimate',
                 '#forge:pellets/polonium',
                 '#forge:pellets/polonium',
-                '#forge:pellets/polonium'
+                '#forge:pellets/polonium',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 2000,
@@ -857,7 +857,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_energy_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_energy_unit'
+            id: 'mekanism:module_energy_unit',
         },
         {
             inputs: [
@@ -868,7 +868,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:ingots/netherite',
                 '#forge:ingots/netherite',
-                '#forge:ingots/netherite'
+                '#forge:ingots/netherite',
             ],
             inputFluid: 'tconstruct:molten_lead',
             inputFluidAmount: 1296,
@@ -876,7 +876,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_radiation_shielding_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_radiation_shielding_unit'
+            id: 'mekanism:module_radiation_shielding_unit',
         },
         {
             inputs: [
@@ -887,7 +887,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:circuits/advanced',
                 'advancedperipherals:ar_goggles',
-                '#forge:circuits/advanced'
+                '#forge:circuits/advanced',
             ],
             inputFluid: 'kubejs:molten_enderium_glass',
             inputFluidAmount: 1000,
@@ -895,7 +895,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_vision_enhancement_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_vision_enhancement_unit'
+            id: 'mekanism:module_vision_enhancement_unit',
         },
         {
             inputs: [
@@ -906,7 +906,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 'immersiveengineering:coil_hv',
                 'immersiveengineering:coil_hv',
-                'immersiveengineering:coil_hv'
+                'immersiveengineering:coil_hv',
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,
@@ -914,7 +914,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_charge_distribution_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_charge_distribution_unit'
+            id: 'mekanism:module_charge_distribution_unit',
         },
         {
             inputs: [
@@ -925,7 +925,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 'fluxnetworks:flux_dust',
                 'mekanism:dosimeter',
-                'fluxnetworks:flux_dust'
+                'fluxnetworks:flux_dust',
             ],
             inputFluid: 'tconstruct:molten_slimesteel',
             inputFluidAmount: 1296,
@@ -933,7 +933,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_dosimeter_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_dosimeter_unit'
+            id: 'mekanism:module_dosimeter_unit',
         },
         {
             inputs: [
@@ -944,7 +944,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:circuits/elite',
                 'mekanism:jetpack',
-                '#forge:circuits/elite'
+                '#forge:circuits/elite',
             ],
             inputFluid: 'tconstruct:sky_slime',
             inputFluidAmount: 4000,
@@ -952,7 +952,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_jetpack_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_jetpack_unit'
+            id: 'mekanism:module_jetpack_unit',
         },
         {
             inputs: [
@@ -963,7 +963,7 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/ultimate',
                 'ironjetpacks:nitro_thruster',
                 '#forge:pellets/antimatter',
-                'ironjetpacks:nitro_thruster'
+                'ironjetpacks:nitro_thruster',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 16000,
@@ -971,7 +971,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_gravitational_modulating_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_gravitational_modulating_unit'
+            id: 'mekanism:module_gravitational_modulating_unit',
         },
         {
             inputs: [
@@ -982,7 +982,7 @@ onEvent('recipes', (event) => {
                 'alexsmobs:warped_muscle',
                 '#forge:circuits/elite',
                 'immersiveengineering:toolupgrade_drill_lube',
-                '#forge:circuits/elite'
+                '#forge:circuits/elite',
             ],
             inputFluid: 'pneumaticcraft:lubricant',
             inputFluidAmount: 1000,
@@ -990,7 +990,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_locomotive_boosting_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_locomotive_boosting_unit'
+            id: 'mekanism:module_locomotive_boosting_unit',
         },
         {
             inputs: [
@@ -1001,7 +1001,7 @@ onEvent('recipes', (event) => {
                 'alexsmobs:warped_muscle',
                 '#forge:circuits/elite',
                 'pneumaticcraft:pneumatic_cylinder',
-                '#forge:circuits/elite'
+                '#forge:circuits/elite',
             ],
             inputFluid: 'pneumaticcraft:lubricant',
             inputFluidAmount: 1000,
@@ -1009,7 +1009,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_hydraulic_propulsion_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_hydraulic_propulsion_unit'
+            id: 'mekanism:module_hydraulic_propulsion_unit',
         },
         {
             inputs: [
@@ -1020,7 +1020,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:circuits/basic',
                 'thermal:flux_magnet',
-                '#forge:circuits/basic'
+                '#forge:circuits/basic',
             ],
             inputFluid: 'tconstruct:molten_iron',
             inputFluidAmount: 1296,
@@ -1028,7 +1028,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_magnetic_attraction_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_magnetic_attraction_unit'
+            id: 'mekanism:module_magnetic_attraction_unit',
         },
         {
             inputs: [
@@ -1039,7 +1039,7 @@ onEvent('recipes', (event) => {
                 '#forge:ingots/refined_radiance',
                 '#forge:alloys/ultimate',
                 'fluxnetworks:flux_core',
-                '#forge:alloys/ultimate'
+                '#forge:alloys/ultimate',
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 500,
@@ -1047,7 +1047,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_laser_dissipation_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_laser_dissipation_unit'
+            id: 'mekanism:module_laser_dissipation_unit',
         },
         {
             inputs: [
@@ -1058,7 +1058,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:ingots/energized_steel',
                 '#forge:gems/niotic',
-                '#forge:ingots/energized_steel'
+                '#forge:ingots/energized_steel',
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 100,
@@ -1066,7 +1066,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_shearing_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_shearing_unit'
+            id: 'mekanism:module_shearing_unit',
         },
         {
             inputs: [
@@ -1077,7 +1077,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:alloys/advanced',
                 'mekanism:geiger_counter',
-                '#forge:alloys/advanced'
+                '#forge:alloys/advanced',
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 100,
@@ -1085,7 +1085,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_geiger_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_geiger_unit'
+            id: 'mekanism:module_geiger_unit',
         },
         {
             inputs: [
@@ -1096,7 +1096,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:alloys/elite',
                 'mekanism:hdpe_elytra',
-                '#forge:alloys/elite'
+                '#forge:alloys/elite',
             ],
             inputFluid: 'thermal:ender',
             inputFluidAmount: 16000,
@@ -1104,7 +1104,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_elytra_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_elytra_unit'
+            id: 'mekanism:module_elytra_unit',
         },
         {
             inputs: [
@@ -1115,7 +1115,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:alloys/elite',
                 'betterendforge:ancient_emerald_ice',
-                '#forge:alloys/elite'
+                '#forge:alloys/elite',
             ],
             inputFluid: 'mekanism:hydrogen',
             inputFluidAmount: 8000,
@@ -1123,7 +1123,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_frost_walker_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_frost_walker_unit'
+            id: 'mekanism:module_frost_walker_unit',
         },
         {
             inputs: [
@@ -1134,7 +1134,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 '#forge:ingots/shadow_steel',
                 'powah:thermo_generator_nitro',
-                '#forge:ingots/shadow_steel'
+                '#forge:ingots/shadow_steel',
             ],
             inputFluid: 'mekanism:hydrogen',
             inputFluidAmount: 8000,
@@ -1142,7 +1142,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanismgenerators:module_geothermal_generator_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanismgenerators:module_geothermal_generator_unit'
+            id: 'mekanismgenerators:module_geothermal_generator_unit',
         },
         {
             inputs: [
@@ -1153,7 +1153,7 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/elite',
                 'botania:pixie_dust',
                 'travel_anchors:travel_staff',
-                'botania:pixie_dust'
+                'botania:pixie_dust',
             ],
             inputFluid: 'materialis:molten_elementium',
             inputFluidAmount: 1296,
@@ -1161,7 +1161,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_teleportation_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_teleportation_unit'
+            id: 'mekanism:module_teleportation_unit',
         },
         {
             inputs: [
@@ -1172,7 +1172,7 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/elite',
                 'bloodmagic:destructivecrystal',
                 'astralsorcery:colored_lens_break',
-                'bloodmagic:destructivecrystal'
+                'bloodmagic:destructivecrystal',
             ],
             inputFluid: 'thermal:glowstone',
             inputFluidAmount: 8000,
@@ -1180,7 +1180,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_vein_mining_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_vein_mining_unit'
+            id: 'mekanism:module_vein_mining_unit',
         },
         {
             inputs: [
@@ -1191,7 +1191,7 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/elite',
                 'bloodmagic:steadfastcrystal',
                 'astralsorcery:colored_lens_spectral',
-                'bloodmagic:steadfastcrystal'
+                'bloodmagic:steadfastcrystal',
             ],
             inputFluid: 'thermal:ender',
             inputFluidAmount: 8000,
@@ -1199,7 +1199,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_silk_touch_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_silk_touch_unit'
+            id: 'mekanism:module_silk_touch_unit',
         },
         {
             inputs: [
@@ -1210,7 +1210,7 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/elite',
                 'bloodmagic:vengefulcrystal',
                 'astralsorcery:colored_lens_damage',
-                'bloodmagic:vengefulcrystal'
+                'bloodmagic:vengefulcrystal',
             ],
             inputFluid: 'tconstruct:molten_quartz',
             inputFluidAmount: 16000,
@@ -1218,7 +1218,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_attack_amplification_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_attack_amplification_unit'
+            id: 'mekanism:module_attack_amplification_unit',
         },
         {
             inputs: [
@@ -1229,7 +1229,7 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/elite',
                 '#forge:gems/emerald',
                 'astralsorcery:colored_lens_push',
-                '#forge:gems/emerald'
+                '#forge:gems/emerald',
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,
@@ -1237,7 +1237,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_farming_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_farming_unit'
+            id: 'mekanism:module_farming_unit',
         },
         {
             inputs: [
@@ -1248,7 +1248,7 @@ onEvent('recipes', (event) => {
                 '#forge:circuits/elite',
                 'mekanismgenerators:laser_focus_matrix',
                 'astralsorcery:colored_lens_break',
-                'mekanismgenerators:laser_focus_matrix'
+                'mekanismgenerators:laser_focus_matrix',
             ],
             inputFluid: 'thermal:redstone',
             inputFluidAmount: 16000,
@@ -1256,7 +1256,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'mekanism:module_excavation_escalation_unit', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'mekanism:module_excavation_escalation_unit'
+            id: 'mekanism:module_excavation_escalation_unit',
         },
         {
             inputs: ['kubejs:memory_basic_empty'],
@@ -1266,7 +1266,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'kubejs:memory_basic_filled', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: `${id_prefix}memory_basic_filled`
+            id: `${id_prefix}memory_basic_filled`,
         },
         {
             inputs: ['kubejs:memory_advanced_empty'],
@@ -1276,7 +1276,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'kubejs:memory_advanced_filled', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: `${id_prefix}memory_advanced_filled`
+            id: `${id_prefix}memory_advanced_filled`,
         },
         {
             inputs: ['kubejs:memory_elite_empty'],
@@ -1286,7 +1286,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'kubejs:memory_elite_filled', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: `${id_prefix}memory_elite_filled`
+            id: `${id_prefix}memory_elite_filled`,
         },
         {
             inputs: ['kubejs:memory_ultimate_empty'],
@@ -1296,7 +1296,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'kubejs:memory_ultimate_filled', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: `${id_prefix}memory_ultimate_filled`
+            id: `${id_prefix}memory_ultimate_filled`,
         },
         {
             inputs: ['extrastorage:diamond_crafter'],
@@ -1306,7 +1306,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'extrastorage:netherite_crafter', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'extrastorage:netherite_crafter'
+            id: 'extrastorage:netherite_crafter',
         },
         {
             inputs: [
@@ -1317,7 +1317,7 @@ onEvent('recipes', (event) => {
                 'minecraft:light_gray_concrete_powder',
                 'minecraft:light_gray_concrete_powder',
                 'minecraft:light_gray_concrete_powder',
-                'minecraft:light_gray_concrete_powder'
+                'minecraft:light_gray_concrete_powder',
             ],
             inputFluid: 'kubejs:molten_compressed_iron',
             inputFluidAmount: 144,
@@ -1325,7 +1325,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'pneumaticcraft:reinforced_stone', count: 8 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: `${id_prefix}reinforced_stone`
+            id: `${id_prefix}reinforced_stone`,
         },
         {
             inputs: [
@@ -1333,7 +1333,7 @@ onEvent('recipes', (event) => {
                 'occultism:infused_lenses',
                 'astralsorcery:resonating_gem',
                 'astralsorcery:resonating_gem',
-                'astralsorcery:resonating_gem'
+                'astralsorcery:resonating_gem',
             ],
             inputFluid: 'astralsorcery:liquid_starlight',
             inputFluidAmount: 100,
@@ -1341,7 +1341,7 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'astralsorcery:glass_lens', count: 2 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: `${id_prefix}glass_lens`
+            id: `${id_prefix}glass_lens`,
         },
         {
             inputs: [
@@ -1352,7 +1352,7 @@ onEvent('recipes', (event) => {
                 'mekanism:elite_fluid_tank',
                 'mekanism:superheating_element',
                 'immersiveengineering:capacitor_hv',
-                'mekanism:superheating_element'
+                'mekanism:superheating_element',
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 1000,
@@ -1360,8 +1360,8 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'industrialforegoing:dissolution_chamber', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: `${id_prefix}dissolution_chamber_alternate`
-        }
+            id: `${id_prefix}dissolution_chamber_alternate`,
+        },
         /*
         {
             inputs: [
@@ -1396,7 +1396,7 @@ onEvent('recipes', (event) => {
                     `minecraft:${color}_terracotta`,
                     `minecraft:${color}_terracotta`,
                     `minecraft:${color}_terracotta`,
-                    `minecraft:${color}_terracotta`
+                    `minecraft:${color}_terracotta`,
                 ],
                 inputFluid: 'industrialforegoing:sewage',
                 inputFluidAmount: 8000,
@@ -1404,7 +1404,7 @@ onEvent('recipes', (event) => {
                 outputItem: { item: `botanypots:${color}_botany_pot`, count: 1 },
                 outputFluid: '',
                 outputFluidAmount: 0,
-                id: `botanypots:crafting/${color}_botany_pot`
+                id: `botanypots:crafting/${color}_botany_pot`,
             },
             {
                 inputs: [
@@ -1415,7 +1415,7 @@ onEvent('recipes', (event) => {
                     'botania:enchanted_soil',
                     '#botania:runes/midgard',
                     'naturesaura:grated_chute',
-                    '#botania:runes/midgard'
+                    '#botania:runes/midgard',
                 ],
                 inputFluid: 'materialis:molten_fairy',
                 inputFluidAmount: 1296,
@@ -1423,8 +1423,8 @@ onEvent('recipes', (event) => {
                 outputItem: { item: `botanypots:hopper_${color}_botany_pot`, count: 1 },
                 outputFluid: '',
                 outputFluidAmount: 0,
-                id: `botanypots:crafting/hopper_${color}_botany_pot`
-            }
+                id: `botanypots:crafting/hopper_${color}_botany_pot`,
+            },
         );
     });
 
@@ -1442,7 +1442,7 @@ onEvent('recipes', (event) => {
                 inputFluid: `{FluidName:"${recipe.inputFluid}",Amount:${recipe.inputFluidAmount}}`,
                 processingTime: recipe.processingTime,
                 output: recipe.outputItem,
-                outputFluid: `{FluidName:"${recipe.outputFluid}",Amount:${recipe.outputFluidAmount}}`
+                outputFluid: `{FluidName:"${recipe.outputFluid}",Amount:${recipe.outputFluidAmount}}`,
             })
             .id(recipe.id);
     });

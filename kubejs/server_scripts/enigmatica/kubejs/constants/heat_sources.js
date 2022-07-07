@@ -9,7 +9,7 @@ const campfires = [
     'byg:cryptic_campfire',
     'decorative_blocks:brazier',
     'decorative_blocks:soul_brazier',
-    'valhelsia_structures:brazier'
+    'valhelsia_structures:brazier',
 ];
 
 // Miscellaneous non-fire/campfire heat source blocks
@@ -25,7 +25,7 @@ const heatSources = [
     'quark:magma_bricks_slab',
     'quark:magma_bricks_stairs',
     'quark:magma_bricks_vertical_slab',
-    'quark:magma_bricks_wall'
+    'quark:magma_bricks_wall',
 ];
 
 // (non-fire/campfire) heat sources that do not have a solid top face

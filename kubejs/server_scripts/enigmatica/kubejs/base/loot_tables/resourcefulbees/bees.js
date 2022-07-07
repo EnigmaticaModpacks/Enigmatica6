@@ -8,11 +8,11 @@ onEvent('server.datapack.high_priority', (event) => {
                     entries: [
                         {
                             type: 'minecraft:item',
-                            name: `kubejs:${bee}_larva`
-                        }
-                    ]
-                }
-            ]
+                            name: `kubejs:${bee}_larva`,
+                        },
+                    ],
+                },
+            ],
         });
     });
 });

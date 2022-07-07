@@ -13,13 +13,13 @@ onEvent('recipes', (event) => {
                 b: {
                     tag: 'minecraft:water',
                     amount: 1000,
-                    type: 'immersiveengineering:fluid'
-                }
+                    type: 'immersiveengineering:fluid',
+                },
             },
             result: { item: 'immersiveengineering:concrete', count: 12 },
             quarter_turn: true,
-            id: 'immersiveengineering:crafting/concrete2'
-        }
+            id: 'immersiveengineering:crafting/concrete2',
+        },
     ];
     recipes.forEach((recipe) => {
         let constructed_recipe = {
@@ -27,7 +27,7 @@ onEvent('recipes', (event) => {
             pattern: recipe.pattern,
             key: recipe.key,
             result: recipe.result,
-            quarter_turn: recipe.quarter_turn
+            quarter_turn: recipe.quarter_turn,
         };
 
         if (recipe.group) {

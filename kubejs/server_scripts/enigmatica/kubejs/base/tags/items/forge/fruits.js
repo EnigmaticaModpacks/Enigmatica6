@@ -4,7 +4,7 @@ onEvent('item.tags', (event) => {
         'betterendforge:blossom_berry',
         'betterendforge:shadow_berry_raw',
         'atmospheric:yucca_fruit',
-        'atmospheric:passionfruit'
+        'atmospheric:passionfruit',
     ]);
 
     event.add('forge:fruits/mana_berry', ['ars_nouveau:mana_berry']);

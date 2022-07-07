@@ -9,11 +9,11 @@ onEvent('block.loot_tables', (event) => {
                     droppedItems: [
                         { weight: 10, id: 'minecraft:nautilus_shell' },
                         { weight: 60, id: 'minecraft:prismarine_shard' },
-                        { weight: 10, id: 'minecraft:prismarine_crystals' }
-                    ]
-                }
-            ]
-        }
+                        { weight: 10, id: 'minecraft:prismarine_crystals' },
+                    ],
+                },
+            ],
+        },
     ];
 
     loot_tables.forEach((loot_table) => {

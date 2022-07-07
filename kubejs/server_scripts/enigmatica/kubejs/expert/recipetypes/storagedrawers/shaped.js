@@ -10,9 +10,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'kubejs:scented_stick',
                 B: 'tconstruct:seared_brick',
-                C: 'storagedrawers:upgrade_template'
+                C: 'storagedrawers:upgrade_template',
             },
-            id: 'storagedrawers:obsidian_storage_upgrade'
+            id: 'storagedrawers:obsidian_storage_upgrade',
         },
         {
             output: 'storagedrawers:iron_storage_upgrade',
@@ -20,9 +20,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'kubejs:scented_stick',
                 B: '#forge:ingots/andesite_alloy',
-                C: 'storagedrawers:obsidian_storage_upgrade'
+                C: 'storagedrawers:obsidian_storage_upgrade',
             },
-            id: 'storagedrawers:iron_storage_upgrade'
+            id: 'storagedrawers:iron_storage_upgrade',
         },
         {
             output: 'storagedrawers:gold_storage_upgrade',
@@ -30,9 +30,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'kubejs:scented_stick',
                 B: '#forge:gems/blazing',
-                C: 'storagedrawers:iron_storage_upgrade'
+                C: 'storagedrawers:iron_storage_upgrade',
             },
-            id: 'storagedrawers:gold_storage_upgrade'
+            id: 'storagedrawers:gold_storage_upgrade',
         },
         {
             output: 'storagedrawers:diamond_storage_upgrade',
@@ -40,9 +40,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'kubejs:scented_stick',
                 B: '#forge:gems/niotic',
-                C: 'storagedrawers:gold_storage_upgrade'
+                C: 'storagedrawers:gold_storage_upgrade',
             },
-            id: 'storagedrawers:diamond_storage_upgrade'
+            id: 'storagedrawers:diamond_storage_upgrade',
         },
         {
             output: 'storagedrawers:emerald_storage_upgrade',
@@ -50,9 +50,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'kubejs:scented_stick',
                 B: '#forge:gems/spirited',
-                C: 'storagedrawers:diamond_storage_upgrade'
+                C: 'storagedrawers:diamond_storage_upgrade',
             },
-            id: 'storagedrawers:emerald_storage_upgrade'
+            id: 'storagedrawers:emerald_storage_upgrade',
         },
         {
             output: Item.of('2x storagedrawers:void_upgrade'),
@@ -60,18 +60,18 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'kubejs:scented_stick',
                 B: 'storagedrawers:upgrade_template',
-                C: 'trashcans:item_trash_can'
+                C: 'trashcans:item_trash_can',
             },
-            id: 'storagedrawers:void_upgrade'
+            id: 'storagedrawers:void_upgrade',
         },
         {
             output: Item.of('4x storagedrawers:upgrade_template'),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'kubejs:scented_stick',
-                B: 'framedcompactdrawers:framed_full_four'
+                B: 'framedcompactdrawers:framed_full_four',
             },
-            id: 'storagedrawers:upgrade_template'
+            id: 'storagedrawers:upgrade_template',
         },
         {
             output: 'storagedrawers:compacting_drawers_3',
@@ -80,9 +80,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/osmium',
                 B: '#forge:sheetmetals/aluminum',
                 C: '#storagedrawers:drawers',
-                D: 'pedestals:coin/compactor3'
+                D: 'pedestals:coin/compactor3',
             },
-            id: 'storagedrawers:compacting_drawers_3'
+            id: 'storagedrawers:compacting_drawers_3',
         },
         {
             output: 'storagedrawers:controller',
@@ -90,9 +90,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:sheetmetals/aluminum',
                 B: '#storagedrawers:drawers',
-                C: 'rftoolscontrol:processor'
+                C: 'rftoolscontrol:processor',
             },
-            id: 'storagedrawers:controller'
+            id: 'storagedrawers:controller',
         },
         {
             output: 'storagedrawers:controller_slave',
@@ -100,10 +100,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:sheetmetals/aluminum',
                 B: '#storagedrawers:drawers',
-                C: 'rftoolscontrol:node'
+                C: 'rftoolscontrol:node',
             },
-            id: 'storagedrawers:controller_slave'
-        }
+            id: 'storagedrawers:controller_slave',
+        },
     ];
 
     recipes.forEach((recipe) => {

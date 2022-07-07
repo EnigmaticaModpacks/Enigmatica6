@@ -34,7 +34,7 @@ onEvent('item.tags', (event) => {
         'naturesaura:tainted_gold',
         'occultism:iesnium_ingot',
         'powah:steel_energized',
-        'powah:uraninite'
+        'powah:uraninite',
     ]);
     event.add('forge:ingots/superheated_steel', ['kubejs:superheated_steel_ingot']);
     event.add('forge:ingots/hot_compressed_iron', ['kubejs:hot_compressed_iron_ingot']);

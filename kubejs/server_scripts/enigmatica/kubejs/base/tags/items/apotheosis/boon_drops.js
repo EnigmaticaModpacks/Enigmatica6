@@ -21,7 +21,7 @@ onEvent('item.tags', (event) => {
         'emendatusenigmatica:silver_chunk',
         'emendatusenigmatica:tin_chunk',
         'emendatusenigmatica:uranium_chunk',
-        'emendatusenigmatica:zinc_chunk'
+        'emendatusenigmatica:zinc_chunk',
     ];
     event.get('apotheosis:boon_drops').removeAll().add(items);
 });

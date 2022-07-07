@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
         recipes.push({
             output: `extrastorage:${crafter_tier}_crafter`,
             inputs: [Item.of(`extrastorage:${crafter_tier}_crafter`).ignoreNBT()],
-            id: `${id_prefix}${crafter_tier}crafter_reset`
+            id: `${id_prefix}${crafter_tier}crafter_reset`,
         });
     });
 

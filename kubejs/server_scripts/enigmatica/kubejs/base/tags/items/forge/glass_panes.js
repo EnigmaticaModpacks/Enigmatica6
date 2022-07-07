@@ -7,7 +7,7 @@ onEvent('item.tags', (event) => {
                 `connectedglass:borderless_glass_${color}_pane`,
                 `connectedglass:clear_glass_${color}_pane`,
                 `connectedglass:scratched_glass_${color}_pane`,
-                `quark:${color}_framed_glass_pane`
+                `quark:${color}_framed_glass_pane`,
             ]);
     });
 
@@ -17,6 +17,6 @@ onEvent('item.tags', (event) => {
             'create:tiled_glass_pane',
             'create:framed_glass_pane',
             'create:horizontal_framed_glass_pane',
-            'create:vertical_framed_glass_pane'
+            'create:vertical_framed_glass_pane',
         ]);
 });

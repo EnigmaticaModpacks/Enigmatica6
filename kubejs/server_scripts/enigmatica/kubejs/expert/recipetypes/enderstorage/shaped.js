@@ -12,9 +12,9 @@ onEvent('recipes', (event) => {
                 B: { tag: 'forge:wool' },
                 C: { item: 'alexsmobs:kangaroo_hide' },
                 D: { item: 'kubejs:dimensional_storage_crystal' },
-                E: { tag: 'forge:inlays/arcane_gold' }
+                E: { tag: 'forge:inlays/arcane_gold' },
             },
-            id: 'enderstorage:ender_pouch'
+            id: 'enderstorage:ender_pouch',
         },
         {
             output: 'enderstorage:ender_chest',
@@ -24,9 +24,9 @@ onEvent('recipes', (event) => {
                 B: { tag: 'forge:wool' },
                 C: { item: 'create:shadow_steel_casing' },
                 D: { item: 'kubejs:dimensional_storage_crystal' },
-                E: { tag: 'forge:plates/lumium' }
+                E: { tag: 'forge:plates/lumium' },
             },
-            id: 'enderstorage:ender_chest'
+            id: 'enderstorage:ender_chest',
         },
         {
             output: 'enderstorage:ender_tank',
@@ -37,10 +37,10 @@ onEvent('recipes', (event) => {
                 C: { item: 'create:shadow_steel_casing' },
                 D: { item: 'kubejs:dimensional_storage_crystal' },
                 E: { tag: 'forge:rods/lumium' },
-                F: { item: 'integratedterminals:chorus_glass' }
+                F: { item: 'integratedterminals:chorus_glass' },
             },
-            id: 'enderstorage:ender_tank'
-        }
+            id: 'enderstorage:ender_tank',
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -49,7 +49,7 @@ onEvent('recipes', (event) => {
                 type: 'enderstorage:create_recipe',
                 result: { item: recipe.output },
                 pattern: recipe.pattern,
-                key: recipe.key
+                key: recipe.key,
             })
             .id(recipe.id);
     });

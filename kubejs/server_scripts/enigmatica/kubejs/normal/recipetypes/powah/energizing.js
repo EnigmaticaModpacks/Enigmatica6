@@ -9,37 +9,37 @@ onEvent('recipes', (event) => {
             energy: 100000,
             result: {
                 item: 'powah:energized_steel_block',
-                count: 2
+                count: 2,
             },
-            id: `${id_prefix}energized_steel_block`
+            id: `${id_prefix}energized_steel_block`,
         },
         {
             ingredients: [{ item: 'botania:blaze_block' }],
             energy: 900000,
             result: {
                 item: 'powah:blazing_crystal_block',
-                count: 1
+                count: 1,
             },
-            id: `${id_prefix}blazing_crystal_block`
+            id: `${id_prefix}blazing_crystal_block`,
         },
         {
             ingredients: [{ tag: 'forge:storage_blocks/diamond' }],
             energy: 3000000,
             result: {
                 item: 'powah:niotic_crystal_block',
-                count: 1
+                count: 1,
             },
-            id: `${id_prefix}niotic_crystal_block`
+            id: `${id_prefix}niotic_crystal_block`,
         },
         {
             ingredients: [{ tag: 'forge:storage_blocks/emerald' }],
             energy: 10000000,
             result: {
                 item: 'powah:spirited_crystal_block',
-                count: 1
+                count: 1,
             },
-            id: `${id_prefix}spirited_crystal_block`
-        }
+            id: `${id_prefix}spirited_crystal_block`,
+        },
     ];
 
     const powerValues = ['5000', '10000', '15000', '20000', '25000', '30000'];
@@ -59,9 +59,9 @@ onEvent('recipes', (event) => {
                 energy: powerValue,
                 result: {
                     item: 'powah:uraninite',
-                    count: index + 1
+                    count: index + 1,
                 },
-                id: `${id_prefix}uraninite_${index}`
+                id: `${id_prefix}uraninite_${index}`,
             },
             {
                 type: 'powah:energizing',
@@ -69,10 +69,10 @@ onEvent('recipes', (event) => {
                 energy: powerValue * 9,
                 result: {
                     item: 'powah:uraninite_block',
-                    count: index + 1
+                    count: index + 1,
                 },
-                id: `${id_prefix}uraninite_block_${index}`
-            }
+                id: `${id_prefix}uraninite_block_${index}`,
+            },
         );
     });
 

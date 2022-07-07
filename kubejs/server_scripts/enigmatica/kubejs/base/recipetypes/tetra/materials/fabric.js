@@ -18,14 +18,14 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'wool_glyph', texture: 'wool' },
                     textures: ['crude', 'default'],
                     material: { tag: 'minecraft:wool' },
-                    requiredTools: { axe: 1 }
-                }
+                    requiredTools: { axe: 1 },
+                },
             ],
             type: 'compat',
             recipes: [
                 // todo: Marine Fabric, Protective Fabric, Tough Fabric, mana weave
-            ]
-        }
+            ],
+        },
     ];
 
     data.forEach((recipeType) => {

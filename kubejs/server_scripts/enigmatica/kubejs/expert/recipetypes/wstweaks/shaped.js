@@ -23,19 +23,19 @@ onEvent('recipes', (event) => {
                 A: 'rftoolspower:blazing_rod',
                 B: 'betterendforge:aeternium_sword_blade',
                 C: '#forge:gems/nitro',
-                D: 'betterendforge:aeternium_sword_handle'
+                D: 'betterendforge:aeternium_sword_handle',
             },
-            id: 'wstweaks:lava_blade'
+            id: 'wstweaks:lava_blade',
         },
         {
             output: 'wstweaks:blaze_blade',
             pattern: [' A ', 'ABA', ' A '],
             key: {
                 A: 'tconstruct:blazing_bone',
-                B: 'wstweaks:lava_blade'
+                B: 'wstweaks:lava_blade',
             },
-            id: 'wstweaks:blaze_blade'
-        }
+            id: 'wstweaks:blaze_blade',
+        },
     ];
 
     recipes.forEach((recipe) => {

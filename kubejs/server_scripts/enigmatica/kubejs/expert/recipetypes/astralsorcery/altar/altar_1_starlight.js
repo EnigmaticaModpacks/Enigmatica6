@@ -23,14 +23,14 @@ onEvent('recipes', (event) => {
                     hasToBeAttuned: false,
                     hasToBeCelestial: false,
                     canBeAttuned: true,
-                    canBeCelestialCrystal: true
+                    canBeCelestialCrystal: true,
                 },
                 B: { tag: 'forge:storage_blocks/silicon_bronze' },
                 C: { tag: 'forge:dusts/starmetal' },
                 D: { tag: 'botania:runes/vanaheim' },
                 E: { item: 'create:refined_radiance' },
                 F: { item: 'botania:spectral_platform' },
-                G: { tag: 'forge:storage_blocks/starmetal' }
+                G: { tag: 'forge:storage_blocks/starmetal' },
             },
             altar_type: 1,
             duration: 200,
@@ -39,9 +39,9 @@ onEvent('recipes', (event) => {
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:upgrade_altar',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/altar_constellation'
+            id: 'astralsorcery:altar/altar_constellation',
         },
         {
             output: Item.of('botania:alfheim_portal', 1),
@@ -54,7 +54,7 @@ onEvent('recipes', (event) => {
                 E: { tag: 'botania:runes/summer' },
                 F: { item: 'naturesaura:gold_leaf' },
                 G: { tag: 'botania:runes/air' },
-                H: { tag: 'botania:runes/lust' }
+                H: { tag: 'botania:runes/lust' },
             },
             altar_type: 1,
             duration: 200,
@@ -62,9 +62,9 @@ onEvent('recipes', (event) => {
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}alfheim_portal`
+            id: `${id_prefix}alfheim_portal`,
         },
         {
             output: Item.of('astralsorcery:telescope', 1),
@@ -75,16 +75,16 @@ onEvent('recipes', (event) => {
                 C: { tag: 'forge:ingots/sky' },
                 D: { item: 'eidolon:polished_planks' },
                 E: { tag: 'botania:runes/air' },
-                F: { item: 'astralsorcery:nocturnal_powder' }
+                F: { item: 'astralsorcery:nocturnal_powder' },
             },
             altar_type: 1,
             duration: 200,
             starlight: 800,
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/telescope'
+            id: 'astralsorcery:altar/telescope',
         },
         {
             output: Item.of('astralsorcery:shifting_star'),
@@ -101,17 +101,17 @@ onEvent('recipes', (event) => {
                     fluid: [
                         {
                             fluid: 'industrialforegoing:ether_gas',
-                            amount: 1000
-                        }
-                    ]
+                            amount: 1000,
+                        },
+                    ],
                 },
-                E: { item: 'bloodmagic:reagentbinding' }
+                E: { item: 'bloodmagic:reagentbinding' },
             },
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/shifting_star'
+            id: 'astralsorcery:altar/shifting_star',
         },
         {
             output: Item.of('botania:terra_plate', 1),
@@ -126,7 +126,7 @@ onEvent('recipes', (event) => {
                 G: { tag: 'forge:storage_blocks/starmetal' },
                 H: { tag: 'forge:storage_blocks/manasteel' },
                 I: { item: 'kubejs:firmament' },
-                J: { item: 'naturesaura:infused_stone' }
+                J: { item: 'naturesaura:infused_stone' },
             },
             altar_type: 1,
             duration: 200,
@@ -136,9 +136,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_lightbeams',
                 'astralsorcery:altar_default_sparkle',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}terra_plate`
+            id: `${id_prefix}terra_plate`,
         },
         {
             output: Item.of('astralsorcery:ritual_pedestal'),
@@ -153,13 +153,13 @@ onEvent('recipes', (event) => {
                 D: { item: 'astralsorcery:marble_pillar' },
                 E: { item: 'bloodmagic:masterritualstone' },
                 F: { item: 'astralsorcery:marble_runed' },
-                G: { tag: 'forge:inlays/arcane_gold' }
+                G: { tag: 'forge:inlays/arcane_gold' },
             },
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/ritual_pedestal'
+            id: 'astralsorcery:altar/ritual_pedestal',
         },
         {
             output: Item.of('cookingforblockheads:sink'),
@@ -177,15 +177,15 @@ onEvent('recipes', (event) => {
                     type: 'forge:nbt',
                     item: 'naturesaura:aura_trove',
                     count: 1,
-                    nbt: '{aura:1200000}'
+                    nbt: '{aura:1200000}',
                 },
-                G: { item: 'minecraft:terracotta' }
+                G: { item: 'minecraft:terracotta' },
             },
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'cookingforblockheads:sink'
+            id: 'cookingforblockheads:sink',
         },
         {
             output: Item.of('industrialforegoing:fluid_laser_base', 1),
@@ -197,7 +197,7 @@ onEvent('recipes', (event) => {
                 D: { tag: 'forge:gears/lumium' },
                 E: { item: 'mekanism:basic_induction_cell' },
                 F: { tag: 'botania:runes/fire' },
-                G: { item: 'bloodmagic:soulgemlesser' }
+                G: { item: 'bloodmagic:soulgemlesser' },
             },
             altar_type: 1,
             duration: 200,
@@ -207,9 +207,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_lightbeams',
                 'astralsorcery:altar_default_sparkle',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}fluid_laser_base`
+            id: `${id_prefix}fluid_laser_base`,
         },
         {
             output: Item.of('apotheosis:seashelf', 1),
@@ -220,16 +220,16 @@ onEvent('recipes', (event) => {
                 C: { item: 'resourcefulbees:icy_honeycomb' },
                 E: { tag: 'forge:bookshelves' },
                 F: { item: 'powah:crystal_niotic' },
-                G: { item: 'bloodmagic:reagentwater' }
+                G: { item: 'bloodmagic:reagentwater' },
             },
             altar_type: 1,
             duration: 200,
             starlight: 1400,
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}seashelf`
+            id: `${id_prefix}seashelf`,
         },
 
         /// Guidebook safe removals
@@ -238,14 +238,14 @@ onEvent('recipes', (event) => {
             output: Item.of('astralsorcery:attunement_altar'),
             pattern: ['_____', '_____', '__A__', '_____', '_____'],
             key: {
-                A: { item: 'kubejs:altered_recipe_indicator' }
+                A: { item: 'kubejs:altered_recipe_indicator' },
             },
             altar_type: 1,
             duration: 200,
             starlight: 1400,
             effects: ['astralsorcery:pillar_sparkle'],
-            id: 'astralsorcery:altar/attunement_altar'
-        }
+            id: 'astralsorcery:altar/attunement_altar',
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -257,7 +257,7 @@ onEvent('recipes', (event) => {
             pattern: recipe.pattern,
             key: recipe.key,
             output: [recipe.output.toResultJson()],
-            effects: recipe.effects
+            effects: recipe.effects,
         };
 
         if (recipe.relay_inputs) {

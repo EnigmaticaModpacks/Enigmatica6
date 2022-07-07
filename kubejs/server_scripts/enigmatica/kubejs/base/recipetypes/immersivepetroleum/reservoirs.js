@@ -10,15 +10,15 @@ onEvent('recipes', (event) => {
             weight: 40,
             dimension: {
                 whitelist: [],
-                blacklist: ['minecraft:the_end']
+                blacklist: ['minecraft:the_end'],
             },
             biome: {
                 whitelist: [],
-                blacklist: []
+                blacklist: [],
             },
             name: 'oil',
-            id: 'immersivepetroleum:reservoirs/oil'
-        }
+            id: 'immersivepetroleum:reservoirs/oil',
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -3,8 +3,8 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'),
             inputs: ['minecraft:book', '#forge:ingots/gold'],
-            id: `apotheosis:book`
-        }
+            id: `apotheosis:book`,
+        },
     ];
 
     recipes.forEach((recipe) => {

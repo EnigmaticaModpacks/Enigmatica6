@@ -5,65 +5,65 @@ onEvent('recipes', (event) => {
         {
             replaceTarget: { id: 'entangled:block' },
             toReplace: 'minecraft:chest',
-            replaceWith: '#forge:chests/wooden'
+            replaceWith: '#forge:chests/wooden',
         },
         {
             replaceTarget: { id: 'constructionwand:stone_wand' },
             toReplace: '#minecraft:stone_tool_materials',
-            replaceWith: '#quark:stone_tool_materials'
+            replaceWith: '#quark:stone_tool_materials',
         },
         {
             replaceTarget: { id: 'archers_paradox:lightning_arrow' },
             toReplace: 'minecraft:nether_star',
-            replaceWith: 'thermal:lightning_charge'
+            replaceWith: 'thermal:lightning_charge',
         },
         {
             replaceTarget: { id: 'immersivecooking:fried_potato_cubes' },
             toReplace: 'immersivecooking:potato_slice',
-            replaceWith: 'immersivecooking:potato_cubes'
+            replaceWith: 'immersivecooking:potato_cubes',
         },
         {
             replaceTarget: {
-                not: [{ id: 'minecraft:dried_kelp_block' }]
+                not: [{ id: 'minecraft:dried_kelp_block' }],
             },
             toReplace: 'minecraft:dried_kelp',
-            replaceWith: ['minecraft:dried_kelp', 'sushigocrafting:dried_seaweed']
+            replaceWith: ['minecraft:dried_kelp', 'sushigocrafting:dried_seaweed'],
         },
         {
             replaceTarget: { id: 'eidolon:stone_hand' },
             toReplace: 'minecraft:stone_slab',
-            replaceWith: '#enigmatica:crafting_slabs'
+            replaceWith: '#enigmatica:crafting_slabs',
         },
         {
             replaceTarget: { id: 'culinaryconstruct:culinary_station' },
             toReplace: 'minecraft:stone_slab',
-            replaceWith: '#enigmatica:crafting_slabs'
+            replaceWith: '#enigmatica:crafting_slabs',
         },
         {
             replaceTarget: { id: 'minecraft:grindstone' },
             toReplace: 'minecraft:stone_slab',
-            replaceWith: '#enigmatica:crafting_slabs'
+            replaceWith: '#enigmatica:crafting_slabs',
         },
         {
             replaceTarget: {},
             toReplace: 'emendatusenigmatica:coke_block',
-            replaceWith: '#forge:storage_blocks/coke'
+            replaceWith: '#forge:storage_blocks/coke',
         },
         {
             replaceTarget: {},
             toReplace: 'emendatusenigmatica:arcane_block',
-            replaceWith: '#forge:storage_blocks/mana'
+            replaceWith: '#forge:storage_blocks/mana',
         },
         {
             replaceTarget: {},
             toReplace: 'emendatusenigmatica:sulfur_gem',
-            replaceWith: '#forge:gems/sulfur'
+            replaceWith: '#forge:gems/sulfur',
         },
         {
             replaceTarget: {},
             toReplace: 'emendatusenigmatica:steel_block',
-            replaceWith: '#forge:storage_blocks/steel'
-        }
+            replaceWith: '#forge:storage_blocks/steel',
+        },
     ];
     event.replaceInput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');
     event.replaceInput({}, 'architects_palette:withered_bone', '#forge:bones/wither');
@@ -109,20 +109,20 @@ onEvent('recipes', (event) => {
     event.replaceInput({}, 'tconstruct:cobalt_nugget', '#forge:nuggets/cobalt');
     event.replaceInput(
         {
-            not: [{ type: 'ars_nouveau:glyph_recipe' }]
+            not: [{ type: 'ars_nouveau:glyph_recipe' }],
         },
         'minecraft:nether_brick',
-        '#forge:ingots/nether_brick'
+        '#forge:ingots/nether_brick',
     );
     event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
     event.replaceInput(
         {
             type: 'minecraft:crafting_shaped',
-            not: [{ id: 'minecraft:stone_slab' }, { id: 'minecraft:stone_stairs' }]
+            not: [{ id: 'minecraft:stone_slab' }, { id: 'minecraft:stone_stairs' }],
         },
         'minecraft:stone',
         '#forge:stone',
-        true
+        true,
     );
     event.replaceInput({ type: 'minecraft:crafting_shapeless' }, 'minecraft:stone', '#forge:stone', true);
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
@@ -151,7 +151,7 @@ onEvent('recipes', (event) => {
     event.replaceInput(
         { id: 'powah:crafting/solar_panel_basic' },
         'powah:solar_panel_starter',
-        'powah:photoelectric_pane'
+        'powah:photoelectric_pane',
     );
 
     event.replaceInput({ mod: 'astralsorcery' }, 'astralsorcery:marble_raw', '#forge:stones/marble');
@@ -159,7 +159,7 @@ onEvent('recipes', (event) => {
     event.replaceInput(
         { type: 'minecraft:crafting_shaped', output: 'minecraft:piston' },
         '#forge:cobblestone',
-        '#quark:stone_tool_materials'
+        '#quark:stone_tool_materials',
     );
 
     ['quark:tallow', 'eidolon:tallow', 'occultism:tallow'].forEach((tallow) => {
@@ -169,19 +169,19 @@ onEvent('recipes', (event) => {
     event.replaceInput(
         { id: 'dustrial_decor:iron_bar_trapdoor' },
         'minecraft:iron_bars',
-        'dustrial_decor:barbed_iron_bars'
+        'dustrial_decor:barbed_iron_bars',
     );
 
     event.replaceInput(
         { id: 'bloodmagic:alchemytable/basic_cutting_fluid' },
         'minecraft:potion',
-        Item.of('minecraft:potion', { Potion: 'minecraft:water' })
+        Item.of('minecraft:potion', { Potion: 'minecraft:water' }),
     );
 
     event.replaceInput(
         { id: 'create:mixing/chromatic_compound' },
         'create:powdered_obsidian',
-        Ingredient.of('#forge:dusts/obsidian')
+        Ingredient.of('#forge:dusts/obsidian'),
     );
 
     event.replaceInput({ id: 'fluxnetworks:fluxconfigurator' }, 'minecraft:ender_eye', 'powah:ender_core');
@@ -189,22 +189,22 @@ onEvent('recipes', (event) => {
     event.replaceInput({ id: 'fluxnetworks:fluxpoint' }, 'minecraft:redstone_block', 'powah:ender_gate_nitro');
     event.replaceInput(
         {
-            not: [{ type: 'ars_nouveau:glyph_recipe' }]
+            not: [{ type: 'ars_nouveau:glyph_recipe' }],
         },
         'minecraft:crafting_table',
-        '#forge:workbenches'
+        '#forge:workbenches',
     );
 
     event.replaceInput({ id: 'minecraft:nether_bricks' }, '#forge:ingots/nether_brick', 'minecraft:nether_brick');
     event.replaceInput(
         { id: 'thermal:machine/press/packing2x2/press_nether_bricks_packing' },
         '#forge:ingots/nether_brick',
-        'minecraft:nether_brick'
+        'minecraft:nether_brick',
     );
     event.replaceInput(
         { id: 'thermal:machine/press/unpacking/press_wool_unpacking' },
         'minecraft:white_wool',
-        '#forge:wool'
+        '#forge:wool',
     );
 
     sharedDies.forEach((die) => {
@@ -226,29 +226,29 @@ onEvent('recipes', (event) => {
         event.replaceInput({}, `minecraft:${color}_dye`, dyeTag, true);
 
         event.remove({
-            id: `minecraft:${color}_carpet_from_white_carpet`
+            id: `minecraft:${color}_carpet_from_white_carpet`,
         });
         fallback_id(
             event.shaped(Item.of(`minecraft:${color}_carpet`, 3), ['WW'], {
-                W: `minecraft:${color}_wool`
+                W: `minecraft:${color}_wool`,
             }),
-            id_prefix
+            id_prefix,
         );
 
         fallback_id(
             event.shaped(Item.of(`minecraft:${color}_stained_glass_pane`, 8), ['GGG', 'GDG', 'GGG'], {
                 G: 'minecraft:glass_pane',
-                D: dyeTag
+                D: dyeTag,
             }),
-            id_prefix
+            id_prefix,
         );
 
         fallback_id(
             event.shaped(Item.of(`minecraft:${color}_stained_glass`, 8), ['GGG', 'GDG', 'GGG'], {
                 G: 'minecraft:glass',
-                D: dyeTag
+                D: dyeTag,
             }),
-            id_prefix
+            id_prefix,
         );
 
         ['stained_glass', 'stained_glass_pane', 'terracotta', 'concrete_powder', 'wool', 'carpet'].forEach(
@@ -265,12 +265,12 @@ onEvent('recipes', (event) => {
                 fallback_id(
                     event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
                         S: itemTag,
-                        D: dyeTag
+                        D: dyeTag,
                     }),
-                    id_prefix
+                    id_prefix,
                 );
                 fallback_id(event.shapeless(Item.of(block, 1), [dyeTag, itemTag]), id_prefix);
-            }
+            },
         );
 
         ['linen', 'linen_carpet'].forEach((blockName) => {
@@ -289,7 +289,7 @@ onEvent('recipes', (event) => {
             event
                 .shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
                     S: itemTag,
-                    D: dyeTag
+                    D: dyeTag,
                 })
                 .id(`kubejs:${blockName}_${color}_bulk`);
             event.shapeless(Item.of(block, 1), [dyeTag, itemTag]).id(`kubejs:${blockName}_${color}`);
@@ -305,9 +305,9 @@ onEvent('recipes', (event) => {
                 '#forge:gravel',
                 '#forge:gravel',
                 '#forge:gravel',
-                '#forge:gravel'
+                '#forge:gravel',
             ]),
-            id_prefix
+            id_prefix,
         );
     });
 
@@ -320,20 +320,20 @@ onEvent('recipes', (event) => {
                 'bloodmagic:soulforge',
                 'mininggadgets:upgrade_fortune_1',
                 'resourcefulbees:centrifuge_casing',
-                'xnet:antenna_base'
-            ]
+                'xnet:antenna_base',
+            ],
         },
         {
             type: 'storage_blocks',
             replace: 'iron',
             replaceWith: 'brass',
-            items: ['ars_nouveau:glyph_press']
+            items: ['ars_nouveau:glyph_press'],
         },
         {
             type: 'storage_blocks',
             replace: 'iron',
             replaceWith: 'invar',
-            items: ['resourcefulbees:centrifuge_controller']
+            items: ['resourcefulbees:centrifuge_controller'],
         },
         {
             type: 'storage_blocks',
@@ -343,38 +343,38 @@ onEvent('recipes', (event) => {
                 'travel_anchors:travel_anchor',
                 'thermal:machine_press',
                 'bloodmagic:alchemicalreactionchamber',
-                'integrateddynamics:squeezer'
-            ]
+                'integrateddynamics:squeezer',
+            ],
         },
         {
             type: 'storage_blocks',
             replace: 'iron',
             replaceWith: 'tin',
-            items: ['aquaculture:tackle_box']
+            items: ['aquaculture:tackle_box'],
         },
         {
             type: 'dusts',
             replace: 'gold',
             replaceWith: 'copper',
-            items: ['mekanism:upgrade_energy']
+            items: ['mekanism:upgrade_energy'],
         },
         {
             type: 'gears',
             replace: 'gold',
             replaceWith: 'bronze',
-            items: ['thermal:upgrade_augment_1']
+            items: ['thermal:upgrade_augment_1'],
         },
         {
             type: 'gears',
             replace: 'gold',
             replaceWith: 'copper',
-            items: ['thermal:flux_drill', 'thermal:flux_saw']
+            items: ['thermal:flux_drill', 'thermal:flux_saw'],
         },
         {
             type: 'gears',
             replace: 'gold',
             replaceWith: 'silver',
-            items: ['thermal:dynamo_lapidary']
+            items: ['thermal:dynamo_lapidary'],
         },
         {
             type: 'ingots',
@@ -391,8 +391,8 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:mycelial_sourcelink',
                 'ars_nouveau:vitalic_sourcelink',
                 'ars_nouveau:alchemical_sourcelink',
-                'ars_nouveau:mana_condenser'
-            ]
+                'ars_nouveau:mana_condenser',
+            ],
         },
         {
             type: 'ingots',
@@ -410,8 +410,8 @@ onEvent('recipes', (event) => {
                 'thermal:diving_chestplate',
                 'thermal:diving_leggings',
                 'thermal:diving_boots',
-                'minecraft:clock'
-            ]
+                'minecraft:clock',
+            ],
         },
         {
             type: 'ingots',
@@ -433,20 +433,20 @@ onEvent('recipes', (event) => {
                 'modularrouters:speed_upgrade',
                 'xnet:connector_blue',
                 'xnet:connector_red',
-                'xnet:connector_green'
-            ]
+                'xnet:connector_green',
+            ],
         },
         {
             type: 'ingots',
             replace: 'gold',
             replaceWith: 'silver',
-            items: ['torchmaster:feral_flare_lantern', 'mekanism:teleportation_core', 'botania:mana_spreader']
+            items: ['torchmaster:feral_flare_lantern', 'mekanism:teleportation_core', 'botania:mana_spreader'],
         },
         {
             type: 'ingots',
             replace: 'gold',
             replaceWith: 'tin',
-            items: ['pneumaticcraft:memory_stick']
+            items: ['pneumaticcraft:memory_stick'],
         },
         {
             type: 'ingots',
@@ -473,14 +473,14 @@ onEvent('recipes', (event) => {
                 'transport:fluid_loader',
                 'resourcefulbees:centrifuge_casing',
                 'engineersdecor:metal_bar',
-                'integrateddynamics:drying_basin'
-            ]
+                'integrateddynamics:drying_basin',
+            ],
         },
         {
             type: 'ingots',
             replace: 'iron',
             replaceWith: 'brass',
-            items: ['ars_nouveau:mana_condenser', 'ars_nouveau:enchanting_apparatus']
+            items: ['ars_nouveau:mana_condenser', 'ars_nouveau:enchanting_apparatus'],
         },
         {
             type: 'ingots',
@@ -490,32 +490,32 @@ onEvent('recipes', (event) => {
                 'shrink:shrinking_device',
                 'immersiveengineering:charging_station',
                 'cookingforblockheads:heating_unit',
-                'aquaculture:tackle_box'
-            ]
+                'aquaculture:tackle_box',
+            ],
         },
         {
             type: 'ingots',
             replace: 'iron',
             replaceWith: 'lead',
-            items: ['travel_anchors:travel_anchor', 'travel_anchors:travel_staff', 'integrateddynamics:squeezer']
+            items: ['travel_anchors:travel_anchor', 'travel_anchors:travel_staff', 'integrateddynamics:squeezer'],
         },
         {
             type: 'ingots',
             replace: 'iron',
             replaceWith: 'tin',
-            items: ['bloodmagic:soulsnare', 'modularrouters:bulk_item_filter', 'chisel:auto_chisel']
+            items: ['bloodmagic:soulsnare', 'modularrouters:bulk_item_filter', 'chisel:auto_chisel'],
         },
         {
             type: 'ingots',
             replace: 'iron',
             replaceWith: 'osmium',
-            items: ['integrateddynamics:part_machine_reader', 'integratedcrafting:crafting/part_interface_crafting']
+            items: ['integrateddynamics:part_machine_reader', 'integratedcrafting:crafting/part_interface_crafting'],
         },
         {
             type: 'nuggets',
             replace: 'gold',
             replaceWith: 'bronze',
-            items: ['rftoolsstorage:storage_module0']
+            items: ['rftoolsstorage:storage_module0'],
         },
         {
             type: 'nuggets',
@@ -533,15 +533,15 @@ onEvent('recipes', (event) => {
                 'rftoolscontrol:card_base',
                 'modularrouters:speed_upgrade',
                 'modularrouters:blank_upgrade',
-                'modularrouters:blank_module'
-            ]
+                'modularrouters:blank_module',
+            ],
         },
         {
             type: 'nuggets',
             replace: 'gold',
             replaceWith: 'silver',
-            items: ['botania:spark', 'chisel:hitech_chisel']
-        }
+            items: ['botania:spark', 'chisel:hitech_chisel'],
+        },
     ];
 
     alt_material_tag_replacements.forEach((recipe) => {
@@ -549,7 +549,7 @@ onEvent('recipes', (event) => {
             event.replaceInput(
                 { output: item },
                 `#forge:${recipe.type}/${recipe.replace}`,
-                `#forge:${recipe.type}/${recipe.replace}_${recipe.replaceWith}`
+                `#forge:${recipe.type}/${recipe.replace}_${recipe.replaceWith}`,
             );
         });
     });

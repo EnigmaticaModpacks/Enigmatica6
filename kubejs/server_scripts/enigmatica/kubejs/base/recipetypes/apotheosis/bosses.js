@@ -24,25 +24,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 8 }
+                    value: { min: 3, max: 8 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.1, max: 0.2 }
+                    value: { min: 0.1, max: 0.2 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.6 }
+                    value: { min: 2, max: 4.6 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.75, max: 1 }
-                }
+                    value: { min: 0.75, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#enderman']
+            valid_gear_sets: ['#enderman'],
         },
         {
             name: 'zombie',
@@ -57,25 +57,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2.5, max: 6 }
+                    value: { min: 2.5, max: 6 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.05, max: 0.1 }
+                    value: { min: 0.05, max: 0.1 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3.8, max: 5.3 }
+                    value: { min: 3.8, max: 5.3 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.35, max: 1 }
-                }
+                    value: { min: 0.35, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'zom_piglin',
@@ -90,25 +90,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3.6, max: 7 }
+                    value: { min: 3.6, max: 7 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.08, max: 0.2 }
+                    value: { min: 0.08, max: 0.2 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 6.5 }
+                    value: { min: 3, max: 6.5 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.75, max: 1 }
-                }
+                    value: { min: 0.75, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'stray',
@@ -123,25 +123,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 6 }
+                    value: { min: 3, max: 6 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.05, max: 0.15 }
+                    value: { min: 0.05, max: 0.15 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2.5, max: 5 }
+                    value: { min: 2.5, max: 5 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.35, max: 0.85 }
-                }
+                    value: { min: 0.35, max: 0.85 },
+                },
             ],
-            valid_gear_sets: ['#skeleton']
+            valid_gear_sets: ['#skeleton'],
         },
         {
             name: 'skeleton',
@@ -156,25 +156,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.5 }
+                    value: { min: 2, max: 4.5 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.08, max: 0.17 }
+                    value: { min: 0.08, max: 0.17 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4 }
+                    value: { min: 2, max: 4 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.35, max: 0.75 }
-                }
+                    value: { min: 0.35, max: 0.75 },
+                },
             ],
-            valid_gear_sets: ['#skeleton']
+            valid_gear_sets: ['#skeleton'],
         },
         {
             name: 'husk',
@@ -189,25 +189,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 7 }
+                    value: { min: 3, max: 7 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.07, max: 0.12 }
+                    value: { min: 0.07, max: 0.12 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 4, max: 5.8 }
+                    value: { min: 4, max: 5.8 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.65, max: 1 }
-                }
+                    value: { min: 0.65, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
 
         // Custom Bosses
@@ -225,25 +225,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 7 }
+                    value: { min: 3, max: 7 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.07, max: 0.12 }
+                    value: { min: 0.07, max: 0.12 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 4, max: 5.8 }
+                    value: { min: 4, max: 5.8 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.65, max: 1 }
-                }
+                    value: { min: 0.65, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'zombie_brute',
@@ -258,25 +258,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 8 }
+                    value: { min: 3, max: 8 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.1, max: 0.2 }
+                    value: { min: 0.1, max: 0.2 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.6 }
+                    value: { min: 2, max: 4.6 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.75, max: 1 }
-                }
+                    value: { min: 0.75, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'blaze',
@@ -288,31 +288,31 @@ onEvent('server.datapack.high_priority', (event) => {
             enchantment_levels: [40, 30, 60, 30],
             effects: [
                 { effect: 'ars_nouveau:shield', chance: 1.0 },
-                { effect: 'minecraft:regeneration', chance: 1.0 }
+                { effect: 'minecraft:regeneration', chance: 1.0 },
             ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.5 }
+                    value: { min: 2, max: 4.5 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.08, max: 0.17 }
+                    value: { min: 0.08, max: 0.17 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4 }
+                    value: { min: 2, max: 4 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.35, max: 0.75 }
-                }
+                    value: { min: 0.35, max: 0.75 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'basalz',
@@ -324,31 +324,31 @@ onEvent('server.datapack.high_priority', (event) => {
             enchantment_levels: [40, 30, 60, 30],
             effects: [
                 { effect: 'ars_nouveau:shield', chance: 1.0 },
-                { effect: 'minecraft:regeneration', chance: 1.0 }
+                { effect: 'minecraft:regeneration', chance: 1.0 },
             ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.5 }
+                    value: { min: 2, max: 4.5 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.08, max: 0.17 }
+                    value: { min: 0.08, max: 0.17 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4 }
+                    value: { min: 2, max: 4 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.35, max: 0.75 }
-                }
+                    value: { min: 0.35, max: 0.75 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'blizz',
@@ -360,31 +360,31 @@ onEvent('server.datapack.high_priority', (event) => {
             enchantment_levels: [40, 30, 60, 30],
             effects: [
                 { effect: 'ars_nouveau:shield', chance: 1.0 },
-                { effect: 'minecraft:regeneration', chance: 1.0 }
+                { effect: 'minecraft:regeneration', chance: 1.0 },
             ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.5 }
+                    value: { min: 2, max: 4.5 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.08, max: 0.17 }
+                    value: { min: 0.08, max: 0.17 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4 }
+                    value: { min: 2, max: 4 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.35, max: 0.75 }
-                }
+                    value: { min: 0.35, max: 0.75 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'blitz',
@@ -396,31 +396,31 @@ onEvent('server.datapack.high_priority', (event) => {
             enchantment_levels: [40, 30, 60, 30],
             effects: [
                 { effect: 'ars_nouveau:shield', chance: 1.0 },
-                { effect: 'minecraft:regeneration', chance: 1.0 }
+                { effect: 'minecraft:regeneration', chance: 1.0 },
             ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.5 }
+                    value: { min: 2, max: 4.5 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.08, max: 0.17 }
+                    value: { min: 0.08, max: 0.17 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4 }
+                    value: { min: 2, max: 4 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.35, max: 0.75 }
-                }
+                    value: { min: 0.35, max: 0.75 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'wither_skeleton',
@@ -435,25 +435,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 8 }
+                    value: { min: 3, max: 8 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.1, max: 0.2 }
+                    value: { min: 0.1, max: 0.2 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.6 }
+                    value: { min: 2, max: 4.6 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.75, max: 1 }
-                }
+                    value: { min: 0.75, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'mimic',
@@ -468,25 +468,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 8 }
+                    value: { min: 3, max: 8 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.1, max: 0.2 }
+                    value: { min: 0.1, max: 0.2 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.6 }
+                    value: { min: 2, max: 4.6 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.75, max: 1 }
-                }
+                    value: { min: 0.75, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'crimson_mosquito',
@@ -501,25 +501,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 8 }
+                    value: { min: 3, max: 8 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.1, max: 0.2 }
+                    value: { min: 0.1, max: 0.2 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.6 }
+                    value: { min: 2, max: 4.6 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.75, max: 1 }
-                }
+                    value: { min: 0.75, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard', '#flying_bugs']
+            valid_gear_sets: ['#standard', '#flying_bugs'],
         },
         {
             name: 'tarantula_hawk',
@@ -534,25 +534,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 8 }
+                    value: { min: 3, max: 8 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.1, max: 0.2 }
+                    value: { min: 0.1, max: 0.2 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.6 }
+                    value: { min: 2, max: 4.6 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.75, max: 1 }
-                }
+                    value: { min: 0.75, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard', '#flying_bugs']
+            valid_gear_sets: ['#standard', '#flying_bugs'],
         },
         {
             name: 'dropbear',
@@ -567,25 +567,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 7 }
+                    value: { min: 3, max: 7 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.07, max: 0.12 }
+                    value: { min: 0.07, max: 0.12 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 4, max: 5.8 }
+                    value: { min: 4, max: 5.8 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.65, max: 1 }
-                }
+                    value: { min: 0.65, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'barbarian',
@@ -597,31 +597,31 @@ onEvent('server.datapack.high_priority', (event) => {
             enchantment_levels: [20, 15, 50, 30],
             effects: [
                 { effect: 'minecraft:fire_resistance', chance: 1.0 },
-                { effect: 'minecraft:strength', chance: 1.0 }
+                { effect: 'minecraft:strength', chance: 1.0 },
             ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 7, max: 15 }
+                    value: { min: 7, max: 15 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.07, max: 0.12 }
+                    value: { min: 0.07, max: 0.12 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 4, max: 10 }
+                    value: { min: 4, max: 10 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.65, max: 1 }
-                }
+                    value: { min: 0.65, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'mummy',
@@ -634,31 +634,31 @@ onEvent('server.datapack.high_priority', (event) => {
             effects: [
                 { effect: 'ars_nouveau:shield', chance: 1.0 },
                 { effect: 'minecraft:regeneration', chance: 1.0 },
-                { effect: 'minecraft:strength', chance: 1.0 }
+                { effect: 'minecraft:strength', chance: 1.0 },
             ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 7, max: 10 }
+                    value: { min: 7, max: 10 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.08, max: 0.17 }
+                    value: { min: 0.08, max: 0.17 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 16 }
+                    value: { min: 2, max: 16 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 1, max: 1 }
-                }
+                    value: { min: 1, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'sergeant',
@@ -670,31 +670,31 @@ onEvent('server.datapack.high_priority', (event) => {
             enchantment_levels: [20, 15, 50, 30],
             effects: [
                 { effect: 'minecraft:fire_resistance', chance: 1.0 },
-                { effect: 'minecraft:strength', chance: 1.0 }
+                { effect: 'minecraft:strength', chance: 1.0 },
             ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 7 }
+                    value: { min: 3, max: 7 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.07, max: 0.12 }
+                    value: { min: 0.07, max: 0.12 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 4, max: 5.8 }
+                    value: { min: 4, max: 5.8 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.65, max: 1 }
-                }
+                    value: { min: 0.65, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'forsaken',
@@ -709,25 +709,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 6 }
+                    value: { min: 3, max: 6 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.05, max: 0.15 }
+                    value: { min: 0.05, max: 0.15 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2.5, max: 5 }
+                    value: { min: 2.5, max: 5 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.35, max: 0.85 }
-                }
+                    value: { min: 0.35, max: 0.85 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'vindicator',
@@ -742,25 +742,25 @@ onEvent('server.datapack.high_priority', (event) => {
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 6, max: 10 }
+                    value: { min: 6, max: 10 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.05, max: 0.15 }
+                    value: { min: 0.05, max: 0.15 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2.5, max: 5 }
+                    value: { min: 2.5, max: 5 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.35, max: 0.85 }
-                }
+                    value: { min: 0.35, max: 0.85 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'evoker',
@@ -773,31 +773,31 @@ onEvent('server.datapack.high_priority', (event) => {
             effects: [
                 { effect: 'ars_nouveau:shield', chance: 1.0 },
                 { effect: 'minecraft:regeneration', chance: 1.0 },
-                { effect: 'minecraft:strength', chance: 1.0 }
+                { effect: 'minecraft:strength', chance: 1.0 },
             ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 6, max: 7 }
+                    value: { min: 6, max: 7 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.08, max: 0.17 }
+                    value: { min: 0.08, max: 0.17 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 16 }
+                    value: { min: 2, max: 16 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 1, max: 1 }
-                }
+                    value: { min: 1, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
+            valid_gear_sets: ['#standard'],
         },
         {
             name: 'brutish_zombee',
@@ -810,31 +810,31 @@ onEvent('server.datapack.high_priority', (event) => {
             effects: [
                 { effect: 'minecraft:regeneration', chance: 1.0 },
                 { effect: 'environmental:panic', chance: 1.0 },
-                { effect: 'tetra:howling', chance: 1.0 }
+                { effect: 'tetra:howling', chance: 1.0 },
             ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 4, max: 12 }
+                    value: { min: 4, max: 12 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.08, max: 0.17 }
+                    value: { min: 0.08, max: 0.17 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 8 }
+                    value: { min: 2, max: 8 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 1, max: 1 }
-                }
+                    value: { min: 1, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard', '#flying_bugs']
+            valid_gear_sets: ['#standard', '#flying_bugs'],
         },
         {
             name: 'iron_golem',
@@ -846,32 +846,32 @@ onEvent('server.datapack.high_priority', (event) => {
             enchantment_levels: [50, 30, 120, 40],
             effects: [
                 { effect: 'minecraft:resistance', chance: 1.0 },
-                { effect: 'minecraft:regeneration', chance: 1.0 }
+                { effect: 'minecraft:regeneration', chance: 1.0 },
             ],
             attribute_modifiers: [
                 {
                     attribute: 'minecraft:generic.max_health',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 8 }
+                    value: { min: 3, max: 8 },
                 },
                 {
                     attribute: 'minecraft:generic.movement_speed',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 0.08, max: 0.2 }
+                    value: { min: 0.08, max: 0.2 },
                 },
                 {
                     attribute: 'minecraft:generic.attack_damage',
                     operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.6 }
+                    value: { min: 2, max: 4.6 },
                 },
                 {
                     attribute: 'minecraft:generic.knockback_resistance',
                     operation: 'ADDITION',
-                    value: { min: 0.75, max: 1 }
-                }
+                    value: { min: 0.75, max: 1 },
+                },
             ],
-            valid_gear_sets: ['#standard']
-        }
+            valid_gear_sets: ['#standard'],
+        },
     ];
 
     bossTypes.forEach((bossType) => {

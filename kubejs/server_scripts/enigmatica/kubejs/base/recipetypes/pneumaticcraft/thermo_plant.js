@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
             pressure: 1.0,
             speed: 5.0,
             exothermic: false,
-            id: `${id_prefix}if_memory_essence_from_sbp_essence`
+            id: `${id_prefix}if_memory_essence_from_sbp_essence`,
         },
         {
             type: 'pneumaticcraft:thermo_plant',
@@ -18,7 +18,7 @@ onEvent('recipes', (event) => {
             pressure: 1.0,
             speed: 5.0,
             exothermic: false,
-            id: `${id_prefix}cofh_experience_from_if_essence`
+            id: `${id_prefix}cofh_experience_from_if_essence`,
         },
         {
             type: 'pneumaticcraft:thermo_plant',
@@ -27,7 +27,7 @@ onEvent('recipes', (event) => {
             pressure: 1.0,
             speed: 5.0,
             exothermic: false,
-            id: `${id_prefix}pnc_essence_from_cofh_experience`
+            id: `${id_prefix}pnc_essence_from_cofh_experience`,
         },
         {
             type: 'pneumaticcraft:thermo_plant',
@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
             pressure: 1.0,
             speed: 5.0,
             exothermic: false,
-            id: `${id_prefix}sbp_essence_from_pnc_experience`
+            id: `${id_prefix}sbp_essence_from_pnc_experience`,
         },
         {
             type: 'pneumaticcraft:thermo_plant',
@@ -47,7 +47,7 @@ onEvent('recipes', (event) => {
             speed: 2.0,
             exothermic: false,
             temperature: { min_temp: 373 },
-            id: `${id_prefix}clay`
+            id: `${id_prefix}clay`,
         },
         {
             type: 'pneumaticcraft:thermo_plant',
@@ -56,7 +56,7 @@ onEvent('recipes', (event) => {
             speed: 10.0,
             exothermic: false,
             temperature: { min_temp: 377 },
-            id: `${id_prefix}syrup`
+            id: `${id_prefix}syrup`,
         },
         {
             type: 'pneumaticcraft:thermo_plant',
@@ -65,7 +65,7 @@ onEvent('recipes', (event) => {
             speed: 10.0,
             exothermic: false,
             temperature: { min_temp: 377 },
-            id: `${id_prefix}sugar`
+            id: `${id_prefix}sugar`,
         },
         {
             type: 'pneumaticcraft:thermo_plant',
@@ -74,8 +74,8 @@ onEvent('recipes', (event) => {
             item_output: { item: 'thermal:rosin', count: 1 },
             exothermic: false,
             temperature: { min_temp: 377 },
-            id: `${id_prefix}tree_oil_with_rosin`
-        }
+            id: `${id_prefix}tree_oil_with_rosin`,
+        },
     ];
 
     recipes.forEach((recipe) => {

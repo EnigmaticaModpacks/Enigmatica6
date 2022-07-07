@@ -10,13 +10,13 @@ onEvent('item.tags', (event) => {
         'byg:cryptic_redstone_ore',
         'betterendforge:thallasium_ore',
         'atum:bone_ore',
-        'atum:relic_ore'
+        'atum:relic_ore',
     ]);
 
     event.add('forge:ores/dimensional', [
         'rftoolsbase:dimensionalshard_overworld',
         'rftoolsbase:dimensionalshard_nether',
-        'rftoolsbase:dimensionalshard_end'
+        'rftoolsbase:dimensionalshard_end',
     ]);
     event.add('forge:ores/quartz', ['byg:blue_nether_quartz_ore', 'byg:brimstone_nether_quartz_ore']);
 
@@ -24,7 +24,7 @@ onEvent('item.tags', (event) => {
     event.add('forge:ores/nether/gold', [
         'minecraft:nether_gold_ore',
         'byg:blue_nether_gold_ore',
-        'byg:brimstone_nether_gold_ore'
+        'byg:brimstone_nether_gold_ore',
     ]);
     event.get('forge:ores/netherite').add('minecraft:ancient_debris');
 

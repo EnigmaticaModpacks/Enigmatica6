@@ -46,6 +46,6 @@ onEvent('item.tags', (event) => {
             'minecraft:polished_andesite_slab',
             'minecraft:andesite_slab',
             'minecraft:smooth_stone_slab',
-            'minecraft:stone_slab'
+            'minecraft:stone_slab',
         ]);
 });

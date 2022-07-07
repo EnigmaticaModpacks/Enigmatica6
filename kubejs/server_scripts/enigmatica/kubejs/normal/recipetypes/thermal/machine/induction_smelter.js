@@ -9,17 +9,17 @@ onEvent('recipes', (event) => {
         recipes: [
             {
                 inputs: ['#forge:ingots/enderium', Item.of('fluxnetworks:flux_dust', 8)],
-                outputs: [Item.of('compactmachines:wall', 32)]
+                outputs: [Item.of('compactmachines:wall', 32)],
             },
             {
                 inputs: ['#forge:dusts/refined_obsidian', '#forge:ingots/osmium'],
-                outputs: [Item.of('mekanism:ingot_refined_obsidian')]
+                outputs: [Item.of('mekanism:ingot_refined_obsidian')],
             },
             {
                 inputs: ['#forge:dusts/glowstone', '#forge:ingots/osmium'],
-                outputs: [Item.of('mekanism:ingot_refined_glowstone')]
-            }
-        ]
+                outputs: [Item.of('mekanism:ingot_refined_glowstone')],
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {

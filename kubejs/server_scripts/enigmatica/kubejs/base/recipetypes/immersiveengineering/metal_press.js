@@ -6,8 +6,8 @@ onEvent('recipes', (event) => {
             output: 'mekanism:hdpe_sheet',
             input: 'mekanism:hdpe_pellet',
             mold: '#thermal:crafting/dies/plate',
-            id: `${id_prefix}hdpe_sheet`
-        }
+            id: `${id_prefix}hdpe_sheet`,
+        },
     ];
 
     recipes.forEach((recipe) => {

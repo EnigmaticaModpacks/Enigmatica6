@@ -17,8 +17,8 @@ onEvent('recipes', (event) => {
             { input: '#forge:gems/dimensional', energy: 700000 },
             { input: '#forge:gems/apatite', energy: 40000 },
             { input: '#forge:gems/aquarmarine', energy: 10000 },
-            { input: '#forge:gems/amber', energy: 160000 }
-        ]
+            { input: '#forge:gems/amber', energy: 160000 },
+        ],
     };
 
     data.recipes.forEach((recipe) => {

@@ -17,10 +17,10 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'botania:shulk_me_not', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'botania:rosa_arcana', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'botania:dandelifeon', count: 1 } },
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}botanical_mastery_shard`
+            id: `${id_prefix}botanical_mastery_shard`,
         },
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:astronomy_mastery_shard', count: 1 } }],
@@ -36,12 +36,12 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'astralsorcery:liquid_starlight', amount: 1024 }
+                    data: { fluid: 'astralsorcery:liquid_starlight', amount: 1024 },
                 },
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}astronomy_mastery_shard`
+            id: `${id_prefix}astronomy_mastery_shard`,
         },
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:alchemy_mastery_shard', count: 1 } }],
@@ -52,10 +52,10 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'naturesaura:death_ring', count: 5 } },
                 { type: 'masterfulmachinery:items', data: { item: 'naturesaura:pet_reviver', count: 5 } },
 
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}alchemy_mastery_shard`
+            id: `${id_prefix}alchemy_mastery_shard`,
         },
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:ritual_mastery_shard', count: 5 } }],
@@ -78,12 +78,12 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1024 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1024 },
                 },
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}ritual_mastery_shard`
+            id: `${id_prefix}ritual_mastery_shard`,
         },
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:aura_mastery_shard', count: 1 } }],
@@ -100,23 +100,23 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'minecraft:powered_rail', count: 64 } },
                 { type: 'masterfulmachinery:items', data: { item: 'minecraft:rail', count: 32 } },
                 { type: 'masterfulmachinery:items', data: { item: 'minecraft:activator_rail', count: 8 } },
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}aura_mastery_shard`
+            id: `${id_prefix}aura_mastery_shard`,
         },
         {
             outputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_mastery_shard', count: 2 } }
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_mastery_shard', count: 2 } },
             ],
             inputs: [
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'pneumaticcraft:advanced_pressure_tube', count: 64 }
+                    data: { item: 'pneumaticcraft:advanced_pressure_tube', count: 64 },
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'pneumaticcraft:advanced_liquid_compressor', count: 1 }
+                    data: { item: 'pneumaticcraft:advanced_liquid_compressor', count: 1 },
                 },
                 { type: 'masterfulmachinery:items', data: { item: 'create:rotation_speed_controller', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'create:large_cogwheel', count: 4 } },
@@ -132,40 +132,40 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'pneumaticcraft:lubricant', amount: 1024 }
+                    data: { fluid: 'pneumaticcraft:lubricant', amount: 1024 },
                 },
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}engineering_mastery_shard`
+            id: `${id_prefix}engineering_mastery_shard`,
         },
         {
             outputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:energistics_mastery_shard', count: 50 } }
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:energistics_mastery_shard', count: 50 } },
             ],
             inputs: [
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'mekanismgenerators:fusion_reactor_controller', count: 1 }
+                    data: { item: 'mekanismgenerators:fusion_reactor_controller', count: 1 },
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'mekanismgenerators:fusion_reactor_frame', count: 36 }
+                    data: { item: 'mekanismgenerators:fusion_reactor_frame', count: 36 },
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'mekanismgenerators:fusion_reactor_port', count: 5 }
+                    data: { item: 'mekanismgenerators:fusion_reactor_port', count: 5 },
                 },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanismgenerators:reactor_glass', count: 24 } },
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'mekanismgenerators:electromagnetic_coil', count: 5 }
+                    data: { item: 'mekanismgenerators:electromagnetic_coil', count: 5 },
                 },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:pressure_disperser', count: 224 } },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanismgenerators:rotational_complex', count: 1 } },
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'mekanismgenerators:saturating_condenser', count: 293 }
+                    data: { item: 'mekanismgenerators:saturating_condenser', count: 293 },
                 },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:structural_glass', count: 598 } },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanismgenerators:turbine_casing', count: 417 } },
@@ -183,27 +183,27 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'mekanismgenerators:tritium', amount: 25600 }
+                    data: { fluid: 'mekanismgenerators:tritium', amount: 25600 },
                 },
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'mekanismgenerators:deuterium', amount: 25600 }
+                    data: { fluid: 'mekanismgenerators:deuterium', amount: 25600 },
                 },
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 1500 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 1500 } },
             ],
             ticks: 1500,
-            id: `${id_prefix}energistics_mastery_shard`
+            id: `${id_prefix}energistics_mastery_shard`,
         },
         {
             outputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:dimensional_mastery_shard', count: 1 } }
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:dimensional_mastery_shard', count: 1 } },
             ],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'extrastorage:block_4096k', count: 2 } },
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'extrastorage:block_262144k_fluid', count: 2 }
+                    data: { item: 'extrastorage:block_262144k_fluid', count: 2 },
                 },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:quantum_entangloporter', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'rsinfinitybooster:dimension_card', count: 1 } },
@@ -213,10 +213,10 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:teleporter', count: 5 } },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:portable_teleporter', count: 1 } },
 
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}dimensional_mastery_shard`
+            id: `${id_prefix}dimensional_mastery_shard`,
         },
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:battle_mastery_shard', count: 5 } }],
@@ -227,14 +227,14 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_mekasuit_boots', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_meka_tool', count: 1 } },
 
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}battle_mastery_shard`
+            id: `${id_prefix}battle_mastery_shard`,
         },
         {
             outputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:excavation_mastery_shard', count: 2 } }
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:excavation_mastery_shard', count: 2 } },
             ],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'industrialforegoing:fluid_laser_base', count: 1 } },
@@ -247,24 +247,24 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:mining_gadget_kit', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:flux_bore_kit', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_pedestal_quarry', count: 2 } },
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}excavation_mastery_shard`
+            id: `${id_prefix}excavation_mastery_shard`,
         },
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'kubejs:culinary_mastery_shard', count: 1 } }],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:engineering_student_meals', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:box_of_thankful_dinners', count: 1 } },
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}culinary_mastery_shard`
+            id: `${id_prefix}culinary_mastery_shard`,
         },
         {
             outputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:automation_mastery_shard', count: 1 } }
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:automation_mastery_shard', count: 1 } },
             ],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:controller', count: 1 } },
@@ -284,11 +284,11 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:universal_sensor', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_drone_kit', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:assorted_router_kit', count: 1 } },
-                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } }
+                { type: 'masterfulmachinery:botania_mana', consumeInstantly: true, data: { amount: 500 * 60 } },
             ],
             ticks: 60,
-            id: `${id_prefix}automation_mastery_shard`
-        }
+            id: `${id_prefix}automation_mastery_shard`,
+        },
     ];
 
     recipes.forEach((recipe) => {

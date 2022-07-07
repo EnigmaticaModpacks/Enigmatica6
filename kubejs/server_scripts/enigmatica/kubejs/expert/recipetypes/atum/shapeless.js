@@ -11,9 +11,9 @@ onEvent('recipes', (event) => {
                 'atum:linen_cloth',
                 'atum:linen_cloth',
                 'atum:linen_cloth',
-                Item.of('minecraft:potion', '{Potion:"minecraft:strong_healing"}')
+                Item.of('minecraft:potion', '{Potion:"minecraft:strong_healing"}'),
             ],
-            id: `${id_prefix}linen_bandage_medium`
+            id: `${id_prefix}linen_bandage_medium`,
         },
         {
             output: '8x atum:linen_bandage',
@@ -26,10 +26,10 @@ onEvent('recipes', (event) => {
                 'atum:linen_cloth',
                 'atum:linen_cloth',
                 'atum:linen_cloth',
-                'atum:linen_cloth'
+                'atum:linen_cloth',
             ],
-            id: `${id_prefix}linen_bandage_heavy`
-        }
+            id: `${id_prefix}linen_bandage_heavy`,
+        },
     ];
 
     recipes.forEach((recipe) => {

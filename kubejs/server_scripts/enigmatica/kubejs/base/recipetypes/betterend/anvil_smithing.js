@@ -7,22 +7,22 @@ onEvent('recipes', (event) => {
             {
                 id: 'betterendforge:ender_shard_to_dust',
                 input: {
-                    item: 'betterendforge:ender_shard'
+                    item: 'betterendforge:ender_shard',
                 },
                 result: 'emendatusenigmatica:ender_dust',
                 level: 2,
-                damage: 3
+                damage: 3,
             },
             {
                 id: 'betterendforge:ender_pearl_to_dust',
                 input: {
-                    item: 'minecraft:ender_pearl'
+                    item: 'minecraft:ender_pearl',
                 },
                 result: 'emendatusenigmatica:ender_dust',
                 level: 4,
-                damage: 5
-            }
-        ]
+                damage: 5,
+            },
+        ],
     };
 
     materials.forEach((material) => {
@@ -64,12 +64,12 @@ onEvent('recipes', (event) => {
             data.recipes.push({
                 id: 'betterendforge:' + material + '_' + type,
                 input: {
-                    item: 'betterendforge:' + material + '_ingot'
+                    item: 'betterendforge:' + material + '_ingot',
                 },
                 result: 'betterendforge:' + material + '_' + type,
                 inputCount: count,
                 level: 1,
-                damage: damage
+                damage: damage,
             });
         });
     });

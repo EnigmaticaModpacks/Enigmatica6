@@ -18,8 +18,8 @@ onEvent('server.datapack.high_priority', (event) => {
             block: bookshelf,
             stats: {
                 maxEterna: 7.5,
-                eterna: 1
-            }
+                eterna: 1,
+            },
         });
     });
 
@@ -32,8 +32,8 @@ onEvent('server.datapack.high_priority', (event) => {
             block: candle,
             stats: {
                 maxEterna: 7.5,
-                eterna: 0.5
-            }
+                eterna: 0.5,
+            },
         });
     });
 

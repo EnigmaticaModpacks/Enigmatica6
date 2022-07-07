@@ -23,7 +23,7 @@ onEvent('item.tags', (event) => {
         'torchmaster:dreadlamp',
         'undergarden:tall_shimmerweed',
         'undergarden:shimmerweed',
-        'betterendforge:glowing_pillar_luminophor'
+        'betterendforge:glowing_pillar_luminophor',
     ];
     var exceptions = ['occultism:magic_lamp_empty', 'rsgauges:industrial_alarm_lamp'];
 

@@ -8,7 +8,7 @@ onEvent('ponder.registry', (event) => {
             'industrialforegoing:tinydryrubber',
             'industrialforegoing:dryrubber',
             'industrialforegoing:plastic',
-            'industrialforegoing:latex_bucket'
+            'industrialforegoing:latex_bucket',
         ])
         //.tag('enigmatica:industrial_foregoing')
         .scene(
@@ -32,7 +32,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.OUTPUT)
                     .text(
-                        'Latex is a renewable resource gathered from trees, and plays a vital role in Industrial Foregoing.'
+                        'Latex is a renewable resource gathered from trees, and plays a vital role in Industrial Foregoing.',
                     )
                     .pointAt(util.vector().topOf(3, 4, 3));
 
@@ -55,7 +55,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         util.grid().at(4, 1, 3),
                         Block.id('industrialforegoing:fluid_extractor').with('subfacing', 'north').blockState,
-                        true
+                        true,
                     );
                 scene.world().showSection(util.select().position(4, 1, 3), Facing.down);
 
@@ -82,7 +82,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         util.grid().at(5, 1, 3),
                         Block.id('industrialforegoing:fluid_extractor').with('subfacing', 'north').blockState,
-                        true
+                        true,
                     );
                 scene.world().showSection(util.select().fromTo(5, 1, 3, 5, 1, 4), Facing.south);
 
@@ -93,7 +93,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(80)
                     .colored(PonderPalette.RED)
                     .text(
-                        'Keep in mind that using different logs with the Fluid Extractor may give you different fluids!'
+                        'Keep in mind that using different logs with the Fluid Extractor may give you different fluids!',
                     )
                     .independent(60);
 
@@ -105,11 +105,11 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         tank1,
                         Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north').blockState,
-                        true
+                        true,
                     );
                 scene.idle(20);
                 scene.world().modifyTileNBT(tank1, {
-                    tank: { FluidName: 'thermal:resin', Amount: 1000 }
+                    tank: { FluidName: 'thermal:resin', Amount: 1000 },
                 });
 
                 var tank2 = util.grid().at(3, 2, 3);
@@ -118,11 +118,11 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         tank2,
                         Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north').blockState,
-                        true
+                        true,
                     );
                 scene.idle(20);
                 scene.world().modifyTileNBT(tank2, {
-                    tank: { FluidName: 'industrialforegoing:latex', Amount: 1000 }
+                    tank: { FluidName: 'industrialforegoing:latex', Amount: 1000 },
                 });
 
                 scene.world().showSection(util.select().fromTo(3, 2, 3, 5, 2, 3), Facing.down);
@@ -155,12 +155,12 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.RED)
                     .attachKeyFrame()
                     .text(
-                        'Be sure to check JEI for more information on what kinds of fluids you can extract at what rate from different blocks!'
+                        'Be sure to check JEI for more information on what kinds of fluids you can extract at what rate from different blocks!',
                     )
                     .independent(60);
 
                 scene.idle(60);
-            }
+            },
         )
         .scene(
             'processing_latex',
@@ -272,7 +272,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.RED)
                     .text(
-                        `This is quite a slow process; you'll have to wait around 5 seconds for each Tiny Dry Rubber...`
+                        `This is quite a slow process; you'll have to wait around 5 seconds for each Tiny Dry Rubber...`,
                     )
                     .placeNearTarget()
                     .pointAt(util.vector().topOf(chestPos));
@@ -283,9 +283,9 @@ onEvent('ponder.registry', (event) => {
                         hasNBT: false,
                         blStack: { id: 'industrialforegoing:tinydryrubber', Count: 2 },
                         stored: 2,
-                        voidItems: 1
+                        voidItems: 1,
                     },
-                    true
+                    true,
                 );
 
                 scene.idle(80);
@@ -301,7 +301,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         util.grid().at(4, 1, 2),
                         Block.id('industrialforegoing:supreme_black_hole_unit').with('subfacing', 'west').blockState,
-                        false
+                        false,
                     );
 
                 scene.idle(1);
@@ -312,9 +312,9 @@ onEvent('ponder.registry', (event) => {
                         hasNBT: false,
                         blStack: { id: 'industrialforegoing:tinydryrubber', Count: 9 },
                         stored: 9,
-                        voidItems: 1
+                        voidItems: 1,
                     },
-                    true
+                    true,
                 );
 
                 scene
@@ -326,7 +326,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         util.grid().at(4, 1, 4),
                         Block.id('industrialforegoing:advanced_black_hole_unit').with('subfacing', 'west').blockState,
-                        false
+                        false,
                     );
 
                 scene
@@ -334,7 +334,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         util.grid().at(4, 1, 5),
                         Block.id('minecraft:furnace').with('facing', 'west').blockState,
-                        false
+                        false,
                     );
 
                 scene
@@ -342,7 +342,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         util.grid().at(4, 1, 6),
                         Block.id('industrialforegoing:simple_black_hole_unit').with('subfacing', 'west').blockState,
-                        false
+                        false,
                     );
 
                 var procline = scene
@@ -367,7 +367,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput(util.grid().at(4, 1, 3), PonderPointing.DOWN)
                             .showing(PonderIcons.I_3x3)
                             .withItem('9x industrialforegoing:tinydryrubber'),
-                        30
+                        30,
                     );
 
                 scene.overlay().showOutline(PonderPalette.GREEN, procline, util.select().position(4, 1, 3), 30);
@@ -380,9 +380,9 @@ onEvent('ponder.registry', (event) => {
                         hasNBT: false,
                         blStack: { id: 'industrialforegoing:tinydryrubber', Count: 9 },
                         stored: 0,
-                        voidItems: 1
+                        voidItems: 1,
                     },
-                    true
+                    true,
                 );
 
                 scene.world().modifyTileNBT(
@@ -391,9 +391,9 @@ onEvent('ponder.registry', (event) => {
                         hasNBT: false,
                         blStack: { id: 'industrialforegoing:dryrubber', Count: 1 },
                         stored: 1,
-                        voidItems: 1
+                        voidItems: 1,
                     },
-                    true
+                    true,
                 );
 
                 scene.idle(20);
@@ -403,7 +403,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         util.grid().at(4, 1, 5),
                         Block.id('minecraft:furnace').with('facing', 'west').with('lit', 'true').blockState,
-                        false
+                        false,
                     );
 
                 scene
@@ -412,7 +412,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput(util.grid().at(4, 1, 5), PonderPointing.DOWN)
                             .showing(PonderIcons.I_TARGET)
                             .withItem('industrialforegoing:dryrubber'),
-                        30
+                        30,
                     );
 
                 scene.overlay().showOutline(PonderPalette.GREEN, procline, util.select().position(4, 1, 5), 30);
@@ -424,7 +424,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         util.grid().at(4, 1, 5),
                         Block.id('minecraft:furnace').with('facing', 'west').with('lit', 'false').blockState,
-                        false
+                        false,
                     );
 
                 scene.world().modifyTileNBT(
@@ -433,9 +433,9 @@ onEvent('ponder.registry', (event) => {
                         hasNBT: false,
                         blStack: { id: 'industrialforegoing:dryrubber', Count: 1 },
                         stored: 0,
-                        voidItems: 1
+                        voidItems: 1,
                     },
-                    true
+                    true,
                 );
 
                 scene.world().modifyTileNBT(
@@ -444,9 +444,9 @@ onEvent('ponder.registry', (event) => {
                         hasNBT: false,
                         blStack: { id: 'industrialforegoing:plastic', Count: 1 },
                         stored: 1,
-                        voidItems: 1
+                        voidItems: 1,
                     },
-                    true
+                    true,
                 );
 
                 scene.effects().indicateSuccess(util.grid().at(4, 1, 6));
@@ -472,6 +472,6 @@ onEvent('ponder.registry', (event) => {
                     .text('...and Plastic!')
                     .placeNearTarget()
                     .pointAt(util.vector().topOf(4, 1, 6));
-            }
+            },
         );
 });

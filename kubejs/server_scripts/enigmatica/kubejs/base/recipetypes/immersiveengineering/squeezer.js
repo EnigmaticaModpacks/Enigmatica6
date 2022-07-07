@@ -22,9 +22,9 @@ onEvent('recipes', (event) => {
                 'sushigocrafting:soy_seeds',
                 'sushigocrafting:wasabi_seeds',
                 'sushigocrafting:sesame_seeds',
-                'environmental:cattail_seeds'
+                'environmental:cattail_seeds',
             ],
-            value: 20
+            value: 20,
         },
 
         {
@@ -44,9 +44,9 @@ onEvent('recipes', (event) => {
                 'betterendforge:amber_root_seed',
                 'betterendforge:bulb_vine_seed',
                 'betterendforge:blossom_berry_seed',
-                'betterendforge:shadow_berry'
+                'betterendforge:shadow_berry',
             ],
-            value: 40
+            value: 40,
         },
 
         {
@@ -60,9 +60,9 @@ onEvent('recipes', (event) => {
                 'simplefarming:tomato_seeds',
                 'simplefarming:turnip_seeds',
                 'simplefarming:yam_seeds',
-                'occultism:datura_seeds'
+                'occultism:datura_seeds',
             ],
-            value: 60
+            value: 60,
         },
 
         {
@@ -76,12 +76,12 @@ onEvent('recipes', (event) => {
                 'simplefarming:rye_seeds',
                 'simplefarming:sorghum_seeds',
                 'simplefarming:sunflower_seeds',
-                'atum:emmer_seeds'
+                'atum:emmer_seeds',
             ],
-            value: 80
+            value: 80,
         },
 
-        { inputs: ['simplefarming:grape_seeds'], value: 120 }
+        { inputs: ['simplefarming:grape_seeds'], value: 120 },
     ];
 
     recipes.forEach((input) => {
@@ -91,14 +91,14 @@ onEvent('recipes', (event) => {
                     type: 'immersiveengineering:squeezer',
                     fluid: {
                         fluid: 'immersiveengineering:plantoil',
-                        amount: input.value
+                        amount: input.value,
                     },
                     input: {
-                        item: seed
+                        item: seed,
                     },
-                    energy: 6400
+                    energy: 6400,
                 }),
-                id_prefix
+                id_prefix,
             );
         });
     });

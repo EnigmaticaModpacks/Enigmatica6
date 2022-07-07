@@ -4,10 +4,10 @@ onEvent('recipes', (event) => {
             output: 'thermal:sawdust_block',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: '#forge:sawdust'
+                A: '#forge:sawdust',
             },
-            id: 'thermal:storage/sawdust_block'
-        }
+            id: 'thermal:storage/sawdust_block',
+        },
     ];
 
     recipes.forEach((recipe) => {

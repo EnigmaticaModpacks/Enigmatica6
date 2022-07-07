@@ -5,19 +5,19 @@ onEvent('recipes', (event) => {
             output: Item.of('projectvibrantjourneys:twigs', 12),
             pattern: ['  A', ' A ', 'A  '],
             key: {
-                A: '#minecraft:leaves'
+                A: '#minecraft:leaves',
             },
-            id: `${id_prefix}twigs`
+            id: `${id_prefix}twigs`,
         },
 
         {
             output: Item.of('projectvibrantjourneys:pinecones', 6),
             pattern: [' A ', 'A A', ' A '],
             key: {
-                A: '#minecraft:leaves'
+                A: '#minecraft:leaves',
             },
-            id: `${id_prefix}pinecones`
-        }
+            id: `${id_prefix}pinecones`,
+        },
     ];
 
     recipes.forEach((recipe) => {

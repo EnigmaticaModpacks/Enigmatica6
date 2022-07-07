@@ -6,7 +6,7 @@ onEvent('item.tags', (event) => {
         'mekanism:mekasuit_pants',
         'naturesaura:infused_iron_pants',
         'naturesaura:sky_pants',
-        'bloodmagic:livingleggings'
+        'bloodmagic:livingleggings',
     ];
 
     var exceptions = ['kubejs:pneumatic_leggings_package', 'kubejs:pneumatic_leggings_assembly'];

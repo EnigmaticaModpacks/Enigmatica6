@@ -3,6 +3,6 @@ onEvent('item.tags', (event) => {
         'mininggadgets:mininggadget',
         'mininggadgets:mininggadget_simple',
         'mininggadgets:mininggadget_fancy',
-        'mekanism:cardboard_box'
+        'mekanism:cardboard_box',
     ]);
 });

@@ -11,18 +11,18 @@ onEvent('recipes', (event) => {
                     hasToBeAttuned: false,
                     hasToBeCelestial: false,
                     canBeAttuned: true,
-                    canBeCelestialCrystal: true
+                    canBeCelestialCrystal: true,
                 },
                 B: { item: 'resourcefulbees:gold_honeycomb' },
                 C: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:iron_bee' }).weakNBT().toJson(),
                 D: { item: 'resourcefulbees:iron_honeycomb' },
-                E: { item: 'astralsorcery:colored_lens_spectral' }
+                E: { item: 'astralsorcery:colored_lens_spectral' },
             },
             relay_inputs: [
                 { item: 'astralsorcery:resonating_gem' },
                 { item: 'astralsorcery:illumination_powder' },
                 { tag: 'astralsorcery:stardust' },
-                { item: 'resourcefulbees:iron_honey_block' }
+                { item: 'resourcefulbees:iron_honey_block' },
             ],
             altar_type: 3,
             duration: 400,
@@ -33,10 +33,10 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:built_in_effect_trait_focus_circle',
                 'astralsorcery:altar_default_sparkle',
-                'astralsorcery:built_in_effect_constellation_lines'
+                'astralsorcery:built_in_effect_constellation_lines',
             ],
-            id: `${id_prefix}starry_bee_jar`
-        }
+            id: `${id_prefix}starry_bee_jar`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -48,7 +48,7 @@ onEvent('recipes', (event) => {
             pattern: recipe.pattern,
             key: recipe.key,
             output: [recipe.output.toResultJson()],
-            effects: recipe.effects
+            effects: recipe.effects,
         };
 
         if (recipe.relay_inputs) {

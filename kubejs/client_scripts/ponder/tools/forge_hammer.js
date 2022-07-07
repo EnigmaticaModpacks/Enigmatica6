@@ -10,7 +10,7 @@ onEvent('ponder.registry', (event) => {
             'tetra:combustion_chamber',
             'tetra:planar_stabilizer',
             'tetra:lubricant_dispenser',
-            'tetra:forged_workbench'
+            'tetra:forged_workbench',
         ])
 
         .scene(
@@ -52,7 +52,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([1.5, 3.5, 1], PonderPointing.RIGHT)
                             .showing(PonderIcons.I_RMB)
                             .withItem('tetra:magmatic_cell'),
-                        30
+                        30,
                     );
                 scene.idle(10);
                 scene
@@ -61,7 +61,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([1.5, 3, 2.5], PonderPointing.LEFT)
                             .showing(PonderIcons.I_RMB)
                             .withItem('tetra:magmatic_cell'),
-                        40
+                        40,
                     );
                 scene.idle(50);
 
@@ -72,7 +72,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `Install upgrades for the forge hammer (such as the combustion chamber) on both sides of the Forge Hammer.`
+                        `Install upgrades for the forge hammer (such as the combustion chamber) on both sides of the Forge Hammer.`,
                     )
                     .independent(90);
                 scene.idle(10);
@@ -82,7 +82,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([2.25, 3.25, 1.5], PonderPointing.RIGHT)
                             .showing(PonderIcons.I_RMB)
                             .withItem('tetra:combustion_chamber'),
-                        30
+                        30,
                     );
                 scene.idle(10);
                 scene
@@ -91,7 +91,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([1.5, 3, 2], PonderPointing.LEFT)
                             .showing(PonderIcons.I_RMB)
                             .withItem('tetra:planar_stabilizer'),
-                        40
+                        40,
                     );
                 scene.idle(50);
 
@@ -100,7 +100,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `Using the Forge Hammer will drain charge from the Magmatic Cells, which will need to be replaced when depleted.`
+                        `Using the Forge Hammer will drain charge from the Magmatic Cells, which will need to be replaced when depleted.`,
                     )
                     .independent(0);
                 scene.idle(35);
@@ -130,6 +130,6 @@ onEvent('ponder.registry', (event) => {
                 scene.world().setBlock([1, 1, 1], util.getDefaultState('tetra:basic_workbench'), true);
 
                 scene.idle(80);
-            }
+            },
         );
 });

@@ -10,7 +10,7 @@ onEvent('item.tags', (event) => {
         'bloodmagic:soulscythe',
         'kubejs:spirit_entropic_gateway',
         'losttrinkets:magical_feathers',
-        'magicfeather:magicfeather'
+        'magicfeather:magicfeather',
     ];
     event.get('occultism:occultism_spirit_tooltip').add(items);
 });

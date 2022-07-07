@@ -12,9 +12,9 @@ onEvent('recipes', (event) => {
                 inputItem: '#forge:storage_blocks/ender',
                 infusionInput: 'mekanism:refined_obsidian',
                 infusionAmount: 80,
-                id: `${id_prefix}compactmachines_wall`
-            }
-        ]
+                id: `${id_prefix}compactmachines_wall`,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {

@@ -13,9 +13,9 @@ onEvent('recipes', (event) => {
                 A: 'torchmaster:feral_flare_lantern',
                 B: '#enigmatica:crafting_materials/diamond',
                 C: '#minecraft:logs',
-                D: '#forge:storage_blocks/gold'
+                D: '#forge:storage_blocks/gold',
             },
-            id: `${id_prefix}megatorch`
+            id: `${id_prefix}megatorch`,
         },
         {
             output: 'torchmaster:feral_flare_lantern',
@@ -23,10 +23,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/gold',
                 B: '#forge:glass',
-                C: '#forge:storage_blocks/glowstone'
+                C: '#forge:storage_blocks/glowstone',
             },
-            id: `${id_prefix}feral_flare_lantern`
-        }
+            id: `${id_prefix}feral_flare_lantern`,
+        },
     ];
 
     recipes.forEach((recipe) => {

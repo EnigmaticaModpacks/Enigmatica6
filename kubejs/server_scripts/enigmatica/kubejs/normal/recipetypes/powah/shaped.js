@@ -24,19 +24,19 @@ onEvent('recipes', (event) => {
                 key: {
                     A: capacitor,
                     B: Ingredient.of(lower_tiers.map((item) => `powah:energy_cable_${item}`)),
-                    C: Ingredient.of('powah:dielectric_rod_horizontal')
+                    C: Ingredient.of('powah:dielectric_rod_horizontal'),
                 },
-                id: `powah:crafting/cable_${tier}`
+                id: `powah:crafting/cable_${tier}`,
             },
             {
                 output: Item.of(`powah:ender_cell_${tier}`),
                 pattern: [' A ', 'ABA', ' A '],
                 key: {
                     A: crystal,
-                    B: Ingredient.of(lower_tiers.map((item) => `powah:ender_cell_${item}`))
+                    B: Ingredient.of(lower_tiers.map((item) => `powah:ender_cell_${item}`)),
                 },
-                id: `${id_prefix}ender_cell_${tier}`
-            }
+                id: `${id_prefix}ender_cell_${tier}`,
+            },
         );
     });
 

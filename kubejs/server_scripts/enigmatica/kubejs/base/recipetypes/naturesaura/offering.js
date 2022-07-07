@@ -18,18 +18,18 @@ onEvent('recipes', (event) => {
             }*/
             {
                 input: {
-                    item: 'resourcefulbees:sky_honeycomb'
+                    item: 'resourcefulbees:sky_honeycomb',
                 },
                 start_item: {
-                    item: 'naturesaura:calling_spirit'
+                    item: 'naturesaura:calling_spirit',
                 },
                 output: {
                     item: 'naturesaura:sky_ingot',
-                    count: 3
+                    count: 3,
                 },
-                id: `${id_prefix}sky_ingot_from_honeycomb`
-            }
-        ]
+                id: `${id_prefix}sky_ingot_from_honeycomb`,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {
@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
                 type: 'naturesaura:offering',
                 input: recipe.input,
                 start_item: recipe.start_item,
-                output: recipe.output
+                output: recipe.output,
             })
             .id(recipe.id);
     });

@@ -78,14 +78,14 @@ const stonecuttables = [
             'chisel:stone_bricks/pillar',
             'chisel:stone_bricks/twisted',
             'chisel:stone_bricks/prism',
-            'chisel:stone_bricks/cuts'
+            'chisel:stone_bricks/cuts',
         ],
         // items added here can be cut from other blocks of this stone type,
         // but cannot be cut into other blocks from this type
         onlyAsOutput: ['minecraft:cobblestone'],
         // items added here can be cut into other blocks of this stone type,
         // but cannot be cut from blocks other blocks of this type
-        onlyAsInput: ['minecraft:stone']
+        onlyAsInput: ['minecraft:stone'],
     },
     {
         name: 'andesite',
@@ -173,10 +173,10 @@ const stonecuttables = [
             'chisel:andesite/pillar',
             'chisel:andesite/twisted',
             'chisel:andesite/prism',
-            'chisel:andesite/cuts'
+            'chisel:andesite/cuts',
         ],
         onlyAsOutput: ['create:andesite_cobblestone'],
-        onlyAsInput: ['minecraft:andesite']
+        onlyAsInput: ['minecraft:andesite'],
     },
     {
         name: 'arcane_stone',
@@ -195,10 +195,10 @@ const stonecuttables = [
             'ars_nouveau:sas_herring',
             'ars_nouveau:sas_mosaic',
             'ars_nouveau:sas_alternating',
-            'ars_nouveau:sas_ashlar'
+            'ars_nouveau:sas_ashlar',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'basalt',
@@ -257,10 +257,10 @@ const stonecuttables = [
             'chipped:basalt_4',
             'chipped:basalt_3',
             'chipped:basalt_2',
-            'chipped:basalt_1'
+            'chipped:basalt_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: ['minecraft:basalt']
+        onlyAsInput: ['minecraft:basalt'],
     },
     {
         name: 'blackstone',
@@ -288,22 +288,22 @@ const stonecuttables = [
             'chipped:blackstone_4',
             'chipped:blackstone_3',
             'chipped:blackstone_2',
-            'chipped:blackstone_1'
+            'chipped:blackstone_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: ['minecraft:blackstone']
+        onlyAsInput: ['minecraft:blackstone'],
     },
     {
         name: 'blaze_quartz',
         stones: ['botania:blaze_quartz', 'botania:blaze_quartz_pillar', 'botania:chiseled_blaze_quartz'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'bloodstone',
         stones: ['bloodmagic:largebloodstonebrick', 'bloodmagic:bloodstonebrick'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'carved_pumpkin',
@@ -330,10 +330,10 @@ const stonecuttables = [
             'chipped:carved_pumpkin_1',
             'chipped:carved_pumpkin_nether',
             'chipped:carved_pumpkin_end2',
-            'chipped:carved_pumpkin_end'
+            'chipped:carved_pumpkin_end',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'clay',
@@ -357,10 +357,10 @@ const stonecuttables = [
             'chipped:clay_4',
             'chipped:clay_3',
             'chipped:clay_2',
-            'chipped:clay_1'
+            'chipped:clay_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'cobblestone',
@@ -421,10 +421,10 @@ const stonecuttables = [
             'chisel:cobblestone/cuts',
             'chisel:cobblestone/extra/emboss',
             'chisel:cobblestone/extra/indent',
-            'chisel:cobblestone/extra/marker'
+            'chisel:cobblestone/extra/marker',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'crying_obsidian',
@@ -449,16 +449,16 @@ const stonecuttables = [
             'chipped:crying_obsidian_4',
             'chipped:crying_obsidian_3',
             'chipped:crying_obsidian_2',
-            'chipped:crying_obsidian_1'
+            'chipped:crying_obsidian_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'dacite',
         stones: ['byg:dacite', 'byg:dacite_bricks', 'byg:dacite_pillar', 'byg:dacite_tile'],
         onlyAsOutput: ['byg:dacite_cobblestone'],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'dark_prismarine',
@@ -502,10 +502,10 @@ const stonecuttables = [
             'chipped:dark_prismarine_4',
             'chipped:dark_prismarine_3',
             'chipped:dark_prismarine_2',
-            'chipped:dark_prismarine_1'
+            'chipped:dark_prismarine_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'dark_scoria',
@@ -519,10 +519,10 @@ const stonecuttables = [
             'create:layered_dark_scoria',
             'create:polished_dark_scoria',
             'create:mossy_dark_scoria',
-            'create:overgrown_dark_scoria'
+            'create:overgrown_dark_scoria',
         ],
         onlyAsOutput: ['create:dark_scoria_cobblestone'],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'diorite',
@@ -610,10 +610,10 @@ const stonecuttables = [
             'chisel:diorite/pillar',
             'chisel:diorite/twisted',
             'chisel:diorite/prism',
-            'chisel:diorite/cuts'
+            'chisel:diorite/cuts',
         ],
         onlyAsOutput: ['create:diorite_cobblestone'],
-        onlyAsInput: ['minecraft:diorite']
+        onlyAsInput: ['minecraft:diorite'],
     },
     {
         name: 'dolomite',
@@ -627,10 +627,10 @@ const stonecuttables = [
             'create:layered_dolomite',
             'create:polished_dolomite',
             'create:mossy_dolomite',
-            'create:overgrown_dolomite'
+            'create:overgrown_dolomite',
         ],
         onlyAsOutput: ['create:dolomite_cobblestone'],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'end_stone',
@@ -686,22 +686,22 @@ const stonecuttables = [
             'chisel:end_stone/pillar',
             'chisel:end_stone/twisted',
             'chisel:end_stone/prism',
-            'chisel:end_stone/cuts'
+            'chisel:end_stone/cuts',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'elder_prismarine',
         stones: ['quark:elder_prismarine', 'quark:elder_prismarine_bricks'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'elf_quartz',
         stones: ['botania:elf_quartz', 'botania:elf_quartz_pillar', 'botania:chiseled_elf_quartz'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'gabbro',
@@ -715,10 +715,10 @@ const stonecuttables = [
             'create:layered_gabbro',
             'create:polished_gabbro',
             'create:mossy_gabbro',
-            'create:overgrown_gabbro'
+            'create:overgrown_gabbro',
         ],
         onlyAsOutput: ['create:gabbro_cobblestone'],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'gilded_blackstone',
@@ -749,10 +749,10 @@ const stonecuttables = [
             'chipped:gilded_blackstone_4',
             'chipped:gilded_blackstone_3',
             'chipped:gilded_blackstone_2',
-            'chipped:gilded_blackstone_1'
+            'chipped:gilded_blackstone_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'granite',
@@ -840,10 +840,10 @@ const stonecuttables = [
             'chisel:granite/pillar',
             'chisel:granite/twisted',
             'chisel:granite/prism',
-            'chisel:granite/cuts'
+            'chisel:granite/cuts',
         ],
         onlyAsOutput: ['create:granite_cobblestone'],
-        onlyAsInput: ['minecraft:granite']
+        onlyAsInput: ['minecraft:granite'],
     },
     {
         name: 'hay_block',
@@ -856,10 +856,10 @@ const stonecuttables = [
             'chipped:hay_block_4',
             'chipped:hay_block_3',
             'chipped:hay_block_2',
-            'chipped:hay_block_1'
+            'chipped:hay_block_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'jack_o_lantern',
@@ -886,10 +886,10 @@ const stonecuttables = [
             'chipped:jack_o_lantern_1',
             'chipped:jack_o_lantern_nether',
             'chipped:jack_o_lantern_end2',
-            'chipped:jack_o_lantern_end'
+            'chipped:jack_o_lantern_end',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'jasper',
@@ -899,16 +899,16 @@ const stonecuttables = [
             'quark:chiseled_jasper_bricks',
             'quark:jasper_pavement',
             'quark:jasper_pillar',
-            'quark:polished_jasper'
+            'quark:polished_jasper',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'lavender_quartz',
         stones: ['botania:lavender_quartz', 'botania:lavender_quartz_pillar', 'botania:chiseled_lavender_quartz'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'limestone',
@@ -962,22 +962,22 @@ const stonecuttables = [
             'chisel:limestone/pillar',
             'chisel:limestone/twisted',
             'chisel:limestone/prism',
-            'chisel:limestone/cuts'
+            'chisel:limestone/cuts',
         ],
         onlyAsOutput: ['create:limestone_cobblestone'],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'magma',
         stones: ['minecraft:magma_block', 'quark:magma_bricks'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'mana_quartz',
         stones: ['botania:mana_quartz', 'botania:mana_quartz_pillar', 'botania:chiseled_mana_quartz'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'marble',
@@ -1028,10 +1028,10 @@ const stonecuttables = [
             'chisel:marble/pillar',
             'chisel:marble/twisted',
             'chisel:marble/prism',
-            'chisel:marble/cuts'
+            'chisel:marble/cuts',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'marblesooty',
@@ -1042,96 +1042,96 @@ const stonecuttables = [
             'astralsorcery:black_marble_arch',
             'astralsorcery:black_marble_bricks',
             'astralsorcery:black_marble_chiseled',
-            'astralsorcery:black_marble_engraved'
+            'astralsorcery:black_marble_engraved',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'metamorphic_desert_stone',
         stones: [
             'botania:metamorphic_desert_stone',
             'botania:metamorphic_desert_bricks',
-            'botania:chiseled_metamorphic_desert_bricks'
+            'botania:chiseled_metamorphic_desert_bricks',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'metamorphic_forest_stone',
         stones: [
             'botania:metamorphic_forest_stone',
             'botania:metamorphic_forest_bricks',
-            'botania:chiseled_metamorphic_forest_bricks'
+            'botania:chiseled_metamorphic_forest_bricks',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'metamorphic_fungal_stone',
         stones: [
             'botania:metamorphic_fungal_stone',
             'botania:metamorphic_fungal_bricks',
-            'botania:chiseled_metamorphic_fungal_bricks'
+            'botania:chiseled_metamorphic_fungal_bricks',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'metamorphic_mesa_stone',
         stones: [
             'botania:metamorphic_mesa_stone',
             'botania:metamorphic_mesa_bricks',
-            'botania:chiseled_metamorphic_mesa_bricks'
+            'botania:chiseled_metamorphic_mesa_bricks',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'metamorphic_mountain_stone',
         stones: [
             'botania:metamorphic_mountain_stone',
             'botania:metamorphic_mountain_bricks',
-            'botania:chiseled_metamorphic_mountain_bricks'
+            'botania:chiseled_metamorphic_mountain_bricks',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'metamorphic_plains_stone',
         stones: [
             'botania:metamorphic_plains_stone',
             'botania:metamorphic_plains_bricks',
-            'botania:chiseled_metamorphic_plains_bricks'
+            'botania:chiseled_metamorphic_plains_bricks',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'metamorphic_swamp_stone',
         stones: [
             'botania:metamorphic_swamp_stone',
             'botania:metamorphic_swamp_bricks',
-            'botania:chiseled_metamorphic_swamp_bricks'
+            'botania:chiseled_metamorphic_swamp_bricks',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'metamorphic_taiga_stone',
         stones: [
             'botania:metamorphic_taiga_stone',
             'botania:metamorphic_taiga_bricks',
-            'botania:chiseled_metamorphic_taiga_bricks'
+            'botania:chiseled_metamorphic_taiga_bricks',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'midori',
         stones: ['quark:midori_block', 'quark:midori_pillar'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'myalite',
@@ -1141,10 +1141,10 @@ const stonecuttables = [
             'quark:chiseled_myalite_bricks',
             'quark:myalite_pavement',
             'quark:myalite_pillar',
-            'quark:polished_myalite'
+            'quark:polished_myalite',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'nether_bricks',
@@ -1167,10 +1167,10 @@ const stonecuttables = [
             'chipped:nether_bricks_4',
             'chipped:nether_bricks_3',
             'chipped:nether_bricks_2',
-            'chipped:nether_bricks_1'
+            'chipped:nether_bricks_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'netherrack',
@@ -1193,10 +1193,10 @@ const stonecuttables = [
             'chipped:netherrack_4',
             'chipped:netherrack_3',
             'chipped:netherrack_2',
-            'chipped:netherrack_1'
+            'chipped:netherrack_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'obsidian',
@@ -1221,16 +1221,16 @@ const stonecuttables = [
             'chipped:obsidian_4',
             'chipped:obsidian_3',
             'chipped:obsidian_2',
-            'chipped:obsidian_1'
+            'chipped:obsidian_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'permafrost',
         stones: ['quark:permafrost', 'quark:permafrost_bricks'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'prismarine_brick',
@@ -1254,10 +1254,10 @@ const stonecuttables = [
             'masonry:prismarinelargebricks',
             'masonry:prismarinelargebrickscracked',
             'masonry:prismarinelargebricksmossy',
-            'masonry:prismarinesmallbrick'
+            'masonry:prismarinesmallbrick',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'prismarine',
@@ -1315,16 +1315,16 @@ const stonecuttables = [
             'chisel:prismarine/pillar',
             'chisel:prismarine/twisted',
             'chisel:prismarine/prism',
-            'chisel:prismarine/cuts'
+            'chisel:prismarine/cuts',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'pumpkin',
         stones: ['minecraft:pumpkin', 'chipped:pumpkin_nether', 'chipped:pumpkin_end2', 'chipped:pumpkin_end'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'purpur_block',
@@ -1380,10 +1380,10 @@ const stonecuttables = [
             'chisel:purpur/pillar',
             'chisel:purpur/twisted',
             'chisel:purpur/prism',
-            'chisel:purpur/cuts'
+            'chisel:purpur/cuts',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'quartz',
@@ -1442,10 +1442,10 @@ const stonecuttables = [
             'chisel:quartz/pillar',
             'chisel:quartz/twisted',
             'chisel:quartz/prism',
-            'chisel:quartz/cuts'
+            'chisel:quartz/cuts',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'red_nether_bricks',
@@ -1468,16 +1468,16 @@ const stonecuttables = [
             'chipped:red_nether_bricks_4',
             'chipped:red_nether_bricks_3',
             'chipped:red_nether_bricks_2',
-            'chipped:red_nether_bricks_1'
+            'chipped:red_nether_bricks_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'red_quartz',
         stones: ['botania:red_quartz', 'botania:red_quartz_pillar', 'botania:chiseled_red_quartz'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'red_rock',
@@ -1486,10 +1486,10 @@ const stonecuttables = [
             'byg:red_rock_bricks',
             'byg:mossy_red_rock_bricks',
             'byg:chiseled_red_rock_bricks',
-            'byg:cracked_red_rock_bricks'
+            'byg:cracked_red_rock_bricks',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'red_sandstone',
@@ -1551,10 +1551,10 @@ const stonecuttables = [
             'chisel:red_sandstone/pillar',
             'chisel:red_sandstone/twisted',
             'chisel:red_sandstone/prism',
-            'chisel:red_sandstone/cuts'
+            'chisel:red_sandstone/cuts',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'redstone_lamp',
@@ -1577,10 +1577,10 @@ const stonecuttables = [
             'chipped:redstone_lamp_4',
             'chipped:redstone_lamp_3',
             'chipped:redstone_lamp_2',
-            'chipped:redstone_lamp_1'
+            'chipped:redstone_lamp_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'reinforced_stone',
@@ -1588,10 +1588,10 @@ const stonecuttables = [
             'pneumaticcraft:reinforced_stone',
             'pneumaticcraft:reinforced_bricks',
             'pneumaticcraft:reinforced_brick_tile',
-            'pneumaticcraft:reinforced_brick_pillar'
+            'pneumaticcraft:reinforced_brick_pillar',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'sandstone',
@@ -1653,10 +1653,10 @@ const stonecuttables = [
             'chisel:sandstone/pillar',
             'chisel:sandstone/twisted',
             'chisel:sandstone/prism',
-            'chisel:sandstone/cuts'
+            'chisel:sandstone/cuts',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'shroomlight',
@@ -1677,10 +1677,10 @@ const stonecuttables = [
             'chipped:shroomlight_4',
             'chipped:shroomlight_3',
             'chipped:shroomlight_2',
-            'chipped:shroomlight_1'
+            'chipped:shroomlight_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'scoria',
@@ -1702,10 +1702,10 @@ const stonecuttables = [
             'create:layered_scoria',
             'create:polished_scoria',
             'create:mossy_scoria',
-            'create:overgrown_scoria'
+            'create:overgrown_scoria',
         ],
         onlyAsOutput: ['byg:scoria_cobblestone', 'create:scoria_cobblestone'],
-        onlyAsInput: ['byg:scoria_stone']
+        onlyAsInput: ['byg:scoria_stone'],
     },
     {
         name: 'sea_lantern',
@@ -1726,10 +1726,10 @@ const stonecuttables = [
             'chipped:sea_lantern_4',
             'chipped:sea_lantern_3',
             'chipped:sea_lantern_2',
-            'chipped:sea_lantern_1'
+            'chipped:sea_lantern_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'slate',
@@ -1739,10 +1739,10 @@ const stonecuttables = [
             'quark:chiseled_slate_bricks',
             'quark:slate_pavement',
             'quark:slate_pillar',
-            'quark:polished_slate'
+            'quark:polished_slate',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'deepslate',
@@ -1753,16 +1753,16 @@ const stonecuttables = [
             'quark:deepslate_tiles',
             'quark:chiseled_deepslate',
             'quark:cracked_deepslate_bricks',
-            'quark:cracked_deepslate_tiles'
+            'quark:cracked_deepslate_tiles',
         ],
         onlyAsOutput: [],
-        onlyAsInput: ['quark:deepslate']
+        onlyAsInput: ['quark:deepslate'],
     },
     {
         name: 'soapstone',
         stones: ['byg:polished_soapstone', 'byg:soapstone_bricks', 'byg:soapstone_pillar', 'byg:soapstone_tile'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'soul_sandstone',
@@ -1770,16 +1770,16 @@ const stonecuttables = [
             'quark:soul_sandstone',
             'quark:soul_sandstone_bricks',
             'quark:chiseled_soul_sandstone',
-            'quark:cut_soul_sandstone'
+            'quark:cut_soul_sandstone',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'sunny_quartz',
         stones: ['botania:sunny_quartz', 'botania:sunny_quartz_pillar', 'botania:chiseled_sunny_quartz'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'torch',
@@ -1793,10 +1793,10 @@ const stonecuttables = [
             'chipped:torch_4',
             'chipped:torch_3',
             'chipped:torch_2',
-            'chipped:torch_1'
+            'chipped:torch_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'redstone_torch',
@@ -1806,10 +1806,10 @@ const stonecuttables = [
             'chipped:redstone_torch_5',
             'chipped:redstone_torch_4',
             'chipped:redstone_torch_3',
-            'chipped:redstone_torch_2'
+            'chipped:redstone_torch_2',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'soul_lantern',
@@ -1828,10 +1828,10 @@ const stonecuttables = [
             'chipped:soul_lantern_5',
             'chipped:soul_lantern_2',
             'chipped:soul_lantern_3',
-            'chipped:soul_lantern_1'
+            'chipped:soul_lantern_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'lantern',
@@ -1851,10 +1851,10 @@ const stonecuttables = [
             'chipped:lantern_2',
             'chipped:lantern_4',
             'chipped:lantern_3',
-            'chipped:lantern_1'
+            'chipped:lantern_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'vine',
@@ -1867,10 +1867,10 @@ const stonecuttables = [
             'chipped:vine_4',
             'chipped:vine_3',
             'chipped:vine_2',
-            'chipped:vine_1'
+            'chipped:vine_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'melon',
@@ -1885,10 +1885,10 @@ const stonecuttables = [
             'chipped:melon_4',
             'chipped:melon_3',
             'chipped:melon_2',
-            'chipped:melon_1'
+            'chipped:melon_1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'voidstone',
@@ -1898,10 +1898,10 @@ const stonecuttables = [
             'quark:chiseled_basalt_bricks',
             'quark:basalt_pavement',
             'quark:basalt_pillar',
-            'quark:polished_basalt'
+            'quark:polished_basalt',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'weathered_limestone',
@@ -1915,10 +1915,10 @@ const stonecuttables = [
             'create:layered_weathered_limestone',
             'create:polished_weathered_limestone',
             'create:mossy_weathered_limestone',
-            'create:overgrown_weathered_limestone'
+            'create:overgrown_weathered_limestone',
         ],
         onlyAsOutput: ['create:weathered_limestone_cobblestone'],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'flavolite',
@@ -1928,10 +1928,10 @@ const stonecuttables = [
             'betterendforge:flavolite_pillar',
             'betterendforge:flavolite_tiles',
             'betterendforge:flavolite_polished',
-            'betterendforge:flavolite'
+            'betterendforge:flavolite',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'violecite',
@@ -1941,10 +1941,10 @@ const stonecuttables = [
             'betterendforge:violecite_pillar',
             'betterendforge:violecite_tiles',
             'betterendforge:violecite_polished',
-            'betterendforge:violecite'
+            'betterendforge:violecite',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'sulphuric_rock',
@@ -1954,10 +1954,10 @@ const stonecuttables = [
             'betterendforge:sulphuric_rock_pillar',
             'betterendforge:sulphuric_rock_tiles',
             'betterendforge:sulphuric_rock_polished',
-            'betterendforge:sulphuric_rock'
+            'betterendforge:sulphuric_rock',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'demon_brick',
@@ -1968,20 +1968,20 @@ const stonecuttables = [
             'bloodmagic:dungeon_brick_assorted',
             'bloodmagic:dungeon_brick3',
             'bloodmagic:dungeon_brick2',
-            'bloodmagic:dungeon_brick1'
+            'bloodmagic:dungeon_brick1',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'demon_pillar',
         stones: [
             'bloodmagic:dungeon_pillar_cap',
             'bloodmagic:dungeon_pillar_special',
-            'bloodmagic:dungeon_pillar_center'
+            'bloodmagic:dungeon_pillar_center',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'tyrian',
@@ -2001,10 +2001,10 @@ const stonecuttables = [
             'chisel:tyrian/black',
             'chisel:tyrian/black2',
             'chisel:tyrian/opening',
-            'chisel:tyrian/plate'
+            'chisel:tyrian/plate',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'terracotta',
@@ -2042,10 +2042,10 @@ const stonecuttables = [
             'chisel:terracotta/pillar',
             'chisel:terracotta/twisted',
             'chisel:terracotta/prism',
-            'chisel:terracotta/cuts'
+            'chisel:terracotta/cuts',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'laboratory',
@@ -2063,10 +2063,10 @@ const stonecuttables = [
             'chisel:laboratory/smallsteel',
             'chisel:laboratory/directionleft',
             'chisel:laboratory/directionright',
-            'chisel:laboratory/infocon'
+            'chisel:laboratory/infocon',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'futura',
@@ -2076,10 +2076,10 @@ const stonecuttables = [
             'chisel:futura/controller',
             'chisel:futura/wavy',
             'chisel:futura/controller_purple',
-            'chisel:futura/uber_wavy'
+            'chisel:futura/uber_wavy',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'factory',
@@ -2104,10 +2104,10 @@ const stonecuttables = [
             'chisel:factory/iceiceice',
             'chisel:factory/tilemosaic',
             'chisel:factory/vent',
-            'chisel:factory/wireframeblue'
+            'chisel:factory/wireframeblue',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'mossy_cobblestone',
@@ -2148,10 +2148,10 @@ const stonecuttables = [
             'chisel:mossy_cobblestone/cuts',
             'chisel:mossy_cobblestone/extra/emboss',
             'chisel:mossy_cobblestone/extra/indent',
-            'chisel:mossy_cobblestone/extra/marker'
+            'chisel:mossy_cobblestone/extra/marker',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'chisel_charcoal', //Recipe only costs 1 charcoal so can't also add storage blocks to this
@@ -2189,10 +2189,10 @@ const stonecuttables = [
             'chisel:charcoal/pillar',
             'chisel:charcoal/twisted',
             'chisel:charcoal/prism',
-            'chisel:charcoal/cuts'
+            'chisel:charcoal/cuts',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'bricks',
@@ -2230,10 +2230,10 @@ const stonecuttables = [
             'chisel:bricks/pillar',
             'chisel:bricks/twisted',
             'chisel:bricks/prism',
-            'chisel:bricks/cuts'
+            'chisel:bricks/cuts',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'antiblock',
@@ -2253,22 +2253,22 @@ const stonecuttables = [
             'chisel:antiblock/brown',
             'chisel:antiblock/green',
             'chisel:antiblock/red',
-            'chisel:antiblock/black'
+            'chisel:antiblock/black',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'gunpowder',
         stones: ['quark:gunpowder_sack', 'thermal:gunpowder_block'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'mud',
         stones: ['byg:mud_block', 'environmental:mud'],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'mud_bricks',
@@ -2278,17 +2278,17 @@ const stonecuttables = [
             'environmental:mud_brick_stairs',
             'environmental:mud_bricks',
             'tconstruct:mud_bricks',
-            'byg:mud_bricks'
+            'byg:mud_bricks',
         ],
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     },
     {
         name: 'bamboo',
         stones: ['quark:bamboo_block', 'thermal:bamboo_block'],
         onlyAsOutput: [],
-        onlyAsInput: []
-    }
+        onlyAsInput: [],
+    },
 ];
 // Colorless Glass
 let glassTypes = ['glass', 'glass_pane'];
@@ -2302,7 +2302,7 @@ glassTypes.forEach((glassType) => {
         `connectedglass:scratched_${glassType}`,
         `connectedglass:clear_${glassType}`,
         `connectedglass:borderless_${glassType}`,
-        `minecraft:${glassType}`
+        `minecraft:${glassType}`,
     ];
 
     // Chipped glasses
@@ -2314,7 +2314,7 @@ glassTypes.forEach((glassType) => {
         'acacia_wood',
         'dark_oak_wood',
         'warped_wood',
-        'crimson_wood'
+        'crimson_wood',
     ];
     chippedGlassTypes.forEach((chippedGlassType) => {
         for (i = 1; i <= 6; i++) {
@@ -2337,8 +2337,8 @@ glassTypes.forEach((glassType) => {
             `atum:palm_framed_crystal_${glassType}`,
             `atum:crystal_${glassType}`,
             `valhelsia_structures:metal_framed_${glassType}`,
-            `undergarden:sediment_${glassType}`
-        ]
+            `undergarden:sediment_${glassType}`,
+        ],
     });
 });
 
@@ -2357,21 +2357,21 @@ colors.forEach((color) => {
         `connectedglass:scratched_glass_${color}`,
         `connectedglass:clear_glass_${color}`,
         `connectedglass:borderless_glass_${color}`,
-        `minecraft:${color}_stained_glass`
+        `minecraft:${color}_stained_glass`,
     ];
 
     let glassOnlyInput = [
         `tconstruct:${color}_clear_stained_glass`,
         `atum:${color}_stained_deadwood_framed_crystal_glass`,
         `atum:${color}_stained_palm_framed_crystal_glass`,
-        `atum:${color}_stained_crystal_glass`
+        `atum:${color}_stained_crystal_glass`,
     ];
 
     stonecuttables.push({
         name: `${color}_glass`,
         stones: glass,
         onlyAsOutput: [],
-        onlyAsInput: glassOnlyInput
+        onlyAsInput: glassOnlyInput,
     });
 
     // Colored Glass Panes
@@ -2389,21 +2389,21 @@ colors.forEach((color) => {
         `connectedglass:scratched_glass_${color}_pane`,
         `connectedglass:clear_glass_${color}_pane`,
         `connectedglass:borderless_glass_${color}_pane`,
-        `minecraft:${color}_stained_glass_pane`
+        `minecraft:${color}_stained_glass_pane`,
     ];
 
     let glassPanesOnlyInput = [
         `tconstruct:${color}_clear_stained_glass_pane`,
         `atum:${color}_stained_deadwood_framed_crystal_glass_pane`,
         `atum:${color}_stained_palm_framed_crystal_glass_pane`,
-        `atum:${color}_stained_crystal_glass_pane`
+        `atum:${color}_stained_crystal_glass_pane`,
     ];
 
     stonecuttables.push({
         name: `${color}_glass_panes`,
         stones: glassPanes,
         onlyAsOutput: [],
-        onlyAsInput: glassPanesOnlyInput
+        onlyAsInput: glassPanesOnlyInput,
     });
 
     // Chipped Extras
@@ -2424,7 +2424,7 @@ colors.forEach((color) => {
             name: `${color}_${chippedType}`,
             stones: stones,
             onlyAsOutput: [],
-            onlyAsInput: []
+            onlyAsInput: [],
         });
     });
 
@@ -2461,7 +2461,7 @@ colors.forEach((color) => {
         'pillar',
         'twisted',
         'prism',
-        'cuts'
+        'cuts',
     ];
 
     // @Chisel concrete
@@ -2495,7 +2495,7 @@ chiselPlankVariants = [
     'smooth',
     'encased_smooth',
     'braid',
-    'log_cabin'
+    'log_cabin',
 ];
 
 const numberChippedVariants = 18;
@@ -2513,7 +2513,7 @@ plankTypes.forEach((plankType) => {
         name: `${plankType}`,
         stones: stones,
         onlyAsOutput: [],
-        onlyAsInput: []
+        onlyAsInput: [],
     });
 });
 
@@ -2540,7 +2540,7 @@ const masonryPatterns = [
     'largebricks',
     'largebrickscracked',
     'largebricksmossy',
-    'smallbrick'
+    'smallbrick',
 ];
 const masonryIgnoredInputs = [
     'stonecobbled',
@@ -2554,5 +2554,5 @@ const masonryIgnoredInputs = [
     'andesitepolished',
     'darkprismarinepanels',
     'prismarinepavers',
-    'stonesmallbrick'
+    'stonesmallbrick',
 ];

@@ -9,7 +9,7 @@ onEvent('item.tags', (event) => {
         'betterendforge:end_lotus_seed',
         'betterendforge:end_lily_seed',
         'betterendforge:blue_vine_seed',
-        'betterendforge:lumecorn_seed'
+        'betterendforge:lumecorn_seed',
     ]);
     event.add('forge:seeds/hemp', ['immersiveengineering:seed']);
 

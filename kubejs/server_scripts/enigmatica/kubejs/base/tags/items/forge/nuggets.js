@@ -14,7 +14,7 @@ onEvent('item.tags', (event) => {
         'mythicbotany:alfsteel_nugget',
         'occultism:iesnium_nugget',
         'tconstruct:debris_nugget',
-        'tconstruct:netherite_nugget'
+        'tconstruct:netherite_nugget',
     ]);
 
     event.get('forge:nuggets/thallasium').add('betterendforge:thallasium_nugget');

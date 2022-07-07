@@ -34,9 +34,9 @@ onEvent('recipes', (event) => {
                 B: '#forge:plates/steel',
                 C: '#forge:treated_wood_slab',
                 D: 'immersiveengineering:treated_fence',
-                E: 'immersiveengineering:craftingtable'
+                E: 'immersiveengineering:craftingtable',
             },
-            id: 'immersiveengineering:crafting/workbench'
+            id: 'immersiveengineering:crafting/workbench',
         },
         {
             output: 'immersiveengineering:turntable',
@@ -45,9 +45,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/iron',
                 B: 'create:brass_casing',
                 C: '#forge:dusts/redstone',
-                D: 'immersiveengineering:coil_lv'
+                D: 'immersiveengineering:coil_lv',
             },
-            id: 'immersiveengineering:crafting/turntable'
+            id: 'immersiveengineering:crafting/turntable',
         },
 
         /*{
@@ -67,9 +67,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:sheetmetals/aluminum',
                 B: 'immersiveengineering:coil_lv',
                 C: 'powah:dielectric_casing',
-                D: 'thermal:rf_coil'
+                D: 'thermal:rf_coil',
             },
-            id: 'immersiveengineering:crafting/furnace_heater'
+            id: 'immersiveengineering:crafting/furnace_heater',
         },
         {
             output: Item.of('12x immersiveengineering:conveyor_basic'),
@@ -78,9 +78,9 @@ onEvent('recipes', (event) => {
                 A: 'create:shaft',
                 B: 'create:belt_connector',
                 C: '#forge:gears/iron_aluminum',
-                D: 'thermal:redstone_servo'
+                D: 'thermal:redstone_servo',
             },
-            id: 'immersiveengineering:crafting/conveyor_basic'
+            id: 'immersiveengineering:crafting/conveyor_basic',
         },
         {
             output: 'immersiveengineering:circuit_table',
@@ -90,9 +90,9 @@ onEvent('recipes', (event) => {
                 B: 'immersiveengineering:screwdriver',
                 C: '#forge:treated_wood_slab',
                 D: 'immersiveengineering:craftingtable',
-                E: Item.of('thermal:energy_cell').ignoreNBT()
+                E: Item.of('thermal:energy_cell').ignoreNBT(),
             },
-            id: 'immersiveengineering:crafting/circuit_table'
+            id: 'immersiveengineering:crafting/circuit_table',
         },
         {
             output: Item.of('2x immersiveengineering:rs_engineering'),
@@ -101,9 +101,9 @@ onEvent('recipes', (event) => {
                 A: 'thermal:signalum_glass',
                 B: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 C: 'immersiveengineering:wirecoil_redstone',
-                D: '#forge:sheetmetals/aluminum'
+                D: '#forge:sheetmetals/aluminum',
             },
-            id: 'immersiveengineering:crafting/rs_engineering'
+            id: 'immersiveengineering:crafting/rs_engineering',
         },
         {
             output: Item.of('2x immersiveengineering:heavy_engineering'),
@@ -112,9 +112,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/steel',
                 B: 'immersiveengineering:component_steel',
                 C: 'immersiveengineering:wirecoil_electrum',
-                D: '#forge:sheetmetals/steel'
+                D: '#forge:sheetmetals/steel',
             },
-            id: 'immersiveengineering:crafting/heavy_engineering'
+            id: 'immersiveengineering:crafting/heavy_engineering',
         },
         {
             output: Item.of('2x immersiveengineering:light_engineering'),
@@ -123,9 +123,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/invar',
                 B: 'immersiveengineering:component_iron',
                 C: 'immersiveengineering:wirecoil_copper',
-                D: '#forge:sheetmetals/aluminum'
+                D: '#forge:sheetmetals/aluminum',
             },
-            id: 'immersiveengineering:crafting/light_engineering'
+            id: 'immersiveengineering:crafting/light_engineering',
         },
         {
             output: 'immersiveengineering:capacitor_lv',
@@ -138,10 +138,10 @@ onEvent('recipes', (event) => {
                 E: {
                     type: 'pneumaticcraft:fluid',
                     tag: 'pneumaticcraft:etching_acid',
-                    amount: 1000
-                }
+                    amount: 1000,
+                },
             },
-            id: 'immersiveengineering:crafting/capacitor_lv'
+            id: 'immersiveengineering:crafting/capacitor_lv',
         },
         {
             output: 'immersiveengineering:capacitor_mv',
@@ -151,9 +151,9 @@ onEvent('recipes', (event) => {
                 B: 'immersiveengineering:connector_mv',
                 C: 'immersiveengineering:capacitor_lv',
                 D: '#forge:plates/lead',
-                E: '#forge:storage_blocks/electrum'
+                E: '#forge:storage_blocks/electrum',
             },
-            id: 'immersiveengineering:crafting/capacitor_mv'
+            id: 'immersiveengineering:crafting/capacitor_mv',
         },
         {
             output: 'immersiveengineering:capacitor_hv',
@@ -163,45 +163,45 @@ onEvent('recipes', (event) => {
                 B: 'immersiveengineering:connector_hv',
                 C: 'immersiveengineering:capacitor_mv',
                 D: '#forge:plates/lead',
-                E: '#forge:storage_blocks/steel'
+                E: '#forge:storage_blocks/steel',
             },
-            id: 'immersiveengineering:crafting/capacitor_hv'
+            id: 'immersiveengineering:crafting/capacitor_hv',
         },
         {
             output: 'immersiveengineering:windmill_blade',
             pattern: ['AA ', 'BBA', 'BB '],
             key: {
                 A: 'eidolon:polished_planks',
-                B: 'create:sail_frame'
+                B: 'create:sail_frame',
             },
-            id: 'immersiveengineering:crafting/windmill_blade'
+            id: 'immersiveengineering:crafting/windmill_blade',
         },
         {
             output: 'immersiveengineering:windmill',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'immersiveengineering:windmill_blade',
-                B: 'create:mechanical_bearing'
+                B: 'create:mechanical_bearing',
             },
-            id: 'immersiveengineering:crafting/windmill'
+            id: 'immersiveengineering:crafting/windmill',
         },
         {
             output: 'immersiveengineering:watermill',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'immersiveengineering:waterwheel_segment',
-                B: 'create:mechanical_bearing'
+                B: 'create:mechanical_bearing',
             },
-            id: 'immersiveengineering:crafting/watermill'
+            id: 'immersiveengineering:crafting/watermill',
         },
         {
             output: 'immersiveengineering:waterwheel_segment',
             pattern: [' A ', 'ABA', 'BAB'],
             key: {
                 A: '#forge:rods/brass',
-                B: 'eidolon:polished_planks'
+                B: 'eidolon:polished_planks',
             },
-            id: 'immersiveengineering:crafting/waterwheel_segment'
+            id: 'immersiveengineering:crafting/waterwheel_segment',
         },
         {
             output: 'immersiveengineering:dynamo',
@@ -210,9 +210,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/brass',
                 B: 'immersiveengineering:coil_lv',
                 C: 'thermal:machine_frame',
-                D: '#forge:ingots/andesite_alloy'
+                D: '#forge:ingots/andesite_alloy',
             },
-            id: 'immersiveengineering:crafting/dynamo'
+            id: 'immersiveengineering:crafting/dynamo',
         },
         {
             output: 'immersiveengineering:radiator',
@@ -223,10 +223,10 @@ onEvent('recipes', (event) => {
                 C: {
                     type: 'pneumaticcraft:fluid',
                     fluid: 'minecraft:water',
-                    amount: 1000
-                }
+                    amount: 1000,
+                },
             },
-            id: 'immersiveengineering:crafting/radiator'
+            id: 'immersiveengineering:crafting/radiator',
         },
         {
             output: 'immersiveengineering:generator',
@@ -234,10 +234,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:sheetmetals/steel',
                 B: 'immersiveengineering:coil_mv',
-                C: 'immersiveengineering:dynamo'
+                C: 'immersiveengineering:dynamo',
             },
-            id: 'immersiveengineering:crafting/generator'
-        }
+            id: 'immersiveengineering:crafting/generator',
+        },
     ];
 
     recipes.forEach((recipe) => {

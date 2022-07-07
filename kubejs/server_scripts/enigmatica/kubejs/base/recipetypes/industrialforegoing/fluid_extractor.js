@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
                             breakChance: 0.005,
                             output: `{FluidName:"${tree.sap}",Amount:${tree.rate.dead}}`,
                             defaultRecipe: false,
-                            type: 'industrialforegoing:fluid_extractor'
+                            type: 'industrialforegoing:fluid_extractor',
                         })
                         .id(`industrialforegoing:fluid_extractor/${tree.trunk.replace(':', '/')}`);
                     // Extract at half rate from Stripped Logs
@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
                             result: 'minecraft:air',
                             breakChance: 0.005,
                             output: `{FluidName:"${tree.sap}",Amount:${tree.rate.dead / 2}}`,
-                            defaultRecipe: false
+                            defaultRecipe: false,
                         })
                         .id(`industrialforegoing:fluid_extractor/${strippedLog.replace(':', '/')}`);
                 }

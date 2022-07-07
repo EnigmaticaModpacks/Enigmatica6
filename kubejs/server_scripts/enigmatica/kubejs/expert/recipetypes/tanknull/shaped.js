@@ -22,9 +22,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'resourcefulbees:coal_honeycomb_block',
                 B: 'mekanism:basic_fluid_tank',
-                C: 'minecraft:sponge'
+                C: 'minecraft:sponge',
             },
-            id: 'tanknull:1'
+            id: 'tanknull:1',
         },
         {
             output: 'tanknull:dock',
@@ -33,10 +33,10 @@ onEvent('recipes', (event) => {
                 A: 'immersiveengineering:sheetmetal_colored_white',
                 B: 'ppfluids:high_fluid_extraction_module',
                 C: 'ppfluids:high_fluid_retrieval_module',
-                D: 'thermal:fluid_cell_frame'
+                D: 'thermal:fluid_cell_frame',
             },
-            id: 'tanknull:dock'
-        }
+            id: 'tanknull:dock',
+        },
     ];
 
     recipes.forEach((recipe) => {

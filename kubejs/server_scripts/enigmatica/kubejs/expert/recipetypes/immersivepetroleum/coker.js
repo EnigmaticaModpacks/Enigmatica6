@@ -10,13 +10,13 @@ onEvent('recipes', (event) => {
             resultfluid: { tag: 'forge:diesel_sulfur', amount: 27 },
             input: {
                 base_ingredient: { tag: 'forge:bitumen' },
-                count: 2
+                count: 2,
             },
             inputfluid: { tag: 'minecraft:water', amount: 125 },
             time: 8,
             energy: 24000,
-            id: `immersivepetroleum:coking/petcoke`
-        }
+            id: `immersivepetroleum:coking/petcoke`,
+        },
     ];
 
     recipes.forEach((recipe) => {

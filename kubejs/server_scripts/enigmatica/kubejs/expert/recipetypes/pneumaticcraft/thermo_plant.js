@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
             speed: 0.5,
             exothermic: false,
             temperature: { min_temp: 1973 },
-            id: 'occultism:crafting/spirit_attuned_crystal'
+            id: 'occultism:crafting/spirit_attuned_crystal',
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'pneumaticcraft:plastic', amount: 1000 },
@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             speed: 0.8,
             exothermic: false,
             temperature: { min_temp: 1873 },
-            id: `${id_prefix}coated_machine_frame_top`
+            id: `${id_prefix}coated_machine_frame_top`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'pneumaticcraft:etching_acid', amount: 500 },
@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
             pressure: 3.0,
             speed: 0.8,
             exothermic: false,
-            id: `${id_prefix}corrosivecrystal`
+            id: `${id_prefix}corrosivecrystal`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'tconstruct:blood', amount: 500 },
@@ -40,7 +40,7 @@ onEvent('recipes', (event) => {
             pressure: 3.0,
             speed: 0.8,
             exothermic: false,
-            id: `${id_prefix}vengefulcrystal`
+            id: `${id_prefix}vengefulcrystal`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'tconstruct:blazing_blood', amount: 500 },
@@ -49,7 +49,7 @@ onEvent('recipes', (event) => {
             pressure: 3.0,
             speed: 0.8,
             exothermic: false,
-            id: `${id_prefix}destructivecrystal`
+            id: `${id_prefix}destructivecrystal`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'tconstruct:molten_obsidian', amount: 500 },
@@ -58,7 +58,7 @@ onEvent('recipes', (event) => {
             pressure: 3.0,
             speed: 0.8,
             exothermic: false,
-            id: `${id_prefix}steadfastcrystal`
+            id: `${id_prefix}steadfastcrystal`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', tag: 'forge:experience', amount: 8000 },
@@ -68,7 +68,7 @@ onEvent('recipes', (event) => {
             speed: 0.8,
             exothermic: true,
             temperature: { min_temp: 1173, max_temp: 1273 },
-            id: `${id_prefix}defaultcrystal`
+            id: `${id_prefix}defaultcrystal`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 1000 },
@@ -76,7 +76,7 @@ onEvent('recipes', (event) => {
             item_output: { item: 'pneumaticcraft:upgrade_matrix', count: 4 },
             pressure: 2.0,
             speed: 0.8,
-            id: 'pneumaticcraft:thermo_plant/upgrade_matrix'
+            id: 'pneumaticcraft:thermo_plant/upgrade_matrix',
         },
         {
             item_input: { item: 'atum:crystal_glass' },
@@ -86,7 +86,7 @@ onEvent('recipes', (event) => {
             speed: 0.5,
             exothermic: false,
             temperature: { min_temp: 1273 },
-            id: `${id_prefix}menril_glass`
+            id: `${id_prefix}menril_glass`,
         },
         {
             item_input: { item: 'atum:crystal_glass' },
@@ -96,21 +96,21 @@ onEvent('recipes', (event) => {
             speed: 0.5,
             exothermic: false,
             temperature: { min_temp: 1273 },
-            id: `${id_prefix}chorus_glass`
+            id: `${id_prefix}chorus_glass`,
         },
         {
             item_input: { item: 'minecraft:popped_chorus_fruit' },
             fluid_output: { fluid: 'integrateddynamics:liquid_chorus', amount: 125 },
             pressure: 3.0,
             exothermic: false,
-            id: `${id_prefix}liquid_chorus_from_chorus_fruit`
+            id: `${id_prefix}liquid_chorus_from_chorus_fruit`,
         },
         {
             item_input: { item: 'integrateddynamics:proto_chorus' },
             fluid_output: { fluid: 'integrateddynamics:liquid_chorus', amount: 125 },
             pressure: 3.0,
             exothermic: false,
-            id: `${id_prefix}liquid_chorus_from_proto_chorus`
+            id: `${id_prefix}liquid_chorus_from_proto_chorus`,
         },
         {
             item_input: { item: 'rftoolsbase:machine_base' },
@@ -119,7 +119,7 @@ onEvent('recipes', (event) => {
             pressure: 2.0,
             exothermic: false,
             temperature: { min_temp: 1973 },
-            id: 'rftoolspower:power_core1'
+            id: 'rftoolspower:power_core1',
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'mekanism:lithium', amount: 100 },
@@ -127,13 +127,13 @@ onEvent('recipes', (event) => {
             pressure: 2.0,
             exothermic: true,
             temperature: { max_temp: 453 },
-            id: `${id_prefix}lithium_dust`
+            id: `${id_prefix}lithium_dust`,
         },
         {
             fluid_input: {
                 type: 'pneumaticcraft:fluid',
                 fluid: 'resourcefulbees:otherworldly_honey',
-                amount: 250
+                amount: 250,
             },
             item_input: { item: 'mythicbotany:kvasir_blood' },
             item_output: { item: 'mythicbotany:kvasir_mead', count: 1 },
@@ -141,7 +141,7 @@ onEvent('recipes', (event) => {
             exothermic: false,
             speed: 0.1,
             temperature: { max_temp: 1973 },
-            id: `${id_prefix}kvasir_mead`
+            id: `${id_prefix}kvasir_mead`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'astralsorcery:liquid_starlight', amount: 1000 },
@@ -151,7 +151,7 @@ onEvent('recipes', (event) => {
             exothermic: true,
             speed: 0.1,
             temperature: { max_temp: 100 },
-            id: `${id_prefix}celestial_crystal`
+            id: `${id_prefix}celestial_crystal`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'industrialforegoing:latex', amount: 900 },
@@ -161,7 +161,7 @@ onEvent('recipes', (event) => {
             exothermic: false,
             speed: 1.1,
             temperature: { min_temp: 433 },
-            id: `${id_prefix}dryrubber`
+            id: `${id_prefix}dryrubber`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 100 },
@@ -171,7 +171,7 @@ onEvent('recipes', (event) => {
             exothermic: false,
             speed: 0.5,
             temperature: { min_temp: 373 },
-            id: `${id_prefix}venom_from_spider_eye`
+            id: `${id_prefix}venom_from_spider_eye`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 200 },
@@ -181,7 +181,7 @@ onEvent('recipes', (event) => {
             exothermic: false,
             speed: 0.5,
             temperature: { min_temp: 373 },
-            id: `${id_prefix}venom_from_fermented_spider_eye`
+            id: `${id_prefix}venom_from_fermented_spider_eye`,
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'pneumaticcraft:plastic', amount: 1000 },
@@ -190,8 +190,8 @@ onEvent('recipes', (event) => {
             pressure: 1.0,
             exothermic: false,
             speed: 0.5,
-            id: `${id_prefix}etching_acid_from_monster_mash`
-        }
+            id: `${id_prefix}etching_acid_from_monster_mash`,
+        },
     ];
 
     let crystal_colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'white', 'black'];
@@ -205,7 +205,7 @@ onEvent('recipes', (event) => {
             exothermic: false,
             speed: 0.25,
             temperature: { min_temp: 2200 },
-            id: `${id_prefix}${crystal_color}_crystal_pane`
+            id: `${id_prefix}${crystal_color}_crystal_pane`,
         });
     });
 

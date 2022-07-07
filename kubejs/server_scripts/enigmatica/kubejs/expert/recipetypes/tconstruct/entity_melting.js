@@ -8,8 +8,8 @@ onEvent('recipes', (event) => {
             entity: { type: 'minecraft:cow' },
             result: { fluid: 'industrialforegoing:meat', amount: 100 },
             damage: 2,
-            id: `${id_prefix}liquid_meat`
-        }
+            id: `${id_prefix}liquid_meat`,
+        },
     ];
 
     recipes.forEach((recipe) => {

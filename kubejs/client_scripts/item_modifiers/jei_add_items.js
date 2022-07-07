@@ -11,7 +11,7 @@ onEvent('jei.add.items', (event) => {
             Damage: 0,
             'double/basic_hammer_right_material': 'basic_hammer/alfsteel',
             'double/basic_handle_material': 'basic_handle/end_rod',
-            'double/basic_hammer_left_material': 'basic_hammer/alfsteel'
+            'double/basic_hammer_left_material': 'basic_hammer/alfsteel',
         }),
         Item.of('tetra:modular_sword', {
             'sword/wide_guard_material': 'wide_guard/starmetal',
@@ -24,8 +24,8 @@ onEvent('jei.add.items', (event) => {
             'sword/hilt': 'sword/basic_hilt',
             Damage: 0,
             'sword/blade:arrested': 0,
-            'sword/decorative_pommel_material': 'decorative_pommel/oak'
-        })
+            'sword/decorative_pommel_material': 'decorative_pommel/oak',
+        }),
 
         /*
         // Thermal Augments - See Notes Below for NBT data.

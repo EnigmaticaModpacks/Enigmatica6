@@ -5,8 +5,8 @@ onEvent('recipes', (event) => {
         {
             output: 'mekanism:hdpe_sheet',
             inputs: ['mekanism:hdpe_pellet'],
-            id: `${id_prefix}hdpe_sheet`
-        }
+            id: `${id_prefix}hdpe_sheet`,
+        },
     ];
 
     recipes.forEach((recipe) => {

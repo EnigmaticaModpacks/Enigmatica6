@@ -24,14 +24,14 @@ onEvent('recipes', (event) => {
         { output: 'decorative_blocks_abnormals:yucca_beam', input: 'atmospheric:stripped_yucca_log' },
         { output: 'decorative_blocks_abnormals:rosewood_beam', input: 'atmospheric:stripped_rosewood_log' },
         { output: 'decorative_blocks_abnormals:driftwood_beam', input: 'upgrade_aquatic:stripped_driftwood_log' },
-        { output: 'decorative_blocks_abnormals:river_beam', input: 'upgrade_aquatic:stripped_river_log' }
+        { output: 'decorative_blocks_abnormals:river_beam', input: 'upgrade_aquatic:stripped_river_log' },
     ];
     beamRecipes.forEach((recipe) => {
         let constructedRecipe = {
             type: 'environmental:sawing',
             ingredient: Ingredient.of(recipe.input),
             result: recipe.output,
-            count: 1
+            count: 1,
         };
         event.custom(constructedRecipe).id(`${id_prefix}${recipe.output.replace(':', '_')}`);
     });

@@ -18,35 +18,35 @@ onEvent('server.datapack.low_priority', (event) => {
                     item: 'minecraft:bow',
                     weight: 100,
                     damage: [0.0, 0.25],
-                    enchantRange: [30, 30]
+                    enchantRange: [30, 30],
                 },
                 {
                     item: 'minecraft:fishing_rod',
                     weight: 100,
                     damage: [0.0, 0.25],
-                    enchantRange: [30, 30]
+                    enchantRange: [30, 30],
                 },
                 {
                     item: 'minecraft:book',
                     weight: 100,
-                    enchantRange: [30, 30]
+                    enchantRange: [30, 30],
                 },
                 {
                     item: 'botania:mana_ring',
                     weight: 10,
-                    nbt: '{mana:50000}'
+                    nbt: '{mana:50000}',
                 },
                 {
                     item: 'botania:mana_ring',
                     weight: 5,
-                    nbt: '{mana:100000}'
+                    nbt: '{mana:100000}',
                 },
                 {
                     item: 'botania:mana_ring',
                     weight: 1,
-                    nbt: '{mana:250000}'
-                }
-            ]
+                    nbt: '{mana:250000}',
+                },
+            ],
         },
         {
             name: 'soggy_junk',
@@ -60,8 +60,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { weight: 100, item: 'minecraft:kelp' },
                 { weight: 100, item: 'minecraft:seagrass' },
                 { weight: 100, item: 'upgrade_aquatic:blue_pickerelweed' },
-                { weight: 100, item: 'upgrade_aquatic:purple_pickerelweed' }
-            ]
+                { weight: 100, item: 'upgrade_aquatic:purple_pickerelweed' },
+            ],
         },
         {
             type: 'combo_table',
@@ -69,9 +69,9 @@ onEvent('server.datapack.low_priority', (event) => {
             rolls: [5, 5],
             entries: [
                 { item: 'soggy_treasures', weight: 20 },
-                { item: 'soggy_junk', weight: 80 }
-            ]
-        }
+                { item: 'soggy_junk', weight: 80 },
+            ],
+        },
     ];
 
     lootTables.forEach((lootTable) => {
@@ -84,14 +84,14 @@ onEvent('server.datapack.low_priority', (event) => {
                         {
                             type: 'loot_table',
                             weight: pool.weight,
-                            name: `enigmatica:chests/${pool.table}`
-                        }
-                    ]
+                            name: `enigmatica:chests/${pool.table}`,
+                        },
+                    ],
                 });
             });
 
             event.addJson(`enigmatica:loot_tables/chests/${lootTable.name}.json`, {
-                pools: pools
+                pools: pools,
             });
         } else {
             let entries = [];
@@ -101,14 +101,14 @@ onEvent('server.datapack.low_priority', (event) => {
                 if (entry.amount) {
                     functions.push({
                         function: 'set_count',
-                        count: { min: entry.amount[0], max: entry.amount[1] }
+                        count: { min: entry.amount[0], max: entry.amount[1] },
                     });
                 }
                 if (entry.enchantRange) {
                     functions.push({
                         function: 'enchant_with_levels',
                         levels: { min: entry.enchantRange[0], max: entry.enchantRange[1] },
-                        treasure: true
+                        treasure: true,
                     });
                 }
                 if (entry.nbt) {
@@ -117,20 +117,20 @@ onEvent('server.datapack.low_priority', (event) => {
                 if (entry.damage) {
                     functions.push({
                         function: 'set_damage',
-                        damage: { min: entry.damage[0], max: entry.damage[1] }
+                        damage: { min: entry.damage[0], max: entry.damage[1] },
                     });
                 }
                 if (entry.chance) {
                     conditions.push({
                         condition: 'random_chance',
-                        chance: entry.chance
+                        chance: entry.chance,
                     });
                 }
                 if (lootTable.type == 'combo_table') {
                     entries.push({
                         type: 'loot_table',
                         weight: entry.weight,
-                        name: `enigmatica:chests/${entry.item}`
+                        name: `enigmatica:chests/${entry.item}`,
                     });
                 } else {
                     entries.push({
@@ -138,13 +138,13 @@ onEvent('server.datapack.low_priority', (event) => {
                         weight: entry.weight,
                         name: entry.item,
                         functions: functions,
-                        conditions: conditions
+                        conditions: conditions,
                     });
                 }
             });
 
             event.addJson(`enigmatica:loot_tables/chests/${lootTable.name}.json`, {
-                pools: [{ rolls: { min: lootTable.rolls[0], max: lootTable.rolls[1] }, entries: entries }]
+                pools: [{ rolls: { min: lootTable.rolls[0], max: lootTable.rolls[1] }, entries: entries }],
             });
         }
     });

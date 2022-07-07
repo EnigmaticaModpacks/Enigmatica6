@@ -22,10 +22,10 @@ onEvent('recipes', (event) => {
                 C: Item.of('mekanismtools:steel_paxel', '{Damage:0}').weakNBT(),
                 D: 'mekanism:cardboard_box',
                 E: 'minecraft:compass',
-                F: 'immersiveengineering:survey_tools'
+                F: 'immersiveengineering:survey_tools',
             },
-            id: `${id_prefix}amadron_survey_tools`
-        }
+            id: `${id_prefix}amadron_survey_tools`,
+        },
     ];
 
     recipes.forEach((recipe) => {

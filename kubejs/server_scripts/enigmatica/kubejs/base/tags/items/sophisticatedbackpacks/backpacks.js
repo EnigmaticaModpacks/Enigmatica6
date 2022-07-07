@@ -51,7 +51,7 @@ onEvent('item.tags', (event) => {
         'sophisticatedbackpacks:stack_upgrade_tier_4',
         'sophisticatedbackpacks:stack_upgrade_tier_3',
         'sophisticatedbackpacks:stack_upgrade_tier_2',
-        'sophisticatedbackpacks:stack_upgrade_tier_1'
+        'sophisticatedbackpacks:stack_upgrade_tier_1',
     ];
 
     event.get('sophisticatedbackpacks:upgrades').add(sophisticated_upgrades);

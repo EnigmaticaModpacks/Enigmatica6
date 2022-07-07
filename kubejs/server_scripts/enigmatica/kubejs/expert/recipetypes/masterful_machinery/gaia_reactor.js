@@ -9,29 +9,29 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', chance: 1.0, data: { item: 'botania:life_essence', count: 8 } },
                 { type: 'masterfulmachinery:items', chance: 0.5, data: { item: 'botania:life_essence', count: 4 } },
                 { type: 'masterfulmachinery:items', chance: 0.25, data: { item: 'botania:life_essence', count: 2 } },
-                { type: 'masterfulmachinery:botania_mana', data: { amount: 9000 * 300 } }
+                { type: 'masterfulmachinery:botania_mana', data: { amount: 9000 * 300 } },
             ],
             inputs: [
                 {
                     type: 'masterfulmachinery:energy',
                     perTick: true,
-                    data: { amount: 2000000 }
+                    data: { amount: 2000000 },
                 },
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'pneumaticcraft:memory_essence', amount: 16000 }
+                    data: { fluid: 'pneumaticcraft:memory_essence', amount: 16000 },
                 },
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'astralsorcery:liquid_starlight', amount: 1000 }
+                    data: { fluid: 'astralsorcery:liquid_starlight', amount: 1000 },
                 },
-                { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
+                { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } },
             ],
             ticks: 300,
-            id: `${id_prefix}gaia_spirit`
-        }
+            id: `${id_prefix}gaia_spirit`,
+        },
     ];
 
     recipes.forEach((recipe) => {

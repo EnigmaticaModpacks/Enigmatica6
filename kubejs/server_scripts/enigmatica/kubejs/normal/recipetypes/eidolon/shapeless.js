@@ -9,8 +9,8 @@ onEvent('recipes', (event) => {
         {
             output: 'eidolon:candle',
             inputs: ['occultism:candle_white'],
-            id: `${id_prefix}candle`
-        }
+            id: `${id_prefix}candle`,
+        },
     ];
 
     recipes.forEach((recipe) => {

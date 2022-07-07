@@ -8,9 +8,9 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
                 D: '#forge:fruits/mana_berry',
-                E: 'ars_nouveau:mana_bloom'
+                E: 'ars_nouveau:mana_bloom',
             },
-            id: 'ars_nouveau:source_berry_pie'
+            id: 'ars_nouveau:source_berry_pie',
         },
         {
             output: 'ars_nouveau:novice_spell_book',
@@ -18,10 +18,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:nuggets/gold',
                 B: 'minecraft:purple_carpet',
-                C: 'minecraft:book'
+                C: 'minecraft:book',
             },
-            id: 'ars_nouveau:novice_spell_book'
-        }
+            id: 'ars_nouveau:novice_spell_book',
+        },
     ];
 
     recipes.forEach((recipe) => {

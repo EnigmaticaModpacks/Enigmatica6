@@ -22,10 +22,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'tconstruct:nahuatl',
                 B: 'thermal:obsidian_glass',
-                C: 'mekanism:electric_pump'
+                C: 'mekanism:electric_pump',
             },
-            id: 'rangedpumps:pump'
-        }
+            id: 'rangedpumps:pump',
+        },
     ];
 
     recipes.forEach((recipe) => {

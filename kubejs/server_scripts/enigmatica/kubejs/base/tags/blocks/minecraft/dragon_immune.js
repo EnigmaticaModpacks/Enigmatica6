@@ -9,7 +9,7 @@ onEvent('block.tags', (event) => {
         'minecraft:wither_skeleton_skull',
         'occultism:spirit_attuned_crystal',
         'occultism:sacrificial_bowl',
-        'occultism:golden_sacrificial_bowl'
+        'occultism:golden_sacrificial_bowl',
     ];
     event.get('minecraft:dragon_immune').add(blocks);
 });

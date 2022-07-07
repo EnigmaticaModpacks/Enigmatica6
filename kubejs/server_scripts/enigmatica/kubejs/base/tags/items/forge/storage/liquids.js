@@ -5,7 +5,7 @@ onEvent('item.tags', (event) => {
         'astralsorcery:chalice',
         'thermal:fluid_cell',
         'industrialforegoing:black_hole_controller',
-        'mekanism:dynamic_valve'
+        'mekanism:dynamic_valve',
     ];
     var exceptions = [
         'pneumaticcraft:etching_tank',
@@ -15,7 +15,7 @@ onEvent('item.tags', (event) => {
         'mekanism:advanced_chemical_tank',
         'mekanism:elite_chemical_tank',
         'mekanism:ultimate_chemical_tank',
-        'mekanism:creative_chemical_tank'
+        'mekanism:creative_chemical_tank',
     ];
     var tags = ['forge:storage', 'forge:storage/liquid', 'forge:storage/fluid'];
 

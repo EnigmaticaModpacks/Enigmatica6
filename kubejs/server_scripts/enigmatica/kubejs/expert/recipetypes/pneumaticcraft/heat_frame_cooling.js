@@ -12,9 +12,9 @@ onEvent('recipes', (event) => {
                 output: { item: 'immersiveengineering:concrete' },
                 max_temp: 305,
                 bonus_output: { multiplier: 0.085, limit: 0.1 },
-                id: `${id_prefix}concrete`
-            }
-        ]
+                id: `${id_prefix}concrete`,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {
@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
                 input: recipe.input,
                 max_temp: recipe.max_temp,
                 result: recipe.output,
-                bonus_output: recipe.bonus_output
+                bonus_output: recipe.bonus_output,
             })
             .id(recipe.id);
     });

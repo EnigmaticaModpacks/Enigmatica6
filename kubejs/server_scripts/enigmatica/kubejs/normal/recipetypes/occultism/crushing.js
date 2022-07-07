@@ -10,8 +10,8 @@ onEvent('recipes', (event) => {
             count: 1,
             time: 200,
             ignore_crushing_multiplier: true,
-            id: `${id_prefix}black_sand_from_basalt`
-        }
+            id: `${id_prefix}black_sand_from_basalt`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -21,10 +21,10 @@ onEvent('recipes', (event) => {
                 ingredient: recipe.input,
                 result: {
                     item: recipe.output,
-                    count: recipe.count
+                    count: recipe.count,
                 },
                 crushing_time: recipe.time,
-                ignore_crushing_multiplier: recipe.ignore_crushing_multiplier
+                ignore_crushing_multiplier: recipe.ignore_crushing_multiplier,
             })
             .id(recipe.id);
     });

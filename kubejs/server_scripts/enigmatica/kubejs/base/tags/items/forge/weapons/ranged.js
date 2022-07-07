@@ -29,7 +29,7 @@ onEvent('item.tags', (event) => {
         'atum:montus_blast',
         'atum:isis_division',
         'atum:horus_soaring',
-        'atum:anputs_grounding'
+        'atum:anputs_grounding',
     ];
 
     var tags = ['forge:weapons', 'forge:weapons/ranged'];

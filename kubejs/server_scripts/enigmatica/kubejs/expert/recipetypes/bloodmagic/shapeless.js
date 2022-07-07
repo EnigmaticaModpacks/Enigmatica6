@@ -12,9 +12,9 @@ onEvent('recipes', (event) => {
                 'eidolon:polished_planks',
                 'eidolon:polished_planks',
                 'eidolon:polished_planks',
-                { type: 'bloodmagic:bloodorb', orb_tier: 2 }
+                { type: 'bloodmagic:bloodorb', orb_tier: 2 },
             ],
-            id: 'bloodmagic:path/path_wood'
+            id: 'bloodmagic:path/path_wood',
         },
         {
             output: Item.of('bloodmagic:largebloodstonebrick', 4),
@@ -23,10 +23,10 @@ onEvent('recipes', (event) => {
                 'naturesaura:infused_stone',
                 'naturesaura:infused_stone',
                 'naturesaura:infused_stone',
-                'bloodmagic:weakbloodshard'
+                'bloodmagic:weakbloodshard',
             ],
-            id: 'bloodmagic:largebloodstonebrick'
-        }
+            id: 'bloodmagic:largebloodstonebrick',
+        },
     ];
 
     recipes.forEach((recipe) => {

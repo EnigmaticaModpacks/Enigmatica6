@@ -179,14 +179,14 @@ onEvent('recipes', (event) => {
         'waystones:warp_dust',
 
         /create:crafting\/materials\/andesite_alloy/,
-        /emendatusenigmatica:alloy_dust/
+        /emendatusenigmatica:alloy_dust/,
     ];
 
     const outputRemovals = [
         'tiab:timeinabottle',
         'minecraft:nautilus_shell',
         'bloodmagic:intermediatecuttingfluid',
-        'engineersdecor:factory_placer'
+        'engineersdecor:factory_placer',
     ];
 
     const patchouli_safe_removals = [
@@ -304,7 +304,7 @@ onEvent('recipes', (event) => {
         { output: 'pneumaticcraft:assembly_controller', id: 'pneumaticcraft:assembly_controller' },
         { output: 'pneumaticcraft:assembly_platform', id: 'pneumaticcraft:assembly_platform' },
         { output: 'pneumaticcraft:aerial_interface', id: 'pneumaticcraft:aerial_interface' },
-        { output: 'pneumaticcraft:spawner_extractor', id: 'pneumaticcraft:spawner_extractor' }
+        { output: 'pneumaticcraft:spawner_extractor', id: 'pneumaticcraft:spawner_extractor' },
     ];
 
     idRemovals.forEach((id) => {

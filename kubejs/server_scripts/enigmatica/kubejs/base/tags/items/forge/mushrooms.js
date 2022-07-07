@@ -14,6 +14,6 @@ onEvent('item.tags', (event) => {
         'betterendforge:small_jellyshroom',
         'projectvibrantjourneys:bark_mushroom',
         'projectvibrantjourneys:glowcap',
-        'undergarden:ink_mushroom'
+        'undergarden:ink_mushroom',
     ]);
 });

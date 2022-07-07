@@ -21,10 +21,10 @@ onEvent('recipes', (event) => {
             pattern: ['  A', ' A ', 'A B'],
             key: {
                 A: '#forge:rods/aluminum',
-                B: 'fluxnetworks:flux_dust'
+                B: 'fluxnetworks:flux_dust',
             },
-            id: 'engineersdecor:dependent/metal_bar_recipe'
-        }
+            id: 'engineersdecor:dependent/metal_bar_recipe',
+        },
     ];
 
     recipes.forEach((recipe) => {

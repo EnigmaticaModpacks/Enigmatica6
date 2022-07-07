@@ -23,9 +23,9 @@ onEvent('recipes', (event) => {
                 B: 'create:redstone_link',
                 C: '#forge:sheetmetals/iron',
                 D: 'integrateddynamics:part_world_reader',
-                E: 'integratedtunnels:part_player_simulator'
+                E: 'integratedtunnels:part_player_simulator',
             },
-            id: 'advancedperipherals:peripheral_casing'
+            id: 'advancedperipherals:peripheral_casing',
         },
         {
             output: 'advancedperipherals:chunk_controller',
@@ -35,9 +35,9 @@ onEvent('recipes', (event) => {
                 B: 'dustrial_decor:anchor',
                 C: '#forge:storage_blocks/redstone',
                 D: 'minecraft:respawn_anchor',
-                E: 'mekanism:upgrade_anchor'
+                E: 'mekanism:upgrade_anchor',
             },
-            id: 'advancedperipherals:chunk_controller'
+            id: 'advancedperipherals:chunk_controller',
         },
         {
             output: 'advancedperipherals:weak_automata_core',
@@ -47,9 +47,9 @@ onEvent('recipes', (event) => {
                 B: 'advancedperipherals:peripheral_casing',
                 C: 'tconstruct:soul_glass',
                 D: 'quark:soul_bead',
-                E: 'modularrouters:player_module'
+                E: 'modularrouters:player_module',
             },
-            id: 'advancedperipherals:weak_automata_core'
+            id: 'advancedperipherals:weak_automata_core',
         },
         {
             output: 'advancedperipherals:end_automata_core',
@@ -58,10 +58,10 @@ onEvent('recipes', (event) => {
                 A: 'advancedperipherals:weak_automata_core',
                 B: Item.of(
                     'pneumaticcraft:spawner_core',
-                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}'
-                )
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}',
+                ),
             },
-            id: 'advancedperipherals:end_automata_core'
+            id: 'advancedperipherals:end_automata_core',
         },
         {
             output: 'advancedperipherals:husbandry_automata_core',
@@ -71,15 +71,15 @@ onEvent('recipes', (event) => {
                 B: Item.of('pneumaticcraft:spawner_core', '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:cow":100}}'),
                 C: Item.of(
                     'pneumaticcraft:spawner_core',
-                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:sheep":100}}'
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:sheep":100}}',
                 ),
                 D: Item.of('pneumaticcraft:spawner_core', '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:pig":100}}'),
                 E: Item.of(
                     'pneumaticcraft:spawner_core',
-                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:chicken":100}}'
-                )
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:chicken":100}}',
+                ),
             },
-            id: 'advancedperipherals:husbandry_automata_core'
+            id: 'advancedperipherals:husbandry_automata_core',
         },
         {
             output: 'advancedperipherals:overpowered_weak_automata_core',
@@ -89,9 +89,9 @@ onEvent('recipes', (event) => {
                 B: 'bloodmagic:weakbloodshard',
                 C: 'eidolon:shadow_gem',
                 D: 'botania:dragonstone',
-                E: 'minecraft:nether_star'
+                E: 'minecraft:nether_star',
             },
-            id: 'advancedperipherals:overpowered_weak_automata_core'
+            id: 'advancedperipherals:overpowered_weak_automata_core',
         },
         {
             output: 'advancedperipherals:overpowered_husbandry_automata_core',
@@ -101,9 +101,9 @@ onEvent('recipes', (event) => {
                 B: 'bloodmagic:weakbloodshard',
                 C: 'eidolon:shadow_gem',
                 D: 'botania:dragonstone',
-                E: 'minecraft:nether_star'
+                E: 'minecraft:nether_star',
             },
-            id: 'advancedperipherals:overpowered_husbandry_automata_core'
+            id: 'advancedperipherals:overpowered_husbandry_automata_core',
         },
         {
             output: 'advancedperipherals:overpowered_end_automata_core',
@@ -113,10 +113,10 @@ onEvent('recipes', (event) => {
                 B: 'bloodmagic:weakbloodshard',
                 C: 'eidolon:shadow_gem',
                 D: 'botania:dragonstone',
-                E: 'minecraft:nether_star'
+                E: 'minecraft:nether_star',
             },
-            id: 'advancedperipherals:overpowered_end_automata_core'
-        }
+            id: 'advancedperipherals:overpowered_end_automata_core',
+        },
     ];
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);

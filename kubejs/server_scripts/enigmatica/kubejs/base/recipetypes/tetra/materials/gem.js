@@ -19,7 +19,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['shiny', 'crude'],
                     material: { item: 'minecraft:diamond' },
                     improvements: { arrested: 0 },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'emerald',
@@ -37,8 +37,8 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['shiny', 'crude'],
                     material: { item: 'minecraft:emerald' },
                     improvements: { arrested: 0 },
-                    requiredTools: { hammer: 3 }
-                }
+                    requiredTools: { hammer: 3 },
+                },
             ],
             type: 'compat',
             recipes: [
@@ -57,7 +57,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'e9b413', texture: 'e9b413' },
                     textures: ['shiny', 'crude'],
                     material: { item: 'powah:crystal_blazing', count: 2 },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'niotic',
@@ -74,7 +74,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '0082a1', texture: '0082a1' },
                     textures: ['shiny', 'crude'],
                     material: { item: 'powah:crystal_niotic', count: 2 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'spirited',
@@ -91,7 +91,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '86c52d', texture: '86c52d' },
                     textures: ['shiny', 'crude'],
                     material: { item: 'powah:crystal_spirited', count: 2 },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'nitro',
@@ -108,7 +108,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'b82b2d', texture: 'b82b2d' },
                     textures: ['shiny', 'crude'],
                     material: { item: 'powah:crystal_nitro', count: 2 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'rock_crystal',
@@ -125,7 +125,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'f1f1f1', texture: 'f1f1f1' },
                     textures: ['shiny', 'crude'],
                     material: { item: 'astralsorcery:rock_crystal', count: 1 },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
                 {
                     key: 'celestial_crystal',
@@ -142,7 +142,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '00629b', texture: '00629b' },
                     textures: ['shiny', 'crude'],
                     material: { item: 'astralsorcery:celestial_crystal', count: 1 },
-                    requiredTools: { hammer: 5 }
+                    requiredTools: { hammer: 5 },
                 },
                 {
                     key: 'refined_radiance',
@@ -159,7 +159,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'f2e2ff', texture: 'f2e2ff' },
                     textures: ['shiny', 'crude'],
                     material: { item: 'create:refined_radiance', count: 1 },
-                    requiredTools: { hammer: 6 }
+                    requiredTools: { hammer: 6 },
                 },
                 {
                     key: 'mana_pearl',
@@ -176,7 +176,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '007b9b', texture: '007b9b' },
                     textures: ['shiny', 'crude'],
                     material: { item: 'botania:mana_pearl', count: 2 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'mana_gem',
@@ -193,7 +193,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'ae44e2', texture: 'ae44e2' },
                     textures: ['shiny', 'crude'],
                     material: { tag: 'forge:gems/mana', count: 2 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'mana_diamond',
@@ -210,7 +210,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '39ecfc', texture: '39ecfc' },
                     textures: ['shiny', 'crude'],
                     material: { tag: 'forge:gems/mana_diamond', count: 2 },
-                    requiredTools: { hammer: 3 }
+                    requiredTools: { hammer: 3 },
                 },
                 {
                     key: 'dragonstone',
@@ -227,7 +227,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'fcb0e2', texture: 'fcb0e2' },
                     textures: ['shiny', 'crude'],
                     material: { tag: 'forge:gems/dragonstone', count: 2 },
-                    requiredTools: { hammer: 4 }
+                    requiredTools: { hammer: 4 },
                 },
                 {
                     key: 'fluorite',
@@ -244,7 +244,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'e8f9f8', texture: 'e8f9f8' },
                     textures: ['shiny', 'crude'],
                     material: { tag: 'forge:gems/fluorite', count: 2 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'ender_biotite',
@@ -261,7 +261,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '090d13', texture: '090d13' },
                     textures: ['shiny', 'crude'],
                     material: { tag: 'forge:gems/biotite', count: 2 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'dimensional_shard',
@@ -278,7 +278,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '80c8c7', texture: '80c8c7' },
                     textures: ['shiny', 'crude'],
                     material: { tag: 'forge:gems/dimensional', count: 2 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'quartz',
@@ -295,7 +295,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'b4a28c', texture: 'b4a28c' },
                     textures: ['shiny', 'crude'],
                     material: { tag: 'forge:gems/quartz', count: 2 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'prismarine',
@@ -312,7 +312,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '8fc3b5', texture: '8fc3b5' },
                     textures: ['shiny', 'crude'],
                     material: { tag: 'forge:gems/prismarine', count: 2 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'ender_pearl',
@@ -329,7 +329,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: '0b4c41', texture: '0b4c41' },
                     textures: ['shiny', 'crude'],
                     material: { tag: 'forge:gems/ender', count: 2 },
-                    requiredTools: { hammer: 2 }
+                    requiredTools: { hammer: 2 },
                 },
                 {
                     key: 'lapis',
@@ -346,10 +346,10 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'lapis_glyph', texture: 'lapis' },
                     textures: ['shiny', 'crude'],
                     material: { tag: 'forge:gems/lapis', count: 2 },
-                    requiredTools: { hammer: 2 }
-                }
-            ]
-        }
+                    requiredTools: { hammer: 2 },
+                },
+            ],
+        },
     ];
 
     data.forEach((recipeType) => {

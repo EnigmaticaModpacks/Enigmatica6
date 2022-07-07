@@ -29,14 +29,14 @@ function pedestals_stoneworks(event, material, type) {
         event.custom({
             type: recipeType,
             ingredient: {
-                item: material
+                item: material,
             },
             result: {
                 item: material,
-                count: 1
-            }
+                count: 1,
+            },
         }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`,
     );
 }
 
@@ -53,15 +53,15 @@ function industrialforegoing_stoneworks(event, material, type) {
         event.custom({
             output: {
                 item: material,
-                count: 1
+                count: 1,
             },
             waterNeed: 1000,
             lavaNeed: 1000,
             waterConsume: waterConsume,
             lavaConsume: lavaConsume,
-            type: 'industrialforegoing:stonework_generate'
+            type: 'industrialforegoing:stonework_generate',
         }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`,
     );
 }
 
@@ -72,9 +72,9 @@ function thermal_stoneworks(event, material) {
             adjacent: 'minecraft:water',
             below: material,
             result: {
-                item: material
-            }
+                item: material,
+            },
         }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`,
     );
 }

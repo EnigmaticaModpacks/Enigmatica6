@@ -5,10 +5,10 @@ onEvent('recipes', (event) => {
             output: 'eidolon:polished_planks_stairs',
             pattern: ['A  ', 'AA ', 'AAA'],
             key: {
-                A: 'eidolon:polished_planks'
+                A: 'eidolon:polished_planks',
             },
-            id: `${id_prefix}polished_planks_stairs`
-        }
+            id: `${id_prefix}polished_planks_stairs`,
+        },
     ];
 
     recipes.forEach((recipe) => {

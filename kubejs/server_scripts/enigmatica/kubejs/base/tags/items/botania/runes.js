@@ -8,7 +8,7 @@ onEvent('item.tags', (event) => {
         'muspelheim',
         'niflheim',
         'nidavellir',
-        'helheim'
+        'helheim',
     ];
     realms.forEach((realm) => {
         event.get(`botania:runes/${realm}`).add(`mythicbotany:${realm}_rune`);

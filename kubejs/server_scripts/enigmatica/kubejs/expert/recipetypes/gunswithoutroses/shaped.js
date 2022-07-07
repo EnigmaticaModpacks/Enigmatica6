@@ -24,10 +24,10 @@ onEvent('recipes', (event) => {
                 B: 'undergarden:masticator_scales',
                 C: 'undergarden:utheric_shard',
                 D: '#botania:runes/gluttony',
-                E: '#forge:ingots/forgotten_metal'
+                E: '#forge:ingots/forgotten_metal',
             },
-            id: 'gunswithoutroses:hunger_bullet'
-        }
+            id: 'gunswithoutroses:hunger_bullet',
+        },
     ];
 
     recipes.forEach((recipe) => {

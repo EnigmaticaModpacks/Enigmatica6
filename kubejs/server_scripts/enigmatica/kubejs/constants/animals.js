@@ -26,7 +26,7 @@ const tameableAnimals = [
     'atum:desert_wolf',
     'atum:serval',
     'environmental:slabfish',
-    'quark:foxhound'
+    'quark:foxhound',
 ];
 
 // all animals that can be bred (except egg laying animals)
@@ -89,7 +89,7 @@ const breedableAnimals = [
     'quark:foxhound',
     'quark:frog',
     'undergarden:gloomper',
-    'undergarden:dweller'
+    'undergarden:dweller',
 ];
 
 // animals that can be bred, but don't immediately spawn a child after breeding

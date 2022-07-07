@@ -11,10 +11,10 @@ onEvent('recipes', (event) => {
                 A: 'fluxnetworks:flux_block',
                 B: 'fluxnetworks:flux_core',
                 C: 'fluxnetworks:flux_dust',
-                D: 'powah:player_transmitter_nitro'
+                D: 'powah:player_transmitter_nitro',
             },
-            id: 'fluxnetworks:fluxcontroller'
-        }
+            id: 'fluxnetworks:fluxcontroller',
+        },
     ];
 
     recipes.forEach((recipe) => {

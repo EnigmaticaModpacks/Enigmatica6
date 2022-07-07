@@ -8,6 +8,6 @@ onEvent('block.tags', (event) => {
         'betterendforge:pythadendron_bookshelf',
         'betterendforge:end_lotus_bookshelf',
         'betterendforge:lacugrove_bookshelf',
-        'betterendforge:mossy_glowshroom_bookshelf'
+        'betterendforge:mossy_glowshroom_bookshelf',
     ]);
 });

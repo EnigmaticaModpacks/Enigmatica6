@@ -3,6 +3,6 @@ onEvent('item.tags', (event) => {
         '#pneumaticcraft:chests',
         '#forge:chests/electric',
         '#forge:chests/personal',
-        '#forge:chests/ender'
+        '#forge:chests/ender',
     ]);
 });

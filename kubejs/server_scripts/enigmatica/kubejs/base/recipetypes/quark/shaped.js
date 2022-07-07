@@ -12,11 +12,11 @@ onEvent('recipes', (event) => {
                     'byg:wilted_grass',
                     'projectvibrantjourneys:beach_grass',
                     'projectvibrantjourneys:prairie_grass',
-                    'projectvibrantjourneys:short_grass'
-                ]
+                    'projectvibrantjourneys:short_grass',
+                ],
             },
-            id: 'quark:building/crafting/turf'
-        }
+            id: 'quark:building/crafting/turf',
+        },
     ];
 
     recipes.forEach((recipe) => {

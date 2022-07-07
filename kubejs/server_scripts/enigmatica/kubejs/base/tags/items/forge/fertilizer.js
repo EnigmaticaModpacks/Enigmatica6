@@ -4,6 +4,6 @@ onEvent('item.tags', (event) => {
         'thermal:phytogro',
         'farmingforblockheads:green_fertilizer',
         'farmingforblockheads:red_fertilizer',
-        'farmingforblockheads:yellow_fertilizer'
+        'farmingforblockheads:yellow_fertilizer',
     ]);
 });

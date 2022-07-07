@@ -10,10 +10,10 @@ onEvent('recipes', (event) => {
             key: {
                 n: 'mythicbotany:alfsteel_nugget',
                 g: 'minecraft:ghast_tear',
-                p: 'botania:gaia_pylon'
+                p: 'botania:gaia_pylon',
             },
-            id: 'mythicbotany:alfsteel_pylon'
-        }
+            id: 'mythicbotany:alfsteel_pylon',
+        },
     ];
 
     recipes.forEach((recipe) => {

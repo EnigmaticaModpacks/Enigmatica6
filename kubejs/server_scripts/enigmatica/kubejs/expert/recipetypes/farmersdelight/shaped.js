@@ -21,18 +21,18 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'farmersdelight:straw',
-                B: 'resourcefulbees:wax'
+                B: 'resourcefulbees:wax',
             },
-            id: 'farmersdelight:canvas'
+            id: 'farmersdelight:canvas',
         },
         {
             output: 'farmersdelight:basket',
             pattern: ['A A', 'B B', 'ABA'],
             key: {
                 A: 'kubejs:scented_stick',
-                B: 'farmersdelight:canvas'
+                B: 'farmersdelight:canvas',
             },
-            id: 'farmersdelight:basket'
+            id: 'farmersdelight:basket',
         },
         {
             output: 'farmersdelight:cooking_pot',
@@ -42,10 +42,10 @@ onEvent('recipes', (event) => {
                 B: 'kubejs:scented_stick',
                 C: '#forge:ingots/iron',
                 D: 'minecraft:conduit',
-                E: '#forge:plates/copper'
+                E: '#forge:plates/copper',
             },
-            id: 'farmersdelight:cooking_pot'
-        }
+            id: 'farmersdelight:cooking_pot',
+        },
     ];
 
     recipes.forEach((recipe) => {

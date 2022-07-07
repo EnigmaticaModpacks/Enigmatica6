@@ -9,29 +9,29 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'mekanismgenerators:tritium', amount: 640 }
-                }
+                    data: { fluid: 'mekanismgenerators:tritium', amount: 640 },
+                },
             ],
             inputs: [
                 {
                     type: 'masterfulmachinery:botania_mana',
                     consumeInstantly: true,
-                    data: { amount: 4000000 }
+                    data: { amount: 4000000 },
                 },
                 {
                     type: 'masterfulmachinery:energy',
                     perTick: true,
-                    data: { amount: 100000 }
+                    data: { amount: 100000 },
                 },
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'minecraft:water', amount: 64000 }
-                }
+                    data: { fluid: 'minecraft:water', amount: 64000 },
+                },
             ],
             ticks: 4000,
-            id: `${id_prefix}tritium`
-        }
+            id: `${id_prefix}tritium`,
+        },
     ];
 
     recipes.forEach((recipe) => {

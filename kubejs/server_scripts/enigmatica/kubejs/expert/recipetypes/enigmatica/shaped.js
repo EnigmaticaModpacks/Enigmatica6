@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             'watchful_aspen',
             'crustose',
             'sappy_maple',
-            'avocado'
+            'avocado',
         ];
 
         if (dupes.includes(wood.logType)) {
@@ -35,27 +35,27 @@ onEvent('recipes', (event) => {
                 pattern: ['AAA', ' C ', 'AAA'],
                 key: {
                     A: wood.plankBlock,
-                    C: 'farmersdelight:basket'
+                    C: 'farmersdelight:basket',
                 },
-                id: `${id_prefix}oak_full_drawers_1_from_${wood.logType}_planks`
+                id: `${id_prefix}oak_full_drawers_1_from_${wood.logType}_planks`,
             },
             {
                 output: Item.of('storagedrawers:oak_full_drawers_2', 2),
                 pattern: ['ACA', 'AAA', 'ACA'],
                 key: {
                     A: wood.plankBlock,
-                    C: 'farmersdelight:basket'
+                    C: 'farmersdelight:basket',
                 },
-                id: `${id_prefix}oak_full_drawers_2_from_${wood.logType}_planks`
+                id: `${id_prefix}oak_full_drawers_2_from_${wood.logType}_planks`,
             },
             {
                 output: Item.of('storagedrawers:oak_full_drawers_4', 4),
                 pattern: ['CAC', 'AAA', 'CAC'],
                 key: {
                     A: wood.plankBlock,
-                    C: 'farmersdelight:basket'
+                    C: 'farmersdelight:basket',
                 },
-                id: `${id_prefix}oak_full_drawers_4_from_${wood.logType}_planks`
+                id: `${id_prefix}oak_full_drawers_4_from_${wood.logType}_planks`,
             },
 
             {
@@ -63,28 +63,28 @@ onEvent('recipes', (event) => {
                 pattern: ['AAA', ' C ', 'AAA'],
                 key: {
                     A: wood.slabBlock,
-                    C: 'farmersdelight:basket'
+                    C: 'farmersdelight:basket',
                 },
-                id: `${id_prefix}oak_half_drawers_1_from_${wood.logType}_slab`
+                id: `${id_prefix}oak_half_drawers_1_from_${wood.logType}_slab`,
             },
             {
                 output: Item.of('storagedrawers:oak_half_drawers_2', 2),
                 pattern: ['ACA', 'AAA', 'ACA'],
                 key: {
                     A: wood.slabBlock,
-                    C: 'farmersdelight:basket'
+                    C: 'farmersdelight:basket',
                 },
-                id: `${id_prefix}oak_half_drawers_2_from_${wood.logType}_slab`
+                id: `${id_prefix}oak_half_drawers_2_from_${wood.logType}_slab`,
             },
             {
                 output: Item.of('storagedrawers:oak_half_drawers_4', 4),
                 pattern: ['CAC', 'AAA', 'CAC'],
                 key: {
                     A: wood.slabBlock,
-                    C: 'farmersdelight:basket'
+                    C: 'farmersdelight:basket',
                 },
-                id: `${id_prefix}oak_half_drawers_4_from_${wood.logType}_slab`
-            }
+                id: `${id_prefix}oak_half_drawers_4_from_${wood.logType}_slab`,
+            },
         );
     });
 

@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_afrit_rain_weather',
             ingredients: ['#forge:sand', '#forge:gems/diamond', 'minecraft:cactus', 'minecraft:dead_bush'],
             result: 'occultism:jei_dummy/none',
-            id: 'occultism:ritual/summon_afrit_rain_weather'
+            id: 'occultism:ritual/summon_afrit_rain_weather',
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -27,7 +27,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_afrit_thunder_weather',
             ingredients: ['#forge:bones', '#forge:gunpowder', '#forge:gunpowder', 'minecraft:ghast_tear'],
             result: 'occultism:jei_dummy/none',
-            id: 'occultism:ritual/summon_afrit_thunder_weather'
+            id: 'occultism:ritual/summon_afrit_thunder_weather',
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -40,7 +40,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_djinni_clear_weather',
             ingredients: ['#forge:crops/beetroot', '#forge:crops/carrot', '#forge:crops/potato', '#forge:crops/wheat'],
             result: 'occultism:jei_dummy/none',
-            id: 'occultism:ritual/summon_djinni_clear_weather'
+            id: 'occultism:ritual/summon_djinni_clear_weather',
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -53,7 +53,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_djinni_day_time',
             ingredients: ['minecraft:torch', '#minecraft:saplings', 'minecraft:wheat', '#forge:dyes/yellow'],
             result: 'occultism:jei_dummy/none',
-            id: 'occultism:ritual/summon_djinni_day_time'
+            id: 'occultism:ritual/summon_djinni_day_time',
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -66,7 +66,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_djinni_night_time',
             ingredients: ['#minecraft:beds', 'minecraft:rotten_flesh', '#forge:bones', '#forge:dyes/black'],
             result: 'occultism:jei_dummy/none',
-            id: 'occultism:ritual/summon_djinni_night_time'
+            id: 'occultism:ritual/summon_djinni_night_time',
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -79,7 +79,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_foliot_otherstone_trader',
             ingredients: ['minecraft:stone', 'minecraft:granite', 'minecraft:diorite', 'minecraft:andesite'],
             result: 'occultism:jei_dummy/none',
-            id: 'occultism:ritual/summon_foliot_otherstone_trader'
+            id: 'occultism:ritual/summon_foliot_otherstone_trader',
         },
         {
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -94,10 +94,10 @@ onEvent('recipes', (event) => {
                 'minecraft:oak_sapling',
                 'minecraft:birch_sapling',
                 'minecraft:spruce_sapling',
-                'minecraft:jungle_sapling'
+                'minecraft:jungle_sapling',
             ],
             result: 'occultism:jei_dummy/none',
-            id: 'occultism:ritual/summon_foliot_sapling_trader'
+            id: 'occultism:ritual/summon_foliot_sapling_trader',
         },
 
         /// Custom Rituals
@@ -107,7 +107,7 @@ onEvent('recipes', (event) => {
             duration: 120,
             entity_to_sacrifice: {
                 tag: 'enigmatica:bees/rocky',
-                display_name: 'ritual.occultism.sacrifice.rocky_bees'
+                display_name: 'ritual.occultism.sacrifice.rocky_bees',
             },
             pentacle_id: 'occultism:possess_foliot',
             item_to_use: 'occultism:datura',
@@ -125,10 +125,10 @@ onEvent('recipes', (event) => {
                 '#forge:dusts/silver',
                 '#forge:dusts/silver',
                 '#forge:dusts/silver',
-                '#forge:dusts/silver'
+                '#forge:dusts/silver',
             ],
             result: 'occultism:jei_dummy/none',
-            id: `${id_prefix}summon_otherwordly_bee`
+            id: `${id_prefix}summon_otherwordly_bee`,
         },
         {
             ritual_type: 'occultism:craft',
@@ -148,11 +148,11 @@ onEvent('recipes', (event) => {
                 'resourcefulbees:blaze_honeycomb',
                 'resourcefulbees:blaze_honeycomb',
                 'resourcefulbees:blaze_honeycomb',
-                'resourcefulbees:blaze_honeycomb'
+                'resourcefulbees:blaze_honeycomb',
             ],
             result: 'resourcefulbees:otherworldly_honey_bottle',
-            id: `${id_prefix}craft_otherworldly_honey_bottle`
-        }
+            id: `${id_prefix}craft_otherworldly_honey_bottle`,
+        },
     ];
 
     /*

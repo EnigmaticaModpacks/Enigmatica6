@@ -13,9 +13,9 @@ onEvent('recipes', (event) => {
                 aura_type: 'naturesaura:overworld',
                 aura: 15000,
                 time: 100,
-                id: `${id_prefix}compactmachines_wall`
-            }
-        ]
+                id: `${id_prefix}compactmachines_wall`,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {
@@ -26,7 +26,7 @@ onEvent('recipes', (event) => {
                 output: recipe.output,
                 aura_type: recipe.aura_type,
                 aura: recipe.aura,
-                time: recipe.time
+                time: recipe.time,
             })
             .id(recipe.id);
     });

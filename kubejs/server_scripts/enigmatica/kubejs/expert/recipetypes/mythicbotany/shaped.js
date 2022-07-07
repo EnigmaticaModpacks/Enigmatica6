@@ -11,10 +11,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'botania:livingwood',
                 B: 'kubejs:celestial_mycelium_filaments',
-                C: '#botania:runes/midgard'
+                C: '#botania:runes/midgard',
             },
-            id: 'mythicbotany:yggdrasil_branch'
-        }
+            id: 'mythicbotany:yggdrasil_branch',
+        },
     ];
 
     recipes.forEach((recipe) => {

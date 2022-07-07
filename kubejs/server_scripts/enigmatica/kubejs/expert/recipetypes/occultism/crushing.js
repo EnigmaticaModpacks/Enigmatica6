@@ -10,8 +10,8 @@ onEvent('recipes', (event) => {
             count: 3,
             time: 100,
             ignore_crushing_multiplier: false,
-            id: `${id_prefix}nautilus_shell`
-        }
+            id: `${id_prefix}nautilus_shell`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -21,10 +21,10 @@ onEvent('recipes', (event) => {
                 ingredient: recipe.input,
                 result: {
                     item: recipe.output,
-                    count: recipe.count
+                    count: recipe.count,
                 },
                 crushing_time: recipe.time,
-                ignore_crushing_multiplier: recipe.ignore_crushing_multiplier
+                ignore_crushing_multiplier: recipe.ignore_crushing_multiplier,
             })
             .id(recipe.id);
     });

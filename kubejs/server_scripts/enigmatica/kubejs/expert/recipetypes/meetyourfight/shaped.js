@@ -22,10 +22,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:bones',
                 B: 'eidolon:zombie_heart',
-                C: 'meetyourfight:mossy_tooth'
+                C: 'meetyourfight:mossy_tooth',
             },
-            id: 'meetyourfight:caged_heart'
-        }
+            id: 'meetyourfight:caged_heart',
+        },
     ];
 
     newRecipes.forEach((recipe) => {

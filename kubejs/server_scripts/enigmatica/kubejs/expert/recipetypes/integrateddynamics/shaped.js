@@ -9,9 +9,9 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'integrateddynamics:crystalized_menril_chunk',
-                B: 'pneumaticcraft:upgrade_matrix'
+                B: 'pneumaticcraft:upgrade_matrix',
             },
-            id: 'integrateddynamics:crafting/variable'
+            id: 'integrateddynamics:crafting/variable',
         },
         {
             output: 'integrateddynamics:variablestore',
@@ -22,9 +22,9 @@ onEvent('recipes', (event) => {
                 C: 'integrateddynamics:menril_wood',
                 D: 'pneumaticcraft:smart_chest',
                 E: 'pneumaticcraft:upgrade_matrix',
-                F: 'kubejs:memory_advanced_filled'
+                F: 'kubejs:memory_advanced_filled',
             },
-            id: 'integrateddynamics:crafting/variablestore'
+            id: 'integrateddynamics:crafting/variablestore',
         },
         {
             output: 'integrateddynamics:part_connector_mono_directional',
@@ -33,9 +33,9 @@ onEvent('recipes', (event) => {
                 A: 'integrateddynamics:variable_transformer_output',
                 B: 'integrateddynamics:variable_transformer_input',
                 C: 'integrateddynamics:cable',
-                D: 'botania:corporea_spark'
+                D: 'botania:corporea_spark',
             },
-            id: 'integrateddynamics:crafting/part_connector_mono_directional'
+            id: 'integrateddynamics:crafting/part_connector_mono_directional',
         },
         {
             output: 'integrateddynamics:part_static_light_panel',
@@ -44,19 +44,19 @@ onEvent('recipes', (event) => {
                 A: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
                 B: 'integrateddynamics:menril_wood',
                 C: '#forge:plates/lumium',
-                D: 'atum:white_stained_crystal_glass_pane'
+                D: 'atum:white_stained_crystal_glass_pane',
             },
-            id: 'integrateddynamics:crafting/part_static_light_panel'
+            id: 'integrateddynamics:crafting/part_static_light_panel',
         },
         {
             output: 'integrateddynamics:part_display_panel',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:nether"}'),
-                B: 'integrateddynamics:part_static_light_panel'
+                B: 'integrateddynamics:part_static_light_panel',
             },
-            id: 'integrateddynamics:crafting/part_display_panel'
-        }
+            id: 'integrateddynamics:crafting/part_display_panel',
+        },
     ];
 
     recipes.forEach((recipe) => {

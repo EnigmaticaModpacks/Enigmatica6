@@ -20,7 +20,7 @@ onEvent('fluid.tags', (event) => {
         'thermal:latex',
         'thermal:resin',
         'thermal:sap',
-        'undergarden:virulent_mix_source'
+        'undergarden:virulent_mix_source',
     ];
 
     event.get('create:no_infinite_draining').add(/.*/).remove(draining_whitelist);

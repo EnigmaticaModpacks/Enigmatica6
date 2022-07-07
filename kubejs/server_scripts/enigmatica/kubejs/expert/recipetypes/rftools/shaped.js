@@ -22,9 +22,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:gears/signalum',
                 B: '#forge:glass/black',
-                C: 'thermal:charge_bench'
+                C: 'thermal:charge_bench',
             },
-            id: 'rftoolsutility:screen_controller'
+            id: 'rftoolsutility:screen_controller',
         },
         {
             output: 'rftoolsutility:module_template',
@@ -32,9 +32,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:gems/dimensional',
                 B: '#forge:ingots/iron_aluminum',
-                C: 'pneumaticcraft:printed_circuit_board'
+                C: 'pneumaticcraft:printed_circuit_board',
             },
-            id: 'rftoolsutility:module_template'
+            id: 'rftoolsutility:module_template',
         },
         {
             output: 'rftoolsutility:matter_receiver',
@@ -43,9 +43,9 @@ onEvent('recipes', (event) => {
                 A: 'portality:frame',
                 B: 'atum:yellow_stained_crystal_glass',
                 C: 'occultism:stable_wormhole',
-                D: '#industrialforegoing:machine_frame/pity'
+                D: '#industrialforegoing:machine_frame/pity',
             },
-            id: 'rftoolsutility:matter_receiver'
+            id: 'rftoolsutility:matter_receiver',
         },
         {
             output: 'rftoolsutility:matter_transmitter',
@@ -54,9 +54,9 @@ onEvent('recipes', (event) => {
                 A: 'portality:frame',
                 B: 'atum:cyan_stained_crystal_glass',
                 C: 'occultism:stable_wormhole',
-                D: '#industrialforegoing:machine_frame/pity'
+                D: '#industrialforegoing:machine_frame/pity',
             },
-            id: 'rftoolsutility:matter_transmitter'
+            id: 'rftoolsutility:matter_transmitter',
         },
         {
             output: 'rftoolsutility:dialing_device',
@@ -64,9 +64,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'portality:frame',
                 B: 'portality:controller',
-                C: 'xnet:wireless_router'
+                C: 'xnet:wireless_router',
             },
-            id: 'rftoolsutility:dialing_device'
+            id: 'rftoolsutility:dialing_device',
         },
         {
             output: 'rftoolsutility:charged_porter',
@@ -76,9 +76,9 @@ onEvent('recipes', (event) => {
                 B: 'portality:frame',
                 C: 'rftoolsbase:tablet',
                 D: 'rftoolsutility:matter_transmitter',
-                E: 'powah:capacitor_basic_large'
+                E: 'powah:capacitor_basic_large',
             },
-            id: 'rftoolsutility:charged_porter'
+            id: 'rftoolsutility:charged_porter',
         },
         {
             output: 'rftoolsutility:advanced_charged_porter',
@@ -86,9 +86,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'powah:capacitor_nitro',
                 B: 'kubejs:dimensional_storage_crystal',
-                C: 'rftoolsutility:charged_porter'
+                C: 'rftoolsutility:charged_porter',
             },
-            id: 'rftoolsutility:advanced_charged_porter'
+            id: 'rftoolsutility:advanced_charged_porter',
         },
         {
             output: 'rftoolsbuilder:shape_card_pump',
@@ -98,9 +98,9 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:water_bucket',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'rftoolsbuilder:shape_card_def',
-                E: 'minecraft:lava_bucket'
+                E: 'minecraft:lava_bucket',
             },
-            id: 'rftoolsbuilder:shape_card_pump'
+            id: 'rftoolsbuilder:shape_card_pump',
         },
         {
             output: 'rftoolsbuilder:shape_card_quarry',
@@ -110,9 +110,9 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:diamond_pickaxe',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'rftoolsbuilder:shape_card_def',
-                E: 'minecraft:diamond_shovel'
+                E: 'minecraft:diamond_shovel',
             },
-            id: 'rftoolsbuilder:shape_card_quarry'
+            id: 'rftoolsbuilder:shape_card_quarry',
         },
         {
             output: 'rftoolsbase:machine_infuser',
@@ -121,9 +121,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/enderium',
                 B: 'rftoolsbase:infused_diamond',
                 C: '#forge:storage_blocks/nitro',
-                D: '#industrialforegoing:machine_frame/advanced'
+                D: '#industrialforegoing:machine_frame/advanced',
             },
-            id: 'rftoolsbase:machine_infuser'
+            id: 'rftoolsbase:machine_infuser',
         },
         {
             output: 'rftoolsbuilder:builder',
@@ -132,9 +132,9 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:bricks',
                 B: 'portality:frame',
                 C: '#industrialforegoing:machine_frame/pity',
-                D: 'portality:controller'
+                D: 'portality:controller',
             },
-            id: 'rftoolsbuilder:builder'
+            id: 'rftoolsbuilder:builder',
         },
         {
             output: 'rftoolsbase:machine_base',
@@ -142,9 +142,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:nuggets/invar',
                 B: 'pneumaticcraft:reinforced_stone_slab',
-                C: 'pneumaticcraft:advanced_pcb'
+                C: 'pneumaticcraft:advanced_pcb',
             },
-            id: 'rftoolsbase:machine_base'
+            id: 'rftoolsbase:machine_base',
         },
         {
             output: 'rftoolsutility:flight_module',
@@ -153,21 +153,21 @@ onEvent('recipes', (event) => {
                 A: 'alexsmobs:mysterious_worm',
                 B: Item.of(
                     'rftoolsutility:syringe',
-                    '{mobName:"alexsmobs:warped_mosco",mobId:"alexsmobs:warped_mosco",level:10}'
+                    '{mobName:"alexsmobs:warped_mosco",mobId:"alexsmobs:warped_mosco",level:10}',
                 ),
                 C: 'meetyourfight:aether_glazed_cupcake',
                 D: 'rftoolsutility:moduleplus_template',
                 E: Item.of(
                     'rftoolsutility:syringe',
-                    '{mobName:"upgrade_aquatic:flare",mobId:"upgrade_aquatic:flare",level:10}'
+                    '{mobName:"upgrade_aquatic:flare",mobId:"upgrade_aquatic:flare",level:10}',
                 ),
                 F: 'alexsmobs:tarantula_hawk_elytra',
                 G: Item.of(
                     'rftoolsutility:syringe',
-                    '{mobName:"alexsmobs:void_worm",mobId:"alexsmobs:void_worm",level:10}'
-                )
+                    '{mobName:"alexsmobs:void_worm",mobId:"alexsmobs:void_worm",level:10}',
+                ),
             },
-            id: 'rftoolsutility:flight_module'
+            id: 'rftoolsutility:flight_module',
         },
         {
             output: 'rftoolspower:blazing_agitator',
@@ -175,9 +175,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'rftoolspower:blazing_rod',
                 B: 'powah:energizing_rod_blazing',
-                C: 'rftoolsbase:machine_base'
+                C: 'rftoolsbase:machine_base',
             },
-            id: 'rftoolspower:blazing_agitator'
+            id: 'rftoolspower:blazing_agitator',
         },
         {
             output: 'rftoolspower:cell1',
@@ -186,9 +186,9 @@ onEvent('recipes', (event) => {
                 A: 'rftoolspower:power_core1',
                 B: 'immersiveengineering:transformer_hv',
                 C: 'mekanism:basic_universal_cable',
-                D: 'rftoolsbase:machine_frame'
+                D: 'rftoolsbase:machine_frame',
             },
-            id: 'rftoolspower:cell1'
+            id: 'rftoolspower:cell1',
         },
         {
             output: 'rftoolscontrol:program_card',
@@ -196,9 +196,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:plastic',
                 B: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
-                C: 'pneumaticcraft:printed_circuit_board'
+                C: 'pneumaticcraft:printed_circuit_board',
             },
-            id: 'rftoolscontrol:program_card'
+            id: 'rftoolscontrol:program_card',
         },
         {
             output: 'rftoolscontrol:ram_chip',
@@ -206,18 +206,18 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'redstonepen:relay',
                 B: ['#forge:wires/copper', '#forge:wires/lead'],
-                C: 'immersiveengineering:circuit_board'
+                C: 'immersiveengineering:circuit_board',
             },
-            id: 'rftoolscontrol:ram_chip'
+            id: 'rftoolscontrol:ram_chip',
         },
         {
             output: 'rftoolscontrol:token',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'minecraft:paper',
-                B: 'pneumaticcraft:programming_puzzle'
+                B: 'pneumaticcraft:programming_puzzle',
             },
-            id: 'rftoolscontrol:token'
+            id: 'rftoolscontrol:token',
         },
         {
             output: 'rftoolscontrol:craftingstation',
@@ -227,9 +227,9 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:printed_circuit_board',
                 C: 'refinedstorage:destruction_core',
                 D: 'rftoolsbase:machine_frame',
-                E: 'refinedstorage:construction_core'
+                E: 'refinedstorage:construction_core',
             },
-            id: 'rftoolscontrol:craftingstation'
+            id: 'rftoolscontrol:craftingstation',
         },
         {
             output: 'rftoolscontrol:processor',
@@ -237,9 +237,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersiveengineering:logic_unit',
                 B: 'pneumaticcraft:smart_chest',
-                C: 'rftoolsbase:machine_frame'
+                C: 'rftoolsbase:machine_frame',
             },
-            id: 'rftoolscontrol:processor'
+            id: 'rftoolscontrol:processor',
         },
         {
             output: 'rftoolscontrol:graphics_card',
@@ -249,9 +249,9 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:turbine_rotor',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'refinedstorage:advanced_processor',
-                E: '#forge:nuggets/copper'
+                E: '#forge:nuggets/copper',
             },
-            id: 'rftoolscontrol:graphics_card'
+            id: 'rftoolscontrol:graphics_card',
         },
         {
             output: 'rftoolscontrol:network_card',
@@ -260,17 +260,17 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:wireless_transmitter',
                 B: 'pneumaticcraft:printed_circuit_board',
                 C: 'refinedstorage:advanced_processor',
-                D: '#forge:nuggets/copper'
+                D: '#forge:nuggets/copper',
             },
-            id: 'rftoolscontrol:network_card'
+            id: 'rftoolscontrol:network_card',
         },
         {
             output: 'rftoolscontrol:network_identifier',
             pattern: ['AAA', 'A A', 'AAA'],
             key: {
-                A: 'rftoolscontrol:token'
+                A: 'rftoolscontrol:token',
             },
-            id: 'rftoolscontrol:network_identifier'
+            id: 'rftoolscontrol:network_identifier',
         },
         {
             output: 'rftoolscontrol:advanced_network_card',
@@ -278,9 +278,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'refinedstorage:range_upgrade',
                 B: 'rftoolscontrol:network_card',
-                C: 'extrastorage:neural_processor'
+                C: 'extrastorage:neural_processor',
             },
-            id: 'rftoolscontrol:advanced_network_card'
+            id: 'rftoolscontrol:advanced_network_card',
         },
         {
             output: 'rftoolscontrol:node',
@@ -288,9 +288,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'rftoolscontrol:network_card',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'rftoolsbase:machine_frame'
+                C: 'rftoolsbase:machine_frame',
             },
-            id: 'rftoolscontrol:node'
+            id: 'rftoolscontrol:node',
         },
         {
             output: 'rftoolsutility:syringe',
@@ -298,9 +298,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:rods/steel',
                 B: 'minecraft:glass_bottle',
-                C: 'pneumaticcraft:plastic'
+                C: 'pneumaticcraft:plastic',
             },
-            id: 'rftoolsutility:syringe'
+            id: 'rftoolsutility:syringe',
         },
         {
             output: 'rftoolsbase:tablet',
@@ -310,9 +310,9 @@ onEvent('recipes', (event) => {
                 B: 'rftoolscontrol:advanced_network_card',
                 C: 'kubejs:cpu_core_as_81221',
                 D: 'rftoolscontrol:graphics_card',
-                E: 'rftoolsbase:machine_base'
+                E: 'rftoolsbase:machine_base',
             },
-            id: 'rftoolsbase:tablet'
+            id: 'rftoolsbase:tablet',
         },
         {
             output: 'rftoolspower:dimensionalcell_simple',
@@ -322,9 +322,9 @@ onEvent('recipes', (event) => {
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'rftoolsbase:machine_frame',
                 D: 'powah:ender_core',
-                E: 'rftoolscontrol:advanced_network_card'
+                E: 'rftoolscontrol:advanced_network_card',
             },
-            id: 'rftoolspower:dimensionalcell_simple'
+            id: 'rftoolspower:dimensionalcell_simple',
         },
         {
             output: 'rftoolspower:dimensionalcell',
@@ -333,9 +333,9 @@ onEvent('recipes', (event) => {
                 A: 'rftoolspower:power_core2',
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'rftoolspower:dimensionalcell_simple',
-                D: 'rftoolsbase:infused_diamond'
+                D: 'rftoolsbase:infused_diamond',
             },
-            id: 'rftoolspower:dimensionalcell'
+            id: 'rftoolspower:dimensionalcell',
         },
         {
             output: 'rftoolspower:dimensionalcell_advanced',
@@ -344,9 +344,9 @@ onEvent('recipes', (event) => {
                 A: 'rftoolspower:power_core3',
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'rftoolspower:dimensionalcell',
-                D: '#forge:gems/mana_diamond'
+                D: '#forge:gems/mana_diamond',
             },
-            id: 'rftoolspower:dimensionalcell_advanced'
+            id: 'rftoolspower:dimensionalcell_advanced',
         },
         {
             output: 'rftoolsutility:crafter1',
@@ -355,9 +355,9 @@ onEvent('recipes', (event) => {
                 A: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 B: 'pneumaticcraft:smart_chest',
                 C: 'rftoolscontrol:craftingstation',
-                D: 'rftoolsbase:machine_frame'
+                D: 'rftoolsbase:machine_frame',
             },
-            id: 'rftoolsutility:crafter1'
+            id: 'rftoolsutility:crafter1',
         },
         {
             output: 'rftoolsutility:crafter2',
@@ -366,9 +366,9 @@ onEvent('recipes', (event) => {
                 A: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 B: 'powah:capacitor_blazing',
                 C: 'rftoolscontrol:craftingstation',
-                D: 'rftoolsutility:crafter1'
+                D: 'rftoolsutility:crafter1',
             },
-            id: 'rftoolsutility:crafter2'
+            id: 'rftoolsutility:crafter2',
         },
         {
             output: 'rftoolsutility:crafter3',
@@ -377,9 +377,9 @@ onEvent('recipes', (event) => {
                 A: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 B: 'powah:capacitor_nitro',
                 C: 'rftoolscontrol:craftingstation',
-                D: 'rftoolsutility:crafter2'
+                D: 'rftoolsutility:crafter2',
             },
-            id: 'rftoolsutility:crafter3'
+            id: 'rftoolsutility:crafter3',
         },
         {
             output: 'rftoolsstorage:modular_storage',
@@ -387,9 +387,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'thermal:gray_rockwool',
                 B: '#forge:plates/steel',
-                C: 'thermal:machine_frame'
+                C: 'thermal:machine_frame',
             },
-            id: 'rftoolsstorage:modular_storage'
+            id: 'rftoolsstorage:modular_storage',
         },
         {
             output: 'rftoolsstorage:storage_module0',
@@ -398,9 +398,9 @@ onEvent('recipes', (event) => {
                 A: '#thermal:glass/hardened',
                 B: 'ironchest:copper_chest',
                 C: 'buildinggadgets:construction_paste',
-                D: '#forge:gears/osmium'
+                D: '#forge:gears/osmium',
             },
-            id: 'rftoolsstorage:storage_module0'
+            id: 'rftoolsstorage:storage_module0',
         },
         {
             output: 'rftoolsbuilder:shape_card_quarry',
@@ -410,9 +410,9 @@ onEvent('recipes', (event) => {
                 B: 'mekanism:teleportation_core',
                 C: 'rftoolsbuilder:shape_card_def',
                 D: '#forge:circuits/ultimate',
-                E: 'mekanismtools:refined_obsidian_paxel'
+                E: 'mekanismtools:refined_obsidian_paxel',
             },
-            id: 'rftoolsbuilder:shape_card_quarry'
+            id: 'rftoolsbuilder:shape_card_quarry',
         },
         {
             output: 'rftoolsstorage:storage_scanner',
@@ -421,10 +421,10 @@ onEvent('recipes', (event) => {
                 A: 'fluxnetworks:flux_dust',
                 B: '#xnet:cables',
                 C: 'botania:forest_eye',
-                D: 'xnet:wireless_router'
+                D: 'xnet:wireless_router',
             },
-            id: 'rftoolsstorage:storage_scanner'
-        }
+            id: 'rftoolsstorage:storage_scanner',
+        },
     ];
 
     recipes.forEach((recipe) => {

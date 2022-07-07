@@ -22,7 +22,7 @@ onEvent('server.datapack.high_priority', (event) => {
 
 const defaultConfig = {
     mode: 'normal',
-    message: 'Valid modes are normal and expert.'
+    message: 'Valid modes are normal and expert.',
 };
 const configName = 'mode.json';
 let config = JsonIO.read(configName);

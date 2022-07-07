@@ -24,9 +24,9 @@ onEvent('recipes', (event) => {
                 A: 'betterendforge:leather_wrapped_stick',
                 B: 'eidolon:tattered_cloth',
                 C: '#forge:rods/copper',
-                D: 'occultism:spirit_attuned_gem'
+                D: 'occultism:spirit_attuned_gem',
             },
-            id: 'occultism:crafting/divination_rod'
+            id: 'occultism:crafting/divination_rod',
         },
         {
             output: 'occultism:sacrificial_bowl',
@@ -34,19 +34,19 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'occultism:otherstone_slab',
                 B: '#forge:dusts/mana',
-                C: '#forge:inlays/pewter'
+                C: '#forge:inlays/pewter',
             },
-            id: 'occultism:crafting/sacrificial_bowl'
+            id: 'occultism:crafting/sacrificial_bowl',
         },
         {
             output: 'occultism:magic_lamp_empty',
             pattern: [' A ', 'ABA', ' AA'],
             key: {
                 A: '#forge:ingots/silver',
-                B: 'atum:horus_godshard'
+                B: 'atum:horus_godshard',
             },
-            id: 'occultism:crafting/magic_lamp_empty'
-        }
+            id: 'occultism:crafting/magic_lamp_empty',
+        },
     ];
 
     newRecipes.forEach((recipe) => {

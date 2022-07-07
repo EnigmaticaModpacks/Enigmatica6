@@ -9,21 +9,21 @@ onEvent('recipes', (event) => {
                 Item.of('resourcefulbees:bee_jar', {
                     Entity: 'resourcefulbees:mana_bee',
                     BeeType: 'mana',
-                    Color: '#4c97ff'
+                    Color: '#4c97ff',
                 })
                     .weakNBT()
                     .toJson(),
                 { item: 'botania:mana_pearl' },
                 { item: 'botania:mana_diamond' },
-                { item: 'botania:quartz_mana' }
+                { item: 'botania:quartz_mana' },
             ],
             output: Item.of('resourcefulbees:bee_jar', {
                 Entity: 'resourcefulbees:terrestrial_bee',
                 BeeType: 'terrestrial',
-                Color: '#5bf23d'
+                Color: '#5bf23d',
             }).toJson(),
             mana: 2000000,
-            id: 'botania:terra_plate/terrestrial_bee_plate'
+            id: 'botania:terra_plate/terrestrial_bee_plate',
         },
         {
             inputs: [
@@ -32,11 +32,11 @@ onEvent('recipes', (event) => {
                 { item: 'resourcefulbees:terrestrial_honeycomb' },
                 { item: 'botania:mana_diamond' },
                 { tag: 'forge:ingots/iesnium' },
-                { item: 'botania:quartz_mana' }
+                { item: 'botania:quartz_mana' },
             ],
             output: { item: 'botania:terrasteel_ingot' },
             mana: 300000,
-            id: 'botania:terra_plate/terrasteel_ingot_honeycomb'
+            id: 'botania:terra_plate/terrasteel_ingot_honeycomb',
         },
         {
             inputs: [
@@ -45,11 +45,11 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:ingots/manasteel' },
                 { item: 'botania:mana_diamond' },
                 { tag: 'forge:ingots/iesnium' },
-                { item: 'botania:quartz_mana' }
+                { item: 'botania:quartz_mana' },
             ],
             output: { item: 'botania:terrasteel_ingot' },
             mana: 500000,
-            id: 'botania:terra_plate/terrasteel_ingot'
+            id: 'botania:terra_plate/terrasteel_ingot',
         },
         {
             inputs: [
@@ -58,12 +58,12 @@ onEvent('recipes', (event) => {
                 { item: 'naturesaura:token_rage' },
                 { item: 'atum:ptah_godshard' },
                 { item: 'naturesaura:token_grief' },
-                { item: 'naturesaura:token_terror' }
+                { item: 'naturesaura:token_terror' },
             ],
             output: { item: 'naturesaura:generator_limit_remover' },
             mana: 2000000,
-            id: `${id_prefix}generator_limit_remover`
-        }
+            id: `${id_prefix}generator_limit_remover`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -71,7 +71,7 @@ onEvent('recipes', (event) => {
             type: 'botania:terra_plate',
             ingredients: recipe.inputs.map((input) => Ingredient.of(input).toJson()),
             result: Item.of(recipe.output).toJson(),
-            mana: recipe.mana
+            mana: recipe.mana,
         });
         if (recipe.id) {
             re.id(recipe.id);

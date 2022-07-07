@@ -7,13 +7,13 @@ onEvent('recipes', (event) => {
         {
             output: 'industrialforegoing:fluid_collector',
             inputs: ['industrialforegoing:fluid_placer'],
-            id: `${id_prefix}fluid_collector`
+            id: `${id_prefix}fluid_collector`,
         },
         {
             output: 'industrialforegoing:fluid_placer',
             inputs: ['industrialforegoing:fluid_collector'],
-            id: `${id_prefix}fluid_placer`
-        }
+            id: `${id_prefix}fluid_placer`,
+        },
     ];
 
     recipes.forEach((recipe) => {

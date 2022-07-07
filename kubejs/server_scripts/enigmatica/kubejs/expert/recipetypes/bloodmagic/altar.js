@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             altarLevel: 0,
             consumptionRate: 5,
             drainRate: 1,
-            id: 'bloodmagic:altar/weakbloodorb'
+            id: 'bloodmagic:altar/weakbloodorb',
         },
         {
             input: 'meetyourfight:caged_heart',
@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
             altarLevel: 1,
             consumptionRate: 5,
             drainRate: 5,
-            id: 'bloodmagic:altar/apprenticebloodorb'
+            id: 'bloodmagic:altar/apprenticebloodorb',
         },
         {
             input: 'botania:mana_tablet',
@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
             altarLevel: 2,
             consumptionRate: 20,
             drainRate: 20,
-            id: 'bloodmagic:altar/magicianbloodorb'
+            id: 'bloodmagic:altar/magicianbloodorb',
         },
         {
             input: 'occultism:otherstone_tablet',
@@ -48,7 +48,7 @@ onEvent('recipes', (event) => {
             altarLevel: 0,
             consumptionRate: 50,
             drainRate: 5,
-            id: 'bloodmagic:altar/slate'
+            id: 'bloodmagic:altar/slate',
         },
         {
             input: 'bloodmagic:blankslate',
@@ -57,7 +57,7 @@ onEvent('recipes', (event) => {
             altarLevel: 1,
             consumptionRate: 100,
             drainRate: 5,
-            id: 'bloodmagic:altar/reinforcedslate'
+            id: 'bloodmagic:altar/reinforcedslate',
         },
         {
             input: 'bloodmagic:reinforcedslate',
@@ -66,7 +66,7 @@ onEvent('recipes', (event) => {
             altarLevel: 2,
             consumptionRate: 250,
             drainRate: 10,
-            id: 'bloodmagic:altar/imbuedslate'
+            id: 'bloodmagic:altar/imbuedslate',
         },
         {
             input: 'bloodmagic:infusedslate',
@@ -75,7 +75,7 @@ onEvent('recipes', (event) => {
             altarLevel: 3,
             consumptionRate: 750,
             drainRate: 20,
-            id: 'bloodmagic:altar/demonicslate'
+            id: 'bloodmagic:altar/demonicslate',
         },
         {
             input: 'bloodmagic:demonslate',
@@ -84,7 +84,7 @@ onEvent('recipes', (event) => {
             altarLevel: 4,
             consumptionRate: 1000,
             drainRate: 1000,
-            id: `${id_prefix}etherealslate`
+            id: `${id_prefix}etherealslate`,
         },
         {
             input: 'occultism:chalk_white_impure',
@@ -93,7 +93,7 @@ onEvent('recipes', (event) => {
             altarLevel: 0,
             consumptionRate: 5,
             drainRate: 1,
-            id: 'occultism:spirit_fire/chalk_white'
+            id: 'occultism:spirit_fire/chalk_white',
         },
         {
             input: 'occultism:chalk_gold_impure',
@@ -102,7 +102,7 @@ onEvent('recipes', (event) => {
             altarLevel: 1,
             consumptionRate: 5,
             drainRate: 5,
-            id: 'occultism:spirit_fire/chalk_gold'
+            id: 'occultism:spirit_fire/chalk_gold',
         },
         {
             input: 'occultism:chalk_purple_impure',
@@ -111,7 +111,7 @@ onEvent('recipes', (event) => {
             altarLevel: 2,
             consumptionRate: 20,
             drainRate: 20,
-            id: 'occultism:spirit_fire/chalk_purple'
+            id: 'occultism:spirit_fire/chalk_purple',
         },
         {
             input: 'occultism:chalk_red_impure',
@@ -120,7 +120,7 @@ onEvent('recipes', (event) => {
             altarLevel: 3,
             consumptionRate: 30,
             drainRate: 50,
-            id: 'occultism:spirit_fire/chalk_red'
+            id: 'occultism:spirit_fire/chalk_red',
         },
         {
             input: 'ars_nouveau:mana_fiber',
@@ -129,7 +129,7 @@ onEvent('recipes', (event) => {
             altarLevel: 1,
             consumptionRate: 5,
             drainRate: 1,
-            id: 'bloodmagic:altar/soul_snare'
+            id: 'bloodmagic:altar/soul_snare',
         },
         {
             input: 'kubejs:firmament',
@@ -138,7 +138,7 @@ onEvent('recipes', (event) => {
             altarLevel: 0,
             consumptionRate: 250,
             drainRate: 1,
-            id: `${id_prefix}moonstone`
+            id: `${id_prefix}moonstone`,
         },
         {
             input: Item.of('eidolon:sapping_sword', '{Damage:0}').weakNBT(),
@@ -147,7 +147,7 @@ onEvent('recipes', (event) => {
             altarLevel: 1,
             consumptionRate: 5,
             drainRate: 5,
-            id: 'bloodmagic:sacrificial_dagger'
+            id: 'bloodmagic:sacrificial_dagger',
         },
         {
             input: 'create:shadow_steel',
@@ -156,7 +156,7 @@ onEvent('recipes', (event) => {
             altarLevel: 3,
             consumptionRate: 30,
             drainRate: 50,
-            id: 'bloodmagic:altar/masterbloodorb'
+            id: 'bloodmagic:altar/masterbloodorb',
         },
         {
             input: '#botania:runes/air',
@@ -165,7 +165,7 @@ onEvent('recipes', (event) => {
             altarLevel: 2,
             consumptionRate: 5,
             drainRate: 5,
-            id: 'bloodmagic:altar/air_tool'
+            id: 'bloodmagic:altar/air_tool',
         },
         {
             input: '#botania:runes/fire',
@@ -174,7 +174,7 @@ onEvent('recipes', (event) => {
             altarLevel: 2,
             consumptionRate: 5,
             drainRate: 5,
-            id: 'bloodmagic:altar/fire_tool'
+            id: 'bloodmagic:altar/fire_tool',
         },
         {
             input: '#botania:runes/water',
@@ -183,7 +183,7 @@ onEvent('recipes', (event) => {
             altarLevel: 2,
             consumptionRate: 5,
             drainRate: 5,
-            id: 'bloodmagic:altar/water_tool'
+            id: 'bloodmagic:altar/water_tool',
         },
         {
             input: '#botania:runes/earth',
@@ -192,7 +192,7 @@ onEvent('recipes', (event) => {
             altarLevel: 2,
             consumptionRate: 5,
             drainRate: 5,
-            id: 'bloodmagic:altar/earth_tool'
+            id: 'bloodmagic:altar/earth_tool',
         },
         {
             input: '#botania:runes/nidavellir',
@@ -201,7 +201,7 @@ onEvent('recipes', (event) => {
             altarLevel: 3,
             consumptionRate: 20,
             drainRate: 10,
-            id: 'bloodmagic:altar/dusk_tool'
+            id: 'bloodmagic:altar/dusk_tool',
         },
         {
             input: 'botania:livingwood_planks',
@@ -210,7 +210,7 @@ onEvent('recipes', (event) => {
             altarLevel: 0,
             consumptionRate: 25,
             drainRate: 5,
-            id: `${id_prefix}polished_planks`
+            id: `${id_prefix}polished_planks`,
         },
         {
             input: 'ars_nouveau:ritual_warping',
@@ -219,7 +219,7 @@ onEvent('recipes', (event) => {
             altarLevel: 2,
             consumptionRate: 20,
             drainRate: 20,
-            id: 'waystones:warp_stone'
+            id: 'waystones:warp_stone',
         },
         {
             input: 'undergarden:gloom_o_lantern',
@@ -228,7 +228,7 @@ onEvent('recipes', (event) => {
             altarLevel: 0,
             consumptionRate: 5,
             drainRate: 5,
-            id: `${id_prefix}fel_pumpkin`
+            id: `${id_prefix}fel_pumpkin`,
         },
         {
             input: 'eidolon:void_amulet',
@@ -237,8 +237,8 @@ onEvent('recipes', (event) => {
             altarLevel: 1,
             consumptionRate: 5,
             drainRate: 5,
-            id: `${id_prefix}blood_pendant`
-        }
+            id: `${id_prefix}blood_pendant`,
+        },
     ];
 
     recipes.forEach((recipe) => {

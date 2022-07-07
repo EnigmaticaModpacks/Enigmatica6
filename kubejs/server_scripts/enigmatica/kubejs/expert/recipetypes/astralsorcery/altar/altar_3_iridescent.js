@@ -23,12 +23,12 @@ onEvent('recipes', (event) => {
                     hasToBeAttuned: true,
                     hasToBeCelestial: true,
                     canBeAttuned: true,
-                    canBeCelestialCrystal: true
+                    canBeCelestialCrystal: true,
                 },
                 B: { item: 'astralsorcery:resonating_gem' },
                 C: { tag: 'botania:runes/air' },
                 D: { item: 'create:shadow_steel' },
-                E: { item: 'astralsorcery:colored_lens_spectral' }
+                E: { item: 'astralsorcery:colored_lens_spectral' },
             },
             relay_inputs: [
                 { item: 'astralsorcery:illumination_powder' },
@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
                 { item: 'astralsorcery:illumination_powder' },
                 { item: 'astralsorcery:nocturnal_powder' },
                 { item: 'astralsorcery:illumination_powder' },
-                { item: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' },
             ],
             altar_type: 3,
             duration: 600,
@@ -51,9 +51,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_trait_focus_circle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/observatory'
+            id: 'astralsorcery:altar/observatory',
         },
         {
             output: Item.of('resourcefulbees:t4_apiary', 1),
@@ -63,12 +63,12 @@ onEvent('recipes', (event) => {
                 B: Item.of('naturesaura:effect_powder', { effect: 'naturesaura:animal' }).toJson(),
                 C: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
                 D: { tag: 'resourcefulbees:resourceful_honey_block' },
-                E: { item: 'astralsorcery:illumination_powder' }
+                E: { item: 'astralsorcery:illumination_powder' },
             },
             relay_inputs: [
                 { item: 'naturesaura:token_euphoria' },
                 { item: 'botania:rune_lust' },
-                { item: 'ars_nouveau:ritual_fertility' }
+                { item: 'ars_nouveau:ritual_fertility' },
             ],
             altar_type: 3,
             duration: 600,
@@ -81,9 +81,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_trait_focus_circle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'resourcefulbees:t4_apiary'
+            id: 'resourcefulbees:t4_apiary',
         },
         {
             output: Item.of('pedestals:coin/xpenchanter', 1),
@@ -94,12 +94,12 @@ onEvent('recipes', (event) => {
                 C: { tag: 'botania:runes/vanaheim' },
                 D: { tag: 'botania:runes/mana' },
                 E: { item: 'pedestals:coin/default' },
-                F: { item: 'ars_nouveau:glyph_pickup' }
+                F: { item: 'ars_nouveau:glyph_pickup' },
             },
             relay_inputs: [
                 { item: 'eidolon:shadow_gem' },
                 { item: 'eidolon:gold_inlay' },
-                { item: 'eidolon:gold_inlay' }
+                { item: 'eidolon:gold_inlay' },
             ],
             altar_type: 3,
             duration: 600,
@@ -108,9 +108,9 @@ onEvent('recipes', (event) => {
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'pedestals:upgrades/enchanter'
+            id: 'pedestals:upgrades/enchanter',
         },
         {
             output: Item.of('pedestals:coin/xpanvil', 1),
@@ -121,12 +121,12 @@ onEvent('recipes', (event) => {
                 C: { tag: 'botania:runes/vanaheim' },
                 D: { tag: 'botania:runes/mana' },
                 E: { item: 'pedestals:coin/default' },
-                F: { item: 'ars_nouveau:glyph_pickup' }
+                F: { item: 'ars_nouveau:glyph_pickup' },
             },
             relay_inputs: [
                 { item: 'betterendforge:aeternium_hammer' },
                 { item: 'minecraft:netherite_ingot' },
-                { item: 'minecraft:netherite_ingot' }
+                { item: 'minecraft:netherite_ingot' },
             ],
             altar_type: 3,
             duration: 600,
@@ -135,9 +135,9 @@ onEvent('recipes', (event) => {
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'pedestals:upgrades/anvil'
+            id: 'pedestals:upgrades/anvil',
         },
         {
             output: Item.of('astralsorcery:mantle', 1),
@@ -149,18 +149,18 @@ onEvent('recipes', (event) => {
                     hasToBeAttuned: false,
                     hasToBeCelestial: true,
                     canBeAttuned: true,
-                    canBeCelestialCrystal: true
+                    canBeCelestialCrystal: true,
                 },
                 C: { item: 'astralsorcery:illumination_powder' },
                 D: { item: 'botania:balance_cloak' },
                 E: { tag: 'astralsorcery:stardust' },
-                F: { tag: 'botania:runes/mana' }
+                F: { tag: 'botania:runes/mana' },
             },
             relay_inputs: [
                 { item: 'astralsorcery:starmetal' },
                 { item: 'botania:rune_envy' },
                 { item: 'magicfeather:magicfeather' },
-                { item: 'botania:rune_pride' }
+                { item: 'botania:rune_pride' },
             ],
             altar_type: 3,
             duration: 600,
@@ -172,9 +172,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_trait_focus_circle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/mantle'
+            id: 'astralsorcery:altar/mantle',
         },
 
         {
@@ -187,7 +187,7 @@ onEvent('recipes', (event) => {
                 A: { item: 'bloodmagic:reagentbinding' },
                 B: { tag: 'astralsorcery:stardust' },
                 C: { tag: 'astralsorcery:starmetal' },
-                D: { item: 'astralsorcery:shifting_star' }
+                D: { item: 'astralsorcery:shifting_star' },
             },
             focus_constellation: 'astralsorcery:armara',
             relay_inputs: [
@@ -196,7 +196,7 @@ onEvent('recipes', (event) => {
                 { item: 'astralsorcery:stardust' },
                 { item: 'bloodmagic:steadfastcrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { item: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' },
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -208,9 +208,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/shifting_star_armara'
+            id: 'astralsorcery:altar/shifting_star_armara',
         },
         {
             output: Item.of('astralsorcery:shifting_star_discidia'),
@@ -222,7 +222,7 @@ onEvent('recipes', (event) => {
                 A: { item: 'bloodmagic:reagentlava' },
                 B: { tag: 'astralsorcery:stardust' },
                 C: { tag: 'astralsorcery:starmetal' },
-                D: { item: 'astralsorcery:shifting_star' }
+                D: { item: 'astralsorcery:shifting_star' },
             },
             focus_constellation: 'astralsorcery:discidia',
             relay_inputs: [
@@ -231,7 +231,7 @@ onEvent('recipes', (event) => {
                 { item: 'astralsorcery:stardust' },
                 { item: 'bloodmagic:vengefulcrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { item: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' },
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -243,9 +243,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/shifting_star_discidia'
+            id: 'astralsorcery:altar/shifting_star_discidia',
         },
         {
             output: Item.of('astralsorcery:shifting_star_evorsio'),
@@ -257,7 +257,7 @@ onEvent('recipes', (event) => {
                 A: { item: 'bloodmagic:reagentfastminer' },
                 B: { tag: 'astralsorcery:stardust' },
                 C: { tag: 'astralsorcery:starmetal' },
-                D: { item: 'astralsorcery:shifting_star' }
+                D: { item: 'astralsorcery:shifting_star' },
             },
             focus_constellation: 'astralsorcery:evorsio',
             relay_inputs: [
@@ -266,7 +266,7 @@ onEvent('recipes', (event) => {
                 { item: 'astralsorcery:stardust' },
                 { item: 'bloodmagic:destructivecrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { item: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' },
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -278,9 +278,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/shifting_star_evorsio'
+            id: 'astralsorcery:altar/shifting_star_evorsio',
         },
         {
             output: Item.of('astralsorcery:shifting_star_vicio'),
@@ -292,7 +292,7 @@ onEvent('recipes', (event) => {
                 A: { item: 'bloodmagic:reagentair' },
                 B: { tag: 'astralsorcery:stardust' },
                 C: { tag: 'astralsorcery:starmetal' },
-                D: { item: 'astralsorcery:shifting_star' }
+                D: { item: 'astralsorcery:shifting_star' },
             },
             focus_constellation: 'astralsorcery:vicio',
             relay_inputs: [
@@ -301,7 +301,7 @@ onEvent('recipes', (event) => {
                 { item: 'astralsorcery:stardust' },
                 { item: 'bloodmagic:defaultcrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { item: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' },
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -313,9 +313,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/shifting_star_vicio'
+            id: 'astralsorcery:altar/shifting_star_vicio',
         },
         {
             output: Item.of('astralsorcery:shifting_star_aevitas'),
@@ -327,7 +327,7 @@ onEvent('recipes', (event) => {
                 A: { item: 'bloodmagic:reagentgrowth' },
                 B: { tag: 'astralsorcery:stardust' },
                 C: { tag: 'astralsorcery:starmetal' },
-                D: { item: 'astralsorcery:shifting_star' }
+                D: { item: 'astralsorcery:shifting_star' },
             },
             focus_constellation: 'astralsorcery:aevitas',
             relay_inputs: [
@@ -336,7 +336,7 @@ onEvent('recipes', (event) => {
                 { item: 'astralsorcery:stardust' },
                 { item: 'bloodmagic:corrosivecrystal' },
                 { item: 'astralsorcery:illumination_powder' },
-                { item: 'astralsorcery:stardust' }
+                { item: 'astralsorcery:stardust' },
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -348,9 +348,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/shifting_star_aevitas'
+            id: 'astralsorcery:altar/shifting_star_aevitas',
         },
         {
             output: Item.of('botania:gaia_spreader'),
@@ -362,7 +362,7 @@ onEvent('recipes', (event) => {
                 A: { item: 'botania:bifrost_perm' },
                 B: { tag: 'forge:gems/dragonstone' },
                 C: { item: 'botania:elven_spreader' },
-                D: { item: 'astralsorcery:colored_lens_spectral' }
+                D: { item: 'astralsorcery:colored_lens_spectral' },
             },
             focus_constellation: 'naturesstarlight:naritis',
             relay_inputs: [
@@ -373,7 +373,7 @@ onEvent('recipes', (event) => {
                 { item: 'naturesaura:ancient_sapling' },
                 { item: 'botania:life_essence' },
                 { item: 'mythicbotany:midgard_rune' },
-                { item: 'botania:life_essence' }
+                { item: 'botania:life_essence' },
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -382,9 +382,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_trait_focus_circle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}gaia_spreader`
+            id: `${id_prefix}gaia_spreader`,
         },
         {
             output: Item.of('2x mekanism:solar_neutron_activator'),
@@ -398,7 +398,7 @@ onEvent('recipes', (event) => {
                 C: { item: 'mekanism:hdpe_sheet' },
                 D: { tag: 'forge:plates/enderium' },
                 E: { tag: 'forge:circuits/elite' },
-                F: { tag: 'industrialforegoing:machine_frame/advanced' }
+                F: { tag: 'industrialforegoing:machine_frame/advanced' },
             },
             focus_constellation: 'astralsorcery:horologium',
             relay_inputs: [
@@ -407,7 +407,7 @@ onEvent('recipes', (event) => {
                 { item: 'occultism:iesnium_dust' },
                 { item: 'astralsorcery:stardust' },
                 { item: 'occultism:crushed_end_stone' },
-                { item: 'occultism:iesnium_dust' }
+                { item: 'occultism:iesnium_dust' },
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -419,9 +419,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'mekanism:solar_neutron_activator'
+            id: 'mekanism:solar_neutron_activator',
         },
         {
             output: Item.of('masterfulmachinery:auto_iridescent_altar_starlight_port_astral_starlight_input', 1),
@@ -431,7 +431,7 @@ onEvent('recipes', (event) => {
                 B: { tag: 'forge:gems/niotic' },
                 C: { item: 'bloodmagic:etherealslate' },
                 D: { tag: 'forge:pellets/polonium' },
-                E: { item: 'astralsorcery:shifting_star_vicio' }
+                E: { item: 'astralsorcery:shifting_star_vicio' },
             },
             relay_inputs: [
                 { item: 'bloodmagic:steadfastcrystal' },
@@ -439,7 +439,7 @@ onEvent('recipes', (event) => {
                 { item: 'bloodmagic:steadfastcrystal' },
                 { item: 'bloodmagic:steadfastcrystal' },
                 { item: 'bloodmagic:steadfastcrystal' },
-                { item: 'bloodmagic:steadfastcrystal' }
+                { item: 'bloodmagic:steadfastcrystal' },
             ],
             altar_type: 3,
             duration: 600,
@@ -454,9 +454,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}auto_iridescent_altar_starlight_port_astral_starlight_input`
+            id: `${id_prefix}auto_iridescent_altar_starlight_port_astral_starlight_input`,
         },
         {
             output: Item.of('kubejs:worldshaper_handle'),
@@ -467,7 +467,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: { item: 'botania:dreamwood' },
                 B: { item: 'kubejs:laputian_ingot' },
-                C: { tag: 'botania:runes/vanaheim' }
+                C: { tag: 'botania:runes/vanaheim' },
             },
             focus_constellation: 'astralsorcery:evorsio',
             relay_inputs: [
@@ -482,7 +482,7 @@ onEvent('recipes', (event) => {
                 { item: 'astralsorcery:resonating_gem' },
                 { item: 'mythicbotany:dream_cherry' },
                 { item: 'astralsorcery:resonating_gem' },
-                { item: 'mythicbotany:dream_cherry' }
+                { item: 'mythicbotany:dream_cherry' },
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -494,9 +494,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}worldshaper_handle`
+            id: `${id_prefix}worldshaper_handle`,
         },
         {
             output: Item.of('kubejs:worldshaper_barrel'),
@@ -510,7 +510,7 @@ onEvent('recipes', (event) => {
                 C: { item: 'botania:lens_influence' },
                 D: { item: 'botania:lens_warp' },
                 E: { item: 'mekanism:laser_tractor_beam' },
-                F: { item: 'industrialforegoing:laser_drill' }
+                F: { item: 'industrialforegoing:laser_drill' },
             },
             focus_constellation: 'astralsorcery:evorsio',
             relay_inputs: [
@@ -522,7 +522,7 @@ onEvent('recipes', (event) => {
                 { item: 'bloodmagic:accelerationrune' },
                 { item: 'bloodmagic:chargingrune' },
                 { item: 'bloodmagic:dislocationrune' },
-                { item: 'bloodmagic:accelerationrune' }
+                { item: 'bloodmagic:accelerationrune' },
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -534,9 +534,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}worldshaper_barrel`
+            id: `${id_prefix}worldshaper_barrel`,
         },
         {
             output: Item.of('create:handheld_worldshaper'),
@@ -547,7 +547,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: { item: 'kubejs:worldshaper_barrel' },
                 B: { item: 'kubejs:worldshaper_cog' },
-                C: { item: 'kubejs:worldshaper_handle' }
+                C: { item: 'kubejs:worldshaper_handle' },
             },
             focus_constellation: 'astralsorcery:evorsio',
             relay_inputs: [
@@ -562,7 +562,7 @@ onEvent('recipes', (event) => {
                 { item: 'kubejs:battle_mastery_token' },
                 { item: 'kubejs:aura_mastery_token' },
                 { item: 'kubejs:excavation_mastery_token' },
-                { item: 'kubejs:culinary_mastery_token' }
+                { item: 'kubejs:culinary_mastery_token' },
             ],
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -574,10 +574,10 @@ onEvent('recipes', (event) => {
                 'astralsorcery:altar_focus_sparkle',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}handheld_worldshaper`
-        }
+            id: `${id_prefix}handheld_worldshaper`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -589,7 +589,7 @@ onEvent('recipes', (event) => {
             pattern: recipe.pattern,
             key: recipe.key,
             output: [recipe.output.toResultJson()],
-            effects: recipe.effects
+            effects: recipe.effects,
         };
 
         if (recipe.relay_inputs) {

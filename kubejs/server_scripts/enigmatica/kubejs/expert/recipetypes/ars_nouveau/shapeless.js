@@ -11,9 +11,9 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:wilden_wing',
                 'ars_nouveau:wilden_wing',
                 'quark:bottled_cloud',
-                'quark:bottled_cloud'
+                'quark:bottled_cloud',
             ],
-            id: 'ars_nouveau:ritual_flight'
+            id: 'ars_nouveau:ritual_flight',
         },
         {
             output: 'ars_nouveau:ritual_cloudshaping',
@@ -22,19 +22,19 @@ onEvent('recipes', (event) => {
                 '#forge:dusts/silver',
                 '#forge:dusts/silver',
                 'quark:bottled_cloud',
-                'quark:bottled_cloud'
+                'quark:bottled_cloud',
             ],
-            id: 'ars_nouveau:ritual_cloudshaping'
+            id: 'ars_nouveau:ritual_cloudshaping',
         },
         {
             output: 'ars_nouveau:ritual_moonfall',
             inputs: ['ars_nouveau:blue_archwood_log', 'architects_palette:moonstone', '#forge:ingots/silver'],
-            id: 'ars_nouveau:ritual_moonfall'
+            id: 'ars_nouveau:ritual_moonfall',
         },
         {
             output: 'ars_nouveau:ritual_sunrise',
             inputs: ['ars_nouveau:red_archwood_log', 'architects_palette:sunstone', '#forge:ingots/sunmetal'],
-            id: 'ars_nouveau:ritual_sunrise'
+            id: 'ars_nouveau:ritual_sunrise',
         },
         {
             output: 'ars_nouveau:ritual_binding',
@@ -44,15 +44,15 @@ onEvent('recipes', (event) => {
                 'bloodmagic:reagentbinding',
                 '#forge:gems/mana',
                 '#forge:gems/mana',
-                '#forge:gems/mana'
+                '#forge:gems/mana',
             ],
-            id: 'ars_nouveau:ritual_binding'
+            id: 'ars_nouveau:ritual_binding',
         },
         {
             output: 'ars_nouveau:potion_jar',
             inputs: ['ars_nouveau:mana_jar', ['minecraft:nether_wart', 'eidolon:fungus_sprouts']],
-            id: 'ars_nouveau:potion_jar'
-        }
+            id: 'ars_nouveau:potion_jar',
+        },
     ];
 
     recipes.forEach((recipe) => {

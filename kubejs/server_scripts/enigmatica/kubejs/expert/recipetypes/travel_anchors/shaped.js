@@ -21,10 +21,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:rods/lead',
                 B: 'entangled:item',
-                C: 'atum:horus_godshard'
+                C: 'atum:horus_godshard',
             },
-            id: 'travel_anchors:travel_staff'
-        }
+            id: 'travel_anchors:travel_staff',
+        },
     ];
 
     recipes.forEach((recipe) => {

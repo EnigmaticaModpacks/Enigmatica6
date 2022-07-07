@@ -54,7 +54,7 @@ onEvent('recipes', (event) => {
         event
             .shaped(output, [' B ', 'BAB', ' B '], {
                 A: '#forge:nuggets/iron',
-                B: input
+                B: input,
             })
             .id(`${id_prefix}crafting_shaped_${material}_gear`);
     }
@@ -89,7 +89,7 @@ onEvent('recipes', (event) => {
 
         event
             .shaped(output, ['A', 'A'], {
-                A: input
+                A: input,
             })
             .id(`${id_prefix}shaped_crafting_${material}_rod`);
     }

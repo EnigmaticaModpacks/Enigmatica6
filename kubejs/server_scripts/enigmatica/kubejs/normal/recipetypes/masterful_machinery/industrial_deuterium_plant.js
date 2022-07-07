@@ -9,37 +9,37 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'mekanismgenerators:deuterium', amount: 640 }
-                }
+                    data: { fluid: 'mekanismgenerators:deuterium', amount: 640 },
+                },
             ],
             inputs: [
                 {
                     type: 'masterfulmachinery:energy',
                     perTick: true,
-                    data: { amount: 10000 }
+                    data: { amount: 10000 },
                 },
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
-                    data: { fluid: 'emendatusenigmatica:molten_sulfur', amount: 10 }
+                    data: { fluid: 'emendatusenigmatica:molten_sulfur', amount: 10 },
                 },
                 {
                     type: 'masterfulmachinery:pncr_pressure',
                     perTick: true,
                     data: {
-                        air: 100
-                    }
+                        air: 100,
+                    },
                 },
                 {
                     type: 'masterfulmachinery:create_rotation',
                     data: {
-                        speed: 256
-                    }
-                }
+                        speed: 256,
+                    },
+                },
             ],
             ticks: 4000,
-            id: `${id_prefix}deuterium`
-        }
+            id: `${id_prefix}deuterium`,
+        },
     ];
 
     recipes.forEach((recipe) => {

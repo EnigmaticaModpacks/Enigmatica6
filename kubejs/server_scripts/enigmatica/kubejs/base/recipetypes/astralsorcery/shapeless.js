@@ -4,8 +4,8 @@ onEvent('recipes', (event) => {
         {
             output: '4x astralsorcery:infused_wood_planks',
             inputs: ['astralsorcery:infused_wood'],
-            id: `${id_prefix}infused_wood_planks`
-        }
+            id: `${id_prefix}infused_wood_planks`,
+        },
     ];
 
     recipes.forEach((recipe) => {

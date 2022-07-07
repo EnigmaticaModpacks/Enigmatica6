@@ -7,9 +7,9 @@ onEvent('recipes', (event) => {
             {
                 inputTag: 'resourcefulbees:starry_honeycomb_block',
                 output: 'astralsorcery:rock_crystal_ore',
-                starlight: 1000
-            }
-        ]
+                starlight: 1000,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {
@@ -19,14 +19,14 @@ onEvent('recipes', (event) => {
                     event.custom({
                         type: 'astralsorcery:block_transmutation',
                         input: {
-                            block: input.id
+                            block: input.id,
                         },
                         output: {
-                            block: recipe.output
+                            block: recipe.output,
                         },
-                        starlight: recipe.starlight
+                        starlight: recipe.starlight,
                     }),
-                    id_prefix
+                    id_prefix,
                 );
             }
         });

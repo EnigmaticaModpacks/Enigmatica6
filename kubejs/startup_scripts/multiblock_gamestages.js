@@ -23,7 +23,7 @@ onEvent('ie.multiblock.form', (event) => {
         ['immersivepetroleum:multiblocks/cokerunit', 'heavy_machinery_schematics'],
         ['immersivepetroleum:multiblocks/distillationtower', 'heavy_machinery_schematics'],
         ['immersivepetroleum:multiblocks/hydrotreater', 'heavy_machinery_schematics'],
-        ['immersiveengineering:multiblocks/lightning_rod', 'heavy_machinery_schematics']
+        ['immersiveengineering:multiblocks/lightning_rod', 'heavy_machinery_schematics'],
     ]);
 
     const name = `${event.getMultiblock()}`;

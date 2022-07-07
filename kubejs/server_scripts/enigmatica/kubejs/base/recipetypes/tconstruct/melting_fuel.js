@@ -5,12 +5,12 @@ onEvent('recipes', (event) => {
         {
             fluid: {
                 name: 'resourcefulbees:blaze_honey',
-                amount: 50
+                amount: 50,
             },
             duration: 150,
             temperature: 1500,
-            id: `${id_prefix}blaze_honey`
-        }
+            id: `${id_prefix}blaze_honey`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -19,7 +19,7 @@ onEvent('recipes', (event) => {
                 type: 'tconstruct:melting_fuel',
                 fluid: recipe.fluid,
                 duration: recipe.duration,
-                temperature: recipe.temperature
+                temperature: recipe.temperature,
             })
             .id(recipe.id);
     });

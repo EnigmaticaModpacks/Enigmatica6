@@ -7,8 +7,8 @@ onEvent('recipes', (event) => {
         {
             output: 'powah:thermoelectric_plate',
             inputs: ['immersiveengineering:thermoelectric_generator'],
-            id: `${id_prefix}thermoelectric_plate`
-        }
+            id: `${id_prefix}thermoelectric_plate`,
+        },
     ];
 
     recipes.forEach((recipe) => {

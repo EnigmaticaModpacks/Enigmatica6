@@ -9,7 +9,7 @@ onEvent('item.tags', (event) => {
             { material: 'rgbee' },
             { material: 'nether_quartz' },
             { material: 'blaze' },
-            { material: 'ender' }
+            { material: 'ender' },
         ],
         tier2: [
             { material: 'iron' },
@@ -19,7 +19,7 @@ onEvent('item.tags', (event) => {
             { material: 'obsidian' },
             { material: 'redstone' },
             { material: 'lapis' },
-            { material: 'ghast' }
+            { material: 'ghast' },
         ],
         tier3: [
             { material: 'copper' },
@@ -33,8 +33,8 @@ onEvent('item.tags', (event) => {
             { material: 'emerald' },
             { material: 'diamond' },
             { material: 'netherite' },
-            { material: 'wither' }
-        ]
+            { material: 'wither' },
+        ],
         // special: [
         //     { material: 'manasteel' },
         //     { material: 'elementium' },

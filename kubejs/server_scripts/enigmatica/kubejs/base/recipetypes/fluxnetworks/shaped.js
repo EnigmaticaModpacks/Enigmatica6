@@ -6,10 +6,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'fluxnetworks:flux_dust',
                 B: '#forge:obsidian',
-                C: 'powah:ender_core'
+                C: 'powah:ender_core',
             },
-            id: 'fluxnetworks:fluxcore'
-        }
+            id: 'fluxnetworks:fluxcore',
+        },
     ];
 
     recipes.forEach((recipe) => {

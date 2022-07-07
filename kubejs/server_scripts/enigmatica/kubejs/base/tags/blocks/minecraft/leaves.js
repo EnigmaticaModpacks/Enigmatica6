@@ -12,7 +12,7 @@ onEvent('block.tags', (event) => {
         'byg:orange_spruce_leaves',
         'byg:red_spruce_leaves',
         'byg:yellow_spruce_leaves',
-        'byg:pine_leaves'
+        'byg:pine_leaves',
     ]);
 
     event.add('minecraft:leaves', ['sushigocrafting:avocado_leaves', /ars_nouveau:\w+_leaves/]);

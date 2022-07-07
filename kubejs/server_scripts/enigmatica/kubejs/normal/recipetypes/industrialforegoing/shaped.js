@@ -25,9 +25,9 @@ onEvent('recipes', (event) => {
                 S: 'minecraft:iron_sword',
                 A: 'minecraft:iron_axe',
                 M: '#industrialforegoing:machine_frame/pity',
-                R: 'minecraft:redstone'
+                R: 'minecraft:redstone',
             },
-            id: 'industrialforegoing:mob_slaughter_factory'
+            id: 'industrialforegoing:mob_slaughter_factory',
         },
         {
             output: 'industrialforegoing:dissolution_chamber',
@@ -38,9 +38,9 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:bucket',
                 M: '#industrialforegoing:machine_frame/pity',
                 G: '#forge:ingots/gold_tin',
-                D: '#forge:gears/diamond'
+                D: '#forge:gears/diamond',
             },
-            id: 'industrialforegoing:dissolution_chamber'
+            id: 'industrialforegoing:dissolution_chamber',
         },
         {
             output: 'industrialforegoing:animal_baby_separator',
@@ -51,9 +51,9 @@ onEvent('recipes', (event) => {
                 C: 'minecraft:wheat',
                 G: '#forge:gears/gold_bronze',
                 D: '#forge:dyes/purple',
-                M: '#industrialforegoing:machine_frame/pity'
+                M: '#industrialforegoing:machine_frame/pity',
             },
-            id: 'industrialforegoing:animal_baby_separator'
+            id: 'industrialforegoing:animal_baby_separator',
         },
         {
             output: 'industrialforegoing:animal_rancher',
@@ -63,9 +63,9 @@ onEvent('recipes', (event) => {
                 G: '#forge:gears/gold_bronze',
                 S: 'minecraft:shears',
                 B: 'minecraft:bucket',
-                M: '#industrialforegoing:machine_frame/pity'
+                M: '#industrialforegoing:machine_frame/pity',
             },
-            id: 'industrialforegoing:animal_rancher'
+            id: 'industrialforegoing:animal_rancher',
         },
         {
             output: 'industrialforegoing:block_breaker',
@@ -77,9 +77,9 @@ onEvent('recipes', (event) => {
                 M: '#industrialforegoing:machine_frame/pity',
                 R: 'minecraft:redstone',
                 G: '#forge:gears/gold_bronze',
-                S: '#forge:gears/iron_invar'
+                S: '#forge:gears/iron_invar',
             },
-            id: 'industrialforegoing:block_breaker'
+            id: 'industrialforegoing:block_breaker',
         },
         {
             output: 'industrialforegoing:fluid_extractor',
@@ -89,9 +89,9 @@ onEvent('recipes', (event) => {
                 G: 'minecraft:light_weighted_pressure_plate',
                 C: '#forge:cobblestone',
                 M: '#industrialforegoing:machine_frame/pity',
-                P: 'minecraft:piston'
+                P: 'minecraft:piston',
             },
-            id: 'industrialforegoing:fluid_extractor'
+            id: 'industrialforegoing:fluid_extractor',
         },
         {
             output: 'industrialforegoing:laser_drill',
@@ -102,9 +102,9 @@ onEvent('recipes', (event) => {
                 b: 'minecraft:piston',
                 m: '#industrialforegoing:machine_frame/simple',
                 g: '#forge:gears/diamond',
-                r: 'minecraft:redstone'
+                r: 'minecraft:redstone',
             },
-            id: 'industrialforegoing:laser_drill'
+            id: 'industrialforegoing:laser_drill',
         },
         {
             output: 'industrialforegoing:latex_processing_unit',
@@ -115,9 +115,9 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:water_bucket',
                 L: 'industrialforegoing:latex_bucket',
                 M: '#industrialforegoing:machine_frame/pity',
-                F: 'minecraft:furnace'
+                F: 'minecraft:furnace',
             },
-            id: 'industrialforegoing:latex_processing_unit'
+            id: 'industrialforegoing:latex_processing_unit',
         },
         {
             output: 'industrialforegoing:machine_frame_pity',
@@ -125,9 +125,9 @@ onEvent('recipes', (event) => {
             key: {
                 W: '#minecraft:logs',
                 I: '#forge:ingots/iron_aluminum',
-                R: '#forge:storage_blocks/redstone'
+                R: '#forge:storage_blocks/redstone',
             },
-            id: 'industrialforegoing:machine_frame_pity'
+            id: 'industrialforegoing:machine_frame_pity',
         },
         {
             output: 'industrialforegoing:marine_fisher',
@@ -138,9 +138,9 @@ onEvent('recipes', (event) => {
                 b: 'minecraft:bucket',
                 m: '#industrialforegoing:machine_frame/simple',
                 g: '#forge:gears/iron_invar',
-                r: 'minecraft:redstone'
+                r: 'minecraft:redstone',
             },
-            id: 'industrialforegoing:marine_fisher'
+            id: 'industrialforegoing:marine_fisher',
         },
         {
             output: 'industrialforegoing:material_stonework_factory',
@@ -152,9 +152,9 @@ onEvent('recipes', (event) => {
                 m: '#industrialforegoing:machine_frame/advanced',
                 f: 'minecraft:furnace',
                 a: '#forge:gears/gold_bronze',
-                b: 'industrialforegoing:pink_slime'
+                b: 'industrialforegoing:pink_slime',
             },
-            id: 'industrialforegoing:material_stonework_factory'
+            id: 'industrialforegoing:material_stonework_factory',
         },
         {
             output: 'industrialforegoing:mob_crusher',
@@ -165,9 +165,9 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:book',
                 M: '#industrialforegoing:machine_frame/advanced',
                 R: 'minecraft:redstone',
-                G: '#forge:gears/gold_invar'
+                G: '#forge:gears/gold_invar',
             },
-            id: 'industrialforegoing:mob_crusher'
+            id: 'industrialforegoing:mob_crusher',
         },
         {
             output: 'industrialforegoing:plant_fertilizer',
@@ -178,9 +178,9 @@ onEvent('recipes', (event) => {
                 L: 'minecraft:leather',
                 M: '#industrialforegoing:machine_frame/simple',
                 R: 'minecraft:redstone',
-                G: '#forge:gears/iron_invar'
+                G: '#forge:gears/iron_invar',
             },
-            id: 'industrialforegoing:plant_fertilizer'
+            id: 'industrialforegoing:plant_fertilizer',
         },
         {
             output: 'industrialforegoing:plant_gatherer',
@@ -191,9 +191,9 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:iron_axe',
                 M: '#industrialforegoing:machine_frame/pity',
                 G: '#forge:gears/gold_bronze',
-                R: 'minecraft:redstone'
+                R: 'minecraft:redstone',
             },
-            id: 'industrialforegoing:plant_gatherer'
+            id: 'industrialforegoing:plant_gatherer',
         },
         {
             output: 'industrialforegoing:plant_sower',
@@ -204,9 +204,9 @@ onEvent('recipes', (event) => {
                 L: 'minecraft:piston',
                 M: '#industrialforegoing:machine_frame/pity',
                 R: 'minecraft:redstone',
-                G: '#forge:gears/iron_invar'
+                G: '#forge:gears/iron_invar',
             },
-            id: 'industrialforegoing:plant_sower'
+            id: 'industrialforegoing:plant_sower',
         },
         {
             output: 'industrialforegoing:sewage_composter',
@@ -217,9 +217,9 @@ onEvent('recipes', (event) => {
                 D: 'minecraft:piston',
                 B: 'minecraft:brick',
                 M: '#industrialforegoing:machine_frame/pity',
-                G: '#forge:gears/iron_invar'
+                G: '#forge:gears/iron_invar',
             },
-            id: 'industrialforegoing:sewage_composter'
+            id: 'industrialforegoing:sewage_composter',
         },
         {
             output: 'industrialforegoing:sewer',
@@ -229,9 +229,9 @@ onEvent('recipes', (event) => {
                 E: 'minecraft:bucket',
                 B: 'minecraft:brick',
                 M: '#industrialforegoing:machine_frame/pity',
-                G: '#forge:gears/iron_invar'
+                G: '#forge:gears/iron_invar',
             },
-            id: 'industrialforegoing:sewer'
+            id: 'industrialforegoing:sewer',
         },
         {
             output: 'industrialforegoing:sludge_refiner',
@@ -242,9 +242,9 @@ onEvent('recipes', (event) => {
                 L: 'minecraft:furnace',
                 M: '#industrialforegoing:machine_frame/pity',
                 R: '#forge:gears/gold_copper',
-                G: '#forge:gears/iron_invar'
+                G: '#forge:gears/iron_invar',
             },
-            id: 'industrialforegoing:sludge_refiner'
+            id: 'industrialforegoing:sludge_refiner',
         },
         {
             output: 'industrialforegoing:spores_recreator',
@@ -253,9 +253,9 @@ onEvent('recipes', (event) => {
                 P: '#forge:plastic',
                 I: '#forge:mushrooms',
                 M: '#industrialforegoing:machine_frame/pity',
-                S: '#forge:gears/iron_invar'
+                S: '#forge:gears/iron_invar',
             },
-            id: 'industrialforegoing:spores_recreator'
+            id: 'industrialforegoing:spores_recreator',
         },
         {
             output: 'industrialforegoing:stasis_chamber',
@@ -265,9 +265,9 @@ onEvent('recipes', (event) => {
                 g: 'minecraft:ghast_tear',
                 m: '#industrialforegoing:machine_frame/advanced',
                 i: '#forge:gears/gold_invar',
-                p: 'minecraft:piston'
+                p: 'minecraft:piston',
             },
-            id: 'industrialforegoing:stasis_chamber'
+            id: 'industrialforegoing:stasis_chamber',
         },
         {
             output: 'industrialforegoing:water_condensator',
@@ -278,9 +278,9 @@ onEvent('recipes', (event) => {
                 L: 'minecraft:piston',
                 M: '#industrialforegoing:machine_frame/pity',
                 R: 'minecraft:redstone',
-                G: '#forge:gears/iron_invar'
+                G: '#forge:gears/iron_invar',
             },
-            id: 'industrialforegoing:water_condensator'
+            id: 'industrialforegoing:water_condensator',
         },
         {
             output: 'industrialforegoing:fluid_placer',
@@ -290,9 +290,9 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:water_bucket',
                 M: '#industrialforegoing:machine_frame/pity',
                 R: 'minecraft:redstone',
-                S: '#forge:gears/iron_invar'
+                S: '#forge:gears/iron_invar',
             },
-            id: 'industrialforegoing:fluid_placer'
+            id: 'industrialforegoing:fluid_placer',
         },
         {
             output: 'industrialforegoing:fluid_collector',
@@ -302,10 +302,10 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:bucket',
                 M: '#industrialforegoing:machine_frame/pity',
                 R: 'minecraft:redstone',
-                S: '#forge:gears/iron_invar'
+                S: '#forge:gears/iron_invar',
             },
-            id: 'industrialforegoing:fluid_collector'
-        }
+            id: 'industrialforegoing:fluid_collector',
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -11,13 +11,13 @@ onEvent('recipes', (event) => {
                     blacklist: { type: 'minecraft:worldgen/biome', values: nether_end_biomes },
                     depth_min: 5,
                     depth_max: 20,
-                    weight: 8
-                }
+                    weight: 8,
+                },
             ],
             pointer: 0,
             catalyst: { item: industrialforegoing.laser_lens.black },
             entity: 'minecraft:empty',
-            id: `${id_prefix}oil`
+            id: `${id_prefix}oil`,
         },
         {
             output: '{FluidName:"industrialforegoing:essence",Amount:5}',
@@ -27,13 +27,13 @@ onEvent('recipes', (event) => {
                     blacklist: { type: 'minecraft:worldgen/biome', values: nether_end_biomes },
                     depth_min: 5,
                     depth_max: 10,
-                    weight: 4
-                }
+                    weight: 4,
+                },
             ],
             pointer: 0,
             catalyst: { item: industrialforegoing.laser_lens.green },
             entity: 'minecraft:empty',
-            id: `${id_prefix}essence`
+            id: `${id_prefix}essence`,
         },
         {
             output: '{FluidName:"resourcefulbees:honey",Amount:50}',
@@ -43,13 +43,13 @@ onEvent('recipes', (event) => {
                     blacklist: { type: 'minecraft:worldgen/biome', values: nether_end_biomes },
                     depth_min: 5,
                     depth_max: 100,
-                    weight: 10
-                }
+                    weight: 10,
+                },
             ],
             pointer: 0,
             catalyst: { item: industrialforegoing.laser_lens.yellow },
             entity: 'minecraft:empty',
-            id: `${id_prefix}honey`
+            id: `${id_prefix}honey`,
         },
         {
             output: '{FluidName:"industrialforegoing:pink_slime",Amount:50}',
@@ -59,14 +59,14 @@ onEvent('recipes', (event) => {
                     blacklist: {},
                     depth_min: 1,
                     depth_max: 256,
-                    weight: 10
-                }
+                    weight: 10,
+                },
             ],
             pointer: 0,
             catalyst: { item: industrialforegoing.laser_lens.pink },
             entity: 'botania:pink_wither',
-            id: `${id_prefix}pink_slime`
-        }
+            id: `${id_prefix}pink_slime`,
+        },
     ];
 
     recipes.forEach((recipe) => {

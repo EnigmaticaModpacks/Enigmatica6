@@ -7,8 +7,8 @@ onEvent('recipes', (event) => {
         {
             output: 'naturesaura:bottle_two_the_rebottling',
             inputs: ['minecraft:glass_bottle', 'farmersdelight:tree_bark'],
-            id: 'naturesaura:bottle_two_the_rebottling'
-        }
+            id: 'naturesaura:bottle_two_the_rebottling',
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -10,18 +10,18 @@ onEvent('recipes', (event) => {
         {
             input: 'ars_nouveau:magic_clay',
             output: 'bloodmagic:arcaneashes',
-            id: `${id_prefix}arcane_ashes`
+            id: `${id_prefix}arcane_ashes`,
         },
         {
             input: 'ars_nouveau:arcane_stone',
             output: 'occultism:otherstone',
-            id: `${id_prefix}otherstone`
+            id: `${id_prefix}otherstone`,
         },
         {
             input: '#forge:gems/mana',
             output: 'occultism:spirit_attuned_gem',
-            id: `${id_prefix}spirit_attuned_gem`
-        }
+            id: `${id_prefix}spirit_attuned_gem`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
             .custom({
                 type: 'occultism:spirit_fire',
                 ingredient: Ingredient.of(recipe.input).toJson(),
-                result: Ingredient.of(recipe.output).toJson()
+                result: Ingredient.of(recipe.output).toJson(),
             })
             .id(recipe.id);
     });

@@ -5,21 +5,21 @@ onEvent('recipes', (event) => {
                 { item: 'tconstruct:plate_boots' },
                 { item: 'tconstruct:plate_leggings' },
                 { item: 'tconstruct:plate_chestplate' },
-                { item: 'tconstruct:plate_helmet' }
+                { item: 'tconstruct:plate_helmet' },
             ],
             repair_material: 'tconstruct:cobalt',
-            id: 'tconstruct:armor/repair/plate_repair_kit'
+            id: 'tconstruct:armor/repair/plate_repair_kit',
         },
         {
             tool: [
                 { item: 'tconstruct:plate_boots' },
                 { item: 'tconstruct:plate_leggings' },
                 { item: 'tconstruct:plate_chestplate' },
-                { item: 'tconstruct:plate_helmet' }
+                { item: 'tconstruct:plate_helmet' },
             ],
             repair_material: 'tconstruct:cobalt',
-            id: 'tconstruct:armor/repair/plate_station'
-        }
+            id: 'tconstruct:armor/repair/plate_station',
+        },
     ];
 
     recipes.forEach((recipe) => {

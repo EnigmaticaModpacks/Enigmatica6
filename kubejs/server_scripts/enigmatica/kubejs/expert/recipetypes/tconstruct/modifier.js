@@ -7,34 +7,34 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 {
-                    item: 'minecraft:blaze_rod'
+                    item: 'minecraft:blaze_rod',
                 },
                 {
-                    item: 'tconstruct:smeltery_controller'
+                    item: 'tconstruct:smeltery_controller',
                 },
                 {
-                    item: 'minecraft:blaze_rod'
+                    item: 'minecraft:blaze_rod',
                 },
                 {
-                    item: 'minecraft:lava_bucket'
+                    item: 'minecraft:lava_bucket',
                 },
                 {
-                    item: 'minecraft:lava_bucket'
-                }
+                    item: 'minecraft:lava_bucket',
+                },
             ],
             tools: {
-                tag: 'tconstruct:modifiable/melee_or_harvest'
+                tag: 'tconstruct:modifiable/melee_or_harvest',
             },
             slots: {
-                abilities: 1
+                abilities: 1,
             },
             result: {
                 name: 'tconstruct:melting',
-                level: 1
+                level: 1,
             },
             max_level: 1,
-            id: 'tconstruct:tools/modifiers/ability/melting'
-        }
+            id: 'tconstruct:tools/modifiers/ability/melting',
+        },
     ];
     recipes.forEach((recipe) => {
         event
@@ -44,7 +44,7 @@ onEvent('recipes', (event) => {
                 tools: recipe.tools,
                 slots: recipe.slots,
                 result: recipe.result,
-                max_level: recipe.max_level
+                max_level: recipe.max_level,
             })
             .id(recipe.id);
     });

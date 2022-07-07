@@ -10,9 +10,9 @@ onEvent('recipes', (event) => {
             key: {
                 P: 'botania:mana_pylon',
                 D: 'botania:pixie_dust',
-                E: '#forge:ingots/elementium'
+                E: '#forge:ingots/elementium',
             },
-            id: 'mythicbotany:modified_gaia_pylon_with_alfsteel'
+            id: 'mythicbotany:modified_gaia_pylon_with_alfsteel',
         },
         {
             output: 'botania:apothecary_default',
@@ -20,10 +20,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:cobblestone',
                 B: '#botania:petals',
-                C: '#forge:cobblestone_slabs'
+                C: '#forge:cobblestone_slabs',
             },
-            id: 'botania:apothecary_default'
-        }
+            id: 'botania:apothecary_default',
+        },
     ];
 
     recipes.forEach((recipe) => {

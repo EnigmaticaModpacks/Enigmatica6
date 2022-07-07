@@ -16,5 +16,5 @@ const powahBlocks = [
     'player_transmitter',
     'energy_hopper',
     'energy_discharger',
-    'battery'
+    'battery',
 ];

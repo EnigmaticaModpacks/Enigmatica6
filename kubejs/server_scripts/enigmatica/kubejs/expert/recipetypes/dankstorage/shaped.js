@@ -22,9 +22,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'resourcefulbees:coal_honeycomb_block',
                 B: 'framedcompactdrawers:framed_full_two',
-                C: 'industrialforegoing:common_black_hole_unit'
+                C: 'industrialforegoing:common_black_hole_unit',
             },
-            id: 'dankstorage:1'
+            id: 'dankstorage:1',
         },
         {
             output: 'dankstorage:dock',
@@ -33,10 +33,10 @@ onEvent('recipes', (event) => {
                 A: 'immersiveengineering:sheetmetal_colored_black',
                 B: 'prettypipes:high_extraction_module',
                 C: 'prettypipes:high_retrieval_module',
-                D: 'thermal:machine_frame'
+                D: 'thermal:machine_frame',
             },
-            id: 'dankstorage:dock'
-        }
+            id: 'dankstorage:dock',
+        },
     ];
 
     recipes.forEach((recipe) => {

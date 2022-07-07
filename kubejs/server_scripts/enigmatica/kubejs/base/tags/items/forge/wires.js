@@ -4,6 +4,6 @@ onEvent('item.tags', (event) => {
         'immersiveengineering:wire_aluminum',
         'immersiveengineering:wire_copper',
         'immersiveengineering:wire_electrum',
-        'immersiveengineering:wire_lead'
+        'immersiveengineering:wire_lead',
     ]);
 });

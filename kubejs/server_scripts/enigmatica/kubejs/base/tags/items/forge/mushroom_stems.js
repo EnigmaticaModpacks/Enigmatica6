@@ -13,6 +13,6 @@ onEvent('item.tags', (event) => {
         'undergarden:indigo_mushroom_stalk',
         'betterendforge:umbrella_tree_log',
         'betterendforge:mossy_glowshroom_log',
-        'betterendforge:jellyshroom_log'
+        'betterendforge:jellyshroom_log',
     ]);
 });

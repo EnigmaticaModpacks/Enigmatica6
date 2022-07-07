@@ -13,9 +13,9 @@ onEvent('recipes', (event) => {
                 C: 'ars_nouveau:mana_fiber',
                 D: 'byg:leaf_pile',
                 E: 'ars_nouveau:glyph_launch',
-                F: 'ars_nouveau:glyph_slowfall'
+                F: 'ars_nouveau:glyph_slowfall',
             },
-            id: `${id_prefix}magicfeather_magic`
+            id: `${id_prefix}magicfeather_magic`,
         },
         {
             output: 'magicfeather:magicfeather',
@@ -26,9 +26,9 @@ onEvent('recipes', (event) => {
                 C: 'thermal:hazmat_fabric',
                 D: 'byg:leaf_pile',
                 E: 'thermal:hazmat_boots',
-                F: 'alexsmobs:frontier_cap'
+                F: 'alexsmobs:frontier_cap',
             },
-            id: `${id_prefix}magicfeather_tech`
+            id: `${id_prefix}magicfeather_tech`,
         },
         {
             output: 'losttrinkets:magical_feathers',
@@ -39,9 +39,9 @@ onEvent('recipes', (event) => {
                 C: 'minecraft:prismarine_shard',
                 D: '#forge:nether_stars',
                 E: 'rftoolsbase:infused_diamond',
-                F: 'minecraft:ender_eye'
+                F: 'minecraft:ender_eye',
             },
-            id: `${id_prefix}magical_feathers`
+            id: `${id_prefix}magical_feathers`,
         },
         {
             output: 'ironjetpacks:hardened_jetpack',
@@ -51,9 +51,9 @@ onEvent('recipes', (event) => {
                 B: 'powah:battery_hardened',
                 C: 'thermal:hazmat_chestplate',
                 D: 'ironjetpacks:hardened_thruster',
-                E: 'powah:reactor_hardened'
+                E: 'powah:reactor_hardened',
             },
-            id: `${id_prefix}ironjetpacks/hardened_jetpack`
+            id: `${id_prefix}ironjetpacks/hardened_jetpack`,
         },
         {
             output: 'ironjetpacks:hardened_thruster',
@@ -62,9 +62,9 @@ onEvent('recipes', (event) => {
                 A: 'powah:steel_energized',
                 B: 'powah:capacitor_hardened',
                 C: 'powah:furnator_hardened',
-                D: 'powah:reactor_hardened'
+                D: 'powah:reactor_hardened',
             },
-            id: `${id_prefix}ironjetpacks/hardened_thruster`
+            id: `${id_prefix}ironjetpacks/hardened_thruster`,
         },
 
         {
@@ -75,9 +75,9 @@ onEvent('recipes', (event) => {
                 B: 'thermal:upgrade_augment_1',
                 C: 'ironjetpacks:hardened_jetpack',
                 D: 'ironjetpacks:invar_thruster',
-                E: '#forge:gears/invar'
+                E: '#forge:gears/invar',
             },
-            id: `${id_prefix}ironjetpacks/invar_jetpack`
+            id: `${id_prefix}ironjetpacks/invar_jetpack`,
         },
         {
             output: 'ironjetpacks:invar_thruster',
@@ -86,9 +86,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/invar',
                 B: 'powah:capacitor_hardened',
                 C: 'powah:furnator_hardened',
-                D: '#forge:gears/invar'
+                D: '#forge:gears/invar',
             },
-            id: `${id_prefix}ironjetpacks/invar_thruster`
+            id: `${id_prefix}ironjetpacks/invar_thruster`,
         },
         {
             output: 'ironjetpacks:blazing_jetpack',
@@ -98,9 +98,9 @@ onEvent('recipes', (event) => {
                 B: 'powah:battery_blazing',
                 C: 'ironjetpacks:invar_jetpack',
                 D: 'ironjetpacks:blazing_thruster',
-                E: 'powah:reactor_blazing'
+                E: 'powah:reactor_blazing',
             },
-            id: `${id_prefix}ironjetpacks/blazing_jetpack`
+            id: `${id_prefix}ironjetpacks/blazing_jetpack`,
         },
         {
             output: 'ironjetpacks:blazing_thruster',
@@ -109,9 +109,9 @@ onEvent('recipes', (event) => {
                 A: 'powah:crystal_blazing',
                 B: 'powah:capacitor_blazing',
                 C: 'powah:furnator_blazing',
-                D: 'powah:reactor_blazing'
+                D: 'powah:reactor_blazing',
             },
-            id: `${id_prefix}ironjetpacks/blazing_thruster`
+            id: `${id_prefix}ironjetpacks/blazing_thruster`,
         },
         {
             output: 'ironjetpacks:signalum_jetpack',
@@ -121,9 +121,9 @@ onEvent('recipes', (event) => {
                 B: 'thermal:upgrade_augment_2',
                 C: 'ironjetpacks:blazing_jetpack',
                 D: 'ironjetpacks:signalum_thruster',
-                E: '#forge:gears/signalum'
+                E: '#forge:gears/signalum',
             },
-            id: `${id_prefix}ironjetpacks/signalum_jetpack`
+            id: `${id_prefix}ironjetpacks/signalum_jetpack`,
         },
         {
             output: 'ironjetpacks:signalum_thruster',
@@ -132,9 +132,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/signalum',
                 B: 'powah:capacitor_blazing',
                 C: 'powah:furnator_blazing',
-                D: '#forge:gears/signalum'
+                D: '#forge:gears/signalum',
             },
-            id: `${id_prefix}ironjetpacks/signalum_thruster`
+            id: `${id_prefix}ironjetpacks/signalum_thruster`,
         },
         {
             output: 'ironjetpacks:niotic_jetpack',
@@ -144,9 +144,9 @@ onEvent('recipes', (event) => {
                 B: 'powah:battery_niotic',
                 C: 'ironjetpacks:signalum_jetpack',
                 D: 'ironjetpacks:niotic_thruster',
-                E: 'powah:reactor_niotic'
+                E: 'powah:reactor_niotic',
             },
-            id: `${id_prefix}ironjetpacks/niotic_jetpack`
+            id: `${id_prefix}ironjetpacks/niotic_jetpack`,
         },
         {
             output: 'ironjetpacks:niotic_thruster',
@@ -155,9 +155,9 @@ onEvent('recipes', (event) => {
                 A: 'powah:crystal_niotic',
                 B: 'powah:capacitor_niotic',
                 C: 'powah:furnator_niotic',
-                D: 'powah:reactor_niotic'
+                D: 'powah:reactor_niotic',
             },
-            id: `${id_prefix}ironjetpacks/niotic_thruster`
+            id: `${id_prefix}ironjetpacks/niotic_thruster`,
         },
 
         {
@@ -168,9 +168,9 @@ onEvent('recipes', (event) => {
                 B: 'thermal:dynamo_fuel_augment',
                 C: 'ironjetpacks:niotic_jetpack',
                 D: 'ironjetpacks:lumium_thruster',
-                E: '#forge:gears/lumium'
+                E: '#forge:gears/lumium',
             },
-            id: `${id_prefix}ironjetpacks/lumium_jetpack`
+            id: `${id_prefix}ironjetpacks/lumium_jetpack`,
         },
         {
             output: 'ironjetpacks:lumium_thruster',
@@ -179,9 +179,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/lumium',
                 B: 'powah:capacitor_niotic',
                 C: 'powah:furnator_niotic',
-                D: '#forge:gears/lumium'
+                D: '#forge:gears/lumium',
             },
-            id: `${id_prefix}ironjetpacks/lumium_thruster`
+            id: `${id_prefix}ironjetpacks/lumium_thruster`,
         },
 
         {
@@ -192,9 +192,9 @@ onEvent('recipes', (event) => {
                 B: 'powah:battery_spirited',
                 C: 'ironjetpacks:lumium_jetpack',
                 D: 'ironjetpacks:spirited_thruster',
-                E: 'powah:reactor_spirited'
+                E: 'powah:reactor_spirited',
             },
-            id: `${id_prefix}ironjetpacks/spirited_jetpack`
+            id: `${id_prefix}ironjetpacks/spirited_jetpack`,
         },
         {
             output: 'ironjetpacks:spirited_thruster',
@@ -203,9 +203,9 @@ onEvent('recipes', (event) => {
                 A: 'powah:crystal_spirited',
                 B: 'powah:capacitor_spirited',
                 C: 'powah:furnator_spirited',
-                D: 'powah:reactor_spirited'
+                D: 'powah:reactor_spirited',
             },
-            id: `${id_prefix}ironjetpacks/spirited_thruster`
+            id: `${id_prefix}ironjetpacks/spirited_thruster`,
         },
         {
             output: 'ironjetpacks:enderium_jetpack',
@@ -215,9 +215,9 @@ onEvent('recipes', (event) => {
                 B: 'thermal:upgrade_augment_3',
                 C: 'ironjetpacks:spirited_jetpack',
                 D: 'ironjetpacks:enderium_thruster',
-                E: '#forge:gears/enderium'
+                E: '#forge:gears/enderium',
             },
-            id: `${id_prefix}ironjetpacks/enderium_jetpack`
+            id: `${id_prefix}ironjetpacks/enderium_jetpack`,
         },
         {
             output: 'ironjetpacks:enderium_thruster',
@@ -226,9 +226,9 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/enderium',
                 B: 'powah:capacitor_spirited',
                 C: 'powah:furnator_spirited',
-                D: '#forge:gears/enderium'
+                D: '#forge:gears/enderium',
             },
-            id: `${id_prefix}ironjetpacks/enderium_thruster`
+            id: `${id_prefix}ironjetpacks/enderium_thruster`,
         },
         {
             output: 'ironjetpacks:nitro_jetpack',
@@ -238,9 +238,9 @@ onEvent('recipes', (event) => {
                 B: 'powah:battery_nitro',
                 C: 'ironjetpacks:enderium_jetpack',
                 D: 'ironjetpacks:nitro_thruster',
-                E: 'powah:reactor_nitro'
+                E: 'powah:reactor_nitro',
             },
-            id: `${id_prefix}ironjetpacks/nitro_jetpack`
+            id: `${id_prefix}ironjetpacks/nitro_jetpack`,
         },
         {
             output: 'ironjetpacks:nitro_thruster',
@@ -249,10 +249,10 @@ onEvent('recipes', (event) => {
                 A: 'powah:crystal_nitro',
                 B: 'powah:capacitor_nitro',
                 C: 'powah:furnator_nitro',
-                D: 'powah:reactor_nitro'
+                D: 'powah:reactor_nitro',
             },
-            id: `${id_prefix}ironjetpacks/nitro_thruster`
-        }
+            id: `${id_prefix}ironjetpacks/nitro_thruster`,
+        },
     ];
 
     powahTiers.forEach(function (tier) {
@@ -275,9 +275,9 @@ onEvent('recipes', (event) => {
                 key: {
                     A: capacitor,
                     B: `powah:energy_cable_${tier}`,
-                    C: Ingredient.of(lower_tiers.map((item) => `powah:energizing_rod_${item}`))
+                    C: Ingredient.of(lower_tiers.map((item) => `powah:energizing_rod_${item}`)),
                 },
-                id: `${id_prefix}powah/energizing_rod_${tier}`
+                id: `${id_prefix}powah/energizing_rod_${tier}`,
             },
             {
                 output: Item.of(`powah:furnator_${tier}`),
@@ -285,9 +285,9 @@ onEvent('recipes', (event) => {
                 key: {
                     A: crystal,
                     B: capacitor,
-                    C: Ingredient.of(lower_tiers.map((item) => `powah:furnator_${item}`))
+                    C: Ingredient.of(lower_tiers.map((item) => `powah:furnator_${item}`)),
                 },
-                id: `${id_prefix}powah/furnator_${tier}`
+                id: `${id_prefix}powah/furnator_${tier}`,
             },
             {
                 output: Item.of(`powah:magmator_${tier}`),
@@ -295,9 +295,9 @@ onEvent('recipes', (event) => {
                 key: {
                     A: crystal,
                     B: capacitor,
-                    C: Ingredient.of(lower_tiers.map((item) => `powah:magmator_${item}`))
+                    C: Ingredient.of(lower_tiers.map((item) => `powah:magmator_${item}`)),
                 },
-                id: `${id_prefix}powah/magmator_${tier}`
+                id: `${id_prefix}powah/magmator_${tier}`,
             },
             {
                 output: Item.of(`powah:thermo_generator_${tier}`),
@@ -305,46 +305,46 @@ onEvent('recipes', (event) => {
                 key: {
                     A: crystal,
                     B: capacitor,
-                    C: Ingredient.of(lower_tiers.map((item) => `powah:thermo_generator_${item}`))
+                    C: Ingredient.of(lower_tiers.map((item) => `powah:thermo_generator_${item}`)),
                 },
-                id: `${id_prefix}powah/thermo_generator_${tier}`
+                id: `${id_prefix}powah/thermo_generator_${tier}`,
             },
             {
                 output: Item.of(`powah:energy_hopper_${tier}`),
                 pattern: ['ABA'],
                 key: {
                     A: capacitor,
-                    B: Ingredient.of(lower_tiers.map((item) => `powah:energy_hopper_${item}`))
+                    B: Ingredient.of(lower_tiers.map((item) => `powah:energy_hopper_${item}`)),
                 },
-                id: `${id_prefix}powah/energy_hopper_${tier}`
+                id: `${id_prefix}powah/energy_hopper_${tier}`,
             },
             {
                 output: Item.of(`powah:energy_discharger_${tier}`),
                 pattern: [' A ', ' B ', ' A '],
                 key: {
                     A: capacitor,
-                    B: Ingredient.of(lower_tiers.map((item) => `powah:energy_discharger_${item}`))
+                    B: Ingredient.of(lower_tiers.map((item) => `powah:energy_discharger_${item}`)),
                 },
-                id: `${id_prefix}powah/energy_discharger_${tier}`
+                id: `${id_prefix}powah/energy_discharger_${tier}`,
             },
             {
                 output: Item.of(`powah:ender_gate_${tier}`, 4),
                 pattern: ['BAB', 'A A', 'BAB'],
                 key: {
                     A: cable,
-                    B: Ingredient.of(lower_tiers.map((item) => `powah:ender_gate_${item}`))
+                    B: Ingredient.of(lower_tiers.map((item) => `powah:ender_gate_${item}`)),
                 },
-                id: `${id_prefix}powah/ender_gate_${tier}`
+                id: `${id_prefix}powah/ender_gate_${tier}`,
             },
             {
                 output: Item.of(`powah:reactor_${tier}`, 4),
                 pattern: ['BAB', 'A A', 'BAB'],
                 key: {
                     A: capacitor,
-                    B: Ingredient.of(lower_tiers.map((item) => `powah:reactor_${item}`))
+                    B: Ingredient.of(lower_tiers.map((item) => `powah:reactor_${item}`)),
                 },
-                id: `${id_prefix}powah/reactor_${tier}`
-            }
+                id: `${id_prefix}powah/reactor_${tier}`,
+            },
         );
     });
 
@@ -363,7 +363,7 @@ onEvent('recipes', (event) => {
             'watchful_aspen',
             'crustose',
             'sappy_maple',
-            'avocado'
+            'avocado',
         ];
 
         if (dupes.includes(wood.logType)) {
@@ -378,27 +378,27 @@ onEvent('recipes', (event) => {
                 pattern: ['AAA', ' C ', 'AAA'],
                 key: {
                     A: wood.plankBlock,
-                    C: '#forge:chests'
+                    C: '#forge:chests',
                 },
-                id: `${id_prefix}oak_full_drawers_1_from_${wood.logType}_planks`
+                id: `${id_prefix}oak_full_drawers_1_from_${wood.logType}_planks`,
             },
             {
                 output: Item.of('storagedrawers:oak_full_drawers_2', 2),
                 pattern: ['ACA', 'AAA', 'ACA'],
                 key: {
                     A: wood.plankBlock,
-                    C: '#forge:chests'
+                    C: '#forge:chests',
                 },
-                id: `${id_prefix}oak_full_drawers_2_from_${wood.logType}_planks`
+                id: `${id_prefix}oak_full_drawers_2_from_${wood.logType}_planks`,
             },
             {
                 output: Item.of('storagedrawers:oak_full_drawers_4', 4),
                 pattern: ['CAC', 'AAA', 'CAC'],
                 key: {
                     A: wood.plankBlock,
-                    C: '#forge:chests'
+                    C: '#forge:chests',
                 },
-                id: `${id_prefix}oak_full_drawers_4_from_${wood.logType}_planks`
+                id: `${id_prefix}oak_full_drawers_4_from_${wood.logType}_planks`,
             },
 
             {
@@ -406,28 +406,28 @@ onEvent('recipes', (event) => {
                 pattern: ['AAA', ' C ', 'AAA'],
                 key: {
                     A: wood.slabBlock,
-                    C: '#forge:chests'
+                    C: '#forge:chests',
                 },
-                id: `${id_prefix}oak_half_drawers_1_from_${wood.logType}_slab`
+                id: `${id_prefix}oak_half_drawers_1_from_${wood.logType}_slab`,
             },
             {
                 output: Item.of('storagedrawers:oak_half_drawers_2', 2),
                 pattern: ['ACA', 'AAA', 'ACA'],
                 key: {
                     A: wood.slabBlock,
-                    C: '#forge:chests'
+                    C: '#forge:chests',
                 },
-                id: `${id_prefix}oak_half_drawers_2_from_${wood.logType}_slab`
+                id: `${id_prefix}oak_half_drawers_2_from_${wood.logType}_slab`,
             },
             {
                 output: Item.of('storagedrawers:oak_half_drawers_4', 4),
                 pattern: ['CAC', 'AAA', 'CAC'],
                 key: {
                     A: wood.slabBlock,
-                    C: '#forge:chests'
+                    C: '#forge:chests',
                 },
-                id: `${id_prefix}oak_half_drawers_4_from_${wood.logType}_slab`
-            }
+                id: `${id_prefix}oak_half_drawers_4_from_${wood.logType}_slab`,
+            },
         );
     });
 

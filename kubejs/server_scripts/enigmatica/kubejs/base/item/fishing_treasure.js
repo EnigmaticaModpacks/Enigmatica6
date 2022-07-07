@@ -10,7 +10,7 @@ onEvent('item.right_click', (e) => {
         //kludge until a better handler is available to drop the item at the fake player's location.
         let playerCoords = `${e.player.x} ${e.player.y + 1} ${e.player.z}`;
         e.world.server.runCommand(
-            `/execute positioned ${playerCoords} run loot spawn ${playerCoords} loot ${lootTable}`
+            `/execute positioned ${playerCoords} run loot spawn ${playerCoords} loot ${lootTable}`,
         );
     } else {
         lootDrops.forEach((lootDrop) => {

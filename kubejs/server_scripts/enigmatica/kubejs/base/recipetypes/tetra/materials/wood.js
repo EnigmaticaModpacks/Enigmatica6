@@ -18,7 +18,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'acacia_glyph', texture: 'acacia' },
                     textures: ['crude', 'wooden'],
                     material: { item: 'minecraft:acacia_planks' },
-                    requiredTools: { axe: 1 }
+                    requiredTools: { axe: 1 },
                 },
                 {
                     key: 'warped',
@@ -36,7 +36,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['crude', 'wooden'],
                     material: { item: 'minecraft:warped_planks' },
                     effects: { unstable: 20 },
-                    requiredTools: { axe: 3 }
+                    requiredTools: { axe: 3 },
                 },
                 {
                     key: 'spruce',
@@ -53,7 +53,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'spruce_glyph', texture: 'spruce' },
                     textures: ['crude', 'wooden'],
                     material: { item: 'minecraft:spruce_planks' },
-                    requiredTools: { axe: 1 }
+                    requiredTools: { axe: 1 },
                 },
                 {
                     key: 'oak',
@@ -70,7 +70,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'oak_glyph', texture: 'oak' },
                     textures: ['crude', 'wooden'],
                     material: { tag: 'minecraft:planks' },
-                    requiredTools: { axe: 1 }
+                    requiredTools: { axe: 1 },
                 },
                 {
                     key: 'jungle',
@@ -87,7 +87,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'jungle_glyph', texture: 'jungle' },
                     textures: ['crude', 'wooden'],
                     material: { item: 'minecraft:jungle_planks' },
-                    requiredTools: { axe: 1 }
+                    requiredTools: { axe: 1 },
                 },
                 {
                     key: 'dark_oak',
@@ -104,7 +104,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'dark_oak_glyph', texture: 'dark_oak' },
                     textures: ['crude', 'wooden'],
                     material: { item: 'minecraft:dark_oak_planks' },
-                    requiredTools: { axe: 1 }
+                    requiredTools: { axe: 1 },
                 },
                 {
                     key: 'crimson',
@@ -121,7 +121,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'crimson_glyph', texture: 'crimson' },
                     textures: ['crude', 'wooden'],
                     material: { item: 'minecraft:crimson_planks' },
-                    requiredTools: { axe: 3 }
+                    requiredTools: { axe: 3 },
                 },
                 {
                     key: 'birch',
@@ -138,8 +138,8 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'birch_glyph', texture: 'birch' },
                     textures: ['crude', 'wooden'],
                     material: { item: 'minecraft:birch_planks' },
-                    requiredTools: { axe: 1 }
-                }
+                    requiredTools: { axe: 1 },
+                },
             ],
             type: 'compat',
             recipes: [
@@ -160,7 +160,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['crude', 'wooden'],
                     material: { item: 'naturesaura:ancient_planks' },
                     improvements: { naturesaura_aura_mending_innate: 1 },
-                    requiredTools: { axe: 2 }
+                    requiredTools: { axe: 2 },
                 },
                 {
                     key: 'treated_wood',
@@ -178,7 +178,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['crude', 'wooden'],
                     material: { tag: 'forge:treated_wood' },
                     improvements: { workable: 1 },
-                    requiredTools: { axe: 3 }
+                    requiredTools: { axe: 3 },
                 },
                 {
                     key: 'maple',
@@ -195,7 +195,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'maple_glyph', texture: 'maple' },
                     textures: ['crude', 'wooden'],
                     material: { tag: 'forge:planks/maple' },
-                    requiredTools: { axe: 3 }
+                    requiredTools: { axe: 3 },
                 },
                 {
                     key: 'livingwood',
@@ -213,7 +213,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['crude'],
                     material: { item: 'botania:livingwood_planks' },
                     improvements: { mana_repair: 3 },
-                    requiredTools: { axe: 2 }
+                    requiredTools: { axe: 2 },
                 },
                 {
                     key: 'dreamwood',
@@ -231,7 +231,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['crude'],
                     material: { item: 'botania:dreamwood_planks' },
                     improvements: { mana_repair: 3 },
-                    requiredTools: { axe: 2 }
+                    requiredTools: { axe: 2 },
                 },
                 {
                     key: 'cherry',
@@ -248,7 +248,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'cherry_glyph', texture: 'cherry' },
                     textures: ['crude', 'wooden'],
                     material: { tag: 'forge:planks/cherry' },
-                    requiredTools: { axe: 3 }
+                    requiredTools: { axe: 3 },
                 },
                 {
                     key: 'baobab',
@@ -265,10 +265,10 @@ onEvent('server.datapack.low_priority', (event) => {
                     tints: { glyph: 'baobab_glyph', texture: 'baobab' },
                     textures: ['crude', 'wooden'],
                     material: { tag: 'forge:planks/baobab' },
-                    requiredTools: { axe: 3 }
-                }
-            ]
-        }
+                    requiredTools: { axe: 3 },
+                },
+            ],
+        },
     ];
 
     data.forEach((recipeType) => {

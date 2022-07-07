@@ -9,14 +9,14 @@ onEvent('recipes', (event) => {
             inputs: [Fluid.of('integrateddynamics:menril_resin', 1000)],
             output: Item.of('integrateddynamics:crystalized_menril_block', 1),
             energy: 4000,
-            id: `${id_prefix}crystalized_menril_block`
+            id: `${id_prefix}crystalized_menril_block`,
         },
         {
             inputs: [Fluid.of('integrateddynamics:liquid_chorus', 1000)],
             output: Item.of('integrateddynamics:crystalized_chorus_block', 1),
             energy: 4000,
-            id: `${id_prefix}crystalized_chorus_block`
-        }
+            id: `${id_prefix}crystalized_chorus_block`,
+        },
     ];
 
     recipes.forEach((recipe) => {

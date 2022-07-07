@@ -6,7 +6,7 @@ onEvent('item.tags', (event) => {
     let exceptions = [
         'upgrade_aquatic:dead_coralstone',
         'upgrade_aquatic:chiseled_coralstone',
-        'upgrade_aquatic:chiseled_dead_coralstone'
+        'upgrade_aquatic:chiseled_dead_coralstone',
     ];
     event.get('upgrade_aquatic:coralstone/infused').add(items).remove(exceptions);
 });

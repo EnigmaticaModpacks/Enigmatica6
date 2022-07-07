@@ -22,6 +22,6 @@ onEvent('item.tags', (event) => {
             'kubejs:laputian_ingot',
             'botania:mana_diamond_block',
             'botania:dragonstone_block',
-            'powah:ender_core'
+            'powah:ender_core',
         ]);
 });

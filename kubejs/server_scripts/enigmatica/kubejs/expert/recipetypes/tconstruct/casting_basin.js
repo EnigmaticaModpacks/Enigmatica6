@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
                 cast_consumed: true,
                 output: 'betterendforge:infusion_pedestal',
                 cooling_time: 233,
-                id: 'betterendforge:infusion_pedestal'
+                id: 'betterendforge:infusion_pedestal',
             },
             {
                 fluid: 'kubejs:molten_compressed_iron',
@@ -21,9 +21,9 @@ onEvent('recipes', (event) => {
                 cast_consumed: true,
                 output: 'pneumaticcraft:reinforced_stone',
                 cooling_time: 10,
-                id: `${id_prefix}reinforced_stone`
-            }
-        ]
+                id: `${id_prefix}reinforced_stone`,
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {
@@ -31,16 +31,16 @@ onEvent('recipes', (event) => {
             type: 'tconstruct:casting_basin',
             fluid: {
                 name: recipe.fluid,
-                amount: recipe.fluid_amount
+                amount: recipe.fluid_amount,
             },
             result: recipe.output,
-            cooling_time: recipe.cooling_time
+            cooling_time: recipe.cooling_time,
         };
 
         if (recipe.casts) {
             constructed_recipe.cast = {
                 type: 'mantle:intersection',
-                ingredients: recipe.casts
+                ingredients: recipe.casts,
             };
             constructed_recipe.cast_consumed = recipe.cast_consumed;
         }

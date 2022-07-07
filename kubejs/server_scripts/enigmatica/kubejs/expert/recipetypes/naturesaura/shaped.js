@@ -21,9 +21,9 @@ onEvent('recipes', (event) => {
             pattern: ['A A', 'ABA', ' A '],
             key: {
                 A: 'naturesaura:infused_iron',
-                B: '#forge:chests'
+                B: '#forge:chests',
             },
-            id: 'naturesaura:grated_chute'
+            id: 'naturesaura:grated_chute',
         },
         {
             output: 'naturesaura:offering_table',
@@ -34,9 +34,9 @@ onEvent('recipes', (event) => {
                 C: 'naturesaura:token_fear',
                 D: 'naturesaura:token_sorrow',
                 E: 'naturesaura:ancient_bark',
-                F: 'minecraft:conduit'
+                F: 'minecraft:conduit',
             },
-            id: 'naturesaura:offering_table'
+            id: 'naturesaura:offering_table',
         },
         {
             output: Item.of('naturesaura:field_creator', 2),
@@ -44,9 +44,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'atum:crystal_glass',
                 B: 'naturesaura:token_anger',
-                C: 'botania:corporea_block'
+                C: 'botania:corporea_block',
             },
-            id: 'naturesaura:field_creator'
+            id: 'naturesaura:field_creator',
         },
         {
             output: 'naturesaura:pickup_stopper',
@@ -54,9 +54,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/infused_iron',
                 B: '#forge:storage_blocks/lead',
-                C: 'naturesaura:gold_brick'
+                C: 'naturesaura:gold_brick',
             },
-            id: 'naturesaura:pickup_stopper'
+            id: 'naturesaura:pickup_stopper',
         },
         {
             output: 'naturesaura:hopper_upgrade',
@@ -64,9 +64,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/infused_iron',
                 B: '#forge:plates/lead',
-                C: 'minecraft:lodestone'
+                C: 'minecraft:lodestone',
             },
-            id: 'naturesaura:hopper_upgrade'
+            id: 'naturesaura:hopper_upgrade',
         },
         {
             output: 'naturesaura:aura_cache',
@@ -74,9 +74,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/infused_iron',
                 B: 'naturesaura:infused_stone',
-                C: 'resourcefulbees:wooden_honey_tank'
+                C: 'resourcefulbees:wooden_honey_tank',
             },
-            id: 'naturesaura:aura_cache'
+            id: 'naturesaura:aura_cache',
         },
         {
             output: 'naturesaura:animal_container',
@@ -85,9 +85,9 @@ onEvent('recipes', (event) => {
                 A: '#resourcefulbees:resourceful_honeycomb',
                 B: 'botania:forest_eye',
                 C: '#forge:crops',
-                D: 'naturesaura:infused_brick'
+                D: 'naturesaura:infused_brick',
             },
-            id: 'naturesaura:animal_container'
+            id: 'naturesaura:animal_container',
         },
         {
             output: 'naturesaura:aura_detector',
@@ -96,9 +96,9 @@ onEvent('recipes', (event) => {
                 A: 'naturesaura:infused_stone',
                 B: 'botania:forest_eye',
                 C: 'botania:redstone_root',
-                D: '#forge:ingots/infused_iron'
+                D: '#forge:ingots/infused_iron',
             },
-            id: 'naturesaura:aura_detector'
+            id: 'naturesaura:aura_detector',
         },
         {
             output: 'naturesaura:placer',
@@ -106,9 +106,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'naturesaura:gold_brick',
                 B: 'botania:corporea_funnel',
-                C: '#forge:ingots/infused_iron'
+                C: '#forge:ingots/infused_iron',
             },
-            id: 'naturesaura:placer'
+            id: 'naturesaura:placer',
         },
         {
             output: 'naturesaura:spring',
@@ -117,11 +117,11 @@ onEvent('recipes', (event) => {
                 A: '#upgrade_aquatic:coralstone/infused',
                 B: Item.of(
                     'minecraft:water_bucket',
-                    '{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:\'{"text":"#MLG-YOLO"}\'}}'
+                    '{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:\'{"text":"#MLG-YOLO"}\'}}',
                 ).weakNBT(),
-                C: 'naturesaura:token_euphoria'
+                C: 'naturesaura:token_euphoria',
             },
-            id: 'naturesaura:spring'
+            id: 'naturesaura:spring',
         },
         {
             output: 'naturesaura:netherite_finder',
@@ -130,10 +130,10 @@ onEvent('recipes', (event) => {
                 A: 'occultism:spirit_attuned_gem',
                 B: 'minecraft:warped_roots',
                 C: 'minecraft:crimson_roots',
-                D: 'betterendforge:leather_wrapped_stick'
+                D: 'betterendforge:leather_wrapped_stick',
             },
-            id: 'naturesaura:netherite_finder'
-        }
+            id: 'naturesaura:netherite_finder',
+        },
     ];
 
     recipes.forEach((recipe) => {

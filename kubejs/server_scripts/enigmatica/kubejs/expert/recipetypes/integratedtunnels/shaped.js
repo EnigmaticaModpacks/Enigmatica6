@@ -11,9 +11,9 @@ onEvent('recipes', (event) => {
                 A: 'integrateddynamics:menril_wood',
                 B: 'powah:capacitor_blazing',
                 C: 'integratedterminals:menril_glass',
-                D: 'thermal:rf_coil'
+                D: 'thermal:rf_coil',
             },
-            id: 'integratedtunnels:crafting/part_interface_energy'
+            id: 'integratedtunnels:crafting/part_interface_energy',
         },
         {
             output: Item.of('integratedtunnels:part_interface_fluid', 2),
@@ -22,9 +22,9 @@ onEvent('recipes', (event) => {
                 A: 'integrateddynamics:menril_wood',
                 B: 'pneumaticcraft:large_tank',
                 C: 'integratedterminals:menril_glass',
-                D: 'pneumaticcraft:logistics_core'
+                D: 'pneumaticcraft:logistics_core',
             },
-            id: 'integratedtunnels:crafting/part_interface_fluid'
+            id: 'integratedtunnels:crafting/part_interface_fluid',
         },
         {
             output: Item.of('integratedtunnels:part_interface_item', 2),
@@ -33,10 +33,10 @@ onEvent('recipes', (event) => {
                 A: 'integrateddynamics:menril_wood',
                 B: 'ironchest:silver_chest',
                 C: 'glassential:glass_ghostly',
-                D: 'botania:corporea_funnel'
+                D: 'botania:corporea_funnel',
             },
-            id: `integratedtunnels:crafting/part_interface_item`
-        }
+            id: `integratedtunnels:crafting/part_interface_item`,
+        },
     ];
 
     recipes.forEach((recipe) => {

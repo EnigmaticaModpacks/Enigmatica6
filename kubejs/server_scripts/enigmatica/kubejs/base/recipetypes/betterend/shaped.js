@@ -6,19 +6,19 @@ onEvent('recipes', (event) => {
             pattern: ['A', 'B', 'A'],
             key: {
                 A: '#forge:nuggets/thallasium',
-                B: '#forge:ingots/thallasium'
+                B: '#forge:ingots/thallasium',
             },
-            id: 'betterendforge:thallasium_chain'
+            id: 'betterendforge:thallasium_chain',
         },
         {
             output: Item.of('8x betterendforge:terminite_chain'),
             pattern: ['A', 'B', 'A'],
             key: {
                 A: '#forge:nuggets/terminite',
-                B: '#forge:ingots/terminite'
+                B: '#forge:ingots/terminite',
             },
-            id: 'betterendforge:terminite_chain'
-        }
+            id: 'betterendforge:terminite_chain',
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -10,13 +10,13 @@ onEvent('block.tags', (event) => {
         'byg:cryptic_redstone_ore',
         'betterendforge:thallasium_ore',
         'atum:bone_ore',
-        'atum:relic_ore'
+        'atum:relic_ore',
     ]);
 
     event.add('forge:ores/dimensional', [
         'rftoolsbase:dimensionalshard_overworld',
         'rftoolsbase:dimensionalshard_nether',
-        'rftoolsbase:dimensionalshard_end'
+        'rftoolsbase:dimensionalshard_end',
     ]);
 
     event.get('forge:ores/nether/gold').add('minecraft:nether_gold_ore');

@@ -8,8 +8,8 @@ onEvent('recipes', (event) => {
             inputs: [Fluid.of('industrialforegoing:latex', 900)],
             output: Item.of('industrialforegoing:dryrubber', 1),
             type: 'unheated',
-            id: `${id_prefix}dryrubber`
-        }
+            id: `${id_prefix}dryrubber`,
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -11,9 +11,9 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:hopper',
                 B: '#forge:gems/dimensional',
                 C: 'occultism:wormhole_frame',
-                D: '#forge:chests'
+                D: '#forge:chests',
             },
-            id: 'compactmachines:tunnel/item'
+            id: 'compactmachines:tunnel/item',
         },
         {
             output: Item.of('compactmachines:tunnel', { definition: { id: 'compactmachines:redstone_in' } }),
@@ -22,10 +22,10 @@ onEvent('recipes', (event) => {
                 A: 'glassential:glass_redstone',
                 B: '#forge:gems/dimensional',
                 C: 'occultism:wormhole_frame',
-                D: 'minecraft:redstone_torch'
+                D: 'minecraft:redstone_torch',
             },
-            id: 'compactmachines:tunnel/redstone'
-        }
+            id: 'compactmachines:tunnel/redstone',
+        },
     ];
 
     recipes.forEach((recipe) => {

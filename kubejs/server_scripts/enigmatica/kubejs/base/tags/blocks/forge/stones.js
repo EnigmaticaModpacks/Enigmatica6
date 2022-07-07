@@ -8,7 +8,7 @@ onEvent('block.tags', (event) => {
             'astralsorcery:marble_engraved',
             'astralsorcery:marble_raw',
             'astralsorcery:marble_runed',
-            'create:natural_scoria'
+            'create:natural_scoria',
         ])
         .remove(['#pneumaticcraft:reinforced_stone']);
 
@@ -21,7 +21,7 @@ onEvent('block.tags', (event) => {
             'quark:basalt_pillar',
             'quark:polished_basalt',
             'quark:basalt_bricks',
-            'minecraft:basalt'
+            'minecraft:basalt',
         ]);
     event.get('forge:stones/slate').add(['quark:slate', 'quark:polished_slate']);
     event
@@ -34,7 +34,7 @@ onEvent('block.tags', (event) => {
             'astralsorcery:marble_chiseled',
             'astralsorcery:marble_engraved',
             'astralsorcery:marble_raw',
-            'astralsorcery:marble_runed'
+            'astralsorcery:marble_runed',
         ]);
     event.get('forge:stones/limestone').add(['quark:limestone', 'quark:polished_limestone']);
     event.get('forge:stones/jasper').add(['quark:jasper', 'quark:polished_jasper']);

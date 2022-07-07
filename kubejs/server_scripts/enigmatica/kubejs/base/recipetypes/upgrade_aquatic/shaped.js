@@ -7,10 +7,10 @@ onEvent('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: 'upgrade_aquatic:mulberry'
+                D: 'upgrade_aquatic:mulberry',
             },
-            id: 'upgrade_aquatic:mulberry_pie'
-        }
+            id: 'upgrade_aquatic:mulberry_pie',
+        },
     ];
 
     recipes.forEach((recipe) => {

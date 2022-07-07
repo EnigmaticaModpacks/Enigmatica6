@@ -54,7 +54,7 @@ function create_dye_milling(event, recipe, id_prefix) {
         outputs = [
             Item.of(recipe.primary, count),
             Item.of(recipe.secondary).withCount(count).withChance(0.25),
-            Item.of(recipe.tertiary).withCount(multiplier).withChance(0.05)
+            Item.of(recipe.tertiary).withCount(multiplier).withChance(0.05),
         ],
         input = recipe.input;
 
@@ -71,13 +71,13 @@ function immersiveengineering_dye_crusher(event, recipe, id_prefix) {
         output = Item.of(recipe.primary, count),
         extras = [
             Item.of(recipe.secondary).withCount(count).withChance(0.25),
-            Item.of(recipe.tertiary).withCount(multiplier).withChance(0.05)
+            Item.of(recipe.tertiary).withCount(multiplier).withChance(0.05),
         ],
         input = recipe.input;
 
     fallback_id(
         event.recipes.immersiveengineering.crusher(output, input, extras),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}${arguments.callee.name}/`,
     );
 }
 
@@ -152,9 +152,9 @@ function mekanism_pigment_extracting(event, recipe, id_prefix) {
         event.custom({
             type: 'mekanism:pigment_extracting',
             input: { ingredient: { item: recipe.input } },
-            output: { pigment: `mekanism:${dye_color}`, amount: 256 * count }
+            output: { pigment: `mekanism:${dye_color}`, amount: 256 * count },
         }),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}${arguments.callee.name}/`,
     );
 }
 
@@ -177,9 +177,9 @@ function pedestals_dye_crushing(event, recipe, id_prefix) {
         event.custom({
             type: 'pedestals:pedestal_crushing',
             ingredient: { item: input },
-            result: { item: output, count: count }
+            result: { item: output, count: count },
         }),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}${arguments.callee.name}/`,
     );
 }
 
@@ -198,7 +198,7 @@ function thermal_dye_centrifuge(event, recipe, id_prefix) {
         outputs = [
             Item.of(recipe.primary, count),
             Item.of(recipe.secondary).withCount(count).withChance(0.25),
-            Item.of(recipe.tertiary).withCount(multiplier).withChance(0.05)
+            Item.of(recipe.tertiary).withCount(multiplier).withChance(0.05),
         ],
         input = recipe.input;
 
@@ -222,9 +222,9 @@ function atum_quern_milling(event, recipe, id_prefix) {
             type: 'atum:quern',
             ingredient: { item: input },
             result: { item: output, count: count },
-            rotations: rotations
+            rotations: rotations,
         }),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}${arguments.callee.name}/`,
     );
 }
 
@@ -258,8 +258,8 @@ function occultism_dye_crushing(event, recipe, id_prefix) {
             type: 'occultism:crushing',
             ingredient: { item: input },
             result: { item: output, count: count },
-            crushing_time: 50
+            crushing_time: 50,
         }),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}${arguments.callee.name}/`,
     );
 }

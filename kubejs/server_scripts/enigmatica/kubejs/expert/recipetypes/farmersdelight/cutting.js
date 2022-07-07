@@ -3,7 +3,7 @@ function cuttingRecipe(ingredient, tool, result) {
         type: 'farmersdelight:cutting',
         ingredients: [ingredient],
         tool: tool,
-        result: result
+        result: result,
     };
 }
 
@@ -16,24 +16,24 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         cuttingRecipe(Ingredient.of('minecraft:leather'), Ingredient.of('#forge:tools/knives'), [
-            Item.of('betterendforge:leather_stripe', 3)
+            Item.of('betterendforge:leather_stripe', 3),
         ]),
         cuttingRecipe(
             Ingredient.of('#minecraft:planks'),
             {
                 type: 'farmersdelight:tool',
-                tool: 'axe'
+                tool: 'axe',
             },
-            [Item.of('minecraft:stick', 2)]
+            [Item.of('minecraft:stick', 2)],
         ),
         cuttingRecipe(
             Ingredient.of('upgrade_aquatic:embedded_ammonite'),
             {
                 type: 'farmersdelight:tool',
-                tool: 'pickaxe'
+                tool: 'pickaxe',
             },
-            [Item.of('minecraft:nautilus_shell', 2)]
-        )
+            [Item.of('minecraft:nautilus_shell', 2)],
+        ),
     ];
 
     recipes.forEach((recipe) => {
@@ -43,17 +43,17 @@ onEvent('recipes', (event) => {
     buildWoodVariants.forEach((variant) => {
         let woodRecipes = [
             {
-                input: variant.logBlockStripped
+                input: variant.logBlockStripped,
             },
             {
-                input: variant.woodBlockStripped
-            }
+                input: variant.woodBlockStripped,
+            },
         ];
 
         woodRecipes.forEach((recipe) => {
             let tool = {
                 type: 'farmersdelight:tool',
-                tool: 'axe'
+                tool: 'axe',
             };
             let ingredients = Ingredient.of(recipe.input);
             let result = [Item.of('minecraft:stick', 8)];
@@ -62,9 +62,9 @@ onEvent('recipes', (event) => {
                     type: 'farmersdelight:cutting',
                     ingredients: [ingredients],
                     tool: tool,
-                    result: result
+                    result: result,
                 }),
-                id_prefix
+                id_prefix,
             );
         });
     });

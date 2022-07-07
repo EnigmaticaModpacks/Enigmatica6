@@ -4,100 +4,100 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             ingredient: {
-                item: 'resourcefulbees:boobee_honeycomb'
+                item: 'resourcefulbees:boobee_honeycomb',
             },
             results: [
                 {
                     item: 'minecraft:ghast_tear',
                     chance: 0.15,
-                    count: 2
+                    count: 2,
                 },
                 {
                     item: 'minecraft:spectral_arrow',
                     chance: 0.2,
-                    count: 3
+                    count: 3,
                 },
                 {
                     fluid: 'minecraft:milk',
                     amount: 250,
-                    chance: 0.25
-                }
+                    chance: 0.25,
+                },
             ],
             time: 200,
-            noBottleInput: true
+            noBottleInput: true,
         },
         {
             ingredient: {
-                item: 'resourcefulbees:boobee_honeycomb_block'
+                item: 'resourcefulbees:boobee_honeycomb_block',
             },
             results: [
                 {
                     item: 'minecraft:ghast_tear',
                     chance: 0.15,
-                    count: 18
+                    count: 18,
                 },
                 {
                     item: 'minecraft:spectral_arrow',
                     chance: 0.2,
-                    count: 27
+                    count: 27,
                 },
                 {
                     fluid: 'minecraft:milk',
                     amount: 2250,
-                    chance: 0.25
-                }
+                    chance: 0.25,
+                },
             ],
             time: 200,
-            noBottleInput: true
+            noBottleInput: true,
         },
         {
             ingredient: {
-                item: 'resourcefulbees:pcbee_honeycomb'
+                item: 'resourcefulbees:pcbee_honeycomb',
             },
             results: [
                 {
                     item: 'pneumaticcraft:empty_pcb',
                     chance: 0.01,
-                    count: 1
+                    count: 1,
                 },
                 {
                     item: 'pneumaticcraft:ingot_iron_compressed',
                     chance: 0.05,
-                    count: 1
+                    count: 1,
                 },
                 {
                     fluid: 'pneumaticcraft:etching_acid',
                     amount: 250,
-                    chance: 0.2
-                }
+                    chance: 0.2,
+                },
             ],
             time: 200,
-            noBottleInput: true
+            noBottleInput: true,
         },
         {
             ingredient: {
-                item: 'resourcefulbees:pcbee_honeycomb_block'
+                item: 'resourcefulbees:pcbee_honeycomb_block',
             },
             results: [
                 {
                     item: 'pneumaticcraft:empty_pcb',
                     chance: 0.01,
-                    count: 9
+                    count: 9,
                 },
                 {
                     item: 'pneumaticcraft:ingot_iron_compressed',
                     chance: 0.05,
-                    count: 9
+                    count: 9,
                 },
                 {
                     fluid: 'pneumaticcraft:etching_acid',
                     amount: 2250,
-                    chance: 0.2
-                }
+                    chance: 0.2,
+                },
             ],
             time: 200,
-            noBottleInput: true
-        }
+            noBottleInput: true,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -107,9 +107,9 @@ onEvent('recipes', (event) => {
                 ingredient: recipe.ingredient,
                 results: recipe.results,
                 time: recipe.time,
-                noBottleInput: recipe.noBottleInput
+                noBottleInput: recipe.noBottleInput,
             }),
-            id_prefix
+            id_prefix,
         );
     });
 });

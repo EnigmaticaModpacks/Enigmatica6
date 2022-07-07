@@ -4,9 +4,9 @@ onEvent('recipes', (event) => {
             output: Item.of('farmersdelight:pie_crust', 3),
             pattern: ['A A', 'AAA'],
             key: {
-                A: 'farmersdelight:wheat_dough'
+                A: 'farmersdelight:wheat_dough',
             },
-            id: 'farmersdelight:pie_crust'
+            id: 'farmersdelight:pie_crust',
         },
         {
             output: 'farmersdelight:chocolate_pie',
@@ -14,9 +14,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
-                D: 'create:bar_of_chocolate'
+                D: 'create:bar_of_chocolate',
             },
-            id: 'farmersdelight:chocolate_pie'
+            id: 'farmersdelight:chocolate_pie',
         },
         {
             output: 'farmersdelight:apple_pie',
@@ -25,19 +25,19 @@ onEvent('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: 'minecraft:apple'
+                D: 'minecraft:apple',
             },
-            id: 'farmersdelight:apple_pie'
+            id: 'farmersdelight:apple_pie',
         },
         {
             output: 'farmersdelight:wheat_dough',
             pattern: ['A', 'B'],
             key: {
                 A: '#forge:dusts/flour',
-                B: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 1000 }
+                B: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 1000 },
             },
-            id: 'create:crafting/appliances/dough'
-        }
+            id: 'create:crafting/appliances/dough',
+        },
     ];
 
     recipes.forEach((recipe) => {

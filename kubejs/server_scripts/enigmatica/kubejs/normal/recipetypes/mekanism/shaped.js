@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
         { ingredient: '#forge:ingots/copper', tier: 'basic' },
         { ingredient: '#forge:dusts/redstone', tier: 'advanced' },
         { ingredient: '#forge:ingots/osmium', tier: 'elite' },
-        { ingredient: '#forge:obsidian', tier: 'ultimate' }
+        { ingredient: '#forge:obsidian', tier: 'ultimate' },
     ];
 
     bin_tiers.forEach((recipe) => {
@@ -18,9 +18,9 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'A A', 'AAA'],
             key: {
                 A: 'minecraft:smooth_stone',
-                B: recipe.ingredient
+                B: recipe.ingredient,
             },
-            id: `mekanism:bin/${recipe.tier}`
+            id: `mekanism:bin/${recipe.tier}`,
         });
     });
 

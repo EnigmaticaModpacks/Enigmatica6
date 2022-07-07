@@ -8,177 +8,177 @@ onEvent('recipes', (event) => {
                 D: 'resourcefulbees:blaze_honeycomb',
                 C: 'resourcefulbees:coal_honeycomb',
                 B: 'resourcefulbees:wax',
-                A: 'minecraft:bucket'
+                A: 'minecraft:bucket',
             },
-            id: `${id_prefix}minecraft/lava_bucket`
+            id: `${id_prefix}minecraft/lava_bucket`,
         },
         {
             output: 'betterendforge:dense_snow',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: 'minecraft:snow_block'
+                A: 'minecraft:snow_block',
             },
-            id: `${id_prefix}betterendforge/dense_snow`
+            id: `${id_prefix}betterendforge/dense_snow`,
         },
         {
             output: Item.of('atum:linen_thread', 8),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: '#forge:crops/flax',
-                B: '#forge:rods/wooden'
+                B: '#forge:rods/wooden',
             },
-            id: `${id_prefix}atum/linen_thread_from_flax`
+            id: `${id_prefix}atum/linen_thread_from_flax`,
         },
         {
             output: Item.of('atum:linen_thread', 4),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'atum:cloth_scrap',
-                B: '#forge:rods/wooden'
+                B: '#forge:rods/wooden',
             },
-            id: `${id_prefix}atum/linen_thread_from_cloth_scrap`
+            id: `${id_prefix}atum/linen_thread_from_cloth_scrap`,
         },
         {
             output: Item.of('eidolon:lead_ingot', 6),
             pattern: ['AA', 'AA', 'AA'],
             key: {
-                A: '#forge:ingots/lead'
+                A: '#forge:ingots/lead',
             },
-            id: `${id_prefix}eidolon/lead_ingot_conversion`
+            id: `${id_prefix}eidolon/lead_ingot_conversion`,
         },
         {
             output: Item.of('atum:marl', 4),
             pattern: ['AB', 'BA'],
             key: {
                 A: 'atum:sand',
-                B: 'minecraft:clay'
+                B: 'minecraft:clay',
             },
-            id: `${id_prefix}atum/marl_from_clay`
+            id: `${id_prefix}atum/marl_from_clay`,
         },
 
         {
             output: Item.of('bloodmagic:dungeon_polished', 4),
             pattern: ['AA', 'AA'],
             key: {
-                A: 'bloodmagic:dungeon_stone'
+                A: 'bloodmagic:dungeon_stone',
             },
-            id: `${id_prefix}bloodmagic/dungeon_polished`
+            id: `${id_prefix}bloodmagic/dungeon_polished`,
         },
         {
             output: Item.of('bloodmagic:dungeon_brick1', 4),
             pattern: ['AA', 'AA'],
             key: {
-                A: 'bloodmagic:dungeon_polished'
+                A: 'bloodmagic:dungeon_polished',
             },
-            id: `${id_prefix}bloodmagic/dungeon_brick1`
+            id: `${id_prefix}bloodmagic/dungeon_brick1`,
         },
         {
             output: Item.of('bloodmagic:dungeon_polished_stairs', 4),
             pattern: ['A  ', 'AA ', 'AAA'],
             key: {
-                A: 'bloodmagic:dungeon_polished'
+                A: 'bloodmagic:dungeon_polished',
             },
-            id: `${id_prefix}bloodmagic/dungeon_polished_stairs`
+            id: `${id_prefix}bloodmagic/dungeon_polished_stairs`,
         },
         {
             output: Item.of('bloodmagic:dungeon_brick_stairs', 4),
             pattern: ['A  ', 'AA ', 'AAA'],
             key: {
-                A: 'bloodmagic:dungeon_brick1'
+                A: 'bloodmagic:dungeon_brick1',
             },
-            id: `${id_prefix}bloodmagic/dungeon_brick_stairs`
+            id: `${id_prefix}bloodmagic/dungeon_brick_stairs`,
         },
         {
             output: Item.of('bloodmagic:dungeon_pillar_center', 2),
             pattern: ['A', 'A'],
             key: {
-                A: 'bloodmagic:dungeon_stone'
+                A: 'bloodmagic:dungeon_stone',
             },
-            id: `${id_prefix}bloodmagic/dungeon_pillar_center`
+            id: `${id_prefix}bloodmagic/dungeon_pillar_center`,
         },
         {
             output: Item.of('bloodmagic:dungeon_eye', 1),
             pattern: [' B ', 'BAB', ' B '],
             key: {
                 A: 'bloodmagic:dungeon_stone',
-                B: '#bloodmagic:crystals/demon'
+                B: '#bloodmagic:crystals/demon',
             },
-            id: `${id_prefix}bloodmagic/dungeon_eye`
+            id: `${id_prefix}bloodmagic/dungeon_eye`,
         },
         {
             output: Item.of('bloodmagic:dungeon_polished_wall', 6),
             pattern: ['AAA', 'AAA'],
             key: {
-                A: 'bloodmagic:dungeon_polished'
+                A: 'bloodmagic:dungeon_polished',
             },
-            id: `${id_prefix}bloodmagic/dungeon_polished_wall`
+            id: `${id_prefix}bloodmagic/dungeon_polished_wall`,
         },
         {
             output: Item.of('bloodmagic:dungeon_tile', 4),
             pattern: ['AA', 'AA'],
             key: {
-                A: 'bloodmagic:dungeon_brick1'
+                A: 'bloodmagic:dungeon_brick1',
             },
-            id: `${id_prefix}bloodmagic/dungeon_tile`
+            id: `${id_prefix}bloodmagic/dungeon_tile`,
         },
         {
             output: Item.of('bloodmagic:dungeon_tile_slab', 6),
             pattern: ['AAA'],
             key: {
-                A: 'bloodmagic:dungeon_tile'
+                A: 'bloodmagic:dungeon_tile',
             },
-            id: `${id_prefix}bloodmagic/dungeon_tile_slab`
+            id: `${id_prefix}bloodmagic/dungeon_tile_slab`,
         },
         {
             output: Item.of('bloodmagic:dungeon_brick_slab', 6),
             pattern: ['AAA'],
             key: {
-                A: 'bloodmagic:dungeon_brick1'
+                A: 'bloodmagic:dungeon_brick1',
             },
-            id: `${id_prefix}bloodmagic/dungeon_brick_slab`
+            id: `${id_prefix}bloodmagic/dungeon_brick_slab`,
         },
         {
             output: Item.of('bloodmagic:dungeon_brick_wall', 6),
             pattern: ['AAA', 'AAA'],
             key: {
-                A: 'bloodmagic:dungeon_brick1'
+                A: 'bloodmagic:dungeon_brick1',
             },
-            id: `${id_prefix}bloodmagic/dungeon_brick_wall`
+            id: `${id_prefix}bloodmagic/dungeon_brick_wall`,
         },
         {
             output: 'bloodmagic:dungeon_polished_gate',
             pattern: ['BAB', 'BAB'],
             key: {
                 A: 'bloodmagic:dungeon_polished',
-                B: 'minecraft:stick'
+                B: 'minecraft:stick',
             },
-            id: `${id_prefix}bloodmagic/dungeon_polished_gate`
+            id: `${id_prefix}bloodmagic/dungeon_polished_gate`,
         },
         {
             output: 'bloodmagic:dungeon_brick_gate',
             pattern: ['BAB', 'BAB'],
             key: {
                 A: 'bloodmagic:dungeon_brick1',
-                B: 'minecraft:stick'
+                B: 'minecraft:stick',
             },
-            id: `${id_prefix}bloodmagic/dungeon_brick_gate`
+            id: `${id_prefix}bloodmagic/dungeon_brick_gate`,
         },
         {
             output: Item.of('projectvibrantjourneys:bones', 8),
             pattern: ['AAA', 'A A', 'AAA'],
             key: {
-                A: 'minecraft:bone'
+                A: 'minecraft:bone',
             },
-            id: `${id_prefix}projectvibrantjourneys/bones`
+            id: `${id_prefix}projectvibrantjourneys/bones`,
         },
         {
             output: Item.of('projectvibrantjourneys:charred_bones', 8),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'minecraft:bone',
-                B: 'minecraft:charcoal'
+                B: 'minecraft:charcoal',
             },
-            id: `${id_prefix}projectvibrantjourneys/charred_bones`
+            id: `${id_prefix}projectvibrantjourneys/charred_bones`,
         },
         {
             output: Item.of('projectvibrantjourneys:seashells', 8),
@@ -186,9 +186,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:prismarine_shard',
                 B: 'minecraft:nautilus_shell',
-                C: 'minecraft:prismarine_crystals'
+                C: 'minecraft:prismarine_crystals',
             },
-            id: `${id_prefix}projectvibrantjourneys/seashells`
+            id: `${id_prefix}projectvibrantjourneys/seashells`,
         },
         {
             output: 'tetra:hammer_base',
@@ -196,9 +196,9 @@ onEvent('recipes', (event) => {
             key: {
                 L: '#forge:ingots/steel',
                 X: '#forge:circuits/basic',
-                C: '#forge:tools/crafting_hammer'
+                C: '#forge:tools/crafting_hammer',
             },
-            id: `${id_prefix}tetra/hammer_base`
+            id: `${id_prefix}tetra/hammer_base`,
         },
         {
             output: 'tetra:core_extractor',
@@ -206,18 +206,18 @@ onEvent('recipes', (event) => {
             key: {
                 L: '#forge:ingots/steel',
                 X: '#forge:circuits/basic',
-                C: 'industrialforegoing:fluid_extractor'
+                C: 'industrialforegoing:fluid_extractor',
             },
-            id: `${id_prefix}tetra/core_extractor`
+            id: `${id_prefix}tetra/core_extractor`,
         },
         {
             output: 'minecraft:hopper',
             pattern: ['ABA', 'ABA', ' A '],
             key: {
                 A: '#forge:ingots/iron',
-                B: '#minecraft:logs'
+                B: '#minecraft:logs',
             },
-            id: `${id_prefix}minecraft/hopper`
+            id: `${id_prefix}minecraft/hopper`,
         },
         {
             output: 'refinedstorageaddons:wireless_crafting_grid',
@@ -226,9 +226,9 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: 'refinedstorage:range_upgrade',
                 C: 'refinedstorage:wireless_grid',
-                D: 'minecraft:crafting_table'
+                D: 'minecraft:crafting_table',
             },
-            id: `${id_prefix}refinedstorageaddons/wireless_crafting_grid_from_wireless_grid`
+            id: `${id_prefix}refinedstorageaddons/wireless_crafting_grid_from_wireless_grid`,
         },
         {
             output: 'simplefarming:fish_and_chips',
@@ -236,98 +236,98 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:crops/potato',
                 B: '#forge:grain',
-                C: 'aquaculture:fish_fillet_cooked'
+                C: 'aquaculture:fish_fillet_cooked',
             },
-            id: `${id_prefix}simplefarming/fish_and_chips`
+            id: `${id_prefix}simplefarming/fish_and_chips`,
         },
         {
             output: 'minecraft:tube_coral_block',
             pattern: ['AA', 'AA'],
             key: {
-                A: 'minecraft:tube_coral_fan'
+                A: 'minecraft:tube_coral_fan',
             },
-            id: `${id_prefix}minecraft/tube_coral_block_from_fan`
+            id: `${id_prefix}minecraft/tube_coral_block_from_fan`,
         },
         {
             output: 'minecraft:brain_coral_block',
             pattern: ['AA', 'AA'],
             key: {
-                A: 'minecraft:brain_coral_fan'
+                A: 'minecraft:brain_coral_fan',
             },
-            id: `${id_prefix}minecraft/brain_coral_block_from_fan`
+            id: `${id_prefix}minecraft/brain_coral_block_from_fan`,
         },
         {
             output: 'minecraft:bubble_coral_block',
             pattern: ['AA', 'AA'],
             key: {
-                A: 'minecraft:bubble_coral_fan'
+                A: 'minecraft:bubble_coral_fan',
             },
-            id: `${id_prefix}minecraft/bubble_coral_block_from_fan`
+            id: `${id_prefix}minecraft/bubble_coral_block_from_fan`,
         },
         {
             output: 'minecraft:fire_coral_block',
             pattern: ['AA', 'AA'],
             key: {
-                A: 'minecraft:fire_coral_fan'
+                A: 'minecraft:fire_coral_fan',
             },
-            id: `${id_prefix}minecraft/fire_coral_block_from_fan`
+            id: `${id_prefix}minecraft/fire_coral_block_from_fan`,
         },
         {
             output: 'minecraft:horn_coral_block',
             pattern: ['AA', 'AA'],
             key: {
-                A: 'minecraft:horn_coral_fan'
+                A: 'minecraft:horn_coral_fan',
             },
-            id: `${id_prefix}minecraft/horn_coral_block_from_fan`
+            id: `${id_prefix}minecraft/horn_coral_block_from_fan`,
         },
         {
             output: 'minecraft:tube_coral_block',
             pattern: ['AA', 'AA'],
             key: {
-                A: 'minecraft:tube_coral'
+                A: 'minecraft:tube_coral',
             },
-            id: `${id_prefix}minecraft/tube_coral_block`
+            id: `${id_prefix}minecraft/tube_coral_block`,
         },
         {
             output: 'minecraft:brain_coral_block',
             pattern: ['AA', 'AA'],
             key: {
-                A: 'minecraft:brain_coral'
+                A: 'minecraft:brain_coral',
             },
-            id: `${id_prefix}minecraft/brain_coral_block`
+            id: `${id_prefix}minecraft/brain_coral_block`,
         },
         {
             output: 'minecraft:bubble_coral_block',
             pattern: ['AA', 'AA'],
             key: {
-                A: 'minecraft:bubble_coral'
+                A: 'minecraft:bubble_coral',
             },
-            id: `${id_prefix}minecraft/bubble_coral_block`
+            id: `${id_prefix}minecraft/bubble_coral_block`,
         },
         {
             output: 'minecraft:fire_coral_block',
             pattern: ['AA', 'AA'],
             key: {
-                A: 'minecraft:fire_coral'
+                A: 'minecraft:fire_coral',
             },
-            id: `${id_prefix}minecraft/fire_coral_block`
+            id: `${id_prefix}minecraft/fire_coral_block`,
         },
         {
             output: 'minecraft:horn_coral_block',
             pattern: ['AA', 'AA'],
             key: {
-                A: 'minecraft:horn_coral'
+                A: 'minecraft:horn_coral',
             },
-            id: `${id_prefix}minecraft/horn_coral_block`
+            id: `${id_prefix}minecraft/horn_coral_block`,
         },
         {
             output: Item.of('minecraft:ladder', 4),
             pattern: ['A A', 'ABA', 'A A'],
             key: {
                 A: '#forge:rods/wooden',
-                B: '#enigmatica:ladder_planks'
+                B: '#enigmatica:ladder_planks',
             },
-            id: `${id_prefix}minecraft/ladder`
+            id: `${id_prefix}minecraft/ladder`,
         },
         {
             output: 'tetra:combustion_chamber',
@@ -335,106 +335,106 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'mekanism:superheating_element',
                 B: 'pneumaticcraft:heat_sink',
-                C: 'mekanism:ultimate_thermodynamic_conductor'
+                C: 'mekanism:ultimate_thermodynamic_conductor',
             },
-            id: `${id_prefix}tetra/combustion_chamber`
+            id: `${id_prefix}tetra/combustion_chamber`,
         },
         {
             output: Item.of('byg:embur_hyphae', 3),
             pattern: ['AA', 'AA'],
             key: {
-                A: 'byg:embur_pedu'
+                A: 'byg:embur_pedu',
             },
-            id: `${id_prefix}byg/embur_hyphae`
+            id: `${id_prefix}byg/embur_hyphae`,
         },
         {
             output: Item.of('byg:pollen_block', 1),
             pattern: ['AA', 'AA'],
             key: {
-                A: 'byg:pollen_dust'
+                A: 'byg:pollen_dust',
             },
-            id: `${id_prefix}byg/pollen_dust`
+            id: `${id_prefix}byg/pollen_dust`,
         },
         {
             output: Item.of('quark:turf', 1),
             pattern: ['A', 'A'],
             key: {
-                A: 'quark:turf_slab'
+                A: 'quark:turf_slab',
             },
-            id: `${id_prefix}quark/turf_from_slab`
+            id: `${id_prefix}quark/turf_from_slab`,
         },
         {
             output: Item.of('thermal:white_rockwool', 8),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: '#enigmatica:washables/rockwool',
-                B: 'minecraft:water_bucket'
+                B: 'minecraft:water_bucket',
             },
-            id: `${id_prefix}thermal/white_rockwool_from_washing`
+            id: `${id_prefix}thermal/white_rockwool_from_washing`,
         },
         {
             output: 'mekanism:block_refined_obsidian',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: '#forge:ingots/refined_obsidian'
+                A: '#forge:ingots/refined_obsidian',
             },
-            id: `${id_prefix}refined_obsidian_block_from_ingots`
+            id: `${id_prefix}refined_obsidian_block_from_ingots`,
         },
         {
             output: 'mekanism:ingot_refined_obsidian',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: '#forge:nuggets/refined_obsidian'
+                A: '#forge:nuggets/refined_obsidian',
             },
-            id: `${id_prefix}refined_obsidian_ingot_from_nuggets`
+            id: `${id_prefix}refined_obsidian_ingot_from_nuggets`,
         },
         {
             output: 'mekanism:block_refined_glowstone',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: '#forge:ingots/refined_glowstone'
+                A: '#forge:ingots/refined_glowstone',
             },
-            id: `${id_prefix}refined_glowstone_block_from_ingots`
+            id: `${id_prefix}refined_glowstone_block_from_ingots`,
         },
         {
             output: 'mekanism:ingot_refined_glowstone',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: '#forge:nuggets/refined_glowstone'
+                A: '#forge:nuggets/refined_glowstone',
             },
-            id: `${id_prefix}refined_glowstone_ingot_from_nuggets`
+            id: `${id_prefix}refined_glowstone_ingot_from_nuggets`,
         },
         {
             output: 'thermal:gunpowder_block',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: '#forge:gunpowder'
+                A: '#forge:gunpowder',
             },
-            id: `${id_prefix}gunpowder_block`
+            id: `${id_prefix}gunpowder_block`,
         },
         {
             output: 'thermal:tar_block',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: '#forge:tar'
+                A: '#forge:tar',
             },
-            id: `${id_prefix}tar_block`
+            id: `${id_prefix}tar_block`,
         },
         {
             output: 'occultism:iesnium_block',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: '#forge:ingots/iesnium'
+                A: '#forge:ingots/iesnium',
             },
-            id: `${id_prefix}iesnium_block_from_ingots`
+            id: `${id_prefix}iesnium_block_from_ingots`,
         },
         {
             output: 'occultism:iesnium_ingot',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
-                A: '#forge:nuggets/iesnium'
+                A: '#forge:nuggets/iesnium',
             },
-            id: `${id_prefix}iesnium_ingot_from_nuggets`
+            id: `${id_prefix}iesnium_ingot_from_nuggets`,
         },
         {
             output: Item.of('morphtool:tool', {
@@ -459,8 +459,8 @@ onEvent('recipes', (event) => {
                     storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 },
                     fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 },
                     integratedtunnels: { id: 'integrateddynamics:wrench', Count: 1 },
-                    compactmachines: { id: 'compactmachines:personal_shrinking_device', Count: 1 }
-                }
+                    compactmachines: { id: 'compactmachines:personal_shrinking_device', Count: 1 },
+                },
             }),
             pattern: ['ABA', 'CFD', 'AEA'],
             key: {
@@ -469,10 +469,10 @@ onEvent('recipes', (event) => {
                 C: '#forge:gears/iron',
                 D: '#forge:gears/silver',
                 E: '#forge:gears/copper',
-                F: 'morphtool:tool'
+                F: 'morphtool:tool',
             },
-            id: `${id_prefix}morphtool/tool_filled`
-        }
+            id: `${id_prefix}morphtool/tool_filled`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -489,13 +489,13 @@ onEvent('recipes', (event) => {
         if (!Item.exists(chest)) {
             event
                 .shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
-                    A: wood.logBlock
+                    A: wood.logBlock,
                 })
                 .id(`${id_prefix}chest_from_${wood.logBlock.replace(':', '_')}`);
         } else {
             event
                 .shaped(Item.of(chest, 4), ['AAA', 'A A', 'AAA'], {
-                    A: wood.logBlock
+                    A: wood.logBlock,
                 })
                 .id(`${id_prefix}${chest.replace(':', '_')}_from_${wood.logBlock.replace(':', '_')}`);
         }
@@ -510,7 +510,7 @@ onEvent('recipes', (event) => {
             'watchful_aspen',
             'crustose',
             'sappy_maple',
-            'avocado'
+            'avocado',
         ];
 
         if (dupes.includes(wood.logType)) {
@@ -523,7 +523,7 @@ onEvent('recipes', (event) => {
         if (!Item.exists(craftingTable)) {
             event
                 .shaped('minecraft:crafting_table', ['AA', 'AA'], {
-                    A: wood.plankBlock
+                    A: wood.plankBlock,
                 })
                 .id(`${id_prefix}crafting_table_from_${wood.plankBlock.replace(':', '_')}`);
         }
@@ -532,7 +532,7 @@ onEvent('recipes', (event) => {
             event
                 .shaped(Item.of('minecraft:oak_sign'), ['AAA', 'AAA', ' B '], {
                     A: wood.plankBlock,
-                    B: '#forge:rods/wooden'
+                    B: '#forge:rods/wooden',
                 })
                 .id(`${id_prefix}oak_sign_from_${wood.plankBlock.replace(':', '_')}`);
         }
@@ -540,7 +540,7 @@ onEvent('recipes', (event) => {
         if (!chest_wood_type_blacklist.includes(wood.logType)) {
             event
                 .shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
-                    A: wood.plankBlock
+                    A: wood.plankBlock,
                 })
                 .id(`${id_prefix}chest_from_${wood.plankBlock.replace(':', '_')}`);
         }
@@ -555,7 +555,7 @@ onEvent('recipes', (event) => {
                         .shaped(Item.of(tree.trunk, 8), ['BCB', 'CAC', 'BCB'], {
                             A: tree.sapling,
                             C: 'resourcefulbees:forest_honeycomb',
-                            B: 'resourcefulbees:wax'
+                            B: 'resourcefulbees:wax',
                         })
                         .id(`${id_prefix}${tree.trunk.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
                 }
@@ -564,7 +564,7 @@ onEvent('recipes', (event) => {
                         .shaped(Item.of(tree.sapling, 4), [' C ', 'BAB', ' C '], {
                             A: tree.sapling,
                             C: 'resourcefulbees:forest_honeycomb',
-                            B: 'resourcefulbees:wax'
+                            B: 'resourcefulbees:wax',
                         })
                         .id(`${id_prefix}${tree.sapling.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
                 }
@@ -573,7 +573,7 @@ onEvent('recipes', (event) => {
                         .shaped(Item.of(tree.leaf, 16), ['   ', 'BAC', '   '], {
                             A: tree.sapling,
                             C: 'resourcefulbees:forest_honeycomb',
-                            B: 'resourcefulbees:wax'
+                            B: 'resourcefulbees:wax',
                         })
                         .id(`${id_prefix}${tree.leaf.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
                 }
@@ -589,7 +589,7 @@ onEvent('recipes', (event) => {
             .shaped(Item.of(`minecraft:${color}_dye`, 8), ['BCB', 'CAC', 'BCB'], {
                 A: ingredients,
                 C: 'resourcefulbees:rgbee_honeycomb',
-                B: 'resourcefulbees:wax'
+                B: 'resourcefulbees:wax',
             })
             .id(`${id_prefix}${color}_dye_from_rgbee_honeycomb`);
 
@@ -598,7 +598,7 @@ onEvent('recipes', (event) => {
             event
                 .shaped(Item.of(`thermal:${color}_rockwool`, 8), ['AAA', 'ABA', 'AAA'], {
                     A: 'thermal:white_rockwool',
-                    B: `#forge:dyes/${color}`
+                    B: `#forge:dyes/${color}`,
                 })
                 .id(`${id_prefix}${color}_rockwool_batch`);
 
@@ -606,7 +606,7 @@ onEvent('recipes', (event) => {
             event
                 .shaped(Item.of(`atum:ceramic_${color}`, 8), ['AAA', 'ABA', 'AAA'], {
                     A: 'atum:ceramic_white',
-                    B: `#forge:dyes/${color}`
+                    B: `#forge:dyes/${color}`,
                 })
                 .id(`${id_prefix}${color}_ceramic_batch`);
         }

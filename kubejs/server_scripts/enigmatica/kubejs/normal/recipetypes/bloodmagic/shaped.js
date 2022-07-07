@@ -11,10 +11,10 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: '#forge:stone',
-                B: '#bloodmagic:crystals/demon'
+                B: '#bloodmagic:crystals/demon',
             },
-            id: `${id_prefix}dungeon_stone`
-        }
+            id: `${id_prefix}dungeon_stone`,
+        },
     ];
 
     recipes.forEach((recipe) => {

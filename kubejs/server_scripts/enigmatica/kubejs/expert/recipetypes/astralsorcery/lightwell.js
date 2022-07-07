@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
             productionMultiplier: 100.0,
             shatterMultiplier: 0.1,
             color: 16056324,
-            id: `${id_prefix}life_essence`
+            id: `${id_prefix}life_essence`,
         },
         {
             input: { item: 'astralsorcery:resonating_gem' },
@@ -22,8 +22,8 @@ onEvent('recipes', (event) => {
             productionMultiplier: 50.0,
             shatterMultiplier: 100.0,
             color: -16734209,
-            id: 'astralsorcery:lightwell/starlight_resonating_gem'
-        }
+            id: 'astralsorcery:lightwell/starlight_resonating_gem',
+        },
     ];
 
     recipes.forEach((recipe) => {

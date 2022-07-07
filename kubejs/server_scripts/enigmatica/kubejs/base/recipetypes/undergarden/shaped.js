@@ -8,10 +8,10 @@ onEvent('recipes', (event) => {
                 B: '#undergarden:mushrooms',
                 C: 'undergarden:glowing_kelp',
                 D: 'undergarden:gloomgourd',
-                E: '#forge:eggs'
+                E: '#forge:eggs',
             },
-            id: 'undergarden:gloomgourd_pie'
-        }
+            id: 'undergarden:gloomgourd_pie',
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -11,15 +11,15 @@ onEvent('recipes', (event) => {
             output: 'botania:manasteel_ingot',
             count: 1,
             mana: 2000,
-            id: `${id_prefix}manasteel_ingot`
+            id: `${id_prefix}manasteel_ingot`,
         },
         {
             input: 'resourcefulbees:mana_honeycomb_block',
             output: 'botania:manasteel_block',
             count: 1,
             mana: 19000,
-            id: `${id_prefix}manasteel_block`
-        }
+            id: `${id_prefix}manasteel_block`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -27,13 +27,13 @@ onEvent('recipes', (event) => {
             type: 'botania:mana_infusion',
             input: Ingredient.of(recipe.input).toJson(),
             output: { item: recipe.output, count: recipe.count },
-            mana: recipe.mana
+            mana: recipe.mana,
         };
 
         if (recipe.catalyst) {
             constructed_recipe.catalyst = {
                 type: 'block',
-                block: recipe.catalyst
+                block: recipe.catalyst,
             };
         }
 

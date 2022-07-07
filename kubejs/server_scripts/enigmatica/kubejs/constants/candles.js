@@ -22,5 +22,5 @@ const candles = [
     'quark:yellow_candle',
     'supplementaries:candelabra',
     'supplementaries:candelabra_silver',
-    'supplementaries:candle_holder'
+    'supplementaries:candle_holder',
 ];

@@ -6,8 +6,8 @@ onEvent('recipes', (event) => {
         {
             input: 'tconstruct:blazing_blood',
             energy: 1000000,
-            id: `${id_prefix}blazing_blood`
-        }
+            id: `${id_prefix}blazing_blood`,
+        },
     ];
     recipes.forEach((recipe) => {
         event.recipes.thermal

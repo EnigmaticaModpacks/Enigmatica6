@@ -8,6 +8,6 @@ onEvent('item.tags', (event) => {
         'quark:bottled_cloud',
         'kubejs:partial_alloybrick',
         'kubejs:partial_blastbrick',
-        'kubejs:partial_cokebrick'
+        'kubejs:partial_cokebrick',
     ]);
 });

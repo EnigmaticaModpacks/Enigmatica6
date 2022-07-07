@@ -4,18 +4,18 @@ onEvent('recipes', (event) => {
         {
             output: 'emendatusenigmatica:uranium_chunk',
             weight: 6,
-            id: `${id_prefix}uranium_chunk`
+            id: `${id_prefix}uranium_chunk`,
         },
         {
             output: 'emendatusenigmatica:fluorite_chunk',
             weight: 1,
-            id: `${id_prefix}fluorite_chunk`
+            id: `${id_prefix}fluorite_chunk`,
         },
         {
             output: 'emendatusenigmatica:sulfur_chunk',
             weight: 1,
-            id: `${id_prefix}sulfur_chunk`
-        }
+            id: `${id_prefix}sulfur_chunk`,
+        },
     ];
 
     recipes.forEach((recipe) => {

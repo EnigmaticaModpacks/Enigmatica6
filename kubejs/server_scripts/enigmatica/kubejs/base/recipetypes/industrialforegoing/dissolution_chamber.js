@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
             processingTime: 50,
             outputItem: { item: 'minecraft:glass_pane', count: 1 },
             outputFluid: 'industrialforegoing:essence',
-            outputFluidAmount: 1000
+            outputFluidAmount: 1000,
         },
         {
             inputs: ['minecraft:glass_pane'],
@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
             processingTime: 50,
             outputItem: { item: 'minecraft:glass_pane', count: 1 },
             outputFluid: 'cofh_core:experience',
-            outputFluidAmount: 1000
+            outputFluidAmount: 1000,
         },
         {
             inputs: ['minecraft:glass_pane'],
@@ -48,7 +48,7 @@ onEvent('recipes', (event) => {
             processingTime: 50,
             outputItem: { item: 'minecraft:glass_pane', count: 1 },
             outputFluid: 'pneumaticcraft:memory_essence',
-            outputFluidAmount: 1000
+            outputFluidAmount: 1000,
         },
         {
             inputs: ['minecraft:glass_pane'],
@@ -57,7 +57,7 @@ onEvent('recipes', (event) => {
             processingTime: 50,
             outputItem: { item: 'minecraft:glass_pane', count: 1 },
             outputFluid: 'sophisticatedbackpacks:xp_still',
-            outputFluidAmount: 1000
+            outputFluidAmount: 1000,
         },
         {
             inputs: [
@@ -68,15 +68,15 @@ onEvent('recipes', (event) => {
                 'resourcefulbees:iron_honeycomb_block', // right
                 'resourcefulbees:iron_honey_block', // bottom left
                 '#industrialforegoing:machine_frame/advanced', // bottom
-                'resourcefulbees:iron_honey_block' // bottom right
+                'resourcefulbees:iron_honey_block', // bottom right
             ],
             inputFluid: 'industrialforegoing:pink_slime',
             inputFluidAmount: 1000,
             processingTime: 600,
             outputItem: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:industrious_bee' }).toJson(),
             outputFluid: '',
-            outputFluidAmount: 0
-        }
+            outputFluidAmount: 0,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -92,7 +92,7 @@ onEvent('recipes', (event) => {
             inputFluid: `{FluidName:"${recipe.inputFluid}",Amount:${recipe.inputFluidAmount}}`,
             processingTime: recipe.processingTime,
             output: recipe.outputItem,
-            outputFluid: `{FluidName:"${recipe.outputFluid}",Amount:${recipe.outputFluidAmount}}`
+            outputFluid: `{FluidName:"${recipe.outputFluid}",Amount:${recipe.outputFluidAmount}}`,
         });
 
         if (recipe.id) {

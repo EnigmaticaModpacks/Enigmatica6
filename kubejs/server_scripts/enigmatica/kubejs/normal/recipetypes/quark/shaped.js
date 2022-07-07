@@ -11,10 +11,10 @@ onEvent('recipes', (event) => {
             pattern: ['B', 'A', 'A'],
             key: {
                 A: '#enigmatica:candle_materials',
-                B: '#forge:string'
+                B: '#forge:string',
             },
-            id: `${id_prefix}white_candle`
-        }
+            id: `${id_prefix}white_candle`,
+        },
     ];
 
     recipes.forEach((recipe) => {

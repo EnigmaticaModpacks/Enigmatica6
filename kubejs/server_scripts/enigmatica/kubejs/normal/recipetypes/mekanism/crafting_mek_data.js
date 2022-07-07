@@ -11,9 +11,9 @@ onEvent('recipes', (event) => {
                 P: { item: 'mekanism:advanced_combining_factory' },
                 C: { tag: 'forge:circuits/elite' },
                 I: { tag: 'forge:ingots/gold_bronze' },
-                A: { tag: 'mekanism:alloys/reinforced' }
+                A: { tag: 'mekanism:alloys/reinforced' },
             },
-            id: 'mekanism:factory/elite/combining'
+            id: 'mekanism:factory/elite/combining',
         },
         {
             output: 'mekanism:elite_enriching_factory',
@@ -22,9 +22,9 @@ onEvent('recipes', (event) => {
                 P: { item: 'mekanism:advanced_enriching_factory' },
                 C: { tag: 'forge:circuits/elite' },
                 I: { tag: 'forge:ingots/gold_bronze' },
-                A: { tag: 'mekanism:alloys/reinforced' }
+                A: { tag: 'mekanism:alloys/reinforced' },
             },
-            id: 'mekanism:factory/elite/enriching'
+            id: 'mekanism:factory/elite/enriching',
         },
         {
             output: 'mekanism:elite_crushing_factory',
@@ -33,9 +33,9 @@ onEvent('recipes', (event) => {
                 P: { item: 'mekanism:advanced_crushing_factory' },
                 C: { tag: 'forge:circuits/elite' },
                 I: { tag: 'forge:ingots/gold_bronze' },
-                A: { tag: 'mekanism:alloys/reinforced' }
+                A: { tag: 'mekanism:alloys/reinforced' },
             },
-            id: 'mekanism:factory/elite/crushing'
+            id: 'mekanism:factory/elite/crushing',
         },
         {
             output: 'mekanism:elite_compressing_factory',
@@ -44,9 +44,9 @@ onEvent('recipes', (event) => {
                 P: { item: 'mekanism:advanced_compressing_factory' },
                 C: { tag: 'forge:circuits/elite' },
                 I: { tag: 'forge:ingots/gold_bronze' },
-                A: { tag: 'mekanism:alloys/reinforced' }
+                A: { tag: 'mekanism:alloys/reinforced' },
             },
-            id: 'mekanism:factory/elite/compressing'
+            id: 'mekanism:factory/elite/compressing',
         },
         {
             output: 'mekanism:elite_smelting_factory',
@@ -55,9 +55,9 @@ onEvent('recipes', (event) => {
                 P: { item: 'mekanism:advanced_smelting_factory' },
                 C: { tag: 'forge:circuits/elite' },
                 I: { tag: 'forge:ingots/gold_bronze' },
-                A: { tag: 'mekanism:alloys/reinforced' }
+                A: { tag: 'mekanism:alloys/reinforced' },
             },
-            id: 'mekanism:factory/elite/smelting'
+            id: 'mekanism:factory/elite/smelting',
         },
         {
             output: 'mekanism:elite_sawing_factory',
@@ -66,9 +66,9 @@ onEvent('recipes', (event) => {
                 P: { item: 'mekanism:advanced_sawing_factory' },
                 C: { tag: 'forge:circuits/elite' },
                 I: { tag: 'forge:ingots/gold_bronze' },
-                A: { tag: 'mekanism:alloys/reinforced' }
+                A: { tag: 'mekanism:alloys/reinforced' },
             },
-            id: 'mekanism:factory/elite/sawing'
+            id: 'mekanism:factory/elite/sawing',
         },
         {
             output: 'mekanism:elite_purifying_factory',
@@ -77,9 +77,9 @@ onEvent('recipes', (event) => {
                 P: { item: 'mekanism:advanced_purifying_factory' },
                 C: { tag: 'forge:circuits/elite' },
                 I: { tag: 'forge:ingots/gold_bronze' },
-                A: { tag: 'mekanism:alloys/reinforced' }
+                A: { tag: 'mekanism:alloys/reinforced' },
             },
-            id: 'mekanism:factory/elite/purifying'
+            id: 'mekanism:factory/elite/purifying',
         },
         {
             output: 'mekanism:elite_injecting_factory',
@@ -88,9 +88,9 @@ onEvent('recipes', (event) => {
                 P: { item: 'mekanism:advanced_injecting_factory' },
                 C: { tag: 'forge:circuits/elite' },
                 I: { tag: 'forge:ingots/gold_bronze' },
-                A: { tag: 'mekanism:alloys/reinforced' }
+                A: { tag: 'mekanism:alloys/reinforced' },
             },
-            id: 'mekanism:factory/elite/injecting'
+            id: 'mekanism:factory/elite/injecting',
         },
         {
             output: 'mekanism:elite_infusing_factory',
@@ -99,10 +99,10 @@ onEvent('recipes', (event) => {
                 P: { item: 'mekanism:advanced_infusing_factory' },
                 C: { tag: 'forge:circuits/elite' },
                 I: { tag: 'forge:ingots/gold_bronze' },
-                A: { tag: 'mekanism:alloys/reinforced' }
+                A: { tag: 'mekanism:alloys/reinforced' },
             },
-            id: 'mekanism:factory/elite/infusing'
-        }
+            id: 'mekanism:factory/elite/infusing',
+        },
     ];
     recipes.forEach((recipe) => {
         event
@@ -110,7 +110,7 @@ onEvent('recipes', (event) => {
                 type: 'mekanism:mek_data',
                 result: Item.of(recipe.output).toJson(),
                 pattern: recipe.pattern,
-                key: recipe.key
+                key: recipe.key,
             })
             .id(recipe.id);
     });

@@ -27,7 +27,7 @@ onEvent('block.tags', (event) => {
         'immersivepetroleum:distillationtower',
         'immersivepetroleum:cokerunit',
         'immersivepetroleum:pumpjack',
-        'xnet:facade'
+        'xnet:facade',
     ];
     event.get('buildinggadgets:blacklist/building').add(blocks);
     event.get('buildinggadgets:blacklist/copy_paste').add(blocks);

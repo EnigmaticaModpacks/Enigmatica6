@@ -18,10 +18,10 @@ onEvent('recipes', (event) => {
                     Fluid: { FluidName: 'biofuel', Amount: 0 },
                     Special: 0,
                     Selected: 'ARTIFACT',
-                    Loyalty: 0
+                    Loyalty: 0,
                 }),
                 duration: 2500000,
-                id: `${id_prefix}infinity_trident`
+                id: `${id_prefix}infinity_trident`,
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -33,10 +33,10 @@ onEvent('recipes', (event) => {
                     Fluid: { FluidName: 'biofuel', Amount: 0 },
                     Special: 0,
                     Selected: 'ARTIFACT',
-                    Beheading: 0
+                    Beheading: 0,
                 }),
                 duration: 2500000,
-                id: `${id_prefix}infinity_hammer`
+                id: `${id_prefix}infinity_hammer`,
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -47,10 +47,10 @@ onEvent('recipes', (event) => {
                     Special: 0,
                     Selected: 'ARTIFACT',
                     Energy: 9223372036854775807,
-                    Fluid: { FluidName: 'biofuel', Amount: 0 }
+                    Fluid: { FluidName: 'biofuel', Amount: 0 },
                 }),
                 duration: 2500000,
-                id: `${id_prefix}infinity_drill`
+                id: `${id_prefix}infinity_drill`,
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -61,10 +61,10 @@ onEvent('recipes', (event) => {
                     Special: 0,
                     Selected: 'ARTIFACT',
                     Energy: 9223372036854775807,
-                    Fluid: { FluidName: 'biofuel', Amount: 0 }
+                    Fluid: { FluidName: 'biofuel', Amount: 0 },
                 }),
                 duration: 2500000,
-                id: `${id_prefix}infinity_saw`
+                id: `${id_prefix}infinity_saw`,
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -74,10 +74,10 @@ onEvent('recipes', (event) => {
                     CanCharge: 1,
                     Special: 0,
                     Selected: 'ARTIFACT',
-                    Energy: 9223372036854775807
+                    Energy: 9223372036854775807,
                 }),
                 duration: 2500000,
-                id: `${id_prefix}infinity_backpack`
+                id: `${id_prefix}infinity_backpack`,
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -88,10 +88,10 @@ onEvent('recipes', (event) => {
                     Special: 0,
                     Selected: 'ARTIFACT',
                     Energy: 9223372036854775807,
-                    Fluid: { FluidName: 'biofuel', Amount: 0 }
+                    Fluid: { FluidName: 'biofuel', Amount: 0 },
                 }),
                 duration: 2500000,
-                id: `${id_prefix}infinity_nuke`
+                id: `${id_prefix}infinity_nuke`,
                 //Approximately 100 billion RF to complete the craft.
             },
             {
@@ -103,13 +103,13 @@ onEvent('recipes', (event) => {
                     Fluid: { FluidName: 'biofuel', Amount: 0 },
                     Special: 0,
                     Selected: 'ARTIFACT',
-                    Plunger: 0
+                    Plunger: 0,
                 }),
                 duration: 2500000,
-                id: `${id_prefix}infinity_launcher`
+                id: `${id_prefix}infinity_launcher`,
                 //Approximately 100 billion RF to complete the craft.
-            }
-        ]
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {

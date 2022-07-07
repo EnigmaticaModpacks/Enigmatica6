@@ -3,12 +3,12 @@ onEvent('item.tags', (event) => {
         substitutionPairs = [
             {
                 base: 'gold',
-                substitutes: ['brass', 'bronze', 'copper', 'silver', 'tin', 'diamond', 'invar']
+                substitutes: ['brass', 'bronze', 'copper', 'silver', 'tin', 'diamond', 'invar'],
             },
             {
                 base: 'iron',
-                substitutes: ['aluminum', 'copper', 'lead', 'tin', 'brass', 'invar', 'osmium']
-            }
+                substitutes: ['aluminum', 'copper', 'lead', 'tin', 'brass', 'invar', 'osmium'],
+            },
         ];
     types.forEach((type) => {
         substitutionPairs.forEach((substitutionPair) => {

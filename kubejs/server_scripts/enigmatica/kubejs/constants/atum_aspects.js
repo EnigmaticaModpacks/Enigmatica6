@@ -15,5 +15,5 @@ const atum_aspects = [
     'ptah',
     'anubis',
     'osiris',
-    'anput'
+    'anput',
 ];

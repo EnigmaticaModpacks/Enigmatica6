@@ -5,15 +5,15 @@ onEvent('recipes', (event) => {
             ingredients: [
                 { item: 'mekanism:energy_tablet' },
                 { item: 'powah:capacitor_blazing' },
-                { item: 'powah:capacitor_blazing' }
+                { item: 'powah:capacitor_blazing' },
             ],
             energy: 250000,
             result: {
                 item: 'tetra:magmatic_cell',
-                count: 1
+                count: 1,
             },
-            id: `${id_prefix}magmatic_cell`
-        }
+            id: `${id_prefix}magmatic_cell`,
+        },
     ];
 
     recipes.forEach((recipe) => {

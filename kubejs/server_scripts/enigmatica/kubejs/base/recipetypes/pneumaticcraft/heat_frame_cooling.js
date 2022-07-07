@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
             input: { type: 'pneumaticcraft:fluid', tag: honeyVariety, amount: 1000 },
             output: { item: output },
             max_temp: 273,
-            id: `${id_prefix}${output.split(':')[1]}`
+            id: `${id_prefix}${output.split(':')[1]}`,
         });
     });
 
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                 input: recipe.input,
                 max_temp: recipe.max_temp,
                 result: recipe.output,
-                bonus_output: recipe.bonus_output
+                bonus_output: recipe.bonus_output,
             })
             .id(recipe.id);
     });

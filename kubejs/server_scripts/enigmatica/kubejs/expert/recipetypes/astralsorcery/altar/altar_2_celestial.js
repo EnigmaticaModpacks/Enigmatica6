@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
                     hasToBeAttuned: false,
                     hasToBeCelestial: true,
                     canBeAttuned: true,
-                    canBeCelestialCrystal: true
+                    canBeCelestialCrystal: true,
                 },
                 B: { item: 'create:shadow_steel_casing' },
                 C: { item: 'eidolon:shadow_gem' },
@@ -32,7 +32,7 @@ onEvent('recipes', (event) => {
                 G: { item: 'bloodmagic:etherealslate' },
                 H: { tag: 'botania:runes/niflheim' },
                 J: { tag: 'botania:runes/alfheim' },
-                K: { tag: 'botania:runes/midgard' }
+                K: { tag: 'botania:runes/midgard' },
             },
             altar_type: 2,
             duration: 400,
@@ -46,9 +46,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:upgrade_altar',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/altar_radiance'
+            id: 'astralsorcery:altar/altar_radiance',
         },
         {
             output: Item.of('apotheosis:endshelf', 1),
@@ -60,7 +60,7 @@ onEvent('recipes', (event) => {
                 D: { tag: 'botania:runes/nidavellir' },
                 E: { tag: 'forge:bookshelves' },
                 F: { item: 'betterendforge:eternal_crystal' },
-                G: { item: 'bloodmagic:reagentvoid' }
+                G: { item: 'bloodmagic:reagentvoid' },
             },
             altar_type: 2,
             duration: 200,
@@ -68,9 +68,9 @@ onEvent('recipes', (event) => {
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}endshelf`
+            id: `${id_prefix}endshelf`,
         },
         {
             output: Item.of('mythicbotany:mana_infuser', 1),
@@ -87,7 +87,7 @@ onEvent('recipes', (event) => {
                 I: { item: 'kubejs:firmament' },
                 J: { tag: 'botania:runes/asgard' },
                 K: { item: 'botania:glimmering_dreamwood' },
-                L: { tag: 'botania:runes/niflheim' }
+                L: { tag: 'botania:runes/niflheim' },
             },
             altar_type: 2,
             duration: 400,
@@ -97,9 +97,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}mana_infuser`
+            id: `${id_prefix}mana_infuser`,
         },
         {
             output: Item.of('botania:flight_tiara', '{variant:0}'),
@@ -110,14 +110,14 @@ onEvent('recipes', (event) => {
                     hasToBeAttuned: true,
                     hasToBeCelestial: false,
                     canBeAttuned: true,
-                    canBeCelestialCrystal: true
+                    canBeCelestialCrystal: true,
                 },
                 B: { item: 'botania:life_essence' },
                 C: { tag: 'botania:runes/mana' },
                 D: { item: 'magicfeather:magicfeather' },
                 E: { tag: 'forge:ingots/elementium' },
                 F: { item: 'bloodmagic:airsigil' },
-                G: { item: 'ars_nouveau:ritual_flight' }
+                G: { item: 'ars_nouveau:ritual_flight' },
             },
             altar_type: 2,
             duration: 400,
@@ -130,9 +130,9 @@ onEvent('recipes', (event) => {
                 'astralsorcery:upgrade_altar',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}flight_tiara`
+            id: `${id_prefix}flight_tiara`,
         },
         {
             output: Item.of('astralsorcery:colored_lens_regeneration', 3),
@@ -145,16 +145,16 @@ onEvent('recipes', (event) => {
                 S: { item: 'astralsorcery:stardust' },
                 A: { item: 'bloodmagic:holy_water_anointment_l' },
                 Q: { item: 'quark:pink_rune' },
-                L: { item: 'astralsorcery:glass_lens' }
+                L: { item: 'astralsorcery:glass_lens' },
             },
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/colored_lens_regeneration'
+            id: 'astralsorcery:altar/colored_lens_regeneration',
         },
         {
             output: Item.of('astralsorcery:colored_lens_damage', 3),
@@ -167,16 +167,16 @@ onEvent('recipes', (event) => {
                 S: { item: 'astralsorcery:stardust' },
                 A: { item: 'bloodmagic:melee_anointment_l' },
                 Q: { item: 'quark:red_rune' },
-                L: { item: 'astralsorcery:glass_lens' }
+                L: { item: 'astralsorcery:glass_lens' },
             },
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/colored_lens_damage'
+            id: 'astralsorcery:altar/colored_lens_damage',
         },
         {
             output: Item.of('astralsorcery:colored_lens_fire', 3),
@@ -189,16 +189,16 @@ onEvent('recipes', (event) => {
                 S: { item: 'astralsorcery:stardust' },
                 A: { item: 'bloodmagic:smelting_anointment_l' },
                 Q: { item: 'quark:orange_rune' },
-                L: { item: 'astralsorcery:glass_lens' }
+                L: { item: 'astralsorcery:glass_lens' },
             },
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/colored_lens_fire'
+            id: 'astralsorcery:altar/colored_lens_fire',
         },
         {
             output: Item.of('astralsorcery:colored_lens_break', 3),
@@ -211,16 +211,16 @@ onEvent('recipes', (event) => {
                 S: { item: 'astralsorcery:stardust' },
                 A: { item: 'bloodmagic:hidden_knowledge_anointment_l' },
                 Q: { item: 'quark:yellow_rune' },
-                L: { item: 'astralsorcery:glass_lens' }
+                L: { item: 'astralsorcery:glass_lens' },
             },
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/colored_lens_break'
+            id: 'astralsorcery:altar/colored_lens_break',
         },
         {
             output: Item.of('astralsorcery:colored_lens_growth', 3),
@@ -233,16 +233,16 @@ onEvent('recipes', (event) => {
                 S: { item: 'naturesaura:gold_powder' },
                 A: { item: 'bloodmagic:fortune_anointment_l' },
                 Q: { item: 'quark:lime_rune' },
-                L: { item: 'astralsorcery:glass_lens' }
+                L: { item: 'astralsorcery:glass_lens' },
             },
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/colored_lens_growth'
+            id: 'astralsorcery:altar/colored_lens_growth',
         },
         {
             output: Item.of('astralsorcery:colored_lens_push', 3),
@@ -255,16 +255,16 @@ onEvent('recipes', (event) => {
                 S: { item: 'astralsorcery:stardust' },
                 A: { item: 'bloodmagic:bow_velocity_anointment_l' },
                 Q: { item: 'quark:light_blue_rune' },
-                L: { item: 'astralsorcery:glass_lens' }
+                L: { item: 'astralsorcery:glass_lens' },
             },
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/colored_lens_push'
+            id: 'astralsorcery:altar/colored_lens_push',
         },
         {
             output: Item.of('astralsorcery:colored_lens_spectral', 3),
@@ -277,16 +277,16 @@ onEvent('recipes', (event) => {
                 S: { item: 'atum:ectoplasm' },
                 A: { item: 'bloodmagic:silk_touch_anointment_l' },
                 Q: { item: 'quark:purple_rune' },
-                L: { item: 'astralsorcery:glass_lens' }
+                L: { item: 'astralsorcery:glass_lens' },
             },
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: 'astralsorcery:altar/colored_lens_spectral'
+            id: 'astralsorcery:altar/colored_lens_spectral',
         },
         {
             output: Item.of('botania:elven_spreader'),
@@ -298,7 +298,7 @@ onEvent('recipes', (event) => {
                 D: { item: 'botania:glimmering_dreamwood' },
                 E: { item: 'botania:spark' },
                 F: { tag: 'forge:ingots/elementium' },
-                G: { item: 'astralsorcery:colored_lens_push' }
+                G: { item: 'astralsorcery:colored_lens_push' },
             },
             altar_type: 2,
             duration: 400,
@@ -308,10 +308,10 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:altar_default_sparkle',
                 'astralsorcery:built_in_effect_constellation_lines',
-                'astralsorcery:built_in_effect_attunement_sparkle'
+                'astralsorcery:built_in_effect_attunement_sparkle',
             ],
-            id: `${id_prefix}elven_spreader`
-        }
+            id: `${id_prefix}elven_spreader`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -323,7 +323,7 @@ onEvent('recipes', (event) => {
             pattern: recipe.pattern,
             key: recipe.key,
             output: [recipe.output.toResultJson()],
-            effects: recipe.effects
+            effects: recipe.effects,
         };
 
         if (recipe.relay_inputs) {

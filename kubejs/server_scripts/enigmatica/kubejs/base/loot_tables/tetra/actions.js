@@ -18,9 +18,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -32,9 +32,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -47,9 +47,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -62,14 +62,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/bolt_salvage.json',
@@ -89,9 +89,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -103,9 +103,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -118,9 +118,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -133,9 +133,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -148,9 +148,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -163,14 +163,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/earthpiercer_salvage.json',
@@ -189,14 +189,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/geode.json',
@@ -219,9 +219,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
                                     },
                                     {
                                         type: 'minecraft:item',
@@ -232,9 +232,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
                                     },
                                     {
                                         type: 'minecraft:item',
@@ -246,9 +246,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
                                     },
                                     {
                                         type: 'minecraft:item',
@@ -260,9 +260,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
                                     },
                                     {
                                         type: 'minecraft:item',
@@ -274,9 +274,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
                                     },
                                     {
                                         type: 'minecraft:item',
@@ -288,9 +288,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
                                     },
                                     {
                                         type: 'minecraft:item',
@@ -302,9 +302,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
                                     },
                                     {
                                         type: 'minecraft:item',
@@ -316,9 +316,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
                                     },
                                     {
                                         type: 'minecraft:item',
@@ -330,9 +330,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
                                     },
                                     {
                                         type: 'minecraft:item',
@@ -344,9 +344,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
                                     },
                                     {
                                         type: 'minecraft:item',
@@ -358,11 +358,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                                 function: 'minecraft:apply_bonus',
                                                 enchantment: 'minecraft:fortune',
                                                 formula: 'uniform_bonus_count',
-                                                parameters: { bonusMultiplier: 3 }
-                                            }
-                                        ]
-                                    }
-                                ]
+                                                parameters: { bonusMultiplier: 3 },
+                                            },
+                                        ],
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -372,9 +372,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                     {
                                         condition: 'tetra:random_chance_with_fortune',
                                         chance: 0.1,
-                                        fortuneMultiplier: 0.15
-                                    }
-                                ]
+                                        fortuneMultiplier: 0.15,
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -384,9 +384,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                     {
                                         condition: 'tetra:random_chance_with_fortune',
                                         chance: 0.1,
-                                        fortuneMultiplier: 0.15
-                                    }
-                                ]
+                                        fortuneMultiplier: 0.15,
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -396,9 +396,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                     {
                                         condition: 'tetra:random_chance_with_fortune',
                                         chance: 0.1,
-                                        fortuneMultiplier: 0.15
-                                    }
-                                ]
+                                        fortuneMultiplier: 0.15,
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -408,17 +408,17 @@ onEvent('server.datapack.high_priority', (event) => {
                                     {
                                         condition: 'tetra:random_chance_with_fortune',
                                         chance: 0.5,
-                                        fortuneMultiplier: 0.2
-                                    }
+                                        fortuneMultiplier: 0.2,
+                                    },
                                 ],
                                 functions: [
                                     {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -428,17 +428,17 @@ onEvent('server.datapack.high_priority', (event) => {
                                     {
                                         condition: 'tetra:random_chance_with_fortune',
                                         chance: 0.5,
-                                        fortuneMultiplier: 0.2
-                                    }
+                                        fortuneMultiplier: 0.2,
+                                    },
                                 ],
                                 functions: [
                                     {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -450,9 +450,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 4 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 4 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -464,9 +464,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 3 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 3 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -478,14 +478,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 3 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        parameters: { bonusMultiplier: 3 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/mesh_salvage.json',
@@ -505,9 +505,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -519,9 +519,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -534,9 +534,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -549,14 +549,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/metal_scrap_salvage.json',
@@ -576,9 +576,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -590,9 +590,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -604,9 +604,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -618,9 +618,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -633,9 +633,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -648,9 +648,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -663,9 +663,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -678,9 +678,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -693,9 +693,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -708,9 +708,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -723,9 +723,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -738,9 +738,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -753,9 +753,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -768,9 +768,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -783,9 +783,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -798,9 +798,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -813,9 +813,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -828,9 +828,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -843,9 +843,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -858,9 +858,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -873,9 +873,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -888,9 +888,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -903,9 +903,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -918,14 +918,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/quick_latch_salvage_hammer.json',
@@ -945,9 +945,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -960,9 +960,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -975,27 +975,27 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'item',
                                 name: 'minecraft:gold_nugget',
                                 weight: 3,
-                                functions: [{ function: 'set_count', count: { min: 2, max: 4 } }]
+                                functions: [{ function: 'set_count', count: { min: 2, max: 4 } }],
                             },
                             {
                                 type: 'item',
                                 name: 'minecraft:redstone',
                                 weight: 3,
-                                functions: [{ function: 'set_count', count: { min: 1, max: 2 } }]
+                                functions: [{ function: 'set_count', count: { min: 1, max: 2 } }],
                             },
-                            { type: 'item', name: 'minecraft:quartz', weight: 1 }
-                        ]
-                    }
-                ]
-            }
+                            { type: 'item', name: 'minecraft:quartz', weight: 1 },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/quick_latch_salvage_pry.json',
@@ -1009,21 +1009,21 @@ onEvent('server.datapack.high_priority', (event) => {
                                 type: 'minecraft:item',
                                 name: 'minecraft:iron_nugget',
                                 weight: 4,
-                                functions: [{ function: 'set_count', count: { min: 2, max: 6 } }]
+                                functions: [{ function: 'set_count', count: { min: 2, max: 6 } }],
                             },
                             {
                                 type: 'minecraft:item',
                                 name: 'emendatusenigmatica:copper_nugget',
                                 expand: true,
                                 weight: 4,
-                                functions: [{ function: 'set_count', count: { min: 2, max: 6 } }]
+                                functions: [{ function: 'set_count', count: { min: 2, max: 6 } }],
                             },
                             {
                                 type: 'minecraft:item',
                                 name: 'emendatusenigmatica:bronze_nugget',
                                 expand: true,
                                 weight: 2,
-                                functions: [{ function: 'set_count', count: { min: 2, max: 6 } }]
+                                functions: [{ function: 'set_count', count: { min: 2, max: 6 } }],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1035,9 +1035,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 3 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 3 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1049,9 +1049,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1061,14 +1061,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                     {
                                         condition: 'tetra:random_chance_with_fortune',
                                         chance: 0.5,
-                                        fortuneMultiplier: 0.1
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        fortuneMultiplier: 0.1,
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/shatter_diamond.json',
@@ -1086,14 +1086,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/shatter_emerald.json',
@@ -1111,14 +1111,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/shatter_lapis.json',
@@ -1137,14 +1137,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 3 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        parameters: { bonusMultiplier: 3 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/stonecutter_salvage.json',
@@ -1163,14 +1163,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         {
             loot_table: 'tetra:loot_tables/actions/vent_plate_salvage.json',
@@ -1191,9 +1191,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1205,9 +1205,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1219,9 +1219,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1234,9 +1234,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1249,9 +1249,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1264,9 +1264,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1279,9 +1279,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1294,9 +1294,9 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 1 }
-                                    }
-                                ]
+                                        parameters: { bonusMultiplier: 1 },
+                                    },
+                                ],
                             },
                             {
                                 type: 'minecraft:item',
@@ -1309,15 +1309,15 @@ onEvent('server.datapack.high_priority', (event) => {
                                         function: 'minecraft:apply_bonus',
                                         enchantment: 'minecraft:fortune',
                                         formula: 'uniform_bonus_count',
-                                        parameters: { bonusMultiplier: 2 }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        }
+                                        parameters: { bonusMultiplier: 2 },
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
+        },
     ];
 
     actionRecipes.forEach((recipe) => {

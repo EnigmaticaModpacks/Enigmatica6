@@ -18,10 +18,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:smooth_stone',
                 B: '#forge:glass_panes/black',
-                C: '#forge:dusts/redstone'
+                C: '#forge:dusts/redstone',
             },
-            id: 'computercraft:wired_modem'
-        }
+            id: 'computercraft:wired_modem',
+        },
     ];
 
     newRecipes.forEach((recipe) => {

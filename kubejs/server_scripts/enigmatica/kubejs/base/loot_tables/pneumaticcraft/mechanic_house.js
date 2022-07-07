@@ -14,11 +14,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 1.0,
                                     max: 5.0,
-                                    type: 'minecraft:uniform'
-                                }
-                            }
+                                    type: 'minecraft:uniform',
+                                },
+                            },
                         ],
-                        name: 'pneumaticcraft:air_canister'
+                        name: 'pneumaticcraft:air_canister',
                     },
                     {
                         type: 'minecraft:item',
@@ -29,11 +29,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 2.0,
                                     max: 4.0,
-                                    type: 'minecraft:uniform'
-                                }
-                            }
+                                    type: 'minecraft:uniform',
+                                },
+                            },
                         ],
-                        name: 'pneumaticcraft:pneumatic_cylinder'
+                        name: 'pneumaticcraft:pneumatic_cylinder',
                     },
                     {
                         type: 'minecraft:item',
@@ -44,11 +44,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 4.0,
                                     max: 8.0,
-                                    type: 'minecraft:uniform'
-                                }
-                            }
+                                    type: 'minecraft:uniform',
+                                },
+                            },
                         ],
-                        name: 'pneumaticcraft:logistics_core'
+                        name: 'pneumaticcraft:logistics_core',
                     },
                     {
                         type: 'minecraft:item',
@@ -59,11 +59,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 4.0,
                                     max: 8.0,
-                                    type: 'minecraft:uniform'
-                                }
-                            }
+                                    type: 'minecraft:uniform',
+                                },
+                            },
                         ],
-                        name: 'pneumaticcraft:capacitor'
+                        name: 'pneumaticcraft:capacitor',
                     },
                     {
                         type: 'minecraft:item',
@@ -74,11 +74,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 4.0,
                                     max: 8.0,
-                                    type: 'minecraft:uniform'
-                                }
-                            }
+                                    type: 'minecraft:uniform',
+                                },
+                            },
                         ],
-                        name: 'pneumaticcraft:transistor'
+                        name: 'pneumaticcraft:transistor',
                     },
                     {
                         type: 'minecraft:item',
@@ -89,11 +89,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 2.0,
                                     max: 4.0,
-                                    type: 'minecraft:uniform'
-                                }
-                            }
+                                    type: 'minecraft:uniform',
+                                },
+                            },
                         ],
-                        name: 'pneumaticcraft:turbine_rotor'
+                        name: 'pneumaticcraft:turbine_rotor',
                     },
                     {
                         type: 'minecraft:item',
@@ -101,10 +101,10 @@ onEvent('server.datapack.high_priority', (event) => {
                         functions: [
                             {
                                 function: 'minecraft:set_count',
-                                count: 1.0
-                            }
+                                count: 1.0,
+                            },
                         ],
-                        name: 'pneumaticcraft:vortex_tube'
+                        name: 'pneumaticcraft:vortex_tube',
                     },
                     {
                         type: 'minecraft:item',
@@ -115,11 +115,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 3.0,
                                     max: 8.0,
-                                    type: 'minecraft:uniform'
-                                }
-                            }
+                                    type: 'minecraft:uniform',
+                                },
+                            },
                         ],
-                        name: 'pneumaticcraft:pressure_tube'
+                        name: 'pneumaticcraft:pressure_tube',
                     },
                     {
                         type: 'minecraft:item',
@@ -130,11 +130,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 3.0,
                                     max: 8.0,
-                                    type: 'minecraft:uniform'
-                                }
-                            }
+                                    type: 'minecraft:uniform',
+                                },
+                            },
                         ],
-                        name: 'pneumaticcraft:advanced_pressure_tube'
+                        name: 'pneumaticcraft:advanced_pressure_tube',
                     },
                     {
                         type: 'minecraft:item',
@@ -145,11 +145,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 3.0,
                                     max: 8.0,
-                                    type: 'minecraft:uniform'
-                                }
-                            }
+                                    type: 'minecraft:uniform',
+                                },
+                            },
                         ],
-                        name: 'pneumaticcraft:heat_pipe'
+                        name: 'pneumaticcraft:heat_pipe',
                     },
                     {
                         type: 'minecraft:item',
@@ -160,11 +160,11 @@ onEvent('server.datapack.high_priority', (event) => {
                                 count: {
                                     min: 2.0,
                                     max: 3.0,
-                                    type: 'minecraft:uniform'
-                                }
-                            }
+                                    type: 'minecraft:uniform',
+                                },
+                            },
                         ],
-                        name: 'pneumaticcraft:aphorism_tile'
+                        name: 'pneumaticcraft:aphorism_tile',
                     },
                     {
                         type: 'item',
@@ -175,10 +175,10 @@ onEvent('server.datapack.high_priority', (event) => {
                                 function: 'enchant_with_levels',
                                 levels: {
                                     min: 5,
-                                    max: 15
-                                }
-                            }
-                        ]
+                                    max: 15,
+                                },
+                            },
+                        ],
                     },
                     {
                         type: 'item',
@@ -189,10 +189,10 @@ onEvent('server.datapack.high_priority', (event) => {
                                 function: 'enchant_with_levels',
                                 levels: {
                                     min: 5,
-                                    max: 15
-                                }
-                            }
-                        ]
+                                    max: 15,
+                                },
+                            },
+                        ],
                     },
                     {
                         type: 'item',
@@ -203,10 +203,10 @@ onEvent('server.datapack.high_priority', (event) => {
                                 function: 'enchant_with_levels',
                                 levels: {
                                     min: 5,
-                                    max: 15
-                                }
-                            }
-                        ]
+                                    max: 15,
+                                },
+                            },
+                        ],
                     },
                     {
                         type: 'item',
@@ -217,14 +217,14 @@ onEvent('server.datapack.high_priority', (event) => {
                                 function: 'enchant_with_levels',
                                 levels: {
                                     min: 5,
-                                    max: 15
-                                }
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+                                    max: 15,
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
     };
     event.addJson(`pneumaticcraft:loot_tables/chests/mechanic_house.json`, loot_table);
 });

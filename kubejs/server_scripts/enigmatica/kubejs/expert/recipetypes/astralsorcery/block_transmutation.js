@@ -8,26 +8,26 @@ onEvent('recipes', (event) => {
             input: { block: 'atum:godforged_block' },
             output: { block: 'astralsorcery:altar_discovery' },
             starlight: 60,
-            id: 'astralsorcery:block_transmutation/craftingtable_altar'
+            id: 'astralsorcery:block_transmutation/craftingtable_altar',
         },
         {
             input: { block: 'kubejs:firmament' },
             output: { block: 'astralsorcery:starmetal_ore' },
             starlight: 100,
-            id: 'astralsorcery:block_transmutation/iron_starmetal'
+            id: 'astralsorcery:block_transmutation/iron_starmetal',
         },
         {
             input: [
                 {
                     block: 'farmersdelight:stuffed_pumpkin_block',
-                    display: { item: 'farmersdelight:stuffed_pumpkin_block', count: 1 }
-                }
+                    display: { item: 'farmersdelight:stuffed_pumpkin_block', count: 1 },
+                },
             ],
             output: { block: 'minecraft:cake', properties: [{ name: 'bites', value: '0' }] },
             display: { item: 'minecraft:cake', count: 1 },
             starlight: 300,
-            id: 'astralsorcery:block_transmutation/pumpkin_cake'
-        }
+            id: 'astralsorcery:block_transmutation/pumpkin_cake',
+        },
     ];
 
     const crystals = [
@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
         { color1: 'indigo', color2: 'violet' },
         { color1: 'violet', color2: 'white' },
         { color1: 'white', color2: 'black' },
-        { color1: 'black', color2: 'red' }
+        { color1: 'black', color2: 'red' },
     ];
 
     crystals.forEach((crystal) => {
@@ -47,7 +47,7 @@ onEvent('recipes', (event) => {
             input: { block: `quark:${crystal.color1}_crystal` },
             output: { block: `quark:${crystal.color2}_crystal` },
             starlight: 1000,
-            id: `${id_prefix}${crystal.color2}_crystal`
+            id: `${id_prefix}${crystal.color2}_crystal`,
         });
     });
 

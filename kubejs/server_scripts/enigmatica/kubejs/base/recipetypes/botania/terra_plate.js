@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
             type: 'botania:terra_plate',
             ingredients: recipe.inputs,
             result: recipe.output,
-            mana: recipe.mana
+            mana: recipe.mana,
         });
         if (recipe.id) {
             re.id(recipe.id);

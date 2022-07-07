@@ -3,7 +3,7 @@ onEvent('item.tags', (event) => {
     var exceptions = [
         'betterendforge:aeternium_hoe_head',
         'betterendforge:thallasium_hoe_head',
-        'betterendforge:terminite_hoe_head'
+        'betterendforge:terminite_hoe_head',
     ];
 
     var tags = ['forge:tools', 'forge:tools/hoe'];

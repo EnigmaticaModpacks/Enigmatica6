@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/explosive',
             extraOutputs: [],
             consume: false,
-            id: `${id_prefix}petcoke_dust`
+            id: `${id_prefix}petcoke_dust`,
         },
         {
             output: Item.of('9x immersivepetroleum:petcoke_dust'),
@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/explosive',
             extraOutputs: [],
             consume: false,
-            id: `${id_prefix}petcoke_dust_from_block`
+            id: `${id_prefix}petcoke_dust_from_block`,
         },
         {
             output: Item.of('9x emendatusenigmatica:coke_dust'),
@@ -23,8 +23,8 @@ onEvent('recipes', (event) => {
             tool: '#bloodmagic:arc/explosive',
             extraOutputs: [],
             consume: false,
-            id: `${id_prefix}coke_dust_from_block`
-        }
+            id: `${id_prefix}coke_dust_from_block`,
+        },
     ];
     recipes.forEach((recipe) => {
         const re = event.recipes.bloodmagic

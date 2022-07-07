@@ -6,7 +6,7 @@ onEvent('item.tags', (event) => {
         'farmersdelight:netherite_knife',
         'farmersdelight:golden_knife',
         'aquaculture:neptunium_fillet_knife',
-        'occultism:butcher_knife'
+        'occultism:butcher_knife',
     ];
 
     var exceptions = [
@@ -16,7 +16,7 @@ onEvent('item.tags', (event) => {
         'aquaculture:gold_fillet_knife',
         'aquaculture:diamond_fillet_knife',
         'abnormals_delight:silver_knife',
-        'abnormals_delight:necromium_knife'
+        'abnormals_delight:necromium_knife',
     ];
 
     var tags = [
@@ -25,7 +25,7 @@ onEvent('item.tags', (event) => {
         'forge:tools/knife',
         'forge:fillet_knife',
         'farmersdelight:tools/knives',
-        'farmersdelight:straw_harvesters'
+        'farmersdelight:straw_harvesters',
     ];
 
     tags.forEach((tag) => {

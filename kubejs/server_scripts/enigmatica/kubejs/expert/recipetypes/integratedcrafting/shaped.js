@@ -10,10 +10,10 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'create:mechanical_crafter',
                 B: 'integrateddynamics:variable_transformer_output',
-                C: 'integrateddynamics:variable_transformer_input'
+                C: 'integrateddynamics:variable_transformer_input',
             },
-            id: 'integratedcrafting:crafting/part_interface_crafting'
-        }
+            id: 'integratedcrafting:crafting/part_interface_crafting',
+        },
     ];
 
     recipes.forEach((recipe) => {

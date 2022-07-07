@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
         'ppfluids:high_fluid_filter_module',
         'ppfluids:low_fluid_retrieval_module',
         'ppfluids:medium_fluid_retrieval_module',
-        'ppfluids:high_fluid_retrieval_module'
+        'ppfluids:high_fluid_retrieval_module',
     ];
 
     moduletype.forEach((module) => {

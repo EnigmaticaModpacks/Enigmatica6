@@ -9,7 +9,7 @@ onEvent('item.tags', (event) => {
         'mininggadgets:mininggadget',
         'pneumaticcraft:jackhammer',
         'thermal:flux_drill',
-        'thermal:flux_saw'
+        'thermal:flux_saw',
     ];
     var tags = ['forge:tools', 'forge:tools/multi-tool'];
 

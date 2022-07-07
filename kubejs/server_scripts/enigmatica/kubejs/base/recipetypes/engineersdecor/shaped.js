@@ -5,10 +5,10 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: '#engineersdecor:brick_ingots',
-                B: '#forge:slag'
+                B: '#forge:slag',
             },
-            id: 'engineersdecor:dependent/slag_brick_block_recipe'
-        }
+            id: 'engineersdecor:dependent/slag_brick_block_recipe',
+        },
     ];
 
     recipes.forEach((recipe) => {

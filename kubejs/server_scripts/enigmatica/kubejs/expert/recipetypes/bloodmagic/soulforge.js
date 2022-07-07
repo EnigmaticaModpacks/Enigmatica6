@@ -10,104 +10,104 @@ onEvent('recipes', (event) => {
                     'bloodmagic:soulforge',
                     '#forge:ingots/iesnium',
                     'occultism:spirit_attuned_crystal',
-                    'glassential:glass_ghostly'
+                    'glassential:glass_ghostly',
                 ],
                 output: 'bloodmagic:demoncrystallizer',
                 minimumDrain: 500.0,
                 drain: 100.0,
-                id: 'bloodmagic:soulforge/demon_crystallizer'
+                id: 'bloodmagic:soulforge/demon_crystallizer',
             },
             {
                 inputs: [
                     'bloodmagic:soulforge',
                     '#forge:ingots/iesnium',
                     'eidolon:crimson_essence',
-                    'occultism:spirit_attuned_gem'
+                    'occultism:spirit_attuned_gem',
                 ],
                 output: 'bloodmagic:demoncrucible',
                 minimumDrain: 400.0,
                 drain: 100.0,
-                id: 'bloodmagic:soulforge/demon_crucible'
+                id: 'bloodmagic:soulforge/demon_crucible',
             },
             {
                 inputs: [
                     'eidolon:soul_shard',
                     'naturesaura:infused_iron',
                     'glassential:glass_ghostly',
-                    'minecraft:conduit'
+                    'minecraft:conduit',
                 ],
                 output: 'bloodmagic:soulgempetty',
                 minimumDrain: 1.0,
                 drain: 1.0,
-                id: 'bloodmagic:soulforge/pettytartaricgem'
+                id: 'bloodmagic:soulforge/pettytartaricgem',
             },
             {
                 inputs: [
                     'bloodmagic:soulgempetty',
                     '#forge:ingots/forgotten_metal',
                     'glassential:glass_ethereal',
-                    'quark:diamond_heart'
+                    'quark:diamond_heart',
                 ],
                 output: 'bloodmagic:soulgemlesser',
                 minimumDrain: 60.0,
                 drain: 20.0,
-                id: 'bloodmagic:soulforge/lessertartaricgem'
+                id: 'bloodmagic:soulforge/lessertartaricgem',
             },
             {
                 inputs: [
                     'bloodmagic:soulgemlesser',
                     '#forge:ingots/enderium',
                     '#botania:runes/helheim',
-                    'bloodmagic:infusedslate'
+                    'bloodmagic:infusedslate',
                 ],
                 output: 'bloodmagic:soulgemcommon',
                 minimumDrain: 240.0,
                 drain: 50.0,
-                id: 'bloodmagic:soulforge/commontartaricgem'
+                id: 'bloodmagic:soulforge/commontartaricgem',
             },
             {
                 inputs: [
                     'bloodmagic:soulgemcommon',
                     'bloodmagic:demonslate',
                     '#forge:ingots/gaia_spirit',
-                    '#bloodmagic:crystals/demon'
+                    '#bloodmagic:crystals/demon',
                 ],
                 output: 'bloodmagic:soulgemgreater',
                 minimumDrain: 1000.0,
                 drain: 100.0,
-                id: 'bloodmagic:soulforge/greatertartaricgem'
+                id: 'bloodmagic:soulforge/greatertartaricgem',
             },
             {
                 inputs: ['#forge:storage_blocks/gold', 'eidolon:crimson_essence'],
                 output: Item.of('eidolon:arcane_gold_block'),
                 minimumDrain: 32.0,
                 drain: 16.0,
-                id: `${id_prefix}arcane_gold_ingot`
+                id: `${id_prefix}arcane_gold_ingot`,
             },
             {
                 inputs: [
                     'bloodmagic:rawdemoncrystal',
                     Item.of('bloodmagic:soulpickaxe', '{Damage:0]}').weakNBT(),
-                    '#forge:storage_blocks/iesnium'
+                    '#forge:storage_blocks/iesnium',
                 ],
                 output: Item.of('occultism:iesnium_pickaxe'),
                 minimumDrain: 4000.0,
                 drain: 2048.0,
-                id: 'occultism:crafting/iesnium_pickaxe'
+                id: 'occultism:crafting/iesnium_pickaxe',
             },
             {
                 inputs: ['occultism:dimensional_matrix', 'occultism:storage_controller_base'],
                 output: 'occultism:storage_controller',
                 minimumDrain: 32.0,
                 drain: 16.0,
-                id: 'occultism:crafting/storage_controller'
+                id: 'occultism:crafting/storage_controller',
             },
             {
                 inputs: ['bloodmagic:dungeon_stone', '#forge:ingots/tainted_gold', '#forge:gems/nitro'],
                 output: 'bloodmagic:crystalline_resonator',
                 minimumDrain: 1200.0,
                 drain: 200.0,
-                id: 'bloodmagic:soulforge/primitive_crystalline_resonator'
+                id: 'bloodmagic:soulforge/primitive_crystalline_resonator',
             },
 
             /// Patchouli Removals
@@ -116,74 +116,74 @@ onEvent('recipes', (event) => {
                 output: Item.of('bloodmagic:soulsword'),
                 minimumDrain: 0.0,
                 drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientsword'
+                id: 'bloodmagic:soulforge/sentientsword',
             },
             {
                 inputs: ['kubejs:altered_recipe_indicator'],
                 output: Item.of('bloodmagic:soulaxe'),
                 minimumDrain: 0.0,
                 drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientaxe'
+                id: 'bloodmagic:soulforge/sentientaxe',
             },
             {
                 inputs: ['kubejs:altered_recipe_indicator'],
                 output: Item.of('bloodmagic:soulpickaxe', {
-                    'occultism:otherworldToolTier': 2
+                    'occultism:otherworldToolTier': 2,
                 }),
                 minimumDrain: 0.0,
                 drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientpickaxe'
+                id: 'bloodmagic:soulforge/sentientpickaxe',
             },
             {
                 inputs: ['kubejs:altered_recipe_indicator'],
                 output: Item.of('bloodmagic:soulshovel'),
                 minimumDrain: 0.0,
                 drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientshovel'
+                id: 'bloodmagic:soulforge/sentientshovel',
             },
             {
                 inputs: ['kubejs:altered_recipe_indicator'],
                 output: Item.of('bloodmagic:soulscythe'),
                 minimumDrain: 0.0,
                 drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientscythe'
+                id: 'bloodmagic:soulforge/sentientscythe',
             },
             {
                 inputs: ['kubejs:altered_recipe_indicator'],
                 output: Item.of('bloodmagic:noderouter'),
                 minimumDrain: 0.0,
                 drain: 0.0,
-                id: 'bloodmagic:soulforge/node_router'
+                id: 'bloodmagic:soulforge/node_router',
             },
             {
                 inputs: ['kubejs:altered_recipe_indicator'],
                 output: Item.of('bloodmagic:itemroutingnode'),
                 minimumDrain: 0.0,
                 drain: 0.0,
-                id: 'bloodmagic:soulforge/routing_node'
+                id: 'bloodmagic:soulforge/routing_node',
             },
             {
                 inputs: ['kubejs:altered_recipe_indicator'],
                 output: Item.of('bloodmagic:outputroutingnode'),
                 minimumDrain: 0.0,
                 drain: 0.0,
-                id: 'bloodmagic:soulforge/output_routing_node'
+                id: 'bloodmagic:soulforge/output_routing_node',
             },
             {
                 inputs: ['kubejs:altered_recipe_indicator'],
                 output: Item.of('bloodmagic:inputroutingnode'),
                 minimumDrain: 0.0,
                 drain: 0.0,
-                id: 'bloodmagic:soulforge/input_routing_node'
+                id: 'bloodmagic:soulforge/input_routing_node',
             },
             {
                 inputs: ['kubejs:altered_recipe_indicator'],
                 output: Item.of('bloodmagic:masterroutingnode'),
                 minimumDrain: 0.0,
                 drain: 0.0,
-                id: 'bloodmagic:soulforge/master_routing_node'
-            }
-        ]
+                id: 'bloodmagic:soulforge/master_routing_node',
+            },
+        ],
     };
 
     data.recipes.forEach((recipe) => {

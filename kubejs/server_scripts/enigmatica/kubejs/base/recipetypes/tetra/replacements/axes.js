@@ -7,38 +7,38 @@ onEvent('server.datapack.low_priority', (event) => {
                 handle: 'stick',
                 improvements: {
                     'double/head_left:workable': 1,
-                    'double/head_right:workable': 1
-                }
+                    'double/head_right:workable': 1,
+                },
             },
             {
                 item: 'mekanismtools:lapis_lazuli_axe',
                 material: 'lapis',
-                handle: 'stick'
+                handle: 'stick',
             },
             {
                 item: 'mekanismtools:osmium_axe',
                 material: 'osmium',
-                handle: 'stick'
+                handle: 'stick',
             },
             {
                 item: 'mekanismtools:refined_glowstone_axe',
                 material: 'refined_glowstone',
-                handle: 'stick'
+                handle: 'stick',
             },
             {
                 item: 'mekanismtools:refined_obsidian_axe',
                 material: 'refined_obsidian',
-                handle: 'stick'
+                handle: 'stick',
             },
             {
                 item: 'mekanismtools:steel_axe',
                 material: 'steel',
-                handle: 'stick'
+                handle: 'stick',
             },
             {
                 item: 'immersiveengineering:axe_steel',
                 material: 'steel',
-                handle: 'treated_wood'
+                handle: 'treated_wood',
             },
             {
                 item: 'naturesaura:infused_iron_axe',
@@ -46,8 +46,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 handle: 'treated_wood',
                 improvements: {
                     'double/head_left:naturesaura_aura_mending_innate': 1,
-                    'double/head_right:naturesaura_aura_mending_innate': 1
-                }
+                    'double/head_right:naturesaura_aura_mending_innate': 1,
+                },
             },
             {
                 item: 'naturesaura:sky_axe',
@@ -55,35 +55,35 @@ onEvent('server.datapack.low_priority', (event) => {
                 handle: 'treated_wood',
                 improvements: {
                     'double/head_left:naturesaura_aura_mending_innate': 1,
-                    'double/head_right:naturesaura_aura_mending_innate': 1
-                }
+                    'double/head_right:naturesaura_aura_mending_innate': 1,
+                },
             },
             {
                 item: 'botania:manasteel_axe',
                 material: 'manasteel',
-                handle: 'treated_wood'
+                handle: 'treated_wood',
             },
             {
                 item: 'botania:elementium_axe',
                 material: 'elementium',
-                handle: 'jacaranda'
+                handle: 'jacaranda',
             },
             {
                 item: 'botania:terra_axe',
                 material: 'terrasteel',
-                handle: 'terrasteel'
+                handle: 'terrasteel',
             },
             {
                 item: 'aquaculture:neptunium_axe',
                 material: 'neptunium',
-                handle: 'neptunium'
+                handle: 'neptunium',
             },
             {
                 item: 'mythicbotany:alfsteel_axe',
                 material: 'alfsteel',
-                handle: 'alfsteel'
-            }
-        ]
+                handle: 'alfsteel',
+            },
+        ],
     };
     var toolList = [];
     data.tools.forEach((tool) => {
@@ -93,9 +93,9 @@ onEvent('server.datapack.low_priority', (event) => {
             modules: {
                 'double/head_left': ['double/basic_axe_left', `basic_axe/${tool.material}`],
                 'double/head_right': ['double/butt_right', `butt/${tool.material}`],
-                'double/handle': ['double/basic_handle', `basic_handle/${tool.handle}`]
+                'double/handle': ['double/basic_handle', `basic_handle/${tool.handle}`],
             },
-            improvements: tool.improvements
+            improvements: tool.improvements,
         });
     });
 

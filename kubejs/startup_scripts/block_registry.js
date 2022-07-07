@@ -5,7 +5,7 @@ onEvent('block.registry', (event) => {
         { name: 'hot_compressed_iron_block', material: 'iron', hardness: 5 },
         { name: 'rough_machine_frame_top', material: 'iron', hardness: 5 },
         { name: 'coated_machine_frame_top', material: 'iron', hardness: 5 },
-        { name: 'rough_machine_frame', material: 'iron', hardness: 5 }
+        { name: 'rough_machine_frame', material: 'iron', hardness: 5 },
     ];
 
     blocks.forEach((block) => {

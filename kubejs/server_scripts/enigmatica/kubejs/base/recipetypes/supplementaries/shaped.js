@@ -5,10 +5,10 @@ onEvent('recipes', (event) => {
             pattern: ['A', 'B'],
             key: {
                 A: '#quark:candles',
-                B: '#forge:nuggets/pewter'
+                B: '#forge:nuggets/pewter',
             },
-            id: 'supplementaries:candle_holder'
-        }
+            id: 'supplementaries:candle_holder',
+        },
     ];
 
     recipes.forEach((recipe) => {

@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
             duration: 2000,
             itemOutput: { item: 'mekanism:substrate' },
             gasOutput: { gas: 'mekanism:ethene', amount: 100 },
-            id: 'mekanism:reaction/substrate/water_hydrogen'
+            id: 'mekanism:reaction/substrate/water_hydrogen',
         },
         {
             itemInput: { ingredient: { tag: 'forge:ingots/manyullyn', count: 2 } },
@@ -22,8 +22,8 @@ onEvent('recipes', (event) => {
             duration: 300,
             itemOutput: { item: 'mekanism:alloy_atomic', count: 3 },
             gasOutput: { gas: 'mekanism:spent_nuclear_waste', amount: 1000 },
-            id: `${id_prefix}alloy_atomic`
-        }
+            id: `${id_prefix}alloy_atomic`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
             gasInput: recipe.gasInput,
             duration: recipe.duration,
             itemOutput: recipe.itemOutput,
-            gasOutput: recipe.gasOutput
+            gasOutput: recipe.gasOutput,
         };
         if (recipe.energyRequired) {
             constructed_recipe.energyRequired = recipe.energyRequired;

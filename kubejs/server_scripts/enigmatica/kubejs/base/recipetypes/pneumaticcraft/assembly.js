@@ -7,15 +7,15 @@ onEvent('recipes', (event) => {
             input_count: 4,
             output: { item: 'pneumaticcraft:elevator_frame', count: 8 },
             program: 'drill',
-            id: `${id_prefix}elevator_frame`
+            id: `${id_prefix}elevator_frame`,
         },
         {
             input: 'pneumaticcraft:reinforced_brick_wall',
             input_count: 6,
             output: { item: 'pneumaticcraft:cannon_barrel', count: 2 },
             program: 'drill',
-            id: `${id_prefix}cannon_barrel`
-        }
+            id: `${id_prefix}cannon_barrel`,
+        },
     ];
 
     recipes.forEach((recipe) => {
@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
                 type: `pneumaticcraft:assembly_${recipe.program}`,
                 input: constructed_input,
                 result: recipe.output,
-                program: recipe.program
+                program: recipe.program,
             })
             .id(recipe.id.replace('assembly_', `assembly_${recipe.program}`));
     });
