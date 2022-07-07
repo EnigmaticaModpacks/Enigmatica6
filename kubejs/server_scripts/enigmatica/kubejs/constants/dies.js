@@ -20,7 +20,7 @@ const sharedDies = [
 ];
 
 const thermalDies = [
-    'coin' //
+    'coin'
 ];
 
 const immersiveEngineeringDies = [
