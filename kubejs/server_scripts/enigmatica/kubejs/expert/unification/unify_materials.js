@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
             mana_cluster,
             fulminated_cluster,
             levigated_material,
-            crystalline_sliver,
+            crystalline_sliver
         );
     });
 
@@ -190,7 +190,7 @@ onEvent('recipes', (event) => {
 
         try {
             secondaryOutput = getPreferredItemInTag(
-                Ingredient.of(`#create:crushed_ores/${materialProperties.secondary}`),
+                Ingredient.of(`#create:crushed_ores/${materialProperties.secondary}`)
             ).id;
         } catch (err) {
             secondaryOutput = crushed_ore;
@@ -215,7 +215,7 @@ onEvent('recipes', (event) => {
         mana_cluster,
         fulminated_cluster,
         levigated_material,
-        crystalline_sliver,
+        crystalline_sliver
     ) {
         if (
             ore == air ||
@@ -238,11 +238,11 @@ onEvent('recipes', (event) => {
 
         try {
             secondary_fulminated_cluster = getPreferredItemInTag(
-                Ingredient.of(`#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`),
+                Ingredient.of(`#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`)
             ).id;
         } catch (err) {
             secondary_fulminated_cluster = getPreferredItemInTag(
-                Ingredient.of(`#mekanism:fulminated_clusters/${material}`),
+                Ingredient.of(`#mekanism:fulminated_clusters/${material}`)
             ).id;
         }
 

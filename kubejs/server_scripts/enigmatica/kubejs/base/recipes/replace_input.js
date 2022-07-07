@@ -112,7 +112,7 @@ onEvent('recipes', (event) => {
             not: [{ type: 'ars_nouveau:glyph_recipe' }],
         },
         'minecraft:nether_brick',
-        '#forge:ingots/nether_brick',
+        '#forge:ingots/nether_brick'
     );
     event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
     event.replaceInput(
@@ -122,7 +122,7 @@ onEvent('recipes', (event) => {
         },
         'minecraft:stone',
         '#forge:stone',
-        true,
+        true
     );
     event.replaceInput({ type: 'minecraft:crafting_shapeless' }, 'minecraft:stone', '#forge:stone', true);
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
@@ -151,7 +151,7 @@ onEvent('recipes', (event) => {
     event.replaceInput(
         { id: 'powah:crafting/solar_panel_basic' },
         'powah:solar_panel_starter',
-        'powah:photoelectric_pane',
+        'powah:photoelectric_pane'
     );
 
     event.replaceInput({ mod: 'astralsorcery' }, 'astralsorcery:marble_raw', '#forge:stones/marble');
@@ -159,7 +159,7 @@ onEvent('recipes', (event) => {
     event.replaceInput(
         { type: 'minecraft:crafting_shaped', output: 'minecraft:piston' },
         '#forge:cobblestone',
-        '#quark:stone_tool_materials',
+        '#quark:stone_tool_materials'
     );
 
     ['quark:tallow', 'eidolon:tallow', 'occultism:tallow'].forEach((tallow) => {
@@ -169,19 +169,19 @@ onEvent('recipes', (event) => {
     event.replaceInput(
         { id: 'dustrial_decor:iron_bar_trapdoor' },
         'minecraft:iron_bars',
-        'dustrial_decor:barbed_iron_bars',
+        'dustrial_decor:barbed_iron_bars'
     );
 
     event.replaceInput(
         { id: 'bloodmagic:alchemytable/basic_cutting_fluid' },
         'minecraft:potion',
-        Item.of('minecraft:potion', { Potion: 'minecraft:water' }),
+        Item.of('minecraft:potion', { Potion: 'minecraft:water' })
     );
 
     event.replaceInput(
         { id: 'create:mixing/chromatic_compound' },
         'create:powdered_obsidian',
-        Ingredient.of('#forge:dusts/obsidian'),
+        Ingredient.of('#forge:dusts/obsidian')
     );
 
     event.replaceInput({ id: 'fluxnetworks:fluxconfigurator' }, 'minecraft:ender_eye', 'powah:ender_core');
@@ -192,19 +192,19 @@ onEvent('recipes', (event) => {
             not: [{ type: 'ars_nouveau:glyph_recipe' }],
         },
         'minecraft:crafting_table',
-        '#forge:workbenches',
+        '#forge:workbenches'
     );
 
     event.replaceInput({ id: 'minecraft:nether_bricks' }, '#forge:ingots/nether_brick', 'minecraft:nether_brick');
     event.replaceInput(
         { id: 'thermal:machine/press/packing2x2/press_nether_bricks_packing' },
         '#forge:ingots/nether_brick',
-        'minecraft:nether_brick',
+        'minecraft:nether_brick'
     );
     event.replaceInput(
         { id: 'thermal:machine/press/unpacking/press_wool_unpacking' },
         'minecraft:white_wool',
-        '#forge:wool',
+        '#forge:wool'
     );
 
     sharedDies.forEach((die) => {
@@ -232,7 +232,7 @@ onEvent('recipes', (event) => {
             event.shaped(Item.of(`minecraft:${color}_carpet`, 3), ['WW'], {
                 W: `minecraft:${color}_wool`,
             }),
-            id_prefix,
+            id_prefix
         );
 
         fallback_id(
@@ -240,7 +240,7 @@ onEvent('recipes', (event) => {
                 G: 'minecraft:glass_pane',
                 D: dyeTag,
             }),
-            id_prefix,
+            id_prefix
         );
 
         fallback_id(
@@ -248,7 +248,7 @@ onEvent('recipes', (event) => {
                 G: 'minecraft:glass',
                 D: dyeTag,
             }),
-            id_prefix,
+            id_prefix
         );
 
         ['stained_glass', 'stained_glass_pane', 'terracotta', 'concrete_powder', 'wool', 'carpet'].forEach(
@@ -267,10 +267,10 @@ onEvent('recipes', (event) => {
                         S: itemTag,
                         D: dyeTag,
                     }),
-                    id_prefix,
+                    id_prefix
                 );
                 fallback_id(event.shapeless(Item.of(block, 1), [dyeTag, itemTag]), id_prefix);
-            },
+            }
         );
 
         ['linen', 'linen_carpet'].forEach((blockName) => {
@@ -307,7 +307,7 @@ onEvent('recipes', (event) => {
                 '#forge:gravel',
                 '#forge:gravel',
             ]),
-            id_prefix,
+            id_prefix
         );
     });
 
@@ -549,7 +549,7 @@ onEvent('recipes', (event) => {
             event.replaceInput(
                 { output: item },
                 `#forge:${recipe.type}/${recipe.replace}`,
-                `#forge:${recipe.type}/${recipe.replace}_${recipe.replaceWith}`,
+                `#forge:${recipe.type}/${recipe.replace}_${recipe.replaceWith}`
             );
         });
     });

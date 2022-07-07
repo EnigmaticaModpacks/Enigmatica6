@@ -1347,7 +1347,7 @@ onEvent('server.datapack.low_priority', (event) => {
         for (let i = 3; i < recipeType.recipes.length; i++) {
             event.addJson(
                 `enigmatica:recipes/tools/materials/${recipeType.identifier}/${recipeType.identifier}${i}.json`,
-                recipeType.recipes[i],
+                recipeType.recipes[i]
             );
         }
     });

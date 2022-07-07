@@ -150,7 +150,7 @@ onEvent('recipes', (event) => {
                 outputs: [Item.of(`resourcefulbees:${variant}_honeycomb`, 9)],
                 energy: 2400,
                 id: `${id_prefix}${variant}_honeycomb`,
-            },
+            }
         );
     });
 

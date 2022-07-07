@@ -45,7 +45,7 @@ onEvent('ponder.registry', (event) => {
                     new PonderInput([3.5, 3.5, 3.5], PonderPointing.DOWN)
                         .showing(PonderIcons.I_PRIORITY_LOW)
                         .withItem('atum:scarab'),
-                    40,
+                    40
                 );
 
             scene.idle(20);

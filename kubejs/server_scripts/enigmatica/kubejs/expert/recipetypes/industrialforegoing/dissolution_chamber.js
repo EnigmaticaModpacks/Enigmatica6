@@ -1424,7 +1424,7 @@ onEvent('recipes', (event) => {
                 outputFluid: '',
                 outputFluidAmount: 0,
                 id: `botanypots:crafting/hopper_${color}_botany_pot`,
-            },
+            }
         );
     });
 

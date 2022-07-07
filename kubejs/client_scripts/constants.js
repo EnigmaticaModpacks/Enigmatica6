@@ -422,7 +422,7 @@ ee_types.forEach((type) => {
         `emendatusenigmatica:sapphire_${type}`,
         `emendatusenigmatica:ruby_${type}`,
         `emendatusenigmatica:iridium_${type}`,
-        `emendatusenigmatica:peridot_${type}`,
+        `emendatusenigmatica:peridot_${type}`
     );
 });
 

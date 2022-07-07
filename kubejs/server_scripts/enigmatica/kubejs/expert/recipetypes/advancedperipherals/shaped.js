@@ -58,7 +58,7 @@ onEvent('recipes', (event) => {
                 A: 'advancedperipherals:weak_automata_core',
                 B: Item.of(
                     'pneumaticcraft:spawner_core',
-                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}'
                 ),
             },
             id: 'advancedperipherals:end_automata_core',
@@ -71,12 +71,12 @@ onEvent('recipes', (event) => {
                 B: Item.of('pneumaticcraft:spawner_core', '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:cow":100}}'),
                 C: Item.of(
                     'pneumaticcraft:spawner_core',
-                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:sheep":100}}',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:sheep":100}}'
                 ),
                 D: Item.of('pneumaticcraft:spawner_core', '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:pig":100}}'),
                 E: Item.of(
                     'pneumaticcraft:spawner_core',
-                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:chicken":100}}',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:chicken":100}}'
                 ),
             },
             id: 'advancedperipherals:husbandry_automata_core',

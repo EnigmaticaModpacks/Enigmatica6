@@ -16,7 +16,7 @@ onEvent('recipes', (event) => {
                 E: 'powah:energy_hopper_hardened',
                 F: Item.of(
                     'minecraft:water_bucket',
-                    '{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:\'{"text":"#MLG-YOLO"}\'}}',
+                    '{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:\'{"text":"#MLG-YOLO"}\'}}'
                 ).weakNBT(),
             },
             id: `${id_prefix}hardened_jetpack`,

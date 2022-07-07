@@ -155,7 +155,7 @@ onEvent('recipes', (event) => {
                     C: 'fluxnetworks:flux_block',
                 },
                 id: `powah:crafting/ender_cell_${tier}`,
-            },
+            }
         );
 
         // Upgrade Craft
@@ -217,7 +217,7 @@ onEvent('recipes', (event) => {
                         B: Ingredient.of(lower_tiers.map((item) => `powah:ender_cell_${item}`)),
                     },
                     id: `${id_prefix}ender_cell_${tier}_upgrade`,
-                },
+                }
             );
         }
 
@@ -247,7 +247,7 @@ onEvent('recipes', (event) => {
                         D: wire_coil,
                     },
                     id: `powah:crafting/energizing_rod_${tier}`,
-                },
+                }
             );
         }
     });

@@ -46,7 +46,7 @@ onEvent('generic.loot_tables', (event) => {
                 {
                     item: Item.of(
                         'sushigocrafting:tobiko_tuna_cucumber_california',
-                        '{Weights:[I;0,0,0,0,0,0],Spices:{}}',
+                        '{Weights:[I;0,0,0,0,0,0],Spices:{}}'
                     ),
                     weight: 20,
                     count: [4, 16],
@@ -149,7 +149,7 @@ onEvent('generic.loot_tables', (event) => {
                 {
                     item: Item.of(
                         'ars_nouveau:potion_flask',
-                        '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:5b,Amplifier:0b},{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:900,Id:10b,Amplifier:0b},{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:1b,Amplifier:0b}],Potion:"apotheosis:resistance"}',
+                        '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:5b,Amplifier:0b},{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:900,Id:10b,Amplifier:0b},{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:1b,Amplifier:0b}],Potion:"apotheosis:resistance"}'
                     ),
                     weight: 5,
                 },

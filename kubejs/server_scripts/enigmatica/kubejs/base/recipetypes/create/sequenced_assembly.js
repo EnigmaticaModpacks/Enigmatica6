@@ -99,7 +99,7 @@ onEvent('recipes', (event) => {
                 sequence.push(event.recipes.create.deploying(step.output, step.input));
             } else if (step.type == 'cutting') {
                 sequence.push(
-                    event.recipes.create.cutting(step.output, step.input).processingTime(step.processingTime),
+                    event.recipes.create.cutting(step.output, step.input).processingTime(step.processingTime)
                 );
             } else if (step.type == 'filling') {
                 sequence.push(event.recipes.create.filling(step.output, step.input));

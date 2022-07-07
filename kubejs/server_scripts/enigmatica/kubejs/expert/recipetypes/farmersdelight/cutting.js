@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
                 type: 'farmersdelight:tool',
                 tool: 'axe',
             },
-            [Item.of('minecraft:stick', 2)],
+            [Item.of('minecraft:stick', 2)]
         ),
         cuttingRecipe(
             Ingredient.of('upgrade_aquatic:embedded_ammonite'),
@@ -32,7 +32,7 @@ onEvent('recipes', (event) => {
                 type: 'farmersdelight:tool',
                 tool: 'pickaxe',
             },
-            [Item.of('minecraft:nautilus_shell', 2)],
+            [Item.of('minecraft:nautilus_shell', 2)]
         ),
     ];
 
@@ -64,7 +64,7 @@ onEvent('recipes', (event) => {
                     tool: tool,
                     result: result,
                 }),
-                id_prefix,
+                id_prefix
             );
         });
     });

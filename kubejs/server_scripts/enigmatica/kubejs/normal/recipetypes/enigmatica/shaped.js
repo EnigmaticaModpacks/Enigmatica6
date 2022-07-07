@@ -344,7 +344,7 @@ onEvent('recipes', (event) => {
                     B: Ingredient.of(lower_tiers.map((item) => `powah:reactor_${item}`)),
                 },
                 id: `${id_prefix}powah/reactor_${tier}`,
-            },
+            }
         );
     });
 
@@ -427,7 +427,7 @@ onEvent('recipes', (event) => {
                     C: '#forge:chests',
                 },
                 id: `${id_prefix}oak_half_drawers_4_from_${wood.logType}_slab`,
-            },
+            }
         );
     });
 

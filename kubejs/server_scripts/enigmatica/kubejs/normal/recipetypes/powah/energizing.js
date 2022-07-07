@@ -72,7 +72,7 @@ onEvent('recipes', (event) => {
                     count: index + 1,
                 },
                 id: `${id_prefix}uraninite_block_${index}`,
-            },
+            }
         );
     });
 

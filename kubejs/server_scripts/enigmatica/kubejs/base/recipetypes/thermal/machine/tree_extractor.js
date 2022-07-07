@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
                                 amount: tree.rate.living,
                             },
                         }),
-                        id_prefix,
+                        id_prefix
                     );
                 }
             }

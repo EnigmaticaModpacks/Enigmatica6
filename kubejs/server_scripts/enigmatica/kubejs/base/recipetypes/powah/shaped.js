@@ -46,7 +46,7 @@ onEvent('recipes', (event) => {
                     C: Ingredient.of(lower_tiers.map((item) => `powah:solar_panel_${item}`)),
                 },
                 id: `${id_prefix}solar_panel_${tier}`,
-            },
+            }
         );
     });
 

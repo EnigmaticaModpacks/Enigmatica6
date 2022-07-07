@@ -52,7 +52,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(100)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        'The Laser Drill is a mid- to late-game structure in Industrial Foregoing that lets you mine up various different resources from the void.',
+                        'The Laser Drill is a mid- to late-game structure in Industrial Foregoing that lets you mine up various different resources from the void.'
                     )
                     .placeNearTarget()
                     .pointAt(util.vector().topOf(3, 3, 3));
@@ -68,7 +68,7 @@ onEvent('ponder.registry', (event) => {
                             .everywhere()
                             .substract(util.select().layer(0))
                             .substract(util.select().position(3, 3, 3)),
-                        Facing.down,
+                        Facing.down
                     );
 
                 scene.addKeyframe();
@@ -82,7 +82,7 @@ onEvent('ponder.registry', (event) => {
                         PonderPalette.GREEN,
                         hintBox,
                         AABB.of(3.25, 3.25, 3.25, 3.75, 3.75, 3.75),
-                        2,
+                        2
                     );
 
                 scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, hintBox, AABB.of(3, 3, 3, 4, 4, 4), 120);
@@ -92,7 +92,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(80)
                     .colored(PonderPalette.GREEN)
                     .text(
-                        `To construct it, you'll first need either an Ore Laser Base or a Fluid Laser Base. We'll go over the Ore Laser first.`,
+                        `To construct it, you'll first need either an Ore Laser Base or a Fluid Laser Base. We'll go over the Ore Laser first.`
                     )
                     .placeNearTarget()
                     .pointAt(util.vector().topOf(3, 3, 3));
@@ -106,7 +106,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(80)
                     .colored(PonderPalette.GREEN)
                     .text(
-                        `Next, add some Laser Drills within a 2-block radius around the Base to start powering it, for example like this:`,
+                        `Next, add some Laser Drills within a 2-block radius around the Base to start powering it, for example like this:`
                     )
                     .placeNearTarget()
                     .pointAt(util.vector().centerOf(5, 5, 5));
@@ -153,7 +153,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([3.5, 6.5, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_CONFIG_OPEN)
                             .withItem('minecraft:clock'),
-                        100,
+                        100
                     );
                 scene.idle(120);
 
@@ -166,13 +166,13 @@ onEvent('ponder.registry', (event) => {
                     .showText(120)
                     .colored(PonderPalette.OUTPUT)
                     .text(
-                        `After a while, we finally managed to get our first ore; but it's not quite the one we wanted, so let's try to change our luck!`,
+                        `After a while, we finally managed to get our first ore; but it's not quite the one we wanted, so let's try to change our luck!`
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 3.5, 3.5]);
 
                 scene.markAsFinished();
-            },
+            }
         )
         .scene(
             'lenses',
@@ -191,7 +191,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.WHITE)
                     .text(
                         'As you could see, the resources the Ore Laser drills up are random,' +
-                            ' so how can we make sure we actually get our precious rare ores rather than ten different kinds of copper?',
+                            ' so how can we make sure we actually get our precious rare ores rather than ten different kinds of copper?'
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 4, 3.5]);
@@ -208,7 +208,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.WHITE)
                     .text(
                         `That's what lenses are for: By adding them into the Ore Laser Base,` +
-                            ` we can skew the odds of getting ores that have a certain colour in our favour.`,
+                            ` we can skew the odds of getting ores that have a certain colour in our favour.`
                     )
                     .independent(20);
 
@@ -218,9 +218,9 @@ onEvent('ponder.registry', (event) => {
                         .overlay()
                         .showControls(
                             new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN).withItem(
-                                `industrialforegoing:laser_lens${Utils.random.nextInt(16)}`,
+                                `industrialforegoing:laser_lens${Utils.random.nextInt(16)}`
                             ),
-                            20,
+                            20
                         );
                     scene.idle(30);
                 }
@@ -236,7 +236,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(fails * 20 + 20)
                     .colored(PonderPalette.GREEN)
                     .text(
-                        `For example, if we wanted more Uranium or Emerald Ore, we could add a lime lens to the Laser...`,
+                        `For example, if we wanted more Uranium or Emerald Ore, we could add a lime lens to the Laser...`
                     )
                     .independent(20);
 
@@ -246,7 +246,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN)
                             .rightClick()
                             .withItem(industrialforegoing.laser_lens.lime),
-                        20,
+                        20
                     );
 
                 scene.idle(20);
@@ -257,7 +257,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([3.5, 6.5, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_CONFIG_OPEN)
                             .withItem('minecraft:clock'),
-                        fails * 20 + 20,
+                        fails * 20 + 20
                     );
 
                 scene.idle(20);
@@ -269,7 +269,7 @@ onEvent('ponder.registry', (event) => {
                             new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN)
                                 .showing(PonderIcons.I_DISABLE)
                                 .withItem(randomOf(badOres)),
-                            8,
+                            8
                         );
                     scene.idle(20);
                 }
@@ -284,10 +284,10 @@ onEvent('ponder.registry', (event) => {
                                     Ingredient.of([
                                         'emendatusenigmatica:uranium_ore',
                                         'emendatusenigmatica:emerald_ore',
-                                    ]),
-                                ),
+                                    ])
+                                )
                             ),
-                        120,
+                        120
                     );
 
                 scene
@@ -296,7 +296,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.GREEN)
                     .text(`And soon enough, our efforts shall be rewarded!`)
                     .independent(20);
-            },
+            }
         )
         .scene(
             'fluid_drill',
@@ -314,7 +314,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.INPUT)
                     .text(
-                        'In addition to increasing your odds with the Ore Laser, Lenses serve another important purpose:',
+                        'In addition to increasing your odds with the Ore Laser, Lenses serve another important purpose:'
                     )
                     .independent(30);
 
@@ -340,7 +340,7 @@ onEvent('ponder.registry', (event) => {
                         PonderPalette.GREEN,
                         fluidHint,
                         AABB.of(3.25, 3.25, 3.25, 3.75, 3.75, 3.75),
-                        10,
+                        10
                     );
 
                 scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, fluidHint, AABB.of(3, 3, 3, 4, 4, 4), 60);
@@ -355,7 +355,7 @@ onEvent('ponder.registry', (event) => {
                     .text(
                         'Fundamentally, the Fluid Laser is quite similar to its Ore counterpart,' +
                             ' but it requires a Lens to function, and different recipes can' +
-                            ' have special requirements you may have to watch out for.',
+                            ' have special requirements you may have to watch out for.'
                     )
                     .independent(30);
 
@@ -393,7 +393,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_ADD)
                             .withItem(industrialforegoing.laser_lens.orange),
-                        30,
+                        30
                     );
 
                 scene.world().hideSection(util.select().position(3, 4, 3), Facing.down);
@@ -406,7 +406,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         tank1,
                         Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north').blockState,
-                        true,
+                        true
                     );
 
                 scene.idle(10);
@@ -422,7 +422,7 @@ onEvent('ponder.registry', (event) => {
                     {
                         tank: { FluidName: 'minecraft:lava', Amount: 1000 },
                     },
-                    true,
+                    true
                 );
 
                 scene
@@ -446,13 +446,13 @@ onEvent('ponder.registry', (event) => {
                     .showText(80)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `Other, more "involved" requirements exist as well, and we'll touch on my personal favourite in this next and final scene.`,
+                        `Other, more "involved" requirements exist as well, and we'll touch on my personal favourite in this next and final scene.`
                     )
                     .independent(40);
 
                 scene.idle(60);
                 scene.markAsFinished();
-            },
+            }
         )
         .scene(
             'ether_gas',
@@ -471,7 +471,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.INPUT)
                     .text(
                         `Welcome... to the Wither Milker (patent pending)!` +
-                            ` You'll see why it's called that in a bit, but for now, let's go over the individual parts.`,
+                            ` You'll see why it's called that in a bit, but for now, let's go over the individual parts.`
                     )
                     .independent(30);
 
@@ -492,7 +492,7 @@ onEvent('ponder.registry', (event) => {
                         PonderPalette.GREEN,
                         layerHint,
                         AABB.of(3.25, 6.25, 3.25, 3.75, 6.75, 3.75),
-                        10,
+                        10
                     );
 
                 scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(1, 6, 1, 6, 7, 6), 80);
@@ -503,7 +503,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.INPUT)
                     .text(
                         `First, we have our typical Fluid Laser Drill setup, with the Laser Base containing a Purple Lens.` +
-                            ` I've also left out the energy input here because you should know that the Drills need energy by now.`,
+                            ` I've also left out the energy input here because you should know that the Drills need energy by now.`
                     )
                     .independent(30);
 
@@ -513,7 +513,7 @@ onEvent('ponder.registry', (event) => {
                         new PonderInput([3.5, 7, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_ADD)
                             .withItem(industrialforegoing.laser_lens.purple),
-                        60,
+                        60
                     );
 
                 scene.idle(100);
@@ -533,7 +533,7 @@ onEvent('ponder.registry', (event) => {
                     .text(
                         `Next, we need to place down a stasis chamber. This puppy, when provided with power,` +
                             ` will prevent any entities within its working area (blue), including players,` +
-                            ` from moving or interacting with the world in any way, hence the name.`,
+                            ` from moving or interacting with the world in any way, hence the name.`
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 1.5, 3.5]);
@@ -549,7 +549,7 @@ onEvent('ponder.registry', (event) => {
                         PonderPalette.BLUE,
                         stasisHint,
                         AABB.of(3.25, 1.25, 3.25, 3.75, 1.75, 3.75),
-                        5,
+                        5
                     );
                 scene
                     .overlay()
@@ -632,7 +632,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.WHITE)
                     .text(
                         `Now that dear Bartholomew over here is trapped by the Stasis Chamber and cannot wreck our stuff,` +
-                            ` we can use the Fluid Laser to... milk him. (Seriously, Buuz? This is a kids' game!)`,
+                            ` we can use the Fluid Laser to... milk him. (Seriously, Buuz? This is a kids' game!)`
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 4, 3.5]);
@@ -658,12 +658,12 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.WHITE)
                     .text(
                         `And that's about it for the basics of the Industrial Foregoing Laser Drill!` +
-                            ` There's more stuff we haven't covered in this tutorial, so we recommend you just give it a try yourself!`,
+                            ` There's more stuff we haven't covered in this tutorial, so we recommend you just give it a try yourself!`
                     )
                     .independent(30);
 
                 scene.idle(110);
-            },
+            }
         );
 });
 

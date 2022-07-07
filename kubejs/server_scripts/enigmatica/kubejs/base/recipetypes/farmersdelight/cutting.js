@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
                 type: 'farmersdelight:tool',
                 tool: 'shovel',
             },
-            [Item.of('minecraft:clay_ball', 4)],
+            [Item.of('minecraft:clay_ball', 4)]
         ),
         cuttingRecipe(Ingredient.of('minecraft:chicken'), Ingredient.of('#forge:tools/knives'), [
             Item.of('farmersdelight:chicken_cuts', 2),
@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
                 type: 'farmersdelight:tool',
                 tool: 'pickaxe',
             },
-            [Item.of('emendatusenigmatica:gold_chunk', 1)],
+            [Item.of('emendatusenigmatica:gold_chunk', 1)]
         ),
         cuttingRecipe(Ingredient.of('aquaculture:atlantic_cod'), Ingredient.of('#forge:tools/knives'), [
             Item.of('farmersdelight:cod_slice', 6),
@@ -114,7 +114,7 @@ onEvent('recipes', (event) => {
                     tool: tool,
                     result: result,
                 }),
-                id_prefix,
+                id_prefix
             );
         });
     });
@@ -148,7 +148,7 @@ onEvent('recipes', (event) => {
                     tool: tool,
                     result: result,
                 }),
-                id_prefix,
+                id_prefix
             );
         });
     });

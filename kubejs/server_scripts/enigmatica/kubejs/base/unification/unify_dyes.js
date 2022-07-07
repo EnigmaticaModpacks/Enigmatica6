@@ -77,7 +77,7 @@ function immersiveengineering_dye_crusher(event, recipe, id_prefix) {
 
     fallback_id(
         event.recipes.immersiveengineering.crusher(output, input, extras),
-        `${id_prefix}${arguments.callee.name}/`,
+        `${id_prefix}${arguments.callee.name}/`
     );
 }
 
@@ -154,7 +154,7 @@ function mekanism_pigment_extracting(event, recipe, id_prefix) {
             input: { ingredient: { item: recipe.input } },
             output: { pigment: `mekanism:${dye_color}`, amount: 256 * count },
         }),
-        `${id_prefix}${arguments.callee.name}/`,
+        `${id_prefix}${arguments.callee.name}/`
     );
 }
 
@@ -179,7 +179,7 @@ function pedestals_dye_crushing(event, recipe, id_prefix) {
             ingredient: { item: input },
             result: { item: output, count: count },
         }),
-        `${id_prefix}${arguments.callee.name}/`,
+        `${id_prefix}${arguments.callee.name}/`
     );
 }
 
@@ -224,7 +224,7 @@ function atum_quern_milling(event, recipe, id_prefix) {
             result: { item: output, count: count },
             rotations: rotations,
         }),
-        `${id_prefix}${arguments.callee.name}/`,
+        `${id_prefix}${arguments.callee.name}/`
     );
 }
 
@@ -260,6 +260,6 @@ function occultism_dye_crushing(event, recipe, id_prefix) {
             result: { item: output, count: count },
             crushing_time: 50,
         }),
-        `${id_prefix}${arguments.callee.name}/`,
+        `${id_prefix}${arguments.callee.name}/`
     );
 }

@@ -36,7 +36,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `When flowing lava touches water, it creates cobblestone. This generator floods a stair block to protect the water source.`,
+                        `When flowing lava touches water, it creates cobblestone. This generator floods a stair block to protect the water source.`
                     )
                     .independent(30);
 
@@ -76,7 +76,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `We can automate this with a block breaker of some sort - let's use a Modular Router with a breaker module.`,
+                        `We can automate this with a block breaker of some sort - let's use a Modular Router with a breaker module.`
                     )
                     .independent(30);
 
@@ -88,7 +88,7 @@ onEvent('ponder.registry', (event) => {
                     .setBlock(
                         [3, 2, 4],
                         Block.id('modularrouters:item_router').with('subfacing', 'south').blockState,
-                        false,
+                        false
                     );
 
                 scene.idle(50);
@@ -111,7 +111,7 @@ onEvent('ponder.registry', (event) => {
                     scene.world().setBlock([3, 2, 3], cobble, false);
                     scene.idle(10);
                 }
-            },
+            }
         )
         .scene(
             'targeted_cobblegen',
@@ -127,7 +127,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `Maybe you want something other than vanilla cobblestone - let's say Scoria Cobblestone. This generator won't do.`,
+                        `Maybe you want something other than vanilla cobblestone - let's say Scoria Cobblestone. This generator won't do.`
                     )
                     .independent(60);
 
@@ -150,7 +150,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(90)
                     .colored(PonderPalette.GREEN)
                     .text(
-                        `If we place a specific type of Cobblestone under the cobblestone generation point, the generator will now make that type of cobblestone!`,
+                        `If we place a specific type of Cobblestone under the cobblestone generation point, the generator will now make that type of cobblestone!`
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 1.5, 3.5]);
@@ -171,7 +171,7 @@ onEvent('ponder.registry', (event) => {
                     scene.world().setBlock([3, 2, 3], scoria, false);
                     scene.idle(10);
                 }
-            },
+            }
         )
         .scene(
             'random_cobblegen',
@@ -187,7 +187,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `Don't have the cobblestone you need? Your cobblestone generator can produce random types of cobblestone!`,
+                        `Don't have the cobblestone you need? Your cobblestone generator can produce random types of cobblestone!`
                     )
                     .independent(60);
 
@@ -210,7 +210,7 @@ onEvent('ponder.registry', (event) => {
                     .showText(60)
                     .colored(PonderPalette.WHITE)
                     .text(
-                        `If you place a block of Iron under the cobblestone generation point the generator will now make random cobblestone!`,
+                        `If you place a block of Iron under the cobblestone generation point the generator will now make random cobblestone!`
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 1.5, 3.5]);
@@ -238,6 +238,6 @@ onEvent('ponder.registry', (event) => {
                     scene.world().setBlock([3, 2, 3], util.getDefaultState(thisCobblestone), false);
                     scene.idle(10);
                 });
-            },
+            }
         );
 });

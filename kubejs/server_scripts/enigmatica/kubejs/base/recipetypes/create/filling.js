@@ -44,7 +44,7 @@ onEvent('recipes', (event) => {
         recipes.push({
             input: Item.of('minecraft:glass_bottle'),
             output: Item.of(
-                honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_bottle' : `${honeyVariety}_bottle`,
+                honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_bottle' : `${honeyVariety}_bottle`
             ),
             fluid: Fluid.of(honeyVariety, 250),
             id: `${id_prefix}${honey}_bottle`,

@@ -67,7 +67,7 @@ function create_cutting(event, variant, sawDust, treeBark) {
                 ],
                 processingTime: recipe.time,
             }),
-            `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`,
+            `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`
         );
     });
 }
@@ -82,7 +82,7 @@ function immersiveengineering_sawing(event, variant, sawDust, treeBark) {
                 },
             ])
             .energy(800),
-        `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`,
+        `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`
     );
 
     fallback_id(
@@ -100,10 +100,10 @@ function immersiveengineering_sawing(event, variant, sawDust, treeBark) {
                         output: sawDust,
                     },
                 ],
-                variant.logBlockStripped,
+                variant.logBlockStripped
             )
             .energy(1600),
-        `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`,
+        `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`
     );
 }
 
@@ -144,7 +144,7 @@ function mekanism_sawing(event, variant, sawDust) {
     data.recipes.forEach((recipe) => {
         fallback_id(
             event.recipes.mekanism.sawing(Item.of(recipe.output, 6), recipe.input, Item.of(sawDust).chance(0.25)),
-            `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`,
+            `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`
         );
     });
 }
@@ -191,7 +191,7 @@ function pedestal_sawing(event, variant) {
                     count: recipe.count,
                 },
             }),
-            `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`,
+            `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`
         );
     });
 }
@@ -233,7 +233,7 @@ function thermal_sawing(event, variant, sawDust) {
             event.recipes.thermal
                 .sawmill([Item.of(recipe.output, 6), Item.of(sawDust).chance(1.25)], recipe.input)
                 .energy(1000),
-            `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`,
+            `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`
         );
     });
 }

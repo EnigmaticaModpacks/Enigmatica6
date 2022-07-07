@@ -26,7 +26,7 @@ onEvent('recipes', (event) => {
                         },
                         starlight: recipe.starlight,
                     }),
-                    id_prefix,
+                    id_prefix
                 );
             }
         });

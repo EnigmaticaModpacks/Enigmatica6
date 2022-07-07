@@ -63,7 +63,7 @@ onEvent('recipes', (event) => {
             mek_clump,
             mek_dirty_dust,
             dust,
-            ingot,
+            ingot
         );
 
         minecraft_ore_ingot_smelting(event, material, ore, ingot);
@@ -148,7 +148,7 @@ onEvent('recipes', (event) => {
                 acceptChaliceInput: true,
                 copyNBTToOutputs: false,
             }),
-            `${id_prefix}${arguments.callee.name}/`,
+            `${id_prefix}${arguments.callee.name}/`
         );
     }
 
@@ -165,7 +165,7 @@ onEvent('recipes', (event) => {
                 experience: 2,
                 smelttime: 300,
             }),
-            `${id_prefix}${arguments.callee.name}/`,
+            `${id_prefix}${arguments.callee.name}/`
         );
     }
 
@@ -184,7 +184,7 @@ onEvent('recipes', (event) => {
 
         try {
             secondaryOutput = getPreferredItemInTag(
-                Ingredient.of(`#bloodmagic:fragments/${materialProperties.secondary}`),
+                Ingredient.of(`#bloodmagic:fragments/${materialProperties.secondary}`)
             ).id;
         } catch (err) {
             secondaryOutput = fragment;
@@ -256,7 +256,7 @@ onEvent('recipes', (event) => {
                 .syphon(400)
                 .ticks(200)
                 .upgradeLevel(1),
-            `${id_prefix}${arguments.callee.name}/`,
+            `${id_prefix}${arguments.callee.name}/`
         );
     }
     function bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem) {
@@ -305,7 +305,7 @@ onEvent('recipes', (event) => {
 
         try {
             secondaryOutput = getPreferredItemInTag(
-                Ingredient.of(`#create:crushed_ores/${materialProperties.secondary}`),
+                Ingredient.of(`#create:crushed_ores/${materialProperties.secondary}`)
             ).id;
             processingTime = materialProperties.createProcessingTime;
         } catch (err) {
@@ -405,7 +405,7 @@ onEvent('recipes', (event) => {
 
         fallback_id(
             event.recipes.create.milling(outputs, input).processingTime(processingTime),
-            `${id_prefix}${arguments.callee.name}/`,
+            `${id_prefix}${arguments.callee.name}/`
         );
     }
 
@@ -537,7 +537,7 @@ onEvent('recipes', (event) => {
         event.replaceInput(
             { id: `emendatusenigmatica:dust_from_chunk/${material}` },
             `emendatusenigmatica:${material}_chunk`,
-            `#forge:ores/${material}`,
+            `#forge:ores/${material}`
         );
     }
 
@@ -583,7 +583,7 @@ onEvent('recipes', (event) => {
 
         fallback_id(
             event.recipes.immersiveengineering.crusher(output, input).energy(2000),
-            `${id_prefix}${arguments.callee.name}/`,
+            `${id_prefix}${arguments.callee.name}/`
         );
     }
     function immersiveengineering_coin_pressing(event, material, ingot, nugget, coin) {
@@ -598,7 +598,7 @@ onEvent('recipes', (event) => {
         // Ingots to Coins
         fallback_id(
             event.recipes.immersiveengineering.metal_press(output, input, mold),
-            `${id_prefix}${arguments.callee.name}/`,
+            `${id_prefix}${arguments.callee.name}/`
         );
 
         // Nuggets to Coins
@@ -606,7 +606,7 @@ onEvent('recipes', (event) => {
         input = `3x #forge:nuggets/${material}`;
         fallback_id(
             event.recipes.immersiveengineering.metal_press(output, input, mold),
-            `${id_prefix}${arguments.callee.name}/`,
+            `${id_prefix}${arguments.callee.name}/`
         );
     }
 
@@ -621,7 +621,7 @@ onEvent('recipes', (event) => {
 
             fallback_id(
                 event.recipes.immersiveengineering.crusher(output, input).energy(2000),
-                `${id_prefix}${arguments.callee.name}/`,
+                `${id_prefix}${arguments.callee.name}/`
             );
         }
     }
@@ -736,7 +736,7 @@ onEvent('recipes', (event) => {
         mek_clump,
         mek_dirty_dust,
         dust,
-        ingot,
+        ingot
     ) {
         if (ore == air || ingot == air || mek_crystal == air) {
             return;
@@ -922,7 +922,7 @@ onEvent('recipes', (event) => {
                 crushing_time: 100,
                 ignore_crushing_multiplier: false,
             }),
-            `${id_prefix}${arguments.callee.name}/`,
+            `${id_prefix}${arguments.callee.name}/`
         );
     }
 
@@ -977,7 +977,7 @@ onEvent('recipes', (event) => {
                 crushing_time: 100,
                 ignore_crushing_multiplier: true,
             }),
-            `${id_prefix}${arguments.callee.name}/`,
+            `${id_prefix}${arguments.callee.name}/`
         );
     }
 
@@ -1070,7 +1070,7 @@ onEvent('recipes', (event) => {
                     count: 1,
                 },
             }),
-            `${id_prefix}${arguments.callee.name}/`,
+            `${id_prefix}${arguments.callee.name}/`
         );
     }
 

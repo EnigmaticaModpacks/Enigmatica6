@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
         let honey = honeyVariety.split(':')[1];
         recipes.push({
             input: Item.of(
-                honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_bottle' : `${honeyVariety}_bottle`,
+                honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_bottle' : `${honeyVariety}_bottle`
             ),
             container: Item.of('minecraft:glass_bottle'),
             fluid: Fluid.of(honeyVariety, 250),

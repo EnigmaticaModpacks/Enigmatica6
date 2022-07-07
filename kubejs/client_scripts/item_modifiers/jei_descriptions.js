@@ -613,7 +613,7 @@ onEvent('jei.information', (event) => {
     disabledItems.forEach((item) => {
         event.add(
             item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica6/issues",
+            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica6/issues"
         );
     });
 
@@ -624,14 +624,14 @@ onEvent('jei.information', (event) => {
     generatableCobblestone.forEach((cobblestone) => {
         event.add(
             cobblestone,
-            'Can be generated in a Vanilla Cobblestone Generator. The block below where the Cobblestone generates needs to be a Block of Iron.',
+            'Can be generated in a Vanilla Cobblestone Generator. The block below where the Cobblestone generates needs to be a Block of Iron.'
         );
     });
 
     generatableStone.forEach((stone) => {
         event.add(
             stone,
-            'Can be generated in a Vanilla Stone Generator. The block below where the Stone generates needs to be a Block of Diamond.',
+            'Can be generated in a Vanilla Stone Generator. The block below where the Stone generates needs to be a Block of Diamond.'
         );
     });
 

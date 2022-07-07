@@ -58,7 +58,7 @@ onEvent('recipes', (event) => {
             event.replaceInput(
                 { output: item },
                 '#forge:' + recipe.type + '/' + recipe.replace,
-                '#forge:' + recipe.type + '/' + recipe.replace + '_' + recipe.replaceWith,
+                '#forge:' + recipe.type + '/' + recipe.replace + '_' + recipe.replaceWith
             );
         });
     });

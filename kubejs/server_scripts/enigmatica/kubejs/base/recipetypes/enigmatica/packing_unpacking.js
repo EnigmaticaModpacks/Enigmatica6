@@ -298,7 +298,7 @@ onEvent('recipes', (event) => {
                 input: `4x botania:quartz_${type}`,
                 mold: '#thermal:crafting/dies/packing_2x2',
                 id_suffix: `${type}_quartz_gems_to_block`,
-            },
+            }
         );
     });
 

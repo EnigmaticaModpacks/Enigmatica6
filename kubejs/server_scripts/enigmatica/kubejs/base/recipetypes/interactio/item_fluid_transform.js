@@ -105,7 +105,7 @@ onEvent('recipes', (event) => {
                 output: recipe.output,
                 consume_fluid: recipe.consume_fluid,
             }),
-            id_prefix,
+            id_prefix
         );
     });
 
@@ -122,7 +122,7 @@ onEvent('recipes', (event) => {
                 },
                 consume_fluid: 0.0,
             }),
-            id_prefix,
+            id_prefix
         );
     });
 
@@ -139,7 +139,7 @@ onEvent('recipes', (event) => {
                 },
                 consume_fluid: 0.0,
             }),
-            id_prefix,
+            id_prefix
         );
     });
 
@@ -157,7 +157,7 @@ onEvent('recipes', (event) => {
                 },
                 consume_fluid: 0.0,
             }),
-            id_prefix,
+            id_prefix
         );
     });
 });

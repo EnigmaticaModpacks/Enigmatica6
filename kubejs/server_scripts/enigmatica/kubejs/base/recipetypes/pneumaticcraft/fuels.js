@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
                 air_per_bucket: recipe.air * multiplier,
                 burn_rate: recipe.rate,
             }),
-            id_prefix,
+            id_prefix
         );
     });
 });

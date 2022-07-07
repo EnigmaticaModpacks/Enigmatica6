@@ -109,7 +109,7 @@ onEvent('recipes', (event) => {
                 time: recipe.time,
                 noBottleInput: recipe.noBottleInput,
             }),
-            id_prefix,
+            id_prefix
         );
     });
 });

@@ -581,7 +581,7 @@ onEvent('recipes', (event) => {
                         'kubejs:partial_stim_pack',
                         Item.of(
                             'ars_nouveau:potion_flask',
-                            '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:1b,Amplifier:0b}],Potion:"minecraft:strong_regeneration"}',
+                            '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:1b,Amplifier:0b}],Potion:"minecraft:strong_regeneration"}'
                         ),
                     ],
                     output: 'kubejs:partial_stim_pack',
@@ -592,7 +592,7 @@ onEvent('recipes', (event) => {
                         'kubejs:partial_stim_pack',
                         Item.of(
                             'ars_nouveau:potion_flask',
-                            '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:22b,Amplifier:1b}],Potion:"apotheosis:strong_resistance"}',
+                            '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:22b,Amplifier:1b}],Potion:"apotheosis:strong_resistance"}'
                         ),
                     ],
                     output: 'kubejs:partial_stim_pack',
@@ -1217,7 +1217,7 @@ onEvent('recipes', (event) => {
             recipes.push({
                 input: Ingredient.customNBT(
                     Item.of(armor.base, '{Damage:0}').weakNBT(),
-                    (nbt) => !nbt.SequencedAssembly,
+                    (nbt) => !nbt.SequencedAssembly
                 ),
                 outputs: [armor.result],
                 transitionalItem: armor.base,
@@ -1257,7 +1257,7 @@ onEvent('recipes', (event) => {
                 sequence.push(event.recipes.create.deploying(step.output, step.input));
             } else if (step.type == 'cutting') {
                 sequence.push(
-                    event.recipes.create.cutting(step.output, step.input).processingTime(step.processingTime),
+                    event.recipes.create.cutting(step.output, step.input).processingTime(step.processingTime)
                 );
             } else if (step.type == 'filling') {
                 sequence.push(event.recipes.create.filling(step.output, step.input));

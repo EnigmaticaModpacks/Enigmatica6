@@ -84,7 +84,7 @@ onEvent('recipes', (event) => {
                     C: 'farmersdelight:basket',
                 },
                 id: `${id_prefix}oak_half_drawers_4_from_${wood.logType}_slab`,
-            },
+            }
         );
     });
 

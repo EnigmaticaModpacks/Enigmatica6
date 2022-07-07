@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
                 output: `9x tconstruct:${material}_nugget`,
                 inputs: [`#forge:ingots/${material}`],
                 id: `tconstruct:common/materials/${material}_nugget_from_ingot`,
-            },
+            }
         );
     });
 

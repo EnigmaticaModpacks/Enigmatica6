@@ -94,7 +94,7 @@ onEvent('recipes', (event) => {
         {
             output: Item.of(
                 'pneumaticcraft:liquid_compressor',
-                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}',
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
             ),
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
@@ -129,7 +129,7 @@ onEvent('recipes', (event) => {
         {
             output: Item.of(
                 'pneumaticcraft:pressure_chamber_valve',
-                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}',
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
             ),
             pattern: [' A ', 'CBC'],
             key: {
@@ -182,7 +182,7 @@ onEvent('recipes', (event) => {
         {
             output: Item.of(
                 'pneumaticcraft:advanced_liquid_compressor',
-                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}',
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
             ),
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
@@ -197,7 +197,7 @@ onEvent('recipes', (event) => {
         {
             output: Item.of(
                 'pneumaticcraft:electrostatic_compressor',
-                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}',
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
             ),
             pattern: ['ABA', 'FDG', 'CEC'],
             key: {
@@ -214,7 +214,7 @@ onEvent('recipes', (event) => {
         {
             output: Item.of(
                 'pneumaticcraft:thermal_compressor',
-                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}',
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
             ),
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {
@@ -420,7 +420,7 @@ onEvent('recipes', (event) => {
         {
             output: Item.of(
                 'pneumaticcraft:vacuum_pump',
-                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}',
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
             ),
             pattern: ['AEA', 'CBC', 'DFD'],
             key: {

@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
             toReplace: 'thermal:fluid_cell',
             replaceWith: Item.of(
                 'thermal:fluid_cell',
-                '{BlockEntityTag:{TankInv:[{FluidName:"minecraft:empty",Capacity:32000,Tank:0b,Amount:0}]}}',
+                '{BlockEntityTag:{TankInv:[{FluidName:"minecraft:empty",Capacity:32000,Tank:0b,Amount:0}]}}'
             ),
         },
         {
@@ -17,7 +17,7 @@ onEvent('recipes', (event) => {
             toReplace: 'thermal:energy_cell',
             replaceWith: Item.of(
                 'thermal:energy_cell',
-                '{BlockEntityTag:{EnergyMax:1000000,EnergySend:1000,Energy:0,EnergyRecv:1000}}',
+                '{BlockEntityTag:{EnergyMax:1000000,EnergySend:1000,Energy:0,EnergyRecv:1000}}'
             ),
         },
     ];

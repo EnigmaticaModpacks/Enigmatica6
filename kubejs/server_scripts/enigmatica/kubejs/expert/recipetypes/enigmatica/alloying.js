@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
                 experience: recipe.experience,
                 smelttime: recipe.smelttime,
             }),
-            id_prefix,
+            id_prefix
         );
 
         // create
@@ -38,11 +38,11 @@ onEvent('recipes', (event) => {
         // immersiveengineering
         fallback_id(
             event.recipes.immersiveengineering.alloy(recipe.output, recipe.inputs[0], recipe.inputs[1]),
-            id_prefix,
+            id_prefix
         );
         fallback_id(
             event.recipes.immersiveengineering.arc_furnace([recipe.output], recipe.inputs[0], [recipe.inputs[1]]),
-            id_prefix,
+            id_prefix
         );
 
         // thermal

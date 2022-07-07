@@ -171,7 +171,7 @@ onEvent('recipes', (event) => {
         recipes.push({
             inputs: [Fluid.of(honeyVariety, 1000)],
             output: Item.of(
-                honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_block' : `${honeyVariety}_block`,
+                honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_block' : `${honeyVariety}_block`
             ),
             energy: 4000,
             id: `thermal:machine/chiller/chiller_${honey}_to_${honey}_block`,

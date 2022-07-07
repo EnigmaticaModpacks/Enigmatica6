@@ -94,7 +94,7 @@ onEvent('recipes', (event) => {
                 },
                 energy: 1600,
             }),
-            `${id_prefix}low/`,
+            `${id_prefix}low/`
         );
     });
     normalAmountInputs.forEach((input) => {
@@ -110,7 +110,7 @@ onEvent('recipes', (event) => {
                 },
                 energy: 6400,
             }),
-            `${id_prefix}high/`,
+            `${id_prefix}high/`
         );
     });
 });

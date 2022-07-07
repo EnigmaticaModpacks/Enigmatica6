@@ -98,7 +98,7 @@ onEvent('recipes', (event) => {
                     },
                     energy: 6400,
                 }),
-                id_prefix,
+                id_prefix
             );
         });
     });

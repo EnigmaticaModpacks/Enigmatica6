@@ -203,7 +203,7 @@ onEvent('server.datapack.high_priority', (event) => {
                     eterna: 1,
                     arcana: 1.5,
                 },
-            },
+            }
         );
     });
 

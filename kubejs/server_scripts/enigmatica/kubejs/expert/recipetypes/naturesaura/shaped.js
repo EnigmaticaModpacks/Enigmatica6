@@ -117,7 +117,7 @@ onEvent('recipes', (event) => {
                 A: '#upgrade_aquatic:coralstone/infused',
                 B: Item.of(
                     'minecraft:water_bucket',
-                    '{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:\'{"text":"#MLG-YOLO"}\'}}',
+                    '{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:\'{"text":"#MLG-YOLO"}\'}}'
                 ).weakNBT(),
                 C: 'naturesaura:token_euphoria',
             },

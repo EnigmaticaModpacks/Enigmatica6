@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
                 experience: recipe.experience,
                 smelttime: recipe.smelttime,
             }),
-            id_prefix,
+            id_prefix
         );
     });
 });

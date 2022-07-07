@@ -153,18 +153,18 @@ onEvent('recipes', (event) => {
                 A: 'alexsmobs:mysterious_worm',
                 B: Item.of(
                     'rftoolsutility:syringe',
-                    '{mobName:"alexsmobs:warped_mosco",mobId:"alexsmobs:warped_mosco",level:10}',
+                    '{mobName:"alexsmobs:warped_mosco",mobId:"alexsmobs:warped_mosco",level:10}'
                 ),
                 C: 'meetyourfight:aether_glazed_cupcake',
                 D: 'rftoolsutility:moduleplus_template',
                 E: Item.of(
                     'rftoolsutility:syringe',
-                    '{mobName:"upgrade_aquatic:flare",mobId:"upgrade_aquatic:flare",level:10}',
+                    '{mobName:"upgrade_aquatic:flare",mobId:"upgrade_aquatic:flare",level:10}'
                 ),
                 F: 'alexsmobs:tarantula_hawk_elytra',
                 G: Item.of(
                     'rftoolsutility:syringe',
-                    '{mobName:"alexsmobs:void_worm",mobId:"alexsmobs:void_worm",level:10}',
+                    '{mobName:"alexsmobs:void_worm",mobId:"alexsmobs:void_worm",level:10}'
                 ),
             },
             id: 'rftoolsutility:flight_module',

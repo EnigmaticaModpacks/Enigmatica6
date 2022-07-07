@@ -637,7 +637,7 @@ onEvent('recipes', (event) => {
                     'atum:ceramic_slab_white',
                     `#forge:dyes/${color}`,
                 ]),
-                id_prefix,
+                id_prefix
             );
             fallback_id(
                 event.shapeless(Item.of(`6x atum:ceramic_tile_${color}`), [
@@ -649,7 +649,7 @@ onEvent('recipes', (event) => {
                     'atum:ceramic_tile_white',
                     `#forge:dyes/${color}`,
                 ]),
-                id_prefix,
+                id_prefix
             );
             fallback_id(
                 event.shapeless(Item.of(`3x atum:ceramic_stairs_${color}`), [
@@ -658,11 +658,11 @@ onEvent('recipes', (event) => {
                     'atum:ceramic_stairs_white',
                     `#forge:dyes/${color}`,
                 ]),
-                id_prefix,
+                id_prefix
             );
             fallback_id(
                 event.shapeless(`atum:ceramic_wall_${color}`, ['atum:ceramic_wall_white', `#forge:dyes/${color}`]),
-                id_prefix,
+                id_prefix
             );
         }
     });

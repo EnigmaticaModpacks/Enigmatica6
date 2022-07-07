@@ -92,7 +92,7 @@ onEvent('recipes', (event) => {
                 acceptChaliceInput: true,
                 copyNBTToOutputs: false,
             }),
-            id_prefix,
+            id_prefix
         );
     });
 });

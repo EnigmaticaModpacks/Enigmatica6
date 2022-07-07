@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
                     B: Ingredient.of(lower_tiers.map((item) => `powah:ender_cell_${item}`)),
                 },
                 id: `${id_prefix}ender_cell_${tier}`,
-            },
+            }
         );
     });
 

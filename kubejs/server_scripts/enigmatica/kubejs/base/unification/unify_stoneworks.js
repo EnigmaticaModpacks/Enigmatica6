@@ -36,7 +36,7 @@ function pedestals_stoneworks(event, material, type) {
                 count: 1,
             },
         }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`,
+        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
     );
 }
 
@@ -61,7 +61,7 @@ function industrialforegoing_stoneworks(event, material, type) {
             lavaConsume: lavaConsume,
             type: 'industrialforegoing:stonework_generate',
         }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`,
+        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
     );
 }
 
@@ -75,6 +75,6 @@ function thermal_stoneworks(event, material) {
                 item: material,
             },
         }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`,
+        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
     );
 }
