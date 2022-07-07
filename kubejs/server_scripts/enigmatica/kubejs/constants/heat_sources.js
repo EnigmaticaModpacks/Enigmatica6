@@ -35,7 +35,4 @@ const heatSources = [
 ];
 
 // (non-fire/campfire) heat sources that do not have a solid top face
-const nonSolidHeatSources = [
-    'minecraft:lava',
-    'create:lit_blaze_burner'
-];
+const nonSolidHeatSources = ['minecraft:lava', 'create:lit_blaze_burner'];
