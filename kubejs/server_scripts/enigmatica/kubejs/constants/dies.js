@@ -21,4 +21,9 @@ const sharedDies = [
 
 const thermalDies = ['coin'];
 
-const immersiveEngineeringDies = ['plate', 'rod', 'wire', 'bullet_casing'];
+const immersiveEngineeringDies = [
+    'plate', //
+    'rod',
+    'wire',
+    'bullet_casing'
+];

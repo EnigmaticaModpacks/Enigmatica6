@@ -156,9 +156,19 @@ onEvent('generic.loot_tables', (event) => {
             ]
         }
     ];
-    const mansions = ['birch', 'desert', 'jungle', 'oak', 'savanna', 'snowy', 'taiga'];
+
+    const mansions = [
+        'birch', //
+        'desert',
+        'jungle',
+        'oak',
+        'savanna',
+        'snowy',
+        'taiga'
+    ];
+
     mansions.forEach((mansion) => {
-        event.modify('repurposed_structures:chests/mansion/' + mansion + '_storage', (table) => {
+        event.modify(`repurposed_structures:chests/mansion/${mansion}_storage`, (table) => {
             pools.forEach((pool) => {
                 table.addPool((newPool) => {
                     newPool.setUniformRolls(pool.rolls.min, pool.rolls.max);

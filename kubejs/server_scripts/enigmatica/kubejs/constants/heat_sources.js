@@ -1,6 +1,12 @@
 //priority: 1000
 
-const fires = ['minecraft:fire', 'minecraft:soul_fire', 'byg:boric_fire', 'byg:cryptic_fire', 'occultism:spirit_fire'];
+const fires = [
+    'minecraft:fire', //
+    'minecraft:soul_fire',
+    'byg:boric_fire',
+    'byg:cryptic_fire',
+    'occultism:spirit_fire'
+];
 
 const campfires = [
     'minecraft:campfire',
