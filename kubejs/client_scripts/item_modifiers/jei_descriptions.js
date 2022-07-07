@@ -507,10 +507,6 @@ onEvent('jei.information', (event) => {
         {
             items: ['naturesaura:birth_spirit'],
             text: [`Obtained by manually breeding animals in high Aura areas.`]
-        },
-        {
-            items: ['emendatusenigmatica:sulfur_gem', 'emendatusenigmatica:sulfur_dust'],
-            text: [`Sulfur Ore is NOT obtainable through mining in this modpack. Check out other recipes for the Sulfur Dust (Farmer's Delight's cooking pot if you're playing expert mode).`]
         }
     ];
 

@@ -35,6 +35,10 @@ onEvent('jei.information', (event) => {
         {
             items: ['refinedstorage:256k_fluid_storage_part', 'refinedstorage:64k_fluid_storage_part'],
             text: ['Crafting is disabled in Expert, begin with the 1024k Fluid Storage Part.']
+        },
+        {
+            items: ['emendatusenigmatica:sulfur_gem', 'emendatusenigmatica:sulfur_dust'],
+            text: [`Sulfur Ore is NOT obtainable through mining in this modpack. Check out Farmer's Delight's cooking pot recipe.`]
         }
     ];
 

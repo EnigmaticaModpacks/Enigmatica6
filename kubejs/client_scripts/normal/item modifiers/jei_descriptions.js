@@ -12,6 +12,11 @@ onEvent('jei.information', (event) => {
         {
             items: ['atum:nebu_hammer'],
             description: ['Capable of breaking down Godblocks into Atum Artifacts.']
+        },
+        ,
+        {
+            items: ['emendatusenigmatica:sulfur_gem', 'emendatusenigmatica:sulfur_dust'],
+            text: [`Sulfur Ore is NOT obtainable through mining in this modpack. Check out other recipes for the Sulfur Dust.`]
         }
     ];
 
