@@ -20,18 +20,10 @@ const tier0Hives = [
     'resourcefulbees:warped_nylium_bee_nest'
 ];
 
-const tier1Hives = [
-    'resourcefulbees:t1_beehive'
-];
+const tier1Hives = ['resourcefulbees:t1_beehive'];
 
-const tier2Hives = [
-    'resourcefulbees:t2_beehive'
-];
+const tier2Hives = ['resourcefulbees:t2_beehive'];
 
-const tier3Hives = [
-    'resourcefulbees:t3_beehive'
-];
+const tier3Hives = ['resourcefulbees:t3_beehive'];
 
-const tier4Hives = [
-    'resourcefulbees:t4_beehive'
-];
+const tier4Hives = ['resourcefulbees:t4_beehive'];

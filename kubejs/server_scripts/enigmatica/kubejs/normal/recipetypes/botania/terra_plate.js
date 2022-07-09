@@ -5,9 +5,19 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: [
-                Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee", BeeType: "mana", Color: "#4c97ff"}).weakNBT().toJson()
+                Item.of('resourcefulbees:bee_jar', {
+                    Entity: 'resourcefulbees:mana_bee',
+                    BeeType: 'mana',
+                    Color: '#4c97ff'
+                })
+                    .weakNBT()
+                    .toJson()
             ],
-            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:terrestrial_bee", BeeType: "terrestrial", Color: "#5bf23d"}).toJson(),
+            output: Item.of('resourcefulbees:bee_jar', {
+                Entity: 'resourcefulbees:terrestrial_bee',
+                BeeType: 'terrestrial',
+                Color: '#5bf23d'
+            }).toJson(),
             mana: 2000000,
             id: 'botania:terra_plate/terrestrial_bee_plate'
         },

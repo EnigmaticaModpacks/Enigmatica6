@@ -445,6 +445,17 @@ onEvent('recipes', (event) => {
                                 Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Chronicle of Shadows"}]}'
                             }
                         }
+                    },
+                    advancedperipherals: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Advanced Peripherals' },
+                            'patchouli:book': 'advancedperipherals:manual',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Advanced Peripherals"}]}'
+                            }
+                        }
                     }
                 }
             }),
@@ -603,38 +614,51 @@ onEvent('recipes', (event) => {
         otherSimplePots.push('botanypots:botany_pot');
         otherHopperPots.push('botanypots:hopper_botany_pot');
 
-        event.shapeless(`botanypots:${color}_botany_pot`, [
-            Ingredient.of(otherSimplePots),
-            `#forge:dyes/${color}`
-        ]).id(`${id_prefix}dye_botany_pot_${color}`);
+        event
+            .shapeless(`botanypots:${color}_botany_pot`, [Ingredient.of(otherSimplePots), `#forge:dyes/${color}`])
+            .id(`${id_prefix}dye_botany_pot_${color}`);
 
-        event.shapeless(`botanypots:hopper_${color}_botany_pot`, [
-            Ingredient.of(otherHopperPots),
-            `#forge:dyes/${color}`
-        ]).id(`${id_prefix}dye_hopper_botany_pot_${color}`);
+        event
+            .shapeless(`botanypots:hopper_${color}_botany_pot`, [
+                Ingredient.of(otherHopperPots),
+                `#forge:dyes/${color}`
+            ])
+            .id(`${id_prefix}dye_hopper_botany_pot_${color}`);
 
         if (color != 'white') {
-            fallback_id(event.shapeless(Item.of(`2x atum:ceramic_slab_${color}`), [
-                'atum:ceramic_slab_white',
-                'atum:ceramic_slab_white',
-                `#forge:dyes/${color}`
-            ]), id_prefix);
-            fallback_id(event.shapeless(Item.of(`6x atum:ceramic_tile_${color}`), [
-                'atum:ceramic_tile_white',
-                'atum:ceramic_tile_white',
-                'atum:ceramic_tile_white',
-                'atum:ceramic_tile_white',
-                'atum:ceramic_tile_white',
-                'atum:ceramic_tile_white',
-                `#forge:dyes/${color}`
-            ]), id_prefix);
-            fallback_id(event.shapeless(Item.of(`3x atum:ceramic_stairs_${color}`), [
-                'atum:ceramic_stairs_white',
-                'atum:ceramic_stairs_white',
-                'atum:ceramic_stairs_white',
-                `#forge:dyes/${color}`
-            ]), id_prefix);
-            fallback_id(event.shapeless(`atum:ceramic_wall_${color}`, ['atum:ceramic_wall_white', `#forge:dyes/${color}`]), id_prefix);
+            fallback_id(
+                event.shapeless(Item.of(`2x atum:ceramic_slab_${color}`), [
+                    'atum:ceramic_slab_white',
+                    'atum:ceramic_slab_white',
+                    `#forge:dyes/${color}`
+                ]),
+                id_prefix
+            );
+            fallback_id(
+                event.shapeless(Item.of(`6x atum:ceramic_tile_${color}`), [
+                    'atum:ceramic_tile_white',
+                    'atum:ceramic_tile_white',
+                    'atum:ceramic_tile_white',
+                    'atum:ceramic_tile_white',
+                    'atum:ceramic_tile_white',
+                    'atum:ceramic_tile_white',
+                    `#forge:dyes/${color}`
+                ]),
+                id_prefix
+            );
+            fallback_id(
+                event.shapeless(Item.of(`3x atum:ceramic_stairs_${color}`), [
+                    'atum:ceramic_stairs_white',
+                    'atum:ceramic_stairs_white',
+                    'atum:ceramic_stairs_white',
+                    `#forge:dyes/${color}`
+                ]),
+                id_prefix
+            );
+            fallback_id(
+                event.shapeless(`atum:ceramic_wall_${color}`, ['atum:ceramic_wall_white', `#forge:dyes/${color}`]),
+                id_prefix
+            );
         }
     });
 

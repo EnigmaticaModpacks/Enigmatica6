@@ -30,12 +30,15 @@ onEvent('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        fallback_id(event.custom({
-            type: 'betterendforge:alloying',
-            ingredients: recipe.ingredients,
-            result: recipe.result,
-            experience: recipe.experience,
-            smelttime: recipe.smelttime
-        }), id_prefix);
+        fallback_id(
+            event.custom({
+                type: 'betterendforge:alloying',
+                ingredients: recipe.ingredients,
+                result: recipe.result,
+                experience: recipe.experience,
+                smelttime: recipe.smelttime
+            }),
+            id_prefix
+        );
     });
 });

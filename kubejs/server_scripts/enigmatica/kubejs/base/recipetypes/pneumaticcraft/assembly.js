@@ -25,11 +25,13 @@ onEvent('recipes', (event) => {
             constructed_input.count = recipe.input_count;
         }
 
-        event.custom({
-            type: `pneumaticcraft:assembly_${recipe.program}`,
-            input: constructed_input,
-            result: recipe.output,
-            program: recipe.program
-        }).id(recipe.id.replace('assembly_', `assembly_${recipe.program}`));
+        event
+            .custom({
+                type: `pneumaticcraft:assembly_${recipe.program}`,
+                input: constructed_input,
+                result: recipe.output,
+                program: recipe.program
+            })
+            .id(recipe.id.replace('assembly_', `assembly_${recipe.program}`));
     });
 });

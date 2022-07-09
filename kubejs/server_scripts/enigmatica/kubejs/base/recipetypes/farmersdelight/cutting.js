@@ -107,12 +107,15 @@ onEvent('recipes', (event) => {
             let ingredients = Ingredient.of(soil);
             let result = [Item.of(farmland)];
 
-            fallback_id(event.custom({
-                type: 'farmersdelight:cutting',
-                ingredients: [ingredients],
-                tool: tool,
-                result: result
-            }), id_prefix);
+            fallback_id(
+                event.custom({
+                    type: 'farmersdelight:cutting',
+                    ingredients: [ingredients],
+                    tool: tool,
+                    result: result
+                }),
+                id_prefix
+            );
         });
     });
 
@@ -138,12 +141,15 @@ onEvent('recipes', (event) => {
 
             event.remove({ mod: 'farmersdelight', output: recipe.output });
 
-            fallback_id(event.custom({
-                type: 'farmersdelight:cutting',
-                ingredients: [ingredients],
-                tool: tool,
-                result: result
-            }), id_prefix);
+            fallback_id(
+                event.custom({
+                    type: 'farmersdelight:cutting',
+                    ingredients: [ingredients],
+                    tool: tool,
+                    result: result
+                }),
+                id_prefix
+            );
         });
     });
 });

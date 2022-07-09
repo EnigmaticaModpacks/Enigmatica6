@@ -702,7 +702,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'masterfulmachinery:auto_iridescent_altar_controller',
-            pattern: ['ABCBA', 'BDEDB', 'CDFDC', 'BGHGB', 'ABIBA'],
+            pattern: ['ABCBA', 'BDEDB', 'CJFKC', 'BGHGB', 'ABIBA'],
             key: {
                 A: 'thermal:enderium_glass',
                 B: '#forge:plates/steel',
@@ -712,7 +712,9 @@ onEvent('recipes', (event) => {
                 F: '#industrialforegoing:machine_frame/supreme',
                 G: 'xnet:netcable_red',
                 H: '#forge:circuits/ultimate',
-                I: 'xnet:advanced_connector_red'
+                I: 'xnet:advanced_connector_red',
+                J: 'kubejs:bright_constellation_box',
+                K: 'kubejs:dim_constellation_box'
             },
             id: `${id_prefix}auto_iridescent_altar_controller`
         },

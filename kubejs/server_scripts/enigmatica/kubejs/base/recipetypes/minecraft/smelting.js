@@ -178,7 +178,7 @@ onEvent('recipes', (event) => {
     ];
 
     let atumRecyclables = {
-        "iron": [
+        iron: [
             'desert_boots_iron',
             'desert_chest_iron',
             'desert_helmet_iron',
@@ -191,7 +191,7 @@ onEvent('recipes', (event) => {
             'camel_iron_armor',
             'desert_wolf_iron_armor'
         ],
-        "gold": [
+        gold: [
             'desert_boots_gold',
             'desert_chest_gold',
             'desert_helmet_gold',

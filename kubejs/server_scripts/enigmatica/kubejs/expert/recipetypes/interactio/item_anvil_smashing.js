@@ -62,10 +62,7 @@ onEvent('recipes', (event) => {
             id: 'sophisticatedbackpacks:void_upgrade'
         },
         {
-            inputs: [
-                Item.of('computercraft:computer_normal'),
-                Item.of('computercraft:disk', '{Color:1118481}')
-            ],
+            inputs: [Item.of('computercraft:computer_normal'), Item.of('computercraft:disk', '{Color:1118481}')],
             output: {
                 entries: [{ result: { item: 'computercraft:pocket_computer_normal' }, weight: 1 }],
                 rolls: 1
@@ -74,10 +71,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}pocket_computer_normal`
         },
         {
-            inputs: [
-                Item.of('computercraft:computer_advanced'),
-                Item.of('computercraft:disk', '{Color:1118481}')
-            ],
+            inputs: [Item.of('computercraft:computer_advanced'), Item.of('computercraft:disk', '{Color:1118481}')],
             output: {
                 entries: [{ result: { item: 'computercraft:pocket_computer_advanced' }, weight: 1 }],
                 rolls: 1

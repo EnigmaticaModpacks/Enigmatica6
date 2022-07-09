@@ -86,17 +86,20 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((input) => {
         input.inputs.forEach((seed) => {
-            fallback_id(event.custom({
-                type: 'immersiveengineering:squeezer',
-                fluid: {
-                    fluid: 'immersiveengineering:plantoil',
-                    amount: input.value
-                },
-                input: {
-                    item: seed
-                },
-                energy: 6400
-            }), id_prefix);
+            fallback_id(
+                event.custom({
+                    type: 'immersiveengineering:squeezer',
+                    fluid: {
+                        fluid: 'immersiveengineering:plantoil',
+                        amount: input.value
+                    },
+                    input: {
+                        item: seed
+                    },
+                    energy: 6400
+                }),
+                id_prefix
+            );
         });
     });
 });
