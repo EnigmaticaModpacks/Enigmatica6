@@ -56,23 +56,6 @@ onEvent('server.datapack.low_priority', (event) => {
                     requiredTools: { hammer: 4 }
                 },
                 {
-                    key: 'brass',
-                    category: 'metal',
-                    primary: '5.5',
-                    secondary: '4.7',
-                    tertiary: '3.1',
-                    durability: '450',
-                    integrityCost: '2',
-                    integrityGain: '4',
-                    magicCapacity: '118',
-                    toolLevel: '2',
-                    toolEfficiency: '7',
-                    tints: { glyph: '978b37', texture: '978b37' },
-                    textures: ['shiny', 'default'],
-                    material: { tag: 'forge:ingots/brass', count: 1 },
-                    requiredTools: { hammer: 2 }
-                },
-                {
                     key: 'andesite_alloy',
                     category: 'metal',
                     primary: '5.1',
