@@ -19,6 +19,13 @@ onEvent('recipes', (event) => {
             count: 1,
             mana: 19000,
             id: `${id_prefix}manasteel_block`
+        },
+        {
+            input: 'architects_palette:sunstone',
+            output: 'architects_palette:moonstone',
+            count: 1,
+            mana: 50,
+            id: `${id_prefix}moonstone_from_sunstone`
         }
     ];
 
