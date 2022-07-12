@@ -1540,7 +1540,7 @@
 			title: "Your first program!"
 			icon: "rftoolscontrol:program_card"
 			x: -1.5d
-			y: -4.5d
+			y: -4.0d
 			subtitle: "Practice: Variables"
 			description: [
 				"It's time. We are gonna actually code something!"
@@ -1734,6 +1734,92 @@
 				id: "76DA4E58186F04A0"
 				type: "checkmark"
 				title: "Got it!"
+			}]
+		}
+		{
+			title: "Lets create some functions."
+			icon: "thermal:wrench"
+			x: -2.0d
+			y: -5.5d
+			subtitle: "Practice: Creating a function variable. [WIP]"
+			description: [
+				"Lets create our first functions!"
+				"This program will use your own functions to execute code multiple times later on."
+				""
+				"Lets start with the stuff from last task. Create 5 variables, 3 of them will be numbers and 2 strings. What is their value is up to you."
+				"Lets create a function, that will have 2 arguments. It needs to add those arguments, print \"Sum of arguments equals: \" with a sum at the end, and return the sum."
+				"Now lets create another function, that will take three arguments. First argument will be divided by the second argument, and added at the end of the third one. Return the entire string you got."
+				"Now lets create another variable and call second function as its value. First argument will be our 1st function, with two of the number variables as its arguments, for second argument set third number argument, and for the last one, one of the strings."
+				"Lastly lets get what our function returned, add at the end our second string and print it!"
+				""
+				"If done correctly you should see one line on the screen with \"Sum of the arguemnts equals: \" and sum of numbers you put into the function, and second line with one of your strings, a sum of first two numbers divided by third one and your second string at the end."
+			]
+			dependencies: [
+				"5E591D65A5014852"
+				"0C2F459BCB9222EC"
+			]
+			hide: true
+			min_width: 400
+			id: "7A434175E2B1AE04"
+			tasks: [
+				{
+					id: "2BB217B036DE0F70"
+					type: "checkmark"
+					title: "Got it working!"
+				}
+				{
+					id: "33326F96031C082C"
+					type: "item"
+					title: "Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Is 6 higher than 8?"
+			icon: "thermal:wrench"
+			x: -1.0d
+			y: -7.0d
+			subtitle: "Practice: Creating Conditions [WIP]"
+			description: [
+				"Is 6 higher than 2+3? Is \"E6\" the same as \"e6\"? What to do if something?"
+				"In this task we will create our first conditions, that will for sure let us know what is what!"
+				""
+				"Lets start with creating few variables, get 4 numbers and 2 strings, with something similiar like \"Enigmatica 6\" and \"enigmatica 8\"."
+				"Lets create our first condition. Check if first number variable is higher than second one, if so print \"Its bigger!\", if not print \"Its smaller!\"."
+				"Second condition will be more advanced, lets get sum of our first and second number, and check if its higher or equal to the third one OR if its equal to the fourth one. If condition is meet, print first string, if not, check if first string is the same as second string, if it is, print \"They are the same!\", but if not, change second string to be the same as first, and print \"They weren't the same, but they are now\"."
+				"If done correctly you should get no errors, and get good outputs that agree with instructions written in this quest:"
+				"If first condition is meet, you should see \"Its bigger!\", if not \"Its smaller!\""
+				"If second condition is meet, you should see what you wrote in your first string, if not, you should see either \"They are the same!\" or \"They weren't the same, but they are now.\" if your strings weren't identical."
+				""
+				"Now if your code works, you can experiment a bit and see how the output changes with different inputs. Have fun!"
+			]
+			dependencies: [
+				"7A434175E2B1AE04"
+				"76DA4E58186F04A0"
+			]
+			hide: true
+			min_width: 400
+			id: "788EAA0E430DA5C3"
+			tasks: [{
+				id: "783230BC86FE4A38"
+				type: "checkmark"
+				title: "Got it working!"
 			}]
 		}
 	]
