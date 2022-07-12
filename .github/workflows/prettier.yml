@@ -19,4 +19,5 @@ jobs:
 
       - run: npx --yes prettier -v
       - run: deno run --allow-run .github/actions/ci/prettier.ts
+      - run: git pull
       - run: git push
