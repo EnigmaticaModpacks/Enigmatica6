@@ -1178,11 +1178,43 @@
 		{
 			title: "Type: Table"
 			icon: "computercraft:printed_page"
-			x: 3.65d
-			y: -4.8d
+			x: 3.0d
+			y: -4.0d
 			subtitle: "Lua Basics #1 - Variable types"
-			description: ["TODO: Do it actually ^^\" Tables are actually hard to explain, so thats off for later"]
-			dependencies: ["29C780353E7FB720"]
+			description: [
+				"Tables are one of the most complicated \"variables\" in here, so you will need to read a lot more about them if you want to learn more than basic of basics."
+				""
+				"To start of technically tables aren't \"variables\". They are dynamic objects that can be dynamically changed. But to not make a brain washing process here, I will call it \"variable type\" so you will not think its used differently."
+				""
+				"To create a table, its pretty simple, you just use \"\\{\\}\" for any variable's value."
+				""
+				"> local my_first_table = \\{\\} -- Create a relation to that table, for now its empty."
+				""
+				"Table is an array, that means it can store multiple variables inside of it, and all of them can be accessed with just one name. However in tables, those variables are called \"entries\". Every entry has its own Key and its value. Similiarly to a variable, but its in group!"
+				"To read/write to some entry, you need to use its key in the brackets next to the table, like this:"
+				""
+				"> my_first_table[1] = \"Hello\""
+				"> print my_first_table[1] -> Prints \"Hello\""
+				""
+				"In tables, you can store nearly anything, string, function, even another list! If you have list of the functions its API, and in that way you can create your own simple API. "
+				"If your key is a string, you can skip the brackets and just use the string name with a dot to get to that entry:"
+				""
+				"> my_first_table.hello = \"Hello again\""
+				""
+				"It the similiar way you use APIs, but complete guide on that will be later on."
+				"Note: a.x and a[x] isn't the same! x in first case is a string, not a variable like in second one!"
+				""
+				"Lua defaults empty entries to nil, and you can set non-empty ones to nil to clear them. Tables aren't fixed, if there will be no more relations to it, it will be deleted from the memory. To delete a table completly, set every variable that has copy of that table to nil."
+				""
+				"Important note is that Lua doesn't return tables starting at key 0, like most of the languages do, Lua returns tables with key 1 and going up. You can do table starting at key 0 manually, but its not recommended if you aren't gonna use negative numbers."
+				""
+				"To learn more about tables if needed, check out Lua docs!"
+			]
+			dependencies: [
+				"29C780353E7FB720"
+				"20F5794B8753B648"
+			]
+			min_width: 500
 			id: "152F6E8D35D2069A"
 			tasks: [{
 				id: "124F45AFAA7A0206"
@@ -1193,8 +1225,8 @@
 		{
 			title: "Type: Boolean"
 			icon: "computercraft:printed_page"
-			x: 3.0d
-			y: -4.0d
+			x: 7.35d
+			y: -4.8d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
 				"Boolean is the easiest type in every programming language. It can have 2 states, \"True\" and \"False\"."
@@ -1204,7 +1236,11 @@
 				""
 				"A lot of functions are returning a boolean variable after they ended they work, it is useful to check for that output to see if what you wanted to do was actually done."
 			]
-			dependencies: ["29C780353E7FB720"]
+			dependencies: [
+				"29C780353E7FB720"
+				"401DE5F2E19708E0"
+			]
+			hide: true
 			min_width: 250
 			id: "182654F933DE1815"
 			tasks: [{
@@ -1216,8 +1252,8 @@
 		{
 			title: "Type: Function"
 			icon: "computercraft:printed_page"
-			x: 4.5d
-			y: -5.4d
+			x: 3.65d
+			y: -4.8d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
 				"You already heard of the word \"function\" a few times in this quest line, but did you know it's also one of the variable types?"
@@ -1232,7 +1268,7 @@
 				"> print(string) -- Basic function to write text on the screen. Has one argument."
 				""
 				"In my case I called print(). Some of the functions don't require you to give them arguments, they can even not have any of them, but there can also be functions that require even 10 arguments. Crazy isn't it?!"
-				"In my case, print() requires as its first and only argument some string (Read \"Type: String\" quest to know what a string is)"
+				"In my case, print() requires as its first and only argument some string."
 				"Example usage of print() looks like this:"
 				""
 				"> print(\"This is a test!\") -- Writes on the screen --> This is a test!"
@@ -1245,7 +1281,11 @@
 				""
 				"For more information about functions and how to create them, check Lua Basics #2."
 			]
-			dependencies: ["29C780353E7FB720"]
+			dependencies: [
+				"29C780353E7FB720"
+				"32E1201F35F1A394"
+			]
+			hide: true
 			min_width: 450
 			id: "7B00ECCC48DA0445"
 			tasks: [{
@@ -1257,9 +1297,8 @@
 		{
 			title: "Type: String"
 			icon: "computercraft:printed_page"
-			disable_toast: true
-			x: 7.35d
-			y: -4.8d
+			x: 4.5d
+			y: -5.4d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
 				"String is a type of variable that stores a sequence of characters. You can type here anything, binary code (Binary - Code using ones and zeros), your name, entire address or your homework if you so desire."
@@ -1287,7 +1326,11 @@
 				""
 				"There is also a few different ways to modify your strings and to format them, however those aren't as useful and can be found in Lua docs."
 			]
-			dependencies: ["29C780353E7FB720"]
+			dependencies: [
+				"29C780353E7FB720"
+				"56800F53C736541F"
+			]
+			hide: true
 			min_width: 400
 			id: "32B8B586F03321A7"
 			tasks: [{
@@ -1325,7 +1368,11 @@
 				""
 				"Unfortunately Lua doesn't support anything else than those 4 basic operators. If you want to do anything else you will need to write the function yourself. For creating functions check out Function type in Lua Basics #1"
 			]
-			dependencies: ["29C780353E7FB720"]
+			dependencies: [
+				"29C780353E7FB720"
+				"32D28AB681CE8601"
+			]
+			hide: true
 			min_width: 400
 			id: "08E925A9223FC1BF"
 			tasks: [{
@@ -1367,6 +1414,7 @@
 				"Dev Note: Remember to check this out later on and think if you didn't forget anything important ^^\""
 			]
 			dependencies: ["29C780353E7FB720"]
+			hide: true
 			min_width: 400
 			id: "0944D4C1A4E3C8F3"
 			tasks: [{
@@ -1447,6 +1495,7 @@
 				"TODO: Link to the site with convert Functions"
 			]
 			dependencies: ["29C780353E7FB720"]
+			hide: true
 			min_width: 375
 			id: "356E3B812A576EF7"
 			tasks: [{
@@ -1472,7 +1521,11 @@
 				""
 				"Some functions will return nil when they don't find anything you asked for."
 			]
-			dependencies: ["29C780353E7FB720"]
+			dependencies: [
+				"29C780353E7FB720"
+				"01B3465E67E41884"
+			]
+			hide: true
 			min_width: 400
 			id: "1BFF3074E9708917"
 			tasks: [{
@@ -1725,6 +1778,8 @@
 				"> else"
 				">   print(\"None of condition were meet.\")"
 				"> end"
+				""
+				"Note: The brackets in IF condition are optional, Lua doesn't care if condition is in brackets or not, but its pretty convenient in longer conditions to add them."
 			]
 			dependencies: ["5056B0737A8A8D64"]
 			hide: true
