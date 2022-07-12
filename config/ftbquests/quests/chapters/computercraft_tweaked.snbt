@@ -1692,7 +1692,7 @@
 			icon: "computercraft:printed_pages"
 			x: 9.0d
 			y: -0.5d
-			subtitle: "Lua Basics #3 - If and logic operators"
+			subtitle: "Lua Basics #3 - Creating conditions with IF"
 			description: [
 				"\"if\" is another one of the most important things in coding. Without it we wouldn't be able to create any decisions! \"if\" is used to check if a variable is equal, bigger, smaller etc than another variable / value."
 				""
@@ -1701,6 +1701,30 @@
 				"> if (variable_1 == variable_2) then"
 				""
 				"You probably realized that I didn't use single \"=\" sign, and that's not a mistake! You can not use a single equal sign in this case, as it is used to asign a value to a variable, and not to check its value! Here is the list of logic operators you can use in Lua:"
+				""
+				"●  ==  -> checks if both variables are identical / equal."
+				"●  ~=  -> Same as == , but inverted (checks if both variables aren't identical / equal)."
+				"●  \">\" and \"<\"  -> Checks if 1st variable is bigger / lower than 2nd one (Only numbers)."
+				"●  \">=\" and \"<=\"  -> Checks if 1st variable is bigger / lower than 2nd one or if variables are equal (Only numbers)."
+				""
+				"There are operators that make it possible to combine multiple operators:"
+				""
+				"●  \"and\" -> this operator returns its first argument if it is false, otherwise, it returns its second argument (Example:"
+				"> 6 > 5 and 6 < 5 -- First argument is true, so it returns the second one that is false)"
+				"●  \"or\"  -> returns its first argument if it is not false; otherwise, it returns its second argument."
+				"●  \"not\" -> it reverts what it gots, so if it gets true, it will return false and vice versa."
+				""
+				"After you make your decision requirement, you just need to add code that is gonna be executed if condition is meet. At the end you add \"end\"."
+				""
+				"There is also \"else\" and \"elseif\" commands, that allow you to execute code if conditions aren't meet, or check another condition if first wasn't meet. You use just one \"end\" at the end of entire \"if\"! Example:"
+				""
+				"> if (5 > 6 and 7+2 < 10) then"
+				">   print(\"Its true!\")"
+				"> elseif (\"Hello\" == \"Hello\" or 10-9 <= 0) then"
+				">   print(\"First condition wasn't meet, but second one was!\")"
+				"> else"
+				">   print(\"None of condition were meet.\")"
+				"> end"
 			]
 			dependencies: ["5056B0737A8A8D64"]
 			hide: true
