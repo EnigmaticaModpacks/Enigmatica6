@@ -1,7 +1,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/immersivepetroleum/distillation/';
 
-    recipes = [
+    const recipes = [
         {
             byproducts: [{ item: 'emendatusenigmatica:bitumen_gem', chance: '0.07' }],
             results: [

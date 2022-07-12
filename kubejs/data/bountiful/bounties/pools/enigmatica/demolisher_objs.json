@@ -1,0 +1,12 @@
+{
+    "modsRequired":[],
+    "content":[
+        { "type": "entity", "content": "minecraft:creeper", "amountRange": {"min": 3, "max": 6}, "unitWorth": 400, "weight":100, "timeMult": 3.0},
+        { "type": "item", "content": "minecraft:gunpowder", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
+        { "type": "item", "content": "minecraft:sand", "amountRange": {"min": 24, "max": 48}, "unitWorth": 150, "weight":200},
+        { "type": "item-tag", "content": "forge:slimeballs", "amountRange": {"min": 4, "max": 8}, "unitWorth": 200, "weight":100},
+        { "type": "item", "content": "minecraft:glowstone", "amountRange": {"min": 4, "max": 8}, "unitWorth": 200, "weight":100},
+        { "type": "item", "content": "minecraft:ice", "amountRange": {"min": 1, "max": 4}, "unitWorth": 400, "weight":50},
+        { "type": "item", "content": "minecraft:ender_pearl", "amountRange": {"min": 1, "max": 4}, "unitWorth": 400, "weight":50}        
+    ]
+}

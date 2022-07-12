@@ -27,10 +27,10 @@ global.isExpertMode = packMode == 'expert';
 const isNormalMode = packMode == 'normal';
 const isExpertMode = packMode == 'expert';
 
-onEvent('player.data_from_server.reload', event => {
+onEvent('player.data_from_server.reload', (event) => {
     global.onReload();
-})
+});
 
-onEvent('client.logged_in', event => {
+onEvent('client.logged_in', (event) => {
     global.onReload();
-})
+});

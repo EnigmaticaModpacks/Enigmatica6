@@ -44,15 +44,14 @@ onEvent('item.tooltip', (event) => {
                 'darkutils:rune_damage_player',
                 'eidolon:crucible',
                 'eidolon:wooden_brewing_stand',
-                'tanknull:dock',
-                'dankstorage:dock',
                 'engineersdecor:factory_placer',
                 'eidolon:worktable',
                 'mekanism:osmium_compressor',
                 'mekanism:ultimate_compressing_factory',
                 'mekanism:elite_compressing_factory',
                 'mekanism:advanced_compressing_factory',
-                'mekanism:basic_compressing_factory'
+                'mekanism:basic_compressing_factory',
+                'compactmachines:tunnel'
             ],
             text: [disabledInExpert]
         },

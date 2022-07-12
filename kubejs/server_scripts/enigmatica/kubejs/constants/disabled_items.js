@@ -60,6 +60,8 @@ const disabledItems = [
 
     'decorative_blocks_abnormals:ender_brazier',
 
+    'integrateddynamics:part_entity_writer',
+
     'ironjetpacks:strap',
     'ironjetpacks:basic_coil',
     'ironjetpacks:advanced_coil',
@@ -99,9 +101,9 @@ const disabledItems = [
 
     'pneumaticcraft:wheat_flour',
 
-	'projectvibrantjourneys:clam',
-	'projectvibrantjourneys:clam_chowder',
-	'projectvibrantjourneys:cooked_clam',
+    'projectvibrantjourneys:clam',
+    'projectvibrantjourneys:clam_chowder',
+    'projectvibrantjourneys:cooked_clam',
 
     'quark:pipe',
     'quark:potato_crate',

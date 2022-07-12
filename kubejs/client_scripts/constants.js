@@ -131,6 +131,12 @@ const itemsToHide = [
     'byg:brimstone_nether_gold_ore',
     'byg:brimstone_nether_quartz_ore',
 
+    'compactcrafting:match_proxy',
+    'compactcrafting:rescan_proxy',
+    'compactcrafting:base',
+    'compactcrafting:projector_dish',
+    'compactcrafting:field_projector',
+
     'create:powdered_obsidian',
     'create:honey_bucket',
     'create:copper_ore',
@@ -663,6 +669,8 @@ const disabledItems = [
     'create:dough',
 
     'decorative_blocks_abnormals:ender_brazier',
+
+    'integrateddynamics:part_entity_writer',
 
     'ironjetpacks:strap',
     'ironjetpacks:basic_coil',

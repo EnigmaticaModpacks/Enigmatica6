@@ -171,4 +171,9 @@ Version = 9
 	#	default: 0.3
 	#Range: 0.0 ~ 1.0
 	DhowTurnFactor = 0.3
+	#
+	#----Passenger Blacklist----
+	#	(takes effect after restart)
+	#	Entities in this list won't be able to get on the boat, for example: ["minecraft:creeper", "minecraft:sheep"]
+	"Passenger BlackList" = []
 

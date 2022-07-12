@@ -1,0 +1,7 @@
+[rannuncarpus]
+	#List of item registry names that will be ignored by rannuncarpuses when placing blocks.
+	itemBlacklist = ["bloodmagic:altar", "bloodmagic:alchemytable", "bloodmagic:demoncrucible", "bloodmagic:demoncrystallizer", "bloodmagic:alchemytable", "bloodmagic:soulforge", "bloodmagic:alchemicalreactionchamber", "bloodmagic:incensealtar", "eidolon:soul_enchanter", "eidolon:worktable", "occultism:sacrificial_bowl"]
+	#List of mod names for rannuncarpuses to ignore.
+	#Ignores Storage Drawers by default due to crashes with placing drawer blocks without player involvement.
+	modBlacklist = ["storagedrawers"]
+

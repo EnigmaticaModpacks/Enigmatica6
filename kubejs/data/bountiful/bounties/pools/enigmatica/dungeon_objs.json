@@ -1,0 +1,14 @@
+{
+    "modsRequired":[],
+    "content":[
+        { "type": "item", "content": "minecraft:flint_and_steel", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":225},
+        { "type": "item", "content": "minecraft:potion","nbt": {"Potion": "minecraft:fire_resistance"}, "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":75},
+        { "type": "item", "content": "minecraft:potion","nbt": {"Potion": "minecraft:long_fire_resistance"}, "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":30, "name": "Extended Potion of Fire Resistance"},
+        { "type": "item", "content": "minecraft:potion","nbt": {"Potion": "minecraft:water_breathing"}, "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":75},
+        { "type": "item", "content": "minecraft:potion","nbt": {"Potion": "minecraft:long_water_breathing"}, "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":30, "name": "Extended Potion of Water Breathing"},
+        { "type": "item", "content": "minecraft:potion","nbt": {"Potion": "minecraft:night_vision"}, "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":75},
+        { "type": "item", "content": "minecraft:potion","nbt": {"Potion": "minecraft:long_night_vision"}, "amountRange": {"min": 1, "max": 1}, "unitWorth": 300, "weight":30, "name": "Extended Potion of Night Vision"},
+        { "type": "item", "content": "minecraft:compass", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":225},
+        { "type": "item", "content": "minecraft:map", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":225}        
+    ]
+}

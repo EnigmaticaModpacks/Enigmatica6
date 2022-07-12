@@ -57,12 +57,15 @@ onEvent('recipes', (event) => {
             };
             let ingredients = Ingredient.of(recipe.input);
             let result = [Item.of('minecraft:stick', 8)];
-            fallback_id(event.custom({
-                type: 'farmersdelight:cutting',
-                ingredients: [ingredients],
-                tool: tool,
-                result: result
-            }), id_prefix);
+            fallback_id(
+                event.custom({
+                    type: 'farmersdelight:cutting',
+                    ingredients: [ingredients],
+                    tool: tool,
+                    result: result
+                }),
+                id_prefix
+            );
         });
     });
 });

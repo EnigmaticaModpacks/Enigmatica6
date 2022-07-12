@@ -50,8 +50,8 @@ onEvent('recipes', (event) => {
             input: 'kubejs:firmament',
             output: { item: 'architects_palette:sunstone' },
             aura_type: 'naturesaura:overworld',
-            aura: 12000,
-            time: 40,
+            aura: 5000,
+            time: 20,
             id: `${id_prefix}sunstone`
         },
         {
@@ -227,6 +227,14 @@ onEvent('recipes', (event) => {
             aura: 300000,
             time: 1000,
             id: `${id_prefix}birth_spirit`
+        },
+        {
+            input: 'astralsorcery:infused_wood',
+            output: { item: 'astralsorcery:infused_wood_infused' },
+            aura_type: 'naturesaura:overworld',
+            aura: 500,
+            time: 100,
+            id: `astralsorcery:infuser/infused_wood`
         }
     ];
 

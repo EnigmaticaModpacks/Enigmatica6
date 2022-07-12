@@ -106,10 +106,10 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: 'ars_nouveau:novice_spell_book',
-                B: 'atum:isis_godshard',
+                B: '#forge:gems/prismarine',
                 C: 'eidolon:stone_altar',
                 D: 'minecraft:crying_obsidian',
-                E: 'quark:diamond_heart'
+                E: 'minecraft:conduit'
             },
             id: 'minecraft:enchanting_table'
         },

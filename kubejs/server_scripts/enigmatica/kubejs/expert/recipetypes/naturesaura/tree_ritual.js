@@ -51,7 +51,7 @@ onEvent('recipes', (event) => {
             ],
             output: '2x naturesaura:token_fear',
             time: 2 * time_multiplier,
-            sapling: 'architects_palette:twisted_sapling',
+            sapling: 'quark:lavender_blossom_sapling',
             id: 'naturesaura:tree_ritual/token_fear'
         },
         {
@@ -83,7 +83,7 @@ onEvent('recipes', (event) => {
             ],
             output: '2x naturesaura:token_sorrow',
             time: 2 * time_multiplier,
-            sapling: 'architects_palette:twisted_sapling',
+            sapling: 'quark:lavender_blossom_sapling',
             id: 'naturesaura:tree_ritual/token_sorrow'
         },
         {
@@ -179,7 +179,7 @@ onEvent('recipes', (event) => {
             ],
             output: 'naturesaura:chorus_generator',
             time: 6 * time_multiplier,
-            sapling: 'architects_palette:twisted_sapling',
+            sapling: 'quark:blue_blossom_sapling',
             id: 'naturesaura:chorus_generator'
         },
         {
@@ -211,7 +211,7 @@ onEvent('recipes', (event) => {
             ],
             output: 'naturesaura:moss_generator',
             time: 6 * time_multiplier,
-            sapling: 'architects_palette:twisted_sapling',
+            sapling: 'quark:lavender_blossom_sapling',
             id: 'naturesaura:moss_generator'
         },
         {
@@ -275,7 +275,7 @@ onEvent('recipes', (event) => {
             ],
             output: 'naturesaura:eye',
             time: 2 * time_multiplier,
-            sapling: 'architects_palette:twisted_sapling',
+            sapling: 'quark:pink_blossom_sapling',
             id: 'naturesaura:tree_ritual/eye'
         },
         {
@@ -291,7 +291,7 @@ onEvent('recipes', (event) => {
             ],
             output: 'naturesaura:eye_improved',
             time: 5 * time_multiplier,
-            sapling: 'architects_palette:twisted_sapling',
+            sapling: 'quark:pink_blossom_sapling',
             id: 'naturesaura:tree_ritual/eye_improved'
         },
         {
@@ -305,7 +305,7 @@ onEvent('recipes', (event) => {
             ],
             output: 'naturesaura:conversion_catalyst',
             time: 6 * time_multiplier,
-            sapling: 'architects_palette:twisted_sapling',
+            sapling: 'quark:orange_blossom_sapling',
             id: 'naturesaura:tree_ritual/conversion_catalyst'
         },
         {
@@ -318,7 +318,7 @@ onEvent('recipes', (event) => {
             ],
             output: 'naturesaura:crushing_catalyst',
             time: 6 * time_multiplier,
-            sapling: 'architects_palette:twisted_sapling',
+            sapling: 'quark:red_blossom_sapling',
             id: 'naturesaura:tree_ritual/crushing_catalyst'
         },
         {
@@ -462,11 +462,10 @@ onEvent('recipes', (event) => {
                 'kubejs:firmament',
                 'naturesaura:token_anger'
             ],
-            sapling: 'architects_palette:twisted_sapling',
+            sapling: 'quark:red_blossom_sapling',
             output: 'naturesaura:shockwave_creator',
             time: 4 * time_multiplier,
             id: `${id_prefix}shockwave_creator`
-
         },
         {
             ingredients: [

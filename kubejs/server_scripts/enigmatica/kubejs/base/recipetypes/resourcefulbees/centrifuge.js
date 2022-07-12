@@ -101,12 +101,15 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        fallback_id(event.custom({
-            type: 'resourcefulbees:centrifuge',
-            ingredient: recipe.ingredient,
-            results: recipe.results,
-            time: recipe.time,
-            noBottleInput: recipe.noBottleInput
-        }), id_prefix);
+        fallback_id(
+            event.custom({
+                type: 'resourcefulbees:centrifuge',
+                ingredient: recipe.ingredient,
+                results: recipe.results,
+                time: recipe.time,
+                noBottleInput: recipe.noBottleInput
+            }),
+            id_prefix
+        );
     });
 });

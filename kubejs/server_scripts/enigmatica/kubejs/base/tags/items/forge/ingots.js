@@ -4,14 +4,18 @@ onEvent('item.tags', (event) => {
     event.get('forge:ingots/radioactive').add('#forge:ingots/uraninite').add('#forge:ingots/uranium');
 
     event.add('forge:ingots', [
+        'architects_palette:sunmetal_brick',
         'astralsorcery:starmetal_ingot',
         'betterendforge:aeternium_ingot',
         'betterendforge:terminite_ingot',
         'betterendforge:thallasium_ingot',
+        'bloodmagic:ingot_hellforged',
         'botania:gaia_ingot',
         'byg:blue_nether_brick',
         'byg:yellow_nether_brick',
         'create:andesite_alloy',
+        'eidolon:arcane_gold_ingot',
+        'eidolon:pewter_ingot',
         'immersiveengineering:ingot_aluminum',
         'immersiveengineering:ingot_constantan',
         'immersiveengineering:ingot_electrum',
@@ -21,14 +25,16 @@ onEvent('item.tags', (event) => {
         'immersiveengineering:ingot_silver',
         'immersiveengineering:ingot_uranium',
         'industrialforegoing:pink_slime_ingot',
+        'kubejs:hot_compressed_iron_ingot',
+        'kubejs:superheated_steel_ingot',
+        'minecraft:netherite_scrap',
         'mythicbotany:alfsteel_ingot',
         'naturesaura:infused_iron',
         'naturesaura:sky_ingot',
         'naturesaura:tainted_gold',
         'occultism:iesnium_ingot',
-        'powah:uraninite',
-        'kubejs:superheated_steel_ingot',
-        'kubejs:hot_compressed_iron_ingot'
+        'powah:steel_energized',
+        'powah:uraninite'
     ]);
     event.add('forge:ingots/superheated_steel', ['kubejs:superheated_steel_ingot']);
     event.add('forge:ingots/hot_compressed_iron', ['kubejs:hot_compressed_iron_ingot']);

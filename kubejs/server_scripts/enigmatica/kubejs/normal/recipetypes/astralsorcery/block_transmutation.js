@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
                 starlight: 100,
                 id: `${id_prefix}starmetal_ore_from_`
             },
-            { 
+            {
                 inputTag: '#forge:workbenches',
                 output: 'astralsorcery:altar_discovery',
                 starlight: 60,
@@ -25,16 +25,19 @@ onEvent('recipes', (event) => {
     data.recipes.forEach((recipe) => {
         Ingredient.of(recipe.inputTag).stacks.forEach((input) => {
             if (!input.id.includes('chunk')) {
-                fallback_id(event.custom({
-                    type: 'astralsorcery:block_transmutation',
-                    input: {
-                        block: input.id
-                    },
-                    output: {
-                        block: recipe.output
-                    },
-                    starlight: recipe.starlight
-                }), recipe.id);
+                fallback_id(
+                    event.custom({
+                        type: 'astralsorcery:block_transmutation',
+                        input: {
+                            block: input.id
+                        },
+                        output: {
+                            block: recipe.output
+                        },
+                        starlight: recipe.starlight
+                    }),
+                    recipe.id
+                );
             }
         });
     });

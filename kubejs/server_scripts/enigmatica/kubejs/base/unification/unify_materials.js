@@ -27,6 +27,8 @@ onEvent('recipes', (event) => {
         let rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
         let plate = getPreferredItemInTag(Ingredient.of(`#forge:plates/${material}`)).id;
 
+        let coin = getPreferredItemInTag(Ingredient.of(`#forge:coins/${material}`)).id;
+
         astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard);
 
         betterend_alloys(event, material, ore, ingot);
@@ -48,6 +50,7 @@ onEvent('recipes', (event) => {
         immersiveengineering_gem_ore_processing(event, material, ore, dust, gem, shard);
         immersiveengineering_hammer_crushing(event, material, ore, dust, gem);
         immersiveengineering_gem_crushing(event, material, dust, gem);
+        immersiveengineering_coin_pressing(event, material, ingot, nugget, coin);
 
         mekanism_ingot_gem_crushing(event, material, ingot, dust, gem);
         mekanism_gem_ore_processing(event, material, ore, dust, gem, shard);
@@ -82,10 +85,11 @@ onEvent('recipes', (event) => {
         thermal_metal_melting(event, material, block, ingot, nugget, gear, rod, plate);
         thermal_gem_casting(event, material, gem, gear, rod, plate);
         thermal_gem_melting(event, material, block, gem, gear, rod, plate);
-        thermal_nugget_packing_unpacking(event, material, ingot, nugget);
 
         tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate);
         tconstruct_gem_casting(event, material, block, gem, gear, rod, plate);
+
+        material_packing_unpacking(event, material, block, ingot, gem, nugget);
     });
 
     function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard) {
@@ -127,22 +131,25 @@ onEvent('recipes', (event) => {
                 break;
         }
 
-        fallback_id(event.custom({
-            type: 'astralsorcery:infuser',
-            fluidInput: 'astralsorcery:liquid_starlight',
-            input: {
-                tag: input
-            },
-            output: {
-                item: output,
-                count: count
-            },
-            consumptionChance: 0.1,
-            duration: 100,
-            consumeMultipleFluids: false,
-            acceptChaliceInput: true,
-            copyNBTToOutputs: false
-        }), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(
+            event.custom({
+                type: 'astralsorcery:infuser',
+                fluidInput: 'astralsorcery:liquid_starlight',
+                input: {
+                    tag: input
+                },
+                output: {
+                    item: output,
+                    count: count
+                },
+                consumptionChance: 0.1,
+                duration: 100,
+                consumeMultipleFluids: false,
+                acceptChaliceInput: true,
+                copyNBTToOutputs: false
+            }),
+            `${id_prefix}${arguments.callee.name}/`
+        );
     }
 
     function betterend_alloys(event, material, ore, ingot) {
@@ -150,13 +157,16 @@ onEvent('recipes', (event) => {
             return;
         }
         var tag = `forge:ores/${material}`;
-        fallback_id(event.custom({
-            type: 'betterendforge:alloying',
-            ingredients: [{ tag: tag }, { tag: tag }],
-            result: Ingredient.of(ingot, 3),
-            experience: 2,
-            smelttime: 300
-        }), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(
+            event.custom({
+                type: 'betterendforge:alloying',
+                ingredients: [{ tag: tag }, { tag: tag }],
+                result: Ingredient.of(ingot, 3),
+                experience: 2,
+                smelttime: 300
+            }),
+            `${id_prefix}${arguments.callee.name}/`
+        );
     }
 
     function bloodmagic_metal_ore_processing(event, material, ore, fragment, gravel, dust, ingot) {
@@ -240,7 +250,14 @@ onEvent('recipes', (event) => {
         }
 
         // Alchemy Table Processing
-        fallback_id(event.recipes.bloodmagic.alchemytable(Item.of(output, count), inputs).syphon(400).ticks(200).upgradeLevel(1), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(
+            event.recipes.bloodmagic
+                .alchemytable(Item.of(output, count), inputs)
+                .syphon(400)
+                .ticks(200)
+                .upgradeLevel(1),
+            `${id_prefix}${arguments.callee.name}/`
+        );
     }
     function bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem) {
         if (dust == air) {
@@ -386,7 +403,10 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        fallback_id(event.recipes.create.milling(outputs, input).processingTime(processingTime), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(
+            event.recipes.create.milling(outputs, input).processingTime(processingTime),
+            `${id_prefix}${arguments.callee.name}/`
+        );
     }
 
     function create_metal_block_processing(event, material, crushed_ore, ingot, nugget) {
@@ -561,7 +581,33 @@ onEvent('recipes', (event) => {
         var output = dust,
             input = `#forge:gems/${material}`;
 
-        fallback_id(event.recipes.immersiveengineering.crusher(output, input).energy(2000), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(
+            event.recipes.immersiveengineering.crusher(output, input).energy(2000),
+            `${id_prefix}${arguments.callee.name}/`
+        );
+    }
+    function immersiveengineering_coin_pressing(event, material, ingot, nugget, coin) {
+        if (ingot == air || nugget == air || coin == air) {
+            return;
+        }
+
+        var output = Item.of(coin, 3),
+            input = `#forge:ingots/${material}`,
+            mold = `#thermal:crafting/dies/coin`;
+
+        // Ingots to Coins
+        fallback_id(
+            event.recipes.immersiveengineering.metal_press(output, input, mold),
+            `${id_prefix}${arguments.callee.name}/`
+        );
+
+        // Nuggets to Coins
+        output = coin;
+        input = `3x #forge:nuggets/${material}`;
+        fallback_id(
+            event.recipes.immersiveengineering.metal_press(output, input, mold),
+            `${id_prefix}${arguments.callee.name}/`
+        );
     }
 
     function immersiveengineering_ingot_crushing(event, material, dust, ingot) {
@@ -573,7 +619,10 @@ onEvent('recipes', (event) => {
             var output = dust,
                 input = `#forge:ingots/${material}`;
 
-            fallback_id(event.recipes.immersiveengineering.crusher(output, input).energy(2000), `${id_prefix}${arguments.callee.name}/`);
+            fallback_id(
+                event.recipes.immersiveengineering.crusher(output, input).energy(2000),
+                `${id_prefix}${arguments.callee.name}/`
+            );
         }
     }
 
@@ -865,13 +914,16 @@ onEvent('recipes', (event) => {
                 return;
         }
 
-        fallback_id(event.custom({
-            type: 'occultism:crushing',
-            ingredient: { tag: input },
-            result: { item: output, count: count },
-            crushing_time: 100,
-            ignore_crushing_multiplier: false
-        }), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(
+            event.custom({
+                type: 'occultism:crushing',
+                ingredient: { tag: input },
+                result: { item: output, count: count },
+                crushing_time: 100,
+                ignore_crushing_multiplier: false
+            }),
+            `${id_prefix}${arguments.callee.name}/`
+        );
     }
 
     function occultism_metal_ore_crushing(event, material, ore, dust, ingot) {
@@ -917,13 +969,16 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        fallback_id(event.custom({
-            type: 'occultism:crushing',
-            ingredient: { tag: input },
-            result: { item: output, count: 1 },
-            crushing_time: 100,
-            ignore_crushing_multiplier: true
-        }), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(
+            event.custom({
+                type: 'occultism:crushing',
+                ingredient: { tag: input },
+                result: { item: output, count: 1 },
+                crushing_time: 100,
+                ignore_crushing_multiplier: true
+            }),
+            `${id_prefix}${arguments.callee.name}/`
+        );
     }
 
     function pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem) {
@@ -1004,16 +1059,19 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        fallback_id(event.custom({
-            type: 'pedestals:pedestal_crushing',
-            ingredient: {
-                tag: input
-            },
-            result: {
-                item: output,
-                count: 1
-            }
-        }), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(
+            event.custom({
+                type: 'pedestals:pedestal_crushing',
+                ingredient: {
+                    tag: input
+                },
+                result: {
+                    item: output,
+                    count: 1
+                }
+            }),
+            `${id_prefix}${arguments.callee.name}/`
+        );
     }
 
     function thermal_metal_ore_pulverizing(event, material, ore, dust, ingot) {
@@ -1314,35 +1372,6 @@ onEvent('recipes', (event) => {
                 .crucible(Fluid.of(`${modId}:molten_${material}`, recipe.amount), recipe.input)
                 .energy(recipe.energy)
                 .id(`enigmatica:base/thermal/crucible/${material}_${recipe.type}`);
-        })
-    }
-
-    function thermal_nugget_packing_unpacking(event, material, ingot, nugget) {
-        if (ingot == air || nugget == air){
-            return;
-        }
-        let recipes = [
-            {
-                inputs: [
-                    Item.of(nugget, 9),
-                    Ingredient.of('#thermal:crafting/dies/packing_3x3')
-                ],
-                outputs: [Item.of(ingot, 1)],
-                energy: 2400,
-                id: `thermal:machine/press/packing3x3/press_${material}_packing`
-            },
-            {
-                inputs: [
-                    Item.of(ingot, 1),
-                    Ingredient.of('#thermal:crafting/dies/unpacking')
-                ],
-                outputs: [Item.of(nugget, 9)],
-                energy: 2400,
-                id: `thermal:machine/press/unpacking/press_${material}_packing`
-            }
-        ]
-        recipes.forEach((recipe) => {
-            event.recipes.thermal.press(recipe.outputs, recipe.inputs).energy(recipe.energy).id(recipe.id);
         });
     }
 
@@ -1474,5 +1503,81 @@ onEvent('recipes', (event) => {
                 cooling_time: 193
             })
             .id(`tconstruct:smeltery/casting/${material}/block`);
+    }
+
+    function material_packing_unpacking(event, material, block, ingot, gem, nugget) {
+        blacklistedMaterials = ['ender', 'amber', 'quartz'];
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+        let recipes = [];
+
+        if (block !== air && ingot !== air) {
+            //compact ingot to block
+            recipes.push({
+                output: block,
+                input: `9x #forge:ingots/${material}`,
+                mold: '#thermal:crafting/dies/packing_3x3',
+                id_suffix: `${material}_ingots_to_block`
+            });
+
+            //split block to ingot
+            recipes.push({
+                output: Item.of(ingot, 9),
+                input: `#forge:storage_blocks/${material}`,
+                mold: '#thermal:crafting/dies/unpacking',
+                id_suffix: `${material}_block_to_ingots`
+            });
+        }
+
+        if (block !== air && gem !== air) {
+            //compact gem to block
+            recipes.push({
+                output: block,
+                input: `9x #forge:gems/${material}`,
+                mold: '#thermal:crafting/dies/packing_3x3',
+                id_suffix: `${material}_gems_to_block`
+            });
+
+            //split block to gem
+            recipes.push({
+                output: Item.of(gem, 9),
+                input: `#forge:storage_blocks/${material}`,
+                mold: '#thermal:crafting/dies/unpacking',
+                id_suffix: `${material}_block_to_gems`
+            });
+        }
+
+        if (ingot !== air && nugget !== air) {
+            //compact nugget to ingot
+            recipes.push({
+                output: ingot,
+                input: `9x #forge:nuggets/${material}`,
+                mold: '#thermal:crafting/dies/packing_3x3',
+                id_suffix: `${material}_nuggets_to_ingot`
+            });
+
+            //split ingot to nugget
+            recipes.push({
+                output: Item.of(nugget, 9),
+                input: `#forge:ingots/${material}`,
+                mold: '#thermal:crafting/dies/unpacking',
+                id_suffix: `${material}_ingot_to_nuggets`
+            });
+        }
+
+        recipes.forEach((recipe) => {
+            event.recipes.thermal
+                .press(recipe.output, [recipe.input, recipe.mold])
+                .energy(2400)
+                .id(`${id_prefix}thermal/press/${recipe.id_suffix}`);
+
+            event.recipes.immersiveengineering
+                .metal_press(recipe.output, recipe.input, recipe.mold)
+                .id(`${id_prefix}immersiveengineering/metal_press/${recipe.id_suffix}`);
+        });
     }
 });

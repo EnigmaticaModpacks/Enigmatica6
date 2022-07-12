@@ -364,9 +364,9 @@
 			rewards: [{
 				id: "00000000000008C6"
 				type: "item"
-				title: "Speed Rune"
-				item: "bloodmagic:speedrune"
-				count: 2
+				title: "Displacement Rune"
+				item: "bloodmagic:dislocationrune"
+				count: 4
 			}]
 		}
 		{
@@ -680,6 +680,8 @@
 				"Crack of the Fractured Crystal - Gently harvests Demon Will Crystals in the area, dropping them on the ground nearby."
 				""
 				"Resonance of the Faceted Crystal - Facilitates the growth of specialized Demon Will Crystals."
+				""
+				"Well of Suffering - Slowly drains the life essence from mobs, transferring it to the nearest Blood Altar. "
 			]
 			dependencies: ["00000000000008E7"]
 			id: "00000000000008F8"

@@ -25,10 +25,12 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.custom({
-            type: 'occultism:spirit_fire',
-            ingredient: Ingredient.of(recipe.input).toJson(),
-            result: Ingredient.of(recipe.output).toJson()
-        }).id(recipe.id);
+        event
+            .custom({
+                type: 'occultism:spirit_fire',
+                ingredient: Ingredient.of(recipe.input).toJson(),
+                result: Ingredient.of(recipe.output).toJson()
+            })
+            .id(recipe.id);
     });
 });

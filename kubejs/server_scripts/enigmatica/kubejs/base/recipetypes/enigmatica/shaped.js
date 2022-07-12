@@ -373,6 +373,70 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}thermal/white_rockwool_from_washing`
         },
         {
+            output: 'mekanism:block_refined_obsidian',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:ingots/refined_obsidian'
+            },
+            id: `${id_prefix}refined_obsidian_block_from_ingots`
+        },
+        {
+            output: 'mekanism:ingot_refined_obsidian',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:nuggets/refined_obsidian'
+            },
+            id: `${id_prefix}refined_obsidian_ingot_from_nuggets`
+        },
+        {
+            output: 'mekanism:block_refined_glowstone',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:ingots/refined_glowstone'
+            },
+            id: `${id_prefix}refined_glowstone_block_from_ingots`
+        },
+        {
+            output: 'mekanism:ingot_refined_glowstone',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:nuggets/refined_glowstone'
+            },
+            id: `${id_prefix}refined_glowstone_ingot_from_nuggets`
+        },
+        {
+            output: 'thermal:gunpowder_block',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:gunpowder'
+            },
+            id: `${id_prefix}gunpowder_block`
+        },
+        {
+            output: 'thermal:tar_block',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:tar'
+            },
+            id: `${id_prefix}tar_block`
+        },
+        {
+            output: 'occultism:iesnium_block',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:ingots/iesnium'
+            },
+            id: `${id_prefix}iesnium_block_from_ingots`
+        },
+        {
+            output: 'occultism:iesnium_ingot',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:nuggets/iesnium'
+            },
+            id: `${id_prefix}iesnium_ingot_from_nuggets`
+        },
+        {
             output: Item.of('morphtool:tool', {
                 'morphtool:data': {
                     blockcarpentry: { id: 'blockcarpentry:texture_wrench', Count: 1 },

@@ -33,11 +33,13 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        event.custom({
-            type: 'naturesaura:offering',
-            input: recipe.input,
-            start_item: recipe.start_item,
-            output: recipe.output
-        }).id(recipe.id);
+        event
+            .custom({
+                type: 'naturesaura:offering',
+                input: recipe.input,
+                start_item: recipe.start_item,
+                output: recipe.output
+            })
+            .id(recipe.id);
     });
 });

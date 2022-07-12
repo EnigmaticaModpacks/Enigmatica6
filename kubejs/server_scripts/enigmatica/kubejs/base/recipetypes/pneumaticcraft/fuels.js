@@ -27,15 +27,18 @@ onEvent('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        fallback_id(event.custom({
-            type: 'pneumaticcraft:fuel_quality',
-            fluid: {
-                type: 'pneumaticcraft:fluid',
-                fluid: recipe.fluid,
-                amount: 1000
-            },
-            air_per_bucket: recipe.air * multiplier,
-            burn_rate: recipe.rate
-        }), id_prefix);
+        fallback_id(
+            event.custom({
+                type: 'pneumaticcraft:fuel_quality',
+                fluid: {
+                    type: 'pneumaticcraft:fluid',
+                    fluid: recipe.fluid,
+                    amount: 1000
+                },
+                air_per_bucket: recipe.air * multiplier,
+                burn_rate: recipe.rate
+            }),
+            id_prefix
+        );
     });
 });

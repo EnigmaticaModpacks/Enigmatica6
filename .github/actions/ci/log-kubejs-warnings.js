@@ -2,18 +2,27 @@
 // and determining whether it contained errors or not.
 
 const fs = require('fs');
-
 const server = fs.readFileSync('logs/kubejs/server.txt', 'utf-8');
 
-let code = 0;
+let warnings = [];
 
 server.split(/\r?\n/).forEach((line) => {
-    if (line.includes('[ERR  ] Error')) {
-        console.log(`::warning::${line}`);
-        code = 1;
-    } else if (line.includes('[ERR  ]') || line.includes('[WARN ]')) {
-        console.log(line);
+
+    // the 2nd reload causes this error, avoid reporting this
+    if (line.includes('shadows.menu.PackMenuClient')) return;
+
+    // get the log level from this line, expected values: [ undefined, INFO, WARN, ERR ]
+    const in_brackets = line.match(/\[\d{2}:\d{2}:\d{2}] \[([A-Z\s]+)]/)?.[1];
+
+    switch (in_brackets) {
+        case 'ERR  ': warnings.push(line);
+        case 'WARN ': console.log(line);
     }
 });
 
-process.exit(code);
+warnings.forEach(warning => {
+    console.log(`::warning::${warning}`);
+});
+
+// return with exit code 1 for any warning amount
+process.exit(Math.min(1, warnings.length));
