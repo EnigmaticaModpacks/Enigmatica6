@@ -1188,7 +1188,7 @@
 				""
 				"To create a table, its pretty simple, you just use \"\\{\\}\" for any variable's value."
 				""
-				"> local my_first_table = \\{\\} -- Create a relation to that table, for now its empty."
+				"> local my_first_table = \\{\\} -- Create a relation with name my_first_table to that table , for now its empty."
 				""
 				"Table is an array, that means it can store multiple variables inside of it, and all of them can be accessed with just one name. However in tables, those variables are called \"entries\". Every entry has its own Key and its value. Similiarly to a variable, but its in group!"
 				"To read/write to some entry, you need to use its key in the brackets next to the table, like this:"
@@ -1204,9 +1204,9 @@
 				"It the similiar way you use APIs, but complete guide on that will be later on."
 				"Note: a.x and a[x] isn't the same! x in first case is a string, not a variable like in second one!"
 				""
-				"Lua defaults empty entries to nil, and you can set non-empty ones to nil to clear them. Tables aren't fixed, if there will be no more relations to it, it will be deleted from the memory. To delete a table completly, set every variable that has copy of that table to nil."
+				"Lua defaults empty entries to nil, and you can set non-empty ones to nil to clear them. Tables aren't fixed, if there will be no more relations to it, it will be deleted from the memory. To delete a table completly, set every variable that has relation to that table to nil."
 				""
-				"Important note is that Lua doesn't return tables starting at key 0, like most of the languages do, Lua returns tables with key 1 and going up. You can do table starting at key 0 manually, but its not recommended if you aren't gonna use negative numbers."
+				"Important note is that Lua doesn't return tables starting at key 0, like most of the languages do, Lua returns tables with key 1 and up. You can do table starting at key 0 manually, but its not recommended unless you are gonna use negative numbers."
 				""
 				"To learn more about tables if needed, check out Lua docs!"
 			]
@@ -1214,6 +1214,7 @@
 				"29C780353E7FB720"
 				"20F5794B8753B648"
 			]
+			hide: true
 			min_width: 500
 			id: "152F6E8D35D2069A"
 			tasks: [{
@@ -1763,9 +1764,11 @@
 				"There are operators that make it possible to combine multiple operators:"
 				""
 				"●  \"and\" -> this operator returns its first argument if it is false, otherwise, it returns its second argument (Example:"
-				"> 6 > 5 and 6 < 5 -- First argument is true, so it returns the second one that is false)"
+				"> (6 > 5 and 6 < 5) -- First argument is true, so it returns the second one that is false)"
 				"●  \"or\"  -> returns its first argument if it is not false; otherwise, it returns its second argument."
 				"●  \"not\" -> it reverts what it gots, so if it gets true, it will return false and vice versa."
+				""
+				"Important to note is that \"false\" and \"nil\" are both in Lua recognized as false. "
 				""
 				"After you make your decision requirement, you just need to add code that is gonna be executed if condition is meet. At the end you add \"end\"."
 				""
