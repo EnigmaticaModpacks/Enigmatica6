@@ -1459,9 +1459,11 @@
 			shape: "octagon"
 			subtitle: "Lua Basics - Coding practice"
 			description: [
-				"Here are a few easy tasks that will show you simple programs, to teach you practically how to do some stuff."
+				"Here are a few easy tasks that will show you how to do simple programs, to teach you practically how to do some stuff."
 				""
 				"More tasks will get unlocked, the more you advance in Lua Basics! It's recommended to do them as soon as possible, so you will practice stuff you learned as you go :D"
+				""
+				"Note that at the end of every quests you willl recive link to a program that will showcase working program for that task."
 			]
 			dependencies: [
 				"2D79E4D126EE389E"
@@ -1707,6 +1709,8 @@
 				"> delete *file or directory* -- Deletes file or directory"
 				"> edit -- Runs edit program. This is code editor we will use to code!"
 				"> help *program* -- Most useful program on your computer. Gives more detailed information about specified program."
+				""
+				"If you have any problem with some program, use help command!"
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.5d
@@ -1804,20 +1808,28 @@
 				"Lets create our first functions!"
 				"This program will use your own functions to execute code multiple times later on."
 				""
-				"Lets start with the stuff from last task. Create 5 variables, 3 of them will be numbers and 2 strings. What is their value is up to you."
-				"Lets create a function, that will have 2 arguments. It needs to add those arguments, print \"Sum of arguments equals: \" with a sum at the end, and return the sum."
-				"Now lets create another function, that will take three arguments. First argument will be divided by the second argument, and added at the end of the third one. Return the entire string you got."
-				"Now lets create another variable and call second function as its value. First argument will be our 1st function, with two of the number variables as its arguments, for second argument set third number argument, and for the last one, one of the strings."
-				"Lastly lets get what our function returned, add at the end our second string and print it!"
+				"● Lets start with the stuff from last task. Create 5 variables, 3 of them will be numbers and 2 strings. What is their value is up to you."
 				""
-				"If done correctly you should see one line on the screen with \"Sum of the arguemnts equals: \" and sum of numbers you put into the function, and second line with one of your strings, a sum of first two numbers divided by third one and your second string at the end."
+				"● Now lets create our function. It will have 2 arguments and it will add them together. Print \"Sum of arguments equals: \" with a sum of the arguments at the end, and also return it."
+				""
+				"● Create another function with 3 arguments. Lets call our first function here, and give it as arguments our first two function's variables. Now divide the sum you got by third argument and return the results."
+				""
+				"● Create our third, last function, without arguments. Call our second function here as value of newly created variable, and give it our three number variables as arguments. Next add one of the string variables at the end of the other, and do the same with what you got from function and your new string. Print it!"
+				""
+				"● At last, call our third function five times and see what happens."
+				""
+				"If done correctly you should see one line on the screen with \"Sum of the arguments equals: \" and sum of your two numbers, and second line with your two strings and result of 2nd function. This pattern should be visible 5 times."
+				""
+				"Tip: You don't need to do new variable in 2nd and 3rd step! In 2nd step you can divide in return command, and in 3rd step, you can add both strings and what function returns in one line in print argument!"
+				""
+				"> print(string_1 .. string_2 .. function_2(number_1,number_2,number_3)) -- Prints string_1, string_2 and what function_2 returns."
 			]
 			dependencies: [
 				"5E591D65A5014852"
 				"0C2F459BCB9222EC"
 			]
 			hide: true
-			min_width: 400
+			min_width: 425
 			id: "7A434175E2B1AE04"
 			tasks: [
 				{
@@ -1853,15 +1865,20 @@
 			icon: "thermal:wrench"
 			x: -1.0d
 			y: -7.0d
-			subtitle: "Practice: Creating Conditions [WIP]"
+			subtitle: "Practice: Creating conditions"
 			description: [
-				"Is 6 higher than 2+3? Is \"E6\" the same as \"e6\"? What to do if something?"
+				"Is 6 higher than 2+3? Is \"E6\" the same as \"e6\"? What to do if so?"
 				"In this task we will create our first conditions, that will for sure let us know what is what!"
 				""
-				"Lets start with creating few variables, get 4 numbers and 2 strings, with something similiar like \"Enigmatica 6\" and \"enigmatica 8\"."
-				"Lets create our first condition. Check if first number variable is higher than second one, if so print \"Its bigger!\", if not print \"Its smaller!\"."
-				"Second condition will be more advanced, lets get sum of our first and second number, and check if its higher or equal to the third one OR if its equal to the fourth one. If condition is meet, print first string, if not, check if first string is the same as second string, if it is, print \"They are the same!\", but if not, change second string to be the same as first, and print \"They weren't the same, but they are now\"."
+				"● Lets start with creating few variables, get 4 numbers and 2 strings, with something similiar like \"Enigmatica 6\" and \"enigmatica 8\"."
+				""
+				"● Now lets create our first condition. Check if first number variable is higher than second one, if so print \"Its bigger!\", if not print \"Its smaller!\"."
+				""
+				"● Second condition will be more advanced, lets get sum of our first and second number, and check if its higher or equal to the third one OR if its equal to the fourth one."
+				"If condition is meet, print first string, if not, check if first string is the same as second string, if it is, print \"They are the same!\", but if not, change second string to be the same as first, and print \"They weren't the same, but they are now\"."
+				""
 				"If done correctly you should get no errors, and get good outputs that agree with instructions written in this quest:"
+				""
 				"If first condition is meet, you should see \"Its bigger!\", if not \"Its smaller!\""
 				"If second condition is meet, you should see what you wrote in your first string, if not, you should see either \"They are the same!\" or \"They weren't the same, but they are now.\" if your strings weren't identical."
 				""
@@ -1872,7 +1889,7 @@
 				"76DA4E58186F04A0"
 			]
 			hide: true
-			min_width: 400
+			min_width: 425
 			id: "788EAA0E430DA5C3"
 			tasks: [{
 				id: "783230BC86FE4A38"
