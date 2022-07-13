@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
             inputs: ['eidolon:enchanted_ash', '#forge:dusts/ender'],
             output: 'eidolon:ender_calx',
             count: 2,
-            cookingTime: 200,
+            cookingTime: 50,
             id: `${id_prefix}ender_calx`
         },
         {
@@ -71,17 +71,18 @@ onEvent('recipes', (event) => {
             inputs: ['eidolon:enchanted_ash', '#forge:dusts/charcoal', '#forge:dusts/sulfur'],
             output: 'minecraft:gunpowder',
             count: 4,
-            cookingTime: 200,
+            cookingTime: 50,
             id: `${id_prefix}gunpowder`
         }
     ];
 
     colors.forEach((color) => {
         recipes.push({
-            inputs: [`#forge:dyes/${color}`, '#enigmatica:candle_materials', '#forge:string'],
+            inputs: [`#forge:dyes/${color}`, '#enigmatica:candle_materials'],
             output: `quark:${color}_candle`,
+            container: 'minecraft:string',
             count: 1,
-            cookingTime: 100,
+            cookingTime: 50,
             id: `quark:building/crafting/candles/${color}_candle`
         });
     });
@@ -90,6 +91,9 @@ onEvent('recipes', (event) => {
         recipe.type = 'farmersdelight:cooking';
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
         recipe.result = { item: recipe.output, count: recipe.count };
+        if (recipe.container) {
+            recipe.container = { item: recipe.container };
+        }
 
         event.custom(recipe).id(recipe.id);
     });
