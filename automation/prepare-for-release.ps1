@@ -42,21 +42,15 @@ function Close-FixedIssues {
 
 }
 function Merge-DevelopIntoMaster {
-    Write-Host "Merging Develop into Master, and then Master into Develop"
+    Write-Host "Please Develop into Master, and then Master into Develop"
     Write-Host "Make sure you have no unsaved changes!" -ForegroundColor Red
     Write-Host "Ctrl+C to exit"
     pause
-    git checkout master
-    git merge develop
-    git push
-    git checkout develop
-    git merge master
 }
 
 Validate-SecretsFile
 Close-FixedIssues
 Merge-DevelopIntoMaster
-github_changelog_generator --since-tag $LAST_MODPACK_VERSION
 Write-Host
 Write-Host "Upload modpack? Press CTRL-C to cancel" -ForegroundColor Green
 pause
