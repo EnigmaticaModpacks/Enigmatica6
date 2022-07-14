@@ -1749,7 +1749,7 @@
 			title: "If this is equal 0, then true!"
 			icon: "computercraft:printed_pages"
 			x: 9.0d
-			y: -0.5d
+			y: 0.0d
 			subtitle: "Lua Basics #3 - Creating conditions with IF"
 			description: [
 				"\"if\" is another one of the most important things in coding. Without it we wouldn't be able to create any decisions! \"if\" is used to check if a variable is equal, bigger, smaller etc than another variable / value."
@@ -1790,7 +1790,7 @@
 			]
 			dependencies: ["5056B0737A8A8D64"]
 			hide: true
-			min_width: 450
+			min_width: 500
 			id: "6DF4A8FB92121573"
 			tasks: [{
 				id: "76DA4E58186F04A0"
@@ -1810,7 +1810,7 @@
 				""
 				"● Lets start with the stuff from last task. Create 5 variables, 3 of them will be numbers and 2 strings. What is their value is up to you."
 				""
-				"● Now lets create our function. It will have 2 arguments and it will add them together. Print \"Sum of arguments equals: \" with a sum of the arguments at the end, and also return it."
+				"● Now lets create our function. It will have 2 arguments and it needs to add them together. Print \"Sum of arguments equals: \" with a sum of the arguments at the end, and also return it."
 				""
 				"● Create another function with 3 arguments. Lets call our first function here, and give it as arguments our first two function's variables. Now divide the sum you got by third argument and return the results."
 				""
@@ -1863,7 +1863,7 @@
 		{
 			title: "Is 6 higher than 8?"
 			icon: "thermal:wrench"
-			x: -1.0d
+			x: -1.5d
 			y: -7.0d
 			subtitle: "Practice: Creating conditions"
 			description: [
@@ -1893,6 +1893,94 @@
 			id: "788EAA0E430DA5C3"
 			tasks: [{
 				id: "783230BC86FE4A38"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			title: "Loops... loops everywhere"
+			icon: "computercraft:printed_pages"
+			x: 8.5d
+			y: 2.0d
+			subtitle: "Lua Basics #4.1 - Loops"
+			description: [
+				"Loops are used to execute your code how many times you want. You don't need to write a function and call it 200 times for your program to do something 200 times anymore!"
+				"You use your loops in really similiar way to if: You use first command with condition of the loop, and \"end\" at the end of the code it executes. There is few different types of loops:"
+				""
+				"> while true do ... end "
+				""
+				"● This loop is just combination of \"if\" and a loop. It executes its code as long as some condition is true. In our example our condition is just \"true\", so this loop will go forever."
+				""
+				"> for i = 0, 10, 1 do ... end"
+				""
+				"● This loop executes its code for specified amount of times. Its a bit more complicated than \"while\"."
+				""
+				"●  First argument is a variable that is used for loops condition. As with functions, this variable is temporary, its only available inside of the loop and is gone in any other place in the code."
+				"Note: You can create that variable without use of \"local\" function as in example. Also you can give it value of different variable that has been created outside of the loop."
+				""
+				"●  Second argument is your loop's condition. You don't create it as \"if\" condition however, you just put in number that variable needs to get to. In our example variable \"i\" needs to be equal 10 for loop to finish its work."
+				""
+				"●  Third argument is incrementation of that variable. That means by how much a variable needs to change. In our example we used 1, so our variable will increase by one with every run of the loop. You can also use negative numbers to make a loop that will decrease its variable."
+				""
+				"Important note is that your incrementation needs to be able to get your variable to condition number! If Lua realises that its not possible, it will not execute the code even once. "
+				""
+				"> for i = 10, 1, 1 do ... end"
+				"Incrementation is increasing a variable, but it needs to decrease to meat the condition. Lua will not execute the code even once!"
+				""
+				"Both of these loops are able to do similar things with some trickery, but its more convenient to use one type over another in some situations."
+				"There are also two another types of \"for\" loop, but those are more complicated than these and they are worth their own quest. Check out Lua Basics #4.2 for how to use them."
+			]
+			dependencies: ["6DF4A8FB92121573"]
+			hide: true
+			min_width: 500
+			id: "3313C6D952FB8B0C"
+			tasks: [{
+				id: "53BDD82960AF5FAF"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Different types of \"for\""
+			icon: "computercraft:printed_page"
+			x: 7.0d
+			y: 1.0d
+			subtitle: "Lua basics #4.2 - Types of for loop"
+			description: ["To do: Learn exactly what is difference in pairs and ipairs and then do that quest :P"]
+			dependencies: ["3313C6D952FB8B0C"]
+			min_width: 450
+			id: "2E2E7D1F4001A9F3"
+			tasks: [{
+				id: "1C78AA75C0095B23"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "But can I watch youtube in game?"
+			icon: "computercraft:printed_pages"
+			x: 7.5d
+			y: 3.5d
+			subtitle: "Lua Basics #5 - Usage of APIs and Peripherals"
+			description: ["To do: Fix peripherals section so this quest makes sense"]
+			dependencies: ["3313C6D952FB8B0C"]
+			hide: true
+			id: "1F7736775BFEA643"
+			tasks: [{
+				id: "6F651FA6C015CA4A"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Lets loop some stuff"
+			icon: "thermal:wrench"
+			x: -0.5d
+			y: -8.0d
+			subtitle: "Coding practice: Loops"
+			id: "3AA1096DA1C0287E"
+			tasks: [{
+				id: "00AAF998FF0416A3"
 				type: "checkmark"
 				title: "Got it working!"
 			}]
