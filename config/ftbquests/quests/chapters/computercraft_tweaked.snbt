@@ -1905,7 +1905,7 @@
 			subtitle: "Lua Basics #4.1 - Loops"
 			description: [
 				"Loops are used to execute your code how many times you want. You don't need to write a function and call it 200 times for your program to do something 200 times anymore!"
-				"You use your loops in really similiar way to if: You use first command with condition of the loop, and \"end\" at the end of the code it executes. There is few different types of loops:"
+				"You use your loops in really similiar way to if: You use loop command with a condition, and you write \"end\" at the end of the code it executes. There is few different types of loops:"
 				""
 				"> while true do ... end "
 				""
@@ -1916,9 +1916,9 @@
 				"● This loop executes its code for specified amount of times. Its a bit more complicated than \"while\"."
 				""
 				"●  First argument is a variable that is used for loops condition. As with functions, this variable is temporary, its only available inside of the loop and is gone in any other place in the code."
-				"Note: You can create that variable without use of \"local\" function as in example. Also you can give it value of different variable that has been created outside of the loop."
+				"Note: You can create that variable without use of a \"local\" function as in example. Also you can give it a value of different variable that has been created outside of the loop."
 				""
-				"●  Second argument is your loop's condition. You don't create it as \"if\" condition however, you just put in number that variable needs to get to. In our example variable \"i\" needs to be equal 10 for loop to finish its work."
+				" ●  Second argument is your loop condition. You don't create it as \"if\" condition however, you just put in number that variable needs to get to. In our example variable \"i\" needs to be equal 10 for loop to finish its work."
 				""
 				"●  Third argument is incrementation of that variable. That means by how much a variable needs to change. In our example we used 1, so our variable will increase by one with every run of the loop. You can also use negative numbers to make a loop that will decrease its variable."
 				""
@@ -1946,7 +1946,34 @@
 			x: 7.0d
 			y: 1.0d
 			subtitle: "Lua basics #4.2 - Types of for loop"
-			description: ["To do: Learn exactly what is difference in pairs and ipairs and then do that quest :P"]
+			description: [
+				"Did you wonder how you can check every place in a table with a loop? With pairs() and ipairs() its now possible!"
+				"Those are two additional types of \"for\" loop, that will run the loop as many times as you have keys in your table. They are really useful for checking every entry in a table."
+				""
+				"> for key, value in pairs(table) do ... end"
+				""
+				"● pairs() loop will return your key and its value as variables you can use inside of the loop. It doesn't care if a key is a string or a number, it will give whatever your table contains. Note that it will not sort anything, and sometimes can give results in random sequence, so if your code requires entries to be processed in specified order, use ipairs() loop!"
+				""
+				"> for key, value in ipairs(table) do ... end"
+				""
+				"● ipairs() are returning only entries with a numeric key, in order from the lowest to the highest number. It is useful when you need to sort your table from non-numeric keys, or when you need table entries in specified order."
+				""
+				"Here is the example! First lets create a table. Our one will contain Enigmatica modpacks:"
+				""
+				"> local table_a = \\{\\}"
+				"> table_a[1], table_a[2], table_a[3] = \"E2\", \"E6\", \"E8\" -- Non-expert have numeric keys"
+				"> table_a[\"1_expert\"], table_a[\"2_expert\"] =\"E2E\", \"E6E\" -- Expert have string keys"
+				""
+				"> for key, value in pairs(table_a) do"
+				">   print(value) end"
+				"● Prints value of every key in a table, so in our case every Enigmatica modpack!"
+				""
+				"> for key, value in ipairs(table_a) do"
+				">   print(value) end"
+				"● Prints only numeric keys, so in our case non-expert versions of Enigmatica modpacks!"
+				""
+				"Tip: You can add \"end\" after a command in the same line, its not always recommended, but for short loops / condition / functions its really useful for saving space."
+			]
 			dependencies: ["3313C6D952FB8B0C"]
 			min_width: 450
 			id: "2E2E7D1F4001A9F3"
