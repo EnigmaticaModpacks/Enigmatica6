@@ -1,3 +1,27 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.4.1
+
+_Using Forge-1.16.5-36.2.34_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.4.1.md)_
+
+**Changes/Improvements**
+
+- \[Expert\] Reset compressor task [\#5082](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5082) ([MuteTiefling](https://github.com/MuteTiefling))
+- Increase mana capacity of the Gaia Reactor [\#5077](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5077) ([MuteTiefling](https://github.com/MuteTiefling))
+
+**Bug Fixes**
+
+- Liquid compressor quest bug when update from 1.3.0 to 1.4.0 [\#5080](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5080)
+- Gaia reactor has stopped working after updating the pack \(hypothesis: the mana output ports now have insufficient capacity\) [\#5076](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5076)
+- Item Tunnel Quest Uncompletable [\#5039](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5039)
+- Bucket dupe with PNC fluids and pretty fluid pipes [\#4988](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4988)
+- Missing Multiservo Press 3x3 Compacting Recipes [\#4857](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4857)
+- Infinity bucket Source with routers Activator [\#4816](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4816)
+- External Storage quest description. [\#4809](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4809)
+- Industrial Deuterium Plant Cannot be completed [\#4784](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4784)
+- Rope Pulley infinite can be archived without the need of 10k fluid source blocks [\#4772](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4772)
+- \[Expert\] Fix visibility for Bragging Rights chapter [\#5078](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5078) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.4.0
 
 _Using Forge-1.16.5-36.2.34_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.4.0.md)_
