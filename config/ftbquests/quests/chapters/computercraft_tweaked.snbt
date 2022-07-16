@@ -1947,7 +1947,7 @@
 			y: 1.0d
 			subtitle: "Lua basics #4.2 - Types of for loop"
 			description: [
-				"Did you wonder how you can check every place in a table with a loop? With pairs() and ipairs() its now possible!"
+				"Did you wonder how you can check every place in a table with a loop? With pairs() and ipairs() it is now possible!"
 				"Those are two additional types of \"for\" loop, that will run the loop as many times as you have keys in your table. They are really useful for checking every entry in a table."
 				""
 				"> for key, value in pairs(table) do ... end"
@@ -1956,7 +1956,7 @@
 				""
 				"> for key, value in ipairs(table) do ... end"
 				""
-				"● ipairs() are returning only entries with a numeric key, in order from the lowest to the highest number. It is useful when you need to sort your table from non-numeric keys, or when you need table entries in specified order."
+				"● ipairs() are returning only entries with a numeric key, in order from the lowest to the highest number. It is useful when you need to sort your table from non-numeric keys, or when you need table entries in specified order. Note that ipairs are checking entire table every run of the loop, so it will be (much) slower than pairs() loop."
 				""
 				"Here is the example! First lets create a table. Our one will contain Enigmatica modpacks:"
 				""
