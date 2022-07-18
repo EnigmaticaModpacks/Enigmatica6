@@ -34,7 +34,7 @@ lens_of_ender = true
 	#List of heat source blocks used under Thermo Generator.
 	#Block registry name = heat, eg: ["minecraft:lava=1000", "minecraft:magma_block=800"]
 	#Min = 1, max = 900000000
-	heatSources = ["minecraft:campfire=600", "decorative_blocks:brazier=600", "valhelsia_structures:brazier=600", "minecraft:lava=1000", "minecraft:soul_campfire=1100", "decorative_blocks:soul_brazier=1100", "minecraft:magma_block=1200", "quark:magma_bricks=1200", "quark:brimstone=1200", "byg:cryptic_magma_block=1200", "byg:brimstone=1200", "byg:magmatic_stone=1200", "betterendforge:brimstone=1200", "byg:boric_campfire=1400", "byg:cryptic_campfire=1400", "botania:blaze_block=1400", "quark:blaze_lantern=1400", "minecraft:fire_coral=1500", "powah:blazing_crystal_block=1600", "powah:nitro_crystal_block=2200"]
+	heatSources = ["minecraft:campfire=600", "decorative_blocks:brazier=600", "valhelsia_structures:brazier=600", "minecraft:lava=1000", "minecraft:soul_campfire=1100", "decorative_blocks:soul_brazier=1100", "minecraft:magma_block=1200", "quark:magma_bricks=1200", "quark:brimstone=1200", "byg:cryptic_magma_block=1200", "byg:brimstone=1200", "byg:magmatic_stone=1200", "betterendforge:brimstone=1200", "byg:boric_campfire=1400", "byg:cryptic_campfire=1400", "botania:blaze_block=1400", "quark:blaze_lantern=1400", "minecraft:fire_coral=1500", "powah:blazing_crystal_block=1600", "tconstruct:blazing_blood=1900", "powah:nitro_crystal_block=2200"]
 	#Energy per solid fuel tick. [default: 30]
 	#Eg: Coal has 1600 fuel tick, so will generate 48000 FE.
 	#Range: 1 ~ 1000000
