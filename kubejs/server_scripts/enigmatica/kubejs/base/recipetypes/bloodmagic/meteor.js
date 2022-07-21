@@ -1,5 +1,24 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/bloodmagic/meteor/';
+
+    const dark_shell = [
+        { tag: 'occultism:otherstone', weight: 45 },
+        { tag: 'atum:porphyry', weight: 20 },
+        { tag: 'minecraft:blackstone', weight: 10 },
+        { tag: 'byg:soapstone', weight: 10 },
+        { tag: 'kubejs:firmament', weight: 10 },
+        { tag: 'byg:magmatic_stone', weight: 3 },
+        { tag: 'minecraft:magma_block', weight: 2 }
+    ];
+
+    const prismarine_shell = [
+        { tag: 'minecraft:dark_prismarine', weight: 34 },
+        { tag: 'masonry:darkprismarinecobbled', weight: 30 },
+        { tag: 'minecraft:prismarine', weight: 15 },
+        { tag: 'minecraft:prismarine_bricks', weight: 15 },
+        { tag: 'minecraft:sea_lantern', weight: 6 }
+    ];
+
     const recipes = [
         // Default Meteor Overrides
         {
@@ -95,28 +114,36 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:meteor/nether'
         },
         {
-            input: '#forge:gems/diamond',
+            input: '#forge:storage_blocks/diamond',
             syphon: 1000000,
             explosion: 8.0,
             layers: [
                 {
-                    radius: 2,
+                    radius: 6,
                     additionalWeight: 0,
                     minWeight: 0,
-                    fill: 'minecraft:diamond_ore'
+                    weightMap: prismarine_shell,
+                    fill: 'minecraft:prismarine'
                 },
                 {
                     radius: 5,
-                    additionalWeight: 0,
-                    minWeight: 1000,
+                    additionalWeight: 33,
+                    minWeight: 0,
                     weightMap: [
-                        { tag: '#forge:ores/sapphire', weight: 100 },
-                        { tag: '#forge:ores/ruby', weight: 100 },
-                        { tag: 'minecraft:diamond_ore', weight: 100 },
-                        { tag: 'minecraft:emerald_ore', weight: 75 },
-                        { tag: '#forge:ores/cinnabar', weight: 200 }
+                        { tag: 'emendatusenigmatica:arcane_flavolite_ore', weight: 15 },
+                        { tag: 'emendatusenigmatica:dimensional_flavolite_ore', weight: 15 },
+                        { tag: 'emendatusenigmatica:diamond_flavolite_ore', weight: 25 },
+                        { tag: 'emendatusenigmatica:emerald_flavolite_ore', weight: 7 },
+                        { tag: 'emendatusenigmatica:cinnabar_flavolite_ore', weight: 5 }
                     ],
-                    fill: 'minecraft:cobblestone'
+                    fill: 'betterendforge:flavolite'
+                },
+                {
+                    radius: 1,
+                    additionalWeight: 95,
+                    minWeight: 0,
+                    weightMap: [{ tag: 'botania:mana_diamond_block', weight: 5 }],
+                    fill: 'minecraft:diamond_block'
                 }
             ],
             id: 'bloodmagic:meteor/diamond'
@@ -152,14 +179,9 @@ onEvent('recipes', (event) => {
             layers: [
                 {
                     radius: 8,
-                    additionalWeight: 45,
+                    additionalWeight: 0,
                     minWeight: 0,
-                    weightMap: [
-                        { tag: 'atum:porphyry', weight: 25 },
-                        { tag: 'minecraft:blackstone', weight: 15 },
-                        { tag: 'byg:soapstone', weight: 10 },
-                        { tag: 'kubejs:firmament', weight: 5 }
-                    ],
+                    weightMap: dark_shell,
                     fill: 'occultism:otherstone'
                 },
                 {
