@@ -377,8 +377,28 @@
 			x: -9.5d
 			y: -0.5d
 			subtitle: "Lua Basics: Global Liquid API"
+			description: [
+				"Liquids API is used to move liquids around in your network. It is really simple API, but it is actually useful in more complex fluid automations (like Mekanism 5x Ore Processsing)."
+				""
+				"Fluid API Functions:"
+				""
+				"> tanks() -> Returns a table with tanks in a peripheral. Empty ones will be \"nil\", non-empty ones will have basic information about that liquid, like Amount and Name. (Recommended to use pairs() with that table for looping)"
+				""
+				"> pushFluid(toName [, limit [, fluidName]]) -> Move a liquid from used peripheral to another connected to the network."
+				"● toName: (string) -> Name of peripheral you want to move liquid to."
+				"● limit: (number) [Optional] -> Maximum amount of liquid to move."
+				"● fluidName: (string) [Optional] -> Name of the liquid you want to move! If not given, any will be taken."
+				""
+				"> pullFluid(fromName [, limit [, fluidName]]) -> Move a liquid to used peripheral from other tank connected to the network."
+				"● fromName: (string) -> Name of peripheral you want to move liquid from."
+				"● limit: (number) [Optional] -> Maximum amount of liquid to move."
+				"● fluidName: (string) [Optional] -> Name of the liquid you want to move! If not given, any will be taken."
+				""
+				"Note that if few liquids are in one peripheral, they will be moved in the order they are in the table from \"tanks()\" function!"
+			]
 			dependencies: ["55493D823F7403DA"]
 			hide: true
+			min_width: 500
 			id: "18C25A983C4831B7"
 			tasks: [{
 				id: "7C6525BE6C8CA991"
