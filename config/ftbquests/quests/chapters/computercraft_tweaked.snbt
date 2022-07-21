@@ -110,6 +110,7 @@
 				"TODO: Link to official Advanced Peripherals WIKI"
 			]
 			dependencies: ["378BEFB62C4F98BF"]
+			hide: true
 			id: "6AA1236C9946F569"
 			tasks: [{
 				id: "56A45A4FCA54436D"
@@ -324,33 +325,16 @@
 			}]
 		}
 		{
-			title: "About Peripherals in General"
+			title: "Custom Peripherals APIs"
 			icon: "minecraft:chest"
 			x: -7.5d
 			y: 0.0d
 			shape: "circle"
 			subtitle: "Lua Basics: Peripheral API"
 			description: [
-				"In general, a Peripheral is any block you could think of. Classic Minecraft Chest or Furnace, Drawer, Mekanism Metallurgic Infuser, anything!"
+				"ComputerCraft: Tweaked does support as peripherals other blocks as well! Your peripheral can be nearly anything, Minecraft Chest, Mekanism Reactor, Drawer, nearly any block works!"
 				""
-				"In ComputerCraft: Tweaked, to use any peripheral you need to wrap / find it first. You could set it to a local variable to be able to just use name you gave it in the code."
-				""
-				"Functions:"
-				"peripheral.wrap(\"#1\")"
-				"#1 -> side of the PC or name of the peripheral you want to wrap!"
-				"It returns a table with all functions for that specific peripheral. Thanks to that you can use peripheral specific commands on peripheral you just wrapped."
-				""
-				"peripheral.find(\"#1\",\"#2\")"
-				"#1 -> The type of peripheral you are looking for."
-				"#2 -> Filter [Optional]. Requires function to work."
-				"It returns a table with all founded peripherals, that pass Filter requirements. Filter needs function that returns True/False for it to filter, but can also be used to run commands on every peripheral that was founded!"
-				""
-				"peripheral.getName(#1)"
-				"#1 -> Peripheral you want to get name of."
-				"getName is really useful command used a lot in ComputerCraft, a lot of commands (mostly for moving stuff from one inventory to another) requires you to give them \"Name\" of the peripheral, and not a table that wrap / find gives you. This takes what wrap / find returns and gives the Name of that peripheral!"
-				""
-				"For more information look up ComputerCraft: Tweaked Wiki!"
-				"TODO: Rewrite this API Usage."
+				"Note that some mods does have support for ComputerCraft, and in that case blocks from that mod will have their own API."
 			]
 			dependencies: ["378BEFB62C4F98BF"]
 			hide: true
@@ -370,10 +354,9 @@
 		{
 			title: "Inventory API"
 			icon: "minecraft:barrel"
-			x: -9.5d
-			y: -1.0d
+			x: -9.0d
+			y: -1.5d
 			subtitle: "Lua Basics: Global Inventory API"
-			description: [""]
 			dependencies: ["55493D823F7403DA"]
 			hide: true
 			id: "4D55FB33758DEF7D"
@@ -383,16 +366,16 @@
 				item: "minecraft:barrel"
 			}]
 			rewards: [{
-				id: "76AFEDBB3D2A3334"
-				type: "xp"
-				xp: 100
+				id: "0068669643494A83"
+				type: "custom"
+				title: "[Link] Docs for Inventory API"
 			}]
 		}
 		{
 			title: "Liquid API"
 			icon: "minecraft:water_bucket"
 			x: -9.5d
-			y: 0.0d
+			y: -0.5d
 			subtitle: "Lua Basics: Global Liquid API"
 			dependencies: ["55493D823F7403DA"]
 			hide: true
@@ -431,19 +414,27 @@
 				}
 			}]
 			rewards: [{
-				id: "6F5EDC40C986AE57"
-				type: "xp"
-				xp: 100
+				id: "69D7831BDEB0D8FA"
+				type: "custom"
+				title: "[Link] Docs for Liquid API"
 			}]
 		}
 		{
 			title: "Energy API"
-			icon: "mekanism:basic_energy_cube"
+			icon: "engineersdecor:sign_hotwire"
 			x: -9.5d
-			y: 1.0d
+			y: 0.5d
 			subtitle: "Lua Basics: Global Energy API"
+			description: [
+				"This one is unfortunately really simple API, with not a lot of use. It can only read Energy capacity of some blocks."
+				""
+				"Energy API Functions:"
+				"> getEnergy() -> Returns the energy stored in that peripheral"
+				"> getEnergyCapacity() -> Returns maximum energy capacity of peripheral"
+			]
 			dependencies: ["55493D823F7403DA"]
 			hide: true
+			min_width: 450
 			id: "7CD446B77ACA29F7"
 			tasks: [{
 				id: "0085C0BFFF01C3DD"
@@ -482,6 +473,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "2E4271427FAF3612"
+				type: "custom"
+				title: "[Link] Docs for Energy API"
+			}]
 		}
 		{
 			title: "ComputerCraft Peripherals"
@@ -491,6 +487,7 @@
 			subtitle: "Wait there is even more?"
 			description: ["ComputerCraft: Tweaked adds a few unique peripherals on its own. Some of them aren't as useful as others, but all of them are worth to look at."]
 			dependencies: ["378BEFB62C4F98BF"]
+			hide: true
 			id: "1580D9FD06937ABB"
 			tasks: [{
 				id: "4816E5D3E5C6E0D2"
@@ -1985,6 +1982,8 @@
 				"> term.clear() -- This is command to clear the screen from \"term\" api."
 				""
 				"After this quest, you will get access to \"global usage\" API for peripherals, you will see what I mean when you see it. There will be explained API for peripherals, and next quest here will be continuation from there."
+				""
+				"PS: No, unfortunetaly even tho ComputerCraft has access to the internet, it is not possible to watch youtube in game."
 			]
 			dependencies: [
 				"3313C6D952FB8B0C"
@@ -2040,6 +2039,69 @@
 			tasks: [{
 				id: "07FABF3D743D7744"
 				type: "custom"
+			}]
+		}
+		{
+			title: "Mekanism API"
+			icon: "mekanism:alloy_atomic"
+			x: -9.0d
+			y: 1.5d
+			subtitle: "Lua Basics: Mekanism API"
+			description: [
+				"Mekanism is one of those mods that have ComputerCraft: Tweaked support! However, there is so much functions for every Mekanism machine, it is not possible to explain that API here. You will need to use external Excel spreadsheet this time."
+				""
+				"Searching for anything is fairly easy. Press \"ctrl\" + \"f\" and search for Mekanism machine you want to use. Next to every machine are functions you can use to interract with it!"
+				""
+				"Note that this API doesn't work super well with every Mekanism machine, and there isn't a lot of explenation of what functions do, so experimenting on your own is necessary."
+			]
+			dependencies: ["55493D823F7403DA"]
+			min_width: 400
+			id: "43D7B585768ACD4D"
+			tasks: [{
+				id: "12F8FAD09CCC6AB2"
+				type: "item"
+				title: "Any Mekanism Basic Material"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:alloy_infused"
+								Count: 1b
+							}
+							{
+								id: "mekanism:alloy_reinforced"
+								Count: 1b
+							}
+							{
+								id: "mekanism:alloy_atomic"
+								Count: 1b
+							}
+							{
+								id: "mekanism:basic_control_circuit"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_control_circuit"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_control_circuit"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_control_circuit"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "600E5CAA349CFDD3"
+				type: "custom"
+				title: "Link to Mek Excel Spreadsheet"
 			}]
 		}
 	]
