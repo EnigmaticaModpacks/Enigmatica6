@@ -716,23 +716,18 @@
 			shape: "pentagon"
 			subtitle: "Official Wikis for everything."
 			description: [
-				"If you want to learn even more, or need something that isn't here, check out these links."
+				"Here are the links to the Official ComputerCraft: Tweaked documentation, as well as Lua Documentation."
 				""
-				"These are official docs to the Lua Programming Language, as well as to ComputerCraft: Tweaked Wiki and Mekanism integration."
-				"TODO: clickable links or message on chat"
+				"In those documentations you can find nearly everything about anything. If you have problem with something from the quest line or you want to learn something new, this is the place to go!"
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.5d
+			min_width: 300
 			id: "508989B512DBB2A2"
 			tasks: [{
 				id: "0ED4FB7A29E8557D"
 				type: "checkmark"
 				title: "Got it!"
-			}]
-			rewards: [{
-				id: "6585C24F9B348B68"
-				type: "xp"
-				xp: 100
 			}]
 		}
 		{
@@ -1105,7 +1100,7 @@
 			title: "Variable Tips \\& Tricks"
 			icon: "computercraft:printed_page"
 			x: 5.5d
-			y: -2.0d
+			y: -1.5d
 			subtitle: "Lua Basics #1 - Variable tips \\& tricks"
 			description: [
 				"Variable naming:"
@@ -1150,8 +1145,8 @@
 		}
 		{
 			icon: "minecraft:writable_book"
-			x: -2.5d
-			y: 4.0d
+			x: -4.5d
+			y: 3.0d
 			description: [
 				"Challenges are gonna change a lot. Those that are here right now, are gonna be in new section: Tasks! It will give a tutorial how to do a program so people can see how to write code"
 				""
@@ -1263,6 +1258,7 @@
 			icon: "computercraft:printed_pages"
 			x: 8.0d
 			y: -2.0d
+			shape: "circle"
 			subtitle: "Lua Basics #2 - Creating functions"
 			description: [
 				"Creating functions is a little different and more complicated than creating a normal variable. One of the main differences is the function you use to create it. To create your own function variable, you use the \"function\" command!"
@@ -1447,8 +1443,8 @@
 		{
 			title: "If this is equal 0, then true!"
 			icon: "computercraft:printed_pages"
-			x: 9.0d
-			y: 0.0d
+			x: 9.5d
+			y: -0.5d
 			subtitle: "Lua Basics #3 - Creating conditions with IF"
 			description: [
 				"\"if\" is another one of the most important things in coding. Without it we wouldn't be able to create any decisions! \"if\" is used to check if a variable is equal, bigger, smaller etc than another variable / value."
@@ -1601,8 +1597,9 @@
 		{
 			title: "Loops... loops everywhere"
 			icon: "computercraft:printed_pages"
-			x: 8.5d
+			x: 10.0d
 			y: 2.0d
+			shape: "diamond"
 			subtitle: "Lua Basics #4.1 - Loops"
 			description: [
 				"Loops are used to execute your code how many times you want. You don't need to write a function and call it 200 times for your program to do something 200 times anymore!"
@@ -1633,6 +1630,7 @@
 			]
 			dependencies: ["6DF4A8FB92121573"]
 			hide: true
+			size: 1.25d
 			min_width: 500
 			id: "3313C6D952FB8B0C"
 			tasks: [{
@@ -1644,8 +1642,8 @@
 		{
 			title: "Different types of \"for\""
 			icon: "computercraft:printed_page"
-			x: 7.0d
-			y: 1.0d
+			x: 8.5d
+			y: 1.5d
 			subtitle: "Lua basics #4.2 - Types of for loop"
 			description: [
 				"Did you wonder how you can check every place in a table with a loop? With pairs() and ipairs() it is now possible!"
@@ -1688,8 +1686,8 @@
 		{
 			title: "But can I watch youtube in game?"
 			icon: "computercraft:printed_pages"
-			x: 7.5d
-			y: 3.5d
+			x: 9.0d
+			y: 4.0d
 			subtitle: "Lua Basics #5.1 - Introduction to APIs"
 			description: [
 				"You may be thinking, what use have those monitors you got at the start of the questline. I mean you probably know the answer for that, but you don't know how to use them. Thats what this quest is for!"
@@ -1700,7 +1698,7 @@
 				""
 				"> term.clear() -- This is command to clear the screen from \"term\" api."
 				""
-				"After this quest, you will get access to \"global usage\" API for peripherals, you will see what I mean when you see it. There will be explained API for peripherals, and next quest here will be continuation from there."
+				""
 				""
 				"PS: No, unfortunetaly even tho ComputerCraft has access to the internet, it is not possible to watch youtube in game."
 			]
@@ -1966,6 +1964,16 @@
 				id: "101D4E6D47ECA46A"
 				type: "checkmark"
 				title: "Got it working!"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			id: "69341D3A85480AD9"
+			tasks: [{
+				id: "559DE4A337138B1F"
+				type: "checkmark"
+				title: "Got it!"
 			}]
 		}
 	]
