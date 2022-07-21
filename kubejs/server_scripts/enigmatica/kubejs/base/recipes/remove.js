@@ -88,6 +88,11 @@ onEvent('recipes', (event) => {
 
         'bloodmagic:smelting/ingot_netherite_scrap',
         'bloodmagic:alchemytable/gunpowder',
+        'bloodmagic:meteor/create',
+        'bloodmagic:meteor/ae2',
+        'bloodmagic:meteor/immersive_engineering',
+        'bloodmagic:meteor/myst_ag',
+        'bloodmagic:meteor/thermal',
 
         'botania:fertilizer_dye',
 
