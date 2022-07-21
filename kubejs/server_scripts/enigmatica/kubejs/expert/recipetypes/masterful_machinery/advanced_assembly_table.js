@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:basic_circuit_package', count: 32 } },
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
-            ticks: 240,
+            ticks: 120,
             id: `${id_prefix}batch_basic_circuit_package`
         },
         {
@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:basic_memory_package', count: 32 } },
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
-            ticks: 240,
+            ticks: 120,
             id: `${id_prefix}batch_basic_memory_package`
         },
         {
@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:cpu_core_500_package', count: 32 } },
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
-            ticks: 240,
+            ticks: 120,
             id: `${id_prefix}batch_cpu_core_500_package`
         },
         {
@@ -45,7 +45,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:cpu_core_1000_package', count: 32 } },
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
-            ticks: 240,
+            ticks: 120,
             id: `${id_prefix}batch_cpu_core_1000_package`
         },
         {
@@ -56,7 +56,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:cpu_core_2000_package', count: 32 } },
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
-            ticks: 240,
+            ticks: 120,
             id: `${id_prefix}batch_cpu_core_2000_package`
         },
         {
@@ -65,7 +65,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:empty_pcb', count: 32 } },
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
-            ticks: 240,
+            ticks: 120,
             id: `${id_prefix}batch_unassembled_pcb`
         }
     ];
@@ -111,7 +111,7 @@ onEvent('recipes', (event) => {
                     },
                     { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
                 ],
-                ticks: 240,
+                ticks: 120,
                 id: `${id_prefix}batch_${partSize}_storage_part_assembly`
             });
         });
