@@ -80,7 +80,10 @@
 				""
 				"This section will show you all peripherals available and how to use their APIs."
 			]
-			dependencies: ["2D79E4D126EE389E"]
+			dependencies: [
+				"2D79E4D126EE389E"
+				"6F651FA6C015CA4A"
+			]
 			hide: true
 			size: 1.25d
 			id: "378BEFB62C4F98BF"
@@ -1194,14 +1197,14 @@
 				"To read/write to some entry, you need to use its key in the brackets next to the table, like this:"
 				""
 				"> my_first_table[1] = \"Hello\""
-				"> print my_first_table[1] -> Prints \"Hello\""
+				"> print (my_first_table[1]) -> Prints \"Hello\""
 				""
 				"In tables, you can store nearly anything, string, function, even another list! If you have list of the functions its API, and in that way you can create your own simple API. "
 				"If your key is a string, you can skip the brackets and just use the string name with a dot to get to that entry:"
 				""
 				"> my_first_table.hello = \"Hello again\""
 				""
-				"It the similiar way you use APIs, but complete guide on that will be later on."
+				"In the similar way you use APIs, but complete guide on that will be later on."
 				"Note: a.x and a[x] isn't the same! x in first case is a string, not a variable like in second one!"
 				""
 				"Lua defaults empty entries to nil, and you can set non-empty ones to nil to clear them. Tables aren't fixed, if there will be no more relations to it, it will be deleted from the memory. To delete a table completly, set every variable that has relation to that table to nil."
@@ -1443,6 +1446,8 @@
 				"PS: For anyone that sees this. If you have any idea for quest requiremt for completion or better icon, I would aprreciate that ^^\""
 				""
 				"And about lua basics. I'm planing to add few more quests, talking about loops, function IF and searching for functions at wikis etc. Shouldn't be more than 10 quests (without those ones that have Variables Types) for entire Lua Basics"
+				""
+				"Note: Lua Basics #6 is gonna be the last Lua basics I'm pretty sure about that :D (if. I didn't forget about something that is required)"
 			]
 			min_width: 350
 			id: "422379AAF05456FC"
@@ -1602,7 +1607,7 @@
 				"It's time. We are gonna actually code something!"
 				"The program we will create, will use the print() function to write some variable's values on the screen after we modify them."
 				""
-				"● First thing we need to do, is to create 2 strings, 2 numbers, a boolean and nil variable. Name for each of them is up to you."
+				"● First thing we need to do, is to create 2 strings, 2 numbers, a boolean and nil variable. Name and value for each of them is up to you."
 				""
 				"● Now let's use the print() function to write some text on the screen. However first, we will add one of those strings to the end of the other. Now we can print what we got."
 				""
@@ -1666,28 +1671,6 @@
 				id: "2FB3304315BB5F48"
 				type: "custom"
 				title: "I think about giving here one of the scavenging bags. What do you think?"
-			}]
-		}
-		{
-			x: 0.5d
-			y: 6.0d
-			description: [
-				"Progression visibility:"
-				"Introduction to Lua / Advanced PC \\& Pocket PC / Wikis - Stage 0"
-				"Introduction to Lua unlocks Tasks and Lua Basics 1 with its types"
-				"Finishing every Lua Basics #1 Unlocks Lua Basics #2 and first task."
-				"Finishing Task #1 unlocks coding tips"
-				"Lua Basics #2 unlocks Lua Basics #3 and Task #2."
-				"Lua Basics #3 Unlocks #4 and Task #3, as well as all Peripherals"
-				"And it goes like that until last Lua Basic quest and Task, what unlocks challenges!"
-			]
-			min_width: 500
-			id: "3FBB6584FA19A1D9"
-			tasks: [{
-				id: "4A951C0D263C371E"
-				type: "custom"
-				title: "Note 2"
-				icon: "computercraft:printed_book"
 			}]
 		}
 		{
@@ -1765,7 +1748,7 @@
 				"●  \">\" and \"<\"  -> Checks if 1st variable is bigger / lower than 2nd one (Only numbers)."
 				"●  \">=\" and \"<=\"  -> Checks if 1st variable is bigger / lower than 2nd one or if variables are equal (Only numbers)."
 				""
-				"There are operators that make it possible to combine multiple operators:"
+				"There are also operators that make it possible to combine multiple conditions into one:"
 				""
 				"●  \"and\" -> this operator returns its first argument if it is false, otherwise, it returns its second argument (Example:"
 				"> (6 > 5 and 6 < 5) -- First argument is true, so it returns the second one that is false)"
@@ -1879,10 +1862,12 @@
 				""
 				"If done correctly you should get no errors, and get good outputs that agree with instructions written in this quest:"
 				""
-				"If first condition is meet, you should see \"Its bigger!\", if not \"Its smaller!\""
-				"If second condition is meet, you should see what you wrote in your first string, if not, you should see either \"They are the same!\" or \"They weren't the same, but they are now.\" if your strings weren't identical."
+				"● If first condition is meet, you should see \"Its bigger!\", if not \"Its smaller!\""
+				"● If second condition is meet, you should see what you wrote in your first string, if not, you should see either \"They are the same!\" or \"They weren't the same, but they are now.\" if your strings weren't identical."
 				""
 				"Now if your code works, you can experiment a bit and see how the output changes with different inputs. Have fun!"
+				""
+				"Note from creator: I know those conditions doesn't have much sense, but they are done for you to practice \"elseif\" and \"else\" functions!"
 			]
 			dependencies: [
 				"7A434175E2B1AE04"
@@ -1956,7 +1941,7 @@
 				""
 				"> for key, value in ipairs(table) do ... end"
 				""
-				"● ipairs() are returning only entries with a numeric key, in order from the lowest to the highest number. It is useful when you need to sort your table from non-numeric keys, or when you need table entries in specified order. Note that ipairs are checking entire table every run of the loop, so it will be (much) slower than pairs() loop."
+				"● ipairs() are returning only entries with a numeric key, in order from the lowest to the highest number. It is useful when you need to sort your table from non-numeric keys, or when you need table entries in specified order. Beware that ipairs doesn't work with keys under 1 are checking entire table every run of the loop, so it will be (much) slower than pairs() loop."
 				""
 				"Here is the example! First lets create a table. Our one will contain Enigmatica modpacks:"
 				""
@@ -1975,6 +1960,7 @@
 				"Tip: You can add \"end\" after a command in the same line, its not always recommended, but for short loops / condition / functions its really useful for saving space."
 			]
 			dependencies: ["3313C6D952FB8B0C"]
+			hide: true
 			min_width: 450
 			id: "2E2E7D1F4001A9F3"
 			tasks: [{
@@ -1988,10 +1974,24 @@
 			icon: "computercraft:printed_pages"
 			x: 7.5d
 			y: 3.5d
-			subtitle: "Lua Basics #5 - Usage of APIs and Peripherals"
-			description: ["To do: Fix peripherals section so this quest makes sense"]
-			dependencies: ["3313C6D952FB8B0C"]
+			subtitle: "Lua Basics #5.1 - Introduction to APIs"
+			description: [
+				"You may be thinking, what use have those monitors you got at the start of the questline. I mean you probably know the answer for that, but you don't know how to use them. Thats what this quest is for!"
+				""
+				"ComputerCraft has a lot of really useful peripherals, that have their own API. What is API you already know, we will talk here only about usage."
+				""
+				"Every API has its variable you use to interact with it. That variable is a list of functions you can access by writing its name after the name of API. Between them you add dot. List of functions for every API is in Documentation for ComputerCraft, and you search it by its name or peripheral you want to use."
+				""
+				"> term.clear() -- This is command to clear the screen from \"term\" api."
+				""
+				"After this quest, you will get access to \"global usage\" API for peripherals, you will see what I mean when you see it. There will be explained API for peripherals, and next quest here will be continuation from there."
+			]
+			dependencies: [
+				"3313C6D952FB8B0C"
+				"1C78AA75C0095B23"
+			]
 			hide: true
+			min_width: 450
 			id: "1F7736775BFEA643"
 			tasks: [{
 				id: "6F651FA6C015CA4A"
@@ -2010,6 +2010,34 @@
 				id: "00AAF998FF0416A3"
 				type: "checkmark"
 				title: "Got it working!"
+			}]
+		}
+		{
+			title: "Note 2: What needs to be changed"
+			icon: "minecraft:writable_book"
+			x: 0.5d
+			y: 6.0d
+			description: [
+				"So there is few quests that has been done before I knew in what style I'm doing those quests, and also before \"lifting\" of few things like APIs section, so here are the quests that I need to redo (and wait with redoing for Motoko)"
+				""
+				"Entire Peripheral Section."
+				"Probably Function Task"
+				"Coding Tips"
+				"Documentation (links to wiki, I need to wait for Motoko for that)"
+				"Challenges"
+				""
+				"What is actually done? (except few tweaks later on)"
+				"I think quests from Lua Basics that are here aren't gonna be touched much in the future, I can call those \"done\""
+				"Few tasks I can call \"done\" as well"
+				"Main quest"
+				"Advanced and Pocket computer quest"
+				"How to use PC"
+			]
+			min_width: 500
+			id: "3EBF3FB9D45D8F7B"
+			tasks: [{
+				id: "07FABF3D743D7744"
+				type: "custom"
 			}]
 		}
 	]
