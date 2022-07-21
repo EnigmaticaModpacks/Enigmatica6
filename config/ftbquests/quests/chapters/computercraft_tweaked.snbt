@@ -738,14 +738,16 @@
 		{
 			title: "Challenges"
 			icon: "computercraft:computer_command"
-			x: 2.0d
-			y: 4.75d
+			x: 0.0d
+			y: 8.0d
 			shape: "gear"
 			subtitle: "Try yourself!"
 			description: [
-				"Here are some easy challenges you could try completing to test what you learned so far. For every challenge you will get a small prize :D"
+				"Here are few challenges you can try to complete, they aren't required for you to do, but its really interesting way to try yourself and see how much you understood from the entire quest line!"
 				""
-				"However at the end, there are few challenges you could not be able to finish without deeper understanding of Lua, so don't care too much about those if you aren't able to finish. There are here for those handful of people that know what there are doing ^^\""
+				"In the subtitle, there will be rating from 1 to 10 in terms of difficulty. Higher numbers could require from you more knowledge and / or reading Lua documentation."
+				""
+				"After completing every quest, you will get a ComputerCraft trophy!"
 			]
 			hide: true
 			size: 1.5d
@@ -763,224 +765,20 @@
 			}]
 		}
 		{
-			title: "Your first program!"
-			icon: "computercraft:printed_page"
-			x: 2.0d
-			y: 6.0d
-			subtitle: "Challenge #1"
-			description: ["Make a program that will type on the monitor every 5 seconds phrase \"My First Program!\""]
-			dependencies: ["777349A29491AE4C"]
-			hide: true
-			id: "7F980AC22498FE44"
-			tasks: [
-				{
-					id: "194470FBF6D30D4B"
-					type: "checkmark"
-					title: "Got it working!"
-				}
-				{
-					id: "37AC0AFD18F38CF9"
-					type: "item"
-					title: "Computer"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "computercraft:computer_normal"
-									Count: 1b
-								}
-								{
-									id: "computercraft:computer_advanced"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "131814BA2E6573DB"
-					type: "item"
-					title: "Monitor"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "computercraft:monitor_normal"
-									Count: 1b
-								}
-								{
-									id: "computercraft:monitor_advanced"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "2F6F8FDD1C50F2A4"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Item Transfer!"
-			icon: "mekanism:basic_mechanical_pipe"
-			x: 1.5d
-			y: 7.0d
-			subtitle: "Challenge #2"
-			description: ["Make a program that will transfer items from inventory on the left to inventory on the right."]
-			dependencies: ["7F980AC22498FE44"]
-			hide: true
-			id: "06A8B69F9385388B"
-			tasks: [
-				{
-					id: "1DD8D1520D86E71D"
-					type: "checkmark"
-					title: "Got it working!"
-				}
-				{
-					id: "29E0DE505929241E"
-					type: "item"
-					title: "Computer"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "computercraft:computer_normal"
-									Count: 1b
-								}
-								{
-									id: "computercraft:computer_advanced"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "5C9E09235719EFE2"
-					type: "item"
-					title: "Inventory"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "minecraft:chest"
-									Count: 1b
-								}
-								{
-									id: "minecraft:barrel"
-									Count: 1b
-								}
-							]
-						}
-					}
-					count: 2L
-				}
-			]
-		}
-		{
-			title: "Using Peripherals to interract with RS"
-			icon: "refinedstorage:disk_drive"
-			x: -0.5d
-			y: 7.0d
-			subtitle: "Challenge #3"
-			description: ["Use Advanced Peripherals to export some items from RS into a chest."]
-			dependencies: ["06A8B69F9385388B"]
-			hide: true
-			id: "0F004D494E6114E8"
-			tasks: [
-				{
-					id: "7F89261D56AFCC98"
-					type: "checkmark"
-					title: "Got it working!"
-				}
-				{
-					id: "6375843352BB76C2"
-					type: "item"
-					title: "Computer"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "computercraft:computer_normal"
-									Count: 1b
-								}
-								{
-									id: "computercraft:computer_advanced"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "5299FCDEF5D01998"
-					type: "item"
-					item: "advancedperipherals:rs_bridge"
-				}
-				{
-					id: "325807DC4DDF3807"
-					type: "item"
-					title: "Inventory"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "minecraft:chest"
-									Count: 1b
-								}
-								{
-									id: "minecraft:barrel"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
-			rewards: [
-				{
-					id: "09A23C581CD60BAE"
-					type: "item"
-					item: "refinedstorage:cable"
-					count: 8
-				}
-				{
-					id: "3F3E6C99F3DCDB19"
-					type: "item"
-					item: "refinedstorage:exporter"
-				}
-			]
-		}
-		{
-			title: "Coding Tips"
+			title: "Better Code Editor"
 			icon: "create:wrench"
 			x: 3.125d
 			y: 0.0d
 			shape: "gear"
 			subtitle: "Enough of in-game coding? There is a solution!"
 			description: [
-				"I think after a while of editing in game, you know it's really annoying to use it, but don't worry fellow player, you don't need to use it anymore!"
+				"After a while of editing in game, you probably realized it's really annoying to use in game editor, but don't worry fellow player, you don't need to anymore!"
 				""
-				"You can just drag \\& drop files into minecraft itself!"
-				"You just have to create a file on your desktop, code in it and rename it onto [your_name].lua, drop it into in-game Computer and run it. It's that easy ^^"
+				"You can upload files from your real computer into the in-game PC! You just have to create a file on your desktop, rename it onto [your_name].lua and you can start coding. After you finished, you just drag \\& drop it into in-game Computer and run it. Simple as that!"
 				""
-				"If you want to have proper Lua support and checking, you can install Visual Studio Code and ComputerCraft: Tweaked Plugin for full ComputerCraft Lua support! Link to that Plugin is in wiki of that quest"
-				"TODO: some sort of link to CC: Tweaked Plugin for Visual Studio Code and mention of the Directiories etc"
+				"Note that file will be uploaded to a directory you are currently in, and if file with that name exists it will be over written!"
+				""
+				"There is also an addon for Visual Studio Code, that adds ComputerCraft support in Lua Language. Link to that is as the quest reward."
 			]
 			dependencies: [
 				"2D79E4D126EE389E"
@@ -988,19 +786,25 @@
 			]
 			hide: true
 			size: 1.25d
-			min_width: 275
+			min_width: 450
 			id: "5D796A237D7164E5"
 			tasks: [{
-				id: "77723B672ED12F16"
-				type: "item"
-				item: "emendatusenigmatica:iron_gear"
-				consume_items: true
+				id: "4B61C4F20F5B7F7F"
+				type: "checkmark"
+				title: "Got it!"
 			}]
-			rewards: [{
-				id: "2545BD1A22D53A17"
-				type: "custom"
-				title: "Links to Wikis [Not working yet]"
-			}]
+			rewards: [
+				{
+					id: "3E9A7C4F18826645"
+					type: "custom"
+					title: "[Link] Video showcasing drag \\& drop functionality"
+				}
+				{
+					id: "730F57D0F4965145"
+					type: "custom"
+					title: "[Link] Visual Studio Code ComputerCraft addon"
+				}
+			]
 		}
 		{
 			title: "Introduction to Lua"
@@ -1042,111 +846,6 @@
 					xp: 100
 				}
 			]
-		}
-		{
-			title: "Modem action!"
-			icon: "computercraft:wired_modem_full"
-			x: 0.5d
-			y: 7.0d
-			subtitle: "Challenge #4"
-			description: ["Use a wired Modem to interract with barrel, and print on the monitor list of items in it."]
-			dependencies: ["0F004D494E6114E8"]
-			hide: true
-			id: "44A7E0342E80526D"
-			tasks: [
-				{
-					id: "0F44049652DDBB03"
-					type: "checkmark"
-					title: "Got it working!"
-				}
-				{
-					id: "2A24265C5169E9C8"
-					type: "item"
-					title: "Computer"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "computercraft:computer_normal"
-									Count: 1b
-								}
-								{
-									id: "computercraft:computer_advanced"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "7466E2D8E41A02F5"
-					type: "item"
-					item: "minecraft:barrel"
-				}
-				{
-					id: "7141C9C70784F055"
-					type: "item"
-					title: "Wired Modem"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "computercraft:wired_modem"
-									Count: 1b
-								}
-								{
-									id: "computercraft:wired_modem_full"
-									Count: 1b
-								}
-							]
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "3BAA23CEA19F1FC1"
-					type: "item"
-					item: "computercraft:cable"
-					count: 8L
-				}
-			]
-			rewards: [
-				{
-					id: "673964E9361F0DF7"
-					type: "item"
-					item: "computercraft:wired_modem_full"
-					count: 2
-				}
-				{
-					id: "5A2D6DA14896628E"
-					type: "item"
-					item: "computercraft:cable"
-					count: 16
-				}
-			]
-		}
-		{
-			title: "Wireless communications!"
-			icon: "computercraft:wireless_modem_normal"
-			x: 1.0d
-			y: 8.0d
-			subtitle: "Challenge #4.2"
-			description: [
-				""
-				"TODO: Learn actually how to use Wireless modems in they intended use, then do that challenge"
-			]
-			dependencies: ["44A7E0342E80526D"]
-			hide: true
-			id: "70C1723A18F89BD9"
-			tasks: [{
-				id: "0F69F5424C241DC3"
-				type: "checkmark"
-				title: "Got it working!"
-			}]
 		}
 		{
 			title: "Variables and their types"
@@ -1451,8 +1150,8 @@
 		}
 		{
 			icon: "minecraft:writable_book"
-			x: -0.5d
-			y: 6.0d
+			x: -2.5d
+			y: 4.0d
 			description: [
 				"Challenges are gonna change a lot. Those that are here right now, are gonna be in new section: Tasks! It will give a tutorial how to do a program so people can see how to write code"
 				""
@@ -2034,8 +1733,8 @@
 		{
 			title: "Note 2: What needs to be changed"
 			icon: "minecraft:writable_book"
-			x: 0.5d
-			y: 6.0d
+			x: -3.5d
+			y: 3.0d
 			description: [
 				"So there is few quests that has been done before I knew in what style I'm doing those quests, and also before \"lifting\" of few things like APIs section, so here are the quests that I need to redo (and wait with redoing for Motoko)"
 				""
@@ -2122,6 +1821,151 @@
 				id: "600E5CAA349CFDD3"
 				type: "custom"
 				title: "Link to Mek Excel Spreadsheet"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "135B6776BF6F126B"
+			tasks: [{
+				id: "46F7C63A84FCD2DF"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "7E025BDCF46C877D"
+			tasks: [{
+				id: "5AC427F2D046E5B2"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "5C1BEEB39675EBA9"
+			tasks: [{
+				id: "7643C5D7C66E4A63"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 8.0d
+			dependencies: ["777349A29491AE4C"]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "53FA451058F778D9"
+			tasks: [{
+				id: "6AF4B8CAC3F680BF"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 10.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "2CE39378CBB272DB"
+			tasks: [{
+				id: "72C8EE047CBEAF4F"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 10.5d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "2A377B74D184444B"
+			tasks: [{
+				id: "2BC79AB3D3C44429"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 10.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "60425E956BBF01D9"
+			tasks: [{
+				id: "33AC70C1007ACEDB"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 9.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "6489F0478C60B861"
+			tasks: [{
+				id: "1E890F7E7EDF4B4C"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 8.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "0A8C43D4B5B6C62C"
+			tasks: [{
+				id: "642DECEBBDE65908"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 7.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "71C88AA0BB5BE7FE"
+			tasks: [{
+				id: "5CB1DE36311F811F"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "3F613624A3042197"
+			tasks: [{
+				id: "0A920986118648C7"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 9.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "5754C4EA09015400"
+			tasks: [{
+				id: "101D4E6D47ECA46A"
+				type: "checkmark"
+				title: "Got it working!"
 			}]
 		}
 	]
