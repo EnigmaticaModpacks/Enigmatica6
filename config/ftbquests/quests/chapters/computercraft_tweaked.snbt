@@ -729,6 +729,18 @@
 				type: "checkmark"
 				title: "Got it!"
 			}]
+			rewards: [
+				{
+					id: "483D05B0EA152873"
+					type: "custom"
+					title: "[Link] Lua Docs"
+				}
+				{
+					id: "6466C8ABA6349F16"
+					type: "custom"
+					title: "[Link] CC:T Docs"
+				}
+			]
 		}
 		{
 			title: "Challenges"
@@ -845,8 +857,8 @@
 		{
 			title: "Variables and their types"
 			icon: "computercraft:printed_pages"
-			x: 5.5d
-			y: -3.5d
+			x: 6.0d
+			y: -3.0d
 			shape: "diamond"
 			subtitle: "Lua Basics #1 - Variables"
 			description: [
@@ -892,8 +904,8 @@
 		{
 			title: "Type: Table"
 			icon: "computercraft:printed_page"
-			x: 3.0d
-			y: -4.0d
+			x: 3.5d
+			y: -3.5d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
 				"Tables are one of the most complicated \"variables\" in here, so you will need to read a lot more about them if you want to learn more than basic of basics."
@@ -940,8 +952,8 @@
 		{
 			title: "Type: Boolean"
 			icon: "computercraft:printed_page"
-			x: 7.35d
-			y: -4.8d
+			x: 7.85d
+			y: -4.3d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
 				"Boolean is the easiest type in every programming language. It can have 2 states, \"True\" and \"False\"."
@@ -967,8 +979,8 @@
 		{
 			title: "Type: Function"
 			icon: "computercraft:printed_page"
-			x: 3.65d
-			y: -4.8d
+			x: 4.15d
+			y: -4.3d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
 				"You already heard of the word \"function\" a few times in this quest line, but did you know it's also one of the variable types?"
@@ -1012,8 +1024,8 @@
 		{
 			title: "Type: String"
 			icon: "computercraft:printed_page"
-			x: 4.5d
-			y: -5.4d
+			x: 5.0d
+			y: -4.9d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
 				"String is a type of variable that stores a sequence of characters. You can type here anything, binary code (Binary - Code using ones and zeros), your name, entire address or your homework if you so desire."
@@ -1057,8 +1069,8 @@
 		{
 			title: "Type: Number"
 			icon: "computercraft:printed_page"
-			x: 6.5d
-			y: -5.4d
+			x: 7.0d
+			y: -4.9d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
 				"Number is a type of variable to store numbers."
@@ -1099,8 +1111,8 @@
 		{
 			title: "Variable Tips \\& Tricks"
 			icon: "computercraft:printed_page"
-			x: 5.5d
-			y: -1.5d
+			x: 6.0d
+			y: -1.0d
 			subtitle: "Lua Basics #1 - Variable tips \\& tricks"
 			description: [
 				"Variable naming:"
@@ -1198,8 +1210,8 @@
 		{
 			title: "Variables Types - In General"
 			icon: "computercraft:printed_page"
-			x: 5.5d
-			y: -5.75d
+			x: 6.0d
+			y: -5.25d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
 				"Every variable has its own type that determines what it stores and what you can do to it."
@@ -1226,8 +1238,8 @@
 		{
 			title: "Type: Nil"
 			icon: "computercraft:printed_page"
-			x: 8.0d
-			y: -4.0d
+			x: 8.5d
+			y: -3.5d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
 				"Nil is a variable type and variable value. It means literally \"nothing\" in code. Variables with type nil, asked for their type and what they're storing, will return nil."
@@ -1256,7 +1268,7 @@
 		{
 			title: "Creating your own functions"
 			icon: "computercraft:printed_pages"
-			x: 8.0d
+			x: 9.0d
 			y: -2.0d
 			shape: "circle"
 			subtitle: "Lua Basics #2 - Creating functions"
@@ -1380,9 +1392,9 @@
 				}
 			]
 			rewards: [{
-				id: "2FB3304315BB5F48"
+				id: "2FEFE49A60D109C3"
 				type: "custom"
-				title: "I think about giving here one of the scavenging bags. What do you think?"
+				title: "[Link] Resolved Task 1"
 			}]
 		}
 		{
@@ -1443,7 +1455,7 @@
 		{
 			title: "If this is equal 0, then true!"
 			icon: "computercraft:printed_pages"
-			x: 9.5d
+			x: 10.5d
 			y: -0.5d
 			subtitle: "Lua Basics #3 - Creating conditions with IF"
 			description: [
@@ -1554,6 +1566,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "4ECDC6048A431EB1"
+				type: "custom"
+				title: "[Link] Resolved Task 2"
+			}]
 		}
 		{
 			title: "Is 6 higher than 8?"
@@ -1593,12 +1610,17 @@
 				type: "checkmark"
 				title: "Got it working!"
 			}]
+			rewards: [{
+				id: "1A9BD8BED0937646"
+				type: "custom"
+				title: "[Link] Resolved Task 3"
+			}]
 		}
 		{
 			title: "Loops... loops everywhere"
 			icon: "computercraft:printed_pages"
-			x: 10.0d
-			y: 2.0d
+			x: 10.625d
+			y: 1.875d
 			shape: "diamond"
 			subtitle: "Lua Basics #4.1 - Loops"
 			description: [
@@ -1616,7 +1638,7 @@
 				"●  First argument is a variable that is used for loops condition. As with functions, this variable is temporary, its only available inside of the loop and is gone in any other place in the code."
 				"Note: You can create that variable without use of a \"local\" function as in example. Also you can give it a value of different variable that has been created outside of the loop."
 				""
-				" ●  Second argument is your loop condition. You don't create it as \"if\" condition however, you just put in number that variable needs to get to. In our example variable \"i\" needs to be equal 10 for loop to finish its work."
+				"●  Second argument is your loop condition. You don't create it as \"if\" condition however, you just put in number that variable needs to get to. In our example variable \"i\" needs to be equal 10 for loop to finish its work."
 				""
 				"●  Third argument is incrementation of that variable. That means by how much a variable needs to change. In our example we used 1, so our variable will increase by one with every run of the loop. You can also use negative numbers to make a loop that will decrease its variable."
 				""
@@ -1642,8 +1664,8 @@
 		{
 			title: "Different types of \"for\""
 			icon: "computercraft:printed_page"
-			x: 8.5d
-			y: 1.5d
+			x: 12.5d
+			y: 1.0d
 			subtitle: "Lua basics #4.2 - Types of for loop"
 			description: [
 				"Did you wonder how you can check every place in a table with a loop? With pairs() and ipairs() it is now possible!"
@@ -1686,7 +1708,7 @@
 		{
 			title: "But can I watch youtube in game?"
 			icon: "computercraft:printed_pages"
-			x: 9.0d
+			x: 9.5d
 			y: 4.0d
 			subtitle: "Lua Basics #5.1 - Introduction to APIs"
 			description: [
@@ -1698,7 +1720,13 @@
 				""
 				"> term.clear() -- This is command to clear the screen from \"term\" api."
 				""
+				"There isn't much special with APIs at this point, they work like normal functions, but you call them differently. The complexity starts with how you get access to the API."
 				""
+				"There are 2 types of APIs in ComputerCraft, Global and Peripheral. "
+				""
+				"● Global APIs are accessible at all time with use of Global Variable. Some useful Global APIs will be in \"Global API\" Section. "
+				""
+				"● Peripherals APIs are only accessible, when you have connected peripheral that API uses. Before that however, you need to wrap that peripheral, as Peripheral APIs are \"block specific\". More about that in Lua basics #5.2 - Peripherals API"
 				""
 				"PS: No, unfortunetaly even tho ComputerCraft has access to the internet, it is not possible to watch youtube in game."
 			]
@@ -1726,6 +1754,11 @@
 				id: "00AAF998FF0416A3"
 				type: "checkmark"
 				title: "Got it working!"
+			}]
+			rewards: [{
+				id: "42CF98A624FC2784"
+				type: "custom"
+				title: "[Link] Resolved Task 4"
 			}]
 		}
 		{
@@ -1967,13 +2000,205 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 3.0d
+			title: "Global Variables"
+			icon: "computercraft:printed_book"
+			x: 7.0d
+			y: 2.5d
+			subtitle: "Lua Basics #5.2 - Useful Global Variables"
+			description: [
+				"Global variables are variables that have the same value in every program. They are just part of Lua language! It is possible to do custom global variables, but thats not very practical and requires a lot of work."
+				""
+				"Here are few most useful Global Variables in ComputerCraft: Tweaked and Lua. Everything else you need to find by yourself in documentation, but those here should be enough for most automations projects in minecraft."
+			]
+			dependencies: ["1F7736775BFEA643"]
+			min_width: 350
 			id: "69341D3A85480AD9"
 			tasks: [{
 				id: "559DE4A337138B1F"
 				type: "checkmark"
 				title: "Got it!"
+			}]
+			rewards: [{
+				id: "5F33BD10412387BF"
+				type: "custom"
+				title: "[Link] Global Variables in CC"
+			}]
+		}
+		{
+			title: "Colors Library"
+			icon: "computercraft:printed_pages"
+			x: 5.0d
+			y: 3.0d
+			subtitle: "Lua Basics #5.2 - Colors API"
+			dependencies: ["69341D3A85480AD9"]
+			id: "0E17CEC71EA384AE"
+			tasks: [{
+				id: "1428C8E8290AB4F6"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "0BACD05CE58EBB6F"
+				type: "custom"
+				title: "[Link] Colors Library"
+			}]
+		}
+		{
+			title: "Operating System API"
+			icon: "computercraft:printed_pages"
+			x: 5.0d
+			y: 2.0d
+			subtitle: "Lua Basics #5.2 - \"os\" API"
+			dependencies: ["69341D3A85480AD9"]
+			id: "29EC12D7DF1ED9FF"
+			tasks: [{
+				id: "23197281ACBC72F5"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "196A0244498873CE"
+				type: "custom"
+				title: "[Link] OS API"
+			}]
+		}
+		{
+			title: "Peripheral API"
+			icon: "computercraft:printed_pages"
+			x: 7.5d
+			y: 0.5d
+			subtitle: "Lua Basics #5.2 - Peripheral API"
+			dependencies: ["69341D3A85480AD9"]
+			id: "2A1B7703C6A4685D"
+			tasks: [{
+				id: "3E85F8A3BC1D31AC"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "1BD8280A906CF52F"
+				type: "custom"
+				title: "[Link] Peripheral API"
+			}]
+		}
+		{
+			title: "Terminal API"
+			icon: "computercraft:printed_pages"
+			x: 6.5d
+			y: 0.5d
+			subtitle: "Lua Basics #5.2 - Term API"
+			description: [
+				"Terminal API (term) is used to interract with Terminal of your PC or your monitor!"
+				"It has a ton of functions, so I will just get few most important ones, but taking a look at the Documentation for it is definitely worht the time."
+				""
+				"> term.redirect(target) -> Redirects terminal output onto other terminal, like monitor."
+				""
+			]
+			dependencies: ["69341D3A85480AD9"]
+			min_width: 400
+			id: "75E0C3E753708FD4"
+			tasks: [{
+				id: "0E6AADD401F2F7B6"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "456F37019812B8FB"
+				type: "custom"
+				title: "[Link] Term API"
+			}]
+		}
+		{
+			title: "Text Utilities API"
+			icon: "computercraft:printed_pages"
+			x: 5.5d
+			y: 1.0d
+			subtitle: "Lua Basics #5.2 - Textutils API"
+			dependencies: ["69341D3A85480AD9"]
+			id: "097B439DEE968650"
+			tasks: [{
+				id: "39FB5759F1B08786"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "796FE0452D816B89"
+				type: "custom"
+				title: "[Link] Textuitls API"
+			}]
+		}
+		{
+			title: "Math library"
+			icon: "computercraft:printed_pages"
+			x: 8.5d
+			y: 1.0d
+			subtitle: "Lua basics #5.2 - Math library"
+			description: [
+				"Math library has a lot of Mathematical functions that could be useful for calculating stuff. All of them you can find in the link from the quest reward, but most useful ones are:"
+				""
+				"> math.ceil(number) -> Rounds up the number up."
+				""
+				"> math.floor(number) -> Rounds up number down."
+				""
+				"> math.random([number_1],[number_2]) -> Generates random number from:"
+				"● No arguments -> Double Precision number from 0 to 1"
+				"● 1 argument -> Number from 1 to number_1"
+				"● 2 arguments -> Number from number_1 to number_2"
+				""
+				"> math.max(number_1 ... number_x) -> Returns highest number from arguments."
+				""
+				"> math.min(number_1 ... number_x) -> Returns smallest number from arguments."
+			]
+			dependencies: ["69341D3A85480AD9"]
+			min_width: 400
+			id: "56A9604A23CBA7FE"
+			tasks: [{
+				id: "54B0D2E05E747320"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "394B66345A71FFE7"
+				type: "custom"
+				title: "[Link] Math Library on Lua Docs"
+			}]
+		}
+		{
+			title: "WIP"
+			icon: "computercraft:printed_pages"
+			x: 5.5d
+			y: 4.0d
+			dependencies: ["69341D3A85480AD9"]
+			id: "77934DEAE0E3A2C3"
+			tasks: [{
+				id: "7212F3E3220F211B"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "WIP"
+			icon: "computercraft:printed_pages"
+			x: 6.5d
+			y: 4.5d
+			dependencies: ["69341D3A85480AD9"]
+			id: "21375DDBA4CF79A1"
+			tasks: [{
+				id: "3862F5F8CF89CF59"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			description: ["Tasks are Work In Progress, I have a trouble with writing those, so my piority is on Lua Basics and Peripherals"]
+			id: "1D62BBE1BCA40A24"
+			tasks: [{
+				id: "64D831130CB43BD1"
+				type: "custom"
+				title: "Note:"
+				icon: "minecraft:writable_book"
 			}]
 		}
 	]
