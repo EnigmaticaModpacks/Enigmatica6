@@ -29,6 +29,24 @@ onEvent('recipes', (event) => {
             { tag: 'quark:granite_pavement', weight: 20 },
             { tag: 'botania:mossy_livingwood_planks', weight: 15 },
             { tag: 'botania:glimmering_livingwood', weight: 10 }
+        ],
+        algal: [
+            { tag: 'architects_palette:algal_bricks', weight: 34 },
+            { tag: 'architects_palette:cracked_algal_bricks', weight: 30 },
+            { tag: 'architects_palette:overgrown_algal_bricks', weight: 15 },
+            { tag: 'emendatusenigmatica:uranium_block', weight: 15 },
+            { tag: 'architects_palette:algal_lamp', weight: 6 }
+        ],
+        booger: [
+            { tag: 'environmental:yak_hair_block', weight: 60 },
+            { tag: 'undergarden:goo_block', weight: 40 }
+        ],
+        celestial: [
+            { tag: 'chipped:sea_lantern_14', weight: 34 },
+            { tag: 'chipped:sea_lantern_1', weight: 30 },
+            { tag: 'chipped:sea_lantern_2', weight: 15 },
+            { tag: 'astralsorcery:marble_raw', weight: 15 },
+            { tag: 'astralsorcery:rock_crystal_ore', weight: 6 }
         ]
     };
 
@@ -49,10 +67,11 @@ onEvent('recipes', (event) => {
                 {
                     radius: 13,
                     additionalWeight: 30,
-                    minWeight: 400,
+                    minWeight: 0,
                     weightMap: [
-                        { tag: 'emendatusenigmatica:apatite_scoria_ore', weight: 20 },
-                        { tag: 'emendatusenigmatica:gold_scoria_ore', weight: 20 },
+                        { tag: 'thermal:apatite_block', weight: 5 },
+                        { tag: 'emendatusenigmatica:zinc_scoria_ore', weight: 15 },
+                        { tag: 'emendatusenigmatica:nickel_scoria_ore', weight: 20 },
                         { tag: 'emendatusenigmatica:iron_scoria_ore', weight: 30 }
                     ],
                     fill: 'create:dark_scoria'
@@ -62,10 +81,11 @@ onEvent('recipes', (event) => {
                     additionalWeight: 34,
                     minWeight: 0,
                     weightMap: [
-                        { tag: 'minecraft:iron_block', weight: 33 },
-                        { tag: 'pneumaticcraft:compressed_iron_block', weight: 33 }
+                        { tag: 'kubejs:superheated_steel_block', weight: 33 },
+                        { tag: 'kubejs:hot_compressed_iron_block', weight: 33 }
                     ],
-                    fill: 'pneumaticcraft:compressed_stone'
+                    fill: 'pneumaticcraft:compressed_stone',
+                    shell: 'pneumaticcraft:compressed_stone'
                 }
             ],
             id: 'bloodmagic:meteor/stone'
@@ -364,6 +384,98 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}resonant`
+        },
+        {
+            input: 'botania:rune_spring',
+            syphon: 1250000,
+            explosion: 24.0,
+            layers: [
+                {
+                    radius: 9,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.algal,
+                    fill: 'architects_palette:algal_bricks'
+                },
+                {
+                    radius: 8,
+                    additionalWeight: 10,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'betterendforge:ancient_emerald_ice', weight: 60 },
+                        { tag: 'betterendforge:dense_emerald_ice', weight: 30 }
+                    ],
+                    fill: 'upgrade_aquatic:luminous_prismarine'
+                },
+                {
+                    radius: 3,
+                    additionalWeight: 50,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'powah:spirited_crystal_block', weight: 30 },
+                        { tag: 'architects_palette:entwine_block', weight: 20 }
+                    ],
+                    fill: 'architects_palette:chiseled_entwine',
+                    shell: 'betterendforge:smaragdant_crystal'
+                }
+            ],
+            id: `${id_prefix}spirited`
+        },
+        {
+            input: 'undergarden:goo_ball',
+            syphon: 50000,
+            explosion: 12,
+            layers: [
+                {
+                    radius: 5,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.booger,
+                    fill: 'environmental:yak_hair_block'
+                },
+                {
+                    radius: 4,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    fill: 'environmental:buried_truffle',
+                    shell: 'environmental:mud'
+                }
+            ],
+            id: `${id_prefix}booger_bomb`
+        },
+        {
+            input: 'astralsorcery:celestial_crystal',
+            syphon: 1250000,
+            explosion: 24.0,
+            layers: [
+                {
+                    radius: 8,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.celestial,
+                    fill: 'chipped:sea_lantern_14'
+                },
+                {
+                    radius: 7,
+                    additionalWeight: 30,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'chipped:sea_lantern_14', weight: 10 },
+                        { tag: 'architects_palette:moonstone', weight: 30 },
+                        { tag: 'astralsorcery:starmetal', weight: 30 }
+                    ],
+                    fill: 'kubejs:firmament'
+                },
+                {
+                    radius: 2,
+                    additionalWeight: 20,
+                    minWeight: 0,
+                    weightMap: [{ tag: 'powah:niotic_crystal_block', weight: 80 }],
+                    fill: 'betterendforge:umbralith',
+                    shell: 'betterendforge:umbralith'
+                }
+            ],
+            id: `${id_prefix}celestial`
         }
     ];
 
