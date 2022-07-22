@@ -1,114 +1,110 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/bloodmagic/meteor/';
 
-    const dark_shell = [
-        { tag: 'occultism:otherstone', weight: 45 },
-        { tag: 'atum:porphyry', weight: 20 },
-        { tag: 'minecraft:blackstone', weight: 10 },
-        { tag: 'byg:soapstone', weight: 10 },
-        { tag: 'kubejs:firmament', weight: 10 },
-        { tag: 'byg:magmatic_stone', weight: 3 },
-        { tag: 'minecraft:magma_block', weight: 2 }
-    ];
-
-    const prismarine_shell = [
-        { tag: 'minecraft:dark_prismarine', weight: 34 },
-        { tag: 'masonry:darkprismarinecobbled', weight: 30 },
-        { tag: 'minecraft:prismarine', weight: 15 },
-        { tag: 'minecraft:prismarine_bricks', weight: 15 },
-        { tag: 'minecraft:sea_lantern', weight: 6 }
-    ];
+    const shells = {
+        dark: [
+            { tag: 'occultism:otherstone', weight: 40 },
+            { tag: 'atum:porphyry', weight: 20 },
+            { tag: 'minecraft:blackstone', weight: 15 },
+            { tag: 'byg:magmatic_stone', weight: 10 },
+            { tag: 'kubejs:firmament', weight: 10 },
+            { tag: 'byg:soapstone', weight: 5 }
+        ],
+        prismarine: [
+            { tag: 'minecraft:dark_prismarine', weight: 34 },
+            { tag: 'masonry:darkprismarinecobbled', weight: 30 },
+            { tag: 'minecraft:prismarine', weight: 15 },
+            { tag: 'minecraft:prismarine_bricks', weight: 15 },
+            { tag: 'minecraft:sea_lantern', weight: 6 }
+        ],
+        alien: [
+            { tag: 'betterendforge:umbralith', weight: 70 },
+            { tag: 'betterendforge:violecite', weight: 20 },
+            { tag: 'byg:carved_ether_stone', weight: 10 }
+        ],
+        natural: [
+            { tag: 'botania:livingwood', weight: 30 },
+            { tag: 'masonry:granitecobbledmossy', weight: 20 },
+            { tag: 'botania:pattern_framed_livingwood', weight: 5 },
+            { tag: 'quark:granite_pavement', weight: 20 },
+            { tag: 'botania:mossy_livingwood_planks', weight: 15 },
+            { tag: 'botania:glimmering_livingwood', weight: 10 }
+        ]
+    };
 
     const recipes = [
         // Default Meteor Overrides
         {
-            input: '#forge:stone',
+            input: 'pneumaticcraft:compressed_stone',
             syphon: 1000000,
             explosion: 30.0,
             layers: [
                 {
                     radius: 16,
                     additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.dark,
+                    fill: 'occultism:otherstone'
+                },
+                {
+                    radius: 13,
+                    additionalWeight: 30,
                     minWeight: 400,
                     weightMap: [
-                        { tag: '#forge:ores/apatite', weight: 50 },
-                        { tag: '#forge:ores/coal', weight: 150 },
-                        { tag: 'minecraft:iron_ore', weight: 50 }
+                        { tag: 'emendatusenigmatica:apatite_scoria_ore', weight: 20 },
+                        { tag: 'emendatusenigmatica:gold_scoria_ore', weight: 20 },
+                        { tag: 'emendatusenigmatica:iron_scoria_ore', weight: 30 }
                     ],
-                    fill: 'minecraft:stone',
-                    shell: '#minecraft:stone_unpolished'
+                    fill: 'create:dark_scoria'
+                },
+                {
+                    radius: 4,
+                    additionalWeight: 34,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'minecraft:iron_block', weight: 33 },
+                        { tag: 'pneumaticcraft:compressed_iron_block', weight: 33 }
+                    ],
+                    fill: 'pneumaticcraft:compressed_stone'
                 }
             ],
             id: 'bloodmagic:meteor/stone'
         },
         {
-            input: '#forge:dusts/glowstone',
-            syphon: 1000000,
-            explosion: 12.0,
+            input: 'mythicbotany:helheim_rune',
+            syphon: 1250000,
+            explosion: 24.0,
             layers: [
                 {
-                    radius: 8,
-                    additionalWeight: 0,
-                    minWeight: 500,
-                    weightMap: [
-                        { tag: 'minecraft:glowstone', weight: 100 },
-                        { tag: 'minecraft:nether_quartz_ore', weight: 150 },
-                        { tag: 'minecraft:nether_gold_ore', weight: 60 }
-                    ],
-                    fill: 'minecraft:netherrack'
-                },
-                {
-                    radius: 5,
-                    additionalWeight: 0,
-                    minWeight: 1000,
-                    weightMap: [
-                        { tag: 'minecraft:ancient_debris', weight: 60 },
-                        { tag: 'minecraft:chiseled_polished_blackstone', weight: 300 },
-                        { tag: 'minecraft:gilded_blackstone', weight: 200 },
-                        { tag: 'minecraft:polished_blackstone', weight: 400 }
-                    ],
-                    fill: 'minecraft:blackstone',
-                    shell: 'minecraft:glowstone'
-                }
-            ],
-            id: 'bloodmagic:meteor/nether'
-        },
-        {
-            input: '#forge:storage_blocks/iron',
-            syphon: 1000000,
-            explosion: 14.0,
-            layers: [
-                {
-                    radius: 4,
+                    radius: 9,
                     additionalWeight: 0,
                     minWeight: 0,
-                    weightMap: [
-                        { tag: 'minecraft:gold_ore', weight: 30 },
-                        { tag: '#forge:ores/copper', weight: 200 },
-                        { tag: '#forge:ores/tin', weight: 140 },
-                        { tag: '#forge:ores/silver', weight: 70 },
-                        { tag: '#forge:ores/lead', weight: 80 },
-                        { tag: 'minecraft:lapis_ore', weight: 60 },
-                        { tag: 'minecraft:redstone_ore', weight: 100 }
-                    ],
-                    fill: 'minecraft:iron_ore',
-                    shell: '#forge:cobblestone'
+                    weightMap: shells.dark,
+                    fill: 'occultism:otherstone'
                 },
                 {
-                    radius: 7,
-                    additionalWeight: 100,
-                    minWeight: 1000,
+                    radius: 8,
+                    additionalWeight: 10,
+                    minWeight: 0,
                     weightMap: [
-                        { tag: 'minecraft:iron_ore', weight: 400 },
-                        { tag: 'minecraft:gold_ore', weight: 30 },
-                        { tag: '#forge:ores/copper', weight: 200 },
-                        { tag: '#forge:ores/tin', weight: 140 },
-                        { tag: '#forge:ores/silver', weight: 70 },
-                        { tag: '#forge:ores/lead', weight: 80 },
-                        { tag: 'minecraft:lapis_ore', weight: 60 },
-                        { tag: 'minecraft:redstone_ore', weight: 100 }
+                        { tag: 'emendatusenigmatica:quartz_basalt_ore', weight: 35 },
+                        { tag: 'emendatusenigmatica:fluorite_basalt_ore', weight: 35 },
+                        { tag: 'occultism:iesnium_ore', weight: 10 },
+                        { tag: 'emendatusenigmatica:dimensional_basalt_ore', weight: 5 },
+                        { tag: 'emendatusenigmatica:sulfur_basalt_ore', weight: 5 }
                     ],
-                    fill: 'minecraft:stone'
+                    fill: 'minecraft:ancient_debris'
+                },
+                {
+                    radius: 4,
+                    additionalWeight: 33,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'occultism:iesnium_block', weight: 33 },
+                        { tag: 'occultism:silver_block', weight: 64 }
+                    ],
+                    fill: 'occultism:iesnium_ore',
+                    shell: 'occultism:otherstone'
                 }
             ],
             id: 'bloodmagic:meteor/nether'
@@ -116,13 +112,13 @@ onEvent('recipes', (event) => {
         {
             input: '#forge:storage_blocks/diamond',
             syphon: 1000000,
-            explosion: 8.0,
+            explosion: 24.0,
             layers: [
                 {
                     radius: 6,
                     additionalWeight: 0,
                     minWeight: 0,
-                    weightMap: prismarine_shell,
+                    weightMap: shells.prismarine,
                     fill: 'minecraft:prismarine'
                 },
                 {
@@ -150,12 +146,18 @@ onEvent('recipes', (event) => {
         },
 
         //Custom
-
         {
             input: 'create:andesite_alloy',
             syphon: 500000,
             explosion: 24.0,
             layers: [
+                {
+                    radius: 8,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.dark,
+                    fill: 'occultism:otherstone'
+                },
                 {
                     radius: 7,
                     additionalWeight: 200,
@@ -166,22 +168,21 @@ onEvent('recipes', (event) => {
                         { tag: 'emendatusenigmatica:iron_blackstone_ore', weight: 100 },
                         { tag: 'emendatusenigmatica:emerald_blackstone_ore', weight: 50 }
                     ],
-                    fill: 'minecraft:blackstone',
-                    shell: 'betterendforge:violecite'
+                    fill: 'minecraft:blackstone'
                 }
             ],
             id: `${id_prefix}andesite`
         },
         {
             input: '#atum:godforged_blocks',
-            syphon: 1000000,
+            syphon: 1250000,
             explosion: 24.0,
             layers: [
                 {
                     radius: 8,
                     additionalWeight: 0,
                     minWeight: 0,
-                    weightMap: dark_shell,
+                    weightMap: shells.dark,
                     fill: 'occultism:otherstone'
                 },
                 {
@@ -206,18 +207,18 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'thermal:slime_tnt',
-            syphon: 5000,
+            syphon: 10000,
             explosion: 24.0,
             layers: [
                 {
-                    radius: 5,
+                    radius: 7,
                     additionalWeight: 75,
                     minWeight: 0,
                     weightMap: [{ tag: 'tconstruct:sky_congealed_slime', weight: 25 }],
                     fill: 'tconstruct:earth_congealed_slime'
                 },
                 {
-                    radius: 3,
+                    radius: 4,
                     additionalWeight: 75,
                     minWeight: 0,
                     weightMap: [{ tag: 'tconstruct:blood_congealed_slime', weight: 25 }],
@@ -225,6 +226,144 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}slime`
+        },
+        {
+            input: 'botania:rune_mana',
+            syphon: 500000,
+            explosion: 24.0,
+            layers: [
+                {
+                    radius: 9,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.alien,
+                    fill: 'betterendforge:umbralith'
+                },
+                {
+                    radius: 8,
+                    additionalWeight: 50,
+                    minWeight: 0,
+                    weightMap: [{ tag: 'betterendforge:aurora_crystal', weight: 50 }],
+                    fill: 'ars_nouveau:mana_gem_block',
+                    shell: 'ars_nouveau:arcane_stone'
+                },
+                {
+                    radius: 4,
+                    additionalWeight: 15,
+                    minWeight: 0,
+                    weightMap: [{ tag: 'naturesaura:tainted_gold_block', weight: 85 }],
+                    fill: 'eidolon:arcane_gold_block',
+                    shell: 'ars_nouveau:warding_stone'
+                }
+            ],
+            id: `${id_prefix}arcane`
+        },
+        {
+            input: 'botania:rune_earth',
+            syphon: 500000,
+            explosion: 24.0,
+            layers: [
+                {
+                    radius: 9,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.natural,
+                    fill: 'botania:livingwood'
+                },
+                {
+                    radius: 8,
+                    additionalWeight: 50,
+                    minWeight: 0,
+                    weightMap: [{ tag: 'betterendforge:smaragdant_crystal', weight: 50 }],
+                    fill: 'upgrade_aquatic:luminous_prismarine',
+                    shell: 'botania:livingrock'
+                },
+                {
+                    radius: 4,
+                    additionalWeight: 15,
+                    minWeight: 0,
+                    weightMap: [{ tag: 'chisel:emerald/cellbismuth', weight: 85 }],
+                    fill: 'naturesaura:infused_iron_block',
+                    shell: 'botania:livingrock'
+                }
+            ],
+            id: `${id_prefix}natural`
+        },
+        {
+            input: 'botania:rune_water',
+            syphon: 500000,
+            explosion: 24.0,
+            layers: [
+                {
+                    radius: 6,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.prismarine,
+                    fill: 'minecraft:prismarine'
+                },
+                {
+                    radius: 5,
+                    additionalWeight: 50,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'upgrade_aquatic:prismarine_coral_block', weight: 10 },
+                        { tag: 'upgrade_aquatic:elder_prismarine_coral_block', weight: 10 },
+                        { tag: 'upgrade_aquatic:prismarine_coralstone', weight: 10 },
+                        { tag: 'upgrade_aquatic:elder_prismarine_coralstone', weight: 10 },
+                        { tag: 'upgrade_aquatic:luminous_prismarine', weight: 10 }
+                    ],
+                    fill: 'minecraft:water'
+                },
+                {
+                    radius: 2,
+                    additionalWeight: 100,
+                    minWeight: 0,
+                    fill: 'minecraft:water'
+                }
+            ],
+            id: `${id_prefix}water`
+        },
+        {
+            input: 'betterendforge:eternal_crystal',
+            syphon: 1250000,
+            explosion: 24.0,
+            layers: [
+                {
+                    radius: 9,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.alien,
+                    fill: 'betterendforge:umbralith'
+                },
+                {
+                    radius: 8,
+                    additionalWeight: 20,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'emendatusenigmatica:diamond_flavolite_ore', weight: 50 },
+                        { tag: 'emendatusenigmatica:lead_flavolite_ore', weight: 30 }
+                    ],
+                    fill: 'betterendforge:flavolite'
+                },
+                {
+                    radius: 5,
+                    additionalWeight: 60,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'betterendforge:aeternium_block', weight: 30 },
+                        { tag: 'betterendforge:ender_block', weight: 10 }
+                    ],
+                    fill: 'betterendforge:terminite_block'
+                },
+                {
+                    radius: 3,
+                    additionalWeight: 100,
+                    minWeight: 0,
+                    fill: 'minecraft:lava',
+                    shell: 'betterendforge:ender_block'
+                }
+            ],
+            id: `${id_prefix}resonant`
         }
     ];
 
