@@ -10,6 +10,13 @@ onEvent('recipes', (event) => {
             { tag: 'kubejs:firmament', weight: 10 },
             { tag: 'byg:soapstone', weight: 5 }
         ],
+        light: [
+            { tag: 'byg:rocky_stone', weight: 40 },
+            { tag: 'architects_palette:heavy_cracked_stone_bricks', weight: 25 },
+            { tag: 'architects_palette:heavy_stone_bricks', weight: 15 },
+            { tag: 'architects_palette:heavy_mossy_stone_bricks', weight: 15 },
+            { tag: 'simplylight:illuminant_block_on', weight: 5 }
+        ],
         prismarine: [
             { tag: 'minecraft:dark_prismarine', weight: 34 },
             { tag: 'masonry:darkprismarinecobbled', weight: 30 },
@@ -47,6 +54,27 @@ onEvent('recipes', (event) => {
             { tag: 'chipped:sea_lantern_2', weight: 15 },
             { tag: 'astralsorcery:marble_raw', weight: 15 },
             { tag: 'astralsorcery:rock_crystal_ore', weight: 6 }
+        ],
+        frosted: [
+            { tag: 'undergarden:shiverstone', weight: 39 },
+            { tag: 'byg:ether_stone', weight: 30 },
+            { tag: 'betterendforge:dense_snow', weight: 15 },
+            { tag: 'undergarden:froststeel_ore', weight: 10 },
+            { tag: 'create:zinc_block', weight: 6 }
+        ],
+        meat: [
+            { tag: 'architects_palette:salmon_scales', weight: 50 },
+            { tag: 'undergarden:blood_mushroom_globule', weight: 30 },
+            { tag: 'atmospheric:stripped_morado_wood', weight: 15 },
+            { tag: 'architects_palette:rotten_flesh_block', weight: 5 }
+        ],
+        void: [
+            { tag: 'betterendforge:violecite', weight: 30 },
+            { tag: 'occultism:otherstone', weight: 25 },
+            { tag: 'quark:dusky_myalite', weight: 15 },
+            { tag: 'minecraft:netherite_block', weight: 15 },
+            { tag: 'minecraft:crying_obsidian', weight: 10 },
+            { tag: 'dustrial_decor:black_light', weight: 5 }
         ]
     };
 
@@ -164,54 +192,78 @@ onEvent('recipes', (event) => {
             ],
             id: 'bloodmagic:meteor/diamond'
         },
-
-        //Custom
         {
-            input: 'create:andesite_alloy',
-            syphon: 500000,
+            input: '#forge:storage_blocks/iron',
+            syphon: 1000000,
             explosion: 24.0,
             layers: [
                 {
-                    radius: 8,
+                    radius: 16,
                     additionalWeight: 0,
                     minWeight: 0,
-                    weightMap: shells.dark,
-                    fill: 'occultism:otherstone'
+                    weightMap: shells.light,
+                    fill: 'byg:rocky_stone'
+                },
+                {
+                    radius: 15,
+                    additionalWeight: 10,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'emendatusenigmatica:iron_andesite_ore', weight: 25 },
+                        { tag: 'emendatusenigmatica:copper_andesite_ore', weight: 17 },
+                        { tag: 'emendatusenigmatica:tin_andesite_ore', weight: 12 },
+                        { tag: 'emendatusenigmatica:nickel_andesite_ore', weight: 10 },
+                        { tag: 'emendatusenigmatica:aluminum_andesite_ore', weight: 9 },
+                        { tag: 'emendatusenigmatica:silver_andesite_ore', weight: 8 },
+                        { tag: 'emendatusenigmatica:lead_andesite_ore', weight: 6 },
+                        { tag: 'emendatusenigmatica:gold_andesite_ore', weight: 5 },
+                        { tag: 'emendatusenigmatica:lapis_gravel_ore', weight: 5 },
+                        { tag: 'emendatusenigmatica:redstone_gravel_ore', weight: 3 }
+                    ],
+                    fill: 'quark:white_crystal'
                 },
                 {
                     radius: 7,
-                    additionalWeight: 200,
+                    additionalWeight: 10,
                     minWeight: 0,
                     weightMap: [
-                        { tag: 'emendatusenigmatica:copper_blackstone_ore', weight: 100 },
-                        { tag: 'emendatusenigmatica:zinc_blackstone_ore', weight: 10 },
-                        { tag: 'emendatusenigmatica:iron_blackstone_ore', weight: 100 },
-                        { tag: 'emendatusenigmatica:emerald_blackstone_ore', weight: 50 }
+                        { tag: 'emendatusenigmatica:copper_deepslate_ore', weight: 20 },
+                        { tag: 'emendatusenigmatica:gold_deepslate_ore', weight: 15 },
+                        { tag: 'emendatusenigmatica:aluminum_deepslate_ore', weight: 15 },
+                        { tag: 'emendatusenigmatica:silver_deepslate_ore', weight: 10 },
+                        { tag: 'emendatusenigmatica:lead_deepslate_ore', weight: 10 },
+                        { tag: 'emendatusenigmatica:tin_deepslate_ore', weight: 5 },
+                        { tag: 'emendatusenigmatica:nickel_deepslate_ore', weight: 5 },
+                        { tag: 'emendatusenigmatica:lapis_deepslate_ore', weight: 5 },
+                        { tag: 'emendatusenigmatica:redstone_deepslate_ore', weight: 5 }
                     ],
-                    fill: 'minecraft:blackstone'
+                    fill: 'emendatusenigmatica:iron_deepslate_ore',
+                    shell: 'quark:polished_deepslate'
                 }
             ],
-            id: `${id_prefix}andesite`
+            id: 'bloodmagic:meteor/iron'
         },
+
+        //Custom
         {
             input: '#atum:godforged_blocks',
             syphon: 1250000,
             explosion: 24.0,
             layers: [
                 {
-                    radius: 8,
+                    radius: 9,
                     additionalWeight: 0,
                     minWeight: 0,
-                    weightMap: shells.dark,
+                    weightMap: shells.void,
                     fill: 'occultism:otherstone'
                 },
                 {
-                    radius: 7,
-                    additionalWeight: 200,
+                    radius: 8,
+                    additionalWeight: 50,
                     minWeight: 0,
                     weightMap: [
-                        { tag: 'emendatusenigmatica:uranium_flavolite_ore', weight: 100 },
-                        { tag: 'emendatusenigmatica:gold_flavolite_ore', weight: 10 }
+                        { tag: 'emendatusenigmatica:uranium_flavolite_ore', weight: 15 },
+                        { tag: 'emendatusenigmatica:gold_flavolite_ore', weight: 35 }
                     ],
                     fill: 'betterendforge:flavolite'
                 },
@@ -352,16 +404,17 @@ onEvent('recipes', (event) => {
                     radius: 9,
                     additionalWeight: 0,
                     minWeight: 0,
-                    weightMap: shells.alien,
-                    fill: 'betterendforge:umbralith'
+                    weightMap: shells.frosted,
+                    fill: 'undergarden:shiverstone'
                 },
                 {
                     radius: 8,
-                    additionalWeight: 20,
+                    additionalWeight: 30,
                     minWeight: 0,
                     weightMap: [
-                        { tag: 'emendatusenigmatica:diamond_flavolite_ore', weight: 50 },
-                        { tag: 'emendatusenigmatica:lead_flavolite_ore', weight: 30 }
+                        { tag: 'emendatusenigmatica:diamond_flavolite_ore', weight: 40 },
+                        { tag: 'emendatusenigmatica:lead_flavolite_ore', weight: 20 },
+                        { tag: 'emendatusenigmatica:dimensional_flavolite_ore', weight: 10 }
                     ],
                     fill: 'betterendforge:flavolite'
                 },
@@ -476,6 +529,41 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}celestial`
+        },
+        {
+            input: '#enigmatica:meats',
+            syphon: 50000,
+            explosion: 12,
+            layers: [
+                {
+                    radius: 7,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.meat,
+                    fill: 'architects_palette:salmon_scales'
+                },
+                {
+                    radius: 6,
+                    additionalWeight: 35,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'chipped:nether_wart_block_6', weight: 30 },
+                        { tag: 'architects_palette:entrails', weight: 20 },
+                        { tag: 'chipped:brown_mushroom_block_24', weight: 8 },
+                        { tag: 'chipped:brown_mushroom_block_23', weight: 7 }
+                    ],
+                    fill: 'chipped:red_nether_bricks_7'
+                },
+                {
+                    radius: 3,
+                    additionalWeight: 10,
+                    minWeight: 0,
+                    weightMap: [{ tag: 'minecraft:bone_block', weight: 90 }],
+                    fill: 'valhelsia_structures:bone_pile_block',
+                    shell: 'architects_palette:entrails'
+                }
+            ],
+            id: `${id_prefix}meateor`
         }
     ];
 
