@@ -716,72 +716,35 @@ onEvent('recipes', (event) => {
             orbLevel: 1,
             id: `${id_prefix}shadow_gem`
         },
-
-        /// Patchouli Removals
         {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            output: 'bloodmagic:basiccuttingfluid',
+            inputs: ['#forge:ingots/silicon_bronze', '#forge:shards/ender', 'eidolon:enchanted_ash'],
+            output: 'bloodmagic:teleposerfocus',
             count: 1,
-            syphon: 1,
-            ticks: 1,
+            syphon: 50,
+            ticks: 20,
             orbLevel: 1,
-            id: 'bloodmagic:alchemytable/basic_cutting_fluid_sigil'
-        },
-        {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            output: 'bloodmagic:componentframeparts',
-            count: 1,
-            syphon: 1,
-            ticks: 1,
-            orbLevel: 1,
-            id: 'bloodmagic:alchemytable/component_frame_parts'
-        },
-        {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            output: 'bloodmagic:itemrouterfilterexact',
-            count: 1,
-            syphon: 1,
-            ticks: 1,
-            orbLevel: 1,
-            id: 'bloodmagic:alchemytable/router_filter'
-        },
-        {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            output: 'bloodmagic:itemrouterfilteroredict',
-            count: 1,
-            syphon: 1,
-            ticks: 1,
-            orbLevel: 1,
-            id: 'bloodmagic:alchemytable/tag_router_filter'
-        },
-        {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            output: 'bloodmagic:itemrouterfilterenchant',
-            count: 1,
-            syphon: 1,
-            ticks: 1,
-            orbLevel: 1,
-            id: 'bloodmagic:alchemytable/enchant_router_filter'
-        },
-        {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            output: 'bloodmagic:itemrouterfiltermoditems',
-            count: 1,
-            syphon: 1,
-            ticks: 1,
-            orbLevel: 1,
-            id: 'bloodmagic:alchemytable/mod_router_filter'
-        },
-        {
-            inputs: ['kubejs:altered_recipe_indicator'],
-            output: 'bloodmagic:itemrouterfiltercomposite',
-            count: 1,
-            syphon: 1,
-            ticks: 1,
-            orbLevel: 1,
-            id: 'bloodmagic:alchemytable/composite_router_filter'
+            id: `${id_prefix}teleposerfocus`
         }
     ];
+
+    const patchouli_safe_removals = [
+        { output: 'bloodmagic:itemrouterfiltercomposite', id: 'bloodmagic:alchemytable/composite_router_filter' },
+        { output: 'bloodmagic:itemrouterfiltermoditems', id: 'bloodmagic:alchemytable/mod_router_filter' },
+        { output: 'bloodmagic:itemrouterfilterenchant', id: 'bloodmagic:alchemytable/enchant_router_filter' },
+        { output: 'bloodmagic:itemrouterfilteroredict', id: 'bloodmagic:alchemytable/mod_router_filter' },
+        { output: 'bloodmagic:itemrouterfilterexact', id: 'bloodmagic:alchemytable/router_filter' },
+        { output: 'bloodmagic:componentframeparts', id: 'bloodmagic:alchemytable/mod_router_filter' },
+        { output: 'bloodmagic:basiccuttingfluid', id: 'bloodmagic:alchemytable/basic_cutting_fluid_sigil' }
+    ];
+
+    patchouli_safe_removals.forEach((recipe) => {
+        event.recipes.bloodmagic
+            .alchemytable(Item.of(recipe.output, 1), 'kubejs:altered_recipe_indicator')
+            .syphon(1)
+            .ticks(1)
+            .upgradeLevel(1)
+            .id(recipe.id);
+    });
 
     let anointmentTypes = [
         'holy_water_anointment',

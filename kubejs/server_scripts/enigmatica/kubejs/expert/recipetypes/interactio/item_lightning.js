@@ -169,6 +169,22 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             id: `${id_prefix}stone_altar`
+        },
+        {
+            inputs: [
+                'botania:corporea_spark',
+                '#forge:nuggets/silicon_bronze',
+                'bloodmagic:ritualstone',
+                '#forge:nuggets/silicon_bronze',
+                'bloodmagic:ritualstone',
+                '#forge:nuggets/silicon_bronze'
+            ],
+            output: {
+                entries: [{ result: { item: 'bloodmagic:teleposer', count: 2 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: `${id_prefix}teleposer`
         }
     ];
 

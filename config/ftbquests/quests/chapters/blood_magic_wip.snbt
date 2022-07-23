@@ -983,7 +983,7 @@
 		}
 		{
 			x: -1.0d
-			y: 8.0d
+			y: 8.5d
 			description: [
 				"Growing crystals is a slow process."
 				""
@@ -1027,6 +1027,96 @@
 								Count: 1b
 							}
 						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "0BB215FA03536F71"
+				type: "command"
+				title: "Epic Blood Magic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.5d
+			description: [
+				"Simple cross-dimensional transport at a bargain price. With a pair of teleposers, one can transport items, entities, or even solid blocks from place to place. Whatever finds itself above the teleposer when activated by redstone will swap places with the linked teleposer instantly. "
+				""
+				"To link them, simply Sneak Right Click a teleposer with a Teleposition Focus. This sets the coordinates to that teleposer, and the focus may be inserted into any other teleposer. Link them again in reverse to make a two-way teleportation system. "
+				""
+				"Be aware, using the teleposer costs LP from the owner’s Soul Network, with greater distances using more per trip. Refer to the Sanguine Scientiem for more details. "
+			]
+			dependencies: ["00000000000008E7"]
+			id: "2563F1FF6E4B3445"
+			tasks: [{
+				id: "5B1A674980456429"
+				type: "item"
+				item: "bloodmagic:teleposer"
+			}]
+			rewards: [{
+				id: "015454A38CCD316D"
+				type: "item"
+				item: "bloodmagic:teleposerfocus"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.5d
+			description: [
+				"More refined than hanging glass bottles from a hot rod, Alchemical Brewing offers multi-use potions that may be combined to provide multiple effects in the same bottle. "
+				""
+				"If desired, the Alchemist may even merge effects by way of a Combinational Catalyst to create entirely new potions, such as mixing Suspended and Levitation to obtain Flight potions. "
+			]
+			dependencies: ["0000000000000909"]
+			id: "6510633E59CA3D11"
+			tasks: [
+				{
+					id: "6C86280214A9DCCC"
+					type: "item"
+					item: {
+						id: "bloodmagic:alchemy_flask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "696B106B0893E871"
+					type: "item"
+					item: "bloodmagic:simplecatalyst"
+				}
+			]
+			rewards: [{
+				id: "213C367F254BD990"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 4800
+							Id: -97b
+							Amplifier: 1b
+						}]
+						effectholder: [{
+							Duration: 3600
+							Id: 159
+							LengthDurationMod: 2.6666998863220215d
+							Amplifier: 1b
+							AmpDurationMod: 0.5d
+						}]
+						Damage: 0
 					}
 				}
 			}]
