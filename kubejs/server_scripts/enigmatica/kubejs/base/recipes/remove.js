@@ -75,6 +75,7 @@ onEvent('recipes', (event) => {
         'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking',
 
         'ars_nouveau:mana_gem_2',
+        /ars_nouveau:crush.*dye/,
 
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
