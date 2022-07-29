@@ -75,6 +75,23 @@ onEvent('recipes', (event) => {
             { tag: 'minecraft:netherite_block', weight: 15 },
             { tag: 'minecraft:crying_obsidian', weight: 10 },
             { tag: 'dustrial_decor:black_light', weight: 5 }
+        ],
+        pink: [
+            { tag: 'minecraft:red_terracotta', weight: 30 },
+            { tag: 'quark:pink_shingles', weight: 20 },
+            { tag: 'minecraft:terracotta', weight: 20 },
+            { tag: 'minecraft:granite', weight: 10 },
+            { tag: 'masonry:granitecobbled', weight: 10 },
+            { tag: 'minecraft:polished_granite', weight: 5 },
+            { tag: 'minecraft:redstone_block', weight: 5 }
+        ],
+        honey: [
+            { tag: 'minecraft:yellow_glazed_terracotta', weight: 30 },
+            { tag: 'chisel:wool/yellow/llama', weight: 20 },
+            { tag: 'minecraft:honey_block', weight: 20 },
+            { tag: 'minecraft:honeycomb_block', weight: 10 },
+            { tag: 'minecraft:yellow_terracotta', weight: 10 },
+            { tag: 'minecraft:yellow_concrete', weight: 10 }
         ]
     };
 
@@ -89,8 +106,8 @@ onEvent('recipes', (event) => {
                     radius: 16,
                     additionalWeight: 0,
                     minWeight: 0,
-                    weightMap: shells.dark,
-                    fill: 'occultism:otherstone'
+                    weightMap: shells.pink,
+                    fill: 'minecraft:red_terracotta'
                 },
                 {
                     radius: 13,
@@ -533,7 +550,7 @@ onEvent('recipes', (event) => {
         {
             input: '#enigmatica:meats',
             syphon: 50000,
-            explosion: 12,
+            explosion: 24.0,
             layers: [
                 {
                     radius: 7,
@@ -564,6 +581,40 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}meateor`
+        },
+        {
+            input: 'resourcefulbees:centrifuge',
+            syphon: 1250000,
+            explosion: 24.0,
+            layers: [
+                {
+                    radius: 9,
+                    additionalWeight: 0,
+                    minWeight: 0,
+                    weightMap: shells.honey,
+                    fill: 'minecraft:yellow_glazed_terracotta'
+                },
+                {
+                    radius: 7,
+                    additionalWeight: 50,
+                    minWeight: 0,
+                    weightMap: [
+                        { tag: 'minecraft:honey_block', weight: 20 },
+                        { tag: 'minecraft:honeycomb_block', weight: 30 }
+                    ],
+                    fill: 'minecraft:air'
+                },
+
+                {
+                    radius: 3,
+                    additionalWeight: 25,
+                    minWeight: 0,
+                    weightMap: [{ tag: 'resourcefulbees:industrious_honeycomb_block', weight: 75 }],
+                    fill: 'environmental:magenta_terracotta_bricks',
+                    shell: 'minecraft:honeycomb_block'
+                }
+            ],
+            id: `${id_prefix}honey`
         }
     ];
 
