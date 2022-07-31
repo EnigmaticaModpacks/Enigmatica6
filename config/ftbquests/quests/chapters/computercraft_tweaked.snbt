@@ -823,9 +823,9 @@
 			description: [
 				"Welcome to Lua fellow Player!"
 				""
-				"Lua is one of many coding languages out there, but it's one of the easiest ones. Don't think that it means that it is worse than others!"
+				"Lua is one of many coding languages out there, but it's one of the easiest ones. Don't think that it means it is worse than others!"
 				""
-				"Its a pretty powerful, but simple language, so simple that it can be implemented into other games."
+				"Of course that isn't the only use for it. There is a lot of games coded in Lua, that are pretty good and popular (The Binding of Isaac for example)."
 				"That doesn't mean that it's only used in this application. There are a lot of games coded on Lua, that are pretty neat and popular (The Binding of Isaac for example)."
 				""
 				"In this tutorial I'll try to teach you the basics of basics of Lua, so you can try doing your own automation projects with it."
@@ -883,7 +883,7 @@
 				"> my_first_variable = \"Enigmatica 6\""
 				"> \"Enigmatica 6\" -> my_first_variable"
 				""
-				"\"But what does \"nil\" mean and why there are quotation marks near Enigmatica 6?\" - So there are few types of variables, and every of them have its own unique rules. Check \"Lua Basics #1 - Variable types\" above this quest for more information about those."
+				"\"But what does \"nil\" mean and why there are quotation marks near Enigmatica 6?\" - So there are few types of variables, and each of them has its own unique rules. Check \"Lua Basics #1 - Variable types\" above this quest for more information about those."
 			]
 			dependencies: ["44029061DB640AE2"]
 			hide: true
@@ -948,6 +948,11 @@
 				type: "checkmark"
 				title: "Got it!"
 			}]
+			rewards: [{
+				id: "73533459AAF8B2B8"
+				type: "custom"
+				title: "[Link] Table"
+			}]
 		}
 		{
 			title: "Type: Boolean"
@@ -990,7 +995,7 @@
 				"APIs are sets of functions you can use to interract with stuff that uses a given API. For example to interact with the monitor of the PC, you need to use API that has functions to do that. How to use APIs will be explained later."
 				""
 				"Now lets see how to use functions."
-				"For you to call (In other words, use) a function, you need to simply type its name with 2 brackets. Between those are the function's arguments."
+				"For you to call (In other words, use) a function, you need to simply write its name with 2 brackets. Between those are the function's arguments."
 				""
 				"> print(string) -- Basic function to write text on the screen. Has one argument."
 				""
@@ -1065,6 +1070,11 @@
 				type: "checkmark"
 				title: "Got it!"
 			}]
+			rewards: [{
+				id: "6B5AC6FA3CD60428"
+				type: "custom"
+				title: "[Link] String formating"
+			}]
 		}
 		{
 			title: "Type: Number"
@@ -1093,7 +1103,7 @@
 				"> local add = 6 + 10"
 				"> 16 -> add"
 				""
-				"Unfortunately Lua doesn't support anything else than those 4 basic operators. If you want to do anything else you will need to write the function yourself. For creating functions check out Function type in Lua Basics #1"
+				"Unfortunately Lua doesn't support anything else than those 4 basic operators. If you want to do anything else you will need to write the function yourself. Creating your own functions will be later on."
 			]
 			dependencies: [
 				"29C780353E7FB720"
@@ -1137,8 +1147,6 @@
 				"● You can create multiple variables at the same time! You just simply type two or more names after \"local\" and seperate them with a comma. You can even set a unique value for each variable."
 				"> local x, y, z = 1, 2, 3"
 				"> 1 -> x    /   2 -> y   /   3 -> z"
-				""
-				"Dev Note: Remember to check this out later on and think if you didn't forget anything important ^^\""
 			]
 			dependencies: ["29C780353E7FB720"]
 			hide: true
@@ -1221,9 +1229,6 @@
 				"Lua, whenever you are trying to do something that is designed for a different type of variable, will try to convert the variable you use to the type it needs to be. Of course it will not success 100%, because sometimes its impossible to convert. In this case it will crash the program and give an error about a illegal function on that type of the variable."
 				""
 				"There are few ways to convert one type to another manually, but it's not that useful in stuff we are gonna do, and can be found in Official Lua Docs."
-				""
-				"Note: If you already know Integrated Dynamics' variable types, a lot of ComputerCraft ones are really similiar. On the last line of every type quest there is a note saying what type of Variable that is in ID -- need feedback about this, should I add this or its kinda pointless?"
-				"TODO: Link to the site with convert Functions"
 			]
 			dependencies: ["29C780353E7FB720"]
 			hide: true
@@ -1233,6 +1238,11 @@
 				id: "01B3465E67E41884"
 				type: "checkmark"
 				title: "Got it!"
+			}]
+			rewards: [{
+				id: "5FAE656413496E6A"
+				type: "custom"
+				title: "[Link] Convertion of variables"
 			}]
 		}
 		{
