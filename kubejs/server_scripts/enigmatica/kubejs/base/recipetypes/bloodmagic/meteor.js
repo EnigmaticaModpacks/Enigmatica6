@@ -641,8 +641,7 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'bloodmagic:meteor';
         recipe.input = Ingredient.of(recipe.input).toJson();
-        //set cost to 0 for testing. Remove before merge
-        recipe.syphon = 0;
+        
         event.custom(recipe).id(recipe.id);
     });
 });
