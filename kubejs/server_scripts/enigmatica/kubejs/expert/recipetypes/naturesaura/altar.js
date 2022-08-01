@@ -102,7 +102,7 @@ onEvent('recipes', (event) => {
             aura_type: 'naturesaura:nether',
             aura: 100,
             time: 20,
-            id: 'integrateddynamics:crafting/part_display_panel'
+            id: `${id_prefix}part_display_panel`
         },
         {
             input: 'botania:redstone_root',
