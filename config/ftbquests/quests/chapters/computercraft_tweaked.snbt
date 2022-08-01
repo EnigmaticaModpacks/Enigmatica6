@@ -277,6 +277,7 @@
 		{
 			x: -8.0d
 			y: -6.0d
+			subtitle: "Lua Basics: NBT storage usage"
 			dependencies: ["6AA1236C9946F569"]
 			id: "064DB44EB6A2DF89"
 			tasks: [{
@@ -325,12 +326,12 @@
 			}]
 		}
 		{
-			title: "Custom Peripherals APIs"
+			title: "Universal APIs"
 			icon: "minecraft:chest"
 			x: -7.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "Lua Basics: Peripheral API"
+			subtitle: "Lua Basics: Universal Peripheral APIs"
 			description: [
 				"ComputerCraft: Tweaked does support as peripherals other blocks as well! Your peripheral can be nearly anything, Minecraft Chest, Mekanism Reactor, Drawer, nearly any block works!"
 				""
@@ -523,7 +524,7 @@
 		{
 			x: -7.0d
 			y: 6.0d
-			subtitle: "Lua Basics: Monitor \\& term functions"
+			subtitle: "Lua Basics: Monitor API"
 			dependencies: ["1580D9FD06937ABB"]
 			id: "54E1A1FE032B1363"
 			tasks: [{
@@ -719,6 +720,8 @@
 				"Here are the links to the Official ComputerCraft: Tweaked documentation, as well as Lua Documentation."
 				""
 				"In those documentations you can find nearly everything about anything. If you have problem with something from the quest line or you want to learn something new, this is the place to go!"
+				""
+				"In most of the quests, as a reward there will be a link to a page talking especially about topic the quest was, so if you want to learn more as you go, you can."
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.5d
@@ -775,7 +778,7 @@
 			title: "Better Code Editor"
 			icon: "create:wrench"
 			x: 3.125d
-			y: 0.0d
+			y: 0.625d
 			shape: "gear"
 			subtitle: "Enough of in-game coding? There is a solution!"
 			description: [
@@ -2209,6 +2212,41 @@
 				type: "custom"
 				title: "Note:"
 				icon: "minecraft:writable_book"
+			}]
+		}
+		{
+			title: "Re-usable links and Tasks "
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "patchouli:modded_for_dummies"
+				}
+			}
+			x: 3.125d
+			y: -0.625d
+			shape: "gear"
+			subtitle: "But wait, those links are one time use?"
+			description: [
+				"Unfortunetaly FTB quests didn't add repeatable quests yet, so links from quest rewards are only one-time use."
+				""
+				"However in our \"Modded for Dummies\" book in Quests category, there are pages with links and solutions to tasks, so you can check everything out everytime you need to. More information you will find there."
+			]
+			dependencies: [
+				"2D79E4D126EE389E"
+				"00000000000006E9"
+			]
+			size: 1.25d
+			id: "739DEEE353F742E8"
+			tasks: [{
+				id: "02142D346A59C391"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "2AB23FCB677E93E1"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]
