@@ -160,6 +160,20 @@ onEvent('recipes', (event) => {
             program: 'laser',
             id: `${id_prefix}batch_unassembled_pcb`
         },
+
+        {
+            input: { item: 'kubejs:batch_unassembled_advanced_pressure_tube', count: 1 },
+            output: { item: 'pneumaticcraft:advanced_pressure_tube', count: 256 },
+            program: 'drill',
+            id: `${id_prefix}batch_unassembled_advanced_pressure_tube`
+        },
+        {
+            input: { item: 'kubejs:batch_unassembled_machine_frame', count: 1 },
+            output: { item: 'rftoolsbase:machine_frame', count: 32 },
+            program: 'drill',
+            id: `${id_prefix}batch_unassembled_machine_frame`
+        },
+
         {
             input: { item: 'kubejs:assembly_io_package', count: 1 },
             output: { item: 'kubejs:assembly_io_assembly', count: 1 },

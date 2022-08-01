@@ -242,6 +242,8 @@ onEvent('item.registry', (event) => {
 
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
         { name: 'batch_unassembled_pcb', texture: 'packing_crate_lime' },
+        { name: 'batch_unassembled_advanced_pressure_tube', texture: 'advanced_packing_crate_green' },
+        { name: 'batch_unassembled_machine_frame', texture: 'advanced_packing_crate_gray' },
 
         { name: 'soggy_treasure_box', texture: 'common_lootbox' },
 
