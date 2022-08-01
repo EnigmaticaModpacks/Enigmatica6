@@ -641,7 +641,7 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'bloodmagic:meteor';
         recipe.input = Ingredient.of(recipe.input).toJson();
-        
+
         event.custom(recipe).id(recipe.id);
     });
 });
