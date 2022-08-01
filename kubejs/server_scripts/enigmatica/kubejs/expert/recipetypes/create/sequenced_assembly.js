@@ -579,10 +579,16 @@ onEvent('recipes', (event) => {
                     type: 'deploying',
                     input: [
                         'kubejs:partial_stim_pack',
-                        Item.of(
-                            'ars_nouveau:potion_flask',
-                            '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:1b,Amplifier:0b}],Potion:"minecraft:strong_regeneration"}'
-                        )
+                        [
+                            Item.of(
+                                'ars_nouveau:potion_flask',
+                                '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:1b,Amplifier:0b}],Potion:"minecraft:strong_regeneration"}'
+                            ),
+                            Item.of(
+                                'ars_nouveau:potion_flask',
+                                '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:450,Id:10b,Amplifier:1b}],Potion:"minecraft:long_swiftness"}'
+                            )
+                        ]
                     ],
                     output: 'kubejs:partial_stim_pack'
                 },
@@ -590,10 +596,16 @@ onEvent('recipes', (event) => {
                     type: 'deploying',
                     input: [
                         'kubejs:partial_stim_pack',
-                        Item.of(
-                            'ars_nouveau:potion_flask',
-                            '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:22b,Amplifier:1b}],Potion:"apotheosis:strong_resistance"}'
-                        )
+                        [
+                            Item.of(
+                                'ars_nouveau:potion_flask',
+                                '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:1800,Id:11b,Amplifier:1b}],Potion:"apotheosis:long_absorption"}'
+                            ),
+                            Item.of(
+                                'ars_nouveau:potion_flask',
+                                '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:22b,Amplifier:1b}],Potion:"apotheosis:strong_resistance"}'
+                            )
+                        ]
                     ],
                     output: 'kubejs:partial_stim_pack'
                 },
