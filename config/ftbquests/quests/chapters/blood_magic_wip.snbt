@@ -419,7 +419,15 @@
 			x: 0.5d
 			y: 7.0d
 			subtitle: "Finder of Lost Things"
-			description: ["The Ritual Diviner is crucial to the construction and use of Rituals.  Keep it close to hand. "]
+			description: [
+				"The Ritual Diviner is crucial to the construction and use of Rituals.  Keep it close to hand. "
+				""
+				"Right Click in the air to change the direction of the ritual. For some, like the Ritual of Speed, the direction the ritual is facing is important."
+				""
+				"Sneak Right Click in the air to change the selected ritual. Once selected, simply right clicking a Master Ritual Stone with Ritual Stones in one’s inventory will place and mark each stone automatically. Simply hold down the right mouse button to build rituals with ease. "
+				""
+				"The Sanguine Scientiem contains a full listing of all Rituals, explaining their uses in depth. "
+			]
 			dependencies: ["00000000000008C7"]
 			id: "00000000000008CC"
 			tasks: [{
@@ -675,15 +683,23 @@
 				""
 				"A few notable examples:"
 				""
-				"Ritual of the Feathered Knife - Automatically generates LP using the health of a nearby Player."
+				"● Ritual of the Feathered Knife"
+				"Automatically generates LP using the health of a nearby Player."
 				""
-				"Crack of the Fractured Crystal - Gently harvests Demon Will Crystals in the area, dropping them on the ground nearby."
+				"● Crack of the Fractured Crystal"
+				"Gently harvests Demon Will Crystals in the area, dropping them on the ground nearby."
 				""
-				"Resonance of the Faceted Crystal - Facilitates the growth of specialized Demon Will Crystals."
+				"● Resonance of the Faceted Crystal"
+				"Facilitates the growth of specialized Demon Will Crystals."
 				""
-				"Well of Suffering - Slowly drains the life essence from mobs, transferring it to the nearest Blood Altar. "
+				"● Well of Suffering"
+				"Slowly drains the life essence from mobs, transferring it to the nearest Blood Altar."
+				""
+				"● Mark of the Falling Tower"
+				"Summons massive resource filled meteors. Be sure to check the Enigmatica Additions section in the Sanguine Scientiem for a full list of all the meteors added by the pack."
 			]
 			dependencies: ["00000000000008E7"]
+			min_width: 400
 			id: "00000000000008F8"
 			tasks: [{
 				id: "00000000000008F9"
@@ -963,6 +979,146 @@
 				icon: "kubejs:rare_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
 				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: 8.5d
+			description: [
+				"Growing crystals is a slow process."
+				""
+				"Very slow."
+				""
+				"Thankfully there are catalysts that may be used to drastically speed up the growth of Crystal Clusters, as well as rituals to assist in the application of said catalysts."
+				""
+				"Catalysts may be manually applied to a crystal cluster of the same type to reduce the amount of will required to grow more spires. This may be applied by hand by right clicking, or by way of the Gathering of the Forsaken Souls ritual. "
+				""
+				"The Sanguine Scientiem has a more detailed explanation, so be sure to check it out. "
+			]
+			dependencies: ["00000000000008FD"]
+			id: "59C301DC6D5DC73B"
+			tasks: [{
+				id: "4EF603DCA2692FFD"
+				type: "item"
+				title: "Crystal Growth Catalysts"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "bloodmagic:rawcatalyst"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:corrosivecatalyst"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:destructivecatalyst"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:steadfastcatalyst"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:vengefulcatalyst"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "0BB215FA03536F71"
+				type: "command"
+				title: "Epic Blood Magic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.5d
+			description: [
+				"Simple cross-dimensional transport at a bargain price. With a pair of teleposers, one can transport items, entities, or even solid blocks from place to place. Whatever finds itself above the teleposer when activated by redstone will swap places with the linked teleposer instantly. "
+				""
+				"To link them, simply Sneak Right Click a teleposer with a Teleposition Focus. This sets the coordinates to that teleposer, and the focus may be inserted into any other teleposer. Link them again in reverse to make a two-way teleportation system. "
+				""
+				"Be aware, using the teleposer costs LP from the owner’s Soul Network, with greater distances using more per trip. Refer to the Sanguine Scientiem for more details. "
+			]
+			dependencies: ["00000000000008E7"]
+			id: "2563F1FF6E4B3445"
+			tasks: [{
+				id: "5B1A674980456429"
+				type: "item"
+				item: "bloodmagic:teleposer"
+			}]
+			rewards: [{
+				id: "015454A38CCD316D"
+				type: "item"
+				item: "bloodmagic:teleposerfocus"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.5d
+			description: [
+				"More refined than hanging glass bottles from a hot rod, Alchemical Brewing offers multi-use potions that may be combined to provide multiple effects in the same bottle. "
+				""
+				"If desired, the Alchemist may even merge effects by way of a Combinational Catalyst to create entirely new potions, such as mixing Suspended and Levitation to obtain Flight potions. "
+			]
+			dependencies: ["0000000000000909"]
+			id: "6510633E59CA3D11"
+			tasks: [
+				{
+					id: "6C86280214A9DCCC"
+					type: "item"
+					item: {
+						id: "bloodmagic:alchemy_flask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "696B106B0893E871"
+					type: "item"
+					item: "bloodmagic:simplecatalyst"
+				}
+			]
+			rewards: [{
+				id: "213C367F254BD990"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 4800
+							Id: -97b
+							Amplifier: 1b
+						}]
+						effectholder: [{
+							Duration: 3600
+							Id: 159
+							LengthDurationMod: 2.6666998863220215d
+							Amplifier: 1b
+							AmpDurationMod: 0.5d
+						}]
+						Damage: 0
+					}
+				}
 			}]
 		}
 	]

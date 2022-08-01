@@ -484,6 +484,7 @@ const recipesToHide = [
             'bloodmagic:blood_rune_orb',
             'bloodmagic:blood_rune_acceleration',
             'bloodmagic:blood_rune_charging',
+            'bloodmagic:teleposer',
 
             'botania:terrasteel_helmet',
             'botania:terrasteel_chestplate',
@@ -606,6 +607,10 @@ const recipesToHide = [
             'bloodmagic:soulforge/input_routing_node',
             'bloodmagic:soulforge/master_routing_node'
         ]
+    },
+    {
+        category: 'bloodmagic:altar',
+        recipes_by_id: ['bloodmagic:altar/teleposer_focus']
     }
 ];
 
