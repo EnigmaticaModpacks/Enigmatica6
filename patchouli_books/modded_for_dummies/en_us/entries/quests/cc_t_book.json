@@ -1,22 +1,32 @@
 {
-    "name": "CC:T Documentation",
+    "name": "CC:T Links and tasks",
     "icon": "computercraft:printed_book",
     "category": "patchouli:quests",
     "sortnum": 1,
     "pages": [
         {
             "type": "text",
-            "text": "$(1)We really advice you to read ComputerCraft: Tweaked quest line first before reading those pages!$(reset) Everything here and on other ComputerCraft related pages in this book is just additional notes filling up holes in quest line!"
+            "text": "$(1)We really advice you to read ComputerCraft: Tweaked quest line first before reading this entry!$(reset) Everything here is just additional notes filling up holes in quest line and giving you links to useful sites. $(br)Have fun!"
         },  
 
         {
             "type": "text",
-            "text": "$(l)Welcome $(playername) to \"Book chapter\" of ComputerCraft: Tweaked quest line!$(reset)$(br)Here you will find help with tasks, challenges, additional notes and links helpful in your programming adventure. This chapter will give you links for entire documentation you need to use ComputerCraft: Tweaked."
+            "text": "$(l)Welcome $(playername) to \"Book chapter\" of ComputerCraft: Tweaked quest line!$(reset)$(br)Here you will find help with tasks, challenges, additional notes and links helpful in your programming adventure. It is recommended to look here while you are completing quest line, as you can see solutions to tasks and get help if you aren't able to do them. So what are you waiting for, lets get started!"
         },
 
         {
             "type": "text",
             "text": "$(l)      Documentation$(reset) $(br)Hover at any link to get more information what you can find there.$(br) $(li)$(l:https://www.lua.org/manual/5.1)$(t:Here you can find everything Lua has to offer by default! However not everything here works in CC:T, and there is nothing about custom APIs.)Lua Documentation$()$(li)$(l:https://tweaked.cc/)$(t:Here you can find every API CC:T has to offer, and how to use each of them.)CC:T Documentation$()$(li)$(l:https://docs.srendi.de)$(t:Here you can find how to use each of Advanced Peripherals blocks with their corresponding API. For this modpack, see 1.16 section of the page.)Advanced Peripherals Wiki$()$(li)$(l:https://docs.google.com/spreadsheets/d/1sheh1BIeP_vSto881H6UtgXvxdbyJEfILM_uUW_UD7Q/edit)$(t:This is entire spreadsheet with all functions Mekanism API has to offer! Note that this spreadsheet doesn't have information on how to use API, and some of the functions are described on Advanced Peripherals Wiki in Mod Integrations section.)Mekanism API$() $(br2)Note that other mod integrations mentioned in CC:T quest line are on Advanced Peripherals Wiki in \"Mod integration\" section of the page."
+        },
+
+        {
+            "type": "text",
+            "text": "$(l)         Tasks$()$(br)On another pages you will find tasks explained in higher detail and showed solution to them. $(br)$(o)Take a note that this could destroy fun from experimenting on your own, and its recommended to read them only after you completed task you want to see, or you aren't able to complete it and need help.$()"
+        },
+
+        {
+            "type": "text",
+            "text": "$(l)        Index$()$(li)Task 1$(li)Task 2$(li)Task 3$(li)Task 4$(li)Task 5$(li)Task 6$(li)WIP"
         }
     ]
 }
