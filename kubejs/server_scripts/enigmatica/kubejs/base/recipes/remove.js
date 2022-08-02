@@ -77,6 +77,7 @@ onEvent('recipes', (event) => {
         'architects_palette:temp/limestone_red',
 
         'ars_nouveau:mana_gem_2',
+        /ars_nouveau:crush.*dye/,
 
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
