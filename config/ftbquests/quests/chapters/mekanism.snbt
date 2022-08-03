@@ -2757,5 +2757,73 @@
 				player_command: false
 			}]
 		}
+		{
+			x: 2.5d
+			y: 4.0d
+			description: [
+				"Looking to fuel that new Fusion Reactor? Well Deuterium and Tritium are the way to go, certainly, but Mekanism isn’t the only way to obtain these fluids in sufficient quantities. For a slightly different challenge, consider setting up the fuel with these two multiblock structures instead. They’ll easily provide enough fuel to run a reactor at full injection rate, while also supplying enough to make D-T fuel to boost the reactor to its maximum capacity."
+				""
+				""
+				"Industrial Deuterium Plant"
+				""
+				"Though based on simple technologies, this massive machine can churn out industrial quantities of Deuterium quickly enough to meet the needs of a Fusion Reactor."
+				""
+				"Note: This multiblock expects water underneath it with the legs submerged right up to the base of the platform. As such, it is best built as an offshore platform. Be wary of kelp and other plant life, as its presence will break the structure."
+				""
+				""
+				"Stellar Neutron Activator"
+				""
+				"A fusion of technology and magic, the Stellar Neutron Activator is capable of producing enormous quantities of Tritium continuously, though the process requires enormous quantities of mana and energy to extract it from water."
+				""
+				"This machine operates for 4000 ticks every time it consumes mana."
+				""
+				"================================================================="
+				""
+				"Note that the recipes shown in JEI don't accurately display whether any given input is per tick or all at once. For simplicity, all recipes for all Masterful Machines have been standardized under the following rule set:"
+				"● Forge Energy is consumed per tick"
+				"● Pneumatic Air is consumed per tick and must be over 10 Bar"
+				"● Fluids are consumed or created per tick"
+				"● Mana is consumed at the start of a craft or created at the end"
+			]
+			dependencies: ["00000000000007DC"]
+			min_width: 400
+			id: "3F1A8F0603103E2E"
+			tasks: [
+				{
+					id: "242416B8A526386F"
+					type: "item"
+					item: "masterfulmachinery:industrial_deuterium_plant_controller"
+				}
+				{
+					id: "055E253A1C45D3F3"
+					type: "item"
+					item: "masterfulmachinery:stellar_neutron_activator_controller"
+				}
+			]
+			rewards: [
+				{
+					id: "526D36712006641A"
+					type: "command"
+					title: "Legendary Mekanism Loot Box"
+					icon: "kubejs:legendary_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+					player_command: false
+				}
+				{
+					id: "1D6DFBD767770794"
+					type: "command"
+					title: "Legendary Mekanism Loot Box"
+					icon: "kubejs:legendary_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+					player_command: false
+				}
+				{
+					id: "4FB1E142562746D5"
+					type: "item"
+					item: "mekanism:rotary_condensentrator"
+					count: 2
+				}
+			]
+		}
 	]
 }
