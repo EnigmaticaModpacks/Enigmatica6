@@ -54,6 +54,60 @@ onEvent('recipes', (event) => {
             secondaries: ['#forge:ingots/cobalt', 'minecraft:magma_cream'],
             outputs: [Item.of('tconstruct:queens_slime_ingot', 2)],
             id: `${id_prefix}queens_slime_ingot`
+        },
+        {
+            input1: Ingredient.of('#forge:sand', 1),
+            secondaries: ['#forge:obsidian', '#forge:gems/quartz'],
+            outputs: [Item.of('thermal:obsidian_glass', 2)],
+            id: `${id_prefix}obsidian_glass`
+        },
+        {
+            input1: Ingredient.of('#forge:ingots/enderium'),
+            secondaries: [Ingredient.of('thermal:obsidian_glass', 2)],
+            outputs: [Item.of('thermal:enderium_glass', 2)],
+            id: `${id_prefix}enderium_glass`
+        },
+        {
+            input1: Ingredient.of('#forge:ingots/signalum'),
+            secondaries: [Ingredient.of('thermal:obsidian_glass', 2)],
+            outputs: [Item.of('thermal:signalum_glass', 2)],
+            id: `${id_prefix}signalum_glass`
+        },
+        {
+            input1: Ingredient.of('#forge:ingots/lumium'),
+            secondaries: [Ingredient.of('thermal:obsidian_glass', 2)],
+            outputs: [Item.of('thermal:lumium_glass', 2)],
+            id: `${id_prefix}lumium_glass`
+        },
+        {
+            input1: Ingredient.of('minecraft:andesite'),
+            secondaries: [[Ingredient.of('#forge:nuggets/zinc'), Ingredient.of('#forge:nuggets/iron')]],
+            outputs: [Item.of('create:andesite_alloy')],
+            id: `${id_prefix}andesite_alloy`
+        },
+        {
+            input1: Ingredient.of('#forge:ingots/lead', 3),
+            secondaries: [Ingredient.of('#forge:dusts/ender', 2), Ingredient.of('#forge:dusts/diamond')],
+            outputs: [Item.of('emendatusenigmatica:enderium_ingot', 2)],
+            id: `${id_prefix}enderium_ingot`
+        },
+        {
+            input1: Ingredient.of('#forge:ingots/silver'),
+            secondaries: [Ingredient.of('#forge:ingots/tin', 3), Ingredient.of('#forge:dusts/glowstone', 2)],
+            outputs: [Item.of('emendatusenigmatica:lumium_ingot', 4)],
+            id: `${id_prefix}lumium_ingot`
+        },
+        {
+            input1: Ingredient.of('#forge:ingots/silver'),
+            secondaries: [Ingredient.of('#forge:ingots/copper', 3), Ingredient.of('#forge:dusts/redstone', 4)],
+            outputs: [Item.of('emendatusenigmatica:signalum_ingot', 4)],
+            id: `${id_prefix}signalum_ingot`
+        },
+        {
+            input1: Ingredient.of('#forge:ingots/gold', 2),
+            secondaries: [Ingredient.of('#forge:ingots/netherite_scrap', 4)],
+            outputs: [Item.of('minecraft:netherite_ingot', 1)],
+            id: `${id_prefix}netherite_ingot`
         }
     ];
 
