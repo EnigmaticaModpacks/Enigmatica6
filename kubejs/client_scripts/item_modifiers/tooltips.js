@@ -177,7 +177,11 @@ onEvent('item.tooltip', (event) => {
             text: [Text.of('Does not work on spawners.').red()]
         },
         {
-            items: ['kubejs:crystalline_flowering_palo_verde_leaves', 'kubejs:crystalline_oak_leaves'],
+            items: [
+                'kubejs:crystalline_flowering_palo_verde_leaves',
+                'kubejs:crystalline_oak_leaves',
+                'kubejs:crystalline_dark_oak_wood'
+            ],
             text: [Text.of('Fireproof').gold()]
         }
     ];
