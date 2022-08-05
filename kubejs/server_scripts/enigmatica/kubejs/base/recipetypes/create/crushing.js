@@ -41,6 +41,70 @@ onEvent('recipes', (event) => {
             ],
             input: 'atum:emmer',
             id: `${id_prefix}emmer_flour`
+        },
+        {
+            outputs: [
+                Item.of('minecraft:iron_ingot', 2),
+                Item.of('minecraft:leather', 2).withChance(0.5),
+                Item.of('minecraft:iron_ingot', 2).withChance(0.5),
+                Item.of('minecraft:string', 2).withChance(0.25),
+                Item.of('minecraft:iron_nugget', 8).withChance(0.25)
+            ],
+            input: 'atum:camel_iron_armor',
+            id: `${id_prefix}iron_from_camel_iron_armor`
+        },
+        {
+            outputs: [
+                Item.of('minecraft:gold_ingot', 2),
+                Item.of('minecraft:leather', 2).withChance(0.5),
+                Item.of('minecraft:gold_ingot', 2).withChance(0.5),
+                Item.of('minecraft:string', 2).withChance(0.25),
+                Item.of('minecraft:gold_nugget', 8).withChance(0.25)
+            ],
+            input: 'atum:camel_gold_armor',
+            id: `${id_prefix}gold_from_camel_gold_armor`
+        },
+        {
+            outputs: [
+                Item.of('minecraft:diamond'),
+                Item.of('minecraft:leather', 2).withChance(0.5),
+                Item.of('minecraft:diamond', 3).withChance(0.1),
+                Item.of('minecraft:string', 2).withChance(0.25)
+            ],
+            input: 'atum:camel_diamond_armor',
+            id: `${id_prefix}diamond_from_camel_diamond_armor`
+        },
+        {
+            outputs: [
+                Item.of('minecraft:iron_ingot', 2),
+                Item.of('minecraft:leather').withChance(0.5),
+                Item.of('minecraft:iron_ingot').withChance(0.5),
+                Item.of('minecraft:string', 2).withChance(0.25),
+                Item.of('minecraft:iron_nugget', 4).withChance(0.25)
+            ],
+            input: 'atum:desert_wolf_iron_armor',
+            id: `${id_prefix}iron_from_desert_wolf_iron_armor`
+        },
+        {
+            outputs: [
+                Item.of('minecraft:gold_ingot', 2),
+                Item.of('minecraft:leather', 2).withChance(0.5),
+                Item.of('minecraft:gold_ingot', 2).withChance(0.5),
+                Item.of('minecraft:string', 2).withChance(0.25),
+                Item.of('minecraft:gold_nugget', 8).withChance(0.25)
+            ],
+            input: 'atum:desert_wolf_gold_armor',
+            id: `${id_prefix}gold_from_desert_wolf_gold_armor`
+        },
+        {
+            outputs: [
+                Item.of('minecraft:diamond'),
+                Item.of('minecraft:leather', 2).withChance(0.5),
+                Item.of('minecraft:diamond', 3).withChance(0.1),
+                Item.of('minecraft:string', 2).withChance(0.25)
+            ],
+            input: 'atum:desert_wolf_diamond_armor',
+            id: `${id_prefix}diamond_from_desert_wolf_diamond_armor`
         }
     ];
     recipes.forEach((recipe) => {
