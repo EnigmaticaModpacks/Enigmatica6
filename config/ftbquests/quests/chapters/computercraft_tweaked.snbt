@@ -24,7 +24,7 @@
 				""
 				"These quests are meant to showcase the mod, and teach you, fellow Player, Basics of Basics with Lua and how to start learning more!"
 				""
-				"~~Kanzio"
+				"~~Kanzaji"
 			]
 			size: 2.0d
 			optional: true
@@ -332,11 +332,7 @@
 			y: 0.0d
 			shape: "circle"
 			subtitle: "Lua Basics: Universal Peripheral APIs"
-			description: [
-				"ComputerCraft: Tweaked does support as peripherals other blocks as well! Your peripheral can be nearly anything, Minecraft Chest, Mekanism Reactor, Drawer, nearly any block works!"
-				""
-				"Note that some mods does have support for ComputerCraft, and in that case blocks from that mod will have their own API."
-			]
+			description: ["ComputerCraft: Tweaked does support as peripherals other blocks as well! Your peripheral can be nearly anything, Minecraft Chest, Mekanism Reactor, Drawer, nearly any block works!"]
 			dependencies: ["378BEFB62C4F98BF"]
 			hide: true
 			min_width: 350
@@ -355,7 +351,7 @@
 		{
 			title: "Inventory API"
 			icon: "minecraft:barrel"
-			x: -9.0d
+			x: -7.5d
 			y: -1.5d
 			subtitle: "Lua Basics: Global Inventory API"
 			dependencies: ["55493D823F7403DA"]
@@ -375,13 +371,13 @@
 		{
 			title: "Liquid API"
 			icon: "minecraft:water_bucket"
-			x: -9.5d
-			y: -0.5d
+			x: -7.0d
+			y: 1.5d
 			subtitle: "Lua Basics: Global Liquid API"
 			description: [
 				"Liquids API is used to move liquids around in your network. It is really simple API, but it is actually useful in more complex fluid automations (like Mekanism 5x Ore Processing)."
 				""
-				"Fluid API Functions:"
+				"-- Fluid API Functions:"
 				""
 				"> tanks() -> Returns a table with tanks in a peripheral. Empty ones will be \"nil\", non-empty ones will have basic information about that liquid, like Amount and Name. (Recommended to use pairs() with that table for looping)"
 				""
@@ -443,14 +439,16 @@
 		{
 			title: "Energy API"
 			icon: "engineersdecor:sign_hotwire"
-			x: -9.5d
-			y: 0.5d
+			x: -8.0d
+			y: 1.5d
 			subtitle: "Lua Basics: Global Energy API"
 			description: [
 				"This one is unfortunately really simple API, with not a lot of use. It can only read Energy capacity of some blocks."
 				""
 				"Energy API Functions:"
+				""
 				"> getEnergy() -> Returns the energy stored in that peripheral"
+				""
 				"> getEnergyCapacity() -> Returns maximum energy capacity of peripheral"
 			]
 			dependencies: ["55493D823F7403DA"]
@@ -1762,6 +1760,8 @@
 			x: -0.5d
 			y: -8.0d
 			subtitle: "Coding practice: Loops"
+			dependencies: ["788EAA0E430DA5C3"]
+			hide: true
 			id: "3AA1096DA1C0287E"
 			tasks: [{
 				id: "00AAF998FF0416A3"
@@ -1805,19 +1805,19 @@
 			}]
 		}
 		{
-			title: "Mekanism API"
+			title: "Mekanism"
 			icon: "mekanism:alloy_atomic"
-			x: -9.0d
-			y: 1.5d
+			x: -10.5d
+			y: -2.0d
 			subtitle: "Lua Basics: Mekanism API"
 			description: [
 				"Mekanism is one of those mods that have ComputerCraft: Tweaked support! However, there is so much functions for every Mekanism machine, it is not possible to explain that API here. You will need to use external Excel spreadsheet this time."
 				""
 				"Searching for anything is fairly easy. Press \"ctrl\" + \"f\" and search for Mekanism machine you want to use. Next to every machine are functions you can use to interact with it!"
 				""
-				"Note that this API doesn't work super well with every Mekanism machine, and there isn't a lot of explenation of what functions do, so experimenting on your own is necessary."
+				"Note that this API doesn't work super well with every Mekanism machine, and there isn't a lot of explanation of what functions do (There is a bit on Advanced Peripherals wiki, but not everything), so experimenting on your own is necessary."
 			]
-			dependencies: ["55493D823F7403DA"]
+			dependencies: ["7F26B046A65E9EDB"]
 			min_width: 400
 			id: "43D7B585768ACD4D"
 			tasks: [{
@@ -2215,7 +2215,7 @@
 			}]
 		}
 		{
-			title: "Re-usable links and Tasks "
+			title: "Re-usable links and solution to tasks "
 			icon: {
 				id: "patchouli:guide_book"
 				Count: 1b
@@ -2247,6 +2247,204 @@
 				id: "2AB23FCB677E93E1"
 				type: "xp"
 				xp: 100
+			}]
+		}
+		{
+			title: "Mod Integrations"
+			icon: "create:cogwheel"
+			x: -10.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Lua Basics: Mod-Added APIs"
+			description: [
+				"Some of the mods have their own API that adds functionality to their blocks. Here are all of the integrations that are in place in Enigmatica 6!"
+				""
+				"Note that most of them have their description in Advanced Peripherals documentation, so that’s the place to search more information. Additional links are in corresponding quests."
+			]
+			dependencies: ["55493D823F7403DA"]
+			min_width: 250
+			id: "7F26B046A65E9EDB"
+			tasks: [{
+				id: "4545EA1D31B4B5C3"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "52F6D5BCD76842E6"
+				type: "custom"
+				title: "[Link] Advanced Peripherals Wiki"
+			}]
+		}
+		{
+			title: "Botania"
+			icon: "botania:brewery"
+			x: -11.5d
+			y: -1.5d
+			subtitle: "Lua Basics: Botania API"
+			description: [
+				"Botania has integration that could be really useful in controlling your mana generation and usage!"
+				""
+				"-- Botania API:"
+				""
+				"- General:"
+				"> getMaxMana() -> Returns Number with mana capacity of the buffer."
+				"> getMana() -> Returns Number with amount of stored mana in a buffer."
+				""
+				"- Mana Pool \\& Mana Spreader"
+				"> isEmpty() -> Returns true (boolean) if mana buffer is empty."
+				"> isFull() -> Returns true (boolean) if mana buffer is full."
+				""
+				"- Mana Spreader Exclusive"
+				"> getVariant() -> Returns string with the variant of the spreader."
+				"> getBounding() -> Returns table with the coordinates of the target of the spreader."
+				""
+				"- Mana Pool Exclusive"
+				"> getManaNeeded() -> Returns number with the amount of mana needed to fill the pool."
+				""
+				"- Any mana generating flower:"
+				"> isPassiveFlower() -> Returns true (boolean) if the flower can passively generate mana."
+				"> isOnEnchantedSoil() -> Returns true (boolean) if the flower is on enchanted soil."
+				"> getGeneration() -> Returns Number with how much Mana flower can generate per tick."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 475
+			id: "5C1DA410C9AA2257"
+			tasks: [{
+				id: "1BE43465007D5045"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Immersive Engineering"
+			icon: {
+				id: "immersiveengineering:hammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -12.0d
+			y: -0.5d
+			subtitle: "Lua Basics: Immersive Engineering API"
+			description: [
+				"Immersive engineering unfortunetaly has only additional support for redstone wires and capacitors, however its good to know its a thing."
+				""
+				"-- Immersive Engineering API Functions:"
+				""
+				"- Capacitors:"
+				"> getEnergy() -> Check Energy API"
+				"> getEnergyNeeded() -> Returns number with amount of energy that is needed to fill the capacitor."
+				"> getEnergyFilledPercentage() -> Returns number from 0 to 1 with percentage fill of the capacitor."
+				"> getMaxEnergy() -> Returns number with maximum energy capacitor can store."
+				""
+				"- Redstone Wire Connector"
+				"> setRedstoneChannel(color) -> Sets the redstone channel of the wire connector."
+				"● color (string) -> Color of the channel you want your connector set to."
+				"> getRedstoneChannel() -> Returns string with the current redstone channel of connector."
+				"> isInputMode() -> Returns true (boolean) if the mode of the wire connector is set to input."
+				"> getOutput() -> Returns the number with the power of the redstone on the current channel."
+				"> getRedstoneForChannel(color) -> Returns number with the power of redstone from desired channel."
+				"● color (string) -> Color of the channel you want to get redstone power from."
+				""
+				"- Redstone Probe:"
+				"> setSendingChannel(color) -> Sets the sending channel of the probe connector."
+				"● color (string) -> Color of the channel you want your connector send signal to."
+				"> setReceivingChannel(color) -> Sets the receiving channel of the probe connector."
+				"● color (string) -> Color of the channel you want your connector recive signal from."
+				"> getReceivingChannel() -> Returns string with the receiving channel of the probe connector."
+				"> getSendingChannel() -> Returns string with the sending channel of the probe connector."
+				"> getRedstoneForChannel(color) -> Returns number with the redstone power on desired channel."
+				"● color (string) -> Color of the channel you want to get signal from."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 525
+			id: "36B1950BED69F9B6"
+			tasks: [{
+				id: "6D8C553262A245A0"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "There are broken mod integrations?"
+			icon: "engineersdecor:sign_caution"
+			x: -10.5d
+			y: 2.0d
+			subtitle: "Problematic interractions"
+			description: [
+				"Some of the mods unfortunetaly doesn't have great interraction with ComputerCraft, this is a list with mods that are known to cause issues. If you found any problematic mods, let us know!"
+				""
+				"Broken interractions:"
+				""
+				"● Storage Drawers -> Because how weird drawers work, they are problematic with ComputerCraft. Advanced peripherals have a patch for that, but it’s not perfect and because of that it's not recommended to use Storage Drawers with ComputerCraft. "
+				""
+				"● Mekanism -> Their API isn't perfect, so there are some problems with it."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 375
+			id: "26F7BB612EBB0B08"
+			tasks: [{
+				id: "6B278B1E5E8843C8"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Integrated Dynamics"
+			icon: "integrateddynamics:crystalized_menril_chunk"
+			x: -11.5d
+			y: 1.5d
+			subtitle: "Lua Basics: Integrated Dynamics API"
+			description: [
+				"Integrated Dynamics has a bit of support for ComputerCraft, but its only possible to read variables from Variable store."
+				""
+				"-- ID API Functions:"
+				""
+				"> list() -> Returns table with list of variables inside Variable Store. However without any values."
+				""
+				"> read(slot) -> Used to read value of specific variable. Returns table with a value."
+				"● slot: (Number) -> Slot from which variable value is read."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 300
+			id: "484DF013A150CDD7"
+			tasks: [{
+				id: "6CFF1AB5B4A480F4"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Minecraft"
+			icon: "minecraft:beacon"
+			x: -12.0d
+			y: 0.5d
+			subtitle: "Lua Basics: Minecraft features"
+			description: [
+				"Minecraft has been added support as well, however its only for two blocks: Beacon and Noteblock"
+				""
+				"-- Minecraft API Functions:"
+				""
+				"- Beacon Functions:"
+				"> getLevel() -> Returns a Number with level of the beacon"
+				"> getPrimaryEffect() -> Returns a string with primary effect of the beacon"
+				"> getSecondaryEffect() -> Returns a string with secondary effect of the beacon"
+				""
+				"- Noteblock Functions:"
+				"> playNote() -> Plays the sound of current note."
+				"> getNote() -> Returns Number (0-24) indicating what note is set."
+				"> changeNoteBy(Note) -> Used to change note to a given in the argument. Returns new note if successful."
+				"● Note: (Number from 0 to 24) -> Note you want to be set."
+				"> changeNote() -> Returns number note if successful, or -1 if not. Changes note by 1 like you would by right-clicking noteblock."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 400
+			id: "79415881D71D8D7F"
+			tasks: [{
+				id: "1E789F68DCF6F1CA"
+				type: "checkmark"
+				title: "Got it!"
 			}]
 		}
 	]
