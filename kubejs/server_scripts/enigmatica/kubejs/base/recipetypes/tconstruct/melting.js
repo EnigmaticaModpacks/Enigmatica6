@@ -58,6 +58,13 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}molten_gold`
         },
         {
+            ingredient: { item: 'undergarden:cloggrum_bars' },
+            result: { fluid: 'materialis:molten_cloggrum', amount: 48 },
+            temperature: 700,
+            time: 160,
+            id: `materialis:smeltery/melting/metal/cloggrum/ore`
+        },
+        {
             ingredient: { item: 'thermal:obsidian_glass' },
             result: { fluid: 'kubejs:molten_hardened_glass', amount: 1000 },
             temperature: 1400,
