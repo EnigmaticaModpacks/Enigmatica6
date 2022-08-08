@@ -61,9 +61,16 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}golden_carrot`
         },
         {
-            inputs: ['eidolon:enchanted_ash', '#forge:dusts/gold', '#forge:dusts/gold', 'minecraft:apple'],
+            inputs: [
+                'eidolon:enchanted_ash',
+                '#forge:dusts/gold',
+                'minecraft:apple',
+                'minecraft:apple',
+                'minecraft:apple',
+                'minecraft:apple'
+            ],
             output: 'minecraft:golden_apple',
-            count: 1,
+            count: 4,
             cookingTime: 200,
             id: `${id_prefix}golden_apple`
         },
