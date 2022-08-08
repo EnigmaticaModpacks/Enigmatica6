@@ -109,6 +109,66 @@ onEvent('recipes', (event) => {
                 drain: 200.0,
                 id: 'bloodmagic:soulforge/primitive_crystalline_resonator'
             },
+            {
+                inputs: [
+                    'bloodmagic:tauoil',
+                    'atum:anputs_fingers_spores',
+                    'eidolon:ender_calx',
+                    '#quark:crystal_clusters/white'
+                ],
+                output: 'bloodmagic:rawcatalyst',
+                minimumDrain: 400.0,
+                drain: 20.0,
+                id: 'bloodmagic:soulforge/raw_catalyst'
+            },
+            {
+                inputs: [
+                    'bloodmagic:tauoil',
+                    'atum:anputs_fingers_spores',
+                    'eidolon:ender_calx',
+                    '#quark:crystal_clusters/green'
+                ],
+                output: 'bloodmagic:corrosivecatalyst',
+                minimumDrain: 400.0,
+                drain: 20.0,
+                id: 'bloodmagic:soulforge/corrosive_catalyst'
+            },
+            {
+                inputs: [
+                    'bloodmagic:tauoil',
+                    'atum:anputs_fingers_spores',
+                    'eidolon:ender_calx',
+                    '#quark:crystal_clusters/red'
+                ],
+                output: 'bloodmagic:vengefulcatalyst',
+                minimumDrain: 400.0,
+                drain: 20.0,
+                id: 'bloodmagic:soulforge/vengeful_catalyst'
+            },
+            {
+                inputs: [
+                    'bloodmagic:tauoil',
+                    'atum:anputs_fingers_spores',
+                    'eidolon:ender_calx',
+                    '#quark:crystal_clusters/yellow'
+                ],
+                output: 'bloodmagic:destructivecatalyst',
+                minimumDrain: 400.0,
+                drain: 20.0,
+                id: 'bloodmagic:soulforge/destructive_catalyst'
+            },
+            {
+                inputs: [
+                    'bloodmagic:tauoil',
+                    'atum:anputs_fingers_spores',
+                    'eidolon:ender_calx',
+                    '#quark:crystal_clusters/indigo'
+                ],
+                output: 'bloodmagic:steadfastcatalyst',
+                minimumDrain: 400.0,
+                drain: 20.0,
+                id: 'bloodmagic:soulforge/steadfast_catalyst'
+            },
 
             /// Patchouli Removals
             {

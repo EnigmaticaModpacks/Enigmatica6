@@ -24,6 +24,7 @@ onEvent('recipes', (event) => {
             temperature: { min_temp: 1873 },
             id: `${id_prefix}coated_machine_frame_top`
         },
+        /*
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'pneumaticcraft:etching_acid', amount: 500 },
             item_input: { item: 'bloodmagic:defaultcrystal', count: 1 },
@@ -60,6 +61,7 @@ onEvent('recipes', (event) => {
             exothermic: false,
             id: `${id_prefix}steadfastcrystal`
         },
+        */
         {
             fluid_input: { type: 'pneumaticcraft:fluid', tag: 'forge:experience', amount: 8000 },
             item_input: { item: 'bloodmagic:corrupted_dust', count: 1 },
