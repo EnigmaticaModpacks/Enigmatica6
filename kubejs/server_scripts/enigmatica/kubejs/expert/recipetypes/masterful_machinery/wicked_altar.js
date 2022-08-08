@@ -303,8 +303,8 @@ onEvent('recipes', (event) => {
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'minecraft:golden_apple', count: 4 } }],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { tag: 'minecraft:apple', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:apple', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
@@ -316,8 +316,8 @@ onEvent('recipes', (event) => {
         {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'minecraft:golden_carrot', count: 4 } }],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { tag: 'minecraft:carrot', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:carrot', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
@@ -331,8 +331,8 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'minecraft:glistering_melon_slice', count: 4 } }
             ],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { tag: 'minecraft:melon_slice', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:melon_slice', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
