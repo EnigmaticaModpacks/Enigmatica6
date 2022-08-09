@@ -82,7 +82,7 @@
 			]
 			dependencies: [
 				"2D79E4D126EE389E"
-				"6F651FA6C015CA4A"
+				"2BA0F0C3EEF83EEC"
 			]
 			hide: true
 			size: 1.25d
@@ -717,7 +717,7 @@
 			description: [
 				"Here are the links to the Official ComputerCraft: Tweaked documentation, as well as Lua Documentation."
 				""
-				"In those documentations you can find nearly everything about anything. If you have problem with something from the quest line or you want to learn something new, this is the place to go!"
+				"In those you can find nearly everything about anything. If you don’t understand some topic or you just want to learn something new, this is the place to go!"
 				""
 				"In most of the quests, as a reward there will be a link to a page talking especially about topic the quest was, so if you want to learn more as you go, you can."
 			]
@@ -755,7 +755,7 @@
 				""
 				"In the subtitle, there will be rating from 1 to 10 in terms of difficulty. Higher numbers could require from you more knowledge and / or reading Lua documentation."
 				""
-				"After completing every quest, you will get a ComputerCraft trophy!"
+				"After completing every quest, you will get a ComputerCraft trophy! (Dev note: If I managed to add it)"
 			]
 			hide: true
 			size: 1.5d
@@ -784,7 +784,7 @@
 				""
 				"You can upload files from your real computer into the in-game PC! You just have to create a file on your desktop, rename it onto [your_name].lua and you can start coding. After you finished, you just drag \\& drop it into in-game Computer and run it. Simple as that!"
 				""
-				"Note that file will be uploaded to a directory you are currently in, and if file with that name exists it will be over written!"
+				"Note that file will be uploaded to a directory you are currently in, and if file with that name exists it will be overwritten!"
 				""
 				"There is also an addon for Visual Studio Code, that adds ComputerCraft support in Lua Language. Link to that is as the quest reward."
 			]
@@ -824,16 +824,15 @@
 			description: [
 				"Welcome to Lua fellow Player!"
 				""
-				"Lua is one of many coding languages out there, but it's one of the easiest ones. Don't think that it means it is worse than others!"
+				"Lua is one of many coding languages out there, but it's one of the easiest ones. Don't think that it means it is worse than others."
 				""
-				"Of course that isn't the only use for it. There is a lot of games coded in Lua, that are pretty good and popular (The Binding of Isaac for example)."
-				"That doesn't mean that it's only used in this application. There are a lot of games coded on Lua, that are pretty neat and popular (The Binding of Isaac for example)."
+				"Main use of it is as a coding language in games. Of course that isn't the only use for it, but most common one. However there is a lot of games coded in Lua, that are pretty good and popular (The Binding of Isaac for example)."
 				""
-				"In this tutorial I'll try to teach you the basics of basics of Lua, so you can try doing your own automation projects with it."
+				"In this “tutorial” I'll try to teach you the basics of Lua and help you start your journey with coding!"
 			]
 			dependencies: ["2D79E4D126EE389E"]
 			size: 1.5d
-			min_width: 275
+			min_width: 300
 			id: "44029061DB640AE2"
 			tasks: [{
 				id: "6A987EA5C795264E"
@@ -1001,7 +1000,7 @@
 				"> print(string) -- Basic function to write text on the screen. Has one argument."
 				""
 				"In my case I called print(). Some of the functions don't require you to give them arguments, they can even not have any of them, but there can also be functions that require even 10 arguments. Crazy isn't it?!"
-				"In my case, print() requires as its first and only argument some string."
+				"In this case, print() requires as its first and only argument some string."
 				"Example usage of print() looks like this:"
 				""
 				"> print(\"This is a test!\") -- Writes on the screen --> This is a test!"
@@ -1034,7 +1033,7 @@
 			y: -4.9d
 			subtitle: "Lua Basics #1 - Variable types"
 			description: [
-				"String is a type of variable that stores a sequence of characters. You can type here anything, binary code (Binary - Code using ones and zeros), your name, entire address or your homework if you so desire."
+				"String is a type of variable that stores a sequence of characters. You can type here anything, binary code (Binary - Code using ones and zeros), your name, entire address or your homework if you want."
 				""
 				"● Strings need to be written between double quotes to be valid, otherwise the program will think it's the name of variable!"
 				""
@@ -1042,6 +1041,7 @@
 				"> local my_first_string = Hello Player -- Not valid, Lua will think those are two variables"
 				""
 				"● Strings cannot be modified, but you can do a copy of them with a modification you want to do."
+				""
 				"> local test_string = \"This is a test\""
 				"> local test_string_edited = string.gsub(test_string, \"test\", \"Test!\", 1)"
 				"> \"This is a Test!\" -> test_string_edited"
@@ -1051,6 +1051,7 @@
 				""
 				"● There is also a way to add some text at the end of your string. This time you can \"edit\" the initial string by overwriting it, but it's sometimes useful to have it as separate variables."
 				"To add some text at the end of your string, you use 2 dots between 2 strings you want to add together:"
+				""
 				"> local string_1 = \"Hello \""
 				"> local string_2 = \"there!\""
 				"> string_1 = string_1 .. string_2"
@@ -1064,7 +1065,7 @@
 				"56800F53C736541F"
 			]
 			hide: true
-			min_width: 400
+			min_width: 410
 			id: "32B8B586F03321A7"
 			tasks: [{
 				id: "32E1201F35F1A394"
@@ -1148,6 +1149,9 @@
 				"● You can create multiple variables at the same time! You just simply type two or more names after \"local\" and separate them with a comma. You can even set a unique value for each variable."
 				"> local x, y, z = 1, 2, 3"
 				"> 1 -> x    /   2 -> y   /   3 -> z"
+				""
+				"● You can better describe your variables and code with use of comments. You create them with use of two minuses:"
+				"> print(\"Hello\") -- This is a comment that is ignored by Lua, you can write here anything!"
 			]
 			dependencies: ["29C780353E7FB720"]
 			hide: true
@@ -1200,11 +1204,12 @@
 				""
 				"More tasks will get unlocked, the more you advance in Lua Basics! It's recommended to do them as soon as possible, so you will practice stuff you learned as you go :D"
 				""
-				"Note that at the end of every quests you will receive link to a program that will showcase working program for that task."
+				"There are also additional notes there, so it’s definitely worth the effort. Have fun!"
 			]
 			dependencies: [
 				"2D79E4D126EE389E"
 				"6A987EA5C795264E"
+				"2F2D30981A0D12B6"
 			]
 			hide: true
 			size: 1.5d
@@ -1227,7 +1232,7 @@
 				""
 				"In Lua there is 8 variable types, however I will cover only 6 because 2 of them aren't that useful in ComputerCraft, and require much more knowledge."
 				""
-				"Lua, whenever you are trying to do something that is designed for a different type of variable, will try to convert the variable you use to the type it needs to be. Of course it will not success 100%, because sometimes its impossible to convert. In this case it will crash the program and give an error about a illegal function on that type of the variable."
+				"Lua, whenever you are trying to do something that is designed for a different type of variable, will try to convert the variable you use to the type it needs to be. Of course it will not success 100% of the time, because sometimes it’s impossible to convert. In this case it will crash the program and give an error about an illegal function on that type of the variable."
 				""
 				"There are few ways to convert one type to another manually, but it's not that useful in stuff we are gonna do, and can be found in Official Lua Docs."
 			]
@@ -1334,7 +1339,7 @@
 		}
 		{
 			title: "Your first program!"
-			icon: "rftoolscontrol:program_card"
+			icon: "thermal:wrench"
 			x: -1.5d
 			y: -4.0d
 			subtitle: "Practice: Variables"
@@ -1352,7 +1357,8 @@
 				""
 				"● Lastly let's see the value of our Boolean."
 				""
-				"If everything was done correctly, the screen should have 6 lines printed on it. The first one is two strings. The second and third are numbers with the fourth being the sum of them. The fifth line should be \"Enigmatica 6 is great!\" and the last line should show the value of your Boolean (True/False) If that's what you see, congratulations! You created your first program!"
+				"Now in our Modded for Dummies book, there are solutions to those tasks, so go there and check if you did it correctly. If so, congratulations! You created your first program!"
+				"Note that our code can be different, but results must be the same."
 				""
 				"Pro Tip: You don't need to do another variable in a few cases like adding 2 variables together. You can do that in the functions argument!"
 				"> local number_1, number_2 = 1, 5"
@@ -1430,7 +1436,11 @@
 				""
 				"If you have any problem with some program, use help command!"
 			]
-			dependencies: ["2D79E4D126EE389E"]
+			dependencies: [
+				"2D79E4D126EE389E"
+				"6A987EA5C795264E"
+			]
+			hide: true
 			size: 1.5d
 			min_width: 450
 			id: "1FF283A30B6E415C"
@@ -1536,8 +1546,6 @@
 				""
 				"● At last, call our third function five times and see what happens."
 				""
-				"If done correctly you should see one line on the screen with \"Sum of the arguments equals: \" and sum of your two numbers, and second line with your two strings and result of 2nd function. This pattern should be visible 5 times."
-				""
 				"Tip: You don't need to do new variable in 2nd and 3rd step! In 2nd step you can divide in return command, and in 3rd step, you can add both strings and what function returns in one line in print argument!"
 				""
 				"> print(string_1 .. string_2 .. function_2(number_1,number_2,number_3)) -- Prints string_1, string_2 and what function_2 returns."
@@ -1607,7 +1615,7 @@
 				""
 				"Now if your code works, you can experiment a bit and see how the output changes with different inputs. Have fun!"
 				""
-				"Note from creator: I know those conditions doesn't have much sense, but they are done for you to practice \"elseif\" and \"else\" functions!"
+				"Note from creator: I know those conditions doesn't have much sense, but they are done for you to practice \"elseif\" and \"else\" functions. More explenation is in the book."
 			]
 			dependencies: [
 				"7A434175E2B1AE04"
@@ -1737,7 +1745,7 @@
 				""
 				"● Global APIs are accessible at all time with use of Global Variable. Some useful Global APIs will be in \"Global API\" Section. "
 				""
-				"● Peripherals APIs are only accessible, when you have connected peripheral that API uses. Before that however, you need to wrap that peripheral, as Peripheral APIs are \"block specific\". More about that in Lua basics #5.2 - Peripherals API"
+				"● Peripherals APIs are only accessible, when you have connected peripheral that API uses. Before that however, you need to wrap that peripheral, as Peripheral APIs are \"block specific\". More about that in Lua basics #5.2 - Peripherals API and Lua Basics #5.3 Peripherals APIs and their usage."
 				""
 				"PS: No, unfortunately even though ComputerCraft has access to the internet, it is not possible to watch YouTube in game."
 			]
@@ -2024,6 +2032,7 @@
 				"Here are few most useful Global Variables in ComputerCraft: Tweaked and Lua. Everything else you need to find by yourself in documentation, but those here should be enough for most automations projects in Minecraft."
 			]
 			dependencies: ["1F7736775BFEA643"]
+			hide: true
 			min_width: 350
 			id: "69341D3A85480AD9"
 			tasks: [{
@@ -2063,6 +2072,7 @@
 			y: 2.0d
 			subtitle: "Lua Basics #5.2 - \"os\" API"
 			dependencies: ["69341D3A85480AD9"]
+			hide: true
 			id: "29EC12D7DF1ED9FF"
 			tasks: [{
 				id: "23197281ACBC72F5"
@@ -2082,6 +2092,7 @@
 			y: 0.5d
 			subtitle: "Lua Basics #5.2 - Peripheral API"
 			dependencies: ["69341D3A85480AD9"]
+			hide: true
 			id: "2A1B7703C6A4685D"
 			tasks: [{
 				id: "3E85F8A3BC1D31AC"
@@ -2128,6 +2139,7 @@
 			y: 1.0d
 			subtitle: "Lua Basics #5.2 - Textutils API"
 			dependencies: ["69341D3A85480AD9"]
+			hide: true
 			id: "097B439DEE968650"
 			tasks: [{
 				id: "39FB5759F1B08786"
@@ -2149,6 +2161,8 @@
 			description: [
 				"Math library has a lot of Mathematical functions that could be useful for calculating stuff. All of them you can find in the link from the quest reward, but most useful ones are:"
 				""
+				"-- Math Library Functions:"
+				""
 				"> math.ceil(number) -> Rounds up the number up."
 				""
 				"> math.floor(number) -> Rounds up number down."
@@ -2163,6 +2177,7 @@
 				"> math.min(number_1 ... number_x) -> Returns smallest number from arguments."
 			]
 			dependencies: ["69341D3A85480AD9"]
+			hide: true
 			min_width: 400
 			id: "56A9604A23CBA7FE"
 			tasks: [{
@@ -2181,7 +2196,9 @@
 			icon: "computercraft:printed_pages"
 			x: 5.5d
 			y: 4.0d
+			description: ["String Formating? Maybe?"]
 			dependencies: ["69341D3A85480AD9"]
+			hide: true
 			id: "77934DEAE0E3A2C3"
 			tasks: [{
 				id: "7212F3E3220F211B"
@@ -2195,6 +2212,7 @@
 			x: 6.5d
 			y: 4.5d
 			dependencies: ["69341D3A85480AD9"]
+			hide: true
 			id: "21375DDBA4CF79A1"
 			tasks: [{
 				id: "3862F5F8CF89CF59"
@@ -2230,12 +2248,14 @@
 			description: [
 				"Unfortunetaly FTB quests didn't add repeatable quests yet, so links from quest rewards are only one-time use."
 				""
-				"However in our \"Modded for Dummies\" book in Quests category, there are pages with links and solutions to tasks, so you can check everything out everytime you need to. More information you will find there."
+				"However in our \"Modded for Dummies\" book in Quests category, there is an entry with links and solutions to tasks, so you can check everything out every time you need to."
 			]
 			dependencies: [
 				"2D79E4D126EE389E"
 				"00000000000006E9"
+				"0ED4FB7A29E8557D"
 			]
+			hide: true
 			size: 1.25d
 			id: "739DEEE353F742E8"
 			tasks: [{
@@ -2445,6 +2465,69 @@
 				id: "1E789F68DCF6F1CA"
 				type: "checkmark"
 				title: "Got it!"
+			}]
+		}
+		{
+			title: "Woops. That shouldn't happend"
+			icon: "computercraft:printed_page"
+			x: 0.0d
+			y: -9.5d
+			subtitle: "Lua Basics: Loops note"
+			description: ["(Note about loops that don't do much)"]
+			dependencies: ["3AA1096DA1C0287E"]
+			id: "164E9CE74DF24847"
+			tasks: [{
+				id: "2A87CAE08B854F9F"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			title: "Loops Part 2"
+			icon: "thermal:wrench"
+			x: 0.5d
+			y: -8.0d
+			subtitle: "Practice: pairs(), ipairs() and loops"
+			dependencies: ["3AA1096DA1C0287E"]
+			id: "1E530D7A8F225846"
+			tasks: [{
+				id: "30A0B81DE06F43AF"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			title: "So what is exactly \"Peripheral API\"?"
+			icon: "computercraft:printed_pages"
+			x: 8.0d
+			y: 5.5d
+			subtitle: "Lua Basics #5.3 - Peripherals APIs and their usage"
+			dependencies: [
+				"1F7736775BFEA643"
+				"3E85F8A3BC1D31AC"
+			]
+			hide: true
+			min_width: 450
+			id: "0FB47A2AF9A13EA2"
+			tasks: [{
+				id: "2BA0F0C3EEF83EEC"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Is this the end?"
+			icon: "computercraft:printed_pages"
+			x: 5.0d
+			y: 6.5d
+			subtitle: "Lua Basics #6 - Final Notes and how to learn!"
+			dependencies: ["0FB47A2AF9A13EA2"]
+			hide: true
+			id: "5AE0F4942ECD17C9"
+			tasks: [{
+				id: "5D8B219E7EE96961"
+				type: "checkmark"
+				title: "Lua Basics #6 - Finish"
 			}]
 		}
 	]
