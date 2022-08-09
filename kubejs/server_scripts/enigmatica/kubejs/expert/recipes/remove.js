@@ -238,6 +238,7 @@ onEvent('recipes', (event) => {
         { output: 'bloodmagic:accelerationrune', id: 'bloodmagic:blood_rune_acceleration' },
         { output: 'bloodmagic:chargingrune', id: 'bloodmagic:blood_rune_charging' },
         { output: 'bloodmagic:teleposer', id: 'bloodmagic:teleposer' },
+        { output: 'bloodmagic:syntheticpoint', id: 'bloodmagic:synthetic_point' },
 
         { output: 'botania:terrasteel_helmet', id: 'botania:terrasteel_helmet' },
         { output: 'botania:terrasteel_chestplate', id: 'botania:terrasteel_chestplate' },

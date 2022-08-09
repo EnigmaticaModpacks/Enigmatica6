@@ -287,6 +287,34 @@ onEvent('recipes', (event) => {
             ],
             ticks: 50,
             id: `${id_prefix}outputroutingnode`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:mastercore', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'botania:corporea_spark', count: 3 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:storage_blocks/electrum', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'glassential:glass_ghostly', count: 6 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 2000 }
+                }
+            ],
+            ticks: 50,
+            id: `${id_prefix}mastercore`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:syntheticpoint', count: 2 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'undergarden:masticator_scales', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'atum:godshards/montu', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:ingots/utherium', count: 4 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
+                }
+            ],
+            ticks: 50,
+            id: `${id_prefix}syntheticpoint`
         }
     ];
 

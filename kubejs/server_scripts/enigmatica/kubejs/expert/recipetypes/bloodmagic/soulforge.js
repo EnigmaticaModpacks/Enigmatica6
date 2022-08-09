@@ -181,7 +181,8 @@ onEvent('recipes', (event) => {
         { output: 'bloodmagic:outputroutingnode', id: 'bloodmagic:soulforge/output_routing_node' },
         { output: 'bloodmagic:inputroutingnode', id: 'bloodmagic:soulforge/input_routing_node' },
         { output: 'bloodmagic:masterroutingnode', id: 'bloodmagic:soulforge/master_routing_node' },
-        { output: 'bloodmagic:demonpylon', id: 'bloodmagic:soulforge/demon_pylon' }
+        { output: 'bloodmagic:demonpylon', id: 'bloodmagic:soulforge/demon_pylon' },
+        { output: 'bloodmagic:mastercore', id: 'bloodmagic:soulforge/master_node_upgrade' }
     ];
 
     patchouli_safe_removals.forEach((recipe) => {
