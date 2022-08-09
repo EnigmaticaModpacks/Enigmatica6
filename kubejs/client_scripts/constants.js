@@ -605,7 +605,8 @@ const recipesToHide = [
             'bloodmagic:soulforge/routing_node',
             'bloodmagic:soulforge/output_routing_node',
             'bloodmagic:soulforge/input_routing_node',
-            'bloodmagic:soulforge/master_routing_node'
+            'bloodmagic:soulforge/master_routing_node',
+            'bloodmagic:soulforge/demon_pylon'
         ]
     },
     {
