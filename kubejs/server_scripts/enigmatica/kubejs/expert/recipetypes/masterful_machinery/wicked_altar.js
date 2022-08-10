@@ -289,6 +289,59 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}outputroutingnode`
         },
         {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'eidolon:ender_calx', count: 8 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/ender_pearl', count: 8 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 80 }
+                }
+            ],
+            ticks: 10,
+            id: `${id_prefix}ender_calx`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'minecraft:golden_apple', count: 4 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:apple', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
+                }
+            ],
+            ticks: 10,
+            id: `${id_prefix}golden_apple`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'minecraft:golden_carrot', count: 4 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:carrot', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
+                }
+            ],
+            ticks: 10,
+            id: `${id_prefix}golden_carrot`
+        },
+        {
+            outputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:glistering_melon_slice', count: 4 } }
+            ],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:melon_slice', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
+                }
+            ],
+            ticks: 10,
+            id: `${id_prefix}glistering_melon_slice`
+        },
+        {
             outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:mastercore', count: 1 } }],
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'botania:corporea_spark', count: 3 } },
