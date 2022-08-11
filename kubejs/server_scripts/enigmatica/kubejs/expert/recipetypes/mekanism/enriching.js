@@ -39,6 +39,11 @@ onEvent('recipes', (event) => {
             input: '4x #forge:dusts/coal_petcoke',
             output: 'immersiveengineering:dust_hop_graphite',
             id: `${id_prefix}hop_graphite_from_petcoke`
+        },
+        {
+            input:'tconstruct:grout',
+            output:'tconstruct:seared_brick',
+            id: `${id_prefix}seared_brick`
         }
     ];
     recipes.forEach((recipe) => {
