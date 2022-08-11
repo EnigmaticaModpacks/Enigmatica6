@@ -42,7 +42,7 @@ onEvent('recipes', (event) => {
         },
         {
             input:'tconstruct:grout',
-            output:'tconstruct:seared_brick',
+            output:'2x tconstruct:seared_brick',
             id: `${id_prefix}seared_brick`
         }
     ];
