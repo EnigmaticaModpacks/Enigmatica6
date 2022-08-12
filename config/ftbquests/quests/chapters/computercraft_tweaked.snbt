@@ -2051,8 +2051,24 @@
 			icon: "computercraft:printed_pages"
 			x: 5.0d
 			y: 3.0d
-			subtitle: "Lua Basics #5.2 - Colors API"
+			subtitle: "Lua Basics #5.2 - Colors Library usage"
+			description: [
+				"Colors Library is a set of variables and functions to help you work with colors! It is useful while working with IE redstone wires, or when you want to have colored text for example."
+				"For non-American people, you can use different version of the library with different writing. (Colours Library). Usage is exactly the same otherwise."
+				""
+				"Colors Library Usage:"
+				""
+				"> colors.(color) -> Returns a \"code version\" of color you wrote after a dot. There are 16 basic colors available, same as colors available in minecraft. (Check documentation on Wiki for spelling)"
+				""
+				"> packRGB(r, g, b) -> Combines a three-color RGB value into usable in ComputerCraft color."
+				"● r,g,b (Number) -> Values of intensity of each color (Red, Green, Blue) from 0 to 255."
+				""
+				"> unpackRGB(rgb) -> Returns 3 numbers with intensity of basic colors (Red, Green, Blue)."
+				"● rgb -> Color you want to seperate."
+			]
 			dependencies: ["69341D3A85480AD9"]
+			hide: true
+			min_width: 500
 			id: "0E17CEC71EA384AE"
 			tasks: [{
 				id: "1428C8E8290AB4F6"
@@ -2091,8 +2107,37 @@
 			x: 7.5d
 			y: 0.5d
 			subtitle: "Lua Basics #5.2 - Peripheral API"
+			description: [
+				"Peripheral API is used to wrap/find any peripheral on the network and get its functions to use it! In this quest you will find only functions that API has to offer, not explanation on how to use peripherals and their functions! For that, check out Lua Basics #5.3 that will be unlocked after this quest."
+				""
+				"-- Peripheral API Functions:"
+				""
+				"> peripheral.wrap(Name) -> Returns a table with peripheral's functions, that is used to interract with that specific peripheral."
+				"● Name (String) -> Name of peripheral you want to wrap. Can be also a direction relative to the computer (top, bottom, front, back, left, right)"
+				""
+				"> peripheral.find(Type, [Filter]) -> Returns a table with all peripherals found on network with specified type. Entries in that table are tables like returned from wrap() function."
+				"● Type (String) -> Type of the peripheral you want to find."
+				"● Filter (Function) [Optional] -> Requires function returning Boolean used to filter found peripherals in final result. Executes code on every of the peripherals and if function returns true, that peripheral will be in final table."
+				""
+				"> peripheral.getName(Peripheral) -> Returns a string with the name of wrapped peripheral."
+				"● Peripheral (Table) -> Requires table with peripheral like from wrap() function."
+				""
+				"> peripheral.getType(Peripheral) -> Returns one or more strings with specified peripheral types."
+				"● Peripheral (String / Table) -> The name of the peripheral to find or wrapped peripheral."
+				""
+				"----------------------------------------------------------------------------------"
+				""
+				"Peripheral name is made of modification name, name of the block and a number after underscore."
+				"> minecraft:chest_0 -- Peripheral name of Minecraft chest."
+				"Peripheral name is only used when you are using wired modems! How to use them will be later on."
+				""
+				"In the similar way you construct Type of the peripheral, but you don’t use a number this time:"
+				"> minecraft:chest -> Peripheral type of Minecraft chest."
+				"Note that peripheral can have multiple types, Minecraft chest is also an ‘inventory’ for example. More about that in Lua Basics #5.3"
+			]
 			dependencies: ["69341D3A85480AD9"]
 			hide: true
+			min_width: 500
 			id: "2A1B7703C6A4685D"
 			tasks: [{
 				id: "3E85F8A3BC1D31AC"
@@ -2112,14 +2157,41 @@
 			y: 0.5d
 			subtitle: "Lua Basics #5.2 - Term API"
 			description: [
-				"Terminal API (term) is used to interact with Terminal of your PC or your monitor!"
-				"It has a ton of functions, so I will just get few most important ones, but taking a look at the Documentation for it is definitely worth the time."
+				"Terminal API (term) is used to interact with terminal of your PC or your monitor!"
+				"It has a ton of functions, so I will just get few most important ones, but taking a look at the documentation for it is definitely worth the time. Note that every program will start on PC's terminal, so if you need to redirect from other monitor to PC terminal, save it with first functions of the API."
+				""
+				"-- Term API functions:"
+				""
+				"> term.current() -> Returns a “table” with currently used terminal. Output is used with redirect function."
 				""
 				"> term.redirect(target) -> Redirects terminal output onto other terminal, like monitor."
+				"● target (table) -> A wraped monitor or terminal."
 				""
+				"> write(text) -> Writes text on the screen, similiar to \"print\"."
+				"● text (any) -> What you want to write on the screen."
+				""
+				"> term.clear() -> Clears the entire terminal screen."
+				""
+				"> term.clearLine() -> Clears the line the cursor is at."
+				"● Cursor in ComputerCraft is like normal cursor you have on your real PC. It has x (width) and y (height) positions on the screen. Cursor is responsible for writing anything on the screen."
+				""
+				"> term.getCursorPos() -> Returns 2 numbers with \"x\" and \"y\" positions of the cursor."
+				""
+				"> term.setCursorPos(x, y) -> It's used to set cursor position on the screen."
+				"● x -> Position from left of the screen where you want cursor."
+				"● y -> Position from top of the screen where you want cursor."
+				""
+				"> term.getSize() -> Returns 2 numbers with x and y size of your terminal."
+				""
+				"> term.scroll(y) -> Moves everything on the screen up or down."
+				"● y (Number) -> Amount of lines you want to move your screen by. Negative numbers will move screen down, positive up."
+				""
+				"> setTextColor(color) -> Changes the color of the text (Works only on Advanced Computers/Monitors for newly written text after change!)"
+				"● color (color) -> Color you want your text to have."
 			]
 			dependencies: ["69341D3A85480AD9"]
-			min_width: 400
+			hide: true
+			min_width: 450
 			id: "75E0C3E753708FD4"
 			tasks: [{
 				id: "0E6AADD401F2F7B6"
@@ -2211,6 +2283,7 @@
 			icon: "computercraft:printed_pages"
 			x: 6.5d
 			y: 4.5d
+			description: ["Transformation of one variable types to others"]
 			dependencies: ["69341D3A85480AD9"]
 			hide: true
 			id: "21375DDBA4CF79A1"
@@ -2521,6 +2594,10 @@
 			x: 5.0d
 			y: 6.5d
 			subtitle: "Lua Basics #6 - Final Notes and how to learn!"
+			description: [
+				"No, this isn't the end! In programming you can't always say that is the end, as you can always learn more."
+				"[WIP]"
+			]
 			dependencies: ["0FB47A2AF9A13EA2"]
 			hide: true
 			id: "5AE0F4942ECD17C9"
