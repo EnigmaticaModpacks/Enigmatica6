@@ -67,6 +67,34 @@ onEvent('recipes', (event) => {
             ],
             ticks: 240,
             id: `${id_prefix}batch_unassembled_pcb`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'kubejs:batch_unassembled_advanced_pressure_tube', count: 1 }
+                }
+            ],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:compressed_iron_block', count: 32 } },
+                { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
+            ],
+            ticks: 240,
+            id: `${id_prefix}batch_unassembled_advanced_pressure_tube`
+        },
+        {
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: { item: 'kubejs:batch_unassembled_machine_frame', count: 1 }
+                }
+            ],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:rough_machine_frame', count: 32 } },
+                { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
+            ],
+            ticks: 240,
+            id: `${id_prefix}batch_unassembled_machine_frame`
         }
     ];
 
@@ -92,11 +120,6 @@ onEvent('recipes', (event) => {
 
     storageParts.forEach((storagePart) => {
         storagePart.sizes.forEach((partSize) => {
-            let storagePartID = `${storagePart.modID}:${partSize}_storage_part`;
-
-            if (storagePart.modID == 'extrastorage') {
-                storagePartID = `${storagePart.modID}:storagepart_${partSize}`;
-            }
             recipes.push({
                 outputs: [
                     {

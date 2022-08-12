@@ -77,19 +77,22 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        fallback_id(event.custom({
-            type: 'astralsorcery:infuser',
-            fluidInput: recipe.fluid,
-            input: recipe.input,
-            output: {
-                item: recipe.output,
-                count: recipe.count
-            },
-            consumptionChance: recipe.consumptionChance,
-            duration: recipe.duration,
-            consumeMultipleFluids: false,
-            acceptChaliceInput: true,
-            copyNBTToOutputs: false
-        }), id_prefix);
+        fallback_id(
+            event.custom({
+                type: 'astralsorcery:infuser',
+                fluidInput: recipe.fluid,
+                input: recipe.input,
+                output: {
+                    item: recipe.output,
+                    count: recipe.count
+                },
+                consumptionChance: recipe.consumptionChance,
+                duration: recipe.duration,
+                consumeMultipleFluids: false,
+                acceptChaliceInput: true,
+                copyNBTToOutputs: false
+            }),
+            id_prefix
+        );
     });
 });

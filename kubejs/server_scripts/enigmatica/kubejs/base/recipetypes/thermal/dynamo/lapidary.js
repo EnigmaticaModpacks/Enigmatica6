@@ -22,6 +22,9 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.thermal.lapidary_fuel(recipe.input).energy(recipe.energy * multiplier).id(`${id_prefix}${recipe.input.replace('#forge:gems/', '')}`);
+        event.recipes.thermal
+            .lapidary_fuel(recipe.input)
+            .energy(recipe.energy * multiplier)
+            .id(`${id_prefix}${recipe.input.replace('#forge:gems/', '')}`);
     });
 });

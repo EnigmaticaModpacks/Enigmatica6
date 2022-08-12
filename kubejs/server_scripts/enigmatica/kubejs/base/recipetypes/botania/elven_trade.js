@@ -3,8 +3,8 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            inputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee"}).weakNBT().toJson()],
-            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:elven_bee"}).toJson(),
+            inputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:mana_bee' }).weakNBT().toJson()],
+            output: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:elven_bee' }).toJson(),
             id: `${id_prefix}elven_bee_jar`
         },
         {
@@ -27,10 +27,12 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.custom({
-            type: 'botania:elven_trade',
-            ingredients: recipe.inputs,
-            output: recipe.output
-        }).id(recipe.id);
+        event
+            .custom({
+                type: 'botania:elven_trade',
+                ingredients: recipe.inputs,
+                output: recipe.output
+            })
+            .id(recipe.id);
     });
 });

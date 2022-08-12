@@ -61,8 +61,6 @@ onEvent('jei.information', (event) => {
         /powah:energy_cable_/,
         'eidolon:crucible',
         'eidolon:wooden_brewing_stand',
-        'tanknull:dock',
-        'dankstorage:dock',
         'engineersdecor:factory_placer'
     ];
     disabledItems.forEach((item) => {

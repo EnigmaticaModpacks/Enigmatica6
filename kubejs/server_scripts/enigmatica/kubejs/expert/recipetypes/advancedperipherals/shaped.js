@@ -56,7 +56,10 @@ onEvent('recipes', (event) => {
             pattern: ['B B', ' A ', 'B B'],
             key: {
                 A: 'advancedperipherals:weak_automata_core',
-                B: Item.of('pneumaticcraft:spawner_core','{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}')
+                B: Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}'
+                )
             },
             id: 'advancedperipherals:end_automata_core'
         },
@@ -65,10 +68,16 @@ onEvent('recipes', (event) => {
             pattern: ['B C', ' A ', 'D E'],
             key: {
                 A: 'advancedperipherals:weak_automata_core',
-                B: Item.of('pneumaticcraft:spawner_core','{"pneumaticcraft:SpawnerCoreStats":{"minecraft:cow":100}}'),
-                C: Item.of('pneumaticcraft:spawner_core','{"pneumaticcraft:SpawnerCoreStats":{"minecraft:sheep":100}}'),
-                D: Item.of('pneumaticcraft:spawner_core','{"pneumaticcraft:SpawnerCoreStats":{"minecraft:pig":100}}'),
-                E: Item.of('pneumaticcraft:spawner_core','{"pneumaticcraft:SpawnerCoreStats":{"minecraft:chicken":100}}'),
+                B: Item.of('pneumaticcraft:spawner_core', '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:cow":100}}'),
+                C: Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:sheep":100}}'
+                ),
+                D: Item.of('pneumaticcraft:spawner_core', '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:pig":100}}'),
+                E: Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:chicken":100}}'
+                )
             },
             id: 'advancedperipherals:husbandry_automata_core'
         },
@@ -108,7 +117,6 @@ onEvent('recipes', (event) => {
             },
             id: 'advancedperipherals:overpowered_end_automata_core'
         }
-
     ];
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);

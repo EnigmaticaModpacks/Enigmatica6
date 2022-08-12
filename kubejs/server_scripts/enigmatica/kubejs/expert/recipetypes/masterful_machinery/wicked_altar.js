@@ -287,6 +287,87 @@ onEvent('recipes', (event) => {
             ],
             ticks: 50,
             id: `${id_prefix}outputroutingnode`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'eidolon:ender_calx', count: 8 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/ender_pearl', count: 8 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 80 }
+                }
+            ],
+            ticks: 10,
+            id: `${id_prefix}ender_calx`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'minecraft:golden_apple', count: 4 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:apple', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
+                }
+            ],
+            ticks: 10,
+            id: `${id_prefix}golden_apple`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'minecraft:golden_carrot', count: 4 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:carrot', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
+                }
+            ],
+            ticks: 10,
+            id: `${id_prefix}golden_carrot`
+        },
+        {
+            outputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:glistering_melon_slice', count: 4 } }
+            ],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'minecraft:melon_slice', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:dusts/gold', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
+                }
+            ],
+            ticks: 10,
+            id: `${id_prefix}glistering_melon_slice`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:mastercore', count: 1 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'botania:corporea_spark', count: 3 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:storage_blocks/electrum', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'glassential:glass_ghostly', count: 6 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 2000 }
+                }
+            ],
+            ticks: 50,
+            id: `${id_prefix}mastercore`
+        },
+        {
+            outputs: [{ type: 'masterfulmachinery:items', data: { item: 'bloodmagic:syntheticpoint', count: 2 } }],
+            inputs: [
+                { type: 'masterfulmachinery:items', data: { item: 'undergarden:masticator_scales', count: 4 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'atum:godshards/montu', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:ingots/utherium', count: 4 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
+                }
+            ],
+            ticks: 50,
+            id: `${id_prefix}syntheticpoint`
         }
     ];
 

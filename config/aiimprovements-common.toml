@@ -11,12 +11,33 @@
 
 	#Entity Mob
 	[entity.mob]
-		#Remove the look at goal (player or attack target) AI task. This will cause AIs to not face targets or walking directions.
-		remove_look_goal = false
-		#Remove the look at random position AI task. This will cause AIs to feel a little lifeless as they do not animate head movement while idle.
-		remove_look_random = false
-		#Replaces the default look controller with a version featuring cached tan math improving performance. Only works on vanilla style mobs, if a mod overrides the look controller it will skip.
-		replace_look_controller = true
+
+		#Remove Look Goal
+		[entity.mob.remove_look_goal]
+			#Remove the look at goal (player or attack target) AI task. This will cause AIs to not face targets or walking directions.
+			remove_look_goal = false
+			#Set this to true to apply this setting to all mobs on the filter list. Set this to false to NOT apply this to mobs on the filter list.
+			is_allowlist = false
+			#The list of mobs that is affected by this setting according to is_allowlist
+			filter_list = []
+
+		#Remove Look Random
+		[entity.mob.remove_look_random]
+			#Remove the look at random position AI task. This will cause AIs to feel a little lifeless as they do not animate head movement while idle.
+			remove_look_random = false
+			#Set this to true to apply this setting to all mobs on the filter list. Set this to false to NOT apply this to mobs on the filter list.
+			is_allowlist = false
+			#The list of mobs that is affected by this setting according to is_allowlist
+			filter_list = []
+
+		#Replace Look Controller
+		[entity.mob.replace_look_controller]
+			#Replaces the default look controller with a version featuring cached tan math improving performance. Only works on vanilla style mobs, if a mod overrides the look controller it will skip.
+			replace_look_controller = true
+			#Set this to true to apply this setting to all mobs on the filter list. Set this to false to NOT apply this to mobs on the filter list.
+			is_allowlist = false
+			#The list of mobs that is affected by this setting according to is_allowlist
+			filter_list = []
 
 	#Entity Fish
 	[entity.fish]

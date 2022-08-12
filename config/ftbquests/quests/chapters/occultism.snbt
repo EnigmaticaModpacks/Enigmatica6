@@ -1296,21 +1296,14 @@
 			]
 			dependencies: ["0000000000000D9E"]
 			id: "0000000000000DDC"
-			tasks: [
-				{
-					id: "0000000000000E14"
-					type: "advancement"
-					title: "Summon a Djinni to Clear the Skies!"
-					icon: "minecraft:sunflower"
-					advancement: "occultism:occultism/summon_djinni_clear_weather"
-					criterion: ""
-				}
-				{
-					id: "0000000000000E15"
-					type: "item"
-					item: "occultism:book_of_binding_djinni"
-				}
-			]
+			tasks: [{
+				id: "0000000000000E14"
+				type: "advancement"
+				title: "Summon a Djinni to Clear the Skies!"
+				icon: "minecraft:sunflower"
+				advancement: "occultism:occultism/summon_djinni_clear_weather"
+				criterion: ""
+			}]
 			rewards: [
 				{
 					id: "0000000000000E3D"
@@ -1354,21 +1347,14 @@
 			]
 			dependencies: ["0000000000000D9E"]
 			id: "0000000000000DDE"
-			tasks: [
-				{
-					id: "0000000000000E16"
-					type: "advancement"
-					title: "Summon Djinni to Make it Nighttime"
-					icon: "minecraft:clock"
-					advancement: "occultism:occultism/summon_djinni_night_time"
-					criterion: ""
-				}
-				{
-					id: "0000000000000E17"
-					type: "item"
-					item: "occultism:book_of_binding_djinni"
-				}
-			]
+			tasks: [{
+				id: "0000000000000E16"
+				type: "advancement"
+				title: "Summon Djinni to Make it Nighttime"
+				icon: "minecraft:clock"
+				advancement: "occultism:occultism/summon_djinni_night_time"
+				criterion: ""
+			}]
 			rewards: [
 				{
 					id: "0000000000000E43"

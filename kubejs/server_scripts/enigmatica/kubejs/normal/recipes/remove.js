@@ -3,7 +3,13 @@ onEvent('recipes', (event) => {
         return;
     }
 
-    var outputRemovals = ['torchmaster:feral_flare_lantern', 'torchmaster:megatorch', 'quark:white_candle', 'occultism:candle_white', 'eidolon:candle'];
+    var outputRemovals = [
+        'torchmaster:feral_flare_lantern',
+        'torchmaster:megatorch',
+        'quark:white_candle',
+        'occultism:candle_white',
+        'eidolon:candle'
+    ];
 
     var idRemovals = [];
 

@@ -129,6 +129,15 @@ onEvent('recipes', (event) => {
         event.recipes.create
             .milling([recipe.output, recipe.secondary_output], recipe.input)
             .id(`${id_prefix}/create_milling/${recipe.id_suffix}`);
+
+        // ars_nouveau
+        event
+            .custom({
+                type: 'ars_nouveau:crush',
+                input: Ingredient.of(recipe.input).toJson(),
+                output: [recipe.output.withChance(1.0), recipe.secondary_output]
+            })
+            .id(`${id_prefix}/ars_nouveau_crushing/${recipe.id_suffix}`);
     };
 
     recipes.forEach((recipe) => {

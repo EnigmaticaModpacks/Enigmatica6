@@ -3,6 +3,10 @@
 #Use the registry name of the entity. Vanilla entities do not require the modid.
 [Blacklist]
 	wellOfSuffering = ["ars_nouveau:whelp", "ars_nouveau:familiar_bookwyrm", "ars_nouveau:carbuncle", "ars_nouveau:familiar_carbuncle", "ars_nouveau:drygmy", "ars_nouveau:familiar_drygmy", "ars_nouveau:dummy", "ars_nouveau:familiar_jabberwog", "ars_nouveau:sylph", "ars_nouveau:familiar_sylph", "ars_nouveau:wixie", "ars_nouveau:familiar_wixie", "ars_nouveau:summon_horse", "ars_nouveau:summon_wolf", "ars_nouveau:ally_vex", "pneumaticcraft:drone", "pneumaticcraft:logistics_drone", "pneumaticcraft:harvesting_drone", "pneumaticcraft:guard_drone", "pneumaticcraft:collector_drone", "farmingforblockheads:merchant"]
+	#Stops the listed blocks from being teleported using the Teleposer and similar means.
+	#Use the registry name of the block. Vanilla blocks do not require the modid.
+	#Pack makers or mod makers can also add blocks to the blacklist by adding them to the Tag "bloodmagic:teleposer_blacklist".
+	teleposerBlacklist = []
 
 #Amount of LP the Sacrificial Dagger should provide for each damage dealt.
 ["Config Values"]

@@ -113,7 +113,7 @@ onEvent('recipes', (event) => {
         }
 
         const re = event.custom(constructed_recipe);
-        
+
         if (recipe.id) {
             re.id(recipe.id);
         } else {

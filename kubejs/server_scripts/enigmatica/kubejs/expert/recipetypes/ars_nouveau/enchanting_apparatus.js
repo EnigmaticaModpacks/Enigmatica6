@@ -2535,6 +2535,22 @@ onEvent('recipes', (event) => {
             sourceCost: 300,
             output: 'integrateddynamics:logic_director',
             id: `${id_prefix}logic_director`
+        },
+        {
+            inputs: [
+                '#forge:ingots/iesnium',
+                '#bloodmagic:crystals/demon',
+                '#forge:ingots/iesnium',
+                '#bloodmagic:dusts/corrupted',
+                '#bloodmagic:dusts/corrupted',
+                '#forge:ingots/iesnium',
+                '#bloodmagic:crystals/demon',
+                '#forge:ingots/iesnium'
+            ],
+            reagent: 'botania:gaia_pylon',
+            sourceCost: 2000,
+            output: 'bloodmagic:demonpylon',
+            id: `${id_prefix}demonpylon`
         }
     ];
 

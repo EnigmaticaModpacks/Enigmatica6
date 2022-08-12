@@ -15,16 +15,19 @@ onEvent('recipes', (event) => {
     data.recipes.forEach((recipe) => {
         Ingredient.of(recipe.inputTag).stacks.forEach((input) => {
             if (!input.id.includes('chunk')) {
-                fallback_id(event.custom({
-                    type: 'astralsorcery:block_transmutation',
-                    input: {
-                        block: input.id
-                    },
-                    output: {
-                        block: recipe.output
-                    },
-                    starlight: recipe.starlight
-                }), id_prefix);
+                fallback_id(
+                    event.custom({
+                        type: 'astralsorcery:block_transmutation',
+                        input: {
+                            block: input.id
+                        },
+                        output: {
+                            block: recipe.output
+                        },
+                        starlight: recipe.starlight
+                    }),
+                    id_prefix
+                );
             }
         });
     });
