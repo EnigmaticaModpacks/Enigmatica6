@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
         {
             block: 'powah:blazing_crystal_block',
             temperature: 1700,
-            transformCold: { block: 'botania:blaze_block' },
+            transformCold: { block: 'minecraft:lava' },
             heatCapacity: 20000,
             id: `${id_prefix}blazing_crystal_block`
         },

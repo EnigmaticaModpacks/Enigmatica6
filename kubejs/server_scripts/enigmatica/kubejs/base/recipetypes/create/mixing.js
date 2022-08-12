@@ -79,6 +79,16 @@ onEvent('recipes', (event) => {
                 inputs: ['byg:ether_stone', 'minecraft:bone_meal', 'byg:vermilion_sculk_growth'],
                 output: Item.of('byg:vermilion_sculk'),
                 id: `${id_prefix}vermilion_sculk`
+            },
+            {
+                inputs: ['#forge:dyes/red', '#forge:dyes/green'],
+                output: Item.of('minecraft:brown_dye', 2),
+                id: `${id_prefix}brown_dye_from_red_green`
+            },
+            {
+                inputs: ['#forge:dyes/blue', '#forge:dyes/yellow'],
+                output: Item.of('minecraft:green_dye', 2),
+                id: `${id_prefix}green_dye_from_blue_yellow`
             }
         ],
         recipes_heated: [

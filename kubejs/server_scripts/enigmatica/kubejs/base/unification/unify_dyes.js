@@ -5,6 +5,7 @@ onEvent('recipes', (event) => {
     dyeSources.forEach((recipe) => {
         botania_dye_pestle_mortar(event, recipe, id_prefix);
         create_dye_milling(event, recipe, id_prefix);
+        ars_nouveau_dye_crushing(event, recipe, id_prefix);
         immersiveengineering_dye_crusher(event, recipe, id_prefix);
         //integrateddynamics_dye_squeezing(event, recipe, id_prefix);
         mekanism_dye_enriching(event, recipe, id_prefix);
@@ -59,6 +60,28 @@ function create_dye_milling(event, recipe, id_prefix) {
         input = recipe.input;
 
     fallback_id(event.recipes.create.milling(outputs, input), `${id_prefix}${arguments.callee.name}/`);
+}
+
+function ars_nouveau_dye_crushing(event, recipe, id_prefix) {
+    var baseCount = 2,
+        multiplier = 1;
+    if (recipe.type == 'large') {
+        multiplier = 2;
+    }
+
+    var count = baseCount * multiplier;
+
+    fallback_id(
+        event.custom({
+            type: 'ars_nouveau:crush',
+            input: Ingredient.of(recipe.input).toJson(),
+            output: [
+                Item.of(recipe.primary).withCount(count).withChance(1.0),
+                Item.of(recipe.secondary).withCount(count).withChance(0.25)
+            ]
+        }),
+        `${id_prefix}${arguments.callee.name}/`
+    );
 }
 
 function immersiveengineering_dye_crusher(event, recipe, id_prefix) {

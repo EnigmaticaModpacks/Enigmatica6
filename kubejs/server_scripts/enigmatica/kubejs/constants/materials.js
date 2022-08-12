@@ -245,6 +245,11 @@ const gemProcessingProperties = {
             secondaryCount: 6,
             secondaryChance: 0.25
         },
+        ars_nouveau: {
+            primaryCount: 8,
+            secondaryCount: 6,
+            secondaryChance: 0.25
+        },
         immersiveengineering: {
             count: 6
         },
@@ -272,6 +277,11 @@ const gemProcessingProperties = {
             processingTime: 300
         },
         thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5
+        },
+        ars_nouveau: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5
@@ -307,6 +317,11 @@ const gemProcessingProperties = {
             secondaryCount: 2,
             secondaryChance: 0.25
         },
+        ars_nouveau: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.25
+        },
         immersiveengineering: {
             count: 2
         },
@@ -333,6 +348,11 @@ const gemProcessingProperties = {
             processingTime: 500
         },
         thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.25
+        },
+        ars_nouveau: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25
@@ -364,6 +384,11 @@ const gemProcessingProperties = {
             processingTime: 300
         },
         thermal: {
+            primaryCount: 8,
+            secondaryCount: 4,
+            secondaryChance: 0.5
+        },
+        ars_nouveau: {
             primaryCount: 8,
             secondaryCount: 4,
             secondaryChance: 0.5
@@ -400,6 +425,11 @@ const gemProcessingProperties = {
             secondaryCount: 4,
             secondaryChance: 0.5
         },
+        ars_nouveau: {
+            primaryCount: 2,
+            secondaryCount: 4,
+            secondaryChance: 0.5
+        },
         immersiveengineering: {
             count: 3,
             secondaryChance: 0.25
@@ -427,6 +457,11 @@ const gemProcessingProperties = {
             processingTime: 300
         },
         thermal: {
+            primaryCount: 6,
+            secondaryCount: 2,
+            secondaryChance: 0.25
+        },
+        ars_nouveau: {
             primaryCount: 6,
             secondaryCount: 2,
             secondaryChance: 0.25
@@ -461,6 +496,11 @@ const gemProcessingProperties = {
             secondaryCount: 4,
             secondaryChance: 0.25
         },
+        ars_nouveau: {
+            primaryCount: 8,
+            secondaryCount: 4,
+            secondaryChance: 0.25
+        },
         immersiveengineering: {
             count: 12
         },
@@ -487,6 +527,11 @@ const gemProcessingProperties = {
             processingTime: 300
         },
         thermal: {
+            primaryCount: 6,
+            secondaryCount: 3,
+            secondaryChance: 0.25
+        },
+        ars_nouveau: {
             primaryCount: 6,
             secondaryCount: 3,
             secondaryChance: 0.25
@@ -521,6 +566,11 @@ const gemProcessingProperties = {
             secondaryCount: 3,
             secondaryChance: 0.25
         },
+        ars_nouveau: {
+            primaryCount: 6,
+            secondaryCount: 3,
+            secondaryChance: 0.25
+        },
         immersiveengineering: {
             count: 8
         },
@@ -547,6 +597,11 @@ const gemProcessingProperties = {
             processingTime: 300
         },
         thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.25
+        },
+        ars_nouveau: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25
@@ -581,6 +636,11 @@ const gemProcessingProperties = {
             secondaryCount: 2,
             secondaryChance: 0.25
         },
+        ars_nouveau: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.25
+        },
         immersiveengineering: {
             count: 3
         },
@@ -607,6 +667,11 @@ const gemProcessingProperties = {
             processingTime: 300
         },
         thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.25
+        },
+        ars_nouveau: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25
@@ -641,6 +706,11 @@ const gemProcessingProperties = {
             secondaryCount: 2,
             secondaryChance: 0.5
         },
+        ars_nouveau: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5
+        },
         immersiveengineering: {
             count: 4
         },
@@ -671,6 +741,11 @@ const gemProcessingProperties = {
             secondaryCount: 2,
             secondaryChance: 0.5
         },
+        ars_nouveau: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5
+        },
         immersiveengineering: {
             count: 4
         },
@@ -697,6 +772,11 @@ const gemProcessingProperties = {
             processingTime: 300
         },
         thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5
+        },
+        ars_nouveau: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5

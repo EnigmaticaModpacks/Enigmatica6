@@ -459,7 +459,10 @@
 			x: -4.0d
 			y: 1.0d
 			description: ["Place down the tablet and let it burn. Toss the remaining tributes atop the pyre and activate the ritual when ready. "]
-			dependencies: ["638E2FA97CF961F7"]
+			dependencies: [
+				"638E2FA97CF961F7"
+				"6722BAF4546DB225"
+			]
 			id: "54BD6A448EC80453"
 			tasks: [{
 				id: "54160558748B2EC1"
@@ -541,10 +544,7 @@
 				""
 				"Prepare a tablet to summon it. And prepare yourself for the fight to come. "
 			]
-			dependencies: [
-				"54BD6A448EC80453"
-				"37E5C854B3C997E6"
-			]
+			dependencies: ["37E5C854B3C997E6"]
 			id: "6722BAF4546DB225"
 			tasks: [{
 				id: "011B34FD3685CBB4"

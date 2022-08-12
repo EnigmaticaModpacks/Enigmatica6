@@ -6801,7 +6801,7 @@
         ",": { "block": "botania:livingwood_planks" },
         "-": { "block": "quark:turf" },
         ".": { "block": "botania:vivid_grass" },
-        "/": { "block": "minecraft:grass_path" },
+        "/": { "tag": "rsgauges:soils" },
         "0": { "block": "minecraft:podzol" },
         "1": { "block": "botania:dreamwood_planks" },
         "2": { "block": "botania:mossy_livingrock_bricks" },
@@ -6822,7 +6822,7 @@
         "A": { "block": "botania:livingrock_bricks_stairs" },
         "B": { "block": "minecraft:lapis_block" },
         "D": { "block": "botania:cracked_livingrock_bricks" },
-        "E": { "block": "minecraft:dark_oak_wood" },
+        "E": { "tag": "enigmatica:tree_of_life/dark_oak_wood" },
         "F": { "block": "masterfulmachinery:enigmatic_tree_of_life_fluid_port_fluids_input" },
         "G": { "block": "botania:livingrock_bricks_wall" },
         "H": { "block": "botania:pattern_framed_dreamwood" },
@@ -6835,7 +6835,7 @@
         "O": { "block": "quark:waxed_green_crystal" },
         "P": { "block": "chipped:dried_kelp_block_12" },
         "Q": { "block": "botania:bifrost_perm" },
-        "R": { "block": "minecraft:oak_leaves" },
+        "R": { "tag": "enigmatica:tree_of_life/oak" },
         "S": { "block": "environmental:white_hanging_wisteria_leaves" },
         "T": { "block": "masterfulmachinery:enigmatic_tree_of_life_item_port_items_input" },
         "U": { "block": "masterfulmachinery:enigmatic_tree_of_life_item_port_items_output" },
@@ -6877,6 +6877,6 @@
         "y": { "block": "dustrial_decor:large_soul_lantern" },
         "z": { "block": "chipped:special_soul_lantern_1" },
         "{": { "block": "decorative_blocks:chain" },
-        "|": { "block": "byg:flowering_palo_verde_leaves" }
+        "|": { "tag": "enigmatica:tree_of_life/palo_verde" }
     }
 }
