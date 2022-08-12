@@ -560,6 +560,72 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}box_of_thankful_dinners`
+        },
+        {
+            input: 'mekanism:cardboard_box',
+            outputs: ['kubejs:stim_pack'],
+            transitionalItem: 'kubejs:partial_stim_pack',
+            loops: 30,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: [
+                        'kubejs:partial_stim_pack',
+                        Item.of('botania:incense_stick', '{brewKey:"botania:emptiness"}')
+                    ],
+                    output: 'kubejs:partial_stim_pack'
+                },
+                {
+                    type: 'deploying',
+                    input: [
+                        'kubejs:partial_stim_pack',
+                        [
+                            Item.of(
+                                'ars_nouveau:potion_flask',
+                                '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:9600,Id:1b,Amplifier:0b}],Potion:"minecraft:strong_regeneration"}'
+                            ),
+                            Item.of(
+                                'ars_nouveau:potion_flask',
+                                '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:450,Id:10b,Amplifier:1b}],Potion:"minecraft:long_swiftness"}'
+                            )
+                        ]
+                    ],
+                    output: 'kubejs:partial_stim_pack'
+                },
+                {
+                    type: 'deploying',
+                    input: [
+                        'kubejs:partial_stim_pack',
+                        [
+                            Item.of(
+                                'ars_nouveau:potion_flask',
+                                '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:1800,Id:11b,Amplifier:1b}],Potion:"apotheosis:long_absorption"}'
+                            ),
+                            Item.of(
+                                'ars_nouveau:potion_flask',
+                                '{count:8,CustomPotionEffects:[{Ambient:0b,CurativeItems:[{id:"minecraft:milk_bucket",Count:1b}],ShowIcon:1b,ShowParticles:1b,Duration:3600,Id:22b,Amplifier:1b}],Potion:"apotheosis:strong_resistance"}'
+                            )
+                        ]
+                    ],
+                    output: 'kubejs:partial_stim_pack'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_stim_pack', 'atum:linen_bandage'],
+                    output: 'kubejs:partial_stim_pack'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_stim_pack', 'atum:linen_bandage'],
+                    output: 'kubejs:partial_stim_pack'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:partial_stim_pack', 'atum:linen_bandage'],
+                    output: 'kubejs:partial_stim_pack'
+                }
+            ],
+            id: `${id_prefix}stim_pack`
         }
     ];
 

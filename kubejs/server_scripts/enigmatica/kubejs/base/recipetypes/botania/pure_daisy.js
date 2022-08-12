@@ -12,15 +12,17 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        event.custom({
-            type: 'botania:pure_daisy',
-            input: {
-                type: 'block',
-                block: recipe.input
-            },
-            output: {
-                name: recipe.output
-            }
-        }).id(recipe.id);
+        event
+            .custom({
+                type: 'botania:pure_daisy',
+                input: {
+                    type: 'block',
+                    block: recipe.input
+                },
+                output: {
+                    name: recipe.output
+                }
+            })
+            .id(recipe.id);
     });
 });

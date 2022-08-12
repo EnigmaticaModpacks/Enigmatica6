@@ -19,13 +19,15 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        event.custom({
-            type: 'naturesaura:altar',
-            input: recipe.input,
-            output: recipe.output,
-            aura_type: recipe.aura_type,
-            aura: recipe.aura,
-            time: recipe.time
-        }).id(recipe.id);
+        event
+            .custom({
+                type: 'naturesaura:altar',
+                input: recipe.input,
+                output: recipe.output,
+                aura_type: recipe.aura_type,
+                aura: recipe.aura,
+                time: recipe.time
+            })
+            .id(recipe.id);
     });
 });

@@ -15,9 +15,8 @@ onEvent('server.datapack.high_priority', (event) => {
         event.getServer().players.forEach((player) => {
             setMode(player);
         });
-        event.getServer().sendDataToAll('reload',{});
-        if(event.getServer().isDedicated())
-            global.onReload();
+        event.getServer().sendDataToAll('reload', {});
+        if (event.getServer().isDedicated()) global.onReload();
     }
 });
 

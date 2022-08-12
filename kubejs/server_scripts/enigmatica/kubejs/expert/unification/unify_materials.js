@@ -282,8 +282,8 @@ onEvent('recipes', (event) => {
                 output: Ingredient.of(levigated_material).toJson(),
                 catalyst: Ingredient.of('naturesaura:crushing_catalyst').toJson(),
                 aura_type: 'naturesaura:overworld',
-                aura: 1500,
-                time: 10
+                aura: 300,
+                time: 1
             })
             .id(`enigmatica:expert/magical_ore_processing/aura/${material}`);
 

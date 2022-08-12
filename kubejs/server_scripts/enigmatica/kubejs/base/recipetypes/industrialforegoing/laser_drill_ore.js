@@ -725,8 +725,8 @@ onEvent('recipes', (event) => {
                     weight: 36
                 },
                 {
-                    whitelist: {},
-                    blacklist: endBiomes,
+                    whitelist: endBiomes,
+                    blacklist: {},
                     depth_min: 0,
                     depth_max: 255,
                     weight: 1
@@ -746,8 +746,8 @@ onEvent('recipes', (event) => {
                     weight: 50
                 },
                 {
-                    whitelist: {},
-                    blacklist: endBiomes,
+                    whitelist: endBiomes,
+                    blacklist: {},
                     depth_min: 0,
                     depth_max: 255,
                     weight: 1
@@ -768,8 +768,8 @@ onEvent('recipes', (event) => {
                 },
 
                 {
-                    whitelist: {},
-                    blacklist: endBiomes,
+                    whitelist: endBiomes,
+                    blacklist: {},
                     depth_min: 0,
                     depth_max: 255,
                     weight: 1

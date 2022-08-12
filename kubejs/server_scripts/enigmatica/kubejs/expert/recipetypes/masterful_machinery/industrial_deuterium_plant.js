@@ -24,15 +24,15 @@ onEvent('recipes', (event) => {
                     data: { fluid: 'emendatusenigmatica:molten_sulfur', amount: 10 }
                 },
                 {
-                    type: "masterfulmachinery:pncr_pressure",
+                    type: 'masterfulmachinery:pncr_pressure',
                     perTick: true,
-                    data:{
+                    data: {
                         air: 100
                     }
                 },
                 {
-                    type: "masterfulmachinery:create_rotation",
-                    data:{
+                    type: 'masterfulmachinery:create_rotation',
+                    data: {
                         speed: 256
                     }
                 }

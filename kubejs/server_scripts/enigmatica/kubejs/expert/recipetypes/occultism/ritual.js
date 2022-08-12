@@ -85,7 +85,7 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 120,
+            duration: 60,
             ritual_dummy: 'occultism:ritual_dummy/craft_dimensional_matrix',
             ingredients: [
                 '#quark:crystal_clusters',

@@ -588,6 +588,34 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: [{ item: 'kubejs:diy_furnace_engine_kit', count: 1 }],
             id: `${id_prefix}diy_furnace_engine_kit`
+        },
+        {
+            inputs: [
+                { item: 'immersiveengineering:fluid_pipe', count: 3 },
+                { item: 'immersiveengineering:light_engineering', count: 4 },
+                { item: 'immersiveengineering:rs_engineering', count: 1 },
+                { item: 'immersiveengineering:sheetmetal_iron', count: 4 },
+                { item: 'immersiveengineering:steel_fence', count: 1 },
+                { item: 'immersiveengineering:steel_scaffolding_standard', count: 5 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_mixer', count: 1 }],
+            id: `${id_prefix}diy_mixer`
+        },
+        {
+            inputs: [
+                { item: 'immersiveengineering:conveyor_basic', count: 3 },
+                { item: 'immersiveengineering:fluid_pump', count: 2 },
+                { item: 'immersiveengineering:light_engineering', count: 2 },
+                { item: 'immersiveengineering:rs_engineering', count: 1 },
+                { item: 'immersiveengineering:sheetmetal_steel', count: 2 },
+                { item: 'immersiveengineering:steel_scaffolding_standard', count: 3 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_bottling_machine', count: 1 }],
+            id: `${id_prefix}diy_bottling_machine`
         }
     ];
 

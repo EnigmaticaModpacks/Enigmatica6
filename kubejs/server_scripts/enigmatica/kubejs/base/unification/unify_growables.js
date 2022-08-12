@@ -227,10 +227,13 @@ function crops_thermal_insolator(event, type, crop) {
         outputs.push(Item.of(plantSecondary).chance(secondaryChance));
     }
 
-    fallback_id(event.recipes.thermal
-        .insolator(outputs, input)
-        .water(baseWater * waterModifier)
-        .energy(baseEnergy * energyModifier), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
+    fallback_id(
+        event.recipes.thermal
+            .insolator(outputs, input)
+            .water(baseWater * waterModifier)
+            .energy(baseEnergy * energyModifier),
+        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+    );
 }
 
 function crops_immersiveengineering_cloche(event, type, crop) {
@@ -409,12 +412,15 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         //add any secondary
         outputs.push(Item.of(plantSecondary, secondaryCount));
     }
-    fallback_id(event.recipes.immersiveengineering
-        .cloche(outputs, input, substrate, {
-            type: renderType,
-            block: renderBlock
-        })
-        .time(growthTicks * growthModifier), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
+    fallback_id(
+        event.recipes.immersiveengineering
+            .cloche(outputs, input, substrate, {
+                type: renderType,
+                block: renderBlock
+            })
+            .time(growthTicks * growthModifier),
+        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+    );
 }
 
 function trees_botany_pots(event, type, tree) {
@@ -532,10 +538,13 @@ function trees_thermal_insolator(event, tree) {
         outputs.push(Item.of(tree.extraDecoration).chance(extraDecorationRate));
     }
 
-    fallback_id(event.recipes.thermal
-        .insolator(outputs, input)
-        .water(baseWater * waterModifier)
-        .energy(baseEnergy * energyModifier), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
+    fallback_id(
+        event.recipes.thermal
+            .insolator(outputs, input)
+            .water(baseWater * waterModifier)
+            .energy(baseEnergy * energyModifier),
+        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+    );
 }
 
 function trees_immersiveengineering_cloche(event, tree) {
@@ -612,11 +621,14 @@ function trees_immersiveengineering_cloche(event, tree) {
         //add any extra decorations
         outputs.push(Item.of(tree.extraDecoration, extraDecorationRate));
     }
-    
-    fallback_id(event.recipes.immersiveengineering
-        .cloche(outputs, input, substrate, {
-            type: renderType,
-            block: renderBlock
-        })
-        .time(baseGrowthTicks * growthModifier), `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`);
+
+    fallback_id(
+        event.recipes.immersiveengineering
+            .cloche(outputs, input, substrate, {
+                type: renderType,
+                block: renderBlock
+            })
+            .time(baseGrowthTicks * growthModifier),
+        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+    );
 }

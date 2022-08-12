@@ -19,12 +19,10 @@ const sharedDies = [
     }
 ];
 
-const thermalDies = [
-    'coin'
-];
+const thermalDies = ['coin'];
 
 const immersiveEngineeringDies = [
-    'plate',
+    'plate', //
     'rod',
     'wire',
     'bullet_casing'
