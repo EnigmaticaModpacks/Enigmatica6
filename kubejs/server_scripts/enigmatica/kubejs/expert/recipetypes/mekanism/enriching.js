@@ -41,8 +41,8 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}hop_graphite_from_petcoke`
         },
         {
-            input:'tconstruct:grout',
-            output:'2x tconstruct:seared_brick',
+            input: 'tconstruct:grout',
+            output: '2x tconstruct:seared_brick',
             id: `${id_prefix}seared_brick`
         }
     ];
