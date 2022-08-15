@@ -44,6 +44,12 @@ onEvent('recipes', (event) => {
             replace: 'gold',
             replaceWith: 'silver',
             items: ['botania:spark']
+        },
+        {
+            type: 'ingots',
+            replace: 'gold',
+            replaceWith: 'brass',
+            items: ['ars_nouveau:basic_spell_turret']
         }
     ];
 

@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/pneumaticcraft/';
+    const id_prefix = 'enigmatica:expert/pneumaticcraft/shaped';
 
     /*
         ,
@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:air_canister',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'pneumaticcraft:compressed_iron_helmet',
+                C: Item.of('pneumaticcraft:compressed_iron_helmet', '{Damage:0}').weakNBT(),
                 D: 'mekanism:cardboard_box'
             },
             id: 'pneumaticcraft:pneumatic_helmet'
@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:air_canister',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'pneumaticcraft:compressed_iron_chestplate',
+                C: Item.of('pneumaticcraft:compressed_iron_chestplate', '{Damage:0}').weakNBT(),
                 D: 'mekanism:cardboard_box'
             },
             id: 'pneumaticcraft:pneumatic_chestplate'
@@ -45,7 +45,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:air_canister',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'pneumaticcraft:compressed_iron_leggings',
+                C: Item.of('pneumaticcraft:compressed_iron_leggings', '{Damage:0}').weakNBT(),
                 D: 'mekanism:cardboard_box'
             },
             id: 'pneumaticcraft:pneumatic_leggings'
@@ -56,7 +56,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:air_canister',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'pneumaticcraft:compressed_iron_boots',
+                C: Item.of('pneumaticcraft:compressed_iron_boots', '{Damage:0}').weakNBT(),
                 D: 'mekanism:cardboard_box'
             },
             id: 'pneumaticcraft:pneumatic_boots'
@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#pneumaticcraft:upgrade_components',
                 B: '#pneumaticcraft:plastic_sheets',
-                C: 'thermal:diving_boots'
+                C: Item.of('thermal:diving_boots', '{Damage:0}').weakNBT()
             },
             id: 'pneumaticcraft:flippers_upgrade'
         },
@@ -118,11 +118,11 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'pneumaticcraft:small_tank',
-            pattern: ['AAA', 'CBC', 'AAA'],
+            pattern: ['AAA', 'BCB', 'AAA'],
             key: {
-                A: 'pneumaticcraft:reinforced_stone_slab',
+                A: 'create:andesite_alloy',
                 B: '#thermal:glass/hardened',
-                C: 'pneumaticcraft:reinforced_brick_wall'
+                C: 'mekanism:basic_fluid_tank'
             },
             id: 'pneumaticcraft:small_tank'
         },
@@ -220,8 +220,8 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/compressed_iron',
                 B: 'pneumaticcraft:pressure_tube',
-                C: '#forge:plates/copper',
-                D: 'thermal:machine_frame'
+                C: 'powah:thermoelectric_plate',
+                D: '#industrialforegoing:machine_frame/pity'
             },
             id: 'pneumaticcraft:thermal_compressor'
         },
@@ -258,7 +258,7 @@ onEvent('recipes', (event) => {
             id: 'pneumaticcraft:pneumatic_dynamo'
         },
         {
-            output: 'pneumaticcraft:thermal_lagging',
+            output: Item.of('6x pneumaticcraft:thermal_lagging'),
             pattern: ['AAA', 'BBB', 'AAA'],
             key: {
                 A: '#forge:glass_panes/black',
@@ -372,6 +372,109 @@ onEvent('recipes', (event) => {
                 G: 'kubejs:dimensional_storage_crystal'
             },
             id: 'pneumaticcraft:vacuum_trap'
+        },
+        {
+            output: 'pneumaticcraft:spawner_core_shell',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'kubejs:dimensional_storage_crystal',
+                B: 'pneumaticcraft:pressure_chamber_glass',
+                C: 'naturesaura:calling_spirit'
+            },
+            id: 'pneumaticcraft:spawner_core_shell'
+        },
+        {
+            output: Item.of('6x pneumaticcraft:heat_pipe'),
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'pneumaticcraft:thermal_lagging',
+                B: '#forge:storage_blocks/compressed_iron',
+                C: '#forge:storage_blocks/copper'
+            },
+            id: 'pneumaticcraft:heat_pipe'
+        },
+        {
+            output: Item.of('4x pneumaticcraft:speed_upgrade'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'pneumaticcraft:glycerol',
+                C: {
+                    type: 'pneumaticcraft:fluid',
+                    tag: 'forge:lubricant',
+                    amount: 1000
+                }
+            },
+            id: 'pneumaticcraft:speed_upgrade_from_glycerol'
+        },
+        {
+            output: Item.of('4x pneumaticcraft:volume_upgrade'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'pneumaticcraft:air_canister',
+                C: '#thermal:glass/hardened'
+            },
+            id: 'pneumaticcraft:volume_upgrade'
+        },
+        {
+            output: Item.of(
+                'pneumaticcraft:vacuum_pump',
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
+            ),
+            pattern: ['AEA', 'CBC', 'DFD'],
+            key: {
+                A: 'pneumaticcraft:pressure_gauge',
+                B: 'pneumaticcraft:turbine_rotor',
+                C: 'pneumaticcraft:pressure_tube',
+                D: 'pneumaticcraft:reinforced_stone_slab',
+                E: 'pneumaticcraft:pressure_chamber_glass',
+                F: 'thermal:machine_frame'
+            },
+            id: 'pneumaticcraft:vacuum_pump'
+        },
+        {
+            output: 'pneumaticcraft:item_life_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'atum:isis_godshard',
+                C: 'naturesaura:calling_spirit'
+            },
+            id: 'pneumaticcraft:item_life_upgrade'
+        },
+        {
+            output: Item.of('4x pneumaticcraft:inventory_upgrade'),
+            pattern: ['ACA', 'DBE', 'ACA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'thermal:energy_cell',
+                C: 'thermal:hazmat_fabric',
+                D: 'thermal:satchel',
+                E: 'thermal:fluid_reservoir'
+            },
+            id: 'pneumaticcraft:inventory_upgrade'
+        },
+        {
+            output: 'pneumaticcraft:entity_tracker_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: 'kubejs:memory_basic_filled',
+                C: 'botania:forest_eye'
+            },
+            id: 'pneumaticcraft:entity_tracker_upgrade'
+        },
+        {
+            output: 'pneumaticcraft:night_vision_upgrade',
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: 'pneumaticcraft:upgrade_matrix',
+                B: Item.of('apotheosis:potion_charm', '{Damage:0,Potion:"minecraft:long_night_vision"}'),
+                C: 'occultism:infused_lenses',
+                D: '#forge:wires/copper'
+            },
+            id: 'pneumaticcraft:night_vision_upgrade'
         }
     ];
 

@@ -50,18 +50,6 @@ onEvent('recipes', (event) => {
             id: 'astralsorcery:observatory'
         },
         {
-            output: Item.of('immersiveengineering:blastbrick', 9),
-            pattern: ['ADA', 'CBC', 'AEA'],
-            key: {
-                C: 'immersiveengineering:cokebrick',
-                B: 'minecraft:blast_furnace',
-                A: 'minecraft:red_nether_bricks',
-                D: 'thermal:fire_tnt',
-                E: '#forge:storage_blocks/coal_coke'
-            },
-            id: 'immersiveengineering:crafting/blastbrick'
-        },
-        {
             output: 'refinedstorage:controller',
             pattern: ['ACACA', 'CDBDC', 'AFEFA', 'CDBDC', 'ACACA'],
             key: {
@@ -116,12 +104,12 @@ onEvent('recipes', (event) => {
             pattern: ['ABBBA', 'ACDCA', 'EFGFE', 'HIJIH', 'HHKHH'],
             key: {
                 A: 'thermal:hazmat_fabric',
-                B: 'powah:capacitor_nitro',
+                B: Item.of('powah:capacitor_nitro').ignoreNBT(),
                 C: 'pneumaticcraft:turbine_rotor',
                 D: 'mekanism:basic_control_circuit',
                 E: 'pneumaticcraft:advanced_pressure_tube',
                 F: '#forge:gears/compressed_iron',
-                G: 'powah:thermo_generator_nitro',
+                G: Item.of('powah:thermo_generator_nitro').ignoreNBT(),
                 H: 'fluxnetworks:flux_block',
                 I: 'supplementaries:bellows',
                 J: 'thermal:upgrade_augment_3',
@@ -137,7 +125,7 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:drill_bit_diamond',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: 'pneumaticcraft:pneumatic_dynamo'
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
             },
             id: `${id_prefix}assembly_drill`
         },
@@ -149,7 +137,7 @@ onEvent('recipes', (event) => {
                 B: '#powah:energizing_rod',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: 'pneumaticcraft:pneumatic_dynamo'
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
             },
             id: `${id_prefix}assembly_laser`
         },
@@ -161,7 +149,7 @@ onEvent('recipes', (event) => {
                 B: 'create:brass_hand',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: 'pneumaticcraft:pneumatic_dynamo'
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
             },
             id: `${id_prefix}assembly_io_unit_import`
         },
@@ -173,19 +161,19 @@ onEvent('recipes', (event) => {
                 B: 'create:brass_hand',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: 'pneumaticcraft:pneumatic_dynamo'
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
             },
             id: `${id_prefix}assembly_io_unit_export`
         },
         {
             output: 'pneumaticcraft:assembly_controller',
-            pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
+            pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
             key: {
                 A: 'prettypipes:pipe',
-                B: 'rftoolsutility:screen',
+                B: 'computercraft:monitor_normal',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'pneumaticcraft:reinforced_stone_slab',
-                E: 'pneumaticcraft:pneumatic_dynamo'
+                E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
             },
             id: `${id_prefix}assembly_controller`
         },
@@ -206,7 +194,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:pressure_chamber_wall',
                 B: 'pneumaticcraft:advanced_pressure_tube',
-                C: 'powah:capacitor_blazing',
+                C: Item.of('powah:capacitor_blazing').ignoreNBT(),
                 D: 'pneumaticcraft:omnidirectional_hopper',
                 E: 'pneumaticcraft:printed_circuit_board',
                 F: '#industrialforegoing:machine_frame/supreme',
@@ -219,14 +207,554 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:spawner_extractor',
             pattern: ['  A  ', ' BCB ', ' DED ', 'F E F'],
             key: {
-                A: 'pneumaticcraft:pressure_tube',
-                B: 'alexsmobs:hemolymph_sac',
+                A: 'pneumaticcraft:huge_tank',
+                B: 'pneumaticcraft:pressure_tube',
                 C: '#industrialforegoing:machine_frame/advanced',
-                D: 'alexsmobs:warped_muscle',
+                D: 'alexsmobs:hemolymph_sac',
                 E: 'pneumaticcraft:drill_pipe',
-                F: 'pneumaticcraft:spawner_agitator'
+                F: 'alexsmobs:warped_muscle'
             },
             id: `${id_prefix}spawner_extractor`
+        },
+        {
+            output: 'create:flywheel',
+            pattern: [' AAA ', 'ABCBA', 'ACDCA', 'ABEBA', ' AAA '],
+            key: {
+                A: '#forge:plates/brass',
+                B: '#forge:rods/brass',
+                C: '#forge:gears/enderium',
+                D: 'create:brass_casing',
+                E: 'ars_nouveau:carbuncle_charm'
+            },
+            id: 'create:mechanical_crafting/flywheel'
+        },
+        {
+            output: 'integrateddynamics:logic_programmer',
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CIHJC', 'ABBBA'],
+            key: {
+                A: 'pneumaticcraft:logistics_core',
+                B: 'integrateddynamics:crystalized_menril_block',
+                C: 'integrateddynamics:menril_wood',
+                D: 'extrastorage:neural_processor',
+                E: 'kubejs:cpu_core_as_81221',
+                F: 'pneumaticcraft:smart_chest',
+                G: 'refinedstorage:machine_casing',
+                H: 'pneumaticcraft:upgrade_matrix',
+                I: 'pneumaticcraft:network_io_port',
+                J: 'pneumaticcraft:network_data_storage'
+            },
+            id: 'integrateddynamics:crafting/logic_programmer'
+        },
+        {
+            output: Item.of('2x portality:controller'),
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CDEDC', 'ABBBA'],
+            key: {
+                A: 'portality:frame',
+                B: 'immersiveengineering:coil_lv',
+                C: 'immersiveengineering:electron_tube',
+                D: 'immersiveengineering:wirecoil_redstone',
+                E: 'pneumaticcraft:advanced_pcb',
+                F: 'immersiveengineering:current_transformer',
+                G: 'xnet:controller'
+            },
+            id: 'portality:controller'
+        },
+        {
+            output: 'rftoolsutility:environmental_controller',
+            pattern: ['ABBBA', 'BCDCB', 'BEFEB', 'BGHGB', 'ABBBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: 'thermal:enderium_glass',
+                C: 'immersiveengineering:tesla_coil',
+                D: 'powah:player_aerial_pearl',
+                E: 'powah:aerial_pearl',
+                F: '#industrialforegoing:machine_frame/supreme',
+                G: '#forge:circuits/ultimate',
+                H: 'kubejs:spirit_entropic_gateway'
+            },
+            id: 'rftoolsutility:environmental_controller'
+        },
+        {
+            output: 'mekanismgenerators:wind_generator',
+            pattern: ['ABC', ' E ', ' E ', ' G '],
+            key: {
+                A: 'pneumaticcraft:turbine_rotor',
+                B: 'immersiveengineering:dynamo',
+                C: '#forge:gears/compressed_iron',
+                E: 'engineersdecor:thick_steel_pole',
+                G: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanismgenerators:generator/wind'
+        },
+        {
+            output: 'mekanismgenerators:rotational_complex',
+            pattern: ['ABCCC', 'BDBFC', 'CBGBC', 'CEBDB', 'CCCBA'],
+            key: {
+                A: '#forge:circuits/elite',
+                B: '#forge:gears/compressed_iron',
+                C: '#xnet:cables',
+                D: '#mekanism:alloys/reinforced',
+                E: 'rftoolscontrol:node',
+                F: Item.of('rftoolsbase:tablet').ignoreNBT(),
+                G: '#industrialforegoing:machine_frame/advanced'
+            },
+            id: 'mekanismgenerators:rotational_complex'
+        },
+        {
+            output: 'mekanismgenerators:fusion_reactor_controller',
+            pattern: ['  ABA  ', ' ACDCA ', 'ACEFECA', 'BDGHGDB', 'ACEIECA', ' ACDCA ', '  ABA  '],
+            key: {
+                A: 'mekanismgenerators:reactor_glass',
+                B: '#xnet:cables',
+                C: 'mekanismgenerators:fusion_reactor_frame',
+                D: '#xnet:advanced_connectors',
+                E: Item.of('mekanism:ultimate_chemical_tank').ignoreNBT(),
+                F: 'rftoolsutility:environmental_controller',
+                G: '#forge:circuits/ultimate',
+                H: Item.of('mekanism:ultimate_fluid_tank').ignoreNBT(),
+                I: Item.of('rftoolsbase:tablet').ignoreNBT()
+            },
+            id: 'mekanismgenerators:reactor/controller'
+        },
+        {
+            output: 'mekanism:digital_miner',
+            pattern: ['AAAAA', 'BCDCB', 'EFGHE', 'AAAAA', 'II II'],
+            key: {
+                A: '#forge:sheetmetals/steel',
+                B: 'pneumaticcraft:smart_chest',
+                C: 'integrateddynamics:part_display_panel',
+                D: Item.of('rftoolsbase:tablet').ignoreNBT(),
+                E: 'integratedtunnels:part_importer_energy',
+                F: 'rftoolsutility:matter_transmitter',
+                G: 'mekanism:robit',
+                H: 'rftoolsutility:matter_receiver',
+                I: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanism:digital_miner'
+        },
+        {
+            output: 'mininggadgets:mininggadget_simple',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: industrialforegoing.laser_lens.magenta,
+                G: 'thermal:upgrade_augment_2',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+            },
+            id: 'mininggadgets:mininggadget_simple'
+        },
+        {
+            output: 'mininggadgets:mininggadget_fancy',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: industrialforegoing.laser_lens.pink,
+                G: 'thermal:upgrade_augment_2',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+            },
+            id: 'mininggadgets:mininggadget_fancy'
+        },
+        {
+            output: 'mininggadgets:mininggadget',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: industrialforegoing.laser_lens.light_blue,
+                G: 'thermal:upgrade_augment_2',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+            },
+            id: 'mininggadgets:mininggadget'
+        },
+        {
+            output: 'thermal:flux_saw',
+            pattern: [' A  ', 'BACD', 'AEFD', ' GCC'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'thermal:saw_blade',
+                C: 'mekanism:hdpe_sheet',
+                D: 'betterendforge:leather_stripe',
+                E: 'create:precision_mechanism',
+                F: Item.of('thermal:flux_capacitor').ignoreNBT(),
+                G: 'mekanism:hdpe_stick'
+            },
+            id: 'thermal:flux_saw'
+        },
+        {
+            output: 'thermal:flux_drill',
+            pattern: ['B   ', ' AC ', ' EFD', ' GCD'],
+            key: {
+                A: '#forge:plates/steel',
+                B: 'thermal:drill_head',
+                C: 'mekanism:hdpe_sheet',
+                D: 'betterendforge:leather_stripe',
+                E: 'create:precision_mechanism',
+                F: Item.of('thermal:flux_capacitor').ignoreNBT(),
+                G: 'mekanism:hdpe_stick'
+            },
+            id: 'thermal:flux_drill'
+        },
+        {
+            output: 'fluxnetworks:flux_controller',
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CHIHC', 'ABBBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: 'fluxnetworks:flux_block',
+                C: 'botania:bifrost_perm',
+                D: '#botania:runes/air',
+                E: '#botania:runes/asgard',
+                F: 'thermal:lightning_charge',
+                G: 'powah:player_transmitter_nitro',
+                H: '#botania:runes/earth',
+                I: '#forge:circuits/ultimate'
+            },
+            id: `${id_prefix}flux_controller`
+        },
+        {
+            output: 'gunswithoutroses:iron_gun',
+            pattern: ['  A ', 'BCDE', ' FGH'],
+            key: {
+                A: '#forge:plates/steel',
+                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
+                C: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
+                D: 'create:precision_mechanism',
+                E: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
+                F: '#forge:treated_wood_slab',
+                G: '#forge:nuggets/steel',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+            },
+            id: 'gunswithoutroses:iron_gun'
+        },
+        {
+            output: 'gunswithoutroses:gold_gun',
+            pattern: ['  A ', 'BCDE', ' FGH'],
+            key: {
+                A: '#forge:plates/gold',
+                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
+                C: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
+                D: 'create:precision_mechanism',
+                E: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
+                F: '#forge:treated_wood_slab',
+                G: '#forge:nuggets/steel',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+            },
+            id: 'gunswithoutroses:gold_gun'
+        },
+        {
+            output: 'gunswithoutroses:diamond_shotgun',
+            pattern: ['  ABA ', 'CCCDEF', 'CCCDEF', ' I GH '],
+            key: {
+                A: '#forge:plates/steel',
+                B: '#forge:plates/diamond',
+                C: 'pneumaticcraft:cannon_barrel',
+                D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
+                E: 'create:precision_mechanism',
+                F: '#forge:treated_wood',
+                G: '#forge:nuggets/steel',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
+                I: '#forge:wires/steel'
+            },
+            id: 'gunswithoutroses:diamond_shotgun'
+        },
+        {
+            output: 'gunswithoutroses:diamond_sniper',
+            pattern: ['   ABA ', 'CCCCDEF', ' IIIGHF'],
+            key: {
+                A: '#forge:plates/diamond',
+                B: 'immersiveengineering:toolupgrade_railgun_scope',
+                C: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
+                D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
+                E: 'create:precision_mechanism',
+                F: '#forge:treated_wood',
+                G: '#forge:nuggets/steel',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
+                I: '#forge:plates/steel'
+            },
+            id: 'gunswithoutroses:diamond_sniper'
+        },
+        {
+            output: 'gunswithoutroses:diamond_gatling',
+            pattern: ['   AAA ', 'BBBCDCE', 'BBBFGHE', 'III JK '],
+            key: {
+                A: '#forge:inlays/pewter',
+                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
+                C: 'create:encased_chain_drive',
+                D: 'create:adjustable_chain_gearshift',
+                E: '#forge:treated_wood',
+                F: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
+                G: 'create:precision_mechanism',
+                H: '#forge:gears/steel',
+                I: '#forge:wires/steel',
+                J: '#forge:nuggets/steel',
+                K: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
+            },
+            id: 'gunswithoutroses:diamond_gatling'
+        },
+        {
+            output: 'meetyourfight:phantasmal_rifle',
+            pattern: ['   ABA ', 'CCCCDEF', ' IIIGHF'],
+            key: {
+                A: '#forge:inlays/arcane_gold',
+                B: 'meetyourfight:phantoplasm',
+                C: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
+                D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
+                E: 'create:precision_mechanism',
+                F: '#forge:treated_wood',
+                G: '#forge:nuggets/steel',
+                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
+                I: '#forge:plates/electrum'
+            },
+            id: 'meetyourfight:phantasmal_rifle'
+        },
+        {
+            output: 'meetyourfight:cocktail_shotgun',
+            pattern: ['   AAA ', 'BBBCDCE', 'BBBFGHE', 'ILI JK '],
+            key: {
+                A: '#forge:inlays/pewter',
+                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
+                C: 'create:encased_chain_drive',
+                D: 'create:adjustable_chain_gearshift',
+                E: '#forge:treated_wood',
+                F: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
+                G: 'create:precision_mechanism',
+                H: '#forge:gears/enderium',
+                I: '#forge:wires/steel',
+                J: '#forge:nuggets/steel',
+                K: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
+                L: 'meetyourfight:fortunes_favor'
+            },
+            id: 'meetyourfight:cocktail_shotgun'
+        },
+        {
+            output: 'industrialforegoing:mob_duplicator',
+            pattern: ['ABCBA', 'BDEFB', 'CGHGC', 'BFIDB', 'ABCBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: '#forge:plastic',
+                C: 'powah:capacitor_nitro',
+                D: '#forge:circuits/elite',
+                E: 'rftoolsutility:spawner',
+                F: 'ars_nouveau:greater_experience_gem',
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT(),
+                H: 'botania:spawner_mover',
+                I: '#industrialforegoing:machine_frame/supreme'
+            },
+            id: 'industrialforegoing:mob_duplicator'
+        },
+        {
+            output: 'industrialforegoing:mycelial_reactor',
+            pattern: ['ABCCCBA', 'BDEFEDB', 'CEDGDEC', 'CFHIJFC', 'CEDKDEC', 'BDEFEDB', 'ABCCCBA'],
+            key: {
+                A: 'minecraft:shroomlight',
+                B: 'thermal:enderium_glass',
+                C: '#forge:plastic',
+                D: 'kubejs:celestial_mycelium_filaments',
+                E: 'mekanismgenerators:fusion_reactor_frame',
+                F: '#forge:circuits/ultimate',
+                G: 'undergarden:ink_mushroom_cap',
+                H: 'betterendforge:mossy_glowshroom_cap',
+                I: 'astralsorcery:shifting_star',
+                J: 'minecraft:red_mushroom_block',
+                K: 'byg:soul_shroom_block'
+            },
+            id: 'industrialforegoing:mycelial_reactor'
+        },
+        {
+            output: 'immersiveengineering:cloche',
+            pattern: [' AAA ', ' ABA ', ' A A ', ' CDC ', 'CEFEC'],
+            key: {
+                A: 'thermal:lumium_glass',
+                B: 'immersiveengineering:electron_tube',
+                C: '#forge:treated_wood',
+                D: 'industrialforegoing:hydroponic_bed',
+                E: 'immersiveengineering:component_steel',
+                F: 'pneumaticcraft:fluid_mixer'
+            },
+            id: 'immersiveengineering:crafting/cloche'
+        },
+        {
+            output: 'industrialforegoing:infinity_drill',
+            pattern: ['  AAA', '  BBA', ' CDBA', 'CECF ', 'GCF  '],
+            key: {
+                A: 'rftoolsbase:infused_diamond',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
+                E: 'thermal:upgrade_augment_3',
+                F: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_drill'
+        },
+        {
+            output: 'industrialforegoing:infinity_trident',
+            pattern: ['   AA', '  BBA', ' CDB ', 'CEC  ', 'GC   '],
+            key: {
+                A: 'rftoolsbase:infused_diamond',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
+                E: 'thermal:upgrade_augment_3',
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_trident'
+        },
+        {
+            output: 'industrialforegoing:infinity_saw',
+            pattern: ['   AB', '  ABA', ' CDA ', 'CECF ', 'GCF  '],
+            key: {
+                A: 'rftoolsbase:infused_diamond',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
+                E: 'thermal:upgrade_augment_3',
+                F: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_saw'
+        },
+        {
+            output: 'industrialforegoing:infinity_hammer',
+            pattern: ['  BA ', '  ABA', ' CDAB', 'CEC  ', 'GC   '],
+            key: {
+                A: 'rftoolsbase:infused_diamond',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
+                E: 'thermal:upgrade_augment_3',
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_hammer'
+        },
+        {
+            output: 'industrialforegoing:infinity_launcher',
+            pattern: ['   A ', '  BAA', ' CDB ', 'CEC  ', 'GCF  '],
+            key: {
+                A: 'thermal:cured_rubber_block',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
+                E: 'thermal:upgrade_augment_3',
+                F: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
+                G: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_launcher'
+        },
+        {
+            output: 'industrialforegoing:infinity_nuke',
+            pattern: [' CCC ', 'CAEAC', 'BFGFB', 'CAEAC', 'HDIDH'],
+            key: {
+                A: 'thermal:earth_tnt',
+                B: '#forge:storage_blocks/hepatizon',
+                C: '#forge:plastic',
+                D: Item.of('mekanism:elite_induction_cell').ignoreNBT(),
+                E: Item.of('tconstruct:copper_can', '{fluid:"industrialforegoing:ether_gas"}'),
+                F: '#forge:alloys/ultimate',
+                G: '#forge:pellets/plutonium',
+                H: 'mekanism:hdpe_rod',
+                I: Item.of('pneumaticcraft:huge_tank').ignoreNBT()
+            },
+            id: 'industrialforegoing:dissolution_chamber/infinity_nuke'
+        },
+        {
+            output: 'industrialforegoing:dissolution_chamber',
+            pattern: ['ABCBA', 'BDCDB', 'ECFCE', 'BGHGB', 'ABIBA'],
+            key: {
+                A: '#forge:alloys/elite',
+                B: '#forge:plastic',
+                C: 'mekanism:elite_mechanical_pipe',
+                D: '#forge:gears/enderium',
+                E: Item.of('mekanism:elite_fluid_tank').ignoreNBT(),
+                F: Item.of('pneumaticcraft:smart_chest').ignoreNBT(),
+                G: 'mekanism:superheating_element',
+                H: Item.of('immersiveengineering:capacitor_hv').ignoreNBT(),
+                I: '#industrialforegoing:machine_frame/pity'
+            },
+            id: 'industrialforegoing:dissolution_chamber'
+        },
+        {
+            output: 'mekanism:meka_tool',
+            pattern: ['AAABB', ' CDE ', 'AAABB', '  F  '],
+            key: {
+                A: 'mekanism:hdpe_sheet',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'immersiveengineering:toolupgrade_shield_magnet',
+                D: [
+                    Item.of('mininggadgets:mininggadget_simple').ignoreNBT(),
+                    Item.of('mininggadgets:mininggadget').ignoreNBT(),
+                    Item.of('mininggadgets:mininggadget_fancy').ignoreNBT()
+                ],
+                E: Item.of('mekanism:laser_amplifier').ignoreNBT(),
+                F: 'thermal:upgrade_augment_3'
+            },
+            id: 'mekanism:meka_tool'
+        },
+        {
+            output: 'masterfulmachinery:auto_iridescent_altar_controller',
+            pattern: ['ABCBA', 'BDEDB', 'CDFDC', 'BGHGB', 'ABIBA'],
+            key: {
+                A: 'thermal:enderium_glass',
+                B: '#forge:plates/steel',
+                C: 'xnet:advanced_connector_green',
+                D: 'xnet:netcable_green',
+                E: Item.of('rftoolsbase:tablet').ignoreNBT(),
+                F: '#industrialforegoing:machine_frame/supreme',
+                G: 'xnet:netcable_red',
+                H: '#forge:circuits/ultimate',
+                I: 'xnet:advanced_connector_red'
+            },
+            id: `${id_prefix}auto_iridescent_altar_controller`
+        },
+        {
+            output: 'masterfulmachinery:stellar_neutron_activator_controller',
+            pattern: ['ABCBA', 'BDDDB', 'EDFDE', 'BDDDB', 'ABCBA'],
+            key: {
+                A: 'immersiveengineering:hempcrete',
+                B: 'mekanism:thermal_evaporation_block',
+                C: Item.of('mekanism:resistive_heater').ignoreNBT(),
+                D: 'mekanism:ultimate_thermodynamic_conductor',
+                E: 'mekanism:thermal_evaporation_valve',
+                F: 'mekanism:thermal_evaporation_controller'
+            },
+            id: `${id_prefix}stellar_neutron_activator_controller`
+        },
+        {
+            output: 'masterfulmachinery:industrial_deuterium_plant_controller',
+            pattern: ['ABCBA', 'CDFDC', 'BFGFB', 'CDEDC', 'ABCBA'],
+            key: {
+                A: 'immersiveengineering:concrete_leaded',
+                B: '#forge:plates/steel',
+                C: '#forge:plates/osmium',
+                D: '#forge:rods/osmium',
+                E: '#forge:circuits/ultimate',
+                F: 'mekanism:electrolytic_core',
+                G: '#industrialforegoing:machine_frame/supreme'
+            },
+            id: `${id_prefix}industrial_deuterium_plant_controller`
+        },
+        {
+            output: 'thermal:machine_pyrolyzer',
+            pattern: ['AAAAA', 'AACAA', 'AADAA', 'AEFEA', 'AGGGA'],
+            key: {
+                A: 'immersiveengineering:cokebrick',
+                C: 'thermal:machine_frame',
+                D: Item.of('thermal:fluid_cell').ignoreNBT(),
+                E: '#forge:gears/constantan',
+                F: 'botania:blaze_block',
+                G: 'immersiveengineering:coil_mv'
+            },
+            id: 'thermal:machine_pyrolyzer'
         }
     ];
 
@@ -247,8 +775,8 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'powah:dielectric_casing',
                 B: casingMaterial,
-                C: `powah:energy_cell_${tier}`,
-                D: `powah:thermo_generator_${tier}`,
+                C: Item.of(`powah:energy_cell_${tier}`).ignoreNBT(),
+                D: Item.of(`powah:thermo_generator_${tier}`).ignoreNBT(),
                 E: 'thermal:fluid_cell_frame',
                 F: 'xnet:advanced_connector_green',
                 G: 'xnet:netcable_green',
@@ -257,20 +785,42 @@ onEvent('recipes', (event) => {
                 J: 'xnet:advanced_connector_blue',
                 K: 'xnet:netcable_blue',
                 L: 'pneumaticcraft:heat_pipe',
-                M: 'kubejs:spirit_heat_exchanger',
+                M: 'kubejs:spirit_entropic_gateway',
                 N: 'xnet:controller',
-                O: `powah:furnator_${tier}`,
+                O: Item.of(`powah:furnator_${tier}`).ignoreNBT(),
                 P: 'create:fluid_pipe'
             },
             id: `powah:crafting/reactor_${tier}`
         });
     });
 
+    const compactmachines = [
+        { tier: 'tiny', comb: 'forest' },
+        { tier: 'small', comb: 'aluminum' },
+        { tier: 'normal', comb: 'zinc' },
+        { tier: 'large', comb: 'uranium' },
+        { tier: 'giant', comb: 'cobalt' },
+        { tier: 'maximum', comb: 'industrious' }
+    ];
+
+    compactmachines.forEach((compactmachine) => {
+        recipes.push({
+            output: `compactmachines:machine_${compactmachine.tier}`,
+            pattern: ['AABAA', 'ACCCA', 'DCECF', 'ACCCA', 'AAGAA'],
+            key: {
+                A: 'compactmachines:wall',
+                B: 'portality:module_energy',
+                C: `resourcefulbees:${compactmachine.comb}_honeycomb_block`,
+                D: 'portality:module_items',
+                E: 'portality:controller',
+                F: 'portality:module_fluids',
+                G: 'portality:module_interdimensional'
+            },
+            id: `${id_prefix}compact_machine_${compactmachine.tier}`
+        });
+    });
+
     recipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key);
-        }
+        event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

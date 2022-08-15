@@ -1,0 +1,50 @@
+{
+    "flower": "ars_nouveau:mana_bloom_crop",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "Binding a Carbunkle Charm to a Gold Bee via arcane means will yield a Carbee.\nThe Carbee can send animals back to their child state, keeping them forever young.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 6000,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/carbee",
+    "ColorData": {
+        "honeycombColor": "#e39c27",
+        "modelType": "DRAGON"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 4,
+        "mutations": [
+            {
+                "type": "ENTITY",
+                "inputID": "entity:minecraft:cow",
+                "outputs": [{ "outputID": "entity:minecraft:cow", "weight": 50, "nbtData": {"Age":-6000} }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "entity:minecraft:chicken",
+                "outputs": [{ "outputID": "entity:minecraft:chicken", "weight": 50, "nbtData": {"Age":-6000} }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "entity:minecraft:pig",
+                "outputs": [{ "outputID": "entity:minecraft:pig", "weight": 50, "nbtData": {"Age":-6000} }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "entity:minecraft:sheep",
+                "outputs": [{ "outputID": "entity:minecraft:sheep", "weight": 50, "nbtData": {"Age":-6000} }]
+            }
+        ]
+    },
+    "CentrifugeData": {"hasCentrifugeOutput": false},
+    "SpawnData": {"canSpawnInWorld": false},
+    "BreedData": {"isBreedable": false},
+    "TraitData": {"hasTraits": true}
+}

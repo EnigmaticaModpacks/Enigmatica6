@@ -1,0 +1,39 @@
+
+[vessel]
+
+	[vessel.barge]
+		#Modify the chance of using the treasure loot table with the auto fishing barge, other factors such as depth and overfishing still play a role. Default 0.02.
+		fishingTreasureChance = 0.03
+		#Loot table to use when fishing barge catches a fish. Change to 'minecraft:gameplay/fishing' if some modded fish aren't being caught. Defaults to 'minecraft:gameplay/fishing/fish'.
+		fishingLootTable = "minecraft:gameplay/fishing"
+
+	[vessel.tug]
+		#Base speed of the tugs. Default 2.4.
+		#Range: 0.1 ~ 10.0
+		tugBaseSpeed = 2.4
+		#Increases the burn duration of Steam tug fuel by N times when compared to furnace, must be an integer >= 1. Default 4.
+		#Range: > 1
+		steamTugFuelMultiplier = 4
+		#Base maximum capacity of the Energy tug in FE, must be an integer >= 1. Default 10000.
+		#Range: > 1
+		energyTugBaseCapacity = 128000
+		#Base energy usage of the Energy tug in FE/tick, must be an integer >= 1. Default 1.
+		#Range: > 1
+		energyTugBaseEnergyUsage = 1
+		#Base max charge rate of the Energy tug in FE/tick, must be an integer >= 1. Default 100.
+		#Range: > 1
+		energyTugBaseMaxChargeRate = 256
+		#Multiplier for tug pathfinding search space, high values may impact performance. Default 1.
+		#Range: 1 ~ 10
+		tugPathfindMult = 1
+
+[dock]
+
+	[dock.charger]
+		#Base max capacity of the Vessel Charger in FE, must be an integer >= 1. Default 10000.
+		#Range: > 1
+		vesselChargerBaseCapacity = 128000
+		#Base max transfer rate of the Vessel Charger in FE/tick, must be an integer >= 1. Default 100.
+		#Range: > 1
+		vesselChargerBaseMaxTransfer = 256
+

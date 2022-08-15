@@ -1,0 +1,41 @@
+{
+    "controllerId": "industrial_deuterium_plant",
+    "textureOverride": "immersiveengineering:block/metal/storage_steel",
+    "name": "Industrial Deuterium Plant",
+    "ports": [
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "Power",
+            "id": "energy",
+            "data": {
+                "capacity": 5000000
+            }
+        },
+        {
+            "type": "masterfulmachinery:fluids",
+            "name": "Fluid",
+            "id": "fluid",
+            "data": {
+                "capacity": 100000
+            }
+        },
+        {
+          "type": "masterfulmachinery:create_rotation",
+          "name": "Pump Rotation",
+          "id": "spinny",
+          "data": {
+             "stress": 100
+          }
+        },
+        {
+          "type": "masterfulmachinery:pncr_pressure",
+          "name": "Cooling",
+          "id": "pressure",
+          "data": {
+            "volume": 100000,
+            "dangerPressure": 20,
+            "criticalPressure": 30
+          }
+        }
+    ]
+}

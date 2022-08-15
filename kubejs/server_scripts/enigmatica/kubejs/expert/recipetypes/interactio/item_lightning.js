@@ -2,41 +2,33 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/interactio/item_lightning/';
     const recipes = [
         {
-            inputs: [
-                { item: 'minecraft:snowball', count: 16 },
-                { item: 'quark:bottled_cloud', count: 1 },
-                { tag: 'forge:dusts/fluorite', count: 1, return_chance: 0.75 }
-            ],
+            inputs: ['4x minecraft:snowball', 'quark:bottled_cloud', '#forge:gems/fluorite'],
             output: {
-                entries: [{ result: { item: 'powah:charged_snowball', count: 1 }, weight: 7 }],
-                empty_weight: 3,
-                rolls: 16
+                entries: [{ result: { item: 'powah:charged_snowball', count: 3 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
             },
-            id: 'charged_snowball'
+            id: `${id_prefix}charged_snowball`
+        },
+        {
+            inputs: ['3x #forge:storage_blocks/clay', '#forge:gems/mana', '#forge:gems/apatite'],
+            output: {
+                entries: [{ result: { item: 'ars_nouveau:arcane_stone', count: 4 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: `${id_prefix}arcane_stone`
         },
         {
             inputs: [
-                { tag: 'forge:storage_blocks/clay', count: 4 },
-                { tag: 'forge:dusts/mana', count: 1 },
-                { tag: 'forge:dusts/apatite', count: 1 }
-            ],
-            output: {
-                entries: [{ result: { item: 'ars_nouveau:arcane_stone', count: 1 }, weight: 9 }],
-                empty_weight: 1,
-                rolls: 4
-            },
-            id: 'arcane_stone'
-        },
-        {
-            inputs: [
-                { item: 'minecraft:heart_of_the_sea', count: 1 },
-                { item: 'minecraft:nautilus_shell', count: 4 },
-                { tag: 'forge:dusts/lapis', count: 2 },
-                { tag: 'forge:dusts/fluorite', count: 2 },
-                { tag: 'forge:dusts/mana', count: 1 }
+                'minecraft:heart_of_the_sea',
+                '4x minecraft:nautilus_shell',
+                '2x #forge:gems/lapis',
+                '2x #forge:gems/fluorite',
+                '#forge:gems/mana'
             ],
             output: {
                 entries: [{ result: { item: 'minecraft:conduit', count: 1 }, weight: 1 }],
@@ -46,12 +38,7 @@ onEvent('recipes', (event) => {
             id: 'minecraft:conduit'
         },
         {
-            inputs: [
-                { item: 'eidolon:gold_inlay', count: 1 },
-                { item: 'botania:livingwood_wall', count: 1 },
-                { item: 'naturesaura:gold_leaf', count: 1 },
-                { tag: 'forge:dusts/apatite', count: 1 }
-            ],
+            inputs: ['eidolon:gold_inlay', 'botania:livingwood_wall', 'naturesaura:gold_leaf', '#forge:gems/apatite'],
             output: {
                 entries: [{ result: { item: 'naturesaura:wood_stand', count: 1 }, weight: 1 }],
                 empty_weight: 0,
@@ -61,11 +48,16 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'undergarden:music_disc_relict', count: 1 },
-                { item: 'aquaculture:fish_bones', count: 1 },
-                { tag: 'forge:dusts/lapis', count: 2 },
-                { item: 'minecraft:fermented_spider_eye', count: 2 },
-                { item: 'undergarden:raw_dweller_meat', count: 4 }
+                [
+                    'undergarden:music_disc_relict',
+                    'undergarden:music_disc_mammoth',
+                    'undergarden:music_disc_limax_maximus',
+                    'undergarden:music_disc_gloomper_anthem'
+                ],
+                'aquaculture:fish_bones',
+                '2x #forge:gems/lapis',
+                '2x minecraft:fermented_spider_eye',
+                '4x undergarden:raw_dweller_meat'
             ],
             output: {
                 entries: [{ result: { item: 'meetyourfight:fossil_bait', count: 1 }, weight: 1 }],
@@ -75,90 +67,65 @@ onEvent('recipes', (event) => {
             id: 'meetyourfight:fossil_bait'
         },
         {
-            inputs: [
-                { item: 'supplementaries:jar', count: 1 },
-                { tag: 'forge:dusts/fluorite', count: 3 }
-            ],
+            inputs: ['supplementaries:jar', '3x #forge:gems/fluorite'],
             output: {
                 entries: [{ result: { item: 'ars_nouveau:jar_of_light', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'jar_of_light'
+            id: `${id_prefix}jar_of_light`
         },
         {
-            inputs: [
-                { item: 'supplementaries:jar', count: 1 },
-                { tag: 'forge:dusts/obsidian', count: 3 }
-            ],
+            inputs: ['supplementaries:jar', '3x #forge:dusts/obsidian'],
             output: {
                 entries: [{ result: { item: 'ars_nouveau:void_jar', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'void_jar'
+            id: `${id_prefix}void_jar`
         },
         {
             inputs: [
-                {
-                    type: 'forge:nbt',
-                    item: 'naturesaura:aura_bottle',
-                    count: 1,
-                    nbt: '{stored_type:"naturesaura:overworld"}'
-                },
-                { item: 'naturesaura:infused_iron', count: 1 },
-                { item: 'botania:rune_water', count: 1, return_chance: 0.75 },
-                { item: 'botania:rune_earth', count: 1, return_chance: 0.75 },
-                {
-                    type: 'forge:nbt',
-                    item: 'naturesaura:aura_bottle',
-                    count: 1,
-                    nbt: '{stored_type:"naturesaura:nether"}'
-                },
-                { item: 'naturesaura:tainted_gold', count: 1 },
-                { item: 'botania:rune_fire', count: 1, return_chance: 0.75 },
-                { item: 'botania:rune_air', count: 1, return_chance: 0.75 }
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
+                'naturesaura:infused_iron',
+                '#botania:runes/water',
+                '#botania:runes/earth',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:nether"}'),
+                'naturesaura:tainted_gold',
+                '#botania:runes/fire',
+                '#botania:runes/air'
             ],
             output: {
-                entries: [{ result: { item: 'naturesaura:calling_spirit', count: 3 }, weight: 1 }],
+                entries: [{ result: { item: 'naturesaura:calling_spirit', count: 4 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'calling_spirit'
+            id: `${id_prefix}calling_spirit`
         },
         {
-            inputs: [
-                { tag: 'forge:storage_blocks/iron', count: 1 },
-                { tag: 'forge:dusts/iron', count: 1 },
-                { tag: 'forge:dusts/fluorite', count: 1 },
-                { tag: 'forge:dusts/copper', count: 1 }
-            ],
+            inputs: ['#forge:storage_blocks/iron', '#forge:dusts/iron', '#forge:gems/fluorite', '#forge:dusts/copper'],
             output: {
                 entries: [{ result: { item: 'minecraft:lodestone', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'lodestone'
+            id: `${id_prefix}lodestone`
         },
         {
-            inputs: [
-                { tag: 'botania:petals', count: 2 },
-                { item: 'botania:quartz_blaze', count: 2 },
-                { tag: 'forge:nuggets/nebu', count: 1 }
-            ],
+            inputs: ['6x #botania:petals', '2x botania:quartz_blaze', '#forge:nuggets/nebu'],
             output: {
-                entries: [{ result: { item: 'botania:spark', count: 1 }, weight: 1 }],
+                entries: [{ result: { item: 'botania:spark', count: 3 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'spark'
+            id: `${id_prefix}spark`
         },
         {
             inputs: [
-                { item: 'eidolon:gold_inlay', count: 2 },
-                { item: 'eidolon:pewter_inlay', count: 1 },
-                { tag: 'forge:gems/mana', count: 1 },
-                { item: 'architects_palette:sunmetal_blend', count: 4 }
+                '2x eidolon:gold_inlay',
+                'eidolon:pewter_inlay',
+                '#forge:gems/mana',
+                '4x architects_palette:sunmetal_blend'
             ],
             output: {
                 entries: [{ result: { item: 'atum:scarab', count: 1 }, weight: 1 }],
@@ -168,12 +135,7 @@ onEvent('recipes', (event) => {
             id: 'atum:scarab'
         },
         {
-            inputs: [
-                { item: 'minecraft:bell', count: 1 },
-                { item: 'atum:ectoplasm', count: 3 },
-                { tag: 'forge:dusts/fluorite', count: 1 },
-                { tag: 'atum:relic_non_dirty', count: 1 }
-            ],
+            inputs: ['minecraft:bell', '3x atum:ectoplasm', '#forge:gems/fluorite', '#atum:relic_non_dirty'],
             output: {
                 entries: [{ result: { item: 'meetyourfight:haunted_bell', count: 1 }, weight: 1 }],
                 empty_weight: 0,
@@ -182,31 +144,39 @@ onEvent('recipes', (event) => {
             id: 'meetyourfight:haunted_bell'
         },
         {
-            inputs: [
-                { item: 'thermal:phytogro', count: 2 },
-                { tag: 'forge:dusts/iron', count: 2 },
-                { tag: 'forge:dusts/nickel', count: 1 }
-            ],
+            inputs: ['2x thermal:phytogro', '2x #forge:dusts/iron', '#forge:dusts/nickel'],
             output: {
-                entries: [{ result: { item: 'emendatusenigmatica:invar_dust', count: 1 }, weight: 7 }],
-                empty_weight: 3,
-                rolls: 3
+                entries: [{ result: { item: 'emendatusenigmatica:invar_dust', count: 3 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
             },
-            id: 'invar_dust'
+            id: `${id_prefix}invar_dust`
+        },
+        {
+            inputs: ['#forge:gems/fluorite', '6x minecraft:prismarine', '6x undergarden:shiverstone'],
+            output: {
+                entries: [{ result: { item: 'kubejs:firmament', count: 3 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: `${id_prefix}firmament`
+        },
+        {
+            inputs: ['eidolon:soul_shard', 'minecraft:polished_andesite', '#forge:inlays/pewter'],
+            output: {
+                entries: [{ result: { item: 'eidolon:stone_altar', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: `${id_prefix}stone_altar`
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
-            type: 'interactio:item_lightning',
-            inputs: recipe.inputs,
-            output: recipe.output
-        });
-        if (recipe.id) {
-            if (!recipe.id.includes(':')) {
-                recipe.id = 'enigmatica:expert/interactio/item_lightning/' + recipe.id;
-            }
-            re.id(recipe.id);
-        }
+        recipe.type = 'interactio:item_lightning';
+
+        recipe.inputs = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+
+        event.custom(recipe).id(recipe.id);
     });
 });

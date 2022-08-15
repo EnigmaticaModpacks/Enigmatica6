@@ -37,7 +37,7 @@ onEvent('recipes', (event) => {
                 '#forge:dusts/mana',
                 '#forge:ingots/manasteel',
                 'thermal:basalz_powder',
-                'undergarden:tremblecrust',
+                'undergarden:shiverstone',
                 '#quark:runes',
                 'aquaculture:worm'
             ],
@@ -80,9 +80,29 @@ onEvent('recipes', (event) => {
                 '#botania:runes/water',
                 '#botania:runes/fire',
                 'naturesaura:birth_spirit',
-                'kubejs:syrup_bottle',
-                '#minecraft:saplings',
-                '#minecraft:saplings',
+                'thermal:syrup_bottle',
+                [
+                    'byg:yellow_tulip',
+                    'byg:purple_tulip',
+                    'byg:magenta_tulip',
+                    'byg:green_tulip',
+                    'byg:cyan_tulip',
+                    'minecraft:pink_tulip',
+                    'minecraft:white_tulip',
+                    'minecraft:orange_tulip',
+                    'minecraft:red_tulip'
+                ],
+                [
+                    'byg:yellow_tulip',
+                    'byg:purple_tulip',
+                    'byg:magenta_tulip',
+                    'byg:green_tulip',
+                    'byg:cyan_tulip',
+                    'minecraft:pink_tulip',
+                    'minecraft:white_tulip',
+                    'minecraft:orange_tulip',
+                    'minecraft:red_tulip'
+                ],
                 'quark:turf',
                 'quark:turf',
                 'atum:osiris_godshard'
@@ -301,11 +321,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/refined_radiance',
+                '#forge:ingots/refined_glowstone',
                 '#botania:runes/fire',
                 '#botania:runes/summer',
                 '#botania:runes/wrath',
-                'architects_palette:sunstone'
+                'create:refined_radiance_casing'
             ],
             mana: 96000,
             output: 'mythicbotany:muspelheim_rune',
@@ -314,7 +334,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'create:shadow_steel',
+                '#forge:ingots/arcane_gold',
                 '#botania:runes/earth',
                 '#botania:runes/winter',
                 '#botania:runes/sloth',
@@ -327,11 +347,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/shadow_steel',
+                '#forge:ingots/refined_obsidian',
                 '#botania:runes/water',
                 '#botania:runes/winter',
                 '#botania:runes/wrath',
-                'architects_palette:moonstone'
+                'create:shadow_steel_casing'
             ],
             mana: 96000,
             output: 'mythicbotany:niflheim_rune',
@@ -353,22 +373,6 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'bloodmagic:blankslate',
-                'eidolon:ender_calx',
-                'bloodmagic:blankslate',
-                'bloodmagic:blankslate',
-                'bloodmagic:blankslate',
-                'eidolon:ender_calx',
-                'bloodmagic:blankslate',
-                'bloodmagic:blankslate'
-            ],
-            mana: 16000,
-            output: 'bloodmagic:blankrune',
-            count: 2,
-            id: `${id_prefix}blood_rune_blank`
-        },
-        {
-            inputs: [
                 'bloodmagic:blankrune',
                 'quark:white_rune',
                 'bloodmagic:blankslate',
@@ -384,6 +388,24 @@ onEvent('recipes', (event) => {
             output: 'bloodmagic:speedrune',
             count: 1,
             id: `${id_prefix}blood_rune_speed`
+        },
+        {
+            inputs: [
+                'bloodmagic:blankrune',
+                ['quark:green_rune', 'quark:lime_rune'],
+                'architects_palette:moonstone',
+                'ars_nouveau:glyph_delay',
+                'bloodmagic:reinforcedslate',
+                'kubejs:cutting_essence',
+                ['quark:green_rune', 'quark:lime_rune'],
+                'architects_palette:moonstone',
+                'ars_nouveau:glyph_delay',
+                'bloodmagic:reinforcedslate'
+            ],
+            mana: 32000,
+            output: 'bloodmagic:chargingrune',
+            count: 1,
+            id: `${id_prefix}blood_rune_charging`
         },
         {
             inputs: [
@@ -443,14 +465,14 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:blankrune',
                 'quark:orange_rune',
-                'bloodmagic:infusedslate',
+                'bloodmagic:reinforcedslate',
                 'bloodmagic:reagentholding',
-                'bloodmagic:infusedslate',
+                'bloodmagic:reinforcedslate',
                 'kubejs:cutting_essence',
                 'quark:orange_rune',
-                'bloodmagic:infusedslate',
+                'bloodmagic:reinforcedslate',
                 'bloodmagic:reagentholding',
-                'bloodmagic:infusedslate'
+                'bloodmagic:reinforcedslate'
             ],
             mana: 64000,
             output: 'bloodmagic:altarcapacityrune',
@@ -510,24 +532,6 @@ onEvent('recipes', (event) => {
             output: 'bloodmagic:accelerationrune',
             count: 1,
             id: `${id_prefix}blood_rune_acceleration`
-        },
-        {
-            inputs: [
-                'bloodmagic:blankrune',
-                'quark:green_rune',
-                'architects_palette:moonstone',
-                'ars_nouveau:glyph_delay',
-                'bloodmagic:demonslate',
-                'bloodmagic:masterbloodorb',
-                'quark:green_rune',
-                'architects_palette:moonstone',
-                'ars_nouveau:glyph_delay',
-                'bloodmagic:demonslate'
-            ],
-            mana: 96000,
-            output: 'bloodmagic:chargingrune',
-            count: 1,
-            id: `${id_prefix}blood_rune_charging`
         },
         {
             inputs: [
@@ -672,6 +676,22 @@ onEvent('recipes', (event) => {
             output: 'quark:black_rune',
             count: 2,
             id: `quark:tools/crafting/runes/black_rune_from_crystal`
+        },
+        {
+            inputs: [
+                'quark:red_rune',
+                'quark:orange_rune',
+                'quark:yellow_rune',
+                'quark:lime_rune',
+                'quark:light_blue_rune',
+                'quark:blue_rune',
+                'quark:magenta_rune',
+                'quark:white_rune'
+            ],
+            mana: 4000 * 8,
+            output: 'quark:rainbow_rune',
+            count: 8,
+            id: 'quark:tools/crafting/runes/rainbow_rune2'
         }
     ];
 

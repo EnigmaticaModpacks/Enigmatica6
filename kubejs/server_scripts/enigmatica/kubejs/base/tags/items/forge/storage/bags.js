@@ -4,7 +4,11 @@ onEvent('item.tags', (event) => {
         'botania:ender_hand',
         'botania:flower_bag',
         'sophisticatedbackpacks:backpack',
-        'industrialforegoing:infinity_backpack'
+        'industrialforegoing:infinity_backpack',
+        'thermal:satchel',
+        'occultism:satchel',
+        '#create:toolboxes',
+        'tetra:modular_toolbelt'
     ];
 
     var tags = ['forge:storage', 'forge:storage/bag'];

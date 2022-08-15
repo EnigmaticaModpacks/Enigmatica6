@@ -1,0 +1,92 @@
+name: Continuous Integration
+on:
+  push:
+    branches:
+      - 'develop'
+      - 'master'
+      - 'ci/*'
+  # pull_request:
+  #     branches:
+  #         - 'develop'
+  #         - 'master'
+
+jobs:
+  # job
+  instancesync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - uses: actions/cache@v3
+        with:
+          path: mods
+          key: ${{ github.run_id }}-mods
+
+      - run: java -jar InstanceSync.jar
+  # job
+  server:
+    needs: [instancesync]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        packmode: ['normal', 'expert']
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - uses: actions/cache@v3
+        with:
+          path: mods
+          key: ${{ github.run_id }}-mods
+
+      - name: Setting mode to ${{ matrix.packmode }}
+        run: |
+          node .github/actions/ci/packmode.js ${{ matrix.packmode }} > mode.json
+          cat mode.json
+
+      - name: Install server
+        run: |
+          cp ./automation/settings.cfg ./settings.cfg
+          cp ./automation/start-automated-server.sh ./start-automated-server.sh
+          pwsh ./automation/remove-client-mods.ps1
+
+      - name: Setting eula to true
+        run: |
+          echo "eula=true" > eula.txt
+          cat eula.txt
+
+      - run: node .github/actions/ci/start-server.js bash ./start-automated-server.sh
+
+      - run: node .github/actions/ci/log-kubejs-warnings.js
+      - run: node .github/actions/ci/kubejs-recipes.js
+      - run: node .github/actions/ci/kubejs-list-hose-pulley-fluids.js
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: server (${{ matrix.packmode }})
+          path: |
+            ./logs
+            ./crash-reports
+            ./kubejs/exported
+  # job
+  kubejs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+
+      - run: node .github/actions/ci/kubejs-todo-remove.js

@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/interactio/item_explode/';
     const recipes = [
         {
             inputs: [
@@ -13,7 +13,8 @@ onEvent('recipes', (event) => {
                 entries: [{ result: { item: 'create:andesite_alloy', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: `${id_prefix}andesite_alloy_from_iron`
         },
         {
             inputs: [
@@ -24,7 +25,8 @@ onEvent('recipes', (event) => {
                 entries: [{ result: { item: 'create:andesite_alloy', count: 2 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: `${id_prefix}andesite_alloy_from_zinc`
         },
         {
             inputs: [
@@ -37,7 +39,7 @@ onEvent('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'enigmatica:expert/interactio/superheated_steel_ingot'
+            id: `${id_prefix}superheated_steel_ingot`
         },
         {
             inputs: [
@@ -50,7 +52,7 @@ onEvent('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'enigmatica:expert/interactio/superheated_steel_block'
+            id: `${id_prefix}superheated_steel_block`
         },
         {
             inputs: [
@@ -76,18 +78,38 @@ onEvent('recipes', (event) => {
                 empty_weight: 3,
                 rolls: 3
             },
-            id: 'enigmatica:expert/interactio/item_explode/invar_dust'
+            id: `${id_prefix}invar_dust`
+        },
+        {
+            inputs: [
+                { tag: 'botania:runes/earth', count: 1 },
+                { item: 'quark:rainbow_rune', count: 8 }
+            ],
+            output: {
+                entries: [
+                    { result: { item: 'quark:red_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:orange_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:yellow_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:green_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:blue_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:indigo_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:violet_crystal_cluster', count: 1 }, weight: 2 },
+                    { result: { item: 'quark:white_crystal_cluster', count: 1 }, weight: 2 }
+                ],
+                empty_weight: 84,
+                rolls: 100
+            },
+            id: `${id_prefix}rainbow_crystal_clusters`
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
-            type: 'interactio:item_explode',
-            inputs: recipe.inputs,
-            output: recipe.output
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event
+            .custom({
+                type: 'interactio:item_explode',
+                inputs: recipe.inputs,
+                output: recipe.output
+            })
+            .id(recipe.id);
     });
 });

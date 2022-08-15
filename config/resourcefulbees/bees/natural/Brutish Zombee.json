@@ -1,0 +1,73 @@
+{
+    "flower": "ALL",
+    "lore": "Tier 1:\nSometimes a Zombee is born... wrong, and agressive.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 2.5,
+    "hasHoneycomb": true,
+    "traits": ["zombie", "angry", "can_swim"],
+    "baseLayerTexture": "zombie/zombie_bee",
+    "ColorData": {
+        "honeycombColor": "#2f4e32",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 10
+    },
+    "MutationData": {
+    	"hasMutation": true,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:stone",
+            "outputs": [
+              {"outputID": "minecraft:cobblestone", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "eidolon:zombie_heart",
+        "mainOutputWeight": 0.05,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.75,
+        "secondaryOutputCount": 6,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.75,
+        "bottleOutputCount": 2,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:SPOOKY,DEAD,RARE,UNDERGARDEN",
+        "biomeBlacklist": "tag:OCEAN,END",
+        "lightLevel": "NIGHT",
+        "spawnWeight": 5,
+        "minYLevel": 12,
+        "maxYLevel": 250,
+        "minGroupSize": 2,
+        "maxGroupSize": 4
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "eidolon:zombie_heart",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

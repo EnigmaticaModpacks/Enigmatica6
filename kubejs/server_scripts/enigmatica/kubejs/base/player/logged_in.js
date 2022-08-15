@@ -1,13 +1,16 @@
 onEvent('player.logged_in', (event) => {
+    const startingItemsGameStage = 'starting_items';
     randomWaystone = () => {
         const waystones = ['waystones:waystone', 'waystones:mossy_waystone', 'waystones:sandy_waystone'];
-        return waystones[Math.floor(Math.random() * waystones.length + 1)];
+        return waystones[Math.floor(Math.random() * waystones.length)];
     };
 
-    if (!event.hasGameStage('starting_items')) {
+    setMode(event.player);
+
+    if (!event.hasGameStage(startingItemsGameStage)) {
         event.player.give(Item.of('ftbquests:book'));
         event.player.give(Item.of(randomWaystone()));
 
-        event.addGameStage('starting_items');
+        event.addGameStage(startingItemsGameStage);
     }
 });

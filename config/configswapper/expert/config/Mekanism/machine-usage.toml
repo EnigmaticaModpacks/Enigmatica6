@@ -1,0 +1,47 @@
+
+#Machine Energy Usage Config. This config is synced from server to client.
+[usage]
+	#Energy per operation tick (Joules).
+	digitalMiner = "5000"
+	#Energy per operation tick (Joules).
+	energizedSmelter = "160"
+	#Energy per operation tick (Joules).
+	laser = "500000"
+	#Energy per operation tick (Joules).
+	modificationStation = "2000"
+	#Energy per operation tick (Joules).
+	chemicalInjectionChamber = "4000"
+	#Energy per operation tick (Joules).
+	crusher = "2000"
+	#Energy per operation tick (Joules).
+	pressurizedReactionBase = "500"
+	#Energy per operation tick (Joules).
+	formulaicAssemblicator = "50"
+	#Energy per operation tick (Joules).
+	precisionSawmill = "2000"
+	#Energy per operation tick (Joules).
+	metallurgicInfuser = "2000"
+	#Energy per operation tick (Joules).
+	purificationChamber = "2000"
+	#Energy per operation tick (Joules).
+	chemicalCrystallizer = "2000"
+	#Energy per operation tick (Joules).
+	fluidicPlenisher = "50"
+	#Energy per operation tick (Joules).
+	electricPump = "50"
+	#Energy per operation tick (Joules).
+	enrichmentChamber = "2000"
+	#Energy per operation tick (Joules).
+	chemicalDissolutionChamber = "4000"
+	#Energy per operation tick (Joules).
+	chemicalWasher = "640"
+
+	#Teleporter
+	[usage.teleporter]
+		#Joules per unit of distance travelled during teleportation - sqrt(xDiff^2 + yDiff^2 + zDiff^2).
+		teleporterDistance = "50"
+		#Flat additional cost for interdimensional teleportation.
+		teleporterDimensionPenalty = "50000"
+		#Base Joules cost for a teleportation.
+		teleporterBase = "5000"
+

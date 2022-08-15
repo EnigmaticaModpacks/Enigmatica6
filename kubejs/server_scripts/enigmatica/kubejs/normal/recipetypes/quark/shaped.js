@@ -3,6 +3,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:normal/quark/shaped/';
+
     const recipes = [
         {
             output: Item.of('quark:white_candle', 4),
@@ -10,15 +12,12 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#enigmatica:candle_materials',
                 B: '#forge:string'
-            }
+            },
+            id: `${id_prefix}white_candle`
         }
     ];
 
     recipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

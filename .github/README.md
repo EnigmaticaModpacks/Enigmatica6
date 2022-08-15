@@ -6,10 +6,9 @@ This is the official repository and issue-tracker for the modpack Enigmatica 6, 
 
 -   [Testing](#testing)
 -   [Setup](#setup)
-    -   [MultiMC (Windows/Mac/Linux)](#multimc-linux--windows--mac)
     -   [CurseForge App (Windows/Mac)](#curseforge-app-windows--mac)
+    -   [MultiMC (Windows/Mac/Linux)](#multimc-linux--windows--mac)
 -   [Server Automation](#server-automation)
--   [Server Automation with Docker](#server-automation-with-docker)
 -   [Links](#links)
 
 <hr></hr>
@@ -98,6 +97,8 @@ Re-run the script `update-server` whenever you want to update to a new modpack v
 
 ## Links
 
--   [CurseForge](https://www.curseforge.com/minecraft/modpacks/enigmatica6)
+-   [CurseForge (normal)](https://www.curseforge.com/minecraft/modpacks/enigmatica6)
+
+-   [CurseForge (expert)](https://www.curseforge.com/minecraft/modpacks/enigmatica6expert)
 
 -   [Discord](https://discord.gg/HnWNd7X)

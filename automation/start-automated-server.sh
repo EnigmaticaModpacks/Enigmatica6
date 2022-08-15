@@ -23,9 +23,9 @@
 ####
 
 if test -f $PWD/remove-client-mods.ps1; then
-	powershell $PWD/remove-client-mods.ps1 >/dev/null
+	pwsh $PWD/remove-client-mods.ps1 >/dev/null
 elif test -f remove-client-mods.ps1; then
-	powershell remove-client-mods.ps1 >/dev/null
+	pwsh remove-client-mods.ps1 >/dev/null
 fi
 
 unameOut="$(uname -s)"
@@ -196,7 +196,6 @@ echo "DEBUG: MAX_RAM=$MAX_RAM" >>serverstart.log 2>&1
 echo "DEBUG: JAVA_ARGS=$JAVA_ARGS" >>serverstart.log 2>&1
 echo "DEBUG: CRASH_COUNT=$CRASH_COUNT" >>serverstart.log 2>&1
 echo "DEBUG: RUN_FROM_BAD_FOLDER=$RUN_FROM_BAD_FOLDER" >>serverstart.log 2>&1
-echo "DEBUG: IGNORE_OFFLINE=$IGNORE_OFFLINE" >>serverstart.log 2>&1
 echo "DEBUG: MCVER=$MCVER" >>serverstart.log 2>&1
 echo "DEBUG: FORGEVER=$FORGEVER" >>serverstart.log 2>&1
 echo "DEBUG: FORGEURL=$FORGEURL" >>serverstart.log 2>&1
@@ -221,7 +220,6 @@ if [[ "$answer" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
 fi
 
 check_dir
-check_connection
 check_binaries
 eula
 
@@ -259,7 +257,6 @@ while true ; do
 
 	#re-validate stuff each server restart
 	check_dir
-	check_connection
 	check_binaries
 	eula
 	echo "INFO: Server-auto-restart commencing"  >>serverstart.log 2>&1

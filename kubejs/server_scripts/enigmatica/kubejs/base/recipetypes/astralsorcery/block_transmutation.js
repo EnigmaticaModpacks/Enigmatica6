@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/astralsorcery/block_transmutation/';
+
     var data = {
         recipes: [
             { inputTag: '#forge:ores/diamond', output: 'emendatusenigmatica:emerald_ore', starlight: 1000 },
@@ -9,10 +11,11 @@ onEvent('recipes', (event) => {
             }
         ]
     };
+
     data.recipes.forEach((recipe) => {
         Ingredient.of(recipe.inputTag).stacks.forEach((input) => {
             if (!input.id.includes('chunk')) {
-                event.custom({
+                fallback_id(event.custom({
                     type: 'astralsorcery:block_transmutation',
                     input: {
                         block: input.id
@@ -21,7 +24,7 @@ onEvent('recipes', (event) => {
                         block: recipe.output
                     },
                     starlight: recipe.starlight
-                });
+                }), id_prefix);
             }
         });
     });

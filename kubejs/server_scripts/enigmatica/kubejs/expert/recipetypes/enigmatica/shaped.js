@@ -5,111 +5,85 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/enigmatica/';
     const recipes = [];
 
-    powahTiers.forEach(function (tier, index) {
-        if (tier == 'starter') {
+    buildWoodVariants.forEach((wood) => {
+        if (wood.modId == 'minecraft') {
             return;
         }
-        let capacitor = `powah:capacitor_${tier}`;
 
-        if (tier == 'basic') {
-            capacitor = `powah:capacitor_${tier}_large`;
+        var dupes = [
+            'palo_verde',
+            'withering_oak',
+            'blue_archwood',
+            'green_archwood',
+            'purple_archwood',
+            'menril_filled',
+            'watchful_aspen',
+            'crustose',
+            'sappy_maple',
+            'avocado'
+        ];
+
+        if (dupes.includes(wood.logType)) {
+            return;
         }
 
-        let wire_coil = 'immersiveengineering:coil_lv';
-        if (tier == 'blazing' || tier == 'niotic') {
-            wire_coil = 'immersiveengineering:coil_mv';
-        } else if (tier == 'spirited' || tier == 'nitro') {
-            wire_coil = 'immersiveengineering:coil_hv';
-        }
-
-        let lowerTiers = [],
-            i = 0,
-            j = powahTiers.indexOf(tier);
-
-        while (i < j) {
-            lowerTiers.push(powahTiers[i]);
-            i++;
-        }
+        //All recipes using planks here
 
         recipes.push(
             {
-                output: Item.of(`powah:furnator_${tier}`),
-                pattern: ['BCB'],
+                output: Item.of('storagedrawers:oak_full_drawers_1'),
+                pattern: ['AAA', ' C ', 'AAA'],
                 key: {
-                    B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:furnator_${item}`))
+                    A: wood.plankBlock,
+                    C: 'farmersdelight:basket'
                 },
-                id: `${id_prefix}powah/furnator_${tier}`
+                id: `${id_prefix}oak_full_drawers_1_from_${wood.logType}_planks`
             },
             {
-                output: Item.of(`powah:magmator_${tier}`),
-                pattern: ['BAB', 'BCB'],
+                output: Item.of('storagedrawers:oak_full_drawers_2', 2),
+                pattern: ['ACA', 'AAA', 'ACA'],
                 key: {
-                    A: wire_coil,
-                    B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:magmator_${item}`))
+                    A: wood.plankBlock,
+                    C: 'farmersdelight:basket'
                 },
-                id: `${id_prefix}powah/magmator_${tier}`
+                id: `${id_prefix}oak_full_drawers_2_from_${wood.logType}_planks`
             },
             {
-                output: Item.of(`powah:thermo_generator_${tier}`),
-                pattern: ['BAB', 'BCB'],
+                output: Item.of('storagedrawers:oak_full_drawers_4', 4),
+                pattern: ['CAC', 'AAA', 'CAC'],
                 key: {
-                    A: `powah:magmator_${tier}`,
-                    B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:thermo_generator_${item}`))
+                    A: wood.plankBlock,
+                    C: 'farmersdelight:basket'
                 },
-                id: `${id_prefix}powah/thermo_generator_${tier}`
+                id: `${id_prefix}oak_full_drawers_4_from_${wood.logType}_planks`
             },
-            {
-                output: Item.of(`powah:energy_hopper_${tier}`),
-                pattern: ['A A', 'ABA'],
-                key: {
-                    A: capacitor,
-                    B: Ingredient.of(lowerTiers.map((item) => `powah:energy_hopper_${item}`))
-                },
-                id: `${id_prefix}powah/energy_hopper_${tier}`
-            },
-            {
-                output: Item.of(`powah:energy_discharger_${tier}`),
-                pattern: ['ABA', ' C ', ' A '],
-                key: {
-                    A: capacitor,
-                    B: `powah:energy_discharger_${tier}`,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:energy_cell_${item}`))
-                },
-                id: `${id_prefix}powah/energy_discharger_${tier}`
-            }
-        );
 
-        let previousTier;
-        if (index > 1) {
-            previousTier = `powah:energizing_rod_${powahTiers[index - 1]}`;
-        } else {
-            previousTier = 'immersiveengineering:tesla_coil';
-        }
-        recipes.push(
             {
-                output: `powah:energizing_rod_${tier}`,
-                pattern: [' A ', 'BCB', 'BDB'],
+                output: Item.of('storagedrawers:oak_half_drawers_1'),
+                pattern: ['AAA', ' C ', 'AAA'],
                 key: {
-                    A: 'refinedstorage:quartz_enriched_iron_block',
-                    B: capacitor,
-                    C: previousTier,
-                    D: wire_coil
+                    A: wood.slabBlock,
+                    C: 'farmersdelight:basket'
                 },
-                id: `powah:crafting/energizing_rod_${tier}`
+                id: `${id_prefix}oak_half_drawers_1_from_${wood.logType}_slab`
             },
             {
-                output: `powah:player_transmitter_${tier}`,
-                pattern: [' A ', 'BCB', 'BDB'],
+                output: Item.of('storagedrawers:oak_half_drawers_2', 2),
+                pattern: ['ACA', 'AAA', 'ACA'],
                 key: {
-                    A: 'powah:player_aerial_pearl',
-                    B: capacitor,
-                    C: previousTier,
-                    D: 'powah:dielectric_casing'
+                    A: wood.slabBlock,
+                    C: 'farmersdelight:basket'
                 },
-                id: `powah:crafting/player_tranmitter_${tier}`
+                id: `${id_prefix}oak_half_drawers_2_from_${wood.logType}_slab`
+            },
+            {
+                output: Item.of('storagedrawers:oak_half_drawers_4', 4),
+                pattern: ['CAC', 'AAA', 'CAC'],
+                key: {
+                    A: wood.slabBlock,
+                    C: 'farmersdelight:basket'
+                },
+                id: `${id_prefix}oak_half_drawers_4_from_${wood.logType}_slab`
             }
         );
     });

@@ -8,7 +8,7 @@ onEvent('item.tags', (event) => {
         'bloodmagic:soulpickaxe',
         'bloodmagic:soulshovel',
         'bloodmagic:soulscythe',
-        'kubejs:spirit_heat_exchanger',
+        'kubejs:spirit_entropic_gateway',
         'losttrinkets:magical_feathers',
         'magicfeather:magicfeather'
     ];

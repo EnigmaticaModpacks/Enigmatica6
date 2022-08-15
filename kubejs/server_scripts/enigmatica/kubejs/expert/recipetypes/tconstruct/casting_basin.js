@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/tconstruct/casting_basin/';
     var data = {
         recipes: [
             {
@@ -12,6 +13,15 @@ onEvent('recipes', (event) => {
                 output: 'betterendforge:infusion_pedestal',
                 cooling_time: 233,
                 id: 'betterendforge:infusion_pedestal'
+            },
+            {
+                fluid: 'kubejs:molten_compressed_iron',
+                fluid_amount: 18,
+                casts: [{ item: 'minecraft:light_gray_concrete_powder' }],
+                cast_consumed: true,
+                output: 'pneumaticcraft:reinforced_stone',
+                cooling_time: 10,
+                id: `${id_prefix}reinforced_stone`
             }
         ]
     };

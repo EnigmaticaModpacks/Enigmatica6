@@ -10,6 +10,7 @@
 	quests: [
 		{
 			title: "Welcome to Eidolon!"
+			icon: "eidolon:codex"
 			x: 1.5d
 			y: 0.5d
 			shape: "hexagon"
@@ -24,11 +25,12 @@
 				"~Merlo"
 			]
 			size: 1.5d
+			optional: true
 			id: "0000000000000E80"
 			tasks: [{
-				id: "0000000000000E81"
-				type: "checkmark"
-				icon: "eidolon:codex"
+				id: "5BB374740D4295E0"
+				type: "item"
+				item: "eidolon:tattered_cloth"
 			}]
 			rewards: [{
 				id: "5855578CE2117C3E"
@@ -261,7 +263,24 @@
 			tasks: [{
 				id: "0000000000000E91"
 				type: "item"
-				item: "eidolon:crucible"
+				title: "Crucible"
+				icon: "eidolon:crucible"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "eidolon:crucible"
+								Count: 1b
+							}
+							{
+								id: "farmersdelight:cooking_pot"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -336,7 +355,24 @@
 			tasks: [{
 				id: "0000000000000E95"
 				type: "item"
-				item: "eidolon:worktable"
+				title: "Magic Workbench"
+				icon: "eidolon:worktable"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "masterfulmachinery:wicked_altar_controller"
+								Count: 1b
+							}
+							{
+								id: "eidolon:worktable"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0000000000000EC2"
@@ -573,13 +609,12 @@
 					id: "0000000000000EAB"
 					type: "item"
 					item: "eidolon:arcane_gold_ingot"
-					count: 16L
+					count: 4L
 				}
 				{
 					id: "0000000000000EAC"
 					type: "item"
 					item: "eidolon:lesser_soul_gem"
-					count: 8L
 				}
 				{
 					id: "0000000000000EC3"

@@ -75,6 +75,33 @@ onEvent('server.datapack.low_priority', (event) => {
             ]
         },
         {
+            name: 'amadron_mineral_survey_the_end',
+            rolls: [16, 32],
+            entries: [
+                { amount: [16, 24], weight: 100, item: 'emendatusenigmatica:diamond_chunk' },
+                { amount: [16, 24], weight: 500, item: 'emendatusenigmatica:emerald_chunk' },
+                { amount: [16, 24], weight: 50, item: 'emendatusenigmatica:lapis_chunk' },
+                { amount: [16, 24], weight: 50, item: 'emendatusenigmatica:apatite_chunk' },
+                { amount: [16, 24], weight: 50, item: 'emendatusenigmatica:arcane_chunk' },
+                { amount: [16, 24], weight: 500, item: 'emendatusenigmatica:dimensional_chunk' },
+
+                { amount: [16, 24], weight: 500, item: 'emendatusenigmatica:iron_chunk' },
+                { amount: [16, 24], weight: 400, item: 'emendatusenigmatica:aluminum_chunk' },
+                { amount: [16, 24], weight: 250, item: 'emendatusenigmatica:silver_chunk' },
+                { amount: [16, 24], weight: 200, item: 'emendatusenigmatica:nickel_chunk' },
+                { amount: [16, 24], weight: 200, item: 'emendatusenigmatica:tin_chunk' },
+                { amount: [16, 24], weight: 100, item: 'emendatusenigmatica:zinc_chunk' },
+
+                { amount: [16, 24], weight: 1000, item: 'betterendforge:ender_ore' },
+                { amount: [16, 24], weight: 1400, item: 'betterendforge:thallasium_ore' },
+                { amount: [16, 24], weight: 1500, item: 'betterendforge:amber_ore' },
+                { amount: [16, 24], weight: 1100, item: 'betterendforge:smaragdant_crystal' },
+                { amount: [16, 24], weight: 500, item: 'betterendforge:smaragdant_crystal_shard' },
+                { amount: [16, 24], weight: 1100, item: 'betterendforge:aurora_crystal' },
+                { amount: [16, 24], weight: 500, item: 'betterendforge:crystal_shards' }
+            ]
+        },
+        {
             name: 'amadron_botanical_survey_nether',
             rolls: [16, 32],
             entries: [
@@ -267,6 +294,15 @@ onEvent('server.datapack.low_priority', (event) => {
             ]
         },
         {
+            name: 'amadron_mineral_survey_the_end_combo',
+            type: 'multi_pool',
+            pools: [
+                { table: 'amadron_survey_tool_return', weight: 1 },
+                { table: 'amadron_survey_air_canister_return', weight: 1 },
+                { table: 'amadron_mineral_survey_the_end', weight: 1 }
+            ]
+        },
+        {
             name: 'amadron_botanical_survey_nether_combo',
             type: 'multi_pool',
             pools: [
@@ -361,40 +397,3 @@ onEvent('server.datapack.low_priority', (event) => {
         }
     });
 });
-
-/*
-{ item: 'emendatusenigmatica:cobalt_chunk' },
-{ item: 'emendatusenigmatica:dimensional_chunk' },
-{ item: 'emendatusenigmatica:arcane_chunk' },
-{ item: 'emendatusenigmatica:potassium_nitrate_chunk' },
-{ item: 'emendatusenigmatica:sulfur_chunk' },
-{ item: 'emendatusenigmatica:apatite_chunk' },
-{ item: 'emendatusenigmatica:cinnabar_chunk' },
-{ item: 'emendatusenigmatica:bitumen_chunk' },
-{ item: 'emendatusenigmatica:fluorite_chunk' },
-{ item: 'emendatusenigmatica:zinc_chunk' },
-{ item: 'emendatusenigmatica:tin_chunk' },
-{ item: 'emendatusenigmatica:osmium_chunk' },
-{ item: 'emendatusenigmatica:uranium_chunk' },
-{ item: 'emendatusenigmatica:nickel_chunk' },
-{ item: 'emendatusenigmatica:lead_chunk' },
-{ item: 'emendatusenigmatica:silver_chunk' },
-{ item: 'emendatusenigmatica:aluminum_chunk' },
-{ item: 'emendatusenigmatica:copper_chunk' },
-{ item: 'emendatusenigmatica:quartz_chunk' },
-{ item: 'emendatusenigmatica:redstone_chunk' },
-{ item: 'emendatusenigmatica:lapis_chunk' },
-{ item: 'emendatusenigmatica:emerald_chunk' },
-{ item: 'emendatusenigmatica:diamond_chunk' },
-{ item: 'emendatusenigmatica:gold_chunk' },
-{ item: 'emendatusenigmatica:iron_chunk' },
-{ item: 'emendatusenigmatica:coal_chunk' },
-{ item: 'atum:nebu_ore' },
-{ item: 'atum:relic_ore' },
-{ item: 'astralsorcery:aquamarine_sand_ore' },
-{ item: 'minecrafancient_debris' },
-{ item: 'betterendforge:thallasium_ore' },
-{ item: 'betterendforge:amber_ore' },
-{ item: 'betterendforge:ender_ore' },
-{ item: 'minecraft:glowstone' } 
-*/

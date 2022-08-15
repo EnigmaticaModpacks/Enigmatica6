@@ -1,95 +1,54 @@
 
+#-----------------------------------------------------------------------------------------
+# Average distance between spawn attempts for Repurposed Structures Villages 
+# 1 for spawning in most chunks and 1001 for no spawn.
 [Spawnrates]
-	#
-	# How rare are Badlands Villages in Badland biomes.
-	# 1 for spawning in most chunks and 1001 for no spawn.
 	#Range: 1 ~ 1001
 	badlandsVillageMaxChunkDistance = 34
-	#
-	# How rare are Birch Villages in Birch biomes.
-	# 1 for spawning in most chunks and 1001 for no spawn.
 	#Range: 1 ~ 1001
 	birchVillageMaxChunkDistance = 47
-	#
-	# How rare are Dark Forest Villages in Dark Forest biomes.
-	# 1 for spawning in most chunks and 1001 for no spawn.
 	#Range: 1 ~ 1001
 	darkForestVillageMaxChunkDistance = 47
-	#
-	# How rare are Jungle Villages in Jungle biomes.
-	# 1 for spawning in most chunks and 1001 for no spawn.
 	#Range: 1 ~ 1001
 	jungleVillageMaxChunkDistance = 47
-	#
-	# How rare are Swamp Villages in Swamp biomes.
-	# 1 for spawning in most chunks and 1001 for no spawn.
 	#Range: 1 ~ 1001
 	swampVillageMaxChunkDistance = 47
-	#
-	# How rare are Mountains Villages in Mountains biomes.
-	# 1 for spawning in most chunks and 1001 for no spawn.
 	#Range: 1 ~ 1001
 	mountainsVillageMaxChunkDistance = 47
-	#
-	# How rare are Giant Taiga Villages in Giant Taiga biomes.
-	# 1 for spawning in most chunks and 1001 for no spawn.
 	#Range: 1 ~ 1001
 	giantTaigaVillageMaxChunkDistance = 47
-	#
-	# How rare are Oak Villages in forest category
-	# biomes that are not birch or dark forest.
 	#Range: 1 ~ 1001
 	oakVillageMaxChunkDistance = 47
-	#
-	# How rare are Crimson Village in Crimson Forest biomes.
-	# 1 for spawning in most chunks and 1001 for none.
 	#Range: 1 ~ 1001
 	crimsonVillageMaxChunkDistance = 30
-	#
-	# How rare are Warped Village in Warped Forest biomes.
-	# 1 for spawning in most chunks and 1001 for none.
 	#Range: 1 ~ 1001
 	warpedVillageMaxChunkDistance = 30
+	#Range: 1 ~ 1001
+	villageMushroomAverageChunkDistance = 24
 
+#-----------------------------------------------------------------------------------------
+# Size of the village. This is how many pieces long a path can be from the start piece.
 [Size]
-	#
-	# Size of the Village. This is how many pieces long a path can be from the start piece.
 	#Range: 1 ~ 30
 	badlandsVillageSize = 10
-	#
-	# Size of the Village. This is how many pieces long a path can be from the start piece.
 	#Range: 1 ~ 30
 	birchVillageSize = 6
-	#
-	# Size of the Village. This is how many pieces long a path can be from the start piece.
 	#Range: 1 ~ 30
 	darkForestVillageSize = 6
-	#
-	# Size of the Village. This is how many pieces long a path can be from the start piece.
 	#Range: 1 ~ 30
 	jungleVillageSize = 8
-	#
-	# Size of the Village. This is how many pieces long a path can be from the start piece.
 	#Range: 1 ~ 30
 	swampVillageSize = 6
-	#
-	# Size of the Village. This is how many pieces long a path can be from the start piece.
 	#Range: 1 ~ 30
 	mountainsVillageSize = 6
-	#
-	# Size of the Village. This is how many pieces long a path can be from the start piece.
 	#Range: 1 ~ 30
 	giantTaigaVillageSize = 6
-	#
-	# Size of the Village. This is how many pieces long a path can be from the start piece.
 	#Range: 1 ~ 30
 	oakVillageSize = 6
-	#
-	# Size of the Village. This is how many pieces long a path can be from the start piece.
 	#Range: 1 ~ 30
 	crimsonVillageSize = 6
-	#
-	# Size of the Village. This is how many pieces long a path can be from the start piece.
 	#Range: 1 ~ 30
 	warpedVillageSize = 6
+	#Range: 1 ~ 30
+	mushroomVillageSize = 8
 

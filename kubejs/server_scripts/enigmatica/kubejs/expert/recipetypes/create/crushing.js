@@ -3,11 +3,9 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:expert/create/crushing/';
     const recipes = [];
     recipes.forEach((recipe) => {
-        const re = event.recipes.create.crushing(recipe.outputs, recipe.input);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event.recipes.create.crushing(recipe.outputs, recipe.input).id(recipe.id);
     });
 });

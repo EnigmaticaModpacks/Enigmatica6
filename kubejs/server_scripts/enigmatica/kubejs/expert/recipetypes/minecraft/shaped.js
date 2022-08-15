@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'minecraft:furnace',
             pattern: ['AAA', 'ABA', 'AAA'],
@@ -66,7 +66,7 @@ onEvent('recipes', (event) => {
             pattern: ['BBB', 'ACA', 'BBB'],
             key: {
                 A: 'create:andesite_alloy',
-                B: 'minecraft:stone_slab',
+                B: '#enigmatica:crafting_slabs',
                 C: 'minecraft:comparator'
             },
             id: 'minecraft:observer'
@@ -92,14 +92,40 @@ onEvent('recipes', (event) => {
                 D: '#forge:rods/wooden'
             },
             id: 'minecraft:smoker'
+        },
+        {
+            output: Item.of('minecraft:red_nether_bricks'),
+            pattern: ['AA', 'AA'],
+            key: {
+                A: 'kubejs:red_nether_brick'
+            },
+            id: 'minecraft:red_nether_bricks'
+        },
+        {
+            output: 'minecraft:enchanting_table',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'ars_nouveau:novice_spell_book',
+                B: '#forge:gems/prismarine',
+                C: 'eidolon:stone_altar',
+                D: 'minecraft:crying_obsidian',
+                E: 'minecraft:conduit'
+            },
+            id: 'minecraft:enchanting_table'
+        },
+        {
+            output: 'minecraft:brewing_stand',
+            pattern: ['ABA', ' B ', 'CCC'],
+            key: {
+                A: '#forge:nuggets/invar',
+                B: '#forge:rods/brass',
+                C: '#forge:ingots/pewter'
+            },
+            id: 'minecraft:brewing_stand'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

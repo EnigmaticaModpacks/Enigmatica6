@@ -1,0 +1,76 @@
+
+#Gameplay settings
+[settings]
+
+	#Bit-Bag settings
+	[settings.bit-bag]
+		#Should the durability bar display the emptiness of the bag instead of the fullness?
+		invert-durability-bar-indication = false
+
+	#Configures the tool mode icons used to render the selected tool modes of tools in the hot bar.
+	[settings.selected-tool-mode-icons]
+		#Sets which tool mode icon renderer is in use. Currently C&B provides: `chiselsandbits:group` (Render the group icon in the top right corner) and `chiselsandbits:noop` (No icon) as options.
+		renderer = "chiselsandbits:group"
+
+	#Configures the chiseling and placement previews.
+	[settings.chiseling-previews]
+		#Sets which preview renderer is in use. Currently C&B provides: `chiselsandbits:default` (Simple outline rendering) and `chiselsandbits:noop` (No preview) as options.
+		renderer = "chiselsandbits:default"
+
+		#Configures the default chiseling and placement preview.
+		[settings.chiseling-previews.default]
+
+			#Configures the colors of the outlines that the chiseling and placement preview have.
+			[settings.chiseling-previews.default.colors]
+				#The color for the chiseling preview outline.
+				chiseling = [0.85, 0.0, 0.0, 0.65]
+				#The color for the placement preview outline.
+				placement = [0.0, 0.85, 0.0, 0.65]
+
+#Performance related options.
+[performance]
+
+	#Configures caches
+	[performance.caches]
+
+		#Cache size related options.
+		[performance.caches.sizes]
+			#Size of the bit storage inner models cache.
+			#Range: 0 ~ 9223372036854775807
+			bit-storage-content-models = 100
+			#Size of the block model cache.
+			#Range: 3500 ~ 20000
+			block-models = 10000
+			#Size of the model face cache.
+			#Range: 3500 ~ 20000
+			block-faces = 10000
+
+	#Options related to the building of the chiseled block models.
+	[performance.model-building]
+		#How many CPU threads should be used to build models?
+		#Range: 1 ~ 4
+		thead-count = 2
+
+	#Lighting related options.
+	[performance.lighting]
+		#Should C&B pull lighting values from model faces.
+		extract-lighting-values-from-faces = true
+		#Should C&B pull lighting values from blockstates.
+		extract-lighting-values-from-blockstates = true
+
+#Options for the GUI
+[gui]
+
+	#Options for the radial menu.
+	[gui.radial-menu]
+		#Should the mouse indicator be rendered?
+		display-mouse-indicator = false
+
+#Configures options related to different compatibility modules.
+[compat]
+
+	#Compatibility options for JEI.
+	[compat.jei]
+		#Should C&B inject its bits into JEI?
+		inject-bits = false
+

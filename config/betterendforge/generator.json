@@ -1,0 +1,64 @@
+{
+    "biomeMap": {
+        "biomeSizeLand [default: 256]": 256,
+        "biomeSizeVoid [default: 256]": 256,
+        "biomeSizeCaves [default: 32]": 32
+    },
+    "portal": {
+        "hasPortal [default: true]": true,
+        "customEndPortal [default: true]": true
+    },
+    "spikes": {
+        "hasSpikes [default: true]": true,
+        "customObsidianSpikes [default: true]": true
+    },
+    "hasDragonFights [default: true]": true,
+    "swapOverworldToEnd [default: false]": false,
+    "chorusPlant": {
+        "changeChorusPlant [default: true]": true,
+        "removeChorusFromVanillaBiomes [default: false]": false
+    },
+    "customGenerator": {
+        "vanillaEndIntegration [default: true]": true,
+        "useNewGenerator [default: true]": false,
+        "noRingVoid [default: false]": false,
+        "generateCentralIsland [default: true]": true,
+        "endCityFailChance [default: 5]": 5,
+        "layers": {
+            "bigIslands": {
+                "distance[1-8192] [default: 300.0]": 300.0,
+                "scale[0.1-1024] [default: 200.0]": 200.0,
+                "averageHeight[0-255] [default: 70]": 70,
+                "heightVariation[0-255] [default: 10]": 10,
+                "coverage[0-1] [default: 0.5]": 0.5,
+                "hasCentralIsland [default: false]": false
+            },
+            "mediumIslands": {
+                "distance[1-8192] [default: 150.0]": 150.0,
+                "scale[0.1-1024] [default: 100.0]": 100.0,
+                "averageHeight[0-255] [default: 70]": 70,
+                "heightVariation[0-255] [default: 20]": 20,
+                "coverage[0-1] [default: 0.5]": 0.5,
+                "hasCentralIsland [default: true]": true
+            },
+            "smallIslands": {
+                "distance[1-8192] [default: 60.0]": 60.0,
+                "scale[0.1-1024] [default: 50.0]": 50.0,
+                "averageHeight[0-255] [default: 70]": 70,
+                "heightVariation[0-255] [default: 30]": 30,
+                "coverage[0-1] [default: 0.5]": 0.5,
+                "hasCentralIsland [default: false]": false
+            }
+        },
+        "voidRingSize [default: 1000]": 1000
+    },
+    "generateObsidianPlatform [default: true]": true,
+    "spawn": {
+        "changeSpawn [default: false]": false,
+        "point": {
+            "x [default: 20]": 20,
+            "y [default: 65]": 65,
+            "z [default: 0]": 0
+        }
+    }
+}

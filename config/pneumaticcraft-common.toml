@@ -11,23 +11,23 @@
 	fuel_bucket_efficiency = 0.05
 	#Should dyes be used up when coloring things (Drones, Logistics Modules, Redstone Modules)?
 	use_up_dyes_when_coloring = false
-	#Oil worldgen blacklist by biome category: add biome categories to this list if you don't want oil worldgen to happen there. Accepted categories are: beach, desert, extreme_hills, forest, icy, jungle, mesa, mushroom, nether, none, ocean, plains, river, savanna, swamp, taiga, the_end.  This works in conjunction with 'oil_world_gen_blacklist' - if a biome matches either, then no oil lakes will generate there.
+	#Oil worldgen blacklist by biome category: add biome categories to this list if you don't want oil lake worldgen to happen there. Accepted categories are: beach, desert, extreme_hills, forest, icy, jungle, mesa, mushroom, nether, none, ocean, plains, river, savanna, swamp, taiga, the_end.  This works in conjunction with 'oil_world_gen_blacklist' - if a biome matches either, then no oil lakes will generate there.
 	oil_world_gen_category_blacklist = ["nether", "the_end"]
 	#Maximum number of blocks in the area defined in an Area Programming Puzzle Piece
 	#Range: > 1
 	max_programming_area = 250000
 	#Are drones allowed to import Experience Orbs and convert them to Memory Essence fluid?
 	drones_can_import_xp_orbs = true
-	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.  This works in conjunction with 'oil_world_gen_category_blacklist' - if a biome matches either, then no oil lakes will generate there.
+	#Oil worldgen blacklist by biome: add biome IDs to this list if you don't want oil lake worldgen to happen there.  This works in conjunction with 'oil_world_gen_category_blacklist' - if a biome matches either, then no oil lakes will generate there. You can wildcard this; e.g 'modid:*' blacklists ALL biomes of namespace 'modid'.
 	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens", "byg:embur_bog", "byg:glowstone_gardens", "byg:sythian_torrids", "byg:warped_desert", "byg:subzero_hypogeal", "byg:quartz_desert", "byg:brimstone_caverns", "byg:weeping_mire", "byg:withering_woods", "byg:magma_wastes", "byg:wailing_garth", "byg:crimson_gardens", "byg:ivis_fields", "byg:bulbis_gardens", "byg:shattered_desert", "byg:ethereal_islands", "byg:purpur_peaks", "byg:cryptic_wastes", "byg:viscal_isles", "byg:shulkren_forest", "byg:nightshade_forest", "biomesoplenty:crystalline_chasm", "biomesoplenty:undergrowth", "biomesoplenty:visceral_heap", "biomesoplenty:withered_abyss"]
 	#Chance per chunk as a percentage to generate an Oil Lake. Set to 0 for no oil lakes. See also 'surface_oil_generation_chance'.
 	#Range: 0 ~ 100
 	oil_generation_chance = 15
-	#Blacklisted entity ID's, which the Vacuum Trap will not try to absorb. Note that players, tamed entities, boss entities, and PneumaticCraft drones may never be absorbed, regardless of config settings.
+	#Blacklisted entity type ID's or tags (use '#' prefix), which the Vacuum Trap will not try to absorb. Note that players, tamed entities, boss entities, and PneumaticCraft drones may never be absorbed, regardless of config settings.
 	vacuum_trap_blacklist = ["resourcefulbees:zombie_bee", "resourcefulbees:zinc_bee", "resourcefulbees:wither_bee", "resourcefulbees:water_bee", "resourcefulbees:uranium_bee", "resourcefulbees:tin_bee", "resourcefulbees:terrestrial_bee", "resourcefulbees:tainted_bee", "resourcefulbees:steel_bee", "resourcefulbees:starry_bee", "resourcefulbees:spelling_bee", "resourcefulbees:soup_bee", "resourcefulbees:slimy_bee", "resourcefulbees:sky_bee", "resourcefulbees:skeleton_bee", "resourcefulbees:silver_bee", "resourcefulbees:signalum_bee", "resourcefulbees:sand_bee", "resourcefulbees:rocky_bee", "resourcefulbees:rgbee_bee", "resourcefulbees:redstone_bee", "resourcefulbees:pigman_bee", "resourcefulbees:osmium_bee", "resourcefulbees:oreo_bee", "resourcefulbees:obsidian_bee", "resourcefulbees:nickel_bee", "resourcefulbees:netherite_bee", "resourcefulbees:nether_quartz_bee", "resourcefulbees:mana_bee", "resourcefulbees:lumium_bee", "resourcefulbees:lead_bee", "resourcefulbees:lapis_bee", "resourcefulbees:kitten_bee", "resourcefulbees:iron_bee", "resourcefulbees:invar_bee", "resourcefulbees:infused_bee", "resourcefulbees:icy_bee", "resourcefulbees:gravel_bee", "resourcefulbees:gold_bee", "resourcefulbees:glowstone_bee", "resourcefulbees:ghast_bee", "resourcefulbees:forest_bee", "resourcefulbees:enderium_bee", "resourcefulbees:ender_bee", "resourcefulbees:emerald_bee", "resourcefulbees:elven_bee", "resourcefulbees:electrum_bee", "resourcefulbees:diamond_bee", "resourcefulbees:creeper_bee", "resourcefulbees:copper_bee", "resourcefulbees:constantan_bee", "resourcefulbees:coal_bee", "resourcefulbees:clockwork_bee", "resourcefulbees:clay_bee", "resourcefulbees:bronze_bee", "resourcefulbees:brass_bee", "resourcefulbees:boobee_bee", "resourcefulbees:bloody_bee", "resourcefulbees:blaze_bee", "resourcefulbees:aluminum_bee", "occultism:wild_hunt_wither_skeleton", "occultism:wild_hunt_skeleton", "occultism:possessed_skeleton", "occultism:possessed_endermite", "occultism:possessed_enderman", "occultism:otherworld_bird", "occultism:foliot", "occultism:djinni", "occultism:afrit_wild", "occultism:afrit", "occultism:marid", "alexsmobs:mimicube", "alexsmobs:centipede_body", "alexsmobs:centipede_tail", "alexsmobs:bone_serpent_part", "artifacts:mimic", "losttrinkets:dark_vex", "rftoolsdim:dimensional_blob_legendary", "ars_nouveau:familiar_bookwyrm", "ars_nouveau:familiar_carbuncle", "ars_nouveau:familiar_drygmy", "ars_nouveau:familiar_jabberwog", "ars_nouveau:familiar_sylph", "ars_nouveau:familiar_wixie"]
 	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
 	#Range: > 0
-	min_fluid_fuel_temperature = 373
+	min_fluid_fuel_temperature = 2274
 	#When an Oil Lake would be generated at the surface (see 'oil_generation_chance'), percentage chance that this will actually generate a lake. Set to 0 for no surface oil lakes, and fewer lakes overall. Higher values don't guarantee surface oil lakes, but make them more likely, as well as making oil lakes more likely overall. It is recommended to adjust this value in conjunction with 'oil_generation_chance'.
 	#Range: 0 ~ 100
 	surface_oil_generation_chance = 25
@@ -35,6 +35,17 @@
 	drone_debugger_path_particles = true
 	#Will Drones automatically get picked up by Boats/Minecarts/etc. if they're close enough?
 	drones_can_be_picked_up = false
+	#Oil worldgen blacklist by dimension ID: add dimension ID's to this list if you don't want oil lake worldgen to happen there. You can wildcard this; e.g 'modid:*' blacklists ALL dimensions of namespace 'modid'.
+	oil_world_gen_dimension_blacklist = []
+	#Cooldown, in ticks, between subsequent uses of Bandages. Set to 0 to disable cooldowns entirely.
+	#Range: > 0
+	bandage_cooldown = 160
+	#Time, in ticks, it takes to use a bandage.
+	#Range: > 1
+	bandage_use_time = 40
+	#Health points restored on bandage use (1 health = half a heart).
+	#Range: 1.0 ~ 1.7976931348623157E308
+	bandage_health_restored = 6.0
 
 ["Machine Properties"]
 	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed
@@ -57,7 +68,7 @@
 	speed_upgrade_usage_multiplier = 1.649999976158142
 	#Base chance (1/x) per tick of a lightning strike on/around the Electrostatic Generator
 	#Range: > 0
-	electrostatic_lightning_chance = 100000
+	electrostatic_lightning_chance = 50000
 	#The max height of an elevator per stacked Elevator Base block.
 	#Range: 1 ~ 256
 	elevator_base_blocks_per_base = 8
@@ -90,6 +101,8 @@
 	seismic_sensor_fluid_tags = ["forge:crude_oil"]
 	#Blacklist items from being allowed in the Pressure Chamber disenchanting system. This is a starts-with string match, so you can match by mod, or individual item names as you need. Blacklisted by default are Quark Ancient Tomes, and all Tetra items; both can lead to enchantment duping as they have special enchantment mechanics.
 	disenchanting_blacklist = ["quark:ancient_tome", "tetra:"]
+	#Are players in Creative mode exempt from Security Station block protection? If false, only server ops are exempt (command permission >= 2)
+	security_station_creative_players_exempt = false
 
 ["Pneumatic Armor"]
 	#Air usage for armor repair, in mL per Item Life Upgrade per point of damage repaired
@@ -136,6 +149,8 @@
 	#The maximum distance that a Drone may teleport when it can't find a path to its destination. Default value of 0 means no limit. This is primarily intended to limit abuse of teleportation to other players on PvP servers, but may find other uses. Be careful about setting this value very low.
 	#Range: > 0
 	max_drone_teleport_range = 0
+	#When set to true, server will strip NBT data from pressurizable items (pneumatic armor, drones...) which the client doesn't care about. Good for saving on network chatter, but can cause players to be kicked under some circumstances. If this occurs, set this config value to false.
+	nbt_to_client_modification = false
 
 ["Micromissile Properties"]
 	#Base explosion damage (modified by missile setup)
@@ -274,6 +289,10 @@
 	#Number of periodic offers randomly selected for the 'live' offer list. Note: this a maximum, and the actual number chosen each time may be less.
 	#Range: > 0
 	numPeriodicOffers = 20
+	#Amadrone spawn location, relative to the delivery/pickup position. This is a X/Y/Z triple. See also 'amadrone_spawn_location_relative_to_ground_level' for how the drone's Y position is calculated.
+	amadrone_spawn_location = [30, 30, 0]
+	#Affects Amadrone Y spawning position: when true, the Y position is relative to ground level at the calculated X/Z position. When false, it is relative to the delivery/pickup position.
+	amadrone_spawn_location_relative_to_ground_level = true
 
 [Heat]
 	#Default thermal resistance for fluid blocks

@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/immersiveengineering/crusher/';
+
     var data = {
         recipes: [
             {
@@ -105,8 +107,11 @@ onEvent('recipes', (event) => {
 
     data.recipes.forEach((recipe) => {
         const re = event.recipes.immersiveengineering.crusher(recipe.output, recipe.input, recipe.secondary);
+        
         if (recipe.id) {
             re.id(recipe.id);
+        } else {
+            fallback_id(re, id_prefix);
         }
     });
 });

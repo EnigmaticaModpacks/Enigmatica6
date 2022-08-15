@@ -5,11 +5,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             static: true,
-            input: {
-                type: 'ITEM',
-                id: 'kubejs:amadron_survey_tools',
-                amount: 1
-            },
+            input: { type: 'ITEM', id: 'kubejs:amadron_survey_tools', amount: 1 },
             output: {
                 type: 'ITEM',
                 id: 'pneumaticcraft:reinforced_chest',
@@ -18,20 +14,12 @@ onEvent('recipes', (event) => {
             },
             level: 0,
             maxStock: 5,
-            whitelist: {
-                and: {
-                    dimensions: ['atum:atum']
-                }
-            },
+            whitelist: { and: { dimensions: ['atum:atum'] } },
             id: `${id_prefix}mineral_survey_atum`
         },
         {
             static: true,
-            input: {
-                type: 'ITEM',
-                id: 'kubejs:amadron_survey_tools',
-                amount: 1
-            },
+            input: { type: 'ITEM', id: 'kubejs:amadron_survey_tools', amount: 1 },
             output: {
                 type: 'ITEM',
                 id: 'pneumaticcraft:reinforced_chest',
@@ -40,20 +28,12 @@ onEvent('recipes', (event) => {
             },
             level: 0,
             maxStock: 5,
-            whitelist: {
-                and: {
-                    dimensions: ['undergarden:undergarden']
-                }
-            },
+            whitelist: { and: { dimensions: ['undergarden:undergarden'] } },
             id: `${id_prefix}mineral_survey_undergarden`
         },
         {
             static: true,
-            input: {
-                type: 'ITEM',
-                id: 'kubejs:amadron_survey_tools',
-                amount: 1
-            },
+            input: { type: 'ITEM', id: 'kubejs:amadron_survey_tools', amount: 1 },
             output: {
                 type: 'ITEM',
                 id: 'pneumaticcraft:reinforced_chest',
@@ -62,20 +42,12 @@ onEvent('recipes', (event) => {
             },
             level: 0,
             maxStock: 5,
-            whitelist: {
-                and: {
-                    dimensions: ['minecraft:the_nether']
-                }
-            },
+            whitelist: { and: { dimensions: ['minecraft:the_nether'] } },
             id: `${id_prefix}botanical_survey_nether`
         },
         {
             static: true,
-            input: {
-                type: 'ITEM',
-                id: 'kubejs:amadron_survey_tools',
-                amount: 1
-            },
+            input: { type: 'ITEM', id: 'kubejs:amadron_survey_tools', amount: 1 },
             output: {
                 type: 'ITEM',
                 id: 'pneumaticcraft:reinforced_chest',
@@ -84,12 +56,22 @@ onEvent('recipes', (event) => {
             },
             level: 0,
             maxStock: 5,
-            whitelist: {
-                and: {
-                    dimensions: ['minecraft:the_end']
-                }
-            },
+            whitelist: { and: { dimensions: ['minecraft:the_end'] } },
             id: `${id_prefix}botanical_survey_end`
+        },
+        {
+            static: true,
+            input: { type: 'ITEM', id: 'kubejs:amadron_survey_tools', amount: 1 },
+            output: {
+                type: 'ITEM',
+                id: 'pneumaticcraft:reinforced_chest',
+                amount: 1,
+                nbt: `{display:{Name:'[{"text":"The End Mineral Survey"}]',Lore:['[{"text":"A collection of minerals from the The End.","color":"gold"}]']},BlockEntityTag:{LootTable:"enigmatica:chests/amadron_mineral_survey_the_end_combo"}}`
+            },
+            level: 0,
+            maxStock: 5,
+            whitelist: { and: { dimensions: ['minecraft:the_end'] } },
+            id: `${id_prefix}mineral_survey_the_end`
         }
     ];
 

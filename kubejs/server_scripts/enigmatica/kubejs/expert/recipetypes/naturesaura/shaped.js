@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'naturesaura:grated_chute',
             pattern: ['A A', 'ABA', ' A '],
@@ -27,13 +27,14 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'naturesaura:offering_table',
-            pattern: ['BAB', 'CBD', 'EEE'],
+            pattern: ['BAB', 'CED', 'EFE'],
             key: {
                 A: 'ars_nouveau:wilden_tribute',
                 B: 'naturesaura:infused_stone',
                 C: 'naturesaura:token_fear',
                 D: 'naturesaura:token_sorrow',
-                E: 'naturesaura:ancient_bark'
+                E: 'naturesaura:ancient_bark',
+                F: 'minecraft:conduit'
             },
             id: 'naturesaura:offering_table'
         },
@@ -108,14 +109,34 @@ onEvent('recipes', (event) => {
                 C: '#forge:ingots/infused_iron'
             },
             id: 'naturesaura:placer'
+        },
+        {
+            output: 'naturesaura:spring',
+            pattern: ['ACA', 'ABA', 'AAA'],
+            key: {
+                A: '#upgrade_aquatic:coralstone/infused',
+                B: Item.of(
+                    'minecraft:water_bucket',
+                    '{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:\'{"text":"#MLG-YOLO"}\'}}'
+                ).weakNBT(),
+                C: 'naturesaura:token_euphoria'
+            },
+            id: 'naturesaura:spring'
+        },
+        {
+            output: 'naturesaura:netherite_finder',
+            pattern: [' BA', ' DC', 'D  '],
+            key: {
+                A: 'occultism:spirit_attuned_gem',
+                B: 'minecraft:warped_roots',
+                C: 'minecraft:crimson_roots',
+                D: 'betterendforge:leather_wrapped_stick'
+            },
+            id: 'naturesaura:netherite_finder'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

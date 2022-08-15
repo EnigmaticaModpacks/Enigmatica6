@@ -832,6 +832,12 @@ const cropRegistry = [
                 render: 'simplefarming:yam_crop',
                 plant: 'simplefarming:yam',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'sushigocrafting:wasabi_seeds',
+                render: 'sushigocrafting:wasabi_crop',
+                plant: 'sushigocrafting:wasabi_root',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1761,12 +1767,6 @@ const cropRegistry = [
                 substrate: 'end_stone'
             },
             {
-                seed: 'byg:shulkren_moss_blanket',
-                render: 'byg:shulkren_moss_blanket',
-                plant: 'byg:shulkren_moss_blanket',
-                substrate: 'end_stone'
-            },
-            {
                 seed: 'byg:sythian_roots',
                 render: 'byg:sythian_roots',
                 plant: 'byg:sythian_roots',
@@ -1861,12 +1861,6 @@ const cropRegistry = [
                 render: 'minecraft:warped_roots',
                 plant: 'minecraft:warped_roots',
                 substrate: 'warped_nylium'
-            },
-            {
-                seed: 'undergarden:ashen_deepturf',
-                render: 'undergarden:ashen_deepturf',
-                plant: 'undergarden:ashen_deepturf',
-                substrate: 'deepturf'
             },
             {
                 seed: 'undergarden:ashen_deepturf',
@@ -2031,12 +2025,6 @@ const cropRegistry = [
                 substrate: 'water'
             },
             {
-                seed: 'byg:cattail',
-                render: 'byg:cattail',
-                plant: 'byg:cattail',
-                substrate: 'water'
-            },
-            {
                 seed: 'projectvibrantjourneys:sea_oats',
                 render: 'projectvibrantjourneys:sea_oats',
                 plant: 'projectvibrantjourneys:sea_oats',
@@ -2168,6 +2156,12 @@ const cropRegistry = [
                 seed: 'upgrade_aquatic:tongue_kelp',
                 render: 'upgrade_aquatic:tongue_kelp',
                 plant: 'upgrade_aquatic:tongue_kelp',
+                substrate: 'water'
+            },
+            {
+                seed: 'sushigocrafting:seaweed',
+                render: 'sushigocrafting:seaweed',
+                plant: 'sushigocrafting:seaweed',
                 substrate: 'water'
             }
         ]

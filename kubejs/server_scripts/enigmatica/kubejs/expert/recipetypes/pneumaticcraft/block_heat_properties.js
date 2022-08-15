@@ -3,6 +3,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:expert/pneumaticcraft/block_heat_properties/';
+
     /* 
     Fluid Cooling/Heating
     {
@@ -33,12 +35,13 @@ onEvent('recipes', (event) => {
             temperature: 333,
             thermalResistance: 100,
             transformCold: { block: 'immersiveengineering:concrete' },
-            heatCapacity: 10000
+            heatCapacity: 10000,
+            id: `${id_prefix}concrete`
         }
     ];
 
     recipes.forEach((recipe) => {
         recipe.type = 'pneumaticcraft:heat_properties';
-        event.custom(recipe);
+        event.custom(recipe).id(recipe.id);
     });
 });

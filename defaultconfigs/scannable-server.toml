@@ -1,0 +1,76 @@
+
+[energy]
+	#Whether to consume energy when performing a scan. Will make the scanner a chargeable item.
+	useEnergy = false
+	#Amount of energy that can be stored in a scanner.
+	#Range: > 0
+	energyCapacityScanner = 5000
+	#Amount of energy used by the range module per scan.
+	#Range: > 0
+	energyCostModuleRange = 100
+	#Amount of energy used by the animal module per scan.
+	#Range: > 0
+	energyCostModuleAnimal = 25
+	#Amount of energy used by the monster module per scan.
+	#Range: > 0
+	energyCostModuleMonster = 50
+	#Amount of energy used by the common ore module per scan.
+	#Range: > 0
+	energyCostModuleOreCommon = 75
+	#Amount of energy used by the rare ore module per scan.
+	#Range: > 0
+	energyCostModuleOreRare = 100
+	#Amount of energy used by the block module per scan.
+	#Range: > 0
+	energyCostModuleBlock = 100
+	#Amount of energy used by the structure module per scan.
+	#Range: > 0
+	energyCostModuleStructure = 150
+	#Amount of energy used by the fluid module per scan.
+	#Range: > 0
+	energyCostModuleFluid = 50
+	#Amount of energy used by the entity module per scan.
+	#Range: > 0
+	energyCostModuleEntity = 75
+
+[general]
+	#The basic scan radius without range modules. Higher values mean more computational
+	#overhead and thus potentially worse performance while scanning.
+	#IMPORTANT: some modules such as the block and ore scanner modules will already use
+	#a reduced radius based on this value. Specifically, the ore scanners multiply this
+	#value by 0.25, and the block scanner multiplies it by 0.5.
+	#Range modules will boost the range by half this value.
+	#Range: 16 ~ 128
+	baseScanRadius = 64
+	#How long the results from a scan should remain visible, in milliseconds.
+	#Range: 1000 ~ 300000
+	scanStayDuration = 60000
+
+[blocks]
+	#Registry names of blocks that should be ignored.
+	#Blocks in this list will be excluded from the default ore list based on the forge:ores
+	#tag and it will be impossible to tune the entity module to this block.
+	ignoredBlocks = ["minecraft:command_block"]
+	#Tag names of block tags that should be ignored.
+	#Blocks matching a tag in this list will be excluded from the default ore list based on theforge:ores tag and it will be impossible to tune the entity module to this block.
+	ignoredBlockTags = []
+
+[ores]
+	#Registry names of blocks considered 'common ores', requiring the common ore scanner module.
+	commonOreBlocks = ["minecraft:clay", "atum:marl", "upgrade_aquatic:embedded_ammonite", "quark:red_crystal", "quark:orange_crystal", "quark:yellow_crystal", "quark:green_crystal", "quark:blue_crystal", "quark:indigo_crystal", "quark:violet_crystal", "quark:white_crystal", "quark:black_crystal"]
+	#Block tags of blocks considered 'common ores', requiring the common ore scanner module.
+	commonOreBlockTags = ["forge:ores/iron", "forge:ores/redstone", "forge:ores/coal", "forge:ores/quartz", "forge:ores/lead", "forge:ores/tin", "forge:ores/lapis", "forge:ores/copper", "forge:ores/nickel", "forge:ores/bitumen", "forge:ores/apatite", "forge:ores/potassium_nitrate", "forge:ores/bone"]
+	#Registry names of blocks considered 'rare ores', requiring the common ore scanner module.
+	rareOreBlocks = ["minecraft:glowstone"]
+	#Block tags of blocks considered 'rare ores', requiring the common ore scanner module.
+	#Any block with the forge:ores tag is implicitly in this list, unless the block also
+	#matches an ignored or common ore block tag, or is an ignored or common block.
+	rareOreBlockTags = []
+
+[fluids]
+	#Fluid tags of fluids that should be ignored.
+	ignoredFluidTags = []
+
+[structures]
+	#The list of structures the structure module scans for.
+	structures = []

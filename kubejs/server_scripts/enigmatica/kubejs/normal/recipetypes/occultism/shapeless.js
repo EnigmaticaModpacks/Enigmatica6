@@ -3,15 +3,17 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:normal/occultism/shapeless/';
+
     const recipes = [
         {
             output: 'occultism:candle_white',
             inputs: ['#quark:candles'],
+            id: `${id_prefix}candle_white`
         }
     ];
 
     recipes.forEach((recipe) => {
-        recipe.id
-            event.shapeless(recipe.output, recipe.inputs);
+        event.shapeless(recipe.output, recipe.inputs).id(recipe.id);
     });
 });

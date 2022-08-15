@@ -3,18 +3,6 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            inputs: [Fluid.of('integrateddynamics:menril_resin', 1000)],
-            output: Item.of('integrateddynamics:crystalized_menril_block', 1),
-            energy: 4000,
-            id: `${id_prefix}crystalized_menril_block`
-        },
-        {
-            inputs: [Fluid.of('integrateddynamics:liquid_chorus', 1000)],
-            output: Item.of('integrateddynamics:crystalized_chorus_block', 1),
-            energy: 4000,
-            id: `${id_prefix}crystalized_chorus_block`
-        },
-        {
             inputs: [Fluid.of('tconstruct:molten_clay', 144), 'tconstruct:ingot_cast'],
             output: Item.of('minecraft:brick', 1),
             energy: 5000,
@@ -93,25 +81,25 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}arcane_gold_nugget`
         },
         {
-            inputs: [Fluid.of('materialis:molten_refined_obsidian', 144), 'tconstruct:ingot_cast'],
+            inputs: [Fluid.of('tconstruct:molten_refined_obsidian', 144), 'tconstruct:ingot_cast'],
             output: Item.of('mekanism:ingot_refined_obsidian', 1),
             energy: 5000,
             id: `${id_prefix}ingot_refined_obsidian`
         },
         {
-            inputs: [Fluid.of('materialis:molten_refined_obsidian', 16), 'tconstruct:nugget_cast'],
+            inputs: [Fluid.of('tconstruct:molten_refined_obsidian', 16), 'tconstruct:nugget_cast'],
             output: Item.of('mekanism:nugget_refined_obsidian', 1),
             energy: 555,
             id: `${id_prefix}nugget_refined_obsidian`
         },
         {
-            inputs: [Fluid.of('materialis:molten_refined_glowstone', 144), 'tconstruct:ingot_cast'],
+            inputs: [Fluid.of('tconstruct:molten_refined_glowstone', 144), 'tconstruct:ingot_cast'],
             output: Item.of('mekanism:ingot_refined_glowstone', 1),
             energy: 5000,
             id: `${id_prefix}ingot_refined_glowstone`
         },
         {
-            inputs: [Fluid.of('materialis:molten_refined_glowstone', 16), 'tconstruct:nugget_cast'],
+            inputs: [Fluid.of('tconstruct:molten_refined_glowstone', 16), 'tconstruct:nugget_cast'],
             output: Item.of('mekanism:nugget_refined_glowstone', 1),
             energy: 555,
             id: `${id_prefix}nugget_refined_glowstone`
@@ -133,6 +121,48 @@ onEvent('recipes', (event) => {
             output: Item.of('aquaculture:neptunium_nugget', 1),
             energy: 555,
             id: `${id_prefix}neptunium_nugget`
+        },
+        {
+            inputs: [Fluid.of('tconstruct:blazing_blood', 100), 'tconstruct:rod_cast'],
+            output: Item.of('minecraft:blaze_rod', 1),
+            energy: 2000,
+            id: `${id_prefix}blaze_rod_from_blazing_blood`
+        },
+        {
+            inputs: [Fluid.of('tconstruct:blazing_blood', 50), '#forge:slimeballs'],
+            output: Item.of('minecraft:magma_cream', 1),
+            energy: 2000,
+            id: `${id_prefix}magma_cream_from_blazing_blood`
+        },
+        {
+            inputs: [Fluid.of('tconstruct:magma', 250), 'thermal:chiller_ball_cast'],
+            output: Item.of('minecraft:magma_cream', 1),
+            energy: 2000,
+            id: `${id_prefix}magma_cream_from_magma`
+        },
+        {
+            inputs: [Fluid.of('tconstruct:earth_slime', 250), 'thermal:chiller_ball_cast'],
+            output: Item.of('minecraft:slime_ball', 1),
+            energy: 2000,
+            id: `${id_prefix}slime_ball_from_earth_slime`
+        },
+        {
+            inputs: [Fluid.of('tconstruct:blood', 250), 'thermal:chiller_ball_cast'],
+            output: Item.of('tconstruct:blood_slime_ball', 1),
+            energy: 2000,
+            id: `${id_prefix}blood_slime_ball_from_blood`
+        },
+        {
+            inputs: [Fluid.of('tconstruct:ender_slime', 250), 'thermal:chiller_ball_cast'],
+            output: Item.of('tconstruct:ender_slime_ball', 1),
+            energy: 2000,
+            id: `${id_prefix}ender_slime_ball_from_ender`
+        },
+        {
+            inputs: [Fluid.of('tconstruct:sky_slime', 250), 'thermal:chiller_ball_cast'],
+            output: Item.of('tconstruct:sky_slime_ball', 1),
+            energy: 2000,
+            id: `${id_prefix}sky_slime_ball_from_ender`
         }
     ];
 

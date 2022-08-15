@@ -3,6 +3,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:expert/botania/mana_infusion/';
+
     const recipes = [
         {
             input: '#forge:ingots/froststeel',
@@ -65,6 +67,33 @@ onEvent('recipes', (event) => {
             mana: 35000,
             catalyst: 'architects_palette:moonstone',
             id: 'botania:mana_infusion/mana_pearl'
+        },
+        {
+            input: 'ars_nouveau:marvelous_clay',
+            output: 'ars_nouveau:mythical_clay',
+            count: 1,
+            mana: 10000,
+            catalyst: 'architects_palette:sunstone',
+            id: 'ars_nouveau:mythical_clay'
+        },
+
+        /// Patchouli Safe Removals
+
+        {
+            input: 'kubejs:altered_recipe_indicator',
+            output: 'botania:mana_powder',
+            count: 1,
+            mana: 10,
+            catalyst: 'architects_palette:moonstone',
+            id: 'botania:mana_infusion/mana_powder_dye'
+        },
+        {
+            input: 'kubejs:altered_recipe_indicator',
+            output: 'botania:mana_powder',
+            count: 1,
+            mana: 10,
+            catalyst: 'architects_palette:moonstone',
+            id: 'botania:mana_infusion/mana_powder_dust'
         }
     ];
 
@@ -75,15 +104,20 @@ onEvent('recipes', (event) => {
             output: { item: recipe.output, count: recipe.count },
             mana: recipe.mana
         };
+
         if (recipe.catalyst) {
             constructed_recipe.catalyst = {
                 type: 'block',
                 block: recipe.catalyst
             };
         }
+
         const re = event.custom(constructed_recipe);
+        
         if (recipe.id) {
             re.id(recipe.id);
+        } else {
+            fallback_id(re, id_prefix);
         }
     });
 });

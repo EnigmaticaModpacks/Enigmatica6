@@ -1,0 +1,28 @@
+
+#Client Configuration
+[client]
+
+	[client.visual_options]
+		# The text shown on the badge above equipped tooltips.
+		badge_text = "Equipped"
+		# The background color of the "equipped" badge.
+		#Range: 0 ~ 4294967295
+		badge_bg = 4027584512
+		# The start border color of the "equipped" badge.
+		#Range: 0 ~ 4294967295
+		badge_border_start = 3500839187
+		# The end border color of the "equipped" badge.
+		#Range: 0 ~ 4294967295
+		badge_border_end = 1623360778
+		# The color of the text shown on the badge above equipped tooltips.
+		#Range: 0 ~ 4294967295
+		badge_text_color = 4294967295
+
+	[client.control_options]
+		# If the comparison tooltip should show by default (pressing bound key hides).
+		default_on = false
+		# If tool comparisons should compare only the same types of tools (can't compare a sword to an axe, for example).
+		strict = false
+		# Blacklist of items to show comparisons for.  Add item IDs to prevent them from being compared when hovered over or equipped.
+		blacklist = ["sophisticatedbackpacks:netherite_backpack", "sophisticatedbackpacks:diamond_backpack", "sophisticatedbackpacks:gold_backpack", "sophisticatedbackpacks:iron_backpack", "sophisticatedbackpacks:backpack"]
+

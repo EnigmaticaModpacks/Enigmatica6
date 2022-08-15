@@ -1,0 +1,3778 @@
+{
+	id: "5967132E080A674D"
+	group: "74B3CF67FCEAB20F"
+	order_index: 2
+	filename: "tinkers_construct"
+	title: "Tinkers Construct"
+	icon: {
+		id: "tconstruct:vein_hammer"
+		Count: 1b
+		tag: {
+			tic_multipliers: {
+				"tconstruct:mining_speed": 0.3f
+				"tconstruct:attack_damage": 1.25f
+				"tconstruct:durability": 5.0f
+			}
+			tic_stats: {
+				"tconstruct:attack_speed": 1.1f
+				"tconstruct:mining_speed": 2.5125f
+				"tconstruct:attack_damage": 5.9375f
+				"tconstruct:harvest_level": 4.0f
+				"tconstruct:durability": 7906.25f
+			}
+			tic_broken: 0b
+			tic_modifiers: [
+				{
+					name: "tconstruct:cultivated"
+					level: 1s
+				}
+				{
+					name: "tconstruct:maintained"
+					level: 1s
+				}
+				{
+					name: "tconstruct:piercing"
+					level: 2s
+				}
+				{
+					name: "tconstruct:sturdy"
+					level: 1s
+				}
+				{
+					name: "tconstruct:momentum"
+					level: 1s
+				}
+				{
+					name: "tconstruct:two_handed"
+					level: 1s
+				}
+			]
+			HideFlags: 3
+			tic_materials: [
+				"tconstruct:hepatizon"
+				"tconstruct:wood"
+				"enigmatica:gaia_spirit"
+				"enigmatica:niotic"
+			]
+			Damage: 0
+			tic_volatile_data: {
+				"tconstruct:durability": 6875
+			}
+			tic_persistent_data: {
+				abilities: 1
+				upgrades: 2
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Time To Tinker!"
+			icon: {
+				id: "tconstruct:vein_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.25f
+						"tconstruct:durability": 5.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.1f
+						"tconstruct:mining_speed": 2.5125f
+						"tconstruct:attack_damage": 5.9375f
+						"tconstruct:harvest_level": 4.0f
+						"tconstruct:durability": 7906.25f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:maintained"
+							level: 1s
+						}
+						{
+							name: "tconstruct:piercing"
+							level: 2s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 1s
+						}
+						{
+							name: "tconstruct:momentum"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:hepatizon"
+						"tconstruct:wood"
+						"enigmatica:gaia_spirit"
+						"enigmatica:niotic"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:durability": 6875
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Tinkers Construct (abbreviated as TiC, TiCon, or TCon) is a modular tool mod that allows the tinkerer to make powerful, repairable, and upgradeable tools."
+				""
+				"Note: quests that need tools or tool parts will accept *any* material for the parts, so tinker away!"
+			]
+			id: "47169AB8212BD508"
+			tasks: [{
+				id: "7E574E8726A74BAE"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "3CB675D49916C945"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Patterns and You"
+			icon: "tconstruct:materials_and_you"
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"The first step in TiC is to make patterns. These patterns will be required to create the crafting blocks needed to progress. They can also be combined with materials to make the various tool parts. "
+				""
+				"The “Materials and You” book provides information on the first tools the tinkerer can make as well as the tier 1 materials available to the tinkerer."
+			]
+			dependencies: ["47169AB8212BD508"]
+			dependency_requirement: "one_started"
+			id: "29743F1C8CF559A2"
+			tasks: [{
+				id: "0AB9B5ABEF3FE96B"
+				type: "item"
+				item: "tconstruct:pattern"
+			}]
+			rewards: [{
+				id: "3E7CAF244FF83471"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+		}
+		{
+			title: "Tinkers Exploration"
+			icon: "sophisticatedbackpacks:backpack"
+			x: -2.0d
+			y: 0.0d
+			description: ["Tinkers Construct adds some areas to explore, as well as tools to aid the tinkerer in their explorations. These chapters will describe for the tinkerer the gadgets they can create and the areas and materials they can find among the dimensions. "]
+			dependencies: ["47169AB8212BD508"]
+			id: "4588297F41674524"
+			tasks: [{
+				id: "2B64D28ADD716F56"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "44BD2F811F1EAA52"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			description: [
+				"While stone tools are easy to repair, moving on to metal and higher tiers of parts are required to harvest deeper materials and deal more damage."
+				""
+				"The Puny Smelting guide instructs the tinkerer as to the higher stats and innate abilities of the tier 2 materials, as well as how to construct the melter in order to cast the tier 2 parts."
+			]
+			dependencies: ["29743F1C8CF559A2"]
+			id: "760FD80EF963D952"
+			tasks: [{
+				id: "651C325CE20B4899"
+				type: "item"
+				item: "tconstruct:puny_smelting"
+			}]
+			rewards: [{
+				id: "16C58C7C9C601B77"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Eventually the tinkerer will want to smelt more than 9 ingots worth of metals. They may also wish to create various alloys. Towards that end the knowledge of Mighty Smelting will be required."
+				""
+				"This tome begins to explain the Tier 3 materials the tinkerer can use as well as the various abilities that can be added to tools. "
+			]
+			dependencies: ["760FD80EF963D952"]
+			id: "580645AA5B0DC481"
+			tasks: [{
+				id: "022446FCF9D621D6"
+				type: "item"
+				item: "tconstruct:mighty_smelting"
+			}]
+			rewards: [{
+				id: "33A455096D43FDA9"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			description: ["The final tiered book provides information on the top level machines which can be built using materials from the nether, as well as the tier 4 materials available to the tinkerer for their tools."]
+			dependencies: ["580645AA5B0DC481"]
+			id: "6BDF1FD62E49EEBF"
+			tasks: [{
+				id: "556A77E83C70C750"
+				type: "item"
+				item: "tconstruct:fantastic_foundry"
+			}]
+			rewards: [{
+				id: "193895CBB3D7B7AF"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers in the Overworld"
+			icon: "tconstruct:sky_slime_sapling"
+			x: -1.5d
+			y: -1.5d
+			description: ["In the overworld, tinkers adds a couple of islands for the tinkerer to find. Sky slime islands can be found floating in the sky. Earth slime islands are found off of coast lines. There are even clay islands which look like slime islands but are plain vanilla islands."]
+			dependencies: ["4588297F41674524"]
+			dependency_requirement: "all_started"
+			id: "535EDB063EEB4A69"
+			tasks: [{
+				id: "2F3E5A178D42DA0F"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "5F1111E375131111"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Tinkers in the Nether"
+			icon: "tconstruct:blood_slime_sapling"
+			x: 0.0d
+			y: -2.0d
+			description: ["The nether is a next stop for the tinkerer in terms of finding materials to upgrade their tools. Cobalt ore can be found in the terrain, magma slime islands are found at lava levels and wither skeletons can drop some extra goodies."]
+			dependencies: ["535EDB063EEB4A69"]
+			id: "48DD79D9708932B9"
+			tasks: [{
+				id: "1EDA3F6F447CE811"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4B5F51288DDAA9EC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Tinkers in the End"
+			icon: "tconstruct:ender_slime_sapling"
+			x: 1.5d
+			y: -1.5d
+			description: ["Traveling to the end unlocks additional resources for the tinkerer. From blasting scales off the dragon to finding islands with the most unusual of slimes, there are great ingredients for the tinkerer to find."]
+			dependencies: ["48DD79D9708932B9"]
+			id: "3DB4D65F8A5ECA0B"
+			tasks: [{
+				id: "1FBA34DE510DF134"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "6DA7B2228577015A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			description: [
+				"The various crafting blocks from Tinkers form a multiblock structure for accessing them all from a single UI, and the first block to make is a crafting station."
+				""
+				"This block has an advantage over the vanilla crafting table as it’ll hold the materials in the crafting grid and visually show them in world. It will also connect to an adjacent inventory to make crafting easier."
+			]
+			dependencies: ["29743F1C8CF559A2"]
+			id: "153D64CF717673FD"
+			tasks: [{
+				id: "700364E7B8371737"
+				type: "item"
+				item: {
+					id: "tconstruct:crafting_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_log"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1CD2DCB53AC39809"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			description: ["Before building tools, the tinkerer needs to build the parts that make up those tools. The part builder is the block to do that. With the newer version of TiC comes a streamlined set of parts."]
+			dependencies: ["153D64CF717673FD"]
+			id: "2328B550CF3B401C"
+			tasks: [{
+				id: "5C5C31F396BF4239"
+				type: "item"
+				item: {
+					id: "tconstruct:part_builder"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6E0B79AF590A85C8"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			description: [
+				"This is the Tinkers block required for crafting, repairing, and performing simple upgrades on Tinkers tools."
+				""
+				"After crafting the base parts, the tinkerer should select the tool design in the Tinker Station’s UI and assemble the parts into their new tool."
+				""
+				"Tools can also be repaired here with the same material their head parts are made with."
+			]
+			dependencies: ["2328B550CF3B401C"]
+			id: "43EDC38B89D1611F"
+			tasks: [{
+				id: "2C5A3BABB5FE0A39"
+				type: "item"
+				item: {
+					id: "tconstruct:tinker_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "48AAC24DE364756A"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.0d
+			description: ["The Tinkers Chest is a storage block that works with the other tinkers crafting blocks in the multiblock structure. It possesses a larger storage than a single chest and has its own UI tab in the Tinkers combined interface."]
+			dependencies: ["153D64CF717673FD"]
+			id: "0DE8DA1DF8C47EDD"
+			tasks: [{
+				id: "7C4EF42E1043BA79"
+				type: "item"
+				item: "tconstruct:tinkers_chest"
+			}]
+			rewards: [{
+				id: "7B852A7C57B1D2A9"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			description: ["This Tinkers block is a special storage block for parts created with the Part Builder. This is useful when storing stone parts used with sand casts later on in the quest line."]
+			dependencies: ["153D64CF717673FD"]
+			id: "114A1B879EEC619E"
+			tasks: [{
+				id: "2CEEC0080CD73D7C"
+				type: "item"
+				item: "tconstruct:part_chest"
+			}]
+			rewards: [{
+				id: "0A14FCF62978D6ED"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Grout"
+			x: 2.5d
+			y: 2.5d
+			description: ["Before the tinkerer can construct the blocks needed to make and work with tier 2 materials, the tinkerer will need to make grout. This material is a precursor to the building blocks of the more advanced tinkers constructs. "]
+			dependencies: ["760FD80EF963D952"]
+			id: "53998A418EE25004"
+			tasks: [{
+				id: "166F19DB03816147"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "4D8B81DAA1964C23"
+					type: "item"
+					item: "tconstruct:grout"
+					count: 8
+				}
+				{
+					id: "25EAF2E7866A5BC8"
+					type: "command"
+					title: "Rare Tinkers Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+					player_command: false
+				}
+			]
+		}
+		{
+			icon: "tconstruct:seared_melter"
+			x: 3.5d
+			y: 3.5d
+			description: [
+				"The Seared Melter is the means by which the tinkerer can melt materials and create higher tiered parts and composite materials. The melter can melt three items at a time and store 9 ingots worth of materials (or 1,296 mb). "
+				""
+				"Note that the melter cannot create alloys of materials; a more powerful Tinkers structure is required for that. Also note that the melter can be powered by a seared fuel tank to get to higher melting points."
+			]
+			dependencies: ["53998A418EE25004"]
+			id: "1BECFB61E2216217"
+			tasks: [
+				{
+					id: "10BB8FE4AD38C5ED"
+					type: "item"
+					title: "Seared Melter"
+					icon: "tconstruct:seared_melter"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:seared_melter"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:smeltery_controller"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "66575D6B48FFD434"
+					type: "item"
+					title: "Seared Melter"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "78758910B6CD9108"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+					count: 2L
+				}
+				{
+					id: "734D6FC89A1960A6"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "2329D0FAF7E1308E"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+			]
+			rewards: [{
+				id: "767CD1B19307EC7E"
+				type: "command"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Sand Casting"
+			icon: "tconstruct:blank_sand_cast"
+			x: 4.5d
+			y: 4.5d
+			description: [
+				"Early on, the materials for more permanent casts are precious and are better saved for that first inventory system. Towards that end, the tinkerer can use the time honored tradition of sand casting."
+				""
+				"Place the sand cast on the casting table, the place the part to be replicated. Remove that part, and the tinkerer is left with a one time use cast. If the tinkerer wants to cast an ingot, they can use an existing one or a brick."
+			]
+			dependencies: ["1BECFB61E2216217"]
+			id: "66B0A9AA63A7C13F"
+			tasks: [
+				{
+					id: "6A53E9E0E83CB4C7"
+					type: "item"
+					item: "tconstruct:blank_sand_cast"
+					count: 4L
+				}
+				{
+					id: "4758C6DCFC68EA3B"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "3CB8AE663EE26D8E"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "74D2A2B7A309FADE"
+					type: "item"
+					item: {
+						id: "tconstruct:small_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "76D712214E6ACF65"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "531A5C84DDD9221B"
+					type: "item"
+					item: {
+						id: "tconstruct:small_blade"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "652FE682DFA872F9"
+					type: "item"
+					item: "minecraft:brick"
+				}
+				{
+					id: "00651FA7443BD662"
+					type: "command"
+					title: "Rare Tinkers Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Composite Casting"
+			x: 4.5d
+			y: 3.0d
+			description: [
+				"The tinkers machines allow the tinkerer to apply liquids to materials in order to make new materials. One such material is Lavawood, a fireproof wooden material."
+				""
+				"Other such materials can be found by looking up recipes using the casting table and casting basin in JEI."
+			]
+			dependencies: ["1BECFB61E2216217"]
+			id: "1F48E23A330D8884"
+			tasks: [{
+				id: "0E7AFF03E6AAF838"
+				type: "item"
+				item: "tconstruct:lavawood"
+			}]
+			rewards: [{
+				id: "49CC339E8B83FF16"
+				type: "command"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Permanent Casts"
+			icon: "tconstruct:blank_cast"
+			x: 5.5d
+			y: 5.5d
+			description: [
+				"Sand casts are good to get the first tools made, but after a while the use of permanent casts would make the tinkerer’s life a lot more efficient."
+				""
+				"By melting the gold onto a sacrificial part, a permanent cast can be created which can be used more than once."
+			]
+			dependencies: ["66B0A9AA63A7C13F"]
+			id: "3097BA4EEC6A0FD6"
+			tasks: [{
+				id: "0219B24A8CA05EB7"
+				type: "item"
+				item: "tconstruct:blank_cast"
+			}]
+			rewards: [
+				{
+					id: "39E11152088F2324"
+					type: "item"
+					item: "tconstruct:blank_cast"
+					count: 4
+				}
+				{
+					id: "2872C6E42017722A"
+					type: "command"
+					title: "Rare Tinkers Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 5.0d
+			description: ["Once the Tinkerer creates a few casts, they quickly realize there should be a place to store all of them. The Tinkers Cast Chest is there to provide that place."]
+			dependencies: ["3097BA4EEC6A0FD6"]
+			id: "2D09D3CF2D3C41BC"
+			tasks: [{
+				id: "3DA235D8014FFB98"
+				type: "item"
+				item: "tconstruct:cast_chest"
+			}]
+			rewards: [{
+				id: "234C52AF09D0B5F7"
+				type: "command"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Smeltery Controller"
+			icon: "tconstruct:smeltery_controller"
+			x: 0.0d
+			y: 3.5d
+			description: [
+				"Melting larger amounts of metals and creating alloys requires the use of the multiblock smelter. Even mobs can be melted in the smeltery to produce materials."
+				""
+				"The seared drain allows liquids to be imported and exported while the seared chute allows items to be imported. Combined, these make automating the smeltery a breeze."
+			]
+			dependencies: ["580645AA5B0DC481"]
+			id: "40474087F229A612"
+			tasks: [
+				{
+					id: "59FD8405D1FA08BA"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "1BA61064F9548C7D"
+					type: "item"
+					item: "tconstruct:seared_fuel_tank"
+				}
+				{
+					id: "64636843A6B8DF5D"
+					type: "item"
+					item: "tconstruct:seared_glass"
+					count: 4L
+				}
+				{
+					id: "620D7F44801A5E09"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+				{
+					id: "2D9DC62BCC36CF19"
+					type: "item"
+					item: "tconstruct:seared_chute"
+				}
+			]
+			rewards: [{
+				id: "083A5F8C6F937F35"
+				type: "command"
+				title: "Tinkers Epic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Anvil"
+			icon: {
+				id: "tconstruct:scorched_anvil"
+				Count: 1b
+				tag: {
+					texture: "tconstruct:slimesteel_block"
+				}
+			}
+			x: 0.0d
+			y: 6.5d
+			description: [
+				"Enter the world of large Tinkers tools. Able to deal much more damage, mine more blocks, cut more grass and fell more trees."
+				""
+				"Once the anvil is placed the tinkerer unlocks full abilities and upgrades requiring 5 input slots, as well as the ability to craft the large tinkers tools."
+			]
+			dependencies: ["155CE535A506F2D4"]
+			id: "23F5852361B79CC5"
+			tasks: [{
+				id: "3187F82B6F7F3E2A"
+				type: "item"
+				title: "Tinker's Anvil"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "741689DFA0B4E6A4"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Scythe"
+			icon: {
+				id: "tconstruct:scythe"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.45f
+						"tconstruct:durability": 2.5f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.8f
+						"tconstruct:mining_speed": 3.1499999f
+						"tconstruct:attack_damage": 3.0f
+						"tconstruct:harvest_level": 3.0f
+						"tconstruct:durability": 1800.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 2s
+						}
+						{
+							name: "tconstruct:maintained"
+							level: 2s
+						}
+						{
+							name: "tconstruct:silky_aoe_shears"
+							level: 1s
+						}
+						{
+							name: "tconstruct:harvest"
+							level: 1s
+						}
+						{
+							name: "tconstruct:hoe_transform_hidden"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:tinkers_bronze"
+						"tconstruct:wood"
+						"tconstruct:tinkers_bronze"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:durability": 1800
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: -1.0d
+			y: 8.0d
+			description: ["This gardening tool is great for cutting large areas of grass as well as large groups of mobs. It can also be used to till the ground for fresh crops."]
+			dependencies: ["23F5852361B79CC5"]
+			id: "0D0A0376C66870A6"
+			tasks: [
+				{
+					id: "6F7DA951ED0DD816"
+					type: "item"
+					item: {
+						id: "tconstruct:broad_blade"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "1EADD44D8BC525B3"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "33B118EC7CC5380E"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "355F4EDEEA0BC701"
+					type: "item"
+					item: {
+						id: "tconstruct:scythe"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.45f
+								"tconstruct:durability": 2.5f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 0.8f
+								"tconstruct:mining_speed": 3.1499999f
+								"tconstruct:attack_damage": 3.0f
+								"tconstruct:harvest_level": 3.0f
+								"tconstruct:durability": 1800.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 2s
+								}
+								{
+									name: "tconstruct:maintained"
+									level: 2s
+								}
+								{
+									name: "tconstruct:silky_aoe_shears"
+									level: 1s
+								}
+								{
+									name: "tconstruct:harvest"
+									level: 1s
+								}
+								{
+									name: "tconstruct:hoe_transform_hidden"
+									level: 1s
+								}
+								{
+									name: "tconstruct:two_handed"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:tinkers_bronze"
+								"tconstruct:wood"
+								"tconstruct:tinkers_bronze"
+								"tconstruct:wood"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:durability": 1800
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4CC70CD149953DE0"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Sledge Hammer"
+			icon: {
+				id: "tconstruct:sledge_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.4f
+						"tconstruct:attack_damage": 1.35f
+						"tconstruct:durability": 4.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.75f
+						"tconstruct:mining_speed": 2.8f
+						"tconstruct:attack_damage": 6.75f
+						"tconstruct:harvest_level": 3.0f
+						"tconstruct:durability": 2880.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:maintained"
+							level: 3s
+						}
+						{
+							name: "tconstruct:smite"
+							level: 2s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:tinkers_bronze"
+						"tconstruct:wood"
+						"tconstruct:tinkers_bronze"
+						"tconstruct:tinkers_bronze"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:durability": 2880
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 1.5d
+			y: 7.0d
+			description: ["When digging tunnels, the sledge hammer is the go to tool, digging out rock in a 3x3 area (expandable to 5x5). Against mobs, this tool possesses Smite II, making it the bane of the undead."]
+			dependencies: ["23F5852361B79CC5"]
+			id: "671FD13D085378E7"
+			tasks: [
+				{
+					id: "1225919086B9402A"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "1D89BCEA73AD925F"
+					type: "item"
+					item: {
+						id: "tconstruct:large_plate"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "2381BD9B5187CCA5"
+					type: "item"
+					item: {
+						id: "tconstruct:hammer_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "666C8D5F71FBCD70"
+					type: "item"
+					item: {
+						id: "tconstruct:sledge_hammer"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.4f
+								"tconstruct:attack_damage": 1.35f
+								"tconstruct:durability": 4.0f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 0.75f
+								"tconstruct:mining_speed": 2.8f
+								"tconstruct:attack_damage": 6.75f
+								"tconstruct:harvest_level": 3.0f
+								"tconstruct:durability": 2880.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 1s
+								}
+								{
+									name: "tconstruct:maintained"
+									level: 3s
+								}
+								{
+									name: "tconstruct:smite"
+									level: 2s
+								}
+								{
+									name: "tconstruct:two_handed"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:tinkers_bronze"
+								"tconstruct:wood"
+								"tconstruct:tinkers_bronze"
+								"tconstruct:tinkers_bronze"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:durability": 2880
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "5980002F94B77766"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Cleaver"
+			icon: {
+				id: "tconstruct:cleaver"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.25f
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:durability": 3.5f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:mining_speed": 1.75f
+						"tconstruct:attack_damage": 8.25f
+						"tconstruct:harvest_level": 3.0f
+						"tconstruct:durability": 2520.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 2s
+						}
+						{
+							name: "tconstruct:maintained"
+							level: 2s
+						}
+						{
+							name: "tconstruct:severing"
+							level: 2s
+						}
+						{
+							name: "tconstruct:silky_aoe_shears"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:tinkers_bronze"
+						"tconstruct:wood"
+						"tconstruct:wood"
+						"tconstruct:tinkers_bronze"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:durability": 2520
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 0.0d
+			y: 8.0d
+			description: ["This weapon deals great damage over a sweeping area, and can have greater reach when attacking mobs."]
+			dependencies: ["23F5852361B79CC5"]
+			id: "02F7E98E8F7C622F"
+			tasks: [
+				{
+					id: "6FFAB0A5937304D7"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "3F42A06C6103439A"
+					type: "item"
+					item: {
+						id: "tconstruct:broad_blade"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "1D359CB4CD411315"
+					type: "item"
+					item: {
+						id: "tconstruct:large_plate"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "33ED38293F40ABD0"
+					type: "item"
+					item: {
+						id: "tconstruct:cleaver"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.25f
+								"tconstruct:attack_damage": 1.5f
+								"tconstruct:durability": 3.5f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:mining_speed": 1.75f
+								"tconstruct:attack_damage": 8.25f
+								"tconstruct:harvest_level": 3.0f
+								"tconstruct:durability": 2520.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 2s
+								}
+								{
+									name: "tconstruct:maintained"
+									level: 2s
+								}
+								{
+									name: "tconstruct:severing"
+									level: 2s
+								}
+								{
+									name: "tconstruct:silky_aoe_shears"
+									level: 1s
+								}
+								{
+									name: "tconstruct:two_handed"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:tinkers_bronze"
+								"tconstruct:wood"
+								"tconstruct:wood"
+								"tconstruct:tinkers_bronze"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:durability": 2520
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7A45DEF9D00CAE1F"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Vein Hammer"
+			icon: {
+				id: "tconstruct:vein_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.25f
+						"tconstruct:durability": 5.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.1f
+						"tconstruct:mining_speed": 2.1000001f
+						"tconstruct:attack_damage": 5.0f
+						"tconstruct:harvest_level": 3.0f
+						"tconstruct:durability": 3600.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:maintained"
+							level: 3s
+						}
+						{
+							name: "tconstruct:piercing"
+							level: 2s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:tinkers_bronze"
+						"tconstruct:wood"
+						"tconstruct:tinkers_bronze"
+						"tconstruct:tinkers_bronze"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:durability": 3600
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 1.5d
+			y: 6.0d
+			description: [
+				"This mining tool will break all similar ores within 2 blocks of the tinker’s target, which can be expanded up to a range of 4. Combined with the Sledge Hammer, makes easy work of mining. "
+				""
+				"As a weapon, it’s the fastest of the broad weapons, and it’s sharp points give it a Piercing II effect."
+			]
+			dependencies: ["23F5852361B79CC5"]
+			id: "4821677A1662229F"
+			tasks: [
+				{
+					id: "76BDB01305615A05"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "29AE0AFADBE175D4"
+					type: "item"
+					item: {
+						id: "tconstruct:large_plate"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "59CB9C937A4921A0"
+					type: "item"
+					item: {
+						id: "tconstruct:hammer_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "75A011DBB6A692C9"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "4B2C30AA3E3C8680"
+					type: "item"
+					item: {
+						id: "tconstruct:vein_hammer"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.3f
+								"tconstruct:attack_damage": 1.25f
+								"tconstruct:durability": 5.0f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 1.1f
+								"tconstruct:mining_speed": 2.1000001f
+								"tconstruct:attack_damage": 5.0f
+								"tconstruct:harvest_level": 3.0f
+								"tconstruct:durability": 3600.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 1s
+								}
+								{
+									name: "tconstruct:maintained"
+									level: 3s
+								}
+								{
+									name: "tconstruct:piercing"
+									level: 2s
+								}
+								{
+									name: "tconstruct:two_handed"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:tinkers_bronze"
+								"tconstruct:wood"
+								"tconstruct:tinkers_bronze"
+								"tconstruct:tinkers_bronze"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:durability": 3600
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2A78F695A00CAAC1"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Broad Axe"
+			icon: {
+				id: "tconstruct:broad_axe"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:durability": 4.25f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.6f
+						"tconstruct:mining_speed": 2.1000001f
+						"tconstruct:attack_damage": 10.5f
+						"tconstruct:harvest_level": 3.0f
+						"tconstruct:durability": 3060.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:maintained"
+							level: 3s
+						}
+						{
+							name: "tconstruct:axe_transform_hidden"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:tinkers_bronze"
+						"tconstruct:wood"
+						"tconstruct:tinkers_bronze"
+						"tconstruct:tinkers_bronze"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:durability": 3060
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: -1.5d
+			y: 7.0d
+			description: ["The broad axe is great for felling trees, dropping all logs above the one being broken. The broad axe head also deals a ton of damage, but is quite slow to weild."]
+			dependencies: ["23F5852361B79CC5"]
+			id: "1571CE50EAE0D4C2"
+			tasks: [
+				{
+					id: "195995E71054BDEE"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "3CA76478BC2A0BF6"
+					type: "item"
+					item: {
+						id: "tconstruct:broad_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "34CF75906C438E2C"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "64A03C1EA5F5C87B"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "1CFEA19B5C2D4116"
+					type: "item"
+					item: {
+						id: "tconstruct:broad_axe"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.3f
+								"tconstruct:attack_damage": 1.5f
+								"tconstruct:durability": 4.25f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 0.6f
+								"tconstruct:mining_speed": 2.1000001f
+								"tconstruct:attack_damage": 10.5f
+								"tconstruct:harvest_level": 3.0f
+								"tconstruct:durability": 3060.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 1s
+								}
+								{
+									name: "tconstruct:maintained"
+									level: 3s
+								}
+								{
+									name: "tconstruct:axe_transform_hidden"
+									level: 1s
+								}
+								{
+									name: "tconstruct:two_handed"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:tinkers_bronze"
+								"tconstruct:wood"
+								"tconstruct:tinkers_bronze"
+								"tconstruct:tinkers_bronze"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:durability": 3060
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "24378B74017AE217"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Excavator"
+			icon: {
+				id: "tconstruct:excavator"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.2f
+						"tconstruct:durability": 3.75f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.0f
+						"tconstruct:mining_speed": 2.1000001f
+						"tconstruct:attack_damage": 4.2000003f
+						"tconstruct:harvest_level": 3.0f
+						"tconstruct:durability": 2700.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 2s
+						}
+						{
+							name: "tconstruct:knockback"
+							level: 2s
+						}
+						{
+							name: "tconstruct:maintained"
+							level: 2s
+						}
+						{
+							name: "tconstruct:shovel_transform_hidden"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:tinkers_bronze"
+						"tconstruct:wood"
+						"tconstruct:tinkers_bronze"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:durability": 2700
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: -1.5d
+			y: 6.0d
+			description: ["The excavator is made to remove soft materials, shoveling in a 3x3 which can be expanded into a 5x5. As a weapon, it provides the tinkerer with knockback II."]
+			dependencies: ["23F5852361B79CC5"]
+			id: "667107A66B7C2419"
+			tasks: [
+				{
+					id: "5BF3938DAD311F49"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "3187A4EF49CC6DEB"
+					type: "item"
+					item: {
+						id: "tconstruct:large_plate"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "37A966D19CE92FF4"
+					type: "item"
+					item: {
+						id: "tconstruct:excavator"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.3f
+								"tconstruct:attack_damage": 1.2f
+								"tconstruct:durability": 3.75f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 1.0f
+								"tconstruct:mining_speed": 2.1000001f
+								"tconstruct:attack_damage": 4.2000003f
+								"tconstruct:harvest_level": 3.0f
+								"tconstruct:durability": 2700.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 2s
+								}
+								{
+									name: "tconstruct:knockback"
+									level: 2s
+								}
+								{
+									name: "tconstruct:maintained"
+									level: 2s
+								}
+								{
+									name: "tconstruct:shovel_transform_hidden"
+									level: 1s
+								}
+								{
+									name: "tconstruct:two_handed"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:tinkers_bronze"
+								"tconstruct:wood"
+								"tconstruct:tinkers_bronze"
+								"tconstruct:wood"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:durability": 2700
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2E9D3BDDA1C917DB"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Dagger"
+			icon: {
+				id: "tconstruct:dagger"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.75f
+						"tconstruct:attack_damage": 0.5f
+						"tconstruct:durability": 1.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 2.0f
+						"tconstruct:mining_speed": 3.0f
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 97.5f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:padded"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 1s
+						}
+						{
+							name: "tconstruct:offhand_attack"
+							level: 1s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:duel_wielding": 1b
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 6.0d
+			y: -1.5d
+			description: ["The dagger is a fast weapon with lower damage than the sword. Its specialty, however, is it can be held in the off hand and used with the right click."]
+			dependencies: ["43EDC38B89D1611F"]
+			id: "0A1F2503E161F0D5"
+			tasks: [
+				{
+					id: "025428EE964634F9"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "05925847578DAAA6"
+					type: "item"
+					item: {
+						id: "tconstruct:small_blade"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "7327F7B00A53A0AC"
+					type: "item"
+					item: {
+						id: "tconstruct:dagger"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.75f
+								"tconstruct:attack_damage": 0.5f
+								"tconstruct:durability": 1.0f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 2.0f
+								"tconstruct:mining_speed": 3.0f
+								"tconstruct:attack_damage": 1.5f
+								"tconstruct:harvest_level": 1.0f
+								"tconstruct:durability": 97.5f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 1s
+								}
+								{
+									name: "tconstruct:padded"
+									level: 1s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 1s
+								}
+								{
+									name: "tconstruct:offhand_attack"
+									level: 1s
+								}
+								{
+									name: "tconstruct:silky_shears"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:stone"
+								"tconstruct:wood"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:duel_wielding": 1b
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7B6CD460C9115C68"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Sword"
+			icon: {
+				id: "tconstruct:sword"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.5f
+						"tconstruct:durability": 1.1f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.6f
+						"tconstruct:mining_speed": 2.1f
+						"tconstruct:attack_damage": 4.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 128.7f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 2s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:wood"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 7.0d
+			y: -1.5d
+			description: ["A tinkerers primary weapon and means of defense. This tool has one fewer upgrade slot in favor of an extra ability slot. It also has a sweeping effect to hit multiple mobs."]
+			dependencies: ["43EDC38B89D1611F"]
+			id: "692DB41333C3CDDE"
+			tasks: [
+				{
+					id: "25B84BDE5A786C7B"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "5FF280BD1F11A0C8"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "1C7195648F674B23"
+					type: "item"
+					item: {
+						id: "tconstruct:small_blade"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "45CA6B5BE9DBF183"
+					type: "item"
+					item: {
+						id: "tconstruct:sword"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.5f
+								"tconstruct:durability": 1.1f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 1.6f
+								"tconstruct:mining_speed": 2.1f
+								"tconstruct:attack_damage": 4.0f
+								"tconstruct:harvest_level": 1.0f
+								"tconstruct:durability": 128.7f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 1s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 2s
+								}
+								{
+									name: "tconstruct:silky_shears"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:stone"
+								"tconstruct:wood"
+								"tconstruct:stone"
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1EA77611F0AC1E99"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Hand Axe"
+			icon: {
+				id: "tconstruct:hand_axe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:mining_speed": 4.0f
+						"tconstruct:attack_damage": 7.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 130.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 2s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 1s
+						}
+						{
+							name: "tconstruct:axe_transform_hidden"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 8.0d
+			y: -1.0d
+			description: ["This tool is both useful as a tree feller and as a mob killer. It can be later modified with expanders to increase its area of effect"]
+			dependencies: ["43EDC38B89D1611F"]
+			id: "562A1A67F8D4CEC9"
+			tasks: [
+				{
+					id: "1D92A4C406557314"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "287B6A979DFE8B15"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "196473D02024EA2D"
+					type: "item"
+					item: {
+						id: "tconstruct:small_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "4511726CB8D1CD6C"
+					type: "item"
+					item: {
+						id: "tconstruct:hand_axe"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:mining_speed": 4.0f
+								"tconstruct:attack_damage": 7.0f
+								"tconstruct:harvest_level": 1.0f
+								"tconstruct:durability": 130.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 2s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 1s
+								}
+								{
+									name: "tconstruct:axe_transform_hidden"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:stone"
+								"tconstruct:wood"
+								"tconstruct:wood"
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "621BBB412302C46E"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Pickaxe"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 4.0f
+						"tconstruct:attack_damage": 1.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 130.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 2s
+						}
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 8.0d
+			y: 0.0d
+			description: ["The standard pickaxe and primary Tinkers tool. Can be modified with expanders to increase its mining range. As a weapon, it does lower damage but it gains a bit of piercing to do extra damage to armored mobs."]
+			dependencies: ["43EDC38B89D1611F"]
+			id: "33FC71952CA316E2"
+			tasks: [
+				{
+					id: "322F0607B2C62A66"
+					type: "item"
+					title: "Any #tconstruct:parts"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "4F8B2E5E8EAE7CD9"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "6094A6B157AD81E5"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "674FDC458072886E"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:attack_speed": 1.2f
+								"tconstruct:mining_speed": 4.0f
+								"tconstruct:attack_damage": 1.0f
+								"tconstruct:harvest_level": 1.0f
+								"tconstruct:durability": 130.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 2s
+								}
+								{
+									name: "tconstruct:piercing"
+									level: 1s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:stone"
+								"tconstruct:wood"
+								"tconstruct:wood"
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "47C2863E17519633"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Mattock"
+			icon: {
+				id: "tconstruct:mattock"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:secondary_mining": 0.65f
+						"tconstruct:mining_speed": 1.1f
+						"tconstruct:attack_damage": 1.1f
+						"tconstruct:durability": 1.25f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:secondary_mining": 0.65f
+						"tconstruct:attack_damage": 2.75f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 162.5f
+						"tconstruct:mining_speed": 4.4f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:knockback"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 2s
+						}
+						{
+							name: "tconstruct:shovel_transform_hidden"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:wood"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 8.0d
+			y: 1.0d
+			description: ["The Mattock is the defacto shovel of Tinkers. Right click on the same blocks a shovel can to make paths in world. As a weapon, the extra heft will add knockback to your attacks."]
+			dependencies: ["43EDC38B89D1611F"]
+			id: "2E1A013A03B71744"
+			tasks: [
+				{
+					id: "43AA6472EE8AB6AB"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "56802289223C9314"
+					type: "item"
+					item: {
+						id: "tconstruct:small_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "1A579C8C86013F3B"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "5A248F2C6C8C0332"
+					type: "item"
+					item: {
+						id: "tconstruct:mattock"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:secondary_mining": 0.65f
+								"tconstruct:mining_speed": 1.1f
+								"tconstruct:attack_damage": 1.1f
+								"tconstruct:durability": 1.25f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:secondary_mining": 0.65f
+								"tconstruct:attack_damage": 2.75f
+								"tconstruct:harvest_level": 1.0f
+								"tconstruct:durability": 162.5f
+								"tconstruct:mining_speed": 4.4f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 1s
+								}
+								{
+									name: "tconstruct:knockback"
+									level: 1s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 2s
+								}
+								{
+									name: "tconstruct:shovel_transform_hidden"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:stone"
+								"tconstruct:wood"
+								"tconstruct:stone"
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2948AA63DF7E591E"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Kama"
+			icon: {
+				id: "tconstruct:kama"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:attack_damage": 0.75f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.8f
+						"tconstruct:mining_speed": 4.0f
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 130.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 2s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 1s
+						}
+						{
+							name: "tconstruct:shears"
+							level: 1s
+						}
+						{
+							name: "tconstruct:harvest"
+							level: 1s
+						}
+						{
+							name: "tconstruct:hoe_transform_hidden"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 7.0d
+			y: 1.5d
+			description: ["The Kama is the all-around farmer’s tool, able to till land as well as scythe down grass. Against mobs it is faster than a sword but does a bit less damage."]
+			dependencies: ["43EDC38B89D1611F"]
+			id: "41E205C314A9B740"
+			tasks: [
+				{
+					id: "5F1E9AD8FBF20D48"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "12C51E27816AD89C"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "7F691442018C5BD5"
+					type: "item"
+					item: {
+						id: "tconstruct:small_blade"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "273FBFDB3BAEA882"
+					type: "item"
+					item: {
+						id: "tconstruct:kama"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:attack_damage": 0.75f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 1.8f
+								"tconstruct:mining_speed": 4.0f
+								"tconstruct:attack_damage": 1.5f
+								"tconstruct:harvest_level": 1.0f
+								"tconstruct:durability": 130.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 2s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 1s
+								}
+								{
+									name: "tconstruct:shears"
+									level: 1s
+								}
+								{
+									name: "tconstruct:harvest"
+									level: 1s
+								}
+								{
+									name: "tconstruct:hoe_transform_hidden"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:stone"
+								"tconstruct:wood"
+								"tconstruct:wood"
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "064C84E7962377DE"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Repair Kits"
+			icon: {
+				id: "tconstruct:repair_kit"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:stone"
+				}
+			}
+			x: 6.0d
+			y: 1.5d
+			description: ["Tinker’s repair kits are portable means to repairing the durability of the tinkerer’s tools. The material used to make the kit can repair tools whose head parts are made of the same material."]
+			dependencies: ["43EDC38B89D1611F"]
+			id: "51AB322D09030F9D"
+			tasks: [{
+				id: "5075865B03CC4E82"
+				type: "item"
+				item: {
+					id: "tconstruct:repair_kit"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:stone"
+					}
+				}
+				count: 4L
+			}]
+			rewards: [{
+				id: "27D0A07F410FABC6"
+				type: "command"
+				title: "Common Tinkers Loot"
+				icon: "kubejs:common_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Wrench"
+			icon: {
+				id: "materialis:wrench"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:attack_speed": 1.8f
+						"tconstruct:mining_speed": 2.0f
+						"tconstruct:attack_damage": 0.5f
+						"tconstruct:durability": 1.5f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.8f
+						"tconstruct:mining_speed": 14.0f
+						"tconstruct:attack_damage": 1.0f
+						"tconstruct:harvest_level": 3.0f
+						"tconstruct:durability": 1080.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:maintained"
+							level: 1s
+						}
+						{
+							name: "materialis:wrenching_hidden"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:tinkers_bronze"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:durability": 1080
+					}
+					tic_persistent_data: {
+						abilities: 3
+						upgrades: 1
+					}
+				}
+			}
+			x: 1.0d
+			y: 8.0d
+			description: ["This tool provides means for the tinkerer to wrench the various blocks."]
+			dependencies: ["23F5852361B79CC5"]
+			id: "49D7D1068B4DAE7C"
+			tasks: [
+				{
+					id: "3A2E5BFAE0CE1902"
+					type: "item"
+					item: {
+						id: "materialis:wrench_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:tinkers_bronze"
+						}
+					}
+				}
+				{
+					id: "0CE2A3FC63B6239B"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "05803F9EC3AB1729"
+					type: "item"
+					item: {
+						id: "materialis:wrench"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:attack_speed": 1.8f
+								"tconstruct:mining_speed": 2.0f
+								"tconstruct:attack_damage": 0.5f
+								"tconstruct:durability": 1.5f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 1.8f
+								"tconstruct:mining_speed": 14.0f
+								"tconstruct:attack_damage": 1.0f
+								"tconstruct:harvest_level": 3.0f
+								"tconstruct:durability": 1080.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 1s
+								}
+								{
+									name: "tconstruct:maintained"
+									level: 1s
+								}
+								{
+									name: "materialis:wrenching_hidden"
+									level: 1s
+								}
+							]
+							HideFlags: 3
+							tic_materials: [
+								"tconstruct:tinkers_bronze"
+								"tconstruct:wood"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:durability": 1080
+							}
+							tic_persistent_data: {
+								abilities: 3
+								upgrades: 1
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "38E9F61A1FE02FAC"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Skyslime Islands"
+			icon: "tconstruct:sky_congealed_slime"
+			x: -3.0d
+			y: -2.5d
+			description: ["Climbing up to these islands is a task for the tinkerer that is rewarded with sky slime, which is great for crafting items that give extra sky bounding abilities."]
+			dependencies: ["535EDB063EEB4A69"]
+			id: "56C19E78027E3478"
+			tasks: [{
+				id: "57D5581D008C3BB1"
+				type: "advancement"
+				advancement: "tconstruct:world/sky_island"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "401E5383DA0E156C"
+				type: "command"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Earth Slime Islands"
+			icon: "tconstruct:earth_congealed_slime"
+			x: -2.0d
+			y: -3.5d
+			description: ["These coastal islands are a great source for green slime and collecting earth slime. This slime has extra springiness for launching the tinkerer far distances."]
+			dependencies: ["535EDB063EEB4A69"]
+			id: "0109D4318847D233"
+			tasks: [{
+				id: "3D6D7E6640CFD7C5"
+				type: "advancement"
+				advancement: "tconstruct:world/earth_island"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "35F2AA26A4D5D8D2"
+				type: "command"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Blood Islands"
+			icon: "tconstruct:blood_congealed_slime"
+			x: -0.5d
+			y: -3.5d
+			description: ["These blood and ichor covered islands are a great source for magma crème, and the blood slime is a great resource for helping the tinkerer recover from the harsh mobs of the world."]
+			dependencies: ["48DD79D9708932B9"]
+			id: "1B3921C6457D614E"
+			tasks: [{
+				id: "34C9060B1E212855"
+				type: "advancement"
+				advancement: "tconstruct:world/blood_island"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "3695278114E43DE3"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Ender Slime Islands"
+			icon: "tconstruct:ender_congealed_slime"
+			x: 2.0d
+			y: -3.5d
+			description: ["These purple islands are home to ender slime, corrupted by the void and possessing some of the spatial attributes that the ender men possess. "]
+			dependencies: ["3DB4D65F8A5ECA0B"]
+			id: "4FF8B7FECDC15915"
+			tasks: [{
+				id: "3653D52783DBEB70"
+				type: "advancement"
+				advancement: "tconstruct:world/ender_island"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "14B1C5BAFCC29C7F"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Gadgetry"
+			x: -4.5d
+			y: 0.0d
+			description: ["To assist the tinkerer in making gadgets, the tinkerer can craft the Tinkers Gadgetry guide. This Guide helps to the explain the recipes and uses of the various gadgets."]
+			dependencies: ["4588297F41674524"]
+			id: "107AE2C18410AAF4"
+			tasks: [{
+				id: "5CE33B51FD169EF7"
+				type: "item"
+				item: "tconstruct:tinkers_gadgetry"
+			}]
+			rewards: [{
+				id: "59AAD91F145CFF75"
+				type: "command"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Travel Program"
+			x: -4.5d
+			y: -1.5d
+			description: [
+				"The go to gadget for tinkerers to travel long distances, don’t forgot to craft a matching pair of boots to ensure the landing can be survived. "
+				""
+				"Depending on the slime used, the slings have different properties: Earth slime sends you far, skyslime can be used mid-air, Ichor slings deal great knockback while ender slime teleports you."
+			]
+			dependencies: ["107AE2C18410AAF4"]
+			id: "7DC5FED1332CEA9A"
+			tasks: [
+				{
+					id: "5AB4A9C576A0B94D"
+					type: "item"
+					item: {
+						id: "tconstruct:earth_slime_sling"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4B47FDB068378A24"
+					type: "item"
+					item: {
+						id: "tconstruct:sky_slime_sling"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7D03B74F851E2872"
+					type: "item"
+					item: {
+						id: "tconstruct:ichor_slime_sling"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6F6DD91B4A1C5906"
+					type: "item"
+					item: {
+						id: "tconstruct:ender_slime_sling"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0D399ECD900A5194"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Shoes"
+			x: -5.5d
+			y: -1.5d
+			description: ["These boots will allow the tinkerer to bounce safely from great heights instead of hitting the ground hard. Unlike the slings, the different boots are purely aesthetic. "]
+			dependencies: ["107AE2C18410AAF4"]
+			id: "12B4F7ED5AD83DBC"
+			tasks: [{
+				id: "176867E738D4714C"
+				type: "item"
+				item: {
+					id: "tconstruct:slime_boots"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 546.0f
+							"tconstruct:armor": 0.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:bouncy"
+								level: 1s
+							}
+							{
+								name: "tconstruct:leaping"
+								level: 1s
+							}
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 5
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "7DE85E011FF0A2CC"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Cakes"
+			x: -6.0d
+			y: -0.5d
+			description: ["The tinkerer can take the elements of the slimes and make various cakes, each with a different effect: earth slime grants luck, sky slime grants jump boost, blood slime grants regeneration, ichor slime grants fire resistance and ender slime grants levitation."]
+			dependencies: ["107AE2C18410AAF4"]
+			id: "372290D6D62EA1DF"
+			tasks: [
+				{
+					id: "23F2330C9246048D"
+					type: "item"
+					item: "tconstruct:earth_cake"
+				}
+				{
+					id: "1D46C963FD2F703E"
+					type: "item"
+					item: "tconstruct:sky_cake"
+				}
+				{
+					id: "32CA2371285A4C0D"
+					type: "item"
+					item: "tconstruct:blood_cake"
+				}
+				{
+					id: "24852B540B531501"
+					type: "item"
+					item: "tconstruct:magma_cake"
+				}
+				{
+					id: "7542787C4D7CE5EC"
+					type: "item"
+					item: "tconstruct:ender_cake"
+				}
+			]
+			rewards: [{
+				id: "3A2C7744EA23580D"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Shuriken"
+			x: -6.0d
+			y: 0.5d
+			description: ["These Shuriken provide the tinkerer with some ranged damage options with the flint providing good knockback, while the quartz tends to do more damage."]
+			dependencies: ["107AE2C18410AAF4"]
+			id: "14B4D5EECBE75C1D"
+			tasks: [
+				{
+					id: "403BA616D867A459"
+					type: "item"
+					item: "tconstruct:flint_shuriken"
+				}
+				{
+					id: "5EC67721EC320427"
+					type: "item"
+					item: "tconstruct:quartz_shuriken"
+				}
+			]
+			rewards: [{
+				id: "4DBE23D96A29B760"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Piggyback Rides"
+			x: -5.5d
+			y: 1.5d
+			description: ["Until the tinkerer crafts more suitable tools for moving mobs, the piggybackpack is great for picking up mobs to toss in farms (or the smeltery). Up to 3 can be worn at the same time, albeit with some weight penalties."]
+			dependencies: ["107AE2C18410AAF4"]
+			id: "5CB5295AA44608C3"
+			tasks: [{
+				id: "736FA0532CD0A635"
+				type: "item"
+				item: "tconstruct:piggy_backpack"
+			}]
+			rewards: [{
+				id: "453BCD8A3851B3D5"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Glowballs"
+			x: -3.5d
+			y: -1.0d
+			description: ["This gadget is great for lighting up far areas and the various nooks and crannies that Mobs like to spawn in."]
+			dependencies: ["107AE2C18410AAF4"]
+			id: "75B59BCBF7F652B5"
+			tasks: [{
+				id: "6A8D01C2EB24B204"
+				type: "item"
+				item: "tconstruct:glow_ball"
+			}]
+			rewards: [{
+				id: "02884B430B3BF339"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Frames"
+			icon: "tconstruct:gold_item_frame"
+			x: -4.5d
+			y: 1.5d
+			description: ["The tinkerer has access to various frames where they can put the interesting and unique tools they have created on display! The different frames have different behaviors. Check the gadgetry guide for more information."]
+			dependencies: ["107AE2C18410AAF4"]
+			id: "688D7FD0E9FFE3A8"
+			tasks: [
+				{
+					id: "5C56BB3A80D11534"
+					type: "item"
+					item: "tconstruct:gold_item_frame"
+				}
+				{
+					id: "1130EFC44B3FFC81"
+					type: "item"
+					item: "tconstruct:clear_item_frame"
+				}
+				{
+					id: "6278DD1B1B0501DE"
+					type: "item"
+					item: "tconstruct:reversed_gold_item_frame"
+				}
+				{
+					id: "1FCD4E09C671B5E5"
+					type: "item"
+					item: "tconstruct:manyullyn_item_frame"
+				}
+				{
+					id: "6778B3950B2FC80F"
+					type: "item"
+					item: "tconstruct:diamond_item_frame"
+				}
+				{
+					id: "6C83947EDB1025A1"
+					type: "item"
+					item: "tconstruct:netherite_item_frame"
+				}
+			]
+			rewards: [{
+				id: "7E5386B6B02AB842"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Withering Bones"
+			x: 0.5d
+			y: -3.5d
+			description: ["These drops from wither skeletons remember and impart upon the tinkerer’s tools severing when applied as an upgrade. When used as a base part, it applies a necrotic touch. "]
+			dependencies: ["48DD79D9708932B9"]
+			id: "1490641AFE8E77AB"
+			tasks: [{
+				id: "7C1FCB8F38A3F12E"
+				type: "item"
+				item: "tconstruct:necrotic_bone"
+				count: 3L
+			}]
+			rewards: [{
+				id: "64293FDBCA193636"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Blast the Dragon"
+			x: 3.0d
+			y: -2.5d
+			description: ["These drops, when blasted off the ender dragon, can be combined with the tinkerer’s tools to grant an additional ability slot. "]
+			dependencies: ["3DB4D65F8A5ECA0B"]
+			id: "0C1B8EB37B96FCF8"
+			tasks: [{
+				id: "3F12DC8055402C8A"
+				type: "item"
+				item: "tconstruct:dragon_scale"
+				count: 4L
+			}]
+			rewards: [{
+				id: "08D2DAC0A6FB6AA8"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Flint and Bronze"
+			x: -1.5d
+			y: 4.5d
+			description: [
+				"The boring, old flint and steel lights single blocks on fire, and once it’s used up, it’s gone. Enter the Flint and Bronze."
+				""
+				"This tool has more durability than a typical flint and steel and has the added benefit of accepting abilities and upgrades. Light more than a single tile! Burn parts off of mobs with severing!"
+			]
+			dependencies: ["155CE535A506F2D4"]
+			id: "7802B228C5246FA3"
+			tasks: [{
+				id: "695EB3346312D3B2"
+				type: "item"
+				item: {
+					id: "tconstruct:flint_and_bronze"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 100.0f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:fiery"
+								level: 1s
+							}
+							{
+								name: "tconstruct:firestarter_hidden"
+								level: 1s
+							}
+						]
+						HideFlags: 3
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 0
+							upgrades: 1
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3C720973EBA7E4F7"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Alloys"
+			x: 0.0d
+			y: 5.0d
+			description: ["Most of the tier 3 materials are alloys, combinations of two or more base materials. Alloy blocks are also the gateway to the means to make the large tinkers tools."]
+			dependencies: ["40474087F229A612"]
+			id: "155CE535A506F2D4"
+			tasks: [{
+				id: "45D7DCB514F39202"
+				type: "item"
+				title: "Any #tconstruct:anvil_metal"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:anvil_metal"
+					}
+				}
+				count: 3L
+			}]
+			rewards: [{
+				id: "036E87473B7C85A8"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Scorched Alloyer"
+			icon: "tconstruct:scorched_alloyer"
+			x: -3.0d
+			y: 4.5d
+			description: ["Since the foundry cannot alloy itself, the scorched alloyer can be used to create alloys. Molten metals in ingot tanks around the alloyer combine and can be cast out."]
+			dependencies: ["76BAE86D90953DD4"]
+			id: "22CC2CE8C9CE487C"
+			tasks: [
+				{
+					id: "6017846F585DCE5E"
+					type: "item"
+					item: "tconstruct:scorched_alloyer"
+				}
+				{
+					id: "6F9717E6DE96C5DB"
+					type: "item"
+					item: "tconstruct:scorched_ingot_tank"
+					count: 3L
+				}
+				{
+					id: "1DC3AFCF13CF85C6"
+					type: "item"
+					item: "tconstruct:scorched_faucet"
+				}
+				{
+					id: "682E626701DD85C6"
+					type: "item"
+					item: "tconstruct:scorched_basin"
+				}
+			]
+			rewards: [{
+				id: "0D18F8A84FD9D693"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Nether Grout"
+			x: -2.5d
+			y: 3.0d
+			description: ["As regular grout was to the Melter and Smeltery, the tinkerer will find that nether grout is the same to the Foundry and Alloyer."]
+			dependencies: ["6BDF1FD62E49EEBF"]
+			dependency_requirement: "one_completed"
+			id: "76BAE86D90953DD4"
+			tasks: [{
+				id: "4F6E6B943AA69895"
+				type: "item"
+				item: "tconstruct:nether_grout"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "12E6713DEA768158"
+					type: "item"
+					item: "tconstruct:nether_grout"
+					count: 8
+				}
+				{
+					id: "0F2EE0DB50A0B61E"
+					type: "command"
+					title: "Legendary Tinkers Loot Box"
+					icon: "kubejs:legendary_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Foundry Controller"
+			icon: "tconstruct:foundry_controller"
+			x: -4.0d
+			y: 4.0d
+			description: [
+				"Powered by nether materials, the tinkers foundry provides a number of benefits."
+				""
+				"Firstly, the foundry cannot alloy! Now the tinkerer will not have to worry in their automation that they will end up creating unintended materials."
+				""
+				"Secondly, the foundry unlocks material byproducts, meaning chunks of one ore may provide materials of another kind (see JEI recipes involving the foundry controller)."
+				""
+				"Finally, its internal buffer is much larger for the same size compared to the regular smeltery. Combined with the lack of alloying, it allows the tinkerer to store their metals in liquid form."
+			]
+			dependencies: ["76BAE86D90953DD4"]
+			id: "2D5128C9C5BB2841"
+			tasks: [
+				{
+					id: "3DCE1F91A7495D9C"
+					type: "item"
+					item: "tconstruct:foundry_controller"
+				}
+				{
+					id: "323576E71D6B4D41"
+					type: "item"
+					item: "tconstruct:scorched_fuel_tank"
+				}
+				{
+					id: "6E804F5B40519D6E"
+					type: "item"
+					item: "tconstruct:scorched_drain"
+				}
+				{
+					id: "16469B6439A6E954"
+					type: "item"
+					item: "tconstruct:scorched_chute"
+				}
+				{
+					id: "3C19976905EB5B33"
+					type: "item"
+					item: "tconstruct:scorched_table"
+				}
+			]
+			rewards: [{
+				id: "1B8ABABF76B47D58"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Blazing Blood"
+			icon: "tconstruct:blazing_blood_bucket"
+			x: -1.5d
+			y: 3.5d
+			description: [
+				"Some of the highest tiers of materials and alloys cannot be created without the highest temperature fuels. For those materials, the tinkerer needs blazing blood."
+				""
+				"Made directly from blazes, this high temperature fuel is the top tier of tinkers fuels."
+			]
+			dependencies: ["6BDF1FD62E49EEBF"]
+			id: "6BA8E17439A52354"
+			tasks: [{
+				id: "6766FA979D4C8FA9"
+				type: "item"
+				item: "tconstruct:blazing_blood_bucket"
+			}]
+			rewards: [{
+				id: "1BDD19DE0C12C98D"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Planner"
+			icon: {
+				id: "framedblocks:framed_blueprint"
+				Count: 1b
+				tag: {
+					blueprint_data: { }
+				}
+			}
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"This pack adds in the Tinkers Planner mod. This mod allows the tinkerer to plan out the materials, upgrades and abilities to be added to the tools to be created."
+				""
+				"To access the planner, click the blueprint icon in the GUI of the Tinker Station or Tinker Anvil."
+			]
+			id: "7EE0DA8E57E9F200"
+			tasks: [{
+				id: "2BAF751DE6718A77"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "6E520DA01C89DFE5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Liquid Lights"
+			icon: "tconstruct:seared_lantern"
+			x: 3.5d
+			y: 2.0d
+			description: [
+				"Sometimes the tinkerer needs an aesthetic touch to add to the workshop. Other times, the tinkerer is left with less than an ingot of liquid metal in their melter. Enter the Seared Lantern!"
+				""
+				"The Seared lantern can hold up to 100mb of any liquid produced by the Tinkerer and lets that liquid cast a slightly tinted light into the tinkerer’s environment."
+			]
+			dependencies: ["53998A418EE25004"]
+			id: "488869B6B52A42FE"
+			tasks: [{
+				id: "17F778F630B3531D"
+				type: "item"
+				item: "tconstruct:seared_lantern"
+				count: 3L
+			}]
+			rewards: [{
+				id: "1F552B03FA0AA138"
+				type: "command"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Upgrades"
+			icon: {
+				id: "tconstruct:creative_slot"
+				Count: 1b
+				tag: {
+					slot: "upgrades"
+				}
+			}
+			x: 3.0d
+			y: 4.5d
+			description: [
+				"Adding new stats to the tinkerer’s tools requires certain materials applied within the Tinkers Station. Many of these consume upgrade slots."
+				""
+				"To find out what upgrades are available for a given tinkers tool, search JEI for uses of a tool and look for the tab with the hammer and anvil icon."
+			]
+			dependencies: ["1BECFB61E2216217"]
+			id: "447AF11477C88460"
+			tasks: [{
+				id: "7A189C6BAE8AAB90"
+				type: "advancement"
+				title: "Apply a modification to a tinker tool"
+				icon: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+				advancement: "tconstruct:tools/modified"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "53E6B568FDDCCB88"
+				type: "command"
+				title: "Rare Tinkers Loot Chest"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Abilities"
+			icon: {
+				id: "tconstruct:creative_slot"
+				Count: 1b
+				tag: {
+					slot: "abilities"
+				}
+			}
+			x: 1.5d
+			y: 4.5d
+			description: [
+				"In addition to upgrades, Tinkers tools can gain abilities that extend the capabilities of the tools."
+				""
+				"Luck, silk touch, autosmelting, dual-wielding, these are all of the potential abilities available if the tinkerer posseses the right parts."
+			]
+			dependencies: ["155CE535A506F2D4"]
+			id: "713CA45FD351DDDC"
+			tasks: [{
+				id: "5CE846491E77EC1D"
+				type: "item"
+				item: "tconstruct:silky_cloth"
+				count: 5L
+			}]
+			rewards: [{
+				id: "104FB75E9793E8FE"
+				type: "command"
+				title: "Epic Tinkers Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Modded Casts"
+			x: 5.0d
+			y: 6.5d
+			description: ["Different mods add different forms to the metals that the tinkerer works with, and as such the clever tinkerer would create casts to allow those forms to be made directly with molten metals."]
+			dependencies: ["3097BA4EEC6A0FD6"]
+			id: "204C114BF9C94045"
+			tasks: [
+				{
+					id: "4242E3B301F85A76"
+					type: "item"
+					item: "tconstruct:gear_cast"
+				}
+				{
+					id: "3DA64C6962D9EA7F"
+					type: "item"
+					item: "tconstruct:plate_cast"
+				}
+				{
+					id: "0457F7C5B0A64DAB"
+					type: "item"
+					item: "materialis:inlay_cast"
+				}
+				{
+					id: "03BB016BF8408207"
+					type: "item"
+					item: "tconstruct:rod_cast"
+				}
+			]
+			rewards: [{
+				id: "12A49D4465A41A74"
+				type: "command"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "EFLN"
+			icon: "tconstruct:efln_ball"
+			x: -3.5d
+			y: 1.0d
+			description: ["When you need a hole in the ground quickly, the EFLN is the tool to make. Explosive mining with no destruction of drops."]
+			dependencies: ["107AE2C18410AAF4"]
+			id: "50396EA0CF9414DC"
+			tasks: [{
+				id: "080E9B70231C0337"
+				type: "item"
+				item: "tconstruct:efln_ball"
+			}]
+			rewards: [{
+				id: "6CA368A371E00A05"
+				type: "command"
+				title: "Rare Tinkers Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tinkers Encyclopedia"
+			icon: "tconstruct:encyclopedia"
+			x: -3.5d
+			y: 2.5d
+			description: ["Having all four tiers of materials spread across all four books can seem like a bit of a mess. Luckily, with a bit of ingenuity, the tinkerer can combine all four books into a single volume. Four volumes of information at the tinkerer’s finger tips. "]
+			dependencies: ["6BDF1FD62E49EEBF"]
+			id: "1C5427ED9F095712"
+			tasks: [{
+				id: "7CD650663B7E192C"
+				type: "item"
+				item: "tconstruct:encyclopedia"
+			}]
+			rewards: [{
+				id: "587FF35C8CD308E1"
+				type: "command"
+				title: "Legendary Tinkers Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Filtered Ducts"
+			icon: "tconstruct:seared_duct"
+			x: 1.5d
+			y: 3.5d
+			subtitle: "Quack?"
+			description: ["Adding a seared or scorched duct to your smeltery or foundry lets you extract specific fluids by applying a bucket or copper can of fluid to the duct as a filter. Right click the duct to access it's UI to insert the filtering item."]
+			dependencies: [
+				"1EFC81649E4D4C50"
+				"40474087F229A612"
+			]
+			id: "2D600E439D5DE40B"
+			tasks: [
+				{
+					id: "6E5DBA482DE50E8D"
+					type: "item"
+					title: "Seared or Scorched Duct"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:seared_duct"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:scorched_duct"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "4A9CC9C83CE83620"
+					type: "item"
+					item: "tconstruct:copper_can"
+				}
+			]
+			rewards: [{
+				id: "2D49C30575BD08AE"
+				type: "item"
+				item: "tconstruct:copper_can"
+				count: 8
+			}]
+		}
+	]
+}

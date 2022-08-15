@@ -31,8 +31,9 @@
 			]
 			id: "0000000000000896"
 			tasks: [{
-				id: "0000000000000897"
-				type: "checkmark"
+				id: "7CC4F0A6E71C717F"
+				type: "item"
+				item: "bloodmagic:altar"
 			}]
 			rewards: [{
 				id: "04592CAFF9CC5FCF"
@@ -101,7 +102,7 @@
 				""
 				"It also serves as the basis for fueling your Soul Network, an ethereal web of souls that may be tapped into from anywhere."
 				""
-				"More fundamentally, the Altar will serve as a receptacle for transmuting objects with stored LP. To begin filling it, use the provided knife near it to drain some of your own blood into the Altar. "
+				"More fundamentally, the Altar will serve as a receptacle for transmuting objects with stored LP. To begin filling it, use a Sacrificial Knife near it to drain some of your own blood into the Altar. Another option is using the Dagger of Sacrifice to sacrifice mobs instead of your own health. "
 				""
 				"Once it is full, right click an item into the Altar to begin the transmutation process. Red particles mean the craft is proceeding normally, whereas grey particles mean there's not enough LP and the craft is losing progress. "
 				""
@@ -115,28 +116,14 @@
 				type: "item"
 				item: "bloodmagic:altar"
 			}]
-			rewards: [
-				{
-					id: "00000000000008C1"
-					type: "item"
-					title: "Sacrificial Knife"
-					item: {
-						id: "bloodmagic:sacrificialdagger"
-						Count: 1b
-						tag: {
-							sacrifice: 0b
-						}
-					}
-				}
-				{
-					id: "00000000000008C2"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "00000000000008C2"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: -3.0d
@@ -192,24 +179,17 @@
 			}]
 			rewards: [
 				{
-					id: "00000000000008A5"
-					type: "item"
-					title: "Sentient Pickaxe"
-					item: {
-						id: "bloodmagic:soulpickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
 					id: "00000000000009AE"
 					type: "command"
 					title: "Sorcerer's Delight"
 					icon: "kubejs:sorcerers_delight"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 					player_command: false
+				}
+				{
+					id: "6797B35CCCC56777"
+					type: "item"
+					item: "bloodmagic:melee_anointment_l"
 				}
 			]
 		}
@@ -700,6 +680,8 @@
 				"Crack of the Fractured Crystal - Gently harvests Demon Will Crystals in the area, dropping them on the ground nearby."
 				""
 				"Resonance of the Faceted Crystal - Facilitates the growth of specialized Demon Will Crystals."
+				""
+				"Well of Suffering - Slowly drains the life essence from mobs, transferring it to the nearest Blood Altar. "
 			]
 			dependencies: ["00000000000008E7"]
 			id: "00000000000008F8"
@@ -956,20 +938,32 @@
 					item: "bloodmagic:itemrouterfilterexact"
 					count: 2
 				}
-				{
-					id: "24C9A479B52447B3"
-					type: "item"
-					item: {
-						id: "bloodmagic:noderouter"
-						Count: 1b
-						tag: {
-							zCoord: 0
-							yCoord: 0
-							xCoord: 0
-						}
-					}
-				}
 			]
+		}
+		{
+			x: -3.0d
+			y: 6.5d
+			subtitle: "The Book is Mightier than the Sword"
+			description: [
+				"Multidisciplinary Sorcerers may prefer not to dirty their hands with a sword. If this sounds like you, the \"Sentient Harm\" glyph would make a good addition to your spellbook."
+				""
+				"Just like the Sentient Sword, the Sentient Harm glyph will drop Will from mobs that are killed with it - just swap the \"Harm\" glyph out for it in your attack spells. Just like the normal glyph, things like Amplify will apply when added."
+			]
+			dependencies: ["00000000000008A6"]
+			id: "6257CACC1274C997"
+			tasks: [{
+				id: "043C1AA85668AD68"
+				type: "item"
+				item: "ars_nouveau:glyph_sentientharm"
+			}]
+			rewards: [{
+				id: "0006651ED51BA2A9"
+				type: "command"
+				title: "Rare Blood Magic Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
+				player_command: false
+			}]
 		}
 	]
 }

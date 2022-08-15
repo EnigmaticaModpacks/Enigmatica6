@@ -298,7 +298,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'immersiveengineering:connector_hv', weight: 100, amount: [8.0, 16.0] },
                 { item: 'immersiveengineering:electron_tube', weight: 50, amount: [2.0, 4.0] },
                 { item: 'immersiveengineering:circuit_board', weight: 50, amount: [2.0, 4.0] },
-                { item: 'create:integrated_circuit', weight: 50, amount: [2.0, 4.0] },
+                { item: 'create:precision_mechanism', weight: 50, amount: [2.0, 4.0] },
                 { item: 'create:electron_tube', weight: 50, amount: [2.0, 4.0] },
                 { item: 'create:chromatic_compound', weight: 20 }
             ]

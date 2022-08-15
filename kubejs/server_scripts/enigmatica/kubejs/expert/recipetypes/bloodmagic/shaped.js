@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'EEE'],
             key: {
                 A: 'eidolon:gold_inlay',
-                B: 'eidolon:crucible',
+                B: 'farmersdelight:cooking_pot',
                 C: 'occultism:otherstone',
                 D: 'minecraft:heart_of_the_sea',
                 E: '#forge:ingots/arcane_gold'
@@ -35,7 +35,7 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:brewing_stand',
                 B: 'bloodmagic:blankslate',
                 C: 'supplementaries:jar_tinted',
-                D: 'eidolon:wicked_weave',
+                D: 'thermal:hazmat_fabric',
                 E: 'eidolon:stone_altar'
             },
             id: 'bloodmagic:alchemy_table'
@@ -55,7 +55,7 @@ onEvent('recipes', (event) => {
             output: 'bloodmagic:daggerofsacrifice',
             pattern: ['  A', 'BA ', 'CB '],
             key: {
-                A: '#forge:ingots/gold_bronze',
+                A: '#forge:ingots/silicon_bronze',
                 B: 'eidolon:pewter_inlay',
                 C: '#forge:rods/wooden'
             },
@@ -68,13 +68,13 @@ onEvent('recipes', (event) => {
                 A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
                 B: Item.of('botania:incense_stick', { brewKey: 'botania:soul_cross' }),
                 C: 'eidolon:polished_planks',
-                D: 'eidolon:crucible',
+                D: 'farmersdelight:cooking_pot',
                 E: 'eidolon:polished_wood_pillar'
             },
             id: 'bloodmagic:incense_altar'
         },
         {
-            output: 'bloodmagic:ritualstone',
+            output: Item.of('2x bloodmagic:ritualstone'),
             pattern: ['CBC', 'BAB', 'CBC'],
             key: {
                 A: { type: 'bloodmagic:bloodorb', orb_tier: 2 },
@@ -99,7 +99,8 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'naturesaura:infused_stone',
                 B: '#bloodmagic:crystals/demon'
-            }
+            },
+            id: 'bloodmagic:dungeon_stone'
         },
         {
             output: 'bloodmagic:alchemicalreactionchamber',

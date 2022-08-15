@@ -21,16 +21,21 @@
 				""
 				"~MuteTiefling"
 			]
+			optional: true
 			id: "0000000000000AF4"
 			tasks: [{
-				id: "0000000000000AF5"
-				type: "checkmark"
+				id: "68C3AD7DEDCF8C8B"
+				type: "item"
+				item: "astralsorcery:aquamarine"
+				count: 4L
 			}]
 			rewards: [{
-				id: "0000000000000AF6"
+				id: "00B5497F8AA28D93"
 				type: "item"
-				title: "Resonating Wand"
-				item: "astralsorcery:wand"
+				title: "Marble"
+				item: "astralsorcery:marble_raw"
+				count: 16
+				random_bonus: 16
 			}]
 		}
 		{
@@ -47,7 +52,7 @@
 				""
 				"Locate a Large Temple, found frequently in cold or mountainous biomes, and find a way inside. Be careful not to disturb the crystal within, as it will be needed to progress. "
 				""
-				"Expose it to the sky and place a vanilla Crafting Table nearby to embark on your journey through Astral Sorcery."
+				"The crystal must be exposed to the sky to function. It will link automatically to a vanilla Crafting table, but will otherwise require a Linking Tool to connect to any other block."
 				""
 				"These may be located far from home, but revisiting this crystal will be vital through much of the early stages of the mod. Use the provided Warp Scrolls to simplify getting back and forth for now."
 			]
@@ -458,7 +463,7 @@
 			y: -6.0d
 			subtitle: "Dreaming as the Days Go By"
 			description: [
-				"“It appears I have been adopted by a village cat. Adorable as it is, its attentions haves made my star gazing rather difficult with only a handheld looking glass. "
+				"“It appears I have been adopted by a village cat. Adorable as it is, its attentions have made my star gazing rather difficult with only a handheld looking glass. "
 				""
 				"I shall have to find a way to brace it.”"
 				"________________________________"
@@ -565,6 +570,8 @@
 				""
 				"Once attuned, a whole new talent tree will become available to you. Levels are earned by performing actions in line with the constellation, and points are assigned within the Astral Tome. Spend them wisely, for resetting them comes at a cost. "
 				""
+				"Attunement is also required to begin tracing Dim Constellations."
+				""
 				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			]
 			dependencies: ["0000000000000B8A"]
@@ -585,7 +592,7 @@
 			}]
 		}
 		{
-			title: "Nocturnal \\\\& Illumination Powder"
+			title: "Nocturnal \\& Illumination Powder"
 			x: 8.5d
 			y: -9.5d
 			subtitle: "Letting the Dust Settle"
@@ -788,33 +795,32 @@
 			]
 			dependencies: ["0000000000000B6E"]
 			id: "0000000000000BA3"
-			tasks: [{
-				id: "0000000000000BA4"
-				type: "item"
-				item: {
-					id: "astralsorcery:rock_crystal"
-					Count: 1b
-					tag: {
-						astralsorcery: { }
+			tasks: [
+				{
+					id: "0000000000000BA4"
+					type: "item"
+					item: {
+						id: "astralsorcery:rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
 					}
 				}
-			}]
-			rewards: [
 				{
-					id: "0000000000000BBC"
+					id: "543F8C616957EB53"
 					type: "item"
-					title: "Linking Tool"
-					item: "astralsorcery:linking_tool"
-				}
-				{
-					id: "0000000000000C5F"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					item: "astralsorcery:wand"
 				}
 			]
+			rewards: [{
+				id: "0000000000000C5F"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 5.0d

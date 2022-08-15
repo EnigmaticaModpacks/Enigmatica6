@@ -21,12 +21,16 @@ onEvent('recipes', (event) => {
     event.remove({ mod: 'ironjetpacks' });
     event.remove({ mod: 'theoneprobe' });
 
+    event.remove({ type: 'thermal:compression_fuel' });
+
     var outputRemovals = [
         'aiotbotania:livingwood_shears',
         'aiotbotania:livingrock_shears',
 
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
+        'byg:mud_block',
+        'byg:mud_ball',
 
         'create:crushing/obsidian',
 
@@ -44,13 +48,19 @@ onEvent('recipes', (event) => {
 
         'morevanillalib:obsidian_shard',
 
-        'simplefarming:raw_bacon',
         'powah:uraninite',
+
+        'simplefarming:raw_bacon',
+
+        'storagedrawers:conversion_upgrade',
 
         'thermal:bamboo_block'
     ];
 
     var idRemovals = [
+        'apotheosis:spawner/max_delay_inverted',
+        'apotheosis:spawner/max_delay',
+
         'aquaculture:brown_mushroom_from_fish',
         'aquaculture:gold_nugget_from_blasting',
         'aquaculture:gold_nugget_from_gold_fish',
@@ -62,17 +72,26 @@ onEvent('recipes', (event) => {
         'aquaculture:planks_from_driftwood',
         'aquaculture:red_mushroom_from_red_shrooma',
 
+        'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking',
+
+        'ars_nouveau:mana_gem_2',
+
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 
+        /atmospheric:\w+_chest_wood/,
+
+        'atum:pumpkin_pie',
+
         'betterendforge:gunpowder_from_sulphur',
+        'betterendforge:ender_block',
 
         'bloodmagic:smelting/ingot_netherite_scrap',
         'bloodmagic:alchemytable/gunpowder',
 
         'botania:fertilizer_dye',
 
-        'botanypots:crafting/compact_hopper_botany_pot',
+        /botanypots:crafting\/compact_hopper/,
 
         'byg:vermilion_sculk',
         '/byg:\\w+_glass_from_sand/',
@@ -83,15 +102,25 @@ onEvent('recipes', (event) => {
         'create:mechanical_crafting/integrated_circuit',
         'create:pressing/lapis_block',
         'create:fill_minecraft_bucket_with_create_honey',
+        'create:crushing/dense_construction_block',
+        'create:crushing/nether_quartz_ore',
+
+        'dustrial_decor:ice_chain',
 
         'eidolon:tallow',
         'eidolon:smelt_stone_brick',
+        'eidolon:lead_block',
+        'eidolon:decompress_lead_block',
+        'eidolon:lead_ingot',
+        'eidolon:decompress_lead_ingot',
 
         /emendatusenigmatica:dust_from_chunk/,
         'emendatusenigmatica:dust_from_ore/quartz',
+        'emendatusenigmatica:block_from_gem/arcane',
 
         'environmental:misc/cherries/cherry_pie',
         'environmental:misc/apple_pie',
+        /environmental:building\/wood\/\w+\/\w+_chest_wood/,
 
         'farmersdelight:cutting/chicken',
         'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
@@ -99,6 +128,8 @@ onEvent('recipes', (event) => {
         'farmersdelight:milk_bucket_from_bottles',
 
         'industrialforegoing:laser_drill_ore/niter',
+        'industrialforegoing:laser_drill_ore/iridium',
+        'industrialforegoing:laser_drill_ore/peridot',
         'industrialforegoing:laser_drill_ore/sapphire',
         'industrialforegoing:laser_drill_ore/ruby',
         'industrialforegoing:laser_drill_ore/ancient_debris',
@@ -126,9 +157,11 @@ onEvent('recipes', (event) => {
         'industrialforegoing:laser_drill_ore/copper',
         'industrialforegoing:laser_drill_ore/aluminum',
         'industrialforegoing:laser_drill_ore/coal',
+        'industrialforegoing:laser_drill_ore/certus_quartz',
         'industrialforegoing:stonework_generate/andesite',
         'industrialforegoing:stonework_generate/diorite',
         'industrialforegoing:stonework_generate/granite',
+        'industrialforegoing:laser_drill_fluid/oil',
 
         'immersiveengineering:crafting/stick_steel',
         'immersiveengineering:crafting/stick_aluminum',
@@ -136,16 +169,23 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crusher/bone_meal',
         /immersiveengineering:crafting\/hammercrushing/,
         'immersivepetroleum:distillationtower/oilcracking',
+        'immersiveengineering:crafting/coal_coke_to_coke',
+        //'immersiveengineering:crafting/ingot_copper_to_storage_copper',
+        'immersiveengineering:crafting/coke_to_coal_coke',
 
         'materialis:smeltery/melting/metal/starmetal/dust',
+        /materialis:armor\/building\/exosuit/,
 
         'mekanism:crushing/stone/to_cobblestone',
         'mekanism:enriching/enriched/tin',
         'mekanism:processing/bronze/dust/from_infusing',
         'mekanism:processing/bronze/ingot/from_infusing',
         'mekanism:processing/lapis_lazuli/from_ore',
+        /mekanism:pigment_extracting\/flower/,
+        /mekanism:compat\/byg\/pigment_extracting/,
 
         'minecraft:crystal_glass',
+        'minecraft:bone_pile_from_bone_pile_block',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',
@@ -155,10 +195,27 @@ onEvent('recipes', (event) => {
 
         'quark:building/crafting/tallow_from_block',
 
+        'resourcefulbees:t1_beehive',
+        'resourcefulbees:t2_beehive',
+        'resourcefulbees:t3_beehive',
+        'resourcefulbees:t4_beehive',
+        'resourcefulbees:t1_beehive_nests',
+        'resourcefulbees:t2_beehive_nests',
+        'resourcefulbees:t3_beehive_nests',
+        'resourcefulbees:t4_beehive_nests',
+        'resourcefulbees:t1_apiary_beehive',
+
         'simplefarming:apple_pie',
         'simplefarming:blueberry_pie',
 
         'tconstruct:tools/modifiers/wither_bone_conversion',
+        'tconstruct:tables/tinkers_anvil',
+        'tconstruct:tables/scorched_anvil',
+        'tconstruct:smeltery/melting/metal/iron/ingot_6_16', //remove rail melting
+        'tconstruct:smeltery/melting/metal/gold/powered_rail', //to prevent dupe loop with Transport
+        'tconstruct:smeltery/melting/metal/gold/enchanted_apple',
+        'tconstruct:smeltery/melting/metal/gold/apple',
+        /tconstruct:smeltery\/melting\/metal\/\w+\/wire/,
 
         'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
@@ -183,16 +240,32 @@ onEvent('recipes', (event) => {
         'thermal:smelting/cured_rubber_from_smelting',
         'thermal:storage/sulfur_block',
         'thermal:gunpowder_4',
+        'thermal:machine/press/unpacking/press_coal_coke_unpacking',
+        'thermal:machine/press/packing2x2/press_clay_packing',
+        'thermal:machine/press/unpacking/press_clay_unpacking',
+        'thermal:machine/press/packing2x2/press_quartz_packing',
+        'thermal:machine/press/unpacking/press_quartz_unpacking',
+        'thermal:machine/press/packing2x2/press_slag_packing',
+        'thermal:machine/press/unpacking/press_slag_unpacking',
+        'thermal:compat/industrialforegoing/bottler_essence',
+
+        'pneumaticcraft:one_probe_crafting',
 
         'ppfluids:fluid_pipe_to_pipe',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
+        'projectvibrantjourneys:seashells',
+
+        'quark:building/crafting/compressed/gunpowder_sack',
+        'quark:building/crafting/compressed/charcoal_block_compress',
 
         'simplefarming:candy',
         'simplefarming:raw_chicken_wings',
 
         'supplementaries:strings_recipe',
+
+        'upgrade_aquatic:bone_meal_from_tooth',
 
         '/integrateddynamics:\\w+/convenience/minecraft_dye/',
         '/integrateddynamics:\\w+/ore/dust/',
@@ -217,7 +290,33 @@ onEvent('recipes', (event) => {
         /masonry:\w+wall_from_\w+_stonecutting/,
         /masonry:\w+slab_from_\w+_stonecutting/,
         /atum:.*dye$/,
-        /thermal:compat\/\w+\/\w+_ore/
+        /thermal:compat\/\w+\/\w+_ore/,
+        /decorative_blocks:\w+_beam/,
+        /decorative_blocks_abnormals:\w+_beam/,
+        /mekanism:storage_blocks\/\w+/,
+        /mekanism:nuggets\/\w+/,
+        /mekanism:processing\/\w+\/storage_blocks\/from_ingots/,
+        /mekanism:processing\/\w+\/ingot\/from_block/,
+        /mekanism:processing\/\w+\/ingot\/from_nuggets/,
+        /mekanism:processing\/\w+\/nugget\/from_ingot/,
+        /thermal:storage\/\w+_block/,
+        /thermal:storage\/\w+_ingot_from_nuggets/,
+        /thermal:storage\/\w+_nugget_from_ingot/,
+        /tconstruct:common\/materials\/\w+_block_from_ingots/,
+        /tconstruct:common\/materials\/\w+_ingot_from_block/,
+        /tconstruct:common\/materials\/\w+_ingot_from_nuggets/,
+        /tconstruct:common\/materials\/\w+_nugget_from_ingot/,
+        /immersiveengineering:crafting\/ingot_\w+_to_storage_\w+/,
+        /immersiveengineering:crafting\/ingot_\w+_to_nugget_\w+/,
+        /immersiveengineering:crafting\/nugget_\w+_to_ingot_\w+/,
+        /immersiveengineering:crafting\/storage_\w+_to_ingot_\w+/,
+        /create:crafting\/materials\/\w+_block_from_compacting/,
+        /create:crafting\/materials\/\w+_ingot_from_compacting/,
+        /create:crafting\/materials\/\w+_ingot_from_decompacting/,
+        /create:crafting\/materials\/\w+_nugget_from_decompacting/,
+        /occultism:crafting\/\w+_block/,
+        /occultism:crafting\/\w+_nugget/,
+        /occultism:crafting\/\w+_ingot_from_nuggets/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -279,10 +378,6 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'immersiveengineering:cloche' });
 
     event.remove({ type: 'valhelsia_structures:axe_crafting' });
-
-    beamRecipes.forEach((recipe) => {
-        event.remove({ output: recipe.output });
-    });
 
     stonecuttables.forEach((stoneType) => {
         stoneType.stones.forEach((stone) => {

@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/tconstruct/casting_table/';
+
     const recipes = [
         /*{
             cast: {
@@ -23,7 +25,7 @@ onEvent('recipes', (event) => {
             },
             result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:cobalt_bee"}).toResultJson(),
             cooling_time: 200,
-            id: 'tconstruct:kjs_cobalt_bee_jar'
+            id: `${id_prefix}cobalt_bee_jar`
         },
         {
             cast: {
@@ -36,7 +38,7 @@ onEvent('recipes', (event) => {
             },
             result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:skyslime_bee"}).toResultJson(),
             cooling_time: 100,
-            id: 'tconstruct:kjs_skyslime_bee_jar'
+            id: `${id_prefix}skyslime_bee_jar`
         },
         {
             cast: {
@@ -49,7 +51,7 @@ onEvent('recipes', (event) => {
             },
             result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:ichor_bee"}).toResultJson(),
             cooling_time: 100,
-            id: 'tconstruct:kjs_ichor_bee_jar'
+            id: `${id_prefix}ichor_bee_jar`
         },
         {
             cast: {
@@ -62,21 +64,18 @@ onEvent('recipes', (event) => {
             },
             result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:enderslime_bee"}).toResultJson(),
             cooling_time: 100,
-            id: 'tconstruct:kjs_enderslime_bee_jar'
+            id: `${id_prefix}enderslime_bee_jar`
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
+        event.custom({
             type: 'tconstruct:casting_table',
             cast: recipe.cast,
             cast_consumed: recipe.cast_consumed,
             fluid: recipe.fluid,
             result: recipe.result,
             cooling_time: recipe.cooling_time
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        }).id(recipe.id);
     });
 });

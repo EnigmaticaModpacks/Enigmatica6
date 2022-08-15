@@ -1,4 +1,6 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/immersiveengineering/fermenter/';
+
     const lowAmountInputs = [
         'farmersdelight:pumpkin_slice',
         'simplefarming:cantaloupe',
@@ -80,7 +82,7 @@ onEvent('recipes', (event) => {
 	*/
 
     lowAmountInputs.forEach((input) => {
-        event.custom({
+        fallback_id(event.custom({
             type: 'immersiveengineering:fermenter',
             fluid: {
                 fluid: 'immersiveengineering:ethanol',
@@ -90,10 +92,10 @@ onEvent('recipes', (event) => {
                 item: input
             },
             energy: 1600
-        });
+        }), `${id_prefix}low/`);
     });
     normalAmountInputs.forEach((input) => {
-        event.custom({
+        fallback_id(event.custom({
             type: 'immersiveengineering:fermenter',
             fluid: {
                 fluid: 'immersiveengineering:ethanol',
@@ -103,6 +105,6 @@ onEvent('recipes', (event) => {
                 item: input
             },
             energy: 6400
-        });
+        }), `${id_prefix}high/`);
     });
 });

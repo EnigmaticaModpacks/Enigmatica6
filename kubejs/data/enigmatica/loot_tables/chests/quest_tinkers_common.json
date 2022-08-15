@@ -1,0 +1,320 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:writable_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{RepairCost:0,display:{Name:'{\"text\":\"Intellectual Upgrades\"}'}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:compass",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{RepairCost:0,display:{Name:'{\"text\":\"Magnetic Materials\"}'}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:repair_kit",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Material:\"tconstruct:stone\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:cornflower",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{RepairCost:0,display:{Name:'{\"text\":\"Lucky Blues\"}'}}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:flint_shuriken",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:blank_sand_cast",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:efln_ball",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:pattern",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_brick",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 6,
+                                "max": 18
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_iron\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_copper\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_gold\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_osmium\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_nickel\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_tin\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_uranium\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_silver\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:seared_lantern",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{tank:{FluidName:\"tconstruct:molten_aluminum\",Amount:100}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_tin\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_nickel\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_osmium\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_uranium\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_aluminum\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_silver\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_iron\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_gold\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "tconstruct:copper_can",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fluid:\"tconstruct:molten_copper\"}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

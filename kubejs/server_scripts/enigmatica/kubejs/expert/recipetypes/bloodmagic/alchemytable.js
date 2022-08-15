@@ -2,8 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/ars_nouveau/enchanting_apparatus/';
-
+    const id_prefix = 'enigmatica:expert/bloodmagic/alchemytable/';
     const recipes = [
         {
             inputs: ['ars_nouveau:magic_clay', 'minecraft:blaze_powder'],
@@ -134,7 +133,7 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:alchemytable/reagent_lava'
         },
         {
-            inputs: ['#forge:saplings', '#forge:saplings', 'minecraft:sugar_cane', 'thermal:phytogro'],
+            inputs: ['#minecraft:saplings', '#minecraft:saplings', 'minecraft:sugar_cane', 'thermal:phytogro'],
             output: 'bloodmagic:reagentgrowth',
             count: 1,
             syphon: 2000,
@@ -157,7 +156,7 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:alchemytable/reagent_void'
         },
         {
-            inputs: ['quark:bottled_cloud', 'alexsmobs:tarantula_hawk_wing', 'ars_nouveau:wilden_wing'],
+            inputs: ['quark:bottled_cloud', 'alexsmobs:tarantula_hawk_wing_fragment', 'ars_nouveau:wilden_wing'],
             output: 'bloodmagic:reagentair',
             count: 1,
             syphon: 2000,
@@ -205,7 +204,20 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'occultism:afrit_essence',
-                Item.of('botania:incense_stick', { brewKey: 'botania:bloodthirst' }),
+                Item.of('botania:brew_vial', '{brewKey:"botania:bloodthirst"}'),
+                'eidolon:crimson_essence'
+            ],
+            output: 'bloodmagic:weakbloodshard',
+            count: 1,
+            syphon: 20000,
+            ticks: 200,
+            orbLevel: 3,
+            id: `${id_prefix}weakbloodshard_from_vial`
+        },
+        {
+            inputs: [
+                'occultism:afrit_essence',
+                Item.of('botania:brew_flask', '{brewKey:"botania:bloodthirst"}'),
                 'eidolon:crimson_essence'
             ],
             output: 'bloodmagic:weakbloodshard',
@@ -213,7 +225,20 @@ onEvent('recipes', (event) => {
             syphon: 20000,
             ticks: 200,
             orbLevel: 3,
-            id: 'bloodmagic:arc/weakbloodshard'
+            id: `${id_prefix}weakbloodshard_from_flask`
+        },
+        {
+            inputs: [
+                'occultism:afrit_essence',
+                Item.of('botania:incense_stick', '{brewKey:"botania:bloodthirst"}'),
+                'eidolon:crimson_essence'
+            ],
+            output: 'bloodmagic:weakbloodshard',
+            count: 10,
+            syphon: 20000,
+            ticks: 200,
+            orbLevel: 4,
+            id: `${id_prefix}weakbloodshard_from_incense`
         },
         {
             inputs: [
@@ -242,24 +267,6 @@ onEvent('recipes', (event) => {
             ticks: 200,
             orbLevel: 1,
             id: `${id_prefix}death_essence`
-        },
-        {
-            inputs: ['eidolon:enchanted_ash', '#forge:dusts/ender_pearl'],
-            output: 'eidolon:ender_calx',
-            count: 2,
-            syphon: 50,
-            ticks: 100,
-            orbLevel: 1,
-            id: `${id_prefix}ender_calx`
-        },
-        {
-            inputs: ['minecraft:warped_fungus', 'eidolon:ender_calx', '#forge:crops/nether_wart'],
-            output: 'eidolon:warped_sprouts',
-            count: 2,
-            syphon: 200,
-            ticks: 200,
-            orbLevel: 1,
-            id: `${id_prefix}warped_sprouts`
         },
         {
             inputs: [
@@ -392,7 +399,7 @@ onEvent('recipes', (event) => {
                 'bloodmagic:slate_vial',
                 Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
                 '#forge:nuggets/aluminum',
-                'undergarden:gloomper_leg'
+                'undergarden:raw_gloomper_leg'
             ],
             output: 'bloodmagic:quick_draw_anointment',
             count: 1,
@@ -400,6 +407,20 @@ onEvent('recipes', (event) => {
             ticks: 100,
             orbLevel: 1,
             id: 'bloodmagic:alchemytable/quick_draw_anointment'
+        },
+        {
+            inputs: [
+                'bloodmagic:slate_vial',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
+                'undergarden:utheric_shard',
+                'undergarden:raw_gwibling'
+            ],
+            output: 'bloodmagic:bow_velocity_anointment',
+            count: 1,
+            syphon: 500,
+            ticks: 100,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/bow_velocity_anointment'
         },
         {
             inputs: [
@@ -417,9 +438,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'undergarden:cloggrum_pickaxe',
-                'undergarden:cloggrum_axe',
-                'undergarden:cloggrum_shovel',
+                'undergarden:roasted_underbeans',
+                'undergarden:roasted_underbeans',
+                'undergarden:roasted_underbeans',
+                'undergarden:gloomper_leg',
+                'undergarden:cloggrum_ingot',
                 'undergarden:blisterberry'
             ],
             output: 'bloodmagic:reagentfastminer',
@@ -520,6 +543,179 @@ onEvent('recipes', (event) => {
             orbLevel: 1,
             id: `${id_prefix}light_gray_rune`
         },
+        {
+            inputs: ['bloodmagic:basiccuttingfluid', 'bloodmagic:tauoil', 'bloodmagic:lavasigil'],
+            output: 'bloodmagic:intermediatecuttingfluid',
+            count: 2,
+            syphon: 2100,
+            ticks: 200,
+            orbLevel: 3,
+            id: `${id_prefix}intermediatecuttingfluid`
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"eidolon:anchored"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:anchor_plate',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/anchor_plate'
+        },
+        {
+            inputs: ['darkutils:blank_plate', 'occultism:datura', 'bloodmagic:watersigil'],
+            output: 'darkutils:rune_nausea',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_nausea'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_blindness',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_blindness'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"atmospheric:worsening"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_hunger',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_hunger'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"undergarden:glowing"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_glowing',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_glowing'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"apotheosis:fatigue"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_fatigue',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_fatigue'
+        },
+        {
+            inputs: ['darkutils:blank_plate', 'alexsmobs:lava_bottle', 'bloodmagic:lavasigil'],
+            output: 'darkutils:rune_fire',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_fire'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"apotheosis:wither"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_wither',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_wither'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"minecraft:slowness"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_slowness',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_slowness'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"minecraft:weakness"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_weakness',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_weakness'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"minecraft:poison"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_poison',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_poison'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"minecraft:harming"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_damage',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_damage'
+        },
+        {
+            inputs: [
+                'atum:nuit_godshard',
+                'astralsorcery:nocturnal_powder',
+                'eidolon:death_essence',
+                'eidolon:death_essence',
+                'eidolon:soul_shard',
+                'eidolon:soul_shard'
+            ],
+            output: 'eidolon:shadow_gem',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: `${id_prefix}shadow_gem`
+        },
 
         /// Patchouli Removals
         {
@@ -530,10 +726,101 @@ onEvent('recipes', (event) => {
             ticks: 1,
             orbLevel: 1,
             id: 'bloodmagic:alchemytable/basic_cutting_fluid_sigil'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:componentframeparts',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/component_frame_parts'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:itemrouterfilterexact',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/router_filter'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:itemrouterfilteroredict',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/tag_router_filter'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:itemrouterfilterenchant',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/enchant_router_filter'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:itemrouterfiltermoditems',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/mod_router_filter'
+        },
+        {
+            inputs: ['kubejs:altered_recipe_indicator'],
+            output: 'bloodmagic:itemrouterfiltercomposite',
+            count: 1,
+            syphon: 1,
+            ticks: 1,
+            orbLevel: 1,
+            id: 'bloodmagic:alchemytable/composite_router_filter'
         }
     ];
+
+    let anointmentTypes = [
+        'holy_water_anointment',
+        'looting_anointment',
+        'melee_anointment',
+        'hidden_knowledge_anointment',
+        'fortune_anointment',
+        'bow_power_anointment',
+        'smelting_anointment',
+        'silk_touch_anointment',
+        'quick_draw_anointment',
+        'bow_velocity_anointment'
+    ];
+
+    anointmentTypes.forEach((anointmentType) => {
+        recipes.push({
+            inputs: [`bloodmagic:${anointmentType}`, 'bloodmagic:tauoil'],
+            output: `bloodmagic:${anointmentType}_l`,
+            count: 1,
+            syphon: 1000,
+            ticks: 100,
+            orbLevel: 3,
+            id: `bloodmagic:alchemytable/${anointmentType}_l`
+        });
+        if (anointmentType !== 'smelting_anointment' && anointmentType !== 'silk_touch_anointment') {
+            recipes.push({
+                inputs: [`bloodmagic:${anointmentType}`, 'bloodmagic:strong_tau'],
+                output: `bloodmagic:${anointmentType}_2`,
+                count: 1,
+                syphon: 1000,
+                ticks: 100,
+                orbLevel: 3,
+                id: `bloodmagic:alchemytable/${anointmentType}_2`
+            });
+        }
+    });
+
     recipes.forEach((recipe) => {
-        const re = event.recipes.bloodmagic
+        event.recipes.bloodmagic
             .alchemytable(Item.of(recipe.output, recipe.count), recipe.inputs)
             .syphon(recipe.syphon)
             .ticks(recipe.ticks)

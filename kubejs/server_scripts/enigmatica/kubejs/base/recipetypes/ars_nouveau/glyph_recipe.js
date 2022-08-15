@@ -1,21 +1,23 @@
 onEvent('recipes', (event) => {
-    const recipes = [];
+    const recipes = [
+        {
+            input: 'minecraft:chicken',
+            output: 'ars_nouveau:glyph_filter_is_mature',
+            tier: 'TWO',
+            id: 'toomanyglyphs:glyph_filter_is_mature'
+        }
+    ];
+
+    /*
+    Tiers
+    ONE: Magic Clay
+    TWO: Marvelous Clay
+    THREE: Mythical Clay
+    */
 
     recipes.forEach((recipe) => {
-        recipe.id
-            ? event
-                  .custom({
-                      type: 'ars_nouveau:glyph_recipe',
-                      tier: recipe.tier,
-                      input: recipe.input,
-                      output: recipe.output
-                  })
-                  .id(recipe.id)
-            : event.custom({
-                  type: 'ars_nouveau:glyph_recipe',
-                  tier: recipe.tier,
-                  input: recipe.input,
-                  output: recipe.output
-              });
+        recipe.type = 'ars_nouveau:glyph_recipe';
+
+        event.custom(recipe).id(recipe.id);
     });
 });

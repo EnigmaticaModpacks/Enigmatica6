@@ -3,7 +3,7 @@
 
 # The main modpack folder
 # Do not change or move
-$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
+$INSTANCE_ROOT = ("$PSScriptRoot/.." | Resolve-Path)
 
 # =====================================================================//
 #  CURSEFORGE ACCOUNT SETTINGS
@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.14"
+$MODPACK_VERSION = "1.3.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.5.13"
+$LAST_MODPACK_VERSION = "1.2.1"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -65,26 +65,29 @@ $CLIENT_RELEASE_TYPE = "alpha"
 #  DEPENDENCIES URL
 #=====================================================================//
 
-# File name of the latest https://github.com/Gaz492/twitch-export-builder/releases
-$TwitchExportBuilderDLWindows = "twitch-export-builder_windows_amd64.exe"
-$TwitchExportBuilderDLLinux = "twitch-export-builder_linux_amd64"
-$TwitchExportBuilderDLMac = "twitch-export-builder_darwin_amd64"
-
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$ChangelogGeneratorDL = "ChangelogGenerator-2.0.0-pre10.jar"
+$CHANGELOG_GENERATOR_JAR = "ChangelogGenerator-2.0.0-pre10.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$ModlistCreatorJar = "ModListCreator-1.2.1.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-2.0.1.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
 #=====================================================================//
 
-# Most of these are defined in .build.json.
+$CLIENT_FILE_AUTHOR = "EnigmaticaModpacks"
 
-# Configs to remove from the client files
+$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
+	"config",
+	"defaultconfigs",
+	"kubejs",
+	"local",
+	"packmenu",
+	"patchouli_books",
+	"schematics")
+
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
-	"betterendforge/client-config.toml",
+	"betterendforge/client.json",
 	"jei/bookmarks.ini",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
@@ -94,7 +97,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"astralsorcery-client.toml",
 	"betteradvancements-client.toml",
 	"cagedmobs-client.toml",
-	"chiselsandbits-client.toml",
 	"computercraft-client.toml",
 	"craftingtweaks-client.toml",
 	"create-client.toml",
@@ -154,13 +156,18 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"bloodmagic-client.toml",
 	"jmi-client.toml",
 	"tconplanner-client.toml",
-	"equipmentcompare-common.toml",
 	"roadrunner/client.toml",
 	"roadrunner/common.toml",
-	"oauth-client.toml"
+	"oauth-client.toml",
+	"jeed-client.toml",
+	"valhelsia_core-client.toml",
+	"forge-client.toml",
+	"configured-client.toml",
+	"Mekanism/client.toml",
+	"Mekanism/tools-client.toml"
 )
 
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "config/configswapper/Launch Backup")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
@@ -168,9 +175,9 @@ $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/
 
 # $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES has been moved to remove-client-mods.ps1 
 
-$ServerFilesFolder = "$InstanceRoot/server_files"
+$SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files"
 
-$ServerSetupConfigPath = "$InstanceRoot/server_files/server-setup-config.yaml"
+$SERVER_SETUP_CONFIG_PATH = "$SERVER_FILES_FOLDER/server-setup-config.yaml"
 
 # A continuous line of the folders and files (with extensions) to zip into Server Files.
 # Default: @("mods", "config")
@@ -178,22 +185,12 @@ $ServerSetupConfigPath = "$InstanceRoot/server_files/server-setup-config.yaml"
 $CONTENTS_TO_ZIP = @()
 
 # =====================================================================//
-#  Operating System
-# =====================================================================//
-
-$IsLinux = $false
-
-$IsMacOS = $false
-
-$IsWindows = $true
-
-# =====================================================================//
 #  MODULES
 # =====================================================================//
 
 # Toggle twitch-export-builder (automatic building of the manifest zip) on/off
 # Default: $true
-$ENABLE_CURSE_CLIENT_MODULE = $false
+$ENABLE_CURSE_CLIENT_MODULE = $true
 
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.
@@ -227,7 +224,6 @@ $ENABLE_ALWAYS_UPDATE_JARS = $false
 # https://github.com/github-changelog-generator/github-changelog-generator
 # Default: $false
 $ENABLE_GITHUB_CHANGELOG_GENERATOR_MODULE = $true	
-
 
 
 # =====================================================================//
@@ -264,5 +260,5 @@ $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
 $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Server $MODPACK_VERSION"
 
 # Path to the ModListCreators output file
-$ModlistPath = "$InstanceRoot/changelogs/modlist_$MODPACK_VERSION.md"
-$ChangelogPath = "$InstanceRoot/changelogs/changelog_mods_$MODPACK_VERSION.md"
+$MODLIST_PATH = "$INSTANCE_ROOT/changelogs/modlist_$MODPACK_VERSION.md"
+$CHANGELOG_PATH = "$INSTANCE_ROOT/changelogs/changelog_mods_$MODPACK_VERSION.md"

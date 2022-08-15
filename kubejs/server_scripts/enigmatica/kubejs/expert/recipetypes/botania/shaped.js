@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'botania:mana_pool',
             pattern: ['A A', 'ABA'],
@@ -49,7 +49,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'atum:ectoplasm',
                 B: 'glassential:glass_ghostly',
-                C: 'botania:corporea_block',
+                C: 'botania:corporea_interceptor',
                 D: 'occultism:spirit_attuned_gem'
             },
             id: 'botania:corporea_index'
@@ -99,10 +99,10 @@ onEvent('recipes', (event) => {
             output: 'botania:knockback_belt',
             pattern: ['B  ', ' C ', 'D A'],
             key: {
-                A: { tag: 'botania:runes/earth' },
-                B: { tag: 'botania:runes/fire' },
-                C: { item: 'eidolon:basic_belt' },
-                D: { tag: 'forge:ingots/manasteel' }
+                A: '#botania:runes/earth',
+                B: '#botania:runes/fire',
+                C: 'eidolon:basic_belt',
+                D: '#forge:ingots/manasteel'
             },
             id: 'botania:knockback_belt'
         },
@@ -110,10 +110,10 @@ onEvent('recipes', (event) => {
             output: 'botania:travel_belt',
             pattern: ['B  ', ' C ', 'D A'],
             key: {
-                A: { tag: 'botania:runes/air' },
-                B: { tag: 'botania:runes/earth' },
-                C: { item: 'eidolon:basic_belt' },
-                D: { tag: 'forge:ingots/manasteel' }
+                A: '#botania:runes/air',
+                B: '#botania:runes/earth',
+                C: 'eidolon:basic_belt',
+                D: '#forge:ingots/manasteel'
             },
             id: 'botania:travel_belt'
         },
@@ -121,19 +121,44 @@ onEvent('recipes', (event) => {
             output: 'botania:crafting_halo',
             pattern: [' A ', 'BCB', ' B '],
             key: {
-                A: { item: 'botania:corporea_spark' },
-                B: { item: 'ars_nouveau:marvelous_clay' },
-                C: { item: 'ars_nouveau:glyph_craft' }
+                A: 'botania:corporea_spark',
+                B: 'ars_nouveau:marvelous_clay',
+                C: 'ars_nouveau:glyph_craft'
             },
             id: 'botania:crafting_halo'
+        },
+        {
+            output: 'botania:glass_pickaxe',
+            pattern: ['ABA', ' C ', ' C '],
+            key: {
+                A: 'glassential:glass_ghostly',
+                B: '#forge:gems/mana',
+                C: 'naturesaura:ancient_stick'
+            },
+            id: 'botania:glass_pickaxe'
+        },
+        {
+            output: Item.of('botania:corporea_spark', 6),
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: 'botania:spark',
+                B: 'atum:ectoplasm',
+                C: Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })
+            },
+            id: 'botania:corporea_spark'
+        },
+        {
+            output: 'botania:vine_ball',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:vine',
+                B: '#forge:slimeballs'
+            },
+            id: 'botania:vine_ball'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

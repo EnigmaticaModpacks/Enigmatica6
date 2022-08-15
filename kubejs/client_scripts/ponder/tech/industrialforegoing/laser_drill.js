@@ -5,13 +5,13 @@
 
 onEvent('ponder.registry', (event) => {
     let badOres = Ingredient.of([
-        '#forge:ores/iron',
-        '#forge:ores/coal',
-        '#forge:ores/apatite',
-        '#forge:ores/tin',
-        '#forge:ores/copper',
-        '#forge:ores/cinnabar'
-    ]).filter('#forge:chunks');
+        'emendatusenigmatica:iron_ore',
+        'emendatusenigmatica:coal_ore',
+        'emendatusenigmatica:apatite_ore',
+        'emendatusenigmatica:tin_ore',
+        'emendatusenigmatica:copper_ore',
+        'emendatusenigmatica:cinnabar_ore'
+    ]);
 
     event
         .create('enigmatica:laser_drill', [
@@ -245,7 +245,7 @@ onEvent('ponder.registry', (event) => {
                     .showControls(
                         new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN)
                             .rightClick()
-                            .withItem(`industrialforegoing:laser_lens5`),
+                            .withItem(industrialforegoing.laser_lens.lime),
                         20
                     );
 
@@ -281,9 +281,10 @@ onEvent('ponder.registry', (event) => {
                             .showing(PonderIcons.I_CONFIRM)
                             .withItem(
                                 randomOf(
-                                    Ingredient.of(['#forge:ores/uranium', '#forge:ores/emerald']).filter(
-                                        '#forge:chunks'
-                                    )
+                                    Ingredient.of([
+                                        'emendatusenigmatica:uranium_ore',
+                                        'emendatusenigmatica:emerald_ore'
+                                    ])
                                 )
                             ),
                         120
@@ -391,7 +392,7 @@ onEvent('ponder.registry', (event) => {
                     .showControls(
                         new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_ADD)
-                            .withItem(`industrialforegoing:laser_lens1`),
+                            .withItem(industrialforegoing.laser_lens.orange),
                         30
                     );
 
@@ -419,7 +420,7 @@ onEvent('ponder.registry', (event) => {
                 scene.world().modifyTileNBT(
                     tank1,
                     {
-                        tank: { FluidName: 'minecraft:lava', Amount: 100 }
+                        tank: { FluidName: 'minecraft:lava', Amount: 1000 }
                     },
                     true
                 );
@@ -511,7 +512,7 @@ onEvent('ponder.registry', (event) => {
                     .showControls(
                         new PonderInput([3.5, 7, 3.5], PonderPointing.DOWN)
                             .showing(PonderIcons.I_ADD)
-                            .withItem(`industrialforegoing:laser_lens10`),
+                            .withItem(industrialforegoing.laser_lens.purple),
                         60
                     );
 
