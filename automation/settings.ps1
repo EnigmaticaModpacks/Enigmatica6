@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.4.1"
+$MODPACK_VERSION = "1.5.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.4.0"
+$LAST_MODPACK_VERSION = "1.4.1"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -66,10 +66,10 @@ $CLIENT_RELEASE_TYPE = "alpha"
 #=====================================================================//
 
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$CHANGELOG_GENERATOR_JAR = "ChangelogGenerator-2.0.0-pre10.jar"
+$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.0.1-fatjar.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-2.0.1.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-4.0.1-fatjar.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
