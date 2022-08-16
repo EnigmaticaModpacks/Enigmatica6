@@ -16,7 +16,7 @@
 			description: [
 				"This mod provides a wide range of machines to automate various tasks. This questline introduces some key machines (but not ALL the machines, as there are quite a few)."
 				""
-				"There are currently three (craftable) tiers of IF machine frame. Right now, you can only make the lowest-tier version."
+				"There are currently four (craftable) tiers of IF machine frame. Right now, you can only make the lowest-tier version."
 			]
 			size: 1.5d
 			optional: true
@@ -503,6 +503,7 @@
 			x: 1.5d
 			y: 1.0d
 			shape: "octagon"
+			description: ["Fourth, last tier of machine frame is only used in few applications. But those applications are nuclear!"]
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EDC"
 			tasks: [{
@@ -520,6 +521,7 @@
 		{
 			x: -2.5d
 			y: 4.0d
+			description: ["This generator uses any furnace fuel to generate FE. Check JEI for generation rates for any compatible item."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000051"]
 			id: "0000000000000EE1"
@@ -571,6 +573,7 @@
 		{
 			x: 3.0d
 			y: 9.0d
+			description: ["This generator uses slimeballs to generate FE. Check JEI for generation rates."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EE5"
@@ -583,6 +586,7 @@
 		{
 			x: 5.5d
 			y: 4.0d
+			description: ["This generator uses food to generate FE. Check JEI for statistic of each food item."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000051"]
 			id: "0000000000000EE7"
@@ -595,6 +599,7 @@
 		{
 			x: -1.0d
 			y: 7.0d
+			description: ["This generators produces FE from potions. Check JEI to see statistics for each potion."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EE9"
@@ -607,6 +612,7 @@
 		{
 			x: -0.5d
 			y: 8.0d
+			description: ["This generator will produce FE from enchanted books. Check JEI for statistics for each enchantment."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EEB"
@@ -619,6 +625,7 @@
 		{
 			x: 0.0d
 			y: 9.0d
+			description: ["This generator generates FE from ender pearls. Check JEI for generation rates."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EED"
@@ -631,6 +638,7 @@
 		{
 			x: -1.5d
 			y: 6.0d
+			description: ["This generator uses TNT and gunpowder to generate FE. Check JEI for generation rates."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EEF"
@@ -643,6 +651,7 @@
 		{
 			x: -2.0d
 			y: 5.0d
+			description: ["This generator produces FE from snow and ice. Check JEI for statistics for each compatible item."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000051"]
 			id: "0000000000000EF1"
@@ -655,6 +664,7 @@
 		{
 			x: 2.0d
 			y: 11.0d
+			description: ["This generator will produce FE from dragon breath. Check JEI for generation rate."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000EDC"]
 			id: "0000000000000EF3"
@@ -667,6 +677,7 @@
 		{
 			x: 4.5d
 			y: 6.0d
+			description: ["This generator generates FE from lava. Optionaly you can provide Redstone to boost power production. Check JEI for generation rates."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EF5"
@@ -679,6 +690,7 @@
 		{
 			x: 5.0d
 			y: 5.0d
+			description: ["This generator generates FE from everything that is, you guessed it, pink. Check JEI for statistic of each item."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000051"]
 			id: "0000000000000EF7"
@@ -691,6 +703,7 @@
 		{
 			x: 1.0d
 			y: 11.0d
+			description: ["This generator generates FE from what its name suggest, from Nether Stars! Check JEI for generation rate."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000EDC"]
 			id: "0000000000000EF9"
@@ -703,6 +716,7 @@
 		{
 			x: 4.0d
 			y: 7.0d
+			description: ["This generator generates FE from monster drops. Check JEI for statistic of compatible items."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EFB"
@@ -715,7 +729,7 @@
 		{
 			x: 2.5d
 			y: 10.0d
-			description: ["Will produce power using fireworks depending of the firework type and shapes."]
+			description: ["This generator will produce power using fireworks depending of the firework type and shapes."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000EFD"
@@ -728,6 +742,7 @@
 		{
 			x: 3.5d
 			y: 8.0d
+			description: ["This generator produces FE from nether mushroom related items. Check JEI for statistics of compatible items."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000078"]
 			id: "0000000000000F01"
@@ -740,6 +755,7 @@
 		{
 			x: 0.5d
 			y: 10.0d
+			description: ["This generator uses metal ingots to generate power. Check JEI for generation rates and compatible metals."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000EDC"]
 			id: "0000000000000F03"
