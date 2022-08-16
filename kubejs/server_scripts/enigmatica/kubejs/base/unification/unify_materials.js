@@ -1465,18 +1465,31 @@ onEvent('recipes', (event) => {
             }
         }
 
-        let recipes = [{ type: 'gem', amount: 144, input: `#forge:gems/${material}`, energy: 5000 }];
+        let baseAmount = 144,
+            blockAmount = 144 * 9,
+            gearAmount = 144 * 4;
+
+        if (material == 'quartz') {
+            blockAmount = 144 * 4;
+        }
+
+        let recipes = [{ type: 'gem', amount: baseAmount, input: `#forge:gems/${material}`, energy: 5000 }];
         if (block != air) {
-            recipes.push({ type: 'block', amount: 1296, input: `#forge:storage_blocks/${material}`, energy: 40000 });
+            recipes.push({
+                type: 'block',
+                amount: blockAmount,
+                input: `#forge:storage_blocks/${material}`,
+                energy: 40000
+            });
         }
         if (gear != air) {
-            recipes.push({ type: 'gear', amount: 576, input: `#forge:gears/${material}`, energy: 20000 });
+            recipes.push({ type: 'gear', amount: gearAmount, input: `#forge:gears/${material}`, energy: 20000 });
         }
         if (rod != air) {
-            recipes.push({ type: 'rod', amount: 144, input: `#forge:rods/${material}`, energy: 2500 });
+            recipes.push({ type: 'rod', amount: baseAmount, input: `#forge:rods/${material}`, energy: 2500 });
         }
         if (plate != air) {
-            recipes.push({ type: 'plate', amount: 144, input: `#forge:plates/${material}`, energy: 5000 });
+            recipes.push({ type: 'plate', amount: baseAmount, input: `#forge:plates/${material}`, energy: 5000 });
         }
 
         recipes.forEach((recipe) => {
