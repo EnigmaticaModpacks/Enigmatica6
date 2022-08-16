@@ -310,7 +310,7 @@
 		{
 			x: -1.5d
 			y: -4.5d
-			description: ["This imports items from the ID Network."]
+			description: ["This imports items into the ID Network."]
 			dependencies: ["47BF421FFE9A02B6"]
 			id: "056D516E5F520ECD"
 			tasks: [{
@@ -322,6 +322,7 @@
 		{
 			x: 1.5d
 			y: -4.5d
+			description: ["This exports items from the ID Network."]
 			dependencies: ["47BF421FFE9A02B6"]
 			id: "6B0199533EB50413"
 			tasks: [{
