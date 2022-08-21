@@ -46,4 +46,8 @@ refresh_all = false
 #how long (in ticks) before the contents of a loot container will be refresh [default 20 minutes = 20 * 60 * 20]
 #Range: > 0
 refresh_value = 24000
+#when true, comparators on Lootr containers will give an output of 1; when false, they will give an output of 0
+power_comparators = true
+#lootr chests cannot be destroyed by explosions
+blast_resistant = false
 
