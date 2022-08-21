@@ -45,7 +45,6 @@ function Merge-DevelopIntoMasterPrompt {
     Write-Host "Please Develop into Master, and then Master into Develop"
     Write-Host "Make sure you have no unsaved changes!" -ForegroundColor Red
     Write-Host "Ctrl+C to exit"
-    pause
 }
 
 Validate-SecretsFile
@@ -55,5 +54,3 @@ Merge-DevelopIntoMasterPrompt
 # Flow:
 # close all `Status: Fixed In Next Release` issues
 # merge develop into master and master into develop afterwards
-# run github-changelog-generator
-# pause and run modpack-uploader if wanted
