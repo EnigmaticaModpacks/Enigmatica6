@@ -41,7 +41,7 @@ function Close-FixedIssues {
     }
 
 }
-function Merge-DevelopIntoMaster {
+function Merge-DevelopIntoMasterPrompt {
     Write-Host "Please Develop into Master, and then Master into Develop"
     Write-Host "Make sure you have no unsaved changes!" -ForegroundColor Red
     Write-Host "Ctrl+C to exit"
@@ -50,11 +50,7 @@ function Merge-DevelopIntoMaster {
 
 Validate-SecretsFile
 Close-FixedIssues
-Merge-DevelopIntoMaster
-Write-Host
-Write-Host "Upload modpack? Press CTRL-C to cancel" -ForegroundColor Green
-pause
-.  "$PSScriptRoot\modpack-uploader.ps1"
+Merge-DevelopIntoMasterPrompt
 
 # Flow:
 # close all `Status: Fixed In Next Release` issues
