@@ -1,24 +1,94 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.5.0
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_1.5.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.5.0.md)_
+
+**Changes/Improvements**
+
+-   Bountiful Bounties give really \(probably unintended\) overpowered rewards for cheap prices. [\#5165](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5165)
+-   Melting grout through mekanism [\#5142](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5142)
+-   Buff Arc Furnace by Adding Recipes from Lower Tier Alloying Machines [\#5134](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5134)
+-   Advanced assembler batch recipe for PNC advanced pressure tubes [\#5120](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5120)
+-   Stellar Neutron Activator + Industrial Deuterium Plant [\#5116](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5116)
+-   \[Expert\] Iesnium pickaxe melting recipe inconsistency. [\#5100](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5100)
+-   Blazing blood in powah magmatic generator [\#5088](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5088)
+-   Atum Animal Armor processing [\#5040](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5040)
+-   Add \#ftbchunksinteract_whitelist tag to lootr containers and sharestones [\#5036](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5036)
+-   Have baby bees drop larva as well [\#4948](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4948)
+-   Fix Quartz Melting in Crucible [\#5175](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5175) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Update Generator descriptions for IF quests [\#5174](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5174) ([Kanzaji](https://github.com/Kanzaji))
+-   Quests Typos Fixes [\#5172](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5172) ([Kanzaji](https://github.com/Kanzaji))
+-   \[Expert\] Add Recipe for Seared Bricks to Enrichment Chamber \(\#5142\) [\#5162](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5162) ([Kanzaji](https://github.com/Kanzaji))
+-   \[Expert\] Will crystal update [\#5159](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5159) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Expert\] Expand Wicked Altar uses [\#5158](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5158) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Atum Animal Armor Recyclling [\#5151](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5151) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Switch Ender bee breeding to use ender pearl dust instead of pearls [\#5150](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5150) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add Brown and Green Dye Mixing to Create Mixer [\#5149](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5149) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Change Blazing Crystal Blocks to cool to lava [\#5148](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5148) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Allow Starlight to be drilled in Normal again [\#5147](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5147) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Remove impossible fluids from Infinite Draining [\#5146](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5146) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Expert\] Fireproof Tree of Life [\#5143](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5143) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add Quest to Mekanism Chapter for DT Masterful Machinery Structures [\#5137](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5137) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Expert\] Allow stimpacks to accept flasks made in either order [\#5133](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5133) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Expert\] Update RecipeID for Display Panel recipe [\#5132](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5132) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Expert\] batch machine frames and pressure tubes [\#5131](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5131) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix Constellation box recipes [\#5130](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5130) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix End ores showing up in overworld ore lasers [\#5129](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5129) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Integrate Ars Crushing into our crushing scripts [\#5110](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5110) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Expert\] Add direct craft for Forgotten tools [\#5109](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5109) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Update Iesnium pick melting to reflect expert cost [\#5107](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5107) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Convert to using PNC's entity blacklist tag instead of old config system [\#5106](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5106) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Blood Magic Content Update [\#5103](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5103) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Expert\] Speed increases [\#5102](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5102) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Drop bee larva via kubejs instead of loot tables [\#5096](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5096) ([Quezler](https://github.com/Quezler))
+-   New Crowdin updates [\#5086](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5086) ([NielsPilgaard](https://github.com/NielsPilgaard))
+-   Set up Interact Whitelist for FTB Chunks, add Lootr and Sharestones [\#5177](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5177) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Making Cloggrum Bars meltable [\#5154](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5154) ([g0urra](https://github.com/g0urra))
+-   Remove "This item is disabled" descriptions for docks from Dank Storage and Tank Null [\#5141](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5141) ([Gcat101](https://github.com/Gcat101))
+-   Update Arc Furnace [\#5138](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5138) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Powah - blazing blood compat [\#5093](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5093) ([StevenDoesStuffs](https://github.com/StevenDoesStuffs))
+
+**Bug Fixes**
+
+-   Nether Quartz Duplication Using Magma Crucible [\#5173](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5173)
+-   Stimpacks are uncraftable if melded potions have their effects listed in the "wrong" order [\#5155](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5155)
+-   Laser Drill No Longer Makes Liquid Starlight In Normal Mode [\#5145](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5145)
+-   \[EXPERT\] Plastic Sheets - You Can Touch, You Can Play [\#5144](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5144)
+-   \[Expert\] Constellation Boxes do not require any specific constellations [\#5128](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5128)
+-   IF Laser Drill in overworld getting End ores [\#5127](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5127)
+-   The Tree of Life occasionally breaks [\#5124](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5124)
+-   Blaze rod duplication? [\#5111](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5111)
+-   Vacuum trap blacklist not working/set correctly [\#5101](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5101)
+-   Enderdragons not dropping a head when killed [\#5099](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5099)
+-   \[Expert\] Energy Discharger Upgrade path broken [\#5090](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5090)
+-   Ender Bees becomes agroed when trying to breed them / makes them unbreedable [\#5035](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5035)
+-   Green and brown dyes aren’t craftable with other dyes in create’s mechanical mixer [\#5033](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5033)
+-   Omnidirectional hoppers with entity tracker upgrades have bugged interactions with villagers [\#5028](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5028)
+-   \[Bountiful\] Witch Dung rebalance [\#5169](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5169) ([Discomanco](https://github.com/Discomanco))
+-   Energy Discharger from Powah Upgrade Recipe fix [\#5091](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5091) ([Kanzaji](https://github.com/Kanzaji))
+
+---
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.4.1
 
 _Using Forge-1.16.5-36.2.34_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_1.4.1.md)_
 
 **Changes/Improvements**
 
-- \[Expert\] Reset compressor task [\#5082](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5082) ([MuteTiefling](https://github.com/MuteTiefling))
-- Increase mana capacity of the Gaia Reactor [\#5077](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5077) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Expert\] Reset compressor task [\#5082](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5082) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Increase mana capacity of the Gaia Reactor [\#5077](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5077) ([MuteTiefling](https://github.com/MuteTiefling))
 
 **Bug Fixes**
 
-- Liquid compressor quest bug when update from 1.3.0 to 1.4.0 [\#5080](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5080)
-- Gaia reactor has stopped working after updating the pack \(hypothesis: the mana output ports now have insufficient capacity\) [\#5076](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5076)
-- Item Tunnel Quest Uncompletable [\#5039](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5039)
-- Bucket dupe with PNC fluids and pretty fluid pipes [\#4988](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4988)
-- Missing Multiservo Press 3x3 Compacting Recipes [\#4857](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4857)
-- Infinity bucket Source with routers Activator [\#4816](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4816)
-- External Storage quest description. [\#4809](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4809)
-- Industrial Deuterium Plant Cannot be completed [\#4784](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4784)
-- Rope Pulley infinite can be archived without the need of 10k fluid source blocks [\#4772](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4772)
-- \[Expert\] Fix visibility for Bragging Rights chapter [\#5078](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5078) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Liquid compressor quest bug when update from 1.3.0 to 1.4.0 [\#5080](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5080)
+-   Gaia reactor has stopped working after updating the pack \(hypothesis: the mana output ports now have insufficient capacity\) [\#5076](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5076)
+-   Item Tunnel Quest Uncompletable [\#5039](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5039)
+-   Bucket dupe with PNC fluids and pretty fluid pipes [\#4988](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4988)
+-   Missing Multiservo Press 3x3 Compacting Recipes [\#4857](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4857)
+-   Infinity bucket Source with routers Activator [\#4816](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4816)
+-   External Storage quest description. [\#4809](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4809)
+-   Industrial Deuterium Plant Cannot be completed [\#4784](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4784)
+-   Rope Pulley infinite can be archived without the need of 10k fluid source blocks [\#4772](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/4772)
+-   \[Expert\] Fix visibility for Bragging Rights chapter [\#5078](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5078) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
