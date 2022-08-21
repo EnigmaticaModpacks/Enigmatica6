@@ -169,6 +169,49 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             id: `${id_prefix}stone_altar`
+        },
+        {
+            inputs: [
+                'botania:corporea_spark',
+                '#forge:nuggets/silicon_bronze',
+                'bloodmagic:ritualstone',
+                '#forge:nuggets/silicon_bronze',
+                'bloodmagic:ritualstone',
+                '#forge:nuggets/silicon_bronze'
+            ],
+            output: {
+                entries: [{ result: { item: 'bloodmagic:teleposer', count: 2 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: `${id_prefix}teleposer`
+        },
+        {
+            inputs: ['64x minecraft:oak_leaves', '#forge:dusts/starmetal', 'quark:green_crystal'],
+            output: {
+                entries: [{ result: { item: 'kubejs:crystalline_oak_leaves', count: 64 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: `${id_prefix}crystalline_oak_leaves`
+        },
+        {
+            inputs: ['64x byg:flowering_palo_verde_leaves', '#forge:dusts/starmetal', 'quark:yellow_crystal'],
+            output: {
+                entries: [{ result: { item: 'kubejs:crystalline_flowering_palo_verde_leaves', count: 64 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: `${id_prefix}crystalline_flowering_palo_verde_leaves`
+        },
+        {
+            inputs: ['64x minecraft:dark_oak_wood', '#forge:dusts/starmetal', 'quark:orange_crystal'],
+            output: {
+                entries: [{ result: { item: 'kubejs:crystalline_dark_oak_wood', count: 64 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: `${id_prefix}crystalline_dark_oak_wood`
         }
     ];
 

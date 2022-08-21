@@ -17,6 +17,8 @@
 		# The color of the text shown on the badge above equipped tooltips.
 		#Range: 0 ~ 4294967295
 		badge_text_color = 4294967295
+		# If badge_text should override the built-in translatable text.
+		override_badge_text = false
 
 	[client.control_options]
 		# If the comparison tooltip should show by default (pressing bound key hides).

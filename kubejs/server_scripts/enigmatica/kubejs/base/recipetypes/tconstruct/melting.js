@@ -58,6 +58,13 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}molten_gold`
         },
         {
+            ingredient: { item: 'undergarden:cloggrum_bars' },
+            result: { fluid: 'materialis:molten_cloggrum', amount: 48 },
+            temperature: 700,
+            time: 160,
+            id: `materialis:smeltery/melting/metal/cloggrum/ore`
+        },
+        {
             ingredient: { item: 'thermal:obsidian_glass' },
             result: { fluid: 'kubejs:molten_hardened_glass', amount: 1000 },
             temperature: 1400,
@@ -170,6 +177,48 @@ onEvent('recipes', (event) => {
             temperature: 825,
             time: 64,
             id: `${id_prefix}energized_glowstone_from_glowstone_dust`
+        },
+        {
+            ingredient: { item: 'atum:camel_iron_armor' },
+            result: { fluid: 'tconstruct:molten_iron', amount: 144 * 7 },
+            temperature: 800,
+            time: 39 * 20,
+            id: `${id_prefix}iron_from_camel_iron_armor`
+        },
+        {
+            ingredient: { item: 'atum:camel_gold_armor' },
+            result: { fluid: 'tconstruct:molten_gold', amount: 144 * 7 },
+            temperature: 700,
+            time: 37 * 20,
+            id: `${id_prefix}gold_from_camel_gold_armor`
+        },
+        {
+            ingredient: { item: 'atum:camel_diamond_armor' },
+            result: { fluid: 'tconstruct:molten_diamond', amount: 144 * 7 },
+            temperature: 1450,
+            time: 52 * 20,
+            id: `${id_prefix}diamond_from_camel_diamond_armor`
+        },
+        {
+            ingredient: { item: 'atum:desert_wolf_iron_armor' },
+            result: { fluid: 'tconstruct:molten_iron', amount: 144 * 7 },
+            temperature: 800,
+            time: 39 * 20,
+            id: `${id_prefix}iron_from_desert_wolf_iron_armor`
+        },
+        {
+            ingredient: { item: 'atum:desert_wolf_gold_armor' },
+            result: { fluid: 'tconstruct:molten_gold', amount: 144 * 7 },
+            temperature: 700,
+            time: 37 * 20,
+            id: `${id_prefix}gold_from_desert_wolf_gold_armor`
+        },
+        {
+            ingredient: { item: 'atum:desert_wolf_diamond_armor' },
+            result: { fluid: 'tconstruct:molten_diamond', amount: 144 * 7 },
+            temperature: 1450,
+            time: 52 * 20,
+            id: `${id_prefix}diamond_from_desert_wolf_diamond_armor`
         }
     ];
 

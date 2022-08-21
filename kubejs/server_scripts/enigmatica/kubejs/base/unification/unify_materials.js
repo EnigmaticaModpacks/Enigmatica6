@@ -74,6 +74,10 @@ onEvent('recipes', (event) => {
         occultism_metal_ore_crushing(event, material, ore, dust, ingot);
         occultism_ingot_gem_crushing(event, material, ingot, dust, gem);
 
+        ars_nouveau_gem_ore_crushing(event, material, ore, dust, gem, shard);
+        ars_nouveau_metal_ore_crushing(event, material, ore, dust, ingot);
+        ars_nouveau_ingot_gem_crushing(event, material, ingot, dust, gem);
+
         pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem);
         pedestals_metal_ore_crushing(event, material, ore, ingot, dust);
         pedestals_ingot_gem_crushing(event, material, ingot, dust, gem);
@@ -981,6 +985,114 @@ onEvent('recipes', (event) => {
         );
     }
 
+    function ars_nouveau_gem_ore_crushing(event, material, ore, dust, gem, shard) {
+        if (ore == air) {
+            return;
+        }
+
+        try {
+            var materialProperties = gemProcessingProperties[material],
+                primaryCount = materialProperties.thermal.primaryCount,
+                secondaryCount = materialProperties.thermal.secondaryCount,
+                secondaryChance = materialProperties.thermal.secondaryChance,
+                input = `#forge:ores/${material}`;
+        } catch (err) {
+            return;
+        }
+
+        switch (materialProperties.output) {
+            case 'dust':
+                primaryOutput = dust;
+                break;
+            case 'gem':
+                primaryOutput = gem;
+                break;
+            case 'shard':
+                primaryOutput = shard;
+                break;
+            default:
+                return;
+        }
+
+        let secondaryOutput = output;
+
+        if (materialProperties.secondary) {
+            secondaryOutput = materialProperties.secondary;
+        }
+
+        event
+            .custom({
+                type: 'ars_nouveau:crush',
+                input: Ingredient.of(input).toJson(),
+                output: [
+                    Item.of(primaryOutput, primaryCount).chance(1.0),
+                    Item.of(secondaryOutput, secondaryCount).chance(secondaryChance)
+                ]
+            })
+            .id(`ars_nouveau:crushing/${material}_from_ore`);
+    }
+
+    function ars_nouveau_metal_ore_crushing(event, material, ore, dust, ingot) {
+        if (ore == air || ingot == air || dust == air) {
+            return;
+        }
+        var primaryOutput = dust,
+            primaryCount = 2,
+            input = `#forge:ores/${material}`,
+            materialProperties;
+
+        try {
+            materialProperties = oreProcessingSecondaries[material];
+        } catch (err) {
+            return;
+        }
+
+        try {
+            secondaryOutput = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${materialProperties.secondary}`)).id;
+        } catch (err) {
+            secondaryOutput = dust;
+        }
+        event
+            .custom({
+                type: 'ars_nouveau:crush',
+                input: Ingredient.of(input).toJson(),
+                output: [Item.of(primaryOutput, primaryCount).chance(1.0), Item.of(secondaryOutput).chance(0.1)]
+            })
+            .id(`ars_nouveau:crushing/${material}_dust_from_ore`);
+    }
+
+    function ars_nouveau_ingot_gem_crushing(event, material, ingot, dust, gem) {
+        if (dust == air) {
+            return;
+        }
+
+        blacklistedMaterials = [];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+        var input,
+            output = dust;
+        if (ingot != air) {
+            input = `#forge:ingots/${material}`;
+        } else if (gem != air) {
+            input = `#forge:gems/${material}`;
+        } else {
+            return;
+        }
+
+        event
+            .custom({
+                type: 'ars_nouveau:crush',
+                input: Ingredient.of(input).toJson(),
+                output: [Item.of(output).chance(1.0)]
+            })
+            .id(`ars_nouveau:crushing/${material}_dust`);
+    }
+
     function pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem) {
         if (ore == air) {
             return;
@@ -1353,18 +1465,31 @@ onEvent('recipes', (event) => {
             }
         }
 
-        let recipes = [{ type: 'gem', amount: 144, input: `#forge:gems/${material}`, energy: 5000 }];
+        let baseAmount = 144,
+            blockAmount = 144 * 9,
+            gearAmount = 144 * 4;
+
+        if (material == 'quartz') {
+            blockAmount = 144 * 4;
+        }
+
+        let recipes = [{ type: 'gem', amount: baseAmount, input: `#forge:gems/${material}`, energy: 5000 }];
         if (block != air) {
-            recipes.push({ type: 'block', amount: 1296, input: `#forge:storage_blocks/${material}`, energy: 40000 });
+            recipes.push({
+                type: 'block',
+                amount: blockAmount,
+                input: `#forge:storage_blocks/${material}`,
+                energy: 40000
+            });
         }
         if (gear != air) {
-            recipes.push({ type: 'gear', amount: 576, input: `#forge:gears/${material}`, energy: 20000 });
+            recipes.push({ type: 'gear', amount: gearAmount, input: `#forge:gears/${material}`, energy: 20000 });
         }
         if (rod != air) {
-            recipes.push({ type: 'rod', amount: 144, input: `#forge:rods/${material}`, energy: 2500 });
+            recipes.push({ type: 'rod', amount: baseAmount, input: `#forge:rods/${material}`, energy: 2500 });
         }
         if (plate != air) {
-            recipes.push({ type: 'plate', amount: 144, input: `#forge:plates/${material}`, energy: 5000 });
+            recipes.push({ type: 'plate', amount: baseAmount, input: `#forge:plates/${material}`, energy: 5000 });
         }
 
         recipes.forEach((recipe) => {

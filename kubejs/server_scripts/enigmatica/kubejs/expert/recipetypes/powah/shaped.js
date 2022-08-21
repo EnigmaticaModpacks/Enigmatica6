@@ -195,8 +195,8 @@ onEvent('recipes', (event) => {
                     pattern: ['ABA', ' C ', ' A '],
                     key: {
                         A: capacitor,
-                        B: `powah:energy_discharger_${tier}`,
-                        C: Ingredient.of(lower_tiers.map((item) => `powah:energy_cell_${item}`))
+                        B: Ingredient.of(lower_tiers.map((item) => `powah:energy_discharger_${item}`)),
+                        C: `powah:energy_cell_${tier}`
                     },
                     id: `${id_prefix}energy_discharger_${tier}_upgrade`
                 },

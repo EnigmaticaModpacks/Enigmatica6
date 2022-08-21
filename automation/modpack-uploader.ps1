@@ -87,7 +87,7 @@ function Test-ForDependencies {
 }
 
 function New-ClientFiles {
-    if ($ENABLE_CURSE_CLIENT_MODULE) {
+    if ($ENABLE_CLIENT_FILE_MODULE) {
         Write-Host 
         Write-Host "Creating Client Files..." -ForegroundColor Cyan
         Write-Host 
@@ -168,7 +168,7 @@ function New-ManifestJson {
 }
 
 function Remove-BlacklistedFiles {
-    if ($ENABLE_CURSE_CLIENT_MODULE -or $ENABLE_SERVER_FILE_MODULE) {    
+    if ($ENABLE_CLIENT_FILE_MODULE -or $ENABLE_SERVER_FILE_MODULE) {    
         $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
             Write-Host "Removing overrides/$_"
             Remove-Item -Path "overrides/$_" -Recurse -ErrorAction SilentlyContinue
@@ -196,24 +196,19 @@ function New-Changelog {
     ) {
         if (-not (Test-Path $CHANGELOG_GENERATOR_JAR) -or $ENABLE_ALWAYS_UPDATE_JARS) {
             Remove-Item $CHANGELOG_GENERATOR_JAR -Recurse -Force -ErrorAction SilentlyContinue
-            Get-GitHubRelease -repo "TheRandomLabs/ChangelogGenerator" -file $CHANGELOG_GENERATOR_JAR
+            Get-GitHubRelease -repo "ModdingX/ModListCreator" -file $CHANGELOG_GENERATOR_JAR
         }
-        $changelogFile = "changelog.md"
-        Remove-Item $changelogFile -ErrorAction SilentlyContinue
-
         Write-Host 
         Write-Host "Generating mod changelog..." -ForegroundColor Cyan
         Write-Host 
 
-        java -jar $CHANGELOG_GENERATOR_JAR `
-            --markdown `
-            --lines=50 `
-            --entries=1 `
-            --new="$CLIENT_ZIP_NAME.zip" `
-            --old="$LAST_MODPACK_ZIP_NAME.zip"
-
         Remove-Item $CHANGELOG_PATH -ErrorAction SilentlyContinue
-        Move-Item -Path $changelogFile -Destination $CHANGELOG_PATH
+
+        java -jar $CHANGELOG_GENERATOR_JAR `
+            changelog `
+            --output $CHANGELOG_PATH `
+            --new "$CLIENT_ZIP_NAME.zip" `
+            --old "$LAST_MODPACK_ZIP_NAME.zip"
 
         Write-Host "Mod changelog generated!" -ForegroundColor Green
     }
@@ -222,11 +217,9 @@ function New-Changelog {
 function Push-ClientFiles {
     if ($ENABLE_MODPACK_UPLOADER_MODULE) {
 
-        if ($ENABLE_CURSE_CLIENT_MODULE -eq $false) {
+        if ($ENABLE_CLIENT_FILE_MODULE -eq $false) {
             Remove-BlacklistedFiles
         }
-
-        #$CLIENT_CHANGELOG = Get-Content -Path "$PSScriptRoot\..\changelogs\changelog.md"
 
         $CLIENT_METADATA = 
         "{
@@ -260,15 +253,14 @@ function Push-ClientFiles {
             Write-Host "Failed to upload client files: $response" -ForegroundColor Red
             throw "Failed to upload client files: $response"
         }
-        else {
-            Write-Host 
-            Write-Host "Uploaded modpack!" -ForegroundColor Green
-            Write-Host 
-            Write-Host "Return Id: $clientFileReturnId" -ForegroundColor Cyan
-            Write-Host
 
-            Update-FileLinkInServerFiles -ClientFileReturnId $clientFileReturnId
-        }
+        Write-Host 
+        Write-Host "Uploaded modpack!" -ForegroundColor Green
+        Write-Host 
+        Write-Host "Return Id: $clientFileReturnId" -ForegroundColor Cyan
+        Write-Host
+
+        Update-FileLinkInServerFiles -ClientFileReturnId $clientFileReturnId
     }
 }
 
@@ -352,7 +344,7 @@ function Push-ServerFiles {
 }
 
 function New-GitHubRelease {
-    if ($ENABLE_GITHUB_CHANGELOG_GENERATOR_MODULE) {
+    if ($ENABLE_GITHUB_RELEASE_MODULE) {
 
         $Base64Token = [System.Convert]::ToBase64String([char[]]$GITHUB_TOKEN);
         $Uri = "https://api.github.com/repos/$GITHUB_NAME/$GITHUB_REPOSITORY/releases?access_token=$GITHUB_TOKEN"
@@ -377,8 +369,7 @@ function New-GitHubRelease {
     
         Invoke-RestMethod -Headers $Headers -Uri $Uri -Body $Body -Method Post
         
-        # github_changelog_generator does not seem to run when I do this? Running it manually for now
-        #Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
+        Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator"
     }
 }
 
@@ -386,15 +377,12 @@ function Update-Modlist {
     if ($ENABLE_MODLIST_CREATOR_MODULE) {
         if (-not (Test-Path $MODLIST_CREATOR_JAR) -or $ENABLE_ALWAYS_UPDATE_JARS) {
             Remove-Item $MODLIST_CREATOR_JAR -Recurse -Force -ErrorAction SilentlyContinue
-            Get-GitHubRelease -repo "MelanX/ModListCreator" -file $MODLIST_CREATOR_JAR
+            Get-GitHubRelease -repo "ModdingX/ModListCreator" -file $MODLIST_CREATOR_JAR
         }
 
         Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
-        java -jar $MODLIST_CREATOR_JAR --markdown --output ".\" --detailed --manifest "$CLIENT_ZIP_NAME.zip"
-        Copy-Item -Path "MODLIST.md" -Destination $MODLIST_PATH -ErrorAction SilentlyContinue
-        Move-Item -Path "MODLIST.md" -Destination "MODLIST.md" -ErrorAction SilentlyContinue -Force
-        Copy-Item -Path "automation\MODLIST.md" -Destination $MODLIST_PATH -ErrorAction SilentlyContinue
-        Move-Item -Path "automation\MODLIST.md" -Destination "MODLIST.md" -ErrorAction SilentlyContinue -Force
+        java -jar $MODLIST_CREATOR_JAR modlist --output $MODLIST_PATH --detailed "$CLIENT_ZIP_NAME.zip"
+        Copy-Item -Path $MODLIST_PATH -Destination "$INSTANCE_ROOT/MODLIST.md"
     }
 }
 
@@ -410,7 +398,6 @@ Set-Location $INSTANCE_ROOT
 
 Test-ForDependencies
 Validate-SecretsFile
-
 
 if ($uploadExpertMode) {
     $CURSEFORGE_PROJECT_ID = 585046

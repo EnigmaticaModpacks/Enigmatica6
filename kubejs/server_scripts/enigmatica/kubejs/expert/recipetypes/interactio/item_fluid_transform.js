@@ -2,15 +2,10 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/interactio/item_fluid_transform/';
     const recipes = [
         {
-            inputs: [
-                { item: 'eidolon:enchanted_ash', count: 2 },
-                { tag: 'forge:clay', count: 1 },
-                { tag: 'forge:dusts/mana', count: 1 },
-                { tag: 'forge:dusts/lapis', count: 1 }
-            ],
+            inputs: ['2x eidolon:enchanted_ash', '#forge:clay', '#forge:dusts/mana', '#forge:dusts/lapis'],
             fluid: { fluid: 'water' },
             output: {
                 entries: [{ result: { item: 'ars_nouveau:magic_clay', count: 2 }, weight: 1 }],
@@ -22,11 +17,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'eidolon:enchanted_ash', count: 1 },
-                { item: 'atum:coin_gold', count: 6 },
-                { item: 'meetyourfight:phantoplasm', count: 1 },
-                { tag: 'forge:dusts/mana', count: 1 },
-                { tag: 'forge:dusts/lapis', count: 1 }
+                'eidolon:enchanted_ash',
+                '6x atum:coin_gold',
+                'meetyourfight:phantoplasm',
+                '#forge:dusts/mana',
+                '#forge:dusts/lapis'
             ],
             fluid: { fluid: 'water' },
             output: {
@@ -38,7 +33,7 @@ onEvent('recipes', (event) => {
             id: 'meetyourfight:spectres_eye'
         },
         {
-            inputs: [{ item: 'kubejs:hot_compressed_iron_ingot', count: 1 }],
+            inputs: ['kubejs:hot_compressed_iron_ingot'],
             fluid: { fluid: 'water' },
             output: {
                 entries: [{ result: { item: 'pneumaticcraft:ingot_iron_compressed', count: 1 }, weight: 1 }],
@@ -46,10 +41,10 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             consume_fluid: 0.0,
-            id: 'enigmatica:expert/interactio/ingot_iron_compressed'
+            id: `${id_prefix}ingot_iron_compressed`
         },
         {
-            inputs: [{ item: 'kubejs:hot_compressed_iron_block', count: 1 }],
+            inputs: ['kubejs:hot_compressed_iron_block'],
             fluid: { fluid: 'water' },
             output: {
                 entries: [{ result: { item: 'pneumaticcraft:compressed_iron_block', count: 1 }, weight: 1 }],
@@ -57,20 +52,14 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             consume_fluid: 0.0,
-            id: 'enigmatica:expert/interactio/compressed_iron_block'
+            id: `${id_prefix}compressed_iron_block`
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
-            type: 'interactio:item_fluid_transform',
-            inputs: recipe.inputs,
-            output: recipe.output,
-            fluid: recipe.fluid,
-            consume_fluid: recipe.consume_fluid
-        });
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        recipe.type = 'interactio:item_fluid_transform';
+        recipe.inputs = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+
+        event.custom(recipe).id(recipe.id);
     });
 });

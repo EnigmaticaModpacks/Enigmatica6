@@ -241,6 +241,18 @@ onEvent('recipes', (event) => {
         }
     ];
 
+    const patchouli_safe_removals = [{ output: 'bloodmagic:teleposerfocus', id: 'bloodmagic:altar/teleposer_focus' }];
+
+    patchouli_safe_removals.forEach((recipe) => {
+        event.recipes.bloodmagic
+            .altar(recipe.output, 'kubejs:altered_recipe_indicator')
+            .upgradeLevel(0)
+            .altarSyphon(0)
+            .consumptionRate(0)
+            .drainRate(0)
+            .id(recipe.id);
+    });
+
     recipes.forEach((recipe) => {
         event.recipes.bloodmagic
             .altar(recipe.output, recipe.input)
