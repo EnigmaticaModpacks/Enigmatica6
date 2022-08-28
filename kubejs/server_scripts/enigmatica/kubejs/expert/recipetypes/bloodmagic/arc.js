@@ -10,7 +10,7 @@ onEvent('recipes', (event) => {
             input: 'bloodmagic:weakbloodorb',
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
-            consume: false,
+            consume: true,
             id: 'bloodmagic:arc/reversion/weak_blood_orb'
         },
         {
@@ -18,7 +18,7 @@ onEvent('recipes', (event) => {
             input: 'bloodmagic:apprenticebloodorb',
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
-            consume: false,
+            consume: true,
             id: 'bloodmagic:arc/reversion/apprentice_blood_orb'
         },
         {
@@ -26,7 +26,7 @@ onEvent('recipes', (event) => {
             input: 'bloodmagic:magicianbloodorb',
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
-            consume: false,
+            consume: true,
             id: 'bloodmagic:arc/reversion/magician_blood_orb'
         },
         {
@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
             input: 'bloodmagic:masterbloodorb',
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
-            consume: false,
+            consume: true,
             id: 'bloodmagic:arc/reversion/master_blood_orb'
         },
         {
@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
             input: 'botania:dragonstone',
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
-            consume: false,
+            consume: true,
             id: `${id_prefix}mana_diamond_from_dragonstone`
         },
         {
@@ -58,7 +58,7 @@ onEvent('recipes', (event) => {
             input: 'botania:dragonstone_block',
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
-            consume: false,
+            consume: true,
             id: `${id_prefix}mana_diamond_block_from_dragonstone_block`
         },
         {
@@ -66,7 +66,7 @@ onEvent('recipes', (event) => {
             input: '#waystones:waystone',
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
-            consume: false,
+            consume: true,
             id: `${id_prefix}warp_stone_from_waystone`
         },
         {
@@ -74,7 +74,7 @@ onEvent('recipes', (event) => {
             input: '#waystones:sharestone',
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
-            consume: false,
+            consume: true,
             id: `${id_prefix}warp_stone_from_sharestone`
         },
         {
@@ -82,7 +82,7 @@ onEvent('recipes', (event) => {
             input: 'waystones:portstone',
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],
-            consume: false,
+            consume: true,
             id: `${id_prefix}warp_stone_from_portstone`
         }
 
