@@ -68,6 +68,7 @@ const generatableStone = [
     'quark:marble',
     'quark:permafrost',
     'quark:slate',
+    'quark:deepslate',
     'astralsorcery:marble_raw',
     'create:dark_scoria',
     'create:scoria',
@@ -76,7 +77,11 @@ const generatableStone = [
     'create:weathered_limestone',
     'create:limestone',
     'atmospheric:red_arid_sandstone',
-    'atmospheric:arid_sandstone'
+    'atmospheric:arid_sandstone',
+    'atum:alabaster',
+    'atum:porphyry',
+    'quark:myalite',
+    'quark:dusky_myalite'
 ];
 const generatableBasalt = [];
 
