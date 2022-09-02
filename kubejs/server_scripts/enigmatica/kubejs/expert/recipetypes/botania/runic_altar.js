@@ -692,6 +692,24 @@ onEvent('recipes', (event) => {
             output: 'quark:rainbow_rune',
             count: 8,
             id: 'quark:tools/crafting/runes/rainbow_rune2'
+        },
+        {
+            inputs: [
+                'betterendforge:flavolite_polished',
+                '#forge:shards/aurora',
+                '#forge:shards/aurora',
+                '#forge:shards/aurora',
+                '#forge:shards/aurora',
+                '#botania:runes/mana',
+                '#forge:shards/aurora',
+                '#forge:shards/aurora',
+                '#forge:shards/aurora',
+                '#forge:shards/aurora'
+            ],
+            mana: 4000 * 8,
+            output: 'betterendforge:flavolite_runed',
+            count: 2,
+            id: 'betterendforge:runed_flavolite'
         }
     ];
 
