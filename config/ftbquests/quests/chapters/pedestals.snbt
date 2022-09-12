@@ -1231,6 +1231,13 @@
 				id: "13B8EBFFC9B4CFE1"
 				type: "item"
 				title: "FE Generators"
+				icon: {
+					id: "pedestals:coin/rffuelgen"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -1239,10 +1246,23 @@
 							{
 								id: "pedestals:coin/rffuelgen"
 								Count: 1b
+								tag: {
+									Damage: 0
+								}
 							}
 							{
 								id: "pedestals:coin/rfexpgen"
 								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "pedestals:coin/rfimport"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
 							}
 						]
 					}
