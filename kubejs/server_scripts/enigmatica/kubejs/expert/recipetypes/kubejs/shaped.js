@@ -227,7 +227,7 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'BCB', 'DEF'],
             key: {
                 A: '#forge:gems/silicon',
-                B: 'pneumaticcraft:small_tank',
+                B: 'mekanism:dynamic_tank',
                 C: 'mekanism:cardboard_box',
                 D: '#forge:circuits/basic',
                 E: 'refinedstorage:quartz_enriched_iron',

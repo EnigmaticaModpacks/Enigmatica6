@@ -59,7 +59,7 @@ onEvent('recipes', (event) => {
                 B: '#forge:gears/lumium',
                 C: 'thermal:enderium_glass',
                 D: '#industrialforegoing:machine_frame/advanced',
-                E: 'pneumaticcraft:large_tank'
+                E: 'mekanism:dynamic_tank'
             },
             id: 'industrialforegoing:fluid_laser_base'
         },
@@ -279,7 +279,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:plastic',
                 B: 'betterendforge:aeternium_anvil',
                 C: 'kubejs:memory_ultimate_filled',
-                D: 'pneumaticcraft:small_tank',
+                D: 'mekanism:dynamic_tank',
                 E: '#forge:gears/osmium',
                 F: '#industrialforegoing:machine_frame/simple'
             },
