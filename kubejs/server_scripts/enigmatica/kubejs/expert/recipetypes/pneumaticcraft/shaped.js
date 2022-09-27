@@ -99,7 +99,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
                 A: 'supplementaries:bellows',
-                B: 'pneumaticcraft:small_tank',
+                B: 'mekanism:dynamic_tank',
                 C: '#forge:gears/compressed_iron',
                 D: 'thermal:machine_frame',
                 E: 'pneumaticcraft:pressure_tube',
@@ -272,7 +272,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:reinforced_bricks',
                 B: 'mekanism:superheating_element',
-                C: 'pneumaticcraft:small_tank',
+                C: 'mekanism:dynamic_tank',
                 D: 'mekanism:basic_mechanical_pipe'
             },
             id: 'pneumaticcraft:refinery'
@@ -283,7 +283,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'pneumaticcraft:reinforced_bricks',
                 B: 'mekanism:basic_mechanical_pipe',
-                C: 'pneumaticcraft:small_tank'
+                C: 'mekanism:dynamic_tank'
             },
             id: 'pneumaticcraft:refinery_output'
         },
