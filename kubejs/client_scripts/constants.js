@@ -30,9 +30,6 @@ const generatableCobblestone = [
     'create:diorite_cobblestone',
     'create:granite_cobblestone',
     'quark:cobbedstone',
-    'undergarden:depthrock',
-    'undergarden:shiverstone',
-    'undergarden:tremblecrust',
     'create:dark_scoria_cobblestone',
     'create:scoria_cobblestone',
     'create:gabbro_cobblestone',
@@ -81,7 +78,10 @@ const generatableStone = [
     'atum:alabaster',
     'atum:porphyry',
     'quark:myalite',
-    'quark:dusky_myalite'
+    'quark:dusky_myalite',
+    'undergarden:shiverstone',
+    'undergarden:depthrock',
+    'undergarden:tremblecrust'
 ];
 const generatableBasalt = [];
 
