@@ -46,7 +46,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/steel',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_green',
                 E: 'astralsorcery:resonating_gem'
             },
@@ -125,7 +125,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersiveengineering:hempcrete',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_green',
                 E: 'mekanism:hdpe_sheet'
             },
@@ -137,7 +137,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'immersiveengineering:hempcrete',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_red',
                 E: 'mekanism:hdpe_sheet'
             },
@@ -184,7 +184,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/steel',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_green',
                 E: '#forge:ingots/terrasteel'
             },
@@ -219,7 +219,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/steel',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_green',
                 E: '#forge:circuits/elite'
             },
@@ -231,7 +231,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:plates/steel',
                 B: 'mekanism:ultimate_mechanical_pipe',
-                C: 'pneumaticcraft:huge_tank',
+                C: 'industrialforegoing:supreme_black_hole_tank',
                 D: 'xnet:advanced_connector_red',
                 E: '#forge:circuits/elite'
             },

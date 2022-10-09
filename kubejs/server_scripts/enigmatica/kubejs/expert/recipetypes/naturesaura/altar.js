@@ -11,15 +11,15 @@ onEvent('recipes', (event) => {
             output: { item: 'naturesaura:infused_iron' },
             aura_type: 'naturesaura:overworld',
             aura: 15000,
-            time: 80,
+            time: 50,
             id: 'naturesaura:altar/infused_iron'
         },
         {
             input: 'architects_palette:sunmetal_block',
             output: { item: 'naturesaura:infused_iron_block' },
             aura_type: 'naturesaura:overworld',
-            aura: 135000,
-            time: 700,
+            aura: 15000 * 8,
+            time: 50 * 8,
             id: 'naturesaura:altar/infused_iron_block'
         },
         {
@@ -27,15 +27,15 @@ onEvent('recipes', (event) => {
             output: { item: 'naturesaura:tainted_gold' },
             aura_type: 'naturesaura:nether',
             aura: 15000,
-            time: 80,
+            time: 50,
             id: 'naturesaura:altar/tainted_gold'
         },
         {
             input: '#forge:storage_blocks/arcane_gold',
             output: { item: 'naturesaura:tainted_gold_block' },
             aura_type: 'naturesaura:nether',
-            aura: 135000,
-            time: 700,
+            aura: 15000 * 8,
+            time: 50 * 8,
             id: 'naturesaura:altar/tainted_gold_block'
         },
         {
