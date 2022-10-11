@@ -1,4 +1,5 @@
-//priority: 1000
+//priority: 999
+// Priority must be less than that of constants.js as we're using the colors const
 
 // Items added here will get the 'valid_apiary' tag, and be usable as Apiary multiblock walls.
 // This is in addition to all blocks that have collision.
@@ -9,6 +10,10 @@ const validApiaryBlocks = [
     'glassential:glass_light',
     'glassential:glass_redstone'
 ];
+
+// Items added here will be removed from the "valid_apiary" tag
+const invalidApiaryBlocks = ['upgrade_aquatic:bedroll'];
+colors.forEach((color) => invalidApiaryBlocks.push(`upgrade_aquatic:${color}_bedroll`));
 
 const honeyVarieties = [
     'resourcefulbees:blaze_honey',
