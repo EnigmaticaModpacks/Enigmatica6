@@ -1,3 +1,15 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.6.1
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/changelog_mods_1.6.1.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/modlist_1.6.1.md)_
+
+**Bug Fixes**
+
+- CTRL+Shift doesn't auto-craft item [\#5254](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5254)
+- Refined Storage doesn't display exact amount of items on tooltip anymore [\#5250](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5250)
+- The tooltip GUI is messed up [\#5241](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5241)
+
+---
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.6.0
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/changelog_mods_1.6.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/modlist_1.6.0.md)_
