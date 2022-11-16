@@ -45,7 +45,8 @@ onEvent('jei.information', (event) => {
                 'bloodmagic:soulgemlesser'
             ],
             text: [
-                'This item unlocks a Game Stage. If the stage does not unlock or gets revoked, simply Right-Click this item in the air to re-gain it.'
+                'Obtaining this item for the first time automatically unlocks a Game Stage.',
+                'If the stage does not unlock or gets revoked, simply Right-Click this item in the air to re-gain it.'
             ]
         }
     ];
