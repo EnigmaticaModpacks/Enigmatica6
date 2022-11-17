@@ -35,6 +35,19 @@ onEvent('jei.information', (event) => {
         {
             items: ['refinedstorage:256k_fluid_storage_part', 'refinedstorage:64k_fluid_storage_part'],
             text: ['Crafting is disabled in Expert, begin with the 1024k Fluid Storage Part.']
+        },
+        {
+            items: [
+                'kubejs:medium_machinery_schematics',
+                'kubejs:heavy_machinery_schematics',
+                'occultism:chalk_red',
+                'bloodmagic:masterbloodorb',
+                'bloodmagic:soulgemlesser'
+            ],
+            text: [
+                'Obtaining this item for the first time automatically unlocks a Game Stage.',
+                'If the stage does not unlock or gets revoked, simply Right-Click this item in the air to re-gain it.'
+            ]
         }
     ];
 
