@@ -382,7 +382,7 @@
 			description: [
 				"Switch Links are small wireless redstone transmitters or receivers. To link a pair of them together, right-click an ender pearl on the receiving switch link, then right-click that linked pearl onto the sending switch link."
 				""
-				"You can then right click on a switch link while holding a redstone torch to change it's redstone behavior, between weak or strong, and inverted or not. You can also right-click the linked pearl on the receiver again to change it's mode, adjusting how it gets triggered."
+				"You can then right click on a switch link while holding a redstone torch to change its redstone behavior, between weak or strong, and inverted or not. You can also right-click the linked pearl on the receiver again to change it's mode, adjusting how it gets triggered."
 				""
 				"Switch Links come in 3 flavors: regular, 'pulse' which pulses when it activates, and 'analog' which emits different strength signals depending on input strength."
 			]
@@ -421,9 +421,9 @@
 			shape: "heart"
 			subtitle: "Not your grand-pappy's comparator!"
 			description: [
-				"The Industrial Comparator Switch works as a comparator that reads the block it's attached to, and can be placed on any side of a block. It's output is also the attached block, but can be sent to a Switch Link Receiver as well, in the same way as linking two switch links together, just with the comparator as the source."
+				"The Industrial Comparator Switch works as a comparator that reads the block it's attached to, and can be placed on any side of a block. Its output is also the attached block, but can be sent to a Switch Link Receiver as well, in the same way as linking two switch links together, just with the comparator as the source."
 				""
-				"Right clicking the buttons on it's face will adjust the base settings for the comparator, while right clicking with a redstone torch will change the redstone output to the attached block."
+				"Right clicking the buttons on its face will adjust the base settings for the comparator, while right clicking with a redstone torch will change the redstone output to the attached block."
 			]
 			dependencies: ["3468E652B4FE85FA"]
 			id: "642570832E7034B8"
@@ -1134,7 +1134,7 @@
 			description: [
 				"Works as a redstone timer: emits a redstone pulse when it turns, and turns automatically when all sand moves from top to bottom. Set the timing by adding sand via right-click, different stack sizes and different types of sand affect the final timing."
 				""
-				"For more details, see it's entry in the Lexica Botania."
+				"For more details, see its entry in the Lexica Botania."
 			]
 			dependencies: ["3468E652B4FE85FA"]
 			id: "29803ABB5ED76295"
@@ -2166,7 +2166,7 @@
 			description: [
 				"The Entangled Block, when bound to another block using the binding tool, offers remote access to the target block. Pipes attached to the entangled block will instead interact with the target block, from up to 1000 blocks away."
 				""
-				"To bind, shift-right click on the target with the binder (it should show the target block in it's item tooltip), then right click the binder on the entangled block."
+				"To bind, shift-right click on the target with the binder (it should show the target block in its item tooltip), then right click the binder on the entangled block."
 			]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "3E093BB431EE7A98"
@@ -2527,7 +2527,7 @@
 				""
 				"You can place the Tile Entity NBT card into the display, and you'll see a bunch of info about the read block. With the programmer, using string cards you can manually dig down into the NBT tree to find the tag you want to compare to, but the NBT Extractor makes this much simpler."
 				""
-				"Just place the Extractor on the same network as the reader, and place the NBT card in it's left 'SRC NBT' slot. You'll see the NBT again, but this time you can click on the tag you are interested in to select it, and then place a blank variable card in the right 'OUT' slot. For the mana pool example, click on 'mana: *' tag, and when you place a blank card in the OUT slot, that card will now give the numerical value of mana in the pool."
+				"Just place the Extractor on the same network as the reader, and place the NBT card in its left 'SRC NBT' slot. You'll see the NBT again, but this time you can click on the tag you are interested in to select it, and then place a blank variable card in the right 'OUT' slot. For the mana pool example, click on 'mana: *' tag, and when you place a blank card in the OUT slot, that card will now give the numerical value of mana in the pool."
 				""
 				"Once you link the card to the NBT tag you wanted, you can remove the NBT Extractor from the network."
 			]
@@ -2669,7 +2669,7 @@
 			description: [
 				"Sender Modules 'send' items from inside the router to other inventories."
 				""
-				"Unlike puller modules, even the Mk1 has ranged capabilities. It will send items in a straight line, in the configured direction, up to 8 blocks away, as long as it isn't blocked by solid blocks. The Mk2 has no alignment or line of sight restriction, and the Mk3 has no restrictions at all, not even being in a different dimension from it's target will stop it."
+				"Unlike puller modules, even the Mk1 has ranged capabilities. It will send items in a straight line, in the configured direction, up to 8 blocks away, as long as it isn't blocked by solid blocks. The Mk2 has no alignment or line of sight restriction, and the Mk3 has no restrictions at all, not even being in a different dimension from its target will stop it."
 			]
 			dependencies: ["21B266F6556271EB"]
 			id: "029313754BAF820E"
