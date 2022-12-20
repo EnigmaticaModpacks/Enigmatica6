@@ -184,7 +184,7 @@
 			description: [
 				"Pedestals provides a number of upgrades to help you build a mob farm. Combine them with an XP magnet upgrade to finish your mob farm off. There are also other potential uses for the various upgrades - most notably the Magnet upgrade."
 				""
-				"The Auto Attacker upgrade will attack entities within its range, dealing a default damage of 2. This damage can be upgraded via the Pedestal Capacity enchantment. You can also add a sword to the pedestal using the Tool Swapper, increasing its damage output and conferring any vanilla damage enchantments to the pedestal."
+				"The Auto Attacker upgrade will attack entities within its range, dealing a default damage of 2. This damage can be upgraded via the Pedestal Capacity enchantment. You can also add a sword to the pedestal by holding it in your offhand and Right-Clicking the Pedestal, increasing its damage output and conferring any vanilla damage enchantments to the pedestal."
 				""
 				"The Fan upgrade will push entities away from the top of the pedestal, to the end of its area. Pedestal Range enchantments will increase the push height, while Pedestal Capacity will increase the AOE. Pedestal Speed enchants will increase its push speed. Crouching will negate the pushing effect."
 				""
@@ -1197,7 +1197,7 @@
 			x: -4.5d
 			y: -2.5d
 			description: [
-				"The Tool Swapper will allow you to add or remove Tools to some upgrades. Hold a tool you'd like to add in your off-hand and Right-Click the pedestal with the swapper to insert a tool, or Right-Click the pedestal with the tool when your off-hand is empty to remove one."
+				"The Tool Swapper will allow you to remove Tools from a Pedestal, just Right-Click the pedestal with it in your off-hand. To add a tool, hold it in your off-hand and Right-Click the pedestal with it."
 				""
 				"Tool durability isn't used when a tool is inserted into a pedestal, but it does confer any enchantments on the tool (i.e. Fortune or Silk Touch) to the operation of the upgrade."
 			]
@@ -1529,7 +1529,7 @@
 				""
 				"The Breaker upgrade will break blocks below the pedestal and display the result. Range enchantments will modify how far away from the pedestal the block that is broken is."
 				""
-				"A pickaxe can be placed in the pedestal with the Tool Swapper - the upgrade will use this to break the blocks, conferring its Silk Touch or Fortune enchants on the upgrade."
+				"A pickaxe can be placed in the pedestal - the upgrade will use this to break the blocks, conferring its Silk Touch or Fortune enchants on the upgrade."
 			]
 			dependencies: ["04E9F681A7D93BC7"]
 			id: "189DF6D6ECA2E3D8"
