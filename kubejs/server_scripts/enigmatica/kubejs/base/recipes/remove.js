@@ -214,6 +214,8 @@ onEvent('recipes', (event) => {
         'resourcefulbees:t4_beehive_nests',
         'resourcefulbees:t1_apiary_beehive',
 
+        'simpledelights:pasta_plate',
+
         'simplefarming:apple_pie',
         'simplefarming:blueberry_pie',
 
