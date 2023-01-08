@@ -844,10 +844,11 @@ onEvent('recipes', (event) => {
         }
 
         var output = ingot,
-            input = `#forge:ores/${material}`;
+            input = `#forge:chunks/${material}`;
+        event.smelting(output, input).xp(0.7).id(`${id_prefix}smelting/${material}/ingot/from_chunk`);
 
-        fallback_id(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
-        fallback_id(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        input = `#forge:ores/${material}`;
+        event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_ore`);
     }
 
     function minecraft_gem_ore_smelting(event, material, ore, gem) {
@@ -866,8 +867,8 @@ onEvent('recipes', (event) => {
         var output = gem,
             input = `#forge:ores/${material}`;
 
-        fallback_id(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
-        fallback_id(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        event.smelting(output, input).xp(0.7).xp(0.7).id(`${id_prefix}smelting/${material}/gem/from_ore`);
+        event.blasting(output, input).xp(0.7).xp(0.7).id(`${id_prefix}blasting/${material}/gem/from_ore`);
     }
 
     function minecraft_dust_smelting(event, material, dust, ingot) {
@@ -886,8 +887,8 @@ onEvent('recipes', (event) => {
         var output = ingot,
             input = `#forge:dusts/${material}`;
 
-        fallback_id(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
-        fallback_id(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        event.smelting(output, input).xp(0.7).id(`${id_prefix}smelting/${material}/ingot/from_dust`);
+        event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_dust`);
     }
 
     function occultism_gem_ore_crushing(event, material, ore, dust, gem, shard) {
@@ -918,16 +919,15 @@ onEvent('recipes', (event) => {
                 return;
         }
 
-        fallback_id(
-            event.custom({
+        event
+            .custom({
                 type: 'occultism:crushing',
                 ingredient: { tag: input },
                 result: { item: output, count: count },
                 crushing_time: 100,
                 ignore_crushing_multiplier: false
-            }),
-            `${id_prefix}${arguments.callee.name}/`
-        );
+            })
+            .id(`${id_prefix}occultism_crushing/${material}/${materialProperties.output}/from_ore`);
     }
 
     function occultism_metal_ore_crushing(event, material, ore, dust, ingot) {
