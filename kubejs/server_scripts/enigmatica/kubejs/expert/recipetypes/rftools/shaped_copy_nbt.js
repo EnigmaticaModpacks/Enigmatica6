@@ -38,6 +38,16 @@ onEvent('recipes', (event) => {
                 D: { item: 'rftoolsstorage:storage_module2' }
             },
             id: 'rftoolsstorage:storage_module3'
+        },
+        {
+            result: { item: 'rftoolsutility:advanced_charged_porter' },
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: { item: 'powah:capacitor_nitro' },
+                B: { item: 'kubejs:dimensional_storage_crystal' },
+                C: { item: 'rftoolsutility:charged_porter' }
+            },
+            id: 'rftoolsutility:advanced_charged_porter'
         }
     ];
 

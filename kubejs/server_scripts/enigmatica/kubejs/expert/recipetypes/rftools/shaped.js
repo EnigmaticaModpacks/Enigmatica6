@@ -81,16 +81,6 @@ onEvent('recipes', (event) => {
             id: 'rftoolsutility:charged_porter'
         },
         {
-            output: 'rftoolsutility:advanced_charged_porter',
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: 'powah:capacitor_nitro',
-                B: 'kubejs:dimensional_storage_crystal',
-                C: 'rftoolsutility:charged_porter'
-            },
-            id: 'rftoolsutility:advanced_charged_porter'
-        },
-        {
             output: 'rftoolsbuilder:shape_card_pump',
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
