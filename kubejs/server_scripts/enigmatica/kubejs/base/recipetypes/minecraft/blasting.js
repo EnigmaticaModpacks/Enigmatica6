@@ -180,8 +180,15 @@ onEvent('recipes', (event) => {
             output: 'minecraft:gold_ingot',
             xp: 0.7,
             id: `${id_prefix}atum_relic_ore`
+        },
+        {
+            input: '#pneumaticcraft:plastic_bricks',
+            output: 'pneumaticcraft:plastic',
+            xp: 0.7,
+            id: 'pneumaticcraft:plastic_sheet_from_brick'
         }
     ];
+
     recipes.forEach((recipe) => {
         const re = event.blasting(recipe.output, recipe.input).id(recipe.id);
 
