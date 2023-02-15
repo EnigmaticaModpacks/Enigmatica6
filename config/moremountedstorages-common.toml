@@ -84,3 +84,28 @@
 			#Trash Cans storage priority when whitelist is enabled. Items are inserted first into storages with higher priority. Default value is 20
 			priority_whitelist = 20
 
+	#Minecraft
+	[Integration.minecraft]
+
+		#Vanilla Minecraft
+		[Integration.minecraft.minecraft]
+			#Enabled Vanilla Minecraft integration. Default value is true
+			enabled = true
+
+	#Create
+	[Integration.create]
+
+		#Create Crate
+		[Integration.create.crate]
+			#Enabled Create Crate integration. Default value is true
+			enabled = true
+			#Create Crate storage priority. Items are inserted first into storages with higher priority. Default value is 0
+			priority = 0
+
+		#Create Creative Crate
+		[Integration.create.creative_crate]
+			#Enabled Create Creative Crate integration. Default value is true
+			enabled = true
+			#Create Creative Crate storage priority. Items are inserted first into storages with higher priority. Default value is 0
+			priority = 0
+
