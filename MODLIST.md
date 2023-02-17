@@ -1,4 +1,4 @@
-## Enigmatica6 - 1.6.2
+## Enigmatica6 - 1.7.0
 - [DustrialDecor-1.3.1.jar](https://www.curseforge.com/minecraft/mc-mods/dustrial-decor/files/3845940) (by [BlueDuckYT](https://www.curseforge.com/members/blueduckyt/projects))
 - [tanknull-2.3-1.16.4.jar](https://www.curseforge.com/minecraft/mc-mods/tank-null/files/3224872) (by [tfarecnim](https://www.curseforge.com/members/tfarecnim/projects))
 - [abnormals_delight-1.16.5-1.2.1.jar](https://www.curseforge.com/minecraft/mc-mods/abnormals-delight/files/3549585) (by [TeamAbnormals](https://www.curseforge.com/members/teamabnormals/projects))
