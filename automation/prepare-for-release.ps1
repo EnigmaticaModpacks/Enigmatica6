@@ -51,6 +51,4 @@ Validate-SecretsFile
 Close-FixedIssues
 Merge-DevelopIntoMasterPrompt
 
-# Flow:
-# close all `Status: Fixed In Next Release` issues
-# merge develop into master and master into develop afterwards
+# just closes all `Status: Fixed In Next Release` issues
