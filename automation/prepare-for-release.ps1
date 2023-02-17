@@ -42,9 +42,7 @@ function Close-FixedIssues {
 
 }
 function Merge-DevelopIntoMasterPrompt {
-    Write-Host "Please Develop into Master, and then Master into Develop"
-    Write-Host "Make sure you have no unsaved changes!" -ForegroundColor Red
-    Write-Host "Ctrl+C to exit"
+    Write-Host "Please Merge Develop into Master, and then Master into Develop"
 }
 
 Validate-SecretsFile
