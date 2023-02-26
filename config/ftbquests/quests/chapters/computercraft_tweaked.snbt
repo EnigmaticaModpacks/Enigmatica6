@@ -1,0 +1,2611 @@
+{
+	id: "5E2F0BAE050252A8"
+	group: "72A9465344128AF9"
+	order_index: 8
+	filename: "computercraft_tweaked"
+	title: "ComputerCraft: Tweaked"
+	icon: "computercraft:computer_normal"
+	subtitle: ["Lua Tutorial \\& Introduction to the mod!"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Lets have some fun with Computers!"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Wait there are Computers in Minecraft?!"
+			description: [
+				"Welcome to the crazy world of programming! ComputerCraft: Tweaked is a mod entirely focused about that one thing, giving you access to amazing Lua Programming language inside of Minecraft!"
+				""
+				"It's incredible how compact and complicated stuff you can do with this mod. Think about automating Create Mechanical Crafter with only 1 block!?! Or doing complex operating system controlling everything you have in your base. "
+				""
+				"Think about anything, this mod can do it!"
+				""
+				"These quests are meant to showcase the mod, and teach you, fellow Player, Basics of Basics with Lua and how to start learning more!"
+				""
+				"~~Kanzaji"
+			]
+			size: 2.0d
+			optional: true
+			min_width: 250
+			id: "2D79E4D126EE389E"
+			tasks: [{
+				id: "300A40F0F0E6E4B2"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+			rewards: [{
+				id: "7CFA1D5619B10CC1"
+				type: "item"
+				item: "computercraft:monitor_normal"
+				count: 9
+			}]
+		}
+		{
+			title: "Advanced Computer"
+			x: -2.5d
+			y: -1.0d
+			subtitle: "Shiny."
+			description: [
+				"This fancy gold plated computer has a tiny bit more to offer than his old gray ancestor."
+				""
+				"Except for the fact that it looks nicer, it has more disk space available for you and has color support!"
+				""
+				"Colors don't matter for us however, as we aren't going to do OS in this tutorial, but it's good to know it's a thing right?"
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			dependency_requirement: "all_started"
+			id: "5E9975407F07DBCE"
+			tasks: [{
+				id: "2C0D62579BA499E8"
+				type: "item"
+				item: "computercraft:computer_advanced"
+			}]
+			rewards: [{
+				id: "72295CD458441BE8"
+				type: "item"
+				item: "computercraft:monitor_advanced"
+				count: 9
+			}]
+		}
+		{
+			title: "Peripherals"
+			icon: "rftoolscontrol:graphics_card"
+			x: -5.0d
+			y: 0.0d
+			subtitle: "There is something more than Computers?!"
+			description: [
+				"ComputerCraft: Tweaked has a lot of peripherals that are really useful for doing anything!"
+				""
+				"This section will show you all peripherals available and how to use their APIs."
+			]
+			dependencies: [
+				"2D79E4D126EE389E"
+				"2BA0F0C3EEF83EEC"
+			]
+			hide: true
+			size: 1.25d
+			id: "378BEFB62C4F98BF"
+			tasks: [{
+				id: "4231A52D1EB86805"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "40472804F00CBB98"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Advanced Peripherals"
+			x: -6.5d
+			y: -4.5d
+			subtitle: "Stuff you need for any sort of automation!"
+			description: [
+				"Advanced Peripherals is an addon for ComputerCraft: Tweaked that adds massive amount of functionality to it with just few simple blocks!"
+				""
+				"Check individual quests for any peripheral from this mod to see what it's doing and how to use it!"
+				"TODO: Link to official Advanced Peripherals WIKI"
+			]
+			dependencies: ["378BEFB62C4F98BF"]
+			hide: true
+			id: "6AA1236C9946F569"
+			tasks: [{
+				id: "56A45A4FCA54436D"
+				type: "item"
+				item: "advancedperipherals:peripheral_casing"
+			}]
+			rewards: [{
+				id: "6A25D30D59AEE169"
+				type: "item"
+				item: "advancedperipherals:peripheral_casing"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -4.0d
+			subtitle: "Lua Basics: Enviroment Detector API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "643882E2974E1FC4"
+			tasks: [{
+				id: "5E945D7A74276756"
+				type: "item"
+				item: "advancedperipherals:environment_detector"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.0d
+			subtitle: "Lua Basics: Chat API"
+			description: [
+				"The Chat Box is used to read and write messages to the in-game chat. You can even choose if you want to send it to everyone or just one/few people!"
+				""
+				"ProTip: If you prefix your message with \"$\" it will be invisible in game, but chatbox will still be able to see it."
+				""
+				"Functions:"
+				"sendMessage(#1, #2)"
+				"#1 -> String message you wanna send"
+				"#2 -> String Nickname. Its gonna add [your_input] before message"
+			]
+			dependencies: ["6AA1236C9946F569"]
+			min_width: 350
+			id: "69538FA96C5DB66F"
+			tasks: [{
+				id: "5BDA5C07EECA1E62"
+				type: "item"
+				item: "advancedperipherals:chat_box"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.5d
+			subtitle: "Lua Basics: Player Detector API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "1FF23101B4AE771A"
+			tasks: [{
+				id: "21D3EBCD9EE314C8"
+				type: "item"
+				item: "advancedperipherals:player_detector"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -3.0d
+			subtitle: "Lua Basics: RS Bridge API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "29391D18C88CE860"
+			tasks: [{
+				id: "0936AC03B35A6BC1"
+				type: "item"
+				item: "advancedperipherals:rs_bridge"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -4.0d
+			subtitle: "Lua Basics: Energy Detector API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "5A981BAE9C143E66"
+			tasks: [{
+				id: "7190E44C0775FA32"
+				type: "item"
+				item: "advancedperipherals:energy_detector"
+			}]
+		}
+		{
+			icon: "advancedperipherals:ar_controller"
+			x: -7.0d
+			y: -6.5d
+			subtitle: "Lua Basics: AR Controller API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "0CA53F24B5D6FAC7"
+			tasks: [
+				{
+					id: "2B4D966DC13F3779"
+					type: "item"
+					item: "advancedperipherals:ar_controller"
+				}
+				{
+					id: "1A7C3F19B5A0DFBD"
+					type: "item"
+					item: {
+						id: "advancedperipherals:ar_goggles"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			subtitle: "Lua Basics: Inventory Manager API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "63E3AF5B3F755AAB"
+			tasks: [{
+				id: "4C86ADCC2F1F1AF0"
+				type: "item"
+				item: "advancedperipherals:inventory_manager"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.5d
+			subtitle: "Lua Basics: Redstone API"
+			description: [
+				"The Redstone Integrator is used to Emit / Read redstone signals in the world."
+				""
+				"Functions:"
+				"TODO: Add better Function explenation"
+			]
+			dependencies: ["6AA1236C9946F569"]
+			id: "78DDFBC9534A6310"
+			tasks: [{
+				id: "2F43BBCBD9F69B8F"
+				type: "item"
+				item: "advancedperipherals:redstone_integrator"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -5.0d
+			subtitle: "Lua Basics: Block Reader API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "44A95D62FE28D5A4"
+			tasks: [{
+				id: "0A711582592CA015"
+				type: "item"
+				item: "advancedperipherals:block_reader"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -6.0d
+			subtitle: "Lua Basics: Geo Scanner API"
+			dependencies: ["6AA1236C9946F569"]
+			id: "3C2ED0224A637626"
+			tasks: [{
+				id: "28460122A0E940ED"
+				type: "item"
+				item: "advancedperipherals:geo_scanner"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -6.0d
+			subtitle: "Lua Basics: NBT storage usage"
+			dependencies: ["6AA1236C9946F569"]
+			id: "064DB44EB6A2DF89"
+			tasks: [{
+				id: "7C219A8F15FC0AC0"
+				type: "item"
+				item: "advancedperipherals:nbt_storage"
+			}]
+		}
+		{
+			title: "Pocket Computers"
+			x: -2.5d
+			y: 1.0d
+			subtitle: "Cookie Clicker in your Pocket all the time!"
+			description: [
+				"There are item versions of computers as well. Maybe they aren't so useful with automating stuff, but with some knowledge you can create a pocket Cookie Clicker game for example!"
+				""
+				"However they are really useful for remote access to your systems, or for playing games all the time you have to build stuff."
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			id: "52933D3422727EB3"
+			tasks: [{
+				id: "7169C85D653C1F03"
+				type: "item"
+				title: "Pocket Computers"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "computercraft:pocket_computer_normal"
+								Count: 1b
+							}
+							{
+								id: "computercraft:pocket_computer_advanced"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5E5F846DAF5BCE71"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Universal APIs"
+			icon: "minecraft:chest"
+			x: -7.5d
+			y: 0.0d
+			shape: "circle"
+			subtitle: "Lua Basics: Universal Peripheral APIs"
+			description: ["ComputerCraft: Tweaked does support as peripherals other blocks as well! Your peripheral can be nearly anything, Minecraft Chest, Mekanism Reactor, Drawer, nearly any block works!"]
+			dependencies: ["378BEFB62C4F98BF"]
+			hide: true
+			min_width: 350
+			id: "55493D823F7403DA"
+			tasks: [{
+				id: "0F3C08C74B6E61C1"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "1FEB3FACFB702936"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Inventory API"
+			icon: "minecraft:barrel"
+			x: -7.5d
+			y: -1.5d
+			subtitle: "Lua Basics: Global Inventory API"
+			dependencies: ["55493D823F7403DA"]
+			hide: true
+			id: "4D55FB33758DEF7D"
+			tasks: [{
+				id: "3EC51CC783415B4A"
+				type: "item"
+				item: "minecraft:barrel"
+			}]
+			rewards: [{
+				id: "0068669643494A83"
+				type: "custom"
+				title: "[Link] Docs for Inventory API"
+			}]
+		}
+		{
+			title: "Liquid API"
+			icon: "minecraft:water_bucket"
+			x: -7.0d
+			y: 1.5d
+			subtitle: "Lua Basics: Global Liquid API"
+			description: [
+				"Liquids API is used to move liquids around in your network. It is really simple API, but it is actually useful in more complex fluid automations (like Mekanism 5x Ore Processing)."
+				""
+				"-- Fluid API Functions:"
+				""
+				"> tanks() -> Returns a table with tanks in a peripheral. Empty ones will be \"nil\", non-empty ones will have basic information about that liquid, like Amount and Name. (Recommended to use pairs() with that table for looping)"
+				""
+				"> pushFluid(toName [, limit [, fluidName]]) -> Move a liquid from used peripheral to another connected to the network."
+				"● toName: (string) -> Name of peripheral you want to move liquid to."
+				"● limit: (number) [Optional] -> Maximum amount of liquid to move."
+				"● fluidName: (string) [Optional] -> Name of the liquid you want to move! If not given, any will be taken."
+				""
+				"> pullFluid(fromName [, limit [, fluidName]]) -> Move a liquid to used peripheral from other tank connected to the network."
+				"● fromName: (string) -> Name of peripheral you want to move liquid from."
+				"● limit: (number) [Optional] -> Maximum amount of liquid to move."
+				"● fluidName: (string) [Optional] -> Name of the liquid you want to move! If not given, any will be taken."
+				""
+				"Note that if few liquids are in one peripheral, they will be moved in the order they are in the table from \"tanks()\" function!"
+			]
+			dependencies: ["55493D823F7403DA"]
+			hide: true
+			min_width: 500
+			id: "18C25A983C4831B7"
+			tasks: [{
+				id: "7C6525BE6C8CA991"
+				type: "item"
+				title: "Black Hole Tanks"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:common_black_hole_tank"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:pity_black_hole_tank"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:simple_black_hole_tank"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:advanced_black_hole_tank"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:supreme_black_hole_tank"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "69D7831BDEB0D8FA"
+				type: "custom"
+				title: "[Link] Docs for Liquid API"
+			}]
+		}
+		{
+			title: "Energy API"
+			icon: "engineersdecor:sign_hotwire"
+			x: -8.0d
+			y: 1.5d
+			subtitle: "Lua Basics: Global Energy API"
+			description: [
+				"This one is unfortunately really simple API, with not a lot of use. It can only read Energy capacity of some blocks."
+				""
+				"Energy API Functions:"
+				""
+				"> getEnergy() -> Returns the energy stored in that peripheral"
+				""
+				"> getEnergyCapacity() -> Returns maximum energy capacity of peripheral"
+			]
+			dependencies: ["55493D823F7403DA"]
+			hide: true
+			min_width: 450
+			id: "7CD446B77ACA29F7"
+			tasks: [{
+				id: "0085C0BFFF01C3DD"
+				type: "item"
+				title: "Energy Cells"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powah:energy_cell_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cell_nitro"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "2E4271427FAF3612"
+				type: "custom"
+				title: "[Link] Docs for Energy API"
+			}]
+		}
+		{
+			title: "ComputerCraft Peripherals"
+			icon: "computercraft:pocket_computer_normal"
+			x: -6.5d
+			y: 4.5d
+			subtitle: "Wait there is even more?"
+			description: ["ComputerCraft: Tweaked adds a few unique peripherals on its own. Some of them aren't as useful as others, but all of them are worth to look at."]
+			dependencies: ["378BEFB62C4F98BF"]
+			hide: true
+			id: "1580D9FD06937ABB"
+			tasks: [{
+				id: "4816E5D3E5C6E0D2"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "3D0E9BD8DB101174"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -7.0d
+			y: 6.0d
+			subtitle: "Lua Basics: Monitor API"
+			dependencies: ["1580D9FD06937ABB"]
+			id: "54E1A1FE032B1363"
+			tasks: [{
+				id: "5472E9F8815DEF4E"
+				type: "item"
+				title: "Monitors"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "computercraft:monitor_advanced"
+								Count: 1b
+							}
+							{
+								id: "computercraft:monitor_normal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -7.5d
+			y: 3.0d
+			dependencies: ["1580D9FD06937ABB"]
+			id: "582FF2D81252AC77"
+			tasks: [{
+				id: "0BB37782A3276ACB"
+				type: "item"
+				item: "computercraft:speaker"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 4.0d
+			dependencies: ["1580D9FD06937ABB"]
+			id: "0C3CF3165304BB22"
+			tasks: [
+				{
+					id: "4210C15D0320BE3E"
+					type: "item"
+					item: "computercraft:disk_drive"
+				}
+				{
+					id: "679CA9A8D8852B7A"
+					type: "item"
+					title: "Floppy Disk"
+					item: {
+						id: "itemfilters:id_regex"
+						Count: 1b
+						tag: {
+							value: "computercraft:disk$"
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "computercraft:printer"
+			x: -6.0d
+			y: 6.0d
+			dependencies: ["1580D9FD06937ABB"]
+			id: "181772F6C62A4EEF"
+			tasks: [
+				{
+					id: "1DCFA115E667AFAE"
+					type: "item"
+					item: "computercraft:printer"
+				}
+				{
+					id: "6ADDB5B991464F08"
+					type: "item"
+					item: "minecraft:paper"
+					count: 8L
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 5.5d
+			dependencies: ["1580D9FD06937ABB"]
+			id: "229E3C141CF5DCA7"
+			tasks: [{
+				id: "348DDB1AB24A6234"
+				type: "item"
+				title: "Turtles"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "computercraft:turtle_advanced"
+								Count: 1b
+							}
+							{
+								id: "computercraft:turtle_normal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 5.0d
+			dependencies: ["1580D9FD06937ABB"]
+			id: "162927942501A25B"
+			tasks: [
+				{
+					id: "2F30CD36EFF93C50"
+					type: "item"
+					title: "Wired Modem"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:wired_modem"
+									Count: 1b
+								}
+								{
+									id: "computercraft:wired_modem_full"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "64A1A1464DB5212B"
+					type: "item"
+					item: "computercraft:cable"
+				}
+			]
+			rewards: [
+				{
+					id: "313128DA796725C5"
+					type: "item"
+					item: "computercraft:cable"
+					count: 16
+				}
+				{
+					id: "64EBD65FFC3C660D"
+					type: "item"
+					item: "computercraft:wired_modem_full"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -9.5d
+			y: 4.5d
+			subtitle: "No More Cables!"
+			description: [""]
+			dependencies: ["162927942501A25B"]
+			id: "4CD43BE714CAE6D8"
+			tasks: [{
+				id: "0FF6E410A7B9EE4D"
+				type: "item"
+				title: "Wireless Modem"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "computercraft:wireless_modem_advanced"
+								Count: 1b
+							}
+							{
+								id: "computercraft:wireless_modem_normal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Documentation"
+			icon: "akashictome:tome"
+			x: 2.25d
+			y: 2.25d
+			shape: "pentagon"
+			subtitle: "Official Wikis for everything."
+			description: [
+				"Here are the links to the Official ComputerCraft: Tweaked documentation, as well as Lua Documentation."
+				""
+				"In those you can find nearly everything about anything. If you don’t understand some topic or you just want to learn something new, this is the place to go!"
+				""
+				"In most of the quests, as a reward there will be a link to a page talking especially about topic the quest was, so if you want to learn more as you go, you can."
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			size: 1.5d
+			min_width: 300
+			id: "508989B512DBB2A2"
+			tasks: [{
+				id: "0ED4FB7A29E8557D"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [
+				{
+					id: "483D05B0EA152873"
+					type: "custom"
+					title: "[Link] Lua Docs"
+				}
+				{
+					id: "6466C8ABA6349F16"
+					type: "custom"
+					title: "[Link] CC:T Docs"
+				}
+			]
+		}
+		{
+			title: "Challenges"
+			icon: "computercraft:computer_command"
+			x: 0.0d
+			y: 8.0d
+			shape: "gear"
+			subtitle: "Try yourself!"
+			description: [
+				"Here are few challenges you can try to complete, they aren't required for you to do, but it's really interesting way to try yourself and see how much you understood from the entire quest line!"
+				""
+				"In the subtitle, there will be rating from 1 to 10 in terms of difficulty. Higher numbers could require from you more knowledge and / or reading Lua documentation."
+				""
+				"After completing every quest, you will get a ComputerCraft trophy! (Dev note: If I managed to add it)"
+			]
+			hide: true
+			size: 1.5d
+			min_width: 250
+			id: "777349A29491AE4C"
+			tasks: [{
+				id: "695699FD194967F9"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "4E84EC1B07DF8EA7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Better Code Editor"
+			icon: "create:wrench"
+			x: 3.125d
+			y: 0.625d
+			shape: "gear"
+			subtitle: "Enough of in-game coding? There is a solution!"
+			description: [
+				"After a while of editing in game, you probably realized it's really annoying to use in game editor, but don't worry fellow player, you don't need to anymore!"
+				""
+				"You can upload files from your real computer into the in-game PC! You just have to create a file on your desktop, rename it onto [your_name].lua and you can start coding. After you finished, you just drag \\& drop it into in-game Computer and run it. Simple as that!"
+				""
+				"Note that file will be uploaded to a directory you are currently in, and if file with that name exists it will be overwritten!"
+				""
+				"There is also an addon for Visual Studio Code, that adds ComputerCraft support in Lua Language. Link to that is as the quest reward."
+			]
+			dependencies: [
+				"2D79E4D126EE389E"
+				"0829D34C8A1B13FA"
+			]
+			hide: true
+			size: 1.25d
+			min_width: 450
+			id: "5D796A237D7164E5"
+			tasks: [{
+				id: "4B61C4F20F5B7F7F"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [
+				{
+					id: "3E9A7C4F18826645"
+					type: "custom"
+					title: "[Link] Video showcasing drag \\& drop functionality"
+				}
+				{
+					id: "730F57D0F4965145"
+					type: "custom"
+					title: "[Link] Visual Studio Code ComputerCraft addon"
+				}
+			]
+		}
+		{
+			title: "Introduction to Lua"
+			icon: "computercraft:printed_book"
+			x: 2.25d
+			y: -2.25d
+			shape: "hexagon"
+			subtitle: "Lua Basics #0 - Introduction"
+			description: [
+				"Welcome to Lua fellow Player!"
+				""
+				"Lua is one of many coding languages out there, but it's one of the easiest ones. Don't think that it means it is worse than others."
+				""
+				"Main use of it is as a coding language in games. Of course that isn't the only use for it, but most common one. However there is a lot of games coded in Lua, that are pretty good and popular (The Binding of Isaac for example)."
+				""
+				"In this “tutorial” I'll try to teach you the basics of Lua and help you start your journey with coding!"
+			]
+			dependencies: ["2D79E4D126EE389E"]
+			size: 1.5d
+			min_width: 300
+			id: "44029061DB640AE2"
+			tasks: [{
+				id: "6A987EA5C795264E"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [
+				{
+					id: "57B6FB2AFCE06284"
+					type: "command"
+					auto: "invisible"
+					command: "/tellraw @p {\"text\":\"Have fun with Lua fellow player! ~~Kanzio\",\"color\":\"green\"}"
+					player_command: false
+				}
+				{
+					id: "18992EE31345E7F5"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Variables and their types"
+			icon: "computercraft:printed_pages"
+			x: 6.0d
+			y: -3.0d
+			shape: "diamond"
+			subtitle: "Lua Basics #1 - Variables"
+			description: [
+				"Lets start out with basics of basics shall we?"
+				""
+				"Variables are a place in the memory, where you can store data. Like a file, they have their own name, that you can use to interact with them. This is the most important thing in every programming language, because without those, you wouldn't be able to store and use any data at all in the program!"
+				""
+				"The way variables work is pretty simple, you set the name for it, and optionally you set what data it stores."
+				""
+				"> local my_first_variable = 0"
+				""
+				"● \"local\" is a function for creating new variables. \"my_first_variable\" is the variable's name, that is first argument! Get used to that word, because every function has one or more of them."
+				"● Second \"argument\" is a data you want to store in that variable. Its optional, that means you can just leave it empty and variable will still be created, but when you are gonna try reading it, it will return \"nil\"."
+				"(Important note: You can't write \"local x =\" when you want to create empty variable. You need to use \"local x\" or \"local x = nil\" where x is yours variable name)"
+				""
+				"Now to read your variable, you just simply use the name of your variable. It will give to the function data it contains (value). You can't read variables in any other place than function's argument! However for demonstration purposes, I will showcase variable's value like that:"
+				""
+				"> 0 -> my_first_variable"
+				""
+				"Only time it will function differently is when you want to change data it stores. Lets say we don't want our variable to store 0, we want it to store Enigmatica 6, how we can do that? To change value of variable, you simply overwrite it. That means you are deleting old value of variable, and putting new data in its place. To do that, you just simply use variable's name and set new value!"
+				""
+				"> my_first_variable = \"Enigmatica 6\""
+				"> \"Enigmatica 6\" -> my_first_variable"
+				""
+				"\"But what does \"nil\" mean and why there are quotation marks near Enigmatica 6?\" - So there are few types of variables, and each of them has its own unique rules. Check \"Lua Basics #1 - Variable types\" above this quest for more information about those."
+			]
+			dependencies: ["44029061DB640AE2"]
+			hide: true
+			size: 1.25d
+			min_width: 400
+			id: "29C780353E7FB720"
+			tasks: [{
+				id: "282439D423FAC52F"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "5FC3C88315F15ABA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Type: Table"
+			icon: "computercraft:printed_page"
+			x: 3.5d
+			y: -3.5d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"Tables are one of the most complicated \"variables\" in here, so you will need to read a lot more about them if you want to learn more than basic of basics."
+				""
+				"To start of technically tables aren't \"variables\". They are dynamic objects that can be dynamically changed. But to not make a brain washing process here, I will call it \"variable type\" so you will not think it's used differently."
+				""
+				"To create a table, it's pretty simple, you just use \"\\{\\}\" for any variable's value."
+				""
+				"> local my_first_table = \\{\\} -- Create a relation with name my_first_table to that table , for now its empty."
+				""
+				"Table is an array, that means it can store multiple variables inside of it, and all of them can be accessed with just one name. However in tables, those variables are called \"entries\". Every entry has its own Key and its value. Similarly to a variable, but it's in group!"
+				"To read/write to some entry, you need to use its key in the brackets next to the table, like this:"
+				""
+				"> my_first_table[1] = \"Hello\""
+				"> print (my_first_table[1]) -> Prints \"Hello\""
+				""
+				"In tables, you can store nearly anything, string, function, even another list! If you have list of the functions its API, and in that way you can create your own simple API. "
+				"If your key is a string, you can skip the brackets and just use the string name with a dot to get to that entry:"
+				""
+				"> my_first_table.hello = \"Hello again\""
+				""
+				"In the similar way you use APIs, but complete guide on that will be later on."
+				"Note: a.x and a[x] isn't the same! x in first case is a string, not a variable like in second one!"
+				""
+				"Lua defaults empty entries to nil, and you can set non-empty ones to nil to clear them. Tables aren't fixed, if there will be no more relations to it, it will be deleted from the memory. To delete a table completely, set every variable that has relation to that table to nil."
+				""
+				"Important note is that Lua doesn't return tables starting at key 0, like most of the languages do, Lua returns tables with key 1 and up. You can do table starting at key 0 manually, but its not recommended unless you are gonna use negative numbers."
+				""
+				"To learn more about tables if needed, check out Lua docs!"
+			]
+			dependencies: [
+				"29C780353E7FB720"
+				"20F5794B8753B648"
+			]
+			hide: true
+			min_width: 500
+			id: "152F6E8D35D2069A"
+			tasks: [{
+				id: "124F45AFAA7A0206"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "73533459AAF8B2B8"
+				type: "custom"
+				title: "[Link] Table"
+			}]
+		}
+		{
+			title: "Type: Boolean"
+			icon: "computercraft:printed_page"
+			x: 7.85d
+			y: -4.3d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"Boolean is the easiest type in every programming language. It can have 2 states, \"True\" and \"False\"."
+				""
+				"A Boolean is really useful in situations where you need to check if something is True, or False. Example:"
+				"● You need to know if there is a chest on the left of the PC. If there is a chest, it's \"True\", if there is not, it's \"False\""
+				""
+				"A lot of functions are returning a Boolean variable after they ended they work, it is useful to check for that output to see if what you wanted to do was actually done."
+			]
+			dependencies: [
+				"29C780353E7FB720"
+				"401DE5F2E19708E0"
+			]
+			hide: true
+			min_width: 250
+			id: "182654F933DE1815"
+			tasks: [{
+				id: "32D28AB681CE8601"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Type: Function"
+			icon: "computercraft:printed_page"
+			x: 4.15d
+			y: -4.3d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"You already heard of the word \"function\" a few times in this quest line, but did you know it's also one of the variable types?"
+				"Function is a variable that doesn't store data, it stores other functions and variables in it, which you can then use in another place with just the name of that function. Pretty convenient isn't it?"
+				""
+				"As every variable, you can change its value later on to whatever you want. Yes that means you can edit some of the Lua Functions and other APIs, but it will break stuff most of the time."
+				"APIs are sets of functions you can use to interact with stuff that uses a given API. For example to interact with the monitor of the PC, you need to use API that has functions to do that. How to use APIs will be explained later."
+				""
+				"Now lets see how to use functions."
+				"For you to call (In other words, use) a function, you need to simply write its name with 2 brackets. Between those are the function's arguments."
+				""
+				"> print(string) -- Basic function to write text on the screen. Has one argument."
+				""
+				"In my case I called print(). Some of the functions don't require you to give them arguments, they can even not have any of them, but there can also be functions that require even 10 arguments. Crazy isn't it?!"
+				"In this case, print() requires as its first and only argument some string."
+				"Example usage of print() looks like this:"
+				""
+				"> print(\"This is a test!\") -- Writes on the screen --> This is a test!"
+				""
+				"You already know that function arguments require variable, but did you know that you can use a function as an argument as well? Most of the functions return something, if its a table with stuff they found, or just a Boolean if they were able to do what they need to. They can even return other functions. To use functions as the arguments, you just write it as you would normally, just in this case it would be in the argument of your function."
+				""
+				"> print(my_function(1)) -- This will print what my_function will return."
+				""
+				"There is also a way to pass the function, this is sometimes useful and should be used with functions that don't require any arguments. To pass a function, you simply write its name without brackets. However it's not that useful in our use case, and until you will not go deeper into Lua coding, you will probably never use it."
+				""
+				"For more information about functions and how to create them, check Lua Basics #2."
+			]
+			dependencies: [
+				"29C780353E7FB720"
+				"32E1201F35F1A394"
+			]
+			hide: true
+			min_width: 450
+			id: "7B00ECCC48DA0445"
+			tasks: [{
+				id: "20F5794B8753B648"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Type: String"
+			icon: "computercraft:printed_page"
+			x: 5.0d
+			y: -4.9d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"String is a type of variable that stores a sequence of characters. You can type here anything, binary code (Binary - Code using ones and zeros), your name, entire address or your homework if you want."
+				""
+				"● Strings need to be written between double quotes to be valid, otherwise the program will think it's the name of variable!"
+				""
+				"> local my_first_string = \"Hello Player\" -- Valid string"
+				"> local my_first_string = Hello Player -- Not valid, Lua will think those are two variables"
+				""
+				"● Strings cannot be modified, but you can do a copy of them with a modification you want to do."
+				""
+				"> local test_string = \"This is a test\""
+				"> local test_string_edited = string.gsub(test_string, \"test\", \"Test!\", 1)"
+				"> \"This is a Test!\" -> test_string_edited"
+				""
+				"● string.gsub is one of the few ways with which you can edit your strings. First argument takes the string / variable you want to edit, second one what \"characters\" you want to change, and the third one takes what you want to put in its place."
+				"There is a fourth argument (Optional) that tells the program which occurrence of those characters to change. If, for example, we would have 2 \"test\" in our string, with number you can set which one to edit! In our case it would edit the first one."
+				""
+				"● There is also a way to add some text at the end of your string. This time you can \"edit\" the initial string by overwriting it, but it's sometimes useful to have it as separate variables."
+				"To add some text at the end of your string, you use 2 dots between 2 strings you want to add together:"
+				""
+				"> local string_1 = \"Hello \""
+				"> local string_2 = \"there!\""
+				"> string_1 = string_1 .. string_2"
+				"(Note: string_2 can be replaced by a non-string variable if it can be converted to a string)"
+				"> \"Hello there!\" -> string_1"
+				""
+				"There is also a few different ways to modify your strings and to format them, however those aren't as useful and can be found in Lua docs."
+			]
+			dependencies: [
+				"29C780353E7FB720"
+				"56800F53C736541F"
+			]
+			hide: true
+			min_width: 410
+			id: "32B8B586F03321A7"
+			tasks: [{
+				id: "32E1201F35F1A394"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "6B5AC6FA3CD60428"
+				type: "custom"
+				title: "[Link] String formating"
+			}]
+		}
+		{
+			title: "Type: Number"
+			icon: "computercraft:printed_page"
+			x: 7.0d
+			y: -4.9d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"Number is a type of variable to store numbers."
+				""
+				"Numbers should be written without any other characters to be valid and recognized as such:"
+				"> local my_first_number = 6"
+				"> 6 -> my_first_number"
+				""
+				"● There are a few exceptions however, as you can do single and double precision numbers as well. For that you just use a dot:"
+				"> local some_number = 1.54"
+				"● You can also write numbers in scientific notation (example: 5e20), but personally I wouldn't recommend that unless you know what you are doing."
+				""
+				"Lua supports the usual arithmetic operators:"
+				"+ -> Addition"
+				"- -> Subtraction"
+				"* -> Multiplication"
+				"/ -> Division"
+				""
+				"It's really simple to use them, you just write the operator you want to use between two numbers:"
+				"> local add = 6 + 10"
+				"> 16 -> add"
+				""
+				"Unfortunately Lua doesn't support anything else than those 4 basic operators. If you want to do anything else you will need to write the function yourself. Creating your own functions will be later on."
+			]
+			dependencies: [
+				"29C780353E7FB720"
+				"32D28AB681CE8601"
+			]
+			hide: true
+			min_width: 400
+			id: "08E925A9223FC1BF"
+			tasks: [{
+				id: "56800F53C736541F"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Variable Tips \\& Tricks"
+			icon: "computercraft:printed_page"
+			x: 6.0d
+			y: -1.0d
+			subtitle: "Lua Basics #1 - Variable tips \\& tricks"
+			description: [
+				"Variable naming:"
+				"For setting a variable's name, it's important to know a few things:"
+				""
+				"● Lua is \"capital sensitive\". It means that variables with name \"test\" and \"TEST\" are two different variables! "
+				""
+				"● Variable names can't be longer than 64 characters"
+				""
+				"● Variable names can't start with a number and can't have any spaces:"
+				"> local test_1 -- Variable named correctly"
+				"> local 1_test -- Variable named incorrectly, will not work"
+				"> local test 1 -- Variable named incorrectly, will not work"
+				""
+				"● You should name variables in a way that they represent their use:"
+				"> local day = \"Monday\""
+				"> local x123 = \"Monday\""
+				"Both of these are used by me to store a day of the week, but the first one is named with its purpose in mind, the other one is just a random thing. They both will work, however if you are trying to do more advanced programming, random names like x123 are gonna make a mess really quick."
+				""
+				"General tips \\& tricks:"
+				""
+				"● You can create multiple variables at the same time! You just simply type two or more names after \"local\" and separate them with a comma. You can even set a unique value for each variable."
+				"> local x, y, z = 1, 2, 3"
+				"> 1 -> x    /   2 -> y   /   3 -> z"
+				""
+				"● You can better describe your variables and code with use of comments. You create them with use of two minuses:"
+				"> print(\"Hello\") -- This is a comment that is ignored by Lua, you can write here anything!"
+			]
+			dependencies: ["29C780353E7FB720"]
+			hide: true
+			min_width: 400
+			id: "0944D4C1A4E3C8F3"
+			tasks: [{
+				id: "00E1D2866C886632"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "5BC935817892D231"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "minecraft:writable_book"
+			x: -4.5d
+			y: 3.0d
+			description: [
+				"Challenges are gonna change a lot. Those that are here right now, are gonna be in new section: Tasks! It will give a tutorial how to do a program so people can see how to write code"
+				""
+				"Challenges are gonna be hard from the beggining. Probably I will do 2 types of them: "
+				"basic -> Can be done w/o knowledge from somewhere else "
+				"advanced -> For advanced Users only, Requires usage of Wiki and Lua Docs, and probably experience for few of them"
+				""
+				"PS: For anyone that sees this. If you have any idea for quest requiremt for completion or better icon, I would aprreciate that ^^\""
+				""
+				"And about lua basics. I'm planing to add few more quests, talking about loops, function IF and searching for functions at wikis etc. Shouldn't be more than 10 quests (without those ones that have Variables Types) for entire Lua Basics"
+				""
+				"Note: Lua Basics #6 is gonna be the last Lua basics I'm pretty sure about that :D (if. I didn't forget about something that is required)"
+			]
+			min_width: 350
+			id: "422379AAF05456FC"
+			tasks: [{
+				id: "347BE76BC944769F"
+				type: "custom"
+				title: "Note"
+			}]
+		}
+		{
+			icon: "minecraft:writable_book"
+			x: 0.0d
+			y: -3.0d
+			shape: "octagon"
+			subtitle: "Lua Basics - Coding practice"
+			description: [
+				"Here are a few easy tasks that will show you how to do simple programs, to teach you practically how to do some stuff."
+				""
+				"More tasks will get unlocked, the more you advance in Lua Basics! It's recommended to do them as soon as possible, so you will practice stuff you learned as you go :D"
+				""
+				"There are also additional notes there, so it’s definitely worth the effort. Have fun!"
+			]
+			dependencies: [
+				"2D79E4D126EE389E"
+				"6A987EA5C795264E"
+				"2F2D30981A0D12B6"
+			]
+			hide: true
+			size: 1.5d
+			min_width: 250
+			id: "4B5728FBD119B4B7"
+			tasks: [{
+				id: "3E2B04698DC03A84"
+				type: "checkmark"
+				title: "Tasks!"
+			}]
+		}
+		{
+			title: "Variables Types - In General"
+			icon: "computercraft:printed_page"
+			x: 6.0d
+			y: -5.25d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"Every variable has its own type that determines what it stores and what you can do to it."
+				""
+				"In Lua there is 8 variable types, however I will cover only 6 because 2 of them aren't that useful in ComputerCraft, and require much more knowledge."
+				""
+				"Lua, whenever you are trying to do something that is designed for a different type of variable, will try to convert the variable you use to the type it needs to be. Of course it will not success 100% of the time, because sometimes it’s impossible to convert. In this case it will crash the program and give an error about an illegal function on that type of the variable."
+				""
+				"There are few ways to convert one type to another manually, but it's not that useful in stuff we are gonna do, and can be found in Official Lua Docs."
+			]
+			dependencies: ["29C780353E7FB720"]
+			hide: true
+			min_width: 375
+			id: "356E3B812A576EF7"
+			tasks: [{
+				id: "01B3465E67E41884"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "5FAE656413496E6A"
+				type: "custom"
+				title: "[Link] Convertion of variables"
+			}]
+		}
+		{
+			title: "Type: Nil"
+			icon: "computercraft:printed_page"
+			x: 8.5d
+			y: -3.5d
+			subtitle: "Lua Basics #1 - Variable types"
+			description: [
+				"Nil is a variable type and variable value. It means literally \"nothing\" in code. Variables with type nil, asked for their type and what they're storing, will return nil."
+				""
+				"● Nil is useful when you need to clear some variable after use."
+				""
+				"> x = nil"
+				""
+				"● This will set type and value of x as nil, setting it like it was just created in that line."
+				""
+				"Some functions will return nil when they don't find anything you asked for."
+			]
+			dependencies: [
+				"29C780353E7FB720"
+				"01B3465E67E41884"
+			]
+			hide: true
+			min_width: 400
+			id: "1BFF3074E9708917"
+			tasks: [{
+				id: "401DE5F2E19708E0"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Creating your own functions"
+			icon: "computercraft:printed_pages"
+			x: 9.0d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "Lua Basics #2 - Creating functions"
+			description: [
+				"Creating functions is a little different and more complicated than creating a normal variable. One of the main differences is the function you use to create it. To create your own function variable, you use the \"function\" command!"
+				""
+				"> function my_first_function(argument_1,argument_2)"
+				""
+				"● First you enter the name of your function. Important thing to add is brackets as you would do while calling a normal one. They have the same purpose here, between them, you put your function's arguments!"
+				""
+				"You can add as many arguments as you want, and to separate them you use commas. Arguments work like normal variables. However if you call a function and not give it the argument that it needs, Lua will default that argument to the variable \"nil\". "
+				""
+				"● Variables that you just created for your function's arguments are temporary, they cannot be used in any other place than that one function! Otherwise you use them like normal variables."
+				""
+				"● Everything you write after brackets is a code that will run when you call your function. There isn't anything more special here except two commands:"
+				""
+				"> return argument_1 + argument_2"
+				"> end"
+				""
+				"● It was mentioned in a few quests that functions can return some variables, and the command \"return\" is used to do exactly that. Its arguments are returned to another variable, that is set to have a value of a function."
+				""
+				"> local x = my_first_function(1,2)"
+				"> 3 -> x -- Return added both our arguments (1 and 2) and returned it to variable x."
+				""
+				"● The \"end\" command is to set the end of your function. It is used after the last line of your function's code. To showcase this, here is our function we just created:"
+				""
+				"> function my_first_function(argument_1,argument_2)"
+				">   return argument_1 + argument_2"
+				"> end -- End of function."
+				""
+				"Important note is that you can use other functions in your function, even if they are created by you! However those need to be written before the function that uses them, as Lua reads code from 1st line to last one, so if it sees a function that is created later, it will not know what it is."
+			]
+			dependencies: [
+				"29C780353E7FB720"
+				"401DE5F2E19708E0"
+				"32E1201F35F1A394"
+				"32D28AB681CE8601"
+				"00E1D2866C886632"
+				"56800F53C736541F"
+				"20F5794B8753B648"
+				"124F45AFAA7A0206"
+				"401DE5F2E19708E0"
+			]
+			hide: true
+			min_width: 450
+			id: "5056B0737A8A8D64"
+			tasks: [{
+				id: "0C2F459BCB9222EC"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Your first program!"
+			icon: "thermal:wrench"
+			x: -1.5d
+			y: -4.0d
+			subtitle: "Practice: Variables"
+			description: [
+				"It's time. We are gonna actually code something!"
+				"The program we will create, will use the print() function to write some variable's values on the screen after we modify them."
+				""
+				"● First thing we need to do, is to create 2 strings, 2 numbers, a Boolean and nil variable. Name and value for each of them is up to you."
+				""
+				"● Now let's use the print() function to write some text on the screen. However first, we will add one of those strings to the end of the other. Now we can print what we got."
+				""
+				"● Next thing we would like to print are those numbers. Let's show one of them first, after it the second one, and lastly, let's add them together and print that as well."
+				""
+				"● Now let's get our nil variable. As you know its empty, but that isn't efficient. Let's store \"Enigmatica 6 is great!\" in it and print it as well."
+				""
+				"● Lastly let's see the value of our Boolean."
+				""
+				"Now in our Modded for Dummies book, there are solutions to those tasks, so go there and check if you did it correctly. If so, congratulations! You created your first program!"
+				"Note that our code can be different, but results must be the same."
+				""
+				"Pro Tip: You don't need to do another variable in a few cases like adding 2 variables together. You can do that in the functions argument!"
+				"> local number_1, number_2 = 1, 5"
+				"> print(number_1 + number_2) -- Writes results on the screen --> 6"
+			]
+			dependencies: [
+				"4B5728FBD119B4B7"
+				"32E1201F35F1A394"
+				"282439D423FAC52F"
+				"32D28AB681CE8601"
+				"00E1D2866C886632"
+				"56800F53C736541F"
+				"20F5794B8753B648"
+				"124F45AFAA7A0206"
+				"01B3465E67E41884"
+				"401DE5F2E19708E0"
+			]
+			hide: true
+			min_width: 425
+			id: "5E591D65A5014852"
+			tasks: [
+				{
+					id: "0829D34C8A1B13FA"
+					type: "checkmark"
+					title: "Got it working!"
+					disable_toast: true
+				}
+				{
+					id: "7981535031476D38"
+					type: "item"
+					title: "Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2FEFE49A60D109C3"
+				type: "custom"
+				title: "[Link] Resolved Task 1"
+			}]
+		}
+		{
+			title: "How to use your Computer"
+			icon: "computercraft:computer_normal"
+			x: 0.0d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "It is simpler than you think!"
+			description: [
+				"The computer that you just created, is actually really similar to your real PC! It has a screen, main directory, programs, files and console."
+				""
+				"In ComputerCraft, directory doesn't exist, until something isn't saved in it. That means you can't have empty folders on your computer. However you can have empty files. To see what programs you have on your computer, run \"programs' command. It will print a list of all programs avaliable! Of course you can make your own programs, and that's what, technically, we are gonna do later on."
+				""
+				"To use any program, you just write its name to the console. Here is a few basic programs you need to know to use your computer and learn more:"
+				"> cd *directory* -- Changes what folder you are in. Your main directory is root."
+				"> mv *file* *file or directory* -- Used to rename and move files on the disk."
+				"> copy *file or directory* *directory* -- Used to copy file/files to other directory"
+				"> delete *file or directory* -- Deletes file or directory"
+				"> edit -- Runs edit program. This is code editor we will use to code!"
+				"> help *program* -- Most useful program on your computer. Gives more detailed information about specified program."
+				""
+				"If you have any problem with some program, use help command!"
+			]
+			dependencies: [
+				"2D79E4D126EE389E"
+				"6A987EA5C795264E"
+			]
+			hide: true
+			size: 1.5d
+			min_width: 450
+			id: "1FF283A30B6E415C"
+			tasks: [
+				{
+					id: "2F2D30981A0D12B6"
+					type: "checkmark"
+					title: "Got it!"
+				}
+				{
+					id: "2F63D341529F3534"
+					type: "item"
+					title: "Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "If this is equal 0, then true!"
+			icon: "computercraft:printed_pages"
+			x: 10.5d
+			y: -0.5d
+			subtitle: "Lua Basics #3 - Creating conditions with IF"
+			description: [
+				"\"if\" is another one of the most important things in coding. Without it we wouldn't be able to create any decisions! \"if\" is used to check if a variable is equal, bigger, smaller etc than another variable / value."
+				""
+				"Usage of \"if\" is actually really similar to a function, but you aren't doing a variable this time! To start creating your decision, you do something like this:"
+				""
+				"> if (variable_1 == variable_2) then"
+				""
+				"You probably realized that I didn't use single \"=\" sign, and that's not a mistake! You cannot use a single equal sign in this case, as it is used to assign a value to a variable, and not to check its value! Here is the list of logic operators you can use in Lua:"
+				""
+				"●  ==  -> checks if both variables are identical / equal."
+				"●  ~=  -> Same as == , but inverted (checks if both variables aren't identical / equal)."
+				"●  \">\" and \"<\"  -> Checks if 1st variable is bigger / lower than 2nd one (Only numbers)."
+				"●  \">=\" and \"<=\"  -> Checks if 1st variable is bigger / lower than 2nd one or if variables are equal (Only numbers)."
+				""
+				"There are also operators that make it possible to combine multiple conditions into one:"
+				""
+				"●  \"and\" -> this operator returns its first argument if it is false, otherwise, it returns its second argument (Example:"
+				"> (6 > 5 and 6 < 5) -- First argument is true, so it returns the second one that is false)"
+				"●  \"or\"  -> returns its first argument if it is not false; otherwise, it returns its second argument."
+				"●  \"not\" -> it reverts what it gets, so if it gets true, it will return false and vice versa."
+				""
+				"Important to note is that \"false\" and \"nil\" are both in Lua recognized as false. "
+				""
+				"After you make your decision requirement, you just need to add code that is gonna be executed if condition is meet. At the end you add \"end\"."
+				""
+				"There is also \"else\" and \"elseif\" commands, that allow you to execute code if conditions aren't meet, or check another condition if first wasn't meet. You use just one \"end\" at the end of entire \"if\"! Example:"
+				""
+				"> if (5 > 6 and 7+2 < 10) then"
+				">   print(\"It's true!\")"
+				"> elseif (\"Hello\" == \"Hello\" or 10-9 <= 0) then"
+				">   print(\"First condition wasn't meet, but second one was!\")"
+				"> else"
+				">   print(\"None of condition were meet.\")"
+				"> end"
+				""
+				"Note: The brackets in IF condition are optional, Lua doesn't care if condition is in brackets or not, but it's pretty convenient in longer conditions to add them."
+			]
+			dependencies: ["5056B0737A8A8D64"]
+			hide: true
+			min_width: 500
+			id: "6DF4A8FB92121573"
+			tasks: [{
+				id: "76DA4E58186F04A0"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Lets create some functions."
+			icon: "thermal:wrench"
+			x: -2.0d
+			y: -5.5d
+			subtitle: "Practice: Creating a function variable. [WIP]"
+			description: [
+				"Lets create our first functions!"
+				"This program will use your own functions to execute code multiple times later on."
+				""
+				"● Lets start with the stuff from last task. Create 5 variables, 3 of them will be numbers and 2 strings. What is their value is up to you."
+				""
+				"● Now lets create our function. It will have 2 arguments and it needs to add them together. Print \"Sum of arguments equals: \" with a sum of the arguments at the end, and also return it."
+				""
+				"● Create another function with 3 arguments. Lets call our first function here, and give it as arguments our first two function's variables. Now divide the sum you got by third argument and return the results."
+				""
+				"● Create our third, last function, without arguments. Call our second function here as value of newly created variable, and give it our three number variables as arguments. Next add one of the string variables at the end of the other, and do the same with what you got from function and your new string. Print it!"
+				""
+				"● At last, call our third function five times and see what happens."
+				""
+				"Tip: You don't need to do new variable in 2nd and 3rd step! In 2nd step you can divide in return command, and in 3rd step, you can add both strings and what function returns in one line in print argument!"
+				""
+				"> print(string_1 .. string_2 .. function_2(number_1,number_2,number_3)) -- Prints string_1, string_2 and what function_2 returns."
+			]
+			dependencies: [
+				"5E591D65A5014852"
+				"0C2F459BCB9222EC"
+			]
+			hide: true
+			min_width: 425
+			id: "7A434175E2B1AE04"
+			tasks: [
+				{
+					id: "2BB217B036DE0F70"
+					type: "checkmark"
+					title: "Got it working!"
+				}
+				{
+					id: "33326F96031C082C"
+					type: "item"
+					title: "Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4ECDC6048A431EB1"
+				type: "custom"
+				title: "[Link] Resolved Task 2"
+			}]
+		}
+		{
+			title: "Is 6 higher than 8?"
+			icon: "thermal:wrench"
+			x: -1.5d
+			y: -7.0d
+			subtitle: "Practice: Creating conditions"
+			description: [
+				"Is 6 higher than 2+3? Is \"E6\" the same as \"e6\"? What to do if so?"
+				"In this task we will create our first conditions, that will for sure let us know what is what!"
+				""
+				"● Lets start with creating few variables, get 4 numbers and 2 strings, with something similar like \"Enigmatica 6\" and \"enigmatica 8\"."
+				""
+				"● Now lets create our first condition. Check if first number variable is higher than second one, if so print \"It's bigger!\", if not print \"It's smaller!\"."
+				""
+				"● Second condition will be more advanced, lets get sum of our first and second number, and check if its higher or equal to the third one OR if its equal to the fourth one."
+				"If condition is meet, print first string, if not, check if first string is the same as second string, if it is, print \"They are the same!\", but if not, change second string to be the same as first, and print \"They weren't the same, but they are now\"."
+				""
+				"If done correctly you should get no errors, and get good outputs that agree with instructions written in this quest:"
+				""
+				"● If first condition is meet, you should see \"It's bigger!\", if not \"It's smaller!\""
+				"● If second condition is meet, you should see what you wrote in your first string, if not, you should see either \"They are the same!\" or \"They weren't the same, but they are now.\" if your strings weren't identical."
+				""
+				"Now if your code works, you can experiment a bit and see how the output changes with different inputs. Have fun!"
+				""
+				"Note from creator: I know those conditions doesn't have much sense, but they are done for you to practice \"elseif\" and \"else\" functions. More explenation is in the book."
+			]
+			dependencies: [
+				"7A434175E2B1AE04"
+				"76DA4E58186F04A0"
+			]
+			hide: true
+			min_width: 425
+			id: "788EAA0E430DA5C3"
+			tasks: [{
+				id: "783230BC86FE4A38"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+			rewards: [{
+				id: "1A9BD8BED0937646"
+				type: "custom"
+				title: "[Link] Resolved Task 3"
+			}]
+		}
+		{
+			title: "Loops... loops everywhere"
+			icon: "computercraft:printed_pages"
+			x: 10.625d
+			y: 1.875d
+			shape: "diamond"
+			subtitle: "Lua Basics #4.1 - Loops"
+			description: [
+				"Loops are used to execute your code how many times you want. You don't need to write a function and call it 200 times for your program to do something 200 times anymore!"
+				"You use your loops in really similar way to if: You use loop command with a condition, and you write \"end\" at the end of the code it executes. There is few different types of loops:"
+				""
+				"> while true do ... end "
+				""
+				"● This loop is just combination of \"if\" and a loop. It executes its code as long as some condition is true. In our example our condition is just \"true\", so this loop will go forever."
+				""
+				"> for i = 0, 10, 1 do ... end"
+				""
+				"● This loop executes its code for specified amount of times. Its a bit more complicated than \"while\"."
+				""
+				"●  First argument is a variable that is used for loops condition. As with functions, this variable is temporary, its only available inside of the loop and is gone in any other place in the code."
+				"Note: You can create that variable without use of a \"local\" function as in example. Also you can give it a value of different variable that has been created outside of the loop."
+				""
+				"●  Second argument is your loop condition. You don't create it as \"if\" condition however, you just put in number that variable needs to get to. In our example variable \"i\" needs to be equal 10 for loop to finish its work."
+				""
+				"●  Third argument is incrementation of that variable. That means by how much a variable needs to change. In our example we used 1, so our variable will increase by one with every run of the loop. You can also use negative numbers to make a loop that will decrease its variable."
+				""
+				"Important note is that your incrementation needs to be able to get your variable to condition number! If Lua realizes that it's not possible, it will not execute the code even once. "
+				""
+				"> for i = 10, 1, 1 do ... end"
+				"Incrementation is increasing a variable, but it needs to decrease to meet the condition. Lua will not execute the code even once!"
+				""
+				"Both of these loops are able to do similar things with some trickery, but its more convenient to use one type over another in some situations."
+				"There are also two another types of \"for\" loop, but those are more complicated than these and they are worth their own quest. Check out Lua Basics #4.2 for how to use them."
+			]
+			dependencies: ["6DF4A8FB92121573"]
+			hide: true
+			size: 1.25d
+			min_width: 500
+			id: "3313C6D952FB8B0C"
+			tasks: [{
+				id: "53BDD82960AF5FAF"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Different types of \"for\""
+			icon: "computercraft:printed_page"
+			x: 12.5d
+			y: 1.0d
+			subtitle: "Lua basics #4.2 - Types of for loop"
+			description: [
+				"Did you wonder how you can check every place in a table with a loop? With pairs() and ipairs() it is now possible!"
+				"Those are two additional types of \"for\" loop, that will run the loop as many times as you have keys in your table. They are really useful for checking every entry in a table."
+				""
+				"> for key, value in pairs(table) do ... end"
+				""
+				"● pairs() loop will return your key and its value as variables you can use inside of the loop. It doesn't care if a key is a string or a number, it will give whatever your table contains. Note that it will not sort anything, and sometimes can give results in random sequence, so if your code requires entries to be processed in specified order, use ipairs() loop!"
+				""
+				"> for key, value in ipairs(table) do ... end"
+				""
+				"● ipairs() are returning only entries with a numeric key, in order from the lowest to the highest number. It is useful when you need to sort your table from non-numeric keys, or when you need table entries in specified order. Beware that ipairs doesn't work with keys under 1 and its checking entire table every run of the loop, so it will be (much) slower than pairs() loop."
+				""
+				"Here is the example! First lets create a table. Our one will contain Enigmatica modpacks:"
+				""
+				"> local table_a = \\{\\}"
+				"> table_a[1], table_a[2], table_a[3] = \"E2\", \"E6\", \"E8\" -- Non-expert have numeric keys"
+				"> table_a[\"1_expert\"], table_a[\"2_expert\"] =\"E2E\", \"E6E\" -- Expert have string keys"
+				""
+				"> for key, value in pairs(table_a) do"
+				">   print(value) end"
+				"● Prints value of every key in a table, so in our case every Enigmatica modpack!"
+				""
+				"> for key, value in ipairs(table_a) do"
+				">   print(value) end"
+				"● Prints only numeric keys, so in our case non-expert versions of Enigmatica modpacks!"
+				""
+				"Tip: You can add \"end\" after a command in the same line, its not always recommended, but for short loops / condition / functions its really useful for saving space."
+			]
+			dependencies: ["3313C6D952FB8B0C"]
+			hide: true
+			min_width: 450
+			id: "2E2E7D1F4001A9F3"
+			tasks: [{
+				id: "1C78AA75C0095B23"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "But can I watch YouTube in game?"
+			icon: "computercraft:printed_pages"
+			x: 9.5d
+			y: 4.0d
+			subtitle: "Lua Basics #5.1 - Introduction to APIs"
+			description: [
+				"You may be thinking, what use have those monitors you got at the start of the questline. I mean you probably know the answer for that, but you don't know how to use them. That's what this quest is for!"
+				""
+				"ComputerCraft has a lot of really useful peripherals, that have their own API. What is API you already know, we will talk here only about usage."
+				""
+				"Every API has its variable you use to interact with it. That variable is a list of functions you can access by writing its name after the name of API. Between them you add dot. List of functions for every API is in Documentation for ComputerCraft, and you search it by its name or peripheral you want to use."
+				""
+				"> term.clear() -- This is command to clear the screen from \"term\" api."
+				""
+				"There isn't much special with APIs at this point, they work like normal functions, but you call them differently. The complexity starts with how you get access to the API."
+				""
+				"There are 2 types of APIs in ComputerCraft, Global and Peripheral. "
+				""
+				"● Global APIs are accessible at all time with use of Global Variable. Some useful Global APIs will be in \"Global API\" Section. "
+				""
+				"● Peripherals APIs are only accessible, when you have connected peripheral that API uses. Before that however, you need to wrap that peripheral, as Peripheral APIs are \"block specific\". More about that in Lua basics #5.2 - Peripherals API and Lua Basics #5.3 Peripherals APIs and their usage."
+				""
+				"PS: No, unfortunately even though ComputerCraft has access to the internet, it is not possible to watch YouTube in game."
+			]
+			dependencies: [
+				"3313C6D952FB8B0C"
+				"1C78AA75C0095B23"
+			]
+			hide: true
+			min_width: 450
+			id: "1F7736775BFEA643"
+			tasks: [{
+				id: "6F651FA6C015CA4A"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Lets loop some stuff"
+			icon: "thermal:wrench"
+			x: -0.5d
+			y: -8.0d
+			subtitle: "Coding practice: Loops"
+			dependencies: ["788EAA0E430DA5C3"]
+			hide: true
+			id: "3AA1096DA1C0287E"
+			tasks: [{
+				id: "00AAF998FF0416A3"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+			rewards: [{
+				id: "42CF98A624FC2784"
+				type: "custom"
+				title: "[Link] Resolved Task 4"
+			}]
+		}
+		{
+			title: "Note 2: What needs to be changed"
+			icon: "minecraft:writable_book"
+			x: -3.5d
+			y: 3.0d
+			description: [
+				"So there is few quests that has been done before I knew in what style I'm doing those quests, and also before \"lifting\" of few things like APIs section, so here are the quests that I need to redo (and wait with redoing for Motoko)"
+				""
+				"Entire Peripheral Section."
+				"Probably Function Task"
+				"Coding Tips"
+				"Documentation (links to wiki, I need to wait for Motoko for that)"
+				"Challenges"
+				""
+				"What is actually done? (except few tweaks later on)"
+				"I think quests from Lua Basics that are here aren't gonna be touched much in the future, I can call those \"done\""
+				"Few tasks I can call \"done\" as well"
+				"Main quest"
+				"Advanced and Pocket computer quest"
+				"How to use PC"
+				""
+				"Edit after a while: Nah I think actuallly that tasks require relift as well, but I'm bad at them so thats gonna take a while lmao"
+			]
+			min_width: 500
+			id: "3EBF3FB9D45D8F7B"
+			tasks: [{
+				id: "07FABF3D743D7744"
+				type: "custom"
+			}]
+		}
+		{
+			title: "Mekanism"
+			icon: "mekanism:alloy_atomic"
+			x: -10.5d
+			y: -2.0d
+			subtitle: "Lua Basics: Mekanism API"
+			description: [
+				"Mekanism is one of those mods that have ComputerCraft: Tweaked support! However, there is so much functions for every Mekanism machine, it is not possible to explain that API here. You will need to use external Excel spreadsheet this time."
+				""
+				"Searching for anything is fairly easy. Press \"ctrl\" + \"f\" and search for Mekanism machine you want to use. Next to every machine are functions you can use to interact with it!"
+				""
+				"Note that this API doesn't work super well with every Mekanism machine, and there isn't a lot of explanation of what functions do (There is a bit on Advanced Peripherals wiki, but not everything), so experimenting on your own is necessary."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 400
+			id: "43D7B585768ACD4D"
+			tasks: [{
+				id: "12F8FAD09CCC6AB2"
+				type: "item"
+				title: "Any Mekanism Basic Material"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:alloy_infused"
+								Count: 1b
+							}
+							{
+								id: "mekanism:alloy_reinforced"
+								Count: 1b
+							}
+							{
+								id: "mekanism:alloy_atomic"
+								Count: 1b
+							}
+							{
+								id: "mekanism:basic_control_circuit"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_control_circuit"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_control_circuit"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_control_circuit"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "600E5CAA349CFDD3"
+				type: "custom"
+				title: "Link to Mek Excel Spreadsheet"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "135B6776BF6F126B"
+			tasks: [{
+				id: "46F7C63A84FCD2DF"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "7E025BDCF46C877D"
+			tasks: [{
+				id: "5AC427F2D046E5B2"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "5C1BEEB39675EBA9"
+			tasks: [{
+				id: "7643C5D7C66E4A63"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 8.0d
+			dependencies: ["777349A29491AE4C"]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "53FA451058F778D9"
+			tasks: [{
+				id: "6AF4B8CAC3F680BF"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 10.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "2CE39378CBB272DB"
+			tasks: [{
+				id: "72C8EE047CBEAF4F"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 10.5d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "2A377B74D184444B"
+			tasks: [{
+				id: "2BC79AB3D3C44429"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 10.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "60425E956BBF01D9"
+			tasks: [{
+				id: "33AC70C1007ACEDB"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 9.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "6489F0478C60B861"
+			tasks: [{
+				id: "1E890F7E7EDF4B4C"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 8.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "0A8C43D4B5B6C62C"
+			tasks: [{
+				id: "642DECEBBDE65908"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 7.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "71C88AA0BB5BE7FE"
+			tasks: [{
+				id: "5CB1DE36311F811F"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "3F613624A3042197"
+			tasks: [{
+				id: "0A920986118648C7"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 9.0d
+			dependencies: ["777349A29491AE4C"]
+			optional: true
+			id: "5754C4EA09015400"
+			tasks: [{
+				id: "101D4E6D47ECA46A"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			title: "Global Variables"
+			icon: "computercraft:printed_book"
+			x: 7.0d
+			y: 2.5d
+			subtitle: "Lua Basics #5.2 - Useful Global Variables"
+			description: [
+				"Global variables are variables that have the same value in every program. They are just part of Lua language! It is possible to do custom global variables, but that's not very practical and requires a lot of work."
+				""
+				"Here are few most useful Global Variables in ComputerCraft: Tweaked and Lua. Everything else you need to find by yourself in documentation, but those here should be enough for most automations projects in Minecraft."
+			]
+			dependencies: ["1F7736775BFEA643"]
+			hide: true
+			min_width: 350
+			id: "69341D3A85480AD9"
+			tasks: [{
+				id: "559DE4A337138B1F"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "5F33BD10412387BF"
+				type: "custom"
+				title: "[Link] Global Variables in CC"
+			}]
+		}
+		{
+			title: "Colors Library"
+			icon: "computercraft:printed_pages"
+			x: 5.0d
+			y: 3.0d
+			subtitle: "Lua Basics #5.2 - Colors Library usage"
+			description: [
+				"Colors Library is a set of variables and functions to help you work with colors! It is useful while working with IE redstone wires, or when you want to have colored text for example."
+				"For non-American people, you can use different version of the library with different writing. (Colours Library). Usage is exactly the same otherwise."
+				""
+				"Colors Library Usage:"
+				""
+				"> colors.(color) -> Returns a \"code version\" of color you wrote after a dot. There are 16 basic colors available, same as colors available in minecraft. (Check documentation on Wiki for spelling)"
+				""
+				"> packRGB(r, g, b) -> Combines a three-color RGB value into usable in ComputerCraft color."
+				"● r,g,b (Number) -> Values of intensity of each color (Red, Green, Blue) from 0 to 255."
+				""
+				"> unpackRGB(rgb) -> Returns 3 numbers with intensity of basic colors (Red, Green, Blue)."
+				"● rgb -> Color you want to seperate."
+			]
+			dependencies: ["69341D3A85480AD9"]
+			hide: true
+			min_width: 500
+			id: "0E17CEC71EA384AE"
+			tasks: [{
+				id: "1428C8E8290AB4F6"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "0BACD05CE58EBB6F"
+				type: "custom"
+				title: "[Link] Colors Library"
+			}]
+		}
+		{
+			title: "Operating System API"
+			icon: "computercraft:printed_pages"
+			x: 5.0d
+			y: 2.0d
+			subtitle: "Lua Basics #5.2 - \"os\" API"
+			dependencies: ["69341D3A85480AD9"]
+			hide: true
+			id: "29EC12D7DF1ED9FF"
+			tasks: [{
+				id: "23197281ACBC72F5"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "196A0244498873CE"
+				type: "custom"
+				title: "[Link] OS API"
+			}]
+		}
+		{
+			title: "Peripheral API"
+			icon: "computercraft:printed_pages"
+			x: 7.5d
+			y: 0.5d
+			subtitle: "Lua Basics #5.2 - Peripheral API"
+			description: [
+				"Peripheral API is used to wrap/find any peripheral on the network and get its functions to use it! In this quest you will find only functions that API has to offer, not explanation on how to use peripherals and their functions! For that, check out Lua Basics #5.3 that will be unlocked after this quest."
+				""
+				"-- Peripheral API Functions:"
+				""
+				"> peripheral.wrap(Name) -> Returns a table with peripheral's functions, that is used to interract with that specific peripheral."
+				"● Name (String) -> Name of peripheral you want to wrap. Can be also a direction relative to the computer (top, bottom, front, back, left, right)"
+				""
+				"> peripheral.find(Type, [Filter]) -> Returns a table with all peripherals found on network with specified type. Entries in that table are tables like returned from wrap() function."
+				"● Type (String) -> Type of the peripheral you want to find."
+				"● Filter (Function) [Optional] -> Requires function returning Boolean used to filter found peripherals in final result. Executes code on every of the peripherals and if function returns true, that peripheral will be in final table."
+				""
+				"> peripheral.getName(Peripheral) -> Returns a string with the name of wrapped peripheral."
+				"● Peripheral (Table) -> Requires table with peripheral like from wrap() function."
+				""
+				"> peripheral.getType(Peripheral) -> Returns one or more strings with specified peripheral types."
+				"● Peripheral (String / Table) -> The name of the peripheral to find or wrapped peripheral."
+				""
+				"----------------------------------------------------------------------------------"
+				""
+				"Peripheral name is made of modification name, name of the block and a number after underscore."
+				"> minecraft:chest_0 -- Peripheral name of Minecraft chest."
+				"Peripheral name is only used when you are using wired modems! How to use them will be later on."
+				""
+				"In the similar way you construct Type of the peripheral, but you don’t use a number this time:"
+				"> minecraft:chest -> Peripheral type of Minecraft chest."
+				"Note that peripheral can have multiple types, Minecraft chest is also an ‘inventory’ for example. More about that in Lua Basics #5.3"
+			]
+			dependencies: ["69341D3A85480AD9"]
+			hide: true
+			min_width: 500
+			id: "2A1B7703C6A4685D"
+			tasks: [{
+				id: "3E85F8A3BC1D31AC"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "1BD8280A906CF52F"
+				type: "custom"
+				title: "[Link] Peripheral API"
+			}]
+		}
+		{
+			title: "Terminal API"
+			icon: "computercraft:printed_pages"
+			x: 6.5d
+			y: 0.5d
+			subtitle: "Lua Basics #5.2 - Term API"
+			description: [
+				"Terminal API (term) is used to interact with terminal of your PC or your monitor!"
+				"It has a ton of functions, so I will just get few most important ones, but taking a look at the documentation for it is definitely worth the time. Note that every program will start on PC's terminal, so if you need to redirect from other monitor to PC terminal, save it with first functions of the API."
+				""
+				"-- Term API functions:"
+				""
+				"> term.current() -> Returns a “table” with currently used terminal. Output is used with redirect function."
+				""
+				"> term.redirect(target) -> Redirects terminal output onto other terminal, like monitor."
+				"● target (table) -> A wraped monitor or terminal."
+				""
+				"> write(text) -> Writes text on the screen, similiar to \"print\"."
+				"● text (any) -> What you want to write on the screen."
+				""
+				"> term.clear() -> Clears the entire terminal screen."
+				""
+				"> term.clearLine() -> Clears the line the cursor is at."
+				"● Cursor in ComputerCraft is like normal cursor you have on your real PC. It has x (width) and y (height) positions on the screen. Cursor is responsible for writing anything on the screen."
+				""
+				"> term.getCursorPos() -> Returns 2 numbers with \"x\" and \"y\" positions of the cursor."
+				""
+				"> term.setCursorPos(x, y) -> It's used to set cursor position on the screen."
+				"● x -> Position from left of the screen where you want cursor."
+				"● y -> Position from top of the screen where you want cursor."
+				""
+				"> term.getSize() -> Returns 2 numbers with x and y size of your terminal."
+				""
+				"> term.scroll(y) -> Moves everything on the screen up or down."
+				"● y (Number) -> Amount of lines you want to move your screen by. Negative numbers will move screen down, positive up."
+				""
+				"> setTextColor(color) -> Changes the color of the text (Works only on Advanced Computers/Monitors for newly written text after change!)"
+				"● color (color) -> Color you want your text to have."
+			]
+			dependencies: ["69341D3A85480AD9"]
+			hide: true
+			min_width: 450
+			id: "75E0C3E753708FD4"
+			tasks: [{
+				id: "0E6AADD401F2F7B6"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "456F37019812B8FB"
+				type: "custom"
+				title: "[Link] Term API"
+			}]
+		}
+		{
+			title: "Text Utilities API"
+			icon: "computercraft:printed_pages"
+			x: 5.5d
+			y: 1.0d
+			subtitle: "Lua Basics #5.2 - Textutils API"
+			dependencies: ["69341D3A85480AD9"]
+			hide: true
+			id: "097B439DEE968650"
+			tasks: [{
+				id: "39FB5759F1B08786"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "796FE0452D816B89"
+				type: "custom"
+				title: "[Link] Textuitls API"
+			}]
+		}
+		{
+			title: "Math library"
+			icon: "computercraft:printed_pages"
+			x: 8.5d
+			y: 1.0d
+			subtitle: "Lua basics #5.2 - Math library"
+			description: [
+				"Math library has a lot of Mathematical functions that could be useful for calculating stuff. All of them you can find in the link from the quest reward, but most useful ones are:"
+				""
+				"-- Math Library Functions:"
+				""
+				"> math.ceil(number) -> Rounds up the number up."
+				""
+				"> math.floor(number) -> Rounds up number down."
+				""
+				"> math.random([number_1],[number_2]) -> Generates random number from:"
+				"● No arguments -> Double Precision number from 0 to 1"
+				"● 1 argument -> Number from 1 to number_1"
+				"● 2 arguments -> Number from number_1 to number_2"
+				""
+				"> math.max(number_1 ... number_x) -> Returns highest number from arguments."
+				""
+				"> math.min(number_1 ... number_x) -> Returns smallest number from arguments."
+			]
+			dependencies: ["69341D3A85480AD9"]
+			hide: true
+			min_width: 400
+			id: "56A9604A23CBA7FE"
+			tasks: [{
+				id: "54B0D2E05E747320"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "394B66345A71FFE7"
+				type: "custom"
+				title: "[Link] Math Library on Lua Docs"
+			}]
+		}
+		{
+			title: "WIP"
+			icon: "computercraft:printed_pages"
+			x: 5.5d
+			y: 4.0d
+			description: ["String Formating? Maybe?"]
+			dependencies: ["69341D3A85480AD9"]
+			hide: true
+			id: "77934DEAE0E3A2C3"
+			tasks: [{
+				id: "7212F3E3220F211B"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "WIP"
+			icon: "computercraft:printed_pages"
+			x: 6.5d
+			y: 4.5d
+			description: ["Transformation of one variable types to others"]
+			dependencies: ["69341D3A85480AD9"]
+			hide: true
+			id: "21375DDBA4CF79A1"
+			tasks: [{
+				id: "3862F5F8CF89CF59"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			description: ["Tasks are Work In Progress, I have a trouble with writing those, so my piority is on Lua Basics and Peripherals"]
+			id: "1D62BBE1BCA40A24"
+			tasks: [{
+				id: "64D831130CB43BD1"
+				type: "custom"
+				title: "Note:"
+				icon: "minecraft:writable_book"
+			}]
+		}
+		{
+			title: "Re-usable links and solution to tasks "
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "patchouli:modded_for_dummies"
+				}
+			}
+			x: 3.125d
+			y: -0.625d
+			shape: "gear"
+			subtitle: "But wait, those links are one time use?"
+			description: [
+				"Unfortunetaly FTB quests didn't add repeatable quests yet, so links from quest rewards are only one-time use."
+				""
+				"However in our \"Modded for Dummies\" book in Quests category, there is an entry with links and solutions to tasks, so you can check everything out every time you need to."
+			]
+			dependencies: [
+				"2D79E4D126EE389E"
+				"00000000000006E9"
+				"0ED4FB7A29E8557D"
+			]
+			hide: true
+			size: 1.25d
+			id: "739DEEE353F742E8"
+			tasks: [{
+				id: "02142D346A59C391"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "2AB23FCB677E93E1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Mod Integrations"
+			icon: "create:cogwheel"
+			x: -10.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Lua Basics: Mod-Added APIs"
+			description: [
+				"Some of the mods have their own API that adds functionality to their blocks. Here are all of the integrations that are in place in Enigmatica 6!"
+				""
+				"Note that most of them have their description in Advanced Peripherals documentation, so that’s the place to search more information. Additional links are in corresponding quests."
+			]
+			dependencies: ["55493D823F7403DA"]
+			min_width: 250
+			id: "7F26B046A65E9EDB"
+			tasks: [{
+				id: "4545EA1D31B4B5C3"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "52F6D5BCD76842E6"
+				type: "custom"
+				title: "[Link] Advanced Peripherals Wiki"
+			}]
+		}
+		{
+			title: "Botania"
+			icon: "botania:brewery"
+			x: -11.5d
+			y: -1.5d
+			subtitle: "Lua Basics: Botania API"
+			description: [
+				"Botania has integration that could be really useful in controlling your mana generation and usage!"
+				""
+				"-- Botania API:"
+				""
+				"- General:"
+				"> getMaxMana() -> Returns Number with mana capacity of the buffer."
+				"> getMana() -> Returns Number with amount of stored mana in a buffer."
+				""
+				"- Mana Pool \\& Mana Spreader"
+				"> isEmpty() -> Returns true (boolean) if mana buffer is empty."
+				"> isFull() -> Returns true (boolean) if mana buffer is full."
+				""
+				"- Mana Spreader Exclusive"
+				"> getVariant() -> Returns string with the variant of the spreader."
+				"> getBounding() -> Returns table with the coordinates of the target of the spreader."
+				""
+				"- Mana Pool Exclusive"
+				"> getManaNeeded() -> Returns number with the amount of mana needed to fill the pool."
+				""
+				"- Any mana generating flower:"
+				"> isPassiveFlower() -> Returns true (boolean) if the flower can passively generate mana."
+				"> isOnEnchantedSoil() -> Returns true (boolean) if the flower is on enchanted soil."
+				"> getGeneration() -> Returns Number with how much Mana flower can generate per tick."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 475
+			id: "5C1DA410C9AA2257"
+			tasks: [{
+				id: "1BE43465007D5045"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Immersive Engineering"
+			icon: {
+				id: "immersiveengineering:hammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -12.0d
+			y: -0.5d
+			subtitle: "Lua Basics: Immersive Engineering API"
+			description: [
+				"Immersive engineering unfortunetaly has only additional support for redstone wires and capacitors, however its good to know its a thing."
+				""
+				"-- Immersive Engineering API Functions:"
+				""
+				"- Capacitors:"
+				"> getEnergy() -> Check Energy API"
+				"> getEnergyNeeded() -> Returns number with amount of energy that is needed to fill the capacitor."
+				"> getEnergyFilledPercentage() -> Returns number from 0 to 1 with percentage fill of the capacitor."
+				"> getMaxEnergy() -> Returns number with maximum energy capacitor can store."
+				""
+				"- Redstone Wire Connector"
+				"> setRedstoneChannel(color) -> Sets the redstone channel of the wire connector."
+				"● color (string) -> Color of the channel you want your connector set to."
+				"> getRedstoneChannel() -> Returns string with the current redstone channel of connector."
+				"> isInputMode() -> Returns true (boolean) if the mode of the wire connector is set to input."
+				"> getOutput() -> Returns the number with the power of the redstone on the current channel."
+				"> getRedstoneForChannel(color) -> Returns number with the power of redstone from desired channel."
+				"● color (string) -> Color of the channel you want to get redstone power from."
+				""
+				"- Redstone Probe:"
+				"> setSendingChannel(color) -> Sets the sending channel of the probe connector."
+				"● color (string) -> Color of the channel you want your connector send signal to."
+				"> setReceivingChannel(color) -> Sets the receiving channel of the probe connector."
+				"● color (string) -> Color of the channel you want your connector recive signal from."
+				"> getReceivingChannel() -> Returns string with the receiving channel of the probe connector."
+				"> getSendingChannel() -> Returns string with the sending channel of the probe connector."
+				"> getRedstoneForChannel(color) -> Returns number with the redstone power on desired channel."
+				"● color (string) -> Color of the channel you want to get signal from."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 525
+			id: "36B1950BED69F9B6"
+			tasks: [{
+				id: "6D8C553262A245A0"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "There are broken mod integrations?"
+			icon: "engineersdecor:sign_caution"
+			x: -10.5d
+			y: 2.0d
+			subtitle: "Problematic interractions"
+			description: [
+				"Some of the mods unfortunetaly doesn't have great interraction with ComputerCraft, this is a list with mods that are known to cause issues. If you found any problematic mods, let us know!"
+				""
+				"Broken interractions:"
+				""
+				"● Storage Drawers -> Because how weird drawers work, they are problematic with ComputerCraft. Advanced peripherals have a patch for that, but it’s not perfect and because of that it's not recommended to use Storage Drawers with ComputerCraft. "
+				""
+				"● Mekanism -> Their API isn't perfect, so there are some problems with it."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 375
+			id: "26F7BB612EBB0B08"
+			tasks: [{
+				id: "6B278B1E5E8843C8"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Integrated Dynamics"
+			icon: "integrateddynamics:crystalized_menril_chunk"
+			x: -11.5d
+			y: 1.5d
+			subtitle: "Lua Basics: Integrated Dynamics API"
+			description: [
+				"Integrated Dynamics has a bit of support for ComputerCraft, but its only possible to read variables from Variable store."
+				""
+				"-- ID API Functions:"
+				""
+				"> list() -> Returns table with list of variables inside Variable Store. However without any values."
+				""
+				"> read(slot) -> Used to read value of specific variable. Returns table with a value."
+				"● slot: (Number) -> Slot from which variable value is read."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 300
+			id: "484DF013A150CDD7"
+			tasks: [{
+				id: "6CFF1AB5B4A480F4"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Minecraft"
+			icon: "minecraft:beacon"
+			x: -12.0d
+			y: 0.5d
+			subtitle: "Lua Basics: Minecraft features"
+			description: [
+				"Minecraft has been added support as well, however its only for two blocks: Beacon and Noteblock"
+				""
+				"-- Minecraft API Functions:"
+				""
+				"- Beacon Functions:"
+				"> getLevel() -> Returns a Number with level of the beacon"
+				"> getPrimaryEffect() -> Returns a string with primary effect of the beacon"
+				"> getSecondaryEffect() -> Returns a string with secondary effect of the beacon"
+				""
+				"- Noteblock Functions:"
+				"> playNote() -> Plays the sound of current note."
+				"> getNote() -> Returns Number (0-24) indicating what note is set."
+				"> changeNoteBy(Note) -> Used to change note to a given in the argument. Returns new note if successful."
+				"● Note: (Number from 0 to 24) -> Note you want to be set."
+				"> changeNote() -> Returns number note if successful, or -1 if not. Changes note by 1 like you would by right-clicking noteblock."
+			]
+			dependencies: ["7F26B046A65E9EDB"]
+			min_width: 400
+			id: "79415881D71D8D7F"
+			tasks: [{
+				id: "1E789F68DCF6F1CA"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Woops. That shouldn't happend"
+			icon: "computercraft:printed_page"
+			x: 0.0d
+			y: -9.5d
+			subtitle: "Lua Basics: Loops note"
+			description: ["(Note about loops that don't do much)"]
+			dependencies: ["3AA1096DA1C0287E"]
+			id: "164E9CE74DF24847"
+			tasks: [{
+				id: "2A87CAE08B854F9F"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			title: "Loops Part 2"
+			icon: "thermal:wrench"
+			x: 0.5d
+			y: -8.0d
+			subtitle: "Practice: pairs(), ipairs() and loops"
+			dependencies: ["3AA1096DA1C0287E"]
+			id: "1E530D7A8F225846"
+			tasks: [{
+				id: "30A0B81DE06F43AF"
+				type: "checkmark"
+				title: "Got it working!"
+			}]
+		}
+		{
+			title: "So what is exactly \"Peripheral API\"?"
+			icon: "computercraft:printed_pages"
+			x: 8.0d
+			y: 5.5d
+			subtitle: "Lua Basics #5.3 - Peripherals APIs and their usage"
+			dependencies: [
+				"1F7736775BFEA643"
+				"3E85F8A3BC1D31AC"
+			]
+			hide: true
+			min_width: 450
+			id: "0FB47A2AF9A13EA2"
+			tasks: [{
+				id: "2BA0F0C3EEF83EEC"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Is this the end?"
+			icon: "computercraft:printed_pages"
+			x: 5.0d
+			y: 6.5d
+			subtitle: "Lua Basics #6 - Final Notes and how to learn!"
+			description: [
+				"No, this isn't the end! In programming you can't always say that is the end, as you can always learn more."
+				"[WIP]"
+			]
+			dependencies: ["0FB47A2AF9A13EA2"]
+			hide: true
+			id: "5AE0F4942ECD17C9"
+			tasks: [{
+				id: "5D8B219E7EE96961"
+				type: "checkmark"
+				title: "Lua Basics #6 - Finish"
+			}]
+		}
+	]
+}
