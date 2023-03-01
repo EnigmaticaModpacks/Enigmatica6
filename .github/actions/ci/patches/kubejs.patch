@@ -62,3 +62,17 @@ index 907f306d..dc8f9fb6 100644
  				}
  			} catch (Throwable ex) {
  				type.console.error("Failed to read script pack " + pack.info.namespace + ": ", ex);
+diff --git a/forge/build.gradle b/forge/build.gradle
+index 41aceddd..b24be7e2 100644
+--- a/forge/build.gradle
++++ b/forge/build.gradle
+@@ -48,6 +48,9 @@ repositories {
+ 			includeGroup "com.resourcefulbees"
+ 		}
+ 	}
++	maven {
++		url "https://maven.nanite.dev/releases"
++	}
+ }
+ 
+ dependencies {
