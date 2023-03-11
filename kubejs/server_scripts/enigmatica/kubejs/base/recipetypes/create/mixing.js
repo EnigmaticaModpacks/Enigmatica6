@@ -89,6 +89,16 @@ onEvent('recipes', (event) => {
                 inputs: ['#forge:dyes/blue', '#forge:dyes/yellow'],
                 output: Item.of('minecraft:green_dye', 2),
                 id: `${id_prefix}green_dye_from_blue_yellow`
+            },
+            {
+                inputs: ['#forge:bowls', '#forge:crops/tomato', '#forge:crops/tomato', '#forge:milk/milk_bottle'],
+                output: 'simplefarming:tomato_soup',
+                id: `${id_prefix}tomato_soup`
+            },
+            {
+                inputs: ['farmersdelight:tomato_sauce', '#forge:milk/milk_bottle'],
+                output: 'simplefarming:tomato_soup',
+                id: `${id_prefix}tomato_soup_from_sauce`
             }
         ],
         recipes_heated: [
