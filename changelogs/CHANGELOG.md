@@ -2,9 +2,19 @@
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/changelog_mods_1.8.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/modlist_1.8.0.md)_
 
-**Changes/Improvements**
+**New Mods**
+
+-   [Storage Drawers Fixes](https://www.curseforge.com/minecraft/mc-mods/storage-drawers-fixes) (by [juh9870](https://www.curseforge.com/members/juh9870/projects))
+
+**Improvements**
+
+-   Enigmatic Tree of Life Controller recipe should use crystalline leaves as well [\#5349](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5349)
 
 **Bug fixes**
+
+-   Macaw's Doors mod: Breaking Garage Doors causes server crash [\#5355](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5355)
+-   Tomato sauce recipe conflict in Create mixer [\#5350](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5350)
+-   Scavenger can dupe Larvae [\#5095](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5095)
 
 ---
 
