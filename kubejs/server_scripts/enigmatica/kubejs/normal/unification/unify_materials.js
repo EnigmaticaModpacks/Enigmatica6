@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:normal/unification/';
+    const id_prefix = 'enigmatica:normal/unification/unify_materials/';
 
     materialsToUnify.forEach((material) => {
         var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
@@ -16,6 +16,7 @@ onEvent('recipes', (event) => {
         let ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
         let dust = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${material}`)).id;
 
+        minecraft_ore_ingot_smelting(event, material, ore, ingot);
         gear_unification(event, material, ingot, gem, gear);
         rod_unification(event, material, ingot, gem, rod);
         plate_unification(event, material, ingot, gem, plate);
@@ -23,6 +24,25 @@ onEvent('recipes', (event) => {
 
         immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust, ingot);
     });
+
+    function minecraft_ore_ingot_smelting(event, material, ore, ingot) {
+        if (ore == air || ingot == air) {
+            return;
+        }
+
+        blacklistedMaterials = ['ender'];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+        var output = ingot,
+            input = `#forge:ores/${material}`;
+        event.smelting(output, input).xp(0.7).id(`${id_prefix}smelting/${material}/ingot/from_ore`);
+        event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_ore`);
+    }
 
     function gear_unification(event, material, ingot, gem, gear) {
         if (gear == air) {
