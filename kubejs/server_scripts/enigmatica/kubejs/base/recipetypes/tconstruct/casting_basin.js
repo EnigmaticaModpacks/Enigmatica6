@@ -10,7 +10,12 @@ onEvent('recipes', (event) => {
             "result": "minecraft:diamond_block",
             "cooling_time": 237
         }
-        */
+        */ {
+            fluid: { name: 'tconstruct:molten_quartz', amount: 576 },
+            result: Item.of('minecraft:quartz_block').toJson(),
+            cooling_time: 180,
+            id: `tconstruct:smeltery/casting/quartz/block`
+        },
         {
             fluid: { name: 'thermal:redstone', amount: 1296 },
             result: Item.of('minecraft:redstone_block').toJson(),
