@@ -6,7 +6,7 @@ onEvent('item.right_click', (e) => {
     let lootTable = 'enigmatica:chests/soggy_treasure_box';
     let lootDrops = Utils.rollChestLoot(lootTable);
 
-    if (!player.isPlayer() || player.isFake()) {
+    if (!e.player.isPlayer() || e.player.isFake()) {
         //kludge until a better handler is available to drop the item at the fake player's location.
         let playerCoords = `${e.player.x} ${e.player.y + 1} ${e.player.z}`;
         e.world.server.runCommand(
