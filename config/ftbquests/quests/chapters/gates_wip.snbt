@@ -330,7 +330,39 @@
 		}
 		{
 			title: "Bragging Rights"
-			icon: "create:handheld_worldshaper"
+			icon: {
+				id: "trofers:large_trophy"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						Item: {
+							id: "kubejs:disabled_recipe_indicator"
+							Count: 1b
+						}
+						DisplayHeight: "2.0f.0f"
+						Colors: {
+							Bottom: {
+								Red: 249
+								Blue: 254
+								Green: 255
+							}
+							Top: {
+								Red: 249
+								Blue: 254
+								Green: 255
+							}
+							Middle: {
+								Red: 249
+								Blue: 254
+								Green: 255
+							}
+						}
+						Animation: "spinning"
+						AnimationSpeed: 0.3f
+						Name: "Enigmatica 6: Expert Mode"
+					}
+				}
+			}
 			x: 0.0d
 			y: 8.0d
 			shape: "octagon"
@@ -343,7 +375,39 @@
 			tasks: [{
 				id: "281E59C3023B532F"
 				type: "item"
-				item: "create:handheld_worldshaper"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "kubejs:disabled_recipe_indicator"
+								Count: 1b
+							}
+							DisplayHeight: "2.0f.0f"
+							Colors: {
+								Bottom: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+							}
+							Animation: "spinning"
+							AnimationSpeed: 0.3f
+							Name: "Enigmatica 6: Expert Mode"
+						}
+					}
+				}
 			}]
 		}
 		{
