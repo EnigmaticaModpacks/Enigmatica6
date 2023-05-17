@@ -15,7 +15,7 @@
 
 	[core.general]
 		#If the crafting planners can work on separate thread.
-		craftingPlannerEnableMultithreading = true
+		craftingPlannerEnableMultithreading = false
 		#The number of threads that the crafting plan calculator can use.
 		craftingPlannerThreads = 2
 		#The maximum number of terminal storage instances that can be sent in a single packet. Reduce this when you have packet overflows.
