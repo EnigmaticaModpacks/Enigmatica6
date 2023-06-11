@@ -166,3 +166,14 @@ jobs:
         with:
           name: compiled (${{ matrix.repo }})
           path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.19-build.9999.jar
+  # job
+  curseforge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2.5
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+
+      - run: npm install
+        working-directory: .github/actions/ci/node
+      - run: node .github/actions/ci/node/curse-distributable.js
