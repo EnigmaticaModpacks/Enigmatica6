@@ -7,11 +7,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: Item.of('refinedcrafterproxy:crafter_proxy'),
-            pattern: [
-                'CTC',
-                'LXR',
-                'CBC'
-            ],
+            pattern: ['CTC', 'LXR', 'CBC'],
             key: {
                 C: 'refinedstorage:quartz_enriched_iron',
                 X: 'refinedstorage:crafter',
@@ -32,17 +28,13 @@ onEvent('recipes', (event) => {
                 D: 'refinedstorage:advanced_processor'
             },
             id: `refinedcrafterproxy:crafter_proxy_card`
-        },
+        }
     ];
 
     for (let tier of ['iron', 'gold', 'diamond', 'netherite']) {
         recipes.push({
             output: Item.of('refinedcrafterproxy:crafter_proxy', { Tier: `extrastorage_${tier}` }),
-            pattern: [
-                'CTC',
-                'LXR',
-                'CBC'
-            ],
+            pattern: ['CTC', 'LXR', 'CBC'],
             key: {
                 C: 'refinedstorage:quartz_enriched_iron',
                 X: `extrastorage:${tier}_crafter`,
@@ -52,7 +44,7 @@ onEvent('recipes', (event) => {
                 B: 'refinedstorage:cable'
             },
             id: `${id_prefix}${tier}_crafter_proxy`
-        })
+        });
     }
 
     recipes.forEach((recipe) => {
