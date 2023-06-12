@@ -1,0 +1,62 @@
+
+#Note: for technical reasons, if anything in the tiers section is invalid, it will reset the entire section.
+#Luckily, forge backs up invalid configs in .toml.bak files, so look there if everything got reset.
+[tiers]
+
+	#Special tier for crafters without a tier tag.
+	#For values other than `default`, this is the value that appears within the tier tag.
+	[tiers.default]
+		#The display name of the tier.
+		#If nonempty, the name of the block will be formatted as `{name} Crafter Proxy`.
+		displayName = ""
+		#The energy used for the crafter.
+		#Must be an integer >= 0.
+		crafterEnergyUsage = 64
+		#The energy used for every pattern in the crafter.
+		#Must be an integer >= 0.
+		patternsEnergyUsage = 16
+		#The multiplier for the energy usage of the upgrades in the crafter.
+		#This does *not* multiply the total energy usage, only the portion used by upgrades.
+		#See refinedstorage-server.toml#upgrades for the energy usage of specific upgrades.
+		#Must be a float >= 0.
+		upgradesEnergyMultiplier = 1.0
+		#The update interval of the crafter,
+		#where the (zero-indexed) index in the list is the number of speed upgrades.
+		#Must be a list of integers of length 5 with elements > 0.
+		updateIntervals = [10, 8, 6, 4, 2]
+		#The maximum number of successful crafting updates per crafter update,
+		#where the (zero-indexed) index in the list is the number of speed upgrades.
+		#Must be a list of integers of length 5 with elements > 0.
+		maximumSuccessfulCraftingUpdates = [1, 2, 3, 4, 5]
+
+	[tiers.extrastorage_iron]
+		displayName = "Iron"
+		crafterEnergyUsage = 15
+		patternsEnergyUsage = 2
+		upgradesEnergyMultiplier = 1.0
+		updateIntervals = [10, 8, 6, 4, 2]
+		maximumSuccessfulCraftingUpdates = [1, 2, 3, 4, 5]
+
+	[tiers.extrastorage_gold]
+		displayName = "Gold"
+		crafterEnergyUsage = 30
+		patternsEnergyUsage = 2
+		upgradesEnergyMultiplier = 2.0
+		updateIntervals = [10, 8, 6, 4, 2]
+		maximumSuccessfulCraftingUpdates = [5, 6, 7, 8, 9]
+
+	[tiers.extrastorage_diamond]
+		displayName = "Diamond"
+		crafterEnergyUsage = 45
+		patternsEnergyUsage = 2
+		upgradesEnergyMultiplier = 3.0
+		updateIntervals = [10, 8, 6, 4, 2]
+		maximumSuccessfulCraftingUpdates = [25, 30, 35, 40, 45]
+
+	[tiers.extrastorage_netherite]
+		displayName = "Netherite"
+		crafterEnergyUsage = 60
+		patternsEnergyUsage = 2
+		upgradesEnergyMultiplier = 4.0
+		updateIntervals = [10, 8, 6, 4, 2]
+		maximumSuccessfulCraftingUpdates = [125, 150, 175, 200, 225]
