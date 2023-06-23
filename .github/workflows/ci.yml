@@ -146,7 +146,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
+      - run: git clone --branch 1605 https://github.com/KubeJS-Mods/KubeJS.git
       - run: git apply ../.github/actions/ci/patches/kubejs.patch
         working-directory: KubeJS
 
