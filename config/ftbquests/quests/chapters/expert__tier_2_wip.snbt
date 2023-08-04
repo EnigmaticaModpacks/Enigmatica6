@@ -118,7 +118,41 @@
 				{
 					id: "5A65288C9B50231B"
 					type: "item"
-					item: "farmersdelight:stove"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							items: [
+								{
+									id: "minecraft:campfire"
+									Count: 1b
+								}
+								{
+									id: "minecraft:soul_campfire"
+									Count: 1b
+								}
+								{
+									id: "farmersdelight:stove"
+									Count: 1b
+								}
+								{
+									id: "farmersdelight:skillet"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "nethers_delight:blackstone_stove"
+									Count: 1b
+								}
+							]
+							display: {
+								Name: "{\"text\":\"Heat Source\"}"
+							}
+						}
+					}
 				}
 			]
 		}
