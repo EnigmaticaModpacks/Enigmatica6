@@ -31,7 +31,7 @@ else
         echo "Neither wget or curl were found on your system. Please install one and try again"
     fi
 fi
-java -jar serverstarter-2.4.0.jar
+java -jar serverstarter-2.4.0.jar "$@"
 if [[ $DO_RAMDISK -eq 1 ]]; then
     sudo umount "$SAVE_DIR"
     rm -rf "$SAVE_DIR"
