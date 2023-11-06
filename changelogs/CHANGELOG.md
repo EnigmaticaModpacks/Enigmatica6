@@ -2,7 +2,7 @@
 
 **Bug fixes**
 
--   Fixed some typos in Ars Nouveau and Tinker's quests [\#5355](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5355)
+-   Fixed some typos in Ars Nouveau and Tinker's quests [\#5422](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5422)
 
 ---
 
