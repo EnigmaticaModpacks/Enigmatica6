@@ -20,7 +20,7 @@ onEvent('item.tooltip', (event) => {
     .white()
     .color('#808080') //any hex color
     */
-    const id_prefix = 'tooltips.enigmatica.base.'
+    const id_prefix = 'tooltips.enigmatica.base.';
     const recipes = [
         {
             items: [

@@ -58,9 +58,7 @@ onEvent('item.tooltip', (event) => {
         },
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
-            text: [
-                Text.translate(`${id_prefix}apiary`).red()
-            ]
+            text: [Text.translate(`${id_prefix}apiary`).red()]
         },
         {
             items: ['industrialforegoing:mob_slaughter_factory'],
@@ -86,7 +84,10 @@ onEvent('item.tooltip', (event) => {
         },
         {
             items: [/kubejs:diy/],
-            text: [Text.translate(`${id_prefix}some_assembly_required`).green(), Text.translate(`${id_prefix}batteries_not_included`).darkRed()]
+            text: [
+                Text.translate(`${id_prefix}some_assembly_required`).green(),
+                Text.translate(`${id_prefix}batteries_not_included`).darkRed()
+            ]
         }
     ];
 
