@@ -2,39 +2,36 @@ onEvent('jei.information', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = `descriptions.enigmatica.expert.`;
 
     const recipes = [
         {
             items: ['bloodmagic:soulpickaxe'],
-            text: ['Capable of mining Iesnium.']
+            text: ['tooltips.enigmatica.expert.soulpickaxe']
         },
         {
             items: ['atum:nebu_hammer', 'mythicbotany:alfsteel_pick', 'aiotbotania:alfsteel_aiot'],
-            text: ['Capable of breaking down Godblocks into Atum Artifacts.']
+            text: [`${id_prefix}nebu_hammer`]
         },
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
-            text: [
-                'Crafting this will not return any bees contained in the ingredients - make sure to remove them before crafting!'
-            ]
+            text: [`${id_prefix}apiary`]
         },
         {
             items: ['industrialforegoing:mob_slaughter_factory'],
             text: [
-                // This works but doesn't provide color in JEI text.
-                // I just made it like this to be easily copied from tooltips script
-                Text.of('Disabled in Expert Mode.').red(),
-                Text.of('Liquid Meat can be obtained by "processing" cows.').color('#6e2a2a'),
-                Text.of('Pink Slime can be harvested from a Pink Wither using a Fluid Laser.').color('#da07e6')
+                'tooltips.enigmatica.expert.disabled',
+                'tooltips.enigmatica.expert.liquid_meat',
+                'tooltips.enigmatica.expert.pink_slime'
             ]
         },
         {
             items: ['refinedstorage:4k_storage_part', 'refinedstorage:1k_storage_part'],
-            text: ['Crafting is disabled in Expert, begin with the 16k Storage Part.']
+            text: [`${id_prefix}small_storage_part`]
         },
         {
             items: ['refinedstorage:256k_fluid_storage_part', 'refinedstorage:64k_fluid_storage_part'],
-            text: ['Crafting is disabled in Expert, begin with the 1024k Fluid Storage Part.']
+            text: [`${id_prefix}small_fluid_storage_part`]
         },
         {
             items: [
@@ -44,14 +41,14 @@ onEvent('jei.information', (event) => {
                 'bloodmagic:masterbloodorb',
                 'bloodmagic:soulgemlesser'
             ],
-            text: [
-                'Obtaining this item for the first time automatically unlocks a Game Stage.',
-                'If the stage does not unlock or gets revoked, simply Right-Click this item in the air to re-gain it.'
-            ]
+            text: [`${id_prefix}stage_unlock`]
         }
     ];
 
     recipes.forEach((recipe) => {
+        for (let i = 0; i < recipe.text.length; i++) {
+            recipe.text[i] = Text.translate(recipe.text[i]);
+        }
         recipe.items.forEach((item) => {
             event.add(item, recipe.text);
         });
@@ -60,6 +57,7 @@ onEvent('jei.information', (event) => {
     const disabledItems = [
         'pneumaticcraft:air_compressor',
         'pneumaticcraft:advanced_air_compressor',
+        'industrialforegoing:mob_slaughter_factory',
         'integrateddynamics:energy_battery',
         'integrateddynamics:mechanical_squeezer',
         'integrateddynamics:mechanical_drying_basin',
