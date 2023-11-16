@@ -1,5 +1,9 @@
 ### Enigmatica 6 & Enigmatica 6: Expert v1.8.0
 
+**Improvements**
+
+-   Natural Scoria may now be crafted. Builders rejoice! [\#5349](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5349)
+
 **Bug fixes**
 
 -   Fixed some typos in Ars Nouveau and Tinker's quests [\#5422](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5422)

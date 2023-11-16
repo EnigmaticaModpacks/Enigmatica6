@@ -54,6 +54,7 @@ const generatableStone = [
     'astralsorcery:marble_raw',
     'create:dark_scoria',
     'create:scoria',
+    'create:natural_scoria',
     'create:gabbro',
     'create:dolomite',
     'create:weathered_limestone',
