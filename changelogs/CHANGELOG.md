@@ -2,7 +2,7 @@
 
 **Improvements**
 
--   Natural Scoria may now be crafted. Builders rejoice! [\#5349](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5349)
+-   Natural Scoria may now be crafted. Builders rejoice! [\#5424](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5424)
 
 **Bug fixes**
 
