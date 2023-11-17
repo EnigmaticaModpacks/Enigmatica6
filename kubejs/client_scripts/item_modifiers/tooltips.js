@@ -180,15 +180,12 @@ onEvent('item.tooltip', (event) => {
                 'kubejs:crystalline_dark_oak_wood'
             ],
             text: [Text.translate(`${id_prefix}crystalline`).gold()]
+        },
+        {
+            items: refinedStorageItems.map((item)=>`refinedstorage:${item}`),
+            text: [Text.translate('descriptions.enigmatica.base.can_be_dyed')]
         }
     ];
-
-    refinedStorageItems.forEach((item) => {
-        recipes.push({
-            items: [`refinedstorage:${item}`],
-            text: ['Can be dyed through crafting or by right clicking it with dye in-world.']
-        });
-    });
 
     recipes.forEach((recipe) => {
         event.add(recipe.items, recipe.text);
