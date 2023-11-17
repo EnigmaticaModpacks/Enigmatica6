@@ -2,11 +2,11 @@ onEvent('jei.information', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
-    const id_prefix = 'tooltips.enigmatica.normal.';
+    const id_prefix = 'descriptions.enigmatica.normal.';
     const recipes = [
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
-            description: [id_prefix + 'apiaries_craft']
+            description: ['tooltips.enigmatica.normal.apiaries_craft']
         },
         {
             items: ['atum:nebu_hammer'],
