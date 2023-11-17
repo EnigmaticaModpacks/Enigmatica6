@@ -2,20 +2,22 @@ onEvent('jei.information', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
+    const id_prefix = 'tooltips.enigmatica.normal.';
     const recipes = [
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
-            description: [
-                'Crafting this will return any bees in the hives/apiaries used ONLY if all hives/apiaries have been previously placed in-world and recieved NBT.'
-            ]
+            description: [id_prefix + 'apiaries_craft']
         },
         {
             items: ['atum:nebu_hammer'],
-            description: ['Capable of breaking down Godblocks into Atum Artifacts.']
+            description: ['descriptions.enigmatica.expert.nebu_hammer']
         }
     ];
 
     recipes.forEach((recipe) => {
+        for (let i = 0; i < recipe.description.length; i++) {
+            recipe.description[i] = Text.translate(recipe.description[i]);
+        }
         recipe.items.forEach((item) => {
             event.add(item, recipe.description);
         });
