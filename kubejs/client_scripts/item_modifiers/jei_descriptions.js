@@ -463,31 +463,24 @@ onEvent('jei.information', (event) => {
         }
     ];
 
-    const simplefarming_beverages = [
-        { type: 'beer', ingredient: 'Barley', effect: 'Strength' },
-        { type: 'cauim', ingredient: 'Cassava', effect: 'Jump Boost' },
-        { type: 'cider', ingredient: 'Apples', effect: 'Luck' },
-        { type: 'mead', ingredient: 'Honeycomb', effect: 'Haste' },
-        { type: 'sake', ingredient: 'Rice', effect: 'Speed' },
-        { type: 'tiswin', ingredient: 'Cactus Fruit', effect: 'a Health Boost' },
-        { type: 'vodka', ingredient: 'Potatoes', effect: 'Resistance' },
-        { type: 'whiskey', ingredient: 'Wheat', effect: 'Absorption' },
-        { type: 'wine', ingredient: 'Grapes', effect: 'Regeneration' }
-    ];
+    const simplefarming_beverages = ['beer', 'cauim', 'cider', 'mead', 'sake', 'tiswin', 'vodka', 'whiskey', 'wine'];
 
     simplefarming_beverages.forEach((beverage) => {
         recipes.push({
-            items: [`simplefarming:${beverage.type}`],
-            text: [
-                `Brewed by right-clicking ${beverage.ingredient} into a Brewing Barrel.`,
-                `Grants the imbiber ${beverage.effect}.`
-            ]
+            items: [`simplefarming:${beverage}`],
+            text: [`${id_prefix}beverages`],
+            with: [[`${id_prefix}beverages.${beverage}.ingredient`, `${id_prefix}beverages.${beverage}.effect`]]
         });
     });
 
     recipes.forEach((recipe) => {
         for (let i = 0; i < recipe.text.length; i++) {
-            recipe.text[i] = Text.translate(recipe.text[i]);
+            if (recipe.with[i]) {
+                recipe.with[i] = recipe.with[i].map((str) => Text.translate(str));
+                recipe.text[i] = Text.translate(recipe.text[i], ...recipe.with[i]);
+            } else {
+                recipe.text[i] = Text.translate(recipe.text[i]);
+            }
         }
         recipe.items.forEach((item) => {
             event.add(item, recipe.text);
