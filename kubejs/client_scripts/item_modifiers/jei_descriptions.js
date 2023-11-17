@@ -464,28 +464,19 @@ onEvent('jei.information', (event) => {
     });
 
     disabledItems.forEach((item) => {
-        event.add(
-            item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica6/issues"
-        );
+        event.add(item, `${id_prefix}disabled_please_report`);
     });
 
     refinedStorageItems.forEach((item) => {
-        event.add(`refinedstorage:${item}`, 'Can be dyed through crafting or by right clicking it with dye in-world.');
+        event.add(`refinedstorage:${item}`, id_prefix + 'can_be_dyed');
     });
 
     generatableCobblestone.forEach((cobblestone) => {
-        event.add(
-            cobblestone,
-            'Can be generated in a Vanilla Cobblestone Generator. The block below where the Cobblestone generates needs to be a Block of Iron.'
-        );
+        event.add(cobblestone, id_prefix + 'generatable_cobble');
     });
 
     generatableStone.forEach((stone) => {
-        event.add(
-            stone,
-            'Can be generated in a Vanilla Stone Generator. The block below where the Stone generates needs to be a Block of Diamond.'
-        );
+        event.add(stone, id_prefix + 'generatable_stone');
     });
 
     var framedDrawers = [
@@ -502,9 +493,6 @@ onEvent('jei.information', (event) => {
     ];
 
     framedDrawers.forEach((drawer) => {
-        event.add('framedcompactdrawers:framed_' + drawer, [
-            'Must be painted with any block to be used. To paint, put in any crafting grid with one block directly above and to its left diagonally.',
-            'You can also put a different block directly on top of the drawer and/or directly to its left to customize it even further!'
-        ]);
+        event.add('framedcompactdrawers:framed_' + drawer, [id_prefix + 'framed_drawers']);
     });
 });
