@@ -86,6 +86,14 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:crimson_stem'
             },
             id: `${id_prefix}crimson_post`
+        },
+        {
+            output: Item.of('valhelsia_structures:hanging_vines', 2),
+            pattern: [' A ', 'AAA', ' A '],
+            key: {
+                A: 'minecraft:vine'
+            },
+            id: `${id_prefix}hanging_vines`
         }
     ];
 
