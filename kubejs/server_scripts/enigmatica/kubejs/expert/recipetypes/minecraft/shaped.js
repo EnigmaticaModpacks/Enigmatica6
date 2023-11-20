@@ -78,7 +78,7 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:smooth_stone',
                 B: 'minecraft:furnace',
                 C: 'minecraft:campfire',
-                D: ['#forge:plates/iron', '#forge:plates/tin', '#forge:plates/aluminum']
+                D: 'minecraft:terracotta'
             },
             id: 'minecraft:blast_furnace'
         },

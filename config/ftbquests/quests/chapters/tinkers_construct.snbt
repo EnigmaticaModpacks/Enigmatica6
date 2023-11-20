@@ -545,7 +545,7 @@
 			description: [
 				"Early on, the materials for more permanent casts are precious and are better saved for that first inventory system. Towards that end, the tinkerer can use the time honored tradition of sand casting."
 				""
-				"Place the sand cast on the casting table, the place the part to be replicated. Remove that part, and the tinkerer is left with a one time use cast. If the tinkerer wants to cast an ingot, they can use an existing one or a brick."
+				"Place the sand cast on the casting table then place the part to be replicated. Remove that part, and the tinkerer is left with a one time use cast. If the tinkerer wants to cast an ingot, they can use an existing one or a brick."
 			]
 			dependencies: ["1BECFB61E2216217"]
 			id: "66B0A9AA63A7C13F"
@@ -553,7 +553,15 @@
 				{
 					id: "6A53E9E0E83CB4C7"
 					type: "item"
-					item: "tconstruct:blank_sand_cast"
+					title: "Blank Sand Cast"
+					icon: "tconstruct:blank_sand_cast"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:casts/single_use/blank"
+						}
+					}
 					count: 4L
 				}
 				{

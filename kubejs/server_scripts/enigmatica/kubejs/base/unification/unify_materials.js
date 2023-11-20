@@ -66,7 +66,6 @@ onEvent('recipes', (event) => {
             ingot
         );
 
-        minecraft_ore_ingot_smelting(event, material, ore, ingot);
         minecraft_gem_ore_smelting(event, material, ore, gem);
         minecraft_dust_smelting(event, material, dust, ingot);
 
@@ -828,27 +827,6 @@ onEvent('recipes', (event) => {
         event.recipes.mekanism
             .enriching(Item.of(dust, 2), `#forge:ores/${material}`)
             .id(`mekanism:processing/${material}/dust/from_ore`);
-    }
-
-    function minecraft_ore_ingot_smelting(event, material, ore, ingot) {
-        if (ore == air || ingot == air) {
-            return;
-        }
-
-        blacklistedMaterials = ['ender'];
-
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
-        }
-
-        var output = ingot,
-            input = `#forge:chunks/${material}`;
-        event.smelting(output, input).xp(0.7).id(`${id_prefix}smelting/${material}/ingot/from_chunk`);
-
-        input = `#forge:ores/${material}`;
-        event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_ore`);
     }
 
     function minecraft_gem_ore_smelting(event, material, ore, gem) {

@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/unification/unify_materials/';
 
     materialsToUnify.forEach((material) => {
         var ingot = getPreferredItemInTag(Ingredient.of(`#forge:ingots/${material}`)).id;
@@ -20,6 +21,7 @@ onEvent('recipes', (event) => {
         var levigated_material = getPreferredItemInTag(Ingredient.of(`#enigmatica:levigated_materials/${material}`)).id;
         var crystalline_sliver = getPreferredItemInTag(Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)).id;
 
+        ore_ingot_smelting(event, material, ore, ingot);
         gear_unification(event, material, ingot, gem, gear);
         rod_unification(event, material, ingot, gem, rod, plate);
         plate_unification(event, material, ingot, gem, plate);
@@ -39,6 +41,28 @@ onEvent('recipes', (event) => {
             crystalline_sliver
         );
     });
+
+    function ore_ingot_smelting(event, material, ore, ingot) {
+        if (ore == air || ingot == air) {
+            return;
+        }
+
+        blacklistedMaterials = ['ender'];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+        var output = ingot,
+            input = `#forge:ores/${material}`;
+        event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_ore`);
+
+        event.recipes.mekanism.smelting(output, input).id(`${id_prefix}smelting/${material}/ingot/from_ore`);
+
+        event.recipes.thermal.furnace(output, input).id(`${id_prefix}furnace/${material}/ingot/from_ore`);
+    }
 
     function gear_unification(event, material, ingot, gem, gear) {
         if (gear == air) {
