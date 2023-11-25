@@ -17,9 +17,7 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/farmersdelight/cutting/';
 
     const recipes = [
-        cuttingRecipe(Ingredient.of('quark:root'), Ingredient.of('#forge:tools/knives'), [
-            Item.of('quark:root_item')
-        ]),
+        cuttingRecipe(Ingredient.of('quark:root'), Ingredient.of('#forge:tools/knives'), [Item.of('quark:root_item')]),
         cuttingRecipe(
             Ingredient.of('#forge:storage_blocks/clay'),
             {
