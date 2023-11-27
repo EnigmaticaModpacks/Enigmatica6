@@ -469,15 +469,19 @@ onEvent('jei.information', (event) => {
         recipes.push({
             items: [`simplefarming:${beverage}`],
             text: [`${id_prefix}beverages`],
-            with: [[`${id_prefix}beverages.${beverage}.ingredient`, `${id_prefix}beverages.${beverage}.effect`]]
+            with: [
+                [
+                    Text.translate(`${id_prefix}beverages.${beverage}.ingredient`),
+                    Text.translate(`${id_prefix}beverages.${beverage}.effect`)
+                ]
+            ]
         });
     });
 
     recipes.forEach((recipe) => {
         for (let i = 0; i < recipe.text.length; i++) {
             if (recipe.with[i]) {
-                recipe.with[i] = recipe.with[i].map((str) => Text.translate(str));
-                recipe.text[i] = Text.translate(recipe.text[i], ...recipe.with[i]);
+                recipe.text[i] = Text.translate(recipe.text[i], recipe.with[i]);
             } else {
                 recipe.text[i] = Text.translate(recipe.text[i]);
             }
