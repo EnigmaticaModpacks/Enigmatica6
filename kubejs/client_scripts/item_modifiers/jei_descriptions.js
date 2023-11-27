@@ -2,6 +2,17 @@ onEvent('jei.information', (event) => {
     const id_prefix = 'descriptions.enigmatica.base.';
 
     const recipes = [
+        /*
+        {
+            items: ['modid:item'],
+            text: ['description text accepts %s and %s', `${id_prefix}cheese_slice`, '%s'],
+            with: [
+                [Text.translate('language_key'), 'raw text'],
+                ['language keys in `text` will be automatically converted to text defined in lang/xx_xx.json'],
+                ['but note that `with` does not handle language key']
+            ]
+        },
+        */
         {
             items: ['simplefarming:cheese_slice'],
             text: [`${id_prefix}cheese_slice`]
