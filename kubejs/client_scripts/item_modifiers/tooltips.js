@@ -182,7 +182,7 @@ onEvent('item.tooltip', (event) => {
             text: [Text.translate(`${id_prefix}crystalline`).gold()]
         },
         {
-            items: refinedStorageItems.map((item)=>`refinedstorage:${item}`),
+            items: refinedStorageItems.map((item) => `refinedstorage:${item}`),
             text: [Text.translate('descriptions.enigmatica.base.can_be_dyed')]
         }
     ];
