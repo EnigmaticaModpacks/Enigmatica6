@@ -491,9 +491,9 @@ onEvent('jei.information', (event) => {
 
     recipes.forEach((recipe) => {
         for (let i = 0; i < recipe.text.length; i++) {
-            try {
+            if (recipe.with && recipe.with.length > i) {
                 recipe.text[i] = Text.translate(recipe.text[i], recipe.with[i]);
-            } catch (e) {
+            } else {
                 recipe.text[i] = Text.translate(recipe.text[i]);
             }
         }
