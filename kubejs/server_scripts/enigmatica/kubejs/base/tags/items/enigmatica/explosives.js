@@ -15,7 +15,6 @@ onEvent('item.tags', (event) => {
             tag: 'enigmatica:explosives/base',
             thenAdd: [
                 'minecraft:tnt',
-                'appliedenergistics2:tiny_tnt',
                 'minecraft:tnt_minecart',
                 'thermal:explosive_grenade',
                 'supplementaries:bomb',
