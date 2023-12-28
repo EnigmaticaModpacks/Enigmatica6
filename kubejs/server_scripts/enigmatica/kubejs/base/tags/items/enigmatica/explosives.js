@@ -12,7 +12,7 @@ onEvent('item.tags', (event) => {
      */
     let recipes = [
         {
-            tag: 'enlightened6:explosives/base',
+            tag: 'enigmatica:explosives/base',
             thenAdd: [
                 'minecraft:tnt',
                 'appliedenergistics2:tiny_tnt',
@@ -26,7 +26,7 @@ onEvent('item.tags', (event) => {
             ]
         },
         {
-            tag: 'enlightened6:explosives/lightning',
+            tag: 'enigmatica:explosives/lightning',
             thenAdd: [
                 'powah:charged_snowball',
                 'thermal:lightning_charge',
@@ -37,7 +37,7 @@ onEvent('item.tags', (event) => {
             ]
         },
         {
-            tag: 'enlightened6:explosives/ice',
+            tag: 'enigmatica:explosives/ice',
             thenAdd: [
                 'thermal:ice_charge',
                 'thermal:ice_grenade',
@@ -46,7 +46,7 @@ onEvent('item.tags', (event) => {
             ]
         },
         {
-            tag: 'enlightened6:explosives/earth',
+            tag: 'enigmatica:explosives/earth',
             thenAdd: [
                 'tconstruct:efln_ball',
                 'thermal:earth_charge',
@@ -56,11 +56,11 @@ onEvent('item.tags', (event) => {
             ]
         },
         {
-            tag: 'enlightened6:explosives/slime',
+            tag: 'enigmatica:explosives/slime',
             thenAdd: ['thermal:slime_tnt_minecart', 'thermal:slime_tnt', 'thermal:slime_grenade']
         },
         {
-            tag: 'enlightened6:explosives/fire',
+            tag: 'enigmatica:explosives/fire',
             thenAdd: [
                 'thermal:fire_grenade',
                 'minecraft:fire_charge',
@@ -70,15 +70,15 @@ onEvent('item.tags', (event) => {
             ]
         },
         {
-            tag: 'enlightened6:explosives/ender',
+            tag: 'enigmatica:explosives/ender',
             thenAdd: ['thermal:ender_grenade', 'thermal:ender_tnt', 'thermal:ender_tnt_minecart']
         },
         {
-            tag: 'enlightened6:explosives/glow',
+            tag: 'enigmatica:explosives/glow',
             thenAdd: ['thermal:glowstone_grenade', 'thermal:glowstone_tnt', 'thermal:glowstone_tnt_minecart']
         },
         {
-            tag: 'enlightened6:explosives/redstone',
+            tag: 'enigmatica:explosives/redstone',
             thenAdd: [
                 'thermal:redstone_grenade',
                 'thermal:redstone_tnt',
