@@ -90,9 +90,9 @@ onEvent('item.tags', (event) => {
     for (let recipe of recipes) {
         let firstRemove = recipe.firstRemove ? recipe.firstRemove : [];
         let thenAdd = recipe.thenAdd ? recipe.thenAdd : [];
-        let tagSplitted = recipe.tag.split('/');
-        for (let i = 0; i < tagSplitted.length; i++) {
-            let tag = tagSplitted.slice(0, i + 1).join('/');
+        let splitTag = recipe.tag.split('/');
+        for (let i = 0; i < splitTag.length; i++) {
+            let tag = splitTag.slice(0, i + 1).join('/');
             event.get(tag).remove(firstRemove).add(thenAdd);
         }
     }
