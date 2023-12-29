@@ -4,16 +4,16 @@ onEvent('item.tags', (event) => {
     /**
      * Templates for tagging items, with automatic handling of "base tag".  
      * E.g. when adding `thermal:ice_tnt` into `#enlightened6:explosives/ice`, it will also be added into `#enlightened6:explosives`  
-     * For a targeted tag, it will first remove entries that match elements in `firstRemove`, then add entries in `thenAdd` into it.  
-     * @type {{tag:string,firstRemove?:any|any[],thenAdd?:any|any[]}[]}
-     * @param tag the tag string WITHOUT `#` prefix, like `forge:ingots` or `why:using/this/tag`
-     * @param firstRemove (Optional) Accepts RegEx, tag string, item string.
-     * @param thenAdd (Optional) Accepts can use RegEx, tag string, item string.
+     * For a targeted tag, it will first remove entries that match elements in `removals`, then add entries in `additions` into it.  
+     * @type {{tag:string,removals?:any[],additions?:any[]}[]}
+     * @param tag Tag string WITHOUT `#` prefix, like `forge:ingots` or `why:using/this/tag`
+     * @param removals (Optional) Accepts RegEx, tag string, item string.
+     * @param additions (Optional) Accepts RegEx, tag string, item string.
      */
     let recipes = [
         {
             tag: 'enigmatica:explosives/base',
-            thenAdd: [
+            additions: [
                 'minecraft:tnt',
                 'minecraft:tnt_minecart',
                 'thermal:explosive_grenade',
@@ -26,7 +26,7 @@ onEvent('item.tags', (event) => {
         },
         {
             tag: 'enigmatica:explosives/lightning',
-            thenAdd: [
+            additions: [
                 'powah:charged_snowball',
                 'thermal:lightning_charge',
                 'thermal:lightning_grenade',
@@ -37,7 +37,7 @@ onEvent('item.tags', (event) => {
         },
         {
             tag: 'enigmatica:explosives/ice',
-            thenAdd: [
+            additions: [
                 'thermal:ice_charge',
                 'thermal:ice_grenade',
                 'thermal:ice_tnt',
@@ -46,7 +46,7 @@ onEvent('item.tags', (event) => {
         },
         {
             tag: 'enigmatica:explosives/earth',
-            thenAdd: [
+            additions: [
                 'tconstruct:efln_ball',
                 'thermal:earth_charge',
                 'thermal:earth_tnt',
@@ -56,11 +56,11 @@ onEvent('item.tags', (event) => {
         },
         {
             tag: 'enigmatica:explosives/slime',
-            thenAdd: ['thermal:slime_tnt_minecart', 'thermal:slime_tnt', 'thermal:slime_grenade']
+            additions: ['thermal:slime_tnt_minecart', 'thermal:slime_tnt', 'thermal:slime_grenade']
         },
         {
             tag: 'enigmatica:explosives/fire',
-            thenAdd: [
+            additions: [
                 'thermal:fire_grenade',
                 'minecraft:fire_charge',
                 'thermal:fire_tnt',
@@ -70,15 +70,15 @@ onEvent('item.tags', (event) => {
         },
         {
             tag: 'enigmatica:explosives/ender',
-            thenAdd: ['thermal:ender_grenade', 'thermal:ender_tnt', 'thermal:ender_tnt_minecart']
+            additions: ['thermal:ender_grenade', 'thermal:ender_tnt', 'thermal:ender_tnt_minecart']
         },
         {
             tag: 'enigmatica:explosives/glow',
-            thenAdd: ['thermal:glowstone_grenade', 'thermal:glowstone_tnt', 'thermal:glowstone_tnt_minecart']
+            additions: ['thermal:glowstone_grenade', 'thermal:glowstone_tnt', 'thermal:glowstone_tnt_minecart']
         },
         {
             tag: 'enigmatica:explosives/redstone',
-            thenAdd: [
+            additions: [
                 'thermal:redstone_grenade',
                 'thermal:redstone_tnt',
                 'thermal:redstone_tnt_minecart',
@@ -87,13 +87,13 @@ onEvent('item.tags', (event) => {
         }
     ];
 
-    for (let recipe of recipes) {
-        let firstRemove = recipe.firstRemove ? recipe.firstRemove : [];
-        let thenAdd = recipe.thenAdd ? recipe.thenAdd : [];
+    recipes.forEach(recipe => {
+        let removals = recipe.removals ? recipe.removals : [];
+        let additions = recipe.additions ? recipe.additions : [];
         let splitTag = recipe.tag.split('/');
         for (let i = 0; i < splitTag.length; i++) {
             let tag = splitTag.slice(0, i + 1).join('/');
-            event.get(tag).remove(firstRemove).add(thenAdd);
+            event.get(tag).remove(removals).add(additions);
         }
-    }
+    });
 });
