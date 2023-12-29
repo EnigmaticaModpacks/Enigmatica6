@@ -2,9 +2,9 @@
 
 onEvent('item.tags', (event) => {
     /**
-     * Templates for tagging items, with automatic handling of "base tag".  
-     * E.g. when adding `thermal:ice_tnt` into `#enlightened6:explosives/ice`, it will also be added into `#enlightened6:explosives`  
-     * For a targeted tag, it will first remove entries that match elements in `removals`, then add entries in `additions` into it.  
+     * Templates for tagging items, with automatic handling of "base tag".
+     * E.g. when adding `thermal:ice_tnt` into `#enlightened6:explosives/ice`, it will also be added into `#enlightened6:explosives`
+     * For a targeted tag, it will first remove entries that match elements in `removals`, then add entries in `additions` into it.
      * @type {{tag:string,removals?:any[],additions?:any[]}[]}
      * @param tag Tag string WITHOUT `#` prefix, like `forge:ingots` or `why:using/this/tag`
      * @param removals (Optional) Accepts RegEx, tag string, item string.
@@ -37,12 +37,7 @@ onEvent('item.tags', (event) => {
         },
         {
             tag: 'enigmatica:explosives/ice',
-            additions: [
-                'thermal:ice_charge',
-                'thermal:ice_grenade',
-                'thermal:ice_tnt',
-                'thermal:ice_tnt_minecart'
-            ]
+            additions: ['thermal:ice_charge', 'thermal:ice_grenade', 'thermal:ice_tnt', 'thermal:ice_tnt_minecart']
         },
         {
             tag: 'enigmatica:explosives/earth',
@@ -87,7 +82,7 @@ onEvent('item.tags', (event) => {
         }
     ];
 
-    recipes.forEach(recipe => {
+    recipes.forEach((recipe) => {
         let removals = recipe.removals ? recipe.removals : [];
         let additions = recipe.additions ? recipe.additions : [];
         let splitTag = recipe.tag.split('/');
