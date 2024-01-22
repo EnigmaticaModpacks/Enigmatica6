@@ -12,8 +12,8 @@ onEvent('recipes', (event) => {
                 amount: 1,
                 nbt: JSON.stringify({
                     display: {
-                        Name: { translate: 'desc.enigmatica.amadron.atum_mineral' },
-                        Lore: [{ translate: 'desc.enigmatica.amadron.atum_mineral.lore', color: 'gold' }]
+                        Name: '[{ "translate": "desc.enigmatica.amadron.atum_mineral" }]',
+                        Lore: ['[{ "translate": "desc.enigmatica.amadron.atum_mineral.lore", "color": "gold" }]']
                     },
                     BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_mineral_survey_atum_combo' }
                 })
@@ -32,8 +32,8 @@ onEvent('recipes', (event) => {
                 amount: 1,
                 nbt: JSON.stringify({
                     display: {
-                        Name: { translate: 'desc.enigmatica.amadron.undergarden_mineral' },
-                        Lore: [{ translate: 'desc.enigmatica.amadron.undergarden_mineral.lore', color: 'gold' }]
+                        Name: '[{ "translate": "desc.enigmatica.amadron.undergarden_mineral" }]',
+                        Lore: ['[{ "translate": "desc.enigmatica.amadron.undergarden_mineral.lore", "color": "gold" }]']
                     },
                     BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_mineral_survey_undergarden_combo' }
                 })
@@ -52,8 +52,8 @@ onEvent('recipes', (event) => {
                 amount: 1,
                 nbt: JSON.stringify({
                     display: {
-                        Name: { translate: 'desc.enigmatica.amadron.nether_botanical' },
-                        Lore: [{ translate: 'desc.enigmatica.amadron.nether_botanical.lore', color: 'gold' }]
+                        Name: '[{ "translate": "desc.enigmatica.amadron.nether_botanical" }]',
+                        Lore: ['[{ "translate": "desc.enigmatica.amadron.nether_botanical.lore", "color": "gold" }]']
                     },
                     BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_botanical_survey_nether_combo' }
                 })
@@ -72,8 +72,8 @@ onEvent('recipes', (event) => {
                 amount: 1,
                 nbt: JSON.stringify({
                     display: {
-                        Name: { translate: 'desc.enigmatica.amadron.end_botanical' },
-                        Lore: [{ translate: 'desc.enigmatica.amadron.end_botanical.lore', color: 'gold' }]
+                        Name: '[{ "translate": "desc.enigmatica.amadron.end_botanical" }]',
+                        Lore: ['[{ "translate": "desc.enigmatica.amadron.end_botanical.lore", "color": "gold" }]']
                     },
                     BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_botanical_survey_end_combo' }
                 })
@@ -92,8 +92,8 @@ onEvent('recipes', (event) => {
                 amount: 1,
                 nbt: JSON.stringify({
                     display: {
-                        Name: { translate: 'desc.enigmatica.amadron.end_mineral' },
-                        Lore: [{ translate: 'desc.enigmatica.amadron.end_mineral.lore', color: 'gold' }]
+                        Name: '[{ "translate": "desc.enigmatica.amadron.end_mineral" }]',
+                        Lore: ['[{ "translate": "desc.enigmatica.amadron.end_mineral.lore", "color": "gold" }]']
                     },
                     BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_mineral_survey_the_end_combo' }
                 })
