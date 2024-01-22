@@ -31,7 +31,7 @@ onEvent('ie.multiblock.form', (event) => {
         if (!event.getEntity().stages.has(requiredGameStage.get(name))) {
             event.cancel();
             if (!event.getEntity().getServer()) {
-                let error_message = Text.translate('desc.enigmatica.base.ie_multiblock_error');
+                let error_message = Text.translate('desc.enigmatica.ie_multiblock_error');
                 event.getEntity().tell(error_message);
             }
         }
