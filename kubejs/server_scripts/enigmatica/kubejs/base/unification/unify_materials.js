@@ -66,7 +66,6 @@ onEvent('recipes', (event) => {
             ingot
         );
 
-        minecraft_ore_ingot_smelting(event, material, ore, ingot);
         minecraft_gem_ore_smelting(event, material, ore, gem);
         minecraft_dust_smelting(event, material, dust, ingot);
 
@@ -830,26 +829,6 @@ onEvent('recipes', (event) => {
             .id(`mekanism:processing/${material}/dust/from_ore`);
     }
 
-    function minecraft_ore_ingot_smelting(event, material, ore, ingot) {
-        if (ore == air || ingot == air) {
-            return;
-        }
-
-        blacklistedMaterials = ['ender'];
-
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
-        }
-
-        var output = ingot,
-            input = `#forge:ores/${material}`;
-
-        fallback_id(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
-        fallback_id(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
-    }
-
     function minecraft_gem_ore_smelting(event, material, ore, gem) {
         if (ore == air || gem == air) {
             return;
@@ -866,8 +845,8 @@ onEvent('recipes', (event) => {
         var output = gem,
             input = `#forge:ores/${material}`;
 
-        fallback_id(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
-        fallback_id(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        event.smelting(output, input).xp(0.7).xp(0.7).id(`${id_prefix}smelting/${material}/gem/from_ore`);
+        event.blasting(output, input).xp(0.7).xp(0.7).id(`${id_prefix}blasting/${material}/gem/from_ore`);
     }
 
     function minecraft_dust_smelting(event, material, dust, ingot) {
@@ -886,8 +865,8 @@ onEvent('recipes', (event) => {
         var output = ingot,
             input = `#forge:dusts/${material}`;
 
-        fallback_id(event.smelting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
-        fallback_id(event.blasting(output, input).xp(0.7), `${id_prefix}${arguments.callee.name}/`);
+        event.smelting(output, input).xp(0.7).id(`${id_prefix}smelting/${material}/ingot/from_dust`);
+        event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_dust`);
     }
 
     function occultism_gem_ore_crushing(event, material, ore, dust, gem, shard) {
@@ -918,16 +897,15 @@ onEvent('recipes', (event) => {
                 return;
         }
 
-        fallback_id(
-            event.custom({
+        event
+            .custom({
                 type: 'occultism:crushing',
                 ingredient: { tag: input },
                 result: { item: output, count: count },
                 crushing_time: 100,
                 ignore_crushing_multiplier: false
-            }),
-            `${id_prefix}${arguments.callee.name}/`
-        );
+            })
+            .id(`${id_prefix}occultism_crushing/${material}/${materialProperties.output}/from_ore`);
     }
 
     function occultism_metal_ore_crushing(event, material, ore, dust, ingot) {

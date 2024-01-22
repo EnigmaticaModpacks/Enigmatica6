@@ -238,19 +238,18 @@
 			}]
 		}
 		{
-			title: "-173 Fahrenheit or Celsius?"
+			title: "Heating and Cooling"
 			icon: "minecraft:packed_ice"
 			x: -12.5d
 			y: -13.5d
 			shape: "rsquare"
-			subtitle: "First one, then the other"
 			description: ["Where pressurized air is your primary power supply, heat is a secondary but just as vital mechanic. Advanced Compressors and other machines rely on either heating them up or cooling them down to run properly."]
 			dependencies: ["00000000000000AF"]
 			id: "00000000000000CC"
 			tasks: [{
 				id: "00000000000000CD"
 				type: "checkmark"
-				title: "-173 Fahrenheit or Celsius?"
+				title: "Heating and Cooling"
 			}]
 			rewards: [
 				{
@@ -482,8 +481,13 @@
 				"The Refinery is built by placing the Controller and stacking 2-4 outputs on top of it. Be sure to insulate all of the sides! Consider using a logistics network to extract the outputs for further processing. Supply heat and oil to begin the process. "
 				""
 				"Note: A Comparator reading from the Controller is an excellent way of controlling your Vortex Tube to prevent wasting fuel."
+				""
+				"Need help generating and handling heat? Refer to the quests on Heating and Cooling."
 			]
-			dependencies: ["00000000000000E0"]
+			dependencies: [
+				"00000000000000E0"
+				"00000000000000CD"
+			]
 			id: "00000000000000E7"
 			tasks: [
 				{
@@ -1264,16 +1268,22 @@
 			description: ["Cooling plastic by dumping a bucket in the world will get you started, but surely there’s a better way?"]
 			dependencies: [
 				"00000000000000BF"
-				"00000000000000F5"
 				"00000000000000AF"
 			]
 			id: "0000000000000145"
-			tasks: [{
-				id: "0000000000000146"
-				type: "item"
-				item: "pneumaticcraft:plastic"
-				count: 4L
-			}]
+			tasks: [
+				{
+					id: "0000000000000146"
+					type: "item"
+					item: "pneumaticcraft:plastic"
+					count: 4L
+				}
+				{
+					id: "4D6DAF3CDF2813FE"
+					type: "item"
+					item: "pneumaticcraft:plastic_bucket"
+				}
+			]
 			rewards: [{
 				id: "0000000000000147"
 				type: "item"

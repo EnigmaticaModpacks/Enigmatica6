@@ -74,7 +74,7 @@ onEvent('recipes', (event) => {
                 ingredient: recipe.input,
                 result: recipe.output
             })
-            .id(`${id_prefix}/pedestal_crushing/${recipe.id_suffix}`);
+            .id(`${id_prefix}pedestal_crushing/${recipe.id_suffix}`);
 
         // occultism
         event
@@ -85,7 +85,7 @@ onEvent('recipes', (event) => {
                 crushing_time: recipe.duration,
                 ignore_crushing_multiplier: recipe.ignore_occultism_multiplier
             })
-            .id(`${id_prefix}/occultism_crushing/${recipe.id_suffix}`);
+            .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
 
         // astralsorcery
         event
@@ -100,7 +100,7 @@ onEvent('recipes', (event) => {
                 acceptChaliceInput: true,
                 copyNBTToOutputs: false
             })
-            .id(`${id_prefix}/astralsorcery_infuser/${recipe.id_suffix}`);
+            .id(`${id_prefix}astralsorcery_infuser/${recipe.id_suffix}`);
 
         // industrialforegoing
         event
@@ -109,13 +109,13 @@ onEvent('recipes', (event) => {
                 input: recipe.input,
                 output: recipe.output
             })
-            .id(`${id_prefix}/industrialforegoing_crusher/${recipe.id_suffix}`);
+            .id(`${id_prefix}industrialforegoing_crusher/${recipe.id_suffix}`);
 
         // thermal
         event.recipes.thermal
             .pulverizer([recipe.output, recipe.secondary_output], recipe.input)
             .experience(recipe.experience)
-            .id(`${id_prefix}/thermal_pulverizer/${recipe.id_suffix}`);
+            .id(`${id_prefix}thermal_pulverizer/${recipe.id_suffix}`);
 
         // mekanism
         event.recipes.mekanism.enriching(recipe.output, recipe.input).id(`${id_prefix}/pedestals/${recipe.id_suffix}`);
@@ -123,12 +123,12 @@ onEvent('recipes', (event) => {
         // immersiveengineering
         event.recipes.immersiveengineering
             .crusher(recipe.output, recipe.input, recipe.secondary_output)
-            .id(`${id_prefix}/immersiveengineering_crusher/${recipe.id_suffix}`);
+            .id(`${id_prefix}immersiveengineering_crusher/${recipe.id_suffix}`);
 
         // create
         event.recipes.create
             .milling([recipe.output, recipe.secondary_output], recipe.input)
-            .id(`${id_prefix}/create_milling/${recipe.id_suffix}`);
+            .id(`${id_prefix}create_milling/${recipe.id_suffix}`);
 
         // ars_nouveau
         event
@@ -137,7 +137,7 @@ onEvent('recipes', (event) => {
                 input: Ingredient.of(recipe.input).toJson(),
                 output: [recipe.output.withChance(1.0), recipe.secondary_output]
             })
-            .id(`${id_prefix}/ars_nouveau_crushing/${recipe.id_suffix}`);
+            .id(`${id_prefix}ars_nouveau_crushing/${recipe.id_suffix}`);
     };
 
     recipes.forEach((recipe) => {

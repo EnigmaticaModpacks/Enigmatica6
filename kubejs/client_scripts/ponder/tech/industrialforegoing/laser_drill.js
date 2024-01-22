@@ -60,16 +60,14 @@ onEvent('ponder.registry', (event) => {
                 scene.idle(100);
 
                 // only show the base first
-                scene
-                    .world()
-                    .hideSection(
-                        util
-                            .select()
-                            .everywhere()
-                            .substract(util.select().layer(0))
-                            .substract(util.select().position(3, 3, 3)),
-                        Facing.down
-                    );
+                scene.world().hideSection(
+                    util
+                        .select()
+                        .everywhere()
+                        .substract(util.select().layer(0))
+                        .substract(util.select().position(3, 3, 3)),
+                    Facing.down
+                );
 
                 scene.addKeyframe();
 
@@ -116,7 +114,13 @@ onEvent('ponder.registry', (event) => {
                 scene.idle(40);
 
                 // add the drills
-                scene.world().showSection(util.select().layer(3).substract(util.select().position(3, 3, 3)), Facing.up);
+                scene.world().showSection(
+                    util
+                        .select()
+                        .layer(3)
+                        .substract(util.select().position(3, 3, 3)),
+                    Facing.up
+                );
 
                 scene.idle(20);
                 scene.addKeyframe();

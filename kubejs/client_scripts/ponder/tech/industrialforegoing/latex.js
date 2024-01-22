@@ -39,9 +39,13 @@ onEvent('ponder.registry', (event) => {
                 scene.idle(60);
 
                 // hide basically everything except for the acacia log
-                scene
-                    .world()
-                    .hideSection(util.select().layersFrom(1).substract(util.select().position(4, 1, 4)), Facing.up);
+                scene.world().hideSection(
+                    util
+                        .select()
+                        .layersFrom(1)
+                        .substract(util.select().position(4, 1, 4)),
+                    Facing.up
+                );
 
                 scene.idle(10);
 

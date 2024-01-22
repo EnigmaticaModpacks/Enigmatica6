@@ -20,6 +20,7 @@ onEvent('item.tooltip', (event) => {
     .white()
     .color('#808080') //any hex color
     */
+    const id_prefix = 'tooltips.enigmatica.base.';
     const recipes = [
         {
             items: [
@@ -27,7 +28,7 @@ onEvent('item.tooltip', (event) => {
                 'integratedtunnels:part_importer_fluid',
                 'integratedtunnels:part_exporter_fluid'
             ],
-            text: [Text.of('Max Fluid Transfer Rate has been limited to 65,536 mb per tick.').red()]
+            text: [Text.translate(`${id_prefix}integratedtunnels_fluid`).red()]
         },
         {
             items: [
@@ -35,27 +36,27 @@ onEvent('item.tooltip', (event) => {
                 'integratedtunnels:part_importer_energy',
                 'integratedtunnels:part_exporter_energy'
             ],
-            text: [Text.of('Max Energy Transfer Rate has been limited to 65,536 FE per tick.').red()]
+            text: [Text.translate(`${id_prefix}integratedtunnels_energy`).red()]
         },
         {
             items: ['powah:charged_snowball', 'thermal:lightning_charge'],
-            text: [Text.of('Calls down a lightning bolt on impact.').gold()]
+            text: [Text.translate(`${id_prefix}lightning_charge`).gold()]
         },
         {
             items: ['kubejs:altered_recipe_indicator'],
-            text: [Text.of('Recipe altered for Enigmatica 6: Expert. Refer to JEI.').gold()]
+            text: [Text.translate(`${id_prefix}altered_recipe_indicator`).gold()]
         },
         {
             items: ['kubejs:disabled_recipe_indicator'],
-            text: [Text.of('Recipe disabled for Enigmatica 6').gold()]
+            text: [Text.translate(`${id_prefix}disabled_recipe_indicator`).gold()]
         },
         {
             items: ['tconstruct:crafting_station', 'tconstruct:part_builder', 'tconstruct:tinker_station'],
-            text: [Text.of('Craftable with any wood.').gold()]
+            text: [Text.translate(`${id_prefix}tcon_station`).gold()]
         },
         {
             items: ['tconstruct:scorched_anvil', 'tconstruct:tinkers_anvil'],
-            text: [Text.of('Craftable with any alloy blocks.').gold()]
+            text: [Text.translate(`${id_prefix}tcon_anvil`).gold()]
         },
         {
             items: [
@@ -72,15 +73,15 @@ onEvent('item.tooltip', (event) => {
                 'thermal:obsidian_glass',
                 'engineersdecor:panzerglass_block'
             ],
-            text: [Text.of('Immune to the Wither').color('#4F0D75')]
+            text: [Text.translate(`${id_prefix}wither_immune`).color('#4F0D75')]
         },
         {
             items: ['modularrouters:blast_upgrade'],
-            text: [Text.of('Renders routers immune to the Wither').color('#4F0D75')]
+            text: [Text.translate(`${id_prefix}blast_upgrade`).color('#4F0D75')]
         },
         {
             items: ['astralsorcery:illumination_wand'],
-            text: [Text.of('Renders blocks immune to the Wither').color('#4F0D75')]
+            text: [Text.translate(`${id_prefix}illumination_wand`).color('#4F0D75')]
         },
         {
             items: [
@@ -89,51 +90,51 @@ onEvent('item.tooltip', (event) => {
                 'rftoolsbuilder:shield_block2',
                 'rftoolsbuilder:shield_block1'
             ],
-            text: [Text.of('Shield Projections are immune to the Wither').color('#4F0D75')]
+            text: [Text.translate(`${id_prefix}shield_block`).color('#4F0D75')]
         },
         {
             items: [/bloodmagic:quick_draw_anointment/],
-            text: [Text.of('Grants Quick-Draw on Bows and Crossbows').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}quick_draw_anointment`).color('#7e24b3')]
         },
         {
             items: [/bloodmagic:fortune_anointment/],
-            text: [Text.of('Grants additional Fortune on Tools').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}fortune_anointment`).color('#7e24b3')]
         },
         {
             items: [/bloodmagic:holy_water_anointment/],
-            text: [Text.of('Grants bonus Smite damage on Melee Attacks.').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}holy_water_anointment`).color('#7e24b3')]
         },
         {
             items: [/bloodmagic:melee_anointment/],
-            text: [Text.of('Grants bonus damage on Melee Attacks').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}melee_anointment`).color('#7e24b3')]
         },
         {
             items: [/bloodmagic:bow_power_anointment/],
-            text: [Text.of('Grants bonus damage on Bows and Crossbows').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}bow_power_anointment`).color('#7e24b3')]
         },
         {
             items: [/bloodmagic:silk_touch_anointment/],
-            text: [Text.of('Grants Silk Touch').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}silk_touch_anointment`).color('#7e24b3')]
         },
         {
             items: [/bloodmagic:hidden_knowledge_anointment/],
-            text: [Text.of('Grants bonus Experience from block harvests.').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}hidden_knowledge_anointment`).color('#7e24b3')]
         },
         {
             items: [/bloodmagic:smelting_anointment/],
-            text: [Text.of('Grants Auto Smelt').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}smelting_anointment`).color('#7e24b3')]
         },
         {
             items: [/bloodmagic:looting_anointment/],
-            text: [Text.of('Grants additional Looting on Weapons').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}looting_anointment`).color('#7e24b3')]
         },
         {
             items: [/bloodmagic:bow_velocity_anointment/],
-            text: [Text.of('Grants additional projectile velocity on Bows and Crossbows').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}bow_velocity_anointment`).color('#7e24b3')]
         },
         {
             items: ['#enigmatica:burning_hot'],
-            text: [Text.of('Extremely hot!').darkRed()]
+            text: [Text.translate(`${id_prefix}burning_hot`).darkRed()]
         },
         {
             items: [
@@ -142,39 +143,35 @@ onEvent('item.tooltip', (event) => {
                 'resourcefulbees:t3_beehive',
                 'resourcefulbees:t4_beehive'
             ],
-            text: [
-                Text.of(`Tiered Beehives have been depreciated.`).red(),
-                Text.of(`Use the Hive Upgrade items on nests found in the world instead.`).red(),
-                Text.of(`Tiered Beehives can be converted to Hive Upgrades in a crafting grid.`).red()
-            ]
+            text: [Text.translate(`${id_prefix}beehive`).red()]
         },
         {
             items: [/natures\w+:\w+_generator/],
-            text: [Text.of(`Aura Generator`).green()]
+            text: [Text.translate(`${id_prefix}aura_generator`).green()]
         },
         {
             items: ['clockout:clockout_block'],
-            text: [Text.of(`Outputs redstone when the player is online.`).aqua()]
+            text: [Text.translate(`${id_prefix}clockout_block`).aqua()]
         },
         {
             items: ['kubejs:soggy_treasure_box'],
-            text: [Text.of(`The lock appears broken... What could be inside?`).darkAqua()]
+            text: [Text.translate(`${id_prefix}soggy_treasure_box`).darkAqua()]
         },
         {
             items: [/masterfulmachinery:\w+_mana_port/],
-            text: [Text.of(`Compatible with Mana Spreaders and Sparks.`).green()]
+            text: [Text.translate(`${id_prefix}mm_mana_port`).green()]
         },
         {
             items: ['kubejs:amadron_survey_tools'],
-            text: [Text.of(`Tools used by Amadron Drones to gather rare resources.`).aqua()]
+            text: [Text.translate(`${id_prefix}amadron_survey_tools`).aqua()]
         },
         {
             items: ['kubejs:monster_mash'],
-            text: [Text.of(`...It caught on in a flash...`).red()]
+            text: [Text.translate(`${id_prefix}monster_mash`).red()]
         },
         {
             items: ['refinedstorage:silk_touch_upgrade'],
-            text: [Text.of('Does not work on spawners.').red()]
+            text: [Text.translate(`${id_prefix}rs_silk_touch_upgrade`).red()]
         },
         {
             items: [
@@ -182,16 +179,13 @@ onEvent('item.tooltip', (event) => {
                 'kubejs:crystalline_oak_leaves',
                 'kubejs:crystalline_dark_oak_wood'
             ],
-            text: [Text.of('Fireproof').gold()]
+            text: [Text.translate(`${id_prefix}crystalline`).gold()]
+        },
+        {
+            items: refinedStorageItems.map((item) => `refinedstorage:${item}`),
+            text: [Text.translate('descriptions.enigmatica.base.can_be_dyed')]
         }
     ];
-
-    refinedStorageItems.forEach((item) => {
-        recipes.push({
-            items: [`refinedstorage:${item}`],
-            text: ['Can be dyed through crafting or by right clicking it with dye in-world.']
-        });
-    });
 
     recipes.forEach((recipe) => {
         event.add(recipe.items, recipe.text);

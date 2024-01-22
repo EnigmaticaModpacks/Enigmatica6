@@ -1,14 +1,13 @@
 {
     "profession": "resourcefulbees:beekeeper",
     "replace": "false",
-    "trades": 
-    [
+    "trades": [
         {
             "level": 1,
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "minecraft:bee"},
+                "nbt": { "Entity": "minecraft:bee" },
                 "emerald_count": 6,
                 "count": 1,
                 "max_uses": 1,
@@ -20,7 +19,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:zombie_bee"},
+                "nbt": { "Entity": "resourcefulbees:rgbee_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -32,7 +31,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:water_bee"},
+                "nbt": { "Entity": "resourcefulbees:zombie_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -44,7 +43,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:slimy_bee"},
+                "nbt": { "Entity": "resourcefulbees:water_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -56,7 +55,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:skeleton_bee"},
+                "nbt": { "Entity": "resourcefulbees:slimy_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -68,7 +67,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:sand_bee"},
+                "nbt": { "Entity": "resourcefulbees:skeleton_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -80,7 +79,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:rocky_bee"},
+                "nbt": { "Entity": "resourcefulbees:sand_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -92,7 +91,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:icy_bee"},
+                "nbt": { "Entity": "resourcefulbees:rocky_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -104,7 +103,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:coal_bee"},
+                "nbt": { "Entity": "resourcefulbees:icy_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -116,7 +115,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:creeper_bee"},
+                "nbt": { "Entity": "resourcefulbees:coal_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -128,7 +127,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:forest_bee"},
+                "nbt": { "Entity": "resourcefulbees:creeper_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -140,7 +139,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:obsidian_bee"},
+                "nbt": { "Entity": "resourcefulbees:forest_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -152,7 +151,19 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:zombie_bee"},
+                "nbt": { "Entity": "resourcefulbees:obsidian_bee" },
+                "emerald_count": 64,
+                "count": 1,
+                "max_uses": 1,
+                "xp_value": 24
+            }
+        },
+        {
+            "level": 2,
+            "trade": {
+                "type": "minecraft:items_for_emeralds",
+                "item": "resourcefulbees:bee_jar",
+                "nbt": { "Entity": "resourcefulbees:zombie_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -164,7 +175,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:water_bee"},
+                "nbt": { "Entity": "resourcefulbees:rgbee_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -176,7 +187,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:slimy_bee"},
+                "nbt": { "Entity": "resourcefulbees:water_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -188,7 +199,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:skeleton_bee"},
+                "nbt": { "Entity": "resourcefulbees:slimy_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -200,7 +211,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:sand_bee"},
+                "nbt": { "Entity": "resourcefulbees:skeleton_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -212,7 +223,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:rocky_bee"},
+                "nbt": { "Entity": "resourcefulbees:sand_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -224,7 +235,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:icy_bee"},
+                "nbt": { "Entity": "resourcefulbees:rocky_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -236,7 +247,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:coal_bee"},
+                "nbt": { "Entity": "resourcefulbees:icy_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -248,7 +259,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:creeper_bee"},
+                "nbt": { "Entity": "resourcefulbees:coal_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -260,7 +271,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:forest_bee"},
+                "nbt": { "Entity": "resourcefulbees:creeper_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -272,7 +283,19 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:obsidian_bee"},
+                "nbt": { "Entity": "resourcefulbees:forest_bee" },
+                "emerald_count": 64,
+                "count": 1,
+                "max_uses": 1,
+                "xp_value": 24
+            }
+        },
+        {
+            "level": 3,
+            "trade": {
+                "type": "minecraft:items_for_emeralds",
+                "item": "resourcefulbees:bee_jar",
+                "nbt": { "Entity": "resourcefulbees:obsidian_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -284,7 +307,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:zombie_bee"},
+                "nbt": { "Entity": "resourcefulbees:rgbee_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -296,7 +319,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:water_bee"},
+                "nbt": { "Entity": "resourcefulbees:zombie_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -308,7 +331,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:slimy_bee"},
+                "nbt": { "Entity": "resourcefulbees:water_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -320,7 +343,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:skeleton_bee"},
+                "nbt": { "Entity": "resourcefulbees:slimy_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -332,7 +355,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:sand_bee"},
+                "nbt": { "Entity": "resourcefulbees:skeleton_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -344,7 +367,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:rocky_bee"},
+                "nbt": { "Entity": "resourcefulbees:sand_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -356,7 +379,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:icy_bee"},
+                "nbt": { "Entity": "resourcefulbees:rocky_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -368,7 +391,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:coal_bee"},
+                "nbt": { "Entity": "resourcefulbees:icy_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -380,7 +403,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:creeper_bee"},
+                "nbt": { "Entity": "resourcefulbees:coal_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -392,7 +415,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:forest_bee"},
+                "nbt": { "Entity": "resourcefulbees:creeper_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -404,7 +427,19 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:obsidian_bee"},
+                "nbt": { "Entity": "resourcefulbees:forest_bee" },
+                "emerald_count": 64,
+                "count": 1,
+                "max_uses": 1,
+                "xp_value": 24
+            }
+        },
+        {
+            "level": 4,
+            "trade": {
+                "type": "minecraft:items_for_emeralds",
+                "item": "resourcefulbees:bee_jar",
+                "nbt": { "Entity": "resourcefulbees:obsidian_bee" },
                 "emerald_count": 64,
                 "count": 1,
                 "max_uses": 1,
@@ -416,7 +451,19 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:zombie_bee"},
+                "nbt": { "Entity": "resourcefulbees:rgbee_bee" },
+                "emerald_count": 64,
+                "count": 1,
+                "max_uses": 1,
+                "xp_value": 24
+            }
+        },
+        {
+            "level": 5,
+            "trade": {
+                "type": "minecraft:items_for_emeralds",
+                "item": "resourcefulbees:bee_jar",
+                "nbt": { "Entity": "resourcefulbees:zombie_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,
@@ -428,7 +475,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:water_bee"},
+                "nbt": { "Entity": "resourcefulbees:water_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,
@@ -440,7 +487,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:slimy_bee"},
+                "nbt": { "Entity": "resourcefulbees:slimy_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,
@@ -452,7 +499,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:skeleton_bee"},
+                "nbt": { "Entity": "resourcefulbees:skeleton_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,
@@ -464,7 +511,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:sand_bee"},
+                "nbt": { "Entity": "resourcefulbees:sand_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,
@@ -476,7 +523,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:rocky_bee"},
+                "nbt": { "Entity": "resourcefulbees:rocky_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,
@@ -488,7 +535,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:icy_bee"},
+                "nbt": { "Entity": "resourcefulbees:icy_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,
@@ -500,7 +547,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:coal_bee"},
+                "nbt": { "Entity": "resourcefulbees:coal_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,
@@ -512,7 +559,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:creeper_bee"},
+                "nbt": { "Entity": "resourcefulbees:creeper_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,
@@ -524,7 +571,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:forest_bee"},
+                "nbt": { "Entity": "resourcefulbees:forest_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,
@@ -536,7 +583,7 @@
             "trade": {
                 "type": "minecraft:items_for_emeralds",
                 "item": "resourcefulbees:bee_jar",
-                "nbt": {"Entity": "resourcefulbees:obsidian_bee"},
+                "nbt": { "Entity": "resourcefulbees:obsidian_bee" },
                 "emerald_count": 32,
                 "count": 1,
                 "max_uses": 1,

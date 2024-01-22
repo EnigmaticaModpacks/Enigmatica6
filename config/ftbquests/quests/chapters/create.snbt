@@ -108,7 +108,30 @@
 				{
 					id: "0000000000000CC1"
 					type: "item"
-					item: "create:white_sail"
+					title: "Sails"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "itemfilters:tag"
+									Count: 1b
+									tag: {
+										value: "forge:wool"
+									}
+								}
+								{
+									id: "create:sail_frame"
+									Count: 1b
+								}
+								{
+									id: "create:white_sail"
+									Count: 1b
+								}
+							]
+						}
+					}
 					count: 32L
 				}
 			]
@@ -1531,7 +1554,7 @@
 		{
 			x: 12.0d
 			y: 6.0d
-			subtitle: "It Has It's Ups and Downs"
+			subtitle: "It Has Its Ups and Downs"
 			description: [
 				"Need a Lift? "
 				""

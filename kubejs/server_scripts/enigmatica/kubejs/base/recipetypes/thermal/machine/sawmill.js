@@ -35,6 +35,14 @@ onEvent('recipes', (event) => {
             input: ['astralsorcery:infused_wood'],
             outputs: [Item.of('6x astralsorcery:infused_wood_planks'), Item.of('astralsorcery:stardust').chance(0.01)],
             id: `${id_prefix}infused_wood_planks_from_infused_wood`
+        },
+        {
+            input: ['#forge:storage_blocks/quartz'],
+            outputs: [
+                Item.of('2x pneumaticcraft:aphorism_tile'),
+                Item.of('emendatusenigmatica:quartz_dust').chance(0.375)
+            ],
+            id: `${id_prefix}aphorism_tile`
         }
     ];
 

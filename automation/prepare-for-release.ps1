@@ -42,15 +42,11 @@ function Close-FixedIssues {
 
 }
 function Merge-DevelopIntoMasterPrompt {
-    Write-Host "Please Develop into Master, and then Master into Develop"
-    Write-Host "Make sure you have no unsaved changes!" -ForegroundColor Red
-    Write-Host "Ctrl+C to exit"
+    Write-Host "Please Merge Develop into Master, and then Master into Develop"
 }
 
 Validate-SecretsFile
 Close-FixedIssues
 Merge-DevelopIntoMasterPrompt
 
-# Flow:
-# close all `Status: Fixed In Next Release` issues
-# merge develop into master and master into develop afterwards
+# just closes all `Status: Fixed In Next Release` issues
