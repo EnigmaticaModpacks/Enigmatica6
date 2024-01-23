@@ -497,12 +497,7 @@ onEvent('item.registry', (event) => {
     });
 
     // Custom Occultism Miners
-    event
-        .create('fisher_foliot')
-        .group('KubeJS')
-        .texture('kubejs:item/magic_lamp')
-        .maxStackSize(1)
-        .maxDamage(500);
+    event.create('fisher_foliot').group('KubeJS').texture('kubejs:item/magic_lamp').maxStackSize(1).maxDamage(500);
     event
         .create('miner_marid_irradiated')
         .group('KubeJS')
