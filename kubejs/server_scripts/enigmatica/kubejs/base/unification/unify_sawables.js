@@ -47,28 +47,13 @@ function create_cutting(event, variant, sawDust, treeBark) {
     };
 
     data.recipes.forEach((recipe) => {
-        fallback_id(
-            event.recipes.create.cutting({
-                type: 'create:cutting',
-                ingredients: [
-                    {
-                        item: recipe.input
-                    }
-                ],
-                results: [
-                    {
-                        item: recipe.output,
-                        count: recipe.count
-                    },
-                    {
-                        item: recipe.secondaryOutput,
-                        count: 1
-                    }
-                ],
-                processingTime: recipe.time
-            }),
-            `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`
-        );
+        const builder = event.recipes.create
+            .cutting(
+                [Item.of(recipe.output, recipe.count), Item.of(recipe.secondaryOutput, 1)],
+                recipe.input
+            )
+            .processingTime(recipe.time);
+        fallback_id(builder, `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`);
     });
 }
 
