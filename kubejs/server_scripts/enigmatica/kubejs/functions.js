@@ -1,18 +1,8 @@
 //priority: 1005
 
-function shapedRecipe(result, pattern, key, id) {
-    return { result: result, pattern: pattern, key: key, id: id };
-}
-
-function shapelessRecipe(result, ingredients, id) {
-    return { result: result, ingredients: ingredients, id: id };
-}
-function unificationBlacklistEntry(material, type) {
-    return { material: material, type: type };
-}
 function entryIsBlacklisted(material, type) {
-    for (var i = 0; i < unificationBlacklist.length; i++) {
-        if (unificationBlacklist[i].material == material && unificationBlacklist[i].type == type) {
+    for (let blacklistEntry of unificationBlacklist) {
+        if (blacklistEntry.material == material && blacklistEntry.type == type) {
             return true;
         }
     }
@@ -24,18 +14,17 @@ function tagIsEmpty(tag) {
 }
 
 function getPreferredItemInTag(tag) {
-    let pref =
-        utils
-            .listOf(tag.stacks)
-            .toArray()
-            .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air);
-    return pref;
+    const items = getItemsInTag(tag);
+    if (items.empty) {
+        return Item.of(air);
+    }
+    return items.sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0];
 }
 
 function getItemsInTag(tag) {
-    let items = utils.listOf(tag.stacks).toArray();
-    return items;
+    return tag.stacks.toArray();
 }
+
 function compareIndices(a, b, tag) {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
@@ -49,24 +38,22 @@ function compareIndices(a, b, tag) {
 }
 
 function getStrippedLogFrom(logBlock) {
-    let result = air;
-    buildWoodVariants.find((wood) => {
+    for (let wood of buildWoodVariants) {
         if (wood.logBlock == logBlock) {
-            result = wood.logBlockStripped;
-            return result;
+            return wood.logBlockStripped;
         }
-    });
-    return result;
+    }
+    return air;
 }
 
 const unificationBlacklist = [
-    unificationBlacklistEntry('quartz', 'gem'),
-    unificationBlacklistEntry('quartz', 'storage_block')
+    { material: 'quartz', type: 'gem' },
+    { material: 'quartz', type: 'storage_block' }
 ];
 
-const playerHas = (item, player) => {
+function playerHas(item, player) {
     return player.inventory.find(item) != -1;
-};
+}
 
 // lt  = .slice(0, index)
 // lte = .slice(0, index + 1)
