@@ -38,6 +38,11 @@ function titleCase(str) {
         .join(' ');
 }
 
+/**
+ * @param {string} material 
+ * @param {string} type 
+ * @see unificationBlacklist
+ */
 function entryIsBlacklisted(material, type) {
     for (let blacklistEntry of unificationBlacklist) {
         if (blacklistEntry.material == material && blacklistEntry.type == type) {
@@ -47,6 +52,9 @@ function entryIsBlacklisted(material, type) {
     return false;
 }
 
+/**
+ * @param {string} tag
+ */
 function tagIsEmpty(tag) {
     return getPreferredItemInTag(Ingredient.of(tag)).id == air;
 }
@@ -67,10 +75,19 @@ function getPreferredItemInTag(tag) {
     return maxOf(items, (a, b) => -compareIndices(a.mod, b.mod, tag));
 }
 
+/**
+ * @param {Internal.IngredientJS} tag 
+ */
 function getItemsInTag(tag) {
     return tag.stacks.toArray();
 }
 
+/**
+ * @param {string} a 
+ * @param {string} b 
+ * @param {string} tag 
+ * @see modPriorities
+*/
 function compareIndices(a, b, tag) {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
@@ -83,6 +100,10 @@ function compareIndices(a, b, tag) {
     return 0;
 }
 
+/**
+ * @param {string} logBlock 
+ * @see buildWoodVariants
+ */
 function getStrippedLogFrom(logBlock) {
     for (let wood of buildWoodVariants) {
         if (wood.logBlock == logBlock) {
@@ -110,7 +131,11 @@ function lowerTiers(tiers, tier) {
     return tiers.slice(0, tiers.indexOf(tier));
 }
 
-// transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
+/**
+ * transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
+ * @param {Internal.RecipeJS} recipe
+ * @param {string} id_prefix
+ */
 function fallback_id(recipe, id_prefix) {
     if (recipe.getId().includes(':kjs_')) {
         recipe.serializeJson(); // without this the hashes *will* collide
