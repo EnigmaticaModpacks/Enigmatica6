@@ -8,6 +8,16 @@ function randomOf(entries) {
     return Utils.randomOf(Utils.getRandom(), entries);
 }
 
+/**
+ * @param {string} str
+ */
+function titleCase(str) {
+    return str
+        .split(' ')
+        .map((part) => part.charAt(0).toUpperCase() + part.substring(1))
+        .join(' ');
+}
+
 function entryIsBlacklisted(material, type) {
     for (let blacklistEntry of unificationBlacklist) {
         if (blacklistEntry.material == material && blacklistEntry.type == type) {
