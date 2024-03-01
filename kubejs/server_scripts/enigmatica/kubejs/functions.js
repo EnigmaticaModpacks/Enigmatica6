@@ -1,5 +1,13 @@
 //priority: 1005
 
+/**
+ * @param {any[]|Internal.Collection<any>} entries
+ */
+function randomOf(entries) {
+    // @ts-ignore
+    return Utils.randomOf(Utils.getRandom(), entries);
+}
+
 function entryIsBlacklisted(material, type) {
     for (let blacklistEntry of unificationBlacklist) {
         if (blacklistEntry.material == material && blacklistEntry.type == type) {
