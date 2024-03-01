@@ -670,7 +670,3 @@ onEvent('ponder.registry', (event) => {
             }
         );
 });
-
-function randomOf(ingr) {
-    return Utils.randomOf(Utils.random, ingr.stacks);
-}
