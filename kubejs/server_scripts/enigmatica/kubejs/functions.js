@@ -9,6 +9,26 @@ function randomOf(entries) {
 }
 
 /**
+ * @param {any[]} list
+ * @param {null|((a:any,b:any)=>number)} comparator If not specified, will use `(a, b) => a - b`
+ */
+function maxOf(list, comparator) {
+    if (list.length == 0) {
+        return null;
+    }
+    if (!comparator) {
+        comparator = (a, b) => a - b;
+    }
+    let targetIndex = 0;
+    for (let i = 1; i < list.length; i++) {
+        if (comparator(list[i], list[targetIndex]) > 0) {
+            targetIndex = i;
+        }
+    }
+    return list[targetIndex];
+}
+
+/**
  * @param {string} str
  */
 function titleCase(str) {
@@ -31,12 +51,20 @@ function tagIsEmpty(tag) {
     return getPreferredItemInTag(Ingredient.of(tag)).id == air;
 }
 
+/**
+ * get the most prefered item in a tag based on priorities from variable `modPriorities`
+ * @see modPriorities
+ * @param {Internal.IngredientJS} tag
+ * @returns {Internal.ItemStackJS}
+ */
 function getPreferredItemInTag(tag) {
     const items = getItemsInTag(tag);
-    if (items.empty) {
+    if (items.length == 0) {
         return Item.of(air);
     }
-    return items.sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0];
+    //use "max" instead of "sorting", to decrease time complexity from O(n*log(n)) to O(n)
+    //being "bigger" here means having smaller index, which means -1, so there's an `-`
+    return maxOf(items, (a, b) => -compareIndices(a.mod, b.mod, tag));
 }
 
 function getItemsInTag(tag) {
