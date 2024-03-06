@@ -149,6 +149,7 @@ jobs:
       # We're using a forked KubeJS because the origianl one has reached its
       # end of support, and the most recent, unreleased change is causing crash
       # in such old codebase
+      # For details, see https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5445
       - run: git clone --branch 1605 https://github.com/ZZZank/KubeJS.git
       - run: git apply ../.github/actions/ci/patches/kubejs.patch
         working-directory: KubeJS
