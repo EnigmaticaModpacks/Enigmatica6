@@ -1,3 +1,9 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.10.0
+
+**Bug fixes**
+
+-   Fix IE assembler being unable to craft capacitors [\#5427](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5427) ([Kanzaji](https://github.com/Kanzaji))
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.9.0
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/changelog_mods_1.9.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/modlist_1.9.0.md)_
