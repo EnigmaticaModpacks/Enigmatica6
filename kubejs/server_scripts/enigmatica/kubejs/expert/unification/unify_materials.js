@@ -21,13 +21,13 @@ onEvent('recipes', (event) => {
         var levigated_material = getPreferredItemInTag(Ingredient.of(`#enigmatica:levigated_materials/${material}`)).id;
         var crystalline_sliver = getPreferredItemInTag(Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)).id;
 
-        ore_ingot_smelting(event, material, ore, ingot);
-        gear_unification(event, material, ingot, gem, gear);
-        rod_unification(event, material, ingot, gem, rod, plate);
-        plate_unification(event, material, ingot, gem, plate);
-        wire_unification(event, material, ingot, gem, wire, plate);
+        ore_ingot_smelting(material, ore, ingot);
+        gear_unification(material, ingot, gem, gear);
+        rod_unification(material, ingot, gem, rod, plate);
+        plate_unification(material, ingot, gem, plate);
+        wire_unification(material, ingot, gem, wire, plate);
 
-        immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot);
+        immersiveengineering_ore_processing_with_secondary_outputs(material, ore, crushed_ore, ingot);
 
         magical_ore_processing(
             event,
@@ -42,7 +42,7 @@ onEvent('recipes', (event) => {
         );
     });
 
-    function ore_ingot_smelting(event, material, ore, ingot) {
+    function ore_ingot_smelting(material, ore, ingot) {
         if (ore == air || ingot == air) {
             return;
         }
@@ -64,7 +64,7 @@ onEvent('recipes', (event) => {
         event.recipes.thermal.furnace(output, input).id(`${id_prefix}furnace/${material}/ingot/from_ore`);
     }
 
-    function gear_unification(event, material, ingot, gem, gear) {
+    function gear_unification(material, ingot, gem, gear) {
         if (gear == air) {
             return;
         }
@@ -100,7 +100,7 @@ onEvent('recipes', (event) => {
             .id(`kubejs:crafting_shaped_${material}_gear`);
     }
 
-    function rod_unification(event, material, ingot, gem, rod) {
+    function rod_unification(material, ingot, gem, rod) {
         if (rod == air) {
             return;
         }
@@ -132,7 +132,7 @@ onEvent('recipes', (event) => {
         event.shapeless(output, [plateTag, hammer, plateTag]).id(`kubejs:shapeless_crafting_${material}_rod`);
     }
 
-    function plate_unification(event, material, ingot, gem, plate) {
+    function plate_unification(material, ingot, gem, plate) {
         if (plate == air) {
             return;
         }
@@ -166,7 +166,7 @@ onEvent('recipes', (event) => {
             .id(`thermal:machine/press/press_${material}_ingot_to_plate`);
     }
 
-    function wire_unification(event, material, ingot, gem, wire, plate) {
+    function wire_unification(material, ingot, gem, wire, plate) {
         if (wire == air) {
             return;
         }
@@ -197,7 +197,7 @@ onEvent('recipes', (event) => {
         event.shapeless(Item.of(output, 2), [plate, plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
     }
 
-    function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot) {
+    function immersiveengineering_ore_processing_with_secondary_outputs(material, ore, crushed_ore, ingot) {
         if (ore == air || crushed_ore == air || ingot == air) {
             return;
         }
