@@ -2,7 +2,7 @@
 
 **Improvements**
 
--   Add new recipe for converting Celestial Combs to Starmetal [\#5447](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5447) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add new recipe for converting Celestial Combs to Starmetal [\#5458](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5458) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### Enigmatica 6 & Enigmatica 6: Expert v1.10.0
 
