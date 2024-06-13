@@ -9,21 +9,65 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Enigmatica 6: Expert Mode"
+			icon: {
+				id: "trofers:large_trophy"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						Item: {
+							id: "kubejs:disabled_recipe_indicator"
+							Count: 1b
+						}
+						DisplayHeight: "2.0f.0f"
+						Colors: {
+							Bottom: {
+								Red: 249
+								Blue: 254
+								Green: 255
+							}
+							Top: {
+								Red: 249
+								Blue: 254
+								Green: 255
+							}
+							Middle: {
+								Red: 249
+								Blue: 254
+								Green: 255
+							}
+						}
+						Animation: "spinning"
+						AnimationSpeed: 0.3f
+						Name: "Enigmatica 6: Expert Mode"
+					}
+				}
+			}
 			x: 0.0d
 			y: -6.0d
 			shape: "gear"
-			description: ["Obtaining the Creative Worldshaper is the ultimate goal - Complete this quest and you complete the modpack!"]
-			dependencies: ["0000000000000FEB"]
+			description: ["Complete this quest and you complete the modpack!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"0000000000000FEB"
+				"4AB9649C1D2FE587"
+				"2A79C4CDDA045886"
+				"477CEC2E3F4736C3"
+				"5A9BCC1CC2CC3E0C"
+				"36CDE03E505E0F94"
+				"6218AF7644C178A7"
+				"3AB61B2854483CE3"
+				"72C894BE4081603D"
+				"188BE70C3D176BCA"
+				"474DFFBB63FE90BA"
+				"5DA9A0C75EA47DFF"
+				"65F9021D56312C9B"
+			]
 			hide: true
 			size: 2.0d
 			id: "6D3FE88DB30DEE00"
 			tasks: [{
-				id: "446147A7DA834368"
-				type: "item"
-				item: "create:handheld_worldshaper"
-			}]
-			rewards: [{
-				id: "3A52EC072B3445A2"
+				id: "5B2746EDF1169F12"
 				type: "item"
 				item: {
 					id: "trofers:large_trophy"

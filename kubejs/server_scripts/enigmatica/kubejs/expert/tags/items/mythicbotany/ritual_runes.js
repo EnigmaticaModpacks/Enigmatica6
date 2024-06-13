@@ -17,11 +17,8 @@ onEvent('item.tags', (event) => {
             'kubejs:crystalline_flowering_palo_verde_leaves',
             'naturesaura:generator_limit_remover',
             'quark:root_item',
-            'mekanism:pellet_antimatter',
-            'mekanism:ultimate_control_circuit',
             'kubejs:laputian_ingot',
-            'botania:mana_diamond_block',
-            'botania:dragonstone_block',
-            'powah:ender_core'
+            'minecraft:conduit',
+            /kubejs:.*_mastery_token/
         ]);
 });
