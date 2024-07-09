@@ -10,6 +10,8 @@
 **Bug fixes**
 
 -   Fix IE assembler being unable to craft capacitors [\#5447](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5447) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix issues with Necrotic Bones in Tinker's quests [\#5464](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5464) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Remove invalid scene from hive ponder [\#5464](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5464) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### Enigmatica 6 & Enigmatica 6: Expert v1.9.0
 
