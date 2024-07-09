@@ -191,39 +191,39 @@ onEvent('ponder.registry', (event) => {
 
             scene.world().destroyBlock([1, 1, 1]);
 
-            scene.addKeyframe();
+            // scene.addKeyframe();
+            // scene
+            //     .overlay()
+            //     .showText(60)
+            //     .colored(PonderPalette.WHITE)
+            //     .text('It can also mutate a block of coal into a Steel Bee Egg.')
+            //     .independent(30);
 
-            scene
-                .overlay()
-                .showText(60)
-                .colored(PonderPalette.WHITE)
-                .text('It can also mutate a block of coal into a Steel Bee Egg.')
-                .independent(30);
+            // scene.idle(20);
 
-            scene.idle(20);
+            // scene.world().setBlock([1, 1, 1], util.getDefaultState('minecraft:coal_block'), true);
 
-            scene.world().setBlock([1, 1, 1], util.getDefaultState('minecraft:coal_block'), true);
+            // scene.idle(40);
 
-            scene.idle(40);
+            // scene.world().destroyBlock([1, 1, 1]);
+            // scene.idle(1);
+            // spawnEgg = scene
+            //     .world()
+            //     .createItemEntity([1, 1.5, 1], [0, 0, 0], Item.of('resourcefulbees:steel_bee_spawn_egg'));
 
-            scene.world().destroyBlock([1, 1, 1]);
-            scene.idle(1);
-            spawnEgg = scene
-                .world()
-                .createItemEntity([1, 1.5, 1], [0, 0, 0], Item.of('resourcefulbees:steel_bee_spawn_egg'));
+            // scene.idle(40);
 
-            scene.idle(40);
-
-            scene.addKeyframe();
-
+            // scene.world().modifyEntity(spawnEgg, (e) => {
+            //     e.mergeFullNBT({ Pos: [2, -1, 2] });
+            //     e.kill();
+            // });
             scene.world().modifyEntity(ironBee, (e) => {
                 e.mergeFullNBT({ Pos: [1.5, 0, 1.5] });
                 e.kill();
             });
-            scene.world().modifyEntity(spawnEgg, (e) => {
-                e.mergeFullNBT({ Pos: [2, -1, 2] });
-                e.kill();
-            });
+
+            scene.addKeyframe();
+
             scene.idle(20);
             var icyBee = scene.world().createEntity('resourcefulbees:icy_bee', [1.5, 4, 1.5]);
             scene.world().modifyEntity(icyBee, (e) => {
