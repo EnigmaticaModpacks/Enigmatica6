@@ -3262,7 +3262,14 @@
 			tasks: [{
 				id: "7C1FCB8F38A3F12E"
 				type: "item"
-				item: "tconstruct:necrotic_bone"
+				title: "Necrotic Bones"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:bones/wither"
+					}
+				}
 				count: 3L
 			}]
 			rewards: [{
