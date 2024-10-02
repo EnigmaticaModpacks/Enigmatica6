@@ -1,0 +1,157 @@
+
+#Warning: Disabling a feature may disable other features depending on it.
+[features]
+
+	[features.Facades]
+		#Unsupported: Allows whitelisting TileEntity as facades. Could work, have render issues, or corrupt your world. USE AT YOUR OWN RISK.
+		TileEntityFacades = false
+
+	[features.Misc]
+		#No comment
+		UnsupportedDeveloperTools = false
+		#No comment
+		IntegrationLogging = false
+		#No comment
+		WebsiteRecipes = false
+		#No comment
+		LogSecurityAudits = false
+		#No comment
+		UpdateLogging = false
+		#No comment
+		PacketLogging = false
+		#No comment
+		CraftingLog = false
+		#No comment
+		DebugLogging = false
+
+	[features.Crafting]
+		#No comment
+		EnableFacadeCrafting = true
+		#No comment
+		InWorldSingularity = true
+		#No comment
+		InWorldFluix = false
+		#No comment
+		InWorldPurification = false
+		#No comment
+		EnableDisassemblyCrafting = true
+
+	[features.World]
+		#No comment
+		CertusQuartzWorldGen = false
+		#No comment
+		MeteoriteWorldGen = false
+		#No comment
+		SpawnPressesInMeteorites = false
+		#No comment
+		VillagerTrading = false
+
+	[features.Rendering]
+		#No comment
+		AlphaPass = true
+
+	[features.Commands]
+		#No comment
+		ChunkLoggerTrace = false
+
+[general]
+	#Will auto-remove items that crash when being loaded from storage. This will destroy those items instead of crashing the game!
+	removeCrashingItemsOnLoad = false
+
+[automation]
+	#TODO
+	formationPlaneEntityLimit = 128
+
+[craftingCPU]
+	craftingCalculationTimePerTick = 5
+
+[spatialio]
+	spatialPowerMultiplier = 1250.0
+	spatialPowerExponent = 1.35
+	#BE CAREFUL, CAN CORRUPT YOUR WORLD! Will use #spatial/whitelist as whitelist.
+	spatialBlockTags = false
+
+[GrindStone]
+	#Chance to actually get an output with stacksize > 1.
+	#Range: 0.0 ~ 100.0
+	oreDoublePercentage = 90.0
+
+[battery]
+	wirelessTerminal = 1600000
+	chargedStaff = 8000
+	entropyManipulator = 200000
+	portableCell = 20000
+	colorApplicator = 20000
+	matterCannon = 200000
+
+[worldGen]
+	#Range: 0.0 ~ 1.0
+	spawnChargedChance = 0.0
+	meteoriteBiomeBlacklist = []
+	quartzOresPerCluster = 0
+	quartzOresClusterAmount = 0
+	quartzOresBiomeBlacklist = []
+
+[wireless]
+	wirelessBaseCost = 8.0
+	wirelessCostMultiplier = 1.0
+	wirelessBaseRange = 64.0
+	wirelessBoosterRangeMultiplier = 1.0
+	wirelessBoosterExp = 1.5
+	wirelessHighWirelessCount = 64.0
+	wirelessTerminalDrainMultiplier = 1.0
+
+[PowerRatios]
+	ForgeEnergy = 0.5
+	#Range: 0.01 ~ 1.7976931348623157E308
+	UsageMultiplier = 40.0
+
+[Condenser]
+	MatterBalls = 256
+	Singularity = 256000
+
+# Min / Max Tickrates for dynamic ticking, most of these components also use sleeping, to prevent constant ticking, adjust with care, non standard rates are not supported or tested.
+[tickRates]
+	InterfaceMin = 5
+	InterfaceMax = 120
+	ImportBusMin = 5
+	ImportBusMax = 40
+	FluidImportBusMin = 5
+	FluidImportBusMax = 40
+	ExportBusMin = 5
+	ExportBusMax = 60
+	FluidExportBusMin = 5
+	FluidExportBusMax = 60
+	AnnihilationPlaneMin = 2
+	AnnihilationPlaneMax = 120
+	METunnelMin = 5
+	METunnelMax = 20
+	InscriberMin = 1
+	InscriberMax = 1
+	ChargerMin = 10
+	ChargerMax = 120
+	IOPortMin = 1
+	IOPortMax = 5
+	VibrationChamberMin = 10
+	VibrationChamberMax = 40
+	StorageBusMin = 5
+	StorageBusMax = 60
+	FluidStorageBusMin = 5
+	FluidStorageBusMax = 60
+	ItemTunnelMin = 5
+	ItemTunnelMax = 60
+	LightTunnelMin = 5
+	LightTunnelMax = 60
+	OpenComputersTunnelMin = 1
+	OpenComputersTunnelMax = 5
+	PressureTunnelMin = 1
+	PressureTunnelMax = 120
+
+#Settings for in-world purification of crystals.
+[inWorldPurification]
+	#A fluid tag that identifies fluids that improve crystal purification speed. Does not affect purification with water/lava.
+	improvedFluidTag = ""
+	#The speed multiplier to use when the crystals are submerged in the improved fluid.
+	#Range: 1.0 ~ 10.0
+	improvedFluidMultiplier = 2.0
+
