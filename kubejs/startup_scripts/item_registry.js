@@ -78,9 +78,6 @@ onEvent('item.registry', (event) => {
         'aura_mastery_token',
         'culinary_mastery_token',
 
-        'worldshaper_handle',
-        'worldshaper_cog',
-        'worldshaper_barrel',
         'laputian_ingot',
 
         'partial_alloybrick',
