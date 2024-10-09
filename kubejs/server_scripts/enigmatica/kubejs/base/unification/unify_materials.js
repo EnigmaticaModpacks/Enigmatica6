@@ -29,31 +29,31 @@ onEvent('recipes', (event) => {
 
         let coin = getPreferredItemInTag(Ingredient.of(`#forge:coins/${material}`)).id;
 
-        astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard);
+        astralsorcery_ore_processing_infuser(material, ore, ingot, gem, shard);
 
-        betterend_alloys(event, material, ore, ingot);
+        betterend_alloys(material, ore, ingot);
 
-        bloodmagic_metal_ore_processing(event, material, ore, fragment, gravel, dust, ingot);
-        bloodmagic_gem_ore_processing(event, material, ore, gem, shard, dust);
-        bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem);
+        bloodmagic_metal_ore_processing(material, ore, fragment, gravel, dust, ingot);
+        bloodmagic_gem_ore_processing(material, ore, gem, shard, dust);
+        bloodmagic_ingot_gem_crushing(material, ingot, dust, gem);
 
-        create_metal_ore_processing(event, material, ore, crushed_ore, ingot, nugget);
-        create_gem_ore_processing(event, material, ore, gem, dust, shard);
-        create_ingot_gem_milling(event, material, ingot, dust, gem);
-        create_metal_block_processing(event, material, crushed_ore, ingot, nugget);
+        create_metal_ore_processing(material, ore, crushed_ore, ingot, nugget);
+        create_gem_ore_processing(material, ore, gem, dust, shard);
+        create_ingot_gem_milling(material, ingot, dust, gem);
+        create_metal_block_processing(material, crushed_ore, ingot, nugget);
 
-        emendatus_item_melting(event, material, ore, block, ingot, nugget, gem, dust, gear, rod, plate);
-        emendatus_hammer_crushing(event, material, ore, dust);
-        emendatus_shapeless_transform(event, material, ore, chunk);
+        emendatus_item_melting(material, ore, block, ingot, nugget, gem, dust, gear, rod, plate);
+        emendatus_hammer_crushing(material, ore, dust);
+        emendatus_shapeless_transform(material, ore, chunk);
 
-        immersiveengineering_ingot_crushing(event, material, dust, ingot);
-        immersiveengineering_gem_ore_processing(event, material, ore, dust, gem, shard);
-        immersiveengineering_hammer_crushing(event, material, ore, dust, gem);
-        immersiveengineering_gem_crushing(event, material, dust, gem);
-        immersiveengineering_coin_pressing(event, material, ingot, nugget, coin);
+        immersiveengineering_ingot_crushing(material, dust, ingot);
+        immersiveengineering_gem_ore_processing(material, ore, dust, gem, shard);
+        immersiveengineering_hammer_crushing(material, ore, dust, gem);
+        immersiveengineering_gem_crushing(material, dust, gem);
+        immersiveengineering_coin_pressing(material, ingot, nugget, coin);
 
-        mekanism_ingot_gem_crushing(event, material, ingot, dust, gem);
-        mekanism_gem_ore_processing(event, material, ore, dust, gem, shard);
+        mekanism_ingot_gem_crushing(material, ingot, dust, gem);
+        mekanism_gem_ore_processing(material, ore, dust, gem, shard);
         mekanism_metal_ore_processing(
             event,
             material,
@@ -66,36 +66,36 @@ onEvent('recipes', (event) => {
             ingot
         );
 
-        minecraft_gem_ore_smelting(event, material, ore, gem);
-        minecraft_dust_smelting(event, material, dust, ingot);
+        minecraft_gem_ore_smelting(material, ore, gem);
+        minecraft_dust_smelting(material, dust, ingot);
 
-        occultism_gem_ore_crushing(event, material, ore, dust, gem, shard);
-        occultism_metal_ore_crushing(event, material, ore, dust, ingot);
-        occultism_ingot_gem_crushing(event, material, ingot, dust, gem);
+        occultism_gem_ore_crushing(material, ore, dust, gem, shard);
+        occultism_metal_ore_crushing(material, ore, dust, ingot);
+        occultism_ingot_gem_crushing(material, ingot, dust, gem);
 
-        ars_nouveau_gem_ore_crushing(event, material, ore, dust, gem, shard);
-        ars_nouveau_metal_ore_crushing(event, material, ore, dust, ingot);
-        ars_nouveau_ingot_gem_crushing(event, material, ingot, dust, gem);
+        ars_nouveau_gem_ore_crushing(material, ore, dust, gem, shard);
+        ars_nouveau_metal_ore_crushing(material, ore, dust, ingot);
+        ars_nouveau_ingot_gem_crushing(material, ingot, dust, gem);
 
-        pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem);
-        pedestals_metal_ore_crushing(event, material, ore, ingot, dust);
-        pedestals_ingot_gem_crushing(event, material, ingot, dust, gem);
+        pedestals_gem_ore_crushing(material, ore, dust, shard, gem);
+        pedestals_metal_ore_crushing(material, ore, ingot, dust);
+        pedestals_ingot_gem_crushing(material, ingot, dust, gem);
 
-        thermal_metal_ore_pulverizing(event, material, ore, dust, ingot);
-        thermal_gem_ore_pulverizing(event, material, ore, dust, gem, shard);
-        thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem);
-        thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate);
-        thermal_metal_melting(event, material, block, ingot, nugget, gear, rod, plate);
-        thermal_gem_casting(event, material, gem, gear, rod, plate);
-        thermal_gem_melting(event, material, block, gem, gear, rod, plate);
+        thermal_metal_ore_pulverizing(material, ore, dust, ingot);
+        thermal_gem_ore_pulverizing(material, ore, dust, gem, shard);
+        thermal_ingot_gem_pulverizing(material, ingot, dust, gem);
+        thermal_metal_casting(material, ingot, nugget, gear, rod, plate);
+        thermal_metal_melting(material, block, ingot, nugget, gear, rod, plate);
+        thermal_gem_casting(material, gem, gear, rod, plate);
+        thermal_gem_melting(material, block, gem, gear, rod, plate);
 
-        tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate);
-        tconstruct_gem_casting(event, material, block, gem, gear, rod, plate);
+        tconstruct_metal_casting(material, block, ingot, nugget, gear, rod, plate);
+        tconstruct_gem_casting(material, block, gem, gear, rod, plate);
 
-        material_packing_unpacking(event, material, block, ingot, gem, nugget);
+        material_packing_unpacking(material, block, ingot, gem, nugget);
     });
 
-    function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard) {
+    function astralsorcery_ore_processing_infuser(material, ore, ingot, gem, shard) {
         if (ore == air) {
             return;
         }
@@ -155,7 +155,7 @@ onEvent('recipes', (event) => {
         );
     }
 
-    function betterend_alloys(event, material, ore, ingot) {
+    function betterend_alloys(material, ore, ingot) {
         if (ore == air || ingot == air) {
             return;
         }
@@ -172,7 +172,7 @@ onEvent('recipes', (event) => {
         );
     }
 
-    function bloodmagic_metal_ore_processing(event, material, ore, fragment, gravel, dust, ingot) {
+    function bloodmagic_metal_ore_processing(material, ore, fragment, gravel, dust, ingot) {
         if (ore == air || ingot == air || fragment == air) {
             return;
         }
@@ -225,7 +225,7 @@ onEvent('recipes', (event) => {
             .upgradeLevel(1)
             .id(`bloodmagic:alchemytable/sand_${material}`);
     }
-    function bloodmagic_gem_ore_processing(event, material, ore, gem, shard, dust) {
+    function bloodmagic_gem_ore_processing(material, ore, gem, shard, dust) {
         if (ore == air) {
             return;
         }
@@ -262,7 +262,7 @@ onEvent('recipes', (event) => {
             `${id_prefix}${arguments.callee.name}/`
         );
     }
-    function bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem) {
+    function bloodmagic_ingot_gem_crushing(material, ingot, dust, gem) {
         if (dust == air) {
             return;
         }
@@ -286,7 +286,7 @@ onEvent('recipes', (event) => {
             .id(`bloodmagic:arc/dustsfrom_${type}_${material}`);
     }
 
-    function create_metal_ore_processing(event, material, ore, crushed_ore, ingot, nugget) {
+    function create_metal_ore_processing(material, ore, crushed_ore, ingot, nugget) {
         if (ore == air || crushed_ore == air || ingot == air) {
             return;
         }
@@ -343,7 +343,7 @@ onEvent('recipes', (event) => {
             .id(`create:crushing/${material}_ore`);
     }
 
-    function create_gem_ore_processing(event, material, ore, gem, dust, shard) {
+    function create_gem_ore_processing(material, ore, gem, dust, shard) {
         if (ore == air) {
             return;
         }
@@ -390,7 +390,7 @@ onEvent('recipes', (event) => {
             .id(`create:crushing/${material}_ore`);
     }
 
-    function create_ingot_gem_milling(event, material, ingot, dust, gem) {
+    function create_ingot_gem_milling(material, ingot, dust, gem) {
         if (dust == air) {
             return;
         }
@@ -412,7 +412,7 @@ onEvent('recipes', (event) => {
         );
     }
 
-    function create_metal_block_processing(event, material, crushed_ore, ingot, nugget) {
+    function create_metal_block_processing(material, crushed_ore, ingot, nugget) {
         if (ingot == air || crushed_ore == air) {
             return;
         }
@@ -437,7 +437,7 @@ onEvent('recipes', (event) => {
         event.smelting(output, input).xp(0.1).id(`create:smelting/${material}_ingot_from_crushed`);
     }
 
-    function emendatus_item_melting(event, material, ore, block, ingot, nugget, gem, dust, gear, rod, plate) {
+    function emendatus_item_melting(material, ore, block, ingot, nugget, gem, dust, gear, rod, plate) {
         let modId;
         if (material == 'redstone') {
             return;
@@ -532,7 +532,7 @@ onEvent('recipes', (event) => {
         }
     }
 
-    function emendatus_hammer_crushing(event, material, ore, dust) {
+    function emendatus_hammer_crushing(material, ore, dust) {
         if (ore == air || dust == air) {
             return;
         }
@@ -544,7 +544,7 @@ onEvent('recipes', (event) => {
         );
     }
 
-    function emendatus_shapeless_transform(event, material, ore, chunk) {
+    function emendatus_shapeless_transform(material, ore, chunk) {
         if (ore == air || chunk == air) {
             return;
         }
@@ -560,7 +560,7 @@ onEvent('recipes', (event) => {
             .id(`emendatusenigmatica:chunk_from_cluster/${material}`);
     }
 
-    function immersiveengineering_hammer_crushing(event, material, ore, dust, gem) {
+    function immersiveengineering_hammer_crushing(material, ore, dust, gem) {
         if (ore == air || dust == air) {
             return;
         }
@@ -576,7 +576,7 @@ onEvent('recipes', (event) => {
         event.shapeless(output, [input, hammer]).id(`enigmatica:base/enigmatica/${material}_dust`);
     }
 
-    function immersiveengineering_gem_crushing(event, material, dust, gem) {
+    function immersiveengineering_gem_crushing(material, dust, gem) {
         if (gem == air || dust == air) {
             return;
         }
@@ -589,7 +589,7 @@ onEvent('recipes', (event) => {
             `${id_prefix}${arguments.callee.name}/`
         );
     }
-    function immersiveengineering_coin_pressing(event, material, ingot, nugget, coin) {
+    function immersiveengineering_coin_pressing(material, ingot, nugget, coin) {
         if (ingot == air || nugget == air || coin == air) {
             return;
         }
@@ -613,7 +613,7 @@ onEvent('recipes', (event) => {
         );
     }
 
-    function immersiveengineering_ingot_crushing(event, material, dust, ingot) {
+    function immersiveengineering_ingot_crushing(material, dust, ingot) {
         if (ingot == air || dust == air) {
             return;
         }
@@ -629,7 +629,7 @@ onEvent('recipes', (event) => {
         }
     }
 
-    function immersiveengineering_gem_ore_processing(event, material, ore, dust, gem, shard) {
+    function immersiveengineering_gem_ore_processing(material, ore, dust, gem, shard) {
         if (ore == air) {
             return;
         }
@@ -674,7 +674,7 @@ onEvent('recipes', (event) => {
         }
     }
 
-    function mekanism_ingot_gem_crushing(event, material, ingot, dust, gem) {
+    function mekanism_ingot_gem_crushing(material, ingot, dust, gem) {
         if (dust == air) {
             return;
         }
@@ -700,7 +700,7 @@ onEvent('recipes', (event) => {
         event.recipes.mekanism.crushing(output, input).id(`mekanism:processing/${material}/to_dust`);
     }
 
-    function mekanism_gem_ore_processing(event, material, ore, dust, gem, shard) {
+    function mekanism_gem_ore_processing(material, ore, dust, gem, shard) {
         if (ore == air) {
             return;
         }
@@ -829,7 +829,7 @@ onEvent('recipes', (event) => {
             .id(`mekanism:processing/${material}/dust/from_ore`);
     }
 
-    function minecraft_gem_ore_smelting(event, material, ore, gem) {
+    function minecraft_gem_ore_smelting(material, ore, gem) {
         if (ore == air || gem == air) {
             return;
         }
@@ -849,7 +849,7 @@ onEvent('recipes', (event) => {
         event.blasting(output, input).xp(0.7).xp(0.7).id(`${id_prefix}blasting/${material}/gem/from_ore`);
     }
 
-    function minecraft_dust_smelting(event, material, dust, ingot) {
+    function minecraft_dust_smelting(material, dust, ingot) {
         if (ingot == air || dust == air) {
             return;
         }
@@ -869,7 +869,7 @@ onEvent('recipes', (event) => {
         event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_dust`);
     }
 
-    function occultism_gem_ore_crushing(event, material, ore, dust, gem, shard) {
+    function occultism_gem_ore_crushing(material, ore, dust, gem, shard) {
         if (ore == air) {
             return;
         }
@@ -908,7 +908,7 @@ onEvent('recipes', (event) => {
             .id(`${id_prefix}occultism_crushing/${material}/${materialProperties.output}/from_ore`);
     }
 
-    function occultism_metal_ore_crushing(event, material, ore, dust, ingot) {
+    function occultism_metal_ore_crushing(material, ore, dust, ingot) {
         if (ore == air || ingot == air || dust == air) {
             return;
         }
@@ -928,7 +928,7 @@ onEvent('recipes', (event) => {
             .id(`occultism:crushing/${material}_dust`);
     }
 
-    function occultism_ingot_gem_crushing(event, material, ingot, dust, gem) {
+    function occultism_ingot_gem_crushing(material, ingot, dust, gem) {
         if (dust == air) {
             return;
         }
@@ -963,7 +963,7 @@ onEvent('recipes', (event) => {
         );
     }
 
-    function ars_nouveau_gem_ore_crushing(event, material, ore, dust, gem, shard) {
+    function ars_nouveau_gem_ore_crushing(material, ore, dust, gem, shard) {
         if (ore == air) {
             return;
         }
@@ -1010,7 +1010,7 @@ onEvent('recipes', (event) => {
             .id(`ars_nouveau:crushing/${material}_from_ore`);
     }
 
-    function ars_nouveau_metal_ore_crushing(event, material, ore, dust, ingot) {
+    function ars_nouveau_metal_ore_crushing(material, ore, dust, ingot) {
         if (ore == air || ingot == air || dust == air) {
             return;
         }
@@ -1039,7 +1039,7 @@ onEvent('recipes', (event) => {
             .id(`ars_nouveau:crushing/${material}_dust_from_ore`);
     }
 
-    function ars_nouveau_ingot_gem_crushing(event, material, ingot, dust, gem) {
+    function ars_nouveau_ingot_gem_crushing(material, ingot, dust, gem) {
         if (dust == air) {
             return;
         }
@@ -1071,7 +1071,7 @@ onEvent('recipes', (event) => {
             .id(`ars_nouveau:crushing/${material}_dust`);
     }
 
-    function pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem) {
+    function pedestals_gem_ore_crushing(material, ore, dust, shard, gem) {
         if (ore == air) {
             return;
         }
@@ -1107,7 +1107,7 @@ onEvent('recipes', (event) => {
             })
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
-    function pedestals_metal_ore_crushing(event, material, ore, ingot, dust) {
+    function pedestals_metal_ore_crushing(material, ore, ingot, dust) {
         if (ore == air || ingot == air || dust == air) {
             return;
         }
@@ -1134,7 +1134,7 @@ onEvent('recipes', (event) => {
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
 
-    function pedestals_ingot_gem_crushing(event, material, ingot, dust, gem) {
+    function pedestals_ingot_gem_crushing(material, ingot, dust, gem) {
         if (dust == air) {
             return;
         }
@@ -1164,7 +1164,7 @@ onEvent('recipes', (event) => {
         );
     }
 
-    function thermal_metal_ore_pulverizing(event, material, ore, dust, ingot) {
+    function thermal_metal_ore_pulverizing(material, ore, dust, ingot) {
         if (ore == air || dust == air || ingot == air) {
             return;
         }
@@ -1204,7 +1204,7 @@ onEvent('recipes', (event) => {
             .id(`thermal:machine/pulverizer/pulverizer_${material}_ore`);
     }
 
-    function thermal_gem_ore_pulverizing(event, material, ore, dust, gem, shard) {
+    function thermal_gem_ore_pulverizing(material, ore, dust, gem, shard) {
         if (ore == air) {
             return;
         }
@@ -1259,7 +1259,7 @@ onEvent('recipes', (event) => {
             .id(`thermal:machine/pulverizer/pulverizer_${material}_ore`);
     }
 
-    function thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem) {
+    function thermal_ingot_gem_pulverizing(material, ingot, dust, gem) {
         if (dust == air) {
             return;
         }
@@ -1284,7 +1284,7 @@ onEvent('recipes', (event) => {
         fallback_id(event.recipes.thermal.pulverizer(output, input), `${id_prefix}${arguments.callee.name}/`);
     }
 
-    function thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate) {
+    function thermal_metal_casting(material, ingot, nugget, gear, rod, plate) {
         if (ingot == air) {
             return;
         }
@@ -1327,7 +1327,7 @@ onEvent('recipes', (event) => {
         });
     }
 
-    function thermal_metal_melting(event, material, block, ingot, nugget, gear, rod, plate) {
+    function thermal_metal_melting(material, block, ingot, nugget, gear, rod, plate) {
         if (ingot == air) {
             return;
         }
@@ -1370,7 +1370,7 @@ onEvent('recipes', (event) => {
         });
     }
 
-    function thermal_gem_casting(event, material, gem, gear, rod, plate) {
+    function thermal_gem_casting(material, gem, gear, rod, plate) {
         if (gem == air) {
             return;
         }
@@ -1418,7 +1418,7 @@ onEvent('recipes', (event) => {
         });
     }
 
-    function thermal_gem_melting(event, material, block, gem, gear, rod, plate) {
+    function thermal_gem_melting(material, block, gem, gear, rod, plate) {
         if (gem == air) {
             return;
         }
@@ -1478,7 +1478,7 @@ onEvent('recipes', (event) => {
         });
     }
 
-    function tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate) {
+    function tconstruct_metal_casting(material, block, ingot, nugget, gear, rod, plate) {
         if (ingot == air) {
             return;
         }
@@ -1545,7 +1545,7 @@ onEvent('recipes', (event) => {
         }
     }
 
-    function tconstruct_gem_casting(event, material, block, gem, gear, rod, plate) {
+    function tconstruct_gem_casting(material, block, gem, gear, rod, plate) {
         if (gem == air) {
             return;
         }
@@ -1608,7 +1608,7 @@ onEvent('recipes', (event) => {
             .id(`tconstruct:smeltery/casting/${material}/block`);
     }
 
-    function material_packing_unpacking(event, material, block, ingot, gem, nugget) {
+    function material_packing_unpacking(material, block, ingot, gem, nugget) {
         blacklistedMaterials = ['ender', 'amber', 'quartz'];
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
