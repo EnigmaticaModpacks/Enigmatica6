@@ -3,6 +3,7 @@
 **Improvements**
 
 -   Improve dependencies for Brass Ingot quest in Mechanical Mayhem [\#5480](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5480) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Tainted Gold now has unpacking/packing recipes [\#5477](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5477) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### Enigmatica 6 & Enigmatica 6: Expert v1.10.0
 

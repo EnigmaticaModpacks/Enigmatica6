@@ -70,6 +70,7 @@ const materialsToUnify = [
     'elementium',
     'gaia_spirit',
     'infused_iron',
+    'tainted_gold',
     'manasteel',
     'sky',
     'terminite',
