@@ -157,7 +157,11 @@
 			y: 3.0d
 			shape: "diamond"
 			description: ["Brass in hand, a number of new possibilities become possible. Let’s see where this leads…"]
-			dependencies: ["4399B01214307E59"]
+			dependencies: [
+				"4399B01214307E59"
+				"48D3578471D55A69"
+			]
+			dependency_requirement: "one_completed"
 			id: "6F3E31687E06AA19"
 			tasks: [{
 				id: "2B77C401C033F97D"
