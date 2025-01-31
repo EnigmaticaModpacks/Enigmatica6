@@ -1,4 +1,4 @@
-### Enigmatica 6 & Enigmatica 6: Expert v1.10.0
+### Enigmatica 6 & Enigmatica 6: Expert v1.11.0
 
 **Improvements**
 
