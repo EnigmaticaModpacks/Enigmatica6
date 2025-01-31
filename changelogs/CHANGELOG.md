@@ -2,6 +2,12 @@
 
 **Improvements**
 
+-   Improve dependencies for Brass Ingot quest in Mechanical Mayhem [\#5480](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5480) ([MuteTiefling](https://github.com/MuteTiefling))
+
+### Enigmatica 6 & Enigmatica 6: Expert v1.10.0
+
+**Improvements**
+
 -   Add new recipe for converting Celestial Combs to Starmetal [\#5458](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5458) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Tree of Life structure no longer checks for Wisteria to avoid issues with placement [\#5459](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5459) ([MuteTiefling](https://github.com/MuteTiefling))
 
