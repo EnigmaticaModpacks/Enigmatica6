@@ -57,7 +57,7 @@
 #Settings for the search overlay
 [searchoverlay]
 	#Also searches for the custom name of an item in user inventory (for example items named in anvil)
-	#Setting this to false will increase performance but will not find custom named items.
+	#Setting this to false will increase performance.
 	custom_search = true
 	#Setting this to false this will disable the functionality to double click the JEI search bar for item searching.
 	search_enabled = true
@@ -70,4 +70,10 @@
 	#Transparancy for the filtered out slots
 	#Range: 0.0 ~ 1.0
 	search_slot_alpha = 0.5
+	#Also searches the tooltip of items in the users inventory
+	#Setting this to false will increase performance.
+	search_tooltip = true
+	#Maximum amount of search results for the item searching to be active
+	#Range: > 256
+	search_max_results = 16384
 
