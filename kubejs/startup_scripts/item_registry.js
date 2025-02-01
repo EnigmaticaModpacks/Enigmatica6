@@ -497,20 +497,13 @@ onEvent('item.registry', (event) => {
     });
 
     // Custom Occultism Miners
-    event
-        .create('fisher_foliot')
-        .group('KubeJS')
-        .texture('kubejs:item/magic_lamp')
-        .maxStackSize(1)
-        .maxDamage(500)
-        .displayName('Fisher Foliot');
+    event.create('fisher_foliot').group('KubeJS').texture('kubejs:item/magic_lamp').maxStackSize(1).maxDamage(500);
     event
         .create('miner_marid_irradiated')
         .group('KubeJS')
         .texture('kubejs:item/magic_lamp')
         .maxStackSize(1)
-        .maxDamage(50)
-        .displayName('Irradiated Ore Miner Marid');
+        .maxDamage(50);
 
     // Custom Foods
     event
@@ -519,6 +512,5 @@ onEvent('item.registry', (event) => {
         .texture('kubejs:item/meat_ingot')
         .food((food) => {
             food.hunger(8).saturation(0.5).effect('upgrade_aquatic:vibing', 2400, 1, 1.0);
-        })
-        .displayName('Meat Ingot');
+        });
 });

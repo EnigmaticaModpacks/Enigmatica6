@@ -112,7 +112,7 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:upgrade',
                 B: 'pneumaticcraft:glycerol',
                 C: {
-                    type: 'pneumaticcraft:fluid',
+                    type: 'immersiveengineering:fluid',
                     tag: 'forge:lubricant',
                     amount: 1000
                 }

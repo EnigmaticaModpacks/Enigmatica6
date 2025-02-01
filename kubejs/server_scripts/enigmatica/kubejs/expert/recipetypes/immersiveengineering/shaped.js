@@ -136,13 +136,14 @@ onEvent('recipes', (event) => {
                 C: '#forge:plates/lead',
                 D: Item.of('thermal:fluid_cell').ignoreNBT(),
                 E: {
-                    type: 'pneumaticcraft:fluid',
+                    type: 'immersiveengineering:fluid',
                     tag: 'pneumaticcraft:etching_acid',
                     amount: 1000
                 }
             },
             id: 'immersiveengineering:crafting/capacitor_lv'
         },
+
         {
             output: 'immersiveengineering:capacitor_mv',
             pattern: ['ABA', 'CDC', 'AEA'],
@@ -221,8 +222,8 @@ onEvent('recipes', (event) => {
                 A: '#forge:sheetmetals/steel',
                 B: 'create:fluid_pipe',
                 C: {
-                    type: 'pneumaticcraft:fluid',
-                    fluid: 'minecraft:water',
+                    type: 'immersiveengineering:fluid',
+                    tag: 'minecraft:water',
                     amount: 1000
                 }
             },

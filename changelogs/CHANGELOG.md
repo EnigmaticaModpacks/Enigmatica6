@@ -1,3 +1,18 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.10.0
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/changelog_mods_1.10.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/modlist_1.10.0.md)_
+
+**Improvements**
+
+-   Add new recipe for converting Celestial Combs to Starmetal [\#5458](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5458) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Tree of Life structure no longer checks for Wisteria to avoid issues with placement [\#5459](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5459) ([MuteTiefling](https://github.com/MuteTiefling))
+
+**Bug fixes**
+
+-   Fix IE assembler being unable to craft capacitors [\#5447](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5447) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix issues with Necrotic Bones in Tinker's quests [\#5464](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5464) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Remove invalid scene from hive ponder [\#5464](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5464) ([MuteTiefling](https://github.com/MuteTiefling))
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.9.0
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/changelog_mods_1.9.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/modlist_1.9.0.md)_

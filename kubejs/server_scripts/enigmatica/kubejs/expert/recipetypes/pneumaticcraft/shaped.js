@@ -400,7 +400,7 @@ onEvent('recipes', (event) => {
                 A: 'pneumaticcraft:upgrade_matrix',
                 B: 'pneumaticcraft:glycerol',
                 C: {
-                    type: 'pneumaticcraft:fluid',
+                    type: 'immersiveengineering:fluid',
                     tag: 'forge:lubricant',
                     amount: 1000
                 }

@@ -41,6 +41,26 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             consume_fluid: 1.0
+        },
+        {
+            inputs: [{ item: 'resourcefulbees:starry_honeycomb', count: 1, return_chance: 0 }],
+            fluid: { fluid: 'astralsorcery:liquid_starlight' },
+            output: {
+                entries: [{ result: { item: 'astralsorcery:starmetal_ingot', count: 3 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.1
+        },
+        {
+            inputs: [{ item: 'resourcefulbees:starry_honeycomb_block', count: 1, return_chance: 0 }],
+            fluid: { fluid: 'astralsorcery:liquid_starlight' },
+            output: {
+                entries: [{ result: { item: 'astralsorcery:starmetal', count: 3 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 1.0
         }
     ];
 
