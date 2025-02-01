@@ -7,7 +7,6 @@ _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 - [Searchables](https://www.curseforge.com/minecraft/mc-mods/searchables) (by [Jaredlll08](https://www.curseforge.com/members/Jaredlll08/projects))
 - [Structure Layout Optimizer](https://www.curseforge.com/minecraft/mc-mods/structure-layout-optimizer) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
 
-
 **Improvements**
 
 -   Add new recipe for converting Celestial Combs to Starmetal [\#5458](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5458) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -21,6 +20,7 @@ _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 -   Addressed automation issue with Astral bee combs not being processable in the intended multiblock structure. [#5457](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5457)
 -   Resolved issue where IE Assembler's fluid crafting required filled buckets instead of using stored fluids. [#5446](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5446)
 
+---
 
 ### Enigmatica 6 & Enigmatica 6: Expert v1.9.0
 
