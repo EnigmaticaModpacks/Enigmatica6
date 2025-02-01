@@ -39,7 +39,6 @@ _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 -   Natural Scoria may now be crafted. Builders rejoice! [\#5424](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5424)
 -   Add a recipe to reset data of occultism wormholes [\#5402](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5402)
 -   suggest to change default config of integratedterminal's `craftingPlannerEnableMultithreading` to false [\#5392](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5392)
-
 -   Balancing Stack enchanting and General cost of enchanting on higher levels [\#5385](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5385)
 -   Block of sawdust needs a hand uncompacting recipe. [\#5383](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5383)
 -   Add glistening date version of regeneration potion recipe to Create mixer [\#5358](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5358)
