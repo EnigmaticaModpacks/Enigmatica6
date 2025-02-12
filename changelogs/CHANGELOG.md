@@ -7,18 +7,27 @@
 
 ### Enigmatica 6 & Enigmatica 6: Expert v1.10.0
 
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/changelog_mods_1.10.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/modlist_1.10.0.md)_
+
+**New Mods**
+
+- [Searchables](https://www.curseforge.com/minecraft/mc-mods/searchables) (by [Jaredlll08](https://www.curseforge.com/members/Jaredlll08/projects))
+- [Structure Layout Optimizer](https://www.curseforge.com/minecraft/mc-mods/structure-layout-optimizer) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
+
 **Improvements**
 
 -   Add new recipe for converting Celestial Combs to Starmetal [\#5458](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5458) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Tree of Life structure no longer checks for Wisteria to avoid issues with placement [\#5459](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5459) ([MuteTiefling](https://github.com/MuteTiefling))
 
-### Enigmatica 6 & Enigmatica 6: Expert v1.10.0
-
 **Bug fixes**
 
--   Fix IE assembler being unable to craft capacitors [\#5447](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5447) ([MuteTiefling](https://github.com/MuteTiefling))
--   Fix issues with Necrotic Bones in Tinker's quests [\#5464](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5464) ([MuteTiefling](https://github.com/MuteTiefling))
--   Remove invalid scene from hive ponder [\#5464](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5464) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed IE assembler being unable to craft capacitors. [#5447](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5447) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Resolved issues with Necrotic Bones in Tinker's quests. [#5464](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5464) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Removed invalid scene from hive ponder. [#5464](https://github.com/EnigmaticaModpacks/Enigmatica6/pull/5464) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Addressed automation issue with Astral bee combs not being processable in the intended multiblock structure. [#5457](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5457)
+-   Resolved issue where IE Assembler's fluid crafting required filled buckets instead of using stored fluids. [#5446](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5446)
+
+---
 
 ### Enigmatica 6 & Enigmatica 6: Expert v1.9.0
 
@@ -37,7 +46,6 @@ _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 -   Natural Scoria may now be crafted. Builders rejoice! [\#5424](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5424)
 -   Add a recipe to reset data of occultism wormholes [\#5402](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5402)
 -   suggest to change default config of integratedterminal's `craftingPlannerEnableMultithreading` to false [\#5392](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5392)
-
 -   Balancing Stack enchanting and General cost of enchanting on higher levels [\#5385](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5385)
 -   Block of sawdust needs a hand uncompacting recipe. [\#5383](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5383)
 -   Add glistening date version of regeneration potion recipe to Create mixer [\#5358](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5358)
