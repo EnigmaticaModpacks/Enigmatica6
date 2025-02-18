@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
 });
 
 function create_cutting(event, variant, sawDust, treeBark) {
-    data = {
+    let data = {
         recipes: [
             {
                 input: variant.logBlock,
@@ -46,27 +46,11 @@ function create_cutting(event, variant, sawDust, treeBark) {
         ]
     };
 
+    const { cutting } = event.recipes.create
+
     data.recipes.forEach((recipe) => {
         fallback_id(
-            event.recipes.create.cutting({
-                type: 'create:cutting',
-                ingredients: [
-                    {
-                        item: recipe.input
-                    }
-                ],
-                results: [
-                    {
-                        item: recipe.output,
-                        count: recipe.count
-                    },
-                    {
-                        item: recipe.secondaryOutput,
-                        count: 1
-                    }
-                ],
-                processingTime: recipe.time
-            }),
+            cutting([Item.of(recipe.output, recipe.count), recipe.secondaryOutput], recipe.input).processingTime(recipe.time),
             `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`
         );
     });
