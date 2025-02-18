@@ -27,6 +27,15 @@ function titleCase(str) {
 }
 
 /**
+ * @template T
+ * @param {$Collection_<T>} array 
+ * @returns {T}
+ */
+function randomOf(array) {
+    return Utils.randomOf(Utils.getRandom(), array)
+}
+
+/**
  * @param {string} material 
  * @param {string} type 
  * @see unificationBlacklist
