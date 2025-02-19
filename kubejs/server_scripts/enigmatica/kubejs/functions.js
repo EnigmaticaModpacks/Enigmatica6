@@ -50,7 +50,7 @@ function unificationBlacklistEntry(material, type) {
  * @see unificationBlacklist
  */
 function entryIsBlacklisted(material, type) {
-    for (const blackList of unificationBlacklist) {
+    for (let blackList of unificationBlacklist) {
         if (blackList.material == material && blackList.type == type) {
             return true
         }
