@@ -1,0 +1,159 @@
+name: Continuous Integration
+
+on:
+  workflow_dispatch:
+
+jobs:
+  # job
+  instancesync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '16'
+
+      - uses: actions/cache@v4
+        with:
+          path: mods
+          key: ${{ github.run_id }}-instancesync
+
+      - run: java -jar InstanceSync.jar
+  #job
+  mods:
+    runs-on: ubuntu-latest
+    needs: [instancesync, compile]
+    steps:
+      - uses: actions/cache@v4
+        with:
+          path: mods
+          key: ${{ github.run_id }}-mods
+          restore-keys: |
+            ${{ github.run_id }}-instancesync
+
+      - run: find . -name 'kubejs-forge-*' -delete
+      - uses: actions/download-artifact@v4
+        with:
+          name: compiled (kubejs)
+          path: mods
+
+      - run: ls
+        working-directory: mods
+  # job
+  server:
+    needs: [mods]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        packmode: ['normal', 'expert']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - uses: actions/cache@v4
+        with:
+          path: mods
+          key: ${{ github.run_id }}-mods
+
+      - name: Setting mode to ${{ matrix.packmode }}
+        run: |
+          node .github/actions/ci/packmode.js ${{ matrix.packmode }} > mode.json
+          cat mode.json
+
+      - name: Install server
+        run: |
+          cp ./automation/settings.cfg ./settings.cfg
+          cp ./automation/start-automated-server.sh ./start-automated-server.sh
+          pwsh ./automation/remove-client-mods.ps1
+
+      - name: Setting eula to true
+        run: |
+          echo "eula=true" > eula.txt
+          cat eula.txt
+
+      - run: node .github/actions/ci/start-server.js bash ./start-automated-server.sh
+      - run: sleep 1m
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: server (${{ matrix.packmode }})
+          path: |
+            ./logs
+            ./crash-reports
+            ./kubejs/exported
+  # job
+  kubejs:
+    needs: [server]
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    strategy:
+      fail-fast: false
+      matrix:
+        packmode: ['normal', 'expert']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Run actions/setup-npm@v4
+        run: cd .github/actions/ci/node && npm install
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: server (${{ matrix.packmode }})
+
+      - run: tree
+
+      - run: node .github/actions/ci/log-kubejs-warnings.js
+      - run: node .github/actions/ci/kubejs-recipes.js
+      - run: node .github/actions/ci/kubejs-list-hose-pulley-fluids.js
+      
+      - run: node .github/actions/ci/node/kubejs-list-global-variables.js
+
+      - name: Compare against the base branch
+        if: github.event_name == 'pull_request'
+        run: |
+          node .github/actions/ci/node/compare_download-artifact.js ${{ github.event.pull_request.base.repo.full_name }} ${{ github.event.pull_request.base.sha }} ${{ matrix.packmode }} ${{ github.token }}
+          node .github/actions/ci/node/compare_artifact-tags.js
+  #job
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      matrix:
+        repo: ['kubejs']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      # using a special fork of KubeJS with several debug features enabled by default
+      - run: git clone --branch enigmatica https://github.com/ZZZank/KubeJS.git
+
+      - uses: actions/cache@v4
+        id: cache
+        with:
+          path: ./KubeJS/forge/build/libs
+          key: compile-${{ matrix.repo }}-v2-${{ hashFiles('.github/actions/ci/patches/kubejs.patch') }}
+      - name: Gradle
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          ./gradlew -p forge build
+          tree
+        working-directory: KubeJS
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: compiled (${{ matrix.repo }})
+          path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.20-build.9999.jar
