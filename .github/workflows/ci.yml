@@ -138,6 +138,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      # using a special fork of KubeJS with several debug features enabled by default
       - run: git clone --branch enigmatica https://github.com/ZZZank/KubeJS.git
 
       - uses: actions/cache@v4
