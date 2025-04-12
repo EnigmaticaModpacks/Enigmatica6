@@ -2,7 +2,7 @@
 
 **Bug fixes**
 
--   Fix for Wisteria being unplaceable on Crystalline Dark Oak Logs [\#5480](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5480) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix for Wisteria being unplaceable on Crystalline Dark Oak Logs [\#5492](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5492) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### Enigmatica 6 & Enigmatica 6: Expert v1.10.0
 
