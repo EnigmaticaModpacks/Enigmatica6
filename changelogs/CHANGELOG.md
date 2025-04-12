@@ -1,3 +1,9 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.12.0
+
+**Bug fixes**
+
+-   Fix for Wisteria being unplaceable on Crystalline Dark Oak Logs [\#5480](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5480) ([MuteTiefling](https://github.com/MuteTiefling))
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.11.0
 
 **Improvements**
@@ -11,8 +17,8 @@ _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 
 **New Mods**
 
-- [Searchables](https://www.curseforge.com/minecraft/mc-mods/searchables) (by [Jaredlll08](https://www.curseforge.com/members/Jaredlll08/projects))
-- [Structure Layout Optimizer](https://www.curseforge.com/minecraft/mc-mods/structure-layout-optimizer) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
+-   [Searchables](https://www.curseforge.com/minecraft/mc-mods/searchables) (by [Jaredlll08](https://www.curseforge.com/members/Jaredlll08/projects))
+-   [Structure Layout Optimizer](https://www.curseforge.com/minecraft/mc-mods/structure-layout-optimizer) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
 
 **Improvements**
 
