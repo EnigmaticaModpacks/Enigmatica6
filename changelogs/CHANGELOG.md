@@ -5,6 +5,8 @@ _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 **Bug fixes**
 
 -   Fix for Wisteria being unplaceable on Crystalline Dark Oak Logs [\#5492](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5492) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Overlays have incorrect width / rendering layer / position [\#5493](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5493)
+-   [Expert] Industrial Foregoing can't show working area [\#5490](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5490)
 
 ---
 

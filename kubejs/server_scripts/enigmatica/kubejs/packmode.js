@@ -1,5 +1,9 @@
 //priority: 1004
-setMode = (player) => {
+
+/**
+ * @param {Internal.PlayerJS<any>} player 
+ */
+function setMode(player) {
     const expertModeQuestId = '0000000000000FEB';
     console.log(`setting mode for player: ${player}`);
     if (global.packmode == 'expert') {
@@ -8,7 +12,7 @@ setMode = (player) => {
     } else {
         player.data.ftbquests.reset(expertModeQuestId);
     }
-};
+}
 
 onEvent('server.datapack.high_priority', (event) => {
     if (event.getServer()) {
