@@ -1,3 +1,13 @@
+### Enigmatica 6 & Enigmatica 6: Expert v1.13.0
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/changelog_mods_1.13.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/modlist_1.13.0.md)_
+
+**New Mods**
+
+**Bug fixes**
+
+---
+
 ### Enigmatica 6 & Enigmatica 6: Expert v1.12.0
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/changelog_mods_1.12.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/modlist_1.12.0.md)_
