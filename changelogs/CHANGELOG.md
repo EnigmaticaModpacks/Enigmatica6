@@ -2,9 +2,7 @@
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/changelog_mods_1.13.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/modlist_1.13.0.md)_
 
-**New Mods**
-
-**Bug fixes**
+✨ Mod updates ✨
 
 ---
 
