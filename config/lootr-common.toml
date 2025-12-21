@@ -62,4 +62,6 @@ disable_notifications = false
 #maximum time (in ticks) remaining on a chest before a notification for refreshing or decaying is sent to a player (default 30 seconds, -1 for no delay)
 #Range: > -1
 notification_delay = 600
+#lootr chests can be modified (opened, etc.) even within spawn protected areas
+bypass_spawn_protection = true
 
