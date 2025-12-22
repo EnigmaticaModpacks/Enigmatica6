@@ -167,7 +167,7 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"Mekanism/tools-client.toml"
 )
 
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks", "local/crash_assistant")
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
