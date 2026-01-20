@@ -284,19 +284,148 @@ function Update-FileLinkInServerFiles {
     }
 }
 
+function New-ServerManifestJson {
+    if (!(Test-Path $minecraftInstanceFile)) {
+        Write-Host "Generating a $manifest requires a $minecraftInstanceFile file." -ForegroundColor Red
+    }
+
+    $minecraftInstanceJson = Get-Content $minecraftInstanceFile | ConvertFrom-Json
+
+    $mods = [System.Collections.ArrayList]@()
+    foreach ($addon in $minecraftInstanceJson.installedAddons) {
+        $mods.Add([ordered]@{
+                projectID  = $addon.addonID
+                fileID     = $addon.installedFile.id
+                required   = $true
+            }) > $null
+    }
+
+    $modloaderId = $minecraftInstanceJson.baseModLoader.name
+
+    if ($MODLOADER -eq "fabric") {
+        $splitModloaderId = $modloaderId -split "-"
+        $modloaderId = $splitModloaderId[0] + "-" + $splitModloaderId[1]
+    }
+
+    $jsonOutput = [ordered]@{
+        minecraft       = [ordered]@{
+            version    = $minecraftInstanceJson.baseModLoader.minecraftVersion
+            modLoaders = @([ordered]@{
+                    id      = $modloaderId
+                    primary = $true
+                })
+        }
+        manifestType    = "minecraftModpack"
+        manifestVersion = 1
+        name            = "$MODPACK_NAME Server"
+        version         = $MODPACK_VERSION
+        author          = $CLIENT_FILE_AUTHOR
+        files           = $mods
+        overrides       = "overrides"
+    }
+
+    $serverManifest = "server-manifest.json"
+    Remove-Item $serverManifest -Force -Recurse -ErrorAction SilentlyContinue
+    $outfile = "$INSTANCE_ROOT/$serverManifest"
+    $jsonOptions = [System.Text.Json.JsonSerializerOptions]::new()
+    $jsonOptions.WriteIndented = $true
+    $jsonString = [System.Text.Json.JsonSerializer]::Serialize($jsonOutput, $jsonOptions)
+    [System.IO.File]::WriteAllLines($outfile, $jsonString)
+    Write-Host "Server $serverManifest created!" -ForegroundColor Green
+    return $serverManifest
+}
+
 function New-ServerFiles {
     param(
         [int]$ClientFileReturnId
     )
     if ($ENABLE_SERVER_FILE_MODULE) {
-        $serverZip = "$SERVER_ZIP_NAME.zip"
-        Remove-Item $serverZip -Force -ErrorAction SilentlyContinue
-        Write-Host 
+        Write-Host
         Write-Host "Creating server files..." -ForegroundColor Cyan
-        Write-Host 
-        7z a -tzip $serverZip "$SERVER_FILES_FOLDER\*"
-        Move-Item -Path "automation\$serverZip" -Destination $serverZip -ErrorAction SilentlyContinue
-        Write-Host "Server files created!" -ForegroundColor Green
+        Write-Host
+
+        $serverZip = "$SERVER_ZIP_NAME.zip"
+        $serverOverridesFolder = "server-overrides"
+
+        Remove-Item $serverZip -Force -ErrorAction SilentlyContinue
+        Remove-Item $serverOverridesFolder -Force -Recurse -ErrorAction SilentlyContinue
+
+        # Generate server manifest.json
+        $serverManifest = New-ServerManifestJson
+
+        # Create server overrides folder
+        New-Item -ItemType Directory $serverOverridesFolder
+
+        # Copy the same folders as client files
+        $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES | ForEach-Object {
+            Write-Host "Adding " -ForegroundColor Cyan -NoNewline
+            Write-Host $_ -ForegroundColor Blue -NoNewline
+            Write-Host " to server files." -ForegroundColor Cyan
+            Copy-Item -Path $_ -Destination "$serverOverridesFolder/$_" -Recurse
+        }
+
+        # Add third-party mods to server overrides
+        if ($FILES_TO_INCLUDE_IN_MODS_FOLDER_IN_CLIENT_FILES.Count -gt 0) {
+            New-Item -ItemType Directory -Name "$serverOverridesFolder/mods" -ErrorAction SilentlyContinue
+        }
+        $FILES_TO_INCLUDE_IN_MODS_FOLDER_IN_CLIENT_FILES | ForEach-Object {
+            $fileFilter = $_
+            $matchedFiles = Get-ChildItem -Path $INSTANCE_ROOT -Recurse -File | Where-Object { $_.Name -match $fileFilter -and $_.Extension -eq ".jar" }
+
+            if ($matchedFiles.Count -eq 0) {
+                Write-Warning "No file found matching regex pattern: $_"
+                continue
+            }
+
+            if ($matchedFiles.Count -gt 1) {
+                Write-Warning "Multiple files found matching regex pattern: $_ - Using first match."
+            }
+
+            $fileToCopy = $matchedFiles[0]
+            $fileName = $fileToCopy.Name
+
+            Write-Host "Adding " -ForegroundColor Cyan -NoNewline
+            Write-Host $fileName -ForegroundColor Blue -NoNewline
+            Write-Host " to the mods folder in the server files." -ForegroundColor Cyan
+
+            Copy-Item -Path $fileToCopy.FullName -Destination "$serverOverridesFolder/mods/$fileName" -Recurse
+        }
+
+        # Remove blacklisted files/folders from server overrides
+        $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
+            Write-Host "Removing $serverOverridesFolder/$_"
+            Remove-Item -Path "$serverOverridesFolder/$_" -Recurse -ErrorAction SilentlyContinue
+        }
+
+        $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
+            Write-Host "Removing $serverOverridesFolder/config/$_"
+            Remove-Item -Path "$serverOverridesFolder/config/$_" -Recurse -ErrorAction SilentlyContinue
+        }
+
+        Write-Host "Removing all .bak files from server overrides" -ForegroundColor Cyan
+        Get-ChildItem "$serverOverridesFolder/*.bak" -Recurse | ForEach-Object {
+            Write-Host "Removing $($_.FullName)"
+            Remove-Item -Path $_.FullName -Force -ErrorAction SilentlyContinue
+        }
+
+        # Zip up server manifest and overrides folder
+        7z a $serverZip $serverManifest -sdel
+        7z a $serverZip $serverOverridesFolder -r -sdel
+
+        # Add server_files to zip root (start scripts, config yaml, etc.)
+        Write-Host "Adding server files from " -ForegroundColor Cyan -NoNewline
+        Write-Host $SERVER_FILES_FOLDER -ForegroundColor Blue -NoNewline
+        Write-Host " to zip root." -ForegroundColor Cyan
+        7z a $serverZip "$SERVER_FILES_FOLDER/*"
+
+        # Rename manifest and overrides folder inside zip to expected names
+        7z rn $serverZip $serverManifest "manifest.json"
+        7z rn $serverZip $serverOverridesFolder overrides
+
+        Move-Item -Path "automation/$serverZip" -Destination $serverZip -ErrorAction SilentlyContinue
+        Remove-Item $serverManifest -Force -ErrorAction SilentlyContinue
+
+        Write-Host "Server files $serverZip created!" -ForegroundColor Green
 
         if ($ENABLE_MODPACK_UPLOADER_MODULE) {
             Push-ServerFiles -clientFileReturnId $clientFileReturnId

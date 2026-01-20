@@ -25,6 +25,9 @@ $CURSEFORGE_PROJECT_ID = 389471
 # This is the modpack name as seen in it's CurseForge url: https://www.curseforge.com/minecraft/modpacks/[enigmatica6]
 $MODPACK_NAME = "Enigmatica6"
 
+# Modloader type: "forge" or "fabric"
+$MODLOADER = "forge"
+
 # Name of the Modpack in the ZIP File
 $CLIENT_NAME = "Enigmatica6"
 
@@ -168,6 +171,10 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks", "local/crash_assistant")
+
+# Third-party mods to include in the mods folder (regex patterns for jar files)
+# Example: @("cc-tweaked", "another-mod")
+$FILES_TO_INCLUDE_IN_MODS_FOLDER_IN_CLIENT_FILES = @()
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
